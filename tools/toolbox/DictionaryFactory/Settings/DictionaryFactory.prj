@@ -1,0 +1,205 @@
+\+ShProjectSettings 
+\ver 5.0
+\ProgramVersion 1.5.3 Feb 2008
+\ProjectPath C:\Users\alan\ToolboxC\DictionaryFactoryFolder\DictionaryFactoryPackage\DictionaryFactory\Settings\DictionaryFactory.prj
+\LockProject 0
+\AutomaticKeyboardSwitching
+\+CorpusSet 
+\WordLstCorpus Text
+\WordLstLimitCount
+\WordLstMaxCount 10
+\ConcordanceCorpus Text
+\ConcordanceSearch sæmpl̩
+\ConcordanceSearchType 3
+\ConcordanceLimitCount
+\ConcordanceMaxCount 1000
+\ConcordanceOutput Concordance.db
+\-CorpusSet
+\LangCtrlHeight 24
+\DontValidateOnEdit
+\+fntMarkers 
+\Name MS Sans Serif
+\Size 10
+\-fntMarkers
+\+rundosMarkers 
+\-rundosMarkers
+\placementMain normal -1 -1 -1 -1 0 0 859 607
+\+dblst 
+
+\+db C:\Users\alan\ToolboxC\DictionaryFactoryFolder\DictionaryFactoryPackage\DictionaryFactory\Dictionary.txt
+\+wndlst 
+\+wnd 
+\placement normal 480 437 -1 -1 289 -1 619 131
+\z 3
+\ViewFieldNames
+\widthMarkerArea 88
+\JumpTarget
+\FocusTarget
+\+brflst 
+\FieldEmptyEntry *empty*
+\NoFieldEntry *no field*
+\+brf 
+\mkr lx
+\width 157
+\-brf
+\+brf 
+\mkr ps
+\width 40
+\-brf
+\+brf 
+\mkr ge
+\width 93
+\-brf
+\-brflst
+\+ind 
+\mkrPriKey lx
+\srtPriKey Default
+\mkrSecKey hm
+\-ind
+\+keySearch 
+\fldPri x
+\match_char p
+\-keySearch
+\+keyInsert 
+\fldPri wash
+\MatchWhole
+\match_char p
+\-keyInsert
+\-wnd
+\+wnd 
+\placement normal -1 -1 -1 -1 0 -1 290 484
+\z 2
+\ViewFieldNames
+\widthMarkerArea 35
+\Browse
+\JumpTarget
+\FocusTarget
+\+brflst 
+\FieldEmptyEntry *empty*
+\NoFieldEntry *no field*
+\+brf 
+\mkr lx
+\width 113
+\-brf
+\+brf 
+\mkr de
+\width 144
+\-brf
+\-brflst
+\+ind 
+\mkrPriKey lx
+\srtPriKey Default
+\mkrSecKey hm
+\-ind
+\+keySearch 
+\fldPri x
+\match_char p
+\-keySearch
+\+keyInsert 
+\fldPri sample
+\MatchWhole
+\match_char p
+\-keyInsert
+\-wnd
+\-wndlst
+\-db
+
+\+db C:\Users\alan\ToolboxC\DictionaryFactoryFolder\DictionaryFactoryPackage\DictionaryFactory\Texts.txt
+\+wndlst 
+\+wnd 
+\placement normal -1 -1 -1 -1 299 139 839 484
+\z 0
+\ViewFieldNames
+\widthMarkerArea 80
+\JumpTarget
+\FocusTarget
+\+brflst 
+\FieldEmptyEntry *empty*
+\NoFieldEntry *no field*
+\+brf 
+\mkr ref
+\width 96
+\-brf
+\+brf 
+\mkr tx
+\width 304
+\-brf
+\+brf 
+\mkr ft
+\width 100
+\-brf
+\-brflst
+\+ind 
+\mkrPriKey ref
+\srtPriKey English
+\-ind
+\+rec 
+\fldPriKey
+\-rec
+\+keySearch 
+\match_char p
+\-keySearch
+\+keyInsert 
+\fldPri sample 2
+\MatchWhole
+\match_char p
+\-keyInsert
+\CaretLine 0
+\CaretLineScroll 0
+\CaretChar 0
+\-wnd
+\-wndlst
+\-db
+
+\+db C:\Users\alan\ToolboxC\DictionaryFactoryFolder\DictionaryFactoryPackage\DictionaryFactory\NonDictionary.txt
+\+wndlst 
+\+wnd 
+\placement normal -1 -1 -1 -1 630 -1 839 132
+\z 1
+\ViewFieldNames
+\widthMarkerArea 89
+\JumpTarget
+\FocusTarget
+\+brflst 
+\FieldEmptyEntry *empty*
+\NoFieldEntry *no field*
+\+brf 
+\mkr lx
+\width 157
+\-brf
+\+brf 
+\mkr ps
+\width 12
+\-brf
+\+brf 
+\mkr ge
+\width 0
+\-brf
+\-brflst
+\+ind 
+\mkrPriKey lx
+\srtPriKey Default
+\mkrSecKey hm
+\-ind
+\+keySearch 
+\fldPri wash
+\match_char p
+\-keySearch
+\+keyInsert 
+\fldPri x
+\MatchWhole
+\match_char p
+\-keyInsert
+\-wnd
+\-wndlst
+\-db
+
+\-dblst
+\+Find 
+\match_char p
+\+ftxlst 
+\-ftxlst
+\-Find
+\AmbigBoxLeft 0
+\AmbigBoxTop 20
+\-ShProjectSettings

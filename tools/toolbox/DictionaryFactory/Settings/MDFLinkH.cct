@@ -1,0 +1,91 @@
+c ====================================================================
+c MDFLinkH.CCT - Hypertext links in the Dictionary
+c For Shoebox version 5.0
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c 1999-02-26 Mark R. Pedrotti (ICTS Software Development)
+c 1999-03-03 MRP: Add group(gPhonetic) to allow testing of UTF-8
+c            conversion for IPA phonetics.
+c 1999-04-02 MRP: Add clear(hmLink) that had been omitted.
+c            Add group(gOptionFields).
+c            Match |ph{...} subfields instead of \ph fields.
+c
+c Exported file type: Web pages (HTML)
+c
+c MDFDictH.cct converts hypertext links within the dictionary
+c (i.e. \lv, \cf, \sy, \an, \mn, \va) to |fvlink{...} notation
+c and this Consistent Changes table converts those subfields
+c to the notation expected in the SF-to-HTML converter step.
+
+
+c ====================================================================
+begin >
+    store(Backslash) "\" endstore
+    store(Digit) "0123456789" endstore  c 1998-08-22 MRP
+    use(gOptionFields)  c 1999-04-02 MRP
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+"\_" > store(omit) use(gRestOfOptionField)
+
+nl > ""
+
+"" > use(gMain)
+
+c --------------------------------------------------------------------
+group(gRestOfOptionField)
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ====================================================================
+group(gMain)
+
+"\" > dup use(gField)
+
+c --------------------------------------------------------------------
+group(gField)
+
+nl fol(Backslash) > dup use(gMain)  c End of field
+
+"|fvlink{" > clear(hmLink) store(hmLink,lxLink) use(gLink)
+
+"|ph{" > dup use(gPhonetic)  c 1999-04-02 MRP
+
+c --------------------------------------------------------------------
+group(gLink)
+
+any(Digit) > set(hmLink) append(hmLink) dup append(lxLink)
+
+"}" >
+    endstore 
+    "|{NOBR}"
+    '|{A HREF="@.html#' out(lxLink) out(hmLink) '"}'
+    "|fv{" out(lxLink) "}"
+    "|{/A}"
+    if(hmLink) "|hm{" out(hmLink) "}" endif
+    "|{/NOBR}"
+    use(gField)
+
+nl fol(Backslash) > endstore dup use(gMain)  c End of field
+
+c ====================================================================
+group(gPhonetic)  c Optional UTF-8 conversion for IPA phonetics
+
+c Note: To test UTF-8 conversion in Shoebox 4.1, you need to modify
+c       the properties of your export process in the .typ file:
+c
+c       1. Exit from the Shoebox program (if it's running).
+c       2. Open your database type file in a text editing program.
+c       3. Find your export process.
+c          For example, if it's named Web Dictionary, find the line:
+c          \+expMDF Web Dictionary
+c       4. Add a new line under the \+expMDF line:
+c          \UTF8
+c       5. Close the database type file and save your changes.
+
+nl fol(Backslash) > dup use(gMain)  c End of \ph field
+
+"}" > dup use(gField)  c End of |ph{...} subfield
+
+c *** This is the place for the UTF-8 conversion rules:
