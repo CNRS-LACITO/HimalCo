@@ -1,0 +1,243 @@
+c ====================================================================
+c MDFListH.CCT - Format a gloss index (finderlist)
+c For Shoebox version 5.0
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c
+c Input:     Lexical data fields selected by MDFLIST1.CCT according to
+c            the user's choices (e.g. Audience, Include part of speech).
+c            Each reversal item from a \re, \ge, \rn, or \gn field
+c            along with related fields \lc, \hm, \se, \ps, \pn, \sn
+c            has become a reversal record. Shoebox has resorted these
+c            records by reversal item and part of speech.
+c
+c Output:    A Standard Format file which will be converted to RTF
+c            according to the "MDF Rich Text Format" database type's
+c            marker properties (field names in the .typ file correspond
+c            to style names in the Word document template .dot file).
+c            Shoebox uses one of the MDF_*.CCT change tables (selected
+c            in Audience Setup) to change labels and remove redundant
+c            periods after parts of speech in this table's output.
+c
+c 1998-08-20 Mark R. Pedrotti (mark_pedrotti@sil.org)
+c            JAARS, P.O. Box 248, Waxhaw, NC 28173-0248 USA
+c            Adapted from MDFList2.cct for SF-to-HTML conversion.
+c 1998-12-09 MRP - Add a regional finderlist option and distinguish
+c            the audience's language from the language of the index.
+c 1999-02-26 MRP - Enclose the SPAN for the gloss or lexeme
+c            within the A instead of the other way around.
+c 1999-03-18 MRP - Change options to \_EnglishGlossIndex, etc.
+c 1999-04-02 MRP - Use subfields for letter of the alphabet headings.
+c 2000-05-25 MRP - Allow subfield formatting in reversals and glosses.
+c            For example: game of fv:sungka, play a...
+c            If there are subfields, the \re, \rn, or \rr field
+c            output from MDFList1.cct consists of two lines:
+c            1. gloss index for sorting (without the subfield notation)
+c            2. gloss index for printing
+c
+c --------------------------------------------------------------------
+
+c ====================================================================
+c INITIALIZATION
+c --------------------------------------------------------------------
+
+begin >
+    store(WS) ' ' nl d9 endstore  c White space: space, newline, tab
+    store(Backslash) '\' endstore
+    store(Newline) nl endstore
+    c Set default options
+    set(sn_under_se)  c Standard hierarchy  
+    use(gOptionFields)
+
+c ====================================================================
+c DEFINITIONS FOR OUTPUT FORMATTING
+c --------------------------------------------------------------------
+
+c ====================================================================
+define(dResetStoresAndSwitches) >
+    store(rx) clear(rx)          c \re Reversal (E) or \rn or \rr
+    store(lc) clear(lc)          c \lc Lexical citation
+    store(hm) clear(hm)          c \hm Homonym number
+    store(se) clear(se)          c \se Subentry
+    store(ps) clear(ps,psEmpty)  c \ps Part of speech
+    store(pn) clear(pn,pnEmpty)  c \pn Part of speech (n)
+    store(sn) clear(sn)          c \sn Sense number
+    endstore
+
+c ====================================================================
+define(dOutputReversalRecord) >
+    endstore
+
+    if(rx) begin
+        '\TR' nl  c Table row
+        ifneq(rx) cont(rxPrev) begin  c Only output headword when it changes
+            '\TD '
+            '|{A NAME="' out(rx) '"}'
+            if(e) '|ge{' endif
+			if(n) '|gn{' endif
+			if(r) '|gr{' endif
+            out(rx)
+            '}'
+            '|{/A}'
+            nl
+            set(rxPrev) store(rxPrev) outs(rx) endstore
+            clear(pxPrev) store(pxPrev) endstore  c 1998-07-25 MRP
+        end else
+            '\TD ' d183 nl
+        endif  c ifneq(rx) cont(rxPrev)
+
+        if(ps) begin 
+			c 1998-12-02 MRP
+            if(psEmpty) begin
+				'\TD' nl
+            end else begin
+				ifeq(ps) cont(pxPrev) begin
+					'\TD ' d183 nl
+				end else
+					'\TD |ps{' out(ps) '.}' nl
+				endif
+            end endif  c if(psEmpty)
+            set(pxPrev) store(pxPrev) outs(ps) endstore
+        end endif  c if(ps)
+
+        if(pn) begin 
+			c 1998-12-02 MRP
+            if(pnEmpty) begin
+				'\TD' nl
+            end else begin
+				ifeq(pn) cont(pxPrev) begin
+					'\TD ' d183 nl
+				end else
+					'\TD |pn{' out(pn) '.}' nl
+				endif
+            end endif  c if(pnEmpty)
+            set(pxPrev) store(pxPrev) outs(pn) endstore
+        end endif  c if(pn)
+
+        '\TD |{A HREF="../Dict/@.html#'
+        if(se) begin
+            out(lc) out(hm) ' ' out(se) '"}|fv{' out(se) '}|{/A}'
+            if(sn) begin
+                if(sn_under_se) ' |sn{(' out(sn) ')}' clear(sn) endif
+            end endif c if(sn)
+		end else begin
+            out(lc) out(hm) '"}|fv{' out(lc) '}|{/A}'
+            if(hm) '|hm{' out(hm) '}' endif
+            if(sn) ' |sn{(' out(sn) ')}' endif
+        end endif  c if(se)
+        nl
+
+        do(dResetStoresAndSwitches)
+    end endif  c if(rx)
+    
+    if(LP) begin
+        '\H2 '
+        if(e) '|He{' endif  c 1999-04-02 MRP
+		if(n) '|Hn{' endif
+		if(r) '|Hr{' endif
+        out(LP)
+        '}' nl
+        '\TABLE' nl
+        store(LP) endstore clear(LP)
+    end endif  c if(LP)
+
+c ====================================================================
+define(dEndfile) >
+    do(dOutputReversalRecord)
+    if(copyright) '\ADDRESS ' out(copyright) nl endif
+    endfile
+
+c ====================================================================
+c RULES FOR INPUT PROCESSING
+c --------------------------------------------------------------------
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+'\_National' nl > set(National)  c 1998-12-09 MRP
+'\_EnglishGlossIndex'  nl > set(e) set(GlossOption)
+'\_NationalGlossIndex' nl > set(n) set(GlossOption)
+'\_RegionalGlossIndex' nl > set(r) set(GlossOption)
+
+'\_se_ps_sn' nl > set(sn_under_se)
+'\_se_sn_ps' nl > set(sn_under_se)
+'\_AlternateHierarchy' nl > next
+'\_sn_se_ps' nl > clear(sn_under_se)
+'\_sn_ps_se' nl > clear(sn_under_se)
+'\_ps_se_sn' nl > set(sn_under_se)
+'\_ps_sn_se' nl > clear(sn_under_se)
+
+'\_copyright ' > set(copyright) store(copyright) use(gRestOfOptionField)
+
+'\_' > store(omit) use(gRestOfOptionField)
+
+nl > ''
+
+'' >
+	ifn(GlossOption) begin
+		if(National) set(n) else set(e) endif
+	end endif  c ifn(GlossOption)
+	c set(r) clear(e,n)  c *** Test the regional option in Shoebox 4
+	store(omit) use(gMain)
+
+c --------------------------------------------------------------------
+group(gRestOfOptionField)  c From an older or newer version of Shoebox
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ====================================================================
+group(gMain)  c Read the reversal records
+
+'\LP ' > store(LP) set(LP) use(gField)
+          
+'\lx' nl > do(dOutputReversalRecord)  c Output previous record
+
+'\lc ' > store(lc) set(lc) use(gField) set(NonBreakingHyphen)
+'\hm ' > store(hm) set(hm) use(gField)
+
+'\se ' > store(se) set(se) use(gField)
+
+'\ps ' > store(ps) set(ps) use(gField)
+'\ps' fol(Newline) > store(omit) use(gField) set(ps,psEmpty)
+
+'\pn ' > store(pn) set(pn) use(gField)
+'\pn' fol(Newline) > store(omit) use(gField) set(pn,pnEmpty)
+
+'\sn ' > store(sn) set(sn) use(gField)                        
+
+'\rr ' > next
+'\rn ' > next
+'\re ' > store(rx) set(rx) use(gField,gReversal) set(NonBreakingHyphen)
+
+'\' > store(omit) use(gField)
+
+c ====================================================================
+group(gField)  c Read the contents of a data field
+
+c NOTE: MDFList1.CCT has already removed extra white space from fields
+c and converted underline to space in gloss fields used for reversal.
+
+c '-' > if(NonBreakingHyphen) '|{_}' else dup endif
+c '-' prec(WS) > '|{_}'
+
+nl fol(Newline) > ''  c Shoebox inserts a newline between records
+
+nl fol(Backslash) > use(gMain) clear(NonBreakingHyphen)
+
+endfile > next
+nl endfile > do(dEndfile)
+
+'|hm{' > set(hm) store(hm) use(gHomonymNumber)  c 1998-08-20 MRP
+
+c --------------------------------------------------------------------
+group(gHomonymNumber)
+
+'}' > store(omit) use(gField)
+
+c --------------------------------------------------------------------
+group(gReversal)
+
+c 2000-05-25 Allow subfield formatting in reversals and glosses.
+nl > store(rx)
+
+c END ===============================================================

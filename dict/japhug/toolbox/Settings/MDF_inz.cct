@@ -1,0 +1,193 @@
+c ====================================================================
+c MDF_INZ.CCT - Translate MDF labels into Bahasa Indonesia
+c Acknowledgment: Translated by David Coward and colleagues in Indonesia
+c For Shoebox version 4.0 and later
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c 1996-08-12 Mark R. Pedrotti (ICTS Software Development)
+c            Initial test version for Shoebox 3.0
+c 1997-01-26 Combine changes for both dictionary and finderlist
+c            into one table to make it easier to translate
+c            the labels into other national languages
+c 1997-03-07 Remove groups for "letter of the alphabet" and
+c            option fields from mdfdict2.cct and mdflist2.cct
+c            Revised test version for Shoebox 3.06
+c 1997-05-06 Remove redundant period after final punctuation in data.
+c 1997-09-30 Add groups for translating user-defined range set elements
+c            in the \ps, \lf, and \pdl fields.
+c 1997-10-11 Add rule for paradigm set label in group(gParadigmLabel)
+c 1998-04-03 Remove redundant periods in \ps and \pn fields.
+c 1999-03-29 Match both field and subfield notation for markers.
+c            Revise labels for regional fields, and field "bundles"
+c            Reversal, Word-level gloss, Usage, Only/restrictions.
+c            (Note: Reversal and Word-level need to be translated.)
+c 1999-04-02 Add group(gOptionFields).
+
+c ====================================================================
+begin >
+    store(Backslash) "\" endstore
+
+    c *** The MDFDict2.cct and MDFDictH.cct change tables add a period
+    c at the end of most data fields. But if the field already
+    c ended with final punctuation, the additional period is wrong.
+    c This table removes inappropriate periods added by MDF after
+    c final punctuation in the data, by default after period,
+    c question mark, or exclamation mark. Modify the characters
+    c listed below within quotes for your language and font:
+
+    store(FinalPunctuation) ".?!" endstore
+
+    use(gOptionFields)  c 1999-04-02 MRP
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+'\_' > store(omit) use(gRestOfOptionField)
+
+nl > ''
+
+'' > use(gMain)
+
+c --------------------------------------------------------------------
+group(gRestOfOptionField)
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ====================================================================
+group(gMain)
+
+"\CP " > dup    use(gLabel)          c Centered Paragraph
+
+"\ps " > dup    use(gPartOfSpeech)   c Part of speech (English)
+"\pn " > "\ps " use(gPartOfSpeechN)  c Part of speech (national)
+
+"\" >    dup    use(gRestOfField)    c Any other field
+
+c --------------------------------------------------------------------
+group(gRestOfField)
+
+nl fol(Backslash) > dup use(gMain)  c End of field
+
+"|fl{" > dup    use(gLabel)
+
+"|ps{" > dup    use(gPartOfSpeech)
+"|pn{" > "|ps{" use(gPartOfSpeechN)
+
+c Remove redundant period at the end of:
+ "|fs{.}" prec(FinalPunctuation) > ""   c Fields
+"}|fs{.}" prec(FinalPunctuation) > "}"  c Subfields
+
+c ====================================================================
+group(gPartOfSpeech)
+
+nl fol(Backslash) > dup use(gMain)  c End of \ps field
+
+"}" > dup use(gRestOfField)  c End of |ps{...} subfield
+
+"." prec(FinalPunctuation) > ""  c Remove redundant period
+
+c *** Change rules for national audience \ps part of speech.
+c If you don't need different labels for the national audience,
+c or if you've included explicit \pn fields throughout your data,
+c then you don't need any rules here. If you do, be sure to include
+c a rule for every part of speech that you use.
+
+c Note: The following examples have a c [comment] at the beginning
+c of the line to make these changes inactive. When you add your own
+c change rules, do NOT include that 'c'.
+
+c "adj"           > "ks"                    c adjective
+c "n"             > "kb"                    c noun
+
+c ====================================================================
+group(gPartOfSpeechN)
+
+nl fol(Backslash) > dup use(gMain)  c End of \pn field
+
+"}" > dup use(gRestOfField)  c End of |pn{...} subfield
+
+"." prec(FinalPunctuation) > ""  c Remove redundant period
+
+c ====================================================================
+group(gLabel)
+
+nl fol(Backslash) > dup use(gMain)  c End of \CP field
+
+"}" > dup use(gRestOfField)  c End of |fl{...} label subfield
+
+c 1999-03-29 MRP: Old labels that aren't used in version 4.11 (and later)
+
+"[Regnl:"         > "[Melayu:"              c \dr, \gr, wr
+"NatRestrict:"    > "Terbatas:"             c \on Only/restrictions (n)
+"NatUsage:"       > "Kegunaan:"             c \un Usage (n)
+
+c *** Change rules for MDF's standard field labels that are output by
+c MDFDict2.cct, MDFDictH.cct, MDFList2.cct, and MDFListH.cct.
+c By replacing a rule's right-hand-side, you translate that label
+c for a national audience or modify it for an English audience.
+
+c --------------------------------------------------------------------
+c If you want to translate the \lf data field, add rules here:
+
+c --------------------------------------------------------------------
+c If you want to translate the \pdl data field, add rules here:
+
+c --------------------------------------------------------------------
+"Ant:"            > "Lawan:"                c \an Antonym
+"Read:"           > "Baca:"                 c \bb Bibliography
+"From:"           > "Pinjaman:"             c \bw Borrowed word (loan)
+"See:"            > "Lihatlah:"             c \cf Cross reference
+"Etym:"           > "Asal:"                 c \et Etymology (proto form)
+"Semantics:"      > "Kelompok:"             c \is Index of semantics
+"Lit:"            > "Lit:"                  c \lt Literally
+"See main entry:" > "Lihatlah kata induk:"  c \mn Main entry cross reference
+"Morph:"          > "Morf:"                 c \mr Morphology
+"Anth:"           > "Antro:"                c \na Notes (anthropology)
+"Disc:"           > "Wacana:"               c \nd Notes (discourse)
+"Gram:"           > "Tata:"                 c \ng Notes (grammar)
+"Phon:"           > "Fono:"                 c \np Notes (phonology)
+"Ques:"           > "Tanya:"                c \nq Notes (questions)
+"Socio:"          > "Sosio:"                c \ns Notes (sociolinguistics)
+"Note:"           > "Cat:"                  c \nt Notes (general)
+"Restrict:"       > "Terbatas:"             c \o* Only/restrictions (*)
+"Prdm:"           > "Pola:"                 c \pd Paradigm
+"pl:"             > next
+"Pl:"             > "Jamak:"                c \pl Plural form
+"Reversal:"       > "Reversal:"             c \r* Reversal (*)
+"rd:"             > next
+"Redup:"          > "Redup:"                c \rd Reduplication form(s)
+"Ref:"            > "Ref:"                  c \rf Reference
+"SD:"             > "Galongan:"             c \sd Semantic domain
+"sg:"             > next
+"Sg:"             > "Tunggal:"              c \sg Singular form
+"Usage:"          > "Kegunaan:"             c \u* Usage (*)
+"Source:"         > "Dari:"                 c \so Source
+"Syn:"            > "Searti:"               c \sy Synonym
+"Thes:"           > "Keluarga:"             c \th Thesaurus
+"Variant:"        > "Bentuk lain:"          c \va Variant forms
+"Word-level:"     > "Word-level:"           c \w* Word-level gloss (*)
+"1d:"             > "1d:"                   c \1d First dual
+"1p:"             > "1j:"                   c \1p First plural
+"1i:"             > next
+"1pi:"            > "1j:"                   c \1i First plural inclusive
+"1e:"             > next
+"1px:"            > "1j:"                   c \1e First plural exclusive
+"1s:"             > "1t:"                   c \1s First singular
+"2d:"             > "2d:"                   c \2d Second dual
+"2p:"             > "2j:"                   c \2p Second plural
+"2s:"             > "2t:"                   c \2s Second singular
+"3d:"             > "3d:"                   c \3d Third dual
+"4d:"             > next
+"3dn:"            > "3dn:"                  c \4d Non-animate dual
+"3p:"             > "3j:"                   c \3p Third plural
+"4p:"             > next
+"3pn:"            > "3jn:"                  c \4p Non-animate plural
+"3s:"             > "3t:"                   c \3s Third singular
+"4s:"             > next
+"3sn:"            > "3tn:"                  c \4s Non-animate singular
+
+"(from:" > "(dari:"  c Include \lx lexeme with \lc citation form
+
+"see:" > "lihat:"  c Finderlist cross-reference from \se to main entry
+ 
+"Total number of entries:" > "Kata Pokok Jumlah:"  c Label in \CP
