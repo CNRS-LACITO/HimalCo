@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>NLTK 3.0 Alpha Releases</title>
+</head>
+<body>
+<h1>NLTK 3.0 Alpha Releases</h1>
+
+<p>NLTK 3.0 is the first version of NLTK to support Python 3.
+<b>This version of NLTK is likely to contain bugs.</b>
+The alpha releases are for people who would like to help us identify and fix them
+(by submitting bug reports and patches on <a href="https://github.com/nltk/nltk/">GitHub</a>).
+All contributions will be acknowledged.
+</p>
+
+<ul>
+  <li><a href="nltk-3.0a3.tar.gz">nltk-3.0a3.tar.gz</a></li>
+  <li><a href="nltk-3.0a3.win32.exe">nltk-3.0a3.win32.exe</a></li>
+  <li><a href="nltk-3.0a3.zip">nltk-3.0a3.zip</a></li>
+</ul>
+
+<p>This work is being led by Steven Bird and Mikhail Korobov, supported by the Python Software Foundation.</p>
+
+<h2>Release Notes</h2>
+
+<p>The NLTK 3.0.X series will support Python 2.6 and 2.7 as well as Python 3.</p>
+
+<p>The most observable change to the API is that Unicode strings are now used throughout,
+and many NLTK methods that used to return large lists now return iterators.
+The simplified tagset has been replaced with the Universal Tagset.
+Some properties have become methods, e.g.:
+Tree: <tt>node -> label()</tt>,
+Relextract: <tt>show_raw_rtuple() -> rtuple(), show_clause() -> clause()</tt>
+WordNet: <tt>definition -> definition(), lemmas -> lemmas() etc</tt>
+The following are dropped: babelize, sourcedstrings, clean_html,
+
+<p>Most of the effort has gone into implementing the syntactic changes required for Python 3
+and improving our test suite. The latter will make it easier to maintain NLTK into the future.
+</p>
+
+<h2>Useful Links</h2>
+
+<ul>
+  <li><a href="http://docs.python.org/3.0/whatsnew/3.0.html">What's new in Python 3.0</a></li>
+  <li><a href="http://docs.python.org/2/library/2to3.html">Automated Python 2 to 3 code translation</a></li>
+  <li><a href="https://github.com/nltk/nltk/wiki/API-changes-for-Python-3">changes to the NLTK API (some still under consideration)</a></li>
+  <li><a href="https://github.com/nltk/nltk/">NLTK development on GitHub</a></li>
+</ul>
+
+</body>
+</html>
