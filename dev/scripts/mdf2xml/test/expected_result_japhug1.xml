@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbox_data>
+    <header>
+        <_sh>v3.0  583  MDF 4.0</_sh>
+    </header>
+    <lxGroup>
+        <lx>mto</lx>
+        <sfx quality="low">../../../../dict/japhug/data/audio/ZGAmto.wav</sfx>
+        <sfx quality="low">../../../../dict/japhug/data/audio/ZGAsWmto2.wav</sfx>
+        <sfx quality="low">../../../../dict/japhug/data/audio/amto.wav</sfx>
+        <bb>1471</bb>
+        <dt print="no">02/Nov/2013</dt>
+        <psGroup>
+            <ps>vl</ps>
+            <cf>amɯmto</cf>
+            <cf>sɤmto</cf>
+            <msGroup>
+                <ms type="lexicalized affix">pɯ</ms>
+                <geGroup>
+                    <ge>voir</ge>
+                    <gn>看见</gn>
+                    <xvGroup>
+                        <xv>ɯ-mɲaʁ ɲɯ-mto ʂɯŋʂɯŋ ʑo</xv>
+                        <xn>他眼睛看得很清楚（视力很好）</xn>
+                    </xvGroup>
+                </geGroup>
+            </msGroup>
+        </psGroup>
+        <seGroup>
+            <se>sɯmto</se>
+            <psGroup>
+                <ps>vt</ps>
+                <ng type="derivation">causatif</ng>
+                <msGroup>
+                    <ms type="lexicalized affix">pɯ-</ms>
+                    <geGroup>
+                        <ge>montrer, laisser voir</ge>
+                        <gn>让人看见、给人看</gn>
+                    </geGroup>
+                </msGroup>
+            </psGroup>
+        </seGroup>
+        <seGroup>
+            <se>ʑɣɤmto</se>
+            <psGroup>
+                <ps>vi</ps>
+                <ng type="derivation">reflechi</ng>
+                <msGroup>
+                    <ms type="lexicalized affix">pɯ-</ms>
+                    <geGroup>
+                        <ge>se voir</ge>
+                        <gn>看到自己</gn>
+                        <xvGroup>
+                            <xv>tɯci ɯ-ŋgɯ ɕ-pɯ-ru-a ri, pjɯ-ntɕhar-a ɲɯ-ŋu tɕe pɯ-ʑɣɤmto-a</xv>
+                            <xn>我往水里看了一下，里面有我的倒影，我看到我自己了</xn>
+                        </xvGroup>
+                    </geGroup>
+                </msGroup>
+            </psGroup>
+        </seGroup>
+        <seGroup>
+            <se>ʑɣɤsɯmto</se>
+            <psGroup>
+                <ps>vi</ps>
+                <ng type="derivation">reflechi.causatif</ng>
+                <msGroup>
+                    <ms type="lexicalized affix">pɯ-</ms>
+                    <geGroup>
+                        <ge>se faire voir</ge>
+                        <gn>让别人看到自己</gn>
+                        <xvGroup>
+                            <xv>ma-pɯ-tɯ-ʑɣɤsɯmto</xv>
+                            <xn>你不要让人看见你</xn>
+                        </xvGroup>
+                        <xvGroup>
+                            <xv>ɯʑo mɯ-to-rɯndzaŋspa tɕe pjɤ-ʑɣɤsɯmto</xv>
+                            <xn>他不小心让人看见了</xn>
+                        </xvGroup>
+                    </geGroup>
+                </msGroup>
+            </psGroup>
+        </seGroup>
+        <seGroup>
+            <se>amto</se>
+            <psGroup>
+                <ps>vi</ps>
+                <geGroup>
+                    <ge>être visible</ge>
+                    <gn>看得见</gn>
+                    <xvGroup>
+                        <xv>khɯɣɲɟɯ ju-kɯ-ru tɕe, qhaqhu nɯra tɯrme nɯra amto</xv>
+                        <xn>往窗子外面看的话，看得见房子后面的人</xn>
+                    </xvGroup>
+                </geGroup>
+            </psGroup>
+        </seGroup>
+    </lxGroup>
+</toolbox_data>

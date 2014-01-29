@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbox_data>
+    <header>
+        <_sh>v3.0  231  MDF 4.0</_sh>
+    </header>
+    <lxGroup>
+        <lx>ther</lx>
+        <sfx quality="high">../../../../dict/khaling/data/audio/vt-ther.wav</sfx>
+        <sfx quality="high">../../../../dict/khaling/data/audio/vt-ther2.wav</sfx>
+        <psGroup>
+            <ps>vt</ps>
+            <ms type="conjugaison class">er</ms>
+            <!-- An XML element name cannot start with a number -->
+            <_1s>theru</_1s>
+            <_1d>theri</_1d>
+            <geGroup>
+                <ge>lean against</ge>
+                <gn>ठर्‍याउनु</gn>
+                <xvGroup>
+                    <xv>ʔuŋʌ gɵ̄ːthɛpo ʔusʌ̄ŋ theru.</xv>
+                    <xn>म गोठको घोचा ठराउँछु ।</xn>
+                    <xe>I erect the pole of a cowshed.</xe>
+                </xvGroup>
+                <xvGroup>
+                    <xv>krʌ̂msʌŋ ʔuŋʌ disɛ̂: kholunʌ kʌ̄m tūŋbi theru.</xv>
+                    <xn>भोलि म आराकाठ ओसारेर घरमाथी ठड्याउँछु ।</xn>
+                    <xe>I will transport the sawed wood planks tomorrow and lean them (on a terrace) above the house.</xe>
+                </xvGroup>
+            </geGroup>
+        </psGroup>
+        <seGroup>
+            <se>ther-si</se>
+            <sfx quality="high">../../../../dict/khaling/data/audio/vr-ther-si.wav</sfx>
+            <psGroup>
+                <ps>vr</ps>
+                <!-- An XML element name cannot start with a number -->
+                <_1s>thērsiŋʌ</_1s>
+                <_1d>thērsiji</_1d>
+                <geGroup>
+                    <ge>lean against something vertically</ge>
+                    <gn>बस्‍नु</gn>
+                    <xvGroup>
+                        <xv>ʔûŋ lūŋbi thērsiŋʌtʌ.</xv>
+                        <xn>म ढुङ्‍गामा बसेँ ।</xn>
+                        <xe>I leant against the stone.</xe>
+                    </xvGroup>
+                    <xvGroup>
+                        <xv>ʔʌ̄mʔɛ kɛ̄m mɛlo dhɛpɛ-dhɛpɛ ʔubhittʌbi tʌŋʌ thērdensi.</xv>
+                        <xn>उसले काम गर्दा घरी-घरी भित्तमा मात्र बस्छ ।</xn>
+                        <xe>He leans against the wall from time to time when he works.</xe>
+                    </xvGroup>
+                </geGroup>
+            </psGroup>
+        </seGroup>
+    </lxGroup>
+</toolbox_data>
