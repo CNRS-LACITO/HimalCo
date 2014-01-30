@@ -5,6 +5,16 @@
 # Audio files
 *.wav
 
+# LaTeX generated files
+*.aux
+*.toc
+*.bbl
+*.blg
+*.out
+*.log
+*.snm
+doc/articles/LaTeX-gj/*.pdf
+
 #################
 ## Eclipse
 #################
