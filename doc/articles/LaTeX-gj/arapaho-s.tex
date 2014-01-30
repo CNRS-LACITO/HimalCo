@@ -1,0 +1,366 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+
+ 
+\begin{document}
+\title{The sound change *s > n in Arapaho\footnote{I would like to thank Ives Goddard, Nathan Hill, Alexis Michaud and three anonymous reviewers for useful comments; I am responsible for any remaining error. This research was funded by the Labex EFL (Empirical Foundations of Linguistics, PPC2, Evolutionary approaches to phonology: new goals, new methods). I use the following abbreviations: \textsc{vii} intransitive inanimate verb, \textsc{vai} intransitive animate verb, \textsc{vti} transitive inanimate verb, \textsc{vta} transitive animate verb, PA Proto-Algonquian. } }  
+\author{Guillaume JACQUES\\ CNRS (PARIS, FRANCE)}
+\maketitle
+
+\textbf{Abstract}: The sound change *s > n in initial position in Arapaho is unparalleled in the world's languages, and previous attempts at explaining it have failed to produce a convincing scenario of its intermediate development.
+
+This paper proposes two hypotheses to account for the correspondence between PA *s-- and Arapaho n--, taking into account not only the individual steps of this particular proto-phoneme, but the evolution of the whole consonant system. It shows that the shift *s-- > n-- in initial position is not an intrinsically unnatural sound change, but  it can be explained from  an accumulation of natural changes and mergers.
+
+
+
+\textbf{keywords}: Algonquian, Arapaho, historical phonology, merger, rhotacism
+\section{Introduction}
+The historical phonology of Arapaho and Atsina is notoriously complex and typologically unusual.  Not only does  the sheer number of phonetic changes make these two languages look very different from PA and all other members of this family, but many are   poorly elsewhere in languages of the world. One of the most unusual sound change in Arapaho and Atsina concerns the evolution of PA *s, a phonetic law which we can call \textbf{Goddard's law} after its discoverer (\citealt[107]{goddard74arapaho}):
+
+\begin{quote} ``PA *s becomes *n initially and *h after a vowel or consonant (which at this point could only be *ʔ)'' \end{quote}
+
+
+
+Goddard adduced only two examples for this sound change:
+
+\begin{itemize}
+
+
+\item *siipiiwi ``river" >  Ar \ipa{níícíí} , Ats \ipa{níícééh}, compare Ojibwe \ipa{ziibi}
+
+\item *sakimeewa ``mosquito" > Ar \ipa{nóúbee} , Ats \ipa{nóúbée} ``fly'', compare Ojibwe \ipa{zagime}
+\end{itemize}
+
+According to Goddard's law, the proto-phoneme *s-- merges with *n--, *r--, and *w-- in initial position, as these other consonants present the same reflex.
+
+Later, \citet{pentland98} added twelve additional examples of this sound change, including both verbs and nouns, putting to rest any doubt as to the validity of Goddard's law. We will not present here Pentland's etymologies (which would require reproducing his detailed analysis of each verb derivation), but propose two new etymologies involving the correspondence PA *s-- to Arapaho n-- (data from \citealt{conathan06arapaho} and \citealt{salzmann83dico}):
+
+\begin{itemize}
+
+
+\item Arapaho \textit{nónoyoo}-- \textsc{vii} ``to be wrong" comes from PA *sanak-yaa-- (or *sarak-yaa). The intransitive inanimate final *-(y)aa- is quite common in Arapaho, as shown by  \textit{heyóó}-- \textsc{vii} ``to be long" < *kenw-aa- for instance.   \textit{hookoyóó}-- \textsc{vii} ``to be thick" < *kespak-yaa-- (\citealt[140]{goddard74arapaho}) shows the same reflex of *-ky-- across morpheme boundaries.\footnote{cf. Ojibwe \textit{ginwaa}-- ``to be long" and \textit{gipagaa}-- ``to be thick" respectively.}.
+
+The initial *sanak-- or *sarak- is found in Ojibwe \textit{zanagizi} \textsc{vai} < *sanak-esi-wa ``to have difficulty" with the \textsc{vai} final *-esi--. Since the finals *-yaa-- and *-esi-- often generate pairs of verbs with the same initial (\citealt{bloomfield46proto}), the reconstruction PA *sanak-yaa-- is perfectly possible even if not attested elsewhere. Note that \textit{nónoyoo}-- \textsc{vii} ``to be wrong" is etymologically unrelated to the superficially similar preverb \textit{noni}-- ``wrongly", which should rather be compared to PA *wani-- (Ojibwe \textit{wani}-- ``by mistake").
+
+
+ \item Arapaho \textit{niiθóun}-- \textsc{vta} ``to milk" originates from PA *sii-θakw-en-. Since such a reconstruction has never been proposed before, a detailed discussion is necessary.
+ 
+ \citet{hewson93proto} compared  Ojibwe \textit{ziinin}-- \textsc{vta} ``to milk" with Menomini \textit{seenenen-ɛɛw} ``he squeezes him in his hand" and Cree \textsc{vti} \textit{siin-eew} ``he wrings", and proposed a reconstruction *siin-en-(eew), with initial *siin-- and \textsc{vta} final *-en-- ``by hand". 
+ 
+ Ives Goddard (p.c.) suggests instead to analyse the Cree form as initial *sii- + \textsc{vti} final *-en--.  In this view, Ojibwe \textit{ziinin}-- comes from *siin-en-, having remotivated the form by adding again the *-en-- final. 
+ 
+ Arapaho \textsc{vta} \textit{niiθóun}-- visibly contains the initial *sii-- > \textit{nii}-- and the \textsc{vta} final *-en- ``by hand", but an additional postinitial has to be posited. The most probable reconstruction of this element is *θakw-,\footnote{With the intermediate stage *sii-θakw-en- > *siiθakon-.} but it seems not to have any known cognate (Ives Goddard, p.c.). 
+ 
+ Postinitials are very common in Arapaho, and their presence obscures the shapes of initial and final stems. Concerning the \textsc{vti} and \textsc{vta} finals   --\textit{en}-- < *--en--
+\citet[145]{cowell06arapaho}, observing the phenomenon for a synchronic point of view, point  out  that  ``many TI and a few TA verbs show a modified form of this final, occurring as /V(V)n/." Among his examples, he provides \textit{séyoun} \textsc{vta} ``to crush" which illustrates an irregular reflex similar to the one found in \textit{niiθóun}-- \textsc{vta} ``to milk". The irregular form of the final in this verb is caused by the presence of a different postinitial.\footnote{We propose to reconstruct PA *šekw-akw-en- for \textit{séyoun}-- \textsc{vta} ``to crush". This root is not reconstructed by Hewson, but is found in reduplicated form in  Ojibwe \textit{zhishigon}-- \textsc{vti} "to crush by hand" < *šeʔšekw-en-  with the same phonetic treatment as Ojibwe \textit{zhiishiigi}-- \textsc{vai} ``to urinate"  from *šiiʔšiiki-, reduplicated form of the initial *šiik--. Here we find a distinct postinitial *-akw--.}
+
+\end{itemize}
+
+With these two additional etymologies, the PA *s-- to Arapaho n-- correspondence now counts 16 examples. 
+
+In verb morphology, we should expect according to the mechanical phonetic laws an alternation between \textit{n}-- (in unprefixed forms) and \textit{h}-- (in prefixed forms), but analogy has erased any trace of this potential pattern.
+
+While the sound change s-- > h-- is extremely common, attested in many language families, the shift s-- > n-- in initial position is apparently exclusively attested in Arapaho and Atsina. As such, the study of this sound change is not unmotivated: any general theory of sound changes has to take into account rare cases and attempt to explain how they came into being and why they are uncommon.
+
+Aside from Goddard's seminal article, Goddard's law has been the topic of three publications: \citet{picard94sn}, who   attempted to propose a path of sound changes to account for the *s-- to n-- correspondence between PA and Arapaho/Atsina, \citet{pentland98}, who presented a series of detailed etymologies illustrating this sound change and  \citet{goddard01plains} who discusses it briefly.\footnote{\citet{picard94} also discusses these sound changes briefly. See \citet{goddard95review} and \citet{pentland97} for (quite critical) reviews of Picard's book.} \citet{goddard98arapaho}, a later article solving several thorny issues in Arapaho historical phonology and morphology, does not touch this topic.
+
+The aim of this paper is to discuss again the correspondence *s-- : n--, reconstructing several possible chains of sound changes   from PA to Arapaho/Atsina.  It is divided into four parts. First, we present some additional background knowledge on PA and Arapaho relevant to the topic discussed in the paper. Second, we discuss the previous literature. Third, we study in detail one of the previous proposals. Fourth, we put forth an alternative hypothesis to explain the evolution of the consonantal system from PA to Arapaho.
+
+\section{Proto-Algonquian and Arapahoan languages}
+Before discussing in more detail the sound changes from PA to Arapaho, it is necessary to provide some additional information on both languages.
+
+\subsection{Proto-Algonquian consonants}
+Proto-Algonquian is reconstructed following \citet{bloomfield46proto}'s model with a few minor amendments by Siebert and Goddard. While the phonological system is relatively well reconstructed,   the exact phonetic values of the proto-phonemes and clusters are still controversial in some cases. Given the limited scope of this paper, we will only focus on two problematic proto-phonemes: *l and *θ. 
+
+PA *r has a wide variety of reflexes among languages, and even Cree dialects differ considerably  from one another with respect to their reflexes of this consonant. The following reflexes are attested: \ipa{n} (the most common one), \ipa{l}, \ipa{j}, \ipa{ð} and \ipa{t}. Given the marginal presence of rhotics in Algonquian languages, in particular in Atikamekw and in early Miami-Illinois intervocalically (\citealt[41]{costa03miami}), \citet{goddard79comparative} and \citet{goddard94cline} suggested the possibility that *l should be reconstructed as *[r] instead.  Although most works on Algonquian historical linguistics keep the notation *l, some recent articles such as \citet{goddard98arapaho} also use *r.
+
+Another problematic proto-phoneme is *θ, whose reflexes in modern languages include \ipa{n}, \ipa{t}, \ipa{l} and \ipa{θ}. Bloomfield himself suggested that this consonant could have been either *[ɬ] or *[θ] in the proto-language, and \citet{picard84lh} supported the reconstruction *[ɬ], but \citet{goddard94cline} argues against it, as if *[r] is reconstructed instead of  *[l] for the previous phoneme, *[ɬ] has little advantage.
+
+In the present paper, we adopt \citet{goddard98arapaho}'s notation of proto-Algonquian, using *r instead of *l, *-sp- and *-sk- instead of Bloomfield's *-xp- and *-xk- and *-rk- instead of *-çk-. The hypotheses presented in this article however would still be valid if a reconstruction *[ɬ] instead of *[θ] is chosen.
+
+
+\subsection{Nawathinehena}
+The historical phonology of Arapaho / Atsina cannot be completely understood without taking into account their closest relative, the poorly attested Nawathinehena, only known by a short wordlist in \citet{kroeber16arapaho}.
+
+In spite of these limited data, Nawathinehena presents some interesting differences with Arapaho / Atsina as regards several consonant correspondences. The following examples illustrate the sound changes that are relevant to the present paper, that is *s, groups including *s and all the proto-phonemes that merge with it in either Arapaho or Nawathinehena:\footnote{The proto-Algonquian reconstructions are taken from the articles by Goddard, Pentland and Picard cited above, with slight emendations.}
+
+\begin{table}[H]
+\caption{Arapaho and Nawathinehena}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllllllll}
+\toprule
+&consonant & meaning & proto-Algonquian & Arapaho & Nawathinehena \\
+\midrule
+&*ɬ &	arrow &	*aθwi &	\ipa{hóθ} &	\ipa{hot} \\	
+ & *ɬ &	dog &	*aθemwa &	\ipa{héθ} &	\ipa{hatam} \\	
+&*w &	rabbit &	*waaposa &	\ipa{nóóku} &	\ipa{māⁿkut} \\	
+&*ny &	four &	*nyeewanwi &	\ipa{yéín} &	\ipa{niabaha'} \\	
+&*ny &	five &	*nyaaθanwi &	\ipa{yooθón} &	\ipa{niotanaha'} \\	
+&*s &	river &	*siipiiwi &	\ipa{niicíí} &	\ipa{titc} \\	
+&*r &	man &	*erenyiwa &	\ipa{hinén} &	\ipa{hiten} \\	
+&*t &	mouth &	*metooni &	\ipa{bétii} &	\ipa{matīn} \\	
+&*ʔs &	son &	*nekwiʔsehsa &	\ipa{neíhʔe} &	\ipa{neicta'} \\	
+&*ʔs &	stone &	*aʔsenaapeewa &	\ipa{hohʔonóókee} &	\ipa{haxtaⁿ} \\	
+&*t &	cottonwood &	*asaatwiya &	\ipa{hohóót} &	\ipa{hoxtoxt} \\	
+\bottomrule
+\end{tabular}}
+\end{table}
+ \citet[107]{goddard74arapaho} already knew      these correspondences:
+
+\begin{quote}
+In Nawathinehena PA *s, *l, and *θ fall together to [t], a development reminiscent both of the partial falling together of *s and *l in Arapaho-Atsina and of the change of *l and *θ to /t/ in Cheyenne.
+\end{quote}
+
+ \citet[76]{goddard01plains} further proposes that in Nawathinehena *s shifted to *z in all positions,  then merged with *r and eventually shifted to *t. This hypothesis will be evaluated in the following sections.
+
+Nawathinehena, in spite of being relatively close to Arapaho and Atsina does not share with these languages the sound changes affecting *w, *s, *θ, *r.
+
+However, the Nawathinehena forms were recorded in a pre-phonemic transcription, and require some degree of interpretation before comparison with Arapaho can be undertaken. The main problem here concerns the reflex  of   *ʔs. In Arapaho, it corresponds to /hʔ/, and  \citet[110]{goddard74arapaho} proposes a metathesis *ʔs > *ʔh > hʔ. In Nawathinehena, *ʔs is reflected by both <ct> and  <xt>. However, it is unlikely that this difference in transcription reflects a real phonemic contrast.\footnote{\citet[82]{kroeber16arapaho} himself mentions this problem: 
+``The x or h so frequently written before t, ts, and s in Nanwuthinähänan causes the suspicion that the informant was exaggerating a real or imaginary greater degree of aspiration, either of vowels or of consonants, than he believed Arapaho to possess. It seems somewhat doubtful whether full xt, xts, and xs were really spoken." I wish to thank one anonymous reviewer for pointing this out to me.} <ct> (transcription of a sound like [ʃt] or [ɕt]) occurs after a front vowel, and a preaspirated stop [ht] or velar fricative + stop cluster [xt] could have had a palatalized allophone after front vowels. Thus, it would seem possible to posit a change*ʔs > *[xt] in Nawathinehena. 
+
+
+However, the example of ``cottonwood'' 	*asaatwiya transcribed as <hoxtoxt> shows the same orthographic group <xt> as a reflex of both *s and *t, where simple <t> would be expected. Thus, we should not over-interpret the transcriptions <ct> and <xt> in the words <neicta'> ``son'' and <haxtaⁿ> ``stone'': Kroeber's transcription is visibly non-systematic and the  groups <ct> and <xt> could simply point to a phonetic realization of simple /t/ between vowels, and not be indicative of a cluster. In any case, the *s > t change occurred not only in word-initial position and between vowels, but also within clusters. 
+
+From the above discussion, the correspondences between Arapaho and Nawathinehena for the consonants studied in this article are the following:
+
+\begin{table}[H]
+\caption{Correspondences between Arapaho and Nawathinehena} \centering
+\begin{tabular}{lllllllllllll}
+\toprule
+&PA & Arapaho & Atsina & Nawuthinehena \\
+\midrule
+&*w &n&n&m\\
+&*y  &n&n& ?\\
+&*n &n&n&   n\\
+&*ny &y&y&   ni\\
+&*s  &n / h&n / h& t\\
+ 
+& *ʔs& hʔ &hʔ & t \\
+&*r    &n&n& t  \\
+&*θ & θ&t / t^y&  t \\
+&*t & t&t / t^y&  t \\
+\bottomrule
+\end{tabular}
+\end{table}
+Atsina only differs from Arapaho here by its reflex of *θ, but \citet[114]{goddard74arapaho} shows that early Atsina has a dental affricate *[tθ], suggesting a change *θ > tθ > t in this language.
+
+
+
+\section{Previous contributions}
+\citet[107]{goddard74arapaho} does not comment on the  *s--   to n-- sound correspondence in detail, but suggests that it might be related to the *r > n sound change, though he is not specific about how the merger between these two proto-phonemes took place:
+
+\begin{quote}
+``The obvious parallelism of (10a) [*s > n] and (10b) [*l > n] makes it convenient to treat them together, though the history of these sounds may have been more complex than is here implied. 
+
+\end{quote} 
+
+ \citet{picard94sn} attempted to explain the seemingly aberrant sound change *s-- > n-- in terms of \textit{natural}  and \textit{minimal} sound changes, that is steps involving only changing one distinctive feature and attested in other languages.
+ 
+ His reconstruction of the phonetic pathway from *s-- to n-- is the following:
+ \begin{exe}
+\ex
+\glt *s-- > *h-- > *ç-- > *y-- > *l-- > n-
+\end{exe}
+
+He assumes first that the sound change *s-- > h-- present after vowels and consonants in Arapaho also occurred initially, but   believes that in this position *h- was palatalized to *ç--, which subsequently merged with *y--.   Picard then follows Goddard's insight and assumes a merger of *y-- (from *w--, as there were no initial *y-- in proto-Algonquian) and *l-- as *l--, before final merger with *n--.
+
+Although most of the steps proposed by Picard seem relatively straightforward, the change *h-- > *ç-- is problematic. The sound changes such as h > [ç] or h > [ɕ] are  attested, but only occur in contact with front vowels. Naxi dialects in particular give a beautiful example of such an evolution (see \citealt[27-33]{michaud06neutralisation}):
+
+\begin{table}[H]
+\caption{Phonemicization of the contrast h and ç in  Naxi } \centering
+\begin{tabular}{lllllllllllll}
+\toprule
+Fengke  & 	  & 	Asher  & 	  & 	Meaning  \\ 
+phonetic & phonemic & phonetic & phonemic &  \\
+\midrule
+hỹ̀& hỹ̀  & hỳ & hỳ  & 	red  \\ 
+çjù & hỳ  & çỳ & çỳ  & 	tired  \\ 
+hĩ̄ & 	hĩ̄  &  çī & hī  & 	man  \\ 
+çī & 	hī  & çī & 	hī  & 	rice  \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+In the Fengke dialect of Naxi, the phoneme /h/ is realized [ç] before non-nasal front vowels and [h] elsewhere. In the Asher dialect, nasal vowels were lost, but the former  contrast between nasal and non-nasal vowels was transphonologized as a contrast between /h/ and a newly created phoneme /ç/.
+
+However, a general change from \textit{h} to \textit{ç} before all vowels is not attested in any language.
+
+It is therefore impossible to posit this step for words such as  *sakimeewa ``mosquito" > Arapaho \ipa{nóúbee} or *saakesiwa ``he emerges out" > Arapaho \ipa{nooehi--} (\citealt[314]{pentland98}) that never had a front vowel after *s-- and its reflexes at any time of the history of Arapaho.
+
+
+ 
+Pentland's (1998) article being focused on confirming Goddard's law, he discusses the intermediate steps of the *s-- > *n-- evolution in less detail. He points out that although the merger of *s-- and *r-- in initial position as n-- could be seen to be parallel to the merger of *s-- and *r-- as second element of consonant clusters, the two changes are certainly unrelated, as the second is shared by many Algonquian languages and probably much more ancient. His interpretation of the *s-- > n-- sound correspondence is not markedly different from that of Picard: he suggests that *s-- merges with *h--, and then *h-- and *y-- merge as voiceless *[j̥] word-initially (\citealt[318]{pentland98}).\footnote{He cites \citet[354]{pentland79phd} concerning this idea, but this reference is not available to me.} This explanation suffers from the same problems as Picard's.
+
+
+ 
+
+\section{Rhotacism}
+A more promising idea to interpret the correspondence PA *s-- to Arapaho n-- was proposed by \citet[76]{goddard01plains}:
+
+\begin{quote}
+``One possibility [to explain the correspondences PA *s-- to Arapaho/Atsina n-- and Nawathinehena *t--] is that *s shifted to *z in Nawathinehena, and word-initially in Arapaho-Gros Ventre; then *z shifted to *r; and then *r underwent its regular shifts to Nawathinehena [t] and Arapaho-Gros-Ventre \textit{n}."
+\end{quote}  
+Goddard's formulation can be converted to a tabular format, in order to better illustrate the ordering of the sound changes.  Shaded areas indicate mergers of a proto-phoneme with another one, and the symbol > indicates a sound change. 
+\begin{table}[H]
+\caption{Development of some Arapaho  consonants in initial position, hypothesis I}  \centering
+\begin{tabular}{lllllllllllll}
+&PA & 1 & 2 & 3 & 4 & 5 & 6 & \\
+&*n   &&&&& > n\\
+&*w   & >*y  \grise{} & \grise{} & \grise{}  &>*r	  \grise{} &> n \grise{}\\
+&*s  &  &>*z &>*r	 \grise{}& 	 \grise{} &> n \grise{}\\
+&*r	   & 	&  & 	& 	  &> n \grise{}\\
+&*θ >  & &&&&&θ \\
+&*t > & &&&&&t \\
+\end{tabular}
+\end{table}
+This table closely follows Goddard's proposal, except that we added an intermediate stage *y-- > *r-- > *n-- instead of assuming a direct shift *y-- > *n--. One anonymous reviewer objected to this hypothesis, citing Cheyenne as an example of a direct *y > n change. In Cheyenne, proto-Algonquian *y (between vowels) merges with *r, *θ and *t as t, but a secondary pre-Cheyenne *y was created from *Cw and *Cy clusters (\citealt[348]{goddard88cheyenne.y}), and this *y later changed to modern Cheyenne \textit{n}. However, no data in Cheyenne goes against the path pre-Cheyenne *y > *r > n, since in pre-Cheyenne the change proto-Algonquian *r > *t had already occurred. For instance, using the noun *keriwa ``golden eagle",\footnote{For the reconstruction *keriwa rather than *kenriwa, see \citet[356]{goddard88cheyenne.y}.} the intermediate stages would be: (the pre-Cheyenne stage 1 form *kyete  is Goddard's):
+
+
+\begin{tabular}{lllllllllllll}
+Proto-Algonquian & Pre-Cheyenne 1 & 2 & 3 & modern Cheyenne \\
+*keriwa & *kyete &*yete &*rete &\textit{netse}\\
+\end{tabular}
+
+
+I know of no uncontroversial attestation of a direct sound change *y-- > *n--  in any language, and in any case no known fact contradicts the pathway *y > *r > \textit{n} in Arapaho. 
+
+A similar table can be proposed for Nawathinehena; notice that none of these sound changes are genuinely shared with Arapaho/Atsina, since *s-- > t-- occurs in all contexts, not only word-initially.
+\begin{table}[H]
+\caption{Development of some Nawathinehena  consonants in initial position, hypothesis I}  \centering
+\begin{tabular}{lllllllllllll}
+&PA & 1 & 2 & 3 \\
+&*n   &&& > n\\
+&*w &&&>m/w\\
+&*s    &>*z &>*r	 \grise{}&> t \grise{}\\
+&*r	    	  & 	& 	  &> t \grise{}\\
+&*θ >   &&&> t\grise{}\ \\
+&*t >  &&&> t \\
+\end{tabular}
+\end{table}
+In the following, we will focus on the Arapaho/Atsina sound shifts.
+
+Steps 1, 3, 4 and Step  2 are independent of each other, and their relative order could be reversed in principle. Before step 2, *s changed to [h] in all non-initial positions. This change is not surprising: in Viet-Muong languages, *s-- was either preserved or changed to t-- initial position and becomes --h or a tone in coda position (see \citealt{ferlus98vm} for instance).
+
+\textbf{Step 1} is not controversial, and is reminiscent of the sound change *w-- > *y-- word-initially in Hebrew (\citealt[§26]{jouon06}). 
+
+\textbf{Step 2} is the phonetic voicing of *s--. In languages without a voicing contrast such as   most modern Algonquian languages (and also Iroquoian languages such as Mohawk), obstruents are commonly pronounced as voiced between vowels or in nasal+obstruent clusters, and sometimes even word-initially when preceded by a word ending in vowel. The only context in which obstruents are never voiced is in clusters with another obstruent. 
+
+\textbf{Step 3} is the rhotacisation of *z into  *r. Rhotacisation is well-known from Germanic (see for instance \citealt[27]{lass94oe}), Latin, Turkic. In Indo-European and Turkic, rhotacism is only attested word-internally or finally, never initially, as can be verified in  \citet[80-81]{kuemmel07wandel}.
+
+
+This is however an artefact of the structure of the phonological system of these languages. In Germanic, the only origin of *z is the effect of Verner's law, but this law never affects the initial consonant of a word. In Latin, the change s > r only occurs between vowels. In Turkic (according to some specialists), *z was restricted to word-internal and word-final positions. Thus, these languages do not constitute counter-evidence as to the possibility of a change *z > r in word-initial position. 
+
+
+Uncontroversial examples of rhotacism in word-initial position are rare.  Vietnamese constitutes however a probable one, as shown by \citet{ferlus82spirantisation}:
+ \begin{exe}
+\ex
+\glt *ksaŋ ``tooth" > *zaŋ > \textit{răng}
+\end{exe}
+
+Proto-Viet-Muong *Cs-- initial clusters become r-- in modern Vietnamese, probably through a spirantized intermediate stage *z.
+
+\textbf{Step 4 } is the merger of *y and  *r (either only from proto-Algonquian *r only or from the merger of *r and *s after step 2). Such a sound change is attested in Siouan languages (\citealt{csd2006}): proto-Siouan *y merges with *r as r in Chiwere, Winnebago, Crow and Hidatsa. It may be an areal feature; Crow was in contact with Arapaho during the historical period, but much less is known about the prehistory of these people.
+
+After this general merger,  *r (from  *r, *y, *w and *s) merges with *n into n.
+
+In conclusion,  Goddard's solution does not posit any unattested sound change and therefore is an acceptable model to explain the correspondence PA *s-- to Arapaho n--. If true, it constitutes an interesting rare example of word-initial rhotacism. However, it is not the only logical solution to account for the Arapahoan data.
+
+\section{Lambdacism}
+This section proposes an alternative solution to Goddard's rhotacism hypothesis.
+
+Instead of supposing a change of *s to *r, it suggests instead a shift *s to *l, which implies a different series of intermediate stages.
+
+In this hypothesis,  proto-Algonquian *r changed to *l very early in Arapaho, and  subsequently initial *s-- changed to the lateral fricative *ɬ--, which then merged with *l-- as *l--:
+
+
+\begin{table}[H]
+\caption{Development of some Arapaho   consonants in initial position, hypothesis II}   \centering
+\begin{tabular}{lllllllllllll}
+&PA & 1 & 2 & 3 & 4 & 5 & 6   \\
+&*n  &&&&&& n\\
+&*w   && >*y  \grise{}   & \grise{}& \grise{}   &>*l \grise{} &> n \grise{}\\
+&*s  && &  >*ɬ  &>*l \grise{}&  \grise{} & > n \grise{}\\
+&*r > *l	 &  &  &    &  &    &> n \grise{}\\
+&*θ  &  >θ\\
+\end{tabular}
+\end{table}
+Steps 2 and 5 of this model are almost identical to steps 1 and 4 postulated in the Rhotacism hypothesis, and need not be discussed here. We also postulate that *s changes to [h] in all non-initial positions before step 3.
+
+\textbf{Step 3} is the main difference between the two hypotheses. The change s-- > ɬ-- is widely attested in Southern Chinese dialects (in particular Toisan, see \citealt[20-21; 169-175]{hashimoto04taishan}) and Central Tai (\citealt{li77tai}). This hypothesis is possible regardless of  whether *θ is reconstructed as *[ɬ] or *[θ]. In the first case, the two fricatives never merge, while in the second, this would imply that *ɬ had already shifted to [θ] before step 3, otherwise a merger would have occurred. At stage 3, pre-Arapaho would have had a system with two non-sibilant fricatives *θ and *ɬ and only one sibilant one *ʃ. There is no clear examples of the change [s] > [ɬ]    in a language that already has a phoneme /θ/. However, in the case of Toisan (and Central Tai)  a labiodental fricative */f/ already existed in the system when *s > ɬ took place. Since [f] and [θ] are acoustically quite close, Toisan is still a good model for pre-Arapaho in step 3.
+
+
+\textbf{Step 4} is the merger of *ɬ (but not *θ) and *l as l. Such mergers are widely attested: in most Thai languages, proto-Thai *lh (phonetically *[l̥] or *[ɬ]) merged with *l as l, though the contrast was transphonologized as a tonal contrast.
+
+
+
+%In this hypothesis, it is crucial that the first step *ɬ > θ   occur before step 3, in order to avoid merger of *s and *ɬ into θ. 
+
+ 
+%s>θ parallel to what occurred in Shawnee and some forms of Miami-Illinois (\citealt[36]{costa03miami}).
+
+The lambdacism hypothesis also accounts for the observed correspondence of  proto-Algonquian *r, *s and *ɬ to t-- in Nawathinehena. We can posit the following steps:
+\begin{table}[H]
+\caption{Development of some    consonants in Nawathinehena}   \centering
+\begin{tabular}{lllllllllllll}
+&PA & 1 & 2      \\
+&*s  &   >*ɬ   \grise{} & >t\grise{} \\
+&*r > *l	  & >*ɬ   \grise{} & >t\grise{} \\
+&*θ  &  & >t\grise{} \\
+&*t & &t\\
+\end{tabular}
+\end{table}
+*s and *r first merge with *ɬ, becoming lateral fricatives, and the lateral fricative itself changes to t, possibly through a stage *θ. 
+
+
+
+
+\section{Conclusion}
+The two hypotheses presented here show how the seemingly aberrant correspondence between proto-Algonquian *s-- and Arapaho n-- can be explained. Both  hypotheses are equally parsimonious, only attested sound changes are posited, and parallel examples in other language families are systematically given.
+ 
+
+This paper shows that   proto-Algonquian *s > Arapaho n-- is not an unnatural sound change in itself:\footnote{For a useful discussion on unnatural sound changes, see \citet{blevins08naturalness}.} each posited step of either pathway of evolution is well attested and phonetically grounded. Its apparent oddity results from an \textit{accumulation} of well-attested shifts and massive mergers. Its rarity in the world's language is due to the fact that no less than four steps are needed to derive it (*s > *z > *r > n or *s > *ɬ > *l > n), including two mergers (*s and *r, followed by *r and *n or *ɬ and *l, followed by *l and *n) in both hypotheses.
+
+The hypotheses laid out in this work predict that  if the same sound change *s > n is ever discovered in another language, this language must also present either   *r > n or *l > n at least in the same contexts as *s > n.
+
+
+
+
+
+\bibliographystyle{myenbib}
+\bibliography{bibliogj}
+\end{document}

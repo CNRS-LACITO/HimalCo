@@ -1,0 +1,539 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{tangutex4} 
+\usepackage{polyglossia} 
+\usepackage{lineno} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol,multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{newicktree}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} %ici on définit la police par défaut du texte
+\renewcommand \thesection {\arabic{section}.}
+\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}.}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+  
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ \newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+
+ 
+ 
+\begin{document} 
+\linenumbers
+
+\title{Person marking in Stau\footnote{Acknowledgements will be added after editorial decision. The glosses follow the Leipzig Glossing Rules, to which we add \textsc{const} constative, \textsc{inv} inverse.
+} } 
+\author{Guillaume Jacques, Anton Antonov, Lai Yunfan and Lobsang Nima}
+
+\maketitle
+
+ 
+ \section{Introduction}
+
+
+This paper deals with the verbal flexion of   Stau (locally known as \ipa{rəsɲəske}), a Rgyalrongic language  spoken in Stau country (Chinese Daofu \zh{道孚}), Sichuan province, China.
+
+Previous work on Stau include \citet{huangbf91daofu}, \citet{jackson07shangzhai} and especially \citet{sun13gexi}. The variety presented here represents the dialect of Khang.gsar, \ipa{qʰərŋe} village spoken in the North of Stau county, and differs slightly from the varieties studied by other authors.
+
+The existence of a Rgyalrongic branch in the Sino-Tibetan family, first proposed by \citet{jackson00sidaba}, is not controversial. It includes three subgroups: Core Rgyalrong (Situ, Japhug, Tshobdun, Zbu), Khroskyabs (also known by the name `Lavrung')\footnote{The previous term `Lavrung', the house name of \citet{huangbf07lavrung.zh}'s main informant, has been mistaken for a language name. The name `Khroskyabs' is a geographical term and was chosen after consultation with several native speakers. } and Tre-Hor, which includes at least three disinct languages: Stau, Stodsde, Nyagrong-Minyag. The exact number of Rgyalrongic languages is not yet clear.
+
+ 
+
+%Classification
+
+%\begin{newicktree}
+%  \small
+%  \setunitlength{20cm} \righttree \nobranchlengths \nodelabelformat{}
+%\drawtree{((((((Resnyeske:0.07,Dge-bshes:0.07,Stod-sde:0.07):0.1[Trehor],(Thugs-chen:0.07,Njo-rogs:0.07):0.1[Lavrung]):0.05,(Japhug:0.07, Tshobdun:0.07, Showu:0.07,(N. Situ:0.02,S. Situ:0.02):0.05[Situ]):0.15[Rgyalrong]):0.12[Rgyalrongique],(Tangoute:0.2,Pumi:0.2):0.14[Pumi-Tangut],(N. Qiang:0.07,S. Qiang:0.07):0.27[Qiang],Queyu:0.34,Zhaba:0.34,Muya:0.34):0.08[MR],((Naxi:0.07,Na:0.07,Laze:0.07):0.1[Naish],Shixing:0.17,Namuyi:0.17):0.25[Naic],(Ersu:0.07,Lizu:0.07,Tosu:0.07):0.35[Ersuic]):0.05,Lolo-Burmese:0.05):0.05[BQ];}
+%  \par %\scalebar[0.1]
+%\end{newicktree}
+%Innovations communes avec le Khroskyabs zjar mkʰə < (feu+fumée) rkʰɞ
+
+
+%system of rhymes.
+\section{Morphophonology}
+Core Rgyalrong  and Khroskyabs langauges present complex ablaut patterns conditioned by TAM, number and direction (direct vs. inverse) as was first discovered by  \citet{jackson00sidaba}.  Morphophonological alternations based on person, however, are rather limited, except in Zbu (where it appears that some verbs have irregular first person singular forms, see \citealt{gongxun12}).
+
+Languages of the Tre-Hor branch  have a less complex verbal morphology, but present an elaborate system of vowel alternations marking person and transitivity. In this section, we describe the attested alternations and propose a historical hypothesis to account for them.
+
+In Stau, there are two groups of conjugations that we can call intransitive and transitive respectively. Intransitive conjugations only distinguish two forms, while transitive conjugations have four distinct stems which combined with the inverse prefix make up to six different forms.
+
+\subsection{Intransitive conjugations}
+Verbs with intransitive conjugations in Stau never have more than two stem forms. The first stem appears with first person subject (singular or plural), while the second stem is present with second and third person forms.
+
+The first person forms only have limited array of possible rhymes: only open syllable nasal rhymes --\ipa{ã} and --\ipa{õ}, velarized vowels --\ipa{oˠ} and --\ipa{aˠ} or the back rounded --\ipa{u}: we never find front or central vowels.
+
+In the non-first person  (henceforth 2/3)  form, however, almost all possible rhymes are attested, including open and closed-syllables (except non-velarized --\ipa{o}). The first person forms is generally predictable from the 2/3 form except in a few isolated counterexamples, thus it is legitimate to analyse the 2/3 as the base form, and the first person form as being derived from it by a morphological process.
+ 
+ 
+Six classes of alternations are found in verbs with open syllables; class 6 includes verbs without alternation, whose rhyme can be any of --\ipa{u}, --\ipa{oˠ}, --\ipa{aˠ}, --\ipa{õ} and --\ipa{ã}, as in Table \ref{tab:open.intr}.
+\begin{table}[h]
+\caption{Vowel alternations in open-syllable intransitive verbs in Stau} \label{tab:open.intr} \centering
+\begin{tabular}{llll|ll|l}
+\toprule
+&1&2&3&4&5&6 \\
+person &	look at   &  	move   &  	like&  	be full     &  	 	be ill      &  	be hot       \\  
+\midrule
+1&	\ipa{scəqã} & 	\ipa{mbəɕã} & \ipa{rgã} &	\ipa{fkõ} & 	  	\ipa{ŋõ} & 	   	\ipa{cʰu}   \\ 
+2/3&	\ipa{scəqi} & 	\ipa{mbəɕe} & \ipa{rga} & 	\ipa{fkə} & 	  	\ipa{ŋɞ} & 	 	\ipa{cʰu}  \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+The alternations can be stated in a straightforward way: centralized vowels  --\ipa{ə} and  --\ipa{ɞ} change to -\ipa{õ}, and front and open (unrounded and non-velarized) vowels change to --\ipa{ã}.
+
+In the case of verb with stems ending in--\ipa{r} or --\ipa{v}, the first person is always derived by the replacing the entire rhyme by --\ipa{ã} or \ipa{õ} depending on the main vowel of the rhyme (Table \ref{tab:close.intr}).
+
+\begin{table}[h]
+\caption{Vowel alternations in closed-syllable intransitive verbs in Stau} \label{tab:close.intr} \centering
+\begin{tabular}{llll|ll|l}
+\toprule
+person &	sleep   &  	hide   \\  
+\midrule
+1&	\ipa{ɲɟã} & 	\ipa{ɲcʰã} \\ 
+2/3&	\ipa{ɲɟev} & 	\ipa{ɲcʰer} \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+Stem ending in --\ipa{m} (the only other final consonant available) are always Tibetan loanwords and do not present any alternation.
+
+
+There are two irregular verbs with intransitive morphology in Japhug with have \ipa{--ã} in the first person instead of expected \ipa{--õ} (cf Table \ref{tab:irr.intr}). Additional irregular intransitive verbs include `go' and `come', which present suppletive TAM forms, but no irregularity related to person marking.
+
+ Thus, we may posit that the 2/3 person represents the bare stem, and that the first person is derived from it by fusion with a suffix --\ipa{ã}, which is realized as --\ipa{õ} when the rhyme is centralized. No such alternation is found on any part of speech other than verbs: the first person --\ipa{ã} suffix is a strictly verbal person marker.
+
+
+\begin{table}[h]
+\caption{Irregular intransitive verbs in Stau} \label{tab:irr.intr} \centering
+\begin{tabular}{llll|ll|l}
+\toprule
+person &	go     & say \\  
+\midrule
+1&	\ipa{ɕã}  	 &\ipa{jã}\\ 
+2/3&	\ipa{ɕə} & 	\ipa{jə} &\\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Transitive conjugation} \label{sec:tr}
+
+
+The transitive conjugation includes  six different forms, illustrated by the paradigms in tables \ref{tab:kill} and \ref{tab:give}. In these tables, the rows indicate the A and the columns the P/R. These paradigms are in the perfective form with directional prefixes, which can be neglected for the purpose of the present paper.
+
+ Some of these forms are distinguished by the presence of a prefix \ipa{f}-- / \ipa{v}-- whose nature is analysed  in section \ref{sec:alignment}, as it requires a detailed discussion. From the point of view of vowel alternation, four different stems at most are distinguished: \textsc{1sg$\rightarrow$3}, 2$\rightarrow$3, \textsc{1pl$\rightarrow$3} (which has the same vocalism as 2/3$\rightarrow$1) and third person (which has the same vocalism as 1$\rightarrow$2).
+
+
+
+\begin{table}[h]
+\caption{\ipa{fse} `to kill'}
+\centering \label{tab:kill}
+\begin{tabular}{|c|cc|c|c|}  
+ \cline{1-5}
+\backslashbox{A}{P} &\textsc{1sg}  &  \textsc{1pl}  &  2  &  	3  \\  
+\cline{1-5}
+ \textsc{1sg}  &  	 \multicolumn{2}{c}{\cellcolor{lightgray}}   \vline    &  	\multirow{2}{*}{\ipa{nə-se}}  &  	\ipa{nə-sow}  \\  
+\cline{5-5}\textsc{1pl}  &  \multicolumn{2}{c}{\cellcolor{lightgray}} 	 \vline   &   &  	\ipa{nə-sã}  \\  
+\cline{5-5}2 &    \multicolumn{2}{c}{\multirow{2}{*}{\ipa{nə-fsã}}}    \vline  &   \grise{ }	  &  	\ipa{nə-sej}  \\  
+\cline{5-5}3 &  \multicolumn{2}{c}{ } \vline &  	\multicolumn{2}{c}{ \ipa{nə-fse}}   	 \vline  \\  
+\cline{1-5}
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+
+\caption{\ipa{f-kʰʚ} `to give'}
+\centering \label{tab:give}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-4}
+\backslashbox{A}{R}  &  	1   &  	2  &  	3  \\  
+\cline{1-4}
+ \textsc{1sg}  &   \cellcolor{lightgray}       &  	\multirow{2}{*}{\ipa{tə-kʰʚ}}  &  	\ipa{tə-kʰow}  \\  
+\cline{4-4}\textsc{1pl}  &   \cellcolor{lightgray}	    &  & \ipa{tə-kʰõ}  \\  
+\cline{2-4}2 &     \multirow{2}{*}{\ipa{tə-fkʰõ}}    &   \grise{ } &  	\ipa{tə-kʰe}\\  
+\cline{3-4}3 &     & \multicolumn{2}{c}{ \ipa{tə-fkʰʚ} } \vline \\  
+\cline{1-4}
+\end{tabular}
+\end{table}
+
+
+As with intransitive verbs, six classes of verb alternation are attested in transitive conjugations, depending on the final vowel of the verb stem. Table \ref{tab:open.tr} presents all six classes (it contains the verbs stems without the inverse prefix \ipa{f}--/\ipa{v}--.) Class 6  includes all verbs with stem ending in --\ipa{u}, --\ipa{oˠ}, --\ipa{aˠ}, --\ipa{õ} and --\ipa{ã}.
+
+\begin{table}[h]
+\caption{Vowel alternations in open-syllable transitive verbs in Stau} \label{tab:open.tr} \centering
+\begin{tabular}{llll|ll|ll}
+\toprule
+&1&2&3&4&5&6 \\
+person&	drink & kill & dig & dress up & give &cut
+\\
+\midrule
+\textsc{1sg$\rightarrow$3}&	--\ipa{tʰu}&--\ipa{sow}&--\ipa{ɴqʰʚrow}&--\ipa{zgu}&--\ipa{kʰow}&--\ipa{tsu}&
+\\
+\textsc{1pl$\rightarrow$3}, 2/3$\rightarrow$1& --\ipa{tʰã}&--\ipa{sã}&--\ipa{ɴqʰʚrã}&--\ipa{zgõ}&--\ipa{kʰõ}&--\ipa{tsu}&
+\\
+2$\rightarrow$3& --\ipa{tʰi}&--\ipa{sej}&--\ipa{ɴqʰʚrej}&--\ipa{zgi}&--\ipa{kʰej}&--\ipa{tsu}&
+\\
+3$\rightarrow$3, 1$\rightarrow$2&--\ipa{tʰi}&--\ipa{se}&--\ipa{ɴqʰʚra}&--\ipa{zgə}&--\ipa{kʰʚ}&--\ipa{tsu}&
+\\
+\bottomrule
+\end{tabular}
+\end{table}
+As with intransitive verbs, it is possible to regard the third person form as  the basic one; the \textsc{1pl$\rightarrow$3} and 2/3$\rightarrow$1 stems can be analyzed as resulting from fusion with the first person --\ipa{ã} suffix. 
+The \textsc{1sg$\rightarrow$3} form presents rounding of the vowels with an additional \ipa{--w} glide in the case of mid-low and low vowels. These alternations can be accounted for by assuming the existence of a suffix whose underlying form is \ipa{--w}.
+
+The \textsc{2$\rightarrow$3} form has vowel fronting with an additional \ipa{--j} glide for  mid-low and low vowels. Here the underlying form \ipa{--j} can be posited.
+
+In closed-syllables, final consonants differ as to their behaviour with the person suffixes. Final \ipa{--v} drops with the \textsc{1sg$\rightarrow$3} --\ipa{w} and first person --\ipa{ã} suffixes; the second person \ipa{--j} suffix does not cause final --\ipa{v} to drop but nevertheless induces vowel fronting as in --\ipa{zgriv} `you accomplished'. Final --\ipa{m} is immune to any change from the suffixes and verbs ending in this consonant present no stem alternations. Final --\ipa{r} drops with all three suffixes --\ipa{w}, --\ipa{ã} and --\ipa{j} and the final consonant is preserved on the in the third person and 1$\rightarrow$2 forms.
+
+\begin{table}[h]
+\caption{Vowel alternations in closed-syllable transitive verbs in Stau} \label{tab:close.tr} \centering
+\begin{tabular}{lll|l|ll|ll}
+\toprule
+person&accomplish& give back& close&rob
+\\
+\midrule
+\textsc{1sg$\rightarrow$3}&	--\ipa{zgru}&--\ipa{xsow}&--\ipa{zdəm}&--\ipa{stow}
+\\
+\textsc{1pl$\rightarrow$3}, 2/3$\rightarrow$1& --\ipa{zgrõ}&--\ipa{xsõ}&--\ipa{zdəm}&--\ipa{stõ}
+\\
+2$\rightarrow$3& --\ipa{zgriv}&--\ipa{xsev}&--\ipa{zdəm}&--\ipa{stej}
+\\
+3$\rightarrow$3,1$\rightarrow$2&--\ipa{zgrəv}&--\ipa{xsev}&--\ipa{zdəm}&--\ipa{stʚr}
+\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All the morphophonological rules observed in this section are summarized in Table \ref{tab:alternation}.
+
+\begin{table}[h]
+\caption{Vowel fusion in Stau verbs} \label{tab:alternation} \centering
+\begin{tabular}{c|cccccc}
+\toprule
+
+ \backslashbox{Stem}{Suffix} &  	\textsc{1sg$\rightarrow$3} --\ipa{w} & 1 --\ipa{ã} & 2$\rightarrow$3 --\ipa{j} \\
+\hline
+\ipa{i}&\ipa{u}&\ipa{ã}&\ipa{i}\\
+\ipa{e}&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{a}&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{ə}&\ipa{u}&\ipa{õ}&\ipa{i}\\
+\ipa{ʚ}&\ipa{ow}&\ipa{õ}&\ipa{ej}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These vowel fusion rules are not restricted to the verbal system, but also apply to the ergative \ipa{--w} and genitive \ipa{--j} case markers. Table \ref{tab:alternation.noun} illustrates some examples of vowel fusion in nouns.
+\begin{table}[h]
+\caption{Vowel fusion in Stau nouns} \label{tab:alternation.noun} \centering
+\begin{tabular}{c|cccccc}
+\toprule
+base form & meaning& ergative & genitive \\
+\midrule
+\ipa{kəta} & dog & \ipa{kətow} & \ipa{kətej} & \\
+\ipa{vdzi} & man & \ipa{vdzu} & \ipa{vdzi} & \\
+\ipa{xə} & hybrid of yak and cow & \ipa{xu} & \ipa{xi} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{The structure of person marking paradigms in Stau} \label{sec:alignment}
+
+With the morphophonological rules presented in the previous section, it is possible to present the Stau paradigms in condensed format as in Table \ref{tab:align}.
+
+\begin{table}[h]
+\caption{Stau transitive and intransitive paradigms}
+\centering \label{tab:align}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-4}
+\backslashbox{A}{P} &1    &  2  &  	3  \\  
+\cline{1-4} 1s  &   \cellcolor{lightgray}        &  	\multirow{2}{*}{\ro{}}  &  	\ro{}-\ipa{w}  \\  
+\cline{4-4}1p  &   \cellcolor{lightgray} 	     &   &  	\ro{}-\ipa{ã}  \\  
+%\hline
+\cline{4-4}2 &   \multirow{2}{*}{\ipa{v}-\ro{}-\ipa{ã}}     &   \grise{ }	  &  	\ro{}-\ipa{j}  \\  
+\cline{3-4}3 &    &  	\multicolumn{2}{c}{ \ipa{v}-\ro{}}   	 \vline  \\  
+\hline
+\textsc{intr}&\ro{}-\ipa{ã}  &\multicolumn{2}{c}{  \ro{}}     	 \vline  \\  
+\hline
+\end{tabular}
+\end{table}
+
+The suffixes \ipa{--w} and \ipa{--j} are restricted to transitive \textit{direct} forms (with SAP agent and third person patient); they are not found in intransitive and \textit{inverse} forms (with SAP patient and third person agent). The first person default suffix \ipa{--ã} appears in all forms involving the first person except \textsc{1sg$\rightarrow$3} (where the suffixal slot is occupied by \ipa{--w}) and 1$\rightarrow$2. 
+
+The absence of the suffix  \ipa{--ã}  in 1$\rightarrow$2 is not surprising. In all Rgyalrongic languages, as well as in neighbouring languages such as Tangut (see for instance \citealt[18]{jacques09tangutverb}, \citealt{gongxun12}, \citealt{lai14person}), in local 1$\rightarrow$2 and 2$\rightarrow$1 forms suffixes are coreferent with the P (except in the case of double suffixation). Since the second person S/P suffix is zero, the absence of any suffix in the 1$\rightarrow$2 form is expected.
+
+
+\subsection{The inverse prefix}
+The \ipa{f}-- / \ipa{v}-- prefix appears in 2/3$\rightarrow$1, 3$\rightarrow$2 and 3$\rightarrow$3 forms. Its presence  in 2$\rightarrow$1 precludes an analysis as a third person agent marker, and it is best to treat it as an inverse marker.
+
+The inverse appears in 2$\rightarrow$1, as in Situ, Tshobdun, Zbu Rgyalrong and Khroskyabs (\citealt{delancey81direction, jackson02rentongdengdi, gongxun12, lai14person}), but unlike in  Japhug (\citealt{jacques10inverse}), implying a person hierarchy $1$\rightarrow$2$\rightarrow$3$. 
+
+
+
+The inverse \ipa{v}-- prefix appears in all 3$\rightarrow$3 forms in Stau, a feature shared with Khroskyabs. Both Stau and Khroskyabs differ from core Rgyalrong languages, where two 3$\rightarrow$3 forms are found: the \textit{direct}   and the \textit{inverse} form. Table \ref{tab:zbu.tr} presents the Zbu Rgyalrong transitive paradigm, with inverse forms coloured in green; non-coloured slots are direct forms (with the corresponding intransitive paradigm).\footnote{The column represent the P and the rows the A).}
+
+
+\begin{table}[h]
+\caption{Zbu Rgyalrong transitive and intransitive paradigms (adapted from \citealt{gongxun12})}\label{tab:zbu.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} &  	\ipa{\rc{}-ŋ}   & 	  \ipa{\rc{}-ŋ-ndʑə} & 	  \ipa{\rc{}-ŋ-ɲə} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{tɐ-\ra{}} & 	\ipa{tɐ-\ra{}-ndʑə} & 	\ipa{tɐ-\ra{}-ɲə} & 	\multicolumn{3}{c|}{ \ipa{\ra{}-tɕə}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\ra{}-jə}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tə-\rc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ŋ-ndʑə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-tɕə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-jə} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ndʑə}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} &\cellcolor[wave]{500} 	\ipa{tə-wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ɲə}} & 	\grise{} \\	
+\hline
+\textsc{3sg} & \cellcolor[wave]{500} 	\ipa{wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\rc{} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ndʑə} & 	\cellcolor[wave]{500} \ipa{wə-\ra{}-tɕə} & \cellcolor[wave]{500}		\ipa{wə-\ra{}-jə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}} &\cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ndʑə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ɲə} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ndʑə} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ɲə} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &\cellcolor[wave]{500}	\ipa{wə-\ra{}} & 	\cellcolor[wave]{500}\ipa{wə-\ra{}-ndʑə} & \cellcolor[wave]{500}	\ipa{wə-\ra{}-ɲə} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\ra{}-ŋ}&\ipa{\ra{}-tɕə}&\ipa{\ra{}-jə}&\ipa{tə-\ra{}}&\ipa{tə-\ra{}-ndʑə}&\ipa{tə-\ra{}-ɲə}&\ipa{\ra{}}&\ipa{\ra{}-ndʑə} &\ipa{\ra{}-ɲə}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+
+
+The 3$\rightarrow$3 direct forms, which appear  when the agent is more salient than the patient, do not have a uniform marking in Rgyalrong languages. They receive the third person direct suffix \ipa{--w} in Situ, but this suffix has not equivalent in the remaining three languages. In Zbu, direct 3$\rightarrow$3 forms receive  the perfective direct prefix. The number suffixes agree with the agent in direct forms.
+
+The 3$\rightarrow$3 inverse forms appear when the agent is less salient than the patient; they are obligatory when an inanimate acts upon an animate. Verbs in inverse form have the inverse prefix (\ipa{wə}-- in Zbu) and the number suffixes agree with the patient.
+
+The distribution of the inverse prefix in Stau   differs from that of it cognate \ipa{wə}-- in Zbu only in that the direct 3$\rightarrow$3 form have disappeared in Stau, and the inverse 3$\rightarrow$3 have been generalized to all 3$\rightarrow$3 forms. This probably represents a common innovation of Stau and Khroskyabs, and it suggests that Stau and Khroskyabs languages form a clade within the Rgyalrongic branch.
+
+
+The inverse \ipa{v}-- prefix presents phonological alternations and phonotactic constraints. It is prefixed to the first syllable of the verb stem, even when polysyllabic. 
+
+The \ipa{v}-- prefix is assimilated  to \ipa{f}-- when prefixed to a verb stem with unvoiced initial consonant (as in \ipa{f-se} \textsc{inv}-\textit{kill} `he kills'). It cannot be inserted whenever any of the following three conditions apply:
+
+\begin{itemize}
+\item When the stem-initial consonant is a labial (either /p/, /b/, /m/, or  /v/) or the voiced uvular /ʁ/, the inverse cannot be prefixed. Thus the third person form of \ipa{və} `to do' \ipa{ʁʚ} `to help' are identical to the corresponding bare stems.
+\item The inverse prefix is not compatible with most stem-initial clusters. The only clusters that allow prefixation of \ipa{v}-- are /stop+\ipa{r}/ clusters. For instance, the root /kʰrə/ `to hold' (\textsc{1sg$\rightarrow$3} \ipa{kʰru}) thus has a 3$\rightarrow$3 form \ipa{f-kʰrə}, whereas \ipa{zjə} `to sell' has a third person form identical to the bare stem (the cluster *\ipa{vzj}-- is not allowed in the variety of Stau under study).
+\item The inverse does not appear in transitive verbs with final \ipa{--v}, due to a dissimilatory constraint. For instance, the 3$\rightarrow$3 forms of /\ipa{kʰev}/ `scoop' and /\ipa{ɕev}/ `take out' are \ipa{kʰev} and \ipa{ɕev} respectively, not *\ipa{fkʰev} or *\ipa{fɕev}.
+\end{itemize}
+
+\subsection{Reduplication}
+In Stau, both transitive and intransitive verbs can undergo stem reduplication. The reduplication is partial: the stem vowel is changed in the replicant to the central vowel \ipa{ə}. 
+
+Reduplication has two possible semantic effects. First, it can indicate a plural S, A or P, and is often (but not obligatorily) used to express reciprocal events; compare  \ref{ex:kEdZEdZoN} with  reduplication and \ref{ex:kEdZoN} without.
+
+\begin{exe}
+\ex \label{ex:kEdZEdZoN}
+\gll \ipa{kə-dʑədʑə-ã} \\
+\textsc{pfv-pl}:meet-1 \\
+\glt We met.
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kEdZoN}
+\gll  \ipa{tə} 	\ipa{de} 	\ipa{kə-dʑə-ã} 	\ipa{rəge,} 	\ipa{tə-w} 	\ipa{rõsa} 	\ipa{nə-rja-dʑə} 	\ipa{kəta-j} 	\ipa{ŋgɔrpaˠ} 	\ipa{nə} 	\ipa{nə-f-kʰrə-dʑə} \\
+he \textsc{top} pfv-meet-1 \textsc{lnk} he-\textsc{erg} immediately \textsc{pfv:down}-arrive-\textsc{conv} dog-\textsc{gen}  neck \textsc{loc} \textsc{pfv-inv}-hold-\textsc{conv} \\
+\glt I met (saw) him and he immediately arrived and grabbed the dog's neck. (The mdzo, 93)
+\end{exe}
+
+Second, it can be used to mark the intensiveness of an activity, to indicate  an activity taking a longer time or involving more effort. This is the case for instance for the reduplicated form \ipa{ɕəɕɔ} of the verb \ipa{ɕɔ} `search, look for'.
+
+Additionally, some   verbs such as \ipa{ɕəɕe} `wipe' require reduplication (the non-reduplciated form is not attested).
+
+In the case of reduplicated transitive verbs,  reduplication also applies to the inverse prefix (see Table \ref{tab:wipe}).
+
+  \begin{table}[H]
+\caption{\ipa{ɕə-ɕe} `to wipe'}
+\centering \label{tab:wipe}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-4}
+\backslashbox{A}{P} &1    &  2  &  	3  \\  
+\cline{1-4} 1s  &   \cellcolor{lightgray}        &  	\multirow{2}{*}{\ipa{nə-ɕəɕe}}  &  	\ipa{nə-ɕəɕo-w}  \\  
+\cline{4-4}1p  &   \cellcolor{lightgray} 	     &   &  	\ipa{nə-ɕəɕ-ã}  \\  
+%\hline
+\cline{4-4}2 &   \multirow{2}{*}{\ipa{nə-fɕəfɕ-ã}}     &   \grise{ }	  &  	\ipa{nə-ɕəɕe-j}  \\  
+\cline{3-4}3 &    &  	\multicolumn{2}{c}{ \ipa{nə-fɕəfɕe}}   	 \vline  \\  
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Transitivity in Stau}
+
+The morphologically based distinction between transitive and intransitive verbs in Stau must be refined by taking into account case-marking on arguments. 
+
+Stau, as all Rgyalrongic languages, is a strict verb-final language with postpositions. Case markers include the ergative \ipa{--w}, the genitive \ipa{--j}, the dative \ipa{--gi} and the instrumental \ipa{--kʰa}. Only nouns expressing animate referents can receive   ergative marking, inanimate can only be marked with the instrumental. SAP pronouns are not normally marked with the ergative (except in some subordinate clauses).
+
+
+Some verbs with intransitive morphology, such as \ipa{rga} `like', do require ergative marking on the argument whose person is indexed on the verb, as illustrated by examples \ref{ex:rgaN} and \ref{ex:rga}.
+\begin{exe}
+\ex \label{ex:rgaN}
+\gll \ipa{ŋa}  	\ipa{tə-ɡi}  	\ipa{rɡa-ã-rə}  \\
+I he-\textsc{dat} like-1-\textsc{const} \\
+\glt `I like him/her.'
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:rga}
+\gll \ipa{tə-w}  	\ipa{ŋa-ɡi}  	\ipa{rɡa-rə}  
+ \\
+(s)he-\textsc{erg} I-\textsc{dat} like-\textsc{const} \\
+\glt `(S)he likes me.'
+\end{exe}
+
+This type of semi-transitive verb (which are transitive from the point of view of case marking and intransitive from that of verb morphology) include some experiencer verbs like \ipa{rga} `like' and some speech verbs like \ipa{jə} `to say'. The stimulus or the recipient is marked with the dative case.
+
+Some verbs with transitive morphology agree with only one of their arguments. Thus, /\ipa{si}/ `to know (somebody)' indexes  the person knowing, while the P is always third person by default, as shown in Table \ref{tab:know}.
+
+\begin{table}[H]
+\caption{\ipa{f-si} `to know'}
+\centering \label{tab:know}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-4}
+\backslashbox{A}{P} &1    &  2  &  	3  \\  
+\cline{1-4} 1s  &   \cellcolor{lightgray}        &  	\multicolumn{2}{c}{\ipa{su}}  \vline  \\  
+\cline{3-4}1p  &   \cellcolor{lightgray} 	     &  \multicolumn{2}{c}{\ipa{sã}}\vline  \\  
+%\hline
+\cline{4-4}2 &    \ipa{si}     &   \grise{ }	  &  	 \ipa{si}  \\  
+\cline{2-4}3 &     	\multicolumn{3}{c}{ \ipa{fsi}}   	 \vline  \\  
+\hline
+\end{tabular}
+\end{table}
+
+When the person known is SAP, an overt  pronoun must be used, and appears in the absolutive form (example \ref{ex:fsi}).
+
+\begin{exe}
+\ex \label{ex:fsi}
+\gll \ipa{tə-w}  	\ipa{ŋa}  	\ipa{f-si}  
+ \\
+he-\textsc{erg} I \textsc{inv}-know \\
+\glt `S/he knows me'.
+\end{exe}
+
+
+Bitransitive verbs that index the recipient as the P (\textit{secondative} in \citealt{malchukov10ditransitive}'s terminology), the recipient still receives dative marking despite being indexed in the verb morphology, as in example \ref{ex:kEsnaN} with the verb /\ipa{sni}/ `to show'.
+
+\begin{exe}
+\ex \label{ex:kEsnaN}
+\gll
+	\ipa{a} 	\ipa{ɲəqʰej} 	\ipa{te} 	\ipa{tɕa} 	\ipa{de} 	\ipa{ətɕəpi} 	\ipa{gə} 	\ipa{ŋə-rə,} 	\ipa{ŋa-gi} 	\ipa{kə-sni-ã} 	\ipa{ŋge}  \\
+	\textsc{interj} \textsc{2sg:gen} \textsc{dem} tea \textsc{top} how \textsc{indef} be-\textsc{const} \textsc{1sg-dat} \textsc{imp}-show-1 \textsc{hort} \\ 
+	\glt How is this tea of yours, show it to me. (Akhustongba and the rider, 15)
+\end{exe}
+
+\section{Verbal template}
+Apart from person, the Stau verb also encode TAME and polarity by a series of affixes. There are in total three prefixal slots and two suffixal slots in the Stau verbal template, as in Table \ref{tab:template}.
+
+\begin{table}[h]
+\caption{The Stau verbal template} \centering \label{tab:template}
+\begin{tabular}{llllll}
+\toprule
+directional  &  	negation  &  	inverse  &  	root  &  	person  &  	TAME  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The directional prefixes encode five directions. The direction labelled here as `north-south' is used to refer to   horizontal motion. Motion verbs and verbs of concrete action can be used with all five series of prefixes, but most verbs have a specific direction that is lexically determined (for instance, in the case of \ipa{tʰi} `drink', the prefix is \ipa{ɣə-} `towards the south').
+
+\begin{table}[h]
+\caption{Stau directional prefixes} \centering \label{tab:directional}
+\begin{tabular}{llllll}
+\toprule
+direction   &  	plain  &  	interrogative    & Adverb 	   \\
+\midrule
+up & \ipa{rə--}& \ipa{rí--} & \ipa{arəda}\\
+down & \ipa{nə--}& \ipa{ní--} & \ipa{anəda}\\
+north & \ipa{kə--}& \ipa{kí--} & \ipa{akəta}\\
+south & \ipa{ɣə--}& \ipa{ɣí--}& \ipa{aɣəda}\\
+no direction & \ipa{tə--}& \ipa{tí--} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A few verbs are incompatible with directional prefixes; this includes the transitive \ipa{ste}  finish', \ipa{vdɔ} `see', \ipa{si} `know' and the intransitive \ipa{xx}
+
+irregular motion verbs
+Japhug (\citealt{jacques12incorp}), Khroskyabs (\citealt{lai13affixale})
+\begin{exe}
+\ex
+\gll
+\ipa{staˠ-w} 	\ipa{χɕoˠvə} 	\ipa{gə} 	\ipa{kə-zɟwer-dʑə} 	\ipa{te-ʁa} 	\ipa{ʁərʁər} 	\ipa{gə} 	\ipa{kə-v-ra-dʑə} 	\ipa{rgəme} 	\ipa{nə-ma-rkʰə-sə} 	\ipa{ŋə-rə} \\
+tiger-\textsc{erg} paper \textsc{indef} \textsc{pfv}-paste-\textsc{conv} \textsc{dem}-on circle \textsc{indef} \textsc{pfv-inv}-write-\textsc{conv} stone \textsc{pfv-neg}-put.on-\textsc{pst.heteroph} be-\textsc{const} \\
+\glt
+\end{exe}
+8-10
+
+\section{Egophoric}
+
+31 ste-sə ŋərə
+
+17	ŋa, ŋa sə rdʑi-ʁa tɕʰu χa mi-gõ-rə
+
+tʂaɕu dʐɔma de nə-fse: témoin du crime
+tʂaɕu dʐɔma de nə-fse-sə
+
+64	ŋa le tə-se-sə ŋərə tə-ntsʰu-sə
+
+tə-ɲɟevjã-sə
+s'assoupir
+63	tə-rka rəge tə-ʁa tə-ɲɟev-sə
+		tə-ʁa: pas exprès
+
+\section{Conclusion}
+
+
+
+% \subsection{Non-prototypical transitive verbs}
+%
+
+
+
+%without directional prefixes \ipa{vdʚ} `to see', \ipa{ste} `to finish'.
+
+
+
+
+\bibliographystyle{myenbib}
+\bibliography{bibliogj}
+\end{document}

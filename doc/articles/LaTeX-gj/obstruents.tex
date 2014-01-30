@@ -1,0 +1,155 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{lineno}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+ 
+ 
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+
+\title{ On context-free changes of place of articulation in unvoiced obstruents }
+\author{Guillaume Jacques }
+\maketitle
+
+ \section{Debuccalisation}  \label{sec:debucc}
+ 
+ 
+ \subsection{\ipa{k} $\rightarrow$ \ipa{ʔ} / $\varnothing$} \label{sec:k.glottal}
+Debuccalisation of unvoiced stops widely attested     as a contextual change, either occurringword-initially, in clusters, between vowels or word-finally (\citealt[107]{kuemmel07wandel}). Table \ref{tab:debucc.context} summarizes attested patterns of debuccalisation in word-initial and coda position. 
+
+
+There is a marked tendency for velars stops to be more prone to debuccalization word-finally than coronals and   labials, as captured by hierarchy (\ref{ex:hierarchy.coda}). 
+
+\begin{exe}
+\ex \label{ex:hierarchy.coda}
+\glt \ipa{--p} >  \ipa{--t} >  \ipa{--k}
+\end{exe}
+Exception to this hierarchy are rare, but do exist, for instance the Sinitic Nancheng language, where *--\ipa{p} and *--\ipa{k} merge to \ipa{ʔ} while the coronal remains an oral segment.
+\begin{table}[h]
+\caption{Examples of contextual debuccalization of stops} \label{tab:debucc.context}
+\begin{tabular}{lllllll}
+\toprule
+*p & *t & *k & Context & Language    & Reference \\
+\midrule
+$\varnothing$ \grise{}&$\varnothing$ \grise{}& $\varnothing$ \grise{}&Initial& Arrernte &\citet{koch06arandic}\\
+\ipa{ʔ} \grise{}&\ipa{ʔ} \grise{}& \ipa{kh} &Initial& Yamphu  & \citet[12-3]{opgenort05jero}\\
+\ipa{ʔ} \grise{}&\ipa{th} & \ipa{kh} & Initial&Yakkha   & \\
+\ipa{p} or $\varnothing$ &\ipa{t}  & $\varnothing$ \grise{}&Initial& Cheyenne &\citet{goddard88cheyenne.y}\\
+\midrule
+\ipa{p} &\ipa{t} & \ipa{ʔ}\grise{} & Coda &Malay   &   \\
+\ipa{t} &\ipa{t} & \ipa{ʔ}\grise{} & Coda &Chinese Gan languages  &  \citet[123]{chinese.atlas08}  \\
+\ipa{p} &\ipa{ʔ} \grise{}& \ipa{ʔ}\grise{} & Coda&Lhasa Tibetan   & \\
+\ipa{ʔ} \grise{}&\ipa{ʔ} \grise{}& \ipa{ʔ}\grise{} & Coda& Burmese  & \\
+\ipa{ʔ} \grise{}&\ipa{lʔ}& \ipa{ʔ}\grise{} & Coda& Nancheng Chinese& \citet[123]{chinese.atlas08}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+%\ipa{*p, *t} $\rightarrow$  \ipa{ʔ} but \ipa{*k} $\rightarrow$  \ipa{kh} in Yamphu (\citealt[12-3]{opgenort05jero})
+
+Examples of context-free or quasi-context-free changes from oral stop to glottal stop are rare, and they only involve dorsal (velar or uvular) stops. For coronal and labial stops, debuccalisation is only attested as a restricted contextual change; context-free debuccalization and loss of \ipa{p} is attested, but through a  fricative stage and it is treated in section \ref{sec:fric.h}. 
+
+
+Context-free changes from \ipa{q} $\rightarrow$  \ipa{ʔ} are relatively common for language families with uvulars. It appears for instance in Maltese (\citealt[107]{kuemmel07wandel}) or in Junin Quechua (where it later change to $\varnothing$, see \citealt[202]{adelaar04andes}). It does not entail loss of all dorsal stops, since in   languages where it occurred, the ancient \ipa{k} remains untouched.
+
+Context-free changes from \ipa{k} $\rightarrow$  \ipa{ʔ} or $\varnothing$ are rarer, and leads to the loss of a dorsal stop series at least during a short stage. Only two sets of examples are documented, in Polynesian languages (\citealt{blust04tk})\footnote{The sound change \ipa{k} $\rightarrow$  \ipa{ʔ}  is also found in various other Austronesian languages, especially in Melanesia, but it is either sporadic or in specific contexts and will not interest us here.} and in Arapahoan (Algonquian, \citealt{goddard74arapaho}).\footnote{Cheyenne also undergoes debuccalization of *\ipa{k} and *\ipa{p}, but since the conditioning is unclear, it cannot count as a context-free change and will not be discussed here (see \citet{goddard88cheyenne.y}). } It is significant that this sound change is attested only in languages with one series of stops. 
+
+In   Polynesian languages  where the context-free sound change \ipa{k} $\rightarrow$  \ipa{ʔ} occurred, two situations are observed. First, it leads to a system without velar stops (as in formal Samoan or in Tahitian), thus as pointed out by \citet[370-371]{blust04tk}), the sequence tVt tends to dissimilate to kVt in rapid speech. Second, it is followed by a context-free change \ipa{t} $\rightarrow$  \ipa{k} in a chain shift (see \ref{sec:tk}).
+
+In Arapahoan (Arapaho and Atsina), proto-Algonquian *\ipa{k} changes to $\varnothing$ in all contexts (\citealt[107]{goddard74arapaho}), as in \ipa{niii--}  'to camp' $\leftarrow$< *\ipa{wiik-i-}.\footnote{This verb comprises the possessed noun *\ipa{w-iik-i} "his house" plus the *\ipa{-i} animate intransitive final.} It is unclear whether an intermediate stage *\ipa{k} $\rightarrow$  *\ipa{ʔ} $\rightarrow \varnothing$ with a glottal stop must be postulated, since for instance proto-Algonquian *--\ipa{sk}-- changes to --\ipa{ʔ}--.\footnote{For instance *\ipa{me-skač-i} $\rightarrow$ \ipa{wó-ʔooθ} `his foot'.}
+
+ 
+ 
+ 
+
+  \subsection{fricative  $\rightarrow$  \ipa{h}}  \label{sec:fric.h}
+\citet[102-106]{kuemmel07wandel}
+
+\ipa{p} $\rightarrow$ \ipa{ɸ} $\rightarrow$  \ipa{h}   $\rightarrow \varnothing $
+ 
+sauf \citet{thurneysen21pl} 
+ 
+ 
+ 
+  \subsection{Rebuccalisation}   \label{sec:rebucc}
+Only possible as a contextual change
+
+\citet{michaud06neutralisation}
+
+
+ \section{Dorsalization}  \label{sec:dorsal}
+
+\subsection{\ipa{t} $\rightarrow$ \ipa{k}}  \label{sec:tk}
+\citet{blust04tk}
+
+\citet{donohue06tk}
+
+\citet[393]{blust04tk} minor exceptions to k > ʔ, limited to a few items
+
+Entirely different from \citet{haas68chipewyan}
+and Kansa
+
+\subsection{\ipa{p} $\rightarrow$ \ipa{k}} \label{sec:pk}
+
+\citet{goddard74arapaho}
+
+
+\subsection{Fricatives} \label{sec:fric.change}
+
+
+θ > f (latin)
+
+s > θ (Shawnee, 
+
+
+ɕ > ʂ > x (\citet{jacques11lingua})
+
+
+ofo s > f, x >s?
+
+
+
+
+
+\bibliographystyle{Linquiry2}
+\bibliography{bibliogj}
+\end{document}

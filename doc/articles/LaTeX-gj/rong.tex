@@ -1,0 +1,240 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{tangutex4} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{newicktree}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+\renewcommand \thesection {\arabic{section}.}
+\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}.}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+\newcommand{\ra}{$\Sigma$} 
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+
+
+\title{What is wrong with Rung?}
+\author{Guillaume Jacques}
+\maketitle
+
+\section{Introduction}
+One of the most vexing issues in Sino-Tibetan historical linguistics is the question of the reconstructibility of verbal morphology. Sino-Tibetan languages present extreme  typological variety. While many  languages are almost prototypically isolating (for instance modern Chinese, Karen, Lolo-Burmese, Tujia etc), others  have a complex polysynthetic structure (Rgyalrong and Kiranti), and few, if any, typological features are common to the whole family. Thus, determining   how much morphology should be reconstructed to proto-Sino-Tibetan is by no means trivial. Some authors such as  \citet{lapolla03} have argued that while some valency-changing morphology can be reconstructed back to proto-Sino-Tibetan, the agreement systems of Rgyalrong and Kiranti are innovations. Others, such as  \citet{driem93agreement}  and \citet{delancey10agreement}, argue that Rgyalrong and Kiranti are conservative and that languages without verbal agreement such as Chinese, Lolo-Burmese or Chinese have lost it without trace.
+ 
+This kind debate is also not restricted to the Sino-Tibetan family; in another large and diverse family, Niger-Congo, a similar controversy has emerged (see  \citealt{guldeman08macrosudan} and  \citealt{hyman11macrosudan}).  This type of controversy is thus of   interest not only for Sino-Tibetanists, but in more general terms to all historical linguists working on large families: in a given family,  when languages differ as to their relative quantity of morphology, to what extend can we decide how much should be reconstructed back to the proto-languages?
+
+The question of the antiquity of agreement morphology in Sino-Tibetan is not independent of the issue of subgrouping. All authors who have published on the question, including  \citet{ebert90rung}, \citet{driem93agreement}, \citet{lapolla03}, \citet{delancey10agreement} and \citet{jacques12agreement}, agree that at least part of the agreement morphology between the polysynthetic Rgyalrong and Kiranti languages is cognate. The non-trivial resemblances between the system are obvious when one compares  the following simplified transitive paradigms of Bantawa (Kiranti) and Eastern Rgyalrong (see \citealt{jacques12agreement}, where the common idiosyncrasies between the two systems are discussed in detail). 
+
+ \begin{table}[H]
+ \caption{Bantawa Transitive Paradigm (singular forms)} \centering \label{tab:bantawa}
+ \begin{tabular}{l|l|l|l|}
+  &1O&2O&3O\\
+ \hline
+1A & 	\grise{} & 	\ra{}-na & 	\ra{}-uŋ \\ 
+2A & 	tɨ-\ra{}-ŋa & 	\grise{}	 & 	tɨ-\ra{}-u \\ 
+3A & 	ɨ-\ra{}-ŋa & 	tɨ-\ra{} & 	\ra{}-u \\ 
+ \hline
+\end{tabular}
+\end{table}
+
+ \begin{table}[H]
+ \caption{Situ Rgyalrong Transitive Paradigm (singular forms)} \centering \label{tab:situ}
+ \begin{tabular}{l|l|l|l|}
+  &1O&2O&3O\\
+ \hline
+1A & 	\grise{} & 	ta-\ra{}-n & 	\ra{}-ŋ \\ 
+2A & 	kə-w-\ra{}-ŋ & 	\grise{}	 & 	tə-\ra{}-w \\ 
+3A & 	wə-\ra{}-ŋ & 	tə-w-\ra{} & 	\ra{}-w / wə-\ra{}\\ 
+ \hline
+\end{tabular}
+\end{table}
+
+
+The  disagreement lies elsewhere: while van Driem and DeLancey propose that Rgyalrong and Kiranti belong to radically different branches of Sino-Tibetan, LaPolla argues that they should be grouped together with Dulong/Rawang and Kham into a ``Rung" clade, according to the following Stammbaum:\footnote{LaPolla took the term ``Rung" from \citet{thurgood85pro} , but his proposal and Thurgood's have little in common, and we will specifically focus here on LaPolla's arguments. }
+\begin{figure}[H]
+\caption{The Rung subgroup (\citealt[394]{lapolla05st})} \label{fig:rung}
+\begin{newicktree}
+  \small
+  \setunitlength{20cm} \righttree \nobranchlengths \nodelabelformat{}
+  \drawtree{((Dulong/Rawang:0.07,Kiranti:0.07,Kham:0.07):0.05,Rgyalrong:0.12):0.3[Rung],Qiangic:0.42;}
+  \par %\scalebar[0.1]
+\end{newicktree}
+\end{figure}
+
+Unlike many works on language classification in the Sino-Tibetan family, LaPolla's tree is specifically based on   common innovations. The Rung branch is defined as containing the languages that have the set of suffixes indicated in Table (\ref{tab:rung1}).\footnote{While the proto-Kiranti forms in this table appear to be based on  work such as \citet{driem93agreement}, it is unclear how the ``proto-Rgyalrong" forms  were arrived at; the verbal agreement suffix in Rgyalrong languages present highly irregular correspondences (see \citealt{gongxun12}) and their reconstruction is by no means trivial. } According to LaPolla, the Rgyalrong group diverged from the rest as it did not develop the reflexive/middle suffix found in Dulong, Kiranti and West Himalayish.
+
+\begin{table}[H] 
+\caption{Morphological innovations defining the ``Rung" group according to \citet{lapolla03}}
+\label{tab:rung1}
+\begin{tabular}{lllllll} 
+\toprule
+  &   	1sg  &   	1pl  &   	2pl  &   	dual  &   	reflexive/middle  \\   
+\midrule
+Proto-Rgyalrong  &   	*-ŋ  &   	*-i  &   	*-ñ  &   	*-tsh  &   	  \\   
+Proto-Dulong-Rawang  &   	*-ŋ  &   	*-i  &   	*-n  &   	*-si  &   	*-si  \\   
+Proto-Kiranti  &   	*-ŋ  &   	*-i  &   	*-ni  &   	*-ci  &   	*-nsi  \\   
+Proto-West-Himalayish  &   	*-g/-ŋ  &   	*-ni  &   	*-ni  &   	*-si  &   	*-si  \\   
+\bottomrule
+\end{tabular}
+\end{table}
+In this view, languages lacking agreement morphology such as Tibetan, Lolo-Burmese or Chinese never had any personal marking system on the verb. 
+
+
+The purpose of this paper is to evaluate LaPolla's claim, using first-hand data from   two branches of the purported ``Rung" group: Rgyalrong and Kiranti. First, we   discuss the internal logic of the arguments of both sides. Second, we analyse whether common innovations exclusive to ``Rungic" languages and unattested elsewhere can be found in the lexicon. Third, we provide evidence that traces of stem alternation similar to that found in Rgyalrong and Kiranti can be detected in  languages not considered to be  `Rungic' by Randy LaPolla.
+ 
+
+\section{Internal logic of the arguments}
+
+If only verbal affixes are taken into account,  both \citet{lapolla03}'s Rung hypothesis and the proto-Sino-Tibetan Agreement System hypothesis (henceforth PSTAS) appear equally probable (or improbable). 
+
+The main weakness of the PSTAS hypothesis is that it necessarily assumes that all languages without agreement or with an agreement system obviously unrelated to that of Rgyalrong and Kiranti must have lost it without trace. While total loss of morphology is a well-attested phenomenon especially in the case of intense language contact (see  \citealt{delancey10replacement} for instance and the references therein), the assumption that such a feature disappeared in most languages of the family can appear to be highly unparsimonious.
+
+The Rung hypothesis  on the other hand is based on a strict application of parsimony. However, the extremely limited number of characters (only five) used to support this hypothesis raises the question whether a similar result would be obtained with a larger body of data. As it stands in its present form, the Rung hypothesis is largely \textit{circular}: Rung languages belong to a common subgroup because of their common agreement morphology, and this common morphology is an innovation within Sino-Tibetan because only present in the Rung languages. 
+
+Thus, it is difficult to decide between  the PSTAS and the Rung hypotheses exclusively on the basis of regular verbal affixal morphology. The critical evidence must come from another source. Not all types of evidence are equally valuable for language subgrouping however. In particular, typological features and even phonological innovations are highly susceptible to change by contact and thus preserve little phylogenetic information.
+
+In  the following, we therefore focus on two distinct categories of data: the lexicon and the   irregular stem alternations.
+ 
+
+\section{Evidence from the lexicon}
+Neither the Rung   nor the PSTAS hypotheses can be fully statisfying without taking the lexicon into account. The two hypotheses make radically different predictions. 
+
+The Rung hypothesis states that ``Rungic" people diverged early from Chinese and Tibetan. According to \citet[236]{lapolla01migration}  ``the Tibeto-Burman speakers followed two main lines of migration; west into Tibet and then down to Nepal, Bhutan and northern India; and South-west down the river valleys along the eastern edge of the Tibetan plateau through what has been called the `ethnic corridor'. Thus, in this view, Chinese and then Tibetan were the first languages to branch off the rest of the family, and the Rung people are included among the people who took the ``south-west" path. This hypothesis specifically predicts that we should find lexical innovations supporting the following clades:
+
+\begin{enumerate}
+\item  A ``Tibeto-Burman" clade including all Sino-Tibetan languages except Chinese.
+\item A "South-West" clade including all languages except Chinese and Bodic.
+\item A Qiangic-Rung clade.
+\item A Rung clade.
+\end{enumerate}
+
+The PSTAS on the other hand is not committed to any particular classification scheme, but assumes that Rgyalrong and Kiranti belong to radically different branches of the family.
+
+In this paper, we will focus mainly on two languages classified under Rung (Japhug Rgyalrong and the Kiranti language Khaling), and compare these to Tibetan and Chinese. The Rung hypothesis predicts that we should find common innovations between Rgyalrong and Kiranti without cognates elsewhere, while the PSTAS hypothesis predicts that no such common innovation exist.
+
+In all his articles in defense of the Rung hypothesis, \citet{lapolla14subgrouping} only cites one possible lexical innovation: the verb ``to sit, to live", in Dulong \ipa{rùŋ}, Belhare \ipa{yuŋ}. However, this particular item has no cognate in Rgyalrong, so it is not relevant to the present discussion.
+
+This work is based on the forthcoming Khaling verb dictionary, which contains 648 basic verb roots, from which reflexive and bipartite verbs can be built (the total number of verbs is about the double of that figure). We focused exclusively on verbs, because these are known to be more resistant to borrowing that nouns, and because the intricate verbal inflexions allow to undertake internal reconstruction and arrive at a root closer to the proto-Kiranti form that the surface forms (see \citealt{jacques12khaling}). Since nominal morphology in Khaling presents few alternations, such internal reconstruction is not possible for nouns, and also most nouns are opaque compounds which are quite tricky to etymologize.
+
+Of the 648 verb roots, only 44 have cognates in either Japhug, Tibetan or Chinese; these data are presented in Table \ref{tab:cognates}. Verbs with cognates in other branches or in other Kiranti languages have not been included, as they would not be relevant to testing the Rung hypothesis. The Japhug data come from the author's unpublished Japhug dictionary which comprises more than 1800 verbs.
+
+Chinese is quoted in Middle Chinese, using a modified version of \citet{baxter92}'s Middle Chinese transcription. 
+The reference number in either Proto-Lolo-Burmese (\citealt{bradley79}) other non-Rung branches of Sino-Tibetan (citing reference numbers from the STEDT) is indicated when appropriate. Tibetan loanwords in Japhug Rgyalrong are indicated between brackets.
+
+A few doubtful comparisons have been included, these are marked with a question mark in column 6. These include the following:
+
+\begin{itemize}
+\item Khaling |noŋt| ``accuse" and Tibetan \ipa{noŋs} ``be in error" (see \citealt{hill08moriendi} on the uses of the latter verb) differ in meaning, but in the Khaling form the additional \ipa{--t} is most probably the applicative, so that it is legitimate to posit at an earlier stage a intransitive verb *|noŋ| ``be wrong" derived through the applicative as ``consider to be wrong" (tropative value of the applicative), hence ``accuse".
+\item Khaling |pu| ``to dry on smoke" can correspond to the intransitive stative verb \ipa{spɯ} ``be dry" in Japhug and its Naish cognate *Spu (\citealt{jacques.michaud11naish}), but in this case it must be a causative derivation.
+\item It is unclear whether Khaling |tho| ``to see" corresponds to Tibetan \ipa{lta} ``look" or \ipa{thos} ``hear" (which would fit better the phonology), or to neither.
+\end{itemize}
+
+
+\begin{table}[H]
+\caption{Cognate verbs between Khaling, Rgyalrong, Tibetan and Chinese } \label{tab:cognates}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllllllllllllllllll}
+\toprule
+Khaling&&meaning&LB&STEDT&& Tibetan&Japhug&&Chinese\\
+\midrule
+\ipa{bher}   &  	vi   &  	fly   &  	\tiny 399   &  	\tiny 2189, 2580   &  	    &  	\ipa{ɴpʰur}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{bi}   &  	vt   &  	give   &  	\tiny 191   &  	\tiny 2556   &  	   &  	\ipa{sbʲin}   &  	\ipa{mbi}   &  	\zh{畀}   &  	\ipa{pjijH}   \\  		
+\ipa{dhum}   &  	vi   &  	be in good terms   &  	\tiny    &  	\tiny    &  	   &  	\ipa{ɴdum}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{dzA}   &  	vt   &  	eat   &  	\tiny 440   &  	\tiny 36   &  	   &  	\ipa{za}   &  	\ipa{ndza}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{dzhur}   &  	vi   &  	be sour   &  	\tiny 449   &  	\tiny 6079, 2379   &  	   &  	\ipa{skʲur}   &  	\ipa{tɕur}   &  	\zh{酸}   &  	\ipa{swan}   \\  		
+\ipa{ghuk}   &  	vi   &  	be bent   &  	\tiny    &  	\tiny 2252   &  	   &  	\ipa{gug.po}   &  	\ipa{gɤɣ}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{joŋ}   &  	vi   &  	melt   &  	\tiny    &  	\tiny    &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{溶}   &  	\ipa{jowŋ}   \\  	
+\ipa{kA}   &  	vt   &  	eat (hard)   &  	\tiny    &  	\tiny 1777   &  	   &  	\ipa{}   &  	\ipa{nɤŋka}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{kak}   &  	vt   &  	peel   &  	\tiny    &  	\tiny 4451   &  	    &  	\ipa{ɴgog, bkog }   &  	\ipa{qaʁ}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{kaŋt}   &  	vt   &  	put on the oven   &  	\tiny    &  	\tiny 119   &  	   &  	\ipa{}   &  	\ipa{ɕkʰo}   &  	\zh{炕}   &  	\ipa{kʰaŋH}   \\  		
+\ipa{khe}   &  	vi   &  	steal    &  	\tiny 178   &  	\tiny 2365   &  	   &  	\ipa{rku}   &  	\ipa{mɯrkɯ}   &  	\zh{寇}   &  	\ipa{kʰuwH}   \\  		
+\ipa{khɛ}   &  	vi   &  	be bitter   &  	\tiny    &  	\tiny 229   &  	   &  	\ipa{kha}   &  	\ipa{}   &  	\zh{苦}   &  	\ipa{kʰʲuX}   \\  		
+\ipa{khri}   &  	vt   &  	guide   &  	\tiny    &  	\tiny    &  	   &  	\ipa{ɴkʰrid}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{kik}   &  	vt   &  	tie   &  	\tiny 345   &  	\tiny 180   &  	   &  	\ipa{bkʲigs}   &  	\ipa{}   &  	\zh{繫}   &  	\ipa{kejH}   \\  		
+\ipa{kur}   &  	vt   &  	carry   &  	\tiny    &  	\tiny    &  	   &  	\ipa{bkur}   &  	\ipa{fkur}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{lak}   &  	vt   &  	lick   &  	\tiny 323   &  	\tiny 629   &  	   &  	\ipa{ldʑags}   &  	\ipa{}   &  	\zh{食}   &  	\ipa{ʑik}   \\  	
+\ipa{lem}   &  	vi   &  	sweet   &  	\tiny    &  	\tiny   6152	   &    &  	\ipa{ʑim}   &  	\ipa{}   &  	\zh{甜}   &  	\ipa{dem}   \\  			
+\ipa{lum}   &  	vt   &  	half boil   &  	\tiny    &  	\tiny 2420   &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{min}   &  	vi   &  	be cooked   &  	\tiny 277   &  	\tiny 2449   &  	   &  	\ipa{smin}   &  	\ipa{smi}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{mit}   &  	vi   &  	die   &  	\tiny 315   &  	\tiny 31   &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{滅}   &  	\ipa{mjiet}   \\  		
+\ipa{moŋ}   &  	vi   &  	dream   &  	\tiny 268   &  	\tiny 126   &  	   &  	\ipa{}   &  	\ipa{tɯ-jmŋo}   &  	\zh{夢}   &  	\ipa{mjuwŋH}   \\  		
+\ipa{nom}   &  	vl   &  	smell   &  	\tiny 250   &  	\tiny 1415   &  	   &  	\ipa{snom}   &  	\ipa{nɤmnɤm}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{noŋt}   &  	vt   &  	accuse   &  	\tiny    &  	\tiny    &  	x   &  	\ipa{noŋs }   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{nu}   &  	vi   &  	be nice   &  	\tiny 223   &  	\tiny    &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{柔}   &  	\ipa{ɲuw}   \\  		
+\ipa{ŋok}   &  	vi   &  	cry   &  	\tiny 185   &  	\tiny 1104   &  	   &  	\ipa{ŋu}   &  	\ipa{ɣɤwu}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{ŋur}   &  	vi   &  	roar   &  	\tiny 400   &  	\tiny    &  	   &  	\ipa{sŋur}   &  	\ipa{(sŋur)}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{pher}   &  	vi   &  	flap wing   &  	\tiny    &  	\tiny    &  	   &  	\ipa{}   &  	\ipa{sɤphɤr}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{phiŋ}   &  	vt   &  	send   &  	\tiny 282   &  	\tiny    &  	   &  	\ipa{spriŋ}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{phlɛpt}   &  	vt   &  	fold   &  	\tiny    &  	\tiny 5475   &  	   &  	\ipa{lteb}   &  	\ipa{}   &  	\zh{疊}   &  	\ipa{dep}   \\  		
+\ipa{phut}   &  	vl   &  	take off   &  	\tiny    &  	\tiny    &  	   &  	\ipa{ɴbud, bud}   &  	\ipa{phɯt}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{pi}   &  	vi   &  	fart   &  	\tiny    &  	\tiny 311   &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{屁}   &  	\ipa{pʰjijH}   \\  		
+\ipa{pi, pit}   &  	vi   &  	come   &  	\tiny 209   &  	\tiny 446   &  	   &  	\ipa{}   &  	\ipa{ɣi, ɣɯt}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{pu}   &  	vt   &  	dry on smoke   &  	\tiny    &  	\tiny 348   &  	x   &  	\ipa{}   &  	\ipa{spɯ}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{rep}   &  	vi   &  	stand   &  	\tiny 35   &  	\tiny 145   &  	   &  	\ipa{}   &  	\ipa{}   &  	\zh{立}   &  	\ipa{lip}   \\  		
+\ipa{ret}   &  	vi   &  	laugh   &  	\tiny    &  	\tiny 1108   &  	   &  	\ipa{}   &  	\ipa{nɤre}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{sel}   &  	vt   &  	clean   &  	\tiny    &  	\tiny 2671   &  	   &  	\ipa{sel, bsal}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{set}   &  	vt   &  	kill   &  	\tiny 136   &  	\tiny 1018   &  	   &  	\ipa{gsod}   &  	\ipa{sat}   &  	\zh{殺}   &  	\ipa{ʂɛt}   \\  		
+\ipa{ta}   &  	vt   &  	put   &  	\tiny 113   &  	\tiny 2682   &  	   &  	\ipa{}   &  	\ipa{ta}   &  	\zh{置}   &  	\ipa{ʈiH}   \\  		
+\ipa{tho}   &  	vt   &  	see   &  	\tiny     &  	\tiny    &  	x   &  	\ipa{lta,  tʰos ?}   &  	\ipa{}   &  	\zh{睹}   &  	\ipa{tuX}   \\  		
+\ipa{thokt}   &  	vt   &  	understand   &  	\tiny    &  	\tiny    &  	   &  	\ipa{rtogs}   &  	\ipa{(rtoʁ)}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{tuŋ}   &  	vt   &  	drink   &  	\tiny    &  	\tiny 502   &  	   &  	\ipa{ɴtʰuŋ}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{woŋ}   &  	vi   &  	enter   &  	\tiny 269   &  	\tiny 77   &  	   &  	\ipa{joŋ}   &  	\ipa{}   &  	\zh{往}   &  	\ipa{hjwaŋX}   \\  		
+\ipa{ʔipt}   &  	vt   &  	put to sleep   &  	\tiny 153   &  	\tiny 127   &  	   &  	\ipa{}   &  	\ipa{nɯʑɯβ}   &  	\zh{}   &  	\ipa{}   \\  		
+\bottomrule
+\end{tabular}}
+\end{table}
+
+From this table, we observe that only one verb is exclusively shared between Rgyalrong and Kiranti: Khaling |pʰer| ``to flap wings" and Japhug \ipa{sɤphɤr} ``to brush off, to flap wings". However, the value of this comparison is somehow lowered by the 
+onomatopoietic character of this verb root; it is unclear whether this root should actually be reconstructed. 
+
+2 with Tibetan
+1 with Chinese
+
+Naturally isolated example of exclusively shared vocabulary are useless for subgrouping; there is no way to know whether these are innovations or rather retention from the proto-language. However, there is no exclusively shared vocabulary between Rgyalrong and Kiranti that could even potentially be regarded as common innovations, and the lexicon thus offers no positive evidence for the Rung hypothesis.
+
+\section{Stem alternations}
+
+ 
+
+
+\citet{lapolla92} and  
+
+ 
+
+
+\bibliographystyle{myenbib}
+\bibliography{bibliogj}
+\end{document}

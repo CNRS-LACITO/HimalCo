@@ -1,0 +1,321 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{memoir} 
+\RequirePackage{lineno} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+\bibpunct[~: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{}%#1.wav}
+
+\newcommand{\acc}{\textsc{acc}}
+ \newcommand{\acaus}{\textsc{acaus}}
+ \newcommand{\advers}{\textsc{advers}}
+\newcommand{\apass}{\textsc{apass}}
+\newcommand{\appl}{\textsc{appl}}
+\newcommand{\allat}{\textsc{all}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\assert}{\textsc{assert}}
+\newcommand{\auto}{\textsc{autoben}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\cl}{\textsc{cl}}
+\newcommand{\cisl}{\textsc{cisl}}
+\newcommand{\classif}{\textsc{class}}
+\newcommand{\concsv}{\textsc{concsv}}
+\newcommand{\comit}{\textsc{comit}}
+\newcommand{\compl}{\textsc{compl}} %complementizer
+\newcommand{\comptv}{\textsc{comptv}} %comparative
+\newcommand{\cond}{\textsc{cond}}
+\newcommand{\conj}{\textsc{conj}}
+\newcommand{\coord}{\textsc{coord}}
+\newcommand{\const}{\textsc{const}}
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\cop}{\textsc{cop}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\degr}{\textsc{degr}}
+\newcommand{\dist}{\textsc{dist}}
+\newcommand{\du}{\textsc{du}}
+\newcommand{\duposs}{\textsc{du.poss}}
+\newcommand{\dur}{\textsc{dur}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\emphat}{\textsc{emph}}
+\newcommand{\evd}{\textsc{evd}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\genr}{\textsc{genr}}
+\newcommand{\hort}{\textsc{hort}}
+\newcommand{\hypot}{\textsc{hyp}}
+\newcommand{\ideo}{\textsc{ideo}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\indef}{\textsc{indef}}
+\newcommand{\inftv}{\textsc{inf}}
+\newcommand{\instr}{\textsc{instr}}
+\newcommand{\intens}{\textsc{intens}}
+\newcommand{\intrg}{\textsc{intrg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\ipf}{\textsc{ipf}}
+\newcommand{\irr}{\textsc{irr}}
+\newcommand{\loc}{\textsc{loc}}
+\newcommand{\med}{\textsc{med}}
+\newcommand{\negat}{\textsc{neg}}
+\newcommand{\neu}{\textsc{neu}}
+\newcommand{\nmlz}{\textsc{nmlz}}
+\newcommand{\npst}{\textsc{n.pst}}
+\newcommand{\pfv}{\textsc{pfv}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\pass}{\textsc{pass}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\pot}{\textsc{pot}}
+\newcommand{\pres}{\textsc{pres}}
+\newcommand{\prohib}{\textsc{prohib}}
+\newcommand{\prox}{\textsc{prox}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\qu}{\textsc{qu}}
+\newcommand{\recip}{\textsc{recip}}
+\newcommand{\redp}{\textsc{redp}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\sgposs}{\textsc{sg.poss}}
+\newcommand{\stat}{\textsc{stat}}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\volit}{\textsc{vol}}
+\newcommand{\transloc}{\textsc{transl}}
+\newcommand{\cisloc}{\textsc{cisl}}
+\newcommand{\quind}{\textsc{qu.ind}} %revoir glose
+\newcommand{\trop}{\textsc{trop}} 
+ \newcommand{\abil}{\textsc{abil}}  
+ \newcommand{\facil}{\textsc{facil}}  
+ 
+\XeTeXlinebreaklocale "zh" %使用中文换行 
+\XeTeXlinebreakskip = 0pt plus 1pt % 
+\makeindex 
+\begin{document}
+\linenumbers
+
+\chapter{Introduction}
+
+ 
+\chapter{Parts of speech}
+\chapter{Nominal morphology}
+ 
+
+\chapter{Numerals and classifiers}
+ 
+
+
+time ordinals
+\chapter{Postpositions} \label{chapt:postpositions}
+
+
+\section{Ergative} \label{sec:erg}
+ 
+\subsection{Instrumental}
+
+
+
+
+
+
+\subsection{Verbal complement}
+ 
+\section{Genitive} \label{sec:genitive}
+
+Special forms \ref{sec:pronouns.gen}
+
+Possession (see \ref{sec:possession})
+ 
+\chapter{Pronouns and indefinites}
+\section{Pronouns and possessive prefixes} \label{sec:pronouns}
+
+ 
+
+\begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes }\label{tab:pronoun}
+\begin{tabular}{lllllllll} \toprule
+ Free pronoun & Prefix & \\
+\midrule
+ \ipa{ûŋ} &	\ipa{ʌ--}  &		1\sg{} \\
+\ipa{īn}  &	\ipa{i-}  &			2\sg{} \\
+\ipa{ʌ̄m}  &	\ipa{u-}  &			3\sg{} \\
+\ipa{īːtsi}  &	\ipa{is-}  &			1\textsc{di} \\
+\ipa{ōːtsu}  &	\ipa{os-}  &			1\textsc{de} \\
+\ipa{ēːtsi}  &	\ipa{es-}  &		2\du{} \\	
+\ipa{ʌ̄msu}  &	\ipa{us-}  &		3\du{} \\	
+\ipa{ik}    &	\ipa{ik-}  &			1\textsc{pi} \\
+\ipa{ok}    &	\ipa{ok-}  &			1\textsc{pi} \\
+\ipa{ên}  &	\ipa{ên-}  &			2\pl{} \\
+\ipa{ʌ̄mɦɛm}  &	\ipa{un-}  &			3\pl{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 	 
+ 
+ 
+\section{Demonstratives} \label{sec:demonstratives}
+\chapter{The structure of the noun phrase} \label{chapt:noun.phrase}
+
+\section{Possession} \label{sec:possession}
+ 
+ 
+\section{Nominal complements}  \label{sec:nom.comp}
+ 
+
+\section{Apposition}
+ 
+
+\chapter{Ideophones}
+ 
+
+\chapter{Adverbs}
+\section{Adverbs of degree} \label{adv:degree}
+ 
+
+\section{Quantifiers}
+each, all
+ 
+
+ 
+ 
+\chapter{The verbal template: a general overview} \label{chapt:template}
+ \cite[218]{bickel07inflectional} cites the following criteria distinguishing templatic morphology from layered one: 
+
+\begin{enumerate}
+\item ``There can be more than one root or head.''
+\item ``Dependencies can obtain between non-adjacent formatives.''
+\item ``Allomorphy of more inward formatives and the position of formatives in the string can be determined by their formal categories, or by phonological principles, rather than their syntactic or semantic functions.''
+\end{enumerate}
+\chapter{Verbal flexional morphology}    
+ 
+
+
+\chapter{Verbal derivational morphology} \label{chapt:derivational}
+
+ 
+\chapter{Auxiliary verbs} \label{chapt:aux}
+ʔʌ̄msu      mʌphûːŋ  mʉ̂itiʔe
+ 
+ 
+ voir systématiquement
+\chapter{Relative clauses} \label{chapt:relative}
+
+	
+\chapter{Complement clauses}
+lɵːk khoɔ̂iŋʌ
+
+loɔ̄mbi khoɔ̂iŋʌ
+
+sʌ̂ŋ-bi khoɔ̂iŋʌ
+
+dzhōŋbi khoɔ̂iŋʌ
+
+
+\section{Causation} \label{sec:causation.complement}
+
+
+\section{Modal auxiliaries}
+
+\section{Serial verb construction} \label{sec:serial.verb}
+
+\section{Consequence}
+
+
+\subsection{Conditional}
+
+\subsection{Resultative}
+
+\subsection{Purposive}
+
+\subsection{Possible consequence}
+
+
+\subsection{Counterfactual}
+
+\section{Concession}
+
+
+\section{Manner}
+ 
+\section{Comparative}
+ 
+
+
+\chapter{Topic and Focus} \label{chapt:discourse} 
+
+\section{Topic} \label{sec:topic}
+
+
+
+\subsection{Left dislocation}
+ 
+
+\subsection{Switch-topic}
+
+\section{Focus}
+
+\subsection{Questions and answers}
+
+\subsection{Focalization}
+
+
+\subsection{Pseudo-cleft}
+ 
+
+\subsection{Focus markers}
+ 
+
+
+\subsection{Presentative}
+
+
+ \section{Inverse marking} \label{sec:inverse.discourse}
+
+\chapter{Alignment typology}
+
+\section{Accusative alignment}
+ 
+\section{Ergative alignment}
+ 
+> 
+\section{Tripartite alignment}
+ 
+\section{Bitransitive predicates} \label{sec:bitransitive}
+
+
+
+\chapter{Final particles}
+
+%\printindex
+\tableofcontents
+\bibliographystyle{LSAlike}
+\bibliography{bibliogj}
+\end{document}

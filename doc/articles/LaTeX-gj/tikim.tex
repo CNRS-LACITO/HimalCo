@@ -1,0 +1,370 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{lineno}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+ 
+ 
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+\linenumbers
+
+\title{The auditory demonstrative  in Khaling\footnote{We wish to thank Thank to  
+Sasha Aikhenvald, Balthasar Bickel, Isabelle Bril, Alexandre François, Nathan Hill,  Lukas Neukom, N.A. Walker, and the anonymous reviewers for useful comments. We also wish express our gratitude to our Khaling consultants, especially Dhan Bahadur Rai, Dhan Maya Rai and Yadav Kumar Rai. The transcription of Khaling   strictly follows the IPA; in particular, the symbol \ipa{j} is used to represent the palatal glide, not the voiced coronal affricate as in most works on Kiranti languages. This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). } } 
+\author{Guillaume Jacques \\ Aimée Lahaussois}
+\maketitle
+
+Abstract: This paper shows the existence of an auditory demonstrative in Khaling.  The use of the demonstrative is illustrated via examples taken from narrative discourse.  It  is described here within the context of the spatial demonstrative system, in order to demonstrate how it is specifically used to  highlight that perception of the referent is attained using the sense of audition, regardless of the visibility of the object in question.  Khaling appears to be unique in having a true auditory demonstrative and it is hoped that this description will prompt field linguists to refine the description of the contrasts found within the demonstrative systems of languages around the world.
+
+
+Keywords:   spatial deixis; cross-modal perception; audition; demonstratives; Kiranti languages; Khaling; 
+
+
+\section{Introduction}
+ 
+ The existence of perceptual contrasts on demonstratives has been amply attested in many language families.   The cross-linguistically most common such phenomenon, and the first to have been described, is the   distinction between demonstratives contrasting visible and non-visible referents. For such languages, one set of demonstratives is used for referents within the field of vision of speech act participants, while the other set is used for referents outside the field of vision.  In yet other languages, the feature of vision may be irrelevant in using a demonstrative (although of course visibility of the referent is the most common situation in which demonstratives are used, considering their deictic nature): these demonstratives might be called 'standard', and be applicable to abstract concepts, among other things.  Among languages with a visibility contrast, a proximal/distal contrast, encoding the relative distance of the referent from the speaker, might also be present, and in some cases inseparable from the visibility feature. This is the case   of  Dyirbal (\citealt{dixon72dyirbal}), which has  a three-way distinction between \ipa{bala--} ‘referent is visible and not near speaker’; \ipa{yala--} ‘referent is visible and near speaker’; and \ipa{ŋala--} ‘referent is not visible (but may be audible or remembered from the past).'
+ 
+ 
+ Languages where the visibility  contrast is independent from, and can be combined with, the proximal / distal distinction are also attested. The best-known case is that of  Kwak'wala (\citealt[527-531]{boas11kwakiutl}), but such systems are also attested elsewhere  (\citealt[130]{aikhenvald06} and \citealt{aikhenvald14knowledge}).
+
+% elaborate system involving inferential and quotative has been described in Nambikwara (\citealt[282]{lowe99nambiquara}
+
+Demonstratives which grammaticalize perception via senses    other than vision appear to be  rare;  none are mentioned in    \citet{diessel99dem}'s survey of demonstrative systems. Such systems nonetheless exist, although they generally consist of distinguishing visual perception from perception via   other senses (in other words audition, taste, touch, smell, etc).  In   previously documented cases, terms like `auditory'  (\citealt[37, ft]{oswalt86evidential}), `auditive'  (\citealt[42-44]{neukom01santali}),  `audible' (\citealt{dixon72dyirbal}) are used to refer to  non-visual perception, not exclusively audition.
+
+%Muna (\citealt{vandenberg97spatial}) and Nyelayu (\citealt[98]{ozanne97spatial}).
+
+
+
+
+Yet systems where audition is the exclusive relevant perceptual channel for demonstrative selection also exist.  This is the case of Khaling, a Kiranti language of Eastern Nepal, which has a genuine auditory demonstrative: it is used, for both visible and out-of-sight referents, to indicate that the deictically dominant perceptual channel is auditory.  It cannot be used for perception via other senses such as smell or touch.  
+
+This paper is divided into four sections. First, we present background information on Khaling, including some data on nominalization, which is relevant to understanding how the demonstratives are used. Second, we describe the use of the auditory demonstrative in natural discourse. Third, we provide data on the rest of the demonstrative system and spatial adverbs, and show that the proximal / distal contrast is not correlated with any visual / non-visual distinction, although native speaker intuition sometimes suggests that it is. Fourth, we compare the Khaling demonstrative system with that of   other languages where a perceptual contrast has been reported, and show that no similar auditory demonstrative has been previously described.
+
+ 
+
+
+ 
+ \section{Background information}
+ Khaling is a  Sino-Tibetan language belonging to the Kiranti branch, spoken by about 15000 people in Solukhumbu district, Nepal. No reference grammar has yet been written, but a  glossary (\citealt{toba75glossary}) and some traditional stories have been published, and a recent article describes Khaling verbal morphology \citealt{jacques12khaling}). 
+ 
+
+ \subsection{Nominalization}
+The auditory demonstrative in Khaling is found in two forms: an adverbial form, \ipa{tikîː}, and a nominalized form, \ipa{tikî-m}, which is used as a modifier. The appearance of the nominalizer\ipa{–m}  in the modifier use of \ipa{tikîː} fits into a wider pattern that is characteristic of Khaling and, indeed, Sino-Tibetan languages more generally.
+
+%Because of the wide reach of nominalization in Sino-Tibetan languages such as Khaling, it seems appropriate to present the functions of the Khaling nominalizer \ipa{–m} as background for a discussion of the auditory demonstrative.  
+
+Khaling uses the nominalizer \ipa{--m} for a variety of functions: it is used to relativize clauses (\ref{ex:melsem}), to nominalize entire clauses and utterances (\ref{ex:nyor}), as well as to derive nominals from other lexical classes (such as adverbs and case marked elements, as in \ref{ex:phalle}, \ref{ex:khoaldzoam}, \ref{ex:wongam}).
+
+\begin{exe}
+\ex \label{ex:melsem}
+\gll 	\ipa{melsêm-ʔɛ}  	\ipa{soɔp-tɛ̂-m}  	\ipa{gɵ}  	 \\
+girl-\textsc{erg} wash-\textsc{pst}-\textsc{nmlz} clothes \\
+\glt The clothes the girl washed (elicitation)
+\end{exe}
+\begin{exe}
+\ex \label{ex:nyor}
+\gll 
+\ipa{nɵ̂r}  	\ipa{hōː-tɛ̂-m-kʌ}  	\ipa{kʰlê:p}  	\ipa{hûː-nû-m}  	\\
+tiger come-\textsc{pst-nmlz-abl} dog bark-\textsc{pl-nmlz} \\
+\glt Because the tiger came, the dogs bark. (meaning: it is a fact that, because the tiger came, the dogs bark; elicitation)
+\end{exe}
+
+
+Example (\ref{ex:nyor}) shows both clause and sentence nominalization: the first clause is nominalized and then ablative-marked, in order to identify it as a reason clause.  The entire sentence is also nominalized, leading to a reading as a statement of fact.
+\begin{exe}
+\ex \label{ex:phalle}
+\gll 
+\ipa{phʌ̂lle-lâ-m}  	\ipa{ʦûː-ɦɛm}  \\
+Phuleli-\textsc{abl-nmlz} grandfather-\textsc{pl} \\
+\glt Those from Phuleli, the grandfathers... (Khamdime)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:khoaldzoam}
+\gll 
+  \ipa{u-kʰoɔlʣoɔm-kolô-m}  	\ipa{gʰruksu}  	\ipa{gɵ}  \\
+\textsc{3sg.poss}-goiter-\textsc{com-nmlz} tree.sp be:\textsc{inan} \\
+\glt It is a tree with goitre. (said of a misshapen tree believed to have inherited the disease of the person responsible for its planting)
+\end{exe}
+ \begin{exe}
+\ex \label{ex:wongam}
+\gll 
+ \ipa{jāːtʰʌ}  	\ipa{woŋâ-m-ɦɛm}  	\ipa{pʰêrlol}  	\ipa{mʌt-tɛ-nu}  \\
+later other-\textsc{nmlz-pl} younger.generation make-\textsc{pst-pl} \\
+\glt Later many others, younger generations, came to be. (Khaktsalop2)
+\end{exe}
+
+The association of these various functions with a single marker is a wide-spread phenomenon in the Sino-Tibetan languages, named Standard Sino-Tibetan Nominalization (SSTN) (\citealt{bickel99nmlz}).  It has been described for a number of languages of the area, among others by \citet{matisoff72nmlz} for Lahu,   %%\citet{lahaussois03nmlz} for Thulung, 
+and by \citet{genetti08nmlz}, and more generally across Asian languages by \citet{yap11nmlz}.  The patterns found cross-linguistically are largely the same: the same marker is found with attributive/genitive marking, relativizing, and nominalizing functions, the latter applying at both the clausal and sentential levels.  
+\section{Auditory demonstrative}
+Khaling has, as mentioned above, a demonstrative which is specifically \textit{auditory}. It is used to signal that the predominant deictic feature of the referent is that it is detected through sensory input which is auditory.  Consultants reject the combination of \ipa{tikî-m} with the noun \ipa{ʔu-mûr} (\textsc{3sg.poss}-smell) `smell' and it cannot be used to refer to taste, touch or pain.
+ 
+ 
+
+The demonstrative adverb \ipa{tikîː} `there' can be used on its own, as in example \ref{ex:radio}, uttered by a speaker when a new radio was finally adjusted so that it was emitting sound.
+
+\begin{exe}
+\ex \label{ex:radio}
+\gll \ipa{tikîː}    \\
+  there:\textsc{aud}    \\
+\glt There it is!  (Heard in context)
+\end{exe}
+
+However, it is most often used in its nominalized form \ipa{tikî-m} as a noun modifier  (\ref{ex:motorbike}) or as a demonstrative pronoun  (\ref{ex:lel}).
+
+\begin{exe}
+\ex \label{ex:motorbike}
+\gll  	\ipa{mʌri} \ipa{mu-jɛd-u}, 	\ipa{tikî-m}  \ipa{phēm} \ipa{mʌʈʌrbaik}	  \\
+very \textsc{neg}-like-\textsc{1sg$\rightarrow$3sg} there:\textsc{aud}-\textsc{nmlz} such motorbike\\
+\glt I really don't like motorbikes like this one. (Referring to a motorbike passing in the street making noise, invisible from the house)
+\end{exe}
+ \begin{exe}
+\ex \label{ex:lel}
+\gll
+\ipa{mâŋ}  	\ipa{lêl}  	\ipa{tikî-m}  \\
+what song there:\textsc{aud}-\textsc{nmlz}\\
+\glt What song is that? (asked by a speaker of a person listening to a song on her cell phone)
+\end{exe}
+
+Unlike the spatial demonstratives (see section \ref{sec:spatial}), the auditory demonstrative is not sensitive to relative height. For instance, sentence \ref{ex:who} was heard in natural conversation twice, once to refer to a sound coming from upstairs, once to refer to a sound coming from the street, two floors below the place where the conversation took place.
+
+\begin{exe}
+\ex \label{ex:who}
+\gll  	\ipa{sʉ̂ː}  	 	\ipa{tikî-m?}   \\
+who there:\textsc{aud}-\textsc{nmlz} \\
+\glt Who is that ? (In both contexts, this sentence would correspond pragmatically to English `Who is making that noise?')
+\end{exe}
+
+As a modifier \ipa{tikî-m} can be used to modify   a noun with a prenominal     relative clause  in between (example \ref{ex:salpu}).
+
+\begin{exe}
+\ex \label{ex:salpu}
+\gll    	 	\ipa{tikî-m}   	\ipa{kɵ̂m-go-jo}   	\ipa{ʣe-pɛ}   	\ipa{sʌ̄lpu-ʔɛ}   	\ipa{ʔʌnɵ̂l-ni}   	\ipa{mâŋ-go}   	\ipa{blɛtt-ʉ}   	\ipa{ɦolʌ}   
+ \\
+ there:\textsc{aud}-\textsc{nmlz} cloud-\textsc{inside-locative.level} speak-\textsc{nmlz:}S/A bird-\textsc{erg} today-\textsc{top} what-\textsc{foc} tell-\textsc{3sg$\rightarrow$3} maybe \\
+\glt The bird that is singing in the clouds, what might it be telling today? (excerpt from a song by the Khaling songwriter Urmila)
+\end{exe}
+ 
+
+In all the previous examples, \ipa{tikîː} and its nominalized form \ipa{tikî-m} were used in contexts where the referent was not visible. Unlike what it found in other languages with an auditory demonstrative, they are not used with other non-visual sensory information, such as smell and touch.
+
+While speakers believe off-hand that the auditory demonstrative is only used for referents which are visible (see example  \ref{ex:def}, a definition provided for  \ipa{tikî-m} by a consultant), this appears to be a case of misperception. 
+\begin{exe}
+\ex \label{ex:def}
+\gll  	 	 \ipa{mu-toɔç-pɛ,} \ipa{ŋi-kî-m} \ipa{tʌ̂ŋ}   \\
+\textsc{neg}-be.visible-\textsc{nmlz:S/A} hear-\textsc{1pi-nmlz:O} only  \\
+\glt (It refers to something) invisible, which we only hear.
+\end{exe}
+
+Indeed, \ipa{tikîː} / \ipa{tikî-m} is routinely used for things that are visually accessible, as long as the main feature which is relevant to the context at hand is the auditory stimulus.
+ 
+Examples \ref{ex:radio} and \ref{ex:lel} above illustrate uses of the auditory demonstratives with visible referents; likewise,   \ref{ex:kogu}, uttered by a person watching a song contest on the television, makes it clear that the visibility or non-visibility of the referent is not a relevant factor in using this demonstrative.
+
+\begin{exe}
+\ex \label{ex:kogu}
+\gll  	\ipa{tikî-m-kʌ}   	\ipa{ʦʌ̄i} \ipa{ʔuŋʌ} \ipa{tūŋ }   	\ipa{kog-u}   \\
+there:\textsc{aud}-\textsc{nmlz}-from \textsc{top} \textsc{1sg:erg} more be.able-\textsc{1sg$\rightarrow$3sg}	  \\
+\glt I can (sing) better than that one. (Heard in context)
+\end{exe}
+
+ 
+
+In all of the examples above, non-auditory demonstratives could also have been used. The choice of \ipa{tikî-m}  highlights the  fact that the  speakers' perception is primarily via the auditory channel.
+ 
+ 
+ \section{Demonstrative spatial adverbs and pronouns} \label{sec:spatial}
+In the previous section, we   showed the existence of an auditory demonstrative in Khaling. In order to provide a reliable description of the demonstrative system of this language, we must now evaluate whether a visual vs. non-visual contrast is present in the rest of the demonstrative system. 
+
+
+
+There are two systems of demonstratives in Khaling, one based on demonstrative pronouns and the other   on demonstrative adverbs.
+
+Demonstrative pronouns include the  proximal \ipa{tɛ} `this' and the distal \ipa{mɛ} `that'. Like nouns and nominalized verbs or adverbs, these pronouns can receive locative case marking. The locative suffixes  in Khaling present a three-way distinction between \ipa{--tʉ} `at a higher place', \ipa{--jo} `away but on the same level' and \ipa{--jʉ} `at a lower place'.\footnote{This three-way contrast closely mirrors that observed for the verbs meaning `to come': \ipa{|khoŋ|} `come up from a lower place to a higher place', \ipa{|pi|} `come from a place on the same level as the point of arrival' and \ipa{|je|} `come down from a higher place to a lower place'.} Similar systems have been documented in most Kiranti languages, such as in Belhare (\citealt{bickel01deictic}), Yamphu (\citealt[96-99]{rutgers98yamphu}), Wambule (\citealt[208-16]{opgenort04wambule}), Hayu (\citealt[121]{michailovsky88}).
+
+ 
+\begin{table}[h]
+\caption{Demonstrative pronouns in Khaling} \centering \label{tab:pro}
+%\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+	& proximal & distal \\
+ 
+\midrule
+	base form    &	\ipa{tɛ}        &	\ipa{mɛ}        &	\\
+	upper level    &	\ipa{tɛ-tʉ}   `up here'    &	\ipa{mɛ-tʉ}   `up there'    &	\\
+	same level    &	\ipa{tɛ-jo}   `here' &     \ipa{mɛ-jo}        `there' &	\\
+	lower level   &	\ipa{tɛ-jʉ}  `down here'  &    	\ipa{mɛ-jʉ}     	 `down there' &	\\
+\bottomrule
+\end{tabular} 
+\end{table}
+
+The `same level' and  `lower level' demonstratives have variants exhibiting vowel fusion (\ipa{tɛː}, \ipa{mɛ̄ː}, \ipa{tīː} and \ipa{mīː}  respectively). The `upper level' demonstratives \ipa{tɛ-tʉ}   `up here' and	\ipa{mɛ-tʉ}   `up there' also have geminated variants \ipa{tɛ-ttʉ}  and	\ipa{mɛ-ttʉ} indicating a greater distance from the place of reference.
+
+
+These demonstratives can be further combined with other locative markers. An exhaustive description of all the possibilities is beyond the scope of this paper.\footnote{The nominalized forms can be additionally combined with the complex locative suffixes \ipa{--bʉtʉ} `in a higher place', \ipa{--bɵjo} `in a place on the same level' and \ipa{--bʉjʉ} `in a lower place' which include the suffix \ipa{--bi} `in' and the three spatial suffixes \ipa{--tʉ} `on a higher place', \ipa{--jo} `away but on the same level' and \ipa{--jʉ} `on a lower place' with irregular vowel harmony.}
+
+
+
+Proximal and distal demonstrative pronouns are neutral with respect to to visibility. They can appear with visible referents as well as invisible ones as in \ref{ex:smell}.
+ 
+
+\begin{exe}
+\ex \label{ex:smell}
+\gll   \ipa{tɛ}    \ipa{mâŋ-po}    \ipa{ʔu-mûr}   \\
+this what-\textsc{gen} \textsc{3sg.poss}-smell\\
+\glt What is this smell ? (elicited)
+\end{exe}
+
+Demonstrative adverbs also distinguish three spatial levels as can been seen in Table \ref{tab:adv}. A very similar system has been described in Dumi (\citealt[81]{driem93dumi}); the nominalized forms include the nominalizing suffix \ipa{--m} along with some vowel alternations.
+
+\begin{table}[h]
+\caption{Demonstrative adverbs in Khaling} \centering \label{tab:adv}
+\begin{tabular}{llllllll}
+\toprule
+	&distal  &	    &	further distal      &	    &	\\
+    &	adverb    &	nominalized    &	adverb    &	nominalized    &	\\
+    \midrule
+up    &	\ipa{tukûː}    &	\ipa{tukûm}    &	\ipa{tukkʌ}    &	\ipa{tukkâm}    &	\\
+level    &	\ipa{jʌkâː}    &	\ipa{jʌkʌ̂m}    &	\ipa{jʌkkʌ}    &	\ipa{jʌkkâm}    &	\\
+down    &	\ipa{jukûː}    &	\ipa{jukûm}    &	\ipa{jukkʌ}    &	\ipa{jukkâm}    &	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The distinction between the distal form and the further distal form (with gemination of the consonant, as the case marker \ipa{--ttʉ} above) of the adverbs in Table \ref{tab:adv} deserves attention.
+
+
+ Two language consultants   independently described the further distal  adverbs as designating objects that are \ipa{mu-toɔç-pɛ} (\textsc{neg}-be.visible-\textsc{nmlz:S/A}) `invisible', \ipa{mu-thɵ-kî-m} (\textsc{neg}-see-\textsc{1pi-nmlz:O}) `which we do not see' or, in sanskriticized Nepali, \textit{adṛṣya} `invisible'. 
+ 
+  
+However, examples taken from traditional stories  show that the further distal adverbs can be used even with visible objects.  Example \ref{ex:jukka}, from a myth about the origin of an important Khaling ritual and the danger presented by Sherpas eager to take over Khaling land, shows clearly how the further distal form,  	\ipa{jukkʌ}, can be used with visible objects: the adverb is combined with the verb ‘to be visible’.
+
+
+
+\begin{exe} 
+\ex \label{ex:jukka}
+\gll     
+\ipa{mʌnʌ}  	\ipa{jʌgʌʦoɔi-bi-kʌ}  	\ipa{sên-tɛ-nu-lo}  	\ipa{jukkʌ}  	\ipa{dudkosi}  	\ipa{toɔ̂i}  	\ipa{ʔe}  	\\
+then  Yagachwai-\textsc{loc-abl} \textsc{look-pst-pl-}when \textsc{distal.down} Dudhkosi be.visible:\textsc{3sg:n.pst} \textsc{hearsay} \\
+\glt They (Sherpas) looked from Yagachwai and  the DudhKosi appeared far below. (Khamdime)
+\end{exe}
+
+Contrary to speaker perception,   then, the geminated forms of the demonstrative adverbs and their nominalized   forms can be used with visible objects, and   the contrast is one of distance, with the geminated forms being used for further distal referents. This distal / further distal contrast   is clear from example \ref{ex:bottle}, where 	\ipa{jʌkʌ̂-m}  refers to the closer bottle  while \ipa{jʌkkâm}  	 refers to the farther one, both of them being within the field of vision.
+
+\begin{exe} 
+\ex \label{ex:bottle}
+\gll      	\ipa{jʌkʌ̂-m}  	\ipa{bʌdʌl-bi}  	\ipa{ʦʌ̄i}  	\ipa{mu-gɵ}  	\ipa{jʌkkâm}  	\ipa{bʌdʌl-bi}  	\ipa{ʦʌ̄i}  	\ipa{gɵ}  \\
+ there.\textsc{non.distal.level-nmlz} bottle-in \textsc{top} \textsc{neg}-exist.\textsc{inaminate} there.\textsc{distal.level-nmlz} bottle-in \textsc{top} \ exist.\textsc{inaminate} \\
+\glt There is no (water) in the bottle here, but there is in the bottle over there (both bottles are visible). (elicited)
+\end{exe}
+
+It is interesting that speakers should have intuitions about the grammaticalization of sensory contrasts which are disproven when the same speakers provide examples in spontaneous narrative.  There is considerable work on the unreliability of speaker intuitions and the importance, in such a context, of corpus work (\citealt[164]{biber10corpus}).  The data we have collected on the use of the auditory demonstrative \ipa{tikîː} / \ipa{tikî-m}, which is interpreted by some speakers as being only applicable to invisible objects and disproven in corpus examples and elicitation, has a parallel in similar misperceptions about the incorrect non-visibility constraint for geminated forms of spatial deictics.
+
+
+ 
+ 
+
+\section{Typological perspectives} \label{sec:typo}
+In reviewing demonstrative systems which encode perceptual contrasts, a number of questions must be considered:
+ 
+ \begin{enumerate}
+\item Is the proximal / distal  contrast in demonstratives connected to the perceptual contrasts?
+\item  Are there demonstratives which are exclusively visual, and which cannot be used abstractly or generically?
+\item Are there demonstratives which are genuine auditory demonstratives, in other words which encode the importance to the speaker of signalling   perception via an auditory channel?
+\end{enumerate}
+
+It seems that cross-linguistically, systems tend to contrast visual / ‘standard’ demonstratives  with demonstratives referring to all other senses grouped together. Sometimes, this will be described as ‘auditory’, because of the prevalence of the auditory channel (in information gathering) among the other senses.
+
+    Table \ref{tab:attested} presents, for languages for which descriptions suggests the indexation of audition in the demonstrative system, the position of these languages with respect to the questions above.  The data suffers from the fact that in many descriptions of languages, these distinctions are not made very clearly.  What can be said from our examination of data currently available is that Khaling stands out among other languages in being the only one to have a genuine auditory demonstrative.
+
+
+ 
+
+\begin{table}
+\caption{Systems     including auditory demonstratives } \label{tab:attested}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccl}
+\toprule
+  &	Connection  & 	Indexation of   & 	Indexation of distinctions  	&References\\
+&  with proximal / distal &visual perception &between audition and other senses\\
+\midrule  
+Santali  & 	no  & 	yes  & 	no  & 	\citet[42-44]{neukom01santali}\\
+Nyelayu  & 	yes  & 	yes  & 	no  & 	\citet[98]{ozanne97spatial}\\
+Southern Pomo  & 	unknown  & 	unclear  & 	no  & 	\citet[37, ft]{oswalt86evidential}\\
+Muna  & 	yes  & 	yes  & 	no  & 	\citet{berg97deixis.muna}\\
+Dyirbal  & 	yes   & 	yes  & 	no  & 	\citet{dixon72dyirbal}\\
+\midrule
+Khaling  & 	no  & 	no  & 	yes  & 	\\
+\bottomrule
+\end{tabular}}
+\end{table}	
+
+
+
+
+None of the languages in Table  \ref{tab:attested} presents    the   same exact system.
+
+ 
+
+In Santali (\citealt[42-44]{neukom01santali}), we find a contrast between standard, visual and  `auditive' demonstratives (in addition to number and proximal/distal distinctions). The  `auditive' demonstrative is best characterized as non-visual sensory; according to \citet[42]{neukom01santali} it can be used to  refer to smell, taste, and touch.
+
+In Dyirbal, Muna, and Nyelayu,  the sensory distinction in demonstratives is not clearly separate from the proximal / distal distinction. In Dyirbal and Muna, there are demonstratives that can be used to refer to  invisible but audible objects, but audibility is not described as an essential feature. 
+
+ Nyelayu (\citealt[98]{ozanne97spatial}) presents a system    with four degrees depending on the proximity of the referent to the speaker: \textit{near the speaker}, \textit{distant but visible}, \textit{distant and invisible but audible} and \textit{absent but known to the speakers}. It is thus a system with a tripartite sensory distinction (visible ; invisible but audible ; neither visible nor  audible). 
+
+  Unpublished work by \citealt{bril-yuanga} describes a similar phenomenon in the related language Yuanga. In that language the demonstrative \ipa{--ili}  cognate with the one described as  referring `invisible but audible' objects in Nyelayu is also non-visual, but can be used to indicate perception through taste and other senses. 
+
+In the Mihilakawna dialect of Southern Pomo,   \citet[37, ft]{oswalt86evidential} suggests the existence of an audible  demonstratives, without providing a detailed description, and without clear mention of the presence or absence of visual demonstratives, as the information is in a footnote in an article on a different language. The most recent grammar of Southern Pomo does not mention the existence of such phenomena (\citealt[232]{walker13pomo}).
+
+Precise information on the  use of the auditory demonstrative is lacking for Nyelayu and Southern Pomo, so that it is difficult to assess whether it can be used with senses other than hearing; from the available descriptions it is also tricky to determine to what extent the auditory demonstratives are \textit{exclusively} used with  invisible referents. As we have shown in the case of Khaling, the intuitions of native speakers can be misleading if not rechecked against the actual use of these words in context.
+
+
+Khaling is thus the only language for which positive evidence   shows the presence of a genuine auditory demonstrative, as opposed to a non-visual sensory one.  
+
+
+\section{Conclusion}
+This paper describes the auditory demonstrative in Khaling, which represents, as far as we are able to ascertain, a novel configuration among attested demonstrative systems.
+
+We have shown that Khaling, unlike other systems described heretofore, has a genuine auditory demonstrative: in its adverbial or nominalized form, \ipa{tikîː} / \ipa{tikî-m} is used to signal that the relevant perceptive channel in identifying the referent is audition rather than vision.  The auditory demonstrative is not associated with a distal / proximal contrast and the demonstrative system does not highlight other senses: Khaling's demonstrative pronouns (Table \ref{tab:pro}) and adverbs (Table \ref{tab:adv}) do not encode visibility, and the auditory demonstrative is used to signal perception via audition and not via any other sense, although it can be used when other sensory input is present in addition to audition.
+
+We feel that the nature of the auditory demonstrative in Khaling is unique with respect to currently-available descriptions of demonstrative systems, and hope that this contribution may spur investigations into similar perceptual phenomena in demonstrative systems of other languages.
+
+
+\bibliographystyle{Linquiry2}
+\bibliography{bibliogj}
+\end{document}

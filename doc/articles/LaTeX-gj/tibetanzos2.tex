@@ -1,0 +1,369 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{memoir} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage[top=72pt,bottom=72pt,left=72pt,right=72pt]{geometry}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Adobe Caslon Pro} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+\SetSymbolFont{letters}{normal}{\encodingdefault}{\rmdefault}{m}{rm}
+\setmathrm{Charis SIL}
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newfontfamily\captionfont[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Helvetica} 
+\newcommand{\ipa}[1]{{\phon #1}} 
+\newcommand{\ipab}[1]{{\scriptsize\phon #1}} 
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+
+
+\newcommand{\acc}{\textsc{acc}}
+\newcommand{\antierg}{\textsc{antierg}}
+\newcommand{\allat}{\textsc{all}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\assert}{\textsc{assert}}
+\newcommand{\auto}{\textsc{auto}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\classif}{\textsc{class}}
+\newcommand{\concessif}{\textsc{concsf}}
+\newcommand{\comit}{\textsc{comit}}
+\newcommand{\conj}{\textsc{conj}}
+\newcommand{\const}{\textsc{const}}
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\cop}{\textsc{cop}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\detm}{\textsc{det}}
+\newcommand{\dir}{\textsc{dir1}}
+\newcommand{\du}{\textsc{du}}
+\newcommand{\duposs}{\textsc{du.poss}}
+\newcommand{\dur}{\textsc{dur}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\hypot}{\textsc{hyp}}
+\newcommand{\ideo}{\textsc{ideo}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\impf}{\textsc{ipfv}}
+\newcommand{\instr}{\textsc{instr}}
+\newcommand{\intens}{\textsc{intens}}
+\newcommand{\intrg}{\textsc{intrg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\irreel}{\textsc{irr}}
+\newcommand{\loc}{\textsc{loc}}
+\newcommand{\med}{\textsc{med}}
+\newcommand{\negat}{\textsc{neg}}
+\newcommand{\neu}{\textsc{neu}}
+\newcommand{\nmlz}{\textsc{nmlz}}
+\newcommand{\nonps}{\textsc{n.pst}}
+\newcommand{\opt}{\textsc{dir2}}
+\newcommand{\perf}{\textsc{pfv}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\pot}{\textsc{pot}}
+\newcommand{\prohib}{\textsc{prohib}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\recip}{\textsc{recip}}
+\newcommand{\redp}{\textsc{redp}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\sgposs}{\textsc{sg.poss}}
+\newcommand{\stat}{\textsc{stat}}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\volit}{\textsc{vol}}
+
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+
+
+
+
+\makeevenhead{headings}{}{}{\textit{Guillaume Jacques}}
+\makeoddhead{headings}{\titre{}}{}{}
+\makeevenfoot{headings}{}{\large\thepage}{}
+\makeoddfoot{headings}{}{\large\thepage}{}
+
+\newcommand{\titre}{}
+\makeatletter
+\renewcommand\section{\@startsection{section}{0}{\z@}%
+                                   {-5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\flushleft\large\bfseries}}
+\renewcommand{\subsection}{\@startsection{subsection}{1}{\z@}
+                                   {-2.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+								{\flushleft\scshape\bfseries} }
+								
+\renewcommand*{\thesection}{\@arabic\c@section}
+\renewcommand*{\thesubsection}{%
+             \thesection\@arabic\c@subsection.}
+\renewcommand*{\thesubsubsection}{%
+             \thesubsection\@arabic\c@subsubsection.}
+\renewcommand*{\thefigure}{\@arabic\c@figure}
+\renewcommand*{\thetable}{\@arabic\c@table}
+\makeatother
+
+\setlength{\footmarkwidth}{0em}
+\setlength{\footmarksep}{0em}
+\setlength{\footparindent}{0em}
+\begin{document}
+\setcounter{page}{41}
+\renewcommand{\titre}{\textit{Himalayan Linguistics, Vol. 9(1).} \copyright{}  
+Himalayan Linguistics 2010\newline ISSN 1544-7502}
+\begin{flushleft}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+{\HUGE\textit{A possible trace of verbal agreement in Tibetan*}}
+
+\vspace{24pt}
+{\large\textbf{Guillaume Jacques}}
+
+{\large CNRS (CRLAO)} 
+\newline
+{\large INALCO}
+\vspace{14pt}
+\end{flushleft}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext{*I greatly benefited from extensive discussion with Boyd Michailovsky about the Kiranti verbal system. Without his help, writing this paper would not have been possible. I also thank Peter Austin, Paul Hastie, Nathan Hill, Randy LaPolla, Alexis Michaud and Laurent Sagart as well as two anonymous reviewers of \textit{Himalayan Linguistics} for comments and corrections. I remain alone responsible for the errors and inadequacies that may remain in the present paper. This paper was corrected after acceptance by the reviewers during my stay as a visiting scholar at the Research Centre for Linguistic Typology, LaTrobe University. I am grateful to Randy LaPolla for having made this visit possible.}
+\renewcommand{\thefootnote}{\arabic{footnote}}\setcounter{footnote}{0}
+
+\section{Introduction}
+In the Sino-Tibetan family, some subgroups, like Rgyalrong and Kiranti, have extensive verbal agreement morphology, while others such as Chinese, Lolo-Burmese or Tibetan seem to have no trace of any agreement on the verb. These facts have been interpreted by scholars in several ways. Some, such as \citet{bauman75}, \citet{delancey89agreement}, and \citet{driem93agreement} have proposed that the agreement morphology found in various ST languages is ancient and must be reconstructed for the proto-language. Others, such as \citet{lapolla92} have adopted a more sceptical stance and argued the evidence was not sufficient for reconstructing an agreement system, proposing that all the agreement morphology found in these languages was late and (at least partly) independently innovated.
+
+This polarized debate has mainly focused on attested regular forms, whereas little attention has been paid to irregular paradigms, though these are more informative for historical reconstruction (\citealt{jacques07chang}). In addition, little effort has been made to look for indirect traces of agreement morphology in the languages that have no productive system. If such traces could be brought to light, this would provide argument for the antiquity of the agreement systems.
+
+\section{The Tibetan verb ``to eat''}
+The Tibetan verbal system is known for its highly irregular morphology. According to the traditional terminology, Tibetan volitional verbs have four stems respectively called present (da.lta.pa), past ('das.pa), future (ma.'ongs.pa) and imperative (skul.tshig). Although these names are somewhat misleading (\citealt{zeisler04}), we will use them in the present paper for the sake of convenience.
+
+The verb ``to eat'' has an irregular paradigm, present \ipa{za}, past \ipa{zos}, future \ipa{bza}, imperative \ipa{zos}. The future and imperative forms are what one would anticipate for a root such as \racine{za}, but the past form is exceptional: it is the only instance in the Tibetan language of an a/o alternation between present and past forms (the a/o alternation found in the imperative, however, is entirely regular). The present tense \ipa{za} is also slightly irregular: *'dza would be expected instead. The regular past form \ipa{bzas} is also attested. 
+
+In Old Tibetan texts, \ipa{zos} is by far the most common past tense form:
+
+\begin{exe}
+\ex \label{zos}
+\gll	  yab lha.ltong.te.mye.ku ni sha rlon-du zos khrag rlon-du 'thungs pags rlon-du gyond \\
+			father Lhaltongtemyeku \topic{} flesh raw-\allat{}  eat.\pst{} blood raw-\allat{} drink.\pst{} skin raw-\allat{} wear.\pst{} \\
+\glt He ate father Lhaltongtemyeku's raw flesh, drank his raw blood, and wore his raw skin. (ITJ.0731, v35-36)
+\end{exe}
+
+\begin{exe}
+\ex \label{zos2}
+\gll	 'ung-gis khrel-ltas myed-cïng mna' zos-pa sdïg-ste \\
+		he-\erg{} shame-omen not-\conv{} oath eat.\pst{}-\nmlz{} sinful-\conv{} \\ 
+\glt Hence, being sinful oath-swallowers, unabashed, (ITJ.0734:1r25)\footnote{Translation following \citet[p. 77]{thomas57tibet}.}
+\end{exe}
+
+Only one example of the syllable \ipa{bzas} as a form of the verb \racine{za} is found in Old Tibetan:
+\begin{exe}
+\ex \label{bzas}
+\gll khyi sbad-pa-s/ zhang.lond/ zhig bzas-de \\
+	dog excite-\nmlz{}-\erg{} Zhanglond \detm{} eat.\pst{}-\conv{} \\
+\glt If someone sets on a dog, and it bites a \ipa{Zhanglond}, (PT1023.18)
+\end{exe}
+In later Tibetan texts, the form \ipa{zos} is still the most common one:
+\begin{exe}
+\ex \label{bzas}
+\gll nged-kyis ni khyod-kyi gzhis phrogs-pa yang med la pha nor zos-pa yang med-do \\
+	we-\erg{} \topic{} you-\gen{} household plunder.\pst{}-\nmlz{} even not \conj{} father fortune eat.\pst{}-\nmlz{} even not-\assert{} \\
+\glt We have not plundered your household, or  eaten your father's fortune. (Milaraspa 2.2).
+\end{exe}
+Although the philological evidence does not prove beyond doubt that the irregular form \ipa{zos} is older than \ipa{bzas}, it is significant that the form \ipa{zos} is the one found in archaic dialects such as Balti (\citealt[p. 234]{bielmeier85}). The form \ipa{bzas} can be explained as a secondary form created by analogy to regularize the otherwise aberrant paradigm of the verb ``to eat''. 
+
+Against the interpretation of past tense \ipa{zos} as an archaic form, it could be argued that  it comes from the imperative \ipa{zos}: this past form would have been created by analogy with the intransitive verbs, where past and imperative do not have a distinct form.\footnote{This idea was proposed by Peter Austin.} However, this idea is problematic: Tibetan intransitive verbs never present a/o alternation. The Past / Imperative of these verbs is either marked by an --s suffix or unmarked. Therefore, it is not likely that the past tense form \ipa{zos} is analogically derived from the imperative, as analogy cannot create an entirely new kind of alternation; if it were the case, we would rather expect a paradigm such as *za / *zas.
+ \renewcommand{\titre}{\textit{Himalayan Linguistics, Vol. 9(1)}}
+\section{Vowel alternations in the Kiranti verb}
+ Specialists of Kiranti languages have long noted that transitive verbs ending in --a exhibit vowel alternation. In most languages, the alternation is between --a and --o, though Dumi (\citealt{driem93dumi}) has more complex vowel alternation patterns for ancient --a stem verbs due to extensive sound changes. 
+ 
+Such an alternation has been reported in Hayu (\citealt[pp. 101-3]{michailovsky88}), Limbu (\citealt[pp. 392-5]{driem87}), Yamphu (\citealt[p. 165]{rutgers98yamphu}), Bantawa (\citealt[pp. 401-2]{doornenbal09}) and most other Kiranti languages. The exact distribution of the --a and --o forms varies greatly from language to language. The complete paradigms of Limbu transitive verbs are illustrated in tables 2 and 3, taking \racine{hipt} ``to hit'' and \racine{ca} ``to eat'' as examples.\footnote{The two tables follow Michailovsky's presentation. However, we have to mention that 1de>2, 1pe>2, 2>1de, 2>1pe forms cannot be used for the equivalent inclusive 1di>2, 1pi>2, 2>di, 2>1pi. } The first one  \racine{hipt} is an entirely regular verb, while the second \racine{ca} exhibits a/o alternations. These paradigms follow the layout given in \citet[xiii]{michailovsky02dico}: rows indicate agents, and columns indicate patients. Limbu conjugation marginally distinguishes between non-past and past forms. Past forms distinct from non-past are indicated between brackets.
+
+Table 3 shows that in the non-past, only six forms have --o: 
+
+\begin{enumerate}
+\setlength{\itemsep}{0in}
+\item 2\sg{}>3\sg{}
+\item 2\sg{} >3\du{}/\pl{}
+\item 3\sg{}>3\sg{}
+\item 3\sg{} >3\du{}/\pl{}
+\item 3\du{}/\pl{}>3\sg{}
+\item 3\du{}/\pl{} >3\du{}/\pl{}
+\end{enumerate}
+\citet[xiv]{michailovsky02dico} argues that this a/o alternation can be explained as a case of vowel fusion between the --a of the radical and the --u vowel of the suffixes. While this explanation seems logical, it is not without problems : the 1\sg{}>3 and 1\pl{}>3 suffixes, respectively --\ipa{uŋ} and --\ipa{um}, do not trigger vowel fusion, only the --\ipa{u} suffix found in 2>3 and 3>3 forms do.
+
+The intriguing situation found in Limbu can be explained when a language such as Bantawa is taken into account. In Bantawa, the a/o alternation in correlated with both person and TAM: non-past forms have --a, and and past forms have --o where a third person patient --u  suffix would be expected (\citealt[p. 138]{doornenbal09}). Non-past and past forms are identical if the patient is not third person. 
+
+In table \ref{tab:bantawa}, we present selected non-past and past forms of the verb ``to eat'' in Bantawa, compared with their corresponding Limbu forms and with the regular Bantawa verb \racine{khatt} ``to take''. In Bantawa regular verbs, the distinction between non-past and past also exists in some forms of the paradigm (especially with a dual agent), but not in the forms presented here.
+
+
+\begin{table}[H] \centering
+
+\begin{tabular}{lllll}  \toprule 
+& \ipa{khatt} ``to take'' & \multicolumn{2}{c}{\ipa{ca} ``to eat''} & Limbu \\
+&  &non-past & past & \\
+1\sg{}>3\sg{} & \ipa{khattuŋ} & \ipa{caŋ} & \ipa{coŋ} & \ipa{caŋ} \\
+1\sg{}>3\du{}/\pl{} & \ipa{khattuŋcɨŋ} & \ipa{caŋcɨŋ} &\ipa{coŋcɨŋ} & \ipa{caŋsiŋ} \\
+1\pl{}>3\sg{} & \ipa{khattumka} &  \ipa{camka} & \ipa{comka} &  \ipa{cambɛ} \\
+1\pl{}>3\du{}/\pl{} & \ipa{khattumcɨmka} &  \ipa{camcɨmka} & \ipa{comcɨmka} & \ipa{camsimbɛ}\\
+2\sg{}>3\sg{} & \ipa{tɨkhattu} &  \ipa{tɨca} & \ipa{tɨco} & \ipa{kɛdzo} \\
+2\sg{}>3\du{}/\pl{} & \ipa{tɨkhattuci} &  \ipa{tɨcaci} & \ipa{tɨcoci} & \ipa{kɛdzosi}\\
+3\sg{}>3\sg{} & \ipa{khattu} &  \ipa{ca} & \ipa{co} & \ipa{co} \\
+3\sg{}>3\du{}/\pl{} & \ipa{khattuci} &  \ipa{caci} & \ipa{coci} & \ipa{cosi} \\
+1\sg{}>2\sg{} & \ipa{khatna} & \ipa{cana} & \ipa{cana} & \ipa{canɛ} \\
+
+\bottomrule
+\end{tabular}
+
+\captionft{\caption{Bantawa paradigms}\label{tab:bantawa} }}
+
+\end{table}
+
+
+
+\begin{landscape}
+
+
+ 
+\begin{table}[t]
+
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l}  \toprule
+&1s & 1di & 1de & 1pi & 1pe & 2s &2d & 2p & 3s & 3d  3p   \\ 
+\midrule
+1s  & \multicolumn{5}{c}{\cellcolor{lightgray}} & \ipab{hipnɛ} & \ipab{hipnɛsiŋ} & \ipab{hip(nɛ)niŋ} & \ipab{hiptuŋ} & \ipab{hiptuŋsiŋ} \\ 
+\cline{7-11}1di  & \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{ahipsu} & \ipab{ahipsusi} \\ 
+&\multicolumn{5}{c}{\cellcolor{lightgray}}  & \multicolumn{2}{l}{\ipab{hipnɛsigɛ}}   && \multicolumn{2}{c}{(\ipab{ahiptusi})} \\ 
+1de	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{hipsugɛ} & \ipab{hipsusigɛ} \\ 
+&\multicolumn{5}{c}{\cellcolor{lightgray}}  & \multicolumn{2}{c}{}   && \multicolumn{2}{c}{(\ipab{hiptusigɛ})} \\ 
+\cline{7-11}1pi	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{l}{\ipab{hipmasigɛ}} &&  \ipab{ahiptum} & \ipab{ahiptumsim} \\ 
+1pe	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{hiptumbɛ} & \ipab{hiptumsimbɛ} \\ 
+\cline{10-11}2s & \ipab{kɛhipma}  &\multicolumn{4}{c}{}&\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛhiptu} & \ipab{kɛhiptusi} \\ 
+& \ipab{(kɛhiptaŋ}) 	&\multicolumn{4}{c}{}&\multicolumn{3}{c}{\cellcolor{lightgray}}	&\\ 
+\cline{2-2}2d &\multicolumn{5}{c}{\ipab{agɛhip}}  &\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛhipsu} & \ipab{kɛhipsusi} \\ 
+& \multicolumn{5}{c}{\ipab{(agɛhiptɛ})} &\multicolumn{3}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{(\ipab{kɛhiptusi})} 	\\ 
+2p &\multicolumn{5}{c}{}  &\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛhiptum} & \ipab{kɛhiptumsi(m)} \\ 
+\cline{2-6} \cline{10-11}3s & \ipab{hipma} & \ipab{ahipsi}   & \ipab{hipsigɛ}  & \ipab{ahip} & \ipab{hiptigɛ} & \ipab{kɛhip} & \ipab{kɛhipsi} & \ipab{kɛhipti} & \ipab{hiptu} & \ipab{hiptusi} \\ 
+ & (\ipab{hiptaŋ}) & (\ipab{ahiptɛsi})   & (\ipab{hiptɛsigɛ})  & (\ipab{ahiptɛ}) &   & (\ipab{kɛhiptɛ}) & (\ipab{kɛhiptɛsi}) &  & &  \\ 
+\cline{2-11} 3d & \multirow{3}{*}{\begin{tabular}{l}\ipab{mɛhipma}  \\ (\ipab{mɛhiptaŋ})\end{tabular} }& \multirow{3}{*}{\begin{tabular}{l}\ipab{amhipsi}  \\ (\ipab{amhiptɛsi})\end{tabular} } & \multirow{3}{*}{\begin{tabular}{l}\ipab{mɛhipsigɛ} \\ (\ipab{mɛhiptɛsigɛ})\end{tabular} } & \multirow{3}{*}{\begin{tabular}{l}\ipab{amhip}\\ (\ipab{amhiptɛ})\end{tabular} } & \ipab{mɛhiptigɛ} & \multirow{3}{*}{\begin{tabular}{l}\ipab{kɛmhip} \\ (\ipab{kɛmhiptɛ})\end{tabular} }& \multirow{3}{*}{\begin{tabular}{l}\ipab{kɛmhipsi}\\ (\ipab{kɛmhiptɛsi})\end{tabular} } &\ipab{kɛmhipti} & \ipab{hipsu} & \ipab{hipsusi} \\ 
+ &&&&&&&&& \multicolumn{2}{c}{(\ipab{hiptusi})}  \\ 
+\cline{10-11}3p &&&&&&&&& \ipab{mɛhiptu} & \ipab{mɛhiptusi} \\ 
+\bottomrule
+\end{tabular}
+\captionft{\caption{Limbu \ipa{hipma} ``to hit"}}\label{tab:hipttohitt}
+\end{table}
+ 
+
+
+\begin{table}[t]
+
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l}  \toprule
+&1s & 1di & 1de & 1pi & 1pe & 2s &2d & 2p & 3s & 3d  3p   \\ 
+\midrule
+1s  & \multicolumn{5}{c}{\cellcolor{lightgray}} & \ipab{canɛ} & \ipab{canɛsiŋ} & \ipab{ca(nɛ)niŋ} & \ipab{caŋ} & \ipab{caŋsiŋ} \\ 
+\cline{7-11}1di  & \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{adzasu} & \ipab{adzasusi} \\ 
+&\multicolumn{5}{c}{\cellcolor{lightgray}}  & \multicolumn{2}{l}{\ipab{canɛsigɛ}}   && \multicolumn{2}{c}{(\ipab{adzasi})} \\ 
+1de	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{casugɛ} & \ipab{casusigɛ} \\ 
+&\multicolumn{5}{c}{\cellcolor{lightgray}}  & \multicolumn{2}{c}{}   && \multicolumn{2}{c}{(\ipab{casigɛ})} \\ 
+\cline{7-11}1pi	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{l}{\ipab{caasigɛ}} &&  \ipab{adzam} & \ipab{adzamsim} \\ 
+1pe	& \multicolumn{5}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{} && \ipab{cambɛ} & \ipab{camsimbɛ} \\ 
+\cline{10-11}2s & \ipab{kɛdzaa}  &\multicolumn{4}{c}{}&\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛdzo} & \ipab{kɛdzosi} \\ 
+& \ipab{(kɛdzɛyaŋ}) 	&\multicolumn{4}{c}{}&\multicolumn{3}{c}{\cellcolor{lightgray}}	&\\ 
+\cline{2-2} 2d &\multicolumn{5}{c}{\ipab{agɛdza}}  &\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛdzasu} & \ipab{kɛdzasusi} \\ 
+& \multicolumn{5}{c}{\ipab{(agɛdzɛyɛ})} &\multicolumn{3}{c}{\cellcolor{lightgray}} & \multicolumn{2}{c}{(\ipab{kɛdzosi})} 	\\ 
+2p &\multicolumn{5}{c}{}  &\multicolumn{3}{c}{\cellcolor{lightgray}} & \ipab{kɛdzam} & \ipab{kɛdzamsi(m)} \\ 
+\cline{2-6} \cline{10-11}3s & \ipab{caa} & \ipab{adzasi}   & \ipab{casigɛ}  & \ipab{adza} & \ipab{cɛyigɛ} & \ipab{kɛdza} & \ipab{kɛdzasi} & \ipab{kɛdzɛyi} & \ipab{co} & \ipab{cosi} \\ 
+ & (\ipab{cɛyaŋ}) & (\ipab{adzɛyɛsi})   & (\ipab{cɛyɛsigɛ})  & (\ipab{adzɛyɛ}) &   & (\ipab{kɛdzɛyɛ}) & (\ipab{kɛdzɛyɛsi}) &  & &  \\ 
+\cline{2-11} 3d & \multirow{3}{*}{\begin{tabular}{l}\ipab{mɛdzaa}  \\ (\ipab{mɛdzɛyaŋ})\end{tabular} }& \multirow{3}{*}{\begin{tabular}{l}\ipab{amdzasi}  \\ (\ipab{amdzɛyɛsi})\end{tabular} } & \multirow{3}{*}{\begin{tabular}{l}\ipab{mɛdzasigɛ} \\ (\ipab{mɛdzɛyɛsigɛ})\end{tabular} } & \multirow{3}{*}{\begin{tabular}{l}\ipab{amdza}\\ (\ipab{amdzɛyɛ})\end{tabular} } & \ipab{mɛdzɛyigɛ} & \multirow{3}{*}{\begin{tabular}{l}\ipab{kɛmdza} \\ (\ipab{kɛmdzɛyɛ})\end{tabular} }& \multirow{3}{*}{\begin{tabular}{l}\ipab{kɛmdzasi}\\ (\ipab{kɛmdzɛyɛsi})\end{tabular} } &\ipab{kɛmdzɛyi} & \ipab{casu} & \ipab{casusi} \\ 
+ &&&&&&&&& \multicolumn{2}{c}{(\ipab{cosi})}  \\ 
+\cline{10-11}3p &&&&&&&&& \ipab{mɛdzo} & \ipab{mɛdzosi} \\ 
+\bottomrule
+\end{tabular}
+\captionft{\caption{Limbu \ipa{cama}  ``to eat"}}\label{tab:catoeatt}
+\end{table}
+
+\end{landscape}
+
+The Limbu paradigm looks like a conflation of the two Bantawa paradigms: the non-past form was generalized in the first person, while the past forms were generalized in second and third person forms. Since Limbu is explainable from Bantawa but the reserve is not the case, it is tempting to assume that Bantawa better preserved the proto-Kiranti paradigm. In other words, we would assume that in proto-Kiranti, just like in Bantawa, vowel coalescence of the third person patient --u suffix with the stem of --a verbs only occurred in the past tense.
+
+\section{Vowel fusion in other Sino-Tibetan languages} \label{sec:other.lang}
+The --a/--o alternations found in Kiranti languages are in fact widespread in the Sino-Tibetan family. However, outside of Kiranti, the alternations are purely conditioned by person, never by TAM. It has been proposed (\citealt{jacques09tangutverb}) that the --ji / --jo alternation found in Tangut conjugation could also be explained by the coalescence of the ancient *--(j)a stem verb radical with the *--u third person patient suffix; the change from *--ja to --ji in Tangut is regular.
+
+\begin{tabular}{lllll}  
+&Proto-Tangut & Attested Tangut \\
+1\sg{}/2\sg{}>3 & *--ja-u & --jo \\
+other forms & *--ja & --ji \\
+\end{tabular}
+
+Incidentally, one of the verbs presenting this alternation in Tangut is the verb ``to eat''  \mo{4517} \ipa{dzji¹} / \mo{4547} \ipa{dzjo¹}, cognate with Tibetan \ipa{za} and Limbu \ipa{cama}. The vowel fusion in Tangut must have been very ancient: it occurred before the change from *--(j)a to --ji, which did not apply on any Chinese or Tibetan loanword. This would imply that this sound change predated the first historical contact of the Tangut with the Chinese in the seventh century.
+
+Traces of this phenomenon also occur in Dulong: \ipa{wɑŋ^5^5} ``I do'', \ipa{ɔ^5^3} ``he does'' (\citealt[pp. 91-92]{sunhk82dulong}). 
+
+In Pumi, some of the vowel alternations described in \citet[pp. 106-112]{fual98pumi} are potentially related to coalescence with the *--u suffix in the third person. In Northern dialects such as the Shuiluo variety studied by the author, there is an <u> infix appearing in third person perfective forms of transitive volitive verbs. 
+
+In Rgyalrong languages, we do not find vowel coalescence of --a stem verbs with the --u suffix. Some languages do not have any third person patient --u suffix (Japhug, Tshobdun, Zbu). In Eastern Rgyalrong (Situ), we find a third person --w suffix corresponding to Kiranti --u which occurs in 3>3 and 2>3 forms of transitive verbs with open syllable stems. --a stem verbs do not present vowel coalescence: for instance, the 3\sg{}>3 Aorist form of \ipa{--pa} / \ipa{--pɐ̂} ``to do'' is \ipa{to-pɐ̂-w} (\citealt[p. 264]{youjing03zhuokeji}). The absence of coalescence in Situ is the result of analogy: the person suffixes are very regular and similar to possessive prefixes and free pronouns, which would not be expected if the system was archaic. Vowel coalescence inherited from the proto-language was lost and replaced by a more transparent formation. In this respect, Rgyalrong is less archaic than Kiranti, Dulong or Tangut.
+
+Other languages may show traces of this alternation, for instance Shixing, where a --\ipapl{ɜ} / --u alternation appears in the imperative forms of some verbs, including \ipa{^H^Ldzɜ} ``to eat'' the cognate of Tibetan \racine{za} (\citealt[p. 40]{chirkova09grammar}), unless the vowel alternation in these imperative forms is related to the Tibetan imperative /o/ vocalism.
+
+The vowel coalescence observed in these languages is most probably to be interpreted as a retention from a common proto-language (arguably proto-Sino-Tibetan or very close to it), though we cannot entirely exclude  the possibility that a parallel evolution took place (cf. the parallel development of Umlaut in plural forms in Germanic and Celtic languages).
+
+\section{The past tense / perfective --s suffix} \label{sec:s.suffix}
+Assuming that the --a / --o alternation as found in Bantawa reflects the original paradigm of proto-Kiranti and of an even earlier proto-language, the Tibetan irregular verb \ipa{za} / \ipa{zos} could be explained as the last retention of person agreement in the Tibetan language. This trace of person agreement could only be preserved precisely because the --u third person patient suffix not only marks person, but also TAM: it is only in its function of distinguishing between non-past and past that it could survive after the person agreement system collapsed.
+
+However, unlike Kiranti, the Tibetan past form \ipa{zos} has an --s suffix which deserves comment. In Tibetan, the ``past tense'' --s suffix regularly occurs in some transitive and intransitive verb classes (see \citealt{coblin76}). As pointed out by one of the reviewers, this raises the question of the relative place of these suffixes in the suffixal chain and how these suffixes interacted  with one another.
+
+Although the Tibetan --s suffix has not left direct traces in Kiranti languages, potential cognates of this suffix can be found in Qiangic languages and perhaps also in Jingpo, as \citet{huangbf97s.houzhui} pointed out, and some scholars have proposed to reconstruct a *--s perfective suffix in Old Chinese (\citealt{jinlx06}). This suffix could be of proto-Sino-Tibetan antiquity. 
+
+The third patient --u and the perfective / past tense --s are both attested in only a few languages, especially in the Qiangic branch. Data from these language are therefore crucial to see how these two suffixes interact with each other. Let us  examine the cognates of the Tibetan past tense --s suffix in Japhug and Situ, two of the four Rgyalrong languages, and then in Tangut.
+
+In Japhug, the --t or --s past tense suffix (depending on the dialects) occurs in the Aorist and Past Imperfective 1\sg{}>3 or 2\sg{}>3 forms of transitive verbs whose stem ends in open syllable (\citealt[p. 136]{jacques10inverse}). Japhug has no suffix corresponding to the third person patient --u found in Kiranti languages, so this language is of little help to determining the order in which these suffixes would occur.
+
+In Situ Rgyalrong, as in Japhug, the past tense --s suffix occurs in the Aorist and Past Imperfective and only appears on verbal forms ending with an open syllable (\citealt[p. 262]{youjing03zhuokeji}). However, transitive forms normally do not bear this --s suffix, as the 3 person patient --w suffix (on this suffix, see section \ref{sec:other.lang}) and the --s suffix are always incompatible as in the example \ipa{to-pɐ̂-w} ``he made it'' cited above: --s only appears with intransitive verbs.
+
+In Tangut, as mentioned in the previous section, the *--u suffix did not remain as an independent syllable, but left an indirect trace as vowel alternation. A possible cognate to the Tibetan --s suffix is the perfective \mo{3916} \ipa{sji²} suffix, which appears as an independent syllable in Tangut, though it could also be a coincidence.
+
+In conclusion, the exact function and distribution of the \#{}--s suffix  and the nature of its interaction with \#{}--u (where \#{} represent an approximate reconstruction) is not easy to determine given the contradictory data found in Qiangic languages.  At the present stage of our knowledge, it is better to entertain several hypotheses than one.
+
+First, the simplest hypothesis would be that the third person \#{}--u was closer to the verb stem than the past tense \#{}--s. Tibetan and Tangut would have preserved the older pattern.
+
+Second, we can also suppose that, as in Situ Rgyalrong, the two suffixes excluded each other in the proto-language, so that the past tense of transitive verbs was marked by \#{}--u, and that of the intransitive ones was marked by \#{}--s; later, the --s suffix was analogically extended to the past tense of ``eat'' in Tibetan; the original past tense of \racine{za} ought to have been *zo.
+
+A third hypothesis would be that \#{}--s was placed before \#{}--u, but the vowel alternation occurred nevertheless by Umlaut. This third possibility does not seem very likely, as in this case we would expect to find traces of vowel alternations with all types of verbs, including verbs ending in closed syllables. However, examples of this type can be found in Tangut. One of such example is the verb ``to fear'', whose basic form is \mo{2539} \ipa{kjạ¹}, and 1/2\sg{}>3 form	\mo{1252} \ipa{kjɨ̣²}. This verb is related to Japhug \ipa{nɤscɤr} ``to fear, to be startled'', and the two stems can be respectively reconstructed in proto-Tangut as *S-kjar and *S-kjor from *S-kjar-u (\citealt{jacques10esquisse}). Since examples of this kind are restricted to Tangut, we consider it to be a Tangut innovation.
+
+\section{Conclusion}
+Apart from \racine{za}, other --a stem transitive verbs exist in Tibetan, for instance \racine{bya} ``to do''. Under the theory presented in this paper, these verbs ought to have vowel alternation too. However, it can be safely assumed that analogy has eliminated all other --o past tense forms.  It is not uncommon for a verb meaning ``to eat'' to be among the most conservative verbs in the language. 
+
+If the hypothesis proposed in this paper is valid, this would be an important support for the theory that verbal agreement goes back to an early stage of proto-ST.
+
+%\textcolor{white}{\cite{rien}}
+\renewcommand{\bibname}{\textsc{References}}
+\makeatletter
+\renewcommand\bibsection%
+{
+  \subsection*{\refname
+    \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}}
+}
+\makeatother
+\vspace{24pt}
+\setlength{\bibhang}{18pt}
+\setlength{\bibsep}{2pt}
+\bibliographystyle{him}
+\bibliography{bibliogj}
+\end{document}

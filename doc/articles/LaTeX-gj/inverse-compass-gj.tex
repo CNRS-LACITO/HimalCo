@@ -1,0 +1,537 @@
+\documentclass[twoside,a4paper,11pt]{article} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{polyglossia}
+%\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+ \usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+ \newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+ 
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\acc}{\textsc{acc}}
+\newcommand{\adess}{\textsc{adess}}
+\newcommand{\agent}{\textsc{a}}
+\newcommand{\antierg}{\textsc{antierg}}
+\newcommand{\allat}{\textsc{all}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\assert}{\textsc{assert}}
+\newcommand{\assoc}{\textsc{assoc}}
+\newcommand{\auto}{\textsc{auto}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\cis}{\textsc{cis}}
+\newcommand{\classif}{\textsc{class}}
+\newcommand{\concessif}{\textsc{concsf}}
+\newcommand{\comit}{\textsc{comit}}
+\newcommand{\conj}{\textsc{conj}}
+\newcommand{\const}{\textsc{const}}
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\cop}{\textsc{cop}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\detm}{\textsc{det}}
+\newcommand{\dir}{\textsc{dir1}}
+\newcommand{\du}{\textsc{du}}
+\newcommand{\duposs}{\textsc{du.poss}}
+\newcommand{\dur}{\textsc{dur}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\hypot}{\textsc{hyp}}
+\newcommand{\ideo}{\textsc{ideo}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\infin}{\textsc{inf}}
+\newcommand{\ipf}{\textsc{ipfv}}
+\newcommand{\instr}{\textsc{instr}}
+\newcommand{\intens}{\textsc{intens}}
+\newcommand{\intrg}{\textsc{intrg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\irreel}{\textsc{irr}}
+\newcommand{\loc}{\textsc{loc}}
+\newcommand{\med}{\textsc{med}}
+\newcommand{\negat}{\textsc{neg}}
+\newcommand{\neu}{\textsc{neu}}
+\newcommand{\nmlz}{\textsc{nmlz}}
+\newcommand{\nom}{\textsc{nom}}
+\newcommand{\nonps}{\textsc{n.pst}}
+\newcommand{\obj}{\textsc{o}}
+\newcommand{\obv}{\textsc{obv}}
+\newcommand{\opt}{\textsc{dir2}}
+\newcommand{\perf}{\textsc{pfv}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\pot}{\textsc{pot}}
+\newcommand{\prohib}{\textsc{prohib}}
+\newcommand{ \prox}{\textsc{prox}}
+\newcommand{\prs}{\textsc{prs}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\recip}{\textsc{recip}}
+\newcommand{\redp}{\textsc{redp}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\sgposs}{\textsc{sg.poss}}
+\newcommand{\stat}{\textsc{stat}}
+\newcommand{\subj}{\textsc{s}}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\volit}{\textsc{vol}}
+
+\let\eachwordone=\textbf
+
+\begin{document}
+
+
+
+\title{Direct-inverse systems} 
+
+\author{Guillaume JACQUES, Anton ANTONOV\\ CNRS-INALCO-EHESS, CRLAO}
+
+\maketitle
+ \section{Introduction}
+ 
+ The  term ``inverse" has been used in the typological literature to designate a considerable variety of phenomena, and has been analysed from several distinct frameworks.  The aim of this article is to provide an overview of direct-inverse systems, using the most recent data and presenting the topic in both typological and historical perspective. It  is divided into four sections.
+ 
+  First, we restrict our attention to \textit{prototypical} direct-inverse systems, i.e. those which all authors would agree to consider as inverse systems, and we attempt to present the data in a perspective as free as possible from framework-specific assumptions.
+ 
+ Second, we present referential hierarchies, which are generally used to describe and interpret direct-inverse systems, and discuss the concept of \textit{hierarchical alignment}. 
+ 
+ Third, we evaluate to what extend direct-inverse systems  are correlated with other typological features. 
+ 
+ Fourth, we apply a panchronic perspective on direct-inverse systems, studying their attested origin and their evolution, and how the diachronic pathways can help understanding the present data.
+
+\section{Basic definition} \label{sec:definition}
+
+Before defining prototypical direct-inverse, we need to introduce some of the usual terminology used by typologists  to describe the systems indexing two arguments.\footnote{Indexation system involving three arguments exist, but are rarer and will no be considered in this section.} It is customary to represent these systems using tables such as  (\ref{tab:domain}), where rows indicate agent and columns patients, and where intransitive forms can also be included to facilitate comparison. The 1>1 and 2>2 forms are filled in grey, as these are generally reflexive in most languages and conjugated as intransitives verbs (the same applies, in languages with clusivity, to the combination of first inclusive and second person). 
+
+The first and second persons are called \textsc{speech act participants} (SAP).  
+
+
+\begin{table}[H] 
+\caption{The three domains of the transitive paradigm} 
+ \centering \label{tab:domain}
+\begin{tabular}{l|lllll} 
+\toprule
+&1 & 2 &3\\
+\hline
+1 &\grise{} &1>2\cellcolor[wave]{465} & 1>3 \cellcolor[wave]{520} \\
+2&2>1\cellcolor[wave]{465}&\grise{}&2>3 \cellcolor[wave]{520} \\
+3&3>1 \cellcolor[wave]{520}&3>2 \cellcolor[wave]{520}&3>3\cellcolor[wave]{650}\\
+\hline
+\textsc{intr}&1&2&3\\
+\bottomrule
+\end{tabular}
+\end{table}
+ This table does not represent number, clusivity and obviation, but more complex paradigms including these features are studied below.
+ 
+As will become clear in the course of this article, it is convenient to separate the transitive paradigm into three \textsc{domains}, represented in table  (\ref{tab:domain}) by different colours (\citealt[revérifier]{zuniga06}). Fist, the \textit{local} domain comprises the forms 1>2 and 2>1, where both arguments are SAPs. Second, the \textsc{non-local} domain refers to the cases where both arguments are third person. Third, the \textsc{mixed} domain includes all the forms with a SAP argument and a third person (1>3, 2>3, 3>1, 3>2). 
+
+\subsection{Prototypical inverse system} \label{sec:prototyp}
+
+Prototypical direct-inverse can be defined  as a type of transitive person marking system  presenting three essential characteristics. First, in a such system at least some person-number markers are neutral with regard to syntactic roles (S, A and O). Second, the ambiguity which this entails (especially in mixed scenarios) is resolved by way of obligatory (and mutually exclusive) markers, called \textit{direct} (in the case of SAP>3) and \textit{inverse} (in the case of 3>SAP), respectively. Third, direct / inverse marking on the verb or as a sentential clitic, unlike passive derivation, has no influence on transitivity (the verb does not become intransitive when an inverse marker is added), or on the syntactic properties of the arguments (case marking and pivot accessibility).
+
+Table \ref{tab:inverse-proto1} represent a minimal direct-inverse paradigm with the contrast limited to the mixed domain, with direct forms  indicated in purple and inverse ones in cyan.
+
+
+\begin{table}[h]  \caption{Minimal direct-inverse system} \label{tab:inverse-proto1}
+\centering \label{tab:inv-proto}
+\begin{tabular}{l|lllll}
+\toprule
+&1 & 2 &3\\
+\hline
+1 &\grise{} &1>2 & 1>3\cellcolor[wave]{400} \\
+2&2>1&\grise{}&2>3 \cellcolor[wave]{400}\\
+3&3>1\cellcolor[wave]{500}&3>2\cellcolor[wave]{500}&3>3\\
+\hline
+\textsc{intr}&1&2&3\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ The status of the local and non-local domains varies considerably across languages, but in most languages with prototypical inverse systems inverse and/or direct markers can also be found in these domains.
+
+In the local domain, all possibilities appear to be attested:  1>2 and 2>1 are either marked with special forms unrelated to the direct and inverse (as in Algonquian), 2>1 receives the inverse marker (as in Situ Rgyalrong), both 2>1 and 1>2 receive the inverse marker (as in Mapuche or in Kiranti) or either one can receive direct or inverse markers depending on context (Movima).
+
+In the non-local domain, some language with a direct-inverse system present a contrast between \textit{proximate} and \textit{obviative} referents, conventionally noted as 3 and 3' (see \ref{subsec:obv} for more details). In such cases, the inverse marker appears in the 3'>3 and the direct marker in the 3>3'; the same marking is shared between the mixed and non-local domains.
+
+
+Some languages  present the same direct-inverse markers in all three domains (for instance, Rgyalrong, Movima or Mapudungu). Table \ref{tab:inverse-proto2} illustrate an idealized prototypical  system with a perfectly symmetrical distribution of direct and inverse forms, along an axis running from the upper left side to the bottom right side of the table.
+
+\begin{table}[h]  \caption{Idealized proto-typical inverse} \label{tab:inverse-proto2}
+\centering \label{tab:inv-proto2}
+\begin{tabular}{l|lllll}
+\toprule
+&1 & 2 &3&3'\\
+\hline
+1 &\grise{} &1>2 \cellcolor[wave]{400}& 1>3\cellcolor[wave]{400}&\cellcolor[wave]{400} \\
+2&2>1\cellcolor[wave]{500}&\grise{}&2>3 \cellcolor[wave]{400}&\cellcolor[wave]{400}\\
+3&3>1\cellcolor[wave]{500}&3>2\cellcolor[wave]{500}&\grise{}&3>3'\cellcolor[wave]{400}\\
+3'&\cellcolor[wave]{500}&\cellcolor[wave]{500}&3'>3\cellcolor[wave]{500}&\grise{}\\
+\hline
+\textsc{intr}&1&2&3\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No language exactly attests the pattern in table \ref{tab:inverse-proto2}, but Rgyalrong languages are among the closest to it.\footnote{Direct-inverse systems are often illustrated with data from Algonquian, but these languages lack the direct and inverse morphemes in the local domain, and are thus less ``prototypical" in this regard than Rgyalrong languages.} 
+
+
+The direct-inverse systems of Rgyalrong languages have been described in several studies (\citealt{delancey81direction} on Situ,  \citealt{jackson02rentongdengdi} on Tshobdun,  \citealt{jacques10inverse} on Japhug and \citealt{gongxun12} on Zbu). These languages index not only the person but also the number of the two arguments in the verbal morphology, and the resulting paradigm is more complex than the ideal pattern shown in table \ref{tab:inverse-proto2}.
+
+
+Table \ref{tab:zbu.tr} presents the non-past paradigm of a dialect of Zbu Rgyalrong. The symbols \ra{} and \rc{} represent the stem forms (1 and 3 respectively). There is no direct marker in this language, but stem 3 occurs in a subgroup of direct forms (\textsc{[123]\textsc{sg}>3(')}).%\footnote{However, some direct forms do have specific marking, such as the stem 3 forms restricted to \textsc{[123]\textsc{sg}>3(')}.} only inverse forms are marked in colour. 
+
+\begin{table}[h]
+\caption{Zbu Rgyalrong transitive paradigm (data adapted from \citealt{gongxun12})}\label{tab:zbu.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} &\cellcolor[wave]{410} 	\ipa{\rc{}-ŋ}   & 	\cellcolor[wave]{410} \ipa{\rc{}-ŋ-ndʑə} & 	\cellcolor[wave]{410} \ipa{\rc{}-ŋ-ɲə} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{tɐ-\ra{}} & 	\ipa{tɐ-\ra{}-ndʑə} & 	\ipa{tɐ-\ra{}-ɲə} & 	\multicolumn{3}{c|}{ \ipa{\ra{}-tɕə}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\ra{}-jə}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\cellcolor[wave]{410}\ipa{tə-\rc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ŋ-ndʑə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-tɕə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-jə} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ndʑə}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} &\cellcolor[wave]{500} 	\ipa{tə-wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ɲə}} & 	\grise{} \\	
+\hline
+\textsc{3sg} & \cellcolor[wave]{500} 	\ipa{wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\cellcolor[wave]{410}\ipa{\rc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ndʑə} & 	\cellcolor[wave]{500} \ipa{wə-\ra{}-tɕə} & \cellcolor[wave]{500}		\ipa{wə-\ra{}-jə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}} &\cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ndʑə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ɲə} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ndʑə} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ɲə} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &\cellcolor[wave]{500}	\ipa{wə-\ra{}} & 	\cellcolor[wave]{500}\ipa{wə-\ra{}-ndʑə} & \cellcolor[wave]{500}	\ipa{wə-\ra{}-ɲə} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\ra{}-ŋ}&\ipa{\ra{}-tɕə}&\ipa{\ra{}-jə}&\ipa{tə-\ra{}}&\ipa{tə-\ra{}-ndʑə}&\ipa{tə-\ra{}-ɲə}&\ipa{\ra{}}&\ipa{\ra{}-ndʑə} &\ipa{\ra{}-ɲə}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+In this paradigm, leaving aside local forms and stem alternations (\ra{} vs \rc{}), there is perfect symmetry between direct and inverse forms, which are distinguished only by the presence of the inverse prefix \ipa{wə--}. Mixed and non-local direct forms are identical to the corresponding intransitive forms except for the stem alternations. Only 1>2 forms are distinct from all the rest, with a synchronically opaque portmanteau \ipa{tɐ--} 1>2 prefix (were the system perfectly symmetrical, 1>2 forms such as *\ipa{tə-\ra{}-ŋ} would be expected).
+
+It is clear that the prefix \ipa{wə--} cannot be analyzed as a passive marker for several reasons. 
+
+First, it is obvious that the verb still remains transitive even in inverse forms, since especially in [23]>\textsc{1sg} the number markers \ipa{--ndʑə} (dual) or \ipa{-ɲə} (plural) are suffixed to the first person \ipa{--ŋ} and since in all 2>1 forms both the second person \ipa{tə}-- prefix and the first person \ipa{--ŋ}, \ipa{--tɕə} or \ipa{--jə} suffixes are present. Given the fact that both the agent and the patient are indicated, one can deduce that the inverse \ipa{wə--} has no intransitivizing effect.
+
+Second, the addition of the inverse prefix has no effect on case marking: third person agents still receive ergative case, as illustrated by example \ref{ex:erg.zbu} from  \citet{gongxun12}.
+
+\begin{exe}
+\ex \label{ex:erg.zbu}
+\gll \ipa{tʂɐɕî}  	\ipa{skutséʔ}  \ipa{kə}  \ipa{tə-wə-xsə̂v}  \ipa{ki}   \\
+Bkrashis stone \textsc{erg} \textsc{aor-inv}-hit \textsc{non.visual} \\
+\glt `A stone hit bKrashis.’ (The stone falls from the mountain, for example)
+\end{exe}
+
+Third, the inverse prefix \ipa{wə--} is not a derivation:  the semantics of inverse forms are always predictable from that of the base forms, unlike  derivation prefixes in Rgyalrong languages (including passive, anticausative, antipassive etc, see \citealt{jacques12demotion}) which present many irregularities.
+
+
+Few direct-inverse systems are as symmetrical as the one attested in Zbu Rgyalrong, and these systems present tremendous diversity across languages. Partially opaque inverse systems will be studied in more detail in \ref{sec:opaque}.
+
+\subsection{Proximate / obviative} \label{subsec:obv}
+When the direct-inverse contrast is present in the non-local domain, at least two types of third person referents need to be distinguished, and these are generally designated as \textit{proximate} (3) and \textit{obviative} (3') following the Algonquianist terminology.
+
+In most languages with direct-inverse systems, the presence or direct or inverse markers on the verb is the only clue to the proximate or obviative status of a particular argument. There is no proximate or obviative marking on the nouns or on intransitive verbs. The use of inverse or direct forms is guided by semantics (relative animacity of the agent and patient) and pragmatics (the relative topicality of the two referents).
+
+In Rgyalrong languages for instance, the presence or absence of the inverse prefix in 3>3 forms (in other words, the 3'>3 vs 3>3' contrast) can be predicted by the following rules (\citealt{jackson02rentongdengdi}, \citealt{jacques10inverse}):
+
+\begin{itemize}
+\item When the agent is animate and the patient inanimate, the inverse is forbidden.
+\item When the agent is inanimate and the patient animate, the inverse is required.
+\end{itemize}
+There is a strong, though not absolute, tendency for the inverse to appear when the agent is non-human animate and the agent human. When both arguments are human, there is no absolute constraint forbidding or requiring the use of the inverse. 3'>3 forms with inverse are relatively rare in comparison with 3>3', and appear when the patient is markedly more topical than the agent.
+
+
+ %the exact use of the inverse in those situations will be dealt with in more detail below.
+
+
+Algonquian languages differ from Rgyalrong and all other languages with direct-inverse (apart from Kutenai) in that the proximate-obviative distinction is those languages is largely independent of direct-inverse. 
+
+In Algonquian languages, all nouns are marked for proximate and obviative and all animate third person referent have a clear status as proximate or obviative in a given sentence. No such distinction is found with inanimate nouns and SAP. In most languages the singular / plural distinction is neutralized in obviative forms (except in Fox and Miami-Illinois). In a single sentence, at most one argument can be proximate, but it is also possible to find sentence with only obviative arguments. 
+
+Table \ref{tab:cree.tr} illustrates an example of a transitive animative paradigm (the verb \ipa{sêkih--} ``frighten") and intransitive animate one with  \ipa{pimipahtâ--} ``run". The direct markers are --\ipa{â}-- or --\ipa{ê}-- and the inverse marker is --\ipa{ikw}.
+ 
+
+
+\begin{table}[h]
+\caption{Example of Cree paradigms (singular forms), with the transitive animate \ipa{sêkih--} ``frighten" and the intransitive animate  \ipa{pimipahtâ--} ``run"}\label{tab:cree.tr} \centering
+\begin{tabular}{l|l|l|l|l}
+\toprule
+   & 	1   & 	2   & 	3   (proximate) & 	3'  (obviative) \\ 
+\midrule
+1   & 	\grise{}   & 	ki-sêkih-in   & 	\cellcolor[wave]{410}ni-sêkih-âw   & \cellcolor[wave]{410}	ni-sêkih-âw-a   \\ 
+\hline
+2   & 	ki-sêkih-itin   & 		\grise{}   & 	\cellcolor[wave]{410}ki-sêkih-âw   &\cellcolor[wave]{410} 	ki-sêkih-âw-a   \\ 
+   \hline
+3   & 	\cellcolor[wave]{500}ni-sêkih-ikw   & \cellcolor[wave]{500}	ki-sêkih-ikw   & 		\grise{}   & \cellcolor[wave]{410}	sêkih-êw   \\ 
+   \hline
+3'   & 	\cellcolor[wave]{500}ni-sêkih-ikoyiwa   & 	\cellcolor[wave]{410}\cellcolor[wave]{500}ki-sêkih-ikoyiwa   &\cellcolor[wave]{500} 	sêkih-ikw   & 	sêkih-êyiwa   \\ 
+\hline
+\textsc{intr} & ni-pimipahtâ-n&ki-pimipahtâ-n& pimipahtâ-w&pimipahtâ-yiwa \\
+\bottomrule
+\end{tabular}
+\end{table}
+%pimipahtâ- ``run"
+%sêkih- ``frighten"
+The proximate / obviative distinction is marked on intransitive verbs: the proximative is \ipa{pimipahtâ-w} ``he runs" and the obviative \ipa{pimipahtâ-yiwa} ``he runs". 
+
+On transitive verbs, the proximate / obviative appears in the mixed  domain: the are different forms for SAP <> proximate and SAP <> obviative. In the non-local domain, three configurations are observed: 3>3', 3'>3 as in Rgyalrong with direct and inverse marking but also 3'>3' \textit{obviative > further obviative} (the form \ipa{sêkih-êyiwa} ``he frightens him"). This last form is possible because, as mentioned above, while a given sentence has at most one proximate argument, there is not limit on the number of obviative arguments. Thus, a configuration with two obviative arguments does not imply reflexivization.
+
+The morphosyntactic function of the proximate / obviative distinctions presents some differences with that observed in Rgyalrong. First, it does not influence the   animacy of the arguments, since inanimate arguments receive an altogether different marking on both noun phrases and verb morphology. Second, the distinction between 3>3' and 3'>3 forms, which is the only clue of the proximate / obviative distinction in Rgyalrong, is only a minor effect in Algonquian, as the proximate / obviative distinction is redundantly marked on nouns, intransitive verbs and also transitive non-local forms.
+
+Another important difference between the proximate / obviative contrast in Rgyalrong and Algonquian is the relation between possessor and possessee. In Algonquian languages, the possessee of a SAP possessor can be either proximate or obviative, but the possessee of a third person proximate referent must be obviative. Thus, in example \ref{ex:cree-poss}, when the possessee  is agent and the possessor is patient, the inverse suffix \ipa{--ik} is absolutely required, since the former is automatically obviative.
+
+
+
+\begin{exe}
+\ex \label{ex:cree-poss}
+\gll Cân o-têm-a kî-mâkwam-ik \\
+John \textsc{3sg.poss}-dog-\textsc{obv} \textsc{pst}-bite-\textsc{inv} \\
+\glt John$_{i, proximate}$'s dog$_{obviative}$ bit him$_{i,proximate}$ (\citealt[25]{wolfart73}, cited in \citealt[712]{aissen97obviation})
+\end{exe}
+
+
+
+Although a similar constraint have been described in other language families families such as Mayan (see \citealt{aissen97obviation}), no such phenomenon is attested in other languages with direct-inverse in non-local forms, as in Rgyalrong languages for instance (see \citealt[141-2]{jacques10inverse}) and is thus not a universal property of proximative-obviative marking.
+
+This comparison of Rgyalrong and Algonquian shows that while the proximate / obviative distinction may appear to be a subset of the direct-inverse in non-local forms, the two phenomena are actually quite distinct in principle and only intersect in the 3>3' and 3'>3 configurations. Nearly all languages whose direct-inverse system includes the non-local domain work like Rgyalrong languages; the only exceptions are Algonquian and Kutenai, but even the latter has a much simpler system than Algonquian. This also confirms the fact that the Algonquian direct-inverse system, while it is undeniably the first to have been properly described, is by no means a typical system.
+
+
+
+
+\section{Referential hierarchies} \label{sec:hierarchies}
+%In the previous section, we have provided a basic account of direct-inverse and proximate-obviative distinctions without mentioning the concept of \textit{referential hierarchies}.
+
+
+Since \citet[644]{delancey81ergativity},  direct-inverse systems are often described in terms of the Empathy hierarchy (\ref{ex:empathy}):\footnote{For an overview of prominence hierarchies, see \citet{lockwood12hierarchies}. These hierarchies have been invoked to account for a variety of phenomena apart from the distribution of direct and inverse markers, in particular splits in case patterns (see \citealt{silverstein76}) and slot accessibility. However, it is not always possible to account for all phenomena within a given language by positing one single hierarchy, as \citealt{zuniga06} has shown. In Cree for instance, no less than four distinct hierarchies are needed to explain direct-inverse marking and the allocation of person markers in the correct slot.}
+
+\begin{exe}
+\ex \label{ex:empathy}
+\glt SAP > third person pronoun > human > animate > natural forces > inanimate
+\end{exe}
+
+
+
+The distribution of direct and inverse markers  can then be  captured by the following rule: 
+\begin{exe}
+\ex \label{ex:direct-inverse-rule}
+\glt  If the patient is higher than the agent, the verb receives inverse marking; conversely, if the agent is higher on the hierarchy than the patient (or if both are equal), the verb receives direct marking.
+\end{exe}
+In DeLancey's view, the Empathy Hierarchy in (\ref{ex:empathy}) is motivated by several factors. First, the ranking SAP > 3 is due to ``inherent natural attention flow", whereby discourse participants (first or second person) are the ``natural starting point" of most utterances. Second, the ranking within the third persons is explained by the concept of \textit{empathy}, hence the name of the proposed hierarchy: ``speakers, being animate and humans, are more likely to `empathize with' (i.e. take the viewpoint of) human beings than animals, and of animals than inanimates."
+
+XXXXXXXXXXXXX ajouter Klaiman+Aikhenvald
+
+The hierarchy in \ref{ex:empathy}  is  a general model which has to be adapted to each language to correctly predict the attested forms, and even some variation can be observed between closely related languages.
+
+
+For instance, to account for the Zbu Rgyalrong data presented above, the following hierarchy has to be posited:
+
+\begin{exe}
+\ex \label{ex:empathy.zbu}
+\glt 1 >2> animate proximate > animate obviative > inanimate > generic human
+\end{exe}
+Applying rule \ref{ex:direct-inverse-rule} to hierarchy \ref{ex:empathy.zbu} predicts the occurrence of the inverse in 2>1, 3>SAP and 3'>3 forms, and its absence in 1>2, SAP>3 and 3>3'. Here proximate/obviative (or topical/non-topical) is more relevant than human / non-human as listed in the original formulation of the hierarchy (\ref{ex:empathy}).
+
+Describing Japhug Rgyalrong data in this framework would require a different hierarchy: (\citealt{jacques12demotion})
+
+\begin{exe}
+\ex \label{ex:empathy.japhug}
+\glt SAP> animate proximate > animate obviative > inanimate > generic human
+\end{exe}
+
+In Japhug, there is not inverse in 2>1 forms, and the inverse is use with generic human agent (disregarding the animacy of the patient).
+
+In Cree, the hierarchy would be the following:\footnote{It is generally considered that the second person outranks the first person (2>1) in Algonquian languages, but this refer to a distinct hierarchy related to the slot accessibility of person prefixes, not the distribution of direct and inverse forms. Concerning obviative inanimates, see a recent study by \citet{muehlbauer12obviation}.}
+\begin{exe}
+\ex \label{ex:empathy.cree}
+\glt SAP > animate proximate > animate obviative > (inanimate)
+\end{exe}
+
+A detailed investigation of hierarchies in direct-inverse systems is beyond the scope of this paper (see \citealt{zuniga06} for more detail). While some variation in the exact structure of the hierarchy is observed across languages, the two rankings SAP > 3 and animate > inanimate appear to be relatively robust, and can even be considered definitory of direct-inverse systems within a theoretical framework using referential hierarchies.
+
+%\citet{silverstein76}
+
+\subsection{Hierarchical alignment}
+Direct-Inverse systems are considered by some authors as a special case of hierarchical alignment,   type distinct from accusative, ergative, active, tripartite alignment. Following  \citet[10]{siewierska98person}, it is defined as an alignment type where ``the treatment of the A and O is dependent on their relative ranking on the referential and/or ontological hierarchies".
+
+
+
+
+%Siewierska, Anna. 1996. Word order type and alignment. Sprachtypologie
+%und Universalienforschung 49:149–176.
+%Siewierska, Anna. 1998. On nominal and verbal person marking. Linguistic
+%Typology 2:1–56.	 
+
+%
+%In classifying the alignment of the verbal person markers I have used the following typology: accusative, ergative, active, tripartite and hierarchical
+%, in hierarchical alignment the treatment of the A and O is dependent on their relative ranking on the referential and/or ontological hierarchies. 
+ 
+
+
+%Access to inflectional slots for subject and/or object is based
+%on person, number, and/or animacy rather than (or no less than)
+%on syntactic relations. The clearest example of the hierarchical
+%type in my sample is Cree. The verb agrees in person and number
+%with subject and object, but the person-number affixes do not
+%distinguish subject and object; that is done only by what is known
+%as direct vs. inverse marking in the verb. There is a hierarchical
+%ranking of person categories: second person > first person >
+%third person. (Nichols 1992: 66)
+
+%[I]n hierarchical alignment the treatment of the A and P is dependent
+%on their relative ranking on the referential and/or ontological
+%hierarchies. Whichever is the higher ranking receives
+%special treatment, the details of which vary from language to language.
+%(Siewierska 1998: 10
+
+%Zúñiga, Fernando. 2007. From the typology of inversion to the typology
+%of alignment. In New Challenges in Typology, ed. Matti Miestamo and
+%Bernhard Wälchli, 199–220. Berlin: Mouton de Gruyter.
+%
+%In a simple sense, labels such as “accusative” and “ergative”
+%tell us what sort of marking or behavior system we might expect
+%in a particular realm of a given language, and so does “hierarchical”.
+%Nevertheless, the accusative, ergative and tripartite types
+%— when understood as basic — habitually imply an additional condition
+%imposed on how the system works, viz. the absence of conditioning
+%factors like a semantic, pragmatic and/or grammatical
+%ranking of arguments. (Zúñiga 2007: 213)
+%
+%In a similar vein, Bickel and Nichols (2008a) consider hierarchical alignment
+%not a discrete alignment type but ‘a secondary, referentiality-based and often
+%discourse-related,elaboration of a basic alignment 
+%Bickel, Balthasar, and Johanna Nichols. 2008a. Case-marking and alignment.
+%In The Oxford Handbook of Case, ed. Andrej Malchukov and Andrew
+%Spencer, 304–321. Oxford: Oxford University Press
+
+
+of which direct-inverse systems are but a particular case.
+
+%{Hierarchical systems without direct-inverse marking}
+Dargwa \citet{sumbatova03}
+
+not Tangut  \citet{jacques09tangutverb}
+\subsection{Partially opaque hierarchical systems} \label{sec:opaque}
+eg Khaling \citet{jacques12khaling}
+Dumi, Rawang
+
+Not all hierarchical systems can be accounted for by a synchronically transparent rule
+\subsection{Direction limited to either mixed or non-local domain}
+
+eg Cavinena (mixed), Athabaskan (non-local) cf. proximate / obviative
+
+
+\section{Typological perspectives}
+
+Extentions of the concept of inverse
+\subsection{Typological features correlated to direct-inverse?}
+Polysynthetic (Rgy-Alg) vs. isolating (Movima)
+
+\subsection{Typological perspectives} \label{sec:typology}
+3 views.
+
+
+Distinguish hierarchy effects of slot-accessibility and presence of affix \citet{zuniga06}
+
+\citet{silverstein76}
+
+Algonquian
+
+Rgyalrong \citet{jacques10inverse}
+
+Movima
+At least mixed and non-local, sometimes also in local
+\citet{creissels08alignment}
+
+
+Strong verb/noun distinction vs. omnipredicative (Movima)
+
+Head marking vs dependent marking
+
+Locus of direct-inverse marking: verb (Algonquian, Rgy), clitic occuring next to the predicate (Movima)
+
+\textbf{Insert Tables including the main languages.}
+
+\subsubsection{Sino-Tibetan (Rgyalrong, Rawang, Kiranti, N. Naga)}
+
+\subsection{Universal on the hierarchy}
+No universal 2>1 and 1>2
+
+generic / specific (cf \citet{jacques12demotion})
+
+even 3>SAP observed,  for slot accessibility in Cree \citet{zuniga06}
+
+\subsection{Direct-inverse marking}
+Some languages have only direct marking (Tangut  \citet{jacques09tangutverb}) without inverse marking.
+
+> Almost no valid universal hierarchy
+
+\section{Diachronic perspective}
+\subsection{Origins of inverse marking}
+\subsubsection{Third person}
+\subsubsection{Cislocative}
+\begin{table}[h]
+\caption{From cislocative to inverse}
+\centering
+{\footnotesize\begin{tabular}{cccccc}  
+
+\toprule
+ &  \textbf{Source} & \textbf{Associated motion} & \textbf{Direction} & \textbf{Aspect} & \textbf{Grammatical relation}\\ \toprule
+% & & \textit{here} & & & &\\
+% & & \textit{hand} & & & &\\
+\textbf{Japanese} & motion verb & yes & \textsc{cislocative} & \textsc{ventive}  & \textsc{3>1}\\ 
+&  &  & & \textsc{inceptive}  & \\\midrule
+ \textbf{Kabardian} & locational noun & yes? & \textsc{cislocative} & \textsc{inceptive} &  \textsc{3>1}\\ \midrule
+ \textbf{Shasta} &  &  & &  &  \\\midrule
+ \textbf{Mohawk} &  &  & &  & \\\midrule
+\textbf{Nez Percé} &  motion verb & &   &  & \\
+
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\subsubsection{Passive}
+\subsection{Outcomes}
+\subsubsection{Third person marker}
+Lavrung, Rtau
+\subsubsection{Opaque form}
+Khaling
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
