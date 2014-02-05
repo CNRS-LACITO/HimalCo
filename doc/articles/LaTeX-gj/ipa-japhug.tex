@@ -1,5 +1,3 @@
-%aʑo me, nɤʑo me.
-
 \documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
@@ -53,6 +51,9 @@ The description is based on the author’s fieldwork, and the word list and the 
 
  
  \section{Consonants}
+ In Japhug, syllables follow the template (C)(C)(C)V(C) with initial clusters containing at most three consonants, and at most one coda.
+ 
+ \subsection{Simplet onsets}
  The consonant inventory of Japhug comprises 49 phonemes as listed in Table \ref{tab:consonants}. There is a general four-way contrast in stops and affricates between unvoiced unaspirated, unvoiced aspirated, voiced and prenasalized.
  
 Since monosyllabic words are few,  most examples involve disyllabic words, whose first syllable illustrates the consonant in question followed by the vowel \ipa{ɯ}, the most common one. For some examples involving possessed nouns (on this topic see \citealt[6]{jacques14antipassive}), a possessive prefix must always be present, and we always give here the third person singular prefix  \ipa{ɯ--}.
@@ -84,52 +85,75 @@ Lateral &sonorant &&l\\
 \end{table}
 
  \begin{table}
- \caption{Illustrations of the consonant phonemes} \label{tab:consonants2}
+ \caption{Examples of the consonant phonemes} \label{tab:consonants2}
+  \resizebox{\columnwidth}{!}{
  \begin{tabular}{lll|lll}
 \toprule
-p & \ipa{ɯ-\textbf{pɯ}}& `its young'& &&\\
-pʰ & \ipa{ɯ-\textbf{pʰɯ}}& `its price'& &&\\
-b & \ipa{ba\textbf{bɯ}}& `blackcurrant'& &&\\
-mb & \ipa{\textbf{mbɯt}}& `collapse' & &&\\
-m &  \ipa{\textbf{mɯ}ɴɢɯ} & `Ligularia fischeria'& &&\\
-w &  \ipa{\textbf{wɯ}wɯ} & `Boletus sp.'& &&\\
-t &  \ipa{\textbf{tɯ}boʁ} & `one group'& &&\\
-tʰ &  \ipa{\textbf{tʰɯ}ɣi} & `\textsc{imp:downstream}:come'& &&\\
-d &  \ipa{\textbf{dɯ}dɯt} & `turtledove'& &&\\
-nd &  \ipa{\textbf{ndɯ}} & `appear (rainbow)'& &&\\
-ts &  \ipa{\textbf{tsɯ}tho}  & `goat kid'& &&\\
-tsʰ &  \ipa{ɯ-\textbf{tsʰɯ}ɣa}  & `appearance'& &&\\
-dz &  \ipa{\textbf{dzɯr}dzɯr}  & `straight'& &&\\
-ndz  &  \ipa{\textbf{ndzɯ}pe}  & `way of sitting'& &&\\
-n  &  \ipa{\textbf{nɯ}ŋa}  & `cow'& &&\\
-s  &  \ipa{\textbf{sɯ}mat}  & `fruit'& &&\\
-z  &  \ipa{\textbf{zɯ}mi}  & `almost'& &&\\
-l  &  \ipa{\textbf{lɯ}lu}  & `cat'& &&\\
-ɬ  &  \ipa{\textbf{ɬɯɣ}nɤɬɯɣ}  & `breathing mouvement'& &&\\
-tʂ  &  \ipa{\textbf{tʂɯ}tʂu}  & `on the road'& &&\\
-tʂʰ  &  \ipa{\textbf{tʂʰɯɣ}}  & `maybe'& &&\\
-dʐ  &\ipa{\textbf{dʐɯɣ}dʐɯɣ}  & `strong (of tea)'& &&\\
-ndʐ&\ipa{\textbf{ndʐɯ}nbu}  & `guest'& &&\\
-ʂ&\ipa{\textbf{ʂɯŋ}ʂɯŋ}  & `clear'& &&\\
-r&\ipa{\textbf{rɯ}}  & `temporary place (nomads)'& &&\\
-
+p  & 	 \ipa{ɯ-\textbf{pɯ}} & 	 `its young' & 	tɕ & 	\ipa{ɯ-\textbf{tɕɯ}}   & 	 `his boy' \\ 
+pʰ  & 	 \ipa{ɯ-\textbf{pʰɯ}} & 	 `its price' & 	tɕʰ & 	\ipa{\textbf{tɕhɯ}wur}   & 	 `blister' \\ 
+b  & 	 \ipa{ba\textbf{bɯ}} & 	 `blackcurrant' & 	dʑ & 	\ipa{\textbf{dʑɯβ}dʑɯβ}   & 	 `rough' \\ 
+mb  & 	 \ipa{\textbf{mbɯt}} & 	 `collapse'  & 	ndʑ & 	\ipa{\textbf{ndʑɯ}nɯ}   & 	 `Angelica sp.' \\ 
+m  & 	  \ipa{tɯ\textbf{mɯ}}  & 	 `sky' & 	ɕ & 	\ipa{\textbf{ɕɯ}ŋgɯ}   & 	 `before' \\ 
+w  & 	  \ipa{\textbf{wɯ}wɯ}  & 	 `Boletus sp.' & 	ʑ & 	\ipa{\textbf{ʑɯ}rɯʑɤri}   & 	 `progressively' \\ 
+t  & 	  \ipa{\textbf{tɯ}boʁ}  & 	 `one group' & 	c & 	\ipa{\textbf{cɯ}} & 	 `stone' \\ 
+tʰ  & 	  \ipa{\textbf{tʰɯ}ɣi}  & 	 `\textsc{imp:downstream}:come' & 	cʰ & 	\ipa{tɤ\textbf{cʰɯ}} & 	 `wedge' \\ 
+d  & 	  \ipa{\textbf{dɯ}dɯt}  & 	 `turtledove' & 	ɟ & 	\ipa{wa\textbf{ɟɯ}} & 	 `earthquake' \\ 
+nd  & 	  \ipa{\textbf{ndɯ}}  & 	 `appear (rainbow)' & 	ɲɟ & 	\ipa{\textbf{ɲɟɯ}} & 	 `open (it)' \\ 
+ts  & 	  \ipa{\textbf{tsɯ}tho}   & 	 `goat kid' & 	ɲ & 	\ipa{\textbf{ɲɯɣ}ɲɯɣ} & 	 `soft and powdery' \\ 
+tsʰ  & 	  \ipa{ɯ-\textbf{tsʰɯ}ɣa}   & 	 `appearance' & 	j & 	\ipa{ɯ-\textbf{jɯ}}   & 	 `its handle' \\ 
+dz  & 	  \ipa{\textbf{dzɯr}dzɯr}   & 	 `straight' & 	k & 	\ipa{\textbf{kɯ}ki}   & 	 `this' \\ 
+ndz   & 	  \ipa{\textbf{ndzɯ}pe}   & 	 `way of sitting' & 	kʰ & 	\ipa{\textbf{kʰɯ}na}   & 	 `dog' \\ 
+n   & 	  \ipa{\textbf{nɯ}ŋa}   & 	 `cow' & 	g & 	\ipa{\textbf{gɯ}gɯɣ}   & 	 `very dark (sky)' \\ 
+s   & 	  \ipa{\textbf{sɯ}mat}   & 	 `fruit' & 	ŋg & 	\ipa{ɯ-\textbf{ŋgɯ}}   & 	 `inside' \\ 
+z   & 	  \ipa{\textbf{zɯ}mi}   & 	 `almost' & 	ŋ & 	\ipa{ɕa\textbf{ŋɯ}}   & 	 `heat (deer)' \\ 
+l   & 	  \ipa{\textbf{lɯ}lu}   & 	 `cat' & 	x & 	\ipa{\textbf{xɯr}xɯr}   & 	 `round' \\ 
+ɬ   & 	  \ipa{\textbf{ɬɯɣ}nɤɬɯɣ}   & 	 `breathing mouvement' & 	ɣ & 	\ipa{\textbf{ɣɯ}}   & 	 `genitive' \\ 
+tʂ   & 	  \ipa{\textbf{tʂɯ}tʂu}   & 	 `on the road' & 	q & 	\ipa{\textbf{qɯ}qli}   & 	 `staring' \\ 
+tʂʰ   & 	  \ipa{\textbf{tʂʰɯɣ}}   & 	 `maybe' & 	qʰ & 	\ipa{sɤ\textbf{qhɯ}qha}   & 	 `naughty' \\ 
+dʐ   & 	\ipa{\textbf{dʐɯɣ}dʐɯɣ}   & 	 `strong (of tea)' & 	ɴɢ & 	\ipa{mɯ\textbf{ɴɢɯ}}  & 	 `Ligularia fischeria' \\ 
+ndʐ & 	\ipa{\textbf{ndʐɯ}nbu}   & 	 `guest' & 	χ & 	\ipa{\textbf{χɯŋ}χɯŋ}   & 	 `a little orange' \\ 
+ʂ & 	\ipa{\textbf{ʂɯŋ}ʂɯŋ}   & 	 `clear' & 	ʁ & 	\ipa{naŋ\textbf{ʁɯ}}   & 	 `shirt' \\ 
+r & 	\ipa{\textbf{rɯ}}   & 	 `temporary place (nomads)' & 	  & 	 & 	 \\ 
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
+Of these consonants, five are only attested in borrowings from Tibetan and/or ideophones: /ɬ/, /ʂ/, /dʐ/, /dʑ/ and /g/.
 
 The analysis of prenasalized voiced stops and affricates, of palatal stops and of /ɬ/ as unitary phonemes rather than clusters /NC/, /C+j/ an /l+x/ respectively will be justified in section \ref{sec:non.clusters}. 
 
+The /ɬ/ is slightly aspirated [ɬʰ], unlike other unvoiced fricatives.
+
+
+As in many languages of the Tibetan area, the /r/ in a trilled retroflex voiced fricative [ɽ͡ʐ] in onset position, sometimes realized as a simpled voiced fricative [ʐ].
 
 
   \subsection{Consonants clusters} \label{sec:clusters}
+  Japhug counts 396 clusters, including  307 clusters with two consonants and 89 with three consonants.
+  
+ A useful test to analyse and classify clusters is partial reduplication, a very productive process which can be applied to both verb and noun stems and has a variety of morphosyntactic functions (see \citealt{jacques07redupl}). In partial reduplication, the rhyme of the replicated syllable is changed to \ipa{ɯ} in the replicant.
+ 
+ \begin{exe}
+\ex
+\glt \ipa{praʁ} $\rightarrow$ \ipa{pɯ-praʁ}
+\ex
+\glt \ipa{wraʁ} $\rightarrow$ \ipa{wrɯ-wraʁ}
+\end{exe}
+  
   
   \citet{japhug14ideophones}
  
+ 
+ 
  svarabhakti vowels \ipa{ʑŋgri} \ipa{ndʑrɯ} \ipa{zgri} not with unvoiced
+ 
+ 
+ 
  
  only word-internal in Tibetan loanwords tk tp 
  pt only in \ipa{sqaptɤɣ}
+ 
+ 
       \subsection{Clusters vs unitary phonemes} \label{sec:non.clusters}
       
       
@@ -146,9 +170,13 @@ palatal stops:
       \subsection{Codas}label{sec:coda}
     
     
-     \section{Vowels} label{sec:vowels}
+     \section{Vowels} \label{sec:vowels}
      
           \subsection{Diphthongs}
+     zɯu
+     lɯa
+     
+     thɤlwa
      
      \section{Suprasegmentals}
      
