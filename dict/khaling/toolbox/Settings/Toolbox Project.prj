@@ -1,7 +1,7 @@
 \+ShProjectSettings 
 \ver 5.0
 \ProgramVersion 1.5.5 Jan 2009
-\ProjectPath D:\Dico Khaling2\Settings\Toolbox Project.prj
+\ProjectPath C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Settings\Toolbox Project.prj
 \LockProject 0
 \AutomaticKeyboardSwitching
 \+CorpusSet 
@@ -15,19 +15,19 @@
 \ConcordanceMaxCount 1000
 \ConcordanceOutput Concordance.db
 \+Corpus Free translation
-\FilesList D:\Dico Khaling2\Texts.txt
+\FilesList C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Texts.txt
 \lng English
 \WordMarkers \ft
 \BookMarker \ref
-\WordIndex D:\Dico Khaling2\Freetran.wi
+\WordIndex C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Freetran.wi
 \WordListOutput wordlistft.db
 \-Corpus
 \+Corpus Text
-\FilesList D:\Dico Khaling2\Texts.txt
+\FilesList C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Texts.txt
 \lng vernacular
 \WordMarkers \tx
 \BookMarker \ref
-\WordIndex D:\Dico Khaling2\Text.wi
+\WordIndex C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Text.wi
 \WordListOutput wordlist.db
 \-Corpus
 \-CorpusSet
@@ -40,10 +40,10 @@
 \-fntMarkers
 \+rundosMarkers 
 \-rundosMarkers
-\placementMain normal -1 -1 -1 -1 129 68 1017 519
+\placementMain normal -1 -1 -1 -1 0 0 888 451
 \+dblst 
 
-\+db D:\Dico Khaling2\Dictionary.txt
+\+db C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \+wndlst 
 \+wnd 
 \placement normal -1 -1 -8 -28 261 2 865 327
@@ -75,11 +75,11 @@
 \mkrSecKey nq
 \-ind
 \+rec 
-\fldPriKey phɛnt
+\fldPriKey lɵp
 \fldSecKey
 \-rec
 \+keySearch 
-\fldPri phɛnt
+\fldPri lɵp
 \match_char p
 \-keySearch
 \+keyInsert 
@@ -87,9 +87,9 @@
 \MatchWhole
 \match_char p
 \-keyInsert
-\CaretLine 10
-\CaretLineScroll 10
-\CaretChar 0
+\CaretLine 16
+\CaretLineScroll 7
+\CaretChar 56
 \-wnd
 \+wnd 
 \placement normal -1 -1 -1 -1 38 2 266 327
@@ -114,7 +114,7 @@
 \mkrSecKey nq
 \-ind
 \+rec 
-\fldPriKey phɛnt
+\fldPriKey lɵp
 \fldSecKey
 \-rec
 \+keySearch 

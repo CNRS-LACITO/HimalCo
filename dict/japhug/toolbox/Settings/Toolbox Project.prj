@@ -40,7 +40,7 @@
 \-fntMarkers
 \+rundosMarkers 
 \-rundosMarkers
-\placementMain normal -1 -1 -1 -1 358 47 1348 542
+\placementMain normal -1 -1 -1 -1 78 31 1068 526
 \+dblst 
 
 \+db C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
@@ -85,7 +85,7 @@
 \-wnd
 \+wnd 
 \placement normal -1 -1 -1 -1 278 2 952 377
-\z 1
+\z 2
 \ViewMarkers
 \ViewFieldNames
 \widthMarkerArea 133
@@ -109,7 +109,7 @@
 \mkrSecKey ng
 \-ind
 \+rec 
-\fldPriKey akarɯ 
+\fldPriKey _βraʁ
 \fldSecKey
 \-rec
 \+keySearch 
@@ -123,11 +123,11 @@
 \-keyInsert
 \CaretLine 0
 \CaretLineScroll 0
-\CaretChar 0
+\CaretChar 7
 \-wnd
 \+wnd 
 \placement normal -1 -1 -1 -1 -3 -10 279 377
-\z 2
+\z 1
 \ViewMarkers
 \ViewFieldNames
 \widthMarkerArea 133
@@ -174,10 +174,6 @@
 \Field lx
 \match_char p
 \+ftxlst 
-\+ftx 
-\text chɯ
-\lng vernacular
-\-ftx
 \+ftx 
 \text tɤchɯ
 \lng vernacular
@@ -252,6 +248,10 @@
 \-ftx
 \+ftx 
 \text lɯa
+\lng vernacular
+\-ftx
+\+ftx 
+\text βraʁ
 \lng vernacular
 \-ftx
 \-ftxlst
