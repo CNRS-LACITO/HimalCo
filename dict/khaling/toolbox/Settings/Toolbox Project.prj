@@ -47,7 +47,7 @@
 \+wndlst 
 \+wnd 
 \placement normal -1 -1 -8 -28 261 2 865 327
-\z 1
+\z 0
 \ViewMarkers
 \ViewFieldNames
 \widthMarkerArea 104
@@ -75,11 +75,11 @@
 \mkrSecKey nq
 \-ind
 \+rec 
-\fldPriKey lɵp
+\fldPriKey ʔi
 \fldSecKey
 \-rec
 \+keySearch 
-\fldPri lɵp
+\fldPri ʔi
 \match_char p
 \-keySearch
 \+keyInsert 
@@ -87,13 +87,13 @@
 \MatchWhole
 \match_char p
 \-keyInsert
-\CaretLine 16
-\CaretLineScroll 7
-\CaretChar 56
+\CaretLine 0
+\CaretLineScroll 0
+\CaretChar 0
 \-wnd
 \+wnd 
 \placement normal -1 -1 -1 -1 38 2 266 327
-\z 0
+\z 1
 \ViewMarkers
 \ViewFieldNames
 \widthMarkerArea 104
@@ -105,17 +105,21 @@
 \NoFieldEntry *no field*
 \+brf 
 \mkr lx
-\width 185
+\width 90
+\-brf
+\+brf 
+\mkr a
+\width 88
 \-brf
 \-brflst
 \+ind 
 \mkrPriKey lx
 \srtPriKey abcde
-\mkrSecKey nq
+\mkrSecKey a
 \-ind
 \+rec 
-\fldPriKey lɵp
-\fldSecKey
+\fldPriKey ʔi
+\fldSecKey i
 \-rec
 \+keySearch 
 \fldPri ʔi
@@ -132,57 +136,10 @@
 
 \-dblst
 \+Find 
-\Field lx
+\SingleField
+\Field ge
 \match_char p
 \+ftxlst 
-\+ftx 
-\text ŋɛl
-\lng vernacular
-\-ftx
-\+ftx 
-\text ghoʦ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ther
-\lng vernacular
-\-ftx
-\+ftx 
-\text hang
-\lng English
-\-ftx
-\+ftx 
-\text lean
-\lng English
-\-ftx
-\+ftx 
-\text disturb
-\lng English
-\-ftx
-\+ftx 
-\text annoy
-\lng English
-\-ftx
-\+ftx 
-\text tear
-\lng English
-\-ftx
-\+ftx 
-\text revoir
-\lng English
-\-ftx
-\+ftx 
-\text revise
-\lng English
-\-ftx
-\+ftx 
-\text sleep
-\lng English
-\-ftx
-\+ftx 
-\text jʌ)
-\lng vernacular
-\-ftx
 \+ftx 
 \text dream
 \lng English
@@ -209,6 +166,54 @@
 \-ftx
 \+ftx 
 \text fireword
+\lng English
+\-ftx
+\+ftx 
+\text add
+\lng English
+\-ftx
+\+ftx 
+\text fold
+\lng English
+\-ftx
+\+ftx 
+\text knead
+\lng English
+\-ftx
+\+ftx 
+\text hang
+\lng English
+\-ftx
+\+ftx 
+\text dry
+\lng English
+\-ftx
+\+ftx 
+\text finish
+\lng English
+\-ftx
+\+ftx 
+\text pay
+\lng English
+\-ftx
+\+ftx 
+\text yawn
+\lng English
+\-ftx
+\+ftx 
+\text jealous
+\lng English
+\-ftx
+\+ftx 
+\text wrap
+\lng English
+\-ftx
+\+ftx 
+\text hide
+\lng English
+\-ftx
+\+ftx 
+\text smile
 \lng English
 \-ftx
 \+ftx 

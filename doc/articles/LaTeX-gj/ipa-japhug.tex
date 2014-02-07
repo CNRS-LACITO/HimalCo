@@ -5,7 +5,7 @@
 \usepackage{xltxtra} 
 \usepackage{longtable}
 \usepackage{polyglossia} 
-%\usepackage[table]{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -26,6 +26,9 @@
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
+
+\newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
@@ -90,7 +93,7 @@ Lateral &sonorant &&l\\
  \begin{tabular}{lll|lll}
 \toprule
 p  & 	 \ipa{ɯ-\textbf{pɯ}} & 	 `its young' & 	tɕ & 	\ipa{ɯ-\textbf{tɕɯ}}   & 	 `his boy' \\ 
-pʰ  & 	 \ipa{ɯ-\textbf{pʰɯ}} & 	 `its price' & 	tɕʰ & 	\ipa{\textbf{tɕhɯ}wur}   & 	 `blister' \\ 
+pʰ  & 	 \ipa{ɯ-\textbf{pʰɯ}} & 	 `its price' & 	tɕʰ & 	\ipa{\textbf{tɕʰɯ}wur}   & 	 `blister' \\ 
 b  & 	 \ipa{ba\textbf{bɯ}} & 	 `blackcurrant' & 	dʑ & 	\ipa{\textbf{dʑɯβ}dʑɯβ}   & 	 `rough' \\ 
 mb  & 	 \ipa{\textbf{mbɯt}} & 	 `collapse'  & 	ndʑ & 	\ipa{\textbf{ndʑɯ}nɯ}   & 	 `Angelica sp.' \\ 
 m  & 	  \ipa{tɯ\textbf{mɯ}}  & 	 `sky' & 	ɕ & 	\ipa{\textbf{ɕɯ}ŋgɯ}   & 	 `before' \\ 
@@ -99,7 +102,7 @@ t  & 	  \ipa{\textbf{tɯ}boʁ}  & 	 `one group' & 	c & 	\ipa{\textbf{cɯ}} & 	 `
 tʰ  & 	  \ipa{\textbf{tʰɯ}ɣi}  & 	 `\textsc{imp:downstream}:come' & 	cʰ & 	\ipa{tɤ\textbf{cʰɯ}} & 	 `wedge' \\ 
 d  & 	  \ipa{\textbf{dɯ}dɯt}  & 	 `turtledove' & 	ɟ & 	\ipa{wa\textbf{ɟɯ}} & 	 `earthquake' \\ 
 nd  & 	  \ipa{\textbf{ndɯ}}  & 	 `appear (rainbow)' & 	ɲɟ & 	\ipa{\textbf{ɲɟɯ}} & 	 `open (it)' \\ 
-ts  & 	  \ipa{\textbf{tsɯ}tho}   & 	 `goat kid' & 	ɲ & 	\ipa{\textbf{ɲɯɣ}ɲɯɣ} & 	 `soft and powdery' \\ 
+ts  & 	  \ipa{\textbf{tsɯ}tʰo}   & 	 `goat kid' & 	ɲ & 	\ipa{\textbf{ɲɯɣ}ɲɯɣ} & 	 `soft and powdery' \\ 
 tsʰ  & 	  \ipa{ɯ-\textbf{tsʰɯ}ɣa}   & 	 `appearance' & 	j & 	\ipa{ɯ-\textbf{jɯ}}   & 	 `its handle' \\ 
 dz  & 	  \ipa{\textbf{dzɯr}dzɯr}   & 	 `straight' & 	k & 	\ipa{\textbf{kɯ}ki}   & 	 `this' \\ 
 ndz   & 	  \ipa{\textbf{ndzɯ}pe}   & 	 `way of sitting' & 	kʰ & 	\ipa{\textbf{kʰɯ}na}   & 	 `dog' \\ 
@@ -109,7 +112,7 @@ z   & 	  \ipa{\textbf{zɯ}mi}   & 	 `almost' & 	ŋ & 	\ipa{ɕa\textbf{ŋɯ}}   &
 l   & 	  \ipa{\textbf{lɯ}lu}   & 	 `cat' & 	x & 	\ipa{\textbf{xɯr}xɯr}   & 	 `round' \\ 
 ɬ   & 	  \ipa{\textbf{ɬɯɣ}nɤɬɯɣ}   & 	 `breathing mouvement' & 	ɣ & 	\ipa{\textbf{ɣɯ}}   & 	 `genitive' \\ 
 tʂ   & 	  \ipa{\textbf{tʂɯ}tʂu}   & 	 `on the road' & 	q & 	\ipa{\textbf{qɯ}qli}   & 	 `staring' \\ 
-tʂʰ   & 	  \ipa{\textbf{tʂʰɯɣ}}   & 	 `maybe' & 	qʰ & 	\ipa{sɤ\textbf{qhɯ}qha}   & 	 `naughty' \\ 
+tʂʰ   & 	  \ipa{\textbf{tʂʰɯɣ}}   & 	 `maybe' & 	qʰ & 	\ipa{sɤ\textbf{qʰɯ}qʰa}   & 	 `naughty' \\ 
 dʐ   & 	\ipa{\textbf{dʐɯɣ}dʐɯɣ}   & 	 `strong (of tea)' & 	ɴɢ & 	\ipa{mɯ\textbf{ɴɢɯ}}  & 	 `Ligularia fischeria' \\ 
 ndʐ & 	\ipa{\textbf{ndʐɯ}nbu}   & 	 `guest' & 	χ & 	\ipa{\textbf{χɯŋ}χɯŋ}   & 	 `a little orange' \\ 
 ʂ & 	\ipa{\textbf{ʂɯŋ}ʂɯŋ}   & 	 `clear' & 	ʁ & 	\ipa{naŋ\textbf{ʁɯ}}   & 	 `shirt' \\ 
@@ -125,13 +128,13 @@ The analysis of prenasalized voiced stops and affricates, of palatal stops and o
 The /ɬ/ is slightly aspirated [ɬʰ], unlike other unvoiced fricatives.
 
 
-As in many languages of the Tibetan area, the /r/ in a trilled retroflex voiced fricative [ɽ͡ʐ] in onset position, sometimes realized as a simpled voiced fricative [ʐ].
+As in many languages of the Tibetan area, the /r/ in a trilled retroflex voiced fricative [ɽ͡ʐ] in onset position, sometimes realized as a simple voiced fricative [ʐ].
 
 
   \subsection{Consonants clusters} \label{sec:clusters}
-  Japhug counts 396 clusters, including  307 clusters with two consonants and 89 with three consonants.
+  Japhug counts 398 clusters in syllable onset position, including  309 clusters with two consonants and 89 with three consonants. Clusters that are only possible at syllable boundaries are
   
-  \subsubsection{Partial reduplication}
+  \subsubsection{Partial reduplication} \label{sec:redp}
  A useful test to analyse and classify clusters is partial reduplication, a very productive process which can be applied to both verb and noun stems and has a variety of morphosyntactic functions (see \citealt{jacques07redupl}). When partial reduplication is applied to a syllable, the rhyme of the replicated syllable is changed to \ipa{ɯ} in the replicant.
  
 Some clusters are affected by the partial reduplication:   when the last consonant  of a cluster is one of the non-nasal sonorants (\ipa{r}, \ipa{l}, \ipa{j}, \ipa{w}, \ipa{ɣ} or \ipa{ʁ}), and the preceding consonant in neither a sonorant nor a sibilant fricative, the sonorant is deleted, as in example \ref{ex:medial.r}. Glides are always deleted in the replicant regardless of the preceding consonant.
@@ -152,7 +155,7 @@ When the prenultimate consonant is a sibilant fricative   (\ipa{s}, \ipa{z}, \ip
 
 This morphophonological rule is thus crucial in analysis and classifying consonant clusters. Sonorants that undergo deletion when partial reduplication is applied are henceforth designated as \textit{medial} consonants, and it is postulated that they do not belong to the same constituent as the rest of the onset.
 
-In the following, we present a complete list of consonant clusters in Japhug Rgyalrong. Groups only attested in Tibetan loanwords or ideophones, and not in the native vocabulary, are indicated with $t$ and $i$ respectively.
+In the following, we present a complete list of consonant clusters in Japhug Rgyalrong. Groups only attested in Tibetan loanwords or ideophones (or deideophonic verbs), and not in the native vocabulary, are indicated in lightgray and gray respectively in the tables.
   
   
   \subsubsection{Consonant clusters whose last element is not a non-nasal sonorant}  
@@ -160,11 +163,15 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 
  Clusters beginning in /w/ or in a alveolar fricative /s/ /z/ are listed in Table \ref{prein.w.s}. 
  
- /w/ is realized as [f] or [ɸ] before unvoiced obstruents
+ /w/ is realized as [f] or [ɸ] before unvoiced obstruents and as [w] or [β] before voiced ones. /w/ does not appear before nasal or prenasalized segments, and is not compatible with a labial or a uvular segment. Some clusters with /w/ + voiced obstruents (/wz/ and /wg/) are only attested in Tibetan loanwords. Clusters with three consonant whose first element is /w/ and the last one is not a sonorant are all restricted to Tibetan borrowings except /wxt/, which is realized as [xʷt] with a labiovelarized fricative. Not all speakers maintain the contrast between /wxt/ and /xt/, and the former is only attested in a single word /wxti/ `big'.
+ 
+ /s/ and /z/ as first element of a cluster are only contrastive before a sonorant. With obstruents, the fricative has the same voicing value as the following consonant. All clusters of this type are attested in the native vocabulary.
+ 
  \begin{table}
  \caption{List of consonant clusters with \ipa{w}, \ipa{s} or \ipa{z} as a first element} \label{prein.w.s}
    \resizebox{\columnwidth}{!}{
 \begin{tabular}{l|lll|lll|lll|lllllll}
+\toprule
 \ipa{p}  &	  &	  &	&	\ipa{sp}  &	\ipa{spoz}  &	incense&	  &	  &	&	\\
 \ipa{pʰ}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
 \ipa{b}  &	  &	  &	&	  &	  &	&	\ipa{zb}  &	\ipa{zbaʁ}  &	&	\\
@@ -180,7 +187,7 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{dz}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
 \ipa{ndz}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
 \ipa{s}  &	\ipa{ws}  &	\ipa{wsaŋ}  &	fumigation&	  &	  &	&	  &	  &	&	\\
-\ipa{z}  &	\ipa{wz} $t$  &	\ipa{wzaŋsa}  &	friend&	  &	  &	&	  &	  &	&	\\
+\ipa{z}  &	\ipa{wz} \tib{}  &	\ipa{wzaŋsa}  &	friend&	  &	  &	&	  &	  &	&	\\
 \ipa{ɬ}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
 \ipa{tɕ}  &	\ipa{wtɕ}  &	\ipa{wtɕar }  &	summer&	  &	  &	&	  &	  &	&	\\
 \ipa{tɕʰ}  &	\ipa{wtɕʰ}  &	\ipa{wtɕʰur}  &pour down	&	  &	  &	&	  &	  &	&	\\
@@ -200,7 +207,7 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{ɲ}  &	  &	  &	&	\ipa{sɲ}  &	\ipa{sɲaŋne}  &fasting	&	   &	 &	&	\\
 \ipa{k}  &	\ipa{wk}  &	\ipa{wka}  &	order&	\ipa{sk}  &	\ipa{skɤm}  &	ox&	  &	  &	&	\\
 \ipa{kʰ}  &	  &	  &	&	\ipa{skʰ}  &	\ipa{rɟɤskhi}  &pan	&	  &	  &	&	\\
-\ipa{g}  &	\ipa{wg}  $t$&	\ipa{wgoz}  &	prepare&	  &	  &	& 	\ipa{zg}  &	\ipa{zga}  &	sauce&	\\
+\ipa{g}  &	\ipa{wg}  \tib{}&	\ipa{wgoz}  &	prepare&	  &	  &	& 	\ipa{zg}  &	\ipa{zga}  &	sauce&	\\
 \ipa{ŋg}  &	  &	  &	&	  &	  &	&	\ipa{zŋg}  &	\ipa{akhɤzŋga}  &	call&	\\
 \ipa{ŋ}  &	  &	  &	&	\ipa{sŋ}  &	\ipa{sŋaʁ}  &	curse (v)&	  &	  &	&	\\
 \ipa{x}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
@@ -210,21 +217,81 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{χ}  &	  &	  &	&	  &	  &	&	  &	  &	&	\\
 \midrule
 &	\ipa{wxt}  &	\ipa{wxti}  &big	\\
-&	\ipa{wst} $t$ &	\ipa{wstɯn}  &serve	\\
-&	\ipa{wrt}  $t$ &	\ipa{wrtɤn}  &	trustworth\\
-&	\ipa{wsk}  $t$ &	\ipa{wskɤr}  & go around, 	\\
-&	\ipa{wzg}  $t$ &	\ipa{wzgɤr}  & delay	\\
-&	\ipa{wzd}  $t$ &	\ipa{wzdɯ}  & collect	\\
-&	\ipa{wzɟ}  $t$ &	\ipa{wzɟɯr}  & transform	\\
-&	\ipa{wrɟ}  $t$ &	\ipa{wrɟaŋ}  &stretch (skin)	\\
+&	\ipa{wst} \tib{} &	\ipa{wstɯn}  &serve	\\
+&	\ipa{wrt}  \tib{} &	\ipa{wrtɤn}  &	trustworth\\
+&	\ipa{wsk}  \tib{} &	\ipa{wskɤr}  & go around, 	\\
+&	\ipa{wzg}  \tib{} &	\ipa{wzgɤr}  & delay	\\
+&	\ipa{wzd}  \tib{} &	\ipa{wzdɯ}  & collect	\\
+&	\ipa{wzɟ}  \tib{} &	\ipa{wzɟɯr}  & transform	\\
+&	\ipa{wrɟ}  \tib{} &	\ipa{wrɟaŋ}  &stretch (skin)	\\
+\bottomrule
+\end{tabular}}
+\end{table}
+ 
+ Clusters with /l/, /r/ and /j/ as first element are listed in Table \ref{prein.l.r.j}. /r/ and /ʂ/ are in complementary distribution as first element of a cluster, the former appearing before voiced consonants and the latter after unvoiced ones (except before /ɣ/, see section \ref{sec:other.non.medial}). 
+ 
+ There are some phonotactic constraints on the distribution of these consonants: /l/ is not compatible with coronal fricatives, /r/ and /ʂ/ never appear before retroflex fricatives and affricates, and /j/ is not attested before alveolo-palatal and palatal consonants.
+ 
+The \ipa{j} glide, unlike other consonants, does not devoices and fricativizes when occurring as first element of a cluster whose second element is an obstruent.
+ 
+  \begin{table}
+ \caption{List of consonant clusters with \ipa{l}, \ipa{r} or \ipa{j} as a first element} \label{prein.l.r.j}
+   \resizebox{\columnwidth}{!}{
+\begin{tabular}{l|lll|lll|lll|l}
+\toprule
+ \ipa{p}   &	\ipa{lp}  &	\ipa{tɯ-lpɤɣ}  &	one piece&	\ipa{ʂp}  &	\ipa{tɯ-ʂpa}  &	axe&	\ipa{jp}  &	\ipa{jpum}  &	thick&	\\
+\ipa{pʰ}   &	  &	  &	&	\ipa{ʂpʰ} \idph{} &	\ipa{ɣɤʂpʰɤʂpʰɤβ}  &	flap wings&	  &	  &	&	\\
+\ipa{b}   &	  &	  &	&	  &	  &	&	  &	  &	&	\\
+\ipa{mb}   &	  &	  &	&	\ipa{rmb}  &	\ipa{armbat}  &near	&	  &	  &	&	\\
+\ipa{m}   &	\ipa{lm}  &	\ipa{tɤlmɯz}  &	straw covering the balcony&	\ipa{rm}  &	\ipa{rmɤwja}  &peacock	&	\ipa{jm}  &	\ipa{jmɯt} &forget	&	\\
+\ipa{t}   &	\ipa{lt}  &	\ipa{ltɤβ}  &	fold&	\ipa{ʂt}  &	\ipa{ʂtalu}  &horse year	&	\ipa{jt}  &	\ipa{ajtɯ}  &accumulate	&	\\
+\ipa{tʰ}   &	\ipa{ltʰ} \idph{} &	\ipa{ltʰɯmɯmi}  &coming slowly (sleep)	&	\ipa{ʂtʰ}  &	\ipa{pɤʂtʰɤβ}  &midde	&	  &	  &	&	\\
+\ipa{d}   &	\ipa{ld}  &	\ipa{ldɯɣi}  &	bharal&	\ipa{rd}  &	\ipa{rdɤstaʁ}  &	stone&	  &	   &	&	\\
+\ipa{nd}   &	  &	  &	&	\ipa{rnd}  &	\ipa{rnde}  &	find&	  &	  &	&	\\
+\ipa{n}   &	\ipa{ln}  &	\ipa{lni}  &wither	&	\ipa{rn}  &	\ipa{rnaʁ}  &deep	&	\ipa{jn}  &	\ipa{jnom}  &flexible	&	\\
+\ipa{ts}   &	\ipa{lts}  &	\ipa{ɕɤltsaʁ}  &leather coat	&	\ipa{ʂts}  &	\ipa{ʂtsot}  &vengeance	&	\ipa{jts}  &	\ipa{tɤ-jtsi}  &pillar	&	\\
+\ipa{tsʰ}   &	\ipa{ltsʰ} \idph{} &	\ipa{ltshɤltshɤt}  & small and weak	&	\ipa{ʂtsʰ}  &	\ipa{ʂtshom}  &	have a crack (bucket)&	\ipa{jtsʰ}  &	\ipa{jtsʰi}  &	give to drink&	\\
+\ipa{dz}   &	  &	  &	&	\ipa{rdz} \idph{} &	\ipa{rdzardza}  &	insolent&	  &	  &	&	\\
+\ipa{ndz}   &	  &	  &	&	\ipa{rndz}  &	\ipa{rndzɤkɤŋe}  &	 shade of the mountain&	  &	  &	&	\\
+\ipa{s}   &	  &	  &	&	\ipa{ʂs}  \idph{} &	\ipa{ʂsɯβʂsɯβ}  &	hairy&	  &	  &	&	\\
+\ipa{z}   &	  &	  &	&	\ipa{rz}  &	\ipa{tɯ-rzɯɣ}  &	one section&	  &	  &	&	\\
+\ipa{ɬ}   &	  &	  &	&	  &	  &	&	  &	  &	&	\\
+\ipa{tɕ}   &	\ipa{ltɕ} & \ipa{ʂtɤltɕaʁ}  &	horse whip  &	 	\ipa{ʂtɕ}  &	\ipa{nɯʂtɕe}  &tease	&	  &	  &	&	\\
+\ipa{tɕʰ}   &	\ipa{ltɕʰ} \idph{} &	\ipa{ltɕʰɤltɕʰɤt}  &hanging (of fluffy objects)	&	\ipa{ʂtɕʰ}  &	\ipa{ʂtɕʰɯʁjɯ}  &caterpillar	&	  &	  &	&	\\
+\ipa{dʑ}   &	\ipa{ldʑ}  \tib{} &	\ipa{ldʑaŋkɯ}  &	green&	  &	  &	&	  &	  &	&	\\
+\ipa{ndʑ}   &	  &	  &	&	\ipa{rndʑ}  &	\ipa{cɯrndʑi}  &sand	&	  &	  &	&	\\
+\ipa{ɕ}   &	  &	  &	&	\ipa{rɕ}  &	\ipa{arɕo}  &	completely finished&	  &	  &	&	\\
+\ipa{ʑ}   &	  &	  &	&	\ipa{rʑ}  &	\ipa{tɤ-rʑaβ}  &wife	&	  &	  &	&	\\
+\ipa{tʂ}   &	  &	  &	&	  &	  &	&	  &	  &	&	\\
+\ipa{tʂʰ}   &	  &	  &	&	  &	  &	&	\ipa{jtʂʰ}  &	\ipa{qɤjtʂʰa}  &vulture	&	\\
+\ipa{dʐ}   &	\ipa{ldʐ} \idph{}  &	\ipa{ldʐaŋldʐaŋ}  &	hanging (big object)&	  &	  &	&	  &	  &	&	\\
+\ipa{ndʐ}   &	  &	  &	&	  &	  &	&	\ipa{jndʐ}  &	\ipa{jndʐɤz}  &thick (powder)	&	\\
+\ipa{ʂ}   &	  &	  &	&	  &	  &	&	  &	  &	&	\\
+\ipa{c}   &	\ipa{lc}  \idph{}&	\ipa{lcɯɣlcɯɣ}  &	drenching&	\ipa{ʂc}  &	\ipa{tɤ-ʂcoʁ}  &	mud&	  &	  &	&	\\
+\ipa{cʰ}   &	\ipa{lcʰ}  &	\ipa{tɯ-lcʰɯɣ}  &	section (of a bag)&	\ipa{ʂcʰ}  &	\ipa{ɯ-ʂcʰɤβ}  &	interstice&	  &	  &	&	\\
+\ipa{ɟ}   &	  &	  &	&	\ipa{rɟ}  &	\ipa{rɟaʁ}  &dance (v)	&	  &	  &	&	\\
+\ipa{ɲɟ}   &	  &	  &	&	\ipa{rɲɟ}  &	\ipa{rɲɟaʁlo}  &	bolt&	  &	  &	&	\\
+\ipa{ɲ}   &	  &	  &	&	\ipa{rɲ}  &	\ipa{rɲaŋ}  &	ancient&	  &	  &	&	\\
+\ipa{j}   &	  &	  &	&	  &	  &	&	  &	  &	&	\\
+\ipa{k}   &	  &	  &	&	\ipa{ʂk}  &	\ipa{ʂko}  &	hard&	\ipa{jk}  &	\ipa{tɤ-jkɯz}  &secret	&	\\
+\ipa{kʰ}   &	  &	  &	&	\ipa{ʂkʰ}  &	\ipa{tɤ-ʂkʰom}  &	feather rachis&	   &	  &	&	\\
+\ipa{g}   &	  &	  &	&	\ipa{rg}  &	\ipa{rga}  &	like&	  &	  &	&	\\
+\ipa{ŋg}   &	  &	  &	&	\ipa{rŋg}  &	\ipa{rŋgɤm}  &hard piece	&	   &	   &	&	\\
+\ipa{ŋ}   &	\ipa{lŋ}  \idph{} &	\ipa{lŋɤlŋɤt}  &hanging (fruit)	&	\ipa{rŋ}  &	\ipa{tɯ-rŋa}  &	face&	\ipa{jŋ}  &	\ipa{tɤ-jŋoʁ}  &	hook&	\\
+\ipa{x}   &	\ipa{lx}  \idph{} &	\ipa{lxɤβlxɤβ}  &thick (clothes)	&	  &	  &	&	  &	  &	&	\\
+\ipa{q}   &	  &	  &	&	\ipa{ʂq}  &	\ipa{ʂqoʁ}  &hug	&	\ipa{jq}  &	\ipa{jqe}  &	able to lift&	\\
+\ipa{qʰ}   &	  &	  &	&	\ipa{ʂqʰ}  &	\ipa{tɤ-ʂqʰu}  &bark, skin&	   &	   &	&	\\
+\ipa{ɴɢ}   &	  &	  &	&	\ipa{rɴɢ}  &	\ipa{ɕɯrɴɢo}  &Anisodus tanguticus 	&	  &	  &	&	\\
+\ipa{χ}   &	  &	  &	&	\ipa{ʂχ}   &	\ipa{ʂχɯʂχi}  &with big nostrils	&	\ipa{jχ}  &	\ipa{ajχoʁ}  &	flap (belly)&	\\
+\midrule
+&&&&&&&\ipa{jmŋ} & \ipa{tɯ-jmŋo} &dream (n)\\
 \bottomrule
 \end{tabular}}
 \end{table}
  
  
  
- 
- \subsubsection{Groups with a medial sonorant }
+ \subsubsection{Groups with a medial sonorant } \label{sec:medial}
   non-nasal sonorant (\ipa{r}, \ipa{l}, \ipa{j}, \ipa{w}, \ipa{ɣ} or \ipa{ʁ}) are included. The
   
  \begin{table}
@@ -238,13 +305,13 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 
   \end{table} 
   
-   \subsubsection{Other groups with non-nasal sonorants }
+   \subsubsection{Other groups with non-nasal sonorants } \label{sec:other.non.medial}
   
  svarabhakti vowels \ipa{ʑŋgri} \ipa{ndʑrɯ} \ipa{zgri} not with unvoiced
  
  
  
- 
+ \subsubsection{Clusters at syllable boundaries}
  only word-internal in Tibetan loanwords tk tp 
  pt only in \ipa{sqaptɤɣ}
  
