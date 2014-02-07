@@ -40,7 +40,7 @@
 \-fntMarkers
 \+rundosMarkers 
 \-rundosMarkers
-\placementMain normal -32000 -32000 -1 -1 83 304 1073 799
+\placementMain normal -1 -1 -1 -1 83 304 1073 799
 \+dblst 
 
 \+db C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
@@ -175,14 +175,6 @@
 \match_char p
 \+ftxlst 
 \+ftx 
-\text rndu
-\lng vernacular
-\-ftx
-\+ftx 
-\text jnom
-\lng vernacular
-\-ftx
-\+ftx 
 \text rtsot
 \lng vernacular
 \-ftx
@@ -252,6 +244,14 @@
 \-ftx
 \+ftx 
 \text ʂχɯ
+\lng vernacular
+\-ftx
+\+ftx 
+\text ɯ-spa
+\lng vernacular
+\-ftx
+\+ftx 
+\text mɯntoʁ
 \lng vernacular
 \-ftx
 \-ftxlst
