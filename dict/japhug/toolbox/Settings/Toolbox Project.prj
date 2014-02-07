@@ -40,7 +40,7 @@
 \-fntMarkers
 \+rundosMarkers 
 \-rundosMarkers
-\placementMain normal -1 -1 -1 -1 78 31 1068 526
+\placementMain normal -32000 -32000 -1 -1 78 31 1068 526
 \+dblst 
 
 \+db C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
@@ -67,7 +67,7 @@
 \mkrSecKey hm
 \-ind
 \+rec 
-\fldPriKey akarɯ 
+\fldPriKey akarɯ
 \fldSecKey
 \-rec
 \+keySearch 
@@ -109,7 +109,7 @@
 \mkrSecKey ng
 \-ind
 \+rec 
-\fldPriKey _βraʁ
+\fldPriKey βrɟaŋ
 \fldSecKey
 \-rec
 \+keySearch 
@@ -121,9 +121,9 @@
 \MatchWhole
 \match_char p
 \-keyInsert
-\CaretLine 0
-\CaretLineScroll 0
-\CaretChar 7
+\CaretLine 6
+\CaretLineScroll 6
+\CaretChar 9
 \-wnd
 \+wnd 
 \placement normal -1 -1 -1 -1 -3 -10 279 377
@@ -152,7 +152,7 @@
 \mkrSecKey ps
 \-ind
 \+rec 
-\fldPriKey akarɯ 
+\fldPriKey akarɯ
 \fldSecKey N
 \-rec
 \+keySearch 
@@ -175,83 +175,83 @@
 \match_char p
 \+ftxlst 
 \+ftx 
-\text tɤchɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text waɟɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɲɟɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɲɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɲɯɣ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɯ-jɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text kɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text gɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ŋɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text xɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɣɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text qɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text qhɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ɴɢɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text χɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text χɯŋ
-\lng vernacular
-\-ftx
-\+ftx 
-\text ʁɯ
-\lng vernacular
-\-ftx
-\+ftx 
-\text lwa
-\lng vernacular
-\-ftx
-\+ftx 
-\text lɯa
-\lng vernacular
-\-ftx
-\+ftx 
 \text βraʁ
+\lng vernacular
+\-ftx
+\+ftx 
+\text ftshi
+\lng vernacular
+\-ftx
+\+ftx 
+\text fɕaʁ
+\lng vernacular
+\-ftx
+\+ftx 
+\text βʑar
+\lng vernacular
+\-ftx
+\+ftx 
+\text βgoz
+\lng vernacular
+\-ftx
+\+ftx 
+\text fcaʁ
+\lng vernacular
+\-ftx
+\+ftx 
+\text sthaβ
+\lng vernacular
+\-ftx
+\+ftx 
+\text schɤt
+\lng vernacular
+\-ftx
+\+ftx 
+\text rɟɤskhi
+\lng vernacular
+\-ftx
+\+ftx 
+\text sŋaʁ
+\lng vernacular
+\-ftx
+\+ftx 
+\text zmbɯr
+\lng vernacular
+\-ftx
+\+ftx 
+\text zmɤrɤβ
+\lng vernacular
+\-ftx
+\+ftx 
+\text zga
+\lng vernacular
+\-ftx
+\+ftx 
+\text zɲɟa
+\lng vernacular
+\-ftx
+\+ftx 
+\text nɯzɟɯ
+\lng vernacular
+\-ftx
+\+ftx 
+\text zɟ
+\lng vernacular
+\-ftx
+\+ftx 
+\text 饿死
+\lng national
+\-ftx
+\+ftx 
+\text fskɤr
+\lng vernacular
+\-ftx
+\+ftx 
+\text frtɤn
+\lng vernacular
+\-ftx
+\+ftx 
+\text rɟaŋ
 \lng vernacular
 \-ftx
 \-ftxlst
