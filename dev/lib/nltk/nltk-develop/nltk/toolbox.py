@@ -229,7 +229,7 @@ class ToolboxData(StandardFormat):
                 e.text = text
         return root
 
-    def _chunk_parse(self, grammar=None, root_label='record', trace=0, **kwargs):
+    def _chunk_parse(self, grammar=None, root_label='record', loop=1, trace=0, **kwargs):
         """
         Returns an element tree structure corresponding to a toolbox data file
         parsed according to the chunk grammar.
@@ -252,7 +252,7 @@ class ToolboxData(StandardFormat):
         from nltk import chunk
         from nltk.tree import Tree
 
-        cp = chunk.RegexpParser(grammar, root_label=root_label, trace=trace)
+        cp = chunk.RegexpParser(grammar, root_label=root_label, loop=loop, trace=trace)
         db = self.parse(**kwargs)
         tb_etree = Element('toolbox_data')
         header = db.find('header')
