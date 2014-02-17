@@ -1,6 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# Add the repository path before the Python path to use the correct xlwt and xlrd libraries
+import sys
+sys.path.insert(1, "../lib/python-excel/xlwt-master")
+sys.path.insert(1, "../lib/python-excel/xlrd-master")
+
 class XlsFormat():
     def __init__(self):
         self.options = None
