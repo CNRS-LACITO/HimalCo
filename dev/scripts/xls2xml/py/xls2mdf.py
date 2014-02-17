@@ -177,7 +177,7 @@ class Xls2Mdf(InOut, XlsFormat):
         # Remove empty and useless fields (\ms *) => .txt
         self.remove_fields()
         # Delete temporary file
-        os.system("rm " + self.tmp_filename)
+        os.remove(self.tmp_filename)
 
 if __name__ == '__main__':
     converter = Xls2Mdf()

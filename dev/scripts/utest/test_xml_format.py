@@ -43,12 +43,12 @@ class TestXmlFormatFunctions(unittest.TestCase):
         self.xml_format.tree = ElementTree(element=self.xml_format.first_element)
         self.xml_format.write_xml()
         del self.xml_format.tree
-        os.system("rm " + self.xml_format.options.output)
+        os.remove(self.xml_format.options.output)
 
     def test_write_result(self):
         import os
         self.xml_format.write_result()
-        os.system("rm " + self.xml_format.options.output)
+        os.remove(self.xml_format.options.output)
 
     def test_display_result(self):
         self.xml_format.tree = ElementTree(element=self.xml_format.first_element)

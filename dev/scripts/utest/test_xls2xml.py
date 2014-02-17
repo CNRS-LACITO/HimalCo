@@ -27,7 +27,6 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.xls2mdf.options = Options()
         self.xls2mdf.options.input = "./obj/test_file.xls"
         self.xls2mdf.options.output = "./obj/test_file.mdf"
-        #os.system("cp test/na/input/na1.xls " + self.xls2mdf.options.input)
         # Write input file
         self.book = self.xls2mdf.create_book()
         self.sheet = self.book.add_sheet("sheet")
@@ -41,7 +40,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
 
     def tearDown(self):
         import os
-        os.system("rm " + self.xls2mdf.options.input)
+        os.remove(self.xls2mdf.options.input)
         # Release instantiated objects
         del self.xls2mdf.options, self.xls2mdf
 
@@ -85,7 +84,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
         output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename)
         self.assertListEqual(output.readlines(), lines)
         output.close()
-        os.system("rm " + self.xls2mdf.tmp_filename)
+        os.remove(self.xls2mdf.tmp_filename)
 
     def test_format_fields(self):
         import os
@@ -122,7 +121,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         output = self.xls2mdf.open_read(self.xls2mdf.options.output)
         self.assertListEqual(output.readlines(), lines)
         output.close()
-        os.system("rm " + self.xls2mdf.tmp_filename + " " + self.xls2mdf.options.output)
+        os.remove(self.xls2mdf.tmp_filename)
+        os.remove(self.xls2mdf.options.output)
 
     def test_remove_fields(self):
         import os
@@ -151,7 +151,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         output = self.xls2mdf.open_read(self.xls2mdf.txt_filename)
         self.assertListEqual(output.readlines(), lines)
         output.close()
-        os.system("rm " + self.xls2mdf.options.output + " " + self.xls2mdf.txt_filename)
+        os.remove(self.xls2mdf.options.output)
+        os.remove(self.xls2mdf.txt_filename)
 
     def test_format_lx(self):
         pass
@@ -175,8 +176,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         for i in range (0, 4):
             sys.argv.pop()
         # Remove generated files
-        os.system("rm obj/test_file.mdf")
-        os.system("rm obj/test_file.txt")
+        os.remove("obj/test_file.mdf")
+        os.remove("obj/test_file.txt")
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestXls2MdfFunctions)
 
@@ -225,8 +226,8 @@ class TestMdf2XmlFunctions(unittest.TestCase):
         for i in range (0, 4):
             sys.argv.pop()
         # Remove generated files
-        os.system("rm " + self.mdf2xml.options.input)
-        os.system("rm obj/test_file.xml")
+        os.remove(self.mdf2xml.options.input)
+        os.remove("obj/test_file.xml")
 
 suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestMdf2XmlFunctions))
 

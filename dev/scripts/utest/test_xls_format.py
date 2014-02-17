@@ -26,7 +26,7 @@ class TestXlsFormatFunctions(unittest.TestCase):
 
     def tearDown(self):
         import os
-        os.system("rm " + self.xls_format.options.input)
+        os.remove(self.xls_format.options.input)
         # Release instantiated objects
         del self.sheet, self.book, self.xls_format.options, self.xls_format
 
@@ -36,37 +36,45 @@ class TestXlsFormatFunctions(unittest.TestCase):
 
     def test_create_book(self):
         import xlwt
-        self.assertIsInstance(self.xls_format.create_book(), xlwt.Workbook)
+        book = self.xls_format.create_book()
+        self.assertIsInstance(book, xlwt.Workbook)
+        del book
 
     def test_open_book(self):
         import xlrd
         self.xls_format.open_book()
         self.assertIsInstance(self.xls_format.wb, xlrd.book.Book)
+        del self.xls_format.wb
 
     def test_get_sheets(self):
         self.xls_format.open_book()
         self.assertListEqual(self.xls_format.get_sheets(), ["sheet"])
+        del self.xls_format.wb
 
     def test_get_sheet(self):
         import xlrd
         self.xls_format.open_book()
         self.xls_format.get_sheet()
         self.assertIsInstance(self.xls_format.sheet, xlrd.sheet.Sheet)
+        del self.xls_format.sheet, self.xls_format.wb
 
     def test_display_sheet(self):
         self.xls_format.open_book()
         self.xls_format.get_sheet()
         self.xls_format.display_sheet()
+        del self.xls_format.sheet, self.xls_format.wb
 
     def test_is_row_hidden(self):
         self.xls_format.open_book()
         self.xls_format.get_sheet()
         self.assertFalse(self.xls_format.is_row_hidden(0))
+        del self.xls_format.sheet, self.xls_format.wb
 
     def test_get_contents(self):
         self.xls_format.open_book()
         self.xls_format.get_sheet()
         self.assertEqual(self.xls_format.get_contents(1,2), "12")
+        del self.xls_format.sheet, self.xls_format.wb
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestXlsFormatFunctions)
 
