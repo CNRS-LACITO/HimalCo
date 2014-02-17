@@ -53,7 +53,7 @@ class TestMdfFormatFunctions(unittest.TestCase):
         # Test XML result
         self.assertEqual(tostring(self.mdf_format.first_element), tostring(tb_data))
         # Remove input file
-        os.system("rm " + self.mdf_format.options.input)
+        os.remove(self.mdf_format.options.input)
         # Release
         del tree, tb_data
 

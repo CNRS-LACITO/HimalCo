@@ -26,7 +26,7 @@ class TestXlsFormatFunctions(unittest.TestCase):
 
     def tearDown(self):
         import os
-        os.system("rm " + self.xls_format.options.input)
+        os.remove(self.xls_format.options.input)
         # Release instantiated objects
         del self.sheet, self.book, self.xls_format.options, self.xls_format
 

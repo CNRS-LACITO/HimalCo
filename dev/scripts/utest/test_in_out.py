@@ -16,8 +16,8 @@ class TestInOutFunctions(unittest.TestCase):
         del self.in_out
 
     def test_create_obj(self):
-        import os
-        os.system("rm -rf obj/")
+        import os, shutil
+        shutil.rmtree("obj/")
         # Test when "obj/" folder does not exist
         self.in_out.create_obj()
         self.assertTrue(os.path.exists("obj"))
@@ -37,7 +37,7 @@ class TestInOutFunctions(unittest.TestCase):
         test_file = self.in_out.open_file(test_filename, 'r')
         self.assertEqual(test_file.readline(), test_string)
         test_file.close()
-        os.system("rm " + test_filename)
+        os.remove(test_filename)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestInOutFunctions)
 

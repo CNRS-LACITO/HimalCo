@@ -61,8 +61,8 @@ class TestMdf2XmlFunctions(unittest.TestCase):
         for i in range (0, 4):
             sys.argv.pop()
         # Remove generated files
-        os.system("rm " + self.mdf2xml.options.input)
-        os.system("rm obj/test_file.xml")
+        os.remove(self.mdf2xml.options.input)
+        os.remove("obj/test_file.xml")
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestMdf2XmlFunctions)
 
