@@ -48,7 +48,10 @@ class XlsFormat():
     def is_row_hidden(self, row_nb):
         """Check if a row is hidden.
         """
-        return bool(self.sheet.rowinfo_map[row_nb].hidden)
+        try:
+            return bool(self.sheet.rowinfo_map[row_nb].hidden)
+        except KeyError:
+            return False
 
     def is_col_hidden(self, col_nb):
         """Check if a column is hidden.
