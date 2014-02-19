@@ -66,6 +66,8 @@ class Xls2Mdf(InOut, XlsFormat):
         """
         from xlrd.biffh import XL_CELL_EMPTY, XL_CELL_BLANK
         tmp_file = self.open_write(self.tmp_filename)
+        # Insert header for toolbox with number used for khaling and for Stau
+        tmp_file.write(self.compute_header(231))
         for row_nb in range (1, self.sheet.nrows):
             if row_nb < 5000 and not self.is_row_hidden(row_nb):
                 for col_nb in range (0, self.sheet.ncols):
@@ -76,6 +78,14 @@ class Xls2Mdf(InOut, XlsFormat):
                 tmp_file.write("\n")
         # Close file after processing
         tmp_file.close()
+
+    def compute_header(self, magic_nb):
+        """Create toolbox header.
+        Note that I do not know meaning of the number that I named magic!
+        """
+        header = "\_sh v3.0  " + str(magic_nb) + "  MDF 4.0\n"
+        header += "\_DateStampHasFourDigitYear\n\n"
+        return header
 
     def format_fields(self):
         """Format MDF fields.
@@ -111,8 +121,8 @@ class Xls2Mdf(InOut, XlsFormat):
         txt_file = self.open_write(self.txt_filename)
         for line in mdf_file.readlines():
             l = line.split()
-            # Keep blank lines to separate lexemes
-            if l == [] or (len(l) >= 2 and l[1] != '*'):
+            # Keep blank lines to separate lexemes and keep header
+            if l == [] or (len(l) >= 2 and l[1] != '*') or (len(l) == 1 and l[0] == "\_DateStampHasFourDigitYear"):
                 txt_file.write(line)
         mdf_file.close()
         txt_file.close()

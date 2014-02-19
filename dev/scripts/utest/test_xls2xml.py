@@ -80,11 +80,15 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.xls2mdf.get_sheet()
         self.xls2mdf.write_fields()
         # Build expected result
-        lines = [u"\lx 10\n", u"\sf 11\n", u"\sf 12\n", u"\n"]
+        lines = [u"\_sh v3.0  231  MDF 4.0\n", u"\_DateStampHasFourDigitYear\n", u"\n", u"\lx 10\n", u"\sf 11\n", u"\sf 12\n", u"\n"]
         output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename)
         self.assertListEqual(output.readlines(), lines)
         output.close()
         os.remove(self.xls2mdf.tmp_filename)
+
+    def test_compute_header(self):
+        expected_hdr = "\_sh v3.0  123  MDF 4.0\n\_DateStampHasFourDigitYear\n\n"
+        self.assertEqual(self.xls2mdf.compute_header(123), expected_hdr)
 
     def test_format_fields(self):
         import os
