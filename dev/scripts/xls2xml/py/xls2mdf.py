@@ -88,6 +88,8 @@ class Xls2Mdf(InOut, XlsFormat):
             # Keep blank lines to separate lexemes
             if l == [] or (len(l) >=2 and l[0] == '\\lx' and l[1].find('ENTRY') != -1):
                 mdf_file.write(self.format_lx(line))
+            elif len(l) > 1 and l[0] == '\\va':
+                mdf_file.write(self.format_va(line))
             elif len(l) > 1 and l[0] == '\\xv':
                 examples += line
             elif len(l) > 1 and l[0] == '\\xf':
@@ -95,8 +97,6 @@ class Xls2Mdf(InOut, XlsFormat):
                 # Process all 'xv' and 'xf' examples once
                 mdf_file.write(self.format_xv_xf(examples))
                 examples = ''
-            elif len(l) > 1 and l[0] == '\\va':
-                mdf_file.write(self.format_va(line))
             else:
                 mdf_file.write(line)
         tmp_file.close()
@@ -123,6 +123,18 @@ class Xls2Mdf(InOut, XlsFormat):
         else:
             return line.replace('_MAINENTRY', '')
 
+    def format_va(self, line):
+        """Format 'va' field into 'va' and 'vf' fields.
+        """
+        # 'va' field is formatted as follows: "va (vf) (vf)" etc.
+        va = line.split('(')
+        # String to return in an MDF format: "\va ...\n\vf ...\n\vf ...\n" etc.
+        std_va = va[0].rstrip('\n ') + "\n"
+        for i in range (1, len(va)):
+            # Remove leading end of line and closing parenthesis
+            std_va += "\\vf " + va[i].rstrip('\n )') + "\n"
+        return std_va
+
     def format_xv_xf(self, all_examples):
         """Format 'xv' and 'xf' fields.
         """
@@ -148,18 +160,6 @@ class Xls2Mdf(InOut, XlsFormat):
         for i in range (0, len(list_examples[0])):
             std_examples += "\\xv " + list_examples[0][i] + '\n' + "\\xf " + list_examples[1][i] + '\n'
         return std_examples
-
-    def format_va(self, line):
-        """Format 'va' field into 'va' and 'vf' fields.
-        """
-        # 'va' field is formatted as follows: "va (vf) (vf)" etc.
-        va = line.split('(')
-        # String to return in an MDF format: "\va ...\n\vf ...\n\vf ...\n" etc.
-        std_va = va[0].rstrip('\n ') + "\n"
-        for i in range (1, len(va)):
-            # Remove leading end of line and closing parenthesis
-            std_va += "\\vf " + va[i].rstrip('\n )') + "\n"
-        return std_va
 
     def main(self):
         import os
