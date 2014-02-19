@@ -64,4 +64,9 @@ class XlsFormat():
     def get_contents(self, row_nb, col_nb):
         """Get cell contents.
         """
-        return unicode(self.sheet.cell_value(row_nb, col_nb))
+        from xlrd.biffh import XL_CELL_NUMBER
+        value = self.sheet.cell_value(row_nb, col_nb)
+        if self.sheet.cell_type(row_nb, col_nb) == XL_CELL_NUMBER:
+            # Remove the trailing ".0" characters introduced by the float type
+            value = int(value)
+        return unicode(value)
