@@ -93,7 +93,7 @@ class Xls2Mdf(InOut, XlsFormat):
             elif len(l) > 1 and l[0] == '\\xf':
                 examples += line
                 # Process all 'xv' and 'xf' examples once
-                mdf_file.write(self.format_example(examples))
+                mdf_file.write(self.format_xv_xf(examples))
                 examples = ''
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
@@ -123,7 +123,7 @@ class Xls2Mdf(InOut, XlsFormat):
         else:
             return line.replace('_MAINENTRY', '')
 
-    def format_example(self, all_examples):
+    def format_xv_xf(self, all_examples):
         """Format 'xv' and 'xf' fields.
         """
         # Import regular expression Python module

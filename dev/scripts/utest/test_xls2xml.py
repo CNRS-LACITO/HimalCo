@@ -157,7 +157,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
     def test_format_lx(self):
         pass
 
-    def test_format_example(self):
+    def test_format_xv_xf(self):
         pass
 
     def test_format_va(self):
