@@ -156,7 +156,12 @@ class TestXls2MdfFunctions(unittest.TestCase):
 
     def test_format_lx(self):
         pass
-    
+
+    def test_format_sf(self):
+        in_line = "\sf 123, 456; 789"
+        expected_line = "\sf 123\n\sf 456\n\sf 789\n"
+        self.assertEqual(self.xls2mdf.format_sf(in_line), expected_line)
+
     def test_format_va(self):
         pass
 

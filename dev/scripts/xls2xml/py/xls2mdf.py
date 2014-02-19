@@ -88,6 +88,8 @@ class Xls2Mdf(InOut, XlsFormat):
             # Keep blank lines to separate lexemes
             if l == [] or (len(l) >=2 and l[0] == '\\lx' and l[1].find('ENTRY') != -1):
                 mdf_file.write(self.format_lx(line))
+            elif len(l) > 1 and l[0] == '\\sf':
+                mdf_file.write(self.format_sf(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
             elif len(l) > 1 and l[0] == '\\xv':
@@ -122,6 +124,21 @@ class Xls2Mdf(InOut, XlsFormat):
             return "\se " + line.split()[1].split('_')[0] + "\n"
         else:
             return line.replace('_MAINENTRY', '')
+
+    def format_sf(self, line):
+        """Format 'sf' fields.
+        """
+        # 'sf' field is formatted as follows: "sf number, number; number, ..."
+        sf = line.split()
+        if len(sf) > 2:
+            # String to return in an MDF format: "\sf number\n\sf number\n\sf number\n" etc.
+            std_sf = ''
+            for i in range (1, len(sf)):
+                # Remove ',' and ';' characters
+                std_sf += sf[0] + " " + sf[i].rstrip(',;') + "\n"
+            return std_sf
+        else:
+            return line
 
     def format_va(self, line):
         """Format 'va' field into 'va' and 'vf' fields.
