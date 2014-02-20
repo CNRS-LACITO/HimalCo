@@ -68,6 +68,18 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.xls2mdf.get_sheet()
         self.assertEqual(self.xls2mdf.get_marker(1), "\sf")
 
+    def test_get_submarker(self):
+        self.xls2mdf.open_book()
+        self.xls2mdf.get_sheet()
+        self.assertEqual(self.xls2mdf.get_submarker(0), "")
+        self.assertEqual(self.xls2mdf.get_submarker(1), "numbering=\"B\"")
+
+    def test_format_marker(self):
+        self.xls2mdf.open_book()
+        self.xls2mdf.get_sheet()
+        self.assertEqual(self.xls2mdf.format_marker(0), "\lx")
+        self.assertEqual(self.xls2mdf.format_marker(1), "\sf <numbering=\"B\">")
+
     def test_display_markers(self):
         self.xls2mdf.open_book()
         self.xls2mdf.get_sheet()
@@ -80,7 +92,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.xls2mdf.get_sheet()
         self.xls2mdf.write_fields()
         # Build expected result
-        lines = [u"\_sh v3.0  231  MDF 4.0\n", u"\_DateStampHasFourDigitYear\n", u"\n", u"\lx 10\n", u"\sf 11\n", u"\sf 12\n", u"\n"]
+        lines = [u"\_sh v3.0  231  MDF 4.0\n", u"\_DateStampHasFourDigitYear\n", u"\n", u"\lx 10\n", u"\sf <numbering=\"B\"> 11\n", u"\sf <numbering=\"2011\"> 12\n", u"\n"]
         output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename)
         self.assertListEqual(output.readlines(), lines)
         output.close()
@@ -127,6 +139,11 @@ class TestXls2MdfFunctions(unittest.TestCase):
         output.close()
         os.remove(self.xls2mdf.tmp_filename)
         os.remove(self.xls2mdf.options.output)
+
+    def test_remove_submarker(self):
+        line = "\sf <numbering=\"2011\"> 123\n"
+        expected_line = "\sf 123\n"
+        self.assertEqual(self.xls2mdf.remove_submarker(line), expected_line)
 
     def test_remove_fields(self):
         import os

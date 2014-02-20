@@ -54,12 +54,29 @@ class Xls2Mdf(InOut, XlsFormat):
         # Keep only first 3 characters '\xx'
         return self.get_contents(0, col_nb)[:3]
 
+    def get_submarker(self, col_nb):
+        """Get the submarker if any associated with a cell.
+        Otherwise, return an empty string.
+        """
+        # Get submarker that follows marker
+        return self.get_contents(0, col_nb)[4:]
+
+    def format_marker(self, col_nb):
+        """Return marker, and submarker if any, in following format:
+        \mkr <attribute="value">
+        """
+        mkr = self.get_marker(col_nb)
+        sub_mkr = self.get_submarker(col_nb)
+        if sub_mkr != '':
+            mkr += " <" + sub_mkr + ">"
+        return mkr
+
     def display_markers(self):
         """Display all found markers.
         """
         if self.options.verbose:
             for col_nb in range (0, self.sheet.ncols):
-                print str(col_nb), self.get_marker(col_nb)
+                print str(col_nb), self.format_marker(col_nb)
 
     def write_fields(self):
         """Write out all the fields with their associated marker.
@@ -74,7 +91,7 @@ class Xls2Mdf(InOut, XlsFormat):
                     if not self.is_col_hidden(col_nb):
                         value = self.get_contents(row_nb, col_nb)
                         if value is not XL_CELL_EMPTY and value is not XL_CELL_BLANK:
-                            tmp_file.write(self.get_marker(col_nb) + " " + value + "\n")
+                            tmp_file.write(self.format_marker(col_nb) + " " + value + "\n")
                 tmp_file.write("\n")
         # Close file after processing
         tmp_file.close()
@@ -114,13 +131,21 @@ class Xls2Mdf(InOut, XlsFormat):
         tmp_file.close()
         mdf_file.close()
 
+    def remove_submarker(self, line):
+        """Return the given line without the submarker if there was any.
+        """
+        # Import regular expression Python module
+        import re
+        # Submarker is between "<>"
+        return re.sub(r"^(\\\w{2}) (<[a-zA-Z0-9_=\" ]*>)(\w*)", r"\1" + r"\3", line)
+
     def remove_fields(self):
         """Remove empty and useless fields (\ms *).
         """
         mdf_file = self.open_read(self.options.output)
         txt_file = self.open_write(self.txt_filename)
         for line in mdf_file.readlines():
-            l = line.split()
+            l = self.remove_submarker(line).split()
             # Keep blank lines to separate lexemes and keep header
             if l == [] or (len(l) >= 2 and l[1] != '*') or (len(l) == 1 and l[0] == "\_DateStampHasFourDigitYear"):
                 txt_file.write(line)
