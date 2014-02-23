@@ -1,0 +1,186 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{lineno}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{lineno}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+ 
+ 
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+
+\title{ Tonogenesis and tonal alternations in Khaling }
+\author{Guillaume Jacques }
+\maketitle
+\linenumbers
+ 
+ \section{Introduction}
+The Kiranti languages are almost unique in the Sino-Tibetan family for their intricate and typologically unusual verbal morphology (\citealt{bickel07chintang}, \citealt{jacques12agreement}). While this morphology involves the addition affixes as well as non-concatenative phenomena such as consonant and vowel alternations, tonal alternations are only attested in one Kiranti language Khaling.
+
+Khaling relatively recently\footnote{Tonogenesis and most vowel changes postdate the start of Nepali influence in the eighteenth century, as will be shown in section \ref{sec:obstruents}.} underwent considerable phonological changes, and innovated a two-tone system. The origin of these tonal contrast is relatively transparent, and thus makes Khaling a valuable case study for investigating the creation of tonal alternations. 
+
+In this paper, we first present a description account of Khaling synchronic phonology. Then, we show how falling tones developped from final stops and from the reduction of disyllables, using only examples from nouns, which unlike verbs do not have complex alternation. Then, we use this knowledge of tonogenesis to analyze the synchronic tonal alternations in the Khaling verbal system. Finally, we show the existence of a residue of forms that cannot be straightforwardly explained by the known tonogenetic processes, and which require either revision of the reconstruction or explanations involving analogical leveling.
+
+\section{Synchronic phonology} \label{sec:synchr}
+As shown in \citet[1098]{jacques12khaling}, Khaling has eighteen vowel (Table \ref{tab:vowels}) phonemes and 27 consonantal phonemes (Table \ref{tab:consonants}). The only word-initial clusters allowed are labial or velar stop + \ipa{l} and \ipa{r}. 
+
+The consonant \ipa{ç} only appears as the first element on a word-internal cluster (as in \ipa{seçki} `we kill it'), never word-initially or word-finally. Only unvoiced obstruents and sonorant \ipa{--p}, \ipa{--t} \ipa{--k}, \ipa{--m}, \ipa{--n}, \ipa{--ŋ}, \ipa{--r}, \ipa{--l}, \ipa{--s} and \ipa{--j} can occur as codas. Clusters involving two unvoiced stops or affricates, including geminates (\ipa{tt}, \ipa{pp}, \ipa{kk} and \ipa{ʦʦ}), are realized with preaspiration when the preceding vowel is short.
+
+Unique among Sino-Tibetan languages, Khaling has a contrast between simple stop codas and geminated stop codas, realized as preaspirated final consonants as in \ipa{pɛpp} [pʲɛʰp] `father'  or \ipa{pʰɛtt} [pʰʲɛʰt] `egg'.
+
+\begin{table}
+\caption{List of Khaling vowel phonemes} \label{tab:vowels}\centering
+\begin{tabular}{llllll}
+\ipa{i iː} & \ipa{ʉ ʉː} & &&\ipa{u uː} \\
+\ipa{e eː} & \ipa{ɵ ɵː} & &&\ipa{o oː} \\
+\ipa{ɛ ɛː} &   & &\ipa{ʌ} &  \ipa{oɔ} \\
+&&\ipa{a aː}\\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{List of Khaling consonantal phonemes} \label{tab:consonants}\centering
+\begin{tabular}{llllll}
+\ipa{p} & \ipa{t} &&\ipa{ʦ}  & \ipa{k}&\ipa{ʔ}\\
+\ipa{pʰ} & \ipa{tʰ} &&\ipa{ʦʰ}  & \ipa{kʰ}&\\
+\ipa{b} & \ipa{d} &&\ipa{ʣ}  & \ipa{g}&\\
+\ipa{bʰ} & \ipa{dʰ} &&\ipa{ʣʰ}  & \ipa{gʰ}&\\
+\ipa{m} & \ipa{n} && & \ipa{ŋ}&\\
+  & \ipa{s} && \ipa{ç}& &\ipa{ɦ}\\
+  \ipa{w} & \ipa{l} &\ipa{r}&\ipa{j}  & &\\
+\end{tabular}
+\end{table}
+
+Khaling a a three-way tonal contrast.
+
+
+There is no contrast on short vowels. 
+
+
+
+Syllables with level tone come from sonorant coda syllables, while those with falling tone have two known origins. 
+
+has recently innovated a tone system with a contrast between falling and level tone in syllables with long vowels or sonorant coda.  
+
+\section{Falling tone from lost obstruents} \label{sec:obstruents}
+First, they comes from the loss or nasalization of final stops *-k, *-p and *-t, as can be assessed using comparative data from Limbu and Dumi (\citealt{driem93dumi}, \citealt{michailovsky02dico}).
+
+\begin{table}[H]
+\caption{Examples of falling tones originating from final stops} \centering
+\begin{tabular}{lllll}
+\toprule
+Pre-Khaling	&Limbu	&Dumi	&Khaling	&Meaning\\
+\midrule
+*bit	&pit&	bhiʔi	& bʌ̂j&	cow\\
+*met&	met	&meːʔe&	mêj&	wife\\
+*rak	&yak	&&	rôː	&cliff\\
+*pak&	phak	&poʔo	&pôː	&pig\\
+*ʔik	&ik	&&	ʔûː	&field\\
+\bottomrule
+\end{tabular}
+\end{table}
+In monosyllables, *-t changes to –j preceded by falling tone, while *-k generates a falling tone and lengthened vowel. *-p remains a stop in Khaling as a coda, but can be nasalized to –m with falling tone if followed by a nasal-initial suffix as in the infinitive and various verbals forms:
+\begin{table}[H]
+\caption{Examples of falling tones originating from the nasalization of obstruents} \centering
+\begin{tabular}{lllll}
+\toprule
+Pre-Khaling	&Limbu	&Dumi	&Khaling	&Meaning\\
+\midrule
+*lóp-na	&&lopnɨ	&loɔ̂m-nɛ	&to catch\\
+*rép-na	&&repnɨ	&rêm-nɛ	&to stand\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Falling tone from the reduction of disyllables} \label{sec:disyll}
+Another origin for the falling tone comes from the reduction of disyllables: in inherited disyllables, the vowel and coda of the second syllable are always lost, and either the coda of the first syllable or the onset of the second syllable becomes the coda.
+\begin{table}[H]
+\caption{Examples of falling tone originating from the simplification of a disyllable} \centering
+\begin{tabular}{llllll}
+\toprule
+Pre-Khaling	&Limbu	&Dumi	&Khaling	&Meaning\\
+\midrule
+*kɑ-mit	&khaˀmit	&kɨhɨm	&	kɵ̂m		&cloud\\
+*mama	&ma		&mama	&	mɛ̂m		&mother\\
+*khaliŋ				&&&	kʰɛ‍̂l	&	Khaling\\
+*sili			&&	tsili	&	sîl	&	anger\\
+*nam-ni	&&		naːmnɨ	&	nɛ̂m		in two days\\
+*meri		&&		miri	&	mêr	&	tail\\
+*nini			&&	nini	&	nîn		&aunt (FZ)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Tonogenesis and verbal morphology}
+These origins can explain most of the tonal alternations observed in the verbal system (see \citealt{jacques12khaling}). The first origin accounts for the alternations between obstruent codas and falling tones as in Table \ref{tab:falling.verb}.
+
+\begin{table}[H]
+\caption{Falling tones from lost stops in the Khaling verbal system} \centering \label{tab:falling.verb}
+\begin{tabular}{llllll}
+\toprule
+Verb root	&Meaning	&Non-Past \textsc{3sg} & Past \textsc{3sg}\\
+\midrule
+|ʔɛt|	&	say			&\ipa{ʔɛ̂j} &\ipa{ʔɛs-tɛ} \\
+|tot|	&	be visible			&\ipa{toɔ̂j} &\ipa{tɵs-tɛ} \\
+|ɦuk|	&	bark			&\ipa{ɦûː} &\ipa{ɦʉk-tɛ} \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ The second origin explains   alternations such as those illustrated in Table  \ref{tab:falling.verb2}, where comparative evidence shows that some syllables have been lost.
+\begin{table}[H]
+\caption{Falling tones from lost syllables in the Khaling verbal system} \centering \label{tab:falling.verb2}
+\begin{tabular}{llllll}
+\toprule
+Verb root	&Meaning	&Non-Past \textsc{1sg} & Non-Past \textsc{3pl} \\
+\midrule
+|lom|	&	look for		&\ipa{lom-u} &\ipa{lɵ̂m-nu} $\leftarrow$ *lɵmʉnu\\
+|ʦoŋ|	&	add		&\ipa{ʦoŋ-u} &\ipa{ʦɵ̂ŋ-nu}$\leftarrow$ *ʦɵŋʉnu \\
+|bhert|	&	cause to fly			&\ipa{bherd-u} &\ipa{bhêr-nu} $\leftarrow$ *bherdʉnu \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{Unexplanable alternations}
+Yet, there remain a residue of forms with falling tones that cannot be accounted for by either scenario, in particular the falling tone in past second and third singular forms. The present paper evaluates several hypothesis, including analogy, alternative proto-forms or alternative phonetic laws to explain these exceptions.
+
+
+\bibliographystyle{Linquiry2}
+\bibliography{bibliogj}
+\end{document}
