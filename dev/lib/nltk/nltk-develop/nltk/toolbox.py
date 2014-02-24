@@ -206,8 +206,25 @@ class ToolboxData(StandardFormat):
                     builder.end('header')
                     in_records = True
                 builder.start('record', {})
-            builder.start(mkr, {})
-            builder.data(value)
+            # Insert XML attributes that are between "<>" if any
+            attrs = {}
+            data = value
+            # Check if this is a toolbox marker
+            if mkr != "_sh" and mkr != "_DateStampHasFourDigitYear":
+                # Remove quotation marks from attributes if any
+                value = value.replace('"', '')
+                result = re.match(r"(<(.*)>)? ?(.*)", value)
+                result_attrs = result.group(2)
+                result_data = result.group(3)
+                if result_attrs is not None:
+                    # There are attributes
+                    for attr in result_attrs.split(' '):
+                        attrs.update({attr.split('=')[0] : attr.split('=')[1]})
+                    # If there is no data, result_data = ''
+                    data = result_data
+            # Otherwise, there is only data
+            builder.start(mkr, attrs)
+            builder.data(data)
             builder.end(mkr)
         if in_records:
             builder.end('record')
@@ -224,9 +241,10 @@ class ToolboxData(StandardFormat):
             if isinstance(child, Tree):
                 root.append(self._tree2etree(child))
             else:
-                text, tag = child
+                text, tag, attrib = child
                 e = SubElement(root, tag)
                 e.text = text
+                e.attrib = attrib
         return root
 
     def _chunk_parse(self, grammar=None, root_label='record', loop=1, trace=0, **kwargs):
@@ -258,7 +276,7 @@ class ToolboxData(StandardFormat):
         header = db.find('header')
         tb_etree.append(header)
         for record in db.findall('record'):
-            parsed = cp.parse([(elem.text, elem.tag) for elem in record])
+            parsed = cp.parse([(elem.text, elem.tag, elem.attrib) for elem in record])
             tb_etree.append(self._tree2etree(parsed))
         return tb_etree
 
