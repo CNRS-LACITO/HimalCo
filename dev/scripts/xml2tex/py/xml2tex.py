@@ -43,8 +43,8 @@ class Xml2Tex(InOut, XmlFormat):
     def compute_header(self):
         """Create LaTeX header.
         """
-        hdr = self.open_read("dev/scripts/test/japhug/expected_result/header.tex")
-        header = hdr.readlines()
+        hdr = self.open_read("./test/japhug/expected_result/header.tex")
+        header = hdr.read()
         hdr.close()
         return header
 
@@ -64,8 +64,13 @@ class Xml2Tex(InOut, XmlFormat):
         """Write LaTeX output file.
         """
         tex_file = self.open_write(self.options.output)
+        tex_file.write(self.compute_header())
+        tex_file.write("\n\\begin{document}\n")
         for element in self.tree.getroot().iter():
-            if element.tag == "lx":
+            # LaTeX returns error in case of "\ipa{_}"
+            if element.text == '_':
+                pass
+            elif element.tag == "lx":
                 tex_file.write("\n\label{sec:" + element.attrib['id'] + "}\n")
                 tex_file.write("\section*{\ipa{" + element.text + "}}\n")
             elif element.tag == "se":
@@ -116,6 +121,7 @@ class Xml2Tex(InOut, XmlFormat):
                 pass
             else:
                 tex_file.write(element.tag + " " + element.text + " ERR\n")
+        tex_file.write("\n\end{document}\n")
         tex_file.close()
 
     def main(self):
