@@ -24,3 +24,6 @@ python xls2xml/py/mdf2xml_tb.py -t na1
 
 python mdf2xml/py/mdf2xml_tb.py
 python xml2tex/py/xml2tex.py -t japhug
+cd obj/
+/usr/texbin/xelatex Dictionary.tex >> /dev/null
+/usr/texbin/xelatex Dictionary.tex >> /dev/null

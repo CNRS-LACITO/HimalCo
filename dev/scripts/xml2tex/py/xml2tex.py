@@ -72,6 +72,13 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file.write(self.compute_header())
         tex_file.write("\n\\begin{document}\n")
         tex_file.write("\\begin{multicols}{2}\n")
+        tags_tb = set(["toolbox_data", "header", "_sh"])
+        tags_to_ignore = set(["wav", "wav8", "hbf", "dt", "ng", "gr", "er", "xr"]) # r -> tibetain
+        tags_none = set(["de", "ge", "xe"])
+        tags_ipa = set(["et", "a", "mr", "dv", "uv", "ev", "xv"]) # API
+        tags_zh = set(["dn", "gn", "un", "en", "xn"])
+        tags_ref = set(["sy", "an", "cf"])
+        format = dict({"et":"\\textit{Etym:} ", "a":"\\textit{Variant:} ", "mr":"\\textit{Morph:} ", "dv":"", "uv":"\\textit{Usage:} ", "ev":"", "xv":"", "sy":"\\textit{Syn:} ", "an":"\\textit{Ant:} ", "cf":"\\textit{See:} "})
         for element in self.tree.getroot().iter():
             if element.text.find("{") != -1:
                 element.text = self.format_font(element.text)
@@ -79,56 +86,44 @@ class Xml2Tex(InOut, XmlFormat):
             if element.text == '_':
                 pass
             elif element.tag == "lx":
-                tex_file.write("\n\label{sec:" + element.attrib['id'] + "}\n")
-                tex_file.write("\section*{\ipa{" + element.text + "}}\n")
+                tex_file.write("\n\section*{\ipa{" + element.text + "}}\n")
+                #tex_file.write("\label{sec:" + element.attrib['id'] + "}\n")
+                tex_file.write("\\hypertarget{" + element.attrib['id'] + "}{" + element.text + "}\n")
             elif element.tag == "se":
                 tex_file.write("\subsection*{\ipa{" + element.text + "}}\n")
             elif element.tag == "ps":
-                tex_file.write("\\textit{" + element.text + "}\n")
-            elif element.tag == "a":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "mr":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "ge":
-                tex_file.write(element.text + "\n")
-            elif element.tag == "gn":
-                tex_file.write("\zh{" + element.text + "}\n")
-            elif element.tag == "xv":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "xn":
-                tex_file.write("\zh{" + element.text + "}\n")
-            elif element.tag == "xe":
-                tex_file.write(element.text + "\n")
-            elif element.tag == "et":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "un":
-                tex_file.write("\zh{" + element.text + "}\n")
-            elif element.tag == "uv":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "dv":
-                tex_file.write("\ipa{" + element.text + "}\n")
-            elif element.tag == "dn":
-                tex_file.write("\zh{" + element.text + "}\n")
-            elif element.tag == "de":
-                tex_file.write(element.text + "\n")
-            elif element.tag == "nq":
-                tex_file.write("QUESTION: \ipa{" + element.text + "}\n")
-            elif element.tag == "cf" or element.tag == "sy" or element.tag == "an":
-                for lx in self.tree.iterfind("lxGroup/lx"):
-                    if lx.text == element.text:
-                        tex_file.write("\\ref{sec:" + lx.get('id') + "}\n")
-                        break
-            elif element.tag == "wav" or element.tag == "wav8" or element.tag == "hbf" or element.tag == "ng" or element.tag == "dt":
+                tex_file.write("\\textit{" + element.text + "}.\n")
+            elif element.tag in tags_tb or element.tag in tags_to_ignore:
                 # Remove
                 pass
+            elif element.tag in tags_none:
+                tex_file.write(element.text + "\n")
+            elif element.tag in tags_ipa:
+                tex_file.write(format[element.tag])
+                tex_file.write("\\bf{\ipa{" + element.text + "}}.\n")
+            elif element.tag in tags_zh:
+                tex_file.write("\\textit{\zh{" + element.text + "}}.\n")
+            elif element.tag in tags_ref:
+                tex_file.write(format[element.tag])
+                for lx in self.tree.iterfind("lxGroup/lx"):
+                    if lx.text == element.text:
+                        #tex_file.write("\\ref{sec:" + lx.get('id') + "}\n")
+                        tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "}.\n")
+                        break
+            elif element.tag == "nq":
+                tex_file.write("\\textit{[Ques:} \ipa{" + element.text + "}\\textit{]}\n")
+            elif element.tag == "a2s":
+                tex_file.write("THEME DU PASSE: \ipa{" + element.text + "}\n")
+            elif element.tag == "comit":
+                tex_file.write("COMITATIF: \ipa{" + element.text + "}\n")
+            elif element.tag == "constr":
+                tex_file.write("CONSTRUCTION: \ipa{" + element.text + "}\n")
             elif element.tag.find("Group") != -1 :
                 # Remove
                 pass
-            elif element.tag == "toolbox_data" or element.tag == "header" or element.tag == "_sh" :
-                # Remove
-                pass
             else:
-                tex_file.write(element.tag + " " + element.text + " ERR\n")
+                print "ERR Unknown tag:", element.tag
+                sys.exit(-1)
         tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
