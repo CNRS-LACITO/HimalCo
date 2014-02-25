@@ -71,6 +71,7 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file = self.open_write(self.options.output)
         tex_file.write(self.compute_header())
         tex_file.write("\n\\begin{document}\n")
+        tex_file.write("\\begin{multicols}{2}\n")
         for element in self.tree.getroot().iter():
             if element.text.find("{") != -1:
                 element.text = self.format_font(element.text)
@@ -128,6 +129,7 @@ class Xml2Tex(InOut, XmlFormat):
                 pass
             else:
                 tex_file.write(element.tag + " " + element.text + " ERR\n")
+        tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
 
