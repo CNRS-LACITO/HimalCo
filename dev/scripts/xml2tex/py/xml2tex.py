@@ -60,6 +60,11 @@ class Xml2Tex(InOut, XmlFormat):
         self.tree.write(self.options.input.rstrip(".xml") + "_new.xml", encoding=CODEC)
         print id, "record(s)"
 
+    def format_font(self, text):
+        """Replace '{xxx}' or '\{xxx}' by '\ipa{xxx}'.
+        """
+        return text.replace('\\', '').replace('{', "\\ipa{")
+
     def write_fields(self):
         """Write LaTeX output file.
         """
@@ -67,6 +72,8 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file.write(self.compute_header())
         tex_file.write("\n\\begin{document}\n")
         for element in self.tree.getroot().iter():
+            if element.text.find("{") != -1:
+                element.text = self.format_font(element.text)
             # LaTeX returns error in case of "\ipa{_}"
             if element.text == '_':
                 pass

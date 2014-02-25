@@ -84,7 +84,7 @@ class Mdf2Xml(MdfFormat, XmlFormat):
         txt_file = self.open_write(self.txt_filename)
         for line in tmp_file.readlines():
             l = line.split()
-            if len(l) > 1 and l[0] == '\\lx':
+            if len(l) > 1 and (l[0] == '\\lx' or l[0] == '\\se' or l[0] == '\\a' or l[0] == '\\xv'):
                 txt_file.write(self.format_lx(line))
             elif len(l) > 1 and l[0] in pd:
                 txt_file.write(self.format_pd(line))
@@ -94,10 +94,10 @@ class Mdf2Xml(MdfFormat, XmlFormat):
         txt_file.close()
 
     def format_lx(self, line):
-        """Remove '_', '^' or '$' character at the beginning of 'lx' field.
+        """Remove '_', '^', '$', '&' character at the beginning of 'lx', 'se', 'a', 'xv' fields.
         """
         lx = line.split()
-        line = lx[0] + " " + lx[1].lstrip('_^$') + "\n"
+        line = lx[0] + " " + lx[1].lstrip('_^$&') + "\n"
         return line
 
     def format_pd(self, line):
