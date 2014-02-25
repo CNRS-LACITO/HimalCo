@@ -48,18 +48,25 @@ class Xml2Tex(InOut, XmlFormat):
         hdr.close()
         return header
 
+    def add_lx_id(self):
+        """Add 'lx' identifiers.
+        """
+        self.tree = parse(self.options.input)
+        id = 0
+        for element in self.tree.getroot().iter():
+            if element.tag == "lx":
+                id += 1
+                element.attrib['id'] = str(id)
+        self.tree.write(self.options.input.rstrip(".xml") + "_new.xml", encoding=CODEC)
+        print id, "record(s)"
+
     def write_fields(self):
         """Write LaTeX output file.
         """
         tex_file = self.open_write(self.options.output)
-        tree = parse(self.options.input)
-        root = tree.getroot()
-        # Number of 'lx'
-        sec_nb = 0
-        for element in root.iter():
+        for element in self.tree.getroot().iter():
             if element.tag == "lx":
-                sec_nb += 1
-                tex_file.write("\n\label{sec:" + str(sec_nb) + "}\n")
+                tex_file.write("\n\label{sec:" + element.attrib['id'] + "}\n")
                 tex_file.write("\section*{\ipa{" + element.text + "}}\n")
             elif element.tag == "se":
                 tex_file.write("\subsection*{\ipa{" + element.text + "}}\n")
@@ -94,7 +101,10 @@ class Xml2Tex(InOut, XmlFormat):
             elif element.tag == "nq":
                 tex_file.write("QUESTION: \ipa{" + element.text + "}\n")
             elif element.tag == "cf" or element.tag == "sy" or element.tag == "an":
-                tex_file.write("\\ref{sec:0} -> " + element.text + "\n")
+                for lx in self.tree.iterfind("lxGroup/lx"):
+                    if lx.text == element.text:
+                        tex_file.write("\\ref{sec:" + lx.get('id') + "}\n")
+                        break
             elif element.tag == "wav" or element.tag == "wav8" or element.tag == "hbf" or element.tag == "ng" or element.tag == "dt":
                 # Remove
                 pass
@@ -107,10 +117,11 @@ class Xml2Tex(InOut, XmlFormat):
             else:
                 tex_file.write(element.tag + " " + element.text + " ERR\n")
         tex_file.close()
-        print sec_nb, "record(s)"
 
     def main(self):
         self.parse_options()
+        # Add 'lx' identifiers
+        self.add_lx_id()
         # Convert to LaTeX
         self.write_fields()
 
