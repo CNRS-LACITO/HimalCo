@@ -72,58 +72,76 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file.write(self.compute_header())
         tex_file.write("\n\\begin{document}\n")
         tex_file.write("\\begin{multicols}{2}\n")
+        # Tags added by Toolbox
         tags_tb = set(["toolbox_data", "header", "_sh"])
-        tags_to_ignore = set(["wav", "wav8", "hbf", "dt", "ng", "gr", "er", "xr"]) # r -> tibetain
-        tags_none = set(["de", "ge", "xe"])
-        tags_ipa = set(["et", "a", "mr", "dv", "uv", "ev", "xv"]) # API
-        tags_zh = set(["dn", "gn", "un", "en", "xn"])
+        # Tags that need additional references
         tags_ref = set(["sy", "an", "cf"])
-        format = dict({"et":"\\textit{Etym:} ", "a":"\\textit{Variant:} ", "mr":"\\textit{Morph:} ", "dv":"", "uv":"\\textit{Usage:} ", "ev":"", "xv":"", "sy":"\\textit{Syn:} ", "an":"\\textit{Ant:} ", "cf":"\\textit{See:} "})
+        # japhug : 'ipa' = API ; chinois : 'zh' ; tibetain : r
+        format = dict({
+            "lx"    : lambda e: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + e.text + "}} \\hspace{0.2cm} \\hypertarget{" + e.attrib['id'] + "}{}\n",
+            "wav"   : lambda e: "",
+            "wav8"  : lambda e: "",
+            "hbf"   : lambda e: "",
+            "dt"    : lambda e: "",
+            "se"    : lambda e: "\n\\hspace{0.2cm} {\large \ipa{" + e.text + "}}\n",
+            "et"    : lambda e: "\\textit{Etym:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "ps"    : lambda e: "\\textcolor{cyan}{\\textit{" + e.text + "}}\n",
+            "sy"    : lambda e: "\\textit{Syn:} ",
+            "an"    : lambda e: "\\textit{Ant:} ",
+            "cf"    : lambda e: "\\textit{See:} ",
+            "ng"    : lambda e: "",
+            "nq"    : lambda e: "\\textit{[Ques:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "mr"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "ms"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "a2s"   : lambda e: "\\textit{[Theme du passe:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "comit" : lambda e: "\\textit{[Comitatif:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "constr": lambda e: "\\textit{[Construction:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "dv"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
+            "de"    : lambda e: e.text + ".\n",
+            "ge"    : lambda e: e.text + "\n",
+            "dn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "gn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "gr"    : lambda e: "",
+            "uv"    : lambda e: "\\textit{Usage:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "un"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "ev"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
+            "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "er"    : lambda e: "",
+            "xv"    : lambda e: "\\hspace{0.1cm} \\textbullet \\hspace{0.1cm} \\textcolor{blue}{\ipa{" + e.text + "}} - \n",
+            "xe"    : lambda e: e.text + "\n",
+            "xn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "xr"    : lambda e: ""
+        })
+        # Keep reference errors
+        errors = set()
         for element in self.tree.getroot().iter():
             if element.text.find("{") != -1:
                 element.text = self.format_font(element.text)
-            # LaTeX returns error in case of "\ipa{_}"
             if element.text == '_':
+                # LaTeX returns error in case of "\ipa{_}"
                 pass
-            elif element.tag == "lx":
-                tex_file.write("\n\section*{\ipa{" + element.text + "}}\n")
-                #tex_file.write("\label{sec:" + element.attrib['id'] + "}\n")
-                tex_file.write("\\hypertarget{" + element.attrib['id'] + "}{" + element.text + "}\n")
-            elif element.tag == "se":
-                tex_file.write("\subsection*{\ipa{" + element.text + "}}\n")
-            elif element.tag == "ps":
-                tex_file.write("\\textit{" + element.text + "}.\n")
-            elif element.tag in tags_tb or element.tag in tags_to_ignore:
+            elif element.tag in tags_tb:
                 # Remove
                 pass
-            elif element.tag in tags_none:
-                tex_file.write(element.text + "\n")
-            elif element.tag in tags_ipa:
-                tex_file.write(format[element.tag])
-                tex_file.write("\\bf{\ipa{" + element.text + "}}.\n")
-            elif element.tag in tags_zh:
-                tex_file.write("\\textit{\zh{" + element.text + "}}.\n")
-            elif element.tag in tags_ref:
-                tex_file.write(format[element.tag])
-                for lx in self.tree.iterfind("lxGroup/lx"):
-                    if lx.text == element.text:
-                        #tex_file.write("\\ref{sec:" + lx.get('id') + "}\n")
-                        tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "}.\n")
-                        break
-            elif element.tag == "nq":
-                tex_file.write("\\textit{[Ques:} \ipa{" + element.text + "}\\textit{]}\n")
-            elif element.tag == "a2s":
-                tex_file.write("THEME DU PASSE: \ipa{" + element.text + "}\n")
-            elif element.tag == "comit":
-                tex_file.write("COMITATIF: \ipa{" + element.text + "}\n")
-            elif element.tag == "constr":
-                tex_file.write("CONSTRUCTION: \ipa{" + element.text + "}\n")
             elif element.tag.find("Group") != -1 :
                 # Remove
                 pass
             else:
-                print "ERR Unknown tag:", element.tag
-                sys.exit(-1)
+                tex_file.write(format[element.tag](element))
+                if element.tag in tags_ref:
+                    found = False
+                    for lx in self.tree.iterfind("lxGroup/lx"):
+                        if lx.text == element.text:
+                            tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "}.\n")
+                            found = True
+                            break
+                    if not found:
+                        # Just write the reference without hyperlink and log error
+                        tex_file.write(element.text + ".\n")
+                        errors.add(element.text)
+        for error in errors:
+            print error
         tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
