@@ -5,9 +5,9 @@ from defs import CODEC
 from in_out import InOut
 
 try:
-    from xml.etree.cElementTree import dump, fromstring, parse, tostring, XML
+    from xml.etree.cElementTree import dump, fromstring, parse, tostring, XML, Element, ElementTree
 except ImportError:
-    from xml.etree.ElementTree import dump, fromstring, parse, tostring, XML
+    from xml.etree.ElementTree import dump, fromstring, parse, tostring, XML, Element, ElementTree
 
 class XmlFormat(InOut):
     def __init__(self):
