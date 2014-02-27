@@ -44,8 +44,8 @@ class TestMdf2XmlFunctions(unittest.TestCase):
         #self.assertTrue(self.mdf2xml.options.unit_test)
 
     def test_format_lx(self):
-        in_lines = ["\lx _a\n", "\lx ^ab\n", "\lx $abc\n"]
-        expected_lines = ["\lx a\n", "\lx ab\n", "\lx abc\n"]
+        in_lines = ["\lx _a\n", "\lx ^ab\n", "\lx $abc\n", "\lx &a bb ccc\n"]
+        expected_lines = ["\lx a\n", "\lx ab\n", "\lx abc\n", "\lx a bb ccc\n"]
         for i in range (0,3):
             self.assertEqual(self.mdf2xml.format_lx(in_lines[i]), expected_lines[i])
 

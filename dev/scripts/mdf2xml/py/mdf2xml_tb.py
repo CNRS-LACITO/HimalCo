@@ -97,7 +97,10 @@ class Mdf2Xml(MdfFormat, XmlFormat):
         """Remove '_', '^', '$', '&' character at the beginning of 'lx', 'se', 'a', 'xv' fields.
         """
         lx = line.split()
-        line = lx[0] + " " + lx[1].lstrip('_^$&') + "\n"
+        line = lx[0] + " " + lx[1].lstrip('_^$&')
+        if len(lx) > 2:
+            line += " " + ' '.join(["%s" % e for e in lx[2:]])
+        line += "\n"
         return line
 
     def format_pd(self, line):
