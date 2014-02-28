@@ -38,10 +38,22 @@ class TestMdf2XmlFunctions(unittest.TestCase):
         self.assertEqual(self.mdf2xml.options.input, "../../dict/japhug/toolbox/Dictionary.txt")
         self.assertEqual(self.mdf2xml.options.output, "./obj/Dictionary.xml")
         self.assertEqual(self.mdf2xml.options.database, "../../dict/japhug/lexique_pro/japhug.db")
-        self.assertIsNone(self.mdf2xml.options.grammar)
+        self.assertEqual(self.mdf2xml.options.grammar, GRAMMAR_JAP1)
         self.assertEqual(self.mdf2xml.options.struct, "../../dict/japhug/toolbox/Settings/MDF_AltH.typ")
         self.assertIsNone(self.mdf2xml.options.test)
         #self.assertTrue(self.mdf2xml.options.unit_test)
+
+    def test_format_lx(self):
+        in_lines = ["\lx _a\n", "\lx ^ab\n", "\lx $abc\n"]
+        expected_lines = ["\lx a\n", "\lx ab\n", "\lx abc\n"]
+        for i in range (0,3):
+            self.assertEqual(self.mdf2xml.format_lx(in_lines[i]), expected_lines[i])
+
+    def test_format_pd(self):
+        in_lines = ["\\1s blabla\n", "\\4s blabla\n", "\pd blabla\n"]
+        expected_lines = ["\\a1s blabla\n", "\\a4s blabla\n", "\pd blabla\n"]
+        for i in range (0,3):
+            self.assertEqual(self.mdf2xml.format_pd(in_lines[i]), expected_lines[i])
 
     def test_main(self):
         import os

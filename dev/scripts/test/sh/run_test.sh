@@ -15,5 +15,15 @@ python mdf2xml/py/mdf2xml_tb.py -t japhug2
 python mdf2xml/py/mdf2xml_tb.py -t khaling1
 python mdf2xml/py/mdf2xml_tb.py -t khaling2
 
+# Na
+
 python xls2xml/py/xls2mdf.py -t na1
 python xls2xml/py/mdf2xml_tb.py -t na1
+
+# Japhug
+
+python mdf2xml/py/mdf2xml_tb.py
+python xml2tex/py/xml2tex.py -t japhug
+cd obj/
+/usr/texbin/xelatex Dictionary.tex >> /dev/null
+/usr/texbin/xelatex Dictionary.tex >> /dev/null
