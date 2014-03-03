@@ -448,6 +448,12 @@
 \CharStyle
 \-mkr
 
+\+mkr ms
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr na
 \nam Notes (anthropology)
 \desc For any ethnographic note pertinent to the lexeme that you want separate from general notes. Capitalization and punctuation should be used as needed.
