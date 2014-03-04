@@ -216,6 +216,12 @@ class Xml2Tex(InOut, XmlFormat):
         """
         return text.replace('\\', '').replace('{', "\\ipa{")
 
+    def format_pinyin(self, text):
+        """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
+        """
+        import re
+        return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
+
     def write_fields(self):
         """Write LaTeX output file.
         """
@@ -270,6 +276,8 @@ class Xml2Tex(InOut, XmlFormat):
         for element in self.tree.getroot().iter():
             if element.text.find("{") != -1:
                 element.text = self.format_font(element.text)
+            if element.text.find("@") != -1:
+                element.text = self.format_pinyin(element.text)
             if element.text == '_':
                 # LaTeX returns error in case of "\ipa{_}"
                 pass
