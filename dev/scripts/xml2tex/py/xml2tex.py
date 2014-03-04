@@ -251,7 +251,7 @@ class Xml2Tex(InOut, XmlFormat):
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
             "mr"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
             "ms"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
-            "a2s"   : lambda e: "\\textit{[Theme du passe:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "a2s"   : lambda e: "\\textit{[Th\`{e}me du pass\\'{e}:} \ipa{" + e.text + "} \\textit{]}.\n",
             "comit" : lambda e: "\\textit{[Comitatif:} \ipa{" + e.text + "} \\textit{]}.\n",
             "constr": lambda e: "\\textit{[Construction:} \ipa{" + e.text + "} \\textit{]}.\n",
             "dv"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
