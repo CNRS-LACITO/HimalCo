@@ -1,0 +1,309 @@
+c ====================================================================
+c MDFLIST2.CCT - Format a gloss index (finderlist)
+c For Shoebox version 5.0
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c
+c Input:     Lexical data fields selected by MDFLIST1.CCT according to
+c            the user's choices (e.g. Audience, Include part of speech).
+c            Each reversal item from a \re, \ge, \rn, or \gn field
+c            along with related fields \lc, \hm, \se, \ps, \pn, \sn
+c            has become a reversal record. Shoebox has resorted these
+c            records by reversal item and part of speech.
+c
+c Output:    A Standard Format file which will be converted to RTF
+c            according to the "MDF Rich Text Format" database type's
+c            marker properties (field names in the .typ file correspond
+c            to style names in the Word document template .dot file).
+c            Shoebox uses one of the MDF_*.CCT change tables (selected
+c            in Audience Setup) to change labels and remove redundant
+c            periods after parts of speech in this table's output.
+c
+c 1994-02    David F. Coward (david_coward@sil.org)
+c            SIL, Kotak Pos 1050, Ambon, Maluku 97001 INDONESIA
+c            MDFLIST.CCT change table in MDF version 1.0 for DOS
+c 1996-08-10 Mark R. Pedrotti (mark_pedrotti@sil.org)
+c            JAARS, P.O. Box 248, Waxhaw, NC 28173-0248 USA
+c            Adapted from David Coward's MDFLIST.CCT and MDFMERG.CCT.
+c 1997-12-04 MRP - Change notation for "special symbols" to |{emdash} etc.
+c 1998-03-31 MRP - Output sense number immediately following the subentry,
+c            not the entry, if a reversal item has both of them.
+c            Simplified by changing some markers that MDFLIST1.CCT outputs
+c            and removing unneeded logic for character styles.
+c 1998-04-14 MRP - Generalize the hierarchy logic.
+c            EmdashForEmptyPartOfSpeech option.
+c 1998-07-25 MRP - DontRepeatPartOfSpeech option.
+c            Acknowledgment: Prototyped by Bernis Eliason (SIL Colombia).
+c            Note: Now MDFList1.cct outputs homonym numbers as part of
+c            the \lc field using |hm{...} subfield notation.
+c            Change other option to DontReplaceEmptyPartOfSpeech.
+c 1998-12-09 MRP - Add a regional finderlist option and distinguish
+c            the audience's language from the language of the index.
+c            Added HR and LR styles, use fv for vernacular lexeme.
+c 1999-03-18 MRP - Change options to \_EnglishGlossIndex, etc.
+c 2000-05-25 MRP - Allow subfield formatting in reversals and glosses.
+c            For example: game of fv:sungka, play a...
+c            If there are subfields, the \re, \rn, or \rr field
+c            output from MDFList1.cct consists of two lines:
+c            1. gloss index for sorting (without the subfield notation)
+c            2. gloss index for printing
+c
+c --------------------------------------------------------------------
+
+c ====================================================================
+c INITIALIZATION
+c --------------------------------------------------------------------
+
+begin >
+    store(WS) ' ' nl d9 endstore  c White space: space, newline, tab
+    store(Backslash) '\' endstore
+    store(Newline) nl endstore
+    store(total) '0' endstore  c Initialize total number of entries
+    c Set default options
+    set(TwoColumns)  c Page Setup, Section, Columns, Number: 2
+    set(Total)  c Options, Formatting: Total number of entries
+    set(sn_under_se)  c Standard hierarchy
+
+    c *** To select the following option change clear to set:
+    clear(DontRepeatPartOfSpeech)
+    clear(DontReplaceEmptyPartOfSpeech)
+    
+    use(gOptionFields)
+
+c ====================================================================
+c DEFINITIONS FOR OUTPUT FORMATTING
+c --------------------------------------------------------------------
+
+c ====================================================================
+define(dResetStoresAndSwitches) >
+    store(rx) clear(rx)          c \re Reversal (E) or \rn or \rr
+    store(lc) clear(lc)          c \lc Lexical citation
+    store(hm) clear(hm)          c \hm Homonym number
+    store(se) clear(se)          c \se Subentry
+    store(ps) clear(ps,psEmpty)  c \ps Part of speech
+    store(pn) clear(pn,pnEmpty)  c \pn Part of speech (n)
+    store(sn) clear(sn)          c \sn Sense number
+    endstore
+
+c ====================================================================
+define(dOutputReversalRecord) >
+    endstore
+
+    if(rxPrev) begin  c If there's a previous record
+        ifn(AlreadyPunctuated) begin
+            c The previous record's final punctuation depends on
+            c this record's headword: is it the same or different?
+            ifeq(rx) cont(rxPrev) begin '|fs{;}' end else '|fs{.}' endif
+            nl  c End of the last field in the previous reversal record
+        end endif
+    end endif
+
+    if(rx) begin
+        set(OutputParagraph)  c 1998-07-25 MRP
+        ifneq(rx) cont(rxPrev) begin  c Only output headword when it changes
+            incr(total)  c Increment total number of entries
+            '\FP' nl  c Finderlist Paragraph
+            clear(OutputParagraph)  c Has now been output
+            c Why mark the tab as |fs? If the last headword on a page has
+            c a homonym number, then a tab with the headword's style
+            c would be used in the header STYLEREF instead of the headword.
+            if(e) '\HE ' endif  c 1998-12-09 MRP
+			if(n) '\HN ' endif
+			if(r) '\HR ' endif
+			out(rx) '|fs{ ' d9 '}' nl
+            set(rxPrev) store(rxPrev) outs(rx) endstore
+            clear(pxPrev) store(pxPrev) endstore  c 1998-07-25 MRP
+        end endif  c ifneq(rx) cont(rxPrev)
+
+        if(ps) begin 
+            set(OutputPartOfSpeech)  c 1998-07-25 MRP
+            if(pxPrev) begin
+                ifeq(ps) cont(pxPrev) begin
+                    if(DontRepeatPartOfSpeech)
+                        clear(OutputParagraph)
+                        clear(OutputPartOfSpeech)
+                    endif  c if(DontRepeatPartOfSpeech)
+                end endif  c ifeq(ps)
+            end endif  c if(pxPrev)
+            set(pxPrev) store(pxPrev) outs(ps) endstore
+
+            c Use the same paragraph style (with a tab indent) for lines
+            c under the same headword. Why mark the tab as |fs?
+            c It avoids the need for the No Word Wrap marker property.
+            c NOTE: If the user unchecks Include part of speech,
+            c identical reversal items occur together in one paragraph.
+            if(OutputParagraph) '\FP |fs{' d9 '}' nl endif
+            
+            if(OutputPartOfSpeech) begin
+                if(psEmpty) begin
+                    ifn(DontReplaceEmptyPartOfSpeech) '\ps |{emdash}' nl endif
+                end else
+                    '\ps ' out(ps) '.' nl
+                endif  c if(psEmpty)
+            end endif  c if(OutputPartOfSpeech)
+        end endif  c if(ps)
+
+        if(pn) begin 
+            set(OutputPartOfSpeech)  c 1998-07-25 MRP
+            if(pxPrev) begin
+                ifeq(pn) cont(pxPrev) begin
+                    if(DontRepeatPartOfSpeech)
+                        clear(OutputParagraph)
+                        clear(OutputPartOfSpeech)
+                    endif  c if(DontRepeatPartOfSpeech)
+                end endif  c ifeq(pn)
+            end endif  c if(pxPrev)
+            set(pxPrev) store(pxPrev) outs(pn) endstore
+
+            c Use the same paragraph style (with a tab indent) for lines
+            c under the same headword. Why mark the tab as |fs?
+            c It avoids the need for the No Word Wrap marker property.
+            c NOTE: If the user unchecks Include part of speech,
+            c identical reversal items occur together in one paragraph.
+            if(OutputParagraph) '\FP |fs{' d9 '}' nl endif
+
+            if(OutputPartOfSpeech) begin
+                if(pnEmpty) begin
+                    ifn(DontReplaceEmptyPartOfSpeech) '\ps |{emdash}' nl endif
+                end else
+                    '\pn ' out(pn) '.' nl
+                endif  c if(pnEmpty)
+            end endif  c if(OutputPartOfSpeech)
+        end endif  c if(pn)
+
+        '\fv '  c 1998-12-09 MRP
+
+        if(se) begin
+            out(se)
+            if(sn) begin
+                if(sn_under_se) ' |sn{(' out(sn) ')}' clear(sn) endif
+            end endif c if(sn)
+        end endif  c if(se)
+
+        if(lc) begin
+            if(se) '|fs{,} |fl{see:} ' endif
+            out(lc)
+            if(hm) '|hm{' out(hm) '}' endif
+            if(sn) ' |sn{(' out(sn) ')}' endif
+        end endif  c if(lc)
+
+        do(dResetStoresAndSwitches)
+    end endif  c if(rx)
+    
+    clear(AlreadyPunctuated)
+    if(LP) begin
+        c Section heading for new letter (or syllable).
+        c Unless this is the first section heading, the last record
+        c in the previous section needs its final punctuation.
+        if(rxPrev) '|fs{.}' nl set(AlreadyPunctuated) endif
+        c In Shoebox RTF conversion, the \LS section's single-column
+        c format appies to the text that FOLLOWS the break.
+        c The \LP1 marker's style has space after and keep with next.
+        if(TwoColumns) '\LS' nl '\LP ' else '\LP1 ' endif
+        if(e) '|LE{' endif  c 1998-12-09 MRP
+		if(n) '|LN{' endif
+		if(r) '|LR{' endif
+		out(LP) '}' nl
+        if(TwoColumns) '\DS' nl endif  c Section break
+        store(LP) endstore clear(LP)
+    end endif  c if(LP)
+
+c ====================================================================
+define(dEndfile) >
+    do(dOutputReversalRecord)
+    if(rxPrev) '|fs{.}' nl endif  c Punctuate the final paragraph
+    if(TwoColumns) '\SS' nl endif  c A single-column section FOLLOWS
+    if(Total) '\CP Total number of entries: ' out(total) nl endif
+    endfile
+
+c ====================================================================
+c RULES FOR INPUT PROCESSING
+c --------------------------------------------------------------------
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+'\_National' nl > set(National)  c 1998-12-09 MRP
+'\_EnglishGlossIndex'  nl > set(e) set(GlossOption)
+'\_NationalGlossIndex' nl > set(n) set(GlossOption)
+'\_RegionalGlossIndex' nl > set(r) set(GlossOption)
+
+'\_SingleColumn' nl > clear(TwoColumns)
+'\_NoTotal' nl > clear(Total)
+
+'\_se_ps_sn' nl > set(sn_under_se)
+'\_se_sn_ps' nl > set(sn_under_se)
+'\_AlternateHierarchy' nl > next
+'\_sn_se_ps' nl > clear(sn_under_se)
+'\_sn_ps_se' nl > clear(sn_under_se)
+'\_ps_se_sn' nl > set(sn_under_se)
+'\_ps_sn_se' nl > clear(sn_under_se)
+
+'\_DontRepeatPartOfSpeech' > set(DontRepeatPartOfSpeech)  c 1998-07-25 MRP
+'\_DontReplaceEmptyPartOfSpeech' > set(DontReplaceEmptyPartOfSpeech)
+
+'\_' > store(omit) use(gUnknownOptionField)
+
+nl > ''
+
+'' >
+	ifn(GlossOption) begin  c 1998-12-09 MRP
+		if(National) set(n) else set(e) endif
+	end endif  c ifn(GlossOption)
+	c set(r) clear(e,n)  c *** Test the regional option in Shoebox 4
+	store(omit) use(gMain)
+
+c --------------------------------------------------------------------
+group(gUnknownOptionField)  c From an older or newer version of Shoebox
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ====================================================================
+group(gMain)  c Read the reversal records
+
+'\LP ' > store(LP) set(LP) use(gField)
+          
+'\lx' nl > do(dOutputReversalRecord)  c Output previous record
+
+'\lc ' > store(lc) set(lc) use(gField) set(NonBreakingHyphen)
+'\hm ' > store(hm) set(hm) use(gField)
+
+'\se ' > store(se) set(se) use(gField)
+
+'\ps ' > store(ps) set(ps) use(gField)
+'\ps' fol(Newline) > store(omit) use(gField) set(ps,psEmpty)
+
+'\pn ' > store(pn) set(pn) use(gField)
+'\pn' fol(Newline) > store(omit) use(gField) set(pn,pnEmpty)
+
+'\sn ' > store(sn) set(sn) use(gField)                        
+
+'\rr ' > next  c 1998-12-09 MRP
+'\rn ' > next
+'\re ' > store(rx) set(rx) use(gField,gReversal) set(NonBreakingHyphen)
+
+'\' > store(omit) use(gField)
+
+c ====================================================================
+group(gField)  c Read the contents of a data field
+
+c NOTE: MDFLIST1.CCT has already removed extra white space from fields
+c and converted underline to space in gloss fields used for reversal.
+
+'-' > if(NonBreakingHyphen) '|{_}' else dup endif
+'-' prec(WS) > '|{_}'
+
+nl fol(Newline) > ''  c Shoebox inserts a newline between records
+
+nl fol(Backslash) > use(gMain) clear(NonBreakingHyphen)
+
+endfile > next
+nl endfile > do(dEndfile)
+
+c --------------------------------------------------------------------
+group(gReversal)
+
+c 2000-05-25 Allow subfield formatting in reversals and glosses.
+nl > store(rx)
+
+c END ===============================================================

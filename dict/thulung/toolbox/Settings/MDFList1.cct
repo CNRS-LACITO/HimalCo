@@ -1,0 +1,443 @@
+c =====================================================================
+c MDFLIST1.CCT - Select data fields for a gloss index (finderlist)
+c For Shoebox version 5.0
+c --------------------------------------------------------------------- 
+c
+c 1995-06    David F. Coward (david_coward@sil.org)
+c            SIL, Kotak Pos 1050, Ambon, Maluku 97001 INDONESIA
+c            MDFENGL.CCT change table in MDF version 1.1a for DOS
+c 1996-08-10 Mark R. Pedrotti (mark_pedrotti@sil.org)
+c            JAARS, P.O. Box 248, Waxhaw, NC 28173-0248 USA
+c            Adapted from David Coward's MDFENGL.CCT and MDFNATN.CCT.
+c 1997-02-25 MRP - Removed 20 item limit (for Shoebox 3.06).
+c 1998-03-31 MRP - Changed some markers that MDFLIST2.CCT depends on;
+c            now removing all extra white space from the fields.
+c 1998-04-14 MRP - Generalize the hierarchy logic.
+c 1998-04-15 MRP - Empty reversal fields shouldn't override glosses
+c            and empty \pn fields shouldn't override \ps fields.
+c 1998-06-30 MRP - Correct mistake that prevented identical items
+c            from being merged.
+c 1998-07-25 MRP - Convert underline to a space in all fields.
+c            Output homonym number using |hm{...} subfield notation
+c            instead of as a \hm data field to avoid its being used
+c            for sorting when Shoebox reads the temporary file.
+c 1998-12-09 MRP - Add a regional finderlist option and distinguish
+c            the audience's language from the language of the index.
+c 2000-05-25 MRP - Allow subfield formatting in reversals and glosses.
+c            For example: game of fv:sungka, play a...
+c            If there are subfields, the \re, \rn, or \rr field
+c            oubput by MDFList1.cct consists of two lines:
+c            1. gloss index for sorting (without the subfield notation)
+c            2. gloss index for printing
+c
+c ---------------------------------------------------------------------
+c
+c The gloss index (finderlist) uses three kinds of data fields
+c 1. Record identity
+c    \lx  Lexeme
+c    \hm  Homonymn number
+c    \lc  Lexical citation
+c 2. Subrecord hierarchy            Alternate:
+c    \se  Subentry                  \sn  Sense number
+c    . \ps  Part of speech          . \se  Subentry
+c    . . \pn  Part of speech (n)    . . \ps  Part of speech
+c    . . . \sn  Sense number        . . . \pn  Part of speech (n)
+c 3. Reversal and gloss
+c    \re  Reversal (E)
+c    \ge  Gloss (E)
+c    \rn  Reversal (n)
+c    \gn  Gloss (n)
+c    \rr  Reversal (r)
+c    \gr  Gloss (r)
+
+c MDF formats the finderlist, like the dictionary, by "subrecord" units.
+c A finderlist subrecord is the set of reversal and gloss fields
+c sandwiched between any two subrecord hierarchy markers \se \ps \pn \sn,
+c which in the standard hierarchy is a single sense of meaning.
+c
+c In each subrecord MDF uses glosses \ge \gn \gr only if there aren't any
+c reversal fields \re \rn \rr. Semicolons separate multiple reversal items
+c in a single gloss or reversal field.
+c
+c You can sometimes use a simple gloss for the finderlist:
+c \lx huma
+c \ge house
+c
+c You may want a single 'translation approximation' for interlinearizing
+c but need several entries in the reversed index:
+c \lx huma
+c \ge house
+c \re house ; hut ; building ; dwelling
+c
+c If * is the first non-white-space character in a reversal field,
+c MDF ignores any items within that subrecord.
+c Use * for discourse markers, particles, or functors that have
+c no adequate gloss in English nor the National language.
+c
+c Besides giving structure, the \sn \se \ps \pn fields together with
+c the record identity \lx \hm \lc form the address or reference to
+c the (part of the) dictionary entry containing reversal item.
+c
+c --------------------------------------------------------------------
+
+c ===================================================================== 
+c INITIALIZATION
+c --------------------------------------------------------------------- 
+
+begin >
+    store(WS) ' ' nl d9 endstore  c White space: space, newline, tab
+    store(Backslash) '\' endstore
+    c 2000-05-25 Allow subfield formatting in reversals and glosses.
+    c Note: Unlike in MDFDict2.cct, space is matched separately.
+    store(chrsetPunct) '.,;:"]|\=+)`></?' "'" endstore
+    c Default options
+    set(IncludePartOfSpeech)  c Options, Include part of speech
+    set(se_ps_sn)  c Standard hierarchy
+    use(gOptionFields)
+
+c ===================================================================== 
+c DEFINITIONS FOR OUTPUT
+c --------------------------------------------------------------------- 
+
+c To implement the conditional logic, reversals and glosses are stored
+c until the end of a subrecord; then the right stuff is output.
+
+define(dOutputSubrecord) >
+	ifn(omit) begin
+		ifneq(reversals) '' out(reversals) else out(glosses) endif
+	end endif  c ifn(omit)
+    clear(omit) store(reversals,glosses) endstore
+
+c This change table outputs each finderlist item as a record.
+c Shoebox will read these temporary finderlist records using the same
+c MDF database type as the user's lexical database file uses.
+c That's why this table uses the same record marker and marker hierarchy.
+c Shoebox will sort the records by reversal item and part of speech.
+c If the hierarchy isn't right, secondary sorting will be wrong.
+
+define(se) > if(se) '\se ' outs(se) nl endif
+define(ps) >
+    if(IncludePartOfSpeech) begin
+        if(pn)
+            '\pn ' outs(pn) nl
+        else begin if(ps)
+            '\ps ' outs(ps) nl
+        else
+            '\ps' nl
+        endif end endif
+    end endif  c if(IncludePartOfSpeech)
+define(sn) > if(sn) '\sn ' outs(sn) nl endif
+
+c 2000-05-25 Allow subfield formatting in reversals and glosses.
+define(dSubfieldEnd) >
+    append(rxSort) outs(rx) outs(subfield) endstore
+    append(rxPrint) outs(rx) outs(marker) outs(subfield) '}' endstore
+    store(rx) endstore
+
+define(dSubfieldEndPunct) >
+    append(rxSort) outs(rx) outs(subfield) endstore
+    append(rxPrint) outs(rx) outs(marker) outs(subfield) '}' dup endstore
+    store(rx) endstore
+
+define(dAppendItem) >
+    c 2000-05-25 Allow subfield formatting in reversals and glosses.
+    if(subfield)
+        append(rxSort) outs(rx) endstore
+        append(rxPrint) outs(rx) endstore
+        store(rx) outs(rxSort) nl outs(rxPrint) endstore
+        store(rxSort,rxPrint) endstore clear(subfield)
+    endif
+
+    c Determine which stores are empty and which contain data.
+    ifeq(lx) '' clear(lx) else set(lx) endif
+    ifeq(lc) '' clear(lc) else set(lc) endif
+    ifeq(hm) '' clear(hm) else set(hm) endif
+    ifeq(se) '' clear(se) else set(se) endif
+    ifeq(ps) '' clear(ps) else set(ps) endif
+    ifeq(pn) '' clear(pn) else set(pn) endif
+    ifeq(sn) '' clear(sn) else set(sn) endif
+    ifeq(rx) '' clear(rx) else set(rx) endif
+    
+    if(rx) begin
+        if(reversal) append(reversals) else append(glosses) endif
+        '\lx' nl  c Reversal record marker has no content
+        
+        clear(OutputCitationForm)  c 1998-07-25 MRP
+        if(lc) set(OutputCitationForm) endif
+        if(lx) set(OutputCitationForm) endif
+        if(OutputCitationForm) begin
+            '\lc '
+            if(lc) outs(lc) else outs(lx) endif
+            if(hm) '|hm{' outs(hm) '}' endif
+            nl
+        end endif  c if(OutputCitationForm)
+
+        if(se_ps_sn) do(se) do(ps) do(sn) endif
+        if(se_sn_ps) do(se) do(sn) do(ps) endif
+        if(sn_se_ps) do(sn) do(se) do(ps) endif
+        if(sn_ps_se) do(sn) do(ps) do(se) endif
+        if(ps_se_sn) do(ps) do(se) do(sn) endif
+        if(ps_sn_se) do(ps) do(sn) do(se) endif
+
+        if(e) '\re ' endif
+        if(n) '\rn ' endif
+        if(r) '\rr ' endif
+		outs(rx) nl
+
+        nl  c Blank line after item's record
+        endstore
+    end endif  c if(rx)
+
+define(dEndfile) > do(dOutputSubrecord) endfile
+
+c ===================================================================== 
+c RULES FOR INPUT
+c --------------------------------------------------------------------- 
+
+c ===================================================================== 
+group(gOptionFields)   c Shoebox inserts the options before the data
+
+'\_National' nl > set(National)  c Audience
+'\_EnglishGlossIndex'  nl > set(e) set(GlossOption)
+'\_NationalGlossIndex' nl > set(n) set(GlossOption)
+'\_RegionalGlossIndex' nl > set(r) set(GlossOption)
+
+'\_ExcludePartOfSpeech' nl > clear(IncludePartOfSpeech)
+
+'\_se_ps_sn' nl >
+    set(se_ps_sn) clear(se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_se_sn_ps' nl >
+    set(se_sn_ps) clear(se_ps_sn,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_AlternateHierarchy' nl > next
+'\_sn_se_ps' nl >
+    set(sn_se_ps) clear(se_ps_sn,se_sn_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_sn_ps_se' nl >
+    set(sn_ps_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,ps_se_sn,ps_sn_se)
+'\_ps_se_sn' nl >
+    set(ps_se_sn) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_sn_se)
+'\_ps_sn_se' nl >
+    set(ps_sn_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn)
+
+'\_' > store(omit) use(gUnknownOptionField)
+
+nl > ''
+
+'' >
+	ifn(GlossOption) begin
+		if(National) set(n) else set(e) endif
+	end endif  c ifn(GlossOption)
+	use(gMain)
+
+c --------------------------------------------------------------------
+group(gUnknownOptionField)  c From an older or newer version of Shoebox
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ===================================================================== 
+group(gMain)   c Read lexical data fields
+
+'\lx' fol(WS) > do(dOutputSubrecord)
+                store(lc,hm,se,ps,pn,sn)
+                store(lx) use(gWS)
+
+'\lc' fol(WS) > store(lc) use(gWS)
+'\hm' fol(WS) > store(hm) use(gWS)
+
+'\se' fol(WS) > do(dOutputSubrecord)
+                c Reset lower hierarchical levels
+                if(se_ps_sn) store(ps,pn,sn) endstore endif
+                if(se_sn_ps) store(sn,ps,pn) endstore endif
+                if(sn_se_ps) store(ps,pn) endstore endif
+                if(sn_ps_se) endif
+                if(ps_se_sn) store(sn) endstore endif
+                if(ps_sn_se) endif
+                store(se) use(gWS)
+
+'\ps' fol(WS) > do(dOutputSubrecord)
+                c Reset lower hierarchical levels
+                if(se_ps_sn) store(sn) endstore endif
+                if(se_sn_ps) endif
+                if(sn_se_ps) endif
+                if(sn_ps_se) store(se) endstore endif
+                if(ps_se_sn) store(se,sn) endstore endif
+                if(ps_sn_se) store(sn,se) endstore endif
+                store(ps) use(gWS)
+
+'\pn' fol(WS) > if(National) begin
+                    do(dOutputSubrecord)
+                    c Reset lower hierarchical levels
+                    if(se_ps_sn) store(sn) endstore endif
+                    if(se_sn_ps) endif
+                    if(sn_se_ps) endif
+                    if(sn_ps_se) store(se) endstore endif
+                    if(ps_se_sn) store(se,sn) endstore endif
+                    if(ps_sn_se) store(sn,se) endstore endif
+                    store(pn) use(gWS)
+                end else
+                    store(omit) use(gOmit)
+                endif
+
+'\sn' fol(WS) > do(dOutputSubrecord)
+                c Reset lower hierarchical levels
+                if(se_ps_sn) endif
+                if(se_sn_ps) store(ps,pn) endstore endif
+                if(sn_se_ps) store(se,ps,pn) endstore endif
+                if(sn_ps_se) store(ps,pn,se) endstore endif
+                if(ps_se_sn) endif
+                if(ps_sn_se) store(se) endstore endif
+                store(sn) use(gWS)
+
+'\re' fol(WS) > set(reversal) next
+'\ge' fol(WS) > if(e)
+                    store(rx) use(gItemWS)
+				else
+                    store(omit) use(gOmit)
+				endif  c if(e)
+
+'\rn' fol(WS) > set(reversal) next
+'\gn' fol(WS) > if(n)
+                    store(rx) use(gItemWS)
+				else
+                    store(omit) use(gOmit)
+				endif  c if(n)
+
+'\rr' fol(WS) > set(reversal) next
+'\gr' fol(WS) > if(r)
+                    store(rx) use(gItemWS)
+				else
+                    store(omit) use(gOmit)
+				endif  c if(r)
+
+'\' > store(omit) use(gOmit)
+
+c ===================================================================== 
+group(gWS)  c Skip white space between marker and field content
+
+nl fol(Backslash) > endstore use(gMain)
+endfile > endstore do(dEndfile)
+
+any(WS) > ''
+
+'' > use(gField)
+
+c --------------------------------------------------------------------
+group(gField)  c Read fields other than gloss or reversal
+
+nl fol(Backslash) > endstore use(gMain)
+
+nl endfile > next
+endfile > endstore do(dEndfile)
+
+any(WS) fol(WS) > ''  c Compress multiple adjacent white space
+any(WS) > ' '         c Convert any white space to a space
+'_' > ' '             c Convert any underline to a space
+
+c ===================================================================== 
+group(gItemWS)  c Skip white space between marker and field content
+
+nl fol(Backslash) > endstore clear(reversal) use(gMain)
+endfile > endstore do(dEndfile)
+
+any(WS) > ''
+
+'*' > dup if(reversal) set(omit) endif use(gItemField)
+
+'' > use(gItemField)
+
+c --------------------------------------------------------------------
+group(gItemField)  c Read gloss or reversal fields
+
+nl fol(Backslash) > endstore do(dAppendItem) clear(reversal) use(gMain)
+
+nl endfile > next
+endfile > endstore do(dAppendItem) do(dEndfile)
+
+any(WS) fol(WS) > ''  c Compress multiple adjacent white space
+any(WS) > ' '         c Convert any white space to a space
+'_' > ' '             c Convert any underline to a space
+
+c A semicolon separates multiple items in a single field; except:
+c when not preceded by white space it is part of the item, e.g. a phrase.
+c 1998-06-30 MRP: Changed ';' prec(WS) to any(WS) ';' because the
+c white space character shouldn't pass through as part of the item.
+c The mistake prevented identical items from being merged.
+any(WS) ';' > endstore do(dAppendItem) store(rx) use(gItemWS)
+
+c 2000-05-25 Allow subfield formatting in reversals and glosses.
+'|fv{' > next
+'|fn{' > next
+'|fr{' > next
+'|fe{' > next
+'|fi{' > next
+'|fb{' > next
+'|sc{' > next
+'|uc{' > next
+'|ui{' > next
+'|ub{' > store(marker) dup store(subfield) set(subfield) use(gItemSubfield)
+
+c Space after colon means it's not a subfield
+'fv: ' > dup
+'fn: ' > dup
+'fr: ' > dup
+'fe: ' > dup
+'fi: ' > dup
+'fb: ' > dup
+'sc: ' > dup
+'uc: ' > dup
+'ui: ' > dup
+'ub: ' > dup
+
+'fv:' > store(marker) '|fv{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'fn:' > store(marker) '|fn{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'fr:' > store(marker) '|fr{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'fe:' > store(marker) '|fe{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'fi:' > store(marker) '|fi{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'fb:' > store(marker) '|fb{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'sc:' > store(marker) '|sc{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'uc:' > store(marker) '|uc{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'ui:' > store(marker) '|ui{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+'ub:' > store(marker) '|ub{' store(subfield) set(subfield) use(gItemSubfieldMDF)
+
+c --------------------------------------------------------------------
+group(gItemSubfield)  c subfield in gloss or reversal
+
+nl fol(Backslash) > do(dSubfieldEnd) do(dAppendItem) clear(reversal) use(gMain)
+
+nl endfile > next
+endfile > do(dSubfieldEnd) do(dAppendItem) do(dEndfile)
+
+any(WS) fol(WS) > do(dSubfieldEnd) store(rx)     use(gItemField)
+any(WS) >         do(dSubfieldEnd) store(rx) ' ' use(gItemField)
+'_' > ' '         c Convert any underline to a space
+
+c A semicolon separates multiple items in a single field; except:
+c when not preceded by white space it is part of the item, e.g. a phrase.
+any(WS) ';' > do(dSubfieldEnd) do(dAppendItem) store(rx) use(gItemWS)
+
+'}' > do(dSubfieldEnd) store(rx) use(gItemField)
+
+c --------------------------------------------------------------------
+group(gItemSubfieldMDF)  c MDF-style subfield in gloss or reversal
+
+nl fol(Backslash) > do(dSubfieldEnd) do(dAppendItem) clear(reversal) use(gMain)
+
+nl endfile > next
+endfile > do(dSubfieldEnd) do(dAppendItem) do(dEndfile)
+
+any(WS) fol(WS) > do(dSubfieldEnd) store(rx)     use(gItemField)
+any(WS) >         do(dSubfieldEnd) store(rx) ' ' use(gItemField)
+'_' > ' '         c Convert any underline to a space
+
+c A semicolon separates multiple items in a single field; except:
+c when not preceded by white space it is part of the item, e.g. a phrase.
+any(WS) ';' > do(dSubfieldEnd) do(dAppendItem) store(rx) use(gItemWS)
+
+any(chrsetPunct) > do(dSubfieldEndPunct) store(rx) use(gItemField)
+
+c ===================================================================== 
+group(gOmit)  c Omit unneeded field
+
+nl fol(Backslash) > dup endstore clear(reversal) use(gMain)
+endfile > endstore do(dEndfile)
+
+c END =================================================================
