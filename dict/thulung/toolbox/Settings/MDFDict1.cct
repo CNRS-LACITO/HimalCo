@@ -1,0 +1,333 @@
+c ====================================================================
+c MDFDICT1.CCT - Select lexical fields for printing a dictionary
+c For Shoebox version 4.0 and later
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c
+c Input:     A Standard Format lexical database file with MDF markers.
+c            This change table assumes that Shoebox has
+c            inserted user-option fields preceding the data fields and
+c            removed "unconditionally excluded" data fields.
+c            The fields to be excluded unconditionally by default:
+c            \dt \ec \es \is \re \rn \rr \sd \so \st \th \we \wn \wr \xg
+c Output:    A Standard Format lexical database file consisting only of
+c            data fields to be printed (according to the user's choices),
+c            This table does not change the order that fields occur.
+c            It removes "empty fields" that contain only white space,
+c            guarantees that a space separates marker from field contents,
+c            and that the last field in the file ends with a newline.
+c
+c            Shoebox reads and sorts this table's output and then
+c            uses MDFDICT2.CCT to rearrange and format the data fields.
+c
+c 1995-06    David F. Coward (david_coward@sil.org)
+c            SIL, Kotak Pos 1050, Ambon, Maluku 97001 INDONESIA
+c            MDFSETT.CCT change table in MDF version 1.1a for DOS
+c 1996-08-10 Mark R. Pedrotti (mark_pedrotti@sil.org)
+c            JAARS, P.O. Box 248, Waxhaw, NC 28173-0248 USA
+c            Added gOptionFields group for MDF in Shoebox 3.0
+c 1997-02-10 MRP - Shoebox 3.07
+c            This change table no longer does unconditional exclusions,
+c            since Shoebox does them using the user's choices in the
+c            Select Fields [to be Excluded] dialog box. It does only
+c            conditional field selection, according to the Audience and
+c            Format radio buttons and the "Include ..." check boxes.
+c 1997-05-02 MRP - Updates after Shoebox 3.07
+c            Remove "empty fields" in this first change table.
+c            Prepare to add "Include regional with national" check box.
+c 1997-08-27 MRP - Output "main bundle" fields even when they're empty.
+c            Add \lv Lexical function (v)
+c 1997-08-30 MRP - Each table row a paragraph; preserve white space.
+c 1997-09-17 MRP - Add Paradigm bundle \pdl \pdv \pde \pdn \pdr
+c 1997-09-24 MRP - No longer consider \xg an MDF field
+c 1997-09-26 MRP - Change the logic for "Sort by \lc citation form"
+c 1997-11-25 MRP - Allow multiple \lv sub-bundles in an \lf bundle
+c            by adding set(bundle) for the \lv marker (see mdfdict2.cct)
+c 1997-12-01 MRP - Allow multiple \pdv sub-bundles in a \pdl bundle.
+
+c ====================================================================
+begin > 
+    store(Backslash) '\' endstore
+    store(WSM) ' ' nl d9 endstore  c White space after markers (d9 = tab)
+    store(WSF) ' ' nl endstore  c White space within fields (nl = newline)
+
+    c Defaults for user options
+    set(English)             c Audience: English
+    clear(triglot)           c Format: Diglot dictionary
+    set(SortByCitationForm)  c Sort by \lc citation form
+    set(examples)            c Include example sentences
+    set(notes)               c Include notes
+    clear(r)                 c DO NOT Include regional with national
+    clear(nonMDFs)           c DO NOT Include non-MDF fields
+
+    use(gOptionFields)
+
+c ====================================================================
+define(dOutputLexemeFields) > c Output \lx, \hm, \lc
+    ifneq(hm) '' set(hm) endif
+    ifneq(lc) '' set(lc) endif
+
+    c 1997-09-26 MRP: In versions 3.0 through 3.07 we swapped
+    c the \lx and \lc fields when sorting by \lc citation form.
+    c Starting in version 3.09 we quit that approach, because
+    c it's wrong if they have different language encodings.
+    c That means that the old mdfdict1.cct does NOT work
+    c with current versions of Shoebox and vice versa.
+    if(SortByCitationForm) begin  c 1997-09-26 MRP
+        ifn(lc) store(lc) outs(lx) endstore set(lc) endif
+    end endif
+
+    c Always output the \lx record marker, even if the field is empty
+           '\lx ' out(lx) nl
+    if(hm) '\hm ' out(hm) nl endif
+    if(lc) '\lc ' out(lc) nl endif
+    store(lx,hm,lc) endstore clear(lx,hm,lc)
+
+c --------------------------------------------------------------------
+define(E) >        ifn(E)        set(omit) endif
+define(n) >        ifn(n)        set(omit) endif
+define(r) >        ifn(r)        set(omit) endif
+define(national) > if(English)   set(omit) endif
+define(examples) > ifn(examples) set(omit) endif
+define(notes) >    ifn(notes)    set(omit) endif
+define(nonMDFs) >  ifn(nonMDFs)  set(omit) endif
+
+c ====================================================================
+c GROUPS
+c --------------------------------------------------------------------
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+'\_National' nl >                    clear(English)
+'\_Triglot' nl >                     set(triglot)
+'\_SortOnlyByLexeme' nl >            clear(SortByCitationForm)
+'\_ExcludeExamples' nl >             clear(examples)
+'\_ExcludeNotes' nl >                clear(notes)
+'\_IncludeRegionalWithNational' nl > set(r)
+'\_IncludeNonMDF' nl >               set(nonMDFs)
+
+'\_' > store(omit) use(gUnknownOptionField)
+
+nl > ''
+
+'' >
+    c Whether the user chose Audience: English or Audience: National
+    c determines whether or not the English switch is set.
+    c The Audience and Format options determine the settings of the
+    c E, n, and r switches, and they determine whether to include
+    c English, national, and regional data fields.
+    c But note that unlike the other national fields, the \pn field
+    c is controlled by the English switch instead of the n switch.
+    if(English) set(E) else set(n) endif
+    if(triglot) set(E) set(n) endif
+    ifn(n) clear(r) endif
+    use(gMain)
+
+c --------------------------------------------------------------------
+group(gUnknownOptionField)
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+c ====================================================================
+group(gMain)   c Select fields according to the options
+
+'\lx' fol(WSM) > store(lx) use(gAfterLexemeSFM)
+
+c Note: the \lx, \hm, and \lc fields are processed separately
+c in order to provide for sorting by the \lc citation form.
+c See dOutputLexemeFields above and gLexemeFields below.
+c All other standard MDF fields appear below in alphabetical order.
+
+'\an'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\bb'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\bw'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\ce'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\cf'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\cn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\cr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\de'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\dn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\dr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\dt'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\dv'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\ec'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\ee'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\eg'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\en'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\er'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\es'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\et'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\ev'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\ge'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\gn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\gr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\gv'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+c hm
+'\is'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+c lc  
+'\le'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\lf'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\ln'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\lr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\lt'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\lv'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+c lx
+'\mr'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\mn'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\na'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\nd'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\ng'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\np'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\nq'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\ns'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\nt'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(notes)
+'\oe'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\on'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\or'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\ov'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\pc'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\pd'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\pde' fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\pdl' fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\pdn' fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\pdr' fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\pdv' fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\ph'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\pl'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\pn'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(national)
+'\ps'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\rd'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\re'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\rf'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(examples)
+'\rn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\rr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\sc'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\sd'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\se'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\sg'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\sn'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\so'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\st'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\sy'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\tb'  fol(WSM) > store(tb)  dup use(gTableWS)  store(tbWS)
+'\th'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\ue'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\un'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\ur'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\uv'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\va'  fol(WSM) > store(SFM) dup use(gAfterSFM)                    set(bundle)
+'\ve'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\vn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\vr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\we'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E)
+'\wn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n)
+'\wr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r)
+'\xe'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(E) do(examples)
+'\xn'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(n) do(examples)
+'\xr'  fol(WSM) > store(SFM) dup use(gAfterSFM) do(r) do(examples)
+'\xv'  fol(WSM) > store(SFM) dup use(gAfterSFM)       do(examples) set(bundle)
+'\1d'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\1e'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\1i'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\1p'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\1s'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\2d'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\2p'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\2s'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\3d'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\3p'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\3s'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\4d'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\4p'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+'\4s'  fol(WSM) > store(SFM) dup use(gAfterSFM)
+
+'\_'  >          store(SFM) dup use(gSFM)            set(omit)
+'\'   >          store(SFM) dup use(gSFM)            do(nonMDFs)
+
+c --------------------------------------------------------------------
+group(gSFM)
+
+nl fol(Backslash) > endstore clear(omit) use(gMain)
+endfile > endstore endfile
+
+any(WSM) > use(gAfterSFM)
+
+c --------------------------------------------------------------------
+group(gAfterSFM)
+
+nl fol(Backslash) > endstore
+    ifn(omit) begin if(bundle) out(SFM) nl endif end endif
+    clear(omit,bundle) use(gMain)
+endfile > endstore
+    ifn(omit) begin if(bundle) out(SFM) nl endif end endif
+    clear(omit,bundle) endfile
+
+any(WSM) > ''
+
+'' > if(omit) store(omit) else out(SFM) ' ' endif use(gRestOfField)
+
+c --------------------------------------------------------------------
+group(gRestOfField)
+
+nl fol(Backslash) > dup endstore clear(omit,bundle) use(gMain)
+endfile > next  c If last field in input lacks a newline, output one
+any(WSF) endfile > nl endstore endfile
+
+any(WSF) fol(WSF) > ''  c Remove extra white space in fields
+
+c ====================================================================
+group(gTableWS)
+
+nl fol(Backslash) > endstore if(tb) out(tb) nl endif clear(tb) use(gMain)
+nl endfile > next
+endfile > endstore if(tb) out(tb) nl endif endfile
+
+nl fol(WSM) > dup '\tb'
+nl > dup '\tb '
+
+any(WSM) > dup
+
+'' > append(tb) outs(tbWS) set(tb) use(gTable)
+
+c --------------------------------------------------------------------
+group(gTable)
+
+nl fol(Backslash) > out(tb) nl clear(tb) use(gMain)
+nl endfile > next
+endfile > out(tb) nl endfile
+
+nl fol(WSM) > store(tbWS) dup '\tb' use(gTableWS)
+nl > store(tbWS) dup '\tb ' use(gTableWS)
+
+any(WSM) > store(tbWS) dup use(gTableWS)
+
+c ====================================================================
+group(gLexemeFields)   c   Match and output \lx, \hm, and \lc
+
+'\hm' fol(WSM) > store(hm) use(gAfterLexemeSFM)
+'\lc' fol(WSM) > store(lc) use(gAfterLexemeSFM)
+
+'' > do(dOutputLexemeFields) use(gMain)
+
+c --------------------------------------------------------------------
+group(gAfterLexemeSFM)
+
+nl fol(Backslash) > endstore use(gLexemeFields)
+endfile > next  c If last field in input lacks a newline, output one
+nl endfile > nl endstore do(dOutputLexemeFields) endfile
+
+any(WSM) > ''
+
+'' > use(gRestOfLexemeField)
+
+c --------------------------------------------------------------------
+group(gRestOfLexemeField)
+
+nl fol(Backslash) > endstore use(gLexemeFields)
+endfile > next  c If last field in input lacks a newline, output one
+any(WSF) endfile > endstore do(dOutputLexemeFields) endfile
+
+any(WSF) fol(WSF) > ''  c Remove extra white space in fields
+
+c END =================================================================

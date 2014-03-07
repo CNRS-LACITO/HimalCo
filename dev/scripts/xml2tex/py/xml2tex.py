@@ -314,6 +314,8 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
+        for error in errors:
+            print error
 
     def main(self):
         self.parse_options()

@@ -1,0 +1,997 @@
+c ====================================================================
+c MDFDictH.cct  Format lexical fields for printing a dictionary
+c For Shoebox version 5.0
+c See the *** comments to learn how to modify this change table.
+c --------------------------------------------------------------------
+c
+c Input:     A Standard Format lexical database with MDF markers.
+c            This change table assumes that Shoebox and MDFDICT1.CCT have
+c            inserted user-option fields preceding the data fields,
+c            removed all data fields not to be printed,
+c            removed "empty fields" that contain only white space, and
+c            guaranteed that a space separates marker from field contents.
+c Output:    A Standard Format file that is formatted for printing:
+c            a) data fields are rearranged into the standard order,
+c            b) labels and punctuation are inserted,
+c            c) paragraph- and character-style markers are inserted.
+c
+c            Shoebox uses one of the MDF_*3.CCT change tables to change
+c            the labels in this table's output. It then reads that output
+c            using the "MDF Rich Text Format" MDF_RTF.TYP database type,
+c            and finally exports it as an .RTF document.
+c
+c            David F. Coward (david_coward@sil.org)
+c            SIL, Kotak Pos 1050, Ambon, Maluku 97001 INDONESIA
+c            MDFDICT.CCT change table in MDF version 1.1c for DOS
+c
+c 1998-08-20 Mark R. Pedrotti (Mark_Pedrotti@sil.org)
+c            JAARS, P.O. Box 248, Waxhaw, NC 28173-0248 USA
+c            Adapted for SF-to-HTML conversion from MDFDict2.cct.
+c 1999-02-26 MRP: MDF now uses the MDFLinkH.cct change table to convert
+c            the hypertext links (\lv, \cf, \sy, \an, \mn, \va)
+c            that MDFDictH.cct outputs in |fvlink{lexeme1} subfields.
+c 1999-03-12 MRP: Use |sf{...} subfield notation instead of \sf for
+c            the HTML SPANs, because fields like \sf1 ...|sf2{...}...
+c            convert to HTML differently than to RTF (which doesn't
+c            support embedded character styles).
+c            The SF-to-HTML conversion now provides better control
+c            over the location of newlines in the output. 
+c            Use |fl instead of |uc for labels of \re, \we, etc.
+c            Use |fe, etc. for \re, \we, etc.
+c            Use |fs for non-graphics \pc
+c            Use |nt for all note fields.
+c 1999-03-22 MRP: In a Triglot Dictionary, punctuate each definition
+c            with |fs{.} instead of separating them with |fs{;}.
+c 1999-03-29 MRP: One label for the entire "bundle" of fields:
+c            Reversal, Word-level [gloss], Usage, Restrict.
+c 1999-04-01 MRP: Change the subfield for letter of the alphabet headings
+c            from |hv{...} to |vHeading{...}.
+c 1999-04-02 MRP: For tables, use |{BR}|tb{...} instead of \tb, because
+c            a division would enclose other fields following the table.
+c 1999-04-09 MRP: Insert missing space between \pd label and field.
+c 1999-08-11 MRP - Remove the ps_follows_se switch.
+c 2000-06-12 MRP - Add sc: subfield.
+c ====================================================================
+begin >
+    store(Backslash) '\' endstore
+    store(Newline) nl endstore
+    store(LexicalFunctionSeparator) ':=' endstore
+    store(WS) ' ' nl d9 endstore  c White space: Space, newline, tab
+    store(punct) ' .,;:"]|\=+)`></?' "'" endstore  c stop chr styles
+    store(number) '1234567890' endstore  c homonymn numbers
+
+    c Default options    
+    set(English)  c Audience: English
+    clear(IncludeLexemeWithCitationForm)  c DO NOT Include \lx lexeme with \lc
+    clear(AlternateHierarchy)  c Standard hierarchy: \lx \se \ps \sn
+    set(TwoColumns)  c Page format: Two columns
+    set(Total)  c Page format: Total number of entries
+    
+    c Comment out all but the one hierarchy that you want as default
+    set(se_ps_sn) clear(se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+    c set(se_sn_ps) clear(se_ps_sn,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+    c set(sn_se_ps) clear(se_ps_sn,se_sn_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+    c set(sn_ps_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,ps_se_sn,ps_sn_se)
+    c set(ps_se_sn) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_sn_se)
+    c set(ps_sn_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn)
+
+    use(gOptionFields)
+
+
+c ====================================================================
+c DEFINITIONS
+c --------------------------------------------------------------------
+
+c ====================================================================
+define(dEndfile) >  c Output the final subrecord
+    endstore
+    do(dOutput)
+    if(copyright) '\ADDRESS ' out(copyright) nl endif
+    endfile
+
+c ====================================================================
+define(xvBundle) >  c Append example sentence fields in order
+    if(xv) begin
+        append(xvBundle)
+        set(xvBundle)
+        if(rf) '|fl{Ref:} |rf{' outs(rf) '}' nl endif
+        '|xv{' outs(xv) '}' nl
+        if(English) begin
+            if(xe) '|xe{' outs(xe) '}' nl endif
+            if(xn) '|xn{' outs(xn) '}' nl endif
+            if(xr) '|xr{' outs(xr) '}' nl endif
+        end else begin
+            if(xn) '|xn{' outs(xn) '}' nl endif
+            if(xr) '|xr{' outs(xr) '}' nl endif
+            if(xe) '|xe{' outs(xe) '}' nl endif
+        end endif  c if(English)
+        endstore
+    end else begin
+        if(rf)
+            append(xvBundle)
+            set(xvBundle)
+            '|fl{Ref:} |rf{' outs(rf) '}' nl
+            endstore
+        endif
+    end endif  c if(xv)
+    clear(rf,xv,xe,xn,xr) store(rf,xv,xe,xn,xr) endstore
+
+c --------------------------------------------------------------------
+define(lfBundle) >  c Append lexical function fields in order
+    c 1997-11-25 MRP: Allow multiple \lv sub-bundles in an \lf bundle
+    c If there's an \lv right now AND there is OR has been an \lf
+    clear(do_it)
+    if(lv) begin
+        if(lf)       set(do_it) endif
+        if(lfBundle) set(do_it) endif
+    end endif  c if(lv)
+    if(do_it) begin
+        append(lfBundle)
+        if(lfBundle) '|fs{;}' nl endif set(lfBundle)
+        if(lf) '|fl{' outs(lf) ':}' nl endif
+        '|fvlink{' outs(lv) '}'
+        if(English) begin
+            if(le) " |fs{'}|fe{" outs(le) "}|fs{'}" endif
+            if(ln) " |fs{'}|fn{" outs(ln) "}|fs{'}" endif
+            if(lr) " |fs{'}|fr{" outs(lr) "}|fs{'}" endif
+        end else begin
+            if(ln) " |fs{'}|fn{" outs(ln) "}|fs{'}" endif
+            if(lr) " |fs{'}|fr{" outs(lr) "}|fs{'}" endif
+            if(le) " |fs{'}|fe{" outs(le) "}|fs{'}" endif
+        end endif  c if(English)
+        endstore
+    end endif  c if(do_it)
+    clear(lf,lv,le,ln,lr) store(lf,lv,le,ln,lr) endstore
+
+c --------------------------------------------------------------------
+define(cfBundle) >  c Append cross reference fields in order
+    if(cf) begin
+        append(cfBundle)
+        if(cfBundle) '|fs{;}' nl endif set(cfBundle)
+        '|fvlink{' outs(cf) '}'
+        if(English) begin
+            if(ce) " |fs{'}|fe{" outs(ce) "}|fs{'}" endif
+            if(cn) " |fs{'}|fn{" outs(cn) "}|fs{'}" endif
+            if(cr) " |fs{'}|fr{" outs(cr) "}|fs{'}" endif
+        end else begin
+            if(cn) " |fs{'}|fn{" outs(cn) "}|fs{'}" endif
+            if(cr) " |fs{'}|fr{" outs(cr) "}|fs{'}" endif
+            if(ce) " |fs{'}|fe{" outs(ce) "}|fs{'}" endif
+        end endif  c if(English)
+        endstore
+    end endif  c if(cf)
+    clear(cf,ce,cn,cr) store(cf,ce,cn,cr) endstore
+
+c --------------------------------------------------------------------
+define(vaBundle) >  c Append variant fields in order
+    if(va) begin
+        append(vaBundle)
+        if(vaBundle) '|fs{;}' nl endif set(vaBundle)
+c        '|fv{' outs(va) '}'  c No hypertext link
+        '|fvlink{' outs(va) '}'  c 1998-12-05 MRP
+        if(English) begin
+            if(ve) ' |fs{(}|fe{' outs(ve) '}|fs{)}' endif
+            if(vn) ' |fs{(}|fn{' outs(vn) '}|fs{)}' endif
+            if(vr) ' |fs{(}|fr{' outs(vr) '}|fs{)}' endif
+        end else begin
+            if(vn) ' |fs{(}|fn{' outs(vn) '}|fs{)}' endif
+            if(vr) ' |fs{(}|fr{' outs(vr) '}|fs{)}' endif
+            if(ve) ' |fs{(}|fe{' outs(ve) '}|fs{)}' endif
+        end endif  c if(English)
+        endstore
+    end endif  c if(va)
+    clear(va,ve,vn,vr) store(va,ve,vn,vr) endstore
+
+c --------------------------------------------------------------------
+define(etBundle) >  c Append etymology fields in order
+    if(et) begin
+        append(etBundle)
+        if(etBundle) '|fs{;}' nl endif set(etBundle)
+        '|et{' outs(et) '}'
+        if(eg) " |fs{'}|fe{" outs(eg) "}|fs{'}" endif
+        if(es)       ' |fe{' outs(es) '}'       endif  c 1999-03-29 MRP: fe
+        if(ec) ' |fs{(}|fe{' outs(ec) '}|fs{)}' endif
+        nl
+        endstore
+    end endif  c if(et)
+    clear(et,eg,es,ec) store(et,eg,es,ec) endstore
+
+c --------------------------------------------------------------------
+define(pdBundle) >  c Append paradigm form fields in order
+    if(pd) begin
+        append(pdBundle)
+        if(pdBundle) '|fs{.}' nl endif set(pdBundle)
+        '|fl{Prdm:} |pd{' outs(pd) '}'  c 1999-04-09 MRP
+        endstore
+        clear(pdlPrev)  c 1997-12-01 MRP
+    end endif  c if(pd)
+    c 1997-12-01 MRP: Allow multiple \pdv sub-bundles in a \pdl bundle
+    c If there's a \pdv right now AND there is a \pdl OR has been one
+    c immediately preceding (i.e. not separated by a \pd Paradigm field).
+    c Note: The logic is similar, but not identical, to lexical functions.
+    clear(do_it)
+    if(pdv) begin
+        if(pdl)     set(do_it) endif
+        if(pdlPrev) set(do_it) endif
+    end endif  c if(pdv)
+    if(do_it) begin
+        append(pdBundle)
+        if(pdBundle) begin
+            if(pdl) '|fs{.}' nl else '|fs{;}' nl endif
+        end endif  c if(pdBundle)
+        set(pdBundle)
+        if(pdl) '|fl{' outs(pdl) ':}' nl set(pdlPrev) endif
+        '|fv{' outs(pdv) '}'
+        if(English) begin
+            if(pde) " |fs{'}|fe{" outs(pde) "}|fs{'}" endif
+            if(pdn) " |fs{'}|fn{" outs(pdn) "}|fs{'}" endif
+            if(pdr) " |fs{'}|fr{" outs(pdr) "}|fs{'}" endif
+        end else begin
+            if(pdn) " |fs{'}|fn{" outs(pdn) "}|fs{'}" endif
+            if(pdr) " |fs{'}|fr{" outs(pdr) "}|fs{'}" endif
+            if(pde) " |fs{'}|fe{" outs(pde) "}|fs{'}" endif
+        end endif  c if(English)
+        endstore
+    end endif  c if(do_it)
+    clear(pd,pdl,pdv,pde,pdn,pdr) store(pd,pdl,pdv,pde,pdn,pdr) endstore
+
+c ====================================================================
+define(dOutput) >  c Output subrecord preceding \lx, \se, \ps, \pn, \sn
+
+c Append "bundles" of fields in order so they're ready to output below
+do(xvBundle)
+do(lfBundle)
+do(cfBundle)
+do(vaBundle)
+do(etBundle)
+do(pdBundle)
+
+c Output each field that was found in the subrecord
+c To REORDER the fields, reorder the blocks used by each field:
+
+if(lx) begin
+    nl  c Add space between records
+    c -------------------------------------------------------------
+c    if(px) '\px ' out(px) nl clear(px) endif
+    c -------------------------------------------------------------
+    set(Headword)  c \lx \lc or \se
+    c 1998-08-20 MRP
+    store(lchm)
+        if(lc) outs(lc) else outs(lx) endif
+        if(hm) outs(hm) endif
+    endstore
+    '\lxDIV' nl
+    '|{A NAME="' out(lchm) '"}'
+    '|lx{' if(lc) out(lc) else out(lx) endif '}'
+    '|{/A}'
+    if(hm) '|hm{' out(hm) '}' endif
+    nl    
+
+    c 1997-09-26 MRP: In versions 3.0 through 3.07 we swapped
+    c the \lx and \lc fields when sorting by \lc citation form.
+    c Starting in version 3.09 we quit that approach, because
+    c it's wrong if they have different language encodings.
+    c That means that the old mdfdict2.cct does NOT work
+    c with current versions of Shoebox and vice versa.
+    if(IncludeLexemeWithCitationForm) begin
+        if(lc) begin
+            ifneq(lc) cont(lx) begin  c 1997-09-26 MRP
+                '|fl{(from:} |fv{' out(lx) '}|fl{)}' nl  c 1999-03-29 MRP: fv
+            end endif
+        end endif
+    end endif    
+
+    clear(snPrev)  c 1998-11-23 MRP
+    clear(seAlreadyOutput,psAlreadyOutput,snAlreadyOutput)
+end endif  c if(lx)
+
+c ================= variant hierarchy schemes ===================
+
+if(se_ps_sn) begin  c "Standard" hierarchy
+    if(se) begin
+        c if(px) '\px ' out(px) nl clear(px) endif
+        '\seDIV' nl
+		'|{A NAME="' out(lchm) ' ' out(se) '"}|se{' out(se) '}|{/A}' nl
+        set(seAlreadyOutput) clear(psAlreadyOutput,snAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(ph) '|ph{[' out(ph) ']}' nl endif
+    c ---------------------------------------------------------------
+    if(ps) begin
+        clear(do_it)
+        c if(px) '\px ' out(px) nl clear(px) set(do_it) endif
+        if(psAlreadyOutput) set(do_it) endif
+        if(do_it) begin
+            '\psDIV'
+            c *** To omit the emdash, comment out the following line:
+            if(psAlreadyOutput) ' ' d151 endif
+            nl
+        end endif
+        if(pn)
+            '|pn{' out(pn) '.}' nl
+        else
+            '|ps{' out(ps) '.}' nl
+        endif
+        set(psAlreadyOutput) clear(snAlreadyOutput)
+    end endif
+    c ----------------------------------------------------------------
+    if(sn) begin
+        clear(do_it)
+        c if(px) '\px ' out(px) nl clear(px) set(do_it) endif
+        c Senses (after the first) start on new lines.
+        if(snAlreadyOutput) set(do_it) endif
+        if(do_it) '\snDIV' nl endif
+        '|sn{' out(sn) ')}' nl
+        set(snAlreadyOutput)
+    end endif
+end endif  c if(se_ps_sn)  "Standard" hierarchy
+
+c ----------------------------------------------------------------
+
+if(sn_se_ps) begin  c Alternate "Malaysia" hierarchy
+    if(sn) begin
+        clear(do_it)
+        c if(px) '\px ' out(px) nl clear(px) set(do_it) endif
+        if(snAlreadyOutput) set(do_it) endif
+        if(dxAlreadyOutput) set(do_it) endif  c 1998-04-24 MRP: More robust
+        if(do_it) '\snDIV' nl endif
+        '|sn{' out(sn) ')}' nl
+        set(snAlreadyOutput) clear(seAlreadyOutput,psAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(se) begin
+        clear(do_it)
+        c if(px) '\px ' out(px) nl clear(px) set(do_it) endif
+        if(seAlreadyOutput) set(do_it) endif
+        if(dxAlreadyOutput) set(do_it) endif  c 1998-04-24 MRP: More robust
+        if(do_it) '\seDIV' nl endif
+        '|{A NAME="' out(lchm) ' ' out(se) '"}|se{' out(se) '}|{/A}' nl
+        set(seAlreadyOutput) clear(psAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(ph) '|ph{[' out(ph) ']}' nl endif
+    c ---------------------------------------------------------------
+    if(ps) begin
+        clear(do_it)
+        c if(px) '\px ' out(px) nl clear(px) set(do_it) endif
+        if(psAlreadyOutput) set(do_it) endif
+        if(do_it) begin
+            '\psDIV'
+            c *** To omit the emdash, comment out the following line:
+            if(psAlreadyOutput) ' ' d151 endif
+            nl
+        end endif
+        if(pn)
+            '|pn{' out(pn) '.}' nl
+        else
+            '|ps{' out(ps) '.}' nl
+        endif
+        set(psAlreadyOutput)
+    end endif
+end endif  c if(sn_se_ps)  Alternate "Malaysia" hierarchy
+
+c ----------------------------------------------------------------
+
+if(sn_ps_se) begin  c "Philippines" hierarchy
+    if(sn) begin
+        if(snAlreadyOutput) '\snDIV' nl endif
+        '|sn{' out(sn) ')}' nl  c No paren; non-breaking space ???
+        set(snAlreadyOutput) clear(psAlreadyOutput,seAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(ps) begin
+        if(psAlreadyOutput) '\psDIV' nl endif
+        if(pn)
+            '|pn{' out(pn) '.}' nl
+        else
+            '|ps{' out(ps) '.}' nl
+        endif
+        set(psAlreadyOutput) clear(seAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(se) begin
+        clear(do_it)
+        if(seAlreadyOutput) set(do_it) endif
+        if(dxAlreadyOutput) set(do_it) endif  c 1998-04-24 MRP: More robust
+        if(do_it) '\seDIV' nl endif
+        '|{A NAME="' out(lchm) ' ' out(se) '"}|se{' out(se) '}|{/A}' nl
+        set(seAlreadyOutput)
+    end endif
+    c ---------------------------------------------------------------
+    if(ph) '|ph{[' out(ph) ']}' nl endif
+    c ---------------------------------------------------------------
+    c 1998-04-24 MRP: This hierarchy doesn't yet do graphic pictures.
+end endif  c if(sn_ps_se)  "Philippine" hierarchy
+
+c ================== ends the variant hierarchy section ==========
+     
+c If there's no definition, use the gloss instead
+ifn(dv) begin if(gv) store(dv) outs(gv) endstore set(dv) endif end endif
+ifn(de) begin if(ge) store(de) outs(ge) endstore set(de) endif end endif
+ifn(dn) begin if(gn) store(dn) outs(gn) endstore set(dn) endif end endif
+ifn(dr) begin if(gr) store(dr) outs(gr) endstore set(dr) endif end endif
+
+clear(dxAlreadyOutput)  c 1998-04-24 MRP: Make alternate hierarchy more robust.
+      
+if(dv) '|dv{' out(dv) '}|fs{.}' nl set(dxAlreadyOutput) endif
+
+c ----------------------------------------------------------------
+if(English) begin  c Audience: English
+    if(de) begin
+        '|de{' out(de) '}|fs{.}' nl set(dxAlreadyOutput)
+    end endif
+end endif
+
+if(dn) begin  c Definition-national
+    '|dn{' out(dn) '}|fs{.}' nl set(dxAlreadyOutput)
+end endif
+
+if(dr) begin  c Definition-regional
+    '|dr{' out(dr) '}|fs{.}' nl set(dxAlreadyOutput)
+end endif 
+
+ifn(English) begin  c Audience: National
+    if(de) begin
+        '|de{' out(de) '}|fs{.}' nl set(dxAlreadyOutput)
+    end endif
+end endif
+
+c ----------------------------------------------------------------
+
+c 1999-03-29 MRP: One label for the entire "bundle" of fields.
+clear(do_it)
+if(re) set(do_it) endif
+if(rn) set(do_it) endif
+if(rr) set(do_it) endif
+if(do_it) '|fl{Reversal:} ' endif
+
+if(English) begin
+if(re)       '|fe{'                           out(re) '}|fs{.}'  nl endif
+if(rn)       '|fn{'                           out(rn) '}|fs{.}'  nl endif
+if(rr)       '|fr{'                           out(rr) '}|fs{.}'  nl endif
+end else begin
+if(rn)       '|fn{'                           out(rn) '}|fs{.}'  nl endif
+if(rr)       '|fr{'                           out(rr) '}|fs{.}'  nl endif
+if(re)       '|fe{'                           out(re) '}|fs{.}'  nl endif
+end endif
+
+c 1999-03-29 MRP: One label for the entire "bundle" of fields.
+clear(do_it)
+if(we) set(do_it) endif
+if(wn) set(do_it) endif
+if(wr) set(do_it) endif
+if(do_it) '|fl{Word-level:} ' endif
+
+if(English) begin
+if(we)       '|fe{'                           out(we) '}|fs{.}'  nl endif
+if(wn)       '|fn{'                           out(wn) '}|fs{.}'  nl endif
+if(wr)       '|fr{'                           out(wr) '}|fs{.}'  nl endif
+end else begin
+if(wn)       '|fn{'                           out(wn) '}|fs{.}'  nl endif
+if(wr)       '|fr{'                           out(wr) '}|fs{.}'  nl endif
+if(we)       '|fe{'                           out(we) '}|fs{.}'  nl endif
+end endif
+
+c ----------------------------------------------------------------
+c the rest of the fields
+
+if(lt)       "|fl{Lit:} |fs{'}|lt{"           out(lt) "}|fs{'.}" nl endif
+if(sc)       '|sc{'                           out(sc) '}|fs{.}'  nl endif
+
+if(xvBundle)                            out(xvBundle)               endif
+
+c 1999-03-29 MRP: One label for the entire "bundle" of fields.
+clear(do_it)
+if(uv) set(do_it) endif
+if(ue) set(do_it) endif
+if(un) set(do_it) endif
+if(ur) set(do_it) endif
+if(do_it) '|fl{Usage:} ' endif
+
+if(uv)       '|fv{'                           out(uv) '}|fs{.}'  nl endif
+if(English) begin
+if(ue)       '|ue{'                           out(ue) '}|fs{.}'  nl endif
+if(un)       '|un{'                           out(un) '}|fs{.}'  nl endif
+if(ur)       '|ur{'                           out(ur) '}|fs{.}'  nl endif
+end else begin
+if(un)       '|un{'                           out(un) '}|fs{.}'  nl endif
+if(ur)       '|ur{'                           out(ur) '}|fs{.}'  nl endif
+if(ue)       '|ue{'                           out(ue) '}|fs{.}'  nl endif
+end endif
+
+if(ev)       '|ev{'                           out(ev) '}|fs{.}'  nl endif
+if(English) begin
+if(ee)       '|ee{'                           out(ee) '}|fs{.}'  nl endif
+if(en)       '|en{'                           out(en) '}|fs{.}'  nl endif
+if(er)       '|er{'                           out(er) '}|fs{.}'  nl endif
+end else begin
+if(en)       '|en{'                           out(en) '}|fs{.}'  nl endif
+if(er)       '|er{'                           out(er) '}|fs{.}'  nl endif
+if(ee)       '|ee{'                           out(ee) '}|fs{.}'  nl endif
+end endif
+
+c 1999-03-29 MRP: One label for the entire "bundle" of fields.
+clear(do_it)
+if(ov) set(do_it) endif
+if(oe) set(do_it) endif
+if(on) set(do_it) endif
+if(or) set(do_it) endif
+if(do_it) '|fl{Restrict:} ' endif
+
+if(ov)       '|ov{'                           out(ov) '}|fs{.}'  nl endif
+if(English) begin
+if(oe)       '|oe{'                           out(oe) '}|fs{.}'  nl endif
+if(on)       '|on{'                           out(on) '}|fs{.}'  nl endif
+if(or)       '|or{'                           out(or) '}|fs{.}'  nl endif
+end else begin
+if(on)       '|on{'                           out(on) '}|fs{.}'  nl endif
+if(or)       '|or{'                           out(or) '}|fs{.}'  nl endif
+if(oe)       '|oe{'                           out(oe) '}|fs{.}'  nl endif
+end endif
+
+if(lfBundle)                            out(lfBundle)  '|fs{.}'  nl endif
+if(sy)       '|fl{Syn:} |fvlink{'             out(sy) '}|fs{.}'  nl endif
+if(an)       '|fl{Ant:} |fvlink{'             out(an) '}|fs{.}'  nl endif
+if(mr)       '|fl{Morph:} |mr{'               out(mr) '}|fs{.}'  nl endif
+if(cfBundle) '|fl{See:}' nl             out(cfBundle)  '|fs{.}'  nl endif
+if(mn)       '|fl{See main entry:} |fvlink{'  out(mn) '}|fs{.}'  nl endif
+if(vaBundle) '|fl{Variant:}' nl         out(vaBundle)  '|fs{.}'  nl endif
+
+if(bw)       '|fl{From:} |bw{'                out(bw) '}|fs{.}'  nl endif
+if(etBundle) '|fl{Etym:}' nl            out(etBundle)  '|fs{.}'  nl endif
+
+if(pdBundle)                            out(pdBundle)  '|fs{.}'  nl endif
+
+ifneq(sg) '' begin '|fl{Sg:} |fv{'            out(sg) '}|fs{.}'  nl end endif
+ifneq(pl) '' begin '|fl{Pl:} |fv{'            out(pl) '}|fs{.}'  nl end endif
+ifneq(rd) '' begin '|fl{Redup:} |fv{'         out(rd) '}|fs{.}'  nl end endif
+ifneq(1s) '' begin '|fl{1s:} |fv{'            out(1s) '}|fs{.}'  nl end endif
+ifneq(2s) '' begin '|fl{2s:} |fv{'            out(2s) '}|fs{.}'  nl end endif
+ifneq(3s) '' begin '|fl{3s:} |fv{'            out(3s) '}|fs{.}'  nl end endif
+ifneq(4s) '' begin '|fl{3sn:} |fv{'           out(4s) '}|fs{.}'  nl end endif
+ifneq(1d) '' begin '|fl{1d:} |fv{'            out(1d) '}|fs{.}'  nl end endif
+ifneq(2d) '' begin '|fl{2d:} |fv{'            out(2d) '}|fs{.}'  nl end endif
+ifneq(3d) '' begin '|fl{3d:} |fv{'            out(3d) '}|fs{.}'  nl end endif
+ifneq(4d) '' begin '|fl{3dn:} |fv{'           out(4d) '}|fs{.}'  nl end endif
+ifneq(1p) '' begin '|fl{1p:} |fv{'            out(1p) '}|fs{.}'  nl end endif
+ifneq(1i) '' begin '|fl{1pi:} |fv{'           out(1i) '}|fs{.}'  nl end endif
+ifneq(1e) '' begin '|fl{1px:} |fv{'           out(1e) '}|fs{.}'  nl end endif
+ifneq(2p) '' begin '|fl{2p:} |fv{'            out(2p) '}|fs{.}'  nl end endif
+ifneq(3p) '' begin '|fl{3p:} |fv{'            out(3p) '}|fs{.}'  nl end endif
+ifneq(4p) '' begin '|fl{3pn:} |fv{'           out(4p) '}|fs{.}'  nl end endif
+
+if(tb)    nl '|{BR}|tb{'                      out(tb) '}' nl '|{BR}' nl endif  c 1999-04-02 MRP
+                                                     
+if(sd)       '|fl{SD:} |sd{'                  out(sd) '}|fs{.}'  nl endif
+if(is)       '|fl{Semantics:} |is{'           out(is) '}|fs{.}'  nl endif
+if(th)       '|fl{Thes:} |th{'                out(th) '}|fs{.}'  nl endif
+
+if(bb)       '|fl{Read:} |bb{'                out(bb) '}|fs{.}'  nl endif
+if(pc)       '|fs{(}|fe{'                     out(pc) '}|fs{)}'  nl endif  c 1999-03-29 MRP: fe
+
+c 1999-03-29 MRP: All notes use \nt style.
+if(nt)       '|fl{[Note:} |nt{'               out(nt) '}|fl{]}'  nl endif
+if(np)       '|fl{[Phon:} |np{'               out(np) '}|fl{]}'  nl endif
+if(ng)       '|fl{[Gram:} |ng{'               out(ng) '}|fl{]}'  nl endif
+if(nd)       '|fl{[Disc:} |nd{'               out(nd) '}|fl{]}'  nl endif
+if(na)       '|fl{[Anth:} |na{'               out(na) '}|fl{]}'  nl endif
+if(ns)       '|fl{[Socio:} |ns{'              out(ns) '}|fl{]}'  nl endif
+if(nq)       '|fl{[Ques:} |nq{'               out(nq) '}|fl{]}'  nl endif
+
+if(so)       '|fl{[Source:} |so{'             out(so) '}|fl{]}'  nl endif
+if(st)       '|fl{[Status:} |st{'             out(st) '}|fl{]}'  nl endif
+if(dt)       '|dt{'                           out(dt) '}|fs{.}'  nl endif
+
+if(??)       '|fl{[??} |??{'                  out(??) '}|fl{]}'  nl endif
+
+if(LP)       '\H2 |Hv{'                       out(LP) '}'        nl endif
+
+c --------------------------------------------------------------------
+
+c Clear switches for all fields      c Clear stores for all fields
+clear(lx,lc,hm,se,ph,ps,pn,sn)       store(lx,lc,hm,se,ph,ps,pn,sn)
+clear(dv,gv)                         store(dv,gv)
+clear(de,ge)                         store(de,ge)
+clear(dn,gn)                         store(dn,gn)
+clear(dr,gr)                         store(dr,gr)
+clear(re,rn,rr)                      store(re,rn,rr)
+clear(we,wn,wr)                      store(we,wn,wr)
+clear(lt)                            store(lt)
+clear(sc)                            store(sc)
+clear(xvBundle,rf,xv,xe,xn,xr)       store(xvBundle,rf,xv,xe,xn,xr)
+clear(uv,ue,un,ur)                   store(uv,ue,un,ur)
+clear(ev,ee,en,er)                   store(ev,ee,en,er)
+clear(ov,oe,on,or)                   store(ov,oe,on,or)
+clear(lfBundle,lf,lv,le,ln,lr)       store(lfBundle,lf,lv,le,ln,lr)
+clear(sy,an)                         store(sy,an)
+clear(mr)                            store(mr)
+clear(cfBundle,cf,ce,cn,cr)          store(cfBundle,cf,ce,cn,cr)
+clear(mn)                            store(mn)
+clear(vaBundle,va,ve,vn,vr)          store(vaBundle,va,ve,vn,vr)
+clear(bw)                            store(bw)
+clear(etBundle,et,eg,es,ec)          store(etBundle,et,eg,es,ec)
+clear(pdBundle,pd)                   store(pdBundle,pd)
+clear(pdl,pdv,pde,pdn,pdr,pdlPrev)   store(pdl,pdv,pde,pdn,pdr)
+                                     store(sg,pl,rd)
+                                     store(1s,2s,3s,4s)
+                                     store(1d,2d,3d,4d)
+                                     store(1p,1i,1e,2p,3p,4p)
+clear(tb)                            store(tb)
+clear(sd,is,th)                      store(sd,is,th)
+clear(bb)                            store(bb)
+clear(pc)                            store(pc)
+clear(nt,np,ng,nd,na,ns,nq)          store(nt,np,ng,nd,na,ns,nq)
+clear(so,st,dt,??)                   store(so,st,dt,??)
+clear(LP)                            store(LP)  c Letter paragraph
+                                     endstore
+
+
+c ====================================================================
+group(gOptionFields)  c Shoebox inserts these fields preceding the data
+
+'\_National' nl > clear(English)  c Audience: National
+'\_SingleColumn' nl > clear(TwoColumns)
+'\_IncludeLexemeWithCitationForm' nl > set(IncludeLexemeWithCitationForm)
+c '\_AlternateHierarchy' nl > next
+c '\_sn_se_ps' nl > set(AlternateHierarchy)  c \lx \sn \se \ps
+'\_NoTotal' nl > clear(Total)
+
+'\_se_ps_sn' nl >
+    set(se_ps_sn) clear(se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_se_sn_ps' nl >
+    set(se_sn_ps) clear(se_ps_sn,sn_se_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_AlternateHierarchy' nl > next
+'\_sn_se_ps' nl >
+    set(sn_se_ps) clear(se_ps_sn,se_sn_ps,sn_ps_se,ps_se_sn,ps_sn_se)
+'\_sn_ps_se' nl >
+    set(sn_ps_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,ps_se_sn,ps_sn_se)
+'\_ps_se_sn' nl >
+    set(ps_se_sn) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_sn_se)
+'\_ps_sn_se' nl >
+    set(ps_sn_se) clear(se_ps_sn,se_sn_ps,sn_se_ps,sn_ps_se,ps_se_sn)
+
+'\_copyright ' > set(copyright) store(copyright) use(gRestOfOptionField)
+
+'\_' > store(omit) use(gRestOfOptionField)
+
+nl > ''
+
+'' > store(omit) use(gMain)
+
+c --------------------------------------------------------------------
+group(gRestOfOptionField)
+
+nl fol(Backslash) > endstore use(gOptionFields)
+
+
+c ====================================================================
+group(gMain)   c Normal processing of fields starts here.
+
+'\lx ' > do(dOutput) store(lx) set(lx) use(gField) set(v)
+'\lc ' >             store(lc) set(lc) use(gField)
+'\hm ' >             store(hm) set(hm) use(gField)
+
+'\se ' > do(dOutput) store(se) set(se) use(gField) set(v)  c 1998-09-17 MRP
+'\ph ' >             append(ph) if(ph) '|fs{;} ' endif set(ph) use(gField)
+
+'\ps ' > do(dOutput) store(ps) set(ps) use(gField)
+'\pn ' >             c \pn occurs only for Audience: National
+                     if(ps) clear(ps) endif  c Replace English \ps 
+         do(dOutput) store(pn) set(pn,ps) use(gField)
+
+'\sn ' > do(dOutput) store(sn) set(sn) use(gField)
+
+'\pc .G.' > store(px) set(px) use(gField)
+
+'\dv ' > append(dv) if(dv)      '; '       endif set(dv) use(gField) set(v)
+'\de ' > append(de) if(de)      '; '       endif set(de) use(gField)
+'\dn ' > append(dn) if(dn)      '; '       endif set(dn) use(gField) set(n)
+'\dr ' > append(dr) if(dr)      '; '       endif set(dr) use(gField) set(r)
+
+'\gv ' > append(gv) if(gv)      '; '       endif set(gv) use(gField) set(v)
+'\ge ' > append(ge) if(ge)      ', '       endif set(ge) use(gGloss)
+'\gn ' > append(gn) if(gn)      ', '       endif set(gn) use(gGloss)
+'\gr ' > append(gr) if(gr)      ', '       endif set(gr) use(gGloss)
+
+'\re ' > append(re) if(re)      ', '       endif set(re) use(gField)
+'\rn ' > append(rn) if(rn)      ', '       endif set(rn) use(gField) set(n)
+'\rr ' > append(rr) if(rr)      ', '       endif set(rr) use(gField) set(r)
+
+'\we ' > append(we) if(we)      ', '       endif set(we) use(gField)
+'\wn ' > append(wn) if(wn)      ', '       endif set(wn) use(gField) set(n)
+'\wr ' > append(wr) if(wr)      ', '       endif set(wr) use(gField) set(r)
+
+'\lt ' > append(lt) if(lt)  '|fs{;} '      endif set(lt) use(gField)
+'\sc ' > append(sc) if(sc)  '|fs{;} '      endif set(sc) use(gField)
+
+'\rf ' >   do(xvBundle)
+          store(rf)                              set(rf) use(gField)
+'\xv' nl > do(xvBundle)
+'\xv ' >   ifn(rf) do(xvBundle) endif
+          store(xv)                              set(xv) use(gField) set(v)
+'\xe ' > append(xe) if(xe)      ' '        endif set(xe) use(gField)
+'\xn ' > append(xn) if(xn)      ' '        endif set(xn) use(gField) set(n)
+'\xr ' > append(xr) if(xr)      ' '        endif set(xr) use(gField) set(r)
+                                
+'\uv ' > append(uv) if(uv)      ' '        endif set(uv) use(gField)
+'\ue ' > append(ue) if(ue)      ' '        endif set(ue) use(gField)
+'\un ' > append(un) if(un)      ' '        endif set(un) use(gField) set(n)
+'\ur ' > append(ur) if(ur)      ' '        endif set(ur) use(gField) set(r)
+
+'\ev ' > append(ev) if(ev)      ' '        endif set(ev) use(gField)
+'\ee ' > append(ee) if(ee)      ' '        endif set(ee) use(gField)
+'\en ' > append(en) if(en)      ' '        endif set(en) use(gField) set(n)
+'\er ' > append(er) if(er)      ' '        endif set(er) use(gField) set(r)
+
+'\ov ' > append(ov) if(ov)      ' '        endif set(ov) use(gField)
+'\oe ' > append(oe) if(oe)      ' '        endif set(oe) use(gField)
+'\on ' > append(on) if(on)      ' '        endif set(on) use(gField) set(n)
+'\or ' > append(or) if(or)      ' '        endif set(or) use(gField) set(r)
+
+'\lf' nl > do(lfBundle)
+'\lf ' >   do(lfBundle)
+          store(lf)                              set(lf) use(gLexicalFunction)
+'\lv' nl > do(lfBundle)              c 1997-11-25 MRP
+'\lv ' >  if(lv) do(lfBundle) endif  c 1997-11-25 MRP
+          store(lv)                              set(lv) use(gField)  c set(v,vhm)
+'\le ' > append(le) if(le) "}|fs{' '}|fe{" endif set(le) use(gField)
+'\ln ' > append(ln) if(ln) "}|fs{' '}|fn{" endif set(ln) use(gField)
+'\lr ' > append(lr) if(lr) "}|fs{' '}|fr{" endif set(lr) use(gField)
+
+'\sy ' > append(sy) if(sy) '};' nl '|fvlink{' endif set(sy) use(gField)  c set(v,vhm)
+'\an ' > append(an) if(an) '};' nl '|fvlink{' endif set(an) use(gField)
+
+'\mr ' > append(mr) if(mr)          '}; |fv{'    endif set(mr) use(gField) set(v)
+
+'\cf' nl > do(cfBundle)
+'\cf ' >   do(cfBundle)
+          store(cf)                              set(cf) use(gField)  c set(v,vhm)
+'\ce ' > append(ce) if(ce) "}|fs{' '}|fe{" endif set(ce) use(gField)
+'\cn ' > append(cn) if(cn) "}|fs{' '}|fn{" endif set(cn) use(gField)
+'\cr ' > append(cr) if(cr) "}|fs{' '}|fr{" endif set(cr) use(gField)
+
+'\mn ' > append(mn) if(mn) '};' nl '|fvlink{' endif set(mn) use(gField)
+
+'\va' nl > do(vaBundle)
+'\va ' >   do(vaBundle)
+          store(va)                              set(va) use(gField) set(v,vhm)
+'\ve ' > append(ve) if(ve)     '}) (|fe{' endif set(ve) use(gField)
+'\vn ' > append(vn) if(vn) '}|fs{) (}|fn{' endif set(vn) use(gField)
+'\vr ' > append(vr) if(vr) '}|fs{) (}|fr{' endif set(vr) use(gField)
+
+'\bw ' > append(bw) if(bw)      '; '       endif set(bw) use(gField)
+
+'\et' nl > do(etBundle)
+'\et ' >   do(etBundle)
+          store(et)                              set(et) use(gField)
+'\eg ' > append(eg) if(eg)     "}' '|fe{"  endif set(eg) use(gField)
+'\es ' > append(es) if(es)       " "       endif set(es) use(gField)
+'\ec ' > append(ec) if(ec)     "}) (|fe{"  endif set(ec) use(gField)
+
+'\pd' nl > do(pdBundle)
+'\pd ' >   do(pdBundle)
+           store(pd)                                set(pd) use(gField)
+
+'\pdl' nl > do(pdBundle)
+'\pdl ' >   do(pdBundle)
+           store(pdl)                               set(pdl) use(gField)
+'\pdv' nl > do(pdBundle)               c 1997-12-01 MRP
+'\pdv ' >  if(pdv) do(pdBundle) endif  c 1997-12-01 MRP
+           store(pdv)                               set(pdv) use(gField) set(v,vhm)
+'\pde ' > append(pde) if(pde)     "}' '|fe{"  endif set(pde) use(gField)
+'\pdn ' > append(pdn) if(pdn) "}|fs{' '}|fn{" endif set(pdn) use(gField)
+'\pdr ' > append(pdr) if(pdr) "}|fs{' '}|fr{" endif set(pdr) use(gField)
+
+'\sg ' > append(sg) ifneq(sg) '' begin '; '   end endif use(gField) set(v,vhm)
+'\pl ' > append(pl) ifneq(pl) '' begin '; '   end endif use(gField) set(v,vhm)
+'\rd ' > append(rd) ifneq(rd) '' begin '; '   end endif use(gField) set(v,vhm)
+
+'\1s ' > append(1s) ifneq(1s) '' begin '; '   end endif use(gField)
+'\2s ' > append(2s) ifneq(2s) '' begin '; '   end endif use(gField)
+'\3s ' > append(3s) ifneq(3s) '' begin '; '   end endif use(gField)
+'\4s ' > append(4s) ifneq(4s) '' begin '; '   end endif use(gField)
+
+'\1d ' > append(1d) ifneq(1d) '' begin '; '   end endif use(gField)
+'\2d ' > append(2d) ifneq(2d) '' begin '; '   end endif use(gField)
+'\3d ' > append(3d) ifneq(3d) '' begin '; '   end endif use(gField)
+'\4d ' > append(4d) ifneq(4d) '' begin '; '   end endif use(gField)
+
+'\1p ' > append(1p) ifneq(1p) '' begin '; '   end endif use(gField)
+'\1i ' > append(1i) ifneq(1i) '' begin '; '   end endif use(gField)
+'\1e ' > append(1e) ifneq(1e) '' begin '; '   end endif use(gField)
+'\2p ' > append(2p) ifneq(2p) '' begin '; '   end endif use(gField)
+'\3p ' > append(3p) ifneq(3p) '' begin '; '   end endif use(gField)
+'\4p ' > append(4p) ifneq(4p) '' begin '; '   end endif use(gField)
+
+'\tb' fol(Newline) > next
+'\tb ' > append(tb) if(tb) '}' nl '|{BR}|tb{' endif set(tb) use(gField)  c 1999-04-02 MRP
+
+'\sd ' > append(sd) if(sd)  '|fs{;} '      endif set(sd) use(gField)
+'\is ' > append(is) if(is)  '|fs{;} '      endif set(is) use(gField)
+'\th ' > append(th) if(th)  '|fs{;} '      endif set(th) use(gField)
+
+'\bb ' > append(bb) if(bb)      ' '        endif set(bb) use(gField)
+'\pc ' > append(pc) if(pc)      '; '       endif set(pc) use(gField)
+
+'\nt ' > append(nt) if(nt)      ' '        endif set(nt) use(gField)
+'\np ' > append(np) if(np)      ' '        endif set(np) use(gField)
+'\ng ' > append(ng) if(ng)      ' '        endif set(ng) use(gField)
+'\nd ' > append(nd) if(nd)      ' '        endif set(nd) use(gField)
+'\na ' > append(na) if(na)      ' '        endif set(na) use(gField)
+'\ns ' > append(ns) if(ns)      ' '        endif set(ns) use(gField)
+'\nq ' > append(nq) if(nq)      ' '        endif set(nq) use(gField)
+
+'\so ' > append(so) if(so)      ' '        endif set(so) use(gField)
+'\st ' > append(st) if(st)      '; '       endif set(st) use(gField)
+'\dt ' > append(dt) if(dt)      '; '       endif set(dt) use(gField)
+
+
+c 1996-08-10 MRP: Shoebox now inserts the new letter section.
+c Unlike CTW, Sh3 RTF conversion applies the section's attributes,
+c i.e. number of columns, to the text that FOLLOWS the break.
+c 1996-08-15 MRP: Letter Paragraph and Letter Section
+'\LP ' > store(LP) set(LP) use(gRestOfNewLetter)
+
+endfile > do(dEndfile)
+
+c Omit field (copy over to use)
+
+'\_'   > store(omit) use(gRestOfField)  c Shoebox internal field
+'\'    > append(??) if(??) ' ' endif set(??) dup use(gField)  c Non-MDF
+
+c --------------------------------------------------------------------
+group(gRestOfField)
+
+nl fol(Backslash) > endstore use(gMain)
+
+endfile > next
+nl endfile > do(dEndfile)
+
+c ====================================================================
+group(gField)
+
+c special character styles handling
+c space after colon means it's NOT a chr style
+'fv: ' > dup
+'fn: ' > dup
+'fr: ' > dup
+'fe: ' > dup
+'fs: ' > dup
+'fi: ' > dup
+'fb: ' > dup
+'fl: ' > dup
+'sc: ' > dup
+'uc: ' > dup
+'ui: ' > dup
+'ub: ' > dup
+
+'fv:' > '|fv{' set(chrMDF,chr) set(fv,v,vhm)  c Vernacular font
+'fn:' > '|fn{' set(chrMDF,chr)                c National language font
+'fr:' > '|fr{' set(chrMDF,chr)                c Regional language font
+'fe:' > '|fe{' set(chrMDF,chr)                c English language font
+'fs:' > '|fs{' set(chrMDF,chr)                c standard font
+'fi:' > '|fi{' set(chrMDF,chr)                c italic font
+'fb:' > '|fb{' set(chrMDF,chr)                c bold font
+'fl:' > '|fl{' set(chrMDF,chr)                c label font
+'sc:' > '|sc{' set(chrMDF,chr)                c scientific name
+'ui:' > '|ui{' set(chrMDF,chr)                c underlined italic
+'ub:' > '|ub{' set(chrMDF,chr)                c underlined bold
+
+'uc:' > set(chrMDF) next                      c underlined character
+'|u{' > if(v) '|ub{' else begin               c underlined bold
+                                              c underlined italic or regular
+        if(n) begin if(English) '|ui{' else '|uc{' endif end else begin
+        if(r) begin if(English) '|ui{' else '|uc{' endif end else
+              begin if(English) '|uc{' else '|ui{' endif end endif
+                          end endif
+                          end endif
+        set(chr)
+
+'|i ' > next                                           c Manuscripter |i
+'|i'  > set(chrMS) next
+'|i{' > '|fi{' set(chr)
+
+'|b ' > next                                           c Manuscripter |b
+'|b'  > set(chrMS) next
+'|b{' > '|fb{' set(chr)
+
+'|r'  > if(chrMS) '}' clear(chrMS,chr) else dup endif  c Manuscripter |r
+
+'}' >
+    if(chr) begin
+        clear(do_it)
+        if(chrMDF) set(do_it) endif
+        if(chrMS)  set(do_it) endif
+        if(do_it) '}' endif
+        if(fv) clear(fv,v,vhm) endif  c 1997-05-02 MRP Fix \xv uc:... uc:...
+        clear(chrMDF,chrMS,chr)  c Turn off character style
+    end endif
+    dup  c Output the brace
+
+any(punct) >
+    if(chrMDF) begin
+        '}' clear(chrMDF,chr)  c Turn off character style
+        if(fv) clear(fv,v,vhm) endif  c 1997-05-02 MRP Fix \xv uc:... uc:...
+    end endif
+    dup  c Output the punctuation
+
+any(number) > if(vhm) '|hm{' dup '}' else dup endif
+
+'_'   > clear(do_it)  c Convert underline to space where needed
+        if(chr) set(do_it) endif
+        if(v) set(do_it) endif
+        if(do_it) ' ' else dup endif
+
+'-'   > clear(do_it)  c Convert hyphens to nonbreaking where needed
+        if(chr) set(do_it) endif
+        if(v) set(do_it) endif
+c        if(do_it) '|{_}' else dup endif  c 1997-12-04 MRP: |{_} notation
+        dup  c 1998-08-20 MRP
+        
+c any(WS) '-' > dup '|{_}' back(4)  c Convert leading hyphens to nonbreaking 
+c '-' prec(WS) > '|{_}'  c Convert leading hyphens to nonbreaking 
+
+',' nl fol(Backslash) > next  c Disregard comma at end of field
+nl fol(Backslash) >
+    if(chr) '}' clear(chrMDF,chrMS,chr) endif  c Turn off character style
+    endstore  c Stop storing
+    clear(fv,v,vhm)  c Clear the vernacular switches
+    clear(n)  c National
+    clear(r)  c Regional
+    use(gMain)  c Process the next field
+
+nl fol(Newline) > ''  c Omit the newline that Shoebox inserts between records
+nl >
+    if(chrMDF) begin
+        '}' clear(chrMDF,chr)   c Turn off character style
+        if(fv) clear(fv,v,vhm) endif
+    end endif       
+    dup
+
+nl endfile > next
+endfile >
+    if(chr) '}' clear(chrMDF,chrMS,chr) endif  c Turn off character style
+    do(dEndfile)
+
+'|{tab}' > ' '  c 1998-08-20 MRP: Inserted by MDFDict1.cct in \tb fields
+
+c ====================================================================
+group(gGloss)   c \ge, \gn, \gr
+
+',' nl fol(Backslash) > next  c Disregard comma at end of field
+nl fol(Backslash) > endstore use(gMain)
+
+endfile > next
+nl endfile > do(dEndfile)
+
+'_'   > ' '  c Convert underlines to spaces
+' ; ' > ', '  c Give multiple glosses normal punctuation
+
+nl fol(Newline) > ''  c Omit the newline that Shoebox inserts between records
+
+c ====================================================================
+group(gLexicalFunction)   c \lf
+
+':' fol(Newline) > next
+'=' fol(Newline) > store(omit) use(gRestOfField)  c No vernacular word
+
+': ' > next
+':'  > next
+'= ' > next
+'='  > store(lv) set(lv) use(gField) set(v)
+
+' ' fol(LexicalFunctionSeparator) > ''  c Skip preceding space
+
+nl fol(Backslash) > endstore use(gMain)
+
+endfile > next
+nl endfile > do(dEndfile)
+
+c ====================================================================
+group(gRestOfNewLetter)   c \LP New letter section heading
+
+nl fol(Newline) > ''
+
+nl fol(Backslash) > endstore use(gMain)
+
+c END ===============================================================
