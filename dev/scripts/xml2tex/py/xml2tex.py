@@ -310,7 +310,7 @@ class Xml2Tex(InOut, XmlFormat):
                         tex_file.write(element.text + ".\n")
                         errors.add(element.text)
         for error in errors:
-            print error
+            pass #print error
         tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
