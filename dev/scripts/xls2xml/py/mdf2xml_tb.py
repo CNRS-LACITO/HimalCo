@@ -37,6 +37,9 @@ class Mdf2Xml(MdfFormat, XmlFormat):
         if self.options.test is not None:
             if self.options.test == "na1":
                 self.options.input = "obj/na1.mdf"
+            elif self.options.test == "na":
+                #self.options.input = "obj/lexique_na_2013sq_POUR_TRANSFERT.mdf"
+                self.options.input = "obj/lexique_na_wo_xe_xn.mdf"
             else:
                 sys.exit(-1)
         # Compute output filename

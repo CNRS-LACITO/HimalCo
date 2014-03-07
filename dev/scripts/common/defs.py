@@ -12,7 +12,8 @@ DICT_JAP = "../../dict/japhug/toolbox/Dictionary.txt"
 # Khaling lexicon
 DICT_KLR = "../../dict/khaling/toolbox/Dictionary.txt"
 # Na lexicon
-DICT_NA = "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls"
+#DICT_NA = "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls"
+DICT_NA = "../../dict/na/lexique_na_wo_xe_xn.xls"
 # Test files
 TEST_JAP1 = "./test/japhug/input/japhug1.txt"
 TEST_JAP2 = "./test/japhug/input/japhug2.txt"

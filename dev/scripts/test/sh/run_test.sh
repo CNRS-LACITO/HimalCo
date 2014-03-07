@@ -14,11 +14,13 @@ python mdf2xml/py/mdf2xml_tb.py -t japhug1
 python mdf2xml/py/mdf2xml_tb.py -t japhug2
 python mdf2xml/py/mdf2xml_tb.py -t khaling1
 python mdf2xml/py/mdf2xml_tb.py -t khaling2
+python xls2xml/py/xls2mdf.py -t na1
+python xls2xml/py/mdf2xml_tb.py -t na1
 
 # Na
 
-python xls2xml/py/xls2mdf.py -t na1
-python xls2xml/py/mdf2xml_tb.py -t na1
+python xls2xml/py/xls2mdf.py
+python xls2xml/py/mdf2xml_tb.py -t na
 
 # Japhug
 
