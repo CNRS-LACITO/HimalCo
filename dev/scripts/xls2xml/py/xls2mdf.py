@@ -163,14 +163,14 @@ class Xls2Mdf(InOut, XlsFormat):
     def format_sf(self, line):
         """Format 'sf' fields.
         """
-        # 'sf' field is formatted as follows: "sf number, number; number, ..."
+        # 'sf' field is formatted as follows: "sf <numbering="x"> number, number; number, ..."
         sf = line.split()
         if len(sf) > 2:
-            # String to return in an MDF format: "\sf number\n\sf number\n\sf number\n" etc.
+            # String to return in an MDF format: "\sf <numbering="x"> number\n\sf <numbering="x"> number\n" etc.
             std_sf = ''
-            for i in range (1, len(sf)):
+            for i in range (2, len(sf)):
                 # Remove ',' and ';' characters
-                std_sf += sf[0] + " " + sf[i].rstrip(',;') + "\n"
+                std_sf += sf[0] + " " + sf[1] + " " + sf[i].rstrip(',;') + "\n"
             return std_sf
         else:
             return line

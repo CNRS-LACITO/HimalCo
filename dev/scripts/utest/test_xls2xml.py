@@ -53,13 +53,13 @@ class TestXls2MdfFunctions(unittest.TestCase):
     def test_parse_options(self):
         self.xls2mdf.parse_options()
         self.assertFalse(self.xls2mdf.options.verbose)
-        self.assertEqual(self.xls2mdf.options.input, "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls")
-        self.assertEqual(self.xls2mdf.options.output, "./obj/lexique_na_2013sq_POUR_TRANSFERT.mdf")
+        self.assertEqual(self.xls2mdf.options.input, "../../dict/na/lexique_na_wo_xe_xn.xls")
+        self.assertEqual(self.xls2mdf.options.output, "./obj/lexique_na_wo_xe_xn.mdf")
         self.assertEqual(self.xls2mdf.options.grammar, GRAMMAR_NA)
         self.assertIsNone(self.xls2mdf.options.test)
         #self.assertTrue(self.xls2mdf.options.unit_test)
-        self.assertEqual(self.xls2mdf.tmp_filename, "./obj/lexique_na_2013sq_POUR_TRANSFERT.tmp")
-        self.assertEqual(self.xls2mdf.txt_filename, "./obj/lexique_na_2013sq_POUR_TRANSFERT.txt")
+        self.assertEqual(self.xls2mdf.tmp_filename, "./obj/lexique_na_wo_xe_xn.tmp")
+        self.assertEqual(self.xls2mdf.txt_filename, "./obj/lexique_na_wo_xe_xn.txt")
         # For removal
         self.xls2mdf.options.input = "./obj/test_file.xls"
 
@@ -179,8 +179,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         pass
 
     def test_format_sf(self):
-        in_line = "\sf 123, 456; 789"
-        expected_line = "\sf 123\n\sf 456\n\sf 789\n"
+        in_line = "\sf <numbering="B"> 123, 456; 789"
+        expected_line = "\sf <numbering="B"> 123\n\sf <numbering="B"> 456\n\sf <numbering="B"> 789\n"
         self.assertEqual(self.xls2mdf.format_sf(in_line), expected_line)
 
     def test_format_va(self):
@@ -228,8 +228,8 @@ class TestMdf2XmlFunctions(unittest.TestCase):
     def test_parse_options(self):
         self.mdf2xml.parse_options()
         self.assertFalse(self.mdf2xml.options.verbose)
-        self.assertEqual(self.mdf2xml.options.input, "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls")
-        self.assertEqual(self.mdf2xml.options.output, "./obj/lexique_na_2013sq_POUR_TRANSFERT.xml")
+        self.assertEqual(self.mdf2xml.options.input, "../../dict/na/lexique_na_wo_xe_xn.xls")
+        self.assertEqual(self.mdf2xml.options.output, "./obj/lexique_na_wo_xe_xn.xml")
         self.assertEqual(self.mdf2xml.options.grammar, GRAMMAR_NA)
         self.assertIsNone(self.mdf2xml.options.test)
         #self.assertTrue(self.mdf2xml.options.unit_test)
