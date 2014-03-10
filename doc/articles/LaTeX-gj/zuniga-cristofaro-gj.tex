@@ -1,0 +1,321 @@
+\documentclass[twoside,a4paper,11pt]{article} 
+\usepackage{polyglossia}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+ \usepackage{geometry}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{multirow,slashbox}
+%\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{lineno}
+\usepackage[footnotesize,bf]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Junicode} 
+%\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Ubuntu} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+%\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+%\newfontfamily\greek[Mapping=tex-text,Scale=MatchLowercase]{Galatia SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}}
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+%\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{IPAGothic}%pour le chinois
+%\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{\mo{#1}}
+%\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\Σ}{\greek{Σ}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+
+\begin{document}
+\linenumbers
+\title{Directionality of change and   (non-)canonical direct/inverse systems \footnote{We would like to thank XXX. We are responsible for any remaining errors. This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 'Automatic paradigm generation and language description' of the Labex EFL (funded by the ANR/CGI). } }
+
+\author{Guillaume JACQUES, Anton ANTONOV\\ CNRS-INALCO-EHESS, CRLAO}
+%\date{}
+\maketitle
+\section{Introduction}
+
+\section{The (re)shaping of a direct-inverse system: the Plains Cree conjunct order }
+
+\subsection{Independent vs conjunct order in modern Plains Cree}
+
+
+
+\subsubsection{Independent order}
+
+\begin{table}[h]
+\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
+\label{tab:cree.ind} \centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+ \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+\midrule
+1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\ipa{kiwâpamitin}  & \ipa{kiwâpamitinâwâw}	& \cellcolor{Dandelion}\ipa{niwâpamâw}   & 	\cellcolor{Dandelion}\ipa{niwâpamâwak}  & \cellcolor{Dandelion}	\ipa{niwâpamimâwa}   \\ 
+1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \cellcolor{Dandelion}\ipa{kiwâpamânaw} & \cellcolor{Dandelion}\ipa{kiwâpamânawak}  & \cellcolor{Dandelion}	\ipa{kiwâpamimânawa}   \\ 
+1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\ipa{kiwâpamitinân}}   & \cellcolor{Dandelion}\ipa{niwâpamânân} & \cellcolor{Dandelion}\ipa{niwâpamânânak}  & \cellcolor{Dandelion}	\ipa{niwâpamimânâna}   \\ 
+2\sg   & 	\ipa{kiwâpamin}   & \grise{}& \multirow{2}{*}{\ipa{kiwâpaminân}}	&	\grise{}   &  \grise{} & \cellcolor{Dandelion}\ipa{kiwâpamâw}  & \cellcolor{Dandelion}\ipa{kiwâpamâwak} &\cellcolor{Dandelion} 	\ipa{kiwâpamimâwa}   \\ 
+2\pl  & 	\ipa{kiwâpaminâwâw} & \grise{}& \multirow{-2}{*}{ } & \grise{}  & 	\grise{}   & 	\cellcolor{Dandelion}\ipa{kiwâpamâwâw}  & \cellcolor{Dandelion}\ipa{kiwâpamâwâwak} &\cellcolor{Dandelion} 	\ipa{kiwâpamimâwâwa}   \\
+3\sg   & 	\cellcolor{green}\ipa{niwâpamik}   & \cellcolor{green}\ipa{kiwâpamikonaw} & \cellcolor{green}\ipa{niwâpamikonân} & \cellcolor{green}	\ipa{kiwâpamik}  & \cellcolor{green}	\ipa{kiwâpamikowâw} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{wâpam(im)êw}   \\ 
+3\pl   & 	\cellcolor{green}\ipa{niwâpamikwak}&  \cellcolor{green}\ipa{kiwâpamikonawak} & \cellcolor{green}\ipa{niwâpamikonânak}   & \cellcolor{green}	\ipa{kiwâpamikwak}   & \cellcolor{green}	\ipa{kiwâpamikowâwak} & \cellcolor{Dandelion}	\grise{} &	\grise{}  & \cellcolor{Dandelion}	\ipa{wâpam(im)êwak}   \\ 
+\multirow{2}{*}{3'}   & \multirow{2}{*}{\cellcolor{green}}  &  \multirow{2}{*}{\cellcolor{green}}  & \multirow{2}{*}{\cellcolor{green}} &\cellcolor{green} &  \multirow{2}{*}{\cellcolor{green}}  &\multirow{2}{*}{\cellcolor{green}}   & \multirow{2}{*}{\cellcolor{green}} & \cellcolor{Dandelion} \ipa{wâpamêyiwa} \\ 
+ \multirow{-2}{*}{} & \multirow{-2}{*}{\cellcolor{green}\ipa{niwâpamikoyiwa}} & \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikonawa}}   &  \multirow{-2}{*}{\cellcolor{green}\ipa{niwâpamikonâna}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikoyiwa}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikowâwa}}& \multirow{-2}{*}{\cellcolor{green}\ipa{wâpamik}}  & \multirow{-2}{*}{\cellcolor{green}\ipa{wâpamikwak}} & \cellcolor{green} \ipa{wâpamikoyiwa}  \\ 
+\bottomrule
+\textsc{intr} & \ipa{nipimipahtân} & \ipa{ kipimipahtâ(nâ)naw} & \ipa{nipimipahtânân} &\ipa{ kipimipahtân} &\ipa{ kipimipahtânâwâw} & \ipa{pimipahtâw} & \ipa{pimipahtâwak} & \ipa{pimipahtâyiwa} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+\subsubsection{Conjunct order}
+
+\begin{table}[h]
+\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
+\label{tab:cree.conj} \centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+ \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+\midrule
+1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\cellcolor{pink}\ipa{ê-wâpam-it-ân}  & \cellcolor{pink}\ipa{ê-wâpam-it-ako-k}	& \cellcolor{Turquoise}\ipa{ê-wâpam-ak}   & 	\cellcolor{Turquoise}\ipa{ê-wâpam-ak-ik}  & \cellcolor{Turquoise}	\ipa{ê-wâpam-im-ak}   \\ 
+1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahko-k}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
+1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk-ik}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
+2\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yan}   & \grise{}& \multirow{2}{*}{\cellcolor{cyan}}	&	\grise{}   &  \grise{} & \cellcolor{Aquamarine}\ipa{ê-wâpam-at}  & \cellcolor{Aquamarine}\ipa{ê-wâpam-at-ik} &\cellcolor{Aquamarine}\ipa{ê-wâpam-im-at}   \\ 
+2\pl  & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yêk} & \grise{}& \multirow{-2}{*}{\cellcolor{cyan} \ipa{ê-wâpam-i-yâhk}} & \grise{}  & 	\grise{}   & 	\cellcolor{Dandelion}\ipa{ê-wâpam-â-yêk}  & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yêko-k} &\cellcolor{Dandelion} 	\ipa{ê-wâpam-im-â-yêk}   \\
+3\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-t}   & \cellcolor{green}\ipa{ê-wâpam-iko-yahk} & \cellcolor{green}\ipa{ê-wâpam-iko-yâhk} & \cellcolor{SkyBlue}\ipa{ê-wâpam-isk}  & \cellcolor{green}	\ipa{ê-wâpam-iko-yêk} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-t}   \\ 
+3\pl   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-c-ik}&  \cellcolor{green}\ipa{ê-wâpam-iko-yahko-k} & \cellcolor{green}\ipa{ê-wâpam-iko-yâhk-ik}   & \cellcolor{SkyBlue}	\ipa{ê-wâpam-isk-ik}   & \cellcolor{green}	\ipa{ê-wâpam-iko-yêko-k} & \cellcolor{Dandelion}	\grise{} &	\grise{}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-c-ik}   \\ 
+\multirow{2}{*}{3'}   & \multirow{2}{*}{\cellcolor{cyan}}  &  \multirow{2}{*}{\cellcolor{green}}  & \multirow{2}{*}{\cellcolor{green}} &\cellcolor{SkyBlue} &  \multirow{2}{*}{\cellcolor{green}}  &\multirow{2}{*}{\cellcolor{green}}   & \multirow{2}{*}{\cellcolor{green}} & \cellcolor{Dandelion} \ipa{ê-wâpam-â-yi-t} \\ 
+ \multirow{-2}{*}{} & \multirow{-2}{*}{\cellcolor{cyan}\ipa{ê-wâpam-iy-i-t}} & \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yahk}}   &  \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yâhk}} &  \multirow{-2}{*}{\cellcolor{SkyBlue}\ipa{ê-wâpam-iy-isk}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yêk}}& \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-iko-t}}  & \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-iko-c-ik}} & \cellcolor{green} \ipa{ê-wâpam-iko-yi-t}  \\ 
+\bottomrule
+\textsc{intr} & \ipa{ê-pimipahtâ-yân} & \ipa{ ê-pimipahtâ-yahk} & \ipa{ê-pimipahtâ-yâhk} &\ipa{ ê-pimipahtâ-yan} &\ipa{ ê-pimipahtâ-yêk} & \ipa{ê-pimipahtâ-t} & \ipa{ê-pimipahtâ-c-ik} & \ipa{ê-pimipahtâ-yi-t} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\subsection{The diachrony of the Plains Cree conjunct order inflections}
+
+
+\begin{table}[h]
+\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
+\label{tab:cree.conj} \centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+ \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+\midrule
+1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\cellcolor{pink}\ipa{ê-wâpam-it-ân}  & \cellcolor{pink}\ipa{ê-wâpam-it-ako-k}	& \cellcolor{Turquoise}\ipa{ê-wâpam-ak}   & 	\cellcolor{Turquoise}\ipa{ê-wâpam-ak-ik}  & \cellcolor{Turquoise}	\ipa{ê-wâpam-im-ak}   \\ 
+1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  &  \ipa{ê-wâpam-ahk} & \ipa{ê-wâpam-ahko-k} & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
+1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   &  \cellcolor{Turquoise}\ipa{ê-wâpam-ak-iht} & \cellcolor{Turquoise} \ipa{ê-wâpam-ak-iht-ik}   & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
+2\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yan}   & \grise{}& \multirow{2}{*}{\cellcolor{cyan}}	&	\grise{}   &  \grise{} & \cellcolor{Aquamarine}\ipa{ê-wâpam-at}  & \cellcolor{Aquamarine}\ipa{ê-wâpam-at-ik} &\cellcolor{Aquamarine}\ipa{ê-wâpam-im-at}   \\ 
+2\pl  & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yêk} & \grise{}& \multirow{-2}{*}{\cellcolor{cyan} \ipa{ê-wâpam-i-yâhk}} & \grise{}  & 	\grise{}   & 	\ipa{ê-wâpam-êk}  & \ipa{ê-wâpam-êko-k} &\cellcolor{Dandelion} 	\ipa{ê-wâpam-im-â-yêk}   \\
+3\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-t}   & \ipa{ê-wâpam-it-ahk} & \ipa{ê-wâpam-i-yam-iht}  & \cellcolor{SkyBlue}\ipa{ê-wâpam-isk}  & \cellcolor{pink}	\ipa{ê-wâpam-it-êk} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-t}   \\ 
+3\pl   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-c-ik}&  \ipa{ê-wâpam-it-ahko-k} & \ipa{ê-wâpam-i-yam-iht-ik}   & \cellcolor{SkyBlue}	\ipa{ê-wâpam-isk-ik}   & \cellcolor{pink}	\ipa{ê-wâpam-it-êko-k} & \cellcolor{Dandelion}	\grise{} &	\grise{}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-c-ik}   \\ 
+\multirow{2}{*}{3'}   & \multirow{2}{*}{\cellcolor{cyan}}  &  \multirow{2}{*}{\cellcolor{green}}  & \multirow{2}{*}{\cellcolor{green}} &\cellcolor{SkyBlue} &  \multirow{2}{*}{\cellcolor{green}}  &\multirow{2}{*}{\cellcolor{green}}   & \multirow{2}{*}{\cellcolor{green}} & \cellcolor{Dandelion} \ipa{ê-wâpam-â-yi-t} \\ 
+ \multirow{-2}{*}{} & \multirow{-2}{*}{\cellcolor{cyan}\ipa{ê-wâpam-iy-i-t}} & \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yahk}}   &  \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yâhk}} &  \multirow{-2}{*}{\cellcolor{SkyBlue}\ipa{ê-wâpam-iy-isk}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-ikow-â-yêk}}& \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-iko-t}}  & \multirow{-2}{*}{\cellcolor{green}\ipa{ê-wâpam-iko-c-ik}} & \cellcolor{green} \ipa{ê-wâpam-iko-yi-t}  \\ 
+\bottomrule
+\textsc{intr} & \ipa{ê-pimipahtâ-yân} & \ipa{ ê-pimipahtâ-yahk} & \ipa{ê-pimipahtâ-yâhk} &\ipa{ ê-pimipahtâ-yan} &\ipa{ ê-pimipahtâ-yêk} & \ipa{ê-pimipahtâ-t} & \ipa{ê-pimipahtâ-c-ik} & \ipa{ê-pimipahtâ-yi-t} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+
+
+\begin{table}[h]
+\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
+\label{tab:cree.conj} \centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+ \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+\midrule
+1s & 	 & 	 & 	 & 	\ipa{-eθâni} & 	\ipa{-eθakokwe} & 	\ipa{-aki} & 	\ipa{-akwâwi} & 	\ipa{-emaki} \\ 	
+1i & 	 & 	 & 	 & 	 & 	 & 	\ipa{-ankwe} & 	\ipa{} & 	\ipa{-emankwe} \\ 	
+1e & 	 & 	 & 	 & 	\ipa{-eθânke} & 	\ipa{} & 	\ipa{-akenti} & 	\ipa{} & 	\ipa{-emakenti} \\ 	
+2s & 	\ipa{-iyani} & 	 & 	\ipa{-iyânkwe} & 	 & 	 & 	\ipa{-ati} & 	\ipa{-atwâwi} & 	\ipa{-emati} \\ 	
+2p & 	\ipa{-iyêkwe} & 	 & 	\ipa{} & 	 & 	 & 	\ipa{-êkwe} & 	\ipa{} & 	\ipa{-emêkwe} \\ 	
+3s & 	\ipa{-iti} & 	\ipa{-eθankwe} & 	\ipa{-iyamenti} & 	\ipa{-eθki} & 	\ipa{-eθâkwe} & 	 & 	 & 	\ipa{-âti} \\ 	
+3p & 	\ipa{-iwâti} & 	\ipa{} & 	\ipa{} & 	\ipa{-eθkwâwi} & 	\ipa{} & 	 & 	 & 	\ipa{-âwâti} \\ 	
+3's & 	\ipa{-iriti} & 	\ipa{} & 	\ipa{} & 	\ipa{-emeθki} & 	\ipa{} & 	\ipa{-ekweti} & 	\ipa{-ekowâti} & 	\ipa{} \\ 	
+3'p & 	& 	 & 	 & 	 & 	 & 	 & 	 &  \\ \bottomrule
+\end{tabular}
+}
+\end{table}	
+
+\subsection{From tripartite alignment to direct-inverse?}
+
+\section{From or towards a canonical direct-inverse system?}
+
+\subsection{Direct-inverse systems in Sino-Tibetan}
+
+\subsubsection{Zbu Rgyalrong}
+
+\begin{table}[h]
+\caption{Zbu Rgyalrong transitive paradigm (data adapted from \citealt{gongxun14agreement})}\label{tab:zbu.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} &\cellcolor[wave]{600} 	\ipa{\rc{}-ŋ}   & 	\cellcolor[wave]{600} \ipa{\rc{}-ŋ-ndʑə} & 	\cellcolor[wave]{600} \ipa{\rc{}-ŋ-ɲə} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{tɐ-\ra{}} & 	\ipa{tɐ-\ra{}-ndʑə} & 	\ipa{tɐ-\ra{}-ɲə} & 	\multicolumn{3}{c|}{ \ipa{\ra{}-tɕə}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\ra{}-jə}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\cellcolor[wave]{600}\ipa{tə-\rc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ŋ-ndʑə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-tɕə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-jə} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ndʑə}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} &\cellcolor[wave]{500} 	\ipa{tə-wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tə-\ra{}-ɲə}} & 	\grise{} \\	
+\hline
+\textsc{3sg} & \cellcolor[wave]{500} 	\ipa{wə-\ra{}-ŋ} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\cellcolor[wave]{600}\ipa{\rc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ndʑə} & 	\cellcolor[wave]{500} \ipa{wə-\ra{}-tɕə} & \cellcolor[wave]{500}		\ipa{wə-\ra{}-jə} & \cellcolor[wave]{500}	\ipa{tə-wə-\ra{}} &\cellcolor[wave]{500}	\ipa{tə-wə-\ra{}-ndʑə} & 	\cellcolor[wave]{500}\ipa{tə-wə-\ra{}-ɲə} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ndʑə} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  \cellcolor[wave]{500}	\ipa{wə-\ra{}-ŋ-ɲə} & 	\cellcolor[wave]{500} & \cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & 	\cellcolor[wave]{500} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\ra{}-ɲə} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &\cellcolor[wave]{500}	\ipa{wə-\ra{}} & 	\cellcolor[wave]{500}\ipa{wə-\ra{}-ndʑə} & \cellcolor[wave]{500}	\ipa{wə-\ra{}-ɲə} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\ra{}-ŋ}&\ipa{\ra{}-tɕə}&\ipa{\ra{}-jə}&\ipa{tə-\ra{}}&\ipa{tə-\ra{}-ndʑə}&\ipa{tə-\ra{}-ɲə}&\ipa{\ra{}}&\ipa{\ra{}-ndʑə} &\ipa{\ra{}-ɲə}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+\subsubsection{Bantawa}
+
+\begin{table}[b]
+\caption{The Bantawa non-past affirmative transitive paradigm (\citealt[145-8]{doornenbal09})}\label{tab:bantawapos}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llllllllllll}
+%\cline{1-12}
+\toprule
+\backslashbox{A}{P}  & 	\textsc{1sg} & 	\textsc{1di} & 	\textsc{1de} & 	\textsc{1pi} & 	\textsc{1pe} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & \textsc{3pl}\\
+% \cline{1-1}
+% \cline{7-12}
+\midrule
+\textsc{1sg} &  \multicolumn{5}{c}{\grise{}}	 	&	\ipa{\ro{}-na} & 	\ipa{\ro{}-naci} & 	\ipa{\ro{}-nanin}& 	\ipa{\ro{}-uŋ}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{\ro{}-uŋcɨŋ}\cellcolor[wave]{600}} 	\\
+\textsc{1di} & \multicolumn{8}{c}{\grise{}}	 		&	\ipa{\ro{}-cu}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{\ro{}-cuci}\cellcolor[wave]{600}}	\\
+\textsc{1de} & 	 \multicolumn{5}{c}{\grise{}}	&	 	 \multicolumn{3}{c}{\ipa{\ro{}-ni}}     & 	\ipa{\ro{}-cuʔa}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{\ro{}-cuciʔa}\cellcolor[wave]{600}} 	\\
+\textsc{1pi} & 	 \multicolumn{8}{c}{\grise{}}	&	\ipa{\ro{}-um}\cellcolor[wave]{600} & \multicolumn{2}{c}{	\ipa{\ro{}-umcɨm}\cellcolor[wave]{600}} 	\\
+\textsc{1pe} & 	 \multicolumn{5}{c}{\grise{}}&		 \multicolumn{3}{c}{\ipa{\ro{}-ni}} & 	\ipa{\ro{}-umka}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{\ro{}-umcɨmka}\cellcolor[wave]{600}} 	\\
+%\cline{10-12}
+\textsc{2sg} & 	\ipa{tɨ-\ro{}-ŋa} & 	\grise{}&	\ipa{} & \grise{}	&	\ipa{} & 	 \multicolumn{3}{c}{\grise{}}	&	\ipa{tɨ-\ro{}-u}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-uci}\cellcolor[wave]{600}} \\
+\textsc{2du} & 	\ipa{tɨ-\ro{}-ŋaŋcɨŋ} & \grise{}&	\ipa{tɨ-\ro{}-ni(n)} & \grise{}	&	\ipa{tɨ-\ro{}-ni(n)} & 	 \multicolumn{3}{c}{\grise{}}	&	\ipa{tɨ-\ro{}-cu}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-cuci}\cellcolor[wave]{600}}\\
+\textsc{2pl} & 	\ipa{tɨ-\ro{}-ŋaŋnɨŋ} & \grise{}	&	\ipa{} & \grise{}	&	\ipa{} & 	 \multicolumn{3}{c}{\grise{}}&	\ipa{tɨ-\ro{}-um}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-umcum}\cellcolor[wave]{600}} \\
+%\cline{2-12}
+\textsc{3sg} &\cellcolor[wave]{500}	 	\ipa{ɨ-\ro{}-ŋa} & 	 \cellcolor[wave]{500}	 & 	\cellcolor[wave]{500}	\ipa{(n)ɨ-\ro{}-aciʔa} &    \cellcolor{red}	& \cellcolor[wave]{500}		\ipa{(n)ɨ-\ro{}-inka} & 	\cellcolor[wave]{500}	 & 	\cellcolor[wave]{500}	& 	\cellcolor[wave]{500}	& 	\ipa{\ro{}-u}\cellcolor[wave]{600} & 	\multicolumn{2}{c}{\ipa{\ro{}-uci}\cellcolor[wave]{600}} \\
+\textsc{3du} &\ipa{ɨ-\ro{}-ŋaŋcɨŋ}\cellcolor[wave]{500} & 	  \ipa{nɨ-\ro{}-ci}\cellcolor[wave]{500} 	& 	\cellcolor[wave]{500}{\multirow{2}{*}{\ipa{nɨ-\ro{}-aciʔa}}}	 & 	 \ipa{mɨ-\ro{}}\cellcolor{red} 	 & \multirow{2}{*}{\ipa{nɨ-\ro{}-inka}\cellcolor[wave]{500}} & 	\cellcolor[wave]{500}	\ipa{nɨ-\ro{}} & \ipa{nɨ-\ro{}-ci}\cellcolor[wave]{500} & 	\ipa{nɨ-\ro{}-in}\cellcolor[wave]{500} & \ipa{ɨ-\ro{}-cu} \cellcolor[wave]{550}& \multicolumn{2}{c}{\ipa{ɨ-\ro{}-cuci}\cellcolor[wave]{550}}	\\
+\textsc{3pl} &	 \ipa{nɨ-\ro{}-ŋa}\cellcolor[wave]{500} & \cellcolor[wave]{500}	 &  \multirow{-2}{*}{\ipa{nɨ-\ro{}-aciʔa}\cellcolor[wave]{500}}	  & 	\cellcolor{red} &  \multirow{-2}{*}{\ipa{nɨ-\ro{}-inka}\cellcolor[wave]{500}}	 &   \cellcolor[wave]{500}		  & 	 \cellcolor[wave]{500}	  & \cellcolor[wave]{500}	   & 	\ipa{ɨ-\ro{}} \cellcolor[wave]{500}	& \multicolumn{2}{c}{\ipa{mɨ-\ro{}-uci}\cellcolor[wave]{550}} 	\\
+%\cline{1-12}
+\textsc{intr}	&\ipa{\ro{}-ŋa}&\ipa{\ro{}-ci}&\ipa{\ro{}-ca}&\ipa{\ro{}-in}&\ipa{\ro{}-inka}&\ipa{tɨ-\ro{}}& \ipa{tɨ-\ro{}-ci}& \ipa{tɨ-\ro{}-in}& \ipa{\ro{}}  & \ipa{\ro{}-ci} &\ipa{mɨ-\ro{}} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\begin{table}[b]
+\caption{The Bantawa non-past negative transitive paradigm (\citealt[145-8]{doornenbal09})}\label{tab:bantawaneg}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llllllllllll}
+\toprule
+\backslashbox{A}{P}  & 	\textsc{1sg} & 	\textsc{1di} & 	\textsc{1de} & 	\textsc{1pi} & 	\textsc{1pe} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & \textsc{3pl}	\\
+%\cline{1-1}
+%\cline{7-12}
+\midrule
+\textsc{1sg} &  \multicolumn{5}{c}{\grise{}}	 	&	{\ipa{ɨ-\ro{}-nan}} & 	\ipa{ɨ-\ro{}-nancin} & 	\ipa{ɨ-\ro{}-naminin}& 	\cellcolor{red}\ipa{ɨ-\ro{}-nɨŋ}& 	\multicolumn{2}{c}{\ipa{ɨ-\ro{}-nɨŋcɨŋ}\cellcolor{red}} 	\\
+\textsc{1di} & \multicolumn{8}{c}{\grise{}}	 		&	\cellcolor{red}\ipa{ɨ-\ro{}-cun} & 	\multicolumn{2}{c}{\ipa{ɨ-\ro{}-cuncin}\cellcolor{red}}	\\
+\textsc{1de} & 	 \multicolumn{5}{c}{\grise{}}	&	 	 \multicolumn{3}{c}{\ipa{ɨ-\ro{}-nin}}     & 	\cellcolor{red}\ipa{ɨ-\ro{}-cunka}& 	\multicolumn{2}{c}{\ipa{ɨ-\ro{}-cuncinka}\cellcolor{red}} 	\\
+\textsc{1pi} & 	 \multicolumn{8}{c}{\grise{}}	&	\cellcolor{red}\ipa{ɨ-\ro{}-imin}& \multicolumn{2}{c}{\ipa{ɨ-\ro{}-imincin}\cellcolor{red}} 	\\
+\textsc{1pe} & 	 \multicolumn{5}{c}{\grise{}}&		 \multicolumn{3}{c}{\ipa{ɨ-\ro{}-nin}} & 	\cellcolor{red}\ipa{ɨ-\ro{}-iminka} & 	\multicolumn{2}{c}{\ipa{ɨ-\ro{}-imincinka}\cellcolor{red}} 	\\
+%\cline{10-12}
+\textsc{2sg} & 	\ipa{tɨ-\ro{}-nɨŋ} & 	\grise{}&	\ipa{} & \grise{}	&	\ipa{} & 	 \multicolumn{3}{c}{\grise{}}	&	\ipa{tɨ-\ro{}-nan} & 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-nancin}} \\
+\textsc{2du} & 	\ipa{tɨ-\ro{}-ŋɨŋcɨŋ} & \grise{}&	\ipa{tɨ-\ro{}-niminin} & \grise{}	&	\ipa{tɨ-\ro{}-niminin} & 	 \multicolumn{3}{c}{\grise{}}	&	\ipa{tɨ-\ro{}-nancin} & 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-nancinan}}\\
+\textsc{2pl} & 	\ipa{tɨ-\ro{}-ŋɨŋmɨnɨŋ} & \grise{}	&	\ipa{} & \grise{}	&	\ipa{} & 	 \multicolumn{3}{c}{\grise{}}&	\ipa{tɨ-\ro{}-naminin}& 	\multicolumn{2}{c}{\ipa{tɨ-\ro{}-nannimincin}} \\
+%\cline{2-12}
+\textsc{3sg} & \ipa{ɨ-\ro{}-nɨŋ} & 	& &  &  & & & & \ipa{ɨ-\ro{}-un} & 	\multicolumn{2}{c}{\ipa{ɨ-\ro{}-uncin}} \\
+\textsc{3du} & \ipa{ɨ-\ro{}-ŋɨŋcɨŋ} &   \ipa{nɨ-\ro{}-cin} 	& 	 \ipa{nɨ-\ro{}-cinka}	 & 	 \ipa{mɨ-\ro{}-nin} 	 &	\ipa{nɨ-\ro{}-iminka} & 	\ipa{nɨ-\ro{}-nan} & 	\ipa{nɨ-\ro{}-nancin} & 		\ipa{nɨ-\ro{}-naminin} & \ipa{ɨ-\ro{}-cun}& \multicolumn{2}{c}{\ipa{ɨ-\ro{}-cuncin}}	\\
+\textsc{3pl} & 	\ipa{nɨ-\ro{}-nɨŋ} &  	  & 	  & 	 & 	 & 	  & 	 	  & 	   & 	\ipa{nɨ-\ro{}-un} 	& \multicolumn{2}{c}{\ipa{nɨ-\ro{}-uncin}} 	\\
+%\cline{1-12}
+\textsc{intr}	&\cellcolor{red}\ipa{ɨ-\ro{}-nɨŋ}&\cellcolor{red}\ipa{ɨ-\ro{}-cin}&\cellcolor{red}\ipa{ɨ-\ro{}-cinka}&\cellcolor{red}\ipa{ɨ-\ro{}-imin}&\cellcolor{red}\ipa{ɨ-\ro{}-iminka}&\ipa{tɨ-\ro{}-nan}& \ipa{tɨ-\ro{}-nanci}& \ipa{tɨ-\ro{}-naminin}& \cellcolor{red}\ipa{ɨ-\ro{}-nin}  & \cellcolor{red}\ipa{ɨ-\ro{}-cin} &\ipa{nɨ-\ro{}-nin} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
+\subsection{A comparative perspective on Rgyalrong and Kiranti}
+
+While all specialists of Sino-Tibetan languages agree that the Rgyalrong and Kiranti verbal systems are at least partially cognate (\citealt{lapolla03}, \citealt{delancey10agreement} and \citealt{jacques12agreement}),\footnote{There authors differ in their interpretation of the data: LaPolla considers the Rgyalrong / Kiranti commonalities to be common innovations, while DeLancey and Jacques think that they go back to proto-Sino-Tibetan. This controversy will not be dealt with in this paper.} there is not consensus as to exactly which type of system should be reconstructed for the common ancestor of Rgyalrong and Kiranti.
+
+Since Rgyalrong and Kiranti languages, unlike Cree, lack ancient attestations,\footnote{There are texts in Situ Rgyalrong, some of them dating back from the eighteenth century (\citealt{ngagdbang10gtamdpe}), but these texts are difficult to date, not fully understood and contain few   conjugated verbal forms; until a systematic study of verbal morphology in these texts has been undertaken, historical studies on Rgyalrong languages will have to be exclusively based on the comparative method.} former stages of these languages are only recoverable by reconstruction. The historical phonology of these languages are still imperfectly understood (see \citealt{jacques04these} and \citealt{opgenort05jero}), and the reconstruction of morphology in the Sino-Tibetan family is still in infancy -- this state of affair is due to the fact that these languages have not been described in detail until recently.
+
+Given the absence of historical data, all logical possibilities will have to be explored to explain the commonalities and differences between the Bantawa and the Zbu verbal systems, taking also into account other Kiranti languages.
+
+
+
+
+\subsubsection{From a canonical towards a less canonical system}
+
+The first possibility is that the common ancestor of Zbu and Bantawa had a canonical direct-inverse close to that of Zbu, that evolved into the opaque system found in Bantawa. This hypothesis is possible in that Zbu, like other Rgyalrong languages, is   phonologically conservative as far as syllable onsets and prefixes are concerned generally in comparison to other languages. For instance, while it has been known since \citet{conrady1896} that most if not all Sino-Tibetan languages have  traces of a causative \ipa{s--} prefix, this causative prefix only remains fully productive in Rgyalrong languages (where it can be applied to recent loanwords from Chinese). While some degree of paradigm levelling has to be posited in Rgyalrong languages in any case, otherwise the person agreement morphology would be highly irregular, it is possible that the overall structure of the system goes back earlier than proto-Rgyalrong.
+
+The focus of this section and of the following one will be on the prefixes; although most personal suffixes in Rgyalrong and Kiranti appear to be cognate, their similarity to pronouns, especially in Rgyalrong, raises the suspicion that they might have been recently grammaticalized from pronouns at least in part.   
+
+Zbu Rgyalrong only three prefixes in its personal agreement system:   inverse   \ipa{wə--},   second person   \ipa{tə--}  and the portmanteau 1$\rightarrow$2   \ipa{tɐ--}. Bantawa has four distinct prefixes in the positive paradigm:   second person \ipa{tɨ--},   3$\rightarrow$SAP \ipa{nɨ--}, 3$\rightarrow$\textsc{1pi} and \textsc{3pl} \ipa{mɨ--} and 3$\rightarrow$1 / \textsc{3du/pl}$\rightarrow$3 \ipa{ɨ}. Phonologically,  the Zbu inverse  \ipa{wə--}, and the  second person   \ipa{tə--}  are matches for Bantawa \ipa{tɨ--},  and \ipa{ɨ--} (\citealt{jacques12agreement}), but there are no equivalent for the other prefixes in Zbu.
+
+
+Since no rigorous phonological reconstruction is yet possible, only semi-reconstruction (written with \# instead of *) are provided for the common ancestor of Zbu and Bantawa, using the following symbols: \#T for the proto-form ancestral to Zbu \ipa{tə--} and Bantawa \ipa{tɨ--}, \#W for the ancestral form of Zbu \ipa{wə--} and Bantawa \ipa{ɨ--}, \#M and \#N from the origins of Bantawa \ipa{mɨ--} and \ipa{nɨ--}. Since the 1$\rightarrow$2 forms are not comparable between Rgyalrong and Bantawa, this form will not be discussed further in this section or the next (On the propensity of local forms to be regularly remade, see \citealt{heath98skewing}).
+
+
+The basic distribution of prefixes in the common ancestor of Rgyalrong and Kiranti is assumed to be as in Table \ref{tab:proto.st1}, without any equivalent of the prefixes\ipa{mɨ--} and \ipa{nɨ--} of Bantawa. The proto-system is assumed, like Zbu (and all Rgyalrong languages) and unlike Bantawa (and all Kiranti languages), to have had two 3$\rightarrow$3 forms, a direct 3$\rightarrow$3' and an inverse one 3'$\rightarrow$3, with a function similar to that still attested in   Rgyalrong languages. The Zbu paradigm derives from the model in Table \ref{tab:proto.st1} almost unchanged, except for the local forms 1$\rightarrow$2 and 2$\rightarrow$1, which have undergone special evolutions.\footnote{In most Rgyalrong languages, the 2$\rightarrow$1 form has a  prefix distinct from the second person prefix. For instance, Japhug has   \ipa{tɯ--} in the second person (intransitive, 3$\rightarrow$2 and 2$\rightarrow$3) but \ipa{kɯ--} in 2$\rightarrow$1. This issue is not discussed in this paper.}
+
+
+\begin{table}[H] 
+\caption{A model of the proto-Rgyalrong/Kiranti prefixal paradigm, hypothesis 1} 
+ \centering \label{tab:proto.st1}
+\begin{tabular}{l|lllll} 
+\toprule
+&1 & 2 &3 & 3'\\
+\hline
+1 &\grise{} & ? &  \#\ro{} \\
+2&\#T-W-\ro{} & \grise{} &\#T-\ro{}\\
+3&\#W-\ro{} &\#T-W-\ro{} & \grise{} &\#\ro{} \\
+3'&&&\#W-\ro{} \\
+\hline
+\textsc{intr}&\#\ro{}&\#T-\ro{}&\#\ro{}\\
+\bottomrule
+\end{tabular}
+\end{table}
+After the stage represented in Table \ref{tab:proto.st1} Kiranti innovates a plural marker \#M-- possibly grammaticalized from the noun `man' (cognate with Japhug \ipa{tɯrme} and Tibetan \ipa{mi} `man').
+
+\subsubsection{From a non-canonical towards a more canonical system}
+
+%Can the directionality of morphological change be determined in the case of languages without written records
+
+
+\section{Conclusion}
+
+
+ \bibliographystyle{linquiry2}
+ \bibliography{biblioinverse}
+
+\end{document}
