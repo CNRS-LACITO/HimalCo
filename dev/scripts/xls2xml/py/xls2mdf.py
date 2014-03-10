@@ -21,6 +21,8 @@ class Xls2Mdf(InOut, XlsFormat):
         XlsFormat.__init__(self)
         self.tmp_filename = None
         self.txt_filename = None
+        self.id = 0
+        self.sub_id = 0
 
     def parse_options(self):
         """Get command line arguments.
@@ -113,8 +115,14 @@ class Xls2Mdf(InOut, XlsFormat):
         for line in tmp_file.readlines():
             l = line.split()
             # Keep blank lines to separate lexemes
-            if l == [] or (len(l) >=2 and l[0] == '\\lx' and l[1].find('ENTRY') != -1):
-                mdf_file.write(self.format_lx(line))
+            if l == []:
+                mdf_file.write(line)
+            elif len(l) > 1 and l[0] == '\\lx':
+                new_line = line
+                if l[1].find('ENTRY') != -1:
+                    new_line = self.format_lx(line)
+                # Add a unique identifier
+                mdf_file.write(self.add_lx_id(new_line))
             elif len(l) > 1 and l[0] == '\\sf':
                 mdf_file.write(self.format_sf(line))
             elif len(l) > 1 and l[0] == '\\va':
@@ -159,6 +167,19 @@ class Xls2Mdf(InOut, XlsFormat):
             return "\se " + line.split()[1].split('_')[0] + "\n"
         else:
             return line.replace('_MAINENTRY', '')
+
+    def add_lx_id(self, line):
+        """Add a unique identifier to 'lx': \lx <id="xxxx"> lexeme.
+        """
+        lx = line.split()
+        if lx[0] == '\\lx':
+            self.id += 1
+            self.sub_id = 0
+            new_lx = lx[0] + " <id=\"" + str(self.id) + "\"> " + lx[1] + "\n"
+        elif lx[0] == '\\se':
+            self.sub_id += 1
+            new_lx = lx[0] + " <id=\"" + str(self.id) + "-" + str(self.sub_id) + "\"> " + lx[1] + "\n"
+        return new_lx
 
     def format_sf(self, line):
         """Format 'sf' fields.

@@ -49,6 +49,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.assertIsNone(self.xls2mdf.wb)
         self.assertIsNone(self.xls2mdf.tmp_filename)
         self.assertIsNone(self.xls2mdf.txt_filename)
+        self.assertEqual(self.xls2mdf.id, 0)
+        self.assertEqual(self.xls2mdf.sub_id, 0)
 
     def test_parse_options(self):
         self.xls2mdf.parse_options()
@@ -117,8 +119,8 @@ class TestXls2MdfFunctions(unittest.TestCase):
         tmp.write("\\va variant (attention) (please)\n")
         tmp.close()
         # Build expected result
-        lines = [u"\lx toto\n",
-                 u"\lx tata\n",
+        lines = [u"\lx <id=\"1\"> toto\n",
+                 u"\lx <id=\"2\"> tata\n",
                  u"\\xv simple example\n",
                  u"\\xf exemple simple\n",
                  u"\\xv example1\n",
@@ -127,7 +129,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
                  u"\\xf exemple2\n",
                  u"\\xv example 3\n",
                  u"\\xf exemple 3\n",
-                 u"\se tata\n",
+                 u"\se <id=\"2-1\"> tata\n",
                  u"\\va variant\n",
                  u"\\vf attention\n",
                  u"\\vf please\n"]
@@ -177,6 +179,11 @@ class TestXls2MdfFunctions(unittest.TestCase):
 
     def test_format_lx(self):
         pass
+
+    def test_add_lx_id(self):
+        in_line = "\lx blabla\n"
+        expected_line = "\lx <id=\"1\"> blabla\n"
+        self.assertEqual(self.xls2mdf.add_lx_id(in_line), expected_line)
 
     def test_format_sf(self):
         in_line = "\sf <numbering="B"> 123, 456; 789"
