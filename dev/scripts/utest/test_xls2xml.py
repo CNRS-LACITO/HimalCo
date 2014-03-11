@@ -194,6 +194,9 @@ class TestXls2MdfFunctions(unittest.TestCase):
         in_line = "\bw t\n"
         expected_line = "\bw Tibetan\n"
         self.assertEqual(self.xls2mdf.format_bw(in_line), expected_line)
+    
+    def test_format_nd(self):
+        pass
 
     def test_format_va(self):
         pass

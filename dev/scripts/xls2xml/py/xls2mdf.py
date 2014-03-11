@@ -127,6 +127,8 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.format_sf(line))
             elif len(l) > 1 and l[0] == '\\bw':
                 mdf_file.write(self.format_bw(line))
+            elif len(l) > 1 and l[0] == '\\nd':
+                mdf_file.write(self.format_nd(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
             elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
@@ -157,7 +159,9 @@ class Xls2Mdf(InOut, XlsFormat):
         mdf_file = self.open_read(self.options.output)
         txt_file = self.open_write(self.txt_filename)
         for line in mdf_file.readlines():
-            l = self.remove_submarker(line).split()
+            # Do not remove 'nd' field if it has an attribute
+            if line.find("archaic") == -1:
+                l = self.remove_submarker(line).split()
             # Keep blank lines to separate lexemes and keep header
             if l == [] or (len(l) >= 2 and l[1] != '*') or (len(l) == 1 and l[0] == "\_DateStampHasFourDigitYear"):
                 txt_file.write(line)
@@ -206,6 +210,11 @@ class Xls2Mdf(InOut, XlsFormat):
         trans = dict({'c':"Chinese", 't':"Tibetan"})
         bw = line.split()
         return bw[0] + " " + trans[bw[1]] + "\n"
+
+    def format_nd(self, line):
+        """Format 'nd' field: transform "\nd arch" into "\nd <archaic=”yes”>".
+        """
+        return "\\nd <archaic=\"yes\">\n"
 
     def format_va(self, line):
         """Format 'va' field into 'va' and 'vf' fields.
