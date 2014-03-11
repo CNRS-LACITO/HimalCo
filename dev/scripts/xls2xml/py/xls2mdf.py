@@ -125,6 +125,8 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.add_lx_id(new_line))
             elif len(l) > 1 and l[0] == '\\sf':
                 mdf_file.write(self.format_sf(line))
+            elif len(l) > 1 and l[0] == '\\bw':
+                mdf_file.write(self.format_bw(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
             elif len(l) > 1 and l[0] == '\\xv':
@@ -195,6 +197,13 @@ class Xls2Mdf(InOut, XlsFormat):
             return std_sf
         else:
             return line
+
+    def format_bw(self, line):
+        """Format 'bw' field : transform "c" to Chinese, “t” to Tibetan.
+        """
+        trans = dict({'c':"Chinese", 't':"Tibetan"})
+        bw = line.split()
+        return bw[0] + " " + trans[bw[1]] + "\n"
 
     def format_va(self, line):
         """Format 'va' field into 'va' and 'vf' fields.
