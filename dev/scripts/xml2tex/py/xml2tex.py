@@ -309,8 +309,6 @@ class Xml2Tex(InOut, XmlFormat):
                         # Just write the reference without hyperlink and log error
                         tex_file.write(element.text + ".\n")
                         errors.add(element.text)
-        for error in errors:
-            pass #print error
         tex_file.write("\end{multicols}\n")
         tex_file.write("\n\end{document}\n")
         tex_file.close()
