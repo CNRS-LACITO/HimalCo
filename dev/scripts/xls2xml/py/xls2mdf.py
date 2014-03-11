@@ -125,8 +125,14 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.add_lx_id(new_line))
             elif len(l) > 1 and l[0] == '\\sf':
                 mdf_file.write(self.format_sf(line))
+            elif len(l) > 1 and l[0] == '\\bw':
+                mdf_file.write(self.format_bw(line))
+            elif len(l) > 1 and l[0] == '\\nd':
+                mdf_file.write(self.format_nd(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
+            elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
+                mdf_file.write(self.format_dn_gn(line))
             elif len(l) > 1 and l[0] == '\\xv':
                 examples += line
             elif len(l) > 1 and l[0] == '\\xf':
@@ -153,7 +159,9 @@ class Xls2Mdf(InOut, XlsFormat):
         mdf_file = self.open_read(self.options.output)
         txt_file = self.open_write(self.txt_filename)
         for line in mdf_file.readlines():
-            l = self.remove_submarker(line).split()
+            # Do not remove 'nd' field if it has an attribute
+            if line.find("archaic") == -1:
+                l = self.remove_submarker(line).split()
             # Keep blank lines to separate lexemes and keep header
             if l == [] or (len(l) >= 2 and l[1] != '*') or (len(l) == 1 and l[0] == "\_DateStampHasFourDigitYear"):
                 txt_file.write(line)
@@ -196,6 +204,18 @@ class Xls2Mdf(InOut, XlsFormat):
         else:
             return line
 
+    def format_bw(self, line):
+        """Format 'bw' field : transform "c" to Chinese, “t” to Tibetan.
+        """
+        trans = dict({'c':"Chinese", 't':"Tibetan"})
+        bw = line.split()
+        return bw[0] + " " + trans[bw[1]] + "\n"
+
+    def format_nd(self, line):
+        """Format 'nd' field: transform "\nd arch" into "\nd <archaic=”yes”>".
+        """
+        return "\\nd <archaic=\"yes\">\n"
+
     def format_va(self, line):
         """Format 'va' field into 'va' and 'vf' fields.
         """
@@ -207,6 +227,16 @@ class Xls2Mdf(InOut, XlsFormat):
             # Remove leading end of line and closing parenthesis
             std_va += "\\vf " + va[i].rstrip('\n )') + "\n"
         return std_va
+
+    def format_dn_gn(self, line):
+        """Format 'dn' and 'gn' fileds: remove forms between square brackets in Chinese glosses.
+        """
+        # Characters to remove are between "[]"
+        l = line.split('[')
+        new_line = l[0]
+        for i in range (1, len(l)):
+            new_line += l[i].split(']')[1]
+        return new_line
 
     def format_xv_xf(self, all_examples):
         """Format 'xv' and 'xf' fields.

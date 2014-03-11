@@ -190,8 +190,21 @@ class TestXls2MdfFunctions(unittest.TestCase):
         expected_line = "\sf <numbering="B"> 123\n\sf <numbering="B"> 456\n\sf <numbering="B"> 789\n"
         self.assertEqual(self.xls2mdf.format_sf(in_line), expected_line)
 
+    def test_format_bw(self):
+        in_line = "\bw t\n"
+        expected_line = "\bw Tibetan\n"
+        self.assertEqual(self.xls2mdf.format_bw(in_line), expected_line)
+    
+    def test_format_nd(self):
+        pass
+
     def test_format_va(self):
         pass
+
+    def test_format_dn_gn(self):
+        in_line = "\dn bla[ble] bli[blo]blu [bly]\n"
+        expected_line = "\dn bla bliblu \n"
+        self.assertEqual(self.xls2mdf.format_dn_gn(in_line), expected_line)
 
     def test_format_xv_xf(self):
         pass
