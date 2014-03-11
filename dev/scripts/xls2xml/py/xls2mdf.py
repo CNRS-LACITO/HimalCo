@@ -85,6 +85,8 @@ class Xls2Mdf(InOut, XlsFormat):
         """
         from xlrd.biffh import XL_CELL_EMPTY, XL_CELL_BLANK
         tmp_file = self.open_write(self.tmp_filename)
+        # Trace rows where there is 'xe' and/or 'xn'
+        rows = []
         # Insert header for toolbox with number used for khaling and for Stau
         tmp_file.write(self.compute_header(231))
         for row_nb in range (1, self.sheet.nrows):
@@ -93,10 +95,16 @@ class Xls2Mdf(InOut, XlsFormat):
                     if not self.is_col_hidden(col_nb):
                         value = self.get_contents(row_nb, col_nb)
                         if value is not XL_CELL_EMPTY and value is not XL_CELL_BLANK:
-                            tmp_file.write(self.format_marker(col_nb) + " " + value + "\n")
+                            # Do not insert 'xe' and 'xn' fields, just report them
+                            if (self.get_marker(col_nb) == "\\xe" or self.get_marker(col_nb) == "\\xn") and value != '':
+                                rows.append(row_nb)
+                            else:
+                                tmp_file.write(self.format_marker(col_nb) + " " + value + "\n")
                 tmp_file.write("\n")
         # Close file after processing
         tmp_file.close()
+        for n in rows:
+            print n
 
     def compute_header(self, magic_nb):
         """Create toolbox header.
