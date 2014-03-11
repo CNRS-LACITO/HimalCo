@@ -198,6 +198,11 @@ class TestXls2MdfFunctions(unittest.TestCase):
     def test_format_va(self):
         pass
 
+    def test_format_dn_gn(self):
+        in_line = "\dn bla[ble] bli[blo]blu [bly]\n"
+        expected_line = "\dn bla bliblu \n"
+        self.assertEqual(self.xls2mdf.format_dn_gn(in_line), expected_line)
+
     def test_format_xv_xf(self):
         pass
 

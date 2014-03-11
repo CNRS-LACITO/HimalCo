@@ -129,6 +129,8 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.format_bw(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
+            elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
+                mdf_file.write(self.format_dn_gn(line))
             elif len(l) > 1 and l[0] == '\\xv':
                 examples += line
             elif len(l) > 1 and l[0] == '\\xf':
@@ -216,6 +218,16 @@ class Xls2Mdf(InOut, XlsFormat):
             # Remove leading end of line and closing parenthesis
             std_va += "\\vf " + va[i].rstrip('\n )') + "\n"
         return std_va
+
+    def format_dn_gn(self, line):
+        """Format 'dn' and 'gn' fileds: remove forms between square brackets in Chinese glosses.
+        """
+        # Characters to remove are between "[]"
+        l = line.split('[')
+        new_line = l[0]
+        for i in range (1, len(l)):
+            new_line += l[i].split(']')[1]
+        return new_line
 
     def format_xv_xf(self, all_examples):
         """Format 'xv' and 'xf' fields.
