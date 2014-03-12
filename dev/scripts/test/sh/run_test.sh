@@ -24,8 +24,8 @@ python xls2xml/py/mdf2xml_tb.py -t na
 
 # Japhug
 
-python mdf2xml/py/mdf2xml_tb.py
+python mdf2xml/py/mdf2xml_tb.py -t japhug
 python xml2tex/py/xml2tex.py -t japhug
 cd obj/
-/usr/texbin/xelatex Dictionary.tex >> /dev/null
-/usr/texbin/xelatex Dictionary.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_japhug.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_japhug.tex >> /dev/null

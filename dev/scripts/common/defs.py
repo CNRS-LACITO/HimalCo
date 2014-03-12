@@ -12,7 +12,8 @@ DICT_JAP = "../../dict/japhug/toolbox/Dictionary.txt"
 # Khaling lexicon
 DICT_KLR = "../../dict/khaling/toolbox/Dictionary.txt"
 # Na lexicon
-DICT_NA = "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls"
+DICT_NA_XLS = "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls"
+DICT_NA = "../../dict/na/toolbox/Dictionary.txt"
 # Test files
 TEST_JAP1 = "./test/japhug/input/japhug1.txt"
 TEST_JAP2 = "./test/japhug/input/japhug2.txt"
@@ -66,7 +67,7 @@ GRAMMAR_NA = r"""
     vaGroup: {<va><vf>*}
     msGroup: {<ms>*<geGroup>+}
     geGroup: {<dv|gv|de|ge|dn|gn|dr|gr|df|gf>*<xvGroup>+}
-    xvGroup: {<xv><xf><xc>?}
+    xvGroup: {<xv><xe>?<xn>?<xf><xc>?}
     rfGroup: {<rf><xvGroup>+}
     seGroup: {<se><sf>*<hm><ph><bw><etGroup><psGroup>}
     """

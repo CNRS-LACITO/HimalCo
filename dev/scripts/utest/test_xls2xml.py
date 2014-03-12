@@ -95,10 +95,10 @@ class TestXls2MdfFunctions(unittest.TestCase):
         self.xls2mdf.write_fields()
         # Build expected result
         lines = [u"\_sh v3.0  231  MDF 4.0\n", u"\_DateStampHasFourDigitYear\n", u"\n", u"\lx 10\n", u"\sf <numbering=\"B\"> 11\n", u"\sf <numbering=\"2011\"> 12\n", u"\n"]
-        output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename)
+        output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename + "1")
         self.assertListEqual(output.readlines(), lines)
         output.close()
-        os.remove(self.xls2mdf.tmp_filename)
+        os.remove(self.xls2mdf.tmp_filename + "1")
 
     def test_compute_header(self):
         expected_hdr = "\_sh v3.0  123  MDF 4.0\n\_DateStampHasFourDigitYear\n\n"
@@ -108,7 +108,7 @@ class TestXls2MdfFunctions(unittest.TestCase):
         import os
         # Write temporary file
         self.xls2mdf.tmp_filename = "./obj/test_file.tmp"
-        tmp = self.xls2mdf.open_write(self.xls2mdf.tmp_filename)
+        tmp = self.xls2mdf.open_write(self.xls2mdf.tmp_filename + "1")
         tmp.write("\lx toto\n")
         tmp.write("\lx tata_MAINENTRY\n")
         tmp.write("\\xv simple example\n")
@@ -136,11 +136,14 @@ class TestXls2MdfFunctions(unittest.TestCase):
         # Run formatting
         self.xls2mdf.format_fields()
         # Check results
-        output = self.xls2mdf.open_read(self.xls2mdf.options.output)
+        output = self.xls2mdf.open_read(self.xls2mdf.tmp_filename + "2")
         self.assertListEqual(output.readlines(), lines)
         output.close()
-        os.remove(self.xls2mdf.tmp_filename)
-        os.remove(self.xls2mdf.options.output)
+        os.remove(self.xls2mdf.tmp_filename + "1")
+        os.remove(self.xls2mdf.tmp_filename + "2")
+
+    def test_invert_fields(self):
+        pass
 
     def test_remove_submarker(self):
         line = "\sf <numbering=\"2011\"> 123\n"
@@ -259,8 +262,8 @@ class TestMdf2XmlFunctions(unittest.TestCase):
     def test_parse_options(self):
         self.mdf2xml.parse_options()
         self.assertFalse(self.mdf2xml.options.verbose)
-        self.assertEqual(self.mdf2xml.options.input, "../../dict/na/lexique_na_2013sq_POUR_TRANSFERT.xls")
-        self.assertEqual(self.mdf2xml.options.output, "./obj/lexique_na_2013sq_POUR_TRANSFERT.xml")
+        self.assertEqual(self.mdf2xml.options.input, "../../dict/na/toolbox/Dictionary.txt")
+        self.assertEqual(self.mdf2xml.options.output, "./obj/Dictionary.xml")
         self.assertEqual(self.mdf2xml.options.grammar, GRAMMAR_NA)
         self.assertIsNone(self.mdf2xml.options.test)
         #self.assertTrue(self.mdf2xml.options.unit_test)

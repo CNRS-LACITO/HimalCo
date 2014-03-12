@@ -169,7 +169,7 @@ class Xml2Tex(InOut, XmlFormat):
         # Tests
         if self.options.test is not None:
             if self.options.test == "japhug":
-                self.options.input = "obj/Dictionary.xml"
+                self.options.input = "obj/Dictionary_japhug.xml"
             else:
                 sys.exit(-1)
         # Compute output filename

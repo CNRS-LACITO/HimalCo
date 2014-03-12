@@ -11,7 +11,7 @@ sys.path.append(".")
 from common import *
 
 # Default values of command line arguments
-DEFAULT_INPUT = DICT_NA
+DEFAULT_INPUT = DICT_NA_XLS
 DEFAULT_OUTPUT = None
 DEFAULT_GRAMMAR = GRAMMAR_NA
 DEFAULT_TEST = None
@@ -84,27 +84,19 @@ class Xls2Mdf(InOut, XlsFormat):
         """Write out all the fields with their associated marker.
         """
         from xlrd.biffh import XL_CELL_EMPTY, XL_CELL_BLANK
-        tmp_file = self.open_write(self.tmp_filename)
-        # Trace rows where there is 'xe' and/or 'xn'
-        rows = []
+        tmp_file1 = self.open_write(self.tmp_filename + "1")
         # Insert header for toolbox with number used for khaling and for Stau
-        tmp_file.write(self.compute_header(231))
+        tmp_file1.write(self.compute_header(231))
         for row_nb in range (1, self.sheet.nrows):
             if row_nb < 5000 and not self.is_row_hidden(row_nb):
                 for col_nb in range (0, self.sheet.ncols):
                     if not self.is_col_hidden(col_nb):
                         value = self.get_contents(row_nb, col_nb)
                         if value is not XL_CELL_EMPTY and value is not XL_CELL_BLANK:
-                            # Do not insert 'xe' and 'xn' fields, just report them
-                            if (self.get_marker(col_nb) == "\\xe" or self.get_marker(col_nb) == "\\xn") and value != '':
-                                rows.append(row_nb)
-                            else:
-                                tmp_file.write(self.format_marker(col_nb) + " " + value + "\n")
-                tmp_file.write("\n")
+                            tmp_file1.write(self.format_marker(col_nb) + " " + value + "\n")
+                tmp_file1.write("\n")
         # Close file after processing
-        tmp_file.close()
-        for n in rows:
-            print n
+        tmp_file1.close()
 
     def compute_header(self, magic_nb):
         """Create toolbox header.
@@ -117,46 +109,69 @@ class Xls2Mdf(InOut, XlsFormat):
     def format_fields(self):
         """Format MDF fields.
         """
-        tmp_file = self.open_read(self.tmp_filename)
-        mdf_file = self.open_write(self.options.output)
+        tmp_file1 = self.open_read(self.tmp_filename + "1")
+        tmp_file2 = self.open_write(self.tmp_filename + "2")
         examples = ''
-        for line in tmp_file.readlines():
+        for line in tmp_file1.readlines():
             l = line.split()
             # Keep blank lines to separate lexemes
             if l == []:
-                mdf_file.write(line)
+                tmp_file2.write(line)
             elif len(l) > 1 and l[0] == '\\lx':
                 new_line = line
                 if l[1].find('ENTRY') != -1:
                     new_line = self.format_lx(line)
                 # Add a unique identifier
-                mdf_file.write(self.add_lx_id(new_line))
+                tmp_file2.write(self.add_lx_id(new_line))
             elif len(l) > 1 and l[0] == '\\sf':
-                mdf_file.write(self.format_sf(line))
+                tmp_file2.write(self.format_sf(line))
             elif len(l) > 1 and l[0] == '\\bw':
-                mdf_file.write(self.format_bw(line))
+                tmp_file2.write(self.format_bw(line))
             elif len(l) > 1 and l[0] == '\\nd':
-                mdf_file.write(self.format_nd(line))
+                tmp_file2.write(self.format_nd(line))
             elif len(l) > 1 and l[0] == '\\va':
-                mdf_file.write(self.format_va(line))
+                tmp_file2.write(self.format_va(line))
             elif l[0] == '\\pdv':
-                mdf_file.write(self.insert_pdl(line))
+                tmp_file2.write(self.insert_pdl(line))
                 if len(l) > 1:
-                    mdf_file.write(self.format_pdv(line))
+                    tmp_file2.write(self.format_pdv(line))
                 else:
-                    mdf_file.write(line)
+                    tmp_file2.write(line)
             elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
-                mdf_file.write(self.format_dn_gn(line))
+                tmp_file2.write(self.format_dn_gn(line))
             elif len(l) > 1 and l[0] == '\\xv':
                 examples += line
             elif len(l) > 1 and l[0] == '\\xf':
                 examples += line
                 # Process all 'xv' and 'xf' examples once
-                mdf_file.write(self.format_xv_xf(examples))
+                tmp_file2.write(self.format_xv_xf(examples))
                 examples = ''
             else:
+                tmp_file2.write(line)
+        tmp_file1.close()
+        tmp_file2.close()
+
+    def invert_fields(self):
+        """Invert MDF fields: correct order is xv - xe - xn - xf.
+        """
+        tmp_file2 = self.open_read(self.tmp_filename + "2")
+        mdf_file = self.open_write(self.options.output)
+        examples_to_invert = ''
+        for line in tmp_file2.readlines():
+            l = line.split()
+            # Keep blank lines
+            if l == []:
                 mdf_file.write(line)
-        tmp_file.close()
+            elif l[0] == '\\xe' or l[0] == '\\xn':
+                examples_to_invert += line
+            elif l[0] == '\\xf':
+                if examples_to_invert != '':
+                    mdf_file.write(examples_to_invert)
+                    examples_to_invert = ''
+                mdf_file.write(line)
+            else:
+                mdf_file.write(line)
+        tmp_file2.close()
         mdf_file.close()
 
     def remove_submarker(self, line):
@@ -308,14 +323,17 @@ class Xls2Mdf(InOut, XlsFormat):
         # Display in verbose mode
         self.display_sheet()
         self.display_markers()
-        # Convert to MDF => .tmp
+        # Convert to MDF => .tmp1
         self.write_fields()
-        # Format MDF fields => .mdf
+        # Format MDF fields => .tmp2
         self.format_fields()
+        # Invert examples lines => .mdf
+        self.invert_fields()
         # Remove empty and useless fields (\ms *) => .txt
         self.remove_fields()
-        # Delete temporary file
-        os.remove(self.tmp_filename)
+        # Delete temporary files
+        os.remove(self.tmp_filename + "1")
+        os.remove(self.tmp_filename + "2")
 
 if __name__ == '__main__':
     converter = Xls2Mdf()

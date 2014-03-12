@@ -17,7 +17,7 @@ class TestInOutFunctions(unittest.TestCase):
 
     def test_create_obj(self):
         import os, shutil
-        shutil.rmtree("obj/")
+        shutil.rmtree("obj/", ignore_errors=True)
         # Test when "obj/" folder does not exist
         self.in_out.create_obj()
         self.assertTrue(os.path.exists("obj"))

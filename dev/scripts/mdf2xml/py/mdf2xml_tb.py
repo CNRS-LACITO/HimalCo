@@ -53,6 +53,8 @@ class Mdf2Xml(MdfFormat, XmlFormat):
             elif self.options.test == "khaling2":
                 self.options.input = "test/khaling/input/khaling2.txt"
                 self.options.grammar = GRAMMAR_KLR2
+            elif self.options.test == "japhug":
+                self.options.output = "obj/Dictionary_japhug.xml"
             else:
                 sys.exit(-1)
         # Compute output filename
