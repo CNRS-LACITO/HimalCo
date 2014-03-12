@@ -201,6 +201,12 @@ class TestXls2MdfFunctions(unittest.TestCase):
     def test_format_va(self):
         pass
 
+    def test_insert_pdl(self):
+        in_lines = ["\pdv cl truc\n", "\pdv \n"]
+        expected_lines = ["\pdl classifier\n\pdv cl truc\n", "\pdl \n\pdv \n"]
+        for i in range (0, len(in_lines)):
+            self.assertEqual(self.xls2mdf.insert_pdl(in_lines[i]), expected_lines[i])
+
     def test_format_dn_gn(self):
         in_line = "\dn bla[ble] bli[blo]blu [bly]\n"
         expected_line = "\dn bla bliblu \n"

@@ -53,8 +53,8 @@ class Xls2Mdf(InOut, XlsFormat):
     def get_marker(self, col_nb):
         """Get the marker associated with a cell.
         """
-        # Keep only first 3 characters '\xx'
-        return self.get_contents(0, col_nb)[:3]
+        # Keep only first 3 or 4 characters '\xx' or '\xxx'
+        return self.get_contents(0, col_nb).split()[0]
 
     def get_submarker(self, col_nb):
         """Get the submarker if any associated with a cell.
@@ -139,6 +139,8 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.format_nd(line))
             elif len(l) > 1 and l[0] == '\\va':
                 mdf_file.write(self.format_va(line))
+            elif l[0] == '\\pdv':
+                mdf_file.write(self.insert_pdl(line))
             elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
                 mdf_file.write(self.format_dn_gn(line))
             elif len(l) > 1 and l[0] == '\\xv':
@@ -235,6 +237,15 @@ class Xls2Mdf(InOut, XlsFormat):
             # Remove leading end of line and closing parenthesis
             std_va += "\\vf " + va[i].rstrip('\n )') + "\n"
         return std_va
+
+    def insert_pdl(self, line):
+        """Add 'pdl' field before 'pdv' field.
+        """
+        pdl = "\\pdl "
+        if len(line.split()) > 1:
+            # As there is a 'pdv', precise its label
+            pdl += "classifier"
+        return pdl + "\n" + line
 
     def format_dn_gn(self, line):
         """Format 'dn' and 'gn' fileds: remove forms between square brackets in Chinese glosses.
