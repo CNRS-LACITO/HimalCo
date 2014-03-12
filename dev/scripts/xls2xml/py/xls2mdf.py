@@ -141,6 +141,10 @@ class Xls2Mdf(InOut, XlsFormat):
                 mdf_file.write(self.format_va(line))
             elif l[0] == '\\pdv':
                 mdf_file.write(self.insert_pdl(line))
+                if len(l) > 1:
+                    mdf_file.write(self.format_pdv(line))
+                else:
+                    mdf_file.write(line)
             elif len(l) > 1 and (l[0] == '\\dn' or l[0] == '\\gn'):
                 mdf_file.write(self.format_dn_gn(line))
             elif len(l) > 1 and l[0] == '\\xv':
@@ -245,7 +249,19 @@ class Xls2Mdf(InOut, XlsFormat):
         if len(line.split()) > 1:
             # As there is a 'pdv', precise its label
             pdl += "classifier"
-        return pdl + "\n" + line
+        return pdl + "\n"
+
+    def format_pdv(self, line):
+        """Format 'pdv': classifiers are separated by '; '.
+        """
+        # 'pdv' field is formatted as follows: "cl1; cl2; cl3" etc.
+        pdv = line.split('; ')
+        # String to return in an MDF format: "\pdv cl1\n\pdv cl2\n\pdv cl3\n" etc.
+        std_pdv = pdv[0].rstrip('\n ') + "\n"
+        for i in range (1, len(pdv)):
+            # Remove leading end of line if any
+            std_pdv += "\\pdv " + pdv[i].rstrip('\n') + "\n"
+        return std_pdv
 
     def format_dn_gn(self, line):
         """Format 'dn' and 'gn' fileds: remove forms between square brackets in Chinese glosses.
