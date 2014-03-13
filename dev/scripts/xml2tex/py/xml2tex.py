@@ -249,8 +249,8 @@ class Xml2Tex(InOut, XmlFormat):
             "ng"    : lambda e: "",
             "nq"    : lambda e: "\\textit{[Ques:} \ipa{" + e.text + "} \\textit{]}.\n",
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
-            "mr"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
-            "ms"    : lambda e: "\\textit{Morph:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "pdl"   : lambda e: "\\textit{" + e.text + ":} ",
+            "pdv"   : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
             "a2s"   : lambda e: "\\textit{[Th\`{e}me du pass\\'{e}:} \ipa{" + e.text + "} \\textit{]}.\n",
             "comit" : lambda e: "\\textit{[Comitatif:} \ipa{" + e.text + "} \\textit{]}.\n",
             "constr": lambda e: "\\textit{[Construction:} \ipa{" + e.text + "} \\textit{]}.\n",
@@ -278,6 +278,9 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_font(element.text)
             if element.text.find("@") != -1:
                 element.text = self.format_pinyin(element.text)
+            if element.tag == "pdl" and element.text == "directional":
+                # Use abbreviation
+                element.text = "dir"
             if element.text == '_':
                 # LaTeX returns error in case of "\ipa{_}"
                 pass
