@@ -59,8 +59,9 @@ order = dict({'':0,
     'ʑ':41,
     'ʕ':42.1, 'ʢ':42.2, 'ʔ':42.3, 'ʡ':42.4,
     'ǃ':43.1, 'ǀ':43.2, 'ǂ':43.3, 'ǁ':43.4,
-    '_':44})
-
+    '_':44,
+    # Special characters
+    '*':45.1, '˭':45.2, 'ʰ':45.3, ' ̩':45.4, '‑':45.5})
 unicode_order = ({})
 for key in order.keys():
     unicode_order.update({key.decode(encoding=CODEC):order[key]})
@@ -170,6 +171,8 @@ class Xml2Tex(InOut, XmlFormat):
         if self.options.test is not None:
             if self.options.test == "japhug":
                 self.options.input = "obj/Dictionary_japhug.xml"
+            elif self.options.test == "na":
+                self.options.input = "obj/Dictionary_na.xml"
             else:
                 sys.exit(-1)
         # Compute output filename
@@ -202,7 +205,6 @@ class Xml2Tex(InOut, XmlFormat):
     def add_lx_id(self):
         """Add 'lx' identifiers.
         """
-        self.tree = parse(self.options.input)
         id = 0
         for element in self.tree.getroot().iter():
             if element.tag == "lx":
@@ -236,39 +238,60 @@ class Xml2Tex(InOut, XmlFormat):
         # japhug : 'ipa' = API ; chinois : 'zh' ; tibetain : r
         format = dict({
             "lx"    : lambda e: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + e.text + "}} \\hspace{0.2cm} \\hypertarget{" + e.attrib['id'] + "}{}\n",
+            "sf"    : lambda e: "",
             "wav"   : lambda e: "",
             "wav8"  : lambda e: "",
             "hbf"   : lambda e: "",
+            "hm"    : lambda e: "",
             "dt"    : lambda e: "",
+            "ph"    : lambda e: "",
             "se"    : lambda e: "\n\\hspace{0.2cm} {\large \ipa{" + e.text + "}}\n",
+            "bw"    : lambda e: "",
             "et"    : lambda e: "\\textit{Etym:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "ec"    : lambda e: "",
             "ps"    : lambda e: "\\textcolor{blue}{\\textit{" + e.text + "}}\n",
+            "sn"    : lambda e: "",
             "sy"    : lambda e: "\\textit{Syn:} ",
             "an"    : lambda e: "\\textit{Ant:} ",
             "cf"    : lambda e: "\\textit{See:} ",
+            "sd"    : lambda e: "",
+            "nt"    : lambda e: "",
+            "np"    : lambda e: "",
             "ng"    : lambda e: "",
+            "nd"    : lambda e: "",
             "nq"    : lambda e: "\\textit{[Ques:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "so"    : lambda e: "",
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "va"    : lambda e: "",
+            "vf"    : lambda e: "",
             "pdl"   : lambda e: "\\textit{" + e.text + ":} ",
             "pdv"   : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
+            "pdf"   : lambda e: "",
             "a2s"   : lambda e: "\\textit{[Th\`{e}me du pass\\'{e}:} \ipa{" + e.text + "} \\textit{]}.\n",
             "comit" : lambda e: "\\textit{[Comitatif:} \ipa{" + e.text + "} \\textit{]}.\n",
             "constr": lambda e: "\\textit{[Construction:} \ipa{" + e.text + "} \\textit{]}.\n",
             "dv"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
+            "gv"    : lambda e: "",
             "de"    : lambda e: e.text + ".\n",
             "ge"    : lambda e: e.text + "\n",
             "dn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "gn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "dr"    : lambda e: "",
             "gr"    : lambda e: "",
+            "df"    : lambda e: "",
+            "gf"    : lambda e: "",
             "uv"    : lambda e: "\\textit{Usage:} \\textbf{\ipa{" + e.text + "}}.\n",
             "un"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "ev"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
             "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "er"    : lambda e: "",
+            "rf"    : lambda e: "",
             "xv"    : lambda e: "\\hspace{0.1cm} \\textbullet \\hspace{0.1cm} \\textcolor{teal}{\ipa{" + e.text + "}} - \n",
             "xe"    : lambda e: e.text + "\n",
             "xn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
-            "xr"    : lambda e: ""
+            "xr"    : lambda e: "",
+            "xf"    : lambda e: "",
+            "xc"    : lambda e: ""
         })
         # Keep reference errors
         errors = set()
@@ -278,6 +301,15 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_font(element.text)
             if element.text.find("@") != -1:
                 element.text = self.format_pinyin(element.text)
+            if element.text.find("#") != -1:
+                element.text = element.text.replace('#', '\#')
+            if element.text.find("_") != -1:
+                element.text = element.text.replace('_', '\_')
+            if element.text.find("&") != -1:
+                element.text = element.text.replace('&', '\&')
+            if element.text.find("$") != -1:
+                # Do not know what to do with '$' character
+                element.text = element.text.replace('$', '')
             if element.tag == "pdl" and element.text == "directional":
                 # Use abbreviation
                 element.text = "dir"
@@ -292,7 +324,8 @@ class Xml2Tex(InOut, XmlFormat):
                 pass
             else:
                 # Check if current element is a lexeme starting with a different character than previous lexeme
-                if element.tag == "lx" and int(unicode_order[element.text[0]]) != int(unicode_order[current_character]):
+                if element.tag == "lx" and int(unicode_order[element.text[0]]) != int(unicode_order[current_character])\
+                    and int(unicode_order[element.text[0]]) < 45: # do not consider special characters (hugly!)
                     current_character = element.text[0]
                     tex_file.write("\\newpage\n")
                     title = ''
@@ -320,8 +353,11 @@ class Xml2Tex(InOut, XmlFormat):
 
     def main(self):
         self.parse_options()
-        # Add 'lx' identifiers
-        self.add_lx_id()
+        # Parse input XML file
+        self.tree = parse(self.options.input)
+        if self.options.test == "japhug":
+            # Add 'lx' identifiers
+            self.add_lx_id()
         # Sort in alphabetical order
         self.sort_lx()
         # Convert to LaTeX
