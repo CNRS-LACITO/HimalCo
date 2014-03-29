@@ -84,31 +84,13 @@
 \-triLook
 
 \+triPref 
-\dbtyp MDF 4.0
 \+drflst 
-\+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
-\-drf
 \-drflst
-\+mrflst 
-\mkr lx
-\mkr a
-\-mrflst
-\mkrOut u
 \-triPref
 
 \+triRoot 
-\dbtyp MDF 4.0
 \+drflst 
-\+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
-\-drf
 \-drflst
-\+mrflst 
-\mkr lx
-\mkr a
-\-mrflst
-\mkrOut u
 \-triRoot
 \GlossSeparator ;
 \FailMark *
@@ -130,16 +112,8 @@
 \mkrTo ge
 
 \+triLook 
-\dbtyp MDF 4.0
 \+drflst 
-\+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
-\-drf
 \-drflst
-\+mrflst 
-\mkr lx
-\-mrflst
-\mkrOut ge
 \-triLook
 \GlossSeparator ;
 \FailMark ***
@@ -155,7 +129,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
+\File C:\Users\GJacques\Documents\GitHub\HimalCo\dict\japhug\toolbox\Texts.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -181,7 +155,7 @@
 \-mkrsubsetIncluded
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
+\File C:\Users\GJacques\Documents\GitHub\HimalCo\dict\japhug\toolbox\Dictionary.txt
 \mkr lx
 \-drf
 \-drflst
