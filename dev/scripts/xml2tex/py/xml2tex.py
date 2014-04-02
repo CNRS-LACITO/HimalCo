@@ -228,15 +228,25 @@ class Xml2Tex(InOut, XmlFormat):
         """Format tone type as subscript: '\textsubscript{xxx}'.
         """
         import re
-        if np:
+        if np and len(text) < 10: # 2 characters maximum followed by an index, for one or several syllabs
             tones_str = "LMH"
         else:
             tones_str = "˩˧˥".decode(encoding=CODEC)
-        pattern = "(\w*)([" + tones_str + "]{1,2})([abcd123])(\w*)"
+        api_str = ""
+        for character in unicode_order.keys():
+            if int(unicode_order[character]) < 43: # consider only API characters
+                api_str += character
+        # Case when tone type ends the string
+        pattern = "^(\w*)([" + tones_str + "]{1,2})([abcd123])"
+        if re.search(pattern + "$", text):
+            result = re.sub(pattern, r"\1" + r"\2" + r"\\textsubscript{" + r"\3" + "}", text)
+            return result
+        # In the case when tone type is in the middle of the string, check if it is not followed by another syllab
+        pattern += "([^0-9" + api_str + "]\w*)"
         if re.search(pattern, text):
-                return re.sub(pattern, r"\1" + r"\2" + r"\\textsubscript{" + r"\3" + "}" + r"\4", text)
-        else:
-            return text
+            result = re.sub(pattern, r"\1" + r"\2" + r"\\textsubscript{" + r"\3" + "}" + r"\4", text)
+            return result
+        return text
 
     def write_fields(self):
         """Write LaTeX output file.
