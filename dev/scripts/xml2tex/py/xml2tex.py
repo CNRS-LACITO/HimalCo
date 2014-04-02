@@ -317,14 +317,6 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_font(element.text)
             if element.text.find("@") != -1:
                 element.text = self.format_pinyin(element.text)
-            # Check if there is a tone
-            to_format = False
-            for tone in tones:
-                if element.text.find(tone.decode(encoding=CODEC)) != -1:
-                    to_format = True
-                    break
-            if to_format:
-                element.text = self.format_tone(element.text)
             if element.text.find("#") != -1:
                 element.text = element.text.replace('#', '\#')
             if element.text.find("_") != -1:
@@ -360,14 +352,32 @@ class Xml2Tex(InOut, XmlFormat):
                         if int(value) == int(unicode_order[current_character]):
                             title += ' ' + key
                     tex_file.write("\\part*{-\ipa{" + title + "} -}\n")
+                # Format tone if any, then keep text as it was to handle cross-references
+                text = element.text
+                element.text = self.format_tone(element.text)
                 tex_file.write(format[element.tag](element))
+                element.text = text
                 if element.tag in tags_ref:
+                    from string import digits
                     found = False
-                    for lx in self.tree.iterfind("lxGroup/lx"):
-                        if lx.text == element.text:
-                            tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "}.\n")
-                            found = True
-                            break
+                    # Check if there is an homonym number at the end of the string
+                    if element.text[-1] in digits:
+                        for lxGroup in self.tree.iterfind("lxGroup"):
+                            lx = None
+                            for subelement in lxGroup:
+                                if subelement.tag == "lx" and subelement.text == element.text[:-1]:
+                                    lx = subelement
+                                if lx is not None and subelement.tag == "hm" and subelement.text == element.text[-1]:
+                                    tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "\\textsuperscript{" + element.text[:-1] + "}}.\n")
+                                    found = True
+                                    break
+                    # If there is no homonym number, just search for the whole string
+                    else:
+                        for lx in self.tree.iterfind("lxGroup/lx"):
+                            if lx.text == element.text:
+                                tex_file.write("\\hyperlink{" + lx.get('id') + "}{" + lx.text + "}.\n")
+                                found = True
+                                break
                     if not found:
                         # Just write the reference without hyperlink and log error
                         tex_file.write(element.text + ".\n")
