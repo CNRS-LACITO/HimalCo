@@ -272,7 +272,7 @@ class Xml2Tex(InOut, XmlFormat):
             "cf"    : lambda e: "\\textit{See:} ",
             "sd"    : lambda e: "",
             "nt"    : lambda e: "",
-            "np"    : lambda e: "",
+            "np"    : lambda e: "\\textit{Tone:} " + e.text + ".\n",
             "ng"    : lambda e: "",
             "nd"    : lambda e: "",
             "nq"    : lambda e: "\\textit{[Ques:} \ipa{" + e.text + "} \\textit{]}.\n",
