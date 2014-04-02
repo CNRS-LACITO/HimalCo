@@ -224,6 +224,20 @@ class Xml2Tex(InOut, XmlFormat):
         import re
         return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
 
+    def format_tone(self, text, np=False):
+        """Format tone type as subscript: '\textsubscript{xxx}'.
+        """
+        import re
+        if np:
+            tones_str = "LMH"
+        else:
+            tones_str = "˩˧˥".decode(encoding=CODEC)
+        pattern = "(\w*)([" + tones_str + "]{1,2})([abcd123])(\w*)"
+        if re.search(pattern, text):
+                return re.sub(pattern, r"\1" + r"\2" + r"\\textsubscript{" + r"\3" + "}" + r"\4", text)
+        else:
+            return text
+
     def write_fields(self):
         """Write LaTeX output file.
         """
@@ -235,6 +249,8 @@ class Xml2Tex(InOut, XmlFormat):
         tags_tb = set(["toolbox_data", "header", "_sh"])
         # Tags that need additional references
         tags_ref = set(["sy", "an", "cf"])
+        # Tones
+        tones = set(["˩", "˧", "˥"])
         # japhug : 'ipa' = API ; chinois : 'zh' ; tibetain : r
         format = dict({
             "lx"    : lambda e: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + e.text + "}} \\hspace{0.2cm} \\hypertarget{" + e.attrib['id'] + "}{}\n",
@@ -301,6 +317,14 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_font(element.text)
             if element.text.find("@") != -1:
                 element.text = self.format_pinyin(element.text)
+            # Check if there is a tone
+            to_format = False
+            for tone in tones:
+                if element.text.find(tone.decode(encoding=CODEC)) != -1:
+                    to_format = True
+                    break
+            if to_format:
+                element.text = self.format_tone(element.text)
             if element.text.find("#") != -1:
                 element.text = element.text.replace('#', '\#')
             if element.text.find("_") != -1:
@@ -313,6 +337,9 @@ class Xml2Tex(InOut, XmlFormat):
             if element.tag == "pdl" and element.text == "directional":
                 # Use abbreviation
                 element.text = "dir"
+            if element.tag == "np":
+                # Format tone if any
+                element.text = self.format_tone(element.text, np=True)
             if element.text == '_':
                 # LaTeX returns error in case of "\ipa{_}"
                 pass
