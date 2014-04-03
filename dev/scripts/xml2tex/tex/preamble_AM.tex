@@ -1,0 +1,20 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article}
+\title{Na dictionary}
+\author{Alexis Michaud}
+\usepackage{fontspec}
+\usepackage{booktabs}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{memhfixc}
+\usepackage{multicol}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{DoulosSIL}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{DoulosSIL}
+\newcommand{\ipa}[1]{{\phon #1}} % API pas en italique
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\XeTeXlinebreaklocale "zh" % 使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{gb4e}
