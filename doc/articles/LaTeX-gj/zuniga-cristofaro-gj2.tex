@@ -11,7 +11,7 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{hyperref} 
+\usepackage{varioref,hyperref} 
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage{memhfixc}
 \usepackage{lscape}
@@ -41,8 +41,83 @@
 \newcommand{\ro}{$\Sigma$}
 \newcommand{\ra}{$\Sigma_1$} 
 \newcommand{\rc}{$\Sigma_3$}  
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\abs}{\textsc{abs}}
+\newcommand{\acc}{\textsc{acc}}
+\newcommand{\adess}{\textsc{adess}}
+\newcommand{\agent}{\textsc{a}}
+\newcommand{\antierg}{\textsc{antierg}}
+\newcommand{\allat}{\textsc{all}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\assert}{\textsc{assert}}
+\newcommand{\assoc}{\textsc{assoc}}
+\newcommand{\auto}{\textsc{auto}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\cis}{\textsc{cis}}
+\newcommand{\classif}{\textsc{class}}
+\newcommand{\concessif}{\textsc{concsf}}
+\newcommand{\comit}{\textsc{comit}}
+\newcommand{\conj}{\textsc{conj}}
+\newcommand{\const}{\textsc{const}}
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\cop}{\textsc{cop}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\detm}{\textsc{det}}
+\newcommand{\dir}{\textsc{dir1}}
+\newcommand{\du}{\textsc{du}}
+\newcommand{\duposs}{\textsc{du.poss}}
+\newcommand{\dur}{\textsc{dur}}
+\newcommand{\dyn}{\textsc{dyn}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\hypot}{\textsc{hyp}}
+\newcommand{\ideo}{\textsc{ideo}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\infin}{\textsc{inf}}
+\newcommand{\ipf}{\textsc{ipfv}}
+\newcommand{\instr}{\textsc{instr}}
+\newcommand{\intens}{\textsc{intens}}
+\newcommand{\intr}{\textsc{intr}}
+\newcommand{\intrg}{\textsc{intrg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\irreel}{\textsc{irr}}
+\newcommand{\loc}{\textsc{loc}}
+\newcommand{\masc}{\textsc{m}}
+\newcommand{\med}{\textsc{med}}
+\newcommand{\negat}{\textsc{neg}}
+\newcommand{\neu}{\textsc{neu}}
+\newcommand{\nmlz}{\textsc{nmlz}}
+\newcommand{\nom}{\textsc{nom}}
+\newcommand{\nonps}{\textsc{n.pst}}
+\newcommand{\obj}{\textsc{o}}
+\newcommand{\obv}{\textsc{obv}}
+\newcommand{\opt}{\textsc{dir2}}
+\newcommand{\perf}{\textsc{pfv}}
+\newcommand{\pli}{\textsc{pi}}
+\newcommand{\pe}{\textsc{pe}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\pot}{\textsc{pot}}
+\newcommand{\pret}{\textsc{pret}}
+\newcommand{\prohib}{\textsc{prohib}}
+\newcommand{ \prox}{\textsc{prox}}
+\newcommand{\prs}{\textsc{prs}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\recip}{\textsc{recip}}
+\newcommand{\redp}{\textsc{redp}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sgposs}{\textsc{sg.poss}}
+\newcommand{\stat}{\textsc{stat}}
+\newcommand{\subj}{\textsc{s}}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\volit}{\textsc{vol}}
+
+
+\let\eachwordone=\it
 
 \begin{document}
 \linenumbers
@@ -55,50 +130,20 @@
 
 \section{The (re)shaping of a direct-inverse system: the Plains Cree conjunct order }
 
-\subsection{Independent vs conjunct order in modern Plains Cree}
 
-
-
-\subsubsection{Independent order}
+Table \vref{tab:cree.conj} presents the conjunct order paradigm of Modern Plains Cree.
 
 \begin{table}[h]
-\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
-\label{tab:cree.ind} \centering
-\resizebox{\textwidth}{!}{
-\begin{tabular}{lllllllll}
-\toprule
- \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
-\midrule
-1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\ipa{kiwâpamitin}  & \ipa{kiwâpamitinâwâw}	& \cellcolor{Dandelion}\ipa{niwâpamâw}   & 	\cellcolor{Dandelion}\ipa{niwâpamâwak}  & \cellcolor{Dandelion}	\ipa{niwâpamimâwa}   \\ 
-1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \cellcolor{Dandelion}\ipa{kiwâpamânaw} & \cellcolor{Dandelion}\ipa{kiwâpamânawak}  & \cellcolor{Dandelion}	\ipa{kiwâpamimânawa}   \\ 
-1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\ipa{kiwâpamitinân}}   & \cellcolor{Dandelion}\ipa{niwâpamânân} & \cellcolor{Dandelion}\ipa{niwâpamânânak}  & \cellcolor{Dandelion}	\ipa{niwâpamimânâna}   \\ 
-2\sg   & 	\ipa{kiwâpamin}   & \grise{}& \multirow{2}{*}{\ipa{kiwâpaminân}}	&	\grise{}   &  \grise{} & \cellcolor{Dandelion}\ipa{kiwâpamâw}  & \cellcolor{Dandelion}\ipa{kiwâpamâwak} &\cellcolor{Dandelion} 	\ipa{kiwâpamimâwa}   \\ 
-2\pl  & 	\ipa{kiwâpaminâwâw} & \grise{}& \multirow{-2}{*}{ } & \grise{}  & 	\grise{}   & 	\cellcolor{Dandelion}\ipa{kiwâpamâwâw}  & \cellcolor{Dandelion}\ipa{kiwâpamâwâwak} &\cellcolor{Dandelion} 	\ipa{kiwâpamimâwâwa}   \\
-3\sg   & 	\cellcolor{green}\ipa{niwâpamik}   & \cellcolor{green}\ipa{kiwâpamikonaw} & \cellcolor{green}\ipa{niwâpamikonân} & \cellcolor{green}	\ipa{kiwâpamik}  & \cellcolor{green}	\ipa{kiwâpamikowâw} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{wâpam(im)êw}   \\ 
-3\pl   & 	\cellcolor{green}\ipa{niwâpamikwak}&  \cellcolor{green}\ipa{kiwâpamikonawak} & \cellcolor{green}\ipa{niwâpamikonânak}   & \cellcolor{green}	\ipa{kiwâpamikwak}   & \cellcolor{green}	\ipa{kiwâpamikowâwak} & \cellcolor{Dandelion}	\grise{} &	\grise{}  & \cellcolor{Dandelion}	\ipa{wâpam(im)êwak}   \\ 
-\multirow{2}{*}{3'}   & \multirow{2}{*}{\cellcolor{green}}  &  \multirow{2}{*}{\cellcolor{green}}  & \multirow{2}{*}{\cellcolor{green}} &\cellcolor{green} &  \multirow{2}{*}{\cellcolor{green}}  &\multirow{2}{*}{\cellcolor{green}}   & \multirow{2}{*}{\cellcolor{green}} & \cellcolor{Dandelion} \ipa{wâpamêyiwa} \\ 
- \multirow{-2}{*}{} & \multirow{-2}{*}{\cellcolor{green}\ipa{niwâpamikoyiwa}} & \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikonawa}}   &  \multirow{-2}{*}{\cellcolor{green}\ipa{niwâpamikonâna}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikoyiwa}} &  \multirow{-2}{*}{\cellcolor{green}\ipa{kiwâpamikowâwa}}& \multirow{-2}{*}{\cellcolor{green}\ipa{wâpamik}}  & \multirow{-2}{*}{\cellcolor{green}\ipa{wâpamikwak}} & \cellcolor{green} \ipa{wâpamikoyiwa}  \\ 
-\bottomrule
-\textsc{intr} & \ipa{nipimipahtân} & \ipa{ kipimipahtâ(nâ)naw} & \ipa{nipimipahtânân} &\ipa{ kipimipahtân} &\ipa{ kipimipahtânâwâw} & \ipa{pimipahtâw} & \ipa{pimipahtâwak} & \ipa{pimipahtâyiwa} \\
-\bottomrule
-\end{tabular}
-}
-\end{table}
-
-
-\subsubsection{Conjunct order}
-
-\begin{table}[h]
-\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
+\caption{Plains Cree Conjunct Order present tense paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart96sketch})}
 \label{tab:cree.conj} \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllllll}
 \toprule
- \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+ \backslashbox{A}{P}  & 	1\sg  & 1\pli & 1\pe &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
 \midrule
 1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\cellcolor{pink}\ipa{ê-wâpam-it-ân}  & \cellcolor{pink}\ipa{ê-wâpam-it-ako-k}	& \cellcolor{Turquoise}\ipa{ê-wâpam-ak}   & 	\cellcolor{Turquoise}\ipa{ê-wâpam-ak-ik}  & \cellcolor{Turquoise}	\ipa{ê-wâpam-im-ak}   \\ 
-1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahko-k}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
-1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk-ik}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
+1pi & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yahko-k}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
+1\pe & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk} & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yâhk-ik}  & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
 2\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yan}   & \grise{}& \multirow{2}{*}{\cellcolor{cyan}}	&	\grise{}   &  \grise{} & \cellcolor{Aquamarine}\ipa{ê-wâpam-at}  & \cellcolor{Aquamarine}\ipa{ê-wâpam-at-ik} &\cellcolor{Aquamarine}\ipa{ê-wâpam-im-at}   \\ 
 2\pl  & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yêk} & \grise{}& \multirow{-2}{*}{\cellcolor{cyan} \ipa{ê-wâpam-i-yâhk}} & \grise{}  & 	\grise{}   & 	\cellcolor{Dandelion}\ipa{ê-wâpam-â-yêk}  & \cellcolor{Dandelion}\ipa{ê-wâpam-â-yêko-k} &\cellcolor{Dandelion} 	\ipa{ê-wâpam-im-â-yêk}   \\
 3\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-t}   & \cellcolor{green}\ipa{ê-wâpam-iko-yahk} & \cellcolor{green}\ipa{ê-wâpam-iko-yâhk} & \cellcolor{SkyBlue}\ipa{ê-wâpam-isk}  & \cellcolor{green}	\ipa{ê-wâpam-iko-yêk} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-t}   \\ 
@@ -114,18 +159,19 @@
 
 \subsection{The diachrony of the Plains Cree conjunct order inflections}
 
+Table \vref{tab:creedia.conj} presents the earliest attested stage in the conjunct order paradigm of Plains Cree.
 
-\begin{table}[h]
-\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
-\label{tab:cree.conj} \centering
+\begin{table}[H]
+\caption{19\textsuperscript{th} century Plains Cree Conjunct Order present tense paradigms. TA \ipa{wâpam--} ``see" (adapted from \citealp{wolfart96sketch} and \citealp{dahlstrom89change})}
+\label{tab:creedia.conj} \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllllll}
 \toprule
- \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+ \backslashbox{A}{P}  & 	1\sg  & 1\pli & 1\pe &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
 \midrule
 1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\cellcolor{pink}\ipa{ê-wâpam-it-ân}  & \cellcolor{pink}\ipa{ê-wâpam-it-ako-k}	& \cellcolor{Turquoise}\ipa{ê-wâpam-ak}   & 	\cellcolor{Turquoise}\ipa{ê-wâpam-ak-ik}  & \cellcolor{Turquoise}	\ipa{ê-wâpam-im-ak}   \\ 
-1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  &  \ipa{ê-wâpam-ahk} & \ipa{ê-wâpam-ahko-k} & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
-1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   &  \cellcolor{Turquoise}\ipa{ê-wâpam-ak-iht} & \cellcolor{Turquoise} \ipa{ê-wâpam-ak-iht-ik}   & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
+1\pli & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  &  \ipa{ê-wâpam-ahk} & \ipa{ê-wâpam-ahko-k} & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yahk}   \\ 
+1\pe & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\cellcolor{pink}\ipa{ê-wâpam-it-âhk}}   &  \cellcolor{Turquoise}\ipa{ê-wâpam-ak-iht} & \cellcolor{Turquoise} \ipa{ê-wâpam-ak-iht-ik}   & \cellcolor{Dandelion}	\ipa{ê-wâpam-im-â-yâhk}   \\ 
 2\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yan}   & \grise{}& \multirow{2}{*}{\cellcolor{cyan}}	&	\grise{}   &  \grise{} & \cellcolor{Aquamarine}\ipa{ê-wâpam-at}  & \cellcolor{Aquamarine}\ipa{ê-wâpam-at-ik} &\cellcolor{Aquamarine}\ipa{ê-wâpam-im-at}   \\ 
 2\pl  & 	\cellcolor{cyan}\ipa{ê-wâpam-i-yêk} & \grise{}& \multirow{-2}{*}{\cellcolor{cyan} \ipa{ê-wâpam-i-yâhk}} & \grise{}  & 	\grise{}   & 	\ipa{ê-wâpam-êk}  & \ipa{ê-wâpam-êko-k} &\cellcolor{Dandelion} 	\ipa{ê-wâpam-im-â-yêk}   \\
 3\sg   & 	\cellcolor{cyan}\ipa{ê-wâpam-i-t}   & \ipa{ê-wâpam-it-ahk} & \ipa{ê-wâpam-i-yam-iht}  & \cellcolor{SkyBlue}\ipa{ê-wâpam-isk}  & \cellcolor{pink}	\ipa{ê-wâpam-it-êk} & \cellcolor{Dandelion}	\grise{}  & \grise{}	 & \cellcolor{Dandelion}	\ipa{ê-wâpam-(im)-â-t}   \\ 
@@ -140,27 +186,35 @@
 \end{table}
 
 
+Comparing Table \vref{tab:creedia.conj} with Table \vref{tab:cree.conj} we can easily see that the direct forms (in dandelion) and the inverse forms (in green), bearing the so-called `theme signs' \textit{-â-} (direct) vs. \textit{-ikw-} (inverse), have been generalized at the expense of older and less easily segmentable ones in the case of mixed scenarios with plural \textsc{sap}s. This reshaping of the system has taken place some time between the 19\textsuperscript{th} and beginning of the 20\textsuperscript{th} centuries and has only affected the conjunct order. Since it is commonly assumed in Algonquianist circles that the conjunct order is older than the independent order, this can only mean that the latter had either suffered a similar reshaping earlier or else that it was as regular as it is nowadays right from the start, a hypothesis which ties in well with the idea that it is younger and largely nominal from the outset.
 
-\begin{table}[h]
-\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run" (\citealp{wolfart73})}
-\label{tab:cree.conj} \centering
+If we accept that idea, any discussion of the direct/inverse system in Cree (and in Algonquian) and its origin(s) should be based upon the conjunct order forms and not the independent order ones as they (ie the conjunct order forms) are likely to preserve an older stage in the development of the system.
+
+Turning to Table \vref{tab:creedia.conj}, the fact that there were less direct vs. inverse forms bearing the so-called `theme signs' \textit{-â-} vs. \textit{-ikw-}, means that at some point the system as we know it today had even less, if at all, forms showing these theme signs and that ultimately the direct vs inverse distinction which is a hallmark not only of Cree but of all Algonquian languages could prove to be a realtively recent innovation. Indeed, the VTA paradigm reconstructed for Proto-Algonquian by \cite{goddard00cheyenne} confirms this hypothesis (cf. Table \vref{tab:protoalg.conj}). Focussing on Cree, if at some stage the language did not have any direction markers, a legitimate question would be how speakers knew who did what to whom. A possible answer is that transitive verbs showed polypersonal agreement, indexing both A and O using different affixes in each case. Viewed from this perspective, the forms in Table \vref{tab:creedia.conj} could be analyzed as showing a suffix indexing a 1\sg\ patient which was \textit{-i}, and a suffix \textit{-it} in the case of a 2\sg\ patient. This follows from a comparison of the transitive with the intransitive paradigm, which reveals that in most cells the outermost suffix in a transitive form is identical to the suffix indexing the single argument of an intransitive verb, i.e. A=S, thus showing accusative alignment. Furthermore, the relative order of the person suffixes is O-A. Some forms with a third person agent have \textit{-t} (3$\rightarrow$1\sg) and others \textit{-k} (3$\rightarrow$2\sg), which mirrors the situation with intransitives where the choice of one or the other is conditioned by the final of the verb stem: if it ends in a vowel, the suffix is \textit{-t} and if it ends in a consonant the suffix is \textit{-k}, except that in the case of agent markers it is the preceding patient marker's final which matters. 
+
+\begin{table}[H]
+\caption{Proto-Algonquian conjunct order present tense paradigm (based upon \citealp{goddard00cheyenne})}
+\label{tab:protoalg.conj} \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllllll}
 \toprule
- \backslashbox{A}{P}  & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+ \backslashbox{A}{P}  & 	1\sg  & 1\pli & 1\pe &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
 \midrule
-1s & 	 & 	 & 	 & 	\ipa{-eθâni} & 	\ipa{-eθakokwe} & 	\ipa{-aki} & 	\ipa{-akwâwi} & 	\ipa{-emaki} \\ 	
-1i & 	 & 	 & 	 & 	 & 	 & 	\ipa{-ankwe} & 	\ipa{} & 	\ipa{-emankwe} \\ 	
-1e & 	 & 	 & 	 & 	\ipa{-eθânke} & 	\ipa{} & 	\ipa{-akenti} & 	\ipa{} & 	\ipa{-emakenti} \\ 	
-2s & 	\ipa{-iyani} & 	 & 	\ipa{-iyânkwe} & 	 & 	 & 	\ipa{-ati} & 	\ipa{-atwâwi} & 	\ipa{-emati} \\ 	
-2p & 	\ipa{-iyêkwe} & 	 & 	\ipa{} & 	 & 	 & 	\ipa{-êkwe} & 	\ipa{} & 	\ipa{-emêkwe} \\ 	
-3s & 	\ipa{-iti} & 	\ipa{-eθankwe} & 	\ipa{-iyamenti} & 	\ipa{-eθki} & 	\ipa{-eθâkwe} & 	 & 	 & 	\ipa{-âti} \\ 	
-3p & 	\ipa{-iwâti} & 	\ipa{} & 	\ipa{} & 	\ipa{-eθkwâwi} & 	\ipa{} & 	 & 	 & 	\ipa{-âwâti} \\ 	
-3's & 	\ipa{-iriti} & 	\ipa{} & 	\ipa{} & 	\ipa{-emeθki} & 	\ipa{} & 	\ipa{-ekweti} & 	\ipa{-ekowâti} & 	\ipa{} \\ 	
-3'p & 	& 	 & 	 & 	 & 	 & 	 & 	 &  \\ \bottomrule
+1s & 	\grise{}   & 	\grise{} &  \grise{} & 	\ipa{-eθ-âni} & 	\ipa{-eθ-akokwe} & 	\ipa{-aki} & 	\ipa{-ak-wâ-wi} & 	\ipa{-em-aki} \\ 	
+1\pli & \grise{}   & 	\grise{} &  \grise{}	 & \grise{}  & \grise{} 	 & 	\ipa{-ankwe} & 	\ipa{} & 	\ipa{-em-ankwe} \\ 	
+1\pe & 	\grise{}   & 	\grise{} &  \grise{}	 & 	\multicolumn{2}{c}{\ipa{-eθ-ânke}} \ipa{} & 	\ipa{-ak-en-ti} & 	\ipa{} & 	\ipa{-em-ak-en-ti} \\ 	
+2\sg & 	\ipa{-i-yani} & \grise{} 	 & 	\multirow{2}{*}{\ipa{-i-yânke}} & 	\grise{}  & \grise{} 	 & 	\ipa{-ati} & 	\ipa{-at-wâ-wi} & 	\ipa{-emati} \\ 	
+2\pl & 	\ipa{-i-yêkwe} & \grise{} 	 & \multirow{-2}{*}{\ipa{}}  & \grise{} 	 & \grise{} 	 & 	\ipa{-êkwe} & 	\ipa{} & 	\ipa{-em-êkwe} \\ 	
+3\sg & 	\ipa{-i-ti} & 	\multirow{2}{*}{\ipa{-eθ-ankwe}} & 	\multirow{2}{*}{\ipa{-i-yam-en-ti}} & 	\ipa{-eθ-ki} & 	\multirow{2}{*}{\ipa{-eθ-âkwe}} & \grise{} & \grise{}  & 		\cellcolor{Dandelion}\ipa{-â-ti} \\ 	
+3\pl & 	\ipa{-i-wâ-ti} & \multirow{-2}{*}{\ipa{}} & \multirow{-2}{*}{\ipa{}} & 	\ipa{-eθ-k-wâ-wi} & \multirow{-2}{*}{\ipa{}} & \grise{}  & 	\grise{}  & 		\cellcolor{Dandelion}\ipa{-â-wâ-ti} \\ 	
+3' & 	\ipa{-i-ri-ti} & 	\ipa{} & 	\ipa{} & 	\ipa{-em-eθ-ki} & 	\ipa{} & 	\cellcolor{green}\ipa{-ekwe-ti} & 	\cellcolor{green}	\ipa{-eko-wâ-ti} & 	\ipa{} \\\bottomrule 	
+\intr & \ipa{-yâni}	& \ipa{-yankwe}	 & \ipa{-yânke}	 & \ipa{-yani}	 & \ipa{-yêkwe} & \ipa{-ti} / \ipa{-ki}	 & \ipa{-wâ-ti}	 &  \ipa{-ri-ti}\\ 
+\bottomrule
 \end{tabular}
 }
 \end{table}	
+
+
 \subsection{Arapaho}
 
 The paradigm reshaping that has occurred in Cree is not isolated in that language. Among Algonquian languages, Arapaho provide an example of a language which reshaped the conjunct order even further than Plains Cree. Before discussing the Arapaho VTA paradigm, we provide some information on the VAI   paradigm, which are necessary to understands what happened in the VTA. Proto-Algonquian reconstructions are systematically given in these section, as the drastic sound changes of Arapaho (see \citealt{goddard74arapaho}) have rendered the cognate forms barely recognizable. We cannot provide here a detailed account of Arapaho historical phonology, and defer the reader to Goddard's works for further information. Arapaho data used in this section are taken from \citet{salzmann67arapaho.verb} and \citet{cowell06arapaho}.
@@ -347,15 +401,20 @@ in families without an established reconstruction
 
 The only   large language family beside Algonquian where direct / inverse systems are found is Sino-Tibetan, a family whose historical phonology is very poorly understood and historical morphology extremely difficult to study in a comparative perspective. Algonquian provides us with examples of attested morphological change, which can serve a model to understand how the person marking systems of Sino-Tibetan languages came to be the way they are.
 
-In this Sino-Tibetan,  direct / inverse agreement systems are widely distributed, and have been described best in Rgyalrong and Kiranti languages.\footnote{Languages without agreement systems like Chinese or Tibetan can safely be assumed to have lost it, on which see \citet{delancey10agreement} and  \citet{jacques10zos}. } The present paper only focuses on these two branches.
+In this Sino-Tibetan,  direct / inverse agreement systems are widely distributed, and have been described best in Rgyalrong and Kiranti languages. The present paper only focuses on these two branches.
 
 
 \subsubsection{Zbu Rgyalrong}
-The four Rgyalrong languages (Situ, Japhug, Tshobdun and Zbu) all have a quasi-canonical  direct / inverse system, illustrated in Table \ref{tab:zbu.tr} by data from \citet{gongxun14agreement}.\footnote{description of direct / inverse paradigms in other Rgyalrong languages also include \citet{delancey81direction}, \citet{jackson02rentongdengdi} and \citet{jacques10inverse}.} Unlike the  Algonquian conjunct order, the Rgyalrong agreement system combines prefixes (for the inverse and second person forms) and suffixes (for first person and number).
 
-The \ipa{wə--} inverse prefix occurs in the local (2$\rightarrow$1), inverse mixed (3$\rightarrow$1, 3$\rightarrow$2) and non-local (3$\rightarrow$3' with proximate agent and obviative patient) forms. Unlike Algonquian languages, there is no overt marker in most direct forms (which are thus identical to the corresponding intransitive ones) except in the \textsc{1sg,2sg,3sg$\rightarrow$3}    non-past   (imperfective, factual, testimonial) forms, where transitive verbs undergo various types of stem alternation.
+Direct/inverse systems in Rgyalrong languages in general are quite complex as they usually index not only the person but also the number of the two nuclear arguments of a transitive verb. Several descriptive studies of such systems have already been published (\citealt{delancey81direction} on Situ,  \citealt{jackson02rentongdengdi} on Tshobdun,  \citealt{jacques10inverse} on Japhug, among others). Here we present data from \citealt{gongxun14agreement} on Zbu Rgyalrong.
 
-There is an almost complete symmetry between direct and inverse forms in the Zbu paradigms: only local forms (where the portmanteau \ipa{tɐ--} in 1$\rightarrow$2 is distinct from what is found in 2$\rightarrow$1) and the presence of stem alternation in some direct forms have no equivalent in corresponding inverse forms.
+Amid the overwhelming crosslinguistic diversity of direct/inverse systems, Zbu Rgyalrong stands out as having one of the most symmetrical ones. Table \ref{tab:zbu.tr} presents the non-past paradigm of a dialect of that language.  
+
+%The four Rgyalrong languages (Situ, Japhug, Tshobdun and Zbu) all have a quasi-canonical  direct / inverse system, illustrated in Table \ref{tab:zbu.tr} by data from \citet{gongxun14agreement}.\footnote{description of direct / inverse paradigms in other Rgyalrong languages also include \citet{delancey81direction}, \citet{jackson02rentongdengdi} and \citet{jacques10inverse}.} Unlike the  Algonquian conjunct order, the Rgyalrong agreement system combines prefixes (for the inverse and second person forms) and suffixes (for first person and number).
+
+The \ipa{wə--} inverse prefix occurs in the local (2$\rightarrow$1), inverse mixed (3$\rightarrow$1, 3$\rightarrow$2) and non-local (3$\rightarrow$3' with proximate agent and obviative patient) forms. Unlike Algonquian languages, there is no overt marker in most direct forms (which are thus identical to the corresponding intransitive ones) except in the \textsc{1sg,2sg,3sg$\rightarrow$3}    non-past   (imperfective, factual, testimonial) forms, where transitive verbs undergo various types of stem alternation. The two stems that appear in this paradigm are represented by the symbols   \ra{} and \rc{} respectively.\footnote{These symbols stand for `stem 1' and `stem 3'. There is also a stem 2 occurring in some TAM categories such as the perfective, but it is irrelevant to the present discussion.}
+
+ 
 
 \begin{table}[h]
 \caption{Zbu Rgyalrong transitive and intransitive paradigms (data adapted from \citealt{gongxun14agreement})}\label{tab:zbu.tr}
@@ -392,13 +451,22 @@ There is an almost complete symmetry between direct and inverse forms in the Zbu
 \end{tabular}}
 \end{table}
 
+ Mixed and non-local scenarios (except for the stem alternations) exhibit perfect symmetry between direct and inverse forms, distinguished only by the presence or absence of the inverse prefix \ipa{wə-}. Indeed, plural mixed and non-local direct transitive forms are identical to the corresponding intransitive forms; the only difference between the two types of forms lies in the stem alternations found in the singular. In fact, the local scenario 1$\rightarrow$2 forms are the only ones which are clearly distinct from all the rest, with a synchronically opaque portmanteau \ipa{tɐ-} 1$\rightarrow$2 prefix: if the system were perfectly symmetrical, 1$\rightarrow$2 forms such as *\ipa{tə-\ra{}-ŋ} would be expected.
+
 Rgyalrong verbal morphology does present irregular forms, but these are restricted to stem alternations (including in \textsc{1sg,2sg,3sg$\rightarrow$3} forms), first singular stems, and the second person person forms of some existential verbs. The overall structure of the transitive affixal paradigm remains the same for all verbs, even for the   highly irregular ones.
 
 There is only one type of conjugation in Rgyalrong: there is no equivalent of the independent order vs. conjunct order of Algonquian languages.
 
 
 
+
 \subsubsection{Bantawa}
+
+While the direct/inverse system in Zbu Rgyalrong is quite close to what a canonical direct/inverse system would look like, the systems attested in the Kiranti branch of Sino-Tibetan languages are at least in part quite opaque. We present here data from \cite{doornenbal09} on Bantawa.
+
+Despite some minor deviations from the symmetry and regularity of Zbu Rgyalrong, Bantawa presents a near-canonical direct/inverse system in the non-past affirmative indicative paradigm of transitive verbs with overall straightforwardly segmentable direction markers. This is illustrated in Table \vref{tab:bantawapos}, where the inverse marker---which occupies the slot immediately preceding the verb stem (\ro{})---is present in all relevant person configurations, excluding those where it cannot be realized due to phonological reasons, i.e., whenever there is a vowel-final person prefix or preverbal element. This prevents us from ascertaining the existence of a \textsc{sap} hierarchy in the \textsc{local} scenario and accordingly the presence or absence of the inverse marker there, but not from positing its underlying presence---with a single form (in red) calling for an alternative explanation---in all the other relevant cases (i.e., green-colored cells 
+of Table \ref{tab:bantawapos}) based upon its presence in the 3\textsc{sg}/\textsc{du}$\rightarrow$ 1\textsc{sg} \textsc{mixed} scenario. Interestingly, in the \textsc{non-local} scenarios we find the direct marker instead of the inverse one in 3\textsc{sg} $\rightarrow$ 3, while the 3\textsc{du} $\rightarrow$ 3 and 3\textsc{pl} $\rightarrow$ 3\textsc{non-sg} exhibit both markers.
+
 
 \begin{table}[H]
 \caption{The Bantawa non-past affirmative transitive paradigm (\citealt[145-8]{doornenbal09})}\label{tab:bantawapos}
@@ -429,6 +497,10 @@ There is only one type of conjugation in Rgyalrong: there is no equivalent of th
 \end{tabular}}
 \end{table}
 
+
+However, a quick look at the non-past \textit{negative} paradigm in Bantawa (cf. Table \vref{tab:bantawaneg}) reveals a different, and far more complicated picture, in which the inverse marker appears in all (phonologically licensed) person configurations, thus precluding an analysis in terms of direction marking (see especially the red-coloured cells which, whatever assumption we choose to base our analysis upon, cannot be argued to contain an inverse marker) and prompting one connecting it to the expression of negative polarity.
+
+
 \begin{table}[H]
 \caption{The Bantawa non-past negative transitive paradigm (\citealt[145-8]{doornenbal09})}\label{tab:bantawaneg}
 \resizebox{\textwidth}{!}{
@@ -457,12 +529,13 @@ There is only one type of conjugation in Rgyalrong: there is no equivalent of th
 \end{tabular}}
 \end{table}
 
+While it is clearly not the case that negative polarity is expressed solely, or indeed mainly, by what in the affirmative appears as a well-behaved inverse marker (non-past negative verb forms also evince a complex affixal exponent of negation), a unified analysis of this marker's apparent polyfunctionality in synchrony is problematic. In order to account for it, a diachronic scenario on the basis of comparison with other Kiranti languages (especially Puma) seems superior to an analysis invoking mere homonymy or any type of grammatical polysemy, for that matter.
 
 \subsection{A comparative perspective on Rgyalrong and Kiranti}
 
 While all specialists of Sino-Tibetan languages agree that the Rgyalrong and Kiranti verbal systems are at least partially cognate (\citealt{lapolla03}, \citealt{delancey10agreement} and \citealt{jacques12agreement}),\footnote{There authors differ in their interpretation of the data: LaPolla considers the Rgyalrong / Kiranti commonalities to be common innovations, while DeLancey and Jacques think that they go back to proto-Sino-Tibetan. This controversy will not be dealt with in this paper.} there is not consensus as to exactly which type of system should be reconstructed for the common ancestor of Rgyalrong and Kiranti.
 
-Since Rgyalrong and Kiranti languages, unlike Cree, lack ancient attestations,\footnote{There are texts in Situ Rgyalrong, some of them dating back from the eighteenth century (\citealt{ngagdbang10gtamdpe}), but these texts are difficult to date, not fully understood and contain few   conjugated verbal forms; until a systematic study of verbal morphology in these texts has been undertaken, historical studies on Rgyalrong languages will have to be exclusively based on the comparative method.} former stages of these languages are only recoverable by reconstruction. The historical phonology of these languages are still imperfectly understood (see \citealt{jacques04these} and \citealt{opgenort05jero}), and the reconstruction of morphology in the Sino-Tibetan family is still in infancy -- this state of affair is due to the fact that these languages have not been described in detail until recently.
+Since Rgyalrong and Kiranti languages, unlike Cree, lack ancient attestations,\footnote{There are some ancient texts in Tibetan script in Situ Rgyalrong, some of them dating back from the eighteenth century (\citealt{ngagdbang10gtamdpe}), but these texts are difficult to date, not fully understood and contain few   conjugated verbal forms; until a systematic study of verbal morphology in these texts has been undertaken, historical studies on Rgyalrong languages will have to be exclusively based on the comparative method.} former stages of these languages are only recoverable by reconstruction. The historical phonology of these languages are still imperfectly understood (see \citealt{jacques04these} and \citealt{opgenort05jero}), and the reconstruction of morphology in the Sino-Tibetan family is still in infancy -- this state of affair is due to the fact that these languages have not been described in detail until recently.
 
 Given the absence of historical data, all logical possibilities will have to be explored to explain the commonalities and differences between the Bantawa and the Zbu verbal systems, taking also into account other Kiranti languages.
 
@@ -473,7 +546,7 @@ Given the absence of historical data, all logical possibilities will have to be 
 
 It is known that  Rgyalrong languages, including Zbu, are   phonologically conservative as far as syllable onsets and prefixes are concerned generally in comparison to other languages. For instance, while it has been known since \citet{conrady1896} that most if not all Sino-Tibetan languages have  traces of a causative \ipa{s--} prefix, this causative prefix only remains fully productive in Rgyalrong languages (where it can be applied to recent loanwords from Chinese). While some degree of paradigm levelling has to be posited in Rgyalrong languages in any case, otherwise the person agreement morphology would be highly irregular, it is possible that these languages have better preserved the prefixes of the proto-language than other branches.
 
-This section focuses on the prefixal prefixes; although most personal suffixes in Rgyalrong and Kiranti appear to be cognate, their similarity to pronouns, especially in Rgyalrong, raises the suspicion that they might have been at least in part recently  grammaticalized from pronouns.   For ease of exposition, only data from Zbu and Bantawa are presented in this section. A more detailed study of comparative Rgyalrong / Kiranti verbal morphology goes beyond the scope of this paper.
+This section focuses on the   prefixes; although most personal suffixes in Rgyalrong and Kiranti appear to be cognate, their similarity to pronouns, especially in Rgyalrong, raises the suspicion that they might have been at least in part recently  grammaticalized from pronouns, while the prefixes in general bear little resemblance to independent pronouns, and are unlikely to be recent innovations (\citealt{jacques12agreement}).   For ease of exposition, only data from Zbu and Bantawa are presented in this section. A more detailed study of comparative Rgyalrong / Kiranti verbal morphology goes beyond the scope of this paper.
 
 Zbu Rgyalrong only counts three prefixes in its personal agreement system:   inverse   \ipa{wə--},   second person   \ipa{tə--}  and the portmanteau 1$\rightarrow$2   \ipa{tɐ--}. Bantawa has four distinct prefixes in the positive paradigm:   second person \ipa{tɨ--},   3$\rightarrow$SAP \ipa{nɨ--}, 3$\rightarrow$\textsc{1pi} and \textsc{3pl} \ipa{mɨ--} and 3$\rightarrow$1 / \textsc{3du/pl}$\rightarrow$3 \ipa{ɨ}. 
 
@@ -485,16 +558,16 @@ The non-local paradigms in Zbu and Bantawa are compared in Table \ref{tab:non.lo
 By contrast, no such opposition is observed in Bantawa: the marker  \ipa{ɨ--} does not have a clearly statable  morphosyntactic function in this language, but in the non-local affirmative paradigm, it only marks non-singular agent number.
 
 \begin{table}
-\caption{Comparison of non-local forms in Zbu and Bantawa}\label{tab:non.loc}
+\caption{Comparison of non-local forms in Zbu and Bantawa}\label{tab:non.loc} \centering
 \begin{tabular}{l|llll|lllllll}
 \toprule
 &\multicolumn{4}{c}{Zbu} & \multicolumn{3}{c}{Bantawa} \\
 &\textsc{3s} & \textsc{3d} & \textsc{3p} &3' &\textsc{3s} & \textsc{3d} & \textsc{3p} \\
 \hline
 \textsc{3s} &\grise{} &\grise{} &\grise{} &\rc{}& \ro{}-\ipa{u} & \multicolumn{2}{c}{\ro{}-\ipa{uci}} \\ 
-\textsc{3d} &\grise{} &\grise{} &\grise{} &\ro{}-\ipa{ndʑi} & \ipa{ɨ}-\ro{}-\ipa{cu} & \multicolumn{2}{c}{\ipa{ɨ}-\ro{}-\ipa{cuci}} \\ 
-\textsc{3p} &\grise{} &\grise{} &\grise{} &\ro{}-\ipa{nɯ} & \ipa{ɨ}-\ro{} & \multicolumn{2}{c}{\ipa{mɨ}-\ro{}-\ipa{uci}} \\ 
-3' & \ipa{wɣɯ}-\ro{} & \ipa{wɣɯ}-\ro{}-\ipa{ndʑi}  & \ipa{wɣɯ}-\ro{}-\ipa{nɯ} &\grise{} &\grise{} &\grise{} &\grise{} \\
+\textsc{3d} &\grise{} &\grise{} &\grise{} &\ro{}-\ipa{ndʑi} & \ipa{ɨ}-\ro{}-\ipa{cu}\cellcolor{green} & \multicolumn{2}{c}{\ipa{ɨ}-\ro{}-\ipa{cuci}\cellcolor{green}} \\ 
+\textsc{3p} &\grise{} &\grise{} &\grise{} &\ro{}-\ipa{nɯ} & \ipa{ɨ}-\ro{}\cellcolor{green} & \multicolumn{2}{c}{\ipa{mɨ}-\ro{}-\ipa{uci}} \\ 
+3' & \ipa{wɣɯ}-\ro{} \cellcolor{green}& \ipa{wɣɯ}-\ro{}-\ipa{ndʑi}  \cellcolor{green}& \ipa{wɣɯ}-\ro{}-\ipa{nɯ} \cellcolor{green}&\grise{} &\grise{} &\grise{} &\grise{} \\
 \hline
 \textsc{intr} & \ro{} & \ro{}-\ipa{ndʑi}  & \ro{}-\ipa{nɯ}  &\grise{}& \ro{} & \ro{}-\ipa{ci}  &\ipa{mɨ}-\ro{} \\
 \bottomrule
