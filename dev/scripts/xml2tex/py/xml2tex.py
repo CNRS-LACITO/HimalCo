@@ -197,7 +197,10 @@ class Xml2Tex(InOut, XmlFormat):
     def compute_header(self):
         """Create LaTeX header.
         """
-        hdr = self.open_read("./test/japhug/expected_result/header.tex")
+        if self.options.test == "japhug":
+            hdr = self.open_read("./xml2tex/tex/preamble_GJ.tex")
+        elif self.options.test == "na":
+            hdr = self.open_read("./xml2tex/tex/preamble_AM.tex")
         header = hdr.read()
         hdr.close()
         return header
@@ -254,11 +257,16 @@ class Xml2Tex(InOut, XmlFormat):
         tex_file = self.open_write(self.options.output)
         tex_file.write(self.compute_header())
         tex_file.write("\n\\begin{document}\n")
+        tex_file.write("\\maketitle\n")
+        tex_file.write("\\newpage\n")
         tex_file.write("\\begin{multicols}{2}\n")
         # Tags added by Toolbox
         tags_tb = set(["toolbox_data", "header", "_sh"])
         # Tags that need additional references
         tags_ref = set(["sy", "an", "cf"])
+        # Tags corresponding to examples (do not include comments: 'xc')
+        tags_ex = set(["xv", "xe", "xn", "xr", "xf"])
+        ex_started = False
         # Tones
         tones = set(["˩", "˧", "˥"])
         # japhug : 'ipa' = API ; chinois : 'zh' ; tibetain : r
@@ -275,7 +283,7 @@ class Xml2Tex(InOut, XmlFormat):
             "bw"    : lambda e: "",
             "et"    : lambda e: "\\textit{Etym:} \\textbf{\ipa{" + e.text + "}}.\n",
             "ec"    : lambda e: "",
-            "ps"    : lambda e: "\\textcolor{blue}{\\textit{" + e.text + "}}\n",
+            "ps"    : lambda e: "\\textcolor{teal}{\\textit{" + e.text + "}}\n",
             "sn"    : lambda e: "",
             "sy"    : lambda e: "\\textit{Syn:} ",
             "an"    : lambda e: "\\textit{Ant:} ",
@@ -285,7 +293,7 @@ class Xml2Tex(InOut, XmlFormat):
             "np"    : lambda e: "\\textit{Tone:} " + e.text + ".\n",
             "ng"    : lambda e: "",
             "nd"    : lambda e: "",
-            "nq"    : lambda e: "\\textit{[Ques:} \ipa{" + e.text + "} \\textit{]}.\n",
+            "nq"    : lambda e: "\\textit{[Ques:} \nq{" + e.text + "} \\textit{]}.\n",
             "so"    : lambda e: "",
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
             "va"    : lambda e: "",
@@ -312,17 +320,18 @@ class Xml2Tex(InOut, XmlFormat):
             "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "er"    : lambda e: "",
             "rf"    : lambda e: "",
-            "xv"    : lambda e: "\\hspace{0.1cm} \\textbullet \\hspace{0.1cm} \\textcolor{teal}{\ipa{" + e.text + "}} - \n",
-            "xe"    : lambda e: e.text + "\n",
-            "xn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
+            "xv"    : lambda e: "\\ex \ipa{" + e.text + "}\n",
+            "xe"    : lambda e: "\\trans " + e.text + "\n",
+            "xn"    : lambda e: "\\trans \\textit{\zh{" + e.text + "}}\n",
             "xr"    : lambda e: "",
-            "xf"    : lambda e: "",
+            "xf"    : lambda e: "\\trans " + e.text + "\n",
             "xc"    : lambda e: ""
         })
         # Keep reference errors
         errors = set()
         current_character = ''
         for element in self.tree.getroot().iter():
+            # Handle reserved characters: \ { } $ # & _ ^ ~ %
             if element.text.find("{") != -1:
                 element.text = self.format_font(element.text)
             if element.text.find("@") != -1:
@@ -352,6 +361,16 @@ class Xml2Tex(InOut, XmlFormat):
                 # Remove
                 pass
             else:
+                # Handle examples
+                if element.tag in tags_ex:
+                    if not ex_started:
+                        tex_file.write("\\setcounter{exx}{0}\n")
+                        tex_file.write("\\begin{exe}\n")
+                        ex_started = True
+                else:
+                    if ex_started:
+                        tex_file.write("\\end{exe}\n")
+                        ex_started = False
                 # Check if current element is a lexeme starting with a different character than previous lexeme
                 if element.tag == "lx" and int(unicode_order[element.text[0]]) != int(unicode_order[current_character])\
                     and int(unicode_order[element.text[0]]) < 45: # do not consider special characters (hugly!)
