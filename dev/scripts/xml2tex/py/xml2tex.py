@@ -281,57 +281,57 @@ class Xml2Tex(InOut, XmlFormat):
             "wav"   : lambda e: "",
             "wav8"  : lambda e: "",
             "hbf"   : lambda e: "",
-            "hm"    : lambda e: "",
+            "hm"    : lambda e: "\\textsuperscript{" + e.text + "}\n",
             "dt"    : lambda e: "",
-            "ph"    : lambda e: "",
+            "ph"    : lambda e: "[\ipa{" + e.text + "}]\n",
             "se"    : lambda e: "\n\\hspace{0.2cm} {\large \ipa{" + e.text + "}}\n",
-            "bw"    : lambda e: "",
+            "bw"    : lambda e: "\\textit{From:} \ipa{" + e.text + "}.\n",
             "et"    : lambda e: "\\textit{Etym:} \\textbf{\ipa{" + e.text + "}}.\n",
-            "ec"    : lambda e: "",
+            "ec"    : lambda e: "(" + e.text + ")\n",
             "ps"    : lambda e: "\\textcolor{teal}{\\textit{" + e.text + "}}\n",
-            "sn"    : lambda e: "",
+            "sn"    : lambda e: e.text + ")\n",
             "sy"    : lambda e: "\\textit{Syn:} ",
             "an"    : lambda e: "\\textit{Ant:} ",
             "cf"    : lambda e: "\\textit{See:} ",
-            "sd"    : lambda e: "",
-            "nt"    : lambda e: "",
+            "sd"    : lambda e: "\\textit{SD:} \ipa{" + e.text + "}.\n",
+            "nt"    : lambda e: "\\textit{[Note:} \nq{" + e.text + "} \\textit{]}.\n",
             "np"    : lambda e: "\\textit{Tone:} " + e.text + ".\n",
             "ng"    : lambda e: "",
-            "nd"    : lambda e: "",
+            "nd"    : lambda e: "\\textit{[Disc:} \nq{" + e.text + "} \\textit{]}.\n",
             "nq"    : lambda e: "\\textit{[Ques:} \nq{" + e.text + "} \\textit{]}.\n",
-            "so"    : lambda e: "",
+            "so"    : lambda e: "\\textit{[Source:} \nq{" + e.text + "} \\textit{]}.\n",
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
-            "va"    : lambda e: "",
-            "vf"    : lambda e: "",
+            "va"    : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "vf"    : lambda e: "(" + e.text + ")\n",
             "pdl"   : lambda e: "\\textit{" + e.text + ":} ",
             "pdv"   : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
-            "pdf"   : lambda e: "",
+            "pdf"   : lambda e: "'" + e.text + "'\n",
             "a2s"   : lambda e: "\\textit{[Th\`{e}me du pass\\'{e}:} \ipa{" + e.text + "} \\textit{]}.\n",
             "comit" : lambda e: "\\textit{[Comitatif:} \ipa{" + e.text + "} \\textit{]}.\n",
             "constr": lambda e: "\\textit{[Construction:} \ipa{" + e.text + "} \\textit{]}.\n",
             "dv"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
-            "gv"    : lambda e: "",
+            "gv"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
             "de"    : lambda e: e.text + ".\n",
             "ge"    : lambda e: e.text + "\n",
             "dn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "gn"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "dr"    : lambda e: "",
             "gr"    : lambda e: "",
-            "df"    : lambda e: "",
-            "gf"    : lambda e: "",
+            "df"    : lambda e: e.text + ".\n",
+            "gf"    : lambda e: e.text + "\n",
             "uv"    : lambda e: "\\textit{Usage:} \\textbf{\ipa{" + e.text + "}}.\n",
             "ue"    : lambda e: "\\textit{Usage:} \ipa{" + e.text + "}.\n",
             "un"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "ev"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
             "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "er"    : lambda e: "",
-            "rf"    : lambda e: "",
+            "rf"    : lambda e: "\\textit{Ref:} " + e.text + "\n",
             "xv"    : lambda e: "\\sn \ipa{" + e.text + "}\n", # use \ex for numbered examples
             "xe"    : lambda e: "\\trans " + e.text + "\n",
             "xn"    : lambda e: "\\trans \\textit{\zh{" + e.text + "}}\n",
             "xr"    : lambda e: "",
             "xf"    : lambda e: "\\trans " + e.text + "\n",
-            "xc"    : lambda e: ""
+            "xc"    : lambda e: "(" + e.text + ")\n"
         })
         # Keep reference errors
         errors = set()
@@ -393,7 +393,15 @@ class Xml2Tex(InOut, XmlFormat):
                 # Format tone if any, then keep text as it was to handle cross-references
                 text = element.text
                 element.text = self.format_tone(element.text)
-                tex_file.write(format[element.tag](element))
+                # Do not print if it is precised
+                to_print = True
+                try:
+                    if element.attrib["print"] == "n" or element.attrib["print"] == "no":
+                        to_print = False
+                except KeyError:
+                    pass
+                if to_print:
+                    tex_file.write(format[element.tag](element))
                 element.text = text
                 if element.tag in tags_ref:
                     from string import digits
