@@ -320,7 +320,7 @@ class Xml2Tex(InOut, XmlFormat):
             "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "er"    : lambda e: "",
             "rf"    : lambda e: "",
-            "xv"    : lambda e: "\\ex \ipa{" + e.text + "}\n",
+            "xv"    : lambda e: "\\sn \ipa{" + e.text + "}\n", # use \ex for numbered examples
             "xe"    : lambda e: "\\trans " + e.text + "\n",
             "xn"    : lambda e: "\\trans \\textit{\zh{" + e.text + "}}\n",
             "xr"    : lambda e: "",
@@ -364,7 +364,7 @@ class Xml2Tex(InOut, XmlFormat):
                 # Handle examples
                 if element.tag in tags_ex:
                     if not ex_started:
-                        tex_file.write("\\setcounter{exx}{0}\n")
+                        #tex_file.write("\\setcounter{exx}{0}\n")
                         tex_file.write("\\begin{exe}\n")
                         ex_started = True
                 else:
