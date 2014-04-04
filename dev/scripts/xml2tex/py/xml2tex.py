@@ -251,6 +251,11 @@ class Xml2Tex(InOut, XmlFormat):
             return result
         return text
 
+    def format_caps(self, text):
+        """Force first letter to be in upper case.
+        """
+        return text[0].upper() + text[1:]
+
     def write_fields(self):
         """Write LaTeX output file.
         """
@@ -351,6 +356,9 @@ class Xml2Tex(InOut, XmlFormat):
             if element.tag == "np":
                 # Format tone if any
                 element.text = self.format_tone(element.text, np=True)
+            if element.tag == "de" or element.tag == "df":
+                # Display first character in upper case
+                element.text = self.format_caps(element.text)
             if element.text == '_':
                 # LaTeX returns error in case of "\ipa{_}"
                 pass
