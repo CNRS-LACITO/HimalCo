@@ -202,6 +202,11 @@
 \CharStyle
 \-mkr
 
+\+mkr df
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr dn
 \nam Definition (n)
 \desc Used to fully express the semantic domains of each sense of a lexeme in the national language. May be verbose. Other fields (\en, \un, and \on) provide for expanded information. Should contain 1) the bundle of semantic distinctive features necessary and sufficient to describe its core meaning, and 2) the range of denotation of the lexeme. Generally, no initial capital is used.
@@ -316,6 +321,11 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\-mkr
+
+\+mkr gf
+\lng English
+\mkrOverThis lx
 \-mkr
 
 \+mkr gn
@@ -620,6 +630,11 @@
 \CharStyle
 \-mkr
 
+\+mkr pdf
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr pdl
 \nam Paradigm label
 \desc Used to label the paradigm form given in the \pdv field. This is useful for paradigm sets that are incomplete or irregular. Use a Range Set.
@@ -784,6 +799,11 @@
 \mkrOverThis lx
 \-mkr
 
+\+mkr sf
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr sg
 \nam Singular form
 \desc This is a special paradigm field used to give the singular form of the lexeme. (It is better to use the \pdl field set for this.)
@@ -896,6 +916,11 @@
 \CharStyle
 \-mkr
 
+\+mkr vf
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr vn
 \nam Variant comment (n)
 \desc Where national language comments can be given for the variant form.
@@ -936,12 +961,22 @@
 \CharStyle
 \-mkr
 
+\+mkr xc
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr xe
 \nam Example free trans. (E)
 \desc English translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
 \lng English
 \mkrOverThis xv
 \CharStyle
+\-mkr
+
+\+mkr xf
+\lng English
+\mkrOverThis lx
 \-mkr
 
 \+mkr xn
