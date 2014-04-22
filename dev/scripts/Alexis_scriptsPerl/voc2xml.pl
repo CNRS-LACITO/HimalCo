@@ -137,7 +137,7 @@ while ($line=<VOC>) {
 		$ortholine =~ s{>}{&gt;}g;
 
 		# writing the word into the XML file
-		print  XOUT "<S id=\"$textname", "_", "$Wno\">\n\t<FORM>$ortholine</FORM>\n";
+		print  XOUT "<W id=\"$textname", "_", "$Wno\">\n\t<FORM>$ortholine</FORM>\n";
 
 		# Dealing with comments, if any	
 		my $commentloop = 1;
@@ -201,13 +201,13 @@ while ($line=<VOC>) {
 		# print XOUT "$tps_en_sec\n";		
 		
 		# Adding markup for end of word	
-		print XOUT "</S>\n";
+		print XOUT "</W>\n";
 		$nblines++;	
 		
 		# Reading extra line from input file, corresponding to empty line. (Addition made in Oct. 2011, to make it visually clearer: entries are separated by blank lines.)
 		<VOC>
 }
-print XOUT "</TEXT>\n";
+print XOUT "</WORDLIST>\n";
 unlink ("foobar");
 
 close (VOC);
