@@ -1,11 +1,11 @@
-\documentclass{beamer}
+\documentclass[xcolor=table]{beamer}
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
-\usepackage{longtable}
+
 \usepackage{polyglossia} 
-%\usepackage[table]
+\usepackage[table]{xcolor}
 \usepackage{color}
 
 \usepackage{multicol}
@@ -20,7 +20,7 @@
 \usetikzlibrary{trees}
 
 
-\newfontfamily\gender[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman}} 
+\newfontfamily\gender[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
  
@@ -501,6 +501,16 @@
 \end{tikzpicture}
 \end{frame}   
 
+  \begin{frame} 
+  
+ \frametitle{\zh{嘉绒语研究}} 
+
+
+
+\includegraphics{fengmian.jpg}
+
+
+\end{frame} 
 
   \begin{frame} 
   
@@ -979,5 +989,28 @@
 %
 %\end{tikzpicture}
 %\end{frame}
+
+
+  \begin{frame} 
+ \frametitle{\zh{茶堡话亲属称谓的形态变化}} 
+ 
+
+\begin{tabular}{lllllllll} \toprule
+ \zh{代词} & \zh{领属前缀} & \\
+\midrule
+ \ipa{aʑo},    \ipa{ɤj} &	\ipa{a-xtɤɣ}  &	 \zh{我的兄弟} \\
+\ipa{nɤʑo},  \ipa{nɤj} &	\ipa{nɤ-xtɤɣ}  & \zh{你的兄弟} \\
+\ipa{ɯʑo}  &	\ipa{ɯ-xtɤɣ}  &		 \zh{他的的兄弟} \\
+\ipa{tɕiʑo}  &	\ipa{tɕi-xtɤɣ}  &	 \zh{我俩的的兄弟} \\
+\ipa{ndʑiʑo}  &	\ipa{ndʑi-xtɤɣ}  &	 \zh{你俩的兄弟} \\	
+\ipa{ʑɤni}  &	\ipa{ndʑi-xtɤɣ}  &	 \zh{他俩的的兄弟} \\	
+\ipa{iʑo}, \ipa{iʑora}      &	\ipa{i-xtɤɣ}  &			 \zh{我们的兄弟} \\
+\ipa{nɯʑo}, \ipa{nɯʑora},   \ipa{nɯʑɤra}  &	\ipa{nɯ-xtɤɣ}  &			 \zh{你们的兄弟} \\
+\ipa{ʑara}  &	\ipa{nɯ-xtɤɣ}  &	 \zh{他们的兄弟} \\
+   &	\ipa{tɤ-xtɤɣ}  &	 \zh{兄弟} \\
+\bottomrule
+\end{tabular}
+
+\end{frame}
 
 \end{document}
