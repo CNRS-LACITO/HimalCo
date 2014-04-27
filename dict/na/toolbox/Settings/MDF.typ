@@ -971,6 +971,7 @@
 \desc English translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
 \lng English
 \mkrOverThis xv
+\mkrFollowingThis xn
 \CharStyle
 \-mkr
 
@@ -984,6 +985,7 @@
 \desc National language translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
 \lng national
 \mkrOverThis xv
+\mkrFollowingThis xf
 \CharStyle
 \-mkr
 
