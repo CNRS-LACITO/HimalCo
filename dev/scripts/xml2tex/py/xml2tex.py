@@ -320,6 +320,7 @@ class Xml2Tex(InOut, XmlFormat):
             "df"    : lambda e: "",
             "gf"    : lambda e: "",
             "uv"    : lambda e: "\\textit{Usage:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "ue"    : lambda e: "\\textit{Usage:} \ipa{" + e.text + "}.\n",
             "un"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
             "ev"    : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
             "en"    : lambda e: "\\textit{\zh{" + e.text + "}}\n",
