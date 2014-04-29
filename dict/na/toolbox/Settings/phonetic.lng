@@ -1,4 +1,4 @@
-﻿\+LanguageEncoding phonetic
+\+LanguageEncoding phonetic
 \ver 5.0
 \desc IPA Unicode
 \case A a
@@ -27,7 +27,6 @@ W w
 X x
 Y y
 Z z
-
 \+srtset 
 
 \+srt abcde
@@ -214,7 +213,12 @@ a ɶ ɑ ɒ
 \charset 00
 \rgbColor 0,0,0
 \-fnt
-\kbdWin32 US
+\kbdWin32 IPA for Na
 \kbdKeyman IPA93 1.0 (FF)
+\+KeyDefs 
+
+
+
+\-KeyDefs
 \UnicodeLang
 \-LanguageEncoding
