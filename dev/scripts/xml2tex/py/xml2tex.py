@@ -430,9 +430,8 @@ class Xml2Tex(InOut, XmlFormat):
         self.parse_options()
         # Parse input XML file
         self.tree = parse(self.options.input)
-        if self.options.test == "japhug":
-            # Add 'lx' identifiers
-            self.add_lx_id()
+        # Add 'lx' identifiers
+        self.add_lx_id()
         # Sort in alphabetical order
         self.sort_lx()
         # Convert to LaTeX
