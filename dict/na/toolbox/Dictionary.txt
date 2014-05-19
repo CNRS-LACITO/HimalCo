@@ -18863,6 +18863,7 @@
 \xv
 \xf
 \xc
+\dt 19/May/2014
 
 \lx
 \sf <nb="B"> 1211
@@ -51902,14 +51903,14 @@ la noter, pour aucune des syllabes /æ/.
 \pdf
 \de classifier for fires
 \ge °clf.fire
-\dn 量词：一个火
-\gn
+\dn 量词：火
+\gn °量词.火
 \gr
 \df classificateur des feux
 \gf °clf.feux
 \xv mv˧ | ʈʂʰɯ˧-æ˥
-\xe
-\xn
+\xe this fire (tone: H#)
+\xn 这个火
 \xf ce feu (ton: H#)
 \rf
 \xv
@@ -51918,6 +51919,7 @@ la noter, pour aucune des syllabes /æ/.
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx æ#˥
 \sf <nb="B"> 68
@@ -53716,15 +53718,15 @@ la noter, pour aucune des syllabes /æ/.
 \pdv
 \pdf
 \de self-classifier for flowers
-\ge
-\dn 朵（花）°量词
-\gn
+\ge °clf.flowers
+\dn 量词：朵（花）
+\gn °量词.朵（花）
 \gr
 \df classificateur des fleurs
 \gf °clf.fleurs
 \xv tʰv˧-bæ˥
-\xe
-\xn
+\xe this flower (tone: H#)
+\xn 这朵（花）
 \xf cette fleur (ton: H#)
 \rf
 \xv
@@ -53733,6 +53735,7 @@ la noter, pour aucune des syllabes /æ/.
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx bæ˧1
 \sf <nb="B"> 
@@ -53768,17 +53771,44 @@ la noter, pour aucune des syllabes /æ/.
 \pdf
 \de classifier for sorts of things; used in statements of identity: "it is the same"
 \ge
-\dn 量词：一样（东西）
-\gn
+\dn 量词：样（东西）
+\gn °量词.样
 \gr
 \df classificateur des espèces/sortes de choses. Proche de /ʁo˩2/ "sorte, variété". S'emploie dans la construction "c'est la même chose".
 \gf °clf.espèces
 \xv ɖɯ˧-bæ˧-lɑ˧ ɲi˥!
-\xe
-\xn
+\xe It's the same!
+\xn 是一样的！
 \xf c'est pareil!/c'est la même chose!
 \xv ʝi˧kʰv˥-dʑo˩, ǀ ɲi˧-bæ˧ ǀ ʐwɤ˩-tʰɑ˩˥! ǀ ʝi˧kʰv˥-dʑo˩, ǀ ɖɯ˧-bæ˧-lɑ˧ ʐwɤ˧-tʰɑ˥!
-\xf Il y en a certaines (=des expressions/des combinaisons de mots), on peut les prononcer de deux façons/elles ont deux schémas tonals différents! Il y en a certaines, il n'y a qu'une façon de les dire/il n'y a qu'une sorte (de réalisation tonale possible)! (commentaire au sujet d'expressions qui ont deux variantes tonales)
+\xe Some (phrases/combinations
+between words) can be said
+two different ways; whereas
+others can only be said in one
+way / only have one possible
+realization! (Context: the
+investigation bears on tonal
+variants for phrases, such as
+numeral-plus-classifier
+phrases; the consultant
+confirms that some
+combinations admit two
+variants, whereas others only
+have one possible tone
+pattern.)
+\xn 有些（词组）有两种说法，有些只有一种说法而已！（境况：讨论的是一些有两种不同变调发音的词组，发音合作人确定：确实有些有两种不同的变调，而有些倒只有一种声调模型。）
+\xf Il y en a certaines (=des
+expressions/des combinaisons
+de mots), on peut les
+prononcer de deux
+façons/elles ont deux schémas
+tonals différents! Il y en a
+certaines, il n'y a qu'une façon
+de les dire/il n'y a qu'une sorte
+(de réalisation tonale possible)!
+(commentaire au sujet
+d'expressions qui ont deux
+variantes tonales)
 \xv ɲi˧-bæ˧-ɳɯ˧ | ɖɯ˧-bæ˧ ʝi˧
 \xf confondre deux choses (ex.: confondre deux sons, et les noter de la même façon, alors qu'ils s'opposent entre eux)
 \rf
@@ -53788,6 +53818,7 @@ la noter, pour aucune des syllabes /æ/.
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx bi˧
 \sf <nb="B"> 1756
@@ -54914,9 +54945,9 @@ la noter, pour aucune des syllabes /æ/.
 \pdv
 \pdf
 \de self-classifier for animal hooves; also used for footprints
-\ge
-\dn 量词
-\gn
+\ge °clf.hooves
+\dn 量词：动物的脚
+\gn °量词.动物的脚
 \gr
 \df auto-classificateur des sabots d'animaux, et des traces qu'ils laissent sur le sol
 \gf °clf.sabots
@@ -54931,6 +54962,7 @@ la noter, pour aucune des syllabes /æ/.
 \xv
 \xf
 \xc
+\dt 19/May/2014
 
 \lx bo
 \sf <nb="B"> 
@@ -65557,7 +65589,7 @@ scalding
 \et
 \ec <lang="fr"> 
 \ps adj
-\sn
+\sn 1
 \cf
 \cf <type="hm"> 
 \sd <lang="fr"> adjectif
@@ -65580,23 +65612,120 @@ scalding
 \pdl
 \pdv
 \pdf
-\de poor (person); dark: the sky is dark
+\de poor (person)
 \ge
-\dn 穷（人），阴（天）
-\gn
+\dn 穷（人）
+\gn 穷
 \gr
-\df indigent, pauvre (personne…); mauvais (action…); être sombre (ciel)
+\df indigent, pauvre (personne…)
 \gf indigent
-\xv dzɑ˧-ʐwæ˩-ze˧!
-\xe
-\xn
-\xf (il est) très pauvre!
-\xv mv˧ dzɑ˧(-ze˩).
-\xf le ciel est sombre/il fait un temps gris
-\xv ʈʂʰɯ˧-ɳɯ˧ ǀ njɤ˧-ki˧ ǀ dzɑ˧-ʝi˧ ʐwæ˩˥!
+\xv dzɑ˧ | -ʐwæ˩-ze˥!
+\xe (He/she) is really poor!
+\xn 他很穷的了！
+\xf (il/elle est) très pauvre!
+\rf
+\xv
+\xf
+\rf
+\xv
+\xf
+\xc
+\dt 16/May/2014
+
+\lx dzɑ˥
+\sf <nb="B"> 1049
+\sf <nb="B"> 1537
+\sf <nb="2011"> 1482
+\hm
+\ph
+\bw
+\et
+\ec <lang="fr"> 
+\ps adj
+\sn 2
+\cf
+\cf <type="hm"> 
+\sd <lang="fr"> adjectif
+\sd <lang="en"> adjective
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np
+\np <type="tone"> H
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5"> ID.
+\vf <type="tone"> 
+\pdl
+\pdv
+\pdf
+\de bad (action...)
+\ge bad
+\dn 坏（行为）
+\gn 坏
+\gr
+\df mauvais (action…)
+\gf mauvais
+\xv ʈʂʰɯ˧-ɳɯ˧ ǀ njɤ˧-ki˧ ǀ
+dzɑ˧-ʝi˧ | ʐwæ˩˥!
+\xe He really despises me!
+\xn 他很瞧不起我！
 \xf il me méprise vraiment!
 \xv hĩ˧ ʈʂʰɯ˧-v˧ dʑo˩, ǀ õ˧-ki˥ ǀ dzɑ˧-ʝi˧-ze˩!
+\xe This person has no
+self-respect! (literally: This
+person is doing herself harm)
+\xn 这个人，不尊敬自己！
 \xf cette personne ne se respecte pas!
+\rf
+\xv
+\xf
+\rf
+\xv
+\xf
+\xc
+\dt 16/May/2014
+
+\lx dzɑ˥
+\sf <nb="B"> 1049
+\sf <nb="B"> 1537
+\sf <nb="2011"> 1482
+\hm
+\ph
+\bw
+\et
+\ec <lang="fr"> 
+\ps adj
+\sn 3
+\cf
+\cf <type="hm"> 
+\sd <lang="fr"> adjectif
+\sd <lang="en"> adjective
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np
+\np <type="tone"> H
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5"> ID.
+\vf <type="tone"> 
+\pdl
+\pdv
+\pdf
+\de dark: the sky is dark
+\ge dark
+\dn 阴（天）
+\gn 阴
+\gr
+\df sombre (ciel)
+\gf sombre
+\xv mv˧ dzɑ˧(-ze˩).
+\xf le ciel est sombre/il fait un temps gris
 \rf
 \xv
 \xf
@@ -65637,19 +65766,21 @@ scalding
 \pdl
 \pdv
 \pdf
-\de to melt
-\ge
+\de to melt; to thaw
+\ge to_melt
 \dn 溶化
-\gn
+\gn 溶化
 \gr
 \df fondre
-\gf
+\gf fondre
 \xv mɤ˧ ǀ le˧-ɖʐæ˩-ze˩
-\xe
-\xn
+\xe The grease has melted.
+\xn 猪油溶化了。
 \xf la graisse a fondu (du saindoux qui fond dans un chaudron)
 \xv dʑi˩pʰæ˩˥ ǀ le˧-ɖʐæ˩-ze˩
-\xf la glace a fondu
+\xe The ice has melted.
+\xn 冰化冻了。
+\xf La glace a fondu.
 \rf
 \xv
 \xf
@@ -65691,20 +65822,25 @@ scalding
 \pdv
 \pdf
 \de to ride (a horse)
-\ge
+\ge to_ride
 \dn 骑马
-\gn
+\gn 骑
 \gr
 \df monter à cheval
-\gf
+\gf monter_à_cheval
 \xv læ˧-ɖʐæ˧-ze˧
-\xe
-\xn
+\xe °accomp _ °pfv
+\xn °accomp _ °pfv
 \xf °accomp _ °pfv
 \xv ʐwæ˧ ɖʐæ˧
+\xe to ride a horse
+\xn 骑马
 \xf monter à cheval
 \xv ɖʐæ˧-tʰɑ˧˥!
-\xf
+\xe It's possible to ride (it)! / It's
+OK to ride (it)!
+\xn 可以骑的！
+\xf On peut le monter!
 \rf
 \xv
 \xf
@@ -65712,6 +65848,7 @@ scalding
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx ɖʐæ˧qʰæ˥$
 \sf <nb="B"> 59
@@ -65747,19 +65884,30 @@ scalding
 \pdv
 \pdf
 \de mud
-\ge
+\ge mud
 \dn 泥巴
-\gn
+\gn 泥巴
 \gr
 \df boue
 \gf boue
 \xv ɖʐæ˧qʰæ˧ ʐæ˥(-ze˩) 
-\xe
-\xn
-\xf il y a de la boue, c'est tout boueux
+\xe There is mud; mud has
+formed.
+\xn 有泥巴了。
+\xf De la boue s'est formée; il y a
+de la boue, c'est tout boueux.
+(Littéralement: "de la boue
+s'est mélangée".)
 \rf F5
 \xv ɖʐæ˧qʰæ˧ ʐæ˧~ʐæ˥
-\xf il y a de la boue (pas accepté par F4)
+\xe There is mud; mud has formed.
+\xn 有泥巴了
+\xf De la boue s'est formée; il y a
+de la boue, c'est tout boueux.
+(Littéralement: "de la boue
+s'est mélangée".) (Note: cette
+formulation n'est pas acceptée
+par la locutrice F4.)
 \rf
 \xv
 \xf
@@ -65798,12 +65946,12 @@ scalding
 \pdv dzi˧
 \pdf
 \de shoe
-\ge
+\ge shoe
 \dn 鞋、鞋子
-\gn
+\gn 鞋
 \gr
 \df chaussure
-\gf
+\gf chaussure
 \xv
 \xe
 \xn
@@ -65815,6 +65963,7 @@ scalding
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx dzɑ˧ʈʂɤ#˥
 \sf <nb="B"> 
@@ -65861,7 +66010,10 @@ preserved pork at home, it
 appears as if the family is
 really destitute!
 \xn 如果家里没有猪膘，显得很穷苦！（家里得有猪膘肉，否则显得很穷苦）
-\xf ne pas avoir de cochon-entier-conservé à la maison, c'est la honte/ça fait vraiment indigent!
+\xf Ne pas avoir de
+cochon-entier-conservé à la
+maison, c'est la honte/ça fait
+vraiment indigent!
 \xv dzɑ˧ʈʂɤ˧ ǀ ʐwæ˩˥! 
 \xe It's really a shame / it's really
 something to be ashamed of!
@@ -65869,14 +66021,15 @@ something to be ashamed of!
 stigmatized situation, such as
 not having the required food
 items or pieces of clothing for
-important ceremonies) 
-\xf c'est vraiment la honte/on
+important ceremonies.) 
+\xn 真羞耻啊！
+\xf C'est vraiment la honte/on
 paraît vraiment à la rue! (Au
 sujet de situations stigmatisées
 socialement, comme de ne pas
 posséder les nourritures ou
 vêtement nécessaires aux
-principaux rituels)
+principaux rituels.)
 \rf
 \xv
 \xf
@@ -65884,7 +66037,7 @@ principaux rituels)
 \xv
 \xf
 \xc
-\dt 27/Apr/2014
+\dt 18/May/2014
 
 \lx dze˩
 \sf <nb="B"> 
@@ -65919,21 +66072,35 @@ principaux rituels)
 \pdv
 \pdf
 \de to be left over (food or drink)
-\ge
-\dn 剩下
-\gn
+\ge left_over
+\dn 剩下（饭或饮料）
+\gn 剩下
 \gr
 \df rester, être en trop, devenir un reste (nourriture, boisson); seulement observé après les verbes "manger" et "boire".
-\gf
+\gf rester
 \xv dzɯ˧-dze˥-ze˩!
-\xe
-\xn
+\xe There are some leftovers! /
+The food has not been eaten
+up!
+\xn 剩了一些饭！/
+剩了一些吃的！
 \xf il y a des restes! / on n'a pas achevé de manger (un plat)!
-\xv gɤ˩-dze˥ +ze˩ (=gɤ˩-dze˧-ze˩)!
-\xf il en reste/il y a des restes! être laissé, rester en plus
+\xv gɤ˩-dze˥ +ze˩!
+(=gɤ˩-dze˧-ze˩!)
+\xe There are some leftovers!
+\xf Il en reste / il y a des restes!
 \xv ʈʰɯ˩ dze˩-ze˥
-\xf rester en trop, ne pas être entièrement bu / on n'a pas achevé de boire (un verre…)
+\xe Some of the drink is left over!
+/ (The drink) has not been
+drunk up!
+\xn 喝剩了、没喝完
+\xf Il en rester, ne pas être
+entièrement bu / on n'a pas
+achevé de boire (un verre…)
 \xv le˧-se˩-ze˩! gɤ˩-mɤ˧-dze˩!
+\xe It's completely finished
+(=eaten up / drunk up)! There
+are no leftovers!
 \xf on a tout fini, il n'y a pas de restes! / tout a été mangé, bu..., il n'en reste plus !
 \rf
 \xv
@@ -65975,13 +66142,14 @@ principaux rituels)
 \pdl classifier
 \pdv mɤ˩
 \pdf un peu
-\de wild pepper
-\ge
+\de wild pepper, Sichuan pepper
+\ge wild_pepper
 \dn 花椒
-\gn
+\gn 花椒
 \gr
-\df xanthoxyle, poivre de Chine
-\gf
+\df xanthoxyle, poivre de Chine,
+poivre du Sichuan
+\gf xanthoxyle
 \xv
 \xe
 \xn
@@ -66027,12 +66195,12 @@ principaux rituels)
 \pdv
 \pdf
 \de sugar
-\ge
+\ge sugar
 \dn 糖
-\gn
+\gn 糖
 \gr
 \df sucre
-\gf
+\gf sucre
 \xv
 \xe
 \xn
@@ -66044,6 +66212,7 @@ principaux rituels)
 \xv
 \xf
 \xc
+\dt 18/May/2014
 
 \lx ɖʐe˧
 \sf <nb="B"> 538
@@ -66078,12 +66247,12 @@ principaux rituels)
 \pdv
 \pdf
 \de money
-\ge
+\ge money
 \dn 钱
-\gn
+\gn 钱
 \gr
 \df argent (avoir de l'argent)
-\gf
+\gf argent
 \xv
 \xe
 \xn
@@ -66130,17 +66299,19 @@ principaux rituels)
 \pdv
 \pdf
 \de to fly
-\ge
+\ge to_fly
 \dn 飞
-\gn
+\gn 飞
 \gr
 \df voler (dans les airs)
-\gf
+\gf voler
 \xv le˧-dze˩-hɯ˩-ze˩
-\xe
-\xn
-\xf (l'oiseau) est parti à tire-d'aile
+\xe (The bird) has flown away.
+\xn （鸟）飞走了。
+\xf (L'oiseau) est parti à tire-d'aile.
 \xv mv˧ʁo˧ dze˧˥
+\xe to fly in the sky
+\xn 在天空中飞
 \xf voler dans le ciel
 \rf
 \xv
@@ -66183,23 +66354,31 @@ principaux rituels)
 \pdv
 \pdf
 \de to cut (with a knife)
-\ge
+\ge to_cut
 \dn 切（用刀）
-\gn
+\gn 切
 \gr
 \df couper (avec un couteau)
-\gf
+\gf couper
 \xv le˧-dze˩
-\xe
-\xn
+\xe °accomp
+\xn °accomp
 \xf °accomp
 \xv dze˧~dze˥
+\xe °red
+\xn °red
 \xf °réd
 \xv lə˧ dze˧~dze˥
+\xe °accomp _ °red
+\xn °accomp _ °red
 \xf °accomp _ °réd
 \xv v˩tsʰɤ˧ dze˧~dze˥
+\xe to cut vegetables
+\xn 切菜
 \xf découper des légumes
 \xv nv˩dʑi˧ dze˩~dze˩
+\xe to cut tofu
+\xn 切豆腐
 \xf découper du tofu
 \rf
 \xv
@@ -66211,14 +66390,79 @@ principaux rituels)
 
 \lx dze˧bo˧
 \sf <nb="B"> 
-\sf <nb="2011"> 
-\hm 1
+\sf <nb="2011"> 3325
+\hm
 \ph
 \bw
 \et
 \ec <lang="fr"> 
 \ps
-\sn
+\sn 2
+\cf
+\cf <type="hm"> 
+\sd <lang="fr"> lieu
+\sd <lang="en"> place name
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 8e village de la
+plaine de Yongning dans la
+géographie traditionnel na, .
+
+\np
+\np <type="tone"> M
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5">
+\vf <type="tone"> 
+\va <speaker="M18">
+\va <speaker="M21">
+\va <speaker="M23">
+\pdl
+\pdv
+\pdf
+\de Zhebo, a village in the
+Yongning plain
+\ge Zhebo_village
+\dn 者波（永宁的一个村落）。村落有两个部分，gɤ˩ʁwɤ˧‘上村’与mv˩ʁwɤ˧‘下村’.
+\gn 者波村
+\gr
+\df Zhebo, un village de la plaine
+de Yongning. Il est divisé en
+deux parties, "du haut" et "du
+bas": gɤ˩ʁwɤ˧ et mv˩ʁwɤ˧.
+\gf village_de_Zhebo
+\xv ɖæ˩ʂɯ#˥, | ʈʂo˧ʂɯ#˥, | bɤ˩tɕʰɯ˩˥, | dɑ˧pʰo˥, | bɤ˧dzi˩, | dze˧bo˧
+\xe the six villages of the plain of
+Yongning, in traditional order:
+by order of increasing distance
+from the Lake
+\xn 永宁坝的六个村落，按传统顺序：从离泸沽湖最近的村子说起。
+\xf les six villages de la plaine de
+Yongning, dans l'ordre, qui
+prend comme point d'origine
+le village le plus proche du Lac
+\rf
+\xv
+\xf
+\rf
+\xv
+\xf
+\xc
+\dt 18/May/2014
+
+\lx dze˧bo˧
+\sf <nb="B"> 
+\sf <nb="2011"> 
+\hm
+\ph
+\bw
+\et
+\ec <lang="fr"> 
+\ps
+\sn 1
 \cf
 \cf <type="hm"> 
 \sd <lang="fr"> nom propre
@@ -66241,17 +66485,24 @@ principaux rituels)
 \pdl
 \pdv
 \pdf
-\de a family name from Yongning
-\ge
-\dn
-\gn
+\de a family name from Yongning;
+this name is the name of a
+village in the Yongning plain
+\ge family_name
+\dn 者波（姓）。这个家族有三个家庭。
+\gn 一个姓
 \gr
-\df nom de clan/famille étendue; compte 3 familles
-\gf
+\df Nom de clan/famille étendue
+qui compte 3 familles
+\gf nom de clan. C'est également
+le nom d'un village de la plaine
+de Yongning.
 \xv dze˧bo˧=ɻ˩
-\xe
-\xn
-\xf le clan dze˧bo˧
+\xe the /dze˧bo˧/ clan, the
+/dze˧bo˧/ family
+\xn 者波家族
+\xf le clan /dze˧bo˧/, la famille
+/dze˧bo˧/
 \rf
 \xv
 \xf
@@ -66259,57 +66510,7 @@ principaux rituels)
 \xv
 \xf
 \xc
-
-\lx dze˧bo˧
-\sf <nb="B"> 
-\sf <nb="2011"> 3325
-\hm 2
-\ph
-\bw
-\et
-\ec <lang="fr"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fr"> lieu
-\sd <lang="en"> place name
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 8e village de la plaine de Yongning dans la géographie traditionnel na, qui prend comme point d'origine le lac Lugu. Comprend deux villages: gɤ˩ʁwɤ˧ 上村 et mv˩ʁwɤ˧ 下村.
-\np
-\np <type="tone"> M
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de Zhebo
-\ge
-\dn 者波（永宁的一个村落）
-\gn
-\gr
-\df Zhebo (nom d'un village)
-\gf
-\xv ɖæ˩ʂɯ#˥, | ʈʂo˧ʂɯ#˥, | bɤ˩tɕʰɯ˩˥, | dɑ˧pʰo˥, | bɤ˧dzi˩, | dze˧bo˧
-\xe
-\xn
-\xf les six villages de la plaine de Yongning, dans l'ordre
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
+\dt 18/May/2014
 
 \lx dze˧bɤ˩
 \sf <nb="B"> 1804
@@ -77948,7 +78149,10 @@ comme les champignons en
 \sd <lang="en"> time
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> Avant
+2014: interprété comme: ce
+matin (fin de matinée; un peu
+avant le déjeuner)
 \nt <type="sem"> 
 \np phonétiquement: ɑ˧so˧
 \np <type="tone"> M
@@ -77964,13 +78168,13 @@ comme les champignons en
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn
-\gn
+\de a short time ago, a moment ago
+\ge a_moment_ago
+\dn 刚才
+\gn 刚才
 \gr
-\df ce matin (fin de matinée; un peu avant le déjeuner)
-\gf
+\df tout à l'heure, il y a un moment
+\gf tout_à_l_heure
 \xv
 \xe
 \xn
@@ -77982,6 +78186,7 @@ comme les champignons en
 \xv
 \xf
 \xc
+\dt 16/May/2014
 
 \lx ə˧-sɯ˩kv˩
 \sf <nb="B"> 2159
@@ -93408,9 +93613,9 @@ comme les champignons en
 \pdv
 \pdf
 \de classifier for places
-\ge
-\dn 地方（°量词）
-\gn
+\ge °clf.places
+\dn 量词：地方
+\gn °量词.地方
 \gr
 \df classificateur des lieux
 \gf °clf.lieux
@@ -95360,9 +95565,9 @@ comme les champignons en
 \pdv
 \pdf
 \de an ounce
-\ge
-\dn 两°量词
-\gn
+\ge °clf.ounce
+\dn 量词：两
+\gn °量词.两
 \gr
 \df unité de poids: once
 \gf °clf.onces
@@ -98819,7 +99024,7 @@ comme les champignons en
 \df classificateur des bouteilles
 \gf °clf.bouteilles
 \xv kɤ˩zo˩˥
-\xe
+\xe small bottle
 \xn 一小瓶
 \xf petite bouteille
 \rf
@@ -98870,8 +99075,8 @@ comme les champignons en
 \df classificateur des bâtons
 \gf °clf.bâtons
 \xv si˧-kɤ˧˥ ǀ ɖɯ˧-kɤ˧˥
-\xe
-\xn
+\xe a branch (of a tree)
+\xn 一根树枝
 \xf une branche (d'arbre)
 \rf
 \xv
@@ -98880,6 +99085,7 @@ comme les champignons en
 \xv
 \xf
 \xc
+\dt 19/May/2014
 
 \lx kɤ˧˥1
 \sf <nb="B"> 877
@@ -136364,6 +136570,9 @@ aujourd'hui)
 \xn
 \xf cueillir du maïs
 \xv qʰɑ˧dze˧ | le˧-qʰæ˩-ze˩
+\xe The sweetcorn has been
+harvested.
+\xn 玉米收好了。
 \xf le maïs est cueilli
 \rf
 \xv
@@ -136372,6 +136581,7 @@ aujourd'hui)
 \xv
 \xf
 \xc
+\dt 19/May/2014
 
 \lx qʰæ˧
 \sf <nb="B"> 
