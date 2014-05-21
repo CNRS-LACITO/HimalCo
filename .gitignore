@@ -22,9 +22,10 @@ doc/articles/LaTeX-gj/*.pdf
 # Toolbox files
 *.prj
 *.lng
-Text.typ
-Backup\ of\ Dictionary.txt
-Backup\ of\ Texts.txt
+dict/*/toolbox/Settings/Text.typ
+dict/*/toolbox/Settings/MDF.typ
+dict/*/toolbox/Backup\ of\ Dictionary.txt
+dict/*/toolbox/Backup\ of\ Texts.txt
 
 #################
 ## Eclipse
