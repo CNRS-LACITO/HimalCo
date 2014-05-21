@@ -1,0 +1,39 @@
+
+
+<catalog xmlns="http://crdo.risc.cnrs.fr/schemas/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/"
+    xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://crdo.risc.cnrs.fr/schemas/ http://crdo.risc.cnrs.fr/schemas/metadata.xsd">
+
+<crdo:item crdo:datestamp="2004" crdo:id="crdo-NXQ_****A_REMPLIR(titre)****_SOUND">
+<dc:title xml:lang="other">独生女埋葬一个贵的尸体</dc:title>
+<dc:subject xsi:type="olac:language" olac:code="nxq">Nda-le Naxi</dc:subject>
+<dc:language xsi:type="olac:language" olac:code="nxq"/>
+<dcterms:spatial>中国云南省丽江市金山县贵峰大来行政下村 (大来二村)</dcterms:spatial>
+<dcterms:spatial xsi:type="dcterms:Point">east=100.299; north=26.807;</dcterms:spatial>
+<dc:contributor xsi:type="olac:role" olac:code="depositor">Michaud, Alexis</dc:contributor>
+<dc:contributor xsi:type="olac:role" olac:code="researcher">Michaud, Alexis</dc:contributor>
+<dc:contributor xsi:type="olac:role" olac:code="speaker">He Wenjian 和文建</dc:contributor>
+<dc:contributor xsi:type="olac:role" olac:code="interviewer">Michaud, Alexis</dc:contributor>
+<dc:publisher>LACITO-CNRS</dc:publisher>
+<dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+<dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+<dc:format xsi:type="dcterms:IMT">audio/wav</dc:format>
+<dc:source>cassette DAT</dc:source>
+<dc:type xsi:type="dcterms:DCMIType">Sound</dc:type>
+<dcterms:created xsi:type="dcterms:W3CDTF">2004</dcterms:created> 
+<dcterms:extent>PT3M58S</dcterms:extent>
+<dcterms:conformsTo xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+<dc:identifier xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>
+<dcterms:isFormatOf xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>
+<dcterms:isRequiredBy xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:****A_REMPLIR(identifiant)****</dcterms:isRequiredBy>
+<dcterms:license xsi:type="dcterms:URI"
+            >http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+<dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+<dc:rights>Copyright (c) Michaud, Alexis</dc:rights>
+<crdo:collection>Naish languages</crdo:collection>
+</crdo:item>
+</catalog>

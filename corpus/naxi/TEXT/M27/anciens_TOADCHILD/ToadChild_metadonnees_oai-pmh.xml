@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:olac="http://www.language-archives.org/OLAC/1.1/" xmlns:oai_dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+<responseDate>2011-06-28T17:11:36Z</responseDate>
+<request identifier="oai:crdo.vjf.cnrs.fr:crdo-NBF_TOADCHILD_SOUND" metadataPrefix="olac" verb="GetRecord">http://crdo.vjf.cnrs.fr:8080/crdo_servlet/oai-pmh</request>
+<GetRecord>
+<record>
+    <header>
+        <identifier>oai:crdo.vjf.cnrs.fr:crdo-NBF_TOADCHILD_SOUND</identifier>
+        <datestamp>2011-07-13</datestamp>
+        <setSpec>Lacito</setSpec>
+    </header>
+    <metadata>
+        <olac:olac xsi:schemaLocation="http://www.language-archives.org/OLAC/1.1/ http://www.language-archives.org/OLAC/1.1/olac.xsd" xmlns:olac="http://www.language-archives.org/OLAC/1.1/">
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">Toad child</dc:title>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language" olac:code="nxq">Naish</dc:subject>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language" olac:code="nxq">Naxi</dc:subject>
+            <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language" olac:code="nxq">纳西语</dc:subject>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language" olac:code="nbf"/>
+            <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:language" olac:code="en"/>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role" olac:code="depositor">Michaud (米可),
+                                    Alexis </dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role" olac:code="researcher">Michaud (米可),
+                                    Alexis </dc:contributor>
+            <dc:contributor xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:role" olac:code="speaker">徐继荣 Xu
+                                    Jirong</dc:contributor>
+            <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">CNRS/LACITO</dc:publisher>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:discourse-type" olac:code="narrative"/>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:IMT">audio/x-wav</dc:format>
+            <dc:source xmlns:dc="http://purl.org/dc/elements/1.1/">original numérique</dc:source>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:DCMIType">Sound</dc:type>
+            <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/data/michaud/TOADCHILD.wav</dc:identifier>
+            <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Copyright (c) Michaud, Alexis et Xu Jirong 徐继荣</dc:rights>
+            <dcterms:alternative xmlns:dcterms="http://purl.org/dc/terms/" xml:lang="cn">癞蛤蟆儿子</dcterms:alternative>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xml:lang="cn">中国云南省迪庆州香格里拉县（从先中甸县。纳西语：ɳɖʐɯ˩dy˩）三坝纳西族乡（纳西语：bʋ˧ɖɛ˞˧）东坝行政村（纳西语：kɯ˧˥dy˩）次恩丁自然村
+                                    （纳西语：tsʰɯ˧˥ ɯ˧ ʈɯ˧）</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xml:lang="en">Ciending hamlet, Dongba village, Sanba
+                                    county, Zhongdian prefecture, Diqing, Yunnan,
+                                    China</dcterms:spatial>
+            <dcterms:spatial xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:Point">east=100.05;
+                                    north=27.48;</dcterms:spatial>
+            <dcterms:created xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:W3CDTF">2009-08-01</dcterms:created>
+            <dcterms:extent xmlns:dcterms="http://purl.org/dc/terms/">PT0H03M06S</dcterms:extent>
+            <dcterms:isRequiredBy xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">oai:crdo.vjf.cnrs.fr:crdo-NBF_TOADCHILD</dcterms:isRequiredBy>
+            <dcterms:license xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="dcterms:URI">http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+            <dcterms:accessRights xmlns:dcterms="http://purl.org/dc/terms/">Freely available for non-commercial
+                                    use</dcterms:accessRights>
+        </olac:olac>
+    </metadata>
+</record>
+</GetRecord>
+</OAI-PMH>
