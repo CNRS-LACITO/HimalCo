@@ -1,0 +1,38 @@
+
+
+<catalog xmlns="http://crdo.risc.cnrs.fr/schemas/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:oai="http://www.openarchives.org/OAI/2.0/" xmlns:crdo="http://crdo.risc.cnrs.fr/schemas/"
+    xmlns:olac="http://www.language-archives.org/OLAC/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://crdo.risc.cnrs.fr/schemas/ http://crdo.risc.cnrs.fr/schemas/metadata.xsd">
+
+<crdo:item crdo:datestamp="2009-08-01" crdo:id="crdo-NBF_****A_REMPLIR(titre)****_SOUND">
+<dc:title xml:lang="other">癞蛤蟆儿子</dc:title>
+<dc:subject xsi:type="olac:language" olac:code="nbf">纳西语</dc:subject>
+<dc:language xsi:type="olac:language" olac:code="nbf"/>
+<dcterms:spatial>中国云南省迪庆州香格里拉县（从先中甸县。纳西语：ɳɖʐɯ˩dy˩）三坝纳西族乡（纳西语：bʋ˧ɖɛ˞˧）东坝行政村（纳西语：kɯ˧˥dy˩）次恩丁自然村 （纳西语：tsʰɯ˧˥ ɯ˧ ʈɯ˧）(Ciending hamlet, Dongba village, Sanba county, Zhongdian prefecture, Diqing, Yunnan, China)</dcterms:spatial>
+<dcterms:spatial xsi:type="dcterms:Point">east=100.05; north=27.48;</dcterms:spatial>
+<dc:contributor xsi:type="olac:role" olac:code="depositor">Alexis Michaud 米可</dc:contributor>
+<dc:contributor xsi:type="olac:role" olac:code="researcher">Alexis Michaud 米可</dc:contributor>
+<dc:contributor xsi:type="olac:role" olac:code="speaker">徐继荣 Xu Jirong</dc:contributor>
+<dc:publisher>CNRS</dc:publisher>
+<dc:type xsi:type="olac:discourse-type" olac:code="narrative"/>
+<dc:type xsi:type="olac:linguistic-type" olac:code="primary_text"/>
+<dc:format xsi:type="dcterms:IMT">audio/wav</dc:format>
+<dc:source>original numérique</dc:source>
+<dc:type xsi:type="dcterms:DCMIType">Sound</dc:type>
+<dcterms:created xsi:type="dcterms:W3CDTF">2009-08-01</dcterms:created> 
+<dcterms:extent>PT0H03M06S</dcterms:extent>
+<dcterms:conformsTo xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:crdo-dtd_archive</dcterms:conformsTo>
+<dc:identifier xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xml</dc:identifier>
+<dcterms:isFormatOf xsi:type="dcterms:URI">http://crdo.risc.cnrs.fr/exist/crdo/****A_REMPLIR(nom_chercheur/code_langue/nom fichier)****.xhtml</dcterms:isFormatOf>
+<dcterms:isRequiredBy xsi:type="dcterms:URI"
+            >oai:crdo.vjf.cnrs.fr:****A_REMPLIR(identifiant)****</dcterms:isRequiredBy>
+<dcterms:license xsi:type="dcterms:URI"
+            >http://creativecommons.org/licenses/by-nc-nd/2.5/</dcterms:license>
+<dcterms:accessRights>Freely available for non-commercial use</dcterms:accessRights>
+<dc:rights>Copyright (c) Michaud Alexis et Xu Jirong 徐继荣</dc:rights>
+<crdo:collection>Naish languages</crdo:collection>
+</crdo:item>
+</catalog>
