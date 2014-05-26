@@ -1,4 +1,4 @@
-# txt2xml.pl 
+﻿# txt2xml.pl 
 # Inserts markup in plain-text glossed documents.
 # Created in 2011 by Alexis Michaud.
 # This is version 5 of the script, May 2013.

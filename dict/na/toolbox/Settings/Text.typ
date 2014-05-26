@@ -97,7 +97,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\alexis\Documents\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
+\File C:\Dropbox\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -111,7 +111,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\alexis\Documents\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
+\File C:\Dropbox\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -143,7 +143,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\alexis\Documents\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
+\File C:\Dropbox\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -165,7 +165,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\alexis\Documents\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
+\File C:\Dropbox\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -205,7 +205,7 @@
 \-mkrsubsetIncluded
 \+drflst 
 \+drf 
-\File C:\Users\alexis\Documents\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
+\File C:\Dropbox\GitHub\HimalCo\dict\na\toolbox\Dictionary.txt
 \mkr lx
 \-drf
 \-drflst
