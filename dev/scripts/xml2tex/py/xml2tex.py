@@ -166,6 +166,7 @@ class Xml2Tex(InOut, XmlFormat):
         parser.add_option("-i", "--input", dest="input", action="store", default=DEFAULT_INPUT, help="input XML file [default=" + str(DEFAULT_INPUT) + "]")
         parser.add_option("-o", "--output", dest="output", action="store", default=DEFAULT_OUTPUT, help="output LaTeX file [default=" + str(DEFAULT_OUTPUT) + "]")
         parser.add_option("-t", "--test", dest="test", action="store", default=DEFAULT_TEST, help="test to run [default=" + str(DEFAULT_TEST) + "]")
+        parser.add_option("-l", "--lang", dest="lang", action="store", default='', help="select English (en) or French (fr) - for na only [default='']")
         self.options = parser.parse_args()[0]
         # Tests
         if self.options.test is not None:
@@ -177,7 +178,10 @@ class Xml2Tex(InOut, XmlFormat):
                 sys.exit(-1)
         # Compute output filename
         if self.options.output is None:
-            self.options.output = "./obj/" + self.options.input[self.options.input.rfind('/') + 1:self.options.input.rfind('.') + 1] + "tex"
+            lang = ""
+            if self.options.lang is not None:
+                lang = "_" + self.options.lang
+            self.options.output = "./obj/" + self.options.input[self.options.input.rfind('/') + 1:self.options.input.rfind('.')] + lang + ".tex"
 
     def sort_lx(self):
         data = []
@@ -333,6 +337,124 @@ class Xml2Tex(InOut, XmlFormat):
             "xf"    : lambda e: "\\trans " + e.text + "\n",
             "xc"    : lambda e: "(" + e.text + ")\n"
         })
+        # na fr
+        format_fr = dict({
+            "lx"    : lambda e: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + e.text + "}} \\hspace{0.2cm} \\hypertarget{" + e.attrib['id'] + "}{}\n",
+            "sf"    : lambda e: "",
+            "wav"   : lambda e: "",
+            "wav8"  : lambda e: "",
+            "hbf"   : lambda e: "",
+            "hm"    : lambda e: "\\textsuperscript{" + e.text + "}\n",
+            "dt"    : lambda e: "",
+            "ph"    : lambda e: "",
+            "se"    : lambda e: "\n\\hspace{0.2cm} {\large \ipa{" + e.text + "}}\n",
+            "bw"    : lambda e: "",
+            "et"    : lambda e: "",
+            "ec"    : lambda e: "",
+            "ps"    : lambda e: "\\textcolor{teal}{" + e.text + "} \\hspace{0.2cm}\n", # TODO: small caps
+            "sn"    : lambda e: e.text + ")\n",
+            "sy"    : lambda e: "",
+            "an"    : lambda e: "",
+            "cf"    : lambda e: "",
+            "sd"    : lambda e: "",
+            "nt"    : lambda e: "",
+            "np"    : lambda e: "\\textit{Ton :} " + e.text + ". \n",
+            "ng"    : lambda e: "",
+            "nd"    : lambda e: "",
+            "nq"    : lambda e: "",
+            "so"    : lambda e: "",
+            "a"     : lambda e: "",
+            "va"    : lambda e: "",
+            "vf"    : lambda e: "",
+            "pdl"   : lambda e: "\\textit{CL :} ", # TODO: small caps
+            "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
+            "pdf"   : lambda e: "'" + e.text + "'\n",
+            "a2s"   : lambda e: "",
+            "comit" : lambda e: "",
+            "constr": lambda e: "",
+            "dv"    : lambda e: "",
+            "gv"    : lambda e: "",
+            "de"    : lambda e: "",
+            "ge"    : lambda e: "",
+            "dn"    : lambda e: "\zh{" + e.text + "}. \n", # TODO: replace point with Chinese point without space after
+            "gn"    : lambda e: "",
+            "dr"    : lambda e: "",
+            "gr"    : lambda e: "\\textit{Dialecte chinois local :} \zh{" + e.text + "}\n",
+            "df"    : lambda e: e.text + ". \n",
+            "gf"    : lambda e: "",
+            "uv"    : lambda e: "",
+            "ue"    : lambda e: "",
+            "un"    : lambda e: "",
+            "ev"    : lambda e: "",
+            "en"    : lambda e: "",
+            "er"    : lambda e: "",
+            "rf"    : lambda e: "",
+            "xv"    : lambda e: "\\sn \ipa{" + e.text + "}\n", # use \ex for numbered examples
+            "xe"    : lambda e: "",
+            "xn"    : lambda e: "\\trans \zh{" + e.text + "}\n",
+            "xr"    : lambda e: "",
+            "xf"    : lambda e: "\\trans " + e.text + "\n",
+            "xc"    : lambda e: ""
+        })
+        # na en
+        format_en = dict({
+            "lx"    : lambda e: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + e.text + "}} \\hspace{0.2cm} \\hypertarget{" + e.attrib['id'] + "}{}\n",
+            "sf"    : lambda e: "",
+            "wav"   : lambda e: "",
+            "wav8"  : lambda e: "",
+            "hbf"   : lambda e: "",
+            "hm"    : lambda e: "\\textsuperscript{" + e.text + "}\n",
+            "dt"    : lambda e: "",
+            "ph"    : lambda e: "",
+            "se"    : lambda e: "\n\\hspace{0.2cm} {\large \ipa{" + e.text + "}}\n",
+            "bw"    : lambda e: "",
+            "et"    : lambda e: "",
+            "ec"    : lambda e: "",
+            "ps"    : lambda e: "\\textcolor{teal}{" + e.text + "} \\hspace{0.2cm}\n", # TODO: small caps
+            "sn"    : lambda e: e.text + ")\n",
+            "sy"    : lambda e: "",
+            "an"    : lambda e: "",
+            "cf"    : lambda e: "",
+            "sd"    : lambda e: "",
+            "nt"    : lambda e: "",
+            "np"    : lambda e: "\\textit{Tone:} " + e.text + ". \n",
+            "ng"    : lambda e: "",
+            "nd"    : lambda e: "",
+            "nq"    : lambda e: "",
+            "so"    : lambda e: "",
+            "a"     : lambda e: "",
+            "va"    : lambda e: "",
+            "vf"    : lambda e: "",
+            "pdl"   : lambda e: "\\textit{CL :} ", # TODO: small caps
+            "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
+            "pdf"   : lambda e: "'" + e.text + "'\n",
+            "a2s"   : lambda e: "",
+            "comit" : lambda e: "",
+            "constr": lambda e: "",
+            "dv"    : lambda e: "",
+            "gv"    : lambda e: "",
+            "de"    : lambda e: e.text + ". \n",
+            "ge"    : lambda e: "",
+            "dn"    : lambda e: "\zh{" + e.text + "}.\n", # TODO: replace point with Chinese point without space after
+            "gn"    : lambda e: "",
+            "dr"    : lambda e: "",
+            "gr"    : lambda e: "\\textit{Local Chinese dialect:} \zh{" + e.text + "}\n",
+            "df"    : lambda e: "",
+            "gf"    : lambda e: "",
+            "uv"    : lambda e: "",
+            "ue"    : lambda e: "",
+            "un"    : lambda e: "",
+            "ev"    : lambda e: "",
+            "en"    : lambda e: "",
+            "er"    : lambda e: "",
+            "rf"    : lambda e: "",
+            "xv"    : lambda e: "\\sn \ipa{" + e.text + "}\n", # use \ex for numbered examples
+            "xe"    : lambda e: "\\trans " + e.text + "\n",
+            "xn"    : lambda e: "\\trans \zh{" + e.text + "}\n",
+            "xr"    : lambda e: "",
+            "xf"    : lambda e: "",
+            "xc"    : lambda e: ""
+        })
         # Keep reference errors
         errors = set()
         current_character = ''
@@ -401,7 +523,13 @@ class Xml2Tex(InOut, XmlFormat):
                 except KeyError:
                     pass
                 if to_print:
-                    tex_file.write(format[element.tag](element))
+                    # Check options for na: English or French
+                    if self.options.test == "na" and self.options.lang == "fr":
+                        tex_file.write(format_fr[element.tag](element))
+                    elif self.options.test == "na" and self.options.lang == "en":
+                        tex_file.write(format_en[element.tag](element))
+                    else:
+                        tex_file.write(format[element.tag](element))
                 element.text = text
                 if element.tag in tags_ref:
                     from string import digits
