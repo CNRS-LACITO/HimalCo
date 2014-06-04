@@ -358,7 +358,7 @@ class Xml2Tex(InOut, XmlFormat):
             "cf"    : lambda e: "",
             "sd"    : lambda e: "",
             "nt"    : lambda e: "",
-            "np"    : lambda e: "\\textit{Ton :} " + e.text + ". \n",
+            "np"    : lambda e: "\\textit{Ton" + u"\u202F" + ":} " + e.text + ". \n", # non-breaking space: "\xC2\xA0" or u"\u202F"
             "ng"    : lambda e: "",
             "nd"    : lambda e: "",
             "nq"    : lambda e: "",
@@ -366,7 +366,7 @@ class Xml2Tex(InOut, XmlFormat):
             "a"     : lambda e: "",
             "va"    : lambda e: "",
             "vf"    : lambda e: "",
-            "pdl"   : lambda e: "\\textit{CL :} ", # TODO: small caps
+            "pdl"   : lambda e: "\\textit{CL" + u"\u202F" + ":} ", # TODO: small caps
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
             "pdf"   : lambda e: "'" + e.text + "'\n",
             "a2s"   : lambda e: "",
@@ -379,7 +379,7 @@ class Xml2Tex(InOut, XmlFormat):
             "dn"    : lambda e: "\zh{" + e.text + "}. \n", # TODO: replace point with Chinese point without space after
             "gn"    : lambda e: "",
             "dr"    : lambda e: "",
-            "gr"    : lambda e: "\\textit{Dialecte chinois local :} \zh{" + e.text + "}\n",
+            "gr"    : lambda e: "\\textit{Dialecte chinois local" + u"\u202F" + ":} \zh{" + e.text + "}\n",
             "df"    : lambda e: e.text + ". \n",
             "gf"    : lambda e: "",
             "uv"    : lambda e: "",
@@ -425,7 +425,7 @@ class Xml2Tex(InOut, XmlFormat):
             "a"     : lambda e: "",
             "va"    : lambda e: "",
             "vf"    : lambda e: "",
-            "pdl"   : lambda e: "\\textit{CL :} ", # TODO: small caps
+            "pdl"   : lambda e: "\\textit{CL:} ", # TODO: small caps
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
             "pdf"   : lambda e: "'" + e.text + "'\n",
             "a2s"   : lambda e: "",
