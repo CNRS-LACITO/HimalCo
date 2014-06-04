@@ -22,9 +22,15 @@ python xls2xml/py/mdf2xml_tb.py -t na1
 python xls2xml/py/xls2mdf.py
 python xls2xml/py/mdf2xml_tb.py -t na
 python xml2tex/py/xml2tex.py -t na
+python xml2tex/py/xml2tex.py -t na -l fr
+python xml2tex/py/xml2tex.py -t na -l en
 cd obj/
 /usr/texbin/xelatex Dictionary_na.tex >> /dev/null
 /usr/texbin/xelatex Dictionary_na.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_na_fr.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_na_fr.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_na_en.tex >> /dev/null
+/usr/texbin/xelatex Dictionary_na_en.tex >> /dev/null
 cd ..
 
 # Japhug

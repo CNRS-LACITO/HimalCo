@@ -179,7 +179,7 @@ class Xml2Tex(InOut, XmlFormat):
         # Compute output filename
         if self.options.output is None:
             lang = ""
-            if self.options.lang is not None:
+            if self.options.lang != '':
                 lang = "_" + self.options.lang
             self.options.output = "./obj/" + self.options.input[self.options.input.rfind('/') + 1:self.options.input.rfind('.')] + lang + ".tex"
 
