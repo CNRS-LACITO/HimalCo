@@ -164,6 +164,7 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr cl
@@ -245,6 +246,7 @@
 \lng English
 \mkrOverThis et
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ee
@@ -358,6 +360,7 @@
 \lng English
 \mkrOverThis lx
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr is
@@ -778,6 +781,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr se
@@ -802,6 +806,7 @@
 \+mkr sf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr sg
@@ -818,6 +823,7 @@
 \lng English
 \mkrOverThis ps
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr so
@@ -906,6 +912,7 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ve
@@ -1256,4 +1263,5 @@
 \-expset
 \PreventNumbering
 \DisableNumbering
+\HideFields
 \-DatabaseType
