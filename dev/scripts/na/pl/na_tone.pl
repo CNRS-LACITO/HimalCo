@@ -676,10 +676,6 @@ print XOUT "Here are the phrases as they come out of the function: \n$NumCLphras
 
 print XOUT "FINAL OUTPUT: \n$text\n";
 
-my $testoutput = &UtoS('ɲi.tsi°mæ', '°L');
-open XOUT, ">natone.txt";
-print XOUT "calcul manuel: $testoutput";
-
 close (XOUT);
 	
 # for (my $m=1; $m < 100; $m++) {
