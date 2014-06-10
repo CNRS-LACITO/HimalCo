@@ -246,7 +246,6 @@
 \lng English
 \mkrOverThis et
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr ee
@@ -781,7 +780,6 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr se
@@ -1025,8 +1023,15 @@
 \mkrOverThis lx
 \-mkr
 
-\+mkr œu 
+\+mkr ï¿½uï¿½
 \lng English
+\MustHaveData
+\+fnt 
+\Name Times New Roman
+\Size 14
+\charset 00
+\rgbColor 0,0,0
+\-fnt
 \mkrOverThis lx
 \-mkr
 
@@ -1239,7 +1244,7 @@
 \mkr xv
 \mkr xv_F5
 \mkr xv_M23
-\mkr œu 
+\mkr ï¿½uï¿½
 \-mkrsubsetIncluded
 \+rtfPageSetup 
 \paperSize letter
