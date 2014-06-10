@@ -1232,7 +1232,6 @@
 \mkr xv
 \mkr xv_F5
 \mkr xv_M23
-\mkr �u�
 \-mkrsubsetIncluded
 \+rtfPageSetup 
 \paperSize letter
