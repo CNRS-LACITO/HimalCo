@@ -1,0 +1,1743 @@
+%tɕe tɯ-xpa tu-kɯ-ɬoʁ ɣɯ sɯjno nɯ ŋu tɕe, (relative)
+
+%ki	a-nmaʁ	spa	ki,
+%	他们要我不要到处传出去，今天要做我丈夫的那个人
+%159	a-sroʁ	kɤ-kɯ-ri	uɣma	nɯ	maʁ"
+%A	177	pɯ-kɯ-cha	nɯ	aʑo	ɕti-a cleft sentence
+%
+%si kɯqar ɣɤʑu tɕe si nɯ́wɣphɯt tɕe tɕe
+%tɕe lúwɣphɯt tɕe tɕe li nɯnɯ 
+%ɯsɤphɯt nɯ ɯsŋi nɯ amɤpɯpe tɕe tɕe tu-kɯ-ɕɯ-ngo ɲɯ-ŋgrɤl
+%砍树的那个日子如果是不吉利的话
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+%\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+
+\title{Relativization in Japhug Rgyalrong\footnote{
+The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{appl} applicative, \textsc{antipass} antipassive,\textsc{const} constative, \textsc{coord} coordinator, \textsc{dem} demonstrative, \textsc{dist} distal, \textsc{emph} emphatic, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{pfv} perfective, \textsc{poss} possessor. %\textsc{trop} tropative, 
+Acknowledgements will be added after editorial decision. %Wu Tong
+} }
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+\textbf{Abstract}: Japhug, like all Rgyalrong languages, presents a rich array of relativization constructions. Based on both natural oral texts and elicited material, the present work  describes all attested types of relatives in Japhug, including head-internal and prenominal relatives, as well as nominalized and non-nominalized ones. It provides a case by case account of the possible constructions for all syntactic roles including various types of adjuncts, and explains the semantic differences between each construction.
+
+
+
+\textbf{Keywords}: relativization, internally-headed relative, resumptive pronoun, nominalization, templatic morphology
+\section{Introduction}
+The present paper deals with relativizing constructions in Japhug Rgyalrong. Relativization in Rgyalrong languages has been the topic of several studies, in particular  \citet{genetti08nmlz}, \citet{jackson06guanxiju} on Tshobdun,  \citet{jacksonlin07} on Tshobdun and Situ, \citet{jacques08} on Japhug and  \citet{prins11kyomkyo} on the Kyomkyo dialect of Situ.
+
+These studies have pointed out the existence of several distinct competing constructions depending on the syntactic role of the relativized element and on whether the relative refers to a \textit{generic state of affair} or not.
+
+In this paper, we review all attested relativizing constructions in our corpus, based on approximately 60 hours of traditional stories, procedural texts and conversations. These data were completed and rechecked with elicitation in appropriate cases. 
+
+The present paper  cannot claim exhaustivity, as inevitably our corpus is not large enough to include all potentially possible constructions and elicitation was voluntarily restricted.\footnote{In unwritten languages languages like Japhug, elicitation can give a distorted view of the actual use of grammatical constructions, as speakers accept sentences that rarely, if ever, occur in normal speech.  }  It is hoped that it can constitute a basis for further research when a bigger corpus of Japhug texts will be available.
+
+This paper comprises nine sections. First, we present some general background informations on the Japhug language. Second, we list the different types of relatives attested in Japhug. Third, we provide a detailed account of relativization of core arguments (S, A and P). Fourth, we describe relativization of non-core arguments and adjuncts. This followed by several shorter sections on more specific topics: the presence of embedded subordinate clauses within the relatives, relative-like subordinate clauses with a nominal head, the use of relatives to express negative indefinite and non-restrictive relatives, which are attested in Japhug, though quite marginal. Finally, we summarize the data studied in this paper and evaluate how Japhug can contributive to the typological of relativizing construction.
+ 
+ %\citet[195]{cristofaro03subord}, \ref{sec:non.restrictive}
+ 
+
+ 
+
+
+\section{Background information}
+This section provides all necessary informations on Japhug morphosyntax that are necessary to understand the relativizing constructions. 
+
+First, we give some general informations on word order and flagging on noun phrases.
+
+Second, we present the morphosyntactic criteria used to distinguish between transitive and intransitive verbs, and discuss in some detail bitransitive and semi-transitive constructions, whose relativization patterns are studied in this paper.
+
+Third, we briefly describe the nominalizing morphology which is used in some types of relatives.
+\subsection{Word order and flagging}
+Japhug presents strict SOV word order. The only elements that can occur post-verbally are sentence-final particules, some ideophones and adverbs (such as \ipa{ntsɯ} ``always"), and right-dislocated constituents.
+
+Japhug has ergative alignment on noun phrases:  S and P are unmarked (examples \ref{ex:abs} and \ref{ex:erg}) , while the A of transitive verb receives the clitic \ipa{kɯ} (example \ref{ex:erg}). This clitic is obligatory with nouns and third person pronouns, but optional for first and second person pronouns. The \ipa{kɯ} clitic can also be used to mark instruments.
+
+\begin{exe}
+\ex \label{ex:abs}
+\gll \ipa{tɤ-tɕɯ}  	\ipa{nɯ}  	 	\ipa{jo-ɕe}   \\
+\textsc{indef.poss}-boy \textsc{dem}   \textsc{evd}-go \\
+\glt The boy went (there).
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:erg}
+\gll \ipa{tɤ-tɕɯ}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{χsɤr}  	\ipa{qaɕpa}  	\ipa{nɯ}  	\ipa{chɤ-mqlaʁ}   \\
+\textsc{indef.poss}-boy \textsc{dem} \textsc{erg} gold frog \textsc{dem} \textsc{evd}-swallow \\
+\glt The boy swallowed the golden frog. (Nyima Wodzer.1, 131)
+\end{exe}
+
+
+Japhug mainly has postpositions, though there are prefixing derivational processes like the comitative \ipa{kɤ́--} ``having ..., with ...." which could be analysable as prepositions.
+
+\subsection{Transitivity} \label{sec:trans}
+
+Japhug, unlike some closely related languages such as Qiang (\citealt{lapolla11transitivity}), has a clear morphological distinction between transitive and intransive verbs. 
+
+  Morphological transitivity is unambiguous and  marked in   different but congruent  ways, some of which have been mentioned above.
+
+First,  Japhug  is an extremely head-marking language, with person and number of both arguments marked on the verb (\citealt{jacques10inverse}). Only transitive verbs can receive the inverse prefix \ipa{wɣɯ}--, the portmanteau prefixes \ipa{kɯ}-- (2$\rightarrow$1), \ipa{ta}-- (1$\rightarrow$2), the perfective direct 3$\rightarrow$3'  \ipa{a}-- prefix,  the 1/\textsc{2sg}$\rightarrow$3 --\ipa{t} suffix (the latter only occurs in open-syllable stem verbs).
+
+
+Second, 
+  some transitive verbs present a special stem in direct \textsc{123sg}$\rightarrow$3 forms. The regular pattern is that verbs whose stem is in --\ipa{o}, --\ipa{u}, --\ipa{a} and --\ipa{ɯ} change to --\ipa{ɤm}, --\ipa{e}, --\ipa{e} and --\ipa{i} respectively. This stem alternation does not occur with intransitive verbs.
+
+Third, argument nominalisation of transitive   and intransitive  verbs present tripartite alignment, as will be described in more detail in section  \ref{sec:nmlz}.
+
+\subsubsection{Bitransitive verbs} \label{sec:bitr}
+ In Japhug two distinct types of alignment are attested for bitransitive verbs. There are indirective verbs, which encode the theme (the object given) in the same way as the P of a monotransitive verb and secundative verbs, which encode the recipient in the same way as P (the terminology follows \citealt{malchukov10ditransitive}).
+
+Indirective verbs such as \ipa{kho} ``to pass over", \ipa{thu} ``to ask", \ipa{rŋo} ``to lend" or \ipa{ti} ``say" mark their recipient with the dative \ipa{--ɕki} or \ipa{--phe},\footnote{The preference for one or the other dative marker depend on the speaker.} as in example \ref{ex:tathu}. The dative can optionally receive the locative marker \ipa{zɯ} as in \ref{ex:GWtAnWthunW}.
+ \begin{exe}
+   \ex   \label{ex:tathu}
+ \gll \ipa{tɤpɤtso}  	\ipa{ra}  	\ipa{kɯ}  	\ipa{nɯ-sloχpɯn}  	\ipa{ɯ-ɕki}  	\ipa{to-thu-nɯ}  \\
+child \textsc{pl} \textsc{erg} \textsc{3pl.poss}-teacher \textsc{3sg-dat} \textsc{evd}-ask-\textsc{pl} \\
+\glt The children asked their teacher. (Looking at the snow, 11)
+   \end{exe}  
+
+ \begin{exe}
+   \ex   \label{ex:GWtAnWthunW}
+ \gll
+\ipa{nɯ}  	\ipa{ɯ-ɕki}  	\ipa{zɯ}  	\ipa{ɣɯ-tɤ-nɯ-thu-nɯ}  \\
+\textsc{dem } \textsc{3sg:dat} \textsc{loc} \textsc{cisloc-imp-auto}-ask-pl \\
+\glt Come to ask her (about this). (The prince, 66)
+   \end{exe}  
+
+If a  SAP occurs as the patient of an indirective verb, it cannot be interpreted as the recipient. Thus, sentence \ref{ex:tAGwthua} cannot be translated as ``he asked me".
+
+ \begin{exe}
+   \ex   \label{ex:tAGwthua}
+ \gll
+\ipa{tɤ́-wɣ-thu-a} \\
+\textsc{pfv-inv}-ask-\textsc{1sg}\\
+\glt He asked about me / he asked for me in marriage (elicited)   
+      \end{exe}  
+      
+   Additionally, for the verb \ipa{kho} ``to pass over" it is possible to mark the recipient with the genitive instead of the dative as in \ref{ex:aGWthWtWkhAm}.
+ \begin{exe}
+   \ex   \label{ex:aGWthWtWkhAm}
+ \gll
+\ipa{aʑɯɣ}  	\ipa{a-ɣɯ-thɯ-tɯ-khɤm}  	\ipa{ra}  \\
+\textsc{1sg:gen} \textsc{irr-cisloc-pfv}-2-give[III] \textsc{n.pst}:need \\
+\glt You will have to give it to me. (The three sisters, 137)
+   \end{exe}  
+
+
+In secundative verbs such as \ipa{mbi} ``to give", \ipa{jtshi} ``to give to drink" or \ipa{ɕɯrŋo} ``borrow",\footnote{Apart from \ipa{mbi} ``to give", all secundative verbs in Japhug are causative derivations of transitive verbs.} the person and number of the recipient is reflected in verb agreement (as in \ref{ex:YWkWmbia}), and the recipient when overt does not receive dative case.
+
+
+ \begin{exe}
+   \ex   \label{ex:YWkWmbia}
+ \gll 
+\ipa{nɯ-me}  	\ipa{stu}  	\ipa{kɯ-xtɕi}  	\ipa{ɲɯ-kɯ-mbi-a}  	\ipa{ra}  \\
+\textsc{2pl.poss}-daughter most \textsc{nmlz}:S-small \textsc{ipfv}-2$\rightarrow$1-give-\textsc{1sg} \textsc{n.pst}:need \\
+\glt You have to give me your youngest daughter.  (The frog, 46)
+   \end{exe}  
+
+   
+   
+\subsubsection{Semi-transitive verbs} \label{sec:semi.tr}
+  Japhug has a special sub-category of intransitive verbs which can optionally take adjunct noun phrases referring to either animate or inanimate entities without any case marking.   These  \textit{semi-transitive} verbs   include the possessive verb \ipa{aro} ``to possess", the experiencer verbs \ipa{rga} ``to like", \ipa{sɤŋo} ``to listen" and \ipa{ru} ``to look at" and verbs such as \ipa{rmi} ``to be called ...", \ipa{rʑaʁ} ``to spend ... nights". The possessor or the experiencer is treated as the S, while the possessee/stimulus is encoded as adjunct. \ipa{ru} ``to look" is a special case, as the stimulus can be optionally marked with the dative \ipa{--ɕki}. It is interesting to see that semantically the semi-transitive have some overlap with the typologically  comparable \textsc{vaio} (intransitive animate verbs with object) found in Algonquian languages (cf  \citealt[242]{valentine01grammar}), which also include verbs of perception and verbs of possession.
+
+Semi-transitive verbs never agree with their adjuncts, regardless of any person or animacy hierarchy, as illustrated by example \ref{ex:aroa1}.
+
+
+ \begin{exe}
+   \ex   \label{ex:aroa1}
+ \gll 
+\ipa{aʑo}  	\ipa{tɤ-rɟit}  	\ipa{χsɯm}  	\ipa{aro-a}   \\
+I \textsc{indef.poss}-child three \textsc{n.pst:}have-\textsc{1sg} \\
+ \glt   I have three children. (elicited)
+   \end{exe} 
+
+ 
+In example \ref{ex:aroa1}, agreement with the plural possessee would lead one to expect a form *\ipa{aro-a-nɯ} if the verb were transitive.
+
+The S of semi-transitive verbs is relativized with \ipa{kɯ}-- as an intransitive verb (cf  \ref{sec:a.rel} ), while their unmarked adjuncts are relativized with \ipa{kɤ--} like the P of a transitive verb (cf section \ref{sec:other}), further confirming their intermediate status between transitive and intransitive.
+
+\subsection{Nominalization} \label{sec:nmlz}
+
+Japhug Rgyalrong, like other Rgyalrong languages (see for instance \citealt{jackson03caodeng} on the Tshobdun language), has a very rich system of nominalization prefixes. Four different prefixes are productive:   S/A nominalization \ipa{kɯ--},   P nominalization \ipa{kɤ--},   oblique nominalization \ipa{sɤ--}  and   action nominalization \ipa{tɯ--}.  
+
+ 
+The nominalized forms derived with the three first prefixes \ipa{kɯ--}, \ipa{kɤ}-- and \ipa{sɤ}-- are fully productive and can be combined with TAM and negation prefixes.  The \ipa{kɯ--} S/A nominalization prefix appears with both intransitive and transitive verbs, but in the latter case a possessive prefix  coreferent with the patient is added (see \ref{ex:kill}). This nominalized form can be used as one of the tests to determine whether a particular verb is transitive or intransitive. Thus, while \citet{jackson03caodeng} is right to argue that the nominalization patterns of Rgyalrong languages present an accusative $S=A\neq P$ pattern, it is equally possible to analyse it as a case of tripartite alignment $S \neq  A \neq P$.
+
+ \begin{exe}
+\ex
+\gll \ipa{kɯ-si}    \\
+  \textsc{nmlz}:S/A-die \\
+ \glt  `The dead one'
+ 
+\ex \label{ex:kill}
+\gll \ipa{ɯ-kɯ-sat}    \\
+  \textsc{3sg}-\textsc{nmlz}:S/A-kill \\
+ \glt  `The one who kills him.'
+ 
+
+\ex \label{ex:kill2}
+\gll \ipa{kɤ-sat}    \\
+   \textsc{nmlz}:P-kill \\
+ \glt  `The one that is killed.'
+ \end{exe}
+ 
+  The patient nominalizer \ipa{kɤ--} can appear with an optional possessive prefix coreferent to the agent as in \ref{ex:kill3}.
+  \begin{exe}
+\ex \label{ex:kill3}
+\gll \ipa{a-kɤ-sat}    \\
+   \textsc{1sg-nmlz}:P-kill \\
+ \glt  `The one that I killed.'
+ \end{exe}
+
+The \ipa{sɤ}--prefix (and its allomorphs \ipa{sɤz}-- and \ipa{z}--) is used to relativize adjuncts (in particular recipient of indirective verbs, instruments, place and time).  It receives a possessive prefix  which can be coreferent with S, A or P.
+
+   \begin{exe}
+\ex \label{ex:come}
+\gll \ipa{ɯ-sɤ-ɣi}    \\
+   \textsc{3sg-nmlz}:S-come \\
+ \glt  `The place/moment where/when it comes.'
+ \end{exe}
+ 
+ All four types of nominalized verbs can be used to form relative clauses in Japhug, and their exact use will be treated in sections \ref{sec:core} and \ref{sec:oblique}.
+ 
+ \subsubsection{The template of nominalized forms}
+Nominalized forms cannot receive person marking, inverse \ipa{wɣ}--, direct \ipa{a}--, irrealis \ipa{a}-- or evidential directional prefixes, but are compatible with associated motion prefixes \ipa{ɣɯ}-- and \ipa{ɕɯ}--, negative prefixes and perfective and imperfective directional prefixes.\footnote{The template of finite verb forms is presented in \citet{jacques13harmonization}.} When a nominalized form has a negative, TAM or associated motion prefix, the possessive prefix of A-nominalization and oblique nominalization is optional (examples \ref{ex:makWndza} to \ref{ex:thongthar}).
+ 
+
+
+    \begin{exe}
+\ex \label{ex:makWndza}
+\gll
+[\ipa{ɯ-zda}  	\ipa{ra}  	\ipa{chɯ-kɯ-ndza}]  	\ipa{ci,}  	\ipa{ɕa}  	\ipa{ma}  	\ipa{mɤ-kɯ-ndza}  	\ipa{ɲɯ-ŋu.}  	 \\
+\textsc{3sg.poss}-companion  \textsc{pl} \textsc{ipfv-nmlz}:S/A-eat \textsc{indef} meat apart.from \textsc{neg-nmlz}:S/A-eat \textsc{const}-be \\
+\glt (The dhole) is (an animal) that eats other animals, that only eats meat. (Dhole, 2-3)
+ \end{exe}
+     \begin{exe}
+\ex \label{ex:kill4}
+\gll
+\ipa{qɤjtʂha}  	\ipa{nɯ}  	[\ipa{pɯ-kɤ-sat}]  	\ipa{kɯnɤ}  	\ipa{kɤ-mto}  	\ipa{mɯ-pɯ-rɲo-t-a.}  \\
+vulture \textsc{top} \textsc{pfv-nmlz:P}-kill  also \textsc{inf}-see \textsc{neg-pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt I have never seen a vulture, even a dead (killed) one. (Vulture 54)
+ \end{exe}
+  
+  
+ \begin{exe}
+\ex \label{ex:thongthar}
+\gll [\ipa{qandʑi}   	\ipa{chɯ-sɤ-ɣnda}]   	\ipa{nɯ}   	\ipa{thoŋthɤr}   	  	\ipa{ɲɯ-rmi}    \\
+bullet \textsc{ipf}-\textsc{nmlz:oblique}-ram   \textsc{dem} ramrod \textsc{const}-call \\
+ \glt What is used to ram a bullet (into the muzzle of the gun) is called a ramrod. (Arquebus)
+ \end{exe}
+
+It is possible to combine several prefixes before the nominalization prefix; the limit is three prefixes, as in example \ref{ex:WGWjAkWqru}.
+ \begin{exe}
+\ex \label{ex:WGWjAkWqru}
+\gll
+  	\ipa{ɯ-ɣɯ-jɤ-kɯ-qru}  	\ipa{tɤ-tɕɯ}  	   \\
+  \textsc{3sg-cisloc-pfv-nmlz:}S/A-meet \textsc{indef.poss}-boy   \\
+\glt The boy  who had come to look for her (The three sisters 231)
+ \end{exe}
+ 
+The ordering of the inflexional prefixes in  Japhug is shown in Table \ref{tab:template.nmlz}; derivational prefixes are not represented here - they are all conflated within   ``enlarged stem".
+
+
+
+\begin{table}[H]
+\caption{The template of nominalized verbal forms in Japhug} \centering \label{tab:template.nmlz}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllll}
+\toprule
+-5 & -4&-3 &-2&-1\\
+possessive & negative&associated   & TAM & nominalization &enlarged  \\
+prefix & prefix &motion prefix  &directional&&stem\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+The non-past verb stem (Stem III) never appears in nominalized forms. On the other hand, the perfective stem (Stem II) is obligatory in perfective nominalized verbs as in \ref{ex:jAkWGe} (compare with the imperfective nominalization in example \ref{ex:jukWGi}).
+
+ \begin{exe}
+\ex \label{ex:jAkWGe}
+\gll
+  	\ipa{jɤ-kɯ-ɣe}	   \\
+  \textsc{pfv-nmlz:}S/A-come[II]   \\
+\glt The one who came.
+\ex \label{ex:jukWGi}
+\gll
+  	\ipa{ju-kɯ-ɣi}	   \\
+  \textsc{ipfv-nmlz:}S/A-come   \\
+\glt The one who is coming.
+ \end{exe}
+ 
+The oblique nominalizer is only compatible with imperfective TAM prefixes, not with perfective ones. 
+ 
+There are some constraints on  the prefixal slots. Possessive and TAM prefixes are compatible for oblique nominalization and for A as in \ref{ex:WtusAGi} and \ref{ex:WtukWrACi}.
+ \begin{exe}
+\ex \label{ex:WtusAGi}
+\gll
+\ipa{tɯ-ci}  	\ipa{ɯ-tu-sɤ-ɣi}  \\
+\textsc{indef.poss}-water \textsc{3sg-ipfv-nmlz}:come \\
+\glt  The place where water comes up (Alcohol jug, 18)
+ \end{exe}
+ \begin{exe}
+\ex \label{ex:WtukWrACi}
+\gll 
+\ipa{ɕombri}  	\ipa{ɯ-tu-kɯ-rɤɕi}  	\ipa{ra}  	\ipa{kɯ}  \\
+chain \textsc{3sg-ipfv-nmlz:A}-pull \textsc{pl} \textsc{erg} \\
+\glt Those who were pulling the chain (The fox, 80)
+ \end{exe}
+
+However, with relativization of P, TAM prefixes and personal prefixes are not compatible with each other. It is thus possible to say \ipa{pɯ-kɤ-mto} \textsc{pfv-nmlz:P}-\textit{see} ``which was seen" or \ipa{a-kɤ-mto} \textsc{1sg-nmlz:P}-\textit{see} ``which I see" but not to combine the two in a form such as *\ipa{a-pɯ-kɤ-mto}. No such constraint is found with negative and associated motion prefixes. 
+
+
+This issue is discussed in more detail in section \ref{sec:nmlz.vs.n.nmlz}.
+ 
+ \subsubsection{Nominalization and generic marking}
+The \ipa{kɯ}-- nominalization prefix is homophonous with the generic S/P prefix (see \citealt{jacques12demotion}), and in some cases we find ambiguous sentences where can be interpreted either way.
+ 
+  \begin{exe}
+\ex \label{ex:nWkWGe}
+\gll
+[\ipa{ɯ-jaʁ}  	\ipa{tɕhi}  	\ipa{nɯ-kɯ-ɣe}]  	\ipa{ʑo}  	\ipa{tu-ndze}  \\
+ \textsc{3sg.poss}-hand what \textsc{pfv}-X-come[II]  \textsc{emph} \textsc{ipfv}-eat[III] \\
+ \glt (The dhole)_i eats whatever comes to it_i. (dhole 12)
+ \end{exe}
+ 
+The prefix glossed X in \ref{ex:nWkWGe} can be either the S-nominalization prefix, in which case the clause would be analysed as a relative; an alternative possibility is to see it here the generic S/P marker, which would imply a slightly different, but semantically equivalent  translation: ``Whatever_i has come to it_j, (the dhole)_j eats it_i."
+
+These ambiguous sentences are perhaps the pivot forms from which the generic prefix was created from the nominalization prefix by reanalysis, but we leave these historical issues to  future investigations.
+
+\section{Categories}
+
+Relative clauses in Japhug can be classified in two ways, depending on the place of the head noun and on the form of the subordinate verb. In this section, we first present briefly the general types of relative clauses in Japhug depending on these two major criteria. 
+
+Then, we discuss several additional features that are attested in relative clauses: totalitative reduplication, resumptive pronouns, generic head nouns and subordinators.
+
+This section being a general overview, we do not provide here a detailed account of the different types of relatives. A more comprehensive description of their distribution and uses is presented in sections \ref{sec:core}  and \ref{sec:oblique}, where relatives are classified by relativized element.
+
+
+\subsection{Place of the head noun}
+On the basis of the place of the head noun, three main types of relative clauses can be distinguished: internally-headed, prenominal and headless. 
+
+
+\textbf{Headless relatives} are by far the most common type; the head noun can be elided in all types of relative, independently of the nature of the relativized element, as illustrated by examples \ref{ex:pWkAsat2} (P argument) and \ref{ex:pjWsAlAt} (place adjunct).
+
+  \begin{exe}
+\ex \label{ex:pWkAsat2}
+\gll [\ipa{pɯ-kɤ-sat}]  	\ipa{nɯ}  	\ipa{kɤ-mto}  	\ipa{nɯ}  	\ipa{pɯ-rɲo-t-a.}  \\
+\textsc{pfv-nmlz:P}-kill \textsc{top} \textsc{inf}-see \textsc{top} \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt I have already seen dead ones (of owls). (Owls, 20)
+  \end{exe}
+\begin{exe}
+\ex \label{ex:pjWsAlAt}
+\gll
+[\ipa{mɯzi}  	\ipa{pjɯ-sɤ-lɤt}]  	\ipa{nɯ}  	\ipa{ɕɤmɯɣdɯ}  	\ipa{ɯ-rna}  	\ipa{tu-ti-nɯ}  	\ipa{ŋu} \\ 
+gunpowder \textsc{ipfv-nmlz:oblique}-throw \textsc{top} gun \textsc{3sg.poss}-ear \textsc{ipfv}-say-\textsc{pl} \textsc{n.pst}:be \\
+\glt The (place) where gunpowder is put is called the ``ear" of the gun. (Guns, 89)
+  \end{exe}
+It is unclear whether headless relatives represent a subtype by themselves; they can be analysed as being either prenominal or internally-headed relative with elided head noun; in sections \ref{sec:core} and \ref{sec:oblique}, we focus on in internally-headed and prenominal relatives, as it is possible in all cases to delete the head noun.
+
+
+\textbf{Internally-headed relatives} are the next most common type. They are available for  core argument and possessor relativization, but not for time or place adjuncts. The head noun is located \textit{in situ} in the relative and receives the same case markers as in a main clause (see in particular the use of the ergative in section \ref{sec:a.rel}).
+
+In the case of short relatives comprising only the head noun and the verb, internally-headed relatives can appear to be postnominal relatives. However, examples such as \ref{ex:thWkABzu} show that some constituents of the relative clause appear before the relativized element, precluding an analysis as a postnominal relative.
+
+\begin{exe}
+\ex \label{ex:thWkABzu}
+\gll
+[\ipa{tɯ-ndʐi}  	\ipa{kɯ}  	\textbf{\ipa{tɯ-ŋga}}  	\ipa{thɯ-kɤ-βzu}]  	\ipa{ŋu}  \\
+\textsc{indef.poss}-skin \textsc{erg} \textsc{indef.poss}-clothes \textsc{pfv-nmlz:P}-make \textsc{n.pst}:be \\
+\glt It is a kind of clothes that is made of skin. (mboʁ, 43)
+  \end{exe}
+%ki tɯ-ŋga ki tɯ-ndʐi kɯ chɯ́-wɣ-sɯβzu ŋu
+
+  
+  
+\textbf{Prenominal relatives} are rarer, but examples are attested both for core argument and adjunct relativization, and both nominalized and non-nominalized relatives are found in prenominal position. In such relatives, gapping of the relativized element is the only available strategy (as is the case in most languages with prenominal relatives, see \citealt[587-8]{wu11prenominal}); resumptive pronominal elements are  attested only in the case of head-internal relatives (see section \ref{sec:resumptive}).
+
+Unlike Situ Rgyalrong but like Tshobdun (see   \citealt[6]{jacksonlin07}), head nouns which are not intrinsically possessed do not receive possessive prefixes in Japhug, as shown in example \ref{ex:pjWkAm} (otherwise \ipa{ɯ-rɯdaʁ} \textsc{3sg.poss}-\textit{animal} would be expected).
+
+\begin{exe}
+\ex \label{ex:pjWkAm}
+\gll
+[\ipa{ɯʑo}  	\ipa{sɤz}  	\ipa{kɯ-wxti}]  	\ipa{rɯdaʁ}  	\ipa{ra}  	\ipa{kɯnɤ}  	\ipa{pjɯ-kɤm}  	\ipa{ɕti}  \\
+it \textsc{comp} \textsc{nmlz}:S-big animal \textsc{pl} also \textsc{ipfv}-prevail \textsc{n.pst:be}:\textsc{assert} \\
+\glt It also prevails over animals that are bigger than itself. (The lion, 23)
+  \end{exe}
+  However, in Japhug generic head nouns are obligatorily possessed (see \ref{sec:generic.noun}).
+  
+Prenominal relatives are especially common with generic possessed nouns such as \ipa{--spa} ``material" (used to relativize core arguments), \ipa{--stu} ``place" or \ipa{--raŋ} ``time, moment"; this subtype is discussed in section \ref{sec:generic.noun}.
+
+
+\subsection{Nominalized and non-nominalized} \label{sec:nmlz.vs.n.nmlz}
+
+The second classificatory criterion of relative clauses in Japhug is the form of the subordinate verb, namely whether it is in a finite, or nominalized form.
+
+
+Relative clauses whose verb is nominalized with the \ipa{kɯ}--, \ipa{kɤ}-- or \ipa{sɤ}-- prefixes (see section \ref{sec:nmlz}) are available for the relativization of all arguments and adjuncts in the clause. This type of relative can be head-internal or prenominal, and restrictive as well as non-restrictive (on this latter type see section \ref{sec:non.restrictive}). Examples of each subtype are provided in sections \ref{sec:core} and \ref{sec:oblique}.
+
+Nominalized relatives allow three distinct TAM forms: unmarked (without TAM directional prefixes), imperfective and perfective. There are no  TAM marking constraints between the relative and the main clause; any TAM form in the main clause is compatible with any marking in the relative. For instance, in \ref{ex:tAkAxtCAr} the verb of the relative clause has perfective marking, while the finite verb of the main clause is in the imperfective. 
+
+%\ref{sec:non.nmlz.s}
+%
+%\ref{sec:p.non.nmlz}
+
+%	Line 5: aʑo grɯβgrɯβ ɯ-ftsa nɯ tɤ-kɯ-qawɤr ma nɯ ma χploʁploʁ kɯ-pa mɯ-pɯ-mto-t-a. (016)
+\begin{exe}
+\ex \label{ex:tAkAxtCAr}
+\gll
+	[\textbf{\ipa{qɤj}}  	\textbf{\ipa{ɯ-ru}}  	\ipa{nɯnɯ}  	\ipa{tɤ-kɤ-xtɕɤr}]  	\ipa{nɯ}  	\ipa{tu-fkur-nɯ}  	\ipa{tɕe}  \\
+wheat	\textsc{3sg.poss}-stalk \textsc{top} \textsc{pfv-nmlz:P}-tie.up \textsc{top} \textsc{ipfv}-carry.on.the.back-\textsc{pl} \textsc{coord} \\
+	\glt They would carry on their backs wheat stalks that have been tied up.	(Crossoptilon, 144)
+	  \end{exe} 
+
+
+\citet{jacksonlin07} have proposed to distinguish between two types of nominalized relative clauses, \textit{nominalized non-finite clauses} (NNFC) and \textit{nominalized finite clauses} (NFC) in Tshobdun and Situ. The distinction between the two types of relative clauses is most obvious in Situ; in Tshobdun, it is attested only for core argument relativization.
+
+The first type includes clauses with a nominalized verb without TAM prefix but with obligatory person prefix (corresponding to Japhug \ipa{a-kɤ-nɯ-rga} \textsc{1sg-nmlz:P-appl}-\textit{like} ``that I like"), and the second clauses with nominalized verb without person prefix but with TAM marker (corresponding to \ipa{pɯ-kɤ-mto} \textsc{pfv-nmlz:}P-\textit{see} ``that I saw" in Japhug). 
+
+In section \ref{sec:nmlz}, we saw that  verbs nominalized with the S/A \ipa{kɯ}-- could take both TAM and person prefixes, so that a distinction between NNFC and NFC appears to be inapplicable to Japhug in this case. However, verb forms nominalized with \ipa{kɤ}-- (relativization of P) present a  co-occurrence constraint: these forms can either have TAM prefixes or personal prefixes, but not both. Thus, a contrast between two subtypes of nominalized relatives is attested for P-relativization only; it is discussed in more detail in \ref{sec:p.rel}.
+
+
+Unlike nominalized relatives in \ipa{kɯ}-- and \ipa{kɤ}-- which can be either headless, prenominal or head-internal, those in \ipa{sɤ}-- cannot be head-internal regardless of the syntactic nature of the relativized element (whether dative argument or adjunct). Relatives with a verb nominalized in \ipa{sɤ}-- tend to be short; they can contain a nominal phrase (as in  \ref{ex:thongthar}) or adverbs modifying the verb as in \ref{ex:WsAdAn}, but more complex relatives of this type are not attested.
+ 
+\begin{exe}
+   \ex \label{ex:WsAdAn}
+ \gll  
+  [\ipa{stu}   	\ipa{ɯ-sɤ-dɤn}]   	\ipa{nɯ}   	\ipa{stɤmku}   	\ipa{nɯ} \ipa{ra}   	\ipa{ŋu-nɯ}   \\
+most \textsc{3sg-nmlz:oblique}-numerous \textsc{top} grassland \textsc{top} \textsc{pl} \textsc{n.pst}:be-\textsc{pl} \\
+\glt The places where it is most common are the grasslands. (Eugeron breviscapus, 23)
+    \end{exe}
+    
+
+	  
+	Relative clauses with non-nominalized verbs are not available for the relativization of all types of adjuncts and arguments; they are only attested for the relativization of P (section \ref{sec:p.non.nmlz}) and for prenominal relativization of time and place adjuncts (sections \ref{sec:generic.noun}, \ref{sec:rel:time} and \ref{sec:rel:place}). With non-nominalized relative clauses, as with nominalized ones, no constraints on the TAM marking of the relative has been observed.
+	
+	
+	Non-nominalized relative clauses differ from independent clauses with respect to person coreference in some case. Some possessed nouns have coreference constraints: for instance, with the noun \ipa{--pɤro} ``present", the possessive prefix always refer to the person giving the present, never to the recipient as in \ref{ex:YWtambi}. 
+			\begin{exe}
+\ex \label{ex:YWtambi}
+\gll
+	\ipa{a-pɤro}  	\ipa{ɲɯ-ta-mbi}  	\ipa{ŋu}  \\
+	\textsc{indef.poss}-present \textsc{ipfv}-1$\rightarrow$2-give \textsc{n.pst}:be \\
+	\glt I give it you as a present. (Elicited)
+ 	  \end{exe} 
+	 
+	 In relative clauses, including nominalized and non-nominalized ones, it is possible with nouns of this type to use either the possessive prefix corresponding to the giver (as in example \ref{ex:apAro}) or the indefinite possessor \ipa{tɯ}--/\ipa{tɤ}-- (\ref{ex:tApAro}).
+	 
+
+ 		\begin{exe}
+\ex \label{ex:apAro}
+\gll
+[\ipa{a-pɤro}  	\ipa{nɯ-mbi-t-a}]  	\ipa{nɯ}  	\ipa{a-rɟɯt}  	\ipa{ŋu}  \\
+	\textsc{1sg.poss}-present \textsc{pfv}-give-\textsc{pst:tr-1sg} 	  \textsc{top} \textsc{1sg.poss}-child \textsc{n.pst}:be \\
+\glt The one to whom I gave a present is my child. (Elicited)
+ 	  \end{exe} 
+
+		\begin{exe}
+\ex \label{ex:tApAro}
+\gll
+	[\ipa{tɤ-pɤro}  	\ipa{nɯ-mbi-t-a}]  	\ipa{tɤ-rɟɯt}  	\ipa{nɯ}  	\ipa{a-tɕɯ}  	\ipa{ŋu}   \\
+	\textsc{indef.poss}-present \textsc{pfv}-give-\textsc{pst:tr-1sg} 	\textsc{indef.poss}-child \textsc{top} \textsc{1sg.poss}-son \textsc{n.pst}:be \\
+\glt The child to whom I gave a present is my son. (Elicited)
+ 	  \end{exe} 
+
+\subsection{Totalitative reduplication} \label{sec:redp}
+Totalitative reduplication is not an independent relativizing construction, but an additional feature which occurs on the verb of some relatives. The first syllable of the verb, regardless whether it is a prefix or the first syllable of the stem undergoes partial reduplication whereby the rhyme of the replicated syllable is replaced by the schwa-like --\ipa{ɯ}. A detailed description of the phonological properties of partial reduplication in Japhug   can be found in \citet{jacques04these, jacques07redupl}.
+
+
+Reduplication of the first syllable of   verb forms has several distinct morphosyntactic functions in Japhug. It appears on  finite verb forms in the protasis in conditional clauses, and is also used to express increasing degree of a state or systematic repetition of an action (\citealt{jacques07redupl}). A fourth function, totalitative reduplication, is attested in relative clauses exclusively. This reduplication can be applied to either nominalized or finite verb forms, and expresses that the action applies to the entire group referred to by the relativized referent (corresponding to the meaning of ``all" in English), as in example \ref{ex:pWpaGWt}.
+
+  \begin{exe}
+\ex \label{ex:pWpaGWt}
+\gll
+\ipa{tɕe}  	[\ipa{nɯ} \ipa{ra}  	\textbf{\ipa{tɤrɤkusna}}  	\ipa{nɯ}  	\ipa{pɯ-pa-ɣɯt}]  	\ipa{nɯ}  	\ipa{lo-ji-ndʑi}  \\
+\textsc{coord} \textsc{dem} \textsc{pl} good.crops \textsc{top} \textsc{red-pfv:3$\rightarrow$3:down}-bring \textsc{top} \textsc{evd}-plant-\textsc{du} \\
+\glt They^{du} planted all the crops that they had brought (from heaven). (flood3.111)
+\end{exe}
+ 
+Totalitative reduplication is attested with core argument relatives, but it can be used with finite verb forms only in the relativization of P arguments; for A and S arguments, only nominalized verbs can undergo totalitative reduplication. 
+
+The totalitative meaning of reduplication is never found in main clauses or in any other type of subordinated clause.
+
+
+\subsection{Resumptive pronominal elements} \label{sec:resumptive}
+
+We do find   resumptive possessive prefixes   in some types of head-internal relatives in Japhug.\footnote{We follow here \citet[211]{creissels06sgit2}'s definition of resumptive pronouns, rather than \citet{comrie81relative}'s: all pronominal morphemes within the relative clause coreferent with the relativized element are considered to be resumptive, regardless whether they would appear in the corresponding independent clause or not. }
+
+Resumptive possessive prefixes appear in the relativization of the possessor, as the \ipa{ɯ}-- third person possessive prefix in \ipa{ɯ-phaʁ} ``its side" in  \ref{ex:pWkWmbWt}. Additional examples are provided in section \ref{sec:possessor}.
+
+  \begin{exe}
+\ex \label{ex:pWkWmbWt}
+\gll
+\ipa{khaɴqra}  	\ipa{ci,}  	[\ipa{\textbf{ɯ}-phaʁ}  	\ipa{ntsi}  	\ipa{pɯ-kɯ-mbɯt,}]  	[\ipa{\textbf{ɯ}-phaʁ}  	\ipa{ntsi}  	\ipa{kɯ-pe}]  	\ipa{ci}  	\ipa{pjɤ-tu}  	\ipa{qhe,}  \\
+house.in.ruin \textsc{indef} \textsc{3sg.poss}-side one.of.a.half \textsc{pfv-nmlz}:S-collapse \textsc{3sg.poss}-side one.of.a.half \textsc{nmlz}:S-good \textsc{indef} \textsc{evd.ipfv}-exist  \textsc{coord} \\
+\glt There was a house in ruin, one of whose sides had collapsed, and one of whose sides was in good shape. (The raven, 43)
+\end{exe}
+
+
+\subsection{Correlative} \label{sec:correlative}
+We also find correlative sentences with interrogative pronouns, which belong to the \textit{maximalizing} sub-type of relative clauses (\citealt{grosu98maximalizing}).
+ This type of construction is available for any argument (S in \ref{ex:pWkWBRa}, P in \ref{ex:tChiZo}) or adjunct (recipient in \ref{ex:CthWkAta}, place in \ref{ex:jAkAri}).
+
+  \begin{exe}
+\ex \label{ex:pWkWBRa}
+\gll
+\ipa{tɕe}  	[\ipa{stɤβtshɤt}  	\textbf{\ipa{ɕu}}  	\ipa{pɯ-kɯ-βʁa}]  	\ipa{ɣɯ}  	\ipa{nɯ},  	\ipa{ɯ-jaʁ}  	\ipa{kham-a}  	\ipa{ŋu}  \\
+\textsc{coord}  competition who \textsc{pfv-nmlz:}S-prevail \textsc{gen} \textsc{dem} \textsc{3sg.poss}-hand \textsc{n.pst}:give[III]-\textsc{1sg} \textsc{n.pst}:be \\
+\glt I will give her (in marriage) to whoever prevails in the contests.  (The prince, 88)
+\end{exe}
+
+
+
+
+\begin{exe}
+\ex \label{ex:CthWkAta}
+\gll
+[\textbf{\ipa{ɕu}}  	\ipa{ɣɯ}  	\ipa{ɕ-thɯ-kɤ-ta}]  	\ipa{nɯ}  	\ipa{ɣɯ}  	\ipa{nɯ,}  	\ipa{tɕe}  	\ipa{ɯ-ɕki}  	\ipa{ɕɯ-kɯ-mɤrʑaβ}  	\ipa{kɯ-ra}  	\ipa{pjɤ-ɕti}  	\ipa{tɕe,}  \\
+who \textsc{gen} \textsc{cisloc-pfv-nmlz:P}-put \textsc{top} \textsc{gen} \textsc{top} \textsc{coord}
+\textsc{3sg}-\textsc{dat} \textsc{cisloc-genr:S/P}-marry \textsc{genr:S/P-n.pst}:need \textsc{pst.ipfv}-be:\textsc{assert} \textsc{coord} \\
+\glt The one for whom one had put (the offering), one had to to marry him him. (The three sisters, 147)
+\end{exe} 
+
+
+\begin{exe}
+\ex \label{ex:jAkAri}
+\gll
+[\textbf{\ipa{ŋotɕu}}  	\ipa{jɤ-kɯ-ɤri}] 	\ipa{ɯ-stu}  	\ipa{nɯ}  	\ipa{tɕu}  	\ipa{kɯ-mɤrʑaβ}  	\ipa{kɯ-ɕe}  	\ipa{ra}  	\ipa{tu-ti-nɯ}  	\ipa{ŋgrɤl.} \\
+where \textsc{pfv-nmlz:S}-go[II] \textsc{3sg.poss}-place \textsc{top} \textsc{loc} \textsc{nmlz:S}-marry \textsc{genr:S/P}-go \textsc{n.pst}:need \textsc{ipfv}-say-\textsc{pl} \textsc{n.pst}:be.usually.the.case \\
+\glt They say that one has to go to marry wherever (the ladybug) has gone. (Ladybug, 38)
+\end{exe} 
+
+Unlike most languages with correlatives such as Hindi (\citealt{dayal96quantification}), in Japhug there is no requirement for the presence of a demonstrative  in the main clause  associated with the correlative, as illustrated by example  \ref{ex:tChiZo}.
+ 
+
+\begin{exe}
+\ex \label{ex:tChiZo}
+\gll
+\ipa{tɕe}  	\ipa{nɯ}  	[\textbf{\ipa{tɕhi}}  	\ipa{nɯ-kɤ-mbi}]  	\ipa{ʑo}  	\ipa{tu-ndze}  	\ipa{ɲɯ-ɕti}  \\
+\textsc{coord} \textsc{dem} what \textsc{pfv-nmlz:P}-give \textsc{emph} \textsc{ipfv}-eat[III] \textsc{const}-be:\textsc{emph} \\
+\glt It eats whatever one has given it. (Cat, 71)
+\end{exe}
+
+
+\subsection{The topic marker \ipa{nɯ}}
+Japhug has a topic/definite marker \ipa{nɯ} homophonous (and probably grammaticalized from) the distal demonstrative \ipa{nɯ}.
+
+It is often used at the end of relative clauses, as in example \ref{ex:pWkABRum}.
+
+     \begin{exe}
+   \ex \label{ex:pWkABRum}
+ \gll
+[\ipa{tɤlɤtshaʁ}  	\ipa{pɯ-kɤ-βʁum}]  	\ipa{nɯ}  	\ipa{ɲɯ-fse}  \\
+milk.sieve \textsc{pfv-nmlz:P}-turn.upside.down \textsc{top} \textsc{const}-be.like \\
+\glt It looks like a milk sieve turned upside down. (Black chanterelle, 60)
+\end{exe}
+
+The reduplicated form of the distal demonstrative/topicalizer \ipa{nɯnɯ} ``that one" also appears in this position as in   \ref{ex:pjWkWCqhlAt}.
+
+     \begin{exe}
+   \ex \label{ex:pjWkWCqhlAt}
+ \gll
+\ipa{jmɤɣni}   	\ipa{wuma}   	\ipa{ʑo}   	\ipa{fse}   	\ipa{ri,}   	\ipa{ɯ-χcɤl}   	\ipa{pjɯ-kɯ-ɕqhlɤt}   	\ipa{nɯnɯ}   	\ipa{rnaʁ}   	\ipa{tsa}    \\
+russula very \textsc{emph} \textsc{n.pst}:be.like but \textsc{3sg.poss}-middle \textsc{ipfv-nmlz}:S-sink \textsc{top} \textsc{n.pst}:deep a.little \\
+\glt The spicy Russula looks very much like the  red Russula, but the sunken (place) in the middle (of its cap) is a bit deeper. (sijmɤɣ, 45)
+\end{exe}
+
+The topicalizer is however not obligatory, even with non-nominalized relative clauses, as in \ref{ex:tanwndota}.
+
+     \begin{exe}
+   \ex \label{ex:tanwndota}
+ \gll [\ipa{ɯʑo}	\ipa{kɯ}  	\ipa{ta-nɯrdoʁ}]  	\ipa{tɤ-nɯ-ndo-t-a}  	\ipa{me}  \\
+he \textsc{erg} \textsc{pfv:3$\rightarrow$3'}-pick.up  \textsc{pfv-auto}-take-\textsc{pst:tr-1sg} \textsc{n.pst}:not.exist \\
+\glt I did not take (the fruits) that he picked up. (Sparrow and Mouse 55)
+\end{exe}
+
+It could superficially appear to be analyzable as a subordinator. However, in prenominal relatives such as \ref{ex:akAsWz}, \ipa{nɯ} is located \textit{after} the head noun. If it were a subordinator, one would expect it to occur between the head noun and the relative.
+
+\begin{exe}
+   \ex \label{ex:akAsWz}
+ \gll
+\ipa{tɕe}  	[\ipa{aʑo}  	\ipa{a-kɤ-sɯz}]  	\ipa{ɕku}  	\ipa{nɯ}  	\ipa{nɯ} \ipa{ra}  	\ipa{ŋu}  \\
+\textsc{coord} I \textsc{1sg-nmlz:P}-know onion \textsc{top} \textsc{dem} \textsc{pl} \textsc{n.pst}:be \\
+\glt These are the onions that I know about.  (Onions, 167)
+\end{exe}
+The reversed order is never attested.
+
+\subsection{Generic noun} \label{sec:generic.noun}
+Some prenominal relatives have a semantically bleached generic head noun which acts as a quasi-subordinator: \ipa{ɯ-spa} for arguments, \ipa{ɯ-raŋ} for time adjuncts and \ipa{ɯ-stu} or \ipa{ɯ-sta} for place adjuncts. These generic nouns are not compatible with head-internal relatives. These nouns differ from regular head nouns in that they are obligatorily possessed by a third person possessive prefix \ipa{ɯ}--.
+
+
+The possessed noun \ipa{--spa} ``material" can be used as a generic head noun for prenominal relatives for any core argument (\ref{ex:wkwctsxat} for A, \ref{ex:katawspa} for P).
+
+     \begin{exe}
+   \ex \label{ex:katawspa}
+ \gll  [\ipa{qambrɯ}   	\ipa{ra}   	\ipa{nɯ-taʁ}   	\ipa{kɤ-ta}]   	\ipa{ɯ-spa}   	\ipa{kɤ-ti}   	\ipa{ɲɯ-ŋu}   \\
+male.yak \textsc{pl} \textsc{pl}-on \textsc{nmlz:P}-put \textsc{3sg.poss}-material \textsc{nmlz:P}-say \textsc{const}-be \\
+\glt (The yak saddle) is a something that one puts on  yaks. (Saddles, 5)
+\end{exe}
+
+
+     \begin{exe}
+   \ex \label{ex:wkwctsxat}
+ \gll \ipa{tɕe}   	[\ipa{ɯ-kɯ-ɕtʂat}]   	\ipa{ɯ-spa}   	\ipa{ŋu}        \\
+\textsc{coord} \textsc{3sg-nmlz:A}-spare  \textsc{3sg.poss}-material \textsc{n.pst}-be\\
+\glt  It is something that is used to control (the flow of grain into the grind). (The mill)
+\end{exe}
+
+
+%aʑo	staʁ-lu-pa	tɕe	kɤ-ɣɤrɤt	ɯ-spa	ɕti-a	netɕi
+%Nyima vodzer 116
+
+Example \ref{ex:kuwGsAsWG} illustrates the use of the generic noun \ipa{ɯ-stu} for relativizing place adjuncts.
+
+\begin{exe}
+\ex \label{ex:kuwGsAsWG}
+\gll
+[\ipa{ɯʑo}  	\ipa{kɯ-rɤʑi}]  	\ipa{ɯ-stu} \ipa{ʑo} 	\ipa{nɯ}  	\ipa{kú-wɣ-sɯ-ɤsɯɣ}  \\
+it \textsc{nmlz:S}-remain \textsc{3sg.poss}-place \textsc{emph} \textsc{top}  \textsc{ipfv-inv-caus}-tight \\
+\glt One squeezes the places where it is (inserted). (zrɯ, 11)
+  \end{exe}
+
+Additional examples of adjunct relativization of this type are provided in sections \ref{sec:rel:time} and \ref{sec:rel:place}.
+
+\section{Core arguments} \label{sec:core}
+In this section, we study the relativization of S, A and P arguments, which can in particular be relativized by the \ipa{kɯ}-- and \ipa{kɤ}-- nominalized prefixes (see \ref{sec:nmlz}).
+
+Two other syntactic roles can be relativized with these nominalization prefixes: the possessor and theme of secundative verbs. The relativization of these latter two is however studied in subsections \ref{sec:possessor} and \ref{sec:second} in the next section.
+
+\subsection{S} \label{sec:s.rel}
+The only argument of an intransitive verb, whether stative or dynamic, is generally relativized by means of a verb nominalized with the prefix \ipa{kɯ}--. Examples of relativization of S without nominalization are   not found in our corpus, though we discuss in section \ref{sec:non.nmlz.s} examples of complement clauses that could be interpreted as relatives.
+
+The head noun, when overt, normally occurs   before the nominalized verb (examples \ref{ex:tchi} and \ref{ex:kAkAmdzW}). 
+
+ 
+ \begin{exe}
+   \ex   \label{ex:tchi}
+ \gll  	\ipa{ɯ-ɣmbɤj}  	\ipa{zɯ}  	[\textbf{\ipa{tɕhi}}  	\ipa{tu-kɯ-ndɯ}]  	\ipa{ci}  	\ipa{pɯ-tu}  	\ipa{ɲɯ-ŋu}  		\\
+\textsc{3sg.poss}-side \textsc{loc} ladder \textsc{ipfv-nmlz:S}-be.built  \textsc{indef} \textsc{pst.ipfv}-exist \textsc{const}-be  \\
+ \glt    There was a ladder which was leaning on the side (of the tower). (Slopdpon, 55)
+   \end{exe} 
+
+\begin{exe}
+\ex \label{ex:kAkAmdzW}
+\gll
+[\textbf{\ipa{tɯrme}}  	\ipa{kɤ-kɯ-ɤmdzɯ}]  	\ipa{ɣɯ}  	\ipa{tɯ-ku}  	\ipa{ɯ-fsu}  	\ipa{jamar}  	\ipa{ra}  \\
+man \textsc{pfv-nmlz:S}-sit \textsc{gen} \textsc{indef.poss}-head \textsc{3sg.poss}-as about \textsc{n.pst}:need \\
+\glt It has to be  about as tall as the head of a man who sat down. (posti, 4)
+  \end{exe}
+  
+ Adjectives in Japhug are a sub-class of stative verbs;  noun phrases containing a head noun and an attributive adjective should be analyzed as relative clauses with relativized S-argument; degree adverbs appear either between the noun and the verb (as in \ref{ex:mazw}) or, less commonly, before the entire  relative (as in \ref{ex:camtsho}).
+
+
+ \begin{exe}
+   \ex   \label{ex:mazw}
+ \gll 
+\ipa{nɯnɯ}  	\ipa{li}  	[\textbf{\ipa{smɤn}}  	\ipa{mɤʑɯ}  	\ipa{kɯ-pe}]  	\ipa{ɲɯ-ŋu.}  \\
+\textsc{dem} again medicine not.only \textsc{nmlz:S}-good \textsc{const}-be \\
+ \glt    This is an even better medicine. (Bear, 85)
+   \end{exe} 
+ 
+  \begin{exe}
+   \ex   \label{ex:camtsho}
+ \gll  \ipa{cɤmtsho}  	\ipa{ndɤre}  	\ipa{wuma}  	\ipa{ʑo}  	[\textbf{\ipa{smɤn}}  	\ipa{kɯ-pe}] 	\ipa{ŋu}  \\
+ musc \textsc{coord} very \textsc{emph}  medicine \textsc{nmlz:S}-good \textsc{n.pst}:be  \\
+ \glt    Musc is a very good medicine. (Musc, 59)
+   \end{exe}  
+
+Various modifiers can be inserted between the head noun and the verb as in example \ref{ex:kWNgWrtsAG}.
+\begin{exe}
+   \ex  \label{ex:kWNgWrtsAG}
+\gll
+[\textbf{\ipa{tɤjpa}} 	\ipa{kɯŋgɯ-rtsɤɣ} 	\ipa{kɯ-jaʁ}] 	\ipa{ko-sɯ-lɤt} 	\\
+snow nine-stairs \textsc{nmlz:S}-thick \textsc{evd-caus}-throw \\
+\glt He caused a snowfall that was nine flight of stairs thick. (Gesar, 149)
+   \end{exe} 
+
+Ideophones, whose normal position in the sentence is to the  left of the verb, are commonly right-dislocated in Japhug, and this also occurs with relative clauses with relativized S, as in example \ref{ex:phoRphoR}.
+
+  \begin{exe}
+   \ex   \label{ex:phoRphoR}
+ \gll [\ipa{pɣɤtɕɯ}  	\ipa{kɤ-kɯ-nɯ-rɤloʁ}]  	\ipa{phoʁphoʁ}  	\ipa{nɯ}  	\ipa{ɣɯ}  	\ipa{ɯ-loʁ}  	\ipa{nɯ-ŋgɯ}  	\ipa{nɯ}  	\ipa{ra,}  	\ipa{ɯʑo}  	\ipa{ɕ-tu-ndze}  \\
+ bird \textsc{pfv-nmlz:S}-auto-make.a.nest \textsc{ideo:stative:}well \textsc{dem} \textsc{gen} \textsc{3sg.poss}-nest \textsc{3pl.poss}-inside C \textsc{pl} he \textsc{cisloc-ipfv}-eat[III] \\
+ \glt  He goes into the nests of birds that have made nice nests, and eats them. (The buzzard, 3)
+   \end{exe}  
+
+ 
+
+
+
+ 
+  Since the general word order in Rgyalrong language is verb-final, it is possible to consider the relative clauses seen above as internally-headed relatives, rather than simply post-nominal relatives; we will see that this analysis better accounts for the relativization of A and O arguments, and thus allows for a more uniform treatment of all cases.
+
+Other adjuncts can be extracted from the relative. Thus, the group \ipa{ki jamar} ``like this", while it normally appears within the relative (as in \ref{ex:kWzri}), can also be extraposited to its right (example \ref{ex:ki.jamar1}).
+
+\begin{exe}
+   \ex  \label{ex:kWzri}
+   \gll
+\ipa{ɯ-ndzɣi}   	\ipa{rcanɯ}   	[\ipa{ki}   	\ipa{jamar}   	\ipa{kɯ-rɲɟi}]   	\ipa{ɲɯ-ɕti}    \\
+\textsc{3sg.poss}-tusk \textsc{top}   \textsc{dem.prox} about \textsc{nmlz:S}-long \textsc{const}-be:\textsc{assert} \\
+\glt Its tusks are long like this. (Elephant, 17)
+\end{exe}
+
+While the literal meaning of \ref{ex:ki.jamar1} would appear to be ``there are thick ones that are like this", the context makes it clear that it must be translated as indicated below.
+
+\begin{exe}
+   \ex  \label{ex:ki.jamar1}
+   \gll
+[\ipa{kɯ-jpɯ-jpum}]   	\ipa{ki}   	\ipa{jamar}   	\ipa{ɣɤʑu.}   \\
+   \textsc{nmlz:S-redp}-thick \textsc{dem.prox} about exist:\textsc{sensory} \\
+\glt There are (yak horns) that are thick like this. (Wild yak, 25)
+\end{exe}
+
+
+  
+In the case of semi-transitive verbs (see section \ref{sec:trans}), both the S and the unmarked adjunct can be relativized with \ipa{kɯ}-- (the latter is discussed in section \ref{sec:other}). We find relative clauses with overt S (example \ref{ex:kWrga}) or overt adjunct (as \ref{ex:paR} )  in pre-verbal position, but no example with both overt nouns.
+
+ \begin{exe}
+   \ex   \label{ex:kWrga}
+ \gll  [\textbf{\ipa{tɯrme}}  	\ipa{kɯ-rga,}]  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{kɤ-ndza}  	\ipa{kɯ-rga}  	\ipa{ɣɤʑu.} \\
+person \textsc{nmlz:S}-like very \textsc{emph} \textsc{inf}-eat  \textsc{nmlz:S}-like exist \\
+ \glt  There are person who like it, who like to eat it. (βlamajmɤɣ, 60)
+   \end{exe} 
+
+ \begin{exe}
+   \ex   \label{ex:paR}  
+\gll  [\ipa{paʁ}  	\ipa{mɤ-kɯ-ɤro}]  	\ipa{maka}  	\ipa{me}  	\\
+pig \textsc{neg-nmlz:P}-own  at.all \textsc{n.pst}:not.exist\\
+ \glt  There is not anybody who does not have a pig. (Pigs, 3)
+   \end{exe} 
+   
+The adjunct of verbs of this type is relativized with the prefix \ipa{kɤ--} as the P of a transitive verb (cf section \ref{sec:other}).
+
+When S is relativized, totalitative reduplication alone is not sufficient to nominalize the verb (see section \ref{sec:redp}), and can only be applied to verbs already nominalized with the \ipa{kɯ}-- prefix, as in \ref{ex:kakwnandza}.
+
+\begin{exe}
+   \ex  \label{ex:kakwnandza}
+\gll <quanxian>  	\ipa{tɕe}  	\ipa{kɯ-kɤ-kɯ-nɤndza}  	\ipa{nɯ}  	\ipa{ɲɤ-ɣɤme.}      	\\
+the.whole.county \textsc{coord}  \textsc{redp-pfv-nmlz:S}-have.leprosy \textsc{top} \textsc{evd}-destroy \\
+ \glt  (This doctor) cured (suppressed) all lepers in the whole county. (leprosy 72)
+   \end{exe} 
+   
+\subsubsection{Prenominal S-relativization}
+
+S-relativization with post-verbal head nouns are very rare in our corpus. One case when this happens is to   allow stacking of relatives, which is impossible with head-internal clauses. Thus, one can find examples with a head-internal relative preceded by a prenominal one as in \ref{ex:mANidpon}.
+
+\begin{exe}
+   \ex  \label{ex:mANidpon}
+\gll \ipa{mɤŋi}  	\ipa{kɤ-kɯ-ɣe}  	\ipa{χpɯn}  	\ipa{thɯ-kɯ-rgɤz}  	\ipa{ci}  	\ipa{pjɤ-tu}  	\ipa{tɕe,}    	\\
+Mangi \textsc{pfv:east-nmlz:S}-come[II] monk \textsc{pfv-nmlz:S}-old \textsc{indef} \textsc{evd.ipfv}-exist   \textsc{coord} \\
+ \glt  There was an old monk who had come from Mangi. (The prank, 19)
+   \end{exe} 
+
+
+Most   examples of prenominal relatives allow an interpretation either as false start or as a non-restrictive relative (see \ref{sec:non.restrictive}), as can be illustrated with examples \ref{ex:pri1} and \ref{ex:pri2}.
+%Line 62: ɯ-xso kukɯtɕu pɕoʁ, ku-kɯ-nɯ-rɤʑi qɤjdo ci tu.
+
+\begin{exe}
+   \ex  \label{ex:pri1}
+\gll [\textbf{\ipa{ndzɤpri}}  	\ipa{nɯ}  	\ipa{koʁmɯz}  	\ipa{ɯ-ɣɲɟɯ}  	\ipa{ɯ-ŋgɯ}  	\ipa{tu-kɯ-nɯ-ɬoʁ}]  	\ipa{ci}  	\ipa{pjɤ-mto-ndʑi.}  \\
+\textbf{bear} \textsc{dem} just.before \textsc{3sg.poss}-hole \textsc{3sg.poss}-inside \textsc{ipfv:up-nmlz:S-auto-}come.out \textsc{indef} \textsc{evd}-see-\textsc{du}\\
+   \ex  \label{ex:pri2}
+\gll  [\ipa{nɯ}  	\ipa{koʁmɯz}  	\ipa{ɯ-ɣɲɟɯ}  	\ipa{ɯ-ŋgɯ}  	\ipa{tu-kɯ-nɯ-ɬoʁ}]  	\textbf{\ipa{ndzɤpri} } 	\ipa{ci}  	\ipa{pjɤmtondʑi.}   \\
+ \textsc{dem} just.before \textsc{3sg.poss}-hole \textsc{3sg.poss}-inside \textsc{ipfv:up-nmlz:S-auto-}come.out \textbf{bear} \textsc{indef} \textsc{evd}-see-\textsc{du}\\
+\glt They saw  a bear which was just coming out of his lair. (semi-elicitation based on the Aesop story, the two friends and the bear)
+\end{exe}
+Example \ref{ex:pri1} is a head-internal relative clause following the regular pattern described in this section, while \ref{ex:pri2} is a pre-nominal relative clause. There is a  pause between the relative and the noun \ipa{ndzɤpri} ``bear" in sentence \ref{ex:pri2}, while there is none in \ref{ex:pri1}. This prosodic clue, which is perceptible in all cases of prenominal S-relativization in our corpus, is a strong evidence to interpret these clauses as non-restrictive;  this issue is discussed in \ref{sec:non.restrictive}.
+
+However, in semi-elicited examples we also find clear cases of pre-nominal relatives which only allow an interpretation as a restrictive relative, as example \ref{ex:takwnwRrWrRa} from the same story as \ref{ex:pri1}.
+
+\begin{exe}
+   \ex  \label{ex:takwnwRrWrRa}
+\gll [\ipa{si}  	\ipa{ɯ-taʁ}  	\ipa{tɤ-kɯ-nɯrʁɯrʁa}]  	\textbf{\ipa{tɯrme}}  	\ipa{nɯ}  	\ipa{pjɤ-nɯ-ɬoʁ}  \\
+tree \textsc{3sg.poss}-on \textsc{pfv-nmlz:S}-climb person \textsc{top} \textsc{evd:down-auto}-come.out \\
+\glt The man who had climbed the tree came down.
+\end{exe}
+
+Thus, there no absolute correlation between prenominal S-relativization  and non-restrictive interpretation of a relative. 
+
+It appears that prenominal S-relativization is more common when relative clauses contain additional adjuncts, in particular when one relativizes the comparee of comparative constructions (whose syntactic function is S), as is described in section \ref{sec:comparative}.
+
+
+
+\subsubsection{Relative or complement clause?} \label{sec:non.nmlz.s}
+We do find in our corpus examples like \ref{ex:spjaNkw}  that could allow an interpretation as non-nominalized relativization of S argument.
+
+%Analysis:
+%ri tu-mbri nɯ sɤmtshɤm.	\ipa{sɯŋgɯ}  	\ipa{ku-rɤʑi}  	\ipa{ɕti}  	\ipa{tɤɣa}  	\ipa{kɤ-mto}  	\ipa{me.}  	\ipa{ri}  	\ipa{tu-mbri}  	\ipa{nɯ}  	\ipa{sɤmtshɤm.}  
+%scuz 113
+
+\begin{exe}
+   \ex  \label{ex:spjaNkw}
+\gll [\ipa{nɯ}  	\ipa{tu-ɣɤwu}]  	\ipa{nɯ}  	\ipa{ɯ-mtshɤm}  	\ipa{pɯ-rɲo-t-a}  \\
+\textsc{dem} \textsc{ipfv}-cry \textsc{top} \textsc{3sg-bare.inf}:hear \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt (Wolf, 22)
+\end{exe}
+
+Subordinate clauses such as the one in \ref{ex:spjaNkw} could in principle be analyzed as  relatives, in which case the translation would be ``I have heard a howling one (wolf) / I have heard (a wolf) that was howling". 
+
+However, it is preferable to analyze them as complement clauses, an analysis which entails a different translation (``I have heard it howling"). The  main arguments in favour of the complement clause analysis is that all such examples occur with verbs of perception like ``hear", ``see", which allow both noun phrases or complement clauses as their P. There is no example of such a subordinate clause in a context non-ambiguously requiring an analysis as a relative. 
+
+\subsection{A} \label{sec:a.rel}
+Like relativisation of the S, relativisation of the A requires a nominalized verb. Two main constructions are found,  prenominal relatives (as in \ref{ex:cnat}, \ref{ex:wkwtshi}  and \ref{ex:wnwkwnwBde}) or internally-headed relatives (as in \ref{ex:WkWnWmbrApW}).
+
+When the A argument is relativized, the nominalized verb has two prefixes: the same marker \ipa{kɯ}-- as in S-relativisation, and a possessive prefix coreferent with the patient, as in examples \ref{ex:wkwtshi} and \ref{ex:wnwkwnwBde}.
+
+
+\begin{exe}
+   \ex  \label{ex:wkwtshi}
+\gll [\ipa{tɯ-nɯ}  	\ipa{ɯ-kɯ-tshi}]  	\ipa{tɤpɤtso}  	\ipa{ɣɯ}  	\ipa{ɯ-kɯ-mŋɤm}  	\ipa{ɲɯ-ŋu}  \\
+\textsc{indef.poss}-breast \textsc{3sg-nmlz:A}-drink child \textsc{gen} \textsc{3sg.poss-nmlz:S}-be.painful \textsc{const}-be \\
+\glt It is a disease of children who drink milk from the breast. (Children diarrhea, 3)
+\end{exe}
+
+\begin{exe}
+   \ex  \label{ex:wnwkwnwBde}
+\gll  
+ [\ipa{iɕqha}  	\ipa{tɯrpa}  	\ipa{ɯ-nɯ-kɯ-nɯ-βde}]  	\ipa{tɯrme}  	\ipa{nɯ}  	\ipa{ra}  	\ipa{tɯrpa}  	\ipa{ɯ-kɯ-ɕar}  	\ipa{jo-ɣi-nɯ}  \\
+ the.aforementioned axe \textsc{3sg-pfv-nmlz:A-auto}-throw people \textsc{top} \textsc{pl} axe \textsc{3sg-nmlz:A}-search \textsc{evd}-come-\textsc{pl} \\
+\glt The people who had lost the axe came to look for it. (semi-elicitation based on the Aesop story, the travelers and the axe)
+\end{exe}
+
+However, when the nominalized verb has additional suffixes, such as TAM or negation markers, the possessive prefix coreferent with the P is only optionally, and is generally elided as in \ref{ex:cnat}.
+
+\begin{exe}
+   \ex  \label{ex:cnat}
+\gll [\ipa{ɕnat}  	\ipa{tu-kɯ-rɤɕi}]  	\ipa{ndʑu}  	\ipa{nɯnɯ,}   	\ipa{ɕnat-ndʑu}  	\ipa{rmi,}  \\
+weft \textsc{ipfv-nmlz:A}-pull stick \textsc{top}  weft-stick \textsc{n.pst}:be.called\\
+\glt The stick that  pulls the weft is called the ``weft-stick". (colored belts 64)
+\end{exe}
+ 
+
+All three examples \ref{ex:cnat},  \ref{ex:wkwtshi} and \ref{ex:wnwkwnwBde} show that prenominal relatives with relativized A can be restrictive relatives.
+
+Examples such as \ref{ex:WkWnWmbrApW} with overt A marked with the ergative are extremely rare in our corpus; prenominal relatives are by far the preferred strategy for relativization of A.
+\begin{exe}
+   \ex  \label{ex:WkWnWmbrApW}
+\gll [\ipa{tɤpɤtso}  	\ipa{ci}  	\ipa{kɯ}  	<yangma> 	\ipa{ɯ-kɯ-nɯmbrɤpɯ}]  	\ipa{ci}  	\ipa{jɤ-ɣe}  \\
+boy \textsc{indef} \textsc{erg} bicycle \textsc{3sg-nmlz:A}-ride \textsc{indef} \textsc{pfv}-come[II] \\
+\glt A boy who was riding a bicycle arrived. (Pear story, Chenzhen, 5)
+\end{exe}
+
+
+
+
+Totalitative reduplication alone cannot be used in the case of A-relativization, and it must be applied to a verb form already nominalized with the prefix \ipa{kɯ}--, as in example \ref{ex:qartshaz}.
+
+\begin{exe}
+   \ex \label{ex:qartshaz}
+   \gll \ipa{qartshaz}  	\ipa{mu}  	\ipa{nɯra,}  	[\ipa{pɯ-pɯ-kɯ-mtshɤm}]  	\ipa{nɯ}  	\ipa{ɯ-rkɯ}  	\ipa{nɯtɕu}  	\ipa{tu-owɯwum-nɯ}  	\ipa{ŋu}  \\
+   deer female \textsc{dem:pl} \textsc{redp-pfv-nmlz:A}-hear \textsc{dem} \textsc{3sg.poss}-side there \textsc{ipfv}-gather-\textsc{pl} \textsc{n.pst}:be \\
+\glt The female deer, all those who hear it (the male's call) gather around it. (Deer, 133)
+\end{exe}
+
+
+ %XXXXXXXXXXXXXXXXXXXX
+ % revérifier, peut-être un exemple de A-rel avec non-nmlz
+% \ipa{smɤnba}   	\ipa{kɯ}   	\ipa{tɤ́-wɣ-nɯsman-a}   	\ipa{nɯ}   	\ipa{lɤβzaŋ}   	\ipa{rmi} 
+% tshoŋwa kɯ pɯ́wɣnɯβlua nɯ jo-phɣo.
+ 
+ 
+% ndzɤpri ɯmto pɯkɯzmɤku tɯrme nɯ sɯku zɯ tonɯrʁɯrʁa
+%Aesop adaptation, the two friends and the bear
+% si ɯtaʁ tɤkɯnɯrʁɯrʁa tɯrme nɯ pjɤnɯɬoʁ
+% 
+
+\subsection{P} \label{sec:p.rel}
+Relativization of the P argument allows for a greater variety of constructions than that of A or S. Unlike A and S, P arguments can be relativized with both nominalized and non-nominalized constructions. Moreover, both internally-headed and prenominal relatives are found, so that no less than four main constructions are attested. 
+
+All of these constructions have in common the fact that when the agent is overt, it must be marked with the ergative \ipa{kɯ} exactly as in a main clause.
+
+
+\subsubsection{Relativization of P with nominalization}
+The P argument can be relativized by nominalizing the verb with the prefix \ipa{kɤ}--. Such nominalized relatives are most commonly internally-headed, as illustrated by examples \ref{ex:ragdwt}, \ref{ex:nandzwt}, \ref{ex:sazgwr} and \ref{ex:qaR}. 
+
+
+     \begin{exe}
+   \ex \label{ex:ragdwt}
+\gll 
+[\ipa{nɯŋa}  	\textbf{\ipa{ɯ-ndʐi}}  	\ipa{thɯ-kɤ-rɤɣdɯt,}]  	\ipa{thɯ-kɤ-tʂɯβ}  	\ipa{nɯ}  	\ipa{ɯ-ŋgɯ}  	\ipa{nɯ}  	\ipa{tɕu}  	\ipa{ko-ɕe}  \\
+cow \textsc{3sg.poss-}skin \textsc{pfv-nmlz:P}-skin \textsc{pfv-nmlz:P}-sew \textsc{dem} \textsc{3sg.poss-}inside \textsc{dem} \textsc{loc} \textsc{evd:east}-go \\
+  \glt  He went into the cow hide that had been  skinned and sewed.    (The flood2, 32)
+   \end{exe}  
+
+     \begin{exe}
+   \ex \label{ex:nandzwt}
+\gll   [\textbf{\ipa{tɯrme}}  	\ipa{mɤ-kɤ-nɯfse}]  	\ipa{jɤ-ɣe}  	\ipa{tɕe}  	\ipa{tu-nɯ-ɤndzɯt}\\
+person \textsc{neg-nmzl:O}-know \textsc{pfv}-come[II] \textsc{coord} \textsc{ipfv-appl}-bark\\
+  \glt  When an unknown person  comes, it barks at him.  (The dogs, 9)
+   \end{exe}  
+
+     \begin{exe}
+   \ex \label{ex:sazgwr}
+\gll [\textbf{\ipa{chɤmdɤru}}  	\ipa{tɤ-kɤ-sɯ-ɤzgɯr}]  	\ipa{nɯ}  	\ipa{ɲɤ-sɯ-ɤstu-nɯ}  	\ipa{qhe,}  	\ipa{tɕe}  	\ipa{to-mna}  \\
+drinking.straw \textsc{pfv-nmlz:P-caus}-bent \textsc{top} \textsc{evd-caus}-straight-\textsc{pl} coord coord \textsc{evd}-recover \\
+\glt He put straight the straw that  had been bent, and (her son) recovered. (Gesar 315)
+   \end{exe}  
+   
+
+As mentioned in section \ref{sec:nmlz.vs.n.nmlz}, there are two types of nominalized relativization with \ipa{kɤ}-- in Japhug. The first type, illustrated by examples  \ref{ex:ragdwt}, \ref{ex:nandzwt}, \ref{ex:sazgwr} and \ref{ex:qaR}, have a TAM marker but no possessive prefix. Such sentences cannot be used when the agent is  SAP, and imply a indefinite agent. They cannot be used with an overt agent marked with the ergative, but there are several sentences such as \ref{ex:qaR} with an instrument marked in the ergative placed before the head noun.\footnote{ \citet{jacksonlin07} analyse constructions of this type in Tshobdun as   containing the passive derivational prefix in combination with the S/A nominalizer \ipa{kə}--. This analysis is possible historically for Japhug too, as the combination of the S/A nominalizing prefix \ipa{kɯ}-- with the passive \ipa{a}-- regularly yields \ipa{kɤ}-- (see \citealt{jacques07passif} and \citealt{jacques12demotion}). However, it is unclear whether this analysis is still valid synchronically; we leave this question for further research.}
+
+\begin{exe}
+   \ex \label{ex:qaR}
+\gll  \ipa{tɕe}  	\ipa{stɤmku}  	\ipa{ɯ-ndo}  	\ipa{nɯ} \ipa{ra,}  	[\ipa{rŋɯl}  	\ipa{kɯ}  	\textbf{\ipa{qaʁ}}  	\ipa{thɯ-kɤ-sɯ-βzu}] 	\ipa{nɯ} \ipa{ra}  	\ipa{ko-sɤʑɯrja-nɯ.}   \\
+\textsc{coord} plain \textsc{3sg.poss}-side \textsc{dem} \textsc{pl} 
+silver \textsc{erg} ploughshare \textsc{pfv-nmlz:P-caus}-make  \textsc{dem} \textsc{pl} \textsc{evd}-put.in.order-\textsc{pl}\\
+  \glt On the side of the plain, they placed in order the ploughshares that had been made with silver. (The raven4.97)
+   \end{exe}  
+
+
+The second type of verb nominalized with \ipa{kɤ}-- has no TAM directional prefix, but requires a possessive prefix coreferent with the A. Relatives with this type of nominalized verb mainly occur in prenominal relatives or headless relatives, as \ref{ex:tajmag} and \ref{ex:khu} respectively.
+
+     \begin{exe}
+   \ex \label{ex:tajmag}
+   \gll
+[\ipa{aʑo}  	\ipa{a-mɤ-kɤ-sɯz}]  	\textbf{\ipa{tɤjmɤɣ}}  	\ipa{nɯ}  	\ipa{kɤ-ndza}  	\ipa{mɤ-naz-a}  \\
+je \textsc{1sg-neg-nmlz:P}-know mushroom \textsc{dem} \textsc{inf}-eat \textsc{neg}-dare-\textsc{1sg} \\
+\glt I do not dare to eat the mushrooms that I do not know. (mbrɤʑɯm,103)
+\end{exe}
+However, it is possible to elicit head-internal relative clauses with a nominalized verb bearing a possessive prefix coreferent with the A argument, as in example \ref{ex:akanwrga1}, alongside the prenominal variant (\ref{ex:akanwrga2}). 
+
+     \begin{exe}
+   \ex \label{ex:akanwrga1}
+ \gll [\ipa{aʑo}  	\textbf{\ipa{tɯ-skɤt}}	\ipa{stu}  	\ipa{a-kɤ-nɯ-rga}]    	\ipa{nɯ}  	\ipa{kɯrɯ-skɤt}  	\ipa{ŋu}  \\
+I  \textsc{indef.poss}-language most \textsc{1sg-nmlz:P-appl}-like  \textsc{dem} Tibetan-language \textsc{n.pst}:be\\
+\ex \label{ex:akanwrga2}
+\gll [\ipa{aʑo}  	\ipa{stu}  	\ipa{a-kɤ-nɯ-rga}]  	\textbf{\ipa{tɯ-skɤt} } 	\ipa{nɯ}  	\ipa{kɯrɯ-skɤt}  	\ipa{ŋu}  \\
+I most \textsc{1sg-nmlz:P-appl}-like \textsc{indef.poss}-language \textsc{dem} Tibetan-language \textsc{n.pst}:be \\
+\glt Rgyalrong is my favorite language. (elicited)
+\end{exe}
+
+Both sentences are possible, though the prenominal one \ref{ex:akanwrga2} is preferred.
+
+%As mentioned in \ref{sec:nmlz.vs.n.nmlz},  \citet{jacksonlin07} suggest that 
+
+Unlike in Tshobdun (\citealt[10]{jacksonlin07}), in Japhug nominalized relatives with possessive prefixes are not restricted to generic state of affairs, but can refer to particular situations as in \ref{ex:khu}.
+
+
+     \begin{exe}
+   \ex \label{ex:khu}
+   \gll  [\ipa{lɤ-fsoʁ}]  	\ipa{ɯ-jɯja}  	\ipa{nɯ}  	\ipa{pjɯ-ru}  	\ipa{tɕe}  	[\ipa{ɯ-kɤ-nɯmbrɤpɯ}]  	\ipa{nɯ}  	\ipa{khu}  	\ipa{pɯ-ɕti}  	\ipa{ɲɯ-ŋu,}  \\
+\textsc{pfv}-be.clear    \textsc{3sg}-along  \textsc{dem} \textsc{ipfv:down}-look \textsc{coord} \textsc{3sg-nmlz:P}-ride \textsc{top} tiger \textsc{pst.ipfv}-be.\textsc{assert}  \textsc{const}-be \\
+\glt As the day was breaking, looking down, he (progressively realized that) what he was riding was a tiger. (Tiger, 20)
+\end{exe}
+
+However, these relatives cannot be used for perfective relativization. To express a meaning such as ``the thing that I have  seen", the only possibility in Japhug is to use a non-nominalized relative.
+
+
+Since many adjuncts are not overtly marked by a locative marker, in some cases it is not entirely obvious whether we have a case of P-relativization  or another type of relative. Thus, in sentence \ref{ex:thWkAsAtsa}, either \ipa{chɤmdɤru} ``drinking straw" or the possessor \ipa{nɯ-mkɤqhu} ``their necks" could be analysed as the relativized element.
+
+  
+     \begin{exe}
+   \ex \label{ex:thWkAsAtsa}
+ \gll
+[\ipa{nɯ-mkɤqhu}   	\textbf{\ipa{chɤmdɤru}}   	\ipa{thɯ-kɤ-sɯ-ɤtsa}]   	\ipa{ʁɟa}   	\ipa{ʑo}   	\ipa{pɯ-ŋu}   	\ipa{ɲɯ-ŋu}    \\
+\textsc{3pl.poss}-neck drinking.straw \textsc{pfv-nmlz:P-caus}-be.planted completely \textsc{emph} \textsc{pst.ipfv}-be \textsc{const}-be\\
+\glt   All of them had drinking straws planted in their neck (literally: it was all drinking straws planted in their necks). (Slob.dpon1,59)
+\end{exe}
+However, the verb \ipa{sɯ-ɤtsa} ``to plant" always takes the object planted as its P, not the place where it is planted, which can optionally receive a locative marker. Thus, it is possible, even in this apparently ambiguous case, to ascertain which is the relativized noun.
+
+% nɯ	ɕɯŋgɯ	pɯ-kɤ-ɣɤrɤt	nɯ	ra	ɣɯ	ɯ-ɲɯ́-ŋu
+% Nyima vodzer 79
+%Where these (the bones) the ones who were thrown in (the lake) before ?
+
+%\wav{gram-akAnWrga}
+
+
+%nɯ qro kɯ tɤ-kɤ-ndza nɯnɯ ɣɯ,
+%ɯ-stu nɯnɯ mɤʑɯ tu-ɣɤβdoʁβdi-nɯ tɕe, ɯ-rtsi tu-lɤt-nɯ tɕe,
+%ants, 101
+
+
+%tɕe	qapri	ɣɯ	ɯ-ku	nɤrwɯ	nɯ-kɤ-phɯt	nɯ	to-nɯ-ndo,
+%divination 118
+ 
+
+%ta-ʁi	pɯ-kɤ-βde	nɯnɯ,	pɯ-kɯ-si	nɯnɯ	pɣɤtɕɯ	ci	to-sci, Kunbzang 152
+
+\subsubsection{Relativization of P without nominalization} \label{sec:p.non.nmlz}
+
+The P argument, unlike A or S, can be relativized with a non-nominalized verb, as in example \ref{ex:tutianw}.\footnote{The P of \ipa{ti} ``to say" is never the addressee, it always refers to the words that are said.}
+
+     \begin{exe}
+   \ex \label{ex:tutianw}
+ \gll [\ipa{nɯ}  	\textbf{\ipa{qajɯ}}  	\ipa{kɯ-ɲaʁ}  	\ipa{tu-ti-a}]  	\ipa{nɯ}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{ɲɯ-βze}  	\ipa{ɲɯ-ŋu}  \\
+\textsc{dem} worm \textsc{nmlz:S}-black \textsc{ipfv}-say-\textsc{1sg} \textsc{top} \textsc{dem} \textsc{nmlz:S}-be.like \textsc{ipfv}-grow \textsc{const}-be \\
+\glt The black worm that I was talking about grows like that. (kɯpɤz, 30)
+\end{exe}
+
+
+
+
+
+Totalitative reduplication  (see section \ref{sec:redp}) can apply to a non-nominalized verbal form when the relativized argument is P, as in example \ref{ex:pwpwfcata}. Reduplication with this totalitative meaning is only possible in relative clauses and never occurs in the predicate of a main clause.
+
+     \begin{exe}
+   \ex \label{ex:pwpwfcata}
+ \gll \ipa{ɯ-ro}   	\ipa{nɯ} \ipa{ra,}   	[\ipa{iɕqha}   	\ipa{pɯ-pɯ-fɕat-a}]   	\ipa{nɯ} \ipa{ra}  	\ipa{kɯ}   	\ipa{tɕe}   	\ipa{tɕe}   	\ipa{sɯjno}   	\ipa{tu-ndza-nɯ}    \\
+ \textsc{3sg.poss}-rest \textsc{top} \textsc{pl} the.aforementioned \textsc{redp-pfv}-tell-\textsc{1sg} \textsc{top} \textsc{pl} \textsc{erg} \textsc{coord} \textsc{coord} grass \textsc{ipfv}-eat-\textsc{pl} \\
+\glt The rest, all the (animals) that I have talked about before eat grass. (The dogs, 42)
+\end{exe}
+
+Non-nominalized relativization of P is restricted to specific events, and is not available to express generic state of affairs. This constraint is reminiscent of the restriction on nominalized relatives observed by \citet[10]{jacksonlin07} in Tshobdun (see section \ref{sec:nmlz.vs.n.nmlz}).
+
+%Unlike Tshobdun, there is no restriction against having verbs forms with inverse in Japhug, especially in the case of the use of the inverse to express 
+  
+
+
+
+%8_relatives_nWsmAn
+%akɤsqɤr smɤnba nɯ lɤβzaŋ rmi
+%aʑo nɯsqara smɤnba nɯ lɤβzaŋ rmi
+%aʑo smɤnba nɯsqara nɯnɯ lɤβzaŋ rmi
+
+%aʑo stu akɤnɯrga tɯskɤt nɯ kɯrɯskɤt ŋu
+%aʑo tɯskɤt stu akɤnɯrga nɯ kɯrɯskɤt ŋu
+%\wav{gram-akAnWrga}
+
+
+
+  
+
+\section{Non-core arguments and adjuncts} \label{sec:oblique}
+In this section, we study the relativization of all phrasal elements other that core arguments, including possessor of arguments, dative, comitative arguments, and time, place and instrument adjuncts.
+
+
+\subsection{Possessor} \label{sec:possessor}
+
+When possessed nouns are relativized, the possessed noun remains \textit{in situ} and the verb receives the same nominalization prefixes   \ipa{kɯ}-- and \ipa{kɤ}-- as in the case of core arguments relativization, depending on the syntactic role of the possessed noun in the relative. A resumptive possessive prefix on the possessed noun is obligatory whether the possessor is overt (as in \ref{ex:WRrWkWtu}) or not (\ref{ex:lrWba}).
+
+When the possessed noun is S argument, the verb is nominalized with \ipa{kɯ}--, as in \ref{ex:WRrWkWtu}, \ref{ex:lrWba} and \ref{ex:kWtshoz}.
+
+      \begin{exe}
+   \ex \label{ex:WRrWkWtu}
+ \gll 
+\ipa{akɯ}   	\ipa{zɯ}   	[\textbf{\ipa{qapri} }  	\ipa{ci}   	\ipa{\textbf{ɯ}-kɤχcɤl}   	\ipa{\textbf{ɯ}-ʁrɯ}   	\ipa{kɯ-tu}]   	\ipa{ci}   	\ipa{ɣɤʑu}   	\ipa{tɕe,}   \\
+east \textsc{loc} snake \textsc{indef} \textsc{3sg.poss}-middle.of.the.head  \textsc{3sg.poss}-horn \textsc{nmlz:S}-exist \textsc{indef} \textsc{const}:exist \textsc{coord} \\
+\glt In the east, there is a snake with a horn in the middle of his head.  (The divination, 43)
+\end{exe}
+ 
+       \begin{exe}
+   \ex \label{ex:lrWba}
+ \gll 
+[\ipa{iɕqha}   	 \ipa{\textbf{nɯ}-me}   	\ipa{lʁɯba}   	\ipa{kɯ-ŋu}]   	\ipa{ra}   	\ipa{ɣɯ}   	\ipa{nɯ-khɤru}   	\ipa{lɤ-nɯ-ɬoʁ,}   \\
+the.aforementioned \textsc{3pl.poss}-daughter mute \textsc{nmlz:S}-be \textsc{pl} \textsc{gen} \textsc{3pl.poss}-kitchen.door \textsc{pfv:upstream-auto}-come.out \\
+\glt  As he entered the  door of the kitchen of those whose daughter was mute.  (The divination2, 55)
+\end{exe}
+ 
+When the possessor is   first or second person,  the resumptive possessive prefixes  are not neutralized to third person (see example \ref{ex:kWtshoz}).
+        \begin{exe}
+   \ex \label{ex:kWtshoz}
+ \gll 
+[\ipa{\textbf{nɤ}-mu}   	\ipa{\textbf{nɤ}-wa}   	\ipa{kɯ-tshoz}]   	\ipa{tɯ-ŋu,}   	\ipa{aʑo}   	[\ipa{\textbf{a}-mu}   	\ipa{kɯ-me}]   	\ipa{ŋu-a}   	\ipa{tɕe}    \\
+\textsc{2sg.poss}-mother \textsc{2sg.poss}-father \textsc{nmlz:S}-complete 2-\textsc{n.pst:}be I \textsc{1sg.poss}-mother \textsc{nmlz:S}-not.exist \textsc{n.pst:}be-\textsc{1sg} \textsc{coord} \\
+\glt You are someone whose father and mother are all there, I am someone without a mother. (Nyima wodzer, 12)
+\end{exe}
+
+Ideophones are commonly extracted outside of the relative clause as in example \ref{ex:takwgrum}.
+
+     \begin{exe}
+   \ex \label{ex:takwgrum}
+ \gll \ipa{praʁkhaŋ}   	\ipa{zɯ}   	[\ipa{tɤ-mu}   	\ipa{ci}   	\textbf{\ipa{ɯ-ku}}   	\ipa{tɤ-kɯ-wɣrum}]   	 	\ipa{ci} \ipa{zɯŋzɯŋ}    	\ipa{pjɤ-rɤʑi}   	\ipa{tɕe,}        \\
+cave \textsc{loc} \textsc{indef.poss}-mother \textsc{indef} \textsc{3sg.poss}-head \textsc{pfv-nmlz:}S-white \textsc{indef} \textsc{ideo}:II:completely.white \textsc{evd.ipfv}-remain \textsc{coord}  \\
+\glt In the cave, there was an old lady whose hair was completely white. (The prince, 68)
+\end{exe}
+
+ 
+Only head-internal relatives have been observed for relativization of the possessor.
+% ci	nɯ	nɯ-rmi	pa	mɯ-tɤ-kɤ-tɕɤt	nɯ	kɯ-lɤɣ	to-ɕe	
+% Gesar 136
+% 
+
+\subsection{Theme of bitransitive verbs}  \label{sec:second}
+As mentioned in section \ref{sec:bitr}, both indirective and secundative verbs are found in Japhug. By definition, the theme of indirective verbs is treated as the P, and need not be discussed in this section.
+
+The theme of secundative verbs does not receive  any flagging; it differs from the P-argument of monotransitive verbs in that there is no indexing on the verb of its person/number. However, the theme can be relativized by the \ipa{kɤ}-- prefix (example \ref{ex:nWkAmbi}) or with non-nominalized relatives (\ref{ex:nWGmbia.nW}) exactly like P arguments.
+
+\begin{exe}
+\ex \label{ex:nWkAmbi}
+\gll      \ipa{tɕe} 	[\ipa{ɬamu} 	\ipa{kɯ} 	\textbf{\ipa{qɤjɣi}} 	\ipa{nɯ-kɤ-mbi}] 	\ipa{nɯ} 	\ipa{tu-ndze} 	\ipa{pjɤ-ŋu.}   \\
+\textsc{coord} Lhamo \textsc{erg} bread \textsc{pfv-nmlz}:P-give \textsc{top} \textsc{ipfv}-eat[III] \textsc{ipfv.evd}-be  \\
+ \glt    He was eating the bread that Lhamo had given him. (The Raven 111)
+\end{exe} 
+
+      \begin{exe}
+   \ex \label{ex:nWGmbia.nW}
+ \gll  \ipa{tɤ-pɤro}  	\ipa{nɯ́-wɣ-mbi-a}  	\ipa{nɯ}  	\ipa{aʑo}  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{ɲɯ-nɯ-rge-a}  	 \\
+ \textsc{indef.poss}-present \textsc{pfv-inv}-give-\textsc{1sg} \textsc{top} \textsc{1sg} very \textsc{emph} \textsc{ipfv-appl}-like-\textsc{1sg}   \\
+\glt  I like the present that he has given me. (Elicitation)
+\end{exe}
+
+
+Relativization of the theme is not restricted to head-internal relatives  (as  \ref{ex:nWkAmbi} and \ref{ex:nWGmbia.nW}); it is also possible to have prenominal relatives in this case.
+
+\subsection{Recipient / Addressee}
+
+In main clauses, the recipient of indirective verbs is marked with the dative (\ipa{--ɕki} or \ipa{--phe}), while that of secundative verbs has the same status as the P of a monotransitive verb and is indexed on the verb morphology (see \ref{sec:bitr}).
+
+The main construction used to relativize recipient of indirective verbs is a nominalized  relative with the oblique nominalizer \ipa{sɤ}--, as in \ref{ex:nAsAfCAt} and \ref{ex:nAsAti}. As with all cases of nominalization with the oblique \ipa{sɤ}--, only headless and prenominal relatives are found.
+
+
+\begin{exe}
+\ex \label{ex:nAsAfCAt}
+\gll [\ipa{χpi}  	\ipa{nɤ-sɤ-fɕɤt}]  	\ipa{tɯrme}  	\ipa{nɯ}  	\ipa{ɕu}  	\ipa{pɯ-ŋu}    \\
+story \textsc{2sg-nmlz:oblique}-tell person \textsc{top}   \textsc{pst.ipfv}-be\\
+\glt Who was the person to whom you told the story? (Elicited)
+\end{exe} 
+
+
+\begin{exe}
+\ex \label{ex:nAsAti}
+\gll [\ipa{tɯrju}  	\ipa{nɤ-sɤ-ti}]  	\ipa{tɯrme}  	\ipa{nɯ}  	\ipa{ɕu}  	\ipa{pɯ-ŋu} ?\\
+ word \textsc{2sg-nmlz:oblique}-say person \textsc{top}   \textsc{pst.ipfv}-be\\  
+\glt  Who was the person with whom you talked? (Elicited)
+\end{exe} 
+
+Relatives of this type require an overt theme; the only possible way to delete the theme is to use the antipassive derivation   as in example \ref{ex:asAzrAthu}.
+
+\begin{exe}
+\ex \label{ex:asAzrAthu}
+\gll \ipa{a-sɤz-rɤ-thu}  	\ipa{χpɯn}  	\ipa{nɯ}  	\ipa{kɯ-mkhɤz}  	\ipa{ci}  	\ipa{ɲɯ-ŋu}    \\
+\textsc{1sg-nmlz:oblique-antipass}-ask monk \textsc{top}  \textsc{nmlz:}S/A-expert \textsc{indef} \textsc{const}-be \\
+\glt The monk   with whom I inquired  is an expert (Elicitation). 
+\end{exe} 
+
+Without the antipassive and with a possessive prefix coreferent with the A, the sentence is considered agrammatical (see \ref{ex:agram}).
+
+\begin{exe}
+\ex \label{ex:agram}
+\gll *\ipa{a-sɤ-thu}  	\ipa{χpɯn}  	\ipa{nɯ}  	  \\
+\textsc{1sg-nmlz:oblique}-ask monk \textsc{top}   \\
+\glt Intended meaning: ``The monk   to whom I asked about this."
+\end{exe} 
+
+
+\subsection{Comitative} \label{sec:rel:comitative}
+Some intransitive verbs like \ipa{amɯmi}  allow an optional oblique argument marked with the postposition \ipa{cho} ``with"; the verb agrees with the sum of the S and this oblique argument as in example \ref{ex:WsAmWmi} where the verb 	\ipa{amɯmi-nɯ}  ``they are in good terms" is in the plural form.
+ 
+
+The oblique argument in \ipa{cho} is relativized with the \ipa{sɤ}-- prefix, as illustrated by the first sentence in \ref{ex:WsAmWmi}.
+\begin{exe}
+   \ex \label{ex:WsAmWmi}
+ \gll 
+\ipa{tɕe}   	[\ipa{ɯʑo}   	\ipa{ɯ-sɤ-ɤmɯmi}]   	\ipa{nɯ}   	\ipa{dɤn}   	\ipa{ma}   	\ipa{ca}   	\ipa{kɯ-fse}   	\ipa{qaʑo}   	\ipa{kɯ-fse,}   	\ipa{tshɤt}   	\ipa{kɯ-fse,}   	 \ipa{ɯʑo}   	\ipa{cho}   	\ipa{kɯ-naχtɕɯɣ}   	\ipa{sɯjno,}   	\ipa{xɕɤj}   	\ipa{ma}   	\ipa{mɤ-kɯ-ndza}   	\ipa{nɯ} \ipa{ra}   	\ipa{cho}   	\ipa{nɯ}   	\ipa{amɯmi-nɯ}   	\ipa{tɕe,}   \\
+\textsc{coord} it \textsc{3sg-nmlz:oblique}-be.in.good.terms \textsc{top} \textsc{n.pst:}be.many because water.deer \textsc{nmlz:S}-be.like sheep \textsc{nmlz:S}-be.like goat  \textsc{nmlz:S}-be.like it with  \textsc{nmlz:S}-be.identical herbs grass apart.from \textsc{neg-nmlz:A}-eat \textsc{dem} \textsc{pl} with \textsc{dem} \textsc{n.pst}:be.in.good.term-\textsc{pl} \textsc{coord} \\
+\glt The (animals) that are in good terms with the rabbit are many, it is in good terms with those that only eat grass, like water deer, sheep or goats. (Rabbit, 33-4)
+\end{exe}
+
+\subsection{Time} \label{sec:rel:time}
+
+Adjuncts referring to   time can be relativized by nominalizing the verb with the \ipa{sɤ}-- prefix, as in example \ref{ex:thajtCu}.
+
+\begin{exe}
+   \ex \label{ex:thajtCu}
+ \gll [\ipa{tɤjmɤɣ}   	\ipa{ɯ-sɤɣ-ɬoʁ}]   	\ipa{nɯ}   	\ipa{thɤjtɕu}   	\ipa{ŋu}   \\
+ mushroom \textsc{3sg-nmlz:oblique}-come.out \textsc{top} when \textsc{n.pst}:be \\
+ \glt When is (the time) that mushrooms come out? (elicitation)
+\end{exe}
+
+However, while speakers do accept such sentences, this construction is not found in our text corpus. The preferred construction to relativize time adjuncts is to use a prenominal non-nominalized relative with a possessed head noun such as \ipa{ɯ-raŋ} ``time" or \ipa{ɯ-sŋi} ``the day", as in examples \ref{ex:WraN} and \ref{ex:WraN2}.
+
+\begin{exe}
+   \ex \label{ex:WraN}
+ \gll  [\ipa{mɯɕtaʁ}   	\ipa{khro}   	\ipa{mɤ-mpja}]   	\ipa{ɯ-raŋ}   	\ipa{tɕe}   	\ipa{zrɯ}   	\ipa{ɯ-pɕoʁ}   	\ipa{ɣɤʑu.}    \\
+ \textsc{n.pst}:cold a.lot \textsc{neg-n.pst}:warm \textsc{3sg.poss}-time \textsc{coord} sunny.side \textsc{3sg.poss}-side \textsc{const}:exist \\
+\glt There are (ticks) on the sunny side of the mountains when it is cold, not warm. (ticks, 6)
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:WraN2}
+ \gll [\ipa{nɤ-ɕɣa}   	\ipa{xtɕi}]   	\ipa{ɯ-raŋ}   	\ipa{ri}   	\ipa{nɯ}   	\ipa{tɯ́-wɣ-nɤzda}   	\ipa{ŋu}   	\ipa{ri}   \\
+ \textsc{2sg.poss}-tooth \textsc{n.pst}:small \textsc{3sg.poss}-time \textsc{loc} \textsc{top} 2-\textsc{inv}-accompany \textsc{n.pst}:be.with but \\
+\glt While you are young, she will be with you. (Slob.dpon2, 60)
+\end{exe}
+
+ 
+
+
+
+\subsection{Place} \label{sec:rel:place}
+In Japhug, place adjuncts can be either unmarked or receive optional locative markers. %\ipa{zɯ}, \ipa{ri} or \ipa{tɕu}. 
+There are three possible constructions to relativize these adjuncts: nominalization with the prefix \ipa{sɤ}-- (and in marginal cases with the S nominalizer \ipa{kɯ--}), correlatives and prenominal relatives with a locative head noun.
+
+Place adjuncts can be relativized by nominalizing the verb with \ipa{sɤ}--, regardless whether motion is involved (examples \ref{ex:asAGi} and \ref{ex:tANe} )  or not (\ref{ex:WsArNgW}, \ref{ex:WsAme}). As with other cases of \ipa{sɤ}-- nominalization, only prenominal and headless relatives of this type are attested.
+
+\begin{exe}
+   \ex \label{ex:asAGi}
+ \gll
+\ipa{kɯki}   	\ipa{tɯ-ci}   	\ipa{ki}   	\ipa{ɯ-tɯ-rnaʁ}   	\ipa{mɯ́j-rtaʁ}   	\ipa{tɕe,}   	\ipa{aʑo}   	\ipa{a-sɤ-ɣi}   	\ipa{mɯ́j-khɯ}   \\
+this \textsc{indef.poss}-water this \textsc{3sg-nmlz:degree}-deep \textsc{neg:const}-deep \textsc{coord} I \textsc{1sg-nmlz:oblique}-come \textsc{neg:const}-be.able \\
+\glt The water is not deep enough, there is not (enough) place for me to come. (Go by yourself,4)
+\end{exe}
+
+
+\begin{exe}
+   \ex \label{ex:tANe}
+ \gll [\ipa{tɤŋe}   	\ipa{sɤ-ɕqhlɤt}]   	\ipa{pɕoʁ}   	\ipa{zɯ,}   	\ipa{rgɤtpu}   	\ipa{ci}   	\ipa{tu}   \\
+sun \textsc{nmlz:oblique}-disappear side \textsc{loc} old.man \textsc{indef} \textsc{n.pst}:exist \\
+\glt At the place where the sun sets, there is an old man. (The divination2, 2)
+\end{exe}
+\begin{exe}
+   \ex \label{ex:WsArNgW}
+ \gll
+\ipa{ɯ-sɤ-rŋgɯ}   	\ipa{nɯ} \ipa{tɕu}   	\ipa{ɲɯ-nɯ-lɤt}   	\ipa{mɯ́j-ŋgrɤl}   \\
+\textsc{3sg-nmlz:oblique}-lie.down \textsc{dem} \textsc{loc} \textsc{ipfv-auto}-throw \textsc{neg:const}-be.usually.the.case \\
+\glt  It  does not usually shit in the place where it sleeps. (Pika 17)
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:WsAme}
+ \gll
+\ipa{mɯ-thɯ-wxti}   	\ipa{mɤɕtʂa}   	\ipa{tɤ-mu}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{ɯ-pɯ}   	\ipa{ra,}   	[\ipa{ɯ-phu}   	\ipa{nɯ}   	\ipa{ɯ-sɤ-me}]   	\ipa{ri}   	\ipa{ju-tsɯm}   	\ipa{tɕe,}   \\
+\textsc{neg-pfv}-big until \textsc{indef.poss}-mother \textsc{top} \textsc{erg}  {3sg.poss}-litter \textsc{pl}  {3sg.poss}-male \textsc{top} \textsc{3sg-nmlz:oblique}-not.exist  \textsc{loc} \textsc{ipfv}-take.away \textsc{coord} \\
+\glt  Until they grow big, the mother takes her litter away to a place where the male is not found. (Lion, 75)
+  \end{exe}
+From the point of view of semantics, some examples of place adjunct relativization are very similar to dative or instrument relativization (examples \ref{ex:sAmArZaB} and  \ref{ex:pjWsAta}).\footnote{The intransitive verb \ipa{mɤrʑaβ} ``to marry" can be constructed with either the person to whom one is married in the dative \ipa{--ɕki} or with the locative \ipa{tɕu}. }
+
+
+
+\begin{exe}
+   \ex \label{ex:sAmArZaB}
+ \gll
+	\ipa{ndʑi-sɤz-mɤrʑaβ}   	\ipa{ra}   	\ipa{mɯ-pjɤ-pe}   \\
+\textsc{3du-nmlz:oblique}-marry \textsc{pl} \textsc{neg-evd.ipfv}-good \\
+\glt The (places/families) where they had married were not good. (Kunbzang, 117)
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:pjWsAta}
+ \gll
+\ipa{tɤ-kɯ-nɯmbrɤpɯ}   	\ipa{tɕe}   	\ipa{tɯ-mi}   	\ipa{pjɯ-sɤ-ta}   	\ipa{ɲɯ-ŋu}   \\
+\textsc{pfv-genr:S/P}-ride \textsc{coord}  \textsc{indef.poss}-foot \textsc{ipfv-nmlz:oblique}-put \textsc{const}-be \\
+\glt When one rides, (the stirrup) is (the place) where one puts one's feet. (Saddle,100)
+\end{exe}
+
+
+Nominalization in \ipa{sɤ}-- has many uses apart from place adjunct relativization, as it can be used for comitative, time and instrument adjuncts. We find examples which are not readily classifiable in any of these classes, such as purposive relativization (example \ref{ex:sAntChoz}).  
+
+     \begin{exe}
+  \ex   \label{ex:sAntChoz}  
+\gll \ipa{nɯnɯ}  	\ipa{ɯ-sɤ-ntɕhoz}  	\ipa{chondɤre}  	\ipa{ɯ-tshɯɣa}  	\ipa{ra}  	\ipa{naχtɕɯɣ}  	\ipa{ɕti}  	\ipa{ri}  	\\
+\textsc{dem} \textsc{3sg-nmlz:oblique}-use and \textsc{3sg.poss}-shape \textsc{pl} \textsc{n.pst}:be.identical \textsc{n.pst}:be:\textsc{assert} but \\
+\glt  Its use (what it is used for) and its shape are identical (with that of another bag). (lʁa, 22)
+   \end{exe} 
+
+
+Although place adjunct relativization with nominalization in \ipa{sɤ}-- is quite common in Japhug, we find several other alternative constructions. Another type of nominalized relative involves the nominalization in \ipa{kɯ}-- of a modal verb such as \ipa{ra} ``have to, need", as in  \ref{ex:juzGWtndZi} and \ref{ex:kuwGmGla}.
+
+\begin{exe}
+   \ex \label{ex:juzGWtndZi}
+ \gll
+\ipa{qala}   	\ipa{nɯ}   	\ipa{pɤjkhu}   	\ipa{mɯ-cho-sta}   	\ipa{ri,}   	\ipa{bɤlqhoʁ}   	\ipa{nɯnɯ}   	[\ipa{ju-zɣɯt-ndʑi}   	\ipa{kɯ-ra}]   	\ipa{nɯ} \ipa{tɕu}   	\ipa{jo-zɣɯt}   \\
+rabbit \textsc{top} yet \textsc{neg-evd}-wake.up but tortoise \textsc{top} \textsc{ipfv}-reach-\textsc{du} \textsc{nmlz:S}-have.to \textsc{top} \textsc{loc} \textsc{evd}-reach \\
+\glt Although the rabbit had not yet woken up, the tortoise had reached (the placed that) they had to reach.
+(Aesop adaptation n°50)
+\end{exe}
+
+This construction is possible even with the verb in inverse form, as in \ref{ex:kuwGmGla}, where the inverse serves as the generic marker for A.
+\begin{exe}
+   \ex \label{ex:kuwGmGla}
+ \gll
+\ipa{qaɕpa}   	\ipa{ɣɯ}   	\ipa{ɯ-zda}   	\ipa{ra}   	[\ipa{tɯ-ci}   	\ipa{kú-wɣ-nɯmɢla}   	\ipa{kɯ-ra}]   	\ipa{nɯ} \ipa{tɕu}   	\ipa{pjɤ-rɤʑi-nɯ}   	\ipa{ɕti}   \\
+frog \textsc{gen}  \textsc{3sg.poss}-companion \textsc{pl} \textsc{indef.poss}-water \textsc{ipfv-inv}-cross \textsc{nmlz:S}-have.to \textsc{top} \textsc{loc} \textsc{pst.ipfv}-remain-\textsc{pl} \textsc{n.pst}:be:\textsc{assert} \\
+\glt The frog's companions were at (a place that) one had to cross a river (to reach). (Aesop adaptation n°07)
+\end{exe}
+
+%tɯci kɯ-tu, sakaβ kɯ-tu cɯz lo-rɤtʂhá-nɯ,
+%sras 52
+%\begin{exe}
+%   \ex \label{ex:tWtAri}
+% \gll \ipa{tɕeri}   	\ipa{nɯ}   	\ipa{tɯ-tɤ-ari}   	\ipa{nɯ}   	\ipa{ɯ-jroʁ}   	\ipa{kɯ-fse}   	\ipa{tɯ-ɕnaβ}   	\ipa{kɯ-fse}   	\ipa{tu-mar}   	\ipa{ʑo}   	\ipa{ɲɯ-ŋu}   	\ipa{tɕe,}   \\
+%but \textsc{dem} redp-pfv-go[II] \textsc{top} \textsc{3sg.poss}-row \textsc{nmlz:S}-be.like \textsc{indef.poss}-snot \textsc{nmlz:S}-be.like \textsc{ipfv}-smear
+%\\
+%\glt  (The slugs, 136)
+%\end{exe}
+
+
+An alternative construction for relativizing place adjuncts is using correlatives with the interrogative pronoun \ipa{ŋotɕu} ``where" to express an indefinite place (``whatever place"). It can be used with non-nominalized relatives as \ref{ex:NotCupWNke}.
+\begin{exe}
+   \ex \label{ex:NotCupWNke}
+ \gll [\ipa{ŋotɕu}   	\ipa{pɯ-ŋke}]   	\ipa{nɯ}   	\ipa{ɲɯ-saχsɤl.}   \\
+where \textsc{pfv}-walk \textsc{top} \textsc{const}-obvious \\
+\glt The places where it has moved are very obvious. (The slugs, 137)
+\end{exe}
+
+We also find  correlatives nominalized with  \ipa{kɯ}-- including the pronoun  \ipa{ŋotɕu} ``where".
+
+\begin{exe}
+   \ex \label{ex:NotCunWkAtCaR}
+ \gll [\ipa{ɯ-se}   	\ipa{nɯ}   	\ipa{ŋotɕu}   	\ipa{nɯ-kɯ-ɤtɕaʁ}]   	\ipa{nɯ}   	\ipa{tɕe}   	\ipa{li}   	\ipa{ɲɯ-ɬoʁ}   	\ipa{ŋu}   \\
+ 3sg.poss-blood \textsc{top} where \textsc{pfv-nmlz:S}-be.stained \textsc{top} \textsc{coord} again \textsc{ipfv}-come.out \textsc{n.pst}:be \\
+\glt (Warts) come out again on the places where the blood has been spilled. (wart, 31)
+\end{exe}
+
+ Finally, it is also possible to relativize place adjuncts by using a generic locative head noun such as \ipa{ɯ-sta} ``place" (examples \ref{ex:Wsta} and \ref{ex:Wsta2}), \ipa{ɯ-stu} ``place" (\ref{ex:WsAzlhoR}) or a more specific locative noun such as \ipa{ɯ-ŋgɯ} ``inside" (\ref{ex:WNgW}).
+
+The prenominal relative can be either nominalized with core argument nominalization prefixes such as \ipa{kɤ}-- (\ref{ex:Wsta}), \ipa{kɯ}-- (\ref{ex:WNgW}), but examples with the oblique nominalization prefix \ipa{sɤ}--  (\ref{ex:WsAzlhoR}) and non-nominalized prenominal relatives (\ref{ex:Wsta2}) are also found with intransitive verbs.
+
+\begin{exe}
+   \ex \label{ex:Wsta}
+ \gll
+   	[\ipa{a-tʂha}   	\ipa{pɯ-kɤ-rku}]   	\ipa{ɯ-sta}   	\ipa{nɯ}   	\ipa{tɕu}   	\ipa{a}-cai   	\ipa{tɤ-rke} \\
+ \textsc{1sg.poss}-tea \textsc{pfv-nmlz:P}-put.in \textsc{3sg.poss}-place \textsc{top} \textsc{loc}  \textsc{1sg.poss}-vegetables \textsc{imp}-put.in \\
+ \glt    Put the vegetables for me in the (bowl) where my tea has been poured. (elicitation).
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:Wsta2}
+ \gll
+\ipa{iɕqha,}  	[\ipa{pɯ-nɤŋkɯŋke}]  	\ipa{ɯ-sta}  	\ipa{nɯ} \ipa{ra,}  	\ipa{tɯ-ɕnaβ}  	\ipa{pɯ-kɤ-βde}  	\ipa{ʑo}  	\ipa{fse,}  \\
+the.aforementioned \textsc{pst.ipfv}-walk.around \textsc{3sg.poss}-place \textsc{top} \textsc{pl} \textsc{indef.poss}-snot \textsc{pfv:down-nmlz:P}-throw.away \textsc{emph} \textsc{n.pst}:be.like \\
+\glt The places where it has been look like spilled snot. (Slugs, 131)
+\end{exe}
+% 在我原来喝过茶的那个碗给我装菜
+%\wav{8_Wsta}
+
+\begin{exe}
+   \ex \label{ex:WsAzlhoR}
+\gll
+ [\ipa{tɤŋe}  	\ipa{ɯ-sɤz-ɬoʁ}]  	\ipa{ɯ-stu}  	\ipa{jamar}  	\ipa{tu-ɬoʁ}  	\ipa{ŋu.}  \\
+ sun \textsc{3sg-nmlz:oblique}-come.out \textsc{3sg.poss}-place about \textsc{ipfv:up}-come.out \textsc{n.pst}:be \\
+\glt It comes out about at the place where the sun comes out. (lha.mtshams, 1)
+\end{exe}
+
+
+\begin{exe}
+   \ex \label{ex:WNgW}
+ \gll
+[\ipa{sɤjku}   	\ipa{kɯ-dɤn}]   	\ipa{ɯ-ŋgɯ}   	\ipa{ʁɟa}   	\ipa{ʑo}   	\ipa{ʑmbɯlɯm}   	\ipa{nɯ}   	\ipa{tu-ɬoʁ}   	\ipa{ŋu}   \\
+birch \textsc{nmlz:S}-be.many \textsc{3sg.poss}-inside completely \textsc{emph} mushroom.sp \textsc{top} \textsc{ipfv}-come.out \textsc{n.pst}:be \\
+\glt The ʑmbɯlɯm mushroom grows in the places where there are a lot of birches. (ʑmbɯlɯm.37)
+\end{exe}
+
+\subsection{Instrument} \label{sec:instrument}
+The nominalization \ipa{sɤ}-- prefix derives several nouns of instruments and machines, such as \ipa{sɤ-cɯ} ``key" from the transitive verb \ipa{cɯ} ``to open" or \ipa{tɯ-ŋga sɤ-χtɕi} (\textsc{indef.poss}-clothes \textsc{nmlz:oblique}-wash) ``washing machine".
+
+Instruments in Japhug differ from place or time adjuncts in that they receive obligatory flagging with the ergative clitic \ipa{kɯ} and optionally trigger a causative marker on the verb, as in example \ref{ex:kuwGsWxtCAr}.
+
+
+ \begin{exe}
+  \ex   \label{ex:kuwGsWxtCAr}  
+\gll \ipa{ɯnɯnɯ}  	\ipa{ri}  	\ipa{qase}  	\ipa{kɯ}  	\ipa{kú-wɣ-sɯ-xtɕɤr}  \\
+\textsc{dem} \textsc{loc} leather.rope \textsc{erg} \textsc{ipfv-inv-caus}-tie \\
+\glt There, one ties it with a leather rope. (Plough, 97)
+   \end{exe} 
+%add tɤpɤtso ɯ-ɕɣa ɲɯ-mɯnmu tɕe, tɯɕɣa kú-wɣ-βraʁ tɕepjɯ́-wɣ-nɤstɤr ʑo tɕe pjɯ́-wɣ-phɯt ɲɯ-ra. tɯ-ɕɣa ɯ-sɤβraʁ nɯ tɤ-ri ɕti ma tɯmbri maʁ
+
+This argument is relativized by nominalizing the verb with the prefix \ipa{sɤ}-- and removing the   causative prefix \ipa{sɯ}-- as in \ref{ex:sAxtCAr}. Thus , the distinction between different types of adjuncts is neutralized in nominalized relative clauses; on the other hand, relativization is a useful syntactic test to discriminate between A and instrument adjunct, as the former is relativized by \ipa{--kɯ-}.
+
+ \begin{exe}
+  \ex  \label{ex:sAxtCAr}  
+  \gll [\ipa{nɯ-mthɤɣ}  	\ipa{sɤ-xtɕɤr}]  	\ipa{xɕɤfsa}  	\ipa{ma}  	\ipa{pjɤ-me}  \\
+\textsc{3pl.poss}-waist \textsc{nmlz:oblique}-tie thread apart.from \textsc{evd.ipfv}-not.exist \\
+\glt They only had threads to tie their waists (the only things that they could use to tie their waist were threads). (Milaraspa translation)
+   \end{exe} 
+   
+   %XXXXXXXXXXXXX xɕɤfsa revérifier
+
+   
+No examples of non-nominalized instrument relativization have been found in our corpus.
+
+\subsection{Unmarked adjuncts} \label{sec:other}
+
+Semi-transitive verbs (see section \ref{sec:trans}) relativize their S with the prefix \ipa{kɯ}-- like   morphologically intransitive verbs.  The unmarked adjunct, however, allows two types of relativizing constructions.
+
+First, it can be relativized by nominalizing the verb with \ipa{kɤ}-- as if it were a P, with an overt S within the relative as in \ref{ex:nWkArga}.
+
+
+ \begin{exe}
+   \ex   \label{ex:nWkArga}  
+\gll [\ipa{pɣa}  	\ipa{ra}  	\ipa{nɯ-kɤ-rga}]  	\ipa{nɯ}  	\ipa{qɤj}  	\ipa{ntsɯ}  	\ipa{ŋu}  \\
+bird \textsc{pl} \textsc{3pl-nmlz:P}-like \textsc{top} wheat always \textsc{n.pst}:be \\
+\glt (The food) that birds like is always wheat. (pɣaɲaʁ 24)
+   \end{exe} 
+
+With the verb  \ipa{aro} ``to possess", the morphophonology makes the nominalized verb form identical for both S-relativization and adjunct relativization. Thus, the surface form [ɯkɤro] can be ambiguous between \ipa{ɯ-kɯ-ɤro} ``the one wo possesses it" and \ipa{ɯ-kɤ-ro} ``that which he possesses".
+
+ Second, it can be relativized with a non-nominalized clause, again like the P of a transitive verb, as in \ref{ex:aroa}. These examples, however, are not found in our corpus and can only be elicited.
+ \begin{exe}
+   \ex   \label{ex:aroa}  
+\gll
+[\ipa{aʑo}  	\ipa{qaʑo}  	\ipa{aro-a}]  	\ipa{nɯ} \ipa{ra}  	\ipa{kɯki}  	\ipa{ŋu}  \\
+I sheep \textsc{n.pst}:possess-\textsc{1sg} \textsc{top} \textsc{pl} \textsc{dem.prox} \textsc{n.pst}:be \\
+\glt The sheep which I own are these ones. (elicitation)
+   \end{exe} 
+
+%\wav{aro-relative} \wav{aro-relative2}
+
+
+The unmarked adjunct of semi-transitive verbs thus presents some object-like properties in its relativization pattern.
+
+
+	\subsection{Comparative constructions} \label{sec:comparative}
+In comparative constructions, it is possible in Japhug to relativize the comparee, which is treated like a normal S and relativized by nominalizing the verb with the prefix \ipa{kɯ}--, as in \ref{ex:tundze}.
+
+
+ \begin{exe}
+   \ex   \label{ex:tundze}  
+\gll
+[\ipa{ɯʑo}  	\ipa{sɤz}  	\ipa{kɯ-xtɕi}]  	\ipa{pɣa}  		\ipa{nɯ} \ipa{ra}   	\ipa{kɯnɤ}  	\ipa{ku-ndɤm}  	\ipa{qhe}  	\ipa{tu-ndze}  	\\
+he \textsc{comp} nmlz:S-be.small bird 	 \textsc{top} \textsc{pl}  also \textsc{ipfv}-catch[III] \textsc{coord} \textsc{ipfv}-eat[III] \\
+\glt It_i catches and eats the birds that are smaller than itself_i. (qandʑɣi, 58)
+   \end{exe}
+   
+   In all observed examples, the relative is pre-nominal. 
+%\ipa{ɯʑo}  	\ipa{sɤz}  	\ipa{pɯ-nɯ-wxti}  	\ipa{nɯ}  	\ipa{tu-ndze,}  	\ipa{pɯ-nɯ-xtɕi}  	\ipa{nɯ}  	\ipa{tu-ndze}  	\ipa{ɲɯ-ɕti}  
+The standard of comparison, marked by comparative clitics such as \ipa{sɤz} or \ipa{staʁ}, cannot be relativized. 
+
+ 
+%xtɯrkɯ nɯnɯ tɕe, tɯtɣa mɤ-kɯ-ʑɯ ʑo kɯrɟum
+
+  
+
+\section{Complement clauses within relatives}
+
+There is no constraint against embedding complement clauses within relatives. As an illustration, we chose examples of the intransitive verb \ipa{cha} ``can", which is particularily common in our corpus and allows various types of complement clauses.\footnote{Note that since \ipa{cha} is intransitive, the complement clauses here are not complement clauses in  \citet{dixon06complementation}'s sense, since they are not argument of this verb. We will however keep a simpler terminology here and neglect Dixon's distinction between complement clause and complementation strategy.
+}
+%Verbs such as \ipa{cha} ``can", which allow both
+
+\ipa{cha} ``can" can be used with two types of complement clause: infinitive complements (with the verb prefixed in \ipa{kɤ--} prefix) and  non-nominalized clauses with the verb in the imperfective.
+ 
+ With infinitive complements, the S or A of the complement clause must be the same as that of the modal verb \ipa{cha}, as in \ref{ex:pGAkhW}.
+ 
+ \begin{exe}
+   \ex   \label{ex:pGAkhW}  
+\gll
+[\ipa{pɣɤkhɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{qaɲi} 	\ipa{kɤ-sat}] 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{cha} 	\ipa{khi}  \\
+owl \textsc{top} \textsc{erg} mole \textsc{inf}-kill very \textsc{emph} \textsc{n.pst}:can \textsc{hearsay} \\
+\glt Owls are very good at killing moles, it is said. (mole 202)
+   \end{exe} 
+
+With non-nominalized complements in the imperfective, the referent   of the S of \ipa{cha} can correspond to any of S (example \ref{ex:CkurAZi.cha}), A (\ref{ex:tundze.cha}) or even P (\ref{ex:kuwGsphjaR}) in the complement clause.
+%tu-kɯ-ndza tɕe ɲɯ-z-rɤʑe cha tɕe,
+%bedbug, 40
+ \begin{exe}
+   \ex   \label{ex:CkurAZi.cha}  
+\gll
+[\ipa{ɕkom}   	\ipa{nɯnɯ,}   	\ipa{praʁ}   	\ipa{ɯ-ŋgɯ}   	\ipa{ɕ-ku-rɤʑi}]   	\ipa{cha}   	\ipa{mɤ-cha}   	\ipa{mɤxsi.}   \\
+muntjac \textsc{top} cliff \textsc{3sg.poss}-inside \textsc{cisloc-ipfv}-remain \textsc{n.pst}:can \textsc{neg-n.pst}:can \textsc{genr:}not.know \\
+\glt It is not known whether the muntjac is able or not to go to stay in the cliffs.  (The muntjac, 180)
+   \end{exe} 
+    \begin{exe}
+      \ex   \label{ex:tundze.cha}  
+\gll
+    [\ipa{rɯdaʁ}   	\ipa{ra}   	\ipa{tu-ndze}]   	\ipa{cha}   	\ipa{mɤ-cha}   	\ipa{mɤxsi.}   \\
+    animal \textsc{pl} \textsc{ipfv}-eat[III] \textsc{n.pst}:can \textsc{neg-n.pst}:can \textsc{genr:}not.know \\
+\glt     	 It is not known whether it is able to eat animals or not (βʑar2, 91)
+      \end{exe} 
+ 
+ 
+
+    \begin{exe}
+      \ex   \label{ex:kuwGsphjaR}  
+\gll
+\ipa{tɕe}   	\ipa{nɯ}   	\ipa{tu-ŋga-nɯ}   	\ipa{tɕe}   	\ipa{kú-wɣ-sphjaʁ}   	\ipa{mɯ́j-cha}   \\
+\textsc{coord} \textsc{dem} \textsc{ipfv}-wear-\textsc{pl} \textsc{coord} \textsc{ipfv-inv}-soak \textsc{neg:const}-can \\
+\glt They would wear it (woollen cloth), as it cannot be soaked (by water) (Sheep 17)
+      \end{exe} 
+
+In non-nominalized complement clauses of the verb \ipa{cha}, the is co-indexation of person and number on the dependent  verb   and on the auxiliary \ipa{cha}, as illustrated by \ref{ex:lumWrkia} and \ref{ex:mWjchatCi}.
+    \begin{exe}
+      \ex   \label{ex:lumWrkia}  
+\gll   
+      \ipa{aʑo}   	\ipa{chɯ-ɕe-a}   	\ipa{tɕe}   	\ipa{lu-mɯrki-a}   	\ipa{cha-a}   \\
+      I \textsc{ipfv:downstream-go}-\textsc{1sg} \textsc{coord} \textsc{ipfv:upstream}-steal[III]-\textsc{1sg} \textsc{n.pst}:can-\textsc{1sg} \\
+      \glt I will go there, I am able to steal back (the water). (Stealing the water myth, 24)
+      \end{exe} 
+%      tɕiʑo lumɯrkɯtɕi  chatɕi ????
+         \begin{exe}
+      \ex   \label{ex:mWjchatCi}  
+\gll   
+\ipa{chɯ-mɤɕi-tɕi}   	\ipa{mɯ́j-cha-tɕi}   \\
+\textsc{ipfv}-be.rich-\textsc{1du} \textsc{neg:const}-can-\textsc{1du} \\
+\glt  We are not able to become rich. (The divination2, 6)
+           \end{exe} 
+     
+Relatives with nominalized \ipa{cha} ``can" as their predicate allow the embedding exactly the same types of complement clauses.  Infinitival complement can be appear before nominalized \ipa{cha}, as in \ref{ex:karwcmi}.
+      
+ \begin{exe}
+   \ex   \label{ex:karwcmi}
+ \gll  [\textbf{\ipa{pɣa}}  	\ipa{kɤ-rɯɕmi}  	\ipa{kɯ-cha}]  	\ipa{ci}  	\ipa{ra,}   		\\
+ bird \textsc{inf}-speak \textsc{nmlz:S}-can \textsc{indef} \textsc{n.pst}:need \\
+ \glt   (I) need a bird who is able to speak. (Slopdpon, 19)
+   \end{exe} 
+  
+  
+Non-nominalized complements are also possible, and the referent of the S of \ipa{cha} can have any syntactic role in the complement clause, even P  as in \ref{ex:CpjWZGAGAlanW}.
+
+\begin{exe}
+   \ex  \label{ex:CpjWZGAGAlanW}
+\gll
+[[\ipa{smɤnba} 	\ipa{kɯ} 	\ipa{tu-nɯsmɤn}] 	\ipa{mɤ-kɯ-cha}] 	\ipa{nɯ,} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{ju-ɕe-nɯ} 	\ipa{tɕe} 	\ipa{ɕ-pjɯ-ʑɣɤ-ɣɤla-nɯ} 	\\
+doctor \textsc{erg} \textsc{ipfv}-heal \textsc{neg-nmlz:S}-can \textsc{top} \textsc{dem} \textsc{loc} \textsc{ipfv}-go-\textsc{pl} \textsc{coord} \textsc{transloc-ipfv-refl}-soak-\textsc{pl} \\
+\glt Those who cannot be healed by the doctors go there and bathe in it. (ldɯɣi 54)
+   \end{exe}
+
+When nominalized, \ipa{cha} loses all person and number marking, but those of the complement clause are not neutralized, as in \ref{ex:tundzurndZi} where the  dual marking is preserved in the complement clause but applies to the whole nominalized clause.
+
+\begin{exe}
+   \ex  \label{ex:tundzurndZi}
+\gll
+[\ipa{tu-ndzur-ndʑi}   	\ipa{mɤ-kɯ-cha}]   	\ipa{nɯ} \ipa{ra}   	\ipa{ɲɯ-naχtɕɯɣ}   \\
+\textsc{ipfv}-stand-\textsc{du} \textsc{neg-nmlz:S}-can \textsc{top} \textsc{pl} \textsc{const}-identical \\
+ \glt  They are identical in that they are (trees) which are not able to stand straight. (qaʑmbri 76)
+   \end{exe}
+
+Double embedding within relative clauses is also attested in our corpus, as in \ref{ex:lukAtCAt}, an example which also illustrates a correlative with the pronoun \ipa{ɕu} ``who" marked with the ergative case within the infinitival complement inside the relative.
+
+\begin{exe}
+   \ex  \label{ex:lukAtCAt}
+\gll
+[[\ipa{ɕu}   	\ipa{kɯ}   	[\ipa{kɯ-mɯrkɯ}   	\ipa{kɯ-ŋu}]   	\ipa{lu-kɤ-tɕɤt}]   	\ipa{pɯ-kɯ-cha}]   	\ipa{nɯ}   	\ipa{a-sci}   	\ipa{rɟɤlpu}   	\ipa{chɯ-ta-sɯ-ndo}   	\ipa{ŋu}   \\
+who \textsc{erg} \textsc{nmlz:S}-steal \textsc{nmlz:S}-be \textsc{ipfv-inf}-take.out \textsc{pfv}-\textsc{nmlz:S}-can \textsc{dem} \textsc{1sg.poss}-instead king \textsc{ipfv-1$\rightarrow$2-caus}-take \textsc{n.pst}:be \\
+\glt I will give my throne to the one (among you) who is able to discover who the thief is. (The fox, 4-5)
+
+   \end{exe}
+
+ 
+
+% tɕheme	kɯ-mpɕɤr	nɯ	kɯ-maʁ,	mɤ-kɯ-mpɕɤr	nɯ	kɯ-maʁ,	ɯ-ŋga	kɯ-pe	nɯ	kɯ-maʁ,	mɤ-kɯ-pe	nɯ	kɯ-maʁ	ci,	khri	ɯ-ʁɤri	zɯ	lo-kɤmdzɯ́-chɯ	tɕe,
+%Sras 31-2
+
+\section{Other types of subordinate clauses} \label{sec:non.relative}
+ 
+ Not all sentences that have a nominal head can be analyzed as relatives. When the head noun is neither an argument nor an adjunct of the subordinate clause, these clauses cannot be analysed as relatives. 
+ 
+
+
+
+%tɤ-kɤ-tɯt nɯra kɤ-ʑɣɤsɯɣtso ma tha nɤ-ɕɯ-kɤ-rɤfɕɤt me phone, 2011, Chen Zhen
+
+In example \ref{ex:kAnWrAGo} \ref{ex:jWm}, the head nouns \ipa{ɯ-skɤt} ``his voice" and  \ipa{ftɕɤka} ``method" are neither a core argument nor an adjunct. It is not possible to transform the subordinate clause into an independent clause that would include these nouns.
+
+\begin{exe}
+   \ex  \label{ex:kAnWrAGo}
+\gll   
+\ipa{kɤ-nɯrɤɣo}  	\ipa{ɯ-skɤt}  	\ipa{ɲɯ-sna}  \\
+\textsc{inf}-sing \textsc{3sg.poss}-voix \textsc{const}-nice \\
+\glt He has a beautiful voice (when he sings) (elicited)
+   \end{exe}
+
+\begin{exe}
+   \ex  \label{ex:jWm}
+\gll
+[[\ipa{jɯm}  	\ipa{kɤ-ɕar}]  	\ipa{ɣɯ}  \ipa{ftɕɤka}]  	\ipa{ɣɯ}  	\ipa{tɯ-rɟaʁ}  	\ipa{sɯ-βzu-j}  \\
+wife:\textsc{hon} \textsc{inf}-search \textsc{gen} method \textsc{gen} \textsc{nmlz:action}-dance \textsc{n.pst:caus}-do-\textsc{1sg} \\ 
+\glt Let us make dances to look for a wife (for the prince). (The Prince, 8)
+   \end{exe}
+
+
+Example \ref{ex:biaozhun} illustrates a similar example with a subordinative clause including a stative verb.
+\begin{exe}
+   \ex  \label{ex:biaozhun}
+\gll   
+ 	[\ipa{tɕheme}  	\ipa{kɯ-pe}  	\ipa{mɤ-kɯ-pe}]  	\ipa{nɯ}  	\ipa{ɣɯ}  	\ipa{koŋla}  	\ipa{ʑo}  	\ipa{ɯ}-<biaozhun>  	\ipa{ɲɯ-ŋu,}  \\
+woman \textsc{inf:stative}-good \textsc{neg-inf:stative}-good \textsc{top} \textsc{gen} really \textsc{emph} \textsc{3sg.poss}-criterion \textsc{const}-be \\
+
+\glt It is a criterion (by which one judges whether) a woman is good or bad. (Coloured belts, 100)
+   \end{exe}
+
+%tɕe nɯnɯ tɤse pɯ-kɤ-cu tɯpu nɯ, tɤse pu rmi pig,87
+
+%ʑmbɤr ɲɯ-kɯ-ɬoʁ ci fsapaʁ ɯ-ŋgo ɣɤʑu tɕe,
+%kharwut.35
+
+In the three examples above, the verb appear in infinitive form, which resembles nominalized forms. The infinitive has the prefix \ipa{kɤ}-- for active verbs (whether transitive or intransitive), and \ipa{kɯ}-- for stative verbs.
+
+
+%8_kAnWrAGO-WskAt
+
+%maka tɕɤkɯ ɲɯ-kɯ-ru tɕe tɕɤndi smar ɯ-βzɯr tɕhi kɯ-fse mɤ-kɯ-sɤ-mto ʑo schɯs nɯ-azɣɯt ɲɯ-ŋu
+%divintation2 27
+%He arrived at river (that was so wide) that nothing was visible on the other side when one looked.
+
+%ɕɯ-kɤ-pjɤl a-ʁa me
+
+There are also examples of non-infinitive subordinate clauses with a non-relativized head nouns, with nouns relating to  speech and information, such as the possessed nouns \ipa{--fɕɤt} ``story" or \ipa{--tɕha} ``information", as in examples  \ref{ex:WfCAt} and \ref{ex:WtCha}.
+\begin{exe}
+   \ex  \label{ex:WfCAt}
+\gll   \ipa{tɕeri}  	[\ipa{zlawiɕɤrɤβ}  	\ipa{kɯ}  	\ipa{tɕhoz}  	\ipa{pɯ-asɯ-zgrɯβ}]  	\ipa{ɯ-fɕɤt}  	\ipa{tu}  	\ipa{ma}  	[\ipa{jɯm}  	\ipa{pɯ-asɯ-ɕar}]  	\ipa{ɯ-fɕɤt}  	\ipa{me}  \\
+but Zlaba.shesrab \textsc{erg} religion \textsc{pst.ipf-prog}-accomplish \textsc{3sg.poss}-story
+\textsc{n.pst}:exist but wife:\textsc{hon} \textsc{pst.ipf-prog}-search \textsc{3sg.poss}-story \textsc{n.pst}:not.exist \\
+\glt People say that Zlaba shesrab was studying religion, not that he was looking for a wife.  (The prince, 79-80)
+\end{exe}
+
+\begin{exe}
+   \ex  \label{ex:WtCha}
+\gll   
+[<donggua>  	\ipa{cho}  	<qiezi>  	\ipa{ni}  	\ipa{tɕhi}  	\ipa{ʑo}  	\ipa{mɯ́j-natɕɯɣ}]  	\ipa{ɣɯ}  	\ipa{ɯ-tɕha}  	\ipa{a-jɤ-tɯ-ɣɯt}  	\ipa{ra}  \\
+gourd and eggplant \textsc{du} what \textsc{emph} \textsc{neg:const}-similar \textsc{gen} \textsc{3sg.poss}-information \textsc{irr-pfv}-2-bring \textsc{n.pst}:need \\
+\glt You have to come to tell me in what way gourd and eggplant are different. (yici bi yici you jinbu 7)
+\end{exe}
+%a-fɕɤt pa-βzu, atɯfɕɤt pa-βzu
+
+\section{Negative indefinite}
+While Japhug has indefinite pronouns such as \ipa{thɯci} ``something" or \ipa{cɯschɯz} ``somewhere", it does not have negative indefinite pronouns  such as ``nothing" and ``nowhere". It is not possible to the Japhug indefinite pronouns with the negative of the verb, so that to express the meanings corresponding to negative indefinite pronouns in European languages, one uses a different strategy, involving a nominalized relative and the existential verb \ipa{me} ``not exist".
+
+
+\begin{exe}
+   \ex  \label{ex:nAkWnWGmu}
+\gll   
+\ipa{nɤʑo}  	\ipa{nɯ-nɯ-ɣɤwu}  	\ipa{ma,}  	\ipa{nɤ-kɯ-nɯɣ-mu}  	\ipa{me}  	\ipa{ma}  	\ipa{mɤ-ta-mbi}  \\
+you \textsc{imp-auto}-cry because \textsc{2sg-nmlz:S-appl}-be.afraid \textsc{n.pst}:not.exist because \textsc{neg-1$\rightarrow$2-n.pst}:give \\
+\glt Cry as you wish, nobody is afraid of you, I will not give her to you.  (The frog, 38)
+\end{exe}
+
+The negative polarity adverb \ipa{maka} ``at all" is often used in this type of sentences. It is located before the main verb as in \ref{ex:maka.maNe} but can also appear  within a  relative with the nominalized positive existential verb \ipa{kɯ-tu} ``which exists" negated by the negative existential verb \ipa{me} as in \ref{ex:maka.kWtu.me}.
+
+\begin{exe}
+   \ex  \label{ex:maka.maNe}
+\gll   
+[\ipa{smɤɣ-ri}  	\ipa{nɯ}  	\ipa{ra}  	\ipa{ɯ-kɯ-ntɕhoz}]  	\ipa{maka}  	\ipa{maŋe}   \\
+wool-thread \textsc{top} \textsc{pl} \textsc{3sg-nmlz:A}-use at.all not.exist:\textsc{sens} \\
+\glt Nobody uses woollen threads. (Coloured belts, 89)
+\end{exe}
+ 
+
+\begin{exe}
+   \ex  \label{ex:maka.kWtu.me}
+\gll   
+[[\ipa{ɯʑo}  	\ipa{kɯ}  	\ipa{ta-tɯt}]  	\ipa{maka}  	\ipa{kɯ-tu}]  	\ipa{me}  \\
+he \textsc{erg} \textsc{pfv}:3$\rightarrow$3'-say[II] at.all \textsc{nmlz}:S-exist \textsc{n.pst}:not.exist \\
+\glt He did not say anything at all / he said nothing. (elicited)
+\end{exe}
+
+This type of construction is also available for positive indefinites, as in \ref{ex:WkWlAt}.
+\begin{exe}
+   \ex  \label{ex:WkWlAt}
+\gll   
+<dianhua>  	\ipa{ɯ-kɯ-lɤt}  	\ipa{ɣɤʑu}  \\
+phone \textsc{3sg-nmlz}:A-throw exist:\textsc{sens} \\
+\glt Someone is calling! (Phone conversation)
+\end{exe}
+
+
+The   copulas \ipa{ŋu} ``to be" and \ipa{maʁ} ``not to be" can form a nominalized serial verb construction \ipa{kɯ-ŋu} \ipa{kɯ-maʁ} meaning ``whether or not", as illustrated by example \ref{ex:kWlAG}.
+
+
+\begin{exe}
+   \ex  \label{ex:kWlAG}
+\gll 
+[\ipa{kɯ-lɤɣ}  	\ipa{kɯ-ŋu}  	\ipa{kɯ-maʁ}]  	\ipa{ʑo}  	\ipa{jo-ɣi-nɯ}  \\
+\textsc{nmlz:S}-herd \textsc{nmlz:S}-be \textsc{nmlz:S}-not.be \textsc{emph} evd-come-\textsc{pl} \\
+\glt They (all) came, whether or not they were herders.
+(Aesop adaptation, n°54)
+\end{exe}
+
+\section{Non-restrictive relatives}  \label{sec:non.restrictive}
+Although non-restrictive relative clauses do exist in Japhug, examples in natural speech are not very common, and it is not always trivial to determine whether a particular example is a genuine instance of a non-restrictive relative clause. Also, it is not practical to study this particular topic on the basis of elicited examples.
+
+Good examples of non-restrictive relative clauses occur with personal names,  as in example \ref{ex:tshering}. It is clear here that here the relatives are simple appositions which do not identify the participant within a set of possible referents.
+
+
+
+\begin{exe}
+   \ex \label{ex:tshering}
+\gll  \ipa{ɯʑo}  	\ipa{nɯ} \ipa{ɕɯŋgɯ}  	\ipa{ɯ-nmaʁ}  	\ipa{pɯ-kɯ-ŋu}  	\ipa{tshɯraŋ}  	\ipa{nɯ}  	\ipa{pjɤ-mto}  	\\
+she \textsc{dem} before \textsc{3sg.poss}-husband \textsc{pst.ipfv-nmlz:S}-be Tshering \textsc{top} \textsc{evd}-see \\
+ \glt   She saw Tshering, who had been her husband. (The raven 102)
+   \end{exe} 
+
+In rare cases the meaning alone allows to determine that a particular example  is a non-restrictive relative, as in example \ref{ex:yachong}: all aphids eat plants, and the relative ``which eat vegetables" does not define a subgroup within this group of insects.
+
+\begin{exe}
+   \ex  \label{ex:yachong}
+\gll \ipa{iɕqha}  	<cai>  	\ipa{ɯ-kɯ-ndza},  	<yachong>  	\ipa{nɯ}  	\ipa{tu-ndze}  	\ipa{ŋu}  \\
+the.aforementioned vegetables \textsc{3sg-nmlz:}S/A-eat aphid \textsc{top} \textsc{ipfv}-eat[III] \textsc{n.pst}:be \\
+\glt (The lady-bug) eats the aphids, which eat vegetables. (Lady-bugs, 42)
+\end{exe}
+
+
+
+Non-restrictive relatives are normally pre-nominal. Counterexamples can however be found, such as  for instance \ref{ex:gesar}, or earlier in the paper, example \ref{ex:pWkWmbWt}.
+\begin{exe}
+   \ex  \label{ex:gesar}
+\gll  \ipa{ʁlaŋsaŋtɕhin}  	\ipa{χsɯm}  	\ipa{ma}  	\ipa{mɯ-tɤ-kɯ-rʑaʁ}  	\ipa{nɯ}     	\\
+  Gesar three apart.from \textsc{neg-pfv-nmlz:S}-pass.a.night \textsc{top}   \\
+ \glt  Gesar, who was only three days old, ... (Gesar 82)
+   \end{exe} 
+
+
+
+%
+%βɣɤtu ɣɯ ɯχpi nɯ ɣɯ ɯβzɯr tsa nɯtɕu li
+%kɯxtɕi ci pjɯsɯspoʁi tɕe, nɯtɕu ndʑu pjɯsɤtsaj
+%cɯpɤspoʁspoʁ, 4
+\section{Typological perspectives}
+Like other Rgyalrong languages such as Situ and Tshobdun, Japhug presents a rich array of relativizing constructions. Table \ref{tab:summary} summarizes some of the main findings presented in this paper. 
+
+
+Although it has been noted that prenominal relatives are often non-finite crosslinguistically (for instance \citealt[596-8]{wu11prenominal}), Japhug allows non-nominalized prenominal relatives for the relativization of P as well as place and time adjuncts.
+
+\begin{table}[h]
+\caption{Summary of relativization constructions in Japhug Rgyalrong} \label{tab:summary}
+\centering
+%\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|ccc|cc|l}
+\toprule
+   &  	\multicolumn{3}{c}{nominalized}     	   \vline &  	\multicolumn{2}{c}{non-nominalized}  	   \vline    	\\
+   &  	\ipa{kɯ}--   &  	\ipa{kɤ}--   &  	\ipa{sɤ}--   &  	head-   &  	generic     	\\
+&&&&internal   &head noun \\
+   \midrule
+S   &  	x   &  	   &  	   &  	   &  	   &  	\\
+A   &  	x   &  	   &  	   &  	   &  	   &  	\\
+P   &  	   &  	x   &  	   &  	x   &  	x   &  	\\
+theme (secundative verbs)   &  	   &  	x   &  	   &  	x   &  	x   &  	\\
+quasi-P   &  	   &  	x   &  	   &  	x    &  x	   &  	\\
+possessor   &  	x   &  	x   &  	   &  	   &  	   &  	\\
+recipient   &  	   &  	   &  	x   &  	   &  	   &  	\\
+comitative   &  	   &  	   &  	x   &  	   &  	   &  	\\
+time    &  	   &  	   &  	x   &  	   &  	x   &  	\\
+place   &  	   &  	   &  	x   &  	   &  	x   &  	\\
+instrument   &  	   &  	   &  	x   &  	   &  	   &  	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The syntactic role that allows by far the most possibilities in Japhug is P; this fact is somewhat unexpected in view of   \citet{keenan77accessibility}'s well-known hierarchy (\ref{ex:keenan}), in which direct object ranks lower than subject (S/A), and thus should have a more restricted array of available constructions. The fact that place and time adjuncts allow finite relativization, while S and A do not, also goes counter to this hierarchy.
+\begin{exe}
+\ex \label{ex:keenan}
+\glt  subject > direct object > indirect object > oblique > genitive > object of comparison
+\end{exe}
+
+Another interesting fact about Japhug is the status of unmarked oblique arguments (which are not indexed in the verb morphology), like the theme of indirective verbs (see sections \ref{sec:bitr} and \ref{sec:second}) or the stimulus of semi-transitive verbs (see section \ref{sec:semi.tr}),  whose behaviour in relativizing constructions is the same as P arguments, though their morphosyntactic properties in main clauses are distinct. 
+
+\section{Conclusion}
+This paper documents the relativizing constructions attested in a corpus of natural narratives in Japhug, completed by some elicitation. It cannot claim exhaustivity, and is only representative of the speech of one village of the Japhug area (\zh{干木鸟} \ipa{kɤmɲɯ}). It is likely that similar investigations on other Japhug varieties might reveal subtle differences, and that further studies based on a larger corpus could uncover some syntactic constructions overlooked in the present work.
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
