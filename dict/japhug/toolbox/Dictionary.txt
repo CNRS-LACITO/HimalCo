@@ -1,4 +1,5 @@
 \_sh v3.0  583  MDF 4.0
+\_DateStampHasFourDigitYear
 
 \lx akarɯ
 \ps N
@@ -5382,12 +5383,6 @@
 \gn 破烂 
 \hbf *qɤjdorju.78
 
-\lx ŋurɯtɕi
-\ps F
-\ge parce que 
-\gn 因为（带有反驳的语气，把自己的道理说出来） 
-\hbf
-
 \lx ommanipɤnmehoŋʂi
 \ps N
 \ge un mantra 
@@ -9180,13 +9175,6 @@
 \gn 树的一种
 \dt 12/May/2014
 
-\lx tɤ-zraʁ
-\ps Np
-\ge honte
-\gn 廉耻心
-\cf nɤzraʁ
-\nq ex
-
 \lx tɤʑin
 \ps N
 \ge vers le bas, vers l'aval 
@@ -11875,14 +11863,6 @@
 \xn 一圈肠子
 \dt 21/Aug/2012
 
-\lx tɯ-ɴɢar
-\ps Np
-\ge crachat 
-\gn 痰 
-\hbf 155 
-\xv ɯ-thoʁ nɤ-ɴɢar mɤ-thɯ-βde ma ɲɯ-sɤʑɯloʁ 
-\xn 你不要在地上吐痰，很恶心。
-
 \lx tɯ-ŋka
 \ps C
 \ge parole, bruit, nourriture mâchée que l'on recrache 
@@ -11890,6 +11870,14 @@
 \hbf 862 
 \xv tɯ-ŋka tɯ-ŋka tu-ti-a ŋu nɤ 
 \xn 我一句一句地说
+
+\lx tɯ-ɴɢar
+\ps Np
+\ge crachat 
+\gn 痰 
+\hbf 155 
+\xv ɯ-thoʁ nɤ-ɴɢar mɤ-thɯ-βde ma ɲɯ-sɤʑɯloʁ 
+\xn 你不要在地上吐痰，很恶心。
 
 \lx tɯ-pɤchaʁ
 \ps Np
@@ -20658,21 +20646,6 @@
 \cf artɯm
 \dt 25/Apr/2014
 
-\lx _arɴɢlɯm
-\wav vi-arNGlWm
-\ps Vi
-\pdl directional 
-\pdv kɤ-
-\ge concave 
-\gn 凹（地面） 
-\hbf 1722
-\xv ko-kɤrɴɢlɯm-cɯ
-\xn 凹进去了
-\xv ɯ-thoʁ ɲɯ-ɤrɴɢlɯm
-\xn 地面是凹进去的
-\cf sqlɯm
-\dt 07/Sep/2013
-
 \lx _arŋi
 \wav vi-arNi
 \ps Vi
@@ -20717,6 +20690,21 @@
 \xn 那个东西的颜色是淡蓝色的
 \cf arŋi
 \dt 10/May/2014
+
+\lx _arɴɢlɯm
+\wav vi-arNGlWm
+\ps Vi
+\pdl directional 
+\pdv kɤ-
+\ge concave 
+\gn 凹（地面） 
+\hbf 1722
+\xv ko-kɤrɴɢlɯm-cɯ
+\xn 凹进去了
+\xv ɯ-thoʁ ɲɯ-ɤrɴɢlɯm
+\xn 地面是凹进去的
+\cf sqlɯm
+\dt 07/Sep/2013
 
 \lx _aro
 \wav vi-aro
@@ -26491,10 +26479,6 @@
 \cf ŋgɯr
 \dt 01/Nov/2013
 
-\lx _ɣɤɴɢrɯ
-\cf ɴɢrɯ
-\dt 22/Nov/2012
-
 \lx _ɣɤŋoʁ
 \wav vt-GANoR
 \wav vt-nWGANoR
@@ -26521,6 +26505,10 @@
 \xv lɯlu jɤɣɤŋoʁa ma tɤmthɯm tumɯrki ɲɯŋu 
 \xn 我把猫赶走了因为它总是偷肉
 \dt 15/Jan/2011
+
+\lx _ɣɤɴɢrɯ
+\cf ɴɢrɯ
+\dt 22/Nov/2012
 
 \lx _ɣɤɴqa
 \cf ɴqa
@@ -30242,7 +30230,7 @@ da.lie 打猎
 \xv ɯʑo to-mɤpaχcɤl
 \xn 他站在中间了
 \cf mɤχcɤl
-\nq revoir prononciation
+\na revoir prononciation
 \dt 09/May/2013
 
 \lx _mɤpɤrthɤβ
@@ -34321,6 +34309,22 @@ da.lie 打猎
 \cf ŋke
 \dt 19/Oct/2012
 
+\lx _nɤŋɯr
+\ps Vt
+\pdl directional 
+\pdv nɯ-
+\ge respecter
+\gn 尊重
+\xv ɲɯ́-wɣ-nɤŋɯr-a
+\xn 他尊重我
+\sy naʁre
+\se sɤŋɯr
+\ps Vi.s
+\ge être respecter
+\gn 得到尊重
+\sy saʁre
+\dt 28/Aug/2012
+
 \lx _nɤɴqa
 \wav vt-nANqa
 \wav8 YWnANqe
@@ -34361,38 +34365,6 @@ da.lie 打猎
 \xn 我变得很懒，不想劳动
 \cf nɯpɤɴqi
 \dt 30/May/2014
-
-\lx _nɤŋɯr
-\ps Vt
-\pdl directional 
-\pdv nɯ-
-\ge respecter
-\gn 尊重
-\xv ɲɯ́-wɣ-nɤŋɯr-a
-\xn 他尊重我
-\sy naʁre
-\se sɤŋɯr
-\ps Vi.s
-\ge être respecter
-\gn 得到尊重
-\sy saʁre
-\dt 28/Aug/2012
-
-\lx _nɤŋɯr
-\ps Vt
-\pdl directional 
-\pdv nɯ-
-\ge respecter
-\gn 尊重
-\xv ɲɯ́-wɣ-nɤŋɯr-a
-\xn 他尊重我
-\sy naʁre
-\se sɤŋɯr
-\ps Vi.s
-\ge être respecter
-\gn 得到尊重
-\sy saʁre
-\dt 28/Aug/2012
 
 \lx _nɤpɤβdaʁ
 \wav vt-nApABdaR
@@ -39831,30 +39803,6 @@ da.lie 打猎
 \cf ŋgurtɕaʁ
 \dt 28/Apr/2014
 
-\lx _nɯɴɢɯlɤjɤt
-\ps Vi
-\pdl directional
-\pdv nɯ-
-\ge se séparer
-\gn 分散、各走一方（多于两个人）
-\xv nɯ-nɯɴɢɯlɤjɤt-i
-\xn 我们分散了
-\cf ɴɢɤt
-\dt 14/May/2014
-
-\lx _nɯɴɢɯlɯjɤt
-\wav8 nWnWNGWlWjAti
-\wav8 YWnWNGWlWjAt2
-\ps Vi
-\pdl directional 
-\pdv nɯ-
-\ge se séparer
-\gn 分散、走散
-\xv nɯ-nɯɴɢɯlɯjɤt-i
-\xn 我们走散了
-\sy ɴɢɤt
-\dt 09/May/2013
-
 \lx _nɯŋke
 \wav vt-nWNke
 \ps Vt
@@ -39875,31 +39823,6 @@ da.lie 打猎
 \xn 我为了找医生走了一趟
 \cf ŋke
 \dt 16/Nov/2011
-
-\lx _nɯɴqhu
-\wav vt-nWNqhu
-\wav pjWznWNqhea
-\ps Vt
-\ng denominal
-\pdl directional 
-\pdv _
-\ge suivre 
-\gn 跟踪（偷偷地~）
-\xv kɤ-anɯri tɕe ɯ-qhu kɤ-nɯɴqhu-t-a
-\xn 我回去了，我就跟踪了他
-\se znɯɴqhu
-\ps Vt
-\pdl directional 
-\pdv pɯ-
-\pdl directional 
-\pdv nɯ-
-\ge suivre, se conformer à
-\gn 照办
-\xv nɤʑo nɤ-kɤti nɯ pjɯ-znɯɴqhe-a ŋu
-\xn 我依着你的说法去做
-\cf ɯ-qhu
-\sy znɯjin
-\dt 23/Aug/2012
 
 \lx _nɯŋumit
 \wav vt-nWNumit
@@ -39938,6 +39861,55 @@ da.lie 打猎
 \xn 他跟我说了几句好话
 \cf rɯŋundʑu
 \dt 21/May/2011
+
+\lx _nɯɴɢɯlɤjɤt
+\ps Vi
+\pdl directional
+\pdv nɯ-
+\ge se séparer
+\gn 分散、各走一方（多于两个人）
+\xv nɯ-nɯɴɢɯlɤjɤt-i
+\xn 我们分散了
+\cf ɴɢɤt
+\dt 14/May/2014
+
+\lx _nɯɴɢɯlɯjɤt
+\wav8 nWnWNGWlWjAti
+\wav8 YWnWNGWlWjAt2
+\ps Vi
+\pdl directional 
+\pdv nɯ-
+\ge se séparer
+\gn 分散、走散
+\xv nɯ-nɯɴɢɯlɯjɤt-i
+\xn 我们走散了
+\sy ɴɢɤt
+\dt 09/May/2013
+
+\lx _nɯɴqhu
+\wav vt-nWNqhu
+\wav pjWznWNqhea
+\ps Vt
+\ng denominal
+\pdl directional 
+\pdv _
+\ge suivre 
+\gn 跟踪（偷偷地~）
+\xv kɤ-anɯri tɕe ɯ-qhu kɤ-nɯɴqhu-t-a
+\xn 我回去了，我就跟踪了他
+\se znɯɴqhu
+\ps Vt
+\pdl directional 
+\pdv pɯ-
+\pdl directional 
+\pdv nɯ-
+\ge suivre, se conformer à
+\gn 照办
+\xv nɤʑo nɤ-kɤti nɯ pjɯ-znɯɴqhe-a ŋu
+\xn 我依着你的说法去做
+\cf ɯ-qhu
+\sy znɯjin
+\dt 23/Aug/2012
 
 \lx _nɯpa
 \cf pa
@@ -43003,6 +42975,75 @@ da.lie 打猎
 \cf sɤmbrɯŋgɯ
 \dt 05/Dec/2012
 
+\lx _ŋkɤɲɟo
+\ps Vi
+\pdl directional
+\pdv pɯ-
+\ge passer
+\gn 路过、来往
+\xv ɯʑo pɯ-ŋkɤɲɟo
+\xn 他路过（这里）
+
+\lx _ŋke
+\wav vi-Nke
+\wav vi-Nke2.wav
+\wav8 tuCWNke-a
+\ps Vi
+\pdl directional 
+\pdv _
+\ge marcher 
+\gn 走路 
+\hbf 1815 <2> 1346 
+\xv kɤ-ŋke kɤ-ari-a
+\xn 我走路去了
+\xv pɯ-ŋke-a
+\xn 我走了一下
+\xv ɯʑo kɤ-ŋke kɤ-anɯri
+\xn 他走路回去了
+\xv aʑo nɯ-nɯ-ŋke-a, mkhɯrlu pɯ-me
+\xn 我走路去了， 没有车
+\xv @yangma tɤ-me tɕe, kɤ-nɯ-ŋke ɬoʁ 
+\xn 没有自行车的时候只好自己走 
+\xv nɯɕɯŋgɯ tɕiʑo lɤ-ari-tɕi nɯ tɤ-ŋke-tɕi pɯ-ra ma tham tɕe @qiche ɯ-ŋgu tu-kɯ-ɕe khɯ
+\xn 以前我们去的时候必须走路，现在可以坐车
+\xv sɤŋke mɯ́j-pe
+\xn 不好走
+\se ɕɯŋke
+\ps Vt
+\pdl directional 
+\pdv caus
+\ge faire marcher
+\gn 使走动
+\ge emporter
+\gn 带走
+\xv aʑo tɤpɤtso tu-fkur-a tɕe tu-ɕɯŋke-a ŋu
+\xn 我背着小孩子走动
+\cf nɯɣɯŋke
+\cf nɯŋke
+\dt 09/May/2013
+
+\lx _ŋkhor
+\wav vi-Nkhor
+\ps Vi
+\pdl directional 
+\pdv _
+\ge arriver
+\gn 来临（活佛、神仙）
+\et ɴkʰor
+\xv kɯki ɕɤfɕo aʑo a-phe ku-ŋkhor ɲɯ+ŋu
+\xn 这几天他到我这里来临
+\dt 11/Feb/2014
+
+\lx _ŋu
+\wav vi-Nu
+\ps Vi.s
+\pdl directional 
+\pdv tɤ-
+\ge être 
+\gn 是 
+\hbf 1628
+\dt 11/Jun/2014
+
 \lx _ɴɢaʁ
 \wav vi-NGaR
 \ps Vi
@@ -43195,65 +43236,6 @@ da.lie 打猎
 \cf ɴɢu
 \dt 23/Oct/2011
 
-\lx _ŋkɤɲɟo
-\ps Vi
-\pdl directional
-\pdv pɯ-
-\ge passer
-\gn 路过、来往
-\xv ɯʑo pɯ-ŋkɤɲɟo
-\xn 他路过（这里）
-
-\lx _ŋke
-\wav vi-Nke
-\wav vi-Nke2.wav
-\wav8 tuCWNke-a
-\ps Vi
-\pdl directional 
-\pdv _
-\ge marcher 
-\gn 走路 
-\hbf 1815 <2> 1346 
-\xv kɤ-ŋke kɤ-ari-a
-\xn 我走路去了
-\xv pɯ-ŋke-a
-\xn 我走了一下
-\xv ɯʑo kɤ-ŋke kɤ-anɯri
-\xn 他走路回去了
-\xv aʑo nɯ-nɯ-ŋke-a, mkhɯrlu pɯ-me
-\xn 我走路去了， 没有车
-\xv @yangma tɤ-me tɕe, kɤ-nɯ-ŋke ɬoʁ 
-\xn 没有自行车的时候只好自己走 
-\xv nɯɕɯŋgɯ tɕiʑo lɤ-ari-tɕi nɯ tɤ-ŋke-tɕi pɯ-ra ma tham tɕe @qiche ɯ-ŋgu tu-kɯ-ɕe khɯ
-\xn 以前我们去的时候必须走路，现在可以坐车
-\xv sɤŋke mɯ́j-pe
-\xn 不好走
-\se ɕɯŋke
-\ps Vt
-\pdl directional 
-\pdv caus
-\ge faire marcher
-\gn 使走动
-\ge emporter
-\gn 带走
-\xv aʑo tɤpɤtso tu-fkur-a tɕe tu-ɕɯŋke-a ŋu
-\xn 我背着小孩子走动
-\cf nɯɣɯŋke
-\cf nɯŋke
-\dt 09/May/2013
-
-\lx _ŋkhor
-\wav vi-Nkhor
-\ps Vi
-\pdl directional 
-\pdv _
-\ge arriver
-\gn 来临（活佛、神仙）
-\et ɴkʰor
-\xv kɯki ɕɤfɕo aʑo a-phe ku-ŋkhor ɲɯ+ŋu
-\xn 这几天他到我这里来临
-\dt 11/Feb/2014
-
 \lx _ɴqa
 \wav vi-Nqa
 \ps Vi.s
@@ -43340,24 +43322,6 @@ da.lie 打猎
 \cf ɕɯɴqoʁ
 \cf ʑɴɢoʁ
 \dt 15/Aug/2013
-
-\lx _ŋu
-\wav vi-Nu
-\ps Vi.s
-\ge être
-\gn 是
-\xv kɯrɯ skɤt túwɣβzu tɤŋu tɕe,
-\xn 讲藏语的话
-\dt 20/May/2011
-
-\lx _ŋu
-\ps Vi.s
-\pdl directional 
-\pdv tɤ-
-\ge être 
-\gn 是 
-\hbf 1628
-\dt 12/Mar/2014
 
 \lx _pa¹
 \wav vt-pa
@@ -48761,7 +48725,7 @@ da.lie 打猎
 \sy sɤzda 
 \cf tɯ-χti
 \cf naχti
-\nq revoir
+\na revoir
 
 \lx _sɤβdɤβde
 \wav vt-sABdABde
@@ -61837,6 +61801,16 @@ da.lie 打猎
 \xn ŋgɯsɯ生长在地边，路边和山上，听说它的根是药材，根里面是白色的，外面是土灰色的，不脆。茎细长，乌色。一种ŋgɯsɯ有小而圆的叶子，而另一种有窄而尖的叶子。两种ŋgɯsɯ的花象铃铛，天兰色，排列在茎的顶端上。
 \dt 09/Jan/2012
 
+\lx ^ŋkhrɯli
+\wav n-NkhrWli
+\wav8 NkhrWli
+\ps N
+\ge vis 
+\gn 螺丝 
+\xv ŋkhrɯli tɤ-spra-t-a
+\xn 我拧了螺丝
+\dt 19/Feb/2014
+
 \lx ^ɴɢarmɯ
 \wav n-NGarmW
 \ps N
@@ -61967,16 +61941,6 @@ da.lie 打猎
 \xn 兔子把眼睛睁得很大
 \cf qɯqli
 \dt 18/Nov/2011
-
-\lx ^ŋkhrɯli
-\wav n-NkhrWli
-\wav8 NkhrWli
-\ps N
-\ge vis 
-\gn 螺丝 
-\xv ŋkhrɯli tɤ-spra-t-a
-\xn 我拧了螺丝
-\dt 19/Feb/2014
 
 \lx ^ɴqiaβ
 \wav n-NqiAB
@@ -70674,20 +70638,17 @@ l
 
 \lx $χɤnχɤn
 \wav ideo-XAn-b
-\wav ideo-XAl-revoir
 \wav8 XAnXAn
 \ps Ideo.2
 \ge large et vide 
 \gn 又大又空的样子 
-\xv χɤnχɤn ʑo ɲɤznɤjo
+\xv χɤnχɤn ʑo ɲɯ-ɤz-nɤjo
 \xn 他呆呆地站在那里等着（望着一个方向不动）
-\xv kha ɯtɯwxti kɯ χɤnχɤn ʑo ɲɯpa
+\xv kha ɯ-tɯ-wxti kɯ χɤnχɤn ʑo ɲɯ-pa
 \xn 房子又大又空
-\xv jla kɯ χɤnχɤn ʑo ɯzda ɲɯnɤrɯra ɲɯŋu
-\xn 犏牛找它的伴，到处在看
-\xv nɤkhɯtsa ɯtɯwxti nɯ χɤnχɤn kɯ 
+\xv nɤ-khɯtsa ɯ-tɯ-wxti nɯ χɤnχɤn kɯ 
 \xn 你的碗很大！
-\xv χɤnχɤn ʑo matɤtɯʑɣɤstu
+\xv χɤnχɤn ʑo ma-tɤ-tɯ-ʑɣɤstu
 \xn 不不要那样傻乎乎的样子
 \dt 13/Dec/2011
 
