@@ -494,12 +494,6 @@
 \CharStyle
 \-mkr
 
-\+mkr nqr
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
 \+mkr ns
 \nam Notes (sociolinguistics)
 \desc For any sociolinguistics note pertinent to the lexeme that you want separate from general notes. Capitalization and punctuation should be used as needed.
