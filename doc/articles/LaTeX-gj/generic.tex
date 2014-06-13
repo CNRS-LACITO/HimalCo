@@ -18,7 +18,7 @@
  \usepackage{lineno}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Gentium} 
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
@@ -168,7 +168,7 @@ When both arguments are non-generic animate, the use of the inverse is determine
 \glt She wore the pigeon skin, he hug her, and she took him and flew away (with him). (Flood, 2012.2, 69-70)
 \end{exe}
 
-The inverse prefix \ipa{--wɣ} is not a switch reference marker: it is common to find several verbs in a row with inverse marking sharing the same A and P (if it were switch reference, only the first should be specially marked).
+The inverse prefix \ipa{--wɣ--} is not a switch reference marker: it is common to find several verbs in a row with inverse marking sharing the same A and P (if it were switch reference, only the first should be specially marked).
 
 In comparison with Algonquian and Kutenai (\citealt{dryer94inverse}), the inverse is relatively rare in Japhug narratives.
 
@@ -220,9 +220,9 @@ people \textsc{erg} \textsc{ipfv-inv}-eat \textsc{neg-fact}:be.fine \\
 
 
 
-Two transitive verbs have irregular generic forms. First, the verb \ipa{ti} `say' has generic A form \ipa{kɯ-ti} instead of expected *\ipa{ɣɯ-ti}. Second, the verb\ipa{sɯz} `know' has a negative generic A \ipa{mɤ-xsi} `one does not know' with a reduced allomorph \ipa{x--} of the \ipa{kɯ--} prefix (on this type of phonological reduction see \citealt{jacques14antipassive}).
+Two transitive verbs have irregular generic forms. First, the verb \ipa{ti} `say' has generic A form \ipa{kɯ-ti} instead of expected *\ipa{ɣɯ-ti}. Second, the verb \ipa{sɯz} `know' has a negative generic A \ipa{mɤ-xsi} `one does not know' with a reduced allomorph \ipa{x--} of the \ipa{kɯ--} prefix (on this type of phonological reduction see \citealt{jacques14antipassive}).
 
-Generic arguments are not only indexed by verbal morphology; there is also a generic pronoun \ipa{tɯʑo}`one' and a generic possessor prefix \ipa{tɯ--}.
+Generic arguments are not only indexed by verbal morphology; there is also a generic pronoun \ipa{tɯʑo} `one' and a generic possessor prefix \ipa{tɯ--}.
 
 \begin{exe}
 \ex \label{ex:YWwGnWCar}
@@ -233,8 +233,13 @@ Generic arguments are not only indexed by verbal morphology; there is also a gen
 \end{exe}
 
 
-tɕe wuma ʑo ɲɯ-χɕu ma tɯʑo-sti a-mɤ-nɯ-kɯ-ɤtɯɣ ɲɯ-ra ma ɲɯ-sɤɣmu.
-Bear, 98
+\begin{exe}
+\ex \label{ex:YWwGnWCar}
+\gll
+\ipa{tɯʑo-sti}  	\ipa{a-mɤ-nɯ-kɯ-ɤtɯɣ}  	\ipa{ɲɯ-ra}  	\ipa{ma}  	\ipa{ɲɯ-sɤɣ-mu.}  \\
+\textsc{genr}-alone \textsc{irr-neg-auto-genr:S/P}-meet \textsc{testim}-have.to because \textsc{testim-deexp}-be.afraid \\
+\glt One should not meet (a bear) alone, it is frightening. (Bear, 98)
+\end{exe}
 
 
 Non-possessed nouns can receive the prefix \ipa{tɯ--} when they have a generic human possessor, as in example \ref{ex:tWlaXtCha}. 
@@ -243,7 +248,7 @@ Non-possessed nouns can receive the prefix \ipa{tɯ--} when they have a generic 
 \ex \label{ex:tWlaXtCha}
 \gll 
 \ipa{tɕe}  	\ipa{aʁɤndɯndɤt}  	\ipa{ʑo}  	\ipa{ku-zo}  	\ipa{qhe}  	\ipa{ɯ-qe}  	\ipa{ku-lɤt}  	\ipa{qhe}	\ipa{wuma}  	\ipa{ʑo}  	\ipa{tɯ-kha}  	\ipa{cho}  	\ipa{tɯ-laχtɕha}  	\ipa{ra}  	\ipa{sɯ-ɴqhi.}  \\
-\textsc{lnk} everywhere \textsc{emph} \textsc{ipfv}-land \textsc{lnk} \textsc{3sg.poss}-feces \textsc{ipfv}-throw \textsc{lnk} really \textsc{emph} \textsc{indef.poss}-house \textsc{indef.poss}-thing \textsc{pl} \textsc{fact:caus}-be.dirty \\
+\textsc{lnk} everywhere \textsc{emph} \textsc{ipfv}-land \textsc{lnk} \textsc{3sg.poss}-feces \textsc{ipfv}-throw \textsc{lnk} really \textsc{emph} \textsc{indef.poss}-house \textsc{comit} \textsc{indef.poss}-thing \textsc{pl} \textsc{fact:caus}-be.dirty \\
 \glt (Flies) land everywhere, shit on it and make ones' houses and things dirty. (Flies, 59)
 \end{exe}
 
@@ -260,25 +265,27 @@ Non-possessed nouns can receive the prefix \ipa{tɯ--} when they have a generic 
 
 
 
-Possessed nouns obligatorily take either one of these possessive prefixes whenever their do not have a definite possessor (the distribution of these two prefixes is not predictable: it is lexically determined). 
+Possessed nouns differ from non-possessed nouns in that they obligatorily take either a indefinite  (\ipa{tɯ--} or \ipa{tɤ--})  or a definite possessive prefix (\ipa{a--} `my', \ipa{nɤ--} `your' etc; see \citealt{jacques14antipassive}). In Japhug, there is only one series of definite possessive prefixes; the distribution of the two indefinite possessive prefixes \ipa{tɯ--} and \ipa{tɤ--} is lexically determined (for instance, \ipa{--jaʁ} `hand' has the indefinite form \ipa{tɯ-jaʁ} `a hand' while \ipa{--tɕɯ} `son' has the form \ipa{tɤ-tɕɯ} `a boy'). Some possessed nouns only allow definite possessive prefixes.
 
-\ipa{tɯ--} and \ipa{tɤ--} 
-
-
+While the indefinite possessive \ipa{tɯ--} and the generic possessive \ipa{tɯ--} are phonetically identical and functionally very close, they are nevertheless distinct. The contrast between the two is only visible in the case of possessed nouns with an indefinite possive form in \ipa{tɯ--}, as both forms are possible, compare for instance \ipa{a-rpɯ} `my uncle (mother's brother)', \ipa{tɤ-rpɯ} `an uncle' with \ipa{tɯ-rpɯ} `one's uncle', in examples such as: 
 
 
-Only one referent per sentence may be marked 
+ 
 
 
-over tɯrme 
-\citet{jacques10inverse}
 
-tɯrme tɯ-fsu ɕoŋtaʁ tu-mbro mɤ-cha.
- tɯrme ɯ-fsu jamar tu-βze cha.
- tɯrme ɣɯ tɯ-ɕa ɯ-mdoʁ tsa asɯ-ndo kɯ-fse
+%Only one referent per sentence may be marked 
+%
+%
+%over tɯrme 
+%\citet{jacques10inverse}
+%
+%tɯrme tɯ-fsu ɕoŋtaʁ tu-mbro mɤ-cha.
+% tɯrme ɯ-fsu jamar tu-βze cha.
+% tɯrme ɣɯ tɯ-ɕa ɯ-mdoʁ tsa asɯ-ndo kɯ-fse
  
  
- difference between indefinite possessor and generic possessor \ipa{tɤ-rpɯ} vs \ipa{tɯ-rpɯ}
+
 \section{Other Rgyalrong languages}
 \subsection{Situ}
 \citet{linxr93jiarong}
