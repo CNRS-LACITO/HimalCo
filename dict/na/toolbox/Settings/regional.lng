@@ -1,4 +1,4 @@
-\+LanguageEncoding regional
+﻿\+LanguageEncoding regional
 \ver 5.0
 \desc MDF regional language encoding
 with default properties
@@ -115,12 +115,12 @@ N n P p Q q R r S s T t V v W w X x Y y Z z
 
 \-varset
 \+fnt 
-\Name Times New Roman
-\Size 11
-\Italic
+\Name SimSun
+\Size 12
+\charset 00
 \rgbColor 0,0,0
 \-fnt
-\kbdWin32 French
+\kbdWin32 谷歌拼音输入法 2
 \+KeyDefs 
 
 

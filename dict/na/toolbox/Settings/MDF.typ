@@ -245,6 +245,7 @@
 \desc Any comments the researcher needs to add concerning the etymology of the lexeme can be given here. Not intended for printing.
 \lng English
 \mkrOverThis et
+\mkrFollowingThis ec
 \CharStyle
 \-mkr
 
@@ -983,6 +984,7 @@
 \+mkr xf
 \lng English
 \mkrOverThis lx
+\mkrFollowingThis xc
 \-mkr
 
 \+mkr xn
