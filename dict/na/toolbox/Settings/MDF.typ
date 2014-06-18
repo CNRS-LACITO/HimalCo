@@ -532,6 +532,7 @@
 \desc A generic dump for all personal notes about an entry, subentry, or sense. More specific note fields provide a finer differentiation to one's notes: \np (phonology), \ng (grammar), \nd (discourse), \na (anthropology), \ns (sociolinguistics), and \nq (questions). All "note fields" should use capitalization and punctuation as needed.
 \lng English
 \mkrOverThis sn
+\mkrFollowingThis nt
 \CharStyle
 \-mkr
 
@@ -910,8 +911,8 @@
 \desc Where variant forms of the lexical entry or subentry can be noted (e.g. forms from another dialect or minor alternations in the focus dialect). Usually these forms occur elsewhere in the dictionary as minor entries. Comments on this field are given with the \ve, \vn, and \vr fields.
 \lng vernacular
 \mkrOverThis sn
+\mkrFollowingThis va
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr ve
@@ -970,6 +971,7 @@
 \+mkr xc
 \lng English
 \mkrOverThis lx
+\mkrFollowingThis xc
 \-mkr
 
 \+mkr xe
