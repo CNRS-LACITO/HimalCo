@@ -306,6 +306,7 @@ class Xml2Tex(InOut, XmlFormat):
             "so"    : lambda e: "\\textit{[Source:} \nq{" + e.text + "} \\textit{]}.\n",
             "a"     : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
             "va"    : lambda e: "\\textit{Variant:} \\textbf{\ipa{" + e.text + "}}.\n",
+            "ve"    : lambda e: "(" + e.text + ")\n",
             "vf"    : lambda e: "(" + e.text + ")\n",
             "pdl"   : lambda e: "\\textit{" + e.text + ":} ",
             "pdv"   : lambda e: "\\textbf{\ipa{" + e.text + "}}.\n",
@@ -365,6 +366,7 @@ class Xml2Tex(InOut, XmlFormat):
             "so"    : lambda e: "",
             "a"     : lambda e: "",
             "va"    : lambda e: "",
+            "ve"    : lambda e: "",
             "vf"    : lambda e: "",
             "pdl"   : lambda e: "\\textit{CL" + u"\u202F" + ":} ", # TODO: small caps
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
@@ -424,6 +426,7 @@ class Xml2Tex(InOut, XmlFormat):
             "so"    : lambda e: "",
             "a"     : lambda e: "",
             "va"    : lambda e: "",
+            "ve"    : lambda e: "",
             "vf"    : lambda e: "",
             "pdl"   : lambda e: "\\textit{CL:} ", # TODO: small caps
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
