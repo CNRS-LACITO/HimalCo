@@ -1,0 +1,95 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ \usepackage{lineno}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+\linenumbers
+\title{Panchronic phonology}
+\author{Guillaume Jacques}
+\maketitle
+\section{Aspirated fricatives}
+\citet{jacques11lingua}
+
+\citet{carveth13aspirated}
+\citet{carveth13aspirated}
+
+\begin{table}[H] \centering
+\begin{tabular}{llllllllllllllll}
+\toprule
+Aspirated fricatives & language \\
+\midrule
+sʰ ʃʰ & Chumashan \\
+sʰ fʰ & Ofo (Siouan) \\
+sʰ & Arawan languages  \\
+sʰ ɕʰ çʰ & Phosul Horpa (ST) \\
+sʰ ɕʰ ʂʰ & Shuiluo Pumi (ST) \\
+sʰ ɕʰ ʂʰ xʰ & Cone Tibetan(ST)  \\
+fʰ sʰ ɕʰ ʂʰ   & Heqing Bai (ST) \\
+fʰ sʰ _ɬʰ ɬʲʰ ɕʰ   & Yanghao (Hmong-mien) \\
+\bottomrule
+\end{tabular}
+
+Hierarchies:
+
+\begin{exe}
+\ex 
+\glt sʰ > {ɕʰ, ʂʰ, ʃʰ} > {çʰ, xʰ, ɬʰ}
+\glt sʰ > fʰ
+\end{exe}
+\end{table}
+
+\citet{dixon04arawa}
+\citet{dienst05kulina}
+
+\subsection{Attested pathways}
+
+\subsubsection{Tibetan}
+\begin{exe}
+\ex 
+\glt *s $\rightarrow$ sʰ
+\glt *ks/*ps $\rightarrow$ s
+\glt *z $\rightarrow$ s
+\glt *gz/*bz $\rightarrow$ z
+\end{exe}
+
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
