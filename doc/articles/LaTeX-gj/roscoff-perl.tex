@@ -1,0 +1,98 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ \usepackage{lineno}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+
+\title{Paradigm generation}
+\author{Guillaume Jacques}
+\maketitle
+\section{Introduction}
+\begin{enumerate}
+\item PERL
+\item Python
+\item XFST (\citealt{bessley03fsm})
+\end{enumerate}
+
+Implementations: \citet{jacques12khaling}, \citet{walther14compactness}
+
+
+
+\section{Perl regular expressions}
+
+
+\subsection{Header}
+\begin{verbatim}
+   use strict;
+   use warnings;
+   use utf8;
+\end{verbatim}
+
+\subsection{Variables}
+
+\begin{verbatim}
+
+   my $variable1 = "bonjour";
+   my $variable2 = substr($variable1,1,4);
+   print $variable2."\n";
+
+\end{verbatim}
+
+\subsection{Special characters}
+\begin{verbatim}
+   \n Newline
+   \r Carriage return
+   \t	tab 
+\end{verbatim}
+
+\subsection{Regular expressions}
+\subsubsection{Bind $=\sim$ and  $!\sim$}
+\begin{verbatim}
+   if ($variable =~  /on/) 
+    	{ ....
+      }
+\end{verbatim}
+
+ 
+
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
