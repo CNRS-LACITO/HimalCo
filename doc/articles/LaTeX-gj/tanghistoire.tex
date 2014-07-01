@@ -1,0 +1,180 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{memoir} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{polyglossia} 
+\setdefaultlanguage{french} 
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+%%%%%%%%%quelques options de style%%%%%%%%
+\chapterstyle{veelo}
+\nouppercaseheads
+\pagestyle{Ruled}
+\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Minion Pro:language='FRA'} %ici on définit la police par défaut du texte
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode:language='FRA'} %définition de la police sans sérif
+\setmonofont[Mapping=tex-text,Scale=MatchLowercase]{Courier New:language='FRA'} %définition de la police monospace
+\SetSymbolFont{letters}{normal}{\encodingdefault}{\rmdefault}{m}{rm}
+\setmathrm{MinionPro-Regular}
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\ah}{\v{a}}
+\newcommand{\ih}{\v{i}}
+\newcommand{\eh}{\v{e}}
+\newcommand{\oh}{\v{o}}
+\newcommand{\uh}{\v{u}}
+\newcommand{\yh}{\v{ü}}
+
+\title{Histoire Tangoute} 
+\author{Guillaume Jacques }
+\date{\today}
+
+\begin{document}
+\chapter{Introduction}
+Du dixième au treizième siècles, trois peuples non-chinois mais fortement sinisés ont établi des états puissants et indépendants au nord de la Chine: les khitans, les jurchens et les tangoutes.\footnote{Ces noms provenant du mongol, on devrait employer les formes Khitad et Jürched au pluriel et Tanggun au singulier. Toutefois, contrairement à d'autres langues européennes, le français se prête peu à une telle pédanterie.} Leurs dynasties ont péri avec l'expansion mongole, mais ont clairement servi de modèle à l'empire Mongol de Genghis Khan. A ce titre, leur contribution à l'histoire universelle ne saurait être mésestimée.
+
+Ces trois dynasties n'étaient pas les premiers états non-chinois d'Asie Orientale à disposer d'une puissance militaire comparable aux chinois. Dès le quatrième siècle, le peuple Xiānbēi a établi la dynastie Wèi du nord qui a été amenée à conquérir la moitié nord du territoire peuplé de chinois à cette époque. Toutefois, ils se sont rapidement assimilés au chinois, oubliant en l'espace de quelques générations leur langue et leurs coutumes.
+
+Plus tard, au septième siècle, ce sont les tibétains et les turcs qui ont à leur tour fondent de puissants empires, rivalisant avec la dynastie chinoise des Táng. Ces deux états diffèrent toutefois quant à eux des dynasties khitane, jurchène et tangoute en ce qu'ils ont recherché leur modèle culturel principal non pas en Chine, mais à l'ouest: c'est l'Inde qui a transmis aux tibétains leur écriture et leur religion, et les peuples iraniens qui ont inspiré aux turcs la création de leur écriture ``runique''.
+
+Les trois dynasties para-chinoises des khitans, des jurchen et des tangoutes se distinguent donc de tous les états qui les ont précédés : c'étaient des royaumes de culture sinisée, mais disposant d'une écriture propre entièrement fonctionnelle pour transcrire leur langue nationale. L'existence d'un écriture propre leur a permis d'éviter l'assimilation aux chinois qu'ont subi leur prédécesseurs Xiānbēi. Un seul autre état répondrait à ces critères: le Japon de la dynastie de Heian, mais du fait de son isolement géographique, il a connu un développement indépendant, quoique similaire d'un certain point de vue, aux trois dynasties qui nous intéressent ici.
+
+L'existence d'une écriture et d'une littérature nationale a été un facteur déterminant qui a permis à ces peuples d'éviter le sort de leurs prédécesseurs Xiānbēi. Pour l'historien, dont le principal outil d'investigation est la documentation textuelle, l'existence de sources en langue autre que le chinois apporte un point de vue radicalement distinct sur l'étude de cette période.
+
+L'état tangoute a été durant toute cette période le plus faible des trois nations du nord, aussi bien pas l'étendue de son territoire et de sa population que par sa force militaire. Elle s'est toujours développée à l'ombre de ses voisins, d'abord Khitan, puis Jurchen après 1115. Cette faiblesse relative est reflétée par l'absence d'une histoire officielle de l'état Xixia sous la dynastie Mongole, alors que les Khitan (Liáo) et les Jurchen (Jīn) ont bénéficié d'un traitement indépendant : \ipa{l'histoire officielle des Jīn} et \ipa{l'histoire officielle des Liáo}, bien que ces deux ouvrages soient considérablement moins détaillés que \ipa{l'histoire officielle des Sòng}, la dynastie chinois principale durant cette période.
+
+Toutefois, par un caprice de l'histoire, les littératures khitane et jurchène ont disparu presque entièrement; seules quelques inscriptions mal comprises ont été préservées, et leur déchiffrement est très problématique, surtout pour le khitan. Ces documents ne peuvent pas livrer aux historiens toutes les informations potentielles qu'ils contiennent. Il ne fait aucun doute que des livres, et même des bibliothèques entières, ont dû exister dans les écritures khitane et jurchène, mais presque rien n'en a survécu. Les documents sur support papier dans ces écritures sont d'une extrême rareté. Kychanov a découvert dans les années 1950, parmi les documents conservés à Léningrad, une page rédigée en jurchène en écriture manuscrite. En khitan, ont n'a en revanche qu'un fragment de papier sur lequel seul un caractère est déchiffrable. Le jurchen et le khitan ne pourront probablement être complètement déchiffrés que si jamais on découvre des livres entiers dans ces langues, auxquels on puisse associer un équivalent chinois. Le corpus des inscription khitanes est trop court pour permettre une réelle étude complète de la langue, et les textes bilingues sont trop peu nombreux.
+
+En ce qui concerne les tangoutes, la situation est différente. Les documents chinois qui concernent la dynastie Xīxià sont beaucoup moins nombreux comme nous l'avons mentionné plus haut, et ils ont gravé moins d'inscriptions que leurs voisins. Toutefois, ils nous ont légués une quantité impressionnante de textes de toutes sortes, portant aussi bien sur la religion bouddhique, la littérature, le droit, la médecine et le commerce. La majorité de ces textes provient d'une bibliothèque découverte dans les ruines d'Edzina (actuellement en Mongolie Intérieure), excavée par l'exploration russe Kozlov en 1909. La plus grande partie de ces documents sont actuellement conservés à St-Pétersbourg. Des documents tangoutes ont été également découverts dans d'autres sites, notamment en 1917 dans le Níngxià, mais aussi plus récemment dans les régions actuelles correspondant à l'ancien royaume Xīxià.
+
+Le climat désertique a certainement contribué en grand partie à la préservation de ces livres. Dans les régions à climat plus humide où résidaient les khitan et les jurchen, le papier a une durée de vie plus courte. Néanmoins, on doit considérer qu'Edzina, à l'époque du royaume Xīxià, n'était qu'une petite garnison aux marges du pays, loin des centres culturels. Il est probable qu'à la fin du douzième siècle, à l'apogée de la prospérité du royaume Xīxià, le corpus littéraire tangoute était considérablement plus étendu que ce qu'il nous en reste actuellement. Il est possible que la préservation de la littérature tangoute ne soit pas uniquement une contingence climatique, mais reflète une production littéraire supérieure en quantité et en qualité à celle des jurchens et khitans.
+
+
+En dépit de leur richesse, ces documents contiennent pas de chronique historique. Les informations historiques qu'ils apportent concernent essentiellement le fonctionnement de l'état, l'économie et la vie quotidienne. 
+
+Cet ouvrage de synthèse se base donc sur principalement sur deux groupes de documents. Les textes chinois étudiés comprennent les courts chapitres concernant le royaume Xīxià dans les trois histoires officielles concernant cette période (rédigées au quatorzième siècle), ainsi que les passages de la \ipa{Suite du miroir général utile au gouvernement} de l'historien du douzième siècle Lín Tāo, un contemporain de la dynastie Xīxià. L'ouvrage du dix-huitième siècle de Wú Gu\ah{}ngchéng sur l'histoire tangoute a en revanche été moins utilisé. Ce livre contient sans doute des informations historiques provenant de documents en chinois qui ont disparu depuis le dix-huitième siècle, mais sa valeur est considérablement réduite par le fait que cet auteur ne cite pas systématiquement ses sources : il est impossible de déterminer ce qui relève du roman historique et ce qui est le fruit de l'utilisation de documents inédits. En ce qui concerne les textes tangoutes, c'est avant tout le \ipa{Code de l'ère Tiānshèng} rédigé en 1170 dont nous nous sommes servis, mais aussi l'inscription de 1094, un certain nombre de colophons de textes bouddhiques, et quelques lettres. Les contrats et les reconnaissances de dettes en tangoute, bien que d'un intérêt considérable, n'ont pas été analysé de façon systématique pour cette étude. Les sources tibétaines, turques et mongoles n'ont pas été négligées, mais jouent un rôle plus secondaire dans ce travail.
+
+Ce travail de synthèse ne prétend pas révolutionner la connaissance de l'histoire tangoute. Ce mérite revient aux savants qui ont effectué le travail de pionniers sur les textes historiques tangoutes: Kychanov, par sa traduction du \ipa{Code de l'ère Tiānshèng} et de lettres de garnisons et Sh\ih{} Jīnbō, par son impressionnante \ipa{Esquisse du bouddhisme au Xīxià} et son étude des contrats tangoutes en écriture sténographique, ont révolutionné l'étude du royaume Xīxià. Le présent ouvrage n'a pour ambition que de rendre accessibles ces découvertes à un plus large public, mais aussi de rendre aux tangoutes leur voix en faisant usage de leur langue dans ce livre pour transcrire noms de lieux et de personnes, afin d'éviter l'ornière du sinocentrisme qui prévaut dans les études sur les trois dynasties du nord.
+
+%āáǎà
+%īíǐì
+%ēéěè
+%ōóǒò
+%ūúǔù
+%ǖǘǚǜ
+\chapter{L'origine des tangoutes} 
+Les sources chinoises mentionnent les tangoutes (en chinois \ipapl{Dǎngxiàng}) pour la première fois dans le chapitre 83 du \textit{Livre des Suí}, un ouvrage rédigé en 636. Ce court passage mérite d'être rapporté ici dans son intégralité :
+
+<<
+Les  \ipapl{Dǎngxiàng} descendent des trois \ipapl{Miáo}. Leur race est apparentée à celle des \ipapl{Dàngchāng} et des \ipapl{Báiláng} ; ils disent tous être de la race des singes. Leur territoire s'étend de Líntáo (dans l'actuel Gānsù) et Xīpíng (actuelle Xīníng au Qīngh\ah{}i) à l'est jusqu'à celui du Yabgu (l'empire des Göktürk) à l'ouest, il recouvre plusieurs milliers de lieues du nord au sud. Il se situe dans les montagnes et les vallées. 
+
+A chaque nom de famille correspond une tribu, les plus grandes comptent plus de cinq milles cavaliers, les plus petites seulement un peu plus de mille cavaliers. Ils tressent les poils de queue de yak et de mouton noir pour  fabriquer leurs maisons. Ils s'habillent de manteaux de cuir et portent du feutre comme décoration. Par leurs coutumes, ils respectent la force militaire, et n'ont pas de loi. Ils vivent séparément, mais se rassemblent en cas de guerre. Ils n'ont ni corvées ni impôts, et ont peu d'interactions les uns avec les autres. Il élèvent et font paître des bovins, des ovins et des cochons pour se nourrir, et ignorent l'agriculture. Leurs moeurs sont répugnantes même pour des barbares: ils pratiquent l'inceste avec des membres de la génération supérieure. Ils n'ont pas d'écriture, et se contentent d'employer des herbes ou des bouts de bois pour compter les années. Ils se réunissent tous les trois ans, et sacrifient des bovins et des ovins aux dieux du ciel.
+
+Lorsqu'un homme a plus de quatre-vingt ans lorsqu'il meurt, ils considèrent que c'est une belle mort, et les parents du défunt ne pleurent pas. En revanche, si un jeune meurt, ils estiment que c'est là une grande injustice, et pleurent son décès tous ensemble avec tristesse. Ils ont des guitares pípá, des flûtes horizontales, et frappent sur des jarres pour accompagner le rythme. 
+
+Entre Les Wèi du nord (386-534) et les Zhōu du nord (557–581), ils venaient en nombre important causer des troubles à la frontière. Lorsque Gāoz\uh{} (Yáng Jiān, fondateur de la dynastie Suí) servait comme premier ministre (sous la dynastie Zhōu du nord),  ils y avait de nombreux troubles dans la plaine centrale, et ils en ont profité pour commettre des pillages. Liáng Ruì, le seigneur de Ji\ah{}ng, avait alors déjà pacifié Wáng Qiān (en 580) , et il demanda la permission de revenir avec son armée pour les attaquer, mais Gāoz\uh{} ne le lui permit pas. En 584, plus de mille familles se soumirent spontanément. 
+
+En 585, Tuòbá Níngcóng conduisit son peuple vers Xùzhōu (dans l'actuel Gānsù) pour demander son intégration à l'Empire, et reçu la charge de grand général. Ses subordonnés obtinrent également diverses fonctions. 
+
+En 596, ils pillèrent à nouveau Huìzhōu (actuel Sìchuān occidental, département Qiang de Màoxiàn), et l'on ordonna d'envoyer des soldats de L\oh{}ngxī (actuel Gānsù) pour les attaquer. Leur armée fut vaincue. Il vinrent donner leur capitulation tribu après tribu, acceptèrent de devenir sujets de l'Empire et envoyèrent enfants et jeunes frères à la capitale comme otage en signe d'excuse. 
+
+
+Gāoz\uh{} leur dit : ``Retournez dire à vos parents et aînés qu'un homme pour vivre a besoin de s'installer dans une résidence fixe afin de subvenir aux besoins des personnes âgées et permettre aux jeunes de grandir. Vous, au contraire, allez et venez en permanence, n'avez-vous pas honte ?''. Suite à cela, ils vinrent apporter leur tribut en un flot continu. >>
+
+
+En dépit de sa brièveté, ce texte nous apporte une quantité appréciable d'informations.
+
+Premièrement, il prouve que dès cette époque, les tangoutes  se  une région d'une longueur de plus de trois cent kilomètres du sud-ouest au nord-est. C'est, comme on le verra par la suite, vers le nord-est jusqu'à l'actuel Sh\ipapl{ǎ}nxī qu'à continué l'expansion tangoute dans les siècles qui ont suivi. 
+
+Deuxièmement, le nom Tuòbá y est attesté. C'est là transcription chinoise (prononcée en chinois ancien *takb\ipapl{ɛ}t) d'un nom qu'on retrouve dans les inscriptions turques, \ipa{tabɣač}. Ce nom est d'origine Xiānbēi; il s'agit notamment du nom de famille impérial de la dynastie des Wèi du nord (386–535), l'empire sinisé qui a unifié le nord de la Chine durant le cinquième siècle. Les empereurs tangoutes avaient pour ancêtre des chef de tribu portant ce nom. Dans le chapitre portant sur les tangoutes dans \ipa{l'ancienne histoire officielle des Táng} (chapitre 198), il est mentionné que les tangoutes se divisaient en huit tribus, et que parmi elles, celle des Tuòbá était la plus puissante.
+
+Troisièmement, la mention d'une relation entre les tangoutes et les \ipapl{Báiláng} et d'une relation mythologique avec les singes mérite d'être notée. Ce type d'information est en général peu fiable dans les textes chinois. Toutefois, dans ce cas particulier, il est possible qu'il soit  d'être pris en compte. En effet, les \ipapl{Báiláng}, peuple de l'actuel Sìchuān, sont un des seuls peuples de l'antiquité en Asie Orientale dont la langue est attestée : une chanson, transcrite en caractères chinois, est préservée dans le  \textit{Livre des Hàn postérieurs} (compilé au cinquième siècle à partir de documents du deuxième siècle). Les travaux linguistiques sur ce document permettent d'affirmer qu'il s'agit d'une langue apparentée aux groupes lolo-birmans et qianguiques, et donc relativement proche de la langue tangoute. 
+
+Or, la linguistique comparée suggère que l'origine des tangoutes est à rechercher à l'ouest du Sìchuān, au sud de leur territoire historique, plus particulièrement dans les régions de Rngaba et de Dkarmdzes. Les raisons qui incitent à soutenir à cette hypothèse sont d'ordre linguistiques: la région de Rngaba est habitée, outre les tibétains et les chinois, par des peuples qui parlent des langues relativement proche du tangoute, les langues rgyalrong et qiang. Dans la région de Dkarmdzes, par ailleurs, se trouve une langue dont le nom \ipa{məɲɑ́} est proche phonétiquement de l'autonyme des tangoutes, Minyaa. Cette langue ne descend pas toutefois de l'ancienne langue tangoute, et il n'est même pas certain qu'il s'agisse de la langue actuelle la proche du tangoute. 
+
+Par ailleurs, la mention d'un ancêtre singe rappelle quand à elle le mythe tibétain bien connu (mais tardif du point de vue tibétain) du singe et de la démone des rochers comme ancêtres du peuple tibétain.
+
+Notre connaissance de l'histoire des tangoutes du sixième siècle jusqu'à la fin du neuvième siècle, c'est à dire durant les dynasties Suí et Táng, se limitent à leur relation avec le gouvernement chinois telle qu'elle est rapportée dans les histoires officielles. Ces textes sont du même type que l'extrait précédents: ils ne permettent de reconstituer que des bribes décousues de l'histoire des tangoutes. Ce sont ces bribes que nous allons présenter dans ce chapitre
+
+\section{L'époque des départements soumis}
+
+Au début de la dynastie Táng, durant le règne de \ipapl{Lǐ} Shìmín, un système de gouvernement indirect des régions non-chinoises fut instauré (appelé en chinois des \ipa{jīmízhōu} ``département soumis''). Plutôt que de soumettre militairement les peuples non-chinois, on donnait aux chefs de tribus qui acceptaient de se soumettre à l'Empire juridiction sur la région qu'il contrôlaient ainsi qu'un poste officiel. Ce système permettait au gouvernement chinois d'éviter de coûteuses campagnes; les non-chinois soumis, quant à eux, bénéficiaient d'une certaine autonomie. 
+
+Les tangoutes fut parmi les premiers non-chinois à accepter ce système des \textit{jīmízhōu}. Dès 629, le chef tangoute Xìfēng Bùlài se soumis à l'autorité chinois, et fut nommé gouverneur (\ipa{cìshǐ}) de la région de \ipapl{Guǐzhōu}, située dans le département tibétain actuel de Zungchu, dans la région de Rngaba, non loin des zones où les langues rgyalrong et qiang, proches du tangoute, sont encore parlées.
+
+Toutefois, un des chefs de tribus tangoutes nommé Tuòbá Chìcí étai lié maritalement avec la famille royale des T\uh{}yùhún. Il aida leur khan, Mùróng Fúy\uh{}n dans son combat contre l'armée des Táng, dirigée par le général L\ih{} Jìng. Mùróng Fúy\uh{}n fut toutefois vaincu, et soit se suicida, soit fut tué par ses compagnons d'armes. Suite à sa mort, son fils Mùróng  Shùn fut adoubé comme Khan des T\uh{}yùhún par l'empereur L\ih{} Shìmín, mais cette mesure fut recue avec hostilité par le peuple T\uh{}yùhún, et Mùróng  Shùn fut assassiné à son tour.
+
+Tuòbá Chìcí, face à la défaite de ses alliés, se soumit lui aussi à la dynastie Táng. Il fut nommé inspecteur (\ipa{dūdū}) du\ipa{jīmízhōu} de Xīróng (nom qui signifie littéralement ``barbare de l'ouest''). Ce titre était normalement plus élevé que celui de gouverneur qui avait été octroyé aux autres chefs tangoutes, mais en réalité, il restait sous l'autorité de l'inspecteur de la ville de Sōngzhōu.
+
+Alors que l'empire Táng étendait son influence vers l'ouest, imposant aux territoires tangoutes la soumission à son autorité, l'empire tibétain était en pleine expansion. Sous le règne de l'empereur Srongbstan Sgampo, la dynastie originaire de la vallée dufleuve Yarlung Gtsangpo au centre du Tibet conquiert un territoire immense allant de l'extrême ouest du Tibet (l'ancien royaume Zhang-zhung) jusqu'au Sìchuān occidental et à l'actuel Qīngh\ah{}i. 
+
+\section{Traduction du Songshu}
+Les tangoutes \zh{党項}, qui se trouvent là ou étaient les Xizhi \zh{析支}, sont une race des Qiang occidentaux de l'époque Han. Il ont commencé à devenir puissants à partir des Zhou postérieurs (951-960), et l'on compte les tribus Xifeng \zh{細風}, Feiting \zh{費聽}, Wangli \zh{往利}, Pochao \zh{頗超},  Yeluan, \zh{野亂}, Fangdang \zh{房當}, Laiqin \zh{來禽} et Tuoba \zh{拓跋}, la plus puissante d'entre elles. A l'époque Tang, de l'ère Zhenguan \zh{貞觀} (627-650) à l'ère Shangyuan \zh{上元} (674-676), ils étaient soumis aux terres de l'intérieur (les régions chinoises), et étaient dispersés dans les terres proches de la frontières du nord-ouest. 
+
+
+\pagebreak
+\begin{itemize}
+%āáǎà
+%īíǐì
+%ēéěè
+%ōóǒò
+%ūúǔù
+%ǖǘǚǜ
+
+\item Chóng Shìhéng \zh{种世衡} (985-1045), \textit{zì} \zh{仲平}. Originaire de Luòyáng. \label{pers:chongshiheng}
+\item \ipa{cìshǐ}) \zh{刺史} gouverneur.
+\item \ipapl{Dǎngxiàng} \zh{党項}: dénomination des tangoutes en chinois.
+\item Edzina: Cette ville, aussi appelée aussi en mongol Qara qotu ``ville noire'', était un avant-poste au nord de l'état Xīxià. La désertification l'a rendu inhabitable à la fin du quatorzième siècle. C'est là qu'une bibliothèque contenant des documents en tangoute a été découverte en 1905. Edzina (un terme mongol transcrit en chinois \zh{額濟納} \ipa{éjìnà} ou \zh{亦集乃} \ipa{yìjínnǎi}) est l'unique toponyme tangoute a avoir été préservé dans les langues actuelles. Le nom de cette ville était \mo{3058}\mo{176} \ipa{zjɨɨr²njaa¹}, ce qui signifie littéralement ``l'eau noire''.
+\item Gu\ih{}zhōu: Région correspondant à l'actuel Zungchu dans la région tibétaine de Rngaba au Sìchuān.
+\item Huìzhōu \zh{會州} : région située dans l'actuel département Qiang de Màoxiàn (\zh{茂縣}) au Sìchuān.
+\item jīmízhōu \zh{羈縻州} : région soumise à l'empire chinois mais gouvernée par un chef de tribu local. On en a compté 856 en tout au cours de la dynastie Táng.
+\item lieue : les l\ih{} \zh{里} chinoises valaient environ 300 m. à l'époque Táng.
+\item L\ih{} Jìng \zh{李靖} (571-649) : Un général du début de la dynastie Táng, qui servit également comme premier ministre.
+\item Liáng Ruì \zh{梁睿} (531-595) : un général durant les Zhōu du nord et les Suí.
+\item Líntáo \zh{臨洮}: département du Gānsù.
+\item Minyaa \mo{2344}\mo{176} \ipa{mji²njaa¹}: nom que les tangoutes se donnaient eux-même. La seconde syllabe signifie ``noir''. Le nom tibétain des tangoutes (\textit{mi-nyag}) ainsi que le nom du peuple muya habitant le département de Dartsemdo au Sìchuān (\ipa{məɲɑ́}) y sont apparentés.
+\item Mòcáng \zh{沒藏} \mo{3334}\mo{5164} \ipa{mja¹dzow¹}
+\item Mùróng Fúy\uh{}n \zh{慕容伏允} : Khan des T\uh{}yùhún de 597 à sa mort en 635, suite à une longue guerre avec la dynastie Táng. Son titre officiel était \zh{步薩鉢可汗} Bùsàbō Kèhán.
+\item Ngwemi \mo{2339}\mo{1903} \ipa{ŋwe²mji¹}, chinois \ipa{Wéimíng} \zh{嵬名} : Nom de la famille impériale de la dynastie Xīxià. Ce nom signifie probablement ``allaité par une vache'', comme nous le montrons p.XXX.
+\item Mùróng Nuòhébō \zh{慕容诺曷钵} : Khan des T\uh{}yùhún de 635 (après la mort de Mùróng Fúy\uh{}n et du fils de celui-ci) jusqu'à son décès en 688. Sous son règne, les T\uh{}yùhún furent vaincus par l'empire tibétain et leur territoire annexé.
+\item Rgyal-sras \zh{唃厮啰}
+\item Rngaba: région tibétaine et qiang du nord-est du Sìchuān (en chinois Abà \zh{阿壩}).
+\item Sōngzhōu \zh{松州} : région correspondant à l'actuelle Sōngpān \zh{松潘} dans la région tibétain de Rngaba au Sìchuān.
+\item Tuòbá Níngcóng \zh{拓跋寧叢}. Chef de tribu tangoute qui s'est soumis à la dynastie Suí en 584.
+\item Tuòbá Chìcí \zh{拓跋赤辭}. Chef de tribu tangoute qui a attaqué les chinois de la dynastie Táng en 634.
+\item T\uh{}yùhún \zh{吐谷渾}: peuple probablement de langue para-mongolique, appelé 'A-zha en tibétain, qui a été vaincu et assimilé à l'empire tibétain au septième siècle.
+\item Wèi du nord \zh{北魏} (386-534) : Dynastie  qui a unifié le nord de la Chine, dont la classe dirigeante, la tribu Tuòbá \zh{拓跋}/ \ipapl{Tabgač}, appartenait au peuple Xiānbēi.
+\item Xiānbēi \zh{鮮卑} : Ancien peuple du nord de la Chine, peut-être apparenté aux mongols. Leur langue n'a laissé que quelques traces en transcription chinoise, mais on considère généralement qu'elle était apparentée au mongol (et donc au khitan également).
+\item Xìfēng Bùlài \zh{細封步賴}. Chef de tribu tangoute qui se soumit en 629 et fut promu général.
+\item Xùzhōu \zh{旭州}: région se trouvant dans l'actuel département de Líntán (\zh{臨潭}) dans le Gānsù.
+
+\end{itemize}
+
+
+
+
+
+
+
+\bibliographystyle{plainnat}
+\bibliography{bibliogj}
+\end{document}
