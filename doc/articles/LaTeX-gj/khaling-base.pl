@@ -1,39 +1,32 @@
 ﻿use strict;
 use warnings;
-
 use utf8;
 
-
-sub generation {
-	open (FILE, ">>:utf8", "b.txt");
-	my ($variable1) = $_[0];
-	my ($variable2) = $_[1];
-	my $radical = $variable1; 
-		#$radical =~ s/,[\w|\(|\)|\;|\_|\.]+?,/,/;
-	$radical =~ s/\_.//;	#supprimer _ + n'importe quel autre caractère (marque de tr en fin de racine)
-	$radical =~ s/ //;	
-	
-	close(FILE);
+sub voicing {
+	my ($radical) = shift;
+	$radical =~ s/([aeiuo])p$/$1b/;
+	$radical =~ s/([aeiuo])t$/$1d/;
+	$radical =~ s/([aeiuo])k$/$1g/;
+	return $radical;
 }
+
+   sub generation {
+      open (OUTPUTFILE, ">>:utf8", "output.txt");
+      my ($root) = shift;
+      my ($class) = shift;
+      my ($meaning) = shift;
+      print OUTPUTFILE voicing($root)."\n";
+      close(OUTPUTFILE);
+   }
 	
+   open INPUTFILE, "<:utf8", "input.txt";
 
-open FICHIER, "<:utf8", "khaling-english.txt";
-
-
-
-while (<FICHIER>) {
-#my $donnees = <FICHIER>;
- 
-my ($donnees)= $_;
-chomp($donnees);
-my @mots = split('-',$donnees);
-
- #foreach my $entree (@mots) {
-    generation ($mots[0], $mots[1]);
-  
-	#print $entree;
-
-}
-close(FICHIER);
+   while (<INPUTFILE>) {
+      my ($donnees)= $_;
+      chomp($donnees);
+      my @mots = split('_',$donnees);
+      generation ($mots[0], $mots[1],$mots[2]);
+   }
+   close(INPUTFILE);
 
 

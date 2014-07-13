@@ -15,7 +15,7 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
- \usepackage{lineno}
+
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
@@ -38,7 +38,6 @@
  %CIRCG
  
 
-
 \begin{document} 
 
 \title{Paradigm generation}
@@ -52,6 +51,8 @@
 \end{enumerate}
 
 Implementations: \citet{jacques12khaling}, \citet{walther14compactness}
+
+
 
 
 
@@ -144,6 +145,33 @@ Enhanced regular expressions:
 \item Generate stems from the underlying forms stored in the dictionary by applying a series of regular expressions.
 \item Concatenate the stems with prefixes and suffixes.
 \end{enumerate}
+
+
+
+\begin{verbatim}
+
+   sub generation {
+      open (OUTPUTFILE, ">>:utf8", "output.txt");
+      my ($root) = shift;
+      my ($class) = shift;
+      my ($meaning) = shift;
+      print OUTPUTFILE $root."\n";
+      close(OUTPUTFILE);
+   }
+	
+   open INPUTFILE, "<:utf8", "input.txt";
+
+   while (<INPUTFILE>) {
+      my ($donnees)= $_;
+      chomp($donnees);
+      my @mots = split('_',$donnees);
+      generation ($mots[0], $mots[1],$mots[2]);
+   }
+   close(INPUTFILE);
+
+\end{verbatim} 
+
+
 
 \bibliographystyle{linquiry2}
 \bibliography{bibliogj}
