@@ -65,7 +65,7 @@
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-
+\newcommand{\refb}[1]{(\ref{#1})}
 
 
 \XeTeXlinebreaklocale 'zh' %使用中文换行
@@ -90,11 +90,7 @@ Keywords: Clause linking, Conditional, Counterfactual, Purposive, Tense, Relativ
 
 \section{Introduction}
 
-This paper  deals with clause linking in Japhug Rgyalrong. Although this topic has been summarily treated in previous publications (\citealt[317-325]{jacques08zh}), the present work is based on a considerably larger corpus. It also benefits from the descriptive framework and terminology provided by \citet{dixon09clause.linking}. Their classification of clause linking subtypes is semantically based, and allows a detailed description of all competing constructions available for expressing a particular meaning in the target language, and the semantic differences between them.
-
-Rather than using the syntactically based terms of \textit{main} vs \textsc{subordinate} clause, we use Dixon's term of \textit{supporting}   vs \textit{focal} clause  which are semantically based (see \citealt[2-5]{dixon09intro}).
-
-
+This paper  deals with clause linking in Japhug Rgyalrong. Although this topic has been summarily treated in previous publications (\citealt[317-325]{jacques08}), the present work is based on a considerably larger corpus. It also benefits from the descriptive framework and terminology provided by \citet{dixon09clause.linking}. Their classification of clause linking subtypes is semantically based, and allows a detailed description of all competing constructions available for expressing a particular meaning in the target language, and the semantic differences between them.\footnote{However,  following the suggestion of an anonymous reviewer, we avoid  Dixon's   \textit{supporting}   vs \textit{focal} clause whose definition is not entirely explicit (\citealt[2-5]{dixon09intro}) and keep the  more common terms `subordinate clause' and `main clause'  instead, except for the constructions where there is no syntactic or morphological evidence for postulating a subordinating relationship. In the examples, the subordinate clause is indicated between square brackets, without including the postposition, relator noun or linker.}
 
 Dixon and Aikhenvald's approach to clause linking is all the more relevant to the present work in that two out of the 15 languages in their sample, Galo and Kham (\citealt{post09linking} and \citealt{watters09kham}), belong to the Sino-Tibetan family, and thus allow family-internal typological comparisons.
 
@@ -102,15 +98,19 @@ In this paper, we first present background information on Japhug Rgyalrong verba
 
 
 \section{Background information}
-In this section, we present general information on TAM marking in Japhug, linkers and postpostions which are necessary to understand the data presented in the body of the paper.
+In this section, we present general information on TAM marking in Japhug, linkers and postpostions which are necessary to understand the data presented in the body of the paper, as coordination and subordination are marked   by specific verb forms and / or by independent subordinating or coordinating markers.
+
+Although some of this material can be found in \citet{jacques08}, it is presented here for the first time in English with additional data.
 
 \subsection{TAM marking in Japhug}
+Since subordinating constructions in Japhug often select specific TAM categories, this 
+
 A complete account of Japhug TAM marking is beyond the scope of the present paper. In this section, we first  describe the building blocks of TAM marking (directional prefixes and stem alternation) and then present an inventory of the available TAM categories (both finite and non finite).
 
 \subsubsection{Directional prefixes} \label{sec:directional}
 Most verbal forms in Japhug have a directional prefix that contains information on TAM, transitivity and  (in the case of motion and concrete action verbs) the direction of the action.
 
-With the exception of contracting verbs whose stem starts in \ipa{a--} and which present special alternations (see \citealt{jacques07passif} for more information), Japhug intransitive verbs have three series of prefixes (A, B and D) and transitive ones four series, as shown in Table \ref{tab:directional}. The distribution of these four series will be explained in more detail in section \ref{sec:finite.TAM}.
+With the exception of contracting verbs whose stem starts in \ipa{a--} and which present special alternations (see \citealt{jacques07passif} for more information), Japhug intransitive verbs have three series of prefixes (A, B and D) and transitive ones four series, as shown in Table \refb{tab:directional}. The distribution of these four series will be explained in more detail in section \refb{sec:finite.TAM}.
 
 \begin{table}[H]
 \caption{Directional prefixes in Japhug Rgyalrong} \label{tab:directional}
@@ -130,19 +130,19 @@ no direction &\ipa{jɤ--}   &  	\ipa{ju--}   &  	\ipa{ja--}   &  	\ipa{jo--}   \
 \end{tabular}}
 \end{table}
 
-Most verbs have one intrinsic direction which is lexically determined. For instance, the verb \ipa{sat} selects the direction `down' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{pɯ-sat-a}, \textbf{imperfective} \ipa{pjɯ-sat}, \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{pa-sat} and \textbf{evidential} \ipa{pjɤ-sat}. 
+Most verbs have one intrinsic direction which is lexically determined. For instance, the verb \ipa{sat} `kill' selects the direction `down' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{pɯ-sat-a}, \textbf{imperfective} \ipa{pjɯ-sat}, \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{pa-sat} and \textbf{evidential} \ipa{pjɤ-sat}. 
 
-Some verbs may allow several directions with slightly different semantics. Thus, \ipa{ndza} `eat'   normally   selects the  `up' direction (\textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `he ate it'), but when applied to carnivore animals we also find the `downstream' direction. This can lead to further aspectual distinctions. For instance, the direction `downstream', when used with stative verbs, indicates a progressive development. Footnote \ref{ft:tAme} discusses the use of different directional prefixes with the existential copula \ipa{me}.
+Some verbs may allow several directions with slightly different semantics. Thus, \ipa{ndza} `eat'   normally   selects the  `up' direction (\textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `he ate it'), but when applied to carnivore animals we also find the `downstream' direction. This can lead to further aspectual distinctions. For instance, the direction `downstream', when used with stative verbs, indicates a progressive development. Footnote \refb{ft:tAme} discusses the use of different directional prefixes with the existential copula \ipa{me}.
 
 Verbs of motion and some verbs of concrete action can be associated with all seven series of prefixes to indicate the direction of the motion. The  `no direction' series of prefixes only occurs with motion verbs. 
 
 Only three verbs have defective paradigms and never occur with directional prefixes: the sensory existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist' and the verb \ipa{kɤtɯpa} `speak' (see the paradigm of the latter in \citealt[1215]{jacques12incorp}).
 
 \subsubsection{Stem alternation} \label{sec:stem}
-The existence of stem alternations in Rgyalrong has been first noted by \citet{jackson00puxi}, who proposes to distinguish three stems: the base stem (stem 1), the perfective stem (stem 2) and the non stem (stem 3). Some varieties of Zbu Rgyalrong appear to have an additional progressive stem distinct from stem 2 in the progressive from (\citealt[352]{jacques04these}).
+The existence of stem alternations in Rgyalrong was first reported by \citet{jackson00puxi}, who proposes to distinguish three stems: the base stem (stem 1), the perfective stem (stem 2) and the non stem (stem 3). Some varieties of Zbu Rgyalrong appear to have an additional progressive stem distinct from stem 2 in the progressive from (\citealt[352]{jacques04these}).
 
 
-In Kamnyu Japhug, only four verbs have a   perfective stem distinct from the base stem; the list is provided in Table \ref{tab:stem2}. 
+In Kamnyu Japhug, only four verbs have a   perfective stem distinct from the base stem; the list is provided in Table \refb{tab:stem2}. 
 
 
  \begin{table} 
@@ -160,7 +160,7 @@ Stem 1 & meaning &Stem 2 \\
 \end{table}
 
 
-Stem 3 on the other hand is fully productive. The rules of vowel alternation in Table \ref{tab:stem3} apply to all finite transitive verbs in the forms \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3'; stem 3 does not appear in verb forms with the inverse marker (see \citealt{gongxun12}). \citet[351-7]{jacques04these} provides a historical analysis of these alternations, and shows that they result from the fusion of the verb stem with two suffixes. %Some Japhug dialects present \ipa{--u} $\rightarrow$ \ipa{--ɯm} and  \ipa{--i} $\rightarrow$ \ipa{--ɯm} alternations.  
+Stem 3 on the other hand is fully productive. The rules of vowel alternation in Table \refb{tab:stem3} apply to all finite transitive verbs in the forms \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3'; stem 3 does not appear in verb forms with the inverse marker (see \citealt{gongxun14agreement}). \citet[351-7]{jacques04these} provides a historical analysis of these alternations, and shows that they result from the fusion of the verb stem with two suffixes. %Some Japhug dialects present \ipa{--u} $\rightarrow$ \ipa{--ɯm} and  \ipa{--i} $\rightarrow$ \ipa{--ɯm} alternations.  
 
  \begin{table} 
 \caption{Stem 3 alternation in Japhug Rgyalrong} \label{tab:stem3} \centering
@@ -178,7 +178,8 @@ Stem 1 & Stem 3 \\
 
 Following the Leipzig glossing rules, we indicate stem 2 as [II] and stem 3 as [III] in the glosses in this paper.
 \subsubsection{Finite TAM categories} \label{sec:finite.TAM}
-There are nine basic finite TAM categories in Japhug, as represented in Table \ref{tab:finite.forms}. All finite forms except the factual require one and only one directional prefix. All forms can be correctly produced by combining the appropriate derivational prefixes and stems.\footnote{For the TAM categories requiring stem 3, it is restricted to  \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' forms; all other forms take the base stem.  The person affixes and the past transitive \ipa{--t} suffix are not discussed here; for  more information on this topic, see \citet{jacques10inverse}.}
+
+There are nine basic finite TAM categories in Japhug, as represented in Table \refb{tab:finite.forms}. All finite forms except the factual require one and only one directional prefix. All forms can be correctly produced by combining the appropriate derivational prefixes and stems.\footnote{For the TAM categories requiring stem 3, it is restricted to  \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' forms; all other forms take the base stem.  The person affixes and the past transitive \ipa{--t} suffix are not discussed here; for  more information on this topic, see \citet{jacques10inverse}.}
 
 
 In the case of past imperfective \ipa{pɯ--}, evidential imperfective \ipa{pjɤ--}, testimonial \ipa{ɲɯ--} and present \ipa{ku--}, the direction that is lexically selected by the verb is neutralized. Note that the past imperfective marker \ipa{pɯ--} is formally identical to the perfective \ipa{pɯ--} `down' prefix, a feature found in all Rgyalrong languages (see \citealt{lin11direction}).
@@ -206,35 +207,49 @@ imperative&	\textsc{imp} &	1 or 3&	A\\
 In addition to the basic forms, there are periphrastic TAM categories combining one of the nine categories with the copulas (\ipa{ŋu} `be' and \ipa{maʁ} `not be') and a progressive form combining one of the non-perfective categories with the prefix \ipa{asɯ}--.
 
 
-The past imperfective  and   evidential imperfective forms cannot be used with most dynamic verbs,\footnote{ See \citealt{lin11direction} for a study of the past imperfective in Rgyalrong languages. } except in    several types of conditionals, in particular counterfactuals (see \ref{sec:real.conditional} and \ref{sec:counterfact}). 
+The past imperfective  and   evidential imperfective forms cannot be used with most dynamic verbs,\footnote{ See \citealt{lin11direction} for a study of the past imperfective in Rgyalrong languages. } except in    several types of conditionals, in particular counterfactuals (see \refb{sec:real.conditional} and \refb{sec:counterfact}). 
   
  Japhug, as other Rgyalrong languages, has a clear tense distinction between past and factual in the imperfective (see \citealt{jackson00puxi}, \citealt{linyj03tense} and \citealt[371-392]{jacques04these}), but no grammaticalized future. 
+ 
+ Some clause linking constructions require a particular finite TAM forms, in particular imperfective (with the postpostion \ipa{ɕɯŋgɯ}, see \refb{sec:precedence}), the past imperfective (in one of the counterfactual constructions, \refb{sec:counterfact}) and the perfective (in the iterative coincidence linking, \refb{sec:iterative}).
   
 \subsubsection{Converbs} \label{sec:converbs}
- There are three converbs in Japhug (perfective, gerund and purposive), which combine the base stem of the verb with a  prefix \ipa{tɯ--} or \ipa{sɤ--} (etymologically probably nominalizing prefixes) and with person prefixes or directional markers in some cases. The converbs are non-finite in the sense that they do not receive person marking as the finite forms do, and cannot appear as an isolated sentence without clause chaining. The infinitive in \ipa{kɤ--} or \ipa{kɯ--} also has converbial uses (especially in the Manner linking, cf section \ref{sec:manner}).
+ There are three converbs in Japhug (perfective, gerund and purposive), which combine the base stem of the verb with a  prefix \ipa{tɯ--} or \ipa{sɤ--} (etymologically probably nominalizing prefixes) and with person prefixes or directional markers in some cases. The converbs are non-finite in the sense that they cannot appear as an isolated sentence without clause chaining, and can only index one argument with possessive prefixes (see for instance \citealt[4]{jacques14antipassive} for the paradigms), whereas finite verbs index up to two arguments with a combination of prefixes and suffixes distinct from the possessive prefixes (see for instance \citealt[134]{jacques10inverse}). In addition, non-finite verb forms lack transitivity marking and are not compatible with some TAM markers.
+ 
+ The infinitive in \ipa{kɤ--} or \ipa{kɯ--} also has converbial uses (especially in the Manner linking, cf section \refb{sec:manner}).
  
  
-The \textbf{perfective} converb \ipa{tɯ}-- expresses an immediate succession between two events (`as soon as'); its use is described in section \ref{sec:precedence}. It is formed by combining the  imperfective form of the intrinsic prefix, the \ipa{tɯ}-- prefix and the stem 1 of the verb. Since there is a homophonous prefix \ipa{tɯ}-- for second person, the perfective converb is formally identical to the second person singular imperfective form\footnote{More precisely, the \textsc{2sg} form of intransitive verbs and the \textsc{2sg>3sg} form of transitive ones. } for all verbs whose stem 1 and stem 3 are identical (which includes all intransitive verbs and some transitive ones); these quasi-homophonous forms are however easily distinguished for verbs with stem 3 alternation, as illustrated by  Table  \ref{tab:pfv.converb}.
+The \textbf{perfective} converb \ipa{tɯ}-- expresses an immediate succession between two events (`as soon as'); its use is described in section \refb{sec:imm.succession}. It is formed by combining the  imperfective form of the intrinsic prefix, the \ipa{tɯ}-- prefix and the stem 1 of the verb. Since there is a homophonous prefix \ipa{tɯ}-- for second person, the perfective converb is formally identical to the second person singular imperfective form\footnote{More precisely, the \textsc{2sg} form of intransitive verbs and the \textsc{2sg>3sg} form of transitive ones. } for all verbs whose stem 1 and stem 3 are identical (which includes all intransitive verbs and some transitive ones); these quasi-homophonous forms are however easily distinguished for transitive verbs with stem 3 alternation, as illustrated by  Table  \refb{tab:pfv.converb}.
 
 \begin{table}[h]
 \caption{Examples of the perfective converb \ipa{tɯ}--} \label{tab:pfv.converb}
+\resizebox{\columnwidth}{!}{
 \begin{tabular}{lllll}
 \toprule
-stem & meaning &imperfective (\textsc{2sg}) & perfective converb \\
+  &stem & meaning &imperfective (\textsc{2sg}) & perfective converb \\
 \midrule
-\ipa{sci} & to be born (vi) & \ipa{cʰɯ-tɯ-sci} &  \ipa{cʰɯ-tɯ-sci}\\
-\ipa{ɕe} & to go (vi) & \ipa{ju-tɯ-ɕe} & \ipa{ju-tɯ-ɕe} \\
-\ipa{tsʰi} & to drink (vt) & \ipa{ku-tɯ-tsʰi} & \ipa{ku-tɯ-tsʰi}  \\
+intransitive &\ipa{sci} & to be born (vi) & \ipa{cʰɯ-tɯ-sci} &  \ipa{cʰɯ-tɯ-sci}\\
+&\ipa{ɕe} & to go (vi) & \ipa{ju-tɯ-ɕe} & \ipa{ju-tɯ-ɕe} \\
+&\ipa{tsʰi} & to drink (vt) & \ipa{ku-tɯ-tsʰi} & \ipa{ku-tɯ-tsʰi}  \\
 \midrule
-\ipa{ndza} & to eat (vt) & \ipa{tu-tɯ-ndze} &  \ipa{tu-tɯ-ndza}\\
-\ipa{mto} & to see (vt)& \ipa{pjɯ-tɯ-mtɤm} &  \ipa{pjɯ-tɯ-mto}\\
+transitive &\ipa{ndza} & to eat (vt) & \ipa{tu-tɯ-ndze} &  \ipa{tu-tɯ-ndza}\\
+&\ipa{mto} & to see (vt)& \ipa{pjɯ-tɯ-mtɤm} &  \ipa{pjɯ-tɯ-mto}\\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 It is a paradox that a \textit{perfective}  converb is not marked by the perfective stem (stem 2) or by perfective directional prefixes, but receives imperfective markers. This complex question, which probably can only receive a historical answer, will not be discussed in this paper.
 
-The \textbf{gerund}   expresses that the event in the supporting clause occurs at the same time as that of the focal clause (\ref{sec:precedence}). It is formed by combining a prefix  \ipa{sɤ}-- with the reduplicated verb stem (only the last syllable is reduplicated). The prefix \ipa{sɤ}-- has an allomorph \ipa{sɤ}-- before sonorant derivation prefixes.  In the case of verbs that already have a reduplicated stem, such as \ipa{nɯqambɯmbjom} `to fly', no further reduplication occurs in the gerund formation. Reduplication of the last syllable of the verb stem is not sensitive to morpheme boundaries. Thus, the verb \ipa{nɯɣ-mu} `to be afraid of' has the applicative prefix \ipa{nɯɣ}--, but the \ipa{ɣ} part of the prefix participates in the reduplicated form \ipa{sɤz-nɯɣmɯɣmu} `while being afraid of it'.
+The \textbf{gerund}   expresses that the event in the subordinate clause occurs at the same time as that of the main clause \refb{sec:precedence}. It is formed by combining a prefix  \ipa{sɤ}-- with the partially reduplicated verb stem (only the last syllable is reduplicated), as the verb \ipa{mtsɯr} `be hungry' in example \refb{ex:sAmtsWmtsWr}.
+
+\begin{exe}
+\ex \label{ex:sAmtsWmtsWr}
+\gll  \ipa{kutɕu}  	\ipa{sɤ-mtsɯ\textasciitilde{}mtsɯr}  	\ipa{ku-rɤʑit-a}  	\ipa{tɕe,}  	\ipa{jisŋi}  	\ipa{ndɤ}  	\ipa{tɯmɯkɯmpɕi}  	\ipa{kɯ}  	\ipa{pɯ́-wɣ-nɯ-mbi-a}  	\ipa{ɕti}  \\
+ here \textsc{gerund}-be.hungry \textsc{ipfv}-remain-\textsc{1sg} \textsc{lnk} today however heavens \textsc{erg} \textsc{pfv:down-inv-auto}-give-\textsc{1sg} \textsc{fact}:be:\textsc{affirm} \\
+\glt I am very hungry here, but heavens have sent it (down) for  me (to eat). (Slobdpon 253)
+\end{exe}
+
+The prefix \ipa{sɤ}-- has an allomorph \ipa{sɤz}-- before sonorant derivation prefixes.  In the case of verbs that already have a reduplicated stem, such as \ipa{nɯqambɯmbjom} `to fly',\footnote{The root \ipa{mbjom}, which cannot occur independently with the meaning `fly', is partially reduplicated as \ipa{mbɯ\textasciitilde{}mbjom} with additional prefixes.} no further reduplication occurs in the gerund formation. Reduplication of the last syllable of the verb stem is not sensitive to morpheme boundaries. Thus, the verb \ipa{nɯɣ-mu} `to be afraid of' has the applicative prefix \ipa{nɯɣ}--, but the \ipa{ɣ} part of the prefix participates in the reduplicated form \ipa{sɤz-nɯɣmɯ\textasciitilde{}ɣmu} `while being afraid of it'.
 
 \begin{table}[h]
 \caption{Examples of the gerund \ipa{sɤ}--} \label{tab:gerund}
@@ -242,17 +257,20 @@ The \textbf{gerund}   expresses that the event in the supporting clause occurs a
 \toprule
 stem & meaning & gerund \\
 \midrule
-\ipa{ɣɤwu}& cry (vi)& \ipa{sɤz-ɣɤwɯwu}\\
-\ipa{nɯndzɯlŋɯz}& be sleepy (vi)& \ipa{sɤ-nɯndzɯlŋɯlŋɯz}\\
-\ipa{nɯɣmu}& be afraid of (vt)& \ipa{sɤz-nɯɣmɯɣmu}\\
+\ipa{ɣɤwu}& cry (vi)& \ipa{sɤz-ɣɤwɯ\textasciitilde{}wu}\\
+&&\textsc{gerund}-cry \\
+\ipa{nɯndzɯlŋɯz}& be sleepy (vi)& \ipa{sɤ-nɯndzɯlŋɯ\textasciitilde{}lŋɯz}\\
+&&\textsc{gerund}-be.sleepy \\
+\ipa{nɯɣmu}& be afraid of (vt)& \ipa{sɤz-nɯɣmɯ\textasciitilde{}ɣmu}\\
+&&\textsc{gerund}-be.afraid.of \\
 \midrule
 \ipa{nɯqambɯmbjom} & fly (vi) &\ipa{sɤ-nɯqambɯmbjom} \\
-
+&&\textsc{gerund}-fly \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-The \textbf{purposive} converb, like the gerund is formed by combining a \ipa{sɤ}-- prefix with the reduplicated stem of the verb; it differs from it in that it also requires a possessive prefix  and the imperfective directional prefix. The possessive prefix can be coreferent to either S, P or A: in the case of transitive verbs this form is ambiguous. The purposive converb   most commonly occurs in the negative, meaning `in order not to X', and for this reason it is this form which is chosen as representative in Table \ref{tab:purposive.converb}.
+The \textbf{purposive} converb, like the gerund is formed by combining a \ipa{sɤ}-- prefix with the reduplicated stem of the verb; it differs from it in that it also requires a possessive prefix  and the imperfective directional prefix. The possessive prefix can be coreferent to either S, P or A: in the case of transitive verbs this form is ambiguous. The purposive converb   most commonly occurs in the negative, meaning `in order not to X', and for this reason it is this form which is chosen as representative in Table \refb{tab:purposive.converb}.
 
 \begin{table}[h]
 \caption{Examples of the purposive converb \ipa{sɤ}--} \label{tab:purposive.converb}
@@ -262,54 +280,59 @@ The \textbf{purposive} converb, like the gerund is formed by combining a \ipa{s�
 stem & meaning &  purposive converb & meaning\\
 && (\textsc{3sg} negative form)\\
 \midrule
-\ipa{jmɯt} & to forget (vt) & \ipa{ɯ-mɤ-ɲɯ-sɤ-jmɯ-jmɯt} &in order not to forget \\
-\ipa{ʁndɯ} & to hit (vt) & \ipa{ɯ-mɤ-tu-sɤ-ʁndɯ-ʁndɯ} & in order not to be beaten / not to beat\\
-\ipa{aɕqʰe} & to cough (vi)& \ipa{ɯ-mɤ-tu-sɤ-ɤɕqʰɯ-ɕqʰe}& in order not to cough\\
+\ipa{jmɯt} & to forget (vt) & \ipa{ɯ-mɤ-ɲɯ-sɤ-jmɯ\textasciitilde{}jmɯt} &in order not to forget \\
+&&\textsc{3sg-neg-ipfv-purp}-forget \\
+\ipa{ʁndɯ} & to hit (vt) & \ipa{ɯ-mɤ-tu-sɤ-ʁndɯ\textasciitilde{}ʁndɯ} & in order not to be beaten / not to beat\\
+&&\textsc{3sg-neg-ipfv-purp}-hit \\
+\ipa{aɕqʰe} & to cough (vi)& \ipa{ɯ-mɤ-tu-sɤ-ɤɕqʰɯ\textasciitilde{}ɕqʰe}& in order not to cough\\
+&&\textsc{3sg-neg-ipfv-purp}-cough \\
 \bottomrule
 \end{tabular}}
 \end{table}
-Other forms of the purposive converb are presented in section \ref{sec:purposive}, including affirmative forms and forms with other personal prefixes.
+Other forms of the purposive converb are presented in section \refb{sec:purposive}, including affirmative forms and forms with other personal prefixes.
 
-The \textbf{infinitive} form is the base stem   of the verb prefixed with the  \ipa{kɤ}-- (for dynamic verbs) or \ipa{kɯ--} (for stative and non-animate intransitives). This form can be prefixed with the negative \ipa{mɤ--} and in the case of transitive verbs with a possessive prefix coreferent with the P. The infinitive mainly occurs in complement clauses and in citation form, but it can also be used as a converb for the Manner (section \ref{sec:manner}) and Purposive (section \ref{sec:purposive}) linkings.
+The \textbf{infinitive} form is the base stem   of the verb prefixed with the  \ipa{kɤ}-- (for dynamic verbs) or \ipa{kɯ--} (for stative and non-animate intransitives). This form can be prefixed with the negative \ipa{mɤ--} and in the case of transitive verbs with a possessive prefix coreferent with the P. The infinitive mainly occurs in complement clauses and in citation form, but it can also be used as a converb for the Manner (section \refb{sec:manner}) and Purposive (section \refb{sec:purposive}) linkings.
 
 
 All converbial prefixes are historically probably derived from nominalizations. As described in \citet{jacques14antipassive, jacques14relatives}, we find a series of four prefixes for nominalizations in Japhug:  \ipa{kɯ--} for S/A argument,  \ipa{kɤ--} for P argument, \ipa{sɤ--} for oblique arguments (including instrument, place and time) and \ipa{tɯ--} for action nominalization.  The infinitive is likely to originate from core argument nominalization prefixes \ipa{kɯ--} and  \ipa{kɤ--}, the immediate precedence converb from the action nominalization prefix and the purposive and gerund from the oblique nominalization prefix. 
 
-The details of the grammaticalization pathway from nominalization to converb cannot be fully analyzed by investigating only Japhug data, and require a comparative study that goes beyond the scope of this paper. Nevertheless, we do find ambiguous  sentences where a particular form could be either analyzed as the infinitive or as a nominalization, such as \ref{ex:kWdWdAn.Zo} or \ref{ex:kWqarNWrNe.Zo} in section \ref{sec:manner}. 
+The details of the grammaticalization pathway from nominalization to converb cannot be fully analyzed by investigating only Japhug data, and require a comparative study that goes beyond the scope of this paper. Nevertheless, we do find ambiguous  sentences where a particular form could be either analyzed as the infinitive or as a nominalization, such as \refb{ex:kWdWdAn.Zo} or \refb{ex:kWqarNWrNe.Zo} in section \refb{sec:manner}. 
 
-Example \ref{ex:sAXtCi} shows an oblique instrument nominalization \ipa{sɤ-χtɕi}  `cleaner' inside of a relative clause. The direct object of the main verb   	\ipa{ɲɯ́-wɣ-nɯ-pʰɯt} is \ipa{ɣzɯtʰɯz} `Selaginella', and the relative clause \ipa{tɯtʰɯ}  	\ipa{sɤ-χtɕi}  is an adjunct (without case marking) that should be understood as `(as) a pan cleaner'. This type of relative clause used as adjunct could easily be reanalyzed as a purposive converb `people would unroot it in order to clean pans'.
+Example \refb{ex:sAXtCi} shows an oblique instrument nominalization \ipa{sɤ-χtɕi}  `cleaner' inside of a relative clause. The direct object of the main verb   	\ipa{ɲɯ́-wɣ-nɯ-pʰɯt} is \ipa{ɣzɯtʰɯz} `Selaginella', and the nominalized relative clause \ipa{tɯtʰɯ}  	\ipa{sɤ-χtɕi}  is an adjunct (without case marking) that should be understood as `(as) a pan cleaner'. This type of relative clause used as adjunct could easily be reanalyzed as a purposive converb `people would unroot it in order to clean pans'.
 
 \begin{exe}
 \ex \label{ex:sAXtCi}
 \gll
 \ipa{ɣzɯtʰɯz}  	\ipa{nɯ}  	\ipa{kɯɕɯŋgɯ}  	\ipa{tɕe}  	[\ipa{tɯtʰɯ}  	\ipa{sɤ-χtɕi}]  	\ipa{ɲɯ́-wɣ-nɯ-pʰɯt}  	\ipa{pɯ-ŋgrɤl}  \\
-Selaginella \textsc{top} in.the.past \textsc{lnk} pan \textsc{nmzl:oblique}-wash \textsc{ipfv-inv-auto}-unroot \textsc{pst.ipfv}-be.usually.the.case \\
-\glt In the past, people would unroot Selaginella (to use as) a pan cleaner. (Selaginella, 106)
+Selaginella \textsc{dem} in.the.past \textsc{lnk} pan \textsc{nmzl:oblique}-wash \textsc{ipfv-inv-auto}-unroot \textsc{pst.ipfv}-be.usually.the.case \\
+\glt In the past, people would unroot \textit{Selaginella} (to use as) a pan cleaner. (Selaginella, 106)
 \end{exe}
 
-This type of ambiguous constructions are perhaps the pivot forms which allowed reanalysis from nominalized verb to converb.
+This type of ambiguous constructions are perhaps the pivot forms which allowed reanalysis from nominalized verb to converb. This type of reanalysis is widely attested in various language families, and has been described in several Sino-Tibetan languages (\citealt{coupe07mongsen}, \citealt{epps09converb}).
+
+
 
 \subsection{Postpositions}  \label{sec:postp}
 Apart from specific verbal forms, the markers of clause linking include postposition, relator nouns and linkers.
 
 
-Postpositions are a closed class of markers that appear after a noun phrase or a clause. The noun phrase/clause and the postposition constitute a postpositional phrase, of which the postposition is the head. They differ from relator nouns, which must bear a possessive prefix and are treated in section \ref{sec:relator}.  
+Postpositions are a closed class of markers that appear after a noun phrase or a clause. The noun phrase/clause and the postposition constitute a postpositional phrase, of which the postposition is the head. They differ from relator nouns, which must bear a possessive prefix and are treated in section \refb{sec:relator}.  
 
 The   postpositional phrases headed by the  ergative/instrumental \ipa{kɯ}, comitative \ipa{cʰo}, genitive \ipa{ɣɯ} and  locatives\footnote{The locative \ipa{tɕu} is not restricted to spatial reference, but can also be used for temporal reference. } \ipa{zɯ}, \ipa{ri} and \ipa{tɕu} can be relativized  (\citealt{jacques14relatives}). In the following these postpositions will be referred to as \textit{core postpositions}.
 
-Relativization of these phrases involves a nominalized verb in the relative with the prefixes \ipa{kɯ--} (for the A marked with the ergative) or \ipa{sɤ--} (for all the other ones, including the instrumental). Some verbs  such as \ipa{amɯmi} `be on good terms' or \ipa{naχtɕɯɣ} `be similar' select an argument in \ipa{cʰo}. Example \ref{ex:WsAmWmi} illustrates this use of \ipa{cʰo} as well as a relativized postpositional phrase in \ipa{cʰo}.
+Relativization of these phrases involves a nominalized verb in the relative with the prefixes \ipa{kɯ--} (for the A marked with the ergative) or \ipa{sɤ--} (for all the other ones, including the instrumental). Some verbs  such as \ipa{amɯmi} `be on good terms' or \ipa{naχtɕɯɣ} `be similar' select a postpositional phrase with \ipa{cʰo}. Example \refb{ex:WsAmWmi} illustrates this use of \ipa{cʰo} as well as a relativized postpositional phrase in \ipa{cʰo}.
 
 \begin{exe}
    \ex \label{ex:WsAmWmi}
  \gll 
 \ipa{tɕe}   	[\ipa{ɯʑo}   	\ipa{ɯ-sɤ-ɤmɯmi}]   	\ipa{nɯ}   	\ipa{dɤn}   	\ipa{ma}   	\ipa{ca}   	\ipa{kɯ-fse}   	\ipa{qaʑo}   	\ipa{kɯ-fse,}   	\ipa{tsʰɤt}   	\ipa{kɯ-fse,}   	 \ipa{ɯʑo}   	\ipa{cʰo}   	\ipa{kɯ-naχtɕɯɣ}   	\ipa{sɯjno,}   	\ipa{xɕɤj}   	\ipa{ma}   	\ipa{mɤ-kɯ-ndza}   	\ipa{nɯ} \ipa{ra}   	\ipa{cʰo}   	\ipa{nɯ}   	\ipa{amɯmi-nɯ}   	\ipa{tɕe,}   \\
-\textsc{coord} it \textsc{3sg-nmlz:oblique}-be.on.good.terms \textsc{top} \textsc{n.pst:}be.many because water.deer \textsc{nmlz:S}-be.like sheep \textsc{nmlz:S}-be.like goat  \textsc{nmlz:S}-be.like it with  \textsc{nmlz:S}-be.identical herbs grass apart.from \textsc{neg-nmlz:A}-eat \textsc{dem} \textsc{pl} with \textsc{dem} \textsc{fact}:be.on.good.terms-\textsc{pl} \textsc{coord} \\
+\textsc{coord} it \textsc{3sg-nmlz:oblique}-be.on.good.terms \textsc{dem} \textsc{fact:}be.many because water.deer \textsc{nmlz:S}-be.like sheep \textsc{nmlz:S}-be.like goat  \textsc{nmlz:S}-be.like it \textsc{comit}  \textsc{nmlz:S}-be.identical herbs grass apart.from \textsc{neg-nmlz:A}-eat \textsc{dem} \textsc{pl} with \textsc{dem} \textsc{fact}:be.on.good.terms-\textsc{pl} \textsc{coord} \\
 \glt The (animals) that are on good terms with the rabbit are many, it is in good terms with those that only eat grass, like water deer, sheep or goats. (Rabbit, 33-4)
 \end{exe}
 
 Of the core postpositions enumerated above, only the genitive \ipa{ɣɯ} is never used in clause linking.
 
-Temporal postpositions   are only found after noun phrases (\ref{ex:saXsW.CWNgW}), pronouns (\ref{ex:aZo.CWNgW}) or temporal relator nouns (example \ref{ex:CaNpCi1}). They include  \ipa{ɕaŋpɕi} `since', \ipa{mɤɕtʂa} `until', \ipa{ɕɯŋgɯ} `before', \ipa{jɤznɤ} `at the time when',  \ipa{ɕɯmɯma} `immediately after' and \ipa{kóʁmɯz}   `only then, only after'.
+Temporal postpositions   are only found after noun phrases \refb{ex:saXsW.CWNgW}, pronouns \refb{ex:aZo.CWNgW} or temporal relator nouns (example \refb{ex:CaNpCi1}). They include  \ipa{ɕaŋpɕi} `since', \ipa{mɤɕtʂa} `until', \ipa{ɕɯŋgɯ} `before', \ipa{jɤznɤ} `at the time when',  \ipa{ɕɯmɯma} `immediately after' and \ipa{kóʁmɯz}   `only then, only after'.
 
 \begin{exe}
    \ex \label{ex:saXsW.CWNgW}
@@ -335,7 +358,7 @@ Temporal postpositions   are only found after noun phrases (\ref{ex:saXsW.CWNgW}
 \glt  From that time on, their family was prosperous.   (divination3, 66)
 \end{exe}
 
- In addition we find the non-core postposition \ipa{ma} (or \ipa{mɯma}) `apart from' which does not have a temporal meaning, but whose postpositional phrases cannot be relativized. It can also appear after pronouns (\ref{ex:nAZo.ma}), nouns phrases and clauses.
+Apart from the core postposition and the temporal postpositions, we find the   postposition \ipa{ma} (or \ipa{mɯma}) `apart from'   whose postpositional phrases cannot be relativized. It can also appear after pronouns \refb{ex:nAZo.ma}, noun phrases and clauses.
  \begin{exe}
 \ex \label{ex:nAZo.ma} 
 \gll  
@@ -347,23 +370,23 @@ Temporal postpositions   are only found after noun phrases (\ref{ex:saXsW.CWNgW}
 \subsection{Relator nouns} \label{sec:relator}
 Relator nouns are an open class of possessed nouns which, like postpositions, occur as the head of a postpositional phrase. 
 
-Relator nouns differ from postpositions and linkers in that they bear a obligatory possessive prefix coreferent with the preceding    noun phrase (\ref{ex:nWNgW}). In this section, we mark all examples of relator nouns with a preceding hyphen (as in \ipa{--ŋgɯ} `inside' or \ipa{--qʰu} `after') to indicate the  presence of a possessive prefix.
+Relator nouns differ from postpositions and linkers in that they bear a obligatory possessive prefix coreferent with the preceding    noun phrase \refb{ex:nWNgW}. In this section, we mark all examples of relator nouns with a preceding hyphen (as in \ipa{--ŋgɯ} `inside' or \ipa{--qʰu} `after') to indicate the  presence of a possessive prefix.
 
  \begin{exe}
 \ex \label{ex:nWNgW} 
 \gll  
 \ipa{tɕe}  	\ipa{tɯrgi}  	\ipa{kɯ-wxti}  	\ipa{nɯ} \ipa{ra}  	\ipa{nɯ-ŋgɯ}  	\ipa{tu}  	\ipa{ma}  	\ipa{kɯ-xtɕi}  	\ipa{nɯ} \ipa{ra}  	\ipa{nɯ-ŋgɯ}  	\ipa{me.}  \\
-\textsc{lnk} fir \textsc{nmlz}:S/A-be.big \textsc{top} \textsc{pl} \textsc{3pl}-inside \textsc{fact}:exist apart.from \textsc{nmlz:S/A}-be.small  \textsc{top} \textsc{pl} \textsc{3pl}-inside  \textsc{fact}:not.exist \\
+\textsc{lnk} fir \textsc{nmlz}:S/A-be.big \textsc{dem} \textsc{pl} \textsc{3pl}-inside \textsc{fact}:exist apart.from \textsc{nmlz:S/A}-be.small  \textsc{dem} \textsc{pl} \textsc{3pl}-inside  \textsc{fact}:not.exist \\
 \glt There are (fir mushrooms) among big firs, but there none among little ones. (tɯrgi grɯβgrɯβ, 63)
 \end{exe}
 
 
-Unlike postpositions, which require a preceding constituent (whether noun phrase or clause), relator nouns can stand on their own, especially when the possessive prefix refers to a first or second person as in \ref{ex:aqhu}.
+Unlike postpositions, which require a preceding constituent (whether noun phrase or clause), relator nouns can stand on their own as in \refb{ex:aqhu}.
 
  \begin{exe}
 \ex \label{ex:aqhu} 
 \gll  \ipa{a-qʰu}  	\ipa{nɤʑo}  	\ipa{stɯsti}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{kɤ-rɤʑi}  	\ipa{mɤ-tɯ-cʰa}  \\
-\textsc{1sg}-after \textsc{2sg} alone \textsc{dem} \textsc{inf:stat}-be.like \textsc{inf}-stay \textsc{neg-2-n.pst}:can \\
+\textsc{1sg}-after \textsc{2sg} alone \textsc{dem} \textsc{inf:stat}-be.like \textsc{inf}-stay \textsc{neg-2-fact}:can \\
 \glt After I (die), you will not be able to stay like that. (The mute girl, 4)
 \end{exe}
 
@@ -377,11 +400,13 @@ Some relator nouns encode basic syntactic functions, e.g. the dative \ipa{--ɕki
 \ex \label{ex:tAmbri.Wqhu} 
 \gll 
 \ipa{qusput}  	\ipa{tɤ-mbri}  	\ipa{ɯ-qʰu}  	\ipa{ri}  	\ipa{tɕe,}  	\ipa{tɕe}  	\ipa{tɯɣ}  	\ipa{ɲɯ-βze}  	\ipa{ŋu}  	\ipa{tɕe}  	\ipa{nɯ} \ipa{tɕu}  	\ipa{tɕe}  	\ipa{kɤ-ndza}  	\ipa{mɤ-sna}  	\ipa{tu-ti-nɯ}  	\ipa{ɲɯ-ŋu.}  \\
-cuckoo \textsc{pfv}-sing \textsc{3sg}-after \textsc{loc} \textsc{lnk} \textsc{lnk} poison \textsc{ipfv}-make[III] \textsc{fact}:be \textsc{lnk}  \textsc{dem} \textsc{loc} \textsc{lnk} \textsc{inf}-eat \textsc{neg-n.pst}:be.worthy \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \\
+cuckoo \textsc{pfv}-sing \textsc{3sg}-after \textsc{loc} \textsc{lnk} \textsc{lnk} poison \textsc{ipfv}-make[III] \textsc{fact}:be \textsc{lnk}  \textsc{dem} \textsc{loc} \textsc{lnk} \textsc{inf}-eat \textsc{neg-fact}:be.worthy \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \\
 \glt After the cuckoo has sung (after the period when cuckoo sing has started), it becomes poisonous and cannot be eaten, people say. (nettle, 33)
 \end{exe}
 
-Most relator nouns have either a spatial or temporal meaning, as \ipa{--qʰu} `after (temporal or spatial)',  \ipa{--taʁ} `on',  \ipa{--pa} `under',  \ipa{--ŋgɯ} `inside, in, among', \ipa{--kʰɯkʰa} `while', \ipa{--jɯja} `while, along with' and \ipa{--raŋ} `while'. The locative postpositions \ipa{ri} or \ipa{zɯ} can follow these relator nouns as in \ref{ex:tAmbri.Wqhu}  or \ref{ex:aqhu.zW}, without a testable semantic difference. With \ipa{--ŋgɯ} the  locative merges with the relator noun to  become \ipa{--ŋgɯz} (see an example in \ref{ex:qaJy}).
+Most relator nouns have either a spatial or temporal meaning, as \ipa{--qʰu} `after (temporal or spatial)',  \ipa{--taʁ} `on',  \ipa{--pa} `under',  \ipa{--ŋgɯ} `inside, in, among', \ipa{--kʰɯkʰa} `while', \ipa{--jɯja} `while, along with' and \ipa{--raŋ} `while'. The development of relators from concrete nouns is a very common grammaticalization pathway, especially in the Sino-Tibetan family (see for instance \citealt{delancey97relator}, \citealt[184]{coupe07mongsen}).
+
+The locative postpositions \ipa{ri} or \ipa{zɯ} can follow these relator nouns as in \refb{ex:tAmbri.Wqhu}  or \refb{ex:aqhu.zW}, without a testable semantic difference. With \ipa{--ŋgɯ} the  locative merges with the relator noun to  become \ipa{--ŋgɯz} (see an example in \refb{ex:qaJy}).
 
  \begin{exe}
 \ex \label{ex:aqhu.zW} 
@@ -396,25 +421,27 @@ Some markers such as  \ipa{ɯtɕʰɯβ} `in order to', while having the trace of
 \subsection{Linkers} \label{sec:linkers}
 Linkers are a diverse class of markers with cannot be classified as either postpositions or relator nouns.   Some linkers are homophonous with postpositions, for instance the concessive \ipa{ri} with the locative \ipa{ri} and the causal \ipa{ma} `because' with \ipa{ma} `apart from'.
 
-Some linkers, such as    \ipa{tɕe}  `then', \ipa{qʰe} `then', \ipa{ndɤre} `adversative', \ipa{ri} `but', \ipa{ma}  `because' can be phonologically anchored on either the preceding (example \ref{ex:ndZitCW}) or the following phrase (\ref{ex:CkrAz.WNgW}). The first option is the most common.  
+Some linkers, such as    \ipa{tɕe}  `then', \ipa{qʰe} `then', \ipa{ndɤre} `adversative', \ipa{ri} `but', \ipa{ma}  `because' can be phonologically anchored on either the preceding (example \refb{ex:ndZitCW}) or the following phrase \refb{ex:CkrAz.WNgW}. The first option is the most common.  
  \begin{exe}
 \ex \label{ex:ndZitCW} 
 \gll
 \ipa{ndʑi-tɕɯ}   	\ipa{ci}   	\ipa{tu}   	\ipa{ri,}  \textsc{pause} 	\ipa{ndʑi-tɕɯ}   	\ipa{nɯ}   	\ipa{kɯnɤ}   	\ipa{ɯ-rʑaβ}   	\ipa{na-nɯ-ɕar}   	\ipa{qʰe,}   \\
-\textsc{3du.poss}-son \textsc{indef} \textsc{fact}:exist \textsc{lnk} {  } \textsc{3du.poss}-son  \textsc{top} also \textsc{3sg.poss}-wife \textsc{pfv}:3$\rightarrow$3'-\textsc{auto}-search \textsc{lnk} \\
+\textsc{3du.poss}-son \textsc{indef} \textsc{fact}:exist \textsc{lnk} {  } \textsc{3du.poss}-son  \textsc{dem} also \textsc{3sg.poss}-wife \textsc{pfv}:3$\rightarrow$3'-\textsc{auto}-search \textsc{lnk} \\
 \glt They have a son, but their son found himself a wife and.... (Relatives, 286-7)
 \end{exe}
  \begin{exe}
 \ex \label{ex:CkrAz.WNgW} 
 \gll
 \ipa{ɕkrɤz}   	\ipa{ɯ-ŋgɯ}   	\ipa{kɯnɤ}   	\ipa{tu-kɯ-ɬoʁ}   	\ipa{tu.}   \textsc{pause}	\ipa{\textbf{ri}}   	\ipa{ɕkrɤz}   	\ipa{ɯ-ŋgɯ}   	\ipa{nɯ}   	\ipa{mɤ-dɤn.}   \\
-oak \textsc{3sg}-inside  also \textsc{ipfv-nmlz}:S/A-come.out \textsc{fact}:exist {  } \textsc{lnk} oak \textsc{3sg}-inside \textsc{top} \textsc{neg-n.pst}:be.many \\
+oak \textsc{3sg}-inside  also \textsc{ipfv-nmlz}:S/A-come.out \textsc{fact}:exist {  } \textsc{lnk} oak \textsc{3sg}-inside \textsc{dem} \textsc{neg-fact}:be.many \\
 \glt Some also grow among the oaks. However, those among the oaks are not many. (ʑmbɯlɯm 38-39)
 \end{exe}
 
 Others such as \ipa{ʁo} `adversative', \ipa{tɤkʰa} `at the moment when', \ipa{nɤ} `conditional', \ipa{ʑo} `emphatic' form a phonological constituent with the preceding group.
 
-The linkers   \ipa{tɕe} and \ipa{qʰe} `then'  can appear directly after a noun phrase or a relative clause, in which case they are topicalizers as in \ref{ex:paRCAG} and \ref{ex:qaJy}. In these cases, the noun phrase or relative can also be marked with topicalizer \ipa{nɯ}.
+The linkers   \ipa{tɕe} and \ipa{qʰe} `then'  can appear directly after a noun phrase or a relative clause, in which case they are topicalizers as in \refb{ex:paRCAG} and \refb{ex:qaJy}.
+
+
  \begin{exe}
 \ex \label{ex:paRCAG} 
 \gll
@@ -427,13 +454,13 @@ The linkers   \ipa{tɕe} and \ipa{qʰe} `then'  can appear directly after a noun
 \ex \label{ex:qaJy} 
 \gll
 \ipa{nɯ}  	\ipa{qaɟy,}  	\ipa{aʑo}  	\ipa{a-kɤ-sɯz}  	\ipa{nɯ}  	\ipa{tɕe,}  	\ipa{qaɟy}  	\ipa{nɯ}  	\ipa{ɯ-ŋgɯ-z}  	\ipa{tɕe}  	\ipa{qandʐi}  	\ipa{kɤ-ti}  	\ipa{ci}  	\ipa{tu,}  	<shibazi>  	\ipa{kɤ-ti}  	\ipa{ci}  	\ipa{tu,}  	<shigangqiar>  	\ipa{kɤ-ti}  	\ipa{ci}  	\ipa{tu,}  \\
-\textsc{dem} fish \textsc{1sg} \textsc{1sg-nmlz:P}-know \textsc{top} \textsc{lnk:top} fish \textsc{top} \textsc{3sg}-inside-\textsc{loc} \textsc{lnk:top}  trout \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist   name  \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist   name  \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist  \\
+\textsc{dem} fish \textsc{1sg} \textsc{1sg-nmlz:P}-know \textsc{dem} \textsc{lnk:top} fish \textsc{dem} \textsc{3sg}-inside-\textsc{loc} \textsc{lnk:top}  trout \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist   name  \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist   name  \textsc{nmlz}:P-say \textsc{indef} \textsc{fact}:exist  \\
 \glt The fishes, the ones that I know about, among the fishes, there is the trout, the shibazi, the shigangqiar... (Fishes, 160-3)
 \end{exe}
 
-The linker \ipa{nɤ} is mostly restricted to conditionals (\ref{sec:conditional}) and to alternating or repeated actions linkings (\ref{sec:alternating}). It also occurs with nouns  and ideophones with a semantics very close to that of the repeated action linking. 
+The linker \ipa{nɤ} is mostly restricted to conditionals \refb{sec:conditional} and to alternating or repeated actions linkings \refb{sec:alternating}. It also occurs with nouns  and ideophones with a semantics very close to that of the repeated action linking. 
 
-The structure noun+\ipa{nɤ}+noun   expresses an action which is repeated many times, or which presents a continuous progression or increase   (example \ref{ex:taR.nA.taR}). This construction is   restricted to locative and temporal nouns. 
+The structure noun+\ipa{nɤ}+noun   expresses an action which is repeated many times, or which presents a continuous progression or increase   (example \refb{ex:taR.nA.taR}). This construction is   restricted to locative and temporal nouns. 
 
  \begin{exe}
 \ex \label{ex:taR.nA.taR} 
@@ -443,7 +470,7 @@ up \textsc{lnk} up up \textsc{lnk} up \textsc{evd:up-inv-}take.away \\
 \glt He was taken away, up and up. (The flood3, 21)
 \end{exe}
 
-With  ideophones, the same structure  is also found and expresses a rhythmic atelic action as in \ref{ex:dZaN.nA.dZaN}.
+With  ideophones, the same structure  is also found and expresses a rhythmic atelic action as in \refb{ex:dZaN.nA.dZaN}.
  
  \begin{exe}
 \ex \label{ex:dZaN.nA.dZaN} 
@@ -453,21 +480,21 @@ With  ideophones, the same structure  is also found and expresses a rhythmic ate
 \glt When it walks, it walks with (its neck) erected and moving up and down, long and thin. (peacock, 56)
 \end{exe}
 
-The semantics of the constructions found in examples \ref{ex:taR.nA.taR}  and \ref{ex:dZaN.nA.dZaN} as well as the   repeated action linking  (\ref{sec:alternating}) present some of the the iconic functions of reduplication mentioned by \citet[76]{sapir21lg}: repeated occurrence, increase in size and added intensity.
+The semantics of the constructions found in examples \refb{ex:taR.nA.taR}  and \refb{ex:dZaN.nA.dZaN} as well as the   repeated action linking  \refb{sec:alternating} present some of the the iconic functions of reduplication mentioned by \citet[76]{sapir21lg}: repeated occurrence, increase in size and added intensity.
 
-The emphatic linker \ipa{ʑo} occurs after stative verbs (in finite of non-finite forms), adverbs (expressing degree such as \ipa{wuma} `really, very', quantity such as \ipa{tʰamtɕɤt} `all' or place and time such as \ipa{aʁɤndɯndɤt} `everywhere'),  ideophones and some clause linking types (especially Temporal and Manner linkings). It also occurs with any element followed by the verb \ipa{fse} `be like'. 
+The emphatic linker \ipa{ʑo} occurs after stative verbs (in finite or non-finite forms), adverbs (expressing degree such as \ipa{wuma} `really, very', quantity such as \ipa{tʰamtɕɤt} `all' or place and time such as \ipa{aʁɤndɯndɤt} `everywhere'),  ideophones and some clause linking types (especially Temporal and Manner linkings). It also occurs with any element followed by the verb \ipa{fse} `be like'. 
 
 The linker \ipa{ʑo} indicates a higher degree, greater  intensity, frequency or quantity depending on the semantic nature of the preceding element. It cannot stand on its own  and it marks   the element preceding it as an adverbial modifier as an adverbial modifier of the following verb, except in the case of ideophones (which can appear, followed by \ipa{ʑo}, after the verb that they modify).
 
 
-Finally, we find correlative linkers   \ipa{tɕi} and \ipa{ri} `also' in the Elaboration linking (\ref{sec:elaboration}), which are repeated after  noun phrases in successive clauses; these noun phrases necessarily have the same syntactic function in each clause.
+Finally, we find correlative linkers   \ipa{tɕi} and \ipa{ri} `also' in the Elaboration linking \refb{sec:elaboration}, which are repeated after  noun phrases in successive clauses; these noun phrases necessarily have the same syntactic function in each clause.
 
 \section{Temporal}
 \subsection{Temporal succession}  \label{sec:temporal.succession}
 
 Temporal succession is a type of clause linking where the temporal sequence in which the events  took place is directly reflected by the order of the clauses describing them.   
 
-This meaning can be expressed by simple parataxis as in \ref{ex:chWphWtnW.chWBdenW}. This construction is rare, and also attested with the Elaboration linking (\ref{sec:elaboration}). It is formally similar to a serial verb construction (such constructions occur in Manner linkings, see \ref{sec:manner}).
+This meaning can be expressed by simple parataxis as in \refb{ex:chWphWtnW.chWBdenW}. This construction is rare, and also attested with the Elaboration linking \refb{sec:elaboration}. It is formally similar to a serial verb construction (such constructions occur in Manner linkings, see \refb{sec:manner}).
 \begin{exe}
 \ex \label{ex:chWphWtnW.chWBdenW}
 \gll 
@@ -476,17 +503,17 @@ This meaning can be expressed by simple parataxis as in \ref{ex:chWphWtnW.chWBde
 \glt As soon as it has grown, people unroot it and throw it away. (ɕɯrɴɢo, 34)
 \end{exe}
 
-With parataxis, when the two clauses share the same verb, the first can be elided as in \ref{ex:nWkAphaR}.
+With parataxis, when the two clauses share the same verb, the first can be elided as in \refb{ex:nWkAphaR}.
 
 \begin{exe}
 \ex \label{ex:nWkAphaR}
 \gll 
 \ipa{tɕe}  	\ipa{mɤ-kɤ-phaʁ}  	\ipa{nɯ}  	\ipa{ɕɯrdɯm,}  	\ipa{nɯ-kɤ-pʰaʁ}  	\ipa{nɯ}  	\ipa{sɯpa}  	\ipa{rmi}  	\ipa{tɕe,}  	\\
-\textsc{lnk} \textsc{neg-nmlz:}P-hack \textsc{top} non-hacked.firewood \textsc{pfv-nmlz:}P-hack \textsc{top} hacked.firewood \textsc{fact}:be.called \textsc{lnk} \\
+\textsc{lnk} \textsc{neg-nmlz:}P-hack \textsc{dem} non-hacked.firewood \textsc{pfv-nmlz:}P-hack \textsc{dem} hacked.firewood \textsc{fact}:be.called \textsc{lnk} \\
 \glt The firewood that is not hacked is called `non-hacked firewood', and the one that has been hacked is called `hacked firewood'. (fkur10-1)
 \end{exe}
 
-The most common way to express temporal succession is the linkers \ipa{tɕe} and \ipa{qʰe} `then' (and their variants \ipa{tɕendɤre} and \ipa{qʰendɤre}). \ipa{tɕe}   and \ipa{tɕendɤre} are by far the most common words in Japhug narratives and conversations, and are often repeated between clauses, as in \ref{ex:tuzbaR.tCe}. 
+The most common way to express temporal succession is the linkers \ipa{tɕe} and \ipa{qʰe} `then' (and their variants \ipa{tɕendɤre} and \ipa{qʰendɤre}). \ipa{tɕe}   and \ipa{tɕendɤre} are by far the most common words in Japhug narratives and conversations, and are often repeated between clauses, as in \refb{ex:tuzbaR.tCe}. 
 
 \begin{exe}
 \ex \label{ex:tuzbaR.tCe}
@@ -496,17 +523,17 @@ progressively \textsc{lnk}  \textsc{lnk} \textsc{ipfv}-be.dry   \textsc{lnk}  \t
 \glt Progressively, it becomes dry, its moisture  disappears, and when there is no moisture any more, they smear it (with butter). (Red leather, 8-9)
 \end{exe}
 
-The linker \ipa{qʰe} is ten times rarer than \ipa{tɕe} in our corpus. It is  never repeated, but the combination \ipa{qʰe tɕe} is also attested (\ref{ex:pjWsatnW.qhetCe}).
+The linker \ipa{qʰe} is ten times rarer than \ipa{tɕe} in our corpus. It is  never repeated, but the combination \ipa{qʰe tɕe} is also attested \refb{ex:pjWsatnW.qhetCe}.
 
 \begin{exe}
 \ex \label{ex:pjWsatnW.qhetCe}
 \gll 
 \ipa{ɯʑo}  	\ipa{pjɯ-sat-nɯ}  	\ipa{qʰe}  	\ipa{tɕe}  	\ipa{ɯ-ndʐi}  	\ipa{nɯ}  	\ipa{pjɯ-qaʁ-nɯ}  \\
-\textsc{3sg} \textsc{ipfv}-kill-\textsc{pl} \textsc{lnk}  \textsc{lnk} \textsc{3sg.poss }-skin \textsc{top} \textsc{ipfv}-skin-\textsc{pl} \\
+\textsc{3sg} \textsc{ipfv}-kill-\textsc{pl} \textsc{lnk}  \textsc{lnk} \textsc{3sg.poss }-skin \textsc{dem} \textsc{ipfv}-skin-\textsc{pl} \\
 \glt People kill it and then skin it. (spoŋsrɤm, 107)
 \end{exe}
 
- The linker \ipa{tɕe}, unlike \ipa{qʰe},  does not necessarily imply that the events of the two clauses are in succession: it can be used in Unordered Addition linking (\ref{sec:unordered}). Moreover,  \ipa{tɕe}  appears in sentences like \ref{ex:chWphWtnW.chWBdenW} whose meaning is intermediate between a pure temporal and a conditional construction.\footnote{Note that the verb \ipa{me} `not exist' has two perfective forms,  \ipa{nɯ-me} `it does not exist anymore' as in \ref{ex:tuzbaR.tCe} and the   form \ipa{tɤ-me} `in cases when there is no' illustrated by example \ref{ex:chWphWtnW.chWBdenW} than only appears in clause linkings. \label{ft:tAme}}
+ The linker \ipa{tɕe}, unlike \ipa{qʰe},  does not necessarily imply that the events of the two clauses are in succession: it can be used in Unordered Addition linking \refb{sec:unordered}. Moreover,  \ipa{tɕe}  appears in sentences like \refb{ex:chWphWtnW.chWBdenW} whose meaning is intermediate between a pure temporal and a conditional construction.\footnote{Note that the verb \ipa{me} `not exist' has two perfective forms,  \ipa{nɯ-me} `it does not exist anymore' as in \refb{ex:tuzbaR.tCe} and the   form \ipa{tɤ-me} `in cases when there is no' illustrated by example \refb{ex:chWphWtnW.chWBdenW} than only appears in clause linkings. \label{ft:tAme}}
 
 \begin{exe}
 \ex \label{ex:chWphWtnW.chWBdenW}
@@ -518,22 +545,24 @@ The linker \ipa{qʰe} is ten times rarer than \ipa{tɕe} in our corpus. It is  n
  
   
 \subsection{Relative time} \label{sec:relative.time}
-Relative time in Japhug is expressed by means of postpositions, relator nouns (which can also serve to mark noun phrases) on the supporting clause, which is always placed before the focal clause. There are also a few constructions of this type where the supporting clause has a verb in converbial form. 
+Relative time in Japhug is expressed by means of postpositions, relator nouns (which can also serve to mark noun phrases) on the subordinate clause, which is always placed before the main clause. There are also a few constructions of this type where the subordinate clause has a verb in converbial form. 
 
 
 
 
 
  \subsubsection{Length of time}
-With the verb \ipa{tsu} `to pass, to spend (a certain amount of time)' in the perfective, simple succession of clauses can be used to indicate the length of a period of time during which the state resulting from the event depicted by the preceding perfective sentence has lasted.  The first sentence can be either topicalized with \ipa{nɯ} as in \ref{ex:tAwGrum}, left unmarked as in \ref{ex:kamWfsej} or separated by a coordinator like \ipa{tɕe}. The clause containing \ipa{tsu} includes a nominal indicating the time period.
+With the verb \ipa{tsu} `to pass, to spend (a certain amount of time)' in the perfective, simple succession of clauses can be used to indicate the length of a period of time during which the state resulting from the event depicted by the preceding perfective sentence has lasted.  The first sentence can be either topicalized with the distal demonstrative \ipa{nɯ} as in \refb{ex:tAwGrum}, left unmarked as in \refb{ex:kamWfsej} or separated by a linker like \ipa{tɕe}. The clause containing \ipa{tsu} includes a nominal indicating the time period.
 
 \begin{exe}
 \ex \label{ex:tAwGrum}
 \gll 
 [\ipa{nɯnɯ}   	\ipa{tɤ-wɣrum}]   	\ipa{nɯ}   	[\ipa{tɯ-sŋi}   	\ipa{ʁnɯ-sŋi}   	\ipa{jamar}   	\ipa{tɤ-tsu}]   	\ipa{tɕe,}   	[...] 	\ipa{tɕe}   	\ipa{nɯnɯ}   	\ipa{tu-zga}   	\ipa{ɲɯ-ŋu.}   \\
-\textsc{dem} \textsc{pfv}-be.white \textsc{top} one-day two-day about \textsc{pfv}-pass \textsc{lnk} ... \textsc{lnk} \textsc{dem} \textsc{ipfv}-be.ripe \textsc{testim}-be \\
+\textsc{dem} \textsc{pfv}-be.white \textsc{dem} one-day two-day about \textsc{pfv}-pass \textsc{lnk} ... \textsc{lnk} \textsc{dem} \textsc{ipfv}-be.ripe \textsc{testim}-be \\
 \glt  Once one or two days have passed after it turned white, it   ripens. (Pimples, 124)
 \end{exe}
+
+
 \begin{exe}
 \ex \label{ex:kamWfsej}
 \gll  
@@ -545,7 +574,7 @@ we \textsc{pfv}-know.each.other-\textsc{1pl} five-year \textsc{pfv}-pass \\
 
 The clause containing \ipa{tsu} normally occurs after the one depicting the event indicating the starting point of the period, but it is possible to reverse the order using the focal clause linker \ipa{ma}.
 
-The auxiliary verb \ipa{pa} `do' can also be used instead of \ipa{tsu} `to pass', as in example \ref{ex:kamWfsetCi}.
+The auxiliary verb \ipa{pa} `do' can also be used instead of \ipa{tsu} `to pass', as in example \refb{ex:kamWfsetCi}.
 \begin{exe}
 \ex \label{ex:kamWfsetCi}
 \gll  
@@ -554,11 +583,11 @@ Sangndzin.Lhamo \textsc{comit} \textsc{1du} \textsc{du}  \textsc{pfv}-know.each.
 \glt Sangndzin Lhamo and I have known each other for more than forty years. (Friends, 2-3)
 \end{exe}
 
-%succession, precedence, simultaneity
 \subsubsection{Succession} \label{sec:succession}
 There are three ways of expressing succession in Japhug, either by using possessed relator nouns, a   postposition or by means of the  converb of immediate succession.  
 
-The   possessed relator noun  \ipa{ɯ-qʰu} `after'  can be postposed to the supporting clause to express succession between the event depicted in the supporting clause and that of the focal clause. The verb in the supporting clause has to be in a finite form. In most examples it is in the perfective of evidential forms, but there are no restrictions on its TAM marking and examples in the imperfective are also found (sentence \ref{ex:chWGtaR}). The locative marker \ipa{ri} can optionally be added after these nouns as in example \ref{ex:smWntsxWG}.  The noun \ipa{ɯ-qʰu} also has a locative meaning `behind' when used preverbally or following a noun phrase relating to a place. 
+The   possessed relator noun  \ipa{ɯ-qʰu} `after'  can be postposed to the subordinate clause to express succession between the event depicted in the subordinate clause and that of the main clause. The verb in the subordinate clause has to be in a finite form. In most examples it is in the perfective of evidential forms, but there are no restrictions on its TAM marking and examples in the imperfective are also found (sentence \refb{ex:chWGtaR}). The locative marker \ipa{ri} can optionally be added after these nouns as in example \refb{ex:smWntsxWG}.  The noun \ipa{ɯ-qʰu} also has a locative meaning `behind' when used preverbally or following a noun phrase relating to a place. 
+
 \begin{exe}
 \ex \label{ex:chWGtaR}
 \gll 
@@ -580,7 +609,7 @@ Pleiades \textsc{dem} \textsc{pfv}-come.out \textsc{3sg.poss}-after a.little \te
 
 
 
-The possessed noun \ipa{ɯ-mpʰru} `after' is much more rarely to express succession between two clauses than \ipa{ɯ-qʰu}. The verb of the supporting clause is in the perfective (\ref{ex:Wmphru}) or in the evidential.
+Second, the possessed noun \ipa{ɯ-mpʰru} `after', like \ipa{ɯ-qʰu}, can express succession between two clauses. The verb of the subordinate clause is in the perfective \refb{ex:Wmphru} or in the evidential.
 
 
 \begin{exe}
@@ -590,7 +619,7 @@ The possessed noun \ipa{ɯ-mpʰru} `after' is much more rarely to express succes
 \glt  It is found after it has rained. (zdɯmqe, 73)
 \end{exe}
 
-A third possessed noun that can be used to express succession is \ipa{ɯ-ndo} `internal side of a field (the one towards the river)' that has a temporal meaning `in the end' in sentences like \ref{ex:Wŋgu.jAznA}.
+Third,  \ipa{ɯ-ndo} `internal side of a field (the one towards the river)' can also express  succession and has a temporal meaning `in the end' in sentences like \refb{ex:Wŋgu.jAznA}.
 
 \begin{exe}
 \ex \label{ex:Wŋgu.jAznA}
@@ -600,18 +629,18 @@ A third possessed noun that can be used to express succession is \ipa{ɯ-ndo} `i
 \glt In the beginning, he was an obedient (child), but in the end he became naughty. (elicitation)
 \end{exe}
 
-A second construction used to express succession is the postposition \ipa{jɤznɤ} `at the time when' which indicates a bounded period of time after the reference point corresponding to the event described in the supporting clause, as in \ref{ex:tALoR.jAznA}.
+An alternative construction used to express succession is the postposition \ipa{jɤznɤ} `at the time when' which indicates a bounded period of time after the reference point corresponding to the event described in the subordinate clause, as in \refb{ex:tALoR.jAznA}.
 
 \begin{exe}
 \ex \label{ex:tALoR.jAznA}
 \gll 
-\ipa{tɤ-ɬoʁ}  	\ipa{\textbf{jɤznɤ}}  	\ipa{ɲɯ-xtɕi}  	\ipa{laʁma}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{ɲɯ-nɯ-ŋɯ-ŋu}  	\ipa{qʰe}  \\
+[\ipa{tɤ-ɬoʁ}]  	\ipa{\textbf{jɤznɤ}}  	\ipa{ɲɯ-xtɕi}  	\ipa{laʁma}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{ɲɯ-nɯ-ŋɯ-ŋu}  	\ipa{qʰe}  \\
 \textsc{pfv}-come.out  while \textsc{testim}-be.small apart.from.the.fact.that \textsc{dem} \textsc{nmlz}:S/A-be.like \textsc{const-auto-redp}-be \textsc{lnk} \\
 \glt Apart from the fact that it small (during the period after) it has come out, it is (already) like that (it has a round shape). (zwɤrqʰɤjmɤɣ, 19)
 	\end{exe}
 
 
- To express an unbounded length of time following the reference point (valid up to the present time, unlike in the case of \ipa{jɤznɤ}), the postposition \ipa{ɕaŋpɕi} `since'  can be used instead, and optionally followed by the emphatic linker \ipa{ʑo} and the linkers \ipa{tɕe} or \ipa{qʰe}. This usage, although possible, is not attested in out corpus.\footnote{All examples of \ipa{ɕaŋpɕi} `since' in our corpus occur after noun phrases.}
+ To express an unbounded length of time following the reference point (valid up to the present time, unlike in the case of \ipa{jɤznɤ}), the postposition \ipa{ɕaŋpɕi} `since, henceforth'\footnote{This postposition must be borrowed from Tibetan, since the rhyme \ipa{--aŋ} does not occur in the native non-ideophonic vocabulary, but its exact source is unclear; the second syllable is probably related to the first syllable of Tibetan \ipa{pʰʲin.tɕʰad} `from ... on'.} can be used instead, and optionally followed by the emphatic linker \ipa{ʑo} and the linkers \ipa{tɕe} or \ipa{qʰe}. This usage, although possible, is not attested in out corpus.\footnote{All examples of \ipa{ɕaŋpɕi} `since' in our corpus occur after noun phrases.}
   \begin{exe}
 \ex \label{ex:jariCaNpCi} 
 \gll
@@ -624,7 +653,7 @@ A second construction used to express succession is the postposition \ipa{jɤzn�
 
 \subsubsection{Precedence} \label{sec:precedence}
 %the event depicted in a focal clause
-The only way to express neutral temporal precedence  in Japhug  is a construction with the postposition  \ipa{ɕɯŋgɯ} `before'.\footnote{This postposition, used with a noun phrase, only has a temporal meaning unlike \ipa{ɯ-qʰu} `after'.} The verb of the supporting clause must be in the imperfective, regardless of whether the verb of the focal clause it is in the imperfective  (\ref{ex:pjWsi.CWNgW} and \ref{ex:junWGi.CWNgW}) or in the perfective   (\ref{ex:YWsi.CWNgW}).
+The only way to express neutral temporal precedence  in Japhug  is a construction with the postposition  \ipa{ɕɯŋgɯ} `before'.\footnote{This postposition, used with a noun phrase, only has a temporal meaning unlike \ipa{ɯ-qʰu} `after'.} The verb of the subordinate clause must be in the imperfective, regardless of whether the verb of the focal clause it is in the imperfective  (\ref{ex:pjWsi.CWNgW} and \ref{ex:junWGi.CWNgW}) or in the perfective   \refb{ex:YWsi.CWNgW}.
 
 \begin{exe}
 \ex \label{ex:pjWsi.CWNgW}
@@ -649,7 +678,7 @@ Lobzang \textsc{ipfv}-come.home before marriage \textsc{fact}:make-\textsc{1pl} 
 \glt They had divorced before she died. (Siblings, 325)
 \end{exe}
 
-The postposition \ipa{ɕɯŋgɯ} `before' can be combined with  \ipa{jɤznɤ} to express a time period ending with the point of reference in the supporting clause.
+The postposition \ipa{ɕɯŋgɯ} `before' can be combined with  \ipa{jɤznɤ} to express a time period ending with the point of reference in the subordinate clause.
 
 \begin{exe}
 \ex \label{ex:CWNgW.jAZnA}
@@ -660,7 +689,7 @@ The postposition \ipa{ɕɯŋgɯ} `before' can be combined with  \ipa{jɤznɤ} to
 \end{exe}
  
 %A more common way to express this meaning
-For expressing a event occurring during an   period  of time with no explicit beginning until the point of reference, the postposition \ipa{mɤɕtʂa} `until' is employed, as in \ref{ex:mWnWspAt} and \ref{ex:mWthazGWtndZi}. The supporting clause is almost always in the perfective. 
+For expressing an event occurring during a period  of time with no explicit beginning until the point of reference, the postposition \ipa{mɤɕtʂa} `until' is employed, as in \refb{ex:mWnWspAt} and \refb{ex:mWthazGWtndZi}. The subordinate clause is almost always in the perfective. 
 
 
 
@@ -668,7 +697,7 @@ For expressing a event occurring during an   period  of time with no explicit be
 \ex \label{ex:mWnWspAt}
 \gll
 \ipa{βʑɯ}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{a-mɤ-kɤ-kɯ-mtsɯɣ}   	\ipa{ra}   	\ipa{ma}   	\ipa{ŋotɕu}   	\ipa{ka-ndo}   	\ipa{qʰe,}   	[\ipa{mɯ-nɯ-spɤt}]   	\textbf{\ipa{mɤɕtʂa}}   	\ipa{ɲɯ-te}   	\ipa{mɤ-ŋgrɤl.}   \\
-mouse \textsc{top} \textsc{erg} \textsc{irr-neg-pfv-genr}:S/P-bite \textsc{fact}:need \textsc{lnk} where \textsc{pfv}:3>3-grab \textsc{lnk} \textsc{neg:pfv}-be.torn.apart until \textsc{ipfv}:put[III] \textsc{neg:n.pst}:be.usually.the.case \\
+mouse \textsc{dem} \textsc{erg} \textsc{irr-neg-pfv-genr}:S/P-bite \textsc{fact}:need \textsc{lnk} where \textsc{pfv}:3>3-grab \textsc{lnk} \textsc{neg:pfv}-be.torn.apart until \textsc{ipfv}:put[III] \textsc{neg:fact}:be.usually.the.case \\
 \glt  One should not be bitten by a mouse, because it does not let go of the place that it has bitten until (the flesh) has been torn apart. (Mouse, 182)
 \end{exe}
 
@@ -680,14 +709,14 @@ eighty \textsc{3sg.poss}-leftover each \textsc{neg-pfv}-reach-\textsc{du} until 
 \glt They did not die before they had reached eighty (years old). (Siblings, 38)
 \end{exe}
 
-In most examples, \ipa{mɤɕtʂa} `until' is used with the supporting clause and the focal clause in a negative form as in \ref{ex:mWnWspAt} and \ref{ex:mWthazGWtndZi}. We do find examples of \ipa{mɤɕtʂa} with non-negative supporting clauses (\ref{ex:taZa.mACtsxa}) or non-negative focal ones (\ref{ex:mWlAfsoR} and \ref{ex:WsAme}), but one of the two has to be with a verb in the negative form.
+In most examples, \ipa{mɤɕtʂa} `until' is used with the subordinate clause and the main clause in a negative form as in \refb{ex:mWnWspAt} and \refb{ex:mWthazGWtndZi}. We do find examples of \ipa{mɤɕtʂa} with non-negative subordinate clauses \refb{ex:taZa.mACtsxa} or non-negative main clauses (\ref{ex:mWlAfsoR} and \ref{ex:WsAme}), but one of the two has to be with a verb in the negative form.
 
 \begin{exe}
 \ex \label{ex:taZa.mACtsxa}
 \gll
 [\ipa{ɯ-mat}   	\ipa{tɯ-lɤt}   	\ipa{ta-ʑa}]   	\textbf{\ipa{mɤɕtʂa}}   	\ipa{mɤ-sɯχsɤl-nɯ}   \\
-\textsc{3sg.poss}-fruit \textsc{nmlz:action}-throw \textsc{pfv:3>3}-begin until \textsc{neg-n.pst}:recognize-\textsc{pl} \\
-\glt They are not able to recognize it before it has born fruits. (Oat, 19)
+\textsc{3sg.poss}-fruit \textsc{nmlz:action}-throw \textsc{pfv:3>3}-begin until \textsc{neg-fact}:recognize-\textsc{pl} \\
+\glt They are not able to recognize it before it has born fruit. (Oat, 19)
 \end{exe}
 \begin{exe}
 \ex \label{ex:mWlAfsoR}
@@ -701,11 +730,11 @@ In most examples, \ipa{mɤɕtʂa} `until' is used with the supporting clause and
    \ex \label{ex:WsAme}
  \gll
 [\ipa{mɯ-tʰɯ-wxti}]   	\textbf{\ipa{mɤɕtʂa}}  	\ipa{tɤ-mu}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{ɯ-pɯ}   	\ipa{ra,}   	\ipa{ɯ-pʰu}   	\ipa{nɯ}   	\ipa{ɯ-sɤ-me}   	\ipa{ri}   	\ipa{ju-tsɯm}   	\ipa{tɕe,}   \\
-\textsc{neg-pfv}-big until \textsc{indef.poss}-mother \textsc{top} \textsc{erg}  {3sg.poss}-litter \textsc{pl}  {3sg.poss}-male \textsc{top} \textsc{3sg-nmlz:oblique}-not.exist  \textsc{loc} \textsc{ipfv}-take.away \textsc{coord} \\
+\textsc{neg-pfv}-big until \textsc{indef.poss}-mother \textsc{dem} \textsc{erg}  {3sg.poss}-litter \textsc{pl}  {3sg.poss}-male \textsc{dem} \textsc{3sg-nmlz:oblique}-not.exist  \textsc{loc} \textsc{ipfv}-take.away \textsc{coord} \\
 \glt  Until they grow big, the mother takes her litter away to a place where the male is not found. (Lion, 75)
   \end{exe}
   
-In the supporting clause, the polarity is actually semantically neutralized; it is possible to add or remove the negative prefix without influencing the truth value. For instance, the sentence \ref{ex:lAfsoR} is equivalent to \ref{ex:mWlAfsoR}.
+In the subordinate clause, the polarity is actually semantically neutralized; it is possible to add or remove the negative prefix without influencing the truth value. For instance, the sentence \refb{ex:lAfsoR} is equivalent to \refb{ex:mWlAfsoR}.
 
 \begin{exe}
 \ex \label{ex:lAfsoR}
@@ -717,18 +746,18 @@ In the supporting clause, the polarity is actually semantically neutralized; it 
 
 It is possible that pragmatic differences exist between the two constructions, but we defer this topic to future studies.
 
-\subsubsection{Immediate succession}
+\subsubsection{Immediate succession} \label{sec:imm.succession}
 
 
-The perfective converb \ipa{tɯ--},  whose morphology is described in \ref{sec:converbs}, is the main way to express immediate temporal succession  (`as soon as', `just after') in Japhug.   The verb of the focal clause is either in the factual (example \ref{ex:pjWtWmto}, \ref{ex:YWtWRaR}) or imperfective forms (\ref{ex:pjWtWqlWt}, \ref{ex:lutWfsoR}); other TAM categories in the focal clause (in particular perfective or imperative) are not accepted by native speakers.
+The perfective converb \ipa{tɯ--},  whose morphology is described in \refb{sec:converbs}, is the main way to express immediate temporal succession  (`as soon as', `just after') in Japhug.   The verb of the focal clause is either in the factual (example \refb{ex:pjWtWmto}, \refb{ex:YWtWRaR}) or imperfective forms (\ref{ex:pjWtWqlWt}, \ref{ex:lutWfsoR}); other TAM categories in the focal clause (in particular perfective or imperative) are not accepted by native speakers.
 
-This non-finite verb form is devoid of person or transitivity marking, but the supporting clause can include overt arguments, including A (marked with the ergative as in \ref{ex:pjWtWmto}) or S/P (example \ref{ex:YWtWRaR}). 
+This non-finite verb form is devoid of person or transitivity marking, but the subordinate clause can include overt arguments, including A (marked with the ergative as in \refb{ex:pjWtWmto}) or S/P (example \refb{ex:YWtWRaR}). 
 
 
-There is often coreference between the arguments of the supporting clause and those of the focal one: A and P in \ref{ex:pjWtWmto}, S in \ref{ex:YWtWRaR} and A of the supporting clause to the S of the focal clause in \ref{ex:pjWtWqlWt}. This is however not an absolute syntactic constraint, as we also find examples where no coreference occurs (\ref{ex:lutWfsoR}). 
+There is often coreference between the arguments of the subordinate clause and those of the main one: A and P in \refb{ex:pjWtWmto}, S in \refb{ex:YWtWRaR} and A of the subordinate clause to the S of the main clause in \refb{ex:pjWtWqlWt}. This is however not an absolute syntactic constraint, as we also find examples where no coreference occurs \refb{ex:lutWfsoR}. 
 
 %shared A and O.
-The supporting clause in this construction is marked by either coordinators such as \ipa{nɤ} (\ref{ex:YWtWRaR}), \ipa{tɕe} or \ipa{qʰe} (\ref{ex:pjWtWqlWt} and \ref{ex:lutWfsoR}) or the   marker \ipa{ʑo} (\ref{ex:pjWtWmto} and \ref{ex:lutWfsoR}) which emphasizes the meaning of immediate temporal succession between the events described by the supporting and the focal clauses.
+The subordinate clause in this construction is marked by either linkers such as \ipa{nɤ} \refb{ex:YWtWRaR}, \ipa{tɕe} or \ipa{qʰe} (\ref{ex:pjWtWqlWt} and \ref{ex:lutWfsoR}) or the   marker \ipa{ʑo} (\ref{ex:pjWtWmto} and \ref{ex:lutWfsoR}) which emphasizes the meaning of immediate temporal succession between the events described by the subordinate and the main clauses.
 \begin{exe}
 \ex \label{ex:pjWtWmto}
 \gll 
@@ -761,7 +790,7 @@ people \textsc{pl} \textsc{erg} \textsc{ipfv-conv:imm}-see \textsc{emph} \textsc
 \glt   It starts working as soon as  the day breaks. (bee, 65)
 \end{exe}
 
-This construction can also be used with first or second person referents as in \ref{ex:pjWtWsko}.
+This construction can also be used with first or second person referents as in \refb{ex:pjWtWsko}.
  \begin{exe}
 \ex \label{ex:pjWtWsko} 
 \gll 
@@ -770,17 +799,17 @@ tobacco \textsc{ipfv-conv:imm}-smoke \textsc{lnk} \textsc{ipfv}-cough-\textsc{1s
  \glt I cough as soon as I smoke tobacco. (elicited)
 \end{exe}
 
-Another way to express the same meaning is to use the postposition \ipa{ɕɯmɯma}   `just after' (optionally followed by the locative \ipa{ri} or the emphatic linker \ipa{ʑo}) after the supporting clause with the verb in the perfective, as in \ref{ex:pWsi.CWmWma}.
+Another way to express the same meaning is to use the postposition \ipa{ɕɯmɯma}   `just after' (optionally followed by the locative \ipa{ri} or the emphatic linker \ipa{ʑo}) after the subordinate clause with the verb in the perfective, as in \refb{ex:pWsi.CWmWma}.
 
  \begin{exe}
 \ex \label{ex:pWsi.CWmWma} 
 \gll 
 \ipa{nɯnɯ}   	\ipa{ɯ-χti}   	\ipa{nɯ}   	\ipa{pjɯ-sat-nɯ}   	\ipa{qʰe}   	\ipa{pɯ-si}   	\ipa{\textbf{ɕɯmɯma}}   	\ipa{nɯ} \ipa{ra}   	\ipa{wuma}   	\ipa{ʑo}   	\ipa{cʰɯ-ɣɤwu}   	\ipa{aʁɤndɯndɤt}   	\ipa{ju-nɤɕɯɕe}   	\ipa{ɲɯ-ŋu}   	\ipa{ri,}   	\ipa{χsɯ-sŋi}   	\ipa{mɤ-kɯ-tsu}   	\ipa{qʰe}   	\ipa{li}   	\ipa{kɯmaʁ}   	\ipa{ci}   	\ipa{ju-ɣɯt}   	\ipa{qʰe,}   \\
-\textsc{dem} \textsc{3sg.poss}-mate \textsc{top} \textsc{ipfv}-kill-\textsc{pl} \textsc{lnk} \textsc{pfv}-die  immediately.after \textsc{top} \textsc{pl} really \textsc{emph} \textsc{ipfv}-weep everywhere \textsc{ipfv}-go.in.all.directions \textsc{testim}-be \textsc{lnk} three-day \textsc{neg-inf:non.human}-pass \textsc{lnk} again other \textsc{indef} \textsc{ipfv}-bring \textsc{lnk} \\
+\textsc{dem} \textsc{3sg.poss}-mate \textsc{dem} \textsc{ipfv}-kill-\textsc{pl} \textsc{lnk} \textsc{pfv}-die  immediately.after \textsc{dem} \textsc{pl} really \textsc{emph} \textsc{ipfv}-weep everywhere \textsc{ipfv}-go.in.all.directions \textsc{testim}-be \textsc{lnk} three-day \textsc{neg-inf:non.human}-pass \textsc{lnk} again other \textsc{indef} \textsc{ipfv}-bring \textsc{lnk} \\
 \glt When people kill its mate, just after it has died, it weeps a lot and goes everywhere (to look for it), but before three days have passed, it has already found another one. (Chough, 79-81)
 \end{exe}
 
-The semantic proximity between the two constructions can be illustrated by the fact that in some cases when speakers hesitate as in \ref{ex:tAsci.CWmWma}, they can switch between the two.
+The semantic proximity between the two constructions can be illustrated by the fact that in some cases when speakers hesitate as in \refb{ex:tAsci.CWmWma}, they can switch between the two.
 
  \begin{exe}
 \ex \label{ex:tAsci.CWmWma} 
@@ -788,12 +817,12 @@ The semantic proximity between the two constructions can be illustrated by the f
 \ipa{tɯrgi}   	\ipa{paʁtsa}   	\ipa{nɯ}   	\ipa{tɤ-sci}   	\ipa{\textbf{ɕɯmɯma},}   
 \ipa{nɯ}   	\ipa{paʁtsa}   	\ipa{ra}   	\ipa{\textbf{cʰɯ-tɯ-sci}}   	\ipa{tɕe,}   	\ipa{tɕe}   	\ipa{nɯ}   
 \ipa{nɯnɯ}   	\ipa{kɯ-ɲaʁ}   	\ipa{ʁɟa}   	\ipa{tu,}   	\ipa{kɯ-wɣrum}   	\ipa{ʁɟa}   	\ipa{tu,}   \\
-fir.tree piglet \textsc{top} \textsc{pfv}-be.born immediately.after \textsc{dem} piglet \textsc{ipfv-conv:imm}-be.born \textsc{lnk} \textsc{lnk} \textsc{lnk} \textsc{dem} \textsc{dem} \textsc{nmlz}:S/A-be.black completely \textsc{fact}:exist \textsc{nmlz}:S/A-be.white completely \textsc{fact}:exist \\
+fir.tree piglet \textsc{dem} \textsc{pfv}-be.born immediately.after \textsc{dem} piglet \textsc{ipfv-conv:imm}-be.born \textsc{lnk} \textsc{lnk} \textsc{lnk} \textsc{dem} \textsc{dem} \textsc{nmlz}:S/A-be.black completely \textsc{fact}:exist \textsc{nmlz}:S/A-be.white completely \textsc{fact}:exist \\
 \glt When a squirrel has just been born... when piglets have just been born, some are completely black, others are completely white. (staʁɕɤr, 216-7)
 \end{exe}
 
 
-The postposition \ipa{kóʁmɯz} `only then, only after' also expresses immediate succession, but its meaning is intermediate between a purely temporal and a condition linking. It implies that the event of the focal clause not only occurs immediately after that of the supporting clause, but also that the latter is a condition for it to happen, as  in example \ref{ex:kuxXtCArnW.koRmWz}.\footnote{As a postposition, \ipa{kóʁmɯz} also occurs after noun phrases expressing a temporal duration.}
+The postposition \ipa{kóʁmɯz} `only then, only after' also expresses immediate succession, but its meaning is intermediate between a purely temporal and a condition linking. It implies that the event of the focal clause not only occurs immediately after that of the subordinate clause, but also that the latter is a condition for it to happen, as  in example \refb{ex:kuxXtCArnW.koRmWz}.\footnote{As a postposition, \ipa{kóʁmɯz} also occurs after noun phrases expressing a temporal duration.}
 
 
 \begin{exe}
@@ -804,12 +833,12 @@ The postposition \ipa{kóʁmɯz} `only then, only after' also expresses immedia
 \glt It is necessary to milk (the female yak) only after people have tied it up and attached its feet. (Yak, 19)
 \end{exe}
 
-More commonly, the phrase \ipa{nɯ kóʁmɯz nɤ} `and only after that' is used in texts for expressing this meaning as \ref{ex:nW.koRmWz.nA}.
+More commonly, the phrase \ipa{nɯ kóʁmɯz nɤ} `and only after that' is used in texts for expressing this meaning as in \refb{ex:nW.koRmWz.nA}.
 \begin{exe}
 \ex \label{ex:nW.koRmWz.nA}
 \gll
 \ipa{nɯ}  	\ipa{ɯ-mɯntoʁ}  	\ipa{nɯ}  	\ipa{pɯ-ŋgra}  	\ipa{koʁmɯz}  	\ipa{nɤ}  	\ipa{ɯ-jwaʁ}  	\ipa{ɲɯ-lɤt}  	\ipa{tɕe}  	\ipa{\textbf{nɯ}}  	\ipa{\textbf{koʁmɯz}}  	\ipa{\textbf{nɤ}}  	\ipa{ɯ-mat}  	\ipa{ku-tsʰoʁ}  	\ipa{ŋu.}  	\\
-\textsc{dem} \textsc{3sg.poss}-flower \textsc{top} \textsc{pfv}-\textsc{anticaus}:make.fall only.after \textsc{lnk} \textsc{3sg.poss}-leaf \textsc{ipfv}-throw \textsc{lnk}  	\ipa{nɯ} only.after \textsc{3sg.poss}-fruit \textsc{ipfv}-bear \textsc{fact}:be \\
+\textsc{dem} \textsc{3sg.poss}-flower \textsc{dem} \textsc{pfv}-\textsc{anticaus}:make.fall only.after \textsc{lnk} \textsc{3sg.poss}-leaf \textsc{ipfv}-throw \textsc{lnk}  	\ipa{nɯ} only.after \textsc{3sg.poss}-fruit \textsc{ipfv}-bear \textsc{fact}:be \\
 \glt It grows leaves only after its flower has fallen, and only then does it bear fruits. (Apricot, 9-10)
 \end{exe}
 
@@ -817,13 +846,13 @@ More commonly, the phrase \ipa{nɯ kóʁmɯz nɤ} `and only after that' is used
 \subsubsection{Immediate precedence}
 There are four constructions expressing immediate precedence between two events in Japhug. 
 
-First, the linker \ipa{tɤkʰa} `about to'  is used in combination with a verb in the factual form in the supporting clause, as in \ref{ex:GindZi.tAkha} and \ref{ex:amboR.tAkha}. It is generally followed by the linkers \ipa{tɕe} and \ipa{qʰe}. 
+First, the linker \ipa{tɤkʰa} `about to'  is used in combination with a verb in the factual form in the subordinate clause, as in \refb{ex:GindZi.tAkha} and \refb{ex:amboR.tAkha}. It is generally followed by the linkers \ipa{tɕe} and \ipa{qʰe}. 
      \begin{exe}
 \ex \label{ex:GindZi.tAkha}
 \gll
 \ipa{ɬamu}   	\ipa{kɯ}   	[\ipa{ɣi-ndʑi}]   	\textbf{\ipa{tɤkʰa}}   	\ipa{tɕe}   	\ipa{pɯwɯ}   	\ipa{ɯ-ɕki}   	\ipa{ɯʑo}   	\ipa{kɯ}   	\ipa{ta-tɯt}   	\ipa{nɯ}   	\ipa{to-sɯʁjɯt}   	\ipa{tɕe,}   	\\
-Lhamo \textsc{erg} \textsc{fact}:come-\textsc{du} about.to \textsc{lnk} donkey \textsc{3sg-dat} \textsc{3sg} \textsc{erg} \textsc{pfv}:3>3-say[II] \textsc{top} \textsc{evd}-remember \textsc{lnk} \\
-\glt  Lhamo remember what she had said to her donkey as they were about to depart (to come here). (Raven1, 64-5)
+Lhamo \textsc{erg} \textsc{fact}:come-\textsc{du} about.to \textsc{lnk} donkey \textsc{3sg-dat} \textsc{3sg} \textsc{erg} \textsc{pfv}:3>3-say[II] \textsc{dem} \textsc{evd}-remember \textsc{lnk} \\
+\glt  Lhamo remembered what she had said to her donkey as they were about to depart (to come here). (Raven1, 64-5)
 \end{exe}
 
      \begin{exe}
@@ -839,26 +868,26 @@ Lhamo \textsc{erg} \textsc{fact}:come-\textsc{du} about.to \textsc{lnk} donkey \
 
 
  
-Second,  a verb in factual form combined with the copula in the past imperfective or evidential imperfective, as in \ref{ex:Zatsa.qanW}, also expresses the meaning `about to'.
+Second,  a verb in factual form combined with the copula in the past imperfective or evidential imperfective, as in \refb{ex:Zatsa.qanW}, also expresses the meaning `about to'.
      \begin{exe}
 \ex \label{ex:Zatsa.qanW}
 \gll
 \ipa{ʑatsa}  	\ipa{tɯmɯ}  	\ipa{qanɯ}  	\ipa{\textbf{pjɤ-ŋu},}  	\ipa{tɕeri}  	\ipa{nɯ} \ipa{tɕu}  	\ipa{tɕe}  	\ipa{pɯwɯ}  	\ipa{nɯ}  	\ipa{tɯ-tɯpɯ}  	\ipa{kʰa}  	\ipa{ɯ-phaʁ}  	\ipa{ntsi}  	\ipa{pɯ-kɯ-mbɯt}  	\ipa{ɯ-phaʁ}  	\ipa{ntsi}  	\ipa{kɯ-pe}  	\ipa{ci}  	\ipa{ɣɯ}   	\ipa{ɯ-ʁɤri}  	\ipa{zɯ}  	\ipa{ko-rɤʑi}  \\
-soon sky \textsc{fact}:be.dark \textsc{evd.ipfv}-be but \textsc{dem} \textsc{loc} \textsc{lnk} donkey \textsc{top} one-family house \textsc{3sg.poss}-side one.of.a.pair \textsc{pfv-nmlz}:S/A-collapse  \textsc{3sg.poss}-side one.of.a.pair \textsc{nmlz}:S/A-be.good \textsc{indef}   \textsc{gen} \textsc{3sg}-before \textsc{loc} \textsc{evd}-stay \\
+soon sky \textsc{fact}:be.dark \textsc{evd.ipfv}-be but \textsc{dem} \textsc{loc} \textsc{lnk} donkey \textsc{dem} one-family house \textsc{3sg.poss}-side one.of.a.pair \textsc{pfv-nmlz}:S/A-collapse  \textsc{3sg.poss}-side one.of.a.pair \textsc{nmlz}:S/A-be.good \textsc{indef}   \textsc{gen} \textsc{3sg}-before \textsc{loc} \textsc{evd}-stay \\
 \glt It was about to be dark, but the donkey stayed in front of a house, one half of which had collapsed and the other half was good. (The raven1, 52-3)
  \end{exe}
 
-This construction, unlike the two previous ones, can have a conative meaning, expressing an action in its initial stage that eventually fails (\ref{ex:GWtChW.pWNu}).
+This construction, unlike the two previous ones, can have a conative meaning, expressing an action in its initial stage that eventually fails \refb{ex:GWtChW.pWNu}.
 
      \begin{exe}
 \ex \label{ex:GWtChW.pWNu}
 \gll
 \ipa{tɕe}  	\ipa{ɣɯ-tɕʰɯ}  	\ipa{\textbf{pɯ-ŋu}}  	\ipa{ri,}  	\ipa{ci}  	\ipa{nɯ}  	\ipa{mɤ́-wɣ-sɯɣ-cha}  	\ipa{pɯ-ŋu}  	\ipa{jamar}  	\ipa{ʑo}  	\ipa{qartsʰaz}  	\ipa{nɯ}  	\ipa{jɤ-nɯ-ɬoʁ}  	\ipa{ndɤre,}  \\
-\textsc{lnk} \textsc{inv}-gore \textsc{pst.ipfv}-be \textsc{lnk} \textsc{indef} \textsc{top} \textsc{neg-inv-caus}-can  \textsc{pst.ipfv}-be about \textsc{emph} deer \textsc{top} \textsc{pfv-auto}-come.out \textsc{lnk} \\
+\textsc{lnk} \textsc{inv}-gore \textsc{pst.ipfv}-be \textsc{lnk} \textsc{indef} \textsc{dem} \textsc{neg-inv-caus}-can  \textsc{pst.ipfv}-be about \textsc{emph} deer \textsc{dem} \textsc{pfv-auto}-come.out \textsc{lnk} \\
 \glt As the (muntjac) was about to gore him, as he was about to fail, the deer appeared and... (Lobzang1.70)
  \end{exe}
 
-Third, the conative prefix \ipa{jɯ}--, combined with a finite verb  in perfective or evidential form, has an equivalent meaning as the factual+past imperfective construction, as in \ref{ex:conative.jWkoCe}.
+Third, the conative prefix \ipa{jɯ}--, combined with a finite verb  in perfective or evidential form, has an equivalent meaning as the factual+past imperfective construction, as in \refb{ex:conative.jWkoCe}.
 
 \begin{exe}
 \ex \label{ex:conative.jWkoCe}
@@ -869,13 +898,13 @@ three-turn almost three-turn \textsc{conative-evd}-go \textsc{emph} \textsc{coor
 \end{exe}
 
 
-Fourth, the locative \ipa{tɕu} following a verb in the perfective indicates exact almost simultaneity, as in \ref{ex:thasloR.nWtCu}.  
+Fourth, the locative \ipa{tɕu} following a verb in the perfective indicates  almost exact simultaneity, as in \refb{ex:thasloR.nWtCu}.  
 
 \begin{exe}
 \ex \label{ex:thasloR.nWtCu}
 \gll
 \ipa{pri}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{nɯnɯ}   	\ipa{qrormbɯ}   	\ipa{nɯ}   	\ipa{ɯ-loʁ}   	\ipa{nɯ}   	\ipa{tha-sloʁ}   	\ipa{nɯ}   	\ipa{\textbf{tɕu}}   	\ipa{tɕe,}   	  	\ipa{ɯ-mɲaʁ}   	\ipa{ɯ-ŋgɯ}   	\ipa{ku-ɕe,}   	\ipa{ɯ-mɲaʁ}   	\ipa{ɯ-ŋgɯ}   	\ipa{ɯ-rmbi}   	\ipa{ku-lɤt}   	\ipa{tɕe}   	\\
-bear \textsc{top} \textsc{erg} \textsc{dem} anthill \textsc{top} \textsc{3sg.poss}-nest \textsc{top} \textsc{pfv}:3$\rightarrow$3'-root.out \textsc{top} \textsc{loc} \textsc{lnk} \textsc{3sg.poss}-eye \textsc{3sg}-inside \textsc{ipfv}-go \textsc{3sg.poss}-eye \textsc{3sg}-inside \textsc{3sg.poss}-urine \textsc{ipfv}-throw \textsc{lnk} \\
+bear \textsc{dem} \textsc{erg} \textsc{dem} anthill \textsc{dem} \textsc{3sg.poss}-nest \textsc{dem} \textsc{pfv}:3$\rightarrow$3'-root.out \textsc{dem} \textsc{loc} \textsc{lnk} \textsc{3sg.poss}-eye \textsc{3sg}-inside \textsc{ipfv}-go \textsc{3sg.poss}-eye \textsc{3sg}-inside \textsc{3sg.poss}-urine \textsc{ipfv}-throw \textsc{lnk} \\
 \glt When bears_i root out ant_jhills, they_j go inside their_i eyes_k and urinate in them.
 (bear, 26)
 \end{exe}
@@ -896,9 +925,7 @@ bear \textsc{top} \textsc{erg} \textsc{dem} anthill \textsc{top} \textsc{3sg.pos
 
 
 
-
-
-There are four main constructions  expressing simultaneity between the event of the supporting clause and that of the focal clause. First, we find cases whereby the SC is relative clause with the possessed noun \ipa{ɯ-raŋ} `time' in a locative form as its head noun. Second, SC is marked with  the relator nouns \ipa{ɯ-kʰɯkʰa} `while' and \ipa{ɯ-jɯja} `while, along with'.  Third, the verb of the SC is in  converbial form. Fourth, to indicate and exact moment, one can combine the perfective with the locative \ipa{tɕu}.
+There are four main constructions  expressing simultaneity between the events of two clauses. First, we find cases whereby the subordinate clause is a relative clause with the possessed noun \ipa{ɯ-raŋ} `time' in a locative form as its head noun. Second, the subordinate clause is marked with  the relator nouns \ipa{ɯ-kʰɯkʰa} `while' and \ipa{ɯ-jɯja} `while, along with'.  Third, the verb of the subordinate clause is in a converbial form. Fourth, to indicate an  exact moment, one can combine the perfective with the locative \ipa{tɕu}.
 
 
 The construction involving \ipa{ɯ-raŋ} `time' is formally a non-nominalized prenominal relative clause.  The noun  \ipa{ɯ-raŋ} `time' is the head noun, and bears  a locative marker (\ipa{ri}, \ipa{zɯ} or \ipa{nɯ tɕu}). This construction corresponds to English `In the time when...'. It is generally used to indicate a long time period.
@@ -906,11 +933,11 @@ The construction involving \ipa{ɯ-raŋ} `time' is formally a non-nominalized pr
 \begin{exe}
    \ex \label{ex:WraN2}
  \gll [\ipa{nɤ-ɕɣa}   	\ipa{xtɕi}]   	\textbf{\ipa{ɯ-raŋ}}   	\textbf{\ipa{ri}}   	\ipa{nɯ}   	\ipa{tɯ́-wɣ-nɤzda}   	\ipa{ŋu}   	\ipa{ri}   \\
- \textsc{2sg.poss}-tooth \textsc{fact}:small \textsc{3sg.poss}-time \textsc{loc} \textsc{top} 2-\textsc{inv}-accompany \textsc{fact}:be.with but \\
+ \textsc{2sg.poss}-tooth \textsc{fact}:small \textsc{3sg.poss}-time \textsc{loc} \textsc{dem} 2-\textsc{inv}-accompany \textsc{fact}:be.with but \\
 \glt While you are young, she will be with you. (Slob.dpon2, 60)
 \end{exe}
 
-Like \ipa{ɯ-raŋ} in the previous construction, the marker  \ipa{ɯ-kʰɯkʰa} `while'  is used to express  that the event of the focal clause occurs during (or that its entire duration is embedded within) that of the supporting clause. This construction is much more common that the previous one, and does not imply a long time period.  The verbs of both clauses are finite, and need to be in the imperfective, as in \ref{ex:WkhWkha1} and \ref{ex:WkhWkha2}. There are no coreference restrictions on the arguments of the clauses, 
+Like \ipa{ɯ-raŋ} in the previous construction, the marker  \ipa{ɯ-kʰɯkʰa} `while'  is used to express  that the event of the focal clause occurs during (or that its entire duration is embedded within) that of the subordinate clause. This construction is much more common that the previous one, and does not imply a long time period.  The verbs of both clauses are finite, and need to be in the imperfective, as in \refb{ex:WkhWkha1} and \refb{ex:WkhWkha2}. There are no coreference restrictions on the arguments of the clauses, 
 
 \begin{exe}
 \ex \label{ex:WkhWkha1}
@@ -931,7 +958,7 @@ Like \ipa{ɯ-raŋ} in the previous construction, the marker  \ipa{ɯ-kʰɯkʰa} 
 %jaʁma zdoʁzdoʁ 113
 %tɤ-mbri ɯ-kʰɯ-kʰa ɯ-ʁar nɯ kɯra ntsɯ tu-ste ŋu 
 
-The marker \ipa{ɯ-jɯja} `while, along'  differs from \ipa{ɯ-kʰɯkʰa} in that it implies a gradual change of state in both events occurring simultaneously and progressively. The verb of the supporting clause is generally in the perfective (though examples with imperfective forms are also attested), while that of the focal clause can be in any TAM form.
+The marker \ipa{ɯ-jɯja} `while, along'  differs from \ipa{ɯ-kʰɯkʰa} in that it implies a gradual change of state in both events occurring simultaneously and progressively. The verb of the subordinate clause is generally in the perfective (though examples with imperfective forms are also attested), while that of the focal clause can be in any TAM form.
 
 %while a range at some point within which the event depicted in the focal clause occurs,
 
@@ -946,12 +973,12 @@ The marker \ipa{ɯ-jɯja} `while, along'  differs from \ipa{ɯ-kʰɯkʰa} in tha
      \begin{exe}
    \ex \label{ex:khu}
    \gll  [\ipa{lɤ-fsoʁ}]  	\textbf{\ipa{ɯ-jɯja}}  	\ipa{nɯ}  	\ipa{pjɯ-ru}  	\ipa{tɕe}  	\ipa{ɯ-kɤ-nɯmbrɤpɯ}  	\ipa{nɯ}  	\ipa{kʰu}  	\ipa{pɯ-ɕti}  	\ipa{ɲɯ-ŋu,}  \\
-\textsc{pfv}-be.clear    \textsc{3sg}-along  \textsc{dem} \textsc{ipfv:down}-look \textsc{coord} \textsc{3sg-nmlz:P}-ride \textsc{top} tiger \textsc{pst.ipfv}-be.\textsc{assert}  \textsc{testim}-be \\
+\textsc{pfv}-be.clear    \textsc{3sg}-along  \textsc{dem} \textsc{ipfv:down}-look \textsc{coord} \textsc{3sg-nmlz:P}-ride \textsc{dem} tiger \textsc{pst.ipfv}-be.\textsc{assert}  \textsc{testim}-be \\
 \glt As the day was breaking, looking down, he (progressively realized that) what he was riding was a tiger. (Tiger, 20)
 \end{exe}
 
 
-The gerund converb \ipa{sɤ}--, generally followed by the marker \ipa{ʑo} (see \ref{sec:converbs} for the morphological structure of this non-finite form)   semantically overlaps with the \ipa{ɯ-kʰɯkʰa} `while' construction, as illustrated by this pair of sentences which follow each other within the same text:
+The gerund converb \ipa{sɤ}--, generally followed by the marker \ipa{ʑo} (see \refb{sec:converbs} for the morphological structure of this non-finite form)   semantically overlaps with the \ipa{ɯ-kʰɯkʰa} `while' construction, as illustrated by this pair of sentences which follow each other within the same text:
 
 \begin{exe}
 \ex \label{ex:sanWqambWmbjom}
@@ -962,7 +989,7 @@ The gerund converb \ipa{sɤ}--, generally followed by the marker \ipa{ʑo} (see 
 \\
 \glt It catches them while it flies and eats them, it catches them while flying and kills them. (The buzzard1, 6-7)
 \end{exe} 
-It differs from it syntactically in that it requires identity between the accusative subject S/A of the supporting and the focal clause. \ref{ex:sAznWGmWGmu} is an example where the A and P of the SC are coreferent with those of the FC.
+It differs from it syntactically in that it requires identity between the   S/A of the subordinate and the main clause. \refb{ex:sAznWGmWGmu} is an example where the A and P of the SC are coreferent with those of the FC.
 
 \begin{exe}
 \ex \label{ex:sAznWGmWGmu}
@@ -974,7 +1001,7 @@ It differs from it syntactically in that it requires identity between the accusa
 
 
 
-Apart from these four constructions, simultaneity can be expressed by simple parataxis (with optional addition of the marker \ipa{ʑo}) of two clauses in the imperfective, as in the clause linking indicated between square brackets in \ref{ex:pjWsWfskAr}. This example is useful for the parallelism it offers with the \ipa{ɯ-kʰɯkʰa} `while' construction.
+Apart from these four constructions, simultaneity can be expressed by simple parataxis (with optional addition of the marker \ipa{ʑo}) of two clauses in the imperfective, as in the clause linking indicated between square brackets in \refb{ex:pjWsWfskAr}. This example is useful for the parallelism it offers with the \ipa{ɯ-kʰɯkʰa} `while' construction.
 \begin{exe}
 \ex \label{ex:pjWsWfskAr}
 \gll
@@ -988,11 +1015,11 @@ lower.millstone \textsc{gen} \textsc{3sg}-outside \textsc{loc} \textsc{ipfv}-pil
 
 
 \subsection{Conditional} \label{sec:conditional}
-Conditional constructions indicate that the event in the focal clause (apodosis) takes place if the condition depicted in the supporting clause (protasis) is fulfilled. Depending on whether the protasis is a fact or a hypothetical situation, several types of conditionals can be distinguished.
+Conditional constructions indicate that the event in the main clause (apodosis) takes place if the condition depicted in the subordinate clause (protasis) is fulfilled. Depending on whether the protasis is a fact or a hypothetical situation, several types of conditionals can be distinguished.
 
 We distinguish in this work four main types of conditional constructions: recurrent implication, real, counterfactual and hypothetical. As in many languages (\citealt[14]{dixon09intro}), there is  some degree of overlap between temporal and conditional clause linking in Japhug in the case of the first two subtypes.
 
-\subsubsection{Iterative coincidence}
+\subsubsection{Iterative coincidence} \label{sec:iterative}
  The construction expressing iterative coincidence or recurrent implication is semantically intermediate between   temporal and   conditional clause linking.\footnote{A semantically similar construction was described by \citealt[204]{valentine09linking}.} It describes that whenever the event depicted in the protasis is fulfilled, the one of the apodosis necessarily always occurs, and that this has taken place several times in the past. It can be generally translated as `each time A then B'.
 
 In this construction, we find a reduplicated verb in the perfective  in the protasis, and a verb in the imperfective followed by the auxiliary \ipa{ŋu} `be'   in the apodosis. The protasis generally ends with the emphatic linker \ipa{ʑo} or the conditional linker \ipa{nɤ}, but parataxis is also possible.
@@ -1000,7 +1027,7 @@ In this construction, we find a reduplicated verb in the perfective  in the prot
      \begin{exe}
    \ex \label{ex:CWCkAtshita}
    \gll
-[\ipa{cha}   	\textbf{\ipa{ɕɯ-ɕ-kɤ-tsʰi-t-a}}]   	(\ipa{ʑo})   	\ipa{lu-βzi-a}   	\ipa{ŋu}   \\
+[\ipa{cʰa}   	\textbf{\ipa{ɕɯ-ɕ-kɤ-tsʰi-t-a}}]   	(\ipa{ʑo})   	\ipa{lu-βzi-a}   	\ipa{ŋu}   \\
 alcohol \textsc{cond-transloc-pfv}-drink-\textsc{pst:tr-1sg} \textsc{emph} \textsc{ipfv}-be.drunk-\textsc{1sg} \textsc{fact}:be\\
 \glt Each time I drink alcohol, I get intoxicated. (elicited)
 \end{exe}
@@ -1009,26 +1036,26 @@ alcohol \textsc{cond-transloc-pfv}-drink-\textsc{pst:tr-1sg} \textsc{emph} \text
    \ex \label{ex:tWmW.kWkAlAt}
    \gll
 [\ipa{tɯmɯ}   \textbf{	\ipa{kɯ-kɤ-lɤt}}]   	(\ipa{ʑo})   	\ipa{zdɯmlaʁrɯʁrɯ}   	\ipa{ju-nɯ-ɬoʁ}   	\ipa{ŋu}   \\
-sky {cond-pfv}-throw \textsc{emph} snail \textsc{ipfv-auto}-come.out \textsc{fact}:be\\
+sky \textsc{cond-pfv}-throw \textsc{emph} snail \textsc{ipfv-auto}-come.out \textsc{fact}:be\\
 \glt Each time it rains,  snails come out. (elicited)
 \end{exe}
 
 \subsubsection{Real} \label{sec:real.conditional}
 Real conditionals express that the event described in the apodosis occurs whenever the condition expressed in the protasis is fulfilled, but unlike the recurrent implication type described above, it does not imply that the events in question have already taken place several times in the past.
 
-For this type of conditionals, the protasis can be either in the irrealis (\ref{ex:anWYatnW}), in any other TAM form but the interrogative prefix \ipa{ɯ}-- (\ref{ex:WYWtWmbGom}) or with reduplication of the first syllable (\ref{ex:mWmApWkWtso}). 
+For this type of conditionals, the protasis can be either in the irrealis \refb{ex:anWYatnW}, in any other TAM form but the interrogative prefix \ipa{ɯ}-- \refb{ex:WYWtWmbGom} or with reduplication of the first syllable \refb{ex:mWmApWkWtso}. 
 
 
 The linker \ipa{nɤ} is more generally used in such type of conditionals (\ref{ex:mWmApWkWtso}, \ref{ex:mWmAkWtsWma}, \ref{ex:WYWtWmbGom}), though \ipa{tɕe} is also found.
 
 
-Some  real conditionals (implicative conditionals) are used to express general truths, as in \ref{ex:anWYatnW}, \ref{ex:mWmApWkWtso} or \ref{ex:mWmAtAwGnAmAle}; these constructions, as the recurrent implication conditionals presented above are semantically very close to temporal clause chaining. 
+Some  real conditionals (implicative conditionals) are used to express general truths, as in \refb{ex:anWYatnW}, \refb{ex:mWmApWkWtso} or \refb{ex:mWmAtAwGnAmAle}; these constructions, as with the recurrent implication conditionals presented above, are semantically very close to temporal clause chaining. 
 
 \begin{exe}
 \ex  \label{ex:anWYatnW}
 \gll
 [\textbf{\ipa{a-nɯ-ɲat-nɯ}}]  	\ipa{tɕe}  	\ipa{tɯ-tɕʰa}  	\ipa{nɤ}  	\ipa{tɯ-tɕʰa}  	\ipa{nɯ,}  	<dianxian>  	\ipa{ɯ-taʁ,}  	\ipa{qʰe}  	\ipa{sɯku}  	\ipa{ɯ-taʁ}  	\ipa{nɯ} \ipa{tɕu}  	\ipa{tu-nɯna-nɯ}  	\ipa{tɕe,}  \\
-\textsc{irr-pfv}-be.tired-\textsc{pl} \textsc{lnk} one-pair \textsc{lnk} one-pair \textsc{top} electric.wire \textsc{3sg.poss}-on \textsc{lnk} treetop \textsc{3sg.poss}-on \textsc{top} \textsc{loc} \textsc{ipfv}-rest-\textsc{pl} \textsc{lnk} \\
+\textsc{irr-pfv}-be.tired-\textsc{pl} \textsc{lnk} one-pair \textsc{lnk} one-pair \textsc{dem} electric.wire \textsc{3sg.poss}-on \textsc{lnk} treetop \textsc{3sg.poss}-on \textsc{dem} \textsc{loc} \textsc{ipfv}-rest-\textsc{pl} \textsc{lnk} \\
 \glt If/Whenever  (the swallows) are tired, they rest in pairs on electric wires or on trees. (Swallows 55)
 \end{exe}
 
@@ -1038,7 +1065,7 @@ Some  real conditionals (implicative conditionals) are used to express general t
 \ex  \label{ex:mWmApWkWtso}
 \gll
 \ipa{mɤ-nɯɣɯmto}  	\ipa{tɕe}  	[\ipa{wuma}  	\ipa{ʑo}  	\textbf{\ipa{mɯ-mɤ-pɯ-kɯ-tso}}]  	\ipa{nɤ}  	\ipa{mɤ́-wɣ-mto}  \\
- \textsc{neg}-\textsc{fact}:easy.to.see \textsc{lnk} very \textsc{emph} \textsc{cond-neg-pst.ipfv-genr:S/P}-understand \textsc{lnk} \textsc{neg-inv-n.pst}:see  \\
+ \textsc{neg}-\textsc{fact}:easy.to.see \textsc{lnk} very \textsc{emph} \textsc{cond-neg-pst.ipfv-genr:S/P}-understand \textsc{lnk} \textsc{neg-inv-fact}:see  \\
 \glt   It is not easy to spot, and unless one is not very knowledgeable already, one will not see it. (Onions, 7)
 \end{exe}
 
@@ -1051,9 +1078,9 @@ Some  real conditionals (implicative conditionals) are used to express general t
 \end{exe}
 
 
-In another type of real conditional (predictive conditionals), the apodosis expresses the probable future outcome if the condition in the protasis is fulfilled, for instance the action that a particular person intends to realize. The most common construction for predictive conditionals is to have a  (\ref{ex:mWmAkWtsWma}, \ref{ex:CWkAru}). 
+In another type of real conditional (predictive conditionals), the apodosis expresses the probable future outcome if the condition in the protasis is fulfilled, for instance the action that a particular person intends to realize. The most common marking on the verb for predictive conditionals is reduplication  of the first syllable of the verb form (\ref{ex:mWmAkWtsWma}, \ref{ex:CWkAru}). 
 
-An interrogative imperfective form in the protasis followed by an imperfective one in the apodosis can be used to express a mild order or suggestion   (\ref{ex:WYWtWmbGom}, \ref{ex:WYWmaRa}). 
+An interrogative imperfective form in the protasis followed by an imperfective one in the apodosis can also be used to express a mild order or suggestion   (\ref{ex:WYWtWmbGom}, \ref{ex:WYWmaRa}). 
 
 \begin{exe}
 \ex  \label{ex:WYWtWmbGom}
@@ -1067,7 +1094,7 @@ An interrogative imperfective form in the protasis followed by an imperfective o
 \ex  \label{ex:WYWmaRa}
 \gll
 [\textbf{\ipa{ɯ-ɲɯ́-nɯkɯmaʁ-a}}]  	\ipa{nɤ}  	\ipa{ɲɯ-kɯ-sɯ-βzɟɯr-a}  \\
-\textsc{interrog-ipfv}-make.a.mistake-\textsc{1sg} \textsc{lnk} \textsc{ipfv}-2$\rightarrow$1-\textsc{caus}-chang-\textsc{1sg} \\
+\textsc{interrog-ipfv}-make.a.mistake-\textsc{1sg} \textsc{lnk} \textsc{ipfv}-2$\rightarrow$1-\textsc{caus}-change-\textsc{1sg} \\
 \glt If I make a mistake, please correct me. (elicited)
 \end{exe}
 
@@ -1075,7 +1102,7 @@ An interrogative imperfective form in the protasis followed by an imperfective o
 \ex  \label{ex:mWmAkWtsWma}
 \gll
 [\textbf{\ipa{mɯ-mɤ-kɯ-tsɯm-a-nɯ}}]  	\ipa{nɤ}  	\ipa{mɤ-kʰam-a}  \\
-\textsc{cond-neg}-2$\rightarrow$1-\textsc{fact}:take.away-\textsc{1sg-pl} \textsc{lnk} neg-n.pst:give[III]-\textsc{1sg} \\
+\textsc{cond-neg}-2$\rightarrow$1-\textsc{fact}:take.away-\textsc{1sg-pl} \textsc{lnk} neg-fact:give[III]-\textsc{1sg} \\
 \glt Unless you take me (with you), I won't give it to you. (flood1, 62)
 \end{exe}
 
@@ -1088,7 +1115,7 @@ An interrogative imperfective form in the protasis followed by an imperfective o
 \end{exe}
 
 
-This conditional construction is used to build linker-like phrases such as \ipa{nɯ maʁ nɤ} `otherwise' (see section \ref{sec:possible.consequence}) and \ipa{tɕʰi maʁ nɤ} `at least' which can be analyzed as in \ref{ex:nWmaRnA.tChimaRnA}.
+This conditional construction is used to build linker-like phrases such as \ipa{nɯ maʁ nɤ} `otherwise' (see section \refb{sec:possible.consequence}) and \ipa{tɕʰi maʁ nɤ} `at least' which can be analyzed as in \refb{ex:nWmaRnA.tChimaRnA}.
 \begin{exe}
 \ex  \label{ex:nWmaRnA.tChimaRnA}
 \gll
@@ -1096,17 +1123,17 @@ This conditional construction is used to build linker-like phrases such as \ipa{
  \textsc{dem} \textsc{fact}:not.be \textsc{lnk} { } what  \textsc{fact}:not.be \textsc{lnk}  \\
 \end{exe}
 
-The clause \ipa{tɕʰi maʁ nɤ} commonly occurs before another clause ending with the linker \ipa{tsaʁ} `at least', as in \ref{ex:tChimaRnA}.
+The clause \ipa{tɕʰi maʁ nɤ} commonly occurs before another clause ending with the linker \ipa{tsaʁ} `at least', as in \refb{ex:tChimaRnA}.
 \begin{exe}
 \ex  \label{ex:tChimaRnA}
 \gll
 \ipa{wortɕʰiwojɤr} 	\ipa{ʑo,} 	\ipa{tɕʰi} 	\ipa{maʁ} 	\ipa{nɤ,} 	\ipa{a-ɣi} 	\ipa{ra} 	\ipa{nɯ-pʰe} 	\ipa{ɕɯ-rɤ-fɕɤt-tɕi} 	\ipa{tsaʁ} 	\ipa{ma,} 	\ipa{ɣɯ-nɯzdɯɣ-a-nɯ} 	 \\
-please \textsc{emph} what \textsc{fact}:not.be \textsc{lnk} \textsc{1sg.poss}-relative \textsc{pl} \textsc{3pl-dat} \textsc{transloc-antipass-n.pst}:tell-\textsc{du} at.least  apart.from \textsc{inv}-\textsc{fact}:worry.about-\textsc{1sg-pl} \\
+please \textsc{emph} what \textsc{fact}:not.be \textsc{lnk} \textsc{1sg.poss}-relative \textsc{pl} \textsc{3pl-dat} \textsc{transloc-antipass-fact}:tell-\textsc{du} at.least  apart.from \textsc{inv}-\textsc{fact}:worry.about-\textsc{1sg-pl} \\
 \glt Please, at least let us go to tell my parents, otherwise they would be worried about me. (The fox, 70-1)
 
 \end{exe}
 \subsubsection{Alternative concessive conditional}
-To express the meaning that an outcome will occur whether or not the condition in the protasis is fulfilled, there is a specific construction in Japhug, in which we find a pair of conditional clauses. In the first pair, the protasis is in a affirmative form, while in the second it is in a negative form. The verb (or more generally, the copula) in the protasis  is in the past imperfective with the autobenefactive/spontaneous prefix \ipa{nɯ--}, which is often geminated. Unlike other conditionals, the verb of the protasis is not reduplicated. It receives past imperfective `down' marking \ipa{pɯ}-- regardless of whether it is stative or dynamic, as shown by the examples \ref{ex:pannWri} and \ref{ex:pannAla}.
+To express the meaning that an outcome will occur whether or not the condition in the protasis is fulfilled, there is a specific construction in Japhug, in which we find a pair of conditional clauses. In the first pair, the protasis is in a affirmative form, while in the second it is in a negative form. The verb (or more generally, the copula) in the protasis  is in the past imperfective with the autobenefactive/spontaneous prefix \ipa{nɯ--}, which is often geminated. Unlike other conditionals, the verb of the protasis is not reduplicated. It receives past imperfective `down' marking \ipa{pɯ}-- regardless of whether it is stative or dynamic, as shown by the examples \refb{ex:pannWri} and \refb{ex:pannAla}.
 
 
 \begin{exe}
@@ -1117,7 +1144,7 @@ To express the meaning that an outcome will occur whether or not the condition i
 \glt Whether one liked it or not, one had to go. (Relatives, 212)
 \end{exe}
 
-The verb \ipa{nɤla} `agree' normally receives the prefix \ipa{tɤ}-- `up', but when used in the protasis of such constructions it is marked with the \ipa{pɯ}-- `down' prefix of past imperfective (in \ref{ex:pannAla} in the direct 3$\rightarrow$3 form \ipa{pa}--).
+The verb \ipa{nɤla} `agree' normally receives the prefix \ipa{tɤ}-- `up', but when used in the protasis of such constructions, it is marked with the \ipa{pɯ}-- `down' prefix of past imperfective (in \refb{ex:pannAla} in the direct 3$\rightarrow$3 form \ipa{pa}--).
 
 \begin{exe}
 \ex  \label{ex:pannAla}
@@ -1127,7 +1154,7 @@ The verb \ipa{nɤla} `agree' normally receives the prefix \ipa{tɤ}-- `up', but 
   \textsc{neg-pst.ipfv}:3$\rightarrow$3-\textsc{auto}-agree \textsc{lnk} \textsc{ipfv}:go-\textsc{1sg} \textsc{fact}:have.to \\
 \glt I will go whether he agrees or not. (elicited)
 \end{exe}
- An alternative construction is to have   complex predicate in the protasis with the main verb in a finite form followed by the copula in the past imperfective with the \ipa{nɯ}-- prefix (\ipa{pɯ-nnɯ-ŋu} with the affirmative copula and \ipa{pɯ-nnɯ-maʁ} with the negative one). For instance, \ref{ex:pannAla} can be reformulated as \ref{ex:tanAla.pWnWNu} with the main verb \ipa{tɤ-nɤla} in the perfective without autobenefactive-spontaneous prefix.
+ An alternative construction is to have a  complex predicate in the protasis with the main verb in a finite form followed by the copula in the past imperfective with the \ipa{nɯ}-- prefix (\ipa{pɯ-nnɯ-ŋu} with the affirmative copula and \ipa{pɯ-nnɯ-maʁ} with the negative one). For instance, \refb{ex:pannAla} can be reformulated as \refb{ex:tanAla.pWnWNu} with the main verb \ipa{ta-nɤla} in the perfective without autobenefactive-spontaneous prefix.
  
 \begin{exe}
 \ex  \label{ex:tanAla.pWnWNu}
@@ -1138,7 +1165,7 @@ The verb \ipa{nɤla} `agree' normally receives the prefix \ipa{tɤ}-- `up', but 
 
 	
 		
-It is possible to have several protases followed by a single apodosis, as in \ref{ex:pWnnWNu}.
+It is possible to have several protases followed by a single apodosis, as in \refb{ex:pWnnWNu}.
 \begin{exe}
 \ex  \label{ex:pWnnWNu}
 \gll
@@ -1155,7 +1182,7 @@ bug \textsc{erg} \textsc{ipfv}-eat[III] \textsc{pst.ipfv-auto}-be
 \glt Whether one's tooth is broken, cracked, whether one has a decayed tooth or whether it simply hurts, he (a particular dentist) treats it very well. (Toothache, 133)
 \end{exe}
 
-This type of construction is related to, but different from, the complement clauses expressing an alternative between two possibilities, as in \ref{ex:pWnnWNu.pWnnWmaR.mAxsi}. Here there is no apodosis, and the first two clauses are treated as the P argument of the verb \ipa{mɤxsi}.
+This type of construction is related to, but different from, the complement clauses expressing an alternative between two possibilities, as in \refb{ex:pWnnWNu.pWnnWmaR.mAxsi}. Here there is no apodosis, and the first two clauses are treated as the P argument of the verb \ipa{mɤxsi}.
 
 \begin{exe}
 \ex  \label{ex:pWnnWNu.pWnnWmaR.mAxsi}
@@ -1165,7 +1192,7 @@ This type of construction is related to, but different from, the complement clau
 \glt I don't know whether this is true or not, (kʰɯli, 60)
 \end{exe}
 
-Another way of forming alternative concessive conditionals in Japhug is to use the polar interrogative sentence-final particle \ipa{ɕi}, as in \ref{ex:pjWnAndAG} and \ref{ex:RjWtpa}.
+Another way of forming alternative concessive conditionals in Japhug is to use the polar interrogative sentence-final particle \ipa{ɕi}, as in \refb{ex:pjWnAndAG} and \refb{ex:RjWtpa}.
 \begin{exe}
 \ex  \label{ex:pjWnAndAG}
 \gll
@@ -1187,7 +1214,7 @@ exist:\textsc{sensory} \textsc{fact}:be:\textsc{affirm} \textsc{lnk} \textsc{lnk
 Scalar concessive conditionals express that regardless of whether or not the condition in the protasis is fulfilled, the event / situation in the apodosis will be true, as in English `even if' or ' even when'.
 
 
-In Japhug, to express this meaning, it is possible to use the past imperfective in combination with the autobenefactive in the protasis as in alternative concessive conditionals, but followed by \ipa{kɯnɤ} `also, too', as in \ref{ex:pWnnWtu.kWnA}.
+In Japhug, to express this meaning, it is possible to use the past imperfective in combination with the autobenefactive in the protasis as in alternative concessive conditionals, but followed by \ipa{kɯnɤ} `also, too', as in \refb{ex:pWnnWtu.kWnA}.
 
 
  \begin{exe}
@@ -1197,7 +1224,7 @@ In Japhug, to express this meaning, it is possible to use the past imperfective 
 \textsc{dem} again \textsc{3sg.poss}-foot \textsc{ipfv}-do[III] \textsc{testim}-be:\textsc{affirm} \textsc{lnk} \textsc{3sg.poss}-flower \textsc{pst.ipfv-auto}-exist also \textsc{3sg.poss}-seed \textsc{pl} \textsc{inf}-see not.exist:\textsc{sensory} \\
 \glt This one also grows by its root, as even if it has flowers, (I) have never seen its seeds. (paʁtsa rna, 155)
 \end{exe}
-Multiple protases are also attested for this construction, as in example   \ref{ex:pWnnWdAn}.
+Multiple protases are also attested for this construction, as in example   \refb{ex:pWnnWdAn}.
 \begin{exe}
 \ex  \label{ex:pWnnWdAn}
 \gll
@@ -1206,13 +1233,13 @@ Multiple protases are also attested for this construction, as in example   \ref{
 \glt (this way), even when there was a lot of water, even when the bucket was very heavy, it would not hurt one's waist. (zgri, 188)
 \end{exe}
 
-Alternatively, we also find cases where the verb in the protasis does not receive any special morphological marking, as in \ref{ex:chWwGnWBlW}.
+Alternatively, we also find cases where the verb in the protasis does not receive any special morphological marking, as in \refb{ex:chWwGnWBlW}.
 \begin{exe}
 \ex  \label{ex:chWwGnWBlW}
 \gll
 \ipa{cʰɯ́-wɣ-nɯβlɯ}    	\ipa{kɯnɤ,}    	\ipa{tu-nɯt}    	\ipa{ʁo}    	\ipa{ŋu}    	\ipa{ri,}    	\ipa{ɯ-ʁrɤt}    	\ipa{nɯ}    	\ipa{ɲaʁ}    	\ipa{ʑo}    	\ipa{qʰe,}    	\ipa{maka}    	\ipa{ɲɯ-ɣɤ-mpje}    	\ipa{mɤ-cha.}    	\\
 \textsc{ipfv-inv}-burn also \textsc{ipfv}-be.ignited \textsc{contrast:foc} \textsc{fact}:be \textsc{lnk}
-\textsc{3sg.poss}-charcoal \textsc{top}  \textsc{fact}:be.black \textsc{emph} \textsc{lnk} at.all \textsc{ipfv-caus}-be.warm[III] \textsc{neg-n.pst}:can \\
+\textsc{3sg.poss}-charcoal \textsc{dem}  \textsc{fact}:be.black \textsc{emph} \textsc{lnk} at.all \textsc{ipfv-caus}-be.warm[III] \textsc{neg-fact}:can \\
 \glt Even when one burns it, although it does ignite, its charcoal is black and it does not warm anything. (thowum, 8-10)
 \end{exe}
 
@@ -1221,16 +1248,16 @@ Alternatively, we also find cases where the verb in the protasis does not receiv
 \subsubsection{Counterfactual} \label{sec:counterfact}
 Counterfactuals express the meaning that, had the condition in the protasis been verified (which it has not), the event in the apodosis would have occurred.
 
-There are several constructions in Japhug to express counterfactual meaning. It is possible to use the same construction as that of real conditionals, as    in \ref{ex:mWmACtAnWsmAn.nA}.
+There are several constructions in Japhug to express counterfactual meaning. It is possible to use the same construction as that of real conditionals, as    in \refb{ex:mWmACtAnWsmAn.nA}.
      \begin{exe}
    \ex \label{ex:mWmACtAnWsmAn.nA}
    \gll
 \ipa{kɯ-ngo}  	\ipa{nɯ}  	\ipa{smɤnba}  	\ipa{kɯ}  	\ipa{mɯ-mɤ-ɕ-ta-nɯsmɤn}  	\ipa{nɤ,}  	\ipa{si}  	\ipa{ɕti.}  \\
-\textsc{nmlz}:S/A-be.sick \textsc{top} doctor \textsc{erg} \textsc{cond-neg-transloc-pfv}:3$\rightarrow$3'-treat \textsc{lnk} \textsc{fact}:die \textsc{fact}:be:\textsc{affirm} \\
+\textsc{nmlz}:S/A-be.sick \textsc{dem} doctor \textsc{erg} \textsc{cond-neg-transloc-pfv}:3$\rightarrow$3'-treat \textsc{lnk} \textsc{fact}:die \textsc{fact}:be:\textsc{affirm} \\
 \glt If the doctor had not gone to treat the patient, he would have died (elicitation).
 \end{exe}
 
-Alternatively, there is another construction with the verb in the protasis has a verb  in the  irrealis or in imperfective or perfective followed by \ipa{a-pɯ-ŋu} or \ipa{a-pɯ-maʁ}, a linker such as \ipa{tɕe} or \ipa{qʰe}, while the apodosis has a verb in the past imperfective, as in \ref{ex:tundzea.apWNu}.
+Alternatively, there is another construction with the verb in the apodosis in the past imperfective with the prefix \ipa{pɯ--}, as in \refb{ex:tundzea.apWNu}.
 
      \begin{exe}
    \ex \label{ex:tundzea.apWNu}
@@ -1240,7 +1267,7 @@ medicine early  a.little \textsc{ipfv}-eat[III]-\textsc{1sg} \textsc{irr-ipfv}-b
 \glt If I had taken my medicine earlier, I would not have gotten sick. (elicited)
 \end{exe}
 
-While dynamic verbs do not appear in the past imperfective in independent clauses, they do in the apodosis of this counterfactual construction. This phenomenon is   detectable only for   verbs whose intrinsic directional prefix is not the `down' direction (see section \ref{sec:directional}). For instance, the verb \ipa{rpu} `bump into' receives the \ipa{kɤ}-- `toward east' direction marker when used in meaning `bump one' head'.
+While dynamic verbs do not appear in the past imperfective in independent clauses, they do in the apodosis of this counterfactual construction. This phenomenon is   detectable only for   verbs whose intrinsic directional prefix is not the `down' direction (see section \refb{sec:directional}). For instance, the verb \ipa{rpu} `bump into' receives the \ipa{kɤ}-- `toward east' direction marker when used in meaning `bump one' head'.
 
      \begin{exe}
    \ex \label{ex:kAnWrputa}
@@ -1250,7 +1277,7 @@ While dynamic verbs do not appear in the past imperfective in independent clause
 \glt  When I came to your house, I bumped my head. (elicitation based on real events)
 \end{exe}
 
-Used in the apodosis of counterfactual as in \ref{ex:mWpWnWrputa} however, we find the `down' prefix \ipa{pɯ}-- instead of \ipa{kɤ}--, indicating that this is a past imperfective, not a perfective form.
+Used in the apodosis of the counterfactual as in \refb{ex:mWpWnWrputa} however, we find the `down' prefix \ipa{pɯ}-- instead of \ipa{kɤ}--, indicating that this is a past imperfective, not a perfective form.
 
      \begin{exe}
    \ex \label{ex:mWpWnWrputa}
@@ -1258,7 +1285,7 @@ Used in the apodosis of counterfactual as in \ref{ex:mWpWnWrputa} however, we fi
 \ipa{nɤ-kʰa}   	\ipa{lɤ-ɣe-a}   	\ipa{ri,}   	[\ipa{a-ku}   	\ipa{pjɯ-phaβ-a}   	\textbf{\ipa{a-pɯ-ŋu}}]   	\ipa{tɕe}   	\ipa{mɯ-pɯ-nɯ-rpu-t-a.}     \\
 \textsc{2sg.poss}-house \textsc{pfv:upstream}-come[II]-\textsc{1sg} \textsc{lnk} \textsc{1sg.poss}-head \textsc{ipfv}-lower-\textsc{1sg} \textsc{irr-pst.ipfv}-be \textsc{lnk}
  \textsc{neg-pst.ipfv-auto}-bump.into-\textsc{pst:tr-1sg} \\
-\glt  When I came to your house, if I had lowered my head, would not have bumped it. (elicitation)
+\glt  When I came to your house, if I had lowered my head, I would not have bumped it. (elicitation)
 \end{exe}
 
 
@@ -1279,7 +1306,7 @@ Used in the apodosis of counterfactual as in \ref{ex:mWpWnWrputa} however, we fi
 
 
 \subsubsection{Hypothetical}
-Hypothetical conditional refer to a future hypothetical situation,   unlike counterfactuals which refer to a potential situation in the past which did not occur. It can also express the hypothetical nature of the causal relation between the two events. This construction differs from all other conditionals in that the verb of the apodosis is in the irrealis as in \ref{ex:akAnWtshABnW}.
+Hypothetical conditionals refer to a future hypothetical situation,   unlike counterfactuals which refer to a potential situation in the past which did not occur. It can also express the hypothetical nature of the causal relation between the two events. This construction differs from all other conditionals in that the verb of the apodosis is in the irrealis as in \refb{ex:akAnWtshABnW}.
 
 
 \begin{exe}
@@ -1290,21 +1317,21 @@ Hypothetical conditional refer to a future hypothetical situation,   unlike coun
 \glt In my opinion, they have horns, I think that if they attacked together and gored the leopards, they would kill them, but they don't do that. Instead... (Wild yak, 60-3)
 \end{exe} 
 
-Example  \ref{ex:WmApWtWcha} illustrates a hypothetical conditional  (with both the verb in the protasis and the apodosis in the irrealis) followed by a predictive conditional.
+Example  \refb{ex:WmApWtWcha} illustrates a hypothetical conditional  (with both the verb in the protasis and the apodosis in the irrealis) followed by a predictive conditional.
 
 \begin{exe}
 \ex \label{ex:WmApWtWcha}
 \gll 
 [\textbf{\ipa{a-pɯ-tɯ-cha}}]  	\ipa{nɤ,}  	\ipa{nɯ}  	\ipa{a-tʰɯ-tɯ-sɯ-jɣɤt}  	\ipa{ra}  	\ipa{ma}  	[\ipa{nɯ}  	\textbf{\ipa{ɯ-mɤ-pɯ-tɯ-cha}}]  	\ipa{qʰe}  	\ipa{tɕe}  	\ipa{aʑo}  	\ipa{mɤ́-wɣ-sɯɣ-cha-a}  	  \\
 \textsc{irr-pst.ipfv-2}-can \textsc{lnk} \textsc{dem} \textsc{irr-pfv:downstr-2-caus}-turn.around \textsc{fact}:have.to otherwise
-\textsc{dem}  \textsc{interrog-neg-pst.ipfv}-2-can \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{neg-inv-n.pst:caus}-can-\textsc{1sg} \\
+\textsc{dem}  \textsc{interrog-neg-pst.ipfv}-2-can \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{neg-inv-fact:caus}-can-\textsc{1sg} \\
 \glt If you are strong enough, you will have to cause him to go back, otherwise if you are not able to do that, I will be unable (to retrieve the water). (Stealing the water1, 40)
 \end{exe} 
 %如果你行的话，要把赶回去>山神 
 
 
  
- It is also possible to have non-irrealis verb in the protasis, with a reduplicated first syllable as in \ref{ex:pWpWtWBJAt}, even in the case of very speculative conjectures.
+ It is also possible to have a non-irrealis verb in the protasis, with a reduplicated first syllable as in \refb{ex:pWpWtWBJAt}, even in the case of very speculative conjectures.
 \begin{exe}
 \ex \label{ex:pWpWtWBJAt}
 \gll 
@@ -1315,9 +1342,11 @@ Example  \ref{ex:WmApWtWcha} illustrates a hypothetical conditional  (with both 
 
 
 \section{Consequence}
-In Consequence clause linkings, the supporting clause   reports the cause, and the focal clause the effect. \citet[17, 44]{dixon09intro} distinguishes three subtypes (Cause, Result and Purpose), but we collapse here the first two categories for ease  of presentation.
+In Consequence clause linkings, one clause expresses the cause and the other one its effect. However, while in some constructions the subordinate clause corresponds to the cause and the main clause to the effect, the opposite situation is also attested.  
 
-    
+\citet[17, 44]{dixon09intro} distinguishes three subtypes (Cause, Result and Purpose), but we collapse here the first two categories for ease  of presentation.
+
+%    \citet{bril10linking}
 
 %\ipa{ɯ-rʑaβ}  	\ipa{nɯ}  	\ipa{to-ngo}  	\ipa{tɕe}  	\ipa{ɲɤ-si.}  
 %Nyima Wodzer1, 2
@@ -1325,12 +1354,14 @@ In Consequence clause linkings, the supporting clause   reports the cause, and t
 \subsection{Cause-Result} \label{sec:cause}
 There are two main constructions in Japhug explicitly expressing a causal relationship between two clauses. 
 
-The most common construction involves the linker \ipa{matɕi} `because', which is prosodically associated with the supporting clause.  This construction can be used to express strong causality as in \ref{ex:GAnWZu} or \ref{ex:WGli.dAn}.
+The most common construction involves the linker \ipa{matɕi} `because', which is prosodically associated with the  clause expressing the cause.  The placement of the linker is the evidence for considering this clause to be subordinate and the clause expressing the result to be the main clause.\footnote{This is a case where Dixon's terms `supporting' vs `focal' clause may be more appropriate, but we keep the traditional terminology for consistency.}
+
+This construction can be used to express strong causality as in \refb{ex:GAnWZu} or \refb{ex:WGli.dAn}.
 \begin{exe}
 \ex \label{ex:GAnWZu}
 \gll 
 \ipa{tɕe}   	\ipa{nɯnɯ}   	\ipa{tú-wɣ-ɣɯɕkat}   	\ipa{tɕe}   	[\ipa{ɯ-sno}   	\ipa{ɣɯ́-ta}   	\ipa{mɯ́j-ra}]   	\textbf{\ipa{matɕi,}}   	\ipa{ɯ-βri}   	\ipa{nɯ} \ipa{tɕu}   	\ipa{tɤ-sno}   	\ipa{kɯ-fse}   	\ipa{ɣɤ<nɯ>ʑu}   	\ipa{ɕti}   	\ipa{tɕe,}   \\
-\textsc{lnk} \textsc{dem} \textsc{ipfv-inv}-pack.on \textsc{lnk} \textsc{3sg.poss}-saddle \textsc{inv-n.pst}:put \textsc{neg:const}:have.to because   \textsc{3sg.poss}-body \textsc{top} \textsc{loc} \textsc{indef.poss}-body \textsc{nmlz}:S/A-be.like <\textsc{auto}>exist:\textsc{sensory} \textsc{n.pst:}be:\textsc{assertive} \textsc{lnk} \\
+\textsc{lnk} \textsc{dem} \textsc{ipfv-inv}-pack.on \textsc{lnk} \textsc{3sg.poss}-saddle \textsc{inv-fact}:put \textsc{neg:const}:have.to because   \textsc{3sg.poss}-body \textsc{dem} \textsc{loc} \textsc{indef.poss}-body \textsc{nmlz}:S/A-be.like <\textsc{auto}>exist:\textsc{sensory} \textsc{fact:}be:\textsc{assertive} \textsc{lnk} \\
 \glt When one puts packs on (Camels), there is no need to put a saddle, because they already have something like a saddle on their body. (Camel, 210)
  \end{exe}
  %tɕe nɯ tɕu tu-ɣɯɕkat-nɯ tɕe
@@ -1338,16 +1369,17 @@ The most common construction involves the linker \ipa{matɕi} `because', which i
 \begin{exe}
 \ex \label{ex:WGli.dAn}
 \gll [\ipa{paʁ}   	\ipa{ɣɯ}   	\ipa{ɯ-ɣli}   	\ipa{dɤn}]   	\ipa{\textbf{matɕi},}   	\ipa{mɤ-ndze}   	\ipa{ʑo}   	\ipa{me}   	\ipa{qʰe}   	\ipa{ɯ-ɣli}   	\ipa{dɤn}   \\
-pig \textsc{gen} \textsc{3sg.poss}-manure \textsc{fact}:be.many because \textsc{neg-n.pst}:eat[III] \textsc{emph} \textsc{fact}:not.exist \textsc{lnk} \textsc{3sg.poss}-manure  \textsc{fact}:be.many \\
+pig \textsc{gen} \textsc{3sg.poss}-manure \textsc{fact}:be.many because \textsc{neg-fact}:eat[III] \textsc{emph} \textsc{fact}:not.exist \textsc{lnk} \textsc{3sg.poss}-manure  \textsc{fact}:be.many \\
 \glt Pigs have a lot of manure, because they eat anything, so they have a lot of manure. (Pig, 101)
 \end{exe}
+
 %jla nɯ li ŋkʰorwapa ra nɯsroʁ ɯkɯndo kɯfse pɯɕti matɕi
 %犏牛是农民的命根子
 %nɯ apɯme tɕe, kɤrɤji mɯ́jkʰɯ
 %yak 05
 
 
-One finds it also in examples such as  \ref{mWtokhW.matCi} or \ref{pjAsAscit.matCi}, where there is no necessary causal implication between the event/situation of the supporting clause and that of the focal clause.
+One finds it also in examples such as  \refb{mWtokhW.matCi} or \refb{pjAsAscit.matCi}, where there is no necessary causal implication between the event/situation of the supporting clause and that of the focal clause.
 \begin{exe}
 \ex \label{mWtokhW.matCi}
 \gll 
@@ -1366,17 +1398,17 @@ very \textsc{emph} \textsc{evd.ipfv}-nice because food also \textsc{evd.ipfv}-ma
 \end{exe}
 
 
-A variant of this construction with the  linker \ipa{ma} is also attested as in \ref{CtunArGamanW}. Unlike  \ipa{matɕi}, this linker presents many other uses (possible consequence \ref{sec:possible.consequence}, ).
+A variant of this construction with the  linker \ipa{ma} is also attested as in \refb{CtunArGamanW}. Unlike  \ipa{matɕi}, this linker presents many other uses (in particular, possible consequence \refb{sec:possible.consequence}).
  
 \begin{exe}
 \ex \label{CtunArGamanW}
 \gll 
 \ipa{tɕendɤre}   	\ipa{aʁɤndɯndɤt}   	\ipa{ʑo}   	\ipa{ɕ-tu-nɤrɣama-nɯ}   	\ipa{ri}   	[\ipa{kɯ-pʰɤn}   	\ipa{pjɤ-me}]   	\ipa{\textbf{ma}}   	\ipa{ʑɯβdaʁ}   	\ipa{nɯ} \ipa{ra}   	\ipa{tɯ-ci}   	\ipa{ɯ-kɯ-ɤro}   	\ipa{pjɤ-me} \\
-\textsc{lnk} everywhere \textsc{emph} \textsc{transloc-ipfv}-pray.for.rain-\textsc{pl} \textsc{lnk} \textsc{nmlz}:S/A-efficient \textsc{evd.ipfv}-not.exist because mountain.god \textsc{top} \textsc{pl} \textsc{indef.poss}-water \textsc{3sg-nmlz}:S/A-possess  \textsc{evd.ipfv}-not.exist  \\
- \glt People went everywhere to pray for water, but it was for nothing, because none of mountain gods had water. (Kamnyu mountains1, 17)
+\textsc{lnk} everywhere \textsc{emph} \textsc{transloc-ipfv}-pray.for.rain-\textsc{pl} \textsc{lnk} \textsc{nmlz}:S/A-efficient \textsc{evd.ipfv}-not.exist because mountain.god \textsc{dem} \textsc{pl} \textsc{indef.poss}-water \textsc{3sg-nmlz}:S/A-possess  \textsc{evd.ipfv}-not.exist  \\
+ \glt People went everywhere to pray for water, but it was for nothing, because none of the mountain gods had water. (Kamnyu mountains1, 17)
 \end{exe}
 
-An alternative construction expressing a causal relationship between two clauses  is built by using the  noun  \ipa{ndʐa} `reason' or its derived form \ipa{núndʐa} `for this reason' in the focal clause. The adverb \ipa{núndʐa} can appear either between the supporting and  the focal clause (as in \ref{ex:qapGAmtWmtW}) or after it (as in \ref{ex:sqamnWxpa.mWtAtsu}). It is used to focalize the causal relationship between the events/situations of the two clauses.  
+An alternative construction expressing a causal relationship between two clauses  is built by using the  noun  \ipa{ndʐa} `reason' or its derived form \ipa{núndʐa} `for this reason' in the focal clause. The adverb \ipa{núndʐa} can appear either between the supporting and  the focal clause (as in \refb{ex:qapGAmtWmtW}) or after it (as in \refb{ex:sqamnWxpa.mWtAtsu}). It is used to focalize the causal relationship between the events/situations of the two clauses.  
 
 \begin{exe}
 \ex \label{ex:qapGAmtWmtW}
@@ -1391,11 +1423,11 @@ An alternative construction expressing a causal relationship between two clauses
 \ex \label{ex:sqamnWxpa.mWtAtsu}
 \gll
 \ipa{kʰu}  	\ipa{nɯ}  	\ipa{sqamnɯ-xpa}  	\ipa{mɯ-tɤ-tsu}  	\ipa{mɤɕtʂa}  	\ipa{mɤ-rɤpɯ}  	\ipa{tu-ti-nɯ}  	\ipa{ɲɯ-ŋu}  	\ipa{tɕe,}  	\ipa{tɕe}  	\textbf{\ipa{núndʐa}}  	\ipa{nɯ,}  	\ipa{kʰu}  	\ipa{nɯ}  	\ipa{ɲɯ-rkɯn.}  	\ipa{kʰu}  	\ipa{nɯ}  	\ipa{ɲɯ-rkɯn}  	\ipa{tɕe}  	\textbf{\ipa{núndʐa}}  	\ipa{ɲɯ-ŋu}  	\ipa{tu-ti-nɯ}  	\ipa{ɲɯ-ŋu}  \\
-tiger \textsc{top} fifteen-year \textsc{neg-pfv}-reach until \textsc{neg-n.pst}:bear.young \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \textsc{lnk} \textsc{lnk} for.this.reason \textsc{top} tiger \textsc{top} \textsc{testim}-be.rare tiger \textsc{top} \textsc{testim}-be.rare \textsc{lnk} for.this.reason \textsc{testim}-be \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be
+tiger \textsc{dem} fifteen-year \textsc{neg-pfv}-reach until \textsc{neg-fact}:bear.young \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \textsc{lnk} \textsc{lnk} for.this.reason \textsc{dem} tiger \textsc{dem} \textsc{testim}-be.rare tiger \textsc{dem} \textsc{testim}-be.rare \textsc{lnk} for.this.reason \textsc{testim}-be \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be
 \\
 \glt They say that the tiger does not bear young until it has reached fifteen years, and for this reason tigers are rare. Tigers are rare for this reason, they say. (Mule 46)
 \end{exe} 
-In answer to questions, it is common for the focal clause to be elided and to only have the supporting clause with the markers \ipa{ndʐa} or \ipa{núndʐa}, as in \ref{ex:YWGAkhW.ndzxa}.\footnote{This is the response to the question \ipa{a-tɤ-ɕime, tɕʰi ku-tɯ-ɣɤwu? mɤ-kɯ-pe ɣɤʑu ɯβrɤŋu?} `My lady, why are you crying? Are you feeling unwell?'.}
+In answer to questions, it is common for the focal clause to be elided and to only have the supporting clause with the markers \ipa{ndʐa} or \ipa{núndʐa}, as in \refb{ex:YWGAkhW.ndzxa}.\footnote{This is the response to the question \ipa{a-tɤ-ɕime, tɕʰi ku-tɯ-ɣɤwu? mɤ-kɯ-pe ɣɤʑu ɯβrɤŋu?} `My lady, why are you crying? Are you feeling unwell?'.}
 
 \begin{exe}
 \ex \label{ex:YWGAkhW.ndzxa}
@@ -1406,28 +1438,26 @@ In answer to questions, it is common for the focal clause to be elided and to on
 \end{exe} 
  
 
-
-
 \subsection{Purpose} \label{sec:purposive}
 
 Purposive clause linking, unlike the previous constructions, indicates that the causal relationship between the two clauses is intentional. There are two main constructions in Japhug expressing this meaning: the purposive converb and the linker \ipa{ɯtɕʰɯβ} `in order to'.\footnote{The purposive clause of motion verbs will not be treated here (see \citet{jacques13harmonization} for more details).
 }
 
-The purposive converb marking the verb of the focal clause (the purpose of the action described in the supporting clause), is formed by combining a possessive prefix, an imperfective prefix, the prefix \ipa{sɤ}--/\ipa{sɤz}--/\ipa{z}-- and a reduplicated form of the verb. The imperfective prefix is sometimes elided (\ref{ex:WmAYWsAjmWjmWt}), and there are examples of the purposive converb without reduplication (\ref{ex:WmApjWsAsWspoR}).
+The purposive converb marking the verb of the subordinate clause (the purpose of the action described in the subordinate clause), is formed by combining a possessive prefix, an imperfective prefix, the prefix \ipa{sɤ}--/\ipa{sɤz}--/\ipa{z}-- and a reduplicated form of the verb. The imperfective prefix is sometimes elided \refb{ex:WmAYWsAjmWjmWt}, and there are examples of the purposive converb without reduplication \refb{ex:WmApjWsAsWspoR}.  
 
-When the arguments of the supporting and the focal clause are coreferent, the focal clause with purposive converb can be embedded within the supporting clause as an adjunct as in \ref{ex:WmApjWsAsWspoR}.
+When the arguments of the supporting and the focal clause are coreferent, the focal clause with purposive converb can be embedded within the supporting clause as an adjunct as in \refb{ex:WmApjWsAsWspoR}.
 %rajouter ex avec verb intr in the SC and tr in FC
 %
 \begin{exe}
 \ex \label{ex:WmAYWsAjmWjmWt}
 \gll
   \ipa{kɯ-lɤɣ}   	\ipa{acɤβ}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{\textbf{ɯ-mɤ-sɤ-jmɯ-jmɯt}},   	\ipa{ɯ-pʰɯŋgɯ}   	\ipa{nɯ}   	\ipa{tɕu}   	\ipa{rdɤstaʁ-pɯpɯ}   	\ipa{tɕʰɯrdu}   	\ipa{ci}  \ipa{ɲɤ-rku,}\\
- \textsc{nmlz}:S/A-herd Askyabs \textsc{top} \textsc{erg}  \textsc{3sg-neg-purp:conv-redp}-forget \textsc{3sg.poss}-inside.clothes \textsc{top} \textsc{loc} stone-little pebble \textsc{indef}
+ \textsc{nmlz}:S/A-herd Askyabs \textsc{dem} \textsc{erg}  \textsc{3sg-neg-purp:conv-redp}-forget \textsc{3sg.poss}-inside.clothes \textsc{dem} \textsc{loc} stone-little pebble \textsc{indef}
  \textsc{evd}-put.in\\
 \glt The cowboy Askyabs put a little pebble inside his clothes so that he would not forget it. (The frog, 166)
 \end{exe}
  
-Alternatively, it can occur   before the supporting clause as in \ref{ex:WmApjWsAsWspoR} or after it (\ref{ex:WtChWB.apWNu}).
+Alternatively, it can occur   before the supporting clause as in \refb{ex:WmApjWsAsWspoR} or after it \refb{ex:WtChWB.apWNu}.
 
 \begin{exe}
 \ex \label{ex:WmApjWsAsWspoR}
@@ -1437,7 +1467,7 @@ Alternatively, it can occur   before the supporting clause as in \ref{ex:WmApjWs
 \glt Under the top platform, the water, the leaking water can leak through (the roof), and in order to prevent it from leaking through, people put flat stones there. (tɕʰɯra, 11)
 \end{exe}
 
-In the case of transitive verbs, the possessive prefix can refer either to the agent (as in \ref{amAYWsAjmWjmWt}) or the patient (\ref{WmAtusArpWrpu}).
+In the case of transitive verbs, the possessive prefix can refer either to the agent (as in \ref{amAYWsAjmWjmWt}) or the patient \refb{WmAtusArpWrpu}.
 
 \begin{exe}
 \ex \label{amAYWsAjmWjmWt}
@@ -1447,7 +1477,7 @@ In the case of transitive verbs, the possessive prefix can refer either to the a
 \glt No, I put it there so that I would not forget (to tell you). (The frog, 172)
 \end{exe}
 
-In \ref{WmAtusArpWrpu}, it would alternatively be possible to use the first singular form of the purposive converb \ipa{a-mɤ-tu-sɤ-rpɯ-rpu}   without changing the meaning.
+In \refb{WmAtusArpWrpu}, it would alternatively be possible to use the first singular form of the purposive converb \ipa{a-mɤ-tu-sɤ-rpɯ-rpu}   without changing the meaning.
 
  \begin{exe}
 \ex \label{WmAtusArpWrpu}
@@ -1457,7 +1487,7 @@ door \textsc{testim}-low \textsc{lnk} \textsc{1sg.poss}-head \textsc{3sg-neg-ipf
 \glt As the door is low, I lowered my head so as not to bump it.
 \end{exe}
 
-Although all examples of the converb in our corpus are negative, it is possible to elicit affirmative forms  as in \ref{atusAnWmtCWmtCi} without restriction.
+Although all examples of the converb in our corpus are negative, it is possible to elicit affirmative forms  as in \refb{atusAnWmtCWmtCi} without restriction.
 
 \begin{exe}
 \ex \label{atusAnWmtCWmtCi}
@@ -1468,7 +1498,7 @@ tomorrow \textsc{lnk} \textsc{1sg-ipfv-conv:purp-redp}-get.up.early early \texts
 \glt In order to get up early tomorrow, I have to go to bed soon. (elicited) 
 \end{exe}
 
- An alternative way of expressing purposive meaning is to use the linker \ipa{ɯtɕʰɯβ} `in order to'  after the purposive clause. The verb  an be either in a finite form or in the infinitive.  Thus, the supporting clause in \ref{ex:WtChWB.supporting}  can be preceded by any of  (a)-(c).  
+ An alternative way of expressing purposive meaning is to use the linker \ipa{ɯtɕʰɯβ} `in order to'  after the purposive clause. The verb  an be either in a finite form or in the infinitive.  Thus, the supporting clause in \refb{ex:WtChWB.supporting}  can be preceded by any of  (a)-(c).  
  
  \begin{exe}
 \ex \label{ex:WtChWB}  \begin{xlist}
@@ -1492,7 +1522,7 @@ tomorrow \textsc{lnk} \textsc{1sg-ipfv-conv:purp-redp}-get.up.early early \texts
  \glt Wear thick clothes, so that you don't get cold. (elicitation)
   \end{exe}
  
-The reverse order  between focal and supporting clause is also attested,   as illustrated by \ref{ex:WtChWB.apWNu} and \ref{ex:nAmAYWznAnAndzxWndzxo.apWNu}, which follow the same   supporting clause \ref{ex:WtChWB.supporting2}.
+The reverse order  between focal and supporting clause is also attested,   as illustrated by \refb{ex:WtChWB.apWNu} and \refb{ex:nAmAYWznAnAndzxWndzxo.apWNu}, which follow the same   supporting clause \refb{ex:WtChWB.supporting2}.
 
 \begin{exe}
 \ex \begin{xlist}
@@ -1519,7 +1549,7 @@ This construction is used in particular for expressing contrastive focus in the 
 \subsection{Possible consequence} \label{sec:possible.consequence}
 Possible consequence is a type of clause linking expressing that the event in the supporting clause should be undertaken in order to prevent that of the focal clause to take place, as the latter is viewed as an unfavorable result. 
  
- There is no  dedicated construction expressing possible consequence in Japhug. The linker \ipa{ma} is used with a verb in the irrealis (\ref{ex:amAtAndzanW.ma}), imperative (\ref{ex:ma.tAtAr}, \ref{ex:matABzea}) or other TAM categories (\ref{ex:tChi.chWtWnANkWNke}) in the supporting clause and a verb in the factual in the focal clause. The adverb \ipa{tha} or its variant \ipa{tɕetha} `later, in a moment' often appear in the focal clause of possible consequence linking (\ref{ex:tChi.chWtWnANkWNke}, \ref{ex:matABzea}, \ref{ex:Zatsa.mda}).
+ There is no  dedicated construction expressing possible consequence in Japhug. The linker \ipa{ma} is used with a verb in the irrealis \refb{ex:amAtAndzanW.ma}, imperative (\ref{ex:ma.tAtAr}, \ref{ex:matABzea}) or other TAM categories \refb{ex:tChi.chWtWnANkWNke} in the supporting clause and a verb in the factual in the focal clause. The adverb \ipa{tʰa} or its variant \ipa{tɕetʰa} `later, in a moment' often appear in the focal clause of possible consequence linking (\ref{ex:tChi.chWtWnANkWNke}, \ref{ex:matABzea}, \ref{ex:Zatsa.mda}).
  
  
  \begin{exe}
@@ -1541,8 +1571,8 @@ people \textsc{pl} \textsc{erg} \textsc{irr-neg-pfv-take}-\textsc{pl} \textsc{ln
   \begin{exe}
 \ex \label{ex:tChi.chWtWnANkWNke}
 \gll 
-[\ipa{tɕʰi}    	\ipa{cʰɯ-tɯ-nɤŋkɯŋke}    	\ipa{ŋu}]    	\ipa{\textbf{ma}}    	\ipa{tha}    	\ipa{βdɯt}    	\ipa{kɯ}    	\ipa{tɯ́-wɣ-ndza}    \\
-what \textsc{ipfv:downstream}-2-walk.around \textsc{fact}:be \textsc{lnk} in.a.moment demon \textsc{erg} 2-\textsc{inv-n.pst}:eat \\
+[\ipa{tɕʰi}    	\ipa{cʰɯ-tɯ-nɤŋkɯŋke}    	\ipa{ŋu}]    	\ipa{\textbf{ma}}    	\ipa{tʰa}    	\ipa{βdɯt}    	\ipa{kɯ}    	\ipa{tɯ́-wɣ-ndza}    \\
+what \textsc{ipfv:downstream}-2-walk.around \textsc{fact}:be \textsc{lnk} in.a.moment demon \textsc{erg} 2-\textsc{inv-fact}:eat \\
 \glt Why are you walking around (you should not be walking around), the demon will eat you. (The demon, 92-3)
   \end{exe}
 
@@ -1550,32 +1580,32 @@ what \textsc{ipfv:downstream}-2-walk.around \textsc{fact}:be \textsc{lnk} in.a.m
 \begin{exe}
 \ex \label{ex:matABzea}
 \gll 
-[\ipa{nɯ}    	\ipa{kʰramba}    	\ipa{ma-tɤ-βze-a}    	\ipa{ra}]    	\ipa{\textbf{ma}}    	\ipa{tɕe}    	<lishi>    	<jizai>    	\ipa{pjɯ-tɯ-βze}    	\ipa{ɕti}    	    	\ipa{\textbf{tɕetha}}    		     <zuzubeibei>    	\ipa{kɯ}    	\ipa{ɣɯ-nɤmqe-a-nɯ.}    \\
-\textsc{dem}  lie \textsc{neg-imp}-make[III]-\textsc{1sg} \textsc{fact}:have.to \textsc{lnk} \textsc{lnk}   history record \textsc{ipfv}-2-make[III] \textsc{fact}:be:\textsc{affirmative} later generations \textsc{erg}  \textsc{inv-n.pst}:scold-\textsc{1sg-pl} \\
+[\ipa{nɯ}    	\ipa{kʰramba}    	\ipa{ma-tɤ-βze-a}    	\ipa{ra}]    	\ipa{\textbf{ma}}    	\ipa{tɕe}    	<lishi>    	<jizai>    	\ipa{pjɯ-tɯ-βze}    	\ipa{ɕti}    	    	\ipa{\textbf{tɕetʰa}}    		     <zuzubeibei>    	\ipa{kɯ}    	\ipa{ɣɯ-nɤmqe-a-nɯ.}    \\
+\textsc{dem}  lie \textsc{neg-imp}-make[III]-\textsc{1sg} \textsc{fact}:have.to \textsc{lnk} \textsc{lnk}   history record \textsc{ipfv}-2-make[III] \textsc{fact}:be:\textsc{affirmative} later generations \textsc{erg}  \textsc{inv-fact}:scold-\textsc{1sg-pl} \\
 \glt I cannot tell lies, as   you are making a historical record, and previous and future generations would scold me.  (kikakɕi, 217)
  \end{exe}
 
-The phrase \ipa{ma}  	\ipa{mɤ-jɤɣ} `otherwise it is not possible', although syntactically a particular case of this construction, has a specific modal meaning `must', as in example \ref{ex:ma.mAjAG}.
+The phrase \ipa{ma}  	\ipa{mɤ-jɤɣ} `otherwise it is not possible', although syntactically a particular case of this construction, has a specific modal meaning `must', as in example \refb{ex:ma.mAjAG}.
 
 
 \begin{exe}
 \ex \label{ex:ma.mAjAG}
 \gll 
 \ipa{nɤʑo}  	\ipa{pɯ-ɬoʁ}  	\ipa{ma}  	\ipa{mɤ-jɤɣ,}  	\ipa{a-kʰa}  	\ipa{ma-tɯ-rɤʑi}  	\ipa{ma}  	\ipa{mɤ-jɤɣ}  \\
-you \textsc{pfv:down}-come.out \textsc{lnk} \textsc{neg-n.pst}:be.possible \textsc{2sg.poss}-house \textsc{neg:imp}-2-stay \textsc{lnk} \textsc{neg-n.pst}:be.possible \\
+you \textsc{pfv:down}-come.out \textsc{lnk} \textsc{neg-fact}:be.possible \textsc{2sg.poss}-house \textsc{neg:imp}-2-stay \textsc{lnk} \textsc{neg-fact}:be.possible \\
 \glt You have to leave, you cannot stay in my house. (The Raven4, 21-2)
  \end{exe}
 
 %tɕe nɯ ɯ-rɣi  a-mɤ-pɯ-ɕe ra ma pjɯ-tsɣi mɤ-cha tɕe
 %tɕendɤre a-nɯ-ɤci ʑo qʰe cho ftɕar a-kɤ-ndzoʁ ʑo qʰe li tu-ɬoʁ ɕti
 
-The phrases \ipa{nɯ mɤɕtʂa} `until that' (= `otherwise') or \ipa{nɯ ma} `apart from that' or \ipa{nɯ maʁ nɤ} `otherwise' can also appear in addition to the linker \ipa{ma} in possible consequence linking (examples \ref{ex:GWlAt.ra}, \ref{ex:nWmaRnA}, \ref{ex:Zatsa.mda}). The form \ipa{nɯ maʁ nɤ} (\textsc{dem} \textsc{fact}:not.be \textsc{lnk}), which is originally the protasis of conditional linking meaning `if it is not that', is very similar to an equivalent structure in Kham (\citealt[112]{watters09kham})
+The phrases \ipa{nɯ mɤɕtʂa} `until that' (= `otherwise') or \ipa{nɯ ma} `apart from that' or \ipa{nɯ maʁ nɤ} `otherwise' can also appear in addition to the linker \ipa{ma} in possible consequence linking (examples \refb{ex:GWlAt.ra}, \refb{ex:nWmaRnA}, \refb{ex:Zatsa.mda}). The form \ipa{nɯ maʁ nɤ} (\textsc{dem} \textsc{fact}:not.be \textsc{lnk}), which is originally the protasis of conditional linking meaning `if it is not that', is very similar to an equivalent structure in Kham (\citealt[112]{watters09kham})
  
 \begin{exe}
 \ex \label{ex:GWlAt.ra}
 \gll 
 [\ipa{koŋla}    	\ipa{ʑo}    	\ipa{tɯ-jaʁ}    	\ipa{tɯ-xɕɤt}    	\ipa{tsa}    	\ipa{ɣɯ́-lɤt}    	\ipa{ra}]    	\ipa{\textbf{ma}}    	\ipa{\textbf{nɯ}}    	\ipa{\textbf{mɤɕtʂa}}    	\ipa{kɤ-pʰɯt}    	\ipa{mɤ-sɤ-cha}    \\
-really \textsc{emph} \textsc{indef.poss}-hand \textsc{indef.poss}-strength a.little \textsc{inv-n.pst}:throw \textsc{fact}:have.to \textsc{lnk} \textsc{dem} until \textsc{inf}-take.out \textsc{neg-n.pst:deexperiencer}-can \\
+really \textsc{emph} \textsc{indef.poss}-hand \textsc{indef.poss}-strength a.little \textsc{inv-fact}:throw \textsc{fact}:have.to \textsc{lnk} \textsc{dem} until \textsc{inf}-take.out \textsc{neg-fact:deexperiencer}-can \\
 \glt  One has to exert all of one's strength with one's hand, otherwise it is not possible to pull it out. (stoʁtsa, 150)
  \end{exe}
  \begin{exe}
@@ -1589,12 +1619,12 @@ really \textsc{emph} \textsc{indef.poss}-hand \textsc{indef.poss}-strength a.lit
 \ex \label{ex:Zatsa.mda}
 \gll 
  \ipa{kɤ-rɤrɟɯt}  	\ipa{ʑatsa}  	\ipa{mda}  	\ipa{tɤ-ŋu}  	\ipa{tɕe,}  	\ipa{tɕʰeme}  	\ipa{nɯ}  	\ipa{kʰro}  	\ipa{tu-kɯ-rɤrma}  	\ipa{tɕe}  	<huodong>  	\ipa{tú-wɣ-βzu}  	\ipa{ra}  	\ipa{\textbf{ma}}  	\ipa{\textbf{nɯ}}  	\ipa{\textbf{maʁ}}  	\ipa{\textbf{nɤ}}  	\ipa{\textbf{tɕetha}}  	\ipa{tɤpɤtso}  	\ipa{kɤ-sci}  	\ipa{ɴqa}  	\ipa{tu-ti-nɯ}  	\ipa{ŋgrɤl.} \\
- \textsc{inf}-have.a.child soon \textsc{fact}:be.the.time  \textsc{pfv}-be \textsc{lnk} woman \textsc{top} a.lot \textsc{ipfv-genr}:S/P-work \textsc{lnk} activity \textsc{ipfv-inv}-make \textsc{n.pst:}have.to \textsc{lnk} textsc{dem} \textsc{fact}:not.be \textsc{lnk}  later
+ \textsc{inf}-have.a.child soon \textsc{fact}:be.the.time  \textsc{pfv}-be \textsc{lnk} woman \textsc{dem} a.lot \textsc{ipfv-genr}:S/P-work \textsc{lnk} activity \textsc{ipfv-inv}-make \textsc{fact:}have.to \textsc{lnk} textsc{dem} \textsc{fact}:not.be \textsc{lnk}  later
  child \textsc{inf}-be.born  \textsc{fact}:difficult \textsc{ipfv}-say-\textsc{pl} \textsc{fact}:be.usually.the.case  \\
  \glt When they are about to have a child, women have to work a lot and be active, otherwise   childbirth is difficult, they say. (Conversation, Chenzhen, 2013)
  \end{exe}
  
- Another construction attested for possible consequence involves a clause with ergative (similar to the Manner linking) of the verb \ipa{sɯso} `to think'. It can be a finite verb as \ref{ex:YWsWsama} or the infinitive \ipa{kɤ-sɯso} as in \ref{ex:nWCe.kAsWso} and \ref{ex:nWGi.kAsWso}, but in both cases it  takes a finite complement clause.  There is necessary coreference between the A of the infinitival clause and the S/A of the focal clause, but not with the complement clause of the  \ipa{kɤ-sɯso}. 
+ Another construction attested for possible consequence involves a clause with ergative (similar to the Manner linking) of the verb \ipa{sɯso} `to think'. It can be a finite verb as \refb{ex:YWsWsama} or the infinitive \ipa{kɤ-sɯso} as in \refb{ex:nWCe.kAsWso} and \refb{ex:nWGi.kAsWso}, but in both cases it  takes a finite complement clause.  There is necessary coreference between the A of the infinitival clause and the S/A of the focal clause, but not with the complement clause of the  \ipa{kɤ-sɯso}. 
  
  Constructions involving reported speech are also attested in the clause linkings  of Galo and Kham  (\citealt[86, 88]{post09linking} and \citealt[110]{watters09kham}), but their semantics are quite different from this construction.
  
@@ -1602,7 +1632,7 @@ really \textsc{emph} \textsc{indef.poss}-hand \textsc{indef.poss}-strength a.lit
 \ex \label{ex:YWsWsama}
 \gll 
 \ipa{a-mi}  	\ipa{nɯnɯ}  	\ipa{a-tɤ-mna}  	\ipa{ɲɯ-sɯsam-a}  	\ipa{tɕe,}  	\ipa{nɯ} \ipa{ra}  	\ipa{ku-z-nɯsman-a}  	\ipa{ŋu.}   \\
-\textsc{1sg.poss}-foot \textsc{top} \textsc{irr-pfv}-feel.better  \textsc{ipfv}-think[III]-\textsc{1sg} \textsc{lnk} \textsc{dem} \textsc{pl} \textsc{pres-caus}-treat-\textsc{1sg}  \textsc{fact}:be \\
+\textsc{1sg.poss}-foot \textsc{dem} \textsc{irr-pfv}-feel.better  \textsc{ipfv}-think[III]-\textsc{1sg} \textsc{lnk} \textsc{dem} \textsc{pl} \textsc{pres-caus}-treat-\textsc{1sg}  \textsc{fact}:be \\
 \glt I would like my feet to feel better, and so I treat them with (these medicine). (conversation, 2013)
   \end{exe}
  
@@ -1610,7 +1640,7 @@ really \textsc{emph} \textsc{indef.poss}-hand \textsc{indef.poss}-strength a.lit
 \ex \label{ex:nWCe.kAsWso}
 \gll 
 \ipa{nɯɕe}  	\ipa{kɤ-sɯso}  	\ipa{kɯ,}  	\ipa{ɯ-mbro}  	\ipa{nɯnɯ}  	\ipa{taqaβ}  	\ipa{cʰɤ-z-nɯtɕʰaʁ-nɯ,}  	\ipa{ɯ-kʰɯna}  	\ipa{nɯ}  	\ipa{rkorsa}  	\ipa{ɯ-pa}  	\ipa{lo-ja-nɯ}  \\
-\textsc{fact}:go.back \textsc{inf}-think \textsc{erg} \textsc{3sg.poss}-horse \textsc{top} needle \textsc{evd-caus}-eat-\textsc{pl}   \textsc{3sg.poss}-dog \textsc{top} toilet \textsc{3sg.poss}-down \textsc{evd}-pen-\textsc{pl} \\
+\textsc{fact}:go.back \textsc{inf}-think \textsc{erg} \textsc{3sg.poss}-horse \textsc{dem} needle \textsc{evd-caus}-eat-\textsc{pl}   \textsc{3sg.poss}-dog \textsc{dem} toilet \textsc{3sg.poss}-down \textsc{evd}-pen-\textsc{pl} \\
 \glt Thinking that he (was about to) go back, they fed his horse with needles and penned his dog in the toilets.(Gesar 250-1)
  \end{exe}
  
@@ -1625,11 +1655,11 @@ An interesting aspect  of the complement clause embedded within the infinitival 
 
  \end{exe}
  
-In \ref{ex:nWGi.kAsWso}, there are three referents involved, the father (A), the addressee (B) and the speaker (C). We see that the verb  	\ipa{nɯɣi} `he will come back' is in third person singular form and reflects the point of view of referent A, while the overt pronoun \ipa{nɤʑo} `\textsc{2sg}' reflects the addressee. This mismatch could be paraphrased in English as `thinking of you `he will come back'...'.  
+In \refb{ex:nWGi.kAsWso}, there are three referents involved, the father (A), the addressee (B) and the speaker (C). We see that the verb  	\ipa{nɯɣi} `he will come back' is in third person singular form and reflects the point of view of referent A, while the overt pronoun \ipa{nɤʑo} `\textsc{2sg}' reflects the addressee. This mismatch could be paraphrased in English as `thinking of you `he will come back'...'.  
 
 Despite the agreement mismatch, 	[\ipa{nɤʑo}  	\ipa{nɯɣi}] can be assumed to be monoclausal and to form a single constituent for three reasons. First, in this example as well as all examples exhibiting   hybrid reported speech in the corpus, there is no   pause between the noun phrase or pronoun and the verb form,. Second,  the noun phrase / pronoun can only appear in the same position as it would have in an independent clause, and no extra-position is possible. Third, using a third person pronoun \ipa{ɯʑo} instead of \ipa{nɤʑo}, or using a second person form of the verb (\ipa{tɯ-nɯɣi} `you will come back') would either change the meaning of this sentence or be ungrammatical.
  
-Although Japhug does have an apprehensive marker (see example \ref{ex:jinbala}), unlike Aguaruna this form is not used in Possible Conquence linkings  (compare with \citealt[187]{overall09linking}). 
+Although Japhug does have an apprehensive marker (see example \refb{ex:jinbala}), unlike Aguaruna this form is not used in Possible Conquence linkings  (compare with \citealt[187]{overall09linking}). 
 
 
 \section{Addition}
@@ -1638,7 +1668,7 @@ The Addition clause linkings are defined negatively in \citet[26]{dixon09intro} 
 \subsection{Unordered addition} \label{sec:unordered}
 The Unordered Addition linkings describe  two distinct events that are related but for which neither a temporal sequence nor a causal relationship can be assumed. 
 
-In Japhug, this type of minimal semantic link between two clauses is expressed by using two finite clauses with the linkers \ipa{tɕe} and \ipa{tɕendɤre}  as in \ref{ex:pjAmenW.tCe}. Unlike the  temporal succession linking (\ref{sec:temporal.succession}), unordered addition is not expressed by  the linker \ipa{qʰe}, which   always implies a temporal order between two events.
+In Japhug, this type of minimal semantic link between two clauses is expressed by using two finite clauses with the linkers \ipa{tɕe} and \ipa{tɕendɤre}  as in \refb{ex:pjAmenW.tCe}. Unlike the  temporal succession linking \refb{sec:temporal.succession}, unordered addition is not expressed by  the linker \ipa{qʰe}, which   always implies a temporal order between two events.
 
  \begin{exe}
 \ex \label{ex:pjAmenW.tCe}
@@ -1653,7 +1683,7 @@ they three apart.from \textsc{evd.ipfv}-not.exist-\textsc{pl} \textsc{lnk} \text
 In the Elaboration clause linking, the second clause provides addition information on the event or situation described in the first clause. In Japhug, we observe two distinct constructions depending on the locus of the additional information (predicate vs arguments).
 
 
-When the additional information is on the predicate, the Elaboration linking is expressed by two constructions. First, simple parataxis, with optional pause between the two predicates, can convey this meaning as in \ref{ex:WphoNbu}.
+When the additional information is on the predicate, the Elaboration linking is expressed by two constructions. First, simple parataxis, with optional pause between the two predicates, can convey this meaning as in \refb{ex:WphoNbu}.
 
 \begin{exe}
 \ex \label{ex:WphoNbu}
@@ -1663,11 +1693,11 @@ When the additional information is on the predicate, the Elaboration linking is 
 \glt Its body is big and fat. (Bees, 12)
 \end{exe}
 
-Second,  the comitative postposition \ipa{cʰo} or its compound form  \ipa{cʰondɤre} can be used to link the two clauses. The syntactic structure of this clause linking, despite superficial resemblance with Unordered Additional, is quite different: whereas the linkers \ipa{tɕe} and \ipa{qʰe} are not syntactically anchored either in the clause preceding or following it (see \ref{sec:linkers}), \ipa{cʰo} is actually the syntactic head of the clause preceding it. The elaboration linking is thus not a flat syntactic structure.
+Second,  the comitative postposition \ipa{cʰo} or its compound form  \ipa{cʰondɤre} can be used to link the two clauses. The syntactic structure of this clause linking, despite superficial resemblance with Unordered Additional, is quite different: whereas the linkers \ipa{tɕe} and \ipa{qʰe} are not syntactically anchored either in the clause preceding or following it (see \refb{sec:linkers}), \ipa{cʰo} is actually the syntactic head of the clause preceding it. The elaboration linking is thus not a flat syntactic structure.
 
 
 
-Example \ref{ex:cho.YWrYJi} illustrates the use of \ipa{cʰo} in elaboration clause linking, connecting two finite clauses with stative verbs sharing the same S without any overt noun phrase.
+Example \refb{ex:cho.YWrYJi} illustrates the use of \ipa{cʰo} in elaboration clause linking, connecting two finite clauses with stative verbs sharing the same S without any overt noun phrase.
 
 \begin{exe}
 \ex \label{ex:cho.YWrYJi}
@@ -1685,7 +1715,7 @@ yak \textsc{3sg.poss}-hair \textsc{testim}-be.like \textsc{lnk} \textsc{testim}-
 \glt As for its thorns, they are very sharp and hard. (ɴɢolo, 2)
 \end{exe}
 
-We also find cases with the interrogative  \ipa{tɕʰi} `what' repeated in both clauses as  in \ref{ex:tChi.sna.cho}.
+We also find cases with the interrogative  \ipa{tɕʰi} `what' repeated in both clauses as  in \refb{ex:tChi.sna.cho}.
 
 \begin{exe}
 \ex \label{ex:tChi.sna.cho}
@@ -1695,20 +1725,20 @@ We also find cases with the interrogative  \ipa{tɕʰi} `what' repeated in both 
 \glt Apart from that, I don't know what it is good for and what it can do. (qajɯβlɤma, 153)
 \end{exe}
 
-Clause linkings in \ipa{cʰo} can occur as protasis of a conditional linking. In this case, each of the conditions expressed by a distinct clause in the protasis must be fulfilled for the event in the apodosis to take place, as in \ref{ex:Zo.qhe.cho}.
+Clause linkings in \ipa{cʰo} can occur as protasis of a conditional linking. In this case, each of the conditions expressed by a distinct clause in the protasis must be fulfilled for the event in the apodosis to take place, as in \refb{ex:Zo.qhe.cho}.
 
 \begin{exe}
 \ex \label{ex:Zo.qhe.cho}
 \gll
 \ipa{tɕe}  	\ipa{nɯ}  	\ipa{ɯ-rɣi}  	\ipa{a-mɤ-pɯ-ɕe}  	\ipa{ra}  	\ipa{ma}  	\ipa{pjɯ-tsɣi}  	\ipa{mɤ-cʰa}  	\ipa{tɕe}  \ipa{tɕendɤre}  	[\ipa{a-nɯ-ɤci}  	\ipa{ʑo}  	\ipa{qʰe}  	\ipa{\textbf{cʰo}}  	\ipa{ftɕar}  	\ipa{a-kɤ-ndzoʁ}  	\ipa{ʑo}  	\ipa{qhe}]  	\ipa{li}  	\ipa{tu-ɬoʁ}  	\ipa{ɕti}  \\
-\textsc{lnk} \textsc{dem} \textsc{3sg.poss}-grain \textsc{irr-neg-pfv:down}-go \textsc{fact}:have.to \textsc{lnk} \textsc{ipfv}-be.rotten \textsc{neg-n.pst}:can \textsc{lnk} \textsc{lnk} \textsc{irr-pfv}-get.wet \textsc{emph} \textsc{lnk} \textsc{comit} summer \textsc{irr-pfv}-be.attached \textsc{emph} \textsc{lnk} again \textsc{ipfv}-come.out \textsc{fact}:be:\textsc{affirm}\\
+\textsc{lnk} \textsc{dem} \textsc{3sg.poss}-grain \textsc{irr-neg-pfv:down}-go \textsc{fact}:have.to \textsc{lnk} \textsc{ipfv}-be.rotten \textsc{neg-fact}:can \textsc{lnk} \textsc{lnk} \textsc{irr-pfv}-get.wet \textsc{emph} \textsc{lnk} \textsc{comit} summer \textsc{irr-pfv}-be.attached \textsc{emph} \textsc{lnk} again \textsc{ipfv}-come.out \textsc{fact}:be:\textsc{affirm}\\
 \glt One should not let its grains go into (the ground), because they cannot rot, and when they get wet and   spring comes, they grow again. (Rye, 46-7)
 \end{exe}
 
 
 
 
-On the other hand, when the additional information is on the arguments, the correlative linkers \ipa{tɕi} and \ipa{ri} `also' are used. This construction is used either when the predicates are identical in all clauses in the linking (\ref{ex:tCi.me}) or belong to the same semantic field (\ref{ex:tCi.ndze}, \ref{ex:ri.kWsna}).
+On the other hand, when the additional information is on the arguments, the correlative linkers \ipa{tɕi} and \ipa{ri} `also' are used. This construction is used either when the predicates are identical in all clauses in the linking \refb{ex:tCi.me} or belong to the same semantic field (\ref{ex:tCi.ndze}, \ref{ex:ri.kWsna}).
 
  \begin{exe}
 \ex \label{ex:tCi.ndze}
@@ -1723,7 +1753,7 @@ meat also \textsc{testim}-eat[III] meat.stew also \textsc{testim}-drink  \textsc
 \ex \label{ex:tCi.me}
 \gll
 \ipa{cɤmɯ}  	\ipa{nɯnɯ}  	\ipa{ɯ-ʁrɯ}  	\ipa{\textbf{tɕi}}  	\ipa{me,}  	\ipa{ɯ-ndzɣi}  	\ipa{\textbf{tɕi}}  	\ipa{me.}  \\
-female.muskdeer \textsc{top} \textsc{3sg.poss}-horn also \textsc{fact}:not.exist \textsc{3sg.poss}-tusk also \textsc{fact}:not.exist \\
+female.muskdeer \textsc{dem} \textsc{3sg.poss}-horn also \textsc{fact}:not.exist \textsc{3sg.poss}-tusk also \textsc{fact}:not.exist \\
 \glt The female musk deer has neither horns nor tusks.  (muskdeer, 34)
 \end{exe}
 
@@ -1736,22 +1766,22 @@ female.muskdeer \textsc{top} \textsc{3sg.poss}-horn also \textsc{fact}:not.exist
 \glt That one (silver) is expensive and precious. (Metals, 191)
 \end{exe}
 
-The correlative linker \ipa{ri} found in \ref{ex:ri.kWsna} must be distinguished from the phrasal adversative linker \ipa{ri} used in Contrast linking (section \ref{sec:contrast}).
+The correlative linker \ipa{ri} found in \refb{ex:ri.kWsna} must be distinguished from the phrasal adversative linker \ipa{ri} used in Contrast linking (section \refb{sec:contrast}).
 
 \subsection{Alternating or repeated actions} \label{sec:alternating}
 
-In order to express two actions occurring one after the other repeatedly, we find finite verb forms with the linker \ipa{nɤ}, as in \ref{ex:kuCe.nA.YWGi}.
+In order to express two actions occurring one after the other repeatedly, we find finite verb forms with the linker \ipa{nɤ}, as in \refb{ex:kuCe.nA.YWGi}.
 
 \begin{exe}
 \ex \label{ex:kuCe.nA.YWGi}
 \gll
 \ipa{tɕʰeme}  	\ipa{nɯnɯ}  	\ipa{tɕe}  	\ipa{kʰɤxtu}  	\ipa{nɯ}  	\ipa{tɕe,}  	[\ipa{ku-ɕe}  	\ipa{\textbf{nɤ}}  	\ipa{ɲɯ-ɣi}]  	\ipa{tɕe}  	\ipa{ɲɯ-nɤrɯra}  	\ipa{ma}  	\ipa{nɯ}  	\ipa{ma}  	\ipa{rɤma}  	\ipa{mɯ-pjɤ-ra.}  \\
-girl \textsc{dem} \textsc{lnk} platform \textsc{top} \textsc{lnk} \textsc{ipfv:east}-go \textsc{lnk} \textsc{ipfv:west}-come \textsc{lnk} \textsc{ipfv}-look.around because \textsc{dem} a.part;from \textsc{fact}:work \textsc{neg-evd:ipfv}-have.to \\ 
+girl \textsc{dem} \textsc{lnk} platform \textsc{dem} \textsc{lnk} \textsc{ipfv:east}-go \textsc{lnk} \textsc{ipfv:west}-come \textsc{lnk} \textsc{ipfv}-look.around because \textsc{dem} a.part;from \textsc{fact}:work \textsc{neg-evd:ipfv}-have.to \\ 
 \glt The girl would come and go on the platform and look around, as she did not have any work to do. (The raven4, 134)
 \end{exe}
 
 
-The linker \ipa{nɤ}, used with the same verb, indicates an action that either takes a long period of time or occurs repeatedly (\ref{ex:tuCe.nA.tuCe}).
+The linker \ipa{nɤ}, used with the same verb, indicates an action that either takes a long period of time or occurs repeatedly \refb{ex:tuCe.nA.tuCe}.
 \begin{exe}
 \ex \label{ex:tuCe.nA.tuCe}
 \gll
@@ -1761,20 +1791,20 @@ house \textsc{gen} \textsc{3sg}-outside \textsc{loc} \textsc{ipfv}-climb \textsc
 (Slugs, 134)
 \end{exe}
  
-Constructions with similar semantics involving nouns or ideophones are also attested (see section \ref{sec:linkers}).
+Constructions with similar semantics involving nouns or ideophones are also attested (see section \refb{sec:linkers}).
  
  
  
  
 \subsection{Contrast} \label{sec:contrast}
-The Contrast linking expresses that the information contained in the supporting clause is strongly contrasts with or is unexpected in view of the focal clause. Japhug has seven distinct constructions for expressing this meaning, some of which are shared with the rejection linking (\ref{sec:rejection}).
+The Contrast linking expresses that the information contained in the supporting clause is strongly contrasts with or is unexpected in view of the focal clause. Japhug has seven distinct constructions for expressing this meaning, some of which are shared with the rejection linking \refb{sec:rejection}.
 
-First, we   find  clause linkings with predicates of opposite meaning (such as \ipa{dɤn} `many, a lot' and \ipa{rkɯn} `few'\footnote{The stative verb \ipa{rkɯn} `be few' is often used as a euphemism for `non-existent' in Japhug.} in example \ref{ex:dAn.rkWn}) without any overt linker, adverb or postposition marking contrast.
+First, we   find  clause linkings with predicates of opposite meaning (such as \ipa{dɤn} `many, a lot' and \ipa{rkɯn} `few'\footnote{The stative verb \ipa{rkɯn} `be few' is often used as a euphemism for `non-existent' in Japhug.} in example \refb{ex:dAn.rkWn}) without any overt linker, adverb or postposition marking contrast.
 \begin{exe}
 \ex \label{ex:dAn.rkWn}
 \gll
  \ipa{sɯŋgɯ}  	\ipa{tɕe}  	\ipa{dɤn}  	\ipa{tsa,}  	\ipa{kɯmaʁ}  	\ipa{nɯ} \ipa{ra}  	\ipa{rkɯn}  \\
- forest \textsc{lnk} \textsc{fact}:be.many a.little other \textsc{top} \textsc{pl} \textsc{fact}:be.few \\
+ forest \textsc{lnk} \textsc{fact}:be.many a.little other \textsc{dem} \textsc{pl} \textsc{fact}:be.few \\
 \glt There are a lot in the forest, fewer in other places. (paʁtsa rna, 133)
 \end{exe}
 
@@ -1792,7 +1822,7 @@ Second, the contrastive linkers \ipa{ri} `but' and its compound form \ipa{tɕeri
 \ex \label{ex:wxti.ri}
 \gll
 \ipa{ɯʑo}    	\ipa{si}    	\ipa{wxti}    	\ipa{\textbf{ri},}    	\ipa{ɯ-mɯntoʁ}    	\ipa{kɯ-ndɯ-ndɯβ}    	\ipa{ʑo}    	\ipa{ɲɯ-lɤt}    	\ipa{ŋu}    \\
-\textsc{3sg} tree \textsc{n.pst:}be.big \textsc{lnk} \textsc{3sg.poss}-flower \textsc{nmlz}:S/A-\textsc{redp}-small \textsc{emph} \textsc{ipfv}-throw \textsc{n.ps}t:be\\
+\textsc{3sg} tree \textsc{fact:}be.big \textsc{lnk} \textsc{3sg.poss}-flower \textsc{nmlz}:S/A-\textsc{redp}-small \textsc{emph} \textsc{ipfv}-throw \textsc{n.ps}t:be\\
 \glt It is a big tree, but it grows very small flowers. (thowum, 29)
 \end{exe}
 
@@ -1811,7 +1841,7 @@ they \textsc{erg} \textsc{pfv-nmlz:P-auto}-plant \textsc{indef} exist:\textsc{se
 \ex \label{ex:ndAre.mAsna}
 \gll
 \ipa{paʁ}    	\ipa{kɯ}    	\ipa{tɕi}    	\ipa{ndze,}    	\ipa{nɯŋa}    	\ipa{kɯ}    	\ipa{tɕi}    	\ipa{ndze.}    	\ipa{tɕe}    	[\ipa{tɯrme}    	\ipa{kɤ-ndza}]    	\ipa{\textbf{ndɤre}}    	\ipa{mɤ-sna.}    \\
-pig \textsc{erg} too \textsc{fact}:eat[III] cow  \textsc{erg} too \textsc{fact}:eat[III] \textsc{lnk} people \textsc{inf}-eat  \textsc{contrast:foc}  \textsc{neg-n.pst}:be.good \\
+pig \textsc{erg} too \textsc{fact}:eat[III] cow  \textsc{erg} too \textsc{fact}:eat[III] \textsc{lnk} people \textsc{inf}-eat  \textsc{contrast:foc}  \textsc{neg-fact}:be.good \\
 \glt Pigs eat it, cow eat it, but it is not good for people to eat. (tɕʰemekɤtsa 120)
 \end{exe}
 
@@ -1821,11 +1851,11 @@ The focalizer \ipa{ʁo} differs from \ipa{ndɤre} in that it implies that the co
 \ex \label{ex:Ro.ndAre}
 \gll
 \ipa{xɕiri}    	\ipa{kɤ-ti}    	\ipa{ci}    	\ipa{tu}    	\ipa{tɕe,}    	\ipa{nɯ}    	\ipa{\textbf{ʁo}}    	\ipa{kɯ-xtɕɯ-xtɕi}    	\ipa{ci}    	\ipa{ɕti,}    	 [...] 	\ipa{βʑɯ}    	\ipa{ndɤre}    	\ipa{mɤ-ʑɯ.}    	\ipa{βʑɯ}    	\ipa{sɤz}    	\ipa{ndɤre}    	\ipa{wxti}    	\ipa{ŋu,}   \\
-weasel \textsc{nmlz:P}-say \textsc{indef} \textsc{fact}:exist \textsc{lnk} \textsc{dem} \textsc{contrast:foc} \textsc{nmlz:S/A-redp}-small \textsc{indef} \textsc{fact}:be:\textsc{affirm} [...] mouse \textsc{contrast:foc} \textsc{neg-n.pst}:be.just mouse \textsc{comp} \textsc{contrast:foc} \textsc{fact}:be.big \textsc{fact}:be \\
+weasel \textsc{nmlz:P}-say \textsc{indef} \textsc{fact}:exist \textsc{lnk} \textsc{dem} \textsc{contrast:foc} \textsc{nmlz:S/A-redp}-small \textsc{indef} \textsc{fact}:be:\textsc{affirm} [...] mouse \textsc{contrast:foc} \textsc{neg-fact}:be.just mouse \textsc{comp} \textsc{contrast:foc} \textsc{fact}:be.big \textsc{fact}:be \\
 \glt There is (an animal) called the weasel, this one on the other hand (by contrast with the wolf, which was discussed before) is small, though not as small as a mouse. It is bigger than a mouse. (Weasel, 1)
 \end{exe}
 
-Fourth, the adversative adverb \ipa{mɤ́ɣrɤz} `instead' (Chinese \ipa{fǎn'ér} \zh{反而}) is used to express a result contrary to expectations, as in  \ref{ex:mAGrAz.tAse}.  
+Fourth, the adversative adverb \ipa{mɤ́ɣrɤz} `instead' (Chinese \ipa{fǎn'ér} \zh{反而}) is used to express a result contrary to expectations, as in  \refb{ex:mAGrAz.tAse}.  
 
 \begin{exe}
 \ex \label{ex:mAGrAz.tAse}
@@ -1837,7 +1867,7 @@ Fourth, the adversative adverb \ipa{mɤ́ɣrɤz} `instead' (Chinese \ipa{fǎn'e
  
 % tɕe qajɯ kɯ-fse tu-ndze ɲɯ-ŋu ma nɯ ma tɤrɤku mɯ́j-ndze.
 
-Fifth, the  postposition \ipa{ma} `apart from' between two clauses of opposite polarity is used to insist on the semantic opposition between them.  It is superficially similar to the causal linker \ipa{ma} `because', but   examples such as \ref{ex:YWchanW.ma} show no causal relationship between the two clauses. This construction  also occurs with the Rejection linking (\ref{sec:rejection}).
+Fifth, the  postposition \ipa{ma} `apart from' between two clauses of opposite polarity is used to insist on the semantic opposition between them.  It is superficially similar to the causal linker \ipa{ma} `because', but   examples such as \refb{ex:YWchanW.ma} show no causal relationship between the two clauses. This construction  also occurs with the Rejection linking \refb{sec:rejection}.
 \begin{exe}
 \ex \label{ex:YWchanW.ma}
 \gll
@@ -1846,12 +1876,12 @@ Fifth, the  postposition \ipa{ma} `apart from' between two clauses of opposite p
 \glt Those who are strong are able to do it, and those who aren't can't do it. (zrɯ, 22)
 \end{exe}
 
-The   linker  \ipa{laʁma} `apart from the fact that, only, just' is placed at the end of the focal clause. Its meaning is slightly similar to \ipa{ma} `apart from', but differs from it in that it adds the additional meaning that of two related events/situations, only that of the focal clause is fulfilled (as in \ref{ex:sWza.laRma}). It can also indicate that the event/situation of the supporting clause is basically true except for the minor counter evidence in the focal clause  (as in \ref{ex:maNe.laRma}).   The focal clause can either follow (\ref{ex:maNe.laRma}) or precede (\ref{ex:sWza.laRma}) the supporting clause in this construction.
+The   linker  \ipa{laʁma} `apart from the fact that, only, just' is placed at the end of the focal clause. Its meaning is slightly similar to \ipa{ma} `apart from', but differs from it in that it adds the additional meaning that of two related events/situations, only that of the focal clause is fulfilled (as in \refb{ex:sWza.laRma}). It can also indicate that the event/situation of the supporting clause is basically true except for the minor counter evidence in the focal clause  (as in \refb{ex:maNe.laRma}).   The focal clause can either follow \refb{ex:maNe.laRma} or precede \refb{ex:sWza.laRma} the supporting clause in this construction.
   \begin{exe}
 \ex \label{ex:maNe.laRma}
 \gll
 \ipa{ɯ-ku}  	\ipa{nɯ} \ipa{ra}   	\ipa{iɕqha}  	\ipa{qartsʰaz}  	\ipa{ɯ-ku}  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{fse,}  	\ipa{ɯ-ʁrɯ}  	\ipa{maŋe}  	\ipa{\textbf{laʁma}.}  	\\
-\textsc{3sg.poss}-head \textsc{top} \textsc{pl} the.aforementioned deer \textsc{3sg.poss}-head  really \textsc{emph} \textsc{fact}:be.like \textsc{3sg.poss}-horn not.exist:\textsc{sensory} apart.from \\
+\textsc{3sg.poss}-head \textsc{dem} \textsc{pl} the.aforementioned deer \textsc{3sg.poss}-head  really \textsc{emph} \textsc{fact}:be.like \textsc{3sg.poss}-horn not.exist:\textsc{sensory} apart.from \\
 \glt Its head is like that of a deer, apart from the fact that it has no  horns. (ca, 24)
 \end{exe} 
 
@@ -1859,10 +1889,10 @@ The   linker  \ipa{laʁma} `apart from the fact that, only, just' is placed at t
 \ex \label{ex:sWza.laRma}
 \gll
  \ipa{tɕe}  	\ipa{ŋotɕu}  	\ipa{kɯ-tu}  	\ipa{nɯ} \ipa{ra}  	\ipa{sɯz-a}  	\ipa{\textbf{laʁma},}  	\ipa{ju-ɕe-a}  	\ipa{mɯ́j-cha-a.}  	\\
- \textsc{lnk} where \textsc{nmlz}:S/A-exist \textsc{top} \textsc{pl} \textsc{fact}:know-\textsc{1sg} apart.from \textsc{ipfv}-go-\textsc{1sg} \textsc{neg:const}-can-\textsc{1sg}\\
+ \textsc{lnk} where \textsc{nmlz}:S/A-exist \textsc{dem} \textsc{pl} \textsc{fact}:know-\textsc{1sg} apart.from \textsc{ipfv}-go-\textsc{1sg} \textsc{neg:const}-can-\textsc{1sg}\\
 \glt I only know where they are, I cannot go there. (ʑmbɯlɯm, 63)
 \end{exe}
-Sixth, the negative copula \ipa{maʁ}  `not be' followed by the ergative \ipa{kɯ} can be used to focus on the opposition between two predicates as in \ref{ex:brAbrAB}. The same construction also appears as a type of Rejection linking (\ref{sec:rejection}).
+Sixth, the negative copula \ipa{maʁ}  `not be' followed by the ergative \ipa{kɯ} can be used to focus on the opposition between two predicates as in \refb{ex:brAbrAB}. The same construction also appears as a type of Rejection linking \refb{sec:rejection}.
 \begin{exe}
 \ex \label{ex:brAbrAB}
 \gll
@@ -1871,13 +1901,13 @@ Sixth, the negative copula \ipa{maʁ}  `not be' followed by the ergative \ipa{k�
 \glt It is not smooth, it is rough, coarse and irregular. (Mill, 172)
 \end{exe}
 
-Finally, there is a complex linker \ipa{jinbala zɯ} `although' comprising the locative \ipa{zɯ} and the form \ipa{jinbala} borrowed from Tibetan \ipa{jin.pa.la} (be-\textsc{nmlz-all}). This form is not used in colloquial Japhug, and appears only in a few stories told by elders as in \ref{ex:jinbala}.
+Finally, there is a complex linker \ipa{jinbala zɯ} `although' comprising the locative \ipa{zɯ} and the form \ipa{jinbala} borrowed from Tibetan \ipa{jin.pa.la} (be-\textsc{nmlz-all}). This form is not used in colloquial Japhug, and appears only in a few stories told by elders as in \refb{ex:jinbala}.
 
 \begin{exe}
 \ex \label{ex:jinbala}
 \gll 
 \ipa{tɕe}  	\ipa{rɟɤlpu}  	\ipa{nɯ}  	\ipa{nɯ-rga}  	\ipa{jinbala}  	\ipa{zɯ,}  	\ipa{`e,}  	\ipa{a-tɕɯ}  	\ipa{ki}  	\ipa{stɤβtsʰɤt}  	\ipa{mɯ-ɕɯ-cha}  	\ipa{kɯ}  	\ipa{ɲɤ-sɯso}  \\
-\textsc{lnk} king \textsc{top} \textsc{pfv}-be.happy although \textsc{loc} \textsc{interj} \textsc{1sg.poss}-son \textsc{dem:prox} contest \textsc{neg-apprehensive-n.pst}:can \textsc{possibility} \textsc{evd}-think \\
+\textsc{lnk} king \textsc{dem} \textsc{pfv}-be.happy although \textsc{loc} \textsc{interj} \textsc{1sg.poss}-son \textsc{dem:prox} contest \textsc{neg-apprehensive-fact}:can \textsc{possibility} \textsc{evd}-think \\
 \glt Although the king was pleased, he thought `Ah, I fear that my son will not succeed in this contest.' (The prince, 91-92)
  \end{exe}
 
@@ -1886,29 +1916,29 @@ Alternative linkings are used when the situation/event in both clauses are mutua
 \subsection{Disjunction}
 There is no linker specialized for expressing disjunction in Japhug like English \ipa{either ... or}. We find two distinct strategies for disjunction linking.
 
-First, in the case of affirmative sentences, the phrase \ipa{nɯ}    	\ipa{maʁ}    	\ipa{nɤ}  `otherwise (literally `if it is not')', which is also used in Possible Consequence linking (\ref{sec:possible.consequence}) is repeated in both alternative clauses as in \ref{ex:nWmaRnA.tukWti}. Ellipsis of the verb in the second clause  is not possible.
+First, in the case of affirmative sentences, the phrase \ipa{nɯ}    	\ipa{maʁ}    	\ipa{nɤ}  `otherwise (literally `if it is not')', which is also used in Possible Consequence linking \refb{sec:possible.consequence} is repeated in both alternative clauses as in \refb{ex:nWmaRnA.tukWti}. Ellipsis of the verb in the second clause  is not possible.
 \begin{exe}
 \ex \label{ex:nWmaRnA.tukWti}
 \gll 
 \ipa{nɯ}    	\ipa{maʁ}    	\ipa{nɤ}    	\ipa{tɤtʰu}    	\ipa{tu-kɯ-ti,}    	\ipa{nɯ}    	\ipa{maʁ}    	\ipa{nɤ}    	\ipa{tɯŋgar}    	\ipa{tu-kɯ-ti.}    \\
-\textsc{dem} \textsc{n.pst:}not.be \textsc{lnk} woollen.clothes \textsc{ipfv-genr}-say \textsc{dem} \textsc{n.pst:}not.be \textsc{lnk} woollen.clothes \textsc{ipfv-genr}-say \\
+\textsc{dem} \textsc{fact:}not.be \textsc{lnk} woollen.clothes \textsc{ipfv-genr}-say \textsc{dem} \textsc{fact:}not.be \textsc{lnk} woollen.clothes \textsc{ipfv-genr}-say \\
 \glt (Woollen clothes) are either called \ipa{tɤtʰu}  or \ipa{tɯŋgar}    (mboʁ, 40)
  \end{exe}
 
-Second, in the case of interrogative sentences, the polar interrogative sentence final particle \ipa{ɕi} is employed (example \ref{ex:tWnWCe.Ci}).
+Second, in the case of interrogative sentences, the polar interrogative sentence final particle \ipa{ɕi} is employed (example \refb{ex:tWnWCe.Ci}).
 
 \begin{exe}
 \ex \label{ex:tWnWCe.Ci}
 \gll \ipa{χsɤr}    	\ipa{tʰɤjco}    	\ipa{ɯ-taʁ}    	\ipa{tɯ-nɯ-ɕe}    	\ipa{ɕi,}    	\ipa{rŋɯl}    	\ipa{tʰɤjco}    	\ipa{ɯ-taʁ}    	\ipa{tɯ-nɯɕe?}    	\\
-gold palanquin \textsc{3sg}-on \textsc{2-auto-n.pst}:go \textsc{intrg:polar} silver palanquin \textsc{3sg}-on \textsc{2-auto-n.pst}:go \\
+gold palanquin \textsc{3sg}-on \textsc{2-auto-fact}:go \textsc{intrg:polar} silver palanquin \textsc{3sg}-on \textsc{2-auto-fact}:go \\
 \glt Will you go on the gold palanquin or on the silver one? (the three sisters, 198)
  \end{exe}
  
 \subsection{Rejection} \label{sec:rejection}
 
-The rejection linking indicates that the event/situation in the focal clause and that of the supporting clause are competing alternatives, and only the former takes place, while the later  does not. This linking is not well represented in Japhug, and the constructions attested in this meaning are also used for the Contrast linking (\ref{sec:contrast}). We find two possibilities to express the rejection meaning.
+The rejection linking indicates that the event/situation in the focal clause and that of the supporting clause are competing alternatives, and only the former takes place, while the later  does not. This linking is not well represented in Japhug, and the constructions attested in this meaning are also used for the Contrast linking \refb{sec:contrast}. We find two possibilities to express the rejection meaning.
 
-First, the postposition \ipa{ma} `apart from'  can be used to express a contrast between two radically opposed alternatives.  As in the case of the Contrast linking, it is not the causal linker \ipa{ma}: example \ref{ex:tukWnAlielie} shows that there is no causal relationship between the two clauses. In this construction, the focal clause (preceding  \ipa{ma} `apart from') and the supporting clause are of opposite polarity; in general, the focal clause is positive and the supportive clause negative.
+First, the postposition \ipa{ma} `apart from'  can be used to express a contrast between two radically opposed alternatives.  As in the case of the Contrast linking, it is not the causal linker \ipa{ma}: example \refb{ex:tukWnAlielie} shows that there is no causal relationship between the two clauses. In this construction, the focal clause (preceding  \ipa{ma} `apart from') and the supporting clause are of opposite polarity; in general, the focal clause is positive and the supportive clause negative.
 
 
 
@@ -1920,7 +1950,7 @@ First, the postposition \ipa{ma} `apart from'  can be used to express a contrast
 \glt When it meets you (again, after several years), it jumps at you wagging its tail instead of barking at you.  (Dogs, 17)
 \end{exe}
  
-Second, semantic opposition can be expressed by using the negative copula \ipa{maʁ} `not to be' in one clause, and one of the affirmative copulas \ipa{ŋu} or \ipa{ɕti} `to be' in the other one. The verbs in the clauses can either be finite or non-finite. The negative copula can be sufficient to express this meaning, as in example \ref{ex:kACe.mArkW}.
+Second, semantic opposition can be expressed by using the negative copula \ipa{maʁ} `not to be' in one clause, and one of the affirmative copulas \ipa{ŋu} or \ipa{ɕti} `to be' in the other one. The verbs in the clauses can either be finite or non-finite. The negative copula can be sufficient to express this meaning, as in example \refb{ex:kACe.mArkW}.
 
 \begin{exe}
 \ex \label{ex:kACe.mArkW}
@@ -1945,7 +1975,7 @@ Second, semantic opposition can be expressed by using the negative copula \ipa{m
 \subsection{Real manner}
 In this type of clause linking, the supporting clause describes the manner in which the action/situation of the focal clause takes place. There are four basic ways to express this meaning in Japhug.
 
-First, the simplest construction to express manner is  parataxis, with    two verbs  in the same TAM category and sharing the same arguments, as in \ref{ex:pjWsAtse.tuNke}
+First, the simplest construction to express manner is  parataxis, with    two verbs  in the same TAM category and sharing the same arguments, as in \refb{ex:pjWsAtse.tuNke}
 
 \begin{exe}
 \ex \label{ex:pjWsAtse.tuNke}
@@ -1955,7 +1985,7 @@ First, the simplest construction to express manner is  parataxis, with    two ve
 \glt It only jumps, as it is not able to walk by treading with its feet.  (Frog, 4)
 \end{exe}
 
-This construction is particularly common with the transitive verb of manner deixis \ipa{stu} `do like this' as in \ref{ex:luznaʁje}.
+This construction is particularly common with the transitive verb of manner deixis \ipa{stu} `do like this' as in \refb{ex:luznaʁje}.
 
 \begin{exe}
 \ex \label{ex:luznaʁje}
@@ -1964,7 +1994,7 @@ This construction is particularly common with the transitive verb of manner deix
 \textsc{lnk} \textsc{3sg.poss}-hand \textsc{erg} \textsc{dem:prox} \textsc{ipfv}-do.like[III] \textsc{ipfv-caus}-pick \textsc{testim}-be \textsc{lnk} \\
 \glt (The cat) probes with its paw like that (in the hole). (xɕiri, 47)
 \end{exe}
-A formally similar construction appears with deideophonic verbs, as in example \ref{ex:YWGACpArlAr} which illustrates a   verb derived from the ideophone \ipa{ɕpɤr} `loud noise'.  
+A formally similar construction appears with deideophonic verbs, as in example \refb{ex:YWGACpArlAr} which illustrates a   verb derived from the ideophone \ipa{ɕpɤr} `loud noise'.  
 
 \begin{exe}
 \ex \label{ex:YWGACpArlAr}
@@ -1974,7 +2004,7 @@ A formally similar construction appears with deideophonic verbs, as in example \
 \glt She speaks loudly (without paying attention to the situation). (elicited)
 \end{exe}
 
-It also occurs with a specific set of verbs such as \ipa{tɕʰom} `be in excess' for instance, as an alternative to complement clauses (\ref{ex:tutChom}).
+It also occurs with a specific set of verbs such as \ipa{tɕʰom} `be in excess' for instance, as an alternative to complement clauses \refb{ex:tutChom}.
 
 \begin{exe}
 \ex \label{ex:tutChom}
@@ -1984,10 +2014,10 @@ cow \textsc{pl} \textsc{3pl}-on \textsc{ipfv}-be.many \textsc{ipfv}-be.in.excess
 \glt It is not good when there are too many of them (ticks) on the cows, because... (ticks, 30)
 \end{exe}
 
- \citet{sun12complementation} analyzes the  Tshobdun constructions     corresponding to that of \ref{ex:YWGACpArlAr} and \ref{ex:tutChom} as monoclausal serial verb constructions, since in that language no linker can be inserted between the two verbs. In Japhug,   adding the linker \ipa{tɕe} between the two verbs is possible in the case of \ref{ex:luznaʁje} and \ref{ex:YWGACpArlAr}, but not in \ref{ex:tutChom}, which suggest that we have here several distinct underlying constructions: genuine serial verb constructions when adding a linker is not possible, and biclausal parataxis in the other cases. %(XXX à revérifier XXX
+ \citet{sun12complementation} analyzes the  Tshobdun constructions     corresponding to that of \refb{ex:YWGACpArlAr} and \refb{ex:tutChom} as monoclausal serial verb constructions, since in that language no linker can be inserted between the two verbs. In Japhug,   adding the linker \ipa{tɕe} between the two verbs is possible in the case of \refb{ex:luznaʁje} and \refb{ex:YWGACpArlAr}, but not in \refb{ex:tutChom}, which suggest that we have here several distinct underlying constructions: genuine serial verb constructions when adding a linker is not possible, and biclausal parataxis in the other cases. %(XXX à revérifier XXX
 
 
-Second, it is possible to use the infinitive \ipa{kɤ--} (for dynamic verbs) or \ipa{kɯ--} (for stative verbs or dynamic verbs with non-animate arguments) in the supporting clause, to express manner as in \ref{ex:kANke.jari} and \ref{ex:nWmAkAsWz}.
+Second, it is possible to use the infinitive \ipa{kɤ--} (for dynamic verbs) or \ipa{kɯ--} (for stative verbs or dynamic verbs with non-animate arguments) in the supporting clause, to express manner as in \refb{ex:kANke.jari} and \refb{ex:nWmAkAsWz}.
 
 \begin{exe}
 \ex \label{ex:kANke.jari}
@@ -2002,32 +2032,32 @@ Second, it is possible to use the infinitive \ipa{kɤ--} (for dynamic verbs) or 
 \ex \label{ex:nWmAkAsWz}
 \gll
 \ipa{ɯ-ɣi}   	\ipa{ra}   	\ipa{\textbf{nɯ-mɤ-kɤ-sɯz}}   	\ipa{nɯ}   	\ipa{rŋɯl}   	\ipa{nɯ}   	\ipa{ɲɤ-mbi.}   \\
-\textsc{3sg.poss}-relative \textsc{pl} \textsc{3pl-neg-inf}-know \textsc{dem} silver \textsc{top} \textsc{evd}-give \\
+\textsc{3sg.poss}-relative \textsc{pl} \textsc{3pl-neg-inf}-know \textsc{dem} silver \textsc{dem} \textsc{evd}-give \\
 \glt  She gave him silver without her relatives knowing. (The Raven4, 161)
 \end{exe}
 
-  In the case of stative verbs, whose infinitive is in \ipa{kɯ--} instead of \ipa{kɤ--}, there is some surface ambiguity between infinitive and S-nominalization serving as a nominal attribute. In \ref{ex:kWdWdAn.Zo}  this ambiguity is resolved by the presence of the emphatic linker \ipa{ʑo} which rules out the alternative parsing of \ipa{kɯ-dɯ-dɤn} `numerous' as the S of the sentence (in which case we would have glossed it as \textsc{nmlz}:S/A-be.many).
+  In the case of stative verbs, whose infinitive is in \ipa{kɯ--} instead of \ipa{kɤ--}, there is some surface ambiguity between infinitive and S-nominalization serving as a nominal attribute. In \refb{ex:kWdWdAn.Zo}  this ambiguity is resolved by the presence of the emphatic linker \ipa{ʑo} which rules out the alternative parsing of \ipa{kɯ-dɯ-dɤn} `numerous' as the S of the sentence (in which case we would have glossed it as \textsc{nmlz}:S/A-be.many).
   
 \begin{exe}
 \ex \label{ex:kWdWdAn.Zo}
 \gll
 [\ipa{kɯ-dɯ-dɤn} 	\ipa{ʑo}] 	\ipa{tɯtɯrca} 	\ipa{tu-ŋke-nɯ} 	\ipa{mɤ-ŋgrɤl.} \\
-\textsc{inf:stat-redp}-be.many \textsc{emph} together \textsc{ipfv}-walk-\textsc{pl} \textsc{neg-n.pst}:be.usually.the.case \\
+\textsc{inf:stat-redp}-be.many \textsc{emph} together \textsc{ipfv}-walk-\textsc{pl} \textsc{neg-fact}:be.usually.the.case \\
 \glt They don't usually walk together in big groups. (ɕɤɣpɣa 40)
 \end{exe}
 
-In \ref{ex:kWqarNWrNe.Zo}, apart from \ipa{ʑo}, the presence of the topic marker \ipa{nɯ} between the nouns and the stative verb 	\ipa{kɯ-qarŋɯrŋe} `yellow' indicates that  they do not form a constituent and that 	\ipa{kɯ-qarŋɯrŋe} cannot be therefore be analyzed as the attribute of  \ipa{nɯ-qe} `their excrement'.
+In \refb{ex:kWqarNWrNe.Zo}, apart from \ipa{ʑo}, the presence of the demonstrative   \ipa{nɯ} between the noun  and the stative verb 	\ipa{kɯ-qarŋɯrŋe} `yellow' indicates that  they do not form a constituent, and that 	\ipa{kɯ-qarŋɯrŋe} cannot be therefore be analyzed as the attribute of  \ipa{nɯ-qe} `their excrement'.
 
 \begin{exe}
 \ex \label{ex:kWqarNWrNe.Zo}
 \gll
 \ipa{nɯ-qe} 	\ipa{nɯ} 	[\ipa{kɯ-qarŋɯ-rŋe} 	\ipa{ʑo}] 	\ipa{cʰɯ-lɤt-nɯ} 	\ipa{tɕe,} \\
-\textsc{3pl.poss}-excrement \textsc{top} \textsc{inf:stat-redp}-be.yellow \textsc{emph}  \textsc{ipfv}-throw-\textsc{pl} \textsc{lnk} \\
+\textsc{3pl.poss}-excrement \textsc{dem} \textsc{inf:stat-redp}-be.yellow \textsc{emph}  \textsc{ipfv}-throw-\textsc{pl} \textsc{lnk} \\
 \glt They shit yellow. (kʰɯdi, 112)
 \end{exe}
 
 
-Apart from stative  verbs of quantity and quality   (as in \ref{ex:kWdWdAn.Zo} and \ref{ex:kWqarNWrNe.Zo}), many other types of verbs appear in this construction, for instance verbs expressing spatial relations and distances as in \ref{ex:kArqhi.jukWru}.
+Apart from stative  verbs of quantity and quality   (as in \refb{ex:kWdWdAn.Zo} and \refb{ex:kWqarNWrNe.Zo}), many other types of verbs appear in this construction, for instance verbs expressing spatial relations and distances as in \refb{ex:kArqhi.jukWru}.
 
 \begin{exe}
 \ex \label{ex:kArqhi.jukWru}
@@ -2039,12 +2069,12 @@ Apart from stative  verbs of quantity and quality   (as in \ref{ex:kWdWdAn.Zo} a
 
  
 
-Third, it is possible to use the infinitive   \ipa{kɯ-fse} of the manner deixis stative verb \ipa{fse} `be like' to mark the supporting clause, as in \ref{ex:YWZGAsAjAr}. The verb of the supporting clause marked by   \ipa{kɯ-fse} can itself be in the infinitive (\ref{ex:kAZWrja.kWfse}).
+Third, it is possible to use the infinitive   \ipa{kɯ-fse} of the manner deixis stative verb \ipa{fse} `be like' to mark the supporting clause, as in \refb{ex:YWZGAsAjAr}. The verb of the supporting clause marked by   \ipa{kɯ-fse} can itself be in the infinitive \refb{ex:kAZWrja.kWfse}.
 \begin{exe}
 \ex \label{ex:YWZGAsAjAr}
 \gll
  	\ipa{mɯrmɯmbju} 	\ipa{nɯ} 	\ipa{ɲɯ-ʑɣɤ-sɯ-ɤjɤr} 	\ipa{\textbf{kɯ-fse}} 	\ipa{tɕe} 	\ipa{nɤmkʰa} 	\ipa{zɯ} 	\ipa{ku-ɕe} 	\ipa{nɤ} 	\ipa{ɲɯ-ɣi} 	\ipa{tɕe} 	\\
- 	swallow \textsc{top} \textsc{ipfv-refl-caus}-be.slanted \textsc{inf:stat}-be.like \textsc{lnk} sky \textsc{loc}  \textsc{ipfv:east}-go \textsc{lnk} \textsc{ipfv:west}-come lnk \\
+ 	swallow \textsc{dem} \textsc{ipfv-refl-caus}-be.slanted \textsc{inf:stat}-be.like \textsc{lnk} sky \textsc{loc}  \textsc{ipfv:east}-go \textsc{lnk} \textsc{ipfv:west}-come lnk \\
 \glt The swallow comes and go flying in a slanted way in the sky. (mɯrmɯmbju 38)
 \end{exe}
 
@@ -2056,7 +2086,7 @@ fly \textsc{ipfv}-eat[III] \textsc{fact}:be \textsc{lnk} \textsc{transloc-ipfv}-
 \glt It eats flies, but it cannot catch them by jumping. (frogs, 6)
 \end{exe}
 
-The semantic scope of the verbal negative prefix can be on the manner rather than on the verbal action as in \ref{ex:kAZWrja.kWfse}.
+The semantic scope of the verbal negative prefix can be on the manner rather than on the verbal action as in \refb{ex:kAZWrja.kWfse}.
 
 \begin{exe}
 \ex \label{ex:kAZWrja.kWfse}
@@ -2070,28 +2100,28 @@ The semantic scope of the verbal negative prefix can be on the manner rather tha
  
 
 
-It is possible to combine an infinitival clause with the ergative \ipa{kɯ}, as in  \ref{ex:mWYWkWYJWr} and \ref{ex:mAkApa.kW}.  This construction can express  a slight concessive meaning as in \ref{ex:mAkApa.kW} (`without turning it off' =  although he should have turned it off').
+It is possible to combine an infinitival clause with the ergative \ipa{kɯ}, as in  \refb{ex:mWYWkWYJWr} and \refb{ex:mAkApa.kW}.  This construction can express  a slight concessive meaning as in \refb{ex:mAkApa.kW} (`without turning it off' =  although he should have turned it off').
 
 \begin{exe}
 \ex \label{ex:mAkApa.kW}
 \gll
 \ipa{tɕe}   	\ipa{ɯ-ŋgɯ}   	\ipa{nɯ} \ipa{tɕu}   	\ipa{paʁndza}   	\ipa{ɲɤ-raʁ}   	\ipa{tɕe,}   	\ipa{tɕendɤre}   	<dian>   	<guan>   	\ipa{mɤ-kɤ-βzu} 	\ipa{\textbf{kɯ}}   	\ipa{mɤ-kɤ-pa}   	\ipa{\textbf{kɯ}}   	\ipa{ɯ-jaʁ}   	\ipa{lo-tsɯm}   \\
-\textsc{lnk} \textsc{3sg}-inside \textsc{top} \textsc{loc} pig.fodder \textsc{evd}-be.stuck \textsc{lnk}
+\textsc{lnk} \textsc{3sg}-inside \textsc{dem} \textsc{loc} pig.fodder \textsc{evd}-be.stuck \textsc{lnk}
 \textsc{lnk} electricity turn.off \textsc{neg-inf}-make \textsc{erg}  \textsc{neg-inf}-close \textsc{erg}  \textsc{3sg.poss}-hand \textsc{evd:upstream}-take.away \\
 \glt Some pig fodder got stuck inside (the machine) he reached his hand into it without turning it off, (Relatives, 372-3)
 \end{exe} 
  
-Alternatively, the infinitival clause with the ergative can be semantically intermediate between a manner and a purposive clause, as in \ref{ex:mWYWkWYJWr}.
+Alternatively, the infinitival clause with the ergative can be semantically intermediate between a manner and a purposive clause, as in \refb{ex:mWYWkWYJWr}.
 
 \begin{exe}
 \ex \label{ex:mWYWkWYJWr}
 \gll
 \ipa{tɯ-xtsa}   	\ipa{nɯnɯ}   	\ipa{ɯ-ʁzɯɣ}   	\ipa{mɯ-ɲɯ-kɯ-ɲɟɯr}   	\ipa{\textbf{kɯ}}   	\ipa{ɲɯ-z-rɤsta-nɯ}   \\
-\textsc{indef.poss}-shoe \textsc{top} shape \textsc{neg-ipfv-inf:non.hum-anticaus}:change \textsc{erg} \textsc{ipfv-caus}-be.fixed \\
+\textsc{indef.poss}-shoe \textsc{dem} shape \textsc{neg-ipfv-inf:non.hum-anticaus}:change \textsc{erg} \textsc{ipfv-caus}-be.fixed \\
 \glt They wedge the shoes (with a shoe tree)  in such as way that their shape does not change. (komar, 109)
 \end{exe}
 
-Fourth, in the case of stative verbs, the degree nominalization \ipa{tɯ--} can be combined with   a   clause    describing the degree, circumstance or   consequence of the state in question. The ergative \ipa{kɯ} can be   inserted between the stative verb and the degree clause; it presence is optional when the degree clause is short, but obligatory in the case of long clauses, as in \ref{ex:WtWrZi} and \ref{ex:WtWrWNWNAn}.
+Fourth, in the case of stative verbs, the degree nominalization \ipa{tɯ--} can be combined with   a   clause    describing the degree, circumstance or   consequence of the state in question. The ergative \ipa{kɯ} can be   inserted between the stative verb and the degree clause; it presence is optional when the degree clause is short, but obligatory in the case of long clauses, as in \refb{ex:WtWrZi} and \refb{ex:WtWrWNWNAn}.
  
 
 \begin{exe}
@@ -2106,18 +2136,18 @@ Fourth, in the case of stative verbs, the degree nominalization \ipa{tɯ--} can 
 \ex \label{ex:WtWrWNWNAn}
 \gll
 \ipa{lɯlu}         	\ipa{a-pɯ-me}         	\ipa{rcanɯ,}         	\ipa{βʑɯ}         	\ipa{ɯ-kʰa}         	\ipa{tɕe}         	\ipa{ɯ-tɯ-rɯŋɯŋɤn}         	\ipa{\textbf{kɯ}}          [\ipa{tɤ-mtʰɯm}         	\ipa{tu-ndze,}         	\ipa{tɯmgo}         	\ipa{tu-ndze,}         	\ipa{tɯjpu}         	\ipa{tu-ndze,}         \ipa{tɕe}         	\ipa{ɯ-mɤ-kɤ-ndza}         	\ipa{ra}         	\ipa{kɯnɤ}         	\ipa{tɤ-fkɯm}         	\ipa{nɯ} \ipa{ra}         	\ipa{ku-sɯspoʁ}]         \\
-cat \textsc{irr-ipfv}-not.exist \textsc{top:emph} mouse \textsc{3sg.poss}-house \textsc{lnk} \textsc{3sg-nmlz:degree}-cause.damage \textsc{erg} \textsc{indef.poss}-meat \textsc{ipfv}-eat[III] food \textsc{ipfv}-eat[III] food \textsc{ipfv}-eat[III]  \textsc{lnk} \textsc{3sg-neg-nmlz:P}-eat \textsc{pl} also \textsc{indef.poss}-bag \textsc{top} \textsc{pl} \textsc{ipfv}-make.a.hole \\
+cat \textsc{irr-ipfv}-not.exist \textsc{top:emph} mouse \textsc{3sg.poss}-house \textsc{lnk} \textsc{3sg-nmlz:degree}-cause.damage \textsc{erg} \textsc{indef.poss}-meat \textsc{ipfv}-eat[III] food \textsc{ipfv}-eat[III] food \textsc{ipfv}-eat[III]  \textsc{lnk} \textsc{3sg-neg-nmlz:P}-eat \textsc{pl} also \textsc{indef.poss}-bag \textsc{dem} \textsc{pl} \textsc{ipfv}-make.a.hole \\
 \glt  If there is no cat, mice cause a lot of damage in the house as they eat meat and food, and even the things that they cannot eat, (like bags), they make holes into them. (Cat, 27-29)
 \end{exe}
  
  
- The ergative is also used in clause linkings involving the verb \ipa{fse} `be like' in the focal clause, as in \ref{ex:mWjfse.kW}.
+ The ergative is also used in clause linkings involving the verb \ipa{fse} `be like' in the focal clause, as in \refb{ex:mWjfse.kW}.
  
  \begin{exe}
 \ex \label{ex:mWjfse.kW}
 \gll
 \ipa{ri} 	\ipa{ɯ-jwaʁ} 	\ipa{nɯnɯ} 	\ipa{kɯmaʁ} 	\ipa{ɕɤɣ} 	\ipa{nɯ} \ipa{ra} 	\ipa{mɯ́j-fse} 	\ipa{\textbf{kɯ}} 	\ipa{ɲɯ-ɤrʁɯrʁu} 	\ipa{ʑo} 	\ipa{qʰe} 	\ipa{ɲɯ-ɤndɯndo} 	\ipa{ʑo.} \\
-\textsc{lnk} \textsc{3sg.poss}-leaf \textsc{dem} other juniper \textsc{top} \textsc{pl} \textsc{neg:const}-be.like \textsc{erg} \textsc{testim}-be.wrinkled \textsc{emph} \textsc{lnk}  \textsc{testim}-be.clustered.together \textsc{emph} \\
+\textsc{lnk} \textsc{3sg.poss}-leaf \textsc{dem} other juniper \textsc{dem} \textsc{pl} \textsc{neg:const}-be.like \textsc{erg} \textsc{testim}-be.wrinkled \textsc{emph} \textsc{lnk}  \textsc{testim}-be.clustered.together \textsc{emph} \\
 \glt Its leaves differ from other junipers in that they are wrinkled and clustered together. (Ephedra, 71)
  \end{exe}
  
@@ -2151,10 +2181,14 @@ There is no specific construction in Japhug for expressing this meaning. Example
 \glt  When it hurts, it feels like an awl has been planted (in one's lungs).  (ʁzɤr, 8)
 \end{exe}
 
+\section{Long-distance agreement}
+
+ergative \ipa{kɯ}
+
 \section{Conclusion}
 Japhug clause linking is uncommon in the context of verb final languages of Eurasia. While  several converbial constructions are attested (immediate precedence, gerund, purposive and infinitive), none of them is required to express a particular meaning, as in each of the four cases a semantically similar competing finite construction is available.
 
-Japhug has a strong distinction between finite and non-finite verb forms, but non-finite forms are essentially used for relativization and complementation, not for clause linking. Chains of clauses in non-finite forms, which are common in languages such as Classical Tibetan, are completely absent. This is due to the fact that converbs in Japhug are restricted to very relatively less common constructions, and are not found for expressing  Temporal sequence, Consequence or Condition linkings. There is no converb marking switch reference either; finite forms with inverse marking are used instead for that purpose (see \citealt{jacques10inverse}).
+Japhug has a strong distinction between finite and non-finite verb forms, but non-finite forms are essentially used for relativization and complementation, not for clause linking. Chains of clauses in non-finite forms, which are common in languages such as Classical Tibetan, are completely absent. This is due to the fact that converbs in Japhug are restricted to   relatively less common constructions, and are not found for expressing  Temporal sequence, Consequence or Condition linkings. There is no converb marking switch reference either; finite forms with inverse marking are used instead for that purpose (see \citealt{jacques10inverse}).
 
 The most common type of clause linking in Japhug involves finite clauses with  a linker (or a postposition / relator noun between them). Parataxis is rare, but available for expressing Temporal  or Manner linkings. It appears that cases of parataxis require distinct analyses depending on the construction: some of them may be cases of serial verb constructions.
 
