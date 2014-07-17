@@ -164,7 +164,6 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr cl
