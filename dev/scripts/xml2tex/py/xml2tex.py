@@ -506,9 +506,10 @@ class Xml2Tex(InOut, XmlFormat):
                         tex_file.write("\\end{exe}\n")
                         ex_started = False
                 # Check if current element is a lexeme starting with a different character than previous lexeme
-                if element.tag == "lx" and int(unicode_order[element.text[0]]) != int(unicode_order[current_character])\
-                    and int(unicode_order[element.text[0]]) < 45: # do not consider special characters (hugly!)
-                    current_character = element.text[0]
+                text = element.text.replace("\ipa{", '').replace('}', '') # handle 'lx' field containing '\ipa{}'
+                if element.tag == "lx" and int(unicode_order[text[0]]) != int(unicode_order[current_character])\
+                    and int(unicode_order[text[0]]) < 45: # do not consider special characters (hugly!)
+                    current_character = text[0]
                     tex_file.write("\\newpage\n")
                     title = ''
                     for key,value in sorted(unicode_order.items(), key=lambda x: x[1]):
