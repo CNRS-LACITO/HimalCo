@@ -43,7 +43,7 @@ Le \textit{core package} est divis\'e en deux sous-syst\`emes~:
 \end{itemize}
 
 \begin{figure}[h]
-\centerline{\fbox{\includegraphics[width=13.5cm]{../uml/export/ClassDiagramCorePackage.png}}}
+\centerline{\fbox{\includegraphics[width=12cm]{../uml/export/ClassDiagramCorePackage.png}}}
 \caption{Core Package}
 \end{figure}
 
@@ -71,13 +71,8 @@ Les syst\`emes p\'eriph\'eriques (extensions) sont souples, optionnels, mais pui
 En plus des extensions existantes, on peut en cr\'eer. C'est ce que je propose de faire pour la gestion des ressources audio et des locuteurs.
 
 \begin{figure}[h]
-\centerline{\fbox{\includegraphics[width=12cm]{../uml/export/ClassDiagramResources.png}}}
+\centerline{\fbox{\includegraphics[width=15cm]{../uml/export/ClassDiagramResources.png}}}
 \caption{Resources}
-\end{figure}
-\nopagebreak
-\begin{figure}[h]
-\centerline{\fbox{\includegraphics[width=10cm]{../uml/export/ClassDiagramAnnotations.png}}}
-\caption{Annotations}
 \end{figure}
 
 \newpage
@@ -87,17 +82,17 @@ Dans cette section, je vais m'attarder sur ce que sont une classe et ses attribu
 
 \subsection{Correspondance entre UML et XML}
 
-Un petit exemple afin de visualiser : prenons la classe Borrowed Word de la figure pr\'ec\'edente (en bas \`a gauche). Cette classe comporte 2 attributs :
+Un petit exemple afin de visualiser : prenons la classe \textit{Statement} du \textit{Core Package} (en bas \`a droite de la figure). Cette classe comporte de nombreux attributs, dont les 2 suivants :
 \begin{itemize}
 \item \textit{borrowed word}
 \item \textit{written form}
 \end{itemize}
 En suivant les recommandations LMF, si l'on souhaite par exemple repr\'esenter un emprunt de l'anglais du mot \textit{cool}, on obtient les lignes XML suivantes :
 \begin{lstlisting}
-<BorrowedWord>
+<Statement>
 	<feat att=''borrowed word'' val=''eng''/>
 	<feat att=''written form'' val='cool''/>
-</BorrowedWord>
+</Statement>
 \end{lstlisting}
 Plusieurs commentaires sur cet exemple :
 \begin{itemize}
@@ -115,10 +110,11 @@ Une classe est une entit\'e abstraite qui repr\'esente un objet, par exemple une
 D'autre part, une classe peut d\'eriver d'une autre classe, c'est-\`a-dire en simplifiant qu'elle h\'erite des attributs et des m\'ethodes de sa classe m\`ere. Cet h\'eritage est repr\'esent\'e sur les sch\'emas UML qui pr\'ec\`edent par une fl\`eche pleine. Par exemple, on pourrait imaginer une classe v\'ehicule, de laquelle d\'eriveraient les classes voiture, moto, etc. Ils auraient tous des attributs en commun (nombre de roues, de portes, marque, couleur du v\'ehicule, etc.) qui seraient donc des attributs de la classe v\'ehicule, et des attributs sp\'ecifiques comme par exemple la b\'equille pour une moto ou un v\'elo.\\
 Une classe peut avoir une relation d'agr\'egation ou de composition avec une autre classe, c'est-\`a-dire qu'elle en fait partie. Si l'on reprend l'exemple classique de la voiture, et si l'on cr\'ee une classe roue, on pourrait dire que la voiture est compos\'ee, entre autres, de 4 roues. Cette relation est sch\'ematis\'ee par un losange en UML.\\
 Une dernière relation utilis\'ee dans les sch\'emas UML de la section pr\'ec\'edente est une simple fl\`eche, qui signifie qu'une classe en r\'ef\'erence une autre. Par exemple, une voiture et son propri\'etaire sont deux entit\'es bien distinctes qui existent ind\'ependamment l'une de l'autre. Cependant, il existe bien un lien entre ces deux entit\'es, repr\'esent\'e par une association.\\
+Enfin, en UML, les classes abstraites sont not\'ees en italique.
 
 \subsection{Classes et attributs d\'efinis par LMF}
 
-Pour chacun des packages d\'ecrits dans la section pr\'ec\'edente, des classes et des relations entre ces classes sont d\'efinies et non modifiables (\`a noter que certains projets existants d\'evient un peu du standard en proposant des am\'eliorations). Par contre, nous sommes (plus ou moins) libres de d\'efinir les attributs que nous souhaitons pour chacune de ces classes. Cependant, chaque attribut doit \^etre r\'ef\'erenc\'e dans le DCR (\textit{Data Category Registry}). On peut utiliser les \'el\'ements existants, ou bien en proposer de nouveaux le cas \'ech\'eant. Il s'agit d'une base de donn\'ees ouverte, accessible sur le site \url{http://www.isocat.org}.\\
+Pour chacun des \textit{packages} d\'ecrits dans la section pr\'ec\'edente, des classes et des relations entre ces classes sont d\'efinies et non modifiables (\`a noter que certains projets existants d\'evient un peu du standard en proposant des am\'eliorations). Par contre, nous sommes (plus ou moins) libres de d\'efinir les attributs que nous souhaitons pour chacune de ces classes. Cependant, chaque attribut doit \^etre r\'ef\'erenc\'e dans le DCR (\textit{Data Category Registry}). On peut utiliser les \'el\'ements existants, ou bien en proposer de nouveaux le cas \'ech\'eant. Il s'agit d'une base de donn\'ees ouverte, accessible sur le site \url{http://www.isocat.org}.\\
 Une difficult\'e que j'ai rencontr\'ee avec cette base de donn\'ees, c'est qu'il y a beaucoup de redondance, de doublons : beaucoup de termes quasi-identiques sont d\'efinis 2 ou 3 fois. Dans ces cas-l\`a, lequel choisir ? Sur quels crit\`eres ? J'ai tent\'e de privil\'egier la d\'efinition qui se rapprochait le plus du besoin, et \`a d\'efinition \`a peu pr\`es similaire, j'ai privil\'egi\'e les termes issus de MDF, ou cr\'e\'es par Gil Francopoulo (l'auteur du livre sur LMF). Cependant, plut\^ot que suivre le principe de MDF concernant les marqueurs associ\'es sp\'ecifiquement aux langages vernaculaire, r\'egional et national, j'ai choisi de laisser davantage de libert\'e en définissant un attribut g\'en\'eral associ\'e \`a un attribut de langue (exemple : d\'efinition dans la langue 'xxx' plut\^ot que 'dn' qui impose une d\'efinition dans une langue nationale pr\'ed\'efinie). Ce qui en outre \'evite d'avoir \`a d\'efinir 'df' par exemple pour le fran\c{c}ais.\\
 
 Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, et non les m\'ethodes, car cela alourdirait les sp\'ecifications sans apporter d'informations pertinentes. J'ai \'egalement noter les marqueurs MDF auxquels les attributs font r\'ef\'erence s'ils existent. Quant \`a l'extension LMF concern\'ee, elle se trouve dans la colonne \textit{LMF package}.
@@ -160,6 +156,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & language script & ``latn'' & \href{http://www.isocat.org/datcat/DC-2485}{2485} open & - & ISO 15924 \\ \cmidrule{3-7}
 & & lexicon type & ``bilingual dictionary na - eng'' & \href{http://www.isocat.org/datcat/DC-2487}{2487} open & - & \\ \cmidrule{3-7}
 & & entry source & ``na\_dic\-tio\-na\-ry.txt'' & \href{http://www.isocat.org/datcat/DC-207}{207} open & - & \\ \cmidrule{3-7}
+& & vowel harmony & & no existing DC & - & \\ \cmidrule{3-7}
 & & lexical entry & Lexical Entry & N/A & N/A & - \\ \cmidrule{2-7}
 % Lexical Entry
 & \multirow{16}{2cm}{Lexical Entry (no subclass)} & id & ``toto\_1'' & \href{http://www.isocat.org/datcat/DC-6196}{6196} open & lx \textless id\textgreater, se \textless id\textgreater & unique identifier or key form is an XML attribute \\ \cmidrule{3-7}
@@ -191,10 +188,8 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & citation form (vernacular) & & \href{http://www.isocat.org/datcat/DC-3716}{3716} open & lc & \\ \cmidrule{3-7}
 & & dialect & ``North German'' & \href{http://www.isocat.org/datcat/DC-2466}{2466} open & ve & \\ \cmidrule{3-7}
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; language used for variant comment \\ \cmidrule{3-7}
-& & scientific name & ``Canis lupus familiaris'' & \href{http://www.isocat.org/datcat/DC-3754}{3754} open & sc & \\ \cmidrule{3-7}
-& & romanization & ``readable characters'' & \href{http://www.isocat.org/datcat/DC-1873}{1873} open & ph & \\ \cmidrule{3-7}
+& & trans\-li\-te\-ra\-tion & ``readable characters'' & \href{http://www.isocat.org/datcat/DC-1848}{1848} open & ph & \\ \cmidrule{3-7}
 & & script name & ``Latin'' & \href{http://www.isocat.org/datcat/DC-3809}{3809} open & - & script used for romanization \\ \cmidrule{3-7}
-& & pinyin & ``...'' & \href{http://www.isocat.org/datcat/DC-1852}{1852} open & ph & \\ \cmidrule{3-7}
 & & resource & Speaker & N/A & N/A & \\ \cmidrule{3-7}
 & & sound & Audio & N/A & N/A & \\ \cmidrule{2-7}
 % Representation
@@ -228,6 +223,16 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & usage note & ``...'' & \href{http://www.isocat.org/datcat/DC-526}{526} open & uv, ue, un, ur & text \\ \cmidrule{3-7}
 & & restriction & ``...'' & \href{http://www.isocat.org/datcat/DC-1956}{1956} open & oe, on, or, ov & \\ \cmidrule{3-7}
 & & derivation & ``...'' & \href{http://www.isocat.org/datcat/DC-188}{188} open & - & \\ \cmidrule{3-7}
+& & borrowed word (English) & ``Chinese'' & \href{http://www.isocat.org/datcat/DC-3688}{3688} open & bw & source language \\ \cmidrule{3-7}
+& & written form & ``...'' & \href{http://www.isocat.org/datcat/DC-1836}{1836} open & bw & loan word \\ \cmidrule{3-7}
+& & sense & ``...'' & \href{http://www.isocat.org/datcat/DC-464}{464} open & - & sense in borrowed language \\ \cmidrule{3-7}
+& & etymology & ``aspirin: from acetyl + spiraeic acid (old name for salicylic acid)'' & \href{http://www.isocat.org/datcat/DC-221}{221} open & et & \\ \cmidrule{3-7}
+& & etymology comment (English) & & \href{http://www.isocat.org/datcat/DC-3696}{3696} open & ec & \\ \cmidrule{3-7}
+& & target lexical entry & Lexical Entry & & cf \textless type=''et''\textgreater & \\ \cmidrule{3-7}
+& & term source language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-3639}{3639} open & - & language \\ \cmidrule{3-7}
+& & etymology gloss & & \href{http://www.isocat.org/datcat/DC-3698}{3698} open & eg & \\ \cmidrule{3-7}
+& & etymology source & & \href{http://www.isocat.org/datcat/DC-3701}{3701} & es & \\ \cmidrule{3-7}
+& & scientific name & ``Canis lupus familiaris'' & \href{http://www.isocat.org/datcat/DC-3754}{3754} open & sc & \\ \cmidrule{3-7}
 & & text representation & Text Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{1-7}
 % MORPHOLOGY
 % List Of Components
@@ -263,7 +268,8 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & target lexical entry & Lexical Entry & N/A & N/A & in case of classifier \\ \cmidrule{1-7}
 % MRD
 % Context
-\multirow{9}{2cm}{MRD} & \multirow{3}{2cm}{Context} & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 \\ \hline
+\multirow{9}{2cm}{MRD} & \multirow{3}{2cm}{Context} & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 \\ \cmidrule{3-7}
+& & type & ``proverb'', ``locution'', ``example'', ``combination'' & \href{http://www.isocat.org/datcat/DC-1971}{1971} open & PHONO & \\ \cmidrule{3-7}
 & & resource & Audio & N/A & N/A & \\ \cmidrule{3-7}
 & & text representation & Text Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{2-7}
 % Subject Field
@@ -300,19 +306,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & reference & & \href{http://www.isocat.org/datcat/DC-3751}{3751} open & rf & \\ \cmidrule{3-7}
 & & a\-no\-ny\-mi\-za\-tion flag & false, true, unknown, unspecified & \href{http://www.isocat.org/datcat/DC-2548}{2548} closed & so \textless print\textgreater & \\ \cmidrule{2-7}
 % Speaker
-& \multirow{1}{2cm}{Speaker} & speaker id & ``SpID-1'' & \href{http://www.isocat.org/datcat/DC-3597}{3597} open & & \\ \cmidrule{1-7}
-% ANNOTATIONS
-% Borrowed Word
-\multirow{8}{2cm}{\textit{Annotations}} & \multirow{3}{2cm}{Borrowed Word} & borrowed word (English) & ``Chinese'' & \href{http://www.isocat.org/datcat/DC-3688}{3688} open & bw & source language \\ \cmidrule{3-7}
-& & written form & ``...'' & \href{http://www.isocat.org/datcat/DC-1836}{1836} open & bw & loan word \\ \cmidrule{3-7}
-& & text representation & Text Re\-pre\-sen\-ta\-tion & & N/A & \\ \cmidrule{2-7}
-% Etymology
-& \multirow{5}{2cm}{Etymology} & etymology & ``aspirin: from acetyl + spiraeic acid (old name for salicylic acid)'' & \href{http://www.isocat.org/datcat/DC-221}{221} open & et & \\ \cmidrule{3-7}
-& & etymology comment (English) & & \href{http://www.isocat.org/datcat/DC-3696}{3696} open & ec & \\ \cmidrule{3-7}
-& & target lexical entry & Lexical Entry & & cf \textless type=''et''\textgreater & \\ \cmidrule{3-7}
-& & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 \\ \cmidrule{3-7}
-& & etymology gloss & & \href{http://www.isocat.org/datcat/DC-3698}{3698} open & eg & \\ \cmidrule{3-7}
-& & etymology source & & \href{http://www.isocat.org/datcat/DC-3701}{3701} & es & \\ \hline\hline
+& \multirow{1}{2cm}{Speaker} & speaker id & ``SpID-1'' & \href{http://www.isocat.org/datcat/DC-3597}{3597} open & & \\ \hline\hline
 \end{longtable}
 \end{center}
 
@@ -412,12 +406,12 @@ Valeurs non trouv\'ees dans la DCS (\textit{Data Category Selection}) :
 \item derived form
 \item root
 \item stem
+\item collocation \href{http://www.isocat.org/datcat/DC-340}{340} (simple) (classifier)
 \end{itemize}
 
 \hypertarget{6}{(6)}
 \hyperlink{paradigm}{paradigm label:}
 \begin{itemize}
-\item classifier (cl)
 \item lexicalized affix (la)
 \item conjugation class (cc)
 \item th\`eme du pass\'e (past)
@@ -439,6 +433,8 @@ Valeurs non trouv\'ees dans la DCS (\textit{Data Category Selection}) :
 \item NV avec l'attribut \textit{independent word = yes}, ayant comme liste de composants (\textit{List Of Components}) un lien vers les 2 entr\'ees lexicales d\'efinies ci-dessus.
 \end{itemize}
 \end{enumerate}
+
+\pagebreak
 
 \section{Exemples}
 
