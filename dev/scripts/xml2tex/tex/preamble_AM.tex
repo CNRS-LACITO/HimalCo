@@ -10,7 +10,7 @@
 \usepackage{memhfixc}
 \usepackage{multicol}
 \setlength{\columnseprule}{1pt}
-\setlength{\columnsep}{1cm}
+\setlength{\columnsep}{1.5cm}
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{CharisSIL}
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{DoulosSIL}
 \newcommand{\ipa}[1]{{\phon #1}} % API pas en italique
@@ -20,3 +20,6 @@
 \XeTeXlinebreakskip = 0pt plus 1pt
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
 \usepackage{gb4e}
+\usepackage{vmargin}
+% {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
+\setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{0cm}{0.5cm}{1cm}
