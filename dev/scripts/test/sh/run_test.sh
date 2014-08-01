@@ -19,7 +19,7 @@ python xls2xml/py/mdf2xml_tb.py -t na1
 
 # Na
 
-python xls2xml/py/xls2mdf.py
+#python xls2xml/py/xls2mdf.py
 python xls2xml/py/mdf2xml_tb.py -t na
 python xml2tex/py/xml2tex.py -t na
 python xml2tex/py/xml2tex.py -t na -l fr

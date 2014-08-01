@@ -225,6 +225,24 @@ class Xml2Tex(InOut, XmlFormat):
         """
         return text.replace('\\', '').replace('{', "\\ipa{")
 
+    def format_fn(self, text):
+        """Replace 'fn:xxx' by '\\textcolor{brown}{\zh{xxx}}'.
+        """
+        import re
+        return re.sub(r"(\w*)fn:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{brown}{\zh{" + r"\2" + "}}" + r"\3", text)
+
+    def format_fv(self, text):
+        """Replace 'fv:xxx' by '\\textcolor{blue}{\\textbf{\ipa{xxx}}}'.
+        """
+        import re
+        return re.sub(r"(\w*)fv:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{blue}{\\textbf{\ipa{" + r"\2" + "}}}" + r"\3", text)
+
+    def format_sc(self, text):
+        """Replace '°xxx' by '\\textsc{xxx}' in translated examples.
+        """
+        import re
+        return re.sub(r"(\w*)°([^\s\.,)+/]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+
     def format_pinyin(self, text):
         """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
         """
@@ -378,7 +396,7 @@ class Xml2Tex(InOut, XmlFormat):
             "gv"    : lambda e: "",
             "de"    : lambda e: "",
             "ge"    : lambda e: "",
-            "dn"    : lambda e: "\zh{" + e.text + "}. \n", # TODO: replace point with Chinese point without space after
+            "dn"    : lambda e: "\zh{" + e.text + "}. \\\ \n", # TODO: replace point with Chinese point without space after
             "gn"    : lambda e: "",
             "dr"    : lambda e: "",
             "gr"    : lambda e: "\\textit{Dialecte chinois local" + u"\u202F" + ":} \zh{" + e.text + "}\n",
@@ -438,7 +456,7 @@ class Xml2Tex(InOut, XmlFormat):
             "gv"    : lambda e: "",
             "de"    : lambda e: e.text + ". \n",
             "ge"    : lambda e: "",
-            "dn"    : lambda e: "\zh{" + e.text + "}.\n", # TODO: replace point with Chinese point without space after
+            "dn"    : lambda e: "\zh{" + e.text + "}.\\\ \n", # TODO: replace point with Chinese point without space after
             "gn"    : lambda e: "",
             "dr"    : lambda e: "",
             "gr"    : lambda e: "\\textit{Local Chinese dialect:} \zh{" + e.text + "}\n",
@@ -476,6 +494,13 @@ class Xml2Tex(InOut, XmlFormat):
             if element.text.find("$") != -1:
                 # Do not know what to do with '$' character
                 element.text = element.text.replace('$', '')
+            if element.text.find("fn:") != -1:
+                element.text = self.format_fn(element.text)
+            if element.text.find("fv:") != -1:
+                element.text = self.format_fv(element.text)
+            if (element.tag == "xe" or element.tag == "xn" or element.tag == "xr" or element.tag == "xf") \
+                and element.text.encode("utf8").find("°") != -1:
+                element.text = self.format_sc(element.text)
             if element.tag == "pdl" and element.text == "directional":
                 # Use abbreviation
                 element.text = "dir"
