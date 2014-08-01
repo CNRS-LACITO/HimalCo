@@ -5,7 +5,7 @@
 \usepackage{xltxtra} 
 \usepackage{longtable}
 \usepackage{polyglossia} 
-%\usepackage[table]{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -32,7 +32,9 @@
 \XeTeXlinebreaklocale 'zh' %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
- 
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
 
 
 \begin{document} 
@@ -44,18 +46,339 @@
 \section{Introduction}
 
 \section{Phonology}
+\citet{jacques07redupl}
+
+\citet{japhug14ideophones}
 
 \section{Verbal morphology}
 
+\subsection{Verb stems and transitivity}
 
-\subsection{TAM and directional prefixes}
+Japhug verbs present stem alternations determined by TAM and person/number marking. 
+
+Verbs have at most three distinct stems, which we designate as stem 1, stem 2 and stem 3 following \citet{jackson00sidaba}. Stem 1 is the default stem. Stem 2 appears only in the perfective and past imperfective forms. It is very residual in Japhug, attested only in a limited number of verbs indicated in Table \ref{tab:stem2}.
+
+
+ \begin{table} 
+\caption{Stem 2 alternation in Japhug Rgyalrong} \label{tab:stem2} \centering
+\begin{tabular}{llllll}
+\toprule
+Stem 1 & meaning &Stem 2 \\
+\midrule
+\ipa{ɕe}& to go (vi)&  \ipa{ari} \\
+\ipa{sɯxɕe}& to sent (vt)  &\ipa{sɤɣri} \\
+\ipa{ɣi}& to come (vi)  &\ipa{ɣe} \\
+\ipa{ti}& to say (vt)  &\ipa{tɯt} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Stem 3 in Japhug on the other hand is fully productive, and always appear in the forms \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' of non-past TAM categories (factual, imperfective, testimonial, present) for transitive verbs. Stem 3 does not appear in verb forms with the inverse marker (see below). Intransitive verbs lack stem 3 alternation.
+
+Table \ref{tab:stem3} presents all Stem 3 alternations attested in various Japhug dialects. The vowel alternation applies to the last vowel (in open syllables only) of the verb stem. In the case of verb stems ending in  \ipa{--u} and  \ipa{--ɯ}, some Japhug dialects allow two possible alternations, some verbs displaying vowel fronting and other addition of the \ipa{--m} suffixal element (as in Datshang, see \citealt{linluo03}), while other dialects have generalized vowel fronting.
+
+ \begin{table} 
+\caption{Stem 3 alternation in Japhug Rgyalrong} \label{tab:stem3} \centering
+\begin{tabular}{llllll}
+\toprule
+Stem 1 & Stem 3& type \\
+\midrule
+ \ipa{--a} & \ipa{--e} & vowel fronting\\
+ \ipa{--u} & \ipa{--e} & vowel fronting\\
+\ipa{--u} & \ipa{--ɤm} & \ipa{--m} \\
+\ipa{--ɯ} & \ipa{--i} & vowel fronting\\
+\ipa{--ɯ} & \ipa{--ɯm} & \ipa{--m}\\
+\ipa{--o} & \ipa{--ɤm} & \ipa{--m} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+\subsection{Directional prefixes}
+All finite verb forms except the \textsc{factual} have directional prefixes belonging to one of the four series in Table \ref{tab:directional} (some Japhug dialects have a slightly different paradigm, see \citealt{linluo03}). The non-periphrastic TAM categories are indicated in Table \ref{tab:finite.forms}. Some of these categories require a particular (testimonial, present, past imperfective) are marked by one particular directional prefix. The other TAM category only require a prefix of either set A, B, C or D, but the direction depends on the verb.
+
+Most verbs have one intrinsic direction which is lexically determined, and used in the perfective, imperfective, evidential, irrealis and imperative. For instance, the verb \ipa{ndza} `eat' selects the direction `up' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{tɤ-ndza-t-a} `I ate it', \textbf{imperfective} \ipa{tu-ndze} `He eats it', \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `He ate it' and \textbf{evidential} \ipa{to-ndza} `He ate it'. 
+
+In addition to the directional prefixes, two additional TAM markers appear in specific forms. First, the past \ipa{--t} suffix in the \textsc{1sg}$\rightarrow$3 and \textsc{2sg}$\rightarrow$3 forms of transitive verbs whose last stem syllable is an open syllable as \ipa{tɤ-ndza-t-a} \textsc{pfv}-eat-\textsc{pst-1sg} `I ate it'. Second, the evidential circumfix \ipa{kɯ--...-ci} is required whenever set D directional prefixes are used with a verb whose stem begins in \ipa{a--}, including verb with the progressive prefix \ipa{asɯ--} (see below). For instance, the evidential form of the verb \ipa{anbaʁ} `hide' is \ipa{ko-kɯ-ɤnbaʁ-ci} \textsc{evd-evd}-hide-\textsc{evd} `he hid'.
+
+\begin{table}[H]
+\caption{Directional prefixes in Japhug Rgyalrong} \label{tab:directional}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llllll}
+\toprule
+   &  	perfective  (A) &  	imperfective  (B)  &  	perfective 3$\rightarrow$3' (C)  &  	evidential  (D) \\  	
+   \midrule
+up   &  	\ipa{tɤ--}   &  	\ipa{tu--}   &  	\ipa{ta--}   &  	\ipa{to--}   \\  	
+down   &  	\ipa{pɯ--}   &  	\ipa{pjɯ--}   &  	\ipa{pa--}   &  	\ipa{pjɤ--}   \\  	
+upstream   &  	\ipa{lɤ--}   &  	\ipa{lu--}   &  	\ipa{la--}   &  	\ipa{lo--}   \\  	
+downstream   &  	\ipa{tʰɯ--}   &  	\ipa{cʰɯ--}   &  	\ipa{tʰa--}   &  	\ipa{cʰɤ--}   \\  	
+east   &  	\ipa{kɤ--}   &  	\ipa{ku--}   &  	\ipa{ka--}   &  	\ipa{ko--}   \\  	
+west   &  	\ipa{nɯ--}   &  	\ipa{ɲɯ--}   &  	\ipa{na--}   &  	\ipa{ɲɤ--}   \\  	
+no direction &\ipa{jɤ--}   &  	\ipa{ju--}   &  	\ipa{ja--}   &  	\ipa{jo--}   \\  	
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
+Verbs of motion and some verbs of concrete action can be associated with all seven series of prefixes to indicate the direction of the motion. The  `no direction' series of prefixes only occurs with motion verbs. 
+
+\begin{table}
+\caption{Finite verb categories in Japhug Rgyalrong} \label{tab:finite.forms} \centering
+\begin{tabular}{lllllll}
+\toprule
+&	&	stem&	prefixes\\
+\midrule
+factual&	\textsc{fact} &	1 or 3&	no prefix\\
+imperfective&	\textsc{ipfv} &	1 or 3&	B\\
+perfective&	\textsc{pfv} &	2&	A or C\\
+past imperfective&	\textsc{pst.ipfv} &	2&	\ipa{pɯ--}\\
+evidential&	\textsc{evd} &	1&	D\\
+evidential imperfective&	\textsc{evd.ipfv} &	1&	\ipa{pjɤ--}\\
+testimonial&	\textsc{testim} &	1 or 3&	\ipa{ɲɯ--}\\
+present&	\textsc{pres} &	1 or 3&	\ipa{ku--}\\
+irrealis&	\textsc{irr} &	1 or 3&	\ipa{a--} + A\\
+imperative&	\textsc{imp} &	1 or 3&	A\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The simple TAM categories in Table \ref{tab:finite.forms} can be combined with other TAM markers such as the conative \ipa{ji--} and the progressive \ipa{asɯ--}. 
+
+In addition, periphrastic TAM categories, combining simple verb forms with the copula \ipa{ŋu} `be', \ipa{maʁ} `not be' or \ipa{ɕti} `be (affirmative)' are also attested. The most common periphrastic tenses are the periphrastic past imperfective and periphrastic evidential imperfective, built by combining the imperfective form of the verb with the past imperfective \ipa{pɯ-ŋu} and evidential imperfective \ipa{pjɤ-ŋu} of the copula. Most dynamic verbs cannot be used in the simple past and evidential imperfective in Japhug (see \citealt{lin11direction}) and periphrastic tenses are required as in example \ref{ex:evd.ipfv.periphrastic}: directly combining the prefix \ipa{pjɤ--} with the stem of the verb `eat' results  in an incorrect form. The past and evidential imperfective of dynamic verbs is attested only in counterfactual and in combination with the progressive \ipa{asɯ--}.\footnote{The present of the circumfix \ipa{kɯ--...-ci} in example \ref{ex:evd.ipfv.prog} is explained in the previous section.}
+
+\begin{exe}
+\ex \label{ex:evd.ipfv.periphrastic}
+\gll
+\ipa{tu-ndze} \ipa{pjɤ-ŋu} \\
+ \textsc{ipfv}-eat[III] \textsc{evd.ipfv}-be \\
+\glt He was eating it. / He used to eat it.
+\ex \label{ex:evd.ipfv.prog}
+\gll
+ \ipa{pjɤ-kɯ-ɤsɯ-ndza-ci} \\
+ \textsc{evd.ipfv-evd-prog}-eat-\textsc{evd} \\
+\glt He was eating it.
+\end{exe}
+
+
+
 \subsection{Person marking}
+Japhug person marking is encoded by a series of prefixes and suffixes, in addition to stem 1 / Stem3 alternations in the case of transitive verbs.
+
+Table \ref{tab:japhug.tr} presents the regular transitive and intransitive verbal paradigms in Japhug in the \textsc{factual}. The symbols \siga{} and \sigc{} represent Stem 1 and Stem 3 respectively. The affixes found in the intransitive paradigm (the second person \ipa{tɯ--} and the suffixes) also appear in the transitive paradigm, in addition to portmanteau prefixes (\ipa{kɯ--} and \ipa{ta--} for the local scenarios 2$\rightarrow$1 and 1$\rightarrow$2) and the inverse prefix \ipa{wɣɯ--} which is obligatory in 3$\rightarrow$1 and 3$\rightarrow$2 mixed scenario and cannot occur in local and 1$\rightarrow$3 and 2$\rightarrow$3 scenarios. When both arguments are third person, the use of the inverse is determined by semantic and pragmatic factors (see \citealt{jacques10inverse}).
+
+\begin{table}[H]
+\caption{Japhug transitive and intransitive paradigms}\label{tab:japhug.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{\sigc{}-a}   & 	 \ipa{\sigc{}-a-ndʑi} & 	 \ipa{\sigc{}-a-nɯ} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{ta-\siga{}} & 	\ipa{ta-\siga{}-ndʑi} & 	\ipa{ta-\siga{}-nɯ} & 	\multicolumn{3}{c|}{ \ipa{\siga{}-tɕi}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\siga{}-ji}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\ipa{kɯ-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\sigc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & 	\ipa{kɯ-\siga{}-a-ndʑi} & 	\ipa{kɯ-\siga{}-tɕi} & 	\ipa{kɯ-\siga{}-ji} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-ndʑi}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} & 	\ipa{kɯ-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-nɯ}} & 	\grise{} \\	
+\hline
+\textsc{3sg} &  	\ipa{wɣɯ́-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\sigc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  	\ipa{wɣɯ́-\siga{}-a-ndʑi} & 	 \ipa{wɣɯ́-\siga{}-tɕi} & 		\ipa{wɣɯ́-\siga{}-ji} & 	\ipa{tɯ́-wɣ-\siga{}} & 	\ipa{tɯ́-wɣ-\siga{}-ndʑi} & 	\ipa{tɯ́-wɣ-\siga{}-nɯ} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-ndʑi} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  	\ipa{wɣɯ́-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-nɯ} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &	\ipa{wɣɯ́-\siga{}} & 	\ipa{wɣɯ́-\siga{}-ndʑi} & 	\ipa{wɣɯ́-\siga{}-nɯ} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\siga{}-a}&\ipa{\siga{}-tɕi}&\ipa{\siga{}-ji}&\ipa{tɯ-\siga{}}&\ipa{tɯ-\siga{}-ndʑi}&\ipa{tɯ-\siga{}-nɯ}&\ipa{\siga{}}&\ipa{\siga{}-ndʑi} &\ipa{\siga{}-nɯ}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+The sensory existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist' are extremely irregular. They cannot be used with directional prefixes, unlike nearly all other verbs, cannot be nominalized, and have infixed forms for the second person \ipa{ɣɤtɤʑu} `you are there' and \ipa{mataŋe} `you are not there'.
+
 \subsection{Derivation}
+
+
+\subsubsection{Argument demotion}
+In Japhug, non-overt arguments in a sentence are always construed as being definite. To express indefinite agent or patient, several strategies are possible, including indefinite pronouns such as \ipa{tʰɯci} `something', generic person or argument-demoting voice markers.
+
+Japhug has a wide array of argument-demoting prefixes, including passive \ipa{a--}, anticausative, antipassive \ipa{sɤ--} and \ipa{rɤ--} and deexperiencer \ipa{sɤ--} (see \citealt{jacques12demotion}). The antipassive prefixes have been grammaticalized from denominal prefixes (\citealt{jacques14antipassive}).
+
+The  \ipa{a--} prefix is an agentless passive, that converts a transitive verb into an intransitive one whose S corresponds to the P of the base verb. The original A cannot be expressed, but is semantically recoverable, as in \ref{ex:passive} with the light verb construction \ipa{sɤcɯ lɤt}`lock'. 
+
+\begin{exe}
+\ex \label{ex:passive}
+\gll 
+\ipa{ɯ-ŋgɯ} 	\ipa{lɤ-ɣi} 	\ipa{jɤɣ} 	\ipa{ma} 	\ipa{sɤcɯ} 	\ipa{mɤ-a-lɤt} \\
+\textsc{3sg}-inside \textsc{imp:upstream}-come \textsc{fact}:be.possible because key \textsc{neg-fact:pass}-throw \\
+\glt Come in, (the door) is not locked.
+\end{exe}
+
+The anticausative is distinct from the causative in that the action is construed as having occurred spontaneously without any agent. Only 24 pairs of verbs with anticausative derivation have been found in Japhug (see some examples in Table \ref{tab:anticausative}). Note the presence of the verb \ipa{χtɤr} `spill' borrowed from Tibetan \ipa{gtor}(same meaning): this verb shows that the direction of derivation is from transitive to intransitive, not the other way round, since the corresponding intransitive verb \ipa{ʁndɤr} `be spilled' cannot be a Tibetan borrowing.
+
+
+\begin{table}[H]
+\caption{Examples of anticausative in Japhug}\label{tab:anticausative}
+\begin{tabular}{lllllllll} \toprule
+basic verb  & &derived  verb &\\
+\midrule
+\ipa{ftʂi}  &	to melt (vt)	&		\ipa{ndʐi}  &	to melt (vi)		\\
+\ipa{kio}  &	to cause to drop	&		\ipa{ŋgio}  &	to slip		\\
+\ipa{prɤt}  &	to break	&		\ipa{mbrɤt}  &		to be broken	\\
+\ipa{χtɤr}  &	 to spill	&		\ipa{ʁndɤr}  &		to be spilled	\\
+\ipa{tʂaβ}  &	to cause to roll	&		\ipa{ndʐaβ}  &	to roll (vi)		\\
+   \ipa{cɯ}  &	 to open 	&		\ipa{ɲɟɯ}  &	 to be opened	 	\\ 
+ \bottomrule
+\end{tabular}
+\end{table}
+
+The semantic difference with the passive can be illustrated with \ipa{pjɤ-mbrɤt} \textsc{evd-anticaus}:break `it broke (of a rope)' vs \ipa{pjɤ-kɯ-ɤ-prɤt-ci} \textsc{evd-evd-pass-break}-\textsc{evd}`(someone) broke it'.
+
+There are two antipassive prefixes \ipa{rɤ--} and \ipa{sɤ--}, which convert a transitive verb into an intransitive one whose S corresponds to the A of the base verb. The prefix \ipa{rɤ--} is used in two cases: when the P of the base verb designates a non-human (\ipa{rɤt} `write (tr)' $\rightarrow$ \ipa{rɤ-rɤt} `write (it)', \ipa{ɕar} `search, look for (tr)' $\rightarrow$ \ipa{rɤ-ɕar} `look for things (it)') or in the case of ditransitive verbs, even when the P corresponds to the (human)recipient (\ipa{mbi} `give X to' $\rightarrow$ \ipa{rɤmbi} `give X to someone'). The antipassive \ipa{sɤ--} derives either a dynamic verb whose demoted argument is necessarily human (\ipa{sɤ-ɕar} `look for people (it)') or a stative verb, whose demoted P can be either human or non-human (\ipa{sat} `kill' $\rightarrow$ \ipa{sɤ-sat}`have a killing power, be deadly'). 
+
+A historically related derivation is the deexperiencer \ipa{sɤ--}, which derives a stative verb from any stative verb, changing an experiencer S into the stimulus (\ipa{ɲɟio} `slip' $\rightarrow$ \ipa{sɤ-ŋgio} `be slippery').
+
+\subsubsection{Incorporation}
+
+\citet{jacques12incorp}
+
+\subsubsection{Causative}
+There are two causative prefixes in Japhug, \ipa{sɯ--} and \ipa{ɣɤ--}. 
+
+The causative   \ipa{sɯ--} prefix is extremely productive, and can be added to nearly any verb, including recent borrowings from Tibetan and Chinese. It presents  considerable allomorphy, and numerous irregular forms. It has three regular allomorphs \ipa{sɯ-}, \ipa{sɯɣ-} and \ipa{z-} depending on the following element. The \ipa{z-} allomorph appears before all prefixes in sonorant initial. It expresses very broad causative meanings, including indirect causative (including by one's inaction), permissive (`allow to') and is also (optionally) used with  instruments marked in the ergative as in \ref{ex:caus.instrument}.
+
+
+\begin{exe}
+\ex \label{ex:caus.instrument}
+\gll  \ipa{ɯ-χto} 	\ipa{nɯ} 	\ipa{mbrɯtɕɯ} 	\ipa{kɯ} 	\ipa{kú-wɣ-sɯ-rkhe}  \\
+\textsc{3sg.poss}-slit \textsc{dem} knife \textsc{erg}  \textsc{ipfv-inv-cause}-carve \\
+ \glt  The slit is carved with a knife. (Colored belts 13)
+\end{exe} 
+
+Causative verbs with irregular allomorphs such as \ipa{jtsʰi} `give to drink'  from \ipa{tsʰi} `drink' generally have unpredictable semantics. The regular form is always possible at least to express an action with an instrument (\ipa{sɯ-tsʰi} `drink with').
+
+When the causative \ipa{sɯ--} is applied to a transitive verb, the causee can be either treated as the P in the verbal morphology or not encoded at all, resulting in ambiguous forms. As an example, the causative of \ipa{qur} ``to help''  \ipa{sɯ-qur} can have two meanings in specific cases (\ref{ex:caus:show.2>3>1}).
+
+\begin{exe} 
+\ex \label{ex:caus:show.2>3>1}
+\gll   \ipa{tɤ-kɯ-sɯ-qur-a-ndʑi}  \\
+ \textsc{pfv-2$\rightarrow$1-caus}-see-\textsc{1sg-du}  \\
+ \glt  You_d caused me to help him. OR You_d caused him to help me. 
+\end{exe} 
+
+The causative \ipa{ɣɤ--} is more restricted, and can only occur with some stative verbs. There is a slight semantic contrast between \ipa{sɯ--} and \ipa{ɣɤ--} in Japhug: in the case of some stative verbs, the former indicates a change of state, while the latter expresses a increase of degree (see also \citealt{jackson06paisheng} about Tshobdun). Example \ref{ex:ngolo-tAjko}  illustrates the use of \ipa{sɯ--} to express a change of state. Using \ipa{pjɯ-ɣɤ-tɕur} (\textsc{ipfv-caus}-be.sour) with the prefix \ipa{ɣɤ--} instead would mean `make it sourer' (it would imply that the leaves were already sour in the first place).
+
+ \begin{exe}
+\ex \label{ex:ngolo-tAjko}
+\gll
+\ipa{tɕe} 	\ipa{tɤjko} 	\ipa{mɯ-tɤ-tɕur} 	\ipa{tɕe,} 	\ipa{ɴɢolo} 	\ipa{ɯ-mat} 	\ipa{nɯ} 	\ipa{ɲɯ́-wɣ-phɯt} 	\ipa{tɕe,} 	\ipa{tɕe} 	\ipa{tɤrca} 	\ipa{pjɯ́-wɣ-ɣɤla} 	\ipa{tɕe,} 	\ipa{tɕe} 	\ipa{tɤjko} 	\ipa{pjɯ-sɯɣ-tɕur} 	\ipa{cha.} \\ 
+\textsc{lnk} pickled.turnip.leaves \textsc{neg-pfv}-be.sour \textsc{lnk} tree.sp \textsc{3sg.poss}-fruit \textsc{dem} ipfv-inv-pluck \textsc{lnk} \textsc{lnk} together \textsc{ipfv-inv}-soak \textsc{lnk} \textsc{lnk}  pickled.turnip.leaves \textsc{ipfv-caus}-be.sour \textsc{fact}:can \\
+ \glt When the pickled turnip leaves are not sour, one picks \ipa{ɴɢolo} fruit and soak it with them, and it can make the turnip leaves sour.   (\ipa{ɴɢolo} 27)
+   \end{exe}
+
+\subsubsection{Applicative and tropative}
+In addition to the causative, Japhug has two valency-increasing voice derivation, the applicative \ipa{nɯ--} / \ipa{nɯɣ--} and the tropative \ipa{nɤ--} /\ipa{nɤɣ--} (\citealt{jacques13tropative}).
+
+The applicative converts an intransitive verb into a transitive one whose A corresponds to the S of the base verb and whose P can be either a stimulus or a recipient (for instance \ipa{mu} `be afraid' $\rightarrow$\ipa{nɯɣmu} `be afraid of'). 
+
+The tropative is an extremely productive derivation that can be applied to all stative verbs describing a quality (ie, it is a criterion for defining an adjective subclass among stative verbs), deriving a transitive whose P corresponds to the S of the base verb (like a causative) but whose A is an experiencer, not a agent. The tropative verb has the meaning `to find / consider to be', thus \ipa{xtɕi} `be small' $\rightarrow$ `to find small'.
+
+\subsubsection{Other voice markers}
+In addition to the voice markers described above, Japhug also has a reflexive \ipa{ʑɣɤ--} distinct from the reciprocal (expressed by combining the prefix \ipa{a--} with a partially reduplicated verb stem).
+
+We also find three verbal derivations with modal meanings: the abilitative \ipa{sɯ--/z--} (expressing the meaning `be able to X', \ipa{nɤɕqa} `bear' $\rightarrow$ \ipa{z-nɤɕqa} `be able to bear), the stative facilitative \ipa{ɣɤ--} (\ipa{wxti} `be big' $\rightarrow$ \ipa{ɣɤwxti} `grow big easily') and the passive facilitative \ipa{nɯɣɯ--} (\ipa{ntɕʰoz} `use' $\rightarrow$\ipa{nɯɣɯntɕʰoz} `easy to use').
+   
+\subsection{Autobenefactive-spontaneous}
+
+The autobenefactive-spontaneous \ipa{nɯ--} prefix expresses a wide range a meanings. First, it is used to express that the S/A is affected by the action; it appears in particular with transitive verbs when the P is a body part of or belongs to the S/A (\ref{ex:pWnWXtCi}).
+
+\begin{exe}
+\ex \label{ex:pWnWXtCi}
+\gll 
+\ipa{nɤ-ku} 	\ipa{pɯ-nɯ-χtɕi} \\
+\textsc{2sg.poss}-head \textsc{imp-auto}-wash \\
+\glt Wash your head.
+\end{exe}
+
+The prefix \ipa{nɯ--} can also be used to express involuntary actions, as in \ref{ex:panWClWG}.
+
+\begin{exe}
+\ex \label{ex:panWClWG}
+\gll \ipa{ɯ-qom} 	\ipa{ci} 	\ipa{pa-nɯ-ɕlɯɣ} 	\ipa{ɲɯ-ŋu,} \\
+\textsc{3sg.poss}-tear \textsc{indef} \textsc{pfv:3$\rightarrow$3'-auto}-drop \textsc{testim}-be \\
+\glt She shed a tear (unvoluntarily).(Kunbzang 228)
+\end{exe}
+
+
+The prefix \ipa{nɯ--} is also used to express an action occurring by itself, without exterior agent/causer, even if the action is voluntary and controllable, as in \ref{ex:pjWnWmtsaRa}.
+
+\begin{exe}
+\ex \label{ex:pjWnWmtsaRa}
+\gll 
+\ipa{aʑo} 	\ipa{pjɯ-kɯ-ɣɤrat-a-nɯ} 	\ipa{mɤ-ra} 	\ipa{ma} 	\ipa{aʑo} 	\ipa{pjɯ-nɯ-mtsaʁ-a} 	\ipa{jɤɣ} \\
+\textsc{1sg} \textsc{ipfv:down}-2$\rightarrow$1-throw-\textsc{1sg-pl} \textsc{neg-fact}:need because \textsc{1sg} \textsc{neg-ipfv:down-auto}-jump-\textsc{1sg} \textsc{fact}:be.possible \\
+\glt You don't need to throw me in there, I will jump of my own free will.
+\end{exe}
+
+The autobenefactive-spontaneous prefix has no influence on the verb transitivity.
+
+\subsection{Associated motion}
+Japhug has two associated motion prefixes \ipa{ɕɯ--} and \ipa{ɣɯ--} expressing a motion taking place before the action expressed by the verb to which the prefixes are attached 
+(\citealt{jacques13harmonization}). The translocative \ipa{ɕɯ--} and the cislocative \ipa{ɣɯ--} respectively express the meaning `go to ..., go and ...' or `come to..., come and ...', as in example \ref{ex:cisloc}.
+
+
+\begin{exe}
+\ex \label{ex:cisloc}
+\gll
+\ipa{tɤrɤku} 	\ipa{kɯ-fse} 	\ipa{ɣɯ-tu-ndze} 	\ipa{nɯra} 	\ipa{mɤ-ŋgrɤl.} \\
+crops \textsc{nmlz}:S-be.like \textsc{cisloc-ipfv}-eat[III] \textsc{dem:pl} \textsc{neg-fact}:be.usually.the.case \\
+\glt It does not come to eat crops and things like that.
+\end{exe}
+
+These prefixes are semantically close to the motion verb construction with \ipa{ɕe} `go' and \ipa{ɣi} `come' and a complement with the verb in the S/A nominalization form. A crucial difference, however, can be found detected in the perfective:  motion verb constructions such as \ref{ex:motion.verb} imply that the motion event has taken place, but do not specify whether the action of the complement clause has taken place or not. Using the associated motion form \ipa{ɣɯ-tɤ-tɯ-nɤma-t} instead would mean `What have you done ? (after coming here)'.
+
+\begin{exe}
+\ex \label{ex:motion.verb}
+\gll
+\ipa{tɕʰi} 	\ipa{ɯ-kɯ-nɤma} 	\ipa{jɤ-tɯ-ɣe?} \\
+what \textsc{3sg-nmlz:}S/A-do \textsc{pfv-2}-come[II] \\
+\glt What have you come to do?
+\end{exe}
+%retrouver l'exemple
+
+
+With causative verbs, the associated motion can refer either to the motion of the causer or that of the causee as in example \ref{ex:assoc.motion2}.
+
+  \begin{exe}
+\ex \label{ex:assoc.motion2}
+\gll
+\ipa{tɕe} 	\ipa{kupa} 	\ipa{chu} 	\ipa{nɯra} 	\ipa{athi} 	\ipa{pɕoʁ} 	\ipa{nɯra,} 	\ipa{ɯ-pɕi} 	\ipa{nɯra} 	\ipa{kɯ} 	\ipa{kɯreri} 	\ipa{ɣɯ-chɯ-sɯ-χtɯ-nɯ} 	\ipa{ŋu.}  \\
+\textsc{lnk} Chinese \textsc{loc} \textsc{dem:pl} downstream direction \textsc{dem:pl} \textsc{3sg}-outside  \textsc{dem:pl}  \textsc{erg} here \textsc{cisloc-ipfv:downstream-caus}-buy-\textsc{pl} \textsc{fact}:be \\
+\glt People from the Chinese areas, people from outside send people to come here to buy (matsutake and sell them in the areas downstream). (Matsutake 58)
+  \end{exe} 
+
+
 \subsection{Nominalization and other non-finite forms}
 
-\section{The noun phrase}
+\subsection{Generic person}
 
-\section{Ideophones}
+\section{Nominal morphology}
+
+personal prefixes, alignment: tɤ-pɤro.
+
+\section{The noun phrase} 
+demonstratives, quantifiers, postpositions
+
+\section{Simple clauses} 
 
 \section{Relativization}
 
@@ -63,16 +386,12 @@
 
 \section{Clause linking}
 
-\citet{jacques12demotion}
-\citet{jacques14linking}
-\citet{jacques14antipassive}
-\citet{jacques13harmonization}
-\citet{jacques13tropative}
-\citet{japhug14ideophones}
-\citet{jacques10inverse}
+
+
 \citet{jacques08}
-\citet{jacques07redupl}
+
 \citet{jacques04these}
+\citet{jacques14linking}
 
 \bibliographystyle{linquiry2}
 \bibliography{bibliogj}
