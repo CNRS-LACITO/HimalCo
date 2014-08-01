@@ -237,6 +237,12 @@ class Xml2Tex(InOut, XmlFormat):
         import re
         return re.sub(r"(\w*)fv:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{blue}{\\textbf{\ipa{" + r"\2" + "}}}" + r"\3", text)
 
+    def format_sc(self, text):
+        """Replace '°xxx' by '\\textsc{xxx}' in translated examples.
+        """
+        import re
+        return re.sub(r"(\w*)°([^\s\.,)+/]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+
     def format_pinyin(self, text):
         """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
         """
@@ -492,6 +498,9 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_fn(element.text)
             if element.text.find("fv:") != -1:
                 element.text = self.format_fv(element.text)
+            if (element.tag == "xe" or element.tag == "xn" or element.tag == "xr" or element.tag == "xf") \
+                and element.text.encode("utf8").find("°") != -1:
+                element.text = self.format_sc(element.text)
             if element.tag == "pdl" and element.text == "directional":
                 # Use abbreviation
                 element.text = "dir"
