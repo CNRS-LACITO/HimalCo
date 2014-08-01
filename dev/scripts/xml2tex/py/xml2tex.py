@@ -378,7 +378,7 @@ class Xml2Tex(InOut, XmlFormat):
             "gv"    : lambda e: "",
             "de"    : lambda e: "",
             "ge"    : lambda e: "",
-            "dn"    : lambda e: "\zh{" + e.text + "}. \n", # TODO: replace point with Chinese point without space after
+            "dn"    : lambda e: "\zh{" + e.text + "}. \\\ \n", # TODO: replace point with Chinese point without space after
             "gn"    : lambda e: "",
             "dr"    : lambda e: "",
             "gr"    : lambda e: "\\textit{Dialecte chinois local" + u"\u202F" + ":} \zh{" + e.text + "}\n",
@@ -438,7 +438,7 @@ class Xml2Tex(InOut, XmlFormat):
             "gv"    : lambda e: "",
             "de"    : lambda e: e.text + ". \n",
             "ge"    : lambda e: "",
-            "dn"    : lambda e: "\zh{" + e.text + "}.\n", # TODO: replace point with Chinese point without space after
+            "dn"    : lambda e: "\zh{" + e.text + "}.\\\ \n", # TODO: replace point with Chinese point without space after
             "gn"    : lambda e: "",
             "dr"    : lambda e: "",
             "gr"    : lambda e: "\\textit{Local Chinese dialect:} \zh{" + e.text + "}\n",
