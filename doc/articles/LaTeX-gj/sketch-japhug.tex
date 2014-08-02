@@ -3,7 +3,6 @@
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
-\usepackage{longtable}
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -52,7 +51,7 @@
 
 \section{Verbal morphology}
 
-\subsection{Verb stems and transitivity}
+\subsection{Verb stems}
 
 Japhug verbs present stem alternations determined by TAM and person/number marking. 
 
@@ -99,7 +98,7 @@ Stem 1 & Stem 3& type \\
 \subsection{Directional prefixes}
 All finite verb forms except the \textsc{factual} have directional prefixes belonging to one of the four series in Table \ref{tab:directional} (some Japhug dialects have a slightly different paradigm, see \citealt{linluo03}). The non-periphrastic TAM categories are indicated in Table \ref{tab:finite.forms}. Some of these categories require a particular (testimonial, present, past imperfective) are marked by one particular directional prefix. The other TAM category only require a prefix of either set A, B, C or D, but the direction depends on the verb.
 
-Most verbs have one intrinsic direction which is lexically determined, and used in the perfective, imperfective, evidential, irrealis and imperative. For instance, the verb \ipa{ndza} `eat' selects the direction `up' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{tɤ-ndza-t-a} `I ate it', \textbf{imperfective} \ipa{tu-ndze} `He eats it', \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `He ate it' and \textbf{evidential} \ipa{to-ndza} `He ate it'. 
+Most verbs have one intrinsic direction which is lexically determined, and used in the perfective, imperfective, evidential, irrealis and imperative. For instance, the verb \ipa{ndza} `eat' selects the direction `up' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{tɤ-ndza-t-a} `I ate it', \textbf{imperfective} (with stem 3) \ipa{tu-ndze} `He eats it', \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `He ate it' and \textbf{evidential} \ipa{to-ndza} `He ate it'. 
 
 In addition to the directional prefixes, two additional TAM markers appear in specific forms. First, the past \ipa{--t} suffix in the \textsc{1sg}$\rightarrow$3 and \textsc{2sg}$\rightarrow$3 forms of transitive verbs whose last stem syllable is an open syllable as \ipa{tɤ-ndza-t-a} \textsc{pfv}-eat-\textsc{pst-1sg} `I ate it'. Second, the evidential circumfix \ipa{kɯ--...-ci} is required whenever set D directional prefixes are used with a verb whose stem begins in \ipa{a--}, including verb with the progressive prefix \ipa{asɯ--} (see below). For instance, the evidential form of the verb \ipa{anbaʁ} `hide' is \ipa{ko-kɯ-ɤnbaʁ-ci} \textsc{evd-evd}-hide-\textsc{evd} `he hid'.
 
@@ -206,7 +205,7 @@ Table \ref{tab:japhug.tr} presents the regular transitive and intransitive verba
 The sensory existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist' are extremely irregular. They cannot be used with directional prefixes, unlike nearly all other verbs, cannot be nominalized, and have infixed forms for the second person \ipa{ɣɤtɤʑu} `you are there' and \ipa{mataŋe} `you are not there'.
 
 \subsection{Derivation}
-
+Japhug a a very rich system of derivations, including voice markers, denominal and deideophonic prefixes. Only the former will be discussed here.
 
 \subsubsection{Argument demotion}
 In Japhug, non-overt arguments in a sentence are always construed as being definite. To express indefinite agent or patient, several strategies are possible, including indefinite pronouns such as \ipa{tʰɯci} `something', generic person or argument-demoting voice markers.
@@ -248,8 +247,25 @@ There are two antipassive prefixes \ipa{rɤ--} and \ipa{sɤ--}, which convert a 
 A historically related derivation is the deexperiencer \ipa{sɤ--}, which derives a stative verb from any stative verb, changing an experiencer S into the stimulus (\ipa{ɲɟio} `slip' $\rightarrow$ \ipa{sɤ-ŋgio} `be slippery').
 
 \subsubsection{Incorporation}
+Japhug has an incorporation-like construction in which noun-verb nominal compounds are turned into verbs by means of a denominal prefix (\citealt{jacques12incorp}). For instance, from the noun \ipa{cɯ} `stone' and the verb\ipa{pʰɯt} `pluck, take out' one can derive a action nominal    \ipa{cɯpʰɯt} `clearing the stones', which can in turn be made into a incorporating verb by denominal derivation  \ipa{ɣɯ-cɯpʰɯt } `take out stones (out of the field)'.
 
-\citet{jacques12incorp}
+\begin{exe}   
+\ex
+\begin{xlist}[(ii)]
+\exi{(i)} 
+\gll     \ipa{cɯ-pʰɯt} \ipa{nɯ-βzu-t-a}  \\
+  stone-clearing \textsc{pfv}-do-\textsc{pst}-\textsc{1sg} \\
+\exi{(ii)} 
+\gll     \ipa{nɯ-ɣɯ-cɯ-pʰɯt-a}  \\
+  \textsc{pfv-denominal}-stone-take.out-\textsc{1sg} \\
+\exi{(iii)} 
+\gll     \ipa{cɯ} \ipa{nɯ-pʰɯt-a}  \\
+  stone \textsc{pfv}-take.out-\textsc{1sg} \\
+  \end{xlist}
+ \glt   I cleared the stones (from the field). 
+\end{exe}   
+
+The three constructions above have a slightly different meaning: the compound action nominal with light verb construction (i) implies that the action took considerable time, while the incorporating construction (ii) cannot be used if the action refers to specific stones that have been previously mentioned in discourse.
 
 \subsubsection{Causative}
 There are two causative prefixes in Japhug, \ipa{sɯ--} and \ipa{ɣɤ--}. 
@@ -369,15 +385,107 @@ With causative verbs, the associated motion can refer either to the motion of th
 
 \subsection{Nominalization and other non-finite forms}
 
+Japhug has a rich set of non-finite verb forms: participles, action nominalizer, infinitives and converbs. These forms have in common the facts that (i) they can only mark person by means of possessive prefixes like nouns, cannot take the inverse prefix, and cannot encode two arguments in the case of transitive verbs (ii) they cannot use stem 3 (iii) they cannot serve as the predicate of a main clause.
+
+There are three participles in Japhug: the S/A-participle \ipa{kɯ--}, the P-participle \ipa{kɤ--} and the oblique participle \ipa{sɤ--}. In the case of transitive verbs, the S/A-participle takes a possessive prefix (see Table \ref{tab:pronoun}) coreferent with the P (\ipa{ndza} `eat' $\rightarrow$ \ipa{ɯ_i-kɯ-ndza} `the one who eats it_i'), while the P-participle optionally takes a possessive prefix coreferent with the A (\ipa{ɯ_i-kɤ-ndza} `what he/it_i eats'). The oblique participle \ipa{sɤ--} can refer to  the instrument, the place, time or recipient of an action (see the section on relatives).
+
+The participles can be used with negation and directional prefixes (only set A and B); participles with perfective directional prefixes take stem 2 if they have a distinct stem.
+
+In addition, Japhug verbs have infinitives in \ipa{kɤ--} (for dynamic verbs allowing an animate argument) or \ipa{kɯ--} (for intransitive stative verbs or verbs only used with inanimate arguments). While the infinitives are superficially similar to the S/A- and P-participles, their morphology and uses are different. they cannot take any possessive prefix, and in the case of intransitive dynamic verbs, the forms in \ipa{kɤ--}
+
 \subsection{Generic person}
+Apart from argument-demoting voice prefixes, another way of expressing indefinite arguments in Japhug is generic person marking. It is available only for generic human referents, not for inanimates or animals.
+
+This type of person marking follows an ergative alignment: generic S and P arguments are marked with the prefix \ipa{kɯ--} (see examples \ref{ex:pWkWNu} and \ref{ex:kukWnWfse}) while generic A argument is marked with the inverse prefix \ipa{wɣ--} (\ref{ex:tuwGndza.sna}; the verb \ipa{ti} `` say' is irregular in that its generic A form takes the \ipa{kɯ--} prefix).  Verbs with generic person markers cannot take any other person or number markers.
+
+
+\begin{exe}
+\ex \label{ex:pWkWNu}
+\gll
+\ipa{tɕeri} 	\ipa{tɤpɤtso} 	\ipa{pɯ-kɯ-ŋu} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-ndza} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pɯ-kɯ-rga.} \\
+but child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc{dem} \textsc{inf}-eat really \textsc{emph} \textsc{pst.ipfv-genr}:S/P-like \\
+\glt When (we) were children, (we) liked it a lot. (Sambucus, 135)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:kukWnWfse}
+\gll
+\ipa{tɕe}  	\ipa{li}  	\ipa{nɯ}  	\ipa{tɯrme}  	\ipa{kɯnɤ}  	\ipa{ku-kɯ-nɯfse}  	\ipa{ɲɯ-ŋu,}\\
+\textsc{lnk} again \textsc{dem} people also \textsc{ipfv-genr:S/P}-recognize \textsc{testim}-be\\
+\glt  (The monkey) recognizes people. (monkey, 17)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tuwGndza.sna}
+\gll
+\ipa{tɯrme}  	\ipa{kɯ}  	\ipa{tú-wɣ-ndza}  	\ipa{mɤ-sna.}   \\
+people \textsc{erg} \textsc{ipfv-inv}-eat \textsc{neg-fact}:be.fine \\
+\glt It is not edible by people. (\ipa{khɯrtshɤz}, 39)
+\end{exe}
+
+\subsection{Transitivity}
+The single most important feature in Japhug verbal morphology is transitivity. As seen above, transitive verbs differ from intransitive verbs in several ways: the S/A-participle can take a possessive prefix coreferent with the P, the perfective third person forms take set C directional prefixes (or the inverse prefix), and verbs whose base stem is in open syllable have the past \ipa{-t-} suffix in \textsc{1sg$\rightarrow$3} \textsc{2sg$\rightarrow$3} and stem 3 alternation in some cases.
+
+There is never any ambiguity as to whether a particular verb is morphologically  transitive or intransitive, but some verbs, such as \ipa{taʁ} `weave' or \ipa{mɯrkɯ} `steal' are labile and can be conjugated either transitively or intransitively (\citealt{jacques12demotion}). All labile verbs in Japhug are A-preserving; there are no examples of P-preserving lability.
+
+There is a class of semi-transitive verbs, such as \ipa{rga} `like' or \ipa{aro} `have, own' that are morphologically intransitive but present some syntactic transitivity. While their finite conjugation is identical to that of intransitive verbs, and while their S does not take ergative marking, they do have P-participle in \ipa{kɤ--} and thus have a object-like argument that can be relativized exactly in the same way as the P of a transitive verb. This argument however, even if SAP, cannot be marked in the verb morphology.
+
+Ditransitive can be either secundative (with $R=P$, like \ipa{mbi} `give'), indirective ($T=P$, as \ipa{tʰu} `ask') or both (causative verbs deriving from transitive base verbs) from the point of view of person marking on the verb. No more than two arguments can be encoded by verbal morphology. The noun phrases corresponding to recipients of indirective verbs receive dative flagging \ipa{ɯ-ɕki} or \ipa{ɯ-pʰe}, but cannot be marked on the verb, even if first or second person.
+
+The relativization patterns however slightly differ from argument indexation on the verb.
+In the case of secundative verbs, both the R and the T of secundative verbs are relativizable like the P, even though only the R is indexed on the verb. As for indirective verbs, the R is relativized by means of the oblique participle (see the section on relativization).
 
 \section{Nominal morphology}
+Japhug nouns can be divided in three sub-classes: simple nouns, inalienably possessed nouns and counted nouns (classifiers). Only the first two classes are discussed in this sketch. 
 
-personal prefixes, alignment: tɤ-pɤro.
+The same set of possessive prefixes (see Table \ref{tab:pronoun}) is used for all nouns, but inalienably possessed nouns cannot be used on their own without one of these prefixes. When there is no definite possessor, the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--} are used. It is the citation form of inalienably possessed nouns (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The choice of the prefix \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). It is possible to turn an inalienably possessor noun into an alienably possessed one by prefixing definite possessive prefix to the indefinite one (\ipa{ɯ-tɤ-lu} `his milk (to drink)', \ipa{ɯ-tɯ-ci} `its water (of irrigated water, to a plant)'). Simple nouns cannot take indefinite possessive prefixes.
+
+
+\begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes }\label{tab:pronoun}
+\begin{tabular}{lllllllll} 
+\toprule
+ Free pronoun & Prefix & Person\\
+\midrule
+ \ipa{aʑo},    \ipa{ɤj} &	\ipa{a--}  &		1\textsc{sg} \\
+\ipa{nɤʑo},  \ipa{nɤj} &	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯʑo}  &	\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+\ipa{tɕiʑo}  &	\ipa{tɕi--}  &			1\textsc{du} \\
+\ipa{ndʑiʑo}  &	\ipa{ndʑi--}  &		2\textsc{du} \\	
+\ipa{ʑɤni}  &	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+\ipa{iʑo}, \ipa{iʑora},   \ipa{iʑɤra}   &	\ipa{i--}  &			1\textsc{pl} \\
+\ipa{nɯʑo}, \ipa{nɯʑora},   \ipa{nɯʑɤra}  &	\ipa{nɯ--}  &			2\textsc{pl} \\
+\ipa{ʑara}  &	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+&  \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯʑo} & \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The indefinite possessive prefixes should not be confused with the generic possessive prefix \ipa{tɯ--}, which can be added to any noun, and which is coereferent with the argument marked with generic marking on the verb, as in example \ref{ex:tWrpW}. Note also that inalienably possessed nouns that select the indefinite possessive prefix \ipa{tɤ--} have \ipa{tɯ--} instead when the possessor is generic (\ipa{tɤ-rpɯ} `an uncle' vs \ipa{tɯ-rpɯ} `one's uncle').
+
+\begin{exe}
+\ex \label{ex:tWrpW}
+\gll
+ \ipa{tɯ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{tɕe} 	``\ipa{a-rpɯ} \ipa{a-ɬaʁ}" 	\ipa{tu-kɯ-ti} 	\ipa{ŋu.} \\
+\textsc{genr.poss}-uncle \textsc{3sg.poss}-offspring 3sg-dat lnk \textsc{lnk} \textsc{1sg.poss}-uncle \textsc{1sg.poss}-aunt \textsc{ipfv-genr}-say \textsc{fact}:be \\
+\glt One has to say ``my maternal uncle, my maternal aunt" to one's maternal uncle's sons and daughters. (Kinship, 69)
+\end{exe}
+
+Some possessed nouns have restrictions on the interpretation of the possessor. Thus, the possessive prefix of the noun \ipa{tɤ-pɤro} `present' can only refer to the person giving the present, never the recipient: \ipa{a-pɤro} \textsc{1sg.poss}-\textit{present} can only mean `my present (to him, to you etc)' not `the present (you, he gave) me'.
+
+
+\ipa{kɤɣɯrtɯrtaʁ}
 
 \section{The noun phrase} 
 demonstratives, quantifiers, postpositions
 
+
+tɕheme χsɯm nɯ wuma pjɤmpɕɤrnɯ
 \section{Simple clauses} 
 
 \section{Relativization}
