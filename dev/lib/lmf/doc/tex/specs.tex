@@ -212,7 +212,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & \multirow{6}{2cm}{Definition} & definition & ``This is the lexeme definition'' & \href{http://www.isocat.org/datcat/DC-1972}{1972} open & dv, de, dn, dr, df & \\ \cmidrule{3-7}
 & & gloss & ``\scshape{GLOSS}'' & \href{http://www.isocat.org/datcat/DC-244}{244} open & gv, ge, gn, gr, gf & \\ \cmidrule{3-7}
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; language used for definition and gloss \\ \cmidrule{3-7}
-& & literally & ``'au pied de la lettre' & \href{http://www.isocat.org/datcat/DC-3721}{3721} open & lt & \\ \cmidrule{3-7}
+& & literally & 'au pied de la lettre' & \href{http://www.isocat.org/datcat/DC-3721}{3721} open & lt & \\ \cmidrule{3-7}
 & & text representation & Text Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{3-7}
 & & statement & Statement & N/A & N/A & \\ \cmidrule{2-7}
 % Statement
@@ -690,6 +690,56 @@ dt & Lexical Entry date \\ \hline
 \pagebreak
 
 \lstinputlisting[caption=Japhug example]{../xml/japhug_example.xml}
+
+\pagebreak
+
+\subsection{Mwotlap, Araki, Lo, Teanu}
+
+Dans les dictionnaires d'Alexandre François, des marqueurs spécifiques ont été utilisés. En voici une liste, ainsi que les équivalences proposées en LMF.
+
+\begin{center}
+\begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
+\caption[]{Mowtlap dictionary: matching between MDF and LMF} \\ \hline
+\endfirsthead
+\caption[]{(continued)} \\
+\endhead
+\endfoot
+\endlastfoot
+\textbf{MDF} & \textbf{Purpose} & \textbf{LMF} \\ \hline
+wr & \textit{word reference} pour avoir plusieurs ‘ps’ différents dans la même entrée ‘lx’, à ne pas confondre avec les sous-entrées & plusieurs \textit{Lexical Entry} \\ \hline
+we & détourné pour restriction syntaxique : contexte syntaxique ; notes grammaticales qui spécifient plus précisément le sens en particulier & équivalent : `ov' \\ \hline
+wn & même chose en anglais & équivalent : `oe' \\ \hline
+he & étiquette sémantique pour qualifier le type de relation sémantique : métaphoriquement, sens figuré, etc. & \textit{Related Form semantic relation} : ajouter ``métaphore'' et ``sens figuré'' \\ \hline
+hn & `he' en anglais & `he' uniquement en anglais \\ \hline
+ll & équivalent de `lt' en anglais & Definition literally with language = “eng” \\ \hline
+oe & note sur un exemple & équivalent : `xc' \\ \hline
+on & `oe' en anglais & Text Representation comment with language = “eng” \\ \hline
+ur (regional = bislama) & sujet ou possesseur typique ; pour un sens donné, de quel type de sujet c’est le prédicat & Statement usage note \\ \hline
+se & peut aussi indiquer la forme préfixé du nom & Form variant form : ajouter type = “prefix” \\ \hline
+el & langue de l’étymologie & Statement term source language \\ \hline
+dc & date de création & ajouter \textit{creation date} dans \textit{Lexical Entry} \\ \hline
+la & forme préfixée pour une entrée, comme ‘se’ suivi de `wr' & Form variant form : ajouter type = “prefix” \\ \hline
+lg & légende de la photo & Picture statement with note type = ``legend'' \\ \hline
+ce & glose de `cf' en français & Statement etymology gloss \\ \hline
+u & \textit{underlined form} correspondant à ‘a’, destiné au \textit{parser} & Form Representation spelling variant \\ \hline
+xm & exemple caché & ajouter un type ``exemple caché'' \\ \hline
+rm & référence d’un exemple caché & Context resource reference \\ \hline
+xa & version anglaise d’un exemple caché & Context text representation with language = “eng” \\ \hline
+mr & morpho & Paradigm morphology \\ \hline
+ue & label & fichier de configuration \\ \hline
+un & label en anglais & fichier de configuration \\ \hline
+tb & encadré de liste de mots en français & Table written form with type = ``word list'' and language = ``fra'' (à ajouter) \\ \hline
+ta & équivalent de ‘tb’ en anglais & Table written form with type = ``word list'' and language = ``eng'' (à ajouter) \\ \hline
+tl & encadré en prose & Table written form with type = ``text'' and language = ``fra'' (à ajouter) \\ \hline
+tn & équivalent anglais de ’tl’ & Table written form with type = ``text'' and language = ``eng'' (à ajouter) \\ \hline
+\end{longtable}
+\end{center}
+
+Syntaxe spécifique utilisée :
+\begin{itemize}
+\item ``ax:'' pour un texte en italique : à remplacer par ``fi:''
+\item mini-chevrons pour indiquer l’objet syntaxique : \textit{Statement usage note}
+\end{itemize}
 
 \section{A venir}
 
