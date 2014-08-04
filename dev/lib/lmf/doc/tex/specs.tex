@@ -802,6 +802,71 @@ Syntaxe spécifique utilisée :
 \item mm = Martine Mazaudon
 \end{itemize}
 
+\pagebreak
+
+\subsection{Limbu}
+
+Il s'agit du dictionnaire XML de Boyd Michailovsky.
+
+\begin{lstlisting}[caption=Limbu example]
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE DICO
+	SYSTEM "dicoLimbu.dtd">
+
+<DICO>
+	<entry id=“xxx_1”>
+		<form>
+			<pron type="headword|var|pastem|prstem|pa|pask|fem|poss|root|neg|allom" valid=“doubt”>xxx</pron>
+			<note type=''ph|rem|comm|gram|stem'' valid=''doubt''>...</note>
+		</form>
+		<gramGrp>
+			<pos valid=“doubt” class="v|vprefix|vsuffix|preverb|misc”>…</pos>
+			<note/>
+		</gramGrp>
+		<sense>
+			<def type="binom|par” xml:lang=“…” valid=“doubt”>…</def>
+			<invertkey>…</invertkey>
+			<sem>…</sem>
+			<xptr target=“…” valid=“doubt”>...</xptr>
+			<eg type=“hidden”>
+				<q>…</q>
+				<xptr>…</xptr>
+				<link xmlns:xlink=“…” xlink:type=“…” xlink:actuate=“…” xlink:show=“…” xlink:href="…”>…</link>
+				<trans>
+					<tr xml:lang="...”>…</tr>
+				</trans>
+			</eg>
+			<note/>
+		</sense>
+		<xr type=herbier”>
+			<ptr type=“…” target=“yyy_2” valid=“…”>yyy</ptr>
+			<xptr/>
+			<lexx/>
+			<ref valid=“doubt”/>
+			<wordFamily type=“…” family=“…” valid=“doubt”/>
+			<note/>
+		</xr>
+		<usg>
+			<dial>…</dial>
+			<note/>
+		</usg>
+		<hom n="3">
+			<form/>
+			<gramGrp/>
+			<sense/>
+			<xr/>
+			<usg/>
+		</hom>
+	</entry>
+</DICO>
+\end{lstlisting}
+
+Syntaxe spécifique :
+\begin{lstlisting}[caption=Limbu syntax]
+<foreign xml:lang="x-sil-LIF”>…</foreign>
+<family name=“…”>…</family>
+\end{lstlisting}
+
 \section{A venir}
 
 \begin{itemize}
