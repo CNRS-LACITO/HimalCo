@@ -232,16 +232,23 @@ class Xml2Tex(InOut, XmlFormat):
         return re.sub(r"(\w*)fn:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{brown}{\zh{" + r"\2" + "}}" + r"\3", text)
 
     def format_fv(self, text):
-        """Replace 'fv:xxx' by '\\textcolor{blue}{\\textbf{\ipa{xxx}}}'.
+        """Replace 'fv:xxx' by '\textcolor{blue}{\textbf{\ipa{xxx}}}'.
         """
         import re
-        return re.sub(r"(\w*)fv:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{blue}{\\textbf{\ipa{" + r"\2" + "}}}" + r"\3", text)
+        result = text
+        s = re.match(r"(.*[ }])?fv:([^\s\.,)]*)(\w*)", text)
+        if s:
+            result = ''
+            if s.group(1) is not None:
+                result += s.group(1)
+            result += r"\textcolor{blue}{\textbf{\ipa{" + s.group(2) + "}}}" + s.group(3)
+        return result
 
     def format_sc(self, text):
-        """Replace '°xxx' by '\\textsc{xxx}' in translated examples.
+        """Replace '°xxx' by '\mytextsc{xxx}' in translated examples.
         """
         import re
-        return re.sub(r"(\w*)°([^\s\.,)+/]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+        return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\mytextsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
 
     def format_pinyin(self, text):
         """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
@@ -370,7 +377,7 @@ class Xml2Tex(InOut, XmlFormat):
             "bw"    : lambda e: "",
             "et"    : lambda e: "",
             "ec"    : lambda e: "",
-            "ps"    : lambda e: "\\textcolor{teal}{" + e.text + "} \\hspace{0.2cm}\n", # TODO: small caps
+            "ps"    : lambda e: "\\textcolor{teal}{\mytextsc{" + e.text + "}} \\hspace{0.2cm}\n",
             "sn"    : lambda e: e.text + ")\n",
             "sy"    : lambda e: "",
             "an"    : lambda e: "",
@@ -386,7 +393,7 @@ class Xml2Tex(InOut, XmlFormat):
             "va"    : lambda e: "",
             "ve"    : lambda e: "",
             "vf"    : lambda e: "",
-            "pdl"   : lambda e: "\\textit{CL" + u"\u202F" + ":} ", # TODO: small caps
+            "pdl"   : lambda e: "\\textit{\mytextsc{CL}" + u"\u202F" + ":} ",
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
             "pdf"   : lambda e: "'" + e.text + "'\n",
             "a2s"   : lambda e: "",
@@ -430,7 +437,7 @@ class Xml2Tex(InOut, XmlFormat):
             "bw"    : lambda e: "",
             "et"    : lambda e: "",
             "ec"    : lambda e: "",
-            "ps"    : lambda e: "\\textcolor{teal}{" + e.text + "} \\hspace{0.2cm}\n", # TODO: small caps
+            "ps"    : lambda e: "\\textcolor{teal}{\mytextsc{" + e.text + "}} \\hspace{0.2cm}\n",
             "sn"    : lambda e: e.text + ")\n",
             "sy"    : lambda e: "",
             "an"    : lambda e: "",
@@ -446,7 +453,7 @@ class Xml2Tex(InOut, XmlFormat):
             "va"    : lambda e: "",
             "ve"    : lambda e: "",
             "vf"    : lambda e: "",
-            "pdl"   : lambda e: "\\textit{CL:} ", # TODO: small caps
+            "pdl"   : lambda e: "\\textit{\mytextsc{CL}:} ",
             "pdv"   : lambda e: "\ipa{" + e.text + "}. \n",
             "pdf"   : lambda e: "'" + e.text + "'\n",
             "a2s"   : lambda e: "",
@@ -498,6 +505,9 @@ class Xml2Tex(InOut, XmlFormat):
                 element.text = self.format_fn(element.text)
             if element.text.find("fv:") != -1:
                 element.text = self.format_fv(element.text)
+                # Do it twice
+                if element.text.find("fv:") != -1:
+                    element.text = self.format_fv(element.text)
             if (element.tag == "xe" or element.tag == "xn" or element.tag == "xr" or element.tag == "xf") \
                 and element.text.encode("utf8").find("°") != -1:
                 element.text = self.format_sc(element.text)
