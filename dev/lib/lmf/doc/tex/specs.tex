@@ -745,7 +745,7 @@ Syntaxe spécifique utilisée :
 
 \subsection{Tamang}
 
-Il s'agit du dictionnaire de Martine Mazaudon, écrit au format Word. Voici une liste (qui se veut exhaustive) des marqueurs qui ont été utilisés, ainsi que leurs équivalents en MDF ou LMF.
+Il s'agit du dictionnaire de Martine Mazaudon, écrit dans Word et basé sur le format LEXWARE. Voici une liste (qui se veut exhaustive) des marqueurs qui ont été utilisés, ainsi que leurs équivalents en MDF ou LMF.
 
 \begin{center}
 \begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
@@ -806,7 +806,7 @@ Syntaxe spécifique utilisée :
 
 \subsection{Limbu}
 
-Il s'agit du dictionnaire XML de Boyd Michailovsky.
+Il s'agit du dictionnaire de Boyd Michailovsky, préalablement converti de LEXWARE en XML, dont la structure est décrite ci-dessous.
 
 \begin{lstlisting}[caption=Limbu example]
 <?xml version="1.0" encoding="iso-8859-1"?>
@@ -867,11 +867,40 @@ Syntaxe spécifique :
 <family name=“…”>…</family>
 \end{lstlisting}
 
+\begin{center}
+\begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
+\caption[]{Limbu dictionary: matching between XML and LMF} \\ \hline
+\endfirsthead
+\caption[]{(continued)} \\
+\endhead
+\endfoot
+\endlastfoot
+\textbf{TEI-based XML} & \textbf{Purpose} & \textbf{LMF} \\ \hline
+entry & main entry & Lexical Entry \\ \hline\hline
+\underline{form} & spoken and morphophonemic forms ; orthography if available & Lemma lexeme, Form Representation, Word Form\\ \hline
+pron & phonological transcription & Form Representation phonetic form \\ \hline\hline
+\underline{usg} & usage: dialect, level of language, etc. & Statement usage note \\ \hline
+dial & dialect &  Form Representation dialect \\ \hline\hline
+\underline{gramGrp} & grammatical information (part of speech, etc.) & Word Form \\ \hline
+pos & part of speech & Lexical Entry part of speech \\ \hline\hline
+\underline{sense} & definitions, keys for inverting the dictionary, example sentences, encyclopedic information, certain semantic categories... & Sense \\ \hline
+def & definition & Definition \\ \hline
+invertedkey & the key under which the definition appears in the English index & Equivalent translation \\ \hline
+sem & semantic class, a limited inventory for certain domains only & Subject Field semantic domain \\ \hline
+eg & illustrative example & Context \\ \hline
+q & citation & Context text representation \\ \hline
+trans / tr & translation & Context text representation \\ \hline\hline
+\underline{xr} & internal and external references & Related Form \\ \hline
+ptr & cross-reference to another entry in the dictionary & Related Form cross reference \\ \hline
+xptr & reference to an external item, in this case a printed document & Lexical Entry bibliography \\ \hline
+wordFamily & a word-family of roots to which the entry belongs & Stem \\ \hline
+\end{longtable}
+\end{center}
+
 \section{A venir}
 
 \begin{itemize}
 \item Mettre \`a jour la DTD, et la convertir en sch\'ema XSD.
-\item Faire ce travail de sp\'ecifications avec les dictionnaires \'electroniques d'autres chercheurs, afin de rendre le mod\`ele propos\'e plus g\'en\'eral.
 \end{itemize}
 
 \end{document}
