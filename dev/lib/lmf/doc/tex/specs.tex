@@ -212,7 +212,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & \multirow{6}{2cm}{Definition} & definition & ``This is the lexeme definition'' & \href{http://www.isocat.org/datcat/DC-1972}{1972} open & dv, de, dn, dr, df & \\ \cmidrule{3-7}
 & & gloss & ``\scshape{GLOSS}'' & \href{http://www.isocat.org/datcat/DC-244}{244} open & gv, ge, gn, gr, gf & \\ \cmidrule{3-7}
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; language used for definition and gloss \\ \cmidrule{3-7}
-& & literally & ``'au pied de la lettre' & \href{http://www.isocat.org/datcat/DC-3721}{3721} open & lt & \\ \cmidrule{3-7}
+& & literally & 'au pied de la lettre' & \href{http://www.isocat.org/datcat/DC-3721}{3721} open & lt & \\ \cmidrule{3-7}
 & & text representation & Text Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{3-7}
 & & statement & Statement & N/A & N/A & \\ \cmidrule{2-7}
 % Statement
@@ -691,11 +691,216 @@ dt & Lexical Entry date \\ \hline
 
 \lstinputlisting[caption=Japhug example]{../xml/japhug_example.xml}
 
+\pagebreak
+
+\subsection{Mwotlap, Araki, Lo, Teanu}
+
+Dans les dictionnaires d'Alexandre François, des marqueurs spécifiques ont été utilisés. En voici une liste, ainsi que les équivalences proposées en LMF.
+
+\begin{center}
+\begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
+\caption[]{Mowtlap dictionary: matching between MDF and LMF} \\ \hline
+\endfirsthead
+\caption[]{(continued)} \\
+\endhead
+\endfoot
+\endlastfoot
+\textbf{MDF} & \textbf{Purpose} & \textbf{LMF} \\ \hline
+wr & \textit{word reference} pour avoir plusieurs ‘ps’ différents dans la même entrée ‘lx’, à ne pas confondre avec les sous-entrées & plusieurs \textit{Lexical Entry} \\ \hline
+we & détourné pour restriction syntaxique : contexte syntaxique ; notes grammaticales qui spécifient plus précisément le sens en particulier & équivalent : `ov' \\ \hline
+wn & même chose en anglais & équivalent : `oe' \\ \hline
+he & étiquette sémantique pour qualifier le type de relation sémantique : métaphoriquement, sens figuré, etc. & \textit{Related Form semantic relation} : ajouter ``métaphore'' et ``sens figuré'' \\ \hline
+hn & `he' en anglais & `he' uniquement en anglais \\ \hline
+ll & équivalent de `lt' en anglais & Definition literally with language = “eng” \\ \hline
+oe & note sur un exemple & équivalent : `xc' \\ \hline
+on & `oe' en anglais & Text Representation comment with language = “eng” \\ \hline
+ur (regional = bislama) & sujet ou possesseur typique ; pour un sens donné, de quel type de sujet c’est le prédicat & Statement usage note \\ \hline
+se & peut aussi indiquer la forme préfixé du nom & Form variant form : ajouter type = “prefix” \\ \hline
+el & langue de l’étymologie & Statement term source language \\ \hline
+dc & date de création & ajouter \textit{creation date} dans \textit{Lexical Entry} \\ \hline
+la & forme préfixée pour une entrée, comme ‘se’ suivi de `wr' & Form variant form : ajouter type = “prefix” \\ \hline
+lg & légende de la photo & Picture statement with note type = ``legend'' \\ \hline
+ce & glose de `cf' en français & Statement etymology gloss \\ \hline
+u & \textit{underlined form} correspondant à ‘a’, destiné au \textit{parser} & Form Representation spelling variant \\ \hline
+xm & exemple caché & ajouter un type ``exemple caché'' \\ \hline
+rm & référence d’un exemple caché & Context resource reference \\ \hline
+xa & version anglaise d’un exemple caché & Context text representation with language = “eng” \\ \hline
+mr & morpho & Paradigm morphology \\ \hline
+ue & label & fichier de configuration \\ \hline
+un & label en anglais & fichier de configuration \\ \hline
+tb & encadré de liste de mots en français & Table written form with type = ``word list'' and language = ``fra'' (à ajouter) \\ \hline
+ta & équivalent de ‘tb’ en anglais & Table written form with type = ``word list'' and language = ``eng'' (à ajouter) \\ \hline
+tl & encadré en prose & Table written form with type = ``text'' and language = ``fra'' (à ajouter) \\ \hline
+tn & équivalent anglais de ’tl’ & Table written form with type = ``text'' and language = ``eng'' (à ajouter) \\ \hline
+\end{longtable}
+\end{center}
+
+Syntaxe spécifique utilisée :
+\begin{itemize}
+\item ``ax:'' pour un texte en italique : à remplacer par ``fi:''
+\item mini-chevrons pour indiquer l’objet syntaxique : \textit{Statement usage note}
+\end{itemize}
+
+\pagebreak
+
+\subsection{Tamang}
+
+Il s'agit du dictionnaire de Martine Mazaudon, écrit dans Word et basé sur le format LEXWARE. Voici une liste (qui se veut exhaustive) des marqueurs qui ont été utilisés, ainsi que leurs équivalents en MDF ou LMF.
+
+\begin{center}
+\begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
+\caption[]{Tamang dictionary: matching between Word and MDF or LMF} \\ \hline
+\endfirsthead
+\caption[]{(continued)} \\
+\endhead
+\endfoot
+\endlastfoot
+\textbf{Word} & \textbf{Purpose} & \textbf{MDF or LMF} \\ \hline
+hdr & header & Lexicon label \\ \hline
+hw & headword & lx \\ \hline
+...X & si plusieurs sens & sn \\ \hline
+ton & de 0 à 5 ; notés x,x si hésitation & np \\ \hline
+dff & & df \\ \hline
+dfe & & de \\ \hline
+dfn & nepali (langue nationale) & dn \\ \hline
+dfzoo & définition zoologique & sc \\ \hline
+dfbot & définition botanique & sc \\ \hline
+nbbot & remarques sur le champ botanique & Definition statement \\ \hline
+nag & translittération nagari (écriture locale) & Form Representation transliteration with script name = ``nagari'' \\ \hline
+phr & phrase : exemple de phrases incomplètes & Context with type = ``'incomplete' (à ajouter) \\ \hline
+il & illustration : exemple & xv \\ \hline
+ilnep & & xn \\ \hline
+gram & & ng \\ \hline
+rec & enregistrements & sf \\ \hline
+xr & cross-reference & cf \\ \hline
+nb & nota bene & nt \\ \hline
+nbi & `i' pour interne & nq \\ \hline
+emp & langue d’emprunt & bw \\ \hline
+check & note personnelle & status \\ \hline
+sem & champ sémantique & sd \\ \hline
+enc & notes encyclopédiques & ee \\ \hline
+inf & informateurs & rf \\ \hline
+cf & & Related Form with semantic relation = ``simple link'' \\ \hline
+syn & & Related Form with semantic relation = ``synonym'' \\ \hline
+anton & & Related Form with semantic relation = ``synonym'' \\ \hline
+etym & & et \\ \hline
+morph & & Paradigm morphology \\ \hline
+var & & va \\ \hline
+niv & niveau de langue ? & à ajouter ? \\ \hline
+ps & & ps \\ \hline
+so & & so \\ \hline
+cons & ? & \\ \hline
+comp & ? & \\ \hline
+conj & ? & \\ \hline
+stedt & ? & \\ \hline
+\end{longtable}
+\end{center}
+
+Syntaxe spécifique utilisée :
+\begin{itemize}
+\item \textit{old} = \textit{don’t print}
+\item mm = Martine Mazaudon
+\end{itemize}
+
+\pagebreak
+
+\subsection{Limbu}
+
+Il s'agit du dictionnaire de Boyd Michailovsky, préalablement converti de LEXWARE en XML, dont la structure est décrite ci-dessous.
+
+\begin{lstlisting}[caption=Limbu example]
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE DICO
+	SYSTEM "dicoLimbu.dtd">
+
+<DICO>
+	<entry id=“xxx_1”>
+		<form>
+			<pron type="headword|var|pastem|prstem|pa|pask|fem|poss|root|neg|allom" valid=“doubt”>xxx</pron>
+			<note type=''ph|rem|comm|gram|stem'' valid=''doubt''>...</note>
+		</form>
+		<gramGrp>
+			<pos valid=“doubt” class="v|vprefix|vsuffix|preverb|misc”>…</pos>
+			<note/>
+		</gramGrp>
+		<sense>
+			<def type="binom|par” xml:lang=“…” valid=“doubt”>…</def>
+			<invertkey>…</invertkey>
+			<sem>…</sem>
+			<xptr target=“…” valid=“doubt”>...</xptr>
+			<eg type=“hidden”>
+				<q>…</q>
+				<xptr>…</xptr>
+				<link xmlns:xlink=“…” xlink:type=“…” xlink:actuate=“…” xlink:show=“…” xlink:href="…”>…</link>
+				<trans>
+					<tr xml:lang="...”>…</tr>
+				</trans>
+			</eg>
+			<note/>
+		</sense>
+		<xr type=herbier”>
+			<ptr type=“…” target=“yyy_2” valid=“…”>yyy</ptr>
+			<xptr/>
+			<lexx/>
+			<ref valid=“doubt”/>
+			<wordFamily type=“…” family=“…” valid=“doubt”/>
+			<note/>
+		</xr>
+		<usg>
+			<dial>…</dial>
+			<note/>
+		</usg>
+		<hom n="3">
+			<form/>
+			<gramGrp/>
+			<sense/>
+			<xr/>
+			<usg/>
+		</hom>
+	</entry>
+</DICO>
+\end{lstlisting}
+
+Syntaxe spécifique :
+\begin{lstlisting}[caption=Limbu syntax]
+<foreign xml:lang="x-sil-LIF”>…</foreign>
+<family name=“…”>…</family>
+\end{lstlisting}
+
+\begin{center}
+\begin{longtable}{|p{4cm}|p{5cm}|p{6cm}|}
+\caption[]{Limbu dictionary: matching between XML and LMF} \\ \hline
+\endfirsthead
+\caption[]{(continued)} \\
+\endhead
+\endfoot
+\endlastfoot
+\textbf{TEI-based XML} & \textbf{Purpose} & \textbf{LMF} \\ \hline
+entry & main entry & Lexical Entry \\ \hline\hline
+\underline{form} & spoken and morphophonemic forms ; orthography if available & Lemma lexeme, Form Representation, Word Form\\ \hline
+pron & phonological transcription & Form Representation phonetic form \\ \hline\hline
+\underline{usg} & usage: dialect, level of language, etc. & Statement usage note \\ \hline
+dial & dialect &  Form Representation dialect \\ \hline\hline
+\underline{gramGrp} & grammatical information (part of speech, etc.) & Word Form \\ \hline
+pos & part of speech & Lexical Entry part of speech \\ \hline\hline
+\underline{sense} & definitions, keys for inverting the dictionary, example sentences, encyclopedic information, certain semantic categories... & Sense \\ \hline
+def & definition & Definition \\ \hline
+invertedkey & the key under which the definition appears in the English index & Equivalent translation \\ \hline
+sem & semantic class, a limited inventory for certain domains only & Subject Field semantic domain \\ \hline
+eg & illustrative example & Context \\ \hline
+q & citation & Context text representation \\ \hline
+trans / tr & translation & Context text representation \\ \hline\hline
+\underline{xr} & internal and external references & Related Form \\ \hline
+ptr & cross-reference to another entry in the dictionary & Related Form cross reference \\ \hline
+xptr & reference to an external item, in this case a printed document & Lexical Entry bibliography \\ \hline
+wordFamily & a word-family of roots to which the entry belongs & Stem \\ \hline
+\end{longtable}
+\end{center}
+
 \section{A venir}
 
 \begin{itemize}
 \item Mettre \`a jour la DTD, et la convertir en sch\'ema XSD.
-\item Faire ce travail de sp\'ecifications avec les dictionnaires \'electroniques d'autres chercheurs, afin de rendre le mod\`ele propos\'e plus g\'en\'eral.
 \end{itemize}
 
 \end{document}

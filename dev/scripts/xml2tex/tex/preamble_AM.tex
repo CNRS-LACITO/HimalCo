@@ -11,7 +11,7 @@
 \usepackage{multicol}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{1.5cm}
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{CharisSIL}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{DoulosSIL}
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{DoulosSIL}
 \newcommand{\ipa}[1]{{\phon #1}} % API pas en italique
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % pour le chinois
@@ -23,3 +23,9 @@
 \usepackage{vmargin}
 % {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
 \setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{0cm}{0.5cm}{1cm}
+
+\def\mytextsc{\bgroup\obeyspaces\mytextscaux}
+\def\mytextscaux#1{\mytextscauxii #1\relax\relax\egroup}
+\def\mytextscauxii#1{%
+\ifx\relax#1\else \ifcat#1\@sptoken{} \expandafter\expandafter\expandafter\mytextscauxii\else
+\ifnum`#1=\uccode`#1 {\normalsize #1}\else {\footnotesize \uppercase{#1}}\fi \expandafter\expandafter\expandafter\mytextscauxii\expandafter\fi\fi}
