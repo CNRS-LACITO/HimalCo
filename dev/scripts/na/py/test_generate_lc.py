@@ -22,47 +22,75 @@ class TestGenerateLcFunctions(unittest.TestCase):
         self.assertEqual(self.gen.options.input, "./obj/Dictionary_na.xml")
         self.assertEqual(self.gen.options.output, "na/py/Dictionary_na.txt")
 
+    def test_apply_rules(self):
+        self.assertEqual(self.gen.apply_rules((0,), 1, ["L"]), ["M"])
+
+    def test_apply_rule_0(self):
+        self.assertEqual(self.gen.apply_rule_0(1, ["L"]), ["M"])
+
+    def test_apply_rule_1(self):
+        self.assertEqual(self.gen.apply_rule_1(4, ["L", "H"]), ["L", "L", "L", "H"])
+
+    def test_apply_rule_2(self):
+        pass
+
+    def test_apply_rule_3(self):
+        self.assertEqual(self.gen.apply_rule_3(2, ["H", "M"]), ["M", "M"])
+
+    def test_apply_rule_4(self):
+        self.assertEqual(self.gen.apply_rule_4(3, ["M", "H", "H"]), ["M", "H", "L"])
+
+    def test_apply_rule_5(self):
+        self.assertEqual(self.gen.apply_rule_5(3, ["M", "HL", "H"]), ["M", "HL", "L"])
+        self.assertEqual(self.gen.apply_rule_5(3, ["ML", "M", "H"]), ["ML", "L", "L"])
+
+    def test_apply_rule_6(self):
+        self.assertEqual(self.gen.apply_rule_6(3, ["L", "L", "M"]), ["L", "L", "H"])
+
+    def test_apply_rule_7(self):
+        self.assertEqual(self.gen.apply_rule_7(3, ["L", "L", "L"]), ["L", "L", "LH"])
+
     def test_trans_tones(self):
         # Monosyllabic nouns
-        self.assertEqual(self.gen.trans_tones("LM", "n", 1), ["LH"])
-        self.assertEqual(self.gen.trans_tones("LH", "n", 1), ["LH"])
-        self.assertEqual(self.gen.trans_tones("M", "n", 1), ["M"])
-        self.assertEqual(self.gen.trans_tones("L", "n", 1), ["M"])
-        self.assertEqual(self.gen.trans_tones("#H", "n", 1), ["M"])
-        self.assertEqual(self.gen.trans_tones("MH#", "n", 1), ["MH"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["LM"]), ["LH"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["LH"]), ["LH"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["M"]), ["M"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["L"]), ["M"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["H"]), ["M"])
+        self.assertEqual(self.gen.trans_tones("n", 1, ["MH"]), ["MH"])
         # Disyllabic nouns
-        self.assertEqual(self.gen.trans_tones("M", "n", 2), ["M", "M"])
-        self.assertEqual(self.gen.trans_tones("#H", "n", 2), ["M", "M"])
-        self.assertEqual(self.gen.trans_tones("MH#", "n", 2), ["M", "MH"])
-        self.assertEqual(self.gen.trans_tones("H$", "n", 2), ["M", "H"])
-        self.assertEqual(self.gen.trans_tones("H#", "n", 2), ["M", "H"])
-        self.assertEqual(self.gen.trans_tones("L", "n", 2), ["L", "LH"])
-        self.assertEqual(self.gen.trans_tones("L#", "n", 2), ["M", "L"])
-        self.assertEqual(self.gen.trans_tones("LM+MH#", "n", 2), ["L", "MH"])
-        self.assertEqual(self.gen.trans_tones("LM+#H", "n", 2), ["L", "M"])
-        self.assertEqual(self.gen.trans_tones("LM", "n", 2), ["L", "M"])
-        self.assertEqual(self.gen.trans_tones("LH", "n", 2), ["L", "M"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "M"]), ["M", "M"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "#H"]), ["M", "M"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "MH"]), ["M", "MH"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "H$"]), ["M", "H"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "H"]), ["M", "H"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["L", "L"]), ["L", "LH"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["M", "L"]), ["M", "L"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["L", "MH"]), ["L", "MH"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["L", "#H"]), ["L", "M"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["L", "M"]), ["L", "H"])
+        self.assertEqual(self.gen.trans_tones("n", 2, ["L", "H"]), ["L", "H"])
 
     def test_tones_to_analysis(self):
         # Monosyllabic nouns
-        self.assertEqual(self.gen.tones_to_analysis(["LM"], "n"), "LM")
-        self.assertEqual(self.gen.tones_to_analysis(["LH"], "n"), "LH")
-        self.assertEqual(self.gen.tones_to_analysis(["M"], "n"), "M")
-        self.assertEqual(self.gen.tones_to_analysis(["L"], "n"), "L")
-        self.assertEqual(self.gen.tones_to_analysis(["H"], "n"), "#H")
-        self.assertEqual(self.gen.tones_to_analysis(["MH"], "n"), "MH#")
-        self.assertEqual(self.gen.tones_to_analysis(["LM"], "n"), "LM")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["LM"]), "LM")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["LH"]), "LH")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["M"]), "M")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["L"]), "L")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["H"]), "#H")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["MH"]), "MH#")
+        self.assertEqual(self.gen.tones_to_analysis("n", 1, ["LM"]), "LM")
         # Disyllabic nouns
-        self.assertEqual(self.gen.tones_to_analysis(["M", "M"], "n"), "M")
-        self.assertEqual(self.gen.tones_to_analysis(["M", "#H"], "n"), "#H")
-        self.assertEqual(self.gen.tones_to_analysis(["M", "MH"], "n"), "MH#")
-        self.assertEqual(self.gen.tones_to_analysis(["M", "H$"], "n"), "H$")
-        self.assertEqual(self.gen.tones_to_analysis(["M", "H"], "n"), "H#")
-        self.assertEqual(self.gen.tones_to_analysis(["L", "L"], "n"), "L")
-        self.assertEqual(self.gen.tones_to_analysis(["M", "L"], "n"), "L#")
-        self.assertEqual(self.gen.tones_to_analysis(["L", "MH"], "n"), "LM+MH#")
-        self.assertEqual(self.gen.tones_to_analysis(["L", "M"], "n"), "LM")
-        self.assertEqual(self.gen.tones_to_analysis(["L", "H"], "n"), "LH")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "M"]), "M")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "#H"]), "#H")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "MH"]), "MH#")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "H$"]), "H$")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "H"]), "H#")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["L", "L"]), "L")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["M", "L"]), "L#")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["L", "MH"]), "LM+MH#")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["L", "M"]), "LM")
+        self.assertEqual(self.gen.tones_to_analysis("n", 2, ["L", "H"]), "LH")
 
     def test_lx_to_lc(self):
         # Monosyllabic nouns
@@ -91,10 +119,10 @@ class TestGenerateLcFunctions(unittest.TestCase):
         self.assertEqual(self.gen.lx_to_lc("õ˩dv˧˥", "n"), "õ˩dv˧˥")
         self.assertEqual(self.gen.lx_to_lc("σ˩ σ#˥", "n"), "σ˩ σ˧")
         self.assertEqual(self.gen.lx_to_lc("nɑ˩hĩ#˥", "n"), "nɑ˩hĩ˧")
-        self.assertEqual(self.gen.lx_to_lc("σ˩ σ˧", "n"), "σ˩ σ˧")
-        self.assertEqual(self.gen.lx_to_lc("bo˩mi˧", "n"), "bo˩mi˧")
-        self.assertEqual(self.gen.lx_to_lc("σ˩ σ˥", "n"), "σ˩ σ˧")
-        self.assertEqual(self.gen.lx_to_lc("bo˩ɬɑ˥", "n"), "bo˩ɬɑ˧")
+        self.assertEqual(self.gen.lx_to_lc("σ˩ σ˧", "n"), "σ˩ σ˥")
+        self.assertEqual(self.gen.lx_to_lc("bo˩mi˧", "n"), "bo˩mi˥")
+        self.assertEqual(self.gen.lx_to_lc("σ˩ σ˥", "n"), "σ˩ σ˥")
+        self.assertEqual(self.gen.lx_to_lc("bo˩ɬɑ˥", "n"), "bo˩ɬɑ˥")
         # Checked with Alexis
         # Dictionary_na.txt
         self.assertEqual(self.gen.lx_to_lc("dze˩mi˧-kʰv˩", "n"), "dze˩mi˧-kʰv˩") # not "dze˩mi˧-kʰv˧"
