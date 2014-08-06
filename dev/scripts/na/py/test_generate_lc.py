@@ -95,6 +95,19 @@ class TestGenerateLcFunctions(unittest.TestCase):
         self.assertEqual(self.gen.lx_to_lc("bo˩mi˧", "n"), "bo˩mi˧")
         self.assertEqual(self.gen.lx_to_lc("σ˩ σ˥", "n"), "σ˩ σ˧")
         self.assertEqual(self.gen.lx_to_lc("bo˩ɬɑ˥", "n"), "bo˩ɬɑ˧")
+        # Checked with Alexis
+        # Dictionary_na.txt
+        self.assertEqual(self.gen.lx_to_lc("dze˩mi˧-kʰv˩", "n"), "dze˩mi˧-kʰv˩") # not "dze˩mi˧-kʰv˧"
+        self.assertEqual(self.gen.lx_to_lc("dʑɯ˩-æ˩tsɯ˧", "n"), "dʑɯ˩-æ˩tsɯ˧") # not "dʑɯ˧-æ˩tsɯ˧"
+        self.assertEqual(self.gen.lx_to_lc("dʑɯ˩pɤ˩-kv˧hĩ˩", "n"), "dʑɯ˩pɤ˩-kv˧hĩ˩") # not "dʑɯ˩pɤ˩˥-kv˧hĩ˩"
+        self.assertEqual(self.gen.lx_to_lc("dʑɯ˩ʁo˩-hwɤ˩li˧", "n"), "dʑɯ˩ʁo˩-hwɤ˩li˧") # not "dʑɯ˩ʁo˩˥-hwɤ˩li˧"
+        self.assertEqual(self.gen.lx_to_lc("ə˧ɲi˥-tsæ˩qæ˩", "n"), "ə˧ɲi˥-tsæ˩qæ˩") # not "ə˧ɲi˥-tsæ˩qæ˩˥"
+        self.assertEqual(self.gen.lx_to_lc("ɣɯ˩-nɑ˧mi˩", "n"), "ɣɯ˩-nɑ˧mi˩") # not "ɣɯ˧-nɑ˧mi˩"
+        self.assertEqual(self.gen.lx_to_lc("jɤ˩jo˧-bv#˥", "n"), "jɤ˩jo˧-bv˧") # OK
+        # tone_errors.txt
+        self.assertEqual(self.gen.lx_to_lc("lo˩qʰwɤ˧-kʰɯ˧ʑi˧˥", "n"), "lo˩qʰwɤ˧-kʰɯ˧ʑi˧˥") # LM+MH# => LM°MH#
+        self.assertEqual(self.gen.lx_to_lc("lo˧ʂv˩-hi˩-nɑ˧mi˧", "n"), "lo˧ʂv˩-hi˩-nɑ˧mi˧")
+        self.assertEqual(self.gen.lx_to_lc("ɬo˩tsʰe˩mæ˥", "n"), "ɬo˩tsʰe˩mæ˧")
 
     def test_dissect(self):
         pass
