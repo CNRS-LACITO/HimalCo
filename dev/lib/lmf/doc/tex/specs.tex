@@ -38,8 +38,8 @@ Le mod\`ele LMF est divis\'e en deux grandes parties : ce qu'ils appellent le \t
 \pagebreak % Core Package
 Le \textit{core package} est divis\'e en deux sous-syst\`emes~:
 \begin{itemize}
-\item l'entr\'ee lexicale et ses diff\'erentes formes (signifiant) ;
-\item le ou les sens (signifi\'e).
+\item l'entr\'ee lexicale, \textit{Lexical Entry}, et ses diff\'erentes formes, \textit{Form} (signifiant) ;
+\item le ou les sens, \textit{Sense} (signifi\'e).
 \end{itemize}
 
 \begin{figure}[h]
@@ -63,7 +63,7 @@ Les syst\`emes p\'eriph\'eriques (extensions) sont souples, optionnels, mais pui
 \nopagebreak
 \begin{figure}[h]
 \centerline{\fbox{\includegraphics[width=14cm]{../uml/export/ClassDiagramMRD.png}}}
-\caption{MRD}
+\caption{MRD (Machine Readable Dictionary)}
 \end{figure}
 
 \pagebreak % created extensions
@@ -150,7 +150,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & bibliographic citation & ``Online dictionaries, CNRS, 2014” & \href{http://www.isocat.org/datcat/DC-6137}{6137} open & - & \\ \cmidrule{3-7}
 & & character encoding & ``UTF-8” & \href{http://www.isocat.org/datcat/DC-2564}{2564} open & - & \\ \cmidrule{3-7}
 % Lexicon
-& \multirow{7}{2cm}{Lexicon (no subclass)} & id & ``na?'' & \href{http://www.isocat.org/datcat/DC-1845}{1845} open & - & identifier is an XML attribute \\ \cmidrule{3-7}
+& \multirow{7}{2cm}{Lexicon (no subclass)} & id & ``na?'' & \href{http://www.isocat.org/datcat/DC-1845}{1845} open & - & identifier is an XML attribute (not necessarily unique) \\ \cmidrule{3-7}
 & & label & ``Na online dictionary'' & \href{http://www.isocat.org/datcat/DC-1857}{1857} open & - & \\ \cmidrule{3-7}
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; vernacular language \\ \cmidrule{3-7}
 & & language script & ``latn'' & \href{http://www.isocat.org/datcat/DC-2485}{2485} open & - & ISO 15924 \\ \cmidrule{3-7}
@@ -167,7 +167,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & homonym number & ``1'' & \href{http://www.isocat.org/datcat/DC-3714}{3714} open & hm & ``0'' if no homonym \\ \cmidrule{3-7}
 & & bibliography & ``212'' & \href{http://www.isocat.org/datcat/DC-3687}{3687} open & bb & \\ \cmidrule{3-7}
 & & independent word & yes, no & \href{http://www.isocat.org/datcat/DC-5285}{5285} closed & & \\ \cmidrule{3-7}
-& & resource & Audio & N/A & N/A & \\ \cmidrule{3-7}
+& & resource & Resource & N/A & N/A & Speaker, Audio, Picture, Video \\ \cmidrule{3-7}
 & & form & Form Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{3-7}
 & & sense & Sense & N/A & N/A & \\ \cmidrule{3-7}
 & & word form & Word Form & N/A & N/A & \\ \cmidrule{3-7}
@@ -190,8 +190,8 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; language used for variant comment \\ \cmidrule{3-7}
 & & trans\-li\-te\-ra\-tion & ``readable characters'' & \href{http://www.isocat.org/datcat/DC-1848}{1848} open & ph & \\ \cmidrule{3-7}
 & & script name & ``Latin'' & \href{http://www.isocat.org/datcat/DC-3809}{3809} open & - & script used for romanization \\ \cmidrule{3-7}
-& & resource & Speaker & N/A & N/A & \\ \cmidrule{3-7}
-& & sound & Audio & N/A & N/A & \\ \cmidrule{2-7}
+& & resource & Resource & N/A & N/A & Speaker, Video, Picture \\ \cmidrule{3-7}
+& & sound & Resource & N/A & N/A & Audio \\ \cmidrule{2-7}
 % Representation
 & \multirow{3}{2cm}{Re\-pre\-sen\-ta\-tion (abstract class)} & written form & ``...'' & \href{http://www.isocat.org/datcat/DC-1836}{1836} open & xv, xe, xn, xr, xf & example \\ \cmidrule{3-7}
 & & language & ``fra'', ``eng'' & \href{http://www.isocat.org/datcat/DC-2482}{2482} constrained & - & ISO 639 ; language used for variant comment \\ \cmidrule{3-7}
@@ -199,7 +199,7 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 % Text Representation
 & \multirow{1}{2cm}{Text Re\-pre\-sen\-ta\-tion} & font & font family / font weight / font size & \href{http://www.isocat.org/datcat/DC-1650}{1650} closed & & 'font-style', 'font-variant', 'line-height' \\ \cmidrule{2-7}
 % Sense
-& \multirow{9}{2cm}{Sense} & id & ``toto\_1\_1'' & \href{http://www.isocat.org/datcat/DC-1845}{1845} open & - & identifier or key form is an XML attribute \\ \cmidrule{3-7}
+& \multirow{9}{2cm}{Sense} & id & ``toto\_1\_1'' & \href{http://www.isocat.org/datcat/DC-1845}{1845} open & - & identifier or key form is an XML attribute (not necessarily unique) \\ \cmidrule{3-7}
 & & sense number & ``1'' & \href{http://www.isocat.org/datcat/DC-3758}{3758} open & sn & \\ \cmidrule{3-7}
 & & sense & Sense & N/A & N/A & \\ \cmidrule{3-7}
 & & definition & Definition & N/A & N/A & \\ \cmidrule{3-7}
@@ -282,10 +282,11 @@ Dans le tableau ci-dessous, je n'ai list\'e que les attributs de chaque classe, 
 & & text representation & Text Re\-pre\-sen\-ta\-tion & N/A & N/A & \\ \cmidrule{1-7}
 % RESOURCES
 % Resource
-\multirow{19}{2cm}{\textit{Resources}} & \multirow{1}{2cm}{Resource (abstract class)} & author & ``Guillaume Jacques, CRLAO'' & \href{http://www.isocat.org/datcat/DC-6130}{6130} open & - & \\ \cmidrule{2-7}
+\multirow{19}{2cm}{\textit{Resources}} & \multirow{1}{2cm}{Resource (abstract class)} & & & & & \\ \cmidrule{2-7}
 % Material
 & \multirow{2}{2cm}{Material (abstract class)} & media type & unspecified, unknown, audio, video, document, text, image, drawing & \href{http://www.isocat.org/datcat/DC-2570}{2570} closed & & \\ \cmidrule{3-7}
-& & file name & & \href{http://www.isocat.org/datcat/DC-5435}{5435} open & sf, sfx & \\ \cmidrule{2-7}
+& & file name & & \href{http://www.isocat.org/datcat/DC-5435}{5435} open & sf, sfx & \\ \cmidrule{3-7}
+& & author & ``Guillaume Jacques, CRLAO'' & \href{http://www.isocat.org/datcat/DC-6130}{6130} open & - & \\ \cmidrule{2-7}
 % Audio
 & \multirow{7}{2cm}{Audio} & quality & very low, low, normal, good, very good (high) & \href{http://www.isocat.org/datcat/DC-2574}{2574} & sf, sfx \textless quality\textgreater & \\ \cmidrule{3-7}
 & & sound & & \href{http://www.isocat.org/datcat/DC-2250}{2250} open & - & \\ \cmidrule{3-7}
@@ -808,7 +809,7 @@ Syntaxe spécifique utilisée :
 
 Il s'agit du dictionnaire de Boyd Michailovsky, préalablement converti de LEXWARE en XML, dont la structure est décrite ci-dessous.
 
-\begin{lstlisting}[caption=Limbu example]
+\begin{lstlisting}[caption=Limbu XML format]
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE DICO
 	SYSTEM "dicoLimbu.dtd">
@@ -863,7 +864,7 @@ Il s'agit du dictionnaire de Boyd Michailovsky, préalablement converti de LEXWA
 
 Syntaxe spécifique :
 \begin{lstlisting}[caption=Limbu syntax]
-<foreign xml:lang="x-sil-LIF”>…</foreign>
+<foreign xml:lang="lif”>…</foreign>
 <family name=“…”>…</family>
 \end{lstlisting}
 
