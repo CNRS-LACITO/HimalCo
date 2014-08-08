@@ -14,41 +14,6 @@ from common import *
 DEFAULT_INPUT = "./obj/Dictionary_na.xml"
 DEFAULT_OUTPUT = None
 
-mono_noun = dict({
-    "LM" : ["LH"],
-    "LH" : ["LH"],
-    "M" : ["M"],
-    "L" : ["M"],
-    "#H" : ["M"],
-    "MH#" : ["MH"]
-})
-
-di_noun = dict({
-    "M" : ["M", "M"],
-    "#H" : ["M", "M"],
-    "MH#" : ["M", "MH"],
-    "H$" : ["M", "H"],
-    "H#" : ["M", "H"],
-    "L" : ["L", "LH"],
-    "L#" : ["M", "L"],
-    "LM+MH#" : ["L", "MH"],
-    "LM+#H" : ["L", "M"],
-    "LM" : ["L", "M"],
-    "LH" : ["L", "M"]
-})
-
-mono_verb = dict({
-    "Ma" : ["M"],
-    "Mb" : ["M"],
-    "Mc" : ["M"],
-    "H" : ["M"],
-    "La" : ["LH"],
-    "Lb" : ["LH"],
-    "MH" : ["MH"]
-})
-
-adj = mono_verb
-
 class GenerateLc(InOut, XmlFormat):
     def __init__(self):
         XmlFormat.__init__(self)
@@ -67,25 +32,162 @@ class GenerateLc(InOut, XmlFormat):
         if self.options.output is None:
             self.options.output = "na/py/" + self.options.input[self.options.input.rfind('/') + 1:self.options.input.rfind('.')] + ".txt"
 
-    def trans_tones(self, analysis, ps, syllables_nb):
+    def mono_noun(self, tones):
+        """Get rules to apply.
+        """
+        rules = None,
+        if tones == ["LM"]:
+            rules = 6,
+        elif tones == ["L"]:
+            rules = 0,
+        elif tones == ["H"]:
+            rules = 3,
+        return rules
+
+    def di_noun(self, tones):
+        """Get rules to apply.
+        """
+        rules = None,
+        if tones == ["M", "M"]:
+            rules = 2,
+        elif tones == ["M", "#H"]:
+            rules = 10, 2
+        elif tones == ["M", "MH"]:
+            rules = 2,
+        elif tones == ["M", "H$"]:
+            rules = 10, 2
+        elif tones == ["M", "H"]:
+            rules = 2,
+        elif tones == ["L", "L"]:
+            rules = 1, 7
+        elif tones == ["M", "L"]:
+            rules = 2,
+        elif tones == ["L", "#H"]:
+            rules = 10,
+        elif tones == ["L", "M"]:
+            rules = 6,
+        return rules
+
+    def mono_verb(self, tones):
+        """Get rules to apply.
+        """
+        rules = None,
+        if tones == ["H"]:
+            rules = 3,
+        elif tones == ["L"]:
+            rules = 7,
+        return rules
+
+    def adj(self, tones):
+        """Get rules to apply.
+        """
+        return self.mono_verb(tones)
+
+    def apply_rules(self, rules, syllables_nb, tones):
+        """Call each rule in order.
+        """
+        for rule in rules:
+            if rule is not None:
+                tones = getattr(self, "apply_rule_" + str(rule))(syllables_nb, tones)
+        return tones
+
+    def apply_rule_0(self, syllables_nb, tones):
+        """Exception.
+        """
+        if tones == ["L"]:
+            tones[0] = "M"
+        return tones
+
+    def apply_rule_1(self, syllables_nb, tones):
+        """Rule 1: L tone spreads progressively (‘left-to-right’) onto syllables that are unspecified for tone.
+        """
+        if syllables_nb > len(tones) and tones[0] == "L":
+            new_tones = []
+            for i in range (0, syllables_nb - len(tones) + 1):
+                new_tones.append("L")
+            for i in range (syllables_nb - len(tones) + 1, syllables_nb):
+                new_tones.append(tones[i - syllables_nb + len(tones)])
+            return new_tones
+        return tones
+
+    def apply_rule_2(self, syllables_nb, tones):
+        """Rule 2: Syllables that remain unspecified for tone after the application of Rule 1 receive M tone.
+        """
+        return tones
+
+    def apply_rule_3(self, syllables_nb, tones):
+        """Rule 3: In tone-group-initial position, H and M are neutralized to M.
+        """
+        if tones[0] == "H":
+            tones[0] = "M"
+        return tones
+
+    def apply_rule_4(self, syllables_nb, tones):
+        """Rule 4: A syllable following a H-tone syllable receives L tone.
+        """
+        for i in range (0, len(tones) - 1):
+            if tones[i] == "H":
+                tones[i+1] = "L"
+        return tones
+
+    def apply_rule_5(self, syllables_nb, tones):
+        """Rule 5: All syllables following a HL or ML sequence receive L tone.
+        """
+        for i in range (0, len(tones) - 1):
+            if tones[i] == "HL" or tones[i] == "ML":
+                for j in range (i + 1, len(tones)):
+                    tones[j] = "L"
+                break
+        return tones
+
+    def apply_rule_6(self, syllables_nb, tones):
+        """Rule 6: In tone-group-final position, H and M are neutralized to H if they follow a L tone.
+        """
+        if tones[-1] == "LM":
+            tones[-1] = "LH"
+        if len(tones) > 1:
+            if tones[-2] == "L" and tones[-1] == "M":
+                tones[-1] = "H"
+        return tones
+
+    def apply_rule_7(self, syllables_nb, tones):
+        """Rule 7: If a tone group only contains L tones, a post-lexical H tone is added to its last syllable.
+        """
+        L = True
+        for i in range (0, len(tones)):
+            if tones[i] != "L":
+                L = False
+        if L:
+            tones[-1] += "H"
+        return tones
+    
+    def apply_rule_10(self, syllables_nb, tones):
+        """Final #H => M, H$ => H.
+        """
+        if tones[-1] == "#H":
+            tones[-1] = "M"
+        elif tones[-1] == "H$":
+            tones[-1] = "H"
+        return tones
+
+    def trans_tones(self, ps, syllables_nb, tones):
         """Depending on 'ps' and number of syllables, get 'lc' tones.
         """
         if ps == "n":
             if syllables_nb == 1:
-                return mono_noun[analysis]
+                tones = self.apply_rules(self.mono_noun(tones), syllables_nb, tones)
             elif syllables_nb == 2:
-                return di_noun[analysis]
+                tones = self.apply_rules(self.di_noun(tones), syllables_nb, tones)
         elif ps == "v" and syllables_nb == 1:
-            return mono_verb[analysis]
+            tones = self.apply_rules(self.mono_verb(tones), syllables_nb, tones)
         elif ps == "adj":
-            return adj[analysis]
-        return None
+            tones = self.apply_rules(self.adj(tones), syllables_nb, tones)
+        return tones
 
-    def tones_to_analysis(self, tones, ps):
+    def tones_to_analysis(self, ps, syllables_nb, tones):
         """Depending on 'ps' and number of syllables, map tones in list (one per syllable) into an analysis string.
         """
         analysis = None
-        syllables_nb = len(tones)
         if ps == "n":
             # Monosyllabic nouns
             if syllables_nb == 1:
@@ -156,14 +258,14 @@ class GenerateLc(InOut, XmlFormat):
             lc_segment = ''
             syllables, tones = self.dissect(lx_segment)
             syllables_nb = len(syllables)
-            analysis = self.tones_to_analysis(tones, ps)
+            analysis = self.tones_to_analysis(ps, syllables_nb, tones)
             if analysis is None:
                 return None
             # Reconstitute analysis from segments
             if full_analysis != '':
                 full_analysis += u"°"
             full_analysis += analysis
-            lc_tones = self.trans_tones(analysis, ps, syllables_nb)
+            lc_tones = self.trans_tones(ps, syllables_nb, tones)
             if lc_tones is None:
                 return None
             for i in range (0, syllables_nb):
