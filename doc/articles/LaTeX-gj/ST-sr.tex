@@ -1,0 +1,114 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{tangutex4} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{newicktree}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+\renewcommand \thesection {\arabic{section}.}
+\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}.}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+\newcommand{\ra}{$\Sigma$} 
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+
+
+\title{On the cluster *sr-- in Sino-Tibetan\footnote{Old Chinese follows XXX, Tibetan is transcribed according to \citet{jacques12transcription}.}}
+\author{Guillaume Jacques}
+\maketitle
+
+\section{Introduction}
+
+\citet{benedict72} proposed three series of correspondences involving the Middle Chinese \zh{生} shēng initial consonant \ipa{ʂ} (from Old Chinese *\ipa{sr--}), illustrated in Table \ref{tab:sr.chinese}.
+
+\begin{table}[H]
+\caption{Correspondence of Chinese \zh{生} shēng initial *sr-- in Tibetan} \label{tab:sr.chinese}
+\begin{tabular}{lllll}
+\toprule
+Correspondence & Tibetan & Meaning & Chinese & Meaning \\
+\midrule
+(1) \ipa{ɕ} :: *\ipa{sr} & \ipa{ɕig} & louse & \zh{蝨} *srik $\rightarrow$ \ipa{ʂit} & louse \\
+(2) \ipa{sr} :: *\ipa{sr} & \ipa{sriŋ.mo} & sister & \zh{甥} *sreŋ $\rightarrow$ \ipa{ʂæŋ} & sister's son \\
+(3) \ipa{s} :: *\ipa{sr} & \ipa{gsod, bsad} & kill & \zh{殺} *srat $\rightarrow$ \ipa{ʂæt} & kill \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The only attempt to explain  correspondences (2) and (3) is \citet[25]{handel02r}'s theory, who proposed a phonological solution, according to which original PST *\ipa{sr} changed to s in TB before non-front vowels. 
+
+Before discussing 
+\citet{jacques12internal}
+
+\ipa{ɴtɕʰags}, \ipa{bɕags} `confess' \zh{色} *srək $\rightarrow$ \ipa{ʂik} `colour, shame'
+%\citet{coblin86handlist}
+
+
+
+
+
+\citet[40,80]{licoblin87}
+
+
+\begin{exe}
+\ex
+\gll
+\ipa{'dï-ltar} 	\ipa{bod} 	\ipa{rgʲa} 	\ipa{gɲïs} 	\ipa{kʲï} 	\ipa{rdʑe} \ipa{blon-gʲis} 	\ipa{kʰa.tɕïg} 	\ipa{bɕags} 	\ipa{mnaɦ} 	\ipa{bor-te} \\
+this-like Tibet China two \textsc{gen} sovereign minister-\textsc{erg} together \textsc{pst}:declare oath \textsc{pst}:throw-\textsc{conv} \\
+\glt Thus the sovereigns and the ministers of both Tibet and China together declared and swore an oath. (Sino-Tibetan Treaty, West face, l. 71-72)
+\end{exe}
+
+\zh{稽告} `make known, explain, declare' 
+
+\citet{matisoff03}
+
+
+
+\ipa{sro.ma}  \ipa{ndʑrɯ}
+
+\ipa{srid} = \zh{率} ʂwit
+
+
+
+the word for `root'. In Rgyalrong, it is attested in Japhug as the possessed noun \ipa{tɤ-zrɤm} `root' (Situ \ipa{--srám}, Zbu \ipa{rzám} from proto-Rgyalrong *\ipa{srɐm}, see \citealt[243]{jacques04these}). Japhug has a variant \ipa{--srɤm} `family root' which is borrowed from Situ. Voicing of \textit{s--} in Japhug in this cluster and metathesis in Zbu is regular.
+
+In Kiranti, we find a root *sam attested by Khaling \ipa{sɛ̄m}, Yakkha  \ipa{sam}, Kulung \ipa{sam} (\citealt{kongren07yakkha}, \citealt{tolsma06kulung}). The simple initial *s-- in Kiranti can correspond to proto-Rgyalrong *sr--, as in the word for `louse' (Japhug \ipa{zrɯɣ} $\leftarrow$ *srik, Kulung \ipa{si}).
+
+A search in STEDT reveals no similar form in any other Trans-Himalayan language; thus, it could appear to be a potential common innovation vindicating a Rgyalrong-Kiranti clade. However, this word is phonologically comparable with Chinese \zh{參} shēn (Middle Chinese \ipa{ʂim}, Old Chinese *srəm). The character  \zh{參} has several readings, but Middle Chinese \ipa{ʂim} is associated with two meanings: one of the 28 constellations, and rhizomous medicinal plants such as Ginseng (still called in modern Chinese \zh{人參}). The earliest attestation of the use of \zh{參} \ipa{ʂim} for a medicinal plant go back to the Western Han dynasty, and some scholars have argued for an earlier date (for instance \citealt{xu11shen}, \citealt{sun92renshen}). Old Chinese *srəm is a perfect match for proto-Rgyalrongic *srɐm and proto-Kiranti *sam. The initial *sr-- to proto-Rgyalrong *sr-- is also attested in words such as `louse' (\zh{蝨} *srik, Japhug \ipa{zrɯɣ}) and ` shame' (\zh{色} *srək, Japhug \ipa{--zraʁ}
+
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
