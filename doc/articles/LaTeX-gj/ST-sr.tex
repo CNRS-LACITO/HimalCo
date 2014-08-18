@@ -3,9 +3,6 @@
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
-\usepackage{longtable}
-\usepackage{tangutex2} 
-\usepackage{tangutex4} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -36,6 +33,7 @@
 \newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
 \newcommand{\wav}[1]{#1.wav}
 \newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+\newcommand{\archaic}[4]{\zh{#1} *\ipa{#2} $\rightarrow$ \ipa{#3} `#4'}
 \newcommand{\ra}{$\Sigma$} 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
@@ -44,23 +42,30 @@
 \begin{document} 
 
 
-\title{On the cluster *sr-- in Sino-Tibetan\footnote{Old Chinese follows \citealt{bs14oc}, Tibetan is transcribed according to \citet{jacques12transcription}.\footnote{Acknowledgements %Nathan Hill, Wolfgang Behr
-}}}
+\title{On the cluster *sr-- in Sino-Tibetan\footnote{Old Chinese follows \citealt{bs14oc}'s system, Middle Chinese is in an API transcription based on \citet{baxter92}, and Tibetan is transcribed according to \citet{jacques12transcription}.} %Nathan Hill, Wolfgang Behr
+}
 \author{Guillaume Jacques}
 \maketitle
 
+
+\textbf{Abstract}: This paper presents a critical overview of previously proposed etymologies involving the initial cluster *\ipa{sr--} between Chinese and other Sino-Tibetan languages. It puts forth one new etymology, which confirms the simplification of the cluster *\ipa{sr--} to \ipa{s--} in Kiranti and the preservation of this cluster in Rgyalrong languages.
+
+
+\textbf{Keywords}: Kiranti, Rgyalrong, Japhug, Tibetan, clusters
+
+
 \section{Introduction}
 
-The Middle Chinese \zh{生} shēng initial consonant \ipa{ʂ}, which originates from Old Chinese *\ipa{sr--} in all modern systems of reconstruction, is attested in a words of Sino-Tibetan origin, and corresponds to onsets either preserving a fricative+/r/cluster or originating from one. Thus, *sr appears to be  one of the few consonant clusters uncontroversially reconstructible to proto-Sino-Tibetan. 
+The Middle Chinese \zh{生} shēng initial consonant \ipa{ʂ}, which originates from Old Chinese *\ipa{sr--} in all modern systems of reconstruction, is attested in a words of Sino-Tibetan origin, and corresponds to onsets either preserving a fricative+/r/cluster or originating from one. Thus, *\ipa{sr} appears to be  one of the few consonant clusters uncontroversially reconstructible to proto-Sino-Tibetan. 
 
-In this paper, we first discuss previously proposed etymologies, and present the known correspondences of *sr in languages other than Chinese. Second, we present a new etymology and discuss its significance for the conditioning of the sound laws in individual languages.
+In this paper, we first discuss previously proposed etymologies, and present the known correspondences of *\ipa{sr} in languages other than Chinese. Second, we present a new etymology and discuss its significance for the conditioning of the sound laws in individual languages.
 
 \section{Previous comparisons} \label{sec:previous}
 Only three Chinese words with initial *\ipa{sr-} correspond to forms that are widespread in the rest of the family and can be solidly reconstructed with initial *\ipa{sr--} clusters.  They were first proposed by \citet{benedict72}.
 
-The first such etymon is the word for `louse' \zh{蝨} *\ipa{srik} $\rightarrow$ \ipa{ʂit}, which can be compared to Tibetan \ipa{ɕig}, Burmese \ipa{hrac}, Japhug \ipa{zrɯɣ} and Limbu \ipa{siʔ}. All words in this cognate set share the same meaning, and there is little doubt that they are related.
+The first such etymon is the word \archaic{蝨}{srik}{ʂit}{louse}, which can be compared to Tibetan \ipa{ɕig}, Burmese \ipa{hrac}, Japhug \ipa{zrɯɣ} and Limbu \ipa{siʔ}. All words in this cognate set share the same meaning, and there is little doubt that they are related.
 
-The second comparison is Chinese \zh{色} *\ipa{srək} $\rightarrow$ \ipa{ʂik} `colour, sex, shame', which is compared to Tibetan \ipa{ɴtɕʰags}, \ipa{bɕags} `confess', Burmese \ipa{hrak} `shame', Japhug \ipa{tɤ-zraʁ} `shame'. This comparison is however less convincing from the point of view of semantics, and in the case of Tibetan, philology suggests that the meaning `confess' is secondary, and evolved from `declare', the meaning attested in its oldests attestation, the bilingual Sino-Tibetan treaty incription (example \ref{ex:bshags}, \citealt[40,80]{licoblin87}), where 	\ipa{bɕags} corresponds to Chinese \zh{稽告} `make known, explain, declare'.
+The second comparison is Chinese \archaic{色}{srək}{ʂik}{colour, sex, shame}, which is compared to Tibetan \ipa{ɴtɕʰags}, \ipa{bɕags} `confess', Burmese \ipa{hrak} `shame', Japhug \ipa{tɤ-zraʁ} `shame'. This comparison is however less convincing from the point of view of semantics, and in the case of Tibetan, philology suggests that the meaning `confess' is secondary, and evolved from `declare', the meaning attested in its oldests attestation, the bilingual Sino-Tibetan treaty incription (example \ref{ex:bshags}, \citealt[40,80]{licoblin87}), where 	\ipa{bɕags} corresponds to Chinese \zh{稽告} `make known, explain, declare'.
 
 
 \begin{exe}
@@ -71,24 +76,24 @@ this-like Tibet China two \textsc{gen} sovereign minister-\textsc{erg} together 
 \glt Thus the sovereigns and the ministers of both Tibet and China together declared and swore an oath. (Sino-Tibetan Treaty, West face, l. 71-72)
 \end{exe}
 
-The third one is \zh{生} *\ipa{N-sreŋ} $\rightarrow$ \ipa{ʂæŋ} `live, alive', corresponding to Burmese \ipa{hraŋ²} `alive' and other comparanda (see STEDT \#71). This root has no cognate in Tibetan or Rgyalrong languages.
+The third one is \archaic{生}{N-sreŋ}{ʂæŋ}{live, alive}, corresponding to Burmese \ipa{hraŋ²} `alive' and other comparanda (see STEDT \#71). This root has no cognate in Tibetan or Rgyalrong languages.
 
-Other comparisons of Old Chinese \ipa{*sr--} have been proposed by \citet{coblin86handlist} in particular, but they are restricted to Tibetan comparanda, and involve words with the onset \ipa{sr--} in Tibetan. Nearly all such comparisons can be shown to be invalid for various reasons.\footnote{The comparison of Chinese \zh{率} *\ipa{s-rut} $\rightarrow$ \ipa{ʂwit}`rule' to Tibetan \ipa{srid} `government' is problematic for several reasons. The vowel correspondence is not a match (\citealt{gong95st}), and the Chinese verb is obviously related to \zh{律} *\ipa{rut} $\rightarrow$ \ipa{lwit} `law, rule': the \ipa{s--} is here denominal. On the etymology of \zh{律} *\ipa{rut}, see \citet{sagart14lv}.
+Other comparisons of Old Chinese \ipa{*sr--} have been proposed by \citet{coblin86handlist} in particular, but they are restricted to Tibetan comparanda, and involve words with the onset \ipa{sr--} in Tibetan. Nearly all such comparisons can be shown to be invalid for various reasons.\footnote{The comparison of Chinese \archaic{率}{s-rut}{ʂwit}{rule} to Tibetan \ipa{srid} `government' is problematic for several reasons. The vowel correspondence is not a match (\citealt{gong95st}), and the Chinese verb is obviously related to \archaic{律}{rut}{lwit}{law, rule}: the \ipa{s--} is here denominal. On the etymology of \zh{律} *\ipa{rut}, see \citet{sagart14lv}.
 
-The only other comparison, \zh{產} *\ipa{s-ŋrˁarʔ} $\rightarrow$ \ipa{ʂɛn^x} `produce' to Tibetan \ipa{srel} `bring up', which appears possible on the basis of Middle Chinese, is to be ruled out once Old Chinese reconstruction is taken into account.
+The only other comparison, \archaic{產}{s-ŋrˁarʔ}{ʂɛn^x}{produce} to Tibetan \ipa{srel} `bring up', which appears possible on the basis of Middle Chinese, is to be ruled out once Old Chinese reconstruction is taken into account.
 }
-The only promising such correspondence is \zh{甥} *\ipa{srˁeŋ} $\rightarrow$ \ipa{ʂæŋ} `sister's son' with Tibetan \ipa{sriŋ.mo} `sister' (the vowel correspondence is perfectly regular, see \citealt{hill14dempsey}).
+The only promising such correspondence is \archaic{甥}{srˁeŋ}{ʂæŋ}{sister's son} with Tibetan \ipa{sriŋ.mo} `sister' (the vowel correspondence is a consequence of Dempsey's law, see \citealt{hill14dempsey}).
 
 
 
-The double correspondence *\ipa{sr--} to \ipa{sr--} or \ipa{ɕ--} in Tibetan suggests that two proto-onsets must be reconstructed here: *\ipa{sə-r--} with a reduced vowel yielding \ipa{sr--}, while the actual cluster *\ipa{sr--} changes to \ipa{ɕ--}, perhaps through a stage *[\ipa{ʂ}].
+The double correspondence *\ipa{sr--} to \ipa{sr--} or \ipa{ɕ--} in Tibetan suggests that two proto-onsets must be reconstructed here: *\ipa{sə-r--} with a reduced vowel yielding \ipa{sr--}, while the actual cluster *\ipa{sr--} changes to \ipa{ɕ--}, perhaps through a stage *[\ipa{ʂ}].\footnote{Note that the causative \ipa{s--} forms of \ipa{r--} initial verbs in Tibetan is always \ipa{sr--}, never \ipa{ɕ--}.}
 
 
 
-\section{A new example of proto-Trans-Himalayan *\ipa{sr}}
+\section{A new example of proto-Sino-Tibetan *\ipa{sr}}
+All Rgyalrong languages share a common word for `(plant) root' attested by Japhug \ipa{tɤ-zrɤm} `root', Situ \ipa{--srám} and Zbu \ipa{--rzám}. It is an inalienably possessed noun with indefinite possessor prefix \ipa{tɤ--} (on which see \citealt[4-5]{jacques14antipassive}), and can be reconstructed as proto-Rgyalrong *\ipa{srɐm}.
 
-
-The word for `root'. In Rgyalrong, it is attested in Japhug as the possessed noun \ipa{tɤ-zrɤm} `root' (Situ \ipa{--srám}, Zbu \ipa{rzám} from proto-Rgyalrong *\ipa{srɐm}, see \citealt[243]{jacques04these}). This possessed noun does not derive from any verb (see \citealt[3-7]{jacques14antipassive} on the derivation of possessed nouns).
+While some possessed nouns in Rgyalrong languages can derive from verb without any nominalization affix (see \citealt[3-7]{jacques14antipassive}), it is not the case for this noun, as no corresponding verb is found in any Rgyalrongic language.
 
 Japhug has a variant \ipa{--srɤm} which refers to the meaning `root' in a more abstract sense of `family lineage', as illustrated by the following example:
 
@@ -100,34 +105,38 @@ Japhug has a variant \ipa{--srɤm} which refers to the meaning `root' in a more 
 \glt If you cannot bring it here, again, there is only your family and your life (for you to lose).
 \end{exe}
 
-This restricted meaning in a context involving a king and his subjects suggests that \ipa{--srɤm} in Japhug is not inherited: it is borrowed from Situ Rgyalrong, which was the language of the local chieftain (Tusi). Note that most borrowings from Tibetan, such as \ipa{--sroʁ} `life' from \ipa{srog} have \ipa{sr--} in Japhug corresponding to Tibetan \ipa{sr--}, not \ipa{zr--} as in the inherited vocabulary.
+This restricted meaning in a context involving a king and his subjects suggests that \ipa{--srɤm} in Japhug is not inherited: it is borrowed from Situ Rgyalrong, which was the language of the local chieftain (Tusi). Note that  borrowings from Tibetan, such as \ipa{--sroʁ} `life' from \ipa{srog} have \ipa{sr--} in Japhug corresponding to Tibetan \ipa{sr--}, not \ipa{zr--} as in the inherited vocabulary.\footnote{The only potential Tibetan borrowing with  \ipa{zr--} is \ipa{zrɤntɕɯ} `bean' from Tibetan \ipa{sran(.ma)} `bean' (with the native diminutive suffix \ipa{--tɕɯ}), though it cannot be excluded that this word is a cognate between Japhug and Tibetan. }
 
-Apart from this example, voicing of \textit{s--} in Japhug in this cluster and metathesis in Zbu occurs everywhere.
+Apart from this example, voicing of \textit{s--} in Japhug in this cluster and metathesis in Zbu is completely regular.
 
-In Kiranti, we find a root *sam attested by Khaling \ipa{sɛ̄m}, Yakkha  \ipa{sam}, Kulung \ipa{sam} (\citealt{kongren07yakkha}, \citealt{tolsma06kulung}). The simple initial *s-- in Kiranti can correspond to Japhug \ipa{zr--} `louse' (Japhug \ipa{zrɯɣ} vs Kulung \ipa{si}).
+In Kiranti, we find a noun *\ipa{sam} attested by Khaling \ipa{sɛ̄m} `root', Yakkha  \ipa{sam} `root', Kulung \ipa{sam} `root' (\citealt{kongren07yakkha}, \citealt{tolsma06kulung}). The correspondence of Kiranti initial *s--  to Japhug \ipa{zr--} `louse' is the same of that in the noun `louse' (Japhug \ipa{zrɯɣ} vs Kulung \ipa{si}).
 
-A search in STEDT reveals no similar form in any other Sino-Tibetan language. However, this word is phonologically comparable with Chinese \zh{參} \ipa{shēn} (Middle Chinese \ipa{ʂim}, Old Chinese *\ipa{srəm}). The character  \zh{參} has several readings, but Middle Chinese \ipa{ʂim} is associated with two meanings: one of the 28 constellations, and rhizomous medicinal plants such as Ginseng (still called in modern Chinese \zh{人參} \ipa{rénshēn}). The earliest attestation of the use of \zh{參} \ipa{ʂim} for a medicinal plant goes back to the Western Han dynasty, and some scholars have argued for an earlier date (for instance \citealt{xu11shen}, \citealt{sun92renshen}). Old Chinese *\ipa{srəm} is a perfect match for proto-Rgyalrongic *\ipa{srɐm} and proto-Kiranti *\ipa{sam} (as shown by \citealt{gong95st}and \citealt{hill12sixvowels}, Old Chinese *\ipa{ə} regularly corresponds to \ipa{a} in Tibetan and other languages). \citet{bs14oc} reconstruct *\ipa{srum} here, but no evidence either from loanwords or phonetic series rule out the reconstruction *\ipa{srəm}, which is the one adopted by other scholars (\citealt{schuessler06}).
+A search in STEDT reveals no similar form in any other Sino-Tibetan language. However, this word is phonologically comparable with Chinese \zh{參} \ipa{shēn} (Middle Chinese \ipa{ʂim}). The character  \zh{參} has several readings, but Middle Chinese \ipa{ʂim} is associated with two meanings: one of the 28 constellations, and rhizomous medicinal plants such as Ginseng (still called in modern Chinese \zh{人參} \ipa{rénshēn}). The earliest attestation of the use of \zh{參} \ipa{ʂim} for a medicinal plant goes back to the Western Han dynasty, and some scholars have argued for an earlier date (for instance \citealt{xu11shen}, \citealt{sun92renshen}). 
 
+ \citet[75]{bs14oc} reconstruct *\ipa{srum} for this character reading, but no evidence either from loanwords or phonetic series rule out the reconstruction *\ipa{srəm}, which is the one adopted by other scholars (\citealt{schuessler06}). Old Chinese *\ipa{srəm} is a perfect match for proto-Rgyalrong *\ipa{srɐm} and proto-Kiranti *\ipa{sam} (as shown by \citealt{gong95st} and \citealt{hill12sixvowels}, Old Chinese *\ipa{ə} regularly corresponds to \ipa{a} in Tibetan and other languages).
+
+Chinese has innovated the noun \zh{根} *\ipa{[k]ˁə[n]} `root' (possibly as a semantic extension of `trunk' or `stump'), relegating the inherited word \zh{參} *\ipa{srəm} to rhizomous medicinal plants.
 
 \section{Loss of *-r-?}
-In addition to the correspondences seen in section \ref{sec:previous}, comparisons where Chinese *\ipa{sr} corresponds to \ipa{s} in other languages have been proposed (in particular by \citealt{coblin86handlist}). Most of these examples either represent more complex correspondences (\zh{髟} *\ipa{sˁram} $\rightarrow$ \ipa{ʂæm} `hair' corresponds to \ipa{s} in some languages, and to an affricate in others, as in Burmese \ipa{chaṃ³} `hair') or are spurious.\footnote{The comparison of Chinese \zh{雙} *\ipa{sˁroŋ} $\rightarrow$ \ipa{ʂæwŋ} `pair' to Tibetan \ipa{zuŋ} `pair' proposed by Coblin is impossible as Tibetan \ipa{z} originates from pre-Tibetan *\ipa{dz}, see \citet{hill14dz}. }
+In addition to the correspondences seen in section \ref{sec:previous}, comparisons where Chinese *\ipa{sr} corresponds to \ipa{s} in other languages have been proposed (in particular by \citealt{coblin86handlist}). Most of these examples either represent more complex correspondences (\archaic{髟}{srˁam}{ʂæm}{hair} corresponds to \ipa{s} in some languages, and to an affricate in others, as in Burmese \ipa{chaṃ³} `hair') or are spurious.\footnote{The comparison of Chinese coblin86handlist{雙}{srˁoŋ}{ʂæwŋ}{pair} to Tibetan \ipa{zuŋ} `pair' proposed by Coblin is impossible as Tibetan \ipa{z} originates from pre-Tibetan *\ipa{dz}, see \citet{hill14dz}. }
 
 Possible examples of the correspondence *\ipa{sr} : \ipa{s} include the following:
 
 \begin{itemize}
 
-\item  \zh{殺} *\ipa{srat} $\rightarrow$ \ipa{ʂɛt} `kill' with Tibetan \ipa{gsod, bsad} `kill', Japhug \ipa{sat} `kill' etc.
+\item  \archaic{殺}{srat}{ʂɛt}{kill} with Tibetan \ipa{gsod, bsad} `kill', Japhug \ipa{sat} `kill' etc. (on the vocalism of this word in Chinese, see \citealt[214]{bs14oc})
 
-\item \zh{沙} *\ipa{sˁraj} $\rightarrow$ \ipa{ʂæ} `sand'  with Tibetan \ipa{sa} `place' (see \citealt{hill14jrn} concerning the rhyme correspondence).
+\item \archaic{沙}{srˁaj}{ʂæ}{sand}  with Tibetan \ipa{sa} `place' (see \citealt{hill14jrn} concerning the rhyme correspondence).
 
-\item  \zh{欶} *\ipa{sˁrok} $\rightarrow$ \ipa{ʂæwk} `suck, drink' with Burmese \ipa{sok} `drink'. If this comparison is valid, the original meaning probably was `sip, suck', `drink' being a parallel innovation in both languages.
+\item  \archaic{欶}{srˁok}{ʂæwk}{suck, drink} with Burmese \ipa{sok} `drink'. If this comparison is valid, the original meaning probably was `sip, suck', `drink' being a parallel innovation in both languages.
 
 \end{itemize}
 The only attempt to explain the double correspondence of Chinese *\ipa{sr--} to other languages is \citet[25]{handel02r}. According to Handel, original PST *\ipa{sr} changed to s in non-Chinese languages (`Tibeto-Burman') before non-front vowels. This phonological solution has the merit of simplicity, and, if true, provides a common phonological innovation to all languages besides Chinese (the only one that has been explicitly proposed in print apart from the merger of *\ipa{a} and *\ipa{ə}, on which see \citealt{gong95st}, \citealt{handel08st}).
 
 However, examples such as \zh{色} *\ipa{srək} `colour, shame' or \zh{參} *\ipa{srəm} `rhizome' refute Handel's theory, as they show that the conditioning factor that he proposed is not valid.
 
-Since, as proposed by \citet{sagart99roc}, an infix *\ipa{-r-} is reconstructible in Old Chinese, an alternative explanation is to consider Chinese here to be innovative in these three example.In this alternative view, the three examples above represent infixed forms, while the original base forms without infix have been lost. Thus, there is no need to look for a phonological conditioning of this correspondence.
+Since, as proposed by \citet{sagart99roc}(see also \citealt[57-8]{bs14oc}), an infix *\ipa{-r-} is reconstructible in Old Chinese, an alternative explanation is to consider Chinese here to be innovative in these three example.In this alternative view, the three examples above represent infixed forms, while the original base forms without infix have been lost. Thus, there is no need to look for a phonological conditioning of this correspondence.
+
 
 
 \section{Conclusion}
