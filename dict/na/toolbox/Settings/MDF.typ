@@ -164,6 +164,7 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr cl
@@ -300,6 +301,7 @@
 \lng vernacular
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ev
@@ -359,7 +361,6 @@
 \lng English
 \mkrOverThis lx
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr is
@@ -636,6 +637,7 @@
 \+mkr pdf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr pdl
@@ -650,6 +652,7 @@
 \-fnt
 \mkrOverThis pd
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr pdn
@@ -682,6 +685,7 @@
 \lng phonetic
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr pl
@@ -781,6 +785,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr se
@@ -822,7 +827,6 @@
 \lng English
 \mkrOverThis ps
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr so
@@ -831,6 +835,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr st
@@ -912,7 +917,6 @@
 \mkrOverThis sn
 \mkrFollowingThis va
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr ve
@@ -926,6 +930,7 @@
 \+mkr vf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr vn
