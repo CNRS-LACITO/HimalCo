@@ -1,0 +1,116 @@
+\documentclass[xcolor=table]{beamer}
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{booktabs} 
+\usepackage{multicol,multirow}
+\usepackage{color}
+%\usepackage{colortbl}
+\usepackage{graphicx}
+  \setmainfont[Mapping=tex-text]{Charis SIL}
+\let\sfdefault\rmdefault
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\usepackage{epsf}
+   \newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\rouge}[1]{{\color{red}#1}}
+\newcommand{\bleu}[1]{{\color{blue}#1}}
+ \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\begin{document} 
+\begin{frame} 
+
+\title{Hybrid indirect speech in Japhug} 
+
+ \author{Guillaume Jacques, CNRS-CRLAO \\ Anton Antonov, INALCO-CRLAO }
+\maketitle
+ \end{frame} 
+
+ \begin{frame} 
+Hybrid indirect speech \citealt{tournadre08conjunct} and \citealt{aikhenvald08semidirect}
+ 
+   \begin{exe}
+      \frametitle{Pronouns}
+\ex \label{ex:nWGi.kAsWso}
+\gll 
+\ipa{nɤ-wa}  	\ipa{kɯ}  	``\rouge{\ipa{nɤʑo}} 	\bleu{\ipa{nɯɣi}}"  	\ipa{kɤ-sɯso}  	\ipa{kɯ}  	\ipa{kʰa}  	\ipa{ɯ-rkɯ}  	\ipa{ʁmaʁ}  	\ipa{χsɯ-tɤxɯr}  	\ipa{pa-sɯ-lɤt}  	\ipa{ɕti}  	\ipa{tɕe}  \\
+\textsc{2sg.poss}-father \textsc{erg} \rouge{\textsc{2sg}} \bleu{come.back:\textsc{fact}}  \textsc{inf}-think \textsc{erg} house \textsc{3sg.poss}-side soldier three-circle \textsc{pfv:3$\rightarrow$3'-caus}-throw be.\textsc{affirmative}:\textsc{fact} \textsc{lnk}\\
+\glt \textbf{Direct}: Your father, thinking ``\rouge{He} \bleu{is coming back}",   put three circles of soldiers around the house. 
+\glt  \textbf{Indirect}: Your father, thinking that \rouge{you} are coming back,
+ \end{exe}
+  \end{frame} 
+  
+        \begin{frame} 
+      \frametitle{Pronouns}
+      The verb \ipa{sɯso} `think' is transitive, so the absence of ergative marking on \ipa{ɯʑo} `he' shows that this pronoun is the S of the complement clause, not the A of the main verb.
+      
+\begin{exe}
+\ex
+\gll  ``\rouge{\ipa{ɯʑo}}  	\ipa{χsɯ-sŋi}  	\ipa{χsɤ-rʑaʁ}  	\ipa{ma}  	\bleu{\ipa{mɯ-pɯ-rɤʑi-a}}"  	\ipa{ɲɯ-nɯ-sɯsɤm}  	\ipa{pjɤ-ŋu}  \\
+\rouge{\textsc{3sg}} three-day  three-night apart.from \bleu{\textsc{neg-pst.ipfv}-stay-\textsc{1sg}} \textsc{ipfv-auto}-think[III] \textsc{evd.ipfv}-be \\
+\glt    \textbf{Direct}: He was thinking ``\rouge{I} \bleu{have} only \bleu{stayed} for three days and three nights."
+\glt    \textbf{Indirect}: He was thinking that \rouge{he} had only stayed for three days and three nights.
+  \end{exe}
+ \end{frame} 
+ 
+ 
+%  \begin{frame} 
+%\begin{exe}
+%\ex
+%\gll \ipa{tɕe}  	``\rouge{\ipa{tɕhi}}  	\bleu{\ipa{pɯ-sat-a}}"  	\ipa{nɯ}  	\ipa{mɯ-ko-rɤt}  	\ipa{kɯ,}  	``\ipa{tɯtɯrca}  	\ipa{kɯɕnɯz}  	\ipa{pɯ-sat-a.}"  	\ipa{ko-rɤt.}  \\
+%\textsc{lnk} \rouge{what} \bleu{\textsc{pfv}-kill-\textsc{1sg}}  \textsc{dem} \textsc{neg-evd}-write \textsc{erg} together seven \textsc{pfv}-kill-\textsc{1sg} \textsc{neg-evd}-write \\
+%\glt Direct: He did not write \rouge{what} he had killed,  he (just) wrote ``I killed seven (of them)."
+%  \end{exe}
+% \end{frame} 
+ 
+   \begin{frame} 
+   \frametitle{Possessive prefixes}
+\begin{exe}
+\ex
+\gll  \ipa{tɕe}  	\ipa{ta-ʁi}  	\ipa{nɯ}  	\ipa{kɯ}  	``\rouge{\ipa{ɯ-pi}}  	\ipa{ɣɯ}  	\ipa{ɯ-sci}  	\bleu{\ipa{tu-nɤme-a}}  	\ipa{ra}" 	\ipa{ɲɤ-sɯso}  	\ipa{tɕe,}  	\\
+\textsc{lnk}  \textsc{indef.poss}-younger.sibling \textsc{dem} \textsc{erg}  \rouge{\textsc{3sg.poss}-elder.sibling}  \textsc{gen} \textsc{3sg.poss}-revenge \bleu{\textsc{ipfv}-make[III]-\textsc{1sg}} have.to:\textsc{fact} \textsc{evd}-think \textsc{lnk} \\
+\glt  \textbf{Direct}: The (younger) sister thought ``\bleu{I have to get revenge} on \rouge{my brother}".
+\glt  \textbf{Indirect}:  The (younger) sister thought  to get revenge on \rouge{her brother}".
+  \end{exe}
+ \end{frame} 
+ 
+
+    \begin{frame} 
+       \frametitle{Possessive prefixes}
+\begin{exe}
+\ex
+\gll   \ipa{tɤɕime}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{pjɯ-tɯ-mtshɤm}  	\ipa{tɕe,}  	\ipa{nɯnɯ}  \rouge{\ipa{ɯ-kɯmtɕhɯ}}  	\ipa{nɯ}  	\bleu{\ipa{ju-ɣɯt-a}}  	\ipa{ŋu}  		\ipa{ɯ-kɯ-ti}  	\ipa{pjɤ-tu}  	\ipa{ndɤre,}  \\
+girl \textsc{dem} \textsc{erg} \textsc{ipfv-conv:imm}-hear \textsc{lnk} \textsc{dem} \rouge{\textsc{3sg.poss}-toy} \textsc{dem} \bleu{\textsc{ipfv}-bring-\textsc{1sg}}  be:\textsc{fact} \textsc{3sg-nmlz}:S/A-say \textsc{evd.ipfv}-exist \textsc{lnk} \\
+\glt   \textbf{Direct}: A soon as the girl heard it, that there was someone saying ``\bleu{I will bring} \rouge{your toy}".
+\glt   \textbf{Indirect}: there was someone saying that he would bring \rouge{her toy}".
+  \end{exe}
+ \end{frame} 
+
+ 
+     \begin{frame} 
+        \frametitle{Possessive prefixes}
+\begin{exe}
+\ex
+\gll   \rouge{\ipa{a-tʂɯnlɤn}}  	\bleu{\ipa{ɲɯ-nɯ-fsɯɣ-a}}  	\ipa{ɯ-ɲɯ-tɯ-sɯsɤm}  	\ipa{nɤ,}  	\ipa{nɯ}  	\ipa{tɤ-ste}  	\ipa{ti}  \ipa{ɲɯ-ŋu} \\
+ \rouge{\textsc{1sg.poss}-favour} \bleu{\textsc{ipfv-auto}-pay.back-\textsc{1sg}} \textsc{cond-ipfv}-2-think[III] \textsc{lnk} \textsc{dem} \textsc{imp}-do.this.way[III] say:\textsc{fact} \textsc{testim}-be \\
+ \glt    \textbf{Direct}: If you think ``\bleu{I will requite} the \rouge{favour} (which I received from \rouge{you})", do like that.
+\glt    \textbf{Indirect}: If you want to requite the \rouge{favour} (which you received from \rouge{me}), do like that.
+  \end{exe}
+ \end{frame} 
+ 
+ 
+ 
+ 
+ 
+  \begin{frame} 
+
+\bibliographystyle{linquiry2} 
+\bibliography{bibliogj}
+ 
+ \end{frame} 
+\end{document}
