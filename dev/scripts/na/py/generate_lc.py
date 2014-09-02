@@ -86,17 +86,19 @@ class GenerateLc(InOut, XmlFormat):
     def apply_rules(self, rules, syllables_nb, tones):
         """Call each rule in order.
         """
+        new_tones = list(tones)
         for rule in rules:
             if rule is not None:
-                tones = getattr(self, "apply_rule_" + str(rule))(syllables_nb, tones)
-        return tones
+                new_tones = getattr(self, "apply_rule_" + str(rule))(syllables_nb, new_tones)
+        return new_tones
 
     def apply_rule_0(self, syllables_nb, tones):
         """Exception.
         """
+        new_tones = list(tones)
         if tones == ["L"]:
-            tones[0] = "M"
-        return tones
+            new_tones[0] = "M"
+        return new_tones
 
     def apply_rule_1(self, syllables_nb, tones):
         """Rule 1: L tone spreads progressively (‘left-to-right’) onto syllables that are unspecified for tone.
@@ -108,140 +110,166 @@ class GenerateLc(InOut, XmlFormat):
             for i in range (syllables_nb - len(tones) + 1, syllables_nb):
                 new_tones.append(tones[i - syllables_nb + len(tones)])
             return new_tones
-        return tones
+        return list(tones)
 
     def apply_rule_2(self, syllables_nb, tones):
         """Rule 2: Syllables that remain unspecified for tone after the application of Rule 1 receive M tone.
         """
-        return tones
+        # No need to apply this rule because all syllables are marked with a tone.
+        return list(tones)
 
     def apply_rule_3(self, syllables_nb, tones):
         """Rule 3: In tone-group-initial position, H and M are neutralized to M.
         """
+        new_tones = list(tones)
         if tones[0] == "H":
-            tones[0] = "M"
-        return tones
+            new_tones[0] = "M"
+        return new_tones
 
     def apply_rule_4(self, syllables_nb, tones):
         """Rule 4: A syllable following a H-tone syllable receives L tone.
         """
+        new_tones = list(tones)
         for i in range (0, len(tones) - 1):
             if tones[i] == "H":
-                tones[i+1] = "L"
-        return tones
+                new_tones[i+1] = "L"
+        return new_tones
 
     def apply_rule_5(self, syllables_nb, tones):
         """Rule 5: All syllables following a HL or ML sequence receive L tone.
         """
+        new_tones = list(tones)
         for i in range (0, len(tones) - 1):
             if tones[i] == "HL" or tones[i] == "ML":
                 for j in range (i + 1, len(tones)):
-                    tones[j] = "L"
+                    new_tones[j] = "L"
                 break
-        return tones
+        return new_tones
 
     def apply_rule_6(self, syllables_nb, tones):
         """Rule 6: In tone-group-final position, H and M are neutralized to H if they follow a L tone.
         """
+        new_tones = list(tones)
         if tones[-1] == "LM":
-            tones[-1] = "LH"
+            new_tones[-1] = "LH"
         if len(tones) > 1:
             if tones[-2] == "L" and tones[-1] == "M":
-                tones[-1] = "H"
-        return tones
+                new_tones[-1] = "H"
+        return new_tones
 
     def apply_rule_7(self, syllables_nb, tones):
         """Rule 7: If a tone group only contains L tones, a post-lexical H tone is added to its last syllable.
         """
+        new_tones = list(tones)
         L = True
         for i in range (0, len(tones)):
             if tones[i] != "L":
                 L = False
         if L:
-            tones[-1] += "H"
-        return tones
+            new_tones[-1] += "H"
+        return new_tones
     
     def apply_rule_10(self, syllables_nb, tones):
         """Final #H => M, H$ => H.
         """
+        new_tones = list(tones)
         if tones[-1] == "#H":
-            tones[-1] = "M"
+            new_tones[-1] = "M"
         elif tones[-1] == "H$":
-            tones[-1] = "H"
-        return tones
+            new_tones[-1] = "H"
+        return new_tones
 
     def trans_tones(self, ps, syllables_nb, tones):
         """Depending on 'ps' and number of syllables, get 'lc' tones.
         """
+        new_tones = list(tones)
         if ps == "n":
             if syllables_nb == 1:
-                tones = self.apply_rules(self.mono_noun(tones), syllables_nb, tones)
+                new_tones = self.apply_rules(self.mono_noun(tones), syllables_nb, tones)
             elif syllables_nb == 2:
-                tones = self.apply_rules(self.di_noun(tones), syllables_nb, tones)
+                new_tones = self.apply_rules(self.di_noun(tones), syllables_nb, tones)
         elif ps == "v" and syllables_nb == 1:
-            tones = self.apply_rules(self.mono_verb(tones), syllables_nb, tones)
+            new_tones = self.apply_rules(self.mono_verb(tones), syllables_nb, tones)
         elif ps == "adj":
-            tones = self.apply_rules(self.adj(tones), syllables_nb, tones)
-        return tones
+            new_tones = self.apply_rules(self.adj(tones), syllables_nb, tones)
+        # Handle words composed of 3 syllables or more (4 or 5)
+        if syllables_nb > 2:
+            # Apply all rules
+            rule = 1, 2, 3, 4, 5, 6, 7
+            new_tones = self.apply_rules(rule, syllables_nb, tones)
+        return new_tones
 
     def tones_to_analysis(self, ps, syllables_nb, tones):
         """Depending on 'ps' and number of syllables, map tones in list (one per syllable) into an analysis string.
         """
         analysis = None
+        # Handle words composed of 3 syllables or more (4 or 5)
+        if syllables_nb > 2:
+            # Compute analysis from 2 significant syllables (generally the first 2 ones or the last 2 ones)
+            tmp_syllables_nb = 2
+            tmp_tones = []
+            for tone in tones:
+                if tmp_tones == [] or tone != tmp_tones[-1]:
+                    tmp_tones.append(tone)
+            if len(tmp_tones) < tmp_syllables_nb:
+                tmp_tones.append(tmp_tones[0])
+        else:
+            tmp_syllables_nb = syllables_nb
+            tmp_tones = tones
         if ps == "n":
             # Monosyllabic nouns
-            if syllables_nb == 1:
-                if tones == ["H"]:
+            if tmp_syllables_nb == 1:
+                if tmp_tones == ["H"]:
                     analysis = "#H"
-                elif tones == ["MH"]:
+                elif tmp_tones == ["MH"]:
                     analysis = "MH#"
                 else:
-                    analysis = tones[0]
+                    analysis = tmp_tones[0]
             # Disyllabic nouns
-            elif syllables_nb == 2:
-                if tones == ["M", "M"]:
+            elif tmp_syllables_nb == 2:
+                if tmp_tones == ["M", "M"]:
                     analysis = "M"
-                elif tones == ["M", "#H"]:
+                elif tmp_tones == ["M", "#H"]:
                     analysis = "#H"
-                elif tones == ["M", "MH"]:
+                elif tmp_tones == ["M", "MH"]:
                     analysis = "MH#"
-                elif tones == ["M", "H$"]:
+                elif tmp_tones == ["M", "H$"]:
                     analysis = "H$"
-                elif tones == ["M", "H"]:
+                elif tmp_tones == ["M", "H"]:
                     analysis = "H#"
-                elif tones == ["L", "L"]:
+                elif tmp_tones == ["L", "L"]:
                     analysis = "L"
-                elif tones == ["M", "L"]:
+                elif tmp_tones == ["M", "L"]:
                     analysis = "L#"
-                elif tones == ["L", "MH"]:
+                elif tmp_tones == ["L", "MH"]:
                     analysis = "LM+MH#"
-                elif tones == ["L", "#H"]:
+                elif tmp_tones == ["L", "#H"]:
                     analysis = "LM+#H"
-                elif tones == ["L", "M"]:
+                elif tmp_tones == ["L", "M"]:
                     analysis = "LM"
-                elif tones == ["L", "H"]:
+                elif tmp_tones == ["L", "H"]:
                     analysis = "LH"
-        elif ps == "v" and syllables_nb == 1:
+        elif ps == "v" and tmp_syllables_nb == 1:
             # TOLERATE M?
-            if tones == ["M"]:
+            if tmp_tones == ["M"]:
                 analysis = "Ma"
             # TOLERATE L?
-            elif tones == ["L"]:
+            elif tmp_tones == ["L"]:
                 analysis = "La"
             else:
-                analysis = tones[0]
-        elif ps == "adj" and syllables_nb == 1:
+                analysis = tmp_tones[0]
+        elif ps == "adj" and tmp_syllables_nb == 1:
             # TOLERATE M?
-            if tones == ["M"]:
+            if tmp_tones == ["M"]:
                 analysis = "Ma"
             # TOLERATE L?
-            elif tones == ["L"]:
+            elif tmp_tones == ["L"]:
                 analysis = "La"
             # TOLERATE #H?
-            elif tones == ["#H"]:
+            elif tmp_tones == ["#H"]:
                 analysis = "H"
             else:
-                analysis = tones[0]
+                analysis = tmp_tones[0]
         return analysis
 
     def lx_to_lc(self, lx, ps, np=None, codec=True):
@@ -261,11 +289,32 @@ class GenerateLc(InOut, XmlFormat):
             analysis = self.tones_to_analysis(ps, syllables_nb, tones)
             if analysis is None:
                 return None
-            # Reconstitute analysis from segments
-            if full_analysis != '':
-                full_analysis += u"°"
-            full_analysis += analysis
-            lc_tones = self.trans_tones(ps, syllables_nb, tones)
+            if len(lx.split('-')) == 1:
+                full_analysis += analysis
+            else:
+                # Reconstitute analysis from segments
+                if full_analysis == '':
+                    if analysis == "M":
+                        # Use short way of writing tones: M°X => °X
+                        full_analysis += u"°"
+                    else:
+                        full_analysis += analysis
+                else:
+                    if analysis == "M":
+                        # Use short way of writing tones: X°M => X°
+                        if full_analysis[-1] != u"°":
+                            full_analysis += u"°"
+                    else:
+                        if full_analysis[-1] != u"°":
+                            full_analysis += u"°"
+                        full_analysis += analysis
+            # Handle words containing '-' separator
+            if len(lx.split('-')) > 1:
+                # Apply only rule 10
+                rule = 10,
+                lc_tones = self.apply_rules(rule, syllables_nb, tones)
+            else:
+                lc_tones = self.trans_tones(ps, syllables_nb, tones)
             if lc_tones is None:
                 return None
             for i in range (0, syllables_nb):
@@ -303,21 +352,24 @@ class GenerateLc(InOut, XmlFormat):
         if lx is None:
             return syllables, tones
         tones_ipa = "˩˧˥".decode(encoding=CODEC)
-        mono_pattern = "([^" + tones_ipa + "#$]+)(#?[" + tones_ipa + "]{1,2}[$#]?)([abcd123]?)"
         # Monosyllabic
-        pattern = "^" + mono_pattern + "$"
+        current_pattern = "([^" + tones_ipa + "#$]+)(#?[" + tones_ipa + "]{1,2}[$#]?)([abcd123]?)"
+        pattern = "^" + current_pattern + "$"
         if re.search(pattern, lx):
             result = re.match(pattern, lx)
             syllables.append(result.group(1))
             tones.append(self.tone_ipa_to_str(result.group(2) + result.group(3)))
-        # Disyllabic: add a constraint on the second syllab which must have at least 2 characters
-        pattern = "^" + mono_pattern + "([^" + tones_ipa + "#$]{2,})(#?[" + tones_ipa + "]{1,2}[$#]?)([abcd123]?)" + "$"
-        if re.search(pattern, lx):
-            result = re.match(pattern, lx)
-            syllables.append(result.group(1))
-            syllables.append(result.group(4))
-            tones.append(self.tone_ipa_to_str(result.group(2) + result.group(3)))
-            tones.append(self.tone_ipa_to_str(result.group(5) + result.group(6)))
+        # Disyllabic: add a constraint on other syllables which must have at least 2 characters (maximum 5)
+        syllable = "([^" + tones_ipa + "#$]{2,5})(#?[" + tones_ipa + "]{1,2}[$#]?)([abcd123]?)"
+        # Handle words composed of 2, 3, 4, 5 syllables
+        for syllable_nb in range (2, 6):
+            current_pattern += syllable
+            pattern = "^" + current_pattern + "$"
+            if re.search(pattern, lx):
+                result = re.match(pattern, lx)
+                for i in range (0, syllable_nb):
+                    syllables.append(result.group(i*3+1))
+                    tones.append(self.tone_ipa_to_str(result.group(i*3+2) + result.group(i*3+3)))
         return syllables, tones
 
     def tone_str_to_ipa(self, tone):

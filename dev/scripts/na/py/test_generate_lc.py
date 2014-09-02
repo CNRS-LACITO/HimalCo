@@ -135,7 +135,7 @@ class TestGenerateLcFunctions(unittest.TestCase):
         # tone_errors.txt
         self.assertEqual(self.gen.lx_to_lc("lo˩qʰwɤ˧-kʰɯ˧ʑi˧˥", "n"), "lo˩qʰwɤ˧-kʰɯ˧ʑi˧˥") # LM+MH# => LM°MH#
         self.assertEqual(self.gen.lx_to_lc("lo˧ʂv˩-hi˩-nɑ˧mi˧", "n"), "lo˧ʂv˩-hi˩-nɑ˧mi˧")
-        self.assertEqual(self.gen.lx_to_lc("ɬo˩tsʰe˩mæ˥", "n"), "ɬo˩tsʰe˩mæ˧")
+        self.assertEqual(self.gen.lx_to_lc("ɬo˩tsʰe˩mæ˥", "n"), "ɬo˩tsʰe˩mæ˥")
 
     def test_dissect(self):
         pass
