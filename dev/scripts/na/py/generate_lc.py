@@ -293,21 +293,14 @@ class GenerateLc(InOut, XmlFormat):
                 full_analysis += analysis
             else:
                 # Reconstitute analysis from segments
-                if full_analysis == '':
-                    if analysis == "M":
-                        # Use short way of writing tones: M°X => °X
+                if analysis == "M":
+                    # Use short way of writing tones: M°X => °X ; X°M => X°
+                    if full_analysis == '' or full_analysis[-1] != u"°":
                         full_analysis += u"°"
-                    else:
-                        full_analysis += analysis
                 else:
-                    if analysis == "M":
-                        # Use short way of writing tones: X°M => X°
-                        if full_analysis[-1] != u"°":
-                            full_analysis += u"°"
-                    else:
-                        if full_analysis[-1] != u"°":
-                            full_analysis += u"°"
-                        full_analysis += analysis
+                    if full_analysis != '' and full_analysis[-1] != u"°":
+                        full_analysis += u"°"
+                    full_analysis += analysis
             # Handle words containing '-' separator
             if len(lx.split('-')) > 1:
                 # Apply only rule 10
