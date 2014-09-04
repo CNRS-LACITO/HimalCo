@@ -15,14 +15,8 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
-%%%%%%%%%quelques options de style%%%%%%%%
-%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
-%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
-%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
-%\chapterstyle{veelo}
-%\setsecnumdepth{subsubsection}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
  
@@ -42,7 +36,7 @@
 \begin{document} 
 
 
-\title{On the cluster *sr-- in Sino-Tibetan\footnote{Old Chinese follows \citealt{bs14oc}'s system, Middle Chinese is in an API transcription based on \citet{baxter92}, and Tibetan is transcribed according to \citet{jacques12transcription}.} %Nathan Hill, Wolfgang Behr
+\title{On the cluster *sr-- in Sino-Tibetan\footnote{Old Chinese follows \citealt{bs14oc}'s system, Middle Chinese is in an API transcription based on \citet{baxter92}, and Tibetan is transcribed according to \citet{jacques12transcription}.} %Nathan Hill, Wolfgang Behr, Laurent Sagart
 }
 \author{Guillaume Jacques}
 \maketitle
@@ -56,7 +50,7 @@
 
 \section{Introduction}
 
-The Middle Chinese \zh{生} shēng initial consonant \ipa{ʂ}, which originates from Old Chinese *\ipa{sr--} in all modern systems of reconstruction, is attested in a words of Sino-Tibetan origin, and corresponds to onsets either preserving a fricative+/r/cluster or originating from one. Thus, *\ipa{sr} appears to be  one of the few consonant clusters uncontroversially reconstructible to proto-Sino-Tibetan. 
+The Middle Chinese \zh{生} shēng initial consonant \ipa{ʂ}, which originates from Old Chinese *\ipa{sr--} in all modern systems of reconstruction,\footnote{Some reconstruction models, such as that of \citet{bs14oc}, allow more complex clusters such as *\ipa{sNr--} where *N is a nasal with \ipa{ʂ} as outcome in Middle Chinese. However, even in the case of these cluster an intermediate stage *\ipa{sNr--} $\rightarrow$ *\ipa{sr--} $\rightarrow$  \ipa{ʂ--} has to be postulated.} is attested in a words of Sino-Tibetan origin, and corresponds to onsets either preserving a fricative+/r/cluster or originating from one. Thus, *\ipa{sr} appears to be  one of the few consonant clusters uncontroversially reconstructible to proto-Sino-Tibetan. 
 
 In this paper, we first discuss previously proposed etymologies, and present the known correspondences of *\ipa{sr} in languages other than Chinese. Second, we present a new etymology and discuss its significance for the conditioning of the sound laws in individual languages.
 
@@ -113,12 +107,12 @@ In Kiranti, we find a noun *\ipa{sam} attested by Khaling \ipa{sɛ̄m} `root', Y
 
 A search in STEDT reveals no similar form in any other Sino-Tibetan language. However, this word is phonologically comparable with Chinese \zh{參} \ipa{shēn} (Middle Chinese \ipa{ʂim}). The character  \zh{參} has several readings, but Middle Chinese \ipa{ʂim} is associated with two meanings: one of the 28 constellations, and rhizomous medicinal plants such as Ginseng (still called in modern Chinese \zh{人參} \ipa{rénshēn}). The earliest attestation of the use of \zh{參} \ipa{ʂim} for a medicinal plant goes back to the Western Han dynasty, and some scholars have argued for an earlier date (for instance \citealt{xu11shen}, \citealt{sun92renshen}). 
 
- \citet[75]{bs14oc} reconstruct *\ipa{srum} for this character reading, but no evidence either from loanwords or phonetic series rule out the reconstruction *\ipa{srəm}, which is the one adopted by other scholars (\citealt{schuessler06}). Old Chinese *\ipa{srəm} is a perfect match for proto-Rgyalrong *\ipa{srɐm} and proto-Kiranti *\ipa{sam} (as shown by \citealt{gong95st} and \citealt{hill12sixvowels}, Old Chinese *\ipa{ə} regularly corresponds to \ipa{a} in Tibetan and other languages).
+ \citet[75]{bs14oc} reconstruct *\ipa{srum} for this character reading, but no evidence either from loanwords or phonetic series rule out the reconstruction *\ipa{srəm}, which is the one adopted by other scholars (\citealt{schuessler09minimal}). Old Chinese *\ipa{srəm} is a perfect match for proto-Rgyalrong *\ipa{srɐm} and proto-Kiranti *\ipa{sam} (as shown by \citealt{gong95st} and \citealt{hill12sixvowels}, Old Chinese *\ipa{ə} regularly corresponds to \ipa{a} in Tibetan and other languages).
 
 Chinese has innovated the noun \zh{根} *\ipa{[k]ˁə[n]} `root' (possibly as a semantic extension of `trunk' or `stump'), relegating the inherited word \zh{參} *\ipa{srəm} to rhizomous medicinal plants.
 
 \section{Loss of *-r-?}
-In addition to the correspondences seen in section \ref{sec:previous}, comparisons where Chinese *\ipa{sr} corresponds to \ipa{s} in other languages have been proposed (in particular by \citealt{coblin86handlist}). Most of these examples either represent more complex correspondences (\archaic{髟}{srˁam}{ʂæm}{hair} corresponds to \ipa{s} in some languages, and to an affricate in others, as in Burmese \ipa{chaṃ³} `hair') or are spurious.\footnote{The comparison of Chinese coblin86handlist{雙}{srˁoŋ}{ʂæwŋ}{pair} to Tibetan \ipa{zuŋ} `pair' proposed by Coblin is impossible as Tibetan \ipa{z} originates from pre-Tibetan *\ipa{dz}, see \citet{hill14dz}. }
+In addition to the correspondences seen in section \ref{sec:previous}, comparisons where Chinese *\ipa{sr} corresponds to \ipa{s} in other languages have been proposed (in particular by \citealt{coblin86handlist}). Most of these examples either represent more complex correspondences (\archaic{髟}{srˁam}{ʂæm}{hair} corresponds to \ipa{s} in some languages, and to an affricate in others, as in Burmese \ipa{chaṃ³} `hair') or are spurious.\footnote{The comparison of Chinese \archaic{雙}{srˁoŋ}{ʂæwŋ}{pair} to Tibetan \ipa{zuŋ} `pair' proposed by Coblin is impossible as Tibetan \ipa{z} originates from pre-Tibetan *\ipa{dz}, see \citet{hill14dz}. }
 
 Possible examples of the correspondence *\ipa{sr} : \ipa{s} include the following:
 
@@ -137,7 +131,9 @@ However, examples such as \zh{色} *\ipa{srək} `colour, shame' or \zh{參} *\ip
 
 Since, as proposed by \citet{sagart99roc}(see also \citealt[57-8]{bs14oc}), an infix *\ipa{-r-} is reconstructible in Old Chinese, an alternative explanation is to consider Chinese here to be innovative in these three example.In this alternative view, the three examples above represent infixed forms, while the original base forms without infix have been lost. Thus, there is no need to look for a phonological conditioning of this correspondence.
 
+An alternative possibility is that the present models of Old Chinese reconstruction (including \citealt{starostin89}, \citealt{schuessler09minimal} and \citealt{bs14oc}) overestimate the quantity of syllables with medial or prefixed *\ipa{r}-- in Old Chinese by overgeneralization. In all modern systems of reconstruction,  *--\ipa{r}--  is reconstructed for all syllables with either second division rhyme, 	\textit{chongniu} 3 and/or retroflex initials in Middle Chinese. While it has been convincingly demonstrated that clusters in *--\ipa{r}-- is indeed one possible origin for these syllables (\citealt{yakhontov61sochetaniya}), there is no definite proof that  *--\ipa{r}-- should be reconstructed in all cases. 
 
+As a measure of comparison, over 20\% of syllables in Old Chinese as reconstructed by \citet{bs14oc} contain a preinitial or a medial *\ipa{r}, while in Japhug and Tibetan, where consonant clusters including \ipa{r} are attested, we only find respectively 12\% and 16\% of syllables with non-initial \ipa{r}. 
 
 \section{Conclusion}
 
