@@ -123,6 +123,9 @@ class TestGenerateLcFunctions(unittest.TestCase):
         self.assertEqual(self.gen.lx_to_lc("bo˩mi˧", "n"), "bo˩mi˥")
         self.assertEqual(self.gen.lx_to_lc("σ˩ σ˥", "n"), "σ˩ σ˥")
         self.assertEqual(self.gen.lx_to_lc("bo˩ɬɑ˥", "n"), "bo˩ɬɑ˥")
+        # Monosyllabic verbs
+        self.assertEqual(self.gen.lx_to_lc("æ̃˩a", "v"), "æ̃˩˥")
+        self.assertEqual(self.gen.lx_to_lc("ɕi˩", "v"), "ɕi˩˥")
         # Checked with Alexis
         # Dictionary_na.txt
         self.assertEqual(self.gen.lx_to_lc("dze˩mi˧-kʰv˩", "n"), "dze˩mi˧-kʰv˩") # not "dze˩mi˧-kʰv˧"
