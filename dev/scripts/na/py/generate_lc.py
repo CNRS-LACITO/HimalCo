@@ -301,13 +301,15 @@ class GenerateLc(InOut, XmlFormat):
                     if full_analysis != '' and full_analysis[-1] != u"°":
                         full_analysis += u"°"
                     full_analysis += analysis
+            # To remove indexes from tones before processing
+            def remove_indexes(tone): return tone.rstrip('abc')
             # Handle words containing '-' separator
             if len(lx.split('-')) > 1:
                 # Apply only rule 10
                 rule = 10,
-                lc_tones = self.apply_rules(rule, syllables_nb, tones)
+                lc_tones = self.apply_rules(rule, syllables_nb, map(remove_indexes, tones))
             else:
-                lc_tones = self.trans_tones(ps, syllables_nb, tones)
+                lc_tones = self.trans_tones(ps, syllables_nb, map(remove_indexes, tones))
             if lc_tones is None:
                 return None
             for i in range (0, syllables_nb):
