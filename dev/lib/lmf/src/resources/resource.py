@@ -1,8 +1,5 @@
-class Resource(object):
-	def newOperation(return):
-		pass
+#! /usr/bin/env python
 
-	def __init__(self):
-		pass
-
-
+class Resource():
+    def __init__(self):
+        pass

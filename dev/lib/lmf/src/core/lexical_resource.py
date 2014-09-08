@@ -1,5 +1,5 @@
-class LexicalResource(object):
-	def __init__(self):
-		self.dtdVersion = None
+#! /usr/bin/env python
 
-
+class LexicalResource():
+    def __init__(self):
+        self.dtdVersion = None

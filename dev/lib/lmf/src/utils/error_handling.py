@@ -1,5 +1,5 @@
-class ErrorHandling(object):
-	def __init__(self):
-		pass
+#! /usr/bin/env python
 
-
+class ErrorHandling():
+    def __init__(self):
+        pass

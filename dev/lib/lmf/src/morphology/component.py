@@ -1,5 +1,5 @@
-class Component(object):
-	def __init__(self):
-		self.position = None
+#! /usr/bin/env python
 
-
+class Component():
+    def __init__(self):
+        self.position = None
