@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="xml__format_8py" kind="file">
+    <compoundname>xml_format.py</compoundname>
+    <innernamespace refid="namespacesrc_1_1utils_1_1xml__format">src::utils::xml_format</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1utils_1_1xml__format" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>utils<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xml.etree.cElementTree<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Element,<sp/>SubElement,<sp/>parse,<sp/>dump,<sp/>ElementTree,<sp/>fromstring,<sp/>tostring,<sp/>XML</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>ImportError:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xml.etree.ElementTree<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Element,<sp/>SubElement,<sp/>parse,<sp/>dump,<sp/>ElementTree,<sp/>fromstring,<sp/>tostring,<sp/>XML</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacesrc_1_1utils_1_1xml__format_1a8ea2fa567596163ea9106fbf09dfefb3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacesrc_1_1utils_1_1xml__format_1a8ea2fa567596163ea9106fbf09dfefb3" kindref="member">prettify</ref>(element):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Return<sp/>a<sp/>pretty-printed<sp/>XML<sp/>string<sp/>for<sp/>the<sp/>given<sp/>XML<sp/>element.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>element<sp/>An<sp/>XML<sp/>element.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@return<sp/>A<sp/>Python<sp/>string<sp/>containing<sp/>the<sp/>printed<sp/>version<sp/>of<sp/>the<sp/>XML<sp/>element.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>xml.dom<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>minidom</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>rough_string<sp/>=<sp/>tostring(element,<sp/></highlight><highlight class="stringliteral">&apos;UTF-8&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>reparsed<sp/>=<sp/>minidom.parseString(rough_string)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reparsed.toprettyxml(indent=</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacesrc_1_1utils_1_1xml__format_1a31360d12f5b93238bcc05509956aa0f9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacesrc_1_1utils_1_1xml__format_1a31360d12f5b93238bcc05509956aa0f9" kindref="member">write_result</ref>(element,<sp/>filename,<sp/>encoding=None):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Write<sp/>an<sp/>XML<sp/>element<sp/>into<sp/>a<sp/>pretty<sp/>XML<sp/>output<sp/>file.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>element<sp/>An<sp/>XML<sp/>element.</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>filename<sp/>The<sp/>name<sp/>of<sp/>the<sp/>XML<sp/>file<sp/>to<sp/>write<sp/>with<sp/>full<sp/>path,<sp/>for<sp/>instance<sp/>&apos;user/output.xml&apos;.</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>encoding<sp/>Encoding<sp/>mode.<sp/>Default<sp/>value<sp/>is<sp/>None.</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>unicode_str<sp/>=<sp/><ref refid="namespacesrc_1_1utils_1_1xml__format_1a8ea2fa567596163ea9106fbf09dfefb3" kindref="member">prettify</ref>(element)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file<sp/>=<sp/><ref refid="namespacesrc_1_1utils_1_1io_1a63178ca81911ae28965794aef365250c" kindref="member">open_write</ref>(filename,<sp/>encoding=encoding)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.write(unicode_str)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file.close()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacesrc_1_1utils_1_1xml__format_1a706937e1d7094cf6a84f9aa08e7fdfc8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacesrc_1_1utils_1_1xml__format_1a706937e1d7094cf6a84f9aa08e7fdfc8" kindref="member">parse_xml</ref>(filename):</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Parse<sp/>an<sp/>XML<sp/>file.</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>filename<sp/>The<sp/>name<sp/>of<sp/>the<sp/>XML<sp/>file<sp/>to<sp/>parse<sp/>with<sp/>full<sp/>path,<sp/>for<sp/>instance<sp/>&apos;user/input.xml&apos;.</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@return<sp/>The<sp/>root<sp/>XML<sp/>element.</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>tree<sp/>=<sp/>parse(filename)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>root<sp/>=<sp/>tree.getroot()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>root</highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/xml_format.py"/>
+  </compounddef>
+</doxygen>

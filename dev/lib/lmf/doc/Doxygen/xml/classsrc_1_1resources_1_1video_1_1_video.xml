@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1resources_1_1video_1_1_video" kind="class" prot="public">
+    <compoundname>src::resources::video::Video</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Material</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.video.Video::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.resources.video.Video.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="6" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>Material</label>
+      </node>
+      <node id="72">
+        <label>src.resources.video.Video</label>
+        <link refid="classsrc_1_1resources_1_1video_1_1_video"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="75">
+        <label>Material</label>
+      </node>
+      <node id="74">
+        <label>src.resources.video.Video</label>
+        <link refid="classsrc_1_1resources_1_1video_1_1_video"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" prot="public" virt="non-virtual"><scope>src::resources::video::Video</scope><name>__init__</name></member>
+      <member refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" prot="public" virt="non-virtual"><scope>src::resources::video::Video</scope><name>description</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

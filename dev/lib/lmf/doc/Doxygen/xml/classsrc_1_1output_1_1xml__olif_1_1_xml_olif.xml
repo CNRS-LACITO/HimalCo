@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1output_1_1xml__olif_1_1_xml_olif" kind="class" prot="public">
+    <compoundname>src::output::xml_olif::XmlOlif</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">null</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1output_1_1xml__olif_1_1_xml_olif_1af3daddb4f164e66b1d0f5d8459c3f2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.output.xml_olif.XmlOlif.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_olif.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_olif.py" bodystart="2" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="201">
+        <label>null</label>
+      </node>
+      <node id="200">
+        <label>src.output.xml_olif.XmlOlif</label>
+        <link refid="classsrc_1_1output_1_1xml__olif_1_1_xml_olif"/>
+        <childnode refid="201" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="203">
+        <label>null</label>
+      </node>
+      <node id="202">
+        <label>src.output.xml_olif.XmlOlif</label>
+        <link refid="classsrc_1_1output_1_1xml__olif_1_1_xml_olif"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_olif.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_olif.py" bodystart="1" bodyend="6"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1output_1_1xml__olif_1_1_xml_olif_1af3daddb4f164e66b1d0f5d8459c3f2c6" prot="public" virt="non-virtual"><scope>src::output::xml_olif::XmlOlif</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

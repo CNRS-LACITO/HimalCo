@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="definition_8py" kind="file">
+    <compoundname>definition.py</compoundname>
+    <innerclass refid="classsrc_1_1core_1_1definition_1_1_definition" prot="public">src::core::definition::Definition</innerclass>
+    <innernamespace refid="namespacesrc_1_1core_1_1definition">src::core::definition</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1core_1_1definition" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1core_1_1definition_1_1_definition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1definition_1_1_definition" kindref="compound">Definition</ref>():</highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1core_1_1definition_1_1_definition_1ac40b223a739535bd4141937ab01783e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1definition_1_1_definition_1ac40b223a739535bd4141937ab01783e7" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1core_1_1definition_1_1_definition_1a334db4f6dddebc769ed5c7b44d2f96bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1definition_1_1_definition_1a334db4f6dddebc769ed5c7b44d2f96bf" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1core_1_1definition_1_1_definition_1aa135ea494fc7cef95ce3807f979621bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1definition_1_1_definition_1aa135ea494fc7cef95ce3807f979621bf" kindref="member">definition</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1core_1_1definition_1_1_definition_1abcb3ba5e519cc0e98f149754b5810301" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1definition_1_1_definition_1abcb3ba5e519cc0e98f149754b5810301" kindref="member">gloss</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsrc_1_1core_1_1definition_1_1_definition_1a568bed4ba9074aeb669875ac640b129e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1definition_1_1_definition_1a568bed4ba9074aeb669875ac640b129e" kindref="member">literally</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/definition.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,68 @@
+\hypertarget{namespacesrc_1_1output_1_1tex}{\section{src.\+output.\+tex Namespace Reference}
+\label{namespacesrc_1_1output_1_1tex}\index{src.\+output.\+tex@{src.\+output.\+tex}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesrc_1_1output_1_1tex_a0d88951ca91a678658025f0aff46c341}{compute\+\_\+header}
+\begin{DoxyCompactList}\small\item\em Create La\+Te\+X header. \end{DoxyCompactList}\item 
+def \hyperlink{namespacesrc_1_1output_1_1tex_abc62b0543c20d8f1d0fe63f1b52726c8}{tex\+\_\+write}
+\begin{DoxyCompactList}\small\item\em Write a La\+Te\+X file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesrc_1_1output_1_1tex_a0d88951ca91a678658025f0aff46c341}{\index{src\+::output\+::tex@{src\+::output\+::tex}!compute\+\_\+header@{compute\+\_\+header}}
+\index{compute\+\_\+header@{compute\+\_\+header}!src\+::output\+::tex@{src\+::output\+::tex}}
+\subsubsection[{compute\+\_\+header}]{\setlength{\rightskip}{0pt plus 5cm}def src.\+output.\+tex.\+compute\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{}]{preamble}
+\end{DoxyParamCaption}
+)}}\label{namespacesrc_1_1output_1_1tex_a0d88951ca91a678658025f0aff46c341}
+
+
+Create La\+Te\+X header. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preamble} & The name of the La\+Te\+X file with full path containing the La\+Te\+X header of the document, for instance 'user/config/japhug.\+tex'. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Python string containing read information. 
+\end{DoxyReturn}
+
+
+Definition at line 6 of file tex.\+py.
+
+\hypertarget{namespacesrc_1_1output_1_1tex_abc62b0543c20d8f1d0fe63f1b52726c8}{\index{src\+::output\+::tex@{src\+::output\+::tex}!tex\+\_\+write@{tex\+\_\+write}}
+\index{tex\+\_\+write@{tex\+\_\+write}!src\+::output\+::tex@{src\+::output\+::tex}}
+\subsubsection[{tex\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}def src.\+output.\+tex.\+tex\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{}]{object, }
+\item[{}]{filename, }
+\item[{}]{preamble = {\ttfamily None}, }
+\item[{}]{lmf2tex = {\ttfamily lmf\+\_\+tex}, }
+\item[{}]{order = {\ttfamily tex\+\_\+order}}
+\end{DoxyParamCaption}
+)}}\label{namespacesrc_1_1output_1_1tex_abc62b0543c20d8f1d0fe63f1b52726c8}
+
+
+Write a La\+Te\+X file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The L\+M\+F instance to convert into La\+Te\+X output format. \\
+\hline
+{\em filename} & The name of the La\+Te\+X file to write with full path, for instance 'user/output.\+tex'. \\
+\hline
+{\em preamble} & The name of the La\+Te\+X file with full path containing the La\+Te\+X header of the document, for instance 'user/config/japhug.\+tex'. Deafult value is None. \\
+\hline
+{\em lmf2tex} & A Python dictionary describing the mapping between L\+M\+F representation and La\+Te\+X commands. Default value is 'lmf\+\_\+tex' dictionary defined in '\hyperlink{config_2tex_8py}{src/config/tex.\+py}'. Please refer to it as an example. \\
+\hline
+{\em order} & A Python list defining the order in which L\+M\+F information must be written, for instance \mbox{[}\char`\"{}\+Lemma.\+lexeme\char`\"{}, \char`\"{}\+Lexical\+Entry.\+part\+Of\+Speech\char`\"{}\mbox{]}. Default value is 'tex\+\_\+order' list defined in '\hyperlink{config_2tex_8py}{src/config/tex.\+py}'. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file tex.\+py.
+

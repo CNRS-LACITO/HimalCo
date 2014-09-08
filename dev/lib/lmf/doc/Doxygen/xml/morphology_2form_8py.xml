@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="morphology_2form_8py" kind="file">
+    <compoundname>form.py</compoundname>
+    <innerclass refid="classsrc_1_1morphology_1_1form_1_1_form" prot="public">src::morphology::form::Form</innerclass>
+    <innernamespace refid="namespacesrc_1_1morphology_1_1form">src::morphology::form</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1morphology_1_1form" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1form_1_1_form" kindref="compound">Form</ref>(object):</highlight></codeline>
+<codeline lineno="2" refid="classsrc_1_1morphology_1_1form_1_1_form_1a6fc47fee0b76c93cb759b88545ae3722" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1form_1_1_form_1a6fc47fee0b76c93cb759b88545ae3722" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1morphology_1_1form_1_1_form_1ab6a611d205e76fa8b87def7b2a65d24a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphology_1_1form_1_1_form_1ab6a611d205e76fa8b87def7b2a65d24a" kindref="member">variantForm</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1morphology_1_1form_1_1_form_1ac57a7b708122672362f6c1bb972c6c97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphology_1_1form_1_1_form_1ac57a7b708122672362f6c1bb972c6c97" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/form.py"/>
+  </compounddef>
+</doxygen>

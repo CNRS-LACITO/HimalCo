@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="representation_8py" kind="file">
+    <compoundname>representation.py</compoundname>
+    <innerclass refid="classsrc_1_1core_1_1representation_1_1_representation" prot="public">src::core::representation::Representation</innerclass>
+    <innernamespace refid="namespacesrc_1_1core_1_1representation">src::core::representation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1core_1_1representation" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1core_1_1representation_1_1_representation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1representation_1_1_representation" kindref="compound">Representation</ref>():</highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1core_1_1representation_1_1_representation_1ac2a2d057963db31cf13f93cee36c8c64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1representation_1_1_representation_1ac2a2d057963db31cf13f93cee36c8c64" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1core_1_1representation_1_1_representation_1a72e49f86ec58c698f2a75c2046d25d62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1representation_1_1_representation_1a72e49f86ec58c698f2a75c2046d25d62" kindref="member">comment</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1core_1_1representation_1_1_representation_1ad4ec4b05057384573370ea9513f16a8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1representation_1_1_representation_1ad4ec4b05057384573370ea9513f16a8f" kindref="member">writtenForm</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1core_1_1representation_1_1_representation_1a01443961d9cdedf9d6353d9a140644d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1representation_1_1_representation_1a01443961d9cdedf9d6353d9a140644d6" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="config_2mdf_8py" kind="file">
+    <compoundname>mdf.py</compoundname>
+    <innernamespace refid="namespacesrc_1_1config_1_1mdf">src::config::mdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1config_1_1mdf" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Mapping<sp/>between<sp/>MDF<sp/>markers<sp/>and<sp/>LMF<sp/>representation<sp/>(input)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespacesrc_1_1config_1_1mdf_1af881a7b706c096ffc4facc7ffafa7687" refkind="member"><highlight class="normal">mdf_lmf<sp/>=<sp/>dict({</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lx&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>lx,<sp/>lexical_entry:<sp/>lexical_entry.set_lexeme(lx),</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ps&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>ps,<sp/>lexical_entry:<sp/>lexical_entry.set_partOfSpeech(ps),</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;st&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>st,<sp/>lexical_entry:<sp/>lexical_entry.set_status(st)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">})</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Order<sp/>in<sp/>which<sp/>MDF<sp/>markers<sp/>must<sp/>be<sp/>written<sp/>(output)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacesrc_1_1config_1_1mdf_1a0761366bb6d76340e4bea370efce7a7a" refkind="member"><highlight class="normal">mdf_order<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;lx&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ps&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;st&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Mapping<sp/>between<sp/>LMF<sp/>representation<sp/>and<sp/>MDF<sp/>markers<sp/>(output)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="namespacesrc_1_1config_1_1mdf_1a85342c221b552d567a7af5ca05c83727" refkind="member"><highlight class="normal">lmf_mdf<sp/>=<sp/>dict({</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;lx&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>lexical_entry:<sp/>lexical_entry.get_lexeme(),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ps&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>lexical_entry:<sp/>lexical_entry.get_partOfSpeech(),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;st&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>lexical_entry:<sp/>lexical_entry.get_status()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">})</highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py"/>
+  </compounddef>
+</doxygen>

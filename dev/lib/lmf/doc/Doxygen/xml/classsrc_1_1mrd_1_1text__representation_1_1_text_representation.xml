@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1mrd_1_1text__representation_1_1_text_representation" kind="class" prot="public">
+    <compoundname>src::mrd::text_representation::TextRepresentation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">null</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsrc_1_1mrd_1_1text__representation_1_1_text_representation_1a2b2880efe2811abb1363e5a917c91f27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.mrd.text_representation.TextRepresentation::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" line="3" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1mrd_1_1text__representation_1_1_text_representation_1a98459b3b051d2c775b07afb717790a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.mrd.text_representation.TextRepresentation.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" bodystart="2" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="157">
+        <label>null</label>
+      </node>
+      <node id="156">
+        <label>src.mrd.text_representation.TextRepresentation</label>
+        <link refid="classsrc_1_1mrd_1_1text__representation_1_1_text_representation"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="159">
+        <label>null</label>
+      </node>
+      <node id="158">
+        <label>src.mrd.text_representation.TextRepresentation</label>
+        <link refid="classsrc_1_1mrd_1_1text__representation_1_1_text_representation"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/text_representation.py" bodystart="1" bodyend="6"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1mrd_1_1text__representation_1_1_text_representation_1a98459b3b051d2c775b07afb717790a0e" prot="public" virt="non-virtual"><scope>src::mrd::text_representation::TextRepresentation</scope><name>__init__</name></member>
+      <member refid="classsrc_1_1mrd_1_1text__representation_1_1_text_representation_1a2b2880efe2811abb1363e5a917c91f27" prot="public" virt="non-virtual"><scope>src::mrd::text_representation::TextRepresentation</scope><name>font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

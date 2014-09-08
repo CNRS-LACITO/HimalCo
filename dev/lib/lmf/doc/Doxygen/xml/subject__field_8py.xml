@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="subject__field_8py" kind="file">
+    <compoundname>subject_field.py</compoundname>
+    <innerclass refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field" prot="public">src::mrd::subject_field::SubjectField</innerclass>
+    <innernamespace refid="namespacesrc_1_1mrd_1_1subject__field">src::mrd::subject_field</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1mrd_1_1subject__field" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref>():</highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a3eefbd187b50f3befa0169c72a287991" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a3eefbd187b50f3befa0169c72a287991" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1ab7baf8a7df0ac57286e05d3f8442424e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1ab7baf8a7df0ac57286e05d3f8442424e" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a06a0125c3d3f9b33c5fad6a89994a123" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a06a0125c3d3f9b33c5fad6a89994a123" kindref="member">semanticDomain</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py"/>
+  </compounddef>
+</doxygen>

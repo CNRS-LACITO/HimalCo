@@ -1,0 +1,46 @@
+.TH "src.config.tex" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.config.tex \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "list \fBtex_order\fP = ['Lemma\&.lexeme', 'LexicalEntry\&.id', 'LexicalEntry\&.partOfSpeech', 'LexicalEntry\&.status']"
+.br
+.RI "\fIOrder in which information must be written in LaTeX output\&. \fP"
+.ti -1c
+.RI "tuple \fBlmf_tex\fP"
+.br
+.RI "\fIMapping between LMF representation and LaTeX output\&. \fP"
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "tuple src\&.config\&.tex\&.lmf_tex"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "Lemma\&.lexeme" : lambda lexical_entry: "\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{" + lexical_entry\&.get_lexeme() + "}} \\hspace{0\&.2cm} ",
+3     "LexicalEntry\&.id" : lambda lexical_entry: "\\hypertarget{" + str(lexical_entry\&.get_id()) + "}{}\n",
+4     "LexicalEntry\&.partOfSpeech" : lambda lexical_entry: "\\textcolor{teal}{\\textit{" + lexical_entry\&.get_partOfSpeech() + "}}\n",
+5     "LexicalEntry\&.status" : lambda lexical_entry: ""
+6 })
+.fi
+.PP
+Mapping between LMF representation and LaTeX output\&. 
+.PP
+Definition at line 7 of file tex\&.py\&.
+.SS "list src\&.config\&.tex\&.tex_order = ['Lemma\&.lexeme', 'LexicalEntry\&.id', 'LexicalEntry\&.partOfSpeech', 'LexicalEntry\&.status']"
+
+.PP
+Order in which information must be written in LaTeX output\&. 
+.PP
+Definition at line 4 of file tex\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

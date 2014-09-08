@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="picture_8py" kind="file">
+    <compoundname>picture.py</compoundname>
+    <innerclass refid="classsrc_1_1resources_1_1picture_1_1_picture" prot="public">src::resources::picture::Picture</innerclass>
+    <innernamespace refid="namespacesrc_1_1resources_1_1picture">src::resources::picture</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1resources_1_1picture" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>material<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Material</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1resources_1_1picture_1_1_picture" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref>(Material):</highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1resources_1_1picture_1_1_picture_1adc6ea066102180580a8183fd9c8d6d09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1adc6ea066102180580a8183fd9c8d6d09" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1resources_1_1picture_1_1_picture_1a003b41ddc2d0551e5f8271eea1563f88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1a003b41ddc2d0551e5f8271eea1563f88" kindref="member">filename</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsrc_1_1resources_1_1picture_1_1_picture_1a3eac2bc1d9a3bc1f85b441e16719a4b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1a3eac2bc1d9a3bc1f85b441e16719a4b7" kindref="member">reference</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classsrc_1_1resources_1_1picture_1_1_picture_1ad9329b3048acfd8dacef0dfe9ca57ded" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1ad9329b3048acfd8dacef0dfe9ca57ded" kindref="member">width</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classsrc_1_1resources_1_1picture_1_1_picture_1a7648bd554fb274458f7cc32fa7c48e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1a7648bd554fb274458f7cc32fa7c48e4a" kindref="member">height</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classsrc_1_1resources_1_1picture_1_1_picture_1afce02889d8db77869eee3103da6c46f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1picture_1_1_picture_1afce02889d8db77869eee3103da6c46f5" kindref="member">format</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py"/>
+  </compounddef>
+</doxygen>

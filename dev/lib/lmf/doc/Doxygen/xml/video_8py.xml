@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="video_8py" kind="file">
+    <compoundname>video.py</compoundname>
+    <innerclass refid="classsrc_1_1resources_1_1video_1_1_video" prot="public">src::resources::video::Video</innerclass>
+    <innernamespace refid="namespacesrc_1_1resources_1_1video">src::resources::video</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1resources_1_1video" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>material<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Material</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1resources_1_1video_1_1_video" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref>(Material):</highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" kindref="member">description</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py"/>
+  </compounddef>
+</doxygen>

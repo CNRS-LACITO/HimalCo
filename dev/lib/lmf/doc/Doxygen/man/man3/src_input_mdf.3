@@ -1,0 +1,41 @@
+.TH "src.input.mdf" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.input.mdf \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBmdf_read\fP"
+.br
+.RI "\fIRead an MDF file\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def src\&.input\&.mdf\&.mdf_read (filename, mdf2lmf = \fCmdf_lmf\fP)"
+
+.PP
+Read an MDF file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP The name of the MDF file to read with full path, for instance 'user/input\&.txt'\&. 
+.br
+\fImdf2lmf\fP A Python dictionary describing the mapping between MDF markers and LMF representation\&. Default value is 'mdf_lmf' dictionary defined in '\fBsrc/config/mdf\&.py\fP'\&. Please refer to it as an example\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Lexicon instance containing all lexical entries\&. 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file mdf\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

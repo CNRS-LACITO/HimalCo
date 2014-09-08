@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1morphosyntax_1_1sense_1_1_sense" kind="class" prot="public">
+    <compoundname>src::morphosyntax::sense::Sense</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1a6d3ee2cb40a0bd2a8d08ea0709364ca6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.morphosyntax.sense.Sense::senseNumber</definition>
+        <argsstring></argsstring>
+        <name>senseNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" line="3" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1ad67ff2691bc78a27e5c781bfd88ff08e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.morphosyntax.sense.Sense::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" line="4" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1a93c1dc3b4d7bec434e2b49a56c9fe1d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.morphosyntax.sense.Sense.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" bodystart="2" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>src.morphosyntax.sense.Sense</label>
+        <link refid="classsrc_1_1morphosyntax_1_1sense_1_1_sense"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="126">
+        <label>src.morphosyntax.sense.Sense</label>
+        <link refid="classsrc_1_1morphosyntax_1_1sense_1_1_sense"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/sense.py" bodystart="1" bodyend="7"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1a93c1dc3b4d7bec434e2b49a56c9fe1d2" prot="public" virt="non-virtual"><scope>src::morphosyntax::sense::Sense</scope><name>__init__</name></member>
+      <member refid="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1ad67ff2691bc78a27e5c781bfd88ff08e" prot="public" virt="non-virtual"><scope>src::morphosyntax::sense::Sense</scope><name>id</name></member>
+      <member refid="classsrc_1_1morphosyntax_1_1sense_1_1_sense_1a6d3ee2cb40a0bd2a8d08ea0709364ca6" prot="public" virt="non-virtual"><scope>src::morphosyntax::sense::Sense</scope><name>senseNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

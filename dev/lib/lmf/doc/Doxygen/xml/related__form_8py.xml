@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="related__form_8py" kind="file">
+    <compoundname>related_form.py</compoundname>
+    <innerclass refid="classsrc_1_1morphology_1_1related__form_1_1_related_form" prot="public">src::morphology::related_form::RelatedForm</innerclass>
+    <innernamespace refid="namespacesrc_1_1morphology_1_1related__form">src::morphology::related_form</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1morphology_1_1related__form" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>core.form<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Form</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1morphology_1_1related__form_1_1_related_form" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1related__form_1_1_related_form" kindref="compound">RelatedForm</ref>(Form):</highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1abdb8f278733f3a984fd77232c417fde4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1abdb8f278733f3a984fd77232c417fde4" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1a266c933a3387b83a172bc18bb1bcc556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1a266c933a3387b83a172bc18bb1bcc556" kindref="member">semanticRelation</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/related_form.py"/>
+  </compounddef>
+</doxygen>

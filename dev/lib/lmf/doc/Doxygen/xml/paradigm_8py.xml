@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="paradigm_8py" kind="file">
+    <compoundname>paradigm.py</compoundname>
+    <innerclass refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm" prot="public">src::morphosyntax::paradigm::Paradigm</innerclass>
+    <innernamespace refid="namespacesrc_1_1morphosyntax_1_1paradigm">src::morphosyntax::paradigm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1morphosyntax_1_1paradigm" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref>():</highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4406d466889b7ca626bf043b3654b6ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4406d466889b7ca626bf043b3654b6ad" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a53996d262b7c39f45cf3daec60ff0e39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a53996d262b7c39f45cf3daec60ff0e39" kindref="member">paradigmLabel</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aef28fdb51b77696c54e77470db8fc9ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aef28fdb51b77696c54e77470db8fc9ae" kindref="member">paradigm</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4b3e5aa320792c052f0e8e7d50fc343d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4b3e5aa320792c052f0e8e7d50fc343d" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a565900f79670711f1b9774bf0e0c2c9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a565900f79670711f1b9774bf0e0c2c9b" kindref="member">morphology</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py"/>
+  </compounddef>
+</doxygen>

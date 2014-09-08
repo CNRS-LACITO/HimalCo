@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="component_8py" kind="file">
+    <compoundname>component.py</compoundname>
+    <innerclass refid="classsrc_1_1morphology_1_1component_1_1_component" prot="public">src::morphology::component::Component</innerclass>
+    <innernamespace refid="namespacesrc_1_1morphology_1_1component">src::morphology::component</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1morphology_1_1component" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1morphology_1_1component_1_1_component" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1component_1_1_component" kindref="compound">Component</ref>():</highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1morphology_1_1component_1_1_component_1a3ed51d589f00e3c5c1e9bd64721fed50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1component_1_1_component_1a3ed51d589f00e3c5c1e9bd64721fed50" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1morphology_1_1component_1_1_component_1ab5cb7e1497254923c3298a569001092f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphology_1_1component_1_1_component_1ab5cb7e1497254923c3298a569001092f" kindref="member">position</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/component.py"/>
+  </compounddef>
+</doxygen>

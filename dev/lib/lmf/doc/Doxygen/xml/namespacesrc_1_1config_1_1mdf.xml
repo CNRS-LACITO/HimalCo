@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacesrc_1_1config_1_1mdf" kind="namespace">
+    <compoundname>src::config::mdf</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesrc_1_1config_1_1mdf_1af881a7b706c096ffc4facc7ffafa7687" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple src::config::mdf.mdf_lmf</definition>
+        <argsstring></argsstring>
+        <name>mdf_lmf</name>
+        <initializer>= dict({
+    &quot;lx&quot; : lambda lx, lexical_entry: lexical_entry.set_lexeme(lx),
+    &quot;ps&quot; : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
+    &quot;st&quot; : lambda st, lexical_entry: lexical_entry.set_status(st)
+})</initializer>
+        <briefdescription>
+<para>Mapping between MDF markers and LMF representation (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="4" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesrc_1_1config_1_1mdf_1a0761366bb6d76340e4bea370efce7a7a" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list src::config::mdf.mdf_order</definition>
+        <argsstring></argsstring>
+        <name>mdf_order</name>
+        <initializer>= [&quot;lx&quot;, &quot;ps&quot;, &quot;st&quot;]</initializer>
+        <briefdescription>
+<para>Order in which MDF markers must be written (output) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesrc_1_1config_1_1mdf_1a85342c221b552d567a7af5ca05c83727" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple src::config::mdf.lmf_mdf</definition>
+        <argsstring></argsstring>
+        <name>lmf_mdf</name>
+        <initializer>= dict({
+    &quot;lx&quot; : lambda lexical_entry: lexical_entry.get_lexeme(),
+    &quot;ps&quot; : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
+    &quot;st&quot; : lambda lexical_entry: lexical_entry.get_status()
+})</initializer>
+        <briefdescription>
+<para>Mapping between LMF representation and MDF markers (output) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

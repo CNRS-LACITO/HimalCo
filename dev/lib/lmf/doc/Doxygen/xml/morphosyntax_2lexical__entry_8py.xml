@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="morphosyntax_2lexical__entry_8py" kind="file">
+    <compoundname>lexical_entry.py</compoundname>
+    <innerclass refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry" prot="public">src::morphosyntax::lexical_entry::LexicalEntry</innerclass>
+    <innernamespace refid="namespacesrc_1_1morphosyntax_1_1lexical__entry">src::morphosyntax::lexical_entry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1morphosyntax_1_1lexical__entry" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>(object):</highlight></codeline>
+<codeline lineno="2" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1adc8f0f58f16f337822b85c4b7ca015df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1adc8f0f58f16f337822b85c4b7ca015df" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="3" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1a9ac0a128386a0dc656254cbebc7ed829" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1a9ac0a128386a0dc656254cbebc7ed829" kindref="member">homonymNumber</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1afbd57fdab3a5b6b15d9040a882dfe115" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1afbd57fdab3a5b6b15d9040a882dfe115" kindref="member">status</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1ae3d3263b9224d404fbcc19b806de244e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1ae3d3263b9224d404fbcc19b806de244e" kindref="member">date</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1a1cb144581ded335004f86eb400b979d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1a1cb144581ded335004f86eb400b979d6" kindref="member">partOfSpeech</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1adefa1ee60fc0c335a615606c5f7ac039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1adefa1ee60fc0c335a615606c5f7ac039" kindref="member">independentWord</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1afa27c8784e19b8d3b5239fc3c3fbeec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1afa27c8784e19b8d3b5239fc3c3fbeec2" kindref="member">bibliography</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1ac019dbd081f9cc11ea0e0acc1dc813eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1morphosyntax_1_1lexical__entry_1_1_lexical_entry_1ac019dbd081f9cc11ea0e0acc1dc813eb" kindref="member">id</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/lexical_entry.py"/>
+  </compounddef>
+</doxygen>

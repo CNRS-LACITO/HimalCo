@@ -1,0 +1,46 @@
+\hypertarget{namespacesrc_1_1config_1_1tex}{\section{src.\+config.\+tex Namespace Reference}
+\label{namespacesrc_1_1config_1_1tex}\index{src.\+config.\+tex@{src.\+config.\+tex}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacesrc_1_1config_1_1tex_a11191ac7f2134958a9de8155e88af9a9}{tex\+\_\+order} = \mbox{[}\char`\"{}Lemma.\+lexeme\char`\"{}, \char`\"{}Lexical\+Entry.\+id\char`\"{}, \char`\"{}Lexical\+Entry.\+part\+Of\+Speech\char`\"{}, \char`\"{}Lexical\+Entry.\+status\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Order in which information must be written in La\+Te\+X output. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacesrc_1_1config_1_1tex_ab73c6746f87c74d6f58c26f60a5f4d5e}{lmf\+\_\+tex}
+\begin{DoxyCompactList}\small\item\em Mapping between L\+M\+F representation and La\+Te\+X output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesrc_1_1config_1_1tex_ab73c6746f87c74d6f58c26f60a5f4d5e}{\index{src\+::config\+::tex@{src\+::config\+::tex}!lmf\+\_\+tex@{lmf\+\_\+tex}}
+\index{lmf\+\_\+tex@{lmf\+\_\+tex}!src\+::config\+::tex@{src\+::config\+::tex}}
+\subsubsection[{lmf\+\_\+tex}]{\setlength{\rightskip}{0pt plus 5cm}tuple src.\+config.\+tex.\+lmf\+\_\+tex}}\label{namespacesrc_1_1config_1_1tex_ab73c6746f87c74d6f58c26f60a5f4d5e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"Lemma.lexeme"} : \textcolor{keyword}{lambda} lexical\_entry: \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)\(\backslash\)vspace\{1cm\} \(\backslash\)\(\backslash\)hspace\{-1cm\} \{\(\backslash\)Large \(\backslash\)ipa\{"} + 
+      lexical\_entry.get\_lexeme() + \textcolor{stringliteral}{"\}\} \(\backslash\)\(\backslash\)hspace\{0.2cm\} "},
+3     \textcolor{stringliteral}{"LexicalEntry.id"} : \textcolor{keyword}{lambda} lexical\_entry: \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)hypertarget\{"} + str(lexical\_entry.get\_id()) + \textcolor{stringliteral}{"\}\{\}\(\backslash\)n"},
+4     \textcolor{stringliteral}{"LexicalEntry.partOfSpeech"} : \textcolor{keyword}{lambda} lexical\_entry: \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)textcolor\{teal\}\{\(\backslash\)\(\backslash\)textit\{"} + 
+      lexical\_entry.get\_partOfSpeech() + \textcolor{stringliteral}{"\}\}\(\backslash\)n"},
+5     \textcolor{stringliteral}{"LexicalEntry.status"} : \textcolor{keyword}{lambda} lexical\_entry: \textcolor{stringliteral}{""}
+6 \})
+\end{DoxyCode}
+
+
+Mapping between L\+M\+F representation and La\+Te\+X output. 
+
+
+
+Definition at line 7 of file tex.\+py.
+
+\hypertarget{namespacesrc_1_1config_1_1tex_a11191ac7f2134958a9de8155e88af9a9}{\index{src\+::config\+::tex@{src\+::config\+::tex}!tex\+\_\+order@{tex\+\_\+order}}
+\index{tex\+\_\+order@{tex\+\_\+order}!src\+::config\+::tex@{src\+::config\+::tex}}
+\subsubsection[{tex\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}list src.\+config.\+tex.\+tex\+\_\+order = \mbox{[}\char`\"{}Lemma.\+lexeme\char`\"{}, \char`\"{}Lexical\+Entry.\+id\char`\"{}, \char`\"{}Lexical\+Entry.\+part\+Of\+Speech\char`\"{}, \char`\"{}Lexical\+Entry.\+status\char`\"{}\mbox{]}}}\label{namespacesrc_1_1config_1_1tex_a11191ac7f2134958a9de8155e88af9a9}
+
+
+Order in which information must be written in La\+Te\+X output. 
+
+
+
+Definition at line 4 of file tex.\+py.
+

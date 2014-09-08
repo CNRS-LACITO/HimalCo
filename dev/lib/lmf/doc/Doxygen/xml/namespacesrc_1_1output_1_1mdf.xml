@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacesrc_1_1output_1_1mdf" kind="namespace">
+    <compoundname>src::output::mdf</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesrc_1_1output_1_1mdf_1a71397767dc07eda4ff1586de29e7c25d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.output.mdf.mdf_write</definition>
+        <argsstring></argsstring>
+        <name>mdf_write</name>
+        <briefdescription>
+<para>Write an MDF file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LMF instance to convert into MDF output format. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the MDF file to write with full path, for instance &apos;user/output.txt&apos;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lmf2mdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python dictionary describing the mapping between LMF representation and MDF markers. Default value is &apos;lmf_mdf&apos; dictionary defined in &apos;<ref refid="config_2mdf_8py" kindref="compound">src/config/mdf.py</ref>&apos;. Please refer to it as an example. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python list defining the order in which MDf markers must be written, for instance [&quot;lx&quot;, &quot;ps&quot;]. Default value is &apos;mdf_order&apos; list defined in &apos;<ref refid="config_2mdf_8py" kindref="compound">src/config/mdf.py</ref>&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" bodystart="6" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

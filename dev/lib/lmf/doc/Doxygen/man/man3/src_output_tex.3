@@ -1,0 +1,64 @@
+.TH "src.output.tex" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.output.tex \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBcompute_header\fP"
+.br
+.RI "\fICreate LaTeX header\&. \fP"
+.ti -1c
+.RI "def \fBtex_write\fP"
+.br
+.RI "\fIWrite a LaTeX file\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def src\&.output\&.tex\&.compute_header (preamble)"
+
+.PP
+Create LaTeX header\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpreamble\fP The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug\&.tex'\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python string containing read information\&. 
+.RE
+.PP
+
+.PP
+Definition at line 6 of file tex\&.py\&.
+.SS "def src\&.output\&.tex\&.tex_write (object, filename, preamble = \fCNone\fP, lmf2tex = \fClmf_tex\fP, order = \fCtex_order\fP)"
+
+.PP
+Write a LaTeX file\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP The LMF instance to convert into LaTeX output format\&. 
+.br
+\fIfilename\fP The name of the LaTeX file to write with full path, for instance 'user/output\&.tex'\&. 
+.br
+\fIpreamble\fP The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug\&.tex'\&. Deafult value is None\&. 
+.br
+\fIlmf2tex\fP A Python dictionary describing the mapping between LMF representation and LaTeX commands\&. Default value is 'lmf_tex' dictionary defined in '\fBsrc/config/tex\&.py\fP'\&. Please refer to it as an example\&. 
+.br
+\fIorder\fP A Python list defining the order in which LMF information must be written, for instance ['Lemma\&.lexeme', 'LexicalEntry\&.partOfSpeech']\&. Default value is 'tex_order' list defined in '\fBsrc/config/tex\&.py\fP'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file tex\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

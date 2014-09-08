@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1resources_1_1statement_1_1_statement" kind="class" prot="public">
+    <compoundname>src::resources::statement::Statement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1ac53cb41b348800e26e57013940576e57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::noteType</definition>
+        <argsstring></argsstring>
+        <name>noteType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="3" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1ac61a65478afc0b6ab2054d7b9304c21b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="4" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1aaefcfcf6b3d9d43c0210c424509dcbf7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a189fd8f66328780bd39764b33b4220a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::encyclopedicInformation</definition>
+        <argsstring></argsstring>
+        <name>encyclopedicInformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1afdefc898083509fe10cf5329c341e691" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::usageNote</definition>
+        <argsstring></argsstring>
+        <name>usageNote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a310921cc6da12659a2bfa9818a4b2908" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::restriction</definition>
+        <argsstring></argsstring>
+        <name>restriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a40efc05a7dcf877a81b850f7a0a8650a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::derivation</definition>
+        <argsstring></argsstring>
+        <name>derivation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a2af3f38f0f4f4d98c824ba31979184b0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::borrowedWord</definition>
+        <argsstring></argsstring>
+        <name>borrowedWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="10" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a95875344cd0ffd2a2fe81569114cb7d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::writtenForm</definition>
+        <argsstring></argsstring>
+        <name>writtenForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1ac3f2abe2f05fde8310b81312c85042b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::sense</definition>
+        <argsstring></argsstring>
+        <name>sense</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a48b1b474f5ffe8cc00be3ae662ce490e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::etymology</definition>
+        <argsstring></argsstring>
+        <name>etymology</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a2d906255b6faa8fdf058ce68b5f1b6ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::etymologyComment</definition>
+        <argsstring></argsstring>
+        <name>etymologyComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a9a25a5e6bbac5722c91a6d87026647d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::etymologyGloss</definition>
+        <argsstring></argsstring>
+        <name>etymologyGloss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a161a06117936940080d5266f401711d9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::etymologySource</definition>
+        <argsstring></argsstring>
+        <name>etymologySource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a89ee2dec5b458b252254877fa54f899c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::termSourceLanguage</definition>
+        <argsstring></argsstring>
+        <name>termSourceLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a6ff34173dbdc734d3994fadd46e6e229" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::targetLexicalEntry</definition>
+        <argsstring></argsstring>
+        <name>targetLexicalEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1statement_1_1_statement_1a4ca0fc81e7e5e019137c08904ad0c42a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.statement.Statement::scientificName</definition>
+        <argsstring></argsstring>
+        <name>scientificName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1resources_1_1statement_1_1_statement_1a5082946d2424547c1b2613b98e13a674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.resources.statement.Statement.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="2" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="137">
+        <label>object</label>
+      </node>
+      <node id="136">
+        <label>src.resources.statement.Statement</label>
+        <link refid="classsrc_1_1resources_1_1statement_1_1_statement"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>object</label>
+      </node>
+      <node id="138">
+        <label>src.resources.statement.Statement</label>
+        <link refid="classsrc_1_1resources_1_1statement_1_1_statement"/>
+        <childnode refid="139" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/statement.py" bodystart="1" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a5082946d2424547c1b2613b98e13a674" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>__init__</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a2af3f38f0f4f4d98c824ba31979184b0" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>borrowedWord</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a40efc05a7dcf877a81b850f7a0a8650a" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>derivation</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a189fd8f66328780bd39764b33b4220a7" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>encyclopedicInformation</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a48b1b474f5ffe8cc00be3ae662ce490e" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>etymology</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a2d906255b6faa8fdf058ce68b5f1b6ca" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>etymologyComment</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a9a25a5e6bbac5722c91a6d87026647d2" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>etymologyGloss</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a161a06117936940080d5266f401711d9" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>etymologySource</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1aaefcfcf6b3d9d43c0210c424509dcbf7" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>language</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1ac61a65478afc0b6ab2054d7b9304c21b" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>note</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1ac53cb41b348800e26e57013940576e57" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>noteType</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a310921cc6da12659a2bfa9818a4b2908" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>restriction</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a4ca0fc81e7e5e019137c08904ad0c42a" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>scientificName</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1ac3f2abe2f05fde8310b81312c85042b3" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>sense</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a6ff34173dbdc734d3994fadd46e6e229" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>targetLexicalEntry</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a89ee2dec5b458b252254877fa54f899c" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>termSourceLanguage</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1afdefc898083509fe10cf5329c341e691" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>usageNote</name></member>
+      <member refid="classsrc_1_1resources_1_1statement_1_1_statement_1a95875344cd0ffd2a2fe81569114cb7d6" prot="public" virt="non-virtual"><scope>src::resources::statement::Statement</scope><name>writtenForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

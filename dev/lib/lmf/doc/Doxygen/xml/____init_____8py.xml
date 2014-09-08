@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="____init_____8py" kind="file">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacesrc">src</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">##<sp/>User<sp/>functions<sp/>to<sp/>read<sp/>from<sp/>a<sp/>file:<sp/>MDF,<sp/>XML<sp/>LMF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>input.mdf<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mdf_read</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>input.xml_lmf<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>xml_lmf_read<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>lmf_read</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">##<sp/>User<sp/>functions<sp/>to<sp/>write<sp/>into<sp/>a<sp/>file:<sp/>MDF,<sp/>XML<sp/>LMF,<sp/>LaTeX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>output.mdf<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mdf_write</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>output.xml_lmf<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>xml_lmf_write<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>lmf_write</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>output.tex<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tex_write</highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/__init__.py"/>
+  </compounddef>
+</doxygen>

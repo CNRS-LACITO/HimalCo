@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1output_1_1doc_1_1_doc" kind="class" prot="public">
+    <compoundname>src::output::doc::Doc</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">null</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1output_1_1doc_1_1_doc_1a9b72febd73990827447872f93a068c6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.output.doc.Doc.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/doc.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/doc.py" bodystart="2" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>null</label>
+      </node>
+      <node id="20">
+        <label>src.output.doc.Doc</label>
+        <link refid="classsrc_1_1output_1_1doc_1_1_doc"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>null</label>
+      </node>
+      <node id="22">
+        <label>src.output.doc.Doc</label>
+        <link refid="classsrc_1_1output_1_1doc_1_1_doc"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/doc.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/doc.py" bodystart="1" bodyend="6"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1output_1_1doc_1_1_doc_1a9b72febd73990827447872f93a068c6c" prot="public" virt="non-virtual"><scope>src::output::doc::Doc</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

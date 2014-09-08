@@ -1,0 +1,212 @@
+.TH "src.core.lexicon.Lexicon" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.core.lexicon.Lexicon \- 
+.PP
+This class represents a lexicon containing lexical entries\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fBget_lexical_entries\fP"
+.br
+.RI "\fIGet all lexical entries maintained by the lexicon\&. \fP"
+.ti -1c
+.RI "def \fBadd_lexical_entry\fP"
+.br
+.RI "\fIAdd a lexical entry to the lexicon\&. \fP"
+.ti -1c
+.RI "def \fBremove_lexical_entry\fP"
+.br
+.RI "\fIRemove a lexical entry from the lexicon\&. \fP"
+.ti -1c
+.RI "def \fBcount_lexical_entries\fP"
+.br
+.RI "\fICount number of lexical entries of the lexicon\&. \fP"
+.ti -1c
+.RI "def \fBsort_lexical_entries\fP"
+.br
+.RI "\fISort given items of lexical entries contained in the lexicon according to a certain order\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlanguage\fP"
+.br
+.ti -1c
+.RI "\fBlanguageScript\fP"
+.br
+.ti -1c
+.RI "\fBid\fP"
+.br
+.ti -1c
+.RI "\fBlabel\fP"
+.br
+.ti -1c
+.RI "\fBlexiconType\fP"
+.br
+.ti -1c
+.RI "\fBentrySource\fP"
+.br
+.ti -1c
+.RI "\fBvowelHarmony\fP"
+.br
+.ti -1c
+.RI "\fBlexical_entry\fP"
+.br
+.RI "\fIAll LexicalEntry instances are maintained by the \fBLexicon\fP\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class represents a lexicon containing lexical entries\&. 
+.PP
+Definition at line 6 of file lexicon\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.__init__ (self)"
+
+.PP
+Constructor\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A \fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file lexicon\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.add_lexical_entry (self, lexical_entry)"
+
+.PP
+Add a lexical entry to the lexicon\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBlexical_entry\fP\fP A LexicalEntry instance to add to the \fBLexicon\fP\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file lexicon\&.py\&.
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.count_lexical_entries (self)"
+
+.PP
+Count number of lexical entries of the lexicon\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The number of lexical entries without duplicates maintained by the lexicon\&. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file lexicon\&.py\&.
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.get_lexical_entries (self)"
+
+.PP
+Get all lexical entries maintained by the lexicon\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python set of lexical entries\&. 
+.RE
+.PP
+
+.PP
+Definition at line 23 of file lexicon\&.py\&.
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.remove_lexical_entry (self, lexical_entry)"
+
+.PP
+Remove a lexical entry from the lexicon\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI\fBlexical_entry\fP\fP The LexicalEntry instance to remove from the \fBLexicon\fP\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file lexicon\&.py\&.
+.SS "def src\&.core\&.lexicon\&.Lexicon\&.sort_lexical_entries (self, items = \fClambda lexical_entry: lexical_entry\&.get_lexeme()\fP, order = \fCNone\fP)"
+
+.PP
+Sort given items of lexical entries contained in the lexicon according to a certain order\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIitems\fP Lambda function giving the item to sort\&. Default value is 'lambda \fBlexical_entry\fP: lexical_entry\&.get_lexeme()', which means that the items to sort are lexemes\&. 
+.br
+\fIorder\fP Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The sorted Python list of lexical entries\&. 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file lexicon\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "src\&.core\&.lexicon\&.Lexicon\&.entrySource"
+
+.PP
+Definition at line 18 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.id"
+
+.PP
+Definition at line 15 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.label"
+
+.PP
+Definition at line 16 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.language"
+
+.PP
+Definition at line 13 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.languageScript"
+
+.PP
+Definition at line 14 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.lexical_entry"
+
+.PP
+All LexicalEntry instances are maintained by the \fBLexicon\fP\&. 
+.PP
+Definition at line 21 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.lexiconType"
+
+.PP
+Definition at line 17 of file lexicon\&.py\&.
+.SS "src\&.core\&.lexicon\&.Lexicon\&.vowelHarmony"
+
+.PP
+Definition at line 19 of file lexicon\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

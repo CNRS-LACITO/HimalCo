@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="audio_8py" kind="file">
+    <compoundname>audio.py</compoundname>
+    <innerclass refid="classsrc_1_1resources_1_1audio_1_1_audio" prot="public">src::resources::audio::Audio</innerclass>
+    <innernamespace refid="namespacesrc_1_1resources_1_1audio">src::resources::audio</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacesrc_1_1resources_1_1audio" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>material<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Material</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classsrc_1_1resources_1_1audio_1_1_audio" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1audio_1_1_audio" kindref="compound">Audio</ref>(Material):</highlight></codeline>
+<codeline lineno="6" refid="classsrc_1_1resources_1_1audio_1_1_audio_1af81ebf2e8ce309279b44a7aba68563e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1af81ebf2e8ce309279b44a7aba68563e9" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7" refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8ec1034a29b3c55692fae3be07f54605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8ec1034a29b3c55692fae3be07f54605" kindref="member">quality</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classsrc_1_1resources_1_1audio_1_1_audio_1a549dd2605f3d2d09ca8a8618ddf34fc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1a549dd2605f3d2d09ca8a8618ddf34fc9" kindref="member">sound</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8d782bb99c64c395286d7f71a8c2ebf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8d782bb99c64c395286d7f71a8c2ebf8" kindref="member">startPosition</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classsrc_1_1resources_1_1audio_1_1_audio_1a0d0e84fdb0fd8961b8c033dc8d9782ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1a0d0e84fdb0fd8961b8c033dc8d9782ac" kindref="member">durationOfEffectiveSpeech</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classsrc_1_1resources_1_1audio_1_1_audio_1ac1da212e2eea3e4fa6ddb5f48c7364c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1ac1da212e2eea3e4fa6ddb5f48c7364c2" kindref="member">externalReference</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classsrc_1_1resources_1_1audio_1_1_audio_1aadc41b28801de70ba866a40892dce32c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1aadc41b28801de70ba866a40892dce32c" kindref="member">audioFileFormat</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classsrc_1_1resources_1_1audio_1_1_audio_1aef44fd13d82cd3f79150c76b9b6f4c3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1audio_1_1_audio_1aef44fd13d82cd3f79150c76b9b6f4c3e" kindref="member">transcription</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py"/>
+  </compounddef>
+</doxygen>

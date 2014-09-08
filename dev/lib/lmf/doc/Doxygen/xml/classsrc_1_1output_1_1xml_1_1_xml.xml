@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1output_1_1xml_1_1_xml" kind="class" prot="public">
+    <compoundname>src::output::xml::Xml</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">null</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1output_1_1xml_1_1_xml_1a96f04e4c088845d166a67a94e1957223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.output.xml.Xml.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml.py" bodystart="2" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>null</label>
+      </node>
+      <node id="220">
+        <label>src.output.xml.Xml</label>
+        <link refid="classsrc_1_1output_1_1xml_1_1_xml"/>
+        <childnode refid="221" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="223">
+        <label>null</label>
+      </node>
+      <node id="222">
+        <label>src.output.xml.Xml</label>
+        <link refid="classsrc_1_1output_1_1xml_1_1_xml"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml.py" bodystart="1" bodyend="6"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1output_1_1xml_1_1_xml_1a96f04e4c088845d166a67a94e1957223" prot="public" virt="non-virtual"><scope>src::output::xml::Xml</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

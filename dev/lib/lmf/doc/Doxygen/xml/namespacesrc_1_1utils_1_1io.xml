@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacesrc_1_1utils_1_1io" kind="namespace">
+    <compoundname>src::utils::io</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesrc_1_1utils_1_1io_1a33d31190a38cbf2fadf38559eb950eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.utils.io.open_file</definition>
+        <argsstring></argsstring>
+        <name>open_file</name>
+        <briefdescription>
+<para>Open file in specified mode (automatically decode file in unicode). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to file to open. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Read or write mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding mode. Default value is &apos;utf8&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>File handler. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="3" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="3" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesrc_1_1utils_1_1io_1aaca202c1b026ebdc4ff5eec904197623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.utils.io.open_read</definition>
+        <argsstring></argsstring>
+        <name>open_read</name>
+        <briefdescription>
+<para>Open file in read mode (automatically decode file in unicode). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to file to open. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding mode. Default value is None. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>File handler. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="16" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesrc_1_1utils_1_1io_1a63178ca81911ae28965794aef365250c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.utils.io.open_write</definition>
+        <argsstring></argsstring>
+        <name>open_write</name>
+        <briefdescription>
+<para>Open file in write mode (automatically decode file in unicode). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path to file to open. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Encoding mode. Default value is None. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>File handler. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="27" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

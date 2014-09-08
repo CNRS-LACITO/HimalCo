@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacesrc_1_1input_1_1xml__lmf" kind="namespace">
+    <compoundname>src::input::xml_lmf</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesrc_1_1input_1_1xml__lmf_1a30fc17ed012d8c1ffca259f4d2f496ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.input.xml_lmf.compute_name</definition>
+        <argsstring></argsstring>
+        <name>compute_name</name>
+        <briefdescription>
+<para>Compute attribute/module name from object name as follows: &apos;ObjectName&apos; attribute/module name is &apos;object_name&apos;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing name of the object, e.g. &apos;LexicalEntry&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding attribute/module name, e.g. &apos;lexical_entry&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" bodystart="5" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesrc_1_1input_1_1xml__lmf_1abf5d0ebfe32a931e8bf0f292cf44658f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.input.xml_lmf.factory</definition>
+        <argsstring></argsstring>
+        <name>factory</name>
+        <briefdescription>
+<para>This function is an object factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>Indeed, from an object name and its attributes, it creates a Python object and sets its attributes. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python string containing the object name, for instance &apos;LexicalEntry&apos;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attributes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python dictionary containing pairs of attribute name (as a Python string) and value, for instance {&apos;partOfSpeech&apos;: &apos;n&apos;}. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" bodystart="20" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesrc_1_1input_1_1xml__lmf_1aa225ed6de34fb14e2fa7a209eff26592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.input.xml_lmf.xml_lmf_read</definition>
+        <argsstring></argsstring>
+        <name>xml_lmf_read</name>
+        <briefdescription>
+<para>Read an XML LMF file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the XML LMF file to read with full path, for instance &apos;user/input.xml&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Lexicon instance containing all lexical entries. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" line="50" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" bodystart="50" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesrc_1_1input_1_1xml__lmf_1aa47e441bb03580d934a631cb0af9bd1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.input.xml_lmf.get_sub_elements</definition>
+        <argsstring></argsstring>
+        <name>get_sub_elements</name>
+        <briefdescription>
+<para>This function recursively parses the given XML element and creates corresponding LMF instances with their attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>instance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An LMF object instance. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An XML element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" line="62" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" bodystart="62" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/xml_lmf.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

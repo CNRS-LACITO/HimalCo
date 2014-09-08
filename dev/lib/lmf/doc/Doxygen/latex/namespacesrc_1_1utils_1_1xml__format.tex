@@ -1,0 +1,87 @@
+\hypertarget{namespacesrc_1_1utils_1_1xml__format}{\section{src.\+utils.\+xml\+\_\+format Namespace Reference}
+\label{namespacesrc_1_1utils_1_1xml__format}\index{src.\+utils.\+xml\+\_\+format@{src.\+utils.\+xml\+\_\+format}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesrc_1_1utils_1_1xml__format_a8ea2fa567596163ea9106fbf09dfefb3}{prettify}
+\begin{DoxyCompactList}\small\item\em Return a pretty-\/printed X\+M\+L string for the given X\+M\+L element. \end{DoxyCompactList}\item 
+def \hyperlink{namespacesrc_1_1utils_1_1xml__format_a31360d12f5b93238bcc05509956aa0f9}{write\+\_\+result}
+\begin{DoxyCompactList}\small\item\em Write an X\+M\+L element into a pretty X\+M\+L output file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacesrc_1_1utils_1_1xml__format_a706937e1d7094cf6a84f9aa08e7fdfc8}{parse\+\_\+xml}
+\begin{DoxyCompactList}\small\item\em Parse an X\+M\+L file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesrc_1_1utils_1_1xml__format_a706937e1d7094cf6a84f9aa08e7fdfc8}{\index{src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}!parse\+\_\+xml@{parse\+\_\+xml}}
+\index{parse\+\_\+xml@{parse\+\_\+xml}!src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}}
+\subsubsection[{parse\+\_\+xml}]{\setlength{\rightskip}{0pt plus 5cm}def src.\+utils.\+xml\+\_\+format.\+parse\+\_\+xml (
+\begin{DoxyParamCaption}
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}}\label{namespacesrc_1_1utils_1_1xml__format_a706937e1d7094cf6a84f9aa08e7fdfc8}
+
+
+Parse an X\+M\+L file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the X\+M\+L file to parse with full path, for instance 'user/input.\+xml'. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The root X\+M\+L element. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file xml\+\_\+format.\+py.
+
+\hypertarget{namespacesrc_1_1utils_1_1xml__format_a8ea2fa567596163ea9106fbf09dfefb3}{\index{src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}!prettify@{prettify}}
+\index{prettify@{prettify}!src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}}
+\subsubsection[{prettify}]{\setlength{\rightskip}{0pt plus 5cm}def src.\+utils.\+xml\+\_\+format.\+prettify (
+\begin{DoxyParamCaption}
+\item[{}]{element}
+\end{DoxyParamCaption}
+)}}\label{namespacesrc_1_1utils_1_1xml__format_a8ea2fa567596163ea9106fbf09dfefb3}
+
+
+Return a pretty-\/printed X\+M\+L string for the given X\+M\+L element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & An X\+M\+L element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Python string containing the printed version of the X\+M\+L element. 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file xml\+\_\+format.\+py.
+
+\hypertarget{namespacesrc_1_1utils_1_1xml__format_a31360d12f5b93238bcc05509956aa0f9}{\index{src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}!write\+\_\+result@{write\+\_\+result}}
+\index{write\+\_\+result@{write\+\_\+result}!src\+::utils\+::xml\+\_\+format@{src\+::utils\+::xml\+\_\+format}}
+\subsubsection[{write\+\_\+result}]{\setlength{\rightskip}{0pt plus 5cm}def src.\+utils.\+xml\+\_\+format.\+write\+\_\+result (
+\begin{DoxyParamCaption}
+\item[{}]{element, }
+\item[{}]{filename, }
+\item[{}]{encoding = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{namespacesrc_1_1utils_1_1xml__format_a31360d12f5b93238bcc05509956aa0f9}
+
+
+Write an X\+M\+L element into a pretty X\+M\+L output file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & An X\+M\+L element. \\
+\hline
+{\em filename} & The name of the X\+M\+L file to write with full path, for instance 'user/output.\+xml'. \\
+\hline
+{\em encoding} & Encoding mode. Default value is None. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file xml\+\_\+format.\+py.
+

@@ -1,0 +1,242 @@
+.TH "src.core.lexical_entry.LexicalEntry" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.core.lexical_entry.LexicalEntry \- 
+.PP
+This class represents a lexical entry\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fBset_partOfSpeech\fP"
+.br
+.RI "\fISet grammatical category\&. \fP"
+.ti -1c
+.RI "def \fBget_partOfSpeech\fP"
+.br
+.RI "\fIGet grammatical category\&. \fP"
+.ti -1c
+.RI "def \fBset_status\fP"
+.br
+.RI "\fISet lexical entry status\&. \fP"
+.ti -1c
+.RI "def \fBget_status\fP"
+.br
+.RI "\fIGet lexical entry status\&. \fP"
+.ti -1c
+.RI "def \fBget_id\fP"
+.br
+.RI "\fIGet Unique IDentifier\&. \fP"
+.ti -1c
+.RI "def \fBset_lexeme\fP"
+.br
+.RI "\fISet lexeme\&. \fP"
+.ti -1c
+.RI "def \fBget_lexeme\fP"
+.br
+.RI "\fIGet lexeme\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBhomonymNumber\fP"
+.br
+.ti -1c
+.RI "\fBstatus\fP"
+.br
+.ti -1c
+.RI "\fBdate\fP"
+.br
+.ti -1c
+.RI "\fBpartOfSpeech\fP"
+.br
+.ti -1c
+.RI "\fBindependentWord\fP"
+.br
+.ti -1c
+.RI "\fBbibliography\fP"
+.br
+.ti -1c
+.RI "\fBid\fP"
+.br
+.RI "\fIUnique IDentifier is managed at the Lexicon level\&. \fP"
+.ti -1c
+.RI "\fBlemma\fP"
+.br
+.RI "\fILemma instance is owned by \fBLexicalEntry\fP There is one Lemma instance by \fBLexicalEntry\fP instance\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class represents a lexical entry\&. 
+.PP
+Definition at line 8 of file lexical_entry\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.__init__ (self)"
+
+.PP
+Constructor\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A \fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file lexical_entry\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.get_id (self)"
+
+.PP
+Get Unique IDentifier\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'id'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 55 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.get_lexeme (self)"
+
+.PP
+Get lexeme\&. Attribute 'lexeme' is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Lemma attribute 'lexeme' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.get_partOfSpeech (self)"
+
+.PP
+Get grammatical category\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'partOfSpeech'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.get_status (self)"
+
+.PP
+Get lexical entry status\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'status'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.set_lexeme (self, lexeme)"
+
+.PP
+Set lexeme\&. Attribute 'lexeme' is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlexeme\fP The lexeme to set\&. 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.set_partOfSpeech (self, part_of_speech)"
+
+.PP
+Set grammatical category\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpart_of_speech\fP The grammatical category to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file lexical_entry\&.py\&.
+.SS "def src\&.core\&.lexical_entry\&.LexicalEntry\&.set_status (self, status)"
+
+.PP
+Set lexical entry status\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstatus\fP The status to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file lexical_entry\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.bibliography"
+
+.PP
+Definition at line 20 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.date"
+
+.PP
+Definition at line 17 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.homonymNumber"
+
+.PP
+Definition at line 15 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.id"
+
+.PP
+Unique IDentifier is managed at the Lexicon level\&. 
+.PP
+Definition at line 22 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.independentWord"
+
+.PP
+Definition at line 19 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.lemma"
+
+.PP
+Lemma instance is owned by \fBLexicalEntry\fP There is one Lemma instance by \fBLexicalEntry\fP instance\&. 
+.PP
+Definition at line 25 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.partOfSpeech"
+
+.PP
+Definition at line 18 of file lexical_entry\&.py\&.
+.SS "src\&.core\&.lexical_entry\&.LexicalEntry\&.status"
+
+.PP
+Definition at line 16 of file lexical_entry\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

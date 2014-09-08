@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.7">
+  <compound refid="classsrc_1_1resources_1_1audio_1_1_audio" kind="class"><name>src::resources::audio::Audio</name>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8ec1034a29b3c55692fae3be07f54605" kind="variable"><name>quality</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1a549dd2605f3d2d09ca8a8618ddf34fc9" kind="variable"><name>sound</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1a8d782bb99c64c395286d7f71a8c2ebf8" kind="variable"><name>startPosition</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1a0d0e84fdb0fd8961b8c033dc8d9782ac" kind="variable"><name>durationOfEffectiveSpeech</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1ac1da212e2eea3e4fa6ddb5f48c7364c2" kind="variable"><name>externalReference</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1aadc41b28801de70ba866a40892dce32c" kind="variable"><name>audioFileFormat</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1aef44fd13d82cd3f79150c76b9b6f4c3e" kind="variable"><name>transcription</name></member>
+    <member refid="classsrc_1_1resources_1_1audio_1_1_audio_1af81ebf2e8ce309279b44a7aba68563e9" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1component_1_1_component" kind="class"><name>src::morphology::component::Component</name>
+    <member refid="classsrc_1_1morphology_1_1component_1_1_component_1ab5cb7e1497254923c3298a569001092f" kind="variable"><name>position</name></member>
+    <member refid="classsrc_1_1morphology_1_1component_1_1_component_1a3ed51d589f00e3c5c1e9bd64721fed50" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1mrd_1_1context_1_1_context" kind="class"><name>src::mrd::context::Context</name>
+    <member refid="classsrc_1_1mrd_1_1context_1_1_context_1ad504d055fa60193f73138b5fbd5a1bf2" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1mrd_1_1context_1_1_context_1aa58d522c3916eb637d7a3e8080dccdb3" kind="variable"><name>type</name></member>
+    <member refid="classsrc_1_1mrd_1_1context_1_1_context_1a42d39e1c94298a3016de8d32c0c87080" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1definition_1_1_definition" kind="class"><name>src::core::definition::Definition</name>
+    <member refid="classsrc_1_1core_1_1definition_1_1_definition_1a334db4f6dddebc769ed5c7b44d2f96bf" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1core_1_1definition_1_1_definition_1aa135ea494fc7cef95ce3807f979621bf" kind="variable"><name>definition</name></member>
+    <member refid="classsrc_1_1core_1_1definition_1_1_definition_1abcb3ba5e519cc0e98f149754b5810301" kind="variable"><name>gloss</name></member>
+    <member refid="classsrc_1_1core_1_1definition_1_1_definition_1a568bed4ba9074aeb669875ac640b129e" kind="variable"><name>literally</name></member>
+    <member refid="classsrc_1_1core_1_1definition_1_1_definition_1ac40b223a739535bd4141937ab01783e7" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent" kind="class"><name>src::mrd::equivalent::Equivalent</name>
+    <member refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a827bb0b73adca115ffdf6f5a95f807bf" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a607911fadc9f5751ca553cb7c47d300f" kind="variable"><name>translation</name></member>
+    <member refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a83ca8d23dc75be6f6a7e6a318a91aa48" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1utils_1_1error__handling_1_1_error_handling" kind="class"><name>src::utils::error_handling::ErrorHandling</name>
+    <member refid="classsrc_1_1utils_1_1error__handling_1_1_error_handling_1a075a85ea959939e8063dcde9cc93c10f" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1form_1_1_form" kind="class"><name>src::core::form::Form</name>
+    <member refid="classsrc_1_1core_1_1form_1_1_form_1a0e200dbcf3f01a53844854ae84509c15" kind="variable"><name>variantForm</name></member>
+    <member refid="classsrc_1_1core_1_1form_1_1_form_1afc077dc1d02f87ed61603f0ddeaebde8" kind="variable"><name>type</name></member>
+    <member refid="classsrc_1_1core_1_1form_1_1_form_1ad690f26f41ad66656c19e30ed1d7827d" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1form__representation_1_1_form_representation" kind="class"><name>src::core::form_representation::FormRepresentation</name>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1afe034e736b48176000fca76d8b8604ef" kind="variable"><name>transliteration</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1a5b9d85ec2c63d3d93f09da2c569234a0" kind="variable"><name>tone</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1a810f62688bdea5e822712c4382c6d6f3" kind="variable"><name>geographicalVariant</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1aab45e1639b37a2b07631aa47729ed09d" kind="variable"><name>phoneticForm</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1ab29cfe204850c7d0d7348605b570cc5c" kind="variable"><name>contextualVariation</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1acbb491e2075ba5ce28b7159e1fa42154" kind="variable"><name>spellingVariant</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1a467fc5cd662d8577f16725637a7dc7ad" kind="variable"><name>citationForm</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1abc0dcbe740b5309dd4e4a111bdc11965" kind="variable"><name>dialect</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1afd3e6d24af2c00ddf6286305aea9bb6f" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1a4d1bead536706462cc8c8851ffb53ad5" kind="variable"><name>scriptName</name></member>
+    <member refid="classsrc_1_1core_1_1form__representation_1_1_form_representation_1a1ee2134537d3b54509f31ddd9fa21ead" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1global__information_1_1_global_information" kind="class"><name>src::core::global_information::GlobalInformation</name>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a67df050014c5e4f44cd0d34c5c97da3f" kind="variable"><name>languageCode</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a75ba6ca3c99930f8b46906f7622c36aa" kind="variable"><name>author</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a48a0e9271d030e4d1b1f89aa7f8ecf39" kind="variable"><name>version</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a4c3c1476f39150406420455273d6dbd0" kind="variable"><name>lastUpdate</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1ae9146603dba3654d72081b02e68c99d7" kind="variable"><name>license</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1affc1f1a49521c8d27523b47ccf7a0724" kind="variable"><name>characterEncoding</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1aaa8008762d8d3afa73ea17c110d3813b" kind="variable"><name>dateCoding</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1aa6e73ed38a7a4faf7a1d076b03e2afa7" kind="variable"><name>creationDate</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1aa75b2e04e65ddb9d9f7f78c15d049961" kind="variable"><name>projectName</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1ad9432db5c5b0393589658eb92a17bce3" kind="variable"><name>description</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a036b2ccf0faed59803b88f4ecb8dfc19" kind="variable"><name>bibliographicCitation</name></member>
+    <member refid="classsrc_1_1core_1_1global__information_1_1_global_information_1a6538239b5662f3a2753673c7c219bfe9" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource" kind="class"><name>src::resources::human_resource::HumanResource</name>
+    <member refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource_1a73511a367ec14498cacc3fdb0cc77b22" kind="variable"><name>name</name></member>
+    <member refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource_1ad0af6551d89a2adfb08459104f46afcd" kind="variable"><name>anonymizationFlag</name></member>
+    <member refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource_1a78c9919983d0f23160d8fe45732f139d" kind="variable"><name>reference</name></member>
+    <member refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource_1af7a5b2ee569964a16652fc96298ea6bd" kind="variable"><name>source</name></member>
+    <member refid="classsrc_1_1resources_1_1human__resource_1_1_human_resource_1addeb94d9e7515701c687ddabbac2d41a" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1lemma_1_1_lemma" kind="class"><name>src::morphology::lemma::Lemma</name>
+    <member refid="classsrc_1_1morphology_1_1lemma_1_1_lemma_1a348c056c8be44e7e9b3e9c55e9973154" kind="variable"><name>hyphenation</name></member>
+    <member refid="classsrc_1_1morphology_1_1lemma_1_1_lemma_1a7748c9b434cf254c617934fe550138bb" kind="variable"><name>lexeme</name></member>
+    <member refid="classsrc_1_1morphology_1_1lemma_1_1_lemma_1ab3860c335c5f4f9a1f05503aea52432a" kind="function"><name>__init__</name></member>
+    <member refid="classsrc_1_1morphology_1_1lemma_1_1_lemma_1aa67436a851e3c33061bcce5834715be8" kind="function"><name>set_lexeme</name></member>
+    <member refid="classsrc_1_1morphology_1_1lemma_1_1_lemma_1a8b587cf5fa331a41d3ad969085b628c3" kind="function"><name>get_lexeme</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry" kind="class"><name>src::core::lexical_entry::LexicalEntry</name>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1aa7a1e19f555ab214c4c4280fefe84bff" kind="variable"><name>homonymNumber</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a661ab019b1e1fde2f86158a566eba3fd" kind="variable"><name>status</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaa4dae2afec96335786b54c8d5b5f12e" kind="variable"><name>date</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a9f7833c971ca31885d3d7383fb394d03" kind="variable"><name>partOfSpeech</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a93614de55bcf2c644c9c048812e318f8" kind="variable"><name>independentWord</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a9f128ce8e68efcbab65b4163a56ab0dd" kind="variable"><name>bibliography</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a210b91bf8efc402f897e4a62b9e24341" kind="variable"><name>id</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a616298be2e81b660fc8e6eccd7c4dcfb" kind="variable"><name>lemma</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad07b137971a11c6c47b713d73453711a" kind="function"><name>__init__</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a8a612b39c5eebb3ee3d5deffbb3b2fda" kind="function"><name>set_partOfSpeech</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad5c7bc9ada1f19b0ca45a645d8dbab82" kind="function"><name>get_partOfSpeech</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a73f06145dc2f2d50eb7c62d0604f5b69" kind="function"><name>set_status</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a7657aabb009cb71d94f8f5abd67e2ed4" kind="function"><name>get_status</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a5caac60aebc0855ed5a1522bca0d5f0e" kind="function"><name>get_id</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a0dcb24c70fdad0cc4ed49d8c18d7e93d" kind="function"><name>set_lexeme</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry_1a3a816168935e5601847decc2036cf1ee" kind="function"><name>get_lexeme</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1lexical__resource_1_1_lexical_resource" kind="class"><name>src::core::lexical_resource::LexicalResource</name>
+    <member refid="classsrc_1_1core_1_1lexical__resource_1_1_lexical_resource_1a8c8a0a171fe52f3ef8db4a58898ece0f" kind="variable"><name>dtdVersion</name></member>
+    <member refid="classsrc_1_1core_1_1lexical__resource_1_1_lexical_resource_1a0915db40dd08736e7654cb4c7aaf2456" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1lexicon_1_1_lexicon" kind="class"><name>src::core::lexicon::Lexicon</name>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a142d9d1c45eac0ece70b80c5a8033b02" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a0e5ff6cffd788ae4ca6bdd069c6938ba" kind="variable"><name>languageScript</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1ac76ee39a545b73a67d005b00645ec7cc" kind="variable"><name>id</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a478e60c805dd1d5bc4e2bf7f3b5c8be0" kind="variable"><name>label</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a1e0df327bd01235e6e38a214584cef5d" kind="variable"><name>lexiconType</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a0d7e1062a1ed7788520c7db08e8b1d40" kind="variable"><name>entrySource</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a90017a2b027d2510fcdd6ff2be0ea7af" kind="variable"><name>vowelHarmony</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a634b78912763e32484be1adb095bbe21" kind="variable"><name>lexical_entry</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a4e1bde14f0dab23d8b6462beb438a3b8" kind="function"><name>__init__</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1ab86f6df343dcce5256e00df0876d00dc" kind="function"><name>get_lexical_entries</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1ae07f5ea7bb47595d8f0559910663c66e" kind="function"><name>add_lexical_entry</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a50ea2e94e8faf8d4d653695cd573af06" kind="function"><name>remove_lexical_entry</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1ab3f928e814243282a8dc81745cc3b8a5" kind="function"><name>count_lexical_entries</name></member>
+    <member refid="classsrc_1_1core_1_1lexicon_1_1_lexicon_1a650614d631962184f7aeca94569c6245" kind="function"><name>sort_lexical_entries</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components" kind="class"><name>src::morphology::list_of_components::ListOfComponents</name>
+    <member refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components_1a52336fc93ba2acd8f1924ccc49abeb55" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1material_1_1_material" kind="class"><name>src::resources::material::Material</name>
+    <member refid="classsrc_1_1resources_1_1material_1_1_material_1a35db3f075a5181c69216cace9731e0b7" kind="variable"><name>mediaType</name></member>
+    <member refid="classsrc_1_1resources_1_1material_1_1_material_1ae70ad8b49785fe35dba81e544501e83d" kind="variable"><name>fileName</name></member>
+    <member refid="classsrc_1_1resources_1_1material_1_1_material_1a481f2b82f2fda15566b03d0d46daff53" kind="variable"><name>author</name></member>
+    <member refid="classsrc_1_1resources_1_1material_1_1_material_1acc86fb2da395d5491fe90bedaf014acd" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm" kind="class"><name>src::morphosyntax::paradigm::Paradigm</name>
+    <member refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a53996d262b7c39f45cf3daec60ff0e39" kind="variable"><name>paradigmLabel</name></member>
+    <member refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aef28fdb51b77696c54e77470db8fc9ae" kind="variable"><name>paradigm</name></member>
+    <member refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4b3e5aa320792c052f0e8e7d50fc343d" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a565900f79670711f1b9774bf0e0c2c9b" kind="variable"><name>morphology</name></member>
+    <member refid="classsrc_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a4406d466889b7ca626bf043b3654b6ad" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1picture_1_1_picture" kind="class"><name>src::resources::picture::Picture</name>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1a003b41ddc2d0551e5f8271eea1563f88" kind="variable"><name>filename</name></member>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1a3eac2bc1d9a3bc1f85b441e16719a4b7" kind="variable"><name>reference</name></member>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1ad9329b3048acfd8dacef0dfe9ca57ded" kind="variable"><name>width</name></member>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1a7648bd554fb274458f7cc32fa7c48e4a" kind="variable"><name>height</name></member>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1afce02889d8db77869eee3103da6c46f5" kind="variable"><name>format</name></member>
+    <member refid="classsrc_1_1resources_1_1picture_1_1_picture_1adc6ea066102180580a8183fd9c8d6d09" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1related__form_1_1_related_form" kind="class"><name>src::morphology::related_form::RelatedForm</name>
+    <member refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1a266c933a3387b83a172bc18bb1bcc556" kind="variable"><name>semanticRelation</name></member>
+    <member refid="classsrc_1_1morphology_1_1related__form_1_1_related_form_1abdb8f278733f3a984fd77232c417fde4" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1representation_1_1_representation" kind="class"><name>src::core::representation::Representation</name>
+    <member refid="classsrc_1_1core_1_1representation_1_1_representation_1a72e49f86ec58c698f2a75c2046d25d62" kind="variable"><name>comment</name></member>
+    <member refid="classsrc_1_1core_1_1representation_1_1_representation_1ad4ec4b05057384573370ea9513f16a8f" kind="variable"><name>writtenForm</name></member>
+    <member refid="classsrc_1_1core_1_1representation_1_1_representation_1a01443961d9cdedf9d6353d9a140644d6" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1core_1_1representation_1_1_representation_1ac2a2d057963db31cf13f93cee36c8c64" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1resource_1_1_resource" kind="class"><name>src::resources::resource::Resource</name>
+    <member refid="classsrc_1_1resources_1_1resource_1_1_resource_1ab121b71dde3799e39bc6de236263279f" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1sense_1_1_sense" kind="class"><name>src::core::sense::Sense</name>
+    <member refid="classsrc_1_1core_1_1sense_1_1_sense_1acfebe4764025fd6062674315e2c4230f" kind="variable"><name>senseNumber</name></member>
+    <member refid="classsrc_1_1core_1_1sense_1_1_sense_1a37a8c62a8fbdbc3191b25b2654197307" kind="variable"><name>id</name></member>
+    <member refid="classsrc_1_1core_1_1sense_1_1_sense_1a006b5ecf12a85db68f7bab5af6fed6c3" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1speaker_1_1_speaker" kind="class"><name>src::resources::speaker::Speaker</name>
+    <member refid="classsrc_1_1resources_1_1speaker_1_1_speaker_1abe55b033660bc93fd7400f01a996a2dc" kind="variable"><name>speakerID</name></member>
+    <member refid="classsrc_1_1resources_1_1speaker_1_1_speaker_1a019f0817887d4145fc13f4696a4f8baa" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1statement_1_1_statement" kind="class"><name>src::core::statement::Statement</name>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a2cbc454e31333b14ed7f894df8af2fce" kind="variable"><name>noteType</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a2edc72dff8f04376c6f09fc9a270503b" kind="variable"><name>note</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a62916eea6e03f2115544f9fd6d8042fc" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1ac27bf20184c2fe3fc081af160a34b078" kind="variable"><name>encyclopedicInformation</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1afbcca36f7315bd8b556f31a6c73da2e8" kind="variable"><name>usageNote</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a95cc64760bb64c330e5dc921c00981c9" kind="variable"><name>restriction</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a43c11e8a1f1b8dcf1c47138630ce9014" kind="variable"><name>derivation</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1ad335aefcefa9ae166c0cae1e553e2bf3" kind="variable"><name>borrowedWord</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a754fb4718f6f6a7999094cedb98716cb" kind="variable"><name>writtenForm</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1aae184efd75880bebe51b7c8161ce0e81" kind="variable"><name>sense</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a39257f2e47ab775116eae335c871f30d" kind="variable"><name>etymology</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a75153a36438fe45f7b4c6da80dc2eb5b" kind="variable"><name>etymologyComment</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1ac5b1ca26900e8f0d6407658195820157" kind="variable"><name>etymologyGloss</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1afb34d7f04ad71ed5a0fe62932305f743" kind="variable"><name>etymologySource</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1ab1bd16d721a81ebae7f1e0fb5da23d0f" kind="variable"><name>termSourceLanguage</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1a8ff06170be6b1b8856c0b2c78c458dac" kind="variable"><name>targetLexicalEntry</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1addc80054a840f2859f503389e53a247c" kind="variable"><name>scientificName</name></member>
+    <member refid="classsrc_1_1core_1_1statement_1_1_statement_1abf2bda0e5f09d1f483ce7ab7d1eb9909" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1stem_1_1_stem" kind="class"><name>src::morphology::stem::Stem</name>
+    <member refid="classsrc_1_1morphology_1_1stem_1_1_stem_1a8af7e8adc4f76994ac9417d0e7b8cd06" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field" kind="class"><name>src::mrd::subject_field::SubjectField</name>
+    <member refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1ab7baf8a7df0ac57286e05d3f8442424e" kind="variable"><name>language</name></member>
+    <member refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a06a0125c3d3f9b33c5fad6a89994a123" kind="variable"><name>semanticDomain</name></member>
+    <member refid="classsrc_1_1mrd_1_1subject__field_1_1_subject_field_1a3eefbd187b50f3befa0169c72a287991" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1core_1_1text__representation_1_1_text_representation" kind="class"><name>src::core::text_representation::TextRepresentation</name>
+    <member refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1aeb2f021498890dec4d8daff88cf704b8" kind="variable"><name>font</name></member>
+    <member refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1a4e022375d60b50b1b84aac1083650c4b" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1resources_1_1video_1_1_video" kind="class"><name>src::resources::video::Video</name>
+    <member refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" kind="variable"><name>description</name></member>
+    <member refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classsrc_1_1morphology_1_1word__form_1_1_word_form" kind="class"><name>src::morphology::word_form::WordForm</name>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1affc0a3ba96904019be2b92d55e832bcb" kind="variable"><name>grammaticalNumber</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a44467b3575140671b680bca5ee0b0483" kind="variable"><name>grammaticalGender</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a8c2487c9b360cc067bcb40ee7cf8d8c5" kind="variable"><name>person</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1aa82c3234c1c9f209b7b8d6b2e3c3c246" kind="variable"><name>anymacy</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a04e4f04ce56e4a9628b8ceea29b4573c" kind="variable"><name>clusivity</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a1436b5d9574c2a0096b46fa607424576" kind="variable"><name>tense</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1ab7de838ba2c0638094e58d2decd238af" kind="variable"><name>case</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1adf2ee9bb3f0c2618cb4aaa6065300531" kind="variable"><name>degree</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1ac6fbf70d32545170d2b203a58532706d" kind="variable"><name>voice</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a5af5bbdaf2247140e5379dbcf4994ec9" kind="variable"><name>verbFormMood</name></member>
+    <member refid="classsrc_1_1morphology_1_1word__form_1_1_word_form_1a739f72b577db8e5cf86463a0d82bbe05" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="namespacesrc" kind="namespace"><name>src</name>
+  </compound>
+  <compound refid="namespacesrc_1_1common" kind="namespace"><name>src::common</name>
+  </compound>
+  <compound refid="namespacesrc_1_1config" kind="namespace"><name>src::config</name>
+  </compound>
+  <compound refid="namespacesrc_1_1config_1_1mdf" kind="namespace"><name>src::config::mdf</name>
+    <member refid="namespacesrc_1_1config_1_1mdf_1af881a7b706c096ffc4facc7ffafa7687" kind="variable"><name>mdf_lmf</name></member>
+    <member refid="namespacesrc_1_1config_1_1mdf_1a0761366bb6d76340e4bea370efce7a7a" kind="variable"><name>mdf_order</name></member>
+    <member refid="namespacesrc_1_1config_1_1mdf_1a85342c221b552d567a7af5ca05c83727" kind="variable"><name>lmf_mdf</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1config_1_1tex" kind="namespace"><name>src::config::tex</name>
+    <member refid="namespacesrc_1_1config_1_1tex_1a11191ac7f2134958a9de8155e88af9a9" kind="variable"><name>tex_order</name></member>
+    <member refid="namespacesrc_1_1config_1_1tex_1ab73c6746f87c74d6f58c26f60a5f4d5e" kind="variable"><name>lmf_tex</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1core" kind="namespace"><name>src::core</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1definition" kind="namespace"><name>src::core::definition</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1form" kind="namespace"><name>src::core::form</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1form__representation" kind="namespace"><name>src::core::form_representation</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1global__information" kind="namespace"><name>src::core::global_information</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1lexical__entry" kind="namespace"><name>src::core::lexical_entry</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1lexical__resource" kind="namespace"><name>src::core::lexical_resource</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1lexicon" kind="namespace"><name>src::core::lexicon</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1representation" kind="namespace"><name>src::core::representation</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1sense" kind="namespace"><name>src::core::sense</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1statement" kind="namespace"><name>src::core::statement</name>
+  </compound>
+  <compound refid="namespacesrc_1_1core_1_1text__representation" kind="namespace"><name>src::core::text_representation</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input" kind="namespace"><name>src::input</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1elan" kind="namespace"><name>src::input::elan</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1ite" kind="namespace"><name>src::input::ite</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1mdf" kind="namespace"><name>src::input::mdf</name>
+    <member refid="namespacesrc_1_1input_1_1mdf_1a7990f7f774641727761c36d0ecc78e92" kind="function"><name>mdf_read</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1toolbox__settings" kind="namespace"><name>src::input::toolbox_settings</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1txt" kind="namespace"><name>src::input::txt</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1xls" kind="namespace"><name>src::input::xls</name>
+  </compound>
+  <compound refid="namespacesrc_1_1input_1_1xml__lmf" kind="namespace"><name>src::input::xml_lmf</name>
+    <member refid="namespacesrc_1_1input_1_1xml__lmf_1a30fc17ed012d8c1ffca259f4d2f496ec" kind="function"><name>compute_name</name></member>
+    <member refid="namespacesrc_1_1input_1_1xml__lmf_1abf5d0ebfe32a931e8bf0f292cf44658f" kind="function"><name>factory</name></member>
+    <member refid="namespacesrc_1_1input_1_1xml__lmf_1aa225ed6de34fb14e2fa7a209eff26592" kind="function"><name>xml_lmf_read</name></member>
+    <member refid="namespacesrc_1_1input_1_1xml__lmf_1aa47e441bb03580d934a631cb0af9bd1b" kind="function"><name>get_sub_elements</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology" kind="namespace"><name>src::morphology</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1component" kind="namespace"><name>src::morphology::component</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1lemma" kind="namespace"><name>src::morphology::lemma</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1list__of__components" kind="namespace"><name>src::morphology::list_of_components</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1related__form" kind="namespace"><name>src::morphology::related_form</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1stem" kind="namespace"><name>src::morphology::stem</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphology_1_1word__form" kind="namespace"><name>src::morphology::word_form</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphosyntax" kind="namespace"><name>src::morphosyntax</name>
+  </compound>
+  <compound refid="namespacesrc_1_1morphosyntax_1_1paradigm" kind="namespace"><name>src::morphosyntax::paradigm</name>
+  </compound>
+  <compound refid="namespacesrc_1_1mrd" kind="namespace"><name>src::mrd</name>
+  </compound>
+  <compound refid="namespacesrc_1_1mrd_1_1context" kind="namespace"><name>src::mrd::context</name>
+  </compound>
+  <compound refid="namespacesrc_1_1mrd_1_1equivalent" kind="namespace"><name>src::mrd::equivalent</name>
+  </compound>
+  <compound refid="namespacesrc_1_1mrd_1_1subject__field" kind="namespace"><name>src::mrd::subject_field</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output" kind="namespace"><name>src::output</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1doc" kind="namespace"><name>src::output::doc</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1html" kind="namespace"><name>src::output::html</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1mdf" kind="namespace"><name>src::output::mdf</name>
+    <member refid="namespacesrc_1_1output_1_1mdf_1a71397767dc07eda4ff1586de29e7c25d" kind="function"><name>mdf_write</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1tex" kind="namespace"><name>src::output::tex</name>
+    <member refid="namespacesrc_1_1output_1_1tex_1a0d88951ca91a678658025f0aff46c341" kind="function"><name>compute_header</name></member>
+    <member refid="namespacesrc_1_1output_1_1tex_1abc62b0543c20d8f1d0fe63f1b52726c8" kind="function"><name>tex_write</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1txt" kind="namespace"><name>src::output::txt</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xls" kind="namespace"><name>src::output::xls</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__ite" kind="namespace"><name>src::output::xml_ite</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__lift" kind="namespace"><name>src::output::xml_lift</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__lmf" kind="namespace"><name>src::output::xml_lmf</name>
+    <member refid="namespacesrc_1_1output_1_1xml__lmf_1ab56e6b137509922dcf1fa2cb1d3281c5" kind="function"><name>xml_lmf_write</name></member>
+    <member refid="namespacesrc_1_1output_1_1xml__lmf_1a1b9d00f470b9460f85a41475d2014b36" kind="function"><name>build_sub_elements</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__lp" kind="namespace"><name>src::output::xml_lp</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__olif" kind="namespace"><name>src::output::xml_olif</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__tb" kind="namespace"><name>src::output::xml_tb</name>
+  </compound>
+  <compound refid="namespacesrc_1_1output_1_1xml__tei" kind="namespace"><name>src::output::xml_tei</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources" kind="namespace"><name>src::resources</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1audio" kind="namespace"><name>src::resources::audio</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1human__resource" kind="namespace"><name>src::resources::human_resource</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1material" kind="namespace"><name>src::resources::material</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1picture" kind="namespace"><name>src::resources::picture</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1resource" kind="namespace"><name>src::resources::resource</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1speaker" kind="namespace"><name>src::resources::speaker</name>
+  </compound>
+  <compound refid="namespacesrc_1_1resources_1_1video" kind="namespace"><name>src::resources::video</name>
+  </compound>
+  <compound refid="namespacesrc_1_1utils" kind="namespace"><name>src::utils</name>
+  </compound>
+  <compound refid="namespacesrc_1_1utils_1_1error__handling" kind="namespace"><name>src::utils::error_handling</name>
+  </compound>
+  <compound refid="namespacesrc_1_1utils_1_1io" kind="namespace"><name>src::utils::io</name>
+    <member refid="namespacesrc_1_1utils_1_1io_1a33d31190a38cbf2fadf38559eb950eab" kind="function"><name>open_file</name></member>
+    <member refid="namespacesrc_1_1utils_1_1io_1aaca202c1b026ebdc4ff5eec904197623" kind="function"><name>open_read</name></member>
+    <member refid="namespacesrc_1_1utils_1_1io_1a63178ca81911ae28965794aef365250c" kind="function"><name>open_write</name></member>
+  </compound>
+  <compound refid="namespacesrc_1_1utils_1_1xml__format" kind="namespace"><name>src::utils::xml_format</name>
+    <member refid="namespacesrc_1_1utils_1_1xml__format_1a8ea2fa567596163ea9106fbf09dfefb3" kind="function"><name>prettify</name></member>
+    <member refid="namespacesrc_1_1utils_1_1xml__format_1a31360d12f5b93238bcc05509956aa0f9" kind="function"><name>write_result</name></member>
+    <member refid="namespacesrc_1_1utils_1_1xml__format_1a706937e1d7094cf6a84f9aa08e7fdfc8" kind="function"><name>parse_xml</name></member>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="common_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="config_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="core_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="input_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="morphology_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="morphosyntax_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="mrd_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="output_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="resources_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="utils_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="config_2mdf_8py" kind="file"><name>mdf.py</name>
+  </compound>
+  <compound refid="input_2mdf_8py" kind="file"><name>mdf.py</name>
+  </compound>
+  <compound refid="output_2mdf_8py" kind="file"><name>mdf.py</name>
+  </compound>
+  <compound refid="config_2tex_8py" kind="file"><name>tex.py</name>
+  </compound>
+  <compound refid="output_2tex_8py" kind="file"><name>tex.py</name>
+  </compound>
+  <compound refid="definition_8py" kind="file"><name>definition.py</name>
+  </compound>
+  <compound refid="form_8py" kind="file"><name>form.py</name>
+  </compound>
+  <compound refid="form__representation_8py" kind="file"><name>form_representation.py</name>
+  </compound>
+  <compound refid="global__information_8py" kind="file"><name>global_information.py</name>
+  </compound>
+  <compound refid="lexical__entry_8py" kind="file"><name>lexical_entry.py</name>
+  </compound>
+  <compound refid="lexical__resource_8py" kind="file"><name>lexical_resource.py</name>
+  </compound>
+  <compound refid="lexicon_8py" kind="file"><name>lexicon.py</name>
+  </compound>
+  <compound refid="representation_8py" kind="file"><name>representation.py</name>
+  </compound>
+  <compound refid="sense_8py" kind="file"><name>sense.py</name>
+  </compound>
+  <compound refid="statement_8py" kind="file"><name>statement.py</name>
+  </compound>
+  <compound refid="text__representation_8py" kind="file"><name>text_representation.py</name>
+  </compound>
+  <compound refid="elan_8py" kind="file"><name>elan.py</name>
+  </compound>
+  <compound refid="ite_8py" kind="file"><name>ite.py</name>
+  </compound>
+  <compound refid="toolbox__settings_8py" kind="file"><name>toolbox_settings.py</name>
+  </compound>
+  <compound refid="input_2txt_8py" kind="file"><name>txt.py</name>
+  </compound>
+  <compound refid="output_2txt_8py" kind="file"><name>txt.py</name>
+  </compound>
+  <compound refid="input_2xls_8py" kind="file"><name>xls.py</name>
+  </compound>
+  <compound refid="output_2xls_8py" kind="file"><name>xls.py</name>
+  </compound>
+  <compound refid="input_2xml__lmf_8py" kind="file"><name>xml_lmf.py</name>
+  </compound>
+  <compound refid="output_2xml__lmf_8py" kind="file"><name>xml_lmf.py</name>
+  </compound>
+  <compound refid="component_8py" kind="file"><name>component.py</name>
+  </compound>
+  <compound refid="lemma_8py" kind="file"><name>lemma.py</name>
+  </compound>
+  <compound refid="list__of__components_8py" kind="file"><name>list_of_components.py</name>
+  </compound>
+  <compound refid="related__form_8py" kind="file"><name>related_form.py</name>
+  </compound>
+  <compound refid="stem_8py" kind="file"><name>stem.py</name>
+  </compound>
+  <compound refid="word__form_8py" kind="file"><name>word_form.py</name>
+  </compound>
+  <compound refid="paradigm_8py" kind="file"><name>paradigm.py</name>
+  </compound>
+  <compound refid="context_8py" kind="file"><name>context.py</name>
+  </compound>
+  <compound refid="equivalent_8py" kind="file"><name>equivalent.py</name>
+  </compound>
+  <compound refid="subject__field_8py" kind="file"><name>subject_field.py</name>
+  </compound>
+  <compound refid="doc_8py" kind="file"><name>doc.py</name>
+  </compound>
+  <compound refid="html_8py" kind="file"><name>html.py</name>
+  </compound>
+  <compound refid="xml__ite_8py" kind="file"><name>xml_ite.py</name>
+  </compound>
+  <compound refid="xml__lift_8py" kind="file"><name>xml_lift.py</name>
+  </compound>
+  <compound refid="xml__lp_8py" kind="file"><name>xml_lp.py</name>
+  </compound>
+  <compound refid="xml__olif_8py" kind="file"><name>xml_olif.py</name>
+  </compound>
+  <compound refid="xml__tb_8py" kind="file"><name>xml_tb.py</name>
+  </compound>
+  <compound refid="xml__tei_8py" kind="file"><name>xml_tei.py</name>
+  </compound>
+  <compound refid="audio_8py" kind="file"><name>audio.py</name>
+  </compound>
+  <compound refid="human__resource_8py" kind="file"><name>human_resource.py</name>
+  </compound>
+  <compound refid="material_8py" kind="file"><name>material.py</name>
+  </compound>
+  <compound refid="picture_8py" kind="file"><name>picture.py</name>
+  </compound>
+  <compound refid="resource_8py" kind="file"><name>resource.py</name>
+  </compound>
+  <compound refid="speaker_8py" kind="file"><name>speaker.py</name>
+  </compound>
+  <compound refid="video_8py" kind="file"><name>video.py</name>
+  </compound>
+  <compound refid="error__handling_8py" kind="file"><name>error_handling.py</name>
+  </compound>
+  <compound refid="io_8py" kind="file"><name>io.py</name>
+  </compound>
+  <compound refid="xml__format_8py" kind="file"><name>xml_format.py</name>
+  </compound>
+  <compound refid="dir_fdedb0aba14d44ce9d99bc100e026e6a" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common</name>
+  </compound>
+  <compound refid="dir_7e83d1792d529f4aa7126ac7e0b3b699" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config</name>
+  </compound>
+  <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core</name>
+  </compound>
+  <compound refid="dir_d365e15d984c8d0205117ee0c40d6716" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input</name>
+  </compound>
+  <compound refid="dir_e90203461e6d276b90f080e0eaddb2d9" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology</name>
+  </compound>
+  <compound refid="dir_af8f6457e16766376d6c6b027f7bba3b" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax</name>
+  </compound>
+  <compound refid="dir_e75997d6ca669042af8476bab68fd813" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd</name>
+  </compound>
+  <compound refid="dir_994de0fd01319e484ee1453a6afebed0" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output</name>
+  </compound>
+  <compound refid="dir_fa3b942b33b04fef8622e6ed9abffc5c" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src</name>
+  </compound>
+  <compound refid="dir_313caf1132e152dd9b58bea13a4052ca" kind="dir"><name>/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry" kind="class" prot="public">
+    <compoundname>src::resources::lexical_entry::LexicalEntry</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a96d489c77c1762c5d99258b33a5188d7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::homonymNumber</definition>
+        <argsstring></argsstring>
+        <name>homonymNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="3" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a121e70fe8e1d31e711d7fb62d1de82bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="4" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a5b2b53f127e66404beaf084ff19e258d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a46b822c5855f5360e5023f35d66478f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::partOfSpeech</definition>
+        <argsstring></argsstring>
+        <name>partOfSpeech</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a02159532576e712c6818a84130d0c8dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::independentWord</definition>
+        <argsstring></argsstring>
+        <name>independentWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1afe7e2fa1eb3e36ab9d792ae6504fa1a5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::bibliography</definition>
+        <argsstring></argsstring>
+        <name>bibliography</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a82f37d6c2d9c65a0272a0a671b64eddc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>src.resources.lexical_entry.LexicalEntry::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a5a2fb447cf525d83fb9618b71362e090" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def src.resources.lexical_entry.LexicalEntry.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="2" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="2" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="84">
+        <label>src.resources.lexical_entry.LexicalEntry</label>
+        <link refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="86">
+        <label>src.resources.lexical_entry.LexicalEntry</label>
+        <link refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" line="1" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/lexical_entry.py" bodystart="1" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a5a2fb447cf525d83fb9618b71362e090" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>__init__</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1afe7e2fa1eb3e36ab9d792ae6504fa1a5" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>bibliography</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a5b2b53f127e66404beaf084ff19e258d" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>date</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a96d489c77c1762c5d99258b33a5188d7" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>homonymNumber</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a82f37d6c2d9c65a0272a0a671b64eddc" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>id</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a02159532576e712c6818a84130d0c8dc" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>independentWord</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a46b822c5855f5360e5023f35d66478f0" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>partOfSpeech</name></member>
+      <member refid="classsrc_1_1resources_1_1lexical__entry_1_1_lexical_entry_1a121e70fe8e1d31e711d7fb62d1de82bd" prot="public" virt="non-virtual"><scope>src::resources::lexical_entry::LexicalEntry</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

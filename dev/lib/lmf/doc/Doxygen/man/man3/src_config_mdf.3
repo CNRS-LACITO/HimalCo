@@ -1,0 +1,63 @@
+.TH "src.config.mdf" 3 "Thu Sep 18 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src.config.mdf \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBmdf_lmf\fP"
+.br
+.RI "\fIMapping between MDF markers and LMF representation (input) \fP"
+.ti -1c
+.RI "list \fBmdf_order\fP = ['lx', 'ps', 'st']"
+.br
+.RI "\fIOrder in which MDF markers must be written (output) \fP"
+.ti -1c
+.RI "tuple \fBlmf_mdf\fP"
+.br
+.RI "\fIMapping between LMF representation and MDF markers (output) \fP"
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "tuple src\&.config\&.mdf\&.lmf_mdf"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "lx" : lambda lexical_entry: lexical_entry\&.get_lexeme(),
+3     "ps" : lambda lexical_entry: lexical_entry\&.get_partOfSpeech(),
+4     "st" : lambda lexical_entry: lexical_entry\&.get_status()
+5 })
+.fi
+.PP
+Mapping between LMF representation and MDF markers (output) 
+.PP
+Definition at line 14 of file mdf\&.py\&.
+.SS "tuple src\&.config\&.mdf\&.mdf_lmf"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "lx" : lambda lx, lexical_entry: lexical_entry\&.set_lexeme(lx),
+3     "ps" : lambda ps, lexical_entry: lexical_entry\&.set_partOfSpeech(ps),
+4     "st" : lambda st, lexical_entry: lexical_entry\&.set_status(st)
+5 })
+.fi
+.PP
+Mapping between MDF markers and LMF representation (input) 
+.PP
+Definition at line 4 of file mdf\&.py\&.
+.SS "list src\&.config\&.mdf\&.mdf_order = ['lx', 'ps', 'st']"
+
+.PP
+Order in which MDF markers must be written (output) 
+.PP
+Definition at line 11 of file mdf\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.
