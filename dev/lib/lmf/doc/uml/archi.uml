@@ -26,7 +26,7 @@
       <fontname>Lucida Grande</fontname>
       <fontsize>13</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>Class Diagram Resources</activediagram>
+      <activediagram>Class Diagram LMF</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -84,7 +84,7 @@
 			UML 1.4
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Aug 08 10:06:48 CEST 2014'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Sep 12 18:27:13 CEST 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -3236,19 +3236,7 @@ Do not display.</UML:TaggedValue.dataValue>
             </UML:Class>
             <UML:Class xmi.id = '-84-28--98-124--d6b41f5:146230bf69b:-8000:0000000000000B3C'
               name = 'Resource' visibility = 'public' isSpecification = 'false' isRoot = 'false'
-              isLeaf = 'false' isAbstract = 'true' isActive = 'false'>
-              <UML:Classifier.feature>
-                <UML:Operation xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C93'
-                  name = 'newOperation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
-                  isAbstract = 'false'>
-                  <UML:BehavioralFeature.parameter>
-                    <UML:Parameter xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C94'
-                      name = 'return' isSpecification = 'false' kind = 'return'/>
-                  </UML:BehavioralFeature.parameter>
-                </UML:Operation>
-              </UML:Classifier.feature>
-            </UML:Class>
+              isLeaf = 'false' isAbstract = 'true' isActive = 'false'/>
             <UML:Class xmi.id = '-84-28--98-124--d6b41f5:146230bf69b:-8000:0000000000000B3D'
               name = 'HumanResource' visibility = 'public' isSpecification = 'false' isRoot = 'false'
               isLeaf = 'false' isAbstract = 'true' isActive = 'false'>
@@ -3340,15 +3328,6 @@ Do not display.</UML:TaggedValue.dataValue>
                     <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
                   </UML:StructuralFeature.type>
                 </UML:Attribute>
-                <UML:Operation xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000C34'
-                  name = 'newOperation' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
-                  isAbstract = 'false'>
-                  <UML:BehavioralFeature.parameter>
-                    <UML:Parameter xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000C35'
-                      name = 'return' isSpecification = 'false' kind = 'return'/>
-                  </UML:BehavioralFeature.parameter>
-                </UML:Operation>
                 <UML:Attribute xmi.id = '-84-28--98-107-49e687bd:1471f54a656:-8000:0000000000000D0A'
                   name = 'reference' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
                   changeability = 'changeable' targetScope = 'instance'>
@@ -3916,6 +3895,9 @@ Do not display.</UML:TaggedValue.dataValue>
       name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
       isAbstract = 'false'/>
     <UML:Model xmi.id = '-64--88-1-59--7e161aa3:147b494b7bb:-8000:0000000000000C46'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'/>
+    <UML:Model xmi.id = '-84-28--97-84-4484e80d:1486aafd211:-8000:0000000000000C47'
       name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
       isAbstract = 'false'/>
     <UML:TaggedValue xmi.id = '-84-28--98-124--d6b41f5:146230bf69b:-8000:0000000000000C7C'
