@@ -1,0 +1,78 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+%\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+
+\title{Gramamticalization in Japhug}
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+\section{Garden-variety grammaticalization pathways}
+
+
+TAM markers from directional prefixes (\citealt{lin11direction})
+
+Reflexive from third person (\citealt{jacques10refl})
+
+Associated motion from motion verb (\citealt{jacques13harmonization}); however, grammaticalized as prefixes, not suffixes
+
+Converbs from nominalized verbs (\citealt{jacques14linking})
+
+\section{Voice markers from denominative prefixes}
+
+\citealt{jacques13tropative}
+\citealt{jacques12incorp}
+\citealt{jacques14antipassive}
+
+
+
+\section{Progressive}
+\ipa{asɯ--} from passive \ipa{a--} + causative \ipa{sɯ--}
+
+infixation of inverse 
+
+\ipa{tɕe} 	\ipa{pjɤ-ɣi} 	\ipa{tɕe} 	\ipa{qala} 	\ipa{kɯ} 	\ipa{pjɤ-kɤ́<wɣ>z-nɤjo-ci} 	\ipa{tɕe,} 
+
+
+loss of transitivity marking
+
+\section{Comitative adverbs}
+Japhug has a very rich denominal morphology, and also has a productive comitative adverb derivation with the prefix \ipa{kɤɣɯ--} or \ipa{kɤ́--} and reduplicated noun stem, as in \ipa{tɤ-rtaʁ} `branch' $\rightarrow$ \ipa{kɤɣɯrtɯrtaʁ} `with branches'. These adverbs probably originate historically from the S-participle of denominal propriety verbs with the prefix \ipa{aɣɯ--} (\ipa{tɤ-rtaʁ} `branch' $\rightarrow$ \ipa{aɣɯrtɯrtaʁ} `have many branches').
+
+\bibliographystyle{Linquiry2}
+\bibliography{bibliogj}
+\end{document}
