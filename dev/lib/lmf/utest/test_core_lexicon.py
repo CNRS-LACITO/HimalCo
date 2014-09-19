@@ -97,6 +97,29 @@ class TestLexiconFunctions(unittest.TestCase):
         del self.lexicon.lexical_entry[:]
         del entry1, entry2, entry3, entry4
 
+    def test_find_lexical_entries(self):
+        # Create several lexical entries with different lexemes
+        entry1 = LexicalEntry().set_lexeme("Hello")
+        entry2 = LexicalEntry().set_lexeme("world!")
+        entry3 = LexicalEntry().set_lexeme("hello")
+        entry4 = LexicalEntry().set_lexeme("world")
+        # Add entries to the lexicon
+        self.lexicon.lexical_entry = [entry1, entry2, entry3, entry4]
+        # Test find lexical entries
+        self.assertListEqual(self.lexicon.find_lexical_entries(lambda entry: entry.get_lexeme() == "Hello"), [entry1])
+        def test_filter(entry):
+            return entry.get_lexeme().lower() == "hello"
+        self.assertListEqual(self.lexicon.find_lexical_entries(test_filter), [entry1, entry3])
+        # Release LexicalEntry instances
+        del self.lexicon.lexical_entry[:]
+        del entry1, entry2, entry3, entry4
+
+    def test_check_cross_references(self):
+        pass
+
+    def test_convert_to_latex(self):
+        pass
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexiconFunctions)
 
 ## Run test suite

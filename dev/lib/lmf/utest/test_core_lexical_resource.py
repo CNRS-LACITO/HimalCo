@@ -17,6 +17,7 @@ class TestLexicalResourceFunctions(unittest.TestCase):
 
     def test_init(self):
         self.assertIsNone(self.lexical_resource.dtdVersion)
+        self.assertIsNone(self.lexical_resource.global_information)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalResourceFunctions)
 

@@ -17,7 +17,8 @@ class Lexicon():
         self.lexiconType = None
         self.entrySource = None
         self.vowelHarmony = None
-        ## All LexicalEntry instances are maintained by the Lexicon
+        ## All LexicalEntry instances are maintained by Lexicon
+        # There is one or more LexicalEntry instances per Lexicon
         self.lexical_entry = []
 
     def get_lexical_entries(self):
@@ -66,3 +67,24 @@ class Lexicon():
         else:
             # TODO
             return self.lexical_entry
+
+    def find_lexical_entries(self, filter):
+        """! @brief Find all lexical entries which characteristics meet the given condition.
+        @param filter Function or lambda function taking a lexical entry as argument, and returning True or False; for instance 'lambda lexical_entry: lexical_entry.get_lexeme() == "Hello"'.
+        @return A Python list of LexicalEntry instances.
+        """
+        lexical_entries = []
+        for lexical_entry in self.get_lexical_entries():
+            if filter(lexical_entry):
+                lexical_entries.append(lexical_entry)
+        return lexical_entries
+
+    def check_cross_references(self):
+        """! @brief This method checks all cross-references in the lexicon.
+        """
+        pass
+
+    def convert_to_latex(self):
+        """This method converts the lexicon into LaTeX format.
+        """
+        pass

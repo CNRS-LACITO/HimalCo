@@ -16,7 +16,7 @@ class LexicalEntry():
         self.status = None
         self.date = None
         self.partOfSpeech = None
-        self.independentWord = None
+        self.independentWord = None # boolean
         self.bibliography = None
         ## Unique IDentifier is managed at the Lexicon level
         self.id = 0
@@ -78,3 +78,12 @@ class LexicalEntry():
             return self.lemma.get_lexeme()
         else:
             return None
+
+    def get_definitions(self):
+        pass
+
+    def get_senses(self):
+        pass
+
+    def get_gloss(self, lang):
+        pass

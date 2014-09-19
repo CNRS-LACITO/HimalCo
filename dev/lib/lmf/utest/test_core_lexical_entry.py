@@ -59,6 +59,15 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Delete Lemma instance
         del self.lexical_entry.lemma
 
+    def test_get_definitions(self):
+        pass
+
+    def test_get_senses(self):
+        pass
+
+    def test_get_gloss(self):
+        pass
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite
