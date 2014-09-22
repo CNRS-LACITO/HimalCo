@@ -14,7 +14,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf):
     @param mdf2lmf A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is 'mdf_lmf' dictionary defined in 'src/config/mdf.py'. Please refer to it as an example.
     @return A Lexicon instance containing all lexical entries.
     """
-    import re
+    import re, os
     mdf_file = open_read(filename)
     # MDF syntax is the following: '\marker value'
     mdf_pattern = """^\\\(\w*) (.*)$"""
@@ -22,9 +22,15 @@ def mdf_read(filename, mdf2lmf=mdf_lmf):
     lexicon = Lexicon()
     # Add each lexical entry to the lexicon
     current_entry = None
+    if os.name == 'posix':
+        # Linux-style end of line
+        eol = '\n'
+    else:
+        # Windows-style end of line
+        eol = '\r\n'
     for line in mdf_file.readlines():
         # Do not parse empty lines
-        if line != "\n":
+        if line != eol:
             result = re.match(mdf_pattern, line)
             marker = result.group(1)
             value = result.group(2)

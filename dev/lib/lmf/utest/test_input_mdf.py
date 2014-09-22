@@ -19,7 +19,13 @@ class TestMdfFunctions(unittest.TestCase):
         utest_path = sys.path[0] + '/'
         mdf_filename = utest_path + "mdf_input.txt"
         mdf_file = open(mdf_filename, "w+")
-        mdf_file.write("\\lx hello\n\\ps toto\n\\st draft\n")
+        if os.name == 'posix':
+            # Linux-style end of line
+            eol = '\n'
+        else:
+            # Windows-style end of line
+            eol = '\r\n'
+        mdf_file.write("\\lx hello" + eol + "\\ps toto" + eol + "\\st draft" + eol)
         mdf_file.close()
         # Read MDF file and test result
         lexicon = mdf_read(mdf_filename)

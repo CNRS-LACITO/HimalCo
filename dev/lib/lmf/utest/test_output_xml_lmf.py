@@ -29,14 +29,20 @@ class TestXmlLmfFunctions(unittest.TestCase):
         xml_lmf_filename = utest_path + "lmf_output.xml"
         xml_lmf_write(lexical_entry, xml_lmf_filename)
         xml_lmf_file = open(xml_lmf_filename, "r")
-        expected_lines = ["""<?xml version="1.0" ?>\n""",
-            """<LexicalEntry id="0">\n""",
-            """    <feat att="status" val="draft"/>\n""",
-            """    <Lemma>\n""",
-            """        <feat att="lexeme" val="hello"/>\n""",
-            """    </Lemma>\n""",
-            """    <feat att="partOfSpeech" val="toto"/>\n""",
-            """</LexicalEntry>\n"""]
+        if os.name == 'posix':
+            # Linux-style end of line
+            eol = '\n'
+        else:
+            # Windows-style end of line
+            eol = '\r\n'
+        expected_lines = ["""<?xml version="1.0" ?>""" + eol,
+            """<LexicalEntry id="0">""" + eol,
+            """    <feat att="status" val="draft"/>""" + eol,
+            """    <Lemma>""" + eol,
+            """        <feat att="lexeme" val="hello"/>""" + eol,
+            """    </Lemma>""" + eol,
+            """    <feat att="partOfSpeech" val="toto"/>""" + eol,
+            """</LexicalEntry>""" + eol]
         self.assertListEqual(expected_lines, xml_lmf_file.readlines())
         xml_lmf_file.close()
         del lexical_entry.lemma, lexical_entry

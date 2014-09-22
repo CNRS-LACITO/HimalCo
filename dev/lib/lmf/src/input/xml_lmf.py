@@ -25,9 +25,15 @@ def factory(object_name, attributes):
     # Compute module name from object name
     module_name = compute_name(object_name)
     # Find the package in which the object class is defined, in order to be able to import the correct Python module
-    import sys, glob
+    import sys, os, glob
     running_path = sys.path[0]
-    full_path = glob.glob(running_path + "/../src/*/" + module_name + ".py")
+    if os.name == 'posix':
+        # Linux-style path
+        separator = '/'
+    else:
+        # Windows-style path
+        separator = '\\'
+    full_path = glob.glob(running_path + separator + ".." + separator + "src" + separator + "*" + separator + module_name + ".py")
     if len(full_path) < 1:
         # No file with this name exists.
         raise IOError(0, __file__, "No file named %s exists in the library. It is not allowed, so please solve this issue by renaming files correctly." % (module_name + ".py"))
@@ -35,7 +41,7 @@ def factory(object_name, attributes):
         # Several files with this name exist.
         raise IOError(0, __file__, "Several files named %s exist in the library. It is not allowed, so please solve this issue by renaming files correctly. Here is the list of found files with this name: " % (module_name + ".py") + str(full_path))
     # Retrieve package name from full path
-    package_name = full_path[0].split('/')[-2]
+    package_name = full_path[0].split(separator)[-2]
     # Import object module: "package.module"
     object_module = __import__(package_name + "." + module_name)
     # Retrieve object class from module

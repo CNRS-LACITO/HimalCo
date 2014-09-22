@@ -18,7 +18,14 @@ class TestXmlFormatFunctions(unittest.TestCase):
         element = Element("LexicalEntry")
         SubElement(element, "Lemma")
         # Build expected result
-        expected_str = u"<?xml version=\"1.0\" ?>\n<LexicalEntry>\n    <Lemma/>\n</LexicalEntry>\n"
+        import os
+        if os.name == 'posix':
+            # Linux-style end of line
+            eol = u"\n"
+        else:
+            # Windows-style end of line
+            eol = u"\r\n"
+        expected_str = u"<?xml version=\"1.0\" ?>" + eol + u"<LexicalEntry>" + eol + u"    <Lemma/>" + eol + u"</LexicalEntry>" + eol
         # Test
         self.assertEqual(prettify(element), expected_str)
         del element

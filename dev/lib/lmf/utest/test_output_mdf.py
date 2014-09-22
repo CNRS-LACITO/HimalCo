@@ -31,7 +31,13 @@ class TestMdfFunctions(unittest.TestCase):
         mdf_filename = utest_path + "output.txt"
         mdf_write(lexicon, mdf_filename)
         mdf_file = open(mdf_filename, "r")
-        expected_lines = ["\\lx hello\n", "\\ps toto\n", "\\st draft\n", "\n"]
+        if os.name == 'posix':
+            # Linux-style end of line
+            eol = '\n'
+        else:
+            # Windows-style end of line
+            eol = '\r\n'
+        expected_lines = ["\\lx hello" + eol, "\\ps toto" + eol, "\\st draft" + eol, eol]
         self.assertListEqual(expected_lines, mdf_file.readlines())
         mdf_file.close()
         # Customize mapping
@@ -44,7 +50,7 @@ class TestMdfFunctions(unittest.TestCase):
         # Write MDF file and test result
         mdf_write(lexicon, mdf_filename, lmf2mdf, order)
         mdf_file = open(mdf_filename, "r")
-        expected_lines = ["\\st hello\n", "\\lx draft\n", "\\ps toto\n", "\n"]
+        expected_lines = ["\\st hello" + eol, "\\lx draft" + eol, "\\ps toto" + eol, eol]
         self.assertListEqual(expected_lines, mdf_file.readlines())
         mdf_file.close()
         del lexical_entry.lemma, lexical_entry, lexicon
