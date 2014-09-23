@@ -39,7 +39,7 @@ def factory(object_name, attributes):
         raise IOError(0, __file__, "No file named %s exists in the library. It is not allowed, so please solve this issue by renaming files correctly." % (module_name + ".py"))
     elif len(full_path) > 1:
         # Several files with this name exist.
-        raise IOError(0, __file__, "Several files named %s exist in the library. It is not allowed, so please solve this issue by renaming files correctly. Here is the list of found files with this name: " % (module_name + ".py") + str(full_path))
+        raise IOError(0, __file__, "Several files named %s exist in the library. It is not allowed, so please solve this issue by renaming files correctly. Here is the list of found files with this name: " % (module_name + ".py", str(full_path)))
     # Retrieve package name from full path
     package_name = full_path[0].split(separator)[-2]
     # Import object module: "package.module"

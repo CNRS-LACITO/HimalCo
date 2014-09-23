@@ -80,9 +80,23 @@ class Lexicon():
         return lexical_entries
 
     def check_cross_references(self):
-        """! @brief This method checks all cross-references in the lexicon.
+        """! @brief Check all cross-references in the lexicon.
+        Fill the private attribute '__lexicalEntry' of each RelatedForm instance for all lexical entries.
+        @return Lexicon instance.
         """
-        pass
+        for lexical_entry in self.get_lexical_entries():
+            for related_form in lexical_entry.get_related_forms():
+                # From RelatedForm targets attribute, retrieve the pointed LexicalEntry instance
+                found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_form.get_lexeme())
+                if len(found_entry) < 1:
+                    # No lexical entry with this lexeme exists.
+                    raise IOError(0, __file__, "Lexical entry %s does not exist. Please solve this issue by checking the related form of %s." % (related_form.get_lexeme(), lexical_entry.get_lexeme()))
+                elif len(found_entry) > 1:
+                    # Several lexical entries with this lexeme exist.
+                    raise IOError(0, __file__, "Several lexical entries %s exist. Please solve this issue by renaming lexical entries correctly." % lexical_entry.get_lexeme())
+                # Save the found lexical entry
+                related_form.set_lexical_entry(found_entry[0])
+        return self
 
     def convert_to_latex(self):
         """This method converts the lexicon into LaTeX format.

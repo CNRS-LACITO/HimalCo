@@ -22,6 +22,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf):
     lexicon = Lexicon()
     # Add each lexical entry to the lexicon
     current_entry = None
+    id = 0
     if os.name == 'posix':
         # Unix-style end of line
         eol = '\n'
@@ -37,9 +38,11 @@ def mdf_read(filename, mdf2lmf=mdf_lmf):
             # 'lx' marker indicates a new entry
             if marker == "lx":
                 # Create a new entry and add it to the lexicon
-                current_entry = LexicalEntry()
+                id += 1
+                current_entry = LexicalEntry(id)
                 lexicon.add_lexical_entry(current_entry)
             # Map MDF marker and value to LMF representation
             mdf2lmf[marker](value, current_entry)
     mdf_file.close()
+    lexicon.check_cross_references()
     return lexicon

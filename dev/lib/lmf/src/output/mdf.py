@@ -22,8 +22,14 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
     if object.__class__.__name__ == "Lexicon":
         for lexical_entry in object.get_lexical_entries():
             for marker in order:
-                # Write the MDF output as follows: "\mdf_marker lmf_value"
-                mdf_file.write("\\" + marker + " " + lmf2mdf[marker](lexical_entry) + eol)
+                value = lmf2mdf[marker](lexical_entry)
+                if type(value) is not list:
+                    # Write the MDF output as follows: "\mdf_marker lmf_value"
+                    mdf_file.write("\\" + marker + " " + value + eol)
+                else:
+                    # Create a line for each value
+                    for item in value:
+                        mdf_file.write("\\" + marker + " " + item + eol)
             # Separate lexical entries from each others with a blank line
             mdf_file.write(eol)
     else:

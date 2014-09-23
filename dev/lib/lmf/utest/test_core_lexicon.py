@@ -109,13 +109,48 @@ class TestLexiconFunctions(unittest.TestCase):
         self.assertListEqual(self.lexicon.find_lexical_entries(lambda entry: entry.get_lexeme() == "Hello"), [entry1])
         def test_filter(entry):
             return entry.get_lexeme().lower() == "hello"
-        self.assertListEqual(self.lexicon.find_lexical_entries(test_filter), [entry1, entry3])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.lexicon.find_lexical_entries(test_filter)), set([entry1, entry3]))
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2, entry3, entry4
 
     def test_check_cross_references(self):
-        pass
+        # Create lexical entries with lexemes and related lexemes
+        entry1 = LexicalEntry().set_lexeme("Hello").create_and_add_related_form("world!", "main entry")
+        entry2 = LexicalEntry().set_lexeme("world!").create_and_add_related_form("Hello", "subentry")
+        # Add entries to the lexicon
+        self.lexicon.lexical_entry = [entry1, entry2]
+        # Test check cross references
+        self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
+        self.assertEqual(entry1.related_form[0].get_lexical_entry(), entry2)
+        self.assertEqual(entry2.related_form[0].get_lexical_entry(), entry1)
+        # Test error case: entry not found
+        entry3 = LexicalEntry().set_lexeme("hello").create_and_add_related_form("world", "main entry")
+        self.lexicon.lexical_entry.append(entry3)
+        test = False
+        try:
+            self.lexicon.check_cross_references()
+        except IOError:
+            test = True
+        self.assertTrue(test)
+        # Retrieve nominal case
+        entry4 = LexicalEntry().set_lexeme("world")
+        self.lexicon.lexical_entry.append(entry4)
+        self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
+        self.assertEqual(entry3.related_form[0].get_lexical_entry(), entry4)
+        # Test error case: several entries found
+        entry5 = LexicalEntry().set_lexeme("world")
+        self.lexicon.lexical_entry.append(entry5)
+        test = False
+        try:
+            self.lexicon.check_cross_references()
+        except IOError:
+            test = True
+        self.assertTrue(test)
+        # Release LexicalEntry instances
+        del self.lexicon.lexical_entry[:]
+        del entry1, entry2, entry3, entry4, entry5
 
     def test_convert_to_latex(self):
         pass

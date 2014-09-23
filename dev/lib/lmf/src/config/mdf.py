@@ -4,17 +4,23 @@
 mdf_lmf = dict({
     "lx" : lambda lx, lexical_entry: lexical_entry.set_lexeme(lx),
     "ps" : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
-    "st" : lambda st, lexical_entry: lexical_entry.set_status(st)
+    "st" : lambda st, lexical_entry: lexical_entry.set_status(st),
+    "sy" : lambda sy, lexical_entry: lexical_entry.create_and_add_related_form(sy, mdf_semanticRelation["sy"]),
+    "an" : lambda an, lexical_entry: lexical_entry.create_and_add_related_form(an, mdf_semanticRelation["an"]),
+    "cf" : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf, mdf_semanticRelation["cf"])
 })
 
 ## Order in which MDF markers must be written (output)
-mdf_order = ["lx", "ps", "st"]
+mdf_order = ["lx", "ps", "st", "sy", "an", "cf"]
 
 ## Mapping between LMF representation and MDF markers (output)
 lmf_mdf = dict({
     "lx" : lambda lexical_entry: lexical_entry.get_lexeme(),
     "ps" : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
-    "st" : lambda lexical_entry: lexical_entry.get_status()
+    "st" : lambda lexical_entry: lexical_entry.get_status(),
+    "sy" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["sy"]),
+    "an" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["an"]),
+    "cf" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["cf"])
 })
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
@@ -40,6 +46,26 @@ ps_partOfSpeech = dict({
     "vr"        : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
     "vt"        : "transitive verb",            # transitive verb
     "vt/i"      : "bitransistive verb"          # ambitransitive verb
+})
+
+## Mapping between MDF markers and LMF semantic relation RelatedForm attribute value (input)
+mdf_semanticRelation = dict({
+    "sy" : "synonym",
+    "an" : "antonym",
+    "cf <hm>" : "homonym",
+    "cf <et>" : "etymology",
+    "se" : "subentry",
+    "mn" : "main entry",
+    "cf" : "simple link",
+    "lf" : None,
+    "ev" : None,
+    "ee" : None,
+    "en" : None,
+    "er" : None
+    # "derived form",
+    # "root",
+    # "stem",
+    # "collocation"
 })
 
 ## Mapping between 'pdl' MDF marker value and LMF paradigm label Paradigm attribute value (input)

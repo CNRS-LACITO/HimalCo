@@ -24,7 +24,7 @@ def build_sub_elements(object, element):
         attr_name = item[0]
         attr_value = item[1]
         # For each defined public attribute, create an XML sub-element
-        if not attr_name.startswith('__'):
+        if not attr_name.startswith('_'):
             if attr_value is not None:
                 # Check if the attribute is itself a class instance
                 if type(attr_value) is list:
