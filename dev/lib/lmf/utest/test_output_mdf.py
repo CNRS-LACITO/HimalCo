@@ -32,7 +32,7 @@ class TestMdfFunctions(unittest.TestCase):
         mdf_write(lexicon, mdf_filename)
         mdf_file = open(mdf_filename, "r")
         if os.name == 'posix':
-            # Linux-style end of line
+            # Unix-style end of line
             eol = '\n'
         else:
             # Windows-style end of line

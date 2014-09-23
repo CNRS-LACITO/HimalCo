@@ -20,7 +20,7 @@ class TestMdfFunctions(unittest.TestCase):
         mdf_filename = utest_path + "mdf_input.txt"
         mdf_file = open(mdf_filename, "w+")
         if os.name == 'posix':
-            # Linux-style end of line
+            # Unix-style end of line
             eol = '\n'
         else:
             # Windows-style end of line

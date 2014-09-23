@@ -23,7 +23,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf):
     # Add each lexical entry to the lexicon
     current_entry = None
     if os.name == 'posix':
-        # Linux-style end of line
+        # Unix-style end of line
         eol = '\n'
     else:
         # Windows-style end of line

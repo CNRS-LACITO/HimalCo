@@ -2,7 +2,7 @@
 
 import os
 if os.name == 'posix':
-    # Linux-style end of line
+    # Unix-style end of line
     eol = '\n'
 else:
     # Windows-style end of line

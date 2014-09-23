@@ -25,7 +25,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order)
     """
     import os
     if os.name == 'posix':
-        # Linux-style end of line
+        # Unix-style end of line
         eol = '\n'
     else:
         # Windows-style end of line

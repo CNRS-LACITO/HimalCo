@@ -23,7 +23,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_filename = utest_path + "header.tex"
         tex_file = open(tex_filename, "w+")
         if os.name == 'posix':
-            # Linux-style end of line
+            # Unix-style end of line
             eol = '\n'
         else:
             # Windows-style end of line
@@ -52,7 +52,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_write(lexicon, tex_filename)
         tex_file = open(tex_filename, "r")
         if os.name == 'posix':
-            # Linux-style end of line
+            # Unix-style end of line
             eol = '\n'
         else:
             # Windows-style end of line

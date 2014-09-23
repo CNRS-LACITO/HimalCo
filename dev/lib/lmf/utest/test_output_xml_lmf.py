@@ -30,7 +30,7 @@ class TestXmlLmfFunctions(unittest.TestCase):
         xml_lmf_write(lexical_entry, xml_lmf_filename)
         xml_lmf_file = open(xml_lmf_filename, "r")
         if os.name == 'posix':
-            # Linux-style end of line
+            # Unix-style end of line
             eol = '\n'
         else:
             # Windows-style end of line

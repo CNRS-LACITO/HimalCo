@@ -28,7 +28,7 @@ def factory(object_name, attributes):
     import sys, os, glob
     running_path = sys.path[0]
     if os.name == 'posix':
-        # Linux-style path
+        # Unix-style path
         separator = '/'
     else:
         # Windows-style path
