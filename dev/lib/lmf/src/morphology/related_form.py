@@ -1,10 +1,20 @@
 #! /usr/bin/env python
 
+"""! @package morphology
+"""
+
 from core.form import Form
 from common.range import semanticRelation_range
 
 class RelatedForm(Form):
+    """! "Related Form is a Form subclass representing a word form or a morph that can be related to the Lexical Entry. There is no asumption that the Related Form is associated with the Sense class in the Lexical Entry." (LMF)
+    """
     def __init__(self, lexeme=None):
+        """! @brief Constructor.
+        RelatedForm instances are owned by LexicalEntry.
+        @param lexeme Related lexeme. If not provided, default value is None.
+        @return A RelatedForm instance.
+        """
         # Initialize 'variantForm' and 'type' attributes
         Form.__init__(self)
         self.semanticRelation = None

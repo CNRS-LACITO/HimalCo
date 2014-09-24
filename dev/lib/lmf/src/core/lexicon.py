@@ -4,10 +4,11 @@
 """
 
 class Lexicon():
-    """! This class represents a lexicon containing lexical entries.
+    """! "Lexicon is a class containing all the lexical entries of a given language within the entire resource." (LMF)
     """
     def __init__(self):
         """! @brief Constructor.
+        Lexicon instances are owned by LexicalResource.
         @return A Lexicon instance.
         """
         self.language = None

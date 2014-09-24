@@ -6,10 +6,11 @@
 from core.form import Form
 
 class Lemma(Form):
-    """! This class represents a lemma.
+    """! "Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry. The lemma is usually equivalent to one of the inflected forms, the root, stem or compound phrase." (LMF).
     """
     def __init__(self):
         """! @brief Constructor.
+        Lemma instance is owned by LexicalEntry.
         @return A Lemma instance.
         """
         self.hyphenation = None

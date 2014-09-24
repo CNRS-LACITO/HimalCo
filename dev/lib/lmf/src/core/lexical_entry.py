@@ -7,10 +7,11 @@ from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 
 class LexicalEntry():
-    """! This class represents a lexical entry.
+    """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
     """
     def __init__(self, id=0):
         """! @brief Constructor.
+        LexicalEntry instances are owned by Lexicon.
         @param id Unique IDentifier. If not provided, default value is 0.
         @return A LexicalEntry instance.
         """
@@ -22,12 +23,27 @@ class LexicalEntry():
         self.bibliography = None
         ## UID is managed at the Lexicon level
         self.id = id
+        ## Form instances are owned by LexicalEntry
+        # There is one to many Form instances per LexicalEntry
+        self.form = []
+        ## Sense instances are owned by LexicalEntry
+        # There is zero to many Sense instances per LexicalEntry
+        self.sense = []
         ## Lemma instance is owned by LexicalEntry
         # There is one Lemma instance by LexicalEntry instance
         self.lemma = None
         ## RelatedForm instances are owned by LexicalEntry
-        # There can be 0 to n RelatedForm instances per LexicalEntry
+        # There is zero to many RelatedForm instances per LexicalEntry
         self.related_form = []
+        ## WordForm instances are owned by LexicalEntry
+        # There is zero to many WordForm instances per LexicalEntry
+        self.word_form = []
+        ## Stem instances are owned by LexicalEntry
+        # There is zero to many Stem instances per LexicalEntry
+        self.stem = [] # ordered list
+        ## ListOfComponents instance is owned by LexicalEntry
+        # There is zero or one ListOfComponents instance per LexicalEntry
+        self.list_of_components = None
 
     def set_partOfSpeech(self, part_of_speech):
         """! @brief Set grammatical category.
