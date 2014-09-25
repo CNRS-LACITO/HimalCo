@@ -13,3 +13,9 @@ class Component():
         ## Pointer to an existing LexicalEntry
         # There is one LexicalEntry pointer by Component instance
         self.__lexical_entry = None
+
+    def get_lexical_entry(self):
+        """! @brief Get pointed lexical entry.
+        @return Component private attribute '__lexical_entry'.
+        """
+        return self.__lexical_entry

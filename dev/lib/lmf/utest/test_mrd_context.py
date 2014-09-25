@@ -18,6 +18,8 @@ class TestContextFunctions(unittest.TestCase):
     def test_init(self):
         self.assertIsNone(self.context.language)
         self.assertIsNone(self.context.type)
+        self.assertListEqual(self.context.text_representation, [])
+        self.assertIsNone(self.context.get_speaker())
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestContextFunctions)
 

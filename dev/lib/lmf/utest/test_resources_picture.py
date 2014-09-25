@@ -21,6 +21,7 @@ class TestPictureFunctions(unittest.TestCase):
         self.assertIsNone(self.picture.width)
         self.assertIsNone(self.picture.height)
         self.assertIsNone(self.picture.format)
+        self.assertListEqual(self.picture.statement, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestPictureFunctions)
 

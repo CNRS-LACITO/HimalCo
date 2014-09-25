@@ -26,6 +26,8 @@ class TestFormRepresentationFunctions(unittest.TestCase):
         self.assertIsNone(self.form_representation.dialect)
         self.assertIsNone(self.form_representation.language)
         self.assertIsNone(self.form_representation.scriptName)
+        self.assertListEqual(self.form_representation.audio, [])
+        self.assertListEqual(self.form_representation.get_speakers(), [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestFormRepresentationFunctions)
 

@@ -16,7 +16,7 @@ class TestListOfComponentsFunctions(unittest.TestCase):
         del self.list_of_components
 
     def test_init(self):
-        pass
+        self.assertListEqual(self.list_of_components.component, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestListOfComponentsFunctions)
 

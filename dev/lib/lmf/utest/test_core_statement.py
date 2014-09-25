@@ -33,6 +33,7 @@ class TestStatementFunctions(unittest.TestCase):
         self.assertIsNone(self.statement.termSourceLanguage)
         self.assertIsNone(self.statement.targetLexicalEntry)
         self.assertIsNone(self.statement.scientificName)
+        self.assertListEqual(self.statement.text_representation, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStatementFunctions)
 

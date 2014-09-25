@@ -17,6 +17,7 @@ class TestComponentFunctions(unittest.TestCase):
 
     def test_init(self):
         self.assertIsNone(self.component.position)
+        self.assertIsNone(self.component.get_lexical_entry())
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestComponentFunctions)
 

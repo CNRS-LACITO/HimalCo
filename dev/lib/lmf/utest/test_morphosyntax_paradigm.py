@@ -20,6 +20,7 @@ class TestParadigmFunctions(unittest.TestCase):
         self.assertIsNone(self.paradigm.paradigm)
         self.assertIsNone(self.paradigm.language)
         self.assertIsNone(self.paradigm.morphology)
+        self.assertIsNone(self.paradigm.get_lexical_entry())
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestParadigmFunctions)
 

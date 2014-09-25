@@ -20,6 +20,8 @@ class TestDefinitionFunctions(unittest.TestCase):
         self.assertIsNone(self.definition.definition)
         self.assertIsNone(self.definition.gloss)
         self.assertIsNone(self.definition.literally)
+        self.assertListEqual(self.definition.text_representation, [])
+        self.assertListEqual(self.definition.statement, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestDefinitionFunctions)
 

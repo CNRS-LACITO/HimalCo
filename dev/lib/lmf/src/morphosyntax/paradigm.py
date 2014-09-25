@@ -18,3 +18,9 @@ class Paradigm():
         ## Pointer to an existing LexicalEntry
         # There is zero or one LexicalEntry pointer per Paradigm instance
         self.__lexical_entry = None
+
+    def get_lexical_entry(self):
+        """! @brief Get pointed lexical entry.
+        @return Paradigm private attribute '__lexical_entry'.
+        """
+        return self.__lexical_entry

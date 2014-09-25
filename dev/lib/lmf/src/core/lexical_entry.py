@@ -147,6 +147,12 @@ class LexicalEntry():
         # Create a set without duplicates
         return set(self.related_form)
 
+    def get_speaker(self):
+        """! @brief Get speaker.
+        @return LexicalEntry private attribute '__speaker'.
+        """
+        return self.__speaker
+
     def get_definitions(self):
         pass
 

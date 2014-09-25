@@ -20,8 +20,8 @@ class TestRelatedFormFunctions(unittest.TestCase):
         self.assertIsNone(self.related_form.variantForm)
         self.assertIsNone(self.related_form.type)
         self.assertIsNone(self.related_form.semanticRelation)
-        self.assertIsNone(self.related_form.get_lexical_entry())
         self.assertIsNone(self.related_form.targets)
+        self.assertIsNone(self.related_form.get_lexical_entry())
 
     def test_set_semanticRelation(self):
         # Test error case
@@ -50,22 +50,11 @@ class TestRelatedFormFunctions(unittest.TestCase):
         # Test get lexeme
         self.assertEqual(self.related_form.get_lexeme(), lexeme)
 
-    def test_set_lexical_entry(self):
+    def test_set_get_lexical_entry(self):
         # Create a lexical entry
         entry = LexicalEntry()
         # Test set lexical entry
         self.assertEqual(self.related_form.set_lexical_entry(entry), self.related_form)
-        self.assertEqual(self.related_form.get_lexical_entry(), entry)
-        # Test lexical entry modifications
-        entry.lexeme = "toto"
-        self.assertEqual(self.related_form.get_lexical_entry().lexeme, "toto")
-        # Release lexical entry
-        del entry
-
-    def test_get_lexical_entry(self):
-        # Set related LexicalEntry
-        entry = LexicalEntry()
-        self.related_form.set_lexical_entry(entry)
         # Test get lexical entry
         self.assertEqual(self.related_form.get_lexical_entry(), entry)
         # Test lexical entry modifications

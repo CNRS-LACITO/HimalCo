@@ -18,6 +18,7 @@ class TestEquivalentFunctions(unittest.TestCase):
     def test_init(self):
         self.assertIsNone(self.equivalent.language)
         self.assertIsNone(self.equivalent.translation)
+        self.assertListEqual(self.equivalent.text_representation, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestEquivalentFunctions)
 

@@ -18,6 +18,7 @@ class TestSubjectFieldFunctions(unittest.TestCase):
     def test_init(self):
         self.assertIsNone(self.subject_field.language)
         self.assertIsNone(self.subject_field.semanticDomain)
+        self.assertListEqual(self.subject_field.subject_field, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSubjectFieldFunctions)
 

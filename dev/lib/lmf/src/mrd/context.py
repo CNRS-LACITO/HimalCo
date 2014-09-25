@@ -19,3 +19,9 @@ class Context():
         ## Pointer to an existing Speaker
         # There is zero or one Speaker pointer per Context instance
         self.__speaker = None
+
+    def get_speaker(self):
+        """! @brief Get speaker.
+        @return Context private attribute '__speaker'.
+        """
+        return self.__speaker

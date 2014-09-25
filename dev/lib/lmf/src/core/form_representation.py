@@ -29,3 +29,9 @@ class FormRepresentation(Representation):
         ## Pointers to an existing Speaker
         # There is zero to many pointers per FormRepresentation instance
         self.__speaker = []
+
+    def get_speakers(self):
+        """! @brief Get speakers.
+        @return FormRepresentation private attribute '__speaker', a Python list of Speaker instances.
+        """
+        return self.__speaker
