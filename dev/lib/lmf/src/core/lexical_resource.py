@@ -17,3 +17,6 @@ class LexicalResource():
         ## Lexicon instances are owned by LexicalResource
         # There is one or more Lexicon instances for one unique LexicalResource
         self.lexicon = []
+        ## Speaker instances are owned by LexicalResource
+        # There is zero to many Speaker instances for one unique LexicalResource
+        self.speaker = []

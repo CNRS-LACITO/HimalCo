@@ -28,3 +28,6 @@ class Sense():
         ## SubjectField instances are owned by Sense
         # There is zero to many SubjectField instances per Sense
         self.subject_field = []
+        ## Paradigm instances are owned by Sense
+        # There is zero to many Paradigm instances per Sense
+        self.paradigm = []

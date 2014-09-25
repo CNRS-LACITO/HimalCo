@@ -44,6 +44,9 @@ class LexicalEntry():
         ## ListOfComponents instance is owned by LexicalEntry
         # There is zero or one ListOfComponents instance per LexicalEntry
         self.list_of_components = None
+        ## Pointer to an existing Speaker
+        # There is one Speaker pointer per LexicalEntry instance
+        self.__speaker = None
 
     def set_partOfSpeech(self, part_of_speech):
         """! @brief Set grammatical category.

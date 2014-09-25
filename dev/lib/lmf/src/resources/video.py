@@ -1,7 +1,16 @@
 #! /usr/bin/env python
 
+"""! @package resources
+"""
+
 from material import Material
 
 class Video(Material):
+    """! Video is a Material subclass representing a video.
+    """
     def __init__(self):
+        """! @brief Constructor.
+        Video instances are owned by ?.
+        @return A Video instance.
+        """
         self.description = None

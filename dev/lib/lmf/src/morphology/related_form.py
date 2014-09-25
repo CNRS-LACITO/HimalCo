@@ -21,7 +21,7 @@ class RelatedForm(Form):
         # Related LexicalEntry lexeme
         self.targets = lexeme
         ## Pointer to an existing LexicalEntry
-        # There is one LexicalEntry pointer by RelatedForm instance
+        # There is one LexicalEntry pointer per RelatedForm instance
         self.__lexical_entry = None
 
     def set_semanticRelation(self, semantic_relation):

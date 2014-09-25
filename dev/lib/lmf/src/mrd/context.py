@@ -16,3 +16,6 @@ class Context():
         ## TextRepresentation instances are owned by Context
         # There is zero to many TextRepresentation instances per Context
         self.text_representation = []
+        ## Pointer to an existing Speaker
+        # There is zero or one Speaker pointer per Context instance
+        self.__speaker = None
