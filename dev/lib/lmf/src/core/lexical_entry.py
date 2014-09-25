@@ -23,15 +23,12 @@ class LexicalEntry():
         self.bibliography = None
         ## UID is managed at the Lexicon level
         self.id = id
-        ## Form instances are owned by LexicalEntry
-        # There is one to many Form instances per LexicalEntry
-        self.form = []
         ## Sense instances are owned by LexicalEntry
         # There is zero to many Sense instances per LexicalEntry
         self.sense = []
         ## Lemma instance is owned by LexicalEntry
         # There is one Lemma instance by LexicalEntry instance
-        self.lemma = None
+        self.lemma = None # lemmatized form
         ## RelatedForm instances are owned by LexicalEntry
         # There is zero to many RelatedForm instances per LexicalEntry
         self.related_form = []

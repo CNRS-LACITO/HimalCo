@@ -25,7 +25,6 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIsNone(self.lexical_entry.independentWord)
         self.assertIsNone(self.lexical_entry.bibliography)
         self.assertEqual(self.lexical_entry.id, 0)
-        self.assertListEqual(self.lexical_entry.form, [])
         self.assertListEqual(self.lexical_entry.sense, [])
         self.assertIsNone(self.lexical_entry.lemma)
         self.assertListEqual(self.lexical_entry.related_form, [])
