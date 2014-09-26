@@ -16,6 +16,9 @@ class TestTextRepresentationFunctions(unittest.TestCase):
         del self.text_representation
 
     def test_init(self):
+        self.assertIsNone(self.text_representation.comment)
+        self.assertIsNone(self.text_representation.writtenForm)
+        self.assertIsNone(self.text_representation.language)
         self.assertIsNone(self.text_representation.font)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestTextRepresentationFunctions)

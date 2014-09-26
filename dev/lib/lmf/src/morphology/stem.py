@@ -13,4 +13,5 @@ class Stem(Form):
         Stem instances are owned by LexicalEntry.
         @return A Stem instance.
         """
-        pass
+        # Initialize Form attributes: 'variantForm', 'type' and 'form_representation'
+        self.__new__()

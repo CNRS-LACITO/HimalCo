@@ -15,8 +15,8 @@ class RelatedForm(Form):
         @param lexeme Related lexeme. If not provided, default value is None.
         @return A RelatedForm instance.
         """
-        # Initialize 'variantForm' and 'type' attributes
-        Form.__init__(self)
+        # Initialize Form attributes: 'variantForm', 'type' and 'form_representation'
+        self.__new__()
         self.semanticRelation = None
         # Related LexicalEntry lexeme
         self.targets = lexeme

@@ -13,4 +13,6 @@ class Speaker(HumanResource):
         Speaker instances are owned by LexicalResource.
         @return A Speaker instance.
         """
+        # Initialize HumanResource attributes: 'name', 'anonymizationFlag', 'reference' and 'source'
+        self.__new__()
         self.speakerID = None

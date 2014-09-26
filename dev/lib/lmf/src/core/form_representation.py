@@ -13,6 +13,8 @@ class FormRepresentation(Representation):
         FormRepresentation instances are owned by Form.
         @return A FormRepresentation instance.
         """
+        # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
+        self.__new__()
         self.transliteration = None
         self.tone = None
         self.geographicalVariant = None

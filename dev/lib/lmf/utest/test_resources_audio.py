@@ -16,6 +16,9 @@ class TestAudioFunctions(unittest.TestCase):
         del self.audio
 
     def test_init(self):
+        self.assertIsNone(self.audio.mediaType)
+        self.assertIsNone(self.audio.fileName)
+        self.assertIsNone(self.audio.author)
         self.assertIsNone(self.audio.quality)
         self.assertIsNone(self.audio.sound)
         self.assertIsNone(self.audio.startPosition)

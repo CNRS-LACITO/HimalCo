@@ -3,6 +3,8 @@
 from startup import *
 from morphology.lemma import Lemma
 
+from core.form import Form
+
 ## Test Lemma class
 
 class TestLemmaFunctions(unittest.TestCase):
@@ -16,6 +18,9 @@ class TestLemmaFunctions(unittest.TestCase):
         del self.lemma
 
     def test_init(self):
+        self.assertIsNone(self.lemma.variantForm)
+        self.assertIsNone(self.lemma.type)
+        self.assertListEqual(self.lemma.form_representation, [])
         self.assertIsNone(self.lemma.hyphenation)
         self.assertIsNone(self.lemma.lexeme)
 

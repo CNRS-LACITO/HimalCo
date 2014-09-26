@@ -5,20 +5,31 @@ from resources.material import Material
 
 ## Test Material class
 
-class TestMaterialFunctions(unittest.TestCase):
+class TestMaterialFunctions(unittest.TestCase, Material):
 
     def setUp(self):
-        # Instantiate a Material object
-        self.material = Material()
+        # Try to instantiate a Material object
+        test = False
+        try:
+            Material()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def tearDown(self):
-        # Release instantiated objects
-        del self.material
+        # Try to release a Material object
+        test = False
+        try:
+            self.__del__()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def test_init(self):
-        self.assertIsNone(self.material.mediaType)
-        self.assertIsNone(self.material.fileName)
-        self.assertIsNone(self.material.author)
+        Material.__new__(self)
+        self.assertIsNone(self.mediaType)
+        self.assertIsNone(self.fileName)
+        self.assertIsNone(self.author)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestMaterialFunctions)
 

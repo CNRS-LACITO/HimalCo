@@ -16,6 +16,9 @@ class TestPictureFunctions(unittest.TestCase):
         del self.picture
 
     def test_init(self):
+        self.assertIsNone(self.picture.mediaType)
+        self.assertIsNone(self.picture.fileName)
+        self.assertIsNone(self.picture.author)
         self.assertIsNone(self.picture.filename)
         self.assertIsNone(self.picture.reference)
         self.assertIsNone(self.picture.width)

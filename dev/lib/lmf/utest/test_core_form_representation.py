@@ -16,6 +16,9 @@ class TestFormRepresentationFunctions(unittest.TestCase):
         del self.form_representation
 
     def test_init(self):
+        self.assertIsNone(self.form_representation.comment)
+        self.assertIsNone(self.form_representation.writtenForm)
+        self.assertIsNone(self.form_representation.language)
         self.assertIsNone(self.form_representation.transliteration)
         self.assertIsNone(self.form_representation.tone)
         self.assertIsNone(self.form_representation.geographicalVariant)

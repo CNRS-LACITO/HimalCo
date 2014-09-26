@@ -19,6 +19,7 @@ class TestRelatedFormFunctions(unittest.TestCase):
     def test_init(self):
         self.assertIsNone(self.related_form.variantForm)
         self.assertIsNone(self.related_form.type)
+        self.assertListEqual(self.related_form.form_representation, [])
         self.assertIsNone(self.related_form.semanticRelation)
         self.assertIsNone(self.related_form.targets)
         self.assertIsNone(self.related_form.get_lexical_entry())

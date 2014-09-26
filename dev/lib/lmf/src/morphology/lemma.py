@@ -13,6 +13,8 @@ class Lemma(Form):
         Lemma instance is owned by LexicalEntry.
         @return A Lemma instance.
         """
+        # Initialize Form attributes: 'variantForm', 'type' and 'form_representation'
+        self.__new__()
         self.hyphenation = None
         self.lexeme = None
 

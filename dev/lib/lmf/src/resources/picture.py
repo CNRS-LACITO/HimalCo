@@ -13,6 +13,8 @@ class Picture(Material):
         Picture instances are owned by ?.
         @return A Picture instance.
         """
+        # Initialize Material attributes: 'mediaType', 'fileName' and 'author'
+        self.__new__()
         self.filename = None
         self.reference = None
         self.width = None

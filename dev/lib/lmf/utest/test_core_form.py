@@ -5,20 +5,31 @@ from core.form import Form
 
 ## Test Form class
 
-class TestFormFunctions(unittest.TestCase):
+class TestFormFunctions(unittest.TestCase, Form):
 
     def setUp(self):
-        # Instantiate a Form object
-        self.form = Form()
+        # Try to instantiate a Form object
+        test = False
+        try:
+            Form()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def tearDown(self):
-        # Release instantiated objects
-        del self.form
+        # Try to release a Form object
+        test = False
+        try:
+            self.__del__()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def test_init(self):
-        self.assertIsNone(self.form.variantForm)
-        self.assertIsNone(self.form.type)
-        self.assertListEqual(self.form.form_representation, [])
+        Form.__new__(self)
+        self.assertIsNone(self.variantForm)
+        self.assertIsNone(self.type)
+        self.assertListEqual(self.form_representation, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestFormFunctions)
 

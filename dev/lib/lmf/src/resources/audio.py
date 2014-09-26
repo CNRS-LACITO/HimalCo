@@ -13,6 +13,8 @@ class Audio(Material):
         Audio instances are owned by FormRepresentation.
         @return An Audio instance.
         """
+        # Initialize Material attributes: 'mediaType', 'fileName' and 'author'
+        self.__new__()
         self.quality = None
         self.sound = None
         self.startPosition = None

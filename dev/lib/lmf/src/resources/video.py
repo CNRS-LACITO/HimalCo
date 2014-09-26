@@ -13,4 +13,6 @@ class Video(Material):
         Video instances are owned by ?.
         @return A Video instance.
         """
+        # Initialize Material attributes: 'mediaType', 'fileName' and 'author'
+        self.__new__()
         self.description = None

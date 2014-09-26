@@ -5,18 +5,28 @@ from resources.resource import Resource
 
 ## Test Resource class
 
-class TestResourceFunctions(unittest.TestCase):
+class TestResourceFunctions(unittest.TestCase, Resource):
 
     def setUp(self):
-        # Instantiate a Resource object
-        self.resource = Resource()
+        # Try to instantiate a Resource object
+        test = False
+        try:
+            Resource()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def tearDown(self):
-        # Release instantiated objects
-        del self.resource
+        # Try to release a Resource object
+        test = False
+        try:
+            self.__del__()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
 
     def test_init(self):
-        pass
+        Resource.__call__(self)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestResourceFunctions)
 

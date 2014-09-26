@@ -16,6 +16,9 @@ class TestVideoFunctions(unittest.TestCase):
         del self.video
 
     def test_init(self):
+        self.assertIsNone(self.video.mediaType)
+        self.assertIsNone(self.video.fileName)
+        self.assertIsNone(self.video.author)
         self.assertIsNone(self.video.description)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestVideoFunctions)

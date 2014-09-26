@@ -13,4 +13,6 @@ class TextRepresentation(Representation):
         TextRepresentation instances are owned by Definition and Statement.
         @return A TextRepresentation instance.
         """
+        # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
+        self.__new__()
         self.font = None
