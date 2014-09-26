@@ -84,7 +84,7 @@
 			UML 1.4
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Sep 25 17:53:18 CEST 2014'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Sep 26 15:43:51 CEST 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -2125,8 +2125,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Association.connection>
             </UML:Association>
             <UML:Association xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000C36'
-              name = '' visibility = 'private' isSpecification = 'false' isRoot = 'false'
-              isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Speaker.speakerID' visibility = 'private' isSpecification = 'false'
+              isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000C37'
                   name = 'speaker' visibility = 'private' isSpecification = 'false' isNavigable = 'false'
@@ -2161,7 +2161,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Association.connection>
             </UML:Association>
             <UML:Association xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CA0'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Speaker.speakerID' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CA1'
                   name = 'speaker' visibility = 'private' isSpecification = 'false' isNavigable = 'false'
@@ -2482,7 +2483,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Association.connection>
             </UML:Association>
             <UML:Association xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B93'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Lemma.lexeme' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B94'
                   name = 'lexical_entry' visibility = 'private' isSpecification = 'false'
@@ -2765,7 +2767,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Generalization.parent>
             </UML:Generalization>
             <UML:Association xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BB5'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Lemma.lexeme' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BB6'
                   visibility = 'public' isSpecification = 'false' isNavigable = 'false' ordering = 'unordered'
@@ -3115,7 +3118,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Association.connection>
             </UML:Association>
             <UML:Association xmi.id = '-84-28--98-107-49e687bd:1471f54a656:-8000:0000000000000D03'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Speaker.speakerID' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--98-107-49e687bd:1471f54a656:-8000:0000000000000D04'
                   name = 'speaker' visibility = 'private' isSpecification = 'false' isNavigable = 'false'
@@ -3635,7 +3639,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Association.connection>
             </UML:Association>
             <UML:Association xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C9E'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = '' visibility = 'public' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C9F'
                   visibility = 'public' isSpecification = 'false' isNavigable = 'true' ordering = 'unordered'
@@ -3746,7 +3751,8 @@ Do not display.</UML:TaggedValue.dataValue>
               </UML:Classifier.feature>
             </UML:Class>
             <UML:Association xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CDC'
-              name = '' isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'>
+              name = 'targets -&gt; Lemma.lexeme' isSpecification = 'false' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:Association.connection>
                 <UML:AssociationEnd xmi.id = '-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CDD'
                   name = 'lexical_entry' visibility = 'private' isSpecification = 'false'
@@ -3855,6 +3861,9 @@ Do not display.</UML:TaggedValue.dataValue>
       name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
       isAbstract = 'false'/>
     <UML:Model xmi.id = '-84-28--100--81--16adc7b3:148ad7ea7ff:-8000:0000000000000C3C'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'/>
+    <UML:Model xmi.id = '-84-28--98--120--79dc5c82:148b21f115e:-8000:0000000000000C3D'
       name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
       isAbstract = 'false'/>
     <UML:TaggedValue xmi.id = '-84-28--98-124--d6b41f5:146230bf69b:-8000:0000000000000C7C'
@@ -12383,7 +12392,7 @@ Do not display.</UML:TaggedValue.dataValue>
     </group>
   </group>
   <group name="Fig3"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[744, 216, 126, 50]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[784, 208, 126, 50]pathVisible=false;stereotypeView=0;operationsVisible=false;attributesVisible=true;"
        href="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B82"
        fill="1"
        fillcolor="white"
@@ -12394,8 +12403,8 @@ Do not display.</UML:TaggedValue.dataValue>
     </private>
     
     <rectangle name="Fig3.0"
-      x="744"
-      y="216"
+      x="784"
+      y="208"
       width="126"
       height="50"
       fill="1"
@@ -12404,8 +12413,8 @@ Do not display.</UML:TaggedValue.dataValue>
       strokecolor="black"
     />
     <text name="Fig3.1"
-      x="745"
-      y="217"
+      x="785"
+      y="209"
       width="124"
       height="23"
       fill="0"
@@ -12420,7 +12429,7 @@ Do not display.</UML:TaggedValue.dataValue>
       justification="Center"
     >+ Component</text>
     <group name="Fig3.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[745, 217, 124, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[785, 209, 124, 0]"
          href="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B82"
          fill="0"
          fillcolor="white"
@@ -12432,8 +12441,8 @@ Do not display.</UML:TaggedValue.dataValue>
       </private>
       
       <rectangle name="Fig3.2.0"
-        x="745"
-        y="217"
+        x="785"
+        y="209"
         width="124"
         height="0"
         fill="0"
@@ -12443,8 +12452,8 @@ Do not display.</UML:TaggedValue.dataValue>
       />
     </group>
     <rectangle name="Fig3.3"
-      x="744"
-      y="240"
+      x="784"
+      y="232"
       width="126"
       height="1"
       fill="1"
@@ -12453,7 +12462,7 @@ Do not display.</UML:TaggedValue.dataValue>
       strokecolor="black"
     />
     <group name="Fig3.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[745, 241, 124, 25]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[785, 233, 124, 25]"
          href="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B82"
          fill="0"
          fillcolor="white"
@@ -12464,8 +12473,8 @@ Do not display.</UML:TaggedValue.dataValue>
       </private>
       
       <rectangle name="Fig3.4.0"
-        x="745"
-        y="241"
+        x="785"
+        y="233"
         width="124"
         height="25"
         fill="0"
@@ -12474,8 +12483,8 @@ Do not display.</UML:TaggedValue.dataValue>
         strokecolor="black"
       />
       <text name="Fig3.4.1"
-        x="745"
-        y="241"
+        x="785"
+        y="233"
         width="124"
         height="23"
         fill="0"
@@ -12491,8 +12500,8 @@ Do not display.</UML:TaggedValue.dataValue>
       >+position : Integer</text>
     </group>
     <rectangle name="Fig3.5"
-      x="744"
-      y="265"
+      x="784"
+      y="257"
       width="126"
       height="1"
       fill="1"
@@ -12502,7 +12511,7 @@ Do not display.</UML:TaggedValue.dataValue>
       visibility="0"
     />
     <group name="Fig3.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[745, 266, 124, 21]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[785, 258, 124, 21]"
          href="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B82"
          fill="0"
          fillcolor="white"
@@ -12514,8 +12523,8 @@ Do not display.</UML:TaggedValue.dataValue>
       </private>
       
       <rectangle name="Fig3.6.0"
-        x="745"
-        y="266"
+        x="785"
+        y="258"
         width="124"
         height="21"
         fill="0"
@@ -12634,10 +12643,10 @@ Do not display.</UML:TaggedValue.dataValue>
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="744"
+      <moveto x="792"
               y="101" />
-      <lineto x="744"
-              y="216" />
+      <lineto x="792"
+              y="208" />
     </path>
   </group>
   <group name="Fig6"
@@ -12657,8 +12666,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B93"
-                        angle="160.99999999999997"
-                        offset="29" />
+                        angle="24.0"
+                        offset="14" />
       <argouml:pathitem figname="Fig6.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -12669,8 +12678,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000B94"
-                        angle="-10.999999999999998"
-                        offset="39" />
+                        angle="-16.0"
+                        offset="20" />
       <argouml:pathitem figname="Fig6.4"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -12691,8 +12700,8 @@ Do not display.</UML:TaggedValue.dataValue>
       stroke="1"
       strokecolor="black"
     >
-      <moveto x="744"
-              y="216" />
+      <moveto x="784"
+              y="208" />
       <lineto x="574"
               y="167" />
     </path>
@@ -13496,14 +13505,14 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BB5"
-                        angle="-195.0"
-                        offset="187" />
+                        angle="-227.0"
+                        offset="67" />
       <argouml:pathitem figname="Fig13.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BB6"
-                        angle="68.0"
-                        offset="26" />
+                        angle="-61.0"
+                        offset="12" />
       <argouml:pathitem figname="Fig13.3"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
@@ -13520,8 +13529,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BB7"
-                        angle="135.0"
-                        offset="5" />
+                        angle="-227.0"
+                        offset="29" />
     </private>
     <path name="Fig13.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -13565,20 +13574,20 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BBB"
-                        angle="10.0"
-                        offset="22" />
+                        angle="9.0"
+                        offset="25" />
       <argouml:pathitem figname="Fig14.4"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BBC"
-                        angle="246.00000000000003"
+                        angle="118.0"
                         offset="27" />
       <argouml:pathitem figname="Fig14.5"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigAssociationEndAnnotation"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000BBC"
-                        angle="242.0"
-                        offset="112" />
+                        angle="260.0"
+                        offset="100" />
     </private>
     <path name="Fig14.0"
       description="org.argouml.gefext.ArgoFigPoly"
@@ -16642,8 +16651,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000C36"
-                        angle="-195.0"
-                        offset="77" />
+                        angle="153.0"
+                        offset="74" />
       <argouml:pathitem figname="Fig6.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -16987,8 +16996,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CA0"
-                        angle="297.0"
-                        offset="37" />
+                        angle="-9.0"
+                        offset="70" />
       <argouml:pathitem figname="Fig8.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -17475,8 +17484,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--98-107-49e687bd:1471f54a656:-8000:0000000000000D03"
-                        angle="265.0"
-                        offset="66" />
+                        angle="116.0"
+                        offset="2" />
       <argouml:pathitem figname="Fig12.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -18265,8 +18274,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C9E"
-                        angle="270.0"
-                        offset="25" />
+                        angle="7.0"
+                        offset="189" />
       <argouml:pathitem figname="Fig23.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"
@@ -18758,8 +18767,8 @@ Do not display.</UML:TaggedValue.dataValue>
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigTextGroup"
                         ownerhref="-84-28--97-95--7f8b1e64:1471a47bc4c:-8000:0000000000000CDC"
-                        angle="270.0"
-                        offset="25" />
+                        angle="-252.99999999999997"
+                        offset="41" />
       <argouml:pathitem figname="Fig2.2"
                         classname="org.argouml.uml.diagram.ui.PathItemPlacement"
                         figclassname="org.argouml.uml.diagram.ui.FigMultiplicity"

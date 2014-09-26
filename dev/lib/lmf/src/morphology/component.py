@@ -10,6 +10,8 @@ class Component():
         @return A Component instance.
         """
         self.position = None
+        # Composed LexicalEntry lexeme
+        self.targets = None
         ## Pointer to an existing LexicalEntry
         # There is one LexicalEntry pointer by Component instance
         self.__lexical_entry = None

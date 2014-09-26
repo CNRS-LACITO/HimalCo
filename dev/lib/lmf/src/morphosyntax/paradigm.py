@@ -15,6 +15,8 @@ class Paradigm():
         self.paradigm = None
         self.language = None
         self.morphology = None
+        # LexicalEntry lexeme
+        self.targets = None
         ## Pointer to an existing LexicalEntry
         # There is zero or one LexicalEntry pointer per Paradigm instance
         self.__lexical_entry = None

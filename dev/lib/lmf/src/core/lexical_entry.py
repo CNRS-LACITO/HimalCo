@@ -41,6 +41,8 @@ class LexicalEntry():
         ## ListOfComponents instance is owned by LexicalEntry
         # There is zero or one ListOfComponents instance per LexicalEntry
         self.list_of_components = None
+        # Speaker id
+        self.targets = None
         ## Pointer to an existing Speaker
         # There is one Speaker pointer per LexicalEntry instance
         self.__speaker = None

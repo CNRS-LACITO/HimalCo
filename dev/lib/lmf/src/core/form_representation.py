@@ -28,6 +28,8 @@ class FormRepresentation(Representation):
         ## Audio instances are owned by FormRepresentation
         # There is zero to many Audio instances per FormRepresentation
         self.audio = []
+        # Speaker id
+        self.targets = None
         ## Pointers to an existing Speaker
         # There is zero to many pointers per FormRepresentation instance
         self.__speaker = []

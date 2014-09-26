@@ -31,6 +31,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertListEqual(self.lexical_entry.word_form, [])
         self.assertListEqual(self.lexical_entry.stem, [])
         self.assertIsNone(self.lexical_entry.list_of_components)
+        self.assertIsNone(self.lexical_entry.targets)
         self.assertIsNone(self.lexical_entry.get_speaker())
 
     def test_set_partOfSpeech(self):
