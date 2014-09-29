@@ -25,3 +25,8 @@ class WordForm(Form):
         self.degree = None
         self.voice = None
         self.verbFormMood = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

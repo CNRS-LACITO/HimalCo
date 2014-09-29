@@ -22,6 +22,14 @@ class Lexicon():
         # There is one or more LexicalEntry instances per Lexicon
         self.lexical_entry = []
 
+    def __del__(self):
+        """! @brief Destructor.
+        Release LexicalEntry instances.
+        """
+        for lexical_entry in self.lexical_entry:
+            del lexical_entry
+        del self.lexical_entry[:]
+
     def get_lexical_entries(self):
         """! @brief Get all lexical entries maintained by the lexicon.
         @return A Python set of lexical entries.

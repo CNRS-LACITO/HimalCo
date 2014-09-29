@@ -20,3 +20,16 @@ class LexicalResource():
         ## Speaker instances are owned by LexicalResource
         # There is zero to many Speaker instances for one unique LexicalResource
         self.speaker = []
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release GlobalInformation, Lexicon, Speaker instances.
+        """
+        for lexicon in self.lexicon:
+            del lexicon
+        del self.lexicon[:]
+        for speaker in self.speaker:
+            del speaker
+        del self.speaker[:]
+        if self.global_information is not None:
+            del self.global_information

@@ -15,3 +15,8 @@ class Stem(Form):
         """
         # Initialize Form attributes: 'variantForm', 'type' and 'form_representation'
         self.__new__()
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

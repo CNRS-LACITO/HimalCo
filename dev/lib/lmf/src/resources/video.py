@@ -16,3 +16,8 @@ class Video(Material):
         # Initialize Material attributes: 'mediaType', 'fileName' and 'author'
         self.__new__()
         self.description = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

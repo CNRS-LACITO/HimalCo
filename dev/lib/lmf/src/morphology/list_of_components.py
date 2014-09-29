@@ -14,3 +14,11 @@ class ListOfComponents():
         ## Component instances are owned by ListOfComponents
         # There are two or more Component instances per ListOfComponents
         self.component = [] # ordered list
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release Component instances.
+        """
+        for component in self.component:
+            del component
+        del self.component[:]

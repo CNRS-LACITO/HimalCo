@@ -21,3 +21,14 @@ class Definition():
         ## Statement instances are owned by Definition
         # There is zero to many Statement instances per Definition
         self.statement = []
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release TextRepresentation and Statement instances.
+        """
+        for text_representation in self.text_representation:
+            del text_representation
+        del self.text_representation[:]
+        for statement in self.statement:
+            del statement
+        del self.statement[:]

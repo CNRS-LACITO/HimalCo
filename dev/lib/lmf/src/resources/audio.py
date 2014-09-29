@@ -22,3 +22,8 @@ class Audio(Material):
         self.externalReference = None
         self.audioFileFormat = None
         self.transcription = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

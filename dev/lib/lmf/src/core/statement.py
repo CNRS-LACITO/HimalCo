@@ -31,3 +31,11 @@ class Statement():
         ## TextRepresentation instances are owned by Statement
         # There is zero to many TextRepresentation instances per Statement
         self.text_representation = []
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release TextRepresentation instances.
+        """
+        for text_representation in self.text_representation:
+            del text_representation
+        del self.text_representation[:]

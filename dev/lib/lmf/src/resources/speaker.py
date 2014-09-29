@@ -16,3 +16,8 @@ class Speaker(HumanResource):
         # Initialize HumanResource attributes: 'name', 'anonymizationFlag', 'reference' and 'source'
         self.__new__()
         self.speakerID = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

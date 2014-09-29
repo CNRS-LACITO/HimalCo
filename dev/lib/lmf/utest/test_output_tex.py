@@ -91,7 +91,9 @@ class TestTexFunctions(unittest.TestCase):
             eol]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
-        del lexical_entry.lemma, lexical_entry, lexicon
+        del lexical_entry.lemma
+        lexical_entry.lemma = None
+        del lexical_entry, lexicon
         # Remove LaTeX file
         os.remove(tex_filename)
 

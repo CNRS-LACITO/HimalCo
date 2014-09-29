@@ -66,6 +66,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.get_lexeme(), self.lexical_entry.lemma.lexeme)
         # Delete Lemma instance
         del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
 
     def test_create_related_form(self):
         lexeme = "form"
@@ -104,8 +105,8 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.create_and_add_related_form(lexeme, relation), self.lexical_entry)
         self.assertEqual(len(self.lexical_entry.related_form), 2)
         self.assertEqual(self.lexical_entry.related_form[1].targets, lexeme)
-        # Delete RelatedForm instances
-        del self.lexical_entry.related_form[:]
+        # Release RelatedForm instances
+        del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
 
     def test_find_related_forms(self):
         # Create several related forms with different semantic relations

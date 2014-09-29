@@ -47,6 +47,29 @@ class LexicalEntry():
         # There is one Speaker pointer per LexicalEntry instance
         self.__speaker = None
 
+    def __del__(self):
+        """! @brief Destructor.
+        Release Sense, Lemma, RelatedForm, WordForm, Stem, ListOfComponents instances.
+        """
+        for sense in self.sense:
+            del sense
+        del self.sense[:]
+        for related_form in self.related_form:
+            del related_form
+        del self.related_form[:]
+        for word_form in self.word_form:
+            del word_form
+        del self.word_form[:]
+        for stem in self.stem:
+            del stem
+        del self.stem[:]
+        if self.lemma is not None:
+            del self.lemma
+        if self.list_of_components is not None:
+            del self.list_of_components
+        # Decrement the reference count on pointed objects
+        self.__speaker = None
+
     def set_partOfSpeech(self, part_of_speech):
         """! @brief Set grammatical category.
         @param part_of_speech The grammatical category to set.

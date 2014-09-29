@@ -16,3 +16,8 @@ class TextRepresentation(Representation):
         # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
         self.__new__()
         self.font = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

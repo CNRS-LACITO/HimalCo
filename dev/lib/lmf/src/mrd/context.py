@@ -22,6 +22,16 @@ class Context():
         # There is zero or one Speaker pointer per Context instance
         self.__speaker = None
 
+    def __del__(self):
+        """! @brief Destructor.
+        Release TextRepresentation instances.
+        """
+        for text_representation in self.text_representation:
+            del text_representation
+        del self.text_representation[:]
+        # Decrement the reference count on pointed objects
+        self.__speaker = None
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return Context private attribute '__speaker'.

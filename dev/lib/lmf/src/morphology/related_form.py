@@ -24,6 +24,12 @@ class RelatedForm(Form):
         # There is one LexicalEntry pointer per RelatedForm instance
         self.__lexical_entry = None
 
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        # Decrement the reference count on pointed objects
+        self.__lexical_entry = None
+
     def set_semanticRelation(self, semantic_relation):
         """! @brief Set semantic relation.
         @param semantic_relation The semantic relation to set.

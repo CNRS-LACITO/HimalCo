@@ -22,3 +22,8 @@ class GlobalInformation():
         self.projectName = None
         self.description = None
         self.bibliographicCitation = None
+
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass

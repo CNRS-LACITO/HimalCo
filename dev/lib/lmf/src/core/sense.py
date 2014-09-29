@@ -31,3 +31,26 @@ class Sense():
         ## Paradigm instances are owned by Sense
         # There is zero to many Paradigm instances per Sense
         self.paradigm = []
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release Definition, Sense, Equivalent, Context, SubjectField, Paradigm instances.
+        """
+        for definition in self.definition:
+            del definition
+        del self.definition[:]
+        for sense in self.sense:
+            del sense
+        del self.sense[:]
+        for equivalent in self.equivalent:
+            del equivalent
+        del self.equivalent[:]
+        for context in self.context:
+            del context
+        del self.context[:]
+        for subject_field in self.subject_field:
+            del subject_field
+        del self.subject_field[:]
+        for paradigm in self.paradigm:
+            del paradigm
+        del self.paradigm[:]

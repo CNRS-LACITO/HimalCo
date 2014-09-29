@@ -16,3 +16,11 @@ class SubjectField():
         ## SubjectField instances are owned by SubjectField
         # There is zero to many SubjectField instances per SubjectField
         self.subject_field = []
+
+    def __del__(self):
+        """! @brief Destructor.
+        Release SubjectField instances.
+        """
+        for subject_field in self.subject_field:
+            del subject_field
+        del self.subject_field[:]

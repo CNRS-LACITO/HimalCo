@@ -18,6 +18,11 @@ class Lemma(Form):
         self.hyphenation = None
         self.lexeme = None
 
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        pass
+
     def set_lexeme(self, lexeme):
         """! @brief Set lexeme.
         @param lexeme The lexeme to set.

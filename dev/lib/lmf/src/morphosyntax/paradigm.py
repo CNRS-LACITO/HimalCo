@@ -21,6 +21,12 @@ class Paradigm():
         # There is zero or one LexicalEntry pointer per Paradigm instance
         self.__lexical_entry = None
 
+    def __del__(self):
+        """! @brief Destructor.
+        """
+        # Decrement the reference count on pointed objects
+        self.__lexical_entry = None
+
     def get_lexical_entry(self):
         """! @brief Get pointed lexical entry.
         @return Paradigm private attribute '__lexical_entry'.

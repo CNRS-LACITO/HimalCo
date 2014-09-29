@@ -53,7 +53,9 @@ class TestMdfFunctions(unittest.TestCase):
         expected_lines = ["\\st hello" + eol, "\\lx draft" + eol, "\\ps toto" + eol, eol]
         self.assertListEqual(expected_lines, mdf_file.readlines())
         mdf_file.close()
-        del lexical_entry.lemma, lexical_entry, lexicon
+        del lexical_entry.lemma
+        lexical_entry.lemma = None
+        del lexical_entry, lexicon
         # Remove MDF file
         os.remove(mdf_filename)
 

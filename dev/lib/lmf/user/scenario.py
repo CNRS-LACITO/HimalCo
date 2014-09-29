@@ -21,3 +21,5 @@ tex_write(output, user_path + "output.tex", preamble=user_path + "config/japhug.
 
 # Write MDF file
 mdf_write(output, user_path + "output.txt")
+
+del input, output

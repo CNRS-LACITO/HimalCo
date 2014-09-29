@@ -45,7 +45,9 @@ class TestXmlLmfFunctions(unittest.TestCase):
             """</LexicalEntry>""" + eol]
         self.assertListEqual(expected_lines, xml_lmf_file.readlines())
         xml_lmf_file.close()
-        del lexical_entry.lemma, lexical_entry
+        del lexical_entry.lemma
+        lexical_entry.lemma = None
+        del lexical_entry
         # Remove XML LMF file
         os.remove(xml_lmf_filename)
 
@@ -68,7 +70,9 @@ class TestXmlLmfFunctions(unittest.TestCase):
         self.assertEqual(partOfSpeech.attrib["val"], "toto")
         self.assertEqual(status.attrib["att"], "status")
         self.assertEqual(status.attrib["val"], "draft")
-        del instance.lemma, instance, element
+        del instance.lemma
+        instance.lemma = None
+        del instance, element
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestXmlLmfFunctions)
 

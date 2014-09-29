@@ -34,6 +34,16 @@ class FormRepresentation(Representation):
         # There is zero to many pointers per FormRepresentation instance
         self.__speaker = []
 
+    def __del__(self):
+        """! @brief Destructor.
+        Release Audio instances.
+        """
+        for audio in self.audio:
+            del audio
+        del self.audio[:]
+        # Decrement the reference count on pointed objects
+        del self.__speaker[:]
+
     def get_speakers(self):
         """! @brief Get speakers.
         @return FormRepresentation private attribute '__speaker', a Python list of Speaker instances.
