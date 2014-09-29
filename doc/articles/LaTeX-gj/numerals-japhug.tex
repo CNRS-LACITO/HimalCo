@@ -1,0 +1,67 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{xunicode}%packages de base pour utiliser xetex
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{tangutex4} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newfontfamily\greek[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+%\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+
+\begin{document}
+\title{The morphology of numerals and classifiers  in Japhug and other Burmo-Qiangic languages}
+\author{Guillaume Jacques}
+\maketitle
+
+In many Burmo-Qiangic languages, including Lolo-Burmese (\citealt{bradley05numerals}) and Naish (\citealt{michaud11cl}), the combination of numerals with classifier is the one (in some cases the only one) area of grammar where morphological irregularities and complex alternations are attested.
+
+Somewhat paradoxically, in Rgyalrong languages, otherwise known for their polysynthetic and irregular verbal morphology (\citealt{jacques12incorp}), numerals and classifiers present relatively simple and predictable alternations. 
+
+In this paper, we first present a detailed description of the morphology and morphosyntax of numerals and classifiers in japhug (going beyond the account in   \citealt{jacques08zh}) based on both corpus data and elicitation for some paradigms. 
+
+Then, we evaluate several competing analyses to account for the observed data: either the system found in Japhug has recently been completely innovated, or it is cognate with the numeral+classifier paradigms in Lolo-Burmese and Naish but has been thoroughly simplified by analogical levelling.
+
+Finally, we propose that  reason why Japhug never developed complex and irregular paradigms for classifier is because, as shown by \citet{bradley05numerals}, most alternations in Lolo-Burmese and other languages  are the indirect effects of lost final obstruents. Since Japhug preserved all final obstruents as distinct segments, the basic conditions for the alternations to develop were not present in the first place.
+
+
+   
+ 
+
+
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
