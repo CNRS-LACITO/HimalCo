@@ -2,6 +2,7 @@
 
 from config.tex import lmf_tex, tex_order
 from utils.io import open_read, open_write, EOL
+from utils.error_handling import OutputError
 
 def compute_header(preamble):
     """! @brief Create LaTeX header.
@@ -39,7 +40,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order)
             # Separate lexical entries from each others with a blank line
             tex_file.write(EOL)
     else:
-        raise AttributeError(0, __file__, "Object to write must be a Lexicon.")
+        raise OutputError(object, "Object to write must be a Lexicon.")
     # Insert LaTeX commands to finish the document properly
     tex_file.write("\end{multicols}" + EOL)
     tex_file.write("\end{document}" + EOL)

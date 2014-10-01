@@ -1,25 +1,26 @@
 #! /usr/bin/env python
 
-import startup, sys
-from src import *
+## Needed to import LMF library properly
+# Also automatically define 'user_path' as location of lib/lmf/user/ folder
+from startup import *
 
+# Import user customized configuration if any
 from na import mdf2lmf
 
-user_path = sys.path[0] + '/'
-
 # Read MDF file
-input = mdf_read(user_path + "input.txt", mdf2lmf)
+input = lmf.read_mdf(user_path + "input.txt", mdf2lmf)
 
 # Write XML LMF file
-lmf_write(input, user_path + "output.xml")
+lmf.write_xml_lmf(input, user_path + "output.xml")
 
 # Read XML LMF file
-output = lmf_read(user_path + "output.xml")
+output = lmf.read_xml_lmf(user_path + "output.xml")
 
 # Write LaTeX file
-tex_write(output, user_path + "output.tex", preamble=user_path + "config/japhug.tex")
+lmf.write_tex(output, user_path + "output.tex", preamble=user_path + "config/japhug.tex")
 
 # Write MDF file
-mdf_write(output, user_path + "output.txt")
+lmf.write_mdf(output, user_path + "output.txt")
 
+# Release created objects
 del input, output

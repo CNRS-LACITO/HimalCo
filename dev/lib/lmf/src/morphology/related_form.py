@@ -5,6 +5,7 @@
 
 from core.form import Form
 from common.range import semanticRelation_range
+from utils.error_handling import Error
 
 class RelatedForm(Form):
     """! "Related Form is a Form subclass representing a word form or a morph that can be related to the Lexical Entry. There is no asumption that the Related Form is associated with the Sense class in the Lexical Entry." (LMF)
@@ -37,7 +38,7 @@ class RelatedForm(Form):
         """
         # Check semantic relation value
         if semantic_relation not in semanticRelation_range:
-            raise AttributeError
+            raise Error("Semantic relation value '%s' is not allowed" % semantic_relation)
         self.semanticRelation = semantic_relation
         return self
 

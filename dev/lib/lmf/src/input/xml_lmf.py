@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 from utils.xml_format import parse_xml
+from utils.error_handling import InputError
 
 def compute_name(object_name):
     """! @brief Compute attribute/module name from object name as follows: 'ObjectName' attribute/module name is 'object_name'.
@@ -36,10 +37,10 @@ def factory(object_name, attributes):
     full_path = glob.glob(running_path + separator + ".." + separator + "src" + separator + "*" + separator + module_name + ".py")
     if len(full_path) < 1:
         # No file with this name exists.
-        raise IOError(0, __file__, "No file named %s exists in the library. It is not allowed, so please solve this issue by renaming files correctly." % (module_name + ".py"))
+        raise InputError(module_name + ".py", "No file named '%s' exists in the library. It is not allowed, so please solve this issue by renaming files correctly." % (module_name + ".py"))
     elif len(full_path) > 1:
         # Several files with this name exist.
-        raise IOError(0, __file__, "Several files named %s exist in the library. It is not allowed, so please solve this issue by renaming files correctly. Here is the list of found files with this name: " % (module_name + ".py", str(full_path)))
+        raise InputError(module_name + ".py", "Several files named '%s' exist in the library. It is not allowed, so please solve this issue by renaming files correctly. Here is the list of found files with this name: %s" % ((module_name + ".py"), str(full_path)))
     # Retrieve package name from full path
     package_name = full_path[0].split(separator)[-2]
     # Import object module: "package.module"

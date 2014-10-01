@@ -2,7 +2,14 @@
 
 import sys
 
+# Find lib/lmf/user/ path location
 user_path = sys.path[0] + '/'
+
+# Add user configuration folder to path
 sys.path.append(user_path + 'config')
-sys.path.append(user_path + '..')
-sys.path.append(user_path + '../src')
+
+# Add lib/ folder to path
+sys.path.append(user_path + '../..')
+
+# Import LMF library
+import lmf

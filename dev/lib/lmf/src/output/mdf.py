@@ -2,6 +2,7 @@
 
 from config.mdf import lmf_mdf, mdf_order
 from utils.io import open_write, EOL
+from utils.error_handling import OutputError
 
 def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
     """! @brief Write an MDF file.
@@ -26,5 +27,5 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
             # Separate lexical entries from each others with a blank line
             mdf_file.write(EOL)
     else:
-        raise AttributeError(0, __file__, "Object to write must be a Lexicon.")
+        raise OutputError(object, "Object to write must be a Lexicon.")
     mdf_file.close()

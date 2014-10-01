@@ -125,29 +125,19 @@ class TestLexiconFunctions(unittest.TestCase):
         self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
         self.assertEqual(entry1.related_form[0].get_lexical_entry(), entry2)
         self.assertEqual(entry2.related_form[0].get_lexical_entry(), entry1)
-        # Test error case: entry not found
+        # Test warning case: entry not found
         entry3 = LexicalEntry().set_lexeme("hello").create_and_add_related_form("world", "main entry")
         self.lexicon.lexical_entry.append(entry3)
-        test = False
-        try:
-            self.lexicon.check_cross_references()
-        except IOError:
-            test = True
-        self.assertTrue(test)
+        self.lexicon.check_cross_references()
         # Retrieve nominal case
         entry4 = LexicalEntry().set_lexeme("world")
         self.lexicon.lexical_entry.append(entry4)
         self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
         self.assertEqual(entry3.related_form[0].get_lexical_entry(), entry4)
-        # Test error case: several entries found
+        # Test warning case: several entries found
         entry5 = LexicalEntry().set_lexeme("world")
         self.lexicon.lexical_entry.append(entry5)
-        test = False
-        try:
-            self.lexicon.check_cross_references()
-        except IOError:
-            test = True
-        self.assertTrue(test)
+        self.lexicon.check_cross_references()
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2, entry3, entry4, entry5

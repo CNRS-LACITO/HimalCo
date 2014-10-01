@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-from utils import *
+from utils.io import open_write
 
 try:
     from xml.etree.cElementTree import Element, SubElement, parse, dump, ElementTree, fromstring, tostring, XML

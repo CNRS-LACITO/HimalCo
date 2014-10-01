@@ -3,6 +3,7 @@
 from startup import *
 from morphology.related_form import RelatedForm
 from core.lexical_entry import LexicalEntry
+from utils.error_handling import Error
 
 ## Test RelatedForm class
 
@@ -29,7 +30,7 @@ class TestRelatedFormFunctions(unittest.TestCase):
         test = False
         try:
             self.related_form.set_semanticRelation("whatever")
-        except AttributeError:
+        except Error:
             test = True
         self.assertTrue(test)
         # Test nominal case

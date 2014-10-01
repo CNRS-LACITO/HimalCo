@@ -16,4 +16,4 @@ import test_output_mdf, test_output_tex, test_output_xml_lmf
 # Resources
 import test_resources_audio, test_resources_human_resource, test_resources_material, test_resources_picture, test_resources_resource, test_resources_speaker, test_resources_video
 # Utils
-import test_utils_error_handling, test_utils_io, test_utils_xml_format
+import test_utils_error_handling, test_utils_io, test_utils_log, test_utils_xml_format

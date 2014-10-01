@@ -3,6 +3,8 @@
 """! @package core
 """
 
+from utils.error_handling import Warning
+
 class Lexicon():
     """! "Lexicon is a class containing all the lexical entries of a given language within the entire resource." (LMF)
     """
@@ -99,12 +101,13 @@ class Lexicon():
                 found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_form.get_lexeme())
                 if len(found_entry) < 1:
                     # No lexical entry with this lexeme exists.
-                    raise IOError(0, __file__, "Lexical entry %s does not exist. Please solve this issue by checking the related form of %s." % (related_form.get_lexeme(), lexical_entry.get_lexeme()))
+                    print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_form.get_lexeme(), lexical_entry.get_lexeme()))
                 elif len(found_entry) > 1:
                     # Several lexical entries with this lexeme exist.
-                    raise IOError(0, __file__, "Several lexical entries %s exist. Please solve this issue by renaming lexical entries correctly." % lexical_entry.get_lexeme())
-                # Save the found lexical entry
-                related_form.set_lexical_entry(found_entry[0])
+                    print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly." % lexical_entry.get_lexeme())
+                else:
+                    # Save the found lexical entry
+                    related_form.set_lexical_entry(found_entry[0])
         return self
 
     def convert_to_latex(self):

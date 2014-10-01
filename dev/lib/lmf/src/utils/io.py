@@ -1,5 +1,7 @@
 #! /usr/bin/env python
 
+from utils.error_handling import Error
+
 ## Define EOL depending on operating system
 import os
 if os.name == 'posix':
@@ -17,10 +19,13 @@ def open_file(filename, mode, encoding='utf8'):
     @return File handler.
     """
     try:
-        return open(filename, mode, encoding=encoding)
-    except TypeError:
-        import codecs
-        return codecs.open(filename, mode, encoding=encoding)
+        try:
+            return open(filename, mode, encoding=encoding)
+        except TypeError:
+            import codecs
+            return codecs.open(filename, mode, encoding=encoding)
+    except IOError as exception:
+        raise Error("Cannot open file.", exception)
 
 def open_read(filename, encoding=None):
     """! @brief Open file in read mode (automatically decode file in unicode).
