@@ -2,6 +2,7 @@
 
 from startup import *
 from utils.xml_format import prettify, write_result, parse_xml, Element, SubElement, ElementTree
+from utils.io import EOL
 
 ## Test XML format functions
 
@@ -18,13 +19,7 @@ class TestXmlFormatFunctions(unittest.TestCase):
         element = Element("LexicalEntry")
         SubElement(element, "Lemma")
         # Build expected result
-        import os
-        if os.name == 'posix':
-            # Unix-style end of line
-            eol = u"\n"
-        else:
-            # Windows-style end of line
-            eol = u"\r\n"
+        eol = unicode(EOL)
         expected_str = u"<?xml version=\"1.0\" ?>" + eol + u"<LexicalEntry>" + eol + u"    <Lemma/>" + eol + u"</LexicalEntry>" + eol
         # Test
         self.assertEqual(prettify(element), expected_str)
