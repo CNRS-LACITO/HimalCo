@@ -5,6 +5,7 @@ from output.xml_lmf import xml_lmf_write, build_sub_elements
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from utils.xml_format import Element, SubElement
+from utils.io import EOL
 
 ## Test XML LMF functions
 
@@ -29,20 +30,14 @@ class TestXmlLmfFunctions(unittest.TestCase):
         xml_lmf_filename = utest_path + "lmf_output.xml"
         xml_lmf_write(lexical_entry, xml_lmf_filename)
         xml_lmf_file = open(xml_lmf_filename, "r")
-        if os.name == 'posix':
-            # Unix-style end of line
-            eol = '\n'
-        else:
-            # Windows-style end of line
-            eol = '\r\n'
-        expected_lines = ["""<?xml version="1.0" ?>""" + eol,
-            """<LexicalEntry id="0">""" + eol,
-            """    <feat att="status" val="draft"/>""" + eol,
-            """    <Lemma>""" + eol,
-            """        <feat att="lexeme" val="hello"/>""" + eol,
-            """    </Lemma>""" + eol,
-            """    <feat att="partOfSpeech" val="toto"/>""" + eol,
-            """</LexicalEntry>""" + eol]
+        expected_lines = ["""<?xml version="1.0" ?>""" + EOL,
+            """<LexicalEntry id="0">""" + EOL,
+            """    <feat att="status" val="draft"/>""" + EOL,
+            """    <Lemma>""" + EOL,
+            """        <feat att="lexeme" val="hello"/>""" + EOL,
+            """    </Lemma>""" + EOL,
+            """    <feat att="partOfSpeech" val="toto"/>""" + EOL,
+            """</LexicalEntry>""" + EOL]
         self.assertListEqual(expected_lines, xml_lmf_file.readlines())
         xml_lmf_file.close()
         del lexical_entry.lemma

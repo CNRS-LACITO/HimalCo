@@ -5,6 +5,7 @@ from output.tex import compute_header, tex_write
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
+from utils.io import EOL
 
 ## Test LaTeX functions
 
@@ -22,13 +23,7 @@ class TestTexFunctions(unittest.TestCase):
         utest_path = sys.path[0] + '/'
         tex_filename = utest_path + "header.tex"
         tex_file = open(tex_filename, "w+")
-        if os.name == 'posix':
-            # Unix-style end of line
-            eol = '\n'
-        else:
-            # Windows-style end of line
-            eol = '\r\n'
-        header = "\documentclass{article}" + eol + "\\title{test}" + eol + "\\author{C\'eline Buret}" + eol
+        header = "\documentclass{article}" + EOL + "\\title{test}" + EOL + "\\author{C\'eline Buret}" + EOL
         tex_file.write(header)
         tex_file.close()
         # Read header file and test result
@@ -51,44 +46,38 @@ class TestTexFunctions(unittest.TestCase):
         tex_filename = utest_path + "output.tex"
         tex_write(lexicon, tex_filename)
         tex_file = open(tex_filename, "r")
-        if os.name == 'posix':
-            # Unix-style end of line
-            eol = '\n'
-        else:
-            # Windows-style end of line
-            eol = '\r\n'
-        begin_lines = [eol,
-            "\\begin{document}" + eol,
-            "\\maketitle" + eol,
-            "\\newpage" + eol,
-            "\\begin{multicols}{2}" + eol
+        begin_lines = [EOL,
+            "\\begin{document}" + EOL,
+            "\\maketitle" + EOL,
+            "\\newpage" + EOL,
+            "\\begin{multicols}{2}" + EOL
             ]
         end_lines = [
-            "\end{multicols}" + eol,
-            "\end{document}" + eol
+            "\end{multicols}" + EOL,
+            "\end{document}" + EOL
             ]
-        expected_lines = [eol,
-            "\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{hello}} \\hspace{0.2cm} \\hypertarget{0}{}" + eol,
-            "\\textcolor{teal}{\\textit{toto}}" + eol,
-            eol]
+        expected_lines = [EOL,
+            "\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{hello}} \\hspace{0.2cm} \\hypertarget{0}{}" + EOL,
+            "\\textcolor{teal}{\\textit{toto}}" + EOL,
+            EOL]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
         # Customize mapping
         lmf2tex = dict({
-            "Lemma.lexeme" : lambda lexical_entry: "is " + lexical_entry.get_lexeme() + "." + eol,
-            "LexicalEntry.id" : lambda lexical_entry: eol + "The lexical entry " + str(lexical_entry.get_id()) + " ",
-            "LexicalEntry.partOfSpeech" : lambda lexical_entry: "Its grammatical category is " + lexical_entry.get_partOfSpeech() + "." + eol,
-            "LexicalEntry.status" : lambda lexical_entry: "Warning: " + lexical_entry.get_status() + " version!" + eol
+            "Lemma.lexeme" : lambda lexical_entry: "is " + lexical_entry.get_lexeme() + "." + EOL,
+            "LexicalEntry.id" : lambda lexical_entry: EOL + "The lexical entry " + str(lexical_entry.get_id()) + " ",
+            "LexicalEntry.partOfSpeech" : lambda lexical_entry: "Its grammatical category is " + lexical_entry.get_partOfSpeech() + "." + EOL,
+            "LexicalEntry.status" : lambda lexical_entry: "Warning: " + lexical_entry.get_status() + " version!" + EOL
         })
         order = ["LexicalEntry.id", "Lemma.lexeme", "LexicalEntry.partOfSpeech", "LexicalEntry.status"]
         # Write LaTeX file and test result
         tex_write(lexicon, tex_filename, None, lmf2tex, order)
         tex_file = open(tex_filename, "r")
-        expected_lines = [eol,
-            "The lexical entry 0 is hello." + eol,
-            "Its grammatical category is toto." + eol,
-            "Warning: draft version!" + eol,
-            eol]
+        expected_lines = [EOL,
+            "The lexical entry 0 is hello." + EOL,
+            "Its grammatical category is toto." + EOL,
+            "Warning: draft version!" + EOL,
+            EOL]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
         del lexical_entry.lemma

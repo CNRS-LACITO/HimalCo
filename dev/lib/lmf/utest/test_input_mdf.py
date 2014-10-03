@@ -2,6 +2,7 @@
 
 from startup import *
 from input.mdf import mdf_read
+from utils.io import EOL
 
 ## Test MDF functions
 
@@ -19,13 +20,7 @@ class TestMdfFunctions(unittest.TestCase):
         utest_path = sys.path[0] + '/'
         mdf_filename = utest_path + "mdf_input.txt"
         mdf_file = open(mdf_filename, "w+")
-        if os.name == 'posix':
-            # Unix-style end of line
-            eol = '\n'
-        else:
-            # Windows-style end of line
-            eol = '\r\n'
-        mdf_file.write("\\lx hello" + eol + "\\ps toto" + eol + "\\st draft" + eol)
+        mdf_file.write("\\lx hello" + EOL + "\\ps toto" + EOL + "\\st draft" + EOL)
         mdf_file.close()
         # Read MDF file and test result
         lexicon = mdf_read(mdf_filename)

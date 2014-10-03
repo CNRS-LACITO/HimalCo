@@ -1,5 +1,14 @@
 #! /usr/bin/env python
 
+## Define EOL depending on operating system
+import os
+if os.name == 'posix':
+    # Unix-style end of line
+    EOL = '\n'
+else:
+    # Windows-style end of line
+    EOL = '\r\n'
+
 def open_file(filename, mode, encoding='utf8'):
     """! @brief Open file in specified mode (automatically decode file in unicode).
     @param filename Full path to file to open.
