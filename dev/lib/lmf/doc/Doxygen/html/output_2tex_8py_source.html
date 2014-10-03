@@ -87,60 +87,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">tex.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="output_2tex_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacesrc_1_1output_1_1tex.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
+<a href="output_2tex_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1tex.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> config.tex <span class="keyword">import</span> lmf_tex, tex_order</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> open_read, open_write</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacesrc_1_1output_1_1tex.html#a0d88951ca91a678658025f0aff46c341">    6</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacesrc_1_1output_1_1tex.html#a0d88951ca91a678658025f0aff46c341">compute_header</a>(preamble):</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Create LaTeX header.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance &#39;user/config/japhug.tex&#39;.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    @return A Python string containing read information.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    header = <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> preamble <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        hdr = <a class="code" href="namespacesrc_1_1utils_1_1io.html#aaca202c1b026ebdc4ff5eec904197623">open_read</a>(preamble)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        header = hdr.read()</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        hdr.close()</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> header</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacesrc_1_1output_1_1tex.html#abc62b0543c20d8f1d0fe63f1b52726c8">   18</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacesrc_1_1output_1_1tex.html#abc62b0543c20d8f1d0fe63f1b52726c8">tex_write</a>(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order):</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Write a LaTeX file.</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">    @param object The LMF instance to convert into LaTeX output format.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">    @param filename The name of the LaTeX file to write with full path, for instance &#39;user/output.tex&#39;.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance &#39;user/config/japhug.tex&#39;. Deafult value is None.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">    @param lmf2tex A Python dictionary describing the mapping between LMF representation and LaTeX commands. Default value is &#39;lmf_tex&#39; dictionary defined in &#39;src/config/tex.py&#39;. Please refer to it as an example.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">    @param order A Python list defining the order in which LMF information must be written, for instance  [&quot;Lemma.lexeme&quot;, &quot;LexicalEntry.partOfSpeech&quot;]. Default value is &#39;tex_order&#39; list defined in &#39;src/config/tex.py&#39;.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    tex_file = <a class="code" href="namespacesrc_1_1utils_1_1io.html#a63178ca81911ae28965794aef365250c">open_write</a>(filename)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment"># Add file header if any</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    tex_file.write(<a class="code" href="namespacesrc_1_1output_1_1tex.html#a0d88951ca91a678658025f0aff46c341">compute_header</a>(preamble))</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment"># Insert LaTeX commands to create a document</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\n\\begin{document}\n&quot;</span>)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\maketitle\n&quot;</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\newpage\n&quot;</span>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\begin{multicols}{2}\n&quot;</span>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment"># For each element to write, get the corresponding LMF value</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> object.__class__.__name__ == <span class="stringliteral">&quot;Lexicon&quot;</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">for</span> lexical_entry <span class="keywordflow">in</span> object.get_lexical_entries():</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">for</span> attribute <span class="keywordflow">in</span> order:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                tex_file.write(lmf2tex[attribute](lexical_entry))</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="comment"># Separate lexical entries from each others with a blank line</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            tex_file.write(<span class="stringliteral">&quot;\n&quot;</span>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">raise</span> AttributeError(0, __file__, <span class="stringliteral">&quot;Object to write must be a Lexicon.&quot;</span>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment"># Insert LaTeX commands to finish the document properly</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\end{multicols}\n&quot;</span>)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\end{document}\n&quot;</span>)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    tex_file.close()</div>
-<div class="ttc" id="namespacesrc_1_1output_1_1tex_html_a0d88951ca91a678658025f0aff46c341"><div class="ttname"><a href="namespacesrc_1_1output_1_1tex.html#a0d88951ca91a678658025f0aff46c341">src.output.tex.compute_header</a></div><div class="ttdeci">def compute_header</div><div class="ttdoc">Create LaTeX header. </div><div class="ttdef"><b>Definition:</b> <a href="output_2tex_8py_source.html#l00006">tex.py:6</a></div></div>
-<div class="ttc" id="namespacesrc_1_1output_1_1tex_html_abc62b0543c20d8f1d0fe63f1b52726c8"><div class="ttname"><a href="namespacesrc_1_1output_1_1tex.html#abc62b0543c20d8f1d0fe63f1b52726c8">src.output.tex.tex_write</a></div><div class="ttdeci">def tex_write</div><div class="ttdoc">Write a LaTeX file. </div><div class="ttdef"><b>Definition:</b> <a href="output_2tex_8py_source.html#l00018">tex.py:18</a></div></div>
-<div class="ttc" id="namespacesrc_1_1utils_1_1io_html_aaca202c1b026ebdc4ff5eec904197623"><div class="ttname"><a href="namespacesrc_1_1utils_1_1io.html#aaca202c1b026ebdc4ff5eec904197623">src.utils.io.open_read</a></div><div class="ttdeci">def open_read</div><div class="ttdoc">Open file in read mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00016">io.py:16</a></div></div>
-<div class="ttc" id="namespacesrc_1_1utils_1_1io_html_a63178ca81911ae28965794aef365250c"><div class="ttname"><a href="namespacesrc_1_1utils_1_1io.html#a63178ca81911ae28965794aef365250c">src.utils.io.open_write</a></div><div class="ttdeci">def open_write</div><div class="ttdoc">Open file in write mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00027">io.py:27</a></div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> open_read, open_write, EOL</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">from</span> utils.error_handling <span class="keyword">import</span> OutputError</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1tex.html#ac02be073e031d36d66f61dc7d6fb94df">    7</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1output_1_1tex.html#ac02be073e031d36d66f61dc7d6fb94df">compute_header</a>(preamble):</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Create LaTeX header.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance &#39;user/config/japhug.tex&#39;.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">    @return A Python string containing read information.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    header = <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> preamble <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        hdr = <a class="code" href="namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff">open_read</a>(preamble)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        header = hdr.read()</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        hdr.close()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> header</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1tex.html#a2f69a7ff35d3a419eaa9f4bb40aefa06">   19</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1output_1_1tex.html#a2f69a7ff35d3a419eaa9f4bb40aefa06">tex_write</a>(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order):</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Write a LaTeX file.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">    @param object The LMF instance to convert into LaTeX output format.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">    @param filename The name of the LaTeX file to write with full path, for instance &#39;user/output.tex&#39;.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance &#39;user/config/japhug.tex&#39;. Deafult value is None.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">    @param lmf2tex A Python dictionary describing the mapping between LMF representation and LaTeX commands. Default value is &#39;lmf_tex&#39; dictionary defined in &#39;src/config/tex.py&#39;. Please refer to it as an example.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">    @param order A Python list defining the order in which LMF information must be written, for instance  [&quot;Lemma.lexeme&quot;, &quot;LexicalEntry.partOfSpeech&quot;]. Default value is &#39;tex_order&#39; list defined in &#39;src/config/tex.py&#39;.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    tex_file = <a class="code" href="namespacelmf_1_1src_1_1utils_1_1io.html#a943b893b8992a6e46d91400538709b80">open_write</a>(filename)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment"># Add file header if any</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    tex_file.write(<a class="code" href="namespacelmf_1_1src_1_1output_1_1tex.html#ac02be073e031d36d66f61dc7d6fb94df">compute_header</a>(preamble))</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment"># Insert LaTeX commands to create a document</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    tex_file.write(EOL + <span class="stringliteral">&quot;\\begin{document}&quot;</span> + EOL)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\maketitle&quot;</span> + EOL)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\newpage&quot;</span> + EOL)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\\begin{multicols}{2}&quot;</span> + EOL)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment"># For each element to write, get the corresponding LMF value</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> object.__class__.__name__ == <span class="stringliteral">&quot;Lexicon&quot;</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> lexical_entry <span class="keywordflow">in</span> object.get_lexical_entries():</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">for</span> attribute <span class="keywordflow">in</span> order:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                tex_file.write(lmf2tex[attribute](lexical_entry))</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="comment"># Separate lexical entries from each others with a blank line</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            tex_file.write(EOL)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">raise</span> OutputError(object, <span class="stringliteral">&quot;Object to write must be a Lexicon.&quot;</span>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment"># Insert LaTeX commands to finish the document properly</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\end{multicols}&quot;</span> + EOL)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    tex_file.write(<span class="stringliteral">&quot;\end{document}&quot;</span> + EOL)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    tex_file.close()</div>
+<div class="ttc" id="namespacelmf_1_1src_1_1output_1_1tex_html_ac02be073e031d36d66f61dc7d6fb94df"><div class="ttname"><a href="namespacelmf_1_1src_1_1output_1_1tex.html#ac02be073e031d36d66f61dc7d6fb94df">lmf.src.output.tex.compute_header</a></div><div class="ttdeci">def compute_header</div><div class="ttdoc">Create LaTeX header. </div><div class="ttdef"><b>Definition:</b> <a href="output_2tex_8py_source.html#l00007">tex.py:7</a></div></div>
+<div class="ttc" id="namespacelmf_1_1src_1_1output_1_1tex_html_a2f69a7ff35d3a419eaa9f4bb40aefa06"><div class="ttname"><a href="namespacelmf_1_1src_1_1output_1_1tex.html#a2f69a7ff35d3a419eaa9f4bb40aefa06">lmf.src.output.tex.tex_write</a></div><div class="ttdeci">def tex_write</div><div class="ttdoc">Write a LaTeX file. </div><div class="ttdef"><b>Definition:</b> <a href="output_2tex_8py_source.html#l00019">tex.py:19</a></div></div>
+<div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1io_html_a2659ffc6cd260a7a4e43f0546d518dff"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff">lmf.src.utils.io.open_read</a></div><div class="ttdeci">def open_read</div><div class="ttdoc">Open file in read mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00030">io.py:30</a></div></div>
+<div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1io_html_a943b893b8992a6e46d91400538709b80"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1io.html#a943b893b8992a6e46d91400538709b80">lmf.src.utils.io.open_write</a></div><div class="ttdeci">def open_write</div><div class="ttdoc">Open file in write mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00041">io.py:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 18 2014 15:51:59 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 17:23:02 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

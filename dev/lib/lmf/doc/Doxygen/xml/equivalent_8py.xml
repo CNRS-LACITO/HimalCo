@@ -2,19 +2,39 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="equivalent_8py" kind="file">
     <compoundname>equivalent.py</compoundname>
-    <innerclass refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent" prot="public">src::mrd::equivalent::Equivalent</innerclass>
-    <innernamespace refid="namespacesrc_1_1mrd_1_1equivalent">src::mrd::equivalent</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" prot="public">lmf::src::mrd::equivalent::Equivalent</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1mrd_1_1equivalent">lmf::src::mrd::equivalent</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1mrd_1_1equivalent" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1mrd_1_1equivalent" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref>():</highlight></codeline>
-<codeline lineno="4" refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a83ca8d23dc75be6f6a7e6a318a91aa48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a83ca8d23dc75be6f6a7e6a318a91aa48" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="5" refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a827bb0b73adca115ffdf6f5a95f807bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a827bb0b73adca115ffdf6f5a95f807bf" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a607911fadc9f5751ca553cb7c47d300f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1mrd_1_1equivalent_1_1_equivalent_1a607911fadc9f5751ca553cb7c47d300f" kindref="member">translation</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>mrd</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref>():</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>&quot;Equivalent<sp/>is<sp/>a<sp/>class<sp/>representing<sp/>the<sp/>translation<sp/>equivalent<sp/>of<sp/>the<sp/>word<sp/>form<sp/>managed<sp/>by<sp/>the<sp/>Lemma<sp/>class.&quot;<sp/>(LMF)</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Constructor.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Equivalent<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>Sense.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@return<sp/>An<sp/>Equivalent<sp/>instance.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" kindref="member">language</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" kindref="member">translation</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>TextRepresentation<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>Equivalent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>There<sp/>is<sp/>zero<sp/>to<sp/>many<sp/>TextRepresentation<sp/>instances<sp/>per<sp/>Equivalent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" kindref="member">text_representation</ref><sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Destructor.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Release<sp/>TextRepresentation<sp/>instances.</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>text_representation<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" kindref="member">text_representation</ref>:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>text_representation</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>self.<ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" kindref="member">text_representation</ref>[:]</highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py"/>
   </compounddef>

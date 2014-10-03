@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kind="class" prot="public">
+    <compoundname>lmf::src::morphology::list_of_components::ListOfComponents</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.list_of_components.ListOfComponents::component</definition>
+        <argsstring></argsstring>
+        <name>component</name>
+        <briefdescription>
+<para>Component instances are owned by <ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref> There are two or more Component instances per <ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a2f5197e9468d65a9bda951b7cee8b922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.list_of_components.ListOfComponents.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref> instance is owned by LexicalEntry. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="9" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.list_of_components.ListOfComponents.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release Component instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="18" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>&quot;List of Components is a class representing the aggregative aspect of a multiword expression (MWE). The mechanism can also be applied recursively, so that an MWE way be comprised of components that are themselves MWEs. This class is used in the morphological pattern and MWE pattern packages.&quot; (LMF)
+</verbatim> </para>    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a2f5197e9468d65a9bda951b7cee8b922" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>component</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

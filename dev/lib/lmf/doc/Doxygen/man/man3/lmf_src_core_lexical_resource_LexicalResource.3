@@ -1,0 +1,96 @@
+.TH "lmf.src.core.lexical_resource.LexicalResource" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.core.lexical_resource.LexicalResource \- 
+.PP
+'Lexical Resource is a class representing the entire resource and is a container for one or more lexicons\&. There is only one Lexical Resource instance\&.' (LMF)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fB__del__\fP"
+.br
+.RI "\fIDestructor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBdtdVersion\fP"
+.br
+.ti -1c
+.RI "\fBglobal_information\fP"
+.br
+.RI "\fIGlobalInformation instance is owned by \fBLexicalResource\fP There is one GlobalInformation for one \fBLexicalResource\fP\&. \fP"
+.ti -1c
+.RI "\fBlexicon\fP"
+.br
+.RI "\fILexicon instances are owned by \fBLexicalResource\fP There is one or more Lexicon instances for one unique \fBLexicalResource\fP\&. \fP"
+.ti -1c
+.RI "\fBspeaker\fP"
+.br
+.RI "\fISpeaker instances are owned by \fBLexicalResource\fP There is zero to many Speaker instances for one unique \fBLexicalResource\fP\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+'Lexical Resource is a class representing the entire resource and is a container for one or more lexicons\&. There is only one Lexical Resource instance\&.' (LMF) 
+.PP
+Definition at line 6 of file lexical_resource\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.__init__ (self)"
+
+.PP
+Constructor\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A \fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.__del__ (self)"
+
+.PP
+Destructor\&. Release GlobalInformation, Lexicon, Speaker instances\&. 
+.PP
+Definition at line 24 of file lexical_resource\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.dtdVersion"
+
+.PP
+Definition at line 13 of file lexical_resource\&.py\&.
+.SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.global_information"
+
+.PP
+GlobalInformation instance is owned by \fBLexicalResource\fP There is one GlobalInformation for one \fBLexicalResource\fP\&. 
+.PP
+Definition at line 16 of file lexical_resource\&.py\&.
+.SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.lexicon"
+
+.PP
+Lexicon instances are owned by \fBLexicalResource\fP There is one or more Lexicon instances for one unique \fBLexicalResource\fP\&. 
+.PP
+Definition at line 19 of file lexical_resource\&.py\&.
+.SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.speaker"
+
+.PP
+Speaker instances are owned by \fBLexicalResource\fP There is zero to many Speaker instances for one unique \fBLexicalResource\fP\&. 
+.PP
+Definition at line 22 of file lexical_resource\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

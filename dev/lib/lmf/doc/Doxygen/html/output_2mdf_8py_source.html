@@ -87,36 +87,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">mdf.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="output_2mdf_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacesrc_1_1output_1_1mdf.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
+<a href="output_2mdf_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1mdf.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> config.mdf <span class="keyword">import</span> lmf_mdf, mdf_order</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> open_write</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacesrc_1_1output_1_1mdf.html#a71397767dc07eda4ff1586de29e7c25d">    6</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacesrc_1_1output_1_1mdf.html#a71397767dc07eda4ff1586de29e7c25d">mdf_write</a>(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Write an MDF file.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="stringliteral">    @param object The LMF instance to convert into MDF output format.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    @param filename The name of the MDF file to write with full path, for instance &#39;user/output.txt&#39;.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">    @param lmf2mdf A Python dictionary describing the mapping between LMF representation and MDF markers. Default value is &#39;lmf_mdf&#39; dictionary defined in &#39;src/config/mdf.py&#39;. Please refer to it as an example.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">    @param order A Python list defining the order in which MDf markers must be written, for instance [&quot;lx&quot;, &quot;ps&quot;]. Default value is &#39;mdf_order&#39; list defined in &#39;src/config/mdf.py&#39;.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    mdf_file = <a class="code" href="namespacesrc_1_1utils_1_1io.html#a63178ca81911ae28965794aef365250c">open_write</a>(filename)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment"># For each MDF marker, get the corresponding LMF value</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> object.__class__.__name__ == <span class="stringliteral">&quot;Lexicon&quot;</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">for</span> lexical_entry <span class="keywordflow">in</span> object.get_lexical_entries():</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">for</span> marker <span class="keywordflow">in</span> order:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="comment"># Write the MDF output as follows: &quot;\mdf_marker lmf_value&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                mdf_file.write(<span class="stringliteral">&quot;\\&quot;</span> + marker + <span class="stringliteral">&quot; &quot;</span> + lmf2mdf[marker](lexical_entry) + <span class="stringliteral">&quot;\n&quot;</span>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="comment"># Separate lexical entries from each others with a blank line</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            mdf_file.write(<span class="stringliteral">&quot;\n&quot;</span>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">raise</span> AttributeError(0, __file__, <span class="stringliteral">&quot;Object to write must be a Lexicon.&quot;</span>)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    mdf_file.close()</div>
-<div class="ttc" id="namespacesrc_1_1output_1_1mdf_html_a71397767dc07eda4ff1586de29e7c25d"><div class="ttname"><a href="namespacesrc_1_1output_1_1mdf.html#a71397767dc07eda4ff1586de29e7c25d">src.output.mdf.mdf_write</a></div><div class="ttdeci">def mdf_write</div><div class="ttdoc">Write an MDF file. </div><div class="ttdef"><b>Definition:</b> <a href="output_2mdf_8py_source.html#l00006">mdf.py:6</a></div></div>
-<div class="ttc" id="namespacesrc_1_1utils_1_1io_html_a63178ca81911ae28965794aef365250c"><div class="ttname"><a href="namespacesrc_1_1utils_1_1io.html#a63178ca81911ae28965794aef365250c">src.utils.io.open_write</a></div><div class="ttdeci">def open_write</div><div class="ttdoc">Open file in write mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00027">io.py:27</a></div></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> open_write, EOL</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">from</span> utils.error_handling <span class="keyword">import</span> OutputError</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1mdf.html#aebf4d51ef6566e50a26a121471a175a6">    7</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1output_1_1mdf.html#aebf4d51ef6566e50a26a121471a175a6">mdf_write</a>(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Write an MDF file.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="stringliteral">    @param object The LMF instance to convert into MDF output format.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="stringliteral">    @param filename The name of the MDF file to write with full path, for instance &#39;user/output.txt&#39;.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="stringliteral">    @param lmf2mdf A Python dictionary describing the mapping between LMF representation and MDF markers. Default value is &#39;lmf_mdf&#39; dictionary defined in &#39;src/config/mdf.py&#39;. Please refer to it as an example.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="stringliteral">    @param order A Python list defining the order in which MDf markers must be written, for instance [&quot;lx&quot;, &quot;ps&quot;]. Default value is &#39;mdf_order&#39; list defined in &#39;src/config/mdf.py&#39;.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    mdf_file = <a class="code" href="namespacelmf_1_1src_1_1utils_1_1io.html#a943b893b8992a6e46d91400538709b80">open_write</a>(filename)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment"># For each MDF marker, get the corresponding LMF value</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> object.__class__.__name__ == <span class="stringliteral">&quot;Lexicon&quot;</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">for</span> lexical_entry <span class="keywordflow">in</span> object.get_lexical_entries():</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">for</span> marker <span class="keywordflow">in</span> order:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                value = lmf2mdf[marker](lexical_entry)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">if</span> type(value) <span class="keywordflow">is</span> <span class="keywordflow">not</span> list:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <span class="comment"># Write the MDF output as follows: &quot;\mdf_marker lmf_value&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    mdf_file.write(<span class="stringliteral">&quot;\\&quot;</span> + marker + <span class="stringliteral">&quot; &quot;</span> + value + EOL)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="comment"># Create a line for each value</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    <span class="keywordflow">for</span> item <span class="keywordflow">in</span> value:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        mdf_file.write(<span class="stringliteral">&quot;\\&quot;</span> + marker + <span class="stringliteral">&quot; &quot;</span> + item + EOL)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="comment"># Separate lexical entries from each others with a blank line</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            mdf_file.write(EOL)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">raise</span> OutputError(object, <span class="stringliteral">&quot;Object to write must be a Lexicon.&quot;</span>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    mdf_file.close()</div>
+<div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1io_html_a943b893b8992a6e46d91400538709b80"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1io.html#a943b893b8992a6e46d91400538709b80">lmf.src.utils.io.open_write</a></div><div class="ttdeci">def open_write</div><div class="ttdoc">Open file in write mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00041">io.py:41</a></div></div>
+<div class="ttc" id="namespacelmf_1_1src_1_1output_1_1mdf_html_aebf4d51ef6566e50a26a121471a175a6"><div class="ttname"><a href="namespacelmf_1_1src_1_1output_1_1mdf.html#aebf4d51ef6566e50a26a121471a175a6">lmf.src.output.mdf.mdf_write</a></div><div class="ttdeci">def mdf_write</div><div class="ttdoc">Write an MDF file. </div><div class="ttdef"><b>Definition:</b> <a href="output_2mdf_8py_source.html#l00007">mdf.py:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 18 2014 15:51:59 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 17:23:02 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

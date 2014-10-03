@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kind="class" prot="public">
+    <compoundname>lmf::src::core::text_representation::TextRepresentation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Representation</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.text_representation.TextRepresentation::font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.text_representation.TextRepresentation.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kindref="compound">TextRepresentation</ref> instances are owned by Definition and Statement. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kindref="compound">TextRepresentation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.text_representation.TextRepresentation.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="20" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Text Representation is a class representing the textual content of definition or statement. When there is more than one variant orthography, the Text Representation instance contains a Unicode string representing the textual content as well as unique attribute-value pairs that describe the specific language, script and orthography.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="86">
+        <label>lmf.src.core.text_representation.TextRepresentation</label>
+        <link refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>Representation</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="88">
+        <label>lmf.src.core.text_representation.TextRepresentation</label>
+        <link refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Representation</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

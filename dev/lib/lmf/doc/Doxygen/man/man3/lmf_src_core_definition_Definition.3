@@ -1,0 +1,107 @@
+.TH "lmf.src.core.definition.Definition" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.core.definition.Definition \- 
+.PP
+'Definition is a class representing a narrative description of a sense\&. It is provided to help human users understand the meaning of a lexical entry\&. A Sense instance can have zero to many definitions\&. Each Definition instance may be associated with zero to many Text Representation instances in order to manage the text defintion in more than one language or script\&. In addition, the narrative description can be expressed in a different language or script than the one in the Lexical Entry instance\&.' (LMF)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fB__del__\fP"
+.br
+.RI "\fIDestructor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlanguage\fP"
+.br
+.ti -1c
+.RI "\fBdefinition\fP"
+.br
+.ti -1c
+.RI "\fBgloss\fP"
+.br
+.ti -1c
+.RI "\fBliterally\fP"
+.br
+.ti -1c
+.RI "\fBtext_representation\fP"
+.br
+.RI "\fITextRepresentation instances are owned by \fBDefinition\fP There is zero to many TextRepresentation instances per \fBDefinition\fP\&. \fP"
+.ti -1c
+.RI "\fBstatement\fP"
+.br
+.RI "\fIStatement instances are owned by \fBDefinition\fP There is zero to many Statement instances per \fBDefinition\fP\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+'Definition is a class representing a narrative description of a sense\&. It is provided to help human users understand the meaning of a lexical entry\&. A Sense instance can have zero to many definitions\&. Each Definition instance may be associated with zero to many Text Representation instances in order to manage the text defintion in more than one language or script\&. In addition, the narrative description can be expressed in a different language or script than the one in the Lexical Entry instance\&.' (LMF) 
+.PP
+Definition at line 6 of file definition\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.definition\&.Definition\&.__init__ (self)"
+
+.PP
+Constructor\&. \fBDefinition\fP instances are owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A \fBDefinition\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file definition\&.py\&.
+.SS "def lmf\&.src\&.core\&.definition\&.Definition\&.__del__ (self)"
+
+.PP
+Destructor\&. Release TextRepresentation and Statement instances\&. 
+.PP
+Definition at line 25 of file definition\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.definition"
+
+.PP
+Definition at line 15 of file definition\&.py\&.
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.gloss"
+
+.PP
+Definition at line 16 of file definition\&.py\&.
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.language"
+
+.PP
+Definition at line 14 of file definition\&.py\&.
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.literally"
+
+.PP
+Definition at line 17 of file definition\&.py\&.
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.statement"
+
+.PP
+Statement instances are owned by \fBDefinition\fP There is zero to many Statement instances per \fBDefinition\fP\&. 
+.PP
+Definition at line 23 of file definition\&.py\&.
+.SS "lmf\&.src\&.core\&.definition\&.Definition\&.text_representation"
+
+.PP
+TextRepresentation instances are owned by \fBDefinition\fP There is zero to many TextRepresentation instances per \fBDefinition\fP\&. 
+.PP
+Definition at line 20 of file definition\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

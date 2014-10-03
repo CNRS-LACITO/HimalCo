@@ -2,19 +2,40 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="form_8py" kind="file">
     <compoundname>form.py</compoundname>
-    <innerclass refid="classsrc_1_1core_1_1form_1_1_form" prot="public">src::core::form::Form</innerclass>
-    <innernamespace refid="namespacesrc_1_1core_1_1form">src::core::form</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1core_1_1form_1_1_form" prot="public">lmf::src::core::form::Form</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1core_1_1form">lmf::src::core::form</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1core_1_1form" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1core_1_1form" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="classsrc_1_1core_1_1form_1_1_form" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1form_1_1_form" kindref="compound">Form</ref>():</highlight></codeline>
-<codeline lineno="4" refid="classsrc_1_1core_1_1form_1_1_form_1ad690f26f41ad66656c19e30ed1d7827d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1form_1_1_form_1ad690f26f41ad66656c19e30ed1d7827d" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="5" refid="classsrc_1_1core_1_1form_1_1_form_1a0e200dbcf3f01a53844854ae84509c15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1form_1_1_form_1a0e200dbcf3f01a53844854ae84509c15" kindref="member">variantForm</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="classsrc_1_1core_1_1form_1_1_form_1afc077dc1d02f87ed61603f0ddeaebde8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1form_1_1_form_1afc077dc1d02f87ed61603f0ddeaebde8" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>core</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classlmf_1_1src_1_1core_1_1form_1_1_form" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form" kindref="compound">Form</ref>():</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>&quot;Form<sp/>is<sp/>an<sp/>abstract<sp/>class<sp/>representing<sp/>a<sp/>lexeme,<sp/>a<sp/>morphological<sp/>variant<sp/>of<sp/>a<sp/>lexeme<sp/>or<sp/>a<sp/>morph.<sp/>The<sp/>Form<sp/>class<sp/>allows<sp/>subclasses.&quot;<sp/>(LMF)</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a5d8193e2ae85d0844470137d14504ae1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a5d8193e2ae85d0844470137d14504ae1" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>As<sp/>Form<sp/>is<sp/>an<sp/>abstract<sp/>class,<sp/>constructor<sp/>raises<sp/>an<sp/>error.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a4efc5b5afe396103742f2be36f3ada35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a4efc5b5afe396103742f2be36f3ada35" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>As<sp/>Form<sp/>is<sp/>an<sp/>abstract<sp/>class,<sp/>desctructor<sp/>raises<sp/>an<sp/>error.</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a6b5179aebc5f1a51875d3cc5301c6f84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a6b5179aebc5f1a51875d3cc5301c6f84" kindref="member">__new__</ref>(self):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Private<sp/>initialization<sp/>called<sp/>from<sp/>Form<sp/>subclasses.</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Form<sp/>subinstances<sp/>are<sp/>owned<sp/>by<sp/>LexicalEntry.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a601549e93d6bd00ba5d8d3467a12bcdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a601549e93d6bd00ba5d8d3467a12bcdb" kindref="member">variantForm</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1ae8b8836cc3f78314dfb3a416ff95cac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1ae8b8836cc3f78314dfb3a416ff95cac8" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>FormRepresentation<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>Form<sp/>subclasses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>There<sp/>is<sp/>zero<sp/>to<sp/>many<sp/>FormRepresentation<sp/>instances<sp/>per<sp/>Form<sp/>subclass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a81a147d40e70054d06b4ad90fd523a8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a81a147d40e70054d06b4ad90fd523a8f" kindref="member">form_representation</ref><sp/>=<sp/>[]</highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py"/>
   </compounddef>

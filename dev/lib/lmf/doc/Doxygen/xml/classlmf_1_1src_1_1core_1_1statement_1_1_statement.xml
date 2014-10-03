@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1statement_1_1_statement" kind="class" prot="public">
+    <compoundname>lmf::src::core::statement::Statement</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1abc61d06d03119e6e12d5c3854afc93c1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::noteType</definition>
+        <argsstring></argsstring>
+        <name>noteType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a231fe52b0b7ba3deb6d0993987dddaf0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::note</definition>
+        <argsstring></argsstring>
+        <name>note</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a71a5b6eaf4bad349ab3399fbea06b88d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3f6a8d066930ce775d6f6655ea5f3dfa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::encyclopedicInformation</definition>
+        <argsstring></argsstring>
+        <name>encyclopedicInformation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2e146c5f5de5eed52c082c2cc0bea7d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::usageNote</definition>
+        <argsstring></argsstring>
+        <name>usageNote</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a812bbd34658f5bfaf3babff001be9715" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::restriction</definition>
+        <argsstring></argsstring>
+        <name>restriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1afa73464513552afc8a6bf3828446a7d9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::derivation</definition>
+        <argsstring></argsstring>
+        <name>derivation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a534b2190fdea34d7f085a78adaac1ee2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::borrowedWord</definition>
+        <argsstring></argsstring>
+        <name>borrowedWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a4126cee37a75d852056ae49f45cf6cc3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::writtenForm</definition>
+        <argsstring></argsstring>
+        <name>writtenForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a1670c113f5b8143803936a3958d3f256" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::sense</definition>
+        <argsstring></argsstring>
+        <name>sense</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a1232c0098a52fa5f72d6a80c8661152a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::etymology</definition>
+        <argsstring></argsstring>
+        <name>etymology</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a25f9127cf2fe1017c53a3ccb57570352" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::etymologyComment</definition>
+        <argsstring></argsstring>
+        <name>etymologyComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a7d9d96cae746848b83b4ae8516c92bee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::etymologyGloss</definition>
+        <argsstring></argsstring>
+        <name>etymologyGloss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1adeefdc77c6ff898b8adba4ef2a946af3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::etymologySource</definition>
+        <argsstring></argsstring>
+        <name>etymologySource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ac334fff77caf25a783e77aa55ca3128d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::termSourceLanguage</definition>
+        <argsstring></argsstring>
+        <name>termSourceLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1aee57d23dce671062480f9b84ac43a2f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::targetLexicalEntry</definition>
+        <argsstring></argsstring>
+        <name>targetLexicalEntry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="29" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3af309c396e738565e75fff8df1b960a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::scientificName</definition>
+        <argsstring></argsstring>
+        <name>scientificName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1af2781856fbb02d55acc39864ec66aa24" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.statement.Statement::text_representation</definition>
+        <argsstring></argsstring>
+        <name>text_representation</name>
+        <briefdescription>
+<para>TextRepresentation instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement" kindref="compound">Statement</ref> There is zero to many TextRepresentation instances per <ref refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement" kindref="compound">Statement</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ace7d3a3325c7f7b255a3dd72b20c74b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.statement.Statement.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement" kindref="compound">Statement</ref> instances are owned by Definition. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement" kindref="compound">Statement</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="9" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a49d77869667dfde6c6abc794201f9fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.statement.Statement.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release TextRepresentation instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="35" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Statement is a class representating a narrative description that refines or complements Definition.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="6" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a49d77869667dfde6c6abc794201f9fc3" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ace7d3a3325c7f7b255a3dd72b20c74b1" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a534b2190fdea34d7f085a78adaac1ee2" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>borrowedWord</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1afa73464513552afc8a6bf3828446a7d9" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>derivation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3f6a8d066930ce775d6f6655ea5f3dfa" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>encyclopedicInformation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a1232c0098a52fa5f72d6a80c8661152a" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>etymology</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a25f9127cf2fe1017c53a3ccb57570352" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>etymologyComment</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a7d9d96cae746848b83b4ae8516c92bee" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>etymologyGloss</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1adeefdc77c6ff898b8adba4ef2a946af3" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>etymologySource</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a71a5b6eaf4bad349ab3399fbea06b88d" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a231fe52b0b7ba3deb6d0993987dddaf0" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>note</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1abc61d06d03119e6e12d5c3854afc93c1" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>noteType</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a812bbd34658f5bfaf3babff001be9715" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>restriction</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3af309c396e738565e75fff8df1b960a" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>scientificName</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a1670c113f5b8143803936a3958d3f256" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>sense</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1aee57d23dce671062480f9b84ac43a2f1" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>targetLexicalEntry</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ac334fff77caf25a783e77aa55ca3128d" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>termSourceLanguage</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1af2781856fbb02d55acc39864ec66aa24" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>text_representation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2e146c5f5de5eed52c082c2cc0bea7d0" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>usageNote</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a4126cee37a75d852056ae49f45cf6cc3" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>writtenForm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

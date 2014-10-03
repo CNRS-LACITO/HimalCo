@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kind="class" prot="public">
+    <compoundname>lmf::src::core::lexical_resource::LexicalResource</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2b48b5abc2a03ba17749f2e361f948fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_resource.LexicalResource::dtdVersion</definition>
+        <argsstring></argsstring>
+        <name>dtdVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a0d5cc63c48e3c5aa2bea6ad21c288e4f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_resource.LexicalResource::global_information</definition>
+        <argsstring></argsstring>
+        <name>global_information</name>
+        <briefdescription>
+<para>GlobalInformation instance is owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref> There is one GlobalInformation for one <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af4146645965f04411b37e8e52e7a04e0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_resource.LexicalResource::lexicon</definition>
+        <argsstring></argsstring>
+        <name>lexicon</name>
+        <briefdescription>
+<para>Lexicon instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref> There is one or more Lexicon instances for one unique <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a378c5ca2854f818361547eee196d3497" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_resource.LexicalResource::speaker</definition>
+        <argsstring></argsstring>
+        <name>speaker</name>
+        <briefdescription>
+<para>Speaker instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref> There is zero to many Speaker instances for one unique <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a8f7f77cfb5a432a9968844c33e6123a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kindref="compound">LexicalResource</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="9" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ae39531404208c5fdb20f431d7949568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release GlobalInformation, Lexicon, Speaker instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="24" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Lexical Resource is a class representing the entire resource and is a container for one or more lexicons. There is only one Lexical Resource instance.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="6" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ae39531404208c5fdb20f431d7949568f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a8f7f77cfb5a432a9968844c33e6123a2" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2b48b5abc2a03ba17749f2e361f948fe" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>dtdVersion</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a0d5cc63c48e3c5aa2bea6ad21c288e4f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>global_information</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af4146645965f04411b37e8e52e7a04e0" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>lexicon</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a378c5ca2854f818361547eee196d3497" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>speaker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

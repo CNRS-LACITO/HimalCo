@@ -1,0 +1,171 @@
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf}{\section{lmf.\+src.\+config.\+mdf Namespace Reference}
+\label{namespacelmf_1_1src_1_1config_1_1mdf}\index{lmf.\+src.\+config.\+mdf@{lmf.\+src.\+config.\+mdf}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a888cd9df8b9511d408e646dc404b5232}{mdf\+\_\+lmf}
+\begin{DoxyCompactList}\small\item\em Mapping between M\+D\+F markers and L\+M\+F representation (input) \end{DoxyCompactList}\item 
+list \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_afe5efb72442beb65b5083335b744845c}{mdf\+\_\+order} = \mbox{[}\char`\"{}lx\char`\"{}, \char`\"{}ps\char`\"{}, \char`\"{}st\char`\"{}, \char`\"{}sy\char`\"{}, \char`\"{}an\char`\"{}, \char`\"{}cf\char`\"{}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Order in which M\+D\+F markers must be written (output) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a78d8f1444783c1b86cbbd91f49a0cd4f}{lmf\+\_\+mdf}
+\begin{DoxyCompactList}\small\item\em Mapping between L\+M\+F representation and M\+D\+F markers (output) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}{ps\+\_\+part\+Of\+Speech}
+\begin{DoxyCompactList}\small\item\em Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a20455cbc7aa64cc6eb4ad1749a381738}{mdf\+\_\+semantic\+Relation}
+\begin{DoxyCompactList}\small\item\em Mapping between M\+D\+F markers and L\+M\+F semantic relation Related\+Form attribute value (input) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a8e61adc475ca415a33c85ef16c96d03d}{pdl\+\_\+paradigm\+Label}
+\begin{DoxyCompactList}\small\item\em Mapping between 'pdl' M\+D\+F marker value and L\+M\+F paradigm label Paradigm attribute value (input) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a78d8f1444783c1b86cbbd91f49a0cd4f}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!lmf\+\_\+mdf@{lmf\+\_\+mdf}}
+\index{lmf\+\_\+mdf@{lmf\+\_\+mdf}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{lmf\+\_\+mdf}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+lmf\+\_\+mdf}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a78d8f1444783c1b86cbbd91f49a0cd4f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"lx"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.get\_lexeme(),
+3     \textcolor{stringliteral}{"ps"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.get\_partOfSpeech(),
+4     \textcolor{stringliteral}{"st"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.get\_status(),
+5     \textcolor{stringliteral}{"sy"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.find\_related\_forms(mdf\_semanticRelation[\textcolor{stringliteral}{"sy"}]),
+6     \textcolor{stringliteral}{"an"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.find\_related\_forms(mdf\_semanticRelation[\textcolor{stringliteral}{"an"}]),
+7     \textcolor{stringliteral}{"cf"} : \textcolor{keyword}{lambda} lexical\_entry: lexical\_entry.find\_related\_forms(mdf\_semanticRelation[\textcolor{stringliteral}{"cf"}])
+8 \})
+\end{DoxyCode}
+
+
+Mapping between L\+M\+F representation and M\+D\+F markers (output) 
+
+
+
+Definition at line 17 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a888cd9df8b9511d408e646dc404b5232}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+lmf@{mdf\+\_\+lmf}}
+\index{mdf\+\_\+lmf@{mdf\+\_\+lmf}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{mdf\+\_\+lmf}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+mdf\+\_\+lmf}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a888cd9df8b9511d408e646dc404b5232}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"lx"} : \textcolor{keyword}{lambda} lx, lexical\_entry: lexical\_entry.set\_lexeme(lx),
+3     \textcolor{stringliteral}{"ps"} : \textcolor{keyword}{lambda} ps, lexical\_entry: lexical\_entry.set\_partOfSpeech(ps),
+4     \textcolor{stringliteral}{"st"} : \textcolor{keyword}{lambda} st, lexical\_entry: lexical\_entry.set\_status(st),
+5     \textcolor{stringliteral}{"sy"} : \textcolor{keyword}{lambda} sy, lexical\_entry: lexical\_entry.create\_and\_add\_related\_form(sy, mdf\_semanticRelation[\textcolor{stringliteral}{"sy
+      "}]),
+6     \textcolor{stringliteral}{"an"} : \textcolor{keyword}{lambda} an, lexical\_entry: lexical\_entry.create\_and\_add\_related\_form(an, mdf\_semanticRelation[\textcolor{stringliteral}{"an
+      "}]),
+7     \textcolor{stringliteral}{"cf"} : \textcolor{keyword}{lambda} cf, lexical\_entry: lexical\_entry.create\_and\_add\_related\_form(cf, mdf\_semanticRelation[\textcolor{stringliteral}{"cf
+      "}])
+8 \})
+\end{DoxyCode}
+
+
+Mapping between M\+D\+F markers and L\+M\+F representation (input) 
+
+
+
+Definition at line 4 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_afe5efb72442beb65b5083335b744845c}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+order@{mdf\+\_\+order}}
+\index{mdf\+\_\+order@{mdf\+\_\+order}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{mdf\+\_\+order}]{\setlength{\rightskip}{0pt plus 5cm}list lmf.\+src.\+config.\+mdf.\+mdf\+\_\+order = \mbox{[}\char`\"{}lx\char`\"{}, \char`\"{}ps\char`\"{}, \char`\"{}st\char`\"{}, \char`\"{}sy\char`\"{}, \char`\"{}an\char`\"{}, \char`\"{}cf\char`\"{}\mbox{]}}}\label{namespacelmf_1_1src_1_1config_1_1mdf_afe5efb72442beb65b5083335b744845c}
+
+
+Order in which M\+D\+F markers must be written (output) 
+
+
+
+Definition at line 14 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a20455cbc7aa64cc6eb4ad1749a381738}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+semantic\+Relation@{mdf\+\_\+semantic\+Relation}}
+\index{mdf\+\_\+semantic\+Relation@{mdf\+\_\+semantic\+Relation}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{mdf\+\_\+semantic\+Relation}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+mdf\+\_\+semantic\+Relation}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a20455cbc7aa64cc6eb4ad1749a381738}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"sy"} : \textcolor{stringliteral}{"synonym"},
+3     \textcolor{stringliteral}{"an"} : \textcolor{stringliteral}{"antonym"},
+4     \textcolor{stringliteral}{"cf <hm>"} : \textcolor{stringliteral}{"homonym"},
+5     \textcolor{stringliteral}{"cf <et>"} : \textcolor{stringliteral}{"etymology"},
+6     \textcolor{stringliteral}{"se"} : \textcolor{stringliteral}{"subentry"},
+7     \textcolor{stringliteral}{"mn"} : \textcolor{stringliteral}{"main entry"},
+8     \textcolor{stringliteral}{"cf"} : \textcolor{stringliteral}{"simple link"},
+9     \textcolor{stringliteral}{"lf"} : \textcolor{keywordtype}{None},
+10     \textcolor{stringliteral}{"ev"} : \textcolor{keywordtype}{None},
+11     \textcolor{stringliteral}{"ee"} : \textcolor{keywordtype}{None},
+12     \textcolor{stringliteral}{"en"} : \textcolor{keywordtype}{None},
+13     \textcolor{stringliteral}{"er"} : \textcolor{keywordtype}{None}
+14     \textcolor{comment}{# "derived form",}
+15     \textcolor{comment}{# "root",}
+16     \textcolor{comment}{# "stem",}
+17     \textcolor{comment}{# "collocation"}
+18 \})
+\end{DoxyCode}
+
+
+Mapping between M\+D\+F markers and L\+M\+F semantic relation Related\+Form attribute value (input) 
+
+
+
+Definition at line 52 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a8e61adc475ca415a33c85ef16c96d03d}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pdl\+\_\+paradigm\+Label@{pdl\+\_\+paradigm\+Label}}
+\index{pdl\+\_\+paradigm\+Label@{pdl\+\_\+paradigm\+Label}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{pdl\+\_\+paradigm\+Label}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+pdl\+\_\+paradigm\+Label}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a8e61adc475ca415a33c85ef16c96d03d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"la"}        : \textcolor{stringliteral}{"lexicalized affix"},
+3     \textcolor{stringliteral}{"cc"}        : \textcolor{stringliteral}{"conjugation class"},
+4     \textcolor{stringliteral}{"past"}      : \textcolor{stringliteral}{"theme of the past"},
+5     \textcolor{stringliteral}{"comit"}     : \textcolor{stringliteral}{"comitative"},
+6     \textcolor{stringliteral}{"constr"}    : \textcolor{stringliteral}{"construction"},
+7     \textcolor{stringliteral}{"dir"}       : \textcolor{stringliteral}{"directional"},
+8     \textcolor{stringliteral}{"ir"}        : \textcolor{stringliteral}{"irregularity"}
+9 \})
+\end{DoxyCode}
+
+
+Mapping between 'pdl' M\+D\+F marker value and L\+M\+F paradigm label Paradigm attribute value (input) 
+
+
+
+Definition at line 72 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!ps\+\_\+part\+Of\+Speech@{ps\+\_\+part\+Of\+Speech}}
+\index{ps\+\_\+part\+Of\+Speech@{ps\+\_\+part\+Of\+Speech}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
+\subsubsection[{ps\+\_\+part\+Of\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+ps\+\_\+part\+Of\+Speech}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = dict(\{
+2     \textcolor{stringliteral}{"adj"}       : \textcolor{stringliteral}{"adjective"},                  \textcolor{comment}{# adjective}
+3     \textcolor{stringliteral}{"adv"}       : \textcolor{stringliteral}{"adverb"},                     \textcolor{comment}{# adverb(ial)}
+4     \textcolor{stringliteral}{"class"}     : \textcolor{stringliteral}{"classifier"},                 \textcolor{comment}{# classifier (MDF)}
+5     \textcolor{stringliteral}{"clf"}       : \textcolor{stringliteral}{"classifier"},                 \textcolor{comment}{# classifier (Leipzig)}
+6     \textcolor{stringliteral}{"cnj"}       : \textcolor{stringliteral}{"conjunction"},                \textcolor{comment}{# conjunction}
+7     \textcolor{stringliteral}{"disc.PTCL"} : \textcolor{stringliteral}{"particle"},                   \textcolor{comment}{# discourse particle}
+8     \textcolor{stringliteral}{"ideo"}      : \textcolor{stringliteral}{"ideophone"},                  \textcolor{comment}{# ideophones}
+9     \textcolor{stringliteral}{"intj"}      : \textcolor{stringliteral}{"interjection"},               \textcolor{comment}{# interjection}
+10     \textcolor{stringliteral}{"lnk"}       : \textcolor{stringliteral}{"linker"},                     \textcolor{comment}{# linker}
+11     \textcolor{stringliteral}{"n"}         : \textcolor{stringliteral}{"noun"},                       \textcolor{comment}{# noun}
+12     \textcolor{stringliteral}{"Np"}        : \textcolor{stringliteral}{"possessive pronouns"},        \textcolor{comment}{# possessed nouns}
+13     \textcolor{stringliteral}{"neg"}       : \textcolor{stringliteral}{"negation"},                   \textcolor{comment}{# negative}
+14     \textcolor{stringliteral}{"num"}       : \textcolor{stringliteral}{"numeral"},                    \textcolor{comment}{# number}
+15     \textcolor{stringliteral}{"prep"}      : \textcolor{stringliteral}{"preposition"},                \textcolor{comment}{# preposition}
+16     \textcolor{stringliteral}{"pro"}       : \textcolor{stringliteral}{"pronoun"},                    \textcolor{comment}{# pronoun/pronominal}
+17     \textcolor{stringliteral}{"v"}         : \textcolor{stringliteral}{"verb"},                       \textcolor{comment}{# verb}
+18     \textcolor{stringliteral}{"vi"}        : \textcolor{stringliteral}{"intransitive verb"},          \textcolor{comment}{# intransitive verb}
+19     \textcolor{stringliteral}{"vi.s"}      : \textcolor{stringliteral}{"stative intransitive verb"},  \textcolor{comment}{# stative intransitive verb}
+20     \textcolor{stringliteral}{"vr"}        : \textcolor{stringliteral}{"reflexive verb"},             \textcolor{comment}{# reflexive/quasi-reflexive/intradirective verb}
+21     \textcolor{stringliteral}{"vt"}        : \textcolor{stringliteral}{"transitive verb"},            \textcolor{comment}{# transitive verb}
+22     \textcolor{stringliteral}{"vt/i"}      : \textcolor{stringliteral}{"bitransistive verb"}          \textcolor{comment}{# ambitransitive verb}
+23 \})
+\end{DoxyCode}
+
+
+Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) 
+
+
+
+Definition at line 27 of file mdf.\+py.
+

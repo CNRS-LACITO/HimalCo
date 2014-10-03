@@ -2,13 +2,13 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="mrd_2____init_____8py" kind="file">
     <compoundname>__init__.py</compoundname>
-    <innernamespace refid="namespacesrc_1_1mrd">src::mrd</innernamespace>
+    <innernamespace refid="namespacelmf_1_1src_1_1mrd">lmf::src::mrd</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1mrd" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1mrd" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>context<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Context</highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>equivalent<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Equivalent</highlight></codeline>

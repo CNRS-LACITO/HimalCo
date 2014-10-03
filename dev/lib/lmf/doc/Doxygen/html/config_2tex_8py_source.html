@@ -87,22 +87,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">tex.py</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="config_2tex_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacesrc_1_1config_1_1tex.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
+<a href="config_2tex_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1config_1_1tex.html">    1</a></span>&#160;<span class="comment">#! /usr/bin/env python</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">## Order in which information must be written in LaTeX output</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="namespacesrc_1_1config_1_1tex.html#a11191ac7f2134958a9de8155e88af9a9">    4</a></span>&#160;tex_order = [<span class="stringliteral">&quot;Lemma.lexeme&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.id&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.partOfSpeech&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.status&quot;</span>]</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">## Mapping between LMF representation and LaTeX output</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacesrc_1_1config_1_1tex.html#ab73c6746f87c74d6f58c26f60a5f4d5e">    7</a></span>&#160;lmf_tex = dict({</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="stringliteral">&quot;Lemma.lexeme&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;\n\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{&quot;</span> + lexical_entry.get_lexeme() + <span class="stringliteral">&quot;}} \\hspace{0.2cm} &quot;</span>,</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.id&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;\\hypertarget{&quot;</span> + str(lexical_entry.get_id()) + <span class="stringliteral">&quot;}{}\n&quot;</span>,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.partOfSpeech&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;\\textcolor{teal}{\\textit{&quot;</span> + lexical_entry.get_partOfSpeech() + <span class="stringliteral">&quot;}}\n&quot;</span>,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.status&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;})</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> EOL</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">## Order in which information must be written in LaTeX output</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1config_1_1tex.html#a19c5578c65b152e179d23ea103849590">    6</a></span>&#160;tex_order = [<span class="stringliteral">&quot;Lemma.lexeme&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.id&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.partOfSpeech&quot;</span>, <span class="stringliteral">&quot;LexicalEntry.status&quot;</span>]</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">## Mapping between LMF representation and LaTeX output</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1config_1_1tex.html#aee96ffe8f8f1e7f54b1c9fa55d93010d">    9</a></span>&#160;lmf_tex = dict({</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="stringliteral">&quot;Lemma.lexeme&quot;</span> : <span class="keyword">lambda</span> lexical_entry: EOL + <span class="stringliteral">&quot;\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{&quot;</span> + lexical_entry.get_lexeme() + <span class="stringliteral">&quot;}} \\hspace{0.2cm} &quot;</span>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.id&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;\\hypertarget{&quot;</span> + str(lexical_entry.get_id()) + <span class="stringliteral">&quot;}{}&quot;</span> + EOL,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.partOfSpeech&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;\\textcolor{teal}{\\textit{&quot;</span> + lexical_entry.get_partOfSpeech() + <span class="stringliteral">&quot;}}&quot;</span> + EOL,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="stringliteral">&quot;LexicalEntry.status&quot;</span> : <span class="keyword">lambda</span> lexical_entry: <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;})</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 18 2014 15:51:59 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 3 2014 17:23:02 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,0 +1,109 @@
+\hypertarget{namespacelmf_1_1src_1_1input_1_1xml__lmf}{\section{lmf.\+src.\+input.\+xml\+\_\+lmf Namespace Reference}
+\label{namespacelmf_1_1src_1_1input_1_1xml__lmf}\index{lmf.\+src.\+input.\+xml\+\_\+lmf@{lmf.\+src.\+input.\+xml\+\_\+lmf}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacelmf_1_1src_1_1input_1_1xml__lmf_a1f88f5cb321107e2e3fc973a0f4bb0c7}{compute\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Compute attribute/module name from object name as follows\+: 'Object\+Name' attribute/module name is 'object\+\_\+name'. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelmf_1_1src_1_1input_1_1xml__lmf_ad5950c4bfa3184c81159c4f1be1f4e43}{factory}
+\begin{DoxyCompactList}\small\item\em This function is an object factory. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelmf_1_1src_1_1input_1_1xml__lmf_ab05e23f6bb643a98979becb219b050da}{xml\+\_\+lmf\+\_\+read}
+\begin{DoxyCompactList}\small\item\em Read an X\+M\+L L\+M\+F file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelmf_1_1src_1_1input_1_1xml__lmf_a69c23caee6c3bfe7ba54804aad65f879}{get\+\_\+sub\+\_\+elements}
+\begin{DoxyCompactList}\small\item\em This function recursively parses the given X\+M\+L element and creates corresponding L\+M\+F instances with their attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacelmf_1_1src_1_1input_1_1xml__lmf_a1f88f5cb321107e2e3fc973a0f4bb0c7}{\index{lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}!compute\+\_\+name@{compute\+\_\+name}}
+\index{compute\+\_\+name@{compute\+\_\+name}!lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}}
+\subsubsection[{compute\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+input.\+xml\+\_\+lmf.\+compute\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{object\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1input_1_1xml__lmf_a1f88f5cb321107e2e3fc973a0f4bb0c7}
+
+
+Compute attribute/module name from object name as follows\+: 'Object\+Name' attribute/module name is 'object\+\_\+name'. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+\_\+name} & String containing name of the object, e.\+g. 'Lexical\+Entry'. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding attribute/module name, e.\+g. 'lexical\+\_\+entry'. 
+\end{DoxyReturn}
+
+
+Definition at line 6 of file xml\+\_\+lmf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1input_1_1xml__lmf_ad5950c4bfa3184c81159c4f1be1f4e43}{\index{lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}!factory@{factory}}
+\index{factory@{factory}!lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}}
+\subsubsection[{factory}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+input.\+xml\+\_\+lmf.\+factory (
+\begin{DoxyParamCaption}
+\item[{}]{object\+\_\+name, }
+\item[{}]{attributes}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1input_1_1xml__lmf_ad5950c4bfa3184c81159c4f1be1f4e43}
+
+
+This function is an object factory. 
+
+Indeed, from an object name and its attributes, it creates a Python object and sets its attributes. 
+\begin{DoxyParams}{Parameters}
+{\em object\+\_\+name} & A Python string containing the object name, for instance 'Lexical\+Entry'. \\
+\hline
+{\em attributes} & A Python dictionary containing pairs of attribute name (as a Python string) and value, for instance \{'part\+Of\+Speech'\+: 'n'\}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file xml\+\_\+lmf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1input_1_1xml__lmf_a69c23caee6c3bfe7ba54804aad65f879}{\index{lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}!get\+\_\+sub\+\_\+elements@{get\+\_\+sub\+\_\+elements}}
+\index{get\+\_\+sub\+\_\+elements@{get\+\_\+sub\+\_\+elements}!lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}}
+\subsubsection[{get\+\_\+sub\+\_\+elements}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+input.\+xml\+\_\+lmf.\+get\+\_\+sub\+\_\+elements (
+\begin{DoxyParamCaption}
+\item[{}]{instance, }
+\item[{}]{element}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1input_1_1xml__lmf_a69c23caee6c3bfe7ba54804aad65f879}
+
+
+This function recursively parses the given X\+M\+L element and creates corresponding L\+M\+F instances with their attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instance} & An L\+M\+F object instance. \\
+\hline
+{\em element} & An X\+M\+L element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file xml\+\_\+lmf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1input_1_1xml__lmf_ab05e23f6bb643a98979becb219b050da}{\index{lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}!xml\+\_\+lmf\+\_\+read@{xml\+\_\+lmf\+\_\+read}}
+\index{xml\+\_\+lmf\+\_\+read@{xml\+\_\+lmf\+\_\+read}!lmf\+::src\+::input\+::xml\+\_\+lmf@{lmf\+::src\+::input\+::xml\+\_\+lmf}}
+\subsubsection[{xml\+\_\+lmf\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+input.\+xml\+\_\+lmf.\+xml\+\_\+lmf\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1input_1_1xml__lmf_ab05e23f6bb643a98979becb219b050da}
+
+
+Read an X\+M\+L L\+M\+F file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the X\+M\+L L\+M\+F file to read with full path, for instance 'user/input.\+xml'. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Lexicon instance containing all lexical entries. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file xml\+\_\+lmf.\+py.
+

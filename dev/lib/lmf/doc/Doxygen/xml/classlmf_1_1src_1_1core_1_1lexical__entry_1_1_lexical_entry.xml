@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kind="class" prot="public">
+    <compoundname>lmf::src::core::lexical_entry::LexicalEntry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a402073c8f71f2f779725c6aeefa5df49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::homonymNumber</definition>
+        <argsstring></argsstring>
+        <name>homonymNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaec5fa141d51ae38a0346b0f863f4522" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac6d96435547dea66e1433966098249b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad59e408fda5122725f6f361e08739916" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::partOfSpeech</definition>
+        <argsstring></argsstring>
+        <name>partOfSpeech</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6e84227c5c4a0d4d6574f3daa19ebac4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::independentWord</definition>
+        <argsstring></argsstring>
+        <name>independentWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a27dfa720ca4c7839a105bd7b671762ee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::bibliography</definition>
+        <argsstring></argsstring>
+        <name>bibliography</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a28fe2bf7e53e223a6919bb38b6d55256" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>UID is managed at the Lexicon level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a92b1d39e09a8af1a90e780ef5780cc92" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::sense</definition>
+        <argsstring></argsstring>
+        <name>sense</name>
+        <briefdescription>
+<para>Sense instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is zero to many Sense instances per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a25e285f1f40cf8c4a17d021c2d2b878f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::lemma</definition>
+        <argsstring></argsstring>
+        <name>lemma</name>
+        <briefdescription>
+<para>Lemma instance is owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is one Lemma instance by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="31" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a860127ced1990bb4f1639f23d989da27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::related_form</definition>
+        <argsstring></argsstring>
+        <name>related_form</name>
+        <briefdescription>
+<para>RelatedForm instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is zero to many RelatedForm instances per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="34" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6418f42441f0d6d25449270298010d03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::word_form</definition>
+        <argsstring></argsstring>
+        <name>word_form</name>
+        <briefdescription>
+<para>WordForm instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is zero to many WordForm instances per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="37" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a381ed307ce61e5ae137abc94e45be36a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::stem</definition>
+        <argsstring></argsstring>
+        <name>stem</name>
+        <briefdescription>
+<para>Stem instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is zero to many Stem instances per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="40" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a852239d30b350d7ec590c7a6a01b76b8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::list_of_components</definition>
+        <argsstring></argsstring>
+        <name>list_of_components</name>
+        <briefdescription>
+<para>ListOfComponents instance is owned by <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> There is zero or one ListOfComponents instance per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="43" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaf11d999bc91a5cf161fd4ce0ca3319b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="45" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a93548bb677c73c375d32da1a809c03bd" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexical_entry.LexicalEntry::__speaker</definition>
+        <argsstring></argsstring>
+        <name>__speaker</name>
+        <briefdescription>
+<para>Pointer to an existing Speaker There is one Speaker pointer per <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="48" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a99f46e253fd0abb1999d14f4eac102d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instances are owned by Lexicon. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unique IDentifier. If not provided, default value is 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="12" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a7aef35b0a044411935c2fe5d6877699f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release Sense, Lemma, RelatedForm, WordForm, Stem, ListOfComponents instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="50" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="50" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad9aec09ea7a1664650e8667b5d161c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.set_partOfSpeech</definition>
+        <argsstring></argsstring>
+        <name>set_partOfSpeech</name>
+        <briefdescription>
+<para>Set grammatical category. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>part_of_speech</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The grammatical category to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="73" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="73" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a198ccaea559997368ea7b0f9a198707f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_partOfSpeech</definition>
+        <argsstring></argsstring>
+        <name>get_partOfSpeech</name>
+        <briefdescription>
+<para>Get grammatical category. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> attribute &apos;partOfSpeech&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="81" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab991806fefc45e2cc5f3bf88ee3d6604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.set_status</definition>
+        <argsstring></argsstring>
+        <name>set_status</name>
+        <briefdescription>
+<para>Set lexical entry status. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="87" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a616dd1fa3fbfc0db546832fd9ba5b3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_status</definition>
+        <argsstring></argsstring>
+        <name>get_status</name>
+        <briefdescription>
+<para>Get lexical entry status. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> attribute &apos;status&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="95" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="95" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a337ed7fdab2cabc9dce913920424dd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_id</definition>
+        <argsstring></argsstring>
+        <name>get_id</name>
+        <briefdescription>
+<para>Get Unique IDentifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> attribute &apos;id&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="101" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a0720cfa82decbc27a30d4830c1e8cbf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.set_lexeme</definition>
+        <argsstring></argsstring>
+        <name>set_lexeme</name>
+        <briefdescription>
+<para>Set lexeme. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;lexeme&apos; is owned by Lemma. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexeme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lexeme to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="107" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="107" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a351a470c736be8b896354d27f56e1833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_lexeme</definition>
+        <argsstring></argsstring>
+        <name>get_lexeme</name>
+        <briefdescription>
+<para>Get lexeme. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;lexeme&apos; is owned by Lemma. <simplesect kind="return"><para>Lemma attribute &apos;lexeme&apos; if any. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="118" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="118" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac3b6d197ee90f1aec5b61e24613c091f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.create_related_form</definition>
+        <argsstring></argsstring>
+        <name>create_related_form</name>
+        <briefdescription>
+<para>Create a related form. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexeme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Related lexeme. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>semantic_relation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The semantic relation existing between this lexical entry and the related lexeme to create. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>RelatedForm instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="128" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a9078d381fea92a4d1d3f57b391a2b5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.add_related_form</definition>
+        <argsstring></argsstring>
+        <name>add_related_form</name>
+        <briefdescription>
+<para>Add a related form to the lexical entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>related_form</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RelatedForm instance to add to the lexical entry. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="136" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="136" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a46576799af0465084051e3c2957afa3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.create_and_add_related_form</definition>
+        <argsstring></argsstring>
+        <name>create_and_add_related_form</name>
+        <briefdescription>
+<para>Create and add a related form to the lexical entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexeme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Related lexeme. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>semantic_relation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The semantic relation existing between this lexical entry and the related lexeme to create. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="144" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="144" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac89bb82f0afe4e1566f34379f3a188da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.find_related_forms</definition>
+        <argsstring></argsstring>
+        <name>find_related_forms</name>
+        <briefdescription>
+<para>Find related lexemes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by RelatedForm. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>semantic_relation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The semantic relation to consider to retrieve the related form. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Python list of found RelatedForm attributes &apos;targets&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="153" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aee5b118b1015a35a5e8426235d325291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_related_forms</definition>
+        <argsstring></argsstring>
+        <name>get_related_forms</name>
+        <briefdescription>
+<para>Get all related forms maintained by the lexical entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Python set of related forms. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="165" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac741ce07b961fb9d6d0a1033cf1f1790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_speaker</definition>
+        <argsstring></argsstring>
+        <name>get_speaker</name>
+        <briefdescription>
+<para>Get speaker. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kindref="compound">LexicalEntry</ref> private attribute &apos;__speaker&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="172" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="172" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a68739257278c37191130f225cb93fd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_definitions</definition>
+        <argsstring></argsstring>
+        <name>get_definitions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="178" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a00e6fd296669f34f047b3502bebd6a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_senses</definition>
+        <argsstring></argsstring>
+        <name>get_senses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="181" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a888e6f8306b026b72a6002f9e1fddae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_entry.LexicalEntry.get_gloss</definition>
+        <argsstring></argsstring>
+        <name>get_gloss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="184" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="184" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_entry.py" bodystart="9" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a7aef35b0a044411935c2fe5d6877699f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a99f46e253fd0abb1999d14f4eac102d5" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a93548bb677c73c375d32da1a809c03bd" prot="private" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>__speaker</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a9078d381fea92a4d1d3f57b391a2b5b7" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>add_related_form</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a27dfa720ca4c7839a105bd7b671762ee" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>bibliography</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a46576799af0465084051e3c2957afa3c" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>create_and_add_related_form</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac3b6d197ee90f1aec5b61e24613c091f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>create_related_form</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac6d96435547dea66e1433966098249b8" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>date</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac89bb82f0afe4e1566f34379f3a188da" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>find_related_forms</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a68739257278c37191130f225cb93fd4f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_definitions</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a888e6f8306b026b72a6002f9e1fddae9" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_gloss</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a337ed7fdab2cabc9dce913920424dd95" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_id</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a351a470c736be8b896354d27f56e1833" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_lexeme</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a198ccaea559997368ea7b0f9a198707f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_partOfSpeech</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aee5b118b1015a35a5e8426235d325291" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_related_forms</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a00e6fd296669f34f047b3502bebd6a90" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_senses</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac741ce07b961fb9d6d0a1033cf1f1790" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_speaker</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a616dd1fa3fbfc0db546832fd9ba5b3e2" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>get_status</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a402073c8f71f2f779725c6aeefa5df49" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>homonymNumber</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a28fe2bf7e53e223a6919bb38b6d55256" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>id</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6e84227c5c4a0d4d6574f3daa19ebac4" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>independentWord</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a25e285f1f40cf8c4a17d021c2d2b878f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>lemma</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a852239d30b350d7ec590c7a6a01b76b8" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>list_of_components</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad59e408fda5122725f6f361e08739916" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>partOfSpeech</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a860127ced1990bb4f1639f23d989da27" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>related_form</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a92b1d39e09a8af1a90e780ef5780cc92" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>sense</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a0720cfa82decbc27a30d4830c1e8cbf2" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>set_lexeme</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad9aec09ea7a1664650e8667b5d161c84" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>set_partOfSpeech</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab991806fefc45e2cc5f3bf88ee3d6604" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>set_status</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaec5fa141d51ae38a0346b0f863f4522" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>status</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a381ed307ce61e5ae137abc94e45be36a" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>stem</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaf11d999bc91a5cf161fd4ce0ca3319b" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>targets</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6418f42441f0d6d25449270298010d03" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_entry::LexicalEntry</scope><name>word_form</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

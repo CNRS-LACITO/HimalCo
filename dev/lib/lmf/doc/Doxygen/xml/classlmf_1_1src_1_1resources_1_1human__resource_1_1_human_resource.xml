@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kind="class" prot="public">
+    <compoundname>lmf::src::resources::human_resource::HumanResource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Resource</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a12fcc645b94757742d4ea5c3db0393f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.human_resource.HumanResource::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1af75d8c40ab421aea011a028c9ccda753" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.human_resource.HumanResource::anonymizationFlag</definition>
+        <argsstring></argsstring>
+        <name>anonymizationFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1ae236a9203ed63c1afe852eb2708e3949" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.human_resource.HumanResource::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a2de15de1c117422bb42047d0f56c796a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.human_resource.HumanResource::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a46e116543c9cb199fb4627f25e82a3e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.human_resource.HumanResource.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>As <ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> is an abstract class, constructor raises an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a73c9eb976edf10f261b7504e6183319a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.human_resource.HumanResource.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>As <ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> is an abstract class, desctructor raises an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a091c687c865e89d52ac36b00c1ec32c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.human_resource.HumanResource.__new__</definition>
+        <argsstring></argsstring>
+        <name>__new__</name>
+        <briefdescription>
+<para>Private initialization called from <ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> subclasses. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> subinstances are owned by LexicalResource. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="21" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> is a Resource subclass. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> is an abstract class representing a speaker. The <ref refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kindref="compound">HumanResource</ref> class allows subclasses. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>Resource</label>
+      </node>
+      <node id="26">
+        <label>lmf.src.resources.human_resource.HumanResource</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>Resource</label>
+      </node>
+      <node id="28">
+        <label>lmf.src.resources.human_resource.HumanResource</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/human_resource.py" bodystart="8" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a73c9eb976edf10f261b7504e6183319a" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a46e116543c9cb199fb4627f25e82a3e1" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a091c687c865e89d52ac36b00c1ec32c5" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>__new__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1af75d8c40ab421aea011a028c9ccda753" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>anonymizationFlag</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a12fcc645b94757742d4ea5c3db0393f0" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>name</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1ae236a9203ed63c1afe852eb2708e3949" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>reference</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a2de15de1c117422bb42047d0f56c796a" prot="public" virt="non-virtual"><scope>lmf::src::resources::human_resource::HumanResource</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

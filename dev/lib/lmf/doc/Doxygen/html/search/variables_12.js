@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['variantform',['variantForm',['../classsrc_1_1core_1_1form_1_1_form.html#a0e200dbcf3f01a53844854ae84509c15',1,'src::core::form::Form']]],
-  ['verbformmood',['verbFormMood',['../classsrc_1_1morphology_1_1word__form_1_1_word_form.html#a5af5bbdaf2247140e5379dbcf4994ec9',1,'src::morphology::word_form::WordForm']]],
-  ['version',['version',['../classsrc_1_1core_1_1global__information_1_1_global_information.html#a48a0e9271d030e4d1b1f89aa7f8ecf39',1,'src::core::global_information::GlobalInformation']]],
-  ['voice',['voice',['../classsrc_1_1morphology_1_1word__form_1_1_word_form.html#ac6fbf70d32545170d2b203a58532706d',1,'src::morphology::word_form::WordForm']]],
-  ['vowelharmony',['vowelHarmony',['../classsrc_1_1core_1_1lexicon_1_1_lexicon.html#a90017a2b027d2510fcdd6ff2be0ea7af',1,'src::core::lexicon::Lexicon']]]
+  ['variantform',['variantForm',['../classlmf_1_1src_1_1core_1_1form_1_1_form.html#a601549e93d6bd00ba5d8d3467a12bcdb',1,'lmf::src::core::form::Form']]],
+  ['verbformmood',['verbFormMood',['../classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form.html#a47aea97a4bbd8cca9624b0143f639716',1,'lmf::src::morphology::word_form::WordForm']]],
+  ['verbformmood_5frange',['verbFormMood_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a5a57dc7ed7fa1f785e812cfe2c306ef6',1,'lmf::src::common::range']]],
+  ['version',['version',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#a6a0bbf60025ea9503bb541a0ffbd514a',1,'lmf::src::core::global_information::GlobalInformation']]],
+  ['voice',['voice',['../classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form.html#ac08b72f6837815d9d11d3cb0a36ed932',1,'lmf::src::morphology::word_form::WordForm']]],
+  ['voice_5frange',['voice_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a23fdc4c034bc34cab81c6b9c051074dd',1,'lmf::src::common::range']]],
+  ['vowelharmony',['vowelHarmony',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a0c55ecd82285a7d3dc5d5ebcb1445c25',1,'lmf::src::core::lexicon::Lexicon']]]
 ];

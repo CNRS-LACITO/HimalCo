@@ -2,13 +2,13 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="input_2mdf_8py" kind="file">
     <compoundname>mdf.py</compoundname>
-    <innernamespace refid="namespacesrc_1_1input_1_1mdf">src::input::mdf</innernamespace>
+    <innernamespace refid="namespacelmf_1_1src_1_1input_1_1mdf">lmf::src::input::mdf</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1input_1_1mdf" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1input_1_1mdf" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>input</highlight></codeline>
 <codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -16,37 +16,40 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>config.mdf<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mdf_lmf</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>core.lexicon<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Lexicon</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>core.lexical_entry<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LexicalEntry</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>utils.io<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>open_read</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>utils.io<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>open_read,<sp/>EOL</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="namespacesrc_1_1input_1_1mdf_1a7990f7f774641727761c36d0ecc78e92" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacesrc_1_1input_1_1mdf_1a7990f7f774641727761c36d0ecc78e92" kindref="member">mdf_read</ref>(filename,<sp/>mdf2lmf=mdf_lmf):</highlight></codeline>
+<codeline lineno="11" refid="namespacelmf_1_1src_1_1input_1_1mdf_1adf21a8b8bd5a33be054269ced938ba52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacelmf_1_1src_1_1input_1_1mdf_1adf21a8b8bd5a33be054269ced938ba52" kindref="member">mdf_read</ref>(filename,<sp/>mdf2lmf=mdf_lmf):</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Read<sp/>an<sp/>MDF<sp/>file.</highlight></codeline>
 <codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>filename<sp/>The<sp/>name<sp/>of<sp/>the<sp/>MDF<sp/>file<sp/>to<sp/>read<sp/>with<sp/>full<sp/>path,<sp/>for<sp/>instance<sp/>&apos;user/input.txt&apos;.</highlight></codeline>
 <codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@param<sp/>mdf2lmf<sp/>A<sp/>Python<sp/>dictionary<sp/>describing<sp/>the<sp/>mapping<sp/>between<sp/>MDF<sp/>markers<sp/>and<sp/>LMF<sp/>representation.<sp/>Default<sp/>value<sp/>is<sp/>&apos;mdf_lmf&apos;<sp/>dictionary<sp/>defined<sp/>in<sp/>&apos;src/config/mdf.py&apos;.<sp/>Please<sp/>refer<sp/>to<sp/>it<sp/>as<sp/>an<sp/>example.</highlight></codeline>
 <codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>@return<sp/>A<sp/>Lexicon<sp/>instance<sp/>containing<sp/>all<sp/>lexical<sp/>entries.</highlight></codeline>
 <codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>re</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>mdf_file<sp/>=<sp/><ref refid="namespacesrc_1_1utils_1_1io_1aaca202c1b026ebdc4ff5eec904197623" kindref="member">open_read</ref>(filename)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>mdf_file<sp/>=<sp/><ref refid="namespacelmf_1_1src_1_1utils_1_1io_1a2659ffc6cd260a7a4e43f0546d518dff" kindref="member">open_read</ref>(filename)</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>MDF<sp/>syntax<sp/>is<sp/>the<sp/>following:<sp/>&apos;\marker<sp/>value&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>mdf_pattern<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;^\\\(\w*)<sp/>(.*)$&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>Lexicon<sp/>instance<sp/>to<sp/>contain<sp/>all<sp/>lexical<sp/>entries</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>lexicon<sp/>=<sp/>Lexicon()</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Add<sp/>each<sp/>lexical<sp/>entry<sp/>to<sp/>the<sp/>lexicon</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>current_entry<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>mdf_file.readlines():</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Do<sp/>not<sp/>parse<sp/>empty<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>line<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>re.match(mdf_pattern,<sp/>line)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>marker<sp/>=<sp/>result.group(1)</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>result.group(2)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>&apos;lx&apos;<sp/>marker<sp/>indicates<sp/>a<sp/>new<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>marker<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;lx&quot;</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>new<sp/>entry<sp/>and<sp/>add<sp/>it<sp/>to<sp/>the<sp/>lexicon</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_entry<sp/>=<sp/>LexicalEntry()</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lexicon.add_lexical_entry(current_entry)</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Map<sp/>MDF<sp/>marker<sp/>and<sp/>value<sp/>to<sp/>LMF<sp/>representation</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mdf2lmf[marker](value,<sp/>current_entry)</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>mdf_file.close()</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lexicon</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>id<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>mdf_file.readlines():</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Do<sp/>not<sp/>parse<sp/>empty<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>line<sp/>!=<sp/>EOL:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>re.match(mdf_pattern,<sp/>line)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>marker<sp/>=<sp/>result.group(1)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>result.group(2)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>&apos;lx&apos;<sp/>marker<sp/>indicates<sp/>a<sp/>new<sp/>entry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>marker<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;lx&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Create<sp/>a<sp/>new<sp/>entry<sp/>and<sp/>add<sp/>it<sp/>to<sp/>the<sp/>lexicon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_entry<sp/>=<sp/>LexicalEntry(id)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lexicon.add_lexical_entry(current_entry)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Map<sp/>MDF<sp/>marker<sp/>and<sp/>value<sp/>to<sp/>LMF<sp/>representation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mdf2lmf[marker](value,<sp/>current_entry)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>mdf_file.close()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>lexicon.check_cross_references()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lexicon</highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/mdf.py"/>
   </compounddef>

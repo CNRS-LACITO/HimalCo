@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning" kind="class" prot="public">
+    <compoundname>lmf::src::utils::error_handling::Warning</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UserWarning</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a0933de123c20a65d4226d8294d1e3506" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.utils.error_handling.Warning::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" line="105" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1abfcf05ce22e0fb5e6b81f167729c09c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.utils.error_handling.Warning::frame_info</definition>
+        <argsstring></argsstring>
+        <name>frame_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" line="108" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a1ca035181464bbf15ed05f00ed430384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.utils.error_handling.Warning.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to be reported to user. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning" kindref="compound">Warning</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" line="100" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" bodystart="100" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a3dd52e27b533f30681c500081cac6982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.utils.error_handling.Warning.__str__</definition>
+        <argsstring></argsstring>
+        <name>__str__</name>
+        <briefdescription>
+<para>Build the string to be displayed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Python string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" line="110" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" bodystart="110" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for warnings in this library. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="94">
+        <label>lmf.src.utils.error_handling.Warning</label>
+        <link refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>UserWarning</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="96">
+        <label>lmf.src.utils.error_handling.Warning</label>
+        <link refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>UserWarning</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" line="97" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/error_handling.py" bodystart="97" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a1ca035181464bbf15ed05f00ed430384" prot="public" virt="non-virtual"><scope>lmf::src::utils::error_handling::Warning</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a3dd52e27b533f30681c500081cac6982" prot="public" virt="non-virtual"><scope>lmf::src::utils::error_handling::Warning</scope><name>__str__</name></member>
+      <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1abfcf05ce22e0fb5e6b81f167729c09c7" prot="public" virt="non-virtual"><scope>lmf::src::utils::error_handling::Warning</scope><name>frame_info</name></member>
+      <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_warning_1a0933de123c20a65d4226d8294d1e3506" prot="public" virt="non-virtual"><scope>lmf::src::utils::error_handling::Warning</scope><name>msg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacelmf_1_1src_1_1wrapper" kind="namespace">
+    <compoundname>lmf::src::wrapper</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1ad3bdb7559a7a1a4caf4b441bf0c74c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.wrapper</definition>
+        <argsstring></argsstring>
+        <name>wrapper</name>
+        <briefdescription>
+<para>Wrapper function that calls another function, restoring normal behavior on error. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Callable object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments passed to &apos;func&apos; as its first argument. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kwds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other arguments passed to &apos;func&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="22" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1ac9330e43238a9e7374fec44248dccb9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.read_mdf</definition>
+        <argsstring></argsstring>
+        <name>read_mdf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="48" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1a43689b5d5e59354412e8419b55cad753" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.read_xml_lmf</definition>
+        <argsstring></argsstring>
+        <name>read_xml_lmf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="53" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1a34eb45bde89039fab69e6f323c64b61b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.write_mdf</definition>
+        <argsstring></argsstring>
+        <name>write_mdf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="58" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="58" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1a21e10a1783a71a179ca395a1ffbf7124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.write_xml_lmf</definition>
+        <argsstring></argsstring>
+        <name>write_xml_lmf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="62" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1wrapper_1ac819224ea6166cfc937077700ec04fb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.wrapper.write_tex</definition>
+        <argsstring></argsstring>
+        <name>write_tex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="66" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" bodystart="66" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/wrapper.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

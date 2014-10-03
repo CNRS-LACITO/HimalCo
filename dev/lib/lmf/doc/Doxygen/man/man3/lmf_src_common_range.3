@@ -1,0 +1,396 @@
+.TH "lmf.src.common.range" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.common.range \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBpartOfSpeech_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF part of speech LexicalEntry attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBtype_variant_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF variant type Form attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBnoteType_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF note type Statement attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBgrammaticalNumber_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF grammatical number WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBgrammaticalGender_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF grammatical gender WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBperson_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF grammatical person WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBanymacy_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF anymacy WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBclusivity_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF clusivity WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBtense_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF grammatical tense WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBvoice_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF voice WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBverbFormMood_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF verb form mood WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBdegree_range\fP"
+.br
+.RI "\fIPossible values allowed for LMF degree WordForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBsemanticRelation_range\fP"
+.br
+.RI "\fIPossible values allowed for semantic relation RelatedForm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBparadigmLabel_range\fP"
+.br
+.RI "\fIPossible values allowed for paradigm label Paradigm attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBtype_example_range\fP"
+.br
+.RI "\fIPossible values allowed for example type Context attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBmediaType_range\fP"
+.br
+.RI "\fIPossible values allowed for media type Material attribute\&. \fP"
+.ti -1c
+.RI "tuple \fBquality_range\fP"
+.br
+.RI "\fIPossible values allowed for quality Audio attribute\&. \fP"
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "tuple lmf\&.src\&.common\&.range\&.anymacy_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "animate",
+3     "inanimate",
+4     "other anymacy"
+5 ])
+.fi
+.PP
+Possible values allowed for LMF anymacy WordForm attribute\&. 
+.PP
+Definition at line 92 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.clusivity_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "inclusive",
+3     "exclusive"
+4 ])
+.fi
+.PP
+Possible values allowed for LMF clusivity WordForm attribute\&. 
+.PP
+Definition at line 99 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.degree_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "comparative degree",
+3     "positive degree",
+4     "superlative degree"
+5 ])
+.fi
+.PP
+Possible values allowed for LMF degree WordForm attribute\&. 
+.PP
+Definition at line 134 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.grammaticalGender_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "common gender",
+3     "feminine",
+4     "masculine",
+5     "neuter"
+6 ])
+.fi
+.PP
+Possible values allowed for LMF grammatical gender WordForm attribute\&. 
+.PP
+Definition at line 77 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.grammaticalNumber_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "collective",
+3     "dual",
+4     "paucal",
+5     "plural",
+6     "quadrial",
+7     "singular",
+8     "trial"
+9 ])
+.fi
+.PP
+Possible values allowed for LMF grammatical number WordForm attribute\&. 
+.PP
+Definition at line 66 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.mediaType_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "unspecified",
+3     "unknown",
+4     "audio",
+5     "video",
+6     "document",
+7     "text",
+8     "image",
+9     "drawing"
+10 ])
+.fi
+.PP
+Possible values allowed for media type Material attribute\&. 
+.PP
+Definition at line 175 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.noteType_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "comparison",
+3     "history",
+4     "semantics",
+5     "tone",
+6     "derivation",
+7     "case",
+8     "subord",
+9     "usage",
+10     "comment",
+11     "legend",
+12     "restriction",
+13     "encyclopedic",
+14     "anthropology",
+15     "discourse",
+16     "grammar",
+17     "phonology",
+18     "question",
+19     "sociolinguistics",
+20     "general"
+21 ])
+.fi
+.PP
+Possible values allowed for LMF note type Statement attribute\&. 
+.PP
+Definition at line 43 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.paradigmLabel_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "lexicalized affix",
+3     "conjugation class",
+4     "theme of the past",
+5     "comitative",
+6     "construction",
+7     "directional",
+8     "irregularity"
+9 ])
+.fi
+.PP
+Possible values allowed for paradigm label Paradigm attribute\&. 
+.PP
+Definition at line 156 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.partOfSpeech_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "adjective",
+3     "adposition",
+4     "adverb",
+5     "conjunction",
+6     "determiner",
+7     "interjection",
+8     "noun",
+9     "numeral",
+10     "particle",
+11     "pronoun",
+12     "verb",
+13     "ideophone",
+14     "transitive verb",
+15     "intransitive verb",
+16     "reflexive verb",
+17     "negation",
+18     "impersonal verb",
+19     "classifier",
+20     "preposition",
+21     "bitransistive verb",
+22     "affix",
+23     "possessive pronouns",
+24     "particle",
+25     "onomatope",
+26     "function word",
+27     "stative intransitive verb",
+28     "linker"
+29 ])
+.fi
+.PP
+Possible values allowed for LMF part of speech LexicalEntry attribute\&. 
+.PP
+Definition at line 4 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.person_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "first person",
+3     "second person",
+4     "third person"
+5 ])
+.fi
+.PP
+Possible values allowed for LMF grammatical person WordForm attribute\&. 
+.PP
+Definition at line 85 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.quality_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "very low",
+3     "low",
+4     "normal",
+5     "good",
+6     "very good" # high
+7 ])
+.fi
+.PP
+Possible values allowed for quality Audio attribute\&. 
+.PP
+Definition at line 187 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.semanticRelation_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "synonym",
+3     "antonym",
+4     "homonym",
+5     "etymology",
+6     "subentry",
+7     "main entry",
+8     "simple link",
+9     "derived form",
+10     "root",
+11     "stem",
+12     "collocation"
+13 ])
+.fi
+.PP
+Possible values allowed for semantic relation RelatedForm attribute\&. 
+.PP
+Definition at line 141 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.tense_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "future",
+3     "imperfect",
+4     "past",
+5     "present"
+6 ])
+.fi
+.PP
+Possible values allowed for LMF grammatical tense WordForm attribute\&. 
+.PP
+Definition at line 105 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.type_example_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "proverb",
+3     "locution",
+4     "example",
+5     "combination"
+6 ])
+.fi
+.PP
+Possible values allowed for example type Context attribute\&. 
+.PP
+Definition at line 167 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.type_variant_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "unspecified",
+3     "orthography",
+4     "phonetics",
+5     "archaic"
+6 ])
+.fi
+.PP
+Possible values allowed for LMF variant type Form attribute\&. 
+.PP
+Definition at line 35 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.verbFormMood_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "gerundive",
+3     "imperative",
+4     "indicative",
+5     "infinitive",
+6     "participle",
+7     "subjunctive",
+8     "conditional",
+9     "relative mood",
+10     "prohibitive mood",
+11     "debitive mood"
+12 ])
+.fi
+.PP
+Possible values allowed for LMF verb form mood WordForm attribute\&. 
+.PP
+Definition at line 120 of file range\&.py\&.
+.SS "tuple lmf\&.src\&.common\&.range\&.voice_range"
+\fBInitial value:\fP
+.PP
+.nf
+1 = set([
+2     "active voice",
+3     "middle voice",
+4     "passive voice"
+5 ])
+.fi
+.PP
+Possible values allowed for LMF voice WordForm attribute\&. 
+.PP
+Definition at line 113 of file range\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

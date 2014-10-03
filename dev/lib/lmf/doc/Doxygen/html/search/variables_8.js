@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['id',['id',['../classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a210b91bf8efc402f897e4a62b9e24341',1,'src.core.lexical_entry.LexicalEntry.id()'],['../classsrc_1_1core_1_1lexicon_1_1_lexicon.html#ac76ee39a545b73a67d005b00645ec7cc',1,'src.core.lexicon.Lexicon.id()'],['../classsrc_1_1core_1_1sense_1_1_sense.html#a37a8c62a8fbdbc3191b25b2654197307',1,'src.core.sense.Sense.id()']]],
-  ['independentword',['independentWord',['../classsrc_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a93614de55bcf2c644c9c048812e318f8',1,'src::core::lexical_entry::LexicalEntry']]]
+  ['id',['id',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a28fe2bf7e53e223a6919bb38b6d55256',1,'lmf.src.core.lexical_entry.LexicalEntry.id()'],['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a8d47ac22571af27a1e989c2c7b14e80b',1,'lmf.src.core.lexicon.Lexicon.id()'],['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#ae0febecc9ab2951c5c6bb82f675187bc',1,'lmf.src.core.sense.Sense.id()']]],
+  ['independentword',['independentWord',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a6e84227c5c4a0d4d6574f3daa19ebac4',1,'lmf::src::core::lexical_entry::LexicalEntry']]]
 ];

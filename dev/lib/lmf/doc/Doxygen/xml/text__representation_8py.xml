@@ -2,20 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="text__representation_8py" kind="file">
     <compoundname>text_representation.py</compoundname>
-    <innerclass refid="classsrc_1_1core_1_1text__representation_1_1_text_representation" prot="public">src::core::text_representation::TextRepresentation</innerclass>
-    <innernamespace refid="namespacesrc_1_1core_1_1text__representation">src::core::text_representation</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" prot="public">lmf::src::core::text_representation::TextRepresentation</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1core_1_1text__representation">lmf::src::core::text_representation</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1core_1_1text__representation" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1core_1_1text__representation" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>representation<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Representation</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="classsrc_1_1core_1_1text__representation_1_1_text_representation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1text__representation_1_1_text_representation" kindref="compound">TextRepresentation</ref>(Representation):</highlight></codeline>
-<codeline lineno="6" refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1a4e022375d60b50b1b84aac1083650c4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1a4e022375d60b50b1b84aac1083650c4b" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="7" refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1aeb2f021498890dec4d8daff88cf704b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1core_1_1text__representation_1_1_text_representation_1aeb2f021498890dec4d8daff88cf704b8" kindref="member">font</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>core</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>representation<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Representation</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kindref="compound">TextRepresentation</ref>(Representation):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>&quot;Text<sp/>Representation<sp/>is<sp/>a<sp/>class<sp/>representing<sp/>the<sp/>textual<sp/>content<sp/>of<sp/>definition<sp/>or<sp/>statement.<sp/>When<sp/>there<sp/>is<sp/>more<sp/>than<sp/>one<sp/>variant<sp/>orthography,<sp/>the<sp/>Text<sp/>Representation<sp/>instance<sp/>contains<sp/>a<sp/>Unicode<sp/>string<sp/>representing<sp/>the<sp/>textual<sp/>content<sp/>as<sp/>well<sp/>as<sp/>unique<sp/>attribute-value<sp/>pairs<sp/>that<sp/>describe<sp/>the<sp/>specific<sp/>language,<sp/>script<sp/>and<sp/>orthography.&quot;<sp/>(LMF)</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Constructor.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TextRepresentation<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>Definition<sp/>and<sp/>Statement.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@return<sp/>A<sp/>TextRepresentation<sp/>instance.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Initialize<sp/>Representation<sp/>attributes:<sp/>&apos;comment&apos;,<sp/>&apos;writtenForm&apos;<sp/>and<sp/>&apos;language&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__new__()</highlight></codeline>
+<codeline lineno="18" refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" kindref="member">font</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Destructor.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py"/>
   </compounddef>

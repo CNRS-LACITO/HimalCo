@@ -1,0 +1,165 @@
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{\section{lmf.\+src.\+core.\+sense.\+Sense Class Reference}
+\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense}\index{lmf.\+src.\+core.\+sense.\+Sense@{lmf.\+src.\+core.\+sense.\+Sense}}
+}
+
+
+\char`\"{}\+Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry.\char`\"{} (L\+M\+F)  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_af0279b132d98c7b49141350ce34ea53b}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3cc439d56624626aaec6588dbcad5b58}{\+\_\+\+\_\+del\+\_\+\+\_\+}
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab511b70da3012cc5a0254f34dd30170c}{sense\+Number}
+\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae0febecc9ab2951c5c6bb82f675187bc}{id}
+\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9adfd8936ecd6626cba82193e068e09e}{definition}
+\begin{DoxyCompactList}\small\item\em Definition instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Definition instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a51524fd8eb1bc869c2ecfc681339d8aa}{sense}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a94d3b05f734fbe8898902ae948d30ce5}{equivalent}
+\begin{DoxyCompactList}\small\item\em Equivalent instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Equivalent instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae2b3da0233748116d4415cc107b6e4c2}{context}
+\begin{DoxyCompactList}\small\item\em Context instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Context instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a1a7524732c66093f7156792292d3c9c3}{subject\+\_\+field}
+\begin{DoxyCompactList}\small\item\em Subject\+Field instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Subject\+Field instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\item 
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3f36a95173e4d4e7244e407a725dd3a9}{paradigm}
+\begin{DoxyCompactList}\small\item\em Paradigm instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Paradigm instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\char`\"{}\+Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry.\char`\"{} (L\+M\+F) 
+
+Definition at line 6 of file sense.\+py.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_af0279b132d98c7b49141350ce34ea53b}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_af0279b132d98c7b49141350ce34ea53b}
+
+
+Constructor. 
+
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instances are owned by Lexical\+Entry. \begin{DoxyReturn}{Returns}
+A \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3cc439d56624626aaec6588dbcad5b58}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{\+\_\+\+\_\+del\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+\_\+\+\_\+del\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3cc439d56624626aaec6588dbcad5b58}
+
+
+Destructor. 
+
+Release Definition, \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}, Equivalent, Context, Subject\+Field, Paradigm instances. 
+
+Definition at line 35 of file sense.\+py.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae2b3da0233748116d4415cc107b6e4c2}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!context@{context}}
+\index{context@{context}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+context}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae2b3da0233748116d4415cc107b6e4c2}
+
+
+Context instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Context instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 27 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9adfd8936ecd6626cba82193e068e09e}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!definition@{definition}}
+\index{definition@{definition}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{definition}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+definition}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9adfd8936ecd6626cba82193e068e09e}
+
+
+Definition instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Definition instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 18 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a94d3b05f734fbe8898902ae948d30ce5}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!equivalent@{equivalent}}
+\index{equivalent@{equivalent}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{equivalent}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+equivalent}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a94d3b05f734fbe8898902ae948d30ce5}
+
+
+Equivalent instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Equivalent instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 24 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae0febecc9ab2951c5c6bb82f675187bc}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!id@{id}}
+\index{id@{id}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+id}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae0febecc9ab2951c5c6bb82f675187bc}
+
+
+Definition at line 15 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3f36a95173e4d4e7244e407a725dd3a9}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!paradigm@{paradigm}}
+\index{paradigm@{paradigm}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{paradigm}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+paradigm}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a3f36a95173e4d4e7244e407a725dd3a9}
+
+
+Paradigm instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Paradigm instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 33 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a51524fd8eb1bc869c2ecfc681339d8aa}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!sense@{sense}}
+\index{sense@{sense}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{sense}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+sense}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a51524fd8eb1bc869c2ecfc681339d8aa}
+
+
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 21 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab511b70da3012cc5a0254f34dd30170c}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!sense\+Number@{sense\+Number}}
+\index{sense\+Number@{sense\+Number}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{sense\+Number}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+sense\+Number}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab511b70da3012cc5a0254f34dd30170c}
+
+
+Definition at line 14 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a1a7524732c66093f7156792292d3c9c3}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!subject\+\_\+field@{subject\+\_\+field}}
+\index{subject\+\_\+field@{subject\+\_\+field}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{subject\+\_\+field}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+sense.\+Sense.\+subject\+\_\+field}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a1a7524732c66093f7156792292d3c9c3}
+
+
+Subject\+Field instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} There is zero to many Subject\+Field instances per \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense}. 
+
+
+
+Definition at line 30 of file sense.\+py.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/celine/\+Work/\+C\+N\+R\+S/workspace/\+Himal\+Co/dev/lib/lmf/src/core/\hyperlink{sense_8py}{sense.\+py}\end{DoxyCompactItemize}

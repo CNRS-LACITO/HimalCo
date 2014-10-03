@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kind="class" prot="public">
+    <compoundname>lmf::src::core::sense::Sense</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab511b70da3012cc5a0254f34dd30170c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::senseNumber</definition>
+        <argsstring></argsstring>
+        <name>senseNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae0febecc9ab2951c5c6bb82f675187bc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9adfd8936ecd6626cba82193e068e09e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::definition</definition>
+        <argsstring></argsstring>
+        <name>definition</name>
+        <briefdescription>
+<para>Definition instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many Definition instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a51524fd8eb1bc869c2ecfc681339d8aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::sense</definition>
+        <argsstring></argsstring>
+        <name>sense</name>
+        <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a94d3b05f734fbe8898902ae948d30ce5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::equivalent</definition>
+        <argsstring></argsstring>
+        <name>equivalent</name>
+        <briefdescription>
+<para>Equivalent instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many Equivalent instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae2b3da0233748116d4415cc107b6e4c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+<para>Context instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many Context instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a1a7524732c66093f7156792292d3c9c3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::subject_field</definition>
+        <argsstring></argsstring>
+        <name>subject_field</name>
+        <briefdescription>
+<para>SubjectField instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many SubjectField instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3f36a95173e4d4e7244e407a725dd3a9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.sense.Sense::paradigm</definition>
+        <argsstring></argsstring>
+        <name>paradigm</name>
+        <briefdescription>
+<para>Paradigm instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> There is zero to many Paradigm instances per <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af0279b132d98c7b49141350ce34ea53b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.sense.Sense.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instances are owned by LexicalEntry. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="9" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3cc439d56624626aaec6588dbcad5b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.sense.Sense.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release Definition, <ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref>, Equivalent, Context, SubjectField, Paradigm instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="35" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="6" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3cc439d56624626aaec6588dbcad5b58" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af0279b132d98c7b49141350ce34ea53b" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae2b3da0233748116d4415cc107b6e4c2" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>context</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9adfd8936ecd6626cba82193e068e09e" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>definition</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a94d3b05f734fbe8898902ae948d30ce5" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>equivalent</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae0febecc9ab2951c5c6bb82f675187bc" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>id</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3f36a95173e4d4e7244e407a725dd3a9" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>paradigm</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a51524fd8eb1bc869c2ecfc681339d8aa" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>sense</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab511b70da3012cc5a0254f34dd30170c" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>senseNumber</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a1a7524732c66093f7156792292d3c9c3" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>subject_field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

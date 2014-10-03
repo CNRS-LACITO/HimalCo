@@ -1,0 +1,110 @@
+.TH "lmf.src.utils.error_handling.Error" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.utils.error_handling.Error \- 
+.PP
+Base class for exceptions in this library\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Exception\&.
+.PP
+Inherited by \fBlmf\&.src\&.utils\&.error_handling\&.InputError\fP, and \fBlmf\&.src\&.utils\&.error_handling\&.OutputError\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fB__str__\fP"
+.br
+.RI "\fIBuild the string to be displayed\&. \fP"
+.ti -1c
+.RI "def \fBhandle\fP"
+.br
+.RI "\fIDefine behavior to follow in case this error is caught: diplay error and exit program\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBmsg\fP"
+.br
+.ti -1c
+.RI "\fBexcp\fP"
+.br
+.ti -1c
+.RI "\fBframe_info\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Base class for exceptions in this library\&. 
+.PP
+Definition at line 3 of file error_handling\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.error_handling\&.Error\&.__init__ (self, msg, excp = \fCNone\fP)"
+
+.PP
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImsg\fP String to be reported to user\&. 
+.br
+\fIexcp\fP Raised system exception if any: IOError, KeyboardInterrupt, SystemExit, IndexError, KeyError, AttributeError, TypeError, NameError, UnboundLocalError, ValueError\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+An \fBError\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 6 of file error_handling\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.error_handling\&.Error\&.__str__ (self)"
+
+.PP
+Build the string to be displayed\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python string\&. 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file error_handling\&.py\&.
+.SS "def lmf\&.src\&.utils\&.error_handling\&.Error\&.handle (self)"
+
+.PP
+Define behavior to follow in case this error is caught: diplay error and exit program\&. 
+.PP
+Definition at line 30 of file error_handling\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.utils\&.error_handling\&.Error\&.excp"
+
+.PP
+Definition at line 13 of file error_handling\&.py\&.
+.SS "lmf\&.src\&.utils\&.error_handling\&.Error\&.frame_info"
+
+.PP
+Definition at line 16 of file error_handling\&.py\&.
+.SS "lmf\&.src\&.utils\&.error_handling\&.Error\&.msg"
+
+.PP
+Definition at line 12 of file error_handling\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

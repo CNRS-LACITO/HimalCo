@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kind="class" prot="public">
+    <compoundname>lmf::src::mrd::context::Context</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4bbfb55e0df3e37ee91abbfc59fa4111" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.context.Context::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a785d657d9be0addc379745e7efa4996b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.context.Context::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a471cd19ef138a424df53621024979ba7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.context.Context::text_representation</definition>
+        <argsstring></argsstring>
+        <name>text_representation</name>
+        <briefdescription>
+<para>TextRepresentation instances are owned by <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> There is zero to many TextRepresentation instances per <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a29412f9361cee534cfa7148320e0826f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.context.Context::targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a7412afdd525b89387756d41d7a2c28f4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.context.Context::__speaker</definition>
+        <argsstring></argsstring>
+        <name>__speaker</name>
+        <briefdescription>
+<para>Pointer to an existing Speaker There is zero or one Speaker pointer per <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1acc18b0fe7b0db9c6e64e934ee67fc6a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.context.Context.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instances are owned by Sense. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a490b0011c22dc5843ba7c6b176f3b72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.context.Context.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release TextRepresentation instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a411ba47fe4581d2e3416b44fbd9ab1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.context.Context.get_speaker</definition>
+        <argsstring></argsstring>
+        <name>get_speaker</name>
+        <briefdescription>
+<para>Get speaker. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> private attribute &apos;__speaker&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="35" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Context is a class representing a text string that provides authentic context for the use of the word form managed by the Lemma. This class is to be distinguished from Sense Example.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a490b0011c22dc5843ba7c6b176f3b72b" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1acc18b0fe7b0db9c6e64e934ee67fc6a9" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a7412afdd525b89387756d41d7a2c28f4" prot="private" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>__speaker</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a411ba47fe4581d2e3416b44fbd9ab1d9" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_speaker</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4bbfb55e0df3e37ee91abbfc59fa4111" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a29412f9361cee534cfa7148320e0826f" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>targets</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a471cd19ef138a424df53621024979ba7" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>text_representation</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a785d657d9be0addc379745e7efa4996b" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

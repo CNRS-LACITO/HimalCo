@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacelmf_1_1src_1_1config_1_1tex" kind="namespace">
+    <compoundname>lmf::src::config::tex</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1tex_1a19c5578c65b152e179d23ea103849590" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lmf::src::config::tex.tex_order</definition>
+        <argsstring></argsstring>
+        <name>tex_order</name>
+        <initializer>= [&quot;Lemma.lexeme&quot;, &quot;LexicalEntry.id&quot;, &quot;LexicalEntry.partOfSpeech&quot;, &quot;LexicalEntry.status&quot;]</initializer>
+        <briefdescription>
+<para>Order in which information must be written in LaTeX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/tex.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/tex.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1tex_1aee96ffe8f8f1e7f54b1c9fa55d93010d" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::tex.lmf_tex</definition>
+        <argsstring></argsstring>
+        <name>lmf_tex</name>
+        <initializer>= dict({
+    &quot;Lemma.lexeme&quot; : lambda lexical_entry: EOL + &quot;\\vspace{1cm} \\hspace{-1cm} {\Large \ipa{&quot; + lexical_entry.get_lexeme() + &quot;}} \\hspace{0.2cm} &quot;,
+    &quot;LexicalEntry.id&quot; : lambda lexical_entry: &quot;\\hypertarget{&quot; + str(lexical_entry.get_id()) + &quot;}{}&quot; + EOL,
+    &quot;LexicalEntry.partOfSpeech&quot; : lambda lexical_entry: &quot;\\textcolor{teal}{\\textit{&quot; + lexical_entry.get_partOfSpeech() + &quot;}}&quot; + EOL,
+    &quot;LexicalEntry.status&quot; : lambda lexical_entry: &quot;&quot;
+})</initializer>
+        <briefdescription>
+<para>Mapping between LMF representation and LaTeX output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/tex.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/tex.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/tex.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

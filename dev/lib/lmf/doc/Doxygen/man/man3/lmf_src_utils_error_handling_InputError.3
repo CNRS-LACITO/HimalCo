@@ -1,0 +1,91 @@
+.TH "lmf.src.utils.error_handling.InputError" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.utils.error_handling.InputError \- 
+.PP
+Exception raised for errors in the input\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBlmf\&.src\&.utils\&.error_handling\&.Error\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fBhandle\fP"
+.br
+.RI "\fIDefine behavior to follow in case this error is caught: display error and exit program\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBmsg\fP"
+.br
+.ti -1c
+.RI "\fBexpr\fP"
+.br
+.ti -1c
+.RI "\fBframe_info\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Exception raised for errors in the input\&. 
+.PP
+Definition at line 41 of file error_handling\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.error_handling\&.InputError\&.__init__ (self, msg, expr = \fCNone\fP)"
+
+.PP
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImsg\fP Explanation of the error\&. 
+.br
+\fIexpr\fP Input expression in which the error occurred\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+An \fBInputError\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file error_handling\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.error_handling\&.InputError\&.handle (self)"
+
+.PP
+Define behavior to follow in case this error is caught: display error and exit program\&. 
+.PP
+Definition at line 56 of file error_handling\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.utils\&.error_handling\&.InputError\&.expr"
+
+.PP
+Definition at line 51 of file error_handling\&.py\&.
+.SS "lmf\&.src\&.utils\&.error_handling\&.InputError\&.frame_info"
+
+.PP
+Definition at line 54 of file error_handling\&.py\&.
+.SS "lmf\&.src\&.utils\&.error_handling\&.InputError\&.msg"
+
+.PP
+Definition at line 50 of file error_handling\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

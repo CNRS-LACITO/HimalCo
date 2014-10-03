@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kind="class" prot="public">
+    <compoundname>lmf::src::mrd::equivalent::Equivalent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.equivalent.Equivalent::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.equivalent.Equivalent::translation</definition>
+        <argsstring></argsstring>
+        <name>translation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.equivalent.Equivalent::text_representation</definition>
+        <argsstring></argsstring>
+        <name>text_representation</name>
+        <briefdescription>
+<para>TextRepresentation instances are owned by <ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> There is zero to many TextRepresentation instances per <ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> instances are owned by Sense. <simplesect kind="return"><para>An <ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="9" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release TextRepresentation instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="20" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Equivalent is a class representing the translation equivalent of the word form managed by the Lemma class.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="6" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>text_representation</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>translation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

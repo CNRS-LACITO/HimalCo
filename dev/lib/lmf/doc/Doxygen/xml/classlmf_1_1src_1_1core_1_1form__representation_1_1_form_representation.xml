@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kind="class" prot="public">
+    <compoundname>lmf::src::core::form_representation::FormRepresentation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Representation</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab192387108c3c4e780297d1b409d5eff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::transliteration</definition>
+        <argsstring></argsstring>
+        <name>transliteration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a2cfea0271f8abfcffb74afb7641ef4df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::tone</definition>
+        <argsstring></argsstring>
+        <name>tone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a7d080181b73f2c03d3a2cf65a97be169" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::geographicalVariant</definition>
+        <argsstring></argsstring>
+        <name>geographicalVariant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a50b914930f083c55e70e805a2430e88d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::phoneticForm</definition>
+        <argsstring></argsstring>
+        <name>phoneticForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a1068952fddde59f78e8a56b785b0bcbf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::contextualVariation</definition>
+        <argsstring></argsstring>
+        <name>contextualVariation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aef2857854ecb2ca02c7ede104b617505" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::spellingVariant</definition>
+        <argsstring></argsstring>
+        <name>spellingVariant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a70151ff258dea274006e4976818847a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::citationForm</definition>
+        <argsstring></argsstring>
+        <name>citationForm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad19ad7a519048bc71ff0d0df2c888621" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::dialect</definition>
+        <argsstring></argsstring>
+        <name>dialect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad42d4a830850a55fd08ba3742abdde57" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a728fa20d7dcdbb6714f97b87cbe8ee0f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::scriptName</definition>
+        <argsstring></argsstring>
+        <name>scriptName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ac13f0605619b9bdc6b921ae19b39c068" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::audio</definition>
+        <argsstring></argsstring>
+        <name>audio</name>
+        <briefdescription>
+<para>Audio instances are owned by <ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref> There is zero to many Audio instances per <ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a94e0845b7cf84cdbef5f1dceae0d7f99" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="32" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aa732b17e5a77d60f40b5be7925dba182" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.form_representation.FormRepresentation::__speaker</definition>
+        <argsstring></argsstring>
+        <name>__speaker</name>
+        <briefdescription>
+<para>Pointers to an existing Speaker There is zero to many pointers per <ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab034318ab1492fac033d745860e18a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.form_representation.FormRepresentation.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref> instances are owned by Form. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="11" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a577b5258bf8f64ff889f0588cf0c8eda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.form_representation.FormRepresentation.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release Audio instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="37" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a348d8eb39ef5bda7789106c9f5fe7755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.form_representation.FormRepresentation.get_speakers</definition>
+        <argsstring></argsstring>
+        <name>get_speakers</name>
+        <briefdescription>
+<para>Get speakers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kindref="compound">FormRepresentation</ref> private attribute &apos;__speaker&apos;, a Python list of Speaker instances. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="47" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Form Representation is a class representing one variant orthography of a Form.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>lmf.src.core.form_representation.FormRepresentation</label>
+        <link refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Representation</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>lmf.src.core.form_representation.FormRepresentation</label>
+        <link refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>Representation</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form_representation.py" bodystart="8" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a577b5258bf8f64ff889f0588cf0c8eda" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab034318ab1492fac033d745860e18a37" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aa732b17e5a77d60f40b5be7925dba182" prot="private" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>__speaker</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ac13f0605619b9bdc6b921ae19b39c068" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>audio</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a70151ff258dea274006e4976818847a3" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>citationForm</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a1068952fddde59f78e8a56b785b0bcbf" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>contextualVariation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad19ad7a519048bc71ff0d0df2c888621" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>dialect</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a7d080181b73f2c03d3a2cf65a97be169" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>geographicalVariant</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a348d8eb39ef5bda7789106c9f5fe7755" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>get_speakers</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad42d4a830850a55fd08ba3742abdde57" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a50b914930f083c55e70e805a2430e88d" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>phoneticForm</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a728fa20d7dcdbb6714f97b87cbe8ee0f" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>scriptName</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aef2857854ecb2ca02c7ede104b617505" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>spellingVariant</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a94e0845b7cf84cdbef5f1dceae0d7f99" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>targets</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a2cfea0271f8abfcffb74afb7641ef4df" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>tone</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab192387108c3c4e780297d1b409d5eff" prot="public" virt="non-virtual"><scope>lmf::src::core::form_representation::FormRepresentation</scope><name>transliteration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

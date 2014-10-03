@@ -2,20 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="video_8py" kind="file">
     <compoundname>video.py</compoundname>
-    <innerclass refid="classsrc_1_1resources_1_1video_1_1_video" prot="public">src::resources::video::Video</innerclass>
-    <innernamespace refid="namespacesrc_1_1resources_1_1video">src::resources::video</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" prot="public">lmf::src::resources::video::Video</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1resources_1_1video">lmf::src::resources::video</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1resources_1_1video" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1resources_1_1video" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>material<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Material</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="classsrc_1_1resources_1_1video_1_1_video" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref>(Material):</highlight></codeline>
-<codeline lineno="6" refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1video_1_1_video_1a715a09e9bc39544de57c1cf9a10da491" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="7" refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classsrc_1_1resources_1_1video_1_1_video_1a0dc8832c83f1d52f217a6df00f755493" kindref="member">description</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>resources</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>material<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Material</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref>(Material):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>Video<sp/>is<sp/>a<sp/>Material<sp/>subclass<sp/>representing<sp/>a<sp/>video.</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a462c094b953b8c030b557184708222cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a462c094b953b8c030b557184708222cd" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Constructor.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Video<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>?.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@return<sp/>A<sp/>Video<sp/>instance.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Initialize<sp/>Material<sp/>attributes:<sp/>&apos;mediaType&apos;,<sp/>&apos;fileName&apos;<sp/>and<sp/>&apos;author&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.__new__()</highlight></codeline>
+<codeline lineno="18" refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a21f39ce29f1958b3c82169eabbffc34d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a21f39ce29f1958b3c82169eabbffc34d" kindref="member">description</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a2926a640d348c5cadf03c67cba87de0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a2926a640d348c5cadf03c67cba87de0a" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Destructor.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py"/>
   </compounddef>

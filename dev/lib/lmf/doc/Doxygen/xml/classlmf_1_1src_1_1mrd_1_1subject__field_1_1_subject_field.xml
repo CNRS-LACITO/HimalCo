@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kind="class" prot="public">
+    <compoundname>lmf::src::mrd::subject_field::SubjectField</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a32aad0bdc68774dbcc308df9bd73a00b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.subject_field.SubjectField::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1aa625fa1b644690d878091eaa4ea9460f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.subject_field.SubjectField::semanticDomain</definition>
+        <argsstring></argsstring>
+        <name>semanticDomain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ae43454d43d98b42b780661e8b18f89d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.mrd.subject_field.SubjectField::subject_field</definition>
+        <argsstring></argsstring>
+        <name>subject_field</name>
+        <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> instances are owned by <ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> There is zero to many <ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> instances per <ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a2d8f602d6bb1db753cac9f281c6ffc57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.subject_field.SubjectField.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> instances are owned by Sense. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="9" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a15083c8ac78c8bd835dde95185af506e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.subject_field.SubjectField.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release <ref refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field" kindref="compound">SubjectField</ref> instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="20" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Subject Field is a class representing a text string that provides domain or status information.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/subject_field.py" bodystart="6" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a15083c8ac78c8bd835dde95185af506e" prot="public" virt="non-virtual"><scope>lmf::src::mrd::subject_field::SubjectField</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a2d8f602d6bb1db753cac9f281c6ffc57" prot="public" virt="non-virtual"><scope>lmf::src::mrd::subject_field::SubjectField</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a32aad0bdc68774dbcc308df9bd73a00b" prot="public" virt="non-virtual"><scope>lmf::src::mrd::subject_field::SubjectField</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1aa625fa1b644690d878091eaa4ea9460f" prot="public" virt="non-virtual"><scope>lmf::src::mrd::subject_field::SubjectField</scope><name>semanticDomain</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ae43454d43d98b42b780661e8b18f89d4" prot="public" virt="non-virtual"><scope>lmf::src::mrd::subject_field::SubjectField</scope><name>subject_field</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

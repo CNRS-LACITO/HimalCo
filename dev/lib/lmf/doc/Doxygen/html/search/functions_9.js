@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['remove_5flexical_5fentry',['remove_lexical_entry',['../classsrc_1_1core_1_1lexicon_1_1_lexicon.html#a50ea2e94e8faf8d4d653695cd573af06',1,'src::core::lexicon::Lexicon']]]
+  ['open_5ffile',['open_file',['../namespacelmf_1_1src_1_1utils_1_1io.html#a3cfd9f0e0184883c64f87bab4686befc',1,'lmf::src::utils::io']]],
+  ['open_5fread',['open_read',['../namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff',1,'lmf::src::utils::io']]],
+  ['open_5fwrite',['open_write',['../namespacelmf_1_1src_1_1utils_1_1io.html#a943b893b8992a6e46d91400538709b80',1,'lmf::src::utils::io']]]
 ];

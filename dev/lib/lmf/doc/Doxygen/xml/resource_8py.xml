@@ -2,18 +2,36 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="resource_8py" kind="file">
     <compoundname>resource.py</compoundname>
-    <innerclass refid="classsrc_1_1resources_1_1resource_1_1_resource" prot="public">src::resources::resource::Resource</innerclass>
-    <innernamespace refid="namespacesrc_1_1resources_1_1resource">src::resources::resource</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" prot="public">lmf::src::resources::resource::Resource</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1resources_1_1resource">lmf::src::resources::resource</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1resources_1_1resource" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1resources_1_1resource" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="classsrc_1_1resources_1_1resource_1_1_resource" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref>():</highlight></codeline>
-<codeline lineno="4" refid="classsrc_1_1resources_1_1resource_1_1_resource_1ab121b71dde3799e39bc6de236263279f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1resources_1_1resource_1_1_resource_1ab121b71dde3799e39bc6de236263279f" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>resources</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref>():</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>Resource<sp/>is<sp/>an<sp/>abstract<sp/>class<sp/>representing<sp/>a<sp/>material<sp/>or<sp/>a<sp/>human<sp/>resource.<sp/>The<sp/>Resource<sp/>class<sp/>allows<sp/>subclasses.</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1adf841a9c1edc70040858112b7f144e3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1adf841a9c1edc70040858112b7f144e3f" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>As<sp/>Resource<sp/>is<sp/>an<sp/>abstract<sp/>class,<sp/>constructor<sp/>raises<sp/>an<sp/>error.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1af3f1ceb63eb841d5bc2ce20df9c74d7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1af3f1ceb63eb841d5bc2ce20df9c74d7a" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>As<sp/>Resource<sp/>is<sp/>an<sp/>abstract<sp/>class,<sp/>desctructor<sp/>raises<sp/>an<sp/>error.</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1ae969204ff849acf51dcb4ae522d8914d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1ae969204ff849acf51dcb4ae522d8914d" kindref="member">__call__</ref>(self):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Private<sp/>initialization<sp/>called<sp/>from<sp/>Resource<sp/>subclasses.</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Resource<sp/>subinstances<sp/>are<sp/>owned<sp/>by<sp/>LexicalResource.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py"/>
   </compounddef>

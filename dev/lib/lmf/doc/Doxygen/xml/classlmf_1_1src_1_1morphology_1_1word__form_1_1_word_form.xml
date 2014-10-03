@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form" kind="class" prot="public">
+    <compoundname>lmf::src::morphology::word_form::WordForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afa022505f197952b8cf9229e065089c2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::grammaticalNumber</definition>
+        <argsstring></argsstring>
+        <name>grammaticalNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ab6f9abda4baef6ac9e61ef377c532279" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::grammaticalGender</definition>
+        <argsstring></argsstring>
+        <name>grammaticalGender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a982fc33af45a08aa5a039dc4701c3689" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::person</definition>
+        <argsstring></argsstring>
+        <name>person</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aaf6096a08af3e92ad3878b68d2e136d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::anymacy</definition>
+        <argsstring></argsstring>
+        <name>anymacy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aafbd3d5422083422a4a9ee9b1379913e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::clusivity</definition>
+        <argsstring></argsstring>
+        <name>clusivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aaf6dd6658e2e9014ea0490d0edb6cec8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::tense</definition>
+        <argsstring></argsstring>
+        <name>tense</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ac996cb6a252a2e97aea0ba861982a640" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::case</definition>
+        <argsstring></argsstring>
+        <name>case</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ae529bc2d6ef927ccb6da6599901dccb2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::degree</definition>
+        <argsstring></argsstring>
+        <name>degree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ac08b72f6837815d9d11d3cb0a36ed932" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::voice</definition>
+        <argsstring></argsstring>
+        <name>voice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a47aea97a4bbd8cca9624b0143f639716" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphology.word_form.WordForm::verbFormMood</definition>
+        <argsstring></argsstring>
+        <name>verbFormMood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afcc4ec0d271e48a7f35920a1e91aa9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.word_form.WordForm.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form" kindref="compound">WordForm</ref> instances are owned by LexicalEntry. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form" kindref="compound">WordForm</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="11" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa7b79f6c8c3bd98e57b7d2bc60a9b88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.word_form.WordForm.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="29" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="29" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Word Form is a Form subclass representing a form that a lexeme can take when used in a sentence or a phrase.&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>Form</label>
+      </node>
+      <node id="98">
+        <label>lmf.src.morphology.word_form.WordForm</label>
+        <link refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="101">
+        <label>Form</label>
+      </node>
+      <node id="100">
+        <label>lmf.src.morphology.word_form.WordForm</label>
+        <link refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa7b79f6c8c3bd98e57b7d2bc60a9b88c" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afcc4ec0d271e48a7f35920a1e91aa9b9" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aaf6096a08af3e92ad3878b68d2e136d3" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>anymacy</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ac996cb6a252a2e97aea0ba861982a640" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>case</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aafbd3d5422083422a4a9ee9b1379913e" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>clusivity</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ae529bc2d6ef927ccb6da6599901dccb2" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>degree</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ab6f9abda4baef6ac9e61ef377c532279" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>grammaticalGender</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afa022505f197952b8cf9229e065089c2" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>grammaticalNumber</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a982fc33af45a08aa5a039dc4701c3689" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>person</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aaf6dd6658e2e9014ea0490d0edb6cec8" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>tense</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a47aea97a4bbd8cca9624b0143f639716" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>verbFormMood</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ac08b72f6837815d9d11d3cb0a36ed932" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>voice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

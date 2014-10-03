@@ -1,0 +1,104 @@
+.TH "lmf.src.utils.io" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.utils.io \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBopen_file\fP"
+.br
+.RI "\fIOpen file in specified mode (automatically decode file in unicode)\&. \fP"
+.ti -1c
+.RI "def \fBopen_read\fP"
+.br
+.RI "\fIOpen file in read mode (automatically decode file in unicode)\&. \fP"
+.ti -1c
+.RI "def \fBopen_write\fP"
+.br
+.RI "\fIOpen file in write mode (automatically decode file in unicode)\&. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "string \fBEOL\fP = '\\n'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.io\&.open_file (filename, mode, encoding = \fC'utf8'\fP)"
+
+.PP
+Open file in specified mode (automatically decode file in unicode)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP Full path to file to open\&. 
+.br
+\fImode\fP Read or write mode\&. 
+.br
+\fIencoding\fP Encoding mode\&. Default value is 'utf8'\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+File handler\&. 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file io\&.py\&.
+.SS "def lmf\&.src\&.utils\&.io\&.open_read (filename, encoding = \fCNone\fP)"
+
+.PP
+Open file in read mode (automatically decode file in unicode)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP Full path to file to open\&. 
+.br
+\fIencoding\fP Encoding mode\&. Default value is None\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+File handler\&. 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file io\&.py\&.
+.SS "def lmf\&.src\&.utils\&.io\&.open_write (filename, encoding = \fCNone\fP)"
+
+.PP
+Open file in write mode (automatically decode file in unicode)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfilename\fP Full path to file to open\&. 
+.br
+\fIencoding\fP Encoding mode\&. Default value is None\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+File handler\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file io\&.py\&.
+.SH "Variable Documentation"
+.PP 
+.SS "string lmf\&.src\&.utils\&.io\&.EOL = '\\n'"
+
+.PP
+Definition at line 9 of file io\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

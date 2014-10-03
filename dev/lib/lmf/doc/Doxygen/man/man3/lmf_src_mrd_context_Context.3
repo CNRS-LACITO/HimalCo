@@ -1,0 +1,109 @@
+.TH "lmf.src.mrd.context.Context" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.mrd.context.Context \- 
+.PP
+'Context is a class representing a text string that provides authentic context for the use of the word form managed by the Lemma\&. This class is to be distinguished from Sense Example\&.' (LMF)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "def \fB__del__\fP"
+.br
+.RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBget_speaker\fP"
+.br
+.RI "\fIGet speaker\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBlanguage\fP"
+.br
+.ti -1c
+.RI "\fBtype\fP"
+.br
+.ti -1c
+.RI "\fBtext_representation\fP"
+.br
+.RI "\fITextRepresentation instances are owned by \fBContext\fP There is zero to many TextRepresentation instances per \fBContext\fP\&. \fP"
+.ti -1c
+.RI "\fBtargets\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+'Context is a class representing a text string that provides authentic context for the use of the word form managed by the Lemma\&. This class is to be distinguished from Sense Example\&.' (LMF) 
+.PP
+Definition at line 6 of file context\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.__init__ (self)"
+
+.PP
+Constructor\&. \fBContext\fP instances are owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A \fBContext\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file context\&.py\&.
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.__del__ (self)"
+
+.PP
+Destructor\&. Release TextRepresentation instances\&. 
+.PP
+Definition at line 25 of file context\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_speaker (self)"
+
+.PP
+Get speaker\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBContext\fP private attribute '__speaker'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file context\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.mrd\&.context\&.Context\&.language"
+
+.PP
+Definition at line 14 of file context\&.py\&.
+.SS "lmf\&.src\&.mrd\&.context\&.Context\&.targets"
+
+.PP
+Definition at line 20 of file context\&.py\&.
+.SS "lmf\&.src\&.mrd\&.context\&.Context\&.text_representation"
+
+.PP
+TextRepresentation instances are owned by \fBContext\fP There is zero to many TextRepresentation instances per \fBContext\fP\&. 
+.PP
+Definition at line 18 of file context\&.py\&.
+.SS "lmf\&.src\&.mrd\&.context\&.Context\&.type"
+
+.PP
+Definition at line 15 of file context\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

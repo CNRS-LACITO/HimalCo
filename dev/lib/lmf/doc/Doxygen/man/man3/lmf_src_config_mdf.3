@@ -1,0 +1,158 @@
+.TH "lmf.src.config.mdf" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.config.mdf \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBmdf_lmf\fP"
+.br
+.RI "\fIMapping between MDF markers and LMF representation (input) \fP"
+.ti -1c
+.RI "list \fBmdf_order\fP = ['lx', 'ps', 'st', 'sy', 'an', 'cf']"
+.br
+.RI "\fIOrder in which MDF markers must be written (output) \fP"
+.ti -1c
+.RI "tuple \fBlmf_mdf\fP"
+.br
+.RI "\fIMapping between LMF representation and MDF markers (output) \fP"
+.ti -1c
+.RI "tuple \fBps_partOfSpeech\fP"
+.br
+.RI "\fIMapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input) \fP"
+.ti -1c
+.RI "tuple \fBmdf_semanticRelation\fP"
+.br
+.RI "\fIMapping between MDF markers and LMF semantic relation RelatedForm attribute value (input) \fP"
+.ti -1c
+.RI "tuple \fBpdl_paradigmLabel\fP"
+.br
+.RI "\fIMapping between 'pdl' MDF marker value and LMF paradigm label Paradigm attribute value (input) \fP"
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "tuple lmf\&.src\&.config\&.mdf\&.lmf_mdf"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "lx" : lambda lexical_entry: lexical_entry\&.get_lexeme(),
+3     "ps" : lambda lexical_entry: lexical_entry\&.get_partOfSpeech(),
+4     "st" : lambda lexical_entry: lexical_entry\&.get_status(),
+5     "sy" : lambda lexical_entry: lexical_entry\&.find_related_forms(mdf_semanticRelation["sy"]),
+6     "an" : lambda lexical_entry: lexical_entry\&.find_related_forms(mdf_semanticRelation["an"]),
+7     "cf" : lambda lexical_entry: lexical_entry\&.find_related_forms(mdf_semanticRelation["cf"])
+8 })
+.fi
+.PP
+Mapping between LMF representation and MDF markers (output) 
+.PP
+Definition at line 17 of file mdf\&.py\&.
+.SS "tuple lmf\&.src\&.config\&.mdf\&.mdf_lmf"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "lx" : lambda lx, lexical_entry: lexical_entry\&.set_lexeme(lx),
+3     "ps" : lambda ps, lexical_entry: lexical_entry\&.set_partOfSpeech(ps),
+4     "st" : lambda st, lexical_entry: lexical_entry\&.set_status(st),
+5     "sy" : lambda sy, lexical_entry: lexical_entry\&.create_and_add_related_form(sy, mdf_semanticRelation["sy"]),
+6     "an" : lambda an, lexical_entry: lexical_entry\&.create_and_add_related_form(an, mdf_semanticRelation["an"]),
+7     "cf" : lambda cf, lexical_entry: lexical_entry\&.create_and_add_related_form(cf, mdf_semanticRelation["cf"])
+8 })
+.fi
+.PP
+Mapping between MDF markers and LMF representation (input) 
+.PP
+Definition at line 4 of file mdf\&.py\&.
+.SS "list lmf\&.src\&.config\&.mdf\&.mdf_order = ['lx', 'ps', 'st', 'sy', 'an', 'cf']"
+
+.PP
+Order in which MDF markers must be written (output) 
+.PP
+Definition at line 14 of file mdf\&.py\&.
+.SS "tuple lmf\&.src\&.config\&.mdf\&.mdf_semanticRelation"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "sy" : "synonym",
+3     "an" : "antonym",
+4     "cf <hm>" : "homonym",
+5     "cf <et>" : "etymology",
+6     "se" : "subentry",
+7     "mn" : "main entry",
+8     "cf" : "simple link",
+9     "lf" : None,
+10     "ev" : None,
+11     "ee" : None,
+12     "en" : None,
+13     "er" : None
+14     # "derived form",
+15     # "root",
+16     # "stem",
+17     # "collocation"
+18 })
+.fi
+.PP
+Mapping between MDF markers and LMF semantic relation RelatedForm attribute value (input) 
+.PP
+Definition at line 52 of file mdf\&.py\&.
+.SS "tuple lmf\&.src\&.config\&.mdf\&.pdl_paradigmLabel"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "la"        : "lexicalized affix",
+3     "cc"        : "conjugation class",
+4     "past"      : "theme of the past",
+5     "comit"     : "comitative",
+6     "constr"    : "construction",
+7     "dir"       : "directional",
+8     "ir"        : "irregularity"
+9 })
+.fi
+.PP
+Mapping between 'pdl' MDF marker value and LMF paradigm label Paradigm attribute value (input) 
+.PP
+Definition at line 72 of file mdf\&.py\&.
+.SS "tuple lmf\&.src\&.config\&.mdf\&.ps_partOfSpeech"
+\fBInitial value:\fP
+.PP
+.nf
+1 = dict({
+2     "adj"       : "adjective",                  # adjective
+3     "adv"       : "adverb",                     # adverb(ial)
+4     "class"     : "classifier",                 # classifier (MDF)
+5     "clf"       : "classifier",                 # classifier (Leipzig)
+6     "cnj"       : "conjunction",                # conjunction
+7     "disc\&.PTCL" : "particle",                   # discourse particle
+8     "ideo"      : "ideophone",                  # ideophones
+9     "intj"      : "interjection",               # interjection
+10     "lnk"       : "linker",                     # linker
+11     "n"         : "noun",                       # noun
+12     "Np"        : "possessive pronouns",        # possessed nouns
+13     "neg"       : "negation",                   # negative
+14     "num"       : "numeral",                    # number
+15     "prep"      : "preposition",                # preposition
+16     "pro"       : "pronoun",                    # pronoun/pronominal
+17     "v"         : "verb",                       # verb
+18     "vi"        : "intransitive verb",          # intransitive verb
+19     "vi\&.s"      : "stative intransitive verb",  # stative intransitive verb
+20     "vr"        : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
+21     "vt"        : "transitive verb",            # transitive verb
+22     "vt/i"      : "bitransistive verb"          # ambitransitive verb
+23 })
+.fi
+.PP
+Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input) 
+.PP
+Definition at line 27 of file mdf\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

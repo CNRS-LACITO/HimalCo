@@ -1,0 +1,88 @@
+.TH "lmf.src.core.form.Form" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.core.form.Form \- 
+.PP
+'Form is an abstract class representing a lexeme, a morphological variant of a lexeme or a morph\&. The Form class allows subclasses\&.' (LMF)  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP"
+.br
+.RI "\fIAs \fBForm\fP is an abstract class, constructor raises an error\&. \fP"
+.ti -1c
+.RI "def \fB__del__\fP"
+.br
+.RI "\fIAs \fBForm\fP is an abstract class, desctructor raises an error\&. \fP"
+.ti -1c
+.RI "def \fB__new__\fP"
+.br
+.RI "\fIPrivate initialization called from \fBForm\fP subclasses\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBvariantForm\fP"
+.br
+.ti -1c
+.RI "\fBtype\fP"
+.br
+.ti -1c
+.RI "\fBform_representation\fP"
+.br
+.RI "\fIFormRepresentation instances are owned by \fBForm\fP subclasses There is zero to many FormRepresentation instances per \fBForm\fP subclass\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+'Form is an abstract class representing a lexeme, a morphological variant of a lexeme or a morph\&. The Form class allows subclasses\&.' (LMF) 
+.PP
+Definition at line 6 of file form\&.py\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.form\&.Form\&.__init__ (self)"
+
+.PP
+As \fBForm\fP is an abstract class, constructor raises an error\&. 
+.PP
+Definition at line 9 of file form\&.py\&.
+.SS "def lmf\&.src\&.core\&.form\&.Form\&.__del__ (self)"
+
+.PP
+As \fBForm\fP is an abstract class, desctructor raises an error\&. 
+.PP
+Definition at line 14 of file form\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.form\&.Form\&.__new__ (self)"
+
+.PP
+Private initialization called from \fBForm\fP subclasses\&. \fBForm\fP subinstances are owned by LexicalEntry\&. 
+.PP
+Definition at line 19 of file form\&.py\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "lmf\&.src\&.core\&.form\&.Form\&.form_representation"
+
+.PP
+FormRepresentation instances are owned by \fBForm\fP subclasses There is zero to many FormRepresentation instances per \fBForm\fP subclass\&. 
+.PP
+Definition at line 27 of file form\&.py\&.
+.SS "lmf\&.src\&.core\&.form\&.Form\&.type"
+
+.PP
+Definition at line 24 of file form\&.py\&.
+.SS "lmf\&.src\&.core\&.form\&.Form\&.variantForm"
+
+.PP
+Definition at line 23 of file form\&.py\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

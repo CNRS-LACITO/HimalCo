@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wordform',['WordForm',['../classsrc_1_1morphology_1_1word__form_1_1_word_form.html',1,'src::morphology::word_form']]]
+  ['textrepresentation',['TextRepresentation',['../classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html',1,'lmf::src::core::text_representation']]]
 ];

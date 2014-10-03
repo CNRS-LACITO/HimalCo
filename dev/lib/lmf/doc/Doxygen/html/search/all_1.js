@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['add_5flexical_5fentry',['add_lexical_entry',['../classsrc_1_1core_1_1lexicon_1_1_lexicon.html#ae07f5ea7bb47595d8f0559910663c66e',1,'src::core::lexicon::Lexicon']]],
-  ['anonymizationflag',['anonymizationFlag',['../classsrc_1_1resources_1_1human__resource_1_1_human_resource.html#ad0af6551d89a2adfb08459104f46afcd',1,'src::resources::human_resource::HumanResource']]],
-  ['anymacy',['anymacy',['../classsrc_1_1morphology_1_1word__form_1_1_word_form.html#aa82c3234c1c9f209b7b8d6b2e3c3c246',1,'src::morphology::word_form::WordForm']]],
-  ['audio',['Audio',['../classsrc_1_1resources_1_1audio_1_1_audio.html',1,'src::resources::audio']]],
+  ['add_5flexical_5fentry',['add_lexical_entry',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#aaa470820fbda4be04d6fe9139e761773',1,'lmf::src::core::lexicon::Lexicon']]],
+  ['add_5frelated_5fform',['add_related_form',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a9078d381fea92a4d1d3f57b391a2b5b7',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
+  ['anonymizationflag',['anonymizationFlag',['../classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource.html#af75d8c40ab421aea011a028c9ccda753',1,'lmf::src::resources::human_resource::HumanResource']]],
+  ['anymacy',['anymacy',['../classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form.html#aaf6096a08af3e92ad3878b68d2e136d3',1,'lmf::src::morphology::word_form::WordForm']]],
+  ['anymacy_5frange',['anymacy_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a28fddc4c01c49d3a0a5d2446ad9f6edd',1,'lmf::src::common::range']]],
+  ['audio',['audio',['../classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation.html#ac13f0605619b9bdc6b921ae19b39c068',1,'lmf::src::core::form_representation::FormRepresentation']]],
+  ['audio',['Audio',['../classlmf_1_1src_1_1resources_1_1audio_1_1_audio.html',1,'lmf::src::resources::audio']]],
   ['audio_2epy',['audio.py',['../audio_8py.html',1,'']]],
-  ['audiofileformat',['audioFileFormat',['../classsrc_1_1resources_1_1audio_1_1_audio.html#aadc41b28801de70ba866a40892dce32c',1,'src::resources::audio::Audio']]],
-  ['author',['author',['../classsrc_1_1core_1_1global__information_1_1_global_information.html#a75ba6ca3c99930f8b46906f7622c36aa',1,'src.core.global_information.GlobalInformation.author()'],['../classsrc_1_1resources_1_1material_1_1_material.html#a481f2b82f2fda15566b03d0d46daff53',1,'src.resources.material.Material.author()']]]
+  ['audiofileformat',['audioFileFormat',['../classlmf_1_1src_1_1resources_1_1audio_1_1_audio.html#a23a0ad9fcab348d29b306dd0c5f65736',1,'lmf::src::resources::audio::Audio']]],
+  ['author',['author',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#a96ffe5559235b6b6c681b45a61d697af',1,'lmf.src.core.global_information.GlobalInformation.author()'],['../classlmf_1_1src_1_1resources_1_1material_1_1_material.html#aef7b8711bf9663d23434fab0332d0824',1,'lmf.src.resources.material.Material.author()']]]
 ];

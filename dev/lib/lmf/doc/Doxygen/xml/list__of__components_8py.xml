@@ -2,18 +2,37 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="list__of__components_8py" kind="file">
     <compoundname>list_of_components.py</compoundname>
-    <innerclass refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components" prot="public">src::morphology::list_of_components::ListOfComponents</innerclass>
-    <innernamespace refid="namespacesrc_1_1morphology_1_1list__of__components">src::morphology::list_of_components</innernamespace>
+    <innerclass refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" prot="public">lmf::src::morphology::list_of_components::ListOfComponents</innerclass>
+    <innernamespace refid="namespacelmf_1_1src_1_1morphology_1_1list__of__components">lmf::src::morphology::list_of_components</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacesrc_1_1morphology_1_1list__of__components" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacelmf_1_1src_1_1morphology_1_1list__of__components" refkind="compound"><highlight class="comment">#!<sp/>/usr/bin/env<sp/>python</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3" refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref>():</highlight></codeline>
-<codeline lineno="4" refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components_1a52336fc93ba2acd8f1924ccc49abeb55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classsrc_1_1morphology_1_1list__of__components_1_1_list_of_components_1a52336fc93ba2acd8f1924ccc49abeb55" kindref="member">__init__</ref>(self):</highlight></codeline>
-<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@package<sp/>morphology</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref>():</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;<sp/>&quot;List<sp/>of<sp/>Components<sp/>is<sp/>a<sp/>class<sp/>representing<sp/>the<sp/>aggregative<sp/>aspect<sp/>of<sp/>a<sp/>multiword<sp/>expression<sp/>(MWE).<sp/>The<sp/>mechanism<sp/>can<sp/>also<sp/>be<sp/>applied<sp/>recursively,<sp/>so<sp/>that<sp/>an<sp/>MWE<sp/>way<sp/>be<sp/>comprised<sp/>of<sp/>components<sp/>that<sp/>are<sp/>themselves<sp/>MWEs.<sp/>This<sp/>class<sp/>is<sp/>used<sp/>in<sp/>the<sp/>morphological<sp/>pattern<sp/>and<sp/>MWE<sp/>pattern<sp/>packages.&quot;<sp/>(LMF)</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a2f5197e9468d65a9bda951b7cee8b922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a2f5197e9468d65a9bda951b7cee8b922" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Constructor.</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ListOfComponents<sp/>instance<sp/>is<sp/>owned<sp/>by<sp/>LexicalEntry.</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>@return<sp/>A<sp/>ListOfComponents<sp/>instance.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>Component<sp/>instances<sp/>are<sp/>owned<sp/>by<sp/>ListOfComponents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>There<sp/>are<sp/>two<sp/>or<sp/>more<sp/>Component<sp/>instances<sp/>per<sp/>ListOfComponents</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" kindref="member">component</ref><sp/>=<sp/>[]<sp/></highlight><highlight class="comment">#<sp/>ordered<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;!<sp/>@brief<sp/>Destructor.</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Release<sp/>Component<sp/>instances.</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>component<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" kindref="member">component</ref>:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>component</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>del<sp/>self.<ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" kindref="member">component</ref>[:]</highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py"/>
   </compounddef>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kind="class" prot="public">
+    <compoundname>lmf::src::resources::resource::Resource</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1adf841a9c1edc70040858112b7f144e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.resource.Resource.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>As <ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> is an abstract class, constructor raises an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1af3f1ceb63eb841d5bc2ce20df9c74d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.resource.Resource.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>As <ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> is an abstract class, desctructor raises an error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" bodystart="14" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1ae969204ff849acf51dcb4ae522d8914d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.resource.Resource.__call__</definition>
+        <argsstring></argsstring>
+        <name>__call__</name>
+        <briefdescription>
+<para>Private initialization called from <ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> subclasses. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> subinstances are owned by LexicalResource. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> is an abstract class representing a material or a human resource. </para>    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource" kindref="compound">Resource</ref> class allows subclasses. </para>    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/resource.py" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1ae969204ff849acf51dcb4ae522d8914d" prot="public" virt="non-virtual"><scope>lmf::src::resources::resource::Resource</scope><name>__call__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1af3f1ceb63eb841d5bc2ce20df9c74d7a" prot="public" virt="non-virtual"><scope>lmf::src::resources::resource::Resource</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1resource_1_1_resource_1adf841a9c1edc70040858112b7f144e3f" prot="public" virt="non-virtual"><scope>lmf::src::resources::resource::Resource</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

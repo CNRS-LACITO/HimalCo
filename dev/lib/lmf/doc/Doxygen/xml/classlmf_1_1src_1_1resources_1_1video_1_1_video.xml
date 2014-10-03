@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1resources_1_1video_1_1_video" kind="class" prot="public">
+    <compoundname>lmf::src::resources::video::Video</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Material</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a21f39ce29f1958b3c82169eabbffc34d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.video.Video::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a462c094b953b8c030b557184708222cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.video.Video.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref> instances are owned by ?. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="11" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a2926a640d348c5cadf03c67cba87de0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.video.Video.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="20" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" kindref="compound">Video</ref> is a Material subclass representing a video. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>lmf.src.resources.video.Video</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1video_1_1_video"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>Material</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="92">
+        <label>lmf.src.resources.video.Video</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1video_1_1_video"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Material</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/video.py" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a2926a640d348c5cadf03c67cba87de0a" prot="public" virt="non-virtual"><scope>lmf::src::resources::video::Video</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a462c094b953b8c030b557184708222cd" prot="public" virt="non-virtual"><scope>lmf::src::resources::video::Video</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a21f39ce29f1958b3c82169eabbffc34d" prot="public" virt="non-virtual"><scope>lmf::src::resources::video::Video</scope><name>description</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

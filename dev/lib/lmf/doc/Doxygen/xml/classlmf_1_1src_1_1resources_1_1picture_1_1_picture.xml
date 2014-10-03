@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kind="class" prot="public">
+    <compoundname>lmf::src::resources::picture::Picture</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Material</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a669715ddfa35b08171c493ac8f0b4468" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a0363561d74da7f2fd08b13b8b27c36cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a1611f370dd4b978d9ed7a0352bc79156" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1aac1448966226ee0d40b4aa756c33f7f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a47e1b58864e999a59dbeb80fdf779238" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1ac9b506362a054a04c2dfc776ba853762" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.picture.Picture::statement</definition>
+        <argsstring></argsstring>
+        <name>statement</name>
+        <briefdescription>
+<para>Statement instances are owned by <ref refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref> There is zero to many Statement instances per <ref refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a32a8f644e3c068d7e0e904ba6a484aa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.picture.Picture.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref> instances are owned by ?. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="11" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a9d1e78c17997e8cb029094adaffc904a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.picture.Picture.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para>Release Statement instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="27" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kindref="compound">Picture</ref> is a Material subclass representing a picture. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="60">
+        <label>lmf.src.resources.picture.Picture</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Material</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="62">
+        <label>lmf.src.resources.picture.Picture</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Material</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/picture.py" bodystart="8" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a9d1e78c17997e8cb029094adaffc904a" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a32a8f644e3c068d7e0e904ba6a484aa8" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a669715ddfa35b08171c493ac8f0b4468" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>filename</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a47e1b58864e999a59dbeb80fdf779238" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>format</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1aac1448966226ee0d40b4aa756c33f7f8" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>height</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a0363561d74da7f2fd08b13b8b27c36cb" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>reference</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1ac9b506362a054a04c2dfc776ba853762" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>statement</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture_1a1611f370dd4b978d9ed7a0352bc79156" prot="public" virt="non-virtual"><scope>lmf::src::resources::picture::Picture</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

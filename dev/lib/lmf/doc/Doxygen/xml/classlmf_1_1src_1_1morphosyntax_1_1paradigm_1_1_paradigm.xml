@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kind="class" prot="public">
+    <compoundname>lmf::src::morphosyntax::paradigm::Paradigm</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a5892a515d2311d4c03b180603a0d2929" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::paradigmLabel</definition>
+        <argsstring></argsstring>
+        <name>paradigmLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a2c706c0653324f536c9fc8b20d5dbf15" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::paradigm</definition>
+        <argsstring></argsstring>
+        <name>paradigm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a536c9155740d0363044389ce31dff090" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a7c9c944b764a0351f0e58234b48bdf86" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::morphology</definition>
+        <argsstring></argsstring>
+        <name>morphology</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a546af1d9fc21b3b1a6d102e39877a587" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a8d02c9b6280f80f00689dbb730c4f0d8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.morphosyntax.paradigm.Paradigm::__lexical_entry</definition>
+        <argsstring></argsstring>
+        <name>__lexical_entry</name>
+        <briefdescription>
+<para>Pointer to an existing LexicalEntry There is zero or one LexicalEntry pointer per <ref refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1ab0c529b6dfdc802436aaee80cc7a3f1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphosyntax.paradigm.Paradigm.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref> instances are owned by Sense. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="9" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a27ffcc1bdb76712e7d8b31de78412f8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphosyntax.paradigm.Paradigm.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aa9cc39604cd3b3d06e1d142016db3541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphosyntax.paradigm.Paradigm.get_lexical_entry</definition>
+        <argsstring></argsstring>
+        <name>get_lexical_entry</name>
+        <briefdescription>
+<para>Get pointed lexical entry. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref> private attribute &apos;__lexical_entry&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm" kindref="compound">Paradigm</ref> is a class representing a morphological paradigm. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphosyntax/paradigm.py" bodystart="6" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a27ffcc1bdb76712e7d8b31de78412f8a" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1ab0c529b6dfdc802436aaee80cc7a3f1a" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a8d02c9b6280f80f00689dbb730c4f0d8" prot="private" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>__lexical_entry</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aa9cc39604cd3b3d06e1d142016db3541" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>get_lexical_entry</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a536c9155740d0363044389ce31dff090" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a7c9c944b764a0351f0e58234b48bdf86" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>morphology</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a2c706c0653324f536c9fc8b20d5dbf15" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>paradigm</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a5892a515d2311d4c03b180603a0d2929" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>paradigmLabel</name></member>
+      <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a546af1d9fc21b3b1a6d102e39877a587" prot="public" virt="non-virtual"><scope>lmf::src::morphosyntax::paradigm::Paradigm</scope><name>targets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

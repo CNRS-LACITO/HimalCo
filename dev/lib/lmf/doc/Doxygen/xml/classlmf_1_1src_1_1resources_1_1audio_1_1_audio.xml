@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio" kind="class" prot="public">
+    <compoundname>lmf::src::resources::audio::Audio</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Material</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a7ece3b242eefb9b0da1f5cac2a5a0859" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::quality</definition>
+        <argsstring></argsstring>
+        <name>quality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a18d7a7940c8b55db6dbcbe64559cf68c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a5ff81f6d9d1f1d078a067f73594758f4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::startPosition</definition>
+        <argsstring></argsstring>
+        <name>startPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ad1640839eb1c58ca5ef9796eb7c0f559" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::durationOfEffectiveSpeech</definition>
+        <argsstring></argsstring>
+        <name>durationOfEffectiveSpeech</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1acedec7cf6764d262298924f7deb0841a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::externalReference</definition>
+        <argsstring></argsstring>
+        <name>externalReference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a23a0ad9fcab348d29b306dd0c5f65736" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::audioFileFormat</definition>
+        <argsstring></argsstring>
+        <name>audioFileFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ab8d1f2cfa0f42732f123177df3b56849" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.resources.audio.Audio::transcription</definition>
+        <argsstring></argsstring>
+        <name>transcription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ad160d4e583ac17c4825a0432d6715685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.audio.Audio.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio" kindref="compound">Audio</ref> instances are owned by FormRepresentation. <simplesect kind="return"><para>An <ref refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio" kindref="compound">Audio</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="11" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1af6706b4ce77d04e2c5d450b83d9586ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.resources.audio.Audio.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="26" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio" kindref="compound">Audio</ref> is a Material subclass representing an audio recording. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>lmf.src.resources.audio.Audio</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Material</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>lmf.src.resources.audio.Audio</label>
+        <link refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Material</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/resources/audio.py" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1af6706b4ce77d04e2c5d450b83d9586ae" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ad160d4e583ac17c4825a0432d6715685" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a23a0ad9fcab348d29b306dd0c5f65736" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>audioFileFormat</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ad1640839eb1c58ca5ef9796eb7c0f559" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>durationOfEffectiveSpeech</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1acedec7cf6764d262298924f7deb0841a" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>externalReference</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a7ece3b242eefb9b0da1f5cac2a5a0859" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>quality</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a18d7a7940c8b55db6dbcbe64559cf68c" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>sound</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1a5ff81f6d9d1f1d078a067f73594758f4" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>startPosition</name></member>
+      <member refid="classlmf_1_1src_1_1resources_1_1audio_1_1_audio_1ab8d1f2cfa0f42732f123177df3b56849" prot="public" virt="non-virtual"><scope>lmf::src::resources::audio::Audio</scope><name>transcription</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem" kind="class" prot="public">
+    <compoundname>lmf::src::morphology::stem::Stem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem_1a0bb6ab66b2421c82cd8dffdd3bbc765d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.stem.Stem.__init__</definition>
+        <argsstring></argsstring>
+        <name>__init__</name>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem" kindref="compound">Stem</ref> instances are owned by LexicalEntry. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem" kindref="compound">Stem</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" bodystart="11" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem_1a8081b50172bca2543d1a4989dbaf2f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.stem.Stem.__del__</definition>
+        <argsstring></argsstring>
+        <name>__del__</name>
+        <briefdescription>
+<para>Destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Stem is a Form subclass representing a morph, thus manages the sublexme parts&quot; (LMF) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="80">
+        <label>lmf.src.morphology.stem.Stem</label>
+        <link refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Form</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>lmf.src.morphology.stem.Stem</label>
+        <link refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Form</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/stem.py" bodystart="8" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem_1a8081b50172bca2543d1a4989dbaf2f32" prot="public" virt="non-virtual"><scope>lmf::src::morphology::stem::Stem</scope><name>__del__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem_1a0bb6ab66b2421c82cd8dffdd3bbc765d" prot="public" virt="non-virtual"><scope>lmf::src::morphology::stem::Stem</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
