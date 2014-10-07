@@ -25,9 +25,21 @@ def wrapper(func, *args, **kwds):
     @param args Arguments passed to 'func' as its first argument.
     @param kwds Other arguments passed to 'func'.
     """
+    ## Function variable
+    wrapper.lexical_resource = None
     ## As this is a user function, it is executed under 'try' statement to catch and handle exceptions
     try:
-        return func(*args, **kwds)
+        from core.lexical_resource import LexicalResource
+        if wrapper.lexical_resource is None:
+            # Create a Lexical Resource only once
+            wrapper.lexical_resource = LexicalResource()
+        object = func(*args, **kwds)
+        if object.__class__.__name__ == "LexicalResource":
+            return object
+        elif object.__class__.__name__ == "Lexicon":
+            # Attach lexicon to the lexical resource
+            wrapper.lexical_resource.add_lexicon(object)
+            return wrapper.lexical_resource
     except Error as exception:
         ## A library error has occured
         exception.handle()
@@ -38,31 +50,47 @@ def wrapper(func, *args, **kwds):
         raise
     else:
         ## Nominal case
-        print "else"
+        pass
     finally:
-        ## Set everything back to normal
-        # Release created objects if any
-        if 'lexicon' in locals():
-            del lexicon
+        ## Set everything back to normal and release created objects if any
+        pass
 
 def read_mdf(*args, **kwds):
-    lexicon = wrapper(mdf_read, *args, **kwds)
-    log("Successfully created %s LMF entries from MDF file '%s'." % (lexicon.count_lexical_entries(), args[0]))
-    return lexicon
+    # An MDF file contains one lexicon only, but wrapper() function encapsulates it into a lexical resource
+    lexical_resource = wrapper(mdf_read, *args, **kwds)
+    log("Successfully created %s LMF entries from MDF file '%s'." % (lexical_resource.lexicon[-1].count_lexical_entries(), args[0]))
+    return lexical_resource
 
 def read_xml_lmf(*args, **kwds):
-    lexicon = wrapper(lmf_read, *args, **kwds)
-    log("Successfully created %s LMF entries from MDF file '%s'." % (lexicon.count_lexical_entries(), args[0]))
-    return lexicon
+    # An XML LMF file contains one lexical resource, itself containing lexicon(s)
+    lexical_resource = wrapper(lmf_read, *args, **kwds)
+    # Count total number of entries to report to user
+    entries_nb = 0
+    for lexicon in lexical_resource.get_lexicons():
+        entries_nb += lexicon.count_lexical_entries()
+    log("Successfully created %s LMF entries from XML LMF file '%s'." % (entries_nb, args[0]))
+    return lexical_resource
 
 def write_mdf(*args, **kwds):
-    wrapper(mdf_write, *args, **kwds)
-    log("Successfully wrote %s LMF entries into MDF file '%s'." % (args[0].count_lexical_entries(), args[1]))
+    # As an MDF file can only contain one lexicon, create as many MDF files as lexicons in the lexical resource (TODO: rename files)
+    for lexicon in args[0].get_lexicons():
+        wrapper(mdf_write, lexicon, *args[1:], **kwds)
+        log("Successfully wrote %s LMF entries into MDF file '%s'." % (lexicon.count_lexical_entries(), args[1]))
 
 def write_xml_lmf(*args, **kwds):
+    # An XML LMF file contains one lexical resource, itself containing lexicon(s)
     wrapper(lmf_write, *args, **kwds)
-    log("Successfully wrote %s LMF entries into XML LMF file '%s'." % (args[0].count_lexical_entries(), args[1]))
+    # Count total number of entries to report to user
+    entries_nb = 0
+    for lexicon in args[0].get_lexicons():
+        entries_nb += lexicon.count_lexical_entries()
+    log("Successfully wrote %s LMF entries into XML LMF file '%s'." % (entries_nb, args[1]))
 
 def write_tex(*args, **kwds):
+    # A LaTeX file contains one or several lexicons and informations about the lexical resource
     wrapper(tex_write, *args, **kwds)
-    log("Successfully wrote %s LMF entries into LaTeX file '%s'." % (args[0].count_lexical_entries(), args[1]))
+    # Count total number of entries to report to user
+    entries_nb = 0
+    for lexicon in args[0].get_lexicons():
+        entries_nb += lexicon.count_lexical_entries()
+    log("Successfully wrote %s LMF entries into LaTeX file '%s'." % (entries_nb, args[1]))

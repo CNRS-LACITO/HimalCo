@@ -36,7 +36,7 @@ def build_sub_elements(object, element):
                     # If this is the case, create an XML element and restart the same operation recursively on this object
                     sub_element = SubElement(element, attr_value.__class__.__name__)
                     build_sub_elements(attr_value, sub_element)
-                elif attr_name in ["id", "targets"]:
+                elif attr_name in ["dtdVersion", "id", "targets"]:
                     # If this is a specical attribute ("id" or "targets"), it must be inserted as an XML element attribute
                     element.attrib.update({attr_name: str(attr_value)})
                 else:

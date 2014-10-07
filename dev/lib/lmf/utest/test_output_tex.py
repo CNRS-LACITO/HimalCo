@@ -2,6 +2,7 @@
 
 from startup import *
 from output.tex import compute_header, tex_write
+from core.lexical_resource import LexicalResource
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
@@ -41,10 +42,12 @@ class TestTexFunctions(unittest.TestCase):
         lexical_entry.lemma.lexeme = "hello"
         lexicon = Lexicon()
         lexicon.add_lexical_entry(lexical_entry)
+        lexical_resource = LexicalResource()
+        lexical_resource.add_lexicon(lexicon)
         # Write LaTeX file and test result
         utest_path = sys.path[0] + '/'
         tex_filename = utest_path + "output.tex"
-        tex_write(lexicon, tex_filename)
+        tex_write(lexical_resource, tex_filename)
         tex_file = open(tex_filename, "r")
         begin_lines = [EOL,
             "\\begin{document}" + EOL,
@@ -71,7 +74,7 @@ class TestTexFunctions(unittest.TestCase):
         })
         order = ["LexicalEntry.id", "Lemma.lexeme", "LexicalEntry.partOfSpeech", "LexicalEntry.status"]
         # Write LaTeX file and test result
-        tex_write(lexicon, tex_filename, None, lmf2tex, order)
+        tex_write(lexical_resource, tex_filename, None, lmf2tex, order)
         tex_file = open(tex_filename, "r")
         expected_lines = [EOL,
             "The lexical entry 0 is hello." + EOL,
@@ -83,6 +86,8 @@ class TestTexFunctions(unittest.TestCase):
         del lexical_entry.lemma
         lexical_entry.lemma = None
         del lexical_entry, lexicon
+        lexicon = None
+        del lexical_resource
         # Remove LaTeX file
         os.remove(tex_filename)
 

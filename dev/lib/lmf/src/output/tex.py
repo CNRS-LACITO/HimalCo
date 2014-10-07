@@ -33,14 +33,15 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order)
     tex_file.write("\\newpage" + EOL)
     tex_file.write("\\begin{multicols}{2}" + EOL)
     # For each element to write, get the corresponding LMF value
-    if object.__class__.__name__ == "Lexicon":
-        for lexical_entry in object.get_lexical_entries():
-            for attribute in order:
-                tex_file.write(lmf2tex[attribute](lexical_entry))
-            # Separate lexical entries from each others with a blank line
-            tex_file.write(EOL)
+    if object.__class__.__name__ == "LexicalResource":
+        for lexicon in object.get_lexicons():
+            for lexical_entry in lexicon.get_lexical_entries():
+                for attribute in order:
+                    tex_file.write(lmf2tex[attribute](lexical_entry))
+                # Separate lexical entries from each others with a blank line
+                tex_file.write(EOL)
     else:
-        raise OutputError(object, "Object to write must be a Lexicon.")
+        raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly
     tex_file.write("\end{multicols}" + EOL)
     tex_file.write("\end{document}" + EOL)

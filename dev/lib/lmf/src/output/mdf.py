@@ -9,7 +9,7 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
     @param object The LMF instance to convert into MDF output format.
     @param filename The name of the MDF file to write with full path, for instance 'user/output.txt'.
     @param lmf2mdf A Python dictionary describing the mapping between LMF representation and MDF markers. Default value is 'lmf_mdf' dictionary defined in 'src/config/mdf.py'. Please refer to it as an example.
-    @param order A Python list defining the order in which MDf markers must be written, for instance ["lx", "ps"]. Default value is 'mdf_order' list defined in 'src/config/mdf.py'.
+    @param order A Python list defining the order in which MDF markers must be written, for instance ["lx", "ps"]. Default value is 'mdf_order' list defined in 'src/config/mdf.py'.
     """
     mdf_file = open_write(filename)
     # For each MDF marker, get the corresponding LMF value

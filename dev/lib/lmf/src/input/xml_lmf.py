@@ -57,7 +57,7 @@ def factory(object_name, attributes):
 def xml_lmf_read(filename):
     """! @brief Read an XML LMF file.
     @param filename The name of the XML LMF file to read with full path, for instance 'user/input.xml'.
-    @return A Lexicon instance containing all lexical entries.
+    @return A Lexical Resource instance containing all lexicons.
     """
     root = parse_xml(filename)
     # Create an object instance corresponding to the XML root element
