@@ -1,0 +1,166 @@
+
+
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+\title{TAM in Japhug\footnote{
+} }
+\author{Guillaume Jacques}
+\maketitle
+%\linenumbers
+
+\subsubsection{Directional prefixes} \label{sec:directional}
+Most verbal forms in Japhug have a directional prefix that contains information on TAM, transitivity and  (in the case of motion and concrete action verbs) the direction of the action.
+
+With the exception of contracting verbs whose stem starts in \ipa{a--} and which present special alternations (see \citealt{jacques07passif} for more information), Japhug intransitive verbs have three series of prefixes (A, B and D) and transitive ones four series, as shown in Table \refb{tab:directional}. The distribution of these four series will be explained in more detail in section \refb{sec:finite.TAM}.
+
+\begin{table}[H]
+\caption{Directional prefixes in Japhug Rgyalrong} \label{tab:directional}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llllll}
+\toprule
+   &  	perfective  (A) &  	imperfective  (B)  &  	perfective 3$\rightarrow$3' (C)  &  	evidential  (D) \\  	
+   \midrule
+up   &  	\ipa{tɤ--}   &  	\ipa{tu--}   &  	\ipa{ta--}   &  	\ipa{to--}   \\  	
+down   &  	\ipa{pɯ--}   &  	\ipa{pjɯ--}   &  	\ipa{pa--}   &  	\ipa{pjɤ--}   \\  	
+upstream   &  	\ipa{lɤ--}   &  	\ipa{lu--}   &  	\ipa{la--}   &  	\ipa{lo--}   \\  	
+downstream   &  	\ipa{tʰɯ--}   &  	\ipa{cʰɯ--}   &  	\ipa{tʰa--}   &  	\ipa{cʰɤ--}   \\  	
+east   &  	\ipa{kɤ--}   &  	\ipa{ku--}   &  	\ipa{ka--}   &  	\ipa{ko--}   \\  	
+west   &  	\ipa{nɯ--}   &  	\ipa{ɲɯ--}   &  	\ipa{na--}   &  	\ipa{ɲɤ--}   \\  	
+no direction &\ipa{jɤ--}   &  	\ipa{ju--}   &  	\ipa{ja--}   &  	\ipa{jo--}   \\  	
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Most verbs have one intrinsic direction which is lexically determined. For instance, the verb \ipa{sat} `kill' selects the direction `down' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{pɯ-sat-a}, \textbf{imperfective} \ipa{pjɯ-sat}, \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{pa-sat} and \textbf{evidential} \ipa{pjɤ-sat}. 
+
+Some verbs may allow several directions with slightly different semantics. Thus, \ipa{ndza} `eat'   normally   selects the  `up' direction (\textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `he ate it'), but when applied to carnivorous animals we also find the `downstream' direction. This can lead to further aspectual distinctions. For instance, the direction `downstream', when used with stative verbs, indicates a progressive development. Footnote \refb{ft:tAme} discusses the use of different directional prefixes with the existential copula \ipa{me}.
+
+Verbs of motion and some verbs of concrete action can be associated with all seven series of prefixes to indicate the direction of the motion. The  `no direction' series of prefixes only occurs with motion verbs. 
+
+Only three verbs have defective paradigms and never occur with directional prefixes: the sensory existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist' and the verb \ipa{kɤtɯpa} `speak' (see the paradigm of the latter in \citealt[1215]{jacques12incorp}).
+
+\subsubsection{Stem alternation} \label{sec:stem}
+The existence of stem alternations in Rgyalrong was first reported by \citet{jackson00puxi}, who proposes to distinguish three stems: the base stem (stem 1), the perfective stem (stem 2) and the non stem (stem 3). Some varieties of Zbu Rgyalrong appear to have an additional progressive stem distinct from stem 2 in the progressive form (\citealt[352]{jacques04these}).
+
+
+In Kamnyu Japhug, only four verbs have a   perfective stem distinct from the base stem; the list is provided in Table \refb{tab:stem2}. 
+
+
+ \begin{table} 
+\caption{Stem 2 alternation in Japhug Rgyalrong} \label{tab:stem2} \centering
+\begin{tabular}{llllll}
+\toprule
+Stem 1 & meaning &Stem 2 \\
+\midrule
+\ipa{ɕe}& to go (vi)&  \ipa{ari} \\
+\ipa{sɯxɕe}& to sent (vt)  &\ipa{sɤɣri} \\
+\ipa{ɣi}& to come (vi)  &\ipa{ɣe} \\
+\ipa{ti}& to say (vt)  &\ipa{tɯt} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Stem 3 on the other hand is fully productive. The rules of vowel alternation in Table \refb{tab:stem3} apply to all finite transitive verbs in the forms \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3'; stem 3 does not appear in verb forms with the inverse marker (see \citealt{gongxun14agreement}). \citet[351-7]{jacques04these} provides a historical analysis of these alternations, and shows that they result from the fusion of the verb stem with two suffixes. %Some Japhug dialects present \ipa{--u} $\rightarrow$ \ipa{--ɯm} and  \ipa{--i} $\rightarrow$ \ipa{--ɯm} alternations.  
+
+ \begin{table} 
+\caption{Stem 3 alternation in Japhug Rgyalrong} \label{tab:stem3} \centering
+\begin{tabular}{llllll}
+\toprule
+Stem 1 & Stem 3 \\
+\midrule
+\ipa{--a} & \ipa{--e} \\
+\ipa{--u} & \ipa{--e} \\
+\ipa{--ɯ} & \ipa{--i} \\
+\ipa{--o} & \ipa{--ɤm} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Following the Leipzig glossing rules, we indicate stem 2 as [II] and stem 3 as [III] in the glosses in this paper.
+
+\subsubsection{Finite TAM categories} \label{sec:finite.TAM}
+
+There are nine basic finite TAM categories in Japhug, as represented in Table \refb{tab:finite.forms}. All finite forms except the factual require one and only one directional prefix. All forms can be correctly produced by combining the appropriate derivational prefixes and stems.\footnote{For the TAM categories requiring stem 3, it is restricted to  \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' forms; all other forms take the base stem.  The person affixes and the past transitive \ipa{--t} suffix are not discussed here; for  more information on this topic, see \citet{jacques10inverse}.}
+
+
+In the case of past imperfective \ipa{pɯ--}, evidential imperfective \ipa{pjɤ--}, testimonial \ipa{ɲɯ--} and present \ipa{ku--}, the direction that is lexically selected by the verb is neutralized. Note that the past imperfective marker \ipa{pɯ--} is formally identical to the perfective \ipa{pɯ--} `down' prefix, a feature found in all Rgyalrong languages (see \citealt{lin11direction}).
+
+The evidential and evidential imperfective forms are used with the circumfix \ipa{k--}...\ipa{--ci} in the case of verb forms whose stem begins in \ipa{a--} (including verbs with the progressive \ipa{asɯ--}).
+
+\begin{table}
+\caption{Finite verb categories in Japhug Rgyalrong} \label{tab:finite.forms} \centering
+\begin{tabular}{lllllll}
+\toprule
+&	&	stem&	prefixes\\
+\midrule
+factual&	\textsc{fact} &	1 or 3&	no prefix\\
+imperfective&	\textsc{ipfv} &	1 or 3&	B\\
+perfective&	\textsc{pfv} &	2&	A or C\\
+past imperfective&	\textsc{pst.ipfv} &	2&	\ipa{pɯ--}\\
+evidential&	\textsc{evd} &	1&	D\\
+evidential imperfective&	\textsc{evd.ipfv} &	1&	\ipa{pjɤ--}\\
+testimonial&	\textsc{testim} &	1 or 3&	\ipa{ɲɯ--}\\
+present&	\textsc{pres} &	1 or 3&	\ipa{ku--}\\
+irrealis&	\textsc{irr} &	1 or 3&	\ipa{a--} + A\\
+imperative&	\textsc{imp} &	1 or 3&	A\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In addition to the basic forms, there are periphrastic TAM categories combining one of the nine categories with the copulas (\ipa{ŋu} `be' and \ipa{maʁ} `not be').
+
+
+The past imperfective  and   evidential imperfective forms cannot be used with most dynamic verbs,\footnote{ See \citet{lin11direction} for a study of the past imperfective in Rgyalrong languages. } except in    several types of conditionals, in particular counterfactuals (see \refb{sec:real.conditional} and \refb{sec:counterfact}) and in combination with the progressive  \ipa{asɯ}--. Periphrastic past imperfective and evidential imperfective (combining a verb in the imperfective form with the copula \ipa{ŋu} `be' in the past imperfective \ipa{pɯ-ŋu} or evidential \ipa{pjɤ-ŋu}) are used in all other contexts with dynamic verbs. Example \refb{ex:pWNu} illustrates the use of the non-periphrastic past imperfective with the stative verb \ipa{xtɕi} `be small' constrating with  the periphrastic form of the dynamic verbs \ipa{sqa} `cook' and \ipa{lɤt} `throw, pour'.\footnote{Note also that the auxiliary only appears after the last verb in the past imperfective, see section \refb{sec:temporal.succession}. }
+
+\begin{exe}
+\ex \label{ex:pWNu}
+\gll
+\ipa{pɯ-kɯ-xtɕi}  	\ipa{ri}  	\ipa{tɕe,}  	\textbf{\ipa{ku-sqa-nɯ}}  	\ipa{tɕe}  	\ipa{ɯ-ci}  	\ipa{nɯnɯ}  	\ipa{tɯji}  	\ipa{ɯ-ŋgɯ}  	\ipa{tɤrɤku}  	\ipa{ɯ-taʁ}  	\textbf{\ipa{cʰɯ-lɤt-nɯ}}  	\textbf{\ipa{pɯ-ŋu}}  	\ipa{tɕe,}   \\
+\textsc{pst.ipfv-genr}:S/P-be.small  \textsc{loc} \textsc{lnk} \textsc{ipfv}-cook-\textsc{pl} \textsc{lnk} \textsc{3sg.poss}-water \textsc{dem} field \textsc{3sg}-inside crops \textsc{3sg}-on \textsc{ipfv:downstream}-throw-\textsc{pl} \textsc{pst.ipfv}-be \textsc{lnk}\\
+  \glt When we were small, (people) used to cook (Rhododendron leaves) and pour the juice on the crops (to kill bugs). (Rhododendron2 83)
+  \end{exe}  
+  
+ Japhug, as other Rgyalrong languages, has a clear tense distinction between past and factual in the imperfective (see \citealt{jackson00puxi}, \citealt{linyj03tense} and \citealt[371-392]{jacques04these}), but no grammaticalized future. 
+ 
+ Some clause linking constructions require a specific finite TAM form, in particular the  imperfective (with the postpostion \ipa{ɕɯŋgɯ}, see \refb{sec:precedence}), the past imperfective (in one of the counterfactual constructions, \refb{sec:counterfact}) and the perfective (in the iterative coincidence linking, \refb{sec:iterative}).
+  
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
