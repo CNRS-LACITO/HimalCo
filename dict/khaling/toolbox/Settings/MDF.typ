@@ -402,6 +402,24 @@
 \lng vernacular
 \-mkr
 
+\+mkr lxbhɛ̂mthinɛ
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
+\+mkr lxlɵ̂nkhʌnɛ
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
+\+mkr lxʔa‍̂nkhʌnɛ
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr lz
 \nam *
 \lng English
