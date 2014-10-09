@@ -46,7 +46,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.creationDate, date)
         
     def test_get_creationDate(self):
-        self.assertEqual(self.global_information.get_creationDate(), self.global_information.creationDate)
+        self.assertIs(self.global_information.get_creationDate(), self.global_information.creationDate)
 
     def test_set_lastUpdate(self):
         date = "2014-10-08"
@@ -54,7 +54,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.lastUpdate, date)
 
     def test_get_lastUpdate(self):
-        self.assertEqual(self.global_information.get_lastUpdate(), self.global_information.lastUpdate)
+        self.assertIs(self.global_information.get_lastUpdate(), self.global_information.lastUpdate)
 
     def test_set_author(self):
         author = "My Name"
@@ -62,7 +62,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.author, author)
 
     def test_get_author(self):
-        self.assertEqual(self.global_information.get_author(), self.global_information.author)
+        self.assertIs(self.global_information.get_author(), self.global_information.author)
 
     def test_set_description(self):
         descr = "This is a short description of the lexical resource."
@@ -70,7 +70,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.description, descr)
 
     def test_get_description(self):
-        self.assertEqual(self.global_information.get_description(), self.global_information.description)
+        self.assertIs(self.global_information.get_description(), self.global_information.description)
 
     def test_compute_bibliographicCitation(self):
         self.global_information.author = "CNRS"
@@ -80,7 +80,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.bibliographicCitation, "Online dictionaries, CNRS, 2014")
 
     def test_get_bibliographicCitation(self):
-        self.assertEqual(self.global_information.get_bibliographicCitation(), self.global_information.bibliographicCitation)
+        self.assertIs(self.global_information.get_bibliographicCitation(), self.global_information.bibliographicCitation)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestGlobalInformationFunctions)
 

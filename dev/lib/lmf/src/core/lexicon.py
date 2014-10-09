@@ -8,14 +8,14 @@ from utils.error_handling import Warning
 class Lexicon():
     """! "Lexicon is a class containing all the lexical entries of a given language within the entire resource." (LMF)
     """
-    def __init__(self):
+    def __init__(self, id=None):
         """! @brief Constructor.
         Lexicon instances are owned by LexicalResource.
         @return A Lexicon instance.
         """
+        self.set_id(id)
         self.language = None
         self.languageScript = None
-        self.id = None
         self.label = None
         self.lexiconType = None
         self.entrySource = None
@@ -31,6 +31,96 @@ class Lexicon():
         for lexical_entry in self.lexical_entry:
             del lexical_entry
         del self.lexical_entry[:]
+
+    def set_id(self, id):
+        """! @brief Set lexicon identifier.
+        @param id The identifier to set.
+        @return Lexicon instance.
+        """
+        self.id = id
+        return self
+
+    def get_id(self):
+        """! @brief Get identifier.
+        @return Lexicon attribute 'id'.
+        """
+        return self.id
+
+    def set_entrySource(self, entry_source):
+        """! @brief Set lexicon entry source.
+        @param entry_source The entry source to set.
+        @return Lexicon instance.
+        """
+        self.entrySource = entry_source
+        return self
+
+    def get_entrySource(self):
+        """! @brief Get entry source.
+        @return Lexicon attribute 'entrySource'.
+        """
+        return self.entrySource
+
+    def set_language(self, language):
+        """! @brief Set lexicon language.
+        @param language The language to set.
+        @return Lexicon instance.
+        """
+        self.language = language
+        return self
+
+    def get_language(self):
+        """! @brief Get language.
+        @return Lexicon attribute 'language'.
+        """
+        return self.language
+
+    def set_languageScript(self, language_script):
+        """! @brief Set lexicon language script.
+        @param language_script The language script to set.
+        @return Lexicon instance.
+        """
+        self.languageScript = language_script
+        return self
+
+    def get_languageScript(self):
+        """! @brief Get language script.
+        @return Lexicon attribute 'languageScript'.
+        """
+        return self.languageScript
+
+    def set_label(self, label):
+        """! @brief Set lexicon label.
+        @param label The label to set.
+        @return Lexicon instance.
+        """
+        self.label = label
+        return self
+
+    def get_label(self):
+        """! @brief Get label.
+        @return Lexicon attribute 'label'.
+        """
+        return self.label
+
+    def set_lexiconType(self, lexicon_type):
+        """! @brief Set lexicon type.
+        @param lexicon_type The lexicon type to set.
+        @return Lexicon instance.
+        """
+        self.lexiconType = lexicon_type
+        return self
+
+    def get_lexiconType(self):
+        """! @brief Get lexicon type.
+        @return Lexicon attribute 'lexiconType'.
+        """
+        return self.lexiconType
+
+    def set_vowelHarmony(self, vowel_harmony):
+        raise NotImplementedError
+
+    def get_vowelHarmony(self):
+        raise NotImplementedError
 
     def get_lexical_entries(self):
         """! @brief Get all lexical entries maintained by the lexicon.

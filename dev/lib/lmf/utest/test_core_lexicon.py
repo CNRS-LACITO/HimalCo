@@ -26,6 +26,70 @@ class TestLexiconFunctions(unittest.TestCase):
         self.assertIsNone(self.lexicon.vowelHarmony)
         self.assertListEqual(self.lexicon.lexical_entry, [])
 
+    def test_set_id(self):
+        id = "English lexicon"
+        self.assertEqual(self.lexicon.set_id(id), self.lexicon)
+        self.assertEqual(self.lexicon.id, id)
+
+    def test_get_id(self):
+        self.assertIs(self.lexicon.get_id(), self.lexicon.id)
+
+    def test_set_language(self):
+        language = "eng"
+        self.assertEqual(self.lexicon.set_language(language), self.lexicon)
+        self.assertEqual(self.lexicon.language, language)
+
+    def test_get_language(self):
+        self.assertIs(self.lexicon.get_language(), self.lexicon.language)
+
+    def test_set_languageScript(self):
+        script = "latn"
+        self.assertEqual(self.lexicon.set_languageScript(script), self.lexicon)
+        self.assertEqual(self.lexicon.languageScript, script)
+
+    def test_get_languageScript(self):
+        self.assertIs(self.lexicon.get_languageScript(), self.lexicon.languageScript)
+
+    def test_set_label(self):
+        label = "online dictionary"
+        self.assertEqual(self.lexicon.set_label(label), self.lexicon)
+        self.assertEqual(self.lexicon.label, label)
+
+    def test_get_label(self):
+        self.assertIs(self.lexicon.get_label(), self.lexicon.label)
+
+    def test_set_lexiconType(self):
+        type = "bilingual dictionary"
+        self.assertEqual(self.lexicon.set_lexiconType(type), self.lexicon)
+        self.assertEqual(self.lexicon.lexiconType, type)
+
+    def test_get_lexiconType(self):
+        self.assertIs(self.lexicon.get_lexiconType(), self.lexicon.lexiconType)
+
+    def test_set_entrySource(self):
+        source = "test.txt"
+        self.assertEqual(self.lexicon.set_entrySource(source), self.lexicon)
+        self.assertEqual(self.lexicon.entrySource, source)
+
+    def test_get_entrySource(self):
+        self.assertIs(self.lexicon.get_entrySource(), self.lexicon.entrySource)
+
+    def test_set_vowelHarmony(self):
+        test = False
+        try:
+            self.lexicon.set_vowelHarmony(None)
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
+
+    def test_get_vowelHarmony(self):
+        test = False
+        try:
+            self.lexicon.get_vowelHarmony()
+        except NotImplementedError:
+            test = True
+        self.assertTrue(test)
+
     def test_get_lexical_entries(self):
         # Create lexical entries
         entry1 = LexicalEntry()

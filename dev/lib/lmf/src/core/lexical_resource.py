@@ -9,11 +9,11 @@ from utils.error_handling import Error
 class LexicalResource():
     """! "Lexical Resource is a class representing the entire resource and is a container for one or more lexicons. There is only one Lexical Resource instance." (LMF)
     """
-    def __init__(self):
+    def __init__(self, dtd_version=16):
         """! @brief Constructor.
         @return A LexicalResource instance.
         """
-        self.dtdVersion = 16
+        self.dtdVersion = dtd_version
         ## GlobalInformation instance is owned by LexicalResource
         # There is one GlobalInformation for one LexicalResource
         self.global_information = GlobalInformation()
@@ -58,6 +58,15 @@ class LexicalResource():
         """
         self.lexicon.remove(lexicon)
         return self
+
+    def get_lexicon(self, id):
+        """Retrieve a lexicon from its identifier.
+        @param id The identifier of the lexicon to retrieve.
+        @result A Lexicon instance, or None if not found.
+        """
+        for lexicon in self.get_lexicons():
+            if lexicon.id == id:
+                return lexicon
 
     def set_creationDate(self, date):
         """! @brief Set creation date.

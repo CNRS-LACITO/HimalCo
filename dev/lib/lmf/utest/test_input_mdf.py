@@ -36,7 +36,10 @@ class TestMdfFunctions(unittest.TestCase):
             "st" : lambda st, lexical_entry: lexical_entry.set_partOfSpeech(st)
         })
         # Read MDF file and test result
-        lexicon = mdf_read(mdf_filename, mdf2lmf)
+        id = "testing lexicon"
+        lexicon = mdf_read(mdf_filename, mdf2lmf, id)
+        self.assertEqual(lexicon.get_id(), id)
+        self.assertEqual(lexicon.get_entrySource(), mdf_filename)
         entry = lexicon.lexical_entry[0]
         self.assertEqual(entry.get_lexeme(), "hello")
         self.assertEqual(entry.get_partOfSpeech(), "draft")

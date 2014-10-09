@@ -40,7 +40,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.partOfSpeech, part_of_speech)
 
     def test_get_partOfSpeech(self):
-        self.assertEqual(self.lexical_entry.get_partOfSpeech(), self.lexical_entry.partOfSpeech)
+        self.assertIs(self.lexical_entry.get_partOfSpeech(), self.lexical_entry.partOfSpeech)
 
     def test_set_status(self):
         status = "draft"
@@ -48,10 +48,10 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.status, status)
 
     def test_get_status(self):
-        self.assertEqual(self.lexical_entry.get_status(), self.lexical_entry.status)
+        self.assertIs(self.lexical_entry.get_status(), self.lexical_entry.status)
 
     def test_get_id(self):
-        self.assertEqual(self.lexical_entry.get_id(), self.lexical_entry.id)
+        self.assertIs(self.lexical_entry.get_id(), self.lexical_entry.id)
 
     def test_set_lexeme(self):
         lexeme = "hello"
