@@ -87,7 +87,7 @@ mdf_lmf = dict({
     "sd" : lambda sd, lexical_entry: None,
     "is" : lambda IS, lexical_entry: None, # 'is' is a keyword in Python
     "th" : lambda th, lexical_entry: None,
-    "bb" : lambda bb, lexical_entry: None,
+    "bb" : lambda bb, lexical_entry: lexical_entry.set_bibliography(bb),
     "pc" : lambda pc, lexical_entry: None,
     "nt" : lambda nt, lexical_entry: None,
     "np" : lambda np, lexical_entry: None,
@@ -291,7 +291,7 @@ lmf_mdf = dict({
     "sd" : lambda lexical_entry: None,
     "is" : lambda lexical_entry: None,
     "th" : lambda lexical_entry: None,
-    "bb" : lambda lexical_entry: None,
+    "bb" : lambda lexical_entry: lexical_entry.get_bibliography(),
     "pc" : lambda lexical_entry: None,
     "nt" : lambda lexical_entry: None,
     "np" : lambda lexical_entry: None,

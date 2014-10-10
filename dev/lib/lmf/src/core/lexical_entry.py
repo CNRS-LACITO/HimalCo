@@ -139,6 +139,20 @@ class LexicalEntry():
         """
         return self.homonymNumber
 
+    def set_bibliography(self, bibliography):
+        """! @brief Set lexical entry bibliography.
+        @param bibliography The bibliography to set.
+        @return LexicalEntry instance.
+        """
+        self.bibliography = bibliography
+        return self
+
+    def get_bibliography(self):
+        """! @brief Get lexical entry bibliography.
+        @return LexicalEntry attribute 'bibliography'.
+        """
+        return self.bibliography
+
     def get_id(self):
         """! @brief Get Unique IDentifier.
         @return LexicalEntry attribute 'id'.

@@ -67,12 +67,20 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIs(self.lexical_entry.get_date(), self.lexical_entry.date)
 
     def test_set_homonymNumber(self):
-        nb = 3
+        nb = "3"
         self.assertEqual(self.lexical_entry.set_homonymNumber(nb), self.lexical_entry)
         self.assertEqual(self.lexical_entry.homonymNumber, nb)
 
     def test_get_homonymNumber(self):
         self.assertIs(self.lexical_entry.get_homonymNumber(), self.lexical_entry.homonymNumber)
+
+    def test_set_bibliography(self):
+        biblio = "212"
+        self.assertEqual(self.lexical_entry.set_bibliography(biblio), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.bibliography, biblio)
+
+    def test_get_bibliography(self):
+        self.assertIs(self.lexical_entry.get_bibliography(), self.lexical_entry.bibliography)
 
     def test_get_id(self):
         self.assertIs(self.lexical_entry.get_id(), self.lexical_entry.id)
