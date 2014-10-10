@@ -34,6 +34,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             if marker == "lx":
                 # Compute a unique identifier
                 occurrence_nb = 1
+                # Python equivalent of do...while loop
                 while True:
                     uid = value + "_" + str(occurrence_nb)
                     # If already taken, increment it

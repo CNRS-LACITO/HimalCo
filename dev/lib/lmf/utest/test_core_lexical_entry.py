@@ -66,6 +66,14 @@ class TestLexicalEntryFunctions(unittest.TestCase):
     def test_get_date(self):
         self.assertIs(self.lexical_entry.get_date(), self.lexical_entry.date)
 
+    def test_set_homonymNumber(self):
+        nb = 3
+        self.assertEqual(self.lexical_entry.set_homonymNumber(nb), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.homonymNumber, nb)
+
+    def test_get_homonymNumber(self):
+        self.assertIs(self.lexical_entry.get_homonymNumber(), self.lexical_entry.homonymNumber)
+
     def test_get_id(self):
         self.assertIs(self.lexical_entry.get_id(), self.lexical_entry.id)
 

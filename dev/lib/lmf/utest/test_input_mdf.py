@@ -20,14 +20,14 @@ class TestMdfFunctions(unittest.TestCase):
         utest_path = sys.path[0] + '/'
         mdf_filename = utest_path + "mdf_input.txt"
         mdf_file = open(mdf_filename, "w+")
-        mdf_file.write("\\lx hello" + EOL + "\\ps toto" + EOL + "\\st draft" + EOL)
+        mdf_file.write("\\lx hello" + EOL + "\\ps noun" + EOL + "\\st verb" + EOL)
         mdf_file.close()
         # Read MDF file and test result
         lexicon = mdf_read(mdf_filename)
         entry = lexicon.lexical_entry[0]
         self.assertEqual(entry.get_lexeme(), "hello")
-        self.assertEqual(entry.get_partOfSpeech(), "toto")
-        self.assertEqual(entry.get_status(), "draft")
+        self.assertEqual(entry.get_partOfSpeech(), "noun")
+        self.assertEqual(entry.get_status(), "verb")
         del entry, lexicon
         # Customize mapping
         mdf2lmf = dict({
@@ -43,8 +43,8 @@ class TestMdfFunctions(unittest.TestCase):
         entry = lexicon.lexical_entry[0]
         self.assertEqual(entry.get_id(), "hello_1")
         self.assertEqual(entry.get_lexeme(), "hello")
-        self.assertEqual(entry.get_partOfSpeech(), "draft")
-        self.assertEqual(entry.get_status(), "toto")
+        self.assertEqual(entry.get_partOfSpeech(), "verb")
+        self.assertEqual(entry.get_status(), "noun")
         del entry, lexicon
         # Remove MDF file
         os.remove(mdf_filename)

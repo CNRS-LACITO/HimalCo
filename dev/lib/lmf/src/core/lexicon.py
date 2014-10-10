@@ -185,16 +185,32 @@ class Lexicon():
         Fill the private attribute '__lexicalEntry' of each RelatedForm instance for all lexical entries.
         @return Lexicon instance.
         """
+        from string import digits
         for lexical_entry in self.get_lexical_entries():
             for related_form in lexical_entry.get_related_forms():
                 # From RelatedForm targets attribute, retrieve the pointed LexicalEntry instance
-                found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_form.get_lexeme())
+                related_lexeme = related_form.get_lexeme()
+                # Check if there is an homonym number at the end of the related lexeme
+                related_homonym_number = None
+                if related_lexeme[-1] in digits:
+                    related_homonym_number = related_lexeme[-1]
+                    related_lexeme = related_lexeme[:-1]
+                found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_lexeme)
                 if len(found_entry) < 1:
-                    # No lexical entry with this lexeme exists.
-                    print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_form.get_lexeme(), lexical_entry.get_lexeme()))
+                    # No lexical entry with this lexeme exists
+                    print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme()))
                 elif len(found_entry) > 1:
-                    # Several lexical entries with this lexeme exist.
-                    print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly." % related_form.get_lexeme())
+                    # Several lexical entries with this lexeme exist => consider homonym number if any
+                    related_homonym = []
+                    if related_homonym_number is not None:
+                        for related_entry in found_entry:
+                            if related_entry.get_homonymNumber() == related_homonym_number:
+                                related_homonym.append(related_entry)
+                    if len(related_homonym) != 1:
+                        print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme)
+                    else:
+                        # Save the found lexical entry
+                        related_form.set_lexical_entry(related_homonym[0])
                 else:
                     # Save the found lexical entry
                     related_form.set_lexical_entry(found_entry[0])

@@ -81,7 +81,9 @@ class LexicalEntry():
         # Check part of speech value
         if part_of_speech not in partOfSpeech_range:
             # Try with converted value from MDF to LMF
-            if ps_partOfSpeech[part_of_speech] not in partOfSpeech_range:
+            try:
+                ps_partOfSpeech[part_of_speech]
+            except KeyError:
                 raise Error("Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (part_of_speech, self.get_lexeme()))
             else:
                 self.partOfSpeech = ps_partOfSpeech[part_of_speech]
@@ -122,6 +124,20 @@ class LexicalEntry():
         @return LexicalEntry attribute 'date'.
         """
         return self.date
+
+    def set_homonymNumber(self, homonym_number):
+        """! @brief Set lexical entry homonym number.
+        @param homonym_number The homonym number to set.
+        @return LexicalEntry instance.
+        """
+        self.homonymNumber = homonym_number
+        return self
+
+    def get_homonymNumber(self):
+        """! @brief Get lexical entry homonym number.
+        @return LexicalEntry attribute 'homonymNumber'.
+        """
+        return self.homonymNumber
 
     def get_id(self):
         """! @brief Get Unique IDentifier.

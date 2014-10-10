@@ -186,9 +186,9 @@ class TestLexiconFunctions(unittest.TestCase):
         # Add entries to the lexicon
         self.lexicon.lexical_entry = [entry1, entry2]
         # Test check cross references
-        self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
-        self.assertEqual(entry1.related_form[0].get_lexical_entry(), entry2)
-        self.assertEqual(entry2.related_form[0].get_lexical_entry(), entry1)
+        self.assertIs(self.lexicon.check_cross_references(), self.lexicon)
+        self.assertIs(entry1.related_form[0].get_lexical_entry(), entry2)
+        self.assertIs(entry2.related_form[0].get_lexical_entry(), entry1)
         # Test warning case: entry not found
         entry3 = LexicalEntry().set_lexeme("hello").create_and_add_related_form("world", "main entry")
         self.lexicon.lexical_entry.append(entry3)
@@ -196,12 +196,19 @@ class TestLexiconFunctions(unittest.TestCase):
         # Retrieve nominal case
         entry4 = LexicalEntry().set_lexeme("world")
         self.lexicon.lexical_entry.append(entry4)
-        self.assertEqual(self.lexicon.check_cross_references(), self.lexicon)
-        self.assertEqual(entry3.related_form[0].get_lexical_entry(), entry4)
+        self.assertIs(self.lexicon.check_cross_references(), self.lexicon)
+        self.assertIs(entry3.related_form[0].get_lexical_entry(), entry4)
         # Test warning case: several entries found
         entry5 = LexicalEntry().set_lexeme("world")
         self.lexicon.lexical_entry.append(entry5)
         self.lexicon.check_cross_references()
+        # Test check cross references with homonym number
+        entry3.related_form[0].set_lexical_entry(None)
+        entry3.related_form[0].targets = "world2"
+        entry4.homonymNumber = "1"
+        entry5.homonymNumber = "2"
+        self.assertIs(self.lexicon.check_cross_references(), self.lexicon)
+        self.assertIs(entry3.related_form[0].get_lexical_entry(), entry5)
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2, entry3, entry4, entry5

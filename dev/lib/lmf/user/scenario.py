@@ -8,7 +8,8 @@ from startup import *
 from na import mdf2lmf
 
 # Read MDF file and set lexicon identifier
-input_lexical_resource = lmf.read_mdf(user_path + "input.txt", mdf2lmf, id="short example")
+#input_lexical_resource = lmf.read_mdf(user_path + "input.txt", mdf2lmf, id="short example")
+input_lexical_resource = lmf.read_mdf(user_path + "input.txt", id="short example")
 # Set lexicon attributes
 input_lexical_resource.get_lexicon("short example").set_label("test online dictionary").set_language("eng").set_languageScript("latn").set_lexiconType("bilingual dictionary na-eng")
 
