@@ -7,11 +7,12 @@ mdf_lmf = dict({
     "st" : lambda st, lexical_entry: lexical_entry.set_status(st),
     "sy" : lambda sy, lexical_entry: lexical_entry.create_and_add_related_form(sy, mdf_semanticRelation["sy"]),
     "an" : lambda an, lexical_entry: lexical_entry.create_and_add_related_form(an, mdf_semanticRelation["an"]),
-    "cf" : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf, mdf_semanticRelation["cf"])
+    "cf" : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf, mdf_semanticRelation["cf"]),
+    "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt)
 })
 
 ## Order in which MDF markers must be written (output)
-mdf_order = ["lx", "ps", "st", "sy", "an", "cf"]
+mdf_order = ["lx", "ps", "st", "sy", "an", "cf", "dt"]
 
 ## Mapping between LMF representation and MDF markers (output)
 lmf_mdf = dict({
@@ -20,7 +21,8 @@ lmf_mdf = dict({
     "st" : lambda lexical_entry: lexical_entry.get_status(),
     "sy" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["sy"]),
     "an" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["an"]),
-    "cf" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["cf"])
+    "cf" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["cf"]),
+    "dt" : lambda lexical_entry: lexical_entry.get_date()
 })
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)

@@ -194,7 +194,7 @@ class Lexicon():
                     print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_form.get_lexeme(), lexical_entry.get_lexeme()))
                 elif len(found_entry) > 1:
                     # Several lexical entries with this lexeme exist.
-                    print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly." % lexical_entry.get_lexeme())
+                    print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly." % related_form.get_lexeme())
                 else:
                     # Save the found lexical entry
                     related_form.set_lexical_entry(found_entry[0])

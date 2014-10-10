@@ -5,6 +5,9 @@
 
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
+from common.range import partOfSpeech_range
+from utils.error_handling import Error
+from config.mdf import ps_partOfSpeech
 
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
@@ -75,6 +78,14 @@ class LexicalEntry():
         @param part_of_speech The grammatical category to set.
         @return LexicalEntry instance.
         """
+        # Check part of speech value
+        if part_of_speech not in partOfSpeech_range:
+            # Try with converted value from MDF to LMF
+            if ps_partOfSpeech[part_of_speech] not in partOfSpeech_range:
+                raise Error("Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (part_of_speech, self.get_lexeme()))
+            else:
+                self.partOfSpeech = ps_partOfSpeech[part_of_speech]
+                return self
         self.partOfSpeech = part_of_speech
         return self
 
@@ -97,6 +108,20 @@ class LexicalEntry():
         @return LexicalEntry attribute 'status'.
         """
         return self.status
+
+    def set_date(self, date):
+        """! @brief Set lexical entry date.
+        @param status The date to set.
+        @return LexicalEntry instance.
+        """
+        self.date = date
+        return self
+
+    def get_date(self):
+        """! @brief Get lexical entry date.
+        @return LexicalEntry attribute 'date'.
+        """
+        return self.date
 
     def get_id(self):
         """! @brief Get Unique IDentifier.

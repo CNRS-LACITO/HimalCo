@@ -7,6 +7,7 @@ from config.mdf import mdf_lmf
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from utils.io import open_read, EOL
+from utils.error_handling import Warning, Error
 
 def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
     """! @brief Read an MDF file.
@@ -23,7 +24,6 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
     lexicon = Lexicon(id)
     # Add each lexical entry to the lexicon
     current_entry = None
-    uid = 0
     for line in mdf_file.readlines():
         # Do not parse empty lines
         if line != EOL:
@@ -32,12 +32,26 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             value = result.group(2)
             # 'lx' marker indicates a new entry
             if marker == "lx":
-                # Create a new entry and add it to the lexicon
-                uid += 1
-                current_entry = LexicalEntry(uid)
+                # Compute a unique identifier
+                occurrence_nb = 1
+                while True:
+                    uid = value + "_" + str(occurrence_nb)
+                    # If already taken, increment it
+                    if lexicon.find_lexical_entries(lambda lexical_entry: lexical_entry.get_id() == uid) != []:
+                        occurrence_nb += 1
+                    else:
+                        # Create a new entry
+                        current_entry = LexicalEntry(uid)
+                        break
+                # Add it to the lexicon
                 lexicon.add_lexical_entry(current_entry)
             # Map MDF marker and value to LMF representation
-            mdf2lmf[marker](value, current_entry)
+            try:
+                mdf2lmf[marker](value, current_entry)
+            except KeyError:
+                print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme()))
+            except Error as exception:
+                exception.handle()
     mdf_file.close()
     # Verify lexicon coherence
     lexicon.check_cross_references()

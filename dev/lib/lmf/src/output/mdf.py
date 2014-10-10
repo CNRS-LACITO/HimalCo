@@ -19,7 +19,8 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
                 value = lmf2mdf[marker](lexical_entry)
                 if type(value) is not list:
                     # Write the MDF output as follows: "\mdf_marker lmf_value"
-                    mdf_file.write("\\" + marker + " " + value + EOL)
+                    if value is not None:
+                        mdf_file.write("\\" + marker + " " + value + EOL)
                 else:
                     # Create a line for each value
                     for item in value:

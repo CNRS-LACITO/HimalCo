@@ -4,6 +4,7 @@ from startup import *
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
+from utils.error_handling import Error
 
 ## Test LexicalEntry class
 
@@ -38,6 +39,13 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         part_of_speech = "verb"
         self.assertEqual(self.lexical_entry.set_partOfSpeech(part_of_speech), self.lexical_entry)
         self.assertEqual(self.lexical_entry.partOfSpeech, part_of_speech)
+        # Test error case
+        test = False
+        try:
+            self.lexical_entry.set_partOfSpeech("whatever")
+        except Error:
+            test = True
+        self.assertTrue(test)
 
     def test_get_partOfSpeech(self):
         self.assertIs(self.lexical_entry.get_partOfSpeech(), self.lexical_entry.partOfSpeech)
@@ -49,6 +57,14 @@ class TestLexicalEntryFunctions(unittest.TestCase):
 
     def test_get_status(self):
         self.assertIs(self.lexical_entry.get_status(), self.lexical_entry.status)
+
+    def test_set_date(self):
+        date = "2014-06-15"
+        self.assertEqual(self.lexical_entry.set_date(date), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.date, date)
+
+    def test_get_date(self):
+        self.assertIs(self.lexical_entry.get_date(), self.lexical_entry.date)
 
     def test_get_id(self):
         self.assertIs(self.lexical_entry.get_id(), self.lexical_entry.id)

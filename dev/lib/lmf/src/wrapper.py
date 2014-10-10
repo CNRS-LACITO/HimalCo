@@ -43,10 +43,13 @@ def wrapper(func, *args, **kwds):
     except Error as exception:
         ## A library error has occured
         exception.handle()
+    except SystemExit:
+        ## The library decided to stop execution
+        raise
     except:
         ## A system error has occured
         import sys
-        sys.stderr.write("Unexpected error: " + str(sys.exc_info()[0]))
+        sys.stderr.write("Unexpected error: " + str(sys.exc_info()[0]) + "\n")
         raise
     else:
         ## Nominal case

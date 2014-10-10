@@ -37,7 +37,11 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_tex, order=tex_order)
         for lexicon in object.get_lexicons():
             for lexical_entry in lexicon.get_lexical_entries():
                 for attribute in order:
-                    tex_file.write(lmf2tex[attribute](lexical_entry))
+                    try:
+                        tex_file.write(lmf2tex[attribute](lexical_entry))
+                    except TypeError:
+                        # This exception is raised when the attribute value is None => do not write the attribute in this case
+                        pass
                 # Separate lexical entries from each others with a blank line
                 tex_file.write(EOL)
     else:
