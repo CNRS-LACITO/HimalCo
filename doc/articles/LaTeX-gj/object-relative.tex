@@ -1,4 +1,3 @@
-
 \documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
@@ -25,6 +24,8 @@
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
+\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\topic}{\textsc{dem}}
@@ -38,40 +39,39 @@
 
 \begin{document} 
 \title{Subjects and objects in Japhug and relativization\footnote{
-The glosses follow the Leipzig glossing rules; on S, A, P, T and R, see \citet{haspelmath11SAPTR}. Other abbreviations used here are: \textsc{appl} applicative, \textsc{antipass} antipassive,\textsc{dem} demonstrative, \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, RC relative clause, \textsc{testim} testimonial. Words borrowed from Chinese are indicated between chevrons <> and are transcribed in pinyin. %\textsc{trop} tropative, 
-Acknowledgements will be added after editorial decision. %Wu Tong, Hilary Chappell, Aimée Lahaussois
+The glosses follow the Leipzig glossing rules; on S, A, P, T and R, see \citet{haspelmath11SAPTR}. Other abbreviations used here are: \textsc{appl} applicative, \textsc{antipass} antipassive,\textsc{dem} demonstrative, \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, SAP speech act participant (first or second person), \textsc{rc} relative clause, \textsc{testim} testimonial. Words borrowed from Chinese are indicated between chevrons <> and are transcribed in pinyin. %\textsc{trop} tropative, 
+Acknowledgements will be added after editorial decision. %Wu Tong, Hilary Chappell, Aimée Lahaussois, Anton Antonov
 } }
-\author{Guillaume Jacques}
+%\author{Guillaume Jacques}
 \maketitle
 \linenumbers
 
-\textbf{Abstract}: Japhug is a language with ergative alignment on noun phrases and direct-inverse verbal indexation. However, this paper, through  a detailed description of relativizing constructions in Japhug, shows the existence of accusative pivots and proposes an unambiguous definition of `subjects' and `objects' in this language. 
+\textbf{Abstract}: Japhug is a language with ergative alignment on NP arguments and direct-inverse verbal indexation. However, this paper, through  a detailed description of relativizing constructions in Japhug, shows the existence of accusative pivots and proposes an unambiguous definition of `subjects' and `objects' in this language. 
 
 
 \section{Introduction}
-The present paper deals with relative clauses in Japhug, and how these constructions provide evidence for the existence of syntactic pivots in this language. It is divided in five sections.
+The present paper deals with relative clauses in Japhug, and how these constructions provide evidence for the existence of syntactic pivots in this language. While previous publications have discussed relative clauses in Rgyalrong languages (in particular \citealt{jackson06guanxiju}, \citealt{jacksonlin07}, \citealt{jacques08zh}), this is the first systematic description of relative clauses in Japhug.\footnote{Correlatives, non-restrictive relatives and other non-canonical relatives are not described in this work.} This paper is divided in five sections.
 
-First, background information on flagging and person indexation on the verb in Japhug is provided; in particular, we show the absence of any accusative alignment in the morphology.
+First, we provide background information on flagging and person indexation on the verb in Japhug.\footnote{Japhug is Sino-Tibetan language spoken by around 10000 speakers in Mbarkham county, Sichuan, China. Like the three other Rgyalrong languages (Situ, Zbu and Tshobdun), it is a polysynthetic language with complex morphology (see \citealt{jacques14antipassive}). }  Transitivity is morphologically marked in Japhug in an unambiguous way. In addition to plain intransitive  and transitive verbs, we find  semi-transitive verbs which share their morphological properties with intransitive verbs and some of their syntactic properties with transitive verbs. In addition,  both secundative and indirective ditransitive verbs are found.
 
-Second, we present general information on relative clauses, and in particular show the existence of both head-internal and prenominal relatives in Japhug.
+Second, we present general information on relative clauses in Japhug, and in particular show the existence of both head-internal and prenominal relatives.
 
-Third, we describe   non-finite relative clauses, whose main verb is in participial form.
+Third, we describe   non-finite relative clauses, whose main verb is in a participial form. Most relatives belong to this type, and three participles in \ipa{kɯ--}, \ipa{kɤ--} and \ipa{sɤ--} are used depending on the syntactic function of the relativized element.
 
-Fourth, we study finite relative clauses,  whose main verb is not nominalized.
+Fourth, we study finite relative clauses,  whose main verb is not nominalized. The use of this type of relative is highly restricted.
 
-Fifth, we summarize the data presented in the previous sections and show how these allow us to strictly define subjects and objects in Japhug.
+Fifth, we summarize the data presented in the previous sections and show how it allows us to strictly define syntactic pivots that can be labelled as `subjects' and `objects' in Japhug. In addition, we discuss how this study is relevant for the typology of alignment in Sino-Tibetan languages and beyond.
 
 
 
 \section{Flagging and indexation} \label{sec:flagging.indexation}
-The present section presents background information on person marking and flagging in Japhug, and shows that neither `subjects' nor `objects' can be straightforwardly defined on the exclusive basis of morphogical marking on 
- verbs and on NPs.
+The present section presents background information on person marking and flagging in Japhug, and shows that neither `subjects' nor `objects' can be straightforwardly defined on the exclusive basis of morphogical marking on  verbs and on NPs.
 
 
 \subsection{Flagging}
-Japhug presents strict verb-final word order. The only elements that can occur post-verbally are sentence-final particles, some ideophones and adverbs (such as \ipa{ntsɯ} `always'), and right-dislocated constituents.
+Japhug presents strict verb-final word order. The only elements that can occur post-verbally are sentence-final particles, some ideophones and adverbs (see \citealt[275-6]{japhug14ideophones}), and right-dislocated constituents.
 
-Japhug has ergative alignment on noun phrases:  S and P are unmarked (examples \ref{ex:abs} and \ref{ex:erg}), while the A of transitive verb receives the clitic \ipa{kɯ} (example \ref{ex:erg}). This clitic is obligatory with nouns and third person pronouns, but optional for first and second person pronouns. The clitic \ipa{kɯ} can also be used to mark instruments.
+Japhug has ergative alignment on all non-SAP arguments:  S and P are unmarked (examples \ref{ex:abs} and \ref{ex:erg}), while the A of transitive verbs receives the clitic \ipa{kɯ} (example \ref{ex:erg}). This clitic is obligatory with noun phrases and third person pronouns, but in the case of first and second person pronouns it is optional. The clitic \ipa{kɯ} can also be used to mark instruments.
 
 \begin{exe}
 \ex \label{ex:abs}
@@ -171,7 +171,7 @@ Whatever the merits and demerits of such an approach from a theoretical point of
 
 \citet[227]{coupe07mongsen} points out that head-internal relatives can be distinguished from other uses of nominalized clause by the fact that the deleted head can always be recovered. For instance, in example \ref{ex:pWkAsat2}, restoring the deleted head noun \ipa{pɣɤkʰɯ} `owl' is possible in either one of the two slots indicated by $\emptyset$.
 
-The head deletion analysis of headless relatives however raises an issue in the case of Japhug:  when A or P arguments are relativized both head-internal and prenominal relatives are attested (see for instance examples \ref{ex:akanwrga1} and \ref{ex:akanwrga2}. If head-internal relatives are analyzed as having a gap corresponding the common argument (or adjunct), it is not obvious which, of the relative-internal or the post-relative gap, should be considered to be the head of the relative (see example \ref{ex:akanwrga3}).
+The head deletion analysis of headless relatives however raises an issue in the case of Japhug:  when A or P arguments are relativized either head-internal or prenominal relatives are attested (see for instance examples \ref{ex:akanwrga1} and \ref{ex:akanwrga2}. If head-internal relatives are analyzed as having a gap corresponding the common argument (or adjunct), it is not obvious which, of the relative-internal or the post-relative gap, should be considered to be the head of the relative (see example \ref{ex:akanwrga3}).
 
      \begin{exe}
    \ex \label{ex:akanwrga1}
@@ -632,7 +632,7 @@ Totalitative reduplication, on the other hand, is impossible in the case of main
 These two independent pieces of evidence show that finite relative clauses in Japhug present properties showing their nominalized status, despite the fact that the verb is in a non-nominalized form.
 
 \section{Defining subject and object in Japhug} \label{sec:subject.object}
-We saw in section \ref{sec:flagging.indexation} that neither flagging nor indexation of arguments of the verb offer clear evidence for either the existence of subjects or objects in Japhug.
+We saw in section \ref{sec:flagging.indexation} that neither flagging nor indexation of arguments of the verb offer clear evidence for  the existence of either subjects or objects in Japhug.
 
 
 
@@ -648,18 +648,18 @@ However, data from relativization provide evidence of \textit{restrictive neutra
 &\multicolumn{3}{c}{Participial Relative Clause} & \multicolumn{2}{c}{Finite Relative Clause} \\
 Function & \ipa{kɯ--}  & \ipa{kɤ--}  & \ipa{sɤ--}  & Simple  & Relator noun \\
 \midrule
-S	& HI, PN \grise{}& &&&& \\
-A & HI, PN \grise{}& &&&& \\
+S	& HI, PN \bleute{}& &&&& \\
+A & HI, PN \bleute{}& &&&& \\
 \hline
 possessor & PN&&&&& \\
 \hline
-P & & HI, PN \grise{}&& HI, PN\grise{} &\\
-semi-object & & HI, PN \grise{}&& HI, PN\grise{} &\\
-T & & HI, PN\grise{} && HI, PN \grise{}&\\
-R (secundative) & & HI, PN\grise{} && HI, PN \grise{}&\\
+P & & HI, PN \rouge{}&& HI, PN \rouge{} &\\
+semi-object & & HI, PN \rouge{}&& HI, PN \rouge{} &\\
+T & & HI, PN \rouge{} && HI, PN \rouge{}&\\
+R (secundative) & & HI, PN \rouge{} && HI, PN \rouge{}&\\
 \hline
 R (indirective) & &&HI, PN\\
-instrumental adjunct  & &&HI, PN\\
+instrumental adjunct  & &&HI, PN \\
 comitative & &&HI, PN\\
 time adjunct  & &&HI, PN&&PN\\
 place adjunct  &&&HI, PN&&PN\\ 
@@ -668,9 +668,11 @@ place adjunct  &&&HI, PN&&PN\\
 \end{table}
 
 
-The first neutralization is that of S and A (\textbf{subjects}), first noticed by \citet{jackson03caodeng}  in the case of the related language Tshobdun. Both S and A, and these two types of participants exclusively, can be relativized by headless, prenominal and head-internal relatives with a verb in \ipa{kɯ--} participial form. Possessors can also be relativized with non-finite relatives and \ipa{kɯ--} participles, but only with head-internal relatives, not prenominal or head-internal ones. 
+The first neutralization is that of S and A (\textbf{subjects}), first noticed by \citet{jackson03caodeng}  in the case of the related language Tshobdun. Both S and A, and these two types of participants exclusively, can be relativized by headless, prenominal and head-internal relatives with a verb in the \ipa{kɯ--} participial form. Possessors can also be relativized with non-finite relatives and \ipa{kɯ--} participles, but only with head-internal relatives, not prenominal or head-internal ones. 
 
-Another area where this neutralization is observed is the optional possessive prefix on \ipa{kɤ--} participles.   For transitive and ditransitive verbs  the prefix always refer to the A (example \ref{ex:kill3} above), while in the case of semi-transitive verbs, it refers to the S, as in \ref{ex:nWkArga}, thus displaying S/A restrictive neutralization.\footnote{The \ipa{kɤ--} participle does not exist for plain intransitive verbs, so that semi-transitive verbs are the only ones where one can test the behaviour of S a possessive prefix to an object participle.}
+%There are two other areas of Japhug grammar where this neutralization is observed: the prefix on \ipa{kɤ--} participles and some types of control verbs.
+
+There is another area  of Japhug grammar where this neutralization is observed: the optional possessive prefix on \ipa{kɤ--} participles also follows an accusative alignment.   For transitive and ditransitive verbs  the prefix always refers to the A (example \ref{ex:kill3} above), while in the case of semi-transitive verbs, it refers to the S, as in \ref{ex:nWkArga}, thus displaying S/A restrictive neutralization.\footnote{The \ipa{kɤ--} participle does not exist for plain intransitive verbs, so that semi-transitive verbs are the only ones where one can test the behaviour of S with an object participle.}
 
  \begin{exe}
    \ex   \label{ex:nWkArga} 
@@ -679,16 +681,86 @@ bird \textsc{pl} \textsc{3pl-nmlz:P}-like \topic{} wheat always be:\textsc{fact}
 \glt (The food) that birds like is always wheat. (\ipa{pɣaɲaʁ} 24)
    \end{exe} 
 
-The second neutralization is that of P, T and R of secundative ditransitive verb, T of indirective verb and the semi-object of semi-transitive verbs (\textbf{objects}), the four of which can be relativized in both non-finite relatives with a \ipa{kɤ--} participle and simple finite relatives (see Table \ref{tab:summary}). It is particularly significant that exactly the same four types of participants (and only them) all occur in these two highly distinct constructions.
 
-The accusative alignment shown by the existence of subject and objects in Japhug contrasts with the presence of ergative and neutral alignment  in other areas of the grammar. Ergative alignment is found in flagging as seen above, but also generic person marking (see \citealt{jacques12demotion}), while neutral alignment is extremely common especially in clause linking constructions (\citealt{jacques14linking}).
+The second neutralization is that of P, T and R of secundative ditransitive verbs, T of indirective verbs and the semi-object of semi-transitive verbs (\textbf{objects}), the four of which can be relativized in both non-finite relatives with a \ipa{kɤ--} participle and simple finite relatives (see Table \ref{tab:summary}). It is particularly significant that exactly the same four types of participants (and only they) all occur in these two highly distinct constructions.
 
-However, this diversity should not come as a surprise. It has been shown that radically  different types of syntactic pivots can co-exist in the same language (\citealt[282]{vanvalin97syntax}), and Japhug is not  unusual is this particular aspect. 
+The accusative alignment shown by the existence of subject and objects in Japhug contrasts with the presence of ergative and neutral alignment  in other areas of the grammar. Ergative alignment is found in generic person marking (see \citealt{jacques12demotion}),\footnote{Generic S/P is marked by \ipa{kɯ--}, while generic A is marked with the inverse prefix \ipa{--wɣ--}.} while neutral alignment is extremely common especially in clause linking constructions (\citealt{jacques14linking}), and also in control constructions. For instance, the S of the verb \ipa{rga}  `like' can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival or finite  complement verbs (the complement verb in \ref{ex:kAnWrAGo.rganW} is intransitive, while it is transitive in \ref{ex:kAnArtoXpjAt.pWrgaa} and \ref{ex:YWrganW}). This is still a syntactic pivot, since  coereference is only possible with core arguments, not with oblique arguments (including recipients of indirective verbs) or adjuncts.
+    \begin{exe}
+   \ex   \label{ex:kAnWrAGo.rganW} 
+\gll
+\ipa{tsuku}  	\ipa{tɕe}  	\ipa{kɤ-nɯrɤɣo}  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{rga-nɯ}  	\ipa{tɕe}  \\
+some \textsc{lnk} \textsc{inf}-sing really \textsc{emph} like:\textsc{fact-pl}  \textsc{lnk} \\
+  \glt Some people like to sing. (Cicada, 104)
+     \end{exe}  
+ 
+   \begin{exe}
+   \ex   \label{ex:kAnArtoXpjAt.pWrgaa} 
+\gll
+  	\ipa{aʑo}  	\ipa{qajɯ}  	\ipa{nɯ} \ipa{ra}  	\ipa{kɤ-nɤrtoχpjɤt}  	\ipa{pɯ-rga-a}  	\ipa{tɕe}  	\\
+  	\textsc{1sg} bugs \textsc{dem} \textsc{pl} \textsc{inf}-observe \textsc{pst.ipfv}-like-\textsc{1sg} \textsc{lnk}  \\
+ \glt I liked to observe bugs. (Dragonfly, 15)
+     \end{exe}  
+ 
+  \begin{exe}
+   \ex   \label{ex:YWrganW} 
+\gll
+\ipa{maka}  	\ipa{tu-kɤ-nɤjoʁjoʁ,}  	\ipa{tu-kɤ-fstɤt}  	\ipa{nɯ}  	\ipa{ɲɯ-rga-nɯ}  \\
+at.all \textsc{ipfv-inf}-flatter \textsc{ipfv-inf}-praise \textsc{dem} \textsc{ipfv}-like-\textsc{pl} \\
+\glt They like to be flattered or praised. (The monkeys and the two men, 53)
+    \end{exe}  
+ 
+
+It is possible that other control verbs or that some clause linking constructions have  stricter syntactic pivots. Although there is some evidence for this, we defer a fuller investigation of pivots in complementation and clause linking construction to future research. Since the study of syntactic pivots critically depends on negative data (the impossibility of saying a particular sentence, or the impossibility to interpret an attested sentence in a particular way), even a relatively large corpus is not sufficient to ascertain the existence of pivots. While elicitation is necessary, it is often difficult to be sure that a particular judgement on the agrammaticality of a sentence is due to syntactic rather than pragmatic reasons. 
+ 
+Table \ref{tab:japhug.pivot} summarizes the syntactic pivots  attested in Japhug. The symbol P' is used for the semi-object of semi-transitive verbs, and T_1 / R_1 vs T_2 / R_2 for the arguments of secundative vs indirective transitive verbs.
+
+\begin{table}[H]
+\caption{Syntactic pivots in Japhug} \label{tab:japhug.pivot} \centering
+\begin{tabular}{llllll}
+\toprule
+Pivot & Construction \\
+\midrule
+\{S, A\}  & prenominal relativization with \ipa{kɯ--} participle  \\
+ (subject)&(possessive prefix) on \ipa{kɤ--} participles in relatives \\
+ \midrule
+\{P, P', R_1, T\}  & relatives with a finite main verb (without relator noun)\\
+(object)  &relativization with \ipa{kɤ--} participle \\
+\midrule
+ \{S, P, R_1, T_2\} & generic person marking\\
+ (absolutive argument)\\
+ \midrule
+  \{S, A, P, P', R_1, T\} & control constructions (\ipa{rga}  `like') \\
+ (core argument)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In the Sino-Tibetan family, while many languages such as Standard Mandarin (\citealt{lapolla93subject}) or Lhasa Tibetan  (\citealt{tounadre96erg}) lack strict syntactic pivots, such pivots are well-attested in Kiranti languages (\citealt{bickel01light.verbs}, \citealt{bickel04hidden}). Table \ref{tab:belhare} recapitulates some of the main syntactic pivots in Belhare (the notation of the arguments is slightly modified from \citealt{bickel04hidden}).
+
+\begin{table}[H]
+\caption{Syntactic pivots in Belhare (after \citealt{bickel04hidden})} \label{tab:belhare} \centering
+\begin{tabular}{llllll}
+\toprule
+Pivot & Construction \\
+\midrule
+\{S, A\} & embedded non-finite \ipa{--si} and \ipa{--sa} clauses\\
+& root nominalization\\
+\{S, P, R, T\} & internally headed relativisation \\
+\{S, P, R\} & control by \ipa{khes} `must', \ipa{nus-} `say'\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ 
+We see that Japhug resembles Belhare in two respects: it has both ergative and accusative pivots, and the accusative pivot is involved in relativization (`root nominalization' in Belhare). However, accusative pivots  are  more widespread in Japhug, while Belhare tends to favour ergative pivots.  
+
+
+Sino-Tibetan is perhaps one of the most diverse language family from the point of view of morphosyntactic typology, and especially alignment. While isolating Sino-Tibetan languages like Mandarin tend to lack syntactic pivots, languages with richer morphology display a bewildering diversity of alignment types: some languages favour accusative pivots, others ergative pivots, and present at least three distinct   pivots depending on the  construction. Only purely accusative, or purely ergative languages appear to be unattested in Sino-Tibetan.
 
 
 \section{Conclusion}
 
-The present paper has shown that, although Japhug has ergative alignment in flagging, and a direct-inverse system in person indexation on the verb, it is nevertheless possible to rigorously define `subjects' and `objects' in this language, by taking into account restrictive neutralization phenomena observed in relative constructions.
+The present paper has shown that, although Japhug has ergative alignment on NP arguments, and a direct-inverse system in person indexation on the verb, it is nevertheless possible to rigorously define `subjects' and `objects' in this language, by taking into account restrictive neutralization phenomena observed in relative constructions.
 
 This work shows that ergative and accusative pivots co-exist in Japhug, and that this language cannot be meaningfully classified as `ergative', `accusative' or `hierarchical'. In addition, it shows that unlike languages such as Movima, inverse marking in relative clauses does not necessarily influence the syntactic pivot of the relativized participant.
 
