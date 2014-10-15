@@ -26,7 +26,7 @@
       <fontname>Lucida Grande</fontname>
       <fontsize>13</fontsize>
       <defaultstereotypeview>0</defaultstereotypeview>
-      <activediagram>Class Diagram Resources</activediagram>
+      <activediagram>Class Diagram CorePackage</activediagram>
     </settings>
     <searchpath href="PROJECT_DIR" />
     <members>
@@ -84,7 +84,7 @@
 			UML 1.4
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Sep 26 15:43:51 CEST 2014'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Oct 17 18:30:33 CEST 2014'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -1088,21 +1088,6 @@ Do not display.</UML:TaggedValue.dataValue>
                     <UML:Multiplicity xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C6D'>
                       <UML:Multiplicity.range>
                         <UML:MultiplicityRange xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C6E'
-                          lower = '1' upper = '1'/>
-                      </UML:Multiplicity.range>
-                    </UML:Multiplicity>
-                  </UML:StructuralFeature.multiplicity>
-                  <UML:StructuralFeature.type>
-                    <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
-                  </UML:StructuralFeature.type>
-                </UML:Attribute>
-                <UML:Attribute xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C6F'
-                  name = 'language' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-                  changeability = 'changeable' targetScope = 'instance'>
-                  <UML:StructuralFeature.multiplicity>
-                    <UML:Multiplicity xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C70'>
-                      <UML:Multiplicity.range>
-                        <UML:MultiplicityRange xmi.id = '10--104-1--51--3d50ea0f:1475d29d802:-8000:0000000000000C71'
                           lower = '1' upper = '1'/>
                       </UML:Multiplicity.range>
                     </UML:Multiplicity>
@@ -3866,6 +3851,9 @@ Do not display.</UML:TaggedValue.dataValue>
     <UML:Model xmi.id = '-84-28--98--120--79dc5c82:148b21f115e:-8000:0000000000000C3D'
       name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
       isAbstract = 'false'/>
+    <UML:Model xmi.id = '-84-28--99-118-1e66fd06:1491e7526cb:-8000:0000000000000C3E'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'/>
     <UML:TaggedValue xmi.id = '-84-28--98-124--d6b41f5:146230bf69b:-8000:0000000000000C7C'
       isSpecification = 'false'>
       <UML:TaggedValue.dataValue>true</UML:TaggedValue.dataValue>
@@ -6351,7 +6339,7 @@ Do not display.</UML:TaggedValue.dataValue>
       strokecolor="black"
     />
     <group name="Fig5.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[129, 865, 192, 178]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[129, 865, 192, 177]"
          href="-64--88-1--111-54ec560c:147154258d2:-8000:00000000000010B4"
          fill="0"
          fillcolor="white"
@@ -6365,7 +6353,7 @@ Do not display.</UML:TaggedValue.dataValue>
         x="129"
         y="865"
         width="192"
-        height="178"
+        height="177"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -6502,22 +6490,6 @@ Do not display.</UML:TaggedValue.dataValue>
       <text name="Fig5.4.9"
         x="129"
         y="1001"
-        width="192"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Lucida Grande"
-        italic="false"
-        bold="false"
-        textsize="13"
-        justification="Left"
-      >+language : String</text>
-      <text name="Fig5.4.10"
-        x="129"
-        y="1018"
         width="192"
         height="23"
         fill="0"
@@ -13787,7 +13759,7 @@ Do not display.</UML:TaggedValue.dataValue>
       strokecolor="black"
     />
     <group name="Fig17.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[353, 689, 239, 178]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[353, 689, 239, 177]"
          href="-64--88-1--111-54ec560c:147154258d2:-8000:00000000000010B4"
          fill="0"
          fillcolor="white"
@@ -13801,7 +13773,7 @@ Do not display.</UML:TaggedValue.dataValue>
         x="353"
         y="689"
         width="239"
-        height="178"
+        height="177"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -13938,22 +13910,6 @@ Do not display.</UML:TaggedValue.dataValue>
       <text name="Fig17.4.9"
         x="353"
         y="825"
-        width="239"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Lucida Grande"
-        italic="false"
-        bold="false"
-        textsize="13"
-        justification="Left"
-      >+language : String</text>
-      <text name="Fig17.4.10"
-        x="353"
-        y="842"
         width="239"
         height="23"
         fill="0"
@@ -16762,7 +16718,7 @@ Do not display.</UML:TaggedValue.dataValue>
       strokecolor="black"
     />
     <group name="Fig7.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[857, 169, 239, 178]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[857, 169, 239, 177]"
          href="-64--88-1--111-54ec560c:147154258d2:-8000:00000000000010B4"
          fill="0"
          fillcolor="white"
@@ -16776,7 +16732,7 @@ Do not display.</UML:TaggedValue.dataValue>
         x="857"
         y="169"
         width="239"
-        height="178"
+        height="177"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -16913,22 +16869,6 @@ Do not display.</UML:TaggedValue.dataValue>
       <text name="Fig7.4.9"
         x="857"
         y="305"
-        width="239"
-        height="17"
-        fill="0"
-        fillcolor="white"
-        stroke="0"
-        strokecolor="black"
-        textcolor="black"
-        font="Lucida Grande"
-        italic="false"
-        bold="false"
-        textsize="13"
-        justification="Left"
-      >+language : String</text>
-      <text name="Fig7.4.10"
-        x="857"
-        y="322"
         width="239"
         height="23"
         fill="0"

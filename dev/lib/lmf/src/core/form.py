@@ -20,8 +20,6 @@ class Form():
         """! @brief Private initialization called from Form subclasses.
         Form subinstances are owned by LexicalEntry.
         """
-        self.variantForm = None
-        self.type = None
         ## FormRepresentation instances are owned by Form subclasses
         # There is zero to many FormRepresentation instances per Form subclass
         self.form_representation = []

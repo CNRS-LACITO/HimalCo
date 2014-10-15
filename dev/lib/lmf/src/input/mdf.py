@@ -19,7 +19,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
     import re
     mdf_file = open_read(filename)
     # MDF syntax is the following: '\marker value'
-    mdf_pattern = """^\\\(\w*) (.*)$"""
+    mdf_pattern = """^\\\(\w*) (<(.*)>)? ?(.*)$"""
     # Create a Lexicon instance to contain all lexical entries
     lexicon = Lexicon(id)
     # Add each lexical entry to the lexicon
@@ -29,7 +29,8 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
         if line != EOL:
             result = re.match(mdf_pattern, line)
             marker = result.group(1)
-            value = result.group(2)
+            attrs = result.group(3)
+            value = result.group(4)
             # 'lx' marker indicates a new entry
             if marker == "lx":
                 # Compute a unique identifier
@@ -48,7 +49,16 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                 lexicon.add_lexical_entry(current_entry)
             # Map MDF marker and value to LMF representation
             try:
-                mdf2lmf[marker](value, current_entry)
+                if attrs is not None:
+                    # There are attributes
+                    attributes = {}
+                    # Remove quotation marks from attributes if any
+                    attrs = attrs.replace('"', '')
+                    for attr in attrs.split(' '):
+                        attributes.update({attr.split('=')[0] : attr.split('=')[1]})
+                    mdf2lmf[marker](attributes, value, current_entry)
+                else:
+                    mdf2lmf[marker](value, current_entry)
             except KeyError:
                 print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme()))
             except Error as exception:

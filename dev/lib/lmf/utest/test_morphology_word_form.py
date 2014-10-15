@@ -16,8 +16,6 @@ class TestWordFormFunctions(unittest.TestCase):
         del self.word_form
 
     def test_init(self):
-        self.assertIsNone(self.word_form.variantForm)
-        self.assertIsNone(self.word_form.type)
         self.assertListEqual(self.word_form.form_representation, [])
         self.assertIsNone(self.word_form.grammaticalNumber)
         self.assertIsNone(self.word_form.grammaticalGender)

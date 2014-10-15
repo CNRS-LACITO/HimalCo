@@ -5,6 +5,7 @@ from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 from utils.error_handling import Error
+from core.form_representation import FormRepresentation
 
 ## Test LexicalEntry class
 
@@ -82,12 +83,26 @@ class TestLexicalEntryFunctions(unittest.TestCase):
     def test_get_bibliography(self):
         self.assertIs(self.lexical_entry.get_bibliography(), self.lexical_entry.bibliography)
 
+    def test_set_independentWord(self):
+        self.assertEqual(self.lexical_entry.set_independentWord(False), self.lexical_entry)
+        self.assertFalse(self.lexical_entry.independentWord)
+        # Test error case
+        test = False
+        try:
+            self.lexical_entry.set_independentWord("whatever")
+        except Error:
+            test = True
+        self.assertTrue(test)
+
+    def test_get_independentWord(self):
+        self.assertIs(self.lexical_entry.get_independentWord(), self.lexical_entry.independentWord)
+
     def test_get_id(self):
         self.assertIs(self.lexical_entry.get_id(), self.lexical_entry.id)
 
     def test_set_lexeme(self):
         lexeme = "hello"
-        self.assertEqual(self.lexical_entry.set_lexeme(lexeme), self.lexical_entry)
+        self.assertIs(self.lexical_entry.set_lexeme(lexeme), self.lexical_entry)
         self.assertEqual(self.lexical_entry.lemma.lexeme, lexeme)
 
     def test_get_lexeme(self):
@@ -115,10 +130,10 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         form1 = RelatedForm("form1")
         form2 = RelatedForm("form2")
         # Test add related forms to the lexical entry
-        self.assertEqual(self.lexical_entry.add_related_form(form1), self.lexical_entry)
+        self.assertIs(self.lexical_entry.add_related_form(form1), self.lexical_entry)
         self.assertListEqual(self.lexical_entry.related_form, [form1])
         self.assertEqual(self.lexical_entry.related_form[0].targets, "form1")
-        self.assertEqual(self.lexical_entry.add_related_form(form2), self.lexical_entry)
+        self.assertIs(self.lexical_entry.add_related_form(form2), self.lexical_entry)
         self.assertListEqual(self.lexical_entry.related_form, [form1, form2])
         self.assertEqual(self.lexical_entry.related_form[1].targets, "form2")
         # Release RelatedForm instances
@@ -129,12 +144,12 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Test create and add related forms to the lexical entry
         lexeme = "form1"
         relation = "homonym"
-        self.assertEqual(self.lexical_entry.create_and_add_related_form(lexeme, relation), self.lexical_entry)
+        self.assertIs(self.lexical_entry.create_and_add_related_form(lexeme, relation), self.lexical_entry)
         self.assertEqual(len(self.lexical_entry.related_form), 1)
         self.assertEqual(self.lexical_entry.related_form[0].targets, lexeme)
         lexeme = "form2"
         relation = "derived form"
-        self.assertEqual(self.lexical_entry.create_and_add_related_form(lexeme, relation), self.lexical_entry)
+        self.assertIs(self.lexical_entry.create_and_add_related_form(lexeme, relation), self.lexical_entry)
         self.assertEqual(len(self.lexical_entry.related_form), 2)
         self.assertEqual(self.lexical_entry.related_form[1].targets, lexeme)
         # Release RelatedForm instances
@@ -170,6 +185,205 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Delete RelatedForm instances
         del self.lexical_entry.related_form[:]
         del form1, form2
+
+    def test_get_form_representations(self):
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_form_representations())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr2 = FormRepresentation()
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get form representations
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [repr1, repr2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_variant_form(self):
+        form = "form"
+        type = "archaic"
+        self.assertIs(self.lexical_entry.set_variant_form(form, type), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].variantForm, form)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].type, type)
+
+    def test_set_variant_comment(self):
+        comment = "comment"
+        lang = "lang"
+        self.assertIs(self.lexical_entry.set_variant_comment(comment, lang), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].comment, comment)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].language, lang)
+
+    def test_set_tone(self):
+        tone = "tone"
+        self.assertIs(self.lexical_entry.set_tone(tone), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].tone, tone)
+
+    def test_get_tones(self):
+        tone1 = "My tone."
+        tone2 = "Another tone."
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_tones())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.tone = tone1
+        repr2 = FormRepresentation()
+        repr2.tone = tone2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get tones
+        self.assertListEqual(self.lexical_entry.get_tones(), [tone1, tone2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_geographical_variant(self):
+        geo = "geo"
+        self.assertIs(self.lexical_entry.set_geographical_variant(geo), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].geographicalVariant, geo)
+
+    def test_set_phonetic_form (self):
+        form = "form"
+        self.assertIs(self.lexical_entry.set_phonetic_form(form), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].phoneticForm, form)
+
+    def test_get_phonetic_forms(self):
+        form1 = "form1"
+        form2 = "form2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_phonetic_forms())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.phoneticForm = form1
+        repr2 = FormRepresentation()
+        repr2.phoneticForm = form2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get phonetic forms
+        self.assertListEqual(self.lexical_entry.get_phonetic_forms(), [form1, form2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_contextual_variation(self):
+        ctx = "ctx"
+        self.assertIs(self.lexical_entry.set_contextual_variation(ctx), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].contextualVariation, ctx)
+
+    def test_get_contextual_variations(self):
+        ctx1 = "ctx1"
+        ctx2 = "ctx2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_contextual_variations())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.contextualVariation = ctx1
+        repr2 = FormRepresentation()
+        repr2.contextualVariation = ctx2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get contextual variations
+        self.assertListEqual(self.lexical_entry.get_contextual_variations(), [ctx1, ctx2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_spelling_variant(self):
+        var = "var"
+        self.assertIs(self.lexical_entry.set_spelling_variant(var), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].spellingVariant, var)
+
+    def test_set_citation_form(self):
+        form = "form"
+        self.assertIs(self.lexical_entry.set_citation_form(form), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].citationForm, form)
+
+    def test_get_citation_forms(self):
+        form1 = "form1"
+        form2 = "form2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_citation_forms())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.citationForm = form1
+        repr2 = FormRepresentation()
+        repr2.citationForm = form2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get citations forms
+        self.assertListEqual(self.lexical_entry.get_citation_forms(), [form1, form2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_dialect(self):
+        dial = "dial"
+        self.assertIs(self.lexical_entry.set_dialect(dial), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].dialect, dial)
+
+    def test_set_transliteration(self):
+        trans = "trans"
+        self.assertIs(self.lexical_entry.set_transliteration(trans), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].transliteration, trans)
+
+    def test_get_transliterations(self):
+        trans1 = "trans1"
+        trans2 = "trans2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_transliterations())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.transliteration = trans1
+        repr2 = FormRepresentation()
+        repr2.transliteration = trans2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get transliterations
+        self.assertListEqual(self.lexical_entry.get_transliterations(), [trans1, trans2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
+    def test_set_script_name(self):
+        script = "script"
+        self.assertIs(self.lexical_entry.set_script_name(script), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].scriptName, script)
 
     def test_get_definitions(self):
         pass

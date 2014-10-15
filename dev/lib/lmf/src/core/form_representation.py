@@ -3,7 +3,10 @@
 """! @package core
 """
 
-from representation import Representation
+from core.representation import Representation
+from utils.error_handling import Error
+from utils.attr import check_attr_type, check_attr_range
+from common.range import type_variant_range
 
 class FormRepresentation(Representation):
     """! "Form Representation is a class representing one variant orthography of a Form." (LMF)
@@ -15,6 +18,8 @@ class FormRepresentation(Representation):
         """
         # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
         self.__new__()
+        self.variantForm = None
+        self.type = None
         self.transliteration = None
         self.tone = None
         self.geographicalVariant = None
@@ -23,7 +28,6 @@ class FormRepresentation(Representation):
         self.spellingVariant = None
         self.citationForm = None
         self.dialect = None
-        self.language = None
         self.scriptName = None
         ## Audio instances are owned by FormRepresentation
         # There is zero to many Audio instances per FormRepresentation
@@ -49,3 +53,224 @@ class FormRepresentation(Representation):
         @return FormRepresentation private attribute '__speaker', a Python list of Speaker instances.
         """
         return self.__speaker
+
+    def set_variantForm(self, variant_form):
+        """! @brief Set variant form.
+        @param variant_form The variant form to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Variant form value '%s' is not allowed" % variant_form
+        check_attr_type(variant_form, [str, unicode], error_msg)
+        self.variantForm = variant_form
+        return self
+
+    def get_variantForm(self):
+        """! @brief Get variant form.
+        @return FormRepresentation attribute 'variantForm'.
+        """
+        return self.variantForm
+
+    def set_type(self, type):
+        """! @brief Set variant type.
+        @param type Type of variant, in range 'type_variant_range' defined in 'common/range.py'.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Variant type value '%s' is not allowed" % type
+        value = None
+        if type is not None:
+            # Check value
+            check_attr_type(type, [str, unicode], error_msg)
+            value = check_attr_range(type, type_variant_range, error_msg)
+        self.type = value
+        return self
+
+    def get_type(self):
+        """! @brief Get variant type.
+        @return FormRepresentation attribute 'type'.
+        """
+        return self.type
+
+    def set_comment(self, comment, language=None):
+        """! @brief Set variant form comment.
+        @param comment Comment about the variant form.
+        @param language Language used for the comment.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Variant form comment value '%s' is not allowed" % comment
+        # Check attribute type
+        check_attr_type(comment, [str, unicode], error_msg)
+        self.comment = comment
+        if language is not None:
+            self.set_language(language)
+        return self
+
+    def get_comment(self, language=None):
+        """! @brief Get variant form comment.
+        @param language If this argument is given, get comment only if written in this language.
+        @return The filtered Representation attribute 'comment'.
+        """
+        if language is None:
+            return self.comment
+        if self.language == language:
+            return self.comment
+
+    def set_language(self, language):
+        """! @brief Set language used for comment.
+        @param language Language used for the comment.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Language value '%s' is not allowed" % language
+        # Check value
+        check_attr_type(language, [str, unicode], error_msg)
+        self.language = language
+        return self
+
+    def get_language(self):
+        """! @brief Get language used for comment.
+        @return Representation attribute 'language'.
+        """
+        return self.language
+
+    def set_tone(self, tone):
+        """! @brief Set tone.
+        @param tone The tone to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Tone value '%s' is not allowed" % tone
+        check_attr_type(tone, [str, unicode], error_msg)
+        self.tone = tone
+        return self
+
+    def get_tone(self):
+        """! @brief Get tone.
+        @return FormRepresentation attribute 'tone'.
+        """
+        return self.tone
+
+    def set_geographicalVariant(self, geographical_variant):
+        """! @brief Set geographical variant.
+        @param geographical_variant The geographical variant to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Geographical variant value '%s' is not allowed" % geographical_variant
+        check_attr_type(geographical_variant, [str, unicode], error_msg)
+        self.geographicalVariant = geographical_variant
+        return self
+
+    def get_geographicalVariant(self):
+        """! @brief Get geographical variant.
+        @return FormRepresentation attribute 'geographicalVariant'.
+        """
+        return self.geographicalVariant
+
+    def set_phoneticForm(self, phonetic_form):
+        """! @brief Set phonetic form.
+        @param phonetic_form The phonetic form to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Phonetic form value '%s' is not allowed" % phonetic_form
+        check_attr_type(phonetic_form, [str, unicode], error_msg)
+        self.phoneticForm = phonetic_form
+        return self
+
+    def get_phoneticForm(self):
+        """! @brief Get phonetic form.
+        @return FormRepresentation attribute 'phoneticForm'.
+        """
+        return self.phoneticForm
+
+    def set_contextualVariation(self, contextual_variation):
+        """! @brief Set contextual variation.
+        @param contextualVariation The contextual variation to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Contextual variation value '%s' is not allowed" % contextual_variation
+        check_attr_type(contextual_variation, [str, unicode], error_msg)
+        self.contextualVariation = contextual_variation
+        return self
+
+    def get_contextualVariation(self):
+        """! @brief Get contextual variation.
+        @return FormRepresentation attribute 'contextualVariation'.
+        """
+        return self.contextualVariation
+
+    def set_spellingVariant(self, spelling_variant):
+        """! @brief Set spelling variant.
+        @param spelling_variant The spelling variant to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Spelling variant value '%s' is not allowed" % spelling_variant
+        check_attr_type(spelling_variant, [str, unicode], error_msg)
+        self.spellingVariant = spelling_variant
+        return self
+
+    def get_spellingVariant(self):
+        """! @brief Get spelling variant.
+        @return FormRepresentation attribute 'spellingVariant'.
+        """
+        return self.spellingVariant
+
+    def set_citationForm(self, citation_form):
+        """! @brief Set citation form.
+        @param citation_form The citation form to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Citation form value '%s' is not allowed" % citation_form
+        check_attr_type(citation_form, [str, unicode], error_msg)
+        self.citationForm = citation_form
+        return self
+
+    def get_citationForm(self):
+        """! @brief Get citation form.
+        @return FormRepresentation attribute 'citationForm'.
+        """
+        return self.citationForm
+
+    def set_dialect(self, dialect):
+        """! @brief Set dialect.
+        @param dialect The dialect to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Dialect value '%s' is not allowed" % dialect
+        check_attr_type(dialect, [str, unicode], error_msg)
+        self.dialect = dialect
+        return self
+
+    def get_dialect(self):
+        """! @brief Get dialect.
+        @return FormRepresentation attribute 'dialect'.
+        """
+        return self.dialect
+
+    def set_transliteration(self, transliteration):
+        """! @brief Set transliteration.
+        @param transliteration The transliteration to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Transliteration value '%s' is not allowed" % transliteration
+        check_attr_type(transliteration, [str, unicode], error_msg)
+        self.transliteration = transliteration
+        return self
+
+    def get_transliteration(self):
+        """! @brief Get transliteration.
+        @return FormRepresentation attribute 'transliteration'.
+        """
+        return self.transliteration
+
+    def set_scriptName(self, script_name):
+        """! @brief Set script name.
+        @param script_name The script name to set.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Script name value '%s' is not allowed" % script_name
+        check_attr_type(script_name, [str, unicode], error_msg)
+        self.scriptName = script_name
+        return self
+
+    def get_scriptName(self):
+        """! @brief Get script name.
+        @return FormRepresentation attribute 'scriptName'.
+        """
+        return self.scriptName

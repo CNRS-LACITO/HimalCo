@@ -27,8 +27,6 @@ class TestFormFunctions(unittest.TestCase, Form):
 
     def test_init(self):
         Form.__new__(self)
-        self.assertIsNone(self.variantForm)
-        self.assertIsNone(self.type)
         self.assertListEqual(self.form_representation, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestFormFunctions)

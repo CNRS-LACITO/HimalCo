@@ -16,8 +16,6 @@ class TestStemFunctions(unittest.TestCase):
         del self.stem
 
     def test_init(self):
-        self.assertIsNone(self.stem.variantForm)
-        self.assertIsNone(self.stem.type)
         self.assertListEqual(self.stem.form_representation, [])
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStemFunctions)

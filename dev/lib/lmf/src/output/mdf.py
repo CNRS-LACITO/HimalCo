@@ -16,7 +16,19 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
     if object.__class__.__name__ == "Lexicon":
         for lexical_entry in object.get_lexical_entries():
             for marker in order:
-                value = lmf2mdf[marker](lexical_entry)
+                if type(marker) is list:
+                    # There is a bundle of markers
+                    group = lmf2mdf[marker[0] + "Group"](lexical_entry)
+                    for element in group:
+                        # Parse the list of markers
+                        for mkr in marker:
+                            value = lmf2mdf[mkr](element)
+                            if value is not None:
+                                mdf_file.write("\\" + mkr + " " + value + EOL)
+                    # Group and list of markers have been parsed => go to the next marker
+                    continue
+                else:
+                    value = lmf2mdf[marker](lexical_entry)
                 if type(value) is not list:
                     # Write the MDF output as follows: "\mdf_marker lmf_value"
                     if value is not None:

@@ -1,11 +1,17 @@
 #! /usr/bin/env python
 
+## Define languages
+VERNACULAR = "ver"
+ENGLISH = "eng"
+REGIONAL = "reg"
+NATIONAL = "nat"
+
 ## Mapping between MDF markers and LMF representation (input)
 mdf_lmf = dict({
     "lx" : lambda lx, lexical_entry: lexical_entry.set_lexeme(lx),
     "hm" : lambda hm, lexical_entry: lexical_entry.set_homonymNumber(hm),
-    "lc" : lambda lc, lexical_entry: None,
-    "ph" : lambda ph, lexical_entry: None,
+    "lc" : lambda lc, lexical_entry: lexical_entry.set_citation_form(lc), # or lexical_entry.set_contextual_variation(lc)
+    "ph" : lambda ph, lexical_entry: lexical_entry.set_phonetic_form(ph), # or lexical_entry.set_transliteration(ph)
     "se" : lambda se, lexical_entry: None,
     "ps" : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
     "pn" : lambda pn, lexical_entry: None,
@@ -56,10 +62,10 @@ mdf_lmf = dict({
     "cn" : lambda cn, lexical_entry: None,
     "cr" : lambda cr, lexical_entry: None,
     "mn" : lambda mn, lexical_entry: None,
-    "va" : lambda va, lexical_entry: None,
-    "ve" : lambda ve, lexical_entry: None,
-    "vn" : lambda vn, lexical_entry: None,
-    "vr" : lambda vr, lexical_entry: None,
+    "va" : lambda va, lexical_entry: lexical_entry.set_variant_form(va, type="phonetics"), # or lexical_entry.set_geographical_variant(va)
+    "ve" : lambda ve, lexical_entry: lexical_entry.set_variant_comment(ve, language=ENGLISH), # or lexical_entry.set_dialect(ve)
+    "vn" : lambda vn, lexical_entry: lexical_entry.set_variant_comment(vn, language=NATIONAL),
+    "vr" : lambda vr, lexical_entry: lexical_entry.set_variant_comment(vr, language=REGIONAL),
     "bw" : lambda bw, lexical_entry: None,
     "et" : lambda et, lexical_entry: None,
     "eg" : lambda eg, lexical_entry: None,
@@ -98,7 +104,8 @@ mdf_lmf = dict({
     "nq" : lambda nq, lexical_entry: None,
     "so" : lambda so, lexical_entry: None,
     "st" : lambda st, lexical_entry: lexical_entry.set_status(st),
-    "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt)
+    "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt),
+    "a" : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a)
 })
 
 ## Order in which MDF markers must be written (output)
@@ -159,10 +166,12 @@ mdf_order = [
     "cn", # cross-reference-national gloss
     "cr", # cross-reference-regional gloss
     "mn", # main entry form
-    "va", # variant form
-    "ve", # variant comment-English
-    "vn", # variant comment-national language
-    "vr", # variant comment-regional language
+    [
+        "va", # variant form
+        "ve", # variant comment-English
+        "vn", # variant comment-national language
+        "vr"  # variant comment-regional language
+    ],
     "bw", # borrowed word
     "et", # etymology
     "eg", # etymology-gloss
@@ -201,15 +210,15 @@ mdf_order = [
     "nq", # notes-questions
     "so", # source
     "st", # status
-    "dt", # datestamp
+    "dt"  # datestamp
 ]
 
 ## Mapping between LMF representation and MDF markers (output)
 lmf_mdf = dict({
     "lx" : lambda lexical_entry: lexical_entry.get_lexeme(),
     "hm" : lambda lexical_entry: lexical_entry.get_homonymNumber(),
-    "lc" : lambda lexical_entry: None,
-    "ph" : lambda lexical_entry: None,
+    "lc" : lambda lexical_entry: lexical_entry.get_citation_forms(), # or lexical_entry.get_contextual_variations()
+    "ph" : lambda lexical_entry: lexical_entry.get_phonetic_forms(), # or lexical_entry.get_transliterations()
     "se" : lambda lexical_entry: None,
     "ps" : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
     "pn" : lambda lexical_entry: None,
@@ -260,10 +269,11 @@ lmf_mdf = dict({
     "cn" : lambda lexical_entry: None,
     "cr" : lambda lexical_entry: None,
     "mn" : lambda lexical_entry: None,
-    "va" : lambda lexical_entry: None,
-    "ve" : lambda lexical_entry: None,
-    "vn" : lambda lexical_entry: None,
-    "vr" : lambda lexical_entry: None,
+    "vaGroup" : lambda lexical_entry: lexical_entry.get_form_representations(),
+    "va" : lambda form_representation: form_representation.get_variantForm(), # or form_representation.get_geographicalVariant() or form_representation.get_spellingVariant()
+    "ve" : lambda form_representation: form_representation.get_comment(ENGLISH), # or form_representation.get_dialect()
+    "vn" : lambda form_representation: form_representation.get_comment(NATIONAL),
+    "vr" : lambda form_representation: form_representation.get_comment(REGIONAL),
     "bw" : lambda lexical_entry: None,
     "et" : lambda lexical_entry: None,
     "eg" : lambda lexical_entry: None,
