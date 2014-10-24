@@ -8,6 +8,7 @@ from morphology.related_form import RelatedForm
 from common.range import partOfSpeech_range
 from utils.error_handling import Error
 from config.mdf import ps_partOfSpeech
+from utils.attr import check_attr_type, check_attr_range
 
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
@@ -22,7 +23,7 @@ class LexicalEntry():
         self.status = None
         self.date = None
         self.partOfSpeech = None
-        self.independentWord = None # boolean
+        self.independentWord = None
         self.bibliography = None
         ## UID is managed at the Lexicon level
         self.id = id
@@ -78,17 +79,12 @@ class LexicalEntry():
         @param part_of_speech The grammatical category to set.
         @return LexicalEntry instance.
         """
-        # Check part of speech value
-        if part_of_speech not in partOfSpeech_range:
-            # Try with converted value from MDF to LMF
-            try:
-                ps_partOfSpeech[part_of_speech]
-            except KeyError:
-                raise Error("Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (part_of_speech, self.get_lexeme()))
-            else:
-                self.partOfSpeech = ps_partOfSpeech[part_of_speech]
-                return self
-        self.partOfSpeech = part_of_speech
+        error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (str(part_of_speech), self.get_lexeme())
+        # Check part of speech type
+        check_attr_type(part_of_speech, [str, unicode], error_msg)
+        # Check range of part of speech value (also try with converted value from MDF to LMF)
+        value = check_attr_range(part_of_speech, partOfSpeech_range, error_msg, mapping=ps_partOfSpeech)
+        self.partOfSpeech = value
         return self
 
     def get_partOfSpeech(self):
@@ -153,6 +149,22 @@ class LexicalEntry():
         """
         return self.bibliography
 
+    def set_independentWord(self, independent_word):
+        """! @brief Set lexical entry independent word indication.
+        @param independent_word The independent word indication to set.
+        @return LexicalEntry instance.
+        """
+        error_msg = "Independent word '%s' encountered for lexeme '%s' is not allowed" % (str(independent_word), self.get_lexeme())
+        check_attr_type(independent_word, bool, error_msg)
+        self.independentWord = independent_word
+        return self
+
+    def get_independentWord(self):
+        """! @brief Get lexical entry independent word indication.
+        @return LexicalEntry attribute 'independentWord'.
+        """
+        return self.independentWord
+
     def get_id(self):
         """! @brief Get Unique IDentifier.
         @return LexicalEntry attribute 'id'.
@@ -163,6 +175,7 @@ class LexicalEntry():
         """! @brief Set lexeme.
         Attribute 'lexeme' is owned by Lemma.
         @param lexeme The lexeme to set.
+        @return LexicalEntry instance.
         """
         # Create a Lemma instance if not yet created
         if self.lemma is None:
@@ -177,8 +190,6 @@ class LexicalEntry():
         """
         if self.lemma is not None:
             return self.lemma.get_lexeme()
-        else:
-            return None
 
     def create_related_form(self, lexeme, semantic_relation):
         """! @brief Create a related form.
@@ -223,6 +234,188 @@ class LexicalEntry():
         """
         # Create a set without duplicates
         return set(self.related_form)
+
+    def get_form_representations(self):
+        """! @brief Get all form representations maintained by the lemma.
+        Attribute 'form_representation' is owned by Lemma.
+        @return Lemma attribute 'form_representation' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_form_representations()
+
+    def set_variant_form(self, variant_form, type="unspecified"):
+        """! @brief Set variant form and type.
+        Attributes 'variantForm' and 'type' are owned by FormRepresentation, which is owned by Lemma.
+        @param variant_form Variant form.
+        @param type Type of variant, in range 'type_variant_range' defined in 'common/range.py'.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_variant_form(variant_form, type)
+        return self
+
+    def set_variant_comment(self, comment, language=None):
+        """! @brief Set variant comment and language.
+        Attributes 'comment' and 'language' are owned by FormRepresentation, which is owned by Lemma.
+        @param comment Variant comment.
+        @param language Language of comment.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_variant_comment(comment, language)
+        return self
+
+    def set_tone(self, tone):
+        """! @brief Set tone.
+        Attribute 'tone' is owned by FormRepresentation, which is owned by Lemma.
+        @param tone The tone to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_tone(tone)
+        return self
+
+    def get_tones(self):
+        """! @brief Get all tones.
+        Attribute 'tone' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'tone' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_tones()
+
+    def set_geographical_variant(self, geographical_variant):
+        """! @brief Set geographical variant.
+        Attribute 'geographicalVariant' is owned by FormRepresentation, which is owned by Lemma.
+        @param geographical_variant The geographical variant to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_geographical_variant(geographical_variant)
+        return self
+
+    def set_phonetic_form(self, phonetic_form):
+        """! @brief Set phonetic form.
+        Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param phonetic_form The phonetic form to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_phonetic_form(phonetic_form)
+        return self
+
+    def get_phonetic_forms(self):
+        """! @brief Get all phonetic forms.
+        Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'phoneticForm' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_phonetic_forms()
+
+    def set_contextual_variation(self, contextual_variation):
+        """! @brief Set contextual variation.
+        Attribute 'contextualVariation' is owned by FormRepresentation, which is owned by Lemma.
+        @param contextual_variation The contextual variation to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_contextual_variation(contextual_variation)
+        return self
+
+    def get_contextual_variations(self):
+        """! @brief Get all contextual variations.
+        Attribute 'contextualVariation' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'contextualVariation' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_contextual_variations()
+
+    def set_spelling_variant(self, spelling_variant):
+        """! @brief Set spelling variant.
+        Attribute 'spellingVariant' is owned by FormRepresentation, which is owned by Lemma.
+        @param spelling_variant The spelling variant to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_spelling_variant(spelling_variant)
+        return self
+
+    def set_citation_form(self, citation_form):
+        """! @brief Set citation form.
+        Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param citation_form The citation form to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_citation_form(citation_form)
+        return self
+
+    def get_citation_forms(self):
+        """! @brief Get all citation forms.
+        Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'citationForm' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_citation_forms()
+
+    def set_dialect(self, dialect):
+        """! @brief Set dialect.
+        Attribute 'dialect' is owned by FormRepresentation, which is owned by Lemma.
+        @param dialect The dialect to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_dialect(dialect)
+        return self
+
+    def set_transliteration(self, transliteration):
+        """! @brief Set transliteration.
+        Attribute 'transliteration' is owned by FormRepresentation, which is owned by Lemma.
+        @param transliteration The transliteration to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_transliteration(transliteration)
+        return self
+
+    def get_transliterations(self):
+        """! @brief Get all transliterations.
+        Attribute 'transliteration' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'transliteration' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_transliterations()
+
+    def set_script_name(self, script_name):
+        """! @brief Set script name.
+        Attribute 'scriptName' is owned by FormRepresentation, which is owned by Lemma.
+        @param script_name The script name to set.
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_script_name(script_name)
+        return self
 
     def get_speaker(self):
         """! @brief Get speaker.

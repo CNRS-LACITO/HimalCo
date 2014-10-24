@@ -18,8 +18,6 @@ class TestRelatedFormFunctions(unittest.TestCase):
         del self.related_form
 
     def test_init(self):
-        self.assertIsNone(self.related_form.variantForm)
-        self.assertIsNone(self.related_form.type)
         self.assertListEqual(self.related_form.form_representation, [])
         self.assertIsNone(self.related_form.semanticRelation)
         self.assertIsNone(self.related_form.targets)
@@ -35,7 +33,7 @@ class TestRelatedFormFunctions(unittest.TestCase):
         self.assertTrue(test)
         # Test nominal case
         relation = "homonym"
-        self.assertEqual(self.related_form.set_semanticRelation(relation), self.related_form)
+        self.assertIs(self.related_form.set_semanticRelation(relation), self.related_form)
         self.assertEqual(self.related_form.semanticRelation, relation)
 
     def test_get_semanticRelation(self):

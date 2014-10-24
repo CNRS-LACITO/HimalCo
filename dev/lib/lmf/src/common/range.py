@@ -31,7 +31,7 @@ partOfSpeech_range = set([
     "linker"
 ])
 
-## Possible values allowed for LMF variant type Form attribute
+## Possible values allowed for LMF variant type FormRepresentation attribute
 type_variant_range = set([
     "unspecified",
     "orthography",

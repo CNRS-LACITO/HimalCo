@@ -13,7 +13,7 @@ class WordForm(Form):
         WordForm instances are owned by LexicalEntry.
         @return A WordForm instance.
         """
-        # Initialize Form attributes: 'variantForm', 'type' and 'form_representation'
+        # Initialize Form attribute 'form_representation'
         self.__new__()
         self.grammaticalNumber = None
         self.grammaticalGender = None
