@@ -61,7 +61,7 @@ order = dict({'':0,
     'ǃ':43.1, 'ǀ':43.2, 'ǂ':43.3, 'ǁ':43.4,
     '_':44,
     # Special characters
-    '*':45.1, '˭':45.2, 'ʰ':45.3, ' ̩':45.4, '‑':45.5})
+    '*':45.1, '˭':45.2, 'ʰ':45.3, ' ̩':45.4, '‑':45.5, '-':45.6})
 unicode_order = ({})
 for key in order.keys():
     unicode_order.update({key.decode(encoding=CODEC):order[key]})
@@ -163,6 +163,7 @@ class Xml2Tex(InOut, XmlFormat):
         from optparse import OptionParser
         parser = OptionParser()
         parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False, help="print more details to stdout [default=False]")
+        parser.add_option("-p", "--preamble", dest="preamble", action="store", default=None, help="LaTeX file header [default=None]")
         parser.add_option("-i", "--input", dest="input", action="store", default=DEFAULT_INPUT, help="input XML file [default=" + str(DEFAULT_INPUT) + "]")
         parser.add_option("-o", "--output", dest="output", action="store", default=DEFAULT_OUTPUT, help="output LaTeX file [default=" + str(DEFAULT_OUTPUT) + "]")
         parser.add_option("-t", "--test", dest="test", action="store", default=DEFAULT_TEST, help="test to run [default=" + str(DEFAULT_TEST) + "]")
@@ -205,6 +206,10 @@ class Xml2Tex(InOut, XmlFormat):
             hdr = self.open_read("./xml2tex/tex/preamble_GJ.tex")
         elif self.options.test == "na":
             hdr = self.open_read("./xml2tex/tex/preamble_AM.tex")
+        elif self.options.preamble is not None:
+            hdr = self.open_read(self.options.preamble)
+        else:
+            return ""
         header = hdr.read()
         hdr.close()
         return header
@@ -361,7 +366,20 @@ class Xml2Tex(InOut, XmlFormat):
             "xn"    : lambda e: "\\trans \\textit{\zh{" + e.text + "}}\n",
             "xr"    : lambda e: "",
             "xf"    : lambda e: "\\trans " + e.text + "\n",
-            "xc"    : lambda e: "(" + e.text + ")\n"
+            "xc"    : lambda e: "(" + e.text + ")\n",
+            # Following markers are used in Stau
+            "mr"    : lambda e: "\\textit{Morph:} \ipa{" + e.text + "}.\n",
+            "rgy"   : lambda e: "\\textit{Rgyalrong:} \ipa{" + e.text + "}.\n",
+            "erg"   : lambda e: "\\textit{Ergatif:} \ipa{" + e.text + "}.\n",
+            "a1s"   : lambda e: "",
+            "a2s"   : lambda e: "",
+            "a3s"   : lambda e: "",
+            "a1p"   : lambda e: "",
+            "a2p"   : lambda e: "",
+            "a1s_2s": lambda e: "",
+            "a2s_1s": lambda e: "",
+            "a3s_1s": lambda e: "",
+            "a3d"   : lambda e: ""
         })
         # na fr
         format_fr = dict({
