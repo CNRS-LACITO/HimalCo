@@ -9,6 +9,7 @@ from common.range import partOfSpeech_range
 from utils.error_handling import Error
 from config.mdf import ps_partOfSpeech
 from utils.attr import check_attr_type, check_attr_range
+from core.sense import Sense
 
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
@@ -417,6 +418,21 @@ class LexicalEntry():
         self.lemma.set_script_name(script_name)
         return self
 
+    def create_and_add_sense(self, sense_number):
+        """! @brief Create and add a sense to the lexical entry.
+        @param sense_number Number of the sense to add.
+        @return LexicalEntry instance.
+        """
+        id = str(self.get_id()) + "_" + str(sense_number)
+        self.sense.append(Sense(id).set_senseNumber(sense_number))
+        return self
+
+    def get_senses(self):
+        """! @brief Get all senses maintained by the lexical entry.
+        @return LexicalEntry attribute 'sense'.
+        """
+        return self.sense
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.
@@ -424,9 +440,6 @@ class LexicalEntry():
         return self.__speaker
 
     def get_definitions(self):
-        pass
-
-    def get_senses(self):
         pass
 
     def get_gloss(self, lang):

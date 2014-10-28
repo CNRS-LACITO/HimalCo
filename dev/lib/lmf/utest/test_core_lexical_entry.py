@@ -6,6 +6,7 @@ from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 from utils.error_handling import Error
 from core.form_representation import FormRepresentation
+from core.sense import Sense
 
 ## Test LexicalEntry class
 
@@ -385,10 +386,35 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIs(self.lexical_entry.set_script_name(script), self.lexical_entry)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].scriptName, script)
 
-    def test_get_definitions(self):
-        pass
+    def test_create_and_add_sense(self):
+        # Test create and add senses to the lexical entry
+        nb1 = "1"
+        self.assertIs(self.lexical_entry.create_and_add_sense(nb1), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(self.lexical_entry.sense[0].id, "0_1")
+        # Test with an identifier
+        self.lexical_entry.id = "form"
+        nb2 = 22
+        self.assertIs(self.lexical_entry.create_and_add_sense(nb2), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 2)
+        self.assertEqual(self.lexical_entry.sense[1].id, "form_22")
+        # Release Sense instances
+        del self.lexical_entry.sense[1], self.lexical_entry.sense[0]
 
     def test_get_senses(self):
+        # List of Sense instances is empty
+        self.assertListEqual(self.lexical_entry.get_senses(), [])
+        # Create Sense instances and add them to the list
+        sens1 = Sense()
+        sens2 = Sense()
+        self.lexical_entry.sense = [sens1, sens2]
+        # Test get senses
+        self.assertListEqual(self.lexical_entry.get_senses(), [sens1, sens2])
+        # Delete Sense instances
+        del self.lexical_entry.sense[:]
+        del sens1, sens2
+
+    def test_get_definitions(self):
         pass
 
     def test_get_gloss(self):

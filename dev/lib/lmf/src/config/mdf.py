@@ -15,9 +15,9 @@ mdf_lmf = dict({
     "se" : lambda se, lexical_entry: None,
     "ps" : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
     "pn" : lambda pn, lexical_entry: None,
-    "sn" : lambda sn, lexical_entry: None,
+    "sn" : lambda sn, lexical_entry: lexical_entry.create_and_add_sense(sn),
     "gv" : lambda gv, lexical_entry: None,
-    "dv" : lambda dv, lexical_entry: None,
+    "dv" : lambda dv, lexical_entry: lexical_entry.set_definition(dv, language=VERNACULAR),
     "ge" : lambda ge, lexical_entry: None,
     "re" : lambda re, lexical_entry: None,
     "we" : lambda we, lexical_entry: None,
@@ -119,41 +119,43 @@ mdf_order = [
     "se", # subentry
     "ps", # part of speech
     "pn", # part of speech-national language
-    "sn", # sense number
-    "gv", # gloss-vernacular
-    "dv", # definition-vernacular
-    "ge", # gloss-English
-    "re", # reverse-English
-    "we", # word level gloss-English
-    "de", # definition-English
-    "gn", # gloss-national language
-    "rn", # reverse-national language
-    "wn", # word level gloss-national language
-    "dn", # definition-national language
-    "gr", # gloss-regional lang. (with \gn)
-    "rr", # reverse-regional lang. (with \rn)
-    "wr", # word-level gloss-regional (with \wn)
-    "dr", # definition-regional lang. (with \dn)
-    "lt", # literal meaning
-    "sc", # scientific name
-    "rf", # reference for example
-    "xv", # example sentence-vernacular
-    "xe", # example sentence-English
-    "xn", # example sentence-national language
-    "xr", # example sent.-regional (with \xn)
-    "xg", # example sentence-interlinear gloss
-    "uv", # usage-vernacular
-    "ue", # usage-English
-    "un", # usage-national language
-    "ur", # usage-regional (combines with \un)
-    "ev", # encyclopedic-vernacular
-    "ee", # encyclopedic-English
-    "en", # encyclopedic-national language
-    "er", # encyclopedic-regional language
-    "ov", # only (restrictions)-vernacular
-    "oe", # only (restrictions)-English
-    "on", # only (restrictions)-national language
-    "or", # only (restrictions)-regional (with \on)
+    [
+        "sn", # sense number
+        "gv", # gloss-vernacular
+        "dv", # definition-vernacular
+        "ge", # gloss-English
+        "re", # reverse-English
+        "we", # word level gloss-English
+        "de", # definition-English
+        "gn", # gloss-national language
+        "rn", # reverse-national language
+        "wn", # word level gloss-national language
+        "dn", # definition-national language
+        "gr", # gloss-regional lang. (with \gn)
+        "rr", # reverse-regional lang. (with \rn)
+        "wr", # word-level gloss-regional (with \wn)
+        "dr", # definition-regional lang. (with \dn)
+        "lt", # literal meaning
+        "sc", # scientific name
+        "rf", # reference for example
+        "xv", # example sentence-vernacular
+        "xe", # example sentence-English
+        "xn", # example sentence-national language
+        "xr", # example sent.-regional (with \xn)
+        "xg", # example sentence-interlinear gloss
+        "uv", # usage-vernacular
+        "ue", # usage-English
+        "un", # usage-national language
+        "ur", # usage-regional (combines with \un)
+        "ev", # encyclopedic-vernacular
+        "ee", # encyclopedic-English
+        "en", # encyclopedic-national language
+        "er", # encyclopedic-regional language
+        "ov", # only (restrictions)-vernacular
+        "oe", # only (restrictions)-English
+        "on", # only (restrictions)-national language
+        "or"  # only (restrictions)-regional (with \on)
+    ],
     "lf", # lexical function
     "le", # lexical function-English
     "ln", # lexical function-national language
@@ -222,41 +224,42 @@ lmf_mdf = dict({
     "se" : lambda lexical_entry: None,
     "ps" : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
     "pn" : lambda lexical_entry: None,
-    "sn" : lambda lexical_entry: None,
-    "gv" : lambda lexical_entry: None,
-    "dv" : lambda lexical_entry: None,
-    "ge" : lambda lexical_entry: None,
-    "re" : lambda lexical_entry: None,
-    "we" : lambda lexical_entry: None,
-    "de" : lambda lexical_entry: None,
-    "gn" : lambda lexical_entry: None,
-    "rn" : lambda lexical_entry: None,
-    "wn" : lambda lexical_entry: None,
-    "dn" : lambda lexical_entry: None,
-    "gr" : lambda lexical_entry: None,
-    "rr" : lambda lexical_entry: None,
-    "wr" : lambda lexical_entry: None,
-    "dr" : lambda lexical_entry: None,
-    "lt" : lambda lexical_entry: None,
-    "sc" : lambda lexical_entry: None,
-    "rf" : lambda lexical_entry: None,
-    "xv" : lambda lexical_entry: None,
-    "xe" : lambda lexical_entry: None,
-    "xn" : lambda lexical_entry: None,
-    "xr" : lambda lexical_entry: None,
-    "xg" : lambda lexical_entry: None,
-    "uv" : lambda lexical_entry: None,
-    "ue" : lambda lexical_entry: None,
-    "un" : lambda lexical_entry: None,
-    "ur" : lambda lexical_entry: None,
-    "ev" : lambda lexical_entry: None,
-    "ee" : lambda lexical_entry: None,
-    "en" : lambda lexical_entry: None,
-    "er" : lambda lexical_entry: None,
-    "ov" : lambda lexical_entry: None,
-    "oe" : lambda lexical_entry: None,
-    "on" : lambda lexical_entry: None,
-    "or" : lambda lexical_entry: None,
+    "snGroup" : lambda lexical_entry: lexical_entry.get_senses(),
+    "sn" : lambda sense: sense.get_senseNumber(),
+    "gv" : lambda sense: None,
+    "dv" : lambda sense: sense.get_definition(VERNACULAR),
+    "ge" : lambda sense: None,
+    "re" : lambda sense: None,
+    "we" : lambda sense: None,
+    "de" : lambda sense: None,
+    "gn" : lambda sense: None,
+    "rn" : lambda sense: None,
+    "wn" : lambda sense: None,
+    "dn" : lambda sense: None,
+    "gr" : lambda sense: None,
+    "rr" : lambda sense: None,
+    "wr" : lambda sense: None,
+    "dr" : lambda sense: None,
+    "lt" : lambda sense: None,
+    "sc" : lambda sense: None,
+    "rf" : lambda sense: None,
+    "xv" : lambda sense: None,
+    "xe" : lambda sense: None,
+    "xn" : lambda sense: None,
+    "xr" : lambda sense: None,
+    "xg" : lambda sense: None,
+    "uv" : lambda sense: None,
+    "ue" : lambda sense: None,
+    "un" : lambda sense: None,
+    "ur" : lambda sense: None,
+    "ev" : lambda sense: None,
+    "ee" : lambda sense: None,
+    "en" : lambda sense: None,
+    "er" : lambda sense: None,
+    "ov" : lambda sense: None,
+    "oe" : lambda sense: None,
+    "on" : lambda sense: None,
+    "or" : lambda sense: None,
     "lf" : lambda lexical_entry: None,
     "le" : lambda lexical_entry: None,
     "ln" : lambda lexical_entry: None,
