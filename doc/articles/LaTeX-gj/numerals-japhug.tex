@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\documentclass[oldfontcommands,oneside,a4paper,12pt]{article} 
 \usepackage{xunicode}%packages de base pour utiliser xetex
 \usepackage{fontspec}
 \usepackage{natbib}
@@ -31,7 +31,7 @@
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
 \newfontfamily\greek[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
-\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipa}[1]{{\phon#1}} 
 %\newcommand{\ipab}[1]{{\phon #1}}
 \newcommand{\ipapl}[1]{{\phondroit #1}} 
 \newcommand{\captionft}[1]{{\captionfont #1}} 
@@ -46,30 +46,145 @@
 \author{Guillaume Jacques}
 \maketitle
 
+\section{Introduction}
 In many Burmo-Qiangic languages, including Lolo-Burmese (\citealt{bradley05numerals}) and Naish (\citealt{michaud11cl}), the combination of numerals with classifier is the one (in some cases the only one) area of grammar where morphological irregularities and complex alternations are attested.
 
 Somewhat paradoxically, in Rgyalrong languages, otherwise known for their polysynthetic and irregular verbal morphology (\citealt{jacques12incorp}), numerals and classifiers present relatively simple and predictable alternations. 
 
-In this paper, we first present a detailed description of the morphology and morphosyntax of numerals and classifiers in japhug (going beyond the account in   \citealt{jacques08zh}) based on both corpus data and elicitation for some paradigms. 
+In this paper, we first present a detailed description of the morphology and morphosyntax of numerals and classifiers in Japhug and other Rgyalrongicn languages (going beyond the account in   \citealt{jacques08zh}) based on both corpus data and elicitation for some paradigms. 
 
-Then, we evaluate several competing analyses to account for the observed data: either the system found in Japhug has recently been completely innovated, or it is cognate with the numeral+classifier paradigms in Lolo-Burmese and Naish but has been thoroughly simplified by analogical levelling.
+Then, we evaluate several competing analyses to account for the observed data. First,  the system found in Japhug could have recently been completely innovated. Second,  it could be cognate with the numeral + classifier paradigms in Lolo-Burmese and Naish but have been thoroughly simplified by analogical levelling.  Third, Japhug may never have developed these irregular systems: as shown by \citet{bradley05numerals}, most alternations in Lolo-Burmese and other languages  are the indirect effects of lost final obstruents. Since Japhug preserved all final obstruents as distinct segments, the basic conditions for the alternations to develop might not have been present in the first place.
 
-Finally, we propose that  reason why Japhug never developed complex and irregular paradigms for classifier is because, as shown by \citet{bradley05numerals}, most alternations in Lolo-Burmese and other languages  are the indirect effects of lost final obstruents. Since Japhug preserved all final obstruents as distinct segments, the basic conditions for the alternations to develop were not present in the first place.
-
-
- \section{Plain numerals}
-
- \section{Numeral prefixes}
+\section{Numerals in Rgyalrong languages}
+ \subsection{Plain numerals}
+ Rgyalrongic languages differ from otherwise closely related languages such as Naish (\citealt{michaud11cl}) or Pumi (\citealt[141]{daudey14grammar}) in that the numerals 11, 12, 13, 16  and in some languages 14, present a labial linker element between the root for `ten' and that of the unit.  
+ This labial linker  is variously realized as a stop, a labio-dental fricative or the nasal \ipa{m} depending on the following consonant.
  
-laʁnɯz	 laʁnɯ-sŋi
-laʁnɯχsɯm	laʁnɯχsɯ-sŋi
-lɤβdelɤŋu	lɤβdelɤŋu-sŋi
-lɤŋɤtʂɤɣ	lɤŋɤtʂɤ-sŋi	
-ɕnɤcat	ɕnɤcɤ-sŋi 
-kɯngɯsqi	kɯngɯsqɯ-sŋi
-
+ The linker appears whenever  the root of the unit does not contain an initial cluster. Note that the bare root of the numeral does not always correspond to the simple numeral. In Japhug \ipa{ʁnɯz}  `two' and 	\ipa{χsɯm} `three'  have a uvular prefix; in Stau \ipa{ɣni}, \ipa{xsʚ}, \ipa{ɣɮdə} and 	\ipa{xtɕʰu}   have a velar fricative prefix which is lost in the numerals between 11 and 20, and which appears to correspond  to  to the presyllable \ipa{kɯ--} found in the numerals from four to nine in Japhug.\footnote{On the simplification of presyllables in Japhug, see \citet{jacques14antipassive}.}
  
- \section{Numeral prefixes}
+Since the numerals which do not have the linker element (15, 17, 18 and 19) are also the ones whose bare root contains an initial cluster, the labial linker can thus be considered to appear between the two numerals roots in numerals between 11 and 19, whenever no cluster is present in the second root.
+ 
+It is unclear to what extent this linker is a Rgyalrongic innovation, or an archaism, lost in other languages due to  analogy, but its complete absence outside of Rgyalrongic suggests that the second option is more probable.
+
+
+Numerals between  twenty  and 99 in Japhug can be generated by combining the tens with the units, replacing the \ipa{--sqi} element with the appropriate form, as indicated for numerals between 21 and 29 in Table \ref{tab:num.simple}.
+ 
+ 
+\begin{table}[H]
+\caption{Comparison of basic numerals in Japhug and Stau}  \label{tab:num.simple} \centering
+\begin{tabular}{lllllll}
+\toprule
+Numeral & Japhug & Stau \\
+\midrule
+1	&	\ipa{tɤɣ}  &	\ipa{ru}  &	\\
+2	&	\ipa{ʁ-nɯz}  &	\ipa{ɣ-ni}  &	\\
+3	&	\ipa{χ-sɯm}  &	\ipa{x-sʚ}  &	\\
+4	&	\ipa{kɯ-βde}  &	\ipa{ɣ-ɮdə}  &	\\
+5	&	\ipa{kɯ-mŋu}  &	\ipa{mbe}  &	\\
+6	&	\ipa{kɯ-tʂɤɣ}  &	\ipa{x-tɕʰu}  &	\\
+7	&	\ipa{kɯ-ɕnɯz}  &	\ipa{zɲi}  &	\\
+8	&	\ipa{kɯ-rcat}  &	\ipa{rje}  &	\\
+9	&	\ipa{kɯ-ngɯt}  &	\ipa{ŋɡə}  &	\\
+10	&	\ipa{sqi}  &	\ipa{zʁa}  &	\\
+\midrule
+11	&	\ipa{sqa-\textbf{p}-tɯɣ} \grise &	\ipa{ʁa-\textbf{v}-ru}  \grise&	\\
+12	&	\ipa{sqa-\textbf{m}-nɯz} \grise &	\ipa{ʁa-\textbf{m}-ɲi}  \grise&	\\
+13	&	\ipa{sqa-\textbf{f}-sum}  \grise&	\ipa{ʁa-\textbf{f}-sʚ} \grise &	\\
+14	&	\ipa{sqa-βde}  &	\ipa{ʁa-\textbf{v}-ɮdə}  \grise&	\\
+15	&	\ipa{sqa-mŋu}  &	\ipa{ʁa-mbe}  &	\\
+16	&	\ipa{sqa-\textbf{p}-rɤɣ}  \grise&	\ipa{ʁa-\textbf{p}-tɕʰu}  \grise&	\\
+17	&	\ipa{sqa-ɕnɯz}  &	\ipa{ʁa-zɲi}  &	\\
+18	&	\ipa{sqa-rcat}  &	\ipa{ʁa-rje}  &	\\
+19	&	\ipa{sqa-ngɯt}  &	\ipa{ʁa-ŋɡə}  &	\\
+20	&	\ipa{ɣnɤ-sqi}  &	\ipa{ɣnə-sqʰa}  &	\\
+\midrule
+21	&	\ipa{ɣnɤ-sqaptɯɣ}  &	\ipa{nə-ɣru}  &	\\	
+22	&	\ipa{ɣnɤ-sqamnɯz}  &	\ipa{nə-ɣni}  &	\\	
+23	&	\ipa{ɣnɤ-sqafsum}  &	\ipa{nə-xsʚ}  &	\\	
+24	&	\ipa{ɣnɤ-sqaβde}  &	\ipa{nə-ɣɮdə}  &	\\	
+25	&	\ipa{ɣnɤ-sqamŋu}  &	\ipa{nə-mbe}  &	\\	
+26	&	\ipa{ɣnɤ-sqaprɤɣ}  &	\ipa{nə-xtɕʰu}  &	\\	
+27	&	\ipa{ɣnɤ-sqaɕnɯz}  &	\ipa{nə-zɲi}  &	\\	
+28	&	\ipa{ɣnɤ-sqarcat}  &	\ipa{nə-rje}  &	\\	
+29	&	\ipa{ɣnɤ-sqangɯt}  &	\ipa{nə-ŋgə}  &	\\	
+\midrule					
+30	&	\ipa{fsu-sqi}  &	\ipa{xsʚ-sqʰa}  &	\\	
+40	&	\ipa{kɯβdɤ-sqi}  &	\ipa{ɣɮə-sqʰa}  &	\\	
+50	&	\ipa{kɯmŋɤ-sqi}  &	\ipa{mbe-sqʰa}  &	\\	
+60	&	\ipa{kɯtʂɤ-sqi}  &	\ipa{xtɕʰu-sqʰa}  &	\\	
+70	&	\ipa{kɯɕnɤ-sqi}  &	\ipa{zɲi-sqʰa}  &	\\	
+80	&	\ipa{kɯrcɤ-sqi}  &	\ipa{rje-sqʰa}  &	\\	
+90	&	\ipa{kɯngɯ-sqi}  &	\ipa{ŋɡə-sqʰa}  &	\\	
+\bottomrule
+\end{tabular}
+\end{table}
+		
+
+
+ \subsection{Numeral prefixes}
+ 
+ In contrast with the relatively complex forms of the numerals 11 to 19, the combinations of numerals and classifiers in Japhug and Stau are relatively simple.
+ 
+Table \ref{tab:num.prefix} illustrates the numeral prefix paradigm in Japhug: the final consonants of the numeral root are lost, the vowels \ipa{a} and \ipa{i} change to \ipa{ɤ} and \ipa{ɯ} respectively, but no other change takes place. In the case of the numerals above ten, prefixal form is optional; it is possible to use the free form instead. Prefixal forms for other numerals under 100 can be generated with the same rules.
+ 
+ \begin{table}[H]
+\caption{Numeral prefixes in Japhug}  \label{tab:num.prefix} \centering
+\begin{tabular}{lllllll}
+\toprule
+Numeral & Free form &  \ipa{--sŋi} `day' &  \ipa{--rʑaʁ} `night' \\
+\midrule
+ 1	&	\ipa{tɤɣ}  &	\ipa{tɯ-sŋi}  &	\ipa{tɤ-rʑaʁ}  &	\\
+2	&	\ipa{ʁnɯz}  &	\ipa{ʁnɯ-sŋi}  &	\ipa{ʁnɤ-rʑaʁ}  &	\\
+3	&	\ipa{χsɯm}  &	\ipa{χsɯ-sŋi}  &	\ipa{χsɤ-rʑaʁ}  &	\\
+4	&	\ipa{kɯβde}  &	\ipa{kɯβde-sŋi}  &	\ipa{kɯβdɤ-rʑaʁ}  &	\\
+5	&	\ipa{kɯmŋu}  &	\ipa{kɯmŋu-sŋi}  &	\ipa{kɯmŋɤ-rʑaʁ}  &	\\
+6	&	\ipa{kɯtʂɤɣ}  &	\ipa{kɯtʂɤ-sŋi}  &	\ipa{kɯtʂɤ-rʑaʁ}  &	\\
+7	&	\ipa{kɯɕnɯz}  &	\ipa{kɯɕnɯ-sŋi}  &	\ipa{kɯɕnɤ-rʑaʁ}  &	\\
+8	&	\ipa{kɯrcat}  &	\ipa{kɯrcɤ-sŋi}  &	\ipa{kɯrcɤ-rʑaʁ}  &	\\
+9	&	\ipa{kɯngɯt}  &	\ipa{kɯngɯ-sŋi}  &	\ipa{kɯngɤ-rʑaʁ}  &	\\
+10	&	\ipa{sqi}  &	\ipa{sqɯ-sŋi}  &\ipa{sqɤ-rʑaʁ}  &	\\
+\midrule
+11	&	\ipa{sqaptɯɣ}  &	\ipa{sqaptɯ-sŋi}  &	\\
+12	&	\ipa{sqamnɯz}  &	\ipa{sqamnɯ-sŋi}  &	\\
+13	&	\ipa{sqafsum}  &	\ipa{sqafsum-sŋi}  &	\\
+14	&	\ipa{sqaβde}  &	\ipa{sqaβde-sŋi}  &	\\
+15	&	\ipa{sqamŋu}  &	\ipa{sqamŋu-sŋi}  &	\\
+16	&	\ipa{sqaprɤɣ}  &	\ipa{sqaprɤ-sŋi}  &	\\
+17	&	\ipa{sqaɕnɯz}  &	\ipa{sqaɕnɯ-sŋi}  &	\\
+18	&	\ipa{sqarcat}  &	\ipa{sqarcɤ-sŋi}  &	\\
+19	&	\ipa{sqangɯt}  &	\ipa{sqangɯ-sŋi}  &	\\
+20	&	\ipa{ɣnɤsqi}  &	\ipa{ɣnɤsqɯ-sŋi}  &	\\
+\bottomrule
+\end{tabular}
+\end{table}
+All classifiers in Japhug except \ipa{--rʑaʁ} `night' follow the paradigm of \ipa{--sŋi} `day'. The classifier \ipa{--rʑaʁ} `night' is the only one with irregular forms, and even  \ipa{--rʑaʁ} can be used with the regular paradigm.
+ 
+%fsusqi kɯβdɤsqɯ-xpa  
+ 
+ 
+ 
+ 
+ 
+ 
+ The numeral `one hundred' \ipa{tɯ-ri} \ipa{ɣurʑa}
+ 
+\citet[101]{daudey14grammar}
+\ipa{ɕí} 
+%(eight: \ipa{ɕwɐ̌})
+\ipa{--ɻɛj}
+ 
+ 
+ In Stau, only the numeral prefixes  `one' \ipa{e--} and `two' \ipa{ɣnə--} have a special form, the rest is identical to the free numerals.
+ \subsection{Approximate Numerals}
+%laʁnɯz	 laʁnɯ-sŋi
+%laʁnɯχsɯm	laʁnɯχsɯ-sŋi
+%lɤβdelɤŋu	lɤβdelɤŋu-sŋi
+%lɤŋɤtʂɤɣ	lɤŋɤtʂɤ-sŋi	
+%ɕnɤcat	ɕnɤcɤ-sŋi 
+%kɯngɯsqi	kɯngɯsqɯ-sŋi
+%
+% 
+% \section{Numeral prefixes}
 
 
 \bibliographystyle{linquiry2}
