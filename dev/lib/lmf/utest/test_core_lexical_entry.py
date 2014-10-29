@@ -414,11 +414,57 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del self.lexical_entry.sense[:]
         del sens1, sens2
 
-    def test_get_definitions(self):
-        pass
+    def test_create_sense(self):
+        id = "ID"
+        # Test create sense
+        sense = self.lexical_entry.create_sense(id)
+        self.assertEqual(sense.id, id)
+        # Release Sense instance
+        del sense
 
-    def test_get_gloss(self):
-        pass
+    def test_add_sense(self):
+        # Create senses
+        sens1 = Sense("id1")
+        sens2 = Sense("id2")
+        # Test add senses to the lexical entry
+        self.assertIs(self.lexical_entry.add_sense(sens1), self.lexical_entry)
+        self.assertListEqual(self.lexical_entry.sense, [sens1])
+        self.assertEqual(self.lexical_entry.sense[0].id, "id1")
+        self.assertIs(self.lexical_entry.add_sense(sens2), self.lexical_entry)
+        self.assertListEqual(self.lexical_entry.sense, [sens1, sens2])
+        self.assertEqual(self.lexical_entry.sense[1].id, "id2")
+        # Release Sense instances
+        del self.lexical_entry.sense[:]
+        del sens1, sens2
+
+    def test_get_last_sense(self):
+        # List of Sense instances is empty
+        self.assertIsNone(self.lexical_entry.get_last_sense())
+        # Create Sense instances and add them to the list
+        sens1 = Sense()
+        sens2 = Sense()
+        self.lexical_entry.sense = [sens1, sens2]
+        # Test get last sense
+        self.assertIs(self.lexical_entry.get_last_sense(), sens2)
+        self.lexical_entry.sense.pop()
+        self.assertIs(self.lexical_entry.get_last_sense(), sens1)
+        # Release Sense instances
+        del self.lexical_entry.sense[:]
+        del sens1, sens2
+
+    def test_set_definition(self):
+        definition = "def"
+        language = "lang"
+        self.assertIs(self.lexical_entry.set_definition(definition, language), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].definition, definition)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].language, language)
+
+    def test_set_gloss(self):
+        gloss = "GLOSS"
+        language = "lang"
+        self.assertIs(self.lexical_entry.set_gloss(gloss, language), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].gloss, gloss)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].language, language)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 

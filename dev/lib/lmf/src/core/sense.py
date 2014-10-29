@@ -3,6 +3,8 @@
 """! @package core
 """
 
+from core.definition import Definition
+
 class Sense():
     """! "Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry." (LMF)
     """
@@ -76,3 +78,105 @@ class Sense():
         @return Sense attribute 'senseNumber'.
         """
         return self.senseNumber
+
+    def create_definition(self):
+        """! @brief Create a definition.
+        @return Definition instance.
+        """
+        return Definition()
+
+    def add_definition(self, definition):
+        """! @brief Add a definition to the sense.
+        @param definition The Definition instance to add to the sense.
+        @return Sense instance.
+        """
+        self.definition.append(definition)
+        return self
+
+    def get_definitions(self):
+        """! @brief Get all definitions maintained by the sense.
+        @return A Python list of definitions.
+        """
+        return self.definition
+
+    def find_definitions(self, language):
+        """! @brief Find definitions.
+        This attribute is owned by Definition.
+        @param language The language to consider to retrieve the definition.
+        @return A Python list of found Definition attributes 'definition'.
+        """
+        found_definitions = []
+        for definition in self.get_definitions():
+            if definition.get_language() == language:
+                if definition.get_definition() is not None:
+                    found_definitions.append(definition.get_definition())
+        return found_definitions
+
+    def set_definition(self, definition, language=None):
+        """! @brief Set definition and language.
+        These attributes are owned by Definition.
+        @param definition Definition.
+        @param language Language of definition.
+        @return Sense instance.
+        """
+        instance = None
+        # Find if there is a Definition instance with this language without definition
+        for inst in self.get_definitions():
+            if inst.get_language() == language and inst.get_definition() is None:
+                # Found the Definition instance to set
+                instance = inst
+                break
+        if instance is None:
+            # Set first Definition instance that has no definition nor language
+            for inst in self.get_definitions():
+                if inst.get_language() is None and inst.get_definition() is None:
+                    # Found the Definition instance to set
+                    instance = instance
+                    break
+        if instance is None:
+            # Create a Definition instance
+            instance = self.create_definition()
+            self.add_definition(instance)
+        instance.set_definition(definition, language)
+        return self
+
+    def find_glosses(self, language):
+        """! @brief Find glosses.
+        This attribute is owned by Definition.
+        @param language The language to consider to retrieve the gloss.
+        @return A Python list of found Definition attributes 'gloss'.
+        """
+        found_glosses = []
+        for definition in self.get_definitions():
+            if definition.get_language() == language:
+                if definition.get_gloss() is not None:
+                    found_glosses.append(definition.get_gloss())
+        return found_glosses
+
+    def set_gloss(self, gloss, language=None):
+        """! @brief Set gloss and language.
+        These attributes are owned by Definition.
+        @param gloss Gloss.
+        @param language Language of gloss.
+        @return Sense instance.
+        """
+        instance = None
+        # Find if there is a Definition instance with this language without gloss
+        for inst in self.get_definitions():
+            if inst.get_language() == language and inst.get_gloss() is None:
+                # Found the Definition instance to set
+                instance = inst
+                break
+        if instance is None:
+            # Set first Definition instance that has no gloss nor language
+            for inst in self.get_definitions():
+                if inst.get_language() is None and inst.get_gloss() is None:
+                    # Found the Definition instance to set
+                    instance = instance
+                    break
+        if instance is None:
+            # Create a Definition instance
+            instance = self.create_definition()
+            self.add_definition(instance)
+        instance.set_gloss(gloss, language)
+        return self

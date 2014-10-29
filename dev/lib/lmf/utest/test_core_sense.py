@@ -2,6 +2,7 @@
 
 from startup import *
 from core.sense import Sense
+from core.definition import Definition
 
 ## Test Sense class
 
@@ -37,6 +38,97 @@ class TestSenseFunctions(unittest.TestCase):
         nb = 456
         self.sense.senseNumber = nb
         self.assertEqual(self.sense.get_senseNumber(), nb)
+
+    def test_create_definition(self):
+        # Test create definition
+        definition = self.sense.create_definition()
+        self.assertIsInstance(definition, Definition)
+        # Release Definition instance
+        del definition
+
+    def test_add_definition(self):
+        # Create definitions
+        def1 = Definition()
+        def2 = Definition()
+        # Test add definitions to the sense
+        self.assertIs(self.sense.add_definition(def1), self.sense)
+        self.assertListEqual(self.sense.definition, [def1])
+        self.assertIs(self.sense.add_definition(def2), self.sense)
+        self.assertListEqual(self.sense.definition, [def1, def2])
+        # Release Definition instances
+        del self.sense.definition[:]
+        del def1, def2
+
+    def test_get_definitions(self):
+        # List of Definition instances is empty
+        self.assertListEqual(self.sense.get_definitions(), [])
+        # Create Definition instances and add them to the list
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Test get definitions
+        self.assertListEqual(self.sense.get_definitions(), [def1, def2])
+        # Delete Definition instances
+        del self.sense.definition[:]
+        del def1, def2
+
+    def test_find_definitions(self):
+        # Create several definitions with different languages
+        def1 = Definition().set_definition("def1").set_language("fra")
+        def2 = Definition().set_definition("def2").set_language("eng")
+        def3 = Definition().set_definition("def3").set_language("fra")
+        def4 = Definition().set_definition("def4").set_language("srp")
+        # Add definitions to the sense
+        self.sense.definition = [def1, def2, def3, def4]
+        # Test find definitions
+        self.assertListEqual(self.sense.find_definitions("eng"), [def2.definition])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_definitions("fra")), set([def1.definition, def3.definition]))
+        # Release Definition instances
+        del self.sense.definition[:]
+        del def1, def2, def3, def4
+
+    def test_set_definition(self):
+        definition = "#define"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_definition(definition), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(self.sense.definition[0].definition, definition)
+        # Test set a second definition
+        language = "C++"
+        self.assertIs(self.sense.set_definition(definition, language), self.sense)
+        self.assertEqual(len(self.sense.definition), 2)
+        self.assertEqual(self.sense.definition[1].definition, definition)
+        self.assertEqual(self.sense.definition[1].language, language)
+
+    def test_find_glosses(self):
+        # Create several definitions with different glosses and languages
+        def1 = Definition().set_gloss("DEF1").set_language("fra")
+        def2 = Definition().set_gloss("DEF2").set_language("eng")
+        def3 = Definition().set_gloss("DEF3").set_language("fra")
+        def4 = Definition().set_gloss("DEF4").set_language("srp")
+        # Add definitions to the sense
+        self.sense.definition = [def1, def2, def3, def4]
+        # Test find glosses
+        self.assertListEqual(self.sense.find_glosses("eng"), [def2.gloss])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_glosses("fra")), set([def1.gloss, def3.gloss]))
+        # Release Definition instances
+        del self.sense.definition[:]
+        del def1, def2, def3, def4
+
+    def test_set_gloss(self):
+        gloss = "GLOSS"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_gloss(gloss), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(self.sense.definition[0].gloss, gloss)
+        # Test set a second gloss
+        language = "C++"
+        self.assertIs(self.sense.set_gloss(gloss, language), self.sense)
+        self.assertEqual(len(self.sense.definition), 2)
+        self.assertEqual(self.sense.definition[1].gloss, gloss)
+        self.assertEqual(self.sense.definition[1].language, language)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 

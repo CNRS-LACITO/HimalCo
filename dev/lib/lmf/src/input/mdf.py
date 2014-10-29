@@ -31,6 +31,9 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             marker = result.group(1)
             attrs = result.group(3)
             value = result.group(4)
+            # Do not consider empty fields
+            if value == "":
+                continue
             # 'lx' marker indicates a new entry
             if marker == "lx":
                 # Compute a unique identifier

@@ -23,22 +23,29 @@ def mdf_write(object, filename, lmf2mdf=lmf_mdf, order=mdf_order):
                         # Parse the list of markers
                         for mkr in marker:
                             value = lmf2mdf[mkr](element)
-                            if value is not None:
-                                mdf_file.write("\\" + mkr + " " + value + EOL)
+                            write_line(mdf_file, mkr, value)
                     # Group and list of markers have been parsed => go to the next marker
                     continue
                 else:
                     value = lmf2mdf[marker](lexical_entry)
-                if type(value) is not list:
-                    # Write the MDF output as follows: "\mdf_marker lmf_value"
-                    if value is not None:
-                        mdf_file.write("\\" + marker + " " + value + EOL)
-                else:
-                    # Create a line for each value
-                    for item in value:
-                        mdf_file.write("\\" + marker + " " + item + EOL)
+                write_line(mdf_file, marker, value)
             # Separate lexical entries from each others with a blank line
             mdf_file.write(EOL)
     else:
         raise OutputError(object, "Object to write must be a Lexicon.")
     mdf_file.close()
+
+def write_line(mdf_file, marker, value):
+    """! @brief Write a line into an MDF file.
+    @param mdf_file The file to write in.
+    @param marker The MDF marker.
+    @param value The corresponding value.
+    """
+    if type(value) is not list:
+        # Write the MDF output as follows: "\mdf_marker lmf_value"
+        if value is not None:
+            mdf_file.write("\\" + marker + " " + value + EOL)
+    else:
+        # Create a line for each value
+        for item in value:
+            mdf_file.write("\\" + marker + " " + item + EOL)
