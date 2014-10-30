@@ -1,5 +1,4 @@
 \documentclass[oldfontcommands,oneside,a4paper,12pt]{article} 
-\usepackage{xunicode}%packages de base pour utiliser xetex
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -40,6 +39,8 @@
 
 \newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\redp}{$\mathtt{\sim}$}
+
 
 \begin{document}
 \title{The morphology of numerals and classifiers  in Japhug and other Burmo-Qiangic languages}
@@ -56,7 +57,63 @@ In this paper, we first present a detailed description of the morphology and mor
 Then, we evaluate several competing analyses to account for the observed data. First,  the system found in Japhug could have recently been completely innovated. Second,  it could be cognate with the numeral + classifier paradigms in Lolo-Burmese and Naish but have been thoroughly simplified by analogical levelling.  Third, Japhug may never have developed these irregular systems: as shown by \citet{bradley05numerals}, most alternations in Lolo-Burmese and other languages  are the indirect effects of lost final obstruents. Since Japhug preserved all final obstruents as distinct segments, the basic conditions for the alternations to develop might not have been present in the first place.
 
 \section{Numerals in Rgyalrong languages}
- \subsection{Plain numerals}
+
+\subsection{Word order}
+Like all Burmo-qiangic languages, the noun phrase in Japhug presents the following word order:
+\begin{exe}
+\ex \label{ex:noun.template}
+\glt \textsc{dem-noun^{modifier}-noun^{head}-adj-num-dem}
+\end{exe}
+
+Numerals and classifiers appear after nouns and adjectives\footnote{Note that in Japhug; attributive adjective are in fact nominalized stative verbs; the noun phrases constitutes a head-internal relative.} as in examples \ref{ex:three.two} and  \ref{ex:Wmat.tWrdoR}.
+
+\begin{exe}
+\ex \label{ex:three.two}
+\gll 
+ \ipa{tɤpɤtso} 	\ipa{χsɯm,} 	\ipa{rgargɯn} 	\ipa{ʁnɯz,} 	\ipa{nɯ} \ipa{ra} 	\ipa{kɤ-fstɯn} 	\ipa{pɯ-ra} \\
+ child three old.people two \textsc{dem} \textsc{pl} \textsc{inf}-serve \textsc{pst.ipfv}-have.to \\
+\glt She had to take care of three children and two old people (on her own). (Relatives, 27)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:Wmat.tWrdoR}
+\gll 
+\ipa{tɕe} 	\ipa{ɯ-mat} 	\ipa{tɯ-rdoʁ} 	\ipa{ɯ-ŋgɯ} 	\ipa{ɯ-rɣi} 	\ipa{tɯ-rdoʁ} 	\ipa{ma} 	\ipa{me.} \\
+\textsc{lnk} \textsc{3sg.poss}-fruit  one-piece \textsc{3sg}-inside textsc{3sg.poss}-see  one-piece apart.from not.exist:\textsc{fact} \\
+\glt There is only one seed in (each one) of its fruit. (Cherry, 89)
+\end{exe}
+
+The use of classifiers in Japhug is quite restricted in comparison with languages such as Naish, Lolo-Burmese or Lizu/Ersu (see \citealt[216-224]{lidz10na}, \citealt{zhang14classifiers}). There are a few classifiers specific for particular shapes such as \ipa{tɯ-ldʑa} `one long object', \ipa{tɯ-pʰɯ} `one tree', or \ipa{tɯ-mpɕar} `one sheet'. However, most nouns (including nouns with animate or inanimate referent) use the generic classifier \ipa{tɯ-rdoʁ} `one piece' (from Tibetan \ipa{rdog}).  
+
+Classifiers are not used in Japhug to express indefinite reference (unlike in languages such as Na, cf \citealt[206]{lidz10na}). Some classifiers express a specific quantity,  size or number of individuals (such as \ipa{tɯ-boʁ} `one group' or \ipa{tɯ-spra} `a handful of'). Most classifiers, however, are used either to convey a distributive meaning, as in the example \ref{ex:Wmat.tWrdoR}, or to single out of individual from a group, as in \ref{ex:tWrdoR.cinA}.
+ 
+\begin{exe}
+\ex \label{ex:Wmat.tWrdoR}
+\gll 
+\ipa{tɯrme} 	\ipa{tɯ-rdoʁ} 	\ipa{kɯ} 	\ipa{cʰɤmdɤru} 	\ipa{tɯ-ldʑa} 	\ipa{tu-nɯ-ndɤm} \\
+people one-\textsc{cl} \textsc{erg} drinking.straw one-\textsc{cl} \textsc{ipfv-auto}-take[III] \\
+\glt Each person takes one straw. (Alcohol, 37)
+\end{exe}
+ 
+\begin{exe}
+\ex \label{ex:tWrdoR.cinA}
+\gll 
+\ipa{ɯ-tɕɯ} 	\ipa{kɯβde} 	\ipa{pɯ-tu} 	\ipa{ri,} 	\ipa{ɯʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-ɕqraʁ} 	\ipa{tɯ-rdoʁ} 	\ipa{cinɤ} 	\ipa{pɯ-me} 	\ipa{ɲɯ-ŋu} 	\\
+\textsc{3sg.poss}-son four \textsc{pst.ipfv}-exist but \textsc{3sg} \textsc{nmlz}:S/A-be.like \textsc{nmlz}:S/A-be.intelligent one-piece even \textsc{pst.ipfv}-not.exist \textsc{testim}-be \\
+\glt He had four sons, but not even one of them was as smart as he. (The smart one, 3)
+\end{exe} 
+ 
+ Numerals and classifiers can be used without nouns. Repetition of a classifier  expresses a regular distribution as in \ref{ex:tWrdoR.tWrdoR}.
+ \begin{exe}
+\ex \label{ex:tWrdoR.tWrdoR}
+\gll 
+ \ipa{tɯ-rdoʁ} 	\ipa{tɯ-rdoʁ} 	\ipa{kɯ-fse} 	\ipa{tu-ɬoʁ} 	\ipa{ŋu} 	\ipa{ma} 	\ipa{mɤ-arɤkʰɯmkʰɤl.}  \\
+  one-\textsc{cl}  one-\textsc{cl} \textsc{nmlz}:S/A-be.like  be:\textsc{fact} \textsc{ipfv}-come.out \textsc{lnk} \textsc{neg}-be.in.patches:\textsc{fact} \\
+ \glt (Each of the mushrooms) grows at regular intervals, (they do not grow all) in patches. (\ipa{tɤqiaβjmɤɣ}, 129)
+\end{exe}
+ 
+ \subsection{The morphology of plain numerals}
+ 
  Rgyalrongic languages differ from otherwise closely related languages such as Naish (\citealt{michaud11cl}) or Pumi (\citealt[141]{daudey14grammar}) in that the numerals 11, 12, 13, 16  and in some languages 14, present a labial linker element between the root for `ten' and that of the unit.  
  This labial linker  is variously realized as a stop, a labio-dental fricative or the nasal \ipa{m} depending on the following consonant.
  
@@ -67,16 +124,15 @@ Since the numerals which do not have the linker element (15, 17, 18 and 19) are 
 It is unclear to what extent this linker is a Rgyalrongic innovation, or an archaism, lost in other languages due to  analogy, but its complete absence outside of Rgyalrongic suggests that the second option is more probable.
 
 
-Numerals between  twenty  and 99 in Japhug can be generated by combining the tens with the units, replacing the \ipa{--sqi} element with the appropriate form, as indicated for numerals between 21 and 29 in Table \ref{tab:num.simple}.
- 
- 
-\begin{table}[H]
+Numerals between  twenty  and 99 in Japhug can be generated by combining the tens with the units, replacing the \ipa{--sqi} element with the appropriate teen form, as indicated for numerals between 21 and 29 in Table \ref{tab:num.simple}.
+
+\begin{table}[h]
 \caption{Comparison of basic numerals in Japhug and Stau}  \label{tab:num.simple} \centering
 \begin{tabular}{lllllll}
 \toprule
 Numeral & Japhug & Stau \\
 \midrule
-1	&	\ipa{tɤɣ}  &	\ipa{ru}  &	\\
+1	&	\ipa{tɤɣ} / \ipa{ci} &	\ipa{ru}  &	\\
 2	&	\ipa{ʁ-nɯz}  &	\ipa{ɣ-ni}  &	\\
 3	&	\ipa{χ-sɯm}  &	\ipa{x-sʚ}  &	\\
 4	&	\ipa{kɯ-βde}  &	\ipa{ɣ-ɮdə}  &	\\
@@ -121,7 +177,7 @@ Numeral & Japhug & Stau \\
 		
 
 
- \subsection{Numeral prefixes}
+ \subsection{Numeral prefixes} \label{sec:prefixes.japhug}
  
  In contrast with the relatively complex forms of the numerals 11 to 19, the combinations of numerals and classifiers in Japhug and Stau are relatively simple.
  
@@ -159,22 +215,35 @@ Numeral & Free form &  \ipa{--sŋi} `day' &  \ipa{--rʑaʁ} `night' \\
 \end{table}
 All classifiers in Japhug except \ipa{--rʑaʁ} `night' follow the paradigm of \ipa{--sŋi} `day'. The classifier \ipa{--rʑaʁ} `night' is the only one with irregular forms, and even  \ipa{--rʑaʁ} can be used with the regular paradigm.
  
-%fsusqi kɯβdɤsqɯ-xpa  
- 
- 
- 
- 
- 
- 
- The numeral `one hundred' \ipa{tɯ-ri} \ipa{ɣurʑa}
- 
-\citet[101]{daudey14grammar}
-\ipa{ɕí} 
-%(eight: \ipa{ɕwɐ̌})
-\ipa{--ɻɛj}
- 
+
  
  In Stau, only the numeral prefixes  `one' \ipa{e--} and `two' \ipa{ɣnə--} have a special form, the rest is identical to the free numerals.
+ 
+ \subsection{Other numerals}
+Numerals above one hundred present less morphological alternations than the units and tens.
+ 
+ There are two ways of expressing `one hundred' in Japhug. First, the noun-like numeral \ipa{ɣurʑa}   `one hundred' can be employed as in \ref{ex:hundred}.
+
+\begin{exe}
+\ex \label{ex:hundred}
+\gll \ipa{aʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-cʰɯ\redp{}cʰa} 	\ipa{ʑo} 	\ipa{ʁʑɯnɯ} 	\ipa{ɣurʑa} 	\ipa{kɯrcat} 	\ipa{ra} \\
+\textsc{1sg} \textsc{nmlz}:S/A-be.like  \textsc{nmlz}:S/A-\textsc{emph}\redp{}can \textsc{emph} young.man hundred eight need:\textsc{fact} \\
+\glt I need one hundred and eight able young men like me. (Slobdpon, 16)
+\end{exe}
+
+The numeral \ipa{ɣurʑa}  cannot be combined with unit numerals to express numbers between 200 and 900. The  the classifier \ipa{tɯ-ri} `one hundred' is used for this purpose, as in \ref{ex:three.hundreds} (see section \ref{sec:prefixes.japhug} for an account of the numeral prefixes).
+\begin{exe}
+\ex \label{ex:three.hundreds}
+\gll
+\ipa{χsɯ-ri} 	\ipa{jamar} 	\ipa{ndɤre} 	\ipa{tu-nɯ} 	\ipa{ko,} 	\ipa{tɯ-tɯphu} 	\ipa{nɯ} \\
+three-hundred about \textsc{lnk} exist:\textsc{fact-pl} \textsc{sfp} one-hive \textsc{dem} \\
+\glt There are about three hundred of them, in one hive. (Bees, 48)
+\end{exe}
+ 
+ This particularity is not restricted to Rgyalrongic languages, other Burmo-qiangic languages also have two roots for hundred, as Pumi which has the noun-like \ipa{ɕí}  hundred' and the classifier \ipa{--ɻɛj} (\citealt[101]{daudey14grammar}), probable cognates of Japhug \ipa{ɣurʑa} and \ipa{--ri} respectively.
+
+Numerals above the hundreds are all borrowed from Tibetan: \ipa{stoŋtsu} `thousand', \ipa{kʰrɯtsu} `ten thousand', \ipa{mbɯmχtɤr} `hundred thousand' from \ipa{stŋ}, \ipa{kʰri} and \ipa{ɴbum.tʰer} respectively. These numerals appear after the noun they qualify like \ipa{ɣurʑa} `hundred'.  
+ 
  \subsection{Approximate Numerals}
 %laʁnɯz	 laʁnɯ-sŋi
 %laʁnɯχsɯm	laʁnɯχsɯ-sŋi
@@ -184,8 +253,21 @@ All classifiers in Japhug except \ipa{--rʑaʁ} `night' follow the paradigm of \
 %kɯngɯsqi	kɯngɯsqɯ-sŋi
 %
 % 
-% \section{Numeral prefixes}
+ 
+ 
+ \begin{exe}
+\ex \label{ex:kWBde.tWrpa}
+\gll 
+\ipa{kɯβde-tɯrpa} 	\ipa{kɯmŋu-tɯrpa} 	\ipa{jamar} 	\ipa{ma} 	\ipa{tu-zɣɯt} 	\ipa{mɤ-cha} \\
+four-pound five-pound about apart.from \textsc{ipfv}-reach \textsc{neg}-can:\textsc{fact} \\
+\glt It can only reach three or four pounds. (Hen, 14)
+\end{exe}
 
+
+Finally, for numerals above 99, it is possible to add a third person singular possessive prefix to  express an approximate value, as in  \ipa{ɯ-ɣurʑa} `several hundreds', \ipa{ɯ-kʰrɯtsu} `several dozen of thousand' etc.
+
+
+\section{Numerals and classifiers in Naish and Lolo-Burmese}
 
 \bibliographystyle{linquiry2}
 \bibliography{bibliogj}
