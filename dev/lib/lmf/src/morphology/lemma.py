@@ -60,9 +60,8 @@ class Lemma(Form):
         """
         found_forms = []
         for form_representation in self.get_form_representations():
-            if form_representation.get_type() == type:
-                if form_representation.get_variantForm() is not None:
-                    found_forms.append(form_representation.get_variantForm())
+            if form_representation.get_type() == type and form_representation.get_variantForm() is not None:
+                found_forms.append(form_representation.get_variantForm())
         return found_forms
 
     def get_form_representations(self):

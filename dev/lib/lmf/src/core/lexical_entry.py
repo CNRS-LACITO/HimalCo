@@ -478,14 +478,30 @@ class LexicalEntry():
         @param language Language of gloss.
         @return LexicalEntry instance.
         """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
         # If there is no Sense instances, create and add one
-        if len(self.sense) == 0:
+        if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        # If there are Sense instances, get the last one
-        else:
-            sense = self.get_last_sense()
         sense.set_gloss(gloss, language)
+        return self
+
+    def set_note(self, note, type=None, language=None):
+        """! @brief Set note, type and language.
+        Attributes 'note', 'noteType' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense.
+        @param note Note to set.
+        @param type Type fo the note.
+        @param language Language of the note.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instances, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_note(note, type, language)
         return self
 
     def get_speaker(self):

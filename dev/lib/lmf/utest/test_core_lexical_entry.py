@@ -466,6 +466,13 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.sense[0].definition[0].gloss, gloss)
         self.assertEqual(self.lexical_entry.sense[0].definition[0].language, language)
 
+    def test_set_note(self):
+        note = "note"
+        type = "comment"
+        self.assertIs(self.lexical_entry.set_note(note, type), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].note, note)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].noteType, type)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite

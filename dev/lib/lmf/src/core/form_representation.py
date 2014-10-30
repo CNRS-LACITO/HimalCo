@@ -111,7 +111,7 @@ class FormRepresentation(Representation):
         """
         if language is None:
             return self.comment
-        if self.language == language:
+        if self.get_language() == language:
             return self.comment
 
     def set_language(self, language):

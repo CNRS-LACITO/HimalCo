@@ -72,6 +72,21 @@ class TestSenseFunctions(unittest.TestCase):
         del self.sense.definition[:]
         del def1, def2
 
+    def test_get_last_definition(self):
+        # List of Definition instances is empty
+        self.assertIsNone(self.sense.get_last_definition())
+        # Create Definition instances and add them to the list
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Test get last definition
+        self.assertIs(self.sense.get_last_definition(), def2)
+        self.sense.definition.pop()
+        self.assertIs(self.sense.get_last_definition(), def1)
+        # Release Definition instances
+        del self.sense.definition[:]
+        del def1, def2
+
     def test_find_definitions(self):
         # Create several definitions with different languages
         def1 = Definition().set_definition("def1").set_language("fra")
@@ -129,6 +144,21 @@ class TestSenseFunctions(unittest.TestCase):
         self.assertEqual(len(self.sense.definition), 2)
         self.assertEqual(self.sense.definition[1].gloss, gloss)
         self.assertEqual(self.sense.definition[1].language, language)
+
+    def test_set_note(self):
+        note = "note"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_note(note), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 1)
+        self.assertEqual(self.sense.definition[0].statement[0].note, note)
+        # Test set a second note
+        language = "C++"
+        self.assertIs(self.sense.set_note(note, language=language), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 2)
+        self.assertEqual(self.sense.definition[0].statement[1].note, note)
+        self.assertEqual(self.sense.definition[0].statement[1].language, language)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 

@@ -59,7 +59,8 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                     attrs = attrs.replace('"', '')
                     for attr in attrs.split(' '):
                         attributes.update({attr.split('=')[0] : attr.split('=')[1]})
-                    mdf2lmf[marker](attributes, value, current_entry)
+                    # A customized marker starts with '__' characters
+                    mdf2lmf["__" + marker](attributes, value, current_entry)
                 else:
                     mdf2lmf[marker](value, current_entry)
             except KeyError:

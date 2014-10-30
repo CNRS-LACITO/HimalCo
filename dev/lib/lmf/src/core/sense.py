@@ -99,6 +99,13 @@ class Sense():
         """
         return self.definition
 
+    def get_last_definition(self):
+        """! @brief Get the previously registered Definition instance.
+        @return The last element of Sense attribute 'definition'.
+        """
+        if len(self.get_definitions()) >= 1:
+            return self.get_definitions()[-1]
+
     def find_definitions(self, language):
         """! @brief Find definitions.
         This attribute is owned by Definition.
@@ -107,9 +114,8 @@ class Sense():
         """
         found_definitions = []
         for definition in self.get_definitions():
-            if definition.get_language() == language:
-                if definition.get_definition() is not None:
-                    found_definitions.append(definition.get_definition())
+            if definition.get_language() == language and definition.get_definition() is not None:
+                found_definitions.append(definition.get_definition())
         return found_definitions
 
     def set_definition(self, definition, language=None):
@@ -148,9 +154,8 @@ class Sense():
         """
         found_glosses = []
         for definition in self.get_definitions():
-            if definition.get_language() == language:
-                if definition.get_gloss() is not None:
-                    found_glosses.append(definition.get_gloss())
+            if definition.get_language() == language and definition.get_gloss() is not None:
+                found_glosses.append(definition.get_gloss())
         return found_glosses
 
     def set_gloss(self, gloss, language=None):
@@ -179,4 +184,21 @@ class Sense():
             instance = self.create_definition()
             self.add_definition(instance)
         instance.set_gloss(gloss, language)
+        return self
+
+    def set_note(self, note, type=None, language=None):
+        """! @brief Set note, note type and language.
+        These attributes are owned by Statement, which is owned by Definition.
+        @param note Note to set.
+        @param type Type of the note.
+        @param language Language used for the note.
+        @return Sense instance.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is no Definition instances, create and add one
+        if definition is None:
+            definition = self.create_definition()
+            self.add_definition(definition)
+        definition.set_note(note, type, language)
         return self
