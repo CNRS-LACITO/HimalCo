@@ -1,0 +1,247 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+
+
+\begin{document} 
+
+\title{A counterexample to Watkins' law in Siouan}
+\author{Guillaume Jacques}
+\maketitle
+
+\section{Introduction}
+ 
+    \citealt{watkins62celtic}'s law 
+    
+ 
+
+%\citet{csd2006}
+
+\citet{kim01venit}
+
+Unfortunately, most of the work on comparative Siouan is unpublished (though available from the Siouan Archive, which is freely distributed to all interested scholars), so that this paper will first present the accepted knowledge on Siouan reconstruction, mainly based on the model in the Comparative Siouan Dictionary (\citealt{csd2006}).
+
+    \citet{ullrich08}\citet{quintero10osage} 
+
+\section{Reflexes of simple *r, *R and *y in Dakotan and Dhegiha}
+There is evidence in Mississippi valley Siouan languages of at least three distinct proto-phonemes *r, *R and *y before oral vowels. These phonemes merge as \ipa{r} in Chiwere and Winnebago, but are kept partially distinct in Dakotan and Dhegiha, according to the following correspondences (before oral vowels, see Table \ref{tab:basic}), which apply both word-initially and between vowels:
+
+\begin{itemize}
+\item *y becomes \ipa{čh} in Dakotan and \ipa{ž} in Dhegiha.
+\item *r becomes \ipa{y} in Dakotan and Kansa,  \ipa{ð} in Omaha and Osage and \ipa{d} in Quapaw.
+\item *R becomes \ipa{l} in Lakota (Teton), \ipa{d} in Yankton and Sisseton, \ipa{n} in Stoney and Omaha, \ipa{d} or \ipa{ǰ} in Kansa, \ipa{t} or \ipa{c} in Osage.
+\end{itemize}
+
+\begin{table}[h]
+\caption{Basic correspondences of proto-Siouan *r, *R and *y in Dakotan and Dhegiha languages} \label{tab:basic} \centering
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{ll|ll|llll|ll}
+\toprule
+&proto-Siouan &Lakhota  & Yankton & Omaha & Kansa & Osage & Quapaw \\
+	\midrule	
+\ipa{*y} &	\ipa{*yo_phe} &	\ipa{čhophá} &	\ipa{} &	\ipa{†žóhe} &	\ipa{žophé} &	\ipa{žó_phe} &	\ipa{} &	wade &	\\	
+&	\ipa{*yá•pE} &	\ipa{čhápa} &	\ipa{čhápa} &	\ipa{žá•be} &	\ipa{žábe} &	\ipa{} &	\ipa{žáwe} &	beaver &	\\	
+&	\ipa{*yá•že} &	\ipa{čhažé} &	\ipa{čhažé} &	\ipa{žá•že} &	\ipa{žá•že} &	\ipa{žá•že} &	\ipa{žáže} &	name &	\\	
+&	\ipa{*yeká} &	\ipa{čhečá} &	\ipa{} &	\ipa{žegá} &	\ipa{žegá} &	\ipa{žeká} &	\ipa{žeká} &	‘thigh’ &	\\	
+&	\ipa{*yá•phe} &	\ipa{čha_phá} &	\ipa{} &	\ipa{žahe} &	\ipa{žáphe} &	\ipa{†žáphe} &	\ipa{} &	stab &	\\	
+&	\ipa{*eya-ʔį́, eya-w-ʔį́} &	\ipa{ečhíŋ, ečháŋmi} &	\ipa{} &	\ipa{} &	\ipa{ažį́, ažamį} &	\ipa{} &	\ipa{ážį} &	think &	\\
+	\midrule	
+\ipa{*r-} &	\ipa{*ra-} &	\ipa{ya-} &	\ipa{ya-} &	\ipa{ða-} &	\ipa{ya-} &	\ipa{ða-} &	\ipa{da-} &	by mouth &	\\	
+&	\ipa{*ru-} &	\ipa{yu-} &	\ipa{yu-} &	\ipa{ði-} &	\ipa{yü-} &	\ipa{ðü-} &	\ipa{di-} &	by hand &	\\	
+&	\ipa{*xurá} &	\ipa{xuyá} &	\ipa{} &	\ipa{xiðá} &	\ipa{xüyá} &	\ipa{†xüðá} &	\ipa{xidá} &	eagle &	\\	
+&	\ipa{*rÉ} &	\ipa{yA´} &	\ipa{} &	\ipa{ðÉ} &	\ipa{yÉ} &	\ipa{†ðÉ} &	\ipa{dÉ} &	go &	\\	
+	\midrule
+\ipa{*R} &	\ipa{*Ró•te} &	\ipa{loté} &	\ipa{doté} &	\ipa{nó•de} &	\ipa{dó•ǰe} &	\ipa{tóce} &	\ipa{tótte} &	throat &	\\	
+&	\ipa{*(i-)Rekší} &	\ipa{lekší} &	\ipa{dekší} &	\ipa{inégi} &	\ipa{iǰégi} &	\ipa{} &	\ipa{ittéke} &	MB &	\\	
+&	\ipa{*Rá} &	\ipa{lá} &	\ipa{da} &	\ipa{wana} &	\ipa{da} &	\ipa{} &	\ipa{wattá?} &	ask &	\\	
+&	\ipa{*Ré•že} &	\ipa{ležé} &	\ipa{dežé} &	\ipa{néže} &	\ipa{ǰéže} &	\ipa{} &	\ipa{déže} &	urine &	\\	
+&	\ipa{*Ré} &	\ipa{o_lé} &	\ipa{o_dé} &	\ipa{o_ne} &	\ipa{o_ǰé} &	\ipa{†o_cé} &	\ipa{otté} &	hunt, look for &	\\	
+\bottomrule
+\end{tabular}}
+\end{table}
+
+ 
+
+In some possessed nouns (especially body parts), we find a special correspondence with \ipa{čh} in Dakotan against \ipa{ð} : \ipa{y} : \ipa{ð} : \ipa{d} in Dhegiha, as in Table \ref{tab:ir}. This correspondence is interpreted as the effect of paradigm levelling, due to a sound change *r-- $\rightarrow$ \ipa{čh} before the third person possessive prefix \ipa{i--}, even before nasal vowels (see \citealt{rankin05quapaw}, \citealt{csd2006}). It is never attested in verbs, even those with a locative \ipa {í--} prefix; for instance *\ipa{íre} regularly yields  \ipa{íðe} 'see, find' in Omaha and \ipa{iyé\_ya} ‘find' in Lakota (not *\ipa{ičhé}).
+
+\begin{table}[h]
+\caption{Proto-Siouan *r after the possessive *i-- prefix} \label{tab:ir} \centering
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{ll|ll|llll|ll}
+\toprule
+&proto-Siouan &Lakhota  & Yankton & Omaha & Kansa & Osage & Quapaw \\
+	\midrule	
+&	\ipa{*i-ré•ži} &	\ipa{čheží} &	\ipa{} &	\ipa{ðéze} &	\ipa{yéze} &	\ipa{ðéze} &	\ipa{déze} &	tongue &	\\	
+&	\ipa{*i-rá•ɣu} &	\ipa{čhaɣú} &	\ipa{} &	\ipa{†ðáxį} &	\ipa{yáxü} &	\ipa{†ðáɣį} &	\ipa{dáɣi} &	lung &	\\	
+&	\ipa{*i-réɣe} &	\ipa{čhéɣa} &	\ipa{} &	\ipa{néɣe} &	\ipa{ǰé•ɣe} &	\ipa{} &	\ipa{} &	kettle &	\\	
+&	\ipa{*i-ráke} &	\ipa{čhaká} &	\ipa{} &	\ipa{} &	\ipa{ho yáge} &	\ipa{íðake} &	\ipa{táka} &	palate / gills &	\\	
+&	\ipa{*i-rą́•h-ka} &	\ipa{čhąkháhu} &	\ipa{} &	\ipa{ną́kka} &	\ipa{ną́kka} &	\ipa{†ną́hka} &	\ipa{ną́kka} &	spine &	\\	
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Completely irregular  `mosquito' \ipa{čhaphų́ka}, O \ipa{náhǫga}, K \ipa{yáphąįge}, Os \ipa{yáphąįge}, D \ipa{daphąke} 
+
+
+Before nasal vowels, *r and *R merge as \ipa{n} in Dakotan and Dhegiha languages in nearly all contexts (see  \citealt{michaud-jacques12nasalite}), but this topic will not be discussed in the present paper, as it has no incidence on the issue at hand.
+
+ 
+
+\section{Reflexes of clusters}
+There were some clusters with *\ipa{r} or *\ipa{y} as second element in proto-Mississippi Valley Siouan (the contrast between  *\ipa{r} and *\ipa{R} was neutralized). Examples of *\ipa{wr--}, \ipa{kr--},  \ipa{sr--}, *\ipa{šr--} and *\ipa{xr--} are plentiful, ans can be illustrated by the data in 
+
+Examples of clusters with \ipa{y} as a second element are much more restricted, and   Table  \ref{tab:ky} contains all known examples (from \citet{koontz83rstem}  and \citet{csd2006}).
+
+ \begin{table}[h]
+\caption{Proto-Siouan *ky--, *xy-- and *wy-} \label{tab:ky} \centering
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{ll|ll|llll|ll}
+\toprule
+&proto-Siouan &Lakhota  & Yankton & Omaha & Kansa & Osage & Quapaw \\
+	\midrule	
+*\ipa{ky--}&\ipa{kyé•wrą} &	\ipa{wikčémna} &	\ipa{} &	\ipa{gðébǫ} &	\ipa{léblą} &	\ipa{} &	\ipa{kdébną} &	ten &	\\	
+&\ipa{kyetą́} &	\ipa{čhetą́} &	\ipa{} &	\ipa{gðedǫ́} &	\ipa{ledą́} &	\ipa{} &	\ipa{kdetą́} &	hawk &	\\	
+&\ipa{*kyąšká} &	\ipa{čhąšká} &	\ipa{} &	\ipa{†gðąšká} &	\ipa{} &	\ipa{} &	\ipa{xnąšká}? &	 &	\\	
+&\ipa{*rukyą} &	\ipa{iyúkčą} &	\ipa{} &	\ipa{†waðígðǫ} &	\ipa{í_yülą } &	\ipa{†í_ðülą} &	\ipa{í_dikną} &	know &	\\	
+	\midrule	
+*\ipa{xy--}	&	\ipa{*xyá} &	\ipa{xčá / waxčá} &	\ipa{} &	\ipa{waxðá} &	\ipa{xlá} &	\ipa{xlá} &	\ipa{waxtá} &	bloom, flower &	\\
+	\midrule	
+*\ipa{wy--}&	\ipa{*e-w-ye} &	\ipa{epčÁ} &	\ipa{} &	\ipa{ebðé} &	\ipa{} &	\ipa{ébre} &	\ipa{} &	I think &	\\	
+&	\ipa{*rąwyE} &	\ipa{napčÁ} &	\ipa{} &	\ipa{} &	\ipa{} &	\ipa{(wa)nǫ́bre} &	\ipa{} &	eat, swallow &	\\	
+&	\ipa{*w-yi--} &	\ipa{čhi-} &	\ipa{} &	\ipa{wi--} &	\ipa{} &	 	\ipa{} &	\ipa{} &	1$\rightarrow$ 2 prefix& 	\\	
+\bottomrule
+\end{tabular}}
+\end{table}
+
+In Dhegiha, clusters in *Cy-- merge with their *Cr-- counterparts, except perhaps *wy-- if the 1$\rightarrow$ 2 prefix \ipa{wi--} is the regular outcome of \ipa{*w-yi--}, in which case *wy-- perhaps present a different treatment word-initially.
+
+In Lakhota, the cluster *\ipa{y--} element in *Cy-- cluster changes to \ipa{č} word-internally, and the previous segment is preserved (and undergoes fortition, in the case of *wy--). Word-initially, *\ipa{wy--} and *\ipa{ky--} apparently merge with *\ipa{y} as 	\ipa{čh--}.\footnote{The 1$\rightarrow$ 2 prefix does not always appear word-initially, but we can safely assume that analogical pressure removed the expected \ipa{čh--} / \ipa{pč--} allomorphy.}
+%wyi > chi- (wi- in O
+
+ 
+%\citet{rankin02ofo}
+\section{Verbal paradigms}
+ 
+The paradigm of *\ipa{r--} initial verb stems (including verbs with the instrumental prefixes *\ipa{ra--} `by mouth' and *\ipa{ru--} `by hand') constitute a distinct conjugation class in MVS languages. The paradigms in these languages are provided in Table \ref{tab:go}. The first and second person forms result from vowel-less allomorphs *\ipa{w--} and *\ipa{y--} of the first person *\ipa{wa--} and second person  *\ipa{ra--}  / \ipa{ya--} prefixes. The *\ipa{y} become a fricative \ipa{*š}  in this context in all languages except Dakotan.
+
+\begin{table}[h]
+\caption{Paradigm of the verb *\ipa{re} `go' in Siouan languages} \label{tab:go}
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{ll|l|ll|llll|ll}
+\toprule
+ &	 &	Lakhota &	Winnebago &	Chiwere &	Omaha &	Osage &	Kansa &	Quapaw &	Ofo &	\\	
+  \midrule
+1sg.A &	\ipa{*wr-} &	\ipa{blÁ} &	\ipa{tée} &	\ipa{hajé} &	\ipa{bðe} &	\ipa{brée} &	\ipa{bne} &	\ipa{bde} &	\ipa{até˙kna} &	\\	
+2sg.A &	\ipa{*šr-} <\ipa{*yr-}  &	\ipa{lÁ} &	\ipa{šeré} &	\ipa{slé} &	\ipa{šne} &	\ipa{šcée} &	\ipa{hne} &	\ipa{tte} &	\ipa{šté˙kna} &	\\	
+base &	\ipa{*r-} &	\ipa{yÁ} &	\ipa{rée} &	\ipa{lé} &	\ipa{ðé} &	\ipa{ðée} &	\ipa{yé} &	\ipa{dé} &	\ipa{té˙kna} &	\\	
+\bottomrule			
+
+\end{tabular}}
+\end{table} 
+ 
+ In Omaha and other Dhegiha languages, the verb \ipa{ebðé}, \ipa{éðe} `think' follows the same conjugation, as shown in Table \ref{tab:think}. However, its Lakota cognate  \ipa{epčÁ} `I think', a defective verb attested only in the first singular, and belongs to the set of forms with *wy-- in proto-Siouan.
+ 
+ \begin{table}[h]
+\caption{Paradigm of the verb *\ipa{e\_ye} `think' in Siouan languages}  \label{tab:think} \centering
+\begin{tabular}{ll|l|ll|llll|ll}
+\toprule
+ &	 &	Lakhota &	 	Omaha &	Osage 	& Expected Omaha\\	
+ \midrule
+1sg.A &	*\ipa{e-w-ye} &	 \ipa{epčÁ} &   \ipa{ebðé} &\ipa{ébre} &\ipa{ebðe}\\
+2sg.A &*\ipa{e-y-ye}&  &  \ipa{ešné} &? &*\ipa{eže} or *\ipa{eðe} ??? \grise{}& \\
+base &	*\ipa{e-ye} &	  &\ipa{eðé} &\ipa{éðe} & *\ipa{eže}\grise{}\\
+\bottomrule			
+\end{tabular}
+\end{table} 
+
+ Thus, the Dhegiha paradigm for the verb \ipa{éðe} `to think' must have been partially renewed: while the first person should regularly be identical to that of a \ipa{r--} stem, according to the correspondences shown in Table \ref{tab:ky}, the the second person and third person should not. The third person form, if from *\ipa{e-ye}, should have been *\ipa{eže} instead of \ipa{eðé} in Dhegiha.
+
+The only available explanation for this fact is analogical levelling. It is impossible to argue that \ipa{ð} is the regular outcome of *\ipa{y} in Dhegiha in intervocalic position, since clear examples of \ipa{ž} from *\ipa{y} are attested word-internally (see Table \ref{tab:basic}).
+
+The verb *\ipa{e\_ye} `think' in Siouan was the only syncopating *\ipa{y--} initial stem, and had a unique conjugation. In Lakota it lost the second and third person forms (it is the only defective verb of this type), while in Dhegiha those forms were renewed on the basis of the first person singular.
+
+
+\section{The directionality of analogy}
+
+Mississippi Valley Siouan languages attested a very rare type of analogy, from first person to third person, which as we saw before is almost non-attested in Indo-European languages.
+
+This example does not disprove the validity of Watkins' law; rather, it can help to refine it. 
+
+In the case of verbs of cognition, such as `know' or `think',  generic forms are easily interpreted as being first person and vice versa. The semantic proximity between first person and generic in the case of these verbs is due to two opposite reasons. First, using a generic rather than a first person is a way for the speaker to avoid directly asserting his own point of a view. Second, a confusion between first person and generic can occur when the speaker equates what he thinks or believes with `common sense' or common knowledge.
+%ehé, níⁿkashiⁿga thizhúbazhi ki´ǰi, égoⁿwéʼoⁿ góⁿthawáthe ebthégoⁿ.
+%said (one). / Oho! / I said, / man / injures one / when, / to do so in return / desirable / I think. /
+% I think that when one man injures another, it is desirable to repays him (438, line 12.)
+
+
+A example of semantic confusion between first person and generic with cognition verbs can be observed  in Japhug (Sino-Tibetan, \citealt[342]{jacques04these}, \citealt{jacques15generic}). In Japhug, the highly irregular negative generic form \ipa{mɤ-xsi} `one does not know' of the verb \ipa{sɯz} `know' is used in contexts where a first person is  implied, and a generic interpreted should be excluded, as in examples \ref{ex:mAxsi} and \ref{ex:mAxsi2}.
+
+\begin{exe}
+ \ex \label{ex:mAxsi}
+ \gll
+\ipa{ma-tɯ-nɯqaɟy}  	\ipa{ma}  	\ipa{ɕu}  	\ipa{tɯ-ŋu}  	\ipa{mɤ-xsi}  	\ipa{ri} \ipa{kɯ-qarŋe}  	\ipa{thamtɕɤt}  	\ipa{nɯ}  	\ipa{rɟɤlpu}  	\ipa{ɣɯ}  	\ipa{χsɤrɲa}  	\ipa{ŋu,}  	
+ \\
+\textsc{neg:imp}-2-fish because who 2-be:\textsc{fact} \textsc{neg-genr}:know but nmlz:S/A-be.yellow all \textsc{dem} king \textsc{gen} gold.fish be:\textsc{fact}\\
+\glt Don't fish; although I don't know who you are, the yellow ones are the King's gold fishes (ie, only the king can fish them, so whoever you are, you are not allowed). (Gesar, 368)
+\end{exe}
+\begin{exe}
+ \ex \label{ex:mAxsi2}
+ \gll
+\ipa{mɤ-xsi}  	\ipa{ko,}  	\ipa{nɯra}  	\ipa{ɲɤ-nɯ-jmɯt-a}  \\
+\textsc{neg-genr}:know \textsc{sfp} \textsc{dem:pl} \textsc{evd-auto}-forget-\textsc{1pl} \\
+\glt I don't know, I forgot those things. (Conversation, answer to the question: `How did you talk to your children when they were small babies?')
+\end{exe}
+
+Note that generic verbs forms are not normally used in this way with other verbs. Additionally, some languages have adverbs meaning `who knows' or `I don't know' (for instance Nepali \ipa{kunni}),  whose use is comparable to the Japhug generic form \ipa{mɤxsi}.
+
+The preservation of Lakota \ipa{epčÁ} `I think' and the directionality of analogy in can be explained similarly by the relative frequency of the first person singular in a verb with this meaning, when used in a generic sense.
+
+ %(unfortunately, no example of  \ipa{epčÁ} `I think' could be found in \citealt{deloria32dakota} to confirm whether this use is attested).\citet{dorsey1890cegiha}
+
+This hypothesis is confirm by corpus frequency: in \citet{dorsey1890cegiha}'s texts\footnote{Retranscribed and corrected by Robert Rankin in the Siouan Archive}, the first person \ipa{ebðé} `I think/thought' occurs 172 times, the third person  \ipa{eðé} 114 times and the second person  \ipa{ehné} only 3 times.  
+
+Thus, in view of the Siouan data, Watkins's law can be reformulated as follows:
+
+\begin{exe}
+\ex 
+\glt Analogy takes place from the most frequent form to the least frequent one (in discourse). 
+\glt When the most frequent form is third person singular, it can be reinterpreted as a zero-marked form
+\glt  When the most frequent form is  is first person, the other forms are remodelled by proportional analogy, by applying attested rules of correspondence between first person and other persons in a more regular paradigm.
+\end{exe}
+ 
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
