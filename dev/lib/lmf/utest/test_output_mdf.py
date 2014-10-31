@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 from startup import *
-from output.mdf import mdf_write
+from output.mdf import mdf_write, write_line
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
@@ -53,6 +53,22 @@ class TestMdfFunctions(unittest.TestCase):
         del lexical_entry, lexicon
         # Remove MDF file
         os.remove(mdf_filename)
+
+    def test_write_line(self):
+        # Open MDF file
+        utest_path = sys.path[0] + '/'
+        mdf_filename = utest_path + "output.txt"
+        mdf_file = open(mdf_filename, "w")
+        # Write a line into MDF file
+        write_line(mdf_file, "mkr", "value")
+        # Close MDF file
+        mdf_file.close()
+        # Test result
+        mdf_file = open(mdf_filename, "r")
+        expected_line = "\\mkr value" + EOL
+        self.assertEqual(expected_line, mdf_file.readline())
+        # Close MDF file
+        mdf_file.close()
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestMdfFunctions)
 
