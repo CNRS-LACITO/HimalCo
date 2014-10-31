@@ -3,6 +3,7 @@
 from startup import *
 from core.sense import Sense
 from core.definition import Definition
+from core.statement import Statement
 
 ## Test Sense class
 
@@ -159,6 +160,28 @@ class TestSenseFunctions(unittest.TestCase):
         self.assertEqual(len(self.sense.definition[0].statement), 2)
         self.assertEqual(self.sense.definition[0].statement[1].note, note)
         self.assertEqual(self.sense.definition[0].statement[1].language, language)
+
+    def test_find_notes(self):
+        # Create several definitions
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Create several statements with different notes and types
+        state1 = Statement().set_note("note1", "comparison")
+        state2 = Statement().set_note("note2", "general")
+        state3 = Statement().set_note("note3", "comparison")
+        self.sense.definition[0].statement = [state1, state2]
+        self.sense.definition[1].statement = [state3]
+        # Test find notes
+        self.assertListEqual(self.sense.find_notes("general"), [state2.note])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_notes("comparison")), set([state1.note, state3.note]))
+        # Release created instances
+        del self.sense.definition[0].statement[:]
+        del self.sense.definition[1].statement[:]
+        del state1, state2, state3
+        del self.sense.definition[:]
+        del def1, def2
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 

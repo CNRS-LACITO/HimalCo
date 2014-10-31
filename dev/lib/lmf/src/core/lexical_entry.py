@@ -491,7 +491,7 @@ class LexicalEntry():
         """! @brief Set note, type and language.
         Attributes 'note', 'noteType' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense.
         @param note Note to set.
-        @param type Type fo the note.
+        @param type Type of the note.
         @param language Language of the note.
         @return LexicalEntry instance.
         """
@@ -503,6 +503,17 @@ class LexicalEntry():
             self.add_sense(sense)
         sense.set_note(note, type, language)
         return self
+
+    def find_notes(self, type):
+        """! @brief Find notes.
+        This attribute is owned by Statement, which owned by Definition, itself owned by Sense.
+        @param type Type of the note to consider to retrieve the note.
+        @return A Python list of found Statement attributes 'notes'.
+        """
+        found_notes = []
+        for sense in self.get_senses():
+            found_notes += sense.find_notes(type)
+        return found_notes
 
     def get_speaker(self):
         """! @brief Get speaker.

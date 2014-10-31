@@ -7,6 +7,8 @@ from morphology.related_form import RelatedForm
 from utils.error_handling import Error
 from core.form_representation import FormRepresentation
 from core.sense import Sense
+from core.definition import Definition
+from core.statement import Statement
 
 ## Test LexicalEntry class
 
@@ -472,6 +474,40 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIs(self.lexical_entry.set_note(note, type), self.lexical_entry)
         self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].note, note)
         self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].noteType, type)
+
+    def test_find_notes(self):
+        # Create several senses
+        sens1 = Sense()
+        sens2 = Sense()
+        self.lexical_entry.sense = [sens1, sens2]
+        # Create several definitions
+        def1 = Definition()
+        def2 = Definition()
+        def3 = Definition()
+        self.lexical_entry.sense[0].definition = [def1, def2]
+        self.lexical_entry.sense[1].definition = [def3]
+        # Create several statements with different notes and types
+        state1 = Statement().set_note("note1", "comparison")
+        state2 = Statement().set_note("note2", "general")
+        state3 = Statement().set_note("note3", "comparison")
+        state4 = Statement().set_note("note3", "history")
+        self.lexical_entry.sense[0].definition[0].statement = [state1]
+        self.lexical_entry.sense[0].definition[1].statement = [state2]
+        self.lexical_entry.sense[1].definition[0].statement = [state3, state4]
+        # Test find notes
+        self.assertListEqual(self.lexical_entry.find_notes("general"), [state2.note])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.lexical_entry.find_notes("comparison")), set([state1.note, state3.note]))
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del self.lexical_entry.sense[0].definition[1].statement[:]
+        del self.lexical_entry.sense[1].definition[0].statement[:]
+        del state1, state2, state3, state4
+        del self.lexical_entry.sense[0].definition[:]
+        del self.lexical_entry.sense[1].definition[:]
+        del def1, def2, def3
+        del self.lexical_entry.sense[:]
+        del sens1, sens2
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
