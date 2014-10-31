@@ -183,6 +183,117 @@ class TestSenseFunctions(unittest.TestCase):
         del self.sense.definition[:]
         del def1, def2
 
+    def test_set_usage_note(self):
+        note = "note"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_usage_note(note), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 1)
+        self.assertEqual(self.sense.definition[0].statement[0].usageNote, note)
+        # Test set a second usage note
+        language = "C++"
+        self.assertIs(self.sense.set_usage_note(note, language=language), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 2)
+        self.assertEqual(self.sense.definition[0].statement[1].usageNote, note)
+        self.assertEqual(self.sense.definition[0].statement[1].language, language)
+
+    def test_find_usage_notes(self):
+        # Create several definitions
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Create several statements with different usage notes and languages
+        state1 = Statement().set_usageNote("note1", "eng")
+        state2 = Statement().set_usageNote("note2", "fra")
+        state3 = Statement().set_usageNote("note3", "eng")
+        self.sense.definition[0].statement = [state1, state2]
+        self.sense.definition[1].statement = [state3]
+        # Test find usage notes
+        self.assertListEqual(self.sense.find_usage_notes("fra"), [state2.usageNote])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_usage_notes("eng")), set([state1.usageNote, state3.usageNote]))
+        # Release created instances
+        del self.sense.definition[0].statement[:]
+        del self.sense.definition[1].statement[:]
+        del state1, state2, state3
+        del self.sense.definition[:]
+        del def1, def2
+
+    def test_set_encyclopedic_information(self):
+        info = "encyclopedic"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_encyclopedic_information(info), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 1)
+        self.assertEqual(self.sense.definition[0].statement[0].encyclopedicInformation, info)
+        # Test set a second encyclopedic information
+        language = "C++"
+        self.assertIs(self.sense.set_encyclopedic_information(info, language=language), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 2)
+        self.assertEqual(self.sense.definition[0].statement[1].encyclopedicInformation, info)
+        self.assertEqual(self.sense.definition[0].statement[1].language, language)
+
+    def test_encyclopedic_informations(self):
+        # Create several definitions
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Create several statements with different encyclopedic informations and languages
+        state1 = Statement().set_encyclopedicInformation("info1", "eng")
+        state2 = Statement().set_encyclopedicInformation("info2", "fra")
+        state3 = Statement().set_encyclopedicInformation("info3", "eng")
+        self.sense.definition[0].statement = [state1, state2]
+        self.sense.definition[1].statement = [state3]
+        # Test find encyclopedic informations
+        self.assertListEqual(self.sense.find_encyclopedic_informations("fra"), [state2.encyclopedicInformation])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_encyclopedic_informations("eng")), set([state1.encyclopedicInformation, state3.encyclopedicInformation]))
+        # Release created instances
+        del self.sense.definition[0].statement[:]
+        del self.sense.definition[1].statement[:]
+        del state1, state2, state3
+        del self.sense.definition[:]
+        del def1, def2
+
+    def test_set_restriction(self):
+        only = "restriction"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_restriction(only), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 1)
+        self.assertEqual(self.sense.definition[0].statement[0].restriction, only)
+        # Test set a second restriction
+        language = "C++"
+        self.assertIs(self.sense.set_restriction(only, language=language), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 2)
+        self.assertEqual(self.sense.definition[0].statement[1].restriction, only)
+        self.assertEqual(self.sense.definition[0].statement[1].language, language)
+
+    def test_find_restrictions(self):
+        # Create several definitions
+        def1 = Definition()
+        def2 = Definition()
+        self.sense.definition = [def1, def2]
+        # Create several statements with different restrictions and languages
+        state1 = Statement().set_restriction("only1", "eng")
+        state2 = Statement().set_restriction("only2", "fra")
+        state3 = Statement().set_restriction("only3", "eng")
+        self.sense.definition[0].statement = [state1, state2]
+        self.sense.definition[1].statement = [state3]
+        # Test find restrictions
+        self.assertListEqual(self.sense.find_restrictions("fra"), [state2.restriction])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.sense.find_restrictions("eng")), set([state1.restriction, state3.restriction]))
+        # Release created instances
+        del self.sense.definition[0].statement[:]
+        del self.sense.definition[1].statement[:]
+        del state1, state2, state3
+        del self.sense.definition[:]
+        del def1, def2
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 
 ## Run test suite

@@ -120,6 +120,78 @@ class TestStatementFunctions(unittest.TestCase):
         # Test get note type
         self.assertEqual(self.statement.get_noteType(), type)
 
+    def test_set_usageNote(self):
+        # Test usage note only
+        note = "blablabla"
+        self.assertIs(self.statement.set_usageNote(note), self.statement)
+        self.assertEqual(self.statement.usageNote, note)
+        # Test usage note and language
+        note = "This is another usage note."
+        language = "eng"
+        self.assertIs(self.statement.set_usageNote(note, language=language), self.statement)
+        self.assertEqual(self.statement.usageNote, note)
+        self.assertEqual(self.statement.language, language)
+
+    def test_get_usageNote(self):
+        # Set usage note
+        note = "whatever"
+        self.statement.usageNote = note
+        # Test get usage note
+        self.assertEqual(self.statement.get_usageNote(), note)
+        # Test with a language filter
+        language = "eng"
+        self.statement.language = language
+        self.assertIsNone(self.statement.get_usageNote(language="fra"))
+        self.assertEqual(self.statement.get_usageNote(language=language), note)
+
+    def test_set_encyclopedicInformation(self):
+        # Test encyclopedic information only
+        info = "blablabla"
+        self.assertIs(self.statement.set_encyclopedicInformation(info), self.statement)
+        self.assertEqual(self.statement.encyclopedicInformation, info)
+        # Test encyclopedic information and language
+        info = "This is another encyclopedic information."
+        language = "eng"
+        self.assertIs(self.statement.set_encyclopedicInformation(info, language=language), self.statement)
+        self.assertEqual(self.statement.encyclopedicInformation, info)
+        self.assertEqual(self.statement.language, language)
+
+    def test_get_encyclopedicInformation(self):
+        # Set encyclopedic information
+        info = "whatever"
+        self.statement.encyclopedicInformation = info
+        # Test get encyclopedic information
+        self.assertEqual(self.statement.get_encyclopedicInformation(), info)
+        # Test with a language filter
+        language = "eng"
+        self.statement.language = language
+        self.assertIsNone(self.statement.get_encyclopedicInformation(language="fra"))
+        self.assertEqual(self.statement.get_encyclopedicInformation(language=language), info)
+
+    def test_set_restriction(self):
+        # Test restriction only
+        only = "blablabla"
+        self.assertIs(self.statement.set_restriction(only), self.statement)
+        self.assertEqual(self.statement.restriction, only)
+        # Test encyclopedic information and language
+        only = "This is another restriction."
+        language = "eng"
+        self.assertIs(self.statement.set_restriction(only, language=language), self.statement)
+        self.assertEqual(self.statement.restriction, only)
+        self.assertEqual(self.statement.language, language)
+
+    def test_get_restriction(self):
+        # Set restriction
+        only = "whatever"
+        self.statement.restriction = only
+        # Test get restriction
+        self.assertEqual(self.statement.get_restriction(), only)
+        # Test with a language filter
+        language = "eng"
+        self.statement.language = language
+        self.assertIsNone(self.statement.get_restriction(language="fra"))
+        self.assertEqual(self.statement.get_restriction(language=language), only)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStatementFunctions)
 
 ## Run test suite

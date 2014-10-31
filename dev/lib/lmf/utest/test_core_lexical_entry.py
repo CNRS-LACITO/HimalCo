@@ -509,6 +509,27 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del self.lexical_entry.sense[:]
         del sens1, sens2
 
+    def test_set_usage_note(self):
+        note = "note"
+        language = "bla"
+        self.assertIs(self.lexical_entry.set_usage_note(note, language), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].usageNote, note)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].language, language)
+
+    def test_set_encyclopedic_information(self):
+        info = "info"
+        language = "bla"
+        self.assertIs(self.lexical_entry.set_encyclopedic_information(info, language), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].encyclopedicInformation, info)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].language, language)
+
+    def test_set_restriction(self):
+        only = "only"
+        language = "bla"
+        self.assertIs(self.lexical_entry.set_restriction(only, language), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].restriction, only)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].language, language)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite

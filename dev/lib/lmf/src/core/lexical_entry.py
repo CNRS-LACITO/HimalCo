@@ -515,6 +515,54 @@ class LexicalEntry():
             found_notes += sense.find_notes(type)
         return found_notes
 
+    def set_usage_note(self, usage_note, language=None):
+        """! @brief Set usage note and language.
+        Attributes 'usageNote' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense.
+        @param usage_note Usage note to set.
+        @param language Language of the usage note.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instances, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_usage_note(usage_note, language)
+        return self
+
+    def set_encyclopedic_information(self, encyclopedic_information, language=None):
+        """! @brief Set encyclopedic information and language.
+        Attributes 'encyclopedicInformation' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense.
+        @param encyclopedic_information Encyclopedic information to set.
+        @param language Language of the encyclopedic information.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instances, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_encyclopedic_information(encyclopedic_information, language)
+        return self
+
+    def set_restriction(self, restriction, language=None):
+        """! @brief Set restriction and language.
+        Attributes 'restriction' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense.
+        @param restriction Restriction to set.
+        @param language Language of the restriction.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instances, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_restriction(restriction, language)
+        return self
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.

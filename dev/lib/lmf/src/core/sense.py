@@ -137,7 +137,7 @@ class Sense():
             for inst in self.get_definitions():
                 if inst.get_language() is None and inst.get_definition() is None:
                     # Found the Definition instance to set
-                    instance = instance
+                    instance = inst
                     break
         if instance is None:
             # Create a Definition instance
@@ -177,7 +177,7 @@ class Sense():
             for inst in self.get_definitions():
                 if inst.get_language() is None and inst.get_gloss() is None:
                     # Found the Definition instance to set
-                    instance = instance
+                    instance = inst
                     break
         if instance is None:
             # Create a Definition instance
@@ -213,3 +213,84 @@ class Sense():
         for definition in self.get_definitions():
             found_notes += definition.find_notes(type)
         return found_notes
+
+    def set_usage_note(self, usage_note, language=None):
+        """! @brief Set usage note and language.
+        These attributes are owned by Statement, which is owned by Definition.
+        @param usage_note Usage note to set.
+        @param language Language used for the usage note.
+        @return Sense instance.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is no Definition instances, create and add one
+        if definition is None:
+            definition = self.create_definition()
+            self.add_definition(definition)
+        definition.set_usage_note(usage_note, language)
+        return self
+
+    def find_usage_notes(self, language):
+        """! @brief Find usage notes.
+        This attribute is owned by Statement, which owned by Definition.
+        @param language Language to consider to retrieve the usage note.
+        @return A Python list of found Statement attributes 'usageNote'.
+        """
+        found_notes = []
+        for definition in self.get_definitions():
+            found_notes += definition.find_usage_notes(language)
+        return found_notes
+
+    def set_encyclopedic_information(self, encyclopedic_information, language=None):
+        """! @brief Set encyclopedic information and language.
+        These attributes are owned by Statement, which is owned by Definition.
+        @param encyclopedic_information Encyclopedic information to set.
+        @param language Language used for the encyclopedic information.
+        @return Sense instance.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is no Definition instances, create and add one
+        if definition is None:
+            definition = self.create_definition()
+            self.add_definition(definition)
+        definition.set_encyclopedic_information(encyclopedic_information, language)
+        return self
+
+    def find_encyclopedic_informations(self, language):
+        """! @brief Find encyclopedic informations.
+        This attribute is owned by Statement, which owned by Definition.
+        @param language Language to consider to retrieve the encyclopedic informations.
+        @return A Python list of found Statement attributes 'encyclopedicInformation'.
+        """
+        found_informations = []
+        for definition in self.get_definitions():
+            found_informations += definition.find_encyclopedic_informations(language)
+        return found_informations
+
+    def set_restriction(self, restriction, language=None):
+        """! @brief Set restriction and language.
+        These attributes are owned by Statement, which is owned by Definition.
+        @param restriction Restriction to set.
+        @param language Language used for the restriction.
+        @return Sense instance.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is no Definition instances, create and add one
+        if definition is None:
+            definition = self.create_definition()
+            self.add_definition(definition)
+        definition.set_restriction(restriction, language)
+        return self
+
+    def find_restrictions(self, language):
+        """! @brief Find restrictions.
+        This attribute is owned by Statement, which owned by Definition.
+        @param language Language to consider to retrieve the restriction.
+        @return A Python list of found Statement attributes 'restriction'.
+        """
+        found_restrictions = []
+        for definition in self.get_definitions():
+            found_restrictions += definition.find_restrictions(language)
+        return found_restrictions

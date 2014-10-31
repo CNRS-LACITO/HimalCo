@@ -148,6 +148,93 @@ class TestDefinitionFunctions(unittest.TestCase):
         del self.definition.statement[:]
         del state1, state2, state3, state4
 
+    def test_set_usage_note(self):
+        note = "note"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_usage_note(note), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].usageNote, note)
+        # Test set a second usage note
+        language = "Python"
+        self.assertIs(self.definition.set_usage_note(note, language=language), self.definition)
+        self.assertEqual(len(self.definition.statement), 2)
+        self.assertEqual(self.definition.statement[1].usageNote, note)
+        self.assertEqual(self.definition.statement[1].language, language)
+
+    def test_find_usage_notes(self):
+        # Create several statements with different usage notes and languages
+        state1 = Statement().set_usageNote("note1", "eng")
+        state2 = Statement().set_usageNote("note2", "fra")
+        state3 = Statement().set_usageNote("note3", "eng")
+        state4 = Statement().set_usageNote("note4")
+        # Add statements to the definition
+        self.definition.statement = [state1, state2, state3, state4]
+        # Test find usage notes
+        self.assertListEqual(self.definition.find_usage_notes("fra"), [state2.usageNote])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.definition.find_usage_notes("eng")), set([state1.usageNote, state3.usageNote]))
+        # Release Statement instances
+        del self.definition.statement[:]
+        del state1, state2, state3, state4
+
+    def test_set_encyclopedic_information(self):
+        info = "note"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_encyclopedic_information(info), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].encyclopedicInformation, info)
+        # Test set a second encyclopedic information
+        language = "Python"
+        self.assertIs(self.definition.set_encyclopedic_information(info, language=language), self.definition)
+        self.assertEqual(len(self.definition.statement), 2)
+        self.assertEqual(self.definition.statement[1].encyclopedicInformation, info)
+        self.assertEqual(self.definition.statement[1].language, language)
+
+    def test_find_encyclopedic_informations(self):
+        # Create several statements with different encyclopedic informations and languages
+        state1 = Statement().set_encyclopedicInformation("info1", "eng")
+        state2 = Statement().set_encyclopedicInformation("info2", "fra")
+        state3 = Statement().set_encyclopedicInformation("info3", "eng")
+        state4 = Statement().set_encyclopedicInformation("info4")
+        # Add statements to the definition
+        self.definition.statement = [state1, state2, state3, state4]
+        # Test find usage notes
+        self.assertListEqual(self.definition.find_encyclopedic_informations("fra"), [state2.encyclopedicInformation])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.definition.find_encyclopedic_informations("eng")), set([state1.encyclopedicInformation, state3.encyclopedicInformation]))
+        # Release Statement instances
+        del self.definition.statement[:]
+        del state1, state2, state3, state4
+
+    def test_set_restriction(self):
+        only = "note"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_restriction(only), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].restriction, only)
+        # Test set a second restriction
+        language = "Python"
+        self.assertIs(self.definition.set_restriction(only, language=language), self.definition)
+        self.assertEqual(len(self.definition.statement), 2)
+        self.assertEqual(self.definition.statement[1].restriction, only)
+        self.assertEqual(self.definition.statement[1].language, language)
+
+    def test_find_restrictions(self):
+        # Create several statements with different restrictions and languages
+        state1 = Statement().set_restriction("only1", "eng")
+        state2 = Statement().set_restriction("only2", "fra")
+        state3 = Statement().set_restriction("only3", "eng")
+        state4 = Statement().set_restriction("only4")
+        # Add statements to the definition
+        self.definition.statement = [state1, state2, state3, state4]
+        # Test find usage notes
+        self.assertListEqual(self.definition.find_restrictions("fra"), [state2.restriction])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.definition.find_restrictions("eng")), set([state1.restriction, state3.restriction]))
+        # Release Statement instances
+        del self.definition.statement[:]
+        del state1, state2, state3, state4
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestDefinitionFunctions)
 
 ## Run test suite

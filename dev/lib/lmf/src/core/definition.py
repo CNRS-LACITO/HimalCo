@@ -124,11 +124,26 @@ class Definition():
         @return Definition instance.
         """
         instance = None
-        # Find if there is a Statement instance without note
-        for statement in self.get_statements():
-            if statement.get_note() is None:
-                instance = statement
-                break
+        if language is None:
+            # Find if there is a Statement instance without note
+            for statement in self.get_statements():
+                if statement.get_note() is None:
+                    instance = statement
+                    break
+        else:
+            # Find if there is a Statement instance with this language without note
+            for statement in self.get_statements():
+                if statement.get_language() == language and statement.get_note() is None:
+                    # Found the Statement instance to set
+                    instance = inst
+                    break
+            if instance is None:
+                # Set first Statement instance that has no note nor language
+                for statement in self.get_statements():
+                    if statement.get_language() is None and statement.get_note() is None:
+                        # Found the Statement instance to set
+                        instance = statement
+                        break
         if instance is None:
             # Create a Statement instance
             instance = self.create_statement()
@@ -147,3 +162,123 @@ class Definition():
             if statement.get_note(type) is not None:
                 found_notes.append(statement.get_note(type))
         return found_notes
+
+    def set_usage_note(self, usage_note, language=None):
+        """! @brief Set usage note and language.
+        These attributes are owned by Statement.
+        @param usage_note Usage note to set.
+        @param language Language used for the usage note.
+        @return Definition instance.
+        """
+        instance = None
+        # Find if there is a Statement instance with this language without usage note
+        for statement in self.get_statements():
+            if statement.get_language() == language and statement.get_usageNote() is None:
+                # Found the Statement instance to set
+                instance = statement
+                break
+        if instance is None:
+            # Set first Statement instance that has no usage note nor language
+            for statement in self.get_statements():
+                if statement.get_language() is None and statement.get_usageNote() is None:
+                    # Found the Statement instance to set
+                    instance = statement
+                    break
+        if instance is None:
+            # Create a Statement instance
+            instance = self.create_statement()
+            self.add_statement(instance)
+        instance.set_usageNote(usage_note, language)
+        return self
+
+    def find_usage_notes(self, language):
+        """! @brief Find usage notes.
+        This attribute is owned by Statement.
+        @param language The language to consider to retrieve the usage note.
+        @return A Python list of found Statement attributes 'usageNote'.
+        """
+        found_notes = []
+        for statement in self.get_statements():
+            if statement.get_usageNote(language) is not None:
+                found_notes.append(statement.get_usageNote(language))
+        return found_notes
+
+    def set_encyclopedic_information(self, encyclopedic_information, language=None):
+        """! @brief Set encyclopedic information and language.
+        These attributes are owned by Statement.
+        @param encyclopedic_information Encyclopedic information to set.
+        @param language Language used for the encyclopedic information.
+        @return Definition instance.
+        """
+        instance = None
+        # Find if there is a Statement instance with this language without encyclopedic information
+        for statement in self.get_statements():
+            if statement.get_language() == language and statement.get_encyclopedicInformation() is None:
+                # Found the Statement instance to set
+                instance = statement
+                break
+        if instance is None:
+            # Set first Statement instance that has no encyclopedic information nor language
+            for statement in self.get_statements():
+                if statement.get_language() is None and statement.get_encyclopedicInformation() is None:
+                    # Found the Statement instance to set
+                    instance = statement
+                    break
+        if instance is None:
+            # Create a Statement instance
+            instance = self.create_statement()
+            self.add_statement(instance)
+        instance.set_encyclopedicInformation(encyclopedic_information, language)
+        return self
+
+    def find_encyclopedic_informations(self, language):
+        """! @brief Find encyclopedic informations.
+        This attribute is owned by Statement.
+        @param language The language to consider to retrieve the encyclopedic information.
+        @return A Python list of found Statement attributes 'encyclopedicInformation'.
+        """
+        found_informations = []
+        for statement in self.get_statements():
+            if statement.get_encyclopedicInformation(language) is not None:
+                found_informations.append(statement.get_encyclopedicInformation(language))
+        return found_informations
+
+    def set_restriction(self, restriction, language=None):
+        """! @brief Set restriction and language.
+        These attributes are owned by Statement.
+        @param restriction Restriction to set.
+        @param language Language used for the restriction.
+        @return Definition instance.
+        """
+        instance = None
+        # Find if there is a Statement instance with this language without restriction
+        for statement in self.get_statements():
+            if statement.get_language() == language and statement.get_restriction() is None:
+                # Found the Statement instance to set
+                instance = statement
+                break
+        if instance is None:
+            # Set first Statement instance that has no restriction nor language
+            for statement in self.get_statements():
+                if statement.get_language() is None and statement.get_restriction() is None:
+                    # Found the Statement instance to set
+                    instance = statement
+                    break
+        if instance is None:
+            # Create a Statement instance
+            instance = self.create_statement()
+            self.add_statement(instance)
+        instance.set_restriction(restriction, language)
+        return self
+
+    def find_restrictions(self, language):
+        """! @brief Find restrictions.
+        This attribute is owned by Statement.
+        @param language The language to consider to retrieve the restriction.
+        @return A Python list of found Statement attributes 'restriction'.
+        """
+        found_restrictions = []
+        for statement in self.get_statements():
+            if statement.get_restriction(language) is not None:
+                found_restrictions.append(statement.get_restriction(language))
+        return found_restrictions
