@@ -115,6 +115,13 @@ class Definition():
         """
         return self.statement
 
+    def get_first_statement(self):
+        """! @brief Get the previously registered statement.
+        @return The last element of Definition attribute 'statement'.
+        """
+        if len(self.get_statements()) >= 1:
+            return self.get_statements()[0]
+
     def set_note(self, note, type=None, language=None):
         """! @brief Set note, note type and language.
         These attributes are owned by Statement.
@@ -282,3 +289,172 @@ class Definition():
             if statement.get_restriction(language) is not None:
                 found_restrictions.append(statement.get_restriction(language))
         return found_restrictions
+
+    def set_borrowed_word(self, borrowed_word):
+        """! @brief Set source language (in English).
+        Attribute 'borrowedWord' is owned by the first Statement.
+        @param borrowed_word Source language.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_borrowedWord(borrowed_word)
+        return self
+
+    def get_borrowed_word(self):
+        """! @brief Get source language (in English).
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'borrowedWord'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get borrowed word
+        if statement is not None:
+            return statement.get_borrowedWord()
+
+    def set_written_form(self, written_form):
+        """! @brief Set loan word.
+        Attribute 'writtenForm' is owned by the first Statement.
+        @param written_form Loan word.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_writtenForm(written_form)
+        return self
+
+    def get_written_form(self):
+        """! @brief Get loan word.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'writtenForm'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get loan word
+        if statement is not None:
+            return statement.get_writtenForm()
+
+    def set_etymology(self, etymology):
+        """! @brief Set etymology.
+        Attribute 'etymology' is owned by the first Statement.
+        @param etymology Etymology.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_etymology(etymology)
+        return self
+
+    def get_etymology(self):
+        """! @brief Get etymology.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'etymology'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get etymology
+        if statement is not None:
+            return statement.get_etymology()
+
+    def set_etymology_comment(self, etymology_comment, term_source_language=None):
+        """! @brief Set etymology comment and language.
+        Attributes 'etymologyComment' and 'termSourceLanguage' are owned by the first Statement.
+        @param etymology_comment Etymology comment.
+        @param term_source_language Language of the comment.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_etymologyComment(etymology_comment, term_source_language)
+        return self
+
+    def get_etymology_comment(self, term_source_language=None):
+        """! @brief Get etymology comment.
+        This attribute is owned by the first Statement.
+        @param term_source_language The language of the etymology comment to retrieve.
+        @return Statement attribute 'etymologyComment'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get etymology comment
+        if statement is not None:
+            return statement.get_etymologyComment(term_source_language)
+
+    def get_term_source_language(self):
+        """! @brief Get language used for the etymology comment.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'termSourceLanguage'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get etymology comment language
+        if statement is not None:
+            return statement.get_termSourceLanguage()
+
+    def set_etymology_gloss(self, etymology_gloss):
+        """! @brief Set etymology gloss.
+        Attribute 'etymologyGloss' is owned by the first Statement.
+        @param etymology_gloss Etymology gloss.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_etymologyGloss(etymology_gloss)
+        return self
+
+    def get_etymology_gloss(self):
+        """! @brief Get etymology gloss.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'etymologyGloss'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get etymology gloss
+        if statement is not None:
+            return statement.get_etymologyGloss()
+
+    def set_etymology_source(self, etymology_source):
+        """! @brief Set etymology source.
+        Attribute 'etymologySource' is owned by the first Statement.
+        @param etymology_source Etymology source.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_etymologySource(etymology_source)
+        return self
+
+    def get_etymology_source(self):
+        """! @brief Get etymology source.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'etymologySource'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get etymology source
+        if statement is not None:
+            return statement.get_etymologySource()

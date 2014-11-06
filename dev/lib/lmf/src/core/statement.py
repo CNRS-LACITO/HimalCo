@@ -165,3 +165,120 @@ class Statement():
             return self.restriction
         if self.get_language() == language:
             return self.restriction
+
+    def set_borrowedWord(self, borrowed_word):
+        """Set source language (in English), e.g. "Chinese".
+        @param borrowed_word The source language to set.
+        @return Statement instance.
+        """
+        error_msg = "Borrowed word value '%s' is not allowed" % borrowed_word
+        check_attr_type(borrowed_word, [str, unicode], error_msg)
+        self.borrowedWord = borrowed_word
+        return self
+
+    def get_borrowedWord(self):
+        """Get source language (in English).
+        @return Statement attribute 'borrowedWord'.
+        """
+        return self.borrowedWord
+
+    def set_writtenForm(self, written_form):
+        """Set loan word.
+        @param written_form The loan word to set.
+        @return Statement instance.
+        """
+        error_msg = "Written form value '%s' is not allowed" % written_form
+        check_attr_type(written_form, [str, unicode], error_msg)
+        self.writtenForm = written_form
+        return self
+
+    def get_writtenForm(self):
+        """Get loan word.
+        @return Statement attribute 'writtenForm'.
+        """
+        return self.writtenForm
+
+    def set_etymology(self, etymology):
+        """Set etymology.
+        @param etymolgy The etymology to set.
+        @return Statement instance.
+        """
+        error_msg = "Etymology value '%s' is not allowed" % etymology
+        check_attr_type(etymology, [str, unicode], error_msg)
+        self.etymology = etymology
+        return self
+
+    def get_etymology(self):
+        """Get etymology.
+        @return Statement attribute 'etymology'.
+        """
+        return self.etymology
+
+    def set_etymologyComment(self, etymology_comment, term_source_language=None):
+        """Set etymology comment (in English).
+        @param etymolgy_comment The etymology comment to set.
+        @param term_source_language The language used for the comment.
+        @return Statement instance.
+        """
+        error_msg = "Etymology comment value '%s' is not allowed" % etymology_comment
+        check_attr_type(etymology_comment, [str, unicode], error_msg)
+        self.etymologyComment = etymology_comment
+        if term_source_language is not None:
+            self.set_termSourceLanguage(term_source_language)
+        return self
+
+    def get_etymologyComment(self, term_source_language=None):
+        """Get etymology comment (in English).
+        @param term_source_language The language of the etymology comment to retrieve.
+        @return Statement attribute 'etymologyComment'.
+        """
+        if term_source_language is None or self.get_termSourceLanguage() == term_source_language:
+            return self.etymologyComment
+
+    def set_termSourceLanguage(self, term_source_language):
+        """Set language used for the etymology comment.
+        @param term_source_language The etymology comment language to set.
+        @return Statement instance.
+        """
+        error_msg = "Term source language value '%s' is not allowed" % term_source_language
+        check_attr_type(term_source_language, [str, unicode], error_msg)
+        self.termSourceLanguage = term_source_language
+        return self
+
+    def get_termSourceLanguage(self):
+        """Get language used for the etymology comment.
+        @return Statement attribute 'termSourceLanguage'.
+        """
+        return self.termSourceLanguage
+
+    def set_etymologyGloss(self, etymology_gloss):
+        """Set etymology gloss.
+        @param etymolgy_gloss The etymology gloss to set.
+        @return Statement instance.
+        """
+        error_msg = "Etymology gloss value '%s' is not allowed" % etymology_gloss
+        check_attr_type(etymology_gloss, [str, unicode], error_msg)
+        self.etymologyGloss = etymology_gloss
+        return self
+
+    def get_etymologyGloss(self):
+        """Get etymology gloss.
+        @return Statement attribute 'etymologyGloss'.
+        """
+        return self.etymologyGloss
+
+    def set_etymologySource(self, etymology_source):
+        """Set etymology source.
+        @param etymolgy_source The etymology source to set.
+        @return Statement instance.
+        """
+        error_msg = "Etymology source value '%s' is not allowed" % etymology_source
+        check_attr_type(etymology_source, [str, unicode], error_msg)
+        self.etymologySource = etymology_source
+        return self
+
+    def get_etymologySource(self):
+        """Get etymology source.
+        @return Statement attribute 'etymologySource'.
+        """
+        return self.etymologySource

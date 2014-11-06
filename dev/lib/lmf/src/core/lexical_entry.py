@@ -563,6 +563,175 @@ class LexicalEntry():
         sense.set_restriction(restriction, language)
         return self
 
+    def set_borrowed_word(self, borrowed_word):
+        """! @brief Set source language (in English).
+        Attribute 'borrowedWord' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param borrowed_word Source language.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_borrowed_word(borrowed_word)
+        return self
+
+    def get_borrowed_word(self):
+        """! @brief Get source language (in English).
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'borrowedWord'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get source language
+        if sense is not None:
+            return sense.get_borrowed_word()
+
+    def set_written_form(self, written_form):
+        """! @brief Set loan word.
+        Attribute 'writtenForm' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param written_form Loan word.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_written_form(written_form)
+        return self
+
+    def get_written_form(self):
+        """! @brief Get loan word.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'writtenForm'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get loan word
+        if sense is not None:
+            return sense.get_written_form()
+
+    def set_etymology(self, etymology):
+        """! @brief Set etymology.
+        Attribute 'etymology' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param etymology Etymology.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_etymology(etymology)
+        return self
+
+    def get_etymology(self):
+        """! @brief Get etymology.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'etymology'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get etymology
+        if sense is not None:
+            return sense.get_etymology()
+
+    def set_etymology_comment(self, etymology_comment, term_source_language=None):
+        """! @brief Set etymology comment and language.
+        Attributes 'etymologyComment' and 'termSourceLanguage' are owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param etymology_comment Etymology comment.
+        @param term_source_language Language of the comment.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_etymology_comment(etymology_comment, term_source_language)
+        return self
+
+    def get_etymology_comment(self, term_source_language=None):
+        """! @brief Get etymology comment.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param term_source_language The language of the etymology comment to retrieve.
+        @return Statement attribute 'etymologyComment'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get etymology comment
+        if sense is not None:
+            return sense.get_etymology_comment(term_source_language)
+
+    def get_term_source_language(self):
+        """! @brief Get language used for the etymology comment.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'termSourceLanguage'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get etymology comment language
+        if sense is not None:
+            return sense.get_term_source_language()
+
+    def set_etymology_gloss(self, etymology_gloss):
+        """! @brief Set etymology gloss.
+        Attribute 'etymologyGloss' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param etymology_gloss Etymology gloss.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_etymology_gloss(etymology_gloss)
+        return self
+
+    def get_etymology_gloss(self):
+        """! @brief Get etymology gloss.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'etymologyGloss'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get etymology gloss
+        if sense is not None:
+            return sense.get_etymology_gloss()
+
+    def set_etymology_source(self, etymology_source):
+        """! @brief Set etymology source.
+        Attribute 'etymologySource' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param etymology_source Etymology source.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_etymology_source(etymology_source)
+        return self
+
+    def get_etymology_source(self):
+        """! @brief Get etymology source.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'etymologySource'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get etymology source
+        if sense is not None:
+            return sense.get_etymology_source()
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.

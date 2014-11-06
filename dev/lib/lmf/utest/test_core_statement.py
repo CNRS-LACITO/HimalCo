@@ -192,6 +192,102 @@ class TestStatementFunctions(unittest.TestCase):
         self.assertIsNone(self.statement.get_restriction(language="fra"))
         self.assertEqual(self.statement.get_restriction(language=language), only)
 
+    def test_set_borrowedWord(self):
+        word = "borrowed"
+        self.assertIs(self.statement.set_borrowedWord(word), self.statement)
+        self.assertEqual(self.statement.borrowedWord, word)
+
+    def test_get_borrowedWord(self):
+        # Set borrowed word
+        word = "borrowed"
+        self.statement.borrowedWord = word
+        # Test get borrowed word
+        self.assertEqual(self.statement.get_borrowedWord(), word)
+
+    def test_set_writtenForm(self):
+        form = "written"
+        self.assertIs(self.statement.set_writtenForm(form), self.statement)
+        self.assertEqual(self.statement.writtenForm, form)
+
+    def test_get_writtenForm(self):
+        # Set written form
+        form = "written"
+        self.statement.writtenForm = form
+        # Test get written form
+        self.assertEqual(self.statement.get_writtenForm(), form)
+
+    def test_set_etymology(self):
+        etymology = "etymology"
+        self.assertIs(self.statement.set_etymology(etymology), self.statement)
+        self.assertEqual(self.statement.etymology, etymology)
+
+    def test_get_etymology(self):
+        # Set etymology
+        etymology = "etymology"
+        self.statement.etymology = etymology
+        # Test get etymology
+        self.assertEqual(self.statement.get_etymology(), etymology)
+
+    def test_set_etymologyComment(self):
+        # Test etymology comment only
+        comment = "etymology"
+        self.assertIs(self.statement.set_etymologyComment(comment), self.statement)
+        self.assertEqual(self.statement.etymologyComment, comment)
+        # Test etymology comment and language
+        commentaire = "etymologie"
+        langage = "fra"
+        self.assertIs(self.statement.set_etymologyComment(commentaire, term_source_language=langage), self.statement)
+        self.assertEqual(self.statement.etymologyComment, commentaire)
+        self.assertEqual(self.statement.termSourceLanguage, langage)
+
+    def test_get_etymologyComment(self):
+        # Set etymology comment
+        comment = "etymology"
+        self.statement.etymologyComment = comment
+        # Test get etymology
+        self.assertEqual(self.statement.get_etymologyComment(), comment)
+        # Test with a language filter
+        language = "eng"
+        self.statement.termSourceLanguage = language
+        self.assertIsNone(self.statement.get_etymologyComment(term_source_language="fra"))
+        self.assertEqual(self.statement.get_etymologyComment(term_source_language=language), comment)
+
+    def test_set_termSourceLanguage(self):
+        lang = "source"
+        self.assertIs(self.statement.set_termSourceLanguage(lang), self.statement)
+        self.assertEqual(self.statement.termSourceLanguage, lang)
+
+    def test_get_termSourceLanguage(self):
+        # Set language
+        lang = "source"
+        self.statement.termSourceLanguage = lang
+        # Test get language
+        self.assertEqual(self.statement.get_termSourceLanguage(), lang)
+
+    def test_set_etymologyGloss(self):
+        gloss = "GLOSS"
+        self.assertIs(self.statement.set_etymologyGloss(gloss), self.statement)
+        self.assertEqual(self.statement.etymologyGloss, gloss)
+
+    def test_get_etymologyGloss(self):
+        # Set etymology gloss
+        gloss = "GLOSS"
+        self.statement.etymologyGloss = gloss
+        # Test get etymology gloss
+        self.assertEqual(self.statement.get_etymologyGloss(), gloss)
+
+    def test_set_etymologySource(self):
+        source = "etymology"
+        self.assertIs(self.statement.set_etymologySource(source), self.statement)
+        self.assertEqual(self.statement.etymologySource, source)
+
+    def test_get_etymologySource(self):
+        # Set etymology source
+        source = "etymology"
+        self.statement.etymologySource = source
+        # Test get etymology source
+        self.assertEqual(self.statement.get_etymologySource(), source)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStatementFunctions)
 
 ## Run test suite

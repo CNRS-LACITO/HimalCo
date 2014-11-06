@@ -235,6 +235,144 @@ class TestDefinitionFunctions(unittest.TestCase):
         del self.definition.statement[:]
         del state1, state2, state3, state4
 
+    def test_set_borrowed_word(self):
+        word = "borrowed"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_borrowed_word(word), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].borrowedWord, word)
+
+    def test_get_borrowed_word(self):
+        word = "borrowed"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set borrowed word
+        self.definition.statement[0].borrowedWord = word
+        # Test get borrowed word
+        self.assertEqual(self.definition.get_borrowed_word(), word)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
+    def test_set_writtenForm(self):
+        form = "written"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_written_form(form), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].writtenForm, form)
+
+    def test_get_writtenForm(self):
+        form = "written"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set written form
+        self.definition.statement[0].writtenForm = form
+        # Test get written form
+        self.assertEqual(self.definition.get_written_form(), form)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
+    def test_set_etymology(self):
+        etymology = "etymology"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_etymology(etymology), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].etymology, etymology)
+
+    def test_get_etymology(self):
+        etymology = "etymology"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set etymology
+        self.definition.statement[0].etymology = etymology
+        # Test get etymology
+        self.assertEqual(self.definition.get_etymology(), etymology)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
+    def test_set_etymology_comment(self):
+        # Test etymology comment only
+        comment = "etymology"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_etymology_comment(comment), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].etymologyComment, comment)
+        # Test etymology comment and language
+        commentaire = "etymologie"
+        langage = "fra"
+        self.assertIs(self.definition.set_etymology_comment(commentaire, term_source_language=langage), self.definition)
+        self.assertEqual(self.definition.statement[0].etymologyComment, commentaire)
+        self.assertEqual(self.definition.statement[0].termSourceLanguage, langage)
+
+    def test_get_etymology_comment(self):
+        comment = "etymology"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set etymology comment
+        self.definition.statement[0].etymologyComment = comment
+        # Test get etymology comment
+        self.assertEqual(self.definition.get_etymology_comment(), comment)
+        # Test with a language filter
+        language = "eng"
+        self.definition.statement[0].termSourceLanguage = language
+        self.assertIsNone(self.definition.get_etymology_comment(term_source_language="fra"))
+        self.assertEqual(self.definition.get_etymology_comment(term_source_language=language), comment)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
+    def test_set_etymology_gloss(self):
+        gloss = "GLOSS"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_etymology_gloss(gloss), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].etymologyGloss, gloss)
+
+    def test_get_etymology_gloss(self):
+        gloss = "GLOSS"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set etymology gloss
+        self.definition.statement[0].etymologyGloss = gloss
+        # Test get etymology gloss
+        self.assertEqual(self.definition.get_etymology_gloss(), gloss)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
+    def test_set_etymology_source(self):
+        source = "etymology"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_etymology_source(source), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].etymologySource, source)
+
+    def test_get_etymology_source(self):
+        source = "etymology"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set etymology source
+        self.definition.statement[0].etymologySource = source
+        # Test get etymology source
+        self.assertEqual(self.definition.get_etymology_source(), source)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestDefinitionFunctions)
 
 ## Run test suite

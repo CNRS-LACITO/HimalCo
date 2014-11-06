@@ -530,6 +530,204 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].restriction, only)
         self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].language, language)
 
+    def test_set_borrowed_word(self):
+        word = "borrowed"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_borrowed_word(word), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].borrowedWord, word)
+
+    def test_get_borrowed_word(self):
+        word = "borrowed"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set borrowed word
+        self.lexical_entry.sense[0].definition[0].statement[0].borrowedWord = word
+        # Test get borrowed word
+        self.assertEqual(self.lexical_entry.get_borrowed_word(), word)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_set_writtenForm(self):
+        form = "written"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_written_form(form), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].writtenForm, form)
+
+    def test_get_writtenForm(self):
+        form = "written"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set written form
+        self.lexical_entry.sense[0].definition[0].statement[0].writtenForm = form
+        # Test get written form
+        self.assertEqual(self.lexical_entry.get_written_form(), form)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_set_etymology(self):
+        etymology = "etymology"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_etymology(etymology), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].etymology, etymology)
+
+    def test_get_etymology(self):
+        etymology = "etymology"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set etymology
+        self.lexical_entry.sense[0].definition[0].statement[0].etymology = etymology
+        # Test get etymology
+        self.assertEqual(self.lexical_entry.get_etymology(), etymology)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_set_etymology_comment(self):
+        # Test etymology comment only
+        comment = "etymology"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_etymology_comment(comment), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].etymologyComment, comment)
+        # Test etymology comment and language
+        commentaire = "etymologie"
+        langage = "fra"
+        self.assertIs(self.lexical_entry.set_etymology_comment(commentaire, term_source_language=langage), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].etymologyComment, commentaire)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].termSourceLanguage, langage)
+
+    def test_get_etymology_comment(self):
+        comment = "etymology"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set etymology
+        self.lexical_entry.sense[0].definition[0].statement[0].etymologyComment = comment
+        # Test get etymology
+        self.assertEqual(self.lexical_entry.get_etymology_comment(), comment)
+        # Test with a language filter
+        language = "eng"
+        self.lexical_entry.sense[0].definition[0].statement[0].termSourceLanguage = language
+        self.assertIsNone(self.lexical_entry.get_etymology_comment(term_source_language="fra"))
+        self.assertEqual(self.lexical_entry.get_etymology_comment(term_source_language=language), comment)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_set_etymology_gloss(self):
+        gloss = "GLOSS"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_etymology_gloss(gloss), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].etymologyGloss, gloss)
+
+    def test_get_etymology_gloss(self):
+        gloss = "GLOSS"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set etymology
+        self.lexical_entry.sense[0].definition[0].statement[0].etymologyGloss = gloss
+        # Test get etymology
+        self.assertEqual(self.lexical_entry.get_etymology_gloss(), gloss)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_set_etymology_source(self):
+        source = "etymology"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_etymology_source(source), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].etymologySource, source)
+
+    def test_get_etymology_source(self):
+        source = "etymology"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set etymology
+        self.lexical_entry.sense[0].definition[0].statement[0].etymologySource = source
+        # Test get etymology
+        self.assertEqual(self.lexical_entry.get_etymology_source(), source)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite

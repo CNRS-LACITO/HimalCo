@@ -6,6 +6,18 @@ ENGLISH = "eng"
 NATIONAL = "nat"
 REGIONAL = "reg"
 
+## Functions to process some MDF fields (input)
+def set_bw(bw, lexical_entry):
+    # Retrieve if there is a written form following the borrowed word (e.g. "Portuguese fi:meirinho")
+    borrowed_word = bw.split()[0]
+    written_form = ""
+    for item in bw.split()[1:]:
+        written_form += item
+    # Set borrowed word, and written form if any
+    lexical_entry.set_borrowed_word(borrowed_word)
+    if len(written_form) > 0:
+        lexical_entry.set_written_form(written_form)
+
 ## Mapping between MDF markers and LMF representation (input)
 mdf_lmf = dict({
     "lx" : lambda lx, lexical_entry: lexical_entry.set_lexeme(lx),
@@ -66,11 +78,11 @@ mdf_lmf = dict({
     "ve" : lambda ve, lexical_entry: lexical_entry.set_variant_comment(ve, language=ENGLISH), # or lexical_entry.set_dialect(ve)
     "vn" : lambda vn, lexical_entry: lexical_entry.set_variant_comment(vn, language=NATIONAL),
     "vr" : lambda vr, lexical_entry: lexical_entry.set_variant_comment(vr, language=REGIONAL),
-    "bw" : lambda bw, lexical_entry: None,
-    "et" : lambda et, lexical_entry: None,
-    "eg" : lambda eg, lexical_entry: None,
-    "es" : lambda es, lexical_entry: None,
-    "ec" : lambda ec, lexical_entry: None,
+    "bw" : lambda bw, lexical_entry: set_bw(bw, lexical_entry),
+    "et" : lambda et, lexical_entry: lexical_entry.set_etymology(et),
+    "eg" : lambda eg, lexical_entry: lexical_entry.set_etymology_gloss(eg),
+    "es" : lambda es, lexical_entry: lexical_entry.set_etymology_source(es),
+    "ec" : lambda ec, lexical_entry: lexical_entry.set_etymology_comment(ec),
     "pd" : lambda pd, lexical_entry: None,
     "sg" : lambda sg, lexical_entry: None,
     "pl" : lambda pl, lexical_entry: None,
@@ -215,6 +227,18 @@ mdf_order = [
     "dt"  # datestamp
 ]
 
+## Functions to process some MDF fields (output)
+def get_bw(lexical_entry):
+    bw = lexical_entry.get_borrowed_word()
+    if lexical_entry.get_written_form() is not None:
+        bw += " " + lexical_entry.get_written_form()
+    return bw
+def get_ec(lexical_entry):
+    ec = lexical_entry.get_etymology_comment()
+    if lexical_entry.get_term_source_language() is not None:
+        ec = "<lang=\"" + lexical_entry.get_term_source_language() + "\">" + " " + ec
+    return ec
+
 ## Mapping between LMF representation and MDF markers (output)
 lmf_mdf = dict({
     "lx" : lambda lexical_entry: lexical_entry.get_lexeme(),
@@ -277,11 +301,11 @@ lmf_mdf = dict({
     "ve" : lambda form_representation: form_representation.get_comment(ENGLISH), # or form_representation.get_dialect()
     "vn" : lambda form_representation: form_representation.get_comment(NATIONAL),
     "vr" : lambda form_representation: form_representation.get_comment(REGIONAL),
-    "bw" : lambda lexical_entry: None,
-    "et" : lambda lexical_entry: None,
-    "eg" : lambda lexical_entry: None,
-    "es" : lambda lexical_entry: None,
-    "ec" : lambda lexical_entry: None,
+    "bw" : lambda lexical_entry: get_bw(lexical_entry),
+    "et" : lambda lexical_entry: lexical_entry.get_etymology(),
+    "eg" : lambda lexical_entry: lexical_entry.get_etymology_gloss(),
+    "es" : lambda lexical_entry: lexical_entry.get_etymology_source(),
+    "ec" : lambda lexical_entry: get_ec(lexical_entry),
     "pd" : lambda lexical_entry: None,
     "sg" : lambda lexical_entry: None,
     "pl" : lambda lexical_entry: None,
