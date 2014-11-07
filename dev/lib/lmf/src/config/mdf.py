@@ -83,24 +83,24 @@ mdf_lmf = dict({
     "eg" : lambda eg, lexical_entry: lexical_entry.set_etymology_gloss(eg),
     "es" : lambda es, lexical_entry: lexical_entry.set_etymology_source(es),
     "ec" : lambda ec, lexical_entry: lexical_entry.set_etymology_comment(ec),
-    "pd" : lambda pd, lexical_entry: None,
-    "sg" : lambda sg, lexical_entry: None,
-    "pl" : lambda pl, lexical_entry: None,
+    "pd" : lambda pd, lexical_entry: lexical_entry.set_paradigm(pd),
+    "sg" : lambda sg, lexical_entry: lexical_entry.set_paradigm(sg, grammatical_number=pd_grammaticalNumber["sg"]),
+    "pl" : lambda pl, lexical_entry: lexical_entry.set_paradigm(pl, grammatical_number=pd_grammaticalNumber["pl"]),
     "rd" : lambda rd, lexical_entry: None,
-    "1s" : lambda a1s, lexical_entry: None,
-    "2s" : lambda a2s, lexical_entry: None,
-    "3s" : lambda a3s, lexical_entry: None,
-    "4s" : lambda a4s, lexical_entry: None,
-    "1d" : lambda a1d, lexical_entry: None,
-    "2d" : lambda a2d, lexical_entry: None,
-    "3d" : lambda a3d, lexical_entry: None,
-    "4d" : lambda a4d, lexical_entry: None,
-    "1p" : lambda a1p, lexical_entry: None,
-    "1e" : lambda a1e, lexical_entry: None,
-    "1i" : lambda a1i, lexical_entry: None,
-    "2p" : lambda a2p, lexical_entry: None,
-    "3p" : lambda a3p, lexical_entry: None,
-    "4p" : lambda a4p, lexical_entry: None,
+    "1s" : lambda a1s, lexical_entry: lexical_entry.set_paradigm(a1s, person=pd_person[1], grammatical_number=pd_grammaticalNumber['s']),
+    "2s" : lambda a2s, lexical_entry: lexical_entry.set_paradigm(a2s, person=pd_person[2], grammatical_number=pd_grammaticalNumber['s']),
+    "3s" : lambda a3s, lexical_entry: lexical_entry.set_paradigm(a3s, person=pd_person[3], grammatical_number=pd_grammaticalNumber['s']),
+    "4s" : lambda a4s, lexical_entry: lexical_entry.set_paradigm(a4s, anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s']),
+    "1d" : lambda a1d, lexical_entry: lexical_entry.set_paradigm(a1d, person=pd_person[1], grammatical_number=pd_grammaticalNumber['d']),
+    "2d" : lambda a2d, lexical_entry: lexical_entry.set_paradigm(a2d, person=pd_person[2], grammatical_number=pd_grammaticalNumber['d']),
+    "3d" : lambda a3d, lexical_entry: lexical_entry.set_paradigm(a3d, person=pd_person[3], grammatical_number=pd_grammaticalNumber['d']),
+    "4d" : lambda a4d, lexical_entry: lexical_entry.set_paradigm(a4d, anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['d']),
+    "1p" : lambda a1p, lexical_entry: lexical_entry.set_paradigm(a1p, person=pd_person[1], grammatical_number=pd_grammaticalNumber['p']),
+    "1e" : lambda a1e, lexical_entry: lexical_entry.set_paradigm(a1e, person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e']),
+    "1i" : lambda a1i, lexical_entry: lexical_entry.set_paradigm(a1i, person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['i']),
+    "2p" : lambda a2p, lexical_entry: lexical_entry.set_paradigm(a2p, person=pd_person[2], grammatical_number=pd_grammaticalNumber['p']),
+    "3p" : lambda a3p, lexical_entry: lexical_entry.set_paradigm(a3p, person=pd_person[3], grammatical_number=pd_grammaticalNumber['p']),
+    "4p" : lambda a4p, lexical_entry: lexical_entry.set_paradigm(a4p, anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['p']),
     "tb" : lambda tb, lexical_entry: None,
     "sd" : lambda sd, lexical_entry: None,
     "is" : lambda IS, lexical_entry: None, # 'is' is a keyword in Python
@@ -307,23 +307,23 @@ lmf_mdf = dict({
     "es" : lambda lexical_entry: lexical_entry.get_etymology_source(),
     "ec" : lambda lexical_entry: get_ec(lexical_entry),
     "pd" : lambda lexical_entry: None,
-    "sg" : lambda lexical_entry: None,
-    "pl" : lambda lexical_entry: None,
+    "sg" : lambda lexical_entry: lexical_entry.find_paradigms(grammatical_number=pd_grammaticalNumber["sg"]),
+    "pl" : lambda lexical_entry: lexical_entry.find_paradigms(grammatical_number=pd_grammaticalNumber["pl"]),
     "rd" : lambda lexical_entry: None,
-    "1s" : lambda lexical_entry: None,
-    "2s" : lambda lexical_entry: None,
-    "3s" : lambda lexical_entry: None,
-    "4s" : lambda lexical_entry: None,
-    "1d" : lambda lexical_entry: None,
-    "2d" : lambda lexical_entry: None,
-    "3d" : lambda lexical_entry: None,
-    "4d" : lambda lexical_entry: None,
-    "1p" : lambda lexical_entry: None,
-    "1e" : lambda lexical_entry: None,
-    "1i" : lambda lexical_entry: None,
-    "2p" : lambda lexical_entry: None,
-    "3p" : lambda lexical_entry: None,
-    "4p" : lambda lexical_entry: None,
+    "1s" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[1], grammatical_number=pd_grammaticalNumber['s']),
+    "2s" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[2], grammatical_number=pd_grammaticalNumber['s']),
+    "3s" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[3], grammatical_number=pd_grammaticalNumber['s']),
+    "4s" : lambda lexical_entry: lexical_entry.find_paradigms(anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s']),
+    "1d" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[1], grammatical_number=pd_grammaticalNumber['d']),
+    "2d" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[2], grammatical_number=pd_grammaticalNumber['d']),
+    "3d" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[3], grammatical_number=pd_grammaticalNumber['d']),
+    "4d" : lambda lexical_entry: lexical_entry.find_paradigms(anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['d']),
+    "1p" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[1], grammatical_number=pd_grammaticalNumber['p']),
+    "1e" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e']),
+    "1i" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['i']),
+    "2p" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[2], grammatical_number=pd_grammaticalNumber['p']),
+    "3p" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[3], grammatical_number=pd_grammaticalNumber['p']),
+    "4p" : lambda lexical_entry: lexical_entry.find_paradigms(anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['p']),
     "tb" : lambda lexical_entry: None,
     "sd" : lambda lexical_entry: None,
     "is" : lambda lexical_entry: None,
@@ -385,6 +385,33 @@ mdf_semanticRelation = dict({
     # "root",
     # "stem",
     # "collocation"
+})
+
+## Mapping between 'pd' MDF markers and LMF person WordForm attribute value (input)
+pd_person = dict({
+    1 : "first person",
+    2 : "second person",
+    3 : "third person"
+})
+
+## Mapping between 'pd' MDF markers and LMF anymacy WordForm attribute value (input)
+pd_anymacy = dict({
+    4 : "inanimate"
+})
+
+## Mapping between 'pd' MDF markers and LMF grammatical number WordForm attribute value (input)
+pd_grammaticalNumber = dict({
+    'd'     : "dual",
+    'p'     : "plural",
+    "pl"    : "plural",
+    's'     : "singular",
+    "sg"    : "singular"
+})
+
+## Mapping between 'pd' MDF markers and LMF clusivity WordForm attribute value (input)
+pd_clusivity = dict({
+    'i'     : "inclusive",
+    'e'     : "exclusive"
 })
 
 ## Mapping between 'pdl' MDF marker value and LMF paradigm label Paradigm attribute value (input)

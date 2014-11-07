@@ -4,6 +4,7 @@ from startup import *
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
+from morphology.word_form import WordForm
 from utils.error_handling import Error
 from core.form_representation import FormRepresentation
 from core.sense import Sense
@@ -727,6 +728,99 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del definition
         del self.lexical_entry.sense[:]
         del sense
+
+    def test_create_word_form(self):
+        # Test create word form
+        form = self.lexical_entry.create_word_form()
+        self.assertIsInstance(form, WordForm)
+        # Release WordForm instance
+        del form
+
+    def test_add_word_form(self):
+        # Create word forms
+        form1 = WordForm()
+        form2 = WordForm()
+        # Test add word forms to the lexical entry
+        self.assertIs(self.lexical_entry.add_word_form(form1), self.lexical_entry)
+        self.assertListEqual(self.lexical_entry.word_form, [form1])
+        self.assertIs(self.lexical_entry.add_word_form(form2), self.lexical_entry)
+        self.assertListEqual(self.lexical_entry.word_form, [form1, form2])
+        # Release WordForm instances
+        del self.lexical_entry.word_form[:]
+        del form1, form2
+
+    def test_get_word_forms(self):
+        # List of WordForm instances is empty
+        self.assertEqual(self.lexical_entry.get_word_forms(), [])
+        # Create WordForm instances and add them to the list
+        form1 = WordForm()
+        form2 = WordForm()
+        self.lexical_entry.word_form = [form1, form2]
+        # Test get word forms
+        self.assertEqual(self.lexical_entry.get_word_forms(), [form1, form2])
+        # Delete WordForm instances
+        del self.lexical_entry.word_form[:]
+        del form1, form2
+
+    def test_set_paradigm(self):
+        form = "variant"
+        self.assertIs(self.lexical_entry.set_paradigm(form), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.word_form[0].form_representation[0].variantForm, form)
+        # Test with optional arguments
+        person = 2
+        anymacy = "animate"
+        number = "singular"
+        clusivity = None
+        self.assertIs(self.lexical_entry.set_paradigm(form, person, anymacy, number, clusivity), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.word_form[1].form_representation[0].variantForm, form)
+        self.assertEqual(self.lexical_entry.word_form[1].person, "second person")
+        self.assertEqual(self.lexical_entry.word_form[1].anymacy, anymacy)
+        self.assertEqual(self.lexical_entry.word_form[1].grammaticalNumber, number)
+        self.assertIsNone(self.lexical_entry.word_form[1].clusivity)
+        # Test with same arguments and another variant form
+        form = "another variant"
+        self.assertIs(self.lexical_entry.set_paradigm(form, "second person", anymacy, number, clusivity), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.word_form[1].form_representation[1].variantForm, form)
+        self.assertEqual(self.lexical_entry.word_form[1].person, "second person")
+        self.assertEqual(self.lexical_entry.word_form[1].anymacy, anymacy)
+        self.assertEqual(self.lexical_entry.word_form[1].grammaticalNumber, number)
+        self.assertIsNone(self.lexical_entry.word_form[1].clusivity)
+
+    def test_find_paradigms(self):
+        # There is no WordForm instance
+        self.assertListEqual(self.lexical_entry.find_paradigms(), [])
+        # Create WordForm instances
+        word1 = WordForm()
+        word2 = WordForm()
+        self.lexical_entry.word_form = [word1, word2]
+        # Lists of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.word_form[0].get_form_representations(), [])
+        self.assertListEqual(self.lexical_entry.word_form[1].get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the lists
+        repr1 = FormRepresentation()
+        form1 = "variant1"
+        repr1.variantForm = form1
+        repr2 = FormRepresentation()
+        form2 = "variant2"
+        repr2.variantForm = form2
+        word1.form_representation = [repr1, repr2]
+        repr3 = FormRepresentation()
+        form3 = "variant3"
+        repr3.variantForm = form3
+        word2.form_representation = [repr3]
+        # Test find paradigms
+        self.assertListEqual(self.lexical_entry.find_paradigms(), [form1, form2, form3])
+        # Add a filter
+        word1.anymacy = "animate"
+        word2.anymacy = "inanimate"
+        self.assertListEqual(self.lexical_entry.find_paradigms(anymacy="animate"), [form1, form2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.word_form[0].form_representation[:]
+        del self.lexical_entry.word_form[1].form_representation[:]
+        del repr1, repr2, repr3
+        # Delete WordForm instances
+        del self.lexical_entry.word_form[:]
+        del word1, word2
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 

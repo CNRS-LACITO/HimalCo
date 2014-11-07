@@ -5,6 +5,7 @@
 
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
+from morphology.word_form import WordForm
 from common.range import partOfSpeech_range
 from utils.error_handling import Error
 from config.mdf import ps_partOfSpeech
@@ -731,6 +732,75 @@ class LexicalEntry():
         # If there is a Sense instance, get etymology source
         if sense is not None:
             return sense.get_etymology_source()
+
+    def create_word_form(self):
+        """! @brief Create a word form.
+        @return WordForm instance.
+        """
+        return WordForm()
+
+    def add_word_form(self, word_form):
+        """! @brief Add a word form to the lexical entry.
+        @param word_form The WordForm instance to add to the lexical entry.
+        @return LexicalEntry instance.
+        """
+        self.word_form.append(word_form)
+        return self
+
+    def get_word_forms(self):
+        """! @brief Get all word forms maintained by the lexical entry.
+        @return A Python list of word forms.
+        """
+        return self.word_form
+
+    def set_paradigm(self, variant_form, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+        """! @brief Set paradigm.
+        Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
+        @param variant_form The paradigm to set.
+        @param person Person, e.g. first person.
+        @param anymacy Anymacy, e.g. animate or inanimate.
+        @param grammatical_number Grammatical number, e.g. singular or plural.
+        @param clusivity Clusivity, e.g. inclusive or exclusive.
+        @return LexicalEntry instance.
+        """
+        word_form = None
+        # Find corresponding word form
+        for form in self.get_word_forms():
+            if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
+                # Add a paradigm as a variant form to an existing word form
+                word_form = form
+                break
+        if word_form is None:
+            # Create a WordForm instance
+            word_form = self.create_word_form()
+            self.add_word_form(word_form)
+            if person is not None:
+                word_form.set_person(person)
+            if anymacy is not None:
+                word_form.set_anymacy(anymacy)
+            if grammatical_number is not None:
+                word_form.set_grammaticalNumber(grammatical_number)
+            if clusivity is not None:
+                word_form.set_clusivity(clusivity)
+        word_form.set_variant_form(variant_form)
+        return self
+
+    def find_paradigms(self, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+        """! @brief Find paradigms.
+        Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
+        Attribute 'variantForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm.
+        @param person Person, e.g. first person.
+        @param anymacy Anymacy, e.g. animate or inanimate.
+        @param grammatical_number Grammatical number, e.g. singular or plural.
+        @param clusivity Clusivity, e.g. inclusive or exclusive.
+        @return A Python list of FormRepresentation attributes 'variantForm'.
+        """
+        variant_forms = []
+        # Find corresponding word form
+        for form in self.get_word_forms():
+            if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
+                variant_forms += form.get_variant_forms()
+        return variant_forms
 
     def get_speaker(self):
         """! @brief Get speaker.
