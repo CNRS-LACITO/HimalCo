@@ -5,7 +5,7 @@
 from startup import *
 
 # Import user customized configuration if any
-from na import mdf2lmf
+from na import mdf2lmf, lmf2mdf, order
 
 # Read MDF file and set lexicon identifier
 input_lexical_resource = lmf.read_mdf(user_path + "input.txt", mdf2lmf, id="short example")
@@ -29,7 +29,7 @@ output_lexical_resource = lmf.read_xml_lmf(user_path + "output.xml")
 lmf.write_tex(output_lexical_resource, user_path + "output.tex", preamble=user_path + "config/japhug.tex")
 
 # Write MDF file
-lmf.write_mdf(output_lexical_resource, user_path + "output.txt")
+lmf.write_mdf(output_lexical_resource, user_path + "output.txt", lmf2mdf, order)
 
 # Release created objects
 del input_lexical_resource, output_lexical_resource

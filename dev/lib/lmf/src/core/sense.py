@@ -4,6 +4,7 @@
 """
 
 from core.definition import Definition
+from morphosyntax.paradigm import Paradigm
 
 class Sense():
     """! "Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry." (LMF)
@@ -463,3 +464,88 @@ class Sense():
         # If there is a Definition instance, get etymology source
         if definition is not None:
             return definition.get_etymology_source()
+
+    def create_paradigm(self):
+        """! @brief Create a paradigm.
+        @return Paradigm instance.
+        """
+        return Paradigm()
+
+    def add_paradigm(self, paradigm):
+        """! @brief Add a paradigm to the sense.
+        @param paradigm The Paradigm instance to add to the sense.
+        @return Sense instance.
+        """
+        self.paradigm.append(paradigm)
+        return self
+
+    def get_paradigms(self):
+        """! @brief Get all paradigms maintained by the sense.
+        @return A Python list of paradigms.
+        """
+        return self.paradigm
+
+    def get_last_paradigm(self):
+        """! @brief Get the previously registered Paradigm instance.
+        @return The last element of Sense attribute 'paradigm'.
+        """
+        if len(self.get_paradigms()) >= 1:
+            return self.get_paradigms()[-1]
+
+    def set_paradigm_label(self, paradigm_label):
+        """! @brief Set paradigm label.
+        Attribute 'paradigmLabel' is owned by Paradigm.
+        @param paradigm_label Paradigm label.
+        @return Sense instance.
+        """
+        # Create a paradigm instance, set it, and add it to the list
+        self.add_paradigm(self.create_paradigm().set_paradigmLabel(paradigm_label))
+        return self
+
+    def set_paradigm_form(self, paradigm_form, language=None):
+        """! @brief Set paradigm form and language.
+        Attributes 'paradigm' and 'language' are owned by Paradigm.
+        @param paradigm_form Paradigm form.
+        @param language Language used for the paradigm form.
+        @return Sense instance.
+        """
+        paradigm_label = None
+        # Get the last Paradigm instance if any
+        paradigm = self.get_last_paradigm()
+        # If there is a Paradigm instance, check if the paradigm form or language are already set
+        if paradigm is not None:
+            # Save the paradigm label
+            paradigm_label = paradigm.get_paradigmLabel()
+            if paradigm.get_paradigm() is not None or (paradigm.get_language() is not None and paradigm.get_language() != language):
+                # A new paradigm instance has to be created
+                paradigm = None
+        if paradigm is None:
+            # Create a paradigm instance and add it to the list
+            paradigm = self.create_paradigm()
+            self.add_paradigm(paradigm)
+        paradigm.set_paradigm(paradigm_form)
+        if language is not None:
+            paradigm.set_language(language)
+        # Report previous paradigm label if needed
+        if paradigm_label is not None and paradigm.get_paradigmLabel() is None:
+            paradigm.set_paradigmLabel(paradigm_label)
+        return self
+
+    def set_morphology(self, morphology):
+        """! @brief Set morphology.
+        Attribute 'morphology' is owned by Paradigm.
+        @param morphology Morphology.
+        @return Sense instance.
+        """
+        paradigm = None
+        # Get the first Paradigm instance that has no morphology
+        for item in self.get_paradigms():
+            if item.get_morphology() is None:
+                paradigm = item
+                break
+        if paradigm is None:
+            # Create a paradigm instance and add it to the list
+            paradigm = self.create_paradigm()
+            self.add_paradigm(paradigm)
+        paradigm.set_morphology(morphology)
+        return self

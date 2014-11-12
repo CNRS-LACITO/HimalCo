@@ -63,12 +63,13 @@ mdf_lmf = dict({
     "on" : lambda on, lexical_entry: lexical_entry.set_restriction(on, language=NATIONAL),
     "or" : lambda OR, lexical_entry: lexical_entry.set_restriction(OR, language=REGIONAL), # 'or' is a keyword in Python
     "lf" : lambda lf, lexical_entry: None,
+    "lv" : lambda lv, lexical_entry: None,
     "le" : lambda le, lexical_entry: None,
     "ln" : lambda ln, lexical_entry: None,
     "lr" : lambda lr, lexical_entry: None,
     "sy" : lambda sy, lexical_entry: lexical_entry.create_and_add_related_form(sy, mdf_semanticRelation["sy"]),
     "an" : lambda an, lexical_entry: lexical_entry.create_and_add_related_form(an, mdf_semanticRelation["an"]),
-    "mr" : lambda mr, lexical_entry: None,
+    "mr" : lambda mr, lexical_entry: lexical_entry.set_morphology(mr),
     "cf" : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf, mdf_semanticRelation["cf"]),
     "ce" : lambda ce, lexical_entry: None,
     "cn" : lambda cn, lexical_entry: None,
@@ -84,6 +85,11 @@ mdf_lmf = dict({
     "es" : lambda es, lexical_entry: lexical_entry.set_etymology_source(es),
     "ec" : lambda ec, lexical_entry: lexical_entry.set_etymology_comment(ec),
     "pd" : lambda pd, lexical_entry: lexical_entry.set_paradigm(pd),
+    "pdl": lambda pdl, lexical_entry: lexical_entry.set_paradigm_label(pdl),
+    "pdv": lambda pdv, lexical_entry: lexical_entry.set_paradigm_form(pdv, language=VERNACULAR),
+    "pde": lambda pde, lexical_entry: lexical_entry.set_paradigm_form(pde, language=ENGLISH),
+    "pdn": lambda pdn, lexical_entry: lexical_entry.set_paradigm_form(pdn, language=NATIONAL),
+    "pdr": lambda pdr, lexical_entry: lexical_entry.set_paradigm_form(pdr, language=REGIONAL),
     "sg" : lambda sg, lexical_entry: lexical_entry.set_paradigm(sg, grammatical_number=pd_grammaticalNumber["sg"]),
     "pl" : lambda pl, lexical_entry: lexical_entry.set_paradigm(pl, grammatical_number=pd_grammaticalNumber["pl"]),
     "rd" : lambda rd, lexical_entry: None,
@@ -168,10 +174,11 @@ mdf_order = [
         "on", # only (restrictions)-national language
         "or"  # only (restrictions)-regional (with \on)
     ],
-    "lf", # lexical function
-    "le", # lexical function-English
-    "ln", # lexical function-national language
-    "lr", # lexical function-regional language
+    "lf", # lexical function label-English
+    "lv", # lexical function value-vernacular language
+    "le", # lexical function value-English
+    "ln", # lexical function value-national language
+    "lr", # lexical function value-regional language
     "sy", # synonym
     "an", # antonym
     "mr", # morphemic representation
@@ -192,6 +199,13 @@ mdf_order = [
     "es", # etymology-source
     "ec", # etymology-comment
     "pd", # paradigm
+    [
+        "pdl", # paradigm label-English
+        "pdv", # paradigm form-vernacular language
+        "pde", # paradigm form-English gloss
+        "pdn", # paradigm form-national gloss
+        "pdr"  # paradigm form-regional gloss
+    ],
     "sg", # singular form
     "pl", # plural form
     "rd", # reduplication
@@ -285,12 +299,13 @@ lmf_mdf = dict({
     "on" : lambda sense: sense.find_restrictions(language=NATIONAL),
     "or" : lambda sense: sense.find_restrictions(language=REGIONAL),
     "lf" : lambda lexical_entry: None,
+    "lv" : lambda lexical_entry: None,
     "le" : lambda lexical_entry: None,
     "ln" : lambda lexical_entry: None,
     "lr" : lambda lexical_entry: None,
     "sy" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["sy"]),
     "an" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["an"]),
-    "mr" : lambda lexical_entry: None,
+    "mr" : lambda lexical_entry: lexical_entry.get_morphologies(),
     "cf" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["cf"]),
     "ce" : lambda lexical_entry: None,
     "cn" : lambda lexical_entry: None,
@@ -306,7 +321,13 @@ lmf_mdf = dict({
     "eg" : lambda lexical_entry: lexical_entry.get_etymology_gloss(),
     "es" : lambda lexical_entry: lexical_entry.get_etymology_source(),
     "ec" : lambda lexical_entry: get_ec(lexical_entry),
-    "pd" : lambda lexical_entry: None,
+    "pd" : lambda lexical_entry: lexical_entry.find_paradigms(),
+    "pdlGroup": lambda lexical_entry: lexical_entry.get_paradigms(),
+    "pdl": lambda paradigm: paradigm.get_paradigmLabel(),
+    "pdv": lambda paradigm: paradigm.get_paradigm(language=VERNACULAR),
+    "pde": lambda paradigm: paradigm.get_paradigm(language=ENGLISH),
+    "pdn": lambda paradigm: paradigm.get_paradigm(language=NATIONAL),
+    "pdr": lambda paradigm: paradigm.get_paradigm(language=REGIONAL),
     "sg" : lambda lexical_entry: lexical_entry.find_paradigms(grammatical_number=pd_grammaticalNumber["sg"]),
     "pl" : lambda lexical_entry: lexical_entry.find_paradigms(grammatical_number=pd_grammaticalNumber["pl"]),
     "rd" : lambda lexical_entry: None,

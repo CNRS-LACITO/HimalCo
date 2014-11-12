@@ -802,6 +802,74 @@ class LexicalEntry():
                 variant_forms += form.get_variant_forms()
         return variant_forms
 
+    def set_paradigm_label(self, paradigm_label):
+        """! @brief Set paradigm label.
+        Attribute 'paradigmLabel' is owned by Paradigm, which is owned by Sense.
+        @param paradigm_label Paradigm label.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_paradigm_label(paradigm_label)
+        return self
+
+    def set_paradigm_form(self, paradigm, language=None):
+        """! @brief Set paradigm form.
+        Attribute 'paradigm' is owned by Paradigm, which is owned by Sense.
+        @param paradigm Paradigm form.
+        @param language Language of the paradigm form.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_paradigm_form(paradigm, language)
+        return self
+
+    def set_morphology(self, morphology):
+        """! @brief Set morphology.
+        Attribute 'morphology' is owned by Paradigm, which is owned by Sense.
+        @param morphology Morphology.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_morphology(morphology)
+        return self
+
+    def get_paradigms(self):
+        """! @brief Get all paradigms.
+        This attribute is owned by Sense.
+        @return Sense attribute 'paradigm'.
+        """
+        paradigms = []
+        for sense in self.get_senses():
+            paradigms += sense.get_paradigms()
+        return paradigms
+
+    def get_morphologies(self):
+        """! @brief Get all morphologies.
+        This attribute is owned by Paradigm, which is owned by Sense.
+        @return A Python list of Paradigm attributes 'morphology'.
+        """
+        morphologies = []
+        for sense in self.get_senses():
+            for paradigm in sense.get_paradigms():
+                if paradigm.get_morphology() is not None:
+                    morphologies.append(paradigm.get_morphology())
+        return morphologies
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.

@@ -10,6 +10,7 @@ from core.form_representation import FormRepresentation
 from core.sense import Sense
 from core.definition import Definition
 from core.statement import Statement
+from morphosyntax.paradigm import Paradigm
 
 ## Test LexicalEntry class
 
@@ -821,6 +822,76 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Delete WordForm instances
         del self.lexical_entry.word_form[:]
         del word1, word2
+
+    def test_set_paradigm_label(self):
+        label = "lexicalized affix"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_paradigm_label(label), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].paradigm), 1)
+        self.assertEqual(self.lexical_entry.sense[0].paradigm[0].paradigmLabel, label)
+
+    def test_set_paradigm_form(self):
+        # Test paradigm form only
+        form = "paradigm"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_paradigm_form(form), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].paradigm), 1)
+        self.assertEqual(self.lexical_entry.sense[0].paradigm[0].paradigm, form)
+        # Test paradigm form and language
+        forme = "paradigme"
+        langage = "fra"
+        self.assertIs(self.lexical_entry.set_paradigm_form(forme, langage), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense[0].paradigm), 2)
+        self.assertEqual(self.lexical_entry.sense[0].paradigm[1].paradigm, forme)
+        self.assertEqual(self.lexical_entry.sense[0].paradigm[1].language, langage)
+
+    def test_set_morphology(self):
+        morpho = "logy"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_morphology(morpho), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].paradigm), 1)
+        self.assertEqual(self.lexical_entry.sense[0].paradigm[0].morphology, morpho)
+
+    def test_get_paradigms(self):
+        # List of Paradigm instances is empty
+        self.assertEqual(self.lexical_entry.get_paradigms(), [])
+        # Create a Sense instance and add it to the list
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        # Create Paradigm instances and add them to the list
+        para1 = Paradigm()
+        para2 = Paradigm()
+        self.lexical_entry.sense[0].paradigm = [para1, para2]
+        # Test get paradigms
+        self.assertEqual(self.lexical_entry.get_paradigms(), [para1, para2])
+        # Delete Paradigm and Sense instances
+        del self.lexical_entry.sense[0].paradigm[:]
+        del para1, para2
+        del self.lexical_entry.sense[:]
+        del sense
+
+    def test_get_morphologies(self):
+        # List of Paradigm instances is empty
+        self.assertEqual(self.lexical_entry.get_paradigms(), [])
+        # Create a Sense instance and add it to the list
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        # Create Paradigm instances, set their morphology, and add them to the list
+        morpho1 = "1"
+        morpho2 = "2"
+        para1 = Paradigm().set_morphology(morpho1)
+        para2 = Paradigm().set_morphology(morpho2)
+        self.lexical_entry.sense[0].paradigm = [para1, para2]
+        # Test get morphologies
+        self.assertEqual(self.lexical_entry.get_morphologies(), [morpho1, morpho2])
+        # Delete Paradigm and Sense instances
+        del self.lexical_entry.sense[0].paradigm[:]
+        del para1, para2
+        del self.lexical_entry.sense[:]
+        del sense
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 

@@ -4,6 +4,8 @@ from startup import *
 from core.sense import Sense
 from core.definition import Definition
 from core.statement import Statement
+from morphosyntax.paradigm import Paradigm
+from utils.error_handling import Error
 
 ## Test Sense class
 
@@ -235,7 +237,7 @@ class TestSenseFunctions(unittest.TestCase):
         self.assertEqual(self.sense.definition[0].statement[1].encyclopedicInformation, info)
         self.assertEqual(self.sense.definition[0].statement[1].language, language)
 
-    def test_encyclopedic_informations(self):
+    def test_find_encyclopedic_informations(self):
         # Create several definitions
         def1 = Definition()
         def2 = Definition()
@@ -461,6 +463,91 @@ class TestSenseFunctions(unittest.TestCase):
         del state
         del self.sense.definition[:]
         del definition
+
+    def test_create_paradigm(self):
+        # Test create paradigm
+        paradigm = self.sense.create_paradigm()
+        self.assertIsInstance(paradigm, Paradigm)
+        # Release Paradigm instance
+        del paradigm
+
+    def test_add_paradigm(self):
+        # Create paradigms
+        para1 = Paradigm()
+        para2 = Paradigm()
+        # Test add paradigms to the sense
+        self.assertIs(self.sense.add_paradigm(para1), self.sense)
+        self.assertListEqual(self.sense.paradigm, [para1])
+        self.assertIs(self.sense.add_paradigm(para2), self.sense)
+        self.assertListEqual(self.sense.paradigm, [para1, para2])
+        # Release Paradigm instances
+        del self.sense.paradigm[:]
+        del para1, para2
+
+    def test_get_paradigms(self):
+        # List of Paradigm instances is empty
+        self.assertListEqual(self.sense.get_paradigms(), [])
+        # Create Paradigm instances and add them to the list
+        para1 = Paradigm()
+        para2 = Paradigm()
+        self.sense.paradigm = [para1, para2]
+        # Test get paradigms
+        self.assertListEqual(self.sense.get_paradigms(), [para1, para2])
+        # Delete Paradigm instances
+        del self.sense.paradigm[:]
+        del para1, para2
+
+    def test_get_last_paradigm(self):
+        # List of Paradigm instances is empty
+        self.assertIsNone(self.sense.get_last_paradigm())
+        # Create Paradigm instances and add them to the list
+        para1 = Paradigm()
+        para2 = Paradigm()
+        self.sense.paradigm = [para1, para2]
+        # Test get last paradigm
+        self.assertIs(self.sense.get_last_paradigm(), para2)
+        self.sense.paradigm.pop()
+        self.assertIs(self.sense.get_last_paradigm(), para1)
+        # Release Paradigm instances
+        del self.sense.paradigm[:]
+        del para1, para2
+
+    def test_set_paradigm_label(self):
+        label = "construction"
+        # There is no Paradigm instance
+        self.assertIs(self.sense.set_paradigm_label(label), self.sense)
+        self.assertEqual(len(self.sense.paradigm), 1)
+        self.assertEqual(self.sense.paradigm[0].paradigmLabel, label)
+        # Test error case
+        label = "whatever"
+        test = False
+        try:
+            self.sense.set_paradigm_label(label)
+        except Error:
+            test = True
+        self.assertTrue(test)
+
+    def test_set_paradigm_form(self):
+        # Test paradigm form only
+        form = "paradigm"
+        # There is no Paradigm instance
+        self.assertIs(self.sense.set_paradigm_form(form), self.sense)
+        self.assertEqual(len(self.sense.paradigm), 1)
+        self.assertEqual(self.sense.paradigm[0].paradigm, form)
+        # Test paradigm form and language
+        form = "paradigme"
+        langage = "fra"
+        self.assertIs(self.sense.set_paradigm_form(form, langage), self.sense)
+        self.assertEqual(len(self.sense.paradigm), 2)
+        self.assertEqual(self.sense.paradigm[1].paradigm, form)
+        self.assertEqual(self.sense.paradigm[1].language, langage)
+
+    def test_set_morphology(self):
+        morpho = "morpho"
+        # There is no Paradigm instance
+        self.assertIs(self.sense.set_morphology(morpho), self.sense)
+        self.assertEqual(len(self.sense.paradigm), 1)
+        self.assertEqual(self.sense.paradigm[0].morphology, morpho)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 
