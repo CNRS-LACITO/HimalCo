@@ -1,0 +1,255 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=15mm,
+ }
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{{\large\mo{#1}}}
+
+\newcommand{\acc}{\textsc{acc}}
+\newcommand{\antierg}{\textsc{antierg}}
+\newcommand{\allat}{\textsc{all}}
+\newcommand{\aor}{\textsc{aor}}
+\newcommand{\assert}{\textsc{assert}}
+\newcommand{\auto}{\textsc{auto}}
+\newcommand{\caus}{\textsc{caus}}
+\newcommand{\classif}{\textsc{class}}
+\newcommand{\concessif}{\textsc{concsf}}
+\newcommand{\comit}{\textsc{comit}}
+\newcommand{\conj}{\textsc{conj}}
+\newcommand{\const}{\textsc{const}}
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\cop}{\textsc{cop}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\detm}{\textsc{det}}
+\newcommand{\dir}{\textsc{dir1}}
+\newcommand{\du}{\textsc{du}}
+\newcommand{\duposs}{\textsc{du.poss}}
+\newcommand{\dur}{\textsc{dur}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\evd}{\textsc{evd}}
+\newcommand{\fut}{\textsc{fut}}
+\newcommand{\gen}{\textsc{gen}}
+\newcommand{\hypot}{\textsc{hyp}}
+\newcommand{\ideo}{\textsc{ideo}}
+\newcommand{\imp}{\textsc{imp}}
+\newcommand{\impf}{\textsc{ipfv}}
+\newcommand{\instr}{\textsc{instr}}
+\newcommand{\intens}{\textsc{intens}}
+\newcommand{\intrg}{\textsc{intrg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\irreel}{\textsc{irr}}
+\newcommand{\loc}{\textsc{loc}}
+\newcommand{\med}{\textsc{med}}
+\newcommand{\negat}{\textsc{neg}}
+\newcommand{\neu}{\textsc{neu}}
+\newcommand{\nmlz}{\textsc{nmlz}}
+\newcommand{\nonps}{\textsc{n.pst}}
+\newcommand{\opt}{\textsc{dir2}}
+\newcommand{\perf}{\textsc{pfv}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\plposs}{\textsc{pl.poss}}
+\newcommand{\poss}{\textsc{poss}}
+\newcommand{\pot}{\textsc{pot}}
+\newcommand{\prohib}{\textsc{prohib}}
+\newcommand{\pst}{\textsc{pst}}
+\newcommand{\recip}{\textsc{recip}}
+\newcommand{\redp}{\textsc{redp}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\sgposs}{\textsc{sg.poss}}
+\newcommand{\stat}{\textsc{stat}}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\volit}{\textsc{vol}}
+
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\begin{document}
+
+\title{Systèmes direct-inverse}
+\author{Guillaume Jacques\\Anton Antonov}
+\maketitle
+
+\begin{table}[H] 
+\caption{The three domains of the transitive paradigm} 
+ \centering \label{tab:domain}
+\begin{tabular}{l|lllll} 
+\toprule
+&1 & 2 &3\\
+\hline
+1 &\grise{} &1$\rightarrow$2\cellcolor[wave]{465} & 1$\rightarrow$3 \cellcolor[wave]{520} \\
+2&2$\rightarrow$1\cellcolor[wave]{465}&\grise{}&2$\rightarrow$3 \cellcolor[wave]{520} \\
+3&3$\rightarrow$1 \cellcolor[wave]{520}&3$\rightarrow$2 \cellcolor[wave]{520}&3$\rightarrow$3\cellcolor[wave]{650}\\
+\hline
+\textsc{intr}&1&2&3\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{exe} 
+\ex 
+\gll   \ipa{pɯ́-wɣ-mto-j}  {        }   \ipa{pɯ-mto-j}  \\
+ \textsc{pfv-inv}-voir-\textsc{1pl}    {        } \textsc{pfv}-voir-\textsc{1pl}  \\
+\end{exe} 
+
+
+\begin{exe} 
+\ex 
+\gll   \ipa{pɯ-tɯ́-wɣ-mto}  {        } \ipa{pɯ-tɯ-mto-t}  \\
+ \textsc{pfv-2-inv}-voir   {       }  \textsc{pfv-2}-voir-\textsc{tr.pst}   \\
+\end{exe} 
+
+
+
+\begin{exe} 
+\ex 
+\gll   \ipa{pɯ́-wɣ-mto-a-ndʑi}  {        }   \ipa{pɯ-mto-t-a-ndʑi}  \\
+ \textsc{pfv-inv}-voir-\textsc{1sg-du}    {        } \textsc{pfv}-voir-\textsc{tr.pst-1sg-du}  \\
+\end{exe} 
+
+  \begin{exe}
+\ex \label{ex:YAwGsWGYARnW} 
+\gll
+yancong	\ipa{ɯ-ŋgɯ} 	\ipa{ɲɯ-ɲaʁ} 	\ipa{rcanɯ,} 	\ipa{tɕe} 	\ipa{kumpɣɤtɕɯ} 	\ipa{ra} 	\ipa{ɲɤ́-wɣ-sɯɣ-ɲaʁ-nɯ} 	\ipa{ʑo,} 	\ipa{nɯ-kɯ-ɤkhra} 	\ipa{ra} 	\ipa{mɯ-ɲɤ-χsɤl} 	\ipa{ʑo} 	\ipa{tɕendɤre} 	\ipa{ʑɯrɯʑɤri} 	\ipa{qale} 	\ipa{tu-βze,} 	\ipa{tɯmɯ} 	\ipa{kɯ} 	\ipa{pjɯ́-wɣ-χtɕi-nɯ} 	\ipa{tɕe} 	\ipa{ɲɯ-me} 	\ipa{ɲɯ-ŋu} \\
+chimney \textsc{3sg}-inside \textsc{ipfv}-be.black \textsc{top} \textsc{lnk} sparrow \textsc{pl} \textsc{evd-inv-caus}-be.black-\textsc{pl} \textsc{emph} \textsc{3pl.poss-nmlz}:S-be.colourful \textsc{pl} \textsc{neg-evd}-be.clear \textsc{emph} \textsc{lnk} progressively wind \textsc{ipfv}-make[III] rain \textsc{erg} \textsc{ipfv-inv}-wash-\textsc{pl} \textsc{lnk} \textsc{ipfv}-not.exist \textsc{testim}-be \\
+\glt As it is black inside the chimney, the sparrows were completely blackened by it, the patterns and colours (on their feathers) were not visible any more, but progressively, the wind and the rain washed them and (the soot on their feathers) disappeared.
+ (Sparrows, 74-76)
+\end{exe}
+\begin{exe}
+\ex \label{ex:taR.nA.taR} 
+\gll
+\ipa{taʁ}   	\ipa{nɤ}   	\ipa{taʁ,}   	\ipa{taʁ}   	\ipa{nɤ}   	\ipa{taʁ}   	\ipa{tó-wɣ-tsɯm}   \\
+up \textsc{lnk} up up \textsc{lnk} up \textsc{evd:up-inv-}take.away \\
+\glt He was (progressively)  carried up (by the water). (The flood3, 21)
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:towgtsWm} 
+\gll
+\ipa{tɕendɤre} 	\ipa{qro} 	\ipa{nɯnɯ} 	\ipa{ɯ-ŋga} 	\ipa{nɯ} 	\ipa{to-nɯ-ŋga} 	\ipa{qhe,}  \ipa{tɕe} 	\ipa{nɯ} 	\ipa{ɯ-mke} 	\ipa{ko-rqoʁ} 	\ipa{qhe,} \ipa{tɕendɤre} 	\ipa{tɤ́-wɣ-tsɯm} 	\ipa{to-nɯqambɯmbjom} 	\ipa{qhe} \\
+\textsc{lnk} pigeon \textsc{dem} \textsc{3sg.poss}-clothes \textsc{top} \textsc{evd-auto}-wear \textsc{lnk} \textsc{lnk} \textsc{dem} \textsc{3sg.poss}-neck \textsc{evd}-hug \textsc{lnk} \textsc{lnk} \textsc{pfv-inv}-take.away \textsc{evd:up}-fly \textsc{lnk} \\
+\glt She wore the pigeon skin, he hug her, and she took him and flew away (with him). (Flood, 2012.2, 69-70)
+\end{exe}
+
+\begin{exe} 
+\ex \label{ex:caus:show.2>3>1}
+\gll   \ipa{tɤ-kɯ-sɯ-qur-a-ndʑi}  \\
+ \textsc{pfv-2$\rightarrow$1-caus}-aider-\textsc{1sg-du}  \\
+\end{exe} 
+
+
+\begin{landscape}
+
+
+\begin{table}[H]
+\caption{Paradigmes transitifs et intransitifs du japhug}\label{tab:japhug.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{\sigc{}-a}   & 	 \ipa{\sigc{}-a-ndʑi} & 	 \ipa{\sigc{}-a-nɯ} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{ta-\siga{}} & 	\ipa{ta-\siga{}-ndʑi} & 	\ipa{ta-\siga{}-nɯ} & 	\multicolumn{3}{c|}{ \ipa{\siga{}-tɕi}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\siga{}-ji}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\ipa{kɯ-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\sigc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & 	\ipa{kɯ-\siga{}-a-ndʑi} & 	\ipa{kɯ-\siga{}-tɕi} & 	\ipa{kɯ-\siga{}-ji} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-ndʑi}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} & 	\ipa{kɯ-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-nɯ}} & 	\grise{} \\	
+\hline
+\textsc{3sg} &  	\ipa{wɣɯ́-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\sigc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  	\ipa{wɣɯ́-\siga{}-a-ndʑi} & 	 \ipa{wɣɯ́-\siga{}-tɕi} & 		\ipa{wɣɯ́-\siga{}-ji} & 	\ipa{tɯ́-wɣ-\siga{}} & 	\ipa{tɯ́-wɣ-\siga{}-ndʑi} & 	\ipa{tɯ́-wɣ-\siga{}-nɯ} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-ndʑi} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  	\ipa{wɣɯ́-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-nɯ} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &	\ipa{wɣɯ́-\siga{}} & 	\ipa{wɣɯ́-\siga{}-ndʑi} & 	\ipa{wɣɯ́-\siga{}-nɯ} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\siga{}-a}&\ipa{\siga{}-tɕi}&\ipa{\siga{}-ji}&\ipa{tɯ-\siga{}}&\ipa{tɯ-\siga{}-ndʑi}&\ipa{tɯ-\siga{}-nɯ}&\ipa{\siga{}}&\ipa{\siga{}-ndʑi} &\ipa{\siga{}-nɯ}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+ 
+ 
+\begin{table}[H]
+\caption{Plains Cree present paradigms. TA \ipa{wâpam--} ``see" and IA \ipa{pimipahtâ--}``run"} \label{tab:cree.tr} \centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+   & 	1\sg  & 1\textsc{pi} & 1\textsc{pe} &  2\sg & 2\pl  &  3\sg & 3\pl &	3' \\ 
+\midrule
+1\sg   & 	\grise{}   & 	\grise{} &  \grise{} &	\ipa{kiwâpamitin}  & \ipa{kiwâpamitinâwâw}	& \ipa{niwâpamâw}   & 	\ipa{niwâpamâwak}  & 	\ipa{niwâpamimâwa}   \\ 
+1\textsc{pi} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\grise{}}  & \ipa{kiwâpamânaw} & \ipa{kiwâpamânawak}  & 	\ipa{kiwâpamimânawa}   \\ 
+1\textsc{pe} & \grise{}   &\grise{} & \grise{} & \multicolumn{2}{c}{\ipa{kiwâpamitinân}}   & \ipa{niwâpamânân} & \ipa{niwâpamânânak}  & 	\ipa{niwâpamimânâna}   \\ 
+
+%\hline
+2\sg   & 	\ipa{kiwâpamin}   & \grise{}& \multirow{2}{*}{\ipa{kiwâpaminân}}	&	\grise{}   &  \grise{} & \ipa{kiwâpamâw}  & \ipa{kiwâpamâwak} & 	\ipa{kiwâpamimâwa}   \\ 
+2\pl  & 	\ipa{kiwâpaminâwâw} & \grise{}& \multirow{-2}{*}{ } & \grise{}  & 	\grise{}   & 	\ipa{kiwâpamâwâw}  & \ipa{kiwâpamâwâwak} & 	\ipa{kiwâpamimâwâwa}   \\
+   %\hline
+3\sg   & 	\ipa{niwâpamik}   & \ipa{kiwâpamikonaw} & \ipa{niwâpamikonân} & 	\ipa{kiwâpamik}  & 	\ipa{kiwâpamikowâw} & 	\grise{}  & \grise{}	 & 	\ipa{wâpam(im)êw}   \\ 
+  % \hline
+3\pl   & 	\ipa{niwâpamikwak}&  \ipa{kiwâpamikonawak} & \ipa{niwâpamikonânak}   & 	\ipa{kiwâpamikwak}   & 	\ipa{kiwâpamikowâwak} & 	\grise{} &	\grise{}  & 	\ipa{wâpam(im)êwak}   \\ 
+  % \hline
+\multirow{2}{*}{3'}   & \multirow{2}{*}{}  &  \multirow{2}{*}{}  & \multirow{2}{*}{} & &  \multirow{2}{*}{}  &\multirow{2}{*}{}   & \multirow{2}{*}{} &  \ipa{wâpamêyiwa} \\ 
+ \multirow{-2}{*}{} & \multirow{-2}{*}{\ipa{niwâpamikoyiwa}} & \multirow{-2}{*}{\ipa{kiwâpamikonawa}}   &  \multirow{-2}{*}{\ipa{niwâpamikonâna}} &  \multirow{-2}{*}{\ipa{kiwâpamikoyiwa}} &  \multirow{-2}{*}{\ipa{kiwâpamikowâwa}}& \multirow{-2}{*}{\ipa{wâpamik}}  & \multirow{-2}{*}{\ipa{wâpamikwak}} &  \ipa{wâpamikoyiwa}  \\ 
+\bottomrule
+\textsc{intr} & \ipa{nipimipahtân} & \ipa{ kipimipahtâ(nâ)naw} & \ipa{nipimipahtânân} &\ipa{ kipimipahtân} &\ipa{ kipimipahtânâwâw} & \ipa{pimipahtâw} & \ipa{pimipahtâwak} & \ipa{pimipahtâyiwa} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\end{landscape}
+ 
+
+
+\end{document}
+
