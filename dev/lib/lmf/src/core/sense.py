@@ -5,6 +5,9 @@
 
 from core.definition import Definition
 from morphosyntax.paradigm import Paradigm
+from mrd.context import Context
+from mrd.subject_field import SubjectField
+from mrd.equivalent import Equivalent
 
 class Sense():
     """! "Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry." (LMF)
@@ -549,3 +552,123 @@ class Sense():
             self.add_paradigm(paradigm)
         paradigm.set_morphology(morphology)
         return self
+
+    def create_and_add_context(self):
+        """! @brief Create a context and add it to the list.
+        @return Context instance.
+        """
+        context = Context()
+        self.context.append(context)
+        return context
+
+    def get_contexts(self):
+        """! @brief Get all contexts maintained by the sense.
+        @return A Python list of contexts.
+        """
+        return self.context
+
+    def get_last_context(self):
+        """! @brief Get the previously registered Context instance.
+        @return The last element of Sense attribute 'context'.
+        """
+        if len(self.get_contexts()) >= 1:
+            return self.get_contexts()[-1]
+
+    def create_example(self, written_form, language=None):
+        """! @brief Create a Context instance and set its written form and language.
+        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+        @param written_form The written form to set.
+        @param language Language used for the written form.
+        @return Sense instance.
+        """
+        self.create_and_add_context().set_type("example").set_written_form(written_form, language)
+        return self
+
+    def add_example(self, written_form, language=None):
+        """! @brief Set written form and language of an existing Context instance.
+        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+        @param written_form The written form to set.
+        @param language Language used for the written form.
+        @return Sense instance.
+        """
+        # Get the last Context instance if any
+        context = self.get_last_context()
+        # If there is no Context instance, create and add one
+        if context is None:
+            context = self.create_and_add_context().set_type("example")
+        context.set_written_form(written_form, language)
+        return self
+
+    def set_example_comment(self, comment):
+        """! @brief Set comment of an existing Context instance.
+        Attribute 'comment' is owned by TextRepresentation, which is owned by Context.
+        @param comment The comment to set.
+        @return Sense instance.
+        """
+        # Get the last Context instance if any
+        context = self.get_last_context()
+        # If there is no Context instance, create and add one
+        if context is None:
+            context = self.create_and_add_context().set_type("example")
+        context.set_comment(comment)
+        return self
+
+    def create_and_add_subject_field(self):
+        """! @brief Create a subject field and add it to the list.
+        @return SubjectField instance.
+        """
+        subject_field = SubjectField()
+        self.subject_field.append(subject_field)
+        return subject_field
+
+    def get_subject_fields(self):
+        """! @brief Get all subject fields maintained by the sense.
+        @return A Python list of subject fields.
+        """
+        return self.subject_field
+
+    def set_semantic_domain(self, semantic_domain, language=None):
+        """! @brief Create a SubjectField instance and set its semantic domain and language.
+        Attributes 'semanticDomain' and 'language' are owned by SubjectField.
+        @param semantic_domain The semantic domain to set.
+        @param language Language used to describe the semantic domain.
+        @return Sense instance.
+        """
+        self.create_and_add_subject_field().set_semanticDomain(semantic_domain, language)
+        return self
+
+    def create_and_add_equivalent(self):
+        """! @brief Create an equivalent and add it to the list.
+        @return Equivalent instance.
+        """
+        equivalent = Equivalent()
+        self.equivalent.append(equivalent)
+        return equivalent
+
+    def get_equivalents(self):
+        """! @brief Get all equivalents maintained by the sense.
+        @return A Python list of equivalents.
+        """
+        return self.equivalent
+
+    def set_translation(self, translation, language=None):
+        """! @brief Create an Equivalent instance and set its translation and language.
+        Attributes 'translation' and 'language' are owned by Equivalent.
+        @param translation The translation to set.
+        @param language Language used for the translation.
+        @return Sense instance.
+        """
+        self.create_and_add_equivalent().set_translation(translation, language)
+        return self
+
+    def get_translations(self, language=None):
+        """! @brief Get all translations.
+        This attribute is owned by Equivalent.
+        @param language If this argument is given, get only translations that are described using this language.
+        @return A Python list of filtered Equivalent attributes 'translation'.
+        """
+        translations = []
+        for equivalent in self.get_equivalents():
+            if equivalent.get_translation(language) is not None:
+                translations.append(equivalent.get_translation(language))
+        return translations

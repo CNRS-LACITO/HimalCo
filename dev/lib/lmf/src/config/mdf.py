@@ -31,24 +31,24 @@ mdf_lmf = dict({
     "gv" : lambda gv, lexical_entry: lexical_entry.set_gloss(gv, language=VERNACULAR),
     "dv" : lambda dv, lexical_entry: lexical_entry.set_definition(dv, language=VERNACULAR),
     "ge" : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=ENGLISH),
-    "re" : lambda re, lexical_entry: None,
+    "re" : lambda re, lexical_entry: lexical_entry.set_translation(re, language=ENGLISH),
     "we" : lambda we, lexical_entry: None,
     "de" : lambda de, lexical_entry: lexical_entry.set_definition(de, language=ENGLISH),
     "gn" : lambda gn, lexical_entry: lexical_entry.set_gloss(gn, language=NATIONAL),
-    "rn" : lambda rn, lexical_entry: None,
+    "rn" : lambda rn, lexical_entry: lexical_entry.set_translation(rn, language=NATIONAL),
     "wn" : lambda wn, lexical_entry: None,
     "dn" : lambda dn, lexical_entry: lexical_entry.set_definition(dn, language=NATIONAL),
     "gr" : lambda gr, lexical_entry: lexical_entry.set_gloss(gr, language=REGIONAL),
-    "rr" : lambda rr, lexical_entry: None,
+    "rr" : lambda rr, lexical_entry: lexical_entry.set_translation(rr, language=REGIONAL),
     "wr" : lambda wr, lexical_entry: None,
     "dr" : lambda dr, lexical_entry: lexical_entry.set_definition(dr, language=REGIONAL),
     "lt" : lambda lt, lexical_entry: None,
     "sc" : lambda sc, lexical_entry: None,
     "rf" : lambda rf, lexical_entry: None,
-    "xv" : lambda xv, lexical_entry: None,
-    "xe" : lambda xe, lexical_entry: None,
-    "xn" : lambda xn, lexical_entry: None,
-    "xr" : lambda xr, lexical_entry: None,
+    "xv" : lambda xv, lexical_entry: lexical_entry.create_example(xv, language=VERNACULAR),
+    "xe" : lambda xe, lexical_entry: lexical_entry.add_example(xe, language=ENGLISH),
+    "xn" : lambda xn, lexical_entry: lexical_entry.add_example(xn, language=NATIONAL),
+    "xr" : lambda xr, lexical_entry: lexical_entry.add_example(xr, language=REGIONAL),
     "xg" : lambda xg, lexical_entry: None,
     "uv" : lambda uv, lexical_entry: lexical_entry.set_usage_note(uv, language=VERNACULAR),
     "ue" : lambda ue, lexical_entry: lexical_entry.set_usage_note(ue, language=ENGLISH),
@@ -108,9 +108,9 @@ mdf_lmf = dict({
     "3p" : lambda a3p, lexical_entry: lexical_entry.set_paradigm(a3p, person=pd_person[3], grammatical_number=pd_grammaticalNumber['p']),
     "4p" : lambda a4p, lexical_entry: lexical_entry.set_paradigm(a4p, anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['p']),
     "tb" : lambda tb, lexical_entry: None,
-    "sd" : lambda sd, lexical_entry: None,
-    "is" : lambda IS, lexical_entry: None, # 'is' is a keyword in Python
-    "th" : lambda th, lexical_entry: None,
+    "sd" : lambda sd, lexical_entry: lexical_entry.set_semantic_domain(sd),
+    "is" : lambda IS, lexical_entry: lexical_entry.set_semantic_domain(IS), # 'is' is a keyword in Python
+    "th" : lambda th, lexical_entry: lexical_entry.set_semantic_domain(th),
     "bb" : lambda bb, lexical_entry: lexical_entry.set_bibliography(bb),
     "pc" : lambda pc, lexical_entry: None,
     "nt" : lambda nt, lexical_entry: lexical_entry.set_note(nt, type="general"),
@@ -123,7 +123,7 @@ mdf_lmf = dict({
     "so" : lambda so, lexical_entry: None,
     "st" : lambda st, lexical_entry: lexical_entry.set_status(st),
     "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt),
-    "a" : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a)
+    "a"  : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a)
 })
 
 ## Order in which MDF markers must be written (output)
@@ -155,12 +155,14 @@ mdf_order = [
         "dr", # definition-regional lang. (with \dn)
         "lt", # literal meaning
         "sc", # scientific name
-        "rf", # reference for example
-        "xv", # example sentence-vernacular
-        "xe", # example sentence-English
-        "xn", # example sentence-national language
-        "xr", # example sent.-regional (with \xn)
-        "xg", # example sentence-interlinear gloss
+        [
+            "rf", # reference for example
+            "xv", # example sentence-vernacular
+            "xe", # example sentence-English
+            "xn", # example sentence-national language
+            "xr", # example sent.-regional (with \xn)
+            "xg"  # example sentence-interlinear gloss
+        ],
         "uv", # usage-vernacular
         "ue", # usage-English
         "un", # usage-national language
@@ -247,11 +249,6 @@ def get_bw(lexical_entry):
     if lexical_entry.get_written_form() is not None:
         bw += " " + lexical_entry.get_written_form()
     return bw
-def get_ec(lexical_entry):
-    ec = lexical_entry.get_etymology_comment()
-    if lexical_entry.get_term_source_language() is not None:
-        ec = "<lang=\"" + lexical_entry.get_term_source_language() + "\">" + " " + ec
-    return ec
 
 ## Mapping between LMF representation and MDF markers (output)
 lmf_mdf = dict({
@@ -267,24 +264,25 @@ lmf_mdf = dict({
     "gv" : lambda sense: sense.find_glosses(VERNACULAR),
     "dv" : lambda sense: sense.find_definitions(VERNACULAR),
     "ge" : lambda sense: sense.find_glosses(ENGLISH),
-    "re" : lambda sense: None,
+    "re" : lambda sense: sense.get_translations(ENGLISH),
     "we" : lambda sense: None,
     "de" : lambda sense: sense.find_definitions(ENGLISH),
     "gn" : lambda sense: sense.find_glosses(NATIONAL),
-    "rn" : lambda sense: None,
+    "rn" : lambda sense: sense.get_translations(NATIONAL),
     "wn" : lambda sense: None,
     "dn" : lambda sense: sense.find_definitions(NATIONAL),
     "gr" : lambda sense: sense.find_glosses(REGIONAL),
-    "rr" : lambda sense: None,
+    "rr" : lambda sense: sense.get_translations(REGIONAL),
     "wr" : lambda sense: None,
     "dr" : lambda sense: sense.find_definitions(REGIONAL),
     "lt" : lambda sense: None,
     "sc" : lambda sense: None,
-    "rf" : lambda sense: None,
-    "xv" : lambda sense: None,
-    "xe" : lambda sense: None,
-    "xn" : lambda sense: None,
-    "xr" : lambda sense: None,
+    "rfGroup" : lambda sense: sense.get_contexts(),
+    "rf" : lambda context: None,
+    "xv" : lambda context: context.find_written_forms(VERNACULAR),
+    "xe" : lambda context: context.find_written_forms(ENGLISH),
+    "xn" : lambda context: context.find_written_forms(NATIONAL),
+    "xr" : lambda context: context.find_written_forms(REGIONAL),
     "xg" : lambda sense: None,
     "uv" : lambda sense: sense.find_usage_notes(language=VERNACULAR),
     "ue" : lambda sense: sense.find_usage_notes(language=ENGLISH),
@@ -320,7 +318,7 @@ lmf_mdf = dict({
     "et" : lambda lexical_entry: lexical_entry.get_etymology(),
     "eg" : lambda lexical_entry: lexical_entry.get_etymology_gloss(),
     "es" : lambda lexical_entry: lexical_entry.get_etymology_source(),
-    "ec" : lambda lexical_entry: get_ec(lexical_entry),
+    "ec" : lambda lexical_entry: lexical_entry.get_etymology_comment(),
     "pd" : lambda lexical_entry: lexical_entry.find_paradigms(),
     "pdlGroup": lambda lexical_entry: lexical_entry.get_paradigms(),
     "pdl": lambda paradigm: paradigm.get_paradigmLabel(),
@@ -346,7 +344,7 @@ lmf_mdf = dict({
     "3p" : lambda lexical_entry: lexical_entry.find_paradigms(person=pd_person[3], grammatical_number=pd_grammaticalNumber['p']),
     "4p" : lambda lexical_entry: lexical_entry.find_paradigms(anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['p']),
     "tb" : lambda lexical_entry: None,
-    "sd" : lambda lexical_entry: None,
+    "sd" : lambda lexical_entry: lexical_entry.get_semantic_domains(),
     "is" : lambda lexical_entry: None,
     "th" : lambda lexical_entry: None,
     "bb" : lambda lexical_entry: lexical_entry.get_bibliography(),

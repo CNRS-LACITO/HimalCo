@@ -11,6 +11,7 @@ from core.sense import Sense
 from core.definition import Definition
 from core.statement import Statement
 from morphosyntax.paradigm import Paradigm
+from mrd.subject_field import SubjectField
 
 ## Test LexicalEntry class
 
@@ -892,6 +893,119 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del para1, para2
         del self.lexical_entry.sense[:]
         del sense
+
+    def test_create_example(self):
+        form = "written"
+        self.assertIs(self.lexical_entry.create_example(form), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[0].writtenForm, form)
+        # Test with language
+        form = "form with lang"
+        lang = "lang"
+        self.assertIs(self.lexical_entry.create_example(form, lang), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 2)
+        self.assertEqual(self.lexical_entry.sense[0].context[1].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[1].text_representation), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[1].text_representation[0].writtenForm, form)
+        self.assertEqual(self.lexical_entry.sense[0].context[1].text_representation[0].language, lang)
+
+    def test_add_example(self):
+        form = "written"
+        self.assertIs(self.lexical_entry.add_example(form), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[0].writtenForm, form)
+        # Test with language
+        form = "form with lang"
+        lang = "lang"
+        self.assertIs(self.lexical_entry.add_example(form, lang), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 2)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[1].writtenForm, form)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[1].language, lang)
+
+    def test_set_example_comment(self):
+        comment = "example"
+        self.assertIs(self.lexical_entry.set_example_comment(comment), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[0].comment, comment)
+        # Test with a second comment
+        comment = "another"
+        self.assertIs(self.lexical_entry.set_example_comment(comment), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 2)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].text_representation[1].comment, comment)
+
+    def test_set_semantic_domain(self):
+        domain = "semantic"
+        self.assertIs(self.lexical_entry.set_semantic_domain(domain), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].subject_field), 1)
+        self.assertEqual(self.lexical_entry.sense[0].subject_field[0].semanticDomain, domain)
+        # Test with language
+        domain = "domain with lang"
+        lang = "lang"
+        self.assertIs(self.lexical_entry.set_semantic_domain(domain, lang), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].subject_field), 2)
+        self.assertEqual(self.lexical_entry.sense[0].subject_field[1].semanticDomain, domain)
+        self.assertEqual(self.lexical_entry.sense[0].subject_field[1].language, lang)
+
+    def test_get_semantic_domains(self):
+        domain1 = "semantic1"
+        domain2 = "semantic2"
+        self.assertListEqual(self.lexical_entry.get_semantic_domains(), [])
+        # Create Sense and SubjectField instances and add them to corresponding lists
+        sens1 = Sense()
+        sens2 = Sense()
+        self.lexical_entry.sense = [sens1, sens2]
+        subject = SubjectField()
+        field = SubjectField()
+        sens1.subject_field = [subject]
+        sens2.subject_field = [field]
+        subject.semanticDomain = domain1
+        self.assertEqual(self.lexical_entry.get_semantic_domains(), [domain1])
+        field.semanticDomain = domain2
+        self.assertEqual(self.lexical_entry.get_semantic_domains(), [domain1, domain2])
+        # Test with a language filter
+        language = "eng"
+        subject.language = language
+        self.assertEqual(self.lexical_entry.get_semantic_domains(), [domain1, domain2])
+        self.assertListEqual(self.lexical_entry.get_semantic_domains("fra"), [])
+        self.assertListEqual(self.lexical_entry.get_semantic_domains(language), [domain1])
+        # Release created instances
+        del self.lexical_entry.sense[0].subject_field[:]
+        del subject, field
+        del self.lexical_entry.sense[:]
+        del sens1, sens2
+
+    def test_set_translation(self):
+        trans = "trans"
+        self.assertIs(self.lexical_entry.set_translation(trans), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].equivalent), 1)
+        self.assertEqual(self.lexical_entry.sense[0].equivalent[0].translation, trans)
+        # Test with language
+        trans = "trans with lang"
+        lang = "lang"
+        self.assertIs(self.lexical_entry.set_translation(trans, lang), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].equivalent), 2)
+        self.assertEqual(self.lexical_entry.sense[0].equivalent[1].translation, trans)
+        self.assertEqual(self.lexical_entry.sense[0].equivalent[1].language, lang)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 

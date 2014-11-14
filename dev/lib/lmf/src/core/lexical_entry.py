@@ -870,6 +870,99 @@ class LexicalEntry():
                     morphologies.append(paradigm.get_morphology())
         return morphologies
 
+    def create_example(self, written_form, language=None):
+        """! @brief Create a context, add an example and set its written form and language.
+        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+        @param written_form The written form to set.
+        @param language Language used for the written form.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.create_example(written_form, language)
+        return self
+
+    def add_example(self, written_form, language=None):
+        """! @brief Add an example to an existing context and set its written form and language.
+        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+        @param written_form The written form to set.
+        @param language Language used for the written form.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.add_example(written_form, language)
+        return self
+
+    def set_example_comment(self, comment):
+        """! @brief Set comment of an existing example.
+        Attribute 'comment' is owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+        @param comment The comment to set.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_example_comment(comment)
+        return self
+
+    def set_semantic_domain(self, semantic_domain, language=None):
+        """! @brief Set semantic domain and language.
+        Attributes 'semanticDomain' and 'language' are owned by SubjectField, which is owned by Sense.
+        @param semantic_domain The semantic domain to set.
+        @param language Language used to describe the semantic domain.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_semantic_domain(semantic_domain, language)
+        return self
+
+    def get_semantic_domains(self, language=None):
+        """! @brief Get all semantic domains.
+        This attribute is owned by SubjectField, which is owned by Sense.
+        @param language If this argument is given, get only semantic domains that are described using this language.
+        @return A Python list of filtered SubjectField attributes 'semanticDomain'.
+        """
+        semantic_domains = []
+        for sense in self.get_senses():
+            for subject_field in sense.get_subject_fields():
+                if subject_field.get_semanticDomain(language) is not None:
+                    semantic_domains.append(subject_field.get_semanticDomain(language))
+                semantic_domains += subject_field.get_sub_domains(language)
+        return semantic_domains
+
+    def set_translation(self, translation, language=None):
+        """! @brief Set translation and language.
+        Attributes 'translation' and 'language' are owned by Equivalent, which is owned by Sense.
+        @param translation The translation to set.
+        @param language Language used for the translation.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_translation(translation, language)
+        return self
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.

@@ -54,6 +54,9 @@ class TestMdfFunctions(unittest.TestCase):
         # Remove MDF file
         os.remove(mdf_filename)
 
+    def test_parse_list(self):
+        pass
+
     def test_write_line(self):
         # Open MDF file
         utest_path = sys.path[0] + '/'

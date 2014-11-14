@@ -5,6 +5,9 @@ from core.sense import Sense
 from core.definition import Definition
 from core.statement import Statement
 from morphosyntax.paradigm import Paradigm
+from mrd.context import Context
+from mrd.subject_field import SubjectField
+from mrd.equivalent import Equivalent
 from utils.error_handling import Error
 
 ## Test Sense class
@@ -548,6 +551,199 @@ class TestSenseFunctions(unittest.TestCase):
         self.assertIs(self.sense.set_morphology(morpho), self.sense)
         self.assertEqual(len(self.sense.paradigm), 1)
         self.assertEqual(self.sense.paradigm[0].morphology, morpho)
+
+    def test_create_and_add_context(self):
+        # Test create context
+        context1 = self.sense.create_and_add_context()
+        self.assertIsInstance(context1, Context)
+        # Create another context
+        context2 = self.sense.create_and_add_context()
+        self.assertIsInstance(context2, Context)
+        # Test add context
+        self.assertListEqual(self.sense.context, [context1, context2])
+        # Release Context instances
+        del self.sense.context[:]
+        del context1, context2
+
+    def test_get_contexts(self):
+        # List of Context instances is empty
+        self.assertListEqual(self.sense.get_contexts(), [])
+        # Create Context instances and add them to the list
+        ctx1 = Context()
+        ctx2 = Context()
+        self.sense.context = [ctx1, ctx2]
+        # Test get contexts
+        self.assertListEqual(self.sense.get_contexts(), [ctx1, ctx2])
+        # Delete Context instances
+        del self.sense.context[:]
+        del ctx1, ctx2
+
+    def test_get_last_context(self):
+        # List of Context instances is empty
+        self.assertIsNone(self.sense.get_last_context())
+        # Create Context instances and add them to the list
+        ctx1 = Context()
+        ctx2 = Context()
+        self.sense.context = [ctx1, ctx2]
+        # Test get last context
+        self.assertIs(self.sense.get_last_context(), ctx2)
+        self.sense.context.pop()
+        self.assertIs(self.sense.get_last_context(), ctx1)
+        # Release Context instances
+        del self.sense.context[:]
+        del ctx1, ctx2
+
+    def test_create_example(self):
+        form = "written"
+        self.assertIs(self.sense.create_example(form), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(len(self.sense.context[0].text_representation), 1)
+        self.assertEqual(self.sense.context[0].text_representation[0].writtenForm, form)
+        # Test with language
+        form = "form with lang"
+        lang = "lang"
+        self.assertIs(self.sense.create_example(form, lang), self.sense)
+        self.assertEqual(len(self.sense.context), 2)
+        self.assertEqual(self.sense.context[1].type, "example")
+        self.assertEqual(len(self.sense.context[1].text_representation), 1)
+        self.assertEqual(self.sense.context[1].text_representation[0].writtenForm, form)
+        self.assertEqual(self.sense.context[1].text_representation[0].language, lang)
+
+    def test_add_example(self):
+        form = "written"
+        self.assertIs(self.sense.add_example(form), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(len(self.sense.context[0].text_representation), 1)
+        self.assertEqual(self.sense.context[0].text_representation[0].writtenForm, form)
+        # Test with language
+        form = "form with lang"
+        lang = "lang"
+        self.assertIs(self.sense.add_example(form, lang), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(len(self.sense.context[0].text_representation), 2)
+        self.assertEqual(self.sense.context[0].text_representation[1].writtenForm, form)
+        self.assertEqual(self.sense.context[0].text_representation[1].language, lang)
+
+    def test_set_example_comment(self):
+        comment = "example"
+        self.assertIs(self.sense.set_example_comment(comment), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(len(self.sense.context[0].text_representation), 1)
+        self.assertEqual(self.sense.context[0].text_representation[0].comment, comment)
+        # Test with a second comment
+        comment = "another"
+        self.assertIs(self.sense.set_example_comment(comment), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(len(self.sense.context[0].text_representation), 2)
+        self.assertEqual(self.sense.context[0].text_representation[1].comment, comment)
+
+    def test_create_and_add_subject_field(self):
+        # Test create subject field
+        subject = self.sense.create_and_add_subject_field()
+        self.assertIsInstance(subject, SubjectField)
+        # Create another subject field
+        field = self.sense.create_and_add_subject_field()
+        self.assertIsInstance(field, SubjectField)
+        # Test add subject fields
+        self.assertListEqual(self.sense.subject_field, [subject, field])
+        # Release SubjectField instances
+        del self.sense.subject_field[:]
+        del subject, field
+
+    def test_get_subject_fields(self):
+        # List of SubjectField instances is empty
+        self.assertListEqual(self.sense.get_subject_fields(), [])
+        # Create SubjectField instances and add them to the list
+        subject = SubjectField()
+        field = SubjectField()
+        self.sense.subject_field = [subject, field]
+        # Test get subject fields
+        self.assertListEqual(self.sense.get_subject_fields(), [subject, field])
+        # Delete SubjectField instances
+        del self.sense.subject_field[:]
+        del subject, field
+
+    def test_set_semantic_domain(self):
+        domain = "semantic"
+        self.assertIs(self.sense.set_semantic_domain(domain), self.sense)
+        self.assertEqual(len(self.sense.subject_field), 1)
+        self.assertEqual(self.sense.subject_field[0].semanticDomain, domain)
+        # Test with language
+        domain = "domain with lang"
+        lang = "lang"
+        self.assertIs(self.sense.set_semantic_domain(domain, lang), self.sense)
+        self.assertEqual(len(self.sense.subject_field), 2)
+        self.assertEqual(self.sense.subject_field[1].semanticDomain, domain)
+        self.assertEqual(self.sense.subject_field[1].language, lang)
+
+    def test_create_and_add_equivalent(self):
+        # Test create equivalent
+        equivalent1 = self.sense.create_and_add_equivalent()
+        self.assertIsInstance(equivalent1, Equivalent)
+        # Create another equivalent
+        equivalent2 = self.sense.create_and_add_equivalent()
+        self.assertIsInstance(equivalent2, Equivalent)
+        # Test add equivalents
+        self.assertListEqual(self.sense.equivalent, [equivalent1, equivalent2])
+        # Release Equivalent instances
+        del self.sense.equivalent[:]
+        del equivalent1, equivalent2
+
+    def test_get_equivalents(self):
+        # List of Equivalent instances is empty
+        self.assertListEqual(self.sense.get_equivalents(), [])
+        # Create Equivalent instances and add them to the list
+        equivalent1 = Equivalent()
+        equivalent2 = Equivalent()
+        self.sense.equivalent = [equivalent1, equivalent2]
+        # Test get equivalents
+        self.assertListEqual(self.sense.get_equivalents(), [equivalent1, equivalent2])
+        # Delete Equivalent instances
+        del self.sense.equivalent[:]
+        del equivalent1, equivalent2
+
+    def test_set_translation(self):
+        trans = "trans"
+        self.assertIs(self.sense.set_translation(trans), self.sense)
+        self.assertEqual(len(self.sense.equivalent), 1)
+        self.assertEqual(self.sense.equivalent[0].translation, trans)
+        # Test with language
+        trans = "trans with lang"
+        lang = "lang"
+        self.assertIs(self.sense.set_translation(trans, lang), self.sense)
+        self.assertEqual(len(self.sense.equivalent), 2)
+        self.assertEqual(self.sense.equivalent[1].translation, trans)
+        self.assertEqual(self.sense.equivalent[1].language, lang)
+
+    def test_get_translations(self):
+        # List of Equivalent instances is empty
+        self.assertListEqual(self.sense.get_translations(), [])
+        # Create Equivalent instances and add them to the list
+        equivalent1 = Equivalent()
+        equivalent2 = Equivalent()
+        self.sense.equivalent = [equivalent1, equivalent2]
+        # Set their translations
+        trans1 = "trans1"
+        trans2 = "trans2"
+        equivalent1.translation = trans1
+        # Test get translations
+        self.assertListEqual(self.sense.get_translations(), [trans1])
+        equivalent2.translation = trans2
+        self.assertListEqual(self.sense.get_translations(), [trans1, trans2])
+        # Test with a language filter
+        lang = "lang"
+        equivalent2.language = lang
+        self.assertListEqual(self.sense.get_translations(), [trans1, trans2])
+        self.assertListEqual(self.sense.get_translations("eng"), [])
+        self.assertListEqual(self.sense.get_translations(lang), [trans2])
+        # Delete Equivalent instances
+        del self.sense.equivalent[:]
+        del equivalent1, equivalent2
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSenseFunctions)
 
