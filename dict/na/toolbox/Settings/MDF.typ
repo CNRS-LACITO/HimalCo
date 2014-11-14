@@ -164,7 +164,6 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr cl
@@ -301,7 +300,6 @@
 \lng vernacular
 \mkrOverThis se
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr ev
@@ -637,7 +635,6 @@
 \+mkr pdf
 \lng English
 \mkrOverThis lx
-\Hide
 \-mkr
 
 \+mkr pdl
@@ -652,7 +649,6 @@
 \-fnt
 \mkrOverThis pd
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr pdn
@@ -685,7 +681,6 @@
 \lng phonetic
 \mkrOverThis se
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr pl
@@ -785,7 +780,6 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr se
@@ -810,7 +804,6 @@
 \+mkr sf
 \lng English
 \mkrOverThis lx
-\Hide
 \-mkr
 
 \+mkr sg
@@ -835,7 +828,6 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr st
@@ -930,7 +922,6 @@
 \+mkr vf
 \lng English
 \mkrOverThis lx
-\Hide
 \-mkr
 
 \+mkr vn
@@ -1264,5 +1255,4 @@
 \-expset
 \PreventNumbering
 \DisableNumbering
-\HideFields
 \-DatabaseType
