@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -16,7 +16,7 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
- 
+ \usepackage{setspace}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
@@ -34,6 +34,8 @@
 \newcommand{\ro}{$\Sigma$}
 \newcommand{\siga}{$\Sigma_1$} 
 \newcommand{\sigc}{$\Sigma_3$}   
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
 \linenumbers
 
 \begin{document} 
@@ -42,19 +44,25 @@
  %Acknowledgements: Anton Antonov
 %\author{Guillaume Jacques}
 \maketitle
-
-\textbf{Abstract}: This paper documents a case of analogy from the first person to the third in the Dhegiha languages. It discusses the significance of this example for historical linguistics in general, and proposes that higher frequency in discourse of the first person form in the case of cognition verbs explains why analogy took place in the opposite   direction in the case of this verb.
+ \onehalfspacing
+\textbf{Abstract}: This paper documents a case of analogy from the first person to the third in the Dhegiha languages. It discusses the significance of this example for historical linguistics in general, and proposes that higher frequency in discourse of the first person form in the case of cognition verbs explains why analogy took place in the opposite direction in the case of this verb.
 
 \textbf{Keywords}: Siouan, Lakota, Dhegiha, Omaha, Osage, defective verb, analogy, verb of cognition, sound laws
-
+ 
 \section{Introduction}
+% \raggedright
 
+ 
 In the Neogrammarian model, while exceptionless sound laws are fully deterministic, the same cannot be said of analogy, by definition irregular and unpredictable. Yet, it is possible to some extent to constrain  the space of hypotheses involving analogy, and research on the general principles of analogy is of utmost importance for historical linguistics.
 
 The most successful observation involving analogical change is without doubt \citet{watkins62celtic}'s law, according to which the third person (especially singular) form is always the basis for analogical levelling in personal paradigms; the third person can be reanalyzed as being zero marked, and the resulting stem is generalized to the whole paradigm. The validity of this rule has been tested in various language families, and is apparent even in direct / inverse systems, where analogy operates from third person to SAP forms and first affects plural forms (see \citealt{jacques15directionality}, with examples from Algonquian).
     
 
-Counterexamples to the directionality from third to first and second person in paradigms is almost non-attested in Indo-European, Semitic or Algonquian languages. The only case that might be cited in Indo-European is the verb \textit{śem} `to come' in Tocharian which appears to be based on the first singular person (see \citealt{kim01venit}).
+Counterexamples to the directionality from third to first and second person in paradigms is not attested in Indo-European, Semitic or Algonquian languages. The only known cases where a first or second person form resists analogy better than the third person singular form occur when a phonological alternation is levelled across the board. For instance in Attic Greek,  where  the labiovelars become dentals before front vowels and labials in most other contexts (\citealt[253]{fortson10intro}), most verbal and nominal paradigms should present alternations between dental and labial stops in words whose last stem consonant was a labiovelar. A labial consonant would have been expected before endings in non-front vowels (for instance in the  first person singular \ipa{-ō} of the present thematic paradigm), and  dentals before front vowels (for instance the third person singular \ipa{-ei}). Yet, no  verb shows such alternation, as the labiovelars have been generalized everywhere:  both the first person singular \grec{νήφω} \ipa{nḗpʰō}  $\leftarrow $ *\ipa{ne-egʰʷ-ō} `I am sober' and the third person singular \grec{νήφει} \ipa{nḗpʰei}  $\leftarrow $ *\ipa{ne-egʰʷ-ei} `he is sober' have a labial \ipa{pʰ} from *\ipa{gʰʷ}, though \ipa{tʰ} would have been expected in the third person. 
+
+Yet, this does not count as analogical levelling from the first person to the third, as the third person \textbf{plural} also has a non-front vowel \grec{νήφουσι} \ipa{nḗpʰousi}  $\leftarrow $ *\ipa{ne-egʰʷ-onti} `they are sober', and some tenses, such as the future (\grec{νήψει} \ipa{nḗpsei} $\leftarrow $ *\ipa{ne-egʰʷ-s-ei} `he will be sober'), have consonant-initial endings where the labial is expected in all forms by applying the regular sound laws.
+
+A genuine case of analogical levelling applying from a first or second person to the third person singular should be such that the analogical change in question cannot be accounted for by analogy from another third person form, be it from non-singular forms in the same paradigm or from other tenses. 
 
 Given the extreme rarity of first to third person analogical changes,   clear examples of this type from any language family would be relevant to our general understanding of language change.
 
@@ -258,12 +266,12 @@ The verb *\ipa{e\_ye} `think' in Siouan was the only syncopating *\ipa{y--} init
 
 \section{The directionality of analogy}
 
-Mississippi Valley Siouan languages attest  a very rare type of analogy, from first person to third person, which as we saw before is almost non-attested in Indo-European languages.
+Mississippi Valley Siouan languages attest  a very rare type of analogy, from first person to third person, which as we saw before is almost non-attested in Indo-European languages. Unlike Attic Greek, in Omaha the third person plural  and TAM morphology are marked by suffixes, so that no other form of the paradigm could have served as a basis for the \ipa{ð} in \ipa{éðe} `he thinks'.
 
 An explanation for the preservation of the first person form \ipa{epčÁ} `I think' in Lakhota (and the loss of the rest of the paradigm) and the directionality of analogy in the paradigm of \ipa{ebðé}, \ipa{éðe} `think' in Dhegiha can however be provided by the relative frequency of the first person singular for verbs of cognition such as   `think' and `know'.
 
  %(unfortunately, no example of  \ipa{epčÁ} `I think' could be found in \citealt{deloria32dakota} to confirm whether this use is attested).\citet{dorsey1890cegiha}
-The Omaha corpus (\citealt{dorsey1890cegiha}) was conveniently retranscribed and corrected by Robert Rankin (in the Siouan Archive), and is therefore fully searchable. As shown in Table \ref{tab:cognition}, the most common  verbs of cognition meaning `think' or `know' in Omaha occur most often in the first person singular than in the third person by a considerable margin. This strong tendency is verified in other languages too; Table \ref{tab:cognition2} presents the token counts of the singular forms of the verb `to think' in French, English and Chinese (in Google).
+The Omaha corpus (\citealt{dorsey1890cegiha}) was conveniently retranscribed and corrected by Robert Rankin (\citealt{rankin08dhegiha}), and is therefore fully searchable. As shown in Table \ref{tab:cognition}, the most common  verbs of cognition meaning `think' or `know' in Omaha occur most often in the first person singular than in the third person by a considerable margin. This strong tendency is verified in other languages too; Table \ref{tab:cognition2} presents the token counts of the singular forms of the verb `to think' in French, English and Chinese (in Google).
 
  
 
@@ -383,4 +391,6 @@ Therefore, hypotheses in historical linguistics involving analogy from the first
  
 \bibliographystyle{linquiry2}
 \bibliography{bibliogj}
+
+ \tableofcontents
 \end{document}
