@@ -323,6 +323,30 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIs(self.lexical_entry.set_spelling_variant(var), self.lexical_entry)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].spellingVariant, var)
 
+    def test_get_spelling_variants(self):
+        var1 = "var1"
+        var2 = "var2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_spelling_variants())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.spellingVariant = var1
+        repr2 = FormRepresentation()
+        repr2.spellingVariant = var2
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get spelling variants
+        self.assertListEqual(self.lexical_entry.get_spelling_variants(), [var1, var2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
     def test_set_citation_form(self):
         form = "form"
         self.assertIs(self.lexical_entry.set_citation_form(form), self.lexical_entry)

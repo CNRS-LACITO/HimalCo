@@ -12,7 +12,7 @@ def xml_lmf_write(object, filename):
     # Create all XML sub-elements
     build_sub_elements(object, root)
     # Write all created XML elements in the output file
-    write_result(root, filename)
+    write_result(root, filename, encoding='utf8')
 
 def build_sub_elements(object, element):
     """! @brief Create XML sub-elements to an existing XML element by parsing an LMF object instance.
@@ -38,7 +38,7 @@ def build_sub_elements(object, element):
                     build_sub_elements(attr_value, sub_element)
                 elif attr_name in ["dtdVersion", "id", "targets"]:
                     # If this is a specical attribute ("id" or "targets"), it must be inserted as an XML element attribute
-                    element.attrib.update({attr_name: str(attr_value)})
+                    element.attrib.update({attr_name: unicode(attr_value)})
                 else:
                     # In all other cases, an XML sub-element must be created with the keyword name "feat"
-                    SubElement(element, "feat", att=attr_name, val=str(attr_value))
+                    SubElement(element, "feat", att=attr_name, val=unicode(attr_value))

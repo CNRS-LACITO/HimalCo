@@ -160,7 +160,8 @@ paradigmLabel_range = set([
     "comitative",
     "construction",
     "directional",
-    "irregularity"
+    "irregularity",
+    "classifier"
 ])
 
 ## Possible values allowed for example type Context attribute

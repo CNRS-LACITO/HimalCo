@@ -208,6 +208,24 @@ class TestLemmaFunctions(unittest.TestCase):
         self.assertIs(self.lemma.set_spelling_variant(var), self.lemma)
         self.assertEqual(self.lemma.form_representation[0].spellingVariant, var)
 
+    def test_get_spelling_variants(self):
+        var1 = "var1"
+        var2 = "var2"
+        # There is no FormRepresentation
+        self.assertListEqual(self.lemma.get_spelling_variants(), [])
+        # Create a FormRepresentation instance
+        repr1 = FormRepresentation()
+        repr1.spellingVariant = var1
+        self.lemma.form_representation.append(repr1)
+        self.assertEqual(self.lemma.get_spelling_variants(), [var1])
+        repr2 = FormRepresentation()
+        repr2.spellingVariant = var2
+        self.lemma.form_representation.append(repr2)
+        self.assertEqual(self.lemma.get_spelling_variants(), [var1, var2])
+        # Release FormRepresentation instances
+        del self.lemma.form_representation[:]
+        del repr1, repr2
+
     def test_set_citation_form(self):
         form = "form"
         self.assertIs(self.lemma.set_citation_form(form), self.lemma)

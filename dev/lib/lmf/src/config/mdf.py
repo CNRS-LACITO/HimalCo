@@ -122,8 +122,7 @@ mdf_lmf = dict({
     "nq" : lambda nq, lexical_entry: lexical_entry.set_note(nq, type="question"),
     "so" : lambda so, lexical_entry: None,
     "st" : lambda st, lexical_entry: lexical_entry.set_status(st),
-    "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt),
-    "a"  : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a)
+    "dt" : lambda dt, lexical_entry: lexical_entry.set_date(dt)
 })
 
 ## Order in which MDF markers must be written (output)
@@ -242,6 +241,8 @@ mdf_order = [
     "st", # status
     "dt"  # datestamp
 ]
+# bundles of related fields: ge, re, de, xv, ue, oe, ee
+# bundles related to other entries: lf, nt, pd, et, cf, va
 
 ## Functions to process some MDF fields (output)
 def get_bw(lexical_entry):
@@ -363,27 +364,30 @@ lmf_mdf = dict({
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps_partOfSpeech = dict({
-    "adj"       : "adjective",                  # adjective
-    "adv"       : "adverb",                     # adverb(ial)
-    "class"     : "classifier",                 # classifier (MDF)
-    "clf"       : "classifier",                 # classifier (Leipzig)
-    "cnj"       : "conjunction",                # conjunction
-    "disc.PTCL" : "particle",                   # discourse particle
-    "ideo"      : "ideophone",                  # ideophones
-    "intj"      : "interjection",               # interjection
-    "lnk"       : "linker",                     # linker
-    "n"         : "noun",                       # noun
-    "Np"        : "possessive pronouns",        # possessed nouns
-    "neg"       : "negation",                   # negative
-    "num"       : "numeral",                    # number
-    "prep"      : "preposition",                # preposition
-    "pro"       : "pronoun",                    # pronoun/pronominal
-    "v"         : "verb",                       # verb
-    "vi"        : "intransitive verb",          # intransitive verb
-    "vi.s"      : "stative intransitive verb",  # stative intransitive verb
-    "vr"        : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
-    "vt"        : "transitive verb",            # transitive verb
-    "vt/i"      : "bitransistive verb"          # ambitransitive verb
+    "adj"           : "adjective",                  # adjective
+    "adv"           : "adverb",                     # adverb(ial)
+    "class"         : "classifier",                 # classifier (MDF)
+    "clf"           : "classifier",                 # classifier (Leipzig)
+    "cnj"           : "conjunction",                # conjunction
+    "disc.PTCL"     : "particle",                   # discourse particle
+    "ideo"          : "ideophone",                  # ideophones
+    "intj"          : "interjection",               # interjection
+    "interj"        : "interjection",               # interjection
+    "lnk"           : "linker",                     # linker
+    "n"             : "noun",                       # noun
+    "N"             : "noun",                       # noun
+    "Np"            : "possessive pronouns",        # possessed nouns
+    "_poss._pref"   : "possessive pronouns",        # possessed nouns
+    "neg"           : "negation",                   # negative
+    "num"           : "numeral",                    # number
+    "prep"          : "preposition",                # preposition
+    "pro"           : "pronoun",                    # pronoun/pronominal
+    "v"             : "verb",                       # verb
+    "vi"            : "intransitive verb",          # intransitive verb
+    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
+    "vr"            : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
+    "vt"            : "transitive verb",            # transitive verb
+    "vt/i"          : "bitransistive verb"          # ambitransitive verb
 })
 
 ## Mapping between MDF markers and LMF semantic relation RelatedForm attribute value (input)
@@ -443,3 +447,183 @@ pdl_paradigmLabel = dict({
     "dir"       : "directional",
     "ir"        : "irregularity"
 })
+
+
+## Possible values allowed for 'sd' MDF marker
+sd_range = set([
+    "Nagri", "nAgri", "Agriculture", # agriculture
+    "Nanim", # animal
+    "Nboat", # boat related
+    "Nbody", "nBody", "Body", # body part
+    "Ncult", # material culture
+    "Nfish", # fish related
+    "Nfood", # food related
+    "Ngovt", # government
+    "Nhouse", # house related
+    "Ninsect", # insect
+    "Ninstr", # instrument
+    "Nkin", # kinship
+    "Nloc", # locative noun
+    "Nnature", # nature/meteorological
+    "Npart", # part of a larger whole
+    "Nplant", # plant
+    "Nresult", # noun of result
+    "Nrit", # ritual
+    "Nsick", # sickness/medicine
+    "Nsocial", # social relations (non-kin)
+    "Ntime", # time
+    "Vaffect", # affect (hit, kick, knock, hammer)
+    "Vagri", # agriculture
+    "Vbody", # bodily function
+    "Vcarry", "vCarry", "Carry", # carry verb
+    "Vcog", # verb of cognition
+    "Vcolor", # color verb
+    "Vcut", "vCut", "Cut", # cutting verb
+    "Veffect", # verb of effect
+    "Vemot", # verb expressing emotion
+    "Vevent", # verb naming or characterizing a whole event
+    "Vexchange", # verb of exchange (give, receive, take, get)
+    "Vhit", # hitting verb
+    "Vhold", # holding verb
+    "Vhunt", # hunting related
+    "Vmotion", # verb of locomotion
+    "Vposture", # verb of posture or rest
+    "Vrit", # verb describing ritual
+    "Vsee", # verb of perception
+    "Vsize", # verb of dimension
+    "Vsocial", # verb expressing social relationship
+    "Vspeak", # speech-act verb
+    "Vspeed", # verb of speed
+    "Vtouch", # touching verb
+    "Vvalue", # verb expressing value
+    "Vweath", # weather verbs (rain, fog)
+    "Vweight", # verb expressing weight
+    "ADJage", # age
+    "ADJbodily", # bodily function
+    "ADJcol", # color adjective
+    "ADJemot", # emotion/human propensity
+    "ADJphys", # physical property (hard, clean, hot)
+    "ADJsize", "adjSize", "Size", # size/dimension
+    "ADJspeed", "adjSpeed", "Speed", # speed
+    "ADJtext", # texture
+    "ADJval" # value (good, bad, nice)
+])
+
+## Possible values allowed for 'lf' MDF marker
+lf_range = set([
+    "Ant", # Antonym
+    "Caus", # Causal
+    "Compound", # Lexicalized compound using headword not easily handled by other lexical functions
+    "Cpart", # Counterpart (complement, conversive)
+    "Degrad", # Degraded degree or state
+    "Feel", # Feeling or sensation associated with headword
+    "Gen", # Generic
+    "Group", # Collective/group
+    "Head", # Head or leader of group
+    "Idiom", # Idiom
+    "Mat", # Material used to make headword
+    "Max", # Superlative degree of headword
+    "Min", # Diminished degree of headword
+    "Nact", # Actor noun
+    "Nben", # Benefactee noun
+    "Ndev", # Deverbal noun
+    "Ninst", # Instrumental noun
+    "Ngoal", # Goal of action
+    "Nloc", # Locative noun
+    "Nug", # Undergoer noun
+    "ParS", # Parallelism representing Same as headword
+    "ParD", # Parallelism representing Different end of scale
+    "Part", # Part of headword
+    "Phase", # Phase of headword
+    "Prep", # Preparatory activity
+    "Res", # Consequence or resulting state
+    "Serial", # Conventionalized serial verb combination not clearly handled by other lexical functions
+    "Sim", # Similar type at same level of hierarchy
+    "Sit", # Situation or activity typically associated with headword
+    "Sound", # Sound associated with headword
+    "Spec", # Specific (kind of, type of, species)
+    "Start", # Beginning phase of headword (inceptive)
+    "Stop", # Final phase of headword (cessative)
+    "Syn", # Synonym (same range of meaning)
+    "SynD", # Synonym in another dialect of the same language
+    "SynL", # Loan synonym fully assimilated into language
+    "SynR", # Synonym in another register of same language
+    "SynT", # Taboo synonym
+    "Unit", # Single occurrence of headword
+    "Vwhole", # Verb of the whole
+    "Whole" # Whole of which the headword is a part
+])
+
+## Possible values allowed for 'ps' MDF marker
+ps_range = set([
+    "ADJ", "Adjective",
+    "ADJR", "Adjectivizer",
+    "MDL", "Modal",
+    "ADV", "Adverb",
+    "ADVR", "Adverbializer",
+    "NEG", "Negative",
+    "AFFM", "Affirmative",
+    "NEGimp", "Negative imperative",
+    "AL", "Alienable",
+    "NOM", "Nominative",
+    "AN", "Animate",
+    "NOMR", "Nominalizer",
+    "APPL", "Applicative",
+    "n", "Noun",
+    "ART", "Article",
+    "NUM", "Number",
+    "ASP", "Aspect",
+    "AUX", "Auxiliary",
+    "PTCL", "Particle",
+    "PART", "Participle",
+    "CLASS", "Classifier",
+    "PAUS", "Pause word",
+    "CMPAR", "Comparative",
+    "PL", "Plural",
+    "CMPLR", "Complementizer",
+    "POSS/P", "Possessive",
+    "CNJ", "Conjunction",
+    "POSSR", "Possessor",
+    "COND", "Conditional",
+    "POST", "Postposition",
+    "CONF", "Confirmative",
+    "PREP", "Preposition",
+    "CONN", "Connective",
+    "PRO", "Pronoun/pronominal",
+    "COP", "Copula",
+    "PropN", "Proper noun",
+    "DECL", "Declarative",
+    "Q", "Query/Question/Interrogative",
+    "DEIC", "Deictic (spatial & temp.)",
+    "QNT", "Quantifier",
+    "DEM", "Demonstrative",
+    "DIR", "Directional",
+    "REC", "Reciprocal",
+    "REL", "Relative(izer)",
+    "EVID", "Evidential",
+    "RFLX", "Reflexive",
+    "EXASP", "Exasperative",
+    "RLR", "Relater",
+    "EXIST", "Existential",
+    "TAM", "Tense-Aspect-Mood",
+    "FOC", "Focus marker",
+    "TIME", "Time expression",
+    "TNS", "Tense",
+    "HORT", "Hortative",
+    "TR", "Transitive(izer)",
+    "ID", "Idiom",
+    "v", "Verb/verbal"
+    "IMP", "Imperative",
+    "vi", "Intransitive verb",
+    "INTJ", "Interjection",
+    "vm", "Middle verb",
+    "INT/Q", "Interrogative (non-agentive passive)",
+    "ITR", "Intransitive(izer)",
+    "vn", "Non-active verb",
+    "vp", "Passive verb (agentive)",
+    "vr", "Reflexive/quasi-reflexive/intradirective",
+    "LIG", "Ligature",
+    "vt", "Transitive verb",
+    "LOC", "Locative",
+    "vt/i", "Ambitransitive verb"
+])

@@ -17,7 +17,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
     @return A Lexicon instance containing all lexical entries.
     """
     import re
-    mdf_file = open_read(filename)
+    mdf_file = open_read(filename, encoding='utf8')
     # MDF syntax is the following: '\marker value'
     mdf_pattern = """^\\\(\w*) (<(.*)>)? ?(.*)$"""
     # Create a Lexicon instance to contain all lexical entries
@@ -28,9 +28,14 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
         # Do not parse empty lines
         if line != EOL:
             result = re.match(mdf_pattern, line)
+            if result is None:
+                # Line is empty => continue parsing next line
+                continue
             marker = result.group(1)
             attrs = result.group(3)
             value = result.group(4)
+            # Remove end-of-line characters
+            value = value.rstrip('\r\n')
             # Do not consider empty fields
             if value == "":
                 continue
@@ -64,7 +69,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                 else:
                     mdf2lmf[marker](value, current_entry)
             except KeyError:
-                print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme()))
+                print unicode(Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme())))
             except Error as exception:
                 exception.handle()
     mdf_file.close()

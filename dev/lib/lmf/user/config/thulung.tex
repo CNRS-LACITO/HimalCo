@@ -1,0 +1,22 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article}
+\title{Thulung dictionary}
+\author{Aimée Lahaussois}
+\usepackage{fontspec}
+\usepackage{booktabs}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{memhfixc}
+\usepackage{multicol}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{CharisSIL}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{CharisSIL}
+\newcommand{\ipa}[1]{{\phon #1}} % API en italique
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mx[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{ArialUnicodeMS} % pour les questions
+\newcommand{\nq}[1]{{\mx #1}}
+\XeTeXlinebreaklocale "zh" % 使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{gb4e}

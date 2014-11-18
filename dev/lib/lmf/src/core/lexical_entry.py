@@ -85,7 +85,7 @@ class LexicalEntry():
         # Check part of speech type
         check_attr_type(part_of_speech, [str, unicode], error_msg)
         # Check range of part of speech value (also try with converted value from MDF to LMF)
-        value = check_attr_range(part_of_speech, partOfSpeech_range, error_msg, mapping=ps_partOfSpeech)
+        value = check_attr_range(str(part_of_speech), partOfSpeech_range, error_msg, mapping=ps_partOfSpeech)
         self.partOfSpeech = value
         return self
 
@@ -354,6 +354,14 @@ class LexicalEntry():
             self.lemma = Lemma()
         self.lemma.set_spelling_variant(spelling_variant)
         return self
+
+    def get_spelling_variants(self):
+        """! @brief Get all spelling variants.
+        Attribute 'spellingVariant' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'spellingVariant' if any.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_spelling_variants()
 
     def set_citation_form(self, citation_form):
         """! @brief Set citation form.

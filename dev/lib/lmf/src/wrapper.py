@@ -11,10 +11,11 @@ sys.path.append('./src')
 from input.mdf import mdf_read
 from input.xml_lmf import xml_lmf_read as lmf_read
 
-## Functions to write into a file: MDF, XML LMF, LaTeX
+## Functions to write into a file: MDF, XML LMF, LaTeX, doc
 from output.mdf import mdf_write
 from output.xml_lmf import xml_lmf_write as lmf_write
 from output.tex import tex_write
+from output.doc import doc_write
 
 from utils.error_handling import Error
 from utils.log import log
@@ -97,3 +98,12 @@ def write_tex(*args, **kwds):
     for lexicon in args[0].get_lexicons():
         entries_nb += lexicon.count_lexical_entries()
     log("Successfully wrote %s LMF entries into LaTeX file '%s'." % (entries_nb, args[1]))
+
+def write_doc(*args, **kwds):
+    # A document file contains one or several lexicons and informations about the lexical resource
+    wrapper(doc_write, *args, **kwds)
+    # Count total number of entries to report to user
+    entries_nb = 0
+    for lexicon in args[0].get_lexicons():
+        entries_nb += lexicon.count_lexical_entries()
+    log("Successfully wrote %s LMF entries into document file '%s'." % (entries_nb, args[1]))

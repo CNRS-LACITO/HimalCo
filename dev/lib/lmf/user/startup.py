@@ -8,6 +8,9 @@ user_path = sys.path[0] + '/'
 # Add user configuration folder to path
 sys.path.append(user_path + 'config')
 
+# Add user demonstration folder to path
+sys.path.append(user_path + 'demo')
+
 # Add lib/ folder to path
 sys.path.append(user_path + '../..')
 

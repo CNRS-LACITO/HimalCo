@@ -248,6 +248,17 @@ class Lemma(Form):
         form_representation.set_spellingVariant(spelling_variant)
         return self
 
+    def get_spelling_variants(self):
+        """! @brief Get all spelling variants.
+        This attribute is owned by FormRepresentation.
+        @return A Python list of FormRepresentation attributes 'spellingVariant'.
+        """
+        spelling_variants = []
+        for repr in self.get_form_representations():
+            if repr.get_spellingVariant() is not None:
+                spelling_variants.append(repr.get_spellingVariant())
+        return spelling_variants
+
     def set_citation_form(self, citation_form):
         """! @brief Set citation form.
         This attribute is owned by FormRepresentation.
