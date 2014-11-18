@@ -1,4 +1,5 @@
 \documentclass[xcolor=table]{beamer}
+\setbeamertemplate{footline}[frame number]
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{polyglossia} 
@@ -36,6 +37,9 @@
 
  \author{Guillaume Jacques, CNRS-CRLAO}
 \maketitle
+
+  \includegraphics[width=0.4\textwidth]{anr.JPG} \centering
+  
  \end{frame} 
 
 \begin{frame} 
@@ -46,6 +50,7 @@
 \item Dictionaires
 \item Développement de logiciels
 \item Publications
+\item Réalisations
 \end{enumerate}
  
  \end{frame} 
@@ -89,25 +94,48 @@
 
 Textes enregistrés et analysés depuis le début du projet (2013)
 
+  \includegraphics[width=0.9\textwidth]{na-pangloss.jpg} \centering
+   \end{frame} 
+   
+ \begin{frame} 
+ \frametitle{Corpus de textes}
+ 
+Textes enregistrés et analysés depuis le début du projet (2013)
 \begin{enumerate}[<+->]
 \item Japhug (19h d'audio, 1h30 de vidéo, dont 8h déjà transcrites)
-\item  Na (10h, dont 1h30 traduite)
-\item  Khaling (2h, dont une heure traduite)
-\item  Thulung (2h transcrites)
+\item  Na (10h, dont 1h30 transcrite et annotée)
+\item  Khaling (2h, dont une heure transcrite et annotée)
+\item  Thulung (2h transcrites et annotées)
 \end{enumerate}
 
- Ces textes seront hébergés à la fin du projet sur l'archive en ligne Pangloss \bleu{http://lacito.vjf.cnrs.fr/pangloss/}
+\begin{itemize}[<+->]
+\item  Ces textes seront hébergés à la fin du projet sur l'archive en ligne Pangloss \bleu{http://lacito.vjf.cnrs.fr/pangloss/}
+ 
+\item Plusieurs textes ont été enregistrés en deux ou trois versions (pour la future plateforme de corpus parallèles)
+
+\item Système de versionnage (GitHub)
+\end{itemize}
  \end{frame} 
+   \begin{frame} 
+ \frametitle{GitHub}
  
- 
+   \includegraphics[width=0.9\textwidth]{github.jpg} \centering
+   
+   \end{frame}    
   \begin{frame} 
  \frametitle{Dictionnaires avec ressources sonores}
  
 \begin{enumerate}[<+->]
 \item Dictionnaire japhug-chinois-français (environ 700pp, 6245 entrées)
 \item  Dictionnaire des verbes khaling-népali-anglais (148pp, 653 entrées)
-\item  Dictionnaire na (environ 400pp, 2986 entrées)
+\item  Dictionnaire na (environ 400pp, 3695 entrées)
+
 \end{enumerate}
+  \end{frame}    
+ 
+  \begin{frame} 
+ \frametitle{Dictionnaires avec ressources sonores}
+  \includegraphics[width=0.6\textwidth]{page-japhug.jpg} \centering
  
   \end{frame}    
  
@@ -126,6 +154,13 @@ Textes enregistrés et analysés depuis le début du projet (2013)
 \end{enumerate}
   \end{frame}    
   
+  
+    \begin{frame} 
+  \includegraphics[width=0.65\textwidth]{../../../dev/lib/lmf/doc/uml/export/ClassDiagramCorePackage.png} \centering
+
+
+   \end{frame}   
+   
   \begin{frame} 
  \frametitle{Logiciels (2)}
  
@@ -134,7 +169,6 @@ Textes enregistrés et analysés depuis le début du projet (2013)
 \item Plateforme en ligne de textes parallèles
 \item Développement d'une interface android pour les dictionnaires et les textes en ligne.
 \item Archivage des données sonores liées aux dictionnaires (Nakala)
-\item Création d'un site web pour le projet HimalCo (HumaNum)
 \item Générateurs de paradigmes.
 \end{enumerate}
  
@@ -178,8 +212,17 @@ Textes enregistrés et analysés depuis le début du projet (2013)
  
 \end{enumerate}
   \end{frame}      
+      \begin{frame} 
+ \frametitle{Priorités avant la fin du projet}
  
+ \begin{enumerate}[<+->]
+\item Librairie python pour la mise en forme des dictionnaires  
+\item Publication en ligne de la version 1.0 des dictionnaires   
+\item  Publication en ligne des textes transcrits (avec annotations) 
+\item  Alignement sonore des textes
+\end{enumerate}
  
+   \end{frame}      
 \end{document}
 
 
