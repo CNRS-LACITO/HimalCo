@@ -70,6 +70,8 @@ $lettre =~s/ʌ̂i/ै:/g;
 $lettre =~s/ʌu/ौ/g;
 $lettre =~s/ʌ̄u/ौ/g;
 $lettre =~s/ʌ‍̂u/ौ:/g;
+$lettre =~s/īu/िउ/g;
+$lettre =~s/iu/िउ/g;
 $lettre =~s/ēu/ेउ/g;
 $lettre =~s/eu/ेउ/g;
 
