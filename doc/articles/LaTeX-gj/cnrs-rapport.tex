@@ -1,0 +1,192 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{tangutex2} 
+\usepackage{tangutex4} 
+\usepackage{polyglossia} 
+\setdefaultlanguage{french} 
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+\bibpunct[~: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\nouppercaseheads
+%\pagestyle{Ruled}
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipac}[1]{{\tiny #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+\newcommand{\tgz}[1]{#1 \mo{#1} \tg{#1}}
+\newcommand{\indextg}[1]{\index{\tge{#1}@\tgz{#1}}}
+\newcommand{\tgb}[1]{\tgz{#1}\indextg{#1}}
+\newcommand{\tgc}[1]{\tg{#1} \#1\indextg{#1}}
+\newcommand{\tgd}[1]{\tge{#1}\indextg{#1}}
+\newcommand{\tgf}[1]{\mo{#1}\indextg{#1}}
+\newcommand{\petit}[1]{\tiny#1}
+\newcommand{\sig}{\begin{math}\Sigma\end{math}}
+\newcommand{\phone}{\begin{math}\Phi\end{math}}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+
+
+\begin{document}
+%\OnehalfSpacing
+\title{Rapport sur les travaux effectués}
+\author{Guillaume Jacques}
+\maketitle
+
+\sloppy
+%
+\section{Introduction}
+
+\section{Activités de recherche}
+Une question fondamentale sous-tend l'ensemble de mes travaux: quels sont les principes généraux de changements linguistiques, indépendamment d'une famille de langue particulière, et dans quelle mesure  ces principes permettent de rendre compte des limites de la diversité des langues?
+
+Pour contribuer de la façon la plus efficace possible à cette perspective panchronique,  aussi bien phonologie qu'en morphosyntaxe, j'ai préféré me spécialiser tout d'abord dans une seule famille de langue afin d'éviter une dispersion prématurée. Le choix du sino-tibétain comme objet d'étude principal a été motivé par le fait qu'il s'agit d'une immense famille comprenant des centaines de langues, d'une grande diversité typologique (c'est une des seule famille de langue dans laquelle on trouve à la fois des langues isolantes et des langues polysynthétiques), et aussi pour laquelle on dispose de plusieurs langues anciennes.
+
+Mes activités de recherches peuvent se regrouper en six thèmes principaux.
+
+Premièrement, mon travail a d'abord porté sur l'étude philologique des trois langues les plus anciennement attestées de la famille (le chinois, le tibétain, puis le tangoute). 
+
+Deuxièmement, à partir de ma thèse, ma recherche s'est focalisée sur la description détaillée de langues non-écrites sur le terrain, d'abord avec le japhug, puis d'autres langues telles que pumi, le khaling, le stau et plusieurs variétés de tibétain. 
+
+Troisièmement, outre l'aspect proprement linguistique de ma description du japhug (grammaire, dictionnaire, recueil de textes), je me suis également intéressé à la contribution que ces données pouvaient apporter à l'ethnologie, en particulier l'étude des systèmes de parenté.
+
+Quatrièmement, sur la base de mes descriptions du japhug, du pumi et de langues tibétaines, j'ai publié un certain nombre de travaux sur la phonologie et la morphologie comparées de sous-branches du sino-tibétain. J'ai également écrit des articles des changements phonétiques ou des étymologies particulières dans d'autres familles de langues (indo-européen, sémitique, algonquien, sioux, turcique) afin d'élargir ma perspective typologique.
+
+Cinquièmement, depuis mon recrutement au CNRS en 2009 comme CR1, je me suis orienté vers la typologie morphosyntaxique (dans une perspective panchronique),  en particulier dans mes articles sur les marques de voix, l'incorporation et le mouvement associé.
+
+Sixièmement, depuis 2012 j'ai commencé à utiliser des méthodes computationnelles pour analyser la morphologie de langues étudiées sur le terrain, en particulier le khaling.
+
+\subsection{Philologie} \label{sec:philologie}
+Ma première publication (\citealt{jacques00ywij}) a porté sur la linguistique historique et la philologie du chinois, et cette orientation continue jusqu'à mon plus récent ouvrage (\citealt{jacques14esquisse}) sur le tangoute.
+
+Mon étude des langues anciennes est motivée par mon intérêt pour les principes généraux des changements linguistiques: en effet, sans documents historiques, les états anciens des langues ne sont accessibles que sous la forme d'hypothèses bâties en combinant méthode comparative et reconstruction interne. Les langues tibétaines en particulier, attestée depuis le 8^e siècle, offrent un terrain d'étude des changements phonologiques, morphologiques et syntaxiques particulièrement fructueux, auquel j'ai contribué en particulier dans mon article sur le tibétain de Tchoné (\citealt{jacques14cone}).
+
+Le tangoute, langue ancienne attestée entre le 10^{e} et le 15^e siècles sans descendant direct, est d'une importance cruciale pour l'ensemble de la famille sino-tibétaine pour une raison différente. En effet, c'est la langue la plus anciennement attestée qui présente un système d'indexation personnelle sur le verbe. A ce titre, elle a un rôle prééminent à jouer dans le débat sur l'antiquité du système d'accord personnel en sino-tibétain (\citealt{jacques09tangutverb}, \citealt{jacques10zos}, \citealt{jacques11tangut.verb}), un débat dont l'intérêt méthodologique dépasse cette seule famille (voir section \ref{sec:diachronie}). Son écriture logographique très opaque est un obstacle à son utilisation par les typologues et les diachroniciens non-spécialistes, et dans mes travaux, en particulier \citet{jacques07textes} et \citet{jacques14esquisse}, j'ai fait en sorte de faciliter l'accès aux textes tangoutes et de rendre ainsi mes analyses de la morphosyntaxe de cette langue indépendamment revérifiables par un public plus large que les seuls tangoutologues.
+
+\subsection{Documentation de langues en danger} \label{sec:documentation}
+ 
+La description de langues en danger est depuis le début de ma thèse le sujet qui occupe la majeure partie de mon temps de recherche.  J'ai tout d'abord étudié le japhug, langue rgyalronguique parlée au Sichuan, parlée par moins de 10000 personnes.
+
+Ce choix avait été motivé d'une part par la complexité morphologique et la singularité typologique du système verbal des langues rgyalronguiques (connues essentiellement à cette époque par l'ouvrage \citealt{linxr93jiarong} et l'article \citealt{jackson00sidaba}), et par leur phonologie conservatrice. J'ai décidé de travaillé sur le japhug car c'était alors la langue la moins connue du groupe rgyalronguique:  seules quelques pages de description phonologique (sur un dialecte différent) avaient été publiées lorsque j'ai commencé mes travaux.
+
+Après ma thèse (\citealt{jacques04these}), j'ai tout d'abord publié en chinois une petit grammaire du japhug (\citealt{jacques08}) afin de rendre mon travail plus accessible aux collègues chinois et aux locuteurs de cette langue. J'ai également publié un recueil de textes glosés (\citealt{jacques10gesar}) dont certains sont disponibles sur l'archive Pangloss. J'ai recueilli au fil des années (et en particulier en 2012 et 2014) un corpus de textes d'environ soixante heures, dont plus de 47h sont transcrites et recherchable automatiquement ainsi qu'un dictionnaire comprenant plus de 6200 entrées. Ces documents seront prochainement publiés en ligne dans le cadre de l'ANR HimalCo (voir section  \ref{sec:projets}).
+
+Ensuite, j'ai écrit une série d'articles portant sur des aspects particuliers de la morphosyntaxe du japhug: le marquage direct/inverse (\citealt{jacques10inverse}), le réfléchi (\citealt{jacques10refl}), l'incorporation  (\citealt{jacques12incorp}), les marques de voix (\citealt{jacques12demotion}),  le mouvement associé (\citealt{jacques13harmonization}), l'applicatif (\citealt{jacques13tropative}), les idéophones (\citealt{japhug14ideophones}), l'antipassif (\citealt{jacques14antipassive}) et enfin le chainage de propositions  (\citealt{jacques14linking}), certains pour des revues aréales (LTBA, BSOAS, Language and Linguistics), d'autres pour des revues plus généralistes (Lingua, Linguistic typology, Anthropological linguistics). 
+
+J'ai également soumis des articles sur la relativisation, les constructions causatives, les constructions comparatives, le générique ainsi qu'une `illustration of the IPA', pour lesquels j'attends les réponses des évaluateurs. 
+
+J'ai le projet, lorsque j'aurai publié des articles sur tous les sujets principaux de la morphosyntaxe du japhug, de les synthétiser et de les remanier pour en faire une grammaire de référence en anglais. Segmenter ce travail en articles a plusieurs avantages. D'un part, il est possible dans un article de mettre en valeur les données de la langue étudiée en apportant une discussion typologique qui n'auraient pas sa place dans une grammaire de la langue. D'autre part, ce choix permet de bénéficier de la lecture attentive de relecteurs variés, afin de rendre la terminologie employée et la description les plus claires et les plus riches possibles. Enfin, il rend possible d'affiner progressivement la description de la langue, et de confronter la validité des généralisations proposées dans les articles à un corpus qui croît régulièrement. 
+
+Outre le japhug, j'ai effectué des travaux de terrains sur neuf langues de la famille sino-tibétaines: le zbu et le stau (deux autres langues rgyalronguiques), le tanhai et le chang (langues naga du nord, parlées en Inde du nord-est), le kami et le tchoné (deux langues tibétaines, parlées au Sichuan et au Gansu respectivement), le pumi et le muya (deux langues `qianguiques' du Sichuan), et le khaling (kiranti, Népal).
+
+Parmi ces langues, c'est essentiellement sur le khaling et le stau que j'ai recueilli le plus de données. Je prépare des recueils de textes et des  dictionnaires pour ces deux langues.
+
+Mon travail sur le khaling a donné lieu à l'article \citet{jacques12khaling}, dans lequel je présente un modèle de la morphologie flexionnelle des verbes simples de cette langues, ainsi qu'une liste de paradigmes générés automatiquement à partir des règles décrites dans l'article (voir section \ref{sec:morpho}). Dans \citet{jacques14auditory}, nous décrivons le système de démonstratifs en khaling, et en particulier l'usage du démonstratif auditif, qui se distingue de tous les phénomènes similaires décrits dans d'autres familles de langues. J'ai également fait une présentation invitée sur la morphologie dénotationnelle du khaling (\citealt{jacques13derivational.khaling}) qui sera publiée dans un ouvrage collectif dirigé par les organisateurs de la conférence.
+
+ XXXstau \citet{jacques14rtau} \citet{antonov14rtau}
+
+ 
+\subsection{Ethnolinguistique}  \label{sec:ethno}
+
+\citet{jacques11kinship}
+
+
+\subsection{Linguistique historique}  \label{sec:diachronie}
+
+\citet{jacques13arapaho}
+ \citet{jacques13vama}
+  \citet{antonov12kumush}
+    \citet{rg-gj12yod}
+
+\citet{jacques11lingua}
+\citet{jacques.michaud11naish}
+ 
+ 
+ 
+ \citet{jacques12agreement}
+ 
+  \citet{jacques12internal}
+  \citet{jacques14snom}
+  \citet{jacques13yod}
+    \citet{jacques10zos}
+    
+    
+    \citet{sagart99roc}
+        \citet{sagart12sprefix}
+ 
+\subsection{Typologie}  \label{sec:typologie}
+typologie historique 
+
+\citet{michaud-jacques12nasalite}
+
+
+\citet{jacques12incorp}
+\citet{jacques14antipassive}
+
+\citet{jacques13harmonization}
+
+
+ \citet{antonov14need}
+\citet{jacques10inverse}
+\citet{jacques14inverse}
+\citet{jacques15directionality}
+  \citet{walther14inv.canon}
+  
+\subsection{Morphologie computationnelle}  \label{sec:morpho}
+  
+ \citet{jacques12khaling}
+ \citet{walther14compactness}
+ 
+\section{Encadrement et enseignement}
+
+\subsection{Enseignement} \label{sec:enseignement}
+
+\subsection{Encadrement d'étudiants en mastaire et en thèse} \label{sec:theses}
+\citet{gongxun14agreement}
+\citet{gong14prosodic.tibetan}
+\citet{gong14prenasalized}
+
+\citet{lai14caus}
+\citet{lai14person}
+\citet{lai13fuyin}
+\citet{lai13affixale}
+\section{Animation de la recherche} \label{sec:animation}
+
+\subsection{Organisation de conférences} \label{sec:conf}
+
+\subsection{Activités éditoriales}\label{sec:editorial}
+
+\subsection{Projets de recherches} \label{sec:projets}
+
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+ 
+\end{document}
