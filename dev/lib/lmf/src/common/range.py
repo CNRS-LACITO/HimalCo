@@ -156,12 +156,16 @@ semanticRelation_range = set([
 paradigmLabel_range = set([
     "lexicalized affix",
     "conjugation class",
-    "theme of the past",
-    "comitative",
+    "theme of the past", "past stem", # TODO -> japhug
+    "comitative", "comitatif", # TODO -> japhug
     "construction",
-    "directional",
+    "directional", "directionel", # TODO -> japhug
     "irregularity",
-    "classifier"
+    "classifier",
+    "emphatic", # TODO -> japhug
+    "case", # TODO -> japhug
+    "generic negative", # TODO -> japhug
+    "perfective stem (1st and 3th persons)" # TODO -> japhug
 ])
 
 ## Possible values allowed for example type Context attribute

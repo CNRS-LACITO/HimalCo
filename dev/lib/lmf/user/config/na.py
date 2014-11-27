@@ -86,6 +86,11 @@ my_font = dict({
     FRENCH      : lambda text: text
 })
 
+def format_caps(text):
+    """Force first letter to be in upper case.
+    """
+    return text[0].upper() + text[1:]
+
 def format_tone(lexical_entry, font):
     if lexical_entry.get_tones() is not None:
         result = lexical_entry.get_tones()[0]
@@ -96,7 +101,8 @@ def format_definition(lexical_entry, font, language):
     for sense in lexical_entry.get_senses():
         if sense.find_definitions(language) is not None:
             for definition in sense.find_definitions(language):
-                result += font[language](definition)
+                # Display first character in upper case
+                result += font[language](format_caps(definition))
     return result
 
 def format_gloss(lexical_entry, font, language):

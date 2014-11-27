@@ -3,7 +3,7 @@
 """! @package morphosyntax
 """
 
-from utils.attr import check_attr_range
+from utils.attr import check_attr_type, check_attr_range
 from common.range import paradigmLabel_range
 from config.mdf import pdl_paradigmLabel
 
@@ -36,9 +36,11 @@ class Paradigm():
         @param paradigm_label The paradigm label to set.
         @return Paradigm instance.
         """
-        error_msg = "Paradigm label value '%s' is not allowed" % paradigm_label
+        error_msg = "Paradigm label value '%s' is not allowed" % str(paradigm_label)
+        # Check paradigm label type
+        check_attr_type(paradigm_label, [str, unicode], error_msg)
         # Check range of paradigm label value (also try with converted value from MDF to LMF)
-        value = check_attr_range(paradigm_label, paradigmLabel_range, error_msg, mapping=pdl_paradigmLabel)
+        value = check_attr_range(str(paradigm_label), paradigmLabel_range, error_msg, mapping=pdl_paradigmLabel)
         self.paradigmLabel = value
         return self
 

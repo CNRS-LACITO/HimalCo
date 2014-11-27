@@ -11,6 +11,9 @@ sys.path.append(user_path + 'config')
 # Add user demonstration folder to path
 sys.path.append(user_path + 'demo')
 
+# Add user japhug folder to path
+sys.path.append(user_path + 'japhug')
+
 # Add lib/ folder to path
 sys.path.append(user_path + '../..')
 

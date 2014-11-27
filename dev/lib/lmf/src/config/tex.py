@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import EOL
@@ -64,9 +65,68 @@ def lmf_to_tex(lexical_entry, font=tex_font):
     tex_entry += format_status(lexical_entry, font)
     # date
     tex_entry += format_date(lexical_entry, font)
+    # Handle reserved characters: \ { } $ # & _ ^ ~ %
+    if tex_entry.find("{") != -1:
+        tex_entry = format_font(tex_entry)
+    if tex_entry.find("@") != -1:
+        tex_entry = format_pinyin(tex_entry)
+    if tex_entry.find("#") != -1:
+        tex_entry = tex_entry.replace('#', '\#')
+    if tex_entry.find("_") != -1:
+        tex_entry = tex_entry.replace('_', '\_')
+    if tex_entry.find("&") != -1:
+        tex_entry = tex_entry.replace('&', '\&')
+    if tex_entry.find("$") != -1:
+        tex_entry = tex_entry.replace('$', '')
+    if tex_entry.find("^") != -1:
+        tex_entry = tex_entry.replace('^', '\^')
+    # Handle fonts
+    if tex_entry.find("fn:") != -1:
+        tex_entry = format_fn(tex_entry)
+    if tex_entry.find("fv:") != -1:
+        tex_entry = format_fv(tex_entry)
+    # Special formatting
+    if tex_entry.encode("utf8").find("°") != -1:
+        tex_entry = format_sc(tex_entry)
     return tex_entry + EOL
 
 ## Functions to process LaTeX fields (output)
+
+def format_font(text):
+    """Replace '{xxx}' or '\{xxx}' by '\ipa{xxx}'.
+    """
+    return text.replace("\\{", "\\ipa{")
+
+def format_fn(text):
+    """Replace 'fn:xxx' by '\\textcolor{brown}{\zh{xxx}}'.
+    """
+    import re
+    return re.sub(r"(\w*)fn:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{brown}{\zh{" + r"\2" + "}}" + r"\3", text)
+
+def format_fv(text):
+    """Replace 'fv:xxx' by '\textcolor{blue}{\textbf{\ipa{xxx}}}'.
+    """
+    import re
+    result = text
+    s = re.match(r"(.*[ }])?fv:([^\s\.,)]*)(\w*)", text)
+    if s:
+        result = ''
+        if s.group(1) is not None:
+            result += s.group(1)
+        result += r"\textcolor{blue}{\textbf{\ipa{" + s.group(2) + "}}}" + s.group(3)
+    return result
+
+def format_sc(text):
+    """Replace '°xxx' by '\mytextsc{xxx}' in translated examples.
+    """
+    import re
+    return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\mytextsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+
+def format_pinyin(text):
+    """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
+    """
+    import re
+    return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
 
 def format_lexeme(lexical_entry, font):
     """! @brief 'lx', 'hm' and 'lc' fields are flipped if 'lc' field has data.
@@ -87,7 +147,7 @@ def format_lexeme(lexical_entry, font):
     else:
         # Format lexeme
         result += lexeme
-    result += " \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()).replace('_', '\_') + "}{}" + EOL
+    result += " \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()) + "}{}" + EOL
     return result
 
 def format_part_of_speech(lexical_entry, font):

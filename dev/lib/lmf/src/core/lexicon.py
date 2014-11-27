@@ -198,7 +198,7 @@ class Lexicon():
                 found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_lexeme)
                 if len(found_entry) < 1:
                     # No lexical entry with this lexeme exists
-                    print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme()))
+                    print unicode(Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme())))
                 elif len(found_entry) > 1:
                     # Several lexical entries with this lexeme exist => consider homonym number if any
                     related_homonym = []
@@ -207,7 +207,7 @@ class Lexicon():
                             if related_entry.get_homonymNumber() == related_homonym_number:
                                 related_homonym.append(related_entry)
                     if len(related_homonym) != 1:
-                        print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme)
+                        print unicode(Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme))
                     else:
                         # Save the found lexical entry
                         related_form.set_lexical_entry(related_homonym[0])

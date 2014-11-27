@@ -34,8 +34,11 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             marker = result.group(1)
             attrs = result.group(3)
             value = result.group(4)
-            # Remove end-of-line characters
-            value = value.rstrip('\r\n')
+            # Do not consider markers starting with an underscore character (e.g. '_sh' and '_DateStampHasFourDigitYear')
+            if marker[0] == '_':
+                continue
+            # Remove trailing spaces and end-of-line characters
+            value = value.rstrip(' \r\n')
             # Do not consider empty fields
             if value == "":
                 continue
