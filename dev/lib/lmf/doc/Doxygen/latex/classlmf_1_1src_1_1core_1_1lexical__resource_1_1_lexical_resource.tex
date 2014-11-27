@@ -12,7 +12,33 @@
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a8f7f77cfb5a432a9968844c33e6123a2}{\+\_\+\+\_\+init\+\_\+\+\_\+}
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_ae39531404208c5fdb20f431d7949568f}{\+\_\+\+\_\+del\+\_\+\+\_\+}
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a6294a827ab54971b60c5843cb69d379c}{get\+\_\+lexicons}
+\begin{DoxyCompactList}\small\item\em Get all lexicons maintained by the lexical resource. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a64ea1ed8f75c1aee5a2ff07786d81851}{add\+\_\+lexicon}
+\begin{DoxyCompactList}\small\item\em Add a lexicon to the lexical resource. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a7b823f2fc2470472980e061420799c3f}{remove\+\_\+lexicon}
+\begin{DoxyCompactList}\small\item\em Remove a lexicon from the lexical resource. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a83880e971a7137cd9b0599bd056702a1}{get\+\_\+lexicon}
+\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a32872ca39f2aeb0d87e59bd89079033d}{set\+\_\+creation\+Date}
+\begin{DoxyCompactList}\small\item\em Set creation date. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e3bae782878759cdcac67cf6bccd3c8}{get\+\_\+creation\+Date}
+\begin{DoxyCompactList}\small\item\em Get creation date. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a976816edb5e2825c212372fbf76d8338}{set\+\_\+last\+Update}
+\begin{DoxyCompactList}\small\item\em Set last update. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a205676f0701ea4ad6f56e055132d98a2}{get\+\_\+last\+Update}
+\begin{DoxyCompactList}\small\item\em Get last update. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_af7c40fb3cc957000b20aa39d9c5e6693}{set\+\_\+author}
+\begin{DoxyCompactList}\small\item\em Set author. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e896e7607f9c71e7db166a652137f87}{get\+\_\+author}
+\begin{DoxyCompactList}\small\item\em Get author. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a416f746c8212930d4d98059dedc7d4c9}{set\+\_\+description}
+\begin{DoxyCompactList}\small\item\em Set description. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_aa86a440b33cbee8982a3130a9de21319}{get\+\_\+description}
+\begin{DoxyCompactList}\small\item\em Get description. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_ab71215eeb4d9ae9a4d929c899c26a2eb}{get\+\_\+bibliographic\+Citation}
+\begin{DoxyCompactList}\small\item\em Get bibliographic citation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,7 +55,7 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource
 \subsection{Detailed Description}
 \char`\"{}\+Lexical Resource is a class representing the entire resource and is a container for one or more lexicons. There is only one Lexical Resource instance.\char`\"{} (L\+M\+F) 
 
-Definition at line 6 of file lexical\+\_\+resource.\+py.
+Definition at line 9 of file lexical\+\_\+resource.\+py.
 
 
 
@@ -38,7 +64,8 @@ Definition at line 6 of file lexical\+\_\+resource.\+py.
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
 \subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+\_\+\+\_\+init\+\_\+\+\_\+ (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{dtd\+\_\+version = {\ttfamily 16}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a8f7f77cfb5a432a9968844c33e6123a2}
 
@@ -50,7 +77,7 @@ A \hyperlink{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource}{
 \end{DoxyReturn}
 
 
-Definition at line 9 of file lexical\+\_\+resource.\+py.
+Definition at line 12 of file lexical\+\_\+resource.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_ae39531404208c5fdb20f431d7949568f}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
@@ -65,7 +92,266 @@ Destructor.
 
 Release Global\+Information, Lexicon, Speaker instances. 
 
-Definition at line 24 of file lexical\+\_\+resource.\+py.
+Definition at line 27 of file lexical\+\_\+resource.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a64ea1ed8f75c1aee5a2ff07786d81851}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!add\+\_\+lexicon@{add\+\_\+lexicon}}
+\index{add\+\_\+lexicon@{add\+\_\+lexicon}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{add\+\_\+lexicon}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+add\+\_\+lexicon (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lexicon}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a64ea1ed8f75c1aee5a2ff07786d81851}
+
+
+Add a lexicon to the lexical resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lexicon} & A Lexicon instance to add to the Lexical Resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lexical Resource instance. 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e896e7607f9c71e7db166a652137f87}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+author@{get\+\_\+author}}
+\index{get\+\_\+author@{get\+\_\+author}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+author}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+author (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e896e7607f9c71e7db166a652137f87}
+
+
+Get author. 
+
+Attribute 'author' is owned by Global\+Information. \begin{DoxyReturn}{Returns}
+Global\+Information attribute 'author'. 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_ab71215eeb4d9ae9a4d929c899c26a2eb}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+bibliographic\+Citation@{get\+\_\+bibliographic\+Citation}}
+\index{get\+\_\+bibliographic\+Citation@{get\+\_\+bibliographic\+Citation}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+bibliographic\+Citation}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+bibliographic\+Citation (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_ab71215eeb4d9ae9a4d929c899c26a2eb}
+
+
+Get bibliographic citation. 
+
+Attribute 'bibliographic\+Citation' is owned by Global\+Information. \begin{DoxyReturn}{Returns}
+Global\+Information attribute 'bibliographic\+Citation'. 
+\end{DoxyReturn}
+
+
+Definition at line 137 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e3bae782878759cdcac67cf6bccd3c8}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+creation\+Date@{get\+\_\+creation\+Date}}
+\index{get\+\_\+creation\+Date@{get\+\_\+creation\+Date}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+creation\+Date}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+creation\+Date (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2e3bae782878759cdcac67cf6bccd3c8}
+
+
+Get creation date. 
+
+Attribute 'creation\+Date' is owned by Global\+Information. \begin{DoxyReturn}{Returns}
+Global\+Information attribute 'creationd\+Date'. 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_aa86a440b33cbee8982a3130a9de21319}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+description@{get\+\_\+description}}
+\index{get\+\_\+description@{get\+\_\+description}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+description}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_aa86a440b33cbee8982a3130a9de21319}
+
+
+Get description. 
+
+Attribute 'description' is owned by Global\+Information. \begin{DoxyReturn}{Returns}
+Global\+Information attribute 'description'. 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a205676f0701ea4ad6f56e055132d98a2}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+last\+Update@{get\+\_\+last\+Update}}
+\index{get\+\_\+last\+Update@{get\+\_\+last\+Update}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+last\+Update}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+last\+Update (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a205676f0701ea4ad6f56e055132d98a2}
+
+
+Get last update. 
+
+Attribute 'last\+Update' is owned by Global\+Information. \begin{DoxyReturn}{Returns}
+Global\+Information attribute 'last\+Update'. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a83880e971a7137cd9b0599bd056702a1}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+lexicon@{get\+\_\+lexicon}}
+\index{get\+\_\+lexicon@{get\+\_\+lexicon}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+lexicon}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+lexicon (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{id}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a83880e971a7137cd9b0599bd056702a1}
+\begin{DoxyVerb}Retrieve a lexicon from its identifier.
+@param id The identifier of the lexicon to retrieve.
+@result A Lexicon instance, or None if not found.
+\end{DoxyVerb}
+ 
+
+Definition at line 62 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a6294a827ab54971b60c5843cb69d379c}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!get\+\_\+lexicons@{get\+\_\+lexicons}}
+\index{get\+\_\+lexicons@{get\+\_\+lexicons}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{get\+\_\+lexicons}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+get\+\_\+lexicons (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a6294a827ab54971b60c5843cb69d379c}
+
+
+Get all lexicons maintained by the lexical resource. 
+
+\begin{DoxyReturn}{Returns}
+A Python list of lexicons. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a7b823f2fc2470472980e061420799c3f}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!remove\+\_\+lexicon@{remove\+\_\+lexicon}}
+\index{remove\+\_\+lexicon@{remove\+\_\+lexicon}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{remove\+\_\+lexicon}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+remove\+\_\+lexicon (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lexicon}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a7b823f2fc2470472980e061420799c3f}
+
+
+Remove a lexicon from the lexical resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lexicon} & The Lexicon instance to remove from the Lexical Resource. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lexical Resource instance. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_af7c40fb3cc957000b20aa39d9c5e6693}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!set\+\_\+author@{set\+\_\+author}}
+\index{set\+\_\+author@{set\+\_\+author}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{set\+\_\+author}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+set\+\_\+author (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{author}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_af7c40fb3cc957000b20aa39d9c5e6693}
+
+
+Set author. 
+
+Attribute 'author' is owned by Global\+Information. 
+\begin{DoxyParams}{Parameters}
+{\em author} & The author's name to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a32872ca39f2aeb0d87e59bd89079033d}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!set\+\_\+creation\+Date@{set\+\_\+creation\+Date}}
+\index{set\+\_\+creation\+Date@{set\+\_\+creation\+Date}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{set\+\_\+creation\+Date}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+set\+\_\+creation\+Date (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{date}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a32872ca39f2aeb0d87e59bd89079033d}
+
+
+Set creation date. 
+
+Attribute 'creation\+Date' is owned by Global\+Information. 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to set, in format Y\+Y\+Y\+Y-\/\+M\+M-\/\+D\+D. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a416f746c8212930d4d98059dedc7d4c9}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!set\+\_\+description@{set\+\_\+description}}
+\index{set\+\_\+description@{set\+\_\+description}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{set\+\_\+description}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+set\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{description}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a416f746c8212930d4d98059dedc7d4c9}
+
+
+Set description. 
+
+Attribute 'description' is owned by Global\+Information. 
+\begin{DoxyParams}{Parameters}
+{\em description} & The description to set. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file lexical\+\_\+resource.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a976816edb5e2825c212372fbf76d8338}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!set\+\_\+last\+Update@{set\+\_\+last\+Update}}
+\index{set\+\_\+last\+Update@{set\+\_\+last\+Update}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
+\subsubsection[{set\+\_\+last\+Update}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+set\+\_\+last\+Update (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{date}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a976816edb5e2825c212372fbf76d8338}
+
+
+Set last update. 
+
+Attribute 'last\+Update' is owned by Global\+Information. 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to set, in format Y\+Y\+Y\+Y-\/\+M\+M-\/\+D\+D. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file lexical\+\_\+resource.\+py.
 
 
 
@@ -75,7 +361,7 @@ Definition at line 24 of file lexical\+\_\+resource.\+py.
 \subsubsection[{dtd\+Version}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexical\+\_\+resource.\+Lexical\+Resource.\+dtd\+Version}}\label{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a2b48b5abc2a03ba17749f2e361f948fe}
 
 
-Definition at line 13 of file lexical\+\_\+resource.\+py.
+Definition at line 16 of file lexical\+\_\+resource.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a0d5cc63c48e3c5aa2bea6ad21c288e4f}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!global\+\_\+information@{global\+\_\+information}}
 \index{global\+\_\+information@{global\+\_\+information}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
@@ -86,7 +372,7 @@ Global\+Information instance is owned by \hyperlink{classlmf_1_1src_1_1core_1_1l
 
 
 
-Definition at line 16 of file lexical\+\_\+resource.\+py.
+Definition at line 19 of file lexical\+\_\+resource.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_af4146645965f04411b37e8e52e7a04e0}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!lexicon@{lexicon}}
 \index{lexicon@{lexicon}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
@@ -97,7 +383,7 @@ Lexicon instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1lexical__re
 
 
 
-Definition at line 19 of file lexical\+\_\+resource.\+py.
+Definition at line 22 of file lexical\+\_\+resource.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_a378c5ca2854f818361547eee196d3497}{\index{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}!speaker@{speaker}}
 \index{speaker@{speaker}!lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource@{lmf\+::src\+::core\+::lexical\+\_\+resource\+::\+Lexical\+Resource}}
@@ -108,7 +394,7 @@ Speaker instances are owned by \hyperlink{classlmf_1_1src_1_1core_1_1lexical__re
 
 
 
-Definition at line 22 of file lexical\+\_\+resource.\+py.
+Definition at line 25 of file lexical\+\_\+resource.\+py.
 
 
 

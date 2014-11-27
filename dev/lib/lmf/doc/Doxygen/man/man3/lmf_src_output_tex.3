@@ -1,4 +1,4 @@
-.TH "lmf.src.output.tex" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.output.tex" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -38,7 +38,7 @@ A Python string containing read information\&.
 
 .PP
 Definition at line 7 of file tex\&.py\&.
-.SS "def lmf\&.src\&.output\&.tex\&.tex_write (object, filename, preamble = \fCNone\fP, lmf2tex = \fClmf_tex\fP, order = \fCtex_order\fP)"
+.SS "def lmf\&.src\&.output\&.tex\&.tex_write (object, filename, preamble = \fCNone\fP, lmf2tex = \fClmf_to_tex\fP)"
 
 .PP
 Write a LaTeX file\&. 
@@ -51,9 +51,7 @@ Write a LaTeX file\&.
 .br
 \fIpreamble\fP The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug\&.tex'\&. Deafult value is None\&. 
 .br
-\fIlmf2tex\fP A Python dictionary describing the mapping between LMF representation and LaTeX commands\&. Default value is 'lmf_tex' dictionary defined in '\fBsrc/config/tex\&.py\fP'\&. Please refer to it as an example\&. 
-.br
-\fIorder\fP A Python list defining the order in which LMF information must be written, for instance ['Lemma\&.lexeme', 'LexicalEntry\&.partOfSpeech']\&. Default value is 'tex_order' list defined in '\fBsrc/config/tex\&.py\fP'\&. 
+\fIlmf2tex\fP A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order\&. Default value is 'lmf_to_tex' function defined in '\fBsrc/config/tex\&.py\fP'\&. Please refer to it as an example\&. 
 .RE
 .PP
 

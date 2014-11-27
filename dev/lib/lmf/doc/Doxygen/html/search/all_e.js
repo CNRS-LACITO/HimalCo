@@ -5,9 +5,14 @@ var searchData=
   ['paradigm_2epy',['paradigm.py',['../paradigm_8py.html',1,'']]],
   ['paradigmlabel',['paradigmLabel',['../classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm.html#a5892a515d2311d4c03b180603a0d2929',1,'lmf::src::morphosyntax::paradigm::Paradigm']]],
   ['paradigmlabel_5frange',['paradigmLabel_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a9915518fc99ee54c5ac61a23dc12aefe',1,'lmf::src::common::range']]],
+  ['parse_5flist',['parse_list',['../namespacelmf_1_1src_1_1output_1_1mdf.html#aa2e107a3709bad717fa714ac0d27a1c1',1,'lmf::src::output::mdf']]],
   ['parse_5fxml',['parse_xml',['../namespacelmf_1_1src_1_1utils_1_1xml__format.html#a7545cf89e2abcbc425a998ad8b1dea94',1,'lmf::src::utils::xml_format']]],
   ['partofspeech',['partOfSpeech',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#ad59e408fda5122725f6f361e08739916',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
   ['partofspeech_5frange',['partOfSpeech_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a06c6dcbacac56dba9aaf04fa02b528e1',1,'lmf::src::common::range']]],
+  ['pd_5fanymacy',['pd_anymacy',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a011f241f41e3620deefe53cbb42286b9',1,'lmf::src::config::mdf']]],
+  ['pd_5fclusivity',['pd_clusivity',['../namespacelmf_1_1src_1_1config_1_1mdf.html#ac57ebe92cdf841d8d1bfe1e1b94b96bb',1,'lmf::src::config::mdf']]],
+  ['pd_5fgrammaticalnumber',['pd_grammaticalNumber',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a64be26974728c369cd72ef80bd297154',1,'lmf::src::config::mdf']]],
+  ['pd_5fperson',['pd_person',['../namespacelmf_1_1src_1_1config_1_1mdf.html#ab58fb9b58bc32ac36efe9b26e4ea3ca2',1,'lmf::src::config::mdf']]],
   ['pdl_5fparadigmlabel',['pdl_paradigmLabel',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a8e61adc475ca415a33c85ef16c96d03d',1,'lmf::src::config::mdf']]],
   ['person',['person',['../classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form.html#a982fc33af45a08aa5a039dc4701c3689',1,'lmf::src::morphology::word_form::WordForm']]],
   ['person_5frange',['person_range',['../namespacelmf_1_1src_1_1common_1_1range.html#ad711c6c7c0e62384f61b106ec7bf2af0',1,'lmf::src::common::range']]],
@@ -17,5 +22,6 @@ var searchData=
   ['position',['position',['../classlmf_1_1src_1_1morphology_1_1component_1_1_component.html#ad4f8453c7d8bd58fe8d364b363067b2a',1,'lmf::src::morphology::component::Component']]],
   ['prettify',['prettify',['../namespacelmf_1_1src_1_1utils_1_1xml__format.html#a415a41453e6e7c9c5f28da52b6876f10',1,'lmf::src::utils::xml_format']]],
   ['projectname',['projectName',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#ac22ab44249ba844254fcdc84e7f330fc',1,'lmf::src::core::global_information::GlobalInformation']]],
-  ['ps_5fpartofspeech',['ps_partOfSpeech',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a1e76a452fc77f05851e4369134f5980b',1,'lmf::src::config::mdf']]]
+  ['ps_5fpartofspeech',['ps_partOfSpeech',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a1e76a452fc77f05851e4369134f5980b',1,'lmf::src::config::mdf']]],
+  ['ps_5frange',['ps_range',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a59bb4fce205d8159bc72c946e3855c4a',1,'lmf::src::config::mdf']]]
 ];

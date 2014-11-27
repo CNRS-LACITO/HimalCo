@@ -1,4 +1,4 @@
-.TH "lmf.src.morphology.lemma.Lemma" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.morphology.lemma.Lemma" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -30,6 +30,94 @@ Inherits Form\&.
 .RI "def \fBget_lexeme\fP"
 .br
 .RI "\fIGet lexeme\&. \fP"
+.ti -1c
+.RI "def \fBcreate_form_representation\fP"
+.br
+.RI "\fICreate a form representation\&. \fP"
+.ti -1c
+.RI "def \fBadd_form_representation\fP"
+.br
+.RI "\fIAdd a form representation to the lemma\&. \fP"
+.ti -1c
+.RI "def \fBfind_form_representations\fP"
+.br
+.RI "\fIFind variant forms\&. \fP"
+.ti -1c
+.RI "def \fBget_form_representations\fP"
+.br
+.RI "\fIGet all form representations maintained by the lemma\&. \fP"
+.ti -1c
+.RI "def \fBget_form_representation\fP"
+.br
+.RI "\fIGet a given form representation maintained by the lemma\&. \fP"
+.ti -1c
+.RI "def \fBset_variant_form\fP"
+.br
+.RI "\fISet variant form and type\&. \fP"
+.ti -1c
+.RI "def \fBset_variant_comment\fP"
+.br
+.RI "\fISet variant comment and language\&. \fP"
+.ti -1c
+.RI "def \fBset_tone\fP"
+.br
+.RI "\fISet tone\&. \fP"
+.ti -1c
+.RI "def \fBget_tones\fP"
+.br
+.RI "\fIGet all tones\&. \fP"
+.ti -1c
+.RI "def \fBset_geographical_variant\fP"
+.br
+.RI "\fISet geographical variant\&. \fP"
+.ti -1c
+.RI "def \fBset_phonetic_form\fP"
+.br
+.RI "\fISet phonetic form\&. \fP"
+.ti -1c
+.RI "def \fBget_phonetic_forms\fP"
+.br
+.RI "\fIGet all phonetic forms\&. \fP"
+.ti -1c
+.RI "def \fBset_contextual_variation\fP"
+.br
+.RI "\fISet contextual variation\&. \fP"
+.ti -1c
+.RI "def \fBget_contextual_variations\fP"
+.br
+.RI "\fIGet all contextual variations\&. \fP"
+.ti -1c
+.RI "def \fBset_spelling_variant\fP"
+.br
+.RI "\fISet spelling variant\&. \fP"
+.ti -1c
+.RI "def \fBget_spelling_variants\fP"
+.br
+.RI "\fIGet all spelling variants\&. \fP"
+.ti -1c
+.RI "def \fBset_citation_form\fP"
+.br
+.RI "\fISet citation form\&. \fP"
+.ti -1c
+.RI "def \fBget_citation_forms\fP"
+.br
+.RI "\fIGet all citation forms\&. \fP"
+.ti -1c
+.RI "def \fBset_dialect\fP"
+.br
+.RI "\fISet dialect\&. \fP"
+.ti -1c
+.RI "def \fBset_transliteration\fP"
+.br
+.RI "\fISet transliteration\&. \fP"
+.ti -1c
+.RI "def \fBget_transliterations\fP"
+.br
+.RI "\fIGet all transliterations\&. \fP"
+.ti -1c
+.RI "def \fBset_script_name\fP"
+.br
+.RI "\fISet script name\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -45,7 +133,7 @@ Inherits Form\&.
 .PP 
 'Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry\&. The lemma is usually equivalent to one of the inflected forms, the root, stem or compound phrase\&.' (LMF)\&. 
 .PP
-Definition at line 8 of file lemma\&.py\&.
+Definition at line 9 of file lemma\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.__init__ (self)"
@@ -60,15 +148,121 @@ A \fBLemma\fP instance\&.
 .PP
 
 .PP
-Definition at line 11 of file lemma\&.py\&.
+Definition at line 12 of file lemma\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.__del__ (self)"
 
 .PP
 Destructor\&. 
 .PP
-Definition at line 21 of file lemma\&.py\&.
+Definition at line 22 of file lemma\&.py\&.
 .SH "Member Function Documentation"
 .PP 
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.add_form_representation (self, form_representation)"
+
+.PP
+Add a form representation to the lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIform_representation\fP The FormRepresentation instance to add to the lemma\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.create_form_representation (self)"
+
+.PP
+Create a form representation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+FormRepresentation instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.find_form_representations (self, type)"
+
+.PP
+Find variant forms\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype\fP The type to consider to retrieve the variant form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found FormRepresentation attributes 'variantForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 55 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_citation_forms (self)"
+
+.PP
+Get all citation forms\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'citationForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 281 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_contextual_variations (self)"
+
+.PP
+Get all contextual variations\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'contextualVariation'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 221 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_form_representation (self, index)"
+
+.PP
+Get a given form representation maintained by the lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindex\fP The index of the wanted form representation\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The wanted FormRepresentation instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 73 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_form_representations (self)"
+
+.PP
+Get all form representations maintained by the lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of form representations\&. 
+.RE
+.PP
+
+.PP
+Definition at line 67 of file lemma\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_lexeme (self)"
 
 .PP
@@ -81,7 +275,131 @@ Get lexeme\&.
 .PP
 
 .PP
-Definition at line 34 of file lemma\&.py\&.
+Definition at line 35 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_phonetic_forms (self)"
+
+.PP
+Get all phonetic forms\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'phoneticForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 191 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_spelling_variants (self)"
+
+.PP
+Get all spelling variants\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'spellingVariant'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 251 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_tones (self)"
+
+.PP
+Get all tones\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'tone'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 142 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.get_transliterations (self)"
+
+.PP
+Get all transliterations\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'transliteration'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 330 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_citation_form (self, citation_form)"
+
+.PP
+Set citation form\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcitation_form\fP The citation form to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 262 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_contextual_variation (self, contextual_variation)"
+
+.PP
+Set contextual variation\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontextual_variation\fP The contextual variation to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 202 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_dialect (self, dialect)"
+
+.PP
+Set dialect\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdialect\fP The dialect to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 292 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_geographical_variant (self, geographical_variant)"
+
+.PP
+Set geographical variant\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgeographical_variant\fP The geographical variant to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 153 of file lemma\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_lexeme (self, lexeme)"
 
 .PP
@@ -99,17 +417,147 @@ Set lexeme\&.
 .PP
 
 .PP
-Definition at line 26 of file lemma\&.py\&.
+Definition at line 27 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_phonetic_form (self, phonetic_form)"
+
+.PP
+Set phonetic form\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIphonetic_form\fP The phonetic form to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 172 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_script_name (self, script_name)"
+
+.PP
+Set script name\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript_name\fP The script name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 341 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_spelling_variant (self, spelling_variant)"
+
+.PP
+Set spelling variant\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspelling_variant\fP The spelling variant to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 232 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_tone (self, tone)"
+
+.PP
+Set tone\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItone\fP The tone to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 123 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_transliteration (self, transliteration)"
+
+.PP
+Set transliteration\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransliteration\fP The transliteration to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 311 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_variant_comment (self, comment, language = \fCNone\fP)"
+
+.PP
+Set variant comment and language\&. These attributes are owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcomment\fP Variant comment\&. 
+.br
+\fIlanguage\fP Language of comment\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file lemma\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.lemma\&.Lemma\&.set_variant_form (self, variant_form, type = \fC'unspecified'\fP)"
+
+.PP
+Set variant form and type\&. These attributes are owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariant_form\fP Variant form\&. 
+.br
+\fItype\fP Type of variant, in range 'type_variant_range' defined in '\fBcommon/range\&.py\fP'\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLemma\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file lemma\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.morphology\&.lemma\&.Lemma\&.hyphenation"
 
 .PP
-Definition at line 18 of file lemma\&.py\&.
+Definition at line 19 of file lemma\&.py\&.
 .SS "lmf\&.src\&.morphology\&.lemma\&.Lemma\&.lexeme"
 
 .PP
-Definition at line 19 of file lemma\&.py\&.
+Definition at line 20 of file lemma\&.py\&.
 
 .SH "Author"
 .PP 

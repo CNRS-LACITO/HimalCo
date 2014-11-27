@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="14" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" prot="public" static="no" mutable="no">
         <type></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="15" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" prot="public" static="no" mutable="no">
         <type></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="18" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -56,7 +56,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="9" bodyend="19"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="11" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -69,18 +69,109 @@
 <para>Release TextRepresentation instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="20" bodyend="27"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a8355ca8b0c55bb5838c0a3638850cdc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.set_translation</definition>
+        <argsstring></argsstring>
+        <name>set_translation</name>
+        <briefdescription>
+<para>Set translation and language. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The translation to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Language used for the translation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="30" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ade1be4a6f62723df9ef3dae07097f616" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.get_translation</definition>
+        <argsstring></argsstring>
+        <name>get_translation</name>
+        <briefdescription>
+<para>Get translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this argument is given, get translation only if written in this language. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The filtered <ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> attribute &apos;translation&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="43" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a702a454d6017f332b18a589f25809106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.set_language</definition>
+        <argsstring></argsstring>
+        <name>set_language</name>
+        <briefdescription>
+<para>Set language used for translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Language used for the translation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="51" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="51" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a5766b0bb65eee515a95b7eb6987cf570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.equivalent.Equivalent.get_language</definition>
+        <argsstring></argsstring>
+        <name>get_language</name>
+        <briefdescription>
+<para>Get language used for translation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kindref="compound">Equivalent</ref> attribute &apos;language&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="61" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="61" bodyend="66"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Equivalent is a class representing the translation equivalent of the word form managed by the Lemma class.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="6" bodyend="27"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/equivalent.py" bodystart="8" bodyend="66"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a5766b0bb65eee515a95b7eb6987cf570" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>get_language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ade1be4a6f62723df9ef3dae07097f616" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>get_translation</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a702a454d6017f332b18a589f25809106" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>set_language</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a8355ca8b0c55bb5838c0a3638850cdc8" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>set_translation</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>text_representation</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a77291abfc219bae6b51d8994d3c844a2" prot="public" virt="non-virtual"><scope>lmf::src::mrd::equivalent::Equivalent</scope><name>translation</name></member>
     </listofallmembers>

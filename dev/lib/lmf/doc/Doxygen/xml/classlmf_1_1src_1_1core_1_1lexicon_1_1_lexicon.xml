@@ -14,26 +14,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="16" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a33c93912a6bedb0eb095cf85245d6051" prot="public" static="no" mutable="no">
         <type></type>
         <definition>lmf.src.core.lexicon.Lexicon::languageScript</definition>
         <argsstring></argsstring>
         <name>languageScript</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8d47ac22571af27a1e989c2c7b14e80b" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>lmf.src.core.lexicon.Lexicon::id</definition>
-        <argsstring></argsstring>
-        <name>id</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -107,6 +94,19 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="25" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8d47ac22571af27a1e989c2c7b14e80b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.lexicon.Lexicon::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="40" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a82ea3cefcbda289ccdd5d9f9e4dcb501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -136,6 +136,248 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="27" bodyend="34"/>
       </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0872c7337c620b3b634cbe90f86a0166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_id</definition>
+        <argsstring></argsstring>
+        <name>set_id</name>
+        <briefdescription>
+<para>Set lexicon identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The identifier to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a9594fe365aa2f688e72865a09c254132" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_id</definition>
+        <argsstring></argsstring>
+        <name>get_id</name>
+        <briefdescription>
+<para>Get identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;id&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="43" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a886cb3031f11cd63a6cf27103a963ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_entrySource</definition>
+        <argsstring></argsstring>
+        <name>set_entrySource</name>
+        <briefdescription>
+<para>Set lexicon entry source. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entry_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The entry source to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="49" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aae478dac54b901f7ee7726090488c27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_entrySource</definition>
+        <argsstring></argsstring>
+        <name>get_entrySource</name>
+        <briefdescription>
+<para>Get entry source. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;entrySource&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="57" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a5d7bcec0eb2b092781b4cc5a457fdb44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_language</definition>
+        <argsstring></argsstring>
+        <name>set_language</name>
+        <briefdescription>
+<para>Set lexicon language. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The language to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="63" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="63" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aaf09bad461dfbece7e9a969e3a2e6930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_language</definition>
+        <argsstring></argsstring>
+        <name>get_language</name>
+        <briefdescription>
+<para>Get language. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;language&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="71" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="71" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ad23ed7152a59fe7a661e01e04a24c9ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_languageScript</definition>
+        <argsstring></argsstring>
+        <name>set_languageScript</name>
+        <briefdescription>
+<para>Set lexicon language script. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language_script</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The language script to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="77" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="77" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a92f3732b1a50f779310b88ac37dfdb13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_languageScript</definition>
+        <argsstring></argsstring>
+        <name>get_languageScript</name>
+        <briefdescription>
+<para>Get language script. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;languageScript&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="85" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="85" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a917f604c598a5bc7c286b5044b2ce1ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_label</definition>
+        <argsstring></argsstring>
+        <name>set_label</name>
+        <briefdescription>
+<para>Set lexicon label. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The label to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="91" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aa91f2f54a4325e43bf78158e771ef77b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_label</definition>
+        <argsstring></argsstring>
+        <name>get_label</name>
+        <briefdescription>
+<para>Get label. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;label&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="99" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8720140f0bca0724676930be5adcb65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_lexiconType</definition>
+        <argsstring></argsstring>
+        <name>set_lexiconType</name>
+        <briefdescription>
+<para>Set lexicon type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexicon_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lexicon type to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="105" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a86af37677fcdccbe00c1dc1ba19e0dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_lexiconType</definition>
+        <argsstring></argsstring>
+        <name>get_lexiconType</name>
+        <briefdescription>
+<para>Get lexicon type. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kindref="compound">Lexicon</ref> attribute &apos;lexiconType&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="113" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1af8b24fc50070179d1abf29f03559ddcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.set_vowelHarmony</definition>
+        <argsstring></argsstring>
+        <name>set_vowelHarmony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="119" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ab9647a29884f0d53a93842d4627cf64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexicon.Lexicon.get_vowelHarmony</definition>
+        <argsstring></argsstring>
+        <name>get_vowelHarmony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="122" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="122" bodyend="124"/>
+      </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a148e94a7d0a744b510ee81e53c51e0b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
         <definition>def lmf.src.core.lexicon.Lexicon.get_lexical_entries</definition>
@@ -148,7 +390,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="35" bodyend="41"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="125" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="125" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aaa470820fbda4be04d6fe9139e761773" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -170,7 +412,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="42" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="42" bodyend="49"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="132" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="132" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a36f348d30a1193d216ac7dacd5f085be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -192,7 +434,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="50" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="50" bodyend="57"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="140" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="140" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0e5b3626dcbdbf4ccfda39be46b9e09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -206,7 +448,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="58" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="58" bodyend="63"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="148" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="148" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a934a9edcae2b33eb5e7b9ce61cd0234a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -235,7 +477,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="64" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="64" bodyend="81"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="154" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="154" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8bb0aef3699fd6cbe10a06e7f2e07975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -257,7 +499,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="82" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="82" bodyend="92"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="172" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="172" bodyend="182"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a6dd757b26a4579e8ca167ba2fbd55150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -271,7 +513,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="93" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="93" bodyend="112"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="183" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="183" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ad47f7c9a54bea805ede556c488ab2a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -285,14 +527,14 @@
 </verbatim> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="113" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="113" bodyend="117"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="219" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="219" bodyend="223"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Lexicon is a class containing all the lexical entries of a given language within the entire resource.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="8" bodyend="117"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexicon.py" bodystart="8" bodyend="223"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a50ac4bdb09d0854845ebbb0817fd66b3" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a82ea3cefcbda289ccdd5d9f9e4dcb501" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>__init__</name></member>
@@ -302,7 +544,14 @@
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0e5b3626dcbdbf4ccfda39be46b9e09f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>count_lexical_entries</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a2c62e9663fe3771e684fb4ef94fe1d52" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>entrySource</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8bb0aef3699fd6cbe10a06e7f2e07975" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>find_lexical_entries</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aae478dac54b901f7ee7726090488c27d" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_entrySource</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a9594fe365aa2f688e72865a09c254132" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_id</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aa91f2f54a4325e43bf78158e771ef77b" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_label</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aaf09bad461dfbece7e9a969e3a2e6930" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a92f3732b1a50f779310b88ac37dfdb13" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_languageScript</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a148e94a7d0a744b510ee81e53c51e0b0" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_lexical_entries</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a86af37677fcdccbe00c1dc1ba19e0dbb" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_lexiconType</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ab9647a29884f0d53a93842d4627cf64d" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>get_vowelHarmony</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8d47ac22571af27a1e989c2c7b14e80b" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>id</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a728727809066956b10125e62a954c9c5" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>label</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a17a5f90d6242843af84f145aea4dfe76" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>language</name></member>
@@ -310,6 +559,13 @@
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a548b2adbf028d9058dd4676cc00d2ee1" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>lexical_entry</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1af434e15172d6aa59954db2a72c9f15f0" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>lexiconType</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a36f348d30a1193d216ac7dacd5f085be" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>remove_lexical_entry</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a886cb3031f11cd63a6cf27103a963ae1" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_entrySource</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0872c7337c620b3b634cbe90f86a0166" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_id</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a917f604c598a5bc7c286b5044b2ce1ff" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_label</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a5d7bcec0eb2b092781b4cc5a457fdb44" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ad23ed7152a59fe7a661e01e04a24c9ce" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_languageScript</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8720140f0bca0724676930be5adcb65d" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_lexiconType</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1af8b24fc50070179d1abf29f03559ddcc" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>set_vowelHarmony</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a934a9edcae2b33eb5e7b9ce61cd0234a" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>sort_lexical_entries</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0c55ecd82285a7d3dc5d5ebcb1445c25" prot="public" virt="non-virtual"><scope>lmf::src::core::lexicon::Lexicon</scope><name>vowelHarmony</name></member>
     </listofallmembers>

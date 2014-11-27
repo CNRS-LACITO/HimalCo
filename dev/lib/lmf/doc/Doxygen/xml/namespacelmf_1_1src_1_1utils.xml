@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="namespacelmf_1_1src_1_1utils" kind="namespace">
     <compoundname>lmf::src::utils</compoundname>
+    <innernamespace refid="namespacelmf_1_1src_1_1utils_1_1attr">lmf::src::utils::attr</innernamespace>
     <innernamespace refid="namespacelmf_1_1src_1_1utils_1_1error__handling">lmf::src::utils::error_handling</innernamespace>
     <innernamespace refid="namespacelmf_1_1src_1_1utils_1_1io">lmf::src::utils::io</innernamespace>
     <innernamespace refid="namespacelmf_1_1src_1_1utils_1_1log">lmf::src::utils::log</innernamespace>

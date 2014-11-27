@@ -37,13 +37,90 @@
 <parametername>order</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A Python list defining the order in which MDf markers must be written, for instance [&quot;lx&quot;, &quot;ps&quot;]. Default value is &apos;mdf_order&apos; list defined in &apos;<ref refid="config_2mdf_8py" kindref="compound">src/config/mdf.py</ref>&apos;. </para></parameterdescription>
+<para>A Python list defining the order in which MDF markers must be written, for instance [&quot;lx&quot;, &quot;ps&quot;]. Default value is &apos;mdf_order&apos; list defined in &apos;<ref refid="config_2mdf_8py" kindref="compound">src/config/mdf.py</ref>&apos;. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" bodystart="7" bodyend="32"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" bodystart="7" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1mdf_1aa2e107a3709bad717fa714ac0d27a1c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.mdf.parse_list</definition>
+        <argsstring></argsstring>
+        <name>parse_list</name>
+        <briefdescription>
+<para>Parse a group of markers and write them into an MDF file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mdf_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file to write in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lmf2mdf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python dictionary describing the mapping between LMF representation and MDF markers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MDF marker. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current processed object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="31" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" bodystart="31" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1mdf_1a2570a776b904556d9ff01bda804d1001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.mdf.write_line</definition>
+        <argsstring></argsstring>
+        <name>write_line</name>
+        <briefdescription>
+<para>Write a line into an MDF file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mdf_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file to write in. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>marker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MDF marker. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The corresponding value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" line="49" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/mdf.py" bodystart="49" bodyend="63"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

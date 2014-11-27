@@ -14,7 +14,8 @@ def \hyperlink{namespacelmf_1_1src_1_1input_1_1mdf_adf21a8b8bd5a33be054269ced938
 \subsubsection[{mdf\+\_\+read}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+input.\+mdf.\+mdf\+\_\+read (
 \begin{DoxyParamCaption}
 \item[{}]{filename, }
-\item[{}]{mdf2lmf = {\ttfamily mdf\+\_\+lmf}}
+\item[{}]{mdf2lmf = {\ttfamily mdf\+\_\+lmf}, }
+\item[{}]{id = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{namespacelmf_1_1src_1_1input_1_1mdf_adf21a8b8bd5a33be054269ced938ba52}
 
@@ -27,11 +28,13 @@ Read an M\+D\+F file.
 \hline
 {\em mdf2lmf} & A Python dictionary describing the mapping between M\+D\+F markers and L\+M\+F representation. Default value is 'mdf\+\_\+lmf' dictionary defined in '\hyperlink{config_2mdf_8py}{src/config/mdf.\+py}'. Please refer to it as an example. \\
 \hline
+{\em id} & A Python string identifying the created lexicon. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A Lexicon instance containing all lexical entries. 
 \end{DoxyReturn}
 
 
-Definition at line 11 of file mdf.\+py.
+Definition at line 12 of file mdf.\+py.
 

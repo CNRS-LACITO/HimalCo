@@ -1,10 +1,26 @@
 var searchData=
 [
+  ['check_5fattr_5frange',['check_attr_range',['../namespacelmf_1_1src_1_1utils_1_1attr.html#aae5498ab6d173de4b16ab91d720c4320',1,'lmf::src::utils::attr']]],
+  ['check_5fattr_5ftype',['check_attr_type',['../namespacelmf_1_1src_1_1utils_1_1attr.html#aa8f0e87d43935a26d71b5f80fc0de8a1',1,'lmf::src::utils::attr']]],
   ['check_5fcross_5freferences',['check_cross_references',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a6dd757b26a4579e8ca167ba2fbd55150',1,'lmf::src::core::lexicon::Lexicon']]],
+  ['check_5fdate_5fformat',['check_date_format',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#a77421fe11e22e249528fb247a7f2c585',1,'lmf::src::core::global_information::GlobalInformation']]],
+  ['compute_5fbibliographiccitation',['compute_bibliographicCitation',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#ac7395a0960ac17fb5a5d79b8dba66191',1,'lmf::src::core::global_information::GlobalInformation']]],
   ['compute_5fheader',['compute_header',['../namespacelmf_1_1src_1_1output_1_1tex.html#ac02be073e031d36d66f61dc7d6fb94df',1,'lmf::src::output::tex']]],
   ['compute_5fname',['compute_name',['../namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a1f88f5cb321107e2e3fc973a0f4bb0c7',1,'lmf::src::input::xml_lmf']]],
   ['convert_5fto_5flatex',['convert_to_latex',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#ad47f7c9a54bea805ede556c488ab2a1d',1,'lmf::src::core::lexicon::Lexicon']]],
   ['count_5flexical_5fentries',['count_lexical_entries',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a0e5b3626dcbdbf4ccfda39be46b9e09f',1,'lmf::src::core::lexicon::Lexicon']]],
+  ['create_5fand_5fadd_5fcontext',['create_and_add_context',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a14ced3b1dd8115d72283d6708d3ce0b5',1,'lmf::src::core::sense::Sense']]],
+  ['create_5fand_5fadd_5fequivalent',['create_and_add_equivalent',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a6004e31b078cad1d029283c4e3fedfc2',1,'lmf::src::core::sense::Sense']]],
   ['create_5fand_5fadd_5frelated_5fform',['create_and_add_related_form',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a46576799af0465084051e3c2957afa3c',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
-  ['create_5frelated_5fform',['create_related_form',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#ac3b6d197ee90f1aec5b61e24613c091f',1,'lmf::src::core::lexical_entry::LexicalEntry']]]
+  ['create_5fand_5fadd_5fsense',['create_and_add_sense',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a6a3c981f673e000f25b0be3df42b53f2',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
+  ['create_5fand_5fadd_5fsubject_5ffield',['create_and_add_subject_field',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a07d199aca70cf878cb2a71af7a96fa4c',1,'lmf.src.core.sense.Sense.create_and_add_subject_field()'],['../classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field.html#aaf00c3306172b2170a4038f0df9f3305',1,'lmf.src.mrd.subject_field.SubjectField.create_and_add_subject_field()']]],
+  ['create_5fdefinition',['create_definition',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a5923d173a0ad52642ccdc50d4611fdc9',1,'lmf::src::core::sense::Sense']]],
+  ['create_5fexample',['create_example',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a8de47b684e09a774bd97be2cd98a2b68',1,'lmf.src.core.lexical_entry.LexicalEntry.create_example()'],['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a61c046aabce91368de9129dd83c2bb20',1,'lmf.src.core.sense.Sense.create_example()']]],
+  ['create_5fform_5frepresentation',['create_form_representation',['../classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#a774f121cbc62e3ad4fad738ba8b68da8',1,'lmf.src.morphology.lemma.Lemma.create_form_representation()'],['../classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form.html#a35cc3cb1ceda558386c81cf88374b96b',1,'lmf.src.morphology.word_form.WordForm.create_form_representation()']]],
+  ['create_5fparadigm',['create_paradigm',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#ac61f3aadccb06f636aad9891b3bba53e',1,'lmf::src::core::sense::Sense']]],
+  ['create_5frelated_5fform',['create_related_form',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#ac3b6d197ee90f1aec5b61e24613c091f',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
+  ['create_5fsense',['create_sense',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a4ac0758b963893625a283a289b4c1549',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
+  ['create_5fstatement',['create_statement',['../classlmf_1_1src_1_1core_1_1definition_1_1_definition.html#a5c0a543d23836e3ee76682135a9898c6',1,'lmf::src::core::definition::Definition']]],
+  ['create_5ftext_5frepresentation',['create_text_representation',['../classlmf_1_1src_1_1mrd_1_1context_1_1_context.html#ac7bd2a0ecf508291587d52cbae380e27',1,'lmf::src::mrd::context::Context']]],
+  ['create_5fword_5fform',['create_word_form',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#afa9239b3df5d96fa1648e634e8ff471c',1,'lmf::src::core::lexical_entry::LexicalEntry']]]
 ];

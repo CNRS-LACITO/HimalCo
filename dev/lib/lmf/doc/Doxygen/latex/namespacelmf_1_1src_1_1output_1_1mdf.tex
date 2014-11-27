@@ -5,7 +5,11 @@
 \begin{DoxyCompactItemize}
 \item 
 def \hyperlink{namespacelmf_1_1src_1_1output_1_1mdf_aebf4d51ef6566e50a26a121471a175a6}{mdf\+\_\+write}
-\begin{DoxyCompactList}\small\item\em Write an M\+D\+F file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Write an M\+D\+F file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelmf_1_1src_1_1output_1_1mdf_aa2e107a3709bad717fa714ac0d27a1c1}{parse\+\_\+list}
+\begin{DoxyCompactList}\small\item\em Parse a group of markers and write them into an M\+D\+F file. \end{DoxyCompactList}\item 
+def \hyperlink{namespacelmf_1_1src_1_1output_1_1mdf_a2570a776b904556d9ff01bda804d1001}{write\+\_\+line}
+\begin{DoxyCompactList}\small\item\em Write a line into an M\+D\+F file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -31,10 +35,65 @@ Write an M\+D\+F file.
 \hline
 {\em lmf2mdf} & A Python dictionary describing the mapping between L\+M\+F representation and M\+D\+F markers. Default value is 'lmf\+\_\+mdf' dictionary defined in '\hyperlink{config_2mdf_8py}{src/config/mdf.\+py}'. Please refer to it as an example. \\
 \hline
-{\em order} & A Python list defining the order in which M\+Df markers must be written, for instance \mbox{[}\char`\"{}lx\char`\"{}, \char`\"{}ps\char`\"{}\mbox{]}. Default value is 'mdf\+\_\+order' list defined in '\hyperlink{config_2mdf_8py}{src/config/mdf.\+py}'. \\
+{\em order} & A Python list defining the order in which M\+D\+F markers must be written, for instance \mbox{[}\char`\"{}lx\char`\"{}, \char`\"{}ps\char`\"{}\mbox{]}. Default value is 'mdf\+\_\+order' list defined in '\hyperlink{config_2mdf_8py}{src/config/mdf.\+py}'. \\
 \hline
 \end{DoxyParams}
 
 
 Definition at line 7 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1output_1_1mdf_aa2e107a3709bad717fa714ac0d27a1c1}{\index{lmf\+::src\+::output\+::mdf@{lmf\+::src\+::output\+::mdf}!parse\+\_\+list@{parse\+\_\+list}}
+\index{parse\+\_\+list@{parse\+\_\+list}!lmf\+::src\+::output\+::mdf@{lmf\+::src\+::output\+::mdf}}
+\subsubsection[{parse\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+output.\+mdf.\+parse\+\_\+list (
+\begin{DoxyParamCaption}
+\item[{}]{mdf\+\_\+file, }
+\item[{}]{lmf2mdf, }
+\item[{}]{marker, }
+\item[{}]{object}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1output_1_1mdf_aa2e107a3709bad717fa714ac0d27a1c1}
+
+
+Parse a group of markers and write them into an M\+D\+F file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mdf\+\_\+file} & The file to write in. \\
+\hline
+{\em lmf2mdf} & A Python dictionary describing the mapping between L\+M\+F representation and M\+D\+F markers. \\
+\hline
+{\em marker} & The M\+D\+F marker. \\
+\hline
+{\em object} & The current processed object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file mdf.\+py.
+
+\hypertarget{namespacelmf_1_1src_1_1output_1_1mdf_a2570a776b904556d9ff01bda804d1001}{\index{lmf\+::src\+::output\+::mdf@{lmf\+::src\+::output\+::mdf}!write\+\_\+line@{write\+\_\+line}}
+\index{write\+\_\+line@{write\+\_\+line}!lmf\+::src\+::output\+::mdf@{lmf\+::src\+::output\+::mdf}}
+\subsubsection[{write\+\_\+line}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+output.\+mdf.\+write\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{}]{mdf\+\_\+file, }
+\item[{}]{marker, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}}\label{namespacelmf_1_1src_1_1output_1_1mdf_a2570a776b904556d9ff01bda804d1001}
+
+
+Write a line into an M\+D\+F file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mdf\+\_\+file} & The file to write in. \\
+\hline
+{\em marker} & The M\+D\+F marker. \\
+\hline
+{\em value} & The corresponding value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 49 of file mdf.\+py.
 

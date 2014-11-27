@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment"># Create all XML sub-elements</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a4dcbf9737531170cd9a76a0e65b6c770">build_sub_elements</a>(object, root)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment"># Write all created XML elements in the output file</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespacelmf_1_1src_1_1utils_1_1xml__format.html#a952d4873645eb68064074e6c8bdd1699">write_result</a>(root, filename)</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="namespacelmf_1_1src_1_1utils_1_1xml__format.html#a952d4873645eb68064074e6c8bdd1699">write_result</a>(root, filename, encoding=<span class="stringliteral">&#39;utf8&#39;</span>)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a4dcbf9737531170cd9a76a0e65b6c770">   17</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a4dcbf9737531170cd9a76a0e65b6c770">build_sub_elements</a>(object, element):</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Create XML sub-elements to an existing XML element by parsing an LMF object instance.</span></div>
@@ -125,19 +125,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    <span class="comment"># If this is the case, create an XML element and restart the same operation recursively on this object</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    sub_element = SubElement(element, attr_value.__class__.__name__)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a4dcbf9737531170cd9a76a0e65b6c770">build_sub_elements</a>(attr_value, sub_element)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">elif</span> attr_name <span class="keywordflow">in</span> [<span class="stringliteral">&quot;id&quot;</span>, <span class="stringliteral">&quot;targets&quot;</span>]:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">elif</span> attr_name <span class="keywordflow">in</span> [<span class="stringliteral">&quot;dtdVersion&quot;</span>, <span class="stringliteral">&quot;id&quot;</span>, <span class="stringliteral">&quot;targets&quot;</span>]:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="comment"># If this is a specical attribute (&quot;id&quot; or &quot;targets&quot;), it must be inserted as an XML element attribute</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    element.attrib.update({attr_name: str(attr_value)})</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    element.attrib.update({attr_name: unicode(attr_value)})</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="comment"># In all other cases, an XML sub-element must be created with the keyword name &quot;feat&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    SubElement(element, <span class="stringliteral">&quot;feat&quot;</span>, att=attr_name, val=str(attr_value))</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    SubElement(element, <span class="stringliteral">&quot;feat&quot;</span>, att=attr_name, val=unicode(attr_value))</div>
 <div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1xml__format_html_a952d4873645eb68064074e6c8bdd1699"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1xml__format.html#a952d4873645eb68064074e6c8bdd1699">lmf.src.utils.xml_format.write_result</a></div><div class="ttdeci">def write_result</div><div class="ttdoc">Write an XML element into a pretty XML output file. </div><div class="ttdef"><b>Definition:</b> <a href="xml__format_8py_source.html#l00020">xml_format.py:20</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_html_a1c01a3d8520fa98119babc869ecf36b5"><div class="ttname"><a href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a1c01a3d8520fa98119babc869ecf36b5">lmf.src.output.xml_lmf.xml_lmf_write</a></div><div class="ttdeci">def xml_lmf_write</div><div class="ttdoc">Write an XML LMF file. </div><div class="ttdef"><b>Definition:</b> <a href="output_2xml__lmf_8py_source.html#l00005">xml_lmf.py:5</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_html_a4dcbf9737531170cd9a76a0e65b6c770"><div class="ttname"><a href="namespacelmf_1_1src_1_1output_1_1xml__lmf.html#a4dcbf9737531170cd9a76a0e65b6c770">lmf.src.output.xml_lmf.build_sub_elements</a></div><div class="ttdeci">def build_sub_elements</div><div class="ttdoc">Create XML sub-elements to an existing XML element by parsing an LMF object instance. </div><div class="ttdef"><b>Definition:</b> <a href="output_2xml__lmf_8py_source.html#l00017">xml_lmf.py:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 3 2014 17:23:02 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

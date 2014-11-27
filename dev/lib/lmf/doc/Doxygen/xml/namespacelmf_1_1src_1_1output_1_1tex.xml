@@ -59,20 +59,13 @@
 <parametername>lmf2tex</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A Python dictionary describing the mapping between LMF representation and LaTeX commands. Default value is &apos;lmf_tex&apos; dictionary defined in &apos;<ref refid="config_2tex_8py" kindref="compound">src/config/tex.py</ref>&apos;. Please refer to it as an example. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>order</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A Python list defining the order in which LMF information must be written, for instance [&quot;Lemma.lexeme&quot;, &quot;LexicalEntry.partOfSpeech&quot;]. Default value is &apos;tex_order&apos; list defined in &apos;<ref refid="config_2tex_8py" kindref="compound">src/config/tex.py</ref>&apos;. </para></parameterdescription>
+<para>A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order. Default value is &apos;lmf_to_tex&apos; function defined in &apos;<ref refid="config_2tex_8py" kindref="compound">src/config/tex.py</ref>&apos;. Please refer to it as an example. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/tex.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/tex.py" bodystart="19" bodyend="48"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/tex.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/tex.py" bodystart="19" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

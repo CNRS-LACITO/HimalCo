@@ -1,4 +1,4 @@
-.TH "lmf.src.core.lexicon.Lexicon" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.lexicon.Lexicon" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -20,6 +20,60 @@ lmf.src.core.lexicon.Lexicon \-
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBset_id\fP"
+.br
+.RI "\fISet lexicon identifier\&. \fP"
+.ti -1c
+.RI "def \fBget_id\fP"
+.br
+.RI "\fIGet identifier\&. \fP"
+.ti -1c
+.RI "def \fBset_entrySource\fP"
+.br
+.RI "\fISet lexicon entry source\&. \fP"
+.ti -1c
+.RI "def \fBget_entrySource\fP"
+.br
+.RI "\fIGet entry source\&. \fP"
+.ti -1c
+.RI "def \fBset_language\fP"
+.br
+.RI "\fISet lexicon language\&. \fP"
+.ti -1c
+.RI "def \fBget_language\fP"
+.br
+.RI "\fIGet language\&. \fP"
+.ti -1c
+.RI "def \fBset_languageScript\fP"
+.br
+.RI "\fISet lexicon language script\&. \fP"
+.ti -1c
+.RI "def \fBget_languageScript\fP"
+.br
+.RI "\fIGet language script\&. \fP"
+.ti -1c
+.RI "def \fBset_label\fP"
+.br
+.RI "\fISet lexicon label\&. \fP"
+.ti -1c
+.RI "def \fBget_label\fP"
+.br
+.RI "\fIGet label\&. \fP"
+.ti -1c
+.RI "def \fBset_lexiconType\fP"
+.br
+.RI "\fISet lexicon type\&. \fP"
+.ti -1c
+.RI "def \fBget_lexiconType\fP"
+.br
+.RI "\fIGet lexicon type\&. \fP"
+.ti -1c
+.RI "def \fBset_vowelHarmony\fP"
+.br
+.ti -1c
+.RI "def \fBget_vowelHarmony\fP"
+.br
 .ti -1c
 .RI "def \fBget_lexical_entries\fP"
 .br
@@ -62,9 +116,6 @@ lmf.src.core.lexicon.Lexicon \-
 .RI "\fBlanguageScript\fP"
 .br
 .ti -1c
-.RI "\fBid\fP"
-.br
-.ti -1c
 .RI "\fBlabel\fP"
 .br
 .ti -1c
@@ -80,6 +131,9 @@ lmf.src.core.lexicon.Lexicon \-
 .RI "\fBlexical_entry\fP"
 .br
 .RI "\fIAll LexicalEntry instances are maintained by \fBLexicon\fP There is one or more LexicalEntry instances per \fBLexicon\fP\&. \fP"
+.ti -1c
+.RI "\fBid\fP"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -88,7 +142,7 @@ lmf.src.core.lexicon.Lexicon \-
 Definition at line 8 of file lexicon\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.__init__ (self)"
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.__init__ (self, id = \fCNone\fP)"
 
 .PP
 Constructor\&. \fBLexicon\fP instances are owned by LexicalResource\&. 
@@ -126,7 +180,7 @@ Add a lexical entry to the lexicon\&.
 .PP
 
 .PP
-Definition at line 42 of file lexicon\&.py\&.
+Definition at line 132 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.check_cross_references (self)"
 
 .PP
@@ -139,7 +193,7 @@ Check all cross-references in the lexicon\&. Fill the private attribute '__lexic
 .PP
 
 .PP
-Definition at line 93 of file lexicon\&.py\&.
+Definition at line 183 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.convert_to_latex (self)"
 
 .PP
@@ -150,7 +204,7 @@ This method converts the lexicon into LaTeX format.
 .PP
  
 .PP
-Definition at line 113 of file lexicon\&.py\&.
+Definition at line 219 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.count_lexical_entries (self)"
 
 .PP
@@ -163,7 +217,7 @@ The number of lexical entries without duplicates maintained by the lexicon\&.
 .PP
 
 .PP
-Definition at line 58 of file lexicon\&.py\&.
+Definition at line 148 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.find_lexical_entries (self, filter)"
 
 .PP
@@ -181,7 +235,72 @@ A Python list of LexicalEntry instances\&.
 .PP
 
 .PP
-Definition at line 82 of file lexicon\&.py\&.
+Definition at line 172 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_entrySource (self)"
+
+.PP
+Get entry source\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'entrySource'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 57 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_id (self)"
+
+.PP
+Get identifier\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'id'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_label (self)"
+
+.PP
+Get label\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'label'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 99 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_language (self)"
+
+.PP
+Get language\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'language'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_languageScript (self)"
+
+.PP
+Get language script\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'languageScript'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 85 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_lexical_entries (self)"
 
 .PP
@@ -194,7 +313,24 @@ A Python set of lexical entries\&.
 .PP
 
 .PP
-Definition at line 35 of file lexicon\&.py\&.
+Definition at line 125 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_lexiconType (self)"
+
+.PP
+Get lexicon type\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP attribute 'lexiconType'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.get_vowelHarmony (self)"
+
+.PP
+Definition at line 122 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.remove_lexical_entry (self, lexical_entry)"
 
 .PP
@@ -212,7 +348,119 @@ Remove a lexical entry from the lexicon\&.
 .PP
 
 .PP
-Definition at line 50 of file lexicon\&.py\&.
+Definition at line 140 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_entrySource (self, entry_source)"
+
+.PP
+Set lexicon entry source\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIentry_source\fP The entry source to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_id (self, id)"
+
+.PP
+Set lexicon identifier\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP The identifier to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_label (self, label)"
+
+.PP
+Set lexicon label\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlabel\fP The label to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_language (self, language)"
+
+.PP
+Set lexicon language\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP The language to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_languageScript (self, language_script)"
+
+.PP
+Set lexicon language script\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage_script\fP The language script to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_lexiconType (self, lexicon_type)"
+
+.PP
+Set lexicon type\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlexicon_type\fP The lexicon type to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicon\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file lexicon\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.set_vowelHarmony (self, vowel_harmony)"
+
+.PP
+Definition at line 119 of file lexicon\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexicon\&.Lexicon\&.sort_lexical_entries (self, items = \fClambda lexical_entry: lexical_entry\&.get_lexeme()\fP, order = \fCNone\fP)"
 
 .PP
@@ -232,7 +480,7 @@ The sorted Python list of lexical entries\&.
 .PP
 
 .PP
-Definition at line 64 of file lexicon\&.py\&.
+Definition at line 154 of file lexicon\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.entrySource"
@@ -242,7 +490,7 @@ Definition at line 21 of file lexicon\&.py\&.
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.id"
 
 .PP
-Definition at line 18 of file lexicon\&.py\&.
+Definition at line 40 of file lexicon\&.py\&.
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.label"
 
 .PP
@@ -250,11 +498,11 @@ Definition at line 19 of file lexicon\&.py\&.
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.language"
 
 .PP
-Definition at line 16 of file lexicon\&.py\&.
+Definition at line 17 of file lexicon\&.py\&.
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.languageScript"
 
 .PP
-Definition at line 17 of file lexicon\&.py\&.
+Definition at line 18 of file lexicon\&.py\&.
 .SS "lmf\&.src\&.core\&.lexicon\&.Lexicon\&.lexical_entry"
 
 .PP

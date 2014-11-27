@@ -27,6 +27,16 @@
     <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a7412afdd525b89387756d41d7a2c28f4" kind="variable"><name>__speaker</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1acc18b0fe7b0db9c6e64e934ee67fc6a9" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a490b0011c22dc5843ba7c6b176f3b72b" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4726cc609fc5d8edd15eca4f83a0712b" kind="function"><name>set_type</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a23bbf04da050eb93c8f0abb8a5eaf4aa" kind="function"><name>get_type</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1ac7bd2a0ecf508291587d52cbae380e27" kind="function"><name>create_text_representation</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a6e1527f4d3685b66da96af85a1db8d4e" kind="function"><name>add_text_representation</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a6dc9ce353b5e7e987615fec2d8a835d7" kind="function"><name>get_text_representations</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a89ae6b79b719e165e5773b2035eb2ded" kind="function"><name>get_last_text_representation</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4969405d9d78799039adce3919656fcf" kind="function"><name>find_written_forms</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a822729925a426c3ea85d6d4206c059c7" kind="function"><name>get_comments</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a5c25980cacb6a7268fc6144ee464ff51" kind="function"><name>set_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1aea5b1870d2e818c89ba00055e7318395" kind="function"><name>set_comment</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a411ba47fe4581d2e3416b44fbd9ab1d9" kind="function"><name>get_speaker</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition" kind="class"><name>lmf::src::core::definition::Definition</name>
@@ -38,6 +48,37 @@
     <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1acc8776ce9e16149eef1968f2bb1edd79" kind="variable"><name>statement</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a28cb2d022b2b4f699db74a6e5a904b81" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a1830dd2170b25276c22d7954cd6f1b22" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a40bb8bcec281527b669dce59a1f5b707" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a8f75f0e51554d35128744fd27e7abf15" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a959137e9ca1596287761ba0da6c35413" kind="function"><name>set_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a68b719a7057c8b99425e7da851ec9ab8" kind="function"><name>get_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a4242b74954f73f87b84866cbf9a17cc4" kind="function"><name>set_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a95fda914d8a1946e02a53d0f4b954c6b" kind="function"><name>get_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a5c0a543d23836e3ee76682135a9898c6" kind="function"><name>create_statement</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1abda7491b111a5fd96089f9f8b2edd892" kind="function"><name>add_statement</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1adab2b262bd4599b330b55a0afc1ea490" kind="function"><name>get_statements</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1ab82b632b8025cbfd8a773dbb5e068002" kind="function"><name>get_first_statement</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1aa8733f052ebd8ee819295cd09588dbae" kind="function"><name>set_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1ac69af5c460f62f3525f328f72a757f44" kind="function"><name>find_notes</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1aa9b1e94875d795552b55ef6745dfa4aa" kind="function"><name>set_usage_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a1fb127330544e562c532ff6cc54a5153" kind="function"><name>find_usage_notes</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1ab0719eea86eb9ebe2c85b5f4d5f03317" kind="function"><name>set_encyclopedic_information</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a18af1b8027e329565084177a1723eec8" kind="function"><name>find_encyclopedic_informations</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a5d622049382265fe2c289c72afeb2467" kind="function"><name>set_restriction</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a9ae73ad0e8acd4e2712ce7c7703a9ca8" kind="function"><name>find_restrictions</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a6213c0179642486b85564672e18597d9" kind="function"><name>set_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1aa3524eaf78f9b8e4ed7b96cb946a5cf6" kind="function"><name>get_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a3ea310dacab2046fcdbbf49e24e6d361" kind="function"><name>set_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1afd3bfcee887b14bad72a5944f15fd6d3" kind="function"><name>get_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a2c6aca78fe00652774fb89c6d2653c1f" kind="function"><name>set_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1aa4978dd71c6d281d390e1be0a3b7fd46" kind="function"><name>get_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1adec12f10d1c132b1f3accb3bcace4116" kind="function"><name>set_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1aded2ab7ad4cf7d437a795d2d861278b4" kind="function"><name>get_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a6e50bf6e6745b8bd9b473144f28c51b6" kind="function"><name>get_term_source_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1acc298f1512cabc232b93600e169d2f89" kind="function"><name>set_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1ac254957109847f1b5551ce2cc30d3998" kind="function"><name>get_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a3105eceee6a4975183d655df3a731bb6" kind="function"><name>set_etymology_source</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1definition_1_1_definition_1a112fe099d33e869c0b97de8956200d05" kind="function"><name>get_etymology_source</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent" kind="class"><name>lmf::src::mrd::equivalent::Equivalent</name>
     <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a72fc245f7193aba7f5c132eee799bcde" kind="variable"><name>language</name></member>
@@ -45,6 +86,10 @@
     <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a6912524a8f1ac4a8203f6fa386d2f5a1" kind="variable"><name>text_representation</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a155c0d440417e4b5edccbfb761da26b8" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ab7030713535aaa3eefe76d833add3247" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a8355ca8b0c55bb5838c0a3638850cdc8" kind="function"><name>set_translation</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1ade1be4a6f62723df9ef3dae07097f616" kind="function"><name>get_translation</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a702a454d6017f332b18a589f25809106" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent_1a5766b0bb65eee515a95b7eb6987cf570" kind="function"><name>get_language</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_error" kind="class"><name>lmf::src::utils::error_handling::Error</name>
     <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_error_1ad949ea867656445f2db40f53c3369209" kind="variable"><name>msg</name></member>
@@ -55,14 +100,14 @@
     <member refid="classlmf_1_1src_1_1utils_1_1error__handling_1_1_error_1af74fa5546dd2777e4d4b23b84b98cf9d" kind="function"><name>handle</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1form_1_1_form" kind="class"><name>lmf::src::core::form::Form</name>
-    <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a601549e93d6bd00ba5d8d3467a12bcdb" kind="variable"><name>variantForm</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1ae8b8836cc3f78314dfb3a416ff95cac8" kind="variable"><name>type</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a81a147d40e70054d06b4ad90fd523a8f" kind="variable"><name>form_representation</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a5d8193e2ae85d0844470137d14504ae1" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a4efc5b5afe396103742f2be36f3ada35" kind="function"><name>__del__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a6b5179aebc5f1a51875d3cc5301c6f84" kind="function"><name>__new__</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation" kind="class"><name>lmf::src::core::form_representation::FormRepresentation</name>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab271a76ed31e46ce4c1e66fad2651a73" kind="variable"><name>variantForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a26785ac6e2bf05ebefb60d1c019db55d" kind="variable"><name>type</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab192387108c3c4e780297d1b409d5eff" kind="variable"><name>transliteration</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a2cfea0271f8abfcffb74afb7641ef4df" kind="variable"><name>tone</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a7d080181b73f2c03d3a2cf65a97be169" kind="variable"><name>geographicalVariant</name></member>
@@ -71,14 +116,41 @@
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aef2857854ecb2ca02c7ede104b617505" kind="variable"><name>spellingVariant</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a70151ff258dea274006e4976818847a3" kind="variable"><name>citationForm</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad19ad7a519048bc71ff0d0df2c888621" kind="variable"><name>dialect</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad42d4a830850a55fd08ba3742abdde57" kind="variable"><name>language</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a728fa20d7dcdbb6714f97b87cbe8ee0f" kind="variable"><name>scriptName</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ac13f0605619b9bdc6b921ae19b39c068" kind="variable"><name>audio</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a94e0845b7cf84cdbef5f1dceae0d7f99" kind="variable"><name>targets</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a6118f5b7524574bd2e552c58b9337165" kind="variable"><name>comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ad42d4a830850a55fd08ba3742abdde57" kind="variable"><name>language</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aa732b17e5a77d60f40b5be7925dba182" kind="variable"><name>__speaker</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ab034318ab1492fac033d745860e18a37" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a577b5258bf8f64ff889f0588cf0c8eda" kind="function"><name>__del__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a348d8eb39ef5bda7789106c9f5fe7755" kind="function"><name>get_speakers</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1af556c7aa6c243038ba8239ef03e2689b" kind="function"><name>set_variantForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ac977eb7028af4f5715a4cb1f4908c627" kind="function"><name>get_variantForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1acb1bd217666635fea4e9af729865d84c" kind="function"><name>set_type</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a9f898af27f89d2673e8c6c70c9b3bba8" kind="function"><name>get_type</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1aa8c266a62f47e9085d0a3f3a4bf01212" kind="function"><name>set_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a79f6d3d638ba7f31731619f296e0be3d" kind="function"><name>get_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a0e946290f55acd1291ecef48b7b0eb3a" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a5e45b057ff34471018b3fef4c89a4dc3" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1abec34e3beb923b2f0026bb1a4dfd4603" kind="function"><name>set_tone</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a58c2fa474ace9d9f98fe09f62fc1e1cc" kind="function"><name>get_tone</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a6ea94ec5271f4d004a97090a1dfca797" kind="function"><name>set_geographicalVariant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a7856919f832d77bac3c4183fa63193b0" kind="function"><name>get_geographicalVariant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a26df452a549ce25256429b0820b42cd5" kind="function"><name>set_phoneticForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1afd063ac9cf7a1c412010c2885be8b451" kind="function"><name>get_phoneticForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a4cd93976760ea4d01d9c448eaf051395" kind="function"><name>set_contextualVariation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1af6e1a07dd4ad7cfb56fc0dd82b38d019" kind="function"><name>get_contextualVariation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a99c2df557be9133fa942834b9a51bee5" kind="function"><name>set_spellingVariant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a7b80312d6adf44b0181b9de5b2105e80" kind="function"><name>get_spellingVariant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a8e9e6290dfeb752fa5b1fc841e27f702" kind="function"><name>set_citationForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a5ec57aefa9a58c1ec0e09afba4eef727" kind="function"><name>get_citationForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a6c06bc352232a127d6de79e414ff2a13" kind="function"><name>set_dialect</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a1dec5a7796e6705fc7632393357f1970" kind="function"><name>get_dialect</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1af7579c20430dae05be250087a8f86e58" kind="function"><name>set_transliteration</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1af4ac72df2feb583dafda9b1c07359162" kind="function"><name>get_transliteration</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1ae3e8092f467c8971142c38888765e6c3" kind="function"><name>set_scriptName</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation_1a19be12afb3fb0678bb3c0aa9a9831d55" kind="function"><name>get_scriptName</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kind="class"><name>lmf::src::core::global_information::GlobalInformation</name>
     <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a13b6750b6876cade278c3cde1f0625a2" kind="variable"><name>languageCode</name></member>
@@ -94,6 +166,17 @@
     <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a02d9de85d8225dc1411986b763df19ab" kind="variable"><name>bibliographicCitation</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a8815a24e93798f1e253ba79ec38cb30f" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a9ef2d1611e39e6d3802651da2b46ef1c" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77421fe11e22e249528fb247a7f2c585" kind="function"><name>check_date_format</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a34f23d2fecf02af3cdea7d9e88e9fd09" kind="function"><name>set_creationDate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a611e859a8104863c3396843c4a58df93" kind="function"><name>get_creationDate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a90d3b3a8bef7e3c4d30f5e1cbd44bdef" kind="function"><name>set_lastUpdate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1afd398454c5b5671dc8c832f2bc04736b" kind="function"><name>get_lastUpdate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a50e23e50d3ad0e6254c94446a829027a" kind="function"><name>set_author</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac689cff94234bacdc6c936cd7bcc2973" kind="function"><name>get_author</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a9e6b98762af2465bf4babfa87bbd5ee8" kind="function"><name>set_description</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1af9c9b2b792546ea670838383492438f5" kind="function"><name>get_description</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac7395a0960ac17fb5a5d79b8dba66191" kind="function"><name>compute_bibliographicCitation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77753be672eef5626bd6c8deaa157a16" kind="function"><name>get_bibliographicCitation</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource" kind="class"><name>lmf::src::resources::human_resource::HumanResource</name>
     <member refid="classlmf_1_1src_1_1resources_1_1human__resource_1_1_human_resource_1a12fcc645b94757742d4ea5c3db0393f0" kind="variable"><name>name</name></member>
@@ -118,6 +201,28 @@
     <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1afd7a268f1743065f5fc3ee53122ea391" kind="function"><name>__del__</name></member>
     <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a6d6277e8bb71a04cb31aebccd288b6df" kind="function"><name>set_lexeme</name></member>
     <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab1bcf9feeb5f59a7c9af07fbc368fb41" kind="function"><name>get_lexeme</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a774f121cbc62e3ad4fad738ba8b68da8" kind="function"><name>create_form_representation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab0acb466271ceb0966afbc1c1dc1cdff" kind="function"><name>add_form_representation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a19275956725afdcfddbbbb491f6783ca" kind="function"><name>find_form_representations</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aaafc76e4a436188c2ac07417b02e530d" kind="function"><name>get_form_representations</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a71c4c7715794ecd41e5176485f6d7f65" kind="function"><name>get_form_representation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a16942d5bd7973fc19eee27a68789dcf5" kind="function"><name>set_variant_form</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a8d090ef91e9c98ef77d429b3d7296022" kind="function"><name>set_variant_comment</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a094ea5bc786ebf4356bbb1e33c418b92" kind="function"><name>set_tone</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a02afd08362639bdbbac98b35c533375f" kind="function"><name>get_tones</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a4df66dfca0f2cdf379fa8782d86ba05f" kind="function"><name>set_geographical_variant</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ae14b90791332a8d5522ac5056ae2842f" kind="function"><name>set_phonetic_form</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1af0a2868094d8121b389138319034f164" kind="function"><name>get_phonetic_forms</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a9f80f34789351b4d3b55c344acb19562" kind="function"><name>set_contextual_variation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a54b9c3f2ae876fdb93b4c4676403c1f0" kind="function"><name>get_contextual_variations</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a01bba6d5da1c9c0d70a3faf762d24f7c" kind="function"><name>set_spelling_variant</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a13fb86a829741554939046f500409327" kind="function"><name>get_spelling_variants</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a349b6a8d0a6a571933cd2bede36f695b" kind="function"><name>set_citation_form</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a0d14b66ae5d6f0fd8a9aba74520b88a0" kind="function"><name>get_citation_forms</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa22e9424fc9f35cea9eb1a0a47b3a420" kind="function"><name>set_dialect</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa7fbf68d0e986a478493cbf450ae8357" kind="function"><name>set_transliteration</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a3e9430de1e0739171a6f655893863708" kind="function"><name>get_transliterations</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aae4244411f218ebc08fc659b1388d7a0" kind="function"><name>set_script_name</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry" kind="class"><name>lmf::src::core::lexical_entry::LexicalEntry</name>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a402073c8f71f2f779725c6aeefa5df49" kind="variable"><name>homonymNumber</name></member>
@@ -141,6 +246,14 @@
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a198ccaea559997368ea7b0f9a198707f" kind="function"><name>get_partOfSpeech</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab991806fefc45e2cc5f3bf88ee3d6604" kind="function"><name>set_status</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a616dd1fa3fbfc0db546832fd9ba5b3e2" kind="function"><name>get_status</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a37728197c726801ebfed551feb0d9fa7" kind="function"><name>set_date</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ae8d874e16530609d02844a04c1cf1ec5" kind="function"><name>get_date</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a7f1def059e7cb83693727e36df501e62" kind="function"><name>set_homonymNumber</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a526cd4c368d55317f6cda8d507865fd6" kind="function"><name>get_homonymNumber</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab918c4abc48ca39893be6d25f564b84a" kind="function"><name>set_bibliography</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1af6682cbe4dee446ab8d4488fa36ae832" kind="function"><name>get_bibliography</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aef758dd6e01b35dc780e0c8b9f7124d2" kind="function"><name>set_independentWord</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aa30f1aec6f435fea3185aa555c44d8b7" kind="function"><name>get_independentWord</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a337ed7fdab2cabc9dce913920424dd95" kind="function"><name>get_id</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a0720cfa82decbc27a30d4830c1e8cbf2" kind="function"><name>set_lexeme</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a351a470c736be8b896354d27f56e1833" kind="function"><name>get_lexeme</name></member>
@@ -149,10 +262,66 @@
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a46576799af0465084051e3c2957afa3c" kind="function"><name>create_and_add_related_form</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac89bb82f0afe4e1566f34379f3a188da" kind="function"><name>find_related_forms</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aee5b118b1015a35a5e8426235d325291" kind="function"><name>get_related_forms</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac741ce07b961fb9d6d0a1033cf1f1790" kind="function"><name>get_speaker</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a68739257278c37191130f225cb93fd4f" kind="function"><name>get_definitions</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a62717ccb205bcbea9a421cbc562068ce" kind="function"><name>get_form_representations</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab5ec3863b9c8623df7f41ad07332b2ec" kind="function"><name>set_variant_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a150a57b434161d86b8962b3ef7f0ff51" kind="function"><name>set_variant_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad816834c160783393a4a60a71431886b" kind="function"><name>set_tone</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a5527aa1541a398941192ef5a5d400e8e" kind="function"><name>get_tones</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a931ea014bba9cddfd2e1e9d4cdb1f40a" kind="function"><name>set_geographical_variant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a475be85222f2a0b4fc6f9e218675fc47" kind="function"><name>set_phonetic_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad341d1cfa5e60593a7bce27a5eec8b98" kind="function"><name>get_phonetic_forms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a2e094703f5eb2e25c5d9c4aabf67ae72" kind="function"><name>set_contextual_variation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aa2a404954cb0bd85ddfeec53db637dd3" kind="function"><name>get_contextual_variations</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a091b34e06640680cc167472c519b5c3a" kind="function"><name>set_spelling_variant</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a72701906e798fbc34c6ef6ea177901e8" kind="function"><name>get_spelling_variants</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a13f7f29967c9ac00d8453578904cc394" kind="function"><name>set_citation_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a14304ddd9123093352bce750b8dce7c8" kind="function"><name>get_citation_forms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aef2e9bae6caaa9cebcb1960869752037" kind="function"><name>set_dialect</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a7aab11889a7b3ec80087cce8e4ed28e0" kind="function"><name>set_transliteration</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a24bb03c658cff21a7b34d30e720f1da5" kind="function"><name>get_transliterations</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a254dd885319a2be995b81f659cacce88" kind="function"><name>set_script_name</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a4ac0758b963893625a283a289b4c1549" kind="function"><name>create_sense</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a4aef3989f5793f9ef330cbca51b77520" kind="function"><name>add_sense</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6a3c981f673e000f25b0be3df42b53f2" kind="function"><name>create_and_add_sense</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a00e6fd296669f34f047b3502bebd6a90" kind="function"><name>get_senses</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a888e6f8306b026b72a6002f9e1fddae9" kind="function"><name>get_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a50334b78f54e0ad7a2bedbc7d5bf821f" kind="function"><name>get_last_sense</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaf135ff72cc9f20358208e733c3a0ffb" kind="function"><name>set_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab83d1cb6142baa7a1914db467f63121f" kind="function"><name>set_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a5efc30f6a6e8bb9b761ece95523719df" kind="function"><name>set_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1afd1942b2ace38b2e6522c9b1c55a17f3" kind="function"><name>find_notes</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1aaf37b80eaa95fb2fc6e8a20e5cf3e023" kind="function"><name>set_usage_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1af08e4e9e77021330f1a093e7e0fe7a36" kind="function"><name>set_encyclopedic_information</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a39a8812156d3d5710691ca427cd7fd6f" kind="function"><name>set_restriction</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a1530ee0141c9459719b0e07b65ccff82" kind="function"><name>set_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a0cc51d09a44392de1065c5a94e1da39d" kind="function"><name>get_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a14705c1acad6100ea1adbbe6b89e0f22" kind="function"><name>set_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a68a87b24b174bccf92e6a400b6208de4" kind="function"><name>get_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a90650c9ec70a484186405f9b40efa618" kind="function"><name>set_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ab2168094e851c2dccb798fc2a0e45ec2" kind="function"><name>get_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac585a9ac515b028d919fd4902bcf5c1b" kind="function"><name>set_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a667de841ccf2e947f15ed1b3fbd3fe77" kind="function"><name>get_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a5588b93f3b5fc77c3ea74fd7fef1cca1" kind="function"><name>get_term_source_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a9e37ea6e11cfdd10b7fe48f332d5dbe9" kind="function"><name>set_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a1756da5cb9ce0bab99cc900d3204be27" kind="function"><name>get_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a82d85b914a1dd8f6ad6738b25c5ea172" kind="function"><name>set_etymology_source</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a94b171c5e86e2fdeabb7bff1bc32de10" kind="function"><name>get_etymology_source</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1afa9239b3df5d96fa1648e634e8ff471c" kind="function"><name>create_word_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a6d961cc5d3d155c2c93d4e991b766f04" kind="function"><name>add_word_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a78f21adcc19aca799e18e7ae89588e83" kind="function"><name>get_word_forms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a5183e8be3b27dd7ff7f8ad2bc100c289" kind="function"><name>set_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a4d29b1f69f6591832869bdfdbed1dc90" kind="function"><name>find_paradigms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1af2b23a5d39e9bddddf4da1a971d6928c" kind="function"><name>set_paradigm_label</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ad991d3a24dea50c4d793b3c947fa9037" kind="function"><name>set_paradigm_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac4b0c5f22daeba6c9cb445e80c8245e4" kind="function"><name>set_morphology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ae87d1a773737190fba2a22330b886472" kind="function"><name>get_paradigms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a18ba5dfe76ff71f23635aff3b2d5560f" kind="function"><name>get_morphologies</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a8de47b684e09a774bd97be2cd98a2b68" kind="function"><name>create_example</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1acfdd422522c23eb7073da59ce09c764d" kind="function"><name>add_example</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a492011efb0c5c4dbe7312d3f4d7f8b5e" kind="function"><name>set_example_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a215b437f217ce3e652380f74059403e1" kind="function"><name>set_semantic_domain</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1afd064ec67db5c093665165b59162f94f" kind="function"><name>get_semantic_domains</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1a8b90d3fd26d1c8f54f36810ca63e156a" kind="function"><name>set_translation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry_1ac741ce07b961fb9d6d0a1033cf1f1790" kind="function"><name>get_speaker</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource" kind="class"><name>lmf::src::core::lexical_resource::LexicalResource</name>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2b48b5abc2a03ba17749f2e361f948fe" kind="variable"><name>dtdVersion</name></member>
@@ -161,18 +330,45 @@
     <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a378c5ca2854f818361547eee196d3497" kind="variable"><name>speaker</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a8f7f77cfb5a432a9968844c33e6123a2" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ae39531404208c5fdb20f431d7949568f" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a6294a827ab54971b60c5843cb69d379c" kind="function"><name>get_lexicons</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a64ea1ed8f75c1aee5a2ff07786d81851" kind="function"><name>add_lexicon</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a7b823f2fc2470472980e061420799c3f" kind="function"><name>remove_lexicon</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a83880e971a7137cd9b0599bd056702a1" kind="function"><name>get_lexicon</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a32872ca39f2aeb0d87e59bd89079033d" kind="function"><name>set_creationDate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e3bae782878759cdcac67cf6bccd3c8" kind="function"><name>get_creationDate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a976816edb5e2825c212372fbf76d8338" kind="function"><name>set_lastUpdate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a205676f0701ea4ad6f56e055132d98a2" kind="function"><name>get_lastUpdate</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af7c40fb3cc957000b20aa39d9c5e6693" kind="function"><name>set_author</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e896e7607f9c71e7db166a652137f87" kind="function"><name>get_author</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a416f746c8212930d4d98059dedc7d4c9" kind="function"><name>set_description</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1aa86a440b33cbee8982a3130a9de21319" kind="function"><name>get_description</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ab71215eeb4d9ae9a4d929c899c26a2eb" kind="function"><name>get_bibliographicCitation</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon" kind="class"><name>lmf::src::core::lexicon::Lexicon</name>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a17a5f90d6242843af84f145aea4dfe76" kind="variable"><name>language</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a33c93912a6bedb0eb095cf85245d6051" kind="variable"><name>languageScript</name></member>
-    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8d47ac22571af27a1e989c2c7b14e80b" kind="variable"><name>id</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a728727809066956b10125e62a954c9c5" kind="variable"><name>label</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1af434e15172d6aa59954db2a72c9f15f0" kind="variable"><name>lexiconType</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a2c62e9663fe3771e684fb4ef94fe1d52" kind="variable"><name>entrySource</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0c55ecd82285a7d3dc5d5ebcb1445c25" kind="variable"><name>vowelHarmony</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a548b2adbf028d9058dd4676cc00d2ee1" kind="variable"><name>lexical_entry</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8d47ac22571af27a1e989c2c7b14e80b" kind="variable"><name>id</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a82ea3cefcbda289ccdd5d9f9e4dcb501" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a50ac4bdb09d0854845ebbb0817fd66b3" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a0872c7337c620b3b634cbe90f86a0166" kind="function"><name>set_id</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a9594fe365aa2f688e72865a09c254132" kind="function"><name>get_id</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a886cb3031f11cd63a6cf27103a963ae1" kind="function"><name>set_entrySource</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aae478dac54b901f7ee7726090488c27d" kind="function"><name>get_entrySource</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a5d7bcec0eb2b092781b4cc5a457fdb44" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aaf09bad461dfbece7e9a969e3a2e6930" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ad23ed7152a59fe7a661e01e04a24c9ce" kind="function"><name>set_languageScript</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a92f3732b1a50f779310b88ac37dfdb13" kind="function"><name>get_languageScript</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a917f604c598a5bc7c286b5044b2ce1ff" kind="function"><name>set_label</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aa91f2f54a4325e43bf78158e771ef77b" kind="function"><name>get_label</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a8720140f0bca0724676930be5adcb65d" kind="function"><name>set_lexiconType</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a86af37677fcdccbe00c1dc1ba19e0dbb" kind="function"><name>get_lexiconType</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1af8b24fc50070179d1abf29f03559ddcc" kind="function"><name>set_vowelHarmony</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1ab9647a29884f0d53a93842d4627cf64d" kind="function"><name>get_vowelHarmony</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a148e94a7d0a744b510ee81e53c51e0b0" kind="function"><name>get_lexical_entries</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1aaa470820fbda4be04d6fe9139e761773" kind="function"><name>add_lexical_entry</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_1a36f348d30a1193d216ac7dacd5f085be" kind="function"><name>remove_lexical_entry</name></member>
@@ -211,6 +407,14 @@
     <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a8d02c9b6280f80f00689dbb730c4f0d8" kind="variable"><name>__lexical_entry</name></member>
     <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1ab0c529b6dfdc802436aaee80cc7a3f1a" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a27ffcc1bdb76712e7d8b31de78412f8a" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1abe500cbb370628c4945b6433124f0f05" kind="function"><name>set_paradigmLabel</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1ab90570fe38c57469e05359af8806c017" kind="function"><name>get_paradigmLabel</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a31c24b8f0fdbf375a4a64f8c37a74825" kind="function"><name>set_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1afe61d3e21fd13270af987b702304b449" kind="function"><name>get_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a142b0411391ae7842710e1e086420a40" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a7ba7ef75fdd20edfddc8821c7d4eca9a" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a40a98ba766025f62f839299c4084666c" kind="function"><name>set_morphology</name></member>
+    <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1a7f8b86d83993a56e5dd46a7924f130b4" kind="function"><name>get_morphology</name></member>
     <member refid="classlmf_1_1src_1_1morphosyntax_1_1paradigm_1_1_paradigm_1aa9cc39604cd3b3d06e1d142016db3541" kind="function"><name>get_lexical_entry</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1resources_1_1picture_1_1_picture" kind="class"><name>lmf::src::resources::picture::Picture</name>
@@ -259,6 +463,58 @@
     <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3f36a95173e4d4e7244e407a725dd3a9" kind="variable"><name>paradigm</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af0279b132d98c7b49141350ce34ea53b" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3cc439d56624626aaec6588dbcad5b58" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1aca94be206f4da6635798c1423aa5db15" kind="function"><name>get_id</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a144abbf38354979624e6b6902bd86cb7" kind="function"><name>set_senseNumber</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0c1c636cbbcb1fd1e98e9f5058464d73" kind="function"><name>get_senseNumber</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a5923d173a0ad52642ccdc50d4611fdc9" kind="function"><name>create_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a28ac5eef8b1d952ee565792e56a1b748" kind="function"><name>add_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a8bc5ca5fd053360b3150a13fa7787528" kind="function"><name>get_definitions</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9b51914a3abc0ebfd57501a665a69eb2" kind="function"><name>get_last_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1aef07a87a7893b5daea9b6a5a84220cab" kind="function"><name>find_definitions</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a5a033c526c8b56d4ddf8f2f55ba45dec" kind="function"><name>set_definition</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a784fe796429c439fadd5e070954d70b3" kind="function"><name>find_glosses</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a2a344e07bebb6d87f711b93ebf711fae" kind="function"><name>set_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0eadc746a37849a966279d1c35f687fe" kind="function"><name>set_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1acc1067bd6d9a28ac2719d8d442a8d7bb" kind="function"><name>find_notes</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9062f1b17bbc52c353edaf26330dcbeb" kind="function"><name>set_usage_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af4a689fe644baaf594abb4d9a1b0ca55" kind="function"><name>find_usage_notes</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a99c9a5071df517bc60f33121d46c0db1" kind="function"><name>set_encyclopedic_information</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a7f3f74ce33b047118343b29c4a5196ce" kind="function"><name>find_encyclopedic_informations</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0ed9917e40d5be2e90d628b55f962ee8" kind="function"><name>set_restriction</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad2997077bd0e68f4af1542ade3e64417" kind="function"><name>find_restrictions</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a1174533bdabb24b077835ad384fb564c" kind="function"><name>set_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a228d6a83808888d3805c06657c8f9153" kind="function"><name>get_borrowed_word</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adce959778963de3b295d05f81fa83390" kind="function"><name>set_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a06bf005156e07ed1262d53193bb75dc3" kind="function"><name>get_written_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a53537f8c8c41b7ad740fef272c9f8658" kind="function"><name>set_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae41863c9c5fdf94f3f29c13d6b1fe1cf" kind="function"><name>get_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a621686bc8d18f6abd0f9a284f9c4b938" kind="function"><name>set_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a60c30c7573483fd9d987c8c439688213" kind="function"><name>get_etymology_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab6f704b6dd461728169ffb3c74e43896" kind="function"><name>get_term_source_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a2008e37c341cb4bb59bae4ed74bddef2" kind="function"><name>set_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adb7c6fd2e19771361a94025df3343a58" kind="function"><name>get_etymology_gloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad869f9c4fcfca1775a74f6e1370c3476" kind="function"><name>set_etymology_source</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a58b3a4780ebc7fec50bd5088fef02d87" kind="function"><name>get_etymology_source</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ac61f3aadccb06f636aad9891b3bba53e" kind="function"><name>create_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae67664c5b120e407e5d0543ad5bdfb3d" kind="function"><name>add_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a41112d70652f5412eb71eacad72a135a" kind="function"><name>get_paradigms</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abdb32f5050397be1f2147b769fc97f6d" kind="function"><name>get_last_paradigm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab30230d0322d864c2222ba5471f1a305" kind="function"><name>set_paradigm_label</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abe2105eb98e2fc6349fa82965ad58261" kind="function"><name>set_paradigm_form</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a4b47011de018711098677f188e973fca" kind="function"><name>set_morphology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a14ced3b1dd8115d72283d6708d3ce0b5" kind="function"><name>create_and_add_context</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a50f6e0ba88d00c3315b91d3787aa9085" kind="function"><name>get_contexts</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af9c1b79eed28bd28279719bdf578d218" kind="function"><name>get_last_context</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a61c046aabce91368de9129dd83c2bb20" kind="function"><name>create_example</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab84c8d7a1cdcce014f99e0c1a1b0aedd" kind="function"><name>add_example</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9b8d8ea7fe946dd19e2538fe7801754a" kind="function"><name>set_example_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a07d199aca70cf878cb2a71af7a96fa4c" kind="function"><name>create_and_add_subject_field</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a907267d97926d04d20aaeefe475753d8" kind="function"><name>get_subject_fields</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad46f7e623293409ca06494b5fdeebe52" kind="function"><name>set_semantic_domain</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a6004e31b078cad1d029283c4e3fedfc2" kind="function"><name>create_and_add_equivalent</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad01163c4440025fe86e4c00734aa8894" kind="function"><name>get_equivalents</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a97469fcc2116bb7b0dbf4826161512bd" kind="function"><name>set_translation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abeaa946d4c063f6784b84e443a102c2c" kind="function"><name>get_translations</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1resources_1_1speaker_1_1_speaker" kind="class"><name>lmf::src::resources::speaker::Speaker</name>
     <member refid="classlmf_1_1src_1_1resources_1_1speaker_1_1_speaker_1a2773f1341512df6b9c9c5fb0f5c34cf5" kind="variable"><name>speakerID</name></member>
@@ -286,6 +542,32 @@
     <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1af2781856fbb02d55acc39864ec66aa24" kind="variable"><name>text_representation</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ace7d3a3325c7f7b255a3dd72b20c74b1" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a49d77869667dfde6c6abc794201f9fc3" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ac5f19645e137199d8a35ed7ddbf4b280" kind="function"><name>set_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2fb4b0e5e1a60fc1c64a568f23836365" kind="function"><name>get_note</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1aba967f0f44c48614ef275b43729a65a0" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1aaa72b5537d3c61a7b4da16b83d99a947" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a496622deaffb5533321e305c99ef4689" kind="function"><name>set_noteType</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3d7c298b233b33d30ede48fb9c447a4c" kind="function"><name>get_noteType</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a457b19a604578033bd13ab3d4007ba2e" kind="function"><name>set_usageNote</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1afd49544da7d45364b4c74100ea1dfbe8" kind="function"><name>get_usageNote</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a8f4587c26a7c775f581ca3cbf2291411" kind="function"><name>set_encyclopedicInformation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2c315d4fcbfec270476dc7536b48fd46" kind="function"><name>get_encyclopedicInformation</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a66ff1951ce0a2b839f2ab4c1f5447426" kind="function"><name>set_restriction</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ab85c880e48d2123caaed25d78bd32c76" kind="function"><name>get_restriction</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1abf1eb5ffc95de2aedde3fbc57ba9a795" kind="function"><name>set_borrowedWord</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a4d211071167d9b64b90a8863bccdba47" kind="function"><name>get_borrowedWord</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a0a666409b4347a2e1fc306c776403644" kind="function"><name>set_writtenForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ad76ee83090f177477973b3318f14e4e3" kind="function"><name>get_writtenForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a77b0a232ce93b2cc0495ee63064e286d" kind="function"><name>set_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a680c28452d3c0e819db589479e364441" kind="function"><name>get_etymology</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1abcd99a1f9adf0b86fe0648d3d5d0c745" kind="function"><name>set_etymologyComment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ad64f4d82e8aac9ca2e106673195adef2" kind="function"><name>get_etymologyComment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2559e6c441e8b9c1276ea7f7ae765f1d" kind="function"><name>set_termSourceLanguage</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ab63acc79afef490f7e9c748c57452d9c" kind="function"><name>get_termSourceLanguage</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ad5405bae6d97fb2a64ab75748c1122a5" kind="function"><name>set_etymologyGloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ade26b2eb6ee95396a9716030020e7b80" kind="function"><name>get_etymologyGloss</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a74132a7211362920d34c35ed423f24fb" kind="function"><name>set_etymologySource</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a4871b4a55077cb3c57b8b69ce9c9a00b" kind="function"><name>get_etymologySource</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem" kind="class"><name>lmf::src::morphology::stem::Stem</name>
     <member refid="classlmf_1_1src_1_1morphology_1_1stem_1_1_stem_1a0bb6ab66b2421c82cd8dffdd3bbc765d" kind="function"><name>__init__</name></member>
@@ -297,11 +579,28 @@
     <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ae43454d43d98b42b780661e8b18f89d4" kind="variable"><name>subject_field</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a2d8f602d6bb1db753cac9f281c6ffc57" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a15083c8ac78c8bd835dde95185af506e" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ac4e9742f438398b1fa5037a93da6d311" kind="function"><name>set_semanticDomain</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a3fc4634955416d9e363122adf4b48b16" kind="function"><name>get_semanticDomain</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a7c83d664df89bcb5ee8fdda6a84b25fc" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ae74803856e84a12be44d438f957df0ca" kind="function"><name>get_language</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1aaf00c3306172b2170a4038f0df9f3305" kind="function"><name>create_and_add_subject_field</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1ab291171fdd09053bf57f116da3516d14" kind="function"><name>get_subject_fields</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a1b9f4005c70ecde37f1946fe41eb2f4a" kind="function"><name>set_sub_domain</name></member>
+    <member refid="classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field_1a8d5c74c0e79dedc43b428e724200a930" kind="function"><name>get_sub_domains</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kind="class"><name>lmf::src::core::text_representation::TextRepresentation</name>
     <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" kind="variable"><name>font</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1af0026ed9d19dd869b408fba84f6fa5b1" kind="variable"><name>comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a029a488706154d5fe42ecbea00974780" kind="variable"><name>writtenForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aba23f79743bc4aa642f344aec09a3807" kind="variable"><name>language</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a84a6b65581f2e327a47989912c33838a" kind="function"><name>set_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a3211a3da3b34f68aa4d6542aafe940ee" kind="function"><name>get_comment</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a6ecc8173f69656c0135368ded971ceea" kind="function"><name>set_writtenForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a85adf686ca1d5df10588f312260390e9" kind="function"><name>get_writtenForm</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a00be4c8e0a058f9df2605abb27ac8853" kind="function"><name>set_language</name></member>
+    <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a1ec2b944809b0503bc1bb07b034eef5b" kind="function"><name>get_language</name></member>
   </compound>
   <compound refid="classlmf_1_1src_1_1resources_1_1video_1_1_video" kind="class"><name>lmf::src::resources::video::Video</name>
     <member refid="classlmf_1_1src_1_1resources_1_1video_1_1_video_1a21f39ce29f1958b3c82169eabbffc34d" kind="variable"><name>description</name></member>
@@ -327,6 +626,19 @@
     <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a47aea97a4bbd8cca9624b0143f639716" kind="variable"><name>verbFormMood</name></member>
     <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afcc4ec0d271e48a7f35920a1e91aa9b9" kind="function"><name>__init__</name></member>
     <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa7b79f6c8c3bd98e57b7d2bc60a9b88c" kind="function"><name>__del__</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a35cc3cb1ceda558386c81cf88374b96b" kind="function"><name>create_form_representation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a9074b17bb3d1ebcd32b5c8b8fbc3eeda" kind="function"><name>add_form_representation</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1af5ca5e6fdf8232fb5354b2d5e520f372" kind="function"><name>get_form_representations</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa4010d675af6deb25bf95e7aa54c3f15" kind="function"><name>set_variant_form</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a983151c5529388c7a3002b3239a98b98" kind="function"><name>get_variant_forms</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aae046a3403c0fe9ae8f35289878cba67" kind="function"><name>set_person</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a480a6988b8ca2febc53b5d738ae12fac" kind="function"><name>get_person</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a77770e33a70efbf55aa2279c2dbb1112" kind="function"><name>set_anymacy</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a15a5458e866a9bc063766393f1724618" kind="function"><name>get_anymacy</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afba8a8bff098989e06c9fce30e4c8163" kind="function"><name>set_grammaticalNumber</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ae1d604cd7edc889a347d9ce41df150c6" kind="function"><name>get_grammaticalNumber</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a711b4b9fb46e15d8d64c831dd3c73f15" kind="function"><name>set_clusivity</name></member>
+    <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1af7009607358c6be4f37b7708193eb2e7" kind="function"><name>get_clusivity</name></member>
   </compound>
   <compound refid="namespacelmf" kind="namespace"><name>lmf</name>
   </compound>
@@ -356,16 +668,53 @@
   <compound refid="namespacelmf_1_1src_1_1config" kind="namespace"><name>lmf::src::config</name>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1config_1_1mdf" kind="namespace"><name>lmf::src::config::mdf</name>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ae964bee79f865adc071d72a678dde128" kind="variable"><name>VERNACULAR</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ab4d5456356fada2592d7fb5d7e8ee780" kind="variable"><name>ENGLISH</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ae420b51631e5e37ccde4de5d72d05fae" kind="variable"><name>NATIONAL</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ab52ee069b7cd6fa8b52afa15ea6f221e" kind="variable"><name>REGIONAL</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a888cd9df8b9511d408e646dc404b5232" kind="variable"><name>mdf_lmf</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1afe5efb72442beb65b5083335b744845c" kind="variable"><name>mdf_order</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a78d8f1444783c1b86cbbd91f49a0cd4f" kind="variable"><name>lmf_mdf</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a1e76a452fc77f05851e4369134f5980b" kind="variable"><name>ps_partOfSpeech</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kind="variable"><name>mdf_semanticRelation</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ab58fb9b58bc32ac36efe9b26e4ea3ca2" kind="variable"><name>pd_person</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a011f241f41e3620deefe53cbb42286b9" kind="variable"><name>pd_anymacy</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a64be26974728c369cd72ef80bd297154" kind="variable"><name>pd_grammaticalNumber</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ac57ebe92cdf841d8d1bfe1e1b94b96bb" kind="variable"><name>pd_clusivity</name></member>
     <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a8e61adc475ca415a33c85ef16c96d03d" kind="variable"><name>pdl_paradigmLabel</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a69afee1e13ba980f4da1e6d7fb0c488a" kind="variable"><name>sd_range</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a61a24538d210d4eca3f57f183733fa5a" kind="variable"><name>lf_range</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a59bb4fce205d8159bc72c946e3855c4a" kind="variable"><name>ps_range</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1ab9d98a9297210440ed93a3ca490ee7b4" kind="function"><name>set_bw</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1mdf_1a5af3cc74d2bb8b03d7657c0e7fb3598b" kind="function"><name>get_bw</name></member>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1config_1_1tex" kind="namespace"><name>lmf::src::config::tex</name>
-    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a19c5578c65b152e179d23ea103849590" kind="variable"><name>tex_order</name></member>
-    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1aee96ffe8f8f1e7f54b1c9fa55d93010d" kind="variable"><name>lmf_tex</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a043963d19472fa939f381b521e696cf6" kind="variable"><name>tex_font</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ac85ca206e865c9cc1d77b77c72a429d2" kind="function"><name>lmf_to_tex</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ab5587986e20b08d8e30bc17b65bcecfb" kind="function"><name>format_lexeme</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a21aa2b6c6d989b66c340726e6069ff11" kind="function"><name>format_part_of_speech</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a516cea03d4fd6b1d74a80405d78e0d4c" kind="function"><name>format_definitions</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ac87f28b4877c23268fba25f5e4e83c9d" kind="function"><name>format_lt</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a513b89ff96fd7e2855aa899ac03491fa" kind="function"><name>format_sc</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a66df73ec575786d5cd3e0abb40793c1c" kind="function"><name>format_rf</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a760a9e5b857d90ecc262db56a82f9c22" kind="function"><name>format_examples</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ad8cf14c27e547612b29e9e6a7a070e30" kind="function"><name>format_usage_notes</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a17fa95160aec98e3ef33840fe9873035" kind="function"><name>format_encyclopedic_informations</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a29e656c70350457c30eb469791a535c8" kind="function"><name>format_restrictions</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1af81055cb765190891611747edc3d4ead" kind="function"><name>format_lexical_functions</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ae3f96bb0f32f66e97fff513f1a6ca35b" kind="function"><name>format_related_forms</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a3bd6d8a88328666fd8dbfd63609e8f67" kind="function"><name>format_variant_forms</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a1adca205fd3fa5465021ac35d564609c" kind="function"><name>format_borrowed_word</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a5a066e3c951b0eef013a94098b778a90" kind="function"><name>format_etymology</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1af42ed5326158d9b99710f2d57ff08b7c" kind="function"><name>format_paradigms</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a4052168ba8eae4761bb7b77a0c07bb80" kind="function"><name>format_table</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ac1ab9ab056e3343fa370086560b32ae8" kind="function"><name>format_semantic_domains</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ac05eca439d560d531849a1442849758a" kind="function"><name>format_bibliography</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1ac13a98371b4866cff14c6850df581ad8" kind="function"><name>format_picture</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1afaa2b8311d6b2b8c8e63a2c0429b31e9" kind="function"><name>format_notes</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1afbf83cda950403465c8ab544ab178e76" kind="function"><name>format_source</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1a573338d6a812b0bd8e9118b3adbf7525" kind="function"><name>format_status</name></member>
+    <member refid="namespacelmf_1_1src_1_1config_1_1tex_1aee5ca2038f050c333b82dee3f1ae2522" kind="function"><name>format_date</name></member>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1core" kind="namespace"><name>lmf::src::core</name>
   </compound>
@@ -441,11 +790,14 @@
   <compound refid="namespacelmf_1_1src_1_1output" kind="namespace"><name>lmf::src::output</name>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1output_1_1doc" kind="namespace"><name>lmf::src::output::doc</name>
+    <member refid="namespacelmf_1_1src_1_1output_1_1doc_1a38e0eb27e45ce05d6957ed8ce597cadf" kind="function"><name>doc_write</name></member>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1output_1_1html" kind="namespace"><name>lmf::src::output::html</name>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1output_1_1mdf" kind="namespace"><name>lmf::src::output::mdf</name>
     <member refid="namespacelmf_1_1src_1_1output_1_1mdf_1aebf4d51ef6566e50a26a121471a175a6" kind="function"><name>mdf_write</name></member>
+    <member refid="namespacelmf_1_1src_1_1output_1_1mdf_1aa2e107a3709bad717fa714ac0d27a1c1" kind="function"><name>parse_list</name></member>
+    <member refid="namespacelmf_1_1src_1_1output_1_1mdf_1a2570a776b904556d9ff01bda804d1001" kind="function"><name>write_line</name></member>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1output_1_1tex" kind="namespace"><name>lmf::src::output::tex</name>
     <member refid="namespacelmf_1_1src_1_1output_1_1tex_1ac02be073e031d36d66f61dc7d6fb94df" kind="function"><name>compute_header</name></member>
@@ -489,6 +841,10 @@
   </compound>
   <compound refid="namespacelmf_1_1src_1_1utils" kind="namespace"><name>lmf::src::utils</name>
   </compound>
+  <compound refid="namespacelmf_1_1src_1_1utils_1_1attr" kind="namespace"><name>lmf::src::utils::attr</name>
+    <member refid="namespacelmf_1_1src_1_1utils_1_1attr_1aa8f0e87d43935a26d71b5f80fc0de8a1" kind="function"><name>check_attr_type</name></member>
+    <member refid="namespacelmf_1_1src_1_1utils_1_1attr_1aae5498ab6d173de4b16ab91d720c4320" kind="function"><name>check_attr_range</name></member>
+  </compound>
   <compound refid="namespacelmf_1_1src_1_1utils_1_1error__handling" kind="namespace"><name>lmf::src::utils::error_handling</name>
   </compound>
   <compound refid="namespacelmf_1_1src_1_1utils_1_1io" kind="namespace"><name>lmf::src::utils::io</name>
@@ -512,6 +868,7 @@
     <member refid="namespacelmf_1_1src_1_1wrapper_1a34eb45bde89039fab69e6f323c64b61b" kind="function"><name>write_mdf</name></member>
     <member refid="namespacelmf_1_1src_1_1wrapper_1a21e10a1783a71a179ca395a1ffbf7124" kind="function"><name>write_xml_lmf</name></member>
     <member refid="namespacelmf_1_1src_1_1wrapper_1ac819224ea6166cfc937077700ec04fb2" kind="function"><name>write_tex</name></member>
+    <member refid="namespacelmf_1_1src_1_1wrapper_1aca592ed407c9bd88f27cd28d43c2ec47" kind="function"><name>write_doc</name></member>
   </compound>
   <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
@@ -636,6 +993,8 @@
   <compound refid="speaker_8py" kind="file"><name>speaker.py</name>
   </compound>
   <compound refid="video_8py" kind="file"><name>video.py</name>
+  </compound>
+  <compound refid="attr_8py" kind="file"><name>attr.py</name>
   </compound>
   <compound refid="error__handling_8py" kind="file"><name>error_handling.py</name>
   </compound>

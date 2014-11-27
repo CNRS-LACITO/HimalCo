@@ -1,4 +1,4 @@
-.TH "lmf.src.core.sense.Sense" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.sense.Sense" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -20,6 +20,214 @@ lmf.src.core.sense.Sense \-
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBget_id\fP"
+.br
+.RI "\fIIDentifier\&. \fP"
+.ti -1c
+.RI "def \fBset_senseNumber\fP"
+.br
+.RI "\fISet sense number\&. \fP"
+.ti -1c
+.RI "def \fBget_senseNumber\fP"
+.br
+.RI "\fIGet sense number\&. \fP"
+.ti -1c
+.RI "def \fBcreate_definition\fP"
+.br
+.RI "\fICreate a definition\&. \fP"
+.ti -1c
+.RI "def \fBadd_definition\fP"
+.br
+.RI "\fIAdd a definition to the sense\&. \fP"
+.ti -1c
+.RI "def \fBget_definitions\fP"
+.br
+.RI "\fIGet all definitions maintained by the sense\&. \fP"
+.ti -1c
+.RI "def \fBget_last_definition\fP"
+.br
+.RI "\fIGet the previously registered Definition instance\&. \fP"
+.ti -1c
+.RI "def \fBfind_definitions\fP"
+.br
+.RI "\fIFind definitions\&. \fP"
+.ti -1c
+.RI "def \fBset_definition\fP"
+.br
+.RI "\fISet definition and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_glosses\fP"
+.br
+.RI "\fIFind glosses\&. \fP"
+.ti -1c
+.RI "def \fBset_gloss\fP"
+.br
+.RI "\fISet gloss and language\&. \fP"
+.ti -1c
+.RI "def \fBset_note\fP"
+.br
+.RI "\fISet note, note type and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_notes\fP"
+.br
+.RI "\fIFind notes\&. \fP"
+.ti -1c
+.RI "def \fBset_usage_note\fP"
+.br
+.RI "\fISet usage note and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_usage_notes\fP"
+.br
+.RI "\fIFind usage notes\&. \fP"
+.ti -1c
+.RI "def \fBset_encyclopedic_information\fP"
+.br
+.RI "\fISet encyclopedic information and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_encyclopedic_informations\fP"
+.br
+.RI "\fIFind encyclopedic informations\&. \fP"
+.ti -1c
+.RI "def \fBset_restriction\fP"
+.br
+.RI "\fISet restriction and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_restrictions\fP"
+.br
+.RI "\fIFind restrictions\&. \fP"
+.ti -1c
+.RI "def \fBset_borrowed_word\fP"
+.br
+.RI "\fISet source language (in English)\&. \fP"
+.ti -1c
+.RI "def \fBget_borrowed_word\fP"
+.br
+.RI "\fIGet source language (in English)\&. \fP"
+.ti -1c
+.RI "def \fBset_written_form\fP"
+.br
+.RI "\fISet loan word\&. \fP"
+.ti -1c
+.RI "def \fBget_written_form\fP"
+.br
+.RI "\fIGet loan word\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology\fP"
+.br
+.RI "\fISet etymology\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology\fP"
+.br
+.RI "\fIGet etymology\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_comment\fP"
+.br
+.RI "\fISet etymology comment and language\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_comment\fP"
+.br
+.RI "\fIGet etymology comment\&. \fP"
+.ti -1c
+.RI "def \fBget_term_source_language\fP"
+.br
+.RI "\fIGet language used for the etymology comment\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_gloss\fP"
+.br
+.RI "\fISet etymology gloss\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_gloss\fP"
+.br
+.RI "\fIGet etymology gloss\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_source\fP"
+.br
+.RI "\fISet etymology source\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_source\fP"
+.br
+.RI "\fIGet etymology source\&. \fP"
+.ti -1c
+.RI "def \fBcreate_paradigm\fP"
+.br
+.RI "\fICreate a paradigm\&. \fP"
+.ti -1c
+.RI "def \fBadd_paradigm\fP"
+.br
+.RI "\fIAdd a paradigm to the sense\&. \fP"
+.ti -1c
+.RI "def \fBget_paradigms\fP"
+.br
+.RI "\fIGet all paradigms maintained by the sense\&. \fP"
+.ti -1c
+.RI "def \fBget_last_paradigm\fP"
+.br
+.RI "\fIGet the previously registered Paradigm instance\&. \fP"
+.ti -1c
+.RI "def \fBset_paradigm_label\fP"
+.br
+.RI "\fISet paradigm label\&. \fP"
+.ti -1c
+.RI "def \fBset_paradigm_form\fP"
+.br
+.RI "\fISet paradigm form and language\&. \fP"
+.ti -1c
+.RI "def \fBset_morphology\fP"
+.br
+.RI "\fISet morphology\&. \fP"
+.ti -1c
+.RI "def \fBcreate_and_add_context\fP"
+.br
+.RI "\fICreate a context and add it to the list\&. \fP"
+.ti -1c
+.RI "def \fBget_contexts\fP"
+.br
+.RI "\fIGet all contexts maintained by the sense\&. \fP"
+.ti -1c
+.RI "def \fBget_last_context\fP"
+.br
+.RI "\fIGet the previously registered Context instance\&. \fP"
+.ti -1c
+.RI "def \fBcreate_example\fP"
+.br
+.RI "\fICreate a Context instance and set its written form and language\&. \fP"
+.ti -1c
+.RI "def \fBadd_example\fP"
+.br
+.RI "\fISet written form and language of an existing Context instance\&. \fP"
+.ti -1c
+.RI "def \fBset_example_comment\fP"
+.br
+.RI "\fISet comment of an existing Context instance\&. \fP"
+.ti -1c
+.RI "def \fBcreate_and_add_subject_field\fP"
+.br
+.RI "\fICreate a subject field and add it to the list\&. \fP"
+.ti -1c
+.RI "def \fBget_subject_fields\fP"
+.br
+.RI "\fIGet all subject fields maintained by the sense\&. \fP"
+.ti -1c
+.RI "def \fBset_semantic_domain\fP"
+.br
+.RI "\fICreate a SubjectField instance and set its semantic domain and language\&. \fP"
+.ti -1c
+.RI "def \fBcreate_and_add_equivalent\fP"
+.br
+.RI "\fICreate an equivalent and add it to the list\&. \fP"
+.ti -1c
+.RI "def \fBget_equivalents\fP"
+.br
+.RI "\fIGet all equivalents maintained by the sense\&. \fP"
+.ti -1c
+.RI "def \fBset_translation\fP"
+.br
+.RI "\fICreate an Equivalent instance and set its translation and language\&. \fP"
+.ti -1c
+.RI "def \fBget_translations\fP"
+.br
+.RI "\fIGet all translations\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -59,13 +267,18 @@ lmf.src.core.sense.Sense \-
 .PP 
 'Sense is a class representing one meaning of a lexical entry\&. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry\&.' (LMF) 
 .PP
-Definition at line 6 of file sense\&.py\&.
+Definition at line 12 of file sense\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.__init__ (self)"
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.__init__ (self, id = \fC0\fP)"
 
 .PP
 Constructor\&. \fBSense\fP instances are owned by LexicalEntry\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP IDentifier\&. If not provided, default value is 0\&. 
+.RE
 .PP
 \fBReturns:\fP
 .RS 4
@@ -74,13 +287,872 @@ A \fBSense\fP instance\&.
 .PP
 
 .PP
-Definition at line 9 of file sense\&.py\&.
+Definition at line 15 of file sense\&.py\&.
 .SS "def lmf\&.src\&.core\&.sense\&.Sense\&.__del__ (self)"
 
 .PP
 Destructor\&. Release Definition, \fBSense\fP, Equivalent, Context, SubjectField, Paradigm instances\&. 
 .PP
-Definition at line 35 of file sense\&.py\&.
+Definition at line 43 of file sense\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.add_definition (self, definition)"
+
+.PP
+Add a definition to the sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdefinition\fP The Definition instance to add to the sense\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.add_example (self, written_form, language = \fCNone\fP)"
+
+.PP
+Set written form and language of an existing Context instance\&. Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP The written form to set\&. 
+.br
+\fIlanguage\fP Language used for the written form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 587 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.add_paradigm (self, paradigm)"
+
+.PP
+Add a paradigm to the sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparadigm\fP The Paradigm instance to add to the sense\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 477 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_and_add_context (self)"
+
+.PP
+Create a context and add it to the list\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Context instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 556 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_and_add_equivalent (self)"
+
+.PP
+Create an equivalent and add it to the list\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Equivalent instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 640 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_and_add_subject_field (self)"
+
+.PP
+Create a subject field and add it to the list\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+SubjectField instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 616 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_definition (self)"
+
+.PP
+Create a definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Definition instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 86 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_example (self, written_form, language = \fCNone\fP)"
+
+.PP
+Create a Context instance and set its written form and language\&. Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP The written form to set\&. 
+.br
+\fIlanguage\fP Language used for the written form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 577 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.create_paradigm (self)"
+
+.PP
+Create a paradigm\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Paradigm instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 471 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_definitions (self, language)"
+
+.PP
+Find definitions\&. This attribute is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP The language to consider to retrieve the definition\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Definition attributes 'definition'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_encyclopedic_informations (self, language)"
+
+.PP
+Find encyclopedic informations\&. This attribute is owned by Statement, which owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP Language to consider to retrieve the encyclopedic informations\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Statement attributes 'encyclopedicInformation'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 264 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_glosses (self, language)"
+
+.PP
+Find glosses\&. This attribute is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP The language to consider to retrieve the gloss\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Definition attributes 'gloss'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 153 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_notes (self, type)"
+
+.PP
+Find notes\&. This attribute is owned by Statement, which owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype\fP Type of the note to consider to retrieve the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Statement attributes 'notes'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 210 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_restrictions (self, language)"
+
+.PP
+Find restrictions\&. This attribute is owned by Statement, which owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP Language to consider to retrieve the restriction\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Statement attributes 'restriction'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 291 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.find_usage_notes (self, language)"
+
+.PP
+Find usage notes\&. This attribute is owned by Statement, which owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP Language to consider to retrieve the usage note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Statement attributes 'usageNote'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 237 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_borrowed_word (self)"
+
+.PP
+Get source language (in English)\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'borrowedWord'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 317 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_contexts (self)"
+
+.PP
+Get all contexts maintained by the sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of contexts\&. 
+.RE
+.PP
+
+.PP
+Definition at line 564 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_definitions (self)"
+
+.PP
+Get all definitions maintained by the sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of definitions\&. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_equivalents (self)"
+
+.PP
+Get all equivalents maintained by the sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of equivalents\&. 
+.RE
+.PP
+
+.PP
+Definition at line 648 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_etymology (self)"
+
+.PP
+Get etymology\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymology'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 369 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_etymology_comment (self, term_source_language = \fCNone\fP)"
+
+.PP
+Get etymology comment\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIterm_source_language\fP The language of the etymology comment to retrieve\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologyComment'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 396 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_etymology_gloss (self)"
+
+.PP
+Get etymology gloss\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologyGloss'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 434 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_etymology_source (self)"
+
+.PP
+Get etymology source\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologySource'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 460 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_id (self)"
+
+.PP
+IDentifier\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP attribute 'id'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_last_context (self)"
+
+.PP
+Get the previously registered Context instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The last element of \fBSense\fP attribute 'context'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 570 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_last_definition (self)"
+
+.PP
+Get the previously registered Definition instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The last element of \fBSense\fP attribute 'definition'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_last_paradigm (self)"
+
+.PP
+Get the previously registered Paradigm instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The last element of \fBSense\fP attribute 'paradigm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 491 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_paradigms (self)"
+
+.PP
+Get all paradigms maintained by the sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of paradigms\&. 
+.RE
+.PP
+
+.PP
+Definition at line 485 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_senseNumber (self)"
+
+.PP
+Get sense number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP attribute 'senseNumber'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 80 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_subject_fields (self)"
+
+.PP
+Get all subject fields maintained by the sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of subject fields\&. 
+.RE
+.PP
+
+.PP
+Definition at line 624 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_term_source_language (self)"
+
+.PP
+Get language used for the etymology comment\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'termSourceLanguage'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 408 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_translations (self, language = \fCNone\fP)"
+
+.PP
+Get all translations\&. This attribute is owned by Equivalent\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP If this argument is given, get only translations that are described using this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of filtered Equivalent attributes 'translation'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 664 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.get_written_form (self)"
+
+.PP
+Get loan word\&. This attribute is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'writtenForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 343 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_borrowed_word (self, borrowed_word)"
+
+.PP
+Set source language (in English)\&. Attribute 'borrowedWord' is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIborrowed_word\fP Source language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 302 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_definition (self, definition, language = \fCNone\fP)"
+
+.PP
+Set definition and language\&. These attributes are owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdefinition\fP Definition\&. 
+.br
+\fIlanguage\fP Language of definition\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 125 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_encyclopedic_information (self, encyclopedic_information, language = \fCNone\fP)"
+
+.PP
+Set encyclopedic information and language\&. These attributes are owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIencyclopedic_information\fP Encyclopedic information to set\&. 
+.br
+\fIlanguage\fP Language used for the encyclopedic information\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 248 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_etymology (self, etymology)"
+
+.PP
+Set etymology\&. Attribute 'etymology' is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology\fP Etymology\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 354 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_etymology_comment (self, etymology_comment, term_source_language = \fCNone\fP)"
+
+.PP
+Set etymology comment and language\&. Attributes 'etymologyComment' and 'termSourceLanguage' are owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_comment\fP Etymology comment\&. 
+.br
+\fIterm_source_language\fP Language of the comment\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 380 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_etymology_gloss (self, etymology_gloss)"
+
+.PP
+Set etymology gloss\&. Attribute 'etymologyGloss' is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_gloss\fP Etymology gloss\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 419 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_etymology_source (self, etymology_source)"
+
+.PP
+Set etymology source\&. Attribute 'etymologySource' is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_source\fP Etymology source\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 445 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_example_comment (self, comment)"
+
+.PP
+Set comment of an existing Context instance\&. Attribute 'comment' is owned by TextRepresentation, which is owned by Context\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcomment\fP The comment to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 602 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_gloss (self, gloss, language = \fCNone\fP)"
+
+.PP
+Set gloss and language\&. These attributes are owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgloss\fP Gloss\&. 
+.br
+\fIlanguage\fP Language of gloss\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 165 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_morphology (self, morphology)"
+
+.PP
+Set morphology\&. Attribute 'morphology' is owned by Paradigm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImorphology\fP Morphology\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 537 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_note (self, note, type = \fCNone\fP, language = \fCNone\fP)"
+
+.PP
+Set note, note type and language\&. These attributes are owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInote\fP Note to set\&. 
+.br
+\fItype\fP Type of the note\&. 
+.br
+\fIlanguage\fP Language used for the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 193 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_paradigm_form (self, paradigm_form, language = \fCNone\fP)"
+
+.PP
+Set paradigm form and language\&. Attributes 'paradigm' and 'language' are owned by Paradigm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparadigm_form\fP Paradigm form\&. 
+.br
+\fIlanguage\fP Language used for the paradigm form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 508 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_paradigm_label (self, paradigm_label)"
+
+.PP
+Set paradigm label\&. Attribute 'paradigmLabel' is owned by Paradigm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparadigm_label\fP Paradigm label\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 498 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_restriction (self, restriction, language = \fCNone\fP)"
+
+.PP
+Set restriction and language\&. These attributes are owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrestriction\fP Restriction to set\&. 
+.br
+\fIlanguage\fP Language used for the restriction\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 275 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_semantic_domain (self, semantic_domain, language = \fCNone\fP)"
+
+.PP
+Create a SubjectField instance and set its semantic domain and language\&. Attributes 'semanticDomain' and 'language' are owned by SubjectField\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsemantic_domain\fP The semantic domain to set\&. 
+.br
+\fIlanguage\fP Language used to describe the semantic domain\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 630 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_senseNumber (self, sense_number)"
+
+.PP
+Set sense number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsense_number\fP The sense number to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_translation (self, translation, language = \fCNone\fP)"
+
+.PP
+Create an Equivalent instance and set its translation and language\&. Attributes 'translation' and 'language' are owned by Equivalent\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItranslation\fP The translation to set\&. 
+.br
+\fIlanguage\fP Language used for the translation\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 654 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_usage_note (self, usage_note, language = \fCNone\fP)"
+
+.PP
+Set usage note and language\&. These attributes are owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIusage_note\fP Usage note to set\&. 
+.br
+\fIlanguage\fP Language used for the usage note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 221 of file sense\&.py\&.
+.SS "def lmf\&.src\&.core\&.sense\&.Sense\&.set_written_form (self, written_form)"
+
+.PP
+Set loan word\&. Attribute 'writtenForm' is owned by Statement, which is owned by Definition\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP Loan word\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBSense\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 328 of file sense\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.context"
@@ -88,45 +1160,45 @@ Definition at line 35 of file sense\&.py\&.
 .PP
 Context instances are owned by \fBSense\fP There is zero to many Context instances per \fBSense\fP\&. 
 .PP
-Definition at line 27 of file sense\&.py\&.
+Definition at line 35 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.definition"
 
 .PP
 Definition instances are owned by \fBSense\fP There is zero to many Definition instances per \fBSense\fP\&. 
 .PP
-Definition at line 18 of file sense\&.py\&.
+Definition at line 26 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.equivalent"
 
 .PP
 Equivalent instances are owned by \fBSense\fP There is zero to many Equivalent instances per \fBSense\fP\&. 
 .PP
-Definition at line 24 of file sense\&.py\&.
+Definition at line 32 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.id"
 
 .PP
-Definition at line 15 of file sense\&.py\&.
+Definition at line 23 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.paradigm"
 
 .PP
 Paradigm instances are owned by \fBSense\fP There is zero to many Paradigm instances per \fBSense\fP\&. 
 .PP
-Definition at line 33 of file sense\&.py\&.
+Definition at line 41 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.sense"
 
 .PP
 \fBSense\fP instances are owned by \fBSense\fP There is zero to many \fBSense\fP instances per \fBSense\fP\&. 
 .PP
-Definition at line 21 of file sense\&.py\&.
+Definition at line 29 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.senseNumber"
 
 .PP
-Definition at line 14 of file sense\&.py\&.
+Definition at line 21 of file sense\&.py\&.
 .SS "lmf\&.src\&.core\&.sense\&.Sense\&.subject_field"
 
 .PP
 SubjectField instances are owned by \fBSense\fP There is zero to many SubjectField instances per \fBSense\fP\&. 
 .PP
-Definition at line 30 of file sense\&.py\&.
+Definition at line 38 of file sense\&.py\&.
 
 .SH "Author"
 .PP 

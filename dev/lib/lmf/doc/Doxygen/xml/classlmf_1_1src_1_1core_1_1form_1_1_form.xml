@@ -3,32 +3,6 @@
   <compounddef id="classlmf_1_1src_1_1core_1_1form_1_1_form" kind="class" prot="public">
     <compoundname>lmf::src::core::form::Form</compoundname>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form_1_1_form_1a601549e93d6bd00ba5d8d3467a12bcdb" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>lmf.src.core.form.Form::variantForm</definition>
-        <argsstring></argsstring>
-        <name>variantForm</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="23" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form_1_1_form_1ae8b8836cc3f78314dfb3a416ff95cac8" prot="public" static="no" mutable="no">
-        <type></type>
-        <definition>lmf.src.core.form.Form::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="24" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1form_1_1_form_1a81a147d40e70054d06b4ad90fd523a8f" prot="public" static="no" mutable="no">
         <type></type>
         <definition>lmf.src.core.form.Form::form_representation</definition>
@@ -40,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="27" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,21 +55,19 @@
 <para><ref refid="classlmf_1_1src_1_1core_1_1form_1_1_form" kindref="compound">Form</ref> subinstances are owned by LexicalEntry. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="19" bodyend="28"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="19" bodyend="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Form is an abstract class representing a lexeme, a morphological variant of a lexeme or a morph. The Form class allows subclasses.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="6" bodyend="28"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/form.py" bodystart="6" bodyend="26"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a4efc5b5afe396103742f2be36f3ada35" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a5d8193e2ae85d0844470137d14504ae1" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>__init__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a6b5179aebc5f1a51875d3cc5301c6f84" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>__new__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a81a147d40e70054d06b4ad90fd523a8f" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>form_representation</name></member>
-      <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1ae8b8836cc3f78314dfb3a416ff95cac8" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>type</name></member>
-      <member refid="classlmf_1_1src_1_1core_1_1form_1_1_form_1a601549e93d6bd00ba5d8d3467a12bcdb" prot="public" virt="non-virtual"><scope>lmf::src::core::form::Form</scope><name>variantForm</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

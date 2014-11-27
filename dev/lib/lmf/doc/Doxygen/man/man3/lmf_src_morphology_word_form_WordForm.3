@@ -1,4 +1,4 @@
-.TH "lmf.src.morphology.word_form.WordForm" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.morphology.word_form.WordForm" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,6 +22,58 @@ Inherits Form\&.
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBcreate_form_representation\fP"
+.br
+.RI "\fICreate a form representation\&. \fP"
+.ti -1c
+.RI "def \fBadd_form_representation\fP"
+.br
+.RI "\fIAdd a form representation to the word form\&. \fP"
+.ti -1c
+.RI "def \fBget_form_representations\fP"
+.br
+.RI "\fIGet all form representations maintained by the word form\&. \fP"
+.ti -1c
+.RI "def \fBset_variant_form\fP"
+.br
+.RI "\fISet variant form\&. \fP"
+.ti -1c
+.RI "def \fBget_variant_forms\fP"
+.br
+.RI "\fIGet all variant forms\&. \fP"
+.ti -1c
+.RI "def \fBset_person\fP"
+.br
+.RI "\fISet grammatical person\&. \fP"
+.ti -1c
+.RI "def \fBget_person\fP"
+.br
+.RI "\fIGet grammatical person\&. \fP"
+.ti -1c
+.RI "def \fBset_anymacy\fP"
+.br
+.RI "\fISet grammatical anymacy\&. \fP"
+.ti -1c
+.RI "def \fBget_anymacy\fP"
+.br
+.RI "\fIGet anymacy\&. \fP"
+.ti -1c
+.RI "def \fBset_grammaticalNumber\fP"
+.br
+.RI "\fISet grammatical number\&. \fP"
+.ti -1c
+.RI "def \fBget_grammaticalNumber\fP"
+.br
+.RI "\fIGet grammatical number\&. \fP"
+.ti -1c
+.RI "def \fBset_clusivity\fP"
+.br
+.RI "\fISet grammatical clusivity\&. \fP"
+.ti -1c
+.RI "def \fBget_clusivity\fP"
+.br
+.RI "\fIGet grammatical clusivity\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -61,7 +113,7 @@ Inherits Form\&.
 .PP 
 'Word Form is a Form subclass representing a form that a lexeme can take when used in a sentence or a phrase\&.' (LMF) 
 .PP
-Definition at line 8 of file word_form\&.py\&.
+Definition at line 12 of file word_form\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.__init__ (self)"
@@ -76,55 +128,256 @@ A \fBWordForm\fP instance\&.
 .PP
 
 .PP
-Definition at line 11 of file word_form\&.py\&.
+Definition at line 15 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.__del__ (self)"
 
 .PP
 Destructor\&. 
 .PP
-Definition at line 29 of file word_form\&.py\&.
+Definition at line 33 of file word_form\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.add_form_representation (self, form_representation)"
+
+.PP
+Add a form representation to the word form\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIform_representation\fP The FormRepresentation instance to add to the word form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.create_form_representation (self)"
+
+.PP
+Create a form representation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+FormRepresentation instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_anymacy (self)"
+
+.PP
+Get anymacy\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP attribute 'anymacy'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_clusivity (self)"
+
+.PP
+Get grammatical clusivity\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP attribute 'clusivity'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_form_representations (self)"
+
+.PP
+Get all form representations maintained by the word form\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of form representations\&. 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_grammaticalNumber (self)"
+
+.PP
+Get grammatical number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP attribute 'grammaticalNumber'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 133 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_person (self)"
+
+.PP
+Get grammatical person\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP attribute 'person'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 99 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_variant_forms (self)"
+
+.PP
+Get all variant forms\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'variantForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_anymacy (self, anymacy)"
+
+.PP
+Set grammatical anymacy\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIanymacy\fP The grammatical anymacy to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_clusivity (self, clusivity)"
+
+.PP
+Set grammatical clusivity\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIclusivity\fP The grammatical clusivity to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 139 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_grammaticalNumber (self, grammatical_number)"
+
+.PP
+Set grammatical number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgrammatical_number\fP The grammatical number to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_person (self, person)"
+
+.PP
+Set grammatical person\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIperson\fP The grammatical person to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 88 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_variant_form (self, variant_form)"
+
+.PP
+Set variant form\&. This attribute is owned by FormRepresentation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariant_form\fP Variant form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 58 of file word_form\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.anymacy"
 
 .PP
-Definition at line 21 of file word_form\&.py\&.
+Definition at line 25 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.case"
 
 .PP
-Definition at line 24 of file word_form\&.py\&.
+Definition at line 28 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.clusivity"
 
 .PP
-Definition at line 22 of file word_form\&.py\&.
+Definition at line 26 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.degree"
 
 .PP
-Definition at line 25 of file word_form\&.py\&.
+Definition at line 29 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.grammaticalGender"
 
 .PP
-Definition at line 19 of file word_form\&.py\&.
+Definition at line 23 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.grammaticalNumber"
 
 .PP
-Definition at line 18 of file word_form\&.py\&.
+Definition at line 22 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.person"
 
 .PP
-Definition at line 20 of file word_form\&.py\&.
+Definition at line 24 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.tense"
 
 .PP
-Definition at line 23 of file word_form\&.py\&.
+Definition at line 27 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.verbFormMood"
 
 .PP
-Definition at line 27 of file word_form\&.py\&.
+Definition at line 31 of file word_form\&.py\&.
 .SS "lmf\&.src\&.morphology\&.word_form\&.WordForm\&.voice"
 
 .PP
-Definition at line 26 of file word_form\&.py\&.
+Definition at line 30 of file word_form\&.py\&.
 
 .SH "Author"
 .PP 

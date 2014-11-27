@@ -7,7 +7,7 @@ var searchData=
   ['termsourcelanguage',['termSourceLanguage',['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#ac334fff77caf25a783e77aa55ca3128d',1,'lmf::src::core::statement::Statement']]],
   ['tex_2epy',['tex.py',['../config_2tex_8py.html',1,'']]],
   ['tex_2epy',['tex.py',['../output_2tex_8py.html',1,'']]],
-  ['tex_5forder',['tex_order',['../namespacelmf_1_1src_1_1config_1_1tex.html#a19c5578c65b152e179d23ea103849590',1,'lmf::src::config::tex']]],
+  ['tex_5ffont',['tex_font',['../namespacelmf_1_1src_1_1config_1_1tex.html#a043963d19472fa939f381b521e696cf6',1,'lmf::src::config::tex']]],
   ['tex_5fwrite',['tex_write',['../namespacelmf_1_1src_1_1output_1_1tex.html#a2f69a7ff35d3a419eaa9f4bb40aefa06',1,'lmf::src::output::tex']]],
   ['text_5frepresentation',['text_representation',['../classlmf_1_1src_1_1core_1_1definition_1_1_definition.html#abae8500dbd7200fa3d76f5599ff00d37',1,'lmf.src.core.definition.Definition.text_representation()'],['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#af2781856fbb02d55acc39864ec66aa24',1,'lmf.src.core.statement.Statement.text_representation()'],['../classlmf_1_1src_1_1mrd_1_1context_1_1_context.html#a471cd19ef138a424df53621024979ba7',1,'lmf.src.mrd.context.Context.text_representation()'],['../classlmf_1_1src_1_1mrd_1_1equivalent_1_1_equivalent.html#a6912524a8f1ac4a8203f6fa386d2f5a1',1,'lmf.src.mrd.equivalent.Equivalent.text_representation()']]],
   ['text_5frepresentation_2epy',['text_representation.py',['../text__representation_8py.html',1,'']]],
@@ -19,7 +19,7 @@ var searchData=
   ['transliteration',['transliteration',['../classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation.html#ab192387108c3c4e780297d1b409d5eff',1,'lmf::src::core::form_representation::FormRepresentation']]],
   ['txt_2epy',['txt.py',['../input_2txt_8py.html',1,'']]],
   ['txt_2epy',['txt.py',['../output_2txt_8py.html',1,'']]],
-  ['type',['type',['../classlmf_1_1src_1_1core_1_1form_1_1_form.html#ae8b8836cc3f78314dfb3a416ff95cac8',1,'lmf.src.core.form.Form.type()'],['../classlmf_1_1src_1_1mrd_1_1context_1_1_context.html#a785d657d9be0addc379745e7efa4996b',1,'lmf.src.mrd.context.Context.type()']]],
+  ['type',['type',['../classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation.html#a26785ac6e2bf05ebefb60d1c019db55d',1,'lmf.src.core.form_representation.FormRepresentation.type()'],['../classlmf_1_1src_1_1mrd_1_1context_1_1_context.html#a785d657d9be0addc379745e7efa4996b',1,'lmf.src.mrd.context.Context.type()']]],
   ['type_5fexample_5frange',['type_example_range',['../namespacelmf_1_1src_1_1common_1_1range.html#ac02d347b39dab64b3ce3604168d1b652',1,'lmf::src::common::range']]],
   ['type_5fvariant_5frange',['type_variant_range',['../namespacelmf_1_1src_1_1common_1_1range.html#a58f5cff733c3b357e42d3ce87c7080a0',1,'lmf::src::common::range']]]
 ];

@@ -2,6 +2,7 @@ var searchData=
 [
   ['scientificname',['scientificName',['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#a3af309c396e738565e75fff8df1b960a',1,'lmf::src::core::statement::Statement']]],
   ['scriptname',['scriptName',['../classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation.html#a728fa20d7dcdbb6714f97b87cbe8ee0f',1,'lmf::src::core::form_representation::FormRepresentation']]],
+  ['sd_5frange',['sd_range',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a69afee1e13ba980f4da1e6d7fb0c488a',1,'lmf::src::config::mdf']]],
   ['semanticdomain',['semanticDomain',['../classlmf_1_1src_1_1mrd_1_1subject__field_1_1_subject_field.html#aa625fa1b644690d878091eaa4ea9460f',1,'lmf::src::mrd::subject_field::SubjectField']]],
   ['semanticrelation',['semanticRelation',['../classlmf_1_1src_1_1morphology_1_1related__form_1_1_related_form.html#a55ef34c7db0320aede2a86eff3085d46',1,'lmf::src::morphology::related_form::RelatedForm']]],
   ['semanticrelation_5frange',['semanticRelation_range',['../namespacelmf_1_1src_1_1common_1_1range.html#abab5b7b201360f47699b34e9e685deb6',1,'lmf::src::common::range']]],

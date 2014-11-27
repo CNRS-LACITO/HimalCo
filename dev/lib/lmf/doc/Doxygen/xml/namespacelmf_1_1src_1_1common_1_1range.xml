@@ -57,7 +57,7 @@
     &quot;archaic&quot;
 ])</initializer>
         <briefdescription>
-<para>Possible values allowed for LMF variant type Form attribute. </para>        </briefdescription>
+<para>Possible values allowed for LMF variant type FormRepresentation attribute. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
@@ -310,7 +310,8 @@
     &quot;comitative&quot;,
     &quot;construction&quot;,
     &quot;directional&quot;,
-    &quot;irregularity&quot;
+    &quot;irregularity&quot;,
+    &quot;classifier&quot;
 ])</initializer>
         <briefdescription>
 <para>Possible values allowed for paradigm label Paradigm attribute. </para>        </briefdescription>
@@ -337,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="167" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="167" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="168" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1common_1_1range_1a61963614ed4bb258825e4104a8b47014" prot="public" static="no" mutable="no">
         <type>tuple</type>
@@ -360,7 +361,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="175" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="175" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="176" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1common_1_1range_1a6aef6275dfffea6c0ebf4f105ae35b64" prot="public" static="no" mutable="no">
         <type>tuple</type>
@@ -380,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="187" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="187" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" line="188" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py" bodystart="188" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

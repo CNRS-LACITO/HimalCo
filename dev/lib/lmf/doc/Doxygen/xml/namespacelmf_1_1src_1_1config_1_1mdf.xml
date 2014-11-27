@@ -3,61 +3,100 @@
   <compounddef id="namespacelmf_1_1src_1_1config_1_1mdf" kind="namespace">
     <compoundname>lmf::src::config::mdf</compoundname>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a888cd9df8b9511d408e646dc404b5232" prot="public" static="no" mutable="no">
-        <type>tuple</type>
-        <definition>tuple lmf::src::config::mdf.mdf_lmf</definition>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ae964bee79f865adc071d72a678dde128" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lmf::src::config::mdf.VERNACULAR</definition>
         <argsstring></argsstring>
-        <name>mdf_lmf</name>
-        <initializer>= dict({
-    &quot;lx&quot; : lambda lx, lexical_entry: lexical_entry.set_lexeme(lx),
-    &quot;ps&quot; : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
-    &quot;st&quot; : lambda st, lexical_entry: lexical_entry.set_status(st),
-    &quot;sy&quot; : lambda sy, lexical_entry: lexical_entry.create_and_add_related_form(sy, <ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;sy&quot;]),
-    &quot;an&quot; : lambda an, lexical_entry: lexical_entry.create_and_add_related_form(an, <ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;an&quot;]),
-    &quot;cf&quot; : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf, <ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;cf&quot;])
-})</initializer>
+        <name>VERNACULAR</name>
+        <initializer>= &quot;ver&quot;</initializer>
         <briefdescription>
-<para>Mapping between MDF markers and LMF representation (input) </para>        </briefdescription>
+<para>Define languages. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="4" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="4" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ab4d5456356fada2592d7fb5d7e8ee780" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lmf::src::config::mdf.ENGLISH</definition>
+        <argsstring></argsstring>
+        <name>ENGLISH</name>
+        <initializer>= &quot;eng&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ae420b51631e5e37ccde4de5d72d05fae" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lmf::src::config::mdf.NATIONAL</definition>
+        <argsstring></argsstring>
+        <name>NATIONAL</name>
+        <initializer>= &quot;nat&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ab52ee069b7cd6fa8b52afa15ea6f221e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lmf::src::config::mdf.REGIONAL</definition>
+        <argsstring></argsstring>
+        <name>REGIONAL</name>
+        <initializer>= &quot;reg&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a888cd9df8b9511d408e646dc404b5232" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.mdf_lmf</definition>
+        <argsstring></argsstring>
+        <name>mdf_lmf</name>
+        <briefdescription>
+<para>Mapping between MDF markers and LMF representation (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1afe5efb72442beb65b5083335b744845c" prot="public" static="no" mutable="no">
         <type>list</type>
         <definition>list lmf::src::config::mdf.mdf_order</definition>
         <argsstring></argsstring>
         <name>mdf_order</name>
-        <initializer>= [&quot;lx&quot;, &quot;ps&quot;, &quot;st&quot;, &quot;sy&quot;, &quot;an&quot;, &quot;cf&quot;]</initializer>
         <briefdescription>
-<para>Order in which MDF markers must be written (output) </para>        </briefdescription>
+<para>Order in which MDF markers must be written (output) This is the standard order defined in Appendix B of &quot;Making Dictionaries. A guide to lexicography and the Multi-Dictionary Formatter&quot;, Software version 1.0, David F. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Coward, Charles E. Grimes, SIL International, Waxhaw, North Carolina, 2000 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="14" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="131" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a78d8f1444783c1b86cbbd91f49a0cd4f" prot="public" static="no" mutable="no">
         <type>tuple</type>
         <definition>tuple lmf::src::config::mdf.lmf_mdf</definition>
         <argsstring></argsstring>
         <name>lmf_mdf</name>
-        <initializer>= dict({
-    &quot;lx&quot; : lambda lexical_entry: lexical_entry.get_lexeme(),
-    &quot;ps&quot; : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
-    &quot;st&quot; : lambda lexical_entry: lexical_entry.get_status(),
-    &quot;sy&quot; : lambda lexical_entry: lexical_entry.find_related_forms(<ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;sy&quot;]),
-    &quot;an&quot; : lambda lexical_entry: lexical_entry.find_related_forms(<ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;an&quot;]),
-    &quot;cf&quot; : lambda lexical_entry: lexical_entry.find_related_forms(<ref refid="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" kindref="member">mdf_semanticRelation</ref>[&quot;cf&quot;])
-})</initializer>
         <briefdescription>
 <para>Mapping between LMF representation and MDF markers (output) </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="17" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="255" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a1e76a452fc77f05851e4369134f5980b" prot="public" static="no" mutable="no">
         <type>tuple</type>
@@ -65,27 +104,30 @@
         <argsstring></argsstring>
         <name>ps_partOfSpeech</name>
         <initializer>= dict({
-    &quot;adj&quot;       : &quot;adjective&quot;,                  # adjective
-    &quot;adv&quot;       : &quot;adverb&quot;,                     # adverb(ial)
-    &quot;class&quot;     : &quot;classifier&quot;,                 # classifier (MDF)
-    &quot;clf&quot;       : &quot;classifier&quot;,                 # classifier (Leipzig)
-    &quot;cnj&quot;       : &quot;conjunction&quot;,                # conjunction
-    &quot;disc.PTCL&quot; : &quot;particle&quot;,                   # discourse particle
-    &quot;ideo&quot;      : &quot;ideophone&quot;,                  # ideophones
-    &quot;intj&quot;      : &quot;interjection&quot;,               # interjection
-    &quot;lnk&quot;       : &quot;linker&quot;,                     # linker
-    &quot;n&quot;         : &quot;noun&quot;,                       # noun
-    &quot;Np&quot;        : &quot;possessive pronouns&quot;,        # possessed nouns
-    &quot;neg&quot;       : &quot;negation&quot;,                   # negative
-    &quot;num&quot;       : &quot;numeral&quot;,                    # number
-    &quot;prep&quot;      : &quot;preposition&quot;,                # preposition
-    &quot;pro&quot;       : &quot;pronoun&quot;,                    # pronoun/pronominal
-    &quot;v&quot;         : &quot;verb&quot;,                       # verb
-    &quot;vi&quot;        : &quot;intransitive verb&quot;,          # intransitive verb
-    &quot;vi.s&quot;      : &quot;stative intransitive verb&quot;,  # stative intransitive verb
-    &quot;vr&quot;        : &quot;reflexive verb&quot;,             # reflexive/quasi-reflexive/intradirective verb
-    &quot;vt&quot;        : &quot;transitive verb&quot;,            # transitive verb
-    &quot;vt/i&quot;      : &quot;bitransistive verb&quot;          # ambitransitive verb
+    &quot;adj&quot;           : &quot;adjective&quot;,                  # adjective
+    &quot;adv&quot;           : &quot;adverb&quot;,                     # adverb(ial)
+    &quot;class&quot;         : &quot;classifier&quot;,                 # classifier (MDF)
+    &quot;clf&quot;           : &quot;classifier&quot;,                 # classifier (Leipzig)
+    &quot;cnj&quot;           : &quot;conjunction&quot;,                # conjunction
+    &quot;disc.PTCL&quot;     : &quot;particle&quot;,                   # discourse particle
+    &quot;ideo&quot;          : &quot;ideophone&quot;,                  # ideophones
+    &quot;intj&quot;          : &quot;interjection&quot;,               # interjection
+    &quot;interj&quot;        : &quot;interjection&quot;,               # interjection
+    &quot;lnk&quot;           : &quot;linker&quot;,                     # linker
+    &quot;n&quot;             : &quot;noun&quot;,                       # noun
+    &quot;N&quot;             : &quot;noun&quot;,                       # noun
+    &quot;Np&quot;            : &quot;possessive pronouns&quot;,        # possessed nouns
+    &quot;_poss._pref&quot;   : &quot;possessive pronouns&quot;,        # possessed nouns
+    &quot;neg&quot;           : &quot;negation&quot;,                   # negative
+    &quot;num&quot;           : &quot;numeral&quot;,                    # number
+    &quot;prep&quot;          : &quot;preposition&quot;,                # preposition
+    &quot;pro&quot;           : &quot;pronoun&quot;,                    # pronoun/pronominal
+    &quot;v&quot;             : &quot;verb&quot;,                       # verb
+    &quot;vi&quot;            : &quot;intransitive verb&quot;,          # intransitive verb
+    &quot;vi.s&quot;          : &quot;stative intransitive verb&quot;,  # stative intransitive verb
+    &quot;vr&quot;            : &quot;reflexive verb&quot;,             # reflexive/quasi-reflexive/intradirective verb
+    &quot;vt&quot;            : &quot;transitive verb&quot;,            # transitive verb
+    &quot;vt/i&quot;          : &quot;bitransistive verb&quot;          # ambitransitive verb
 })</initializer>
         <briefdescription>
 <para>Mapping between &apos;ps&apos; MDF marker value and LMF part of speech LexicalEntry attribute value (input) </para>        </briefdescription>
@@ -93,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="27" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="366" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="366" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a20455cbc7aa64cc6eb4ad1749a381738" prot="public" static="no" mutable="no">
         <type>tuple</type>
@@ -124,7 +166,78 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="52" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="52" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="394" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ab58fb9b58bc32ac36efe9b26e4ea3ca2" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.pd_person</definition>
+        <argsstring></argsstring>
+        <name>pd_person</name>
+        <initializer>= dict({
+    1 : &quot;first person&quot;,
+    2 : &quot;second person&quot;,
+    3 : &quot;third person&quot;
+})</initializer>
+        <briefdescription>
+<para>Mapping between &apos;pd&apos; MDF markers and LMF person WordForm attribute value (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="414" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a011f241f41e3620deefe53cbb42286b9" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.pd_anymacy</definition>
+        <argsstring></argsstring>
+        <name>pd_anymacy</name>
+        <initializer>= dict({
+    4 : &quot;inanimate&quot;
+})</initializer>
+        <briefdescription>
+<para>Mapping between &apos;pd&apos; MDF markers and LMF anymacy WordForm attribute value (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="421" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a64be26974728c369cd72ef80bd297154" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.pd_grammaticalNumber</definition>
+        <argsstring></argsstring>
+        <name>pd_grammaticalNumber</name>
+        <initializer>= dict({
+    &apos;d&apos;     : &quot;dual&quot;,
+    &apos;p&apos;     : &quot;plural&quot;,
+    &quot;pl&quot;    : &quot;plural&quot;,
+    &apos;s&apos;     : &quot;singular&quot;,
+    &quot;sg&quot;    : &quot;singular&quot;
+})</initializer>
+        <briefdescription>
+<para>Mapping between &apos;pd&apos; MDF markers and LMF grammatical number WordForm attribute value (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="426" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1ac57ebe92cdf841d8d1bfe1e1b94b96bb" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.pd_clusivity</definition>
+        <argsstring></argsstring>
+        <name>pd_clusivity</name>
+        <initializer>= dict({
+    &apos;i&apos;     : &quot;inclusive&quot;,
+    &apos;e&apos;     : &quot;exclusive&quot;
+})</initializer>
+        <briefdescription>
+<para>Mapping between &apos;pd&apos; MDF markers and LMF clusivity WordForm attribute value (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="435" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="435" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a8e61adc475ca415a33c85ef16c96d03d" prot="public" static="no" mutable="no">
         <type>tuple</type>
@@ -146,7 +259,74 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="72" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="72" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="441" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a69afee1e13ba980f4da1e6d7fb0c488a" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.sd_range</definition>
+        <argsstring></argsstring>
+        <name>sd_range</name>
+        <briefdescription>
+<para>Possible values allowed for &apos;sd&apos; MDF marker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="453" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a61a24538d210d4eca3f57f183733fa5a" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.lf_range</definition>
+        <argsstring></argsstring>
+        <name>lf_range</name>
+        <briefdescription>
+<para>Possible values allowed for &apos;lf&apos; MDF marker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="513" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1config_1_1mdf_1a59bb4fce205d8159bc72c946e3855c4a" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::config::mdf.ps_range</definition>
+        <argsstring></argsstring>
+        <name>ps_range</name>
+        <briefdescription>
+<para>Possible values allowed for &apos;ps&apos; MDF marker. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="558" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="558" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1config_1_1mdf_1ab9d98a9297210440ed93a3ca490ee7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.config.mdf.set_bw</definition>
+        <argsstring></argsstring>
+        <name>set_bw</name>
+        <briefdescription>
+<para>Functions to process some MDF fields (input) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="10" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="10" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1config_1_1mdf_1a5af3cc74d2bb8b03d7657c0e7fb3598b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.config.mdf.get_bw</definition>
+        <argsstring></argsstring>
+        <name>get_bw</name>
+        <briefdescription>
+<para>Functions to process some MDF fields (output) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" line="248" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/config/mdf.py" bodystart="248" bodyend="253"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

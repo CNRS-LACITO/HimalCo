@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="13" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a0d5cc63c48e3c5aa2bea6ad21c288e4f" prot="public" static="no" mutable="no">
         <type></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="16" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af4146645965f04411b37e8e52e7a04e0" prot="public" static="no" mutable="no">
         <type></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="19" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a378c5ca2854f818361547eee196d3497" prot="public" static="no" mutable="no">
         <type></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="22" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -69,7 +69,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="9" bodyend="23"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="12" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ae39531404208c5fdb20f431d7949568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -82,20 +82,261 @@
 <para>Release GlobalInformation, Lexicon, Speaker instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="24" bodyend="36"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="27" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a6294a827ab54971b60c5843cb69d379c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_lexicons</definition>
+        <argsstring></argsstring>
+        <name>get_lexicons</name>
+        <briefdescription>
+<para>Get all lexicons maintained by the lexical resource. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Python list of lexicons. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="40" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a64ea1ed8f75c1aee5a2ff07786d81851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.add_lexicon</definition>
+        <argsstring></argsstring>
+        <name>add_lexicon</name>
+        <briefdescription>
+<para>Add a lexicon to the lexical resource. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexicon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Lexicon instance to add to the Lexical Resource. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lexical Resource instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="46" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a7b823f2fc2470472980e061420799c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.remove_lexicon</definition>
+        <argsstring></argsstring>
+        <name>remove_lexicon</name>
+        <briefdescription>
+<para>Remove a lexicon from the lexical resource. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lexicon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Lexicon instance to remove from the Lexical Resource. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lexical Resource instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="54" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a83880e971a7137cd9b0599bd056702a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_lexicon</definition>
+        <argsstring></argsstring>
+        <name>get_lexicon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Retrieve a lexicon from its identifier.
+@param id The identifier of the lexicon to retrieve.
+@result A Lexicon instance, or None if not found.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="62" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="62" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a32872ca39f2aeb0d87e59bd89079033d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.set_creationDate</definition>
+        <argsstring></argsstring>
+        <name>set_creationDate</name>
+        <briefdescription>
+<para>Set creation date. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;creationDate&apos; is owned by GlobalInformation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The date to set, in format YYYY-MM-DD. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="71" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="71" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e3bae782878759cdcac67cf6bccd3c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_creationDate</definition>
+        <argsstring></argsstring>
+        <name>get_creationDate</name>
+        <briefdescription>
+<para>Get creation date. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;creationDate&apos; is owned by GlobalInformation. <simplesect kind="return"><para>GlobalInformation attribute &apos;creationdDate&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="82" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a976816edb5e2825c212372fbf76d8338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.set_lastUpdate</definition>
+        <argsstring></argsstring>
+        <name>set_lastUpdate</name>
+        <briefdescription>
+<para>Set last update. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;lastUpdate&apos; is owned by GlobalInformation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The date to set, in format YYYY-MM-DD. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="89" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="89" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a205676f0701ea4ad6f56e055132d98a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_lastUpdate</definition>
+        <argsstring></argsstring>
+        <name>get_lastUpdate</name>
+        <briefdescription>
+<para>Get last update. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;lastUpdate&apos; is owned by GlobalInformation. <simplesect kind="return"><para>GlobalInformation attribute &apos;lastUpdate&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="100" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af7c40fb3cc957000b20aa39d9c5e6693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.set_author</definition>
+        <argsstring></argsstring>
+        <name>set_author</name>
+        <briefdescription>
+<para>Set author. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;author&apos; is owned by GlobalInformation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>author</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The author&apos;s name to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="107" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e896e7607f9c71e7db166a652137f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_author</definition>
+        <argsstring></argsstring>
+        <name>get_author</name>
+        <briefdescription>
+<para>Get author. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;author&apos; is owned by GlobalInformation. <simplesect kind="return"><para>GlobalInformation attribute &apos;author&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="115" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="115" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a416f746c8212930d4d98059dedc7d4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.set_description</definition>
+        <argsstring></argsstring>
+        <name>set_description</name>
+        <briefdescription>
+<para>Set description. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;description&apos; is owned by GlobalInformation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>description</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="122" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1aa86a440b33cbee8982a3130a9de21319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_description</definition>
+        <argsstring></argsstring>
+        <name>get_description</name>
+        <briefdescription>
+<para>Get description. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;description&apos; is owned by GlobalInformation. <simplesect kind="return"><para>GlobalInformation attribute &apos;description&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="130" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="130" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ab71215eeb4d9ae9a4d929c899c26a2eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.lexical_resource.LexicalResource.get_bibliographicCitation</definition>
+        <argsstring></argsstring>
+        <name>get_bibliographicCitation</name>
+        <briefdescription>
+<para>Get bibliographic citation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;bibliographicCitation&apos; is owned by GlobalInformation. <simplesect kind="return"><para>GlobalInformation attribute &apos;bibliographicCitation&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="137" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="137" bodyend="143"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Lexical Resource is a class representing the entire resource and is a container for one or more lexicons. There is only one Lexical Resource instance.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="6" bodyend="36"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/lexical_resource.py" bodystart="9" bodyend="143"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ae39531404208c5fdb20f431d7949568f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a8f7f77cfb5a432a9968844c33e6123a2" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a64ea1ed8f75c1aee5a2ff07786d81851" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>add_lexicon</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2b48b5abc2a03ba17749f2e361f948fe" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>dtdVersion</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e896e7607f9c71e7db166a652137f87" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_author</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1ab71215eeb4d9ae9a4d929c899c26a2eb" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_bibliographicCitation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a2e3bae782878759cdcac67cf6bccd3c8" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_creationDate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1aa86a440b33cbee8982a3130a9de21319" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_description</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a205676f0701ea4ad6f56e055132d98a2" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_lastUpdate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a83880e971a7137cd9b0599bd056702a1" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_lexicon</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a6294a827ab54971b60c5843cb69d379c" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>get_lexicons</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a0d5cc63c48e3c5aa2bea6ad21c288e4f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>global_information</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af4146645965f04411b37e8e52e7a04e0" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>lexicon</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a7b823f2fc2470472980e061420799c3f" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>remove_lexicon</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1af7c40fb3cc957000b20aa39d9c5e6693" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>set_author</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a32872ca39f2aeb0d87e59bd89079033d" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>set_creationDate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a416f746c8212930d4d98059dedc7d4c9" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>set_description</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a976816edb5e2825c212372fbf76d8338" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>set_lastUpdate</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource_1a378c5ca2854f818361547eee196d3497" prot="public" virt="non-virtual"><scope>lmf::src::core::lexical_resource::LexicalResource</scope><name>speaker</name></member>
     </listofallmembers>
   </compounddef>

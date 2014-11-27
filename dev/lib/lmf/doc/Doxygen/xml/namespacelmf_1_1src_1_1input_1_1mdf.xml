@@ -25,12 +25,19 @@
 <parameterdescription>
 <para>A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is &apos;mdf_lmf&apos; dictionary defined in &apos;<ref refid="config_2mdf_8py" kindref="compound">src/config/mdf.py</ref>&apos;. Please refer to it as an example. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python string identifying the created lexicon. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>A Lexicon instance containing all lexical entries. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/mdf.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/mdf.py" bodystart="11" bodyend="43"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/mdf.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/input/mdf.py" bodystart="12" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

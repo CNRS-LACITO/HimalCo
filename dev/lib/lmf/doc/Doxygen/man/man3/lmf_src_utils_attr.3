@@ -1,0 +1,66 @@
+.TH "lmf.src.utils.attr" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.utils.attr \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBcheck_attr_type\fP"
+.br
+.RI "\fICheck that attribute value is of specified type\&. \fP"
+.ti -1c
+.RI "def \fBcheck_attr_range\fP"
+.br
+.RI "\fICheck that attribute value is in specified range\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.attr\&.check_attr_range (value, range, msg, mapping = \fCNone\fP)"
+
+.PP
+Check that attribute value is in specified range\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvalue\fP The attribute value to check\&. 
+.br
+\fIrange\fP A Python set giving the range of allowed values\&. 
+.br
+\fImsg\fP The message to display if value is out-of-range\&. 
+.br
+\fImapping\fP A Python dictionary giving mapping between values (i\&.e\&. from MDF to LMF) 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The value to set, or None if out-of-range\&. 
+.RE
+.PP
+
+.PP
+Definition at line 19 of file attr\&.py\&.
+.SS "def lmf\&.src\&.utils\&.attr\&.check_attr_type (val, typ, msg)"
+
+.PP
+Check that attribute value is of specified type\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIval\fP The attribute value to check\&. 
+.br
+\fItyp\fP The allowed Python type(s): simple, or Python set or list\&. 
+.br
+\fImsg\fP The message to display if value is not of correct type\&. 
+.RE
+.PP
+
+.PP
+Definition at line 5 of file attr\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

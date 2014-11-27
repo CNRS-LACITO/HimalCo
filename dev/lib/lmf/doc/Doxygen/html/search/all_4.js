@@ -11,6 +11,7 @@ var searchData=
   ['description',['description',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#aa37acb480d22d4b7c79ece3f04a6e1a2',1,'lmf.src.core.global_information.GlobalInformation.description()'],['../classlmf_1_1src_1_1resources_1_1video_1_1_video.html#a21f39ce29f1958b3c82169eabbffc34d',1,'lmf.src.resources.video.Video.description()']]],
   ['dialect',['dialect',['../classlmf_1_1src_1_1core_1_1form__representation_1_1_form_representation.html#ad19ad7a519048bc71ff0d0df2c888621',1,'lmf::src::core::form_representation::FormRepresentation']]],
   ['doc_2epy',['doc.py',['../doc_8py.html',1,'']]],
+  ['doc_5fwrite',['doc_write',['../namespacelmf_1_1src_1_1output_1_1doc.html#a38e0eb27e45ce05d6957ed8ce597cadf',1,'lmf::src::output::doc']]],
   ['dtdversion',['dtdVersion',['../classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource.html#a2b48b5abc2a03ba17749f2e361f948fe',1,'lmf::src::core::lexical_resource::LexicalResource']]],
   ['durationofeffectivespeech',['durationOfEffectiveSpeech',['../classlmf_1_1src_1_1resources_1_1audio_1_1_audio.html#ad1640839eb1c58ca5ef9796eb7c0f559',1,'lmf::src::resources::audio::Audio']]]
 ];

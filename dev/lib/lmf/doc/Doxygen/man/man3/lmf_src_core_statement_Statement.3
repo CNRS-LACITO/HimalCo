@@ -1,4 +1,4 @@
-.TH "lmf.src.core.statement.Statement" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.statement.Statement" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -20,6 +20,96 @@ lmf.src.core.statement.Statement \-
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBset_note\fP"
+.br
+.RI "\fISet note\&. \fP"
+.ti -1c
+.RI "def \fBget_note\fP"
+.br
+.RI "\fIGet note\&. \fP"
+.ti -1c
+.RI "def \fBset_language\fP"
+.br
+.RI "\fISet language used for the note\&. \fP"
+.ti -1c
+.RI "def \fBget_language\fP"
+.br
+.RI "\fIGet language used for the note\&. \fP"
+.ti -1c
+.RI "def \fBset_noteType\fP"
+.br
+.RI "\fISet type of the note\&. \fP"
+.ti -1c
+.RI "def \fBget_noteType\fP"
+.br
+.RI "\fIGet type of the note\&. \fP"
+.ti -1c
+.RI "def \fBset_usageNote\fP"
+.br
+.RI "\fISet usage note\&. \fP"
+.ti -1c
+.RI "def \fBget_usageNote\fP"
+.br
+.RI "\fIGet usage note\&. \fP"
+.ti -1c
+.RI "def \fBset_encyclopedicInformation\fP"
+.br
+.RI "\fISet encyclopedic information\&. \fP"
+.ti -1c
+.RI "def \fBget_encyclopedicInformation\fP"
+.br
+.RI "\fIGet encyclopedic information\&. \fP"
+.ti -1c
+.RI "def \fBset_restriction\fP"
+.br
+.RI "\fISet restriction\&. \fP"
+.ti -1c
+.RI "def \fBget_restriction\fP"
+.br
+.RI "\fIGet restriction\&. \fP"
+.ti -1c
+.RI "def \fBset_borrowedWord\fP"
+.br
+.ti -1c
+.RI "def \fBget_borrowedWord\fP"
+.br
+.ti -1c
+.RI "def \fBset_writtenForm\fP"
+.br
+.ti -1c
+.RI "def \fBget_writtenForm\fP"
+.br
+.ti -1c
+.RI "def \fBset_etymology\fP"
+.br
+.ti -1c
+.RI "def \fBget_etymology\fP"
+.br
+.ti -1c
+.RI "def \fBset_etymologyComment\fP"
+.br
+.ti -1c
+.RI "def \fBget_etymologyComment\fP"
+.br
+.ti -1c
+.RI "def \fBset_termSourceLanguage\fP"
+.br
+.ti -1c
+.RI "def \fBget_termSourceLanguage\fP"
+.br
+.ti -1c
+.RI "def \fBset_etymologyGloss\fP"
+.br
+.ti -1c
+.RI "def \fBget_etymologyGloss\fP"
+.br
+.ti -1c
+.RI "def \fBset_etymologySource\fP"
+.br
+.ti -1c
+.RI "def \fBget_etymologySource\fP"
+.br
 .in -1c
 .SS "Public Attributes"
 
@@ -84,7 +174,7 @@ lmf.src.core.statement.Statement \-
 .PP 
 'Statement is a class representating a narrative description that refines or complements Definition\&.' (LMF) 
 .PP
-Definition at line 6 of file statement\&.py\&.
+Definition at line 9 of file statement\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.core\&.statement\&.Statement\&.__init__ (self)"
@@ -99,89 +189,486 @@ A \fBStatement\fP instance\&.
 .PP
 
 .PP
-Definition at line 9 of file statement\&.py\&.
+Definition at line 12 of file statement\&.py\&.
 .SS "def lmf\&.src\&.core\&.statement\&.Statement\&.__del__ (self)"
 
 .PP
 Destructor\&. Release TextRepresentation instances\&. 
 .PP
-Definition at line 35 of file statement\&.py\&.
+Definition at line 38 of file statement\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_borrowedWord (self)"
+
+.PP
+.nf
+Get source language (in English).
+@return Statement attribute 'borrowedWord'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 179 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_encyclopedicInformation (self, language = \fCNone\fP)"
+
+.PP
+Get encyclopedic information\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP If this argument is given, get encyclopedic information only if written in this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The filtered \fBStatement\fP attribute 'encyclopedicInformation'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 138 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_etymology (self)"
+
+.PP
+.nf
+Get etymology.
+@return Statement attribute 'etymology'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 211 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_etymologyComment (self, term_source_language = \fCNone\fP)"
+
+.PP
+.nf
+Get etymology comment (in English).
+@param term_source_language The language of the etymology comment to retrieve.
+@return Statement attribute 'etymologyComment'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 230 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_etymologyGloss (self)"
+
+.PP
+.nf
+Get etymology gloss.
+@return Statement attribute 'etymologyGloss'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 264 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_etymologySource (self)"
+
+.PP
+.nf
+Get etymology source.
+@return Statement attribute 'etymologySource'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 280 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_language (self)"
+
+.PP
+Get language used for the note\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP attribute 'language'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_note (self, type = \fCNone\fP, language = \fCNone\fP)"
+
+.PP
+Get note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype\fP If this argument is given, get note only if its type corresponds\&. 
+.br
+\fIlanguage\fP If this argument is given, get note only if written in this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The filtered \fBStatement\fP attribute 'note'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_noteType (self)"
+
+.PP
+Get type of the note\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP attribute 'noteType'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_restriction (self, language = \fCNone\fP)"
+
+.PP
+Get restriction\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP If this argument is given, get restriction only if written in this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The filtered \fBStatement\fP attribute 'restriction'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 159 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_termSourceLanguage (self)"
+
+.PP
+.nf
+Get language used for the etymology comment.
+@return Statement attribute 'termSourceLanguage'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 248 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_usageNote (self, language = \fCNone\fP)"
+
+.PP
+Get usage note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP If this argument is given, get usage note only if written in this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The filtered \fBStatement\fP attribute 'usageNote'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_writtenForm (self)"
+
+.PP
+.nf
+Get loan word.
+@return Statement attribute 'writtenForm'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 195 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_borrowedWord (self, borrowed_word)"
+
+.PP
+.nf
+Set source language (in English), e.g. "Chinese".
+@param borrowed_word The source language to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 169 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_encyclopedicInformation (self, encyclopedic_information, language = \fCNone\fP)"
+
+.PP
+Set encyclopedic information\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIencyclopedic_information\fP Encyclopedic information to set\&. 
+.br
+\fIlanguage\fP Language used for the encyclopedic information\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 127 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_etymology (self, etymology)"
+
+.PP
+.nf
+Set etymology.
+@param etymolgy The etymology to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 201 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_etymologyComment (self, etymology_comment, term_source_language = \fCNone\fP)"
+
+.PP
+.nf
+Set etymology comment (in English).
+@param etymolgy_comment The etymology comment to set.
+@param term_source_language The language used for the comment.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 217 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_etymologyGloss (self, etymology_gloss)"
+
+.PP
+.nf
+Set etymology gloss.
+@param etymolgy_gloss The etymology gloss to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 254 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_etymologySource (self, etymology_source)"
+
+.PP
+.nf
+Set etymology source.
+@param etymolgy_source The etymology source to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 270 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_language (self, language)"
+
+.PP
+Set language used for the note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP Language used for the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 73 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_note (self, note, type = \fCNone\fP, language = \fCNone\fP)"
+
+.PP
+Set note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInote\fP Note to set\&. 
+.br
+\fItype\fP Type of the note\&. 
+.br
+\fIlanguage\fP Language used for the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_noteType (self, note_type)"
+
+.PP
+Set type of the note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInote_type\fP Type of the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_restriction (self, restriction, language = \fCNone\fP)"
+
+.PP
+Set restriction\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrestriction\fP Restriction to set\&. 
+.br
+\fIlanguage\fP Language used for the restriction\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 148 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_termSourceLanguage (self, term_source_language)"
+
+.PP
+.nf
+Set language used for the etymology comment.
+@param term_source_language The etymology comment language to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 238 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_usageNote (self, usage_note, language = \fCNone\fP)"
+
+.PP
+Set usage note\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIusage_note\fP Usage note to set\&. 
+.br
+\fIlanguage\fP Language used for the usage note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBStatement\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 106 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_writtenForm (self, written_form)"
+
+.PP
+.nf
+Set loan word.
+@param written_form The loan word to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 185 of file statement\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.borrowedWord"
 
 .PP
-Definition at line 21 of file statement\&.py\&.
+Definition at line 24 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.derivation"
 
 .PP
-Definition at line 20 of file statement\&.py\&.
+Definition at line 23 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.encyclopedicInformation"
 
 .PP
-Definition at line 17 of file statement\&.py\&.
+Definition at line 20 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.etymology"
 
 .PP
-Definition at line 24 of file statement\&.py\&.
+Definition at line 27 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.etymologyComment"
 
 .PP
-Definition at line 25 of file statement\&.py\&.
+Definition at line 28 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.etymologyGloss"
 
 .PP
-Definition at line 26 of file statement\&.py\&.
+Definition at line 29 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.etymologySource"
 
 .PP
-Definition at line 27 of file statement\&.py\&.
+Definition at line 30 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.language"
 
 .PP
-Definition at line 16 of file statement\&.py\&.
+Definition at line 19 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.note"
 
 .PP
-Definition at line 15 of file statement\&.py\&.
+Definition at line 18 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.noteType"
 
 .PP
-Definition at line 14 of file statement\&.py\&.
+Definition at line 17 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.restriction"
 
 .PP
-Definition at line 19 of file statement\&.py\&.
+Definition at line 22 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.scientificName"
 
 .PP
-Definition at line 30 of file statement\&.py\&.
+Definition at line 33 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.sense"
 
 .PP
-Definition at line 23 of file statement\&.py\&.
+Definition at line 26 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.targetLexicalEntry"
 
 .PP
-Definition at line 29 of file statement\&.py\&.
+Definition at line 32 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.termSourceLanguage"
 
 .PP
-Definition at line 28 of file statement\&.py\&.
+Definition at line 31 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.text_representation"
 
 .PP
 TextRepresentation instances are owned by \fBStatement\fP There is zero to many TextRepresentation instances per \fBStatement\fP\&. 
 .PP
-Definition at line 33 of file statement\&.py\&.
+Definition at line 36 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.usageNote"
 
 .PP
-Definition at line 18 of file statement\&.py\&.
+Definition at line 21 of file statement\&.py\&.
 .SS "lmf\&.src\&.core\&.statement\&.Statement\&.writtenForm"
 
 .PP
-Definition at line 22 of file statement\&.py\&.
+Definition at line 25 of file statement\&.py\&.
 
 .SH "Author"
 .PP 

@@ -41,7 +41,7 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;linker&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal">])</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>LMF<sp/>variant<sp/>type<sp/>Form<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>LMF<sp/>variant<sp/>type<sp/>FormRepresentation<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35" refid="namespacelmf_1_1src_1_1common_1_1range_1a58f5cff733c3b357e42d3ce87c7080a0" refkind="member"><highlight class="normal">type_variant_range<sp/>=<sp/>set([</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;unspecified&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;orthography&quot;</highlight><highlight class="normal">,</highlight></codeline>
@@ -170,37 +170,38 @@
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;comitative&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;construction&quot;</highlight><highlight class="normal">,</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;directional&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;irregularity&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal">])</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>example<sp/>type<sp/>Context<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167" refid="namespacelmf_1_1src_1_1common_1_1range_1ac02d347b39dab64b3ce3604168d1b652" refkind="member"><highlight class="normal">type_example_range<sp/>=<sp/>set([</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;proverb&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;locution&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;example&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;combination&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal">])</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>media<sp/>type<sp/>Material<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175" refid="namespacelmf_1_1src_1_1common_1_1range_1a61963614ed4bb258825e4104a8b47014" refkind="member"><highlight class="normal">mediaType_range<sp/>=<sp/>set([</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;unspecified&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;audio&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;video&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;document&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;image&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;drawing&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal">])</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>quality<sp/>Audio<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="187" refid="namespacelmf_1_1src_1_1common_1_1range_1a6aef6275dfffea6c0ebf4f105ae35b64" refkind="member"><highlight class="normal">quality_range<sp/>=<sp/>set([</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;very<sp/>low&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;low&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;normal&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;good&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;very<sp/>good&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">#<sp/>high</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="193"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;irregularity&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;classifier&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>example<sp/>type<sp/>Context<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="namespacelmf_1_1src_1_1common_1_1range_1ac02d347b39dab64b3ce3604168d1b652" refkind="member"><highlight class="normal">type_example_range<sp/>=<sp/>set([</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;proverb&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;locution&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;example&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;combination&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>media<sp/>type<sp/>Material<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="namespacelmf_1_1src_1_1common_1_1range_1a61963614ed4bb258825e4104a8b47014" refkind="member"><highlight class="normal">mediaType_range<sp/>=<sp/>set([</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;unspecified&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;unknown&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;audio&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;video&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;document&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;text&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;image&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;drawing&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">])</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">##<sp/>Possible<sp/>values<sp/>allowed<sp/>for<sp/>quality<sp/>Audio<sp/>attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="namespacelmf_1_1src_1_1common_1_1range_1a6aef6275dfffea6c0ebf4f105ae35b64" refkind="member"><highlight class="normal">quality_range<sp/>=<sp/>set([</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;very<sp/>low&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;low&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;normal&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;good&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;very<sp/>good&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">#<sp/>high</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">])</highlight></codeline>
     </programlisting>
     <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/common/range.py"/>
   </compounddef>

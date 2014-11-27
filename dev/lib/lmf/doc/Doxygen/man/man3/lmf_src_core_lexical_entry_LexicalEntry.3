@@ -1,4 +1,4 @@
-.TH "lmf.src.core.lexical_entry.LexicalEntry" 3 "Fri Oct 3 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.lexical_entry.LexicalEntry" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,6 +37,38 @@ lmf.src.core.lexical_entry.LexicalEntry \-
 .br
 .RI "\fIGet lexical entry status\&. \fP"
 .ti -1c
+.RI "def \fBset_date\fP"
+.br
+.RI "\fISet lexical entry date\&. \fP"
+.ti -1c
+.RI "def \fBget_date\fP"
+.br
+.RI "\fIGet lexical entry date\&. \fP"
+.ti -1c
+.RI "def \fBset_homonymNumber\fP"
+.br
+.RI "\fISet lexical entry homonym number\&. \fP"
+.ti -1c
+.RI "def \fBget_homonymNumber\fP"
+.br
+.RI "\fIGet lexical entry homonym number\&. \fP"
+.ti -1c
+.RI "def \fBset_bibliography\fP"
+.br
+.RI "\fISet lexical entry bibliography\&. \fP"
+.ti -1c
+.RI "def \fBget_bibliography\fP"
+.br
+.RI "\fIGet lexical entry bibliography\&. \fP"
+.ti -1c
+.RI "def \fBset_independentWord\fP"
+.br
+.RI "\fISet lexical entry independent word indication\&. \fP"
+.ti -1c
+.RI "def \fBget_independentWord\fP"
+.br
+.RI "\fIGet lexical entry independent word indication\&. \fP"
+.ti -1c
 .RI "def \fBget_id\fP"
 .br
 .RI "\fIGet Unique IDentifier\&. \fP"
@@ -69,18 +101,245 @@ lmf.src.core.lexical_entry.LexicalEntry \-
 .br
 .RI "\fIGet all related forms maintained by the lexical entry\&. \fP"
 .ti -1c
-.RI "def \fBget_speaker\fP"
+.RI "def \fBget_form_representations\fP"
 .br
-.RI "\fIGet speaker\&. \fP"
+.RI "\fIGet all form representations maintained by the lemma\&. \fP"
 .ti -1c
-.RI "def \fBget_definitions\fP"
+.RI "def \fBset_variant_form\fP"
 .br
+.RI "\fISet variant form and type\&. \fP"
+.ti -1c
+.RI "def \fBset_variant_comment\fP"
+.br
+.RI "\fISet variant comment and language\&. \fP"
+.ti -1c
+.RI "def \fBset_tone\fP"
+.br
+.RI "\fISet tone\&. \fP"
+.ti -1c
+.RI "def \fBget_tones\fP"
+.br
+.RI "\fIGet all tones\&. \fP"
+.ti -1c
+.RI "def \fBset_geographical_variant\fP"
+.br
+.RI "\fISet geographical variant\&. \fP"
+.ti -1c
+.RI "def \fBset_phonetic_form\fP"
+.br
+.RI "\fISet phonetic form\&. \fP"
+.ti -1c
+.RI "def \fBget_phonetic_forms\fP"
+.br
+.RI "\fIGet all phonetic forms\&. \fP"
+.ti -1c
+.RI "def \fBset_contextual_variation\fP"
+.br
+.RI "\fISet contextual variation\&. \fP"
+.ti -1c
+.RI "def \fBget_contextual_variations\fP"
+.br
+.RI "\fIGet all contextual variations\&. \fP"
+.ti -1c
+.RI "def \fBset_spelling_variant\fP"
+.br
+.RI "\fISet spelling variant\&. \fP"
+.ti -1c
+.RI "def \fBget_spelling_variants\fP"
+.br
+.RI "\fIGet all spelling variants\&. \fP"
+.ti -1c
+.RI "def \fBset_citation_form\fP"
+.br
+.RI "\fISet citation form\&. \fP"
+.ti -1c
+.RI "def \fBget_citation_forms\fP"
+.br
+.RI "\fIGet all citation forms\&. \fP"
+.ti -1c
+.RI "def \fBset_dialect\fP"
+.br
+.RI "\fISet dialect\&. \fP"
+.ti -1c
+.RI "def \fBset_transliteration\fP"
+.br
+.RI "\fISet transliteration\&. \fP"
+.ti -1c
+.RI "def \fBget_transliterations\fP"
+.br
+.RI "\fIGet all transliterations\&. \fP"
+.ti -1c
+.RI "def \fBset_script_name\fP"
+.br
+.RI "\fISet script name\&. \fP"
+.ti -1c
+.RI "def \fBcreate_sense\fP"
+.br
+.RI "\fICreate a sense\&. \fP"
+.ti -1c
+.RI "def \fBadd_sense\fP"
+.br
+.RI "\fIAdd a sense to the lexical entry\&. \fP"
+.ti -1c
+.RI "def \fBcreate_and_add_sense\fP"
+.br
+.RI "\fICreate and add a sense to the lexical entry\&. \fP"
 .ti -1c
 .RI "def \fBget_senses\fP"
 .br
+.RI "\fIGet all senses maintained by the lexical entry\&. \fP"
 .ti -1c
-.RI "def \fBget_gloss\fP"
+.RI "def \fBget_last_sense\fP"
 .br
+.RI "\fIGet the previously registered sense\&. \fP"
+.ti -1c
+.RI "def \fBset_definition\fP"
+.br
+.RI "\fISet definition and language\&. \fP"
+.ti -1c
+.RI "def \fBset_gloss\fP"
+.br
+.RI "\fISet gloss and language\&. \fP"
+.ti -1c
+.RI "def \fBset_note\fP"
+.br
+.RI "\fISet note, type and language\&. \fP"
+.ti -1c
+.RI "def \fBfind_notes\fP"
+.br
+.RI "\fIFind notes\&. \fP"
+.ti -1c
+.RI "def \fBset_usage_note\fP"
+.br
+.RI "\fISet usage note and language\&. \fP"
+.ti -1c
+.RI "def \fBset_encyclopedic_information\fP"
+.br
+.RI "\fISet encyclopedic information and language\&. \fP"
+.ti -1c
+.RI "def \fBset_restriction\fP"
+.br
+.RI "\fISet restriction and language\&. \fP"
+.ti -1c
+.RI "def \fBset_borrowed_word\fP"
+.br
+.RI "\fISet source language (in English)\&. \fP"
+.ti -1c
+.RI "def \fBget_borrowed_word\fP"
+.br
+.RI "\fIGet source language (in English)\&. \fP"
+.ti -1c
+.RI "def \fBset_written_form\fP"
+.br
+.RI "\fISet loan word\&. \fP"
+.ti -1c
+.RI "def \fBget_written_form\fP"
+.br
+.RI "\fIGet loan word\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology\fP"
+.br
+.RI "\fISet etymology\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology\fP"
+.br
+.RI "\fIGet etymology\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_comment\fP"
+.br
+.RI "\fISet etymology comment and language\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_comment\fP"
+.br
+.RI "\fIGet etymology comment\&. \fP"
+.ti -1c
+.RI "def \fBget_term_source_language\fP"
+.br
+.RI "\fIGet language used for the etymology comment\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_gloss\fP"
+.br
+.RI "\fISet etymology gloss\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_gloss\fP"
+.br
+.RI "\fIGet etymology gloss\&. \fP"
+.ti -1c
+.RI "def \fBset_etymology_source\fP"
+.br
+.RI "\fISet etymology source\&. \fP"
+.ti -1c
+.RI "def \fBget_etymology_source\fP"
+.br
+.RI "\fIGet etymology source\&. \fP"
+.ti -1c
+.RI "def \fBcreate_word_form\fP"
+.br
+.RI "\fICreate a word form\&. \fP"
+.ti -1c
+.RI "def \fBadd_word_form\fP"
+.br
+.RI "\fIAdd a word form to the lexical entry\&. \fP"
+.ti -1c
+.RI "def \fBget_word_forms\fP"
+.br
+.RI "\fIGet all word forms maintained by the lexical entry\&. \fP"
+.ti -1c
+.RI "def \fBset_paradigm\fP"
+.br
+.RI "\fISet paradigm\&. \fP"
+.ti -1c
+.RI "def \fBfind_paradigms\fP"
+.br
+.RI "\fIFind paradigms\&. \fP"
+.ti -1c
+.RI "def \fBset_paradigm_label\fP"
+.br
+.RI "\fISet paradigm label\&. \fP"
+.ti -1c
+.RI "def \fBset_paradigm_form\fP"
+.br
+.RI "\fISet paradigm form\&. \fP"
+.ti -1c
+.RI "def \fBset_morphology\fP"
+.br
+.RI "\fISet morphology\&. \fP"
+.ti -1c
+.RI "def \fBget_paradigms\fP"
+.br
+.RI "\fIGet all paradigms\&. \fP"
+.ti -1c
+.RI "def \fBget_morphologies\fP"
+.br
+.RI "\fIGet all morphologies\&. \fP"
+.ti -1c
+.RI "def \fBcreate_example\fP"
+.br
+.RI "\fICreate a context, add an example and set its written form and language\&. \fP"
+.ti -1c
+.RI "def \fBadd_example\fP"
+.br
+.RI "\fIAdd an example to an existing context and set its written form and language\&. \fP"
+.ti -1c
+.RI "def \fBset_example_comment\fP"
+.br
+.RI "\fISet comment of an existing example\&. \fP"
+.ti -1c
+.RI "def \fBset_semantic_domain\fP"
+.br
+.RI "\fISet semantic domain and language\&. \fP"
+.ti -1c
+.RI "def \fBget_semantic_domains\fP"
+.br
+.RI "\fIGet all semantic domains\&. \fP"
+.ti -1c
+.RI "def \fBset_translation\fP"
+.br
+.RI "\fISet translation and language\&. \fP"
+.ti -1c
+.RI "def \fBget_speaker\fP"
+.br
+.RI "\fIGet speaker\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -139,7 +398,7 @@ lmf.src.core.lexical_entry.LexicalEntry \-
 .PP 
 'Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes\&. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses\&.' (LMF) 
 .PP
-Definition at line 9 of file lexical_entry\&.py\&.
+Definition at line 15 of file lexical_entry\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.__init__ (self, id = \fC0\fP)"
@@ -159,15 +418,35 @@ A \fBLexicalEntry\fP instance\&.
 .PP
 
 .PP
-Definition at line 12 of file lexical_entry\&.py\&.
+Definition at line 18 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.__del__ (self)"
 
 .PP
 Destructor\&. Release Sense, Lemma, RelatedForm, WordForm, Stem, ListOfComponents instances\&. 
 .PP
-Definition at line 50 of file lexical_entry\&.py\&.
+Definition at line 56 of file lexical_entry\&.py\&.
 .SH "Member Function Documentation"
 .PP 
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.add_example (self, written_form, language = \fCNone\fP)"
+
+.PP
+Add an example to an existing context and set its written form and language\&. Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP The written form to set\&. 
+.br
+\fIlanguage\fP Language used for the written form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 897 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.add_related_form (self, related_form)"
 
 .PP
@@ -185,7 +464,43 @@ Add a related form to the lexical entry\&.
 .PP
 
 .PP
-Definition at line 136 of file lexical_entry\&.py\&.
+Definition at line 204 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.add_sense (self, sense)"
+
+.PP
+Add a sense to the lexical entry\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsense\fP The Sense instance to add to the lexical entry\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 437 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.add_word_form (self, word_form)"
+
+.PP
+Add a word form to the lexical entry\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIword_form\fP The WordForm instance to add to the lexical entry\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 750 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_and_add_related_form (self, lexeme, semantic_relation)"
 
 .PP
@@ -205,7 +520,45 @@ Create and add a related form to the lexical entry\&.
 .PP
 
 .PP
-Definition at line 144 of file lexical_entry\&.py\&.
+Definition at line 212 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_and_add_sense (self, sense_number)"
+
+.PP
+Create and add a sense to the lexical entry\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsense_number\fP Number of the sense to add\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 445 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_example (self, written_form, language = \fCNone\fP)"
+
+.PP
+Create a context, add an example and set its written form and language\&. Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP The written form to set\&. 
+.br
+\fIlanguage\fP Language used for the written form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 881 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_related_form (self, lexeme, semantic_relation)"
 
 .PP
@@ -225,7 +578,80 @@ RelatedForm instance\&.
 .PP
 
 .PP
-Definition at line 128 of file lexical_entry\&.py\&.
+Definition at line 196 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_sense (self, id = \fC0\fP)"
+
+.PP
+Create a sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP Identifier\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Sense instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 430 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.create_word_form (self)"
+
+.PP
+Create a word form\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+WordForm instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 744 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.find_notes (self, type)"
+
+.PP
+Find notes\&. This attribute is owned by Statement, which owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItype\fP Type of the note to consider to retrieve the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of found Statement attributes 'notes'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 516 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.find_paradigms (self, person = \fCNone\fP, anymacy = \fCNone\fP, grammatical_number = \fCNone\fP, clusivity = \fCNone\fP)"
+
+.PP
+Find paradigms\&. Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm\&. Attribute 'variantForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIperson\fP Person, e\&.g\&. first person\&. 
+.br
+\fIanymacy\fP Anymacy, e\&.g\&. animate or inanimate\&. 
+.br
+\fIgrammatical_number\fP Grammatical number, e\&.g\&. singular or plural\&. 
+.br
+\fIclusivity\fP Clusivity, e\&.g\&. inclusive or exclusive\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'variantForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 796 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.find_related_forms (self, semantic_relation)"
 
 .PP
@@ -243,15 +669,155 @@ A Python list of found RelatedForm attributes 'targets'\&.
 .PP
 
 .PP
-Definition at line 153 of file lexical_entry\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_definitions (self)"
+Definition at line 221 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_bibliography (self)"
 
 .PP
-Definition at line 178 of file lexical_entry\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_gloss (self, lang)"
+Get lexical entry bibliography\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'bibliography'\&. 
+.RE
+.PP
 
 .PP
-Definition at line 184 of file lexical_entry\&.py\&.
+Definition at line 148 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_borrowed_word (self)"
+
+.PP
+Get source language (in English)\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'borrowedWord'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 590 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_citation_forms (self)"
+
+.PP
+Get all citation forms\&. Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'citationForm' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 378 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_contextual_variations (self)"
+
+.PP
+Get all contextual variations\&. Attribute 'contextualVariation' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'contextualVariation' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 338 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_date (self)"
+
+.PP
+Get lexical entry date\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'date'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 120 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_etymology (self)"
+
+.PP
+Get etymology\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymology'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 642 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_etymology_comment (self, term_source_language = \fCNone\fP)"
+
+.PP
+Get etymology comment\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIterm_source_language\fP The language of the etymology comment to retrieve\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologyComment'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 669 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_etymology_gloss (self)"
+
+.PP
+Get etymology gloss\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologyGloss'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 707 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_etymology_source (self)"
+
+.PP
+Get etymology source\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'etymologySource'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 733 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_form_representations (self)"
+
+.PP
+Get all form representations maintained by the lemma\&. Attribute '\fBform_representation\fP' is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Lemma attribute '\fBform_representation\fP' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 240 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_homonymNumber (self)"
+
+.PP
+Get lexical entry homonym number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'homonymNumber'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 134 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_id (self)"
 
 .PP
@@ -264,7 +830,33 @@ Get Unique IDentifier\&.
 .PP
 
 .PP
-Definition at line 101 of file lexical_entry\&.py\&.
+Definition at line 170 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_independentWord (self)"
+
+.PP
+Get lexical entry independent word indication\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'independentWord'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 164 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_last_sense (self)"
+
+.PP
+Get the previously registered sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The last element of \fBLexicalEntry\fP attribute 'sense'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 460 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_lexeme (self)"
 
 .PP
@@ -277,7 +869,33 @@ Lemma attribute 'lexeme' if any\&.
 .PP
 
 .PP
-Definition at line 118 of file lexical_entry\&.py\&.
+Definition at line 188 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_morphologies (self)"
+
+.PP
+Get all morphologies\&. This attribute is owned by Paradigm, which is owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of Paradigm attributes 'morphology'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 869 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_paradigms (self)"
+
+.PP
+Get all paradigms\&. This attribute is owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Sense attribute 'paradigm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 859 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_partOfSpeech (self)"
 
 .PP
@@ -290,7 +908,20 @@ Get grammatical category\&.
 .PP
 
 .PP
-Definition at line 81 of file lexical_entry\&.py\&.
+Definition at line 92 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_phonetic_forms (self)"
+
+.PP
+Get all phonetic forms\&. Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'phoneticForm' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 318 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_related_forms (self)"
 
 .PP
@@ -303,11 +934,38 @@ A Python set of related forms\&.
 .PP
 
 .PP
-Definition at line 165 of file lexical_entry\&.py\&.
+Definition at line 233 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_semantic_domains (self, language = \fCNone\fP)"
+
+.PP
+Get all semantic domains\&. This attribute is owned by SubjectField, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage\fP If this argument is given, get only semantic domains that are described using this language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of filtered SubjectField attributes 'semanticDomain'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 944 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_senses (self)"
 
 .PP
-Definition at line 181 of file lexical_entry\&.py\&.
+Get all senses maintained by the lexical entry\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP attribute 'sense'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 454 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_speaker (self)"
 
 .PP
@@ -320,7 +978,20 @@ Get speaker\&.
 .PP
 
 .PP
-Definition at line 172 of file lexical_entry\&.py\&.
+Definition at line 974 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_spelling_variants (self)"
+
+.PP
+Get all spelling variants\&. Attribute 'spellingVariant' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'spellingVariant' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 358 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_status (self)"
 
 .PP
@@ -333,7 +1004,386 @@ Get lexical entry status\&.
 .PP
 
 .PP
-Definition at line 95 of file lexical_entry\&.py\&.
+Definition at line 106 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_term_source_language (self)"
+
+.PP
+Get language used for the etymology comment\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'termSourceLanguage'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 681 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_tones (self)"
+
+.PP
+Get all tones\&. Attribute 'tone' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'tone' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 286 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_transliterations (self)"
+
+.PP
+Get all transliterations\&. Attribute 'transliteration' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'transliteration' if any\&. 
+.RE
+.PP
+
+.PP
+Definition at line 410 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_word_forms (self)"
+
+.PP
+Get all word forms maintained by the lexical entry\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of word forms\&. 
+.RE
+.PP
+
+.PP
+Definition at line 758 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.get_written_form (self)"
+
+.PP
+Get loan word\&. This attribute is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'writtenForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 616 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_bibliography (self, bibliography)"
+
+.PP
+Set lexical entry bibliography\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbibliography\fP The bibliography to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 140 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_borrowed_word (self, borrowed_word)"
+
+.PP
+Set source language (in English)\&. Attribute 'borrowedWord' is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIborrowed_word\fP Source language\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 575 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_citation_form (self, citation_form)"
+
+.PP
+Set citation form\&. Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcitation_form\fP The citation form to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 366 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_contextual_variation (self, contextual_variation)"
+
+.PP
+Set contextual variation\&. Attribute 'contextualVariation' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcontextual_variation\fP The contextual variation to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 326 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_date (self, date)"
+
+.PP
+Set lexical entry date\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstatus\fP The date to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 112 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_definition (self, definition, language = \fCNone\fP)"
+
+.PP
+Set definition and language\&. Attributes 'definition' and 'language' are owned by Definition, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdefinition\fP Definition\&. 
+.br
+\fIlanguage\fP Language of definition\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 467 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_dialect (self, dialect)"
+
+.PP
+Set dialect\&. Attribute 'dialect' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdialect\fP The dialect to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 386 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_encyclopedic_information (self, encyclopedic_information, language = \fCNone\fP)"
+
+.PP
+Set encyclopedic information and language\&. Attributes 'encyclopedicInformation' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIencyclopedic_information\fP Encyclopedic information to set\&. 
+.br
+\fIlanguage\fP Language of the encyclopedic information\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 543 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_etymology (self, etymology)"
+
+.PP
+Set etymology\&. Attribute 'etymology' is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology\fP Etymology\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 627 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_etymology_comment (self, etymology_comment, term_source_language = \fCNone\fP)"
+
+.PP
+Set etymology comment and language\&. Attributes 'etymologyComment' and 'termSourceLanguage' are owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_comment\fP Etymology comment\&. 
+.br
+\fIterm_source_language\fP Language of the comment\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 653 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_etymology_gloss (self, etymology_gloss)"
+
+.PP
+Set etymology gloss\&. Attribute 'etymologyGloss' is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_gloss\fP Etymology gloss\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 692 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_etymology_source (self, etymology_source)"
+
+.PP
+Set etymology source\&. Attribute 'etymologySource' is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIetymology_source\fP Etymology source\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 718 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_example_comment (self, comment)"
+
+.PP
+Set comment of an existing example\&. Attribute 'comment' is owned by TextRepresentation, which is owned by Context, itself owend by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcomment\fP The comment to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 913 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_geographical_variant (self, geographical_variant)"
+
+.PP
+Set geographical variant\&. Attribute 'geographicalVariant' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgeographical_variant\fP The geographical variant to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 294 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_gloss (self, gloss, language = \fCNone\fP)"
+
+.PP
+Set gloss and language\&. Attributes 'gloss' and 'language' are owned by Definition, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIgloss\fP Gloss\&. 
+.br
+\fIlanguage\fP Language of gloss\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 483 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_homonymNumber (self, homonym_number)"
+
+.PP
+Set lexical entry homonym number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIhomonym_number\fP The homonym number to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 126 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_independentWord (self, independent_word)"
+
+.PP
+Set lexical entry independent word indication\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIindependent_word\fP The independent word indication to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 154 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_lexeme (self, lexeme)"
 
 .PP
@@ -344,9 +1394,118 @@ Set lexeme\&. Attribute 'lexeme' is owned by Lemma\&.
 \fIlexeme\fP The lexeme to set\&. 
 .RE
 .PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
 
 .PP
-Definition at line 107 of file lexical_entry\&.py\&.
+Definition at line 176 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_morphology (self, morphology)"
+
+.PP
+Set morphology\&. Attribute 'morphology' is owned by Paradigm, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImorphology\fP Morphology\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 844 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_note (self, note, type = \fCNone\fP, language = \fCNone\fP)"
+
+.PP
+Set note, type and language\&. Attributes 'note', 'noteType' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInote\fP Note to set\&. 
+.br
+\fItype\fP Type of the note\&. 
+.br
+\fIlanguage\fP Language of the note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 499 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_paradigm (self, variant_form, person = \fCNone\fP, anymacy = \fCNone\fP, grammatical_number = \fCNone\fP, clusivity = \fCNone\fP)"
+
+.PP
+Set paradigm\&. Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariant_form\fP The paradigm to set\&. 
+.br
+\fIperson\fP Person, e\&.g\&. first person\&. 
+.br
+\fIanymacy\fP Anymacy, e\&.g\&. animate or inanimate\&. 
+.br
+\fIgrammatical_number\fP Grammatical number, e\&.g\&. singular or plural\&. 
+.br
+\fIclusivity\fP Clusivity, e\&.g\&. inclusive or exclusive\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 764 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_paradigm_form (self, paradigm, language = \fCNone\fP)"
+
+.PP
+Set paradigm form\&. Attribute 'paradigm' is owned by Paradigm, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparadigm\fP Paradigm form\&. 
+.br
+\fIlanguage\fP Language of the paradigm form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 828 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_paradigm_label (self, paradigm_label)"
+
+.PP
+Set paradigm label\&. Attribute 'paradigmLabel' is owned by Paradigm, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIparadigm_label\fP Paradigm label\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 813 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_partOfSpeech (self, part_of_speech)"
 
 .PP
@@ -364,7 +1523,101 @@ Set grammatical category\&.
 .PP
 
 .PP
-Definition at line 73 of file lexical_entry\&.py\&.
+Definition at line 79 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_phonetic_form (self, phonetic_form)"
+
+.PP
+Set phonetic form\&. Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIphonetic_form\fP The phonetic form to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 306 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_restriction (self, restriction, language = \fCNone\fP)"
+
+.PP
+Set restriction and language\&. Attributes 'restriction' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrestriction\fP Restriction to set\&. 
+.br
+\fIlanguage\fP Language of the restriction\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 559 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_script_name (self, script_name)"
+
+.PP
+Set script name\&. Attribute 'scriptName' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript_name\fP The script name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 418 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_semantic_domain (self, semantic_domain, language = \fCNone\fP)"
+
+.PP
+Set semantic domain and language\&. Attributes 'semanticDomain' and 'language' are owned by SubjectField, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsemantic_domain\fP The semantic domain to set\&. 
+.br
+\fIlanguage\fP Language used to describe the semantic domain\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 928 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_spelling_variant (self, spelling_variant)"
+
+.PP
+Set spelling variant\&. Attribute 'spellingVariant' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspelling_variant\fP The spelling variant to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 346 of file lexical_entry\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_status (self, status)"
 
 .PP
@@ -382,79 +1635,213 @@ Set lexical entry status\&.
 .PP
 
 .PP
-Definition at line 87 of file lexical_entry\&.py\&.
+Definition at line 98 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_tone (self, tone)"
+
+.PP
+Set tone\&. Attribute 'tone' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItone\fP The tone to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 274 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_translation (self, translation, language = \fCNone\fP)"
+
+.PP
+Set translation and language\&. Attributes 'translation' and 'language' are owned by Equivalent, which is owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItranslation\fP The translation to set\&. 
+.br
+\fIlanguage\fP Language used for the translation\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 958 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_transliteration (self, transliteration)"
+
+.PP
+Set transliteration\&. Attribute 'transliteration' is owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransliteration\fP The transliteration to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 398 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_usage_note (self, usage_note, language = \fCNone\fP)"
+
+.PP
+Set usage note and language\&. Attributes 'usageNote' and 'language' are owned by Statement, which owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIusage_note\fP Usage note to set\&. 
+.br
+\fIlanguage\fP Language of the usage note\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 527 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_variant_comment (self, comment, language = \fCNone\fP)"
+
+.PP
+Set variant comment and language\&. Attributes 'comment' and 'language' are owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcomment\fP Variant comment\&. 
+.br
+\fIlanguage\fP Language of comment\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 261 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_variant_form (self, variant_form, type = \fC'unspecified'\fP)"
+
+.PP
+Set variant form and type\&. Attributes 'variantForm' and 'type' are owned by FormRepresentation, which is owned by Lemma\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIvariant_form\fP Variant form\&. 
+.br
+\fItype\fP Type of variant, in range 'type_variant_range' defined in '\fBcommon/range\&.py\fP'\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 248 of file lexical_entry\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.set_written_form (self, written_form)"
+
+.PP
+Set loan word\&. Attribute 'writtenForm' is owned by Statement, which is owned by Definition, itself owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP Loan word\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalEntry\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 601 of file lexical_entry\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.bibliography"
 
 .PP
-Definition at line 23 of file lexical_entry\&.py\&.
+Definition at line 29 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.date"
 
 .PP
-Definition at line 20 of file lexical_entry\&.py\&.
+Definition at line 26 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.homonymNumber"
 
 .PP
-Definition at line 18 of file lexical_entry\&.py\&.
+Definition at line 24 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.id"
 
 .PP
 UID is managed at the Lexicon level\&. 
 .PP
-Definition at line 25 of file lexical_entry\&.py\&.
+Definition at line 31 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.independentWord"
 
 .PP
-Definition at line 22 of file lexical_entry\&.py\&.
+Definition at line 28 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.lemma"
 
 .PP
 Lemma instance is owned by \fBLexicalEntry\fP There is one Lemma instance by \fBLexicalEntry\fP instance\&. 
 .PP
-Definition at line 31 of file lexical_entry\&.py\&.
+Definition at line 37 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.list_of_components"
 
 .PP
 ListOfComponents instance is owned by \fBLexicalEntry\fP There is zero or one ListOfComponents instance per \fBLexicalEntry\fP\&. 
 .PP
-Definition at line 43 of file lexical_entry\&.py\&.
+Definition at line 49 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.partOfSpeech"
 
 .PP
-Definition at line 21 of file lexical_entry\&.py\&.
+Definition at line 27 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.related_form"
 
 .PP
 RelatedForm instances are owned by \fBLexicalEntry\fP There is zero to many RelatedForm instances per \fBLexicalEntry\fP\&. 
 .PP
-Definition at line 34 of file lexical_entry\&.py\&.
+Definition at line 40 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.sense"
 
 .PP
 Sense instances are owned by \fBLexicalEntry\fP There is zero to many Sense instances per \fBLexicalEntry\fP\&. 
 .PP
-Definition at line 28 of file lexical_entry\&.py\&.
+Definition at line 34 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.status"
 
 .PP
-Definition at line 19 of file lexical_entry\&.py\&.
+Definition at line 25 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.stem"
 
 .PP
 Stem instances are owned by \fBLexicalEntry\fP There is zero to many Stem instances per \fBLexicalEntry\fP\&. 
 .PP
-Definition at line 40 of file lexical_entry\&.py\&.
+Definition at line 46 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.targets"
 
 .PP
-Definition at line 45 of file lexical_entry\&.py\&.
+Definition at line 51 of file lexical_entry\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_entry\&.LexicalEntry\&.word_form"
 
 .PP
 WordForm instances are owned by \fBLexicalEntry\fP There is zero to many WordForm instances per \fBLexicalEntry\fP\&. 
 .PP
-Definition at line 37 of file lexical_entry\&.py\&.
+Definition at line 43 of file lexical_entry\&.py\&.
 
 .SH "Author"
 .PP 

@@ -96,45 +96,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">from</span> core.lexicon <span class="keyword">import</span> Lexicon</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">from</span> core.lexical_entry <span class="keyword">import</span> LexicalEntry</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">from</span> utils.io <span class="keyword">import</span> open_read, EOL</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">   11</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">mdf_read</a>(filename, mdf2lmf=mdf_lmf):</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Read an MDF file.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="stringliteral">    @param filename The name of the MDF file to read with full path, for instance &#39;user/input.txt&#39;.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="stringliteral">    @param mdf2lmf A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is &#39;mdf_lmf&#39; dictionary defined in &#39;src/config/mdf.py&#39;. Please refer to it as an example.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">    @return A Lexicon instance containing all lexical entries.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">import</span> re</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    mdf_file = <a class="code" href="namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff">open_read</a>(filename)</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment"># MDF syntax is the following: &#39;\marker value&#39;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    mdf_pattern = <span class="stringliteral">&quot;&quot;&quot;^\\\(\w*) (.*)$&quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment"># Create a Lexicon instance to contain all lexical entries</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    lexicon = Lexicon()</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment"># Add each lexical entry to the lexicon</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    current_entry = <span class="keywordtype">None</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    id = 0</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">for</span> line <span class="keywordflow">in</span> mdf_file.readlines():</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment"># Do not parse empty lines</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> line != EOL:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            result = re.match(mdf_pattern, line)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            marker = result.group(1)</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            value = result.group(2)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="comment"># &#39;lx&#39; marker indicates a new entry</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">if</span> marker == <span class="stringliteral">&quot;lx&quot;</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="comment"># Create a new entry and add it to the lexicon</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                id += 1</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                current_entry = LexicalEntry(id)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                lexicon.add_lexical_entry(current_entry)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="comment"># Map MDF marker and value to LMF representation</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            mdf2lmf[marker](value, current_entry)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mdf_file.close()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    lexicon.check_cross_references()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> lexicon</div>
-<div class="ttc" id="namespacelmf_1_1src_1_1input_1_1mdf_html_adf21a8b8bd5a33be054269ced938ba52"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">lmf.src.input.mdf.mdf_read</a></div><div class="ttdeci">def mdf_read</div><div class="ttdoc">Read an MDF file. </div><div class="ttdef"><b>Definition:</b> <a href="input_2mdf_8py_source.html#l00011">mdf.py:11</a></div></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">from</span> utils.error_handling <span class="keyword">import</span> Warning, Error</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">   12</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">mdf_read</a>(filename, mdf2lmf=mdf_lmf, id=None):</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;! @brief Read an MDF file.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="stringliteral">    @param filename The name of the MDF file to read with full path, for instance &#39;user/input.txt&#39;.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="stringliteral">    @param mdf2lmf A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is &#39;mdf_lmf&#39; dictionary defined in &#39;src/config/mdf.py&#39;. Please refer to it as an example.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">    @param id A Python string identifying the created lexicon.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral">    @return A Lexicon instance containing all lexical entries.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">import</span> re</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    mdf_file = <a class="code" href="namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff">open_read</a>(filename, encoding=<span class="stringliteral">&#39;utf8&#39;</span>)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment"># MDF syntax is the following: &#39;\marker value&#39;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    mdf_pattern = <span class="stringliteral">&quot;&quot;&quot;^\\\(\w*) (&lt;(.*)&gt;)? ?(.*)$&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment"># Create a Lexicon instance to contain all lexical entries</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    lexicon = Lexicon(id)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment"># Add each lexical entry to the lexicon</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    current_entry = <span class="keywordtype">None</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> line <span class="keywordflow">in</span> mdf_file.readlines():</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment"># Do not parse empty lines</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> line != EOL:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            result = re.match(mdf_pattern, line)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> result <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="comment"># Line is empty =&gt; continue parsing next line</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">continue</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            marker = result.group(1)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            attrs = result.group(3)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            value = result.group(4)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="comment"># Remove end-of-line characters</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            value = value.rstrip(<span class="stringliteral">&#39;\r\n&#39;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="comment"># Do not consider empty fields</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span> value == <span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">continue</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="comment"># &#39;lx&#39; marker indicates a new entry</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> marker == <span class="stringliteral">&quot;lx&quot;</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="comment"># Compute a unique identifier</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                occurrence_nb = 1</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="comment"># Python equivalent of do...while loop</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">while</span> <span class="keyword">True</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    uid = value + <span class="stringliteral">&quot;_&quot;</span> + str(occurrence_nb)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="comment"># If already taken, increment it</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">if</span> lexicon.find_lexical_entries(<span class="keyword">lambda</span> lexical_entry: lexical_entry.get_id() == uid) != []:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        occurrence_nb += 1</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        <span class="comment"># Create a new entry</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        current_entry = LexicalEntry(uid)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        <span class="keywordflow">break</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="comment"># Add it to the lexicon</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                lexicon.add_lexical_entry(current_entry)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment"># Map MDF marker and value to LMF representation</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">try</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordflow">if</span> attrs <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="comment"># There are attributes</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    attributes = {}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    <span class="comment"># Remove quotation marks from attributes if any</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    attrs = attrs.replace(<span class="stringliteral">&#39;&quot;&#39;</span>, <span class="stringliteral">&#39;&#39;</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <span class="keywordflow">for</span> attr <span class="keywordflow">in</span> attrs.split(<span class="stringliteral">&#39; &#39;</span>):</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        attributes.update({attr.split(<span class="stringliteral">&#39;=&#39;</span>)[0] : attr.split(<span class="stringliteral">&#39;=&#39;</span>)[1]})</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="comment"># A customized marker starts with &#39;__&#39; characters</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    mdf2lmf[<span class="stringliteral">&quot;__&quot;</span> + marker](attributes, value, current_entry)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    mdf2lmf[marker](value, current_entry)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">except</span> KeyError:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">print</span> unicode(Warning(<span class="stringliteral">&quot;MDF marker &#39;%s&#39; encountered for lexeme &#39;%s&#39; is not defined in configuration&quot;</span> % (marker, current_entry.get_lexeme())))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">except</span> Error <span class="keyword">as</span> exception:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                exception.handle()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    mdf_file.close()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment"># Verify lexicon coherence</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    lexicon.check_cross_references()</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment"># Set lexicon attribute</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    lexicon.set_entrySource(filename)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> lexicon</div>
+<div class="ttc" id="namespacelmf_1_1src_1_1input_1_1mdf_html_adf21a8b8bd5a33be054269ced938ba52"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1mdf.html#adf21a8b8bd5a33be054269ced938ba52">lmf.src.input.mdf.mdf_read</a></div><div class="ttdeci">def mdf_read</div><div class="ttdoc">Read an MDF file. </div><div class="ttdef"><b>Definition:</b> <a href="input_2mdf_8py_source.html#l00012">mdf.py:12</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1io_html_a2659ffc6cd260a7a4e43f0546d518dff"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1io.html#a2659ffc6cd260a7a4e43f0546d518dff">lmf.src.utils.io.open_read</a></div><div class="ttdeci">def open_read</div><div class="ttdoc">Open file in read mode (automatically decode file in unicode). </div><div class="ttdef"><b>Definition:</b> <a href="io_8py_source.html#l00030">io.py:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 3 2014 17:23:02 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

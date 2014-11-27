@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacelmf_1_1src_1_1utils_1_1attr" kind="namespace">
+    <compoundname>lmf::src::utils::attr</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1utils_1_1attr_1aa8f0e87d43935a26d71b5f80fc0de8a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.utils.attr.check_attr_type</definition>
+        <argsstring></argsstring>
+        <name>check_attr_type</name>
+        <briefdescription>
+<para>Check that attribute value is of specified type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute value to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allowed Python type(s): simple, or Python set or list. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to display if value is not of correct type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/attr.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/attr.py" bodystart="5" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1utils_1_1attr_1aae5498ab6d173de4b16ab91d720c4320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.utils.attr.check_attr_range</definition>
+        <argsstring></argsstring>
+        <name>check_attr_range</name>
+        <briefdescription>
+<para>Check that attribute value is in specified range. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute value to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python set giving the range of allowed values. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to display if value is out-of-range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mapping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Python dictionary giving mapping between values (i.e. from MDF to LMF) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value to set, or None if out-of-range. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/attr.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/attr.py" bodystart="19" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/attr.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

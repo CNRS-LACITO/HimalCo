@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="18" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab68007ef04c51304b92e3eefcf2f40c9" prot="public" static="no" mutable="no">
         <type></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="19" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -44,7 +44,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="11" bodyend="20"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="12" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1afd7a268f1743065f5fc3ee53122ea391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="21" bodyend="25"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="22" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a6d6277e8bb71a04cb31aebccd288b6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -79,7 +79,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="26" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="26" bodyend="33"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="27" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab1bcf9feeb5f59a7c9af07fbc368fb41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -93,7 +93,441 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="34" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="34" bodyend="39"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a774f121cbc62e3ad4fad738ba8b68da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.create_form_representation</definition>
+        <argsstring></argsstring>
+        <name>create_form_representation</name>
+        <briefdescription>
+<para>Create a form representation. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>FormRepresentation instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="41" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab0acb466271ceb0966afbc1c1dc1cdff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.add_form_representation</definition>
+        <argsstring></argsstring>
+        <name>add_form_representation</name>
+        <briefdescription>
+<para>Add a form representation to the lemma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>form_representation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The FormRepresentation instance to add to the lemma. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="47" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a19275956725afdcfddbbbb491f6783ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.find_form_representations</definition>
+        <argsstring></argsstring>
+        <name>find_form_representations</name>
+        <briefdescription>
+<para>Find variant forms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to consider to retrieve the variant form. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Python list of found FormRepresentation attributes &apos;variantForm&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="55" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="55" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aaafc76e4a436188c2ac07417b02e530d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_form_representations</definition>
+        <argsstring></argsstring>
+        <name>get_form_representations</name>
+        <briefdescription>
+<para>Get all form representations maintained by the lemma. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A Python list of form representations. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="67" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a71c4c7715794ecd41e5176485f6d7f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_form_representation</definition>
+        <argsstring></argsstring>
+        <name>get_form_representation</name>
+        <briefdescription>
+<para>Get a given form representation maintained by the lemma. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the wanted form representation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The wanted FormRepresentation instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="73" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a16942d5bd7973fc19eee27a68789dcf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_variant_form</definition>
+        <argsstring></argsstring>
+        <name>set_variant_form</name>
+        <briefdescription>
+<para>Set variant form and type. </para>        </briefdescription>
+        <detaileddescription>
+<para>These attributes are owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variant_form</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant form. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of variant, in range &apos;type_variant_range&apos; defined in &apos;<ref refid="range_8py" kindref="compound">common/range.py</ref>&apos;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="83" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="83" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a8d090ef91e9c98ef77d429b3d7296022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_variant_comment</definition>
+        <argsstring></argsstring>
+        <name>set_variant_comment</name>
+        <briefdescription>
+<para>Set variant comment and language. </para>        </briefdescription>
+        <detaileddescription>
+<para>These attributes are owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>comment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variant comment. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Language of comment. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="103" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="103" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a094ea5bc786ebf4356bbb1e33c418b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_tone</definition>
+        <argsstring></argsstring>
+        <name>set_tone</name>
+        <briefdescription>
+<para>Set tone. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tone to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="123" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="123" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a02afd08362639bdbbac98b35c533375f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_tones</definition>
+        <argsstring></argsstring>
+        <name>get_tones</name>
+        <briefdescription>
+<para>Get all tones. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;tone&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="142" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="142" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a4df66dfca0f2cdf379fa8782d86ba05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_geographical_variant</definition>
+        <argsstring></argsstring>
+        <name>set_geographical_variant</name>
+        <briefdescription>
+<para>Set geographical variant. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geographical_variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The geographical variant to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="153" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="153" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ae14b90791332a8d5522ac5056ae2842f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_phonetic_form</definition>
+        <argsstring></argsstring>
+        <name>set_phonetic_form</name>
+        <briefdescription>
+<para>Set phonetic form. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phonetic_form</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The phonetic form to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="172" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="172" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1af0a2868094d8121b389138319034f164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_phonetic_forms</definition>
+        <argsstring></argsstring>
+        <name>get_phonetic_forms</name>
+        <briefdescription>
+<para>Get all phonetic forms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;phoneticForm&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="191" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="191" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a9f80f34789351b4d3b55c344acb19562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_contextual_variation</definition>
+        <argsstring></argsstring>
+        <name>set_contextual_variation</name>
+        <briefdescription>
+<para>Set contextual variation. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contextual_variation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The contextual variation to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="202" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="202" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a54b9c3f2ae876fdb93b4c4676403c1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_contextual_variations</definition>
+        <argsstring></argsstring>
+        <name>get_contextual_variations</name>
+        <briefdescription>
+<para>Get all contextual variations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;contextualVariation&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="221" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="221" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a01bba6d5da1c9c0d70a3faf762d24f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_spelling_variant</definition>
+        <argsstring></argsstring>
+        <name>set_spelling_variant</name>
+        <briefdescription>
+<para>Set spelling variant. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spelling_variant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spelling variant to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="232" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="232" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a13fb86a829741554939046f500409327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_spelling_variants</definition>
+        <argsstring></argsstring>
+        <name>get_spelling_variants</name>
+        <briefdescription>
+<para>Get all spelling variants. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;spellingVariant&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="251" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="251" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a349b6a8d0a6a571933cd2bede36f695b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_citation_form</definition>
+        <argsstring></argsstring>
+        <name>set_citation_form</name>
+        <briefdescription>
+<para>Set citation form. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>citation_form</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The citation form to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="262" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="262" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a0d14b66ae5d6f0fd8a9aba74520b88a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_citation_forms</definition>
+        <argsstring></argsstring>
+        <name>get_citation_forms</name>
+        <briefdescription>
+<para>Get all citation forms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;citationForm&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="281" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="281" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa22e9424fc9f35cea9eb1a0a47b3a420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_dialect</definition>
+        <argsstring></argsstring>
+        <name>set_dialect</name>
+        <briefdescription>
+<para>Set dialect. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dialect</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dialect to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="292" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="292" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa7fbf68d0e986a478493cbf450ae8357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_transliteration</definition>
+        <argsstring></argsstring>
+        <name>set_transliteration</name>
+        <briefdescription>
+<para>Set transliteration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transliteration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transliteration to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="311" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="311" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a3e9430de1e0739171a6f655893863708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.get_transliterations</definition>
+        <argsstring></argsstring>
+        <name>get_transliterations</name>
+        <briefdescription>
+<para>Get all transliterations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;transliteration&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="330" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="330" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aae4244411f218ebc08fc659b1388d7a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.lemma.Lemma.set_script_name</definition>
+        <argsstring></argsstring>
+        <name>set_script_name</name>
+        <briefdescription>
+<para>Set script name. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by FormRepresentation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The script name to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma" kindref="compound">Lemma</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="341" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="341" bodyend="359"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -122,14 +556,36 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="8" bodyend="39"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/lemma.py" bodystart="9" bodyend="359"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1afd7a268f1743065f5fc3ee53122ea391" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a17223251bd8318631eccd411fbae8115" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>__init__</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab0acb466271ceb0966afbc1c1dc1cdff" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>add_form_representation</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a774f121cbc62e3ad4fad738ba8b68da8" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>create_form_representation</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a19275956725afdcfddbbbb491f6783ca" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>find_form_representations</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a0d14b66ae5d6f0fd8a9aba74520b88a0" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_citation_forms</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a54b9c3f2ae876fdb93b4c4676403c1f0" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_contextual_variations</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a71c4c7715794ecd41e5176485f6d7f65" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_form_representation</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aaafc76e4a436188c2ac07417b02e530d" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_form_representations</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab1bcf9feeb5f59a7c9af07fbc368fb41" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_lexeme</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1af0a2868094d8121b389138319034f164" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_phonetic_forms</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a13fb86a829741554939046f500409327" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_spelling_variants</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a02afd08362639bdbbac98b35c533375f" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_tones</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a3e9430de1e0739171a6f655893863708" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>get_transliterations</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a225df7c63b5a3a654307bc2d24ed1937" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>hyphenation</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ab68007ef04c51304b92e3eefcf2f40c9" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>lexeme</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a349b6a8d0a6a571933cd2bede36f695b" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_citation_form</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a9f80f34789351b4d3b55c344acb19562" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_contextual_variation</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa22e9424fc9f35cea9eb1a0a47b3a420" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_dialect</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a4df66dfca0f2cdf379fa8782d86ba05f" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_geographical_variant</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a6d6277e8bb71a04cb31aebccd288b6df" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_lexeme</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1ae14b90791332a8d5522ac5056ae2842f" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_phonetic_form</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aae4244411f218ebc08fc659b1388d7a0" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_script_name</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a01bba6d5da1c9c0d70a3faf762d24f7c" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_spelling_variant</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a094ea5bc786ebf4356bbb1e33c418b92" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_tone</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1aa7fbf68d0e986a478493cbf450ae8357" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_transliteration</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a8d090ef91e9c98ef77d429b3d7296022" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_variant_comment</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma_1a16942d5bd7973fc19eee27a68789dcf5" prot="public" virt="non-virtual"><scope>lmf::src::morphology::lemma::Lemma</scope><name>set_variant_form</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
