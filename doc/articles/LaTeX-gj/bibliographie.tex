@@ -4,6 +4,7 @@
 \usepackage{booktabs}
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
+\setdefaultlanguage{french} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{graphicx}
@@ -14,14 +15,8 @@
 \usepackage{memhfixc}
 
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
-%%%%%%%%%quelques options de style%%%%%%%%
-%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
-%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
-%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
-%\chapterstyle{veelo}
-%\setsecnumdepth{subsubsection}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+ 
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
@@ -33,105 +28,133 @@
 \newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
 \newcommand{\wav}[1]{#1.wav}
 \newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
-
+\newcommand{\langue}[2]{#2}
 
  
 \begin{document}
  
 
-  \title{List of publications}
+  \title{\langue{List of publications}{Liste de publications}}
  
 \author{Guillaume Jacques, CNRS-INALCO-EHESS (CRLAO)}
 \maketitle
 \sloppy
  
-\section{By languages}
+ 
+ \section{\langue{By journals}{Par revue}}
+% 43 articles
+ \begin{enumerate}
+ \item Amérindia (1): \citet{jacques12bear}
+ \item Anthropological linguistics (1): \citet{japhug14ideophones}
+ \item Bulletin of the School of Asian and Oriental Studies (3):  \citet{jacques10refl}, \citet{rg-gj12yod}, \citet{jacques13yod}
+ \item Cahiers de linguistique d'Asie orientale (4): \citet{jacques00ywij},  \citet{jacques03dissimilation},   \citet{jacques07chang},  \citet{michaud10bonin}
+ \item Central Asiatic Journal (1):  \citet{jacques10imperial}
+  \item Diachronica (2): \citet{jacques.michaud11naish}, \citet{michaud-jacques12nasalite}
+  \item Etudes Mongoles \& Sibériennes, Centrasiatiques \& Tibétaines (1):  \citet{jacques09e}
+  \item Faits de langue (1): \citet{jacques07redupl}
+ \item Folia Linguistica Historica (1): \citet{jacques13arapaho}
+ \item Himalayan Linguistics (2): \citet{jacques10zos},  \citet{antonov14rtau}
+ \item Journal of Chinese Linguistics (1):   \citet{jacques11tangut.verb}
+ \item Journal of the American Oriental Society (1): \citet{jacques11ngwemi}
+   \item Language and Linguistics (6):  \citet{jacques07passif}, \citet{jacques09tangutverb}, \citet{jacques10inverse},     \citet{jacques11pumi.tone}, \citet{jacques12agreement},    \citet{jacques12khaling}.  
+   \item  Language and Linguistics Compass (1): \citet{jacques14inverse}   
+ \item Lingua (3):  \citet{jacques11lingua}, \citet{jacques12incorp}, \citet{jacques14antipassive}
+ \item Linguistic Inquiry (1): \citet{antonov14need}
+ \item Linguistics of the Tibeto-Burman Area (3): \citet{jacques09wazur}, \citet{jacques13tropative}, \citet{jacques14linking}.
+ \item Linguistic Typology (1): \citet{jacques13harmonization}
+ \item Minzu yuwen \zh{民族语文} (3): \citet{jacques03s.houzhui}, \citet{jacques04redupl}, \citet{jacques08weiyu}
+ \item Revue d'études tibétaines (3): \citet{jacques07naksatram},  \citet{jacques08debther},   \citet{jacques10ndr}
+ \item Studia Etymologica Cracoviensia (1):  \citet{jacques13vama}
+  \item Studies in Language (1): \citet{jacques14auditory}
+  \item Transactions of the Philological Society (1):  \citet{jacques12internal}
+  \item Turkic Languages (1): \citet{antonov12kumush}
+ \end{enumerate} 
+ 
+\section{\langue{By languages}{Par langue}}
 \begin{itemize}
-\item Sino-Tibetan
+\item \langue{Sino-Tibetan}{Sino-tibétain}
 \begin{enumerate}
-\item General: \citet{jacques03s.houzhui}, \citet{jacques06morpho}, \citet{jacques07chang}, \citet{antonov12kumush}, \citet{jacques12agreement},    \citet{michaud-jacques12nasalite}.     
-\item Japhug:  \citet{jacques04redupl},     \citet{jacques04these},   \citet{jacques07passif},  \citet{jacques07redupl}, \citet{jacques08},  \citet{jacques10gesar}, \citet{jacques10refl},  \citet{jacques10inverse},  \citet{jacques12incorp},   \citet{jacques12demotion},  \citet{jacques13harmonization},  \citet{jacques13tropative},\citet{jacques14antipassive}, \citet{japhug14ideophones}, \citet{jacques14inverse}, \citet{jacques14linking}.
+\item \langue{General}{Général}: \citet{jacques03s.houzhui}, \citet{jacques06morpho}, \citet{jacques07chang}, \citet{antonov12kumush}, \citet{jacques12agreement},    \citet{michaud-jacques12nasalite}.     
+\item Japhug:  \citet{jacques04redupl},     \citet{jacques04these},   \citet{jacques07passif},  \citet{jacques07redupl}, \citet{jacques08},  \citet{jacques10gesar}, \citet{jacques10refl},  \citet{jacques10inverse},  \citet{jacques12incorp},   \citet{jacques12demotion},  \citet{jacques13harmonization},  \citet{jacques13tropative}, \citet{jacques14antipassive}, \citet{japhug14ideophones}, \citet{jacques14inverse}, \citet{jacques14linking}.
 \item Khaling: \citet{jacques12khaling},  \citet{jacques13derivational.khaling}, \citet{jacques14auditory}.
-\item Rtau: \citet{antonov14rtau}.
-\item Tibetan:  \citet{jacques01dg}, \citet{jacques04thimphu}, \citet{jacques07naksatram},      \citet{jacques08debther},  \citet{jacques09wazur}, \citet{jacques09e},  \citet{jacques10zos},   \citet{jacques10ndr},  \citet{jacques11lingua},  \citet{jacques12internal},  \citet{jacques12transcription}, \citet{jacques13yod}, \citet{jacques14snom}.
+\item Stau: \citet{antonov14rtau}.
+\item \langue{Tibetan}{Tibétain}:  \citet{jacques01dg}, \citet{jacques04thimphu}, \citet{jacques07naksatram},      \citet{jacques08debther},  \citet{jacques09wazur}, \citet{jacques09e},  \citet{jacques10zos},   \citet{jacques10ndr},  \citet{jacques11lingua},  \citet{jacques12internal},  \citet{jacques12transcription}, \citet{jacques13yod}, \citet{jacques14snom}, \citet{jacques14cone}.
 \item Pumi:  \citet{michaud10bonin}, \citet{jacques11pumi.tone}, \citet{jacques11lingua}, 
-\item Tangut: \citet{jacques06comparaison},  \citet{jacques07textes}, \citet{jacques08weiyu},\citet{jacques08alternations},   \citet{jacques09tangutverb},  \citet{jacques10imperial},  \citet{jacques11tangut.verb}, \citet{jacques11ngwemi}, \citet{jacques11kinship},  \citet{jacques14esquisse}.
+\item \langue{Tangut}{Tangoute}: \citet{jacques06comparaison},  \citet{jacques07textes}, \citet{jacques08weiyu}, \citet{jacques08alternations},   \citet{jacques09tangutverb},  \citet{jacques10imperial},  \citet{jacques11tangut.verb}, \citet{jacques11ngwemi}, \citet{jacques11kinship},  \citet{jacques14esquisse}.
 \item Naish: \citet{jacques.michaud11naish}.
 \item  Zhang-zhung: \citet{jacques09zz}.
-\item Chinese:  \citet{jacques00ywij},  \citet{jacques03dissimilation},   \citet{jacques2015genetic}, \citet{jacques2015traditional}.
+\item \langue{Chinese}{Chinois}:  \citet{jacques00ywij},  \citet{jacques03dissimilation},   \citet{jacques2015genetic}, \citet{jacques2015traditional}.
 \end{enumerate}
-\item Indo-European
+\item \langue{Indo-European}{Indo-européen}
 \begin{enumerate}
-\item Sanskrit: \citet{jacques13vama},    
-\item Celtic: \citet{michaud-jacques12nasalite},  
+\item Sanskrit: \citet{jacques13vama}.
+\item \langue{Celtic}{Celtique}: \citet{michaud-jacques12nasalite}.
 \end{enumerate}
-\item Siouan
+\item \langue{Siouan}{Sioux}
 \begin{enumerate}
-\item General: \citet{jacques12bear},      \citet{michaud-jacques12nasalite},     
+\item \langue{General}{Général}: \citet{jacques12bear},      \citet{michaud-jacques12nasalite}.  
 \end{enumerate}
-\item Semitic
+\item \langue{Semitic}{Sémitic}
 \begin{enumerate}
-\item Hebrew: \citet{rg-gj12yod}, 
+\item \langue{Hebrew}{Hébreu}: \citet{rg-gj12yod}.
 \end{enumerate}
-
-\item Algonquian
+\item \langue{Algonquian}{Algonquien}
 \begin{enumerate}
-\item General: \citet{jacques12bear}, \citet{jacques14inverse}
-\item Arapaho: \citet{jacques13arapaho}, 
+\item \langue{General}{Général}: \citet{jacques12bear}, \citet{jacques14inverse}.
+\item Arapaho: \citet{jacques13arapaho}.
 \end{enumerate}
- 
-\item Turkic
+\item  \langue{Turkic}{Turcique}
 \begin{enumerate}
-\item General: \citet{antonov12kumush}, 
+\item  \langue{General}{Général}: \citet{antonov12kumush}.
 \end{enumerate}
 \end{itemize} 
  
-\section{By topics}
+\section{\langue{By topics}{Par domaine de recherche}}
 \begin{itemize}
 
-\item Documentation
+\item  Documentation
 \begin{enumerate}
-\item  Text collections: \citet{jacques10gesar}, 
-\item General description: \citet{jacques04these}, \citet{jacques08},
+\item  \langue{Text collections}{Collections de textes}: \citet{jacques10gesar}.
+\item \langue{General description}{Descriptions générales}: \citet{jacques04these}, \citet{jacques08}.
 \end{enumerate}
 
 
-\item Phonology
+\item \langue{Phonology}{Phonologie}
 \begin{enumerate}
-\item  Panchronic Phonology:  \citet{jacques11lingua}, \citet{michaud-jacques12nasalite},     \citet{jacques13arapaho}, 
-\item   Tonology: \citet{jacques11pumi.tone},
-\item Morphophonology: \citet{jacques12khaling},   
-\item Reduplication:  \citet{jacques04redupl},  \citet{jacques07redupl},
+\item  \langue{Panchronic Phonology}{Phonologie panchronique}:  \citet{jacques11lingua}, \citet{michaud-jacques12nasalite},     \citet{jacques13arapaho}.
+\item   \langue{Tonology}{Tonologie}: \citet{jacques11pumi.tone}.
+\item \langue{Morphophonology}{Morphophonologie}: \citet{jacques12khaling}.
+\item \langue{Reduplication}{Réduplication}:  \citet{jacques04redupl},  \citet{jacques07redupl}.
 \end{enumerate}
 
-\item Morphosyntax
+\item \langue{Morphosyntax}{Morphosyntaxe}
 \begin{enumerate}
-\item  Incorporation: \citet{jacques11tangut.verb}, \citet{jacques12incorp}, 
-\item  Voice:  \citet{jacques07passif}, \citet{jacques10refl}, \citet{jacques12demotion}, \citet{jacques13derivational.khaling}, \citet{jacques13tropative}, \citet{jacques14antipassive}
-\item Hierarchical agreement:  \citet{jacques10inverse},     \citet{jacques12khaling},   \citet{antonov14rtau}, \citet{jacques14inverse}
-\item Evidentiality: \citet{jacques14auditory}
-\item Word-order typology: \citet{jacques13harmonization}, 
-\item Implicational universals: \citet{antonov14need}
-\item Ideophones: \citet{japhug14ideophones}
+\item  Incorporation: \citet{jacques11tangut.verb}, \citet{jacques12incorp}.
+\item  \langue{Voice}{Voix}:  \citet{jacques07passif}, \citet{jacques10refl}, \citet{jacques12demotion}, \citet{jacques13derivational.khaling}, \citet{jacques13tropative}, \citet{jacques14antipassive}.
+\item \langue{Hierarchical agreement}{Indexation hiérarchique}:  \citet{jacques10inverse},     \citet{jacques12khaling},   \citet{antonov14rtau}, \citet{jacques14inverse}.
+\item \langue{Evidentiality}{Evidentialité}: \citet{jacques14auditory}.
+\item \langue{Word-order typology}{Typologie de l'ordre des mots}: \citet{jacques13harmonization}, 
+\item \langue{Implicational universals}{Universels implicationnels}: \citet{antonov14need}.
+\item \langue{Ideophones}{Idéophones}: \citet{japhug14ideophones}.
 \end{enumerate}
 
-\item Formal linguistics
+\item \langue{Formal linguistics}{Linguistique formelle}
 \begin{enumerate}
-\item \citet{walther14inv.canon}
-\item \citet{walther14compactness}
+\item \citet{walther14inv.canon}.
+\item \citet{walther14compactness}.
 \end{enumerate}
 
-\item Historical linguistics
+\item \langue{Historical linguistics}{Linguistique historique}
 \begin{enumerate}
-\item Sound laws:  \citet{jacques00ywij}, \citet{jacques01dg}, \citet{jacques03dissimilation},   \citet{jacques04thimphu},\citet{jacques06comparaison},\citet{jacques09wazur}, \citet{jacques09e}, \citet{michaud10bonin},\citet{jacques10ndr}, \citet{jacques.michaud11naish},   \citet{rg-gj12yod}, \citet{jacques13arapaho}, \citet{jacques13yod}, \citet{jacques14snom},   \citet{jacques14esquisse}
-\item  Etymology:    \citet{jacques07naksatram}, \citet{jacques08debther}, \citet{jacques09zz}, \citet{jacques10imperial}, \citet{jacques11ngwemi}, \citet{jacques12bear},  \citet{jacques13vama},   \citet{jacques14esquisse}
-\item Historical morphology:  \citet{jacques03s.houzhui}, \citet{jacques06morpho}, \citet{jacques07chang},    \citet{jacques09tangutverb}, \citet{jacques10zos},\citet{jacques11tangut.verb},\citet{jacques12agreement},\citet{jacques12internal}, \citet{jacques14antipassive},   \citet{jacques14esquisse}
-\item Language contact: \citet{antonov12kumush},   \citet{jacques12bear},
-\item Genetic linguistics:  \citet{jacques07chang}, \citet{jacques12agreement}, \citet{jacques2015genetic},
+\item \langue{Sound laws}{Lois phonétiques}:  \citet{jacques00ywij}, \citet{jacques01dg}, \citet{jacques03dissimilation},   \citet{jacques04thimphu}, \citet{jacques06comparaison}, \citet{jacques09wazur}, \citet{jacques09e}, \citet{michaud10bonin}, \citet{jacques10ndr}, \citet{jacques.michaud11naish},   \citet{rg-gj12yod}, \citet{jacques13arapaho}, \citet{jacques13yod}, \citet{jacques14snom},   \citet{jacques14esquisse}, \citet{jacques14cone}.
+\item  \langue{Etymology}{Etymologie}:    \citet{jacques07naksatram}, \citet{jacques08debther}, \citet{jacques09zz}, \citet{jacques10imperial}, \citet{jacques11ngwemi}, \citet{jacques12bear},  \citet{jacques13vama},   \citet{jacques14esquisse}.
+\item \langue{Historical morphology}{Morphologie historique}:  \citet{jacques03s.houzhui}, \citet{jacques06morpho}, \citet{jacques07chang},    \citet{jacques09tangutverb}, \citet{jacques10zos}, \citet{jacques11tangut.verb}, \citet{jacques12agreement}, \citet{jacques12internal}, \citet{jacques14antipassive},   \citet{jacques14esquisse}, \citet{jacques14cone}.
+\item \langue{Language contact:}{Contact de langues} \citet{antonov12kumush},   \citet{jacques12bear},
+\item \langue{Genetic linguistics}{Linguistique génétique}:  \citet{jacques07chang}, \citet{jacques12agreement}, \citet{jacques2015genetic}.
 \end{enumerate}
-\item Ethnolinguistics
+\item \langue{Ethnolinguistics}{Ethnolinguistique}
 \begin{enumerate}
-\item Kinship: \citet{jacques11kinship},  
+\item Kinship: \citet{jacques11kinship}. 
 
 \end{enumerate}
   
