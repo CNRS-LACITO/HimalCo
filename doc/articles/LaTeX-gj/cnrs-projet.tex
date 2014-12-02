@@ -1,0 +1,81 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\setdefaultlanguage{french} 
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+\bibpunct[~: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\nouppercaseheads
+%\pagestyle{Ruled}
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipac}[1]{{\tiny #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+\newcommand{\tgz}[1]{#1 \mo{#1} \tg{#1}}
+\newcommand{\indextg}[1]{\index{\tge{#1}@\tgz{#1}}}
+\newcommand{\tgb}[1]{\tgz{#1}\indextg{#1}}
+\newcommand{\tgc}[1]{\tg{#1} \#1\indextg{#1}}
+\newcommand{\tgd}[1]{\tge{#1}\indextg{#1}}
+\newcommand{\tgf}[1]{\mo{#1}\indextg{#1}}
+\newcommand{\petit}[1]{\tiny#1}
+\newcommand{\sig}{\begin{math}\Sigma\end{math}}
+\newcommand{\phone}{\begin{math}\Phi\end{math}}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+
+
+\begin{document}
+%\OnehalfSpacing
+\title{Projet de recherche}
+\author{Guillaume Jacques}
+\maketitle
+
+\sloppy
+
+\section{Grammaire et corpus de référence du japhug}
+
+
+\section{Grammaire comparée des langues rgyalronguiques et des langues kiranti}
+Collectif, avec Gong Xun, Lai Yunfan
+
+\section{Typologie de la valence et des marques de voix}
+ 
+\section{Méthodes formelles en linguistique historique}
+
+\subsection{Méthode d'évaluation}
+
+\subsection{Changements phonétiques}
+
+\subsection{Analogie}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+ 
+\end{document}
