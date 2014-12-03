@@ -356,3 +356,22 @@ class Lemma(Form):
             self.add_form_representation(form_representation)
         form_representation.set_scriptName(script_name)
         return self
+
+    def set_audio(self, media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format):
+        """! @brief Set audio resource.
+        Attributes 'mediaType', 'fileName', 'author', 'quality', 'startPosition', 'durationOfEffectiveSpeech', 'externalReference', 'audioFileFormat' are owned by Material/Audio, which is owned by FormRepresentation.
+        @param media_type The media type to set.
+        @param file_name Name of the audio file.
+        @param author Author of the recording.
+        @param quality Quality of the recording, in range 'quality_range' defined in 'common/range.py'.
+        @param start_position Start position of the form in the recording, in format 'Thh:mm:ss,msms', e.g. "T00:05:00".
+        @param duration Duration of the effcetive speech, in format 'PThhHmmMssS', e.g. "PT00:05:00".
+        @param external_reference Reference of the audio file, if not directly provided.
+        @param audio_file_format Format of the audio file, e.g. "wav".
+        @return Lemma instance.
+        """
+        # Create a FormRepresentation instance
+        form_representation = self.create_form_representation()
+        self.add_form_representation(form_representation)
+        form_representation.set_audio(media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format)
+        return self

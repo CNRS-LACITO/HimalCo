@@ -4,6 +4,7 @@
 """
 
 from utils.error_handling import Error
+from utils.attr import check_date_format
 
 class GlobalInformation():
     """! "Global Information is a class for administrative information and other general attributes, such as /language coding/ or /script coding/, which are valid for the entire lexical resource." (LMF)
@@ -30,21 +31,12 @@ class GlobalInformation():
         """
         pass
 
-    def check_date_format(self, date):
-        """! @brief Verify that date format is composed as follows: YYYY-MM-DD.
-        If not, raise an Error.
-        @param date Date to check.
-        """
-        import re
-        if not re.match("^\d{4}-\d{2}-\d{2}$", date):
-            raise Error("Date must be formatted as follows: YYYY-MM-DD (given date is %s)" % date)
-
     def set_creationDate(self, date):
         """! @brief Set global information creation date.
         @param date The date to set.
         @return GlobalInformation instance.
         """
-        self.check_date_format(date)
+        check_date_format(date)
         self.creationDate = date
         return self
 
@@ -59,7 +51,7 @@ class GlobalInformation():
         @param date The date to set.
         @return GlobalInformation instance.
         """
-        self.check_date_format(date)
+        check_date_format(date)
         self.lastUpdate = date
         return self
 

@@ -61,7 +61,7 @@ class TestTexFunctions(unittest.TestCase):
             "\end{document}" + EOL
             ]
         expected_lines = [
-            "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.2cm} \\hypertarget{0}{}" + EOL,
+            "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
             "\\textcolor{teal}{\\textit{toto}}. \\textit{Status:} draft" + EOL,
             EOL]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())

@@ -29,17 +29,6 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertIsNone(self.global_information.description)
         self.assertIsNone(self.global_information.bibliographicCitation)
 
-    def test_check_date_format(self):
-        # Test error cases
-        dates = ["2014", "YYYY-MM-DD", "2014-10-8", "08-10-2014", "2014/10/08"]
-        for date in dates:
-            test = False
-            try:
-                self.global_information.check_date_format(date)
-            except Error:
-                test = True
-            self.assertTrue(test)
-
     def test_set_creationDate(self):
         date = "2014-10-08"
         self.assertEqual(self.global_information.set_creationDate(date), self.global_information)

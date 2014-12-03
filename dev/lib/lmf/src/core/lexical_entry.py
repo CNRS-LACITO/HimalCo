@@ -971,6 +971,25 @@ class LexicalEntry():
         sense.set_translation(translation, language)
         return self
 
+    def set_audio(self, media_type="audio", file_name=None, author=None, quality=None, start_position="T00:00:00", duration=None, external_reference=None, audio_file_format=None):
+        """! @brief Set audio resource.
+        Attributes 'mediaType', 'fileName', 'author', 'quality', 'startPosition', 'durationOfEffectiveSpeech', 'externalReference', 'audioFileFormat' are owned by Material/Audio, which is owned by FormRepresentation, itself owend by Lemma.
+        @param media_type The media type to set.
+        @param file_name Name of the audio file.
+        @param author Author of the recording.
+        @param quality Quality of the recording, in range 'quality_range' defined in 'common/range.py'.
+        @param start_position Start position of the form in the recording, in format 'Thh:mm:ss,msms', e.g. "T00:05:00".
+        @param duration Duration of the effcetive speech, in format 'PThhHmmMssS', e.g. "PT00:05:00".
+        @param external_reference Reference of the audio file, if not directly provided.
+        @param audio_file_format Format of the audio file, e.g. "wav".
+        @return LexicalEntry instance.
+        """
+        # Create a Lemma instance if not yet created
+        if self.lemma is None:
+            self.lemma = Lemma()
+        self.lemma.set_audio(media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format)
+        return self
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.

@@ -65,7 +65,13 @@
 				<!-- Display lexeme -->
 				<xsl:element name="td">
 					<xsl:attribute name="width">25%</xsl:attribute>
-					<xsl:value-of select="./Lemma/feat[@att='lexeme']//@val"/>				
+					<xsl:value-of select="./Lemma/feat[@att='lexeme']//@val"/>
+					<!-- Display audio file name -->
+					<xsl:for-each select="./Lemma/FormRepresentation/Audio">
+						<audio controls="controls" preload="none">
+							<source src="{./feat[@att='fileName']//@val}" type="audio/{./feat[@att='audioFileFormat']//@val}"/>
+						</audio>
+					</xsl:for-each>
 				</xsl:element>
 				<!-- Display part of speech or '-' if None -->
 				<xsl:element name="td">

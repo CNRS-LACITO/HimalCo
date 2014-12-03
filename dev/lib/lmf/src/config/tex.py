@@ -3,6 +3,7 @@
 
 from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import EOL
+from utils.error_handling import Warning
 
 ## Fonts to use in LaTeX format (output)
 tex_font = dict({
@@ -21,6 +22,8 @@ def lmf_to_tex(lexical_entry, font=tex_font):
     tex_entry = ""
     # lexeme and id
     tex_entry += format_lexeme(lexical_entry, font)
+    # sound
+    tex_entry += format_audio(lexical_entry, font)
     # part of speech
     tex_entry += format_part_of_speech(lexical_entry, font)
     # definition/gloss and translation
@@ -73,9 +76,9 @@ def lmf_to_tex(lexical_entry, font=tex_font):
     if tex_entry.find("#") != -1:
         tex_entry = tex_entry.replace('#', '\#')
     if tex_entry.find("_") != -1:
-        tex_entry = tex_entry.replace('_', '\_')
-    if tex_entry.find("&") != -1:
-        tex_entry = tex_entry.replace('&', '\&')
+        tex_entry = tex_entry.replace('_', '\_').replace("\string\_", "\string_")
+    if tex_entry.find("& ") != -1:
+        tex_entry = tex_entry.replace('& ', '\& ')
     if tex_entry.find("$") != -1:
         tex_entry = tex_entry.replace('$', '')
     if tex_entry.find("^") != -1:
@@ -147,7 +150,39 @@ def format_lexeme(lexical_entry, font):
     else:
         # Format lexeme
         result += lexeme
-    result += " \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()) + "}{}" + EOL
+    result += " \\hspace{0.1cm} \\hypertarget{" + unicode(lexical_entry.get_id()) + "}{}" + EOL
+    return result
+
+def format_audio(lexical_entry, font):
+    """! @brief Embed sound file into PDF.
+    @param lexical_entry The current Lexical Entry LMF instance.
+    @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @return A string embedding sound in LaTeX format.
+    """
+    from os.path import basename, isfile
+    result = ""
+    for form_representation in lexical_entry.get_form_representations():
+        if form_representation.get_audio() is not None:
+            # Embed local sound file
+            # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
+            file_name = basename(form_representation.get_audio().get_fileName())
+            if not isfile(form_representation.get_audio().get_fileName().replace("file://", '')):
+                print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
+                return result
+            file_name = file_name.replace('_', '\string_').replace('-', '\string-')
+            result += "\includemedia[\n" \
+                "\taddresource=" + file_name + ",\n" \
+                "\tflashvars={\n" \
+                    "\t\tsource=" + file_name + "\n" \
+                    "\t\t&autoPlay=true\n" \
+                    "\t\t&autoRewind=true\n" \
+                    "\t\t&loop=false\n" \
+                    "\t\t&hideBar=true\n" \
+                    "\t\t&volume=1.0\n" \
+                    "\t\t&balance=0.0\n" \
+                "}]{\includegraphics[scale=0.5]{sound1\string_bleu.jpg}}{APlayer.swf}"
+            # \mediabutton[<options>]{<normal button text or graphic>}
+            result += " \\hspace{0.1cm}\n"
     return result
 
 def format_part_of_speech(lexical_entry, font):

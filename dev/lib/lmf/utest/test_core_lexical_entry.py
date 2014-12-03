@@ -1031,6 +1031,25 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.sense[0].equivalent[1].translation, trans)
         self.assertEqual(self.lexical_entry.sense[0].equivalent[1].language, lang)
 
+    def test_set_audio(self):
+        media_type = "audio"
+        file_name = "name"
+        author = "author"
+        quality = "low"
+        start_position = "T01:23:45"
+        duration = "PT12H34M56S"
+        external_reference = "ref"
+        audio_file_format = "mp3"
+        self.assertEqual(self.lexical_entry.set_audio(media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.mediaType, media_type)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.fileName, file_name)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.author, author)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.quality, quality)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.startPosition, start_position)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.durationOfEffectiveSpeech, duration)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.externalReference, external_reference)
+        self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.audioFileFormat, audio_file_format)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite

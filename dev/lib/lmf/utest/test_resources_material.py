@@ -20,7 +20,7 @@ class TestMaterialFunctions(unittest.TestCase, Material):
         # Try to release a Material object
         test = False
         try:
-            self.__del__()
+            Material.__del__(self)
         except NotImplementedError:
             test = True
         self.assertTrue(test)

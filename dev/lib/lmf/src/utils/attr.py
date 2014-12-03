@@ -39,3 +39,30 @@ def check_attr_range(value, range, msg, mapping=None):
     else:
         # Value to set
         return value
+
+def check_date_format(date):
+    """! @brief Verify that date format is composed as follows: YYYY-MM-DD (ISO 8601).
+    If not, raise an Error.
+    @param date Date to check.
+    """
+    import re
+    if not re.match("^\d{4}-[01]\d-[0-3]\d$", date):
+        raise Error("Date must be formatted as follows: YYYY-MM-DD (given date is %s)" % date)
+
+def check_time_format(time):
+    """! @brief Verify that time format is composed as follows: THH:MM:SS,MSMS (ISO 8601: 'T' for Time).
+    If not, raise an Error.
+    @param time Time to check.
+    """
+    import re
+    if not re.match("^T[0-2]\d:[0-5]\d:[0-5]\d(\,\d+|)$", time):
+        raise Error("Time must be formatted as follows: THH:MM:SS,MSMS (given time is %s)" % time)
+
+def check_duration_format(duration):
+    """! @brief Verify that duration format is composed as follows: PTxxHxxMxxS (ISO 8601: 'P' for Period).
+    If not, raise an Error.
+    @param duration Duration to check.
+    """
+    import re
+    if not re.match("^PT[0-2]\dH[0-5]\dM[0-5]\dS$", duration):
+        raise Error("Duration must be formatted as follows: PTxxHxxMxxS (given duration is %s)" % duration)

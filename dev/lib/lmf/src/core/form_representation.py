@@ -4,6 +4,7 @@
 """
 
 from core.representation import Representation
+from resources.audio import Audio
 from utils.error_handling import Error
 from utils.attr import check_attr_type, check_attr_range
 from common.range import type_variant_range
@@ -29,9 +30,9 @@ class FormRepresentation(Representation):
         self.citationForm = None
         self.dialect = None
         self.scriptName = None
-        ## Audio instances are owned by FormRepresentation
-        # There is zero to many Audio instances per FormRepresentation
-        self.audio = []
+        ## Audio instance is owned by FormRepresentation
+        # There is zero or one Audio instance per FormRepresentation
+        self.audio = None
         # Speaker id
         self.targets = None
         ## Pointers to an existing Speaker
@@ -42,9 +43,8 @@ class FormRepresentation(Representation):
         """! @brief Destructor.
         Release Audio instances.
         """
-        for audio in self.audio:
-            del audio
-        del self.audio[:]
+        if self.audio is not None:
+            del self.audio
         # Decrement the reference count on pointed objects
         del self.__speaker[:]
 
@@ -274,3 +274,49 @@ class FormRepresentation(Representation):
         @return FormRepresentation attribute 'scriptName'.
         """
         return self.scriptName
+
+    def create_audio(self):
+        """! @brief Create an Audio instance.
+        @return Audio instance.
+        """
+        return Audio()
+
+    def get_audio(self):
+        """! @brief Get the audio resource maintained by the form representation.
+        @return Audio instance.
+        """
+        return self.audio
+
+    def set_audio(self, media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format):
+        """! @brief Set audio resource.
+        Attributes 'mediaType', 'fileName', 'author', 'quality', 'startPosition', 'durationOfEffectiveSpeech', 'externalReference', 'audioFileFormat' are owned by Material/Audio.
+        @param media_type The media type to set.
+        @param file_name Name of the audio file.
+        @param author Author of the recording.
+        @param quality Quality of the recording, in range 'quality_range' defined in 'common/range.py'.
+        @param start_position Start position of the form in the recording, in format 'Thh:mm:ss,msms', e.g. "T00:05:00".
+        @param duration Duration of the effcetive speech, in format 'PThhHmmMssS', e.g. "PT00:05:00".
+        @param external_reference Reference of the audio file, if not directly provided.
+        @param audio_file_format Format of the audio file, e.g. "wav".
+        @return FormRepresentation instance.
+        """
+        # Create an Audio instance
+        self.audio = self.create_audio()
+        # Set all attributes
+        if media_type is not None:
+            self.audio.set_mediaType(media_type)
+        if file_name is not None:
+            self.audio.set_fileName(file_name)
+        if author is not None:
+            self.audio.set_author(author)
+        if quality is not None:
+            self.audio.set_quality(quality)
+        if start_position is not None:
+            self.audio.set_startPosition(start_position)
+        if duration is not None:
+            self.audio.set_durationOfEffectiveSpeech(duration)
+        if external_reference is not None:
+            self.audio.set_externalReference(external_reference)
+        if audio_file_format is not None:
+            self.audio.set_audioFileFormat(audio_file_format)
+        return self

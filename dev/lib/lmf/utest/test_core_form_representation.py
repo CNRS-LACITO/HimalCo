@@ -2,6 +2,7 @@
 
 from startup import *
 from core.form_representation import FormRepresentation
+from resources.audio import Audio
 from utils.error_handling import Error
 
 ## Test FormRepresentation class
@@ -32,7 +33,7 @@ class TestFormRepresentationFunctions(unittest.TestCase):
         self.assertIsNone(self.form_representation.dialect)
         self.assertIsNone(self.form_representation.language)
         self.assertIsNone(self.form_representation.scriptName)
-        self.assertListEqual(self.form_representation.audio, [])
+        self.assertIsNone(self.form_representation.audio)
         self.assertIsNone(self.form_representation.targets)
         self.assertListEqual(self.form_representation.get_speakers(), [])
 
@@ -219,6 +220,41 @@ class TestFormRepresentationFunctions(unittest.TestCase):
         self.form_representation.scriptName = script
         # Test get script name
         self.assertEqual(self.form_representation.get_scriptName(), script)
+
+    def test_create_audio(self):
+        # Test create audio
+        audio = self.form_representation.create_audio()
+        self.assertIsInstance(audio, Audio)
+        # Release Audio instance
+        del audio
+
+    def test_get_audio(self):
+        # Create Audio instance
+        audio = Audio()
+        self.form_representation.audio = audio
+        # Test get audio
+        self.assertEqual(self.form_representation.get_audio(), audio)
+        # Delete Audio instance
+        del audio
+
+    def test_set_audio(self):
+        media_type = "audio"
+        file_name = "name"
+        author = "author"
+        quality = "low"
+        start_position = "T01:23:45"
+        duration = "PT12H34M56S"
+        external_reference = "ref"
+        audio_file_format = "mp3"
+        self.assertEqual(self.form_representation.set_audio(media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format), self.form_representation)
+        self.assertEqual(self.form_representation.audio.mediaType, media_type)
+        self.assertEqual(self.form_representation.audio.fileName, file_name)
+        self.assertEqual(self.form_representation.audio.author, author)
+        self.assertEqual(self.form_representation.audio.quality, quality)
+        self.assertEqual(self.form_representation.audio.startPosition, start_position)
+        self.assertEqual(self.form_representation.audio.durationOfEffectiveSpeech, duration)
+        self.assertEqual(self.form_representation.audio.externalReference, external_reference)
+        self.assertEqual(self.form_representation.audio.audioFileFormat, audio_file_format)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestFormRepresentationFunctions)
 

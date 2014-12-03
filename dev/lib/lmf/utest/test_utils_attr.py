@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 from startup import *
-from utils.attr import check_attr_type, check_attr_range
+from utils.attr import check_attr_type, check_attr_range, check_date_format
 from utils.error_handling import Error
 
 ## Test attribute functions
@@ -45,6 +45,17 @@ class TestAttrFunctions(unittest.TestCase):
         except Error:
             test = True
         self.assertTrue(test)
+
+    def test_check_date_format(self):
+        # Test error cases
+        dates = ["2014", "YYYY-MM-DD", "2014-10-8", "08-10-2014", "2014/10/08"]
+        for date in dates:
+            test = False
+            try:
+                check_date_format(date)
+            except Error:
+                test = True
+            self.assertTrue(test)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAttrFunctions)
 
