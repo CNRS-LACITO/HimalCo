@@ -22,11 +22,9 @@
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
 
 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL}  
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
-\newcommand{\ipac}[1]{{\tiny #1}}
-\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\ipac}[1]{{\tiny #1}} 
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
@@ -38,8 +36,7 @@
 \newcommand{\tgd}[1]{\tge{#1}\indextg{#1}}
 \newcommand{\tgf}[1]{\mo{#1}\indextg{#1}}
 \newcommand{\petit}[1]{\tiny#1}
-\newcommand{\sig}{\begin{math}\Sigma\end{math}}
-\newcommand{\phone}{\begin{math}\Phi\end{math}}
+\newcommand{\sig}{\begin{math}\Sigma\end{math}} 
 \newcommand{\ra}{$\Sigma_1$} 
 \newcommand{\rc}{$\Sigma_3$} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -47,36 +44,46 @@
 
 \begin{document}
 %\OnehalfSpacing
-\title{Projet de recherche}
+\title{Projet de recherche} 
 \author{Guillaume Jacques}
 \maketitle
 
 \sloppy
 \tableofcontents
 \section{Grammaire et corpus de référence du japhug}
-Ma priorité à moyen terme est de finir une grammaire de référence du japhug, accompagnée d'un dictionnaire et d'un corpus de textes disponibles en ligne. Une première version du dictionnaire sera disponible en ligne d'ici mi-2015, et le corpus sera progressivement publié sur le site Pangloss. C'est surtout sur la rédaction de la grammaire que mes efforts vont porter.
+Ma priorité à moyen terme est de finir une grammaire de référence du japhug, accompagnée d'un dictionnaire et d'un corpus de textes disponibles en ligne. Une première version du dictionnaire sera disponible en ligne d'ici mi-2015, et le corpus sera progressivement publié sur le site Pangloss. 
 
-Si j'ai déjà publié une grammaire en chinois (\citealt{jacques08zh}), celle-ci, du fait des contraintes de la collection où elle a été publiée, est relativement courte (472 pp -- j'avais dû raccourcir le manuscrit) et n'est pas utilisable par les typologues occidentaux à cause de la barrière de la langue. Par ailleurs, ma connaissance du japhug est considérablement plus avancée maintenant qu'en 2006-2007 (lorsque je rédigeais ce livre), et mon corpus actuel est six fois plus long qu'à cette époque, et il est nécessaire d'écrire une nouvelle grammaire, en anglais, destinée aux typologues et aux comparatistes.
+Ce corpus, qui dépasse 60h de textes enregistrés (sans compter les phrases isolées et les listes de mots), aura besoin d'être complété toutefois par davantage de conversations -- il n'en comprend actuellement seulement que 40 minutes. Or, les conversations, par opposition aux histoires et aux textes procéduraux, sont indispensables pour éclaircir de nombreux aspects de la grammaire, en particulier le TAM et l'usage des particules de fin de phrase. En outre, pour les textes procéduraux, je compte collecter davantage de données vidéo. 
 
-Depuis 2010, j'ai publié une série d'articles en anglais sur plusieurs points de la morphosyntaxe du japhug, qui peuvent être remaniés comme chapitres de grammaire en ajoutant des exemples, en supprimant les redondances et en les intégrant à l'ensemble du manuscrit. Cela inclut les sections sur l'indexation (\citealt{jacques10inverse}), la valence et la voix (\citealt{jacques12demotion}, \citealt{jacques12incorp}, \citealt{jacques13tropative},   \citealt{jacques14antipassive}), les idéophones (\citealt{japhug14ideophones}), le mouvement associé et les constructions à verbe de mouvement (\citealt{jacques13harmonization}) et le chainage de propositions (\citealt{jacques14linking}). Si l'on inclut d'autres sections déjà partiellement rédigées, je dispose déjà en tout de 290 pages, mais ces matériaux n'ont pas encore été combinés en un  tout cohérent.
+Néanmoins, je considère déjà disposer d'un corpus relativement représentatif pour une description de la langue assez détaillée. C'est donc la rédaction de la grammaire qui est maintenant pour moi la tâche prioritaire.
+
+
+
+Si j'ai déjà publié une grammaire en chinois (\citealt{jacques08zh}), celle-ci, du fait des contraintes de la collection où elle a été publiée, est relativement courte (472 pp -- j'avais dû raccourcir le manuscrit) et n'est pas utilisable par les typologues occidentaux à cause de la barrière de la langue. Par ailleurs, ma connaissance du japhug est considérablement plus avancée maintenant qu'en 2006-2007 (lorsque je rédigeais ce livre), et mon corpus actuel est six fois plus long qu'à cette époque. Il est donc indispensable d'écrire une nouvelle grammaire en anglais, destinée aux typologues et aux comparatistes.  Ce travail n'est pas redondant avec la grammaire de 2008, car il s'adresse à une audience différent, et sera basé sur un corpus d'une taille beaucoup plus conséquente.
+
+Depuis 2010, j'ai publié une série d'articles en anglais sur plusieurs points de la morphosyntaxe du japhug, qui peuvent être remaniés comme chapitres de grammaire en ajoutant de nouveaux exemples, en supprimant les redondances et en les intégrant à l'ensemble du manuscrit. Cela inclut les sections sur l'indexation (\citealt{jacques10inverse}), la valence et la voix (\citealt{jacques12demotion}, \citealt{jacques12incorp}, \citealt{jacques13tropative},   \citealt{jacques14antipassive}), les idéophones (\citealt{japhug14ideophones}), le mouvement associé et les constructions à verbe de mouvement (\citealt{jacques13harmonization}) et le chainage de propositions (\citealt{jacques14linking}). Si l'on prend en compte d'autres sections déjà partiellement rédigées, je dispose déjà en tout de 290 pages, mais ces matériaux n'ont pas encore été combinés en un  tout cohérent.
 
 Il reste encore à écrire de nombreuses parties de la grammaire: les sections sur la nominalisation, la complémentation, la morphologie nominale, la structure de la phrase nominale, les classes de verbes, les pivots syntaxiques et l'alignement, les quantificateurs, les particules de fin de phrase, la structure informationnelle, et de compléter celles sur les marques de voix, la dérivation verbale et le TAM.
 
-  J'ai soumis cinq articles qui pourront être intégrés sous forme remaniée à la grammaire sur la phonologie (\textit{illustration of the IPA}), les comparatives, le générique, les constructions causatives et les relatives. Je compte soumettre en 2015 au moins cinq articles sur la morphosyntaxe du japhug: les numéraux et les classificateurs (pour un Festschrift), le préfixe spontané / autobénéfactif, le discours indirect hybride, les complétives et l'évidentialité. Lorsque tous ces articles seront rédigés (fin 2015), je me consacrerai pleinement  à synthétiser toutes les sections déjà rédigées et à les compléter, et à écrire les sections qui peuvent difficilement mener à un article (dans le domaines de la grammaire où le japhug n'est pas typologiquement inhabituel).
+  J'ai soumis cinq articles qui pourront être intégrés sous forme remaniée à la grammaire sur la phonologie (\textit{illustration of the IPA}), les comparatives, le générique, les constructions causatives et les relatives. Je compte soumettre en 2015 et 2016 au moins cinq articles sur la morphosyntaxe du japhug: les numéraux et les classificateurs (pour un Festschrift), le préfixe spontané / autobénéfactif, le discours indirect hybride, les complétives et l'évidentialité. 
+  
+  Lorsque tous ces articles seront achevés, je me consacrerai pleinement  à synthétiser toutes les sections déjà rédigées et à les compléter, ainsi qu'à écrire les sections qui peuvent difficilement mener à un article (dans les domaines de la grammaire où le japhug n'est pas typologiquement inhabituel).
 
 J'estime à quatre ans, à raison de 150 pages par an (ajoutées à celles déjà écrites), le délai nécessaire minimal pour compléter la première version complète de la grammaire (pour 2018-2019).
 
 \section{Grammaire comparée des langues rgyalronguiques et des langues kiranti}
-La grammaire du japhug sera la première pierre d'un édifice plus général -- la grammaire comparée (synchronique et diachronique) des langues rgyalronguiques et kiranti. J'ai abandonné l'idée d'une recherche comparative sur l'ensemble du sino-tibétain, et préfère me concentrer sur les deux branches de la famille dont la morphologie verbale est la plus complexe (ces deux branches comprennent respectivement 10 et 22 langues au minimum -- soit une quantité de données plus grande que l'ensemble de la famille algonquienne).
+La grammaire du japhug sera la première pierre d'un édifice plus général -- la grammaire comparée (synchronique et diachronique) des langues rgyalronguiques et kiranti, les deux branches de la famille sino-tibétaine dont la morphologie verbale est la plus complexe. Ces deux branches comprennent respectivement 10 et 22 langues au minimum -- soit une quantité de données plus grande que l'ensemble de la famille algonquienne, et il me semble préférable de concentrer mes efforts sur ces deux groupes plutôt que d'essayer de maîtriser l'ensemble des données sino-tibétaines.
 
 Ce projet de recherche sera nécessairement collectif, car la masse des données à traiter rend impraticable une approche isolée. Il comprendra quatre parties: descriptions des langues et collection de données, phonologie comparée du rgyalronguique, phonologie historique du khaling et enfin morphosyntaxe comparée.
 
 \subsection{Collection de données}
 Une recherche comparative requiert des données riches, fiables et complètes sur toutes les langues étudiées, et à ce titre cette entreprise n'est pas réalisable sur la base exclusive de la grammaire japhug.
 
-Je ne compte pas d'ici 2020 me charger de rédiger de grammaire autre que celle du japhug. Néanmoins, je continuerai à travailler sur trois autres langues, le khaling, le stau et le situ, et écrirai des articles sur des points spécifiques de la morphosyntaxe de ces langues, probablement en collaboration (avec Aimée Lahaussois, Anton Antonov et Gong Xun), et continuerai à collecter des textes. 
+Je ne compte pas d'ici 2020 me charger de rédiger de grammaire autre que celle du japhug. Néanmoins, je continuerai à travailler sur trois autres langues, le khaling, le stau et le situ, collecterai des enregistrements, et écrirai des articles sur des points spécifiques de morphosyntaxe, probablement en collaboration (avec Aimée Lahaussois, Anton Antonov, Lai Yunfan et Gong Xun). Il est probable que certains de ces articles pourront mener à des contributions théoriques plus générales, et conduire notre recherche en typologie dans des directions nouvelles.
 
-En outre, j'envisage un rôle de supervision: diriger des thèses de façon à couvrir l'ensemble des langues (et les dialectes) rgyalronguiques et kiranti qui restent à décrire, ainsi qu'à approfondir des points spécifiques sur les langues mieux dotées.
+En outre, j'envisage un rôle de supervision: diriger des thèses de façon à couvrir l'ensemble des langues (et les dialectes) rgyalronguiques et kiranti qui restent à décrire, ainsi qu'à approfondir des points spécifiques sur les langues mieux dotées. Outre les langues modernes, je compte également former des étudiants en philologie tangoute, qui pourrons prolonger mes travaux et valoriser le corpus que j'ai déjà transcrit dans cette langue.
+
+Je continuerai à enseigner dans le mastaire conjoint Inalco-Paris III afin de découvrir et former les étudiants prometteurs, avant leur formation doctorale.
 
 
 \subsection{Phonologie et morphologie comparée du rgyalronguique} \label{sec:comparee.rgy}
@@ -87,7 +94,7 @@ Le lexique comparatif des langues rgyalronguiques comprend actuellement plus de 
 Outre la reconstruction phonologique proprement dite, il est nécessaire d'intégrer la morphologie dans ces reconstructions, en particulier les alternances de thèmes verbaux réguliers et irréguliers et les dérivations verbales et dénominales. Si certaines alternances vocaliques peuvent être expliquées comme résultant de la fusion du radical verbal avec des suffixes (\citealt[357-8]{jacques04these}) ce n'est pas le cas de la majorité d'entre elles en particulier en zbu (\citealt{jackson04showu}), et leur origine reste jusqu'à ce jour un mystère.
 
 \subsection{Phonologie et morphologie historique du khaling}
-En kiranti, je compte au moins dans un premier temps me focaliser sur la comparaison du khaling et du dumi (\citealt{driem93dumi}) et du (\citealt{lahaussois09}), car ces trois langues forment un sous-groupe clair au sein du kiranti et leur systèmes verbaux sont facilement comparables -- ce qui n'est pas le cas avec des langues kiranti plus éloignées comme le thulung ou le limbu.
+En kiranti, je compte au moins dans un premier temps me focaliser sur la comparaison du khaling et du dumi (\citealt{driem93dumi}) et du koyi (\citealt{lahaussois09}), car ces trois langues forment un sous-groupe clair au sein du kiranti et leur systèmes verbaux sont facilement comparables -- ce qui n'est pas le cas avec des langues kiranti plus éloignées comme le thulung ou le limbu.
 
 Ce groupe présente une situation presque idéale pour le comparatiste. En effet, le khaling est très conservateur du point de vue des attaques (en particulier les groupes de consonnes initiaux) mais très innovateur en ce qui concerne les voyelles et les consonnes finales, alors qu'à l'inverse, le dumi a perdu les groupes de consonnes, mais préserve bien en revanche les consonnes finales. 
 
@@ -99,31 +106,46 @@ Je compte par la suite préparer un lexique comparatif des verbes khaling et dum
 \subsection{Morphosyntaxe comparée}
 La grammaire comparée ne se limite pas à une liste de morphèmes reconstruits. Une fois les lois phonétiques établies, il devient possible d'effectuer une comparaison détaillée de l'ensemble des constructions grammaticales dans les langues étudiées.
 
-Il est difficile, à ce stade de nos connaissance des langues rgyalronguiques autres que le japhug, de prévoir quels seront les sujets d'étude les plus prometteurs dans ce domaine, mais je compte au moins étudier en détail l'histoire des systèmes d'indexation et de voix dans les langues rgyalronguiques d'une part, et kiranti d'autre part. Ce travail permettra d'évaluer jusqu'à quel point les systèmes verbaux des langues rgyalronguiques et kiranti sont cognats, et de répondre à la question de l'antiquité de la morphologie verbale en sino-tibétain.
+Il est difficile, à ce stade de nos connaissance des langues rgyalronguiques autres que le japhug, de prévoir quels seront les sujets d'étude les plus prometteurs dans ce domaine. Je compte au moins étudier en détail les deux questions suivantes:
+\begin{enumerate}
+\item L'histoire des systèmes d'indexation en rgyalronguique et en kiranti: Dans quelle mesure les ressemblances entre ces deux groupes peut s'expliquer par une évolution parallèle ou par un héritage commun (\citealt{jacques12agreement}) et quel système d'indexation est-il possible de reconstruire pour leur ancêtre commun?
+\item Les préfixes de nominalisation (qui sont cognats entre rgyalronguique et kiranti) et leurs différentes fonctions syntaxiques (dans les relatives, les complétives et les subordonnées de manière).
+\end{enumerate}
+
+ 
+
+
 
 \section{Typologie des changements phonétiques } \label{sec:phonetique}
 De tous les domaines de la linguistique historique, c'est sans doute la phonologie dans laquelle la formulation de lois générales est le moins problématique. 
 
-A court et moyen terme, je compte essentiellement écrire des articles sur des points spécifiques, comme les origines diachroniques de certains sons rares ou de changements peu habituels, dans la lignée des mes articles \citet{jacques11lingua} et \citet{michaud-jacques12nasalite} sur les fricatives aspirées et la nasalité. En particulier, j'envisage un article sur le passage des occlusives labiales en vélaires comme en arapaho (\citealt{goddard74arapaho}) et en strait salish (où ils finissent comme des affriquées palatales, voir \citealt[10-11]{kuipers02salish}).
+A court et moyen terme, je compte essentiellement écrire des articles sur des points spécifiques, comme les origines diachroniques de certains sons rares ou de changements peu habituels, dans la lignée des mes articles \citet{jacques11lingua} (sur les fricatives aspirées), \citet{michaud-jacques12nasalite} (sur la nasalité) et \citet{jacques13arapaho} (sur la phonologie historique de l'arapaho). 
+
+En particulier, je compte effectuer une recherche sur le passage des occlusives labiales en vélaires \ipa{*p} $\rightarrow$ \ipa{k}  comme en arapaho (\citealt{goddard74arapaho}) et en strait salish (où ils finissent comme des affriquées palatales, voir \citealt[10-11]{kuipers02salish}). Ce travail traitera en particulier des changements en chaîne auxquels \ipa{*p} $\rightarrow$ \ipa{k}  participe dans les langues où il est attesté.
+
+
 
 A plus long terme, la compilation d'une base de données sur les changements phonétiques, basée sur des sources primaires mais également sur des synthèses telles que  \citet{kuemmel07wandel} ou \citet{blevins04evolutionary, blevins08naturalness} est réalisable en équipe.
 
  
 
-\section{Typologie panchronique des systèmes d'indexation et des marques de voix }
- 
+\section{Typologie panchronique des systèmes d'indexation, des marques de voix et de l'ordre des mots}
+Dans le domaine de la morphosyntaxe, je m'intéresse d'une part aux systèmes d'indexation et de voix et d'autre part à la typologie de l'ordre des mots, car c'est sur ces sujets que les données du japhug m'ont permis d'écrire des les articles dont je suis le plus satisfait.
+
+Je n'exclus pas de travailler sur d'autres aspects de la morphosyntaxe dans une perspective typologique, en fonction des phénomènes que je découvrirai  dans les langues rgyalronguiques et kiranti dans mes recherches futures.
+
 \subsection{Évolution des systèmes d'indexation} \label{sec:indexation}
  Mes travaux sur la morphologie comparée des langues rgyalronguiques et kiranti pourront être intégrés dans un cadre plus large, celui des principes généraux des changements diachroniques dans les systèmes verbaux à indexation polypersonnelle.  
  
  Ce programme de recherche, non limité au sino-tibétain, intégrera des données d'autres familles à indexation complexe, en particulier algonquien, sahaptien, sioux. 
 
-Une première étape de ce travail est \citet{jacques15directionality}, dans lequel nous avons proposé certains principes généraux de changements analogiques sur la base de données de plusieurs langues algonquiennes. Il sera intéressant de tester si les conclusions de cet article restent valides en entreprenant une étude typologique sur un échantillon de langues plus important.
+Une première étape de ce travail est \citet{jacques15directionality}, dans lequel nous avons découvert certaines récurrences dans le fonctionnement des changements analogiques dans les algonquiennes, en particulier dans la réfection du \textit{conjunct order}. Ce travail amène à la constatation suivante:  les formes les plus courantes sont également celles qui résistent le mieux à l'analogie, et sur la base desquelles les généralisations analogiques opèrent. Je souhaiterais tester la validité de cette idée, et la quantifier par des études de corpus sur des langues de familles différentes.
  
  Une autre question importante est la genèse des morphèmes portemanteaux  (notamment pour les marques `locales' $1\rightarrow2$ et $2\rightarrow1$, voir \citealt{heath98skewing}). J'ai déjà contribué à cette question dans le cas du rgyalronguique (\citealt{jacques15generic}), et compte l'aborder dans les langues algonquiennes et sioux, dont la phonologie historique est suffisamment bien élucidée pour pouvoir entreprendre ce type de recherches. 
  
  
  \subsection{Origine diachronique des marques de voix} 
-Dans  la continuation de mon article \citet{jacques14antipassive}, j'envisage d'écrire une monographie sur l'origine diachronique des marques de voix, dans lequel j'inclurai les marques de personne indéfinie / générique et l'incorporation.
+Dans  la continuation de mon article \citet{jacques14antipassive}, j'envisage d'écrire une monographie sur l'origine diachronique des marques de voix dans les langues du monde, dans lequel j'inclurai les marques de personne indéfinie / générique et l'incorporation.
 
 C'est un sujet sur lequel une vaste littérature  existe depuis une trentaine d'années, mais la quasi-totalité des travaux sur la grammaticalisation négligent les lois phonétiques et la méthode comparative, surtout dans le cas de langues non-indo-européennes (voir la critique de \citealt{heath98hermit}).
 
@@ -131,8 +153,14 @@ On dispose de travaux réutilisables par les non-spécialistes sur la diachronie
 
  Comme \citet{haspelmath90passive}, la question qui m'intéresse le plus est celle de l'unidirectionnalité des changements diachroniques. Il est manifeste que des exceptions à certains changements supposés unidirectionnels ont été mis au jour (\citealt{norde09degrammaticalization}), et  l'on ne peut nier que certains changements sont bidirectionnels. Néanmoins, il est tout aussi clair que les changements unidirectionels existent, et les identifier et en compiler la liste est une priorité pour établir une théorie générale des évolutions linguistiques.  
  
+% Il est aussi crucial de porter aux étapes intermédiaires entre les constructions source et arrivée. Il y a par exemple de multiples chemins qui mènent d'un verbe à une marque de voix:
+ 
+ 
+  \subsection{Typologie des langues OV préfixantes} 
+ Il existe peu de langues strictement verbe final qui sont majoritairement préfixantes -- seules les langues athabasques, sioux, rgyalronguiques, et à moindre mesure le caucasique du nord-ouest et le ket -- combinent ces deux propriétés. Dans l'article  \citet{jacques13harmonization}, j'ai proposé 
+ 
+  XXXXXX contingent
 
-  
 \section{Méthodes formelles en linguistique historique}
 
 En linguistique historique, le problème fondamental encore non résolu n'est pas la formulation d'hypothèses possibles, mais plutôt la comparaison entre hypothèses basées sur le même ensemble de données. 
@@ -153,17 +181,16 @@ Toutefois, il existe, pour tout ensemble de données comparatives (liste de cogn
 
 Il n'est donc pas suffisant de s'assurer que l'on dispose d'un modèle formel pouvant produire un ensemble de formes particulières; il faut pouvoir le comparer à d'autres modèles équivalents: c'est là qu'interviendra la mesure de \textit{longueur de description minimale}, qui pourra être calibrée avec des données typologiques (en utilisant les données du projet décrit en section \ref{sec:phonetique}).
 
-On testera en priorité ces programmes sur les données de l'indo-européen, du sioux (\citealt{csd2006}), de l'algonquien (\citealt{hewson11roots}) et aussi du rgyalronguique et du kiranti (en réutilisant les travaux présentés en section \ref{sec:comparee.rgy}).
+On testera en priorité ces programmes sur les données de l'indo-européen, du sioux (\citealt{csd2006}), de l'algonquien (\citealt{hewson11roots}) et aussi du rgyalronguique et du kiranti (en réutilisant les travaux présentés en section \ref{sec:comparee.rgy}). En plus de sa contribution théorique, ce programme de recherche permettra d'affiner la connaissance de la phonologie historique de ces groupes de langue, et donner lieu à des publications spécialisées dans les langues sioux ou algonquienne à partir des données publiées.
 
 \subsection{Analogie}
 Les changements phonétiques sont par définition réguliers, et s'appliquent donc de façon déterministe à une proto-langue donnée: les formes des langues modernes héritées peuvent être automatiquement prédites à partir de la langue ancestrale.
 
 Il n'en va pas de même de l'analogie, dont ni les effets ni les conditions d'application ne peuvent être prévus a priori. Toutefois, un modèle formel de phonologie et de morphologie historique qui négligerait l'analogie se condamnerait à ne pouvoir rendre compte de façon satisfaisante que d'une quantité infime de phénomènes.  
 
-\ref{sec:indexation}.
+Néanmoins, l'analogie n'opère pas de façon chaotique: il est possible de trouver des régularités, dans la façon dont les changements analogiques se produisent dans les paradigmes (cf \ref{sec:indexation}). Ces généralisations observées sur des cas non controversés pourront être utilisées pour calibrer une mesure de complexité des hypothèses de linguistique historique faisant intervenir l'analogie.
 
-\subsection{Reconstruction automatique}
-
+ 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
  
