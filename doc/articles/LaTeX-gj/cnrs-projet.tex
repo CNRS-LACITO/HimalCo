@@ -27,12 +27,6 @@
 \newcommand{\ipac}[1]{{\tiny #1}} 
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-\newcommand{\tgz}[1]{#1 \mo{#1} \tg{#1}}
-\newcommand{\indextg}[1]{\index{\tge{#1}@\tgz{#1}}}
-\newcommand{\tgb}[1]{\tgz{#1}\indextg{#1}}
-\newcommand{\tgc}[1]{\tg{#1} \#1\indextg{#1}}
-\newcommand{\tgd}[1]{\tge{#1}\indextg{#1}}
-\newcommand{\tgf}[1]{\mo{#1}\indextg{#1}}
 \newcommand{\petit}[1]{\tiny#1}
 \newcommand{\sig}{\begin{math}\Sigma\end{math}} 
 \newcommand{\ra}{$\Sigma_1$} 
@@ -70,19 +64,36 @@ Il reste encore à écrire de nombreuses parties de la grammaire: les sections s
 J'estime à quatre ans, à raison de 150 pages par an (ajoutées à celles déjà écrites), le délai nécessaire minimal pour compléter la première version complète de la grammaire (pour 2018-2019).
 
 \section{Grammaire comparée des langues rgyalronguiques et des langues kiranti}
-La grammaire du japhug sera la première pierre d'un édifice plus général -- la grammaire comparée (synchronique et diachronique) des langues rgyalronguiques et kiranti, les deux branches de la famille sino-tibétaine dont la morphologie verbale est la plus complexe. Ces deux branches comprennent respectivement 10 et 22 langues au minimum -- soit une quantité de données plus grande que l'ensemble de la famille algonquienne, et il me semble préférable de concentrer mes efforts sur ces deux groupes plutôt que d'essayer de maîtriser l'ensemble des données sino-tibétaines.
+La grammaire du japhug sera la première pierre d'un édifice plus général -- la grammaire comparée (synchronique et diachronique) des langues rgyalronguiques et kiranti, les deux branches de la famille sino-tibétaine dont la morphologie verbale est la plus complexe (voir les cartes  \ref{fig:rgy}  et \ref{fig:kirant}). Ces deux branches comprennent respectivement 10 et 22 langues au minimum -- soit une quantité de données plus grande que l'ensemble de la famille algonquienne, et il me semble préférable de concentrer mes efforts sur ces deux groupes plutôt que d'essayer de maîtriser l'ensemble des données sino-tibétaines.
 
+   \begin{figure}[h]
+   \caption{Langues rgyalronguiques (Sichuan tibétain) }  \label{fig:rgy}  \centering
+ \includegraphics[width=0.6\textwidth]{carte.JPG}
+ \end{figure}
 Ce projet de recherche sera nécessairement collectif, car la masse des données à traiter rend impraticable une approche isolée. Il comprendra quatre parties: descriptions des langues et collection de données, phonologie comparée du rgyalronguique, phonologie historique du khaling et enfin morphosyntaxe comparée.
 
+ \begin{figure}[h]
+   \caption{Langues kiranti (est du Népal)} \label{fig:kirant}   \centering
+  \includegraphics[width=\textwidth]{Kirant.jpeg} 
+ \end{figure}
+ 
 \subsection{Collection de données}
 Une recherche comparative requiert des données riches, fiables et complètes sur toutes les langues étudiées, et à ce titre cette entreprise n'est pas réalisable sur la base exclusive de la grammaire japhug.
 
 Je ne compte pas d'ici 2020 me charger de rédiger de grammaire autre que celle du japhug. Néanmoins, je continuerai à travailler sur trois autres langues, le khaling, le stau et le situ, collecterai des enregistrements, et écrirai des articles sur des points spécifiques de morphosyntaxe, probablement en collaboration (avec Aimée Lahaussois, Anton Antonov, Lai Yunfan et Gong Xun). Il est probable que certains de ces articles pourront mener à des contributions théoriques plus générales, et conduire notre recherche en typologie dans des directions nouvelles.
 
-En outre, j'envisage un rôle de supervision: diriger des thèses de façon à couvrir l'ensemble des langues (et les dialectes) rgyalronguiques et kiranti qui restent à décrire, ainsi qu'à approfondir des points spécifiques sur les langues mieux dotées. Outre les langues modernes, je compte également former des étudiants en philologie tangoute, qui pourrons prolonger mes travaux et valoriser le corpus que j'ai déjà transcrit dans cette langue.
+En outre, j'envisage un rôle de supervision: diriger des thèses de façon à couvrir l'ensemble des langues (et les dialectes) rgyalronguiques et kiranti qui restent à décrire, ainsi qu'à approfondir des points spécifiques sur les langues mieux dotées. Outre les langues modernes, je compte également former des étudiants en philologie tangoute, qui pourrons prolonger mes travaux et valoriser le corpus que j'ai déjà transcrit dans cette langue. 
+ 
 
 Je continuerai à enseigner dans le mastaire conjoint Inalco-Paris III afin de découvrir et former les étudiants prometteurs, avant leur formation doctorale et les aider à acquérir rapidement la capacité à rédiger des travaux publiables.
 
+J'espère  fonder une école française de linguistique sino-tibétaine, dont chaque membre devra se charger de la documentation complète (avec corpus d'enregistrements d'au moins une dizaine d'heure, dictionnaire et grammaire) d'une langue rgyalronguique, tibétaine ou  kiranti, mais aussi se former en informatique (Perl/Python, transducteurs, langages formels, \LaTeX, R)  et en linguistique historique (indo-européenne et sino-tibétaine).
+
+Ces trois domaines sont traditionnellement séparés, mais je suis convaincu qu'ils sont complémentaires. La linguistique de terrain permet d'effectuer un travail de description utile à long terme, aide à acquérir la connaissance pratique d'une langue peu connue et rend possible la découverte de phénomènes complètement inconnus. 
+ La linguistique informatique est utile pour traiter plus efficacement le corpus transcrit, et automatiser les tâches qui peuvent l'être. D'autre part, la connaissance de la théorie des langages formels et automates permet une approche théorique implémentable  aussi bien en phonologie qu'en morphologie ou qu'en syntaxe.
+La linguistique historique, enfin, apporte une dimension explicative qui enrichit l'approche   synchronique et formelle des données.
+
+Outre les langues sino-tibétaines, je développerai aussi les études des langues d'Amérique du nord (en particulier sioux et algonquien) qui sont encore sous-représentées chez les linguistes français.
 
 \subsection{Phonologie et morphologie comparée du rgyalronguique} \label{sec:comparee.rgy}
 Dans mes travaux précédents, en particulier \citet{jacques04these} et \citet{jacques14esquisse}, j'ai présenté une reconstruction préliminaire du proto-rgyalrong, et ai établi un certain nombre de lois phonétiques. Toutefois, ces résultats, basés sur des données incomplètes, devront être intégralement revus lorsque, dans cinq à dix ans, on disposera de lexiques fiables sur toutes les langues rgyalronguiques.
@@ -121,6 +132,7 @@ A court et moyen terme, je compte essentiellement écrire des articles sur des p
 
 En particulier, je compte effectuer une recherche sur le passage des occlusives labiales en vélaires \ipa{*p} $\rightarrow$ \ipa{k}  comme en arapaho (\citealt{goddard74arapaho}) et en strait salish (où ils finissent comme des affriquées palatales, voir \citealt[10-11]{kuipers02salish}). Ce travail traitera en particulier des changements en chaîne auxquels \ipa{*p} $\rightarrow$ \ipa{k}  participe dans les langues où il est attesté.
 
+Je m'intéresse aussi à la question de la débuccalisation des consonnes (soit leur disparition, soit leur passage à des glottales \ipa{h} ou \ipa{ʔ}). Parmi tous les types de changements, c'est probablement ceux dont le caractère unidirectionnel est le plus clair. Néanmoins, la disparition des consonnes peut suivre de nombreux chemins distincts, dont toutes les étapes ne sont pas nécessairement unidirectionnelle. Cette question mérite d'être traitée en prenant en compte à la fois du contexte où le changement a lieu mais aussi la structure générale du système (en particulier les débuccalisations sont souvent attestées comme premier membre d'un changement en chaine). Parmi les langues que j'étudie, le kiranti offre des cas particulièrement intéressants et mal compris de débuccalisation des occlusives initiales (en yamphu, yakkha et belhare), qui méritent d'être présentés à un public plus large de phonologues et de diachroniciens.
 
 
 A plus long terme, la compilation d'une base de données sur les changements phonétiques, basée sur des sources primaires mais également sur des synthèses telles que  \citet{kuemmel07wandel} ou \citet{blevins04evolutionary, blevins08naturalness} est réalisable en équipe (avec des collègues tels qu'Alexis Michaud).
@@ -157,17 +169,21 @@ On dispose de travaux réutilisables par les non-spécialistes sur la diachronie
  
  
   \subsection{Typologie des langues OV préfixantes} 
- Il existe peu de langues strictement verbe final qui sont majoritairement préfixantes -- seules les langues athabasques, sioux, rgyalronguiques, et à moindre mesure le caucasique du nord-ouest et le ket -- combinent ces deux propriétés. Dans l'article  \citet{jacques13harmonization}, j'ai proposé que la rareté des langues de ce type ne résulte pas de l'effet d'une contrainte psycholinguistique, mais d'une contingence historique (la propagation du type SOV suffixant en Eurasie).  En effet, aussi bien le rgyalronguique que l'athabasque présentent des cas clairs de grammaticalisation de verbes comme préfixes alors que des des suffixes auraient été attendus à partir de la structure synthétique correspondante.
+ Il existe peu de langues strictement verbe final qui sont majoritairement préfixantes -- seules les langues athabasques, sioux, rgyalronguiques, et à moindre mesure le caucasique du nord-ouest et le ket -- combinent ces deux propriétés. Dans l'article  \citet{jacques13harmonization}, j'ai proposé que la rareté des langues de ce type ne résulte pas de l'effet d'une contrainte psycholinguistique, mais d'une contingence historique (la propagation du type SOV suffixant en Eurasie par remplacement et / ou contact de langue).  En effet, aussi bien le rgyalronguique que l'athabasque présentent des cas clairs de grammaticalisation de verbes comme préfixes alors que des suffixes auraient été attendus à partir de la structure synthétique correspondante.
  
 Pour approfondir cette question, je compte étudier les propriétés morphosyntaxiques que ces langues ont de commun en plus de l'ordre des mots et des affixes en comparaison avec les langues SOV suffixantes (le type dravidien-altaïque-andéan) -- par exemple, le fait que ces langues semblent toutes privilégier les relatives à tête interne, le rapport assez élevé de formes verbales finies par rapport aux formes non-finies dans les corpus de textes etc. 
 
-Comme cette question ne concerne qu'un nombre limité de famille de langues, un tel projet est tout à fait réalisable, et pourra mener à un progrès important pour affiner notre connaissance des universaux morphosyntaxiques.
+Comme cette question ne concerne qu'un nombre limité de famille de langues, un tel projet est tout à fait réalisable, et pourra mener à des progrès importants pour affiner notre connaissance des universaux morphosyntaxiques.
 
 \section{Typologie des changements sémantiques}
-Un problème majeur en linguistique historique est l'apparente imprédictibilité des changements sémantiques. Le seul outil dont disposent actuellement les linguistes pour juger de la plausibilité d'une comparaison particulière (lorsqu'elle est phonétiquement possible) est la recherche d'exemples de changements sémantiques du même dans d'autres langues.
+Un problème majeur en linguistique historique est l'apparente imprédictibilité des changements sémantiques. Le seul outil dont disposent actuellement les linguistes pour juger de la plausibilité d'une comparaison particulière (lorsqu'elle est phonétiquement possible) est la recherche d'exemples de changements sémantiques du même type attestés dans d'autres langues.
 
-\citet{urban11semantic}
-XXXX
+Comme la méthode comparative n'offre aucune méthode pour reconstruire la sémantique, on en est réduit à chercher des exemples dans les langues pour lesquelles on dispose de données anciennes -- soit une infime minorité, et presque exclusivement dans quelques familles d'Eurasie. Baser un modèle de changement sémantique sur un corpus aussi restreint réduit sa représentativité, surtout si l'on souhaite pour l'appliquer à des langues d'autres continents, notamment celles parlées traditionnellement par des chasseurs-cueilleurs.
+ 
+\citet{urban11semantic} propose une procédure pour enrichir la liste connue des changements sémantiques et déterminer leur directionnalité, même sur des langues sans textes anciens. Il propose que les extensions sémantiques que l'on peut détecter sur la base de données synchroniques, notamment dans les mots composés (par exemple, le fait que de nombreuses langues ont un mot composé comprenant la racine de `peau' dans le mot pour `écorce', mais jamais l'inverse) suivent les même règles et ont la même directionnalité que les changements sémantiques diachroniques. (le changement `peau' $\rightarrow$ `écorce' est unidirectionnel). Pour tester cette hypothèse, il confronte une base de donnée sur les extensions sémantiques dans un échantillon de 149 langues de familles diverses, qu'il compare ensuite à des changements historiques attestés.
+
+Cette procédure mériterait d'être appliquée plus systématiquement, voire automatisée dans la mesure du possible. L'article en question n'aborde qu'une courte liste de noms du `vocabulaire de base', et il n'est pas sûr que cette méthode soit aussi facile à utiliser pour les verbes, car les composés verbaux -- les verbes à incorporation -- n'existent pas dans toutes les langues, et les évolutions sémantiques avec les affixes directionnels/locatifs (comme les préverbes dans les langues indo-européennes) ne suit pas nécessaire le même type de chemins.
+
 \section{Méthodes formelles en linguistique historique}
 
 En linguistique historique, le problème fondamental encore non résolu n'est pas la formulation d'hypothèses possibles, mais plutôt la comparaison entre hypothèses basées sur le même ensemble de données. 
@@ -180,15 +196,15 @@ Le concept de la \textit{longueur de description minimale} développé en théor
 
 
 \subsection{Changements phonétiques}
-Il est possible, en utilisant soit des langages de script (Perl ou Python), soit des transducteurs (XFST), de concevoir des programmes appliquant une série de changements phonétiques à des proto-formes, ou au contraire générant la liste des reconstructions possibles à partir des langues modernes en appliquant à l'envers les changements.
+Il est possible, en utilisant soit des langages de script (Perl ou Python), soit des transducteurs (XFST), de concevoir des programmes appliquant une série de changements phonétiques à des proto-formes, ou au contraire générant la liste des reconstructions possibles à partir des langues modernes en appliquant à l'envers les changements. Les règles phonologiques peuvent en effet être traitées (mis à part pour la réduplication) avec des grammaires rationnelles, voire même un sous-groupes restreint des grammaires rationnelles (\textit{subregular}, cf \citealt{heinz10subregular}).
 
 Cette procédure, qui a déjà été utilisée pour concevoir le dictionnaire du proto-algonquien (\citealt{hewson93proto}), a le mérite de permettre de détecter automatiquement les irrégularités, et offre un outil heuristique pour affiner les règles elles-mêmes.
 
-Toutefois, il existe, pour tout ensemble de données comparatives (liste de cognats entre langues apparentées), un nombre astronomique de grammaires formelles distinctes permettant de le générer (infinie, si l'on autorise les règles nulles, ou les règles qui annulent l'effet de règles précédentes). En particulier, pour $n$ changements phonétiques qui ne s'influent pas les uns les autres (qui ne sont ni en relation de \textit{bleeding} ni en relation de \textit{feeding}), il est possible de les ordonnancer de $n!$ façon distinctes.
+Toutefois, il existe, pour tout ensemble de données comparatives (liste de cognats entre langues apparentées), un nombre astronomique de grammaires formelles distinctes permettant de le générer (infinie, si l'on autorise les règles nulles, ou les règles qui annulent l'effet de règles précédentes). En particulier, pour $n$ changements phonétiques qui n'influent pas les uns sur les autres (qui ne sont ni en relation de \textit{bleeding} ni en relation de \textit{feeding}), il est possible de les ordonnancer de $n!$ façon distinctes.
 
 Il n'est donc pas suffisant de s'assurer que l'on dispose d'un modèle formel pouvant produire un ensemble de formes particulières; il faut pouvoir le comparer à d'autres modèles équivalents: c'est là qu'interviendra la mesure de \textit{longueur de description minimale}, qui pourra être calibrée avec des données typologiques (en utilisant les données du projet décrit en section \ref{sec:phonetique}).
 
-On testera en priorité ces programmes sur les données de l'indo-européen, du sioux (\citealt{csd2006}), de l'algonquien (\citealt{hewson11roots}), du chinois, du tibétain et aussi du rgyalronguique et du kiranti (en réutilisant les travaux présentés en section \ref{sec:comparee.rgy}). En plus de sa contribution théorique, ce programme de recherche permettra d'affiner la connaissance de la phonologie historique de ces groupes de langue, et donner lieu à des publications spécialisées dans les langues sioux ou algonquienne à partir des données publiées.
+On testera en priorité ces programmes sur les données de l'indo-européen, du sioux (\citealt{csd2006}), de l'algonquien (\citealt{hewson11roots}), du chinois (\citealt{bs14oc}), du tibétain (\citealt{jacques14cone}) et aussi du rgyalronguique et du kiranti (en réutilisant les travaux présentés en section \ref{sec:comparee.rgy}). En plus de sa contribution théorique, ce programme de recherche permettra d'affiner la connaissance de la phonologie historique de ces groupes de langue, et donner lieu à des publications spécialisées dans les langues sioux ou algonquienne à partir des données publiées.
 
 \subsection{Analogie}
 Les changements phonétiques sont par définition réguliers, et s'appliquent donc de façon déterministe à une proto-langue donnée: les formes des langues modernes héritées peuvent être automatiquement prédites à partir de la langue ancestrale.
@@ -197,6 +213,10 @@ Il n'en va pas de même de l'analogie, dont ni les effets ni les conditions d'ap
 
 Néanmoins, l'analogie n'opère pas de façon chaotique: il est possible de trouver des régularités, dans la façon dont les changements analogiques se produisent dans les paradigmes (cf \ref{sec:indexation}). Ces généralisations observées sur des cas non controversés pourront être utilisées pour calibrer une mesure de complexité des hypothèses de linguistique historique faisant intervenir l'analogie.
 
+ \subsection{Reconstructeur automatique}
+ A plus long terme, un projet plus ambitieux et d'une plus grande difficulté pratique et théorique serait la conception d'un programme qui soit capable d'analyser automatiquement des données comparatives brutes et de proposer l'ensemble des modèles de reconstruction possibles qui rendent compte de ces données, en les classant par degré de complexité (et peut-être ne générant pas les modèles au-delà d'une certaine complexité).
+ 
+Toutes les tentatives de développement de programmes de ce type ayant échoué, je ne compte m'investir dans une telle entreprise que si tous les projets précédemment mentionnés ont déjà abouti. Ce travail, s'il venait au jour, permettrait une formalisation complète de la linguistique historique, et un renouvellement intégral de la discipline. 
  
 \bibliographystyle{unified}
 \bibliography{bibliogj}
