@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, VERNACULAR, ENGLISH, NATIONAL, REGIONAL
-from config.tex import format_definitions
+from output.tex import format_definitions
 from utils.io import EOL
 
 FRENCH = "fra"
