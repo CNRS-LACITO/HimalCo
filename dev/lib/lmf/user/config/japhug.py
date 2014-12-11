@@ -1,9 +1,15 @@
 #! /usr/bin/env python
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR
 
 FRENCH = "fra"
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
+
+## Functions to process some MDF fields (input)
+def remove_char(value):
+    """Function to remove '_', '^', '$', '&' character at the beginning of 'lx', 'se', 'a', 'xv', 'cf' MDF fields.
+    """
+    return value.lstrip('_^$&')
 
 ## Functions to process some MDF fields (output)
 def process_audio(lexical_entry):
@@ -18,10 +24,12 @@ mdf2lmf.update({
     "hbf"       : lambda hbf, lexical_entry: lexical_entry.set_bibliography(hbf),
     "wav"       : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
     "wav8"      : lambda wav8, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "mp3/8_" + wav8 + ".wav", quality="low", audio_file_format="wav"),
-    "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a),
-    "constr"    : lambda constr, lexical_entry: None,
-    "comit"     : lambda comit, lexical_entry: None,
-    "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH)
+    "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(remove_char(a)),
+    "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
+    "lx"        : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
+    "se"        : lambda se, lexical_entry: None,
+    "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
+    "cf"        : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"])
 })
 
 lmf2mdf = dict(lmf_mdf)
