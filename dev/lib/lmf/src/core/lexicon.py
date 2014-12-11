@@ -23,6 +23,8 @@ class Lexicon():
         ## All LexicalEntry instances are maintained by Lexicon
         # There is one or more LexicalEntry instances per Lexicon
         self.lexical_entry = []
+        # To know if cross references have already been verified or not
+        self.__checked = False
 
     def __del__(self):
         """! @brief Destructor.
@@ -186,6 +188,10 @@ class Lexicon():
         @return Lexicon instance.
         """
         from string import digits
+        if self.__checked:
+            return self
+        # Verifiy cross references only once
+        self.__checked = True
         for lexical_entry in self.get_lexical_entries():
             for related_form in lexical_entry.get_related_forms():
                 # From RelatedForm targets attribute, retrieve the pointed LexicalEntry instance
@@ -214,6 +220,14 @@ class Lexicon():
                 else:
                     # Save the found lexical entry
                     related_form.set_lexical_entry(found_entry[0])
+        return self
+
+    def reset_check(self):
+        """! @brief Reset boolean to be able to check all cross-references in the lexicon again.
+        Reset the private attribute '__checked'.
+        @return Lexicon instance.
+        """
+        self.__checked = False
         return self
 
     def convert_to_latex(self):

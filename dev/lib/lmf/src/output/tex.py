@@ -89,6 +89,26 @@ def format_pinyin(text):
     import re
     return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
 
+def format_uid(lexical_entry, font):
+    """! @brief Transform unique identifier of a lexical entry in ASCII format.
+    @param lexical_entry The targeted Lexical Entry LMF instance.
+    @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @return A string representing the unique identifier in LaTeX format.
+    """
+    return unicode(lexical_entry.get_id())#.encode('ascii', 'ignore')
+
+def format_link(lexical_entry, font):
+    """! @brief Display hyperlink to a lexical entry in LaTeX format.
+    @param lexical_entry The targeted Lexical Entry LMF instance.
+    @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @return A string representing the hyperlink in LaTeX format.
+    """
+    result = "\\hyperlink{" + format_uid(lexical_entry, font) + "}{" + font[VERNACULAR](lexical_entry.get_lexeme())
+    if lexical_entry.get_homonymNumber() is not None:
+        result += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
+    result += "}"
+    return result
+
 def format_lexeme(lexical_entry, font):
     """! @brief 'lx', 'hm' and 'lc' fields are flipped if 'lc' field has data.
     @param lexical_entry The current Lexical Entry LMF instance.
@@ -108,7 +128,7 @@ def format_lexeme(lexical_entry, font):
     else:
         # Format lexeme
         result += lexeme
-    result += " \\hspace{0.1cm} \\hypertarget{" + unicode(lexical_entry.get_id()) + "}{}" + EOL
+    result += " \\hspace{0.1cm} \\hypertarget{" + format_uid(lexical_entry, font) + "}{}" + EOL
     return result
 
 def format_audio(lexical_entry, font):
@@ -313,14 +333,29 @@ def format_related_forms(lexical_entry, font):
     @return A string representing related forms in LaTeX format.
     """
     result = ""
-    for synonym in lexical_entry.find_related_forms(mdf_semanticRelation["sy"]):
-        result += "\\textit{Syn:} " + font[VERNACULAR](synonym) + ". "
-    for antonym in lexical_entry.find_related_forms(mdf_semanticRelation["an"]):
-        result += "\\textit{Ant:} " + font[VERNACULAR](antonym) + ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
+        result += "\\textit{Syn:} "
+        if related_form.get_lexical_entry() is not None:
+            result += format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
+        result += "\\textit{Ant:} "
+        if related_form.get_lexical_entry() is not None:
+            result += format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
     for morphology in lexical_entry.get_morphologies():
         result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
-    for form in lexical_entry.find_related_forms(mdf_semanticRelation["cf"]):
-        result += "\\textit{See:} " + font[VERNACULAR](form) + " "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
+        result += "\\textit{See:} "
+        if related_form.get_lexical_entry() is not None:
+            result += format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += " "
     # ce
     # cn
     # cr

@@ -224,18 +224,25 @@ class LexicalEntry():
         @param semantic_relation The semantic relation to consider to retrieve the related form.
         @return A Python list of found RelatedForm attributes 'targets'.
         """
-        found_forms = []
+        found_lexemes = []
         for related_form in self.get_related_forms():
             if related_form.get_semanticRelation() == semantic_relation:
-                found_forms.append(related_form.get_lexeme())
-        return found_forms
+                found_lexemes.append(related_form.get_lexeme())
+        return found_lexemes
 
-    def get_related_forms(self):
+    def get_related_forms(self, semantic_relation=None):
         """! @brief Get all related forms maintained by the lexical entry.
+        @param semantic_relation The semantic relation to consider to retrieve the related forms.
         @return A Python set of related forms.
         """
-        # Create a set without duplicates
-        return set(self.related_form)
+        if semantic_relation is None:
+            # Create a set without duplicates
+            return set(self.related_form)
+        found_forms = []
+        for related_form in self.related_form:
+            if related_form.get_semanticRelation() == semantic_relation:
+                found_forms.append(related_form)
+        return set(found_forms)
 
     def get_form_representations(self):
         """! @brief Get all form representations maintained by the lemma.

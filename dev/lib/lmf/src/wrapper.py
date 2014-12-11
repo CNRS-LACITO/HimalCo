@@ -72,6 +72,8 @@ def read_xml_lmf(*args, **kwds):
     entries_nb = 0
     for lexicon in lexical_resource.get_lexicons():
         entries_nb += lexicon.count_lexical_entries()
+        # Verify lexicon coherence
+        lexicon.check_cross_references()
     log("Successfully created %s LMF entries from XML LMF file '%s'." % (entries_nb, args[0]))
     return lexical_resource
 

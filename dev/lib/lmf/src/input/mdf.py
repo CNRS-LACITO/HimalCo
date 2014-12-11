@@ -48,7 +48,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                 occurrence_nb = 1
                 # Python equivalent of do...while loop
                 while True:
-                    uid = value + "_" + str(occurrence_nb)
+                    uid = value + "-" + str(occurrence_nb)
                     # If already taken, increment it
                     if lexicon.find_lexical_entries(lambda lexical_entry: lexical_entry.get_id() == uid) != []:
                         occurrence_nb += 1

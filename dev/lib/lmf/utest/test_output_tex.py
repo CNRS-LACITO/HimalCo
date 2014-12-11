@@ -132,14 +132,31 @@ class TestTexFunctions(unittest.TestCase):
         output = "\\textcolor{gray}{at} at\\textcolor{gray}{at} at"
         self.assertEqual(format_pinyin(input), output)
 
-    def test_format_audio(self):
+    def test_format_uid(self):
+        entry = LexicalEntry("link_0")
+        entry.set_lexeme("link")
+        expected = "\\hyperlink{link_0}{\\vernacular{link}}"
+        self.assertEqual(format_link(entry, font), expected)
+        del entry
+
+    def test_format_link(self):
+        entry = LexicalEntry("link_0")
+        entry.set_lexeme("link")
+        expected = "\\hyperlink{link_0}{\\vernacular{link}}"
+        self.assertEqual(format_link(entry, font), expected)
+        entry.set_homonymNumber(2)
+        expected = expected[:-1] + " \\textsubscript{2}}"
+        self.assertEqual(format_link(entry, font), expected)
+        del entry
+
+    def test_format_lexeme(self):
         entry = LexicalEntry()
         entry.set_lexeme("hello")
         expected = "\\vspace{1cm} \\hspace{-1cm} \\vernacular{hello} \\hspace{0.1cm} \\hypertarget{0}{}\n"
         self.assertEqual(format_lexeme(entry, font), expected)
         del entry
 
-    def test_format_lexeme(self):
+    def test_format_audio(self):
         entry = LexicalEntry()
         entry.set_audio(file_name="../../../dict/japhug/data/audio/wav/A.wav")
         expected = "\includemedia[\n" \
