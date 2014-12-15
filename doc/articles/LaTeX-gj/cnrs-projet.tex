@@ -169,11 +169,16 @@ On dispose de travaux réutilisables par les non-spécialistes sur la diachronie
  
  
   \subsection{Typologie des langues OV préfixantes} 
- Il existe peu de langues strictement verbe final qui sont majoritairement préfixantes -- seules les langues athabasques, sioux, rgyalronguiques, et à moindre mesure le caucasique du nord-ouest et le ket -- combinent ces deux propriétés. Dans l'article  \citet{jacques13harmonization}, j'ai proposé que la rareté des langues de ce type ne résulte pas de l'effet d'une contrainte psycholinguistique, mais d'une contingence historique (la propagation du type SOV suffixant en Eurasie par remplacement et / ou contact de langue).  En effet, aussi bien le rgyalronguique que l'athabasque présentent des cas clairs de grammaticalisation de verbes comme préfixes alors que des suffixes auraient été attendus à partir de la structure synthétique correspondante.
+ Il existe peu de langues strictement verbe final qui soient majoritairement préfixantes -- seules les langues athabasques, sioux, rgyalronguiques, et à moindre mesure le caucasique du nord-ouest et le ket -- combinent ces deux propriétés. Dans l'article  \citet{jacques13harmonization}, j'ai proposé que la rareté des langues de ce type ne résulte pas de l'effet d'une contrainte psycholinguistique, mais d'une contingence historique (la propagation du type SOV suffixant en Eurasie par remplacement et / ou contact de langue).  En effet, aussi bien le rgyalronguique que l'athabasque présentent des cas clairs de grammaticalisation de verbes comme préfixes alors que des suffixes auraient été attendus à partir de la structure synthétique correspondante.
  
 Pour approfondir cette question, je compte étudier les propriétés morphosyntaxiques que ces langues ont de commun en plus de l'ordre des mots et des affixes en comparaison avec les langues SOV suffixantes (le type dravidien-altaïque-andéan) -- par exemple, le fait que ces langues semblent toutes privilégier les relatives à tête interne, le rapport assez élevé de formes verbales finies par rapport aux formes non-finies dans les corpus de textes etc. 
 
 Comme cette question ne concerne qu'un nombre limité de famille de langues, un tel projet est tout à fait réalisable, et pourra mener à des progrès importants pour affiner notre connaissance des universaux morphosyntaxiques.
+
+\subsection{Evidentialité nominale}
+Suite à mon article \citet{jacques14auditory} sur le démonstratif auditif en khaling, Alexandra Aikhenvald m'a demandé d'écrire une entrée sur l'évidentialité non propositionnelle (marquée dans les groupes nominaux, notamment par des démonstratifs) pour le Oxford Handbook of Evidentiality. Je prépare cette contribution en 2015, pour parution potentielle en 2016.
+
+Il est possible que je continue par la suite à travailler sur ce sujet, en fonction de ce que je découvrirai en préparant l'article pour l'encyclopédie. En particulier, il pourrait être intéressant d'inclure dans une telle étude non seulement les systèmes démonstratifs, mais aussi les langues omniprédicatives ayant des marques d'évidentialités pouvant apparaître aussi bien sur les verbes que sur les noms.
 
 \section{Typologie des changements sémantiques}
 Un problème majeur en linguistique historique est l'apparente imprédictibilité des changements sémantiques. Le seul outil dont disposent actuellement les linguistes pour juger de la plausibilité d'une comparaison particulière (lorsqu'elle est phonétiquement possible) est la recherche d'exemples de changements sémantiques du même type attestés dans d'autres langues.
@@ -200,8 +205,8 @@ Il est possible, en utilisant soit des langages de script (Perl ou Python), soit
 
 Cette procédure, qui a déjà été utilisée pour concevoir le dictionnaire du proto-algonquien (\citealt{hewson93proto}), a le mérite de permettre de détecter automatiquement les irrégularités, et offre un outil heuristique pour affiner les règles elles-mêmes.
 
-Toutefois, il existe, pour tout ensemble de données comparatives (liste de cognats entre langues apparentées), un nombre astronomique de grammaires formelles distinctes permettant de le générer (infinie, si l'on autorise les règles nulles, ou les règles qui annulent l'effet de règles précédentes). En particulier, pour $n$ changements phonétiques qui n'influent pas les uns sur les autres (qui ne sont ni en relation de \textit{bleeding} ni en relation de \textit{feeding}), il est possible de les ordonnancer de $n!$ façon distinctes.
-
+ XXXX
+ 
 Il n'est donc pas suffisant de s'assurer que l'on dispose d'un modèle formel pouvant produire un ensemble de formes particulières; il faut pouvoir le comparer à d'autres modèles équivalents: c'est là qu'interviendra la mesure de \textit{longueur de description minimale}, qui pourra être calibrée avec des données typologiques (en utilisant les données du projet décrit en section \ref{sec:phonetique}).
 
 On testera en priorité ces programmes sur les données de l'indo-européen, du sioux (\citealt{csd2006}), de l'algonquien (\citealt{hewson11roots}), du chinois (\citealt{bs14oc}), du tibétain (\citealt{jacques14cone}) et aussi du rgyalronguique et du kiranti (en réutilisant les travaux présentés en section \ref{sec:comparee.rgy}). En plus de sa contribution théorique, ce programme de recherche permettra d'affiner la connaissance de la phonologie historique de ces groupes de langue, et donner lieu à des publications spécialisées dans les langues sioux ou algonquienne à partir des données publiées.
@@ -213,10 +218,6 @@ Il n'en va pas de même de l'analogie, dont ni les effets ni les conditions d'ap
 
 Néanmoins, l'analogie n'opère pas de façon chaotique: il est possible de trouver des régularités, dans la façon dont les changements analogiques se produisent dans les paradigmes (cf \ref{sec:indexation}). Ces généralisations observées sur des cas non controversés pourront être utilisées pour calibrer une mesure de complexité des hypothèses de linguistique historique faisant intervenir l'analogie.
 
- \subsection{Reconstructeur automatique}
- A plus long terme, un projet plus ambitieux et d'une plus grande difficulté pratique et théorique serait la conception d'un programme qui soit capable d'analyser automatiquement des données comparatives brutes et de proposer l'ensemble des modèles de reconstruction possibles qui rendent compte de ces données, en les classant par degré de complexité (et peut-être ne générant pas les modèles au-delà d'une certaine complexité).
- 
-Toutes les tentatives de développement de programmes de ce type ayant échoué, je ne compte m'investir dans une telle entreprise que si tous les projets précédemment mentionnés ont déjà abouti. Ce travail, s'il venait au jour, permettrait une formalisation complète de la linguistique historique, et un renouvellement intégral de la discipline. 
  
 \bibliographystyle{unified}
 \bibliography{bibliogj}
