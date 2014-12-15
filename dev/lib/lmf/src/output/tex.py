@@ -143,8 +143,9 @@ def format_audio(lexical_entry, font):
         if form_representation.get_audio() is not None:
             # Embed local sound file
             # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
-            file_name = basename(form_representation.get_audio().get_fileName())
-            if not isfile(form_representation.get_audio().get_fileName().replace("file://", '')):
+            # To include audio file in PDF, replace WAV extension by MP3 extension
+            file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
+            if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')):
                 print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
                 return result
             file_name = file_name.replace('_', '\string_').replace('-', '\string-')

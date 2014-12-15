@@ -160,9 +160,9 @@ class TestTexFunctions(unittest.TestCase):
         entry = LexicalEntry()
         entry.set_audio(file_name="../../../dict/japhug/data/audio/wav/A.wav")
         expected = "\includemedia[\n" \
-            "\taddresource=A.wav,\n" \
+            "\taddresource=A.mp3,\n" \
             "\tflashvars={\n" \
-            "\t\tsource=A.wav\n" \
+            "\t\tsource=A.mp3\n" \
             "\t\t&autoPlay=true\n" \
             "\t\t&autoRewind=true\n" \
             "\t\t&loop=false\n" \
