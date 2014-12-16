@@ -215,6 +215,10 @@ class LexicalEntry():
         @param semantic_relation The semantic relation existing between this lexical entry and the related lexeme to create.
         @return LexicalEntry instance.
         """
+        # Check if this related form already exists
+        for related_form in self.get_related_forms():
+            if related_form.get_lexeme() == lexeme:
+                return self
         self.related_form.append(RelatedForm(lexeme).set_semanticRelation(semantic_relation))
         return self
 

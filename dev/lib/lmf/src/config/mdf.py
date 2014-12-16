@@ -24,7 +24,7 @@ mdf_lmf = dict({
     "hm" : lambda hm, lexical_entry: lexical_entry.set_homonymNumber(hm),
     "lc" : lambda lc, lexical_entry: lexical_entry.set_citation_form(lc), # or lexical_entry.set_contextual_variation(lc)
     "ph" : lambda ph, lexical_entry: lexical_entry.set_phonetic_form(ph), # or lexical_entry.set_transliteration(ph)
-    "se" : lambda se, lexical_entry: None,
+    "se" : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(se, mdf_semanticRelation["se"]),
     "ps" : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps),
     "pn" : lambda pn, lexical_entry: None,
     "sn" : lambda sn, lexical_entry: lexical_entry.create_and_add_sense(sn),
@@ -74,7 +74,7 @@ mdf_lmf = dict({
     "ce" : lambda ce, lexical_entry: None,
     "cn" : lambda cn, lexical_entry: None,
     "cr" : lambda cr, lexical_entry: None,
-    "mn" : lambda mn, lexical_entry: None,
+    "mn" : lambda mn, lexical_entry: lexical_entry.create_and_add_related_form(mn, mdf_semanticRelation["mn"]),
     "va" : lambda va, lexical_entry: lexical_entry.set_variant_form(va, type="phonetics"), # or lexical_entry.set_geographical_variant(va)
     "ve" : lambda ve, lexical_entry: lexical_entry.set_variant_comment(ve, language=ENGLISH), # or lexical_entry.set_dialect(ve)
     "vn" : lambda vn, lexical_entry: lexical_entry.set_variant_comment(vn, language=NATIONAL),
@@ -257,7 +257,7 @@ lmf_mdf = dict({
     "hm" : lambda lexical_entry: lexical_entry.get_homonymNumber(),
     "lc" : lambda lexical_entry: lexical_entry.get_citation_forms(), # or lexical_entry.get_contextual_variations()
     "ph" : lambda lexical_entry: lexical_entry.get_phonetic_forms(), # or lexical_entry.get_transliterations()
-    "se" : lambda lexical_entry: None,
+    "se" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["se"]),
     "ps" : lambda lexical_entry: lexical_entry.get_partOfSpeech(),
     "pn" : lambda lexical_entry: None,
     "snGroup" : lambda lexical_entry: lexical_entry.get_senses(),
@@ -309,7 +309,7 @@ lmf_mdf = dict({
     "ce" : lambda lexical_entry: None,
     "cn" : lambda lexical_entry: None,
     "cr" : lambda lexical_entry: None,
-    "mn" : lambda lexical_entry: None,
+    "mn" : lambda lexical_entry: lexical_entry.find_related_forms(mdf_semanticRelation["mn"]),
     "vaGroup" : lambda lexical_entry: lexical_entry.get_form_representations(),
     "va" : lambda form_representation: form_representation.get_variantForm(), # or form_representation.get_geographicalVariant() or form_representation.get_spellingVariant()
     "ve" : lambda form_representation: form_representation.get_comment(ENGLISH), # or form_representation.get_dialect()

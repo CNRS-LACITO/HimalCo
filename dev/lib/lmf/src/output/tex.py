@@ -37,9 +37,17 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex):
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
             for lexical_entry in lexicon.get_lexical_entries():
-                tex_file.write(lmf2tex(lexical_entry))
-                # Separate lexical entries from each others with a blank line
-                tex_file.write(EOL)
+                # Consider only main entries (subentries will be written as parts of the main entry)
+                if lexical_entry.find_related_forms("main entry") == []:
+                    tex_file.write(lmf2tex(lexical_entry))
+                    # Separate lexical entries from each others with a blank line
+                    tex_file.write(EOL)
+                    # Handle subentries
+                    for related_form in lexical_entry.get_related_forms("subentry"):
+                        if related_form.get_lexical_entry() is not None:
+                            tex_file.write(lmf_to_tex(related_form.get_lexical_entry()))
+                            # Separate sub-entries from each others with a blank line
+                            tex_file.write(EOL)
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly

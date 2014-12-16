@@ -27,14 +27,14 @@ mdf2lmf.update({
     "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(remove_char(a)),
     "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
     "lx"        : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
-    "se"        : lambda se, lexical_entry: None,
     "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
     "cf"        : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"])
 })
 
 lmf2mdf = dict(lmf_mdf)
 lmf2mdf.update({
-    "sf": lambda lexical_entry: process_audio(lexical_entry)
+    "sf" : lambda lexical_entry: process_audio(lexical_entry),
+    "gf" : lambda sense: sense.find_glosses(FRENCH)
 })
 
 order = list()
@@ -49,4 +49,5 @@ def copy_list(in_element, out_list):
         out_list.append(in_element)
 for marker in mdf_order:
     copy_list(marker, order)
+order[7].insert(15, "gf")
 order.insert(1, "sf")

@@ -24,6 +24,8 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
     lexicon = Lexicon(id)
     # Add each lexical entry to the lexicon
     current_entry = None
+    sub_entry = None
+    main_entry = None
     for line in mdf_file.readlines():
         # Do not parse empty lines
         if line != EOL:
@@ -42,8 +44,8 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             # Do not consider empty fields
             if value == "":
                 continue
-            # 'lx' marker indicates a new entry
-            if marker == "lx":
+            # 'lx' and 'se' markers indicate a new entry
+            if marker == "lx" or marker == "se":
                 # Compute a unique identifier
                 occurrence_nb = 1
                 # Python equivalent of do...while loop
@@ -53,11 +55,28 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                     if lexicon.find_lexical_entries(lambda lexical_entry: lexical_entry.get_id() == uid) != []:
                         occurrence_nb += 1
                     else:
-                        # Create a new entry
-                        current_entry = LexicalEntry(uid)
+                        if marker == "se":
+                            # Create a subentry
+                            sub_entry = LexicalEntry(uid)
+                            # An MDF subentry corresponds to an LMF lexical entry
+                            sub_entry.set_lexeme(value)
+                            # Add it to the lexicon
+                            lexicon.add_lexical_entry(sub_entry)
+                            # Manage main entry
+                            if main_entry is None:
+                                main_entry = current_entry
+                            else:
+                                current_entry = main_entry
+                            # Set main entry
+                            sub_entry.create_and_add_related_form(current_entry.get_lexeme(), "main entry")
+                        else:
+                            # Create a new entry
+                            current_entry = LexicalEntry(uid)
+                            # Add it to the lexicon
+                            lexicon.add_lexical_entry(current_entry)
+                            # Reset main entry
+                            main_entry = None
                         break
-                # Add it to the lexicon
-                lexicon.add_lexical_entry(current_entry)
             # Map MDF marker and value to LMF representation
             try:
                 if attrs is not None:
@@ -71,6 +90,9 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                     mdf2lmf["__" + marker](attributes, value, current_entry)
                 else:
                     mdf2lmf[marker](value, current_entry)
+                if sub_entry is not None:
+                    current_entry = sub_entry
+                    sub_entry = None
             except KeyError:
                 print unicode(Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme())))
             except Error as exception:
