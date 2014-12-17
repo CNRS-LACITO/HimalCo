@@ -71,7 +71,7 @@ class TestTexFunctions(unittest.TestCase):
             ]
         expected_lines = [
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
-            "\\textcolor{teal}{\\textit{toto}}. \\textit{Status:} draft" + EOL,
+            "\\textcolor{teal}{\\textsc{toto}}. \\textit{Status:} draft" + EOL,
             EOL]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
@@ -124,7 +124,7 @@ class TestTexFunctions(unittest.TestCase):
 
     def test_format_small_caps(self):
         input = u"°trucs et°astuces"
-        output = "\mytextsc{trucs} et\mytextsc{astuces}"
+        output = "\\textsc{trucs} et\\textsc{astuces}"
         self.assertEqual(format_small_caps(input), output)
 
     def test_format_pinyin(self):
@@ -176,7 +176,7 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_part_of_speech(self):
         entry = LexicalEntry()
         entry.set_partOfSpeech("verb")
-        expected = "\\textcolor{teal}{\\textit{verb}}. "
+        expected = "\\textcolor{teal}{\\textsc{verb}}. "
         self.assertEqual(format_part_of_speech(entry, font), expected)
         del entry
 
@@ -228,7 +228,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.add_example("ex_eng", language="eng")
         entry.add_example("ex_nat", language="nat")
         entry.add_example("ex_reg", language="reg")
-        expected = "\\vernacular{ex_ver} ex_eng \\textit{\\national{ex_nat}} \\textit{[\\regional{ex_reg}]} "
+        expected = "\\begin{exe}\n\\sn \\vernacular{ex_ver}\n\\trans ex_eng\n\\trans \\textit{\\national{ex_nat}}\n\\trans \\textit{[\\regional{ex_reg}]}\n\\end{exe}\n"
         self.assertEqual(format_examples(entry, font), expected)
         del entry
 

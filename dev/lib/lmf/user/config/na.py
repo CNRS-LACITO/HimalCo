@@ -137,7 +137,7 @@ def tex_fra(lexical_entry):
     <xf>
     <xn>
     """
-    return (r"""%s (prononciation~: %s~; avec le verbe copule~: %s) \hspace{4pt} %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL~: %s" + EOL) % \
+    return ((r"""%s (prononciation~: %s~; avec le verbe copule~: %s) \hspace{4pt} %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL~: %s" + EOL) % \
         ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](lexical_entry.get_lexeme()) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()).replace('_', '\_') + "}{}",\
         "LC",\
         "LC AVEC COPULE",\
@@ -147,7 +147,7 @@ def tex_fra(lexical_entry):
         format_definition(lexical_entry, my_font, language=NATIONAL),\
         format_gloss(lexical_entry, my_font, language=FRENCH),\
         format_examples(lexical_entry, my_font, language=FRENCH),\
-        "CL")
+        "CL")).replace("textsc", "mytextsc")
 
 def tex_eng(lexical_entry):
     """<lx> (pronunciation: <lc>; with the copula verb: <lc <type="with copula">>) TAB <ps> TAB Tone: <np <type="tone">>.
@@ -157,7 +157,7 @@ def tex_eng(lexical_entry):
     <xe>
     <xn>
     """
-    return (r"""%s (pronunciation: %s; with the copula verb: %s) \hspace{4pt} %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL: %s" + EOL) % \
+    return ((r"""%s (pronunciation: %s; with the copula verb: %s) \hspace{4pt} %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL: %s" + EOL) % \
         ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](lexical_entry.get_lexeme()) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()).replace('_', '\_') + "}{}",\
         "LC",\
         "LC WITH COPULA",\
@@ -167,4 +167,4 @@ def tex_eng(lexical_entry):
         format_definition(lexical_entry, my_font, language=NATIONAL),\
         format_gloss(lexical_entry, my_font, language=ENGLISH),\
         format_examples(lexical_entry, my_font, language=FRENCH),\
-        "CL")
+        "CL")).replace("textsc", "mytextsc")

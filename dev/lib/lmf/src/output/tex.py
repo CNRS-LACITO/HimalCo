@@ -45,7 +45,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex):
                     # Handle subentries
                     for related_form in lexical_entry.get_related_forms("subentry"):
                         if related_form.get_lexical_entry() is not None:
-                            tex_file.write(lmf_to_tex(related_form.get_lexical_entry()))
+                            tex_file.write(lmf2tex(related_form.get_lexical_entry()))
                             # Separate sub-entries from each others with a blank line
                             tex_file.write(EOL)
     else:
@@ -86,10 +86,10 @@ def format_fv(text):
     return result
 
 def format_small_caps(text):
-    """Replace '°xxx' by '\mytextsc{xxx}' in translated examples.
+    """Replace '°xxx' by '\textsc{xxx}' in translated examples.
     """
     import re
-    return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\mytextsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+    return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
 
 def format_pinyin(text):
     """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
@@ -180,7 +180,7 @@ def format_part_of_speech(lexical_entry, font):
     """
     result = ""
     if lexical_entry.get_partOfSpeech() is not None:
-        result += "\\textcolor{teal}{\\textit{" + lexical_entry.get_partOfSpeech() + "}}. "
+        result += "\\textcolor{teal}{\\textsc{" + lexical_entry.get_partOfSpeech() + "}}. "
     return result
 
 def format_definitions(lexical_entry, font):
@@ -258,14 +258,16 @@ def format_examples(lexical_entry, font):
     result = ""
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
+            result += "\\begin{exe}\n"
             for example in context.find_written_forms(VERNACULAR):
-                result += font[VERNACULAR](example) + " "
+                result += "\\sn " + font[VERNACULAR](example) + "\n"
             for example in context.find_written_forms(ENGLISH):
-                result += example + " "
+                result += "\\trans " + example + "\n"
             for example in context.find_written_forms(NATIONAL):
-                result += "\\textit{" + font[NATIONAL](example) + "} "
+                result += "\\trans \\textit{" + font[NATIONAL](example) + "}\n"
             for example in context.find_written_forms(REGIONAL):
-                result += "\\textit{[" + font[REGIONAL](example) + "]} "
+                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}\n"
+            result += "\\end{exe}\n"
     return result
 
 def format_usage_notes(lexical_entry, font):

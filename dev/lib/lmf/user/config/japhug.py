@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR
+from config.tex import lmf_to_tex
 
 FRENCH = "fra"
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
@@ -51,3 +52,7 @@ for marker in mdf_order:
     copy_list(marker, order)
 order[7].insert(15, "gf")
 order.insert(1, "sf")
+
+def lmf2tex(lexical_entry):
+    # Handle small caps
+    return lmf_to_tex(lexical_entry).replace("textsc", "mytextsc")
