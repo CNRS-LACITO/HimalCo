@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.tex import lmf_to_tex
+from config.tex import lmf_to_tex, tex_font
 from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import open_read, open_write, EOL
 from utils.error_handling import OutputError, Warning
@@ -18,13 +18,14 @@ def compute_header(preamble):
         hdr.close()
     return header
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, sort_order=None):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font, sort_order=None):
     """! @brief Write a LaTeX file.
     @param object The LMF instance to convert into LaTeX output format.
     @param filename The name of the LaTeX file to write with full path, for instance 'user/output.tex'.
     @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'. Deafult value is None.
     @param lmf2tex A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order. Default value is 'lmf_to_tex' function defined in 'src/config/tex.py'. Please refer to it as an example.
     """
+    import string
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(compute_header(preamble))
@@ -36,18 +37,37 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, sort_order=No
     # For each element to write, get the corresponding LMF value
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
+            current_character = ''
             for lexical_entry in lexicon.sort_lexical_entries(sort_order=sort_order):
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
-                    tex_file.write(lmf2tex(lexical_entry))
-                    # Separate lexical entries from each others with a blank line
-                    tex_file.write(EOL)
-                    # Handle subentries
-                    for related_form in lexical_entry.get_related_forms("subentry"):
-                        if related_form.get_lexical_entry() is not None:
-                            tex_file.write(lmf2tex(related_form.get_lexical_entry()))
-                            # Separate sub-entries from each others with a blank line
-                            tex_file.write(EOL)
+                    # Check if current element is a lexeme starting with a different character than previous lexeme
+                    if sort_order is None:
+                        sort_order =  dict([(c, ord(c)) for c in string.letters])
+                        sort_order.update({'': 0})
+                    try:
+                        if int(sort_order[lexical_entry.get_lexeme()[0]]) != int(sort_order[current_character]): # TODO: do not consider special characters
+                            current_character = lexical_entry.get_lexeme()[0]
+                            tex_file.write("\\newpage" + EOL)
+                            title = ''
+                            for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
+                                if int(value) == int(sort_order[current_character]):
+                                    title += ' ' + key
+                            tex_file.write("\\part*{-\ipa{" + title + "} -}" + EOL)
+                        tex_file.write(lmf2tex(lexical_entry, font))
+                        tex_file.write("\markboth{" + font[VERNACULAR](lexical_entry.get_lexeme()) + "}{}" + EOL)
+                        tex_file.write("\\lhead{\\firstmark}" + EOL)
+                        tex_file.write("\\rhead{\\botmark}" + EOL)
+                        # Separate lexical entries from each others with a blank line
+                        tex_file.write(EOL)
+                        # Handle subentries
+                        for related_form in lexical_entry.get_related_forms("subentry"):
+                            if related_form.get_lexical_entry() is not None:
+                                tex_file.write(lmf2tex(related_form.get_lexical_entry(), font))
+                                # Separate sub-entries from each others with a blank line
+                                tex_file.write(EOL)
+                    except KeyError:
+                        print unicode(Warning("Cannot sort lexeme %s" % lexical_entry.get_lexeme()))
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly
@@ -157,19 +177,19 @@ def format_audio(lexical_entry, font):
                 print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
                 return result
             file_name = file_name.replace('_', '\string_').replace('-', '\string-')
-            result += "\includemedia[\n" \
-                "\taddresource=" + file_name + ",\n" \
-                "\tflashvars={\n" \
-                    "\t\tsource=" + file_name + "\n" \
-                    "\t\t&autoPlay=true\n" \
-                    "\t\t&autoRewind=true\n" \
-                    "\t\t&loop=false\n" \
-                    "\t\t&hideBar=true\n" \
-                    "\t\t&volume=1.0\n" \
-                    "\t\t&balance=0.0\n" \
+            result += "\includemedia[" + EOL +\
+                "\taddresource=" + file_name + "," + EOL +\
+                "\tflashvars={" + EOL +\
+                    "\t\tsource=" + file_name + EOL +\
+                    "\t\t&autoPlay=true" + EOL +\
+                    "\t\t&autoRewind=true" + EOL +\
+                    "\t\t&loop=false" + EOL +\
+                    "\t\t&hideBar=true" + EOL +\
+                    "\t\t&volume=1.0" + EOL +\
+                    "\t\t&balance=0.0" + EOL +\
                 "}]{\includegraphics[scale=0.5]{sound1\string_bleu.jpg}}{APlayer.swf}"
             # \mediabutton[<options>]{<normal button text or graphic>}
-            result += " \\hspace{0.1cm}\n"
+            result += " \\hspace{0.1cm}" + EOL
     return result
 
 def format_part_of_speech(lexical_entry, font):
@@ -258,16 +278,16 @@ def format_examples(lexical_entry, font):
     result = ""
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
-            result += "\\begin{exe}\n"
+            result += "\\begin{exe}" + EOL
             for example in context.find_written_forms(VERNACULAR):
-                result += "\\sn " + font[VERNACULAR](example) + "\n"
+                result += "\\sn " + font[VERNACULAR](example) + EOL
             for example in context.find_written_forms(ENGLISH):
-                result += "\\trans " + example + "\n"
+                result += "\\trans " + example + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += "\\trans \\textit{" + font[NATIONAL](example) + "}\n"
+                result += "\\trans \\textit{" + font[NATIONAL](example) + "}" + EOL
             for example in context.find_written_forms(REGIONAL):
-                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}\n"
-            result += "\\end{exe}\n"
+                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+            result += "\\end{exe}" + EOL
     return result
 
 def format_usage_notes(lexical_entry, font):

@@ -20,13 +20,16 @@
 \newcommand{\nq}[1]{{\mx #1}}
 \XeTeXlinebreaklocale "zh" % 使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyheadoffset{3.4em}
 \usepackage[dvipdfmx,xetex,bigfiles,final,activate=onclick,deactivate=onclick,windowed=false,transparent,passcontext]{media9}
 \usepackage{graphicx}
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
 \usepackage{gb4e}
 \usepackage{vmargin}
 % {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
-\setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{0cm}{0.5cm}{1cm}
+\setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{1cm}{0.5cm}{1cm}
 
 \def\mytextsc{\bgroup\obeyspaces\mytextscaux}
 \def\mytextscaux#1{\mytextscauxii #1\relax\relax\egroup}

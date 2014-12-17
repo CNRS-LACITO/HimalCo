@@ -70,9 +70,15 @@ class TestTexFunctions(unittest.TestCase):
             "\end{document}" + EOL
             ]
         expected_lines = [
+            "\\newpage" + EOL,
+            "\lhead{\\ipa{hello}}" + EOL,
+            "\chead{-\\ipa{ h} -}" + EOL,
+            EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
             "\\textcolor{teal}{\\textsc{toto}}. \\textit{Status:} draft" + EOL,
-            EOL]
+            EOL,
+            "\\rhead{\\ipa{hello}}" + EOL
+            ]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
         # Customize mapping
@@ -92,10 +98,15 @@ class TestTexFunctions(unittest.TestCase):
         tex_write(lexical_resource, tex_filename, None, lmf2tex)
         tex_file = open(tex_filename, "r")
         expected_lines = [
+            "\\newpage" + EOL,
+            "\lhead{\\ipa{hello}}" + EOL,
+            "\chead{-\\ipa{ h} -}" + EOL,
+            EOL,
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
             "Warning: draft version!" + EOL,
-            EOL
+            EOL,
+            "\\rhead{\\ipa{hello}}" + EOL
             ]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()

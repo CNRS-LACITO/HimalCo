@@ -80,6 +80,7 @@ mdf2lmf.update({
     "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(remove_char(a)),
     "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
     "lx"        : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
+    "se"        : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
     "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
     "cf"        : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"])
 })
@@ -105,6 +106,6 @@ for marker in mdf_order:
 order[7].insert(15, "gf")
 order.insert(1, "sf")
 
-def lmf2tex(lexical_entry):
+def lmf2tex(lexical_entry, font):
     # Handle small caps
-    return lmf_to_tex(lexical_entry).replace("textsc", "mytextsc")
+    return lmf_to_tex(lexical_entry, font).replace("textsc", "mytextsc")

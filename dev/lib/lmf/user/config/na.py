@@ -129,7 +129,7 @@ def format_examples(lexical_entry, font, language):
                 result += font[NATIONAL](example) + r""" \\""" + EOL
     return result
 
-def tex_fra(lexical_entry):
+def tex_fra(lexical_entry, font):
     """<lx> (prononciation~: <lc>~; avec le verbe copule~: <lc <type="with copula">>) TAB <ps> TAB Ton~: <np <type="tone">>.
     <df>.
     <dn>u"\u3002" Dialecte chinois local~: <gr>u"\u3002"
@@ -149,7 +149,7 @@ def tex_fra(lexical_entry):
         format_examples(lexical_entry, my_font, language=FRENCH),\
         "CL")).replace("textsc", "mytextsc")
 
-def tex_eng(lexical_entry):
+def tex_eng(lexical_entry, font):
     """<lx> (pronunciation: <lc>; with the copula verb: <lc <type="with copula">>) TAB <ps> TAB Tone: <np <type="tone">>.
     <df>.
     <dn>u"\u3002" Local Chinese dialect: <gr>u"\u3002"
