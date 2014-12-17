@@ -30,7 +30,7 @@ lmf.write_xml_lmf(na_lexical_resource, user_path + "demo/na_output.xml")
 lmf.write_xml_lmf(thulung_lexical_resource, user_path + "demo/thulung_output.xml")
 
 # Write LaTeX files
-lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex)
+lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex, sort_order=japhug.ranks)
 lmf.write_tex(khaling_lexical_resource, user_path + "demo/khaling_output.tex", preamble=user_path + "config/khaling.tex")
 lmf.write_tex(koyi_lexical_resource, user_path + "demo/koyi_output.tex", preamble=user_path + "config/koyi.tex")
 lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_eng.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_eng)

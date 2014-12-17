@@ -6,7 +6,7 @@ from startup import *
 import os
 
 # Import user customized configuration
-from japhug import mdf2lmf, lmf2mdf, order
+from japhug import mdf2lmf, lmf2mdf, order, lmf2tex, ranks
 
 # Read MDF file and set lexicon identifier
 lexical_resource = lmf.read_mdf(user_path + "../../../../dict/japhug/toolbox/Dictionary.txt", mdf2lmf, id="japhug")
@@ -24,7 +24,7 @@ print lexical_resource.get_bibliographicCitation()
 lmf.write_xml_lmf(lexical_resource, user_path + "dict_japhug/Dictionary.xml")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "dict_japhug/Dictionary.tex", preamble=user_path + "config/japhug.tex")
+lmf.write_tex(lexical_resource, user_path + "dict_japhug/Dictionary.tex", preamble=user_path + "config/japhug.tex", lmf2tex=lmf2tex, sort_order=ranks)
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "dict_japhug/Dictionary.txt", lmf2mdf, order)

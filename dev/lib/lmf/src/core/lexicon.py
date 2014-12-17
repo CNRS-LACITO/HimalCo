@@ -153,23 +153,50 @@ class Lexicon():
         """
         return len(self.get_lexical_entries())
 
-    def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), order=None):
+    def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
         """! @brief Sort given items of lexical entries contained in the lexicon according to a certain order.
         @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
         @param order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
         @return The sorted Python list of lexical entries.
         """
+        def compare(x, y):
+            """Compare 2 elements between each other.
+            """
+            for i in range(min(len(x), len(y))):
+                try:
+                    if sort_order[x[i]] == sort_order[y[i]]:
+                        continue
+                    # If the 1st one is lower than the 2nd one, its rank is decremented
+                    if sort_order[x[i]] < sort_order[y[i]]:
+                        return -1
+                    # If the 1st one is greater than the 2nd one, its rank is incremented
+                    elif sort_order[x[i]] > sort_order[y[i]]:
+                        return 1
+                # Handle other characters
+                except KeyError:
+                    if x[i] == y[i]:
+                        continue
+                    if x[i] < y[i]:
+                        return -1
+                    elif x[i] > y[i]:
+                        return 1
+            # If both strings do not have the same length, they do not equal => the smallest string is the shortest one
+            if len(x) < len(y):
+                return -1
+            elif len(x) > len(y):
+                return 1
+            # If all characters match, both equal => do nothing
+            return 0
         # Create a list of tuples associating items and their lexical entries: [(item1, entry1), (item2, entry2), ...]
         items_and_entries = [(items(lexical_entry), lexical_entry) for lexical_entry in self.lexical_entry]
-        if order is None:
+        if sort_order is None:
             # Sort given items in alphabetical order
             items_and_entries.sort()
-            # Retrieve lexical entries to create a sorted list
-            sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
-            return sorted_entries
         else:
-            # TODO
-            return self.lexical_entry
+            items_and_entries.sort(cmp=compare)
+        # Retrieve lexical entries to create a sorted list
+        sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
+        return sorted_entries
 
     def find_lexical_entries(self, filter):
         """! @brief Find all lexical entries which characteristics meet the given condition.

@@ -18,7 +18,7 @@ def compute_header(preamble):
         hdr.close()
     return header
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, sort_order=None):
     """! @brief Write a LaTeX file.
     @param object The LMF instance to convert into LaTeX output format.
     @param filename The name of the LaTeX file to write with full path, for instance 'user/output.tex'.
@@ -36,7 +36,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex):
     # For each element to write, get the corresponding LMF value
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
-            for lexical_entry in lexicon.get_lexical_entries():
+            for lexical_entry in lexicon.sort_lexical_entries(sort_order=sort_order):
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
                     tex_file.write(lmf2tex(lexical_entry))
