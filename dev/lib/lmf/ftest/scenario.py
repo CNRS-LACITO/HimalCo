@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 ## Needed to import LMF library properly
 # Also automatically define 'ftest_path' as location of lib/lmf/ftest/ folder
@@ -13,7 +14,7 @@ input_lexical_resource.get_lexicon("short example").set_label("test online dicti
 # Set global information
 input_lexical_resource.set_creationDate("2014-10-01")
 input_lexical_resource.set_lastUpdate("2014-10-10")
-input_lexical_resource.set_author("Celine Buret")
+input_lexical_resource.set_author(u"Céline Buret")
 input_lexical_resource.set_description("This is a testing lexicon.")
 print input_lexical_resource.get_bibliographicCitation()
 

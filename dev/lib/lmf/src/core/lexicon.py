@@ -193,6 +193,8 @@ class Lexicon():
             # Sort given items in alphabetical order
             items_and_entries.sort()
         else:
+            # sorted(iterable, cmp, key, reverse)
+            # list.sort(cmp, key, reverse)
             items_and_entries.sort(cmp=compare)
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
