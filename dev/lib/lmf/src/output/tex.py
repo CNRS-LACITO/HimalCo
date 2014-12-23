@@ -34,6 +34,12 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     tex_file.write("\\maketitle" + EOL)
     tex_file.write("\\newpage" + EOL)
     tex_file.write("\\begin{multicols}{2}" + EOL * 2)
+    if sort_order is None:
+        # Lowercase and uppercase letters must have the same rank
+        sort_order = dict([(c, ord(c)) for c in string.lowercase])
+        up = dict([(c, ord(c) + 32) for c in string.uppercase])
+        sort_order.update(up)
+        sort_order.update({'': 0})
     # For each element to write, get the corresponding LMF value
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
@@ -42,9 +48,6 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
-                    if sort_order is None:
-                        sort_order =  dict([(c, ord(c)) for c in string.letters])
-                        sort_order.update({'': 0})
                     try:
                         if int(sort_order[lexical_entry.get_lexeme()[0]]) != int(sort_order[current_character]): # TODO: do not consider special characters
                             current_character = lexical_entry.get_lexeme()[0]

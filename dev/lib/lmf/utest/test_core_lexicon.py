@@ -157,9 +157,19 @@ class TestLexiconFunctions(unittest.TestCase):
         self.lexicon.lexical_entry = [entry4, entry1, entry2, entry3]
         # Test sort lexical entries
         self.assertListEqual(self.lexicon.sort_lexical_entries(), [entry1, entry2, entry3, entry4])
+        # Provide a sort order
+        my_order = dict({'A':1.1, 'a':1.2, 'B':2.1, 'b':2.2})
+        my_unicode_order = ({})
+        for key in my_order.keys():
+            my_unicode_order.update({key.decode(encoding='utf8'):my_order[key]})
+        entry5 = LexicalEntry().set_lexeme("Aa")
+        entry6 = LexicalEntry().set_lexeme("bB")
+        self.lexicon.lexical_entry.append(entry5)
+        self.lexicon.lexical_entry.append(entry6)
+        self.assertListEqual(self.lexicon.sort_lexical_entries(sort_order=my_order), [entry5, entry1, entry2, entry3, entry6, entry4])
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
-        del entry1, entry2, entry3, entry4
+        del entry1, entry2, entry3, entry4, entry5, entry6
 
     def test_find_lexical_entries(self):
         # Create several lexical entries with different lexemes

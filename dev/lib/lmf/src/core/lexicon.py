@@ -164,21 +164,21 @@ class Lexicon():
             """
             for i in range(min(len(x), len(y))):
                 try:
-                    if sort_order[x[i]] == sort_order[y[i]]:
+                    if sort_order[x[0][i]] == sort_order[y[0][i]]:
                         continue
                     # If the 1st one is lower than the 2nd one, its rank is decremented
-                    if sort_order[x[i]] < sort_order[y[i]]:
+                    if sort_order[x[0][i]] < sort_order[y[0][i]]:
                         return -1
                     # If the 1st one is greater than the 2nd one, its rank is incremented
-                    elif sort_order[x[i]] > sort_order[y[i]]:
+                    elif sort_order[x[0][i]] > sort_order[y[0][i]]:
                         return 1
                 # Handle other characters
                 except KeyError:
-                    if x[i] == y[i]:
+                    if x[0][i] == y[0][i]:
                         continue
-                    if x[i] < y[i]:
+                    if x[0][i] < y[0][i]:
                         return -1
-                    elif x[i] > y[i]:
+                    elif x[0][i] > y[0][i]:
                         return 1
             # If both strings do not have the same length, they do not equal => the smallest string is the shortest one
             if len(x) < len(y):
