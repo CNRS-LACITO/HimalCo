@@ -71,13 +71,13 @@ class TestTexFunctions(unittest.TestCase):
             ]
         expected_lines = [
             "\\newpage" + EOL,
-            "\lhead{\\ipa{hello}}" + EOL,
-            "\chead{-\\ipa{ h} -}" + EOL,
-            EOL,
+            "\\part*{-\ipa{ h} -}" + EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
             "\\textcolor{teal}{\\textsc{toto}}. \\textit{Status:} draft" + EOL,
-            EOL,
-            "\\rhead{\\ipa{hello}}" + EOL
+            "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
+            "\lhead{\\firstmark}" + EOL,
+            "\\rhead{\\botmark}" + EOL,
+            EOL
             ]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
@@ -89,7 +89,7 @@ class TestTexFunctions(unittest.TestCase):
             "LexicalEntry.status" : lambda lexical_entry: "Warning: " + lexical_entry.get_status() + " version!" + EOL
         })
         my_order = ["LexicalEntry.id", "Lemma.lexeme", "LexicalEntry.partOfSpeech", "LexicalEntry.status"]
-        def lmf2tex(entry):
+        def lmf2tex(entry, font):
             result = ""
             for attribute in my_order:
                 result += my_lmf_tex[attribute](entry)
@@ -99,14 +99,14 @@ class TestTexFunctions(unittest.TestCase):
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
-            "\lhead{\\ipa{hello}}" + EOL,
-            "\chead{-\\ipa{ h} -}" + EOL,
-            EOL,
+            "\\part*{-\ipa{ h} -}" + EOL,
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
             "Warning: draft version!" + EOL,
-            EOL,
-            "\\rhead{\\ipa{hello}}" + EOL
+            "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
+            "\lhead{\\firstmark}" + EOL,
+            "\\rhead{\\botmark}" + EOL,
+            EOL
             ]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
