@@ -898,12 +898,6 @@
 \CharStyle
 \-mkr
 
-\+mkr xn我的并完全痊愈了
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
 \+mkr xr
 \nam Example free trans. (r)
 \desc Regional language translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
