@@ -1,0 +1,136 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+\newcommand{\archaic}[4]{\zh{#1} *\ipa{#2} $\rightarrow$ \ipa{#3} `#4'}
+\newcommand{\ra}{$\Sigma$} 
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\begin{document} 
+
+
+\title{Review of \citet{bs14oc}}  
+
+\author{Guillaume Jacques}
+\maketitle
+
+
+\section{Introduction}
+The book under review, the culmination of decades of research by both authors, is a major landmark in the history of Chinese Historical Phonology. Traditional reconstructions of Old Chinese (including the authors' previous ones, \citealt{baxter92} and \citealt{sagart99roc}) were based on three main sources of data: pre-Han rhyme patterns, phonetic series and Middle Chinese as represented in the Rhyming Dictionaries.
+
+Baxter and Sagart's work enrich the traditional model by systematically integrating data from Min (\citealt{norman74protomin}) as well as Old Chinese loanwords into Vietnamese (using \citealt{ferlus82spirantisation}'s model of Viet-Muong reconstruction), Lakkia (\citealt{ferlus96kamsui}) and Hmong-Mien (using data from \citealt{wang95protomy} and \citealt{ratliff10protohm}).
+
+Arguably, Baxter and Sagart's reconstruction is not the first one to use Min data. \citet{starostin89} did posit a contrast between voiced aspirated and unaspirated stops on the basis of Norman's reconstruction. It is however the first work to establish systematic sound correspondences between Min contrasts not found in Middle Chinese and data from Old Chinese loanwords (see in particular pp 88-97). These robust correspondences prove the existence of previously unknown phonological contrasts in Old Chinese.
+
+Any future reconstruction system, even if it disagrees with B\&S on the phonetic interpretation of particular contrasts, will have to account for them in a systematic way.
+
+In addition, B\&S adopt a series of proposals by other authors, such as reconstructing the A/B contrast as pharyngealization (\citealt{norman94pharyngeal}), distinguishing between final *\ipa{--n} and \ipa{--r} (\citealt{starostin89}) and setting a series of uvular stops contrastive with the velar ones (\citealt{pan97houyin}, see below for a more detailed discussion).
+
+
+%Finally, the etymologies proposed in B\&S's book are supported by extensive use of philological and palaeographical data.
+
+In this review, I discuss three specific issues concerning B\&S's approach to Old Chinese reconstruction where my point of view as a Rgyalrong and Kiranti specialist may be useful: the use of Sino-Tibetan languages other than Chinese in reconstructing Old Chinese, the reconstruction of morphology, and the uvulars.
+
+\section{Sino-Tibetan evidence}
+While B\&S agree with the idea that data from non-Chinese ST languages (`Tibeto-Burman')\footnote{I prefer to avoid the term `Tibeto-Burman' to designate all languages apart from Chinese for two reasons. First, there is no robust evidence that all languages apart from Chinese form a clade, as there are no convincing common innovations defining this group. Second, regardless of the status of Chinese, the term `Tibeto-Burman' should be kept for the lowest common clade to which both Tibetan and Lolo-Burmese belong. } is of critical importance for understanding Old Chinese, they also propose (p 40) that `it would be a mistake to use Tibeto-Burman evidence to \textit{test} hypotheses about Old Chinese'.
+
+ I agree that using data from Tibetan, Burmese or Rgyalrongic languages in reconstructing Old Chinese might be a source of circularity if the resulting Old Chinese is then used to reconstruct proto-Sino-Tibetan. Morevoer, the use of ST cognates rather than loanwords from Chinese is a complicated task for three reasons. First, in many languages it is by no means trivial to determine whether a particular comparandum should be treated as a cognate or as an ancient loanword from Chinese (see \citealt{sagart08bai} for a particularly complex case). Second, cognates sharing the same root may not have the same derivational affixes and morphological structure, so that a purely mechanical approach to comparison disregarding morphology is unlikely to yield clear results. Finally, the Sino-Tibetan language family is very old, and cognate retention is very low in comparison with Indo-European or Algonquian; there may not always be enough cognates left to fully sort out the phonological system of the proto-language.
+ 
+ Yet, there are specific cases when data from traditional sources, Min dialects and loanwords into neighbouring languages combined together are  not sufficient to determine the exact reconstruction of a particular lexical item, and where adducing evidence from Sino-Tibetan cognates might be the only solution (see in particular the case of final *\ipa{--j}, *\ipa{--r} and *\ipa{--n}, \citealt{hill14jrn} and forthcoming work by the same author).
+%\citet{gong95st}
+%\citet{handel02r}
+
+Besides, in the case of morphology, a purely Chinese-internal approach is unlikely to be successful: since only traces of morphology remain in Old Chinese, the exact morphosyntactic function and semantic values of the affixes in question cannot be determined without evidence from related languages which preserve the morphology better than Chinese. My approach to this question would to reconstruct in Chinese only affixes (or morphological alternations) for which clear external cognates exist in another language of the family. 
+
+\section{Morphology}
+In comparison with \citet{sagart99roc}, B\&S only devote a few pages to morphology (pp 53-61); most of the discussions on affixes and derivations  actually pervades the whole book. 
+
+From the point of view of Rgyalrongic languages, the affixes reconstructed by B\&S seem very familiar. 
+
+
+Their *N-- prefix (p 54) corresponds to the anticausative prenasalization found throughout Sino-Tibetan (see \citealt{jacques12internal}, \citealt{sagart12sprefix}, \citealt{hill14voicing} for recent discussions of these topics). It is possible it also corresponds in some cases to the proto-Rgyalrong passive *\ipa{ŋa--} prefix (and its Kuki-Chin and Tangkhul Naga cognates, see \citealt{jacques07passif}), and that the eroded nature of Old Chinese phonology does not allow to clearly distinguish between the two.
+
+Despites \citet{mei12caus}'s doubts, it is clear that pairs such as \zh{败} \ipa{pæjH} `defeat' and \zh{败} \ipa{bæjH} `be defeated' cannot be explained by assuming that the unvoiced (transitive) member of the pair had its initial devoiced by the causative *\ipa{s--} prefix, since morphologically conservative languages such as Rgyalrongic, Tangut, Dulong/Rawang and Jingpo preserve both anticausative and causative \ipa{s--} (see \citealt{lai14caus}, \citealt{jacques12demotion} and \citealt{lapolla03}). 
+
+The inalienable *t-- (p 57) also has clear cognates in various languages, including Rgyalrongic and Ao Naga. However, a more detailed discussing on the nature of this prefix is relevant to fully understand the Chinese evidence. 
+
+In Rgyalrong languages such as Japhug, inalienably possessed nouns (including body parts, kinship terms and others) and alienably possessed nouns differ in that the former must take a possessive prefix (see Table \ref{tab:pronoun}, see \citealt[1212]{jacques12incorp}). When there is no definite possessor, the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--} are obligatorily present on inalienably possessed nouns. It is the citation form of inalienably possessed nouns (\ipa{tɤ-se} `blood', \ipa{tɯ-nŋa} `debt', \ipa{tɤ-ɬaʁ} `aunt'). The choice of the prefix \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined; nouns with \ipa{tɤ-} can also have \ipa{tɯ--} with generic possessors (\ipa{tɤ-se} `blood' vs \ipa{tɯ-se} `one's blood').  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{a-se} `my blood', \ipa{a-nŋa} `my debt', \ipa{a-ɬaʁ} `my aunt').  Simple nouns cannot take indefinite possessive prefixes, but do take the generic possessive prefix \ipa{tɯ--} (\ipa{laχtɕʰa} `things' vs \ipa{tɯ-laχtɕʰa} `one's things').\footnote{See \citet{jacques15generic} for a detailed description of the generic in Japhug.}
+
+\begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes in Japhug}\label{tab:pronoun}
+\begin{tabular}{lllllllll} 
+\toprule
+ Free pronoun & Prefix & Person\\
+\midrule
+ \ipa{aʑo},    \ipa{ɤj} &	\ipa{a--}  &		1\textsc{sg} \\
+\ipa{nɤʑo},  \ipa{nɤj} &	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯʑo}  &	\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+\ipa{tɕiʑo}  &	\ipa{tɕi--}  &			1\textsc{du} \\
+\ipa{ndʑiʑo}  &	\ipa{ndʑi--}  &		2\textsc{du} \\	
+\ipa{ʑɤni}  &	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+\ipa{iʑo}, \ipa{iʑora},   \ipa{iʑɤra}   &	\ipa{i--}  &			1\textsc{pl} \\
+\ipa{nɯʑo}, \ipa{nɯʑora},   \ipa{nɯʑɤra}  &	\ipa{nɯ--}  &			2\textsc{pl} \\
+\ipa{ʑara}  &	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+&  \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯʑo} & \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+XXXX \citet{coupe07mongsen}
+
+Thus, the existence of the inalienable *t-- prefix in Chinese implies that a comparable system of possessive prefixes used to exist in Chinese, probably before the language was put to writing. What we observe in Chinese are fossilized traces of the prefix, reanalyzed as part of the stem, comparable to thecase of Classical Tibetan (\citealt{jacques14snom}).
+
+
+
+
+%\citet{jacques13tropative}
+%\citet{jacques14antipassive}
+
+
+
+
+Intransitivizing vs Transitivizing *--s
+\citet{haudricourt54chinois}
+ 
+The least convincing prefix posited by B\&S is their `volitive' *m-- (pp 54-5)
+
+\section{Uvulars}
+\citet{schuessler09minimal}
+\citet{bs09reconstr}
+P46
+\citet{authier08budugh}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
