@@ -174,6 +174,7 @@ class Lexicon():
                         return 1
                 # Handle other characters
                 except KeyError:
+                    print unicode(Warning("Cannot compare " + x[0][i] + " and " + y[0][i]))
                     if x[0][i] == y[0][i]:
                         continue
                     if x[0][i] < y[0][i]:
