@@ -4,12 +4,13 @@
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ps_partOfSpeech
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
+from utils.io import EOL
 
 FRENCH = "fra"
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
 
 ranks = dict({'':0,
-    'a':1,
+    'a':1, 'æ':1.1, # 1.1 -> khaling/koyi/thulung
     'ɤ':2,
     'b':3, 'β':3.1,
     'c':4,
@@ -50,7 +51,7 @@ ranks = dict({'':0,
     'z':39,
     'ʐ':40,
     'ʑ':41,
-    'ʕ':42,
+    'ʕ':42, 'ʔ':42.1, # 42.1 -> khaling/koyi/thulung
     # Special characters
     '_':43.1, '-':43.2})
 unicode_ranks = ({})
@@ -142,7 +143,7 @@ mdf2lmf.update({
     "hbf"       : lambda hbf, lexical_entry: lexical_entry.set_bibliography(hbf),
     "wav"       : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
     "wav8"      : lambda wav8, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "mp3/8_" + wav8 + ".wav", quality="low", audio_file_format="wav"),
-    "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(remove_char(a)),
+    "a"         : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
     "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
     "lx"        : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
     "se"        : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
@@ -179,5 +180,100 @@ partOfSpeech2tex.update({
     "indefinite"    : "indf" # Leipzip
 })
 
+## Functions to process some LaTeX fields (output)
+
+def format_lexeme(lexical_entry, font):
+    import output.tex as tex
+    lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
+    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.get_homonymNumber() is not None:
+        # Add homonym number to lexeme
+        lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
+    if lexical_entry.get_contextual_variations() is not None and len(lexical_entry.get_contextual_variations()) != 0:
+        # Format contextual variations
+        for var in lexical_entry.get_contextual_variations():
+            result += " " + font[VERNACULAR](var)
+        result += " (from: " + lexeme + ")."
+    else:
+        # Format lexeme
+        result += lexeme
+    for form_representation in lexical_entry.get_form_representations():
+        if form_representation.get_variantForm() is not None and form_representation.get_type() == "phonetics":
+            result += " / " + font[VERNACULAR](form_representation.get_variantForm())
+    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    return result
+
+def format_notes(lexical_entry, font):
+    abbreviations = dict({
+    })
+    result = ""
+    for note in lexical_entry.find_notes(type="grammar"):
+        try:
+            note = abbreviations[note]
+        except KeyError:
+            pass
+        result += "\mytextsc{" + note + "} "
+    return result
+
+## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
-    return lmf_to_tex(lexical_entry, font, partOfSpeech_mapping=partOfSpeech2tex, languages=[VERNACULAR, FRENCH, NATIONAL])
+    import output.tex as tex
+    tex_entry = ""
+    # lexeme, id and phonetic variants
+    tex_entry += format_lexeme(lexical_entry, font)
+    # sound
+    tex_entry += tex.format_audio(lexical_entry, font)
+    # part of speech
+    tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech2tex)
+    # grammatical notes
+    tex_entry += format_notes(lexical_entry, font)
+    # definition/gloss and translation
+    tex_entry += tex.format_definitions(lexical_entry, font, languages=[VERNACULAR, FRENCH, NATIONAL])
+    # example
+    tex_entry += tex.format_examples(lexical_entry, font)
+    # usage note
+    tex_entry += tex.format_usage_notes(lexical_entry, font)
+    # encyclopedic information
+    tex_entry += tex.format_encyclopedic_informations(lexical_entry, font)
+    # restriction
+    tex_entry += tex.format_restrictions(lexical_entry, font)
+    # synonym, antonym, morphology, related form
+    tex_entry += tex.format_related_forms(lexical_entry, font)
+    # borrowed word
+    tex_entry += tex.format_borrowed_word(lexical_entry, font)
+    # etymology
+    tex_entry += tex.format_etymology(lexical_entry, font)
+    # paradigms
+    tex_entry += tex.format_paradigms(lexical_entry, font)
+    # semantic domain
+    tex_entry += tex.format_semantic_domains(lexical_entry, font)
+    # source
+    tex_entry += tex.format_source(lexical_entry, font)
+    # status
+    tex_entry += tex.format_status(lexical_entry, font)
+    # date
+    tex_entry += tex.format_date(lexical_entry, font)
+    # Handle reserved characters: \ { } $ # & _ ^ ~ %
+    if tex_entry.find("{") != -1:
+        tex_entry = tex.format_font(tex_entry)
+    if tex_entry.find("@") != -1:
+        tex_entry = tex.format_pinyin(tex_entry)
+    if tex_entry.find("#") != -1:
+        tex_entry = tex_entry.replace('#', '\#')
+    if tex_entry.find("_") != -1:
+        tex_entry = tex_entry.replace('_', '\_').replace("\string\_", "\string_")
+    if tex_entry.find("& ") != -1:
+        tex_entry = tex_entry.replace('& ', '\& ')
+    if tex_entry.find("$") != -1:
+        tex_entry = tex_entry.replace('$', '')
+    if tex_entry.find("^") != -1:
+        tex_entry = tex_entry.replace('^', '\^')
+    # Handle fonts
+    if tex_entry.find("fn:") != -1:
+        tex_entry = tex.format_fn(tex_entry)
+    if tex_entry.find("fv:") != -1:
+        tex_entry = tex.format_fv(tex_entry)
+    # Special formatting
+    if tex_entry.encode("utf8").find("°") != -1:
+        tex_entry = tex.format_small_caps(tex_entry)
+    return tex_entry + EOL
