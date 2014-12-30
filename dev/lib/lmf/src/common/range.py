@@ -5,30 +5,25 @@ partOfSpeech_range = set([
     "adjective",
     "adposition",
     "adverb",
+    "affix",
+    "bitransistive verb",
+    "classifier",
     "conjunction",
     "determiner",
+    "ideophone",
+    "impersonal verb",
     "interjection",
+    "intransitive verb",
+    "negation",
     "noun",
     "numeral",
     "particle",
-    "pronoun",
-    "verb",
-    "ideophone",
-    "transitive verb",
-    "intransitive verb",
-    "reflexive verb",
-    "negation",
-    "impersonal verb",
-    "classifier",
-    "preposition",
-    "bitransistive verb",
-    "affix",
     "possessive pronouns",
-    "particle",
-    "onomatope",
-    "function word",
-    "stative intransitive verb",
-    "linker"
+    "preposition",
+    "pronoun",
+    "reflexive verb",
+    "transitive verb",
+    "verb"
 ])
 
 ## Possible values allowed for LMF variant type FormRepresentation attribute
@@ -158,6 +153,7 @@ paradigmLabel_range = set([
     "conjugation class",
     "theme of the past", "past stem", # TODO -> japhug
     "comitative", "comitatif", # TODO -> japhug
+    "COM", # comitative (Leipzig)
     "construction",
     "directional", "directionel", # TODO -> japhug
     "irregularity",

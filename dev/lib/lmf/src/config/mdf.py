@@ -362,96 +362,152 @@ lmf_mdf = dict({
     "dt" : lambda lexical_entry: lexical_entry.get_date()
 })
 
+## Possible values allowed for 'ps' MDF marker
+ps_range = set([
+    "ADJ",      # Adjective
+    "ADJR",     # Adjectivizer
+    "MDL",      # Modal
+    "ADV",      # Adverb
+    "ADVR",     # Adverbializer
+    "NEG",      # Negative
+    "AFFM",     # Affirmative
+    "NEGimp",   # Negative imperative
+    "AL",       # Alienable
+    "NOM",      # Nominative
+    "AN",       # Animate
+    "NOMR",     # Nominalizer
+    "APPL",     # Applicative
+    "n",        # Noun
+    "ART",      # Article
+    "NUM",      # Number
+    "ASP",      # Aspect
+    "AUX",      # Auxiliary
+    "PTCL",     # Particle
+    "PART",     # Participle
+    "CLASS",    # Classifier
+    "PAUS",     # Pause word
+    "CMPAR",    # Comparative
+    "PL",       # Plural
+    "CMPLR",    # Complementizer
+    "POSS",     # Possessive
+    "CNJ",      # Conjunction
+    "POSSR",    # Possessor
+    "COND",     # Conditional
+    "POST",     # Postposition
+    "CONF",     # Confirmative
+    "PREP",     # Preposition
+    "CONN",     # Connective
+    "PRO",      # Pronoun/pronominal
+    "COP",      # Copula
+    "PropN",    # Proper noun
+    "DECL",     # Declarative
+    "Q",        # Query/Question/Interrogative
+    "DEIC",     # Deictic (spatial & temp.)
+    "QNT",      # Quantifier
+    "DEM",      # Demonstrative
+    "DIR",      # Directional
+    "REC",      # Reciprocal
+    "REL",      # Relative(izer)
+    "EVID",     # Evidential
+    "RFLX",     # Reflexive
+    "EXASP",    # Exasperative
+    "RLR",      # Relater
+    "EXIST",    # Existential
+    "TAM",      # Tense-Aspect-Mood
+    "FOC",      # Focus marker
+    "TIME",     # Time expression
+    "TNS",      # Tense
+    "HORT",     # Hortative
+    "TR",       # Transitive(izer)
+    "ID",       # Idiom
+    "v",        # Verb/verba
+    "IMP",      # Imperative
+    "vi",       # Intransitive verb
+    "INTJ",     # Interjection
+    "vm",       # Middle verb
+    "INT",      # Interrogative (non-agentive passive)
+    "ITR",      # Intransitive(izer)
+    "vn",       # Non-active verb
+    "vp",       # Passive verb (agentive)
+    "vr",       # Reflexive/quasi-reflexive/intradirective
+    "LIG",      # Ligature
+    "vt",       # Transitive verb
+    "LOC",      # Locative
+    "vt/i"      # Ambitransitive verb
+])
+
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps_partOfSpeech = dict({
-    "adj"           : "adjective",                  # adjective
-    "adv"           : "adverb",                     # adverb(ial)
-    "Adv"           : "adverb",                     # adverb(ial) -> japhug
-    "Advs"          : "adverb",                     # adverb(ial) -> japhug
-    "class"         : "classifier",                 # classifier (MDF)
-    "clf"           : "classifier",                 # classifier (Leipzig)
-    "Cl"            : "classifier",                 # classifier (Leipzig) -> japhug
-    "cnj"           : "conjunction",                # conjunction
-    "Conj"          : "conjunction",                # conjunction -> japhug
-    "disc.PTCL"     : "particle",                   # discourse particle
-    "D"             : "particle",                   # discourse particle -> japhug
-    "Part"          : "particle",                   # discourse particle -> japhug
-    "Exp"           : None,                         # ? -> japhug
-    "ideo"          : "ideophone",                  # ideophones
-    "Ideo"          : "ideophone",                  # ideophones -> japhug
-    "Ideo.1"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.2"        : "ideophone",                  # ideophones -> japhug
-    "ideo.2"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.3"        : "ideophone",                  # ideophones -> japhug
-    "ideo.3"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.4"        : "ideophone",                  # ideophones -> japhug
-    "ideo.4"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.5"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.6"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.7"        : "ideophone",                  # ideophones -> japhug
-    "Ideo.8"        : "ideophone",                  # ideophones -> japhug
-    "intj"          : "interjection",               # interjection
-    "interj"        : "interjection",               # interjection -> khaling
-    "Interj"        : "interjection",               # interjection -> japhug
-    "lnk"           : "linker",                     # linker
-    "Lnk"           : "linker",                     # linker -> japhug
-    "Loc"           : None,                         # ? -> japhug
-    "n"             : "noun",                       # noun
-    "N"             : "noun",                       # noun -> japhug
-    "N N"           : "noun",                       # noun -> japhug
-    "N.L"           : "noun",                       # noun -> japhug
-    "Nq"            : "noun",                       # noun -> japhug
-    "Np"            : "possessive pronouns",        # possessed nouns
-    "_poss._pref"   : "possessive pronouns",        # possessed nouns -> koyi
-    "NP"            : "possessive pronouns",        # possessed nouns -> japhug
-    "Posp"          : "possessive pronouns",        # possessed nouns -> japhug
-    "Post"          : "possessive pronouns",        # possessed nouns -> japhug
-    "Postp"          : "possessive pronouns",       # possessed nouns -> japhug
-    "neg"           : "negation",                   # negative
-    "num"           : "numeral",                    # number
-    "Num"           : "numeral",                    # number -> japhug
-    "Time.ord"      : "numeral",                    # number -> japhug
-    "Quant"         : "numeral",                    # number -> japhug
-    "prep"          : "preposition",                # preposition
-    "pro"           : "pronoun",                    # pronoun/pronominal
-    "Pro"           : "pronoun",                    # pronoun/pronominal -> japhug
-    "v"             : "verb",                       # verb
-    "V"             : "verb",                       # verb -> japhug
-    "vi"            : "intransitive verb",          # intransitive verb
-    "Vi"            : "intransitive verb",          # intransitive verb -> japhug
-    "Vi."           : "intransitive verb",          # intransitive verb -> japhug
-    "Vi-"           : "intransitive verb",          # intransitive verb -> japhug
-    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
-    "Vi.s"          : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "V.is"          : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "Vi.nh"         : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "Vi.n"          : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "VStat"         : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "V.s"           : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "Va"            : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "Vst"           : "stative intransitive verb",  # stative intransitive verb -> japhug
-    "vr"            : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
-    "vt"            : "transitive verb",            # transitive verb
-    "Vt"            : "transitive verb",            # transitive verb -> japhug
-    "vt/i"          : "bitransistive verb",         # ambitransitive verb
-    "Vt i"          : "bitransistive verb",         # ambitransitive verb -> japhug
-    "Vti"           : "bitransistive verb",         # ambitransitive verb -> japhug
-    "Vt.i"          : "bitransistive verb",         # ambitransitive verb -> japhug
-    "Vamb"          : "bitransistive verb",         # ambitransitive verb -> japhug
-    "Vl"            : "bitransistive verb",         # labial verb -> japhug
-    "Vlb"           : "bitransistive verb",         # labial verb -> japhug
-    "Vlab"          : "bitransistive verb",         # labial verb -> japhug
-    "B"             : None,                         # ? -> japhug
-    "B3"            : None,                         # ? -> japhug
-    "C"             : None,                         # ? -> japhug
-    "E"             : None,                         # ? -> japhug
-    "F"             : None,                         # ? -> japhug
-    "G"             : None,                         # ? -> japhug
-    "H"             : None,                         # ? -> japhug
-    "Q"             : None,                         # ? -> japhug
-    "T"             : None,                         # ? -> japhug
-    "Indef"         : None,                         # ? -> japhug
-    "k1-"           : None                          # ? -> japhug
+    "ADJ"       : "adjective",
+    "ADJR"      : "adjective",
+    "MDL"       : None,
+    "ADV"       : "adverb",
+    "ADVR"      : "adverb",
+    "NEG"       : "negation",
+    "AFFM"      : None,
+    "NEGimp"    : None,
+    "AL"        : None,
+    "NOM"       : None,
+    "AN"        : None,
+    "NOMR"      : None,
+    "APPL"      : None,
+    "n"         : "noun",
+    "ART"       : None,
+    "NUM"       : "numeral",
+    "ASP"       : None,
+    "AUX"       : None,
+    "PTCL"      : "particle",
+    "PART"      : None,
+    "CLASS"     : "classifier",
+    "PAUS"      : None,
+    "CMPAR"     : None,
+    "PL"        : None,
+    "CMPLR"     : None,
+    "POSS"      : "possessive pronouns",
+    "CNJ"       : "conjunction",
+    "POSSR"     : "possessive pronouns",
+    "COND"      : None,
+    "POST"      : None,
+    "CONF"      : None,
+    "PREP"      : "preposition",
+    "CONN"      : None,
+    "PRO"       : "pronoun",
+    "COP"       : None,
+    "PropN"     : None,
+    "DECL"      : None,
+    "Q"         : None,
+    "DEIC"      : None,
+    "QNT"       : None,
+    "DEM"       : None,
+    "DIR"       : None,
+    "REC"       : None,
+    "REL"       : None,
+    "EVID"      : None,
+    "RFLX"      : None,
+    "EXASP"     : None,
+    "RLR"       : None,
+    "EXIST"     : None,
+    "TAM"       : None,
+    "FOC"       : None,
+    "TIME"      : None,
+    "TNS"       : None,
+    "HORT"      : None,
+    "TR"        : None,
+    "ID"        : None,
+    "v"         : "verb",
+    "IMP"       : None,
+    "vi"        : "intransitive verb",
+    "INTJ"      : "interjection",
+    "vm"        : None,
+    "INT"       : None,
+    "ITR"       : None,
+    "vn"        : None,
+    "vp"        : None,
+    "vr"        : "reflexive verb",
+    "LIG"       : None,
+    "vt"        : "transitive verb",
+    "LOC"       : None,
+    "vt/i"      : "bitransitive verb"
 })
 
 ## Mapping between MDF markers and LMF semantic relation RelatedForm attribute value (input)
@@ -512,7 +568,6 @@ pdl_paradigmLabel = dict({
     "ir"        : "irregularity",
     "2sg"       : "2sg" # TODO -> japhug
 })
-
 
 ## Possible values allowed for 'sd' MDF marker
 sd_range = set([
@@ -617,78 +672,4 @@ lf_range = set([
     "Unit", # Single occurrence of headword
     "Vwhole", # Verb of the whole
     "Whole" # Whole of which the headword is a part
-])
-
-## Possible values allowed for 'ps' MDF marker
-ps_range = set([
-    "ADJ", "Adjective",
-    "ADJR", "Adjectivizer",
-    "MDL", "Modal",
-    "ADV", "Adverb",
-    "ADVR", "Adverbializer",
-    "NEG", "Negative",
-    "AFFM", "Affirmative",
-    "NEGimp", "Negative imperative",
-    "AL", "Alienable",
-    "NOM", "Nominative",
-    "AN", "Animate",
-    "NOMR", "Nominalizer",
-    "APPL", "Applicative",
-    "n", "Noun",
-    "ART", "Article",
-    "NUM", "Number",
-    "ASP", "Aspect",
-    "AUX", "Auxiliary",
-    "PTCL", "Particle",
-    "PART", "Participle",
-    "CLASS", "Classifier",
-    "PAUS", "Pause word",
-    "CMPAR", "Comparative",
-    "PL", "Plural",
-    "CMPLR", "Complementizer",
-    "POSS/P", "Possessive",
-    "CNJ", "Conjunction",
-    "POSSR", "Possessor",
-    "COND", "Conditional",
-    "POST", "Postposition",
-    "CONF", "Confirmative",
-    "PREP", "Preposition",
-    "CONN", "Connective",
-    "PRO", "Pronoun/pronominal",
-    "COP", "Copula",
-    "PropN", "Proper noun",
-    "DECL", "Declarative",
-    "Q", "Query/Question/Interrogative",
-    "DEIC", "Deictic (spatial & temp.)",
-    "QNT", "Quantifier",
-    "DEM", "Demonstrative",
-    "DIR", "Directional",
-    "REC", "Reciprocal",
-    "REL", "Relative(izer)",
-    "EVID", "Evidential",
-    "RFLX", "Reflexive",
-    "EXASP", "Exasperative",
-    "RLR", "Relater",
-    "EXIST", "Existential",
-    "TAM", "Tense-Aspect-Mood",
-    "FOC", "Focus marker",
-    "TIME", "Time expression",
-    "TNS", "Tense",
-    "HORT", "Hortative",
-    "TR", "Transitive(izer)",
-    "ID", "Idiom",
-    "v", "Verb/verbal"
-    "IMP", "Imperative",
-    "vi", "Intransitive verb",
-    "INTJ", "Interjection",
-    "vm", "Middle verb",
-    "INT/Q", "Interrogative (non-agentive passive)",
-    "ITR", "Intransitive(izer)",
-    "vn", "Non-active verb",
-    "vp", "Passive verb (agentive)",
-    "vr", "Reflexive/quasi-reflexive/intradirective",
-    "LIG", "Ligature",
-    "vt", "Transitive verb",
-    "LOC", "Locative",
-    "vt/i", "Ambitransitive verb"
 ])

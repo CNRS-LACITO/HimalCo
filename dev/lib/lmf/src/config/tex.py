@@ -12,10 +12,38 @@ tex_font = dict({
     REGIONAL    : lambda text: "\ipa{" + text + "}"
 })
 
+## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
+partOfSpeech_tex = dict({
+    "adjective"                 : "adj", # Leipzig
+    "adposition"                : "adp",
+    "adverb"                    : "adv", # Leipzip
+    "affix"                     : "aff",
+    "bitransistive verb"        : "vl",
+    "classifier"                : "clf", # Leipzip
+    "conjunction"               : "cnj",
+    "determiner"                : "det",
+    "ideophone"                 : "idph",
+    "impersonal verb"           : "vimp",
+    "interjection"              : "intj",
+    "intransitive verb"         : "vi",
+    "negation"                  : "neg", # Leipzip
+    "noun"                      : "n",
+    "numeral"                   : "num",
+    "particle"                  : "part",
+    "possessive pronouns"       : "poss", # Leipzig
+    "preposition"               : "prep",
+    "pronoun"                   : "pro",
+    "reflexive verb"            : "vr",
+    "transitive verb"           : "vt",
+    "verb"                      : "v"
+})
+
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
-def lmf_to_tex(lexical_entry, font=tex_font):
+def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_tex):
     """! @brief Function to convert LMF lexical entry information to be written into LaTeX commands.
     @param lexical_entry The Lexical Entry LMF instance to display.
+    @param font A Python dictionary describing fonts to use for different languages.
+    @param partOfSpeech_mapping A Python dictionary giving abbreviations for LMF part of speech values.
     @return A string representing the lexical entry in LaTeX format.
     """
     import output.tex as tex
@@ -25,7 +53,7 @@ def lmf_to_tex(lexical_entry, font=tex_font):
     # sound
     tex_entry += tex.format_audio(lexical_entry, font)
     # part of speech
-    tex_entry += tex.format_part_of_speech(lexical_entry, font)
+    tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_mapping)
     # definition/gloss and translation
     tex_entry += tex.format_definitions(lexical_entry, font)
     # TODO

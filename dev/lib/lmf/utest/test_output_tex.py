@@ -73,7 +73,7 @@ class TestTexFunctions(unittest.TestCase):
             "\\newpage" + EOL,
             "\\part*{-\ipa{ H h} -}" + EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
-            "\\textcolor{teal}{\\textsc{toto}}. \\textit{Status:} draft" + EOL,
+            "\\textit{Status:} draft" + EOL,
             "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
             "\lhead{\\firstmark}" + EOL,
             "\\rhead{\\botmark}" + EOL,
@@ -187,7 +187,7 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_part_of_speech(self):
         entry = LexicalEntry()
         entry.set_partOfSpeech("verb")
-        expected = "\\textcolor{teal}{\\textsc{verb}}. "
+        expected = "\\textit{v}. "
         self.assertEqual(format_part_of_speech(entry, font), expected)
         del entry
 

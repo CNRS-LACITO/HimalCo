@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.tex import lmf_to_tex, tex_font
+from config.tex import lmf_to_tex, tex_font, partOfSpeech_tex
 from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import open_read, open_write, EOL
 from utils.error_handling import OutputError, Warning
@@ -195,15 +195,19 @@ def format_audio(lexical_entry, font):
             result += " \\hspace{0.1cm}" + EOL
     return result
 
-def format_part_of_speech(lexical_entry, font):
+def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
     """! @brief Display part of speech in LaTeX format.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @param mapping A Python dictionary giving the mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout.
     @return A string representing part of speech in LaTeX format.
     """
     result = ""
     if lexical_entry.get_partOfSpeech() is not None:
-        result += "\\textcolor{teal}{\\textsc{" + lexical_entry.get_partOfSpeech() + "}}. "
+        try:
+            result += "\\textit{" + mapping[lexical_entry.get_partOfSpeech()] + "}. "
+        except KeyError:
+            print unicode(Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech(), lexical_entry.get_lexeme())))
     return result
 
 def format_definitions(lexical_entry, font):

@@ -76,16 +76,18 @@ class LexicalEntry():
         # Decrement the reference count on pointed objects
         self.__speaker = None
 
-    def set_partOfSpeech(self, part_of_speech):
+    def set_partOfSpeech(self, part_of_speech, range=partOfSpeech_range, mapping=ps_partOfSpeech):
         """! @brief Set grammatical category.
         @param part_of_speech The grammatical category to set.
+        @param range A Python set giving all possible values of part of speech LMF attribute.
+        @param mapping A Python dictionary giving the mapping between MDF and LMF values.
         @return LexicalEntry instance.
         """
         error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (str(part_of_speech), self.get_lexeme())
         # Check part of speech type
         check_attr_type(part_of_speech, [str, unicode], error_msg)
         # Check range of part of speech value (also try with converted value from MDF to LMF)
-        value = check_attr_range(str(part_of_speech), partOfSpeech_range, error_msg, mapping=ps_partOfSpeech)
+        value = check_attr_range(str(part_of_speech), range, error_msg, mapping)
         self.partOfSpeech = value
         return self
 
