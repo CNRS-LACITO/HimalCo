@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, ps_partOfSpeech
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ps_partOfSpeech
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 
@@ -182,4 +182,4 @@ partOfSpeech2tex.update({
 })
 
 def lmf2tex(lexical_entry, font):
-    return lmf_to_tex(lexical_entry, font, partOfSpeech_mapping=partOfSpeech2tex)
+    return lmf_to_tex(lexical_entry, font, partOfSpeech_mapping=partOfSpeech2tex, languages=[VERNACULAR, FRENCH, NATIONAL])

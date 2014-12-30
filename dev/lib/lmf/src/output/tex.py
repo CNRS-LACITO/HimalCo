@@ -210,15 +210,16 @@ def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
             print unicode(Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech(), lexical_entry.get_lexeme())))
     return result
 
-def format_definitions(lexical_entry, font):
+def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     """! @brief Glosses are supplanted by definitions.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @param languages A list of languages to consider for definitions and glosses (all by default).
     @return A string representing glosses and definitions in LaTeX format.
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for language in [VERNACULAR, ENGLISH, NATIONAL, REGIONAL]:
+        for language in languages:
             if len(sense.find_definitions(language)) != 0:
                 for definition in sense.find_definitions(language):
                     if language == VERNACULAR:

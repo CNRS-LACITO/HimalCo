@@ -39,11 +39,12 @@ partOfSpeech_tex = dict({
 })
 
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
-def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_tex):
+def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_tex, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     """! @brief Function to convert LMF lexical entry information to be written into LaTeX commands.
     @param lexical_entry The Lexical Entry LMF instance to display.
     @param font A Python dictionary describing fonts to use for different languages.
     @param partOfSpeech_mapping A Python dictionary giving abbreviations for LMF part of speech values.
+    @param languages A list of languages to consider for LaTeX layout (all by default).
     @return A string representing the lexical entry in LaTeX format.
     """
     import output.tex as tex
@@ -55,7 +56,7 @@ def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_t
     # part of speech
     tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_mapping)
     # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font)
+    tex_entry += tex.format_definitions(lexical_entry, font, languages)
     # TODO
     tex_entry += tex.format_lt(lexical_entry, font)
     tex_entry += tex.format_sc(lexical_entry, font)
