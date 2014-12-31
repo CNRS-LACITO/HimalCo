@@ -164,22 +164,22 @@ class Lexicon():
             """
             for i in range(min(len(x), len(y))):
                 try:
-                    if sort_order[x[0][i]] == sort_order[y[0][i]]:
+                    if sort_order[x[i]] == sort_order[y[i]]:
                         continue
                     # If the 1st one is lower than the 2nd one, its rank is decremented
-                    if sort_order[x[0][i]] < sort_order[y[0][i]]:
+                    if sort_order[x[i]] < sort_order[y[i]]:
                         return -1
                     # If the 1st one is greater than the 2nd one, its rank is incremented
-                    elif sort_order[x[0][i]] > sort_order[y[0][i]]:
+                    elif sort_order[x[i]] > sort_order[y[i]]:
                         return 1
                 # Handle other characters
                 except KeyError:
-                    print unicode(Warning("Cannot compare " + x[0][i] + " and " + y[0][i]))
-                    if x[0][i] == y[0][i]:
+                    print unicode(Warning("Cannot compare " + x[i] + " and " + y[i]))
+                    if x[i] == y[i]:
                         continue
-                    if x[0][i] < y[0][i]:
+                    if x[i] < y[i]:
                         return -1
-                    elif x[0][i] > y[0][i]:
+                    elif x[i] > y[i]:
                         return 1
             # If both strings do not have the same length, they do not equal => the smallest string is the shortest one
             if len(x) < len(y):
@@ -196,7 +196,7 @@ class Lexicon():
         else:
             # sorted(iterable, cmp, key, reverse)
             # list.sort(cmp, key, reverse)
-            items_and_entries.sort(cmp=compare)
+            items_and_entries.sort(cmp=compare, key=lambda l: l[0])
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
         return sorted_entries

@@ -44,7 +44,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
             current_character = ''
-            for lexical_entry in lexicon.sort_lexical_entries(sort_order=sort_order):
+            sorted_entries = lexicon.sort_lexical_entries(sort_order=sort_order)
+            for lexical_entry in sorted_entries:
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
