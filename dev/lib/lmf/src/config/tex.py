@@ -14,28 +14,51 @@ tex_font = dict({
 
 ## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
 partOfSpeech_tex = dict({
-    "adjective"                 : "adj", # Leipzig
-    "adposition"                : "adp",
-    "adverb"                    : "adv", # Leipzip
-    "affix"                     : "aff",
-    "bitransistive verb"        : "vl",
-    "classifier"                : "clf", # Leipzip
-    "conjunction"               : "cnj",
-    "determiner"                : "det",
-    "ideophone"                 : "idph",
-    "impersonal verb"           : "vimp",
-    "interjection"              : "intj",
-    "intransitive verb"         : "vi",
-    "negation"                  : "neg", # Leipzip
-    "noun"                      : "n",
-    "numeral"                   : "num",
-    "particle"                  : "part",
-    "possessive pronouns"       : "poss", # Leipzig
-    "preposition"               : "prep",
-    "pronoun"                   : "pro",
-    "reflexive verb"            : "vr",
-    "transitive verb"           : "vt",
-    "verb"                      : "v"
+    "adjective"                     : "adj", # Leipzig, MDF
+    "adposition"                    : "adp",
+    "adverb"                        : "adv", # Leipzip, MDF
+    "affirmative particle"          : "affm", # MDF
+    "affix"                         : "aff",
+    "article"                       : "art", # MDF
+    "auxiliary"                     : "aux", # MDF
+    "bitransistive verb"            : "vl", # japhug
+    "classifier"                    : "clf", # Leipzip, MDF -> CLASS
+    "comparative particle"          : "cmpar", # MDF
+    "conditional particle"          : "cond", # MDF
+    "conjunction"                   : "cnj", # MDF
+    "coordinating conjunction"      : "lnk", # MDF
+    "declarative punctuation"       : "decl", # MDF
+    "demonstrative determiner"      : "dem", # MDF
+    "determiner"                    : "det",
+    "existential pronoun"           : "exist", # MDF
+    "ideophone"                     : "idph", # japhug
+    "impersonal verb"               : "vimp",
+    "indefinite determiner"         : "indef", # japhug
+    "interjection"                  : "intj", # MDF
+    "interrogative determiner"      : "int", # MDF
+    "interrogative particle"        : "q", # MDF
+    "intransitive verb"             : "vi", # MDF
+    "modal"                         : "mdl", # MDF
+    "negation"                      : "neg", # Leipzip, MDF
+    "negative particle"             : "neg", # Leipzip, MDF
+    "noun"                          : "n", # MDF
+    "numeral"                       : "num", # MDF
+    "particle"                      : "ptcl", # MDF
+    "participle adjective"          : "part", # MDF
+    "possessive pronoun"            : "poss", # Leipzig, MDF
+    "possessive relative pronoun"   : "possr", # MDF
+    "postposition"                  : "post", # MDG
+    "preposition"                   : "prep", # MDF
+    "presentative pronoun"          : "loc", # MDF
+    "pronoun"                       : "pro", # MDF
+    "proper noun"                   : "propn", # MDF
+    "reciprocal pronoun"            : "rec", # MDF
+    "reflexive determiner"          : "rflx", # MDF
+    "reflexive verb"                : "vr", # MDF
+    "relative determiner"           : "rel", # MDF
+    "time noun"                     : "time", # MDF
+    "transitive verb"               : "vt", # MDF
+    "verb"                          : "v" # MDF
 })
 
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)

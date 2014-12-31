@@ -71,57 +71,62 @@ ps2partOfSpeech.update({
     "ideo"          : "ideophone",                  # ideophones
     "intj"          : "interjection",               # interjection
     "interj"        : "interjection",               # interjection -> khaling
-    "lnk"           : None,                         # linker
+    "lnk"           : "coordinating conjunction",   # linker
     "n"             : "noun",                       # noun
-    "Np"            : None,                         # possessed nouns
-    "_poss._pref"   : None,                         # possessed nouns -> koyi
+    "Np"            : "possessed noun",             # possessed nouns
+    "_poss._pref"   : "possessed noun",             # possessed nouns -> koyi
     "neg"           : "negation",                   # negative
     "num"           : "numeral",                    # number
     "prep"          : "preposition",                # preposition
     "pro"           : "pronoun",                    # pronoun/pronominal
-    "v"             : "verb",                       # verb
-    "vi"            : "intransitive verb",          # intransitive verb
-    "vi.s"          : None,                         # stative intransitive verb
-    "vr"            : "reflexive verb",             # reflexive/quasi-reflexive/intradirective verb
-    "vt"            : "transitive verb",            # transitive verb
-    "vt/i"          : "bitransistive verb",         # ambitransitive verb: labial verb
+    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
     # japhug
     "cl"            : "classifier",                 # classifier
     "conj"          : "conjunction",                # conjunction
-    "expression"    : None,                         #
+    "expression"    : "expression",                 #
     "idph"          : "ideophone",                  # ideophones
-    "idph.1"        : "ideophone",                  # ideophones
-    "idph.2"        : "ideophone",                  # ideophones
-    "idph.3"        : "ideophone",                  # ideophones
-    "idph.4"        : "ideophone",                  # ideophones
-    "idph.5"        : "ideophone",                  # ideophones
-    "idph.6"        : "ideophone",                  # ideophones
-    "idph.7"        : "ideophone",                  # ideophones
-    "idph.8"        : "ideophone",                  # ideophones
+    "idph.1"        : "ideophone.1",                # ideophones
+    "idph.2"        : "ideophone.2",                # ideophones
+    "idph.3"        : "ideophone.3",                # ideophones
+    "idph.4"        : "ideophone.4",                # ideophones
+    "idph.5"        : "ideophone.5",                # ideophones
+    "idph.6"        : "ideophone.6",                # ideophones
+    "idph.7"        : "ideophone.7",                # ideophones
+    "idph.8"        : "ideophone.8",                # ideophones
     "n N"           : "noun",                       # noun
     "nq"            : "noun",                       # noun
-    "np"            : None,                         # possessed nouns
-    "nP"            : None,                         # possessed nouns
-    "Posp"          : None,                         # possessed nouns
-    "Post"          : None,                         # possessed nouns
-    "postp"         : None,                         # possessed nouns
+    "np"            : "possessed noun",             # possessed nouns
+    "nP"            : "possessed noun",             # possessed nouns
+    "Posp"          : "possessed noun",             # possessed nouns
+    "Post"          : "possessed noun",             # possessed nouns
+    "postp"         : "possessed noun",             # possessed nouns
     "quant"         : "numeral",                    # number
     "part"          : "particle",                   # discourse particle
     "Part"          : "particle",                   # discourse particle
     "vi-"           : "intransitive verb",          # intransitive verb
-    "vinh"          : None,                         # stative intransitive verb
-    "vStat"         : None,                         # stative intransitive verb
-    "vst"           : None,                         # stative intransitive verb
-    "vs"            : None,                         # stative intransitive verb
+    "vinh"          : "stative intransitive verb",  # stative intransitive verb
+    "vStat"         : "stative intransitive verb",  # stative intransitive verb
+    "vst"           : "stative intransitive verb",  # stative intransitive verb
+    "vs"            : "stative intransitive verb",  # stative intransitive verb
     "vl"            : "bitransistive verb",         # labial verb
     "vlb"           : "bitransistive verb",         # labial verb
     "vlab"          : "bitransistive verb",         # labial verb
-    "T"             : None,                         # ?
-    "indef"         : None                          # undefined
+    "T"             : "time noun",                  # ?
+    "indef"         : "indefinite determiner"       # ?
 })
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute
 partOfSpeech_range.update([
+    "ideophone.1",
+    "ideophone.2",
+    "ideophone.3",
+    "ideophone.4",
+    "ideophone.5",
+    "ideophone.6",
+    "ideophone.7",
+    "ideophone.8",
+    "possessed noun",
+    "stative intransitive verb"
 ])
 
 ## Functions to process some MDF fields (input)
@@ -176,8 +181,16 @@ order.insert(1, "sf")
 ## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
 partOfSpeech2tex = partOfSpeech_tex
 partOfSpeech2tex.update({
-    "ideophone"     : "idph",
-    "indefinite"    : "indf" # Leipzip
+    "ideophone.1"               : "idph.1",
+    "ideophone.2"               : "idph.2",
+    "ideophone.3"               : "idph.3",
+    "ideophone.4"               : "idph.4",
+    "ideophone.5"               : "idph.5",
+    "ideophone.6"               : "idph.6",
+    "ideophone.7"               : "idph.7",
+    "ideophone.8"               : "idph.8",
+    "possessed noun"            : "np",
+    "stative intransitive verb" : "vi.s"
 })
 
 ## Functions to process some LaTeX fields (output)

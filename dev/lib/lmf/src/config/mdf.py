@@ -437,77 +437,78 @@ ps_range = set([
 ])
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
+# Source: http://www.isocat.org/rest/dcs/119
 ps_partOfSpeech = dict({
-    "ADJ"       : "adjective",
-    "ADJR"      : "adjective",
-    "MDL"       : None,
-    "ADV"       : "adverb",
-    "ADVR"      : "adverb",
-    "NEG"       : "negation",
-    "AFFM"      : None,
+    "ADJ"       : "adjective", # http://www.isocat.org/datcat/DC-1230
+    "ADJR"      : "adjective", # http://www.isocat.org/datcat/DC-1230
+    "MDL"       : "modal", # http://www.isocat.org/datcat/DC-1329
+    "ADV"       : "adverb", # http://www.isocat.org/datcat/DC-1232
+    "ADVR"      : "adverb", # http://www.isocat.org/datcat/DC-1232
+    "NEG"       : "negative particle", # http://www.isocat.org/datcat/DC-1894
+    "AFFM"      : "affirmative particle", # http://www.isocat.org/datcat/DC-1918
     "NEGimp"    : None,
     "AL"        : None,
     "NOM"       : None,
     "AN"        : None,
     "NOMR"      : None,
     "APPL"      : None,
-    "n"         : "noun",
-    "ART"       : None,
-    "NUM"       : "numeral",
+    "n"         : "noun", # http://www.isocat.org/datcat/DC-1333
+    "ART"       : "article", # http://www.isocat.org/datcat/DC-1892
+    "NUM"       : "numeral", # http://www.isocat.org/datcat/DC-1334
     "ASP"       : None,
-    "AUX"       : None,
-    "PTCL"      : "particle",
-    "PART"      : None,
-    "CLASS"     : "classifier",
+    "AUX"       : "auxiliary", #  http://www.isocat.org/datcat/DC-1244
+    "PTCL"      : "particle", # http://www.isocat.org/datcat/DC-1342
+    "PART"      : "participle adjective", # http://www.isocat.org/datcat/DC-1598
+    "CLASS"     : "classifier", # http://www.isocat.org/datcat/DC-2345
     "PAUS"      : None,
     "CMPAR"     : None,
     "PL"        : None,
-    "CMPLR"     : None,
-    "POSS"      : "possessive pronouns",
-    "CNJ"       : "conjunction",
-    "POSSR"     : "possessive pronouns",
-    "COND"      : None,
-    "POST"      : None,
+    "CMPLR"     : "comparative particle", # http://www.isocat.org/datcat/DC-1922
+    "POSS"      : "possessive pronoun", # http://www.isocat.org/datcat/DC-1359
+    "CNJ"       : "conjunction", # http://www.isocat.org/datcat/DC-1260
+    "POSSR"     : "possessive relative pronoun", # http://www.isocat.org/datcat/DC-3005
+    "COND"      : "conditional particle", # http://www.isocat.org/datcat/DC-2230
+    "POST"      : "postposition", # http://www.isocat.org/datcat/DC-1360
     "CONF"      : None,
-    "PREP"      : "preposition",
+    "PREP"      : "preposition", # http://www.isocat.org/datcat/DC-1366
     "CONN"      : None,
-    "PRO"       : "pronoun",
+    "PRO"       : "pronoun", # http://www.isocat.org/datcat/DC-1370
     "COP"       : None,
-    "PropN"     : None,
-    "DECL"      : None,
-    "Q"         : None,
+    "PropN"     : "proper noun", # http://www.isocat.org/datcat/DC-1371
+    "DECL"      : "declarative punctuation", # http://www.isocat.org/datcat/DC-2086
+    "Q"         : "interrogative particle", # http://www.isocat.org/datcat/DC-1921
     "DEIC"      : None,
     "QNT"       : None,
-    "DEM"       : None,
+    "DEM"       : "demonstrative determiner", # http://www.isocat.org/datcat/DC-1269
     "DIR"       : None,
-    "REC"       : None,
-    "REL"       : None,
+    "REC"       : "reciprocal pronoun", # http://www.isocat.org/datcat/DC-1924
+    "REL"       : "relative determiner", # http://www.isocat.org/datcat/DC-1379
     "EVID"      : None,
-    "RFLX"      : None,
+    "RFLX"      : "reflexive determiner", # http://www.isocat.org/datcat/DC-1377
     "EXASP"     : None,
     "RLR"       : None,
-    "EXIST"     : None,
+    "EXIST"     : "existential pronoun", # http://www.isocat.org/datcat/DC-3012
     "TAM"       : None,
     "FOC"       : None,
-    "TIME"      : None,
+    "TIME"      : "time noun", # http://www.isocat.org/datcat/DC-3855
     "TNS"       : None,
     "HORT"      : None,
     "TR"        : None,
     "ID"        : None,
-    "v"         : "verb",
+    "v"         : "verb", # http://www.isocat.org/datcat/DC-1424
     "IMP"       : None,
-    "vi"        : "intransitive verb",
-    "INTJ"      : "interjection",
+    "vi"        : "intransitive verb", # http://www.isocat.org/datcat/DC-1322
+    "INTJ"      : "interjection", # http://www.isocat.org/datcat/DC-1318
     "vm"        : None,
-    "INT"       : None,
+    "INT"       : "interrogative determiner", # http://www.isocat.org/datcat/DC-1320
     "ITR"       : None,
     "vn"        : None,
     "vp"        : None,
-    "vr"        : "reflexive verb",
+    "vr"        : "reflexive verb", # http://www.isocat.org/datcat/DC-5592
     "LIG"       : None,
-    "vt"        : "transitive verb",
-    "LOC"       : None,
-    "vt/i"      : "bitransitive verb"
+    "vt"        : "transitive verb", # http://www.isocat.org/datcat/DC-1405
+    "LOC"       : "presentative pronoun", # http://www.isocat.org/datcat/DC-3015
+    "vt/i"      : "bitransitive verb" # http://www.isocat.org/datcat/DC-1275
 })
 
 ## Mapping between MDF markers and LMF semantic relation RelatedForm attribute value (input)
