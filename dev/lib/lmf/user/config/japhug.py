@@ -185,7 +185,7 @@ partOfSpeech2tex.update({
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
     lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
-    result = "\\vspace{1cm} \\hspace{-1cm} "
+    result = "\\hspace{-1cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -258,16 +258,15 @@ def format_examples(lexical_entry, font):
     result = ""
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
-            result += "\\begin{exe}" + EOL
+            result += u"\u00B6 "
             for example in context.find_written_forms(VERNACULAR):
-                result += "\\sn " + font[VERNACULAR](example) + EOL
+                result += font[VERNACULAR](example) + EOL
             for example in context.find_written_forms(ENGLISH):
-                result += "\\trans " + example + EOL
+                result += example + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += "\\trans \\textit{" + font[NATIONAL](format_font(example)) + "}" + EOL
+                result += "\\textit{" + font[NATIONAL](format_font(example)) + "}" + EOL
             for example in context.find_written_forms(REGIONAL):
-                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
-            result += "\\end{exe}" + EOL
+                result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
 def format_usage_notes(lexical_entry, font):
