@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ps_partOfSpeech
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ENGLISH, REGIONAL, ps_partOfSpeech
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
@@ -140,16 +140,16 @@ def process_audio(lexical_entry):
 
 mdf2lmf = dict(mdf_lmf)
 mdf2lmf.update({
-    "hbf"       : lambda hbf, lexical_entry: lexical_entry.set_bibliography(hbf),
-    "wav"       : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
-    "wav8"      : lambda wav8, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "mp3/8_" + wav8 + ".wav", quality="low", audio_file_format="wav"),
-    "a"         : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
-    "ge"        : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
-    "lx"        : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
-    "se"        : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
-    "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
-    "cf"        : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"]),
-    "ps"        : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps, range=partOfSpeech_range, mapping=ps2partOfSpeech)
+    "hbf"   : lambda hbf, lexical_entry: lexical_entry.set_bibliography(hbf),
+    "wav"   : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
+    "wav8"  : lambda wav8, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "mp3/8_" + wav8 + ".wav", quality="low", audio_file_format="wav"),
+    "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
+    "ge"    : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
+    "lx"    : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
+    "se"    : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
+    "xv"    : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
+    "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"]),
+    "ps"    : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps, range=partOfSpeech_range, mapping=ps2partOfSpeech)
 })
 
 lmf2mdf = dict(lmf_mdf)
@@ -215,6 +215,87 @@ def format_notes(lexical_entry, font):
         result += "\mytextsc{" + note + "} "
     return result
 
+def format_font(text):
+    """Replace '\{xxx}' and '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
+    """
+    return text.replace("\\{", "{").replace("{", "\\ipa{")
+
+def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for language in languages:
+            if len(sense.find_definitions(language)) != 0:
+                for definition in sense.find_definitions(language):
+                    if language == VERNACULAR:
+                        result += font[VERNACULAR](definition) + ". "
+                    elif language == NATIONAL:
+                        result += font[NATIONAL](format_font(definition)) + ". "
+                    elif language == REGIONAL:
+                        result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
+                    else:
+                        result += definition + ". "
+            elif len(sense.find_glosses(language)) != 0:
+                for gloss in sense.find_glosses(language):
+                    if language == VERNACULAR:
+                        result += font[VERNACULAR](gloss) + ". "
+                    elif language == NATIONAL:
+                        result += font[NATIONAL](format_font(gloss)) + ". "
+                    elif language == REGIONAL:
+                        result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
+                    else:
+                        result += gloss + ". "
+            if len(sense.get_translations(language)) != 0:
+                for translation in sense.get_translations(language):
+                    if language == NATIONAL:
+                        result += font[NATIONAL](translation) + ". "
+                    elif language == REGIONAL:
+                        result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
+                    else:
+                        result += translation + ". "
+    return result
+
+def format_examples(lexical_entry, font):
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for context in sense.get_contexts():
+            result += "\\begin{exe}" + EOL
+            for example in context.find_written_forms(VERNACULAR):
+                result += "\\sn " + font[VERNACULAR](example) + EOL
+            for example in context.find_written_forms(ENGLISH):
+                result += "\\trans " + example + EOL
+            for example in context.find_written_forms(NATIONAL):
+                result += "\\trans \\textit{" + font[NATIONAL](format_font(example)) + "}" + EOL
+            for example in context.find_written_forms(REGIONAL):
+                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+            result += "\\end{exe}" + EOL
+    return result
+
+def format_usage_notes(lexical_entry, font):
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for usage in sense.find_usage_notes(language=VERNACULAR):
+            result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
+        for usage in sense.find_usage_notes(language=ENGLISH):
+            result += "\\textit{Usage:} " + usage + " "
+        for usage in sense.find_usage_notes(language=NATIONAL):
+            result += "\\textit{" + font[NATIONAL](format_font(usage)) + "} "
+        for usage in sense.find_usage_notes(language=REGIONAL):
+            result += "\\textit{[" + font[REGIONAL](usage) + "]} "
+    return result
+
+def format_encyclopedic_informations(lexical_entry, font):
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for information in sense.find_encyclopedic_informations(language=VERNACULAR):
+            result += font[VERNACULAR](information) + " "
+        for information in sense.find_encyclopedic_informations(language=ENGLISH):
+            result += information + " "
+        for information in sense.find_encyclopedic_informations(language=NATIONAL):
+            result += font[NATIONAL](format_font(information)) + " "
+        for information in sense.find_encyclopedic_informations(language=REGIONAL):
+            result += "\\textit{[" + font[REGIONAL](information) + "]} "
+    return result
+
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
     import output.tex as tex
@@ -228,13 +309,13 @@ def lmf2tex(lexical_entry, font):
     # grammatical notes
     tex_entry += format_notes(lexical_entry, font)
     # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font, languages=[VERNACULAR, FRENCH, NATIONAL])
+    tex_entry += format_definitions(lexical_entry, font, languages=[VERNACULAR, FRENCH, NATIONAL])
     # example
-    tex_entry += tex.format_examples(lexical_entry, font)
+    tex_entry += format_examples(lexical_entry, font)
     # usage note
-    tex_entry += tex.format_usage_notes(lexical_entry, font)
+    tex_entry += format_usage_notes(lexical_entry, font)
     # encyclopedic information
-    tex_entry += tex.format_encyclopedic_informations(lexical_entry, font)
+    tex_entry += format_encyclopedic_informations(lexical_entry, font)
     # restriction
     tex_entry += tex.format_restrictions(lexical_entry, font)
     # synonym, antonym, morphology, related form
@@ -254,8 +335,6 @@ def lmf2tex(lexical_entry, font):
     # date
     tex_entry += tex.format_date(lexical_entry, font)
     # Handle reserved characters: \ { } $ # & _ ^ ~ %
-    if tex_entry.find("{") != -1:
-        tex_entry = tex.format_font(tex_entry)
     if tex_entry.find("@") != -1:
         tex_entry = tex.format_pinyin(tex_entry)
     if tex_entry.find("#") != -1:
