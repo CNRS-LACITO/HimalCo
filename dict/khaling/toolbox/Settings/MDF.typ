@@ -876,6 +876,12 @@
 \CharStyle
 \-mkr
 
+\+mkr x-
+\lng vernacular
+\mkrOverThis lx
+\CharStyle
+\-mkr
+
 \+mkr xe
 \nam Example free trans. (E)
 \desc English translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
