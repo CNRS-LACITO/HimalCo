@@ -10,6 +10,9 @@
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
+\usepackage{tikz}
+%\usetikzlibrary{shapes.geometric, arrows}
+\usetikzlibrary{mindmap}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -30,11 +33,13 @@
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
-\newcommand{\ro}{$\Sigma$} 
+%\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+%\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+%\tikzstyle{arrow} = [thick,->,>=stealth]
 
  \begin{document} 
  \title{ The spontaneous-autobenefactive prefix in Japhug Rgyalrong\footnote{Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{fact} factual/assumptive, \textsc{infr} inferential evidential, \textsc{hort} hortative, \textsc{inv} inverse, \textsc{pres} egorphoric present, \textsc{sens} sensory  evidential, \textsc{vert} vertitive. }}
- %Acknowledgements will be added after editorial decision.%Nathan W. Hill}
+ %Acknowledgements will be added after editorial decision.%Nathan W. Hill, Alexis Michaud, Dmitry Nikolaev, Pavel Ozerov, Vladimir Plungian, Roland Pooth}
   
 \author{Guillaume Jacques}
 \maketitle
@@ -149,6 +154,8 @@ Finally, examples \ref{ex:kunWrAZia} and \ref{ex:tuixiu.nWBzuta} show that the t
 \end{exe} 
 
 The examples above prove that transitive verb forms with the autobenefactive / spontaneous present all the morphological  properties of transitive verbs: the prefix \ipa{nɯ--} has no influence on verb transitivity.
+
+cf Indo-European, eg \citet[19]{pooth14diathesen}
 
 \section{Position in the template}
 The Japhug verbal template follows the general structure in Table \ref{tab:template:derivational} (see \citealt{jacques12incorp} and \citealt{jacques13harmonization}). 
@@ -448,10 +455,17 @@ type.of.mushroom \textsc{comit} Matsutake \textsc{nmlz}:S/A-be.like \textsc{pfv}
  (\ipa{zwɤrqhɤjmɤɣ} 18, 19)
  \end{exe}
 
+%iɕqha tɤ-jwaʁ χsɯ-mpɕar nɯ nɯtɕu pjɤ-kɤ<nɯ>ta-ci.
+%
 
-The permansive use of \ipa{nɯ--}, though apparently unrelated to the two previous meanings of this prefix is actually semantically very close to the spontaneous use. 
+The permansive use of \ipa{nɯ--}, 
 
-The spontaneous expresses an action \textit{taking place} independently of any external cause, while the   permansive focuses on the \textit{maintenance} or \textit{continuity} of a state or action independently of any external cause.
+%sebe in Russian А время, а время, Не убавляет ход,
+%А время, а время, Идёт себе, идёт
+
+%В темноте не разглядел вор тигра и подумал, что это корова, лежит себе и радуется
+
+%The spontaneous expresses an action \textit{taking place} independently of any external cause, while the   permansive focuses on the \textit{maintenance} or \textit{continuity} of a state or action independently of any external cause.
 
 
 \section{Autobenefactive and other derivations}
@@ -592,6 +606,63 @@ water-\textsc{erg} \textsc{inv/2}-sink-\textsc{1sg:S/O:pst}\\
 Such an example may suggest that the primary function of the anticausative was that of spontaneous action, and not intransitivization. In this view, Japhug and other Rgyalrongic languages have reshaped the original spontaneous derivation into two distinct morphological processes with specialized semantics, which most Sino-Tibetan languages have only preserved the spontaneous derivation in is more reduced anticausative function. 
 
 If this hypothesis is correct, more examples such as Khaling \ipa{|plum|} vs \ipa{|blum|}, with voicing alternation without intransitivation, should be discovered in morphologically rich languages of the family.
+
+\subsection{The Middle Domain}
+%\begin{tikzpicture}[node distance=2cm] 
+%
+%\node (start) [startstop] {Start};
+%\node (pro1) [process, below of=start] {Process 1};
+%
+%\end{tikzpicture}
+
+
+
+\centering\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40, 
+   level 1/.append style={level distance=5cm,sibling angle=90},
+     %level 1 concept/.append style={level distance=130,sibling angle=30},
+    level 2/.append style={level distance=3cm,sibling angle=30},]  
+%  extra concept/.append style={color=blue!50,text=black}]
+  \begin{scope}[mindmap, concept color=blue!30]
+    \node [concept]  at (-2,6) {Reflexive \ipa{ʑɣɤ--}}
+    ;
+  \end{scope}
+  
+\begin{scope}[mindmap, concept color=purple!40]
+    \node [concept] at (0,0) {Autobenefactive \ipa{nɯ--}} 
+      child { node {Permansive}}
+      child { node {Spontaneous}
+      		child { node {Protasis of conditionals}}
+      		child { node {Mistake}}
+      		child { node {Against volition}}
+		}
+      child { node {Grooming / Possessed P}}
+;
+  \end{scope}
+  
+\begin{scope}[mindmap, concept color=orange!50]
+    \node [concept] at (7,6) {Anticausative}
+;
+\end{scope}
+
+\begin{scope}[mindmap, concept color=teal!50]
+    \node [concept] at (5,11) {Passive \ipa{a--}}
+      child [grow=-130]{ node {Reciprocal \ipa{a--} + \textsc{redp} }}
+;
+\end{scope}
+
+\begin{scope}[mindmap, concept color=yellow!50]
+    \node [concept] at (-3,-4) {Vertitive \ipa{nɯ--}}
+;
+\end{scope}
+
+
+%\begin{scope}[mindmap, concept color=green!50]
+%    \node [concept] at (9,15) {Antipassive     \ipa{sɤ--} / \ipa{rɤ--}} 
+%      child [grow=-90] { node {Anti-experiencer}} 
+%;
+%\end{scope}
+
+\end{tikzpicture}
 
 \section{Conclusion}
 The spontaneous-autobenefactive prefix \ipa{nɯ--} in Japhug has cognates in most Rgyalrongic languages. Further reasearch will be needed to determine to what extent the use of the cognate prefixes in the other languages are similar or different from that of Japhug \ipa{nɯ--}. In particular, it is unclear whether the permansive value of \ipa{nɯ--} is restricted to Japhug or found elsewhere, and whether the cognate prefixes have the same values in the imperative.
