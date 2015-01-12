@@ -197,6 +197,7 @@ $lettre =~ s/च्न/च्‌‍न/g;
 $lettre =~ s/च्च/च्‌‍च/g;
 $lettre =~ s/क्ल/क्‍ल/g;
 $lettre =~ s/प्ल/प्‍ल/g;
+$lettre =~ s/ल्ल/ल्‍ल/g;
 $lettre =~ s/अ्वा/अ\\skt\{्\}वा/g;
 $lettre =~ s/अ्य/अ\\skt\{्\}य/g;  
 $lettre =~ s/्ये/\\mgl\{्\}ये/g;
