@@ -296,6 +296,12 @@
 \CharStyle
 \-mkr
 
+\+mkr etzh
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr ev
 \nam Encyclopedic info. (v)
 \desc This field contains the vernacular description of any pertinent encyclopedic information related to the lexeme or headword, subentry, or sense. This is intended for use in a monolingual dictionary, but can be used in diglot and triglot dictionaries as well. Use capitalization and punctuation as needed.
