@@ -74,6 +74,8 @@ $lettre =~s/īu/िउ/g;
 $lettre =~s/iu/िउ/g;
 $lettre =~s/ēu/ेउ/g;
 $lettre =~s/eu/ेउ/g;
+$lettre =~s/ōu/ोउ/g;
+$lettre =~s/ou/ोउ/g;
 
 
 $lettre =~ s/̄i/̄इ/g;
@@ -198,6 +200,7 @@ $lettre =~ s/च्च/च्‌‍च/g;
 $lettre =~ s/क्ल/क्‍ल/g;
 $lettre =~ s/प्ल/प्‍ल/g;
 $lettre =~ s/ल्ल/ल्‍ल/g;
+$lettre =~ s/द्य/द्‍य/g;
 $lettre =~ s/अ्वा/अ\\skt\{्\}वा/g;
 $lettre =~ s/अ्य/अ\\skt\{्\}य/g;  
 $lettre =~ s/्ये/\\mgl\{्\}ये/g;
