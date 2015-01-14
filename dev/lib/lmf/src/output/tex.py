@@ -68,7 +68,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                         # Handle subentries
                         for related_form in lexical_entry.get_related_forms("subentry"):
                             if related_form.get_lexical_entry() is not None:
-                                tex_file.write(lmf2tex(related_form.get_lexical_entry(), font))
+                                tex_file.write("\hspace{0.5cm} " + lmf2tex(related_form.get_lexical_entry(), font))
                                 # Separate sub-entries from each others with a blank line
                                 tex_file.write(EOL)
                     except KeyError:
