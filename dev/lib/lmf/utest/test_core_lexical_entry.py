@@ -2,6 +2,7 @@
 
 from startup import *
 from core.lexical_entry import LexicalEntry
+from core.lexicon import Lexicon
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 from morphology.word_form import WordForm
@@ -1049,6 +1050,91 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.durationOfEffectiveSpeech, duration)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.externalReference, external_reference)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].audio.audioFileFormat, audio_file_format)
+
+    def test_is_subentry(self):
+        # Add subentries to the lexical entry
+        lexeme = "mn"
+        lexeme1 = "first"
+        lexeme2 = "second"
+        self.lexical_entry.set_lexeme(lexeme)
+        subentry1 = LexicalEntry().set_lexeme(lexeme1)
+        subentry2 = LexicalEntry().set_lexeme(lexeme2)
+        self.lexical_entry.create_and_add_related_form(lexeme1, "subentry")
+        self.lexical_entry.create_and_add_related_form(lexeme2, "subentry")
+        subentry1.create_and_add_related_form(lexeme, "main entry")
+        subentry2.create_and_add_related_form(lexeme, "main entry")
+        # Test "main entry" relation
+        self.assertTrue(subentry1.is_subentry())
+        self.assertTrue(subentry2.is_subentry())
+        self.assertFalse(self.lexical_entry.is_subentry())
+        # Release RelatedForm and LexicalEntry instances
+        del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
+        del subentry1, subentry2
+
+    def test_has_subentries(self):
+        # Add subentries to the lexical entry
+        lexeme = "mn"
+        lexeme1 = "first"
+        lexeme2 = "second"
+        self.lexical_entry.set_lexeme(lexeme)
+        subentry1 = LexicalEntry().set_lexeme(lexeme1)
+        subentry2 = LexicalEntry().set_lexeme(lexeme2)
+        self.lexical_entry.create_and_add_related_form(lexeme1, "subentry")
+        self.lexical_entry.create_and_add_related_form(lexeme2, "subentry")
+        subentry1.create_and_add_related_form(lexeme, "main entry")
+        subentry2.create_and_add_related_form(lexeme, "main entry")
+        # Test "subentry" relation
+        self.assertFalse(subentry1.has_subentries())
+        self.assertFalse(subentry2.has_subentries())
+        self.assertTrue(self.lexical_entry.has_subentries())
+        # Release RelatedForm and LexicalEntry instances
+        del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
+        del subentry1, subentry2
+
+    def test_get_subentries(self):
+        # Add subentries to the lexical entry
+        lexeme = "mn"
+        lexeme1 = "first"
+        lexeme2 = "second"
+        subentry1 = LexicalEntry().set_lexeme(lexeme1)
+        subentry2 = LexicalEntry().set_lexeme(lexeme2)
+        self.lexical_entry.create_and_add_related_form(lexeme1, "subentry")
+        self.lexical_entry.create_and_add_related_form(lexeme2, "subentry")
+        subentry1.create_and_add_related_form(lexeme, "main entry")
+        subentry2.create_and_add_related_form(lexeme, "main entry")
+        # Add entries to a lexicon
+        lexicon = Lexicon().add_lexical_entry(self.lexical_entry).add_lexical_entry(subentry1).add_lexical_entry(subentry2)
+        lexicon.check_cross_references()
+        # Test get subentries
+        self.assertListEqual(subentry1.get_subentries(), [])
+        self.assertListEqual(subentry2.get_subentries(), [])
+        self.assertEqual(set(self.lexical_entry.get_subentries()), set([subentry1, subentry2]))
+        # Release RelatedForm and LexicalEntry instances
+        del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
+        del subentry1, subentry2
+
+    def test_get_main_entry(self):
+        # Add subentries to the lexical entry
+        lexeme = "mn"
+        lexeme1 = "first"
+        lexeme2 = "second"
+        self.lexical_entry.set_lexeme(lexeme)
+        subentry1 = LexicalEntry().set_lexeme(lexeme1)
+        subentry2 = LexicalEntry().set_lexeme(lexeme2)
+        self.lexical_entry.create_and_add_related_form(lexeme1, "subentry")
+        self.lexical_entry.create_and_add_related_form(lexeme2, "subentry")
+        subentry1.create_and_add_related_form(lexeme, "main entry")
+        subentry2.create_and_add_related_form(lexeme, "main entry")
+        # Add entries to a lexicon
+        lexicon = Lexicon().add_lexical_entry(self.lexical_entry).add_lexical_entry(subentry1).add_lexical_entry(subentry2)
+        lexicon.check_cross_references()
+        # Test get main entry
+        self.assertIs(subentry1.get_main_entry(), self.lexical_entry)
+        self.assertIs(subentry2.get_main_entry(), self.lexical_entry)
+        self.assertIsNone(self.lexical_entry.get_main_entry())
+        # Release RelatedForm and LexicalEntry instances
+        del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
+        del subentry1, subentry2
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 

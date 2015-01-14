@@ -232,6 +232,14 @@ class Lexicon():
                     related_homonym_number = related_lexeme[-1]
                     related_lexeme = related_lexeme[:-1]
                 found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == related_lexeme)
+                # Remove duplicate subentries from check if any
+                if len(found_entry) == 2:
+                    if found_entry[0].is_subentry() and not found_entry[1].is_subentry():
+                        # Keep only the first subentry
+                        found_entry = found_entry[:1]
+                    elif not found_entry[0].is_subentry() and found_entry[1].is_subentry():
+                        # Keep only the second subentry
+                        found_entry = found_entry[1:]
                 if len(found_entry) < 1:
                     # No lexical entry with this lexeme exists
                     print unicode(Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme())))

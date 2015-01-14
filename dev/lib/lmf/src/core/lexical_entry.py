@@ -1003,6 +1003,44 @@ class LexicalEntry():
         self.lemma.set_audio(media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format)
         return self
 
+    def is_subentry(self):
+        """! @brief Check if this lexical entry is a subentry.
+        @return 'True' if it is a subentry, 'False' otherwise.
+        """
+        for related_form in self.get_related_forms():
+            # If one of the related form is a main entry, it means that the current lexical entry is a subentry
+            if related_form.get_semanticRelation() == "main entry":
+                return True
+        return False
+
+    def has_subentries(self):
+        """! @brief Check if this lexical entry has subentries.
+        @return 'True' if it has subentries, 'False' otherwise.
+        """
+        for related_form in self.get_related_forms():
+            # If one of the related form is a subentry, it means that the current lexical entry is a main entry
+            if related_form.get_semanticRelation() == "subentry":
+                return True
+        return False
+
+    def get_subentries(self):
+        """! @brief Get subentries of this lexical entry.
+        @return A Python list of LexicalEntry.
+        """
+        subentries = []
+        for related_form in self.get_related_forms():
+            if related_form.get_semanticRelation() == "subentry":
+                subentries.append(related_form.get_lexical_entry())
+        return subentries
+
+    def get_main_entry(self):
+        """! @brief If this lexical entry is a subentry, get its main entry.
+        @return A LexicalEntry if it exists, 'None' otherwise.
+        """
+        for related_form in self.get_related_forms():
+            if related_form.get_semanticRelation() == "main entry":
+                return related_form.get_lexical_entry()
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.
