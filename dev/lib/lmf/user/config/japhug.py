@@ -292,7 +292,7 @@ def format_usage_notes(lexical_entry, font):
         for usage in sense.find_usage_notes(language=ENGLISH):
             result += "\\textit{Usage:} " + usage + " "
         for usage in sense.find_usage_notes(language=NATIONAL):
-            result += "\\textit{" + font[NATIONAL](format_font(usage)) + "} "
+            result += "\\textit{NatUsage:} " + font[NATIONAL](format_font(usage)) + " "
         for usage in sense.find_usage_notes(language=REGIONAL):
             result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
