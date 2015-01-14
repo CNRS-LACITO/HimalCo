@@ -39,7 +39,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
         sort_order = dict([(c, ord(c)) for c in string.lowercase])
         up = dict([(c, ord(c) + 32) for c in string.uppercase])
         sort_order.update(up)
-        sort_order.update({'': 0})
+        sort_order.update({'':0, ' ':0})
     # For each element to write, get the corresponding LMF value
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
