@@ -310,6 +310,21 @@ def format_encyclopedic_informations(lexical_entry, font):
             result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
+def format_paradigms(lexical_entry, font):
+    result = ""
+    current_label = None
+    for paradigm in lexical_entry.get_paradigms():
+        if paradigm.get_paradigmLabel() is not None and paradigm.get_paradigm(language=VERNACULAR) is not None:
+            if paradigm.get_paradigmLabel() != current_label:
+                current_label = paradigm.get_paradigmLabel()
+                # Display label
+                result += "\\textit{" + current_label + ":} "
+            else:
+                # Just add semi-colomn
+                result += "; "
+            result += font[VERNACULAR](paradigm.get_paradigm(language=VERNACULAR)) + " "
+    return result
+
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
     import output.tex as tex
@@ -340,6 +355,7 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_etymology(lexical_entry, font)
     # paradigms
     tex_entry += tex.format_paradigms(lexical_entry, font)
+    tex_entry += format_paradigms(lexical_entry, font)
     # semantic domain
     tex_entry += tex.format_semantic_domains(lexical_entry, font)
     # source
