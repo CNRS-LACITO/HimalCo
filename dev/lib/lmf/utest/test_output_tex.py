@@ -71,7 +71,7 @@ class TestTexFunctions(unittest.TestCase):
             ]
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{-\ipa{ H h }-}" + EOL,
+            "\\section*{-\ipa{ H h }-} \hspace{1.4ex}" + EOL,
             "\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
             "\\textit{Status:} draft" + EOL,
@@ -100,7 +100,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{-\ipa{ H h }-}" + EOL,
+            "\\section*{-\ipa{ H h }-} \hspace{1.4ex}" + EOL,
             "\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,

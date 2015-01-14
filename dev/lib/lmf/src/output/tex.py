@@ -57,7 +57,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                             for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
                                 if int(value) == int(sort_order[current_character]):
                                     title += ' ' + key
-                            tex_file.write("\\section*{-\ipa{" + title + " }-}" + EOL)
+                            tex_file.write("\\section*{-\ipa{" + title + " }-} \hspace{1.4ex}" + EOL)
                             tex_file.write("\\pdfbookmark[1]{\ipa{" + title + " }}{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
                         tex_file.write("\markboth{" + font[VERNACULAR](lexical_entry.get_lexeme()) + "}{}" + EOL)
