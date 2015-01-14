@@ -126,7 +126,8 @@ partOfSpeech_range.update([
     "ideophone.7",
     "ideophone.8",
     "possessed noun",
-    "stative intransitive verb"
+    "stative intransitive verb",
+    "expression"
 ])
 
 ## Functions to process some MDF fields (input)
@@ -190,7 +191,8 @@ partOfSpeech2tex.update({
     "ideophone.7"               : "idph.7",
     "ideophone.8"               : "idph.8",
     "possessed noun"            : "np",
-    "stative intransitive verb" : "vi.s"
+    "stative intransitive verb" : "vi.s",
+    "expression"                : "expr"
 })
 
 ## Functions to process some LaTeX fields (output)
