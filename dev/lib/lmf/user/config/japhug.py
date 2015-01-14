@@ -53,7 +53,7 @@ ranks = dict({'':0,
     'ʑ':41,
     'ʕ':42, 'ʔ':42.1, # 42.1 -> khaling/koyi/thulung
     # Special characters
-    '¹':43.1, '²':43.2, '³':43.3, '⁴':43.4, ' ':43.5, '_':43.6, '-':43.7, ' ́':43.8})
+    '¹':43.1, '²':43.2, '³':43.3, '⁴':43.4, ' ':43.5, '_':43.6, '-':43.7})
 unicode_ranks = ({})
 for key in ranks.keys():
     unicode_ranks.update({key.decode(encoding='utf8'):ranks[key]})

@@ -162,6 +162,9 @@ class Lexicon():
         def compare(x, y):
             """Compare 2 elements between each other.
             """
+            # Before comparing, remove acute accents from strings if any
+            x = x.replace(u"\u0301", '')
+            y = y.replace(u"\u0301", '')
             for i in range(min(len(x), len(y))):
                 try:
                     if sort_order[x[i]] == sort_order[y[i]]:
