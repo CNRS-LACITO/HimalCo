@@ -41,7 +41,7 @@
 %\newfontfamily\sktfont2{Sanskrit 2003}
 %\newcommand{\nep}[1]{{\sktfont #1}} 
 \newcommand{\nep}[1]{ #1}
-\newcommand{\skt}[1]{{\sktfont #1}} 
+\newcommand{\skt}[1]{{\sktfont#1}} 
 \newcommand{\mgl}[1]{{\mangalfont#1}} 
 \newcommand{\gs}{अ\sktfont{्}}
 \newcommand{\ipa}[1]{{\phon #1}}
