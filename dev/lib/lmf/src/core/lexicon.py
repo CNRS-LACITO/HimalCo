@@ -156,7 +156,7 @@ class Lexicon():
     def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
         """! @brief Sort given items of lexical entries contained in the lexicon according to a certain order.
         @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
-        @param order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
+        @param sort_order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
         @return The sorted Python list of lexical entries.
         """
         # To access options

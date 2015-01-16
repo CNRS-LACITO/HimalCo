@@ -6,7 +6,7 @@ from startup import *
 import os
 
 # Import user customized configuration
-from khaling import mdf2lmf, lmf2mdf, order, lmf2tex, unicode_ranks
+from khaling import mdf2lmf, lmf2mdf, order, lmf2tex, unicode_ranks, items
 
 # Read MDF file and set lexicon identifier
 lexical_resource = lmf.read_mdf(user_path + "../../../../dict/khaling/toolbox/Dictionary.txt", mdf2lmf, id="khaling")
@@ -25,6 +25,7 @@ lmf.write_xml_lmf(lexical_resource, user_path + "dict_khaling/Dictionary.xml")
 
 # Write LaTeX file
 lmf.write_tex(lexical_resource, user_path + "dict_khaling/Dictionary.tex", preamble=user_path + "config/khaling.tex", lmf2tex=lmf2tex, sort_order=unicode_ranks)
+lmf.write_tex(lexical_resource, user_path + "dict_khaling/Dictionary-ge.tex", preamble=user_path + "config/khaling.tex", lmf2tex=lmf2tex, items=items)
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "dict_khaling/Dictionary.txt", lmf2mdf, order)

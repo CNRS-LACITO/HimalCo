@@ -6,8 +6,7 @@ from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
 
-FRENCH = "fra"
-AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
+AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
 
 ranks = dict({'':0,
     'A':1, 'a':1, 'æ':1.1,
@@ -46,6 +45,19 @@ ranks = dict({'':0,
 unicode_ranks = ({})
 for key in ranks.keys():
     unicode_ranks.update({key.decode(encoding='utf8'):ranks[key]})
+
+def get_nep(lexical_entry):
+    for form_representation in lexical_entry.get_form_representations():
+        if form_representation.get_variantForm() is not None and form_representation.get_type() == "orthography":
+            return font[VERNACULAR](form_representation.get_variantForm())
+    return lexical_entry.get_lexeme()
+def get_ge(lexical_entry):
+    for sense in lexical_entry.get_senses():
+        if len(sense.find_glosses(ENGLISH)) != 0:
+            return sense.find_glosses(ENGLISH)[0]
+    return "aaa"
+#items=lambda lexical_entry: get_nep(lexical_entry)
+items=lambda lexical_entry: get_ge(lexical_entry)
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps2partOfSpeech = ps_partOfSpeech
@@ -134,7 +146,7 @@ def lmf2tex(lexical_entry, font):
     # grammatical notes
     tex_entry += tex.format_notes(lexical_entry, font)
     # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font, languages=[VERNACULAR, FRENCH, NATIONAL])
+    tex_entry += tex.format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL])
     # example
     tex_entry += tex.format_examples(lexical_entry, font)
     # usage note
