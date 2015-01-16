@@ -378,10 +378,8 @@ def lmf2tex(lexical_entry, font):
     if tex_entry.find("^") != -1:
         tex_entry = tex_entry.replace('^', '\^')
     # Handle fonts
-    if tex_entry.find("fn:") != -1:
-        tex_entry = tex.format_fn(tex_entry)
-    if tex_entry.find("fv:") != -1:
-        tex_entry = tex.format_fv(tex_entry)
+    tex_entry = tex.format_fn(tex_entry, font)
+    tex_entry = tex.format_fv(tex_entry, font)
     # Special formatting
     if tex_entry.encode("utf8").find("°") != -1:
         tex_entry = tex.format_small_caps(tex_entry)

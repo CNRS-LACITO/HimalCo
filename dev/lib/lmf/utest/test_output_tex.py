@@ -127,13 +127,19 @@ class TestTexFunctions(unittest.TestCase):
 
     def test_format_fn(self):
         input = "textfn:this fn:but not this"
-        output = "text\\textcolor{brown}{\zh{this}} \\textcolor{brown}{\zh{but}} not this"
-        self.assertEqual(format_fn(input), output)
+        output = "text\\national{this} \\national{but} not this"
+        self.assertEqual(format_fn(input, font), output)
+        input = "textfn:this |fn{and this}"
+        output = "text\\national{this} \\national{and this}"
+        self.assertEqual(format_fn(input, font), output)
 
     def test_format_fv(self):
         input = "fv:something here and fv:there"
-        output = "\\textcolor{blue}{\\textbf{\ipa{something}}} here and \\textcolor{blue}{\\textbf{\ipa{there}}}"
-        self.assertEqual(format_fv(input), output)
+        output = "\\vernacular{something} here and \\vernacular{there}"
+        self.assertEqual(format_fv(input, font), output)
+        input = "|fv{something here} and fv:there"
+        output = "\\vernacular{something here} and \\vernacular{there}"
+        self.assertEqual(format_fv(input, font), output)
 
     def test_format_small_caps(self):
         input = u"°trucs et°astuces"

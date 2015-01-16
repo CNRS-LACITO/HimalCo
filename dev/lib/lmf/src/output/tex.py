@@ -87,28 +87,30 @@ def format_font(text):
     """
     return text.replace("\\{", "\\ipa{")
 
-def format_fn(text):
-    """Replace 'fn:xxx' by '\\textcolor{brown}{\zh{xxx}}'.
+def format_fn(text, font):
+    """Replace 'fn:xxx' and '|fn{xxx}' by font[NATIONAL](xxx).
     """
     import re
-    return re.sub(r"(\w*)fn:([^\s\.,)]*)(\w*)", r"\1" + r"\\textcolor{brown}{\zh{" + r"\2" + "}}" + r"\3", text)
+    if text.find("fn:") != -1:
+        pattern = r"(\w*)fn:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    if text.find("|fn{") != -1:
+        pattern = r"(\w*)\|fn{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    return text
 
-def format_fv(text):
-    """Replace 'fv:xxx' by '\textcolor{blue}{\textbf{\ipa{xxx}}}'.
+def format_fv(text, font):
+    """Replace 'fv:xxx' and '|fv{xxx}' by font[VERNACULAR](xxx).
     """
     import re
-    pattern = r"(.*[ }])?fv:([^\s\.,)]*)(.*)"
-    s = re.match(pattern, text)
-    if not s:
-        return text
-    while s:
-        result = ''
-        if s.group(1) is not None:
-            result += s.group(1)
-        result += r"\textcolor{blue}{\textbf{\ipa{" + s.group(2) + "}}}" + s.group(3)
-        text = result
-        s = re.match(pattern, text)
-    return result
+    if text.find("fv:") != -1:
+        #pattern = r"(.*[ }])?fv:([^\s\.,)]*)(.*)"
+        pattern = r"(\w*)fv:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[VERNACULAR](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    if text.find("|fv{") != -1:
+        pattern = r"(\w*)\|fv{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[VERNACULAR](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    return text
 
 def format_small_caps(text):
     """Replace '°xxx' by '\textsc{xxx}' in translated examples.

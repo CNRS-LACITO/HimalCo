@@ -79,9 +79,9 @@ order[28].insert(5, "pdf")
 ## Functions to process some LaTeX fields (output)
 
 my_font = dict({
-    VERNACULAR  : lambda text: "\ipa{" + text + "}",
+    VERNACULAR  : lambda text: "\\textcolor{blue}{\\textbf{\ipa{" + text + "}}}",
     ENGLISH     : lambda text: text,
-    NATIONAL    : lambda text: "\zh{" + text + "}",
+    NATIONAL    : lambda text: "\\textcolor{brown}{\zh{" + text + "}}",
     REGIONAL    : lambda text: "\ipa{" + text + "}",
     FRENCH      : lambda text: text
 })
