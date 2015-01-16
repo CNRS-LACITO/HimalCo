@@ -159,6 +159,9 @@ class Lexicon():
         @param order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
         @return The sorted Python list of lexical entries.
         """
+        # To access options
+        from lmf import options
+        global options
         def compare(x, y):
             """Compare 2 elements between each other.
             """
@@ -177,7 +180,8 @@ class Lexicon():
                         return 1
                 # Handle other characters
                 except KeyError:
-                    print unicode(Warning("Cannot compare " + x[i] + " and " + y[i]))
+                    if options.verbose:
+                        print unicode(Warning("Cannot compare " + x[i] + " and " + y[i]))
                     if x[i] == y[i]:
                         continue
                     if x[i] < y[i]:
