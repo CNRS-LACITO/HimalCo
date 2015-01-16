@@ -1,8 +1,25 @@
 Notes pour le dictionnaire:
 
 (1)	l'indentation de la première entrée d'une lettre est différente de celle des autres entrées.
-(2)	Il faut mettre les \se sous l'entrée \lx, avec une indentation différente. En effet, les fichiers sons réfèrent aussi bien au \lx qu'aux \se, ce qui pose problème si on les sépare. Par ailleurs, les mettre ensemble permet de miexu comprendre le sens des mots.
+=> CORRIGE
+
+(2)	Il faut mettre les \se sous l'entrée \lx, avec une indentation différente. En effet, les fichiers sons réfèrent aussi bien au \lx qu'aux \se, ce qui pose problème si on les sépare. Par ailleurs, les mettre ensemble permet de mieux comprendre le sens des mots.
+=> FAIT : j’ai mis une indentation, et comme ce n’était pas encore très lisible, j’ai ajouté un carré noir (on peut bien sûr mettre n’importe quel caractère au choix).
+
 (3)	Lorsqu'un mot a plusieurs \ge \gn, mettre un chiffre entouré d'un cercle pour chaque sens.
+=> pas encore fait : je fais un script qui en ajoute automatiquement dans le fichier MDF ?
+
 (4) Rajouter une abréviation pour \un (comme Us.)
+=> FAIT : pour rester cohérent avec le “VerUsage” utilisé pour ‘uv’, j’ai choisi d’écrire “NatUsage” pour ‘un’. Si tu trouves ça trop long, peux-tu me dire comment différencier ces 2 usages ? (NUs. / VUs., … des idées ?)
+
 (5) Rajouter les \pdl \pdv (préfixes directionnels des verbes)
+=> FAIT. Quand 2 pdl identiques se suivent, comme par exemple :
+\pdl directionnel
+\pdv truc
+\pdl directionnel
+\pdv machin
+je n’affiche qu’une seule fois le label, i.e. :
+directionnel : truc ; machin
+
 (6) mots chinois dans \et
+=> j’ai vu que tu avais mis à jour avec “fn” donc c’est FAIT.
