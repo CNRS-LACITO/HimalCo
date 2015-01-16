@@ -60,7 +60,6 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                             tex_file.write("\\section*{-\ipa{" + title + " }-} \hspace{1.4ex}" + EOL)
                             tex_file.write("\\pdfbookmark[1]{\ipa{" + title + " }}{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
-                        tex_file.write("\markboth{" + font[VERNACULAR](lexical_entry.get_lexeme()) + "}{}" + EOL)
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)
                         # Separate lexical entries from each others with a blank line
@@ -164,6 +163,8 @@ def format_lexeme(lexical_entry, font):
         # Format lexeme
         result += lexeme
     result += " \\hspace{0.1cm} \\hypertarget{" + format_uid(lexical_entry, font) + "}{}" + EOL
+    if not lexical_entry.is_subentry():
+        result += "\markboth{" + lexeme + "}{}" + EOL
     return result
 
 def format_audio(lexical_entry, font):

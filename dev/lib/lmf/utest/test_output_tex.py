@@ -74,8 +74,8 @@ class TestTexFunctions(unittest.TestCase):
             "\\section*{-\ipa{ H h }-} \hspace{1.4ex}" + EOL,
             "\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
-            "\\textit{Status:} draft" + EOL,
             "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
+            "\\textit{Status:} draft" + EOL,
             "\lhead{\\firstmark}" + EOL,
             "\\rhead{\\botmark}" + EOL,
             EOL
@@ -105,7 +105,6 @@ class TestTexFunctions(unittest.TestCase):
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
             "Warning: draft version!" + EOL,
-            "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
             "\lhead{\\firstmark}" + EOL,
             "\\rhead{\\botmark}" + EOL,
             EOL
@@ -171,7 +170,7 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_lexeme(self):
         entry = LexicalEntry()
         entry.set_lexeme("hello")
-        expected = "\\vspace{1cm} \\hspace{-1cm} \\vernacular{hello} \\hspace{0.1cm} \\hypertarget{0}{}\n"
+        expected = "\\vspace{1cm} \\hspace{-1cm} \\vernacular{hello} \\hspace{0.1cm} \\hypertarget{0}{}\n\markboth{\\vernacular{hello}}{}\n"
         self.assertEqual(format_lexeme(entry, font), expected)
         del entry
 

@@ -216,6 +216,8 @@ def format_lexeme(lexical_entry, font):
         if form_representation.get_variantForm() is not None and form_representation.get_type() == "phonetics":
             result += " / " + font[VERNACULAR](form_representation.get_variantForm())
     result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    if not lexical_entry.is_subentry():
+        result += "\markboth{" + lexeme + "}{}" + EOL
     return result
 
 def format_notes(lexical_entry, font):
