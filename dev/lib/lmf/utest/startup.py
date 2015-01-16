@@ -4,11 +4,10 @@
 import sys, unittest
 
 utest_path = sys.path[0] + '/'
-sys.path.append(utest_path + '..')
-sys.path.append(utest_path + '../src')
+sys.path.append(utest_path + '../..')
 
 # Activate unitary test mode
 #sys.argv.append('-u')
 
 # Import LMF library
-from src import *
+import lmf

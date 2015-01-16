@@ -21,6 +21,8 @@ def parse_options():
     # Options management
     from optparse import OptionParser
     parser = OptionParser()
+    parser.add_option("-a", "--audio", dest="audio", action="store_false", default=True, help="include sound files [default=True]")
+    parser.add_option("-c", "--cross-references", dest="cross_references", action="store_false", default=True, help="check cross references [default=True]")
     parser.add_option("-l", "--log-filename", dest="log_filename", action="store", default=None, help="log filename [default=None]")
     parser.add_option("-u", "--unit-test", dest="unit_test", action="store_true", default=False, help="unit test mode [default=False]")
     parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False, help="print more details to stdout [default=False]")

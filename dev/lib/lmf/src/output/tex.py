@@ -173,7 +173,12 @@ def format_audio(lexical_entry, font):
     @return A string embedding sound in LaTeX format.
     """
     from os.path import basename, isfile
+    # To access options
+    from lmf import options
+    global options
     result = ""
+    if not options.audio:
+        return result
     for form_representation in lexical_entry.get_form_representations():
         if form_representation.get_audio() is not None:
             # Embed local sound file

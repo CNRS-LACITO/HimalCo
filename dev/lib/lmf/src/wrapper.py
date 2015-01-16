@@ -60,20 +60,31 @@ def wrapper(func, *args, **kwds):
         pass
 
 def read_mdf(*args, **kwds):
+    # To access options
+    from lmf import options
+    global options
     # An MDF file contains one lexicon only, but wrapper() function encapsulates it into a lexical resource
     lexical_resource = wrapper(mdf_read, *args, **kwds)
-    log("Successfully created %s LMF entries from MDF file '%s'." % (lexical_resource.lexicon[-1].count_lexical_entries(), args[0]))
+    for lexicon in lexical_resource.lexicon:
+        if options.cross_references:
+            # Verify lexicon coherence
+            lexicon.check_cross_references()
+        log("Successfully created %s LMF entries from MDF file '%s'." % (lexicon.count_lexical_entries(), args[0]))
     return lexical_resource
 
 def read_xml_lmf(*args, **kwds):
+    # To access options
+    from lmf import options
+    global options
     # An XML LMF file contains one lexical resource, itself containing lexicon(s)
     lexical_resource = wrapper(lmf_read, *args, **kwds)
     # Count total number of entries to report to user
     entries_nb = 0
     for lexicon in lexical_resource.get_lexicons():
         entries_nb += lexicon.count_lexical_entries()
-        # Verify lexicon coherence
-        lexicon.check_cross_references()
+        if options.cross_references:
+            # Verify lexicon coherence
+            lexicon.check_cross_references()
     log("Successfully created %s LMF entries from XML LMF file '%s'." % (entries_nb, args[0]))
     return lexical_resource
 

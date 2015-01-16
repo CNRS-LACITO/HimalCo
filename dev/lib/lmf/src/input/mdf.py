@@ -98,8 +98,6 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
             except Error as exception:
                 exception.handle()
     mdf_file.close()
-    # Verify lexicon coherence
-    lexicon.check_cross_references()
     # Set lexicon attribute
     lexicon.set_entrySource(filename)
     return lexicon
