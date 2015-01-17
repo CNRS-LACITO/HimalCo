@@ -7,9 +7,10 @@
 import sys
 sys.path.append('./src')
 
-## Functions to read from a file: MDF, XML LMF
+## Functions to read from a file: MDF, XML LMF, sort order
 from input.mdf import mdf_read
 from input.xml_lmf import xml_lmf_read as lmf_read
+from input.sort_order import sort_order_read as order_read
 
 ## Functions to write into a file: MDF, XML LMF, LaTeX, doc
 from output.mdf import mdf_write
@@ -35,7 +36,7 @@ def wrapper(func, *args, **kwds):
             # Create a Lexical Resource only once
             wrapper.lexical_resource = LexicalResource()
         object = func(*args, **kwds)
-        if object.__class__.__name__ == "LexicalResource":
+        if object.__class__.__name__ == "LexicalResource" or type(object) == type(dict()):
             return object
         elif object.__class__.__name__ == "Lexicon":
             # Attach lexicon to the lexical resource
@@ -87,6 +88,11 @@ def read_xml_lmf(*args, **kwds):
             lexicon.check_cross_references()
     log("Successfully created %s LMF entries from XML LMF file '%s'." % (entries_nb, args[0]))
     return lexical_resource
+
+def read_sort_order(*args, **kwds):
+    sort_order = wrapper(order_read, *args, **kwds)
+    log("Successfully read sort order: " + str(sort_order))
+    return sort_order
 
 def write_mdf(*args, **kwds):
     # As an MDF file can only contain one lexicon, create as many MDF files as lexicons in the lexical resource (TODO: rename files)

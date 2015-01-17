@@ -30,12 +30,14 @@ lmf.write_xml_lmf(na_lexical_resource, user_path + "demo/na_output.xml")
 lmf.write_xml_lmf(thulung_lexical_resource, user_path + "demo/thulung_output.xml")
 
 # Write LaTeX files
-lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex, sort_order=japhug.unicode_ranks)
-lmf.write_tex(khaling_lexical_resource, user_path + "demo/khaling_output.tex", preamble=user_path + "config/khaling.tex", sort_order=japhug.unicode_ranks)
-lmf.write_tex(koyi_lexical_resource, user_path + "demo/koyi_output.tex", preamble=user_path + "config/koyi.tex", sort_order=japhug.unicode_ranks)
-lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_eng.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_eng, sort_order=japhug.unicode_ranks)
-lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_fra.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_fra, sort_order=japhug.unicode_ranks)
-lmf.write_tex(thulung_lexical_resource, user_path + "demo/thulung_output.tex", preamble=user_path + "config/thulung.tex", sort_order=japhug.unicode_ranks)
+xml_order = lmf.read_sort_order(user_path + "config/japhug.xml")
+lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex, sort_order=xml_order)
+xml_order = lmf.read_sort_order(user_path + "config/khaling.xml")
+lmf.write_tex(khaling_lexical_resource, user_path + "demo/khaling_output.tex", preamble=user_path + "config/khaling.tex", sort_order=xml_order)
+lmf.write_tex(koyi_lexical_resource, user_path + "demo/koyi_output.tex", preamble=user_path + "config/koyi.tex", sort_order=xml_order)
+lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_eng.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_eng, sort_order=xml_order)
+lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_fra.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_fra, sort_order=xml_order)
+lmf.write_tex(thulung_lexical_resource, user_path + "demo/thulung_output.tex", preamble=user_path + "config/thulung.tex", sort_order=xml_order)
 
 # Write MDF files
 lmf.write_mdf(japhug_lexical_resource, user_path + "demo/japhug_output.txt", japhug.lmf2mdf, japhug.order)

@@ -8,44 +8,6 @@ from utils.io import EOL
 
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
 
-ranks = dict({'':0,
-    'A':1, 'a':1, 'æ':1.1,
-    'i':2,
-    'u':3, 'ʉ':3.1, 'ʌ':3.2,
-    'e':4,
-    'ɛ':5,
-    'o':6, 'ɵ':6.1,
-    'ʕ':7, 'ʔ':7.1,
-    'k':8,
-    'g':9,
-    'ŋ':10,
-    'ʦ':11,
-    'ʣ':12,
-    't':13,
-    'd':14,
-    'n':15,
-    'p':16,
-    'b':17,
-    'm':18,
-    'f':19,
-    'j':20,
-    'r':21,
-    'l':22,
-    'q':23,
-    'w':24,
-    's':25,
-    'c':26,
-    'h':27, 'ɦ':27.1,
-    'v':28,
-    'x':29,
-    'y':30,
-    'z':31,
-    # Special characters
-    ' ':32, '-':32.1, '(':32.2, ')':32.3})
-unicode_ranks = ({})
-for key in ranks.keys():
-    unicode_ranks.update({key.decode(encoding='utf8'):ranks[key]})
-
 def get_nep(lexical_entry):
     for form_representation in lexical_entry.get_form_representations():
         if form_representation.get_variantForm() is not None and form_representation.get_type() == "orthography":

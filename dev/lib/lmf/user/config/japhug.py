@@ -9,55 +9,6 @@ from utils.io import EOL
 FRENCH = "fra"
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
 
-ranks = dict({'':0,
-    'a':1, 'æ':1.1, # 1.1 -> khaling/koyi/thulung
-    'ɤ':2,
-    'b':3, 'β':3.1,
-    'c':4,
-    'ɕ':5,
-    'd':6,
-    'e':7,
-    'f':8,
-    'g':9,
-    'ɣ':10,
-    'ɢ':11,
-    'H':12, 'h':12,'ɦ':12.1,
-    'i':13,
-    'j':14,
-    'ɟ':15,
-    'K':16, 'k':16,
-    'l':17,
-    'ɬ':18,
-    'm':19,
-    'n':20,
-    'ɳ':21,'ɲ':21.1,
-    'ŋ':22,
-    'ɴ':23,
-    'o':24,
-    'p':25,
-    'q':26,
-    'r':27,
-    'ʀ':28,'ʁ':28.1,
-    's':29,
-    'ʂ':30,
-    't':31,
-    'u':32,
-    'ɯ':33,
-    'v':34,
-    'w':35,
-    'x':36,
-    'χ':37,
-    'y':38,
-    'z':39,
-    'ʐ':40,
-    'ʑ':41,
-    'ʕ':42, 'ʔ':42.1, # 42.1 -> khaling/koyi/thulung
-    # Special characters
-    '¹':43.1, '²':43.2, '³':43.3, '⁴':43.4, ' ':43.5, '_':43.6, '-':43.7})
-unicode_ranks = ({})
-for key in ranks.keys():
-    unicode_ranks.update({key.decode(encoding='utf8'):ranks[key]})
-
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps2partOfSpeech = ps_partOfSpeech
 ps2partOfSpeech.update({
