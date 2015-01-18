@@ -29,6 +29,7 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
     else:
         # Set lexicon attribute
         lexicon.set_entrySource(filename)
+    # Read in unicode
     mdf_file = open_read(filename, encoding=encoding)
     # MDF syntax is the following: '\marker value'
     mdf_pattern = """^\\\(\w*) (<(.*)>)? ?(.*)$"""

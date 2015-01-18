@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Configuration for Koyi -->
+<!-- Configuration for Yuanga -->
 <Config>
     <Language>
-        <lang att="vernacular" val="kkt"/>
+        <lang att="vernacular" val="nua"/>
         <lang att="English" val="eng"/>
         <lang att="national" val="cmn"/>
         <lang att="regional" val="cmn"/>
@@ -21,25 +21,25 @@
         <LexicalResource dtdVersion="16">
             <GlobalInformation>
                 <feat att="languageCode" val="ISO-639-3"/>
-                <feat att="author" val="Aimée Lahaussois"/>
+                <feat att="author" val="Isabelle Bril"/>
                 <feat att="version" val="1.0"/>
-                <feat att="lastUpdate" val="2015-02-20"/>
+                <feat att="lastUpdate" val="2015-01-18"/>
                 <feat att="license" val="GPL"/>
                 <feat att="characterEncoding" val="UTF-8"/>
                 <feat att="dateCoding" val="ISO-8601"/>
-                <feat att="creationDate" val="2014-11-27"/>
+                <feat att="creationDate" val="2015-01-18"/>
                 <feat att="projectName" val="ANR HimalCo"/>
-                <feat att="description" val="This is the koyi lexicon of the HimalCo project."/>
+                <feat att="description" val="This is the yuanga lexicon of LabexEFL project."/>
             </GlobalInformation>
-            <Lexicon id="koyi">
-                <feat att="language" val="kkt"/>
+            <Lexicon id="yuanga">
+                <feat att="language" val="nua"/>
                 <feat att="languageScript" val=""/>
-                <feat att="label" val="Koyi online dictionary"/>
-                <feat att="lexiconType" val="bilingual dictionary kkt-eng"/>
-                <feat att="entrySource" val="../../../dict/koyi/toolbox/Dictionary.txt"/>
+                <feat att="label" val="Yuanga online dictionary"/>
+                <feat att="lexiconType" val="bilingual dictionary nua-fra"/>
+                <feat att="entrySource" val="../../../dict/yuanga/toolbox/yuanga.lex"/>
                 <!-- Absolute path to audio files -->
                 <feat att="localPath"
-                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/koyi/data/audio/"/>
+                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/yuanga/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>
@@ -80,7 +80,15 @@
         <!-- stative intransitive verb -->
         <ps_partOfSpeech ps="vi.s" partOfSpeech="stative intransitive verb"/>
         <!-- Mapping from MDF markers to LMF attributes -->
-        <mdf_lmf marker="a" var="a, lexical_entry">lexical_entry.set_spelling_variant(a)</mdf_lmf>
+        <mdf_lmf marker="dialx" var="dialx, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="gb" var="gb, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="sge" var="sge, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="rgb" var="rgb, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="gt" var="gt, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="empr" var="empr, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="cf" var="cf, lexical_entry">None</mdf_lmf>
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>
@@ -300,7 +308,7 @@
             <dt/>
         </mdf_order>
         <!-- Mapping from LMF attributes to MDF markers -->
-        <lmf_mdf marker="a" var="lexical_entry">lexical_entry.get_spelling_variants()</lmf_mdf>
+        <!--lmf_mdf marker="gf" var="lexical_entry"></lmf_mdf-->
     </MDF>
     <LaTeX>
         <!-- Path to xelatex binary -->
@@ -308,7 +316,7 @@
         <!-- Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output) -->
         <!--partOfSpeech_tex partOfSpeech="possessed noun" tex="np"/-->
         <header cmd="documentclass" att="oldfontcommands,oneside,a4paper,11pt" val="article"/>
-        <header cmd="title" val="Koyi dictionary"/>
+        <header cmd="title" val="Yuanga dictionary"/>
         <header cmd="author" var="lexical_resource">lexical_resource.get_author()</header>
         <header cmd="usepackage" val="fontspec"/>
         <header cmd="usepackage" val="booktabs"/>
