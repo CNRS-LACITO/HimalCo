@@ -352,7 +352,7 @@ chomp($donnees);
 			$rime  =~ tr/ɵʉ/ou/;
 			print FICHIER2 "\\section*{\\nep{".transcr($adv.infinitif($donnees))."}}\n";
 			print FICHIER2 "\\entete{\\nep{".transcr($adv.infinitif($donnees))."}}\n";
-			print FICHIER2 "\\ipa{\\textbf{".(infinitif($adv.$donnees))."}}\n";
+			print FICHIER2 "\\ipa{\\textbf{".$adv.infinitif($donnees)."}}\n";
 			print FICHIER2 " (\\ipa{".$racine."}) 	";	
 		}
 	}
