@@ -9,7 +9,9 @@ import os
 from khaling import mdf2lmf, lmf2mdf, order, lmf2tex, items
 
 # Read MDF file and set lexicon identifier
-lexical_resource = lmf.read_mdf(user_path + "../../../../dict/khaling/toolbox/Dictionary.txt", mdf2lmf, id="khaling")
+os.system("perl " + user_path + "../src/utils/ipa2devanagari/ipa2devanagari.pl " + user_path + "../../../../dict/khaling/toolbox/Dictionary.txt " + user_path + "dict_khaling/Dictionary-dev.txt")
+
+lexical_resource = lmf.read_mdf(user_path + "dict_khaling/Dictionary-dev.txt", mdf2lmf, id="khaling")
 # Set lexicon attributes
 lexical_resource.get_lexicon("khaling").set_label("khaling online dictionary").set_language("klr").set_lexiconType("bilingual dictionary klr-fra")
 

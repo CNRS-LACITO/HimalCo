@@ -166,8 +166,8 @@ class Lexicon():
             """Compare 2 elements between each other.
             """
             # Before comparing, remove acute accents from strings if any
-            x = x.replace(u"\u0301", '')
-            y = y.replace(u"\u0301", '')
+            x = x.replace(u"\u0301", '').replace(u"\u0302", '')
+            y = y.replace(u"\u0301", '').replace(u"\u0302", '')
             for i in range(min(len(x), len(y))):
                 try:
                     if sort_order[x[i]] == sort_order[y[i]]:

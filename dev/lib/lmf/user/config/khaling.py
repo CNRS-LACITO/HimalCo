@@ -58,18 +58,41 @@ partOfSpeech_range.update([
 
 mdf2lmf = dict(mdf_lmf)
 mdf2lmf.update({
-    "a"   : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a),
-    "nep" : lambda nep, lexical_entry: lexical_entry.set_variant_form(nep, type="orthography"),
-    "wav" : lambda wav, lexical_entry: None
+    "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a),
+    "nep"       : lambda nep, lexical_entry: lexical_entry.set_variant_form(nep, type="orthography"),
+    "wav"       : lambda wav, lexical_entry: None,
+    "se2"       : lambda se2, lexical_entry : None,
+    # Generated markers
+    "lx_dev"    : lambda lx_dev, lexical_entry : None,
+    "lx_gen"    : lambda lx_gen, lexical_entry : None,
+    "lc"        : lambda lc, lexical_entry : None,
+    "lc_dev"    : lambda lc_dev, lexical_entry : None,
+    "se_gen"    : lambda se_gen, lexical_entry : None,
+    "se2_gen"   : lambda se2_gen, lexical_entry : None,
+    "se2_dev"   : lambda se2_dev, lexical_entry : None,
+    "xv_dev"    : lambda xv_dev, lexical_entry : None,
+    "1s_dev"    : lambda a1s_dev, lexical_entry : None,
+    "1d_dev"    : lambda a1d_dev, lexical_entry : None,
+    "1e_dev"    : lambda a1e_dev, lexical_entry : None,
+    "2s_dev"    : lambda a2s_dev, lexical_entry : None,
+    "3s_dev"    : lambda a3s_dev, lexical_entry : None,
+    "4s_dev"    : lambda a4s_dev, lexical_entry : None
 })
+
+def get_nep(lexical_entry):
+    for form_representation in lexical_entry.get_form_representations():
+        if form_representation.get_variantForm() is not None and form_representation.get_type() == "orthography":
+            return form_representation.get_variantForm()
 
 lmf2mdf = dict(lmf_mdf)
 lmf2mdf.update({
-    "a" : lambda lexical_entry: lexical_entry.get_spelling_variants()
+    "a"     : lambda lexical_entry: lexical_entry.get_spelling_variants(),
+    "nep"   : lambda lexical_entry: get_nep(lexical_entry)
 })
 
 order = list(mdf_order)
 order.insert(1, "a")
+order.insert(2, "nep")
 
 ## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
 partOfSpeech2tex = partOfSpeech_tex
