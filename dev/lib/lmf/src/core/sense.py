@@ -574,21 +574,23 @@ class Sense():
         if len(self.get_contexts()) >= 1:
             return self.get_contexts()[-1]
 
-    def create_example(self, written_form, language=None):
-        """! @brief Create a Context instance and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+    def create_example(self, written_form, language=None, script_name=None):
+        """! @brief Create a Context instance and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return Sense instance.
         """
-        self.create_and_add_context().set_type("example").set_written_form(written_form, language)
+        self.create_and_add_context().set_type("example").set_written_form(written_form, language, script_name)
         return self
 
-    def add_example(self, written_form, language=None):
-        """! @brief Set written form and language of an existing Context instance.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+    def add_example(self, written_form, language=None, script_name=None):
+        """! @brief Set written form, language and script of an existing Context instance.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return Sense instance.
         """
         # Get the last Context instance if any
@@ -596,7 +598,7 @@ class Sense():
         # If there is no Context instance, create and add one
         if context is None:
             context = self.create_and_add_context().set_type("example")
-        context.set_written_form(written_form, language)
+        context.set_written_form(written_form, language, script_name)
         return self
 
     def set_example_comment(self, comment):

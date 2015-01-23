@@ -342,7 +342,7 @@ sub main {
                 }
                 $data =~ s/ //;
                 $rime = $data;
-                my $racine = $data;
+                my $root = $data;
                 $data =~ s/([aeiouɛʌɵʉ])ː/$1̄ː/g;
                 $data =~ s/([aeiouɛʌɵʉ])([rlmnŋ])/$1̄$2/g;
                 if ($rime =~ m/\-si/) {
@@ -352,7 +352,7 @@ sub main {
                 $rime =~ s/A/a/;
                 $rime  =~ s/.*([aeiouɵʉɛ])/$1/; # removal of initial consonants
                 $rime  =~ tr/ɵʉ/ou/;
-                print out_file "\\lx_gen ".$racine."\n";
+                print out_file "\\lx_tmp ".$root."\n";
                 print out_file "\\lc ".$adv.infinitive($data)."\n";
                 print out_file "\\lc_dev ".transcr($adv.infinitive($data))."\n";
             }
@@ -379,7 +379,7 @@ sub main {
             $rime =~ s/A/a/;
             $rime =~ s/.*([aeiouɵʉɛ])/$1/;
             $rime =~ tr/ɵʉ/ou/;
-            print out_file "\\se_gen ".$data."\n";
+            print out_file "\\se_tmp ".$data."\n";
             print out_file "\\lc ".$adv.infinitive($data)."\n";
             print out_file "\\lc_dev ".transcr($adv.infinitive($data))."\n";
         }
@@ -387,7 +387,7 @@ sub main {
         if ($data =~ m/^\\se2 /) {
             $data =~ s/\\se2//;
             $data =~ s/ //;
-            print out_file "\\se2_gen ".$data."\n";
+            print out_file "\\se2_tmp ".$data."\n";
             print out_file "\\se2_dev ".transcr($data)."\n";
         }
 

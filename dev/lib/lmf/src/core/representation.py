@@ -22,3 +22,4 @@ class Representation():
         self.comment = None
         self.writtenForm = None
         self.language = None
+        self.scriptName = None

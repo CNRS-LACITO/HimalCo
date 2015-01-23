@@ -270,16 +270,17 @@ class Lemma(Form):
                 spelling_variants.append(repr.get_spellingVariant())
         return spelling_variants
 
-    def set_citation_form(self, citation_form):
+    def set_citation_form(self, citation_form, script_name=None):
         """! @brief Set citation form.
         This attribute is owned by FormRepresentation.
         @param citation_form The citation form to set.
+        @param script_name The name of the script used to write the citation form, e.g. devanagari.
         @return Lemma instance.
         """
         form_representation = None
-        # Set first FormRepresentation instance that has no citation form
+        # Set first FormRepresentation instance that has no citation form and that uses the same script name
         for repr in self.get_form_representations():
-            if repr.get_citationForm() is None:
+            if repr.get_citationForm() is None and repr.get_scriptName() == script_name:
                 form_representation = repr
                 break
         if form_representation is None:
@@ -287,16 +288,19 @@ class Lemma(Form):
             form_representation = self.create_form_representation()
             self.add_form_representation(form_representation)
         form_representation.set_citationForm(citation_form)
+        if script_name is not None:
+            form_representation.set_scriptName(script_name)
         return self
 
-    def get_citation_forms(self):
+    def get_citation_forms(self, script_name=None):
         """! @brief Get all citation forms.
         This attribute is owned by FormRepresentation.
+        @param script_name If provided, get only citation forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'citationForm'.
         """
         citation_forms = []
         for repr in self.get_form_representations():
-            if repr.get_citationForm() is not None:
+            if repr.get_citationForm() is not None and (script_name is None or repr.get_scriptName() == script_name):
                 citation_forms.append(repr.get_citationForm())
         return citation_forms
 

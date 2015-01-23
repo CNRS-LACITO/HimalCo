@@ -384,25 +384,27 @@ class LexicalEntry():
         if self.lemma is not None:
             return self.lemma.get_spelling_variants()
 
-    def set_citation_form(self, citation_form):
+    def set_citation_form(self, citation_form, script_name=None):
         """! @brief Set citation form.
         Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
         @param citation_form The citation form to set.
+        @param script_name The name of the script used to write the citation form, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Create a Lemma instance if not yet created
         if self.lemma is None:
             self.lemma = Lemma()
-        self.lemma.set_citation_form(citation_form)
+        self.lemma.set_citation_form(citation_form, script_name)
         return self
 
-    def get_citation_forms(self):
+    def get_citation_forms(self, script_name=None):
         """! @brief Get all citation forms.
         Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param script_name If provided, get only citation forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'citationForm' if any.
         """
         if self.lemma is not None:
-            return self.lemma.get_citation_forms()
+            return self.lemma.get_citation_forms(script_name)
 
     def set_dialect(self, dialect):
         """! @brief Set dialect.
@@ -899,11 +901,12 @@ class LexicalEntry():
                     morphologies.append(paradigm.get_morphology())
         return morphologies
 
-    def create_example(self, written_form, language=None):
-        """! @brief Create a context, add an example and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+    def create_example(self, written_form, language=None, script_name=None):
+        """! @brief Create a context, add an example and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Get the last Sense instance if any
@@ -912,14 +915,15 @@ class LexicalEntry():
         if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        sense.create_example(written_form, language)
+        sense.create_example(written_form, language, script_name)
         return self
 
-    def add_example(self, written_form, language=None):
-        """! @brief Add an example to an existing context and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+    def add_example(self, written_form, language=None, script_name=None):
+        """! @brief Add an example to an existing context and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Get the last Sense instance if any
@@ -928,7 +932,7 @@ class LexicalEntry():
         if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        sense.add_example(written_form, language)
+        sense.add_example(written_form, language, script_name)
         return self
 
     def set_example_comment(self, comment):

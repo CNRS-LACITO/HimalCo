@@ -17,7 +17,7 @@ class FormRepresentation(Representation):
         FormRepresentation instances are owned by Form.
         @return A FormRepresentation instance.
         """
-        # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
+        # Initialize Representation attributes: 'comment', 'writtenForm', 'language' and 'scriptName'
         self.__new__()
         self.variantForm = None
         self.type = None
@@ -29,7 +29,6 @@ class FormRepresentation(Representation):
         self.spellingVariant = None
         self.citationForm = None
         self.dialect = None
-        self.scriptName = None
         ## Audio instance is owned by FormRepresentation
         # There is zero or one Audio instance per FormRepresentation
         self.audio = None
@@ -271,7 +270,7 @@ class FormRepresentation(Representation):
 
     def get_scriptName(self):
         """! @brief Get script name.
-        @return FormRepresentation attribute 'scriptName'.
+        @return Representation attribute 'scriptName'.
         """
         return self.scriptName
 

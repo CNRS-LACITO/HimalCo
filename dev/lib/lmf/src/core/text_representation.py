@@ -14,7 +14,7 @@ class TextRepresentation(Representation):
         TextRepresentation instances are owned by Definition and Statement.
         @return A TextRepresentation instance.
         """
-        # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
+        # Initialize Representation attributes: 'comment', 'writtenForm', 'language' and 'scriptName'
         self.__new__()
         self.font = None
 
@@ -75,3 +75,19 @@ class TextRepresentation(Representation):
         @return Representation attribute 'language'.
         """
         return self.language
+
+    def set_scriptName(self, script_name):
+        """! @brief Set script name.
+        @param script_name The script name to set.
+        @return TextRepresentation instance.
+        """
+        error_msg = "Script name value '%s' is not allowed" % script_name
+        check_attr_type(script_name, [str, unicode], error_msg)
+        self.scriptName = script_name
+        return self
+
+    def get_scriptName(self):
+        """! @brief Get script name.
+        @return Representation attribute 'scriptName'.
+        """
+        return self.scriptName
