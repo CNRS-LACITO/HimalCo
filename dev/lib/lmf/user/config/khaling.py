@@ -8,17 +8,11 @@ from utils.io import EOL
 
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
 
-def get_nep(lexical_entry):
-    for form_representation in lexical_entry.get_form_representations():
-        if form_representation.get_variantForm() is not None and form_representation.get_type() == "orthography":
-            return font[VERNACULAR](form_representation.get_variantForm())
-    return lexical_entry.get_lexeme()
 def get_ge(lexical_entry):
     for sense in lexical_entry.get_senses():
         if len(sense.find_glosses(ENGLISH)) != 0:
             return sense.find_glosses(ENGLISH)[0]
     return "aaa"
-#items=lambda lexical_entry: get_nep(lexical_entry)
 items=lambda lexical_entry: get_ge(lexical_entry)
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
@@ -79,15 +73,10 @@ mdf2lmf.update({
     "4s_dev"    : lambda a4s_dev, lexical_entry : None
 })
 
-def get_nep(lexical_entry):
-    for form_representation in lexical_entry.get_form_representations():
-        if form_representation.get_variantForm() is not None and form_representation.get_type() == "orthography":
-            return form_representation.get_variantForm()
-
 lmf2mdf = dict(lmf_mdf)
 lmf2mdf.update({
     "a"     : lambda lexical_entry: lexical_entry.get_spelling_variants(),
-    "nep"   : lambda lexical_entry: get_nep(lexical_entry)
+    "nep"   : lambda lexical_entry: lexical_entry.get_variant_forms(type="orthography")
 })
 
 order = list(mdf_order)
