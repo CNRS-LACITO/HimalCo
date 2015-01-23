@@ -100,6 +100,19 @@ $textname=<INPUT>;
 $nblines = 1;
 # Removing line break.
 chomp ($textname);
+# and removing 'high point' somehow read by error at beginning of text. That requires some care.
+# Removing line feed
+chomp($textname);
+# Reversing the text name, so that the problematic part at beginning now becomes the end of the string (easier to handle).
+$textname = reverse $textname;
+# Testing the last character
+my $last_chr = chop($textname);
+# If the value is 239: this is a telltale sign of the presence of unwanted code. Three characters are then suppressed.
+if ( ord($last_chr) == 239) 
+		{ $textname = substr($textname, 0, -2); 
+		}
+# Finally: revert back to normal order of string.
+$textname = reverse $textname;
 
 # Writing header of file
 ## Old version (before 2013):
