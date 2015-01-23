@@ -220,6 +220,33 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].variantForm, form)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].type, type)
 
+    def test_get_phonetic_forms(self):
+        form1 = "form1"
+        form2 = "form2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_variant_forms())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.variantForm = form1
+        repr1.type = "1"
+        repr2 = FormRepresentation()
+        repr2.variantForm = form2
+        repr2.type = "2"
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get variant forms
+        self.assertListEqual(self.lexical_entry.get_variant_forms(type="1"), [form1])
+        self.assertListEqual(self.lexical_entry.get_variant_forms(type="2"), [form2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
+
     def test_set_variant_comment(self):
         comment = "comment"
         lang = "lang"

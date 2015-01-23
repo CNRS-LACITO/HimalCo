@@ -271,6 +271,14 @@ class LexicalEntry():
         self.lemma.set_variant_form(variant_form, type)
         return self
 
+    def get_variant_forms(self, type="unspecified"):
+        """! @brief Get all variant forms of specified type.
+        Attribute 'variantForm' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'variantForm' if type matches.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_variant_forms(type)
+
     def set_variant_comment(self, comment, language=None):
         """! @brief Set variant comment and language.
         Attributes 'comment' and 'language' are owned by FormRepresentation, which is owned by Lemma.

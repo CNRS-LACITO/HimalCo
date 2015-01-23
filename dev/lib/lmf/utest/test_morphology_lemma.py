@@ -115,6 +115,35 @@ class TestLemmaFunctions(unittest.TestCase):
         self.assertEqual(self.lemma.form_representation[1].variantForm, form)
         self.assertEqual(self.lemma.form_representation[1].type, type)
 
+    def test_get_variant_forms(self):
+        form1 = "form1"
+        form2 = "form2"
+        form3 = "form3"
+        # There is no FormRepresentation
+        self.assertListEqual(self.lemma.get_variant_forms(), [])
+        # Create a FormRepresentation instance
+        repr1 = FormRepresentation()
+        repr1.variantForm = form1
+        repr1.type = "A"
+        self.lemma.form_representation.append(repr1)
+        self.assertEqual(self.lemma.get_variant_forms(type="A"), [form1])
+        self.assertEqual(self.lemma.get_variant_forms(type="B"), [])
+        repr2 = FormRepresentation()
+        repr2.variantForm = form2
+        repr2.type = "B"
+        self.lemma.form_representation.append(repr2)
+        self.assertEqual(self.lemma.get_variant_forms(type="A"), [form1])
+        self.assertEqual(self.lemma.get_variant_forms(type="B"), [form2])
+        repr3 = FormRepresentation()
+        repr3.variantForm = form3
+        repr3.type = "A"
+        self.lemma.form_representation.append(repr3)
+        self.assertEqual(self.lemma.get_variant_forms(type="A"), [form1, form3])
+        self.assertEqual(self.lemma.get_variant_forms(type="B"), [form2])
+        # Release FormRepresentation instances
+        del self.lemma.form_representation[:]
+        del repr1, repr2, repr3
+
     def test_set_variant_comment(self):
         comment = "useful comment"
         # There is no FormRepresentation

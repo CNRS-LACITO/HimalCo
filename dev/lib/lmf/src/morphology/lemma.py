@@ -100,6 +100,17 @@ class Lemma(Form):
         form_representation.set_variantForm(variant_form).set_type(type)
         return self
 
+    def get_variant_forms(self, type="unspecified"):
+        """! @brief Get all variant forms of specified type.
+        This attribute is owned by FormRepresentation.
+        @return A Python list of FormRepresentation attributes 'variantForm' if type matches.
+        """
+        variant_forms = []
+        for repr in self.get_form_representations():
+            if repr.get_type() == type and repr.get_variantForm() is not None:
+                variant_forms.append(repr.get_variantForm())
+        return variant_forms
+
     def set_variant_comment(self, comment, language=None):
         """! @brief Set variant comment and language.
         These attributes are owned by FormRepresentation.
