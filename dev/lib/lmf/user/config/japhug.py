@@ -59,9 +59,9 @@ ps2partOfSpeech.update({
     "vStat"         : "stative intransitive verb",  # stative intransitive verb
     "vst"           : "stative intransitive verb",  # stative intransitive verb
     "vs"            : "stative intransitive verb",  # stative intransitive verb
-    "vl"            : "bitransistive verb",         # labial verb
-    "vlb"           : "bitransistive verb",         # labial verb
-    "vlab"          : "bitransistive verb",         # labial verb
+    "vl"            : "bitransitive verb",          # labial verb
+    "vlb"           : "bitransitive verb",          # labial verb
+    "vlab"          : "bitransitive verb",          # labial verb
     "T"             : "time noun",                  # ?
     "indef"         : "indefinite determiner"       # ?
 })

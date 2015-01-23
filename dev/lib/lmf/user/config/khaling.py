@@ -38,8 +38,8 @@ ps2partOfSpeech.update({
     "pro"           : "pronoun",                    # pronoun/pronominal
     "vi.s"          : "stative intransitive verb",  # stative intransitive verb
     # khaling
-    "vi-t"          : "bitransistive verb",         # labial verb
-    "vt-i"          : "bitransistive verb",         # labial verb
+    "vi-t"          : "bitransitive verb",         # labial verb
+    "vt-i"          : "bitransitive verb",         # labial verb
     "Vi"            : "intransitive verb",          # intransitive verb
     "vt4"           : "transitive verb",            # transitive verb
     "???"           : "unknown"

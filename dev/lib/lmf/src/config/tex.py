@@ -21,7 +21,7 @@ partOfSpeech_tex = dict({
     "affix"                         : "aff",
     "article"                       : "art", # MDF
     "auxiliary"                     : "aux", # MDF
-    "bitransistive verb"            : "vl", # japhug
+    "bitransitive verb"             : "vl", # japhug
     "classifier"                    : "clf", # Leipzip, MDF -> CLASS
     "comparative particle"          : "cmpar", # MDF
     "conditional particle"          : "cond", # MDF
