@@ -66,11 +66,14 @@ mdf2lmf.update({
     "se2_dev"   : lambda se2_dev, lexical_entry : None,
     "xv_dev"    : lambda xv_dev, lexical_entry : None,
     "1s_dev"    : lambda a1s_dev, lexical_entry : None,
-    "1d_dev"    : lambda a1d_dev, lexical_entry : None,
-    "1e_dev"    : lambda a1e_dev, lexical_entry : None,
     "2s_dev"    : lambda a2s_dev, lexical_entry : None,
     "3s_dev"    : lambda a3s_dev, lexical_entry : None,
-    "4s_dev"    : lambda a4s_dev, lexical_entry : None
+    "4s_dev"    : lambda a4s_dev, lexical_entry : None,
+    "1d_dev"    : lambda a1d_dev, lexical_entry : None,
+    "3d_dev"    : lambda a3d_dev, lexical_entry : None,
+    "1p_dev"    : lambda a1p_dev, lexical_entry : None,
+    "1e_dev"    : lambda a1e_dev, lexical_entry : None,
+    "2p_dev"    : lambda a2p_dev, lexical_entry : None
 })
 
 lmf2mdf = dict(lmf_mdf)

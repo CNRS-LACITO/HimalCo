@@ -403,18 +403,6 @@ sub main {
             print out_file "\\1s_dev ".transcr($data)."\n";
         }
 
-        if ($data =~ m/^\\1d/) {
-            $data =~ s/\\1d//;
-            $data =~ s/ //;
-            print out_file "\\1d_dev ".transcr($data)."\n";
-        }
-
-        if ($data =~ m/^\\1e/) {
-            $data =~ s/\\1e//;
-            $data =~ s/ //;
-            print out_file "\\1e_dev ".transcr($data)."\n";
-        }
-
         if ($data =~ m/^\\2s/) {
             $data =~ s/\\2s//;
             $data =~ s/ //;
@@ -431,6 +419,36 @@ sub main {
             $data =~ s/\\4s//;
             $data =~ s/ //;
             print out_file "\\4s_dev ".transcr($data)."\n";
+        }
+
+        if ($data =~ m/^\\1d/) {
+            $data =~ s/\\1d//;
+            $data =~ s/ //;
+            print out_file "\\1d_dev ".transcr($data)."\n";
+        }
+
+        if ($data =~ m/^\\3d/) {
+            $data =~ s/\\3d//;
+            $data =~ s/ //;
+            print out_file "\\3d_dev ".transcr($data)."\n";
+        }
+
+        if ($data =~ m/^\\1p/) {
+            $data =~ s/\\1p//;
+            $data =~ s/ //;
+            print out_file "\\1p_dev ".transcr($data)."\n";
+        }
+
+        if ($data =~ m/^\\1e/) {
+            $data =~ s/\\1e//;
+            $data =~ s/ //;
+            print out_file "\\1e_dev ".transcr($data)."\n";
+        }
+
+        if ($data =~ m/^\\2p/) {
+            $data =~ s/\\2p//;
+            $data =~ s/ //;
+            print out_file "\\2p_dev ".transcr($data)."\n";
         }
     }
     close(in_file);
