@@ -183,9 +183,9 @@ def format_notes(lexical_entry, font):
     return result
 
 def format_font(text):
-    """Replace '\{xxx}' and '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
+    """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
     """
-    return text.replace("\\{", "{").replace("{", "\\ipa{")
+    return text.replace("{", "\\ipa{")
 
 def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     result = ""
