@@ -2,6 +2,24 @@
 
 from utils.xml_format import write_result, Element, SubElement
 
+def format_pinyin(element):
+    """Replace '@xxx' in the element attribute "val" by '<span class="pinyin">xxx</span>'.
+    """
+    import re
+    # Find pinyin
+    result = re.match(r"(.*)@(\w*)(.*)", element.attrib["val"])
+    before = result.group(1)
+    pinyin = result.group(2)
+    after = result.group(3)
+    # Create span
+    span = Element("span")
+    span.attrib["class"] = "pinyin"
+    span.text = pinyin
+    span.tail = after
+    # Insert span in element
+    element.text = before
+    element.insert(0, span)
+
 def xml_lmf_write(object, filename):
     """! @brief Write an XML LMF file.
     @param object The LMF instance to write as XML.
@@ -41,4 +59,6 @@ def build_sub_elements(object, element):
                     element.attrib.update({attr_name: unicode(attr_value)})
                 else:
                     # In all other cases, an XML sub-element must be created with the keyword name "feat"
-                    SubElement(element, "feat", att=attr_name, val=unicode(attr_value))
+                    feat = SubElement(element, "feat", att=attr_name, val=unicode(attr_value))
+                    if attr_value.find("@") != -1:
+                        format_pinyin(feat)
