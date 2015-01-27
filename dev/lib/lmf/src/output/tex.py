@@ -20,13 +20,14 @@ def compute_header(preamble):
 
 def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
     """! @brief Write a LaTeX file.
+    Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
     @param filename The name of the LaTeX file to write with full path, for instance 'user/output.tex'.
     @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'. Deafult value is None.
     @param lmf2tex A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order. Default value is 'lmf_to_tex' function defined in 'src/config/tex.py'. Please refer to it as an example.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
-    @param sort_order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
+    @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
     """
     import string
     tex_file = open_write(filename)
@@ -47,8 +48,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
             current_character = ''
-            sorted_entries = lexicon.sort_lexical_entries(items=items, sort_order=sort_order)
-            for lexical_entry in sorted_entries:
+            # Lexicon is already ordered
+            for lexical_entry in lexicon.get_lexical_entries():
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme

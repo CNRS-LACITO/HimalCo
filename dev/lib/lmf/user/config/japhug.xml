@@ -53,5 +53,8 @@
 		<rule str=" " rank="43.5"/>
 		<rule str="_" rank="43.6"/>
 		<rule str="-" rank="43.7"/>
+		<!-- Temporary fix -->
+		<rule str="{" rank="43.8"/>
+		<rule str="}" rank="43.9"/>
 	</rules>
 </SortOrder>

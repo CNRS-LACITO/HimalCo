@@ -128,8 +128,7 @@ class Lexicon():
         """! @brief Get all lexical entries maintained by the lexicon.
         @return A Python set of lexical entries.
         """
-        # Create a set without duplicates
-        return set(self.lexical_entry)
+        return self.lexical_entry
 
     def add_lexical_entry(self, lexical_entry):
         """! @brief Add a lexical entry to the lexicon.
@@ -206,7 +205,10 @@ class Lexicon():
             items_and_entries.sort(cmp=compare, key=lambda l: l[0])
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
-        return sorted_entries
+        # Delete the old list of lexical entries and set the new one
+        del self.lexical_entry[:]
+        self.lexical_entry = sorted_entries
+        return self.lexical_entry
 
     def find_lexical_entries(self, filter):
         """! @brief Find all lexical entries which characteristics meet the given condition.

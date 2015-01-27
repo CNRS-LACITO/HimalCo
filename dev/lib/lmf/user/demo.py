@@ -22,6 +22,16 @@ koyi_lexical_resource.get_lexicon("koyi").set_label("koyi online dictionary").se
 na_lexical_resource.get_lexicon("na").set_label("na online dictionary").set_language("nru").set_lexiconType("trilingual dictionary nru-eng-fra")
 thulung_lexical_resource.get_lexicon("thulung").set_label("thulung online dictionary").set_language("tdh").set_lexiconType("bilingual dictionary tdh-eng")
 
+# Order lexicons
+japhug_xml_order = lmf.read_sort_order(user_path + "config/japhug.xml")
+khaling_xml_order = lmf.read_sort_order(user_path + "config/khaling.xml")
+xml_order = khaling_xml_order
+japhug_lexical_resource.get_lexicon("japhug").sort_lexical_entries(sort_order=japhug_xml_order)
+khaling_lexical_resource.get_lexicon("khaling").sort_lexical_entries(sort_order=khaling_xml_order)
+koyi_lexical_resource.get_lexicon("koyi").sort_lexical_entries(sort_order=xml_order)
+na_lexical_resource.get_lexicon("na").sort_lexical_entries(sort_order=xml_order)
+thulung_lexical_resource.get_lexicon("thulung").sort_lexical_entries(sort_order=xml_order)
+
 # Write XML LMF files
 lmf.write_xml_lmf(japhug_lexical_resource, user_path + "demo/japhug_output.xml")
 lmf.write_xml_lmf(khaling_lexical_resource, user_path + "demo/khaling_output.xml")
@@ -30,10 +40,8 @@ lmf.write_xml_lmf(na_lexical_resource, user_path + "demo/na_output.xml")
 lmf.write_xml_lmf(thulung_lexical_resource, user_path + "demo/thulung_output.xml")
 
 # Write LaTeX files
-xml_order = lmf.read_sort_order(user_path + "config/japhug.xml")
-lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex, sort_order=xml_order)
-xml_order = lmf.read_sort_order(user_path + "config/khaling.xml")
-lmf.write_tex(khaling_lexical_resource, user_path + "demo/khaling_output.tex", preamble=user_path + "config/khaling.tex", sort_order=xml_order)
+lmf.write_tex(japhug_lexical_resource, user_path + "demo/japhug_output.tex", preamble=user_path + "config/japhug.tex", lmf2tex=japhug.lmf2tex, sort_order=japhug_xml_order)
+lmf.write_tex(khaling_lexical_resource, user_path + "demo/khaling_output.tex", preamble=user_path + "config/khaling.tex", sort_order=khaling_xml_order)
 lmf.write_tex(koyi_lexical_resource, user_path + "demo/koyi_output.tex", preamble=user_path + "config/koyi.tex", sort_order=xml_order)
 lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_eng.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_eng, sort_order=xml_order)
 lmf.write_tex(na_lexical_resource, user_path + "demo/na_output_fra.tex", preamble=user_path + "config/na.tex", lmf2tex=na.tex_fra, sort_order=xml_order)

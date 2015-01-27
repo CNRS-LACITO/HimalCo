@@ -8,8 +8,6 @@ import os
 
 # Read MDF file and set lexicon identifier
 input_lexical_resource = lmf.read_mdf(ftest_path + "input.txt", id="short example")
-# Set lexicon attributes
-input_lexical_resource.get_lexicon("short example").set_label("test online dictionary").set_language("eng").set_languageScript("latn").set_lexiconType("bilingual dictionary")
 
 # Set global information
 input_lexical_resource.set_creationDate("2014-10-01")
@@ -17,6 +15,15 @@ input_lexical_resource.set_lastUpdate("2014-10-10")
 input_lexical_resource.set_author(u"Céline Buret")
 input_lexical_resource.set_description("This is a testing lexicon.")
 print input_lexical_resource.get_bibliographicCitation()
+
+# Get created lexicon
+my_lexicon = input_lexical_resource.get_lexicon("short example")
+
+# Set lexicon attributes
+my_lexicon.set_label("test online dictionary").set_language("eng").set_languageScript("latn").set_lexiconType("bilingual dictionary")
+
+# Alphabetize lexemes
+my_lexicon.sort_lexical_entries()
 
 # Write XML LMF file
 lmf.write_xml_lmf(input_lexical_resource, ftest_path + "output.xml")

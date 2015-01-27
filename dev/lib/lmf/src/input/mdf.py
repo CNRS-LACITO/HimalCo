@@ -59,7 +59,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                             # Create a subentry
                             sub_entry = LexicalEntry(uid)
                             # An MDF subentry corresponds to an LMF lexical entry
-                            sub_entry.set_lexeme(value)
+                            mdf2lmf["lx"](value, sub_entry)
                             # Add it to the lexicon
                             lexicon.add_lexical_entry(sub_entry)
                             # Manage main entry

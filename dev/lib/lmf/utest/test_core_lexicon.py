@@ -97,9 +97,9 @@ class TestLexiconFunctions(unittest.TestCase):
         # Add entries to the lexicon
         self.lexicon.lexical_entry = [entry1, entry2]
         # Test get lexical entries
-        self.assertEqual(self.lexicon.get_lexical_entries(), set([entry1, entry2]))
+        self.assertListEqual(self.lexicon.get_lexical_entries(), [entry1, entry2])
         self.lexicon.lexical_entry.append(entry1)
-        self.assertEqual(self.lexicon.get_lexical_entries(), set([entry1, entry2]))
+        self.assertListEqual(self.lexicon.get_lexical_entries(), [entry1, entry2, entry1])
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2
@@ -142,7 +142,7 @@ class TestLexiconFunctions(unittest.TestCase):
         self.lexicon.lexical_entry.append(entry2)
         self.assertEqual(self.lexicon.count_lexical_entries(), 2)
         self.lexicon.lexical_entry.append(entry1)
-        self.assertEqual(self.lexicon.count_lexical_entries(), 2)
+        self.assertEqual(self.lexicon.count_lexical_entries(), 3)
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2
@@ -157,6 +157,7 @@ class TestLexiconFunctions(unittest.TestCase):
         self.lexicon.lexical_entry = [entry4, entry1, entry2, entry3]
         # Test sort lexical entries
         self.assertListEqual(self.lexicon.sort_lexical_entries(), [entry1, entry2, entry3, entry4])
+        self.assertListEqual(self.lexicon.lexical_entry, [entry1, entry2, entry3, entry4])
         # Provide a sort order
         my_order = dict({'A':1.1, 'a':1.2, 'B':2.1, 'b':2.2})
         my_unicode_order = ({})
@@ -167,6 +168,7 @@ class TestLexiconFunctions(unittest.TestCase):
         self.lexicon.lexical_entry.append(entry5)
         self.lexicon.lexical_entry.append(entry6)
         self.assertListEqual(self.lexicon.sort_lexical_entries(sort_order=my_order), [entry5, entry1, entry2, entry3, entry6, entry4])
+        self.assertListEqual(self.lexicon.lexical_entry, [entry5, entry1, entry2, entry3, entry6, entry4])
         # Release LexicalEntry instances
         del self.lexicon.lexical_entry[:]
         del entry1, entry2, entry3, entry4, entry5, entry6

@@ -22,11 +22,14 @@ lexical_resource.set_author("Guillaume Jacques")
 lexical_resource.set_description("This is the khaling lexicon of HimalCo project.")
 print lexical_resource.get_bibliographicCitation()
 
+# Classify lexicon
+xml_order = lmf.read_sort_order(user_path + "config/khaling.xml")
+lexical_resource.get_lexicon("khaling").sort_lexical_entries(sort_order=xml_order)
+
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "dict_khaling/Dictionary.xml")
 
 # Write LaTeX file
-xml_order = lmf.read_sort_order(user_path + "config/khaling.xml")
 lmf.write_tex(lexical_resource, user_path + "dict_khaling/Dictionary.tex", preamble=user_path + "config/khaling.tex", lmf2tex=lmf2tex, sort_order=xml_order)
 lmf.write_tex(lexical_resource, user_path + "dict_khaling/Dictionary-ge.tex", preamble=user_path + "config/khaling.tex", lmf2tex=lmf2tex, items=items)
 
