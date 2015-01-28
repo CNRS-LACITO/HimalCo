@@ -176,25 +176,11 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_status(lexical_entry, font)
     # date
     tex_entry += tex.format_date(lexical_entry, font)
-    # Handle reserved characters: \ { } $ # & _ ^ ~ %
-    if tex_entry.find("{") != -1:
-        tex_entry = tex.format_font(tex_entry)
-    if tex_entry.find("@") != -1:
-        tex_entry = tex.format_pinyin(tex_entry)
-    if tex_entry.find("#") != -1:
-        tex_entry = tex_entry.replace('#', '\#')
-    if tex_entry.find("_") != -1:
-        tex_entry = tex_entry.replace('_', '\_').replace("\string\_", "\string_")
-    if tex_entry.find("& ") != -1:
-        tex_entry = tex_entry.replace('& ', '\& ')
-    if tex_entry.find("$") != -1:
-        tex_entry = tex_entry.replace('$', '')
-    if tex_entry.find("^") != -1:
-        tex_entry = tex_entry.replace('^', '\^')
-    # Handle fonts
-    tex_entry = tex.format_fn(tex_entry, font)
-    tex_entry = tex.format_fv(tex_entry, font)
+    # Handle reserved characters and fonts
+    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_fv(tex_entry, font)
+    tex_entry = tex.handle_fn(tex_entry, font)
     # Special formatting
-    if tex_entry.encode("utf8").find("°") != -1:
-        tex_entry = tex.format_small_caps(tex_entry)
+    tex_entry = tex.handle_pinyin(tex_entry)
+    tex_entry = tex.handle_caps(tex_entry)
     return tex_entry + EOL

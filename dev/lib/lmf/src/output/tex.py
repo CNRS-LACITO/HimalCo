@@ -83,26 +83,29 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     tex_file.write("\end{document}" + EOL)
     tex_file.close()
 
-## Functions to process LaTeX fields (output)
+## Functions to process LaTeX layout
 
-def format_font(text):
-    """Replace '\{xxx}' by '\ipa{xxx}'.
+def handle_font(text):
+    """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
     """
-    return text.replace("\\{", "\\ipa{")
+    return text.replace("{", "\\ipa{")
 
-def format_fn(text, font):
-    """Replace 'fn:xxx' and '|fn{xxx}' by font[NATIONAL](xxx).
+def handle_reserved(text):
+    """ Handle reserved characters: \ { } $ # & _ ^ ~ %.
     """
-    import re
-    if text.find("fn:") != -1:
-        pattern = r"(\w*)fn:([^\s\.,)]*)(\w*)"
-        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
-    if text.find("|fn{") != -1:
-        pattern = r"(\w*)\|fn{([^}]*)}(\w*)"
-        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    if text.find("$") != -1:
+        text = text.replace('$', '')
+    if text.find("#") != -1:
+        text = text.replace('#', '\#')
+    if text.find("& ") != -1:
+        text = text.replace('& ', '\& ')
+    if text.find("_") != -1:
+        text = text.replace('_', '\_').replace("\string\_", "\string_")
+    if text.find("^") != -1:
+        text = text.replace('^', '\^')
     return text
 
-def format_fv(text, font):
+def handle_fv(text, font):
     """Replace 'fv:xxx' and '|fv{xxx}' by font[VERNACULAR](xxx).
     """
     import re
@@ -115,17 +118,36 @@ def format_fv(text, font):
         text = re.sub(pattern, r"\1" + r"%s" % font[VERNACULAR](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
     return text
 
-def format_small_caps(text):
-    """Replace '°xxx' by '\textsc{xxx}' in translated examples.
+def handle_fn(text, font):
+    """Replace 'fn:xxx' and '|fn{xxx}' by font[NATIONAL](xxx).
     """
     import re
-    return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+    if text.find("fn:") != -1:
+        pattern = r"(\w*)fn:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    if text.find("|fn{") != -1:
+        pattern = r"(\w*)\|fn{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    return text
 
-def format_pinyin(text):
+def handle_pinyin(text):
     """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
+        """
+    import re
+    if text.find("@") != -1:
+        text = re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
+    return text
+
+def handle_caps(text):
+    """Handle small caps.
+    Replace '°xxx' by '\textsc{xxx}' in translated examples.
     """
     import re
-    return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
+    if text.encode("utf8").find("°") != -1:
+        text = re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+    return text
+
+## Functions to process LaTeX fields (output)
 
 def format_uid(lexical_entry, font):
     """! @brief Transform unique identifier of a lexical entry in ASCII format.
@@ -239,7 +261,7 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     if language == VERNACULAR:
                         result += font[VERNACULAR](definition) + ". "
                     elif language == NATIONAL:
-                        result += font[NATIONAL](definition) + ". "
+                        result += font[NATIONAL](handle_font(definition)) + ". "
                     elif language == REGIONAL:
                         result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
                     else:
@@ -249,7 +271,7 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     if language == VERNACULAR:
                         result += font[VERNACULAR](gloss) + ". "
                     elif language == NATIONAL:
-                        result += font[NATIONAL](gloss) + ". "
+                        result += font[NATIONAL](handle_font(gloss)) + ". "
                     elif language == REGIONAL:
                         result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
                     else:
@@ -306,7 +328,7 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(ENGLISH):
                 result += "\\trans " + example + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += "\\trans \\textit{" + font[NATIONAL](example) + "}" + EOL
+                result += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
             for example in context.find_written_forms(REGIONAL):
                 result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
             result += "\\end{exe}" + EOL
@@ -325,7 +347,7 @@ def format_usage_notes(lexical_entry, font):
         for usage in sense.find_usage_notes(language=ENGLISH):
             result += "\\textit{Usage:} " + usage + " "
         for usage in sense.find_usage_notes(language=NATIONAL):
-            result += "\\textit{" + font[NATIONAL](usage) + "} "
+            result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
         for usage in sense.find_usage_notes(language=REGIONAL):
             result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
@@ -343,7 +365,7 @@ def format_encyclopedic_informations(lexical_entry, font):
         for information in sense.find_encyclopedic_informations(language=ENGLISH):
             result += information + " "
         for information in sense.find_encyclopedic_informations(language=NATIONAL):
-            result += font[NATIONAL](information) + " "
+            result += font[NATIONAL](handle_font(information)) + " "
         for information in sense.find_encyclopedic_informations(language=REGIONAL):
             result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result

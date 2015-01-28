@@ -15,6 +15,11 @@ def process_ec(attributes, ec, lexical_entry):
 def process_sd(attributes, sd, lexical_entry):
     lexical_entry.set_semantic_domain(sd, attributes["lang"])
 
+def force_caps(text):
+    """Force first letter to be in upper case.
+    """
+    return text[0].upper() + text[1:]
+
 ## Functions to process some MDF fields (output)
 def get_ec(lexical_entry):
     ec = lexical_entry.get_etymology_comment()
@@ -43,8 +48,13 @@ mdf2lmf.update({
     "pdf"   : lambda pdf, lexical_entry: lexical_entry.set_paradigm_form(pdf, language=FRENCH),
     "xf"    : lambda xf, lexical_entry: lexical_entry.add_example(xf, language=FRENCH),
     "xc"    : lambda xc, lexical_entry: lexical_entry.set_example_comment(xc),
-    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(df, language=FRENCH),
-    "gf"    : lambda gf, lexical_entry: lexical_entry.set_gloss(gf, language=FRENCH)
+    "gf"    : lambda gf, lexical_entry: lexical_entry.set_gloss(gf, language=FRENCH),
+    # Force first character of definitions to be in upper case
+    "dv"    : lambda dv, lexical_entry: lexical_entry.set_definition(force_caps(dv), language=VERNACULAR),
+    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=ENGLISH),
+    "dn"    : lambda dn, lexical_entry: lexical_entry.set_definition(force_caps(dn), language=NATIONAL),
+    "dr"    : lambda dr, lexical_entry: lexical_entry.set_definition(force_caps(dr), language=REGIONAL),
+    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(force_caps(df), language=FRENCH)
 })
 
 lmf2mdf = dict(lmf_mdf)
@@ -86,11 +96,6 @@ my_font = dict({
     FRENCH      : lambda text: text
 })
 
-def format_caps(text):
-    """Force first letter to be in upper case.
-    """
-    return text[0].upper() + text[1:]
-
 def format_tone(lexical_entry, font):
     if lexical_entry.get_tones() is not None:
         result = lexical_entry.get_tones()[0]
@@ -101,8 +106,7 @@ def format_definition(lexical_entry, font, language):
     for sense in lexical_entry.get_senses():
         if sense.find_definitions(language) is not None:
             for definition in sense.find_definitions(language):
-                # Display first character in upper case
-                result += font[language](format_caps(definition))
+                result += font[language](definition)
     return result
 
 def format_gloss(lexical_entry, font, language):

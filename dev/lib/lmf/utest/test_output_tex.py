@@ -119,36 +119,36 @@ class TestTexFunctions(unittest.TestCase):
         # Remove LaTeX file
         os.remove(tex_filename)
 
-    def test_format_font(self):
-        input = "bla\{bla} bla \{bla}bla {bla}"
-        output = "bla\ipa{bla} bla \ipa{bla}bla {bla}"
-        self.assertEqual(format_font(input), output)
+    def test_handle_font(self):
+        input = "bla{bla} bla {bla}bla {bla}"
+        output = "bla\ipa{bla} bla \ipa{bla}bla \ipa{bla}"
+        self.assertEqual(handle_font(input), output)
 
-    def test_format_fn(self):
+    def test_handle_fn(self):
         input = "textfn:this fn:but not this"
         output = "text\\national{this} \\national{but} not this"
-        self.assertEqual(format_fn(input, font), output)
+        self.assertEqual(handle_fn(input, font), output)
         input = "textfn:this |fn{and this}"
         output = "text\\national{this} \\national{and this}"
-        self.assertEqual(format_fn(input, font), output)
+        self.assertEqual(handle_fn(input, font), output)
 
-    def test_format_fv(self):
+    def test_handle_fv(self):
         input = "fv:something here and fv:there"
         output = "\\vernacular{something} here and \\vernacular{there}"
-        self.assertEqual(format_fv(input, font), output)
+        self.assertEqual(handle_fv(input, font), output)
         input = "|fv{something here} and fv:there"
         output = "\\vernacular{something here} and \\vernacular{there}"
-        self.assertEqual(format_fv(input, font), output)
+        self.assertEqual(handle_fv(input, font), output)
 
-    def test_format_small_caps(self):
+    def test_handle_caps(self):
         input = u"°trucs et°astuces"
         output = "\\textsc{trucs} et\\textsc{astuces}"
-        self.assertEqual(format_small_caps(input), output)
+        self.assertEqual(handle_caps(input), output)
 
-    def test_format_pinyin(self):
+    def test_handle_pinyin(self):
         input = "@at at@at at"
         output = "\\textcolor{gray}{at} at\\textcolor{gray}{at} at"
-        self.assertEqual(format_pinyin(input), output)
+        self.assertEqual(handle_pinyin(input), output)
 
     def test_format_uid(self):
         entry = LexicalEntry("link_0")

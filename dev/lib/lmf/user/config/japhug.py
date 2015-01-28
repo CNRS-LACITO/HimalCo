@@ -5,6 +5,7 @@ from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNAC
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
+import output.tex as tex
 
 FRENCH = "fra"
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
@@ -182,11 +183,6 @@ def format_notes(lexical_entry, font):
         result += "\mytextsc{" + note + "} "
     return result
 
-def format_font(text):
-    """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
-    """
-    return text.replace("{", "\\ipa{")
-
 def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     result = ""
     for sense in lexical_entry.get_senses():
@@ -196,7 +192,7 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     if language == VERNACULAR:
                         result += font[VERNACULAR](definition) + ". "
                     elif language == NATIONAL:
-                        result += font[NATIONAL](format_font(definition)) + ". "
+                        result += font[NATIONAL](tex.handle_font(definition)) + ". "
                     elif language == REGIONAL:
                         result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
                     else:
@@ -206,7 +202,7 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     if language == VERNACULAR:
                         result += font[VERNACULAR](gloss) + ". "
                     elif language == NATIONAL:
-                        result += font[NATIONAL](format_font(gloss)) + ". "
+                        result += font[NATIONAL](tex.handle_font(gloss)) + ". "
                     elif language == REGIONAL:
                         result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
                     else:
@@ -231,7 +227,7 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(ENGLISH):
                 result += example + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += "\\textit{" + font[NATIONAL](format_font(example)) + "}" + EOL
+                result += "\\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
             for example in context.find_written_forms(REGIONAL):
                 result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
@@ -244,7 +240,7 @@ def format_usage_notes(lexical_entry, font):
         for usage in sense.find_usage_notes(language=ENGLISH):
             result += "\\textit{Usage:} " + usage + " "
         for usage in sense.find_usage_notes(language=NATIONAL):
-            result += "\\textit{NatUsage:} " + font[NATIONAL](format_font(usage)) + " "
+            result += "\\textit{NatUsage:} " + font[NATIONAL](tex.handle_font(usage)) + " "
         for usage in sense.find_usage_notes(language=REGIONAL):
             result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
@@ -257,7 +253,7 @@ def format_encyclopedic_informations(lexical_entry, font):
         for information in sense.find_encyclopedic_informations(language=ENGLISH):
             result += information + " "
         for information in sense.find_encyclopedic_informations(language=NATIONAL):
-            result += font[NATIONAL](format_font(information)) + " "
+            result += font[NATIONAL](tex.handle_font(information)) + " "
         for information in sense.find_encyclopedic_informations(language=REGIONAL):
             result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
@@ -279,7 +275,6 @@ def format_paradigms(lexical_entry, font):
 
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
-    import output.tex as tex
     tex_entry = ""
     # lexeme, id and phonetic variants
     tex_entry += format_lexeme(lexical_entry, font)
@@ -316,23 +311,11 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_status(lexical_entry, font)
     # date
     tex_entry += tex.format_date(lexical_entry, font)
-    # Handle reserved characters: \ { } $ # & _ ^ ~ %
-    if tex_entry.find("@") != -1:
-        tex_entry = tex.format_pinyin(tex_entry)
-    if tex_entry.find("#") != -1:
-        tex_entry = tex_entry.replace('#', '\#')
-    if tex_entry.find("_") != -1:
-        tex_entry = tex_entry.replace('_', '\_').replace("\string\_", "\string_")
-    if tex_entry.find("& ") != -1:
-        tex_entry = tex_entry.replace('& ', '\& ')
-    if tex_entry.find("$") != -1:
-        tex_entry = tex_entry.replace('$', '')
-    if tex_entry.find("^") != -1:
-        tex_entry = tex_entry.replace('^', '\^')
-    # Handle fonts
-    tex_entry = tex.format_fn(tex_entry, font)
-    tex_entry = tex.format_fv(tex_entry, font)
+    # Handle reserved characters and fonts
+    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_fv(tex_entry, font)
+    tex_entry = tex.handle_fn(tex_entry, font)
     # Special formatting
-    if tex_entry.encode("utf8").find("°") != -1:
-        tex_entry = tex.format_small_caps(tex_entry)
+    tex_entry = tex.handle_pinyin(tex_entry)
+    tex_entry = tex.handle_caps(tex_entry)
     return tex_entry + EOL
