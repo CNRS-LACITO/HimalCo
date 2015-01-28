@@ -1,24 +1,7 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from utils.xml_format import write_result, Element, SubElement
-
-def format_pinyin(element):
-    """Replace '@xxx' in the element attribute "val" by '<span class="pinyin">xxx</span>'.
-    """
-    import re
-    # Find pinyin
-    result = re.match(r"(.*)@(\w*)(.*)", element.attrib["val"])
-    before = result.group(1)
-    pinyin = result.group(2)
-    after = result.group(3)
-    # Create span
-    span = Element("span")
-    span.attrib["class"] = "pinyin"
-    span.text = pinyin
-    span.tail = after
-    # Insert span in element
-    element.text = before
-    element.insert(0, span)
 
 def xml_lmf_write(object, filename):
     """! @brief Write an XML LMF file.
@@ -60,5 +43,197 @@ def build_sub_elements(object, element):
                 else:
                     # In all other cases, an XML sub-element must be created with the keyword name "feat"
                     feat = SubElement(element, "feat", att=attr_name, val=unicode(attr_value))
-                    if attr_value.find("@") != -1:
-                        format_pinyin(feat)
+                    # Handle reserved characters and fonts
+                    handle_reserved(feat)
+                    handle_fv(feat)
+                    handle_fn(feat)
+                    handle_font(feat)
+                    # Special formatting
+                    handle_pinyin(feat)
+                    handle_caps(feat)
+
+## Functions to process XML/XHTML layout
+
+def handle_reserved(element):
+    """ Handle reserved characters.
+    """
+    return element
+
+def handle_fv(element):
+    """Replace 'fv:xxx' and '|fv{xxx}' by '<span class="vernacular">xxx</span>'.
+    """
+    import re
+    # Find text to display in vernacular font
+    pattern = r"(([^:\|]*)fv:([^\s\.,)]*)(.*))|(([^:\|]*)\|fv{([^}]*)}(.*))"
+    result = re.match(pattern, element.attrib["val"])
+    # Initialize loop variables
+    previous_span = None
+    index = 0
+    while result:
+        if result.group(1) is not None:
+            before = result.group(2)
+            vernacular = result.group(3)
+            after = result.group(4)
+        elif result.group(5) is not None:
+            before = result.group(6)
+            vernacular = result.group(7)
+            after = result.group(8)
+        # Handle previous span or element
+        if previous_span is None:
+            element.text = before
+        else:
+            previous_span.tail = before
+        # Create span
+        span = Element("span")
+        span.attrib["class"] = "vernacular"
+        span.text = vernacular
+        # Insert span in element
+        element.insert(index, span)
+        # Update result
+        result = re.match(pattern, after)
+        if not result:
+            span.tail = after
+        # Update loop variables
+        previous_span = span
+        index += 1
+    return element
+
+def handle_fn(element):
+    """Replace 'fn:xxx' and '|fn{xxx}' by '<span class="national">xxx</span>'.
+    """
+    import re
+    # Find text to display in vernacular font
+    pattern = r"([^:\|]*)((fn:([^\s\.,)]*)|(\|fn{([^}]*)})))(.*)"
+    result = re.match(pattern, element.attrib["val"])
+    # Initialize loop variables
+    previous_span = None
+    index = 0
+    while result:
+        before = result.group(1)
+        if result.group(4) is not None:
+            national = result.group(4)
+        elif result.group(6) is not None:
+            national = result.group(6)
+        after = result.group(7)
+        # Handle previous span or element
+        if previous_span is None:
+            element.text = before
+        else:
+            previous_span.tail = before
+        # Create span
+        span = Element("span")
+        span.attrib["class"] = "national"
+        span.text = national
+        # Insert span in element
+        element.insert(index, span)
+        # Update result
+        result = re.match(pattern, after)
+        if not result:
+            span.tail = after
+        # Update loop variables
+        previous_span = span
+        index += 1
+    return element
+
+def handle_font(element):
+    """Replace '{xxx}' by '<span class="ipa">xxx</span>'.
+    """
+    import re
+    # Find text to display in IPA
+    pattern = r"([^{}]*){([^}]*)}(.*)"
+    result = re.match(pattern, element.attrib["val"])
+    # Initialize loop variables
+    previous_span = None
+    index = 0
+    while result:
+        before = result.group(1)
+        ipa = result.group(2)
+        after = result.group(3)
+        # Handle previous span or element
+        if previous_span is None:
+            element.text = before
+        else:
+            previous_span.tail = before
+        # Create span
+        span = Element("span")
+        span.attrib["class"] = "ipa"
+        span.text = ipa
+        # Insert span in element
+        element.insert(index, span)
+        # Update result
+        result = re.match(pattern, after)
+        if not result:
+            span.tail = after
+        # Update loop variables
+        previous_span = span
+        index += 1
+    return element
+
+def handle_pinyin(element):
+    """Replace '@xxx' by '<span class="pinyin">xxx</span>'.
+    """
+    import re
+    # Find pinyin
+    pattern = r"([^@]*)@(\w*)(.*)"
+    result = re.match(pattern, element.attrib["val"])
+    # Initialize loop variables
+    previous_span = None
+    index = 0
+    while result:
+        before = result.group(1)
+        pinyin = result.group(2)
+        after = result.group(3)
+        # Handle previous span or element
+        if previous_span is None:
+            element.text = before
+        else:
+            previous_span.tail = before
+        # Create span
+        span = Element("span")
+        span.attrib["class"] = "pinyin"
+        span.text = pinyin
+        # Insert span in element
+        element.insert(index, span)
+        # Update result
+        result = re.match(pattern, after)
+        if not result:
+            span.tail = after
+        # Update loop variables
+        previous_span = span
+        index += 1
+    return element
+
+def handle_caps(element):
+    """Handle small caps.
+    Replace '°xxx' by '<span class="sc">xxx</span>'.
+    """
+    import re
+    pattern = r"([^°]*)°([^\s\.,)+/:]*)(.*)"
+    # Find text to display in small caps
+    result = re.match(pattern, element.attrib["val"].encode("utf8"))
+    # Initialize loop variables
+    previous_span = None
+    index = 0
+    while result:
+        before = result.group(1).decode("utf8")
+        sc = result.group(2).decode("utf8")
+        after = result.group(3).decode("utf8")
+        # Handle previous span or element
+        if previous_span is None:
+            element.text = before
+        else:
+            previous_span.tail = before
+        # Create span
+        span = Element("span")
+        span.attrib["class"] = "sc"
+        span.text = sc
+        # Insert span in element
+        element.insert(index, span)
+        # Update result
+        result = re.match(pattern, after.encode("utf8"))
+        if not result:
+            span.tail = after
+        # Update loop variables
+        previous_span = span
+        index += 1
+    return element
