@@ -51,6 +51,7 @@ ps2partOfSpeech.update({
     "nP"            : "possessed noun",             # possessed nouns
     "Posp"          : "possessed noun",             # possessed nouns
     "Post"          : "possessed noun",             # possessed nouns
+    "post"          : "possessed noun",             # possessed nouns
     "postp"         : "possessed noun",             # possessed nouns
     "quant"         : "numeral",                    # number
     "part"          : "particle",                   # discourse particle
