@@ -88,7 +88,11 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
 def handle_font(text):
     """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
     """
-    return text.replace("{", "\\ipa{")
+    import re
+    pattern = r"([^\\]*){([^}]*)}(.*)"
+    while re.match(pattern, text):
+        text = re.sub(pattern, r"\1" + r"\\ipa{" + r"\2" + "}" + r"\3", text)
+    return text
 
 def handle_reserved(text):
     """ Handle reserved characters: \ { } $ # & _ ^ ~ %.
