@@ -40,6 +40,8 @@ def build_sub_elements(object, element):
                 elif attr_name in ["dtdVersion", "id", "targets"]:
                     # If this is a specical attribute ("id" or "targets"), it must be inserted as an XML element attribute
                     element.attrib.update({attr_name: unicode(attr_value)})
+                    if attr_name == "targets":
+                        add_link(object, element)
                 else:
                     # In all other cases, an XML sub-element must be created with the keyword name "feat"
                     feat = SubElement(element, "feat", att=attr_name, val=unicode(attr_value))
@@ -53,6 +55,27 @@ def build_sub_elements(object, element):
                     handle_caps(feat)
 
 ## Functions to process XML/XHTML layout
+
+def add_link(object, element):
+    """Insert an hyperlink <a href=xxx>xxx<a/> in XML.
+    """
+    # To access options
+    from lmf import options
+    global options
+    if options.cross_references:
+        # Retrieve identifier
+        try:
+            id = object.get_lexical_entry().get_id()
+        except AttributeError:
+            id = None
+        if id is not None:
+            # Create link
+            a = Element("a")
+            a.attrib["href"] = id
+            a.text = element.attrib["targets"]
+            # Insert link in element
+            element.insert(0, a)
+    return (object, element)
 
 def handle_reserved(element):
     """ Handle reserved characters.

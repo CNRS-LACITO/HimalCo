@@ -76,6 +76,9 @@ def get_sub_elements(instance, element):
         if sub_element.tag == "feat":
             # "feat" elements have 2 XML attributes: one for LMF attribute name ("att"), a second for LMF attribute value ("val")
             setattr(instance, sub_element.attrib["att"], sub_element.attrib["val"])
+        elif sub_element.tag == "a":
+            # "a" elements are HTML links => do not consider them
+            pass
         else:
             # Create LMF instances corresponding to XML sub-elements
             sub_instance = factory(sub_element.tag, sub_element.attrib)

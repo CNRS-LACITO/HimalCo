@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from startup import *
-from output.xml_lmf import xml_lmf_write, build_sub_elements, handle_reserved, handle_fv, handle_fn, handle_font, handle_pinyin, handle_caps
+from output.xml_lmf import xml_lmf_write, build_sub_elements, add_link, handle_reserved, handle_fv, handle_fn, handle_font, handle_pinyin, handle_caps
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from utils.xml_format import Element, SubElement, tostring
@@ -69,6 +69,21 @@ class TestXmlLmfFunctions(unittest.TestCase):
         del instance.lemma
         instance.lemma = None
         del instance, element
+
+    def test_add_link(self):
+        from morphology.related_form import RelatedForm
+        input = Element("RelatedForm", targets="lx")
+        form = RelatedForm()
+        form.set_lexical_entry(LexicalEntry(id="lx_id"))
+        # Create output element and sub-elements
+        output = Element("RelatedForm", targets="lx")
+        sub = SubElement(output, "a")
+        sub.attrib["href"] = "lx_id"
+        # Fill in text
+        sub.text = "lx"
+        result = add_link(form, input)
+        self.assertEqual(result[0], form)
+        self.assertEqual(tostring(result[1]), tostring(output))
 
     def test_handle_reserved(self):
         pass
