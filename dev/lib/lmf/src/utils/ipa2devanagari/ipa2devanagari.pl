@@ -117,7 +117,7 @@ sub infinitive {
     else {
         $variable = infinitive1($variable);
     }
-    $variable =~ s/[\r\n]+$//;
+    #$variable =~ s/[\r\n]+$//;
     return $variable."nɛ";
 }
 
