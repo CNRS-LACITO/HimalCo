@@ -9,8 +9,10 @@ from utils.error_handling import Warning
 
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
 
-# Consider only the first form
-items=lambda lexical_entry: lexical_entry.get_citation_forms(script_name="devanagari")[0]
+def get_nep(lexical_entry):
+    # Consider only the first form
+    return lexical_entry.get_citation_forms(script_name="devanagari")[0]
+items=lambda lexical_entry: get_nep(lexical_entry)
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps2partOfSpeech = ps_partOfSpeech
@@ -55,6 +57,10 @@ def check_nep(lexical_entry, nep):
         if form == nep:
             ok = True
     if not ok:
+        # Replace 'lc_dev' generated form by 'nep' form
+        for form in lexical_entry.get_form_representations():
+            if form.get_scriptName() == "devanagari":
+                form.set_citationForm(nep)
         print unicode(Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme())))
 def check_se(lexical_entry, se_tmp):
     ok = False
@@ -111,8 +117,8 @@ partOfSpeech2tex.update({
 
 my_font = dict({
     VERNACULAR  : lambda text: "\\textbf{\ipa{" + text + "}}",
-    ENGLISH     : lambda text: text,
-    NATIONAL    : lambda text: "\\textit{\\skt{" + text + "}}",
+    ENGLISH     : lambda text: "\\eng{" + text + "}",
+    NATIONAL    : lambda text: text,
     REGIONAL    : lambda text: "\ipa{" + text + "}"
 })
 
@@ -144,7 +150,7 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(ENGLISH):
                 result += "\\trans " + example + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += "\\trans \\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
+                result += "\\trans " + font[NATIONAL](tex.handle_font(example)) + EOL
             for example in context.find_written_forms(REGIONAL):
                 result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
             result += "\\end{exe}" + EOL

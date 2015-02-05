@@ -12,7 +12,10 @@
 \usepackage{multicol}
 \setlength{\columnseprule}{1pt}
 \setlength{\columnsep}{1.5cm}
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{CharisSIL}
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{CharisSIL}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\english[]{CharisSIL}
+\newcommand{\eng}[1]{{\english #1}}
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{CharisSIL}
 \newcommand{\ipa}[1]{{\phon #1}} % API en italique
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % pour le chinois
