@@ -285,11 +285,14 @@ sub transcr {
     $string =~ s/न्न/न्‍न/g;
     $string =~ s/क्न/क्‍न/g;
     $string =~ s/स्न/स्‍न/g;
-    $string =~ s/च्न/च्‌‍न/g;
-    $string =~ s/च्च/च्‌‍च/g;
+    $string =~ s/च्न/च्‍न/g;
+    $string =~ s/च्च/च्‍च/g;
     $string =~ s/क्ल/क्‍ल/g;
     $string =~ s/प्ल/प्‍ल/g;
     $string =~ s/ल्ल/ल्‍ल/g;
+    $string =~ s/क्व/क्‍व/g;
+    $string =~ s/ख्व/ख्‍व/g;
+    $string =~ s/द्व/द्‍व/g;
     $string =~ s/च्व/च्‍व/g;
     $string =~ s/अ्वा/अ\\skt\{्\}वा/g;
     $string =~ s/अ्य/अ\\skt\{्\}य/g;  
@@ -305,6 +308,7 @@ sub transcr {
     $string =~ s/ह्व/ह्‍व/g;
     $string =~ s/\.$/ ।/g;
     $string =~ s/्\-/\\skt{्}/g;
+    $string =~ s/-//g;
     $string =~ s/्\./\\skt{्}/g; # unpredictable syllable breaks
     $string =~ tr/[A-Z]/[a-z]/;
 
