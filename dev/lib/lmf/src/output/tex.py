@@ -54,15 +54,20 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
                     try:
-                        if int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character]): # TODO: do not consider special characters
+                        if ( (type(sort_order) is not type(dict())) and ((current_character == '') or (sort_order(items(lexical_entry)[0]) != sort_order(current_character))) ) \
+                            or ( (type(sort_order) is type(dict())) and (int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character])) ):
+                            # TODO: do not consider special characters
                             current_character = items(lexical_entry)[0]
                             tex_file.write("\\newpage" + EOL)
                             title = ''
-                            for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
-                                if int(value) == int(sort_order[current_character]):
-                                    title += ' ' + key
-                            tex_file.write("\\section*{-\ipa{" + title + " }-} \hspace{1.4ex}" + EOL)
-                            tex_file.write("\\pdfbookmark[1]{\ipa{" + title + " }}{" + title + " }" + EOL)
+                            if type(sort_order) is not type(dict()):
+                                title += ' ' + font[NATIONAL](current_character)
+                            else:
+                                for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
+                                    if int(value) == int(sort_order[current_character]):
+                                        title += ' ' + font[VERNACULAR](key)
+                            tex_file.write("\\section*{-" + title + " -} \hspace{1.4ex}" + EOL)
+                            #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)

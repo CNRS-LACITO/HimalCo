@@ -9,12 +9,8 @@ from utils.error_handling import Warning
 
 AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
 
-def get_ge(lexical_entry):
-    for sense in lexical_entry.get_senses():
-        if len(sense.find_glosses(ENGLISH)) != 0:
-            return sense.find_glosses(ENGLISH)[0]
-    return "aaa"
-items=lambda lexical_entry: get_ge(lexical_entry)
+# Consider only the first form
+items=lambda lexical_entry: lexical_entry.get_citation_forms(script_name="devanagari")[0]
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps2partOfSpeech = ps_partOfSpeech
@@ -113,6 +109,47 @@ partOfSpeech2tex.update({
 
 ## Functions to process some LaTeX fields (output)
 
+my_font = dict({
+    VERNACULAR  : lambda text: "\\textbf{\ipa{" + text + "}}",
+    ENGLISH     : lambda text: text,
+    NATIONAL    : lambda text: "\\textit{\\skt{" + text + "}}",
+    REGIONAL    : lambda text: "\ipa{" + text + "}"
+})
+
+def format_lexeme(lexical_entry, font):
+    import output.tex as tex
+    inf_dev = font[NATIONAL](lexical_entry.get_citation_forms(script_name="devanagari")[0]) # nep or lc_dev
+    inf_api = font[VERNACULAR](lexical_entry.get_citation_forms(script_name="ipa")[0]) # lc
+    root_api = font[VERNACULAR](lexical_entry.get_lexeme()) # lx
+    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.get_homonymNumber() is not None:
+        # Add homonym number to lexeme
+        root_api += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
+    result += inf_dev + " " + inf_api + " (" + root_api + ")"
+    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    if not lexical_entry.is_subentry():
+        result += "\markboth{" + inf_dev + "}{}" + EOL
+    return result
+
+def format_examples(lexical_entry, font):
+    import output.tex as tex
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for context in sense.get_contexts():
+            result += "\\begin{exe}" + EOL
+            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
+                result += "\\sn " + font[NATIONAL](example) + EOL
+            for example in context.find_written_forms(VERNACULAR, script_name="ipa"):
+                result += "\\trans " + font[VERNACULAR](example) + EOL
+            for example in context.find_written_forms(ENGLISH):
+                result += "\\trans " + example + EOL
+            for example in context.find_written_forms(NATIONAL):
+                result += "\\trans \\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
+            for example in context.find_written_forms(REGIONAL):
+                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+            result += "\\end{exe}" + EOL
+    return result
+
 def format_paradigms(lexical_entry, font):
     result = ""
     current_label = None
@@ -129,57 +166,53 @@ def format_paradigms(lexical_entry, font):
     return result
 
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
-# lc_dev = nep -> lexical_entry.get_citation_forms(script_name="devanagari")
-# lc -> lexical_entry.get_citation_forms(script_name="ipa")
-# (lx)
-# xv_dev -> context.find_written_forms(VERNACULAR, script_name="devanagari")
 def lmf2tex(lexical_entry, font):
     import output.tex as tex
     tex_entry = ""
     # lexeme and id
-    tex_entry += tex.format_lexeme(lexical_entry, font)
+    tex_entry += format_lexeme(lexical_entry, my_font)
     # TODO: phonetic variants ? or variant form ?
     # sound
-    #tex_entry += tex.format_audio(lexical_entry, font)
+    #tex_entry += tex.format_audio(lexical_entry, my_font)
     # part of speech
-    tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech2tex)
+    tex_entry += tex.format_part_of_speech(lexical_entry, my_font, mapping=partOfSpeech2tex)
     # grammatical notes
-    tex_entry += tex.format_notes(lexical_entry, font)
+    tex_entry += tex.format_notes(lexical_entry, my_font)
     # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL])
+    tex_entry += tex.format_definitions(lexical_entry, my_font, languages=[VERNACULAR, ENGLISH, NATIONAL])
     # example
-    tex_entry += tex.format_examples(lexical_entry, font)
+    tex_entry += format_examples(lexical_entry, my_font)
     # usage note
-    tex_entry += tex.format_usage_notes(lexical_entry, font)
+    tex_entry += tex.format_usage_notes(lexical_entry, my_font)
     # encyclopedic information
-    tex_entry += tex.format_encyclopedic_informations(lexical_entry, font)
+    tex_entry += tex.format_encyclopedic_informations(lexical_entry, my_font)
     # restriction
-    tex_entry += tex.format_restrictions(lexical_entry, font)
+    tex_entry += tex.format_restrictions(lexical_entry, my_font)
     # synonym, antonym, morphology, related form
-    tex_entry += tex.format_related_forms(lexical_entry, font)
+    tex_entry += tex.format_related_forms(lexical_entry, my_font)
     # TODO: variant form?
-    tex_entry += tex.format_variant_forms(lexical_entry, font)
+    tex_entry += tex.format_variant_forms(lexical_entry, my_font)
     # borrowed word
-    tex_entry += tex.format_borrowed_word(lexical_entry, font)
+    tex_entry += tex.format_borrowed_word(lexical_entry, my_font)
     # etymology
-    tex_entry += tex.format_etymology(lexical_entry, font)
+    tex_entry += tex.format_etymology(lexical_entry, my_font)
     # paradigms
-    tex_entry += tex.format_paradigms(lexical_entry, font)
-    tex_entry += format_paradigms(lexical_entry, font)
+    tex_entry += tex.format_paradigms(lexical_entry, my_font)
+    tex_entry += format_paradigms(lexical_entry, my_font)
     # semantic domain
-    tex_entry += tex.format_semantic_domains(lexical_entry, font)
+    tex_entry += tex.format_semantic_domains(lexical_entry, my_font)
     # TODO? bibliography
-    tex_entry += tex.format_bibliography(lexical_entry, font)
+    tex_entry += tex.format_bibliography(lexical_entry, my_font)
     # source
-    tex_entry += tex.format_source(lexical_entry, font)
+    tex_entry += tex.format_source(lexical_entry, my_font)
     # status
-    tex_entry += tex.format_status(lexical_entry, font)
+    tex_entry += tex.format_status(lexical_entry, my_font)
     # date
-    tex_entry += tex.format_date(lexical_entry, font)
+    tex_entry += tex.format_date(lexical_entry, my_font)
     # Handle reserved characters and fonts
     tex_entry = tex.handle_reserved(tex_entry)
-    tex_entry = tex.handle_fv(tex_entry, font)
-    tex_entry = tex.handle_fn(tex_entry, font)
+    tex_entry = tex.handle_fv(tex_entry, my_font)
+    tex_entry = tex.handle_fn(tex_entry, my_font)
     # Special formatting
     tex_entry = tex.handle_pinyin(tex_entry)
     tex_entry = tex.handle_caps(tex_entry)

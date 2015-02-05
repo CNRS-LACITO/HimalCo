@@ -169,14 +169,24 @@ class Lexicon():
             y = y.replace(u"\u0301", '').replace(u"\u0302", '')
             for i in range(min(len(x), len(y))):
                 try:
-                    if sort_order[x[i]] == sort_order[y[i]]:
-                        continue
-                    # If the 1st one is lower than the 2nd one, its rank is decremented
-                    if sort_order[x[i]] < sort_order[y[i]]:
-                        return -1
-                    # If the 1st one is greater than the 2nd one, its rank is incremented
-                    elif sort_order[x[i]] > sort_order[y[i]]:
-                        return 1
+                    if type(sort_order) is not type(dict()):
+                        if sort_order(x[i]) == sort_order(y[i]):
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order(x[i]) < sort_order(y[i]):
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order(x[i]) > sort_order(y[i]):
+                            return 1
+                    else:
+                        if sort_order[x[i]] == sort_order[y[i]]:
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order[x[i]] < sort_order[y[i]]:
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order[x[i]] > sort_order[y[i]]:
+                            return 1
                 # Handle other characters
                 except KeyError:
                     if options.verbose:
