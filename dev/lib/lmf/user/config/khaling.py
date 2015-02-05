@@ -73,7 +73,7 @@ def check_se(lexical_entry, se_tmp):
 mdf2lmf = dict(mdf_lmf)
 mdf2lmf.update({
     "nep"       : lambda nep, lexical_entry: check_nep(lexical_entry, nep), # infinitive in devanagari => check that it corresponds to 'lc_dev' value
-    "wav"       : lambda wav, lexical_entry: None,
+    "wav"       : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
     "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a),
     "se2"       : lambda se2, lexical_entry : None, # TODO
     "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(xv, language=VERNACULAR, script_name="ipa"),
@@ -179,7 +179,7 @@ def lmf2tex(lexical_entry, font):
     tex_entry += format_lexeme(lexical_entry, my_font)
     # TODO: phonetic variants ? or variant form ?
     # sound
-    #tex_entry += tex.format_audio(lexical_entry, my_font)
+    tex_entry += tex.format_audio(lexical_entry, my_font)
     # part of speech
     tex_entry += tex.format_part_of_speech(lexical_entry, my_font, mapping=partOfSpeech2tex)
     # grammatical notes
