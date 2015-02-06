@@ -309,22 +309,22 @@ sub transcr {
     $string =~ s/ख्व/ख्‍व/g;
     $string =~ s/द्व/द्‍व/g;
     $string =~ s/च्व/च्‍व/g;
-    $string =~ s/अ्वा/अ\\skt\{्\}वा/g;
-    $string =~ s/अ्य/अ\\skt\{्\}य/g;  
-    $string =~ s/्ये/\\mgl\{्\}ये/g;
-    $string =~ s/ुक्त/\\skt\{ुक्\}त/g;
-    $string =~ s/ुक्क/\\skt\{ुक्\}क/g;
-    $string =~ s/ुङ्/ुङ\\mgl\{्\}/g;
-    $string =~ s/क्त/\\skt\{क्\}त/g;
-    $string =~ s/क्क/\\skt\{क्\}क/g;
-    $string =~ s/ङ्/ङ\\mgl\{्\}/g;
+#	$string =~ s/अ्वा/अ\\skt\{्\}वा/g;
+#	$string =~ s/अ्य/अ\\skt\{्\}य/g;  
+#	$string =~ s/्ये/\\mgl\{्\}ये/g;
+#	$string =~ s/ुक्त/\\skt\{ुक्\}त/g;
+#	$string =~ s/ुक्क/\\skt\{ुक्\}क/g;
+#	$string =~ s/ुङ्/ुङ\\mgl\{्\}/g;
+	$string =~ s/क्त/क्\x{200C}त/g;
+	$string =~ s/क्क/क्\x{200C}क/g;
+	$string =~ s/ङ्/ङ्\x{200C}/g;
     $string =~ s/ह्य/ह्‍य/g;
-    $string =~ s/द्य/द्‍य/g;
+    $string =~ s/द्य/द्\x{200C}य/g;
     $string =~ s/ह्व/ह्‍व/g;
     $string =~ s/\.$/ ।/g;
-    $string =~ s/्\-/\\skt{्}/g;
+    $string =~ s/्\-/्\x{200C}/g;
     $string =~ s/-//g;
-    $string =~ s/्\./\\skt{्}/g; # unpredictable syllable breaks
+    $string =~ s/्\./्\x{200C}/g; # unpredictable syllable breaks
     $string =~ tr/[A-Z]/[a-z]/;
 
     return $string;
