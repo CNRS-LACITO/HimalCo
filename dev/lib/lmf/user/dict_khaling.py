@@ -16,7 +16,7 @@ lexical_resource.get_lexicon("khaling").set_label("khaling online dictionary").s
 
 # Set global information
 lexical_resource.set_creationDate("2015-01-16")
-lexical_resource.set_lastUpdate("2015-02-05")
+lexical_resource.set_lastUpdate("2015-02-06")
 lexical_resource.set_author("Guillaume Jacques")
 lexical_resource.set_description("This is the khaling lexicon of HimalCo project.")
 print lexical_resource.get_bibliographicCitation()

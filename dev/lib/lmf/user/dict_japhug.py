@@ -15,7 +15,7 @@ lexical_resource.get_lexicon("japhug").set_label("japhug online dictionary").set
 
 # Set global information
 lexical_resource.set_creationDate("2014-11-27")
-lexical_resource.set_lastUpdate("2014-11-27")
+lexical_resource.set_lastUpdate("2014-02-06")
 lexical_resource.set_author("Guillaume Jacques")
 lexical_resource.set_description("This is the japhug lexicon of HimalCo project.")
 print lexical_resource.get_bibliographicCitation()
