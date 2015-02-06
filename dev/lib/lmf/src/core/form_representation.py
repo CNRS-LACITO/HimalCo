@@ -53,6 +53,27 @@ class FormRepresentation(Representation):
         """
         return self.__speaker
 
+    def set_writtenForm(self, written_form, script_name=None):
+        """! @brief Set written form and script.
+        @param written_form The written form to set.
+        @param script_name Script used for the written form.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Written form value '%s' is not allowed" % written_form
+        check_attr_type(written_form, [str, unicode], error_msg)
+        self.writtenForm = written_form
+        if script_name is not None:
+            self.set_scriptName(script_name)
+        return self
+
+    def get_writtenForm(self, script_name=None):
+        """! @brief Get written form.
+        @param script_name If this argument is given, get written form only if written using this script.
+        @return The filtered Representation attribute 'writtenForm'.
+        """
+        if script_name is None or script_name == self.get_scriptName():
+            return self.writtenForm
+
     def set_variantForm(self, variant_form):
         """! @brief Set variant form.
         @param variant_form The variant form to set.

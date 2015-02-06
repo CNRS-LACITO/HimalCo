@@ -784,10 +784,12 @@ class LexicalEntry():
         """
         return self.word_form
 
-    def set_paradigm(self, variant_form, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+    def set_paradigm(self, written_form, script_name=None, person=None, anymacy=None, grammatical_number=None, clusivity=None):
         """! @brief Set paradigm.
+        Attributes 'writtenForm' and 'scriptName' are owned by FormRepresentation, wich is owned by WordForm.
         Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
-        @param variant_form The paradigm to set.
+        @param written_form The paradigm to set.
+        @param script_name Script used for the written form.
         @param person Person, e.g. first person.
         @param anymacy Anymacy, e.g. animate or inanimate.
         @param grammatical_number Grammatical number, e.g. singular or plural.
@@ -798,7 +800,7 @@ class LexicalEntry():
         # Find corresponding word form
         for form in self.get_word_forms():
             if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
-                # Add a paradigm as a variant form to an existing word form
+                # Add a paradigm as a written form to an existing word form
                 word_form = form
                 break
         if word_form is None:
@@ -813,25 +815,27 @@ class LexicalEntry():
                 word_form.set_grammaticalNumber(grammatical_number)
             if clusivity is not None:
                 word_form.set_clusivity(clusivity)
-        word_form.set_variant_form(variant_form)
+        word_form.set_written_form(written_form, script_name)
         return self
 
-    def find_paradigms(self, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+    def find_paradigms(self, script_name=None, person=None, anymacy=None, grammatical_number=None, clusivity=None):
         """! @brief Find paradigms.
+        Attribute 'scriptName' is owned by FormRepresentation, wich is owned by WordForm.
         Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
-        Attribute 'variantForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm.
+        Attribute 'writtenForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm.
+        @param script_name If this argument is given, get paradigm written form only if written using this script.
         @param person Person, e.g. first person.
         @param anymacy Anymacy, e.g. animate or inanimate.
         @param grammatical_number Grammatical number, e.g. singular or plural.
         @param clusivity Clusivity, e.g. inclusive or exclusive.
-        @return A Python list of FormRepresentation attributes 'variantForm'.
+        @return A Python list of FormRepresentation attributes 'writtenForm'.
         """
-        variant_forms = []
+        written_forms = []
         # Find corresponding word form
         for form in self.get_word_forms():
             if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
-                variant_forms += form.get_variant_forms()
-        return variant_forms
+                written_forms += form.get_written_forms(script_name)
+        return written_forms
 
     def set_paradigm_label(self, paradigm_label):
         """! @brief Set paradigm label.

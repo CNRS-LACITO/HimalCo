@@ -63,6 +63,39 @@ class TestWordFormFunctions(unittest.TestCase):
         del self.word_form.form_representation[:]
         del repr1, repr2
 
+    def test_set_written_form(self):
+        form = "written"
+        self.assertIs(self.word_form.set_written_form(form), self.word_form)
+        self.assertEqual(self.word_form.form_representation[0].writtenForm, form)
+        script = "name"
+        self.assertIs(self.word_form.set_written_form(form, script), self.word_form)
+        self.assertEqual(self.word_form.form_representation[1].writtenForm, form)
+        self.assertEqual(self.word_form.form_representation[1].scriptName, script)
+
+    def test_get_written_forms(self):
+        form1 = "written1"
+        form2 = "written2"
+        script1 = "name1"
+        script2 = "name2"
+        # There is no FormRepresentation
+        self.assertListEqual(self.word_form.get_written_forms(), [])
+        # Create a FormRepresentation instance
+        repr1 = FormRepresentation()
+        repr1.writtenForm = form1
+        repr1.scriptName = script1
+        self.word_form.form_representation.append(repr1)
+        self.assertEqual(self.word_form.get_written_forms(), [form1])
+        self.assertEqual(self.word_form.get_written_forms(script1), [form1])
+        repr2 = FormRepresentation()
+        repr2.writtenForm = form2
+        repr2.scriptName = script2
+        self.word_form.form_representation.append(repr2)
+        self.assertEqual(self.word_form.get_written_forms(), [form1, form2])
+        self.assertEqual(self.word_form.get_written_forms(script2), [form2])
+        # Release FormRepresentation instances
+        del self.word_form.form_representation[:]
+        del repr1, repr2
+
     def test_set_variant_form(self):
         form = "variant"
         self.assertIs(self.word_form.set_variant_form(form), self.word_form)

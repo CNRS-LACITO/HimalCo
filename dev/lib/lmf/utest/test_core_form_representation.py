@@ -37,6 +37,26 @@ class TestFormRepresentationFunctions(unittest.TestCase):
         self.assertIsNone(self.form_representation.targets)
         self.assertListEqual(self.form_representation.get_speakers(), [])
 
+    def test_set_writtenForm(self):
+        form = "written"
+        self.assertIs(self.form_representation.set_writtenForm(form), self.form_representation)
+        self.assertEqual(self.form_representation.writtenForm, form)
+        script = "name"
+        self.assertIs(self.form_representation.set_writtenForm(form, script), self.form_representation)
+        self.assertEqual(self.form_representation.writtenForm, form)
+        self.assertEqual(self.form_representation.scriptName, script)
+
+    def test_get_writtenForm(self):
+        # Set written form
+        form = "hello"
+        script = "bye"
+        self.form_representation.writtenForm = form
+        self.form_representation.scriptName = script
+        # Test get written form
+        self.assertEqual(self.form_representation.get_writtenForm(), form)
+        self.assertIsNone(self.form_representation.get_writtenForm("byebye"))
+        self.assertEqual(self.form_representation.get_writtenForm(script), form)
+
     def test_set_variantForm(self):
         form = "alternative"
         self.assertIs(self.form_representation.set_variantForm(form), self.form_representation)

@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ENGLISH, REGIONAL, ps_partOfSpeech
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ENGLISH, REGIONAL, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
@@ -77,6 +77,15 @@ mdf2lmf.update({
     "a"         : lambda a, lexical_entry: lexical_entry.set_spelling_variant(a),
     "se2"       : lambda se2, lexical_entry : None, # TODO
     "xv"        : lambda xv, lexical_entry: lexical_entry.create_example(xv, language=VERNACULAR, script_name="ipa"),
+    "1s"        : lambda a1s, lexical_entry : lexical_entry.set_paradigm(a1s, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['s']),
+    "2s"        : lambda a2s, lexical_entry : lexical_entry.set_paradigm(a2s, script_name="ipa", person=pd_person[2], grammatical_number=pd_grammaticalNumber['s']),
+    "3s"        : lambda a3s, lexical_entry : lexical_entry.set_paradigm(a3s, script_name="ipa", person=pd_person[3], grammatical_number=pd_grammaticalNumber['s']),
+    "4s"        : lambda a4s, lexical_entry : lexical_entry.set_paradigm(a4s, script_name="ipa", anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s']),
+    "1d"        : lambda a1d, lexical_entry : lexical_entry.set_paradigm(a1d, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['d']),
+    "3d"        : lambda a3d, lexical_entry : lexical_entry.set_paradigm(a3d, script_name="ipa", person=pd_person[3], grammatical_number=pd_grammaticalNumber['d']),
+    "1p"        : lambda a1p, lexical_entry : lexical_entry.set_paradigm(a1p, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p']),
+    "1e"        : lambda a1e, lexical_entry : lexical_entry.set_paradigm(a1e, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e']),
+    "2p"        : lambda a2p, lexical_entry : lexical_entry.set_paradigm(a2p, script_name="ipa", person=pd_person[2], grammatical_number=pd_grammaticalNumber['p']),
     # Generated markers
     "lx_dev"    : lambda lx_dev, lexical_entry : None, # root in devanagari => not used
     "lx_tmp"    : lambda lx_tmp, lexical_entry : check_lx(lexical_entry, lx_tmp), # root in IPA => check that it corresponds to 'lx' value
@@ -86,15 +95,15 @@ mdf2lmf.update({
     "se2_tmp"   : lambda se2_tmp, lexical_entry : None, # TODO
     "se2_dev"   : lambda se2_dev, lexical_entry : None, # TODO
     "xv_dev"    : lambda xv_dev, lexical_entry : lexical_entry.add_example(xv_dev, language=VERNACULAR, script_name="devanagari"),
-    "1s_dev"    : lambda a1s_dev, lexical_entry : None,
-    "2s_dev"    : lambda a2s_dev, lexical_entry : None,
-    "3s_dev"    : lambda a3s_dev, lexical_entry : None,
-    "4s_dev"    : lambda a4s_dev, lexical_entry : None,
-    "1d_dev"    : lambda a1d_dev, lexical_entry : None,
-    "3d_dev"    : lambda a3d_dev, lexical_entry : None,
-    "1p_dev"    : lambda a1p_dev, lexical_entry : None,
-    "1e_dev"    : lambda a1e_dev, lexical_entry : None,
-    "2p_dev"    : lambda a2p_dev, lexical_entry : None
+    "1s_dev"    : lambda a1s_dev, lexical_entry : lexical_entry.set_paradigm(a1s_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['s']),
+    "2s_dev"    : lambda a2s_dev, lexical_entry : lexical_entry.set_paradigm(a2s_dev, script_name="devanagari", person=pd_person[2], grammatical_number=pd_grammaticalNumber['s']),
+    "3s_dev"    : lambda a3s_dev, lexical_entry : lexical_entry.set_paradigm(a3s_dev, script_name="devanagari", person=pd_person[3], grammatical_number=pd_grammaticalNumber['s']),
+    "4s_dev"    : lambda a4s_dev, lexical_entry : lexical_entry.set_paradigm(a4s_dev, script_name="devanagari", anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s']),
+    "1d_dev"    : lambda a1d_dev, lexical_entry : lexical_entry.set_paradigm(a1d_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['d']),
+    "3d_dev"    : lambda a3d_dev, lexical_entry : lexical_entry.set_paradigm(a3d_dev, script_name="devanagari", person=pd_person[3], grammatical_number=pd_grammaticalNumber['d']),
+    "1p_dev"    : lambda a1p_dev, lexical_entry : lexical_entry.set_paradigm(a1p_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p']),
+    "1e_dev"    : lambda a1e_dev, lexical_entry : lexical_entry.set_paradigm(a1e_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e']),
+    "2p_dev"    : lambda a2p_dev, lexical_entry : lexical_entry.set_paradigm(a2p_dev, script_name="devanagari", person=pd_person[2], grammatical_number=pd_grammaticalNumber['p'])
 })
 
 lmf2mdf = dict(lmf_mdf)
@@ -158,6 +167,30 @@ def format_examples(lexical_entry, font):
 
 def format_paradigms(lexical_entry, font):
     result = ""
+    persons_and_numbers = [(1, 's'), (2, 's'), (3, 's'), (1, 'd'), (3, 'd'), (1, 'p'), (2, 'p')]
+    for (pers, nb) in persons_and_numbers:
+        for form in lexical_entry.get_word_forms():
+            if form.get_person() == pd_person[pers] and form.get_grammaticalNumber() == pd_grammaticalNumber[nb]:
+                result += "\\textit{" + str(pers) + nb + ":} "
+                for paradigm in form.get_written_forms("ipa"):
+                    result += font[VERNACULAR](paradigm) + " "
+                for paradigm in form.get_written_forms("devanagari"):
+                    result += font[NATIONAL](paradigm) + " "
+    for form in lexical_entry.get_word_forms():
+        if form.get_anymacy() == pd_anymacy[4] and form.get_grammaticalNumber() == pd_grammaticalNumber['s']:
+            result += "\\textit{4s:} "
+            for paradigm in form.get_written_forms("ipa"):
+                result += font[VERNACULAR](paradigm) + " "
+            for paradigm in form.get_written_forms("devanagari"):
+                result += font[NATIONAL](paradigm) + " "
+    for form in lexical_entry.get_word_forms():
+        if form.get_person() == pd_person[1] and form.get_grammaticalNumber() == pd_grammaticalNumber['p'] and form.get_clusivity() == pd_clusivity['e']:
+            result += "\\textit{1e:} "
+            for paradigm in form.get_written_forms("ipa"):
+                result += font[VERNACULAR](paradigm) + " "
+            for paradigm in form.get_written_forms("devanagari"):
+                result += font[NATIONAL](paradigm) + " "
+    # Customized paradigms
     current_label = None
     for paradigm in lexical_entry.get_paradigms():
         if paradigm.get_paradigmLabel() is not None and paradigm.get_paradigm(language=VERNACULAR) is not None:
@@ -203,7 +236,6 @@ def lmf2tex(lexical_entry, font):
     # etymology
     tex_entry += tex.format_etymology(lexical_entry, my_font)
     # paradigms
-    tex_entry += tex.format_paradigms(lexical_entry, my_font)
     tex_entry += format_paradigms(lexical_entry, my_font)
     # semantic domain
     tex_entry += tex.format_semantic_domains(lexical_entry, my_font)

@@ -55,6 +55,38 @@ class WordForm(Form):
         """
         return self.form_representation
 
+    def set_written_form(self, written_form, script_name=None):
+        """! @brief Set written form.
+        This attribute is owned by Representation.
+        @param written_form Written form.
+        @param script_name Script used for the written form.
+        @return WordForm instance.
+        """
+        form_representation = None
+        # Set first FormRepresentation instance that has no written form
+        for repr in self.get_form_representations():
+            if repr.get_writtenForm() is None:
+                form_representation = repr
+                break
+        if form_representation is None:
+            # Create a FormRepresentation instance
+            form_representation = self.create_form_representation()
+            self.add_form_representation(form_representation)
+        form_representation.set_writtenForm(written_form, script_name)
+        return self
+
+    def get_written_forms(self, script_name=None):
+        """! @brief Get all written forms.
+        This attribute is owned by Representation.
+        @param script_name If this argument is given, get written form only if written using this script.
+        @return A Python list of FormRepresentation attributes 'writtenForm'.
+        """
+        written_forms = []
+        for repr in self.get_form_representations():
+            if repr.get_writtenForm(script_name) is not None:
+                written_forms.append(repr.get_writtenForm(script_name))
+        return written_forms
+
     def set_variant_form(self, variant_form):
         """! @brief Set variant form.
         This attribute is owned by FormRepresentation.
