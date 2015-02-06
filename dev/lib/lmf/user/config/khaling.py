@@ -50,7 +50,7 @@ partOfSpeech_range.update([
 
 def check_lx(lexical_entry, lx_tmp):
     if lexical_entry.get_lexeme() != lx_tmp:
-        print unicode(Warning("Lexeme '%s' generated for lexical entry '%s' is not consistant." % (lx_tmp, lexical_entry.get_lexeme())))
+        pass#print unicode(Warning("Lexeme '%s' generated for lexical entry '%s' is not consistant." % (lx_tmp, lexical_entry.get_lexeme())))
 def check_nep(lexical_entry, nep):
     ok = False
     for form in lexical_entry.get_citation_forms(script_name="devanagari"):
@@ -61,14 +61,14 @@ def check_nep(lexical_entry, nep):
         for form in lexical_entry.get_form_representations():
             if form.get_scriptName() == "devanagari":
                 form.set_citationForm(nep)
-        print unicode(Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme())))
+        #print unicode(Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme())))
 def check_se(lexical_entry, se_tmp):
     ok = False
     for form in lexical_entry.find_related_forms(mdf_semanticRelation["se"]):
         if form == se_tmp:
             ok = True
     if not ok:
-        print unicode(Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp, lexical_entry.get_lexeme())))
+        pass#print unicode(Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp, lexical_entry.get_lexeme())))
 
 mdf2lmf = dict(mdf_lmf)
 mdf2lmf.update({
