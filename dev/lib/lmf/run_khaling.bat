@@ -15,7 +15,7 @@ REM # LaTeX file is generated with sound records and without cross references
 REM #python user/guillaume/run_khaling.py -c
 
 REM # LaTeX file is generated without sound records and without cross references
-python user/guillaume/run_khaling.py -a -c
+python user/guillaume/run_khaling.py 
 
 REM # Generate PDF
 C:/texlive/2013/bin/win32/xelatex.exe -output-directory=user/guillaume/ user/guillaume/Dictionary.tex
