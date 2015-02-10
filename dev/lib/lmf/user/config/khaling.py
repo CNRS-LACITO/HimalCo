@@ -7,7 +7,8 @@ from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
 from utils.error_handling import Warning
 
-AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
+#AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"
+AUDIO_PATH = "C:/HimalCo/dict/khaling/data/audio/"
 
 def get_nep(lexical_entry):
     # Consider only the first form
