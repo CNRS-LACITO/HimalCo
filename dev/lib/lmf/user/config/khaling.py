@@ -136,7 +136,7 @@ def format_lexeme(lexical_entry, font):
     inf_dev = font[NATIONAL](lexical_entry.get_citation_forms(script_name="devanagari")[0]) # nep or lc_dev
     inf_api = font[VERNACULAR](lexical_entry.get_citation_forms(script_name="ipa")[0]) # lc
     root_api = font[VERNACULAR](lexical_entry.get_lexeme()) # lx
-    result = "\\vspace{1cm} \\hspace{-1cm} "
+    result = "\\hspace{-1cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         root_api += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -163,6 +163,24 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(REGIONAL):
                 result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
             result += "\\end{exe}" + EOL
+    return result
+
+def format_examples_compact(lexical_entry, font):
+    import output.tex as tex
+    result = ""
+    for sense in lexical_entry.get_senses():
+        for context in sense.get_contexts():
+            result += u"\u00B6 "
+            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
+                result += font[NATIONAL](example) + EOL
+            for example in context.find_written_forms(VERNACULAR, script_name="ipa"):
+                result += font[VERNACULAR](example) + EOL
+            for example in context.find_written_forms(ENGLISH):
+                result += example + EOL
+            for example in context.find_written_forms(NATIONAL):
+                result += font[NATIONAL](tex.handle_font(example)) + EOL
+            for example in context.find_written_forms(REGIONAL):
+                result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
 def format_paradigms(lexical_entry, font):
@@ -220,7 +238,7 @@ def lmf2tex(lexical_entry, font):
     # definition/gloss and translation
     tex_entry += tex.format_definitions(lexical_entry, my_font, languages=[VERNACULAR, ENGLISH, NATIONAL])
     # example
-    tex_entry += format_examples(lexical_entry, my_font)
+    tex_entry += format_examples_compact(lexical_entry, my_font)
     # usage note
     tex_entry += tex.format_usage_notes(lexical_entry, my_font)
     # encyclopedic information
