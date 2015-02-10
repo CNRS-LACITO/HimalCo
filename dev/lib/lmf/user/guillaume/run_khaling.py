@@ -27,6 +27,9 @@ lexical_resource = lmf.read_mdf(user_path + "guillaume/Dictionary.txt", mdf2lmf,
 sort_order = lambda character: ord(character.encode('utf-8').decode('utf-8'))
 lexical_resource.get_lexicon("khaling").sort_lexical_entries(items=items, sort_order=sort_order)
 
+# Write XML LMF file
+#lmf.write_xml_lmf(lexical_resource, user_path + "guillaume/Dictionary.xml")
+
 # Write LaTeX file
 lmf.write_tex(lexical_resource, user_path + "guillaume/Dictionary.tex", preamble=user_path + "guillaume/preamble.tex", lmf2tex=lmf2tex, font=my_font, items=items, sort_order=sort_order)
 
