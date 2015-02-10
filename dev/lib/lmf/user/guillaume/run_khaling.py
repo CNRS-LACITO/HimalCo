@@ -28,7 +28,7 @@ sort_order = lambda character: ord(character.encode('utf-8').decode('utf-8'))
 lexical_resource.get_lexicon("khaling").sort_lexical_entries(items=items, sort_order=sort_order)
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "guillaume/Dictionary.tex", preamble=user_path + "config/khaling.tex", lmf2tex=lmf2tex, font=my_font, items=items, sort_order=sort_order)
+lmf.write_tex(lexical_resource, user_path + "guillaume/Dictionary.tex", preamble=user_path + "guillaume/preamble.tex", lmf2tex=lmf2tex, font=my_font, items=items, sort_order=sort_order)
 
 # Release created objects
 del lexical_resource
