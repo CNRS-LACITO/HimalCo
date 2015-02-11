@@ -155,10 +155,10 @@ def format_examples(lexical_entry, font):
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
             result += "\\begin{exe}" + EOL
-            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
-                result += "\\sn " + font[NATIONAL](example) + EOL
             for example in context.find_written_forms(VERNACULAR, script_name="ipa"):
-                result += "\\trans " + font[VERNACULAR](example) + EOL
+                result += "\\sn " + font[VERNACULAR](example) + EOL
+            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
+                result += "\\trans " + font[NATIONAL](example) + EOL
             for example in context.find_written_forms(ENGLISH):
                 result += "\\trans " + example + EOL
             for example in context.find_written_forms(NATIONAL):
@@ -174,10 +174,10 @@ def format_examples_compact(lexical_entry, font):
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
             result += u"\u00B6 "
-            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
-                result += font[NATIONAL](example) + EOL
             for example in context.find_written_forms(VERNACULAR, script_name="ipa"):
                 result += font[VERNACULAR](example) + EOL
+            for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
+                result += font[NATIONAL](example) + EOL
             for example in context.find_written_forms(ENGLISH):
                 result += example + EOL
             for example in context.find_written_forms(NATIONAL):
