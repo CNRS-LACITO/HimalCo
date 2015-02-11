@@ -208,6 +208,7 @@ def format_audio(lexical_entry, font):
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string embedding sound in LaTeX format.
     """
+    import os
     from os.path import basename, isfile
     # To access options
     from lmf import options
@@ -223,7 +224,9 @@ def format_audio(lexical_entry, font):
             file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
             if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')) \
                 and not isfile(form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3").replace("file://", '')):
-                print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
+                if os.name == 'posix':
+                    # Following line generates an error on Windows
+                    print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
                 return result
             file_name = file_name.replace('_', '\string_').replace('-', '\string-')
             result += "\includemedia[" + EOL +\
