@@ -149,6 +149,24 @@ def format_lexeme(lexical_entry, font):
         result += "\markboth{" + inf_dev + "}{}" + EOL
     return result
 
+def format_notes(lexical_entry, font):
+    result = ""
+    for note in lexical_entry.find_notes(type="general"):
+        result += "[Note: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="phonology"):
+        result += "[Phon: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="grammar"):
+        result += "[Gram: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="discourse"):
+        result += "[Disc: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="anthropology"):
+        result += "[Ant: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="sociolinguistics"):
+        result += "[Socio: " + font[ENGLISH](note) + "] "
+    for note in lexical_entry.find_notes(type="question"):
+        result += "[Ques: " + font[ENGLISH](note) + "] "
+    return result
+
 def format_examples(lexical_entry, font):
     import output.tex as tex
     result = ""
@@ -160,7 +178,7 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
                 result += "\\trans " + font[NATIONAL](example) + EOL
             for example in context.find_written_forms(ENGLISH):
-                result += "\\trans " + example + EOL
+                result += "\\trans " + font[ENGLISH](example) + EOL
             for example in context.find_written_forms(NATIONAL):
                 result += "\\trans " + font[NATIONAL](tex.handle_font(example)) + EOL
             for example in context.find_written_forms(REGIONAL):
@@ -179,7 +197,7 @@ def format_examples_compact(lexical_entry, font):
             for example in context.find_written_forms(VERNACULAR, script_name="devanagari"): # xv_dev
                 result += font[NATIONAL](example) + EOL
             for example in context.find_written_forms(ENGLISH):
-                result += example + EOL
+                result += font[ENGLISH](example) + EOL
             for example in context.find_written_forms(NATIONAL):
                 result += font[NATIONAL](tex.handle_font(example)) + EOL
             for example in context.find_written_forms(REGIONAL):
@@ -237,7 +255,7 @@ def lmf2tex(lexical_entry, font):
     # part of speech
     tex_entry += tex.format_part_of_speech(lexical_entry, my_font, mapping=partOfSpeech2tex)
     # grammatical notes
-    tex_entry += tex.format_notes(lexical_entry, my_font)
+    tex_entry += format_notes(lexical_entry, my_font)
     # definition/gloss and translation
     tex_entry += tex.format_definitions(lexical_entry, my_font, languages=[VERNACULAR, ENGLISH, NATIONAL])
     # example
