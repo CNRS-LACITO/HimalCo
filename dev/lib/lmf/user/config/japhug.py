@@ -195,7 +195,8 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     elif language == NATIONAL:
                         result += font[NATIONAL](tex.handle_font(definition)) + ". "
                     elif language == REGIONAL:
-                        result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
+                        # Do not display Tibetan for now (dr)
+                        pass #result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
                     else:
                         result += definition + ". "
             elif len(sense.find_glosses(language)) != 0:
@@ -205,7 +206,8 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
                     elif language == NATIONAL:
                         result += font[NATIONAL](tex.handle_font(gloss)) + ". "
                     elif language == REGIONAL:
-                        result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
+                        # Do not display Tibetan for now (gr)
+                        pass #result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
                     else:
                         result += gloss + ". "
             if len(sense.get_translations(language)) != 0:
@@ -230,7 +232,8 @@ def format_examples(lexical_entry, font):
             for example in context.find_written_forms(NATIONAL):
                 result += "\\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
             for example in context.find_written_forms(REGIONAL):
-                result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
+                # Do not display Tibetan for now (xr)
+                pass #result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
 def format_usage_notes(lexical_entry, font):
@@ -256,7 +259,8 @@ def format_encyclopedic_informations(lexical_entry, font):
         for information in sense.find_encyclopedic_informations(language=NATIONAL):
             result += font[NATIONAL](tex.handle_font(information)) + " "
         for information in sense.find_encyclopedic_informations(language=REGIONAL):
-            result += "\\textit{[" + font[REGIONAL](information) + "]} "
+            # Do not display Tibetan for now (er)
+            pass #result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
 def format_paradigms(lexical_entry, font):
