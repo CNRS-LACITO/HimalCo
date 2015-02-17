@@ -161,14 +161,14 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_uid(self):
         entry = LexicalEntry("link_0")
         entry.set_lexeme("link")
-        expected = "\\hyperlink{link_0}{\\vernacular{link}}"
+        expected = "\\hyperlink{linkUS0}{\\vernacular{link}}"
         self.assertEqual(format_link(entry, font), expected)
         del entry
 
     def test_format_link(self):
         entry = LexicalEntry("link_0")
         entry.set_lexeme("link")
-        expected = "\\hyperlink{link_0}{\\vernacular{link}}"
+        expected = "\\hyperlink{linkUS0}{\\vernacular{link}}"
         self.assertEqual(format_link(entry, font), expected)
         entry.set_homonymNumber(2)
         expected = expected[:-1] + " \\textsubscript{2}}"

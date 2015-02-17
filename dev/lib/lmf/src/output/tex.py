@@ -3,7 +3,7 @@
 
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
-from utils.io import open_read, open_write, EOL
+from utils.io import open_read, open_write, EOL, ENCODING
 from utils.error_handling import OutputError, Warning
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
@@ -87,7 +87,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                                 # Separate sub-entries from each others with a blank line
                                 tex_file.write(EOL)
                     except KeyError:
-                        print unicode(Warning("Cannot sort item %s" % items(lexical_entry)))
+                        print Warning("Cannot sort item %s" % items(lexical_entry).encode(ENCODING))
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly
@@ -188,7 +188,8 @@ def format_uid(lexical_entry, font):
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing the unique identifier in LaTeX format.
     """
-    return unicode(lexical_entry.get_id())#.encode('ascii', 'ignore')
+    # LaTeX does not handle Left Brace, Right Brace, BackSlash and UnderScore characters in links
+    return lexical_entry.get_id().replace('{', 'LB').replace('}', 'RB').replace('\\', 'BS').replace('_', 'US')
 
 def format_link(lexical_entry, font):
     """! @brief Display hyperlink to a lexical entry in LaTeX format.
@@ -250,7 +251,7 @@ def format_audio(lexical_entry, font):
                 and not isfile(form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3").replace("file://", '')):
                 if os.name == 'posix':
                     # Following line generates an error on Windows
-                    print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
+                    print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
             file_name = file_name.replace('_', '\string_').replace('-', '\string-')
             result += "\includemedia[" + EOL +\
@@ -280,7 +281,7 @@ def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
         try:
             result += "\\textit{" + mapping[lexical_entry.get_partOfSpeech()] + "}. "
         except KeyError:
-            print unicode(Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech(), lexical_entry.get_lexeme())))
+            print Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech().encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
     return result
 
 def format_definitions(lexical_entry, font, languages=None):

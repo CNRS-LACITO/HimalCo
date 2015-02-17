@@ -4,6 +4,7 @@
 """
 
 from utils.error_handling import Warning
+from utils.io import ENCODING
 
 class Lexicon():
     """! "Lexicon is a class containing all the lexical entries of a given language within the entire resource." (LMF)
@@ -205,7 +206,7 @@ class Lexicon():
                 # Handle other characters
                 except KeyError:
                     if options.verbose:
-                        print unicode(Warning("Cannot compare " + x[i] + " and " + y[i]))
+                        print Warning("Cannot compare " + x[i].encode(ENCODING) + " and " + y[i].encode(ENCODING))
                     if x[i] == y[i]:
                         continue
                     if x[i] < y[i]:
@@ -279,7 +280,7 @@ class Lexicon():
                     # No lexical entry with this lexeme exists
                     if os.name == 'posix':
                         # Following line generates an error on Windows
-                        print unicode(Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme())))
+                        print Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 elif len(found_entry) > 1:
                     # Several lexical entries with this lexeme exist => consider homonym number if any
                     related_homonym = []
@@ -290,7 +291,7 @@ class Lexicon():
                     if len(related_homonym) != 1:
                         if os.name == 'posix':
                             # Following line generates an error on Windows
-                            print unicode(Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme))
+                            print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme.encode(ENCODING))
                     else:
                         # Save the found lexical entry
                         related_form.set_lexical_entry(related_homonym[0])

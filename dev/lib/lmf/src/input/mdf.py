@@ -8,6 +8,7 @@ from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from utils.io import open_read, EOL, ENCODING
 from utils.error_handling import Warning, Error
+from utils.ipa2sampa import uni2sampa
 
 def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENCODING):
     """! @brief Read an MDF file.
@@ -59,7 +60,7 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
                 occurrence_nb = 1
                 # Python equivalent of do...while loop
                 while True:
-                    uid = value + "-" + str(occurrence_nb)
+                    uid = uni2sampa(value) + str(occurrence_nb)
                     # If already taken, increment it
                     if lexicon.find_lexical_entries(lambda lexical_entry: lexical_entry.get_id() == uid) != []:
                         occurrence_nb += 1
@@ -103,7 +104,7 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
                     current_entry = sub_entry
                     sub_entry = None
             except KeyError:
-                # When printing, we need to convert 'unicode' into 'str' using 'utf8' encoding:
+                # When printing, we need to convert 'unicode' into 'str' using 'utf-8' encoding:
                 print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker.encode(ENCODING), current_entry.get_lexeme().encode(ENCODING)))
             except Error as exception:
                 exception.handle()
