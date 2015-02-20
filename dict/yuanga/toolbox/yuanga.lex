@@ -3380,7 +3380,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \sn 1
 \ge morceau (allongé); partie; moitié
 \se balaa-gò
-\xn longue-vue, jumelles (ressemblait à un bout de bambou)
+\sge longue-vue, jumelles (ressemblait à un bout de bambou)
 \se bala-ce [BO]
 \sge bout de bois
 \se bala-mada [PA]
@@ -7477,19 +7477,19 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \ps v
 \sn 1
 \is chasse
-\ge toucher (cible avec sagaie) ; avoir lieu (pour un événement fixé)
+\ge toucher (cible avec sagaie)
 \xv e a-pha-ca ! [GOs]
 \xn il est adroit (car ne rate pas la cible)
 \xv u ca ! [GOs, PA]
-\xn touché ! dans le mille ! ça s'est réalisé !
-\xv u ca ! [GOs, PA]
+\xn touché ! dans le mille !
 \sn 2
 \is action
 \ge avoir lieu (pour un événement fixé)
 \re
 \gb
 \rgb
-\xn c'est le jour "j", c'est le jour fixé
+\xv u ca ! [GOs, PA]
+\xn ça s'est réalisé ! ; c'est le jour "j", c'est le jour fixé
 \cf cale [GOs, PA]
 \ce
 \dt 25/Dec/2014
@@ -26362,17 +26362,11 @@ gagnant est celui qui l'a propulsé le plus loin)
 \gb
 \re
 \dn 
-
 \rf
-\xv
-\xe kage novu
+\xv kage novu
 \xn pendant que
-
-\ue
-\un
 \cf
 \ce 
-
 \nt
 \dt 24/Feb/2010
 
@@ -27883,8 +27877,7 @@ grand que "keruau")
 \re
 \gb
 \rgb
-\xv
-\xe e kîî kii-nu
+\xv e kîî kii-nu
 \xn ça me vrille les oreilles
 \cf
 \ce
@@ -59917,7 +59910,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \re
 \gb
 \rgb
-\xv
+\xv thaam !
 \xn dites-moi !, écoute
 \cf
 \ce
@@ -74103,7 +74096,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \sge guérisseur
 \se zari-alo [PA]
 \sge devin, voyant
-\xe zaria-je [GOs ]
+\xv zaria-je [GOs ]
 \xn son médicament 
 \dt 03/Nov/2014
 
