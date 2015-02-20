@@ -30,7 +30,7 @@ class Error(Exception):
     def handle(self):
         """! @brief Define behavior to follow in case this error is caught: diplay error and exit program.
         """
-        print unicode(self)
+        print self
         # If a system error occured, report it
         if self.excp is not None:
             print self.excp

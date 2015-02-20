@@ -83,11 +83,11 @@ class LexicalEntry():
         @param mapping A Python dictionary giving the mapping between MDF and LMF values.
         @return LexicalEntry instance.
         """
-        error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (str(part_of_speech), self.get_lexeme())
+        error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (part_of_speech.encode('utf8'), self.get_lexeme().encode('utf8'))
         # Check part of speech type
         check_attr_type(part_of_speech, [str, unicode], error_msg)
         # Check range of part of speech value (also try with converted value from MDF to LMF)
-        value = check_attr_range(str(part_of_speech), range, error_msg, mapping)
+        value = check_attr_range(part_of_speech.encode('utf8'), range, error_msg, mapping)
         self.partOfSpeech = value
         return self
 
@@ -470,7 +470,7 @@ class LexicalEntry():
         @param sense_number Number of the sense to add.
         @return LexicalEntry instance.
         """
-        id = str(self.get_id()) + "_" + str(sense_number)
+        id = self.get_id() + "_" + str(sense_number)
         self.add_sense(self.create_sense(id).set_senseNumber(sense_number))
         return self
 
