@@ -66,7 +66,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
                                 for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
                                     if int(value) == int(sort_order[current_character]):
                                         title += ' ' + font[VERNACULAR](key)
-                            tex_file.write("\\section*{-" + title + " -} \hspace{1.4ex}" + EOL)
+                            tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
                             #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
@@ -100,7 +100,7 @@ def handle_font(text):
     return text
 
 def handle_reserved(text):
-    """ Handle reserved characters: \ { } $ # & _ ^ ~ %.
+    """ Handle reserved characters: \ { } $ # & _ ^ ~ % [ ].
     """
     if text.find("$") != -1:
         text = text.replace('$', '')
@@ -112,6 +112,22 @@ def handle_reserved(text):
         text = text.replace('_', '\_').replace("\string\_", "\string_")
     if text.find("^") != -1:
         text = text.replace('^', '\^')
+    if text.find("[") != -1:
+        text = text.replace('[', '\[')
+    if text.find("]") != -1:
+        text = text.replace(']', '\]')
+    return text
+
+def handle_fi(text):
+    """Replace 'fi:xxx' and '|fi{xxx}' by \\textit{xxx}.
+        """
+    import re
+    if text.find("fi:") != -1:
+        pattern = r"(\w*)fi:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"\\textit{" + r"\2" + "}" + r"\3", text)
+    if text.find("|fi{") != -1:
+        pattern = r"(\w*)\|fi{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"\\textit{" + r"\2" + "}" + r"\3", text)
     return text
 
 def handle_fv(text, font):

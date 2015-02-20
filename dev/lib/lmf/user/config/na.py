@@ -1,10 +1,36 @@
 #! /usr/bin/env python
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, VERNACULAR, ENGLISH, NATIONAL, REGIONAL
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, VERNACULAR, ENGLISH, NATIONAL, REGIONAL, ps_partOfSpeech
+from config.tex import partOfSpeech_tex
 from output.tex import format_definitions
 from utils.io import EOL
 
 FRENCH = "fra"
+
+## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
+ps2partOfSpeech = ps_partOfSpeech
+ps2partOfSpeech.update({
+    # HimalCo
+    "adj"           : "adjective",                  # adjective
+    "adv"           : "adverb",                     # adverb(ial)
+    "class"         : "classifier",                 # classifier (MDF)
+    "clf"           : "classifier",                 # classifier (Leipzig)
+    "cnj"           : "conjunction",                # conjunction
+    "disc.PTCL"     : "particle",                   # discourse particle
+    "ideo"          : "ideophone",                  # ideophones
+    "intj"          : "interjection",               # interjection
+    "lnk"           : "coordinating conjunction",   # linker
+    "n"             : "noun",                       # noun
+    "Np"            : "possessed noun",             # possessed nouns
+    "neg"           : "negation",                   # negative
+    "num"           : "numeral",                    # number
+    "prep"          : "preposition",                # preposition
+    "pro"           : "pronoun",                    # pronoun/pronominal
+    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
+    # na
+    "postp"         : "possessed noun",             # possessed nouns
+    "conj"          : "conjunction"                 # conjunction
+})
 
 ## Functions to process some MDF fields (input)
 def process_np(attributes, np, lexical_entry):
@@ -45,6 +71,13 @@ mdf2lmf.update({
     "__sf"  : lambda attributes, sf, lexical_entry: None,
     "__so"  : lambda attributes, so, lexical_entry: None,
     "__va"  : lambda attributes, va, lexical_entry: lexical_entry.set_variant_form(va, type="phonetics"),
+    "__nt"  : lambda attributes, nt, lexical_entry: None, # TODO
+    "__vf"  : lambda attributes, vf, lexical_entry: None, # TODO
+    "__xc"  : lambda attributes, xc, lexical_entry: None, # TODO
+    "__cf"  : lambda attributes, cf, lexical_entry: None, # TODO
+    "__et"  : lambda attributes, et, lexical_entry: None, # TODO
+    "__sn"  : lambda attributes, sn, lexical_entry: None, # TO SOLVE
+    "vf"    : lambda vf, lexical_entry: None, # TODO
     "pdf"   : lambda pdf, lexical_entry: lexical_entry.set_paradigm_form(pdf, language=FRENCH),
     "xf"    : lambda xf, lexical_entry: lexical_entry.add_example(xf, language=FRENCH),
     "xc"    : lambda xc, lexical_entry: lexical_entry.set_example_comment(xc),
@@ -86,6 +119,12 @@ order[7][19].insert(5, "xf")
 order[7][19].insert(7, "xc")
 order[28].insert(5, "pdf")
 
+## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
+partOfSpeech2tex = partOfSpeech_tex
+partOfSpeech2tex.update({
+    "possessed noun" : "np"
+})
+
 ## Functions to process some LaTeX fields (output)
 
 my_font = dict({
@@ -97,19 +136,21 @@ my_font = dict({
 })
 
 def format_tone(lexical_entry, font):
-    if lexical_entry.get_tones() is not None:
-        result = lexical_entry.get_tones()[0]
-    return result
+    import output.tex as tex
+    if lexical_entry.get_tones() is not None and len(lexical_entry.get_tones()) != 0:
+        return tex.handle_reserved(lexical_entry.get_tones()[0])
 
 def format_definition(lexical_entry, font, language):
+    import output.tex as tex
     result = ""
     for sense in lexical_entry.get_senses():
         if sense.find_definitions(language) is not None:
             for definition in sense.find_definitions(language):
-                result += font[language](definition)
+                result += font[language](tex.handle_fi(tex.handle_reserved(definition)))
     return result
 
 def format_gloss(lexical_entry, font, language):
+    import output.tex as tex
     result = ""
     for sense in lexical_entry.get_senses():
         if sense.find_glosses(language) is not None:
@@ -118,19 +159,20 @@ def format_gloss(lexical_entry, font, language):
                     result += "Dialecte chinois local~"
                 elif language == ENGLISH:
                     result += "Local Chinese dialect"
-                result +=  ": " + gloss + font[NATIONAL](u"\u3002")
+                result +=  ": " + tex.handle_fi(gloss) + font[NATIONAL](u"\u3002")
     return result
 
 def format_examples(lexical_entry, font, language):
+    import output.tex as tex
     result = ""
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
             for example in context.find_written_forms(VERNACULAR):
-                result += font[VERNACULAR](example) + r""" \\""" + EOL
+                result += font[VERNACULAR](tex.handle_reserved(example)) + r""" \\""" + EOL
             for example in context.find_written_forms(language):
-                result += font[language](example) + r""" \\""" + EOL
+                result += font[language](tex.handle_reserved(example)) + r""" \\""" + EOL
             for example in context.find_written_forms(NATIONAL):
-                result += font[NATIONAL](example) + r""" \\""" + EOL
+                result += font[NATIONAL](tex.handle_reserved(example)) + r""" \\""" + EOL
     return result
 
 def tex_fra(lexical_entry, font):
@@ -141,11 +183,12 @@ def tex_fra(lexical_entry, font):
     <xf>
     <xn>
     """
+    import output.tex as tex
     return ((r"""%s (prononciation~: %s~; avec le verbe copule~: %s) \hspace{4pt} %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL~: %s" + EOL) % \
-        ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](lexical_entry.get_lexeme()) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()).replace('_', '\_') + "}{}",\
+        ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](tex.handle_reserved(lexical_entry.get_lexeme())) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(tex.handle_reserved(lexical_entry.get_id())) + "}{}",\
         "LC",\
         "LC AVEC COPULE",\
-        "\\textcolor{teal}{\mytextsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
+        "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, my_font),\
         format_definition(lexical_entry, my_font, language=FRENCH),\
         format_definition(lexical_entry, my_font, language=NATIONAL),\
@@ -161,11 +204,12 @@ def tex_eng(lexical_entry, font):
     <xe>
     <xn>
     """
+    import output.tex as tex
     return ((r"""%s (pronunciation: %s; with the copula verb: %s) \hspace{4pt} %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + my_font[NATIONAL](u"\u3002") + "%s" + EOL + "%s" + "CL: %s" + EOL) % \
-        ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](lexical_entry.get_lexeme()) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(lexical_entry.get_id()).replace('_', '\_') + "}{}",\
+        ("\\vspace{1cm} \\hspace{-1cm} {\Large " + my_font[VERNACULAR](tex.handle_reserved(lexical_entry.get_lexeme())) + "} \\hspace{0.2cm} \\hypertarget{" + unicode(tex.handle_reserved(lexical_entry.get_id())) + "}{}",\
         "LC",\
         "LC WITH COPULA",\
-        "\\textcolor{teal}{\mytextsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
+        "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, my_font),\
         format_definition(lexical_entry, my_font, language=ENGLISH),\
         format_definition(lexical_entry, my_font, language=NATIONAL),\

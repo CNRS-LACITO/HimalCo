@@ -124,6 +124,14 @@ class TestTexFunctions(unittest.TestCase):
         output = "bla\ipa{bla} bla \ipa{bla}bla \ipa{bla}"
         self.assertEqual(handle_font(input), output)
 
+    def test_handle_fi(self):
+        input = "textfi:this fi:but not this"
+        output = "text\\textit{this} \\textit{but} not this"
+        self.assertEqual(handle_fi(input), output)
+        input = "textfi:this |fi{and this}"
+        output = "text\\textit{this} \\textit{and this}"
+        self.assertEqual(handle_fi(input), output)
+
     def test_handle_fn(self):
         input = "textfn:this fn:but not this"
         output = "text\\national{this} \\national{but} not this"
@@ -193,6 +201,7 @@ class TestTexFunctions(unittest.TestCase):
 
     def test_format_part_of_speech(self):
         entry = LexicalEntry()
+        entry.set_lexeme("action")
         entry.set_partOfSpeech("verb")
         expected = "\\textit{v}. "
         self.assertEqual(format_part_of_speech(entry, font), expected)
