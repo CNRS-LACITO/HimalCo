@@ -1,10 +1,12 @@
 #! /usr/bin/env python
 
 ## Importing the modules executes the tests
+# Config Package
+import test_config_xml
 # Core Package
 import test_core_definition, test_core_form_representation, test_core_form, test_core_global_information, test_core_lexical_entry, test_core_lexical_resource, test_core_lexicon, test_core_representation, test_core_sense, test_core_statement, test_core_text_representation
 # Input
-import test_input_mdf, test_input_sort_order, test_input_xml_lmf
+import test_input_mdf, test_input_xml_lmf
 # Morphology
 import test_morphology_component, test_morphology_lemma, test_morphology_list_of_components, test_morphology_related_form, test_morphology_stem, test_morphology_word_form
 # Morphosyntax

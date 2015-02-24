@@ -14,10 +14,7 @@ lexical_resource = lmf.read_mdf(user_path + "../../../../dict/na/toolbox/Diction
 lexical_resource.get_lexicon("na").set_label("na online dictionary").set_language("nru").set_lexiconType("trilingual dictionary nru-eng-fra")
 
 # Set global information
-lexical_resource.set_creationDate("2015-02-20")
 lexical_resource.set_lastUpdate("2015-02-20")
-lexical_resource.set_author("Alexis Michaud")
-lexical_resource.set_description("This is the na lexicon of HimalCo project.")
 print lexical_resource.get_bibliographicCitation()
 
 # Classify lexicon

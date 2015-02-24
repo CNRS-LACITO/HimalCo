@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration for Na -->
+<Config>
+    <Language>
+        <lang att="vernacular" val="ver"/>
+        <lang att="English" val="eng"/>
+        <lang att="national" val="nat"/>
+        <lang att="regional" val="reg"/>
+        <lang att="French" val="fra"/>
+    </Language>
+    <Font>
+        <font att="vernacular" var="text">"\\textcolor{blue}{\\textbf{\ipa{" + text + "}}}"</font>
+        <font att="English" var="text">text</font>
+        <font att="national" var="text">"\\textcolor{brown}{\zh{" + text + "}}"</font>
+        <font att="regional" var="text">"\ipa{" + text + "}"</font>
+        <font att="French" var="text">text</font>
+    </Font>
+    <LMF>
+        <LexicalResource dtdVersion="16">
+            <GlobalInformation>
+                <feat att="languageCode" val="ISO-639-3"/>
+                <feat att="author" val="Céline Buret"/>
+                <feat att="version" val="0.1"/>
+                <feat att="license" val="GPL"/>
+                <feat att="characterEncoding" val="UTF-8"/>
+                <feat att="dateCoding" val="ISO-8601"/>
+                <feat att="creationDate" val="2015-03-02"/>
+                <feat att="projectName" val="ANR HimalCo"/>
+                <feat att="description" val="This is a lexicon of the HimalCo project."/>
+            </GlobalInformation>
+            <Lexicon id="na">
+                <feat att="language" val="ver"/>
+                <feat att="languageScript" val=""/>
+                <feat att="label" val="Online dictionary"/>
+                <feat att="lexiconType" val="Trilingual dictionary ver-eng-fra"/>
+                <feat att="entrySource" val="../../../../dict/na/toolbox/Dictionary.txt"/>
+                <!-- Absolute path to audio files -->
+                <feat att="localPath" val="/Users/celine/Work/CNRS/workspace/HimalCo/dict/na/data/audio/"/>
+            </Lexicon>
+        </LexicalResource>
+    </LMF>
+    <MDF>
+        <!-- Input -->
+            <!-- Mapping from 'ps' MDF marker value to LMF part of speech LexicalEntry attribute value -->
+            <ps_partOfSpeech ps="adj" partOfSpeech="adjective"/>
+            <!-- Mapping from MDF markers to LMF attributes -->
+            <mdf_lmf marker="__np" var="attributes, np, lexical_entry">process_np(attributes, np,
+                lexical_entry)</mdf_lmf>
+            <mdf_lmf marker="pdf" var="pdf, lexical_entry">lexical_entry.set_paradigm_form(pdf,
+                language=French)</mdf_lmf>
+        <!-- Output -->
+            <mdf_order>
+                <gf/>
+                <df/>
+                <xv>
+                    <xe/>
+                </xv>
+            </mdf_order>
+            <!-- Mapping from LMF attributes to MDF markers -->
+            <lmf_mdf marker="pdf" var="paradigm">paradigm.get_paradigm(language=French)</lmf_mdf>
+    </MDF>
+    <LaTeX>
+        <!-- Path to xelatex binary -->
+        <xelatex></xelatex>
+        <!-- Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output) -->
+        <!--partOfSpeech_tex partOfSpeech="possessed noun" tex="np"/-->
+        <header cmd="documentclass" att="oldfontcommands,oneside,a4paper,11pt" val="article"/>
+        <header cmd="title" val="Na dictionary"/>
+        <header cmd="author" var="lexical_resource">lexical_resource.get_author()</header>
+        <header cmd="usepackage" val="fontspec"/>
+        <header cmd="usepackage" val="booktabs"/>
+        <header cmd="usepackage" val="xltxtra"/>
+        <header cmd="usepackage" val="polyglossia"/>
+        <header cmd="usepackage" att="table" val="xcolor"/>
+        <header cmd="usepackage" val="float"/>
+        <header cmd="usepackage" val="memhfixc"/>
+        <header cmd="usepackage" val="amssymb"/>
+        <header cmd="usepackage" val="multicol"/>
+        <header cmd="setlength">
+            <header cmd="columnseprule" val="1pt"/>
+        </header>
+        <header cmd="setlength">
+            <header cmd="columnsep" val="1.5cm"/>
+        </header>
+        <header cmd="setmainfont" att="Mapping=tex-text,Numbers=OldStyle,Ligatures=Common"
+            val="DoulosSIL"/>
+        <!-- API -->
+        <header cmd="newfontfamily">
+            <header cmd="phon" att="Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase"
+                val="DoulosSIL"/>
+        </header>
+        <header cmd="newcommand" att="1">
+            <header cmd="ipa"/> {{\phon #1}} </header>
+        <!-- Chinese -->
+        <header cmd="newfontfamily">
+            <header cmd="cn" att="Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase"
+                val="SimSun"/>
+        </header>
+        <header cmd="newcommand" att="1">
+            <header cmd="zh"/> {{\cn #1}} </header>
+        <header cmd="XeTeXlinebreaklocale"/>"zh" <header cmd="XeTeXlinebreakskip"/>0pt plus 1pt
+            <header cmd="usepackage" val="fancyhdr"/>
+        <header cmd="pagestyle" val="fancy"/>
+        <header cmd="fancyheadoffset" val="3.4em"/>
+        <header cmd="usepackage" att="bookmarks=true,colorlinks,linkcolor=blue" val="xcolor"/>
+        <header cmd="usepackage" att="b" val="hyperref"/>
+        <header cmd="usepackage" val="gb4e"/>
+        <header cmd="usepackage" val="vmargin"/>
+        <!-- {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page} -->
+        <header cmd="setmarginsrb"/>{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{0cm}{0.5cm}{1cm}
+        \def\mytextsc{\bgroup\obeyspaces\mytextscaux} \def\mytextscaux#1{\mytextscauxii
+        #1\relax\relax\egroup} \def\mytextscauxii#1{% \ifx\relax#1\else \ifcat#1\@sptoken{}
+        \expandafter\expandafter\expandafter\mytextscauxii\else \ifnum`#1=\uccode`#1 {\normalsize
+        #1}\else {\footnotesize \uppercase{#1}}\fi
+        \expandafter\expandafter\expandafter\mytextscauxii\expandafter\fi\fi} </LaTeX>
+</Config>

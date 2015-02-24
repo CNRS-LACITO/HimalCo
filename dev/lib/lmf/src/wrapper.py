@@ -10,7 +10,7 @@ sys.path.append('./src')
 ## Functions to read from a file: MDF, XML LMF, sort order
 from input.mdf import mdf_read
 from input.xml_lmf import xml_lmf_read as lmf_read
-from input.sort_order import sort_order_read as order_read
+from config.xml import sort_order_read as order_read
 
 ## Functions to write into a file: MDF, XML LMF, LaTeX, doc
 from output.mdf import mdf_write
