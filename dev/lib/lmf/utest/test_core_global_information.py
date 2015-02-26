@@ -28,6 +28,7 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         self.assertEqual(self.global_information.projectName, "ANR HimalCo")
         self.assertIsNone(self.global_information.description)
         self.assertIsNone(self.global_information.bibliographicCitation)
+        self.assertIsNone(self.global_information.localPath)
 
     def test_set_creationDate(self):
         date = "2014-10-08"
@@ -70,6 +71,14 @@ class TestGlobalInformationFunctions(unittest.TestCase):
 
     def test_get_bibliographicCitation(self):
         self.assertIs(self.global_information.get_bibliographicCitation(), self.global_information.bibliographicCitation)
+
+    def test_set_localPath(self):
+        path = "/full/local/path/to/audio/files/"
+        self.assertEqual(self.global_information.set_localPath(path), self.global_information)
+        self.assertEqual(self.global_information.localPath, path)
+
+    def test_get_localPath(self):
+        self.assertIs(self.global_information.get_localPath(), self.global_information.localPath)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestGlobalInformationFunctions)
 

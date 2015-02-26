@@ -25,6 +25,7 @@ class GlobalInformation():
         self.projectName = "ANR HimalCo"
         self.description = None
         self.bibliographicCitation = None
+        self.localPath = None
 
     def __del__(self):
         """! @brief Destructor.
@@ -105,3 +106,17 @@ class GlobalInformation():
         """
         self.compute_bibliographicCitation()
         return self.bibliographicCitation
+
+    def set_localPath(self, local_path):
+        """! @brief Set global information local path.
+        @param local_path The absolute path to audio files to set.
+        @return GlobalInformation instance.
+        """
+        self.localPath = local_path
+        return self
+
+    def get_localPath(self):
+        """! @brief Get global information local path.
+        @return GlobalInformation attribute 'localPath'.
+        """
+        return self.localPath
