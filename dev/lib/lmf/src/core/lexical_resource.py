@@ -68,6 +68,19 @@ class LexicalResource():
             if lexicon.id == id:
                 return lexicon
 
+    def set_dtdVersion(self, dtd_version):
+        """! @brief Set DTD version.
+        @param dtd_version The DTD version to use.
+        """
+        self.dtdVersion = dtd_version
+        return self
+
+    def get_dtdVersion(self):
+        """! @brief Get DTD version.
+        @return LexicalResource attribute 'dtdVersion'.
+        """
+        return self.dtdVersion
+
     def set_creationDate(self, date):
         """! @brief Set creation date.
         Attribute 'creationDate' is owned by GlobalInformation.

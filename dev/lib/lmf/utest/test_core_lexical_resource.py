@@ -74,6 +74,14 @@ class TestLexicalResourceFunctions(unittest.TestCase):
         # Release Lexicon instances
         del lexicon1, lexicon2
 
+    def test_set_dtdVersion(self):
+        version = "0"
+        self.assertEqual(self.lexical_resource.set_dtdVersion(version), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.dtdVersion, version)
+
+    def test_get_dtdVersion(self):
+        self.assertIs(self.lexical_resource.get_dtdVersion(), self.lexical_resource.dtdVersion)
+
     def test_set_creationDate(self):
         date = "2014-10-08"
         self.assertEqual(self.lexical_resource.set_creationDate(date), self.lexical_resource)
