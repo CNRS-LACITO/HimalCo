@@ -20,6 +20,7 @@ class Lexicon():
         self.lexiconType = None
         self.entrySource = None
         self.vowelHarmony = None
+        self.localPath = None
         ## All LexicalEntry instances are maintained by Lexicon
         # There is one or more LexicalEntry instances per Lexicon
         self.lexical_entry = []
@@ -123,6 +124,20 @@ class Lexicon():
 
     def get_vowelHarmony(self):
         raise NotImplementedError
+
+    def set_localPath(self, local_path):
+        """! @brief Set lexicon local path.
+        @param local_path The absolute path to audio files to set.
+        @return Lexicon instance.
+        """
+        self.localPath = local_path
+        return self
+
+    def get_localPath(self):
+        """! @brief Get lexicon local path.
+        @return Lexicon attribute 'localPath'.
+        """
+        return self.localPath
 
     def get_lexical_entries(self):
         """! @brief Get all lexical entries maintained by the lexicon.

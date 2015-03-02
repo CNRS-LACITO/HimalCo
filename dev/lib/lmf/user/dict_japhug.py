@@ -14,11 +14,11 @@ lexical_resource = lmf.read_mdf(user_path + "../../../../dict/japhug/toolbox/Dic
 lexical_resource.get_lexicon("japhug").set_label("japhug online dictionary").set_language("jya").set_lexiconType("bilingual dictionary jya-fra")
 
 # Set global information
-lexical_resource.set_creationDate("2014-11-27")
-lexical_resource.set_lastUpdate("2014-02-06")
+lexical_resource.set_creation_date("2014-11-27")
+lexical_resource.set_last_update("2014-02-06")
 lexical_resource.set_author("Guillaume Jacques")
 lexical_resource.set_description("This is the japhug lexicon of HimalCo project.")
-print lexical_resource.get_bibliographicCitation()
+print lexical_resource.get_bibliographic_citation()
 
 # Classify lexicon
 xml_order = lmf.read_sort_order(user_path + "config/japhug.xml")

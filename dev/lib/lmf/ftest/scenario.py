@@ -10,11 +10,11 @@ import os
 input_lexical_resource = lmf.read_mdf(ftest_path + "input.txt", id="short example")
 
 # Set global information
-input_lexical_resource.set_creationDate("2014-10-01")
-input_lexical_resource.set_lastUpdate("2014-10-10")
+input_lexical_resource.set_creation_date("2014-10-01")
+input_lexical_resource.set_last_update("2014-10-10")
 input_lexical_resource.set_author(u"Céline Buret")
 input_lexical_resource.set_description("This is a testing lexicon.")
-print input_lexical_resource.get_bibliographicCitation()
+print input_lexical_resource.get_bibliographic_citation()
 
 # Get created lexicon
 my_lexicon = input_lexical_resource.get_lexicon("short example")

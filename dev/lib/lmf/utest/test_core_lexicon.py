@@ -25,6 +25,7 @@ class TestLexiconFunctions(unittest.TestCase):
         self.assertIsNone(self.lexicon.entrySource)
         self.assertIsNone(self.lexicon.vowelHarmony)
         self.assertListEqual(self.lexicon.lexical_entry, [])
+        self.assertIsNone(self.lexicon.localPath)
 
     def test_set_id(self):
         id = "English lexicon"
@@ -89,6 +90,14 @@ class TestLexiconFunctions(unittest.TestCase):
         except NotImplementedError:
             test = True
         self.assertTrue(test)
+
+    def test_set_localPath(self):
+        path = "/full/local/path/to/audio/files/"
+        self.assertEqual(self.lexicon.set_localPath(path), self.lexicon)
+        self.assertEqual(self.lexicon.localPath, path)
+
+    def test_get_localPath(self):
+        self.assertIs(self.lexicon.get_localPath(), self.lexicon.localPath)
 
     def test_get_lexical_entries(self):
         # Create lexical entries

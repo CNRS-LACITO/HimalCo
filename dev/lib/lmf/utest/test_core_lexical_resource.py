@@ -82,21 +82,69 @@ class TestLexicalResourceFunctions(unittest.TestCase):
     def test_get_dtdVersion(self):
         self.assertIs(self.lexical_resource.get_dtdVersion(), self.lexical_resource.dtdVersion)
 
-    def test_set_creationDate(self):
+    def test_set_language_code(self):
+        code = "iso"
+        self.assertEqual(self.lexical_resource.set_language_code(code), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.languageCode, code)
+
+    def test_get_language_code(self):
+        self.assertIs(self.lexical_resource.get_language_code(), self.lexical_resource.global_information.languageCode)
+
+    def test_set_version(self):
+        version = "0"
+        self.assertEqual(self.lexical_resource.set_version(version), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.version, version)
+
+    def test_get_version(self):
+        self.assertIs(self.lexical_resource.get_version(), self.lexical_resource.global_information.version)
+
+    def test_set_license(self):
+        license = "free"
+        self.assertEqual(self.lexical_resource.set_license(license), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.license, license)
+
+    def test_get_license(self):
+        self.assertIs(self.lexical_resource.get_license(), self.lexical_resource.global_information.license)
+
+    def test_set_character_encoding(self):
+        coding = "iso"
+        self.assertEqual(self.lexical_resource.set_character_encoding(coding), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.characterEncoding, coding)
+
+    def test_get_character_encoding(self):
+        self.assertIs(self.lexical_resource.get_character_encoding(), self.lexical_resource.global_information.characterEncoding)
+
+    def test_set_date_coding(self):
+        coding = "iso"
+        self.assertEqual(self.lexical_resource.set_date_coding(coding), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.dateCoding, coding)
+
+    def test_get_date_coding(self):
+        self.assertIs(self.lexical_resource.get_date_coding(), self.lexical_resource.global_information.dateCoding)
+
+    def test_set_project_name(self):
+        name = "project"
+        self.assertEqual(self.lexical_resource.set_project_name(name), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.global_information.projectName, name)
+    
+    def test_get_project_name(self):
+        self.assertIs(self.lexical_resource.get_project_name(), self.lexical_resource.global_information.projectName)
+
+    def test_set_creation_date(self):
         date = "2014-10-08"
-        self.assertEqual(self.lexical_resource.set_creationDate(date), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.set_creation_date(date), self.lexical_resource)
         self.assertEqual(self.lexical_resource.global_information.creationDate, date)
 
-    def test_get_creationDate(self):
-        self.assertIs(self.lexical_resource.get_creationDate(), self.lexical_resource.global_information.creationDate)
+    def test_get_creation_date(self):
+        self.assertIs(self.lexical_resource.get_creation_date(), self.lexical_resource.global_information.creationDate)
 
-    def test_set_lastUpdate(self):
+    def test_set_last_update(self):
         date = "2014-10-10"
-        self.assertEqual(self.lexical_resource.set_lastUpdate(date), self.lexical_resource)
+        self.assertEqual(self.lexical_resource.set_last_update(date), self.lexical_resource)
         self.assertEqual(self.lexical_resource.global_information.lastUpdate, date)
 
-    def test_get_lastUpdate(self):
-        self.assertIs(self.lexical_resource.get_lastUpdate(), self.lexical_resource.global_information.lastUpdate)
+    def test_get_last_update(self):
+        self.assertIs(self.lexical_resource.get_last_update(), self.lexical_resource.global_information.lastUpdate)
 
     def test_set_author(self):
         author = "My Name"
@@ -114,8 +162,8 @@ class TestLexicalResourceFunctions(unittest.TestCase):
     def test_get_description(self):
         self.assertIs(self.lexical_resource.get_description(), self.lexical_resource.global_information.description)
 
-    def test_get_bibliographicCitation(self):
-        self.assertIs(self.lexical_resource.get_bibliographicCitation(), self.lexical_resource.global_information.bibliographicCitation)
+    def test_get_bibliographic_citation(self):
+        self.assertIs(self.lexical_resource.get_bibliographic_citation(), self.lexical_resource.global_information.bibliographicCitation)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalResourceFunctions)
 
