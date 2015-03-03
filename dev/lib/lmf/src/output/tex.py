@@ -1,10 +1,13 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.tex import lmf_to_tex, tex_font, partOfSpeech_tex
-from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
+from config.tex import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, lmf_to_tex, tex_font, partOfSpeech_tex
+from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import open_read, open_write, EOL
 from utils.error_handling import OutputError, Warning
+
+# To define languages
+import config
 
 def compute_header(preamble):
     """! @brief Create LaTeX header.
@@ -275,7 +278,7 @@ def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
             print unicode(Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech(), lexical_entry.get_lexeme())))
     return result
 
-def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
+def format_definitions(lexical_entry, font, languages=None):
     """! @brief Glosses are supplanted by definitions.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
@@ -283,33 +286,35 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
     @return A string representing glosses and definitions in LaTeX format.
     """
     result = ""
+    if languages is None:
+        languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
     for sense in lexical_entry.get_senses():
         for language in languages:
             if len(sense.find_definitions(language)) != 0:
                 for definition in sense.find_definitions(language):
-                    if language == VERNACULAR:
+                    if language == config.xml.vernacular:
                         result += font[VERNACULAR](definition) + ". "
-                    elif language == NATIONAL:
+                    elif language == config.xml.national:
                         result += font[NATIONAL](handle_font(definition)) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.regional:
                         result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
                     else:
                         result += definition + ". "
             elif len(sense.find_glosses(language)) != 0:
                 for gloss in sense.find_glosses(language):
-                    if language == VERNACULAR:
+                    if language == config.xml.vernacular:
                         result += font[VERNACULAR](gloss) + ". "
-                    elif language == NATIONAL:
+                    elif language == config.xml.national:
                         result += font[NATIONAL](handle_font(gloss)) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.regional:
                         result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
                     else:
                         result += gloss + ". "
             if len(sense.get_translations(language)) != 0:
                 for translation in sense.get_translations(language):
-                    if language == NATIONAL:
+                    if language == config.xml.national:
                         result += font[NATIONAL](translation) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.regional:
                         result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
                     else:
                         result += translation + ". "
@@ -352,13 +357,13 @@ def format_examples(lexical_entry, font):
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
             result += "\\begin{exe}" + EOL
-            for example in context.find_written_forms(VERNACULAR):
+            for example in context.find_written_forms(config.xml.vernacular):
                 result += "\\sn " + font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(ENGLISH):
+            for example in context.find_written_forms(config.xml.English):
                 result += "\\trans " + example + EOL
-            for example in context.find_written_forms(NATIONAL):
+            for example in context.find_written_forms(config.xml.national):
                 result += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
-            for example in context.find_written_forms(REGIONAL):
+            for example in context.find_written_forms(config.xml.regional):
                 result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
             result += "\\end{exe}" + EOL
     return result
@@ -371,13 +376,13 @@ def format_usage_notes(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for usage in sense.find_usage_notes(language=VERNACULAR):
+        for usage in sense.find_usage_notes(language=config.xml.vernacular):
             result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
-        for usage in sense.find_usage_notes(language=ENGLISH):
+        for usage in sense.find_usage_notes(language=config.xml.English):
             result += "\\textit{Usage:} " + usage + " "
-        for usage in sense.find_usage_notes(language=NATIONAL):
+        for usage in sense.find_usage_notes(language=config.xml.national):
             result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
-        for usage in sense.find_usage_notes(language=REGIONAL):
+        for usage in sense.find_usage_notes(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
@@ -389,13 +394,13 @@ def format_encyclopedic_informations(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for information in sense.find_encyclopedic_informations(language=VERNACULAR):
+        for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
             result += font[VERNACULAR](information) + " "
-        for information in sense.find_encyclopedic_informations(language=ENGLISH):
+        for information in sense.find_encyclopedic_informations(language=config.xml.English):
             result += information + " "
-        for information in sense.find_encyclopedic_informations(language=NATIONAL):
+        for information in sense.find_encyclopedic_informations(language=config.xml.national):
             result += font[NATIONAL](handle_font(information)) + " "
-        for information in sense.find_encyclopedic_informations(language=REGIONAL):
+        for information in sense.find_encyclopedic_informations(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
@@ -407,13 +412,13 @@ def format_restrictions(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for restriction in sense.find_restrictions(language=VERNACULAR):
+        for restriction in sense.find_restrictions(language=config.xml.vernacular):
             result += "\\textit{VerRestrict:} " + font[VERNACULAR](restriction) + " "
-        for restriction in sense.find_restrictions(language=ENGLISH):
+        for restriction in sense.find_restrictions(language=config.xml.English):
             result += "\\textit{Restrict:} " + restriction + " "
-        for restriction in sense.find_restrictions(language=NATIONAL):
+        for restriction in sense.find_restrictions(language=config.xml.national):
             result += "\\textit{" + font[NATIONAL](restriction) + "} "
-        for restriction in sense.find_restrictions(language=REGIONAL):
+        for restriction in sense.find_restrictions(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](restriction) + "]} "
     return result
 
@@ -476,12 +481,12 @@ def format_variant_forms(lexical_entry, font):
     for form_representation in lexical_entry.get_form_representations():
         if form_representation.get_variantForm() is not None:
             result += "\\textit{Variant:} " + font[VERNACULAR](form_representation.get_variantForm()) + " "
-        if form_representation.get_comment(ENGLISH) is not None:
-            result +=  "(" + form_representation.get_comment(ENGLISH) + ") "
-        if form_representation.get_comment(NATIONAL) is not None:
-            result +=  "(" + font[NATIONAL](form_representation.get_comment(NATIONAL)) + ") "
-        if form_representation.get_comment(REGIONAL) is not None:
-            result +=  "(" + font[REGIONAL](form_representation.get_comment(REGIONAL)) + ") "
+        if form_representation.get_comment(config.xml.English) is not None:
+            result +=  "(" + form_representation.get_comment(config.xml.English) + ") "
+        if form_representation.get_comment(config.xml.national) is not None:
+            result +=  "(" + font[NATIONAL](form_representation.get_comment(config.xml.national)) + ") "
+        if form_representation.get_comment(config.xml.regional) is not None:
+            result +=  "(" + font[REGIONAL](form_representation.get_comment(config.xml.regional)) + ") "
     return result
 
 def format_borrowed_word(lexical_entry, font):

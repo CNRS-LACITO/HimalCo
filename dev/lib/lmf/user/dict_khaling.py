@@ -5,6 +5,9 @@
 from startup import *
 import os
 
+# Add khaling configuration folder to path
+sys.path.append(user_path + 'khaling')
+
 # Import user customized configuration
 from khaling import mdf2lmf, lmf2mdf, order, lmf2tex, items, my_font
 

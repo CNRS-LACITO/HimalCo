@@ -1,8 +1,13 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 from utils.io import EOL
+
+## Define languages
+VERNACULAR = "vernacular"
+ENGLISH = "English"
+NATIONAL = "national"
+REGIONAL = "regional"
 
 ## Fonts to use in LaTeX format (output)
 tex_font = dict({

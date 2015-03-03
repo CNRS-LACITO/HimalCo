@@ -7,10 +7,11 @@
 import sys
 sys.path.append('./src')
 
-## Functions to read from a file: MDF, XML LMF, sort order
+## Functions to read from a file: MDF, XML LMF, sort order, XML config
 from input.mdf import mdf_read
 from input.xml_lmf import xml_lmf_read as lmf_read
 from config.xml import sort_order_read as order_read
+from config.xml import config_read
 
 ## Functions to write into a file: MDF, XML LMF, LaTeX, doc
 from output.mdf import mdf_write
@@ -20,27 +21,31 @@ from output.tex import tex_write
 from utils.error_handling import Error
 from utils.log import log
 
+## Module variable
+lexical_resource = None
+
 def wrapper(func, *args, **kwds):
     """! @brief Wrapper function that calls another function, restoring normal behavior on error.
     @param func Callable object.
     @param args Arguments passed to 'func' as its first argument.
     @param kwds Other arguments passed to 'func'.
     """
-    ## Function variable
-    wrapper.lexical_resource = None
     ## As this is a user function, it is executed under 'try' statement to catch and handle exceptions
     try:
-        from core.lexical_resource import LexicalResource
-        if wrapper.lexical_resource is None:
-            # Create a Lexical Resource only once
-            wrapper.lexical_resource = LexicalResource()
         object = func(*args, **kwds)
-        if object.__class__.__name__ == "LexicalResource" or type(object) == type(dict()):
+        if object.__class__.__name__ == "LexicalResource":
+            wrapper.lexical_resource = object
             return object
         elif object.__class__.__name__ == "Lexicon":
+            from core.lexical_resource import LexicalResource
+            if wrapper.lexical_resource is None:
+                # Create a Lexical Resource only once
+                wrapper.lexical_resource = LexicalResource()
             # Attach lexicon to the lexical resource
             wrapper.lexical_resource.add_lexicon(object)
             return wrapper.lexical_resource
+        elif type(object) == type(dict()):
+            return object
     except Error as exception:
         ## A library error has occured
         exception.handle()
@@ -92,6 +97,11 @@ def read_sort_order(*args, **kwds):
     sort_order = wrapper(order_read, *args, **kwds)
     log("Successfully read sort order: " + str(sort_order))
     return sort_order
+
+def read_config(*args, **kwds):
+    lexical_resource = wrapper(config_read, *args, **kwds)
+    log("Successfully read config")
+    return lexical_resource
 
 def write_mdf(*args, **kwds):
     # As an MDF file can only contain one lexicon, create as many MDF files as lexicons in the lexical resource (TODO: rename files)

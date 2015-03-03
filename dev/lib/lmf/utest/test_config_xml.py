@@ -3,8 +3,6 @@
 
 from startup import *
 from config.xml import sort_order_read, config_read
-#from lmf import vernacular, English, national, regional, French
-#global vernacular, English, national, regional, French
 import config
 
 ## Test sort order functions
@@ -31,12 +29,17 @@ class TestSortOrderFunctions(unittest.TestCase):
         utest_path = sys.path[0] + '/'
         config_filename = utest_path + "../user/default/config.xml"
         # Read XML config file and test result
-        (lexical_resource, lexicon, my_font) = config_read(config_filename)
+        lexical_resource = config_read(config_filename)
         self.assertEqual(config.xml.vernacular, "ver")
         self.assertEqual(config.xml.English, "eng")
         self.assertEqual(config.xml.national, "nat")
         self.assertEqual(config.xml.regional, "reg")
         self.assertEqual(config.xml.French, "fra")
+        self.assertEqual(config.xml.font["vernacular"]("test"), "\\textcolor{blue}{\\textbf{\ipa{test}}}")
+        self.assertEqual(config.xml.font["English"]("test"), "test")
+        self.assertEqual(config.xml.font["national"]("test"), "\\textcolor{brown}{\zh{test}}")
+        self.assertEqual(config.xml.font["regional"]("test"), "\ipa{test}")
+        self.assertEqual(config.xml.font["French"]("test"), "test")
         self.assertEqual(lexical_resource.get_dtdVersion(), "16")
         self.assertEqual(lexical_resource.get_language_code(), "ISO-639-3")
         self.assertEqual(lexical_resource.get_author(), u"Céline Buret")
@@ -47,12 +50,6 @@ class TestSortOrderFunctions(unittest.TestCase):
         self.assertEqual(lexical_resource.get_creation_date(), "2015-03-02")
         self.assertEqual(lexical_resource.get_project_name(), "ANR HimalCo")
         self.assertEqual(lexical_resource.get_description(), "This is a lexicon of the HimalCo project.")
-        
-        self.assertEqual(my_font["vernacular"]("test"), "\\textcolor{blue}{\\textbf{\ipa{test}}}")
-        self.assertEqual(my_font["English"]("test"), "test")
-        self.assertEqual(my_font["national"]("test"), "\\textcolor{brown}{\zh{test}}")
-        self.assertEqual(my_font["regional"]("test"), "\ipa{test}")
-        self.assertEqual(my_font["French"]("test"), "test")
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestSortOrderFunctions)
 

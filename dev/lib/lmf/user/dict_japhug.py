@@ -5,6 +5,9 @@
 from startup import *
 import os
 
+# Add japhug configuration folder to path
+sys.path.append(user_path + 'japhug')
+
 # Import user customized configuration
 from japhug import mdf2lmf, lmf2mdf, order, lmf2tex
 

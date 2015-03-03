@@ -8,9 +8,10 @@ from core.lexicon import Lexicon
 from utils.xml_format import parse_xml
 from utils.error_handling import InputError
 
-# If an LMF module needs to access languages, copy following lines:
+# If an LMF module needs to access languages or fonts, copy following lines:
 # import config
 # print config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional, config.xml.French
+# print config.xml.font
 
 def sort_order_read(filename):
     """! @brief Read an XML file giving sort order.
@@ -34,12 +35,9 @@ def sort_order_read(filename):
 def config_read(filename):
     """! @brief Read an XML file giving the user configuration.
     @param filename The name of the XML file to read with full path, for instance 'user/default/config.xml'.
-    @return A Python tuple containing: a Lexical Resource, a Python dictionary describing fonts,
+    @return A Lexical Resource.
     """
-    import config
-    lexical_resource = LexicalResource()
-    lexicon = Lexicon()
-    user_font = dict()
+    import config.xml
     configuration = parse_xml(filename)
     # Parse XML elements
     for format in configuration:
@@ -49,17 +47,18 @@ def config_read(filename):
                 # XML elements "lang" have 2 XML attributes: one for the nature of the language ("att"), a second for the language code ("val")
                 exec("config.xml." + lang.attrib["att"] + " = '" + lang.attrib["val"] + "'")
         elif format.tag == "Font":
+            config.xml.font = dict()
             # XML element "Font" have several XML subelements "font"
             for font in format:
                 # XML elements "font" have 2 XML attributes: one for the nature of the language ("att"), a second for the variable name ("var")
                 exec("l = lambda " + font.attrib['var'] + ": " + font.text)
-                user_font.update({font.attrib['att']: l})
+                config.xml.font.update({font.attrib['att']: l})
         elif format.tag == "LMF":
-            # Set DTD version of the lexical resource
-            lexical_resource.set_dtdVersion(format[0].attrib["dtdVersion"])
-            # Set global information
+            # Create lexical resource and set DTD version
+            lexical_resource = LexicalResource(format[0].attrib["dtdVersion"])
             for object in format[0]:
                 if object.tag == "GlobalInformation":
+                    # Set global information
                     for feat in object:
                         if feat.attrib["att"] == "languageCode":
                             lexical_resource.set_language_code(feat.attrib["val"])
@@ -67,6 +66,8 @@ def config_read(filename):
                             lexical_resource.set_author(feat.attrib["val"])
                         elif feat.attrib["att"] == "version":
                             lexical_resource.set_version(feat.attrib["val"])
+                        elif feat.attrib["att"] == "lastUpdate":
+                            lexical_resource.set_last_update(feat.attrib["val"])
                         elif feat.attrib["att"] == "license":
                             lexical_resource.set_license(feat.attrib["val"])
                         elif feat.attrib["att"] == "characterEncoding":
@@ -80,7 +81,9 @@ def config_read(filename):
                         elif feat.attrib["att"] == "description":
                             lexical_resource.set_description(feat.attrib["val"])
                 elif object.tag == "Lexicon":
+                    # Create lexicon and set identifier
                     lexicon = Lexicon(object.attrib["id"])
+                    # Set lexicon attributes
                     for feat in object:
                         if feat.attrib["att"] == "language":
                             lexicon.set_language(feat.attrib["val"])
@@ -94,10 +97,12 @@ def config_read(filename):
                             lexicon.set_entrySource(feat.attrib["val"])
                         elif feat.attrib["att"] == "localPath":
                             lexicon.set_localPath(feat.attrib["val"])
+                    # Attach lexicon to the lexical resource
+                    lexical_resource.add_lexicon(lexicon)
         elif format.tag == "MDF":
             pass
         elif format.tag == "LaTeX":
             pass
         else:
             raise InputError(module_name + ".py", "XML file '%s' is not well-formatted." % filename)
-    return (lexical_resource, lexicon, user_font)
+    return lexical_resource

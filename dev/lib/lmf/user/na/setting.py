@@ -1,10 +1,12 @@
 #! /usr/bin/env python
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, VERNACULAR, ENGLISH, NATIONAL, REGIONAL, ps_partOfSpeech
-from config.tex import partOfSpeech_tex
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech
+from config.tex import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, partOfSpeech_tex
 from output.tex import format_definitions
 from utils.io import EOL
 
+## Define languages
+import config
 FRENCH = "fra"
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
@@ -28,7 +30,7 @@ ps2partOfSpeech.update({
     "pro"           : "pronoun",                    # pronoun/pronominal
     "vi.s"          : "stative intransitive verb",  # stative intransitive verb
     # na
-    "postp"         : "possessed noun",             # possessed nouns
+    "postp"         : "postposition",               # postposition
     "conj"          : "conjunction"                 # conjunction
 })
 
@@ -78,27 +80,27 @@ mdf2lmf.update({
     "__et"  : lambda attributes, et, lexical_entry: None, # TODO
     "__sn"  : lambda attributes, sn, lexical_entry: None, # TO SOLVE
     "vf"    : lambda vf, lexical_entry: None, # TODO
-    "pdf"   : lambda pdf, lexical_entry: lexical_entry.set_paradigm_form(pdf, language=FRENCH),
-    "xf"    : lambda xf, lexical_entry: lexical_entry.add_example(xf, language=FRENCH),
+    "pdf"   : lambda pdf, lexical_entry: lexical_entry.set_paradigm_form(pdf, language=config.xml.French),
+    "xf"    : lambda xf, lexical_entry: lexical_entry.add_example(xf, language=config.xml.French),
     "xc"    : lambda xc, lexical_entry: lexical_entry.set_example_comment(xc),
-    "gf"    : lambda gf, lexical_entry: lexical_entry.set_gloss(gf, language=FRENCH),
+    "gf"    : lambda gf, lexical_entry: lexical_entry.set_gloss(gf, language=config.xml.French),
     # Force first character of definitions to be in upper case
-    "dv"    : lambda dv, lexical_entry: lexical_entry.set_definition(force_caps(dv), language=VERNACULAR),
-    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=ENGLISH),
-    "dn"    : lambda dn, lexical_entry: lexical_entry.set_definition(force_caps(dn), language=NATIONAL),
-    "dr"    : lambda dr, lexical_entry: lexical_entry.set_definition(force_caps(dr), language=REGIONAL),
-    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(force_caps(df), language=FRENCH)
+    "dv"    : lambda dv, lexical_entry: lexical_entry.set_definition(force_caps(dv), language=config.xml.vernacular),
+    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=config.xml.English),
+    "dn"    : lambda dn, lexical_entry: lexical_entry.set_definition(force_caps(dn), language=config.xml.national),
+    "dr"    : lambda dr, lexical_entry: lexical_entry.set_definition(force_caps(dr), language=config.xml.regional),
+    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(force_caps(df), language=config.xml.French)
 })
 
 lmf2mdf = dict(lmf_mdf)
 lmf2mdf.update({
-    "pdf": lambda paradigm: paradigm.get_paradigm(language=FRENCH),
-    "xf" : lambda context: context.find_written_forms(FRENCH),
+    "pdf": lambda paradigm: paradigm.get_paradigm(language=config.xml.French),
+    "xf" : lambda context: context.find_written_forms(config.xml.French),
     "xc" : lambda context: context.get_comments(),
     "ec" : lambda lexical_entry: get_ec(lexical_entry),
     "sd" : lambda lexical_entry: get_sd(lexical_entry),
-    "df" : lambda sense: sense.find_definitions(FRENCH),
-    "gf" : lambda sense: sense.find_glosses(FRENCH)
+    "df" : lambda sense: sense.find_definitions(config.xml.French),
+    "gf" : lambda sense: sense.find_glosses(config.xml.French)
 })
 
 order = list()
@@ -118,12 +120,6 @@ order[7].insert(16, "df")
 order[7][19].insert(5, "xf")
 order[7][19].insert(7, "xc")
 order[28].insert(5, "pdf")
-
-## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
-partOfSpeech2tex = partOfSpeech_tex
-partOfSpeech2tex.update({
-    "possessed noun" : "np"
-})
 
 ## Functions to process some LaTeX fields (output)
 
@@ -155,9 +151,9 @@ def format_gloss(lexical_entry, font, language):
     for sense in lexical_entry.get_senses():
         if sense.find_glosses(language) is not None:
             for gloss in sense.find_glosses(language):
-                if language == FRENCH:
+                if language == config.xml.French:
                     result += "Dialecte chinois local~"
-                elif language == ENGLISH:
+                elif language == config.xml.English:
                     result += "Local Chinese dialect"
                 result +=  ": " + tex.handle_fi(gloss) + font[NATIONAL](u"\u3002")
     return result
@@ -167,11 +163,11 @@ def format_examples(lexical_entry, font, language):
     result = ""
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
-            for example in context.find_written_forms(VERNACULAR):
+            for example in context.find_written_forms(config.xml.vernacular):
                 result += font[VERNACULAR](tex.handle_reserved(example)) + r""" \\""" + EOL
             for example in context.find_written_forms(language):
                 result += font[language](tex.handle_reserved(example)) + r""" \\""" + EOL
-            for example in context.find_written_forms(NATIONAL):
+            for example in context.find_written_forms(config.xml.national):
                 result += font[NATIONAL](tex.handle_reserved(example)) + r""" \\""" + EOL
     return result
 
@@ -190,10 +186,10 @@ def tex_fra(lexical_entry, font):
         "LC AVEC COPULE",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, my_font),\
-        format_definition(lexical_entry, my_font, language=FRENCH),\
-        format_definition(lexical_entry, my_font, language=NATIONAL),\
-        format_gloss(lexical_entry, my_font, language=FRENCH),\
-        format_examples(lexical_entry, my_font, language=FRENCH),\
+        format_definition(lexical_entry, my_font, language=config.xml.French),\
+        format_definition(lexical_entry, my_font, language=config.xml.national),\
+        format_gloss(lexical_entry, my_font, language=config.xml.French),\
+        format_examples(lexical_entry, my_font, language=config.xml.French),\
         "CL")).replace("textsc", "mytextsc")
 
 def tex_eng(lexical_entry, font):
@@ -211,8 +207,8 @@ def tex_eng(lexical_entry, font):
         "LC WITH COPULA",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, my_font),\
-        format_definition(lexical_entry, my_font, language=ENGLISH),\
-        format_definition(lexical_entry, my_font, language=NATIONAL),\
-        format_gloss(lexical_entry, my_font, language=ENGLISH),\
-        format_examples(lexical_entry, my_font, language=FRENCH),\
+        format_definition(lexical_entry, my_font, language=config.xml.English),\
+        format_definition(lexical_entry, my_font, language=config.xml.national),\
+        format_gloss(lexical_entry, my_font, language=config.xml.English),\
+        format_examples(lexical_entry, my_font, language=config.xml.French),\
         "CL")).replace("textsc", "mytextsc")
