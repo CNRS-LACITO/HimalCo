@@ -15,7 +15,7 @@ from setting import mdf2lmf, lmf2mdf, order, tex_eng, tex_fra
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
 
 # Read MDF file and set lexicon identifier
-lexical_resource = lmf.read_mdf(user_path + "../../../../dict/na/toolbox/Dictionary.txt", mdf2lmf, id="na")
+lexical_resource = lmf.read_mdf(mdf2lmf=mdf2lmf, id="na")
 
 # Display global information
 print lexical_resource.get_bibliographic_citation()

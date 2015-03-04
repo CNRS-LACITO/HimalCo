@@ -84,7 +84,7 @@ def read_mdf(*args, **kwds):
         if options.cross_references:
             # Verify lexicon coherence
             lexicon.check_cross_references()
-        log("Successfully created %s LMF entries from MDF file '%s'." % (lexicon.count_lexical_entries(), args[0]))
+        log("Successfully created %s LMF entries from MDF file '%s'." % (lexicon.count_lexical_entries(), lexicon.get_entrySource()))
     return lexical_resource
 
 def read_xml_lmf(*args, **kwds):
