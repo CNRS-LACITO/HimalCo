@@ -37,7 +37,7 @@ class TestMdfFunctions(unittest.TestCase):
         })
         # Read MDF file and test result
         id = "testing lexicon"
-        lexicon = mdf_read(mdf_filename, mdf2lmf, id)
+        lexicon = mdf_read(mdf_filename, mdf2lmf, id=id)
         self.assertEqual(lexicon.get_id(), id)
         self.assertEqual(lexicon.get_entrySource(), mdf_filename)
         entry = lexicon.lexical_entry[0]

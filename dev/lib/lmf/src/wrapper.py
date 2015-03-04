@@ -41,8 +41,9 @@ def wrapper(func, *args, **kwds):
             if wrapper.lexical_resource is None:
                 # Create a Lexical Resource only once
                 wrapper.lexical_resource = LexicalResource()
-            # Attach lexicon to the lexical resource
-            wrapper.lexical_resource.add_lexicon(object)
+            # Attach lexicon to the lexical resource if not yet done
+            if wrapper.lexical_resource.get_lexicon(object.get_id()) is None:
+                wrapper.lexical_resource.add_lexicon(object)
             return wrapper.lexical_resource
         elif type(object) == type(dict()):
             return object
@@ -68,6 +69,15 @@ def read_mdf(*args, **kwds):
     # To access options
     from lmf import options
     global options
+    # Find lexicon configuration if any
+    try:
+        id = kwds['id']
+    except KeyError:
+        id = None
+    if id is not None and wrapper.lexical_resource is not None:
+        lexicon = wrapper.lexical_resource.get_lexicon(id)
+        # Add lexicon argument
+        kwds.update({'lexicon': lexicon})
     # An MDF file contains one lexicon only, but wrapper() function encapsulates it into a lexical resource
     lexical_resource = wrapper(mdf_read, *args, **kwds)
     for lexicon in lexical_resource.lexicon:
