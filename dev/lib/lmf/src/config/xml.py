@@ -7,6 +7,7 @@ from core.lexical_resource import LexicalResource
 from core.lexicon import Lexicon
 from utils.xml_format import parse_xml
 from utils.error_handling import InputError
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech
 
 # If an LMF module needs to access languages or fonts, copy following lines:
 # import config
@@ -100,7 +101,32 @@ def config_read(filename):
                     # Attach lexicon to the lexical resource
                     lexical_resource.add_lexicon(lexicon)
         elif format.tag == "MDF":
-            pass
+            for mdf in format:
+                if mdf.tag == "mdf_lmf":
+                    # XML elements "mdf_lmf" have 2 XML attributes: one for the name of the marker ("marker"), a second for the variable name ("var")
+                    exec("l = lambda " + mdf.attrib['var'] + ": " + mdf.text)
+                    mdf_lmf.update({mdf.attrib['marker']: l})
+                if mdf.tag == "ps_partOfSpeech":
+                    # XML elements "ps_partOfSpeech" have 2 XML attributes: one for the MDF value ("ps"), a second for the LMF value ("partOfSpeech")
+                    ps_partOfSpeech.update({mdf.attrib['ps']: mdf.attrib['partOfSpeech']})
+                if mdf.tag == "lmf_mdf":
+                    # XML elements "lmf_mdf" have 2 XML attributes: one for the name of the marker ("marker"), a second for the variable name ("var")
+                    exec("l = lambda " + mdf.attrib['var'] + ": " + mdf.text)
+                    lmf_mdf.update({mdf.attrib['marker']: l})
+                if mdf.tag == "mdf_order":
+                    mdf_order = []
+                    for element in mdf:
+                        mdf_order.append(element.tag)
+                        list1 = []
+                        for level1 in element:
+                            list1.append(level1.tag)
+                            list2 = []
+                            for level2 in level1:
+                                list2.append(level2.tag)
+                            if len(list2) != 0:
+                                list1.append(list2)
+                        if len(list1) != 0:
+                            mdf_order.append(list1)
         elif format.tag == "LaTeX":
             pass
         else:

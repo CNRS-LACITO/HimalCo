@@ -9,13 +9,13 @@ import os
 sys.path.append(user_path + 'na')
 
 # Import user customized configuration
-from setting import mdf2lmf, lmf2mdf, order, tex_eng, tex_fra
+from setting import tex_eng, tex_fra
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
 
 # Read MDF file and set lexicon identifier
-lexical_resource = lmf.read_mdf(mdf2lmf=mdf2lmf, id="na")
+lexical_resource = lmf.read_mdf(id="na")
 
 # Display global information
 print lexical_resource.get_bibliographic_citation()
@@ -32,7 +32,7 @@ lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", prea
 lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, sort_order=xml_order)
 
 # Write MDF file
-lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt", lmf2mdf, order)
+lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt")
 
 # Release created objects
 del lexical_resource
