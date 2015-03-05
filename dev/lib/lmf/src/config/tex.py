@@ -2,20 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from utils.io import EOL
-
-## Define languages
-VERNACULAR = "vernacular"
-ENGLISH = "English"
-NATIONAL = "national"
-REGIONAL = "regional"
-
-## Fonts to use in LaTeX format (output)
-tex_font = dict({
-    VERNACULAR  : lambda text: "\\textbf{\ipa{" + text + "}}",
-    ENGLISH     : lambda text: text,
-    NATIONAL    : lambda text: "\\textit{\zh{" + text + "}}",
-    REGIONAL    : lambda text: "\ipa{" + text + "}"
-})
+from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
 ## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
 partOfSpeech_tex = dict({
@@ -67,7 +54,7 @@ partOfSpeech_tex = dict({
 })
 
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
-def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_tex, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
+def lmf_to_tex(lexical_entry, font=None, partOfSpeech_mapping=partOfSpeech_tex, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     """! @brief Function to convert LMF lexical entry information to be written into LaTeX commands.
     @param lexical_entry The Lexical Entry LMF instance to display.
     @param font A Python dictionary describing fonts to use for different languages.
@@ -76,6 +63,9 @@ def lmf_to_tex(lexical_entry, font=tex_font, partOfSpeech_mapping=partOfSpeech_t
     @return A string representing the lexical entry in LaTeX format.
     """
     import output.tex as tex
+    # Define font
+    if font is None:
+        font = config.xml.font
     tex_entry = ""
     # lexeme and id
     tex_entry += tex.format_lexeme(lexical_entry, font)

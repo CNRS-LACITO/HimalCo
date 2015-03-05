@@ -1,12 +1,14 @@
 #! /usr/bin/env python
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech
-from config.tex import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, partOfSpeech_tex
+from config.tex import partOfSpeech_tex
 from output.tex import format_definitions
 from utils.io import EOL
+from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
 ## To define languages and fonts
 import config
+FRENCH = "French"
 
 ## Functions to process some MDF fields (input)
 
@@ -68,13 +70,13 @@ def format_tone(lexical_entry, font):
     if lexical_entry.get_tones() is not None and len(lexical_entry.get_tones()) != 0:
         return tex.handle_reserved(lexical_entry.get_tones()[0])
 
-def format_definition(lexical_entry, font, language):
+def format_definition(lexical_entry, language_font, language):
     import output.tex as tex
     result = ""
     for sense in lexical_entry.get_senses():
         if sense.find_definitions(language) is not None:
             for definition in sense.find_definitions(language):
-                result += font[language](tex.handle_fi(tex.handle_reserved(definition)))
+                result += language_font(tex.handle_fi(tex.handle_reserved(definition)))
     return result
 
 def format_gloss(lexical_entry, font, language):
@@ -90,7 +92,7 @@ def format_gloss(lexical_entry, font, language):
                 result +=  ": " + tex.handle_fi(gloss) + font[NATIONAL](u"\u3002")
     return result
 
-def format_examples(lexical_entry, font, language):
+def format_examples(lexical_entry, font, language_font, language):
     import output.tex as tex
     result = ""
     for sense in lexical_entry.get_senses():
@@ -98,7 +100,7 @@ def format_examples(lexical_entry, font, language):
             for example in context.find_written_forms(config.xml.vernacular):
                 result += font[VERNACULAR](tex.handle_reserved(example)) + r""" \\""" + EOL
             for example in context.find_written_forms(language):
-                result += font[language](tex.handle_reserved(example)) + r""" \\""" + EOL
+                result += language_font(tex.handle_reserved(example)) + r""" \\""" + EOL
             for example in context.find_written_forms(config.xml.national):
                 result += font[NATIONAL](tex.handle_reserved(example)) + r""" \\""" + EOL
     return result
@@ -118,10 +120,10 @@ def tex_fra(lexical_entry, font):
         "LC AVEC COPULE",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
-        format_definition(lexical_entry, config.xml.font, language=config.xml.French),\
-        format_definition(lexical_entry, config.xml.font, language=config.xml.national),\
+        format_definition(lexical_entry, config.xml.font[FRENCH], language=config.xml.French),\
+        format_definition(lexical_entry, config.xml.font[NATIONAL], language=config.xml.national),\
         format_gloss(lexical_entry, config.xml.font, language=config.xml.French),\
-        format_examples(lexical_entry, config.xml.font, language=config.xml.French),\
+        format_examples(lexical_entry, config.xml.font, config.xml.font[FRENCH], language=config.xml.French),\
         "CL")).replace("textsc", "mytextsc")
 
 def tex_eng(lexical_entry, font):
@@ -139,8 +141,8 @@ def tex_eng(lexical_entry, font):
         "LC WITH COPULA",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
-        format_definition(lexical_entry, config.xml.font, language=config.xml.English),\
-        format_definition(lexical_entry, config.xml.font, language=config.xml.national),\
+        format_definition(lexical_entry, config.xml.font[ENGLISH], language=config.xml.English),\
+        format_definition(lexical_entry, config.xml.font[NATIONAL], language=config.xml.national),\
         format_gloss(lexical_entry, config.xml.font, language=config.xml.English),\
-        format_examples(lexical_entry, config.xml.font, language=config.xml.French),\
+        format_examples(lexical_entry, config.xml.font, config.xml.font[FRENCH], language=config.xml.French),\
         "CL")).replace("textsc", "mytextsc")

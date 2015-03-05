@@ -1,12 +1,13 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.tex import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, lmf_to_tex, tex_font, partOfSpeech_tex
+from config.tex import lmf_to_tex, partOfSpeech_tex
 from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import open_read, open_write, EOL
 from utils.error_handling import OutputError, Warning
+from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
-# To define languages
+# To define languages and fonts
 import config
 
 def compute_header(preamble):
@@ -21,7 +22,7 @@ def compute_header(preamble):
         hdr.close()
     return header
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -33,6 +34,9 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
     """
     import string
+    # Define font
+    if font is None:
+        font = config.xml.font
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(compute_header(preamble))
