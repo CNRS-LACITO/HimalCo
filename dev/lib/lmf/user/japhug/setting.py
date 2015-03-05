@@ -1,72 +1,16 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, mdf_semanticRelation, VERNACULAR, NATIONAL, ENGLISH, REGIONAL, ps_partOfSpeech
+from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
 from utils.io import EOL
 import output.tex as tex
+from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 
-FRENCH = "fra"
-AUDIO_PATH = "file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/japhug/data/audio/"
-
-## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
-ps2partOfSpeech = ps_partOfSpeech
-ps2partOfSpeech.update({
-    # HimalCo
-    "adj"           : "adjective",                  # adjective
-    "adv"           : "adverb",                     # adverb(ial)
-    "class"         : "classifier",                 # classifier (MDF)
-    "clf"           : "classifier",                 # classifier (Leipzig)
-    "cnj"           : "conjunction",                # conjunction
-    "disc.PTCL"     : "particle",                   # discourse particle
-    "ideo"          : "ideophone",                  # ideophones
-    "intj"          : "interjection",               # interjection
-    "interj"        : "interjection",               # interjection -> khaling
-    "lnk"           : "coordinating conjunction",   # linker
-    "n"             : "noun",                       # noun
-    "Np"            : "possessed noun",             # possessed nouns
-    "_poss._pref"   : "possessed noun",             # possessed nouns -> koyi
-    "neg"           : "negation",                   # negative
-    "num"           : "numeral",                    # number
-    "prep"          : "preposition",                # preposition
-    "pro"           : "pronoun",                    # pronoun/pronominal
-    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
-    # japhug
-    "cl"            : "classifier",                 # classifier
-    "conj"          : "conjunction",                # conjunction
-    "expression"    : "expression",                 #
-    "idph"          : "ideophone",                  # ideophones
-    "idph.1"        : "ideophone.1",                # ideophones
-    "idph.2"        : "ideophone.2",                # ideophones
-    "idph.3"        : "ideophone.3",                # ideophones
-    "idph.4"        : "ideophone.4",                # ideophones
-    "idph.5"        : "ideophone.5",                # ideophones
-    "idph.6"        : "ideophone.6",                # ideophones
-    "idph.7"        : "ideophone.7",                # ideophones
-    "idph.8"        : "ideophone.8",                # ideophones
-    "n N"           : "noun",                       # noun
-    "nq"            : "noun",                       # noun
-    "np"            : "possessed noun",             # possessed nouns
-    "nP"            : "possessed noun",             # possessed nouns
-    "Posp"          : "possessed noun",             # possessed nouns
-    "Post"          : "possessed noun",             # possessed nouns
-    "post"          : "possessed noun",             # possessed nouns
-    "postp"         : "possessed noun",             # possessed nouns
-    "quant"         : "numeral",                    # number
-    "part"          : "particle",                   # discourse particle
-    "Part"          : "particle",                   # discourse particle
-    "vi-"           : "intransitive verb",          # intransitive verb
-    "vinh"          : "stative intransitive verb",  # stative intransitive verb
-    "vStat"         : "stative intransitive verb",  # stative intransitive verb
-    "vst"           : "stative intransitive verb",  # stative intransitive verb
-    "vs"            : "stative intransitive verb",  # stative intransitive verb
-    "vl"            : "bitransitive verb",          # labial verb
-    "vlb"           : "bitransitive verb",          # labial verb
-    "vlab"          : "bitransitive verb",          # labial verb
-    "T"             : "time noun",                  # ?
-    "indef"         : "indefinite determiner"       # ?
-})
+## To define languages and fonts
+import config
+FRENCH = "French"
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute
 partOfSpeech_range.update([
@@ -97,44 +41,21 @@ def process_audio(lexical_entry):
             sf.append(form_representation.get_audio().get_fileName())
     return sf
 
-mdf2lmf = dict(mdf_lmf)
-mdf2lmf.update({
-    "hbf"   : lambda hbf, lexical_entry: lexical_entry.set_bibliography(hbf),
-    "wav"   : lambda wav, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "wav/" + wav + ".wav", quality="very good", audio_file_format="wav"),
-    "wav8"  : lambda wav8, lexical_entry: lexical_entry.set_audio(file_name=AUDIO_PATH + "mp3/8_" + wav8 + ".wav", quality="low", audio_file_format="wav"),
-    "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
-    "ge"    : lambda ge, lexical_entry: lexical_entry.set_gloss(ge, language=FRENCH),
+mdf_lmf.update({
     "lx"    : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
+    "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
     "se"    : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
     "xv"    : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=VERNACULAR),
     "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"]),
-    "ps"    : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps, range=partOfSpeech_range, mapping=ps2partOfSpeech)
+    "ps"    : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps, range=partOfSpeech_range)
 })
 
-lmf2mdf = dict(lmf_mdf)
-lmf2mdf.update({
-    "sf" : lambda lexical_entry: process_audio(lexical_entry),
-    "gf" : lambda sense: sense.find_glosses(FRENCH)
+lmf_mdf.update({
+    "sf" : lambda lexical_entry: process_audio(lexical_entry)
 })
-
-order = list()
-# Copy list of MDF markers without references
-def copy_list(in_element, out_list):
-    if type(in_element) is list:
-        sub_list = list()
-        out_list.append(sub_list)
-        for element in in_element:
-            copy_list(element, sub_list)
-    else:
-        out_list.append(in_element)
-for marker in mdf_order:
-    copy_list(marker, order)
-order[7].insert(15, "gf")
-order.insert(1, "sf")
 
 ## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
-partOfSpeech2tex = partOfSpeech_tex
-partOfSpeech2tex.update({
+partOfSpeech_tex.update({
     "ideophone.1"               : "idph.1",
     "ideophone.2"               : "idph.2",
     "ideophone.3"               : "idph.3",
@@ -278,6 +199,19 @@ def format_paradigms(lexical_entry, font):
             result += font[VERNACULAR](paradigm.get_paradigm(language=VERNACULAR)) + " "
     return result
 
+def handle_reserved(text):
+    if text.find("$") != -1:
+        text = text.replace('$', '')
+    if text.find("#") != -1:
+        text = text.replace('#', '\#')
+    if text.find("& ") != -1:
+        text = text.replace('& ', '\& ')
+    if text.find("_") != -1:
+        text = text.replace('_', '\_').replace("\string\_", "\string_")
+    if text.find("^") != -1:
+        text = text.replace('^', '\^')
+    return text
+
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
     tex_entry = ""
@@ -286,7 +220,7 @@ def lmf2tex(lexical_entry, font):
     # sound
     tex_entry += tex.format_audio(lexical_entry, font)
     # part of speech
-    tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech2tex)
+    tex_entry += tex.format_part_of_speech(lexical_entry, font)
     # grammatical notes
     tex_entry += format_notes(lexical_entry, font)
     # definition/gloss and translation
@@ -317,7 +251,7 @@ def lmf2tex(lexical_entry, font):
     # date
     tex_entry += tex.format_date(lexical_entry, font)
     # Handle reserved characters and fonts
-    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = handle_reserved(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)
     # Special formatting

@@ -9,38 +9,35 @@ import os
 sys.path.append(user_path + 'japhug')
 
 # Import user customized configuration
-from japhug import mdf2lmf, lmf2mdf, order, lmf2tex
+from setting import lmf2tex
+
+# Read user configuration
+lexical_resource = lmf.read_config(user_path + "japhug/config.xml")
 
 # Read MDF file and set lexicon identifier
-lexical_resource = lmf.read_mdf(user_path + "../../../../dict/japhug/toolbox/Dictionary.txt", mdf2lmf, id="japhug")
-# Set lexicon attributes
-lexical_resource.get_lexicon("japhug").set_label("japhug online dictionary").set_language("jya").set_lexiconType("bilingual dictionary jya-fra")
+lexical_resource = lmf.read_mdf(id="japhug")
 
-# Set global information
-lexical_resource.set_creation_date("2014-11-27")
-lexical_resource.set_last_update("2014-02-06")
-lexical_resource.set_author("Guillaume Jacques")
-lexical_resource.set_description("This is the japhug lexicon of HimalCo project.")
+# Display global information
 print lexical_resource.get_bibliographic_citation()
 
 # Classify lexicon
-xml_order = lmf.read_sort_order(user_path + "config/japhug.xml")
+xml_order = lmf.read_sort_order(user_path + "japhug/sort_order.xml")
 lexical_resource.get_lexicon("japhug").sort_lexical_entries(sort_order=xml_order)
 
 # Write XML LMF file
-lmf.write_xml_lmf(lexical_resource, user_path + "dict_japhug/Dictionary.xml")
+lmf.write_xml_lmf(lexical_resource, user_path + "japhug/result/dictionary.xml")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "dict_japhug/Dictionary.tex", preamble=user_path + "config/japhug.tex", lmf2tex=lmf2tex, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, sort_order=xml_order)
 
 # Write MDF file
-lmf.write_mdf(lexical_resource, user_path + "dict_japhug/Dictionary.txt", lmf2mdf, order)
+lmf.write_mdf(lexical_resource, user_path + "japhug/result/dictionary.txt")
 
 # Write HTML file
-os.system("xsltproc -o " + user_path + "dict_japhug/Dictionary.html " + user_path + "../src/output/htm.xsl " + user_path + "dict_japhug/Dictionary.xml")
+os.system("xsltproc -o " + user_path + "japhug/result/dictionary.html " + user_path + "../src/output/htm.xsl " + user_path + "japhug/result/dictionary.xml")
 
 # Write document file
-lmf.write_doc(lexical_resource, user_path + "dict_japhug/Dictionary.docx")
+lmf.write_doc(lexical_resource, user_path + "japhug/result/dictionary.docx")
 
 # Release created objects
 del lexical_resource
