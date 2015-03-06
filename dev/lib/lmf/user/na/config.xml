@@ -4,17 +4,18 @@
     <Language>
         <lang att="vernacular" val="nru"/>
         <lang att="English" val="eng"/>
-        <lang att="national" val="cmn"/>
+        <!-- Chinese mandarin -->
+        <lang att="national" val="zh"/>
         <lang att="regional" val="cmn"/>
         <lang att="French" val="fra"/>
     </Language>
     <Font>
         <!-- Output -->
         <!-- Fonts to use in LaTeX format -->
-        <font att="vernacular" var="text">"\\textcolor{blue}{\\textbf{\ipa{" + text + "}}}"</font>
+        <font att="vernacular" var="text">"\\textcolor{darkblue}{\\textbf{\ipa{" + text + "}}}"</font>
         <font att="English" var="text">text</font>
         <font att="national" var="text">"\\textcolor{brown}{\zh{" + text + "}}"</font>
-        <font att="regional" var="text">"\ipa{" + text + "}"</font>
+        <font att="regional" var="text">"\zh{" + text + "}"</font>
         <font att="French" var="text">text</font>
     </Font>
     <LMF>
@@ -90,17 +91,10 @@
         <mdf_lmf marker="__va" var="attributes, va, lexical_entry"
             >lexical_entry.set_variant_form(va, type="phonetics")</mdf_lmf>
         <!-- TODO -->
-        <mdf_lmf marker="__nt" var="attributes, nt, lexical_entry">None</mdf_lmf>
-        <!-- TODO -->
         <mdf_lmf marker="__vf" var="attributes, vf, lexical_entry">None</mdf_lmf>
         <!-- TODO -->
         <mdf_lmf marker="__xc" var="attributes, xc, lexical_entry">None</mdf_lmf>
         <!-- TODO -->
-        <mdf_lmf marker="__cf" var="attributes, cf, lexical_entry">None</mdf_lmf>
-        <!-- TODO -->
-        <mdf_lmf marker="__et" var="attributes, et, lexical_entry">None</mdf_lmf>
-        <!-- TO SOLVE -->
-        <mdf_lmf marker="__sn" var="attributes, sn, lexical_entry">None</mdf_lmf>
         <mdf_lmf marker="vf" var="vf, lexical_entry">None</mdf_lmf>
         <mdf_lmf marker="pdf" var="pdf, lexical_entry">lexical_entry.set_paradigm_form(pdf,
             language="fra")</mdf_lmf>
@@ -109,6 +103,9 @@
         <mdf_lmf marker="xc" var="xc, lexical_entry">lexical_entry.set_example_comment(xc)</mdf_lmf>
         <mdf_lmf marker="gf" var="gf, lexical_entry">lexical_entry.set_gloss(gf,
             language="fra")</mdf_lmf>
+        <!-- 'gn' transcrit en pinyin -->
+        <mdf_lmf marker="ph" var="ph, lexical_entry">lexical_entry.set_phonetic_form(ph,
+            script_name="pinyin")</mdf_lmf>
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>

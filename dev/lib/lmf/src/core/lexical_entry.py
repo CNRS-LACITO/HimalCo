@@ -324,25 +324,27 @@ class LexicalEntry():
         self.lemma.set_geographical_variant(geographical_variant)
         return self
 
-    def set_phonetic_form(self, phonetic_form):
+    def set_phonetic_form(self, phonetic_form, script_name=None):
         """! @brief Set phonetic form.
         Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
         @param phonetic_form The phonetic form to set.
+        @param script_name The name of the script used to write the phonetic form, e.g. pinyin.
         @return LexicalEntry instance.
         """
         # Create a Lemma instance if not yet created
         if self.lemma is None:
             self.lemma = Lemma()
-        self.lemma.set_phonetic_form(phonetic_form)
+        self.lemma.set_phonetic_form(phonetic_form, script_name)
         return self
 
-    def get_phonetic_forms(self):
+    def get_phonetic_forms(self, script_name=None):
         """! @brief Get all phonetic forms.
         Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param script_name If provided, get only phonetic forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'phoneticForm' if any.
         """
         if self.lemma is not None:
-            return self.lemma.get_phonetic_forms()
+            return self.lemma.get_phonetic_forms(script_name)
 
     def set_contextual_variation(self, contextual_variation):
         """! @brief Set contextual variation.
@@ -665,13 +667,11 @@ class LexicalEntry():
     def get_etymology(self):
         """! @brief Get etymology.
         This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
-        @return Statement attribute 'etymology'.
+        @return The first found Statement attribute 'etymology'.
         """
-        # Get the last Sense instance if any
-        sense = self.get_last_sense()
-        # If there is a Sense instance, get etymology
-        if sense is not None:
-            return sense.get_etymology()
+        for sense in self.get_senses():
+            if sense.get_etymology() is not None:
+                return sense.get_etymology()
 
     def set_etymology_comment(self, etymology_comment, term_source_language=None):
         """! @brief Set etymology comment and language.
@@ -693,13 +693,11 @@ class LexicalEntry():
         """! @brief Get etymology comment.
         This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
         @param term_source_language The language of the etymology comment to retrieve.
-        @return Statement attribute 'etymologyComment'.
+        @return The first found Statement attribute 'etymologyComment'.
         """
-        # Get the last Sense instance if any
-        sense = self.get_last_sense()
-        # If there is a Sense instance, get etymology comment
-        if sense is not None:
-            return sense.get_etymology_comment(term_source_language)
+        for sense in self.get_senses():
+            if sense.get_etymology_comment(term_source_language) is not None:
+                return sense.get_etymology_comment(term_source_language)
 
     def get_term_source_language(self):
         """! @brief Get language used for the etymology comment.

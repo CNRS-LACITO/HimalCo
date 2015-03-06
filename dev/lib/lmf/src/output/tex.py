@@ -119,10 +119,10 @@ def handle_reserved(text):
         text = text.replace('_', '\_').replace("\string\_", "\string_")
     if text.find("^") != -1:
         text = text.replace('^', '\^')
-    if text.find("[") != -1:
-        text = text.replace('[', '\[')
-    if text.find("]") != -1:
-        text = text.replace(']', '\]')
+    #if text.find("[") != -1:
+        #text = text.replace('[', '\[')
+    #if text.find("]") != -1:
+        #text = text.replace(']', '\]')
     return text
 
 def handle_fi(text):
@@ -176,7 +176,8 @@ def handle_caps(text):
     """
     import re
     if text.encode("utf8").find("°") != -1:
-        text = re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+        # LaTeX does not support '#' character inside '\mytextsc' command
+        text = re.sub(r"(\w*)°([^\s\.,)+/:\#]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
     return text
 
 ## Functions to process LaTeX fields (output)
@@ -351,25 +352,32 @@ def format_rf(lexical_entry, font):
     # return "\\textit{Ref:} " + lexical_entry.get_rf() + " "
     return ""
 
-def format_examples(lexical_entry, font):
+def format_examples(lexical_entry, font, languages=None):
     """! @brief Display examples in LaTeX format.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @param languages A list of languages to consider for examples (all by default).
     @return A string representing examples in LaTeX format.
     """
     result = ""
+    if languages is None:
+        languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
-            result += "\\begin{exe}" + EOL
-            for example in context.find_written_forms(config.xml.vernacular):
-                result += "\\sn " + font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(config.xml.English):
-                result += "\\trans " + example + EOL
-            for example in context.find_written_forms(config.xml.national):
-                result += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
-            for example in context.find_written_forms(config.xml.regional):
-                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
-            result += "\\end{exe}" + EOL
+            tmp = ""
+            for language in languages:
+                for example in context.find_written_forms(language):
+                    if language == config.xml.vernacular:
+                        tmp += "\\sn " + font[VERNACULAR](example) + EOL
+                    elif language == config.xml.English:
+                        tmp += "\\trans " + example + EOL
+                    elif language == config.xml.national:
+                        tmp += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
+                    elif language == config.xml.regional:
+                        tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+            # LaTeX does not support empty examples
+            if len(tmp) != 0:
+                result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL
     return result
 
 def format_usage_notes(lexical_entry, font):

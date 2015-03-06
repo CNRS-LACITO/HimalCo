@@ -180,16 +180,17 @@ class Lemma(Form):
         form_representation.set_geographicalVariant(geographical_variant)
         return self
 
-    def set_phonetic_form(self, phonetic_form):
+    def set_phonetic_form(self, phonetic_form, script_name=None):
         """! @brief Set phonetic form.
         This attribute is owned by FormRepresentation.
         @param phonetic_form The phonetic form to set.
+        @param script_name The name of the script used to write the phonetic form, e.g. pinyin.
         @return Lemma instance.
         """
         form_representation = None
-        # Set first FormRepresentation instance that has no phonetic form
+        # Set first FormRepresentation instance that has no phonetic form and that uses the same script name
         for repr in self.get_form_representations():
-            if repr.get_phoneticForm() is None:
+            if repr.get_phoneticForm() is None and repr.get_scriptName() == script_name:
                 form_representation = repr
                 break
         if form_representation is None:
@@ -197,16 +198,19 @@ class Lemma(Form):
             form_representation = self.create_form_representation()
             self.add_form_representation(form_representation)
         form_representation.set_phoneticForm(phonetic_form)
+        if script_name is not None:
+            form_representation.set_scriptName(script_name)
         return self
 
-    def get_phonetic_forms(self):
+    def get_phonetic_forms(self, script_name=None):
         """! @brief Get all phonetic forms.
         This attribute is owned by FormRepresentation.
+        @param script_name If provided, get only phonetic forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'phoneticForm'.
         """
         phonetic_forms = []
         for repr in self.get_form_representations():
-            if repr.get_phoneticForm() is not None:
+            if repr.get_phoneticForm() is not None and (script_name is None or repr.get_scriptName() == script_name):
                 phonetic_forms.append(repr.get_phoneticForm())
         return phonetic_forms
 

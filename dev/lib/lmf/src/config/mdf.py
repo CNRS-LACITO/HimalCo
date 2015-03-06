@@ -512,8 +512,8 @@ ps_partOfSpeech = dict({
 mdf_semanticRelation = dict({
     "sy" : "synonym",
     "an" : "antonym",
-    "cf <hm>" : "homonym",
-    "cf <et>" : "etymology",
+    "hm" : "homonym",
+    "et" : "etymology",
     "se" : "subentry",
     "mn" : "main entry",
     "cf" : "simple link",

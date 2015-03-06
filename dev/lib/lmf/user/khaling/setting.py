@@ -15,7 +15,7 @@ def get_nep(lexical_entry):
     # Consider only the first form
     return lexical_entry.get_citation_forms(script_name="devanagari")[0]
 
-items=lambda lexical_entry: get_nep(lexical_entry)
+items = lambda lexical_entry: get_nep(lexical_entry)
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute
 partOfSpeech_range.update([

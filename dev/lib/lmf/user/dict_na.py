@@ -9,7 +9,7 @@ import os
 sys.path.append(user_path + 'na')
 
 # Import user customized configuration
-from setting import tex_eng, tex_fra
+from setting import tex_eng, tex_fra, items
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
@@ -22,14 +22,14 @@ print lexical_resource.get_bibliographic_citation()
 
 # Classify lexicon
 xml_order = lmf.read_sort_order(user_path + "na/sort_order.xml")
-lexical_resource.get_lexicon("na").sort_lexical_entries(sort_order=xml_order)
+lexical_resource.get_lexicon("na").sort_lexical_entries(items=items, sort_order=xml_order)
 
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, sort_order=xml_order)
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order)
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt")

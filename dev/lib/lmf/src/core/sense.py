@@ -369,13 +369,11 @@ class Sense():
     def get_etymology(self):
         """! @brief Get etymology.
         This attribute is owned by Statement, which is owned by Definition.
-        @return Statement attribute 'etymology'.
+        @return The first found Statement attribute 'etymology'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get etymology
-        if definition is not None:
-            return definition.get_etymology()
+        for definition in self.get_definitions():
+            if definition.get_etymology() is not None:
+                return definition.get_etymology()
 
     def set_etymology_comment(self, etymology_comment, term_source_language=None):
         """! @brief Set etymology comment and language.
@@ -397,13 +395,11 @@ class Sense():
         """! @brief Get etymology comment.
         This attribute is owned by Statement, which is owned by Definition.
         @param term_source_language The language of the etymology comment to retrieve.
-        @return Statement attribute 'etymologyComment'.
+        @return The first found Statement attribute 'etymologyComment'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get etymology comment
-        if definition is not None:
-            return definition.get_etymology_comment(term_source_language)
+        for definition in self.get_definitions():
+            if definition.get_etymology_comment(term_source_language) is not None:
+                return definition.get_etymology_comment(term_source_language)
 
     def get_term_source_language(self):
         """! @brief Get language used for the etymology comment.
