@@ -15,7 +15,7 @@ from core.sense import Sense
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
     """
-    def __init__(self, id=0):
+    def __init__(self, id='0'):
         """! @brief Constructor.
         LexicalEntry instances are owned by Lexicon.
         @param id Unique IDentifier. If not provided, default value is 0.

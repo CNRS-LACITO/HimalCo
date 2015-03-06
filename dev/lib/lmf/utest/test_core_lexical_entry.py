@@ -33,7 +33,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIsNone(self.lexical_entry.partOfSpeech)
         self.assertIsNone(self.lexical_entry.independentWord)
         self.assertIsNone(self.lexical_entry.bibliography)
-        self.assertEqual(self.lexical_entry.id, 0)
+        self.assertEqual(self.lexical_entry.id, '0')
         self.assertListEqual(self.lexical_entry.sense, [])
         self.assertIsNone(self.lexical_entry.lemma)
         self.assertListEqual(self.lexical_entry.related_form, [])
@@ -45,6 +45,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
 
     def test_set_partOfSpeech(self):
         part_of_speech = "verb"
+        self.lexical_entry.set_lexeme("action")
         self.assertEqual(self.lexical_entry.set_partOfSpeech(part_of_speech), self.lexical_entry)
         self.assertEqual(self.lexical_entry.partOfSpeech, part_of_speech)
         # Test error case
