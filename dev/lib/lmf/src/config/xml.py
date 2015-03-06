@@ -7,7 +7,7 @@ from core.lexical_resource import LexicalResource
 from core.lexicon import Lexicon
 from utils.xml_format import parse_xml
 from utils.error_handling import InputError
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 
 # If an LMF module needs to access languages or fonts, copy following lines:
 # import config
