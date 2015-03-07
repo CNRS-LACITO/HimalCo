@@ -15,8 +15,9 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
+\usepackage{lineno}
 
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%\bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
@@ -28,31 +29,102 @@
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
 
 \XeTeXlinebreaklocale 'zh' %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
  
-
-
 \begin{document} 
-\title{Verbal valency and Japhug / Tibetan language contact\footnote{
-} }
+\title{Verbal valency and Japhug / Tibetan language contact\footnote{Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{cisloc} cislocative,  \textsc{deexp} deexperiencer, \textsc{fact} factual/assumptive, \textsc{genr} generic, \textsc{ifr} inferential evidential,  \textsc{inv} inverse, \textsc{lnk} linker, \textsc{recip} reciprocal, \textsc{sens} sensory  evidential, \textsc{transloc} translocative, \textsc{trop} tropative.  Acknowledgements will be added after editorial decision. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). }}
 \author{Guillaume Jacques}
 \maketitle
-%\linenumbers
-
-\section{Transitivity and argumental structure in Tibetan}
-Borrowings are mainly from an older stage of Tibetan, no from modern dialects, thus comparison with Classical Tibetan
+\linenumbers
 
 
-volitionality
+\section{Introduction}
+Japhug, one of the Rgyalrong languages,\footnote{The Rgyalrong languages belong to the Rgyalrongic subgroup of Sino-Tibetan (see \citealt{jackson00puxi}), and are spoken in the Western part of Sichuan, China. The Rgyalrong group comprises Japhug, Tshobdun, Zbu and Situ. In addition, Rgyalrongic includes the Stau-Khroskyabs branch (\citealt{lai14person}). Japhug is spoken by about 10000 people in the north of 'Barkhams county, Rngaba prefecture, Sichuan. } has been under the influence of various surrounding languages, including Amdo Tibetan, Situ, Tshobdun and Sichuan Chinese. 
 
-\section{Morphological transitivity in Japhug}
+Until the mid-20^{th} century, Amdo Tibetan used to be the main Lingua Franca in the Rgyalrong area, leaving hundreds of loanwords in the vocabulary of Japhug. Borrowing took place continuously from the Tibetan Imperial period (eighth century) to the present, and most of the loanwords represent a stage of Amdo Tibetan more archaic than any attested modern Amdo dialects.\footnote{In particular, it preserves complex clusters (such as \ipa{βzɟɯr} `change' from Tibetan \ipa{bsgʲur} and final consonants, including \ipa{--s}, which is lost in all varieties of Tibetan spoken in China.} The layers of Tibetan loanwords have already been sorted out on the basis of morphological, phonological and semantic criteria (\citealt[83-200]{jacques04these}).
 
-Japhug verbs have two conjugations, transitive and intransitive. The intransitive conjugation indexes the person and number (singular, dual, plural) of the S, while the transitive conjugation indexes the person and number of both A and P. The indexation of arguments on transitive verb follows a quasi-canonical direct-inverse system (see \citealt{jacques10inverse}, \citealt{jacques14inverse}). The person marking prefixes and suffixes of the intransitive conjugation can be combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ--} $2\rightarrow1$ and \ipa{ta--} $1\rightarrow2$).
+An important number of these loanwords are verbs, and the aim of the present paper is to map the correspondences between argument structure of Tibetan verbs and that of their borrowed equivalents in Japhug, a task that has not been undertaken before. Loanwords from Situ and Tshobdun are not discussed in the present paper, as there are too few of them. Borrowing from Chinese started only after the mid-twentieth century; loanwords from earlier periods of Chinese were either mediated through Tibetan, or limited to a few isolated nouns.
 
-Transitive verbs can be unambiguously distinguished from intransitive ones by three morphological criteria. First, some transitive verbs show stem alternation in the non-past \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3'; forms (including factual, imperfective, sensory, egophoric, imperative and irrealis). This stem alternation is regular for all transitive verbs in open syllable with a non-front vowel, and follows the rules   in Table \refb{tab:stem3}.
+This paper comprises five sections. First, I present minimal background information on grammatical relations in Japhug and Tibetan. Second, I propose explicit criteria for which Japhug verbs related to Tibetan are included in this study (cognates between Japhug and Tibetan on the one hand, and denominal verbs derived from nouns of Tibetan origin are excluded). Third, I list all attested correspondences of argument structure between Tibetan and Japhug. Fourth, I discuss the issue of complex predicates and incorporation among the verbs of Tibetan origin. Finally, I show how native Japhug derivations apply to verbs of Tibetan origin.
+
+\section{Background information}
+This section presents a simplified account of flagging and indexation in Japhug, and contains all the data necessary to follow the comparison between Japhug and Tibetan verb argument structure.
+
+\subsection{Flagging in Japhug}
+Japhug has an ergative case marking system. As illustrated by examples \ref{ex:abs} and \ref{ex:erg}, the S and P are zero-marked, while the A takes the ergative clitic \ipa{kɯ}. This clitic is obligatory with noun phrases and third person pronouns, but optional in the case of first and second person pronouns. The ergative \ipa{kɯ} is also used to mark instruments,\footnote{The morphosyntactic status of instruments differ from that of A both with regards to indexation and relativization.} but this is not relevant to the present study.
+
+ \begin{exe}
+\ex \label{ex:abs}
+\gll
+\ipa{rɟɤlpu}  	\ipa{nɯ}  	\ipa{mɯ-pjɤ-rɤʑit}  \\
+king \textsc{dem} \textsc{neg-evd.ipfv}-be.there \\
+ \glt The king was not there. (Nyima wodzer2003.1, 18)
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:erg}
+\gll 
+\ipa{rɟɤlpu}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{li}  	\ipa{ci}  	\ipa{ɯ-rʑaβ}  	\ipa{kɯ-ɕɤɣ}  	\ipa{ci}  	\ipa{ɲɤ-ɕar.}  	 \\
+king \textsc{dem} \textsc{erg} again \textsc{indef} \textsc{3sg.poss}-wife \textsc{nmlz}:S/A-be.new \textsc{indef}  \textsc{ifr}-look.for \\
+\glt The king married a new wife. (Snow-white, 15)
+\end{exe}
+
+It is significant that the ergative/instrumental marker \ipa{kɯ} is almost certainly borrowed from the Amdo Tibetan ergative/instrumental/genitive marker \ipa{kə} / \ipa{ɣə} (on which see for instance \citealt[62]{haller04themchen}).
+
+In addition, the argument structure of Japhug can require oblique arguments headed by various postpositions, such as the genitive \ipa{ɣɯ} (borrowed from the allomorph \ipa{ɣə} of the Amdo Tibetan genitive/instrumental/ergative marker), the comitative \ipa{cʰo} `with', the locative marker \ipa{zɯ} or by relator nouns such as the dative  \ipa{ɯ-phe} or \ipa{ɯ-ɕki} (see \citealt[272-4]{jacques14linking} on the distinction between postpositions and relator nouns in Japhug).
+
+Most other Rgyalrongic languages apart from Japhug, including Situ, Zbu, Tshobdun and Khroskyabs (\citealt{jackson98morphology}, \citealt{lai13affixale}), have borrowed either the \ipa{kə} or the \ipa{ɣə} allomorph of the Amdo  ergative/genitive marker. Only Stau has an ergative marker \ipa{--w} unrelated to Tibetan (\citealt{jacques14rtau})
+
+\subsection{Transitivity and indexation in Japhug}
+Rgyalrong languages have polypersonal person and number indexation on the verb, and present a near-canonical direct-inverse system, which has been described in previous research (\citealt{delancey81direction} on Situ,  \citealt{jackson02rentongdengdi} on Tshobdun,  \citealt{jacques10inverse} on Japhug and \citealt{gongxun14agreement} on Zbu). 
+
+Japhug verbs can index at most two arguments; Table \ref{tab:japhug.tr} shows the intransitive and transitive paradigms for the factual non-past form. A set of person affixes is shared by transitive and intransitive verbs. In the case of transitive verbs, these affixes are combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ--} $2\rightarrow1$ and \ipa{ta--} $1\rightarrow2$) in such a way that the person of both arguments (and number of at least one argument) is unambigously marked.
+
+Intransitive verbs can be further divided into two classes. The first class comprises stative verbs (including adjectives)\footnote{In Japhug, adjective can be formally distinguished from other stative verbs in that them allow the tropative derivation (see \citealt{jacques13tropative}).} and auxiliary verbs that do not allow a human S, with an infinitive in \ipa{kɯ--}. The second class includes all other intransitive verbs, whose infinitive form is prefixed in \ipa{kɤ--} like transitive verbs.
+
+\begin{table}[H]
+\caption{Japhug transitive and intransitive paradigms}\label{tab:japhug.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{\sigc{}-a}   & 	 \ipa{\sigc{}-a-ndʑi} & 	 \ipa{\sigc{}-a-nɯ} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{ta-\siga{}} & 	\ipa{ta-\siga{}-ndʑi} & 	\ipa{ta-\siga{}-nɯ} & 	\multicolumn{3}{c|}{ \ipa{\siga{}-tɕi}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\siga{}-ji}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\ipa{kɯ-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\sigc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & 	\ipa{kɯ-\siga{}-a-ndʑi} & 	\ipa{kɯ-\siga{}-tɕi} & 	\ipa{kɯ-\siga{}-ji} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-ndʑi}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} & 	\ipa{kɯ-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-nɯ}} & 	\grise{} \\	
+\hline
+\textsc{3sg} &  	\ipa{wɣɯ́-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\sigc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  	\ipa{wɣɯ́-\siga{}-a-ndʑi} & 	 \ipa{wɣɯ́-\siga{}-tɕi} & 		\ipa{wɣɯ́-\siga{}-ji} & 	\ipa{tɯ́-wɣ-\siga{}} & 	\ipa{tɯ́-wɣ-\siga{}-ndʑi} & 	\ipa{tɯ́-wɣ-\siga{}-nɯ} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-ndʑi} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  	\ipa{wɣɯ́-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-nɯ} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &	\ipa{wɣɯ́-\siga{}} & 	\ipa{wɣɯ́-\siga{}-ndʑi} & 	\ipa{wɣɯ́-\siga{}-nɯ} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\siga{}-a}&\ipa{\siga{}-tɕi}&\ipa{\siga{}-ji}&\ipa{tɯ-\siga{}}&\ipa{tɯ-\siga{}-ndʑi}&\ipa{tɯ-\siga{}-nɯ}&\ipa{\siga{}}&\ipa{\siga{}-ndʑi} &\ipa{\siga{}-nɯ}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+
+Transitive verbs can always be distinguished from intransitive ones by three morphological criteria. First, some transitive verbs show stem alternation in the non-past \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3'; forms (including factual, imperfective, sensory, egophoric, imperative and irrealis; see the forms with \sigc{} in Table \ref{tab:japhug.tr}). This stem alternation is regular for all transitive verbs in open syllable with a non-front vowel, and follows the rules indicated  in Table \refb{tab:stem3}. Following \citet{jackson00puxi}'s terminology, the base stem is referred to as \textit{stem 1}, and the alternating stem as \textit{stem 3}.\footnote{Stem 2 is only found in the perfective form, and is irrelevant to the issues discussed in this paper.}
 
  \begin{table} 
 \caption{Stem 3 alternation in Japhug Rgyalrong} \label{tab:stem3} \centering
@@ -73,85 +145,515 @@ Stem 1 & Stem 3 \\
  
  Third, in perfective 3$\rightarrow$3 direct forms (without the inverse \ipa{wɣ--} prefix), the perfective prefixes have a distinct form.
 
-There is in addition a small class of labile verbs, which can be conjugated either transitively or intransitively (\citealt{jacques12demotion}). All examples exhibit agent-preserving  lability.
+There is in addition a small class of labile verbs, which can be conjugated either transitively or intransitively (\citealt{jacques12demotion}). All examples exhibit agent-preserving  lability (the S of the intransitive construction corresponds to the A of the transitive one).
   
+As mentioned above, in addition to the core arguments S, A and P, the argument structure of Japhug verb main contain obliques, that are never indexed on the verb.
   
-semi-transitive \ipa{aʁe} `get to eat' 
+A handful of intransitive verbs have an unmarked second argument, which is not indexed on the verb but is relativized in the same way as P arguments (\citealt{jacques14relatives}). We refer to such verb as `semi-transitives' and their second argument as `semi-object'.  Example \ref{ex:maRe} illustrates the semi-transitive construction with the verb \ipa{aʁe} `get to eat'. Its semi-object \ipa{qajɯ} `worm' cannot be indexed on the verb, while its S \ipa{pɣɤtɕɯ}  	\ipa{mɤ-kɯ-nɯmtɕi}  `bird not getting up early', if put in the plural or dual, will trigger agreement with the verb.
   
 \begin{exe}
-\ex
+\ex \label{ex:maRe}
 \gll
 \ipa{pɣɤtɕɯ}  	\ipa{mɤ-kɯ-nɯmtɕi}  	\ipa{qajɯ}  	\ipa{mɤ-aʁe}  \\
 bird \textsc{neg-nmlz}:S/A-get.up.early worm \textsc{neg}-get.to.eat:\textsc{fact} \\
 \glt Birds which do not get up early do not get to eat worms. (proverb) 
 \end{exe}  
-  
-  \section{Loan verbs}
-  
-  excluding denominal verbs (derived within Japhug)
-  
-  
-\citealt[133-140]{jacques04these})  
-  
+
+Ditransitive verbs in Japhug can be either secundative or indirective (see \citealt{jacques14antipassive}), but only the second type is attested in loanwords from Tibetan. Indirective verbs treat the T morphosyntactically as the P of a monotransitive construction (in the absolutive form, indexed on the verb, and the R as an oblique marked with the dative (not indexed on the verb).
+
+In Japhug, non-over arguments are interpreted as definite; excluding a handful of labile verbs, indefiniteness can only be expressed by means of voice derivations such as antipassive or passive (\citealt{jacques12demotion}), or by indefinite pronouns such as \ipa{tʰɯci} `something'.
+
+\subsection{Argument structure in Tibetan}
+Tibetic languages differ from Japhug in that they have no person and number indexation on the verb; grammatical relationship are marked exclusively by flagging.
+
+The flagging system of Old Tibetan and modern languages is richer than that of Japhug,  with no less than ten distinct cases (\citet{tournadre10cases, hill12bas}). As in Japhug, Tibetic languages have ergative alignment on noun phrases (\citealt{tournadre96erg}), with the A marked by the ergative/instrumental clitic \ipa{--kʲis, --gʲis, --gis} (which becomes \ipa{--kə/--ɣə} in Amdo Tibetan and was borrowed as \ipa{kɯ} in Japhug) and the S/P is in the absolutive form. The other case relevant to the present paper is the dative (\ipa{-la} in Old Tibetan, \ipa{--a} or vowel alternation in Amdo Tibetan).
+
+
+Tibetan verbs have at most four distinct stems marking TAM distinctions, which are traditionally referred to as Present, Past, Future and Imperative stems.\footnote{The actual use of these stems is not discussed in this paper; the most detailed study on this topic is \citealt{zeisler04}.} 
+
+Controllability, rather than transitivity, is the most important morphosyntactic feature of Tibetan verbs (\citealt[74-5, 136]{haller04themchen}). The absence of morphological transitivity, the isomorphy between ergative and instrumental, in addition to pervasive P-preserving lability makes it difficult to define transitivity in an unambiguous way in Tibetic languages (\citealt{tournadre96erg}).
+
+In the following discussion, we use the classification of argument structure of Tibetan verbs as described in \citet{haller04themchen}; we use the term `transitive' to refer to verbs with two arguments, one of which is marked with the ergative (excluding instruments). 
+
+
+\section{Loan verbs}
+This section, building on the background information presented above, provides an explicit discussion of which Japhug verbs are actually included in this study. It comprises two subsections. First, I provide an overview of the method used to tease apart loanwords from Tibetan and cognates shared by Tibetan and Japhug and of verb stem morphology in Tibetan loanwords into Japhug. Second, I discuss the issue of denominal verbs in Japhug, and why they are not taken into account in this study. 
+
+\subsection{Loanwords vs cognates} \label{sec:layers}
+Since Japhug and Tibetan are related languages, both belonging to the Sino-Tibetan family, it is not always trivial to distinguish between cognates and loanwords. 
+
+\citet[83-200]{jacques04these} proposes a series of phonological, morphological and semantic criteria for distinguishing between cognates and  loanwords between Japhug and Tibetan, and shows that at least five distinct layers of borrowings have to be posited. These criteria cannot be discussed in the present article due to an issue of place, but the basic principles are based on known innovations in both Japhug and Tibetan. 
+
+Any Japhug word with a Tibetan comparandum presenting a Tibetan-proper phonological, morphological or semantic innovation (for instance, the palatalization of *l to \ipa{ʑ} in certain contexts, see \citealt{hill13laterals}) must be borrowed from Tibetan. Conversely, any Japhug word with a Tibetan comparandum not presenting attested Japhug sound changes must be a borrowing (for instance, words where Japhug \ipa{--oz} corresponds to Tibetan \ipa{--os}, as proto-Japhug *\ipa{--os} becomes \ipa{--ɯz}, not \ipa{--oz}). A systematic application of rules of this type allows to determine with near-certainty which verbs in Japhug are borrowed from Tibetan and which are cognates inherited from their common ancestor. Only a handful of verbs can be analyzed both ways (\citealt[164]{jacques04these}), and these will not be included in the present study.
+
+Cognates between the two languages are very few (less than 150), but on the other hand 850 borrowed words have been found (in a dictionary comprising 6280 entries).
+
+
+Of the four stem of Tibetan transitive controllable verbs, only the present and the past stems are widely attested in loanwords into Japhug (\citealt[138]{jacques04these}). Table  \ref{tab:four.stems} present examples of Japhug verbs based on the present or past stems of the original Tibetan verbs (in addition to one verb derived from a future stem). TAM affixes such as the past and future \ipa{b--} prefix, the past and imperative \ipa{--s} suffix, the present nasal prefix etc are borrowed with the verb stem, and are not analyzable in Japhug.
+
+ \begin{table} 
+\caption{Tibetan verb stems as attested in loanwords into Japhug} \label{tab:four.stems} \centering
+\begin{tabular}{llllll}
+\toprule
+Stem&Tibetan && Japhug &\\
+\midrule
+Present & \ipa{ɴdon} & read (aloud) & \ipa{ndɯn} &id.&\\
+Past  & \ipa{btsugs} & establish & \ipa{ftsɯɣ} &id.&\\
+Future & \ipa{bsdu} & collect & \ipa{βzdɯ} & id.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Since argument structure in Tibetan languages is independent of verb stem morphology, the correspondences between Tibetan and Japhug verbs disregard verb stems. In the case of transitive verbs, stems borrowed from Tibetan undergo the same regular alternations  as native verbs (Table \ref{tab:stem3}): verbs ending in \ipa{--o}, \ipa{--a}, \ipa{--u} and \ipa{--ɯ} change to \ipa{--ɤm}, \ipa{--e}, \ipa{--e} and \ipa{--i} respectively. For instance, the alternating stem form of \ipa{βzdɯ} is \ipa{βzdi}.
+
+There is in addition one case of back-formation: the form \ipa{fkrɤm} `put in order' borrowed from the Tibetan past stem \ipa{bkram} `arrange, set' is reanalyzed by some speakers as an alternating stem 3, and these speakers create an innovative stem 1 form \ipa{fkro}.
+
+ 
+\subsection{Denominal verbs}\label{sec:denominal}
+Japhug has a very rich system of denominal prefixes (\citealt{jacques12incorp, jacques14antipassive}). Tibetan or Chinese nouns borrowed into Japhug can undergo these derivations and be turned into verbs, as the examples in Table \ref{tab:denominal}.
+
+
 \begin{table}
-\caption{Correspondences between argument structure type in Tibetan loanverbs in Japhug}
+\caption{Denominal verbs based on nouns borrowed from Tibetan} \label{tab:denominal}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llllllll}
+\toprule
+\multicolumn{2}{c}{Tibetan}  &  \multicolumn{2}{c}{Japhug noun}&& verb&\\
+\midrule
+\ipa{ɕiŋ.tɕʰa} & timber & \ipa{ɕoŋtɕa}&timber & \ipa{ɣɯ-ɕoŋtɕa} & cut timber (vi) \\
+\ipa{dgra} &enemy& \ipa{ʁgra}&enemy & \ipa{nɯ-ʁgra} & treat as an enemy (tr) \\
+\ipa{tsʰos} &colour, paint, dye& \ipa{tsʰwi}&paint, dye & \ipa{sɯɣ-tsʰwi} & dye (tr) \\
+\bottomrule
+\end{tabular}}
+\end{table}  
+
+There is not a single example of a Japhug verb of Chinese origin being directly borrowed as a verb. Verbs are first borrowed as nouns, and then take a denominal prefix turning them into verbs, even in Japhug speakers of the younger generation. 
+
+Even Chinese adjectives, which in that language constitute a distinct word class (\citealt{paul10adj}) have to be denominalized to be used predicatively or attributively. For instance, \zh{复杂} \ipa{fuza} `complex' and \zh{严} \ipa{yan} `strict' can are borrowed as \ipa{rɯ-futsa} `be complex' or \ipa{nɯ-jen} `be strict' into Japhug, and have to be relativized with the participle prefix \ipa{kɯ--} to be used as attributes.
+
+Since these denominal verbs do not always have a corresponding verb in Tibetan or Chinese, and since their argument structure is determined by the denominal prefix they receive, it is futile to attempt at establishing correspondences between the argument structure of denominal verbs of their closest equivalents (if any) in the donor languages. For this reason, only verbs directly borrowed (what \citet[88]{wohlgemuth09verbal} refers to as `direct insertion'), without denominalization, are considered in the following discussion, excluding thus all Chinese loanwords.
+ 
+  \section{Attested correspondences} 
+ In this section, we present examples of Japhug verbs loaned from Tibetan, and compare their argument structure with that found in Amdo Tibetan (using \citealt{haller04themchen}'s monograph as a source) or in Classical Tibetan if the information is not available for Amdo.
+   
+  \subsection{Adjective $\rightarrow$ Stative instransitive}  
+In Tibetan languages, most adjectives are built from originally verb stems by addition of the adjectivizing suffix \ipa{--po}. It is significant that not a single adjective has been borrowed into Japhug with the suffix \ipa{--po}; the only examples of words with the suffix \ipa{--po} in Tibetan loanwords are nouns of adjectival origin like \ipa{βdaχpu} `master, host' from Tibetan \ipa{bdag.po} `id.' (originally `owner').
+
+All cases of adjectives suffixed in \ipa{--po} in Tibetan languages correspond to adjectival stative verbs in Japhug, without suffix, for instance   \ipa{frtɤn} `reliable' from Tibetan \ipa{brtan.po} `stable' (Amdo \ipa{ɸtanpu} `verlässlich'). Although the non-adjectivized form is attested in Classical Tibetan for most nearly all adjectives, it is not the case in the modern Tibetic languages. This implies that these adjective were borrowed from an extinct variety of Tibetan in which all words corresponding to modern \ipa{--po} suffixed adjectives were still stative verbs and could be used predicatively without a copula.
+
+  
+\subsection{Non-controllable intransitive (abs) $\rightarrow$ Stative intransitive}
+The verbal roots from which adjectives in \ipa{--po} are derived are in certain cases still used in modern Tibetic languages in their dynamic form, and are non-controllable intransitive verbs with a unique argument in the absolutive.
+
+For instance, Amdo Tibetan \ipa{rgi} `grow old' from the Old Tibetan past stem \ipa{rgas} of the verb \ipa{rga} `be old, become old' (following regular sound changes). It is not used however with a stative meaning `be old'.
+
+\begin{exe}
+\ex \label{ex:rgi}
+\gll
+\ipa{ʂtamɖʐən} 	\ipa{rgi-ɣokə}  	 \\
+PN grow.old-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin is growing old. (\citealt[123:548]{haller04themchen})
+\end{exe}
+
+In Japhug, this verb was borrowed from the past stem \ipa{rgas} (`be.old:\textsc{pst}') as \ipa{rgɤz} `be old', but unlike Amdo Tibetan it can also be used as an adjectival stative verb with an infinitive in \ipa{kɯ--}. 
+
+However, it is not necessary to assume that the stative meaning of \ipa{rgɤz} is an archaism, preserving the meaning of the verbal root before it become restricted to the dynamic use as in modern Amdo. In Japhug, all stative verbs acquire a dynamic interpretation when used in some TAM forms such as the imperfective, the perfective or the inferential as in example \ref{ex:thWrgAz}. Therefore, a Tibetan dynamic verb expressing the acquisition of a quality (`become X') can be converted to an adjectival stative verb.
+
+\begin{exe}
+\ex \label{ex:thWrgAz}
+\gll
+\ipa{nɯnɯ}  	\ipa{ɯ-ʁrɯ}  	\ipa{nɯnɯ,}  	\ipa{tʰɯ-rgɤz}  	\ipa{tɕe}  	\ipa{tɕe}  	\ipa{nɯ}  	\ipa{ɯʑo}  	\ipa{pjɯ-ɤ<nɯ>tɤr}  	\ipa{ɲɯ-ŋu}  \\
+\textsc{dem} \textsc{3sg.poss}-horn \textsc{dem} \textsc{pfv}-be.old \textsc{lnk}  \textsc{lnk} \textsc{dem} itself \textsc{ipfv}-<\textsc{auto}>fall \textsc{sens}-be \\
+\glt Its horn, when it becomes old, it falls of by itself. (Deer, 35)
+\end{exe}
+
+
+\subsection{Non-controllable intransitive (abs) $\rightarrow$ Dynamic instransitive}  
+Most Tibetan non-controllable intransitive verbs are borrowed as dynamic intransitive verbs in Japhug, as for instance \ipa{sci} `be born' from Tibetan \ipa{skʲe} `id.' or \ipa{βzi} `become drunk' from \ipa{bzi} `id.'. In both languages, the only argument of such verbs is zero-marked.
+
+There is however one critical difference between the two languages with this verb class. In Tibetan, it is possible in these case to add an instrument without changing the verb form, as in \ref{ex:bzE}.
+
+\begin{exe}
+\ex \label{ex:bzE}
+\gll
+\ipa{ʂtamɖʐən} 	\ipa{tɕʰaŋ-ɣə} \ipa{bzə-tʰa} 	 \\
+NP alcohol-\textsc{erg/instr} become.drunk-\textsc{pfv.nvol.evid} \\
+\glt Rtamgrin became drunk from the Chang. (\citealt[112:443]{haller04themchen})
+\end{exe}
+
+In Japhug, on the other hand, it is not possible to add a concrete agent/instrument without causativizing the verb with the prefix \ipa{sɯ--} and turning it to a transitive verb, as in example \ref{ex:lowGsWBzi}.\footnote{In the case of transitive verbs, the causative prefix is also most commonly added to verbs that take an instrumental postpositional phrase, though in that case causativization is only optional.}
+
+\begin{exe}
+\ex \label{ex:lowGsWBzi}
+\gll
+\ipa{cʰa} 	\ipa{kɯ} 	\ipa{ló-wɣ-sɯ-βzi} \\ 
+alcohol \textsc{erg} \textsc{ifr-inv-caus}-become.drunk \\
+\glt He became drunk from the Chang. (elicited)
+\end{exe}
+
+
+\subsection{Motion verb, \textsc{abs+dat} $\rightarrow$ instransitive (abs+loc/abs)}  
+Motion verbs are intransitive verbs in both Tibetan and Japhug, but those with a definite goal (such as `go', as opposed to `walk') require a locative oblique argument. In Amdo Tibetan, as illustrated by \ref{ex:rgyug}, this argument is marked in the dative.
+
+\begin{exe}
+\ex \label{ex:rgyug}
+\gll
+\ipa{ʂtamɖʐən} 	\ipa{jo} \ipa{rdʑəç-kokə} 	 \\
+NP home:\textsc{dat} run-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin ran home. (\citealt[80:125]{haller04themchen})
+\end{exe}
+
+In Japhug, motion verbs of native or Tibetan origin alike mark the goal with various relator nouns (\ref{ex:rJWG1}), with the dative (\ref{ex:rJWG2}), with a relator noun combined with the locative \ipa{zɯ} (\ref{ex:rJWG3}). Alternatively, the goal can also remain in the absolutive form. 
+
+\begin{exe}
+\ex \label{ex:rJWG1}
+\gll
+\ipa{tɕendɤre}  	\ipa{kɯ-mɯrkɯ}  	\ipa{nɯnɯ}  	\ipa{jo-rɟɯɣ}  	\ipa{tɕe}  	\ipa{tɕendɤre,}  	\ipa{nɯ}  	\ipa{rɟara}  	\ipa{ɯ-ŋgɯ}  	\ipa{chɤ-rɟɯɣ}  	\ipa{ri}  \\
+\textsc{lnk} \textsc{nmlz}:S/A-steal \textsc{dem} \textsc{ifr}-run \textsc{lnk} \textsc{lnk} \textsc{dem} \textsc{yard} 3sg-inside \textsc{ifr:downstream}-run \textsc{lnk} \\
+\glt The thief ran, he ran out to the yard. (The four musicians from Bremen, 105)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:rJWG2}
+\gll
+\ipa{rɯdaʁ}  	\ipa{nɯnɯ}  	\ipa{ɯ-ɕki}  	\ipa{jo-rɟɯɣ}  	\ipa{ʑo}  	\ipa{tɕe}  	\ipa{ɣɯ-ndza}  	\ipa{pjɤ-ŋu}  \\
+animal \textsc{dem} \textsc{3sg-dat} \textsc{ifr}-run \textsc{emph} \textsc{lnk} \textsc{inv}-eat:\textsc{fact} \textsc{ifr.ipfv}-be \\
+\glt The animal ran towards him, and was about to eat him. (das tapfere Scheinderlein, 196)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:rJWG3}
+\gll
+\ipa{cɯβloʁ}  	\ipa{ɯ-rkɯ}  	\ipa{zɯ}  	\ipa{jɤ-rɟɯɣ-a}  	\ipa{tɕe}  \\
+pond \textsc{3sg}-side \textsc{loc} \textsc{pfv}-run-\textsc{1sg} \textsc{lnk} \\
+\glt I ran to the side of the pond. (The lotus flower)
+\end{exe}
+
+Amdo Tibetan makes a distinction between controllable and non-controllable motion verbs, for instance between \ipa{rdʑəç} $\leftarrow$ \ipa{rgʲug} `run' and \ipa{rda} $\leftarrow$ \ipa{rdal} `exceed' (\citealt[123:543]{haller04themchen}), which receive different set of TAM and evidential suffixes. In Japhug, no such distinction exists, and  the borrowed verbs \ipa{rɟɯɣ} `run' and \ipa{rdɤl} `overshoot' (from \ipa{rgʲug} and \ipa{rdal} respectively) do not belong to differ verb classes.
+
+
+Unlike some motion verbs such as \ipa{ɕe} `go' and \ipa{ɣi} `come' which can take a purposive complement (see \citealt{sun12complementation}, \citealt{jacques13harmonization}), \ipa{rɟɯɣ} cannot. It is not however a peculiarity of this verb, as some notion motion verbs such as \ipa{nɯqambɯmbjom} `fly' are also unable to take purposive complements.
+
+The verb \ipa{rdɤl} `overshoot' also has a temporal meaning `exceed (time)' and can be used with an infinitival complement in Japhug, as in \ref{ex:kordala}.
+
+\begin{exe}
+\ex \label{ex:kordala}
+\gll
+\ipa{aʑo}  	\ipa{kɤ-nɯʑɯβ}  	\ipa{ko-rdal-a}  \\
+\textsc{1sg} \textsc{inf}-sleep \textsc{ifr}-exceed-\textsc{1sg} \\
+\glt I slept too much. (elicited)
+\end{exe}
+
+No such construction has been reported in available sources on Tibetan, and it might be a Japhug-internal innovation.
+
+\subsection{Motion verb, \textsc{abs+dat} $\rightarrow$ transitive (erg+abs)}  
+The verb \ipa{bʲol} `give way, turn away' in Tibetan is intransitive, and like other motion verbs has an argument in the absolutive and another one in the dative or in the ablative \ipa{--las} (see \citealt[268]{hill10dictionary}). In Japhug however, the verb \ipa{pjɤl} `go around' borrowed from  \ipa{bʲol} was turned into a transitive verb, whose A corresponds to the S of the Tibetan verb, and whose P corresponds to the goal. Example \ref{ex:tukWnWpjalanW} provides an example  showing this verb in transitive construction, with both A and P unambiguously indexed in the verb form.
+
+
+\begin{exe}
+\ex \label{ex:tukWnWpjalanW}
+\gll
+\ipa{ɯ́-ɲɯ-tɯ-mbɣom-nɯ}  	\ipa{nɤ,}  	\ipa{tu-kɯ-nɯmɢla-a-nɯ,}  \ipa{mɯ́-ɲɯ-tɯ-mbɣom-nɯ}  	\ipa{nɤ}  	\ipa{tu-kɯ-nɯ-pjal-a-nɯ}  	\ipa{ma}  	\ipa{a-zrɯɣ}  	\ipa{a-ndʑrɯ}  	\ipa{ɯ-tɯ-dɤn} \\
+\textsc{qu-ipfv}-2-be.in.a.hurry-\textsc{pl} \textsc{lnk} \textsc{ipfv}-2$\rightarrow$1-step.over-\textsc{1sg-pl} \textsc{qu:neg-ipfv}-2-be.in.a.hurry-\textsc{pl} \textsc{lnk} \textsc{ipfv}-2$\rightarrow$1-\textsc{auto}-go.around-\textsc{1sg-pl} \textsc{lnk}   \textsc{1sg.poss}-louse \textsc{1sg.poss}-nit \textsc{3sg-nmlz:degree}-be.many \\
+\glt If you are in a hurry, step over me, if you are not go around me, I am full of lice and nits. (Kunbzang, 15)
+\end{exe}
+
+
+\subsection{Experiencer verb, \textsc{abs+dat} $\rightarrow$ Semi-transitive}
+Some experiencer verbs in Tibetan encode the experiencer with the absolutive and the stimulus with the dative. This is the case of \ipa{rga} `like' in Amdo (Classical Tibetan \ipa{dga}), as illustrated by \ref{ex:rgaGokE}.
+
+\begin{exe}
+\ex \label{ex:rgaGokE}
+\gll \ipa{ʂtamɖʐən}  \ipa{bdeʂtɕəl-a}  \ipa{rga-ɣokə} \\
+NP NP-\textsc{dat} like-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin likes Bdeskyid. (\citealt[123:547]{haller04themchen})
+\end{exe}
+
+The Japhug verb \ipa{rga} `like' borrowed from Amdo Tibetan \ipa{rga} is a semi-transitive verb; the experiencer is the S, while the stimulus is a semi-object (unmarked oblique). In example \ref{ex:rgaa}, the S is first person singular,  with an overt pronoun and indexation on the verb, while the semi-object \ipa{ndɯχu} `baihe flower' has no marking and is not indexed on the verb.\footnote{It is not possible to add a plural or a dual suffix marker coreferent with the semi-object on the verb.}  
+
+\begin{exe}
+\ex \label{ex:rgaa}
+\gll
+\ipa{tɕe} 	\ipa{aʑo} 	\ipa{ndɤre} 	\ipa{ndɯχu} 	\ipa{rga-a} \\
+\textsc{lnk} \textsc{1sg} \textsc{top} baihe like:\textsc{fact}-\textsc{1sg} \\
+\glt As for me, I like the baihe flower.
+(Baihe 129)
+\end{exe}
+
+
+In addition, Japhug \ipa{rga}  occurs with infinitival or finite complement clauses (see example \ref{ex:kAnArtoXpjAt}).
+
+\begin{exe}
+\ex \label{ex:kAnArtoXpjAt}
+\gll  
+\ipa{ma} 	\ipa{aʑo} 	\ipa{qajɯ} 	\ipa{nɯra} 	\ipa{kɤ-nɤrtoχpjɤt} 	\ipa{pɯ-rga-a} \\
+\textsc{lnk} \textsc{1sg} insects \textsc{dem:pl} \textsc{inf}-observe \textsc{pst.ipfv}-like-\textsc{1sg} \\
+\glt I used to like to observe animals. (Dragonfly, 15)
+\end{exe}
+
+\subsection{Controllable transitive verb \textsc{erg+abs}  $\rightarrow$ Transitive}
+Most controllable transitive verbs in Classical and Amdo Tibetan have an argument in the ergative and another one in the absolutive, as Amdo \ipa{ndon} (Classical Tibetan \ipa{ɴdon}, past \ipa{bton(d)}) `read, recite' in \ref{ex:ndonGokE}.
+
+%\begin{exe}
+%\ex
+%\gll  
+%	\ipa{paʁ}  	\ipa{rcanɯ,}  	\ipa{ɯ-tɯpɯ}  	\ipa{roŋri}  	\ipa{kɯ}  	\ipa{ʑo}  	\ipa{pjɯ-χsu-nɯ}  	\ipa{ra}  \\
+%	pig \textsc{top} \textsc{3sg.poss}-household each \textsc{erg} \textsc{emph} \textsc{ipfv}-raise-\textsc{pl} have.to:\textsc{fact} \\
+%	\glt The pigs, every household have to raise (some). (Pigs, 4)
+%\end{exe}
+%\citealt[84]{haller04themchen}  , ex 165
+
+\begin{exe}
+\ex \label{ex:ndonGokE}
+\gll \ipa{ʂtamɖʐən-ɣə}  \ipa{χwetɕʰa}  \ipa{ndon-ɣokə} \\
+NP-\textsc{erg} book read-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin reads the book. (\citealt[94:265]{haller04themchen})
+\end{exe}
+
+
+Japhug \ipa{ndɯn} `read aloud, recite', borrowed from the present stem of this verb, presents asimilar construction, with the core arguments marked in the ergative and absolutive (both are indexed on the verb; in example \ref{ex:YAndWn} the indexation is not overt since both arguments are third singular).
+
+\begin{exe}
+\ex \label{ex:YAndWn}
+\gll \ipa{ɯʑo} 	\ipa{kɯ} 	\ipa{masɤrɯrju} 	\ipa{kʰɤndɯn} 	\ipa{nɯ} 	\ipa{ɲɤ-ndɯn} 	\ipa{tɕe} \\
+\textsc{3sg} \textsc{erg} in.secret sutra \textsc{dem} \textsc{ifr}-recite \textsc{lnk} \\
+\glt He recited the sutra in secret. (Slob.dpon1, 172)
+\end{exe}
+
+Most verbs of Tibetan origin in Japhug belong to this category and have the same argument structure as \ipa{ndɯn}. 
+
+%  \ipa{rtoʁ}  
+%\citet[176]{hill10dictionary}
+
+
+The Tibetan verb \ipa{çtɕi} `cherish, love' (Classical \ipa{gtɕes}) also belongs to this category, as shown by example \ref{ex:gces}, but presents an irregular correspondence with Japhug.
+
+\begin{exe}
+\ex \label{ex:gces}
+\gll \ipa{ʂtamɖʐən-ɣə}  \ipa{ɕaʑi} \ipa{çɕiɣə}  \ipa{çtɕi-ɣə} \\
+NP-\textsc{erg} children very like-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin likes children very much. (\citealt[86:186]{haller04themchen})
+\end{exe}
+
+Japhug \ipa{χtɕɤz}, unlike Tibetan \ipa{gtɕes} from which is was borrowed, is not a transitive verb, but an adjectival stative verb meaning `be cherished', as in \ref{ex:pjAXtCAz}. 
+
+\begin{exe}
+\ex \label{ex:pjAXtCAz}
+\gll
+\ipa{kɯ-mɤku} 	\ipa{ɯ-tɕɯ} 	\ipa{nɯnɯ} 	\ipa{wuma} 	\ipa{mɯ-pjɤ-χtɕɤz} \\
+\textsc{nmlz}:S/A-be.before \textsc{3sg.poss}-son \textsc{dem} really \textsc{neg-ipfv.ifr}-be.cherished \\
+\glt The first child was not loved. (Smanmi4, 2)
+\end{exe}
+
+The reason for this mismatch between Tibetan and Japhug is unclear; the likeliest explanation is that \ipa{gtɕes} was a labile verb in the dialect of Tibetan from which it was borrowed into Japhug.
+
+
+Another puzzling case is the Japhug verb \ipa{βgoz} `prepare, organize' (as in \ref{ex:tABgoza}, which is borrowed from the Tibetan controllable transitive verb \ipa{ɴgod} (past \ipa{bgod}) `design, plan, arrange'. Its phonological shape is unexpected (borrowing from the past stem \ipa{bgod} should have yielded *\ipa{βgot} or *\ipa{βgɤt} depending on the layer), and unlike Tibetan, it is a labile verb, than can be conjugated as a transitive verb (example \ref{ex:tABgoza}) or as a semi-transitive verb (\ref{ex:pWBgoz}).\footnote{The form \ipa{βgoz} resembles the past stem \ipa{bgos} of the verb \ipa{bgot} `share', but the semantic difference excludes such comparison.} 
+
+
+
+\begin{exe}
+\ex \label{ex:tABgoza}
+\gll
+\ipa{tɯ-ŋga} 	\ipa{ɯ-spa} 	\ipa{ci} 	\ipa{tɤ-βgoz-a} \\
+\textsc{indef.poss}-clothes \textsc{3sg.poss}-material \textsc{indef} \textsc{pfv}-prepare-\textsc{1sg} \\
+\glt I prepared the materials (threads and cloth) to (make) clothes.
+\end{exe}
+
+In example \ref{ex:pWBgoz}, note that the argument corresponding to the A of the Tibetan verb \ipa{pʰama} `parents' does not take ergative marking, and that the perfective prefix is in the intransitive form (otherwise \ipa{pa--} would have been expected instead of \ipa{pɯ--}).
+
+\begin{exe}
+\ex \label{ex:pWBgoz}
+\gll \ipa{ndʑi-stɯnmɯ} 	\ipa{nɯ} 	\ipa{pʰama} 	\ipa{pɯ-βgoz} 	\ipa{pɯ-ŋu} \\
+\textsc{3du.poss}-marriage \textsc{dem} parents \textsc{pfv}-organize \textsc{pst.ipfv}-be \\
+\glt Their marriage was arranged by their parents.
+\end{exe}
+
+
+It is interesting that the intransitive use of this verb only appears with the noun \ipa{pʰama} `parents' of Tibetan origin, though this verb is not reported to have such a behaviour in Tibetan.
+
+
+
+\subsection{Controllable transitive verb \textsc{erg+abs}  $\rightarrow$ Transitive with complement clause}
+The Tibetan verb \ipa{gtɕod}, past \ipa{btɕad} `cut' also belongs to the class of controllable transitive verbs (see \citealt[86:187]{haller04themchen}). It was borrowed into Japhug as a transitive verb \ipa{ftɕɤt}, but this verb has a much more restricted meaning `abstain (from a bad habit)',\footnote{This meaning is also attested in Tibetan.} as in example \ref{ex:naftCAt}. Unlike the Tibetan original verb, it cannot take a NP object, only a complement clause.
+
+\begin{exe}
+\ex \label{ex:naftCAt}
+\gll
+\ipa{tʰamakʰa} \ipa{kɤ-sko} \ipa{na-ftɕɤt}\\
+tobacco \textsc{inf}-smoke \textsc{pfv}:3$\rightarrow$3'-abstain \\
+\glt He quit smoking. (elicited)
+\end{exe}
+
+\subsection{Controllable transitive verb \textsc{erg+dat}  $\rightarrow$ Transitive \textsc{erg+abs} }
+A minority of controllable transitive verbs in Tibetan require an argument in the dative instead of the absolutive (see \citealt[111]{haller04themchen} for a list of such verbs in Amdo Tibetan). Only one verb of this class has been borrowed into Japhug: \ipa{ɴpʰja} `blame', corresponding to Japhug \ipa{mpɕa} `blame, scold'. As shown by example \ref{ex:matAkWmpCaa}, this verb is a transitive verb, and the argument that receives the dative case in the Tibetan original verb correspond the P of the verb \ipa{mpɕa}.
+
+\begin{exe}
+\ex \label{ex:matAkWmpCaa}
+\gll
+  \ipa{ma-tɤ-kɯ-mpɕa-a} \\
+  \textsc{neg-imp}-2$\rightarrow$1-blame-\textsc{1sg} \\
+\glt Don't blame me! (from a conversation)
+\end{exe}
+  
+  \subsection{Ditransitive}
+Ditransitive verbs in Tibetan are indirective, with the recipient in the dative and the theme in the absolutive (like the P of a monotransitive verb). Example \ref{ex:fCakkokE} illustrates this construction with the verb \ipa{ɸɕal} `tell' (Classical \ipa{bɕad}).
+
+\begin{exe}
+\ex \label{ex:fCakkokE}
+\gll \ipa{ʂtamɖʐən-ɣə}  \ipa{bdeʂtɕəl-a} \ipa{ʂkatɕʰa} \ipa{ɸɕak-kokə} \\
+NP-\textsc{erg} NP-\textsc{dat} words tell-\textsc{ipfv.nvol.evid} \\
+\glt Rtamgrin talks to Bdeskyid. (\citealt[87:195]{haller04themchen})
+\end{exe}
+
+In Japhug, although both secundative and indirective verbs are attested, all ditransitive verbs borrowed from Tibetan are of the indirective type,as shown by examples \ref{ex:pjAfCAt} and \ref{ex:pjWfCAt} with the verb \ipa{fɕɤt} `tell' from Tibetan \ipa{bɕad}. The recipient receives either dative (\ref{ex:pjAfCAt}) or genitive (\ref{ex:pjWfCAt}) marking (the genitive conveys a benefactive meaning).
+
+\begin{exe}
+\ex \label{ex:pjAfCAt}
+\gll
+  \ipa{rɟɤlpu} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{nɯra} 	\ipa{pɯ-kɯ-fse} 	\ipa{nɯra} 	\ipa{pjɤ-fɕɤt.} \\
+  king \textsc{3sg-dat} \textsc{lnk} \textsc{dem:pl} \textsc{pfv-nmlz}:S/A-be.like  \textsc{dem:pl} \textsc{ifr}-tell \\
+  \glt He told the king the things that had happened. (Die drei Schlangenblätter, 140)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:pjWfCAt}
+\gll
+  \ipa{tɕendɤre} 	<shanluzuode> 	\ipa{nɯnɯ} 	\ipa{kɯ} 	\ipa{mɤ-kɯ-mbrɤt} 	\ipa{ʑo} 	\ipa{rɟɤlpu} 	\ipa{ɣɯ} 	\ipa{ɯ-χpi} 	\ipa{ntsɯ} 	\ipa{pjɯ-fɕɤt} 	\ipa{pjɤ-ŋu} 	\ipa{tɕe,} \\
+  \textsc{lnk} PN \textsc{dem} \textsc{erg} \textsc{neg-inf:n.hum}-\textsc{anticaus}:cut \textsc{emph} king \textsc{gen} \textsc{3sg.poss}-story always \textsc{ipfv}-tell \textsc{ipfv.ifr}-be \textsc{lnk} \\
+\glt Sheherazad told stories to the king without stop. (Arabian Nights introduction, 57)
+\end{exe}
+
+
+\subsection{General Overview}
+The ten main correspondences between Japhug and Tibetan verbs are listed in Table \ref{ex:correspondences}. Several of these categories are only attested by one example (\ipa{bʲol} / \ipa{pjɤl} `go around', \ipa{dga} /\ipa{rga} `like', \ipa{mpʰja} / \ipa{mpɕa} `blame', \ipa{btɕad} / \ipa{ftɕɤt} `quit (bad habit)'). 
+
+If these minor categories are excluded, the correspondences between Japhug and Tibetan are fairly straightforward. Arguments in the absolutive and ergative in Tibetan nearly always correspond to arguments in the absolutive and ergative respectively in Japhug (additionally indexed on the verb). Arguments that are encoded in the dative in Tibetan have distinct correspondences depending on whether the argument in question is the goal of a motion verb or a recipient.
+
+Despite the rich variety of cases in Tibetan, no verb requiring an argument in any case other than absolutive, ergative or dative is attested among the verbs borrowed into Japhug, so that it is unclear how these would be adapted. It is possible that an argument marked with the comitative/associative \ipa{--daŋ} in Tibetan (\citealt{tournadre10cases, hill12bas}) would be marked with the comitative \ipa{cʰo} in Japhug. The closest case to such a correspondence is the verb \ipa{naχtɕɯɣ} `be like', which includes a postpositional phrase in \ipa{cʰo} in its argument structure (see \citealt[273]{jacques14linking}). Although this verb is not directly borrowed from Tibetan (it is a denominal verb derived from the Tibetan numeral \ipa{gtɕig} `one'), its closest Tibetan equivalent \ipa{ɴdra} `be like' takes an argument with the comitative \ipa{--daŋ}. It is possible that the Japhug construction is a calque from the Tibetan one.
+
+
+
+
+\begin{table}
+\caption{Correspondences between argument structure type in Tibetan loanverbs in Japhug} \label{ex:correspondences}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{llllllll}
 \toprule
 Tibetan & & & Japhug &&&\\
 \midrule
-adjective & \ipa{brtan.po} &stable& intr, stat & \ipa{frtɤn} &be reliable& \\
- \textsc{abs} &  \ipa{ɴkʰruŋ} & be born &intr, \textsc{abs.S-agr} & \ipa{mkhroŋ} & id. \\
- \textsc{abs+loc} &  \ipa{rgʲug} &run &intr, \textsc{abs.S-agr+abs} or \textsc{abs.agr+loc} & \ipa{rɟɯɣ} & id. \\
-\textsc{dat+abs} & \ipa{dga} & like & semi-trans, \textsc{abs.S-agr+abs}& \ipa{rga} & id. \\
+adjective & \ipa{brtan.po} &stable& stative & \ipa{frtɤn} &be reliable& \\
+ \textsc{abs} &  \ipa{rgas} & become old &stative & \ipa{rgɤz} & be/become old \\
+ \textsc{abs} &  \ipa{bzi} & become drunk &intransitive & \ipa{βzi} & id. \\
+ \textsc{abs+dat} &  \ipa{rgʲug} &run &intransitive+goal  & \ipa{rɟɯɣ} & id. \\
+\textsc{dat+abs} & \ipa{dga} & like & semi-transitive& \ipa{rga} & id. \\
 \midrule
- \textsc{abs+loc} &  \ipa{bʲol} & go around &trans, \textsc{erg.A-agr+abs.P-agr}& \ipa{pjɤl} & go around \\
-vol, \textsc{erg+abs} & \ipa{rŋo} & fry & trans, \textsc{erg.A-agr+abs.P-agr} & \ipa{rŋu} & id. \\
-vol, \textsc{erg+abs} & \ipa{bgos} & organize & labile: \textsc{abs.S} or  \textsc{erg.A-agr+abs.P-agr}& \ipa{βgoz} & id. \\
-vol, \textsc{erg+dat} & \ipa{mpʰʲa} & reproach & trans, \textsc{erg.A-agr+abs.P-agr}& \ipa{mpɕa} & id. \\
-vol, \textsc{erg+abs} & \ipa{btɕad} & cut & trans, \textsc{erg.A-agr+abs.P-agr}, \textsc{erg.A-agr+inf} & \ipa{ftɕɤt} & abandon (bad habit) \\
+ \textsc{abs+dat/abl} &  \ipa{bʲol} & go around &transitive& \ipa{pjɤl} & go around \\
+\textsc{erg+abs} & \ipa{ɴdon} & read & transitive & \ipa{ndɯn} & id. \\
+
+\textsc{erg+dat} & \ipa{mpʰʲa} & blame & transitive& \ipa{mpɕa} & id. \\
+\textsc{erg+abs} & \ipa{btɕad} & cut & transitive+complement & \ipa{ftɕɤt} & abandon (bad habit) \\
 \bottomrule
-vol, \textsc{erg+dat+abs} & \ipa{bɕad} & tell & trans, \textsc{erg.A-agr+abs.P-agr+dat}& \ipa{fɕɤt} & id. \\
+\textsc{erg+dat+abs} & \ipa{bɕad} & tell & transitive+dative& \ipa{fɕɤt} & id. \\
 \bottomrule
 \end{tabular}}
 \end{table}  
-  
-  
-  \subsection{\textsc{abs}}
-  
-  \subsection{\textsc{abs+loc}}  
-  
-    \subsection{\textsc{dat+abs}}
-\ipa{rga}  + complement clause, inf
-  
-  \ipa{rtoʁ} \textsc{dat+abs} ==> trans?
+
+  \subsection{Honorific verbs}  
+All Tibetic languages have a more or less elaborate system of honorific verbs and nouns (see for instance \citealt{hill08moriendi} for a detailed case study in Old Tibetan). Honorific words and their non-honorific counterparts are generally suppletive, though there is some evidence for a non-productive honorific *\ipa{--j--} infix (\citealt{gong77}).
+
+In Japhug, we only find three honorific verbs, all of which are of Tibetan origin (see Table \ref{tab:hon}). These verbs are rarely used in normal speech, and appear to be restricted to religious contexts.
+
+\begin{table}
+\caption{Honorific verbs of Tibetan origin in Japhug} \centering \label{tab:hon}
+\begin{tabular}{lllll}
+\toprule
+Tibetan & Meaning & Japhug &Meaning &Morphosyntactic type \\
+\midrule
+\ipa{ɴkʰruŋ} & be born & \ipa{mkʰroŋ} &id. &dynamic intransitive \\
+\ipa{pʰul} & offer, give  & \ipa{pʰɯl} &id. &ditransitive \\
+\ipa{gɕegs} & go, pass away & \ipa{χɕaʁ} &pass away &dynamic intransitive \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In addition, in Japhug the plural (for second and third persons) can be used to express respect, as in example \ref{ex:chWkWtCatanW}. 
 
 \begin{exe}
-\ex
-\gll  
-	\ipa{paʁ}  	\ipa{rcanɯ,}  	\ipa{ɯ-tɯpɯ}  	\ipa{roŋri}  	\ipa{kɯ}  	\ipa{ʑo}  	\ipa{pjɯ-χsu-nɯ}  	\ipa{ra}  \\
-	pig \textsc{top} \textsc{3sg.poss}-household each \textsc{erg} \textsc{emph} \textsc{ipfv}-raise-\textsc{pl} have.to:\textsc{fact} \\
-	\glt The pigs, every household have to raise (some). (Pigs, 4)
+\ex \label{ex:chWkWtCatanW}
+\gll \ipa{wortɕhiwojɤr}  	\ipa{ʑo}  	\ipa{chɯ-kɯ-tɕat-a-nɯ}  	\ipa{ɯ́-pe}  \\
+please \textsc{emph} \textsc{ipfv:downstream}-2$\rightarrow$1-take.out-\textsc{1sg-pl} \textsc{qu}-be.good:\textsc{fact} \\
+\glt Please, could you(\textsc{sg:hon}) take me out of here? (Gesar 141)
 \end{exe}
-  
-\ipa{  thamakha kɤ-sko na-ftɕɤt}
-  
-  \ipa{ma-tɤ-kɯ-mpɕa-a}
-  
-  
-  no secundative ditransitive verb among loanwords
 
-  rɟɤlpu ɯ-ɕki tɕe nɯra pɯ-kɯ-fse nɯra pjɤ-fɕɤt.
-recipient can be encoded as genitive rather than dative:  
+Although there is no person or number indexation in any Tibetic language, the second person plural pronoun \ipa{kʰʲed} becomes used as a second person singular honorific after the Old Tibetan period (see \citealt[563-4]{hill10pronouns}). It cannot therefore be excluded that the honorific use of the plural in Japhug arose under the influence of Tibetan, first with the pronouns and then on verbal indexation.
 
-  tɕendɤre shanluzuode nɯnɯ kɯ mɤ-kɯ-mbrɤt ʑo rɟɤlpu ɣɯ ɯ-χpi ntsɯ pjɯ-fɕɤt pjɤ-ŋu tɕe,
   \section{Complex predicates}  
-  \ipa{thaʁ pɯ-tɕhot-a}
+In addition to the numerous verbs borrowed by direct insertion from Tibetan into Japhug, we also find some borrowed complex predicates.
+
+There are two examples of borrowed noun-verb complex predicates, whose etymology is transparent in Tibetan but completely opaque in Japhug. The first is \ipa{ɯ-ŋgu} \ipa{tʰon} `have a good family situation', comprising an inalienably possessed noun \ipa{ɯ-ŋgu} and an intransitive verb \ipa{tʰon} which cannot be used on their own and mean nothing in Japhug (see example \ref{ex:ndZiNgu.mAthon}). They come from the noun \ipa{ɴgo} `head' and the verb \ipa{tʰon} `come out' in Tibetan respectively, where the expression \ipa{ɴgo} \ipa{tʰon} has the same meaning as \ipa{ɯ-ŋgu} \ipa{tʰon}.
+
+
+\begin{exe}
+\ex \label{ex:ndZiNgu.mAthon}
+\gll
+\ipa{ci}  	\ipa{tʰɯ-kɯ-rgɯ\textasciitilde{}rgɤz}  	\ipa{ɲɯ-ɕti}  	\ipa{tɕe,}  	\ipa{ci}  	\ipa{kɯ-xtɕɯ\textasciitilde{}xtɕi}  	\ipa{ɲɯ-ɕti}  	\ipa{tɕe,}  	\ipa{ndʑi-ŋgu}  	\ipa{mɤ-tʰon}  	\ipa{tɕe,}  	  \\
+one \textsc{pfv-nmlz}:S/A-\textsc{emph}\textasciitilde{}be.old \textsc{sens}-be:\textsc{affirm} \textsc{lnk} one \textsc{pfv-nmlz}:S/A-\textsc{emph}\textasciitilde{}be.small \textsc{sens}-be:\textsc{affirm} \textsc{lnk} \textsc{3du.poss}-have.a.good.family.situation(1) \textsc{neg}-have.a.good.family.situation(2):\textsc{fact} \textsc{lnk} \\
+\glt One of them is an old man, the other one a small child, their situation is dire (they cannot take care of themselves without me). (Nyimawodzer 2011.129-130)
+\end{exe}  
+
+The other example is \ipa{tʰaʁ} \ipa{tɕʰot} `make a decision', comprising the noun \ipa{tʰaʁ} and the transitive verb \ipa{tɕʰot}, borrowed from Tibetan  \ipa{tʰag tɕʰod} `decide', analyzable as \ipa{tʰag} `rope' and \ipa{tɕʰod} `be cut off'.
+
+A more common type of borrowed complex predicates involves incorporation. As shown in \citet{jacques12incorp}, Japhug has a class of incorporating verbs derived from noun-verb action nominals by means of denominal derivations.\footnote{For instance, we find \ipa{ɣɯ-cʰɤtshi} `drink a lot of alcohol' derived from the compound \ipa{cʰɤtsʰi} `alcohol drinking' by the denominal prefix \ipa{ɣɯ--}. The action nominal \ipa{cʰɤtsʰi} itself is a compound from the noun \ipa{cʰa} `alcohol' and the transitive verb \ipa{tsʰi} `drink'.}
+
+Some incorporating verbs comprise both a nominal root and a verbal root of Tibetan origin, such as \ipa{ɣɯ-rɟɯ-fsoʁ} `accumulate fortune' from the possessed noun \ipa{--rɟɯ} `fortune' and the transitive \ipa{fsoʁ} `accumulate', borrowed from Tibetan \ipa{rgʲu} and \ipa{bsogs} (same meanings) respectively. In this case, it is more likely that compounding occurred within Japhug rather than supposing that the compound was borrowed from Tibetan, since the verb \ipa{ɣɯ-rɟɯ-fsoʁ} is synchronically analyzable in Japhug.
+
+Another case of incorporating verb comprises a native noun root with a borrowed Tibetan verb,\footnote{No example of incorporating verb with a noun of Tibetan origin and a native verb has been found in Japhug.} for instance  \ipa{nɯ-pʰaʁɲɤl} `lie on the side' from the possessed noun \ipa{--pʰaʁ} `side, half' and an unattested verb *\ipa{ɲɤl} borrowed from Tibetan \ipa{ɲal} `lie down', or \ipa{nɯ-mbrɤrɟɯɣ} `take part in a horse race' from \ipa{mbro} `horse' (native noun) and \ipa{rɟɯɣ} `run' (borrowed from Tibetan \ipa{rgʲug} `run').\footnote{This latter incorporating verb is a calque from Tibetan \ipa{rta rgʲug} `horse race'.}
   
-  \ipa{ɯ-ŋgu mɯ́j-thon}
-  \section{Derivations}
-additional morphology on loanverbs? (applicative, causative, passive, anticausative etc)  
+\section{Derivations}
+The fact that nearly all derivations can be applied to verbs borrowed from Tibetan, is a testimony of their productivity in Japhug. Table \ref{ex:derivations.loanverbs} lists representative examples of voice derivations from verbs of Tibetan origin in Japhug.
+
+Some voice derivations, such as the causative, the antipassive, the passive, the tropative, facilitative, reciprocal and deexperiencer are very productive, and can be applied to most of the verbs that are not morphosyntactically or semantically incompatible with such a derivation. 
+
+The anticausative on the other hand is limited to a closed set of verbs, and the presence of a Tibetan loanword among verbs undergoing this derivation is significant: it proves that the anticausative was still productive until at least after contact with Tibetan began (\citealt{jacques12demotion}).\footnote{This fact is also significant for Sino-Tibetan comparative linguistics. Anticausative derivation is found in nearly all branches of the family, including Chinese (on which see \citealt{sagart12sprefix}), but the verb \ipa{ʁndɤr} `scatter (vi)' is the only reported example of an anticausative derivation applied to a loanword, and thus the only evidence for the productivity of this derivation in the whole family. }
+
+\begin{table}
+\caption{Derivations from verbs of Tibetan origin in Japhug}\centering \label{ex:derivations.loanverbs}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllll}
+\toprule
+Derivation & Tibetan & Base verb (Japhug) & Derived verb \\
+\midrule
+Anticausative & \ipa{gtor} `scatter' & \ipa{χtɤr} `scatter (vt)' &  \ipa{ʁndɤr} `scatter (vi)'\\
+Applicative & \ipa{dga} `like' & \ipa{rga} `like (semi-trans.)' &  \ipa{nɯ-rga} `like (vt)'\\
+Causative & \ipa{bɕad} `tell' & \ipa{fɕɤt} `tell (vt)' &  \ipa{sɯ-fɕɤt} `make so. tell (vt)'\\
+Passive & \ipa{bzo} `make' & \ipa{βzu} `make, do (vt)' &  \ipa{a-βzu} `become (vi)'\\
+Antipassive & \ipa{ɴdon} `read, recite' & \ipa{ndɯn} `read, recite (vt)' &  \ipa{rɤ-ndɯn} `recite sutras (vi)'\\
+Tropative & \ipa{ldan} `having X' & \ipa{dɤn} `be many (vi)' &  \ipa{nɤ-dɤn} `consider to be many (vt)'\\
+Deexperiencer & \ipa{skʲid} `happy' & \ipa{scit} `be happy (vi)' &  \ipa{sɤ-scit} `be nice (vi)'\\
+Facilitative & \ipa{ɴtɕʰaŋ} `hold in the hand' & \ipa{ntɕʰoz} `use (vt)' &  \ipa{nɯɣɯ-ntɕʰoz} `be easy to use (vi)'\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+There are no restrictions on multiple derivations with verbs of Tibetan origin. For instance, the deexperiencer verb \ipa{sɤ-scit} `be nice, be in such a way that (people) are happy' (see Table \ref{ex:derivations.loanverbs}) can receive to tropative \ipa{nɤ--} prefix to derive the verb \ipa{nɤ-sɤ-scit} \textsc{trop-deexp}-be.happy `to consider to be nice'. Similarly, the causative \ipa{ɣɤ-rlaʁ} `destroy' from \ipa{rlaʁ} `disappear' (from Tibetan \ipa{brlags} `destroy') can further undergo reciprocal derivation as  \ipa{a-ɣɤ-rlɯ\textasciitilde{}rlaʁ} \textsc{recip-caus-recip}\textasciitilde{}disappear `destroy each other'.
   
+\section{Conclusion}
+In this paper, we have documented the correspondences of argument structure between Japhug verbs of Tibetan origin and their Tibetan equivalents. The main findings of this paper are threefold.
+
+First, verbs borrowed from Tibetan in Japhug are borrowed mainly by \textit{direct insertion}, while those of Chinese origin are exclusively borrowed by \textit{indirect insertion}, by borrowing Chinese verbs as nouns and then applying to them denominal derivations (the most commonly attested process for verb borrowing crosslinguistically, see \citealt{wohlgemuth09verbal}). 
+
+Second, correspondences of argument marking between Japhug and Tibetan, except for a few exceptional verbs, is relatively predictable: absolutive, ergative-marked and dative-marked arguments of Tibetan verbs correspond to arguments with the same type of marking in Japhug. Since the ergative marker \ipa{kɯ} in Japhug is borrowed from Amdo Tibetan (and was borrowed at the latest three centuries ago, otherwise its expected phonological shape should be *\ipa{ciz} or *\ipa{kɯz}), the congruence of argument marking between the two languages in not unexpected; it is possible to speculate that at an earlier stage, Japhug and other Rgyalrong languages  had no core argument flagging, and that grammatical relations were exclusively expressed by verbal indexation.
+
+Third, verbs of Tibetan origin, though they may present phonological peculiarities unattested in the native vocabulary, undergo the same morphological alternations (including stem alternation and derivations) as native verbs, and have been fully integrated in the language.
+
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
+
 %stative
 %
 %rgɤz, rgas
@@ -228,11 +730,21 @@ additional morphology on loanverbs? (applicative, causative, passive, anticausat
 %rkɤz, rko brkos brko rkos
 %χtɤr, gtor
 %
-%pjɤl <intr ‘byol byol
-% 
 
-  \section{Conclusion}
-  
-\bibliographystyle{unified}
-\bibliography{bibliogj}
-\end{document}
+
+%\begin{enumerate}
+%\item stative adjectival verbs
+%\item copulas, existential verbs and some modal and auxiliary
+%%\item stative with postpositional phrase in \ipa{cho} (\ipa{naχtɕɯɣ})
+%\item dynamic intransitive
+%%\item dynamic intransitive with postpositional phrase in \ipa{cho}(\ipa{atɯɣ})
+%\item motion verbs
+%\item semi-transitive
+%\item transitive
+%\item monotransitive
+%%\item monotransitive with second ergative 
+%\item monotransitive with infinitival complement (three subtypes)
+%\item monotransitive with finite complement 
+%\item secundative ditransitive
+%\item indirective ditransitive
+%\end{enumerate}

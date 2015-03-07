@@ -87,7 +87,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
+\File C:\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -101,7 +101,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
+\File C:\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -133,7 +133,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
+\File C:\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -155,7 +155,7 @@
 \dbtyp MDF 4.0
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
+\File C:\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \-drf
 \-drflst
 \+mrflst 
@@ -181,7 +181,7 @@
 \-mkrsubsetIncluded
 \+drflst 
 \+drf 
-\File C:\Users\crlao\Documents\GitHub\HimalCo\dict\khaling\toolbox\Dictionary.txt
+\File C:\HimalCo\dict\khaling\toolbox\Dictionary.txt
 \mkr lx
 \-drf
 \-drflst

@@ -317,6 +317,9 @@ sub transcr {
 #	$string =~ s/ुङ्/ुङ\\mgl\{्\}/g;
 	$string =~ s/क्त/क्\x{200C}त/g;
 	$string =~ s/क्क/क्\x{200C}क/g;
+	$string =~ s/क्च/क्‍च/g;
+	$string =~ s/क्छ/क्‍छ/g;
+	$string =~ s/क्म/क्‍म/g;
 	$string =~ s/ङ्/ङ्\x{200C}/g;
     $string =~ s/ह्य/ह्‍य/g;
     $string =~ s/द्य/द्\x{200C}य/g;
@@ -325,6 +328,7 @@ sub transcr {
     $string =~ s/्\-/्\x{200C}/g;
     $string =~ s/-//g;
     $string =~ s/्\./्\x{200C}/g; # unpredictable syllable breaks
+	$string =~ s/\.//g; 
     $string =~ tr/[A-Z]/[a-z]/;
 
     return $string;
