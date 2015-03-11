@@ -37,7 +37,7 @@
                 <feat att="entrySource" val="./user/khaling/result/dictionary-dev.txt"/>
                 <!-- Absolute path to audio files -->
                 <feat att="localPath"
-                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"/>
+                    val="C:/HimalCo/dict/khaling/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>
@@ -88,7 +88,7 @@
         <ps_partOfSpeech ps="???" partOfSpeech="unknown"/>
         <!-- Mapping from MDF markers to LMF attributes -->
         <mdf_lmf marker="wav" var="wav, lexical_entry"
-            >lexical_entry.set_audio(file_name="/Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/wav/" + wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
+            >lexical_entry.set_audio(file_name="C:/HimalCo/dict/khaling/data/audio/wav/" + wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="a" var="a, lexical_entry"
             >lexical_entry.set_spelling_variant(a)</mdf_lmf>
         <!-- TODO -->
