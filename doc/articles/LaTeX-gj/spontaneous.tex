@@ -10,9 +10,6 @@
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
-\usepackage{tikz}
-%\usetikzlibrary{shapes.geometric, arrows}
-\usetikzlibrary{mindmap}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -22,7 +19,6 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
- \usepackage{lineno}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
@@ -33,17 +29,12 @@
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
-%\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
-%\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
-%\tikzstyle{arrow} = [thick,->,>=stealth]
+ 
 
  \begin{document} 
- \title{ The spontaneous-autobenefactive prefix in Japhug Rgyalrong\footnote{Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{fact} factual/assumptive, \textsc{infr} inferential evidential, \textsc{hort} hortative, \textsc{inv} inverse, \textsc{pres} egorphoric present, \textsc{sens} sensory  evidential, \textsc{vert} vertitive. }}
- %Acknowledgements will be added after editorial decision.%Nathan W. Hill, Ken Mason, Alexis Michaud, Dmitry Nikolaev, Pavel Ozerov, Vladimir Plungian, Roland Pooth}
-  
+ \title{The spontaneous-autobenefactive prefix in Japhug Rgyalrong\footnote{Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{cisloc} cislocative, CP complex predicate, \textsc{egoph} egophoric present,  \textsc{fact} factual/assumptive, \textsc{genr} generic, \textsc{ifr} inferential evidential, \textsc{hort} hortative, \textsc{inv} inverse,\textsc{lnk} linker, \textsc{sens} sensory  evidential, \textsc{sfp} sentence final particle, \textsc{transloc} translocative, \textsc{vert} vertitive (motion back to the origin). The TAM markers for imperfective and perfective are based on orientational prefixes; motion and concrete action verbs can be used with any of the seven possible orientational prefixes. Other verbs have a lexicalized direction (see \citealt[266-270]{jacques14linking}).  Words of Chinese origin that are not fully integrated phonologically are indicated between chevrons <>.   This work benefited from useful comments by Giorgio  Arcodia, Nathan W. Hill, Ken Mason, Alexis Michaud, Marc Miyake, Dmitry Nikolaev, Pavel Ozerov, Haeree Park, Vladimir Plungian, Roland Pooth, Marijn van Putten, Fernando Zúñiga and one anonymous LTBA reviewer. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI).  }}
 \author{Guillaume Jacques}
 \maketitle
-\linenumbers
 \sloppy
 
 \textbf{Abstract}: This paper documents the morphosyntactic and semantic properties of the autobenefactive-spontaneous prefix \ipa{nɯ--}. It describes the regular and irregular morphological and morphophonological alternations displayed by this prefix, as well as its three main semantic functions, namely spontaneous, autobenefactive and permansive. Finally, it discusses the historical relationship of the autobenefactive prefix with other derivations, in particular the vertitive \ipa{nɯ--} and the anticausative prenasalization.
@@ -52,30 +43,23 @@
 
 
 \section{Introduction}
-There is a well-attested cross-linguistic tendency for the same marker to be used for reflexive or passive and for the expression of spontaneous events without a volitional agent or anticausative (\citealt[142-144]{kemmer93middle}). This type of `middle' marking has been described in Romance and Slavic languages and also in various language families, for instance Athabaskan (\citealt{thompson96middle}). In Sino-Tibetan, the \ipa{--ɕɯ} suffix in Dulong/Rawang (\citealt{lapolla05reflexive}) and the \ipa{--si} suffix in Kiranti languages are also example of quasi-prototypical middle markers.
+There is a well-attested cross-linguistic tendency for the same marker to be used for reflexive or passive and for the expression of spontaneous events without a volitional agent or anticausative (\citealt[142-144]{kemmer93middle}). This closeness is best exemplified by middle constructions using a reflexive marker  in Romance and Slavic languages and also in various language families.\footnote{The use of the term `middle' in \citet{kemmer93middle}  and subsequent typological work differs from the morphologically-based definition of the middle in Indo-European linguistics.    In this paper, I use `middle domain' to refer to all constructions and derivations (such as passive, anticausative, reciprocal, autobenefactive etc) that can overlap with reflexive marking in particular languages. } In Sino-Tibetan, the suffix \ipa{--ɕɯ}  in Dulong/Rawang (\citealt{lapolla05reflexive}) and the suffix \ipa{--si}  in Kiranti languages are also example of quasi-prototypical middle markers (see \citealt[144-146]{michailovsky88}, \citealt[125-129]{driem93dumi}, \citealt[260-263]{opgenort04wambule} and \citealt[398]{bickel10ditransitive}).
 
 Japhug presents a marker \ipa{nɯ--} that can be used in situations referring to  spontaneous events or autobenefactive actions.\footnote{A similar marker exists in all core Rgyalrong languages, for instance \ipa{nə--} in Tshobdun (glossed as `spontaneous' in \citealt[634]{jackson14morpho}) and also in Khroskyabs (\citealt[157-160]{lai13affixale}).} This marker differs from the reflexive as observed in Romance, Slavic and Kiranti in several important ways.
 
-First, Japhug also as a  reflexive prefix (see for instance \citealt{jacques10refl} concerning Japhug Rgyalrong) as well as distinct passive, anticausative and antipassive prefixes (\citealt{jacques12demotion}) and a reciprocal construction all entirely different from the autobenefactive.
-
-
-Second, although Japhug  \ipa{nɯ--}  semantically belongs to the ‘middle domain’ as defined by \citet[15]{kemmer93middle}, this marker can be applied to both intransitive and transitive verbs,  and does not modify the valency of the verb.
- 
- Third, in addition to marking spontaneous and autobenefactive actions, it also has a permansive aspectual value.
+First, Japhug also has a  reflexive prefix (see for instance \citealt{jacques10refl} concerning Japhug Rgyalrong) as well as distinct passive, anticausative and antipassive prefixes (\citealt{jacques12demotion}) and a reciprocal construction all formally and functionally distinct from the autobenefactive. Second, although Japhug  \ipa{nɯ--}  semantically belongs to the \textit{middle domain} as defined by \citet[15]{kemmer93middle}, this marker can be applied to both intransitive and transitive verbs,  and does not modify the valency of the verb.  Third, in addition to marking autobenefactive and spontaneous actions, it also has a permansive\footnote{The term \textit{permansive} or \textit{remansive} refers to an aspect expressing the continuation of a process that has already started (\citealt[130]{francois03predicat}).} aspectual value.
  
  
- This paper is a description of the spontaneous-autobenefactive  \ipa{nɯ--}  in Japhug, and a contribution to the typology of ‘middle’ marking systems. It comprises six sections. First, I present the morphological marking  of transitivity in Japhug, and show that the spontaneous-autobenefactive marker has no influence on it. Second, I discuss the position of this prefix  in the Japhug verbal template. Then, I describe the three main functions of this prefix: the expression of spontaneous events, autobenefactive and grooming activities and  permansive aspect. Finally, I propose a series of hypotheses concerning the diachronic relationship of this prefix to other derivations in Japhug and other Rgyalrongic languages. 
+ This paper is a description of the spontaneous-autobenefactive  \ipa{nɯ--}  in Japhug, and a contribution to the typology of middle marking systems. It comprises six sections. First, I present the morphological marking  of transitivity in Japhug, and show that the spontaneous-autobenefactive marker has no influence on it. Second, I discuss the position of this prefix  in the Japhug verbal template. Then, I describe the three main functions of this prefix: the expression of autobenefactive and grooming activities, spontaneous events and permansive aspect. Finally, I propose a series of hypotheses concerning the diachronic relationship of this prefix to other derivations in Japhug and other Rgyalrongic languages. 
  
 
 \section{Morphological transitivity}
 
-Japhug verbs have two conjugations, transitive and intransitive. The intransitive conjugation indexes the person and number (singular, dual, plural) of the S, while the transitive conjugation indexes the person and number of both A and P. The indexation of arguments on transitive verb follows a quasi-canonical direct-inverse system (see \citealt{jacques10inverse}, \citealt{jacques14inverse}). The person marking prefixes and suffixes of the intransitive conjugation can be combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ--} $2\rightarrow1$ and \ipa{ta--} $1\rightarrow2$).
+Japhug verbs have two conjugations, transitive and intransitive.\footnote{A  small class of labile verbs can be conjugated either transitively or intransitively (\citealt{jacques12demotion}). All examples exhibit agent-preserving  (i.e. A=S) lability.} The intransitive conjugation indexes the person and number (singular, dual, plural) of the S, while the transitive conjugation indexes the person and number of both A and P. The indexation of arguments on transitive verbs follows a quasi-canonical direct-inverse system (see \citealt{delancey81direction, jackson02rentongdengdi, jacques10inverse}, \citealt{jacques14inverse, gongxun14agreement}). The person marking prefixes and suffixes of the intransitive conjugation can be combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ--} $2\rightarrow1$ and \ipa{ta--} $1\rightarrow2$).
 
-Transitive verbs can be unambiguously distinguished from intransitive ones by three morphological criteria. First, stem alternation in the non-past  \textsc{1/2/3sg}$\rightarrow$3 direct forms (including factual, imperfective, sensory, present, imperative and irrealis). Second, presence of a past transitive prefix \ipa{--t--} in the past \textsc{1/2sg}$\rightarrow$3 forms. Third, in perfective 3$\rightarrow$3 direct forms (without the inverse \ipa{wɣ--} prefix), the perfective prefixes have a distinct form.
+Transitive verbs can be unambiguously distinguished from intransitive ones by three morphological criteria. First, stem alternation in the non-past  \textsc{1/2/3sg}$\rightarrow$3 direct forms (including factual, imperfective, sensory, present, imperative and irrealis, see also \citealt{jackson00puxi,jackson07irrealis}). Second, presence of a past transitive prefix \ipa{--t--} in the past \textsc{1/2sg}$\rightarrow$3 forms. Third, in perfective 3$\rightarrow$3' direct forms (without the inverse \ipa{wɣ--} prefix), a prefix \ipa{a--}  appears between the verb stem and the orientation prefixes (and phonologically merges with them).
 
-There is in addition a small class of labile verbs, which can be conjugated either transitively or intransitively (\citealt{jacques12demotion}). All examples exhibit agent-preserving  lability.
-
-In addition, Japhug has ergative alignment on all nominal arguments:  S and P are unmarked (examples \ref{ex:abs} and \ref{ex:erg}), while the A of transitive verbs receives the clitic \ipa{kɯ} (example \ref{ex:erg}). This clitic is obligatory with noun phrases and third person pronouns, but in the case of first and second person pronouns it is optional.  
+The morphological transitivity as indexed in verb morphology is strictly correlated with ergative marking on the A argument of a transitive verb (example \ref{ex:erg}), while S and P arguments are unmarked (examples \ref{ex:abs} and \ref{ex:erg}). The ergative clitic \ipa{kɯ} is obligatory with noun phrases and third person pronouns, but in the case of first and second person pronouns it is optional.  
 
  \begin{exe}
 \ex \label{ex:abs}
@@ -89,13 +73,31 @@ king \textsc{dem} \textsc{neg-evd.ipfv}-be.there \\
 \ex \label{ex:erg}
 \gll 
 \ipa{rɟɤlpu}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{li}  	\ipa{ci}  	\ipa{ɯ-rʑaβ}  	\ipa{kɯ-ɕɤɣ}  	\ipa{ci}  	\ipa{ɲɤ-ɕar.}  	 \\
-king \textsc{dem} \textsc{erg} again \textsc{indef} \textsc{3sg.poss}-wife \textsc{nmlz}:S/A-be.new \textsc{indef}  \textsc{infr}-look.for \\
+king \textsc{dem} \textsc{erg} again \textsc{indef} \textsc{3sg.poss}-wife \textsc{nmlz}:S/A-be.new \textsc{indef}  \textsc{ifr}-look.for \\
 \glt The king married a new wife. (Snow-white, 15)
 \end{exe}
 
- The presence of the autobenefactive/spontaneous prefix has no incidence on  morphological or syntactic transitivity. 
+Verbal morphology, combined with ergative marking, can be used to test whether a particular derivation modifies verb transitivity or not. For instance, examples \ref{ex:paBzjoz} and \ref{ex:pWrABzjoz} show that while transitive verbs with third person arguments take the perfective $3\rightarrow$3' direct \ipa{a--} prefix,  corresponding verbs with the antipassive \ipa{rɤ--} do not. Moreover, in example \ref{ex:paBzjoz} the argument corresponding to the person learning would take the ergative with the base verb \ipa{βzjoz} if an overt A were inserted, but does not with the antipassive verb \ipa{rɤ-βzjoz}. Likewise, other voice derivations such as the passive \ipa{a--/ɤ--}, the anticausative, the reciprocal (\ipa{a--/ɤ--} combined with reduplication) and the reflexive \ipa{ʑɣɤ--}  are incompatible with transitivity markers such as the perfective $3\rightarrow$3' direct \ipa{a--} prefix, the past \textsc{1/2sg}$\rightarrow$3 suffix \ipa{--t}, stem III alternation, and with ergative case marking.
+
+ \begin{exe}
+\ex \label{ex:paBzjoz}
+\gll 
+<qiche> 	\ipa{kɤ-ɣɤ-βdi} 	\ipa{pɯ-a-βzjoz} \\
+car \textsc{inf-caus}-be.good \textsc{pfv}-3$\rightarrow$3'-learn \\
+\glt He learned (how to) fix cars. (Relatives, 191)
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:pWrABzjoz}
+\gll 
+\ipa{ɯ-me} 	\ipa{nɯ} 	\ipa{pɯ-rɤ-βzjoz} 	\ipa{ri} 	\ipa{tʰam} 	\ipa{ɯ-ma} 	\ipa{me} \\
+\textsc{3sg.poss}-daughter \textsc{dem} \textsc{pfv-a.pass}-learn but now \textsc{3sg.poss}-work not.exist:\textsc{fact} \\
+\glt Although her daughter went to school, now she does not have any (real) job. (Lhazgron, 58)
+\end{exe}
+
+On the other hand, the presence of the autobenefactive/spontaneous prefix, unlike other derivations belonging to the middle domain, has no influence on  morphological or syntactic transitivity. 
  
- Examples \ref{ex:tAnWndAm} and \ref{ex:ki.tAndAm} show that the prefix \ipa{nɯ--} does not affect stem alternation. In these two examples, stem III   \ipa{--ndɤm} is found instead of stem I \ipa{--ndo}, as expected for a verb is in the imperative with a \textsc{2sg} A and a third person P, even in \ref{ex:tAnWndAm} with the autobenefactive/spontaneous.
+ Examples \ref{ex:tAnWndAm} and \ref{ex:ki.tAndAm} show that the prefix \ipa{nɯ--} does not affect stem alternation. In these two examples, stem III   \ipa{--ndɤm} is found instead of stem I \ipa{--ndo}, as is expected for a verb that is in the imperative with a \textsc{2sg} A and a third person P, even in \ref{ex:tAnWndAm} with the autobenefactive/spontaneous.
  
 %ɕoŋtɕa na-fsoʁ qhe tɕe kha ta-nɯ-sɯβzu qhe, kha kɯ-wxtɯ-wxti kɯ-ʑɯ-ʑru ʑo ta-nɯ-sɯβzu
 %pjɤ-kɯ-nɯβlu-a tɕe, nɯnɯ kɯ-phɤn sɤznɤ, mɤ́ɣrɤz a-mphɯz ɯ-ntɕhɯr pa-nɯ-phɯt 
@@ -117,31 +119,31 @@ this \textsc{imp}-take[III] \textsc{lnk} really \textsc{emph} \textsc{3sg.poss}-
 \glt Take this, you will have to keep it well because... (die Gänsemagd, 24)
 \end{exe}
 
-Example \ref{ex:tAnWndo} shows that ergative case marking on the A is not lost when the verb has the autobenefactive / spontaneous prefix, and comparison \ref{ex:tAnWndo} between  \ref{ex:tando} reveals that the perfective transitive 3$\rightarrow$3' prefix \ipa{ta--}\footnote{The  form \ipa{ta--} is only found in transitive non-local scenarios without inverse marking. In all other forms, including  intransitive perfective forms (such as \ipa{tɤ-nɯna} \textsc{pfv}-rest `I had a rest'), forms including a SAP argument or inverse, we find \ipa{tɤ--}.  } is found even in cases when \ipa{nɯ--} is prefixed. The verb has stem I \ipa{--ndo} in these two examples as stem III is restricted to non-past tenses, and is not compatible with the perfective.
+Example \ref{ex:tAnWndo} shows that ergative case marking on the A is not lost when the verb has the autobenefactive / spontaneous prefix, and comparing \ref{ex:tAnWndo} with  \ref{ex:tando} reveals that the perfective direct 3$\rightarrow$3' prefix \ipa{a--}\footnote{The  prefix \ipa{a--} is restricted to transitive non-local scenarios without inverse marking.  } is found even in cases when the autobenefactive \ipa{nɯ--} is present. The verb has stem I \ipa{--ndo} in these two examples as stem III is restricted to non-past tenses, and is not compatible with the perfective.
 
  \begin{exe}
 \ex \label{ex:tAnWndo}
 \gll
-\ipa{kɯ-nɯmbrɤpɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{laʁjɯɣ} 	\ipa{ɯʑo} 	\ipa{ta-nɯ-ndo} 	\ipa{ɲɯ-ŋu.} \\
-\textsc{nmlz}:S/A-ride \textsc{dem} \textsc{erg} staff \textsc{3sg} \textsc{pfv}:3$\rightarrow$3'-take  \\ 
-\glt The one who rode took the staff (for himself). (The tiger, 14) 
+\ipa{kɯ-nɯmbrɤpɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{laʁjɯɣ} 	\ipa{ɯʑo} 	\ipa{tɤ-a-nɯ-ndo} 	\ipa{ɲɯ-ŋu.}\\
+\textsc{nmlz}:S/A-ride \textsc{dem} \textsc{erg} staff \textsc{3sg} \textsc{pfv}-3$\rightarrow$3'-\textsc{auto}-take[I]  \textsc{sens}-be\\ 
+\glt The rider took the staff (for himself). (The tiger, 14) 
 \end{exe}
 
  \begin{exe}
 \ex \label{ex:tando}
 \gll 
-\ipa{qaʁ} 	\ipa{kɯ-fse} 	\ipa{tsuku} 	\ipa{ta-ndo}  \\
-hoe  \textsc{nmlz}:S/A-be.like several \textsc{pfv}:3$\rightarrow$3'-take  \\ 
- \glt He took a hoe and (other tools). (The fox, 79)
+\ipa{qaʁ} 	\ipa{kɯ-fse} 	\ipa{tsuku} 	\ipa{tɤ-a-ndo}  \\
+hoe  \textsc{nmlz}:S/A-be.like several \textsc{pfv}-3$\rightarrow$3'-take[I]  \\ 
+ \glt He took a hoe (and other tools). (The fox, 79)
 \end{exe} 
 
-Finally, examples \ref{ex:kunWrAZia} and \ref{ex:tuixiu.nWBzuta} show that the transitive past \ipa{--t} suffix appears both in verb forms with and without the \ipa{nɯ--} prefix.
+Finally, examples \ref{ex:kunWrAZia} and \ref{ex:tuixiu.nWBzuta} show that the transitive past suffix \ipa{--t}   appears both in verb forms with and without the autobenefactive-spontaneous prefix \ipa{nɯ--}.\footnote{Note that the homophony between the autobenefactive-spontaneous prefix and the perfective `towards west' prefix \ipa{nɯ--} is fortuitous. The latter only appears verbs that lexically select this particular orientation prefix, or verbs of motion when the orientation `towards west' is appropriate. In \ref{ex:kunWrAZia} and \ref{ex:tuixiu.nWBzuta}, we know that the  \ipa{nɯ--} in \ipa{nɯ-βzu-t-a} \textsc{pfv}-do-\textsc{pst:tr-1sg} must be perfective and not autobenefactive because the transitive past suffix \ipa{--t--} cannot occur in a verb form without a perfective orientation prefix.}
 
  \begin{exe}
 \ex \label{ex:kunWrAZia}
 \gll 
 \ipa{aʑo} 	<tuixiu> 	\ipa{nɯ-nɯ-βzu-t-a} 	\ipa{tɕe} 	\ipa{sɲikuku} 	\ipa{kɯre} 	\ipa{ku-nɯ-rɤʑi-a} \\
-\textsc{1sg} retire \textsc{pfv-auto}-do-\textsc{pst:tr-1sg} \textsc{lnk} everyday here \textsc{pres-auto}-stay-\textsc{1sg} \\
+\textsc{1sg} retire \textsc{pfv-auto}-do-\textsc{pst:tr-1sg} \textsc{lnk} everyday here \textsc{egoph-auto}-stay-\textsc{1sg} \\
 \glt I retired, and (now) stay (at home) here everyday. (Conversation 2013)
 \end{exe} 
 
@@ -153,14 +155,12 @@ Finally, examples \ref{ex:kunWrAZia} and \ref{ex:tuixiu.nWBzuta} show that the t
 \glt I retired early (before the time was reached). (Lhazgron, 73)
 \end{exe} 
 
-The examples above prove that transitive verb forms with the autobenefactive / spontaneous present all the morphological  properties of transitive verbs: the prefix \ipa{nɯ--} has no influence on verb transitivity.
-
-cf Indo-European, eg \citet[19]{pooth14diathesen}
+The examples above prove that transitive verb forms with the autobenefactive / spontaneous present all the morphological  properties of transitive verbs: the prefix \ipa{nɯ--} has no influence on verb transitivity. In this regard, Japhug \ipa{nɯ--} is closer to the classical Indo-European morphologically-marked middle (see for instance  \citealt[19]{pooth14diathesen}) than most constructions labelled `middle' in the typological literature, especially Romance and Slavic.
 
 \section{Position in the template}
 The Japhug verbal template follows the general structure in Table \ref{tab:template:derivational} (see \citealt{jacques12incorp} and \citealt{jacques13harmonization}). 
 
-The autobenefactive / spontaneous prefix is peculiar in that it can occupy two distinct slots depending on the verb form: it can occur  in slot 12, after the passive or denominal \ipa{a--} prefix, but in the case of verbs without \ipa{a--} prefix, it occurs to the left of the reflexive prefix, as in example \ref{ex:nWZGA}.
+The autobenefactive / spontaneous prefix is peculiar in that it can occupy two distinct slots depending on the verb form: it can occur  in slot 12, after the passive or denominal prefix \ipa{a--}, but in the case of verbs without prefix \ipa{a--}, it occurs to the left of the reflexive prefix, as in example \ref{ex:nWZGA}.
 
 \begin{exe}
 \ex \label{ex:nWZGA}
@@ -170,7 +170,7 @@ The autobenefactive / spontaneous prefix is peculiar in that it can occupy two d
 \glt When people we cherish come, or when we (wish) to treat ourselves, (Tea, 74)
 \end{exe}
 
-The prefix \ipa{nɯ--} occurs in slot 12 for all verbs whose stem begins in \ipa{a--}, even when   \ipa{a--} is neither the passive or the denominal at least synchronically. For instance, in verbs such as \ipa{arŋi} `be blue', whose stem is disyllabic (the \ipa{a--} element is not a prefix), the spontaneous prefix in infixed after the \ipa{a--}, as in  example \ref{ex:anWrŋi}.
+The prefix \ipa{nɯ--} occurs in slot 12 for all verbs whose stem begins in \ipa{a--}, even when   \ipa{a--} is neither the passive or the denominal at least synchronically. For instance, in verbs such as \ipa{arŋi} `be blue', whose stem is disyllabic (the \ipa{a--} element is not a prefix), the spontaneous prefix is infixed after the \ipa{a--}, as in  example \ref{ex:anWrŋi} (see also \ref{ex:pannWri} below).
 
 \begin{exe}
 \ex \label{ex:anWrŋi}
@@ -181,14 +181,14 @@ pine \textsc{dem} winter.and.summer \textsc{emph} <\textsc{auto}>be.blue:\textsc
 \end{exe}
  
  
- There is one exception to this rule: the verb \ipa{atɯɣ} `meet, run into' (conjugated intransitively), which has two different autobenefactive forms (also intransitive), a regular one \ipa{a<nɯ>tɯɣ} `meet by oneself' (as in \ref{ex:nanWtWGndZi}), and  \ipa{nɯ-ɤtɯɣ}  `run into (by mistake), happen to be in'   (\ref{ex:YWnAtWG}).
+ There is one exception to this rule. The verb \ipa{atɯɣ} `meet, run into' (conjugated intransitively) has two different autobenefactive forms (also intransitive), a regular one \ipa{a<nɯ>tɯɣ} `meet by oneself' (as in \ref{ex:nanWtWGndZi}), and  \ipa{nɯ-ɤtɯɣ}  `run into (by mistake), happen to be in'   (\ref{ex:YWnAtWG}).
  
  \begin{exe}
 \ex \label{ex:nanWtWGndZi}
 \gll 
 \ipa{ndʑi-stɯnmɯ}  	\ipa{nɯ}  	\ipa{pʰama}  	\ipa{pɯ-βgoz}  	\ipa{pɯ-ŋu}  	\ipa{ma}  	\ipa{ʑɤni}  	\ipa{nɯ-a<nɯ>tɯɣ-ndʑi}  	\ipa{pɯ-maʁ}  \\
 \textsc{3du.poss}-marriage \textsc{dem} parent \textsc{pfv}-organize \textsc{pst.ipfv}-be \textsc{lnk} \textsc{3du} \textsc{pfv}-<\textsc{auto}>meet-\textsc{du}  \textsc{pst.ipfv}-not.be \\
-\glt Their marriage was arranged by they parents, they did not get together by themselves. (elicited)
+\glt Their marriage was arranged by their parents, they did not get together by themselves. (elicited)
 \end{exe}
 
  \begin{exe}
@@ -203,9 +203,9 @@ The verb \ipa{nɯ-ɤtɯɣ}  `run into (by mistake)'  has the autobenefactive pre
 
 Another example of irregularity related to verbs in \ipa{a--}, is the verb \ipa{antsɤndu} `to be exchanged by mistake' (intransitive), which derives from   \ipa{sɤndu} `exchange' (transitive) by a combination of the passive \ipa{a--} and an allomorph \ipa{nt--} of the autobenefactive/spontaneous \ipa{nɯ--}. This verb is anomalous in two regards. First, there is no corresponding simple passive verb *\ipa{asɤndu} `be exchanged' : \ipa{sɤndu} `exchange' is morphologically the causative of \ipa{andu} `be exchanged' (mainly used about money). Second, the allomorph \ipa{nt--} is not found in any other verb; the \ipa{--t--} is epenthetic here, since the cluster \ipa{--ns--} is not attested in Japhug.
 
-Examples like \ipa{nɯ-ɤtɯɣ}  `run into (by mistake)' and \ipa{antsɤndu} `to be exchanged by mistake'   suggest the autobenefactive/spontaneous \ipa{nɯ--}, despite its high productivity, is better treated as a derivational rather than an inflectional morpheme, since (i) the meaning of the derived verb is not always predictable and (ii) there is not always, at least synchronically, a corresponding base verb whose only difference with the derived verb is the absence of autobenefactive/spontaneous prefix.
+Examples like \ipa{nɯ-ɤtɯɣ}  `run into (by mistake)' and \ipa{antsɤndu} `to be exchanged by mistake'   suggest the autobenefactive/spontaneous \ipa{nɯ--}, despite its high productivity, is better treated as a derivational rather than an inflectional morpheme, since (i) the meaning of the derived verb is not always predictable and (ii) there is not always, at least synchronically, a corresponding base verb whose only difference with the derived verb is the absence of an autobenefactive/spontaneous prefix.
  
-Verbs in \ipa{a--} are not the only ones where the \ipa{nɯ--} prefix is infixed. The irregular existential verbs \ipa{ɣɤʑu} `be there, exist (sensory)'  and \ipa{maŋe} `not exist (sensory)' also take  the spontaneous marker as an infix rather than as a prefix as in \ref{ex:GAnWZu}; note that all prefixes, including the second person \ipa{tɯ--} and the generic \ipa{kɯ--} are infixed in the conjugation of these verbs (see \citealt{jacques12agreement, jacques15generic}).
+Verbs in \ipa{a--} are not the only ones where the prefix \ipa{nɯ--} is infixed. The irregular existential verbs \ipa{ɣɤʑu} `be there, exist (sensory)'  and \ipa{maŋe} `not exist (sensory)' also take  the spontaneous marker as an infix rather than as a prefix as in \ref{ex:GAnWZu}; note that all prefixes, including the second person \ipa{tɯ--} and the generic \ipa{kɯ--} are infixed in the conjugation of these verbs (see \citealt{jacques12agreement, jacques15generic}).
 \begin{exe}
 \ex \label{ex:GAnWZu}
 \gll 
@@ -213,6 +213,7 @@ Verbs in \ipa{a--} are not the only ones where the \ipa{nɯ--} prefix is infixed
  every.year \textsc{emph} \textsc{ipfv}-come.back-\textsc{pl} \textsc{lnk} there again <\textsc{auto}>exist:\textsc{sens} be.\textsc{affirm:fact} \\
  \glt They come back every year, and it is still there. (Matsutake, 51)
 \end{exe}
+
 
   \begin{landscape}
 \begin{table}[H]
@@ -234,10 +235,10 @@ Verbs in \ipa{a--} are not the only ones where the \ipa{nɯ--} prefix is infixed
 
 
 \item Irrealis  \ipa{a}--, Interrogative \ipa{ɯ́}--, conative \ipa{jɯ}--
-\item negation \ipa{ma}-- / \ipa{mɤ}-- / \ipa{mɯ}-- / \ipa{mɯ́j}--
+\item Negation \ipa{ma}-- / \ipa{mɤ}-- / \ipa{mɯ}-- / \ipa{mɯ́j}--
 \item Translocative / Cislocative \ipa{ɕɯ}-- and \ipa{ɣɯ}--
 \item Directional prefixes, apprehensive \ipa{ɕɯ}--
-\item Second person (\ipa{tɯ}--, \ipa{kɯ}-- 2>1 and ta- 1>2)
+\item Second person (\ipa{tɯ}--, \ipa{kɯ}-- 2$\rightarrow$1 and  \ipa{ta--} 1$\rightarrow$2), direct $\rightarrow$3' perfective \ipa{a--}
 \item Inverse -\ipa{wɣ}- / Generic S/O prefix \ipa{kɯ}-, Progressive \ipa{asɯ}-. 
 \item Reflexive \ipa{ʑɣɤ}-- 
 \item Causative \ipa{sɯ}--, Abilitative \ipa{sɯ}--
@@ -258,8 +259,76 @@ Verbs in \ipa{a--} are not the only ones where the \ipa{nɯ--} prefix is infixed
   \end{landscape}
  
  
+In addition to the issue of position in the template, the autobenefactive \ipa{nɯ--} presents two noteworthy regular morphophonological alternations. First, it is realized simply as \ipa{n--} before all prefixes with the shape \ipa{nɯ--} or \ipa{nɤ--} (denominal, applicative or tropative), as in example \ref{ex:pjAnnWZWB}.
  
- 
+ \begin{exe}
+\ex \label{ex:pjAnnWZWB}
+\gll  \ipa{tʂu} 	\ipa{nɯ} \ipa{tɕu} \ipa{pjɤ-n-nɯʑɯβ.} \\
+road \textsc{dem} \textsc{loc} \textsc{ifr-auto}-sleep \\
+\glt He slept on the road. (Sechse kommen durch die ganze Welt, 120)
+\end{exe}
+
+Second, it can be optionally realized with emphatic gemination, especially in its use in the protasis of concessive conditionals (see \ref{ex:pannWri} and \ref{ex:pWnnWtu.kWnA}  below).
+
+
+\section{Autobenefactive}
+
+The prefix \ipa{nɯ--}  is commonly used with transitive verbs when the P bears a possessive prefix coreferent with the A, especially in the case of body parts and other inalienably possessed nouns, as in example \ref{ex:pWnWXtCi}.\footnote{This sentence would however still be grammatical without the \ipa{nɯ--} prefix.} It expresses that the A is affected by its own action.
+
+\begin{exe}
+\ex \label{ex:pWnWXtCi}
+\gll 
+\ipa{nɤ-ku} 	\ipa{pɯ-nɯ-χtɕi} \\
+\textsc{2sg.poss}-head \textsc{imp-auto}-wash \\
+\glt Wash your head.
+\end{exe}
+
+The autobenefactive \ipa{nɯ--} can also refer to an action done for the benefit of a particular referent, which can be any of the core arguments.\footnote{For benefactive towards non-core arguments, two constructions are available in Japhug, either marking the beneficiary with the genitive \ipa{ɣɯ} or as a possessive prefix with the noun \ipa{ndʐa} `reason' (for instance \ipa{nɤ-ndʐa} \textsc{2sg.poss}-reason `for your sake'). These two strategies are attested in many other languages of the world (see \citealt[7-10]{zuniga10benefactive}).} In these cases a pronoun coreferent with the referent can be placed just before the verb. This pronoun cannot bear the ergative marker even when it refers to the A, as \ipa{ʑɤni} \textsc{3du} in example \ref{ex:tunWndzandZi}. It can also be the distributive pronoun \ipa{ʑaka} `each one' as in \ref{ex:kAnWBzu.mArtaRtCi}.
+
+   \begin{exe}
+\ex \label{ex:tunWndzandZi}
+\gll  \ipa{nɤ-pi}   	\ipa{ni}   	\ipa{kɯ}   	...   	\ipa{qɤjɣi}   	\ipa{nɯra}   	\ipa{kɯ-mɯm}   	\textbf{\ipa{ʑɤni}}   	\ipa{tu-nɯ-ndza-ndʑi,}   	\ipa{ɯ-rkɯ}   	\ipa{kɤ-kɯ-ɕke}   	\ipa{ra}   	\ipa{aʑo}   	\ipa{ɲɯ́-wɣ-mbi-a-ndʑi,}   	\ipa{cʰa}   	\ipa{ra}   	\textbf{\ipa{ʑɤni}}   	\ipa{ku-nɯ-tsʰi-ndʑi,}   	\ipa{aʑo}   	\ipa{ɯ-ʁɟo}   	\ipa{ɲɯ́-wɣ-jtsʰi-a-ndʑi}   	\ipa{pɯ-ɕti}        \\
+\textsc{2sg.poss}-elder.sister \textsc{du} \textsc{erg} ... bread \textsc{dem:pl} \textsc{nmlz:stative}-tasty they.\textsc{du} \textsc{ipfv}-\textsc{auto}-eat-\textsc{du} \textsc{3sg.poss}-side \textsc{pfv}-\textsc{nmlz:S}-burn \textsc{pl}  I \textsc{pfv}-\textsc{inv}-give-\textsc{1sg}-\textsc{du} alcohol \textsc{pl} they.\textsc{du} \textsc{ipfv}-\textsc{auto}-drink-\textsc{du} \textsc{1sg} \textsc{3sg.poss}-diluted.alcohol \textsc{pfv}-\textsc{inv}-give.to.drink-\textsc{1sg}-\textsc{du} \textsc{pst.ipfv}-be.\textsc{assert}  \\
+ \glt    `Your two sisters (...) ate the tasty food and gave me the burned part of the bread, drank the alcohol and gave me diluted alcohol to drink.'  (The three sisters, 68)
+\end{exe} 
+
+
+
+   \begin{exe}
+\ex \label{ex:kAnWBzu.mArtaRtCi}
+\gll
+\ipa{tɕiʑo} 	\ipa{ʁnɯz} 	\ipa{ma} 	\ipa{maŋe-tɕi} 	\ipa{tɕe,} 	\ipa{ʑaka} 	\ipa{kɤ-nɯ-βzu} 	\ipa{mɤ-rtaʁ-tɕi} \\
+\textsc{1du} two apart.from not.exist:\textsc{sens}-\textsc{1du} \textsc{lnk} each \textsc{inf-auto}-do \textsc{neg}-be.enough-\textsc{1du} \\
+\glt We are only two, we are not enough people to act separately. (The three sisters, 74)
+\end{exe} 
+
+The autobenefactive value of the prefix \ipa{nɯ--}  in the imperative is used to convey a softened tone, expressing mild suggestion rather than order (examples \ref{ex:CtAnWndze} and \ref{ex:GWtAnWXtWnW}). Note that the prefix \ipa{nɯ--}  can have a different semantics in the imperative, namely `do X as much as you want (the result will be the same)' (see  \ref{ex:nWnWGAWu} above).
+
+\begin{exe}
+\ex \label{ex:CtAnWndze}
+\gll
+\ipa{nɤʑo} 	\ipa{nɯnɯ} \ipa{tɕu} 	\ipa{kɤndza} 	\ipa{kɯ-mɯm} 	\ipa{ɕ-tɤ-nɯ-ndze} \\
+\textsc{2sg} \textsc{dem} \textsc{loc} food \textsc{nmlz}:S/A-be.tasty \textsc{transloc-imp-auto}-eat[III] \\
+\glt Go and eat nice food there! (The dog and the wolf, 64)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:GWtAnWXtWnW}
+\gll
+\ipa{laχtɕha} 	\ipa{mɯtɕhɯmɯrɯz} 	\ipa{tu,} 	\ipa{mɤʑɯ} 	\ipa{koxtɕinri} 	\ipa{tu} 	\ipa{tɕe,} 	\ipa{ɣɯ-tɤ-nɯ-χtɯ-nɯ} \\ 
+things all.kind exist:\textsc{fact} also silk.thread exist:\textsc{fact} \textsc{lnk} \textsc{cisloc-imp-auto}-buy-\textsc{pl} \\
+\glt There are all kinds of things, there are silk threads, come and buy them! (SnowWhite, 121-122)
+\end{exe}
+
+%possessive ?
+%\begin{exe}
+%\ex \label{ex:atAtWnWndAm}
+%\gll
+%\ipa{nɤʑo} 	\ipa{ɣɯ} 	\ipa{nɤ-nmaʁ} 	\ipa{nɯ} 	\ipa{a-tɤ-tɯ-nɯ-ndɤm} 	\ipa{tɕe,} 	\ipa{a-jɤ-tɯ-nɯ-ɣi} 	\ipa{khɯ}   \\
+%\textsc{2sg} \textsc{gen} \textsc{2sg.poss}-husband \textsc{dem} \textsc{irr-pfv-2-auto}-take[III]  \textsc{lnk} \textsc{irr-pfv-2}-\textsc{vert}-come  be.possible:\textsc{fact} \\
+%\glt It will be possible for you to take your husband and come back home. (Das singende springende Löweneckerchen, 199)
+%\end{exe} 
+
  
 \section{Spontaneous}
 The prefix \ipa{nɯ--} marks spontaneous actions  occurring without any external cause or against of the will of a particular referrent.
@@ -270,15 +339,15 @@ In the case of animals, plants and inanimate beings, \ipa{nɯ--} can be used to 
 \gll 
 \ipa{tɕe} 	\ipa{zrɯɣ} 	\ipa{nɯ} 	\ipa{tɕe,} 	\ipa{tsuku} 	\ipa{kɯ} 	\ipa{tɯ-pɤcʰaʁ} 	\ipa{ɯ-ŋgɯ} 	\ipa{tu-nɯ-ɬoʁ} 	\ipa{ŋu} 	\ipa{tu-ti-nɯ} 	\ipa{ŋu} 	\ipa{tɕe} 	\ipa{mɤxsi} 	\ipa{ma} 	\ipa{ɯʑo} 	\ipa{ɲɯ-kɯ-nɯ-βze} 	\ipa{ci} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe,} 	\\
 \textsc{lnk} louse \textsc{dem} \textsc{lnk} some \textsc{erg} \textsc{indef.poss}-navel \textsc{3sg}-inside \textsc{ipfv-auto}-come.out be:\textsc{fact} \textsc{ipfv}-say-\textsc{pl}  be:\textsc{fact} \textsc{lnk} \textsc{neg:genr:}A:know \textsc{lnk} \textsc{3sg} \textsc{ipfv-nmlz:S/A-auto}-grow \textsc{indef} \textsc{sens}-be.\textsc{affirm} \textsc{lnk} \\
-\glt The louse, some say that it comes from the navel, I don't know, it grows by itself. (louse, 54-55)
+\glt The louse, some say that it comes from the navel, I don't know, it grows by itself. (Louse, 54-55)
 \end{exe}
 
-This spontaneous value of the prefix \ipa{nɯ--}  explains its frequent presence in the protasis of alternative  (\ref{ex:pannWri}) and scalar (\ref{ex:pWnnWtu.kWnA})  concessive conditionals (see \citealt{jacques14linking}).
+This spontaneous value of the prefix \ipa{nɯ--}  explains its frequent presence in the protasis of alternative  (\ref{ex:pannWri}) and scalar (\ref{ex:pWnnWtu.kWnA})  concessive conditionals (see \citealt{jacques14linking}): in these constructions, the result described in the apodosis takes place regardless of whether the condition in the protasis is fulfilled or not. The prefix \ipa{nɯ--} expresses the fact that the resulting action is independent of the condition.
 
 \begin{exe}
 \ex  \label{ex:pannWri}
 \gll
-\ipa{tɕe}  	\ipa{tɯ-sɯm}  	\ipa{pɯ-a<nɯ>ri}  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe,}  \ipa{mɯ-pɯ-a<nɯ>ri}  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe}  	\ipa{pɯ-ra}  \\
+\ipa{tɕe}  	\ipa{tɯ-sɯm}  	\ipa{pɯ-a<nnɯ>ri}  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe,}  \ipa{mɯ-pɯ-a<nnɯ>ri}  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe}  	\ipa{pɯ-ra}  \\
 \textsc{lnk} \textsc{indef.poss}-mind  \textsc{pfv-<auto>}go[II] \textsc{lnk} \textsc{ipfv-genr}:S/P-go \textsc{neg-pfv-<auto>}go[II] \textsc{lnk} \textsc{ipfv-genr}:S/P-go \textsc{pst.ipfv}-have.to \\
 \glt Whether one liked it or not, one had to go. (Relatives, 212)
 \end{exe}
@@ -288,11 +357,10 @@ This spontaneous value of the prefix \ipa{nɯ--}  explains its frequent presence
 \ex  \label{ex:pWnnWtu.kWnA}
 \gll
 \ipa{nɯ}    	\ipa{li}    	\ipa{ɯ-qa}    	\ipa{ɲɯ-βze}    	\ipa{ɲɯ-ɕti}    	\ipa{ma}    	\ipa{ɯ-mɯntoʁ}    	\ipa{pɯ-nnɯ-tu}    	\ipa{kɯnɤ,}    	\ipa{ɯ-rɣi}    	\ipa{ra}    	\ipa{kɤ-mto}    	\ipa{maŋe.}    \\
-\textsc{dem} again \textsc{3sg.poss}-foot \textsc{ipfv}-do[III] \textsc{sens}-be:\textsc{affirm} \textsc{lnk} \textsc{3sg.poss}-flower \textsc{pst.ipfv-auto}-exist also \textsc{3sg.poss}-seed \textsc{pl} \textsc{inf}-see not.exist:\textsc{sensory} \\
+\textsc{dem} again \textsc{3sg.poss}-foot \textsc{ipfv}-do[III] \textsc{sens}-be:\textsc{affirm} \textsc{lnk} \textsc{3sg.poss}-flower \textsc{pst.ipfv-auto}-exist also \textsc{3sg.poss}-seed \textsc{pl} \textsc{inf}-see not.exist:\textsc{sens} \\
 \glt This one also grows by its root, as even if it has flowers, (I) have never seen its seeds. (\ipa{paʁtsa rna}, 155)
 \end{exe}
 
-In these constructions, the result described in the apodosis takes place regardless of whether the condition in the protasis is fulfilled or not: \ipa{nɯ--} expresses the fact that the resulting action is independent of the condition.
 
 An extension of the spontaneous value of the prefix \ipa{nɯ--} is the meaning `casually', `at one's will', `whatever' (Chinese \zh{随便} \textit{suíbiàn}), as in \ref{ex:tunWtCAtnW}. 
 
@@ -304,13 +372,13 @@ name \textsc{pl}	\textsc{ipfv-auto}-say-\textsc{pl}	\textsc{sens}-be	\textsc{dem
 \glt They say `huaguniang', they call them like that. (\textit{implied meaning}: they invented their name, it is not their real name; Black and white fur, 235)
 \end{exe}
 
-In the imperative, the spontaneous can be used to mock the addressee, telling him that all his actions will be in vain, as in \ref{ex:nWnWGAWu}. Note however that the \ipa{nɯ--} prefix can also express mild imperative, as in examples \ref{ex:CtAnWndze} and \ref{ex:GWtAnWXtWnW} below, depending on the context.
+In the imperative, the spontaneous can be used to mock the addressee, telling him that all his actions will be in vain, as in \ref{ex:nWnWGAWu}. Note however that the prefix \ipa{nɯ--} can also express a mild imperative, as in examples \ref{ex:CtAnWndze} and \ref{ex:GWtAnWXtWnW} below, depending on the context.
 
 \begin{exe}
 \ex \label{ex:nWnWGAWu}
 \gll 
 \ipa{nɤʑo} 	\ipa{nɯ-nɯ-ɣɤwu} 	\ipa{ma,} 	\ipa{nɤ-kɯ-nɯɣ-mu} 	\ipa{me} 	\ipa{ma} 	\ipa{mɤ-ta-mbi} \\
-\textsc{2sg} \textsc{imp-auto}-cry \textsc{lnk} \textsc{2sg.poss-nmlz}:S/A-be.afraid.of not.exit:\textsc{fact} \textsc{lnk} \textsc{neg}-1$\rightarrow$2-give:\textsc{fact} \\
+\textsc{2sg} \textsc{imp-auto}-cry \textsc{lnk} \textsc{2sg.poss-nmlz}:S/A-\textsc{appl}-be.afraid not.exit:\textsc{fact} \textsc{lnk} \textsc{neg}-1$\rightarrow$2-give:\textsc{fact} \\
 \glt You can cry as much as you like, nobody is afraid of you, I won't give (my daughter) to you (in marriage).(The frog1, 149)
 \end{exe}
 
@@ -341,9 +409,9 @@ Somewhat paradoxically, \ipa{nɯ--} can also indicate that an action occurs by m
 
 \begin{exe}
 \ex \label{ex:panWClWG}
-\gll \ipa{ɯ-qom} 	\ipa{ci} 	\ipa{pa-nɯ-ɕlɯɣ} 	\ipa{ɲɯ-ŋu,} \\
-\textsc{3sg.poss}-tear \textsc{indef} \textsc{pfv:3$\rightarrow$3'-auto}-drop \textsc{sens}-be \\
-\glt She shed a tear (unvoluntarily).(Kunbzang 228)
+\gll \ipa{ɯ-qom} 	\ipa{ci} 	\ipa{pɯ-a-nɯ-ɕlɯɣ} 	\ipa{ɲɯ-ŋu,} \\
+\textsc{3sg.poss}-tear \textsc{indef} \textsc{pfv-3$\rightarrow$3'-auto}-drop \textsc{sens}-be \\
+\glt She shed a tear (involuntarily). (Kunbzang 228)
 \end{exe}
 
 The verb \ipa{jmɯt} `forget' almost always appears with \ipa{nɯ--} in the corpus (in 23 examples out of 28). In the first person, the autobenefactive / spontaneous can be combined with the inferential to insist on the non-volitionality of the action, as in  \ref{ex:mAxsi2}.
@@ -352,7 +420,7 @@ The verb \ipa{jmɯt} `forget' almost always appears with \ipa{nɯ--} in the corp
  \ex \label{ex:mAxsi2}
  \gll
 \ipa{mɤ-xsi}  	\ipa{ko,}  	\ipa{nɯra}  	\ipa{ɲɤ-nɯ-jmɯt-a}  \\
-\textsc{neg-genr}:know \textsc{sfp} \textsc{dem:pl} \textsc{infr-auto}-forget-\textsc{1pl} \\
+\textsc{neg-genr}:know \textsc{sfp} \textsc{dem:pl} \textsc{ifr-auto}-forget-\textsc{1pl} \\
 \glt I don't know, I forgot those things. (Conversation)
 \end{exe}
 
@@ -360,65 +428,7 @@ It could seem to be contradictory that a single marker has such opposite semanti
 
 
  
-\section{Autobenefactive}
-
-The \ipa{nɯ--} prefix is commonly used with transitive verbs when the P bears a possessive prefix coereferent with the A, especially in the case of body parts, as in example \ref{ex:pWnWXtCi}. It expresses that the A is affected by its own action.
-
-\begin{exe}
-\ex \label{ex:pWnWXtCi}
-\gll 
-\ipa{nɤ-ku} 	\ipa{pɯ-nɯ-χtɕi} \\
-\textsc{2sg.poss}-head \textsc{imp-auto}-wash \\
-\glt Wash your head.
-\end{exe}
-
-The autobenefactive \ipa{nɯ--} can also refer to an action done for the benefit of a particular referent, which can be any of the core arguments. In these cases a pronoun coreferent with the referrent can be placed just before the verb. This pronoun cannot bear the ergative marker even when it refers to the A, as \ipa{ʑɤni} \textsc{3du} in example \ref{ex:tunWndzandZi}. It can also be the distributive pronoun \ipa{ʑaka} `each one' as in \ref{ex:kAnWBzu.mArtaRtCi}.
-
-   \begin{exe}
-\ex \label{ex:tunWndzandZi}
-\gll  \ipa{nɤ-pi}   	\ipa{ni}   	\ipa{kɯ}   	...   	\ipa{qɤjɣi}   	\ipa{nɯra}   	\ipa{kɯ-mɯm}   	\textbf{\ipa{ʑɤni}}   	\ipa{tu-nɯ-ndza-ndʑi,}   	\ipa{ɯ-rkɯ}   	\ipa{kɤ-kɯ-ɕke}   	\ipa{ra}   	\ipa{aʑo}   	\ipa{ɲɯ́-wɣ-mbi-a-ndʑi,}   	\ipa{cʰa}   	\ipa{ra}   	\textbf{\ipa{ʑɤni}}   	\ipa{ku-nɯ-tsʰi-ndʑi,}   	\ipa{aʑo}   	\ipa{ɯ-ʁɟo}   	\ipa{ɲɯ́-wɣ-jtsʰi-a-ndʑi}   	\ipa{pɯ-ɕti}        \\
-\textsc{2sg.poss}-elder.sister \textsc{du} \textsc{erg} ... bread \textsc{top:pl} \textsc{nmlz:stative}-tasty they.\textsc{du} \textsc{ipf}-\textsc{auto}-eat-\textsc{du} \textsc{3sg.poss}-side \textsc{pfv}-\textsc{nmlz:S}-burn \textsc{pl}  I \textsc{pfv}-\textsc{inv}-give-\textsc{1sg}-\textsc{du} alcohol \textsc{pl} they.\textsc{du} \textsc{ipf}-\textsc{auto}-drink-\textsc{du} I \textsc{3sg.poss}-diluted.alcohol \textsc{pfv}-\textsc{inv}-give.to.drink-\textsc{1sg}-\textsc{du} \textsc{pst.ipf}-be.\textsc{assert}  \\
- \glt    `Your two sisters (...) ate the tasty food and gave me the burned part of the bread, drank the alcohol and gave me diluted alcohol to drink.'  (The three sisters, 68).
-\end{exe} 
-
-
-
-   \begin{exe}
-\ex \label{ex:kAnWBzu.mArtaRtCi}
-\gll
-\ipa{tɕiʑo} 	\ipa{ʁnɯz} 	\ipa{ma} 	\ipa{maŋe-tɕi} 	\ipa{tɕe,} 	\ipa{ʑaka} 	\ipa{kɤ-nɯ-βzu} 	\ipa{mɤ-rtaʁ-tɕi} \\
-\textsc{1du} two apart.from not.exist:\textsc{sens}-\textsc{1du} \textsc{lnk} each \textsc{inf-auto}-do \textsc{neg}-be.enough-\textsc{1du} \\
-\glt We are only two, we are not enough people to act separately. (The three sisters, 74)
-\end{exe} 
-
-The autobenefactive value of the \ipa{nɯ--} prefix in the imperative is used to convey a softened tone, expressing mild suggestion rather than order (examples \ref{ex:CtAnWndze} and \ref{ex:GWtAnWXtWnW}). Note that the \ipa{nɯ--} prefix can have a completely different semantics in the imperative, namely `do X as much as you want (the result will be the same)' (see  \ref{ex:nWnWGAWu} above).
-
-\begin{exe}
-\ex \label{ex:CtAnWndze}
-\gll
-\ipa{nɤʑo} 	\ipa{nɯnɯ} \ipa{tɕu} 	\ipa{kɤndza} 	\ipa{kɯ-mɯm} 	\ipa{ɕ-tɤ-nɯ-ndze} \\
-\textsc{2sg} \textsc{dem} \textsc{loc} food \textsc{nmlz}:S/A-be.tasty \textsc{transloc-imp-auto}-eat[III] \\
-\glt Go and eat nice food there! (The dog and the wolf, 64)
-\end{exe}
-
-\begin{exe}
-\ex \label{ex:GWtAnWXtWnW}
-\gll
-\ipa{laχtɕha} 	\ipa{mɯtɕhɯmɯrɯz} 	\ipa{tu,} 	\ipa{mɤʑɯ} 	\ipa{koxtɕinri} 	\ipa{tu} 	\ipa{tɕe,} 	\ipa{ɣɯ-tɤ-nɯ-χtɯ-nɯ} \\ 
-things all.kind exist:\textsc{fact} also silk.thread exist:\textsc{fact} \textsc{lnk} \textsc{cisloc-imp-auto}-buy-\textsc{pl} \\
-\glt There are all kinds of things, there are silk threads, come and buy them! (SnowWhite, 121-122)
-\end{exe}
-
-%possessive ?
-%\begin{exe}
-%\ex \label{ex:atAtWnWndAm}
-%\gll
-%\ipa{nɤʑo} 	\ipa{ɣɯ} 	\ipa{nɤ-nmaʁ} 	\ipa{nɯ} 	\ipa{a-tɤ-tɯ-nɯ-ndɤm} 	\ipa{tɕe,} 	\ipa{a-jɤ-tɯ-nɯ-ɣi} 	\ipa{khɯ}   \\
-%\textsc{2sg} \textsc{gen} \textsc{2sg.poss}-husband \textsc{dem} \textsc{irr-pfv-2-auto}-take[III]  \textsc{lnk} \textsc{irr-pfv-2}-\textsc{vert}-come  be.possible:\textsc{fact} \\
-%\glt It will be possible for you to take your husband and come back home. (Das singende springende Löweneckerchen, 199)
-%\end{exe} 
-
-
+ 
 \section{Permansive}
 In addition to the two previous meanings, which are relatively straightforward for a middle marker, the spontaneous-autobenefactive prefix is also used with an aspectual function. It expresses the continuity of an action or a state, despite the occurrence of another action which could have been expected to stop it (as in examples \ref{ex:pjAnWGAwu}, \ref{ex:anWmphWr}), or despite the fact that a long time has passed (see \ref{ex:anWrŋi} above) like the adverb `still' in English. 
 
@@ -431,7 +441,7 @@ The permansive reading of the prefix \ipa{nɯ--} is only possible in non-perfect
 \ex \label{ex:pjAnWGAwu}
 \gll
 \ipa{tɕʰeme} 	\ipa{nɯ} 	\ipa{ɲɤ-nɯkʰɤda} 	\ipa{ri,} 	\ipa{mɯ-pjɤ-pʰɤn,} 	\ipa{tɕʰeme} 	\ipa{nɯ} 	\ipa{pjɤ-nɯ-ɣɤwu} 	\ipa{ɕti,} \\
-girl \textsc{dem} \textsc{infr}-convince \textsc{lnk} \textsc{neg-infr}-be.efficient girl \textsc{dem} \textsc{evd.ipfv-auto}-cry  be.\textsc{affirm:fact} \\
+girl \textsc{dem} \textsc{ifr}-convince \textsc{lnk} \textsc{neg-ifr}-be.efficient girl \textsc{dem} \textsc{evd.ipfv-auto}-cry  be.\textsc{affirm:fact} \\
 \glt She (tried to) comfort the girl, but it was for nothing, the girl was still crying. (Bean and linen, 48)
 \end{exe} 
 
@@ -458,24 +468,37 @@ type.of.mushroom \textsc{comit} Matsutake \textsc{nmlz}:S/A-be.like \textsc{pfv}
 %iɕqha tɤ-jwaʁ χsɯ-mpɕar nɯ nɯtɕu pjɤ-kɤ<nɯ>ta-ci.
 %
 
-The permansive use of \ipa{nɯ--}, 
+The permansive use of \ipa{nɯ--} is not without typological parallels. One of the clearest cases is the Russian pronominal element \ipa{себе}, originally the dative form of \ipa{себя} `oneself', and which alongside its autobenefactive value,  is used in certain contexts with a permansive value (`continue to ...'), generally with repetition of the verb as in example \ref{ex:sebe} taken from a famous song.\footnote{I would like to thank Dmitry Nikolayev and Pavel Ozerov for pointing out this fact to me, providing examples and suggesting the grammaticalization path proposed in this section.}
+ 
+\begin{exe}
+ \ex \label{ex:sebe}
+ \gll
+\ipa{А} 	\ipa{время,} 	\ipa{а} 	\ipa{время,} 	\ipa{Идёт} 	\ipa{себе,} 	\ipa{идёт} \\
+ and time:\textsc{nom}  and time:\textsc{nom}  go:\textsc{3sg:present} itself:\textsc{dat} go:\textsc{3sg:present} \\
+\glt The time goes on and on...
+ \end{exe}
 
-%sebe in Russian А время, а время, Не убавляет ход,
-%А время, а время, Идёт себе, идёт
+This construction is not fully grammaticalized in Russian, but it is nevertheless a good parallel to the permansive value of \ipa{nɯ--} in Japhug. Since it is clear in Russian that the original meaning of this marker can only have been autobenefactive, not permansive or spontaneous, this fact suggests that the directionality of grammaticalization is more likely to be from autobenefactive to permansive in Japhug too. The following pathway in four stages can be proposed to account for this evolution; note that all four stages represent attested uses of Japhug \ipa{nɯ--}.
 
-%В темноте не разглядел вор тигра и подумал, что это корова, лежит себе и радуется
-
+\begin{enumerate}
+\item Do X for oneself (\textsc{autobenefactive}).  
+\item Do X on one's own.
+\item Do X on one's own, disregarding external conditions.
+\item Continue to do X, despite (adverse) external factors. (\textsc{permansive})
+\end{enumerate}
+ 
+At the present moment, we have no evidence that cognates of Japhug \ipa{nɯ--} in other Rgyalrongic languages have developed a permansive value, but further research might reveal similar examples elsewhere.
 %The spontaneous expresses an action \textit{taking place} independently of any external cause, while the   permansive focuses on the \textit{maintenance} or \textit{continuity} of a state or action independently of any external cause.
 
 
 \section{Autobenefactive and other derivations}
 
-The spontaneous-autobenefactive \ipa{nɯ--} in Japhug has cognates in other Rgyalrongic languages, in particular in Khroskyabs (its cognate \ipa{N--} is discussed in \citealt[157-160]{lai13affixale}). Since this prefix present irregularities in Japhug and complex morphophonological alternations in Khroskyabs, and since no obvious lexical source can be proposed as its lexifier in either language, it is reasonable to hypothesize that it can be reconstructed to proto-Rgyalrongic with at least the spontaneous and autobenefactive functions (the permansive function has not been documented elsewhere).
+The spontaneous-autobenefactive \ipa{nɯ--} in Japhug has cognates in other Rgyalrongic languages, in particular in Khroskyabs (its cognate \ipa{N--} is discussed in \citealt[157-160]{lai13affixale}). Since this prefix presents irregularities in Japhug and complex morphophonological alternations in Khroskyabs, and since no obvious lexical source can be proposed as its lexifier in either language, it is reasonable to hypothesize that it can be reconstructed to proto-Rgyalrongic with at least the spontaneous and autobenefactive functions (the permansive function has not been documented elsewhere).
 
 
-No nasal prefix with a semantics comparable to Japhug \ipa{nɯ--} has been described in any other Sino-Tibetan language. Hence, it is likely that it is one of the many common innovations of the Rgyalrongic languages.\footnote{However, one cannot completely exclude the possibility that cognate prefixes have been lost without traces in some languages.} 
+No nasal prefix with semantics comparable to Japhug \ipa{nɯ--} has been described in any other Sino-Tibetan language. Hence, it is likely that it is one of the many common innovations of the Rgyalrongic languages.\footnote{However, one cannot completely exclude the possibility that cognate prefixes have been lost without traces in some languages.} 
 
-This raises the question of the source of the prefix \ipa{nɯ--} and its historical relationships to phonetically similar prefixes in Japhug. While the ultimate origin of the autobenefactive \ipa{nɯ--} is not yet clearly established, we show that it is likely to be related to two other derivations: the vertitive and the anticausative.
+This raises the question of the source of the prefix \ipa{nɯ--} and its historical relationships to phonetically similar prefixes in Japhug. While the ultimate origin of the autobenefactive \ipa{nɯ--} is not yet clearly established, we show that it is likely to be related to two other derivations: the vertitive\footnote{This term is adopted from Siouan linguistics, cf \citet{taylor76motion}.} and the anticausative.
 
 %\footnote{However, no trace of this prefix has been found in Stau up to now.}
 
@@ -483,10 +506,10 @@ This raises the question of the source of the prefix \ipa{nɯ--} and its histori
 \subsection{Vertitive}
 There are three derivational verbal prefixes homophonous with the spontaneous-autobenefactive (\citealt{jacques13tropative}): the applicative \ipa{nɯ--} / \ipa{nɯɣ--}, the denominal \ipa{nɯ--} and the vertitive \ipa{nɯ--}. The first two are unlikely to be historically related to the autobenefactive. In particular, while other voice derivations, including the antipassive \ipa{rɤ--} and the applicative \ipa{nɯ--}  have been shown to originate from denominal derivations (see \citealt{jacques14antipassive}), the autobenefactive \ipa{nɯ--} and the denominal derivations in \ipa{nɯ--} are semantically too different for such a hypothesis to be possible: there are no denominal verbs in \ipa{nɯ--}  in Japhug with an intrinsic spontaneous or autobenefactive meaning. Therefore, this section only focuses on the vertitive.
 
-The vertitive \ipa{nɯ--}\footnote{This term is adopted from Siouan linguistics, cf \citet{taylor76motion}.} is exclusively attested with a restricted set of motion verbs, indicated in Table \ref{tab:vertitive}. It implies a motion back to the origin point.
+The vertitive \ipa{nɯ--}  is exclusively attested with a restricted set of motion verbs, indicated in Table \ref{tab:vertitive}. It implies a motion back to the origin point.
  
 \begin{table}[h]
-\caption{The vertitive \ipa{nɯ--} prefix in Japhug} \centering \label{tab:vertitive}
+\caption{The vertitive prefix \ipa{nɯ--} in Japhug} \centering \label{tab:vertitive}
 \begin{tabular}{lllllllll}
 \toprule
 Base verb & Meaning & Derived verb & Meaning& \\
@@ -507,7 +530,7 @@ Vertitive verbs can be combined with the spontaneous-autobenefactive, as in exam
 \ex \label{ex:kunWnWGinW}
 \gll 
 \ipa{tɕe}  	\ipa{ɲɯ-tɯ-nɤm}  	\ipa{qʰe,}  	\ipa{tɕe}  	\ipa{ʑara}  	\ipa{ku-nɯ-nɯ-ɣi-nɯ}  	\ipa{ŋu}  	\ipa{ɕi?}  \\
-\textsc{lnk} \textsc{ipfv:west}-2-drive[III] \textsc{lnk} \textsc{lnk} \textsc{3pl} \textsc{ipfv:east}-\textsc{auto-vert}-come-\textsc{pl} be:\textsc{fact} \textsc{qu} \\
+\textsc{lnk} \textsc{ipfv:west}-2-drive[III] \textsc{lnk} \textsc{lnk} \textsc{3pl} \textsc{ipfv:east}-\textsc{auto-vert}-come-\textsc{pl} be:\textsc{fact} \textsc{q} \\
 \glt Do you drive them (the cows) over there, and then they come back by themselves? (Conversation 2003, 19)
 \end{exe}
 
@@ -518,7 +541,7 @@ All vertitive verbs are homophonous with the corresponding spontaneous-autobenef
 \ex \label{ex:jonWtsWm}
 \gll
 \ipa{iɕqha} 	\ipa{rɟɤlpu} 	\ipa{ɯ-tɕɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{tɤɕime} 	\ipa{nɯ,} 	\ipa{ɯʑo} 	\ipa{ɯ-rɟɤlkhɤβ} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{jo-nɯ-tsɯm} 	\ipa{qhe} \\
-the.aforementioned king \textsc{3sg.poss}-son \textsc{dem} \textsc{erg} girl \textsc{dem} \textsc{3sg} \textsc{3sg.poss}-kingdom \textsc{dem} \textsc{loc} \textsc{infr-vert}-take.away \textsc{lnk} \\
+the.aforementioned king \textsc{3sg.poss}-son \textsc{dem} \textsc{erg} girl \textsc{dem} \textsc{3sg} \textsc{3sg.poss}-kingdom \textsc{dem} \textsc{loc} \textsc{ifr-vert}-take.away \textsc{lnk} \\
 \glt The prince took the girl back (\textit{vertitive}) to his kingdom. (Snow White, 232)
 \end{exe}
 
@@ -527,8 +550,8 @@ the.aforementioned king \textsc{3sg.poss}-son \textsc{dem} \textsc{erg} girl \te
 \begin{exe}
 \ex \label{ex:thanWtsWm}
 \gll
-\ipa{aʑɯɣ} 	\ipa{nɯ-nɯ-βde-t-a} 	\ipa{nɯ} 	\ipa{ɯ́-ŋu} 	\ipa{tɯ-ci} 	\ipa{kɯ} 	\ipa{tha-nɯ-tsɯm} 	\ipa{nɯ} 	\ipa{ɯ́-ŋu} \\
-\textsc{1sg:gen} \textsc{pfv-auto}-throw-\textsc{pst-1sg} \textsc{dem} \textsc{qu}-be:\textsc{fact} \textsc{indef.poss}-water \textsc{erg} \textsc{pfv}:3$\rightarrow$3'-\textsc{auto}-take.away \textsc{dem} \textsc{qu}-be:\textsc{fact} \\
+\ipa{aʑɯɣ} 	\ipa{nɯ-nɯ-βde-t-a} 	\ipa{nɯ} 	\ipa{ɯ́-ŋu} 	\ipa{tɯ-ci} 	\ipa{kɯ} 	\ipa{tʰɯ-a-nɯ-tsɯm} 	\ipa{nɯ} 	\ipa{ɯ́-ŋu} \\
+\textsc{1sg:gen} \textsc{pfv-auto}-throw-\textsc{pst-1sg} \textsc{dem} \textsc{q}-be:\textsc{fact} \textsc{indef.poss}-water \textsc{erg} \textsc{pfv}-3$\rightarrow$3'-\textsc{auto}-take.away \textsc{dem} \textsc{q}-be:\textsc{fact} \\
 \glt Is it the one that I lost? Is it the one that the water took away (\textit{spontaneous})? (the bat, the thistle and the water fowl, 29)
 \end{exe}
 
@@ -536,14 +559,16 @@ the.aforementioned king \textsc{3sg.poss}-son \textsc{dem} \textsc{erg} girl \te
 There is no evidence of vertitive prefix in Khroskyabs, and it is thus probably a Rgyalrong-proper extension of the autobenefactive prefix.
 
 
-It is conceivable that the vertitive meaning developped out of the autobenefactive `take for oneself' $\rightarrow$ `take to one's home' $\rightarrow$ `take back home'. More precise data on the use of the autobenefactive in all Rgyalrongic languages is however necessary to confirm or infirm this hypothesis.
+It is conceivable that the vertitive meaning developped out of the autobenefactive `take for oneself' $\rightarrow$ `take to one's home' $\rightarrow$ `take back home'. More precise data on the use of the autobenefactive in all Rgyalrongic languages is however necessary to confirm this hypothesis.
 
 \subsection{Anticausative}
-Japhug is one of the few languages with a specifically anticausative derivation, distinct from the passive, the reflexive and other `middle' markers (\citealt{jacques12demotion}). This derivation turns a transitive verb into an intransitive one. The S of the intransitive verb corresponds to the P of the base verb. The anticausative is in direct concurrence with the agentless passive prefix \ipa{a--}. The semantic different between the two is that in the former, the agent is completely deleted semantically, while it is still recoverable in the case of the latter.
+Japhug is one of the few languages with a specifically anticausative derivation, distinct from the passive, the reflexive and other middle markers (\citealt{jacques12demotion}). This derivation turns a transitive verb into an intransitive one. The S of the intransitive verb corresponds to the P of the base verb. The anticausative is in direct concurrence with the agentless passive prefix \ipa{a--}. The semantic different between the two is that in the former, the agent is completely deleted semantically, while in the latter it is still recoverable.
 
 The anticausative in Japhug is not marked by a prefix, but by a morphophonological alternation: the prenasalization of the onset of the verb stem (it only applies to monosyllabic verbs).
  
-The anticausative in Japhug is only marginally productive: it only applied to one single Tibetan loanword \ipa{χtɤr} `scatter' (Tibetan \ipa{gtor}), whose anticausative is \ipa{ʁndɤr} `be scattered'. This example is of considerable importance, as it proves that the directionality of derivation is from the transitive verb to the intransitive one, and not the other way round. 
+The anticausative in Japhug is only marginally productive: it only applied to one single Tibetan loanword \ipa{χtɤr} `scatter' (Tibetan \ipa{gtor}), whose anticausative is \ipa{ʁndɤr} `be scattered'. No Tibetan verb comparable to \ipa{ʁndɤr} `be scattered' exists, and in any case the phonotactics of the onset of this verb itself (fricative+prenasalized voiced stop) is incompatible with that of any Tibetan language. Hence, this verb can only have been created within Japhug from its transitive counterpart \ipa{χtɤr} `scatter' which is a borrowing.
+
+This example is of considerable importance, as it proves that the directionality of derivation is from the transitive verb to the intransitive one, and not the other way round.\footnote{In addition, we observe that several phonological contrasts found in the transitive verbs, such as aspiration, are neutralized in the corresponding anticausative verbs, a fact that strengthens the idea that the intransitive verbs are derived from the transitive ones in this voice alternation.} 
 
 All known examples of anticausative alternations  in Japhug are presented in Table \ref{tab:anticausative}.
  
@@ -579,7 +604,7 @@ basic verb  & &derived  verb &\\
    \ipa{qrɤz}  &	 to shave 	&		\ipa{ɴɢrɤz}  &	 	to break (of hair, dry leaves etc) 	\\ 
    \ipa{cʰɤβ}  &	 to flatten, to crush 	&		\ipa{ɲɟɤβ}  &	to be crushed, flattened 	 	\\ 
    \ipa{cɯ}  &	 to open 	&		\ipa{ɲɟɯ}  &	 to be opened	 	\\ 
-      \ipa{phaʁ}  &	 to split 	&		\ipa{mbaʁ}  &	 to split, break	 	\\
+      \ipa{pʰaʁ}  &	 to split 	&		\ipa{mbaʁ}  &	 to split, break	 	\\
  \bottomrule
 \end{tabular}}
 \end{table}
@@ -587,15 +612,14 @@ basic verb  & &derived  verb &\\
 
 The anticausative radically differs from autobenefactive in several ways. First, it is an intransitivizing derivation, while the autobenefactive-spontaneous does not modify the verb valency. Second, the two derivations are formally different (prefix vs prenasalization). 
 
-Yet, there is some degree of semantic overlap between the two derivations: both can be used to express spontaneous events occurring without any external agent. Moreover, while they are phonetically different, it is conceivable that onset prenalisation is the regular phonetic development of nasal prefixesbefore stops and affricates, while the tautosyllabic \ipa{nɯ--} represents a regularized allomorph occurring before onsets that cannot undergo prenasalization and later generalized everywhere. Hence, it is possible that these two derivations came from a common origin: a nasal prefix expressing spontaneous / non-volitive actions. 
+Yet, there is some degree of semantic overlap between the two derivations: both can be used to express spontaneous events occurring without any external agent. Moreover, while they are phonetically different, it is conceivable that onset prenasalisation is the regular phonetic development of nasal prefixes before stops and affricates, while the tautosyllabic \ipa{nɯ--} represents a regularized allomorph occurring before onsets that cannot undergo prenasalization and later generalized everywhere. Hence, it is possible that these two derivations came from a common origin: a nasal prefix expressing spontaneous / non-volitive actions. 
 
-The anticausative is widespread throughout the Sino-Tibetan family, even in Chinese (\citealt{sagart12sprefix}) and Tibetan (\citealt{jacques12internal}), and can safely be reconstructed to the proto-language.\footnote{Although some authors appear to  confuse the anticausative and causative \ipa{s--} derivations (\citealt{mei12caus}), the general consensus is that these are completely distinct phenomena (\citealt{lapolla03}, \citealt{hill14voicing}): languages as diverse as  Japhug, Tibetan, Rawang and Jingpo have both distinct causative (marked by a coronal fricative prefix) and anticausative (marker by voicing alternation) derivations. This fact is difficult to reconcile with the idea that voicing alternations are due to the devoicing of voiced initials caused by the *\ipa{s--} prefix.} The question is whether the primary meaning of this derivation was spontaneous action or specifically anticausative (with loss of transitivity); this can only be effectively tested in 
-In Sino-Tibetan languages that have  morphological transitivity.
+The anticausative is widespread throughout the Sino-Tibetan family, even in Chinese (\citealt{sagart12sprefix}) and Tibetan (\citealt{jacques12internal}), and can safely be reconstructed to the proto-language.\footnote{Although some authors appear to  confuse the anticausative and causative \ipa{s--} derivations (\citealt{mei12caus}), the general consensus is that these are completely distinct phenomena (\citealt{lapolla03}, \citealt{hill14voicing}): languages as diverse as  Japhug, Tibetan, Rawang and Jingpo have both distinct causative (marked by a coronal fricative prefix) and anticausative (marker by voicing alternation) derivations. This fact is difficult to reconcile with the idea that voicing alternations are due to the devoicing of voiced initials caused by the prefix *\ipa{s--}.} The question is whether the primary meaning of this derivation was spontaneous action or specifically anticausative (with loss of transitivity); this can only be effectively tested in Sino-Tibetan languages that have  morphological transitivity.
 
 In Kiranti languages, which like Rgyalrongic languages, have distinct transitive and intransitive conjugations, example of voicing alternations are relatively few (in Khaling for instance, only eight examples are attested, see \citealt{jacques13derivational.khaling}). The voiced counterpart of such verb pairs is nearly always intransitive, with a clear anticausative meaning identical the Japhug examples in Table \ref{tab:anticausative}.
 
 
-Yet, there is at least one example of voicing alternation where the voiced remains morphologically transitive: Khaling \ipa{|plum|} `rinse in water' vs \ipa{|blum|} `sink in water' are both transitive; the voiced form \ipa{|blum|} is conjugated intransitively, and takes an agent marked with the ergative (the liquid in which one sinks), as in \ref{ex:iblumata}.
+Yet, there is at least one example of voicing alternation where the voiced remains morphologically transitive: Khaling \ipa{plum--} `rinse in water' vs \ipa{blum-} `sink in water' are both transitive; the voiced form \ipa{blum--} is conjugated intransitively, and takes an agent marked with the ergative (the liquid in which one sinks), as in \ref{ex:iblumata}.
 
 \begin{exe}
 \ex \label{ex:iblumata}
@@ -605,73 +629,16 @@ water-\textsc{erg} \textsc{inv/2}-sink-\textsc{1sg:S/O:pst}\\
 \glt I sank in the water.
 \end{exe}
 
-Such an example may suggest that the primary function of the anticausative was that of spontaneous action, and not intransitivization. In this view, Japhug and other Rgyalrongic languages have reshaped the original spontaneous derivation into two distinct morphological processes with specialized semantics, which most Sino-Tibetan languages have only preserved the spontaneous derivation in is more reduced anticausative function. 
+Such an example may suggest that the primary function of the anticausative was that of spontaneous action, and not intransitivization. In this view, Japhug and other Rgyalrongic languages have reshaped the original spontaneous derivation into two distinct morphological processes with specialized semantics, which most Sino-Tibetan languages have only preserved the spontaneous derivation in its more reduced anticausative function. 
 
-If this hypothesis is correct, more examples such as Khaling \ipa{|plum|} vs \ipa{|blum|}, with voicing alternation without intransitivation, should be discovered in morphologically rich languages of the family.
-
-\subsection{The Middle Domain}
-%\begin{tikzpicture}[node distance=2cm] 
-%
-%\node (start) [startstop] {Start};
-%\node (pro1) [process, below of=start] {Process 1};
-%
-%\end{tikzpicture}
-
-
-
-\centering\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange!40, 
-   level 1/.append style={level distance=5cm,sibling angle=90},
-     %level 1 concept/.append style={level distance=130,sibling angle=30},
-    level 2/.append style={level distance=3cm,sibling angle=30},]  
-%  extra concept/.append style={color=blue!50,text=black}]
-  \begin{scope}[mindmap, concept color=blue!30]
-    \node [concept]  at (-2,6) {Reflexive \ipa{ʑɣɤ--}}
-    ;
-  \end{scope}
-  
-\begin{scope}[mindmap, concept color=purple!40]
-    \node [concept] at (0,0) {Autobenefactive \ipa{nɯ--}} 
-      child { node {Permansive}}
-      child { node {Spontaneous}
-      		child { node {Protasis of conditionals}}
-      		child { node {Mistake}}
-      		child { node {Against volition}}
-		}
-      child { node {Grooming / Possessed P}}
-;
-  \end{scope}
-  
-\begin{scope}[mindmap, concept color=orange!50]
-    \node [concept] at (7,6) {Anticausative}
-;
-\end{scope}
-
-\begin{scope}[mindmap, concept color=teal!50]
-    \node [concept] at (5,11) {Passive \ipa{a--}}
-      child [grow=-130]{ node {Reciprocal \ipa{a--} + \textsc{redp} }}
-;
-\end{scope}
-
-\begin{scope}[mindmap, concept color=yellow!50]
-    \node [concept] at (-3,-4) {Vertitive \ipa{nɯ--}}
-;
-\end{scope}
-
-
-%\begin{scope}[mindmap, concept color=green!50]
-%    \node [concept] at (9,15) {Antipassive     \ipa{sɤ--} / \ipa{rɤ--}} 
-%      child [grow=-90] { node {Anti-experiencer}} 
-%;
-%\end{scope}
-
-\end{tikzpicture}
+If this hypothesis is correct, more examples such as Khaling \ipa{plum--} vs \ipa{blum--}, with voicing alternation without intransitivation, should be discovered in morphologically rich languages of the family.
 
 \section{Conclusion}
 The spontaneous-autobenefactive prefix \ipa{nɯ--} in Japhug has cognates in most Rgyalrongic languages. Further reasearch will be needed to determine to what extent the use of the cognate prefixes in the other languages are similar or different from that of Japhug \ipa{nɯ--}. In particular, it is unclear whether the permansive value of \ipa{nɯ--} is restricted to Japhug or found elsewhere, and whether the cognate prefixes have the same values in the imperative.
 
 Additional research on the historical origin of the spontaneous-autobenefactive will also require data from other languages. Within Rgyalrongic, it is especially important to collect all examples of irregular spontaneous-autobenefactive forms, such as Japhug \ipa{ɣɤ<nɯ>ʑu} <\textsc{auto}>exist:\textsc{sens}. Outside of Rgyalrongic, progress may be achieved by looking for traces of cognate spontaneous markers. In particular, it could be fruitful to search for cases of voiced / unvoiced verb pairs in which both verbs are morphologically transitive, like Khaling |\ipa{plum--}| `rinse' and |\ipa{blum--}| `sink'.
 
-Finally, the data presented in this paper can be of interest to typologists working on Middle marking systems, as Japhug is one of the few language with specific markers to express reflexive, passive, reciprocal, antipassive, anticausative and autobenefactive derivations, in other words a language in which all subsections of the Middle Domain are clearly kept separate by distinct morphology.
+Finally, the data presented in this paper is of interest to typologists working on middle marking systems, as Japhug is one of the few languages with specific markers to express reflexive, passive, reciprocal, antipassive, anticausative and autobenefactive derivations, in other words, a language in which all subsections of the middle domain are clearly kept separate by distinct morphology.
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}

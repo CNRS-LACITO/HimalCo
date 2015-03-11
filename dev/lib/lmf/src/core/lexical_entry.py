@@ -15,7 +15,7 @@ from core.sense import Sense
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
     """
-    def __init__(self, id=0):
+    def __init__(self, id='0'):
         """! @brief Constructor.
         LexicalEntry instances are owned by Lexicon.
         @param id Unique IDentifier. If not provided, default value is 0.
@@ -83,11 +83,11 @@ class LexicalEntry():
         @param mapping A Python dictionary giving the mapping between MDF and LMF values.
         @return LexicalEntry instance.
         """
-        error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (str(part_of_speech), self.get_lexeme())
+        error_msg = "Part of speech value '%s' encountered for lexeme '%s' is not allowed" % (part_of_speech.encode('utf8'), self.get_lexeme().encode('utf8'))
         # Check part of speech type
         check_attr_type(part_of_speech, [str, unicode], error_msg)
         # Check range of part of speech value (also try with converted value from MDF to LMF)
-        value = check_attr_range(str(part_of_speech), range, error_msg, mapping)
+        value = check_attr_range(part_of_speech.encode('utf8'), range, error_msg, mapping)
         self.partOfSpeech = value
         return self
 
@@ -271,6 +271,14 @@ class LexicalEntry():
         self.lemma.set_variant_form(variant_form, type)
         return self
 
+    def get_variant_forms(self, type="unspecified"):
+        """! @brief Get all variant forms of specified type.
+        Attribute 'variantForm' is owned by FormRepresentation, which is owned by Lemma.
+        @return A Python list of FormRepresentation attributes 'variantForm' if type matches.
+        """
+        if self.lemma is not None:
+            return self.lemma.get_variant_forms(type)
+
     def set_variant_comment(self, comment, language=None):
         """! @brief Set variant comment and language.
         Attributes 'comment' and 'language' are owned by FormRepresentation, which is owned by Lemma.
@@ -316,25 +324,27 @@ class LexicalEntry():
         self.lemma.set_geographical_variant(geographical_variant)
         return self
 
-    def set_phonetic_form(self, phonetic_form):
+    def set_phonetic_form(self, phonetic_form, script_name=None):
         """! @brief Set phonetic form.
         Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
         @param phonetic_form The phonetic form to set.
+        @param script_name The name of the script used to write the phonetic form, e.g. pinyin.
         @return LexicalEntry instance.
         """
         # Create a Lemma instance if not yet created
         if self.lemma is None:
             self.lemma = Lemma()
-        self.lemma.set_phonetic_form(phonetic_form)
+        self.lemma.set_phonetic_form(phonetic_form, script_name)
         return self
 
-    def get_phonetic_forms(self):
+    def get_phonetic_forms(self, script_name=None):
         """! @brief Get all phonetic forms.
         Attribute 'phoneticForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param script_name If provided, get only phonetic forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'phoneticForm' if any.
         """
         if self.lemma is not None:
-            return self.lemma.get_phonetic_forms()
+            return self.lemma.get_phonetic_forms(script_name)
 
     def set_contextual_variation(self, contextual_variation):
         """! @brief Set contextual variation.
@@ -376,25 +386,27 @@ class LexicalEntry():
         if self.lemma is not None:
             return self.lemma.get_spelling_variants()
 
-    def set_citation_form(self, citation_form):
+    def set_citation_form(self, citation_form, script_name=None):
         """! @brief Set citation form.
         Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
         @param citation_form The citation form to set.
+        @param script_name The name of the script used to write the citation form, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Create a Lemma instance if not yet created
         if self.lemma is None:
             self.lemma = Lemma()
-        self.lemma.set_citation_form(citation_form)
+        self.lemma.set_citation_form(citation_form, script_name)
         return self
 
-    def get_citation_forms(self):
+    def get_citation_forms(self, script_name=None):
         """! @brief Get all citation forms.
         Attribute 'citationForm' is owned by FormRepresentation, which is owned by Lemma.
+        @param script_name If provided, get only citation forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'citationForm' if any.
         """
         if self.lemma is not None:
-            return self.lemma.get_citation_forms()
+            return self.lemma.get_citation_forms(script_name)
 
     def set_dialect(self, dialect):
         """! @brief Set dialect.
@@ -460,7 +472,7 @@ class LexicalEntry():
         @param sense_number Number of the sense to add.
         @return LexicalEntry instance.
         """
-        id = str(self.get_id()) + "_" + str(sense_number)
+        id = self.get_id() + "_" + str(sense_number)
         self.add_sense(self.create_sense(id).set_senseNumber(sense_number))
         return self
 
@@ -655,13 +667,11 @@ class LexicalEntry():
     def get_etymology(self):
         """! @brief Get etymology.
         This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
-        @return Statement attribute 'etymology'.
+        @return The first found Statement attribute 'etymology'.
         """
-        # Get the last Sense instance if any
-        sense = self.get_last_sense()
-        # If there is a Sense instance, get etymology
-        if sense is not None:
-            return sense.get_etymology()
+        for sense in self.get_senses():
+            if sense.get_etymology() is not None:
+                return sense.get_etymology()
 
     def set_etymology_comment(self, etymology_comment, term_source_language=None):
         """! @brief Set etymology comment and language.
@@ -683,13 +693,11 @@ class LexicalEntry():
         """! @brief Get etymology comment.
         This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
         @param term_source_language The language of the etymology comment to retrieve.
-        @return Statement attribute 'etymologyComment'.
+        @return The first found Statement attribute 'etymologyComment'.
         """
-        # Get the last Sense instance if any
-        sense = self.get_last_sense()
-        # If there is a Sense instance, get etymology comment
-        if sense is not None:
-            return sense.get_etymology_comment(term_source_language)
+        for sense in self.get_senses():
+            if sense.get_etymology_comment(term_source_language) is not None:
+                return sense.get_etymology_comment(term_source_language)
 
     def get_term_source_language(self):
         """! @brief Get language used for the etymology comment.
@@ -774,10 +782,12 @@ class LexicalEntry():
         """
         return self.word_form
 
-    def set_paradigm(self, variant_form, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+    def set_paradigm(self, written_form, script_name=None, person=None, anymacy=None, grammatical_number=None, clusivity=None):
         """! @brief Set paradigm.
+        Attributes 'writtenForm' and 'scriptName' are owned by FormRepresentation, wich is owned by WordForm.
         Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
-        @param variant_form The paradigm to set.
+        @param written_form The paradigm to set.
+        @param script_name Script used for the written form.
         @param person Person, e.g. first person.
         @param anymacy Anymacy, e.g. animate or inanimate.
         @param grammatical_number Grammatical number, e.g. singular or plural.
@@ -788,7 +798,7 @@ class LexicalEntry():
         # Find corresponding word form
         for form in self.get_word_forms():
             if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
-                # Add a paradigm as a variant form to an existing word form
+                # Add a paradigm as a written form to an existing word form
                 word_form = form
                 break
         if word_form is None:
@@ -803,25 +813,27 @@ class LexicalEntry():
                 word_form.set_grammaticalNumber(grammatical_number)
             if clusivity is not None:
                 word_form.set_clusivity(clusivity)
-        word_form.set_variant_form(variant_form)
+        word_form.set_written_form(written_form, script_name)
         return self
 
-    def find_paradigms(self, person=None, anymacy=None, grammatical_number=None, clusivity=None):
+    def find_paradigms(self, script_name=None, person=None, anymacy=None, grammatical_number=None, clusivity=None):
         """! @brief Find paradigms.
+        Attribute 'scriptName' is owned by FormRepresentation, wich is owned by WordForm.
         Attributes 'person', 'anymacy', 'grammaticalNumber' and 'clusivity' are owned by WordForm.
-        Attribute 'variantForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm.
+        Attribute 'writtenForm' to retrieve is owned by FormRepresentation, wich is owned by WordForm.
+        @param script_name If this argument is given, get paradigm written form only if written using this script.
         @param person Person, e.g. first person.
         @param anymacy Anymacy, e.g. animate or inanimate.
         @param grammatical_number Grammatical number, e.g. singular or plural.
         @param clusivity Clusivity, e.g. inclusive or exclusive.
-        @return A Python list of FormRepresentation attributes 'variantForm'.
+        @return A Python list of FormRepresentation attributes 'writtenForm'.
         """
-        variant_forms = []
+        written_forms = []
         # Find corresponding word form
         for form in self.get_word_forms():
             if form.get_person() == person and form.get_anymacy() == anymacy and form.get_grammaticalNumber() == grammatical_number and form.get_clusivity() == clusivity:
-                variant_forms += form.get_variant_forms()
-        return variant_forms
+                written_forms += form.get_written_forms(script_name)
+        return written_forms
 
     def set_paradigm_label(self, paradigm_label):
         """! @brief Set paradigm label.
@@ -891,11 +903,12 @@ class LexicalEntry():
                     morphologies.append(paradigm.get_morphology())
         return morphologies
 
-    def create_example(self, written_form, language=None):
-        """! @brief Create a context, add an example and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+    def create_example(self, written_form, language=None, script_name=None):
+        """! @brief Create a context, add an example and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Get the last Sense instance if any
@@ -904,14 +917,15 @@ class LexicalEntry():
         if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        sense.create_example(written_form, language)
+        sense.create_example(written_form, language, script_name)
         return self
 
-    def add_example(self, written_form, language=None):
-        """! @brief Add an example to an existing context and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
+    def add_example(self, written_form, language=None, script_name=None):
+        """! @brief Add an example to an existing context and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return LexicalEntry instance.
         """
         # Get the last Sense instance if any
@@ -920,7 +934,7 @@ class LexicalEntry():
         if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        sense.add_example(written_form, language)
+        sense.add_example(written_form, language, script_name)
         return self
 
     def set_example_comment(self, comment):

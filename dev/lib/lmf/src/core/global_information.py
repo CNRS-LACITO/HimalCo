@@ -14,15 +14,15 @@ class GlobalInformation():
         GlobalInformation instance is owned by LexicalResource.
         @return A GlobalInformation instance.
         """
-        self.languageCode = "ISO-639-3"
+        self.languageCode = None
         self.author = None
-        self.version = "0.1"
+        self.version = None
         self.lastUpdate = None
-        self.license = "GPL"
-        self.characterEncoding = "UTF-8"
-        self.dateCoding = "ISO-8601"
+        self.license = None
+        self.characterEncoding = None
+        self.dateCoding = None
         self.creationDate = None
-        self.projectName = "ANR HimalCo"
+        self.projectName = None
         self.description = None
         self.bibliographicCitation = None
 
@@ -30,6 +30,90 @@ class GlobalInformation():
         """! @brief Destructor.
         """
         pass
+
+    def set_languageCode(self, language_code):
+        """! @brief Set global information language code.
+        @param language_code The language code to use.
+        @return GlobalInformation instance.
+        """
+        self.languageCode = language_code
+        return self
+
+    def get_languageCode(self):
+        """! @brief Get global information language code.
+        @return GlobalInformation attribute 'languageCode'.
+        """
+        return self.languageCode
+
+    def set_version(self, version):
+        """! @brief Set global information version.
+        @param version The version to set.
+        @return GlobalInformation version.
+        """
+        self.version = version
+        return self
+
+    def get_version(self):
+        """! @brief Get global information version.
+        @return GlobalInformation attribute 'version'.
+        """
+        return self.version
+
+    def set_license(self, license):
+        """! @brief Set global information license.
+        @param license The license to set.
+        @return GlobalInformation instance.
+        """
+        self.license = license
+        return self
+
+    def get_license(self):
+        """! @brief Get global information license.
+        @return GlobalInformation attribute 'license'.
+        """
+        return self.license
+
+    def set_characterEncoding(self, character_encoding):
+        """! @brief Set global information character encoding.
+        @param character_encoding The character encoding to use.
+        @return GlobalInformation instance.
+        """
+        self.characterEncoding = character_encoding
+        return self
+
+    def get_characterEncoding(self):
+        """! @brief Get global information character encoding.
+        @return GlobalInformation attribute 'characterEncoding'.
+        """
+        return self.characterEncoding
+
+    def set_dateCoding(self, date_coding):
+        """! @brief Set global information date coding.
+        @param date_coding The date coding to use.
+        @return GlobalInformation instance.
+        """
+        self.dateCoding = date_coding
+        return self
+
+    def get_dateCoding(self):
+        """! @brief Get global information date coding.
+        @return GlobalInformation attribute 'dateCoding'.
+        """
+        return self.dateCoding
+
+    def set_projectName(self, project_name):
+        """! @brief Set global information project name.
+        @param project_name The project name to set.
+        @return GlobalInformation instance.
+        """
+        self.projectName = project_name
+        return self
+
+    def get_projectName(self):
+        """! @brief Get global information project name.
+        @return GlobalInformation attribute 'projectName'.
+        """
+        return self.projectName
 
     def set_creationDate(self, date):
         """! @brief Set global information creation date.

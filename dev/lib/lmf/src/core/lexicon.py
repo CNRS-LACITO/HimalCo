@@ -20,6 +20,7 @@ class Lexicon():
         self.lexiconType = None
         self.entrySource = None
         self.vowelHarmony = None
+        self.localPath = None
         ## All LexicalEntry instances are maintained by Lexicon
         # There is one or more LexicalEntry instances per Lexicon
         self.lexical_entry = []
@@ -124,12 +125,25 @@ class Lexicon():
     def get_vowelHarmony(self):
         raise NotImplementedError
 
+    def set_localPath(self, local_path):
+        """! @brief Set lexicon local path.
+        @param local_path The absolute path to audio files to set.
+        @return Lexicon instance.
+        """
+        self.localPath = local_path
+        return self
+
+    def get_localPath(self):
+        """! @brief Get lexicon local path.
+        @return Lexicon attribute 'localPath'.
+        """
+        return self.localPath
+
     def get_lexical_entries(self):
         """! @brief Get all lexical entries maintained by the lexicon.
         @return A Python set of lexical entries.
         """
-        # Create a set without duplicates
-        return set(self.lexical_entry)
+        return self.lexical_entry
 
     def add_lexical_entry(self, lexical_entry):
         """! @brief Add a lexical entry to the lexicon.
@@ -166,18 +180,28 @@ class Lexicon():
             """Compare 2 elements between each other.
             """
             # Before comparing, remove acute accents from strings if any
-            x = x.replace(u"\u0301", '')
-            y = y.replace(u"\u0301", '')
+            x = x.replace(u"\u0301", '').replace(u"\u0302", '')
+            y = y.replace(u"\u0301", '').replace(u"\u0302", '')
             for i in range(min(len(x), len(y))):
                 try:
-                    if sort_order[x[i]] == sort_order[y[i]]:
-                        continue
-                    # If the 1st one is lower than the 2nd one, its rank is decremented
-                    if sort_order[x[i]] < sort_order[y[i]]:
-                        return -1
-                    # If the 1st one is greater than the 2nd one, its rank is incremented
-                    elif sort_order[x[i]] > sort_order[y[i]]:
-                        return 1
+                    if type(sort_order) is not type(dict()):
+                        if sort_order(x[i]) == sort_order(y[i]):
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order(x[i]) < sort_order(y[i]):
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order(x[i]) > sort_order(y[i]):
+                            return 1
+                    else:
+                        if sort_order[x[i]] == sort_order[y[i]]:
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order[x[i]] < sort_order[y[i]]:
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order[x[i]] > sort_order[y[i]]:
+                            return 1
                 # Handle other characters
                 except KeyError:
                     if options.verbose:
@@ -206,7 +230,10 @@ class Lexicon():
             items_and_entries.sort(cmp=compare, key=lambda l: l[0])
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
-        return sorted_entries
+        # Delete the old list of lexical entries and set the new one
+        del self.lexical_entry[:]
+        self.lexical_entry = sorted_entries
+        return self.lexical_entry
 
     def find_lexical_entries(self, filter):
         """! @brief Find all lexical entries which characteristics meet the given condition.
@@ -224,6 +251,7 @@ class Lexicon():
         Fill the private attribute '__lexicalEntry' of each RelatedForm instance for all lexical entries.
         @return Lexicon instance.
         """
+        import os
         from string import digits
         if self.__checked:
             return self
@@ -249,7 +277,9 @@ class Lexicon():
                         found_entry = found_entry[1:]
                 if len(found_entry) < 1:
                     # No lexical entry with this lexeme exists
-                    print unicode(Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme())))
+                    if os.name == 'posix':
+                        # Following line generates an error on Windows
+                        print unicode(Warning("Lexical entry '%s' does not exist. Please solve this issue by checking the related form of lexical entry '%s'." % (related_lexeme, lexical_entry.get_lexeme())))
                 elif len(found_entry) > 1:
                     # Several lexical entries with this lexeme exist => consider homonym number if any
                     related_homonym = []
@@ -258,7 +288,9 @@ class Lexicon():
                             if related_entry.get_homonymNumber() == related_homonym_number:
                                 related_homonym.append(related_entry)
                     if len(related_homonym) != 1:
-                        print unicode(Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme))
+                        if os.name == 'posix':
+                            # Following line generates an error on Windows
+                            print unicode(Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme))
                     else:
                         # Save the found lexical entry
                         related_form.set_lexical_entry(related_homonym[0])

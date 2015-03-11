@@ -33,7 +33,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIsNone(self.lexical_entry.partOfSpeech)
         self.assertIsNone(self.lexical_entry.independentWord)
         self.assertIsNone(self.lexical_entry.bibliography)
-        self.assertEqual(self.lexical_entry.id, 0)
+        self.assertEqual(self.lexical_entry.id, '0')
         self.assertListEqual(self.lexical_entry.sense, [])
         self.assertIsNone(self.lexical_entry.lemma)
         self.assertListEqual(self.lexical_entry.related_form, [])
@@ -45,6 +45,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
 
     def test_set_partOfSpeech(self):
         part_of_speech = "verb"
+        self.lexical_entry.set_lexeme("action")
         self.assertEqual(self.lexical_entry.set_partOfSpeech(part_of_speech), self.lexical_entry)
         self.assertEqual(self.lexical_entry.partOfSpeech, part_of_speech)
         # Test error case
@@ -219,6 +220,33 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertIs(self.lexical_entry.set_variant_form(form, type), self.lexical_entry)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].variantForm, form)
         self.assertEqual(self.lexical_entry.lemma.form_representation[0].type, type)
+
+    def test_get_phonetic_forms(self):
+        form1 = "form1"
+        form2 = "form2"
+        # There is no Lemma instance
+        self.assertIsNone(self.lexical_entry.get_variant_forms())
+        # Create a Lemma instance
+        self.lexical_entry.lemma = Lemma()
+        # List of FormRepresentation instances is empty
+        self.assertListEqual(self.lexical_entry.get_form_representations(), [])
+        # Create FormRepresentation instances and add them to the list
+        repr1 = FormRepresentation()
+        repr1.variantForm = form1
+        repr1.type = "1"
+        repr2 = FormRepresentation()
+        repr2.variantForm = form2
+        repr2.type = "2"
+        self.lexical_entry.lemma.form_representation = [repr1, repr2]
+        # Test get variant forms
+        self.assertListEqual(self.lexical_entry.get_variant_forms(type="1"), [form1])
+        self.assertListEqual(self.lexical_entry.get_variant_forms(type="2"), [form2])
+        # Delete FormRepresentation instances
+        del self.lexical_entry.lemma.form_representation[:]
+        del repr1, repr2
+        # Delete Lemma instance
+        del self.lexical_entry.lemma
+        self.lexical_entry.lemma = None
 
     def test_set_variant_comment(self):
         comment = "comment"
@@ -790,24 +818,24 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del form1, form2
 
     def test_set_paradigm(self):
-        form = "variant"
+        form = "written"
         self.assertIs(self.lexical_entry.set_paradigm(form), self.lexical_entry)
-        self.assertEqual(self.lexical_entry.word_form[0].form_representation[0].variantForm, form)
+        self.assertEqual(self.lexical_entry.word_form[0].form_representation[0].writtenForm, form)
         # Test with optional arguments
         person = 2
         anymacy = "animate"
         number = "singular"
         clusivity = None
-        self.assertIs(self.lexical_entry.set_paradigm(form, person, anymacy, number, clusivity), self.lexical_entry)
-        self.assertEqual(self.lexical_entry.word_form[1].form_representation[0].variantForm, form)
+        self.assertIs(self.lexical_entry.set_paradigm(form, person=person, anymacy=anymacy, grammatical_number=number, clusivity=clusivity), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.word_form[1].form_representation[0].writtenForm, form)
         self.assertEqual(self.lexical_entry.word_form[1].person, "second person")
         self.assertEqual(self.lexical_entry.word_form[1].anymacy, anymacy)
         self.assertEqual(self.lexical_entry.word_form[1].grammaticalNumber, number)
         self.assertIsNone(self.lexical_entry.word_form[1].clusivity)
         # Test with same arguments and another variant form
         form = "another variant"
-        self.assertIs(self.lexical_entry.set_paradigm(form, "second person", anymacy, number, clusivity), self.lexical_entry)
-        self.assertEqual(self.lexical_entry.word_form[1].form_representation[1].variantForm, form)
+        self.assertIs(self.lexical_entry.set_paradigm(form, person="second person", anymacy=anymacy, grammatical_number=number, clusivity=clusivity), self.lexical_entry)
+        self.assertEqual(self.lexical_entry.word_form[1].form_representation[1].writtenForm, form)
         self.assertEqual(self.lexical_entry.word_form[1].person, "second person")
         self.assertEqual(self.lexical_entry.word_form[1].anymacy, anymacy)
         self.assertEqual(self.lexical_entry.word_form[1].grammaticalNumber, number)
@@ -825,15 +853,15 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertListEqual(self.lexical_entry.word_form[1].get_form_representations(), [])
         # Create FormRepresentation instances and add them to the lists
         repr1 = FormRepresentation()
-        form1 = "variant1"
-        repr1.variantForm = form1
+        form1 = "written1"
+        repr1.writtenForm = form1
         repr2 = FormRepresentation()
-        form2 = "variant2"
-        repr2.variantForm = form2
+        form2 = "written2"
+        repr2.writtenForm = form2
         word1.form_representation = [repr1, repr2]
         repr3 = FormRepresentation()
-        form3 = "variant3"
-        repr3.variantForm = form3
+        form3 = "written3"
+        repr3.writtenForm = form3
         word2.form_representation = [repr3]
         # Test find paradigms
         self.assertListEqual(self.lexical_entry.find_paradigms(), [form1, form2, form3])

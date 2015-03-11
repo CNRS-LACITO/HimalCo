@@ -369,13 +369,11 @@ class Sense():
     def get_etymology(self):
         """! @brief Get etymology.
         This attribute is owned by Statement, which is owned by Definition.
-        @return Statement attribute 'etymology'.
+        @return The first found Statement attribute 'etymology'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get etymology
-        if definition is not None:
-            return definition.get_etymology()
+        for definition in self.get_definitions():
+            if definition.get_etymology() is not None:
+                return definition.get_etymology()
 
     def set_etymology_comment(self, etymology_comment, term_source_language=None):
         """! @brief Set etymology comment and language.
@@ -397,13 +395,11 @@ class Sense():
         """! @brief Get etymology comment.
         This attribute is owned by Statement, which is owned by Definition.
         @param term_source_language The language of the etymology comment to retrieve.
-        @return Statement attribute 'etymologyComment'.
+        @return The first found Statement attribute 'etymologyComment'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get etymology comment
-        if definition is not None:
-            return definition.get_etymology_comment(term_source_language)
+        for definition in self.get_definitions():
+            if definition.get_etymology_comment(term_source_language) is not None:
+                return definition.get_etymology_comment(term_source_language)
 
     def get_term_source_language(self):
         """! @brief Get language used for the etymology comment.
@@ -574,21 +570,23 @@ class Sense():
         if len(self.get_contexts()) >= 1:
             return self.get_contexts()[-1]
 
-    def create_example(self, written_form, language=None):
-        """! @brief Create a Context instance and set its written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+    def create_example(self, written_form, language=None, script_name=None):
+        """! @brief Create a Context instance and set its written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return Sense instance.
         """
-        self.create_and_add_context().set_type("example").set_written_form(written_form, language)
+        self.create_and_add_context().set_type("example").set_written_form(written_form, language, script_name)
         return self
 
-    def add_example(self, written_form, language=None):
-        """! @brief Set written form and language of an existing Context instance.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation, which is owned by Context.
+    def add_example(self, written_form, language=None, script_name=None):
+        """! @brief Set written form, language and script of an existing Context instance.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context.
         @param written_form The written form to set.
         @param language Language used for the written form.
+        @param script_name The name of the script used to write the example, e.g. devanagari.
         @return Sense instance.
         """
         # Get the last Context instance if any
@@ -596,7 +594,7 @@ class Sense():
         # If there is no Context instance, create and add one
         if context is None:
             context = self.create_and_add_context().set_type("example")
-        context.set_written_form(written_form, language)
+        context.set_written_form(written_form, language, script_name)
         return self
 
     def set_example_comment(self, comment):

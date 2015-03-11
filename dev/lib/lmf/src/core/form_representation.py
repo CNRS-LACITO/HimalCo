@@ -17,7 +17,7 @@ class FormRepresentation(Representation):
         FormRepresentation instances are owned by Form.
         @return A FormRepresentation instance.
         """
-        # Initialize Representation attributes: 'comment', 'writtenForm' and 'language'
+        # Initialize Representation attributes: 'comment', 'writtenForm', 'language' and 'scriptName'
         self.__new__()
         self.variantForm = None
         self.type = None
@@ -29,7 +29,6 @@ class FormRepresentation(Representation):
         self.spellingVariant = None
         self.citationForm = None
         self.dialect = None
-        self.scriptName = None
         ## Audio instance is owned by FormRepresentation
         # There is zero or one Audio instance per FormRepresentation
         self.audio = None
@@ -53,6 +52,27 @@ class FormRepresentation(Representation):
         @return FormRepresentation private attribute '__speaker', a Python list of Speaker instances.
         """
         return self.__speaker
+
+    def set_writtenForm(self, written_form, script_name=None):
+        """! @brief Set written form and script.
+        @param written_form The written form to set.
+        @param script_name Script used for the written form.
+        @return FormRepresentation instance.
+        """
+        error_msg = "Written form value '%s' is not allowed" % written_form
+        check_attr_type(written_form, [str, unicode], error_msg)
+        self.writtenForm = written_form
+        if script_name is not None:
+            self.set_scriptName(script_name)
+        return self
+
+    def get_writtenForm(self, script_name=None):
+        """! @brief Get written form.
+        @param script_name If this argument is given, get written form only if written using this script.
+        @return The filtered Representation attribute 'writtenForm'.
+        """
+        if script_name is None or script_name == self.get_scriptName():
+            return self.writtenForm
 
     def set_variantForm(self, variant_form):
         """! @brief Set variant form.
@@ -271,7 +291,7 @@ class FormRepresentation(Representation):
 
     def get_scriptName(self):
         """! @brief Get script name.
-        @return FormRepresentation attribute 'scriptName'.
+        @return Representation attribute 'scriptName'.
         """
         return self.scriptName
 

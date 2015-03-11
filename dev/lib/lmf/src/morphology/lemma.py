@@ -100,6 +100,17 @@ class Lemma(Form):
         form_representation.set_variantForm(variant_form).set_type(type)
         return self
 
+    def get_variant_forms(self, type="unspecified"):
+        """! @brief Get all variant forms of specified type.
+        This attribute is owned by FormRepresentation.
+        @return A Python list of FormRepresentation attributes 'variantForm' if type matches.
+        """
+        variant_forms = []
+        for repr in self.get_form_representations():
+            if repr.get_type() == type and repr.get_variantForm() is not None:
+                variant_forms.append(repr.get_variantForm())
+        return variant_forms
+
     def set_variant_comment(self, comment, language=None):
         """! @brief Set variant comment and language.
         These attributes are owned by FormRepresentation.
@@ -169,16 +180,17 @@ class Lemma(Form):
         form_representation.set_geographicalVariant(geographical_variant)
         return self
 
-    def set_phonetic_form(self, phonetic_form):
+    def set_phonetic_form(self, phonetic_form, script_name=None):
         """! @brief Set phonetic form.
         This attribute is owned by FormRepresentation.
         @param phonetic_form The phonetic form to set.
+        @param script_name The name of the script used to write the phonetic form, e.g. pinyin.
         @return Lemma instance.
         """
         form_representation = None
-        # Set first FormRepresentation instance that has no phonetic form
+        # Set first FormRepresentation instance that has no phonetic form and that uses the same script name
         for repr in self.get_form_representations():
-            if repr.get_phoneticForm() is None:
+            if repr.get_phoneticForm() is None and repr.get_scriptName() == script_name:
                 form_representation = repr
                 break
         if form_representation is None:
@@ -186,16 +198,19 @@ class Lemma(Form):
             form_representation = self.create_form_representation()
             self.add_form_representation(form_representation)
         form_representation.set_phoneticForm(phonetic_form)
+        if script_name is not None:
+            form_representation.set_scriptName(script_name)
         return self
 
-    def get_phonetic_forms(self):
+    def get_phonetic_forms(self, script_name=None):
         """! @brief Get all phonetic forms.
         This attribute is owned by FormRepresentation.
+        @param script_name If provided, get only phonetic forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'phoneticForm'.
         """
         phonetic_forms = []
         for repr in self.get_form_representations():
-            if repr.get_phoneticForm() is not None:
+            if repr.get_phoneticForm() is not None and (script_name is None or repr.get_scriptName() == script_name):
                 phonetic_forms.append(repr.get_phoneticForm())
         return phonetic_forms
 
@@ -259,16 +274,17 @@ class Lemma(Form):
                 spelling_variants.append(repr.get_spellingVariant())
         return spelling_variants
 
-    def set_citation_form(self, citation_form):
+    def set_citation_form(self, citation_form, script_name=None):
         """! @brief Set citation form.
         This attribute is owned by FormRepresentation.
         @param citation_form The citation form to set.
+        @param script_name The name of the script used to write the citation form, e.g. devanagari.
         @return Lemma instance.
         """
         form_representation = None
-        # Set first FormRepresentation instance that has no citation form
+        # Set first FormRepresentation instance that has no citation form and that uses the same script name
         for repr in self.get_form_representations():
-            if repr.get_citationForm() is None:
+            if repr.get_citationForm() is None and repr.get_scriptName() == script_name:
                 form_representation = repr
                 break
         if form_representation is None:
@@ -276,16 +292,19 @@ class Lemma(Form):
             form_representation = self.create_form_representation()
             self.add_form_representation(form_representation)
         form_representation.set_citationForm(citation_form)
+        if script_name is not None:
+            form_representation.set_scriptName(script_name)
         return self
 
-    def get_citation_forms(self):
+    def get_citation_forms(self, script_name=None):
         """! @brief Get all citation forms.
         This attribute is owned by FormRepresentation.
+        @param script_name If provided, get only citation forms that are written using this script.
         @return A Python list of FormRepresentation attributes 'citationForm'.
         """
         citation_forms = []
         for repr in self.get_form_representations():
-            if repr.get_citationForm() is not None:
+            if repr.get_citationForm() is not None and (script_name is None or repr.get_scriptName() == script_name):
                 citation_forms.append(repr.get_citationForm())
         return citation_forms
 

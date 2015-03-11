@@ -9,19 +9,28 @@ from core.lexical_entry import LexicalEntry
 from utils.io import open_read, EOL
 from utils.error_handling import Warning, Error
 
-def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
+def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding='utf8'):
     """! @brief Read an MDF file.
     @param filename The name of the MDF file to read with full path, for instance 'user/input.txt'.
     @param mdf2lmf A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is 'mdf_lmf' dictionary defined in 'src/config/mdf.py'. Please refer to it as an example.
-    @param id A Python string identifying the created lexicon.
+    @param lexicon An existing Lexicon to fill with lexical entries to read.
+    @param id A Python string identifying the lexicon to create.
+    @param encoding Use 'utf-8' encoding by default. Otherwise, user has to precise the native encoding of its document.
     @return A Lexicon instance containing all lexical entries.
     """
     import re
-    mdf_file = open_read(filename, encoding='utf8')
+    # If not provided, create a Lexicon instance to contain all lexical entries
+    if lexicon is None:
+        lexicon = Lexicon(id)
+    # Read in unicode
+    if filename is None:
+        filename = lexicon.get_entrySource()
+    else:
+        # Set lexicon attribute
+        lexicon.set_entrySource(filename)
+    mdf_file = open_read(filename, encoding=encoding)
     # MDF syntax is the following: '\marker value'
     mdf_pattern = """^\\\(\w*) (<(.*)>)? ?(.*)$"""
-    # Create a Lexicon instance to contain all lexical entries
-    lexicon = Lexicon(id)
     # Add each lexical entry to the lexicon
     current_entry = None
     sub_entry = None
@@ -59,7 +68,7 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                             # Create a subentry
                             sub_entry = LexicalEntry(uid)
                             # An MDF subentry corresponds to an LMF lexical entry
-                            sub_entry.set_lexeme(value)
+                            mdf2lmf["lx"](value, sub_entry)
                             # Add it to the lexicon
                             lexicon.add_lexical_entry(sub_entry)
                             # Manage main entry
@@ -94,10 +103,9 @@ def mdf_read(filename, mdf2lmf=mdf_lmf, id=None):
                     current_entry = sub_entry
                     sub_entry = None
             except KeyError:
-                print unicode(Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker, current_entry.get_lexeme())))
+                # When printing, we need to convert 'unicode' into 'str' using 'utf8' encoding:
+                print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker.encode('utf8'), current_entry.get_lexeme().encode('utf8')))
             except Error as exception:
                 exception.handle()
     mdf_file.close()
-    # Set lexicon attribute
-    lexicon.set_entrySource(filename)
     return lexicon

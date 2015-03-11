@@ -1,10 +1,11 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from startup import *
-from output.xml_lmf import xml_lmf_write, build_sub_elements
+from output.xml_lmf import xml_lmf_write, build_sub_elements, add_link, handle_reserved, handle_fv, handle_fn, handle_font, handle_pinyin, handle_caps
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
-from utils.xml_format import Element, SubElement
+from utils.xml_format import Element, SubElement, tostring
 from utils.io import EOL
 
 ## Test XML LMF functions
@@ -68,6 +69,125 @@ class TestXmlLmfFunctions(unittest.TestCase):
         del instance.lemma
         instance.lemma = None
         del instance, element
+
+    def test_add_link(self):
+        from morphology.related_form import RelatedForm
+        input = Element("RelatedForm", targets="lx")
+        form = RelatedForm()
+        form.set_lexical_entry(LexicalEntry(id="lx_id"))
+        # Create output element and sub-elements
+        output = Element("RelatedForm", targets="lx")
+        sub = SubElement(output, "a")
+        sub.attrib["href"] = "lx_id"
+        # Fill in text
+        sub.text = "lx"
+        result = add_link(form, input)
+        self.assertEqual(result[0], form)
+        self.assertEqual(tostring(result[1]), tostring(output))
+
+    def test_handle_reserved(self):
+        pass
+
+    def test_handle_fv(self):
+        value1 = "fv:something here and fv:there"
+        value2 = "|fv{something here} and fv:there"
+        for value in [value1, value2]:
+            input = Element("name", val=unicode(value))
+            # Create output element and sub-elements
+            output = Element("name", val=unicode(value))
+            sub1 = SubElement(output, "span")
+            sub1.attrib["class"] = "vernacular"
+            sub2 = SubElement(output, "span")
+            sub2.attrib["class"] = "vernacular"
+            # Fill in text
+            output.text = ""
+            if value == value1:
+                sub1.text = "something"
+                sub1.tail = " here and "
+            elif value == value2:
+                sub1.text = "something here"
+                sub1.tail = " and "
+            sub2.text = "there"
+            sub2.tail = ""
+            self.assertEqual(tostring(handle_fv(input)), tostring(output))
+
+    def test_handle_fn(self):
+        value1 = "textfn:this fn:but not this"
+        value2 = "textfn:this |fn{and this}"
+        for value in [value1, value2]:
+            input = Element("name", val=unicode(value))
+            # Create output element and sub-elements
+            output = Element("name", val=unicode(value))
+            sub1 = SubElement(output, "span")
+            sub1.attrib["class"] = "national"
+            sub2 = SubElement(output, "span")
+            sub2.attrib["class"] = "national"
+            # Fill in text
+            output.text = "text"
+            sub1.text = "this"
+            sub1.tail = " "
+            if value == value1:
+                sub2.text = "but"
+                sub2.tail = " not this"
+            elif value == value2:
+                sub2.text = "and this"
+                sub2.tail = ""
+            self.assertEqual(tostring(handle_fn(input)), tostring(output))
+
+    def test_handle_font(self):
+        value = "blaA{bla1} blaB {bla2}blaC {bla3}"
+        input = Element("name", val=unicode(value))
+        # Create output element and sub-elements
+        output = Element("name", val=unicode(value))
+        sub1 = SubElement(output, "span")
+        sub1.attrib["class"] = "ipa"
+        sub2 = SubElement(output, "span")
+        sub2.attrib["class"] = "ipa"
+        sub3 = SubElement(output, "span")
+        sub3.attrib["class"] = "ipa"
+        # Fill in text
+        output.text = "blaA"
+        sub1.text = "bla1"
+        sub1.tail = " blaB "
+        sub2.text = "bla2"
+        sub2.tail = "blaC "
+        sub3.text = "bla3"
+        sub3.tail = ""
+        self.assertEqual(tostring(handle_font(input)), tostring(output))
+
+    def test_handle_pinyin(self):
+        value = "@at1 atA@at2 atB"
+        input = Element("name", val=unicode(value))
+        # Create output element and sub-elements
+        output = Element("name", val=unicode(value))
+        sub1 = SubElement(output, "span")
+        sub1.attrib["class"] = "pinyin"
+        sub2 = SubElement(output, "span")
+        sub2.attrib["class"] = "pinyin"
+        # Fill in text
+        output.text = ""
+        sub1.text = "at1"
+        sub1.tail = " atA"
+        sub2.text = "at2"
+        sub2.tail = " atB"
+        self.assertEqual(tostring(handle_pinyin(input)), tostring(output))
+
+    def test_handle_caps(self):
+        value = u"°trucs et°astuces"
+        input = Element("name", val=unicode(value))
+        # Create output element and sub-elements
+        output = Element("name", val=unicode(value))
+        sub1 = SubElement(output, "span")
+        sub1.attrib["class"] = "sc"
+        sub2 = SubElement(output, "span")
+        sub2.attrib["class"] = "sc"
+        # Fill in text
+        output.text = ""
+        sub1.text = "trucs"
+        sub1.tail = " et"
+        sub2.text = "astuces"
+        sub2.tail = ""
+        self.assertEqual(tostring(handle_caps(input)), tostring(output))
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestXmlLmfFunctions)
 

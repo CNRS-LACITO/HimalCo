@@ -9,7 +9,7 @@ partOfSpeech_range = set([
     "affix", # http://www.isocat.org/datcat/DC-1234
     "article", # http://www.isocat.org/datcat/DC-1892
     "auxiliary", #  http://www.isocat.org/datcat/DC-1244
-    "bitransistive verb", # http://www.isocat.org/datcat/DC-1275
+    "bitransitive verb", # http://www.isocat.org/datcat/DC-1275
     "classifier", # http://www.isocat.org/datcat/DC-2345
     "comparative particle", # http://www.isocat.org/datcat/DC-1922
     "conditional particle", # http://www.isocat.org/datcat/DC-2230

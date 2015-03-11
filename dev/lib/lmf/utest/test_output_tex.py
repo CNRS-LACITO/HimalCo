@@ -71,8 +71,8 @@ class TestTexFunctions(unittest.TestCase):
             ]
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{-\ipa{ H h }-} \hspace{1.4ex}" + EOL,
-            "\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
+            "\\section*{- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -} \hspace{1.4ex}" + EOL,
+            #"\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}" + EOL,
             "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
             "\\textit{Status:} draft" + EOL,
@@ -96,12 +96,12 @@ class TestTexFunctions(unittest.TestCase):
                 result += my_lmf_tex[attribute](entry)
             return result
         # Write LaTeX file and test result
-        tex_write(lexical_resource, tex_filename, None, lmf2tex)
+        tex_write(lexical_resource, tex_filename, None, lmf2tex, font)
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{-\ipa{ H h }-} \hspace{1.4ex}" + EOL,
-            "\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
+            "\\section*{- \\vernacular{H} \\vernacular{h} -} \hspace{1.4ex}" + EOL,
+            #"\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
             "Warning: draft version!" + EOL,
@@ -119,36 +119,44 @@ class TestTexFunctions(unittest.TestCase):
         # Remove LaTeX file
         os.remove(tex_filename)
 
-    def test_format_font(self):
-        input = "bla\{bla} bla \{bla}bla {bla}"
-        output = "bla\ipa{bla} bla \ipa{bla}bla {bla}"
-        self.assertEqual(format_font(input), output)
+    def test_handle_font(self):
+        input = "bla{bla} bla {bla}bla {bla}"
+        output = "bla\ipa{bla} bla \ipa{bla}bla \ipa{bla}"
+        self.assertEqual(handle_font(input), output)
 
-    def test_format_fn(self):
+    def test_handle_fi(self):
+        input = "textfi:this fi:but not this"
+        output = "text\\textit{this} \\textit{but} not this"
+        self.assertEqual(handle_fi(input), output)
+        input = "textfi:this |fi{and this}"
+        output = "text\\textit{this} \\textit{and this}"
+        self.assertEqual(handle_fi(input), output)
+
+    def test_handle_fn(self):
         input = "textfn:this fn:but not this"
         output = "text\\national{this} \\national{but} not this"
-        self.assertEqual(format_fn(input, font), output)
+        self.assertEqual(handle_fn(input, font), output)
         input = "textfn:this |fn{and this}"
         output = "text\\national{this} \\national{and this}"
-        self.assertEqual(format_fn(input, font), output)
+        self.assertEqual(handle_fn(input, font), output)
 
-    def test_format_fv(self):
+    def test_handle_fv(self):
         input = "fv:something here and fv:there"
         output = "\\vernacular{something} here and \\vernacular{there}"
-        self.assertEqual(format_fv(input, font), output)
+        self.assertEqual(handle_fv(input, font), output)
         input = "|fv{something here} and fv:there"
         output = "\\vernacular{something here} and \\vernacular{there}"
-        self.assertEqual(format_fv(input, font), output)
+        self.assertEqual(handle_fv(input, font), output)
 
-    def test_format_small_caps(self):
+    def test_handle_caps(self):
         input = u"°trucs et°astuces"
         output = "\\textsc{trucs} et\\textsc{astuces}"
-        self.assertEqual(format_small_caps(input), output)
+        self.assertEqual(handle_caps(input), output)
 
-    def test_format_pinyin(self):
+    def test_handle_pinyin(self):
         input = "@at at@at at"
         output = "\\textcolor{gray}{at} at\\textcolor{gray}{at} at"
-        self.assertEqual(format_pinyin(input), output)
+        self.assertEqual(handle_pinyin(input), output)
 
     def test_format_uid(self):
         entry = LexicalEntry("link_0")
@@ -193,6 +201,7 @@ class TestTexFunctions(unittest.TestCase):
 
     def test_format_part_of_speech(self):
         entry = LexicalEntry()
+        entry.set_lexeme("action")
         entry.set_partOfSpeech("verb")
         expected = "\\textit{v}. "
         self.assertEqual(format_part_of_speech(entry, font), expected)

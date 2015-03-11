@@ -82,15 +82,17 @@ class Context():
         if len(self.get_text_representations()) >= 1:
             return self.get_text_representations()[-1]
 
-    def find_written_forms(self, language=None):
+    def find_written_forms(self, language=None, script_name=None):
         """! @brief Find written forms.
         This attribute is owned by TextRepresentation.
         @param language If given, the language to consider to retrieve the written form.
+        @param script_name If given, the script to consider to retrieve the written form.
         @return A Python list of found TextRepresentation attributes 'writtenForm'.
         """
         found_forms = []
         for repr in self.get_text_representations():
-            if (language is None or repr.get_language() == language) and repr.get_writtenForm() is not None:
+            if (language is None or repr.get_language() == language) and repr.get_writtenForm() is not None \
+                and (script_name is None or repr.get_scriptName() == script_name):
                 found_forms.append(repr.get_writtenForm())
         return found_forms
 
@@ -105,17 +107,20 @@ class Context():
                 found_comments.append(repr.get_comment())
         return found_comments
 
-    def set_written_form(self, written_form, language=None):
-        """! @brief Set text representation written form and language.
-        Attributes 'writtenForm' and 'language' are owned by TextRepresentation.
+    def set_written_form(self, written_form, language=None, script_name=None):
+        """! @brief Set text representation written form, language and script.
+        Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation.
         @param written_form The written form to set.
         @param language Language of the written form.
+        @param script_name The name of the script used to write the form, e.g. devanagari.
         @return Context instance.
         """
         # Create a TextRepresentation instance, set it, and add it to the list
         repr = self.create_text_representation().set_writtenForm(written_form)
         if language is not None:
             repr.set_language(language)
+        if script_name is not None:
+            repr.set_scriptName(script_name)
         self.add_text_representation(repr)
         return self
 

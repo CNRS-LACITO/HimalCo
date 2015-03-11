@@ -1,0 +1,146 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+\title{Evaluation of the ms. `A Web of Relations A grammar of rGyalrong Jiǎomùzú (Kyom-kyo) dialects'} 
+\maketitle 
+\sloppy
+
+ This book is a very important contribution to the documentation of Rgyalrongic languages, and deserves to be published. A very positive aspect of this work is that it is based not only on elicitation, but also on narratives and conversations, and is based on a relatively rich corpus. It is the first grammar of a Rgyalrong language in English, and will therefore become a major reference in both linguistic typology and Sino-Tibetan comparative linguistics.  The dialect described here has never been studied in detail before, and is highly valuable for linguists and local people alike.
+ 
+Since this draft will become a major reference work once it is published, it is preferable, before publication, to correct a certain number of infelicities.
+
+An (easily correctable) problem with this ms. is that the references to the existing literature are very incomplete, and in some cases this has consequences on the the analysis. In the following, I will provide a list of references that must be included in the final version. These references that are either published or are MA/PhD dissertations, but in all cases they are either available from the publisher's website or the respective authors' pages on their university pages or on academia.edu, and there is thus no excuse for not using them.
+
+Important recent work that should be referred to include Daudey's grammar of Pumi (\citealt{daudey14grammar}), Lai's work on Khroskyabs (\citealt{lai13affixale}), Jackson Sun's most recent articles on Tshobdun (\citet{sun12complementation}, \citet{sun14generic}, \citet{jackson07irrealis}, \citet{jackson14morpho}), Jacques's articles on Japhug (in particular \citet{jacques13tropative},\citet{jacques12incorp}, \citet{jacques13harmonization}, \citet{japhug14ideophones}, \citet{jacques14linking}, \citet{jacques14antipassive}), Gong Xun's article (\citealt{gongxun14agreement}) and Lin Youjing's most recent articles (\citealt{lin11direction},  \citealt{linyj12tone}).
+
+Moreover, I strongly advise against using Chinese-based transcriptions for places and language names, especially since `Japhug' and `Tshobdun' are the names used in English by the specialists of these languages, and have been used in general references works (see for instance \citealt{jackson14morpho} or \citealt{jacques13harmonization}), and its is by these names that typologists know about these languages. Using `Chabao' and `Caodeng' instead will cause confusion for typologists using this book. This issue really needs to be corrected for this book to be published, at least for these two languages.
+
+It is somewhat contradictory to use both the Tibetan-based name`rGyalrong' and the Chinese transcription `Jiaomuzu'. I think that `Kyomkyo' (or Kyomukyo) would be better for several reasons. First, it would be more readable for readers unfamiliar with pinyin. Second, the Chinese \zh{脚木足} is actually read `Jiaomujiao' instead of `Jiaomuzu' locally. `Jiaomuzu'  is really an extremely misleading way of referring to this place.
+
+ Finally, there is some work to do to improve the glossing and make it consistent through the whole book. The author should use the Leipzig glossing rules and avoid idiosyncratic notations and unanalyzed forms.
+
+
+ \section{Corrections and additional references}
+Many Kyomkyo verbal forms are not properly analyzed into morphemes. In particular, verbs are generally quoted in their infinitive forms but the infinitive prefixes \ipa{ka-- / kə--} are not separated from the verb stem by a hyphen (the same for derivational prefixes such as the causative, applicative etc). For instance p216 you cannot write \ipa{kəmem} `tasty' without analyzing the nominalization prefix \ipa{kə--}. It is important to help readers to properly parse the forms.
+
+Specific points:
+\begin{itemize}
+\item Indicate how `tusi' are called in Kyomkyo.
+\item p7, Most specialists do not consider `Rgyalrong' to be a  language', but rather a group of at least four languages (Japhug, Zbu, Tshobdun and Situ) (see for instance \citealt[195]{jacques13harmonization})
+\item p7, \citet{jacques.michaud11naish} propose a different subgrouping hypothesis, Burmo-Qiangic, which is also developed in \citet{jacques14esquisse}.
+\item p9 The name `Lavrung' is now abandoned by specialists of this language (Lai Yunfan and his local collaborator Rig'dus Lhamo) in favour of the traditional term for this region, Khroskyabs (see for instance \citealt{delancey14second}, \citealt{jacques14inverse}). Please adopt it too (`Lavrung' is based on a misunderstanding on the part of Huang Bufan).
+\item p10, the preservation of uvular in Zbu, Tshobdun and Japhug is really not the most important isogloss defining those languages (the verbal morphology provides many more useful criteria, in particular stem alternation, second person markers, the slot insertion of associated motion prefixes etc).
+\item I am surprised to see that jiehun is borrowed with a voiced stop. In my experience Sichuan Chinese unaspirated stops/affricates are borrowed as unvoiced, not as voiced obstruents, at least word-initially.
+\item pp 43-8 on tones, see \citet{linyj12tone}, who presents a very different analysis of the Situ tone system. See also \citet{jackson05yingao.zh}.
+\item p86(+p88) ``rGyalrong is a head marking language" > Rgyalrong languages are strongly head marking (there is more than one Rgyalrong language; the intercomprehension between even `northern Rgyalrong' languages like Japhug and Zbu is near zero).
+\item The chart should not be a scanned drawing. 
+\item p132.  Concerning \ipa{kʰəna}, we have good evidence indeed that the \ipa{kʰə--} is unrelated to the `mammal prefix' found in other nouns. In Japhug, its cognate \ipa{kʰɯna} has an irregular \textit{status constructus} form \ipa{kʰɯ--}, found for instance in the compound \ipa{kʰɯtsʰoʁ} `hunting with dogs'  and the incorporating verb \ipa{ɣɯkʰɯtsʰoʁ} `to turn the dogs loose on' (\citealt[1214, 1223]{jacques12incorp}).
+\item p184 `Traditionally rGyalrong also divided the day into set periods of hours, with a name for each period, still mentioned by some of the texts in the Collection Āwàng' > since most readers will not be able to easily use the Old Rgyalrong texts, the author would do a favour to the readers by providing the ancient forms, even if this is not strictly relevant to the description of modern Kymkyo.
+\item pp 210, On the ergative: in Japhug, the ergative is really obligatory with overt third person agents, unlike in Kyomkyo. Also, the ergative can be used with the sole argument of intransitive verbs, but in this case it implies the meaning `more than' (\citet[202]{jacques12demotion}); it is used in the comparative construction. I think that Rgyalrong languages differ considerably of in their use of the ergative, although it may be superficially similar.
+\item pp 250-7, on expressives/ideophones, see also \citet{japhug14ideophones} and \citet{jackson14morpho}. It would be useful to make a table with all possible ideophonic patterns, with comparisons to Japhug and Tshobdun. Can ideophones occur postverbally in Kyomkyo, as they do in Japhug sometimes (\citealt[275]{japhug14ideophones})?
+\item p260, Why is the sensory evidential \ipa{nə́--} instead of \ipa{ná--} here?
+\item pp 267, on conjunctions vs relator nouns vs postpositions used in clause linking, see also \citet{jacques14linking}
+\item p302-314, the term `root' is not appropriate here, `stem' should be used instead (to be changed through the whole book). `Root' should be used only for underlying etymological forms from which stems can be derived. This is an important terminological issue, and this change must be implemented.
+\item p311, In order to avoid potential misunderstandings, it is important to specify that stem 3 in the author's sense differs from stem 3 in other authors' work (\citealt{jackson00sidaba}, \citealt{jacques04these}, \citealt{gongxun14agreement}).
+\item p304, on the discussion of the verbal template, see also \citet[197-199]{jacques13harmonization}, \citet[12]{jacques14antipassive} and \citet{lai13affixale}. Does the verbal morphology of Kyomkyo present templatic features?
+\item Concerning the second person prefix in historical perspective, see the more recent work by \citet{jacques12agreement} and \citet{delancey14second}.
+\item The tables in general, and p334-8 in particular, must be reorganized following the general system used for polypersonal paradigms (see \citet{gongxun14agreement}, \citet{jacques14inverse} for examples of how to do it)
+\item These are not compounds. A more correct term would be `complex predicates' with light verbs. NB there are compound verbs in Rgyalrong languages, see \citet{jacques12incorp}, but this is not the same phenomenon).
+\item pp 344+, on inverse marking see also \citet{gongxun14agreement}, \citet{jacques14inverse}, \citet{jacques14rtau} and \citet{lai14person}
+\item ``In fact, a structure with third person observation marker na- as well as inverse marker wu- is not
+grammatical:" this is strange, such phenomenon has never been mentioned previously. Maybe develop. Note that in Japhug the inverse prefix is \ipa{wɣɯ--}, not \ipa{wu--}.
+\item pp 398 what the author refers to as `viewpoint markers' (\ipa{ʃi--} and \ipa{və--}) have been described as associated motion markers in the literature (\citealt{jacques13harmonization}). The author needs to take into consideration this article and evaluate to what extent the cognate markers \ipa{ɕɯ--} and \ipa{ɣɯ--} in Japhug differ or work in the same way as the \ipa{ʃi--} and \ipa{və--} prefixes in Kyomkyo. The author is free to keep the term `viewpoint markers', but he/she must address  the question whether a distinct analysis would not be preferable. Also, a comparison with the motion verb constructions, in the lines of \citet[203]{jacques13harmonization}, seems necessary (these are mentioned later in the ms, p541).
+\item p398 \ipa{nənɟo məto-tə-laʔt-n me}: I am puzzled by \ipa{məto-tə-laʔt-n}, shouldn't we have \ipa{məto-tə-laʔt-w}, instead, since this is a transitive verb? And in any case, the \textsc{2sg} \ipa{--n} is never realized after a stop.
+\item p406 I would advise against `observational', a more standard term is `testimonial' (\citealt{hill13hdug}) or `sensory' (\citealt{tournadre14evidentiality})
+\item p410 Concerning `mirativity', see \citet{hill13hdug} and \citealt{tournadre14evidentiality}.
+\item The chapter on verb derivations requires some rewriting:
+\begin{itemize}
+\item p433 On the applicative, see \citet{jacques13tropative} and \citet{jackson14morpho}. An interesting point, judging from the data in the ms, is that the applicative prefix in Kyomkyo seems much more widespread and productive than in Japhug. 
+\item p433 delete the pair ``\ipa{kaməsem} listen, understand \ipa{karəkna} hear" from your table.
+\item  p433 The term `anticausative' should appear here (see \citealt{jacques12demotion}). Although there is indeed non-volitionality in some cases, the crucial thing here is that the verbs on the second column are intransitive, while those on the first column are transitive. Also, please note that some anticausative verbs, when employed with a human/animal S, can be volitional (for instance in Japhug \ipa{mbɣaʁ} \zh{打滚}  can be used to refer to a dog that does it on purpose to play).
+\item p437 see \citet{jacques10refl}
+\item p447 see \citet{jacques07passif}, \citet{jacques12demotion} and \citet{jackson14morpho}; 
+\item p454 The  term `antipassive' should appear here (see \citealt{jacques12demotion}, \citet{jacques14antipassive} and \citet{jackson14morpho}), and it should be described a a distinct voice.
+\item Incorporation (\citealt{jacques12incorp}) is not described, though it certainly exists in Situ (see for instance the cognate of Japhug \ipa{nɯrɟɯrŋom} `covet riches', that is attested in Cogtse and Bragdbar). 
+\item The tropative derivation certainly exists in Kyomkyo, but is not mentioned (see \citealt{jacques13tropative}, for instance the cognate of Japhug \ipa{nɤ-mpɕɤr} `to find beautiful').
+\item The deexperiencer derivation is not described in this section, though some examples appear scattered in the ms, misanalyzed as `causatives' (see \citealt{jacques12demotion}, \citet{jackson14morpho})
+\item Something should be said of denominal verbs in the `derivation' section (see \citealt{jacques14antipassive} and \citealt{jacques13tropative})
+\end{itemize}
+\item  p469-470 conditional should not be treated in the section on modality; rather, it should appear in chapter 8 on `complex sentences'). See \citet{jackson07irrealis} and \citet[295-303]{jacques14linking}
+\item p470 Concerning indirect speech, see \citet[344-346]{jacques08zh} and \citet[310-311]{jacques14linking}
+\item ``\ipa{stʃi}, which conveys a condescending sense of ‘be’": I am not sure `condescending' is a correct description of the difference between \ipa{stʃi} and \ipa{ŋos,}).
+\item p534, on complement clauses, see \citet[3337-353]{jacques08zh}  and \citet{sun12complementation}.
+\item pp543+, on purposive/manner clauses, see \citet{jacques14linking} for a comparison in Japhug. The term `converb' does not appear in this section; 
+\end{itemize}
+ 
+
+ 
+ 
+\section{Typos and typesetting issues}
+general remarks:
+\begin{itemize}
+\item The crossreferences are not working (only question marks or dots ... are visible).
+\item The tables in the ms generally lack proper titles and are treated like example sentences (see for instance the possessive paradigm p161). All Tables should be reformatted with a caption ``Table XX: <title>", and with toprules and bottomrules. There are hundreds of tables like this.
+\item  nominalization' should be glossed as \textsc{nmlz}, not \textsc{nom} (which is the standard gloss for `nominative').
+
+\item use \ipa{ɲ} rather than \ipa{nj} or \ipa{jn}.
+\item I would suggest to include the Chinese characters for person and placenames in the body of the text rather than in footnote (it is distracting to the reader).
+ \item Transcribing the verbs in their underlying form is useful, but sometimes it could also be helpful to the reader to have the surface realization, at least in the sections on morphology.
+ \item Stress should be marked with an acute accent on the vowel rather than with the IPA symbol, which is really distracting (especially for the sensory evidential \ipa{ná--}).
+ \item for reduplication, use the Leipzig glossing rules convention \textasciitilde{}, thus for instance (from p445):
+\begin{exe}
+\ex  
+\gll \ipa{ná-ŋa-sa\textasciitilde{}sat-ɲ} \\
+\textsc{sens-recip}-\textsc{recip}\textasciitilde{}kill-\textsc{pl} \\
+\glt  They are killing each other. 
+\end{exe} 
+\end{itemize} 
+ specific:
+\begin{enumerate}
+\item p xi Ubniversity > university
+\item  p157 ``A-myis Sgo-ldung dealt him a blow with the iron hammer. " > put the translation after the second line ``to-leʔt-jn"
+\item p261 \ipa{kawʂə} unaspirated stop?
+\item p342 \ipa{to-najo-n}, the gloss 3/2-wait-1s should be changed to  \textsc{2:inv}-wait-\textsc{2sg}
+\item p460 caustivity > causativity
+\item p551 Why spelling A-myis rather  than A-myes?
+\end{enumerate}  
+  
+  
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}

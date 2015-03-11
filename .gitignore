@@ -3,6 +3,7 @@
 #################
 
 # Audio files
+*.mp3
 *.wav
 
 # LaTeX generated files
@@ -28,6 +29,19 @@ dict/*/toolbox/Settings/Text.typ
 dict/*/toolbox/Settings/MDF.typ
 dict/*/toolbox/Backup\ of\ Dictionary.txt
 dict/*/toolbox/Backup\ of\ Texts.txt
+
+# Python generated files
+dev/lib/lmf/utest/*.txt
+dev/lib/lmf/ftest/*/obj/
+dev/lib/lmf/user/*/result/
+
+# Perl generated files
+dev/scripts/khaling/dictionary/Dictionary.txt
+dev/scripts/khaling/dictionary/dico-khaling.txt
+corpus/koyi/ITE\ files/*_ok
+
+# Input files
+dev/scripts/tools/filename/ipa/
 
 #################
 ## Eclipse
@@ -244,3 +258,8 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.pdf
+dev/lib/lmf/user/guillaume/Dictionary.tex
+dev/lib/lmf/user/guillaume/test.tex
+dev/lib/lmf/user/guillaume/test_output.txt
+dev/lib/lmf/user/guillaume/Dictionary.txt

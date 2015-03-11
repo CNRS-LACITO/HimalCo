@@ -68,10 +68,121 @@ class LexicalResource():
             if lexicon.id == id:
                 return lexicon
 
-    def set_creationDate(self, date):
+    def set_dtdVersion(self, dtd_version):
+        """! @brief Set DTD version.
+        @param dtd_version The DTD version to use.
+        @return LexicalResource instance.
+        """
+        self.dtdVersion = dtd_version
+        return self
+
+    def get_dtdVersion(self):
+        """! @brief Get DTD version.
+        @return LexicalResource attribute 'dtdVersion'.
+        """
+        return self.dtdVersion
+
+    def set_language_code(self, language_code):
+        """! @brief Set language code.
+        Attribute 'languageCode' is owned by GlobalInformation.
+        @param language_code The language code to use.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_languageCode(language_code)
+        return self
+
+    def get_language_code(self):
+        """! @brief Get language code.
+        Attribute 'languageCode' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'languageCode'.
+        """
+        return self.global_information.get_languageCode()
+
+    def set_version(self, version):
+        """! @brief Set version.
+        Attribute 'version' is owned by GlobalInformation.
+        @param version The version to set.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_version(version)
+        return self
+
+    def get_version(self):
+        """! @brief Get version.
+        Attribute 'version' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'version'.
+        """
+        return self.global_information.get_version()
+
+    def set_license(self, license):
+        """! @brief Set license.
+        Attribute 'license' is owned by GlobalInformation.
+        @param license The license to set.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_license(license)
+        return self
+
+    def get_license(self):
+        """! @brief Get license.
+        Attribute 'license' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'license'.
+        """
+        return self.global_information.get_license()
+
+    def set_character_encoding(self, character_encoding):
+        """! @brief Set character encoding.
+        Attribute 'characterEncoding' is owned by GlobalInformation.
+        @param character_encoding The character encoding to use.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_characterEncoding(character_encoding)
+        return self
+
+    def get_character_encoding(self):
+        """! @brief Get character encoding.
+        Attribute 'characterEncoding' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'characterEncoding'.
+        """
+        return self.global_information.get_characterEncoding()
+
+    def set_date_coding(self, date_coding):
+        """! @brief Set date coding.
+        Attribute 'dateCoding' is owned by GlobalInformation.
+        @param date_coding The date coding to use.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_dateCoding(date_coding)
+        return self
+
+    def get_date_coding(self):
+        """! @brief Get date coding.
+        Attribute 'dateCoding' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'dateCoding'.
+        """
+        return self.global_information.get_dateCoding()
+
+    def set_project_name(self, project_name):
+        """! @brief Set project name.
+        Attribute 'projectName' is owned by GlobalInformation.
+        @param project_name The project's name to set.
+        @return LexicalResource instance.
+        """
+        self.global_information.set_projectName(project_name)
+        return self
+
+    def get_project_name(self):
+        """! @brief Get project name.
+        Attribute 'projectName' is owned by GlobalInformation.
+        @return GlobalInformation attribute 'projectName'.
+        """
+        return self.global_information.get_projectName()
+
+    def set_creation_date(self, date):
         """! @brief Set creation date.
         Attribute 'creationDate' is owned by GlobalInformation.
         @param date The date to set, in format YYYY-MM-DD.
+        @return LexicalResource instance.
         """
         try:
             self.global_information.set_creationDate(date)
@@ -79,17 +190,18 @@ class LexicalResource():
         except Error as exception:
             exception.handle()
 
-    def get_creationDate(self):
+    def get_creation_date(self):
         """! @brief Get creation date.
         Attribute 'creationDate' is owned by GlobalInformation.
         @return GlobalInformation attribute 'creationdDate'.
         """
         return self.global_information.get_creationDate()
 
-    def set_lastUpdate(self, date):
+    def set_last_update(self, date):
         """! @brief Set last update.
         Attribute 'lastUpdate' is owned by GlobalInformation.
         @param date The date to set, in format YYYY-MM-DD.
+        @return LexicalResource instance.
         """
         try:
             self.global_information.set_lastUpdate(date)
@@ -97,7 +209,7 @@ class LexicalResource():
         except Error as exception:
             exception.handle()
 
-    def get_lastUpdate(self):
+    def get_last_update(self):
         """! @brief Get last update.
         Attribute 'lastUpdate' is owned by GlobalInformation.
         @return GlobalInformation attribute 'lastUpdate'.
@@ -108,6 +220,7 @@ class LexicalResource():
         """! @brief Set author.
         Attribute 'author' is owned by GlobalInformation.
         @param author The author's name to set.
+        @return LexicalResource instance.
         """
         self.global_information.set_author(author)
         return self
@@ -123,6 +236,7 @@ class LexicalResource():
         """! @brief Set description.
         Attribute 'description' is owned by GlobalInformation.
         @param description The description to set.
+        @return LexicalResource instance.
         """
         self.global_information.set_description(description)
         return self
@@ -134,7 +248,7 @@ class LexicalResource():
         """
         return self.global_information.get_description()
 
-    def get_bibliographicCitation(self):
+    def get_bibliographic_citation(self):
         """! @brief Get bibliographic citation.
         Attribute 'bibliographicCitation' is owned by GlobalInformation.
         @return GlobalInformation attribute 'bibliographicCitation'.

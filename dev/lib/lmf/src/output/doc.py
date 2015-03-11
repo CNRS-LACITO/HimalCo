@@ -1,7 +1,8 @@
 #! /usr/bin/env python
 
-from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
+from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.error_handling import OutputError
+from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
 from docx import Document
 from docx.shared import Inches

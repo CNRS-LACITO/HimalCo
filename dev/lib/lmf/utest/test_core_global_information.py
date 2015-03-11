@@ -17,17 +17,65 @@ class TestGlobalInformationFunctions(unittest.TestCase):
         del self.global_information
 
     def test_init(self):
-        self.assertEqual(self.global_information.languageCode, "ISO-639-3")
+        self.assertIsNone(self.global_information.languageCode)
         self.assertIsNone(self.global_information.author)
-        self.assertEqual(self.global_information.version, "0.1")
+        self.assertIsNone(self.global_information.version)
         self.assertIsNone(self.global_information.lastUpdate)
-        self.assertEqual(self.global_information.license, "GPL")
-        self.assertEqual(self.global_information.characterEncoding, "UTF-8")
-        self.assertEqual(self.global_information.dateCoding, "ISO-8601")
+        self.assertIsNone(self.global_information.license)
+        self.assertIsNone(self.global_information.characterEncoding)
+        self.assertIsNone(self.global_information.dateCoding)
         self.assertIsNone(self.global_information.creationDate)
-        self.assertEqual(self.global_information.projectName, "ANR HimalCo")
+        self.assertIsNone(self.global_information.projectName)
         self.assertIsNone(self.global_information.description)
         self.assertIsNone(self.global_information.bibliographicCitation)
+
+    def test_set_languageCode(self):
+        code = "iso"
+        self.assertEqual(self.global_information.set_languageCode(code), self.global_information)
+        self.assertEqual(self.global_information.languageCode, code)
+
+    def test_get_languageCode(self):
+        self.assertIs(self.global_information.get_languageCode(), self.global_information.languageCode)
+
+    def test_set_version(self):
+        version = "0"
+        self.assertEqual(self.global_information.set_version(version), self.global_information)
+        self.assertEqual(self.global_information.version, version)
+
+    def test_get_version(self):
+        self.assertIs(self.global_information.get_version(), self.global_information.version)
+
+    def test_set_license(self):
+        license = "free"
+        self.assertEqual(self.global_information.set_license(license), self.global_information)
+        self.assertEqual(self.global_information.license, license)
+
+    def test_get_license(self):
+        self.assertIs(self.global_information.get_license(), self.global_information.license)
+
+    def test_set_characterEncoding(self):
+        coding = "iso"
+        self.assertEqual(self.global_information.set_characterEncoding(coding), self.global_information)
+        self.assertEqual(self.global_information.characterEncoding, coding)
+
+    def test_get_characterEncoding(self):
+        self.assertIs(self.global_information.get_characterEncoding(), self.global_information.characterEncoding)
+
+    def test_set_dateCoding(self):
+        coding = "iso"
+        self.assertEqual(self.global_information.set_dateCoding(coding), self.global_information)
+        self.assertEqual(self.global_information.dateCoding, coding)
+
+    def test_get_dateCoding(self):
+        self.assertIs(self.global_information.get_dateCoding(), self.global_information.dateCoding)
+
+    def test_set_projectName(self):
+        name = "project"
+        self.assertEqual(self.global_information.set_projectName(name), self.global_information)
+        self.assertEqual(self.global_information.projectName, name)
+
+    def test_get_projectName(self):
+        self.assertIs(self.global_information.get_projectName(), self.global_information.projectName)
 
     def test_set_creationDate(self):
         date = "2014-10-08"

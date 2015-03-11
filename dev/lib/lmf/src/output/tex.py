@@ -1,10 +1,14 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.tex import lmf_to_tex, tex_font, partOfSpeech_tex
-from config.mdf import VERNACULAR, ENGLISH, NATIONAL, REGIONAL, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
+from config.tex import lmf_to_tex, partOfSpeech_tex
+from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import open_read, open_write, EOL
 from utils.error_handling import OutputError, Warning
+from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
+
+# To define languages and fonts
+import config
 
 def compute_header(preamble):
     """! @brief Create LaTeX header.
@@ -18,17 +22,21 @@ def compute_header(preamble):
         hdr.close()
     return header
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
     """! @brief Write a LaTeX file.
+    Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
     @param filename The name of the LaTeX file to write with full path, for instance 'user/output.tex'.
     @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'. Deafult value is None.
     @param lmf2tex A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order. Default value is 'lmf_to_tex' function defined in 'src/config/tex.py'. Please refer to it as an example.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
-    @param sort_order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
+    @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
     """
     import string
+    # Define font
+    if font is None:
+        font = config.xml.font
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(compute_header(preamble))
@@ -47,21 +55,26 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
             current_character = ''
-            sorted_entries = lexicon.sort_lexical_entries(items=items, sort_order=sort_order)
-            for lexical_entry in sorted_entries:
+            # Lexicon is already ordered
+            for lexical_entry in lexicon.get_lexical_entries():
                 # Consider only main entries (subentries will be written as parts of the main entry)
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
                     try:
-                        if int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character]): # TODO: do not consider special characters
+                        if ( (type(sort_order) is not type(dict())) and ((current_character == '') or (sort_order(items(lexical_entry)[0]) != sort_order(current_character))) ) \
+                            or ( (type(sort_order) is type(dict())) and (int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character])) ):
+                            # TODO: do not consider special characters
                             current_character = items(lexical_entry)[0]
                             tex_file.write("\\newpage" + EOL)
                             title = ''
-                            for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
-                                if int(value) == int(sort_order[current_character]):
-                                    title += ' ' + key
-                            tex_file.write("\\section*{-\ipa{" + title + " }-} \hspace{1.4ex}" + EOL)
-                            tex_file.write("\\pdfbookmark[1]{\ipa{" + title + " }}{" + title + " }" + EOL)
+                            if type(sort_order) is not type(dict()):
+                                title += ' ' + font[NATIONAL](current_character)
+                            else:
+                                for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
+                                    if int(value) == int(sort_order[current_character]):
+                                        title += ' ' + font[VERNACULAR](key)
+                            tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
+                            #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)
@@ -82,26 +95,49 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=tex_font
     tex_file.write("\end{document}" + EOL)
     tex_file.close()
 
-## Functions to process LaTeX fields (output)
+## Functions to process LaTeX layout
 
-def format_font(text):
-    """Replace '\{xxx}' by '\ipa{xxx}'.
-    """
-    return text.replace("\\{", "\\ipa{")
-
-def format_fn(text, font):
-    """Replace 'fn:xxx' and '|fn{xxx}' by font[NATIONAL](xxx).
+def handle_font(text):
+    """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
     """
     import re
-    if text.find("fn:") != -1:
-        pattern = r"(\w*)fn:([^\s\.,)]*)(\w*)"
-        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
-    if text.find("|fn{") != -1:
-        pattern = r"(\w*)\|fn{([^}]*)}(\w*)"
-        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    pattern = r"([^\\]*){([^}]*)}(.*)"
+    while re.match(pattern, text):
+        text = re.sub(pattern, r"\1" + r"\\ipa{" + r"\2" + "}" + r"\3", text)
     return text
 
-def format_fv(text, font):
+def handle_reserved(text):
+    """ Handle reserved characters: \ { } $ # & _ ^ ~ % [ ].
+    """
+    if text.find("$") != -1:
+        text = text.replace('$', '')
+    if text.find("#") != -1:
+        text = text.replace('#', '\#')
+    if text.find("& ") != -1:
+        text = text.replace('& ', '\& ')
+    if text.find("_") != -1:
+        text = text.replace('_', '\_').replace("\string\_", "\string_")
+    if text.find("^") != -1:
+        text = text.replace('^', '\^')
+    #if text.find("[") != -1:
+        #text = text.replace('[', '\[')
+    #if text.find("]") != -1:
+        #text = text.replace(']', '\]')
+    return text
+
+def handle_fi(text):
+    """Replace 'fi:xxx' and '|fi{xxx}' by \\textit{xxx}.
+        """
+    import re
+    if text.find("fi:") != -1:
+        pattern = r"(\w*)fi:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"\\textit{" + r"\2" + "}" + r"\3", text)
+    if text.find("|fi{") != -1:
+        pattern = r"(\w*)\|fi{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"\\textit{" + r"\2" + "}" + r"\3", text)
+    return text
+
+def handle_fv(text, font):
     """Replace 'fv:xxx' and '|fv{xxx}' by font[VERNACULAR](xxx).
     """
     import re
@@ -114,17 +150,37 @@ def format_fv(text, font):
         text = re.sub(pattern, r"\1" + r"%s" % font[VERNACULAR](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
     return text
 
-def format_small_caps(text):
-    """Replace '°xxx' by '\textsc{xxx}' in translated examples.
+def handle_fn(text, font):
+    """Replace 'fn:xxx' and '|fn{xxx}' by font[NATIONAL](xxx).
     """
     import re
-    return re.sub(r"(\w*)°([^\s\.,)+/:]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+    if text.find("fn:") != -1:
+        pattern = r"(\w*)fn:([^\s\.,)]*)(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    if text.find("|fn{") != -1:
+        pattern = r"(\w*)\|fn{([^}]*)}(\w*)"
+        text = re.sub(pattern, r"\1" + r"%s" % font[NATIONAL](r"\2").replace('\\', r'\\').replace(r'\\2', r"\2") + r"\3", text)
+    return text
 
-def format_pinyin(text):
+def handle_pinyin(text):
     """Replace '@xxx' by '\\textcolor{gray}{xxx}' in 'lx', 'dv', 'xv' fields (already in API).
+        """
+    import re
+    if text.find("@") != -1:
+        text = re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
+    return text
+
+def handle_caps(text):
+    """Handle small caps.
+    Replace '°xxx' by '\textsc{xxx}' in translated examples.
     """
     import re
-    return re.sub(r"(\w*)@(\w*)", r"\1" + r"\\textcolor{gray}{" + r"\2" + "}", text)
+    if text.encode("utf8").find("°") != -1:
+        # LaTeX does not support '#' character inside '\mytextsc' command
+        text = re.sub(r"(\w*)°([^\s\.,)+/:\#]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+    return text
+
+## Functions to process LaTeX fields (output)
 
 def format_uid(lexical_entry, font):
     """! @brief Transform unique identifier of a lexical entry in ASCII format.
@@ -176,6 +232,7 @@ def format_audio(lexical_entry, font):
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string embedding sound in LaTeX format.
     """
+    import os
     from os.path import basename, isfile
     # To access options
     from lmf import options
@@ -187,10 +244,13 @@ def format_audio(lexical_entry, font):
         if form_representation.get_audio() is not None:
             # Embed local sound file
             # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
-            # To include audio file in PDF, replace WAV extension by MP3 extension
+            # To include audio file in PDF, replace WAV extension by MP3 extension and search in MP3 folder
             file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
-            if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')):
-                print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
+            if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')) \
+                and not isfile(form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3").replace("file://", '')):
+                if os.name == 'posix':
+                    # Following line generates an error on Windows
+                    print unicode(Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name, lexical_entry.get_lexeme())))
                 return result
             file_name = file_name.replace('_', '\string_').replace('-', '\string-')
             result += "\includemedia[" + EOL +\
@@ -223,7 +283,7 @@ def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
             print unicode(Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech(), lexical_entry.get_lexeme())))
     return result
 
-def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
+def format_definitions(lexical_entry, font, languages=None):
     """! @brief Glosses are supplanted by definitions.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
@@ -231,33 +291,35 @@ def format_definitions(lexical_entry, font, languages=[VERNACULAR, ENGLISH, NATI
     @return A string representing glosses and definitions in LaTeX format.
     """
     result = ""
+    if languages is None:
+        languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
     for sense in lexical_entry.get_senses():
         for language in languages:
             if len(sense.find_definitions(language)) != 0:
                 for definition in sense.find_definitions(language):
-                    if language == VERNACULAR:
+                    if language == config.xml.vernacular:
                         result += font[VERNACULAR](definition) + ". "
-                    elif language == NATIONAL:
-                        result += font[NATIONAL](definition) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.national:
+                        result += font[NATIONAL](handle_font(definition)) + ". "
+                    elif language == config.xml.regional:
                         result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
                     else:
                         result += definition + ". "
             elif len(sense.find_glosses(language)) != 0:
                 for gloss in sense.find_glosses(language):
-                    if language == VERNACULAR:
+                    if language == config.xml.vernacular:
                         result += font[VERNACULAR](gloss) + ". "
-                    elif language == NATIONAL:
-                        result += font[NATIONAL](gloss) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.national:
+                        result += font[NATIONAL](handle_font(gloss)) + ". "
+                    elif language == config.xml.regional:
                         result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
                     else:
                         result += gloss + ". "
             if len(sense.get_translations(language)) != 0:
                 for translation in sense.get_translations(language):
-                    if language == NATIONAL:
+                    if language == config.xml.national:
                         result += font[NATIONAL](translation) + ". "
-                    elif language == REGIONAL:
+                    elif language == config.xml.regional:
                         result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
                     else:
                         result += translation + ". "
@@ -290,25 +352,32 @@ def format_rf(lexical_entry, font):
     # return "\\textit{Ref:} " + lexical_entry.get_rf() + " "
     return ""
 
-def format_examples(lexical_entry, font):
+def format_examples(lexical_entry, font, languages=None):
     """! @brief Display examples in LaTeX format.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
+    @param languages A list of languages to consider for examples (all by default).
     @return A string representing examples in LaTeX format.
     """
     result = ""
+    if languages is None:
+        languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
     for sense in lexical_entry.get_senses():
         for context in sense.get_contexts():
-            result += "\\begin{exe}" + EOL
-            for example in context.find_written_forms(VERNACULAR):
-                result += "\\sn " + font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(ENGLISH):
-                result += "\\trans " + example + EOL
-            for example in context.find_written_forms(NATIONAL):
-                result += "\\trans \\textit{" + font[NATIONAL](example) + "}" + EOL
-            for example in context.find_written_forms(REGIONAL):
-                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
-            result += "\\end{exe}" + EOL
+            tmp = ""
+            for language in languages:
+                for example in context.find_written_forms(language):
+                    if language == config.xml.vernacular:
+                        tmp += "\\sn " + font[VERNACULAR](example) + EOL
+                    elif language == config.xml.English:
+                        tmp += "\\trans " + example + EOL
+                    elif language == config.xml.national:
+                        tmp += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
+                    elif language == config.xml.regional:
+                        tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+            # LaTeX does not support empty examples
+            if len(tmp) != 0:
+                result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL
     return result
 
 def format_usage_notes(lexical_entry, font):
@@ -319,13 +388,13 @@ def format_usage_notes(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for usage in sense.find_usage_notes(language=VERNACULAR):
+        for usage in sense.find_usage_notes(language=config.xml.vernacular):
             result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
-        for usage in sense.find_usage_notes(language=ENGLISH):
+        for usage in sense.find_usage_notes(language=config.xml.English):
             result += "\\textit{Usage:} " + usage + " "
-        for usage in sense.find_usage_notes(language=NATIONAL):
-            result += "\\textit{" + font[NATIONAL](usage) + "} "
-        for usage in sense.find_usage_notes(language=REGIONAL):
+        for usage in sense.find_usage_notes(language=config.xml.national):
+            result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
+        for usage in sense.find_usage_notes(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
@@ -337,13 +406,13 @@ def format_encyclopedic_informations(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for information in sense.find_encyclopedic_informations(language=VERNACULAR):
+        for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
             result += font[VERNACULAR](information) + " "
-        for information in sense.find_encyclopedic_informations(language=ENGLISH):
+        for information in sense.find_encyclopedic_informations(language=config.xml.English):
             result += information + " "
-        for information in sense.find_encyclopedic_informations(language=NATIONAL):
-            result += font[NATIONAL](information) + " "
-        for information in sense.find_encyclopedic_informations(language=REGIONAL):
+        for information in sense.find_encyclopedic_informations(language=config.xml.national):
+            result += font[NATIONAL](handle_font(information)) + " "
+        for information in sense.find_encyclopedic_informations(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
@@ -355,13 +424,13 @@ def format_restrictions(lexical_entry, font):
     """
     result = ""
     for sense in lexical_entry.get_senses():
-        for restriction in sense.find_restrictions(language=VERNACULAR):
+        for restriction in sense.find_restrictions(language=config.xml.vernacular):
             result += "\\textit{VerRestrict:} " + font[VERNACULAR](restriction) + " "
-        for restriction in sense.find_restrictions(language=ENGLISH):
+        for restriction in sense.find_restrictions(language=config.xml.English):
             result += "\\textit{Restrict:} " + restriction + " "
-        for restriction in sense.find_restrictions(language=NATIONAL):
+        for restriction in sense.find_restrictions(language=config.xml.national):
             result += "\\textit{" + font[NATIONAL](restriction) + "} "
-        for restriction in sense.find_restrictions(language=REGIONAL):
+        for restriction in sense.find_restrictions(language=config.xml.regional):
             result += "\\textit{[" + font[REGIONAL](restriction) + "]} "
     return result
 
@@ -424,12 +493,12 @@ def format_variant_forms(lexical_entry, font):
     for form_representation in lexical_entry.get_form_representations():
         if form_representation.get_variantForm() is not None:
             result += "\\textit{Variant:} " + font[VERNACULAR](form_representation.get_variantForm()) + " "
-        if form_representation.get_comment(ENGLISH) is not None:
-            result +=  "(" + form_representation.get_comment(ENGLISH) + ") "
-        if form_representation.get_comment(NATIONAL) is not None:
-            result +=  "(" + font[NATIONAL](form_representation.get_comment(NATIONAL)) + ") "
-        if form_representation.get_comment(REGIONAL) is not None:
-            result +=  "(" + font[REGIONAL](form_representation.get_comment(REGIONAL)) + ") "
+        if form_representation.get_comment(config.xml.English) is not None:
+            result +=  "(" + form_representation.get_comment(config.xml.English) + ") "
+        if form_representation.get_comment(config.xml.national) is not None:
+            result +=  "(" + font[NATIONAL](form_representation.get_comment(config.xml.national)) + ") "
+        if form_representation.get_comment(config.xml.regional) is not None:
+            result +=  "(" + font[REGIONAL](form_representation.get_comment(config.xml.regional)) + ") "
     return result
 
 def format_borrowed_word(lexical_entry, font):
