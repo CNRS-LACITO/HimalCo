@@ -4,9 +4,11 @@
     <Language>
         <lang att="vernacular" val="nru"/>
         <lang att="English" val="eng"/>
-        <!-- Chinese mandarin -->
-        <lang att="national" val="zh"/>
-        <lang att="regional" val="cmn"/>
+        <!-- Chinese Mandarin -->
+        <!-- Northern Mandarin / Standard Mandarin -->
+        <lang att="national" val="cmn"/>
+        <!-- Southwestern Mandarin -->
+        <lang att="regional" val="zho"/>
         <lang att="French" val="fra"/>
     </Language>
     <Font>
@@ -40,7 +42,7 @@
                 <feat att="entrySource" val="./user/na/result/dictionary-eol.txt"/>
                 <!-- Absolute path to audio files -->
                 <feat att="localPath"
-                    val="/Users/celine/Work/CNRS/workspace/HimalCo/dict/na/data/audio/"/>
+                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/na/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>

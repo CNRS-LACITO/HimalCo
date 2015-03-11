@@ -2,7 +2,7 @@
 <!-- Configuration for Japhug -->
 <Config>
     <Language>
-        <lang att="vernacular" val="nru"/>
+        <lang att="vernacular" val="jya"/>
         <lang att="English" val="eng"/>
         <lang att="national" val="cmn"/>
         <lang att="regional" val="nep"/>
@@ -11,9 +11,9 @@
     <Font>
         <!-- Output -->
         <!-- Fonts to use in LaTeX format -->
-        <font att="vernacular" var="text">"\\textcolor{blue}{\\textbf{\ipa{" + text + "}}}"</font>
+        <font att="vernacular" var="text">"\\textbf{\ipa{" + text + "}}"</font>
         <font att="English" var="text">text</font>
-        <font att="national" var="text">"\\textcolor{brown}{\zh{" + text + "}}"</font>
+        <font att="national" var="text">"\\textit{\zh{" + text + "}}"</font>
         <font att="regional" var="text">"\ipa{" + text + "}"</font>
         <font att="French" var="text">text</font>
     </Font>
