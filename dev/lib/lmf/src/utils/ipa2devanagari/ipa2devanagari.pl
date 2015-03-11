@@ -117,7 +117,6 @@ sub infinitive {
     else {
         $variable = infinitive1($variable);
     }
-    #$variable =~ s/[\r\n]+$//;
     return $variable."nɛ";
 }
 
@@ -278,7 +277,7 @@ sub transcr {
     $string =~ s/प्त/प्‍त/g;
     $string =~ s/र्य/र्‍य/g;
     $string =~ s/र्व/र्‍व/g;
-    $string =~ s/क्र्‍य/क्र्य/g; #Undo previous rules in clusters 
+    $string =~ s/क्र्‍य/क्र्य/g; # undo previous rules in clusters
 	$string =~ s/क्र्‍व/क्र्व/g;
     $string =~ s/ख्र्‍य/ख्र्य/g; 	
 	$string =~ s/ख्र्‍व/ख्र्व/g;
@@ -342,7 +341,12 @@ sub main {
     while (<in_file>) {
         print out_file $_;
         my ($data) = $_;
-        chomp($data);
+        if ($^O =~ "darwin") {
+            $data = substr($data, 0, -2); # removes '\r\n' characters on Mac
+        }
+        else {
+            chomp($data);
+        }
 
         if ($data =~ m/^\\lx /) {
             if ($data =~ m/\_/) { # verbs which we do not analyze the infinitive
