@@ -20,7 +20,7 @@ class TestXmlFormatFunctions(unittest.TestCase):
         SubElement(element, "Lemma")
         # Build expected result
         eol = unicode(EOL)
-        expected_str = u"<?xml version=\"1.0\" ?>" + eol + u"<LexicalEntry>" + eol + u"    <Lemma/>" + eol + u"</LexicalEntry>" + eol
+        expected_str = "<?xml version=\"1.0\" encoding=\"utf-8\"?>" + eol + "<LexicalEntry>" + eol + "    <Lemma/>" + eol + "</LexicalEntry>" + eol
         # Test
         self.assertEqual(prettify(element), expected_str)
         del element

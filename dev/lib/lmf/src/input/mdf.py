@@ -6,10 +6,10 @@
 from config.mdf import mdf_lmf
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
-from utils.io import open_read, EOL
+from utils.io import open_read, EOL, ENCODING
 from utils.error_handling import Warning, Error
 
-def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding='utf8'):
+def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENCODING):
     """! @brief Read an MDF file.
     @param filename The name of the MDF file to read with full path, for instance 'user/input.txt'.
     @param mdf2lmf A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is 'mdf_lmf' dictionary defined in 'src/config/mdf.py'. Please refer to it as an example.
@@ -104,7 +104,7 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding='ut
                     sub_entry = None
             except KeyError:
                 # When printing, we need to convert 'unicode' into 'str' using 'utf8' encoding:
-                print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker.encode('utf8'), current_entry.get_lexeme().encode('utf8')))
+                print Warning("MDF marker '%s' encountered for lexeme '%s' is not defined in configuration" % (marker.encode(ENCODING), current_entry.get_lexeme().encode(ENCODING)))
             except Error as exception:
                 exception.handle()
     mdf_file.close()

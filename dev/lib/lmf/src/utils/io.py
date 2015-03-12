@@ -11,11 +11,14 @@ else:
     # Windows-style end of line
     EOL = '\r\n'
 
-def open_file(filename, mode, encoding='utf8'):
+# Define encoding
+ENCODING = 'utf-8'
+
+def open_file(filename, mode, encoding=ENCODING):
     """! @brief Open file in specified mode (automatically decode file in unicode).
     @param filename Full path to file to open.
     @param mode Read or write mode.
-    @param encoding Encoding mode. Default value is 'utf8'.
+    @param encoding Encoding mode. Default value is 'utf-8'.
     @return File handler.
     """
     try:

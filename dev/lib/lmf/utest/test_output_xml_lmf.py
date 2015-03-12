@@ -31,7 +31,7 @@ class TestXmlLmfFunctions(unittest.TestCase):
         xml_lmf_filename = utest_path + "lmf_output.xml"
         xml_lmf_write(lexical_entry, xml_lmf_filename)
         xml_lmf_file = open(xml_lmf_filename, "r")
-        expected_lines = ["""<?xml version="1.0" ?>""" + EOL,
+        expected_lines = ["""<?xml version="1.0" encoding="utf-8"?>""" + EOL,
             """<LexicalEntry id="0">""" + EOL,
             """    <feat att="status" val="draft"/>""" + EOL,
             """    <Lemma>""" + EOL,
@@ -174,9 +174,9 @@ class TestXmlLmfFunctions(unittest.TestCase):
 
     def test_handle_caps(self):
         value = u"°trucs et°astuces"
-        input = Element("name", val=unicode(value))
+        input = Element("name", val=value)
         # Create output element and sub-elements
-        output = Element("name", val=unicode(value))
+        output = Element("name", val=value)
         sub1 = SubElement(output, "span")
         sub1.attrib["class"] = "sc"
         sub2 = SubElement(output, "span")

@@ -9,8 +9,8 @@ options = parser.parse_args()[0]
 
 # Open input and output files
 try:
-    in_file = open(options.input, "r", encoding="utf8")
-    out_file = open(options.output, "w", encoding="utf8")
+    in_file = open(options.input, "r", encoding='utf-8')
+    out_file = open(options.output, "w", encoding='utf-8')
 except TypeError:
     in_file = open(options.input, "r")
     out_file = open(options.output, "w")

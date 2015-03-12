@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from utils.xml_format import write_result, Element, SubElement
+from utils.io import ENCODING
 
 def xml_lmf_write(object, filename):
     """! @brief Write an XML LMF file.
@@ -13,7 +14,7 @@ def xml_lmf_write(object, filename):
     # Create all XML sub-elements
     build_sub_elements(object, root)
     # Write all created XML elements in the output file
-    write_result(root, filename, encoding='utf8')
+    write_result(root, filename)
 
 def build_sub_elements(object, element):
     """! @brief Create XML sub-elements to an existing XML element by parsing an LMF object instance.
@@ -39,12 +40,14 @@ def build_sub_elements(object, element):
                     build_sub_elements(attr_value, sub_element)
                 elif attr_name in ["dtdVersion", "id", "targets"]:
                     # If this is a specical attribute ("id" or "targets"), it must be inserted as an XML element attribute
-                    element.attrib.update({attr_name: unicode(attr_value)})
+                    if type(attr_value) is int:
+                        attr_value = unicode(attr_value)
+                    element.attrib.update({attr_name: attr_value})
                     if attr_name == "targets":
                         add_link(object, element)
                 else:
                     # In all other cases, an XML sub-element must be created with the keyword name "feat"
-                    feat = SubElement(element, "feat", att=attr_name, val=unicode(attr_value))
+                    feat = SubElement(element, "feat", att=attr_name, val=attr_value)
                     # Handle reserved characters and fonts
                     handle_reserved(feat)
                     handle_fv(feat)
@@ -233,14 +236,14 @@ def handle_caps(element):
     import re
     pattern = r"([^°]*)°([^\s\.,)+/:]*)(.*)"
     # Find text to display in small caps
-    result = re.match(pattern, element.attrib["val"].encode("utf8"))
+    result = re.match(pattern, element.attrib["val"].encode(ENCODING))
     # Initialize loop variables
     previous_span = None
     index = 0
     while result:
-        before = result.group(1).decode("utf8")
-        sc = result.group(2).decode("utf8")
-        after = result.group(3).decode("utf8")
+        before = result.group(1).decode(ENCODING)
+        sc = result.group(2).decode(ENCODING)
+        after = result.group(3).decode(ENCODING)
         # Handle previous span or element
         if previous_span is None:
             element.text = before
@@ -253,7 +256,7 @@ def handle_caps(element):
         # Insert span in element
         element.insert(index, span)
         # Update result
-        result = re.match(pattern, after.encode("utf8"))
+        result = re.match(pattern, after.encode(ENCODING))
         if not result:
             span.tail = after
         # Update loop variables
