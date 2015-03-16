@@ -10,13 +10,16 @@ $temp=~s/\.xml//g;
 
 
 $text_in=$var1;
-$text_out=$temp."_ok";
+$text_out=$temp."_ok.txt";
+$text_glossary=$temp."_glossary.txt";
 
 
   open (IN, "$text_in")|| die "Probleme à l'ouverture du fichier d'entrée";
 
   open (OUT, ">$text_out")|| die "Probleme à l'ouverture du fichier de sortie";
- 
+
+  open (GLOSSARY, ">$text_glossary")|| die "Probleme à l'ouverture du fichier de glossaire";
+
 $s=0;
 $w=0;
 $m=0;
@@ -75,6 +78,7 @@ while ($line=<IN>) {
 		if ($s==1 and $w==1 and $m==1){
 			if (length($m_form)==0) {$m_form=$2;}
 			else {$m_form=$m_form." ".$2;}
+			print GLOSSARY "\\lx $2\n";
 		}
 
 	}
@@ -92,6 +96,7 @@ while ($line=<IN>) {
 		if ($s==1 and $w==1 and $m==1){
 			if (length($m_transl)==0) {$m_transl=$2;}
 			else {$m_transl=$m_transl." ".$2;}
+			print GLOSSARY "\\ge $2\n\n";
 		}
 
 	}
@@ -130,3 +135,4 @@ while ($line=<IN>) {
 
 	close(IN);
 	close(OUT);
+	close(GLOSSARY);
