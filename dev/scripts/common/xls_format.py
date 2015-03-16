@@ -22,7 +22,7 @@ class XlsFormat():
         """Open workbook.
         """
         import xlrd
-        self.wb = xlrd.open_workbook(self.options.input, formatting_info=True, on_demand=True, encoding_override='utf-8')
+        self.wb = xlrd.open_workbook(self.options.input, on_demand=True, encoding_override='utf-8')
 
     def get_sheets(self):
         """Retrieve names of all sheets as a list.
