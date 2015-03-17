@@ -297,7 +297,7 @@ sub regle401 {
 }
 
 sub generation {
-	open (FILE, ">>:utf8", "b.txt");
+	open (FILE, ">>:utf8", "paradigms_eng.txt");
 	my ($variable1) = $_[0];
 	my ($variable2) = $_[1];
 		my $radical = $variable1; 
@@ -830,7 +830,7 @@ close(FILE);
 }
 	
 
-open FICHIER, "<:utf8", "khaling-english.txt";
+open FICHIER, "<:utf8", "verbs_eng.txt";
 
 
 

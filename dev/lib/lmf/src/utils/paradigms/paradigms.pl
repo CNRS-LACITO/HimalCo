@@ -1,4 +1,4 @@
-﻿use strict;
+use strict;
 use warnings;
 
 use utf8;
@@ -298,7 +298,7 @@ sub regle401 {
 
 
 sub generation {
-	open (FILE, ">>:utf8", "c.txt");
+	open (FILE, ">>:utf8", "paradigms.txt");
 	my ($variable1) = $_[0];
 	my ($variable2) = $_[1];
 		my $radical = $variable1; 
@@ -842,7 +842,7 @@ close(FILE);
 }
 	
 
-open FICHIER, "<:utf8", "khaling3.txt";
+open FICHIER, "<:utf8", "verbs.txt";
 
 
 

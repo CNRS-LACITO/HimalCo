@@ -1,4 +1,4 @@
-﻿use strict;
+use strict;
 use warnings;
 
 use utf8;
@@ -104,7 +104,7 @@ sub regle107 {
 	my ($radical) = shift;
 	 $partie1 = substr($radical,0,-3);
 	 $partie2 = substr($radical,-3,3);
-    $partie2 =~ s/([aʌieɛuoɔɵʉ])t/$1̂i/; #garde un i car il faut qu'il apparaisse comme इ
+    $partie2 =~ s/([aʌieɛuoɔɵʉ])t/$1̂j/; #garde un i car il faut qu'il apparaisse comme इ
 	$radical =  $partie1.$partie2;
 	return $radical;
 }
@@ -124,7 +124,7 @@ sub regle109 {
 	my ($radical) = shift;
 	 $partie1 = substr($radical,0,-3);
 	 $partie2 = substr($radical,-3,3);
-    $partie2 =~ s/([aʌieɛuoɔɵʉ])n/$1i/;
+    $partie2 =~ s/([aʌieɛuoɔɵʉ])n/$1j/;
 	$radical =  $partie1.$partie2;
 	return $radical;
 }
@@ -299,7 +299,7 @@ sub regle401 {
 
 
 sub generation {
-	open (FILE, ">>:utf8", "d.txt");
+	open (FILE, ">>:utf8", "reflexive_paradigms_eng.txt");
 	my ($variable1) = $_[0];
 	my ($variable2) = $_[1];
 	my ($variable3) = $_[2];
@@ -550,51 +550,51 @@ sub generation {
 			print FILE "\n";
 	
 	if ($variable1 =~ /[ptkmnŋrl].r$/) {
-		print FILE "\\BEGIN{TABLE}[H]\n";
-		print FILE "\\LABEL{".$rime.".vr} \\CENTERING \n";
-		print FILE "\\CAPTION{अकर्मक क्रिया  ".$theme_P."sinɛ  \"".$variable2."\"  }\n";
-		print FILE "\\BEGIN{TABULAR}{L|L|L|L|L|L|L|L|L|L|L|L|L}  \\TOPRULE\n";
-		print FILE "ʔûŋ &".$theme_P."siŋʌ"." &".$theme_P."tʌsu \\\\ \n";
-		print FILE "ʔīːʦi &".$theme_G."siji"." &".$theme_G."sîiti   \\\\\n";
-		print FILE "ʔōːʦu &".$theme_G."siju"." &".$theme_G."sîitu   \\\\ \n";
-		print FILE "ʔik &".$theme_C2."siki"." &".$theme_C2."siktiki   \\\\ \n";
-		print FILE "ʔok &".$theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ   \\\\ \n";
-		print FILE "ʔin & ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije  \\\\ \n";
-		print FILE "ʔēːʦi & ʔi".$theme_G."siji"." & ʔi".$theme_G."sîːti &".$theme_G."sîije    \\\\\n";
-		print FILE "ʔên & ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje  \\\\ \n";
-		print FILE "ʔʌ̄m & ".$theme_P."si & ".$theme_P."tɛsi   \\\\ \n";
-		print FILE "ʔʌmsu & ".$theme_G."siji"." & ".$theme_G."sîiti   \\\\ \n";
-		print FILE "ʔʌmɦɛm & ".$theme_P."sinu  & ".$theme_P."tɛnnu \\\\ \n";
-		print FILE "\\BOTTOMRULE\n";
-		print FILE "\\END{TABULAR}\n";
-		print FILE "\\END{TABLE}\n";
+		print FILE "\\begin{table}[H]\n";
+		print FILE "\\label{".$rime.".vr} \\centering \n";
+		print FILE "\\caption{".$theme_P."sinɛ  \"".$variable2."\"  }\n";
+		print FILE "\\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l|l}  \\toprule\n";
+		print FILE "\\textsc{1s} &".$theme_P."siŋʌ"." &".$theme_P."tʌsu \\\\ \n";
+		print FILE "\\textsc{1di} &".$theme_G."siji"." &".$theme_G."sîjti   \\\\\n";
+		print FILE "\\textsc{1de} &".$theme_G."siju"." &".$theme_G."sîjtu   \\\\ \n";
+		print FILE "\\textsc{1pi} &".$theme_C2."siki"." &".$theme_C2."siktiki   \\\\ \n";
+		print FILE "\\textsc{1pe} &".$theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ   \\\\ \n";
+		print FILE "\\textsc{2s} & ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije  \\\\ \n";
+		print FILE "\\textsc{2d} & ʔi".$theme_G."siji"." & ʔi".$theme_G."sîjti &".$theme_G."sîjje    \\\\\n";
+		print FILE "\\textsc{2p} & ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje  \\\\ \n";
+		print FILE "\\textsc{3s} & ".$theme_P."si & ".$theme_P."tɛsi   \\\\ \n";
+		print FILE "\\textsc{3d} & ".$theme_G."siji"." & ".$theme_G."sîjti   \\\\ \n";
+		print FILE "\\textsc{3p} & ".$theme_P."sinu  & ".$theme_P."tɛnnu \\\\ \n";
+		print  FILE "\\bottomrule\n";
+		print  FILE "\\end{tabular}\n";
+		print  FILE "\\end{table}\n";
 	}
 
 	elsif ($variable1 =~ /[aɛeiou]_r$/) {
-		print FILE "\\BEGIN{TABLE}[H]\n";
-		print FILE "\\LABEL{".$rime.".vr} \\CENTERING \n";
-		print FILE "\\CAPTION{अकर्मक क्रिया  ".$theme_2A."̂nsinɛ  ``".$variable2."\"  }\n";
-		print FILE "\\BEGIN{TABULAR}{L|L|L|L|L|L|L|L|L|L|L|L|L}  \\TOPRULE\n";
-		print FILE "ʔûŋ &".$theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu \\\\ \n";
-		print FILE "ʔīːʦi &".$theme_2A."ssiji"." &".$theme_2A."ssîiti   \\\\\n";
-		print FILE "ʔōːʦu &".$theme_2A."ssiju"." &".$theme_2A."ssîitu   \\\\ \n";
-		print FILE "ʔik&".$theme_2A."ssiki"." &".$theme_2A."ssiktiki   \\\\ \n";
-		print FILE "ʔok &".$theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ   \\\\ \n";
-		print FILE "ʔin & ʔi".$theme_2A."̂ssi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije  \\\\ \n";
-		print FILE "ʔēːʦi & ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîiti &".$theme_2A."ssîije    \\\\\n";
-		print FILE "ʔên & ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje  \\\\ \n";
-		print FILE "ʔʌm & ".$theme_2A."̂nsi & ".$theme_2A."̂ntɛsi   \\\\ \n";
-		print FILE "ʔʌmsu & ".$theme_2A."ssiji"." & ".$theme_2A."ssîiti   \\\\ \n";
-		print FILE "ʔʌmɦɛm & ".$theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu \\\\ \n";
-		print FILE "\\BOTTOMRULE\n";
-		print FILE "\\END{TABULAR}\n";
-		print FILE "\\END{TABLE}\n";
+		print FILE "\\begin{table}[H]\n";
+		print FILE "\\label{".$rime.".vr} \\centering \n";
+		print FILE "\\caption{ ".$theme_2A."̂nsinɛ  ``".$variable2."\"  }\n";
+		print FILE "\\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l|l}  \\toprule\n";
+		print FILE "\\textsc{1s} &".$theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu \\\\ \n";
+		print FILE "\\textsc{1di} &".$theme_2A."ssiji"." &".$theme_2A."ssîjti   \\\\\n";
+		print FILE "\\textsc{1de} &".$theme_2A."ssiju"." &".$theme_2A."ssîjtu   \\\\ \n";
+		print FILE "\\textsc{1pi} &".$theme_2A."ssiki"." &".$theme_2A."ssiktiki   \\\\ \n";
+		print FILE "\\textsc{1pe} &".$theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ   \\\\ \n";
+		print FILE "\\textsc{2s} & ʔi".$theme_2A."̂nsi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije  \\\\ \n";
+		print FILE "\\textsc{2d} & ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîjti &".$theme_2A."ssîjje    \\\\\n";
+		print FILE "\\textsc{2p} & ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje  \\\\ \n";
+		print FILE "\\textsc{3s} & ".$theme_2A."̂nsi & ".$theme_2A."̂ntɛsi   \\\\ \n";
+		print FILE "\\textsc{3d} & ".$theme_2A."ssiji"." & ".$theme_2A."ssîjti   \\\\ \n";
+		print FILE "\\textsc{3p} & ".$theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu \\\\ \n";
+		print FILE "\\bottomrule\n";
+		print FILE "\\end{tabular}\n";
+		print FILE "\\end{table}\n";
 	}
 close(FILE);
 }
 	
 
-open FICHIER, "<:utf8", "khaling-refl.txt";
+open FICHIER, "<:utf8", "reflexive_verbs.txt";
 
 
 
@@ -606,8 +606,7 @@ chomp($donnees);
 my @mots = split('-',$donnees);
 
  #foreach my $entree (@mots) {	
-    generation ($mots[0], $mots[1], $mots[2]);
-  
+    generation ($mots[0], $mots[2], $mots[1]);
 	#print $entree;
 
 }
