@@ -328,8 +328,9 @@ sub transcr {
     $string =~ s/-//g;
     $string =~ s/्\./्\x{200C}/g; # unpredictable syllable breaks
 	$string =~ s/\.//g; 
-    $string =~ tr/[A-Z]/[a-z]/; #conversion of paradigm tables generated with khaling-paradigmes.pl
+    $string =~ tr/[A-Z]/[a-z]/; # conversion of paradigm tables generated with khaling-paradigmes.pl
 	$string =~ tr/\[h\]/\[H\]/;
+
     return $string;
 }
 
