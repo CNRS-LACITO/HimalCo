@@ -10,19 +10,19 @@ from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 # To define languages and fonts
 import config
 
-def compute_header(preamble):
-    """! @brief Create LaTeX header.
-    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'.
+def file_read(filename):
+    """! @brief Read file contents.
+    @param filename The name of the file with full path containing information to read, for instance the LaTeX header of the document: 'user/config/japhug.tex'.
     @return A Python string containing read information.
     """
-    header = ""
-    if preamble is not None:
-        hdr = open_read(preamble)
-        header = hdr.read()
-        hdr.close()
-    return header
+    contents = ""
+    if filename is not None:
+        file = open_read(filename)
+        contents = file.read()
+        file.close()
+    return contents
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=None):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -32,6 +32,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
     @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
+    @param paradigms The name of the LaTeX file with full path containing the paradigms in LaTeX format. Deafult value is None.
     """
     import string
     # Define font
@@ -39,7 +40,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
         font = config.xml.font
     tex_file = open_write(filename)
     # Add file header if any
-    tex_file.write(compute_header(preamble))
+    tex_file.write(file_read(preamble))
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
     tex_file.write("\\maketitle" + EOL)
@@ -92,6 +93,13 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly
     tex_file.write("\end{multicols}" + EOL)
+    # Insert paradigms if any
+    if paradigms is not None:
+        tex_file.write(EOL)
+        tex_file.write("\\newpage" + EOL)
+        tex_file.write("\markboth{paradigms}{}" + EOL)
+        tex_file.write(file_read(paradigms))
+        tex_file.write(EOL)
     tex_file.write("\end{document}" + EOL)
     tex_file.close()
 

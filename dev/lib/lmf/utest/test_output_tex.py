@@ -27,7 +27,7 @@ class TestTexFunctions(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_compute_header(self):
+    def test_file_read(self):
         import sys, os
         # Create a header LaTeX file
         utest_path = sys.path[0] + '/'
@@ -37,7 +37,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_file.write(header)
         tex_file.close()
         # Read header file and test result
-        self.assertEqual(compute_header(tex_filename), header)
+        self.assertEqual(file_read(tex_filename), header)
         # Remove LaTeX file
         os.remove(tex_filename)
 
