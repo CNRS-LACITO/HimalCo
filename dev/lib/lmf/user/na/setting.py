@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, mdf_semanticRelation
 from config.tex import partOfSpeech_tex
@@ -105,10 +106,60 @@ lmf_mdf.update({
 
 ## Functions to process some LaTeX fields (output)
 
+def handle_tones(text):
+    from utils.io import ENCODING
+    import re
+    result = ""
+    tones = "˩˧˥".decode(encoding=ENCODING)
+    # Monosyllabic
+    current_pattern = "([^" + tones + "#$]+)(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    pattern = "^" + current_pattern + "$"
+    if re.search(pattern, text):
+        found = re.match(pattern, text)
+        result += found.group(1) + found.group(2)
+        if len(found.group(3)) != 0:
+            result += "\\textsubscript{" + found.group(3) + "}"
+    # Disyllabic: add a constraint on other syllables which must have at least 2 characters (maximum 5)
+    syllable = "([^" + tones + "#$]{2,5})(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    # Handle words composed of 2, 3, 4, 5 syllables
+    for syllable_nb in range (2, 6):
+        current_pattern += syllable
+        pattern = "^" + current_pattern + "$"
+        if re.search(pattern, text):
+            found = re.match(pattern, text)
+            for i in range (0, syllable_nb):
+                result += found.group(i*3+1) + found.group(i*3+2) + "\\textsubscript{" + found.group(i*3+3) + "}"
+    return result
+
+def format_lexeme(lexical_entry, font):
+    import output.tex as tex
+    lexeme = font[VERNACULAR](handle_tones(lexical_entry.get_lexeme()))
+    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.get_homonymNumber() is not None:
+        # Add homonym number to lexeme
+        lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
+    if lexical_entry.get_contextual_variations() is not None and len(lexical_entry.get_contextual_variations()) != 0:
+        # Format contextual variations
+        for var in lexical_entry.get_contextual_variations():
+            result += " " + font[VERNACULAR](var)
+        result += " (from: " + lexeme + ")."
+    else:
+        # Format lexeme
+        result += lexeme
+    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    if not lexical_entry.is_subentry():
+        result += "\markboth{" + lexeme + "}{}" + EOL
+    return result
+
 def format_tone(lexical_entry, font):
     result = ""
     if lexical_entry.get_tones() is not None and len(lexical_entry.get_tones()) != 0:
-        result = lexical_entry.get_tones()[0]
+        tone = lexical_entry.get_tones()[0]
+        for c in tone:
+            if c in set("abcd123"):
+                result += "\\textsubscript{" + c + "}"
+            else:
+                result += c
     return result
 
 def format_definition(lexical_entry, language_font, language):
@@ -182,7 +233,7 @@ def tex_fra(lexical_entry, font):
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
     tex_entry = (r"""%s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + tex.format_lexeme(lexical_entry, config.xml.font) + "}",\
+        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[FRENCH], language=config.xml.French),\
@@ -215,7 +266,7 @@ def tex_eng(lexical_entry, font):
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
     tex_entry = (r"""%s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + tex.format_lexeme(lexical_entry, config.xml.font) + "}",\
+        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[ENGLISH], language=config.xml.English),\
