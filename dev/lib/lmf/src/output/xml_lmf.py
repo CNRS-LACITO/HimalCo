@@ -55,6 +55,7 @@ def build_sub_elements(object, element):
                     handle_font(feat)
                     # Special formatting
                     handle_pinyin(feat)
+                    handle_tones(feat)
                     handle_caps(feat)
 
 ## Functions to process XML/XHTML layout
@@ -262,4 +263,92 @@ def handle_caps(element):
         # Update loop variables
         previous_span = span
         index += 1
+    return element
+
+def handle_tones(element):
+    """Replace tones subscripts by '<sub>xxx</sub>'.
+    """
+    from utils.io import ENCODING
+    import re
+    if element.attrib["att"] == "tone":
+        # Initialize loop variables
+        previous_sub = None
+        if element.text is None:
+            element.text = ""
+        index = 0
+        for c in element.attrib["val"]:
+            if c in set("abcd123"):
+                # Create sub
+                sub = Element("sub")
+                sub.text = c
+                # Insert sub in element
+                element.insert(index, sub)
+                # Update loop variables
+                previous_sub = sub
+                previous_sub.tail = ""
+                index += 1
+            else:
+                # Handle previous sub or element
+                if previous_sub is None:
+                    element.text += c
+                else:
+                    previous_sub.tail += c
+        if element.text == element.attrib["val"]:
+            # Reset if identical
+            element.text = None
+        return element
+    if element.attrib["att"] != "lexeme":
+        return element
+    # Find text to display as subscript
+    tones = "˩˧˥".decode(encoding=ENCODING)
+    # Monosyllabic
+    current_pattern = "([^" + tones + "#$]+)(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    pattern = "^" + current_pattern + "$"
+    if re.search(pattern, element.attrib["val"]):
+        result = re.match(pattern, element.attrib["val"])
+        before = result.group(1) + result.group(2)
+        subscript = result.group(3)
+        element.text = before
+        if len(subscript) != 0:
+            # Create sub
+            sub = Element("sub")
+            sub.text = subscript
+            # Insert sub in element
+            element.insert(0, sub)
+        if element.text == element.attrib["val"]:
+            # Reset if identical
+            element.text = None
+        return element
+    # Disyllabic: add a constraint on other syllables which must have at least 2 characters (maximum 5)
+    syllable = "([^" + tones + "#$]{2,5})(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    # Handle words composed of 2, 3, 4, 5 syllables
+    for syllable_nb in range (2, 6):
+        current_pattern += syllable
+        pattern = "^" + current_pattern + "$"
+        if re.search(pattern, element.attrib["val"]):
+            result = re.match(pattern, element.attrib["val"])
+            # Initialize loop variables
+            previous_sub = None
+            if element.text is None:
+                element.text = ""
+            for i in range (0, syllable_nb):
+                before = result.group(i*3+1) + result.group(i*3+2)
+                subscript = result.group(i*3+3)
+                # Handle previous sub or element
+                if previous_sub is None:
+                    element.text += before
+                else:
+                    previous_sub.tail += before
+                if len(subscript) != 0:
+                    # Create sub
+                    sub = Element("sub")
+                    sub.text = subscript
+                    # Insert sub in element
+                    element.insert(i, sub)
+                    # Update loop variable
+                    previous_sub = sub
+                    previous_sub.tail = ""
+    if element.text == element.attrib["val"]:
+        # Reset if identical
+        element.text = None
     return element
