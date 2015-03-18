@@ -13,16 +13,26 @@ from utils.io import EOL
 
 ## Fonts to use in LaTeX format (output)
 font = dict({
-    VERNACULAR  : lambda text: "\\vernacular{" + text + "}",
-    ENGLISH     : lambda text: "\\english{" + text + "}",
-    NATIONAL    : lambda text: "\\national{" + text + "}",
-    REGIONAL    : lambda text: "\\regional{" + text + "}"
+    VERNACULAR  : lambda text: "\\textbf{\ipa{" + text + "}}",
+    ENGLISH     : lambda text: text,
+    NATIONAL    : lambda text: "\\textit{\zh{" + text + "}}",
+    REGIONAL    : lambda text: "\ipa{" + text + "}"
 })
+
+# To define languages and fonts
+import config
+class Xml():
+    def __init__(self):
+        self.font = font
+        self.vernacular = "ver"
+        self.English = "eng"
+        self.national = "nat"
+        self.regional = "reg"
 
 class TestTexFunctions(unittest.TestCase):
 
     def setUp(self):
-        pass
+        config.xml = Xml()
 
     def tearDown(self):
         pass
@@ -100,7 +110,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{- \\vernacular{H} \\vernacular{h} -} \hspace{1.4ex}" + EOL,
+            "\\section*{- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -} \hspace{1.4ex}" + EOL,
             #"\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "The lexical entry 0 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
@@ -134,18 +144,18 @@ class TestTexFunctions(unittest.TestCase):
 
     def test_handle_fn(self):
         input = "textfn:this fn:but not this"
-        output = "text\\national{this} \\national{but} not this"
+        output = "text\\textit{\zh{this}} \\textit{\zh{but}} not this"
         self.assertEqual(handle_fn(input, font), output)
         input = "textfn:this |fn{and this}"
-        output = "text\\national{this} \\national{and this}"
+        output = "text\\textit{\zh{this}} \\textit{\zh{and this}}"
         self.assertEqual(handle_fn(input, font), output)
 
     def test_handle_fv(self):
         input = "fv:something here and fv:there"
-        output = "\\vernacular{something} here and \\vernacular{there}"
+        output = "\\textbf{\ipa{something}} here and \\textbf{\ipa{there}}"
         self.assertEqual(handle_fv(input, font), output)
         input = "|fv{something here} and fv:there"
-        output = "\\vernacular{something here} and \\vernacular{there}"
+        output = "\\textbf{\ipa{something here}} and \\textbf{\ipa{there}}"
         self.assertEqual(handle_fv(input, font), output)
 
     def test_handle_caps(self):
@@ -161,14 +171,14 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_uid(self):
         entry = LexicalEntry("link_0")
         entry.set_lexeme("link")
-        expected = "\\hyperlink{linkUS0}{\\vernacular{link}}"
+        expected = "\\hyperlink{linkUS0}{\\textbf{\ipa{link}}}"
         self.assertEqual(format_link(entry, font), expected)
         del entry
 
     def test_format_link(self):
         entry = LexicalEntry("link_0")
         entry.set_lexeme("link")
-        expected = "\\hyperlink{linkUS0}{\\vernacular{link}}"
+        expected = "\\hyperlink{linkUS0}{\\textbf{\ipa{link}}}"
         self.assertEqual(format_link(entry, font), expected)
         entry.set_homonymNumber(2)
         expected = expected[:-1] + " \\textsubscript{2}}"
@@ -178,7 +188,7 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_lexeme(self):
         entry = LexicalEntry()
         entry.set_lexeme("hello")
-        expected = "\\vspace{1cm} \\hspace{-1cm} \\vernacular{hello} \\hspace{0.1cm} \\hypertarget{0}{}\n\markboth{\\vernacular{hello}}{}\n"
+        expected = "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{0}{}\n\markboth{\\textbf{\ipa{hello}}}{}\n"
         self.assertEqual(format_lexeme(entry, font), expected)
         del entry
 
@@ -221,13 +231,13 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_translation("trans_eng", language="eng")
         entry.set_translation("trans_reg", language="reg")
         # vernacular
-        expected = "\\vernacular{def_ver}. trans_ver. "
+        expected = "\\textbf{\ipa{def_ver}}. trans_ver. "
         # English
         expected += "def_eng. trans_eng. "
         # national
-        expected += "\\national{def_nat}. \\national{trans_nat}. "
+        expected += "\\textit{\zh{def_nat}}. \\textit{\zh{trans_nat}}. "
         # regional
-        expected += "\\textit{[Regnl: \\regional{gloss_reg}]}. \\textbf{rr:}\\textit{[Regnl: trans_reg]}. "
+        expected += "\\textit{[Regnl: \ipa{gloss_reg}]}. \\textbf{rr:}\\textit{[Regnl: trans_reg]}. "
         self.assertEqual(format_definitions(entry, font), expected)
         del entry
 
@@ -255,7 +265,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.add_example("ex_eng", language="eng")
         entry.add_example("ex_nat", language="nat")
         entry.add_example("ex_reg", language="reg")
-        expected = "\\begin{exe}\n\\sn \\vernacular{ex_ver}\n\\trans ex_eng\n\\trans \\textit{\\national{ex_nat}}\n\\trans \\textit{[\\regional{ex_reg}]}\n\\end{exe}\n"
+        expected = "\\begin{exe}\n\\sn \\textbf{\ipa{ex_ver}}\n\\trans ex_eng\n\\trans \\textit{\\textit{\zh{ex_nat}}}\n\\trans \\textit{[\ipa{ex_reg}]}\n\\end{exe}\n"
         self.assertEqual(format_examples(entry, font), expected)
         del entry
 
@@ -265,7 +275,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_usage_note("use_eng", language="eng")
         entry.set_usage_note("use_nat", language="nat")
         entry.set_usage_note("use_reg", language="reg")
-        expected = "\\textit{VerUsage:} \\vernacular{use_ver} \\textit{Usage:} use_eng \\textit{\\national{use_nat}} \\textit{[\\regional{use_reg}]} "
+        expected = "\\textit{VerUsage:} \\textbf{\ipa{use_ver}} \\textit{Usage:} use_eng \\textit{\\textit{\zh{use_nat}}} \\textit{[\ipa{use_reg}]} "
         self.assertEqual(format_usage_notes(entry, font), expected)
         del entry
 
@@ -275,7 +285,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_encyclopedic_information("info_eng", language="eng")
         entry.set_encyclopedic_information("info_nat", language="nat")
         entry.set_encyclopedic_information("info_reg", language="reg")
-        expected = "\\vernacular{info_ver} info_eng \\national{info_nat} \\textit{[\\regional{info_reg}]} "
+        expected = "\\textbf{\ipa{info_ver}} info_eng \\textit{\zh{info_nat}} \\textit{[\ipa{info_reg}]} "
         self.assertEqual(format_encyclopedic_informations(entry, font), expected)
         del entry
 
@@ -285,7 +295,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_restriction("strict_eng", language="eng")
         entry.set_restriction("strict_nat", language="nat")
         entry.set_restriction("strict_reg", language="reg")
-        expected = "\\textit{VerRestrict:} \\vernacular{strict_ver} \\textit{Restrict:} strict_eng \\textit{\\national{strict_nat}} \\textit{[\\regional{strict_reg}]} "
+        expected = "\\textit{VerRestrict:} \\textbf{\ipa{strict_ver}} \\textit{Restrict:} strict_eng \\textit{\\textit{\zh{strict_nat}}} \\textit{[\ipa{strict_reg}]} "
         self.assertEqual(format_restrictions(entry, font), expected)
         del entry
 
@@ -301,7 +311,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.create_and_add_related_form("ant", mdf_semanticRelation["an"])
         entry.set_morphology("morph")
         entry.create_and_add_related_form("see", mdf_semanticRelation["cf"])
-        expected = "\\textit{Syn:} \\vernacular{syn}. \\textit{Ant:} \\vernacular{ant}. \\textit{Morph:} \\vernacular{morph}. \\textit{See:} \\vernacular{see} "
+        expected = "\\textit{Syn:} \\textbf{\ipa{syn}}. \\textit{Ant:} \\textbf{\ipa{ant}}. \\textit{Morph:} \\textbf{\ipa{morph}}. \\textit{See:} \\textbf{\ipa{see}} "
         self.assertEqual(format_related_forms(entry, font), expected)
         del entry
 
@@ -312,7 +322,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_variant_comment("com_eng", language="eng")
         entry.set_variant_comment("com_nat", language="nat")
         entry.set_variant_comment("com_reg", language="reg")
-        expected = "\\textit{Variant:} \\vernacular{var_ver} (com_eng) (\\national{com_nat}) (\\regional{com_reg}) "
+        expected = "\\textit{Variant:} \\textbf{\ipa{var_ver}} (com_eng) (\\textit{\zh{com_nat}}) (\ipa{com_reg}) "
         self.assertEqual(format_variant_forms(entry, font), expected)
         del entry
 
