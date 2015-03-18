@@ -77,6 +77,11 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                             tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
                             #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
+                        if paradigms is not None and len(lexical_entry.get_spelling_variants()) != 0:
+                            if lexical_entry.get_partOfSpeech() == "transitive verb":
+                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vt}" + EOL)
+                            elif lexical_entry.get_partOfSpeech() == "intransitive verb":
+                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vi}" + EOL)
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)
                         # Separate lexical entries from each others with a blank line

@@ -571,8 +571,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl].i$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vi");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_E."nɛ", $variable2);
+        $result = $result.caption($rime.".vi", "अकर्मक क्रिया  ".$theme_E."nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔûŋ &".$theme_A."ŋʌ"." &".$theme_F.$vowel2."tʌ")." \\\\ \n";
@@ -590,8 +589,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[aɛeiou].i$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vi");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_2A. "nɛ",$variable2);
+        $result = $result.caption($rime.".vi", "अकर्मक क्रिया  ".$theme_2A. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔûŋ &".$theme_2A."ŋʌ"." &".$theme_2A."ŋʌtʌ")." \\\\ \n";
@@ -610,8 +608,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl]t_t$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_E. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_O."u"." &".$theme_N."tʌ")." \\\\ \n";
@@ -649,8 +646,7 @@ sub generation {
     elsif ($variable1 =~ /[ptkmnŋrl]_t$/) {
         #$result = $result.transcr($theme_H."u ".$theme_I."ʉ  ". $theme_J."nu ".$theme_K.$vowel3."ta ".$theme_L."tɛ " .$theme_M."su ")."\n";
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_E. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_H."u"." &".$theme_K.$vowel3."tʌ")." \\\\ \n";
@@ -687,8 +683,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[aeiou]_t$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_2C. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_2C. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_2D."ŋʌ"." &".$theme_2E."̂ŋtʌ")." \\\\ \n";
@@ -722,8 +717,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl]t_1$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_E. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_O."u"." &".$theme_N."tʌ")." \\\\ \n";
@@ -745,8 +739,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[ptkmnŋrl]_1$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_E. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ mɛ &".$theme_H."u"." &".$theme_K.$vowel3."tʌ")." \\\\ \n";
@@ -769,8 +762,7 @@ sub generation {
 
     if ($variable1 =~ /[aeiou]_1$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("सकर्मक क्रिया  ".$theme_2C. "nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_2C. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔûŋ &".$theme_2D."ŋʌ"." &".$theme_2E."̂ŋtʌ")." \\\\ \n";
@@ -789,8 +781,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl]t_2$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_E."nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "अकर्मक क्रिया  ".$theme_E."nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत")."   \\\\ \n";
         $result = $result.transcr("mɛ & ".$theme_O."ʉ  & ".$theme_N."tɛ")."  \\\\ \n";
@@ -798,8 +789,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[ptkmnŋrl]_2$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vt");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_E."nɛ",$variable2);
+        $result = $result.caption($rime.".vt", "अकर्मक क्रिया  ".$theme_E."nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत")."   \\\\ \n";
         $result = $result.transcr("mɛ & ".$theme_O."ʉ  & ".$theme_N."tɛ")."  \\\\ \n";
@@ -808,8 +798,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl]_3$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vi");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_E."nɛ",$variable2);
+        $result = $result.caption($rime.".vi", "अकर्मक क्रिया  ".$theme_E."nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत")."   \\\\ \n";
         $result = $result.transcr("mɛ & ".$theme_D." & ".$theme_G2."tɛ")."   \\\\ \n";
@@ -817,8 +806,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[aɛeiou]_3$/) {
         $result = $result.begin_table();
-        $result = $result.label($rime.".vi");
-        $result = $result.caption("अकर्मक क्रिया  ".$theme_2C."nɛ",$variable2);
+        $result = $result.caption($rime.".vi", "अकर्मक क्रिया  ".$theme_2C."nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत")."   \\\\ \n";
         $result = $result.transcr("mɛ & ".$theme_2A." & ".$theme_2B."tɛ")."   \\\\ \n";
@@ -829,15 +817,11 @@ sub generation {
 }
 
 sub begin_table {
-    return "\\begin{table}[H]\n";
-}
-
-sub label {
-    return "\\label{".$_[0]."} \\centering\n";
+    return "\\begin{table}[H]\n\\centering\n";
 }
 
 sub caption{
-    return "\\caption{".transcr($_[0])."  \"".$_[1]."\"  }\n";
+    return "\\caption{\\label{".$_[0]."} ".transcr($_[1])."  \"".$_[2]."\"  }\n";
 }
 
 sub begin_tabular {
