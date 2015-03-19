@@ -195,15 +195,25 @@ def format_etymology(lexical_entry, font, language):
         #result += u"\u2018" + lexical_entry.get_etymology_comment(term_source_language=language) + u"\u2019" + ". "
     return result
 
-def format_paradigm(lexical_entry, font, languages):
+def format_paradigm(lexical_entry, font, language):
     result = ""
-    cl = False
+    translation = ""
     for paradigm in lexical_entry.get_paradigms():
-        if paradigm.get_paradigmLabel == "classifier" and paradigm.get_language() in languages:
-            if not cl:
-                result += " \\textit{CL~:}"
-                cl = True
-            result += " \\textsc{" + paradigm.get_paradigm() + "}"
+        if paradigm.get_paradigmLabel() == "classifier":
+            if paradigm.get_language() == config.xml.vernacular:
+                result += font[VERNACULAR](paradigm.get_paradigm()) + " "
+            if paradigm.get_language() == language:
+                translation = paradigm.get_paradigm()
+                if language == config.xml.French:
+                    translation = font[FRENCH](translation)
+                elif language == config.xml.English:
+                    translation = font[ENGLISH](translation)
+    if language == config.xml.French:
+        label = " \\textsc{cl}~: "
+    elif language == config.xml.English:
+        label = " \\textsc{cl}: "
+    if result != "":
+        result = label + result + translation
     return result
 
 def format_borrowed_word(lexical_entry, font, language):
@@ -242,7 +252,7 @@ def tex_fra(lexical_entry, font):
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.French, config.xml.national]),\
-        format_paradigm(lexical_entry, config.xml.font, [config.xml.vernacular, config.xml.national, config.xml.regional, config.xml.French]),\
+        format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
         tex.format_related_forms(lexical_entry, font))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
@@ -275,7 +285,7 @@ def tex_eng(lexical_entry, font):
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national]),\
-        format_paradigm(lexical_entry, config.xml.font, [config.xml.vernacular, config.xml.national, config.xml.regional, config.xml.English]),\
+        format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
         tex.format_related_forms(lexical_entry, font))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
