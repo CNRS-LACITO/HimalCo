@@ -220,13 +220,28 @@ def format_borrowed_word(lexical_entry, font, language):
     result = ""
     if lexical_entry.get_borrowed_word() is not None:
         if language == config.xml.French:
-            result += " \\textit{De:} "
+            result += " \\textit{De~:} "
         elif language == config.xml.English:
             result += " \\textit{From:} "
         result += lexical_entry.get_borrowed_word()
         if lexical_entry.get_written_form() is not None:
             result += " " + lexical_entry.get_written_form()
         result += ". "
+    return result
+
+def format_related_forms(lexical_entry, font, language=None):
+    import output.tex as tex
+    result = ""
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["hm"]):
+        if language == config.xml.French:
+            result += "\\textit{Voir~:} "
+        else:
+            result += "\\textit{See:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+    result += " "
     return result
 
 def tex_fra(lexical_entry, font):
@@ -253,7 +268,7 @@ def tex_fra(lexical_entry, font):
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.French, config.xml.national]),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
-        tex.format_related_forms(lexical_entry, font))
+        tex.format_related_forms(lexical_entry, font, language=config.xml.French) + format_related_forms(lexical_entry, font, language=config.xml.French))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
@@ -286,7 +301,7 @@ def tex_eng(lexical_entry, font):
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national]),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
-        tex.format_related_forms(lexical_entry, font))
+        tex.format_related_forms(lexical_entry, font, language=config.xml.English) + format_related_forms(lexical_entry, font, language=config.xml.English))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
