@@ -15,7 +15,7 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
-\usepackage[utf8]{inputenc} 
+
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 %%%%%%%%%quelques options de style%%%%%%%%
 %\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
@@ -24,7 +24,7 @@
 %\chapterstyle{veelo}
 %\setsecnumdepth{subsubsection}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
 \renewcommand \thesection {\arabic{section}.}
 \renewcommand \thesubsection {\arabic{section}.\arabic{subsection}.}
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
@@ -33,7 +33,7 @@
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-
+\newcommand{\dhatu}[1]{|\ipa{#1}|}
 \newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
 \newcommand{\wav}[1]{#1.wav}
 \newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
@@ -45,23 +45,25 @@
 \begin{document} 
 
 
-\title{Derivational verbal morphology in Khaling\footnote{This research received financial support from the Agence Nationale de la Recherche (HimalCo project, ANR-12-CORP-0006)  } }
+\title{Derivational verbal morphology in Khaling\footnote{This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). I would like to thank two anonymous reviewers for insightful suggestions.  } }
 \author{Guillaume Jacques }
 \maketitle
-Invited talk at the Li Fang-Kuei Society Young Scholars Symposium, the University of Washington in Seattle, August, 2013 
+
 
 \section{Introduction}
+In the Sino-Tibetan family, Kiranti languages are among those with the most complex verbal morphology. This morphology is both typologically unusual (\citealt{bickel07chintang}) and potentially ancient (\citealt{jacques12agreement, delancey14second}). A detailed description of the verbal morphology of all Kiranti languages is therefore of potential interest to both typologists and comparative linguists.
+
 Of all the Kiranti languages, Khaling is perhaps the one presenting the most complex set of stem alternations.  \citet{jacques12khaling} provide a description of these alternations and a model explaining how to build an abstract root  from which all alternations can be predicted.
 
-In addition to this complex inflexional morphology, Khaling also presents a rich system of derivation, which has clear parallels in the Kiranti subfamily. In this paper, only three derivations are described and analysed: applicative, incorporation and anticausative. Other valency alternations such as the reciprocal and causative, which involve periphrastic constructions, as well as the reflexive, which presents a special conjugation, are not discussed here and will be presented in forthcoming work.
+In addition to this complex inflexional morphology, Khaling also presents a rich system of derivation, which has clear parallels in the Kiranti subfamily. In this paper, three derivations are described and analysed: applicative/causative, incorporation and anticausative. Other valency alternations such as the reciprocal and causative, which involve periphrastic constructions, as well as the reflexive, which presents a special conjugation, are not discussed here and will be presented in forthcoming work.
 
  The present research is based on a database comprising 648 verb roots. Unless necessary, only root forms are quoted; the reader can refer to \citet{jacques12khaling} to determine conjugated forms from these roots.
 
 \section{Applicative}
-Of all Sino-Tibetan languages, the \ipa{--t} applicative suffix is best preserved in the Kiranti languages (\citealt{michailovsky85dental}). This suffix is also found in various branches of the family, though only in faint traces remain (see \citealt[410]{jacques04these} in Rgyalrong, \citealt{sagart04directions} in Chinese for instance; it is unclear whether Tibetan preserves any example of this suffix).
+Of all Sino-Tibetan languages, the \ipa{--t} applicative suffix is best preserved in the Kiranti languages (\citealt{michailovsky85dental}). This suffix is also found in various branches of the family, though only faint traces remain (see \citealt[410]{jacques04these} for Rgyalrong, \citealt{sagart04directions} for Chinese; it is unclear whether Tibetan preserves any example of this suffix).
 
 
-The applicative \ipa{--t} does not appear to be fully productive in Khaling, but it is attested by many examples, which can be classified into three groups. 
+The applicative \ipa{--t} does not appear to be fully productive in Khaling, but it is attested in many examples, which can be classified into three groups. 
 
 \subsection{Recipient / experiencer applicative}
 
@@ -74,25 +76,25 @@ The example ``to coax" is problematic.  If this comparison is correct, this verb
 \toprule
 base form (it) & meaning & applicative (tr) & meaning \\
 \midrule
-|ŋur| & roar & |ŋurt| &roar at\\
-|bhur| & be angry & |bhurt| &scold\\
-|bhrot| & shout & |bhrott| & call\\
-|ret| & laugh  & |rett| & laugh at\\
-|ŋin| & be afraid  & |ŋint| & be afraid of\\
-|tshil| & be frustrated  & |tshilt| & be dissatisfied with\\
-|lem| & sweet  & |lemt| & coax\\
+\dhatu{ŋur} & roar & \dhatu{ŋurt} &roar at\\
+\dhatu{bhur} & be angry & \dhatu{bhurt} &scold\\
+\dhatu{bhrot} & shout & \dhatu{bhrott} & call\\
+\dhatu{ret} & laugh  & \dhatu{rett} & laugh at\\
+\dhatu{ŋin} & be afraid  & \dhatu{ŋint} & be afraid of\\
+\dhatu{tshil} & be frustrated  & \dhatu{tshilt} & be dissatisfied with\\
+\dhatu{lem} & be sweet  & \dhatu{lemt} & coax\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Benefactive applicative}. 
 
-There is only one good example of benefactive applicative, |kur| ``to carry (vt)" > |kurt| ``to carry for so (vt)". Another possible example is |rep| ``to stand (vi)" > |rept| ``to respect, to make offerings (vt)", though if correct this comparison involves extensive semantic changes.
+There is only one good example of a benefactive applicative, \dhatu{kur} ``to carry (vt)" > \dhatu{kurt} ``to carry for so (vt)". Another possible example is \dhatu{rep} ``to stand (vi)" > \dhatu{rept} ``to respect, to make offerings (vt)", though if correct this comparison involves extensive semantic changes.
 
 \subsection{Causative}.
 
 
-Although Khaling has a productive causative construction involving the auxiliary |mutt|, the \ipa{--t} suffix is also used to form causative. Although most cases of causative / applicative isomorphism are due to grammaticalization from a common source, without necessary implying a change causative > applicative or the reverse (\citealt[64]{peterson07appl}), in this particular case the source of \ipa{--t} is not recoverable anymore; both applicative and causative meanings are also found in related languages for cognates of this suffix.
+Although Khaling has a productive causative construction involving the auxiliary \dhatu{mutt}, the \ipa{--t} suffix is also used to form causatives. Although most cases of causative / applicative isomorphism are due to grammaticalization from a common source, without necessarily implying a change causative > applicative or the reverse (\citealt[64]{peterson07appl}), in this particular case the source of \ipa{--t} is not recoverable anymore; both applicative and causative meanings are also found in related languages for cognates of this suffix.
 
 31 examples of causative \ipa{--t} have been found; table \ref{tab:caus} present some selected representative examples.
 
@@ -102,105 +104,105 @@ Although Khaling has a productive causative construction involving the auxiliary
 \toprule
 base form (it) & meaning & applicative (tr) & meaning \\
 \midrule
-|ʔot| & come back & |ʔott| &bring back\\
-|ghur| & run & |ghurt| &drive, cause to run\\
-|tshɛ| & spread (it) & |tshɛtt| & expand (vt)\\
-|thin| & wake up (it) & |thint| &wake up (vt)\\
-|pi| & come (level) & |pit| &bring (level)\\
-|bher| & fly & |bhert| &cause to fly\\
+\dhatu{ʔot} & come back & \dhatu{ʔott} &bring back\\
+\dhatu{ghur} & run & \dhatu{ghurt} &drive, cause to run\\
+\dhatu{tshɛ} & spread (intr) & \dhatu{tshɛtt} & expand (vt)\\
+\dhatu{thin} & wake up (intr) & \dhatu{thint} &wake up (vt)\\
+\dhatu{pi} & come (level) & \dhatu{pit} &bring (level)\\
+\dhatu{bher} & fly & \dhatu{bhert} &cause to fly\\
 \bottomrule
 \end{tabular}
 \end{table}
-Intransitive verbs with open syllable receive two distinct treatments. Some have a causative in simple \ipa{--t} (the motion verbs |pi| ``come (level)" > |pit| ``bring (level)"\footnote{Interestingly, the only known trace of the \ipa{--t} suffix in Rgyalrong involves the probable cognates of this pair: \ipa{ɣi} ``come" (<*wi), \ipa{ɣɯt} ``bring" (<*wit) in Japhug Rgyalrong.} and |ɦo| ``come" > |ɦot| ``bring"). Other ones have double \ipa{--tt}: |tshɛ| ``spread (vi)" > |tshɛtt| ``expand (vt)", |ghrɛ| ``to light up, to burn" > |ghrɛtt| ``to put on (the light)".
+Intransitive verbs with open syllable receive two distinct treatments. Some have a causative in simple \ipa{--t} (the motion verbs \dhatu{pi} ``come (level)" > \dhatu{pit} ``bring (level)"\footnote{Interestingly, the only known trace of the \ipa{--t} suffix in Japhug involves the probable cognates of this pair: \ipa{ɣi} ``come" (<*wi), \ipa{ɣɯt} ``bring" (<*wit) in Japhug Rgyalrong.} and \dhatu{ɦo} ``come" > \dhatu{ɦot} ``bring"). Other ones have double \ipa{--tt}: \dhatu{tshɛ} ``spread (vi)" > \dhatu{tshɛtt} ``expand (vt)", \dhatu{ghrɛ} ``to light up, to burn" > \dhatu{ghrɛtt} ``to put on (the light)".
 
 An important proportion (10 out of 31) of causative verbs in \ipa{--t} have a root ending in \ipa{--n}. This bias is by no means fortuitous, and requires a detailed explanation.
 
-As shown in \citet{jacques12khaling}, the conjugations of CVC roots and of CVCt roots in Khaling are almost entirely identical: 1d<>3, 1p<>3, 2d<>3 and all inverse forms are identical between the two conjugation classes. Only 1sg>3, 2sg>3, and 3>3 forms are distinct, as shown for instance in table \ref{tab:opt} using a minimal pair of transitive verbs with  the CVC conjugation in |-op| and the CVCt conjugation in |-opt|.
+As shown in \citet{jacques12khaling}, the conjugations of CVC roots and of CVCt roots in Khaling are almost entirely identical: \textsc{1d}$\longleftrightarrow$3, \textsc{1p}$\longleftrightarrow$3, 2d$\longleftrightarrow$3 and all inverse forms are identical between the two conjugation classes. Only \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3, and 3$\rightarrow$3 forms are distinct, as shown for instance in table \ref{tab:opt} using a minimal pair of transitive verbs with  the CVC conjugation in |-op| and the CVCt conjugation in |-opt|.
 
 \begin{table}[h]
-\caption{A comparison of some forms of the |op| and the |opt| paradigms, non past direct forms} \label{tab:opt} \centering
+\caption{A comparison of some forms of the \dhatu{op} and the \dhatu{opt} paradigms, non past direct forms} \label{tab:opt} \centering
 \begin{tabular}{llllll}
 \toprule
-\textsc{} &	|mop| ``grope''  &  	|mopt| ``spill''  \\  	
+\textsc{} &	\dhatu{mop} ``grope''  &  	\dhatu{mopt} ``spill''  \\  	
 \midrule
-\textsc{1sg>3} &	\ipa{mobu}&  \grise{}  	\ipa{moɔptu}  \\  	
-\textsc{1di>3} &	\ipa{mɵpi}  &  	\ipa{mɵpi}  \\  	
-\textsc{1de>3} &	\ipa{mɵpu}  &  	\ipa{mɵpu}  \\  	
-\textsc{1pi>3} &	\ipa{moɔpki}  &  	\ipa{moɔpki}  \\  	
-\textsc{1pe>3} &	\ipa{moɔpkʌ}  &  	\ipa{moɔpkʌ}  \\  	
-\textsc{2sg>3} &	\ipa{ʔimɵ̄ːbʉ}  &   \grise{} 	\ipa{ʔimoɔptʉ}  \\  	
-\textsc{2du>3} &	\ipa{ʔimɵpi}  &  	\ipa{ʔimɵpi}  \\  	
-\textsc{2pl>3} &	\ipa{ʔimoɔ̂mni}  &  	\ipa{ʔimoɔ̂mni}  \\  	
-\textsc{3sg>3} &	\ipa{mɵ̄ːbʉ}  &  \grise{}  	\ipa{moɔptʉ}  \\  	
+\textsc{1sg$\rightarrow$3} &	\ipa{mobu}&  \grise{}  	\ipa{moɔptu}  \\  	
+\textsc{1di$\rightarrow$3} &	\ipa{mɵpi}  &  	\ipa{mɵpi}  \\  	
+\textsc{1de$\rightarrow$3} &	\ipa{mɵpu}  &  	\ipa{mɵpu}  \\  	
+\textsc{1pi$\rightarrow$3} &	\ipa{moɔpki}  &  	\ipa{moɔpki}  \\  	
+\textsc{1pe$\rightarrow$3} &	\ipa{moɔpkʌ}  &  	\ipa{moɔpkʌ}  \\  	
+\textsc{2sg$\rightarrow$3} &	\ipa{ʔimɵ̄ːbʉ}  &   \grise{} 	\ipa{ʔimoɔptʉ}  \\  	
+\textsc{2du$\rightarrow$3} &	\ipa{ʔimɵpi}  &  	\ipa{ʔimɵpi}  \\  	
+\textsc{2pl$\rightarrow$3} &	\ipa{ʔimoɔ̂mni}  &  	\ipa{ʔimoɔ̂mni}  \\  	
+\textsc{3sg$\rightarrow$3} &	\ipa{mɵ̄ːbʉ}  &  \grise{}  	\ipa{moɔptʉ}  \\  	
 \bottomrule
 \end{tabular}
 \end{table}
 
-Thus, analogical leveling could easily lead to the merger of CVC and CVCt conjugation classes. Incidentally, in Khaling, as in Dumi (\citealt{driem93dumi}), there are not transitive \ipa{--n} roots, in other words, all verb roots ending in \ipa{--n} are intransitive.  If a transitive CVn paradigm had existed, it is possible, mechanically applying the morphophonological rules described in \citet{jacques12khaling}, to predict the expected shapes. In table \ref{tab:int}, we present a portion of the transitive |-int| paradigm together with the hypothesized forms of the transitive |-in| paradigm.
+Thus, analogical leveling could easily lead to the merger of CVC and CVCt conjugation classes. Incidentally, in Khaling, as in Dumi (\citealt{driem93dumi}), there are no transitive \ipa{--n} roots. In other words, all verb roots ending in \ipa{--n} are intransitive.  If a transitive CVn paradigm had existed, it is possible, mechanically applying the morphophonological rules described in \citet{jacques12khaling}, to predict the expected shapes. In table \ref{tab:int}, we present a portion of the transitive |-int| paradigm together with the hypothesized forms of the transitive |-in| paradigm.
 
 \begin{table}[h]
-\caption{The |int| paradigm in comparison to the hypothesized transitive |-in| paradigm, non past direct forms} \label{tab:int} \centering
+\caption{The \dhatu{int} paradigm in comparison to the hypothesized transitive |-in| paradigm, non past direct forms} \label{tab:int} \centering
 \begin{tabular}{llllll}
 \toprule
-\textsc{} &	*|thin|  &  	|thint| ``wake (vt)''  \\  		
+\textsc{} &	*\dhatu{thin}  &  	\dhatu{thint} ``wake (vt)''  \\  		
 \midrule
-\textsc{1sg>3} &	\ipa{*thinu} \grise{}  &  	\ipa{thʌ̄ndu}  \\  		
-\textsc{1sg>3} &	\ipa{thīːʦi}  &  	\ipa{thīːʦi}  \\  		
-\textsc{1di>3} &	\ipa{thīːʦu}  &  	\ipa{thīːʦu}  \\  		
-\textsc{1de>3} &	\ipa{thʌ̄jki}  &  	\ipa{thʌ̄jki}  \\  		
-\textsc{1pi>3} &	\ipa{thʌ̄jkʌ}  &  	\ipa{thʌ̄jkʌ}  \\  		
-\textsc{1pe>3} &	\ipa{*ʔithīːnʉ}\grise{}   &  	\ipa{ʔithʌ̄ndʉ}  \\  		
-\textsc{2sg>3} &	\ipa{ʔithīːʦi}  &  	\ipa{ʔithīːʦi}  \\  		
-\textsc{2du>3} &	\ipa{ʔithʌ̄jni}  &  	\ipa{ʔithʌ̄jni}  \\  		
-\textsc{2pl>3} &	\ipa{*thīːnʉ}\grise{}   &  	\ipa{thʌ̄ndʉ}  \\  		
+\textsc{1sg$\rightarrow$3} &	\ipa{*thinu} \grise{}  &  	\ipa{thʌ̄ndu}  \\  		
+\textsc{1sg$\rightarrow$3} &	\ipa{thīːʦi}  &  	\ipa{thīːʦi}  \\  		
+\textsc{1di$\rightarrow$3} &	\ipa{thīːʦu}  &  	\ipa{thīːʦu}  \\  		
+\textsc{1de$\rightarrow$3} &	\ipa{thʌ̄jki}  &  	\ipa{thʌ̄jki}  \\  		
+\textsc{1pi$\rightarrow$3} &	\ipa{thʌ̄jkʌ}  &  	\ipa{thʌ̄jkʌ}  \\  		
+\textsc{1pe$\rightarrow$3} &	\ipa{*ʔithīːnʉ}\grise{}   &  	\ipa{ʔithʌ̄ndʉ}  \\  		
+\textsc{2sg$\rightarrow$3} &	\ipa{ʔithīːʦi}  &  	\ipa{ʔithīːʦi}  \\  		
+\textsc{2du$\rightarrow$3} &	\ipa{ʔithʌ̄jni}  &  	\ipa{ʔithʌ̄jni}  \\  		
+\textsc{2pl$\rightarrow$3} &	\ipa{*thīːnʉ}\grise{}   &  	\ipa{thʌ̄ndʉ}  \\  		
 \bottomrule
 \end{tabular}
 \end{table}
 The two paradigms are identical except for a few forms. Thus, it is probable that the transitive CVn conjugation (which does exist in other Kiranti languages like Limbu) merged with the CVnt conjugation, and that all CVn verbs became CVnt by way of analogical levelling (not sound change).
 
-Now, aside from overt marking, a common means of changing valency in Khaling is simply lability: many roots can be conjugated either transitively or intransitively. For instance |bhrok| ``break" can be conjugated both ways. 
+Now, aside from overt marking, a common means of changing valency in Khaling is simply lability: many roots can be conjugated either transitively or intransitively. For instance \dhatu{bhrok} ``break" can be conjugated both ways. 
 
 
-Thus, it is likely that some of the apparent ``causative" verbs belonging to the CVnt conjugation class (such as |thint| ``wake up" presented in table \ref{tab:int}) originate from transitive CVn roots, before the two classes were merged, which would explain the over-representation of this conjugation class among causative \ipa{--t} verbs. In many of these verbs, the apparent --t suffix is only a mirage, and does not reflect a genuine derivation, it is instead a byproduct of lability and analogical pressure on paradigms.
+Thus, it is likely that some of the apparent ``causative" verbs belonging to the CVnt conjugation class (such as \dhatu{thint} ``wake up" presented in table \ref{tab:int}) originate from transitive CVn roots, before the two classes were merged, which would explain the over-representation of this conjugation class among causative \ipa{--t} verbs. In many of these verbs, the apparent --t suffix is only a mirage, and does not reflect a genuine derivation, it is instead a byproduct of lability and analogical pressure on paradigms.
 
 
 
 \subsection{Vestigial --t}
 
-In some cases only the applicative/causative form survives, while the bas intransitive form has disappeared.  A good example is provided by |ʔipt| ``put to sleep (vt)". No root *|ʔip| exists in Khaling (though cognates of it can be found even outside of Kiranti). The simplex verb has been replaced by the reflexive form of |ʔipt|, |ʔipt-si| ``to sleep (vi), whose infinitive is /ʔʌ̂msinɛ/. Interestingly, this replacement appears to be very old, as all Kiranti languages appear to form their verb ``to sleep" with a reflexive form. 
+In some cases only the applicative/causative form survives, while the base intransitive form has disappeared.  A good example is provided by \dhatu{ʔipt} ``put to sleep (vt)". No root *\dhatu{ʔip} exists in Khaling (though cognates of this verb can be found even outside of Kiranti, as the Japhug possessed noun \ipa{--ʑɯβ} `sleep' < *\ipa{jip}; see \citealt{matisoff03} for further examples). The simplex verb has been replaced by the reflexive form of \dhatu{ʔipt}, |ʔipt-si| ``to sleep (vi), whose infinitive is /ʔʌ̂msinɛ/. Interestingly, this replacement appears to be very old, as all Kiranti languages appear to form their verb ``to sleep" with a reflexive form. 
 
-In Limbu, its cognate |ips| ``to sleep" (\citealt{michailovsky02dico}) is not transparently a reflexive verb, but its |-s| element is likely to be derived from the |-si| reflexive suffix.\footnote{A detailed investigation of this question is beyond the scope of this paper, and would involve to study in detail the origin of the reflexive forms in Limbu, which present some idiosyncrasies in comparison to those of other Kiranti languages.}
+In Limbu, its cognate \dhatu{ips} ``to sleep" (\citealt{michailovsky02dico}) is not transparently a reflexive verb, but its |-s| element is likely to be derived from the |-si| reflexive suffix.\footnote{A full investigation of this question is beyond the scope of this paper, and would involve a detailed study of the origin of the reflexive forms in Limbu, which present some idiosyncrasies in comparison to those of other Kiranti languages.}
 
 This lexical replacement (by a derived form of the same root) appears to be a common Kiranti innovation, and must thus be taken into account in studying language classification.
 
-It should also be noted that a vestigial \ipa{--t} appears in many deponent verbs (see , syntactically intransitive verbs but morphologically transitive, such as |ʔopt| ``rise (of the sun", |ʔomt| ``ripen", |bhukt| ``explode" etc; see \citealt{michailovsky97deponent} for similar examples in Limbu).
+It should also be noted that a vestigial \ipa{--t} appears in many deponent verbs (syntactically intransitive verbs but morphologically transitive, such as \dhatu{ʔopt} ``rise (of the sun", \dhatu{ʔomt} ``ripen", \dhatu{bhukt} ``explode" etc; see \citealt{michailovsky97deponent} for similar examples in Limbu).
 
 
 
  \subsection{Other suffixes}
-We find an isolated example |phɛt| ``exchange, swap (vt)" > |phɛnt| ``change (a new one) (vt)" which appears to involve nasalization of the final stop (as mentioned above, the \ipa{--nt} transitive root is probably an ancient transitive \ipa{--n} root). Without external comparisons, this example is unlikely to be explainable.
+We find an isolated example \dhatu{phɛt} ``exchange, swap (vt)" > \dhatu{phɛnt} ``change (a new one) (vt)" which appears to involve nasalization of the final stop (as mentioned above, the \ipa{--nt} transitive root is probably an ancient transitive \ipa{--n} root). Without external comparisons, however, this example is unlikely to be explainable.
 
 \section{Incorporation and denominal verb}
-Unlike Rgyalrong languages (\citealt{jacques12incorp}), denominal derivation is not widespread in Khaling. The only clear example of a verb deriving from a noun (by zero-derivation) is the intransitive |ti| ``to lay eggs" from \ipa{ti} ``egg".
+Unlike Rgyalrong languages (\citealt{jacques12incorp}), denominal derivation is not widespread in Khaling. The only clear example of a verb deriving from a noun (by zero-derivation) is the intransitive \dhatu{ti} ``to lay eggs" from \ipa{ti} ``egg".
 
 
 There are only two potential examples of incorporation:
 
 \begin{enumerate}
-\item |lɛm-thi| ``to walk (vi)" (with the second person prefix inserted between the incorporated noun and the verb root). \ipa{lɛ̄m} is the noun meaning ``path, trail", and |thi| does not appear to exist on its own (there is a verb |thi| meaning ``to tumble", but probably unrelated).
-\item |tsɛ-ʔi| ``to be bad (vi)" and |tsɛ-nu| ``to be nice (vi)". |ʔi| exists as a verb ``to be angry (vi)" and |nu| ``to be nice". The etymology of the |tsɛ| element is unclear. The second person prefix appears before |tsɛ--|, though these forms are very rare.
+\item \dhatu{lɛm-thi} ``to walk (vi)" (with the second person prefix inserted between the incorporated noun and the verb root). \ipa{lɛ̄m} is the noun meaning ``path, trail", and \dhatu{thi} does not appear to exist on its own (there is a verb \dhatu{thi} meaning ``to tumble", but it is probably unrelated). The second person prefix appears after the incorporated noun (\ipa{lɛ̄m-ʔi-thi} `you walk').
+\item \dhatu{tsɛ-ʔi} ``to be bad (vi)" and \dhatu{tsɛ-nu} ``to be nice (vi)". \dhatu{ʔi} exists as a verb ``to be angry (vi)" and \dhatu{nu} ``to be nice". The etymology of the \dhatu{tsɛ} element is unclear. The second person prefix appears before |tsɛ--| in the reflexive form (\ipa{ʔi-tsɛʔî-nsi} \textsc{2/inv}-be.unpleasant-\textsc{refl} `you are embarassed')
 \end{enumerate}
 
 \section{Anticausative}
-Khaling, like all Kiranti languages and most Sino-Tibetan language, have pair exhibiting voicing alternation, whereby the voiced form is intransitive, and the unvoiced one transitive, for instance |dzhɛm| ``to be lost" and |tsɛm| ``to lose". Although some scholars are prone to interpreting such alternations as originating from an ``*s- causative prefix" (which devoiced the initial consonant of the transitive form), this is not the only, or the most probable explanation of these alternations.
+Khaling, like all Kiranti languages and most Sino-Tibetan languages, have verb pairs exhibiting voicing alternation, whereby the voiced form is intransitive, and the unvoiced one transitive, for instance \dhatu{dzhɛm} ``to be lost" and \dhatu{tsɛm} ``to lose". Although some scholars are prone to interpreting such alternations as originating from an ``*s- causative prefix" (which devoiced the initial consonant of the transitive form), this is not the only, or the most probable explanation for these alternations.
 
-In Rgyalrong languages, the causative prefix \ipa{sɯ--, z--} is not a reconstruction, and is still fully productive (it can even be applied to Chinese loanwords). These languages, however, also present voicing alternations, which are more specifically \textit{anticausative} derivation. The anticausative prenasalization derives an intransitive verb out of a transitive one, which unlike the passive (which also exist in Japhug, see \citealt{jacques12demotion}), expresses an action occurring spontaneously and without external agent. The prenasalization even applies to one Tibetan loanword \ipa{χtɤr} ``to scatter (vt)" (from \textit{gtor}) > \ipa{ʁndɤr} ``to get scattered (vi)".
+In Rgyalrong languages, the causative prefix \ipa{sɯ--, z--} is not a reconstruction, and is still fully productive (it can even be applied to Chinese loanwords). These languages, however, also present voicing alternations, which are more specifically an \textit{anticausative} derivation. The anticausative prenasalization derives an intransitive verb out of a transitive one, which unlike the passive (which also exist in Japhug, see \citealt{jacques12demotion}), expresses an action occurring spontaneously and without an external agent. The prenasalization even applies to one Tibetan loanword \ipa{χtɤr} ``to scatter (vt)" (from \textit{gtor}) > \ipa{ʁndɤr} ``to get scattered (vi)".
 
 
 The Rgyalrong parallel thus makes it more likely to analyze the voicing alternations in Khaling as the remnants of anticausative prenasalization, though as we will see this explanation may not hold true for all forms.
 
 
-In Khaling, we find seven verb pairs with an alternation between an unvoiced (aspirated or non aspirated) stop/affricate and a voice aspirate one (Table \ref{tab:anticaus}; the last example is doutful).
+In Khaling, we find seven verb pairs with an alternation between an unvoiced (aspirated or non aspirated) stop/affricate and a voiced aspirate one (Table \ref{tab:anticaus}; the last example is doutful).
 
 \begin{table}[H]
 \caption{Alternation between unvoiced and voiced aspirated verb roots in Khaling} \label{tab:anticaus}
@@ -208,41 +210,41 @@ In Khaling, we find seven verb pairs with an alternation between an unvoiced (as
 \toprule
 Transitive & Meaning &Intransitve& Meaning \\
 \midrule
-|tsɛm| & lose & |dzhɛm| &be lost \\
-|tsɛp| & be able to do (sth) & |dzhɛp| &be possible \\
-|kik| & tie & |ghik| &  hang oneself by accident\\
+\dhatu{tsɛm} & lose & \dhatu{dzhɛm} &be lost \\
+\dhatu{tsɛp} & be able to do (sth) & \dhatu{dzhɛp} &be possible \\
+\dhatu{kik} & tie & \dhatu{ghik} &  hang oneself by accident\\
 &&& on a rope (of a goat) \\
-|phʉk| & wake up & |bhʉkt| &ferment (of alcohol) \\
+\dhatu{phʉk} & wake up & \dhatu{bhʉkt} &ferment (of alcohol) \\
 \midrule
-|kɛnt| & make a hole & |ghɛn| &get a hole \\
-|kukt| & bend & |ghuk| &be bent\\
+\dhatu{kɛnt} & make a hole & \dhatu{ghɛn} &get a hole \\
+\dhatu{kukt} & bend & \dhatu{ghuk} &be bent\\
 \midrule
-|phrok| & untie & |bhrok| &break \\
+\dhatu{phrok} & untie & \dhatu{bhrok} &break \\
 \bottomrule
 \end{tabular}
 \end{table}
-Some of these pairs have cognates in other Sino-Tibetan languages. |kukt| / |ghuk| is cognate to Japhug \ipa{kɤɣ} ``to bend", \ipa{ŋgɤɣ} ``to be bent" (*--ɔk), and |kik| / |ghik| to Chinese \zh{繫} kejH < *kˁek-s, \zh{系} ɦejH < *gˁek-s.\footnote{\citet{bs13oc} reconstruct these forms slightly differently; we use here  reconstructions which represent  a later stage of Old Chinese, and which are not committal to any particular theory of Old Chinese reconstruction.}
+Some of these pairs have cognates in other Sino-Tibetan languages. \dhatu{kukt} / \dhatu{ghuk} is cognate to Japhug \ipa{kɤɣ} ``to bend", \ipa{ŋgɤɣ} ``to be bent" (*--ɔk), and \dhatu{kik} / \dhatu{ghik} to Chinese \zh{繫} \ipa{kejH} < *\ipa{kˁek-s}, \zh{系} \ipa{ɦejH} < *\ipa{gˁek-s}.\footnote{\citet{bs14oc} reconstruct these forms slightly differently; we use here  reconstructions which represent  a later stage of Old Chinese, and which are not committal to any particular theory of Old Chinese reconstruction.}
 
 The comparison with Japhug shows that the voiced aspirated form corresponds well to the anticausative prenasalization, and therefore that these examples should not be accounted for by assuming the existence of a causative prefix *s-- in the transitive form.
 
-In addition to these forms, the anticausative verbs |ghuk| and |ghɛn| derive causatives in \ipa{--t} |ghukt| and |ghɛnt|, whose meaning are nevertheless different from the base transitive verbs. Thus, while |kukt| can mean ``bend a bamboo into a tweezer" and ``hurt people' feelings", |ghukt| has a more predictable meaning ``to bend" (as the snow bends a branch for instance); while |kɛnt| means ``bore, drill (wood)", |ghɛnt| rather means ``make a hole (as a rat gnawing through a sack of rice)".
+In addition to these forms, the anticausative verbs \dhatu{ghuk} and \dhatu{ghɛn} derive causatives in \ipa{--t} \dhatu{ghukt} and \dhatu{ghɛnt}, whose meaning are nevertheless different from the base transitive verbs. Thus, while \dhatu{kukt} can mean ``bend a bamboo into a tweezer" and ``hurt people' feelings", \dhatu{ghukt} has a more predictable meaning ``to bend" (as the snow bends a branch for instance); while \dhatu{kɛnt} means ``bore, drill (wood)", \dhatu{ghɛnt} rather means ``make a hole (as a rat gnawing through a sack of rice)".
 
-These secondary causative derivations occur with anticausative verbs derived from transitive verbs with CVCt roots; there are however too few examples to determine whether a correlation exists between the possibility of double derivation and the fact that the base verb have CVCt roots.
+These secondary causative derivations occur with anticausative verbs derived from transitive verbs with CVCt roots; there are however too few examples to determine whether a correlation exists between the possibility of double derivation and the fact that the base verb involve CVCt roots.
 
-These verb pairs suggest that the contrast between plain voiced and voiced aspirated in Khaling might be of some importance to the reconstruction of proto-Kiranti: plain voiced would come from proto-Kiranti voiced stops, and voiced aspirated from proto-Kiranti prenasalized stops.\footnote{Note that an additional series of voice stops should be reconstructed, where Northern Khaling dialects have plain voiced, and southern Khaling dialects have voiced aspirated, as the word for ``meet" |dum| in Northern Khaling and |dhum| in Southern Khaling.}
+These verb pairs suggest that the contrast between plain voiced and voiced aspirated in Khaling might be of some importance to the reconstruction of proto-Kiranti: plain voiced would come from proto-Kiranti voiced stops, and voiced aspirated from proto-Kiranti prenasalized stops.\footnote{Note that an additional series of voice stops should be reconstructed, where Northern Khaling dialects have plain voiced, and southern Khaling dialects have voiced aspirated, as the word for ``meet" \dhatu{dum} in Northern Khaling and \dhatu{dhum} in Southern Khaling.}
 
 
-Aside from these examples, we find the pair |plum| ``to rinse in water" and |blum| ``to sink". This pair differs from the preceding ones in two ways; First, the alternation is between unvoiced stop and\textit{ plain voiced}, instead of voiced aspirated. Second, the verb |blum| is actually transitive, but can only be used in inverse forms (as illustrated by example \ref{ex:blum}; this verb cannot be conjugated as the corresponding intransitive form *blʉm-ʌtʌ sink-\textsc{1sgS/O.pst}).
+Aside from these examples, we find the pair \dhatu{plum} ``to rinse in water" and \dhatu{blum} ``to sink". This pair differs from the preceding ones in two ways; First, the alternation is between unvoiced stop and\textit{ plain voiced}, instead of voiced aspirated. Second, the verb \dhatu{blum} is actually transitive, but can only be used in inverse forms (as illustrated by example \ref{ex:blum}; this verb cannot be conjugated as an intransitive form *\ipa{blʉm-ʌtʌ} (sink-\textsc{1sgS/O.pst}) without the inverse prefix \ipa{ʔi--}.
 
 \begin{exe}
 \ex \label{ex:blum}
 \gll \ipa{ku-ʔɛ} \ipa{ʔi-blʉm-ʌtʌ}\\
-water-\textsc{erg} \textsc{inv}-sink-\textsc{1sgS/O.pst} \\
+water-\textsc{erg} \textsc{2/inv}-sink-\textsc{1sgS/O.pst} \\
 \glt I sank in the water.
 \end{exe}
 
  
-This example, unlike the previous one, cannot be analyzed as a anticausative derivation; its exact origin is difficult to ascertain without external comparanda in non-Kiranti languages; it is possible that here |blum| is the base verb and that |plum| is derived from it by *s-- prefixation.
+This example, unlike the previous one, cannot be analyzed as a anticausative derivation. Its exact origin is difficult to ascertain without external comparanda in non-Kiranti languages. It is possible that here \dhatu{blum} is the base verb and that \dhatu{plum} is derived from it by *s-- prefixation.
  
 
 
