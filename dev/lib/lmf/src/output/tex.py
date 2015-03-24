@@ -383,12 +383,12 @@ def format_examples(lexical_entry, font, languages=None):
                 for example in context.find_written_forms(language):
                     if language == config.xml.vernacular:
                         tmp += "\\sn " + font[VERNACULAR](example) + EOL
-                    elif language == config.xml.English:
-                        tmp += "\\trans " + example + EOL
                     elif language == config.xml.national:
                         tmp += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
                     elif language == config.xml.regional:
                         tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+                    else: # language == config.xml.English
+                        tmp += "\\trans " + example + EOL
             # LaTeX does not support empty examples
             if len(tmp) != 0:
                 result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL

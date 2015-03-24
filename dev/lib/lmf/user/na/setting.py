@@ -195,6 +195,19 @@ def format_etymology(lexical_entry, font, language):
         #result += u"\u2018" + lexical_entry.get_etymology_comment(term_source_language=language) + u"\u2019" + ". "
     return result
 
+def format_borrowed_word(lexical_entry, font, language):
+    result = ""
+    if lexical_entry.get_borrowed_word() is not None:
+        if language == config.xml.French:
+            result += " \\textit{De~:} "
+        elif language == config.xml.English:
+            result += " \\textit{From:} "
+        result += lexical_entry.get_borrowed_word()
+        if lexical_entry.get_written_form() is not None:
+            result += " " + lexical_entry.get_written_form()
+        result += ". "
+    return result
+
 def format_paradigm(lexical_entry, font, language):
     result = ""
     translation = ""
@@ -214,19 +227,6 @@ def format_paradigm(lexical_entry, font, language):
         label = " \\textsc{cl}: "
     if result != "":
         result = label + result + translation
-    return result
-
-def format_borrowed_word(lexical_entry, font, language):
-    result = ""
-    if lexical_entry.get_borrowed_word() is not None:
-        if language == config.xml.French:
-            result += " \\textit{De~:} "
-        elif language == config.xml.English:
-            result += " \\textit{From:} "
-        result += lexical_entry.get_borrowed_word()
-        if lexical_entry.get_written_form() is not None:
-            result += " " + lexical_entry.get_written_form()
-        result += ". "
     return result
 
 def format_related_forms(lexical_entry, font, language=None):
