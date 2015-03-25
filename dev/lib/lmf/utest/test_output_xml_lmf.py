@@ -78,7 +78,7 @@ class TestXmlLmfFunctions(unittest.TestCase):
         # Create output element and sub-elements
         output = Element("RelatedForm", targets="lx")
         sub = SubElement(output, "a")
-        sub.attrib["href"] = "lx_id"
+        sub.attrib["href"] = "lx_id1"
         # Fill in text
         sub.text = "lx"
         result = add_link(form, input)

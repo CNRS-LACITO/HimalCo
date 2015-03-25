@@ -128,8 +128,32 @@ def handle_tones(text):
         if re.search(pattern, text):
             found = re.match(pattern, text)
             for i in range (0, syllable_nb):
-                result += found.group(i*3+1) + found.group(i*3+2) + "\\textsubscript{" + found.group(i*3+3) + "}"
+                result += found.group(i*3+1) + found.group(i*3+2)
+                if len(found.group(i*3+3)) != 0:
+                    result += "\\textsubscript{" + found.group(i*3+3) + "}"
     return result
+
+def format_uid(lexical_entry, font):
+    """Forbidden characters in filenames on Windows:
+    < (less than) => none
+    > (greater than) => none
+    : (colon) => none
+    " (double quote) => none
+    / (forward slash) => none
+    \ (backslash) => £
+    | (vertical bar; pipe) => €
+    ? (question mark) => Q
+    * (asterisk) => F
+    """
+    import output.tex as tex
+    text = tex.format_uid(lexical_entry, font)
+    if text.find("|") != -1:
+        text = text.replace('|', u"€")
+    if text.find("?") != -1:
+        text = text.replace('?', 'Q')
+    if text.find("*") != -1:
+        text = text.replace('*', 'F')
+    return text
 
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
@@ -257,8 +281,9 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[FRENCH], language=config.xml.French),\
@@ -290,8 +315,9 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[ENGLISH], language=config.xml.English),\

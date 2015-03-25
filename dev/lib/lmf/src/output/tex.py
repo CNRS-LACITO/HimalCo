@@ -120,22 +120,20 @@ def handle_font(text):
     return text
 
 def handle_reserved(text):
-    """ Handle reserved characters: \ { } $ # & _ ^ ~ % [ ].
+    """ Handle reserved characters $ & % # _ ^ except \ { }.
     """
     if text.find("$") != -1:
-        text = text.replace('$', '')
-    if text.find("#") != -1:
-        text = text.replace('#', '\#')
+        text = text.replace('$', '\$')
     if text.find("& ") != -1:
         text = text.replace('& ', '\& ')
+    if text.find("%") != -1:
+        text = text.replace('%', '\%')
+    if text.find("#") != -1:
+        text = text.replace('#', '\#')
     if text.find("_") != -1:
-        text = text.replace('_', '\_').replace("\string\_", "\string_")
+        text = text.replace('_', "\string_")
     if text.find("^") != -1:
-        text = text.replace('^', '\^')
-    #if text.find("[") != -1:
-        #text = text.replace('[', '\[')
-    #if text.find("]") != -1:
-        #text = text.replace(']', '\]')
+        text = text.replace('^', "\\textasciicircum ")
     return text
 
 def handle_fi(text):
@@ -189,8 +187,8 @@ def handle_caps(text):
     """
     import re
     if text.encode("utf8").find("°") != -1:
-        # LaTeX does not support '#' character inside '\mytextsc' command
-        text = re.sub(r"(\w*)°([^\s\.,)+/:\#]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
+        # LaTeX does not support '#' nor '_' characters inside '\mytextsc' command
+        text = re.sub(r"(\w*)°([^\s\.,)+/:\#\_]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
     return text
 
 ## Functions to process LaTeX fields (output)
@@ -201,8 +199,15 @@ def format_uid(lexical_entry, font):
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing the unique identifier in LaTeX format.
     """
-    # LaTeX does not handle Left Brace, Right Brace, BackSlash and UnderScore characters in links
-    return lexical_entry.get_id().replace('{', 'LB').replace('}', 'RB').replace('\\', 'BS').replace('_', 'US')
+    # LaTeX does not handle '\' (backslash), '{' (left brace) and '{' (right brace) characters in links
+    text = lexical_entry.get_id()
+    if text.find("\\") != -1:
+        text = text.replace('\\', u"£")
+    if text.find("{") != -1:
+        text = text.replace('{', '\{')
+    if text.find("}") != -1:
+        text = text.replace('}', '\}')
+    return text
 
 def format_link(lexical_entry, font):
     """! @brief Display hyperlink to a lexical entry in LaTeX format.

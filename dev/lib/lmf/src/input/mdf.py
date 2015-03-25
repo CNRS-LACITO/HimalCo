@@ -57,36 +57,28 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
             # 'lx' and 'se' markers indicate a new entry
             if marker == "lx" or marker == "se":
                 # Compute a unique identifier
-                occurrence_nb = 1
-                # Python equivalent of do...while loop
-                while True:
-                    uid = uni2sampa(value) + str(occurrence_nb)
-                    # If already taken, increment it
-                    if lexicon.find_lexical_entries(lambda lexical_entry: lexical_entry.get_id() == uid) != []:
-                        occurrence_nb += 1
+                uid = uni2sampa(value)
+                if marker == "se":
+                    # Create a subentry
+                    sub_entry = LexicalEntry(uid)
+                    # An MDF subentry corresponds to an LMF lexical entry
+                    mdf2lmf["lx"](value, sub_entry)
+                    # Add it to the lexicon
+                    lexicon.add_lexical_entry(sub_entry)
+                    # Manage main entry
+                    if main_entry is None:
+                        main_entry = current_entry
                     else:
-                        if marker == "se":
-                            # Create a subentry
-                            sub_entry = LexicalEntry(uid)
-                            # An MDF subentry corresponds to an LMF lexical entry
-                            mdf2lmf["lx"](value, sub_entry)
-                            # Add it to the lexicon
-                            lexicon.add_lexical_entry(sub_entry)
-                            # Manage main entry
-                            if main_entry is None:
-                                main_entry = current_entry
-                            else:
-                                current_entry = main_entry
-                            # Set main entry
-                            sub_entry.create_and_add_related_form(current_entry.get_lexeme(), "main entry")
-                        else:
-                            # Create a new entry
-                            current_entry = LexicalEntry(uid)
-                            # Add it to the lexicon
-                            lexicon.add_lexical_entry(current_entry)
-                            # Reset main entry
-                            main_entry = None
-                        break
+                        current_entry = main_entry
+                    # Set main entry
+                    sub_entry.create_and_add_related_form(current_entry.get_lexeme(), "main entry")
+                else:
+                    # Create a new entry
+                    current_entry = LexicalEntry(uid)
+                    # Add it to the lexicon
+                    lexicon.add_lexical_entry(current_entry)
+                    # Reset main entry
+                    main_entry = None
             # Map MDF marker and value to LMF representation
             try:
                 if attrs is not None:
