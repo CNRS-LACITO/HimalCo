@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 # Go under dev/lib/lmf/ and launch this script using the following command:
-# ./user/khaling/guillaume//run_khaling.py
+# ./user/khaling/guillaume/run_khaling.py
 
 import sys, os
 
