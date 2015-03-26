@@ -33,8 +33,12 @@ lexical_resource = lmf.read_mdf(id="khaling")
 sort_order = lambda character: ord(character.encode('utf-8').decode('utf-8'))
 lexical_resource.get_lexicon("khaling").sort_lexical_entries(items=items, sort_order=sort_order)
 
+# Generate paradigms
+os.system("rm " + user_path + "khaling/result/paradigms.tex")
+os.system("perl " + user_path + "../src/utils/paradigms/paradigms.pl " + user_path + "khaling/verbs.txt " + user_path + "khaling/result/paradigms.tex")
+
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/guillaume/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order)
+lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/guillaume/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order, paradigms=user_path + "khaling/result/paradigms.tex")
 
 # Release created objects
 del lexical_resource

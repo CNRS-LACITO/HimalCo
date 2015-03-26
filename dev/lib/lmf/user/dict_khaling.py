@@ -14,8 +14,10 @@ from setting import lmf2tex, items
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "khaling/config.xml")
 
-# Read MDF file and set lexicon identifier
+# Run Perl script
 os.system("perl " + user_path + "../src/utils/ipa2devanagari/ipa2devanagari.pl " + user_path + "../../../../dict/khaling/toolbox/Dictionary.txt " + user_path + "khaling/result/dictionary-dev.txt")
+
+# Read MDF file and set lexicon identifier
 lexical_resource = lmf.read_mdf(id="khaling")
 
 # Display global information
