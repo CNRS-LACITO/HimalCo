@@ -1,9 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, mdf_semanticRelation
-from config.tex import partOfSpeech_tex
-from output.tex import format_definitions
+from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
 from utils.io import EOL
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
@@ -256,6 +254,41 @@ def format_paradigm(lexical_entry, font, language):
 def format_related_forms(lexical_entry, font, language=None):
     import output.tex as tex
     result = ""
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
+        if language == config.xml.French:
+            result += "\\textit{Syn~:} "
+        else:
+            result += "\\textit{Syn:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
+        if language == config.xml.French:
+            result += "\\textit{Ant~:} "
+        else:
+            result += "\\textit{Ant:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
+    for morphology in lexical_entry.get_morphologies():
+        if language == config.xml.French:
+            result += "\\textit{Morph~:} "
+        else:
+            result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
+        if language == config.xml.French:
+            result += "\\textit{Voir~:} "
+        else:
+            result += "\\textit{See:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += " "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["hm"]):
         if language == config.xml.French:
             result += "\\textit{Voir~:} "
@@ -265,7 +298,11 @@ def format_related_forms(lexical_entry, font, language=None):
             result += tex.format_link(related_form.get_lexical_entry(), font)
         else:
             result += font[VERNACULAR](related_form.get_lexeme())
-    result += " "
+        result += " "
+    # ce
+    # cn
+    # cr
+    # result += "\\textit{See main entry:} " + font[VERNACULAR](lexical_entry.get_mn()) + ". "
     return result
 
 def tex_fra(lexical_entry, font):
@@ -293,7 +330,7 @@ def tex_fra(lexical_entry, font):
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.French, config.xml.national]),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
-        tex.format_related_forms(lexical_entry, font, language=config.xml.French) + format_related_forms(lexical_entry, font, language=config.xml.French))
+        format_related_forms(lexical_entry, font, language=config.xml.French))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
@@ -327,7 +364,7 @@ def tex_eng(lexical_entry, font):
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national]),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
-        tex.format_related_forms(lexical_entry, font, language=config.xml.English) + format_related_forms(lexical_entry, font, language=config.xml.English))
+        format_related_forms(lexical_entry, font, language=config.xml.English))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts

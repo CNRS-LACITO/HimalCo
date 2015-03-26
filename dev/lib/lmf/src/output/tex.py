@@ -466,7 +466,7 @@ def format_lexical_functions(lexical_entry, font):
     # result += lexical_entry.get_lr() + " "
     return result
 
-def format_related_forms(lexical_entry, font, language=None):
+def format_related_forms(lexical_entry, font):
     """! @brief Display related forms in LaTeX format.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
@@ -474,35 +474,23 @@ def format_related_forms(lexical_entry, font, language=None):
     """
     result = ""
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
-        if language == config.xml.French:
-            result += "\\textit{Syn~:} "
-        else:
-            result += "\\textit{Syn:} "
+        result += "\\textit{Syn:} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:
             result += font[VERNACULAR](related_form.get_lexeme())
         result += ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
-        if language == config.xml.French:
-            result += "\\textit{Ant~:} "
-        else:
-            result += "\\textit{Ant:} "
+        result += "\\textit{Ant:} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:
             result += font[VERNACULAR](related_form.get_lexeme())
         result += ". "
     for morphology in lexical_entry.get_morphologies():
-        if language == config.xml.French:
-            result += "\\textit{Morph~:} "
-        else:
-            result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
+        result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
-        if language == config.xml.French:
-            result += "\\textit{Voir~:} "
-        else:
-            result += "\\textit{See:} "
+        result += "\\textit{See:} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:

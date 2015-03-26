@@ -12,13 +12,11 @@ from utils.io import EOL
 ## Test LaTeX functions
 
 ## Fonts to use in LaTeX format (output)
-FRENCH = "French"
 font = dict({
     VERNACULAR  : lambda text: "\\textbf{\ipa{" + text + "}}",
     ENGLISH     : lambda text: text,
     NATIONAL    : lambda text: "\\textit{\zh{" + text + "}}",
-    REGIONAL    : lambda text: "\ipa{" + text + "}",
-    FRENCH      : lambda text: text
+    REGIONAL    : lambda text: "\ipa{" + text + "}"
 })
 
 # To define languages and fonts
@@ -30,7 +28,6 @@ class Xml():
         self.English = "eng"
         self.national = "nat"
         self.regional = "reg"
-        self.French = "fra"
 
 class TestTexFunctions(unittest.TestCase):
 
