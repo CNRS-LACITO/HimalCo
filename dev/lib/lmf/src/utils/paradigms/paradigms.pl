@@ -583,8 +583,8 @@ sub generation {
         $result = $result.transcr("ʔēːʦi & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti &".$theme_B."ije")."    \\\\ \n";
         $result = $result.transcr("ʔên & ʔi".$theme_E."ni  & ʔi".$theme_G."tɛnu &".$theme_G."nuje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄m & ".$theme_D." & ".$theme_G2."tɛ")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msu & ".$theme_B."i"." & ".$theme_F.$vowel1."ti")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛm & ".$theme_E."nu  & ".$theme_G."tɛnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-su & ".$theme_B."i"." & ".$theme_F.$vowel1."ti")."   \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛm & ".$theme_E."nu  & ".$theme_G."tɛnu")." \\\\ \n";
         $result = $result.end();
     }
     elsif ($variable1 =~ /[aɛeiou].i$/) {
@@ -601,8 +601,8 @@ sub generation {
         $result = $result.transcr("ʔēːʦi & ʔi".$theme_2A."ji"." & ʔi".$theme_2A."̂iti &".$theme_B."̂ije")."    \\\\ \n";
         $result = $result.transcr("ʔên & ʔi".$theme_2A."ni  & ʔi".$theme_2B2."tnu &".$theme_2B2."̂nje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄m & ".$theme_2A." & ".$theme_2B."tɛ")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msu & ".$theme_2A."ji"." & ".$theme_2A."̂iti  ")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛm & ".$theme_2A."nu  & ".$theme_2B2."tnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-su & ".$theme_2A."ji"." & ".$theme_2A."̂iti  ")."   \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛm & ".$theme_2A."nu  & ".$theme_2B2."tnu")." \\\\ \n";
         $result = $result.end();
     }
 
@@ -612,24 +612,24 @@ sub generation {
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_O."u"." &".$theme_N."tʌ")." \\\\ \n";
-        $result = $result.transcr("ʔuŋʌ ʔʌ̄msu&".$theme_O."usu"." &".$theme_N."tʌsu")." \\\\ \n";
-        $result = $result.transcr("ʔuŋʌ ʔʌ̄mɦɛm&".$theme_O."unu"." &".$theme_N."tʌnu")." \\\\ \n";
+        $result = $result.transcr("ʔuŋʌ ʔʌ̄m-su&".$theme_O."usu"." &".$theme_N."tʌsu")." \\\\ \n";
+        $result = $result.transcr("ʔuŋʌ ʔʌ̄m-ɦɛm&".$theme_O."unu"." &".$theme_N."tʌnu")." \\\\ \n";
         $result = $result.transcr("ʔīːʦiʔɛ &".$theme_B."i"." &".$theme_F.$vowel1."ti")."   \\\\ \n";
         $result = $result.transcr("ʔōːʦuʔʌ        &".$theme_B."u"." &".$theme_F.$vowel3."tu")."   \\\\ \n";
         $result = $result.transcr("ʔikʔɛ&".$theme_C."ki"." &".$theme_C."tiki")."   \\\\ \n";
         $result = $result.transcr("ʔokʔʌ &".$theme_C."kʌ"." &".$theme_C."tʌkʌ")."   \\\\ \n";
         $result = $result.transcr("ʔinɛ & ʔi".$theme_O."ʉ  & ʔi".$theme_N."tɛ &".$theme_O."e")."  \\\\ \n";
-        $result = $result.transcr("ʔinɛ ʔʌ̄msu& ʔi".$theme_N."su  & ʔi".$theme_N."tɛsu")."   \\\\ \n";
-        $result = $result.transcr("ʔinɛ ʔʌ̄mɦɛm& ʔi".$theme_N."nu  & ʔi".$theme_N."tɛnu")."   \\\\ \n";
+        $result = $result.transcr("ʔinɛ ʔʌ̄m-su& ʔi".$theme_N."su  & ʔi".$theme_N."tɛsu")."   \\\\ \n";
+        $result = $result.transcr("ʔinɛ ʔʌ̄m-ɦɛm& ʔi".$theme_N."nu  & ʔi".$theme_N."tɛnu")."   \\\\ \n";
         $result = $result.transcr("ʔēːʦi & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti &".$theme_B."ije")."    \\\\ \n";
         $result = $result.transcr("ʔên & ʔi".$theme_E."ni  & ʔi".$theme_G."tɛnu &".$theme_G."nuje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄mʔɛ & ".$theme_O."ʉ  & ".$theme_N."tɛ")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msuʔɛ & ".$theme_N."su"." & ".$theme_N."tɛsu")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛmʔɛ & ".$theme_N."nu  & ".$theme_N."tɛnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-suʔɛ & ".$theme_N."su"." & ".$theme_N."tɛsu")."  \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛmʔɛ & ".$theme_N."nu  & ".$theme_N."tɛnu")." \\\\ \n";
         $result = $result."\\midrule\n";
         $result = $result.transcr("ʔinɛ, ʔʌ̄mʔɛ ʔûŋ &ʔi".$theme_A."ŋʌ"." &ʔi".$theme_F.$vowel2."tʌ &".$theme_B."ʌje")." \\\\ \n";
-        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄msuʔʌ ʔûŋ &ʔi".$theme_A."ŋʌsu"." &ʔi".$theme_F.$vowel2."tʌsu &".$theme_B."ʌsuje")." \\\\ \n";
-        $result = $result.transcr("ʔênʔɛ/ʔʌ̄mɦɛmʔɛ ʔûŋ &ʔi".$theme_A."ŋʌnu"." &ʔi".$theme_F.$vowel2."tʌnu &".$theme_B."ʌnuje")." \\\\ \n";
+        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄m-suʔʌ ʔûŋ &ʔi".$theme_A."ŋʌsu"." &ʔi".$theme_F.$vowel2."tʌsu &".$theme_B."ʌsuje")." \\\\ \n";
+        $result = $result.transcr("ʔênʔɛ/ʔʌ̄m-ɦɛmʔɛ ʔûŋ &ʔi".$theme_A."ŋʌnu"." &ʔi".$theme_F.$vowel2."tʌnu &".$theme_B."ʌnuje")." \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔīːʦi &ʔi".$theme_B."i"." &ʔi".$theme_F.$vowel1."ti")."    \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔōːʦu &ʔi".$theme_B."u"." &ʔi".$theme_F.$vowel3."tu  &".$theme_B."uje")."  \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔik &ʔi".$theme_C."ki"." &ʔi".$theme_C."tiki")."   \\\\ \n";
@@ -650,24 +650,24 @@ sub generation {
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
         $result = $result.transcr("ʔuŋʌ &".$theme_H."u"." &".$theme_K.$vowel3."tʌ")." \\\\ \n";
-        $result = $result.transcr("ʔuŋʌ ʔʌ̄msu &".$theme_H."usu"." &".$theme_K.$vowel3."tʌsu")." \\\\ \n";
-        $result = $result.transcr("ʔuŋʌ ʔʌ̄mɦɛm &".$theme_H."unu"." &".$theme_K.$vowel3."tʌnu")." \\\\ \n";
+        $result = $result.transcr("ʔuŋʌ ʔʌ̄m-su &".$theme_H."usu"." &".$theme_K.$vowel3."tʌsu")." \\\\ \n";
+        $result = $result.transcr("ʔuŋʌ ʔʌ̄m-ɦɛm &".$theme_H."unu"." &".$theme_K.$vowel3."tʌnu")." \\\\ \n";
         $result = $result.transcr("ʔīːʦiʔɛ &".$theme_B."i"." &".$theme_F.$vowel1."ti")."   \\\\ \n";
         $result = $result.transcr("ʔōːʦuʔʌ &".$theme_B."u"." &".$theme_F.$vowel3."tu")."   \\\\ \n";
         $result = $result.transcr("ʔikʔɛ &".$theme_C."ki"." &".$theme_C."tiki")."   \\\\ \n";
         $result = $result.transcr("ʔokʔʌ &".$theme_C."kʌ"." &".$theme_C."tʌkʌ")."   \\\\ \n";
         $result = $result.transcr("ʔinɛ ʔʌ̄m & ʔi".$theme_I."ʉ  & ʔi".$theme_L."tɛ &".$theme_I."e")."  \\\\ \n";
-        $result = $result.transcr("ʔinɛ ʔʌ̄msu & ʔi".$theme_J."su  & ʔi".$theme_L."tɛsu")."   \\\\ \n";
-        $result = $result.transcr("ʔinɛ ʔʌ̄mɦɛm & ʔi".$theme_J."nu  & ʔi".$theme_L."tɛnu")."   \\\\ \n";
+        $result = $result.transcr("ʔinɛ ʔʌ̄m-su & ʔi".$theme_J."su  & ʔi".$theme_L."tɛsu")."   \\\\ \n";
+        $result = $result.transcr("ʔinɛ ʔʌ̄m-ɦɛm & ʔi".$theme_J."nu  & ʔi".$theme_L."tɛnu")."   \\\\ \n";
         $result = $result.transcr("ʔēːʦiʔɛ & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti &".$theme_B."ije")."    \\\\ \n";
         $result = $result.transcr("ʔênʔɛ & ʔi".$theme_E."ni  & ʔi".$theme_G."tɛnu &".$theme_G."nuje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄mʔɛ & ".$theme_I."ʉ  & ".$theme_L."tɛ")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msuʔʌ & ".$theme_J."su"." & ".$theme_L."tɛsu")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛmʔɛ & ".$theme_J."nu  & ".$theme_L."tɛnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-suʔʌ & ".$theme_J."su"." & ".$theme_L."tɛsu")."  \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛmʔɛ & ".$theme_J."nu  & ".$theme_L."tɛnu")." \\\\ \n";
         $result = $result."\\midrule\n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔûŋ&ʔi".$theme_A."ŋʌ"." & ʔi".$theme_F.$vowel2."tʌ &".$theme_B."ʌje")." \\\\ \n";
-        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄msuʔʌ ʔûŋ &ʔi".$theme_A."ŋʌsu"." & ʔi".$theme_F.$vowel2."tʌsu &".$theme_B."ʌsuje")." \\\\ \n";
-        $result = $result.transcr("ʔênʔɛ/ʔʌ̄mɦɛmʔɛ ʔûŋ &ʔi".$theme_A."ŋʌnu"." & ʔi".$theme_F.$vowel2."tʌnu &".$theme_B."ʌnuje")." \\\\ \n";
+        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄m-suʔʌ ʔûŋ &ʔi".$theme_A."ŋʌsu"." & ʔi".$theme_F.$vowel2."tʌsu &".$theme_B."ʌsuje")." \\\\ \n";
+        $result = $result.transcr("ʔênʔɛ/ʔʌ̄m-ɦɛmʔɛ ʔûŋ &ʔi".$theme_A."ŋʌnu"." & ʔi".$theme_F.$vowel2."tʌnu &".$theme_B."ʌnuje")." \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔīːʦi & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti")."    \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔōːʦu & ʔi".$theme_B."u"." & ʔi".$theme_F.$vowel3."tu  &".$theme_B."uje")."  \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔik & ʔi".$theme_C."ki"." & ʔi".$theme_C."tiki")."   \\\\ \n";
@@ -695,12 +695,12 @@ sub generation {
         $result = $result.transcr("ʔēːʦiʔɛ & ʔi".$theme_2C."ji"." & ʔi".$theme_2C."̂iti &".$theme_2C."̂ije")."    \\\\ \n";
         $result = $result.transcr("ʔênʔɛ & ʔi".$theme_2C."ni  & ʔi".$theme_2G2."tnu &".$theme_2G2."̂nje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄mʔɛ & ".$theme_2A." & ".$theme_2F."tɛ")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msuʔʌ & ".$theme_2A."su"." & ".$theme_2F."tsu")."     \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛmʔɛ & ".$theme_2A."nu  & ".$theme_2F."tnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-suʔʌ & ".$theme_2A."su"." & ".$theme_2F."tsu")."     \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛmʔɛ & ".$theme_2A."nu  & ".$theme_2F."tnu")." \\\\ \n";
         $result = $result."\\midrule\n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔûŋ&ʔi".$theme_2C."ŋʌ"." &ʔi".$theme_2C."ŋʌtʌ &".$theme_2C."ŋʌje")." \\\\ \n";
-        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄msuʔʌ ʔûŋ &ʔi".$theme_2C."ŋʌsu"." &ʔi".$theme_2C."ŋʌtʌsu &".$theme_2C."ŋʌsuje")." \\\\ \n";
-        $result = $result.transcr("ʔênʔɛ/ʔʌ̄mɦɛmʔɛ ʔûŋ &ʔi".$theme_2C."ŋʌnu"." &ʔi".$theme_2C."ŋʌtʌnu &".$theme_2C."ŋʌnuje")." \\\\ \n";
+        $result = $result.transcr("ʔēːʦiʔɛ/ʔʌ̄m-suʔʌ ʔûŋ &ʔi".$theme_2C."ŋʌsu"." &ʔi".$theme_2C."ŋʌtʌsu &".$theme_2C."ŋʌsuje")." \\\\ \n";
+        $result = $result.transcr("ʔênʔɛ/ʔʌ̄m-ɦɛmʔɛ ʔûŋ &ʔi".$theme_2C."ŋʌnu"." &ʔi".$theme_2C."ŋʌtʌnu &".$theme_2C."ŋʌnuje")." \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔīːʦi &ʔi".$theme_2C."ji"." &ʔi".$theme_2C."̂iti")."    \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔōːʦu &ʔi".$theme_2C."ju"." &ʔi".$theme_2C."̂itu  &".$theme_2C."ije")."  \\\\ \n";
         $result = $result.transcr("ʔinɛ/ʔʌ̄mʔɛ ʔik &ʔi".$theme_2C."ki"." &ʔi".$theme_2C."ktiki")."   \\\\ \n";
@@ -733,8 +733,8 @@ sub generation {
         $result = $result.transcr("ʔēːʦiʔɛ & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti &".$theme_B."ije")."    \\\\ \n";
         $result = $result.transcr("ʔênʔɛ & ʔi".$theme_E."ni  & ʔi".$theme_G."tɛnu &".$theme_G."nuje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄mʔɛ & ".$theme_O."ʉ  & ".$theme_N."tɛ")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msuʔʌ & ".$theme_N."su"." & ".$theme_N."tɛsu")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛmʔɛ & ".$theme_N."nu  & ".$theme_N."tɛnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-suʔʌ & ".$theme_N."su"." & ".$theme_N."tɛsu")."  \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛmʔɛ & ".$theme_N."nu  & ".$theme_N."tɛnu")." \\\\ \n";
         $result = $result.end();
     }
     elsif ($variable1 =~ /[ptkmnŋrl]_1$/) {
@@ -755,8 +755,8 @@ sub generation {
         $result = $result.transcr("ʔēːʦiʔɛ & ʔi".$theme_B."i"." & ʔi".$theme_F.$vowel1."ti &".$theme_B."ije")."    \\\\ \n";
         $result = $result.transcr("ʔênʔɛ & ʔi".$theme_E."ni  & ʔi".$theme_G."tɛnu &".$theme_G."nuje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄mʔɛ & ".$theme_I."ʉ  & ".$theme_L."tɛ")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msuʔʌ & ".$theme_J."su"." & ".$theme_L."tɛsu")."  \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛmʔɛ & ".$theme_J."nu  & ".$theme_L."tɛnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-suʔʌ & ".$theme_J."su"." & ".$theme_L."tɛsu")."  \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛmʔɛ & ".$theme_J."nu  & ".$theme_L."tɛnu")." \\\\ \n";
         $result = $result.end();
     }
 
@@ -774,8 +774,8 @@ sub generation {
         $result = $result.transcr("ʔēːʦi & ʔi".$theme_2C."ji"." & ʔi".$theme_2C."̂iti &".$theme_2C."̂ije")."    \\\\ \n";
         $result = $result.transcr("ʔên & ʔi".$theme_2C."ni  & ʔi".$theme_2G2."tnu &".$theme_2G2."̂nje")."  \\\\ \n";
         $result = $result.transcr("ʔʌ̄m & ".$theme_2A." & ".$theme_2F."tɛ")."   \\\\ \n";
-        $result = $result.transcr("ʔʌ̄msu & ".$theme_2A."su"." & ".$theme_2F."tsu")."     \\\\ \n";
-        $result = $result.transcr("ʔʌ̄mɦɛm & ".$theme_2A."nu  & ".$theme_2F."tnu")." \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-su & ".$theme_2A."su"." & ".$theme_2F."tsu")."     \\\\ \n";
+        $result = $result.transcr("ʔʌ̄m-ɦɛm & ".$theme_2A."nu  & ".$theme_2F."tnu")." \\\\ \n";
         $result = $result.end();
     }
 
