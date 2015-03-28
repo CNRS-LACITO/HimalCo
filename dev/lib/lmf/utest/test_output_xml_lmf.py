@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from startup import *
-from output.xml_lmf import xml_lmf_write, build_sub_elements, add_link, handle_reserved, handle_fv, handle_fn, handle_font, handle_pinyin, handle_caps
+from output.xml_lmf import xml_lmf_write, build_sub_elements, add_link, handle_reserved, handle_fv, handle_fn, handle_font, handle_pinyin, handle_caps, handle_tones
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
 from utils.xml_format import Element, SubElement, tostring
-from utils.io import EOL
+from utils.io import EOL, ENCODING
 
 ## Test XML LMF functions
 
@@ -78,7 +78,7 @@ class TestXmlLmfFunctions(unittest.TestCase):
         # Create output element and sub-elements
         output = Element("RelatedForm", targets="lx")
         sub = SubElement(output, "a")
-        sub.attrib["href"] = "lx_id"
+        sub.attrib["href"] = "lx_id1"
         # Fill in text
         sub.text = "lx"
         result = add_link(form, input)
@@ -188,6 +188,40 @@ class TestXmlLmfFunctions(unittest.TestCase):
         sub2.text = "astuces"
         sub2.tail = ""
         self.assertEqual(tostring(handle_caps(input)), tostring(output))
+
+    def test_handle_tones(self):
+        ## Test "tone"
+        value = u"LaM1H"
+        input = Element("name", att="tone", val=value)
+        # Create output element and sub-elements
+        output = Element("name", att="tone", val=value)
+        sub1 = SubElement(output, "sub")
+        sub2 = SubElement(output, "sub")
+        # Fill in text
+        output.text = "L"
+        sub1.text = "a"
+        sub1.tail = "M"
+        sub2.text = "1"
+        sub2.tail = "H"
+        self.assertEqual(tostring(handle_tones(input)), tostring(output))
+        ## Test "lexeme"
+        value = "aa˩abb˧bcc˥".decode(encoding=ENCODING)
+        input = Element("name", att="lexeme", val=value)
+        # Create output element and sub-elements
+        output = Element("name", att="lexeme", val=value)
+        sub1 = SubElement(output, "sub")
+        sub2 = SubElement(output, "sub")
+        # Fill in text
+        output.text = "aa˩".decode(encoding=ENCODING)
+        sub1.text = "a"
+        sub1.tail = "bb˧".decode(encoding=ENCODING)
+        sub2.text = "b"
+        sub2.tail = "cc˥".decode(encoding=ENCODING)
+        self.assertEqual(tostring(handle_tones(input)), tostring(output))
+        ## Test others
+        input = Element("name", att="other", val=value)
+        output = Element("name", att="other", val=value)
+        self.assertEqual(tostring(handle_tones(input)), tostring(output))
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestXmlLmfFunctions)
 

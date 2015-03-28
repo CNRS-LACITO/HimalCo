@@ -1,0 +1,210 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\usepackage{lineno}
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+\title{The progressive prefix Japhug\footnote{The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{auto}  autobenefactive-spontaneous, \textsc{anticaus} anticausative, \textsc{antipass} antipassive, \textsc{appl} applicative, \textsc{dem} demonstrative,  \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, \textsc{pres} egophoric present, \textsc{prog} progressive, \textsc{sens} sensory. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). Acknowledgements   will be added after editorial decision.
+} }
+%\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+
+\section{Introduction}
+Japhug has a progressive prefix \ipa{asɯ--} only used with transitive verbs. Among all verbal inflexional prefixes, it is located in the slot closest to the extended stem (comprising the derivational prefixes and the verb root). It presents unique morphological properties, in particular the ability of being infixed by the inverse prefix.
+
+The present paper discusses the morphological peculiarities of this prefix, and then proposes a grammaticalization hypothesis partially accounting for them.
+
+\section{Morphology}
+
+The progressive prefix \ipa{asɯ--} restricted to transitive verbs. It is not used on its own: it always appears in combination with one of the TAM categories.\footnote{For an overview of TAM categories in Japhug, see \citealt{jacques14linking}.} Due to semantic mismatch, it does not appear with perfective forms.
+
+Examples have only been found with the following five categories: past imperfective (example \ref{ex:pasWfCAtndZi} below), inferential imperfective (\ref{ex:pjAkAsWtsxWBci}), sensory (\ref{ex:YAznAthWthu}), present (\ref{ex:kosWBzjoz}), factual (\ref{ex:asWndo}) and plain imperfective. 
+
+Two of these TAM categories, namely past imperfective (prefixed in \ipa{pɯ--}) and inferential imperfective (\ipa{pjɤ--}), are not compatible on their own with most transitive verbs in Japhug, as suggested by \citet{lin11direction} (except for tropative verbs, see \citealt{jacques13tropative}). For all non-tropative transitive verbs, past imperfective and inferential imperfective can only be build in combination with the progressive \ipa{asɯ--}. 
+
+The progressive prefix is optional with the other four categories. Used with the sensory, plain imperfective and present, the progressive excludes habitual or generic interpretations of these tense. With the factual, it also excludes future interpretation.
+
+The progressive \ipa{asɯ--} prefix presents four morphological peculiarities: allomorphy, combination with the evidential circumfix, loss of morphological transitivity and infixation of the inverse prefix.
+
+\subsection{Allomorphy} \label{sec:prog.allomorphy}
+Depending on the environment, the progressive prefix has six allomorphs: \ipa{asɯ--}, \ipa{az--}, \ipa{ɤsɯ--}, \ipa{ɤz--}, \ipa{osɯ--} and \ipa{oz--}. The allomorphs   \ipa{az--} / \ipa{ɤz--} / \ipa{oz--} occur when preceding a sonorant initial prefix (example \ref{ex:YAznAthWthu}). The allomorphs \ipa{asɯ--} and \ipa{az--} occur in word-initial position and following the past imperfective prefix \ipa{pɯ--} (examples \ref{ex:pasWfCAtndZi} and \ref{ex:asWndo}). The allomorphs \ipa{osɯ--} and \ipa{oz--} result from fusion with a preceding prefix whose main vowel in \ipa{u} (example \ref{ex:kosWBzjoz}).\footnote{In this example, despite what may transpire from the translation, \ipa{βzjoz} `study' is transitive; its P is the noun <chuzhong> `Junior High School'. It is a calque from Chinese \zh{读初中} \ipa{dú chūzhōng}.} The allomorphs \ipa{ɤsɯ--} and \ipa{ɤz--} are found in all other contexts. Note that verbs whose stem begins in \ipa{a--} present exactly the same vowel alternations (see \citealt{jacques07passif}; these verbs include passive, reflexive, some denominal verbs and a few others; all are intransitive verbs).
+
+
+\begin{exe}
+\ex \label{ex:pasWfCAtndZi}
+\gll \ipa{pɯ-asɯ-fɕɤt-ndʑi} 	\ipa{nɯ} 	\ipa{ra,} 	\ipa{zlawawozɤr} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{pjɤ-mtsʰɤm}\\
+\textsc{pst.ipfv-prog}-tell-\textsc{du} \textsc{dem} \textsc{pl}  Zlaba.Wodzer \textsc{dem} \textsc{erg} \textsc{ifr}-hear\\
+\glt Zlaba Wodzer heard what they were saying. (Nyimawodzer1, 32)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kosWBzjoz}
+\gll \ipa{akɯ} <xianzhong> \ipa{ri} <chuzhong> \ipa{ku-osɯ-βzjoz}. \\
+east district.high.school \textsc{loc} high.school \textsc{pres-prog}-learn \\
+\glt She is reading Junior High School at the District High school, east of here. (Relatives 363-4)
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:YAznAthWthu}
+\gll
+\ipa{tɤrɣe}  	\ipa{ɯ-cʰɯ-z-ɣɯri}  	\ipa{ɲɯ-ɤz-nɤtʰɯtʰu}  	 \\
+pearl \textsc{3sg-ipfv:downstream-nmlz:oblique}-thread.a.needle \textsc{sens-prog}-ask.everywhere \\
+\glt He is asking everywhere about (where) the thing used to thread needle is. (Conversation \ipa{taʁrdo}, 72)
+\end{exe}
+
+
+\subsection{Inferential}
+
+The inferential imperfective forms of verbs with the progressive prefix \ipa{asɯ--} follows the same pattern as verbs whose stems begins in \ipa{a--} (including passive and reciprocal verbs with the \ipa{a--} prefix, see \citealt{jacques07passif}). In addition to the regular past inferential imperfective \ipa{pjɤ--} prefix, the circumfix \ipa{k--}...\ipa{--ci} is added. The first element \ipa{k--} of this circumfix occurs between the inferential imperfective prefix \ipa{pjɤ--} and the progressive prefix \ipa{ɤsɯ--}.\footnote{Note however that the suffixal element \ipa{--ci} is optional, though it is present most of the time.} This form is illustrated by examples \ref{ex:pjAkAsWtsxWBci} and \ref{ex:pjAkAsWNgaci}.
+
+\begin{exe}
+\ex \label{ex:pjAkAsWNgaci}
+\gll
+<lüguan>	\ipa{ɣɯ} 	\ipa{nɯ-ʁɲɤrpa} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{tɯ-ŋga} 	\ipa{rca} 	\ipa{kɯ-mpɕɯ\textasciitilde{}mpɕɤr} 	\ipa{ʑo} 	\ipa{pjɤ-k-ɤsɯ-ŋga-ci} 	\ipa{tɕe,} 	\ipa{kɯm} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{pjɤ-k-ɤmdzɯ-ci.} 	\\
+hotel \textsc{gen} \textsc{3pl.poss}-manager \textsc{dem} \textsc{erg} \textsc{indef.poss}-clothes \textsc{emph} \textsc{nmlz:S/A-emph}\textasciitilde{}be.beautiful \textsc{emph} \textsc{ifr.ipfv-evd-prog}-wear-\textsc{evd} \textsc{lnk} door \textsc{dem} \textsc{loc} \textsc{ifr.ipfv-evd}-sit-\textsc{evd}
+\\
+\glt The hotel manager was wearing nice clothes and sitting near the door. (The thief and the landlord)
+\end{exe}
+
+\subsection{Transitivity}
+
+Verb forms with the prefix \ipa{asɯ--} lack two of the obligatory transitive markers found in Japhug verbs, namely stem 3 alternation and past tense transitive \ipa{--t--} suffix. Only stem alternation is discussed here.
+
+Japhug verbs exhibit stem alternation in non-past TAM categories (sensory, present, imperative, irrealis, imperfective and factual) in direct singular A forms (\textsc{1/2/3sg}$\rightarrow$3). Following \citet{jackson00puxi}, we refer to this stem as `stem 3' (stem 1 being the base stem, and stem 2 the past stem). The use of this stem is illustrated in example \ref{ex:YWndAm}, where the verb \ipa{ndo} `hold' in the imperfective form has stem 3 \ipa{ndɤm}.
+
+\begin{exe}
+\ex \label{ex:YWndAm}
+\gll \ipa{kɤ-kɤ-sɯ-ɕke} 	\ipa{ɯ-mdoʁ} 	\ipa{kɯ-fse} 	\ipa{ɲɯ-ndɤm} 		\ipa{ŋu} \\
+\textsc{pfv-nmlz:P-caus}-burn \textsc{3sg.poss}-colour \textsc{nmlz:S/A}-be.like \textsc{ipfv}-hold[III] be\factual{} \\
+\glt  It has the colour of something that has been burnt. (\ipa{ɲɤβrɯɣ}, 14)
+\end{exe}
+
+When a verb in non-past TAM forms takes the \ipa{asɯ--}, stem alternation does not occur. Examples \ref{ex:asWndo} and \ref{ex:YAsWndo}, in factual and sensory form have the base stem \ipa{ndo} instead of stem 3 \ipa{ndɤm} as expected in forms without the progressive.
+
+
+\begin{exe}
+\ex \label{ex:asWndo}
+\gll
+\ipa{sɯjno} 	\ipa{ɯ-mdoʁ} 	\ipa{ʑo} 	\ipa{asɯ-ndo.} \\
+grass \textsc{3sg.poss}-colour \textsc{emph} \textsc{prog}-hold\factual{} \\
+\glt It has the colour of grass. (Caterpillar, 69)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:YAsWndo}
+\gll
+\ipa{kɯki} 	\ipa{ɯ-mdoʁ} 	\ipa{tsa} 	\ipa{ɲɯ-ɤsɯ-ndo} \\
+this  \textsc{3sg.poss}-colour  a.little \textsc{sens-prog}-hold \\
+\glt It has a colour a bit like this one. (Slugs, 159)
+\end{exe}
+
+However, adding the progressive \ipa{asɯ--} has no effect on flagging: the A still receives ergative \ipa{kɯ} marking, as shown by example \ref{ex:pjAkAsWtsxWBci}.
+
+\begin{exe}
+\ex \label{ex:pjAkAsWtsxWBci}
+\gll
+\ipa{rgɤnmɯ}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{li}  	\ipa{iɕqʰa}  	<yuwang>	\ipa{nɯ}  	\ipa{pjɤ-k-ɤsɯ-tʂɯβ-ci}  		\\
+old.woman \textsc{dem} \textsc{erg} again the.aforementioned net \textsc{dem} \textsc{ifr.ipfv-evd-prog}-sew-\textsc{evd} \\
+\glt The old woman was sewing the nets as before. (The fisherman and his wife, 284)
+\end{exe}
+
+
+In the related Tshobdun language, the cognate prefix \ipa{ɐsɐ--} has a similar effect, and is labelled by \citet{jackson03caodeng} as `low transitivity progressive'.
+
+\subsection{Infixation of the inverse prefix}
+The inverse prefix \ipa{wɣ--}, whose morphosyntactic function is described in \citet{jacques10inverse}, appears in the same prefixal slot as the progressive \ipa{asɯ--} in the Japhug verbal template, and is actually infixed within this prefix, resulting in \ipa{ɤ́<wɣ>sɯ--} [\ipa{óɣsɯ}] or \ipa{ɤ́<wɣ>z--} [\ipa{óɣz}]. The form \ipa{pjɤ-k-ɤ́<wɣ>z-nɤjo-ci} `he was waiting for him' in \ref{ex:pjAkAwGznAjoci} is the only example of this combination in the text corpus.
+
+
+\begin{exe}
+\ex \label{ex:pjAkAwGznAjoci}
+\gll
+\ipa{tɕe} 	\ipa{pjɤ-ɣi} 	\ipa{tɕe} 	\ipa{qala} 	\ipa{kɯ} 	\ipa{pjɤ-k-ɤ́<wɣ>z-nɤjo-ci} 	\ipa{tɕe,} \\
+\textsc{lnk} \textsc{ifr:down}-come \textsc{lnk} rabbit \textsc{erg} \textsc{ifr.ipfv-evd<inv>}-wait-\textsc{evd} \textsc{lnk} \\
+\glt (The leopard) came down, and the rabbit was waiting for him there. (The smart rabbit.2014, 60)
+\end{exe}
+
+It is however possible to elicitate other forms of this type, such as \ref{ex:YWtAwGsWzgroR}, without any constraint.
+
+\begin{exe}
+\ex  \label{ex:YWtAwGsWzgroR}
+\gll  \ipa{ɲɯ-tɯ-ɤ́<wɣ>sɯ-zgroʁ}    \\
+\textsc{sens-2-prog<inv>}-attach \\
+\glt He is attaching you. (elicitation, Chen Zhen)
+\end{exe}
+
+In Zbu and Tshobdun, cognates of both the progressive and the inverse prefix are attested (see \citealt{jackson02rentongdengdi, gongxun14agreement}), but it is unclear whether infixation takes place in these languages too.
+ 
+
+\section{Grammaticalization path}
+The progressive prefix \ipa{asɯ--} in Japhug and its cognates in Zbu and Tshobdun (\ipa{ɐsɐ--} in the latter) have no equivalents in other Sino-Tibetan languages, even in the closely related Situ, Khroskyabs and Stau languages (no comparable affix is reported in \citealt{linxr93jiarong, prins11kyomkyo, huangbf07lavrung, lai13affixale} for instance). It is likely, therefore, that it represents a local innovation.
+
+The morphological properties of \ipa{asɯ--} presented in the previous section, namely its allomorphy, its effect on morphological transitivity and the fact that the inverse is infixed within it, are clues as to the possible historical origins of this prefix.
+
+The infixability of the inverse prefix suggests that the progressive \ipa{asɯ--} is etymologically a composite prefix, comprising two elements \ipa{a--} and \ipa{--sɯ--}. 
+
+Possible candidates to etymologize these elements include the passive \ipa{a--} prefix (\citealt{jacques07passif}) and the stative denominal \ipa{a--} on the one hand, and the causative \ipa{sɯ--} and the instrumental/causative denominal \ipa{sɯ--} (\citealt{jacques15causative}) on the other hand. Since the voice markers in Japhug and other Rgyalrongic languages have already been demonstrated to derive from the corresponding denominal derivations (\citealt{jacques14antipassive, lai14caus, jacques15causative}), the difference is largely a matter of relative chronology.
+
+The \ipa{--sɯ--} element of the progressive prefix presents commonalities in its allomorphy with the causative \ipa{sɯ--} (and its denominal counterpart): when the latter is prefixed to transitive verb stems, it is realized as \ipa{z--} when followed by another sonorant derivational prefix, and as \ipa{sɯ--} in other cases, showing the same distribution as \ipa{a/ɤ/osɯ--} vs \ipa{a/ɤ/oz--}.
+
+Similarly, the passive prefix \ipa{a--} and the denominal \ipa{a--} show exactly the same complex vowel fusion rules as \ipa{asɯ--} and also combine with the evidential circumfix \ipa{k--...--ci} in the same way in the inferential form (\citealt{jacques07passif}). Passive derivation also accounts for the lack of morphological transitivity (stem alternation and past \ipa{--t--} suffix) for verbs with the preogressive \ipa{asɯ--}.
+
+It is therefore possible to conjecture that the progressive developed as the combination of the causative with the passive derivation:
+
+\begin{exe}
+\ex \label{ex:pathway.progessive}
+\glt \textsc{causative} + \textsc{passive} $\Rightarrow$ \textsc{progressive}
+\end{exe}
+
+There are three uncertainties with the pathway in \ref{ex:pathway.progessive}, which need to be taken into consideration before this hypothesis can be accepted.
+
+First, no such development has yet been proposed to account for the origin of progressive markers in other languages (see for instance in \citealt{bybee94TAM, heine-kuteva02}), and there is no safe typological parallel for this proposed evolution.
+
+Second, Japhug \ipa{a--} is an agentless passive. The demoted agent, even if semantically explicit, cannot be overtly expressed in the same clause as the passivized verb. This is a crucial difference with the progressive \ipa{asɯ--}, which has no incidence on syntactic transitivity: non-SAP agents are obligatorily marked with the ergative with verbs in the progressive, like normal transitive verbs.
+
+
+Third, the form of the progressive in Tshobdun is \ipa{ɐsɐ--}, with a slightly different vocalism in the second syllable.
+
+An evaluation of these issues, which require a detailed comparison of the use and the morpophonology of the progressive prefix in Tshobdun, Zbu and Japhug, has to be deferred to future research.
+
+\section{Conclusion}
+This paper describes the morphological properties of the progressive \ipa{asɯ--} prefix in Japhug, and proposes a hypothesis as to its possible historical origin. Although this hypothesis requires to be tested against more extensive Tshobdun and Zbu data, it is potentially important for two reasons. First, this would be the first example of a grammaticalization pathway \textsc{causative} + \textsc{passive} $\rightarrow$ \textsc{progressive}. Second, it would be a potential common morphological innovation defining a Northern Rgyalrong clade (Japhug, Zbu, Tshobdun) within Rgyalrongic.
+
+  
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}

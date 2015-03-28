@@ -199,19 +199,6 @@ def format_paradigms(lexical_entry, font):
             result += font[VERNACULAR](paradigm.get_paradigm(language=config.xml.vernacular)) + " "
     return result
 
-def handle_reserved(text):
-    if text.find("$") != -1:
-        text = text.replace('$', '')
-    if text.find("#") != -1:
-        text = text.replace('#', '\#')
-    if text.find("& ") != -1:
-        text = text.replace('& ', '\& ')
-    if text.find("_") != -1:
-        text = text.replace('_', '\_').replace("\string\_", "\string_")
-    if text.find("^") != -1:
-        text = text.replace('^', '\^')
-    return text
-
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
     tex_entry = ""
@@ -250,11 +237,11 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_status(lexical_entry, font)
     # date
     tex_entry += tex.format_date(lexical_entry, font)
-    # Handle reserved characters and fonts
-    tex_entry = handle_reserved(tex_entry)
-    tex_entry = tex.handle_fv(tex_entry, font)
-    tex_entry = tex.handle_fn(tex_entry, font)
     # Special formatting
     tex_entry = tex.handle_pinyin(tex_entry)
     tex_entry = tex.handle_caps(tex_entry)
+    # Handle reserved characters and fonts
+    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_fv(tex_entry, font)
+    tex_entry = tex.handle_fn(tex_entry, font)
     return tex_entry + EOL

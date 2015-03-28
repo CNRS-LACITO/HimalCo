@@ -14,8 +14,10 @@ from setting import lmf2tex, items
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "khaling/config.xml")
 
-# Read MDF file and set lexicon identifier
+# Run Perl script
 os.system("perl " + user_path + "../src/utils/ipa2devanagari/ipa2devanagari.pl " + user_path + "../../../../dict/khaling/toolbox/Dictionary.txt " + user_path + "khaling/result/dictionary-dev.txt")
+
+# Read MDF file and set lexicon identifier
 lexical_resource = lmf.read_mdf(id="khaling")
 
 # Display global information
@@ -29,9 +31,13 @@ lexical_resource.get_lexicon("khaling").sort_lexical_entries(items=items, sort_o
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "khaling/result/dictionary.xml")
 
+# Generate paradigms
+os.system("rm " + user_path + "khaling/result/paradigms.tex")
+os.system("perl " + user_path + "../src/utils/paradigms/paradigms.pl " + user_path + "khaling/verbs.txt " + user_path + "khaling/result/paradigms.tex")
+
 # Write LaTeX file
 lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, sort_order=xml_order)
-lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary-dev.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=dev_order)
+lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary-dev.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=dev_order, paradigms=user_path + "khaling/result/paradigms.tex")
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "khaling/result/dictionary.txt")

@@ -5,24 +5,12 @@ use strict;
 use warnings;
 use utf8;
 
-package CLI;
-use data::Dumper;
-
-sub new {
-    bless {}, $_[0];
+unless (caller) {
+    my $input_filename = $ARGV[0];
+    my $output_filename = $ARGV[1];
+    main($input_filename, $output_filename);
+    1;
 }
-
-sub run {
-    my ($self, $argv) = @_;
-    my $input_filename = $argv->[0];
-    my $output_filename = $argv->[1];
-    main($input_filename, $output_filename)
-    #my $func = "$argv->[0]";
-    #$self->$func([splice(@$argv, 1)]);
-}
-
-my $cli = CLI->new();
-$cli->run([@ARGV]);
 
 sub consonant {
     $_[0] =~ s/$_[1]$/$_[2]्/g;
@@ -328,7 +316,8 @@ sub transcr {
     $string =~ s/-//g;
     $string =~ s/्\./्\x{200C}/g; # unpredictable syllable breaks
 	$string =~ s/\.//g; 
-    $string =~ tr/[A-Z]/[a-z]/;
+    $string =~ tr/[A-Z]/[a-z]/; # conversion of paradigm tables generated with paradigms.pl
+	$string =~ tr/\[h\]/\[H\]/;
 
     return $string;
 }

@@ -1,8 +1,7 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, mdf_semanticRelation
-from config.tex import partOfSpeech_tex
-from output.tex import format_definitions
+from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
 from utils.io import EOL
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 
@@ -105,10 +104,84 @@ lmf_mdf.update({
 
 ## Functions to process some LaTeX fields (output)
 
+def handle_tones(text):
+    from utils.io import ENCODING
+    import re
+    result = ""
+    tones = "˩˧˥".decode(encoding=ENCODING)
+    # Monosyllabic
+    current_pattern = "([^" + tones + "#$]+)(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    pattern = "^" + current_pattern + "$"
+    if re.search(pattern, text):
+        found = re.match(pattern, text)
+        result += found.group(1) + found.group(2)
+        if len(found.group(3)) != 0:
+            result += "\\textsubscript{" + found.group(3) + "}"
+    # Disyllabic: add a constraint on other syllables which must have at least 2 characters (maximum 5)
+    syllable = "([^" + tones + "#$]{2,5})(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    # Handle words composed of 2, 3, 4, 5 syllables
+    for syllable_nb in range (2, 6):
+        current_pattern += syllable
+        pattern = "^" + current_pattern + "$"
+        if re.search(pattern, text):
+            found = re.match(pattern, text)
+            for i in range (0, syllable_nb):
+                result += found.group(i*3+1) + found.group(i*3+2)
+                if len(found.group(i*3+3)) != 0:
+                    result += "\\textsubscript{" + found.group(i*3+3) + "}"
+    return result
+
+def format_uid(lexical_entry, font):
+    """Forbidden characters in filenames on Windows:
+    < (less than) => none
+    > (greater than) => none
+    : (colon) => none
+    " (double quote) => none
+    / (forward slash) => none
+    \ (backslash) => £
+    | (vertical bar; pipe) => €
+    ? (question mark) => Q
+    * (asterisk) => F
+    """
+    import output.tex as tex
+    text = tex.format_uid(lexical_entry, font)
+    if text.find("|") != -1:
+        text = text.replace('|', u"€")
+    if text.find("?") != -1:
+        text = text.replace('?', 'Q')
+    if text.find("*") != -1:
+        text = text.replace('*', 'F')
+    return text
+
+def format_lexeme(lexical_entry, font):
+    import output.tex as tex
+    lexeme = font[VERNACULAR](handle_tones(lexical_entry.get_lexeme()))
+    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.get_homonymNumber() is not None:
+        # Add homonym number to lexeme
+        lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
+    if lexical_entry.get_contextual_variations() is not None and len(lexical_entry.get_contextual_variations()) != 0:
+        # Format contextual variations
+        for var in lexical_entry.get_contextual_variations():
+            result += " " + font[VERNACULAR](var)
+        result += " (from: " + lexeme + ")."
+    else:
+        # Format lexeme
+        result += lexeme
+    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    if not lexical_entry.is_subentry():
+        result += "\markboth{" + lexeme + "}{}" + EOL
+    return result
+
 def format_tone(lexical_entry, font):
     result = ""
     if lexical_entry.get_tones() is not None and len(lexical_entry.get_tones()) != 0:
-        result = lexical_entry.get_tones()[0]
+        tone = lexical_entry.get_tones()[0]
+        for c in tone:
+            if c in set("abcd123"):
+                result += "\\textsubscript{" + c + "}"
+            else:
+                result += c
     return result
 
 def format_definition(lexical_entry, language_font, language):
@@ -144,28 +217,92 @@ def format_etymology(lexical_entry, font, language):
         #result += u"\u2018" + lexical_entry.get_etymology_comment(term_source_language=language) + u"\u2019" + ". "
     return result
 
-def format_paradigm(lexical_entry, font, languages):
-    result = ""
-    cl = False
-    for paradigm in lexical_entry.get_paradigms():
-        if paradigm.get_paradigmLabel == "classifier" and paradigm.get_language() in languages:
-            if not cl:
-                result += " \\textit{CL~:}"
-                cl = True
-            result += " \\textsc{" + paradigm.get_paradigm() + "}"
-    return result
-
 def format_borrowed_word(lexical_entry, font, language):
     result = ""
     if lexical_entry.get_borrowed_word() is not None:
         if language == config.xml.French:
-            result += " \\textit{De:} "
+            result += " \\textit{De~:} "
         elif language == config.xml.English:
             result += " \\textit{From:} "
         result += lexical_entry.get_borrowed_word()
         if lexical_entry.get_written_form() is not None:
             result += " " + lexical_entry.get_written_form()
         result += ". "
+    return result
+
+def format_paradigm(lexical_entry, font, language):
+    result = ""
+    translation = ""
+    for paradigm in lexical_entry.get_paradigms():
+        if paradigm.get_paradigmLabel() == "classifier":
+            if paradigm.get_language() == config.xml.vernacular:
+                result += font[VERNACULAR](paradigm.get_paradigm()) + " "
+            if paradigm.get_language() == language:
+                translation = paradigm.get_paradigm()
+                if language == config.xml.French:
+                    translation = font[FRENCH](translation)
+                elif language == config.xml.English:
+                    translation = font[ENGLISH](translation)
+    if language == config.xml.French:
+        label = " \\textsc{cl}~: "
+    elif language == config.xml.English:
+        label = " \\textsc{cl}: "
+    if result != "":
+        result = label + result + translation
+    return result
+
+def format_related_forms(lexical_entry, font, language=None):
+    import output.tex as tex
+    result = ""
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
+        if language == config.xml.French:
+            result += "\\textit{Syn~:} "
+        else:
+            result += "\\textit{Syn:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
+        if language == config.xml.French:
+            result += "\\textit{Ant~:} "
+        else:
+            result += "\\textit{Ant:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += ". "
+    for morphology in lexical_entry.get_morphologies():
+        if language == config.xml.French:
+            result += "\\textit{Morph~:} "
+        else:
+            result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
+        if language == config.xml.French:
+            result += "\\textit{Voir~:} "
+        else:
+            result += "\\textit{See:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += " "
+    for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["hm"]):
+        if language == config.xml.French:
+            result += "\\textit{Voir~:} "
+        else:
+            result += "\\textit{See:} "
+        if related_form.get_lexical_entry() is not None:
+            result += tex.format_link(related_form.get_lexical_entry(), font)
+        else:
+            result += font[VERNACULAR](related_form.get_lexeme())
+        result += " "
+    # ce
+    # cn
+    # cr
+    # result += "\\textit{See main entry:} " + font[VERNACULAR](lexical_entry.get_mn()) + ". "
     return result
 
 def tex_fra(lexical_entry, font):
@@ -181,8 +318,9 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + tex.format_lexeme(lexical_entry, config.xml.font) + "}",\
+    tex_entry = (r"""%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[FRENCH], language=config.xml.French),\
@@ -191,8 +329,8 @@ def tex_fra(lexical_entry, font):
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.French, config.xml.national]),\
-        format_paradigm(lexical_entry, config.xml.font, [config.xml.vernacular, config.xml.national, config.xml.regional, config.xml.French]),\
-        tex.format_related_forms(lexical_entry, font))
+        format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
+        format_related_forms(lexical_entry, font, language=config.xml.French))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
@@ -214,8 +352,9 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + tex.format_lexeme(lexical_entry, config.xml.font) + "}",\
+    tex_entry = (r"""%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
         format_definition(lexical_entry, config.xml.font[ENGLISH], language=config.xml.English),\
@@ -224,8 +363,8 @@ def tex_eng(lexical_entry, font):
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
         tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national]),\
-        format_paradigm(lexical_entry, config.xml.font, [config.xml.vernacular, config.xml.national, config.xml.regional, config.xml.English]),\
-        tex.format_related_forms(lexical_entry, font))
+        format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
+        format_related_forms(lexical_entry, font, language=config.xml.English))
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts

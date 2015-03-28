@@ -28,7 +28,7 @@ lexical_resource.get_lexicon("na").sort_lexical_entries(items=items, sort_order=
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")
 
-# Write LaTeX file
+# Write LaTeX files
 lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order)
 lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order)
 
