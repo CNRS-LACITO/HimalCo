@@ -271,7 +271,7 @@ def format_audio(lexical_entry, font):
                     # Following line generates an error on Windows
                     print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
-            file_name = file_name.replace('_', '\string_').replace('-', '\string-')
+            file_name = file_name.replace('-', '\string-')
             result += "\includemedia[" + EOL +\
                 "\taddresource=" + file_name + "," + EOL +\
                 "\tflashvars={" + EOL +\
@@ -282,7 +282,7 @@ def format_audio(lexical_entry, font):
                     "\t\t&hideBar=true" + EOL +\
                     "\t\t&volume=1.0" + EOL +\
                     "\t\t&balance=0.0" + EOL +\
-                "}]{\includegraphics[scale=0.5]{sound1\string_bleu.jpg}}{APlayer.swf}"
+                "}]{\includegraphics[scale=0.5]{sound1_bleu.jpg}}{APlayer.swf}"
             # \mediabutton[<options>]{<normal button text or graphic>}
             result += " \\hspace{0.1cm}" + EOL
     return result
