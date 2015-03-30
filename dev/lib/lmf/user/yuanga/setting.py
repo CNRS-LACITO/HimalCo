@@ -11,6 +11,167 @@ from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 import config
 FRENCH = "French"
 
+## Semantic domains
+sd_order = [
+    ("TITLE", "1. le corps humain"),
+    [
+        ("corps", "1.1. anatomie"),
+        ("fonct.nat", "1.2. fonctions naturelles"),
+        ("SUBTITLE", "1.3. santé, maladie, médecine"),
+        [
+            ("santé", "1.3.1. santé, maladie"),
+            ("médecine", "1.3.2. remèdes, médecine")
+        ],
+        ("SUBTITLE", "1.4. vêtements, parure, soins du corps"),
+        [
+            ("habillement", "1.4.1. vêtements, parure"),
+            ("soins", "1.4.2. soins du corps")
+        ],
+        ("SUBTITLE", "1.5. positions, déplacements, mouvements, actions"),
+        [
+            ("position", "1.5.1. préfixes verbaux de position"),
+            ("mouvement", "1.5.2. préfixes verbaux de mouvement"),
+            ("déplacement", "1.5.3. déplacements, mouvements avec les pieds"),
+            ("portage", "1.5.4. portage"),
+            ("action tête", "1.5.5. mouvements ou actions avec la tête, les yeux, la bouche"),
+            ("action corps", "1.5.6. mouvements de bras, de mains"),
+            ("action", "1.5.7. verbes d'action (en général)"),
+            ("manière", "1.5.8. postverbes de manière")
+        ]
+    ],
+    ("TITLE", "2. techniques"),
+    [
+        ("SUBTITLE", "2.1. habitat"),
+        [
+            ("habitat", "2.1.1. habitat"),
+            ("maison", "2.1.2. types de maison, architecture de la maison")
+        ],
+        ("SUBTITLE", "2.2. cultures plantations récoltes"),
+        [
+            ("cultures", "2.2.1. cultures"),
+            ("champs", "2.2.2. types de champs")
+        ],
+        ("SUBTITLE", "2.3. chasse guerre"),
+        [
+            ("armes", "2.3.1. armes"),
+            ("chasse", "2.3.2. chasse"),
+            ("guerre", "2.3.3. guerre")
+        ],
+        ("pêche", "2.4. pêche"),
+        ("navigation", "2.5. navigation"),
+        ("feu", "2.6. feu"),
+        ("SUBTITLE", "2.7. cuisine alimentation"),
+        [
+            ("ustensiles", "2.7.1. ustensiles"),
+            ("prép.aliments", "2.7.2. préparation des aliments"),
+            ("cuisson", "2.7.3. modes de cuisson"),
+            ("alimentation", "2.7.4. alimentation")
+        ],
+        ("SUBTITLE", "2.8. tressage (nattes paniers) cordes noeuds paquets"),
+        [
+            ("tressage", "2.8.1. tressage"),
+            ("nattes", "2.8.2. nattes"),
+            ("paniers", "2.8.3. paniers"),
+            ("cordes", "2.8.4. cordes"),
+            ("couture", "2.8.5. couture"),
+            ("paquet", "2.8.6. paquetages")
+        ],
+        ("SUBTITLE", "2.9. travail du bois forme et consistance des objets"),
+        [
+            ("outils", "2.9.1. outils, matériaux"),
+            ("travail bois", "2.9.2. travail bois"),
+            ("carac.objet", "2.9.3. description des objets, formes, consistance")
+        ]
+    ],
+    ("TITLE", "3. individu - société"),
+    [
+        ("étapes vie", "3.1. cours de la vie"),
+        ("SUBTITLE", "3.2. fonctions intellectuelles, sentiments"),
+        [
+            ("fonct.intellectuelles", "3.2.1. fonctions intellectuelles"),
+            ("sentiments", "3.2.2. sentiments")
+        ],
+        ("SUBTITLE", "3.3. parenté alliance"),
+        [
+            ("parenté", "3.3.1. parenté"),
+            ("appellation parenté", "3.3.2. appellation parenté"),
+            ("désignation parenté", "3.3.3. désignation parenté"),
+            ("alliance", "3.3.4. alliance"),
+            ("couple parenté", "3.3.5. couple parenté")
+        ],
+        ("SUBTITLE", "3.4. organisation sociale richesses dons échanges"),
+        [
+            ("société", "3.4.1. organisation sociale"),
+            ("richesse", "3.4.2. richesses, monnaies traditionnelles"),
+            ("échanges", "3.4.3. dons, échanges, achat et vente, vol")
+        ],
+        ("religion", "3.5. religion"),
+        ("SUBTITLE", "3.6. fêtes danse chant jeux"),
+        [
+            ("fête", "3.6.1. fêtes"),
+            ("jeux", "3.6.2. jeux divers")
+        ],
+        ("SUBTITLE", "3.7. traditions orales relations inter-individuelles"),
+        [
+            ("oralité", "3.7.1. tradition orale"),
+            ("discours", "3.7.2. échanges verbaux"),
+            ("exclamations", "3.7.3. exclamations"),
+            ("interaction", "3.7.4. relations"),
+        ]
+    ],
+    ("TITLE", "4. nature"),
+    [
+        ("SUBTITLE", "4.1. ciel"),
+        [
+            ("astres", "4.1.1. astres"),
+            ("temps", "4.1.2. découpage du temps"),
+            ("vent", "4.1.3. vent"),
+            ("climat", "4.1.4. phénomènes atmosphériques"),
+            ("couleurs", "4.1.5. couleurs")
+        ],
+        ("SUBTITLE", "4.2. terre"),
+        [
+            ("terrain", "4.2.1. les terrains et leur constitution"),
+            ("topographie", "4.2.2. topographie"),
+            ("orientation", "4.2.3. orientation")
+        ],
+        ("eau", "4.3. eau (eau douce mer)")
+    ],
+    ("TITLE", "5. zoologie"),
+    [
+        ("oiseaux", "5.1. oiseaux"),
+        ("SUBTITLE", "5.2. mammifères"),
+        [
+            ("mammifères", "5.2.1. mammifères"),
+            ("mammifères marins", "5.2.2. mammifères marins")
+        ],
+        ("SUBTITLE", "5.3. reptiles"),
+        [
+            ("reptiles", "5.3.1. reptiles"),
+            ("reptiles marins", "5.3.2. reptiles marins")
+        ],
+        ("crustacés", "5.4. crustacés"),
+        ("échinodermes", "5.5. échinodermes"),
+        ("insectes", "5.6. insectes"),
+        ("mollusques", "5.7. mollusques"),
+        ("poissons", "5.8. poissons"),
+    ],
+    ("TITLE", "6. botanique"),
+    [
+        ("arbre", "6.1. arbre"),
+        ("plantes", "6.2. description des végétaux"),
+        ("cocotier", "6.3. cocotier"),
+        ("ignames", "6.4. ignames"),
+        ("taros", "6.5. taros"),
+        ("patates douces", "6.6. patates douces"),
+        ("canne à sucre", "6.7. canne à sucre"),
+        ("bananiers", "6.8. bananiers"),
+        ("manioc", "6.9. manioc")
+    ],
+    ("classificateur", "7. classificateur"),
+    ("quantificateur", "8. quantificateur")
+]
+
 def get_is(lexical_entry):
     for sd in lexical_entry.get_semantic_domains():
         # Consider only the first semantic domain
