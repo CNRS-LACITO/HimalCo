@@ -18,5 +18,5 @@ REM # LaTeX file is generated without sound records and without cross references
 python user/na/alexis/run_na.py -a -c
 
 REM # Generate PDF
-C:/texlive/2013/bin/win32/xelatex.exe -output-directory=user/na/result/ user/na/result/dictionary.tex
-C:/texlive/2013/bin/win32/xelatex.exe -output-directory=user/na/result/ user/na/result/dictionary.tex
+C:/Program\ Files\ (x86)/MiKTeX\ 2.9/miktex/bin/xelatex.exe -output-directory=user/na/result/ user/na/result/dictionary.tex
+C:/Program\ Files\ (x86)/MiKTeX\ 2.9/miktex/bin/xelatex.exe -output-directory=user/na/result/ user/na/result/dictionary.tex
