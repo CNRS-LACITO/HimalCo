@@ -168,10 +168,11 @@ class Lexicon():
         """
         return len(self.get_lexical_entries())
 
-    def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
+    def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, comparison=None):
         """! @brief Sort given items of lexical entries contained in the lexicon according to a certain order.
         @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
         @param sort_order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
+        @param comparison Function to compare items. If 'None', a default function to compare character by character is provided.
         @return The sorted Python list of lexical entries.
         """
         # To access options
@@ -228,7 +229,9 @@ class Lexicon():
         else:
             # sorted(iterable, cmp, key, reverse)
             # list.sort(cmp, key, reverse)
-            items_and_entries.sort(cmp=compare, key=lambda l: l[0])
+            if comparison is None:
+                comparison = compare
+            items_and_entries.sort(cmp=comparison, key=lambda l: l[0])
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
         # Delete the old list of lexical entries and set the new one

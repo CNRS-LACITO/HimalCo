@@ -4,7 +4,7 @@
 from config.mdf import ps_partOfSpeech
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
-from utils.io import EOL
+from utils.io import EOL, ENCODING
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 
 ## To define languages and fonts
@@ -12,22 +12,22 @@ import config
 FRENCH = "French"
 
 ## Semantic domains
-sd_order = [
-    ("TITLE", "1. le corps humain"),
+order = [
+    ("TITLE 1", "1. le corps humain"),
     [
         ("corps", "1.1. anatomie"),
         ("fonct.nat", "1.2. fonctions naturelles"),
-        ("SUBTITLE", "1.3. santé, maladie, médecine"),
+        ("TITLE 2", "1.3. santé, maladie, médecine"),
         [
             ("santé", "1.3.1. santé, maladie"),
             ("médecine", "1.3.2. remèdes, médecine")
         ],
-        ("SUBTITLE", "1.4. vêtements, parure, soins du corps"),
+        ("TITLE 2", "1.4. vêtements, parure, soins du corps"),
         [
             ("habillement", "1.4.1. vêtements, parure"),
             ("soins", "1.4.2. soins du corps")
         ],
-        ("SUBTITLE", "1.5. positions, déplacements, mouvements, actions"),
+        ("TITLE 2", "1.5. positions, déplacements, mouvements, actions"),
         [
             ("position", "1.5.1. préfixes verbaux de position"),
             ("mouvement", "1.5.2. préfixes verbaux de mouvement"),
@@ -39,19 +39,19 @@ sd_order = [
             ("manière", "1.5.8. postverbes de manière")
         ]
     ],
-    ("TITLE", "2. techniques"),
+    ("TITLE 1", "2. techniques"),
     [
-        ("SUBTITLE", "2.1. habitat"),
+        ("TITLE 2", "2.1. habitat"),
         [
             ("habitat", "2.1.1. habitat"),
             ("maison", "2.1.2. types de maison, architecture de la maison")
         ],
-        ("SUBTITLE", "2.2. cultures plantations récoltes"),
+        ("TITLE 2", "2.2. cultures plantations récoltes"),
         [
             ("cultures", "2.2.1. cultures"),
             ("champs", "2.2.2. types de champs")
         ],
-        ("SUBTITLE", "2.3. chasse guerre"),
+        ("TITLE 2", "2.3. chasse guerre"),
         [
             ("armes", "2.3.1. armes"),
             ("chasse", "2.3.2. chasse"),
@@ -60,14 +60,14 @@ sd_order = [
         ("pêche", "2.4. pêche"),
         ("navigation", "2.5. navigation"),
         ("feu", "2.6. feu"),
-        ("SUBTITLE", "2.7. cuisine alimentation"),
+        ("TITLE 2", "2.7. cuisine alimentation"),
         [
             ("ustensiles", "2.7.1. ustensiles"),
             ("prép.aliments", "2.7.2. préparation des aliments"),
             ("cuisson", "2.7.3. modes de cuisson"),
             ("alimentation", "2.7.4. alimentation")
         ],
-        ("SUBTITLE", "2.8. tressage (nattes paniers) cordes noeuds paquets"),
+        ("TITLE 2", "2.8. tressage (nattes paniers) cordes noeuds paquets"),
         [
             ("tressage", "2.8.1. tressage"),
             ("nattes", "2.8.2. nattes"),
@@ -76,22 +76,22 @@ sd_order = [
             ("couture", "2.8.5. couture"),
             ("paquet", "2.8.6. paquetages")
         ],
-        ("SUBTITLE", "2.9. travail du bois forme et consistance des objets"),
+        ("TITLE 2", "2.9. travail du bois forme et consistance des objets"),
         [
             ("outils", "2.9.1. outils, matériaux"),
             ("travail bois", "2.9.2. travail bois"),
             ("carac.objet", "2.9.3. description des objets, formes, consistance")
         ]
     ],
-    ("TITLE", "3. individu - société"),
+    ("TITLE 1", "3. individu - société"),
     [
         ("étapes vie", "3.1. cours de la vie"),
-        ("SUBTITLE", "3.2. fonctions intellectuelles, sentiments"),
+        ("TITLE 2", "3.2. fonctions intellectuelles, sentiments"),
         [
             ("fonct.intellectuelles", "3.2.1. fonctions intellectuelles"),
             ("sentiments", "3.2.2. sentiments")
         ],
-        ("SUBTITLE", "3.3. parenté alliance"),
+        ("TITLE 2", "3.3. parenté alliance"),
         [
             ("parenté", "3.3.1. parenté"),
             ("appellation parenté", "3.3.2. appellation parenté"),
@@ -99,19 +99,19 @@ sd_order = [
             ("alliance", "3.3.4. alliance"),
             ("couple parenté", "3.3.5. couple parenté")
         ],
-        ("SUBTITLE", "3.4. organisation sociale richesses dons échanges"),
+        ("TITLE 2", "3.4. organisation sociale richesses dons échanges"),
         [
             ("société", "3.4.1. organisation sociale"),
             ("richesse", "3.4.2. richesses, monnaies traditionnelles"),
             ("échanges", "3.4.3. dons, échanges, achat et vente, vol")
         ],
         ("religion", "3.5. religion"),
-        ("SUBTITLE", "3.6. fêtes danse chant jeux"),
+        ("TITLE 2", "3.6. fêtes danse chant jeux"),
         [
             ("fête", "3.6.1. fêtes"),
             ("jeux", "3.6.2. jeux divers")
         ],
-        ("SUBTITLE", "3.7. traditions orales relations inter-individuelles"),
+        ("TITLE 2", "3.7. traditions orales relations inter-individuelles"),
         [
             ("oralité", "3.7.1. tradition orale"),
             ("discours", "3.7.2. échanges verbaux"),
@@ -119,9 +119,9 @@ sd_order = [
             ("interaction", "3.7.4. relations"),
         ]
     ],
-    ("TITLE", "4. nature"),
+    ("TITLE 1", "4. nature"),
     [
-        ("SUBTITLE", "4.1. ciel"),
+        ("TITLE 2", "4.1. ciel"),
         [
             ("astres", "4.1.1. astres"),
             ("temps", "4.1.2. découpage du temps"),
@@ -129,7 +129,7 @@ sd_order = [
             ("climat", "4.1.4. phénomènes atmosphériques"),
             ("couleurs", "4.1.5. couleurs")
         ],
-        ("SUBTITLE", "4.2. terre"),
+        ("TITLE 2", "4.2. terre"),
         [
             ("terrain", "4.2.1. les terrains et leur constitution"),
             ("topographie", "4.2.2. topographie"),
@@ -137,15 +137,15 @@ sd_order = [
         ],
         ("eau", "4.3. eau (eau douce mer)")
     ],
-    ("TITLE", "5. zoologie"),
+    ("TITLE 1", "5. zoologie"),
     [
         ("oiseaux", "5.1. oiseaux"),
-        ("SUBTITLE", "5.2. mammifères"),
+        ("TITLE 2", "5.2. mammifères"),
         [
             ("mammifères", "5.2.1. mammifères"),
             ("mammifères marins", "5.2.2. mammifères marins")
         ],
-        ("SUBTITLE", "5.3. reptiles"),
+        ("TITLE 2", "5.3. reptiles"),
         [
             ("reptiles", "5.3.1. reptiles"),
             ("reptiles marins", "5.3.2. reptiles marins")
@@ -156,7 +156,7 @@ sd_order = [
         ("mollusques", "5.7. mollusques"),
         ("poissons", "5.8. poissons"),
     ],
-    ("TITLE", "6. botanique"),
+    ("TITLE 1", "6. botanique"),
     [
         ("arbre", "6.1. arbre"),
         ("plantes", "6.2. description des végétaux"),
@@ -172,10 +172,48 @@ sd_order = [
     ("quantificateur", "8. quantificateur")
 ]
 
+def read_order(order, sd_order, rank, sd_list):
+    for element in order:
+        if type(element) is not list:
+            sd = element[0]
+            if not sd.startswith("TITLE"):
+                rank += 1
+                sd_order.update({sd.decode(ENCODING) : rank})
+            sd_list.append(element)
+        else:
+            (sd_order, rank, sd_list) = read_order(element, sd_order, rank, sd_list)
+    return (sd_order, rank, sd_list)
+
+sd_order = dict()
+rank = 0
+sd_list = list()
+(sd_order, rank, sd_list) = read_order(order, sd_order, rank, sd_list)
+sd_order.update({"-" : rank + 1})
+
+def compare_sd(x, y):
+    """Compare 2 semantic domains between each other.
+    """
+    try:
+        # Both equal => do nothing
+        if sd_order[x] == sd_order[y]:
+            return 0
+        # If the 1st one is lower than the 2nd one, its rank is decremented
+        if sd_order[x] < sd_order[y]:
+            return -1
+        # If the 1st one is greater than the 2nd one, its rank is incremented
+        elif sd_order[x] > sd_order[y]:
+            return 1
+    except KeyError:
+        print Warning("Cannot compare " + x.encode(ENCODING) + " and " + y.encode(ENCODING))
+        return -1
+
+sd_errors = set()
 def get_is(lexical_entry):
     for sd in lexical_entry.get_semantic_domains():
         # Consider only the first semantic domain
-        return sd
+        if sd in sd_order.keys():
+            return sd
+        sd_errors.add(sd)
     return "-"
 items=lambda lexical_entry: get_is(lexical_entry)
 

@@ -3,15 +3,21 @@
 from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.error_handling import OutputError
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
+from utils.io import ENCODING
 
 from docx import Document
 from docx.shared import Inches
 
-def doc_write(object, filename):
+def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None):
     """! @brief Write a document file.
     @param object The LMF instance to convert into document output format.
     @param filename The name of the document file to write with full path, for instance 'user/output.doc'.
+    @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
+    @param sort_order Python list. Default value is 'None', which means that the document output is alphabetically ordered.
     """
+    if sort_order is None:
+        # TODO
+        pass
     document = Document()
     # Parse LMF values
     if object.__class__.__name__ == "LexicalResource":
@@ -22,9 +28,32 @@ def doc_write(object, filename):
             document.add_paragraph(lexicon.get_label())
             # Page break
             document.add_page_break()
+            # Lexicon is already ordered
+            n = -1
+            level = 0
+            current_item = ("", "")
             for lexical_entry in lexicon.get_lexical_entries():
+                # Consider only main entries (subentries will be written as parts of the main entry)
+                if lexical_entry.find_related_forms("main entry") != []:
+                    continue
+                # Check if item of current element is different from previous one
+                while items(lexical_entry) != current_item[0].decode(ENCODING):
+                    try:
+                        n += 1
+                        current_item = sort_order[n]
+                        while current_item[0].startswith("TITLE"):
+                            level = int(current_item[0][-1])
+                            # Heading
+                            document.add_heading(current_item[1].decode(ENCODING), level=level)
+                            n += 1
+                            current_item = sort_order[n]
+                        # Heading
+                        document.add_heading(current_item[1].decode(ENCODING), level=level+1)
+                    except IndexError:
+                        # Reached end of list
+                        break
                 # Heading
-                document.add_heading(lexical_entry.get_lexeme(), level=1)
+                document.add_heading(lexical_entry.get_lexeme(), level=level+2)
                 # Paragraph
                 p = document.add_paragraph()
                 # Bold
