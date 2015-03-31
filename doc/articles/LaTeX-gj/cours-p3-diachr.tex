@@ -1,0 +1,178 @@
+\documentclass[twoside,a4paper,11pt]{article} 
+\usepackage{polyglossia}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right= 20mm,
+ top=20mm,
+ bottom= 20mm,
+ }
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{varioref,hyperref} 
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+%\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Ubuntu} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+%\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+%\newfontfamily\greek[Mapping=tex-text,Scale=MatchLowercase]{Galatia SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}}
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+%\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{IPAGothic}%pour le chinois
+%\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{\mo{#1}}
+%\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\Σ}{\greek{Σ}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+
+
+\begin{document}
+
+Exemple de texte en ojibwe:
+
+\begin{exe} 
+ \ex 
+\gll \tx   Mii  dash en-aa-d                        iniw  misaaben       a'aw wiindigoo: "Anishinaabe-g       gid-ayaaw-aa-g,"               od-i-naan. O-gii-gaan-igo-waan              biindig endaan-id                iniw  misaabe-n jibwaa-biindigen-id               iniw  wiindigoo-n.      "Gaawiin anishinaabe-g nind-ayaaw-aa-sii-g,"                  ikido    a'aw misaabe. \\ 
+      thus and  say.so.IC-\textsc{dir}-\textsc{part}.3\textsc{s} those giant-\textsc{obv}  that  wendigo    human-\textsc{pl}    2-have-\textsc{dir}-\textsc{pl}    3-say.so-\textsc{dir}.\textsc{s}>\textsc{ovd}  3-\textsc{pst}-hide-3\textsc{obv}>3\textsc{pl} inside  live.IC-\textsc{cnj}.3\textsc{sg}.\textsc{obv} those giant-\textsc{obv}  before-enter-\textsc{cnj}.3\textsc{sg}.\textsc{obv} those wendigo-\textsc{obv}  \textsc{neg}     human-\textsc{pl} 1-have-\textsc{dir}-\textsc{neg}-\textsc{pl}    speak.so that giant \\ 
+\end{exe} 
+ 
+ 
+
+
+Références: 
+\citet{bloomfield25central}, \citet{bloomfield28thk}, \citet{bloomfield46proto}, \citet{siebert41clusters}, \citet{goddard74arapaho}, \citet{jacques13arapaho}
+ 
+ 
+\begin{table}[h]
+\caption{Correspondances des groupes en --k-- dans les langues algonquiennes centrales.} \centering  \label{tab:c.simple}
+\begin{tabular}{lllllll}
+\toprule
+Proto-algonquien & fox & ojibwe & cree des plaines & menomini \\
+\midrule
+\ipa{*p} & 	\ipa{p} & 	\ipa{p/b} & 	\ipa{p} & 	\ipa{p} & 	\\
+\ipa{*t} & 	\ipa{t} & 	\ipa{t/d} & 	\ipa{t} & 	\ipa{t} & 	\\
+\ipa{*č} & 	\ipa{č} & 	\ipa{č/dž} & 	\ipa{ts} & 	\ipa{ts} & 	\\
+\ipa{*k} & 	\ipa{k} & 	\ipa{k/g} & 	\ipa{k} & 	\ipa{k} & 	\\
+\ipa{*m} & 	\ipa{m} & 	\ipa{m} & 	\ipa{m} & 	\ipa{m} & 	\\
+\ipa{*n} & 	\ipa{n} & 	\ipa{n} & 	\ipa{n} & 	\ipa{n} & 	\\
+\ipa{*s} & 	\ipa{s} & 	\ipa{s/z} & 	\ipa{s} & 	\ipa{s} & 	\\
+\ipa{*š} & 	\ipa{š} & 	\ipa{š/ž} & 	\ipa{s} & 	\ipa{s} & 	\\
+\ipa{*θ} & 	\ipa{n} & 	\ipa{n} & 	\ipa{t} & 	\ipa{n} & 	\\
+\ipa{*l} & 	\ipa{n} & 	\ipa{n} & 	\ipa{y} & 	\ipa{n} & 	\\
+\ipa{*h} & 	\ipa{h} & 	\ipa{h} & 	\ipa{h} & 	\ipa{h} & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ \begin{table}[h]
+ \caption{Exemples de cognats (tirés de \citet{bloomfield25central}).}
+ \centering 
+\begin{tabular}{lllll}
+\toprule
+ &fox & ojibwe & cree des plaines&sens \\
+\midrule
+\ipa{*iškoteewi} & \ipa{aškuteewi} & \ipa{iškode} & \ipa{iskutew} & feu \\
+\ipa{*nexkaatali} & \ipa{nehkaatani} & \ipa{nikaadan} & \ipa{niskaata}  &mes jambes \\
+\ipa{*noohkomehsa} & \ipa{noohkum(es)a} & \ipa{nookom(is)} & \ipa{noohkum}   &ma grand-mère\\
+\ipa{*meçkwi} & \ipa{meškwi} & \ipa{miškwi} **  & \ipa{mihku} &sang\\
+\ipa{*išpemenki} & \ipa{ahpemeki} & \ipa{išpiming} & \ipa{ispimihk}   &en haut\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+ 
+ 
+
+\begin{table}[h]
+\caption{Correspondances des groupes en --k-- dans les langues algonquiennes centrales.} \centering  \label{tab:clusters.k}
+\begin{tabular}{lllll}
+\toprule
+Proto-algonquien & fox & ojibwe & cree des plaines & menomini \\
+\midrule
+\ipa{*čk} & \ipa{hk} & \ipa{šk} & \ipa{sk} & \ipa{tsk} \\
+\ipa{*šk} & \ipa{šk} & \ipa{šk} & \ipa{sk} & \ipa{sk} \\
+\ipa{*xk} & \ipa{hk} & \ipa{hk} & \ipa{sk} & \ipa{hk} \\
+\ipa{*hk} & \ipa{hk} & \ipa{kk} & \ipa{hk} & \ipa{hk} \\
+\ipa{*çk} & \ipa{šk} & \ipa{šk}    & \ipa{hk} & \ipa{hk} \\
+\ipa{*nk} & \ipa{g} & \ipa{ng} & \ipa{hk} & \ipa{hk} \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ 
+
+ \begin{table}[h]
+\begin{tabular}{lllllll}
+\toprule
+Sens & Arapaho &  Ojibwe \\
+\midrule
+``bison'' & \ipa{bíí} & \textit{mooz} \\
+``caribou'' & \ipa{hóte'} & \textit{adik} \\
+``son calumet'' & \ipa{hiicóoó} & \textit{opwaagan} \\
+``son foie'' & \ipa{hís} & \textit{okon} \\
+``son  os'' & \ipa{híθ} & \textit{okan} \\
+ ``eau" & \ipa{néc}     &  \textit{nibi} \\
+  ``être épais" & \ipa{hookoyóó}--    &  \textit{gipagaa}-- \\
+ ``lapin" & \ipa{nóóku}     &  \textit{waabooz} \\
+  ``cadavre" & \ipa{θiik}    &  \textit{jiibay} \\
+  ``être enfumé" & \ipa{kootéé}--    &  \textit{baate}-- ``être sec"\\
+  ``tuer" & \ipa{neh'}--    &  \textit{nis}--  \\
+    ``boire" & \ipa{béne}--    &  \textit{minikwe}--  \\
+  ``enlever (un morceau de)" & \ipa{koyein}--    &  \textit{bakwen}-- \\
+  ``lâche, pas assez serré" & \ipa{kono'(óé)}--    &  \textit{banangw(ad)}-- \\ 
+ ``ravine" & \ipa{koh'ówu'}--    &  \textit{basakamig(aa)}-- ``be a ravine"\\ 
+ ``ennemis" &   \ipa{cóóθo'}  & \ipa{bwaanag} \\
+ ``chemin" & \ipa{bóoó} &  \ipa{miikan} \\
+ ``fleuve" &  \ipa{níícíí}       &  \ipa{ziibi} \\
+``moustique"  & \ipa{nóúbee}  &  \ipa{zagime} \\
+``être faux"  & \ipa{nóno(yoo)}--   & \textit{zanag(izi)} ``avoir des difficultés"  \\
+``cinq" & \ipa{yooθón} & \ipa{naanan} \\
+``flèche" & \ipa{hóθ} &  \ipa{anwi} \\
+``glace" & \ipa{wó'ow} &  \ipa{mikwam} \\
+``sang" & \ipa{be'} &  \ipa{miskwi} \\
+``fourmi" & \ipa{hééni'} &  \ipa{enig} \\
+``homme" & \ipa{hinén} & \ipa{ininiw} \\
+``pus" & \ipa{bén} & \ipa{mini} \\
+``cottonwood'' &\ipa{hohóót} &\ipa{azaad} \\
+``canard'' &\ipa{siisiic} &\ipa{zhiishiib} \\
+``oie'' &\ipa{né} &\ipa{nika} \\
+``pilier'' &\ipa{hokóóx} &\ipa{abanzh} \\
+``herbe'' &\ipa{woxú} &\ipa{mashkiki} \\
+``ours'' &\ipa{wox} &\ipa{makwa} \\
+``étoile'' &\ipa{hóθo'} &\ipa{anang} \\
+``mon coeur'' &\ipa{nétee} &\ipa{inde'} \\
+\bottomrule
+\end{tabular}
+\end{table}
+VII vs VAI (\textit{gipagaa}--, \textit{gipagizi}--)
+
+ \bibliographystyle{unified}
+ \bibliography{bibliogj}
+
+\end{document}
