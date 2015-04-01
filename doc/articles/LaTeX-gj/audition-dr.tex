@@ -152,14 +152,26 @@
   \begin{frame} 
  \frametitle{Projet de recherche} 
  
+  \begin{tikzpicture}
+    \node (C) at (2,-1) {Grammaire japhug};
+        \node (D) at (-3,-3)  {Linguistique sino-tibétaine};
+       \node (F) at (-4,-5)  {Phonologie panchronique};%\\ Adversative};
+        \node (G) at (2,-5) {Morphosyntaxe panchronique}; 
+             \node (H) at (-1,-7)  {Modélisation de la méthode comparative};
+  %  \node (J) at (-0.5,-9) {\textbf{Comparee NP}};
+    
+    
+\tikzstyle{peutetre}=[->,dotted,very thick,>=latex]
+\tikzstyle{sur}=[->,very thick,>=latex]
+\draw[sur] (C)--(D);
+\draw[sur] (D)--(F);
+\draw[sur] (G)--(H);
+\draw[peutetre] (C)--(G);
+\draw[peutetre] (D) to[bend left] (H);
+%\draw[peutetre] (C) to[bend right] (F);
 
-\begin{itemize}%[<+->]
-\item Grammaire Japhug
-\item Linguistique comparative des langues sino-tibétaines
-\item Phonologie panchronique
-\item Morphosyntaxe panchronique  
-\item Modélisation formelle de la méthode comparative 
-\end{itemize}
+\end{tikzpicture}
+
    
   \end{frame}   
 
