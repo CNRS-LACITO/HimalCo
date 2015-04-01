@@ -532,6 +532,7 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr nt_F5
@@ -909,6 +910,7 @@
 \mkrOverThis sn
 \mkrFollowingThis va
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ve
@@ -922,6 +924,7 @@
 \+mkr vf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr vn
@@ -1255,4 +1258,5 @@
 \-expset
 \PreventNumbering
 \DisableNumbering
+\HideFields
 \-DatabaseType
