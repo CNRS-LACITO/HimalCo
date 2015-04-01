@@ -8,6 +8,10 @@ import os
 # Add user yuanga folder to path
 sys.path.append(user_path + 'yuanga')
 
+# Create result folder
+if not os.path.exists(user_path + "yuanga/result"):
+    os.mkdir(user_path + "yuanga/result")
+
 # Import user customized configuration
 from setting import lmf2tex, items, sd_order, sd_errors, compare_sd, sd_list
 

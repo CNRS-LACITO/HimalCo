@@ -7,3 +7,7 @@ import os
 
 # Add limbu configuration folder to path
 sys.path.append(user_path + 'limbu')
+
+# Create result folder
+if not os.path.exists(user_path + "limbu/result"):
+    os.mkdir(user_path + "limbu/result")

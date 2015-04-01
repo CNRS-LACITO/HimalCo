@@ -8,6 +8,10 @@ import os
 # Add japhug configuration folder to path
 sys.path.append(user_path + 'japhug')
 
+# Create result folder
+if not os.path.exists(user_path + "japhug/result"):
+    os.mkdir(user_path + "japhug/result")
+
 # Import user customized configuration
 from setting import lmf2tex
 

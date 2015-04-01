@@ -7,3 +7,7 @@ import os
 
 # Add koyi configuration folder to path
 sys.path.append(user_path + 'koyi')
+
+# Create result folder
+if not os.path.exists(user_path + "koyi/result"):
+    os.mkdir(user_path + "koyi/result")

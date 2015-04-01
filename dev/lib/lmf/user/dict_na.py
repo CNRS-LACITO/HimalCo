@@ -8,6 +8,10 @@ import os
 # Add na configuration folder to path
 sys.path.append(user_path + 'na')
 
+# Create result folder
+if not os.path.exists(user_path + "na/result"):
+    os.mkdir(user_path + "na/result")
+
 # Import user customized configuration
 from setting import tex_eng, tex_fra, items
 

@@ -7,3 +7,7 @@ import os
 
 # Add thulung configuration folder to path
 sys.path.append(user_path + 'thulung')
+
+# Create result folder
+if not os.path.exists(user_path + "thulung/result"):
+    os.mkdir(user_path + "thulung/result")

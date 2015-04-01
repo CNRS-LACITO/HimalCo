@@ -8,6 +8,10 @@ import os
 # Add khaling configuration folder to path
 sys.path.append(user_path + 'khaling')
 
+# Create result folder
+if not os.path.exists(user_path + "khaling/result"):
+    os.mkdir(user_path + "khaling/result")
+
 # Import user customized configuration
 from setting import lmf2tex, items
 
