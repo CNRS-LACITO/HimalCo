@@ -67,7 +67,7 @@ def format_lexeme(lexical_entry, font):
     inf_dev = font[NATIONAL](lexical_entry.get_citation_forms(script_name="devanagari")[0]) # lc_dev
     inf_api = font[VERNACULAR](lexical_entry.get_citation_forms(script_name="ipa")[0]) # lc
     root_api = font[VERNACULAR](lexical_entry.get_lexeme()) # lx
-    result = "\\hspace{-1cm} "
+    result = "\\vspace{0.5cm} \\hspace{-1cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         root_api += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"

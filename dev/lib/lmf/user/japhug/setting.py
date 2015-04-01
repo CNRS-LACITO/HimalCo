@@ -74,7 +74,7 @@ partOfSpeech_tex.update({
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
     lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
-    result = "\\hspace{-1cm} "
+    result = "\\vspace{0.5cm} \\hspace{-1cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
