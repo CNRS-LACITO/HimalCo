@@ -17,7 +17,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
     """
     if sort_order is None:
         # TODO
-        pass
+        return
     document = Document()
     # Parse LMF values
     if object.__class__.__name__ == "LexicalResource":

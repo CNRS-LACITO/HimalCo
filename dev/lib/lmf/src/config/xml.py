@@ -8,6 +8,7 @@ from core.lexicon import Lexicon
 from utils.xml_format import parse_xml
 from utils.error_handling import InputError
 from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
+from config.tex import partOfSpeech_tex, paradigmLabel_tex
 
 # If an LMF module needs to access languages or fonts, copy following lines:
 # import config
@@ -106,14 +107,14 @@ def config_read(filename):
                     # XML elements "mdf_lmf" have 2 XML attributes: one for the name of the marker ("marker"), a second for the variable name ("var")
                     exec("l = lambda " + mdf.attrib['var'] + ": " + mdf.text)
                     mdf_lmf.update({mdf.attrib['marker']: l})
-                if mdf.tag == "ps_partOfSpeech":
+                elif mdf.tag == "ps_partOfSpeech":
                     # XML elements "ps_partOfSpeech" have 2 XML attributes: one for the MDF value ("ps"), a second for the LMF value ("partOfSpeech")
                     ps_partOfSpeech.update({mdf.attrib['ps']: mdf.attrib['partOfSpeech']})
-                if mdf.tag == "lmf_mdf":
+                elif mdf.tag == "lmf_mdf":
                     # XML elements "lmf_mdf" have 2 XML attributes: one for the name of the marker ("marker"), a second for the variable name ("var")
                     exec("l = lambda " + mdf.attrib['var'] + ": " + mdf.text)
                     lmf_mdf.update({mdf.attrib['marker']: l})
-                if mdf.tag == "mdf_order":
+                elif mdf.tag == "mdf_order":
                     mdf_order = []
                     for element in mdf:
                         mdf_order.append(element.tag)
@@ -128,7 +129,13 @@ def config_read(filename):
                         if len(list1) != 0:
                             mdf_order.append(list1)
         elif format.tag == "LaTeX":
-            pass
+            for param in format:
+                if param.tag == "partOfSpeech_tex":
+                    # XML elements "partOfSpeech_tex" have 2 XML attributes: one for the LMF value ("partOfSpeech"), a second for the LaTeX value ("tex")
+                    partOfSpeech_tex.update({param.attrib['partOfSpeech']: param.attrib['tex']})
+                elif param.tag == "paradigmLabel_tex":
+                    # XML elements "paradigmLabel_tex" have 2 XML attributes: one for the LMF value ("paradigmLabel"), a second for the LaTeX value ("tex")
+                    paradigmLabel_tex.update({param.attrib['paradigmLabel']: param.attrib['tex']})
         else:
             raise InputError(module_name + ".py", "XML file '%s' is not well-formatted." % filename)
     return lexical_resource

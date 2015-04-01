@@ -3,7 +3,7 @@
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
 from common.range import partOfSpeech_range
-from config.tex import lmf_to_tex, partOfSpeech_tex
+from config.tex import lmf_to_tex, partOfSpeech_tex, paradigmLabel_tex
 from utils.io import EOL
 import output.tex as tex
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
@@ -184,15 +184,19 @@ def format_encyclopedic_informations(lexical_entry, font):
             pass #result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
-def format_paradigms(lexical_entry, font):
+def format_paradigms(lexical_entry, font, mapping=paradigmLabel_tex):
     result = ""
     current_label = None
     for paradigm in lexical_entry.get_paradigms():
         if paradigm.get_paradigmLabel() is not None and paradigm.get_paradigm(language=config.xml.vernacular) is not None:
             if paradigm.get_paradigmLabel() != current_label:
                 current_label = paradigm.get_paradigmLabel()
+                try:
+                    label = mapping[current_label]
+                except KeyError:
+                    label = current_label
                 # Display label
-                result += "\\textit{" + current_label + ":} "
+                result += "\\textit{" + label + ":} "
             else:
                 # Just add semi-colomn
                 result += "; "
@@ -210,6 +214,8 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_part_of_speech(lexical_entry, font)
     # grammatical notes
     tex_entry += format_notes(lexical_entry, font)
+    # paradigms
+    tex_entry += format_paradigms(lexical_entry, font)
     # definition/gloss and translation
     tex_entry += format_definitions(lexical_entry, font, languages=[config.xml.vernacular, config.xml.French, config.xml.national])
     # example
@@ -228,7 +234,6 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_etymology(lexical_entry, font)
     # paradigms
     tex_entry += tex.format_paradigms(lexical_entry, font)
-    tex_entry += format_paradigms(lexical_entry, font)
     # semantic domain
     tex_entry += tex.format_semantic_domains(lexical_entry, font)
     # source

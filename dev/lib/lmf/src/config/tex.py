@@ -53,6 +53,10 @@ partOfSpeech_tex = dict({
     "verb"                          : "v" # MDF
 })
 
+## Mapping between LMF paradigmLabel Paradigm attribute value and LaTeX layout (output)
+paradigmLabel_tex = dict({
+})
+
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf_to_tex(lexical_entry, font=None, partOfSpeech_mapping=partOfSpeech_tex, languages=[VERNACULAR, ENGLISH, NATIONAL, REGIONAL]):
     """! @brief Function to convert LMF lexical entry information to be written into LaTeX commands.
