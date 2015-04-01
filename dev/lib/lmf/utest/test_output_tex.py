@@ -205,7 +205,7 @@ class TestTexFunctions(unittest.TestCase):
             "\t\t&hideBar=true\n" \
             "\t\t&volume=1.0\n" \
             "\t\t&balance=0.0\n" \
-            "}]{\includegraphics[scale=0.5]{sound1\string_bleu.jpg}}{APlayer.swf} \\hspace{0.1cm}\n"
+            "}]{\includegraphics[scale=0.5]{sound1_bleu.jpg}}{APlayer.swf} \\hspace{0.1cm}\n"
         self.assertEqual(format_audio(entry, font), expected)
         del entry
 
