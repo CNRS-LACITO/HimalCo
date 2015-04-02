@@ -299,10 +299,6 @@ def format_related_forms(lexical_entry, font, language=None):
         else:
             result += font[VERNACULAR](related_form.get_lexeme())
         result += " "
-    # ce
-    # cn
-    # cr
-    # result += "\\textit{See main entry:} " + font[VERNACULAR](lexical_entry.get_mn()) + ". "
     return result
 
 def tex_fra(lexical_entry, font):

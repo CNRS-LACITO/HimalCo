@@ -559,12 +559,12 @@ pd_clusivity = dict({
 pdl_paradigmLabel = dict({
     "la"        : "lexicalized affix",
     "cc"        : "conjugation class",
-    "past"      : "theme of the past",
+    "past"      : "past stem",
     "comit"     : "comitative",
     "constr"    : "construction",
     "dir"       : "directional",
     "ir"        : "irregularity",
-    "2sg"       : "2sg" # TODO -> japhug
+    "cl"        : "classifier"
 })
 
 ## Possible values allowed for 'sd' MDF marker

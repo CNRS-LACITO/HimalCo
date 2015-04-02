@@ -34,13 +34,18 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
     @param paradigms The name of the LaTeX file with full path containing the paradigms in LaTeX format. Deafult value is None.
     """
-    import string
+    import string, os
     # Define font
     if font is None:
         font = config.xml.font
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(file_read(preamble))
+    # Insert data path configuration
+    tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
+    tex_file.write("\\addmediapath{" + config.xml.audio_path + "/mp3/}" + EOL)
+    tex_file.write("\\addmediapath{" + config.xml.audio_path + "/wav/}" + EOL)
+    tex_file.write("\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL)
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
     tex_file.write("\\maketitle" + EOL)
@@ -281,8 +286,8 @@ def format_audio(lexical_entry, font):
             # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
             # To include audio file in PDF, replace WAV extension by MP3 extension and search in MP3 folder
             file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
-            if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')) \
-                and not isfile(form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3").replace("file://", '')):
+            if not isfile(config.xml.audio_path + form_representation.get_audio().get_fileName().replace(".wav", ".mp3")) \
+                and not isfile(config.xml.audio_path + form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3")):
                 print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
             file_name = file_name.replace('-', '\string-')

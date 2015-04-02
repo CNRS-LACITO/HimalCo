@@ -14,6 +14,10 @@ sys.path.append(user_path + 'khaling')
 # Add lib/ folder to path
 sys.path.append(user_path + '../..')
 
+# Create result folder
+if not os.path.exists(user_path + "khaling/result"):
+    os.mkdir(user_path + "khaling/result")
+
 # Import LMF library
 import lmf
 
@@ -21,7 +25,7 @@ import lmf
 from setting import lmf2tex, items
 
 # Read user configuration
-lexical_resource = lmf.read_config(user_path + "khaling/guillaume/config.xml")
+lexical_resource = lmf.read_config(user_path + "khaling/config.xml")
 
 # Run Perl script
 os.system("perl " + user_path + "../src/utils/ipa2devanagari/ipa2devanagari.pl " + user_path + "../../../../dict/khaling/toolbox/Dictionary.txt " + user_path + "khaling/result/dictionary-dev.txt")
@@ -38,7 +42,7 @@ os.system("rm " + user_path + "khaling/result/paradigms.tex")
 os.system("perl " + user_path + "../src/utils/paradigms/paradigms.pl " + user_path + "khaling/verbs.txt " + user_path + "khaling/result/paradigms.tex")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/guillaume/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order, paradigms=user_path + "khaling/result/paradigms.tex")
+lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order, paradigms=user_path + "khaling/result/paradigms.tex")
 
 # Release created objects
 del lexical_resource

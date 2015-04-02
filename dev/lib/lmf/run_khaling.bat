@@ -6,7 +6,7 @@ REM # ./run_khaling.bat
 REM # Results are available under dev/lib/lmf/user/khaling/result/ folder.
 
 REM # LaTeX file is generated with sound records and with cross references
-REM #python user/khaling/guillaume/run_khaling.py
+python user/khaling/guillaume/run_khaling.py
 
 REM # LaTeX file is generated without sound records and with cross references
 REM #python user/khaling/guillaume/run_khaling.py -a
@@ -15,8 +15,8 @@ REM # LaTeX file is generated with sound records and without cross references
 REM #python user/khaling/guillaume/run_khaling.py -c
 
 REM # LaTeX file is generated without sound records and without cross references
-python user/khaling/guillaume/run_khaling.py -a -c
+REM #python user/khaling/guillaume/run_khaling.py -a -c
 
-REM # Generate PDF
-C:/texlive/2013/bin/win32/xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex
-C:/texlive/2013/bin/win32/xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex
+REM # Generate PDF: add xelatex binary location to your PATH environment variable
+xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex
+xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex

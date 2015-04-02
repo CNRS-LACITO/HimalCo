@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
-from common.range import partOfSpeech_range
-from config.tex import lmf_to_tex, partOfSpeech_tex, paradigmLabel_tex
 from utils.io import EOL
 import output.tex as tex
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
@@ -12,27 +10,19 @@ from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 import config
 FRENCH = "French"
 
-## Possible values allowed for LMF part of speech LexicalEntry attribute
-partOfSpeech_range.update([
-    "ideophone.1",
-    "ideophone.2",
-    "ideophone.3",
-    "ideophone.4",
-    "ideophone.5",
-    "ideophone.6",
-    "ideophone.7",
-    "ideophone.8",
-    "possessed noun",
-    "stative intransitive verb",
-    "expression",
-    "vi-t"
-])
-
 ## Functions to process some MDF fields (input)
 def remove_char(value):
     """Function to remove '_', '^', '$', '&' character at the beginning of 'lx', 'se', 'a', 'xv', 'cf' MDF fields.
     """
     return value.lstrip('_^$&')
+
+mdf_lmf.update({
+    "lx"    : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
+    "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
+    "se"    : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
+    "xv"    : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=config.xml.vernacular),
+    "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"])
+})
 
 ## Functions to process some MDF fields (output)
 def process_audio(lexical_entry):
@@ -42,39 +32,13 @@ def process_audio(lexical_entry):
             sf.append(form_representation.get_audio().get_fileName())
     return sf
 
-mdf_lmf.update({
-    "lx"    : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
-    "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
-    "se"    : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
-    "xv"    : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=config.xml.vernacular),
-    "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"]),
-    "ps"    : lambda ps, lexical_entry: lexical_entry.set_partOfSpeech(ps, range=partOfSpeech_range)
-})
-
 lmf_mdf.update({
     "sf" : lambda lexical_entry: process_audio(lexical_entry)
-})
-
-## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
-partOfSpeech_tex.update({
-    "ideophone.1"               : "idph.1",
-    "ideophone.2"               : "idph.2",
-    "ideophone.3"               : "idph.3",
-    "ideophone.4"               : "idph.4",
-    "ideophone.5"               : "idph.5",
-    "ideophone.6"               : "idph.6",
-    "ideophone.7"               : "idph.7",
-    "ideophone.8"               : "idph.8",
-    "possessed noun"            : "np",
-    "stative intransitive verb" : "vi.s",
-    "expression"                : "expr",
-    "vi-t"                      : "vi-t"
 })
 
 ## Functions to process some LaTeX fields (output)
 
 def format_lexeme(lexical_entry, font):
-    import output.tex as tex
     lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
     result = "\\vspace{0.5cm} \\hspace{-1cm} "
     if lexical_entry.get_homonymNumber() is not None:
@@ -186,7 +150,8 @@ def format_encyclopedic_informations(lexical_entry, font):
             pass #result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
-def format_paradigms(lexical_entry, font, mapping=paradigmLabel_tex):
+def format_paradigms(lexical_entry, font):
+    from config.tex import paradigmLabel_tex
     result = ""
     current_label = None
     for paradigm in lexical_entry.get_paradigms():
@@ -194,7 +159,7 @@ def format_paradigms(lexical_entry, font, mapping=paradigmLabel_tex):
             if paradigm.get_paradigmLabel() != current_label:
                 current_label = paradigm.get_paradigmLabel()
                 try:
-                    label = mapping[current_label]
+                    label = paradigmLabel_tex[current_label]
                 except KeyError:
                     label = current_label
                 # Display label

@@ -19,7 +19,8 @@
         <LexicalResource dtdVersion="16">
             <GlobalInformation>
                 <feat att="languageCode" val="ISO-639-3"/>
-                <feat att="author" val="Guillaume Jacques, Aimée Lahaussois, Dhan Bahadur Rai, Yadav Kumar"/>
+                <feat att="author"
+                    val="Guillaume Jacques, Aimée Lahaussois, Dhan Bahadur Rai, Yadav Kumar"/>
                 <feat att="version" val="1.0"/>
                 <feat att="lastUpdate" val="2015-02-06"/>
                 <feat att="license" val="GPL"/>
@@ -35,9 +36,8 @@
                 <feat att="label" val="Khaling online dictionary"/>
                 <feat att="lexiconType" val="bilingual dictionary klr-fra"/>
                 <feat att="entrySource" val="./user/khaling/result/dictionary-dev.txt"/>
-                <!-- Absolute path to audio files -->
-                <feat att="localPath"
-                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/"/>
+                <!-- Relative path to audio files -->
+                <feat att="localPath" val="../../../dict/khaling/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>
@@ -79,50 +79,85 @@
         <ps_partOfSpeech ps="vi.s" partOfSpeech="stative intransitive verb"/>
         <!-- Khaling -->
         <!-- intransitive verb with object -->
-        <ps_partOfSpeech ps="vi-t" partOfSpeech="bitransitive verb"/>
+        <ps_partOfSpeech ps="vi-t" partOfSpeech="intransitive verb with object"/>
         <!-- deponent verb -->
-        <ps_partOfSpeech ps="vt-i" partOfSpeech="bitransitive verb"/>
-        <!-- intransitive verb -->
-        <ps_partOfSpeech ps="Vi" partOfSpeech="intransitive verb"/>
-        <!-- transitive verb -->
-        <ps_partOfSpeech ps="vt4" partOfSpeech="transitive verb"/>
-        <ps_partOfSpeech ps="???" partOfSpeech="unknown"/>
+        <ps_partOfSpeech ps="vt-i" partOfSpeech="deponent verb"/>
+        <!-- Mapping from 'pdl' MDF marker value to LMF paradigmLabel Paradigm attribute value -->
+        <!--pdl_paradigmLabel pdl="" paradigmLabel=""/-->
         <!-- Mapping from MDF markers to LMF attributes -->
-        <mdf_lmf marker="wav" var="wav, lexical_entry"
-            >lexical_entry.set_audio(file_name="/Users/celine/Work/CNRS/workspace/HimalCo/dict/khaling/data/audio/wav/" + wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
-        <mdf_lmf marker="a" var="a, lexical_entry"
-            >lexical_entry.set_spelling_variant(a)</mdf_lmf>
-        <!-- TODO -->
-        <mdf_lmf marker="xv" var="xv, lexical_entry">lexical_entry.create_example(xv, language="klr", script_name="ipa")</mdf_lmf>
-        <mdf_lmf marker="1s" var="a1s, lexical_entry">lexical_entry.set_paradigm(a1s, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="2s" var="a2s, lexical_entry">lexical_entry.set_paradigm(a2s, script_name="ipa", person=pd_person[2], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="3s" var="a3s, lexical_entry">lexical_entry.set_paradigm(a3s, script_name="ipa", person=pd_person[3], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="4s" var="a4s, lexical_entry">lexical_entry.set_paradigm(a4s, script_name="ipa", anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="1d" var="a1d, lexical_entry">lexical_entry.set_paradigm(a1d, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
-        <mdf_lmf marker="3d" var="a3d, lexical_entry">lexical_entry.set_paradigm(a3d, script_name="ipa", person=pd_person[3], grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
-        <mdf_lmf marker="1p" var="a1p, lexical_entry">lexical_entry.set_paradigm(a1p, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
-        <mdf_lmf marker="1e" var="a1e, lexical_entry">lexical_entry.set_paradigm(a1e, script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e'])</mdf_lmf>
-        <mdf_lmf marker="2p" var="a2p, lexical_entry">lexical_entry.set_paradigm(a2p, script_name="ipa", person=pd_person[2], grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
+        <mdf_lmf marker="wav" var="wav, lexical_entry">lexical_entry.set_audio(file_name="./wav/" +
+            wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
+        <mdf_lmf marker="a" var="a, lexical_entry">lexical_entry.set_spelling_variant(a)</mdf_lmf>
+        <mdf_lmf marker="xv" var="xv, lexical_entry">lexical_entry.create_example(xv,
+            language="klr", script_name="ipa")</mdf_lmf>
+        <mdf_lmf marker="1s" var="a1s, lexical_entry">lexical_entry.set_paradigm(a1s,
+            script_name="ipa", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="2s" var="a2s, lexical_entry">lexical_entry.set_paradigm(a2s,
+            script_name="ipa", person=pd_person[2],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="3s" var="a3s, lexical_entry">lexical_entry.set_paradigm(a3s,
+            script_name="ipa", person=pd_person[3],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="4s" var="a4s, lexical_entry">lexical_entry.set_paradigm(a4s,
+            script_name="ipa", anymacy=pd_anymacy[4],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="1d" var="a1d, lexical_entry">lexical_entry.set_paradigm(a1d,
+            script_name="ipa", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
+        <mdf_lmf marker="3d" var="a3d, lexical_entry">lexical_entry.set_paradigm(a3d,
+            script_name="ipa", person=pd_person[3],
+            grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
+        <mdf_lmf marker="1p" var="a1p, lexical_entry">lexical_entry.set_paradigm(a1p,
+            script_name="ipa", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
+        <mdf_lmf marker="1e" var="a1e, lexical_entry">lexical_entry.set_paradigm(a1e,
+            script_name="ipa", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'],
+            clusivity=pd_clusivity['e'])</mdf_lmf>
+        <mdf_lmf marker="2p" var="a2p, lexical_entry">lexical_entry.set_paradigm(a2p,
+            script_name="ipa", person=pd_person[2],
+            grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
         <!-- Generated markers -->
+        <mdf_lmf marker="xv_dev" var="xv_dev, lexical_entry">lexical_entry.add_example(xv_dev,
+            language="klr", script_name="devanagari")</mdf_lmf>
+        <mdf_lmf marker="1s_dev" var="a1s_dev, lexical_entry">lexical_entry.set_paradigm(a1s_dev,
+            script_name="devanagari", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="2s_dev" var="a2s_dev, lexical_entry">lexical_entry.set_paradigm(a2s_dev,
+            script_name="devanagari", person=pd_person[2],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="3s_dev" var="a3s_dev, lexical_entry">lexical_entry.set_paradigm(a3s_dev,
+            script_name="devanagari", person=pd_person[3],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="4s_dev" var="a4s_dev, lexical_entry">lexical_entry.set_paradigm(a4s_dev,
+            script_name="devanagari", anymacy=pd_anymacy[4],
+            grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
+        <mdf_lmf marker="1d_dev" var="a1d_dev, lexical_entry">lexical_entry.set_paradigm(a1d_dev,
+            script_name="devanagari", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
+        <mdf_lmf marker="3d_dev" var="a3d_dev, lexical_entry">lexical_entry.set_paradigm(a3d_dev,
+            script_name="devanagari", person=pd_person[3],
+            grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
+        <mdf_lmf marker="1p_dev" var="a1p_dev, lexical_entry">lexical_entry.set_paradigm(a1p_dev,
+            script_name="devanagari", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
+        <mdf_lmf marker="1e_dev" var="a1e_dev, lexical_entry">lexical_entry.set_paradigm(a1e_dev,
+            script_name="devanagari", person=pd_person[1],
+            grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e'])</mdf_lmf>
+        <mdf_lmf marker="2p_dev" var="a2p_dev, lexical_entry">lexical_entry.set_paradigm(a2p_dev,
+            script_name="devanagari", person=pd_person[2],
+            grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
         <!-- root in devanagari => not used -->
         <mdf_lmf marker="lx_dev" var="lx_dev, lexical_entry">None</mdf_lmf>
         <!-- infinitive in IPA -->
-        <mdf_lmf marker="lc" var="lc, lexical_entry">lexical_entry.set_citation_form(lc, script_name="ipa")</mdf_lmf>
+        <mdf_lmf marker="lc" var="lc, lexical_entry">lexical_entry.set_citation_form(lc,
+            script_name="ipa")</mdf_lmf>
         <!-- infinitive in devanagari -->
-        <mdf_lmf marker="lc_dev" var="lc_dev, lexical_entry">lexical_entry.set_citation_form(lc_dev, script_name="devanagari")</mdf_lmf>
+        <mdf_lmf marker="lc_dev" var="lc_dev, lexical_entry">lexical_entry.set_citation_form(lc_dev,
+            script_name="devanagari")</mdf_lmf>
         <!-- TODO -->
         <mdf_lmf marker="se2_tmp" var="se2_tmp, lexical_entry">None</mdf_lmf>
         <mdf_lmf marker="se2_dev" var="se2_dev, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="xv_dev" var="xv_dev, lexical_entry">lexical_entry.add_example(xv_dev, language="klr", script_name="devanagari")</mdf_lmf>
-        <mdf_lmf marker="1s_dev" var="a1s_dev, lexical_entry">lexical_entry.set_paradigm(a1s_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="2s_dev" var="a2s_dev, lexical_entry">lexical_entry.set_paradigm(a2s_dev, script_name="devanagari", person=pd_person[2], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="3s_dev" var="a3s_dev, lexical_entry">lexical_entry.set_paradigm(a3s_dev, script_name="devanagari", person=pd_person[3], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="4s_dev" var="a4s_dev, lexical_entry">lexical_entry.set_paradigm(a4s_dev, script_name="devanagari", anymacy=pd_anymacy[4], grammatical_number=pd_grammaticalNumber['s'])</mdf_lmf>
-        <mdf_lmf marker="1d_dev" var="a1d_dev, lexical_entry">lexical_entry.set_paradigm(a1d_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
-        <mdf_lmf marker="3d_dev" var="a3d_dev, lexical_entry">lexical_entry.set_paradigm(a3d_dev, script_name="devanagari", person=pd_person[3], grammatical_number=pd_grammaticalNumber['d'])</mdf_lmf>
-        <mdf_lmf marker="1p_dev" var="a1p_dev, lexical_entry">lexical_entry.set_paradigm(a1p_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
-        <mdf_lmf marker="1e_dev" var="a1e_dev, lexical_entry">lexical_entry.set_paradigm(a1e_dev, script_name="devanagari", person=pd_person[1], grammatical_number=pd_grammaticalNumber['p'], clusivity=pd_clusivity['e'])</mdf_lmf>
-        <mdf_lmf marker="2p_dev" var="a2p_dev, lexical_entry">lexical_entry.set_paradigm(a2p_dev, script_name="devanagari", person=pd_person[2], grammatical_number=pd_grammaticalNumber['p'])</mdf_lmf>
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>
@@ -345,12 +380,17 @@
         </mdf_order>
         <!-- Mapping from LMF attributes to MDF markers -->
         <lmf_mdf marker="a" var="lexical_entry">lexical_entry.get_spelling_variants()</lmf_mdf>
-        <lmf_mdf marker="nep" var="lexical_entry">lexical_entry.get_citation_forms(script_name="devanagari")</lmf_mdf>
+        <lmf_mdf marker="nep" var="lexical_entry"
+            >lexical_entry.get_citation_forms(script_name="devanagari")</lmf_mdf>
     </MDF>
     <LaTeX>
         <!-- Path to xelatex binary -->
         <xelatex/>
         <!-- Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output) -->
+        <!--partOfSpeech_tex partOfSpeech="" tex=""/-->
+        <!-- Mapping between LMF paradigmLabel Paradigm attribute value and LaTeX layout (output) -->
+        <!--paradigmLabel_tex paradigmLabel="" tex=""/-->
+        <!-- LaTeX commands -->
         <header cmd="documentclass" att="oldfontcommands,oneside,a4paper,11pt" val="article"/>
         <header cmd="title" val="Khaling dictionary"/>
         <header cmd="author" var="lexical_resource">lexical_resource.get_author()</header>

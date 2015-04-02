@@ -37,9 +37,8 @@
                 <feat att="label" val="Koyi online dictionary"/>
                 <feat att="lexiconType" val="bilingual dictionary kkt-eng"/>
                 <feat att="entrySource" val="../../../dict/koyi/toolbox/Dictionary.txt"/>
-                <!-- Absolute path to audio files -->
-                <feat att="localPath"
-                    val="file:///Users/celine/Work/CNRS/workspace/HimalCo/dict/koyi/data/audio/"/>
+                <!-- Relative path to audio files -->
+                <feat att="localPath" val="../../../dict/koyi/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>

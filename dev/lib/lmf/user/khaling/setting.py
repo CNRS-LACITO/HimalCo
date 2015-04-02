@@ -1,9 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import mdf_lmf, mdf_semanticRelation, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
-from common.range import partOfSpeech_range
-from config.tex import lmf_to_tex, partOfSpeech_tex
+from config.mdf import mdf_lmf, mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.io import EOL, ENCODING
 from utils.error_handling import Warning
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
@@ -17,11 +15,6 @@ def get_nep(lexical_entry):
 
 items = lambda lexical_entry: get_nep(lexical_entry)
 
-## Possible values allowed for LMF part of speech LexicalEntry attribute
-partOfSpeech_range.update([
-    "unknown"
-])
-
 def check_lx(lexical_entry, lx_tmp):
     import os
     if lexical_entry.get_lexeme() != lx_tmp:
@@ -34,7 +27,7 @@ def check_nep(lexical_entry, nep):
         if form == nep:
             ok = True
     if not ok:
-        print Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme().encode(ENCODING)))
+        print Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
 
 def check_se(lexical_entry, se_tmp):
     import os
@@ -43,18 +36,13 @@ def check_se(lexical_entry, se_tmp):
         if form == se_tmp:
             ok = True
     if not ok:
-        print Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp, lexical_entry.get_lexeme().encode(ENCODING)))
+        print Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
 
 mdf_lmf.update({
     "nep"       : lambda nep, lexical_entry: check_nep(lexical_entry, nep), # infinitive in devanagari => check that it corresponds to 'lc_dev' value
     # Generated markers
     "lx_tmp"    : lambda lx_tmp, lexical_entry : check_lx(lexical_entry, lx_tmp), # root in IPA => check that it corresponds to 'lx' value
     "se_tmp"    : lambda se_tmp, lexical_entry : check_se(lexical_entry, se_tmp) # => check that it corresponds to 'se' value
-})
-
-## Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output)
-partOfSpeech_tex.update({
-    "unknown" : "\\textcolor{red}{?}"
 })
 
 ## Functions to process some LaTeX fields (output)
@@ -176,7 +164,7 @@ def handle_reserved(text):
     if text.find("& ") != -1:
         text = text.replace('& ', '\& ')
     if text.find("_") != -1:
-        text = text.replace('_', '\_').replace("\string\_", "\string_")
+        text = text.replace('_', "\string_")
     if text.find("^") != -1:
         text = text.replace('^', '\^')
     return text
@@ -191,7 +179,7 @@ def lmf2tex(lexical_entry, font):
     # sound
     tex_entry += tex.format_audio(lexical_entry, config.xml.font)
     # part of speech
-    tex_entry += tex.format_part_of_speech(lexical_entry, config.xml.font, mapping=partOfSpeech_tex)
+    tex_entry += tex.format_part_of_speech(lexical_entry, config.xml.font)
     # grammatical notes
     tex_entry += format_notes(lexical_entry, config.xml.font)
     # definition/gloss and translation

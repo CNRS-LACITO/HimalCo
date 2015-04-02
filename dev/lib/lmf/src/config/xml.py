@@ -7,8 +7,9 @@ from core.lexical_resource import LexicalResource
 from core.lexicon import Lexicon
 from utils.xml_format import parse_xml
 from utils.error_handling import InputError
-from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
+from config.mdf import mdf_lmf, lmf_mdf, mdf_order, ps_partOfSpeech, pdl_paradigmLabel, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from config.tex import partOfSpeech_tex, paradigmLabel_tex
+from common.range import partOfSpeech_range, paradigmLabel_range
 
 # If an LMF module needs to access languages or fonts, copy following lines:
 # import config
@@ -39,6 +40,7 @@ def config_read(filename):
     @param filename The name of the XML file to read with full path, for instance 'user/default/config.xml'.
     @return A Lexical Resource.
     """
+    import os
     import config.xml
     configuration = parse_xml(filename)
     # Parse XML elements
@@ -99,6 +101,8 @@ def config_read(filename):
                             lexicon.set_entrySource(feat.attrib["val"])
                         elif feat.attrib["att"] == "localPath":
                             lexicon.set_localPath(feat.attrib["val"])
+                            # Set absolute path to audio files
+                            config.xml.audio_path = os.path.abspath('.') + "/" + feat.attrib["val"]
                     # Attach lexicon to the lexical resource
                     lexical_resource.add_lexicon(lexicon)
         elif format.tag == "MDF":
@@ -110,6 +114,17 @@ def config_read(filename):
                 elif mdf.tag == "ps_partOfSpeech":
                     # XML elements "ps_partOfSpeech" have 2 XML attributes: one for the MDF value ("ps"), a second for the LMF value ("partOfSpeech")
                     ps_partOfSpeech.update({mdf.attrib['ps']: mdf.attrib['partOfSpeech']})
+                    # Also automatically update range of possible values allowed for LMF part of speech LexicalEntry attribute -->
+                    partOfSpeech_range.add(mdf.attrib['partOfSpeech'])
+                    # And automatically update the reverse operation
+                    partOfSpeech_tex.update({mdf.attrib['partOfSpeech']: mdf.attrib['ps']})
+                elif mdf.tag == "pdl_paradigmLabel":
+                    # XML elements "pdl_paradigmLabel" have 2 XML attributes: one for the MDF value ("pdl"), a second for the LMF value ("paradigmLabel")
+                    pdl_paradigmLabel.update({mdf.attrib['pdl']: mdf.attrib['paradigmLabel']})
+                    # Also automatically update range of possible values allowed for LMF paradigm label Paradigm attribute -->
+                    paradigmLabel_range.add(mdf.attrib['paradigmLabel'])
+                    # And automatically update the reverse operation
+                    paradigmLabel_tex.update({mdf.attrib['paradigmLabel']: mdf.attrib['pdl']})
                 elif mdf.tag == "lmf_mdf":
                     # XML elements "lmf_mdf" have 2 XML attributes: one for the name of the marker ("marker"), a second for the variable name ("var")
                     exec("l = lambda " + mdf.attrib['var'] + ": " + mdf.text)
@@ -133,9 +148,13 @@ def config_read(filename):
                 if param.tag == "partOfSpeech_tex":
                     # XML elements "partOfSpeech_tex" have 2 XML attributes: one for the LMF value ("partOfSpeech"), a second for the LaTeX value ("tex")
                     partOfSpeech_tex.update({param.attrib['partOfSpeech']: param.attrib['tex']})
+                    # Also automatically update range of possible values allowed for LMF part of speech LexicalEntry attribute -->
+                    partOfSpeech_range.add(param.attrib['partOfSpeech'])
                 elif param.tag == "paradigmLabel_tex":
                     # XML elements "paradigmLabel_tex" have 2 XML attributes: one for the LMF value ("paradigmLabel"), a second for the LaTeX value ("tex")
                     paradigmLabel_tex.update({param.attrib['paradigmLabel']: param.attrib['tex']})
+                    # Also automatically update range of possible values allowed for LMF paradigm label Paradigm attribute -->
+                    paradigmLabel_range.add(param.attrib['paradigmLabel'])
         else:
             raise InputError(module_name + ".py", "XML file '%s' is not well-formatted." % filename)
     return lexical_resource

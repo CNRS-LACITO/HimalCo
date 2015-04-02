@@ -28,6 +28,7 @@ class Xml():
         self.English = "eng"
         self.national = "nat"
         self.regional = "reg"
+        self.audio_path = "./"
 
 class TestTexFunctions(unittest.TestCase):
 
@@ -69,6 +70,11 @@ class TestTexFunctions(unittest.TestCase):
         tex_write(lexical_resource, tex_filename)
         tex_file = open(tex_filename, "r")
         begin_lines = [EOL,
+            "\\addmediapath{./}" + EOL,
+            "\\addmediapath{.//mp3/}" + EOL,
+            "\\addmediapath{.//wav/}" + EOL,
+            "\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL,
+            EOL,
             "\\begin{document}" + EOL,
             "\\maketitle" + EOL,
             "\\newpage" + EOL,

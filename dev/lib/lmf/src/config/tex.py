@@ -13,7 +13,6 @@ partOfSpeech_tex = dict({
     "affix"                         : "aff",
     "article"                       : "art", # MDF
     "auxiliary"                     : "aux", # MDF
-    "bitransitive verb"             : "vl", # japhug
     "classifier"                    : "clf", # Leipzip, MDF -> CLASS
     "comparative particle"          : "cmpar", # MDF
     "conditional particle"          : "cond", # MDF
@@ -23,9 +22,8 @@ partOfSpeech_tex = dict({
     "demonstrative determiner"      : "dem", # MDF
     "determiner"                    : "det",
     "existential pronoun"           : "exist", # MDF
-    "ideophone"                     : "idph", # japhug
+    "ideophone"                     : "ideo",
     "impersonal verb"               : "vimp",
-    "indefinite determiner"         : "indef", # japhug
     "interjection"                  : "intj", # MDF
     "interrogative determiner"      : "int", # MDF
     "interrogative particle"        : "q", # MDF

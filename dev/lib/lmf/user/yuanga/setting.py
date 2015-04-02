@@ -3,7 +3,7 @@
 
 from config.mdf import ps_partOfSpeech
 from common.range import partOfSpeech_range
-from config.tex import lmf_to_tex, partOfSpeech_tex
+from config.tex import partOfSpeech_tex
 from utils.io import EOL, ENCODING
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 from utils.error_handling import Warning
