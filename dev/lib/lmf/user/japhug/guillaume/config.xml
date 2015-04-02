@@ -39,7 +39,7 @@
                 <feat att="entrySource" val="../../../dict/japhug/toolbox/Dictionary.txt"/>
                 <!-- Absolute path to audio files -->
                 <feat att="localPath"
-                    val="C:/HimalCo/dict/japhug/data/audio/"/>
+                    val="C:/Users/crlao/Documents/GitHub/HimalCo/dict/japhug/data/audio/"/>
             </Lexicon>
         </LexicalResource>
     </LMF>
@@ -131,10 +131,10 @@
         <!-- Mapping from MDF markers to LMF attributes -->
         <mdf_lmf marker="hbf" var="hbf, lexical_entry">lexical_entry.set_bibliography(hbf)</mdf_lmf>
         <mdf_lmf marker="wav" var="wav, lexical_entry"
-            >lexical_entry.set_audio(file_name="C:/HimalCo/dict/japhug/data/audio/wav/"
+            >lexical_entry.set_audio(file_name="C:/Users/crlao/Documents/GitHub/HimalCo/dict/japhug/data/audio/wav/"
             + wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="wav8" var="wav8, lexical_entry"
-            >lexical_entry.set_audio(file_name="C:/HimalCo/dict/japhug/data/audio/mp3/8_"
+            >lexical_entry.set_audio(file_name="C:/Users/crlao/Documents/GitHub/HimalCo/dict/japhug/data/audio/mp3/8_"
             + wav8 + ".wav", quality="low", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="ge" var="ge, lexical_entry">lexical_entry.set_gloss(ge,
             language="fra")</mdf_lmf>
