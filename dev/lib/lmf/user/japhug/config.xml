@@ -109,7 +109,7 @@
         <ps_partOfSpeech ps="Post" partOfSpeech="postposition"/>
         <ps_partOfSpeech ps="post" partOfSpeech="postposition"/>
         <ps_partOfSpeech ps="postp" partOfSpeech="postposition"/>
-        <!-- number -->
+        <!-- quantificateur -->
         <ps_partOfSpeech ps="quant" partOfSpeech="numeral"/>
         <!-- discourse particle -->
         <ps_partOfSpeech ps="part" partOfSpeech="particle"/>
@@ -118,6 +118,8 @@
         <ps_partOfSpeech ps="vi-" partOfSpeech="intransitive verb"/>
         <ps_partOfSpeech ps="vi-t" partOfSpeech="vi-t"/>
         <!-- stative intransitive verb -->
+        <!-- vi-t : intransitive verb with object --> 
+        <!-- nh : non human -->
         <ps_partOfSpeech ps="vinh" partOfSpeech="stative intransitive verb"/>
         <ps_partOfSpeech ps="vStat" partOfSpeech="stative intransitive verb"/>
         <ps_partOfSpeech ps="vst" partOfSpeech="stative intransitive verb"/>
