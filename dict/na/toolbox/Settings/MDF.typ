@@ -532,7 +532,6 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr nt_F5
