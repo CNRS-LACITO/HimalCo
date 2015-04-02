@@ -335,6 +335,7 @@ def tex_fra(lexical_entry, font):
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
     tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, config.xml.font)
     tex_entry = tex.handle_fn(tex_entry, config.xml.font)
     return tex_entry
@@ -369,6 +370,7 @@ def tex_eng(lexical_entry, font):
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
     tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)
     return tex_entry

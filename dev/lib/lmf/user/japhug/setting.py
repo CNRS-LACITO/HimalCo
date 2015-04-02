@@ -248,6 +248,7 @@ def lmf2tex(lexical_entry, font):
     tex_entry = tex.handle_pinyin(tex_entry)
     tex_entry = tex.handle_caps(tex_entry)
     # Handle reserved characters and fonts
+    tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_reserved(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)

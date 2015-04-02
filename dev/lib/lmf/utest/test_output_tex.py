@@ -158,15 +158,20 @@ class TestTexFunctions(unittest.TestCase):
         output = "\\textbf{\ipa{something here}} and \\textbf{\ipa{there}}"
         self.assertEqual(handle_fv(input, font), output)
 
+    def test_handle_pinyin(self):
+        input = "@at at@at at"
+        output = "\\textcolor{gray}{at} at\\textcolor{gray}{at} at"
+        self.assertEqual(handle_pinyin(input), output)
+
     def test_handle_caps(self):
         input = u"°trucs et°astuces"
         output = "\\textsc{trucs} et\\textsc{astuces}"
         self.assertEqual(handle_caps(input), output)
 
-    def test_handle_pinyin(self):
-        input = "@at at@at at"
-        output = "\\textcolor{gray}{at} at\\textcolor{gray}{at} at"
-        self.assertEqual(handle_pinyin(input), output)
+    def test_handle_quotes(self):
+        input = u"He said: \"hello\" \"hello!\" and that's it."
+        output = u"He said: ``hello\" ``hello!\" and that's it."
+        self.assertEqual(handle_quotes(input), output)
 
     def test_format_uid(self):
         entry = LexicalEntry("link_0")

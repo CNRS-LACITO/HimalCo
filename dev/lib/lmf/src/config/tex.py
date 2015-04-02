@@ -121,6 +121,7 @@ def lmf_to_tex(lexical_entry, font=None, partOfSpeech_mapping=partOfSpeech_tex, 
     tex_entry += tex.format_date(lexical_entry, font)
     # Handle reserved characters and fonts
     tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)
     # Special formatting

@@ -229,6 +229,7 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_date(lexical_entry, config.xml.font)
     # Handle reserved characters and fonts
     tex_entry = handle_reserved(tex_entry)
+    tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, config.xml.font)
     tex_entry = tex.handle_fn(tex_entry, config.xml.font)
     # Special formatting

@@ -191,6 +191,22 @@ def handle_caps(text):
         text = re.sub(r"(\w*)°([^\s\.,)+/:\#\_]*)(\w*)", r"\1" + r"\\textsc{" + r"\2" + "}" + r"\3", text.encode("utf8")).decode("utf8")
     return text
 
+def handle_quotes(text):
+    """Hanlde quotation marks.
+    Replace each "xxx" by ``xxx".
+    """
+    import re
+    pattern = r"([^\"]*)\"([^\"]*)\"(.*)"
+    result = re.match(pattern, text)
+    end = text
+    text = ""
+    while result:
+        text += result.group(1) + r"``" + result.group(2) + "\""
+        end = result.group(3)
+        result = re.match(pattern, end)
+    text += end
+    return text
+
 ## Functions to process LaTeX fields (output)
 
 def format_uid(lexical_entry, font):
