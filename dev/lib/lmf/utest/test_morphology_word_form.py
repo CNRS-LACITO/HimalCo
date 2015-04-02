@@ -3,7 +3,6 @@
 from startup import *
 from morphology.word_form import WordForm
 from core.form_representation import FormRepresentation
-from utils.error_handling import Error
 
 ## Test WordForm class
 
@@ -124,12 +123,7 @@ class TestWordFormFunctions(unittest.TestCase):
         self.assertEqual(self.word_form.set_person(person), self.word_form)
         self.assertEqual(self.word_form.person, "first person")
         # Test error case
-        test = False
-        try:
-            self.word_form.set_person("whatever")
-        except Error:
-            test = True
-            self.assertTrue(test)
+        self.word_form.set_person("whatever")
 
     def test_get_person(self):
         self.assertIs(self.word_form.get_person(), self.word_form.person)
@@ -139,12 +133,7 @@ class TestWordFormFunctions(unittest.TestCase):
         self.assertEqual(self.word_form.set_anymacy(anymacy), self.word_form)
         self.assertEqual(self.word_form.anymacy, "inanimate")
         # Test error case
-        test = False
-        try:
-            self.word_form.set_anymacy("whatever")
-        except Error:
-            test = True
-            self.assertTrue(test)
+        self.word_form.set_anymacy("whatever")
 
     def test_get_anymacy(self):
         self.assertIs(self.word_form.get_anymacy(), self.word_form.anymacy)
@@ -154,12 +143,7 @@ class TestWordFormFunctions(unittest.TestCase):
         self.assertEqual(self.word_form.set_grammaticalNumber(nb), self.word_form)
         self.assertEqual(self.word_form.grammaticalNumber, "plural")
         # Test error case
-        test = False
-        try:
-            self.word_form.set_grammaticalNumber("whatever")
-        except Error:
-            test = True
-            self.assertTrue(test)
+        self.word_form.set_grammaticalNumber("whatever")
 
     def test_get_grammaticalNumber(self):
         self.assertIs(self.word_form.get_grammaticalNumber(), self.word_form.grammaticalNumber)
@@ -169,12 +153,7 @@ class TestWordFormFunctions(unittest.TestCase):
         self.assertEqual(self.word_form.set_clusivity(clusivity), self.word_form)
         self.assertEqual(self.word_form.clusivity, "inclusive")
         # Test error case
-        test = False
-        try:
-            self.word_form.set_clusivity("whatever")
-        except Error:
-            test = True
-            self.assertTrue(test)
+        self.word_form.set_clusivity("whatever")
 
     def test_get_clusivity(self):
         self.assertIs(self.word_form.get_clusivity(), self.word_form.clusivity)

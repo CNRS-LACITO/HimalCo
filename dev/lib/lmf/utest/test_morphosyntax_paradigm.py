@@ -2,7 +2,6 @@
 
 from startup import *
 from morphosyntax.paradigm import Paradigm
-from utils.error_handling import Error
 
 ## Test Paradigm class
 
@@ -29,13 +28,7 @@ class TestParadigmFunctions(unittest.TestCase):
         self.assertIs(self.paradigm.set_paradigmLabel(label), self.paradigm)
         self.assertEqual(self.paradigm.paradigmLabel, label)
         # Test error case
-        label = "whatever"
-        test = False
-        try:
-            self.paradigm.set_paradigmLabel(label)
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.paradigm.set_paradigmLabel(label)
 
     def test_get_paradigmLabel(self):
         label = "label"

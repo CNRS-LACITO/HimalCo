@@ -5,7 +5,6 @@
 
 from core.representation import Representation
 from resources.audio import Audio
-from utils.error_handling import Error
 from utils.attr import check_attr_type, check_attr_range
 from common.range import type_variant_range
 

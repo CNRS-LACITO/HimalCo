@@ -64,7 +64,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                     try:
                         if ( (type(sort_order) is not type(dict())) and ((current_character == '') or (sort_order(items(lexical_entry)[0]) != sort_order(current_character))) ) \
                             or ( (type(sort_order) is type(dict())) and (int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character])) ):
-                            # TODO: do not consider special characters
+                            # Do not consider special characters
                             current_character = items(lexical_entry)[0]
                             tex_file.write("\\newpage" + EOL)
                             title = ''
@@ -283,9 +283,7 @@ def format_audio(lexical_entry, font):
             file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
             if not isfile(form_representation.get_audio().get_fileName().replace(".wav", ".mp3").replace("file://", '')) \
                 and not isfile(form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3").replace("file://", '')):
-                if os.name == 'posix':
-                    # Following line generates an error on Windows
-                    print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
+                print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
             file_name = file_name.replace('-', '\string-')
             result += "\includemedia[" + EOL +\

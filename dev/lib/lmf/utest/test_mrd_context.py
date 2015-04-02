@@ -3,7 +3,6 @@
 from startup import *
 from mrd.context import Context
 from core.text_representation import TextRepresentation
-from utils.error_handling import Error
 
 ## Test Context class
 
@@ -30,12 +29,7 @@ class TestContextFunctions(unittest.TestCase):
         self.assertEqual(self.context.type, typ)
         # Test error case
         typ = "whatever"
-        test = False
-        try:
-            self.context.set_type(typ)
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.context.set_type(typ)
 
     def test_get_type(self):
         typ = "type"

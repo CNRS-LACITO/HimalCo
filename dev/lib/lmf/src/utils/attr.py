@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
-from utils.error_handling import Error
+from utils.error_handling import Warning
+from utils.io import ENCODING
 
 def check_attr_type(val, typ, msg):
     """! @brief Check that attribute value is of specified type.
@@ -11,10 +12,10 @@ def check_attr_type(val, typ, msg):
     # Python set or list of allowed types
     if type(typ) is set or type(typ) is list:
         if type(val) not in typ:
-            raise Error(msg)
+            print Warning(msg)
     # Simple allowed type
     elif type(val) is not typ:
-        raise Error(msg)
+        print Warning(msg)
 
 def check_attr_range(value, range, msg, mapping=None):
     """! @brief Check that attribute value is in specified range.
@@ -31,38 +32,39 @@ def check_attr_range(value, range, msg, mapping=None):
             try:
                 converted_value = mapping[value]
             except KeyError:
-                raise Error(msg)
-            # Converted value to set
-            return converted_value
+                print Warning(msg)
+            else:
+                # Converted value to set
+                return converted_value
         else:
-            raise Error(msg)
+            print Warning(msg)
     else:
         # Value to set
         return value
 
 def check_date_format(date):
     """! @brief Verify that date format is composed as follows: YYYY-MM-DD (ISO 8601).
-    If not, raise an Error.
+    If not, display a Warning message.
     @param date Date to check.
     """
     import re
     if not re.match("^\d{4}-[01]\d-[0-3]\d$", date):
-        raise Error("Date must be formatted as follows: YYYY-MM-DD (given date is %s)" % date)
+        print Warning("Date must be formatted as follows: YYYY-MM-DD (given date is %s)" % date.encode(ENCODING))
 
 def check_time_format(time):
     """! @brief Verify that time format is composed as follows: THH:MM:SS,MSMS (ISO 8601: 'T' for Time).
-    If not, raise an Error.
+    If not, display a Warning message.
     @param time Time to check.
     """
     import re
     if not re.match("^T[0-2]\d:[0-5]\d:[0-5]\d(\,\d+|)$", time):
-        raise Error("Time must be formatted as follows: THH:MM:SS,MSMS (given time is %s)" % time)
+        print Warning("Time must be formatted as follows: THH:MM:SS,MSMS (given time is %s)" % time.encode(ENCODING))
 
 def check_duration_format(duration):
     """! @brief Verify that duration format is composed as follows: PTxxHxxMxxS (ISO 8601: 'P' for Period).
-    If not, raise an Error.
+    If not, display a Warning message.
     @param duration Duration to check.
     """
     import re
     if not re.match("^PT[0-2]\dH[0-5]\dM[0-5]\dS$", duration):
-        raise Error("Duration must be formatted as follows: PTxxHxxMxxS (given duration is %s)" % duration)
+        print Warning("Duration must be formatted as follows: PTxxHxxMxxS (given duration is %s)" % duration.encode(ENCODING))

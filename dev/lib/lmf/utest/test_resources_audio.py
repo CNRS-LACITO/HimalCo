@@ -2,7 +2,6 @@
 
 from startup import *
 from resources.audio import Audio
-from utils.error_handling import Error
 
 ## Test Audio class
 
@@ -30,12 +29,7 @@ class TestAudioFunctions(unittest.TestCase):
 
     def test_set_mediaType(self):
         # Test error case
-        test = False
-        try:
-            self.audio.set_mediaType("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.audio.set_mediaType("whatever")
         # Test nominal case
         media_type = "audio"
         self.assertIs(self.audio.set_mediaType(media_type), self.audio)
@@ -70,12 +64,7 @@ class TestAudioFunctions(unittest.TestCase):
 
     def test_set_quality(self):
         # Test error case
-        test = False
-        try:
-            self.audio.set_quality("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.audio.set_quality("whatever")
         # Test nominal case
         quality = "good"
         self.assertIs(self.audio.set_quality(quality), self.audio)
@@ -108,12 +97,7 @@ class TestAudioFunctions(unittest.TestCase):
 
     def test_set_startPosition(self):
         # Test error case
-        test = False
-        try:
-            self.audio.set_startPosition("0h00")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.audio.set_startPosition("0h00")
         # Test nominal case
         start = "00:00:00"
         self.assertIs(self.audio.set_startPosition(start), self.audio)
@@ -126,12 +110,7 @@ class TestAudioFunctions(unittest.TestCase):
 
     def test_set_durationOfEffectiveSpeech(self):
         # Test error case
-        test = False
-        try:
-            self.audio.set_durationOfEffectiveSpeech("0h00")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.audio.set_durationOfEffectiveSpeech("0h00")
         # Test nominal case
         duration = "00H00M00S"
         self.assertIs(self.audio.set_durationOfEffectiveSpeech(duration), self.audio)

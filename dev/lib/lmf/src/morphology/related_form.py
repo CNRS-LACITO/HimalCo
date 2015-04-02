@@ -5,7 +5,6 @@
 
 from core.form import Form
 from common.range import semanticRelation_range
-from utils.error_handling import Error
 from utils.attr import check_attr_type, check_attr_range
 
 class RelatedForm(Form):

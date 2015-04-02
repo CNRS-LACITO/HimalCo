@@ -3,7 +3,6 @@
 """! @package core
 """
 
-from utils.error_handling import Error
 from utils.attr import check_date_format
 
 class GlobalInformation():

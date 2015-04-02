@@ -7,7 +7,6 @@ from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 from morphology.word_form import WordForm
 from common.range import partOfSpeech_range
-from utils.error_handling import Error
 from config.mdf import ps_partOfSpeech
 from utils.attr import check_attr_type, check_attr_range
 from core.sense import Sense

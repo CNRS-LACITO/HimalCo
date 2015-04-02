@@ -4,7 +4,7 @@
 from config.mdf import mdf_lmf, mdf_semanticRelation, ps_partOfSpeech, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from common.range import partOfSpeech_range
 from config.tex import lmf_to_tex, partOfSpeech_tex
-from utils.io import EOL
+from utils.io import EOL, ENCODING
 from utils.error_handling import Warning
 from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 
@@ -24,9 +24,8 @@ partOfSpeech_range.update([
 
 def check_lx(lexical_entry, lx_tmp):
     import os
-    if lexical_entry.get_lexeme() != lx_tmp and os.name == 'posix':
-        # Following line generates an error on Windows
-        print unicode(Warning("Lexeme '%s' generated for lexical entry '%s' is not consistant." % (lx_tmp, lexical_entry.get_lexeme())))
+    if lexical_entry.get_lexeme() != lx_tmp:
+        print Warning("Lexeme '%s' generated for lexical entry '%s' is not consistant." % (lx_tmp.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
 
 def check_nep(lexical_entry, nep):
     import os
@@ -34,9 +33,8 @@ def check_nep(lexical_entry, nep):
     for form in lexical_entry.get_citation_forms(script_name="devanagari"):
         if form == nep:
             ok = True
-    if not ok and os.name == 'posix':
-        # Following line generates an error on Windows
-        print unicode(Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme())))
+    if not ok:
+        print Warning("Citation form '%s' of lexical entry '%s' is not consistant with generated one." % (nep, lexical_entry.get_lexeme().encode(ENCODING)))
 
 def check_se(lexical_entry, se_tmp):
     import os
@@ -44,9 +42,8 @@ def check_se(lexical_entry, se_tmp):
     for form in lexical_entry.find_related_forms(mdf_semanticRelation["se"]):
         if form == se_tmp:
             ok = True
-    if not ok and os.name == 'posix':
-        # Following line generates an error on Windows
-        print unicode(Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp, lexical_entry.get_lexeme())))
+    if not ok:
+        print Warning("Subentry '%s' generated for lexical entry '%s' is not consistant." % (se_tmp, lexical_entry.get_lexeme().encode(ENCODING)))
 
 mdf_lmf.update({
     "nep"       : lambda nep, lexical_entry: check_nep(lexical_entry, nep), # infinitive in devanagari => check that it corresponds to 'lc_dev' value

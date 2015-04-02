@@ -8,7 +8,6 @@ from morphosyntax.paradigm import Paradigm
 from mrd.context import Context
 from mrd.subject_field import SubjectField
 from mrd.equivalent import Equivalent
-from utils.error_handling import Error
 
 ## Test Sense class
 
@@ -523,12 +522,7 @@ class TestSenseFunctions(unittest.TestCase):
         self.assertEqual(self.sense.paradigm[0].paradigmLabel, label)
         # Test error case
         label = "whatever"
-        test = False
-        try:
-            self.sense.set_paradigm_label(label)
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.sense.set_paradigm_label(label)
 
     def test_set_paradigm_form(self):
         # Test paradigm form only

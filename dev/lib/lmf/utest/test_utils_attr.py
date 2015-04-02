@@ -2,7 +2,6 @@
 
 from startup import *
 from utils.attr import check_attr_type, check_attr_range, check_date_format
-from utils.error_handling import Error
 
 ## Test attribute functions
 
@@ -20,12 +19,7 @@ class TestAttrFunctions(unittest.TestCase):
         check_attr_type(set(), set, "set")
         check_attr_type(dict(), dict, "dict")
         check_attr_type(list(), list, "list")
-        test = False
-        try:
-            check_attr_type(dict(), list, "error")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        check_attr_type(dict(), list, "error")
 
     def test_check_attr_range(self):
         range = [1, "allowed value", [2, 3]]
@@ -34,28 +28,14 @@ class TestAttrFunctions(unittest.TestCase):
         self.assertEqual(check_attr_range("allowed value", range, "ok"), range[1])
         self.assertEqual(check_attr_range([2, 3], range, "ok"), range[2])
         self.assertEqual(check_attr_range(10, range, "ok", mapping), range[0])
-        test = False
-        try:
-            check_attr_range(10, range, "error")
-        except Error:
-            test = True
-        test = False
-        try:
-            check_attr_range(11, range, "error", mapping)
-        except Error:
-            test = True
-        self.assertTrue(test)
+        check_attr_range(10, range, "error")
+        check_attr_range(11, range, "error", mapping)
 
     def test_check_date_format(self):
         # Test error cases
         dates = ["2014", "YYYY-MM-DD", "2014-10-8", "08-10-2014", "2014/10/08"]
         for date in dates:
-            test = False
-            try:
-                check_date_format(date)
-            except Error:
-                test = True
-            self.assertTrue(test)
+            check_date_format(date)
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAttrFunctions)
 

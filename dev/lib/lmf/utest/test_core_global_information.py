@@ -2,7 +2,6 @@
 
 from startup import *
 from core.global_information import GlobalInformation
-from utils.error_handling import Error
 
 ## Test GlobalInformation class
 

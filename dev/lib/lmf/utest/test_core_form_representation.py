@@ -3,7 +3,6 @@
 from startup import *
 from core.form_representation import FormRepresentation
 from resources.audio import Audio
-from utils.error_handling import Error
 
 ## Test FormRepresentation class
 
@@ -71,12 +70,7 @@ class TestFormRepresentationFunctions(unittest.TestCase):
 
     def test_set_type(self):
         # Test error case
-        test = False
-        try:
-            self.form_representation.set_type("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.form_representation.set_type("whatever")
         # Test nominal case
         variant_type = "phonetics"
         self.assertIs(self.form_representation.set_type(variant_type), self.form_representation)
@@ -91,12 +85,7 @@ class TestFormRepresentationFunctions(unittest.TestCase):
 
     def test_set_comment(self):
         # Test error case
-        test = False
-        try:
-            self.form_representation.set_comment(0)
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.form_representation.set_comment(0)
         # Test comment only
         comment = "blablabla"
         self.assertIs(self.form_representation.set_comment(comment), self.form_representation)

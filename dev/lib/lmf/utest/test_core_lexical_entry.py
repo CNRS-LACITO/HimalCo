@@ -6,7 +6,6 @@ from core.lexicon import Lexicon
 from morphology.lemma import Lemma
 from morphology.related_form import RelatedForm
 from morphology.word_form import WordForm
-from utils.error_handling import Error
 from core.form_representation import FormRepresentation
 from core.sense import Sense
 from core.definition import Definition
@@ -49,12 +48,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.set_partOfSpeech(part_of_speech), self.lexical_entry)
         self.assertEqual(self.lexical_entry.partOfSpeech, part_of_speech)
         # Test error case
-        test = False
-        try:
-            self.lexical_entry.set_partOfSpeech("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.lexical_entry.set_partOfSpeech("whatever")
 
     def test_get_partOfSpeech(self):
         self.assertIs(self.lexical_entry.get_partOfSpeech(), self.lexical_entry.partOfSpeech)
@@ -95,12 +89,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         self.assertEqual(self.lexical_entry.set_independentWord(False), self.lexical_entry)
         self.assertFalse(self.lexical_entry.independentWord)
         # Test error case
-        test = False
-        try:
-            self.lexical_entry.set_independentWord("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.lexical_entry.set_independentWord("whatever")
 
     def test_get_independentWord(self):
         self.assertIs(self.lexical_entry.get_independentWord(), self.lexical_entry.independentWord)

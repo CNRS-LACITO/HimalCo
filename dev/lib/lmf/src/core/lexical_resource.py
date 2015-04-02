@@ -4,7 +4,6 @@
 """
 
 from core.global_information import GlobalInformation
-from utils.error_handling import Error
 
 class LexicalResource():
     """! "Lexical Resource is a class representing the entire resource and is a container for one or more lexicons. There is only one Lexical Resource instance." (LMF)
@@ -184,11 +183,8 @@ class LexicalResource():
         @param date The date to set, in format YYYY-MM-DD.
         @return LexicalResource instance.
         """
-        try:
-            self.global_information.set_creationDate(date)
-            return self
-        except Error as exception:
-            exception.handle()
+        self.global_information.set_creationDate(date)
+        return self
 
     def get_creation_date(self):
         """! @brief Get creation date.
@@ -203,11 +199,8 @@ class LexicalResource():
         @param date The date to set, in format YYYY-MM-DD.
         @return LexicalResource instance.
         """
-        try:
-            self.global_information.set_lastUpdate(date)
-            return self
-        except Error as exception:
-            exception.handle()
+        self.global_information.set_lastUpdate(date)
+        return self
 
     def get_last_update(self):
         """! @brief Get last update.

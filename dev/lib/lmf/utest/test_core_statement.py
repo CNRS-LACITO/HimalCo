@@ -2,7 +2,6 @@
 
 from startup import *
 from core.statement import Statement
-from utils.error_handling import Error
 
 ## Test Statement class
 
@@ -102,12 +101,7 @@ class TestStatementFunctions(unittest.TestCase):
 
     def test_set_noteType(self):
         # Test error case
-        test = False
-        try:
-            self.statement.set_noteType("whatever")
-        except Error:
-            test = True
-        self.assertTrue(test)
+        self.statement.set_noteType("whatever")
         # Test nominal case
         type = "phonology"
         self.assertIs(self.statement.set_noteType(type), self.statement)
