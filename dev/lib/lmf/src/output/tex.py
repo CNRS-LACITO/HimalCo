@@ -201,7 +201,7 @@ def handle_quotes(text):
     Replace each "xxx" by ``xxx".
     """
     import re
-    pattern = r"([^\"]*)\"([^\"]*)\"(.*)"
+    pattern = r"""^([^\"]*)\"([^\"]*)\"(.*)$"""
     result = re.match(pattern, text)
     end = text
     text = ""
