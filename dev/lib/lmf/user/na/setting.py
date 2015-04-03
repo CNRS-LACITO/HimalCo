@@ -64,6 +64,17 @@ def force_caps(text):
     """
     return text[0].upper() + text[1:]
 
+def add_final(text, language):
+    """Add a final point if text has no final punctuation mark.
+    """
+    final_mark = set(['.', '!', '?', u"\u3002"])
+    if text[-1] not in final_mark:
+        if language == config.xml.English or language == config.xml.French:
+            text += '.'
+        elif language == config.xml.national or language == config.xml.regional:
+            text += u"\u3002"
+    return text
+
 mdf_lmf.update({
     "__nt"  : lambda attributes, nt, lexical_entry: process_nt(attributes, nt, lexical_entry),
     "__np"  : lambda attributes, np, lexical_entry: process_np(attributes, np, lexical_entry),
@@ -72,10 +83,10 @@ mdf_lmf.update({
     "__cf"  : lambda attributes, cf, lexical_entry: process_cf(attributes, cf, lexical_entry),
     # Force first character of definitions to be in upper case
     "dv"    : lambda dv, lexical_entry: lexical_entry.set_definition(force_caps(dv), language=config.xml.vernacular),
-    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=config.xml.English),
-    "dn"    : lambda dn, lexical_entry: lexical_entry.set_definition(force_caps(dn), language=config.xml.national),
-    "dr"    : lambda dr, lexical_entry: lexical_entry.set_definition(force_caps(dr), language=config.xml.regional),
-    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(force_caps(df), language=config.xml.French)
+    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(add_final(force_caps(de), language=config.xml.English), language=config.xml.English),
+    "dn"    : lambda dn, lexical_entry: lexical_entry.set_definition(add_final(force_caps(dn), language=config.xml.national), language=config.xml.national),
+    "dr"    : lambda dr, lexical_entry: lexical_entry.set_definition(add_final(force_caps(dr), language=config.xml.regional), language=config.xml.regional),
+    "df"    : lambda df, lexical_entry: lexical_entry.set_definition(add_final(force_caps(df), language=config.xml.French), language=config.xml.French)
 })
 
 ## Functions to process some MDF fields (output)
@@ -314,7 +325,7 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
@@ -349,7 +360,7 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s." + EOL + "%s" + config.xml.font[NATIONAL](u"\u3002") + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
