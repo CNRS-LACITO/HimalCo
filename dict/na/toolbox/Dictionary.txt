@@ -3209,7 +3209,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps disc.ptcl
+\ps disc.PTCL
 \sn
 \cf
 \cf <type="hm"> 
@@ -4829,58 +4829,6 @@
 \xc
 \dt 01/Apr/2015
 
-\lx bi˩bi˧
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm
-\ph
-\bw
-\et
-\ec <lang="fra"> 
-\ps n
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> plante
-\sd <lang="eng"> plant
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> LM
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de kernel (of a seed)
-\ge kernel
-\dn 核，仁
-\gn 仁
-\gr
-\df amande (d'un noyau) xxxx peut-être erreur (sens: cosse (de pois)?)
-\gf amande
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-\dt 01/Apr/2015
-
 \lx bi˧bv˥
 \sf <nb="B"> 
 \sf <nb="2011"> 
@@ -5886,7 +5834,7 @@
 \bw Chinese fn:啵
 \et
 \ec <lang="fra"> 
-\ps part.disc
+\ps disc.PTCL
 \sn
 \cf
 \cf <type="hm"> 
@@ -12277,7 +12225,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12319,6 +12267,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx ɖæ˩mi˧
 \sf <nb="B"> 
@@ -12328,7 +12277,7 @@
 \bw Tibetan dgra med
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12369,16 +12318,17 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx ɖæ˩mi˧-go˧bɤ˩
 \sf <nb="B"> 
 \sf <nb="2011"> 3315
 \hm
 \ph
-\bw
+\bw Tibetan dgra med dgon pa
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12403,12 +12353,12 @@
 \pdv
 \pdf
 \de Yongning temple
-\ge
+\ge Yonging_temple
 \dn 永宁大寺
-\gn
+\gn 永宁大寺
 \gr
-\df le temple de Yongning; tib: dgra med dgon pa
-\gf
+\df le temple de Yongning
+\gf temple_de_Yongning
 \xv
 \xe
 \xn
@@ -12420,6 +12370,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx dɑ˧pɤ˧
 \sf <nb="B"> 359b
@@ -12429,7 +12380,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12454,17 +12405,17 @@
 \pdl classifier
 \pdv v˧
 \pdf
-\de wizard, priest of the local religion
-\ge
+\de priest of the local religion
+\ge priest_of_local_religion
 \dn 宗教礼师。音译：达巴
 \gn 宗教礼师
 \gr
 \df prêtre de la religion locale
-\gf
-\xv dɑ˧pɤ˧ ʝi˧-hĩ˧-hĩ˧
-\xe
-\xn
-\xf personne qui joue le rôle de prêtre/qui est prêtre
+\gf prêtre_religion_locale
+\xv dɑ˧pɤ˧ ʝi˧-hĩ˧ hĩ˧
+\xe priest, person who performs the function of priest
+\xn 当达巴的人
+\xf prêtre, personne qui joue le rôle de prêtre/qui est prêtre
 \rf
 \xv
 \xf
@@ -12472,6 +12423,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx dɑ˧pʰo˥
 \sf <nb="B"> 
@@ -12481,7 +12433,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12523,6 +12475,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx ɖæ˩pʰv˥
 \sf <nb="B"> 
@@ -12583,7 +12536,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12608,17 +12561,19 @@
 \pdv v˧
 \pdf
 \de host
-\ge
+\ge host
 \dn 主人
-\gn
+\gn 主人
 \gr
-\df maître de maison, hôte qui accueille
-\gf
+\df maître de maison, hôte (personne qui accueille)
+\gf hôte
 \xv ʑi˧dv˧ dɑ˧pv˧
-\xe
-\xn
+\xe the family host, the member of the family who has the role of host
+\xn 家的主人
 \xf l'hôte de la maison
 \xv ʑi˧dv˧-ʝi˧-hĩ˧ dɑ˧pv˧
+\xe ditto
+\xn 同上
 \xf idem
 \rf
 \xv
@@ -12627,6 +12582,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx dɑ˧ʁwɤ#˥
 \sf <nb="B"> 
@@ -12636,7 +12592,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12660,13 +12616,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn
+\de a village downstream from Qiansuo; the language spoken there is reported to be close to that of the Yongning plain
+\ge village_name
+\dn 一个村子，在前所的下游。据说那边的方言跟丽江坝比较接近。
 \gn
 \gr
-\df village en aval de Qiansuo; leur langue serait relativement proche de celle de la vallée de Yongning
-\gf
+\df un village en aval de Qiansuo; la langue parlée là-bas serait relativement proche de celle de la plaine de Yongning
+\gf nom_de_village
 \xv
 \xe
 \xn
@@ -12678,6 +12634,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx ɖæ˩ʂɯ#˥
 \sf <nb="B"> 
@@ -12687,7 +12644,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -12711,13 +12668,13 @@
 \pdl
 \pdv
 \pdf
-\de Zhashi
-\ge
+\de a village name
+\ge village_name
 \dn 扎实（永宁的一个村落）
-\gn
+\gn 扎实村
 \gr
-\df Zhashi (nom d'un village)
-\gf
+\df nom de village
+\gf nom_de_village
 \xv ɖæ˩mi˧-ʈæ˩bɤ˩
 \xv ɖæ˩ʂɯ˧-ʁwɤ#˥
 \xe
@@ -12734,6 +12691,7 @@
 \xv
 \xf
 \xc
+\dt 02/Apr/2015
 
 \lx dɑ˩to#˥
 \sf <nb="B"> 
