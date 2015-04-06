@@ -180,7 +180,7 @@
    
    \begin{frame} 
  \frametitle{Typologie} 
-  \framesubtitle{Morphologie et morphosyntaxe} 
+  \framesubtitle{Morphosyntaxe} 
 % Théorie de la grammaticalisation, typologie des marques de voix, du mouvement associé, des systèmes d'indexation polypersonnels
 
   \begin{tikzpicture}
@@ -222,19 +222,20 @@
   \begin{tikzpicture}
     \node (B) at (0,0) {\rouge{Descriptions de langues}};
           \node (C) at (3,-2)  {\bleu{Linguistique historique}};
-        \node (D) at (3,-4)  {\bleu{Linguistique sino-tibétaine}};
+        \node (D) at (4,-4)  {\bleu{Linguistique sino-tibétaine}};
 %       \node (F) at (3,-5)  {\bleu{Phonologie panchronique}};%\\ Adversative};
         \node (G) at (-3,-2) {\bleu{Typologie}}; 
              \node (H) at (0,-6)  {Modélisation de la méthode comparative};
 \tikzstyle{peutetre}=[->,dotted,very thick,>=latex]
 \tikzstyle{sur}=[->,very thick,>=latex]
 \draw[sur] (B)--(C);
-\draw[sur] (D)--(H);
 \draw[sur] (C)--(D);
+\draw[sur] (C)--(H);
 \draw[peutetre] (G)--(H);
 \draw[sur] (B)--(G);
-%\draw[peutetre] (D) to[bend right] (H);
-
+\draw[peutetre] (D) to[bend left] (H);
+\draw[peutetre] (C) to[bend left] (G);
+\draw[peutetre] (G) to[bend left] (C);
 \end{tikzpicture}
 
    
