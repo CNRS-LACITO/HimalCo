@@ -19,5 +19,7 @@ python user/na/alexis/run_na.py
 #python user/na/alexis/run_na.py -a -c
 
 # Generate PDF
-xelatex -output-directory=user/na/result/ user/na/result/dictionary.tex >> /dev/null
-xelatex -output-directory=user/na/result/ user/na/result/dictionary.tex >> /dev/null
+xelatex -output-directory=user/na/result/ user/na/result/dictionary_eng.tex >> /dev/null
+xelatex -output-directory=user/na/result/ user/na/result/dictionary_eng.tex >> /dev/null
+xelatex -output-directory=user/na/result/ user/na/result/dictionary_fra.tex >> /dev/null
+xelatex -output-directory=user/na/result/ user/na/result/dictionary_fra.tex >> /dev/null

@@ -19,5 +19,7 @@ REM #python user/na/alexis/run_na.py -a -c
 
 REM # Generate PDF: add xelatex binary location to your PATH environment variable or set following variable
 set target="C:/Program Files (x86)/MiKTeX 2.9/miktex/bin/xelatex.exe"
-%target% -output-directory=user/na/result/ user/na/result/dictionary.tex
-%target% -output-directory=user/na/result/ user/na/result/dictionary.tex
+%target% -output-directory=user/na/result/ user/na/result/dictionary_eng.tex
+%target% -output-directory=user/na/result/ user/na/result/dictionary_eng.tex
+%target% -output-directory=user/na/result/ user/na/result/dictionary_fra.tex
+%target% -output-directory=user/na/result/ user/na/result/dictionary_fra.tex
