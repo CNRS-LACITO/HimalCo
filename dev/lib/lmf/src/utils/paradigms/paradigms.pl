@@ -57,7 +57,7 @@ sub rule101 {
     $part1 = substr($radical,0,-1);
     $part2 = substr($radical,-1,1);
     $part2 =~ tr/[p,t,k]/[b,d,g]/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -68,7 +68,7 @@ sub rule102 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1ʦ/;
     $part2 =~ s/([aʌieɛuoɔɵʉ])n/$1ːʦ/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -79,7 +79,7 @@ sub rule103 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1s/;
     $part2 =~ s/([aʌieɛuoɔɵʉ])n/$1ːs/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -89,7 +89,7 @@ sub rule104 {
     $part1 = substr($radical,0,-3);
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1ç/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -100,7 +100,7 @@ sub rule105 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])p/$1̂m/;
     $part2 =~ s/([aʌeiɛuoɔɵʉ])k/$1̂ŋ/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -110,7 +110,7 @@ sub rule106 {
     $part1 = substr($radical,0,-3);
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1̂n/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -120,7 +120,7 @@ sub rule107 {
     $part1 = substr($radical,0,-3);
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1̂i/; # keep an 'i' because it has to be displayed as 'इ'
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -130,7 +130,7 @@ sub rule108 {
     $part1 = substr($radical,0,-3);
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])t/$1̂ː/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -140,7 +140,7 @@ sub rule109 {
     $part1 = substr($radical,0,-3);
     $part2 = substr($radical,-3,3);
     $part2 =~ s/([aʌieɛuoɔɵʉ])n/$1i/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -151,7 +151,7 @@ sub rule110 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/ik/ûː/;
     $part2 =~ s/([aiʌeɛuoɔɵʉ])k/$1̂ː/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -162,7 +162,7 @@ sub rule111 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/iŋ/ūː/;
     $part2 =~ s/([aiʌeɛuoɔɵʉ])ŋ/$1̄ː/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -172,7 +172,7 @@ sub rule112 {
     $part1 = substr($radical,0,-2);
     $part2 = substr($radical,-2,2);
     $part2 =~ s/([ptkmnŋrl])t/$1/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -182,7 +182,7 @@ sub rule113 {
     $part1 = substr($radical,0,-1);
     $part2 = substr($radical,-1,1);
     $part2 =~ s/ak/a/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -193,7 +193,7 @@ sub rule115 {
     $part2 = substr($radical,-3,3);
     $part2 =~ s/iŋt/unt/;
     $part2 =~ s/ŋt/nt/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -206,7 +206,7 @@ sub rule116 {
     $part2 =~ s/ŋ/n/;
     $part2 =~ s/ik/ûn/;
     $part2 =~ s/k/̂n/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -216,7 +216,7 @@ sub rule117 {
     $part1 = substr($radical,0,-2);
     $part2 = substr($radical,-2,2);
     $part2 =~ s/([mnŋrl])t/$1d/;
-    $radical =  $part1.$part2;
+    $radical = $part1.$part2;
     return $radical;
 }
 
@@ -834,7 +834,7 @@ sub end {
 
 sub generate_paradigms {
     open in_file, "<:utf8", $_[0];
-    open out_file, ">>:utf8", $_[1];
+    open out_file, ">:utf8", $_[1];
     while (<in_file>) {
         my ($data)= $_;
         chomp($data);

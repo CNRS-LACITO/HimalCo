@@ -22,7 +22,7 @@ def file_read(filename):
         file.close()
     return contents
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=None):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[]):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -32,7 +32,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
     @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
-    @param paradigms The name of the LaTeX file with full path containing the paradigms in LaTeX format. Deafult value is None.
+    @param paradigms A Python list of LaTeX filenames with full path containing the paradigms in LaTeX format. Default value is an empty list.
     """
     import string, os
     # Define font
@@ -82,11 +82,13 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                             tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
                             #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
-                        if paradigms is not None and len(lexical_entry.get_spelling_variants()) != 0:
+                        if len(paradigms) != 0 and len(lexical_entry.get_spelling_variants()) != 0:
                             if lexical_entry.get_partOfSpeech() == "transitive verb":
                                 tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vt}" + EOL)
+                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vt.eng}" + EOL)
                             elif lexical_entry.get_partOfSpeech() == "intransitive verb":
                                 tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vi}" + EOL)
+                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vi.eng}" + EOL)
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)
                         # Separate lexical entries from each others with a blank line
@@ -104,11 +106,11 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     # Insert LaTeX commands to finish the document properly
     tex_file.write("\end{multicols}" + EOL)
     # Insert paradigms if any
-    if paradigms is not None:
+    for filename in paradigms:
         tex_file.write(EOL)
         tex_file.write("\\newpage" + EOL)
         tex_file.write("\markboth{paradigms}{}" + EOL)
-        tex_file.write(file_read(paradigms))
+        tex_file.write(file_read(filename))
         tex_file.write(EOL)
     tex_file.write("\end{document}" + EOL)
     tex_file.close()
