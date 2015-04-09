@@ -1,22 +1,22 @@
-REM # -*- coding: utf-8 -*-
+:: -*- coding: utf-8 -*-
 
-REM # Go under dev/lib/lmf/ and launch this script using the following command:
-REM # ./run_japhug.bat
+:: Go under dev/lib/lmf/ and launch this script using the following command:
+:: ./run_japhug.bat
 
-REM # Results are available under dev/lib/lmf/user/japhug/result/ folder.
+:: Results are available under dev/lib/lmf/user/japhug/result/ folder.
 
-REM # LaTeX file is generated with sound records and with cross references
+:: LaTeX file is generated with sound records and with cross references
 python user/japhug/guillaume/run_japhug.py
 
-REM # LaTeX file is generated without sound records and with cross references
-REM #python user/japhug/guillaume/run_japhug.py -a
+:: LaTeX file is generated without sound records and with cross references
+::python user/japhug/guillaume/run_japhug.py -a
 
-REM # LaTeX file is generated with sound records and without cross references
-REM #python user/japhug/guillaume/run_japhug.py -c
+:: LaTeX file is generated with sound records and without cross references
+::python user/japhug/guillaume/run_japhug.py -c
 
-REM # LaTeX file is generated without sound records and without cross references
-REM #python user/japhug/guillaume/run_japhug.py -a -c
+:: LaTeX file is generated without sound records and without cross references
+::python user/japhug/guillaume/run_japhug.py -a -c
 
-REM # Generate PDF: add xelatex binary location to your PATH environment variable
+:: Generate PDF: add xelatex binary location to your PATH environment variable
 xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex
 xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex
