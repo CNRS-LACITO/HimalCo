@@ -339,7 +339,7 @@ def handle_tones(element):
                     element.text += before
                 else:
                     previous_sub.tail += before
-                if len(subscript) != 0:
+                if len(subscript) != 0 and i == syllable_nb - 1:
                     # Create sub
                     sub = Element("sub")
                     sub.text = subscript
