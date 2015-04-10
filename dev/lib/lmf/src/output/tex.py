@@ -42,10 +42,19 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     # Add file header if any
     tex_file.write(file_read(preamble))
     # Insert data path configuration
-    tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
-    tex_file.write("\\addmediapath{" + config.xml.audio_path + "/mp3/}" + EOL)
-    tex_file.write("\\addmediapath{" + config.xml.audio_path + "/wav/}" + EOL)
-    tex_file.write("\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL)
+    if os.name == 'posix':
+        # Unix-style paths
+        tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
+        tex_file.write("\\addmediapath{" + config.xml.audio_path + "/mp3/}" + EOL)
+        tex_file.write("\\addmediapath{" + config.xml.audio_path + "/wav/}" + EOL)
+        tex_file.write("\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL)
+    else:
+        # Windows-style paths
+        config.xml.audio_path = config.xml.audio_path.replace("\\", "\\string\\").replace("/", "\\string\\")
+        tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
+        tex_file.write("\\addmediapath{" + config.xml.audio_path + "\\string\\mp3\\string\\}" + EOL)
+        tex_file.write("\\addmediapath{" + config.xml.audio_path + "\\string\\wav\\string\\}" + EOL)
+        tex_file.write("\\graphicspath{{" + os.path.abspath('.').replace("\\", "/") + "/src/output/img/}}" + EOL)
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
     tex_file.write("\\maketitle" + EOL)
@@ -288,8 +297,14 @@ def format_audio(lexical_entry, font):
             # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
             # To include audio file in PDF, replace WAV extension by MP3 extension and search in MP3 folder
             file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
+            if os.name == 'posix':
+                # Unix-style paths
+                file_path = form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3")
+            else:
+                # Windows-style paths
+                file_path = form_representation.get_audio().get_fileName().replace("wav", "mp3").replace("\\", "\\string\\").replace("/", "\\string\\")
             if not isfile(config.xml.audio_path + form_representation.get_audio().get_fileName().replace(".wav", ".mp3")) \
-                and not isfile(config.xml.audio_path + form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3")):
+                and not isfile(config.xml.audio_path + file_path):
                 print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
             file_name = file_name.replace('-', '\string-')
