@@ -17,6 +17,10 @@ items = lambda lexical_entry: get_lx(lexical_entry)
 
 ## Functions to process some MDF fields (input)
 
+def process_lx(attributes, lx, lexical_entry):
+    lexical_entry.set_lexeme(lx)
+    lexical_entry.id = attributes["id"]
+
 def process_np(attributes, np, lexical_entry):
     # <type lang>
     try:
@@ -76,6 +80,7 @@ def add_final(text, language):
     return text
 
 mdf_lmf.update({
+    "__lx"  : lambda attributes, lx, lexical_entry: process_lx(attributes, lx, lexical_entry),
     "__nt"  : lambda attributes, nt, lexical_entry: process_nt(attributes, nt, lexical_entry),
     "__np"  : lambda attributes, np, lexical_entry: process_np(attributes, np, lexical_entry),
     "__ec"  : lambda attributes, ec, lexical_entry: process_ec(attributes, ec, lexical_entry),
@@ -325,8 +330,9 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
@@ -341,7 +347,7 @@ def tex_fra(lexical_entry, font):
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
-    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_reserved(tex_entry).replace("\dollar", '$')
     tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, config.xml.font)
     tex_entry = tex.handle_fn(tex_entry, config.xml.font)
@@ -360,8 +366,9 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
+        tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
@@ -376,7 +383,7 @@ def tex_eng(lexical_entry, font):
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
-    tex_entry = tex.handle_reserved(tex_entry)
+    tex_entry = tex.handle_reserved(tex_entry).replace("\dollar", '$')
     tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)

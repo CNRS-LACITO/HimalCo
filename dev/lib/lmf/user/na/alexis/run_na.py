@@ -27,8 +27,9 @@ from setting import tex_eng, tex_fra, items
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
 
-# Read MDF file and set lexicon identifier
+# Read MDF file, generate UID and set lexicon identifier
 os.system("python " + user_path + "../src/utils/eol/eol.py -i " + user_path + "../../../../dict/na/toolbox/Dictionary.txt -o " + user_path + "na/result/dictionary-eol.txt")
+os.system("python " + user_path + "../src/utils/uid/uid.py -i " + user_path + "na/result/dictionary-eol.txt -o " + user_path + "na/result/dictionary-uid.txt")
 lexical_resource = lmf.read_mdf(id="na")
 
 # Classify lexicon

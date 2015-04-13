@@ -6,6 +6,7 @@
 from material import Material
 from common.range import mediaType_range, quality_range
 from utils.attr import check_attr_type, check_attr_range, check_time_format, check_duration_format
+from utils.io import ENCODING
 
 class Audio(Material):
     """! Audio is a Material subclass representing an audio recording.
@@ -35,7 +36,7 @@ class Audio(Material):
         @param media_type Type to set.
         @return Audio instance.
         """
-        error_msg = "Media type value '%s' is not allowed" % str(media_type)
+        error_msg = "Media type value '%s' is not allowed" % media_type.encode(ENCODING)
         check_attr_type(media_type, [str, unicode], error_msg)
         self.mediaType = check_attr_range(str(media_type), mediaType_range, error_msg)
         return self
@@ -51,7 +52,7 @@ class Audio(Material):
         @param file_name Name to set.
         @return Audio instance.
         """
-        error_msg = "File name value '%s' is not allowed" % str(file_name)
+        error_msg = "File name value '%s' is not allowed" % file_name.encode(ENCODING)
         check_attr_type(file_name, [str, unicode], error_msg)
         self.fileName = file_name
         return self
@@ -67,7 +68,7 @@ class Audio(Material):
         @param author Author to set.
         @return Audio instance.
         """
-        error_msg = "Author value '%s' is not allowed" % str(author)
+        error_msg = "Author value '%s' is not allowed" % author.encode(ENCODING)
         check_attr_type(author, [str, unicode], error_msg)
         self.author = author
         return self
@@ -83,7 +84,7 @@ class Audio(Material):
         @param quality Quality to set.
         @return Audio instance.
         """
-        error_msg = "Quality value '%s' is not allowed" % str(quality)
+        error_msg = "Quality value '%s' is not allowed" % quality.encode(ENCODING)
         check_attr_type(quality, [str, unicode], error_msg)
         self.quality = check_attr_range(str(quality), quality_range, error_msg)
         return self
@@ -99,7 +100,7 @@ class Audio(Material):
         @param sound Sound to set.
         @return Audio instance.
         """
-        error_msg = "Sound value '%s' is not allowed" % str(sound)
+        error_msg = "Sound value '%s' is not allowed" % sound.encode(ENCODING)
         check_attr_type(sound, [str, unicode], error_msg)
         self.sound = sound
         return self
@@ -115,7 +116,7 @@ class Audio(Material):
         @param Transcription to set.
         @return Audio instance.
         """
-        error_msg = "Transcription value '%s' is not allowed" % str(transcription)
+        error_msg = "Transcription value '%s' is not allowed" % transcription.encode(ENCODING)
         check_attr_type(transcription, [str, unicode], error_msg)
         self.transcription = transcription
         return self
@@ -131,7 +132,7 @@ class Audio(Material):
         @param start_position Start position to set.
         @return Audio instance.
         """
-        error_msg = "Start position value '%s' is not allowed" % str(start_position)
+        error_msg = "Start position value '%s' is not allowed" % start_position.encode(ENCODING)
         check_attr_type(start_position, [str, unicode], error_msg)
         if start_position[0] != 'T':
             # Add 'T' for Time
@@ -151,7 +152,7 @@ class Audio(Material):
         @param duration Duration of effective speech to set.
         @return Audio instance.
         """
-        error_msg = "Duration of effective speech value '%s' is not allowed" % str(duration)
+        error_msg = "Duration of effective speech value '%s' is not allowed" % duration.encode(ENCODING)
         check_attr_type(duration, [str, unicode], error_msg)
         if duration[0] != 'P':
             if duration[0] != 'T':
@@ -174,7 +175,7 @@ class Audio(Material):
         @param external_reference External reference to set.
         @return Audio instance.
         """
-        error_msg = "External reference value '%s' is not allowed" % str(external_reference)
+        error_msg = "External reference value '%s' is not allowed" % external_reference.encode(ENCODING)
         check_attr_type(external_reference, [str, unicode], error_msg)
         self.externalReference = external_reference
         return self
@@ -190,7 +191,7 @@ class Audio(Material):
         @param audio_file_format Audio file format to set.
         @return Audio instance.
         """
-        error_msg = "Audio file format value '%s' is not allowed" % str(audio_file_format)
+        error_msg = "Audio file format value '%s' is not allowed" % audio_file_format.encode(ENCODING)
         check_attr_type(audio_file_format, [str, unicode], error_msg)
         self.audioFileFormat = audio_file_format
         return self
