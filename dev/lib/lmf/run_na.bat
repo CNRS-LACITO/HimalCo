@@ -6,10 +6,10 @@
 :: Results are available under dev/lib/lmf/user/na/result/ folder.
 
 :: LaTeX file is generated with sound records and with cross references
-python user/na/alexis/run_na.py
+::python user/na/alexis/run_na.py
 
 :: LaTeX file is generated without sound records and with cross references
-::python user/na/alexis/run_na.py -a
+python user/na/alexis/run_na.py -a
 
 :: LaTeX file is generated with sound records and without cross references
 ::python user/na/alexis/run_na.py -c
