@@ -50,10 +50,10 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
         tex_file.write("\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL)
     else:
         # Windows-style paths
-        config.xml.audio_path = config.xml.audio_path.replace("\\", "\\string\\").replace("/", "\\string\\")
-        tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
-        tex_file.write("\\addmediapath{" + config.xml.audio_path + "\\string\\mp3\\string\\}" + EOL)
-        tex_file.write("\\addmediapath{" + config.xml.audio_path + "\\string\\wav\\string\\}" + EOL)
+        audio_path = config.xml.audio_path.replace("\\", "\\string\\").replace("/", "\\string\\")
+        tex_file.write(EOL + "\\addmediapath{" + audio_path + "}" + EOL)
+        tex_file.write("\\addmediapath{" + audio_path + "\\string\\mp3\\string\\}" + EOL)
+        tex_file.write("\\addmediapath{" + audio_path + "\\string\\wav\\string\\}" + EOL)
         tex_file.write("\\graphicspath{{" + os.path.abspath('.').replace("\\", "/") + "/src/output/img/}}" + EOL)
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
@@ -295,16 +295,26 @@ def format_audio(lexical_entry, font):
         if form_representation.get_audio() is not None:
             # Embed local sound file
             # \includemedia[<options>]{<poster text>}{<main Flash (SWF) file or URL  |  3D (PRC, U3D) file>}
-            # To include audio file in PDF, replace WAV extension by MP3 extension and search in MP3 folder
-            file_name = basename(form_representation.get_audio().get_fileName().replace(".wav", ".mp3"))
+            # To include audio file in PDF, replace WAV extension by MP3 extension and search in audio, MP3 and WAV folders
+            file_name = form_representation.get_audio().get_fileName().replace(".wav", ".mp3")
+            file_path = []
             if os.name == 'posix':
                 # Unix-style paths
-                file_path = form_representation.get_audio().get_fileName().replace("/wav/", "/mp3/").replace(".wav", ".mp3")
+                file_path.append(config.xml.audio_path + "/" + file_name)
+                file_path.append(config.xml.audio_path + "/mp3/" + file_name)
+                file_path.append(config.xml.audio_path + "/wav/" + file_name)
             else:
                 # Windows-style paths
-                file_path = form_representation.get_audio().get_fileName().replace("wav", "mp3").replace("\\", "\\string\\").replace("/", "\\string\\")
-            if not isfile(config.xml.audio_path + form_representation.get_audio().get_fileName().replace(".wav", ".mp3")) \
-                and not isfile(config.xml.audio_path + file_path):
+                audio_path = config.xml.audio_path.replace("/", "\\")
+                file_path.append(audio_path + "\\" + file_name)
+                file_path.append(audio_path + "\\mp3\\" + file_name)
+                file_path.append(audio_path + "\\wav\\" + file_name)
+            exist = False
+            for audio_file in file_path:
+                if isfile(audio_file):
+                    exist = True
+                    break
+            if not exist:
                 print Warning("Sound file '%s' encountered for lexeme '%s' does not exist" % (file_name.encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
                 return result
             file_name = file_name.replace('-', '\string-')

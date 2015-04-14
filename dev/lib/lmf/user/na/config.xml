@@ -97,7 +97,8 @@
         <mdf_lmf marker="__xc" var="attributes, xc, lexical_entry">None</mdf_lmf>
         <!-- TODO -->
         <mdf_lmf marker="vf" var="vf, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="sf" var="sf, lexical_entry">lexical_entry.set_audio(file_name="./wav/" + sf, quality="very good", audio_file_format="wav")</mdf_lmf>
+        <mdf_lmf marker="sf" var="sf, lexical_entry">lexical_entry.set_audio(file_name=sf,
+            quality="very good", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="pdf" var="pdf, lexical_entry">lexical_entry.set_paradigm_form(pdf,
             language="fra")</mdf_lmf>
         <mdf_lmf marker="xf" var="xf, lexical_entry">lexical_entry.add_example(xf,

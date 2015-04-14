@@ -85,8 +85,8 @@
         <!-- Mapping from 'pdl' MDF marker value to LMF paradigmLabel Paradigm attribute value -->
         <!--pdl_paradigmLabel pdl="" paradigmLabel=""/-->
         <!-- Mapping from MDF markers to LMF attributes -->
-        <mdf_lmf marker="wav" var="wav, lexical_entry">lexical_entry.set_audio(file_name="./wav/" +
-            wav + ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
+        <mdf_lmf marker="wav" var="wav, lexical_entry">lexical_entry.set_audio(file_name=wav +
+            ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="a" var="a, lexical_entry">lexical_entry.set_spelling_variant(a)</mdf_lmf>
         <mdf_lmf marker="xv" var="xv, lexical_entry">lexical_entry.create_example(xv,
             language="klr", script_name="ipa")</mdf_lmf>
