@@ -102,7 +102,7 @@ def config_read(filename):
                         elif feat.attrib["att"] == "localPath":
                             lexicon.set_localPath(feat.attrib["val"])
                             # Set absolute path to audio files
-                            config.xml.audio_path = os.path.abspath('.') + "/" + feat.attrib["val"]
+                            config.xml.audio_path = os.path.abspath(os.path.abspath('.') + "/" + feat.attrib["val"]) + "/"
                     # Attach lexicon to the lexical resource
                     lexical_resource.add_lexicon(lexicon)
         elif format.tag == "MDF":

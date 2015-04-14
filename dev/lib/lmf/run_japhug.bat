@@ -18,5 +18,5 @@ python user/japhug/guillaume/run_japhug.py
 ::python user/japhug/guillaume/run_japhug.py -a -c
 
 :: Generate PDF: add xelatex binary location to your PATH environment variable
-xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex
-xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex
+xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex --halt-on-error=N
+xelatex.exe -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex --halt-on-error=N

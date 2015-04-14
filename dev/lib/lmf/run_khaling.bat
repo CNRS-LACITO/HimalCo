@@ -18,5 +18,5 @@ python user/khaling/guillaume/run_khaling.py
 ::python user/khaling/guillaume/run_khaling.py -a -c
 
 :: Generate PDF: add xelatex binary location to your PATH environment variable
-xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex
-xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex
+xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex --halt-on-error=N
+xelatex.exe -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex --halt-on-error=N

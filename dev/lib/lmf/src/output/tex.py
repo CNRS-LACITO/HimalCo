@@ -42,19 +42,17 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     # Add file header if any
     tex_file.write(file_read(preamble))
     # Insert data path configuration
-    if os.name == 'posix':
-        # Unix-style paths
-        tex_file.write(EOL + "\\addmediapath{" + config.xml.audio_path + "}" + EOL)
-        tex_file.write("\\addmediapath{" + config.xml.audio_path + "/mp3/}" + EOL)
-        tex_file.write("\\addmediapath{" + config.xml.audio_path + "/wav/}" + EOL)
-        tex_file.write("\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL)
-    else:
+    # Unix-style paths
+    audio_path = config.xml.audio_path
+    graphic_path = os.path.abspath('.')
+    if os.name != 'posix':
         # Windows-style paths
-        audio_path = config.xml.audio_path.replace("\\", "\\string\\").replace("/", "\\string\\")
-        tex_file.write(EOL + "\\addmediapath{" + audio_path + "}" + EOL)
-        tex_file.write("\\addmediapath{" + audio_path + "\\string\\mp3\\string\\}" + EOL)
-        tex_file.write("\\addmediapath{" + audio_path + "\\string\\wav\\string\\}" + EOL)
-        tex_file.write("\\graphicspath{{" + os.path.abspath('.').replace("\\", "/") + "/src/output/img/}}" + EOL)
+        audio_path = audio_path.replace("\\", "/")
+        graphic_path = graphic_path.replace("\\", "/")
+    tex_file.write(EOL + "\\addmediapath{" + audio_path.rstrip("/") + "}" + EOL)
+    tex_file.write("\\addmediapath{" + audio_path + "mp3}" + EOL)
+    tex_file.write("\\addmediapath{" + audio_path + "wav}" + EOL)
+    tex_file.write("\\graphicspath{{" + graphic_path + "/src/output/img/}}" + EOL)
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
     tex_file.write("\\maketitle" + EOL)
@@ -300,15 +298,15 @@ def format_audio(lexical_entry, font):
             file_path = []
             if os.name == 'posix':
                 # Unix-style paths
-                file_path.append(config.xml.audio_path + "/" + file_name)
-                file_path.append(config.xml.audio_path + "/mp3/" + file_name)
-                file_path.append(config.xml.audio_path + "/wav/" + file_name)
+                file_path.append(config.xml.audio_path + file_name)
+                file_path.append(config.xml.audio_path + "mp3/" + file_name)
+                file_path.append(config.xml.audio_path + "wav/" + file_name)
             else:
                 # Windows-style paths
                 audio_path = config.xml.audio_path.replace("/", "\\")
-                file_path.append(audio_path + "\\" + file_name)
-                file_path.append(audio_path + "\\mp3\\" + file_name)
-                file_path.append(audio_path + "\\wav\\" + file_name)
+                file_path.append(audio_path + file_name)
+                file_path.append(audio_path + "mp3\\" + file_name)
+                file_path.append(audio_path + "wav\\" + file_name)
             exist = False
             for audio_file in file_path:
                 if isfile(audio_file):

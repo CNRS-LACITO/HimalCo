@@ -19,5 +19,5 @@ python user/japhug/guillaume/run_japhug.py
 #python user/japhug/guillaume/run_japhug.py -a -c
 
 # Generate PDF
-xelatex -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex >> /dev/null
-xelatex -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex >> /dev/null
+xelatex -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex --halt-on-error=N >> /dev/null
+xelatex -output-directory=user/japhug/result/ user/japhug/result/dictionary.tex --halt-on-error=N >> /dev/null

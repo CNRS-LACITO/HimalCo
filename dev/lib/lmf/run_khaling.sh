@@ -19,5 +19,5 @@ python user/khaling/guillaume/run_khaling.py
 #python user/khaling/guillaume/run_khaling.py -a -c
 
 # Generate PDF
-xelatex -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex >> /dev/null
-xelatex -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex >> /dev/null
+xelatex -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex --halt-on-error=N >> /dev/null
+xelatex -output-directory=user/khaling/result/ user/khaling/result/dictionary.tex --halt-on-error=N >> /dev/null
