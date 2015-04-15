@@ -334,12 +334,15 @@ def handle_tones(element):
             for i in range (0, syllable_nb):
                 before = result.group(i*3+1) + result.group(i*3+2)
                 subscript = result.group(i*3+3)
+                if i != syllable_nb - 1:
+                    before += subscript
+                    subscript = ""
                 # Handle previous sub or element
                 if previous_sub is None:
                     element.text += before
                 else:
                     previous_sub.tail += before
-                if len(subscript) != 0 and i == syllable_nb - 1:
+                if len(subscript) != 0:
                     # Create sub
                     sub = Element("sub")
                     sub.text = subscript

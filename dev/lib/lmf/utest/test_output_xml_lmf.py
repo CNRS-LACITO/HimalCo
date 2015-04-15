@@ -205,18 +205,14 @@ class TestXmlLmfFunctions(unittest.TestCase):
         sub2.tail = "H"
         self.assertEqual(tostring(handle_tones(input)), tostring(output))
         ## Test "lexeme"
-        value = "aa˩abb˧bcc˥".decode(encoding=ENCODING)
+        value = "aa˩abb˧bcc˥c".decode(encoding=ENCODING)
         input = Element("name", att="lexeme", val=value)
         # Create output element and sub-elements
         output = Element("name", att="lexeme", val=value)
-        sub1 = SubElement(output, "sub")
-        sub2 = SubElement(output, "sub")
+        sub = SubElement(output, "sub")
         # Fill in text
-        output.text = "aa˩".decode(encoding=ENCODING)
-        sub1.text = "a"
-        sub1.tail = "bb˧".decode(encoding=ENCODING)
-        sub2.text = "b"
-        sub2.tail = "cc˥".decode(encoding=ENCODING)
+        output.text = "aa˩abb˧bcc˥".decode(encoding=ENCODING)
+        sub.text = "c"
         self.assertEqual(tostring(handle_tones(input)), tostring(output))
         ## Test others
         input = Element("name", att="other", val=value)

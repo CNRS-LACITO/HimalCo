@@ -143,7 +143,9 @@ def handle_tones(text):
             found = re.match(pattern, text)
             for i in range (0, syllable_nb):
                 result += found.group(i*3+1) + found.group(i*3+2)
-                if len(found.group(i*3+3)) != 0 and i == syllable_nb - 1:
+                if i != syllable_nb - 1:
+                    result += found.group(i*3+3)
+                elif len(found.group(i*3+3)) != 0:
                     result += "\\textsubscript{" + found.group(i*3+3) + "}"
     return result
 
