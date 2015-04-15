@@ -22,6 +22,34 @@ def file_read(filename):
         file.close()
     return contents
 
+def insert_references(lexical_entry):
+    """! @brief Insert references to paradigms.
+    @param lexical_entry The targeted Lexical Entry LMF instance.
+    @return A string representing the references in LaTeX format.
+    """
+    text = ""
+    part_of_speech = lexical_entry.get_partOfSpeech()
+    spelling_variant = None
+    if len(lexical_entry.get_spelling_variants()) != 0:
+        spelling_variant = lexical_entry.get_spelling_variants()[0]
+    if spelling_variant is None:
+        # If current entry is a subentry, then take the spelling variant of the main entry
+        main_entry = lexical_entry.get_main_entry()
+        if main_entry is not None:
+            if len(main_entry.get_spelling_variants()) != 0:
+                spelling_variant = main_entry.get_spelling_variants()[0]
+    if spelling_variant is not None:
+        if part_of_speech == "transitive verb":
+            text += "\\ref{" + spelling_variant + ".vt}" + EOL
+            text += "\\ref{" + spelling_variant + ".vt.eng}" + EOL
+        elif part_of_speech == "intransitive verb":
+            text += "\\ref{" + spelling_variant + ".vi}" + EOL
+            text += "\\ref{" + spelling_variant + ".vi.eng}" + EOL
+        elif part_of_speech == "reflexive verb":
+            text += "\\ref{" + spelling_variant + ".vr}" + EOL
+            text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
+    return text
+
 def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[]):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
@@ -89,13 +117,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                             tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
                             #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
-                        if len(paradigms) != 0 and len(lexical_entry.get_spelling_variants()) != 0:
-                            if lexical_entry.get_partOfSpeech() == "transitive verb":
-                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vt}" + EOL)
-                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vt.eng}" + EOL)
-                            elif lexical_entry.get_partOfSpeech() == "intransitive verb":
-                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vi}" + EOL)
-                                tex_file.write("\\ref{" + lexical_entry.get_spelling_variants()[0] + ".vi.eng}" + EOL)
+                        if len(paradigms) != 0:
+                            tex_file.write(insert_references(lexical_entry))
                         tex_file.write("\\lhead{\\firstmark}" + EOL)
                         tex_file.write("\\rhead{\\botmark}" + EOL)
                         # Separate lexical entries from each others with a blank line
@@ -104,6 +127,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                         for related_form in lexical_entry.get_related_forms("subentry"):
                             if related_form.get_lexical_entry() is not None:
                                 tex_file.write("$\\blacksquare$ \hspace{25pt} " + lmf2tex(related_form.get_lexical_entry(), font))
+                                if len(paradigms) != 0:
+                                    tex_file.write(insert_references(related_form.get_lexical_entry()))
                                 # Separate sub-entries from each others with a blank line
                                 tex_file.write(EOL)
                     except KeyError:

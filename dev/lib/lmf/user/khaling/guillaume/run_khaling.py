@@ -40,9 +40,11 @@ lexical_resource.get_lexicon("khaling").sort_lexical_entries(items=items, sort_o
 # Generate paradigms
 os.system("perl " + user_path + "../src/utils/paradigms/paradigms.pl " + user_path + "khaling/verbs.txt " + user_path + "khaling/result/paradigms.tex")
 os.system("perl " + user_path + "../src/utils/paradigms/paradigms_eng.pl " + user_path + "khaling/verbs_eng.txt " + user_path + "khaling/result/paradigms_eng.tex")
+os.system("perl " + user_path + "../src/utils/paradigms/reflexive_paradigms.pl " + user_path + "khaling/reflexive_verbs.txt " + user_path + "khaling/result/reflexive_paradigms.tex")
+os.system("perl " + user_path + "../src/utils/paradigms/reflexive_paradigms_eng.pl " + user_path + "khaling/reflexive_verbs.txt " + user_path + "khaling/result/reflexive_paradigms_eng.tex")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order, paradigms=[user_path + "khaling/result/paradigms.tex", user_path + "khaling/result/paradigms_eng.tex"])
+lmf.write_tex(lexical_resource, user_path + "khaling/result/dictionary.tex", preamble=user_path + "khaling/khaling.tex", lmf2tex=lmf2tex, items=items, sort_order=sort_order, paradigms=[user_path + "khaling/result/paradigms.tex", user_path + "khaling/result/paradigms_eng.tex", user_path + "khaling/result/reflexive_paradigms.tex", user_path + "khaling/result/reflexive_paradigms_eng.tex"])
 
 # Release created objects
 del lexical_resource

@@ -52,6 +52,25 @@ class TestTexFunctions(unittest.TestCase):
         # Remove LaTeX file
         os.remove(tex_filename)
 
+    def test_insert_references(self):
+        lexical_entry = LexicalEntry()
+        lexical_entry.set_spelling_variant("tata")
+        # Test transitive verb
+        lexical_entry.partOfSpeech = "transitive verb"
+        expected_lines = "\\ref{tata.vt}" + EOL
+        expected_lines += "\\ref{tata.vt.eng}" + EOL
+        self.assertEqual(expected_lines, insert_references(lexical_entry))
+        # Test intransitive verb
+        lexical_entry.partOfSpeech = "intransitive verb"
+        expected_lines = "\\ref{tata.vi}" + EOL
+        expected_lines += "\\ref{tata.vi.eng}" + EOL
+        self.assertEqual(expected_lines, insert_references(lexical_entry))
+        # Test reflexive verb
+        lexical_entry.partOfSpeech = "reflexive verb"
+        expected_lines = "\\ref{tata.vr}" + EOL
+        expected_lines += "\\ref{tata.vr.eng}" + EOL
+        self.assertEqual(expected_lines, insert_references(lexical_entry))
+
     def test_tex_write(self):
         import sys, os
         # Create LMF objects
@@ -70,9 +89,9 @@ class TestTexFunctions(unittest.TestCase):
         tex_write(lexical_resource, tex_filename)
         tex_file = open(tex_filename, "r")
         begin_lines = [EOL,
-            "\\addmediapath{./}" + EOL,
-            "\\addmediapath{.//mp3/}" + EOL,
-            "\\addmediapath{.//wav/}" + EOL,
+            "\\addmediapath{.}" + EOL,
+            "\\addmediapath{./mp3}" + EOL,
+            "\\addmediapath{./wav}" + EOL,
             "\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL,
             EOL,
             "\\begin{document}" + EOL,
@@ -207,9 +226,9 @@ class TestTexFunctions(unittest.TestCase):
         entry = LexicalEntry()
         entry.set_audio(file_name="../../../dict/japhug/data/audio/wav/A.wav")
         expected = "\includemedia[\n" \
-            "\taddresource=A.mp3,\n" \
+            "\taddresource=../../../dict/japhug/data/audio/wav/A.mp3,\n" \
             "\tflashvars={\n" \
-            "\t\tsource=A.mp3\n" \
+            "\t\tsource=../../../dict/japhug/data/audio/wav/A.mp3\n" \
             "\t\t&autoPlay=true\n" \
             "\t\t&autoRewind=true\n" \
             "\t\t&loop=false\n" \
