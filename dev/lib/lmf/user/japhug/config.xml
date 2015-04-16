@@ -113,9 +113,8 @@
         <mdf_lmf marker="hbf" var="hbf, lexical_entry">lexical_entry.set_bibliography(hbf)</mdf_lmf>
         <mdf_lmf marker="wav" var="wav, lexical_entry">lexical_entry.set_audio(file_name=wav +
             ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
-        <mdf_lmf marker="wav8" var="wav8, lexical_entry"
-            >lexical_entry.set_audio(file_name="8_" + wav8 + ".wav", quality="low",
-            audio_file_format="wav")</mdf_lmf>
+        <mdf_lmf marker="wav8" var="wav8, lexical_entry">lexical_entry.set_audio(file_name="8_" +
+            wav8 + ".wav", quality="low", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="ge" var="ge, lexical_entry">lexical_entry.set_gloss(ge,
             language="fra")</mdf_lmf>
         <!-- Output -->

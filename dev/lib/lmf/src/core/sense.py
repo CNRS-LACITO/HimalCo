@@ -77,11 +77,16 @@ class Sense():
         self.senseNumber = sense_number
         return self
 
-    def get_senseNumber(self):
+    def get_senseNumber(self, integer=False):
         """! @brief Get sense number.
+        @integer If True, return a numerical value.
         @return Sense attribute 'senseNumber'.
         """
-        return self.senseNumber
+        if not integer:
+            return self.senseNumber
+        if self.senseNumber is None:
+            return 0
+        return int(self.senseNumber)
 
     def create_definition(self):
         """! @brief Create a definition.

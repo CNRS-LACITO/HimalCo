@@ -75,20 +75,26 @@ def lmf_to_tex(lexical_entry, font=None, partOfSpeech_mapping=partOfSpeech_tex, 
     tex_entry += tex.format_audio(lexical_entry, font)
     # part of speech
     tex_entry += tex.format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_mapping)
-    # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font, languages)
-    # TODO
-    tex_entry += tex.format_lt(lexical_entry, font)
-    tex_entry += tex.format_sc(lexical_entry, font)
-    tex_entry += tex.format_rf(lexical_entry, font)
-    # example
-    tex_entry += tex.format_examples(lexical_entry, font)
-    # usage note
-    tex_entry += tex.format_usage_notes(lexical_entry, font)
-    # encyclopedic information
-    tex_entry += tex.format_encyclopedic_informations(lexical_entry, font)
-    # restriction
-    tex_entry += tex.format_restrictions(lexical_entry, font)
+    # Order by sense number
+    senses = lexical_entry.get_senses()
+    senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
+    for sense in senses:
+        if sense.get_senseNumber() is not None:
+            tex_entry += sense.get_senseNumber() + ") "
+        # definition/gloss and translation
+        tex_entry += tex.format_definitions(sense, font, languages)
+        # TODO
+        tex_entry += tex.format_lt(sense, font)
+        tex_entry += tex.format_sc(sense, font)
+        tex_entry += tex.format_rf(sense, font)
+        # example
+        tex_entry += tex.format_examples(sense, font)
+        # usage note
+        tex_entry += tex.format_usage_notes(sense, font)
+        # encyclopedic information
+        tex_entry += tex.format_encyclopedic_informations(sense, font)
+        # restriction
+        tex_entry += tex.format_restrictions(sense, font)
     # TODO
     tex_entry += tex.format_lexical_functions(lexical_entry, font)
     # synonym, antonym, morphology, related form

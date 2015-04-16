@@ -71,83 +71,79 @@ def format_notes(lexical_entry, font):
         result += "\mytextsc{" + note + "} "
     return result
 
-def format_definitions(lexical_entry, font, languages):
+def format_definitions(sense, font, languages):
     result = ""
-    for sense in lexical_entry.get_senses():
-        for language in languages:
-            if len(sense.find_definitions(language)) != 0:
-                for definition in sense.find_definitions(language):
-                    if language == config.xml.vernacular:
-                        result += font[VERNACULAR](definition) + ". "
-                    elif language == config.xml.national:
-                        result += font[NATIONAL](tex.handle_font(definition)) + ". "
-                    elif language == config.xml.regional:
-                        # Do not display Tibetan for now (dr)
-                        pass #result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
-                    else:
-                        result += definition + ". "
-            elif len(sense.find_glosses(language)) != 0:
-                for gloss in sense.find_glosses(language):
-                    if language == config.xml.vernacular:
-                        result += font[VERNACULAR](gloss) + ". "
-                    elif language == config.xml.national:
-                        result += font[NATIONAL](tex.handle_font(gloss)) + ". "
-                    elif language == config.xml.regional:
-                        # Do not display Tibetan for now (gr)
-                        pass #result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
-                    else:
-                        result += gloss + ". "
-            if len(sense.get_translations(language)) != 0:
-                for translation in sense.get_translations(language):
-                    if language == config.xml.national:
-                        result += font[NATIONAL](translation) + ". "
-                    elif language == config.xml.regional:
-                        result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
-                    else:
-                        result += translation + ". "
+    for language in languages:
+        if len(sense.find_definitions(language)) != 0:
+            for definition in sense.find_definitions(language):
+                if language == config.xml.vernacular:
+                    result += font[VERNACULAR](definition) + ". "
+                elif language == config.xml.national:
+                    result += font[NATIONAL](tex.handle_font(definition)) + ". "
+                elif language == config.xml.regional:
+                    # Do not display Tibetan for now (dr)
+                    pass #result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
+                else:
+                    result += definition + ". "
+        elif len(sense.find_glosses(language)) != 0:
+            for gloss in sense.find_glosses(language):
+                if language == config.xml.vernacular:
+                    result += font[VERNACULAR](gloss) + ". "
+                elif language == config.xml.national:
+                    result += font[NATIONAL](tex.handle_font(gloss)) + ". "
+                elif language == config.xml.regional:
+                    # Do not display Tibetan for now (gr)
+                    pass #result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
+                else:
+                    result += gloss + ". "
+        if len(sense.get_translations(language)) != 0:
+            for translation in sense.get_translations(language):
+                if language == config.xml.national:
+                    result += font[NATIONAL](translation) + ". "
+                elif language == config.xml.regional:
+                    result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
+                else:
+                    result += translation + ". "
     return result
 
-def format_examples(lexical_entry, font):
+def format_examples(sense, font):
     result = ""
-    for sense in lexical_entry.get_senses():
-        for context in sense.get_contexts():
-            result += u"\u00B6 "
-            for example in context.find_written_forms(config.xml.vernacular):
-                result += font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(config.xml.English):
-                result += example + EOL
-            for example in context.find_written_forms(config.xml.national):
-                result += "\\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
-            for example in context.find_written_forms(config.xml.regional):
-                # Do not display Tibetan for now (xr)
-                pass #result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
+    for context in sense.get_contexts():
+        result += u"\u00B6 "
+        for example in context.find_written_forms(config.xml.vernacular):
+            result += font[VERNACULAR](example) + EOL
+        for example in context.find_written_forms(config.xml.English):
+            result += example + EOL
+        for example in context.find_written_forms(config.xml.national):
+            result += "\\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
+        for example in context.find_written_forms(config.xml.regional):
+            # Do not display Tibetan for now (xr)
+            pass #result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
-def format_usage_notes(lexical_entry, font):
+def format_usage_notes(sense, font):
     result = ""
-    for sense in lexical_entry.get_senses():
-        for usage in sense.find_usage_notes(language=config.xml.vernacular):
-            result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
-        for usage in sense.find_usage_notes(language=config.xml.English):
-            result += "\\textit{Usage:} " + usage + " "
-        for usage in sense.find_usage_notes(language=config.xml.national):
-            result += "\\textit{NatUsage:} " + font[NATIONAL](tex.handle_font(usage)) + " "
-        for usage in sense.find_usage_notes(language=config.xml.regional):
-            result += "\\textit{[" + font[REGIONAL](usage) + "]} "
+    for usage in sense.find_usage_notes(language=config.xml.vernacular):
+        result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
+    for usage in sense.find_usage_notes(language=config.xml.English):
+        result += "\\textit{Usage:} " + usage + " "
+    for usage in sense.find_usage_notes(language=config.xml.national):
+        result += "\\textit{NatUsage:} " + font[NATIONAL](tex.handle_font(usage)) + " "
+    for usage in sense.find_usage_notes(language=config.xml.regional):
+        result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
-def format_encyclopedic_informations(lexical_entry, font):
+def format_encyclopedic_informations(sense, font):
     result = ""
-    for sense in lexical_entry.get_senses():
-        for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
-            result += font[VERNACULAR](information) + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.English):
-            result += information + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.national):
-            result += font[NATIONAL](tex.handle_font(information)) + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.regional):
-            # Do not display Tibetan for now (er)
-            pass #result += "\\textit{[" + font[REGIONAL](information) + "]} "
+    for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
+        result += font[VERNACULAR](information) + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.English):
+        result += information + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.national):
+        result += font[NATIONAL](tex.handle_font(information)) + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.regional):
+        # Do not display Tibetan for now (er)
+        pass #result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
 def format_paradigms(lexical_entry, font):
@@ -183,16 +179,22 @@ def lmf2tex(lexical_entry, font):
     tex_entry += format_notes(lexical_entry, font)
     # paradigms
     tex_entry += format_paradigms(lexical_entry, font)
-    # definition/gloss and translation
-    tex_entry += format_definitions(lexical_entry, font, languages=[config.xml.vernacular, config.xml.French, config.xml.national])
-    # example
-    tex_entry += format_examples(lexical_entry, font)
-    # usage note
-    tex_entry += format_usage_notes(lexical_entry, font)
-    # encyclopedic information
-    tex_entry += format_encyclopedic_informations(lexical_entry, font)
-    # restriction
-    tex_entry += tex.format_restrictions(lexical_entry, font)
+    # Order by sense number
+    senses = lexical_entry.get_senses()
+    senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
+    for sense in senses:
+        if sense.get_senseNumber() is not None:
+            tex_entry += sense.get_senseNumber() + ") "
+        # definition/gloss and translation
+        tex_entry += format_definitions(sense, font, languages=[config.xml.vernacular, config.xml.French, config.xml.national])
+        # example
+        tex_entry += format_examples(sense, font)
+        # usage note
+        tex_entry += format_usage_notes(sense, font)
+        # encyclopedic information
+        tex_entry += format_encyclopedic_informations(sense, font)
+        # restriction
+        tex_entry += tex.format_restrictions(sense, font)
     # synonym, antonym, morphology, related form
     tex_entry += tex.format_related_forms(lexical_entry, font)
     # borrowed word

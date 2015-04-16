@@ -81,6 +81,7 @@ def add_final(text, language):
 
 mdf_lmf.update({
     "__lx"  : lambda attributes, lx, lexical_entry: process_lx(attributes, lx, lexical_entry),
+    "__se"  : lambda attributes, se, lexical_entry: lexical_entry.create_and_add_related_form(se, mdf_semanticRelation["se"]),
     "__nt"  : lambda attributes, nt, lexical_entry: process_nt(attributes, nt, lexical_entry),
     "__np"  : lambda attributes, np, lexical_entry: process_np(attributes, np, lexical_entry),
     "__ec"  : lambda attributes, ec, lexical_entry: process_ec(attributes, ec, lexical_entry),
@@ -202,24 +203,22 @@ def format_tone(lexical_entry, font):
                 result += c
     return result
 
-def format_definition(lexical_entry, language_font, language):
+def format_definition(sense, language_font, language):
     result = ""
-    for sense in lexical_entry.get_senses():
-        if sense.find_definitions(language) is not None:
-            for definition in sense.find_definitions(language):
-                result += language_font(definition)
+    if sense.find_definitions(language) is not None:
+        for definition in sense.find_definitions(language):
+            result += language_font(definition)
     return result
 
-def format_gloss(lexical_entry, font, language):
+def format_gloss(sense, font, language):
     result = ""
-    for sense in lexical_entry.get_senses():
-        if sense.find_glosses(config.xml.regional) is not None:
-            for gloss in sense.find_glosses(config.xml.regional):
-                if language == config.xml.French:
-                    result += "Dialecte chinois local~"
-                elif language == config.xml.English:
-                    result += "Local Chinese dialect"
-                result +=  ": " + font[REGIONAL](gloss + u"\u3002")
+    if sense.find_glosses(config.xml.regional) is not None:
+        for gloss in sense.find_glosses(config.xml.regional):
+            if language == config.xml.French:
+                result += "Dialecte chinois local~"
+            elif language == config.xml.English:
+                result += "Local Chinese dialect"
+            result +=  ": " + font[REGIONAL](gloss + u"\u3002")
     # TODO : add 'gn' then 'ph' in italic
     return result
 
@@ -319,6 +318,25 @@ def format_related_forms(lexical_entry, font, language=None):
         result += " "
     return result
 
+def format_senses(lexical_entry, font, language):
+    import output.tex as tex
+    result = ""
+    if language == config.xml.French:
+        language_font = config.xml.font[FRENCH]
+    elif language == config.xml.English:
+        language_font = config.xml.font[ENGLISH]
+    # Order by sense number
+    senses = lexical_entry.get_senses()
+    senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
+    for sense in senses:
+        if sense.get_senseNumber() is not None:
+            result += sense.get_senseNumber() + ") "
+        result += format_definition(sense, language_font, language=language) + EOL
+        result += format_definition(sense, config.xml.font[NATIONAL], language=config.xml.national)
+        result += format_gloss(sense, config.xml.font, language=language) + EOL
+        result += tex.format_examples(sense, config.xml.font, languages=[config.xml.vernacular, language, config.xml.national])
+    return result
+
 def tex_fra(lexical_entry, font):
     """<lx> (prononciation~: <lc>~; avec le verbe copule~: <lc <type="with copula">>) TAB <ps> TAB Ton~: <np <type="tone">>.
     <df>.
@@ -332,18 +350,15 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
-        format_definition(lexical_entry, config.xml.font[FRENCH], language=config.xml.French),\
-        format_definition(lexical_entry, config.xml.font[NATIONAL], language=config.xml.national),\
-        format_gloss(lexical_entry, config.xml.font, language=config.xml.French),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
-        tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.French, config.xml.national]),\
+        format_senses(lexical_entry, font, language=config.xml.French),
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_related_forms(lexical_entry, font, language=config.xml.French))
     # Special formatting
@@ -368,18 +383,15 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???'
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s" + EOL + "%s" + "%s" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
         tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
-        format_definition(lexical_entry, config.xml.font[ENGLISH], language=config.xml.English),\
-        format_definition(lexical_entry, config.xml.font[NATIONAL], language=config.xml.national),\
-        format_gloss(lexical_entry, config.xml.font, language=config.xml.English),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
-        tex.format_examples(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national]),\
+        format_senses(lexical_entry, font, language=config.xml.English),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_related_forms(lexical_entry, font, language=config.xml.English))
     # Special formatting

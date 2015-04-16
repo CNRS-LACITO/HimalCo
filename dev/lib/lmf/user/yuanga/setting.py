@@ -709,16 +709,22 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_part_of_speech(lexical_entry, font)
     # grammatical notes
     tex_entry += tex.format_notes(lexical_entry, font)
-    # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, font, languages=[config.xml.vernacular, config.xml.French, config.xml.national])
-    # example
-    tex_entry += tex.format_examples(lexical_entry, font)
-    # usage note
-    tex_entry += tex.format_usage_notes(lexical_entry, font)
-    # encyclopedic information
-    tex_entry += tex.format_encyclopedic_informations(lexical_entry, font)
-    # restriction
-    tex_entry += tex.format_restrictions(lexical_entry, font)
+    # Order by sense number
+    senses = lexical_entry.get_senses()
+    senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
+    for sense in senses:
+        if sense.get_senseNumber() is not None:
+            tex_entry += sense.get_senseNumber() + ") "
+        # definition/gloss and translation
+        tex_entry += tex.format_definitions(sense, font, languages=[config.xml.vernacular, config.xml.French, config.xml.national])
+        # example
+        tex_entry += tex.format_examples(sense, font)
+        # usage note
+        tex_entry += tex.format_usage_notes(sense, font)
+        # encyclopedic information
+        tex_entry += tex.format_encyclopedic_informations(sense, font)
+        # restriction
+        tex_entry += tex.format_restrictions(sense, font)
     # synonym, antonym, morphology, related form
     tex_entry += tex.format_related_forms(lexical_entry, font)
     # borrowed word

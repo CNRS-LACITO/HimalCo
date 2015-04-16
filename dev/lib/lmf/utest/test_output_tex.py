@@ -7,6 +7,7 @@ from core.lexical_resource import LexicalResource
 from core.lexicon import Lexicon
 from core.lexical_entry import LexicalEntry
 from morphology.lemma import Lemma
+from core.sense import Sense
 from utils.io import EOL
 
 ## Test LaTeX functions
@@ -268,26 +269,26 @@ class TestTexFunctions(unittest.TestCase):
         expected += "\\textit{\zh{def_nat}}. \\textit{\zh{trans_nat}}. "
         # regional
         expected += "\\textit{[Regnl: \ipa{gloss_reg}]}. \\textbf{rr:}\\textit{[Regnl: trans_reg]}. "
-        self.assertEqual(format_definitions(entry, font), expected)
+        self.assertEqual(format_definitions(entry.get_senses()[0], font), expected)
         del entry
 
     def test_format_lt(self):
-        entry = LexicalEntry()
+        sense = Sense()
         expected = ""
-        self.assertEqual(format_lt(entry, font), expected)
-        del entry
+        self.assertEqual(format_lt(sense, font), expected)
+        del sense
 
     def test_format_sc(self):
-        entry = LexicalEntry()
+        sense = Sense()
         expected = ""
-        self.assertEqual(format_sc(entry, font), expected)
-        del entry
+        self.assertEqual(format_sc(sense, font), expected)
+        del sense
 
     def test_format_rf(self):
-        entry = LexicalEntry()
+        sense = Sense()
         expected = ""
-        self.assertEqual(format_rf(entry, font), expected)
-        del entry
+        self.assertEqual(format_rf(sense, font), expected)
+        del sense
 
     def test_format_examples(self):
         entry = LexicalEntry()
@@ -296,7 +297,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.add_example("ex_nat", language="nat")
         entry.add_example("ex_reg", language="reg")
         expected = "\\begin{exe}\n\\sn \\textbf{\ipa{ex_ver}}\n\\trans ex_eng\n\\trans \\textit{\\textit{\zh{ex_nat}}}\n\\trans \\textit{[\ipa{ex_reg}]}\n\\end{exe}\n"
-        self.assertEqual(format_examples(entry, font), expected)
+        self.assertEqual(format_examples(entry.get_senses()[0], font), expected)
         del entry
 
     def test_format_usage_notes(self):
@@ -306,7 +307,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_usage_note("use_nat", language="nat")
         entry.set_usage_note("use_reg", language="reg")
         expected = "\\textit{VerUsage:} \\textbf{\ipa{use_ver}} \\textit{Usage:} use_eng \\textit{\\textit{\zh{use_nat}}} \\textit{[\ipa{use_reg}]} "
-        self.assertEqual(format_usage_notes(entry, font), expected)
+        self.assertEqual(format_usage_notes(entry.get_senses()[0], font), expected)
         del entry
 
     def test_format_encyclopedic_informations(self):
@@ -316,7 +317,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_encyclopedic_information("info_nat", language="nat")
         entry.set_encyclopedic_information("info_reg", language="reg")
         expected = "\\textbf{\ipa{info_ver}} info_eng \\textit{\zh{info_nat}} \\textit{[\ipa{info_reg}]} "
-        self.assertEqual(format_encyclopedic_informations(entry, font), expected)
+        self.assertEqual(format_encyclopedic_informations(entry.get_senses()[0], font), expected)
         del entry
 
     def test_format_restrictions(self):
@@ -326,7 +327,7 @@ class TestTexFunctions(unittest.TestCase):
         entry.set_restriction("strict_nat", language="nat")
         entry.set_restriction("strict_reg", language="reg")
         expected = "\\textit{VerRestrict:} \\textbf{\ipa{strict_ver}} \\textit{Restrict:} strict_eng \\textit{\\textit{\zh{strict_nat}}} \\textit{[\ipa{strict_reg}]} "
-        self.assertEqual(format_restrictions(entry, font), expected)
+        self.assertEqual(format_restrictions(entry.get_senses()[0], font), expected)
         del entry
 
     def test_format_lexical_functions(self):

@@ -80,41 +80,39 @@ def format_notes(lexical_entry, font):
         result += "[Ques: " + font[ENGLISH](note) + "] "
     return result
 
-def format_examples(lexical_entry, font):
+def format_examples(sense, font):
     import output.tex as tex
     result = ""
-    for sense in lexical_entry.get_senses():
-        for context in sense.get_contexts():
-            result += "\\begin{exe}" + EOL
-            for example in context.find_written_forms(config.xml.vernacular, script_name="ipa"):
-                result += "\\sn " + font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(config.xml.vernacular, script_name="devanagari"): # xv_dev
-                result += "\\trans " + font[NATIONAL](example) + EOL
-            for example in context.find_written_forms(config.xml.English):
-                result += "\\trans " + font[ENGLISH](example) + EOL
-            for example in context.find_written_forms(config.xml.national):
-                result += "\\trans " + font[NATIONAL](tex.handle_font(example)) + EOL
-            for example in context.find_written_forms(config.xml.regional):
-                result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
-            result += "\\end{exe}" + EOL
+    for context in sense.get_contexts():
+        result += "\\begin{exe}" + EOL
+        for example in context.find_written_forms(config.xml.vernacular, script_name="ipa"):
+            result += "\\sn " + font[VERNACULAR](example) + EOL
+        for example in context.find_written_forms(config.xml.vernacular, script_name="devanagari"): # xv_dev
+            result += "\\trans " + font[NATIONAL](example) + EOL
+        for example in context.find_written_forms(config.xml.English):
+            result += "\\trans " + font[ENGLISH](example) + EOL
+        for example in context.find_written_forms(config.xml.national):
+            result += "\\trans " + font[NATIONAL](tex.handle_font(example)) + EOL
+        for example in context.find_written_forms(config.xml.regional):
+            result += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+        result += "\\end{exe}" + EOL
     return result
 
-def format_examples_compact(lexical_entry, font):
+def format_examples_compact(sense, font):
     import output.tex as tex
     result = ""
-    for sense in lexical_entry.get_senses():
-        for context in sense.get_contexts():
-            result += u"\u00B6 "
-            for example in context.find_written_forms(config.xml.vernacular, script_name="ipa"):
-                result += font[VERNACULAR](example) + EOL
-            for example in context.find_written_forms(config.xml.vernacular, script_name="devanagari"): # xv_dev
-                result += font[NATIONAL](example) + EOL
-            for example in context.find_written_forms(config.xml.English):
-                result += font[ENGLISH](example) + EOL
-            for example in context.find_written_forms(config.xml.national):
-                result += font[NATIONAL](tex.handle_font(example)) + EOL
-            for example in context.find_written_forms(config.xml.regional):
-                result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
+    for context in sense.get_contexts():
+        result += u"\u00B6 "
+        for example in context.find_written_forms(config.xml.vernacular, script_name="ipa"):
+            result += font[VERNACULAR](example) + EOL
+        for example in context.find_written_forms(config.xml.vernacular, script_name="devanagari"): # xv_dev
+            result += font[NATIONAL](example) + EOL
+        for example in context.find_written_forms(config.xml.English):
+            result += font[ENGLISH](example) + EOL
+        for example in context.find_written_forms(config.xml.national):
+            result += font[NATIONAL](tex.handle_font(example)) + EOL
+        for example in context.find_written_forms(config.xml.regional):
+            result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
 def format_paradigms(lexical_entry, font):
@@ -182,16 +180,22 @@ def lmf2tex(lexical_entry, font):
     tex_entry += tex.format_part_of_speech(lexical_entry, config.xml.font)
     # grammatical notes
     tex_entry += format_notes(lexical_entry, config.xml.font)
-    # definition/gloss and translation
-    tex_entry += tex.format_definitions(lexical_entry, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national])
-    # example
-    tex_entry += format_examples_compact(lexical_entry, config.xml.font)
-    # usage note
-    tex_entry += tex.format_usage_notes(lexical_entry, config.xml.font)
-    # encyclopedic information
-    tex_entry += tex.format_encyclopedic_informations(lexical_entry, config.xml.font)
-    # restriction
-    tex_entry += tex.format_restrictions(lexical_entry, config.xml.font)
+    # Order by sense number
+    senses = lexical_entry.get_senses()
+    senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
+    for sense in senses:
+        if sense.get_senseNumber() is not None:
+            tex_entry += sense.get_senseNumber() + ") "
+        # definition/gloss and translation
+        tex_entry += tex.format_definitions(sense, config.xml.font, languages=[config.xml.vernacular, config.xml.English, config.xml.national])
+        # example
+        tex_entry += format_examples_compact(sense, config.xml.font)
+        # usage note
+        tex_entry += tex.format_usage_notes(sense, config.xml.font)
+        # encyclopedic information
+        tex_entry += tex.format_encyclopedic_informations(sense, config.xml.font)
+        # restriction
+        tex_entry += tex.format_restrictions(sense, config.xml.font)
     # synonym, antonym, morphology, related form
     tex_entry += tex.format_related_forms(lexical_entry, config.xml.font)
     # TODO: variant form?

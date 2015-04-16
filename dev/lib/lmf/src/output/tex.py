@@ -371,9 +371,9 @@ def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
             print Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech().encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
     return result
 
-def format_definitions(lexical_entry, font, languages=None):
+def format_definitions(sense, font, languages=None):
     """! @brief Glosses are supplanted by definitions.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param languages A list of languages to consider for definitions and glosses (all by default).
     @return A string representing glosses and definitions in LaTeX format.
@@ -381,68 +381,67 @@ def format_definitions(lexical_entry, font, languages=None):
     result = ""
     if languages is None:
         languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
-    for sense in lexical_entry.get_senses():
-        for language in languages:
-            if len(sense.find_definitions(language)) != 0:
-                for definition in sense.find_definitions(language):
-                    if language == config.xml.vernacular:
-                        result += font[VERNACULAR](definition) + ". "
-                    elif language == config.xml.national:
-                        result += font[NATIONAL](handle_font(definition)) + ". "
-                    elif language == config.xml.regional:
-                        result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
-                    else:
-                        result += definition + ". "
-            elif len(sense.find_glosses(language)) != 0:
-                for gloss in sense.find_glosses(language):
-                    if language == config.xml.vernacular:
-                        result += font[VERNACULAR](gloss) + ". "
-                    elif language == config.xml.national:
-                        result += font[NATIONAL](handle_font(gloss)) + ". "
-                    elif language == config.xml.regional:
-                        result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
-                    else:
-                        result += gloss + ". "
-            if len(sense.get_translations(language)) != 0:
-                for translation in sense.get_translations(language):
-                    if language == config.xml.national:
-                        result += font[NATIONAL](translation) + ". "
-                    elif language == config.xml.regional:
-                        result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
-                    else:
-                        result += translation + ". "
+    for language in languages:
+        if len(sense.find_definitions(language)) != 0:
+            for definition in sense.find_definitions(language):
+                if language == config.xml.vernacular:
+                    result += font[VERNACULAR](definition) + ". "
+                elif language == config.xml.national:
+                    result += font[NATIONAL](handle_font(definition)) + ". "
+                elif language == config.xml.regional:
+                    result += "\\textit{[Regnl: " + font[REGIONAL](definition) + "]}. "
+                else:
+                    result += definition + ". "
+        elif len(sense.find_glosses(language)) != 0:
+            for gloss in sense.find_glosses(language):
+                if language == config.xml.vernacular:
+                    result += font[VERNACULAR](gloss) + ". "
+                elif language == config.xml.national:
+                    result += font[NATIONAL](handle_font(gloss)) + ". "
+                elif language == config.xml.regional:
+                    result += "\\textit{[Regnl: " + font[REGIONAL](gloss) + "]}. "
+                else:
+                    result += gloss + ". "
+        if len(sense.get_translations(language)) != 0:
+            for translation in sense.get_translations(language):
+                if language == config.xml.national:
+                    result += font[NATIONAL](translation) + ". "
+                elif language == config.xml.regional:
+                    result += "\\textbf{rr:}\\textit{[Regnl: " + translation + "]}. "
+                else:
+                    result += translation + ". "
     return result
 
-def format_lt(lexical_entry, font):
+def format_lt(sense, font):
     """! @brief Display 'lt' in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing 'lt' in LaTeX format.
     """
-    # return "\\textit{Lit:} " + u"\u2018" + lexical_entry.get_lt() + u"\u2019" + ". "
+    # return "\\textit{Lit:} " + u"\u2018" + sense.get_lt() + u"\u2019" + ". "
     return ""
 
-def format_sc(lexical_entry, font):
+def format_sc(sense, font):
     """! @brief Display 'sc' in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing 'sc' in LaTeX format.
     """
-    # return "\\textit{\uline{" + lexical_entry.get_sc() + "}}. "
+    # return "\\textit{\uline{" + sense.get_sc() + "}}. "
     return ""
 
-def format_rf(lexical_entry, font):
+def format_rf(sense, font):
     """! @brief Display 'rf' in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param lexical_entry The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing 'rf' in LaTeX format.
     """
-    # return "\\textit{Ref:} " + lexical_entry.get_rf() + " "
+    # return "\\textit{Ref:} " + sense.get_rf() + " "
     return ""
 
-def format_examples(lexical_entry, font, languages=None):
+def format_examples(sense, font, languages=None):
     """! @brief Display examples in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param languages A list of languages to consider for examples (all by default).
     @return A string representing examples in LaTeX format.
@@ -450,76 +449,72 @@ def format_examples(lexical_entry, font, languages=None):
     result = ""
     if languages is None:
         languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
-    for sense in lexical_entry.get_senses():
-        for context in sense.get_contexts():
-            tmp = ""
-            for language in languages:
-                for example in context.find_written_forms(language):
-                    if language == config.xml.vernacular:
-                        tmp += "\\sn " + font[VERNACULAR](example) + EOL
-                    elif language == config.xml.national:
-                        tmp += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
-                    elif language == config.xml.regional:
-                        tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
-                    else: # language == config.xml.English
-                        tmp += "\\trans " + example + EOL
-            # LaTeX does not support empty examples
-            if len(tmp) != 0:
-                result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL
+    for context in sense.get_contexts():
+        tmp = ""
+        for language in languages:
+            for example in context.find_written_forms(language):
+                if language == config.xml.vernacular:
+                    tmp += "\\sn " + font[VERNACULAR](example) + EOL
+                elif language == config.xml.national:
+                    tmp += "\\trans \\textit{" + font[NATIONAL](handle_font(example)) + "}" + EOL
+                elif language == config.xml.regional:
+                    tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+                else: # language == config.xml.English
+                    tmp += "\\trans " + example + EOL
+        # LaTeX does not support empty examples
+        if len(tmp) != 0:
+            result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL
     return result
 
-def format_usage_notes(lexical_entry, font):
+def format_usage_notes(sense, font):
     """! @brief Display usage notes in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing usage notes in LaTeX format.
     """
     result = ""
-    for sense in lexical_entry.get_senses():
-        for usage in sense.find_usage_notes(language=config.xml.vernacular):
-            result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
-        for usage in sense.find_usage_notes(language=config.xml.English):
-            result += "\\textit{Usage:} " + usage + " "
-        for usage in sense.find_usage_notes(language=config.xml.national):
-            result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
-        for usage in sense.find_usage_notes(language=config.xml.regional):
-            result += "\\textit{[" + font[REGIONAL](usage) + "]} "
+    for usage in sense.find_usage_notes(language=config.xml.vernacular):
+        result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
+    for usage in sense.find_usage_notes(language=config.xml.English):
+        result += "\\textit{Usage:} " + usage + " "
+    for usage in sense.find_usage_notes(language=config.xml.national):
+        result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
+    for usage in sense.find_usage_notes(language=config.xml.regional):
+        result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
-def format_encyclopedic_informations(lexical_entry, font):
+def format_encyclopedic_informations(sense, font):
     """! @brief Display encyclopedic informations in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing encyclopedic informations in LaTeX format.
     """
     result = ""
-    for sense in lexical_entry.get_senses():
-        for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
-            result += font[VERNACULAR](information) + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.English):
-            result += information + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.national):
-            result += font[NATIONAL](handle_font(information)) + " "
-        for information in sense.find_encyclopedic_informations(language=config.xml.regional):
-            result += "\\textit{[" + font[REGIONAL](information) + "]} "
+    for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):
+        result += font[VERNACULAR](information) + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.English):
+        result += information + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.national):
+        result += font[NATIONAL](handle_font(information)) + " "
+    for information in sense.find_encyclopedic_informations(language=config.xml.regional):
+        result += "\\textit{[" + font[REGIONAL](information) + "]} "
     return result
 
-def format_restrictions(lexical_entry, font):
+def format_restrictions(sense, font):
     """! @brief Display restrictions in LaTeX format.
-    @param lexical_entry The current Lexical Entry LMF instance.
+    @param sense The current Sense LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing restrictions in LaTeX format.
     """
     result = ""
-    for sense in lexical_entry.get_senses():
-        for restriction in sense.find_restrictions(language=config.xml.vernacular):
-            result += "\\textit{VerRestrict:} " + font[VERNACULAR](restriction) + " "
-        for restriction in sense.find_restrictions(language=config.xml.English):
-            result += "\\textit{Restrict:} " + restriction + " "
-        for restriction in sense.find_restrictions(language=config.xml.national):
-            result += "\\textit{" + font[NATIONAL](restriction) + "} "
-        for restriction in sense.find_restrictions(language=config.xml.regional):
-            result += "\\textit{[" + font[REGIONAL](restriction) + "]} "
+    for restriction in sense.find_restrictions(language=config.xml.vernacular):
+        result += "\\textit{VerRestrict:} " + font[VERNACULAR](restriction) + " "
+    for restriction in sense.find_restrictions(language=config.xml.English):
+        result += "\\textit{Restrict:} " + restriction + " "
+    for restriction in sense.find_restrictions(language=config.xml.national):
+        result += "\\textit{" + font[NATIONAL](restriction) + "} "
+    for restriction in sense.find_restrictions(language=config.xml.regional):
+        result += "\\textit{[" + font[REGIONAL](restriction) + "]} "
     return result
 
 def format_lexical_functions(lexical_entry, font):
