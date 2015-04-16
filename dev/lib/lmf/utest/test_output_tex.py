@@ -107,9 +107,9 @@ class TestTexFunctions(unittest.TestCase):
             ]
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -} \hspace{1.4ex}" + EOL,
+            "\\section*{\\centering- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -}" + EOL,
             #"\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
-            "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{01}{}" + EOL,
+            "\\paragraph{\\hspace{-0.5cm} \\textbf{\ipa{hello}}} \\hypertarget{01}{}" + EOL,
             "\markboth{\\textbf{\\ipa{hello}}}{}" + EOL,
             "\\textit{Status:} draft" + EOL,
             "\lhead{\\firstmark}" + EOL,
@@ -136,7 +136,7 @@ class TestTexFunctions(unittest.TestCase):
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
-            "\\section*{- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -} \hspace{1.4ex}" + EOL,
+            "\\section*{\\centering- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -}" + EOL,
             #"\\pdfbookmark[1]{\ipa{ H h }}{ H h }" + EOL,
             "The lexical entry 01 is hello." + EOL,
             "Its grammatical category is toto." + EOL,
@@ -219,7 +219,7 @@ class TestTexFunctions(unittest.TestCase):
     def test_format_lexeme(self):
         entry = LexicalEntry()
         entry.set_lexeme("hello")
-        expected = "\\vspace{1cm} \\hspace{-1cm} \\textbf{\ipa{hello}} \\hspace{0.1cm} \\hypertarget{01}{}\n\markboth{\\textbf{\ipa{hello}}}{}\n"
+        expected = "\\paragraph{\\hspace{-0.5cm} \\textbf{\ipa{hello}}} \\hypertarget{01}{}\n\markboth{\\textbf{\ipa{hello}}}{}\n"
         self.assertEqual(format_lexeme(entry, font), expected)
         del entry
 

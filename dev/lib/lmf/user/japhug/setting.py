@@ -39,8 +39,12 @@ lmf_mdf.update({
 ## Functions to process some LaTeX fields (output)
 
 def format_lexeme(lexical_entry, font):
+    result = ""
     lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
-    result = "\\vspace{0.5cm} \\hspace{-1cm} "
+    if lexical_entry.is_subentry():
+        result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+    else:
+        result += "\\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -54,7 +58,7 @@ def format_lexeme(lexical_entry, font):
         result += lexeme
     for form in lexical_entry.get_variant_forms(type = "phonetics"):
         result += " / " + font[VERNACULAR](form)
-    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    result += "} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
         result += "\markboth{" + lexeme + "}{}" + EOL
     return result

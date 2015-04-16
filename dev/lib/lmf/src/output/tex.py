@@ -114,7 +114,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                                 for key,value in sorted(sort_order.items(), key=lambda x: x[1]):
                                     if int(value) == int(sort_order[current_character]):
                                         title += ' ' + font[VERNACULAR](key)
-                            tex_file.write("\\section*{-" + handle_reserved(title) + " -} \hspace{1.4ex}" + EOL)
+                            tex_file.write("\\section*{\\centering-" + handle_reserved(title) + " -}" + EOL)
                             #tex_file.write("\\pdfbookmark[1]{" + title + " }{" + title + " }" + EOL)
                         tex_file.write(lmf2tex(lexical_entry, font))
                         if len(paradigms) != 0:
@@ -126,7 +126,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                         # Handle subentries
                         for related_form in lexical_entry.get_related_forms("subentry"):
                             if related_form.get_lexical_entry() is not None:
-                                tex_file.write("$\\blacksquare$ \hspace{25pt} " + lmf2tex(related_form.get_lexical_entry(), font))
+                                tex_file.write(lmf2tex(related_form.get_lexical_entry(), font))
                                 if len(paradigms) != 0:
                                     tex_file.write(insert_references(related_form.get_lexical_entry()))
                                 # Separate sub-entries from each others with a blank line
@@ -163,6 +163,9 @@ def handle_reserved(text):
     """
     if text.find("$") != -1:
         text = text.replace('$', '\$')
+    # In some LaTeX commands, '$' must not be replaced by '\$' => marked as '\\dollar' in this case
+    if text.find("\\dollar") != -1:
+        text = text.replace("\\dollar", '$')
     if text.find("& ") != -1:
         text = text.replace('& ', '\& ')
     if text.find("%") != -1:
@@ -282,8 +285,12 @@ def format_lexeme(lexical_entry, font):
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @return A string representing lexeme in LaTeX format.
     """
+    result = ""
     lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
-    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.is_subentry():
+        result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+    else:
+        result += "\\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -295,7 +302,7 @@ def format_lexeme(lexical_entry, font):
     else:
         # Format lexeme
         result += lexeme
-    result += " \\hspace{0.1cm} \\hypertarget{" + format_uid(lexical_entry, font) + "}{}" + EOL
+    result += "} \\hypertarget{" + format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
         result += "\markboth{" + lexeme + "}{}" + EOL
     return result

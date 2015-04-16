@@ -174,8 +174,12 @@ def format_uid(lexical_entry, font):
 
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
+    result = ""
     lexeme = font[VERNACULAR](handle_tones(lexical_entry.get_lexeme()))
-    result = "\\vspace{1cm} \\hspace{-1cm} "
+    if lexical_entry.is_subentry():
+        result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+    else:
+        result += "\\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -186,8 +190,8 @@ def format_lexeme(lexical_entry, font):
         result += " (from: " + lexeme + ")."
     else:
         # Format lexeme
-        result += lexeme
-    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+        result += "{\Large " + lexeme + "}"
+    result += "} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
         result += "\markboth{" + lexeme + "}{}" + EOL
     return result
@@ -351,8 +355,8 @@ def tex_fra(lexical_entry, font):
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
-        tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
+        (format_lexeme(lexical_entry, config.xml.font),\
+        tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
@@ -364,7 +368,7 @@ def tex_fra(lexical_entry, font):
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
-    tex_entry = tex.handle_reserved(tex_entry).replace("\dollar", '$')
+    tex_entry = tex.handle_reserved(tex_entry)
     tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, config.xml.font)
     tex_entry = tex.handle_fn(tex_entry, config.xml.font)
@@ -384,8 +388,8 @@ def tex_eng(lexical_entry, font):
     if lexical_entry.get_lexeme() == "???":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
-        ("{\Large " + format_lexeme(lexical_entry, config.xml.font) + "}",\
-        tex.format_audio(lexical_entry, font).replace('$', "\dollar"),\
+        (format_lexeme(lexical_entry, config.xml.font),\
+        tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
         "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
         format_tone(lexical_entry, config.xml.font),\
@@ -397,7 +401,7 @@ def tex_eng(lexical_entry, font):
     # Special formatting
     tex_entry = tex.handle_caps(tex_entry).replace("textsc", "mytextsc")
     # Handle reserved characters and fonts
-    tex_entry = tex.handle_reserved(tex_entry).replace("\dollar", '$')
+    tex_entry = tex.handle_reserved(tex_entry)
     tex_entry = tex.handle_quotes(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)

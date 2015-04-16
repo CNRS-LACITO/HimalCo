@@ -49,15 +49,19 @@ mdf_lmf.update({
 
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
+    result = ""
     inf_dev = font[NATIONAL](lexical_entry.get_citation_forms(script_name="devanagari")[0]) # lc_dev
     inf_api = font[VERNACULAR](lexical_entry.get_citation_forms(script_name="ipa")[0]) # lc
     root_api = font[VERNACULAR](lexical_entry.get_lexeme()) # lx
-    result = "\\vspace{0.5cm} \\hspace{-1cm} "
+    if lexical_entry.is_subentry():
+        result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+    else:
+        result += "\\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         root_api += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
     result += inf_dev + " " + inf_api + " (" + root_api + ")"
-    result += " \\hspace{0.1cm} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
+    result += "} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
         result += "\markboth{" + inf_dev + "}{}" + EOL
     return result
@@ -157,6 +161,9 @@ def format_paradigms(lexical_entry, font):
 def handle_reserved(text):
     if text.find("$") != -1:
         text = text.replace('$', '')
+    # In some LaTeX commands, '$' must not be kept => marked as '\\dollar' in this case
+    if text.find("\\dollar") != -1:
+        text = text.replace("\\dollar", '$')
     if text.find("#") != -1:
         text = text.replace('#', '\#')
     if text.find("& ") != -1:
