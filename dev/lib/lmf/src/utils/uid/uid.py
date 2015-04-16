@@ -33,6 +33,7 @@ from ipa2sampa import uni2sampa
 import re
 pattern = r"^\\(\w{2,3}) ?(.*)$"
 lx = ""
+mkr = "lx"
 sf = []
 hm = ""
 for line in in_file.readlines():
@@ -40,23 +41,30 @@ for line in in_file.readlines():
     if result:
         if result.group(1) == "lx" or result.group(1) == "se":
             lx = result.group(2)
+            if result.group(1) == "se":
+                mkr = "se"
         elif result.group(1) == "sf":
             sf.append(result.group(2))
         elif result.group(1) == "hm":
             hm = result.group(2)
-            # Generate UID and remove spaces around separation character
-            uid = uni2sampa(lx).replace(" | ", "|")
-            if hm == "":
-                hm = "1"
-            uid += str(hm)
-            out_file.write("\\lx <id=\"" + uid.encode('utf-8') + "\"> " + lx + EOL)
-            out_file.write("\\sf " + uid.replace('|', u"€").replace('?', 'Q').replace('*', 'F').encode('utf-8') + ".wav" + EOL)
-            for i in range (0, len(sf)):
-                out_file.write("\\sf " + sf[i] + EOL)
-            # Reset loop variables
-            lx = ""
-            sf = []
-            hm = ""
+            if lx != "":
+                # Generate UID and remove spaces around separation character
+                uid = uni2sampa(lx).replace(" | ", "|")
+                uid += str(hm)
+                if hm == "":
+                    uid += str("1")
+                out_file.write("\\" + mkr + " <id=\"" + uid.encode('utf-8') + "\"> " + lx + EOL)
+                out_file.write("\\sf " + uid.replace('|', u"€").replace('?', 'Q').replace('*', 'F').encode('utf-8') + ".wav" + EOL)
+                for i in range (0, len(sf)):
+                    out_file.write("\\sf " + sf[i] + EOL)
+                out_file.write("\\hm " + hm + EOL)
+                # Reset loop variables
+                lx = ""
+                mkr = "lx"
+                sf = []
+                hm = ""
+            else:
+                out_file.write(line)
         else:
             out_file.write(line)
     else:
