@@ -3939,41 +3939,23 @@
 \pdl classifier
 \pdv mi˩
 \pdf
-\de duck; female duck
+\de duck (without a specification of gender)
 \ge duck
 \dn 鸭子
 \gn 鸭子
 \gr
 \df canard (sans préciser le sexe: canard ou cane)
 \gf canard
-\xv bæ˧mi˧-bæ˧pʰv#˥
-\xe female duck and male duck
-\xn 母鸭子与公鸭子
-\xf cane et canard
-\xc <type="tone"> #H
-\rf
-\xv bæ˧mi˧-bæ˧zo#˥
-\xe female duck and duckling
-\xn 母鸭与小鸭子
-\xf cane et caneton
-\xc
-\xc <type="tone"> #H
-\rf
 \xv
 \xf
 \xc
 \dt 16/Jun/2014
 
-\lx bæ˧mi˧
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm 1
+\sn 2
 \ph
 \bw
 \et
 \ec <lang="fra"> 
-\ps n
-\sn 2
 \cf
 \cf <type="hm"> 
 \sd <lang="fra"> 
@@ -3996,13 +3978,25 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
+\de female duck
+\ge female_duck
 \dn 母鸭子
 \gn 母鸭子
 \gr
 \df cane
 \gf cane
+\xv bæ˧mi˧-bæ˧pʰv#˥
+\xe female duck and male duck
+\xn 母鸭子与公鸭子
+\xf cane et canard
+\xc <type="tone"> #H
+\rf
+\xv bæ˧mi˧-bæ˧zo#˥
+\xe female duck and duckling
+\xn 母鸭与小鸭子
+\xf cane et caneton
+\xc <type="tone"> #H
+\rf
 \xv
 \xe
 \xn
@@ -8293,57 +8287,6 @@
 \xf
 \xc
 \dt 16/Jun/2014
-
-\lx bv˥
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm
-\ph
-\bw
-\et
-\ec <lang="fra"> 
-\ps n
-\sn 2
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> 
-\sd <lang="eng"> 
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> #H
-\nd
-\so <print="n"> 
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de
-\ge
-\dn 虫
-\gn
-\gr
-\df insecte
-\gf insecte
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
 
 \lx bv˥
 \sf <nb="B"> 911
@@ -13577,6 +13520,59 @@
 \xf
 \xc
 \dt 22/May/2014
+
+\lx do˩
+\sf <nb="B"> 
+\sf <nb="2011"> 
+\hm
+\ph
+\bw
+\et
+\ec <lang="fra"> 
+\ps adj
+\sn
+\cf
+\cf <type="hm"> 
+\sd <lang="fra"> plante
+\sd <lang="eng"> plant
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np
+\np <type="tone"> La? Lb? xxxx
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5">
+\vf <type="tone"> 
+\va <speaker="M18">
+\va <speaker="M21">
+\va <speaker="M23">
+\pdl
+\pdv
+\pdf
+\de immature, lacking maturity
+\ge immature
+\dn 不成熟、晚熟
+\gn 不成熟
+\gr
+\df immature
+\gf immature
+\xv ŋwɤ˩ɬi˩-mi˩˥, | ʂe˧ mɤ˧-mv˥, | ʂe˧ do˧˥! | tsʰe˩ŋwɤ˩ kʰv˥, | zo˧ mɤ˧-ti˩, | zo˩ do˩˥!
+\xe In the fifth month, if cereals are still green (=if they do not yet yield grain), the crop is immature (and may not yield any harvest). At age 15, if a boy does not visit girls, he is immature (he is not developing normally)!
+\xn 五月份，谷物还处于草状态（还不出谷粒），算是晚熟！男人十五岁还不见姑娘，算是晚熟！
+\xf Au cinquième mois, une céréale qui ne mûrit pas/qui ne donne pas de grain, c'est une récolte stérile/qui reste en herbe! A quinze ans, le garçon qui ne fréquente pas les filles, c'est qu'il est pas mûr/c'est qu'il a un problème!
+\xc xxxx sans doute: zo˧ do˧˥, et non zo˩do˩˥!
+\rf
+\xv
+\xf
+\rf
+\xv
+\xf
+\xc
+\dt 17/Apr/2015
 
 \lx do˧
 \sf <nb="B"> 
@@ -45689,7 +45685,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -45713,17 +45709,17 @@
 \pdl
 \pdv
 \pdf
-\de a wild plant of the mountain; it is edible; it is picked and eaten in the Spring, when vegetables are not ripe yet. Yi people harvest it and sell it in the plain
-\ge
-\dn 红萝卜菜：一种山上的野菜，可以吃 
+\de a wild radish that grows on the mountains; it is edible; it is picked and eaten in the Spring, when vegetables are not ripe yet. Yi people harvest it and sell it in the plain.
+\ge wild_radish
+\dn 红萝卜菜：一种山上的野菜。春天的时候，菜园的蔬菜还没有成熟的时候，永宁的人吃红萝卜菜。彝族在高山采，卖在永宁。
 \gn 红萝卜菜
 \gr 野山菜，fv:/ʝi˧ʂæ˧tsʰɤ˩/
-\df plante sauvage, consommée au printemps, à une époque où il n'y a pas encore de légumes; est récoltée par les Yi et vendu dans la plaine
-\gf
+\df radis sauvage qui pousse en montagne; on le consomme surtout au printemps, à une époque où il n'y a pas encore de légumes. Ce radis est récoltée par les Yi et vendu dans la plaine.
+\gf radis_sauvage
 \xv jɤ˧ dzɯ˧ | qʰɑ˧-sɯ˥~sɯ˩, | jɤ˧ ʈʂɤ˥ ŋv˩-ɭɯ˩~ɭɯ˩!
-\xe
-\xn
-\xf "Le zzzzjɤ˧˥, ça a un goût amer quand on le mange, et ça vous fait pleurer pour le récolter!" (de: qʰɑ˧ 'amer'+expressif) / "récolter le jɤ˧˥, ça fait pleurer!" (non pas à cause de la plante elle-même, pas comme un oignon qui piquerait les yeux: mais parce qu'on s'épuisait à aller le chercher en haute montagne)
+\xe "The wild radish is bitter; and its harvest costs tears! / The wild radish tastes bitter; and its harvest is bitter, too! / The wild radish is all bitterness inside, and all bitterness at the harvest!" This proverb evokes the difficulty of the harvest, which requires long wanderings up high on the mountain.
+\xn “红萝卜菜，味道苦，而去菜要流眼泪！ / 红萝卜菜，吃起来苦，菜起来也苦！”菜红萝卜菜，需要上高山，寻找时间长，永宁坝子的农民觉得这比较苦。
+\xf "Le radis sauvage, ça a un goût amer quand on le mange, et ça vous fait pleurer pour le récolter!" (de: qʰɑ˧ 'amer'+expressif) / "récolter le radis sauvage, ça fait pleurer!" Non pas à cause de la plante elle-même, pas comme un oignon qui piquerait les yeux: mais parce qu'on s'épuisait à aller le chercher en haute montagne.
 \xc PROVERBE
 \rf
 \xv
@@ -45732,7 +45728,7 @@
 \xv
 \xf
 \xc
-\dt 14/Aug/2014
+\dt 17/Apr/2015
 
 \lx jɤ˩a
 \sf <nb="B"> 
@@ -46007,7 +46003,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -46031,13 +46027,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de buckwheat, Fagopyrum esculentum
-\ge
+\de buckwheat, |fi{Fagopyrum esculentum}
+\ge buckwheat
 \dn 甜荞/荞麦/花荞
-\gn
+\gn 甜荞
 \gr
-\df sarrasin, blé noir, Fagopyrum esculentum
-\gf
+\df sarrasin, blé noir, |fi{Fagopyrum esculentum}
+\gf sarrasin
 \xv
 \xe
 \xn
@@ -46049,6 +46045,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx jo˧gv˧
 \sf <nb="B"> 2230a
@@ -46211,10 +46208,10 @@
 \sf <nb="2011"> 3082
 \hm
 \ph ma3ling2shu3
-\bw
+\bw Chinese fn:洋芋
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -46239,12 +46236,12 @@
 \pdv kɤ˧˥
 \pdf
 \de potato
-\ge
-\dn 土豆 (马铃薯， 洋芋)
-\gn
+\ge potato
+\dn 洋芋、土豆 、马铃薯
+\gn 洋芋
 \gr
 \df pomme de terre
-\gf
+\gf pomme_de_terre
 \xv
 \xe
 \xn
@@ -46256,6 +46253,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx jo˩kʰv˩
 \sf <nb="B"> 767
@@ -46736,7 +46734,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -46760,13 +46758,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
+\de cep, |fi{Boletus edulis}
+\ge cep
 \dn 牛肝菌
-\gn
+\gn 牛肝菌
 \gr
-\df bolet, cèpe: "champignon-galette de sarrasin"
-\gf
+\df bolet, cèpe, |fi{Boletus edulis}; littéralement "champignon-galette de sarrasin", du fait de sa texture
+\gf bolet
 \xv
 \xe
 \xn
@@ -46778,6 +46776,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx jɤ˧qʰɑ#˥
 \sf <nb="B"> 
@@ -46787,7 +46786,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -46811,13 +46810,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de buckwheat sp., Fagopyrum tataricum Gaertn
-\ge
+\de bitter buckwheat, |fi{Fagopyrum tataricum Gaertn}
+\ge bitter_buckwheat
 \dn 苦荞
-\gn
+\gn 苦荞
 \gr
-\df sarrasin sp., Fagopyrum tataricum Gaertn
-\gf
+\df sarrasin amer, |fi{Fagopyrum tataricum Gaertn}
+\gf sarrasin_amer
 \xv
 \xe
 \xn
@@ -46829,6 +46828,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx jo˩ʂwæ˩
 \sf <nb="B"> 1890b
@@ -47204,7 +47204,7 @@
 \bw Chinese fn:甘蔗
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -47247,6 +47247,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰi˧˥
 \sf <nb="B"> 1756d
@@ -48915,10 +48916,10 @@
 \sf <nb="2011"> 994
 \hm
 \ph
-\bw
+\bw Tibetan sku-vdra (sku-'dra)
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -48927,7 +48928,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> vérifié: initiale vélaire et non uvulaire
 \nt <type="hist" print="n"> 
-\nt <type="sem"> la forme disyllabique n'est généralement pas employée: on doit utiliser la forme trisyllabique ku˧ɖæ˧-zo˧
+\nt <type="sem"> la forme disyllabique n'est généralement pas employée: on doit utiliser la forme trisyllabique ko˧ɖæ˧-zo˧
 \np
 \np <type="tone"> #H
 \nd
@@ -48943,15 +48944,15 @@
 \pdv ɭɯ˧
 \pdf
 \de scuplture of Buddha (Tibetan borrowing)
-\ge
+\ge sculpture_of_Buddha
 \dn 佛像
-\gn
+\gn 佛像
 \gr
-\df statue de bouddha (emprunt tibétain) sku-vdra (aussi transcrit 'dra) "statue"
-\gf
+\df statue de bouddha
+\gf statue_de_bouddha
 \xv ko˧ɖæ˧-zo˧
-\xe
-\xn
+\xe small statue of Buddha
+\xn 小佛像
 \xf statuette du Bouddha
 \rf
 \xv
@@ -48960,6 +48961,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ko˩dze˧
 \sf <nb="B"> 1808
@@ -49273,7 +49275,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -49299,17 +49301,19 @@
 \pdv kɤ˧˥
 \pdf
 \de branch
-\ge
+\ge branch
 \dn 树枝
-\gn
+\gn 树枝
 \gr
 \df branche
-\gf
+\gf branche
 \xv si˧dzi˩-kɤ˩lo˩
-\xe
-\xn
+\xe branch of tree
+\xn 树枝
 \xf branche d'arbre
 \xv si˧-kɤ˥lo˩
+\xe as above
+\xn 同上
 \xf idem
 \rf
 \xv
@@ -49318,6 +49322,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰo˧lo˧
 \sf <nb="B"> 
@@ -49327,7 +49332,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -49352,12 +49357,12 @@
 \pdv ɭɯ˧
 \pdf
 \de prayer wheel
-\ge
-\dn "祈祷轱辘"
-\gn
-\gr
+\ge prayer_wheel
+\dn 转经筒
+\gn 转经筒
+\gr 祈祷轱辘
 \df moulin à prière (aussi bien les très grands, fixés à des axes verticaux dans les monastères, que les plus petits, tenus à la main)
-\gf
+\gf moulin_à_prière
 \xv
 \xe
 \xn
@@ -49369,6 +49374,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kɤ˧mi˧
 \sf <nb="B"> 
@@ -52039,7 +52045,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -52064,15 +52070,15 @@
 \pdv ʈv˩
 \pdf
 \de root
-\ge
+\ge root
 \dn 根
-\gn
+\gn 根
 \gr
-\df racine (d'un arbre)
-\gf
+\df racine
+\gf racine
 \xv si˧dzi˩-kʰɯ˩ʈv˩
-\xe
-\xn
+\xe tree root
+\xn 树根
 \xf racines d'arbre
 \rf
 \xv
@@ -52081,6 +52087,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰɯ˧tʰv#˥
 \sf <nb="B"> 063d
@@ -52363,7 +52370,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -52388,13 +52395,13 @@
 \pdv ɭɯ˧
 \pdv tsʰɤ˧˥
 \pdf tête; gousse
-\de garlic
-\ge
+\de garlic, |fi{Allium sativum}
+\ge garlic
 \dn 大蒜
-\gn
+\gn 大蒜
 \gr
-\df ail, aïl
-\gf
+\df ail, |fi{Allium sativum}
+\gf ail
 \xv
 \xe
 \xn
@@ -52406,6 +52413,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰv˧˥
 \sf <nb="B"> 789
@@ -53167,10 +53175,10 @@
 \sf <nb="2011"> 3079
 \hm
 \ph
-\bw
+\bw Chinese fn:苦瓜
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -53195,12 +53203,12 @@
 \pdv ɭɯ˧
 \pdf
 \de bitter melon
-\ge
+\ge 苦瓜::bitter_melon
 \dn 苦瓜
-\gn
+\gn 苦瓜
 \gr
 \df concombre amer
-\gf
+\gf 苦瓜::concombre_amer
 \xv
 \xe
 \xn
@@ -53212,16 +53220,17 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kv˧lv˧lv˥
 \sf <nb="B"> 1966
 \sf <nb="2011"> 2989
 \hm
-\ph suan4ban4
+\ph
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -53245,13 +53254,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de (garlic heads woven into a large clump)
-\ge
-\dn （蒜）
-\gn
+\de garlic braid: garlic bulbs with long leaves, braided into a large clump
+\ge garlic_braid
+\dn 蒜辫
+\gn 蒜辫
 \gr
-\df ail tressé
-\gf
+\df tresse d'ail, ail tressé
+\gf tresse_d_ail
 \xv
 \xe
 \xn
@@ -53263,6 +53272,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰv˧mæ˧
 \sf <nb="B"> 361
@@ -53823,7 +53833,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -53847,13 +53857,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de garlic sprouts
-\ge
+\de garlic sprouts (consumed as a vegetable)
+\ge garlic_sprouts
 \dn 蒜苗
-\gn
+\gn 蒜苗
 \gr
 \df pousses d'ail (aliment)
-\gf
+\gf pousses d'ail
 \xv
 \xe
 \xn
@@ -53865,6 +53875,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰv˧ʂæ˧˥
 \sf <nb="B"> 1193
@@ -54029,7 +54040,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -54053,13 +54064,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de
-\ge
-\dn M23: 耗子耳朵 (chinois dialectal local) hàozi
-\gn
-\gr
-\df arbuste à piquants, petits fruits rouges; suivant sur la photo (nom en chinois local: "oreille de souris", du fait de la forme de la feuille)
-\gf
+\de a flowering plant in the legume family: |fi{Flemingia strobilifera}, also known as |fi{Moghania fruticulosa}
+\ge Flemingia_strobilifera
+\dn 球穗千斤拔、半灌木千斤拔、大苞千斤拔
+\gn 球穗千斤拔
+\gr 耗子耳朵
+\df plante à fleurs, |fi{Flemingia strobilifera}, aussi appelée |fi{Moghania fruticulosa} (nom en chinois local: "oreille de souris", du fait de la forme de la feuille)
+\gf Flemingia_strobilifera
 \xv
 \xe
 \xn
@@ -54071,6 +54082,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kv˩tɑ˩
 \sf <nb="B"> 
@@ -54293,7 +54305,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -54317,13 +54329,13 @@
 \pdl classifier
 \pdv tsʰɤ˧˥
 \pdf
-\de headl/bulb of garlic
-\ge
+\de head/bulb of garlic
+\ge garlic_bulb
 \dn 蒜头
-\gn
+\gn 蒜头
 \gr
-\df tête d'aïl
-\gf
+\df tête d'ail
+\gf tête_d_ail
 \xv
 \xe
 \xn
@@ -54335,6 +54347,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kʰv˩tsɤ˩mi˥
 \sf <nb="B"> 1868
@@ -54982,7 +54995,7 @@
 \bw Chinese fn:瓜子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -55024,6 +55037,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx kwɤ˩a
 \sf <nb="B"> 1469
@@ -57373,7 +57387,7 @@
 \bw Chinese fn:辣子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -57415,7 +57429,7 @@
 \xv
 \xf
 \xc
-\dt 19/Aug/2014
+\dt 17/Apr/2015
 
 \lx lɑ˩ʈʂv˩
 \sf <nb="B"> 501
@@ -58325,7 +58339,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -58367,6 +58381,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɬi˧bo#˥
 \sf <nb="B"> 370
@@ -58479,7 +58494,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -58504,7 +58519,7 @@
 \pdv
 \pdf
 \de Chinese toon, fragrant cedar, |fi{Ailanthus chinensis}
-\ge
+\ge Chinese_toon
 \dn 香椿、香椿树
 \gn 香椿
 \gr
@@ -58521,6 +58536,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɬi˧bv˧-mi#˥
 \sf <nb="B"> 
@@ -58946,7 +58962,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -58970,13 +58986,13 @@
 \pdl
 \pdv
 \pdf
-\de ritual for boys reaching 13 years: "wearing of trousers"; at that age adolescents begin to wear trousers.
-\ge
+\de ritual for boys coming of age, i.e. reaching the age of 13 years: "wearing trousers"; at that age adolescents begin to wear trousers instead of children's robes
+\ge ritual_for_boys_coming_of_age
 \dn 男性成年礼：直译“穿裤”
 \gn 穿裤礼
 \gr
 \df cérémonie pour les garçons atteignant 13 ans: littéralement "porter/enfiler/mettre le pantalon". Après cette cérémonie, l'adolescent porte un pantalon, au lieu du vêtement unisexe des enfants. (Rituel parallèle avec fv{/ʈʰæ˩ ki˩˥/}, "porter/enfiler/mettre la jupe", pour les jeunes filles.)
-\gf
+\gf cérémonie_de_passage_à_l_âge_adulte_pour_garçons
 \xv
 \xe
 \xn
@@ -58988,7 +59004,7 @@
 \xv
 \xf
 \xc
-\dt 20/Aug/2014
+\dt 17/Apr/2015
 
 \lx ɬi˧ki#˥
 \sf <nb="B"> 
@@ -59845,7 +59861,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -59870,12 +59886,12 @@
 \pdv po˧
 \pdf
 \de Asiatic plantain
-\ge
+\ge Asiatic_plantain
 \dn 车前草
-\gn
+\gn 车前草
 \gr
 \df plantain (utilisé par les Na pour ses vertus médicinales; est abondant à Yongning)
-\gf
+\gf plantain
 \xv
 \xe
 \xn
@@ -59887,6 +59903,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɬi˩zo˩
 \sf <nb="B"> 
@@ -60104,7 +60121,7 @@
 \bw Chinese fn:凉粉
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -60146,7 +60163,7 @@
 \xv
 \xf
 \xc
-\dt 15/Aug/2014
+\dt 17/Apr/2015
 
 \lx ljɤ˩˥
 \sf <nb="B"> 
@@ -62686,10 +62703,10 @@
 \sf <nb="2011"> 
 \hm
 \ph
-\bw
+\bw Tibetan rlung rta
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -62715,68 +62732,20 @@
 \pdv pʰæ˧˥
 \pdf
 \de streamer of scriptures
-\ge
+\ge streamer_of_scriptures
 \dn 经幡、风马旗（在山上）
-\gn
+\gn 经幡
 \gr
-\df réseau de fils auxquels sont suspendus des fanions bouddhistes, sur la montagne
-\gf
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-
-\lx lo˧tɑ˧-lo˧tɕi#˥
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm
-\ph
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> religion
-\sd <lang="eng"> religion
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> 
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl classifier
-\pdv pɤ˥
-\pdv pʰæ˧˥
-\pdf
-\de streamer of scriptures
-\ge
-\dn 经幡、风马旗（在山上）
-\gn
-\gr
-\df réseau de fils auxquels sont suspendus des fanions bouddhistes, sur la montagne
-\gf
+\df drapeau de prières
+\gf drapeau_de_prières
 \xv lo˧tɑ˧-lo˧tɕi˧ | le˧-lɑ˧˥
+\xe to print a streamer of scriptures; more generally: to string together a streamer of scriptures
+\xn 直译：印出一个经幡。也来指准备经幡的工作（到山上去挂之前）
+\xf imprimer un drapeau de prières; sens plus général: confectionner un drapeau de prières (chez soi, avant de se rendre sur le lieu où on l'installe)
+\xv
 \xe
 \xn
-\xf imprimer un lo˧tɑ˧-lo˧tɕi#˥; sens plus général: confectionner un lo˧tɑ˧-lo˧tɕi#˥ (chez soi, avant de se rendre sur le lieu où on l'installe)
+\xf
 \rf
 \xv
 \xf
@@ -62784,6 +62753,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx lo˩tʰo˧
 \sf <nb="B"> 
@@ -64309,7 +64279,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -64334,12 +64304,12 @@
 \pdv
 \pdf
 \de ritual offering of food to the deceased, seven days after cremation
-\ge
-\dn
-\gn
+\ge ritual_offering_on_7th_day_after_cremation
+\dn 在火葬后的第七天的送食物仪式
+\gn 在火葬后的第七天的送食物仪式
 \gr
 \df nourriture qu'on offre rituellement au défunt, sept jours après sa crémation
-\gf
+\gf offrande_rituelle_du_7e_jour_après_crémation
 \xv
 \xe
 \xn
@@ -64351,6 +64321,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx lv˩ʝi˧
 \sf <nb="B"> 
@@ -65987,7 +65958,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -66011,13 +65982,13 @@
 \pdl
 \pdv
 \pdf
-\de chorten
-\ge
-\dn
-\gn
+\de chorten (reliquary)
+\ge chorten
+\dn 佛塔
+\gn 佛塔
 \gr
-\df chorten; sont parfois de simples empilages de grosses pierres (=à la surface non lissée et non peinte), mais en forme de chorten.
-\gf
+\df chörten; il s'agit parfois de simples empilages de grosses pierres (à la surface non lissée et non peinte), mais en forme de chörten
+\gf chörten
 \xv
 \xe
 \xn
@@ -66029,6 +66000,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mæ˧pæ˧
 \sf <nb="B"> 596e
@@ -66906,7 +66878,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -66931,17 +66903,18 @@
 \pdv dzi˩
 \pdf
 \de large bamboo
-\ge
-\dn 竹子
+\ge large_bamboo
+\dn 大竹子
 \gn
 \gr
-\df bambou
-\gf
+\df grand bambou
+\gf grand_bambou
 \xv mi˩ɬi˩-bæ˩ʈʂo˧
-\xe
+\xe bamboo broom
 \xn 竹扫
 \xf balai en petites tiges de bambou
 \xv mi˩ɬi˩-ʈʂæ˥do˩
+\xe bamboo bucket to carry water (on one's back)
 \xf seau en bambou pour porter de l'eau (sur le dos)
 \rf
 \xv
@@ -66950,6 +66923,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mi˩ɬi˩-ʁo˩bv˥
 \sf <nb="B"> 2032
@@ -66959,7 +66933,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -66985,12 +66959,12 @@
 \pdv kɤ˧˥
 \pdf
 \de bamboo shoot
-\ge
+\ge bamboo_shoot
 \dn 竹笋
-\gn
+\gn 竹笋
 \gr
 \df pousse de bambou
-\gf
+\gf pousse_de_bambou
 \xv
 \xe
 \xn
@@ -67002,6 +66976,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mi˧ɬo#˥
 \sf <nb="B"> 88a
@@ -67011,7 +66986,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -67038,15 +67013,15 @@
 \pdv kʰwɤ˥
 \pdf
 \de prayer
-\ge
+\ge prayer
 \dn 祈祷
-\gn
+\gn 祈祷
 \gr
 \df prière
-\gf
+\gf prière
 \xv mi˧ɬo˧ lɑ˩
-\xe
-\xn
+\xe to pray
+\xn 祈祷
 \xf prier
 \rf
 \xv
@@ -67055,6 +67030,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mi˧mi˧
 \sf <nb="B"> 
@@ -67064,7 +67040,7 @@
 \bw Chinese (dialectal) fn:米米
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -67089,12 +67065,12 @@
 \pdv
 \pdf
 \de kernel (of a seed)
-\ge kernel
+\ge 米米::kernel
 \dn 核，仁
 \gn 仁
 \gr
 \df amande (d'un noyau)
-\gf amande
+\gf 米米::amande
 \xv
 \xe
 \xn
@@ -67106,6 +67082,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mi˩mo˩
 \sf <nb="B"> 596a
@@ -67219,7 +67196,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -67244,12 +67221,12 @@
 \pdv dzi˩
 \pdf
 \de nettle
-\ge
+\ge nettle
 \dn 荨麻 
-\gn
+\gn 荨麻
 \gr
 \df ortie
-\gf
+\gf ortie
 \xv
 \xe
 \xn
@@ -67261,6 +67238,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mi˧tʰv#˥
 \sf <nb="B"> 605
@@ -68346,7 +68324,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -68390,7 +68368,7 @@
 \xv
 \xf
 \xc
-\dt 16/Aug/2014
+\dt 17/Apr/2015
 
 \lx mo˩kv#˥
 \sf <nb="B"> 
@@ -70411,7 +70389,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -70435,13 +70413,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de barley
-\ge
+\de barley, |fi{Hordeum vulgare L}
+\ge barley
 \dn 大麦
-\gn
+\gn 大麦
 \gr
-\df orge: Hordeum vulgare L
-\gf
+\df orge, |fi{Hordeum vulgare L}
+\gf orge
 \xv
 \xe
 \xn
@@ -70453,6 +70431,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mv˧dze˧-tɕʰi#˥
 \sf <nb="B"> 1995
@@ -70462,7 +70441,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -70487,12 +70466,12 @@
 \pdv
 \pdf
 \de highland barley beard
-\ge
+\ge highland_barley_beard
 \dn 青稞芒
-\gn
+\gn 青稞芒
 \gr
 \df barbe d'orge
-\gf
+\gf barbe_d_orge
 \xv
 \xe
 \xn
@@ -70504,6 +70483,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mv˩dzɤ˧
 \sf <nb="B"> 
@@ -71350,7 +71330,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -71375,12 +71355,12 @@
 \pdv ɭɯ˧
 \pdf
 \de papaya
-\ge
-\dn 木瓜 mu4gua1
+\ge papaya
+\dn 木瓜
 \gn
 \gr
 \df papaye
-\gf
+\gf papaye
 \xv
 \xe
 \xn
@@ -71392,6 +71372,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mv˧qʰwæ˩
 \sf <nb="B"> 
@@ -73131,7 +73112,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -73156,12 +73137,12 @@
 \pdv kɤ˧˥
 \pdf
 \de oats
-\ge
+\ge oats
 \dn 燕麦 
-\gn
+\gn 燕麦
 \gr
 \df avoine
-\gf
+\gf avoine
 \xv
 \xe
 \xn
@@ -73173,6 +73154,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx mv˩zɯ˩-ni˥mi˩
 \sf <nb="B"> 341
@@ -74034,7 +74016,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -74060,12 +74042,12 @@
 \pdv ɭɯ˧
 \pdf
 \de pumpkin; cushaw
-\ge
+\ge 南瓜::pumpkin
 \dn 南瓜
-\gn
+\gn 南瓜
 \gr
-\df potiron (emprunt chinois)
-\gf
+\df potiron
+\gf 南瓜::potiron
 \xv
 \xe
 \xn
@@ -74077,6 +74059,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nɑ˩mi#˥
 \sf <nb="B"> 
@@ -74452,7 +74435,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -74476,13 +74459,13 @@
 \pdl classifier
 \pdv pʰæ˧˥
 \pdf
-\de
-\ge
+\de streamer of scriptures, attached to pillars within the house
+\ge streamer_of_scriptures
 \dn 经幡、风马旗（挂在家里的柱子上）
-\gn
+\gn 经幡
 \gr
-\df réseau de fils auxquels sont suspendus des fanions bouddhistes, suspendu à l'un des piliers de la maisons
-\gf
+\df drapeau de prières attaché à des piliers de la maison
+\gf drapeau_de_prières
 \xv
 \xe
 \xn
@@ -74494,6 +74477,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nɑ˩zo#˥
 \sf <nb="B"> 
@@ -74835,7 +74819,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -74860,12 +74844,12 @@
 \pdv po˧
 \pdf
 \de amaranth
-\ge
+\ge amaranth
 \dn 苋米
-\gn
+\gn 苋米
 \gr
-\df Amaranthus, amaranthe. A des graines minuscules. Graine qui n'est pas une céréale mais a une valeur nutritionnelle comparable aux céréales.
-\gf
+\df amaranthe, |fi{Amaranthus}: minuscule graine qui n'est pas une céréale mais a une valeur nutritionnelle comparable aux céréales.
+\gf amaranthe
 \xv
 \xe
 \xn
@@ -74877,6 +74861,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɲi˩
 \sf <nb="B"> 
@@ -76206,7 +76191,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -76231,12 +76216,12 @@
 \pdv dzi˩
 \pdf
 \de sunflower
-\ge
+\ge sunflower
 \dn 葵花
-\gn
+\gn 葵花
 \gr
 \df tournesol
-\gf
+\gf tournesol
 \xv
 \xe
 \xn
@@ -76248,6 +76233,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɲi˧mi˧tʰv#˥
 \sf <nb="B"> 695
@@ -76364,7 +76350,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -76390,12 +76376,12 @@
 \pdv
 \pdf
 \de cane; rattan
-\ge
+\ge cane/rattan
 \dn 藤子
-\gn
+\gn 藤子
 \gr
-\df liane, rattan, vigne vierge, lierre, plante grimpante
-\gf
+\df liane, rattan, vigne vierge, lierre
+\gf liane
 \xv
 \xe
 \xn
@@ -76407,6 +76393,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɲi˧pʰv˩
 \sf <nb="B"> 16
@@ -79054,7 +79041,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -79079,12 +79066,12 @@
 \pdv qɑ˩
 \pdf
 \de a plant used as fodder for the pigs, |fi{Chenopodium album}
-\ge
+\ge pig_fodder
 \dn 灰条菜、灰灰菜：喂猪的牧草
 \gn 灰条菜/灰灰菜
 \gr 灰凋
 \df sorte de fourrage pour les cochons, |fi{Chenopodium album}. (Il y a en tout trois sortes de fourrage pour les cochons.)
-\gf
+\gf fourrage_pour_cochons
 \xv
 \xe
 \xn
@@ -79096,6 +79083,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx njɤ˧mv˥-mi˩
 \sf <nb="B"> 1908
@@ -79320,7 +79308,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -79344,12 +79332,12 @@
 \pdl classifier
 \pdv po˧
 \pdf
-\de branched horsetail, Equisetum ramosissimum Desf.
-\ge
+\de branched horsetail, |fi{Equisetum ramosissimum Desf.} This is a wild herb used in traditional medicine; its stem consists of small segments; when pulled/plucked, the stem breaks at one of these articulations
+\ge branched_horsetail
 \dn 节节草
-\gn
+\gn 节节草
 \gr 节节高
-\df prêle ramifiée, prêle rameuse: Equisetum ramosissimum Desf. Herbe sauvage, utilisée en pharmacopée traditionnelle; sa tige est divisée en petits segments, et elle se brise à l'une de ces articulations si on l'arrache
+\df prêle ramifiée, prêle rameuse, |fi{Equisetum ramosissimum Desf.} Herbe sauvage, utilisée en pharmacopée traditionnelle; sa tige est divisée en petits segments, et elle se brise à l'une de ces articulations si on l'arrache
 \gf prêle
 \xv
 \xe
@@ -79362,6 +79350,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx njɤ˧ʈʂɤ˥
 \sf <nb="B"> 
@@ -79371,7 +79360,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -79413,6 +79402,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx njɤ˩ʈʂv˧˥
 \sf <nb="B"> 
@@ -80631,7 +80621,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -80656,12 +80646,12 @@
 \pdv v˥
 \pdf casseroles
 \de tofu, bean curd 
-\ge
-\dn 豆腐 
-\gn
+\ge bean_curd
+\dn 豆腐
+\gn 豆腐
 \gr
 \df tofu
-\gf
+\gf tofu
 \xv
 \xe
 \xn
@@ -80673,6 +80663,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˩ho#˥
 \sf <nb="B"> 2173a
@@ -80682,7 +80673,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -80707,12 +80698,12 @@
 \pdv v˥
 \pdf
 \de long-boiled soft beancurd
-\ge
-\dn 豆花 
-\gn
+\ge soft_beancurd
+\dn 豆花
+\gn 豆花
 \gr
 \df tofu léger, longuement bouilli
-\gf
+\gf tofu_léger
 \xv
 \xe
 \xn
@@ -80724,6 +80715,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˧hṽ˩
 \sf <nb="B"> 2043
@@ -80733,7 +80725,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -80758,12 +80750,12 @@
 \pdv v˥
 \pdf
 \de bean; string bean, kidney bean
-\ge
+\ge bean
 \dn 豆子，四季豆，花腰豆
-\gn
+\gn 豆子
 \gr
 \df haricot: terme générique
-\gf
+\gf haricot
 \xv
 \xe
 \xn
@@ -80775,6 +80767,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˧hṽ˩-bi˩bi˩
 \sf <nb="B"> 2040
@@ -80784,7 +80777,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -80808,13 +80801,13 @@
 \pdl classifier
 \pdv kʰɤ˧˥
 \pdf panier
-\de
-\ge
-\dn
-\gn
+\de green bean, snap bean, string bean; one consumes the pod with the seed inside
+\ge green_bean
+\dn 四季豆、玉豆、帶莢豌豆、菜豆、刀豆、豆角、敏豆仔、敏豆
+\gn 四季豆
 \gr
-\df haricot vert (=on mange la cosse fraîche+le haricot qui est dedans)
-\gf
+\df haricot vert; on consomme la cosse fraîche et la graine qu'il contient
+\gf haricot vert
 \xv
 \xe
 \xn
@@ -80826,6 +80819,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˩ɭɯ˧
 \sf <nb="B"> 2038
@@ -80835,7 +80829,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -80860,12 +80854,12 @@
 \pdv wɤ˩
 \pdf une charge
 \de soy beans
-\ge
+\ge soy
 \dn 黄豆
-\gn
+\gn 黄豆
 \gr
 \df soja
-\gf
+\gf soja
 \xv
 \xe
 \xn
@@ -80877,6 +80871,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˩mi˩
 \sf <nb="B"> 151
@@ -81159,7 +81154,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -81183,12 +81178,12 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge bean_dregsyyyy
-\dn
-\gn
+\de soybean dregs
+\ge soybean_dregs
+\dn 豆粕
+\gn 豆粕
 \gr
-\df reste du soja, après qu'on en a tiré le lait de soja; sert de nourriture pour les porcs
+\df tourteau de soja: le reste du soja, après qu'on en a tiré le lait de soja; sert de nourriture pour les porcs
 \gf tourteau_soja
 \xv
 \xe
@@ -81201,6 +81196,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˧pɤ˩
 \sf <nb="B"> 
@@ -81210,7 +81206,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -81252,6 +81248,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˩tɕʰi#˥
 \sf <nb="B"> 2147
@@ -81261,7 +81258,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -81287,11 +81284,11 @@
 \pdf panier
 \de fine chaff of beans (used to feed cows)
 \ge bean_chaff(fine)
-\dn 豆类的粗糠秕，喂牛
-\gn
+\dn 豆类的细糠秕，来喂牛
+\gn 豆类的细糠秕
 \gr
-\df écorce de légumineuse (fine, pour nourrir les bovidés)
-\gf
+\df balle de légumineuse (fine, pour nourrir les bovidés)
+\gf balle_de_légumineuse
 \xv
 \xe
 \xn
@@ -81303,6 +81300,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˩tsɑ˧˥
 \sf <nb="B"> 
@@ -81312,7 +81310,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -81338,11 +81336,11 @@
 \pdf
 \de coarse chaff of beans
 \ge bean_chaff(coarse)
-\dn
-\gn
+\dn 粗的豆糠
+\gn 粗的豆糠
 \gr
-\df écorce grossière de légumineuses
-\gf
+\df balle grossière de légumineuses
+\gf balle_grossière_de_légumineuses
 \xv
 \xe
 \xn
@@ -81354,6 +81352,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx nv˧tv˥
 \sf <nb="B"> 
@@ -81415,7 +81414,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -81440,13 +81439,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn 鹰嘴豆
+\de chickpea, |fi{Cicer arietinum}, black-coloured; the dish fn:黑色凉粉 is made out of this pea
+\ge chickpea
+\dn 鹰嘴豆、桃尔豆、鸡豆、鸡心豆
 \gn 鹰嘴豆
 \gr 鸡豆
-\df toute petite légumineuse: pois de forme noire, dont on prépare la spécialité de Dali: 黑色凉粉
-\gf
+\df pois chiche, |fi{Cicer arietinum}, de couleur noire, dont on prépare la spécialité de Dali: fn:黑色凉粉
+\gf pois_chiche
 \xv
 \xe
 \xn
@@ -81458,6 +81457,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ŋwæ˧qʰv˧
 \sf <nb="B"> 2311
@@ -84028,10 +84028,10 @@
 \sf <nb="2011"> 3000
 \hm
 \ph
-\bw
+\bw Chinese fn:苹果
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -84058,12 +84058,12 @@
 \pdv ɭɯ˧
 \pdf
 \de apple
-\ge
+\ge 苹果::apple
 \dn 苹果
-\gn
+\gn 苹果
 \gr
 \df pomme
-\gf
+\gf 苹果::pomme
 \xv
 \xe
 \xn
@@ -84075,6 +84075,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx pi˧kʰv˧
 \sf <nb="B"> 
@@ -84605,7 +84606,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -84631,7 +84632,7 @@
 \pdf
 \de
 \ge
-\dn 火草? (idée de M23)était autrefois utilisé pour faire démarrer un feu (on utilisait ses feuilles)
+\dn 火草? (idée de M23)était autrefois utilisé pour faire démarrer un feu (on utilisait ses feuilles)xxxx
 \gn
 \gr
 \df végétal sp. à petites fleurs jaunes en boules,  troisième sur la photo; selon F4 et ts, est la même plante que l'edelweiss
@@ -84647,6 +84648,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx pi˩ti#˥
 \sf <nb="B"> 
@@ -86547,10 +86549,10 @@
 \sf <nb="2011"> 
 \hm
 \ph
-\bw
+\bw Chinese fn:包包菜
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -86575,12 +86577,12 @@
 \pdv ɭɯ˧
 \pdf
 \de cabbage
-\ge
-\dn 圆白菜（当地汉语借词：包包菜）
-\gn
-\gr
+\ge 包包菜::cabbage
+\dn 圆白菜
+\gn 圆白菜
+\gr 包包菜
 \df chou
-\gf
+\gf 包包菜::chou
 \xv
 \xe
 \xn
@@ -86592,6 +86594,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx pɤ˩pʰv˩
 \sf <nb="B"> 
@@ -91737,7 +91740,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -91791,7 +91794,7 @@
 \xn 玉米的三种状态：玉米棒子，玉米粒，玉米粉
 \xf le maïs sous trois formes: épis de maïs; maïs en grains; farine de maïs
 \xc
-\dt 18/Aug/2014
+\dt 17/Apr/2015
 
 \lx qʰɑ˧dze˧-hwæ˩-di˩
 \sf <nb="B"> 
@@ -93981,7 +93984,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -94011,10 +94014,10 @@
 \gn 果核
 \gr
 \df noyau (aussi pour: graines de tournesol; et pour: bobines de fil)
-\gf noyæu
+\gf noyau
 \xv dʑi˧ʁo˩-qo˩tv˩
-\xe
-\xn
+\xe peach kernel
+\xn 桃子果核
 \xf noyau de pêche
 \rf
 \xv
@@ -94023,6 +94026,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx qʰo˩tv˧˥
 \sf <nb="B"> 2148
@@ -94032,7 +94036,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -94058,12 +94062,12 @@
 \pdv ɭɯ˧
 \pdf
 \de tree stump
-\ge
+\ge tree_stump
 \dn 树墩、树桩
-\gn
+\gn 树墩
 \gr
 \df souche
-\gf
+\gf souche
 \xv
 \xe
 \xn
@@ -94075,6 +94079,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx qv˩˥
 \sf <nb="B"> 512
@@ -97923,7 +97928,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -97947,13 +97952,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf objets ronds
-\de grain
-\ge
+\de seed
+\ge seed
 \dn 种子
-\gn
+\gn 种子
 \gr
-\df graine, graines
-\gf
+\df graine
+\gf graine
 \xv
 \xe
 \xn
@@ -97965,6 +97970,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ɻæ˩˥
 \sf <nb="B"> 
@@ -98029,7 +98035,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -98054,15 +98060,15 @@
 \pdv
 \pdf
 \de sap
-\ge
+\ge sap
 \dn 树液
-\gn
+\gn 树液
 \gr
 \df sève, résine
-\gf
+\gf sève/résine
 \xv tʰo˩ʁæ˩˥
-\xe
-\xn
+\xe same meaning
+\xn 同上
 \xf même sens
 \rf
 \xv
@@ -98071,6 +98077,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁæ˧
 \sf <nb="B"> 1048
@@ -98935,7 +98942,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -98961,12 +98968,12 @@
 \pdv dzi˩
 \pdf
 \de poplar
-\ge
+\ge poplar
 \dn 杨树
-\gn
+\gn 杨树
 \gr
 \df peuplier
-\gf
+\gf peuplier
 \xv
 \xe
 \xn
@@ -98978,6 +98985,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁæ˩ɖʐv˧
 \sf <nb="B"> 1017c
@@ -100106,7 +100114,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -100131,18 +100139,16 @@
 \pdv kɤ˧˥
 \pdf
 \de tree trunk
-\ge
+\ge trunk
 \dn 树干
-\gn
+\gn 树干
 \gr
 \df tronc
-\gf
+\gf tronc
 \xv si˧dzi˩-ɻ̃˩mi˩
-\xe
-\xn
+\xe tree trunk
+\xn 树干
 \xf tronc d'arbre
-\xv si˧dzi˩-gv˩mi˩
-\xf littéralement "corps de l'arbre"; peut désigner le tronc
 \rf
 \xv
 \xf
@@ -100150,6 +100156,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁo˩
 \sf <nb="B"> 
@@ -100479,7 +100486,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -100504,12 +100511,12 @@
 \pdv kʰwɤ˥
 \pdf
 \de sprout, bud
-\ge
+\ge sprout
 \dn 树的萌芽、新发出来的叶子
-\gn
+\gn 萌芽
 \gr
-\df germe d'arbre
-\gf
+\df pousse d'arbre
+\gf pousse
 \xe
 \xn
 \xf
@@ -100520,6 +100527,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁo˧dɑ˧
 \sf <nb="B"> 703
@@ -100636,7 +100644,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -100661,18 +100669,19 @@
 \pdv ɭɯ˧
 \pdf
 \de walnut
-\ge
+\ge walnut
 \dn 核桃
-\gn
+\gn 核桃
 \gr
 \df noix
-\gf
-\xv si˧-ʁo˧bv˥ (+ɲi˩), si˧dzi˩-ʁo˩bv˩ (+tʰv˧)
+\gf noix
 \xv ʁo˧do˧ qʰwæ˧˥
-\xe
-\xn
+\xe to crack walnuts
+\xn 开核桃
 \xf casser des noix
 \xv ʁo˧do˧ ʐwæ˧
+\xe to weigh walnuts
+\xn 称核桃
 \xf peser des noix
 \rf
 \xv
@@ -100681,6 +100690,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁo˧do˧
 \sf <nb="B"> 542
@@ -101058,7 +101068,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101084,15 +101094,15 @@
 \pdv pɤ˩
 \pdf
 \de bridle; halter
-\ge
+\ge halter
 \dn 马笼头
-\gn
+\gn 马笼头
 \gr
 \df œillères
-\gf
-\xv ʐwæ˧-ʁo˧dʑi˥ (ʈʂʰɯ˧ ʐwæ˧-ʁo˧dʑi˥ ɲi˩)
-\xe
-\xn
+\gf œillères
+\xv ʐwæ˧-ʁo˧dʑɯ˥ (ʈʂʰɯ˧ | ʐwæ˧-ʁo˧dʑɯ˥ ɲi˩)
+\xe horse's halter
+\xn 马笼头
 \xf œillères de cheval
 \rf
 \xv
@@ -101101,6 +101111,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˧gv#˥
 \sf <nb="B"> 445
@@ -101319,7 +101330,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101343,13 +101354,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de
-\ge
-\dn
-\gn
+\de woven headdress for women who already have children; for young women who do not yet have children, this same piece of dressing is called fv:/ʁo˧ni˥/.
+\ge woven_headdress
+\dn 用来将长辫缠成盘头的黑色丝头饰（已经有孩子的女人戴的）。还没有孩子的青年女人，也戴这种头饰，但称作fv:/ʁo˧ni˥/）
+\gn 用来将长辫缠成盘头的黑色丝头饰
 \gr
-\df coiffe en fils tressés; chez une jeune femme (qui a atteint ses 13 ans, mais n'a pas encore d'enfants), ce même objet est désigné comme ʁo˧ni˥
-\gf
+\df coiffe en fils tressés; chez une jeune femme (qui a atteint ses 13 ans, mais n'a pas encore d'enfants), ce même objet est désigné comme fv:/ʁo˧ni˥/.
+\gf coiffe_en_fils_tressés
 \xv
 \xe
 \xn
@@ -101361,6 +101372,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˩kʰv˩
 \sf <nb="B"> 
@@ -101370,7 +101382,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101400,10 +101412,10 @@
 \gn 香木
 \gr 柏香
 \df arbre à épice, arbre à encens de petite taille, qui pousse en montagne, dans les espaces ombragés
-\gf
+\gf arbre_à_épice
 \xv ʁo˩kʰv˩-si˩
-\xe
-\xn
+\xe same meaning
+\xn 同上
 \xf même sens
 \rf
 \xv
@@ -101412,6 +101424,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁo˧ɬi˥
 \sf <nb="B"> 
@@ -101421,7 +101434,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101446,15 +101459,15 @@
 \pdv ɭɯ˧
 \pdf
 \de large needle with which animal hide can be sewn
-\ge
+\ge large_needle
 \dn 大粗针，用来缝琵琶肉
-\gn
+\gn 大粗针
 \gr
 \df grosse aiguille avec laquelle on coud le paquet de viande de cochon au salpêtre qui se conserve une décennie; contrairement à ce que dit M21, n'est pas utilisé pour coudre les peaux d'animaux (mouton, bœuf, yak…): pour cela, il faut utiliser un poinçon. 
-\gf
+\gf grosse_aiguille
 \xv ʁo˧ɬi˥, | bo˩ʈʂʰæ˧ ʐv˩-di˩ ɲi˩.
-\xe
-\xn
+\xe The large needle is used to sew pipa meat.
+\xn 大针，是用来缝琵琶肉的。
 \xf La grosse aiguille, ça sert à coudre le cochon-conservé-entier (viande séchée "pipa").
 \rf
 \xv
@@ -101463,6 +101476,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˧lv˧
 \sf <nb="B"> 
@@ -101632,7 +101646,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101656,13 +101670,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
+\de large needle
+\ge large_needle
 \dn 大针
-\gn
+\gn 大针
 \gr
-\df grande aiguille
-\gf
+\df grosse aiguille
+\gf grosse_aiguille
 \xv
 \xe
 \xn
@@ -101674,6 +101688,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˧ni˥
 \sf <nb="B"> 
@@ -101683,7 +101698,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101707,13 +101722,13 @@
 \pdl classifier
 \pdv bo˩
 \pdf
-\de
-\ge
-\dn
-\gn
+\de woven headdress for young women who do not yet have children; for women who already have children, this same piece of dressing is called fv:/ʁo˧kɤ˩/.
+\ge woven_headdress
+\dn 用来将长辫缠成盘头的黑色丝头饰（还没有孩子的青年女人戴的）。已经有孩子的女人，也戴这种头饰，但称作fv:/ʁo˧kɤ˩/）
+\gn 用来将长辫缠成盘头的黑色丝头饰
 \gr
-\df coiffe en fils tressés, que les femmes portent sur la tête à partir de leurs treize ans; chez une femme qui a déjà des enfants, ce même objet est désigné comme ʁo˧kɤ˩
-\gf
+\df coiffe en fils tressés des jeunes femmes qui n'ont pas encore d'enfant. Les femmes qui ont des enfants portent également cette pièce de costume, mais elle est alors désignée comme fv:/ʁo˧kɤ˩/.
+\gf coiffe_en_fils_tressés
 \xv
 \xe
 \xn
@@ -101725,6 +101740,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˧pʰɤ˩-ʁo˩dv˩lv˩
 \sf <nb="B"> 2098
@@ -101836,7 +101852,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -101861,12 +101877,12 @@
 \pdv ɭɯ˧
 \pdf
 \de lid
-\ge
+\ge lid
 \dn 锅的盖子
-\gn
+\gn 盖子
 \gr
 \df couvercle
-\gf
+\gf couvercle
 \xv
 \xe
 \xn
@@ -101878,6 +101894,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˧qʰwɤ˩
 \sf <nb="B"> 91
@@ -102514,7 +102531,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -102538,13 +102555,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
+\de small needle
+\ge small_needle
 \dn 小针
-\gn
+\gn 小针
 \gr
 \df petite aiguille
-\gf
+\gf petite_aiguille
 \xv
 \xe
 \xn
@@ -102556,6 +102573,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʁo˥-ʐv˩
 \sf <nb="B"> 
@@ -103097,7 +103115,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -103121,13 +103139,13 @@
 \pdl classifier
 \pdv po˧
 \pdf
-\de field penny-cress (Thlaspi arvense), a foetid plant with round flat pods
-\ge
+\de field penny-cress, |fi{Thlaspi arvense}: a foetid plant with round flat pods
+\ge field_penny_cress
 \dn 菥蓂 
-\gn
+\gn 菥蓂 
 \gr
-\df Thlaspi arvense; littéralement "le légume de la grue"
-\gf
+\df monnoyère, tablier des champs, |fi{Thlaspi arvense}; littéralement "le légume de la grue"
+\gf tablier_des_champs
 \xv
 \xe
 \xn
@@ -103139,6 +103157,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʁv˧mi˥$
 \sf <nb="B"> 
@@ -104597,7 +104616,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -104621,13 +104640,13 @@
 \pdl classifier
 \pdv qʰwæ˧˥
 \pdf filaments avant le filage
-\de hemp; flax (Cannabis sativa)
-\ge
-\dn 火麻，胡麻; 亚麻
-\gn
+\de hemp, |fi{Cannabis sativa}; flax, |fi{Linum usitatissimum}
+\ge hemp/flax
+\dn 火麻、胡麻，亚麻
+\gn 火麻/胡麻
 \gr
-\df Cannabis sativa, plante textile (ne se fume pas); lin (Linum: Linum usitatissimum), plante textile et oléagineuse
-\gf
+\df chanvre, |fi{Cannabis sativa}, plante textile; lin, |fi{Linum usitatissimum}, plante textile et oléagineuse
+\gf chanvre/lin
 \xv
 \xe
 \xn
@@ -104639,6 +104658,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂæ˧
 \sf <nb="B"> 921
@@ -104911,7 +104931,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -104936,15 +104956,15 @@
 \pdv nɑ˧
 \pdf
 \de distaff
-\ge
+\ge distaff
 \dn 卷线杆、拉线棒
-\gn
+\gn 卷线杆
 \gr
 \df quenouille: instrument en bois pour enrouler le fil, pour filer le chanvre
-\gf
+\gf quenouille
 \xv sɑ˧bo˧-di˧˥
-\xe
-\xn
+\xe same meaning
+\xn 同上
 \xf même sens
 \rf
 \xv
@@ -104953,6 +104973,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂæ˧ɖæ#˥
 \sf <nb="B"> 
@@ -105018,7 +105039,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105042,16 +105063,16 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de marijuana, cannabis
-\ge
+\de marijuana, cannabis, |fi{Cannabis indica}
+\ge marijuana
 \dn 大麻
-\gn
+\gn 大麻
 \gr
-\df Cannabis indica, chanvre indien, kanja, marijuana (plante euphorisante/psychotrope; se fume; est également comestible: les Na en tiraient de l'huile)
-\gf
+\df chanvre indien, kanja, marijuana, |fi{Cannabis indica} (plante euphorisante/psychotrope; est également comestible: les Na en tiraient de l'huile)
+\gf marijuana
 \xv sɑ˩mi˩-mæ˩ɻæ˥, | dzɯ˧-kv˩!
-\xe
-\xn
+\xe Cannabis oil is edible!
+\xn 大麻油，是可以吃的！
 \xf L'huile de lin, c'est comestible/ça se mange!
 \rf
 \xv
@@ -105060,6 +105081,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂæ˧pʰi˧
 \sf <nb="B"> 
@@ -105069,7 +105091,7 @@
 \bw Chinese fn:商品
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105111,7 +105133,7 @@
 \xv
 \xf
 \xc
-\dt 15/Aug/2014
+\dt 16/Apr/2015
 
 \lx sɑ˧pʰv˧˥
 \sf <nb="B"> 
@@ -105121,7 +105143,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105145,16 +105167,16 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
-\dn
-\gn
+\de thread of linen, |fi{Cannabis sativa}
+\ge linen_thread
+\dn 麻线
+\gn 麻线
 \gr
-\df fil de lin (Cannabis sativa)
-\gf
+\df fil de lin, |fi{Cannabis sativa}
+\gf fil_de_lin
 \xv sɑ˧pʰv˧-sɑ˧jɤ˥
-\xe
-\xn
+\xe linen thread
+\xn 麻线
 \xf fil de lin
 \rf
 \xv
@@ -105163,6 +105185,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂæ˩ɻ̃˩
 \sf <nb="B"> 
@@ -105331,7 +105354,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105382,7 +105405,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105424,7 +105447,7 @@
 \xv
 \xf
 \xc ton 3 (vérifié, n'est pas /tsʰi/)
-\dt 15/Aug/2014
+\dt 16/Apr/2015
 
 \lx ʂæ˧tsɯ˧
 \sf <nb="B"> 
@@ -105434,7 +105457,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -105458,13 +105481,13 @@
 \pdl classifier
 \pdv ɭɯ˧˥
 \pdf
-\de
-\ge
-\dn
-\gn
+\de clothing that children used to wear before they came of age: a loose robe (the same for girls and boys)
+\ge child_clothing
+\dn 孩子的衣服：成年前男女孩子们均穿的长袍
+\gn 孩子衣服
 \gr
-\df vêtement que portaient les enfants avant leurs treize ans: sorte de robe ample, ressemblant aux vêtements chinois
-\gf
+\df vêtement que portaient les enfants avant leurs treize ans: robe ample (la même pour les filles et les garçons)
+\gf vêtement_d_enfant
 \xv
 \xe
 \xn
@@ -105476,6 +105499,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx sɑ˧-zo˩bv˧li˩
 \sf <nb="B"> 2208
@@ -106263,7 +106287,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -106288,12 +106312,12 @@
 \pdv nɑ˧
 \pdf
 \de saw
-\ge
+\ge saw
 \dn 锯
-\gn
+\gn 锯
 \gr
-\df scie (mot naxi: emprunt au bai, d'après hjr)
-\gf
+\df scie
+\gf scie
 \xv
 \xe
 \xn
@@ -106305,6 +106329,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂe˧di˩
 \sf <nb="B"> 979
@@ -106349,57 +106374,6 @@
 \xe
 \xn
 \xf (il/elle) a grossi!
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-
-\lx ʂe˧do˧˥
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm
-\ph
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> plante
-\sd <lang="eng"> plant
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> MH#
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de
-\ge
-\dn
-\gn
-\gr
-\df récolte qui reste en herbe/qui ne mûrit pas
-\gf
-\xv ŋwɤ˩ɬi˩-mi˩˥, ʂe˧ mɤ˧-mv˥, ʂe˧ do˧˥! tsʰe˩ŋwɤ˩ kʰv˥, zo˧ mɤ˧-ti˩, zo˩do˩˥!
-\xe
-\xn
-\xf Au cinquième mois, une céréale qui ne mûrit pas/qui ne donne pas de grain, c'est une récolte stérile/qui reste en herbe! A quinze ans, le garçon qui ne fréquente pas les filles, c'est qu'il est pas mûr/c'est qu'il a un problème!
 \rf
 \xv
 \xf
@@ -106630,7 +106604,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -106655,12 +106629,12 @@
 \pdv nɑ˧
 \pdf
 \de tripod
-\ge
+\ge tripod
 \dn 三脚架
-\gn
+\gn 三脚架
 \gr
 \df trépied de fer (dans le foyer, sur lequel on pose une casserole, une poële, une bouilloire…)
-\gf
+\gf trépied_du_foyer
 \xv
 \xe
 \xn
@@ -106672,6 +106646,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂe˩lɑ˩
 \sf <nb="B"> 353
@@ -106891,7 +106866,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -106915,13 +106890,13 @@
 \pdl
 \pdv
 \pdf
-\de pine mushroom
+\de pine mushroom, matsutake, |fi{Tricholoma matsutake}
 \ge pine_mushroom
 \dn 松茸
 \gn 松茸
 \gr
-\df champignon comestible, rare et très apprécié
-\gf yyyy
+\df champignon des pins, matsutake, |fi{Tricholoma matsutake}: un champignon comestible, rare et très apprécié
+\gf champignon_des_pins
 \xv
 \xe
 \xn
@@ -106933,6 +106908,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂe˩mɤ˩
 \sf <nb="B"> 2212
@@ -107150,7 +107126,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -107175,12 +107151,12 @@
 \pdv nɑ˧
 \pdf
 \de fire tongs
-\ge
+\ge fire_tongs
 \dn 火钳
-\gn
+\gn 火钳
 \gr
-\df pinces
-\gf
+\df pince à braises
+\gf pince_à_braises
 \xv
 \xe
 \xn
@@ -107192,6 +107168,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx se˧pʰɤ˧
 \sf <nb="B"> 
@@ -107358,7 +107335,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -107383,15 +107360,15 @@
 \pdv ɭɯ˧
 \pdf
 \de iron nail; nail
-\ge
+\ge nail
 \dn 铁钉，钉子
-\gn
+\gn 钉子
 \gr
 \df clou en fer
-\gf
+\gf clou
 \xv ʂe˧qʰv˧ lɑ˧˥
-\xe
-\xn
+\xe to hammer in a nail, to hit a nail
+\xn 钉钉子
 \xf enfoncer un clou, planter un clou
 \rf
 \xv
@@ -107400,6 +107377,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂe˧sɑ˩
 \sf <nb="B"> 1939
@@ -108099,7 +108077,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108124,12 +108102,12 @@
 \pdv v˧
 \pdf
 \de evil spirit
-\ge
+\ge evil_spirit
 \dn 鬼
-\gn
+\gn 鬼
 \gr
 \df démon (forme obtenue par élicitation; nettement moins courante que la forme féminine)
-\gf
+\gf démon
 \xv
 \xe
 \xn
@@ -108141,6 +108119,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧bv˧-mi#˥
 \sf <nb="B"> 665
@@ -108150,7 +108129,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108176,12 +108155,12 @@
 \pdv v˧
 \pdf
 \de evil spirit (female)
-\ge
+\ge female_evil_spirit
 \dn 妖精
-\gn
+\gn 妖精
 \gr
 \df démone
-\gf
+\gf démone
 \xv
 \xe
 \xn
@@ -108193,6 +108172,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧bv˧-zo#˥
 \sf <nb="B"> 
@@ -108202,7 +108182,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108226,13 +108206,13 @@
 \pdl classifier
 \pdv v˧
 \pdf
-\de evil spirit
-\ge
+\de evil spirit (masculine)
+\ge masculine_evil_spirit
 \dn 鬼
-\gn
+\gn 男鬼
 \gr
-\df démon (forme élicitée, sur la base de la forme féminine; est un mot qui existe, mais peu courant)
-\gf
+\df démon masculin (forme élicitée, sur la base de la forme féminine; est un mot qui existe, mais peu courant)
+\gf démon_masculin
 \xv
 \xe
 \xn
@@ -108244,6 +108224,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧ɕi˧˥
 \sf <nb="B"> 65
@@ -108304,7 +108285,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108329,12 +108310,12 @@
 \pdv dzi˩, ʝi˧
 \pdf
 \de tree
-\ge
+\ge tree
 \dn 树
-\gn
+\gn 树
 \gr
 \df arbre
-\gf
+\gf arbre
 \xv
 \xe
 \xn
@@ -108346,57 +108327,7 @@
 \xv
 \xf
 \xc
-
-\lx si˧dzi˩
-\sf <nb="B"> 2122
-\sf <nb="2011"> 3259
-\hm
-\ph shùchà
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> plante
-\sd <lang="eng"> plant
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> 
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de tree fork
-\ge
-\dn 树杈
-\gn
-\gr
-\df embranchement, fourche d'un arbre
-\gf
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
+\dt 17/Apr/2015
 
 \lx si˧dzi˩-mv˩tsɯ˩
 \sf <nb="B"> 2119b
@@ -108406,7 +108337,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108430,13 +108361,13 @@
 \pdl
 \pdv
 \pdf
-\de small root
-\ge
-\dn
-\gn
+\de radicel, rootlet, small root
+\ge rootlet
+\dn 胚根
+\gn 胚根
 \gr
-\df petites racines
-\gf
+\df radicelle, petites racine
+\gf radicelle
 \xv
 \xe
 \xn
@@ -108448,6 +108379,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧dʑɯ˥
 \sf <nb="B"> 499
@@ -108457,7 +108389,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108466,7 +108398,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="sem"> on utilise aussi, pour allumer le feu, du petit bois gorgé de résine; cf mv˩tsʰo˩˧, dans l'entrée "résine"
+\nt <type="sem"> on utilise aussi, pour allumer le feu, du petit bois gorgé de résine; cf fv:/mv˩tsʰo˩/
 \np
 \np <type="tone"> H#
 \nd
@@ -108481,13 +108413,13 @@
 \pdl classifier
 \pdv kʰwɤ˥
 \pdf
-\de firewood
-\ge
-\dn 柴
-\gn
+\de kindling
+\ge kindling
+\dn 火煤、火捻、火种、劈柴、引柴
+\gn 火煤
 \gr
-\df fagot, petit bois à brûler: à Yongning, ce qu'on utilise: des morceaux de pin gorgés de résine, utilisés spécialement à cet effet
-\gf
+\df petit bois, pour faire démarrer le feu; à Yongning, ce qu'on utilise: des morceaux de pin gorgés de résine, utilisés spécialement à cet effet
+\gf petit_bois
 \xv
 \xe
 \xn
@@ -108499,6 +108431,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx si˧gɯ˧
 \sf <nb="B"> 1915
@@ -108770,7 +108703,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108795,12 +108728,12 @@
 \pdv kɤ˧˥
 \pdf
 \de branch; rod, stick
-\ge
-\dn 小树枝，棍子
-\gn
+\ge branch
+\dn 树枝、小树枝，棍子
+\gn 树枝
 \gr
-\df petite branche; bâton, gourdin, canne pour marcher
-\gf
+\df branche; petite branche; bâton, gourdin, canne pour marcher
+\gf branche
 \xv
 \xe
 \xn
@@ -108812,6 +108745,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧kʰɯ˧ɭɯ˧bv˥
 \sf <nb="B"> 
@@ -108821,7 +108755,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108845,13 +108779,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de white Chinese herbaceous peony
-\ge
+\de white Chinese herbaceous peony, |fi{Paeonia lactiflora}
+\ge Chinese_peony
 \dn 白芍药
-\gn
+\gn 白芍药
 \gr
-\df pivoine sp.
-\gf
+\df pivoine blanche de Chine, |fi{Paeonia lactiflora}
+\gf pivoine_de_Chine
 \xv
 \xe
 \xn
@@ -108863,6 +108797,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧kʰɯ#˥
 \sf <nb="B"> 
@@ -108872,7 +108807,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -108896,12 +108831,13 @@
 \pdl
 \pdv
 \pdf
-\de white Chinese herbaceous peony
-\ge
+\de white Chinese herbaceous peony, |fi{Paeonia lactiflora}
+\ge Chinese_peony
 \dn 白芍药
-\gn
+\gn 白芍药
 \gr
-\df pivoine sp.
+\df pivoine blanche de Chine, |fi{Paeonia lactiflora}
+\gf pivoine_de_Chine
 \gf
 \xv
 \xe
@@ -108914,6 +108850,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧kwɤ˩
 \sf <nb="B"> 
@@ -109025,7 +108962,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109036,7 +108973,7 @@
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
 \np
-\np <type="tone"> 
+\np <type="tone"> L
 \nd
 \so <print="n"> F4
 \va <speaker="F4">
@@ -109067,6 +109004,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧qʰwæ˩
 \sf <nb="B"> 1447
@@ -109129,7 +109067,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109155,12 +109093,12 @@
 \pdv ɭɯ˧
 \pdf
 \de wooden plate
-\ge
+\ge wooden_plate
 \dn 木盘子
-\gn
+\gn 木盘子
 \gr
 \df assiette en bois
-\gf
+\gf assiette_en_bois
 \xv
 \xe
 \xn
@@ -109172,6 +109110,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx si˧ʁo˧si˧ɭɯ#˥
 \sf <nb="B"> 1971
@@ -109181,7 +109120,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109209,15 +109148,15 @@
 \pdv ɭɯ˧
 \pdf
 \de fruit
-\ge
+\ge fruit
 \dn 水果
-\gn
+\gn 水果
 \gr
 \df fruit
-\gf
+\gf fruit
 \xv si˧ʁo˧si˧ɭɯ˧ ɲi˥
-\xe
-\xn
+\xe °cop
+\xn 是水果。
 \xf °cop
 \rf
 \xv
@@ -109226,6 +109165,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧ʁo#˥
 \sf <nb="B"> 
@@ -109235,7 +109175,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109259,13 +109199,13 @@
 \pdl classifier
 \pdv dzi˩
 \pdf
-\de
-\ge
-\dn
-\gn
+\de fruit tree
+\ge fruit_tree
+\dn 果树
+\gn 果树
 \gr
 \df arbre fruitier
-\gf
+\gf arbre_fruitier
 \xv
 \xe
 \xn
@@ -109277,6 +109217,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧-sæ˥qʰv˩
 \sf <nb="B"> 2058
@@ -109286,7 +109227,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109314,9 +109255,9 @@
 \de birch, |fi{Betula szechuanica (Betula Pendula var. szechuanica)}
 \ge birch
 \dn 四川桦树，白桦树
-\gn
+\gn 白桦树
 \gr
-\df bouleau, Betula szechuanica (Betula Pendula var. szechuanica)
+\df bouleau, |fi{Betula szechuanica (Betula Pendula var. szechuanica)}
 \gf bouleau
 \xv
 \xe
@@ -109329,6 +109270,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˩tsʰɤ˩
 \sf <nb="B"> 
@@ -109390,7 +109332,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn 1
 \cf
 \cf <type="hm"> 
@@ -109417,15 +109359,15 @@
 \pdv tsʰɤ˧˥
 \pdf
 \de leaf
-\ge
+\ge leaf
 \dn 叶子
-\gn
+\gn 叶子
 \gr
 \df feuille
-\gf
+\gf feuille
 \xv si˧dzi˩-si˩tsʰɤ˩
-\xe
-\xn
+\xe tree leaf
+\xn 树叶子
 \xf feuilles d'arbre
 \rf
 \xv
@@ -109434,6 +109376,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx si˧ʈv˥
 \sf <nb="B"> 1959
@@ -109503,7 +109446,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109527,17 +109470,17 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn 祖先的象征家
-\gn
+\de a piece of furniture of the main room, which constitutes the symbolic dwelling of ancestors, and serves as an altar; on the New Year, some candles are lighted on it
+\ge altar_of_ancestors_in_main_room
+\dn 供桌：主屋里面的一个家具，是祖先的象征家。
+\gn 主屋里的供桌
 \gr
-\df meuble-autel des ancêtres, dans la pièce principale; lieu où reviennent les ancêtres; on y met des lumières au Nouvel An; 
-\gf
-\xv ʑi˧dv˧-nv˩mi˩, si˧tʰv˧!
-\xe
-\xn
-\xf le cœur de la maison, c'est /si˧tʰv#˥/!
+\df meuble-autel des ancêtres, dans la pièce principale, qui constitue le lieu symbolique où résident les ancêtres; on y met des bougies au Nouvel An
+\gf meuble_autel_des_ancêtres
+\xv ʑi˧dv˧-nv˩mi˩, | si˧tʰv˧!
+\xe The heart of the house is the altar to the ancestors!
+\xn 家的心，就是祖先的供桌！
+\xf le cœur de la maison, c'est le meuble-autel des ancêtres!
 \rf
 \xv
 \xf
@@ -109545,6 +109488,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx so˩
 \sf <nb="B"> 813
@@ -109711,7 +109655,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -109735,24 +109679,27 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn
-\gn
+\de offering to the gods, given to them in the morning; it comprises tea, butter, flour, and honey; it is burnt over a fire of pine needles
+\ge morning_offering_to_the_gods
+\dn 早上献给神的食物（含茶、酥油、面、蜂蜜），烧在松针火上
+\gn 早上献给神的食物
 \gr
-\df offrande aux esprits: repas qu'on leur offre le matin; on y met du thé, du beurre, de la farine, et du miel (et éventuellement des fleurs: so˧dze˧-bæ˩bæ˩), qu'on fait brûler sur des épines de pain
-\gf
+\df offrande aux esprits: repas qu'on leur offre le matin; on y met du thé, du beurre, de la farine, et du miel (et éventuellement des fleurs: fv:/so˧dze˧-bæ˩bæ˩/); on le fait brûler sur un feu d'épines de pin
+\gf offrande_du_matin_aux_esprits
 \xv so˧ dze˧ tʰi˧-qæ˩
-\xe
-\xn
+\xe to burn honey as an offering
+\xn 烧蜂蜜献给神
 \xf faire brûler du miel en offrande
 \rf
 \xv
 \xf
 \rf M23
 \xv so˧ qæ˩
+\xe to burn an offering
+\xn 烧献给神（的食物，……）
 \xf brûler une offrande
 \xc traditionnellement, c'est du pin gorgé de résine.
+\dt 17/Apr/2015
 
 \lx sɤ˩˥
 \sf <nb="B"> 204
@@ -110734,7 +110681,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -110760,12 +110707,12 @@
 \pdv ɭɯ˧
 \pdf
 \de pear
-\ge
+\ge pear
 \dn 梨子
-\gn
+\gn 梨子
 \gr
 \df poire
-\gf
+\gf poire
 \xv
 \xe
 \xn
@@ -110777,6 +110724,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx so˧ɲi˥
 \sf <nb="B"> 734
@@ -111107,7 +111055,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -111131,16 +111079,16 @@
 \pdl classifier
 \pdv dzi˩
 \pdf
-\de a type of pine
-\ge
-\dn 阔松
-\gn
+\de a type of pine xxxx
+\ge pine_sp
+\dn 阔松（？？）
+\gn 阔松
 \gr
 \df sorte de pin
-\gf
-\xv sɤ˧tʰo˧dzi˧˥
-\xe
-\xn
+\gf pin_sp
+\xv sɤ˧tʰo˧-dzi˧˥
+\xe same meaning
+\xn 同上
 \xf même sens (désigne une espèce de pin)
 \rf
 \xv
@@ -111149,6 +111097,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx so˧tsʰi˧
 \sf <nb="B"> 831
@@ -112062,7 +112011,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -112087,12 +112036,12 @@
 \pdv ɭɯ˧
 \pdf
 \de box, case
-\ge
+\ge box
 \dn 箱子，柜子
-\gn
+\gn 箱子
 \gr
 \df caisse, coffre; par extension: armoire
-\gf
+\gf caisse
 \xv
 \xe
 \xn
@@ -112104,6 +112053,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂɯ˩ʝi#˥
 \sf <nb="B"> 793
@@ -112165,7 +112115,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -112190,12 +112140,12 @@
 \pdv
 \pdf
 \de ritual performed for the death of a female relative who left her maternal home to marry
-\ge
+\ge name_of_ritual
 \dn 斯克：嫁到外边的女人去世时进行的仪式
-\gn
+\gn 斯克仪式
 \gr
 \df rituel lors du décès d'une femme qui a quitté la maison de sa mère pour se marier
-\gf
+\gf nom_d_un_rituel
 \xv
 \xe
 \xn
@@ -112207,6 +112157,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂɯ˩kwæ˩ɻæ˥
 \sf <nb="B"> 
@@ -112319,7 +112270,7 @@
 \bw Chinese fn:蛇麻
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -112369,6 +112320,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂɯ˧ɲi˥-ɖɯ˧ɲi˥
 \sf <nb="B"> 732
@@ -112696,7 +112648,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -112721,12 +112673,12 @@
 \pdv ɭɯ˧
 \pdf
 \de whetting-stone
-\ge
+\ge whetting_stone
 \dn 磨刀石
-\gn
+\gn 磨刀石
 \gr
 \df pierre à aiguiser, "fusil"
-\gf
+\gf pierre_à_aiguiser
 \xv
 \xe
 \xn
@@ -112738,6 +112690,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx sɯ˧ɻ˧
 \sf <nb="B"> 2226a
@@ -112800,7 +112753,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -112825,12 +112778,12 @@
 \pdv pɤ˩
 \pdf
 \de table
-\ge
+\ge table
 \dn 桌子
-\gn
+\gn 桌子
 \gr
-\df table (sens à Yongning: était une table basse, carrée)
-\gf
+\df table (à Yongning, vers le milieu du XXe siècle, elles étaient basses et carrées)
+\gf table
 \xv
 \xe
 \xn
@@ -112842,6 +112795,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx sɯ˧ɻ̃˧mi#˥
 \sf <nb="B"> 217
@@ -113009,7 +112963,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113017,7 +112971,7 @@
 \sd <lang="eng"> object
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> En 2006, noté sɯ˧ tʰi˩˥; en 2007, recatégorisé la forme de citation en: ˩ ˩˥. (confirmé: n'est pas /si/)
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> confirmé: est du type "savoir", /sɯ/, non /si/
 \nt <type="sem"> 
 \np
 \np <type="tone"> L
@@ -113034,23 +112988,19 @@
 \pdv nɑ˧
 \pdf
 \de knife
-\ge
+\ge knife
 \dn 刀
-\gn
+\gn 刀
 \gr
 \df couteau
-\gf
+\gf couteau
 \xv
 \xe
 \xn
 \xf
 \rf
 \xv
-\xf
-\rf M23
-\xv
-\xf
-\xc (confirmé: est du type "savoir", /sɯ/, non /si/)
+\dt 16/Apr/2015
 
 \lx sɯ˩tʰi˩-kʰɯ˥ʑi˩
 \sf <nb="B"> 608
@@ -113060,7 +113010,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113086,12 +113036,12 @@
 \pdv ɭɯ˧
 \pdf
 \de knife sheath
-\ge
+\ge knife_sheath
 \dn 刀鞘
-\gn
+\gn 刀鞘
 \gr
-\df fourreau
-\gf
+\df fourreau du couteau, gaine du couteau
+\gf fourreau_du_couteau
 \xv
 \xe
 \xn
@@ -113103,6 +113053,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂɯ˧tɤ˧ɻ#˥
 \sf <nb="B"> 
@@ -113217,7 +113168,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113249,8 +113200,8 @@
 \df camphre (arbre)
 \gf camphre
 \xv sɯ˧tsɯ˩-dzi˩
-\xe
-\xn
+\xe camphor tree
+\xn 樟树
 \xf arbre à camphre
 \rf
 \xv
@@ -113259,6 +113210,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx sɯ˧tsɯ˧
 \sf <nb="B"> 
@@ -113320,7 +113272,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113363,6 +113315,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx sɯ˧zɯ#˥
 \sf <nb="B"> 274d
@@ -113661,7 +113614,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113687,12 +113640,12 @@
 \pdv nɑ˧
 \pdf
 \de sickle
-\ge
+\ge sickle
 \dn 镰刀
-\gn
+\gn 镰刀
 \gr
 \df faucille
-\gf
+\gf faucille
 \xv
 \xe
 \xn
@@ -113704,6 +113657,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂv˧kʰɯ˩
 \sf <nb="B"> 
@@ -113817,7 +113771,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113842,15 +113796,15 @@
 \pdv ɭɯ˧
 \pdf
 \de tree bur; burl
-\ge
+\ge burl
 \dn 树瘤
-\gn
+\gn 树瘤
 \gr
 \df nœud (sur un arbre)
-\gf
+\gf nœud_d_arbre
 \xv ʂv˩njɤ˥ ɲi˩
-\xe
-\xn
+\xe °cop
+\xn 是树瘤。
 \xf °cop
 \rf
 \xv
@@ -113859,6 +113813,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʂv˧ʂv˧˥
 \sf <nb="B"> 634
@@ -113868,7 +113823,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -113894,23 +113849,26 @@
 \pdv pʰæ˧˥
 \pdf objets plats
 \de paper
-\ge
+\ge paper
 \dn 纸
-\gn
+\gn 纸
 \gr
 \df papier
-\gf
+\gf papier
 \xv ʂv˧ʂv˧˥ | ɖɯ˧-pʰæ˧˥
-\xe
-\xn
+\xe a sheet of paper
+\xn 一张纸
 \xf une feuille de papier
 \rf F5
 \xv ʂv˧ʂv˧ ɖɯ˧ pʰæ˧˥
+\xe a sheet of paper
+\xn 一张纸
 \xf une feuille de papier
 \rf
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂwæ˩˥
 \sf <nb="B"> 589
@@ -114313,7 +114271,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -114337,13 +114295,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
+\de kitchen cabinet, kitchen dresser
+\ge kitchen_cabinet
 \dn 柜子
-\gn
+\gn 柜子
 \gr
 \df buffet (où est rangée la vaisselle)
-\gf
+\gf buffet
 \xv
 \xe
 \xn
@@ -114355,6 +114313,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂwæ˧gv#˥
 \sf <nb="B"> 
@@ -114515,10 +114474,10 @@
 \sf <nb="2011"> 678
 \hm
 \ph shua1zi
-\bw
+\bw Chinese fn:刷子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -114544,12 +114503,12 @@
 \pdv nɑ˧
 \pdf
 \de brush
-\ge
+\ge 刷子::brush
 \dn 刷子
-\gn
+\gn 刷子
 \gr
-\df brosse (emprunt)
-\gf
+\df brosse
+\gf 刷子::brosse
 \xv
 \xe
 \xn
@@ -114561,6 +114520,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʂwɤ˧ljɤ˧-kwɤ˩
 \sf <nb="B"> 
@@ -114570,7 +114530,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -114594,13 +114554,13 @@
 \pdl classifier
 \pdv kwɤ˩
 \pdf
-\de
-\ge
-\dn
-\gn
+\de small bell that was attached to horses' breastplate
+\ge small_chest_bell_for_horses
+\dn 挂在马的胸前面的铃铛
+\gn 马的铃铛
 \gr
 \df clochette qui se fixait sur le poitrail des chevaux
-\gf
+\gf clochette_de_poitrail
 \xv
 \xe
 \xn
@@ -114612,6 +114572,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɑ˧˥
 \sf <nb="B"> 1552
@@ -115261,7 +115222,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -115285,13 +115246,13 @@
 \pdl classifier
 \pdv dzi˩
 \pdf
-\de small prayer flags
-\ge
-\dn 旗子
-\gn
+\de small prayer flag
+\ge small_prayer_flag
+\dn 小经幡
+\gn 小经幡
 \gr
-\df fanions tibétains / drapeaux de prière
-\gf
+\df petit drapeau de prière
+\gf petit_drapeau_de_prière
 \xv
 \xe
 \xn
@@ -115303,6 +115264,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɑ˩dʑɤ#˥
 \sf <nb="B"> 
@@ -116115,7 +116077,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -116141,12 +116103,12 @@
 \pdv nɑ˧
 \pdf
 \de crossbow
-\ge
+\ge crossbow
 \dn 弩弓
-\gn
+\gn 弩弓
 \gr
-\df arbalète (Wanderwort en Asie; /a/ ancien en chinois; ss doute emprunt relativement récent, ne vient pas du chinois *na?)
-\gf
+\df arbalète
+\gf arbalète
 \xv
 \xe
 \xn
@@ -116158,6 +116120,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tʰɑ˧-ni˥-ni˩-gv˩
 \sf <nb="B"> 
@@ -116286,7 +116249,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -116310,13 +116273,13 @@
 \pdl classifier
 \pdv dzi˩
 \pdf
-\de Chinese mugwort, artemisia
-\ge
-\dn 艾，艾蒿
-\gn
+\de Chinese mugwort, |fi{Artemisia argyi}
+\ge Chinese_mugwort
+\dn 艾、艾蒿
+\gn 艾蒿
 \gr
-\df armoise
-\gf
+\df armoise de Chine, |fi{Artemisia argyi}
+\gf armoise_de_Chine
 \xv
 \xe
 \xn
@@ -116328,6 +116291,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tæ˧pv˩
 \sf <nb="B"> 1656
@@ -116709,7 +116673,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -116718,7 +116682,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> (notation 09; auparavant: noté /ʈʰæ˥ɻæ˩/, faisant une erreur car l'initiale est non rétroflexe)
 \nt <type="hist" print="n"> (noter: 2e syll. différente de celle de F4, /ɻ/ et non /ɻæ/)
-\nt <type="sem"> 
+\nt <type="sem"> Wanderwort, en lolo et en rG, emprunt récent; au nosu? avaient des livres avant les livres na
 \np
 \np <type="tone"> L#
 \nd
@@ -116735,12 +116699,12 @@
 \pdv pɤ˩
 \pdf
 \de book
-\ge
+\ge book
 \dn 书
-\gn
+\gn 书
 \gr
-\df livre: Wanderwort, en lolo et en rG, emprunt récent; au nosu? avaient des livres avant les livres na
-\gf
+\df livre
+\gf livre
 \xv
 \xe
 \xn
@@ -116752,6 +116716,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɑ˩so˩kʰo˥
 \sf <nb="B"> 
@@ -117125,7 +117090,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -117150,18 +117115,50 @@
 \pdv ɭɯ˧
 \pdf
 \de class, group, set (of monks)
-\ge
+\ge group/class
 \dn 班、小组
-\gn
+\gn 班/小组
 \gr
 \df classe, groupe, ensemble (de prêtres)
-\gf
+\gf classe/groupe
 \xv ʈæ˩tsʰo˧ | ɖɯ˧-ɭɯ˧
-\xe
-\xn
-\xf une classe
+\xe a group (of priests)
+\xn 一个小组、一个班（和尚）
+\xf une classe, un groupe (de prêtres)
+\xc
+\dt 17/Apr/2015
+\se ʈæ˩tsʰo˩
+\ps clf
+\sd <lang="fra"> classificateur
+\sd <lang="eng"> classifier
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np <type="tone"> L
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5">
+\vf <type="tone"> 
+\va <speaker="M18">
+\va <speaker="M21"> ID.
+\va <speaker="M23">
+\pdl
+\pdv
+\pdf
+\de self-classifier for classes, groups, sets (of monks)
+\ge °clf.groups
+\dn 量词一个小组、一个班（和尚）
+\gn °量词.班（和尚）
+\gr
+\df auto-classificateur des classes/groupes (de prêtres)
+\gf °clf.classes
 \xv ɖɯ˧-ʈæ˩tsʰo˩
-\xf même sens, mais employé comme classificateur
+\xe a group (of monks)
+\xn 一班（和尚）
+\xf un groupe (de prêtres)
 \rf
 \xv
 \xf
@@ -117178,7 +117175,7 @@
 \bw Chinese fn:坛子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -117202,12 +117199,12 @@
 \pdl
 \pdv
 \pdf
-\de jar (borrowing)
+\de jar
 \ge 坛子::jar
 \dn 坛子
 \gn 坛子
 \gr
-\df jarre (emprunt)
+\df jarre
 \gf 坛子::jarre
 \xv
 \xe
@@ -117220,6 +117217,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈæ˩ʈv#˥
 \sf <nb="B"> 
@@ -117714,10 +117712,10 @@
 \sf <nb="2011"> 
 \hm
 \ph
-\bw
+\bw Chinese fn:胶 +?
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -117741,16 +117739,16 @@
 \pdl classifier
 \pdv dzi˧
 \pdf
-\de
-\ge
-\dn 胶（第二个音节：不清楚）
-\gn
+\de rubber
+\ge rubber
+\dn 橡胶（汉语借词。第二个音节：未确定。）
+\gn 橡胶
 \gr
-\df caoutchouc (emprunt chinois)
-\gf
+\df caoutchouc
+\gf caoutchouc
 \xv tɕæ˧hæ˩-dzɑ˩qʰwɤ˩
-\xe
-\xn
+\xe rubber shoe, shoe with a rubber sole, sports shoe
+\xn 橡胶鞋、橡胶底鞋
 \xf chaussures à semelle en gomme/en caoutchouc; baskets
 \rf
 \xv
@@ -117759,6 +117757,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕæ˧pʰv˩
 \sf <nb="B"> 954b
@@ -117821,7 +117820,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -117846,15 +117845,15 @@
 \pdv pɤ˩
 \pdf
 \de saddle
-\ge
+\ge saddle
 \dn 马鞍
-\gn
+\gn 马鞍
 \gr
 \df selle
-\gf
-\xv ʐwæ˧tɕi˥
-\xe
-\xn
+\gf selle
+\xv ʐwæ˧-tɕi˥
+\xe horse saddle
+\xn 马鞍
 \xf selle de cheval
 \rf
 \xv
@@ -117863,6 +117862,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕi˧
 \sf <nb="B"> 1034
@@ -117975,7 +117975,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118000,15 +118000,15 @@
 \pdv ɭɯ˧
 \pdf
 \de snare, trap, trick
-\ge
+\ge trap
 \dn 圈套
-\gn
+\gn 圈套
 \gr
 \df piège
-\gf
-\xv tɕi˧kʰɯ˧˥
-\xe
-\xn
+\gf piège
+\xv tɕi˧ kʰɯ˧˥
+\xe to set a trap
+\xn 放一个圈套
 \xf poser un piège
 \rf
 \xv
@@ -118017,6 +118017,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕi˧˥
 \sf <nb="B"> 
@@ -118135,7 +118136,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118160,12 +118161,12 @@
 \pdv kɤ˧˥
 \pdf
 \de thorn
-\ge
+\ge thorn
 \dn 刺
-\gn
+\gn 刺
 \gr
 \df épine
-\gf
+\gf épine
 \xv
 \xe
 \xn
@@ -118177,6 +118178,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɕi˩a
 \sf <nb="B"> 916
@@ -118345,7 +118347,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118370,12 +118372,12 @@
 \pdv ɭɯ˧
 \pdf
 \de tangerine
-\ge
-\dn 橘子（当地汉语：黄果）
-\gn
-\gr
+\ge tangerine
+\dn 橘子
+\gn 橘子
+\gr 黄果
 \df mandarine
-\gf
+\gf mandarine
 \xv
 \xe
 \xn
@@ -118387,6 +118389,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɕʰi˧ɖv#˥
 \sf <nb="B"> 
@@ -118448,7 +118451,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118473,17 +118476,19 @@
 \pdv ɭɯ˧
 \pdf
 \de melon, gourd
-\ge
+\ge melon/gourd
 \dn 瓜
-\gn
+\gn 瓜
 \gr
 \df courge (inclut les courgettes)
-\gf
+\gf courge
 \xv tɕi˧kwɤ˧ bv˧-ɻ˧ (+ɲi˩)
-\xe
-\xn
+\xe small melon
+\xn 小瓜
 \xf petite courge
 \xv tɕi˧kwɤ˧ kwɤ˧mo˩
+\xe large melon
+\xn 大瓜
 \xf grosse courge
 \rf
 \xv
@@ -118492,6 +118497,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɕʰi˧nɑ˥
 \sf <nb="B"> 
@@ -118501,7 +118507,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118525,13 +118531,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn 青刺果（永宁的一种植物，见图片）
+\de prinsepia, |fi{Prinsepia utilis Royle}
+\ge prinsepia
+\dn 青刺果、阿娜斯果
 \gn 青刺果
 \gr
-\df végétal qui sert pour les haies: grosses épines, petites fleurs jaunes; tige verte, vernissée. On tire de ses graines une huile de grand prix.
-\gf yyyy traduire la glose du chinois
+\df prinsepia, |fi{Prinsepia utilis Royle}; végétal qui sert pour les haies, à grosses épines, petites fleurs jaunes, et tige verte vernissée. On tire de ses graines une huile de grand prix.
+\gf prinsepia
 \xv
 \xe
 \xn
@@ -118543,6 +118549,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɕi˩nv˧˥
 \sf <nb="B"> 546b
@@ -118552,7 +118559,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118577,15 +118584,15 @@
 \pdv pɤ˩
 \pdf
 \de saddle mat
-\ge
+\ge saddle_mat
 \dn 马鞍下面的毯子
-\gn
+\gn 马鞍毯子
 \gr
 \df tapis de selle
-\gf
+\gf tapis_de_selle
 \xv ʐwæ˧-tɕi˥nv˩
-\xe
-\xn
+\xe horse saddle mat
+\xn 马鞍毯子
 \xf tapis de selle de cheval
 \rf
 \xv
@@ -118594,6 +118601,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕi˩qɑ˥
 \sf <nb="B"> 2196
@@ -118703,10 +118711,10 @@
 \sf <nb="2011"> 
 \hm
 \ph
-\bw
+\bw Chinese fn:汽车
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118730,13 +118738,13 @@
 \pdl classifier
 \pdv nɑ˧
 \pdf
-\de
-\ge
+\de car
+\ge 汽车::car
 \dn 汽车
-\gn
+\gn 汽车
 \gr
 \df voiture, automobile (emprunt chinois)
-\gf
+\gf 汽车::voiture
 \xv
 \xe
 \xn
@@ -118748,16 +118756,17 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰi˩tsɯ˧
 \sf <nb="B"> 2012
 \sf <nb="2011"> 3080
 \hm
 \ph
-\bw
+\bw Chinese fn:茄子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -118782,12 +118791,12 @@
 \pdv
 \pdf
 \de eggplant
-\ge
-\dn 茄子（汉语借词）
-\gn
+\ge 茄子::eggplant
+\dn 茄子
+\gn 茄子
 \gr
-\df aubergine (emprunt chinois)
-\gf
+\df aubergine
+\gf 茄子::aubergine
 \xv
 \xe
 \xn
@@ -118799,6 +118808,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tɕʰi˩tʰv˩
 \sf <nb="B"> 
@@ -119309,7 +119319,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -119334,12 +119344,12 @@
 \pdv nɑ˧
 \pdf
 \de ladle, scoop used for water
-\ge
+\ge ladle
 \dn 勺子、瓢
-\gn
+\gn 瓢
 \gr
 \df louche (de grande taille: grosse louche pour puiser l'eau; tient plus d'un litre)
-\gf
+\gf louche
 \xv
 \xe
 \xn
@@ -119351,6 +119361,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰo˧˥
 \sf <nb="B"> 
@@ -119623,7 +119634,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -119674,7 +119685,7 @@
 \xn 百合长在高山上！
 \xf Le lis, ça pousse dans la montagne/en haute montagne!
 \xc Idem ci-dessus, avec une division en groupes tonals différente
-\dt 22/Aug/2014
+\dt 17/Apr/2015
 
 \lx tɕʰo˩mi#˥
 \sf <nb="B"> 
@@ -119684,7 +119695,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -119693,7 +119704,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="sem"> 
+\nt <type="sem"> Le terme est réellement employé, comme disyllabe lexicalisé; ce n'est pas une combinaison élicitée pour le propos de l'enquête linguistique.
 \np
 \np <type="tone"> LM+#H
 \nd
@@ -119708,13 +119719,13 @@
 \pdl classifier
 \pdv nɑ˧
 \pdf
-\de
-\ge
+\de large ladle
+\ge large_ladle
 \dn 大瓢
-\gn
+\gn 大瓢
 \gr
-\df grande louche (terme réellement employé, pas combinaison artificielle)
-\gf
+\df grande louche
+\gf grande_louche
 \xv
 \xe
 \xn
@@ -119726,6 +119737,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕo˩mv˧
 \sf <nb="B"> 
@@ -119889,7 +119901,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -119898,7 +119910,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> (avant 09: noté /tɕʰɤ˥ kʶɑ˥/, faisant erreur concernant l'aspiration)
 \nt <type="hist" print="n"> 
-\nt <type="sem"> 
+\nt <type="sem"> végétal à petites coques jaunes, suivant sur la photo; deux échantillons dont un plus clairsemé
 \np
 \np <type="tone"> #H
 \nd
@@ -119913,13 +119925,13 @@
 \pdl classifier
 \pdv po˧
 \pdf
-\de crowndaisy chrysanthemum
+\de crowndaisy chrysanthemum, |fi{Glebionis coronaria}
 \ge crowndaisy_chrysanthemum
-\dn 蒿  茼蒿 ？
-\gn
+\dn 茼蒿
+\gn 茼蒿
 \gr 蒿草、蒿枝
-\df végétal à petites coques jaunes, suivant sur la photo; deux échantillons dont un plus clairsemé
-\gf
+\df chrysanthème couronné, chrysanthème des jardins, chrysanthème comestible ou chrysanthème à couronnes, |fi{Glebionis coronaria}
+\gf chrysanthème_couronné
 \xv
 \xe
 \xn
@@ -119931,7 +119943,7 @@
 \xv
 \xf
 \xc
-\dt 18/Aug/2014
+\dt 17/Apr/2015
 
 \lx tɕʰo˩qʰwɤ˧
 \sf <nb="B"> 
@@ -119941,7 +119953,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -119966,12 +119978,12 @@
 \pdv nɑ˧
 \pdf
 \de ladle used for pigswill
-\ge
+\ge ladle_for_pigswill
 \dn 用来煮猪食的勺子
-\gn
+\gn 猪食勺子
 \gr
-\df louche utilisée pour les aliments des animaux; à la date de l'enquête, c'était un objet en aluminium, tandis que celui utilisé pour puiser l'eau, que l'on peut porter à la bouche, est en étain)
-\gf
+\df louche utilisée pour les aliments des animaux; à la date de l'enquête, c'était un objet en aluminium, tandis que celui utilisé pour puiser l'eau, que l'on peut porter à la bouche, est en étain
+\gf louche_à_pâtée
 \xv
 \xe
 \xn
@@ -119983,6 +119995,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰɤ˧ʂo#˥
 \sf <nb="B"> 2169
@@ -120251,7 +120264,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -120277,12 +120290,12 @@
 \pdv ɭɯ˧
 \pdf
 \de glass used for wine
-\ge
+\ge wine_glass
 \dn 用来给酒的杯子
-\gn
+\gn 酒杯
 \gr
 \df verre pour le vin ou autres liquides (sans anse); en verre ou autre matériau
-\gf
+\gf verre_à_vin
 \xv
 \xe
 \xn
@@ -120294,6 +120307,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰo˩zo#˥
 \sf <nb="B"> 
@@ -120303,7 +120317,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -120312,7 +120326,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="sem"> 
+\nt <type="sem"> Le terme est réellement employé, ce n'est pas une combinaison artificielle.
 \np
 \np <type="tone"> LM+#H
 \nd
@@ -120327,13 +120341,13 @@
 \pdl classifier
 \pdv nɑ˧
 \pdf
-\de
-\ge
+\de small ladle
+\ge small_ladle
 \dn 小瓢
-\gn
+\gn 小瓢
 \gr
-\df petite louche (terme réellement employé, pas combinaison artificielle)
-\gf
+\df petite louche
+\gf petite_louche
 \xv
 \xe
 \xn
@@ -120345,6 +120359,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕɤ˧~tɕɤ˧
 \sf <nb="B"> 
@@ -120687,7 +120702,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -120713,12 +120728,12 @@
 \pdv nɑ˧
 \pdf
 \de scale
-\ge
+\ge scale
 \dn 称
-\gn
+\gn 称
 \gr
 \df balance
-\gf
+\gf balance
 \xv
 \xe
 \xn
@@ -120730,6 +120745,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕɯ˥
 \sf <nb="B"> 1260
@@ -120853,7 +120869,7 @@
 \bw Chinese fn:漆
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -120878,12 +120894,12 @@
 \pdv
 \pdf
 \de lacquer, paint
-\ge paint
+\ge 漆::paint
 \dn 漆
 \gn 漆
 \gr
 \df peinture, laque
-\gf peinture
+\gf 漆::peinture
 \xv tɕʰɯ˧ jɤ˥-zo˩-ho˩!
 \xe It's time to paint (the room, the house...)! / We're going to have to paint (the room, the house...)!
 \xn 该刷漆了！
@@ -120895,6 +120911,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰɯ˧˥
 \sf <nb="B"> 
@@ -121648,7 +121665,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -121673,12 +121690,12 @@
 \pdv ɭɯ˧
 \pdf
 \de large plate
-\ge
-\dn
-\gn
+\ge large_plate
+\dn 大盘子
+\gn 大盘子
 \gr
 \df grande assiette
-\gf
+\gf grande_assiette
 \xv
 \xe
 \xn
@@ -121690,6 +121707,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕɯ˩ɭɯ˩
 \sf <nb="B"> 
@@ -121802,7 +121820,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -121827,12 +121845,12 @@
 \pdv ɭɯ˧
 \pdf
 \de sling
-\ge
+\ge sling
 \dn 弹弓 
-\gn
+\gn 弹弓
 \gr
 \df fronde (bande de tissu permettant de catapulter un objet)
-\gf
+\gf fronde
 \xv
 \xe
 \xn
@@ -121844,6 +121862,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕɯ˩mi˥
 \sf <nb="B"> 
@@ -121913,7 +121932,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -121938,12 +121957,12 @@
 \pdv
 \pdf
 \de large scale
-\ge
+\ge large_scale
 \dn 大称
-\gn
+\gn 大称
 \gr
 \df grande balance
-\gf
+\gf grande_balance
 \xv
 \xe
 \xn
@@ -121955,6 +121974,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰɯ˩mi#˥
 \sf <nb="B"> 
@@ -122376,7 +122396,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -122401,12 +122421,12 @@
 \pdv
 \pdf
 \de small scale
-\ge
+\ge small_scale
 \dn 小称
-\gn
+\gn 小称
 \gr
 \df petite balance
-\gf
+\gf petite_balance
 \xv
 \xe
 \xn
@@ -122418,6 +122438,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tɕʰɯ˩zo#˥
 \sf <nb="B"> 
@@ -122685,7 +122706,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -122710,12 +122731,12 @@
 \pdv nɑ˧
 \pdf
 \de plane
-\ge
+\ge plane
 \dn 刨
-\gn
+\gn 刨
 \gr
 \df rabot
-\gf
+\gf rabot
 \xv
 \xe
 \xn
@@ -122727,6 +122748,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tʰi˩˥
 \sf <nb="B"> 
@@ -123183,7 +123205,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123208,12 +123230,12 @@
 \pdv nɑ˧
 \pdf
 \de large plane
-\ge
+\ge large_plane
 \dn 大刨
-\gn
+\gn 大刨
 \gr
 \df grand rabot
-\gf
+\gf grand_rabot
 \xv
 \xe
 \xn
@@ -123225,6 +123247,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ti˩pʰo˩
 \sf <nb="B"> 471
@@ -123285,7 +123308,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123309,13 +123332,13 @@
 \pdl classifier
 \pdv fv˩
 \pdf
-\de
-\ge
-\dn
-\gn
+\de copper cup for offerings
+\ge copper_cup
+\dn 铜杯盏，做仪式用的
+\gn 铜杯盏
 \gr
-\df petits récipients en cuivre pour faire des offrandes aux esprits; évasés; de la taille d'un petit gobelet à alcool
-\gf
+\df coupe de cuivre pour les offrandes; elle est évasée, et de la taille d'un petit gobelet à alcool
+\gf coupe_de_cuivre
 \xv
 \xe
 \xn
@@ -123327,6 +123350,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ti˩tjɛ˧
 \sf <nb="B"> 
@@ -123387,7 +123411,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123412,12 +123436,12 @@
 \pdv ɭɯ˧
 \pdf
 \de box (woven out of bamboo or wicker)
-\ge
+\ge wicker_box
 \dn 箱子（竹子编出来的）
-\gn
+\gn 竹子箱子
 \gr
-\df boîte/caisse en vannerie (objet qui n'est plus en usage aujourd'hui)
-\gf
+\df boîte en vannerie (objet qui n'est plus en usage aujourd'hui)
+\gf caisse_en_vannerie
 \xv
 \xe
 \xn
@@ -123429,6 +123453,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ti˧ʈʂʰɯ˩
 \sf <nb="B"> 570a
@@ -123438,7 +123463,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123463,12 +123488,12 @@
 \pdv ɭɯ˧
 \pdf
 \de hammer
-\ge
+\ge hammer
 \dn 铁锤子
-\gn
+\gn 铁锤子
 \gr
 \df marteau
-\gf
+\gf marteau
 \xv
 \xe
 \xn
@@ -123480,6 +123505,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tʰi˩zo#˥
 \sf <nb="B"> 
@@ -123489,7 +123515,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123514,12 +123540,12 @@
 \pdv nɑ˧
 \pdf
 \de small plane
-\ge
+\ge small_plane
 \dn 小刨
-\gn
+\gn 小刨
 \gr
 \df petit rabot
-\gf
+\gf petit_rabot
 \xv
 \xe
 \xn
@@ -123531,6 +123557,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ti˧˥1
 \sf <nb="B"> 
@@ -123700,7 +123727,7 @@
 \bw Chinese fn:电话
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -123729,8 +123756,8 @@
 \dn 电话
 \gn 电话（°借词）
 \gr
-\df 电话::téléphone
-\gf
+\df téléphone
+\gf 电话::téléphone
 \xv
 \xe
 \xn
@@ -123742,6 +123769,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tjɤ˧po˧
 \sf <nb="B"> 477b
@@ -124219,7 +124247,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -124243,10 +124271,10 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
+\de bottle
+\ge bottle
 \dn 瓶子，瓶（也可以充当量词）
-\gn
+\gn 瓶子
 \gr
 \df bouteille (aussi emploi comme classificateur)
 \gf bouteille
@@ -124261,6 +124289,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx to˧bɤ#˥
 \sf <nb="B"> 935
@@ -124377,7 +124406,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -124402,12 +124431,12 @@
 \pdv dzi˩
 \pdf
 \de pine tree
-\ge
+\ge pine_tree
 \dn 松树
-\gn
+\gn 松树
 \gr
 \df pin
-\gf
+\gf pin
 \xv
 \xe
 \xn
@@ -124419,6 +124448,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tʰo˧fv˧
 \sf <nb="B"> 
@@ -124471,7 +124501,7 @@
 \xf
 \xc
 
-\lx to˧kɤ˧qʰæ˩di˩-bæ˩bæ˩˥
+\lx to˧kɤ˧qʰæ˩di˩ | -bæ˩bæ˩˥
 \sf <nb="B"> 2177
 \sf <nb="2011"> 3300
 \hm
@@ -124479,7 +124509,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -124488,7 +124518,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> (avant 09: noté: /to˥kɤ˥ kʶæ˩di˩ bæ˩bæ˩˥/) avant 2011: noté qæ, par erreur
 \nt <type="hist" print="n"> 
-\nt <type="sem"> littéralement "fleur qui vous donne une chiquenaude au front"
+\nt <type="sem"> littéralement "fleur qui vous donne une chiquenaude au front"; cf photo xxxx
 \np
 \np <type="tone"> 
 \nd
@@ -124503,13 +124533,13 @@
 \pdl classifier
 \pdv bæ˩
 \pdf
-\de
-\ge
-\dn （永宁的一种植物，见图片）
-\gn
+\de plant with long filaments
+\ge plant_sp
+\dn 永宁的一种植物
+\gn 一种植物
 \gr
-\df plante à longs filaments, suivante sur la photo
-\gf
+\df plante à longs filaments
+\gf plante_sp
 \xv
 \xe
 \xn
@@ -124521,6 +124551,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx to˧kɤ#˥
 \sf <nb="B"> 101
@@ -125107,7 +125138,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -125149,7 +125180,7 @@
 \xv
 \xf
 \xc
-\dt 16/Aug/2014
+\dt 17/Apr/2015
 
 \lx to˩pi˩
 \sf <nb="B"> 894
@@ -125263,7 +125294,7 @@
 \bw Chinese fn:同步枪?
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -125291,7 +125322,7 @@
 \ge firelock
 \dn 枪，明火枪
 \gn 明火枪
-\gr 同步枪?
+\gr 同步枪？？
 \df arme à feu, fusil; arquebuse
 \gf arquebuse
 \xv
@@ -125305,7 +125336,7 @@
 \xv
 \xf
 \xc
-\dt 15/Aug/2014
+\dt 16/Apr/2015
 
 \lx to˧qɑ˧
 \sf <nb="B"> 
@@ -125473,7 +125504,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -125497,13 +125528,13 @@
 \pdl classifier
 \pdv ʈʰɤ˥
 \pdf
-\de rosin; colophony
-\ge
+\de pine resin; colophony
+\ge pine_resin
 \dn 松香
-\gn
+\gn 松香
 \gr
 \df résine de pin
-\gf
+\gf résine_de_pin
 \xv
 \xe
 \xn
@@ -125515,6 +125546,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tʰo˧ɻæ˥
 \sf <nb="B"> 
@@ -125524,7 +125556,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -125549,12 +125581,12 @@
 \pdv ʈʂwɤ˧
 \pdf poignée
 \de pine-nut kernel
-\ge
+\ge pine_nut_kernel
 \dn 松子
-\gn
+\gn 松子
 \gr
-\df pignon de pin (qu'on mange)
-\gf
+\df pignon de pin (graine comestible)
+\gf pignon_de_pin
 \xv
 \xe
 \xn
@@ -125566,6 +125598,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tʰo˩ʂv˩
 \sf <nb="B"> 2305
@@ -125575,7 +125608,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -125599,13 +125632,13 @@
 \pdl classifier
 \pdv qɑ˩
 \pdf botte
-\de
-\ge
-\dn
-\gn
+\de pine needles
+\ge pine_needles
+\dn 树针
+\gn 树针
 \gr
 \df aiguilles de pin
-\gf
+\gf aiguilles_de_pin
 \xv
 \xe
 \xn
@@ -125617,6 +125650,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tʰo˩tɕi˧˥
 \sf <nb="B"> 473
@@ -127032,7 +127066,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -127057,12 +127091,12 @@
 \pdv ɭɯ˧
 \pdf
 \de container in which butter-tea is mixed; also: butter churn
-\ge
-\dn "打酥油茶之罐也" (fgy)，搅拌器 ，大桶 
-\gn
+\ge butter_tea_churn/butter_churn
+\dn 打酥油茶的罐、酥油茶搅拌器 ，黄油搅乳器 
+\gn 酥油茶搅拌器/黄油搅乳器
 \gr
 \df récipient dans lequel on bat le thé au beurre (tube-baratte en bois); aussi: grande baratte pour baratter le beurre
-\gf
+\gf baratte
 \xv
 \xe
 \xn
@@ -127074,6 +127108,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂʰæ˧ɣɯ˧-ki˩-hĩ˩-hĩ˩
 \sf <nb="B"> 348
@@ -127561,7 +127596,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -127587,12 +127622,12 @@
 \pdv ɭɯ˧
 \pdf
 \de hook
-\ge
+\ge hook
 \dn 钩子
-\gn
+\gn 钩子
 \gr
 \df crochet
-\gf
+\gf crochet
 \xv
 \xe
 \xn
@@ -127604,6 +127639,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂʰæ˧qʰv˥$
 \sf <nb="B"> 
@@ -127716,7 +127752,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -127741,17 +127777,19 @@
 \pdv kʰwɤ˥
 \pdf
 \de sign
-\ge
+\ge sign
 \dn 记号
-\gn
+\gn 记号
 \gr
 \df signe
-\gf
+\gf signe
 \xv ʈʂɑ˧tɑ˥ ʝi˩
-\xe
-\xn
+\xe to make a mark, to write a sign
+\xn 写一个符号、画一个符号
 \xf faire une marque, inscrire un signe
 \xv ʈʂɑ˧tɑ˥ tɕi˩
+\xe to write signs, to make marks
+\xn 写符号、画符号
 \xf écrire des signes, faire des marques (pas pour un unique signe: se rapproche de l'écriture d'un message/texte)
 \rf
 \xv
@@ -127760,6 +127798,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰɑ˧tɕɤ˧˥
 \sf <nb="B"> 
@@ -127769,7 +127808,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -127793,13 +127832,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
+\de seedlings
+\ge seedlings
 \dn 青菜幼苗
-\gn
+\gn 青菜幼苗
 \gr
-\df végétal dont on récolte les petites pousses pour les manger
-\gf
+\df jeunes pousses, petites pousses qu'on récolte pour les manger
+\gf jeunes_pousses
 \xv
 \xe
 \xn
@@ -127811,6 +127850,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂæ˧ʈʂɯ˧
 \sf <nb="B"> 
@@ -128131,7 +128171,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -128156,15 +128196,15 @@
 \pdv nɑ˧
 \pdf
 \de lock
-\ge
+\ge lock
 \dn 锁
-\gn
+\gn 锁
 \gr
 \df serrure, verrou
-\gf
+\gf verrou
 \xv æ˧tse˥
-\xe
-\xn
+\xe bronze lock
+\xn 铜锁
 \xf verrou en bronze
 \rf
 \xv
@@ -128173,6 +128213,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰe˧
 \sf <nb="B"> 820
@@ -128616,7 +128657,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -128642,12 +128683,12 @@
 \pdv kʰɯ˩
 \pdf
 \de tinder
-\ge
+\ge tinder
 \dn 火绒（把小麻皮捶绒）
-\gn
+\gn 火绒
 \gr
 \df amadou
-\gf
+\gf amadou
 \xv
 \xe
 \xn
@@ -128659,6 +128700,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tse˧bo#˥
 \sf <nb="B"> 655
@@ -128771,7 +128813,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -128800,11 +128842,11 @@
 \dn 檀香木、檀香、檀木
 \gn 檀香木
 \gr
-\df bois de santal arbre à épice, arbre à encens香木spicewood
+\df bois de santal arbre à épice, arbre à encens
 \gf bois_de_santal
 \xv tse˧di˧-si#˥
-\xe
-\xn
+\xe same meaning
+\xn 同上
 \xf même sens
 \rf
 \xv
@@ -128813,6 +128855,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰe˧do˧-ɖɯ˧ɲi˥
 \sf <nb="B"> 722
@@ -129292,7 +129335,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -129317,17 +129360,19 @@
 \pdv dzi˩
 \pdf
 \de Chinese evergreen
-\ge
+\ge Chinese_evergreen
 \dn 万年青
-\gn
+\gn 万年青
 \gr
 \df aspidistra
-\gf
+\gf aspidistra
 \xv tsʰe˧hṽ˧-dzi˧˥
-\xe
-\xn
+\xe Chinese evergreen tree
+\xn 万年青树
 \xf arbre/plant d'aspidistra
 \xv tsʰe˧hṽ˧-bæ˥bæ˩
+\xe flowers of Chinese evergreen
+\xn 万年青花
 \xf fleurs d'aspidistra
 \rf
 \xv
@@ -129336,6 +129381,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰe˧jɤ˧mi˥
 \sf <nb="B"> 
@@ -129447,7 +129493,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -129472,12 +129518,12 @@
 \pdv ɭɯ˧
 \pdf
 \de seam
-\ge
+\ge seam
 \dn 缝
-\gn
+\gn 缝
 \gr
 \df couture (d'un vêtement)
-\gf
+\gf couture
 \xv
 \xe
 \xn
@@ -129489,6 +129535,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰe˧kʰv˧
 \sf <nb="B"> 1202
@@ -129600,7 +129647,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -129625,12 +129672,12 @@
 \pdv ɭɯ˧
 \pdf
 \de flint
-\ge
+\ge flint
 \dn 燧石
-\gn
+\gn 燧石
 \gr
 \df silex
-\gf
+\gf silex
 \xv
 \xe
 \xn
@@ -129642,6 +129689,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tse˧mi˥
 \sf <nb="B"> 497
@@ -129651,14 +129699,14 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
 \sd <lang="fra"> objet
 \sd <lang="eng"> object
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> M23: /tsɤ˧mi˥/; F4 confirme que pour sa part elle dit tse˧mi˥ et non tsɤ˧mi˥.
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
 \np
@@ -129676,13 +129724,13 @@
 \pdl classifier
 \pdv nɑ˧
 \pdf
-\de steel (for flint)
-\ge
+\de lighter
+\ge lighter
 \dn 火镰
-\gn
+\gn 火镰
 \gr
 \df briquet
-\gf
+\gf briquet
 \xv
 \xe
 \xn
@@ -129690,10 +129738,11 @@
 \rf
 \xv
 \xf
-\rf M23
+\rf
 \xv
 \xf
-\xc (ama confirme que pour sa part elle dit tse˧mi˥ et non tsɤ)
+\xc
+\dt 16/Apr/2015
 
 \lx tse˧mi˥-dʑɯ˩ʁo˩
 \sf <nb="B"> 
@@ -129912,7 +129961,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -129936,16 +129985,16 @@
 \pdl classifier
 \pdv pʰæ˧˥
 \pdf
-\de money of the Imperial times
-\ge
-\dn 民国之前的货币
-\gn
+\de coins of the imperial times
+\ge coins_of_imperial_times
+\dn 民国之前的硬币
+\gn 民国之前的硬币
 \gr
-\df argent de l'époque impériale
-\gf
+\df pièces de l'époque impériale
+\gf pièces_de_l_époque_impériale
 \xv æ˧-tse˥pʰæ˩
-\xe
-\xn
+\xe bronze coins of the imperial times
+\xn 民国之前的铜币
 \xf pièce en bronze de l'époque impériale
 \rf
 \xv
@@ -129954,6 +130003,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂe˧pʰɤ˩so˩so˧gv˩
 \sf <nb="B"> 1108
@@ -130169,7 +130219,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -130194,12 +130244,12 @@
 \pdv ɭɯ˧
 \pdf
 \de key
-\ge
+\ge key
 \dn 钥匙
-\gn
+\gn 钥匙
 \gr
-\df clé, clef
-\gf
+\df clef
+\gf clef
 \xv
 \xe
 \xn
@@ -130211,6 +130261,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰe˧so˧
 \sf <nb="B"> 823
@@ -130429,7 +130480,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -130454,12 +130505,12 @@
 \pdv nɑ˧
 \pdf
 \de scissors
-\ge
+\ge scissors
 \dn 剪刀
-\gn
+\gn 剪刀
 \gr
 \df ciseaux
-\gf
+\gf ciseaux
 \xv
 \xe
 \xn
@@ -130471,6 +130522,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰe˧ʈʂæ˧
 \sf <nb="B"> 
@@ -131901,7 +131953,7 @@
 \xc
 \dt 09/Jul/2014
 
-\lx tsi˩ɭɯ˩-bv˧-qʰæ˩bæ˩˧
+\lx tsi˩ɭɯ˩-bv˧ | -qʰæ˩bæ˩˥
 \sf <nb="B"> 
 \sf <nb="2011"> 3275
 \hm
@@ -131909,7 +131961,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -131933,13 +131985,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
+\de trailing plant
+\ge trailing_plant
 \dn 蔓草
-\gn
+\gn 蔓草
 \gr
 \df herbe rampante
-\gf
+\gf herbe_rampante
 \xv
 \xe
 \xn
@@ -131951,6 +132003,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰi˩mv˩tʰv˩
 \sf <nb="B"> 
@@ -132267,7 +132320,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -132292,13 +132345,13 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de garden peas
-\ge
+\de peas, garden peas
+\ge peas
 \dn 豌豆
-\gn
+\gn 豌豆
 \gr
-\df haricot
-\gf
+\df pois, petits pois
+\gf pois
 \xv
 \xe
 \xn
@@ -132310,6 +132363,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰi˩tv˩
 \sf <nb="B"> 215
@@ -132364,109 +132418,6 @@
 \xc
 \dt 11/Jul/2014
 
-\lx tsʰi˧zi˧-nɑ˩-hĩ˩˧
-\sf <nb="B"> 1981
-\sf <nb="2011"> 3016
-\hm
-\ph ke1
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> plante
-\sd <lang="eng"> plant
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> (avant 09: noté: tsʰɯ˥zɯ˥ næ˩ kʶæ˥ ʈʂʰe˧ hĩ˧)
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> °L
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5"> jɑ˧qʰɑ˧nɑ˧˥
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21"> tsʰv˧zv˧nɑ˩hĩ˥
-\va <speaker="M23">
-\pdl classifier
-\pdv kɤ˧˥
-\pdf
-\de
-\ge
-\dn 黑青稞
-\gn
-\gr
-\df orge noir
-\gf
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-
-\lx tsʰi˧zi˧-pʰv˩-hĩ˩˧
-\sf <nb="B"> 1980
-\sf <nb="2011"> 3015
-\hm
-\ph ke1
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> plante
-\sd <lang="eng"> plant
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> (avant 09, noté: /tsʰɯ˥zɯ˥pʰv˩hĩ˩˥/)
-\nt <type="hist" print="n"> (a) propose d'abord dze˧ɭɯ˧ pʰv˩ (b) accepte tsʰɯ˧zɯ˧pʰv˩˥ (n'est pas jɑ˧kʶɑ˧ pʰv˩˥) (tons confirmés) (schéma tonal régulier)
-\nt <type="sem"> 
-\np
-\np <type="tone"> °L
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5"> ID.
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\vf n'existe pas, selon M21) tsʰv˧zv˧ pʰv˩˥, tsʰv˧zv˧pʰv˩ ɲi˥
-\va <speaker="M23">
-\pdl classifier
-\pdv kɤ˧˥
-\pdf
-\de
-\ge
-\dn 白青稞
-\gn
-\gr
-\df orge blanc
-\gf
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-
 \lx tsʰi˧zi˧-ɻ̃#˥
 \sf <nb="B"> 1997
 \sf <nb="2011"> 3047
@@ -132475,7 +132426,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -132500,12 +132451,12 @@
 \pdv kɤ˧˥
 \pdf
 \de highland barley straw
-\ge
+\ge highland_barley_straw
 \dn 青稞杆
-\gn
+\gn 青稞杆
 \gr
 \df paille d'orge
-\gf
+\gf paille_d_orge
 \xv
 \xe
 \xn
@@ -132517,6 +132468,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰi˧zi#˥
 \sf <nb="B"> 1979
@@ -132526,7 +132478,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -132550,24 +132502,26 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de highland barley
-\ge
+\de highland barley, |fi{Hordeum vulgare var. nudum Hook. f.}
+\ge barley
 \dn 青稞
-\gn
+\gn 青稞
 \gr
-\df orge d'altitude, Hordeum vulgare var. nudum Hook. f.
-\gf
-\xv
-\xe
-\xn
-\xf
+\df orge d'altitude, |fi{Hordeum vulgare var. nudum Hook. f.}
+\gf orge
+\xv tsʰi˧zi˧ | nɑ˩-hĩ˩˥
+\xe black barley
+\xn 黑青稞
+\xf orge noir
 \rf
-\xv
-\xf
-\rf
+\xv tsʰi˧zi˧ | pʰv˩-hĩ˩˥
+\xe white barley
+\xn 白青稞
+\xf orge blanc
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰi˥1
 \sf <nb="B"> 
@@ -133875,7 +133829,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -133899,13 +133853,13 @@
 \pdl classifier
 \pdv ɭɯ˧˥
 \pdf
-\de
-\ge
-\dn
-\gn
+\de masculine clothing worn on special occasions
+\ge masculine_clothing
+\dn 男人上衣
+\gn 男人上衣
 \gr
-\df vêtement que les hommes portaient à partir de 13 ans: sorte de veste serrée à la ceinture, qu'on portait sur la chemise; se porte dans les grandes occasions: mariage, invitations…
-\gf
+\df vêtement masculin, que les hommes portaient à partir de 13 ans: sorte de veste serrée à la ceinture, qu'on portait sur la chemise lors des grandes occasions: mariage, invitations…
+\gf vêtement_masculin
 \xv
 \xe
 \xn
@@ -133917,6 +133871,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂʰo˧bv˩
 \sf <nb="B"> 
@@ -133926,7 +133881,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -133950,13 +133905,13 @@
 \pdl classifier
 \pdv dzi˩
 \pdf
-\de Acorus calamus
-\ge
-\dn 菖蒲  
-\gn
+\de calamus, sweet flag, bitterroot, |fi{Acorus calamus}
+\ge calamus
+\dn 菖蒲
+\gn 菖蒲
 \gr
-\df Acorus calamus
-\gf
+\df acore odorant, jonc odorant, |fi{Acorus calamus}: plante herbacée aquatique, pérenne, rhizomateuse
+\gf acore_odorant
 \xv
 \xe
 \xn
@@ -133968,6 +133923,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂʰo˧do˩
 \sf <nb="B"> 
@@ -134183,7 +134139,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134209,12 +134165,12 @@
 \pdv ɭɯ˧
 \pdf
 \de kettle
-\ge
+\ge kettle
 \dn 水壶
-\gn
+\gn 水壶
 \gr
 \df bouilloire
-\gf
+\gf bouilloire
 \xv
 \xe
 \xn
@@ -134226,6 +134182,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰo˧ko˧
 \sf <nb="B"> 
@@ -134235,7 +134192,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134259,13 +134216,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de cardamom
-\ge
-\dn 小豆蔻（当地汉语：草果）
-\gn
-\gr
-\df cardamome (Elletaria cardamomum)
-\gf
+\de cardamom, |fi{Elletaria cardamomum}
+\ge cardamom
+\dn 小豆蔻
+\gn 小豆蔻
+\gr 草果
+\df cardamome, |fi{Elletaria cardamomum}
+\gf cardamome
 \xv
 \xe
 \xn
@@ -134277,6 +134234,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂʰɤ˩kɤ˧
 \sf <nb="B"> 522
@@ -134287,7 +134245,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134311,13 +134269,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de mug; glass
-\ge
+\de goblet
+\ge goblet
 \dn 缸子，杯子
-\gn
+\gn 缸子
 \gr
 \df gobelet (avec anse); en métal ou poterie
-\gf
+\gf gobelet
 \xv
 \xe
 \xn
@@ -134329,6 +134287,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂo˧kʰɯ˩
 \sf <nb="B"> 
@@ -134389,7 +134348,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134414,12 +134373,12 @@
 \pdv ɭɯ˧
 \pdf
 \de bag (of fabric of leather)
-\ge
+\ge bag
 \dn 袋子
-\gn
+\gn 袋子
 \gr
 \df sac (était fait en toile ou en cuir)
-\gf
+\gf sac
 \xv
 \xe
 \xn
@@ -134431,6 +134390,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tso˧lo˧-mv˥tso˩
 \sf <nb="B"> 560
@@ -134440,7 +134400,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134464,13 +134424,13 @@
 \pdl classifier
 \pdv nɑ˧, ɭɯ˧
 \pdf
-\de tool
-\ge
+\de tool; thing, object
+\ge tool/thing
 \dn 东西，工具
-\gn
+\gn 东西/工具
 \gr
-\df outil, chose, truc
-\gf
+\df outil; chose, objet, truc
+\gf outil/objet
 \xv
 \xe
 \xn
@@ -134482,6 +134442,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂʰo˧lo#˥
 \sf <nb="B"> 506b
@@ -134491,7 +134452,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134516,12 +134477,12 @@
 \pdv ɭɯ˧
 \pdf
 \de frying pan (large, with flat bottom)
-\ge
+\ge large_frying_pan
 \dn 平底的大锅（大小：大概半米），用来煎洋芋饼等等
-\gn
+\gn 平底的大锅
 \gr
-\df poële: grande poële à fond plat, diamètre un peu supérieur à 50 cm, pour frire des aliments (galettes de pomme de terre, fèves)
-\gf
+\df grande poêle à fond plat, diamètre un peu supérieur à 50 cm, pour frire des aliments (galettes de pomme de terre, fèves)
+\gf grande_poêle
 \xv
 \xe
 \xn
@@ -134533,6 +134494,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʈʂo˧ɭɯ˧ʈʂo˧˥
 \sf <nb="B"> 1814
@@ -134594,7 +134556,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134620,16 +134582,16 @@
 \pdl classifier
 \pdv nɑ˧
 \pdf
-\de hand-operated groundstone
-\ge
+\de hand-operated grindstone
+\ge hand_grindstone
 \dn 手磨
-\gn
+\gn 手磨
 \gr
 \df moulin à main
-\gf
+\gf moulin_à_main
 \xv ʈʂo˧ɭɯ˧-nv˥mi˩
-\xe
-\xn
+\xe the axis of the grindstone (literally: its hear)
+\xn 手磨的轴心
 \xf l'axe du moulin (littéralement: son cœur)
 \rf
 \xv
@@ -134638,6 +134600,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsʰo˩mo˩
 \sf <nb="B"> 
@@ -134800,7 +134763,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -134828,12 +134791,12 @@
 \pdv ɭɯ˧
 \pdf
 \de soap. Presumably borrowed from a language of Burma: cp. Nung /tshɑ³¹ pi⁵⁵ iɔ⁵⁵/ [Dai 1992], Luxi Achang and Lianghe Achang /tshɑu⁵⁵ pjɑu⁵⁵/ [Dai 1985], Longchuan Achang /tshau³¹ piau³¹/ [Dai 1992]. Culturally, it is not unlikely that soap was first introduced through contact/commerce with ethnic groups of Burma.
-\ge
+\ge soap
 \dn 肥皂
-\gn
+\gn 肥皂
 \gr
 \df savon. Sans doute mot emprunté à une langue de birmanie: cp. nung: tshɑ³¹ pi⁵⁵ iɔ⁵⁵ [Dai 1992]; achang de Luxi et Lianghe: tshɑu⁵⁵ pjɑu⁵⁵ [Dai 1985]; achang de Longchuan: tshau³¹ piau³¹ [Dai 1992]. Culturellement, il est plausible que le savon ait été introduit par le contact/commerce avec des groupes ethniques de Birmanie.
-\gf
+\gf savon
 \xv
 \xe
 \xn
@@ -134845,6 +134808,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx tsɤ˩pʰv˧-tsɤ˥li˩
 \sf <nb="B"> 
@@ -135430,7 +135394,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -135454,29 +135418,47 @@
 \pdl classifier
 \pdv nɑ˧, ɭɯ˧
 \pdf
-\de thing, thingummy
-\ge
+\de thing, thingummy, stuff
+\ge thing
 \dn 东西
-\gn
+\gn 东西
 \gr
-\df objet, chose, truc, bidule, machin
-\gf
+\df chose, truc, bidule, objet, machin
+\gf chose
 \xv tso˧~tso˧-zo˧~zo˧-mv˧~mv˥
-\xe
-\xn
+\xe thingummy, stuff
+\xn 各种东西、各种各样乱七八糟东西
 \xf bidule
 \xv tso˧~tso˧ hwæ˩
+\xe to buy things
+\xn 买东西
 \xf acheter des choses
+\xc PHONO
 \xv tso˧~tso˧ tɕʰi˧(-ze˩)
+\xe to sell things
+\xn 卖东西
 \xf vendre des choses
+\xc PHONO
 \xv tso˧~tso˧ dzɯ˧(-ze˩)
+\xe to eat things
+\xn 吃东西
 \xf manger des choses
+\xc PHONO
 \xv tso˧~tso˧ dze˥
+\xe to cut things
+\xn 切东西
 \xf couper des choses
+\xc PHONO
 \xv tso˧~tso˧ ʈʰɯ˩
+\xe to drink things
+\xn 喝东西
 \xf boire des choses
+\xc PHONO
 \xv tso˧~tso˧ lɑ˩
-\xf frapper des choses (toutes ces combinaisons objet+verbe sont régulières)
+\xe to beat things
+\xn 打东西
+\xf frapper des choses
+\xc PHONO
 \rf
 \xv
 \xf
@@ -135484,23 +135466,24 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰo˩tsɯ˧
 \sf <nb="B"> 563
 \sf <nb="2011"> 798
 \hm
 \ph cuo4dao1
-\bw
+\bw Chinese fn:锉子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
 \sd <lang="fra"> objet
 \sd <lang="eng"> object
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> avais d'abord annoté comme "rabot", par erreur
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
 \np
@@ -135518,12 +135501,12 @@
 \pdv nɑ˧
 \pdf
 \de file
-\ge
+\ge 锉子::file
 \dn 锉刀
-\gn
+\gn 锉刀
 \gr
-\df lime (emprunt) (avais d'abord annoté comme "rabot", par erreur)
-\gf
+\df lime
+\gf 锉子::lime
 \xv
 \xe
 \xn
@@ -135535,6 +135518,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰo˧tsɯ˧
 \sf <nb="B"> 2005
@@ -135542,10 +135526,10 @@
 \sf <nb="2011"> 3067
 \hm
 \ph
-\bw
+\bw Chinese fn:葱子
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -135571,12 +135555,12 @@
 \pdv po˧
 \pdf
 \de onion; leek
-\ge
+\ge 葱子::leek/onion
 \dn 葱，韭葱 
-\gn
+\gn 葱/韭葱
 \gr
-\df poireau, oignon (emprunt)
-\gf
+\df poireau, oignon
+\gf 葱子::poireau/oignon
 \xv
 \xe
 \xn
@@ -135588,6 +135572,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsɤ˧ʑi˧
 \sf <nb="B"> 
@@ -136231,7 +136216,7 @@
 \bw Chinese fn:字
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -136273,7 +136258,7 @@
 \xv
 \xf
 \xc
-\dt 15/Aug/2014
+\dt 17/Apr/2015
 
 \lx tsɯ˧˥
 \sf <nb="B"> 
@@ -137398,10 +137383,10 @@
 \sf <nb="2011"> 
 \hm
 \ph
-\bw
+\bw Chinese fn:芝麻
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -137425,16 +137410,16 @@
 \pdl
 \pdv
 \pdf
-\de sesame (Chinese borrowing)
+\de sesame
 \ge 芝麻::sesame
 \dn 芝麻（汉语借词）
-\gn
+\gn 芝麻
 \gr
-\df sésame (emprunt chinois)
+\df sésame
 \gf 芝麻::sésame
 \xv ʈʂɯ˧mɤ˩, | ɬi˧di˩ | mɤ˧-tʰv˧-ɲi˥!
-\xe
-\xn
+\xe Sesame does not grow in Yongning! / Sesame isn't grown in Yongning!
+\xn 永宁没有芝麻这个农作物！ / 永宁，不产芝麻！
 \xf Le sésame ne pousse pas à Yongning!
 \rf
 \xv
@@ -137443,6 +137428,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂʰɯ˧ne˧-ʝi˥
 \sf <nb="B"> 
@@ -138185,7 +138171,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -138210,16 +138196,16 @@
 \pdl classifier
 \pdv kɤ˧˥
 \pdf
-\de dry plant of garden peas
-\ge
+\de dry plant of garden peas, garden peas hay
+\ge garden_pea_hay
 \dn 豌豆干草
-\gn
+\gn 豌豆干草
 \gr
-\df paille de haricots
-\gf
-\xv ʈʂʰɯ˧ | tsʰɯ˩tsʰɯ˩ɻ̃˩ ɲi˥
-\xe
-\xn
+\df paille de petits pois
+\gf paille_de_pois
+\xv ʈʂʰɯ˧ | tsʰɯ˩tsʰɯ˩ɻ̃˩ ɲi˥.
+\xe This is garden pea hay.
+\xn 这是豌豆干草。
 \xf C'est de la paille de haricots.
 \rf
 \xv
@@ -138228,6 +138214,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tsʰɯ˧zo˥$
 \sf <nb="B"> 1888
@@ -138982,7 +138969,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -139027,7 +139014,7 @@
 \xv
 \xf
 \xc
-\dt 15/Aug/2014
+\dt 17/Apr/2015
 
 \lx ʈʂʰv˧mi˧
 \sf <nb="B"> 
@@ -139088,7 +139075,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -139113,12 +139100,12 @@
 \pdv nɑ˧
 \pdf
 \de cutting-board; vessel or cutting board for meat
-\ge
-\dn 菜板; 俎  
-\gn
+\ge cutting_board
+\dn 菜板，俎  
+\gn 菜板
 \gr
 \df planche à découper
-\gf
+\gf planche_à_découper
 \xv
 \xe
 \xn
@@ -139130,6 +139117,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂʰv˧ɻ˧qʰv#˥
 \sf <nb="B"> 1823
@@ -139467,7 +139455,7 @@
 \bw Chinese fn:船
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -139492,12 +139480,12 @@
 \pdv nɑ˧
 \pdf
 \de boat
-\ge
+\ge 船::boat
 \dn 船
 \gn 船（°借词）
 \gr
-\df bateau (emprunt chinois ancien; désormais, est le terme employé pour les grands bateaux, par ex. les barges pour passer le Yangtze; ce sont des Chinois et des Hmong qui auraient installé le bateau permettant de passer le Yangtze, d'où l'utilisation d'un mot chinois)
-\gf
+\df bateau (emprunt chinois ancien); désormais, c'est le terme employé pour les grands bateaux, par ex. les barges pour passer le Yangtze; ce sont des Chinois et des Hmong qui auraient installé le bateau permettant de passer le Yangtze, d'où l'utilisation d'un mot chinois.
+\gf 船::bateau
 \xv
 \xe
 \xn
@@ -139509,6 +139497,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʈʂʰwæ˧˥
 \sf <nb="B"> 1680
@@ -141768,7 +141757,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -141793,13 +141782,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de high-quality basket carried on the back; not in use anymore; had a trough shape
-\ge
+\de fine, high-quality basket carried on the back; it had a trough shape. Not in use anymore at the time of fieldwork.
+\ge fine_basket
 \dn 高级的背篓，过去用它放礼物
-\gn
+\gn 高级的背篓
 \gr
-\df hotte de gde qualité, dans laquelle on offrait des cadeaux; n'existe plus actuellement; était resserrée au milieu: de forme concave, pas convexe
-\gf
+\df hotte de grande qualité, dans laquelle on offrait des cadeaux; n'existe plus actuellement; était resserrée au milieu: de forme concave, pas convexe
+\gf hotte_de_qualité
 \xv
 \xe
 \xn
@@ -141811,6 +141800,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx tʰv˧ne-ʝi˥
 \sf <nb="B"> 
@@ -143336,7 +143326,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143365,7 +143355,7 @@
 \dn 锅
 \gn 锅
 \gr
-\df casserole (générique)
+\df casserole (terme générique)
 \gf casserole
 \xv
 \xe
@@ -143378,6 +143368,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˩dze˩
 \sf <nb="B"> 1788
@@ -143716,7 +143707,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143725,7 +143716,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="sem"> 
+\nt <type="sem"> terme réellement employé, pas seulement forme élicitée artificiellement
 \np
 \np <type="tone"> #H
 \nd
@@ -143740,13 +143731,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn
-\gn
+\de large cooking pot
+\ge large_pot
+\dn 大锅
+\gn 大锅
 \gr
-\df grande casserole (terme réellement employé, pas seulement forme élicitée artificiellement)
-\gf
+\df grande casserole
+\gf grande_casserole
 \xv
 \xe
 \xn
@@ -143758,6 +143749,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˩tsʰɤ˧˥
 \sf <nb="B"> 2003
@@ -143767,7 +143759,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143793,12 +143785,12 @@
 \pdv po˧
 \pdf
 \de vegetables
-\ge
+\ge vegetables
 \dn 蔬菜
-\gn
+\gn 蔬菜
 \gr
 \df légumes
-\gf
+\gf légumes
 \xv
 \xe
 \xn
@@ -143810,6 +143802,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˩tsʰɤ˧-bv#˥
 \sf <nb="B"> 1812
@@ -143871,7 +143864,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143896,12 +143889,12 @@
 \pdv po˧
 \pdf
 \de Chinese cabbage
-\ge
+\ge Chinese_cabbage
 \dn 白菜
-\gn
+\gn 白菜
 \gr
 \df chou chinois
-\gf
+\gf chou_chinois
 \xv
 \xe
 \xn
@@ -143913,6 +143906,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˩tsʰɤ˧-v˥ɲi˩
 \sf <nb="B"> 
@@ -143922,7 +143916,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143947,12 +143941,12 @@
 \pdv qɑ˩
 \pdf botte
 \de vegetables
-\ge
+\ge vegetables
 \dn 蔬菜
-\gn
+\gn 蔬菜
 \gr
 \df légumes
-\gf
+\gf légumes
 \xv
 \xe
 \xn
@@ -143964,6 +143958,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˧zo#˥
 \sf <nb="B"> 
@@ -143973,7 +143968,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -143982,7 +143977,7 @@
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
-\nt <type="sem"> 
+\nt <type="sem"> terme réellement employé, pas seulement forme élicitée artificiellement
 \np
 \np <type="tone"> #H
 \nd
@@ -143997,13 +143992,13 @@
 \pdl
 \pdv
 \pdf
-\de
-\ge
-\dn
-\gn
+\de small cooking pot
+\ge small_pot
+\dn 小锅
+\gn 小锅
 \gr
-\df petite casserole (terme réellement employé, pas seulement forme élicitée artificiellement)
-\gf
+\df petite casserole
+\gf petite_casserole
 \xv
 \xe
 \xn
@@ -144015,6 +144010,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx v˥2
 \sf <nb="B"> 
@@ -144185,7 +144181,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -144227,7 +144223,7 @@
 \xv
 \xf
 \xc
-\dt 14/Aug/2014
+\dt 17/Apr/2015
 
 \lx wo˧˥
 \sf <nb="B"> 1226
@@ -145804,7 +145800,6 @@
 \xc
 
 \lx ʐ
-
 \sf <nb="B"> 
 \sf <nb="2011"> 
 \hm
@@ -147070,7 +147065,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -147095,15 +147090,15 @@
 \pdv kʰɯ˩
 \pdf
 \de arrow
-\ge
+\ge arrow
 \dn 箭
-\gn
+\gn 箭
 \gr
 \df flèche
-\gf
+\gf flèche
 \xv ʐe˧ɻ̃˧ ɖɯ˧-kʰɯ˩
-\xe
-\xn
+\xe an arrow; also, metaphorically: a family, a lineage
+\xn 一个箭。也来指一个家庭
 \xf une flèche; désigne aussi, de façon métaphorique, une lignée/une famille
 \rf
 \xv
@@ -147112,6 +147107,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐe˥
 \sf <nb="B"> 804
@@ -147591,7 +147587,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -147616,12 +147612,12 @@
 \pdv
 \pdf
 \de one of the three main types of plants used for pig fodder
-\ge
+\ge pig_fodder
 \dn 喂猪的牧草
-\gn
+\gn 喂猪的牧草
 \gr
 \df sorte de fourrage pour les cochons (il y en a trois en tout)
-\gf
+\gf fourrage_pour_cochons
 \xv
 \xe
 \xn
@@ -147633,6 +147629,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐe˧zo#˥
 \sf <nb="B"> 
@@ -147642,7 +147639,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -147667,15 +147664,15 @@
 \pdv
 \pdf
 \de arrow
-\ge
+\ge arrow
 \dn 箭
-\gn
+\gn 箭
 \gr
 \df flèche
-\gf
+\gf flèche
 \xv ʐe˧zo˧ ɖɯ˧-kʰɯ˩
-\xe
-\xn
+\xe one arrow
+\xn 一个箭
 \xf une flèche
 \rf
 \xv
@@ -147684,6 +147681,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʑi˩˥
 \sf <nb="B"> 1912
@@ -148781,7 +148779,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -148807,12 +148805,12 @@
 \pdv ɭɯ˧˥
 \pdf
 \de bed
-\ge
+\ge bed
 \dn 床
-\gn
+\gn 床
 \gr
 \df lit (le couchage entier)
-\gf
+\gf lit
 \xv
 \xe
 \xn
@@ -148824,6 +148822,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʑi˩zo#˥
 \sf <nb="B"> 
@@ -150317,7 +150316,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -150344,23 +150343,26 @@
 \pdv ʐɤ˩
 \pdf
 \de lines, pattern
-\ge
+\ge lines/pattern
 \dn 纹路
-\gn
+\gn 纹路
 \gr
 \df motif
-\gf
+\gf motif
 \xv ʐɤ˩ʐɤ˧ tʰi˧-di˥ 
-\xe
-\xn
+\xe with lines/patterns / there are lines/patterns
+\xn 有纹路
 \xf qui a des motifs, des dessins (ex.: un tissu)
 \rf F5
 \xv bɑ˩lɑ˩˥ | ʈʰɯ˧-ɭɯ˥-bi˩ | ʐɤ˩ʐɤ˧ tʰi˧-di˥
+\xe There are lines/patterns on this piece of clothing.
+\xn 这衣服上面有纹路。
 \xf sur ce vêtement il y a un motif
 \rf
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx zo˧zo˧-mv˧mv˥
 \sf <nb="B"> 
@@ -150370,7 +150372,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -150395,12 +150397,12 @@
 \pdv kʰwɤ˥
 \pdf
 \de thing, thingummy
-\ge
+\ge thingummy
 \dn 东西
-\gn
+\gn 东西
 \gr
 \df truc, bidule
-\gf
+\gf bidule
 \xv
 \xe
 \xn
@@ -150412,6 +150414,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx zo˧ʐɤ#˥
 \sf <nb="B"> 
@@ -150656,7 +150659,6 @@
 \gr
 \df auto-classificateur de la vie, de l'existence entière
 \gf °clf.vie
-\xv
 \xv ɖɯ˧-zɯ˧
 \xe all of (one's) life, a lifetime
 \xn 一辈子
@@ -150670,7 +150672,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -150695,12 +150697,12 @@
 \pdv kʰɤ˧˥
 \pdf
 \de grass
-\ge
+\ge grass
 \dn 草
-\gn
+\gn 草
 \gr
 \df herbe
-\gf
+\gf herbe
 \xv
 \xe
 \xn
@@ -150712,6 +150714,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐɯ˧
 \sf <nb="B"> 396
@@ -150878,7 +150881,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -150920,6 +150923,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐɯ˩gv˩
 \sf <nb="B"> 1782
@@ -150930,14 +150934,14 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
 \sd <lang="fra"> objet
 \sd <lang="eng"> object
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> (confirmé en 09: n'est pas ʐv˩gv˩˧)
+\nt <type="hist" print="n"> (confirmé à plusieurs reprises, notamment en 09: n'est pas ʐv˩gv˩˧) 
 \nt <type="hist" print="n"> 
 \nt <type="sem"> serait lié à gv˧ "auge" (cf forme des bateaux au lac)
 \np
@@ -150956,23 +150960,24 @@
 \pdv nɑ˧
 \pdf
 \de boat
-\ge
+\ge boat
 \dn 船
-\gn
+\gn 船
 \gr
 \df canot, bateau (utilisé uniquement pour les barques circulant sur le Lac, pas pour les autres bateaux)
-\gf
+\gf canot/bateau
 \xv ʐɯ˩gv˩ dzi˩˥
-\xe
-\xn
+\xe to sit in a boat
+\xn 坐船
 \xf être assis dans un bateau, être à bord d'un bateau
 \rf
 \xv
 \xf
-\rf M23
+\rf
 \xv
 \xf
-\xc (vérifié, n'est pas /ʐv/)
+\xc
+\dt 17/Apr/2015
 
 \lx zɯ˧hṽ˩
 \sf <nb="B"> 960
@@ -151188,7 +151193,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -151198,7 +151203,7 @@
 \nt <type="hist" print="n"> 
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
-\np sens: foin ou herbe: un même mot pour les deux; dans la maison, on ne stocke que de la paille de riz, pas de foin; on utilise aussi ce mot pour "de l'herbe sèche" (herbe cueillie verte puis séchée=foin).
+\np sens: foin ou herbe: un même mot pour les deux; 
 \np <type="tone"> L#
 \nd
 \so <print="n"> F4
@@ -151212,13 +151217,13 @@
 \pdl classifier
 \pdv kʰɤ˧˥
 \pdf
-\de hay
-\ge
+\de hay, dry grass
+\ge hay
 \dn 干草
-\gn
+\gn 干草
 \gr
-\df paille, foin
-\gf
+\df foin; s'emploie aussi parfois pour désigner la paille: dans la maison, on ne stocke que de la paille de riz, pas de foin; l'herbe cueillie verte puis séchée (foin) n'est pas entreposée, mais aussitôt donnée aux animaux.
+\gf foin
 \xv
 \xe
 \xn
@@ -151230,6 +151235,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx zɯ˧-qʰɑ˧mi#˥
 \sf <nb="B"> 
@@ -151239,7 +151245,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -151263,13 +151269,13 @@
 \pdl classifier
 \pdv po˧
 \pdf
-\de grass roots
-\ge grass_roots
+\de sabai grass, |fi{Eulaliopsis binata (Retz.) C. E. Hubb.}
+\ge sabai_grass
 \dn 蓑草、山草、山草根、龙须草、山茅草、羊草、拟金茅
-\gn
+\gn 蓑草
 \gr 狗尾巴草
-\df Eulaliopsis binata (Retz.) C. E. Hubb. Graminée sauvage, peu prisée du bétail. Ses racines ne sont guère prisées du bétail non plus, et ne sont jamais consommées par les hommes. Elles étaient utilisées dans les rituels: elles ont une odeur forte à la combustion.
-\gf herbe_sauvage
+\df |fi{Eulaliopsis binata (Retz.) C. E. Hubb.}, herbe sauvage. L'herbe n'est pas prisée du bétail, non plus que ses racines, et n'est jamais consommée par les humains. Les racines de cette herbe sont utilisées dans les rituels: elles ont une odeur forte à la combustion.
+\gf herbe_sabai
 \xv
 \xe
 \xn
@@ -151281,6 +151287,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx zɯ˧ɻ#˥
 \sf <nb="B"> 
@@ -151910,7 +151917,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -151934,13 +151941,13 @@
 \pdl classifier
 \pdv qɑ˩
 \pdf botte
-\de type of plant that can be fed to the pigs
-\ge
-\dn 能畏给猪的一种植物
-\gn
+\de one of the three types of pig fodder
+\ge pig_fodder
+\dn 能畏给猪的三种植物之一
+\gn 畏猪的草
 \gr
-\df végétal sp. qu'on peut donner aux cochons; pas réussi à l'identifier; TS propose comme étymologie populaire "serpent en colère", du fait que cette plante a des feuilles grasses qui ressemblent à un serpent, et qui sont entortillées
-\gf
+\df l'une des trois sortes de fourrage que l'on donne aux cochons; M18 propose comme étymologie populaire "serpent en colère", du fait que cette plante a des feuilles grasses qui ressemblent à un serpent, et qui sont entortillées
+\gf fourrage_pour_cochon
 \xv
 \xe
 \xn
@@ -151952,6 +151959,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐv˧bæ˧-mi˩
 \sf <nb="B"> 
@@ -152221,7 +152229,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -152263,6 +152271,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐv˧hĩ#˥
 \sf <nb="B"> 
@@ -152320,7 +152329,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -152363,6 +152372,7 @@
 \xv
 \xf
 \xc
+\dt 16/Apr/2015
 
 \lx ʐv˩ɭɯ˥
 \sf <nb="B"> 
@@ -152423,7 +152433,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -152448,12 +152458,12 @@
 \pdv nɑ˧
 \pdf
 \de bow
-\ge
+\ge bow
 \dn 弓
-\gn
+\gn 弓
 \gr
 \df arc
-\gf
+\gf arc
 \xe
 \xn
 \xf
@@ -152464,6 +152474,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐv˧mi#˥
 \sf <nb="B"> 285b
@@ -152835,7 +152846,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -152860,12 +152871,12 @@
 \pdv nɑ˧
 \pdf
 \de small bow
-\ge
+\ge small_bow
 \dn 小弓
-\gn
+\gn 小弓
 \gr
 \df petit arc
-\gf
+\gf petit arc
 \xv
 \xe
 \xn
@@ -152877,6 +152888,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐwæ˩
 \sf <nb="B"> 2304
@@ -153474,7 +153486,7 @@
 \bw
 \et
 \ec <lang="fra"> 
-\ps
+\ps n
 \sn
 \cf
 \cf <type="hm"> 
@@ -153498,13 +153510,13 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de
-\ge
-\dn
-\gn
+\de lunge, tether (for a horse)
+\ge lunge
+\dn 系链
+\gn 系链
 \gr
 \df longe, objet pour accrocher le cheval
-\gf
+\gf longe
 \xv
 \xe
 \xn
@@ -153516,6 +153528,7 @@
 \xv
 \xf
 \xc
+\dt 17/Apr/2015
 
 \lx ʐwæ˧-qʰæ#˥
 \sf <nb="B"> 
@@ -191602,57 +191615,6 @@
 \gr
 \df
 \gf
-\xv
-\xe
-\xn
-\xf
-\rf
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-
-\lx ???
-\sf <nb="B"> 
-\sf <nb="2011"> 
-\hm
-\ph màncǎo
-\bw
-\et
-\ec <lang="fra"> 
-\ps
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> 
-\sd <lang="eng"> 
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np
-\np <type="tone"> 
-\nd
-\so <print="n"> 
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de trailing plant; twiner; creeper; vine
-\ge
-\dn 蔓草
-\gn
-\gr
-\df yyyy
-\gf plantes_rampantes
 \xv
 \xe
 \xn
