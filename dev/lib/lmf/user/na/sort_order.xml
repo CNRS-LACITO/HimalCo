@@ -2,93 +2,76 @@
 <!-- Sort order for Na -->
 <SortOrder>
 	<rules level="1">
-		<rule str="" rank="0"/>
-		<rule str="ɑ" rank="1"/> <!-- rime -->
-		<rule str="ɑ̃" rank="2"/> <!-- rime -->
-		<rule str="æ" rank="3"/> <!-- rime -->
-		<rule str="b" rank="4"/>
-		<rule str="ɕ" rank="5"/>
-		<rule str="d" rank="6"/>
-		<rule str="dz" rank="7"/>
-		<rule str="dʑ" rank="8"/>
-		<rule str="ɖ" rank="9"/>
-		<rule str="ɖʐ" rank="10"/>
-		<rule str="e" rank="11"/> <!-- rime -->
-		<rule str="ɤ" rank="12"/> <!-- rime -->
-		<rule str="ə" rank="13"/> <!-- rime -->
-		<rule str="f" rank="14"/>
-		<rule str="g" rank="15"/>
-		<rule str="ɣ" rank="16"/>
-		<rule str="h" rank="17"/>
-		<rule str="i" rank="18"/> <!-- rime -->
-		<rule str="ĩ" rank="19"/> <!-- rime -->
-		<rule str="jæ" rank="20"/> <!-- rime -->
-		<rule str="jɤ" rank="20.1"/> <!-- rime -->
-		<rule str="jo" rank="20.2"/> <!-- rime -->
-		<rule str="ʝ" rank="21"/>
-		<rule str="k" rank="22"/>
-		<rule str="kʰ" rank="23"/>
-		<rule str="l" rank="24"/> <rule str="ɭ" rank="24.1"/>
-		<rule str="ɬ" rank="25"/> 
-		<rule str="m" rank="26"/>
-		<rule str="n" rank="27"/>
-		<rule str="ɳ" rank="28"/>
-		<rule str="ɲ" rank="29"/>
-		<rule str="ŋ" rank="30"/>
-		<rule str="o" rank="31"/> <!-- rime -->
-		<rule str="õ" rank="32"/> <!-- rime -->
-		<rule str="p" rank="33"/>
-		<rule str="pʰ" rank="34"/>
-		<rule str="q" rank="35"/>
-		<rule str="qʰ" rank="36"/>
-		<rule str="ɻ" rank="37"/> <!-- rime ou initiale -->
-		<rule str="ɻ̃" rank="38"/> <!-- rime -->
-		<rule str="ʁ" rank="39"/>
-		<rule str="s" rank="40"/>
-		<rule str="ʂ" rank="41"/>
-		<rule str="t" rank="42"/>
-		<rule str="tʰ" rank="43"/>
-		<rule str="tɕ" rank="44"/>
-		<rule str="tɕʰ" rank="45"/>
-		<rule str="ts" rank="46"/>
-		<rule str="tsʰ" rank="47"/>
-		<rule str="ʈ" rank="48"/>
-		<rule str="ʈʰ" rank="49"/>
-		<rule str="ʈʂ" rank="50"/>
-		<rule str="ʈʂʰ" rank="51"/>
-		<rule str="u" rank="52"/> <!-- rime -->
-		<rule str="ɯ" rank="53"/> <!-- rime -->
-		<rule str="v" rank="54"/> <!-- rime -->
-		<rule str="wɑ" rank="55"/> <!-- rime marginale: emprunts chinois -->
-		<rule str="wæ" rank="55.1"/>
-		<rule str="wɤ" rank="55"/>
-		<rule str="w" rank="55"/>
-		<rule str="w̃" rank="56"/>
-		<rule str="z" rank="57"/>
-		<rule str="ʐ" rank="58"/>
-		<rule str="ʑ" rank="59"/>
+		<rule str="" rank="0" type="None"/>
+		<rule str="ɑ" rank="1" type="rime"/>
+		<rule str="ɑ̃" rank="2" type="rime"/>
+		<rule str="æ" rank="3" type="rime"/> <rule str="æ̃" rank="3.1" type="rime"/>
+		<rule str="b" rank="4" type="initial"/>
+		<rule str="ɕ" rank="5" type="initial"/>
+		<rule str="d" rank="6" type="initial"/>
+		<rule str="dz" rank="7" type="initial"/>
+		<rule str="dʑ" rank="8" type="initial"/>
+		<rule str="ɖ" rank="9" type="initial"/>
+		<rule str="ɖʐ" rank="10" type="initial"/>
+		<rule str="e" rank="11" type="rime"/>
+		<rule str="ɤ" rank="12" type="rime"/> <rule str="ɤ̃" rank="12.1" type="rime"/>
+		<rule str="ə" rank="13" type="rime"/>
+		<rule str="f" rank="14" type="initial"/>
+		<rule str="g" rank="15" type="initial"/>
+		<rule str="ɣ" rank="16" type="initial"/>
+		<rule str="h" rank="17" type="initial"/>
+		<rule str="i" rank="18" type="rime"/>
+		<rule str="ĩ" rank="19" type="rime"/>
+		<rule str="j" rank="20" type="initial"/> <rule str="jæ" rank="20.1" type="rime"/> <rule str="jɤ" rank="20.2" type="rime"/> <rule str="jo" rank="20.3" type="rime"/>
+		<rule str="ʝ" rank="21" type="initial"/>
+		<rule str="k" rank="22" type="initial"/>
+		<rule str="kʰ" rank="23" type="initial"/>
+		<rule str="l" rank="24" type="initial"/> <rule str="ɭ" rank="24.1" type="initial"/>
+		<rule str="ɬ" rank="25" type="initial"/>
+		<rule str="m" rank="26" type="initial"/>
+		<rule str="n" rank="27" type="initial"/>
+		<rule str="ɳ" rank="28" type="initial"/>
+		<rule str="ɲ" rank="29" type="initial"/>
+		<rule str="ŋ" rank="30" type="initial"/>
+		<rule str="o" rank="31" type="rime"/>
+		<rule str="õ" rank="32" type="rime"/>
+		<rule str="p" rank="33" type="initial"/>
+		<rule str="pʰ" rank="34" type="initial"/>
+		<rule str="q" rank="35" type="initial"/>
+		<rule str="qʰ" rank="36" type="initial"/>
+		<rule str="ɻ" rank="37" type="initial or rime"/>
+		<rule str="ɻ̃" rank="38" type="rime"/>
+		<rule str="ʁ" rank="39" type="initial"/>
+		<rule str="s" rank="40" type="initial"/>
+		<rule str="ʂ" rank="41" type="initial"/>
+		<rule str="t" rank="42" type="initial"/>
+		<rule str="tʰ" rank="43" type="initial"/>
+		<rule str="tɕ" rank="44" type="initial"/>
+		<rule str="tɕʰ" rank="45" type="initial"/>
+		<rule str="ts" rank="46" type="initial"/>
+		<rule str="tsʰ" rank="47" type="initial"/>
+		<rule str="ʈ" rank="48" type="initial"/>
+		<rule str="ʈʰ" rank="49" type="initial"/>
+		<rule str="ʈʂ" rank="50" type="initial"/>
+		<rule str="ʈʂʰ" rank="51" type="initial"/>
+		<rule str="u" rank="52" type="rime"/>
+		<rule str="ɯ" rank="53" type="rime"/>
+		<rule str="v" rank="54" type="rime"/> <rule str="ṽ" rank="54.1" type="rime"/>
+		<rule str="w" rank="55" type="initial"/> <rule str="wɑ" rank="55.1" type="rime"/> <!-- rime marginale : emprunts chinois --> <rule str="wæ" rank="55.2" type="rime"/> <rule str="wɤ" rank="55.3" type="rime"/>
+		<rule str="w̃" rank="56" type="initial"/>
+		<rule str="z" rank="57" type="initial"/>
+		<rule str="ʐ" rank="58" type="initial"/>
+		<rule str="ʑ" rank="59" type="initial"/>
 		<!-- Special characters -->
-		<rule str="x" rank="60"/>
-		<rule str="¹" rank="60.1"/>
-		<rule str="²" rank="60.2"/>
-		<rule str="³" rank="60.3"/>
-		<rule str="⁴" rank="60.4"/>
-		<rule str=" " rank="60.5"/>
-		<rule str="_" rank="60.6"/>
-		<rule str="‑" rank="60.7"/>
-		<rule str="*" rank="60.8"/>
-		<rule str="#" rank="60.9"/>
-		<rule str="?" rank="61"/>
-		<rule str="." rank="61.1"/>
-		<rule str="~" rank="61.2"/>
-		<rule str="ʰ" rank="61.3"/>
-		<rule str="˭" rank="61.4"/>
-		<rule str="1" rank="62.1"/> <rule str="2" rank="62.2"/>
-		<rule str="˥" rank="63"/>
-		<rule str="˧" rank="64"/>
-		<rule str="˩" rank="65"/>
-		<rule str="˧˥" rank="66"/>
-		<rule str="˩˥" rank="67"/>
-		<rule str="˩˧" rank="68"/>    
+		<rule str="x" rank="60" type="None"/>
+		<rule str="*" rank="60.1" type="None"/>
+		<rule str="?" rank="60.2" type="None"/>
+		<!-- Tones -->
+		<rule str="˥" rank="61" type="tone"/>
+		<rule str="˧" rank="62" type="tone"/>
+		<rule str="˩" rank="63" type="tone"/>
+		<rule str="˧˥" rank="64" type="tone"/>
+		<rule str="˩˥" rank="65" type="tone"/>
+		<rule str="˩˧" rank="66" type="tone"/>
 	</rules>
 </SortOrder>

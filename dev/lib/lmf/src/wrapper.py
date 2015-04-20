@@ -46,7 +46,7 @@ def wrapper_rw(func, *args, **kwds):
             if wrapper.lexical_resource.get_lexicon(object.get_id()) is None:
                 wrapper.lexical_resource.add_lexicon(object)
             return wrapper.lexical_resource
-        elif type(object) == type(dict()):
+        elif type(object) == type(dict()) or type(object) == type(tuple()):
             return object
     except Error as exception:
         ## A library error has occured

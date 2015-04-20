@@ -22,7 +22,7 @@ if not os.path.exists(user_path + "na/result"):
 import lmf
 
 # Import user customized configuration
-from setting import tex_eng, tex_fra, items
+from setting import tex_eng, tex_fra, items, classify_lexicon
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
@@ -33,8 +33,8 @@ os.system("python " + user_path + "../src/utils/uid/uid.py -i " + user_path + "n
 lexical_resource = lmf.read_mdf(id="na")
 
 # Classify lexicon
-xml_order = lmf.read_sort_order(user_path + "na/sort_order.xml")
-lexical_resource.get_lexicon("na").sort_lexical_entries(items=items, sort_order=xml_order)
+(xml_order, xml_type) = lmf.read_sort_order(user_path + "na/sort_order.xml")
+classify_lexicon(lexical_resource.get_lexicon("na"), xml_order, xml_type)
 
 # Write LaTeX files
 lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order)
