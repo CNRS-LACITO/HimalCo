@@ -33,9 +33,12 @@ classify_lexicon(lexical_resource.get_lexicon("na"), xml_order, xml_type)
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")
 
+# Generate tables
+os.system("python " + user_path + "../src/utils/tables/tables.py -i " + user_path + "../../../../dict/na/toolbox/Dictionary.txt -e " + user_path + "na/result/table_eng.tex -f " + user_path + "na/result/table_fra.tex")
+
 # Write LaTeX files
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order)
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_eng.tex"])
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"])
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt")

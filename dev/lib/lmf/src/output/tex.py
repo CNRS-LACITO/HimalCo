@@ -50,7 +50,7 @@ def insert_references(lexical_entry):
             text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
     return text
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[]):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[]):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -158,6 +158,12 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
         tex_file.write(EOL)
         tex_file.write("\\newpage" + EOL)
         tex_file.write("\markboth{paradigms}{}" + EOL)
+        tex_file.write(file_read(filename))
+        tex_file.write(EOL)
+    # Insert other tables if any
+    for filename in tables:
+        tex_file.write(EOL)
+        tex_file.write("\\newpage" + EOL)
         tex_file.write(file_read(filename))
         tex_file.write(EOL)
     tex_file.write("\end{document}" + EOL)

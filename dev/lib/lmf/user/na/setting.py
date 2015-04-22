@@ -486,8 +486,8 @@ def tex_fra(lexical_entry, font):
     """
     import output.tex as tex
     tex_entry = ""
-    # Do not display lexical entry if lexeme is '???'
-    if lexical_entry.get_lexeme() == "???":
+    # Do not display lexical entry if lexeme is '???' or '*'
+    if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
@@ -519,8 +519,8 @@ def tex_eng(lexical_entry, font):
     """
     import output.tex as tex
     tex_entry = ""
-    # Do not display lexical entry if lexeme is '???'
-    if lexical_entry.get_lexeme() == "???":
+    # Do not display lexical entry if lexeme is '???' or '*'
+    if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
