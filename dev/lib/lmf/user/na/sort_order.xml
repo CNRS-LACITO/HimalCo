@@ -22,7 +22,9 @@
 		<rule str="h" rank="17"/>
 		<rule str="i" rank="18"/> <!-- rime -->
 		<rule str="ĩ" rank="19"/> <!-- rime -->
-		<rule str="j" rank="20"/>
+		<rule str="jæ" rank="20"/> <!-- rime -->
+		<rule str="jɤ" rank="20.1"/> <!-- rime -->
+		<rule str="jo" rank="20.2"/> <!-- rime -->
 		<rule str="ʝ" rank="21"/>
 		<rule str="k" rank="22"/>
 		<rule str="kʰ" rank="23"/>
@@ -57,6 +59,9 @@
 		<rule str="u" rank="52"/> <!-- rime -->
 		<rule str="ɯ" rank="53"/> <!-- rime -->
 		<rule str="v" rank="54"/> <!-- rime -->
+		<rule str="wɑ" rank="55"/> <!-- rime marginale: emprunts chinois -->
+		<rule str="wæ" rank="55.1"/>
+		<rule str="wɤ" rank="55"/>
 		<rule str="w" rank="55"/>
 		<rule str="w̃" rank="56"/>
 		<rule str="z" rank="57"/>
