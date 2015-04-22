@@ -32,7 +32,7 @@ def classify_lexicon(lexicon, sort_order, sort_type):
         unknown = set(["xxxx", "???", ""])
         cmp_x = x
         cmp_y = y
-        pattern = "^([jw]?[" + initials.replace('j', '').replace('w', '') + "]{0,3})[jw]?([" + rimes + "]{1,2})#?([" + tones + "]{0,2})[$#]?[abcd123]?(.*)"
+        pattern = "^([" + initials.replace('j', '').replace('w', '') + "]{0,3})([" + rimes + "]{1,2})#?([" + tones + "]{0,2})[$#]?[abcd123]?(.*)"
         n = 4
         while(n > 0):
             initial_x = ""

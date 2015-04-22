@@ -22,7 +22,7 @@
 		<rule str="h" rank="17" type="initial"/>
 		<rule str="i" rank="18" type="rime"/>
 		<rule str="ĩ" rank="19" type="rime"/>
-		<rule str="j" rank="20" type="initial"/> <rule str="jæ" rank="20.1" type="rime"/> <rule str="jɤ" rank="20.2" type="rime"/> <rule str="jo" rank="20.3" type="rime"/>
+		<rule str="j" rank="20" type="initial"/> <rule str="jæ" rank="20.1" type="rime"/> <rule str="jɤ" rank="20.2" type="rime"/> <rule str="jo" rank="20.3" type="rime"/> <rule str="je" rank="20.4" type="rime"/>
 		<rule str="ʝ" rank="21" type="initial"/>
 		<rule str="k" rank="22" type="initial"/>
 		<rule str="kʰ" rank="23" type="initial"/>
@@ -57,8 +57,8 @@
 		<rule str="u" rank="52" type="rime"/>
 		<rule str="ɯ" rank="53" type="rime"/>
 		<rule str="v" rank="54" type="rime"/> <rule str="ṽ" rank="54.1" type="rime"/>
-		<rule str="w" rank="55" type="initial"/> <rule str="wɑ" rank="55.1" type="rime"/> <!-- rime marginale : emprunts chinois --> <rule str="wæ" rank="55.2" type="rime"/> <rule str="wɤ" rank="55.3" type="rime"/>
-		<rule str="w̃" rank="56" type="initial"/>
+		<rule str="w" rank="55" type="initial"> </rule> <rule str="wɑ" rank="55.1" type="rime"/> <!-- rime marginale : emprunts chinois --> <rule str="wæ" rank="55.2" type="rime"/> <rule str="wɤ" rank="55.3" type="rime"/> <rule str="wo" rank="55.4" type="rime"/>
+		<rule str="w̃" rank="56" type="initial"/> <rule str="w̃æ" rank="56.1" type="rime"/>
 		<rule str="z" rank="57" type="initial"/>
 		<rule str="ʐ" rank="58" type="initial"/>
 		<rule str="ʑ" rank="59" type="initial"/>
