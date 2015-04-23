@@ -984,7 +984,7 @@
 \xn 母鸡与稚鸡
 \xf poule et poussins
 \xc <type="tone"> LM+H#
-\rf F4
+\rf
 \xv
 \xf
 \xc
@@ -1037,7 +1037,7 @@
 \rf
 \xv
 \xf
-\rf M23
+\rf
 \xv
 \xf
 \xc
@@ -1561,6 +1561,7 @@
 \xe vivid-coloured, blue-green; literally 'like a parrot', i.e. 'parrot-coloured'
 \xn 有类似于鹦鹉的颜色：青、蓝色、绿色
 \xf couleur perroquet; littéralement 'comme un perroquet'
+\rf F5
 \xv æ̃˧qæ˩-bɑ˩lɑ˩
 \xe vivid-coloured, blue-green jacket: literally 'parrot(-coloured) jacket'
 \xn 青、蓝色、绿色衣服
@@ -1572,7 +1573,6 @@
 \xf °red; même sens: bleu-vert
 \xc <lang="eng"> not accepted by F4
 \xc <lang="fra"> Expression qui n'est pas acceptée par F4
-\rf F5
 \xe
 \xn
 \xf
@@ -6027,7 +6027,7 @@
 \de small dike (as at the edge of a field; one can walk on it)
 \ge
 \dn 田埂、小堤坝
-\gn
+\gn 田埂
 \gr
 \df diguette en bord de champ, sur laquelle on peut marcher
 \gf diguette_en_bord_de_champ
@@ -6038,8 +6038,9 @@
 \xv bo˧-kʰi˧
 \xf le bord de la diguette
 \rf F5
-\xv bo˧ ɖɯ˧-pʰæ˧˥, cl refusé par M23, qui indique: /ɖɯ˧-ɭɯ/.
-\xf cl refusé par M23, qui indique: /ɖɯ˧-ɭɯ/.
+\xv bo˧ ɖɯ˧-pʰæ˧˥
+\xf une diguette
+\xc <lang="fra"> classificateur refusé par M23, qui indique: /ɖɯ˧-ɭɯ/
 \rf
 \xv
 \xf
@@ -6993,7 +6994,6 @@
 \xc <type="sem" lang="fra"> It is not usual to build the coordinative compound the other way round, 'piglets and sow': fv:/*bæ˧bv˥-bo˩mi˩/.
 \xc <type="tone"> LM+H#
 \rf 
-
 \xv
 \xf
 \xc
@@ -16928,7 +16928,8 @@
 \xv ɖʐæ˧qʰæ˧ ʐæ˧~ʐæ˥
 \xe There is mud; mud has formed.
 \xn 有泥巴了
-\xf De la boue s'est formée; il y a de la boue, c'est tout boueux. (Littéralement: "de la boue s'est mélangée".) (Note: cette formulation n'est pas acceptée par la locutrice F4.)
+\xf De la boue s'est formée; il y a de la boue, c'est tout boueux. (Littéralement: "de la boue s'est mélangée".)
+\xc <lang="fra"> Cette formulation n'est pas acceptée par la locutrice F4.
 \rf
 \xv
 \xf
@@ -27280,18 +27281,18 @@
 \xe (He/she) works very slowly! (This does not necessarily imply 'too slowly')
 \xn
 \xf (Il/elle) travaille très lentement! (Cette phrase n'a pas nécessairement le sens de 'trop lentement')
+\rf F5
 \xv ə˧-dzɤ˧~dzɤ˥ ʝi˩
 \xe to do (something) slowly
 \xn 慢慢地做
 \xf travailler lentement, faire lentement
-\rf F5
+\rf M21
 \xv ə˧-zɤ˧~zɤ˥ ʝi˩
 \xe to do (something) slowly
 \xn 慢慢地做
 \xf Travaille doucement! / Prends ton temps! / travailler lentement, faire lentement
 \xc <lang="eng"> Tones verified: the tone pattern is not *˧ ˧ ˥ ˧
 \xc <lang="fra"> Tons vérifiés: le schéma n'est pas *˧ ˧ ˥ ˧
-\rf M21
 \dt 14/Aug/2014
 
 \lx ə˧go˧
@@ -42439,9 +42440,9 @@
 \sd <lang="fra"> nourriture
 \sd <lang="eng"> food
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> sens du mot employé par M23: "médicament noir"
 \nt <type="hist" print="n"> (corrigé en ˧ ˧ ˧ le 5/11/2007; auparavant, noté ˥ ˥ ˥)
-\nt <type="sem"> (emprunt)
+\nt <type="sem"> (emprunt) 
 \np
 \np <type="tone"> #H
 \nd
@@ -42471,10 +42472,10 @@
 \rf
 \xv
 \xf
-\rf M23
+\rf
 \xv
 \xf
-\xc <lang="fra"> sens: "médicament noir"
+\xc
 \dt 28/Sep/2014
 
 \lx je˩ʐe˧
@@ -47771,23 +47772,23 @@
 \dn 周围、左右、旁边
 \gn 周围
 \gr
-\df aux alentours de, au bord de, auprès_de
-\gf
+\df aux alentours de, au bord de, auprès de
+\gf auprès_de
 \xv ʑi˧qʰwɤ˧-kʰi˧~kʰi˧
 \xe near the house, in the vicinity of the house
 \xn 房子周围
 \xf aux alentours de la maison
+\rf F5
 \xv njɤ˧-bv˧ | kʰi˧~kʰi˧
 \xe near me, around me
 \xn 我的周围
 \xf à côté de moi, autour de moi
-\rf F5
 \xc <lang="fra"> emploi nominalisé
+\rf M21
 \xv ʐɤ˩mi˩-kʰi˩~kʰi˩ se˩˥
 \xe to walk on the roadside, to walk by the side of the road
 \xn 走在马路边
-\xf marcher au  bord de la route
-\rf M21
+\xf marcher au bord de la route
 \xv
 \xf
 \rf
@@ -64463,11 +64464,11 @@
 \gr
 \df cendres
 \gf cendres
+\rf F5
 \xv lwæ˩pʰv˩-ni˥gv˩
 \xe grey; literally: "like ashes"
 \xn 灰色的（直译：“像白灰”）
 \xf de couleur grise; littéralement "comme de la cendre"
-\rf F5
 \xf
 \xv
 \xf
@@ -69778,10 +69779,6 @@
 \rf
 \xv
 \xf
-\rf M23
-\xv
-\xf
-\xc +ɲi˩
 \dt 11/Jul/2014
 
 \lx mv˧gv˧-kʰv˩
@@ -72395,8 +72392,6 @@
 \xn 由于即将打……
 \xf puisqu'elle/il est sur le point de frapper...
 \xc PHONO
-\rf 
-
 \dt 13/Apr/2015
 
 \lx mv˧~mv˥-di˩
@@ -77075,7 +77070,6 @@
 \xe to drink milk
 \xn 喝奶
 \xf boire du lait
-\rf F5
 \xv
 \xv
 \xf
@@ -85391,11 +85385,11 @@
 \gr
 \df ballon
 \gf ballon
+\rf F5
 \xv po˧po˧ lɑ˧˥ 
 \xe to play (foot)ball
 \xn 打球
 \xf jouer au ballon
-\rf F5
 \xv
 \xf
 \xc
@@ -96489,11 +96483,11 @@
 \gr
 \df direction, côté
 \gf côté
+\rf "Housebuilding"
 \xv ʐv˧-ɻ˥
 \xe the four directions, the four sides (e.g. of a house)
 \xn 四面
 \xf les quatre directions, les quatre côtés (d'une maison)
-\rf "Housebuilding"
 \xv
 \xf
 \rf
@@ -102379,11 +102373,11 @@
 \xe in the village
 \xn 村子里
 \xf dans le village
+\rf M23
 \xv ɖɯ˧-ʁwɤ˧ mɤ˧-ɲi˩: | ʈʂʰɯ˧-ʁwɤ˧... | ʈʂʰɯ˧-ʁwɤ˧…
 \xe These do not belong to the same village: here, it is the village named...; over there, it is the village named...
 \xn 不是一个村子：这边，是……村，而那边，是……村。
 \xf Ce n'est pas le même endroit (littéralement: ce n'est pas le même village): ici, c'est (le village de)…; là, c'est (le village de)…
-\rf M23
 \xv
 \xf
 \rf
@@ -106762,7 +106756,7 @@
 \xn
 \xf
 \rf F5
-\xv tʰo˧ɕi˧˥, ton d2b (MH#)
+\xv tʰo˧ɕi˧˥
 \xf forêt de pins
 \rf
 \xv
@@ -111440,8 +111434,8 @@
 \xe
 \xn
 \xf
-\rf F5
-\xv +ɲi˩
+\rf
+\xv
 \xf
 \rf
 \xv
@@ -113231,13 +113225,13 @@
 \xn 不怎么好吃！我不喜欢吃！
 \xf Ce n'est pas vraiment bon! Je n'aime pas en manger!
 \xc <lang="fra"> La construction fv{/mɤ˧-tʰɑ˧˥ | mɤ˧-V/} signifie 'pas tellement', fn:‘……不怎么……’.
-\rf
+\rf "Mushrooms"
 \xv ə˩ljɤ˩hæ̃˩ʂɯ˥-mo˩-ʈʂʰɯ˩-dʑo˩, | hĩ˧ | mɤ˧-tʰɑ˧˥ | dv˩-mɤ˧-kv˧˥!
 \xe The Golden Mushroom is not all that poisonous! / The Golden Mushroom is not really dangerous!
 \xn 黄蜡伞不怎么让人中毒！/不怎么会毒害人！
 \xf Le Champignon Doré, il n'est pas si vénéneux que ça!
 \xc <lang="fra"> /mɤ˧-tʰɑ˧˥ | V-mɤ˧-kv˧˥/: signifie 'pas tellement', 'pas tant que ça'
-\rf "Mushrooms"
+\rf
 \xv
 \xf
 \xc
@@ -114470,7 +114464,6 @@
 \xe It has wilted!
 \xn 萎蔫了！
 \xf Ca a fané! (Exemple: une fleur coupée, une fleur abîmée par le vent ou par un soleil trop ardent.)
-\rf F5 & F4
 \xv
 \xf
 \xc
@@ -128251,9 +128244,9 @@
 \xn
 \xf
 \rf
+\rf F5
 \xv tsʰe˧do˧˥tsʰe˩kʰʶv˩ɲi˩˧
 \xf même sens
-\rf F5
 \xv
 \xf
 \xc
@@ -140244,6 +140237,7 @@
 \gr
 \df temps
 \gf temps
+\rf F5
 \xv njɤ˧ | tv˧tsʰɯ˧ mɤ˧-dʑo˧.
 \xe I don't have the time.
 \xn 我没时间。
@@ -140255,7 +140249,6 @@
 \xn 我有时间。
 \xf J'ai du temps libre. / J'ai le temps.
 \xc <lang="fra"> Formule critiquée par F4: on dirait: "je suis libre".
-\rf F5
 \xv
 \xf
 \xc
@@ -147665,11 +147658,11 @@
 \xn
 \xf
 \rf
+\rf F5
 \xv le˧-ko˧~ko˥ | po˧tsʰɯ˧ (+ tʰv˧-v˧ / zo˧mv˥)
 \xe [This child] has been adopted (literally "has been picked up")
 \xn （这个孩子）被领养。
 \xf il a été adopté; littéralement: "il a été ramassé, celui-là/cet enfant"
-\rf F5
 \xv
 \xf
 \xc
@@ -150769,7 +150762,7 @@
 \xv ʁo˧do˧ ʐwæ˧
 \xf peser des noix
 \rf F5
-\xv tso˧tso˧ʐwæ˩ (+ze˩) "peser des choses"
+\xv tso˧tso˧ ʐwæ˩ (+ze˩) "peser des choses"
 \xf
 \rf
 \xv
@@ -155295,10 +155288,10 @@
 \xe to buy one after the other (context: someone buys one horse after the other, to put together a complete caravan of his own)
 \xn 一个接着一个地买（景况：一个人买马，一个接着一个地买，构成自己的马帮队）
 \xf en acheter un après l'autre (contexte: un caravanier achète des chevaux l'un après l'autre, afin de se constituer sa propre caravane)
+\rf F5
 \xv gi˧˥ | ɖɯ˧-qɑ˩ gv˩-bi˩!
 \xe Let's do one last bundle! (Context: women are extracting flax fiber, processing bundle after bundle; towards the end of a long work session, someone says: "Let's do one last bundle! / One last bundle and we shall call it a day!")
 \xf On va en faire une dernière botte! (contexte: on travaille le lin, botte après botte; vers la fin d'une longue séance de travail, quelqu'un annonce: "On va en faire une dernière botte! / Une dernière botte, et on s'arrête!")
-\rf F5
 \xv gi˧-se˧
 \xe to walk after, to follow after
 \xn 在后面走，在后面跟着
@@ -155801,6 +155794,7 @@
 \xn 因为他病了，他不吃饭。
 \xf Comme il est malade, il ne mange pas.
 \xc <lang="fra"> On ne peut se passer du fv:/lɑ/: fv{/*ʈʂʰɯ˧ gu˩ kwɤ˩-tɕi˧, hɑ˧ mɤ˧-dzɯ˥/}.
+\rf M18
 \xv ʈʂʰɯ˧ne˧-ʝi˥ | pi˧-kwɤ˩-tɕɯ˩-lɑ˩, | wɤ˩˥ | lɑ˧hɑ˥ | ɖɯ˧-kʰwɤ˧ ʐwɤ˧˥.
 \xe After he said that, he went on to say something different / he changed his mind and said something quite different.
 \xn 他这样说完以后，又换了一个说法/又讲了其它的。
@@ -155809,7 +155803,6 @@
 \xv ʈʂʰɯ˧ | tʰi˧-dzi˩-kwɤ˩-tɕɯ˩, | ɖɯ˧-kʰwɤ˧ ʐwɤ˧-ɻ˥: | "sɤ˧sɤ˧˥ | ʐwæ˧˥!"
 \xe After he got seated, he said the following: "How comfortable!"
 \xf après s’être assis/lorsqu’il fut assis, il dit une phrase: "quel confort"
-\rf M18
 \xv -kwɤ˧tɕɯ˥-lɑ˩
 \xe same meaning
 \xn 同上
