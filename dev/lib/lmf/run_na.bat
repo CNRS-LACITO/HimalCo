@@ -9,7 +9,7 @@
 ::python user/na/alexis/run_na.py
 
 :: LaTeX file is generated without sound records and with cross references
-python user/na/alexis/run_na.py -a
+python user/na/alexis/run_na.py -a > log.txt
 
 :: LaTeX file is generated with sound records and without cross references
 ::python user/na/alexis/run_na.py -c
