@@ -385,17 +385,21 @@ def format_audio(lexical_entry, font):
             result += " \\hspace{0.1cm}" + EOL
     return result
 
-def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex):
+def format_part_of_speech(lexical_entry, font, mapping=partOfSpeech_tex, language=None):
     """! @brief Display part of speech in LaTeX format.
     @param lexical_entry The current Lexical Entry LMF instance.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param mapping A Python dictionary giving the mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout.
+    @param language Language to consider to display part of speech.
     @return A string representing part of speech in LaTeX format.
     """
     result = ""
     if lexical_entry.get_partOfSpeech() is not None:
         try:
-            result += "\\textit{" + mapping[lexical_entry.get_partOfSpeech()] + "}. "
+            if language is None:
+                result += "\\textit{" + mapping[lexical_entry.get_partOfSpeech()] + "}. "
+            else:
+                result += "\\textit{" + mapping[(language, lexical_entry.get_partOfSpeech())] + "}. "
         except KeyError:
             print Warning("Part of speech value '%s' encountered for lexeme '%s' is not defined in configuration" % (lexical_entry.get_partOfSpeech().encode(ENCODING), lexical_entry.get_lexeme().encode(ENCODING)))
     return result

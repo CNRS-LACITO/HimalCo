@@ -153,8 +153,11 @@ def config_read(filename):
         elif format.tag == "LaTeX":
             for param in format:
                 if param.tag == "partOfSpeech_tex":
-                    # XML elements "partOfSpeech_tex" have 2 XML attributes: one for the LMF value ("partOfSpeech"), a second for the LaTeX value ("tex")
-                    partOfSpeech_tex.update({param.attrib['partOfSpeech']: param.attrib['tex']})
+                    # XML elements "partOfSpeech_tex" have 2 or 3 XML attributes: one for the LMF value ("partOfSpeech"), a second for the LaTeX value ("tex"), and an optional one to define language
+                    try:
+                        partOfSpeech_tex.update({(param.attrib['lang'], param.attrib['partOfSpeech']): param.attrib['tex']})
+                    except KeyError:
+                        partOfSpeech_tex.update({param.attrib['partOfSpeech']: param.attrib['tex']})
                     # Also automatically update range of possible values allowed for LMF part of speech LexicalEntry attribute -->
                     partOfSpeech_range.add(param.attrib['partOfSpeech'])
                 elif param.tag == "paradigmLabel_tex":

@@ -54,7 +54,7 @@
         <!-- adverb(ial) -->
         <ps_partOfSpeech ps="adv" partOfSpeech="adverb"/>
         <!-- classifier (MDF) -->
-        <ps_partOfSpeech ps="class" partOfSpeech="classifier"/>
+        <!--ps_partOfSpeech ps="class" partOfSpeech="classifier"/-->
         <!-- classifier (Leipzig) -->
         <ps_partOfSpeech ps="clf" partOfSpeech="classifier"/>
         <!-- conjunction -->
@@ -70,7 +70,7 @@
         <!-- noun -->
         <ps_partOfSpeech ps="n" partOfSpeech="noun"/>
         <!-- possessed nouns -->
-        <ps_partOfSpeech ps="Np" partOfSpeech="possessed noun"/>
+        <!--ps_partOfSpeech ps="Np" partOfSpeech="possessed noun"/-->
         <!-- negative -->
         <ps_partOfSpeech ps="neg" partOfSpeech="negation"/>
         <!-- number -->
@@ -80,8 +80,11 @@
         <!-- pronoun/pronominal -->
         <ps_partOfSpeech ps="pro" partOfSpeech="pronoun"/>
         <!-- stative intransitive verb -->
-        <ps_partOfSpeech ps="vi.s" partOfSpeech="stative intransitive verb"/>
+        <!--ps_partOfSpeech ps="vi.s" partOfSpeech="stative intransitive verb"/-->
         <!-- Na -->
+        <ps_partOfSpeech ps="clitic" partOfSpeech="clitic"/>
+        <ps_partOfSpeech ps="pref" partOfSpeech="prefix"/>
+        <ps_partOfSpeech ps="suff" partOfSpeech="suffix"/>
         <!-- postposition -->
         <ps_partOfSpeech ps="postp" partOfSpeech="postposition"/>
         <!-- Mapping from 'pdl' MDF marker value to LMF paradigmLabel Paradigm attribute value -->
@@ -344,7 +347,44 @@
         <!-- Path to xelatex binary -->
         <xelatex/>
         <!-- Mapping between LMF part of speech LexicalEntry attribute value and LaTeX layout (output) -->
-        <!--partOfSpeech_tex partOfSpeech="" tex=""/-->
+        <!-- English -->
+        <partOfSpeech_tex lang="eng" partOfSpeech="adjective" tex="adjective"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="adverb" tex="adverb(ial)"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="classifier" tex="classifier"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="clitic" tex="clitic"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="conjunction" tex="conjunction"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="particle" tex="discourse particle"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="ideophone" tex="ideophone"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="interjection" tex="interjection"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="coordinating conjunction" tex="linker"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="noun" tex="noun"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="negation" tex="negation"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="numeral" tex="number"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="postposition" tex="postposition"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="prefix" tex="prefix"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="preposition" tex="preposition"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="pronoun" tex="pronoun/pronominal"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="suffix" tex="suffix"/>
+        <partOfSpeech_tex lang="eng" partOfSpeech="verb" tex="verb"/>
+        <!-- French -->
+        <partOfSpeech_tex lang="fra" partOfSpeech="adjective" tex="adjectif"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="adverb" tex="adverbe"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="classifier" tex="classificateur"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="clitic" tex="clitique"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="conjunction" tex="conjonction"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="particle" tex="particule de discours"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="ideophone" tex="idéophone"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="interjection" tex="interjection"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="coordinating conjunction" tex="connecteur"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="noun" tex="nom"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="negation" tex="négation"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="numeral" tex="nombre"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="postposition" tex="postposition"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="prefix" tex="préfixe"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="preposition" tex="préposition"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="pronoun" tex="pronom"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="suffix" tex="suffixe"/>
+        <partOfSpeech_tex lang="fra" partOfSpeech="verb" tex="verbe"/>
         <!-- Mapping between LMF paradigmLabel Paradigm attribute value and LaTeX layout (output) -->
         <!--paradigmLabel_tex paradigmLabel="" tex=""/-->
         <!-- LaTeX commands -->

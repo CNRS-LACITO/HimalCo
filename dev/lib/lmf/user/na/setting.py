@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
+from config.tex import partOfSpeech_tex
 from utils.io import EOL, ENCODING
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 from utils.error_handling import Warning
@@ -503,6 +504,16 @@ def format_senses(lexical_entry, font, language):
         result += format_examples(sense, config.xml.font, languages=[config.xml.vernacular, language, config.xml.national])
     return result
 
+def format_part_of_speech(lexical_entry, language):
+    result = ""
+    part_of_speech = "-"
+    if lexical_entry.get_partOfSpeech() is not None:
+        part_of_speech = partOfSpeech_tex[(language, lexical_entry.get_partOfSpeech())]
+    # LaTeX command 'mytextsc' does not support spaces
+    for part in part_of_speech.split():
+        result += "\\textcolor{teal}{\\textsc{" + part + "}} "
+    return result
+
 def tex_fra(lexical_entry, font):
     """<lx> (prononciation~: <lc>~; avec le verbe copule~: <lc <type="with copula">>) TAB <ps> TAB Ton~: <np <type="tone">>.
     <df>.
@@ -516,11 +527,11 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s\hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
-        "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
+        format_part_of_speech(lexical_entry, config.xml.French),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
@@ -549,11 +560,11 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s %s %s\hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
-        "\\textcolor{teal}{\\textsc{" + str(lexical_entry.get_partOfSpeech()) + "}}",\
+        format_part_of_speech(lexical_entry, config.xml.English),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
