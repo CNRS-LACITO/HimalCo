@@ -168,6 +168,36 @@ class Lexicon():
         """
         return len(self.get_lexical_entries())
 
+    def sort_homonym_numbers(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), condition=lambda lexical_entry: True):
+        """! @brief Sort similar given items of lexical entries contained in the lexicon according to their homonym number.
+        @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
+        @param condition Lambda function giving a condition to apply classification.
+        @return The sorted Python list of lexical entries.
+        """
+        def compare(x, y):
+            """Compare 2 elements between each other.
+            """
+            if items(x) == items(y) and condition(x):
+                # Classify similar entries by homonym number
+                nb_x = x.get_homonymNumber()
+                if nb_x is None:
+                    nb_x = 0
+                nb_y = y.get_homonymNumber()
+                if nb_y is None:
+                    nb_y = 0
+                # If the 1st one is lower than the 2nd one, its rank is decremented
+                if nb_x < nb_y:
+                    return -1
+                # If the 1st one is greater than the 2nd one, its rank is incremented
+                elif nb_x > nb_y:
+                    return 1
+                else:
+                    print Warning("Several lexical entries '%s' exist. Please solve this issue by precising the homonym number." % items(x).encode(ENCODING))
+            # Do nothing
+            return 0
+        self.lexical_entry.sort(cmp=compare)
+        return self.lexical_entry
+
     def sort_lexical_entries(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, comparison=None):
         """! @brief Sort given items of lexical entries contained in the lexicon according to a certain order.
         @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.

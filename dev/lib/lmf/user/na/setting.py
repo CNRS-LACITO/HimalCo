@@ -15,6 +15,7 @@ def get_lx(lexical_entry):
     return lexical_entry.get_lexeme().lstrip('-=*').lstrip('‑'.decode(encoding=ENCODING)).replace(" | ", '')
 
 items = lambda lexical_entry: get_lx(lexical_entry)
+condition = lambda lexical_entry: lexical_entry.get_lexeme() != "???" and lexical_entry.get_lexeme() != "xxxx" and lexical_entry.get_lexeme() != "*"
 
 def classify_lexicon(lexicon, sort_order, sort_type):
     import re
@@ -149,6 +150,7 @@ def classify_lexicon(lexicon, sort_order, sort_type):
                 print Warning("Cannot compare " + x.encode(ENCODING) + " and " + y.encode(ENCODING))
                 return 0
     lexicon.sort_lexical_entries(items=items, sort_order=sort_order, comparison=compare_lx)
+    lexicon.sort_homonym_numbers(condition=condition)
 
 ## Functions to process some MDF fields (input)
 

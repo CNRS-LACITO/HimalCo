@@ -156,6 +156,23 @@ class TestLexiconFunctions(unittest.TestCase):
         del self.lexicon.lexical_entry[:]
         del entry1, entry2
 
+    def test_sort_homonym_numbers(self):
+        # Create several lexical entries
+        entry1 = LexicalEntry().set_lexeme("aa").set_homonymNumber("2")
+        entry2 = LexicalEntry().set_lexeme("aa").set_homonymNumber("1")
+        entry3 = LexicalEntry().set_lexeme("ab")
+        entry4 = LexicalEntry().set_lexeme("ba")
+        entry5 = LexicalEntry().set_lexeme("bb").set_homonymNumber("6")
+        entry6 = LexicalEntry().set_lexeme("bb").set_homonymNumber("5")
+        # Add entries to the lexicon
+        self.lexicon.lexical_entry = [entry1, entry2, entry3, entry4, entry5, entry6]
+        # Test sort homonym numbers
+        self.assertListEqual(self.lexicon.sort_homonym_numbers(), [entry2, entry1, entry3, entry4, entry6, entry5])
+        self.assertListEqual(self.lexicon.lexical_entry, [entry2, entry1, entry3, entry4, entry6, entry5])
+        # Release LexicalEntry instances
+        del self.lexicon.lexical_entry[:]
+        del entry1, entry2, entry3, entry4, entry5, entry6
+
     def test_sort_lexical_entries(self):
         # Create several lexical entries with different lexemes
         entry1 = LexicalEntry().set_lexeme("aa")
