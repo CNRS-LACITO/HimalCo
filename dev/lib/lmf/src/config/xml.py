@@ -22,6 +22,7 @@ def sort_order_read(filename):
     @return A Python dictionary of ordered characters.
     """
     order = dict()
+    type = dict()
     root = parse_xml(filename)
     # Parse XML elements
     for rules in root:
@@ -29,10 +30,16 @@ def sort_order_read(filename):
         if rules.tag != "rules":
             raise InputError(module_name + ".py", "XML file '%s' is not well-formatted." % filename)
         for rule in rules:
-            # XML elements "rule" have 2 XML attributes: one for the character ("str"), a second for the rank value ("rank")
+            # XML elements "rule" have 2 or 3 XML attributes: one for the character ("str"), a second for the rank value ("rank"), and an optional one for the type ("type")
             if rule.tag != "rule":
                 raise InputError(module_name + ".py", "XML file '%s' is not well-formatted." % filename)
             order.update({rule.attrib["str"] : float(rule.attrib["rank"])})
+            try:
+                type.update({rule.attrib["str"] : rule.attrib["type"]})
+            except KeyError:
+                pass
+    if len(type) != 0:
+        return order, type
     return order
 
 def config_read(filename):

@@ -50,7 +50,7 @@ def insert_references(lexical_entry):
             text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
     return text
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[]):
+def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[]):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -95,6 +95,7 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     # For each element to write, get the corresponding LMF value
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
+            previous_character = ''
             current_character = ''
             # Lexicon is already ordered
             for lexical_entry in lexicon.get_lexical_entries():
@@ -102,10 +103,22 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                 if lexical_entry.find_related_forms("main entry") == []:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
                     try:
-                        if ( (type(sort_order) is not type(dict())) and ((current_character == '') or (sort_order(items(lexical_entry)[0]) != sort_order(current_character))) ) \
-                            or ( (type(sort_order) is type(dict())) and (int(sort_order[items(lexical_entry)[0]]) != int(sort_order[current_character])) ):
+                        current_character = items(lexical_entry)[0]
+                        if sort_order[items(lexical_entry)[0:1]]:
+                            current_character = items(lexical_entry)[0:1]
+                        if sort_order[items(lexical_entry)[0:2]]:
+                            current_character = items(lexical_entry)[0:2]
+                    except IndexError:
+                        pass
+                    except KeyError:
+                        pass
+                    except TypeError:
+                        pass
+                    try:
+                        if ( (type(sort_order) is not type(dict())) and ((previous_character == '') or (sort_order(current_character) != sort_order(previous_character))) ) \
+                            or ( (type(sort_order) is type(dict())) and (int(sort_order[current_character]) != int(sort_order[previous_character])) ):
                             # Do not consider special characters
-                            current_character = items(lexical_entry)[0]
+                            previous_character = current_character
                             tex_file.write("\\newpage" + EOL)
                             title = ''
                             if type(sort_order) is not type(dict()):
@@ -133,6 +146,9 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
                                 tex_file.write(EOL)
                     except KeyError:
                         print Warning("Cannot sort item %s" % items(lexical_entry).encode(ENCODING))
+                    except IndexError:
+                        # Item is an empty string
+                        pass
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     # Insert LaTeX commands to finish the document properly
@@ -142,6 +158,12 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
         tex_file.write(EOL)
         tex_file.write("\\newpage" + EOL)
         tex_file.write("\markboth{paradigms}{}" + EOL)
+        tex_file.write(file_read(filename))
+        tex_file.write(EOL)
+    # Insert other tables if any
+    for filename in tables:
+        tex_file.write(EOL)
+        tex_file.write("\\newpage" + EOL)
         tex_file.write(file_read(filename))
         tex_file.write(EOL)
     tex_file.write("\end{document}" + EOL)

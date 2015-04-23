@@ -2,18 +2,153 @@
 # -*- coding: utf-8 -*-
 
 from config.mdf import mdf_lmf, lmf_mdf, mdf_semanticRelation
-from utils.io import EOL
+from utils.io import EOL, ENCODING
 from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
+from utils.error_handling import Warning
 
 ## To define languages and fonts
 import config
 FRENCH = "French"
 
 def get_lx(lexical_entry):
-    # Do not consider special character '-' or '=' preceeding 'lx'
-    return lexical_entry.get_lexeme().lstrip('-=')
+    # Do not consider special character '-', '=', '*' or '‑' preceeding 'lx', nor '|' separation
+    return lexical_entry.get_lexeme().lstrip('-=*').lstrip('‑'.decode(encoding=ENCODING)).replace(" | ", '')
 
 items = lambda lexical_entry: get_lx(lexical_entry)
+
+def classify_lexicon(lexicon, sort_order, sort_type):
+    import re
+    initials = ""
+    rimes = ""
+    tones = ""
+    for str, rank in sort_order.iteritems():
+        if "initial" in sort_type[str]:
+            initials += str
+        if "rime" in sort_type[str]:
+            rimes += str
+        if "tone" in sort_type[str]:
+            tones += str
+    def compare_lx(x, y):
+        unknown = set(["xxxx", "???", ""])
+        cmp_x = x
+        cmp_y = y
+        pattern = "^([" + initials.replace('j', '').replace('w', '') + "]{0,3})([" + rimes + "]{1,2})#?([" + tones + "]{0,2})[$#]?[abcd123]?(.*)"
+        n = 4
+        while(n > 0):
+            initial_x = ""
+            rime_x = ""
+            tone_x = ""
+            initial_y = ""
+            rime_y = ""
+            tone_y = ""
+            char_x = []
+            char_y = []
+            found = re.match(pattern, cmp_x)
+            if found is None:
+                if len(cmp_x) == 1:
+                    if cmp_x in initials:
+                        initial_x = cmp_x
+                        rime_x = ""
+                    elif cmp_x in rimes:
+                        initial_x = ""
+                        rime_x = cmp_x
+                    tone_x = ""
+                    cmp_x = ""
+                else:
+                    if cmp_x not in unknown:
+                        print Warning("Cannot sort " + cmp_x.encode(ENCODING))
+                    return 1
+            else:
+                initial_x = found.group(1)
+                rime_x = found.group(2)
+                tone_x = found.group(3)
+                cmp_x = found.group(4).lstrip('-~=')
+                # Before comparing, handle combining tilde of 'ɻ̃' if any
+                if rime_x == u"\u0303":
+                    initial_x += rime_x
+                    rime_x = ""
+            found = re.match(pattern, cmp_y)
+            if found is None:
+                if len(cmp_y) == 1:
+                    if cmp_y in initials:
+                        initial_y = cmp_y
+                        rime_y = ""
+                    elif cmp_y in rimes:
+                        initial_y = ""
+                        rime_y = cmp_y
+                    tone_y = ""
+                    cmp_y = ""
+                else:
+                    if cmp_y not in unknown:
+                        print Warning("Cannot sort " + cmp_y.encode(ENCODING))
+                    return -1
+            else:
+                initial_y = found.group(1)
+                rime_y = found.group(2)
+                tone_y = found.group(3)
+                cmp_y = found.group(4).lstrip('-~=')
+                # Before comparing, handle combining tilde of 'ɻ̃' if any
+                if rime_y == u"\u0303":
+                    initial_y += rime_y
+                    rime_y = ""
+            if len(initial_x) != 0:
+                char_x.append(initial_x)
+            if len(rime_x) != 0:
+                char_x.append(rime_x)
+            if len(initial_y) != 0:
+                char_y.append(initial_y)
+            if len(rime_y) != 0:
+                char_y.append(rime_y)
+            try:
+                try:
+                    char_x[0]
+                except IndexError:
+                    return -1
+                try:
+                    char_y[0]
+                except IndexError:
+                    return 1
+                # If the 1st one is lower than the 2nd one, its rank is decremented
+                if sort_order[char_x[0]] < sort_order[char_y[0]]:
+                    return -1
+                # If the 1st one is greater than the 2nd one, its rank is incremented
+                elif sort_order[char_x[0]] > sort_order[char_y[0]]:
+                    return 1
+                else: # sort_order[char_x[0]] == sort_order[char_y[0]]
+                    try:
+                        char_x[1]
+                    except IndexError:
+                        return -1
+                    try:
+                        char_y[1]
+                    except IndexError:
+                        return 1
+                    # If the 1st one is lower than the 2nd one, its rank is decremented
+                    if sort_order[char_x[1]] < sort_order[char_y[1]]:
+                        return -1
+                    # If the 1st one is greater than the 2nd one, its rank is incremented
+                    elif sort_order[char_x[1]] > sort_order[char_y[1]]:
+                        return 1
+                    else: # sort_order[char_x[1]] == sort_order[char_y[1]]
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order[tone_x] < sort_order[tone_y]:
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order[tone_x] > sort_order[tone_y]:
+                            return 1
+                        else: # sort_order[tone_x] == sort_order[tone_y]
+                            if cmp_x == "":
+                                return -1
+                            if cmp_y == "":
+                                return 1
+                            n -= 1
+                            if n == 0:
+                                # If all characters match, both equal => do nothing
+                                return 0
+            except KeyError:
+                print Warning("Cannot compare " + x.encode(ENCODING) + " and " + y.encode(ENCODING))
+                return 0
+    lexicon.sort_lexical_entries(items=items, sort_order=sort_order, comparison=compare_lx)
 
 ## Functions to process some MDF fields (input)
 
@@ -351,8 +486,8 @@ def tex_fra(lexical_entry, font):
     """
     import output.tex as tex
     tex_entry = ""
-    # Do not display lexical entry if lexeme is '???'
-    if lexical_entry.get_lexeme() == "???":
+    # Do not display lexical entry if lexeme is '???' or '*'
+    if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
@@ -384,8 +519,8 @@ def tex_eng(lexical_entry, font):
     """
     import output.tex as tex
     tex_entry = ""
-    # Do not display lexical entry if lexeme is '???'
-    if lexical_entry.get_lexeme() == "???":
+    # Do not display lexical entry if lexeme is '???' or '*'
+    if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
     tex_entry = (r"""%s%s %s %s \hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\

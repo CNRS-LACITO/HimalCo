@@ -13,7 +13,7 @@ if not os.path.exists(user_path + "na/result"):
     os.mkdir(user_path + "na/result")
 
 # Import user customized configuration
-from setting import tex_eng, tex_fra, items
+from setting import tex_eng, tex_fra, items, classify_lexicon
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "na/config.xml")
@@ -27,15 +27,18 @@ lexical_resource = lmf.read_mdf(id="na")
 print lexical_resource.get_bibliographic_citation()
 
 # Classify lexicon
-xml_order = lmf.read_sort_order(user_path + "na/sort_order.xml")
-lexical_resource.get_lexicon("na").sort_lexical_entries(items=items, sort_order=xml_order)
+(xml_order, xml_type) = lmf.read_sort_order(user_path + "na/sort_order.xml")
+classify_lexicon(lexical_resource.get_lexicon("na"), xml_order, xml_type)
 
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")
 
+# Generate tables
+os.system("python " + user_path + "../src/utils/tables/tables.py -i " + user_path + "../../../../dict/na/toolbox/Dictionary.txt -e " + user_path + "na/result/table_eng.tex -f " + user_path + "na/result/table_fra.tex")
+
 # Write LaTeX files
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order)
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_eng.tex"])
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/na.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"])
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt")
