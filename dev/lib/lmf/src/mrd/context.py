@@ -10,9 +10,10 @@ from core.text_representation import TextRepresentation
 class Context():
     """! "Context is a class representing a text string that provides authentic context for the use of the word form managed by the Lemma. This class is to be distinguished from Sense Example." (LMF)
     """
-    def __init__(self):
+    def __init__(self, speakerID=None):
         """! @brief Constructor.
         Context instances are owned by Sense.
+        @param speakerID Related speaker identifier. If not provided, default value is None.
         @return A Context instance.
         """
         self.language = None
@@ -21,7 +22,7 @@ class Context():
         # There is zero to many TextRepresentation instances per Context
         self.text_representation = []
         # Speaker id
-        self.targets = None
+        self.targets = speakerID
         ## Pointer to an existing Speaker
         # There is zero or one Speaker pointer per Context instance
         self.__speaker = None
@@ -139,6 +140,12 @@ class Context():
             self.add_text_representation(repr)
         repr.set_comment(comment)
         return self
+
+    def get_speakerID(self):
+        """! @brief Get related speaker identifier.
+        @return Context attribute 'targets'.
+        """
+        return self.targets
 
     def get_speaker(self):
         """! @brief Get speaker.

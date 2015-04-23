@@ -905,8 +905,23 @@ class LexicalEntry():
                     morphologies.append(paradigm.get_morphology())
         return morphologies
 
-    def create_example(self, written_form, language=None, script_name=None):
-        """! @brief Create a context, add an example and set its written form, language and script.
+    def create_example(self, reference=None):
+        """! @brief Create a context.
+        Attribute 'targets' is owned by Context, itself owend by Sense.
+        @param reference The example reference to set. If not provided, default value is None.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.create_example(reference)
+        return self
+
+    def create_and_add_example(self, written_form, language=None, script_name=None):
+        """! @brief Add an example to a new context and set its written form, language and script.
         Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation, which is owned by Context, itself owend by Sense.
         @param written_form The written form to set.
         @param language Language used for the written form.
@@ -919,7 +934,7 @@ class LexicalEntry():
         if sense is None:
             sense = self.create_sense()
             self.add_sense(sense)
-        sense.create_example(written_form, language, script_name)
+        sense.create_and_add_example(written_form, language, script_name)
         return self
 
     def add_example(self, written_form, language=None, script_name=None):

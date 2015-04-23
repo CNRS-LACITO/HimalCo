@@ -156,6 +156,11 @@ class TestContextFunctions(unittest.TestCase):
         # Release TextRepresentation instance
         del repr
 
+    def test_get_speakerID(self):
+        id = "toto"
+        self.context.targets = id
+        self.assertEqual(self.context.get_speakerID(), id)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestContextFunctions)
 
 ## Run test suite

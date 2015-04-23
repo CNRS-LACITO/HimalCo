@@ -937,8 +937,17 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del sense
 
     def test_create_example(self):
+        ref = "toto"
+        self.assertIs(self.lexical_entry.create_example(ref), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
+        self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
+        self.assertEqual(self.lexical_entry.sense[0].context[0].targets, ref)
+        self.assertEqual(len(self.lexical_entry.sense[0].context[0].text_representation), 0)
+
+    def test_create_and_add_example(self):
         form = "written"
-        self.assertIs(self.lexical_entry.create_example(form), self.lexical_entry)
+        self.assertIs(self.lexical_entry.create_and_add_example(form), self.lexical_entry)
         self.assertEqual(len(self.lexical_entry.sense), 1)
         self.assertEqual(len(self.lexical_entry.sense[0].context), 1)
         self.assertEqual(self.lexical_entry.sense[0].context[0].type, "example")
@@ -947,7 +956,7 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Test with language
         form = "form with lang"
         lang = "lang"
-        self.assertIs(self.lexical_entry.create_example(form, lang), self.lexical_entry)
+        self.assertIs(self.lexical_entry.create_and_add_example(form, lang), self.lexical_entry)
         self.assertEqual(len(self.lexical_entry.sense), 1)
         self.assertEqual(len(self.lexical_entry.sense[0].context), 2)
         self.assertEqual(self.lexical_entry.sense[0].context[1].type, "example")

@@ -361,6 +361,31 @@ def format_gloss(sense, font, language):
     # TODO : add 'gn' then 'ph' in italic
     return result
 
+def format_examples(sense, font, languages=None):
+    import output.tex as tex
+    result = ""
+    if languages is None:
+        languages = [config.xml.vernacular, config.xml.English, config.xml.national, config.xml.regional]
+    for context in sense.get_contexts():
+        ref = ""
+        if context.get_speakerID() is not None and context.get_speakerID() != "F4":
+            ref = "[" + context.get_speakerID() + "] "
+        tmp = ""
+        for language in languages:
+            for example in context.find_written_forms(language):
+                if language == config.xml.vernacular:
+                    tmp += "\\sn " + font[VERNACULAR](ref + example) + EOL
+                elif language == config.xml.national:
+                    tmp += "\\trans \\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
+                elif language == config.xml.regional:
+                    tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
+                else: # language == config.xml.English
+                    tmp += "\\trans " + example + EOL
+        # LaTeX does not support empty examples
+        if len(tmp) != 0:
+            result += "\\begin{exe}" + EOL + tmp + "\\end{exe}" + EOL
+    return result
+
 def format_etymology(lexical_entry, font, language):
     result = ""
     if lexical_entry.get_etymology() is not None:
@@ -473,7 +498,7 @@ def format_senses(lexical_entry, font, language):
         result += format_definition(sense, language_font, language=language) + EOL
         result += format_definition(sense, config.xml.font[NATIONAL], language=config.xml.national)
         result += format_gloss(sense, config.xml.font, language=language) + EOL
-        result += tex.format_examples(sense, config.xml.font, languages=[config.xml.vernacular, language, config.xml.national])
+        result += format_examples(sense, config.xml.font, languages=[config.xml.vernacular, language, config.xml.national])
     return result
 
 def tex_fra(lexical_entry, font):

@@ -588,8 +588,16 @@ class TestSenseFunctions(unittest.TestCase):
         del ctx1, ctx2
 
     def test_create_example(self):
+        ref = "toto"
+        self.assertIs(self.sense.create_example(ref), self.sense)
+        self.assertEqual(len(self.sense.context), 1)
+        self.assertEqual(self.sense.context[0].type, "example")
+        self.assertEqual(self.sense.context[0].targets, ref)
+        self.assertEqual(len(self.sense.context[0].text_representation), 0)
+
+    def test_create_and_add_example(self):
         form = "written"
-        self.assertIs(self.sense.create_example(form), self.sense)
+        self.assertIs(self.sense.create_and_add_example(form), self.sense)
         self.assertEqual(len(self.sense.context), 1)
         self.assertEqual(self.sense.context[0].type, "example")
         self.assertEqual(len(self.sense.context[0].text_representation), 1)
@@ -597,7 +605,7 @@ class TestSenseFunctions(unittest.TestCase):
         # Test with language
         form = "form with lang"
         lang = "lang"
-        self.assertIs(self.sense.create_example(form, lang), self.sense)
+        self.assertIs(self.sense.create_and_add_example(form, lang), self.sense)
         self.assertEqual(len(self.sense.context), 2)
         self.assertEqual(self.sense.context[1].type, "example")
         self.assertEqual(len(self.sense.context[1].text_representation), 1)

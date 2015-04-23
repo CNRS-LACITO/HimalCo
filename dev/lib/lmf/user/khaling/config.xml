@@ -88,7 +88,7 @@
         <mdf_lmf marker="wav" var="wav, lexical_entry">lexical_entry.set_audio(file_name=wav +
             ".wav", quality="very good", audio_file_format="wav")</mdf_lmf>
         <mdf_lmf marker="a" var="a, lexical_entry">lexical_entry.set_spelling_variant(a)</mdf_lmf>
-        <mdf_lmf marker="xv" var="xv, lexical_entry">lexical_entry.create_example(xv,
+        <mdf_lmf marker="xv" var="xv, lexical_entry">lexical_entry.create_and_add_example(xv,
             language="klr", script_name="ipa")</mdf_lmf>
         <mdf_lmf marker="1s" var="a1s, lexical_entry">lexical_entry.set_paradigm(a1s,
             script_name="ipa", person=pd_person[1],

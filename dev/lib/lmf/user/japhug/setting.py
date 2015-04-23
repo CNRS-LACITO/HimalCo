@@ -20,7 +20,7 @@ mdf_lmf.update({
     "lx"    : lambda lx, lexical_entry: lexical_entry.set_lexeme(remove_char(lx)),
     "a"     : lambda a, lexical_entry: lexical_entry.set_variant_form(remove_char(a), type="phonetics"),
     "se"    : lambda se, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(se), mdf_semanticRelation["se"]),
-    "xv"    : lambda xv, lexical_entry: lexical_entry.create_example(remove_char(xv), language=config.xml.vernacular),
+    "xv"    : lambda xv, lexical_entry: lexical_entry.create_and_add_example(remove_char(xv), language=config.xml.vernacular),
     "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(remove_char(cf), mdf_semanticRelation["cf"])
 })
 
