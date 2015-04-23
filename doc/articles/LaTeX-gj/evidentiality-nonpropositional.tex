@@ -1,0 +1,115 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{lineno}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+ 
+ 
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\begin{document} 
+\linenumbers
+
+\title{Non-propositional evidentiality}
+\author{Guillaume Jacques}
+\maketitle
+
+
+
+As a modifier \ipa{tikî-m} can be used to modify   a noun with a prenominal     relative clause  in between (example \ref{ex:salpu}).
+
+\begin{exe}
+\ex \label{ex:salpu}
+\gll    	 	\ipa{tikî-m}   	\ipa{kɵ̂m-go-jo}   	\ipa{ʣe-pɛ}   	\ipa{sʌ̄lpu-ʔɛ}   	\ipa{ʔʌnɵ̂l-ni}   	\ipa{mâŋ-go}   	\ipa{blɛtt-ʉ}   	\ipa{ɦolʌ}   
+ \\
+ there:\textsc{aud}-\textsc{nmlz} cloud-\textsc{inside-locative.level} speak-\textsc{nmlz:}S/A bird-\textsc{erg} today-\textsc{top} what-\textsc{foc} tell-\textsc{3sg$\rightarrow$3} maybe \\
+\glt The bird that is singing in the clouds, what might it be telling today? (excerpt from a song by the Khaling songwriter Urmila)
+\end{exe}
+ 
+
+ 
+Examples \ref{ex:radio} and \ref{ex:lel} above illustrate uses of the auditory demonstratives with visible referents; likewise,   \ref{ex:kogu}, uttered by a person watching a song contest on the television, makes it clear that the visibility or non-visibility of the referent is not a relevant factor in using this demonstrative.
+
+\begin{exe}
+\ex \label{ex:kogu}
+\gll  	\ipa{tikî-m-kʌ}   	\ipa{ʦʌ̄i} \ipa{ʔuŋʌ} \ipa{tūŋ }   	\ipa{kog-u}   \\
+there:\textsc{aud}-\textsc{nmlz}-from \textsc{top} \textsc{1sg:erg} more be.able-\textsc{1sg$\rightarrow$3sg}	  \\
+\glt I can (sing) better than that one. (Heard in context)
+\end{exe}
+
+ 
+
+In all of the examples above, non-auditory demonstratives could also have been used. The choice of \ipa{tikî-m}  highlights the  fact that the  speakers' perception is primarily via the auditory channel.
+ 
+ 
+
+ 
+
+\begin{table}
+\caption{Systems     including auditory demonstratives } \label{tab:attested}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccl}
+\toprule
+  &	Connection  & 	Indexation of   & 	Indexation of distinctions  	&References\\
+&  with proximal / distal &visual perception &between audition and other senses\\
+\midrule  
+Santali  & 	no  & 	yes  & 	no  & 	\citet[42-44]{neukom01santali}\\
+Nyelayu  & 	yes  & 	yes  & 	no  & 	\citet[98]{ozanne97spatial}\\
+Southern Pomo  & 	unknown  & 	unclear  & 	no  & 	\citet[37, ft]{oswalt86evidential}\\
+Muna  & 	yes  & 	yes  & 	no  & 	\citet{berg97deixis.muna}\\
+Dyirbal  & 	yes   & 	yes  & 	no  & 	\citet{dixon72dyirbal}\\
+\midrule
+Khaling  & 	no  & 	no  & 	yes  & 	\\
+\bottomrule
+\end{tabular}}
+\end{table}	
+
+
+\citet{aikhenvald14knowledge}
+\citet{dixon14nonvisible}
+\citet{storch14maaka}
+\citet{gutierrez11evidentiality}
+\citet{yang00hearsay}
+\citet{yang00tsou.case}
+\citet{matthewson07epistemic}
+\citet{gutierrez12determiners}
+\citet{launey94}
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
