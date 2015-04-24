@@ -345,6 +345,14 @@ def format_tone(lexical_entry, font):
                 result += c
     return result
 
+def format_usage_notes(sense, font, language_font, language):
+    result = ""
+    for usage in sense.find_usage_notes(language=language):
+        result += "\\textit{" + force_caps(language_font(usage)) + "}"
+    for usage in sense.find_usage_notes(language=config.xml.national):
+        result += " [" + font[NATIONAL](usage) + "] "
+    return result
+
 def format_definition(sense, language_font, language):
     result = ""
     if sense.find_definitions(language) is not None:
@@ -489,19 +497,20 @@ def format_senses(lexical_entry, font, language):
     import output.tex as tex
     result = ""
     if language == config.xml.French:
-        language_font = config.xml.font[FRENCH]
+        language_font = font[FRENCH]
     elif language == config.xml.English:
-        language_font = config.xml.font[ENGLISH]
+        language_font = font[ENGLISH]
     # Order by sense number
     senses = lexical_entry.get_senses()
     senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
     for sense in senses:
         if sense.get_senseNumber() is not None:
             result += sense.get_senseNumber() + ") "
+        result += format_usage_notes(sense, font, language_font, language=language) + EOL
         result += format_definition(sense, language_font, language=language) + EOL
-        result += format_definition(sense, config.xml.font[NATIONAL], language=config.xml.national)
-        result += format_gloss(sense, config.xml.font, language=language) + EOL
-        result += format_examples(sense, config.xml.font, languages=[config.xml.vernacular, language, config.xml.national])
+        result += format_definition(sense, font[NATIONAL], language=config.xml.national)
+        result += format_gloss(sense, font, language=language) + EOL
+        result += format_examples(sense, font, languages=[config.xml.vernacular, language, config.xml.national])
     return result
 
 def format_part_of_speech(lexical_entry, language):

@@ -109,6 +109,8 @@
         <mdf_lmf marker="xc" var="xc, lexical_entry">lexical_entry.set_example_comment(xc)</mdf_lmf>
         <mdf_lmf marker="gf" var="gf, lexical_entry">lexical_entry.set_gloss(gf,
             language="fra")</mdf_lmf>
+        <mdf_lmf marker="uf" var="uf, lexical_entry">lexical_entry.set_usage_note(uf,
+            language="fra")</mdf_lmf>
         <!-- 'gn' transcrit en pinyin -->
         <mdf_lmf marker="ph" var="ph, lexical_entry">lexical_entry.set_phonetic_form(ph,
             script_name="pinyin")</mdf_lmf>
