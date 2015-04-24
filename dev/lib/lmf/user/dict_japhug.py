@@ -13,7 +13,7 @@ if not os.path.exists(user_path + "japhug/result"):
     os.mkdir(user_path + "japhug/result")
 
 # Import user customized configuration
-from setting import lmf2tex
+from setting import lmf2tex, items
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "japhug/config.xml")
@@ -26,13 +26,13 @@ print lexical_resource.get_bibliographic_citation()
 
 # Classify lexicon
 xml_order = lmf.read_sort_order(user_path + "japhug/sort_order.xml")
-lexical_resource.get_lexicon("japhug").sort_lexical_entries(sort_order=xml_order)
+lexical_resource.get_lexicon("japhug").sort_lexical_entries(items=items, sort_order=xml_order)
 
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "japhug/result/dictionary.xml")
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
 
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "japhug/result/dictionary.txt")

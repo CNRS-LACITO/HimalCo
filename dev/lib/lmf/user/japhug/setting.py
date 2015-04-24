@@ -10,6 +10,8 @@ from common.defs import VERNACULAR, NATIONAL, ENGLISH, REGIONAL
 import config
 FRENCH = "French"
 
+items=lambda lexical_entry: lexical_entry.get_lexeme().replace('{', '').replace('}', '')
+
 ## Functions to process some MDF fields (input)
 def remove_char(value):
     """Function to remove '_', '^', '$', '&' character at the beginning of 'lx', 'se', 'a', 'xv', 'cf' MDF fields.

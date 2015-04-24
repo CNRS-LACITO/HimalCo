@@ -22,7 +22,7 @@ if not os.path.exists(user_path + "japhug/result"):
 import lmf
 
 # Import user customized configuration
-from setting import lmf2tex
+from setting import lmf2tex, items
 
 # Read user configuration
 lexical_resource = lmf.read_config(user_path + "japhug/config.xml")
@@ -32,10 +32,10 @@ lexical_resource = lmf.read_mdf(id="japhug")
 
 # Classify lexicon
 xml_order = lmf.read_sort_order(user_path + "japhug/sort_order.xml")
-lexical_resource.get_lexicon("japhug").sort_lexical_entries(sort_order=xml_order)
+lexical_resource.get_lexicon("japhug").sort_lexical_entries(items=items, sort_order=xml_order)
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
 
 # Release created objects
 del lexical_resource
