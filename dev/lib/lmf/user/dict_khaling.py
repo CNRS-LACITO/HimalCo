@@ -52,7 +52,7 @@ lmf.write_mdf(lexical_resource, user_path + "khaling/result/dictionary.txt")
 os.system("xsltproc -o " + user_path + "khaling/result/dictionary.html " + user_path + "../src/output/htm.xsl " + user_path + "khaling/result/dictionary.xml")
 
 # Write document file
-lmf.write_doc(lexical_resource, user_path + "khaling/result/dictionary.docx")
+lmf.write_doc(lexical_resource, user_path + "khaling/result/dictionary.docx", items=items, sort_order=dev_order, paradigms=True)
 
 # Release created objects
 del lexical_resource

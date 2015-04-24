@@ -89,6 +89,9 @@
         <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
         <mdf_lmf marker="empr" var="empr, lexical_entry">None</mdf_lmf>
         <mdf_lmf marker="cf" var="cf, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="se" var="se, lexical_entry">None</mdf_lmf>
+        <mdf_lmf marker="ge" var="ge, lexical_entry">lexical_entry.set_gloss(ge, language="fra")</mdf_lmf>
+        <mdf_lmf marker="xn" var="xn, lexical_entry">lexical_entry.add_example(xn, language="fra")</mdf_lmf>
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>

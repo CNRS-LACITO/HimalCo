@@ -43,5 +43,8 @@ lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", prea
 # Write MDF file
 lmf.write_mdf(lexical_resource, user_path + "na/result/dictionary.txt")
 
+# Write document file
+lmf.write_doc(lexical_resource, user_path + "na/result/dictionary.docx", items=items, sort_order=xml_order)
+
 # Release created objects
 del lexical_resource
