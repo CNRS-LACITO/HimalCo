@@ -72,7 +72,10 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
                     else:
                         current_entry = main_entry
                     # Set main entry
-                    sub_entry.create_and_add_related_form(current_entry.get_lexeme(), "main entry")
+                    homonym_nb = current_entry.get_homonymNumber()
+                    if homonym_nb is None:
+                        homonym_nb = ""
+                    sub_entry.create_and_add_related_form(current_entry.get_lexeme() + homonym_nb, "main entry")
                 else:
                     # Create a new entry
                     current_entry = LexicalEntry(uid)
