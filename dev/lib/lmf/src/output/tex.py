@@ -197,7 +197,7 @@ def handle_reserved(text):
     if text.find("_") != -1:
         text = text.replace('_', "\string_")
     if text.find("^") != -1:
-        text = text.replace('^', "\\textasciicircum ")
+        text = text.replace('^', "U+005E")
     return text
 
 def handle_fi(text):
