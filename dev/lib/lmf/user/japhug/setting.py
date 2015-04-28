@@ -46,7 +46,7 @@ def format_lexeme(lexical_entry, font):
     if lexical_entry.is_subentry():
         result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
     else:
-        result += "\\paragraph{\\hspace{-0.5cm} "
+        result += "\\vspace{0.5cm} \\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"

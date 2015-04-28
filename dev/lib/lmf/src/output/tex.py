@@ -40,13 +40,13 @@ def insert_references(lexical_entry):
                 spelling_variant = main_entry.get_spelling_variants()[0]
     if spelling_variant is not None:
         if part_of_speech == "transitive verb":
-            text += "\\ref{" + spelling_variant + ".vt}" + EOL
+            text += "\\hfill\\break See: \\ref{" + spelling_variant + ".vt}" + EOL
             text += "\\ref{" + spelling_variant + ".vt.eng}" + EOL
         elif part_of_speech == "intransitive verb":
-            text += "\\ref{" + spelling_variant + ".vi}" + EOL
+            text += "\\hfill\\break See: \\ref{" + spelling_variant + ".vi}" + EOL
             text += "\\ref{" + spelling_variant + ".vi.eng}" + EOL
         elif part_of_speech == "reflexive verb":
-            text += "\\ref{" + spelling_variant + ".vr}" + EOL
+            text += "\\hfill\\break See: \\ref{" + spelling_variant + ".vr}" + EOL
             text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
     return text
 
