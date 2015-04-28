@@ -58,17 +58,17 @@ class TestTexFunctions(unittest.TestCase):
         lexical_entry.set_spelling_variant("tata")
         # Test transitive verb
         lexical_entry.partOfSpeech = "transitive verb"
-        expected_lines = "\\ref{tata.vt}" + EOL
+        expected_lines = "\\hfill\\break See: \\ref{tata.vt}" + EOL
         expected_lines += "\\ref{tata.vt.eng}" + EOL
         self.assertEqual(expected_lines, insert_references(lexical_entry))
         # Test intransitive verb
         lexical_entry.partOfSpeech = "intransitive verb"
-        expected_lines = "\\ref{tata.vi}" + EOL
+        expected_lines = "\\hfill\\break See: \\ref{tata.vi}" + EOL
         expected_lines += "\\ref{tata.vi.eng}" + EOL
         self.assertEqual(expected_lines, insert_references(lexical_entry))
         # Test reflexive verb
         lexical_entry.partOfSpeech = "reflexive verb"
-        expected_lines = "\\ref{tata.vr}" + EOL
+        expected_lines = "\\hfill\\break See: \\ref{tata.vr}" + EOL
         expected_lines += "\\ref{tata.vr.eng}" + EOL
         self.assertEqual(expected_lines, insert_references(lexical_entry))
 
