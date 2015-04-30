@@ -1,0 +1,242 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
+\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+\title{Nominalization in Japhug in historical perspective}
+%\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+ 
+\section{Introduction}
+
+
+ 
+
+\section{Nominalized verbal forms}
+ 
+ 
+ 
+  \subsection{Finite vs non-finite verbs} \label{sec:participles}
+Japhug and other Rgyalrong languages have a very strict distinction between finite and non-finite forms, as described in \citet{jacques14linking}. Finite forms present  polypersonal indexation paradigms combining prefixes and suffixes, while non-finite forms either don't mark person, or only take possessive prefixes like nouns.
+
+The Rgyalrong languages are conspicuous in the Sino-Tibetan language family in lacking a construction of the ‘Standard Sino-Tibetan Nominalization’ type (\citealt{bickel99nmlz}), whereby a attributive/genitive marker is also used as a nominalizer and a relativizer. We do  find relative clauses or complement clauses with a finite verb (this type of construction has been referred to as `clausal nominalization' in the literature, for instance \citealt{genetti08nmlz}), but these clauses do not receive any nominalizer. Example \ref{ex:nWwGmbi} illustrates this type of construction: its main verb \ipa{nɯ́-wɣ-mbi} is in a finite form (with the inverse prefix \ipa{wɣ--}). 
+
+ \begin{exe}
+\ex \label{ex:nWwGmbi}
+\gll
+[\ipa{tɤ-wɯ} 	\ipa{kɯ} 	\ipa{ʑmbrɯ} 	\ipa{nɯ́-wɣ-mbi}] 	\ipa{nɯ} 	 	\ipa{cʰɤ-lɤt} \\
+\textsc{indef.poss}-grandfather \textsc{erg} boat \textsc{pfv-inv}-give \textsc{dem} \textsc{ifr}-throw \\
+\glt He took the boat that the old man had given him. (140430 jin e, 245)
+\end{exe}
+
+Demonstratives such as \ipa{nɯ} `that' or \ipa{ki} `this' often occur  on the right side of relative clauses of this type, but are not obligatory in this position, as in \ref{ex:jAkWsWCGaza}, where no demonstrative occurs between the finite prenominal relative \ipa{jɤ-kɯ-sɯ-ɕɣaz-a} `you told me to take back' and the head noun \ipa{mbalɤpɯ} `calf'
+
+ \begin{exe}
+\ex \label{ex:jAkWsWCGaza}
+\gll
+[\ipa{jɤ-kɯ-sɯ-ɕɣaz-a}] 	\ipa{mbalɤpɯ} 	\ipa{nɯ} 	\ipa{pa-mto} \\
+\textsc{pfv}-2$\rightarrow$1-\textsc{caus}-take.back-\textsc{1sg} calf \textsc{dem} \textsc{pfv}:3$\rightarrow$3'-see \\
+\glt She saw the calf that you told me to take back. (140512 fushang he yaomo, 132)
+\end{exe}
+
+Although the finite verbs in these constructions do present some morphosyntactic features distinguishing them from finite forms of main clauses, they lie outside of the scope of this paper and will be  treated elsewhere; in the following, only constructions involving non-finite verbs are discussed.
+
+ \subsection{Participles} \label{sec:participles}
+Three of  the nominalization prefixes found in Japhug,  \ipa{kɯ--}, \ipa{kɤ}-- and \ipa{sɤ}-- are used to build \textit{participles}, which unlike other nominalized forms preserve the argument structure of the verb and can take both argument and adjuncts with the same marking as in independent clauses.
+
+The \ipa{kɯ--} S/A participial prefix appears with both intransitive and transitive verbs, but in the latter case a possessive prefix  coreferent with the patient is added (see \ref{ex:kill}). This nominalized form can be used as one of the tests to determine whether a particular verb is transitive or intransitive.  
+
+ \begin{exe}
+\ex
+\gll \ipa{kɯ-si}    \\
+  \textsc{nmlz}:S/A-die \\
+ \glt  `The dead one'
+ 
+\ex \label{ex:kill}
+\gll \ipa{ɯ-kɯ-sat}    \\
+  \textsc{3sg}-\textsc{nmlz}:S/A-kill \\
+ \glt  `The one who kills him.'
+ 
+
+\ex \label{ex:kill2}
+\gll \ipa{kɤ-sat}    \\
+   \textsc{nmlz}:P-kill \\
+ \glt  `The one that is killed.'
+ \end{exe}
+ 
+  The patient participial prefix \ipa{kɤ--} can appear with an optional possessive prefix coreferent to the agent as in \ref{ex:kill3}.
+  
+  \begin{exe}
+\ex \label{ex:kill3}
+\gll \ipa{a-kɤ-sat}    \\
+   \textsc{1sg-nmlz}:P-kill \\
+ \glt  `The one that I kill.'
+ \end{exe}
+
+The \ipa{sɤ}--prefix (and its allomorphs \ipa{sɤz}-- and \ipa{z}--) is used for oblique participle, which among its various uses is used to build relatives whose relativized element is not a core argument, but either the recipient (for indirective verb), a comitative, instrument, place or time adjunct. It receives a possessive prefix  which can be coreferent with either S, A or P.
+
+   \begin{exe}
+\ex \label{ex:come}
+\gll \ipa{ɯ-sɤ-ɣi}    \\
+   \textsc{3sg-nmlz}:S-come \\
+ \glt  `The place/moment where/when it comes.'
+ \end{exe}
+ 
+ 
+ 
+ \subsubsection{The template of participial forms}
+ 
+Participial forms cannot receive person marking, inverse \ipa{wɣ}--, direct \ipa{a}--, irrealis \ipa{a}-- or evidential directional prefixes, but are compatible with associated motion prefixes \ipa{ɣɯ}-- and \ipa{ɕɯ}--, negative prefixes and perfective and imperfective directional prefixes.\footnote{The template of finite verb forms is presented in \citet{jacques13harmonization}.} When a nominalized form has a negative, TAM or associated motion prefix, the possessive prefix of A-nominalization and oblique nominalization is optional. Examples \ref{ex:makWndza} to \ref{ex:thongthar} illustrate nominalized forms without possessive prefix.
+ 
+
+    \begin{exe}
+\ex \label{ex:makWndza}
+\gll
+[\ipa{ɯ-zda}  	\ipa{ra}  	\ipa{cʰɯ-kɯ-ndza}]  	\ipa{ci,}  	\ipa{ɕa}  	\ipa{ma}  	\ipa{mɤ-kɯ-ndza}  	\ipa{ɲɯ-ŋu.}  	 \\
+\textsc{3sg.poss}-companion  \textsc{pl} \textsc{ipfv-nmlz}:S/A-eat \textsc{indef} meat apart.from \textsc{neg-nmlz}:S/A-eat \textsc{testim}-be \\
+\glt (The dhole) is (an animal) that eats other animals, that only eats meat. (Dhole, 2-3)
+ \end{exe}
+     \begin{exe}
+\ex \label{ex:kill4}
+\gll
+\ipa{qɤjtʂʰa}  	\ipa{nɯ}  	[\ipa{pɯ-kɤ-sat}]  	\ipa{kɯnɤ}  	\ipa{kɤ-mto}  	\ipa{mɯ-pɯ-rɲo-t-a.}  \\
+vulture \topic{} \textsc{pfv-nmlz:P}-kill  also \textsc{inf}-see \textsc{neg-pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt I have never seen a vulture, even a dead (killed) one. (Vulture 54)
+ \end{exe}
+  
+  
+ \begin{exe}
+\ex \label{ex:thongthar}
+\gll [\ipa{qandʑi}   	\ipa{cʰɯ-sɤ-ɣnda}]   	\ipa{nɯ}   	\ipa{tʰoŋtʰɤr}   	  	\ipa{ɲɯ-rmi}    \\
+bullet \textsc{ipf}-\textsc{nmlz:oblique}-ram   \textsc{dem} ramrod \textsc{testim}-call \\
+ \glt What is used to ram a bullet (into the muzzle of the gun) is called a ramrod. (Arquebus)
+ \end{exe}
+
+It is possible to combine several prefixes before the nominalization prefix; the limit is three prefixes, as in example \ref{ex:WGWjAkWqru}.
+
+ \begin{exe}
+\ex \label{ex:WGWjAkWqru}
+\gll
+  	\ipa{ɯ-ɣɯ-jɤ-kɯ-qru}  	\ipa{tɤ-tɕɯ}  	   \\
+  \textsc{3sg-cisloc-pfv-nmlz:}S/A-meet \textsc{indef.poss}-boy   \\
+\glt The boy  who had come to look for her (The three sisters 231)
+ \end{exe}
+ 
+The ordering of the inflexional prefixes in  Japhug is shown in Table \ref{tab:template.nmlz}; derivational prefixes are not represented here - they are all conflated within   `enlarged stem'.
+
+
+
+\begin{table}[H]
+\caption{The template of nominalized verbal forms in Japhug} \centering \label{tab:template.nmlz}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllll}
+\toprule
+-5 & -4&-3 &-2&-1\\
+possessive & negative&associated   & TAM & nominalization &enlarged  \\
+prefix & prefix &motion prefix  &directional&&stem\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+The non-past verb stem (Stem III) never appears in nominalized forms. On the other hand, the perfective stem (Stem II) is obligatory in perfective nominalized verbs as in \ref{ex:jAkWGe} (compare with the imperfective nominalization in example \ref{ex:jukWGi}).
+
+ \begin{exe}
+\ex \label{ex:jAkWGe}
+\gll
+  	\ipa{jɤ-kɯ-ɣe}	   \\
+  \textsc{pfv-nmlz:}S/A-come[II]   \\
+\glt The one who came.
+\ex \label{ex:jukWGi}
+\gll
+  	\ipa{ju-kɯ-ɣi}	   \\
+  \textsc{ipfv-nmlz:}S/A-come   \\
+\glt The one who is coming.
+ \end{exe}
+ 
+The oblique nominalizer is only compatible with imperfective TAM prefixes, not with perfective ones. 
+ 
+There are some constraints on  the prefixal slots. Possessive and TAM prefixes are compatible for oblique nominalization and for A as in \ref{ex:WtusAGi} and \ref{ex:WtukWrACi}.
+
+ \begin{exe}
+\ex \label{ex:WtusAGi}
+\gll
+\ipa{tɯ-ci}  	\ipa{ɯ-tu-sɤ-ɣi}  \\
+\textsc{indef.poss}-water \textsc{3sg-ipfv-nmlz}:come \\
+\glt  The place where water comes up (Alcohol jug, 18)
+ \end{exe}
+ \begin{exe}
+\ex \label{ex:WtukWrACi}
+\gll 
+\ipa{ɕombri}  	\ipa{ɯ-tu-kɯ-rɤɕi}  	\ipa{ra}  	\ipa{kɯ}  \\
+chain \textsc{3sg-ipfv-nmlz:A}-pull \textsc{pl} \textsc{erg} \\
+\glt Those who were pulling the chain (The fox, 80)
+ \end{exe}
+
+However, with relativization of P, TAM prefixes and personal prefixes are not compatible with each other. It is thus possible to say \ipa{pɯ-kɤ-mto} \textsc{pfv-nmlz:P}-\textit{see} `which was seen' or \ipa{a-kɤ-mto} \textsc{1sg-nmlz:P}-\textit{see} `which I see' but not to combine the two in a form such as *\ipa{a-pɯ-kɤ-mto}. No such constraint is found with negative and associated motion prefixes. 
+
+\subsection{Action nominal}
+action nominalization \ipa{tɯ--}.  
+
+\subsection{Synthetic action nominal}
+\citet{jacques12incorp}
+
+\subsection{Bare nominal forms}
+\citet{jacques14antipassive}
+
+
+\section{Relativization}
+
+\section{Complementation}
+\citet{jacques15causative}
+\citet{sun12complementation}
+
+\section{Degree}
+\section{Manner and purpose}
+\citet{jacques14linking}
+ nmlz > converb
+ 
+\section{Historical perspectives} 
+ \citet{konnerth09nmlz} 
+ 
+ 
+\section{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
