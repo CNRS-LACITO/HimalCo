@@ -1,0 +1,69 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\setdefaultlanguage{french} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\sloppy
+
+\begin{document} 
+\title{Pré-rapport de la thèse présentée par M Liao Shueying \textit{L'usage de la figure rythmique dans l'analyse du procédé incitatif (Xing): une méthode de lecture expérimentale pour le Shijing} en vue de l'obtention du doctorat }
+\author{Guillaume Jacques, chargé de recherches HDR, CNRS\\rgyalrongskad@gmail.com}
+\maketitle
+
+La thèse de Liao Shueying propose une nouvelle méthode pour analyser la structure des poèmes du Shijing en calculant la fréquence relative des caractères dans chaque position de l'hémistiche. Ce travail, basé sur des scripts en python mis au point par l'auteur et accompagné d'une annexe copieuse, se situe à la croisée de trois disciplines, la philologie chinoise, la linguistique historique et la linguistique computationnelle. C'est une œuvre la fois cohérente et originale, mais elle souffre d'une certaine idiosyncrasie au niveau de la terminologie et de la méthode qui rendent son accès difficile. 
+
+
+La linguistique est le grand absent de cette thèse, et cette absence se fait sentir aussi bien au niveau de la terminologie que de la problématique, qui sont traités ici l'un après l'autre.
+
+
+
+Deuxièmement, il utilise des termes tels que `rythme', `syntaxe' et `accentuation' dans un sens très différent de leur usage habituel en linguistique, ce qui demande un effort considérable de la part du lecteur, voire un véritable travail de traduction, pour comprendre le propos. On remarque aussi le terme `contrapuntique' (p.251) pour désigner deux hémistiches dont la structure `accentuelle' (selon la terminologie de l'auteur) est opposée, un sens sans rapport avec le contrepoint au sens musical, qui désignerait la superposition temporelle de deux motifs.
+
+Du point de vue de la problématique de la thèse, on regrette l'absence totale de références aux nombreux travaux de phonologie (aussi bien structuraliste que générative) sur la métrique, ainsi que trois points principaux.
+
+Premièrement, le Shijing contient de nombreuses syllabes redoublées, auxquelles l'auteur consacre de nombreuses pages (p.89 par exemple), et une discussion plus générale mettant en regard les propriétés des idéophones dans les langues du monde avec les caractéristiques spécifiques du chinois archaïque auraient permis d'agrandir le lectorat potentiel de ce travail.
+
+
+
+Troisièmement, même s'il l'on doit reconnaître que l'auteur fait référence à quelques travaux sur la phonologie historique du chinois, comme ceux de Baxter et Sagart, il néglige pour l'essentiel l'aspect phonétique de la versification.
+
+
+
+Malgré ces réserves, il est indéniable que l'auteur a démontré sa capacité à  développer une idée originale et  à se donner les moyens intellectuels pour mener une recherche à complétion. Il ne fait donc aucun doute que cette thèse mérite d'être soutenue.
+
+%\bibliographystyle{unified}
+%\bibliography{bibliogj}
+\end{document}
