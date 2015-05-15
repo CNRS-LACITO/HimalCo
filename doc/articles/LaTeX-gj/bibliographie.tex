@@ -4,7 +4,7 @@
 \usepackage{booktabs}
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
-\setdefaultlanguage{french} 
+%\setdefaultlanguage{french} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{graphicx}
@@ -28,7 +28,7 @@
 \newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
 \newcommand{\wav}[1]{#1.wav}
 \newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
-\newcommand{\langue}[2]{#2}
+\newcommand{\langue}[2]{#1}
 
  
 \begin{document}
@@ -44,19 +44,19 @@
   
  \section{\langue{By journals}{Articles classés par revue}}
 % 43 articles
-Cette liste inclut seulement les articles de recherche déjà publiés, à l'exclusion des compte-rendus de livres et des articles acceptés sous presse.
+\langue{This list only includes published research articles, excluding book reviews and articles in press.}{Cette liste inclut seulement les articles de recherche déjà publiés, à l'exclusion des compte-rendus de livres et des articles acceptés sous presse.}
  \begin{enumerate}
  \item Amérindia (1): \citet{jacques12bear}
  \item Anthropological linguistics (1): \citet{japhug14ideophones}
  \item Bulletin of the School of Asian and Oriental Studies (3):  \citet{jacques10refl}, \citet{rg-gj12yod}, \citet{jacques13yod}
  \item Cahiers de linguistique d'Asie orientale (4): \citet{jacques00ywij},  \citet{jacques03dissimilation},   \citet{jacques07chang},  \citet{michaud10bonin}
- \item Central Asiatic Journal (1):  \citet{jacques10imperial}
+ \item Central Asiatic Journal (2):  \citet{jacques10imperial}, \citet{jacques14ergative}
   \item Diachronica (2): \citet{jacques.michaud11naish}, \citet{michaud-jacques12nasalite}
   \item Etudes Mongoles \& Sibériennes, Centrasiatiques \& Tibétaines (1):  \citet{jacques09e}
   \item Faits de langue (1): \citet{jacques07redupl}
  \item Folia Linguistica Historica (1): \citet{jacques13arapaho}
  \item Himalayan Linguistics (2): \citet{jacques10zos},  \citet{jacques14rtau}
- \item Journal of Chinese Linguistics (1):   \citet{jacques11tangut.verb}
+ \item Journal of Chinese Linguistics (2):   \citet{jacques11tangut.verb}, \citet{jacques15sr}
  \item Journal of the American Oriental Society (1): \citet{jacques11ngwemi}
    \item Language and Linguistics (6):  \citet{jacques07passif}, \citet{jacques09tangutverb}, \citet{jacques10inverse},     \citet{jacques11pumi.tone}, \citet{jacques12agreement},    \citet{jacques12khaling}.  
    \item  Language and Linguistics Compass (1): \citet{jacques14inverse}   
@@ -82,10 +82,10 @@ Cette liste inclut seulement les articles de recherche déjà publiés, à l'exc
 \item Stau: \citet{antonov14rtau}, \citet{jacques14rtau}.
 \item \langue{Tibetan}{Tibétain}:  \citet{jacques01dg}, \citet{jacques04thimphu}, \citet{jacques07naksatram},      \citet{jacques08debther},  \citet{jacques09wazur}, \citet{jacques09e},  \citet{jacques10zos},   \citet{jacques10ndr},  \citet{jacques11lingua},  \citet{jacques12internal},  \citet{jacques12transcription}, \citet{jacques13yod}, \citet{jacques14snom}, \citet{jacques14cone}.
 \item Pumi:  \citet{michaud10bonin}, \citet{jacques11pumi.tone}, \citet{jacques11lingua}, 
-\item \langue{Tangut}{Tangoute}: \citet{jacques06comparaison},  \citet{jacques07textes}, \citet{jacques08weiyu}, \citet{jacques08alternations},   \citet{jacques09tangutverb},  \citet{jacques10imperial},  \citet{jacques11tangut.verb}, \citet{jacques11ngwemi}, \citet{jacques11kinship},  \citet{jacques14esquisse}.
+\item \langue{Tangut}{Tangoute}: \citet{jacques06comparaison},  \citet{jacques07textes}, \citet{jacques08weiyu}, \citet{jacques08alternations},   \citet{jacques09tangutverb},  \citet{jacques10imperial},  \citet{jacques11tangut.verb}, \citet{jacques11ngwemi}, \citet{jacques11kinship},  \citet{jacques14esquisse}, \citet{jacques14ergative}.
 \item Naish: \citet{jacques.michaud11naish}.
 \item  Zhang-zhung: \citet{jacques09zz}.
-\item \langue{Chinese}{Chinois}:  \citet{jacques00ywij},  \citet{jacques03dissimilation},   \citet{jacques2015genetic}, \citet{jacques2015traditional}.
+\item \langue{Chinese}{Chinois}:  \citet{jacques00ywij},  \citet{jacques03dissimilation}, \citet{jacques15sr},   \citet{jacques2015genetic}, \citet{jacques2015traditional}.
 \end{enumerate}
 \item \langue{Indo-European}{Indo-européen}
 \begin{enumerate}
@@ -149,8 +149,9 @@ Cette liste inclut seulement les articles de recherche déjà publiés, à l'exc
 \item \langue{Historical linguistics}{Linguistique historique}
 \begin{enumerate}
 \item \langue{Sound laws}{Lois phonétiques}:  \citet{jacques00ywij}, \citet{jacques01dg}, \citet{jacques03dissimilation},   \citet{jacques04thimphu}, \citet{jacques06comparaison}, \citet{jacques09wazur}, \citet{jacques09e}, \citet{michaud10bonin}, \citet{jacques10ndr}, \citet{jacques.michaud11naish},   \citet{rg-gj12yod}, \citet{jacques13arapaho}, \citet{jacques13yod}, \citet{jacques14snom},   \citet{jacques14esquisse}, \citet{jacques14cone}.
-\item  \langue{Etymology}{Etymologie}:    \citet{jacques07naksatram}, \citet{jacques08debther}, \citet{jacques09zz}, \citet{jacques10imperial}, \citet{jacques11ngwemi}, \citet{jacques12bear},  \citet{jacques13vama},   \citet{jacques14esquisse}.
+\item  \langue{Etymology}{Etymologie}:    \citet{jacques07naksatram}, \citet{jacques08debther}, \citet{jacques09zz}, \citet{jacques10imperial}, \citet{jacques11ngwemi}, \citet{jacques12bear},  \citet{jacques13vama},   \citet{jacques14esquisse}, \citet{jacques15sr}.
 \item \langue{Historical morphology}{Morphologie historique}:  \citet{jacques03s.houzhui}, \citet{jacques06morpho}, \citet{jacques07chang},    \citet{jacques09tangutverb}, \citet{jacques10zos}, \citet{jacques11tangut.verb}, \citet{jacques12agreement}, \citet{jacques12internal}, \citet{jacques14antipassive},   \citet{jacques14esquisse}, \citet{jacques14cone}.
+\item \langue{Grammaticalization:}{Grammaticalisation} \citet{jacques12internal},\citet{jacques13harmonization}, \citet{jacques14antipassive}, \citet{jacques14ergative}
 \item \langue{Language contact:}{Contact de langues} \citet{antonov12kumush},   \citet{jacques12bear}.
 \item \langue{Genetic linguistics}{Linguistique génétique}:  \citet{jacques07chang}, \citet{jacques12agreement}, \citet{jacques2015genetic}.
 \end{enumerate}
