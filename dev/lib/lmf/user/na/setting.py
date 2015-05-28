@@ -289,7 +289,7 @@ def handle_tones(text):
     return result
 
 def handle_tilde(text):
-    return text.replace('~', "\\textasciitilde ")
+    return text.replace('~', "\\textasciitilde{}")
 
 def format_uid(lexical_entry, font):
     """Forbidden characters in filenames on Windows:
