@@ -32,8 +32,8 @@ dict/*/toolbox/Backup\ of\ Texts.txt
 corpus/koyi/toolbox/Backup\ of\ Koy_ORIGIN.txt
 corpus/koyi/toolbox/Backup\ of\ Koy_Syurime.txt
 corpus/koyi/ITE\ files/Backup\ of\ Koy_ORIGIN_glossary.txt
-corpus/koyi/ITE\ filesBackup\ of\ /Koy_Syurime_glossary.txt
-corpus/koyi/ITE\ filesBackup\ of\ /Koy_glossary.txt
+corpus/koyi/ITE\ files/Backup\ of\ /Koy_Syurime_glossary.txt
+corpus/koyi/ITE\ files/Backup\ of\ /Koy_glossary.txt
 
 # Python generated files
 dev/lib/lmf/utest/*.txt
@@ -47,6 +47,9 @@ corpus/koyi/ITE\ files/*_ok.txt
 
 # Input files
 dev/scripts/tools/filename/ipa/
+
+# DTD/XML files
+*.ent
 
 #################
 ## Eclipse
@@ -263,9 +266,3 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-*.pdf
-dev/lib/lmf/user/guillaume/Dictionary.tex
-dev/lib/lmf/user/guillaume/test.tex
-dev/lib/lmf/user/guillaume/test_output.txt
-dev/lib/lmf/user/guillaume/Dictionary.txt
-*.ent
