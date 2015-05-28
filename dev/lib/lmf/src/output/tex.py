@@ -175,7 +175,7 @@ def handle_font(text):
     """Replace '{xxx}' by '\ipa{xxx}' in 'un', 'xn', 'gn', 'dn', 'en'.
     """
     import re
-    pattern = r"([^\\]*){([^}]*)}(.*)"
+    pattern = r"([^\\\|]*){([^}]*)}(.*)"
     while re.match(pattern, text):
         text = re.sub(pattern, r"\1" + r"\\ipa{" + r"\2" + "}" + r"\3", text)
     return text
@@ -202,7 +202,7 @@ def handle_reserved(text):
 
 def handle_fi(text):
     """Replace 'fi:xxx' and '|fi{xxx}' by \\textit{xxx}.
-        """
+    """
     import re
     if text.find("fi:") != -1:
         pattern = r"(\w*)fi:([^\s\.,)]*)(\w*)"

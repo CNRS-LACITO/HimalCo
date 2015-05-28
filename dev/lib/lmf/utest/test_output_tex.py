@@ -156,8 +156,8 @@ class TestTexFunctions(unittest.TestCase):
         os.remove(tex_filename)
 
     def test_handle_font(self):
-        input = "bla{bla} bla {bla}bla {bla}"
-        output = "bla\ipa{bla} bla \ipa{bla}bla \ipa{bla}"
+        input = "bla{bla} bla {bla}bla |ipa{bla}"
+        output = "bla\ipa{bla} bla \ipa{bla}bla |ipa{bla}"
         self.assertEqual(handle_font(input), output)
 
     def test_handle_fi(self):
