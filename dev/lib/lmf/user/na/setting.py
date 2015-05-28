@@ -338,11 +338,14 @@ def format_tone(lexical_entry, font):
     result = ""
     if lexical_entry.get_tones() is not None and len(lexical_entry.get_tones()) != 0:
         tone = lexical_entry.get_tones()[0]
+        # Subscript tone sub-categories only if they follow L, M, or H character
+        prev = None
         for c in tone:
-            if c in set("abcd123"):
+            if c in set("abcd123") and prev in set("LMH"):
                 result += "\\textsubscript{" + c + "}"
             else:
                 result += c
+            prev = c
     return result
 
 def format_usage_notes(sense, font, language_font, language):
