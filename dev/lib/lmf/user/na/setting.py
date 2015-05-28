@@ -288,6 +288,9 @@ def handle_tones(text):
                     result += "\\textsubscript{" + found.group(i*3+3) + "}"
     return result
 
+def handle_tilde(text):
+    return text.replace('~', "\\textasciitilde ")
+
 def format_uid(lexical_entry, font):
     """Forbidden characters in filenames on Windows:
     < (less than) => none
@@ -313,7 +316,7 @@ def format_uid(lexical_entry, font):
 def format_lexeme(lexical_entry, font):
     import output.tex as tex
     result = ""
-    lexeme = font[VERNACULAR](handle_tones(lexical_entry.get_lexeme()))
+    lexeme = font[VERNACULAR](handle_tilde(handle_tones(lexical_entry.get_lexeme())))
     if lexical_entry.is_subentry():
         result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
     else:
@@ -324,7 +327,7 @@ def format_lexeme(lexical_entry, font):
     if lexical_entry.get_contextual_variations() is not None and len(lexical_entry.get_contextual_variations()) != 0:
         # Format contextual variations
         for var in lexical_entry.get_contextual_variations():
-            result += " " + font[VERNACULAR](var)
+            result += " " + font[VERNACULAR](handle_tilde(var))
         result += " (from: " + lexeme + ")."
     else:
         # Format lexeme
@@ -388,7 +391,7 @@ def format_examples(sense, font, languages=None):
         for language in languages:
             for example in context.find_written_forms(language):
                 if language == config.xml.vernacular:
-                    tmp += "\\sn " + font[VERNACULAR](ref + example) + EOL
+                    tmp += "\\sn " + font[VERNACULAR](handle_tilde(ref + example)) + EOL
                 elif language == config.xml.national:
                     tmp += "\\trans \\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
                 elif language == config.xml.regional:
@@ -431,7 +434,7 @@ def format_paradigm(lexical_entry, font, language):
     for paradigm in lexical_entry.get_paradigms():
         if paradigm.get_paradigmLabel() == "classifier":
             if paradigm.get_language() == config.xml.vernacular:
-                result += font[VERNACULAR](paradigm.get_paradigm()) + " "
+                result += font[VERNACULAR](handle_tilde(paradigm.get_paradigm())) + " "
             if paradigm.get_language() == language:
                 translation = paradigm.get_paradigm()
                 if language == config.xml.French:
@@ -457,7 +460,7 @@ def format_related_forms(lexical_entry, font, language=None):
         if related_form.get_lexical_entry() is not None:
             result += tex.format_link(related_form.get_lexical_entry(), font)
         else:
-            result += font[VERNACULAR](related_form.get_lexeme())
+            result += font[VERNACULAR](handle_tilde(related_form.get_lexeme()))
         result += ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
         if language == config.xml.French:
@@ -467,13 +470,13 @@ def format_related_forms(lexical_entry, font, language=None):
         if related_form.get_lexical_entry() is not None:
             result += tex.format_link(related_form.get_lexical_entry(), font)
         else:
-            result += font[VERNACULAR](related_form.get_lexeme())
+            result += font[VERNACULAR](handle_tilde(related_form.get_lexeme()))
         result += ". "
     for morphology in lexical_entry.get_morphologies():
         if language == config.xml.French:
             result += "\\textit{Morph~:} "
         else:
-            result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
+            result += "\\textit{Morph:} " + font[VERNACULAR](handle_tilde(morphology)) + ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
         if language == config.xml.French:
             result += "\\textit{Voir~:} "
@@ -482,7 +485,7 @@ def format_related_forms(lexical_entry, font, language=None):
         if related_form.get_lexical_entry() is not None:
             result += tex.format_link(related_form.get_lexical_entry(), font)
         else:
-            result += font[VERNACULAR](related_form.get_lexeme())
+            result += font[VERNACULAR](handle_tilde(related_form.get_lexeme()))
         result += " "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["hm"]):
         if language == config.xml.French:
@@ -492,7 +495,7 @@ def format_related_forms(lexical_entry, font, language=None):
         if related_form.get_lexical_entry() is not None:
             result += tex.format_link(related_form.get_lexical_entry(), font)
         else:
-            result += font[VERNACULAR](related_form.get_lexeme())
+            result += font[VERNACULAR](handle_tilde(related_form.get_lexeme()))
         result += " "
     return result
 
