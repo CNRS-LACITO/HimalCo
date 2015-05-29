@@ -12,8 +12,8 @@ import config
 FRENCH = "French"
 
 def get_lx(lexical_entry):
-    # Do not consider special character '-', '=', '*' or '‑' preceeding 'lx', nor '|' separation
-    return lexical_entry.get_lexeme().lstrip('-=*').lstrip('‑'.decode(encoding=ENCODING)).replace(" | ", '')
+    # Do not consider special characters '~', '‑', '-', '=', '*' nor '|' separation
+    return lexical_entry.get_lexeme().lstrip('*').replace('=', '').replace('-', '').replace('‑'.decode(encoding=ENCODING), '').replace('~', '').replace(" | ", '')
 
 items = lambda lexical_entry: get_lx(lexical_entry)
 condition = lambda lexical_entry: lexical_entry.get_lexeme() != "???" and lexical_entry.get_lexeme() != "xxxx" and lexical_entry.get_lexeme() != "*"
@@ -34,8 +34,8 @@ def classify_lexicon(lexicon, sort_order, sort_type):
         unknown = set(["xxxx", "???", ""])
         cmp_x = x
         cmp_y = y
-        pattern = "^([" + initials.replace('j', '').replace('w', '') + "]{0,3})([" + rimes + "]{1,2})#?([" + tones + "]{0,2})[$#]?[abcd123]?(.*)"
-        n = 4
+        pattern = "^([" + initials.replace('j', '').replace('w', '') + "]{0,3})([" + rimes + "]{1,2})#?([" + tones + "]{0,2})[$#]?[123]?(.*)$"
+        n = 5
         while(n > 0):
             initial_x = ""
             rime_x = ""
@@ -64,7 +64,7 @@ def classify_lexicon(lexicon, sort_order, sort_type):
                 initial_x = found.group(1)
                 rime_x = found.group(2)
                 tone_x = found.group(3)
-                cmp_x = found.group(4).lstrip('-~=')
+                cmp_x = found.group(4)
                 # Before comparing, handle combining tilde of 'ɻ̃' if any
                 if rime_x == u"\u0303":
                     initial_x += rime_x
@@ -88,7 +88,7 @@ def classify_lexicon(lexicon, sort_order, sort_type):
                 initial_y = found.group(1)
                 rime_y = found.group(2)
                 tone_y = found.group(3)
-                cmp_y = found.group(4).lstrip('-~=')
+                cmp_y = found.group(4)
                 # Before comparing, handle combining tilde of 'ɻ̃' if any
                 if rime_y == u"\u0303":
                     initial_y += rime_y
@@ -117,36 +117,38 @@ def classify_lexicon(lexicon, sort_order, sort_type):
                 elif sort_order[char_x[0]] > sort_order[char_y[0]]:
                     return 1
                 else: # sort_order[char_x[0]] == sort_order[char_y[0]]
+                    single = False
                     try:
                         char_x[1]
                     except IndexError:
-                        return -1
+                        single = True
                     try:
                         char_y[1]
                     except IndexError:
-                        return 1
-                    # If the 1st one is lower than the 2nd one, its rank is decremented
-                    if sort_order[char_x[1]] < sort_order[char_y[1]]:
-                        return -1
-                    # If the 1st one is greater than the 2nd one, its rank is incremented
-                    elif sort_order[char_x[1]] > sort_order[char_y[1]]:
-                        return 1
-                    else: # sort_order[char_x[1]] == sort_order[char_y[1]]
+                        single = True
+                    if not single:
                         # If the 1st one is lower than the 2nd one, its rank is decremented
-                        if sort_order[tone_x] < sort_order[tone_y]:
+                        if sort_order[char_x[1]] < sort_order[char_y[1]]:
                             return -1
                         # If the 1st one is greater than the 2nd one, its rank is incremented
-                        elif sort_order[tone_x] > sort_order[tone_y]:
+                        elif sort_order[char_x[1]] > sort_order[char_y[1]]:
                             return 1
-                        else: # sort_order[tone_x] == sort_order[tone_y]
-                            if cmp_x == "":
-                                return -1
-                            if cmp_y == "":
-                                return 1
-                            n -= 1
-                            if n == 0:
-                                # If all characters match, both equal => do nothing
-                                return 0
+                    # sort_order[char_x[1]] == sort_order[char_y[1]]
+                    # If the 1st one is lower than the 2nd one, its rank is decremented
+                    if sort_order[tone_x] < sort_order[tone_y]:
+                        return -1
+                    # If the 1st one is greater than the 2nd one, its rank is incremented
+                    elif sort_order[tone_x] > sort_order[tone_y]:
+                        return 1
+                    else: # sort_order[tone_x] == sort_order[tone_y]
+                        if cmp_x == "":
+                            return -1
+                        if cmp_y == "":
+                            return 1
+                        n -= 1
+                        if n == 0:
+                            # If all characters match, both equal => do nothing
+                            return 0
             except KeyError:
                 print Warning("Cannot compare " + x.encode(ENCODING) + " and " + y.encode(ENCODING))
                 return 0
