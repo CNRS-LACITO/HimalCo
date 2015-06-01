@@ -159,7 +159,8 @@ def classify_lexicon(lexicon, sort_order, sort_type):
 
 def process_lx(attributes, lx, lexical_entry):
     lexical_entry.set_lexeme(lx)
-    lexical_entry.id = attributes["id"]
+    # UID is already set
+    #lexical_entry.id = attributes["id"]
 
 def process_np(attributes, np, lexical_entry):
     # <type lang>

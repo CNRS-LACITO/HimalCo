@@ -50,6 +50,7 @@ for line in in_file.readlines():
             if lx != "":
                 # Generate UID and remove spaces around separation character
                 uid = uni2sampa(lx).replace(" | ", "|")
+                # Concatenate homonym number if any, otherwise add '1'
                 uid += str(hm)
                 if hm == "":
                     uid += str("1")
