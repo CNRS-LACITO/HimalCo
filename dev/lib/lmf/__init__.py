@@ -26,6 +26,7 @@ def parse_options():
     parser.add_option("-l", "--log-filename", dest="log_filename", action="store", default=None, help="log filename [default=None]")
     parser.add_option("-u", "--unit-test", dest="unit_test", action="store_true", default=False, help="unit test mode [default=False]")
     parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False, help="print more details to stdout [default=False]")
+    parser.add_option("-i", "--uid", dest="uid", action="store_true", default=False, help="include UID in output format [default=False]")
     return parser.parse_args()[0]
 
 ## Initialize LMF library global variables

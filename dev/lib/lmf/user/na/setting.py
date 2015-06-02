@@ -11,6 +11,10 @@ from utils.error_handling import Warning
 import config
 FRENCH = "French"
 
+# To access options
+from lmf import options
+global options
+
 def get_lx(lexical_entry):
     # Do not consider special characters '~', '‑', '-', '=', '*' nor '|' separation
     return lexical_entry.get_lexeme().lstrip('*').replace('=', '').replace('-', '').replace('‑'.decode(encoding=ENCODING), '').replace('~', '').replace(" | ", '')
@@ -307,13 +311,16 @@ def format_uid(lexical_entry, font):
     * (asterisk) => F
     """
     import output.tex as tex
-    text = tex.format_uid(lexical_entry, font)
-    if text.find("|") != -1:
-        text = text.replace('|', u"€")
-    if text.find("?") != -1:
-        text = text.replace('?', 'Q')
-    if text.find("*") != -1:
-        text = text.replace('*', 'F')
+    text = ""
+    if options.uid:
+        text = tex.format_uid(lexical_entry, font)
+        if text.find("|") != -1:
+            text = text.replace('|', u"€")
+        if text.find("?") != -1:
+            text = text.replace('?', 'Q')
+        if text.find("*") != -1:
+            text = text.replace('*', 'F')
+        text = " \\textcolor{red}{UID=" + text + "} "
     return text
 
 def format_lexeme(lexical_entry, font):
@@ -545,10 +552,10 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s\hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s%s%s\hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
-        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
+        format_uid(lexical_entry, font),\
         format_part_of_speech(lexical_entry, config.xml.French),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
@@ -579,10 +586,10 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s %s %s\hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s%s%s\hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
-        "\\textcolor{red}{UID=" + format_uid(lexical_entry, font) + "}",\
+        format_uid(lexical_entry, font),\
         format_part_of_speech(lexical_entry, config.xml.English),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
