@@ -100,9 +100,28 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                 if lexical_entry.get_homonymNumber() is not None:
                     # Add homonym number to lexeme
                     lexeme += " (" + str(lexical_entry.get_homonymNumber()) + ")"
-                document.add_heading(lexeme, level=level+2)
+                # Add dialect if any
+                dialect = ""
+                for sense in lexical_entry.get_senses():
+                    for usage_note in sense.find_usage_notes(language=config.xml.vernacular):
+                        dialect += " (" + usage_note + ")"
+                document.add_heading(lexeme + dialect, level=level+2)
                 # Paragraph
                 p = document.add_paragraph()
+                # Dialectal variants
+                write_title = True
+                for repr in lexical_entry.get_form_representations():
+                    if repr.get_geographicalVariant() is not None:
+                        if write_title:
+                            p.add_run("Variante(s) : ")
+                            write_title = False
+                        else:
+                            p.add_run(" ; ")
+                        p.add_run(repr.get_geographicalVariant()).bold = True
+                        if repr.get_dialect() is not None:
+                            p.add_run(" (" + repr.get_dialect() + ")")
+                if not write_title:
+                    p.add_run(". ")
                 # Italic
                 p.add_run(lexical_entry.get_partOfSpeech()).italic = True
                 for sense in lexical_entry.get_senses():
@@ -213,6 +232,26 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                 for related_form in lexical_entry.get_related_forms("subentry"):
                     if related_form.get_lexical_entry() is not None:
                         document.add_heading(related_form.get_lexeme(), level=level+3)
+                        # Paragraph
+                        p = document.add_paragraph()
+                        for sense in related_form.get_lexical_entry().get_senses():
+                            # Items in unordered list
+                            glosses = ""
+                            for gloss in sense.find_glosses(language=config.xml.vernacular):
+                                glosses += " " + gloss + " ;"
+                            glosses = glosses.rstrip(" ;")
+                            if glosses != "":
+                                glosses += "."
+                            try:
+                                for gloss in sense.find_glosses(language=config.xml.French):
+                                    glosses += " " + gloss + " ;"
+                            except AttributeError:
+                                for gloss in sense.find_glosses(language=config.xml.English):
+                                    glosses += " " + gloss + " ;"
+                            glosses = glosses.rstrip(" ;")
+                            if glosses != "":
+                                glosses += "."
+                            p.add_run(glosses)
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     document.save(filename)

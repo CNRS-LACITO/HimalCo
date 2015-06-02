@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from config.mdf import ps_partOfSpeech
+from config.mdf import ps_partOfSpeech, mdf_lmf, set_bw
 from common.range import partOfSpeech_range
 from config.tex import partOfSpeech_tex
 from utils.io import EOL, ENCODING
@@ -218,28 +218,13 @@ def get_is(lexical_entry):
     return "-"
 items=lambda lexical_entry: get_is(lexical_entry)
 
+## Functions to process some MDF fields (input)
+mdf_lmf.update({
+    "empr" : lambda empr, lexical_entry: set_bw(empr, lexical_entry)
+})
+
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
 ps_partOfSpeech.update({
-    # HimalCo
-    "adj"           : "adjective",                  # adjective
-    "adv"           : "adverb",                     # adverb(ial)
-    "class"         : "classifier",                 # classifier (MDF)
-    "clf"           : "classifier",                 # classifier (Leipzig)
-    "cnj"           : "conjunction",                # conjunction
-    "disc.PTCL"     : "particle",                   # discourse particle
-    "ideo"          : "ideophone",                  # ideophones
-    "intj"          : "interjection",               # interjection
-    "interj"        : "interjection",               # interjection -> khaling
-    "lnk"           : "coordinating conjunction",   # linker
-    "n"             : "noun",                       # noun
-    "Np"            : "possessed noun",             # possessed nouns
-    "_poss._pref"   : "possessed noun",             # possessed nouns -> koyi
-    "neg"           : "negation",                   # negative
-    "num"           : "numeral",                    # number
-    "prep"          : "preposition",                # preposition
-    "pro"           : "pronoun",                    # pronoun/pronominal
-    "vi.s"          : "stative intransitive verb",  # stative intransitive verb
-    # yuanga
     "voyelle euphonique"                                                                                            : "XXX",
     "pronom sujet 2 pluriel"                                                                                        : "XXX",
     "relatif (ou) démonstratif?"                                                                                    : "XXX",
@@ -645,40 +630,7 @@ ps_partOfSpeech.update({
     "pronom objet ou possessif 1° plur. exclusif"                                                                   : "XXX",
     "pronom sujet 2°  pluriel"                                                                                      : "XXX",
     "pronom objet ; possessif 2° pluriel"                                                                           : "XXX",
-    "2° pluriel sujet ou objet ou possessif"                                                                        : "XXX",
-    ##
-    "cl"            : "classifier",                 # classifier
-    "conjonction"   : "conjunction",                # conjunction
-    "expression"    : "expression",                 #
-    "idph"          : "ideophone",                  # ideophones
-    "idph.1"        : "ideophone.1",                # ideophones
-    "idph.2"        : "ideophone.2",                # ideophones
-    "idph.3"        : "ideophone.3",                # ideophones
-    "idph.4"        : "ideophone.4",                # ideophones
-    "idph.5"        : "ideophone.5",                # ideophones
-    "idph.6"        : "ideophone.6",                # ideophones
-    "idph.7"        : "ideophone.7",                # ideophones
-    "idph.8"        : "ideophone.8",                # ideophones
-    "n N"           : "noun",                       # noun
-    "nq"            : "noun",                       # noun
-    "np"            : "possessed noun",             # possessed nouns
-    "nP"            : "possessed noun",             # possessed nouns
-    "Posp"          : "possessed noun",             # possessed nouns
-    "Post"          : "possessed noun",             # possessed nouns
-    "postp"         : "possessed noun",             # possessed nouns
-    "quant"         : "numeral",                    # number
-    "part"          : "particle",                   # discourse particle
-    "Part"          : "particle",                   # discourse particle
-    "vi-"           : "intransitive verb",          # intransitive verb
-    "vinh"          : "stative intransitive verb",  # stative intransitive verb
-    "vStat"         : "stative intransitive verb",  # stative intransitive verb
-    "vst"           : "stative intransitive verb",  # stative intransitive verb
-    "vs"            : "stative intransitive verb",  # stative intransitive verb
-    "vl"            : "bitransistive verb",         # labial verb
-    "vlb"           : "bitransistive verb",         # labial verb
-    "vlab"          : "bitransistive verb",         # labial verb
-    "T"             : "time noun",                  # ?
-    "indef"         : "indefinite determiner"       # ?
+    "2° pluriel sujet ou objet ou possessif"                                                                        : "XXX"
 })
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute

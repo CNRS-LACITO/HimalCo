@@ -28,13 +28,13 @@
                 <feat att="characterEncoding" val="UTF-8"/>
                 <feat att="dateCoding" val="ISO-8601"/>
                 <feat att="creationDate" val="2015-01-18"/>
-                <feat att="projectName" val="ANR HimalCo"/>
-                <feat att="description" val="This is the yuanga lexicon of LabexEFL project."/>
+                <feat att="projectName" val="LabexEFL"/>
+                <feat att="description" val="Yuanga : Bondé (BO) / Paimboa (PA) ; Zuanga : Paimboa (PA) / Gomen (GO) - Gomen sud (GO(s)), Gomen nord (GO(n))"/>
             </GlobalInformation>
             <Lexicon id="yuanga">
                 <feat att="language" val="nua"/>
                 <feat att="languageScript" val=""/>
-                <feat att="label" val="Yuanga online dictionary"/>
+                <feat att="label" val="Dictionnaire thématique de la langue Zuanga-Yuanga"/>
                 <feat att="lexiconType" val="bilingual dictionary nua-fra"/>
                 <feat att="entrySource" val="../../../dict/yuanga/toolbox/yuanga.lex"/>
                 <!-- Relative path to audio files -->
@@ -78,20 +78,55 @@
         <ps_partOfSpeech ps="pro" partOfSpeech="pronoun"/>
         <!-- stative intransitive verb -->
         <ps_partOfSpeech ps="vi.s" partOfSpeech="stative intransitive verb"/>
+        <!-- Yuanga -->
+        <!-- conjunction -->
+        <ps_partOfSpeech ps="conjonction" partOfSpeech="conjunction"/>
+        <!-- number -->
+        <ps_partOfSpeech ps="quant" partOfSpeech="numeral"/>
         <!-- Mapping from MDF markers to LMF attributes -->
-        <!-- TODO -->
-        <mdf_lmf marker="dialx" var="dialx, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="gb" var="gb, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="sge" var="sge, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="rgb" var="rgb, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="gt" var="gt, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="empr" var="empr, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="cf" var="cf, lexical_entry">None</mdf_lmf>
-        <mdf_lmf marker="se" var="se, lexical_entry">None</mdf_lmf>
+        <!-- lx : lexème => OK -->
+        <!-- ph : ? => None -->
+        <mdf_lmf marker="ph" var="ph, lexical_entry">None</mdf_lmf>
+        <!-- is : champ sémantique => OK -->
+        <!-- hm : numéro d'homonyme => OK -->
+        <!-- dialx : dialecte BO / PA / GO / GO(s) / GO(n) + WEM / WE -->
+        <mdf_lmf marker="dialx" var="dialx, lexical_entry">lexical_entry.set_usage_note(dialx, language="nua")</mdf_lmf>
+        <!-- sn : numéro de sens => OK -->
+        <!-- et : ? => TODO -->
+        <!-- va : variante -->
+        <mdf_lmf marker="va" var="va, lexical_entry">lexical_entry.set_geographical_variant(va)</mdf_lmf>
+        <!-- ve : dialecte(s) de la variante BO / PA / GO / GO(s) / GO(n) + WEM / WE / vx / BO [BM] / BO (Corne) / BO (Corne, BM) -->
+        <mdf_lmf marker="ve" var="ve, lexical_entry">lexical_entry.set_dialect(ve)</mdf_lmf>
+        <!-- ps : partie du discours => OK -->
+        <!-- ge : glose en français -->
         <mdf_lmf marker="ge" var="ge, lexical_entry">lexical_entry.set_gloss(ge, language="fra")</mdf_lmf>
+        <!-- sc : nom scientifique => TODO -->
+        <!-- re : lexique inversé en français -->
+        <mdf_lmf marker="re" var="re, lexical_entry">lexical_entry.set_translation(re, language="fra")</mdf_lmf>
+        <!-- gb : glose en anglais => None -->
+        <mdf_lmf marker="gb" var="gb, lexical_entry">lexical_entry.set_gloss(gb, language="eng")</mdf_lmf>
+        <!-- rgb : lexique inversé en anglais => None -->
+        <mdf_lmf marker="rgb" var="rgb, lexical_entry">lexical_entry.set_translation(rgb, language="eng")</mdf_lmf>
+        <!-- xv : exemple vernaculaire => OK -->
+        <!-- xe : exemple anglais => OK -->
+        <!-- xn : exemple français -->
         <mdf_lmf marker="xn" var="xn, lexical_entry">lexical_entry.add_example(xn, language="fra")</mdf_lmf>
+        <!-- se : sous-entrée => OK -->
+        <!-- sge : glose en français de la sous-entrée -->
+        <mdf_lmf marker="sge" var="sge, lexical_entry">lexical_entry.set_gloss(sge, language="fra")</mdf_lmf>
+        <!-- poc : ? => None -->
+        <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
+        <!-- gr: ? => TODO -->
+        <mdf_lmf marker="gr" var="gr, lexical_entry">lexical_entry.set_gloss(gr, language="nua")</mdf_lmf>
+        <!-- gt: traduction de gr en français => TODO -->
+        <mdf_lmf marker="gt" var="gt, lexical_entry">lexical_entry.set_gloss(gt, language="fra")</mdf_lmf>
+        <!-- cf : confer => OK -->
+        <!-- ce : traduction de cf en français => TODO -->
+        <!-- nt : note => OK -->
+        <!-- dt : date => OK -->
+        <!-- an : antonyme => OK -->
+        <!-- at : traduction de an en français => TODO -->
+        <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>
