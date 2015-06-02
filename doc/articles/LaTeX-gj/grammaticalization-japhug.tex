@@ -1,0 +1,234 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{tikz}
+%
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+   
+
+\begin{document} 
+ \title{Grammaticalization in Japhug and Gyalrongic languages}
+ \author{Guillaume Jacques}
+ \maketitle  
+ \section{Introduction}
+
+ \section{Nominal categories} 
+ 
+ No class/gender
+ %d.	Determiners
+\subsection{Number} 
+Japhug has two number clitics, dual \ipa{ni} and plural \ipa{ra}. These clitics are not obligatory for non-singular arguments (even in the case of human referents), and do not necessary trigger plural or dual agreement on the verb. The dual \ipa{ni} is obviously related to the numeral \ipa{ʁnɯz} < *\ipa{q-nis} `two', exemplifying the well-attested pathway \textsc{two} $\rightarrow$ \textsc{dual}. The etymology of the plural clitic \ipa{ra} is unknown.
+ 
+ 
+ The plural clitic \ipa{ra} can express plurality or collective meaning, as in example \ref{ex:ra1}; it is not incompatible with numerals, as shown in \ref{ex:ra2}.
+ 
+\begin{exe}
+\ex \label{ex:ra1}
+\gll \ipa{ɯ-kha} 	\ipa{ra} 	\ipa{nɯ-mɤ-kɤ-sɯz} 	\ipa{nɤ} 	\ipa{ɯʑo} 	\ipa{kɯ} 	\ipa{qɤjɣi} 	\ipa{χsɯm} 	\ipa{lo-βzu} \\
+\textsc{3sg.poss}-house \textsc{pl} \textsc{3pl.poss-neg-inf}-know \textsc{lnk} \textsc{3sg} \textsc{erg} bread three \textsc{ifr}-make \\
+\glt She made three pieces of bread without her relatives knowing. (the raven, 108)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:ra2}
+\gll 
+ \ipa{rɟɤlpu} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{kɯki} 	\ipa{tɯrme} 	\ipa{kɯtʂɤɣ} 	\ipa{ra} 	\ipa{nɯ-ɕki}  	\ipa{to-ti} \\
+ king \textsc{dem} \textsc{erg} this people six \textsc{pl} \textsc{3pl-dat} \textsc{ifr}-say  \\
+ \glt The king told these six men. (Liuhaohan zoubian tianxia, 200)
+\end{exe}
+
+In addition, the marker \ipa{ra} can approximative time or location  (see section  \ref{sec:loc}).
+ 
+
+
+ \subsection{Possession and pronouns} 
+Japhug  nouns can be divided into two main categories, inalienably possessed nouns and alienably possessed nouns. The former must take a possessive prefix, even when the possessor is non-specific. In that case, the indefinite possessor \ipa{tɯ--/tɤ--} or generic possessor \ipa{tɯ--} prefixes are used.
+
+Pronouns  and possessive prefixes are very similar (see Table \ref{tab:pronoun}), but it appears that in Japhug pronouns are derived from possessive prefixes rather than the opposite: pronouns other than \textsc{3du} and \textsc{3pl} are build by combining the possessive prefix with the pronominal root \ipa{-ʑo}.  
+
+The \textsc{3du} and \textsc{3pl} combine the \textit{status constructus} form of that pronominal root \ipa{ʑɤ--} with the dual and plural clitic \ipa{ni} and \ipa{ra}.
+ 
+ 
+\begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes }\label{tab:pronoun}
+\begin{tabular}{lllllllll} 
+\toprule
+ Free pronoun & Prefix & Person\\
+\midrule
+ \ipa{a-ʑo},    \ipa{ɤj} &	\ipa{a--}  &		1\textsc{sg} \\
+\ipa{nɤ-ʑo},  \ipa{nɤj} &	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯ-ʑo}  &	\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+\ipa{tɕi-ʑo}  &	\ipa{tɕi--}  &			1\textsc{du} \\
+\ipa{ndʑi-ʑo}  &	\ipa{ndʑi--}  &		2\textsc{du} \\	
+\ipa{ʑɤ-ni}  &	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+\ipa{i-ʑo}    &	\ipa{i--}  &			1\textsc{pl} \\
+\ipa{nɯ-ʑo}   &	\ipa{nɯ--}  &			2\textsc{pl} \\
+\ipa{ʑa-ra}  &	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+&  \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯ-ʑo} & \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ 
+
+ 
+ \subsection{Ergative and genitive}  \label{sec:erg}
+Japhug has borrowed its ergative  and genitive clitics \ipa{kɯ} and \ipa{ɣɯ} from Amdo Tibetan.  The ergative is highly polyfunctional,  and appears in several types of subordinate clauses as a linker (see \ref{sec:adverbial}). In the comparative construction, the ergative is unexpectedly used to mark the \textit{comparee} rather than the standard, as in \ref{ex:comp1} (\citealt{jacques15comparative}). This is all the more surprising that the ergative \ipa{kə/ɣə} in Amdo Tibetan from which the Japhug ergative \ipa{kɯ} was borrowed is used for the standard.
+
+\begin{exe}
+\ex \label{ex:comp1}
+\gll  [\ipa{ɯ-ʁi}]_{standard}   	\ipa{sɤz}   	[\ipa{ɯ-pi}   	\ipa{nɯ}]_{comparee}   	\ipa{\textbf{kɯ}}   	\ipa{mpɕɤr}     \\
+\textsc{3sg.poss}-younger.sibling \textsc{comparative} \textsc{3sg.poss}-elder.sibling \textsc{dem} \textsc{erg}  be.beautiful:\textsc{fact} \\
+\glt `The elder one is more beautiful than the young one.' (elicited)
+\end{exe}
+
+The genitive \ipa{ɣɯ}, in addition to possessor, is the normal way to mark beneficiaries and can be used to mark recipient  (although for the latter, the dative is more often used), as in \ref{ex:aZWG.nWkhAm}
+\begin{exe}
+\ex \label{ex:aZWG.nWkhAm}
+\gll
+\ipa{ki} 	\ipa{kɯra} 	\ipa{ɲɯ-kham-a} 	\ipa{tɕe} 	\ipa{ki} 	\ipa{nɤki} 	\ipa{nɯ} 	\ipa{aʑɯɣ} 	\ipa{nɯ-khɤm.} \\
+this \textsc{dem:pl} \textsc{ipfv}-give[III]-\textsc{1sg} \textsc{lnk} this \textsc{dem} \textsc{dem} \textsc{1sg:gen} \textsc{imp}-give[III] \\
+\glt I will give you this, and you will give me that. (slobdpon, 130)
+\end{exe}
+
+ \subsection{Dative}  \label{sec:dat}
+The dative \ipa{ɯ-phe} or \ipa{ɯ-ɕki} derives from a relator noun 
+ \subsection{Location}   \label{sec:loc}
+In Japhug, there are four distinct (non mutually exclusive) ways of marking locative adjuncts. First, locative and temporal adjunct are commonly left unmarked. Second, they can  take the locative case markers \ipa{zɯ} or \ipa{tɕu}. Third, relator (possessed) nouns such as \ipa{ɯ-ŋgɯ} `inside', \ipa{ɯ-taʁ} `on' etc can be used for more specific locations. 
+
+Fourth, the plural clitic \ipa{ra} can indicate approximate location, as in \ref{ex:khara}. This use of \ipa{ra} is reminiscent of plural markers in Kirghiz and Old Japanese, which combine collective, hypocoristic and approximate locative meanings see \citealt[195]{antonov07ra}).
+
+\begin{exe}
+\ex \label{ex:khara}
+\gll
+\ipa{tɯ-zda} 	\ipa{nɯ} 	\ipa{ma} 	\ipa{kɯmaʁ} 	\ipa{tɯrme} 	\ipa{a-pɯ-me} 	\ipa{tɕe,} 	\ipa{kha} 	\ipa{ra} 	\ipa{aʁɤndɯndɤt} \ipa{ɲɯ-ɤnɯɣro} 	\ipa{ɲɯ-ŋu} 	\ipa{ɲɯ-ti.} \\
+\textsc{indef.poss}-companion \textsc{dem} apart.from other people \textsc{irr-ipfv}-not.exist \textsc{lnk} house \textsc{pl} everywhere \textsc{sens}-play \textsc{sens}-be \textsc{sens}-say \\
+\glt He says that (the young monkey) would play everywhere in the house whenever there are no other people (apart from members of the family). (19 GZW2, 10)
+\end{exe}
+
+ 
+
+ \subsection{Topic and focus} 
+
+The temporal adverb \ipa{jiɕqha} `just before' has become grammaticalized as a pre-nominal determiner `the aforementioned' expressing that the nominal in question has been referred to previously in the discourse, though not in the last few sentences. In example \ref{ex:jiCqha}, for instance, the leaf is mentioned four sentences before.
+
+\begin{exe}
+\ex \label{ex:jiCqha}
+ \gll \ipa{tɯmɯ} 	\ipa{ci} 	\ipa{tɕhɤrnaʁ} 	\ipa{ci} 	\ipa{tɕhɯmtɕhɯm} 	\ipa{ko-lɤt.} 	\ipa{tɕendɤre} 	\ipa{jiɕqha} 	\ipa{tɤ-jwaʁ} 	\ipa{nɯ} 	\ipa{pjɤ-nɯndzom} 	\ipa{tɕe,} 	\ipa{ɯ-ʁi} 	\ipa{ɯ-kɯr} 	\ipa{ɯ-ŋgɯ} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{tɯ-ci} 	\ipa{χsɯ-ntɕhaʁ} 	\ipa{jamar} 	\ipa{pjɤ-ɕe.} \\
+ rain \textsc{indef}  rain \textsc{indef} \textsc{idph}.II:little.rain \textsc{ifr}-throw \textsc{lnk} the.aforementioned \textsc{indef.poss}-leaf \textsc{dem} \textsc{ifr:down}-flow.along \textsc{lnk} \textsc{3sg.poss}-younger.sibling  \textsc{3sg.poss}-mouth \textsc{3sg}-inside \textsc{dem} \textsc{loc} \textsc{indef.poss}-water three-drop about \textsc{ifr:down}-go \\
+ \glt There was a little rain, and (the water) flowed along the leaf (that the elder brother had placed) and three drops of water flowed into his younger brother's mouth. (Smanmi 11, 61)
+\end{exe}
+
+ 
+The clitic \ipa{rcanɯ} emphasizes the unexpectedness of the situation or event described by the phrase that follows. It is often used to express high degree
+The noun phrase preceding \ipa{rcanɯ} is topical.
+\begin{exe}
+\ex
+\gll \ipa{tɕe} 	\ipa{nɯ} 	\ipa{ɕoŋtɕa} 	\ipa{rcanɯ} 	\ipa{kɯ-dɯ\textasciitilde{}dɤn} 	\ipa{ʑo} 	\ipa{pjɤ-sɯ-phɯt-nɯ.} \\
+\textsc{lnk} wood \textsc{foc:unexpected} \textsc{nmlz}:S/A-\textsc{emph}\textasciitilde{}-be.a.lot \textsc{emph} \textsc{ifr-caus}-chop-\textsc{pl}\\
+\glt And they had (people) chop a lot of wood (for them) (28 qAjdo,  103)
+\end{exe}
+
+This focus clitic is derived from the possessed noun  \ipa{ɯ-rca} `following, together with' (see example \ref{ex:arca}) together with the distal demonstrative \ipa{nɯ} `that'.
+\begin{exe}
+\ex \label{ex:arca}
+\gll
+\ipa{aʑo} 	\ipa{a-rca} 	\ipa{kɤ-ɣi} 	\ipa{mɤ-tɯ-cha} \\
+\textsc{1sg} \textsc{1sg}-following \textsc{inf}-come \textsc{neg}-2-can:\textsc{fact} \\
+\glt You cannot come with me.
+\end{exe}
+ 
+
+  \section{Verbal categories} 
+  %a.	Voice/valency
+%b.	Aspect
+%c.	Modality (dynamic)
+%d.	Tense
+%e.	Mood
+%f.	Agreement (subject/object agreement)
+%g.	other
+
+\subsection{Associated motion}
+\citet{jacques13harmonization}
+
+\subsection{Voice}
+\citet{jacques14antipassive}
+\citet{jacques15causative}
+\citet{jacques10refl}
+
+\subsection{Incorporation}
+\citet{jacques12incorp}
+
+\subsection{Agreement}
+\citet{jacques15generic}
+\citet{jacques12agreement}
+
+\subsection{TAM}
+
+
+\begin{table}
+\caption{Finite verb categories in Japhug Rgyalrong} \label{tab:finite.forms} \centering
+\begin{tabular}{lllllll}
+\toprule
+&	&	stem&	prefixes\\
+\midrule
+factual&	\textsc{fact} &	1 or 3&	no prefix\\
+imperfective&	\textsc{ipfv} &	1 or 3&	B\\
+perfective&	\textsc{pfv} &	2&	A or C\\
+past imperfective&	\textsc{pst.ipfv} &	2&	\ipa{pɯ--}\\
+inferential&	\textsc{ifr} &	1&	D\\
+inferential imperfective&	\textsc{ifr.ipfv} &	1&	\ipa{pjɤ--}\\
+sensory&	\textsc{sens} &	1 or 3&	\ipa{ɲɯ--}\\
+egophoric present&	\textsc{pres} &	1 or 3&	\ipa{ku--}\\
+irrealis&	\textsc{irr} &	1 or 3&	\ipa{a--} + A\\
+imperative&	\textsc{imp} &	1 or 3&	A\\
+\bottomrule
+\end{tabular}
+\end{table}
+    \section{Complex constructions} 
+    
+   \subsection{Complement clauses}
+   
+   \subsection{Relative clauses}    
+   
+\subsection{Adverbial clauses} \label{sec:adverbial} 
+\citet{jacques14linking}
+
+ \citet{jacques15comparative}
+ 
+    \section{Comparative outlook} 
+%5.	Other (prominent) patterns of grammaticalization and reanalysis 
+%6.	Comparative outlook (comparison with related languages to determine to what extent grammaticalizations paths are representative of a family )
+%7.	Discussion /conclusion (summary of grammaticalization paths, comments on the processes and mechanism operating in individual languages and, maybe most importantly, remarks on typologically unusual aspects of grammaticalization in individual languages ). 
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
