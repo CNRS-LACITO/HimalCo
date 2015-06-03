@@ -458,3 +458,29 @@ class Definition():
         # If there is a Statement instance, get etymology source
         if statement is not None:
             return statement.get_etymologySource()
+
+    def set_scientific_name(self, scientific_name):
+        """! @brief Set scientific name.
+        Attribute 'scientficName' is owned by the first Statement.
+        @param scientific_name Scientific name.
+        @return Definition instance.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is no Statement instance, create and add one
+        if statement is None:
+            statement = self.create_statement()
+            self.add_statement(statement)
+        statement.set_scientificName(scientific_name)
+        return self
+
+    def get_scientific_name(self):
+        """! @brief Get scientific name.
+        This attribute is owned by the first Statement.
+        @return Statement attribute 'scientificName'.
+        """
+        # Get the first Statement instance if any
+        statement = self.get_first_statement()
+        # If there is a Statement instance, get scientific name
+        if statement is not None:
+            return statement.get_scientificName()

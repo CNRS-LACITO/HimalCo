@@ -373,6 +373,27 @@ class TestDefinitionFunctions(unittest.TestCase):
         del self.definition.statement[:]
         del state
 
+    def test_set_scientific_name(self):
+        name = "Brutus"
+        # There is no Statement instance
+        self.assertIs(self.definition.set_scientific_name(name), self.definition)
+        self.assertEqual(len(self.definition.statement), 1)
+        self.assertEqual(self.definition.statement[0].scientificName, name)
+
+    def test_get_scientific_name(self):
+        name = "Maximus"
+        # Create a statement
+        state = Statement()
+        # Add statement to the definition
+        self.definition.statement = [state]
+        # Set scientific name
+        self.definition.statement[0].scientificName = name
+        # Test get scientific name
+        self.assertEqual(self.definition.get_scientific_name(), name)
+        # Release Statement instance
+        del self.definition.statement[:]
+        del state
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestDefinitionFunctions)
 
 ## Run test suite

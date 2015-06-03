@@ -282,6 +282,18 @@ class TestStatementFunctions(unittest.TestCase):
         # Test get etymology source
         self.assertEqual(self.statement.get_etymologySource(), source)
 
+    def test_set_scientificName(self):
+        name = "Latinus"
+        self.assertIs(self.statement.set_scientificName(name), self.statement)
+        self.assertEqual(self.statement.scientificName, name)
+
+    def test_get_scientificName(self):
+        # Set scientific name
+        name = "Grecus"
+        self.statement.scientificName = name
+        # Test get scientific name
+        self.assertEqual(self.statement.get_scientificName(), name)
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestStatementFunctions)
 
 ## Run test suite

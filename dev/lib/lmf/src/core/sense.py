@@ -469,6 +469,32 @@ class Sense():
         if definition is not None:
             return definition.get_etymology_source()
 
+    def set_scientific_name(self, scientific_name):
+        """! @brief Set scientific name.
+        Attribute 'scientificName' is owned by Statement, which is owned by Definition.
+        @param scientific_name Scientific name.
+        @return Sense instance.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is no Definition instance, create and add one
+        if definition is None:
+            definition = self.create_definition()
+            self.add_definition(definition)
+        definition.set_scientific_name(scientific_name)
+        return self
+
+    def get_scientific_name(self):
+        """! @brief Get scientific name.
+        This attribute is owned by Statement, which is owned by Definition.
+        @return Statement attribute 'scientificName'.
+        """
+        # Get the last Definition instance if any
+        definition = self.get_last_definition()
+        # If there is a Definition instance, get scientific name
+        if definition is not None:
+            return definition.get_scientific_name()
+
     def create_paradigm(self):
         """! @brief Create a paradigm.
         @return Paradigm instance.

@@ -282,3 +282,19 @@ class Statement():
         @return Statement attribute 'etymologySource'.
         """
         return self.etymologySource
+
+    def set_scientificName(self, scientific_name):
+        """Set scientific name.
+        @param scientific_name The scientific name to set.
+        @return Statement instance.
+        """
+        error_msg = "Scientific name value '%s' is not allowed" % scientific_name
+        check_attr_type(scientific_name, [str, unicode], error_msg)
+        self.scientificName = scientific_name
+        return self
+
+    def get_scientificName(self):
+        """Get scientific name.
+        @return Statement attribute 'scientificName'.
+        """
+        return self.scientificName

@@ -764,6 +764,32 @@ class LexicalEntry():
         if sense is not None:
             return sense.get_etymology_source()
 
+    def set_scientific_name(self, scientific_name):
+        """! @brief Set scientific_name.
+        Attribute 'scientificName' is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @param scientific_name Scientific name.
+        @return LexicalEntry instance.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is no Sense instance, create and add one
+        if sense is None:
+            sense = self.create_sense()
+            self.add_sense(sense)
+        sense.set_scientific_name(scientific_name)
+        return self
+
+    def get_scientific_name(self):
+        """! @brief Get scientific name.
+        This attribute is owned by Statement, which is owned by Definition, itself owned by Sense.
+        @return Statement attribute 'scientificName'.
+        """
+        # Get the last Sense instance if any
+        sense = self.get_last_sense()
+        # If there is a Sense instance, get scientific name
+        if sense is not None:
+            return sense.get_scientific_name()
+
     def create_word_form(self):
         """! @brief Create a word form.
         @return WordForm instance.

@@ -773,6 +773,37 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del self.lexical_entry.sense[:]
         del sense
 
+    def test_set_scientific_name(self):
+        name = "Cretinus"
+        # There is no Sense instance
+        self.assertIs(self.lexical_entry.set_scientific_name(name), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.sense), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition), 1)
+        self.assertEqual(len(self.lexical_entry.sense[0].definition[0].statement), 1)
+        self.assertEqual(self.lexical_entry.sense[0].definition[0].statement[0].scientificName, name)
+
+    def test_get_scientific_name(self):
+        name = "Linus"
+        # Create sense and definition and add them
+        sense = Sense()
+        self.lexical_entry.sense = [sense]
+        definition = Definition()
+        self.lexical_entry.sense[0].definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.lexical_entry.sense[0].definition[0].statement = [state]
+        # Set scientific name
+        self.lexical_entry.sense[0].definition[0].statement[0].scientificName = name
+        # Test get scientific name
+        self.assertEqual(self.lexical_entry.get_scientific_name(), name)
+        # Release created instances
+        del self.lexical_entry.sense[0].definition[0].statement[:]
+        del state
+        del self.lexical_entry.sense[0].definition[:]
+        del definition
+        del self.lexical_entry.sense[:]
+        del sense
+
     def test_create_word_form(self):
         # Test create word form
         form = self.lexical_entry.create_word_form()

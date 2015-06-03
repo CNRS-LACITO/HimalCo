@@ -466,6 +466,32 @@ class TestSenseFunctions(unittest.TestCase):
         del self.sense.definition[:]
         del definition
 
+    def test_set_scientific_name(self):
+        name = "Scientificus"
+        # There is no Definition instance
+        self.assertIs(self.sense.set_scientific_name(name), self.sense)
+        self.assertEqual(len(self.sense.definition), 1)
+        self.assertEqual(len(self.sense.definition[0].statement), 1)
+        self.assertEqual(self.sense.definition[0].statement[0].scientificName, name)
+
+    def test_get_scientific_name(self):
+        name = "Nameus"
+        # Create definition and add it to the sense
+        definition = Definition()
+        self.sense.definition = [definition]
+        # Create a statement and add it to the definition
+        state = Statement()
+        self.sense.definition[0].statement = [state]
+        # Set scientific name
+        self.sense.definition[0].statement[0].scientificName = name
+        # Test get scientific name
+        self.assertEqual(self.sense.get_scientific_name(), name)
+        # Release created instances
+        del self.sense.definition[0].statement[:]
+        del state
+        del self.sense.definition[:]
+        del definition
+
     def test_create_paradigm(self):
         # Test create paradigm
         paradigm = self.sense.create_paradigm()
