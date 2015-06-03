@@ -219,8 +219,19 @@ def get_is(lexical_entry):
 items=lambda lexical_entry: get_is(lexical_entry)
 
 ## Functions to process some MDF fields (input)
+def retrieve_dialect_name(text):
+    text = text.replace("BO", u"Bondé")
+    text = text.replace("PA", "Paimboa")
+    text = text.replace("GO(s)", "Gomen Sud")
+    text = text.replace("GO(n)", "Gomen Nord")
+    text = text.replace("GO", "Gomen")
+    text = text.replace("WEM", "WEM")
+    text = text.replace("WE", "WE")
+    return text
+
 mdf_lmf.update({
-    "empr" : lambda empr, lexical_entry: set_bw(empr, lexical_entry)
+    "dialx" : lambda dialx, lexical_entry: lexical_entry.set_usage_note(retrieve_dialect_name(dialx), language="nua"),
+    "empr"  : lambda empr, lexical_entry: set_bw(empr, lexical_entry)
 })
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)

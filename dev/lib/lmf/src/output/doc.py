@@ -105,27 +105,30 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                 for sense in lexical_entry.get_senses():
                     for usage_note in sense.find_usage_notes(language=config.xml.vernacular):
                         dialect += " (" + usage_note + ")"
-                document.add_heading(lexeme + dialect, level=level+2)
                 # Paragraph
                 p = document.add_paragraph()
+                p.add_run(EOL)
+                p.add_run(lexeme).bold = True
+                p.add_run(dialect)
                 # Dialectal variants
                 write_title = True
                 for repr in lexical_entry.get_form_representations():
                     if repr.get_geographicalVariant() is not None:
                         if write_title:
-                            p.add_run("Variante(s) : ")
+                            p.add_run(" Variante(s) : ")
                             write_title = False
                         else:
                             p.add_run(" ; ")
                         p.add_run(repr.get_geographicalVariant()).bold = True
                         if repr.get_dialect() is not None:
                             p.add_run(" (" + repr.get_dialect() + ")")
-                if not write_title:
-                    p.add_run(". ")
                 # Italic
-                p.add_run(lexical_entry.get_partOfSpeech()).italic = True
+                if lexical_entry.get_partOfSpeech() is not None:
+                    p.add_run(". ")
+                    p.add_run(lexical_entry.get_partOfSpeech()).italic = True
+                p.add_run(".")
                 for sense in lexical_entry.get_senses():
-                    # Items in unordered list
+                    # Glosses
                     glosses = ""
                     for gloss in sense.find_glosses(language=config.xml.vernacular):
                         glosses += " " + gloss + " ;"
@@ -139,17 +142,51 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         for gloss in sense.find_glosses(language=config.xml.English):
                             glosses += " " + gloss + " ;"
                     glosses = glosses.rstrip(" ;")
-                    if glosses != "":
+                    if glosses != "" and glosses[-1] != '.' and glosses[-1] != '!' and glosses[-1] != '?':
                         glosses += "."
                     p.add_run(glosses)
-                    # Items in ordered list
+                    # Scientific name
+                    if lexical_entry.get_scientific_name() is not None:
+                        p.add_run(" ")
+                        p.add_run(lexical_entry.get_scientific_name())
+                    # Examples
                     for context in sense.get_contexts():
-                        p = document.add_paragraph(style='ListBullet')
+                        p = document.add_paragraph()
                         examples = ""
-                        for example in context.find_written_forms():
-                            examples += example + EOL
-                        examples.rstrip(EOL)
-                        p.add_run(examples)
+                        vernacular_forms = context.find_written_forms(language=config.xml.vernacular)
+                        for example in vernacular_forms:
+                            p.add_run("\t")
+                            p.add_run(example).bold = True
+                        fra_forms = context.find_written_forms(language=config.xml.French)
+                        if len(vernacular_forms) != 0 and len(fra_forms) != 0:
+                            p.add_run(" ; ")
+                        for example in fra_forms:
+                            p.add_run(example)
+                        if len(fra_forms) != 0 and fra_forms[0][-1] != '!' and fra_forms[0][-1] != '?':
+                            p.add_run(".")
+                    # Links
+                    if len(lexical_entry.get_related_forms("simple link")) != 0:
+                        p = document.add_paragraph()
+                        p.add_run("\tVoir :").italic = True
+                        for related_form in lexical_entry.get_related_forms("simple link"):
+                            if related_form.get_lexical_entry() is not None:
+                                # TODO : hyperlink
+                                pass
+                            p.add_run(" ")
+                            p.add_run(related_form.get_lexeme()).bold = True
+                        p.add_run(".")
+                        if len(lexical_entry.find_notes(type="general")) != 0:
+                            p.add_run(" ")
+                    # Notes
+                    if len(lexical_entry.find_notes(type="general")) != 0:
+                        if len(lexical_entry.get_related_forms("simple link")) == 0:
+                            p = document.add_paragraph()
+                            p.add_run("\t")
+                        p.add_run("[Note :").italic = True
+                        for note in lexical_entry.find_notes(type="general"):
+                            p.add_run(" ")
+                            p.add_run(note)
+                        p.add_run("].").italic = True
                 if paradigms:
                     # Intense quote
                     document.add_paragraph('Paradigms', style='IntenseQuote')
@@ -231,9 +268,9 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                 # Handle subentries
                 for related_form in lexical_entry.get_related_forms("subentry"):
                     if related_form.get_lexical_entry() is not None:
-                        document.add_heading(related_form.get_lexeme(), level=level+3)
-                        # Paragraph
-                        p = document.add_paragraph()
+                        # Items in unordered list
+                        p = document.add_paragraph(style='ListBullet')
+                        p.add_run(related_form.get_lexeme()).bold = True
                         for sense in related_form.get_lexical_entry().get_senses():
                             # Items in unordered list
                             glosses = ""

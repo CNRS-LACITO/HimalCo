@@ -29,7 +29,7 @@
                 <feat att="dateCoding" val="ISO-8601"/>
                 <feat att="creationDate" val="2015-01-18"/>
                 <feat att="projectName" val="LabexEFL"/>
-                <feat att="description" val="Yuanga : Bondé (BO) / Paimboa (PA) ; Zuanga : Paimboa (PA) / Gomen (GO) - Gomen sud (GO(s)), Gomen nord (GO(n))"/>
+                <feat att="description" val="Yuanga : Bondé (BO) / Paimboa (PA) ; Zuanga : Paimboa (PA) / Gomen (GO) - Gomen Sud (GO(s)), Gomen Nord (GO(n))"/>
             </GlobalInformation>
             <Lexicon id="yuanga">
                 <feat att="language" val="nua"/>
@@ -89,8 +89,7 @@
         <mdf_lmf marker="ph" var="ph, lexical_entry">None</mdf_lmf>
         <!-- is : champ sémantique => OK -->
         <!-- hm : numéro d'homonyme => OK -->
-        <!-- dialx : dialecte BO / PA / GO / GO(s) / GO(n) + WEM / WE -->
-        <mdf_lmf marker="dialx" var="dialx, lexical_entry">lexical_entry.set_usage_note(dialx, language="nua")</mdf_lmf>
+        <!-- dialx : dialecte BO / PA / GO / GO(s) / GO(n) + WEM / WE => OK -->
         <!-- sn : numéro de sens => OK -->
         <!-- et : ? => TODO -->
         <!-- va : variante -->
@@ -100,7 +99,7 @@
         <!-- ps : partie du discours => OK -->
         <!-- ge : glose en français -->
         <mdf_lmf marker="ge" var="ge, lexical_entry">lexical_entry.set_gloss(ge, language="fra")</mdf_lmf>
-        <!-- sc : nom scientifique => TODO -->
+        <!-- sc : nom scientifique => OK -->
         <!-- re : lexique inversé en français -->
         <mdf_lmf marker="re" var="re, lexical_entry">lexical_entry.set_translation(re, language="fra")</mdf_lmf>
         <!-- gb : glose en anglais => None -->
