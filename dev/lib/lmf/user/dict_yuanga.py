@@ -28,7 +28,10 @@ print lexical_resource.get_bibliographic_citation()
 xml_order = lmf.read_sort_order(user_path + "yuanga/sort_order.xml")
 lexical_resource.get_lexicon("yuanga").sort_lexical_entries(sort_order=xml_order)
 lexical_resource.get_lexicon("yuanga").sort_lexical_entries(items=items, sort_order=sd_order, comparison=compare_sd)
-#print sd_errors
+
+# Display all undefined semantic domains
+for sd in sd_errors:
+    print sd
 
 # Write XML LMF file
 lmf.write_xml_lmf(lexical_resource, user_path + "yuanga/result/yuanga.xml")

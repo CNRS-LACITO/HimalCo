@@ -113,6 +113,8 @@
         <!-- se : sous-entrée => OK -->
         <!-- sge : glose en français de la sous-entrée -->
         <mdf_lmf marker="sge" var="sge, lexical_entry">lexical_entry.set_gloss(sge, language="fra")</mdf_lmf>
+        <!-- de : définition en français -->
+        <mdf_lmf marker="de" var="de, lexical_entry">lexical_entry.set_definition(de, language="fra")</mdf_lmf>
         <!-- poc : ? => None -->
         <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
         <!-- gr: ? => TODO -->
@@ -121,11 +123,19 @@
         <mdf_lmf marker="gt" var="gt, lexical_entry">lexical_entry.set_gloss(gt, language="fra")</mdf_lmf>
         <!-- cf : confer => OK -->
         <!-- ce : traduction de cf en français => TODO -->
+        <!-- cn : traduction de cf en français => TODO -->
         <!-- nt : note => OK -->
+        <!-- ng : note grammaticale => OK -->
+        <!-- np : note phonologique => OK -->
+        <!-- na : note anthropologique => OK -->
         <!-- dt : date => OK -->
         <!-- an : antonyme => OK -->
         <!-- at : traduction de an en français => TODO -->
         <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
+        <!-- empr : emprunt => OK -->
+        <!-- bw : emprunt => OK -->
+        <!-- 3p : ? => OK -->
+        <!-- mr : morphologie => OK -->
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>
