@@ -130,6 +130,9 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                 for sense in lexical_entry.get_senses():
                     # Glosses
                     glosses = ""
+                    if sense.get_senseNumber() is not None:
+                        p = document.add_paragraph()
+                        p.add_run("\t" + sense.get_senseNumber() + ")")
                     for gloss in sense.find_glosses(language=config.xml.vernacular):
                         glosses += " " + gloss + " ;"
                     glosses = glosses.rstrip(" ;")
@@ -272,7 +275,6 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         p = document.add_paragraph(style='ListBullet')
                         p.add_run(related_form.get_lexeme()).bold = True
                         for sense in related_form.get_lexical_entry().get_senses():
-                            # Items in unordered list
                             glosses = ""
                             for gloss in sense.find_glosses(language=config.xml.vernacular):
                                 glosses += " " + gloss + " ;"
