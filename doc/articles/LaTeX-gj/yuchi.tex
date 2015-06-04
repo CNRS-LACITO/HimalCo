@@ -1,0 +1,145 @@
+
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+\begin{document} 
+\title{Yuchi and Siouan}
+\author{Guillaume Jacques}
+\maketitle
+
+Comparative Siouan Dictionary (\citealt{rankin15csd}). 
+
+Table adapted from \citet{ranking98yuchi}
+  
+  \citet[325]{wagner38yuchi}
+  \begin{table}[H]
+  \caption{Comparison of personal prefixes in proto-Siouan, Catawba and Yuchi}
+\begin{tabular}{llllllllll}
+\toprule
+&Proto-Siouan4  & 	Catawba  & 	Yuchi  & 	  & 	  \\ 
+  & 	  && 	set I  & 	set II   \\ 
+  \midrule
+1s.A & 	\ipa{wa-}  & 	\ipa{dV-}  & 	<di> \ipa{di-}  & 	<do> \ipa{do-}  \\ 
+2s.A  & 	\ipa{*ya-/ra-}  & 	\ipa{ya-}  & 	<nɛ> \ipa{nɛ̃-}  & <yo>	\ipa{jo-}  \\ 
+\midrule
+1s.P  & 	\ipa{wį-}  & 	\ipa{ni-}  & 	<tsɛ> \ipa{tsɛ-}  & 	<dzio> \ipa{dzio-}  \\ 
+2s.P  & 	\ipa{*rį-/yį-}  & 	\ipa{yV-}  & <nɛndzɛ>	\ipa{nɛ̃dzɛ-}  & <nɛndzio>	\ipa{nɛ̃dzio-}  \\ 
+\midrule
+1i  & 	\ipa{ʔų(k)-}  & 	\ipa{ha-}  & 	<ɔ̨>\ipa{ʔɔ̃-}  & <ɔndzɛ>	\ipa{ʔɔ̃dzɛ-}  \\ 
+1e  & 	\ipa{rų-}  & 	\ipa{nǫ-}  & <nɔ̨>	\ipa{nɔ̃-}  & 	 <nɔndzɛ> \ipa{nɔ̃dzɛ-}  \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+\ipa{di}
+\ipa{tsɛ-}
+
+<ɔ̨dí>
+
+<nɔ̨dí>
+
+
+i-- hi-- instrumental
+
+
+go--
+wi--
+
+ \citet{wagner38yuchi}
+\citet{wagner31tales}
+\citet{ullrich08}
+\citet{linn01euchee}
+\citet{taylor76motion}
+\citet{rankin95ablaut}
+\citet{ranking98yuchi}
+\citet{csd2006}
+\citet{ballard75yuchi}
+\citet{koontz83syncopating}
+\citet{chafe76macro}
+\citet{elmendorf64}
+
+\citet[334-5]{wagner38yuchi}
+ documents thirteen irregular verbs, which include some of the most convincing Yuchi-Siouan cognates
+\begin{enumerate}
+\item   \ipa{á-go-ˀę} ‘to think’ (1sg \ipa{-ts’ę}, 2sg \ipa{-ˀyǫ}, 3sg \ipa{-ˀę}) / Siouan *\ipa{ˀį} ‘id.’, 
+\item \ipa{go-ła} ‘to go’ (1sg \ipa{-da}, 2sg \ipa{-ca}, 3sg \ipa{-ła}) / Siouan *\ipa{re}˙‘id.’, 
+\item \ipa{go-ˀǫ́} ‘to be here’ (1sg \ipa{-tʰǫ}, 2sg \ipa{-yǫ}, 3sg \ipa{-ˀǫ}) / Siouan *\ipa{ˀų} ‘id.’, 
+\item \ipa{nɛhɛ́ˀę-go-łi} ‘to arrive’ (1sg \ipa{-dzi}, 2sg \ipa{-ši}, 3sg \ipa{-łi}) / Siouan *\ipa{rhi} ‘id’. 
+\end{enumerate}  
+
+Three other irregular verbs have potential Siouan cognates: \ipa{kɛ́ˀę-go-ła} ‘to do’ (1sg \ipa{-ša}, 2sg \ipa{-ša}, 3sg \ipa{-ła}) / Siouan causative *(r)e- (but this idea is problematic as *-r- is generally considered to be epenthetic in this suffix), \ipa{k’alágo-ła} ‘to eat’ (1sg \ipa{-da}, 2sg \ipa{-ša}, 3sg \ipa{-ła}) / Siouan *\ipa{rú˙te}, and Yuchi go-twáˀ ‘to kill’ (1sg -tswaˀ, 2sg –tšwaˀ, 3sg -twáˀ) / Siouan *kité ‘to kill’, derived from *tˀe˙ ‘to die’. 
+
+Besides, some regular Yuchi verbs correspond to Siouan athematic verbs: \ipa{go-kˀǫ́} ‘to make’ (Wagner 1938:364), Siouan *\ipa{ˀų} ‘to use’ (glottal stop stem) and \ipa{–xpʰǫ} ‘yell’ (p.328) / Siouan *\ipa{pąhé} ‘to call’ (p-stem in Dhegiha).   
+%  Ngandi Ritharrngu
+%  Borrowing of irregular morpho: \citet{harvey11lexical} \citet{heath78arnhem}
+  
+ to dance	dicTi`	_ʃtʰi					*wa_čhí < *ri•h-ší	to dance
+to cut open 	dop'a'	p'aˀ					pa-	by cutting
+
+
+\begin{table}
+\begin{tabular}{llllllllll}
+	\ipa{} &	to miss & 	\ipa{di`kiɬɔ~} &	\ipa{_sna (woʂna)} &	328 & 	198 & 	\\
+	\ipa{} &	to crush & 	\ipa{dokasa`} &	\ipa{_ksA} &	329 & 	 & 	\\
+	\ipa{cPi} &	wet & 	\ipa{ʃpʰi} &	\ipa{spayA} &	344 & 	 & 	\\
+	\ipa{di} &	yellow & 	\ipa{di} &	\ipa{zi} &	344 & 	 & 	\\
+	\ipa{isPi`} &	black & 	\ipa{ispʰí} &	\ipa{sápa} &	345 & 	 & 	\\
+	\ipa{cpa} &	blackberry & 	\ipa{ʃpa} &	\ipa{} &	 & 	 & 	\\
+	\ipa{Ka`x.Ka} &	white & 	\ipa{kʰakʰá} &	\ipa{ská} &	345 & 	 & 	\\
+	\ipa{nɔ~`wɛ} &	two & 	\ipa{nõwɛ} &	\ipa{} &	346 & 	 & 	\\
+	\ipa{ya} &	tree & 	\ipa{ja} &	\ipa{chaN} &	317 & 	 & 	\\
+	\ipa{wi'i} &	blood & 	\ipa{wiʔi} &	\ipa{*(wa-)ʔí•(-re); O wamį́ < *waWį́; L *wé H *í•re} &	 & 	4 & 	\\
+	\ipa{wɛ`nt'e} &	woman & 	\ipa{wẽt'e} &	\ipa{*wĩ} &	 & 	54 & 	\\
+	\ipa{to} &	potato & 	\ipa{to} &	\ipa{*Ro, *wRo} &	316 & 	 & 	\\
+	\ipa{co} &	body & 	\ipa{ʃo} &	\ipa{*yo} &	316 & 	 & 	\\
+	\ipa{Ti} &	name & 	\ipa{tʰi} &	\ipa{*RatE} &	316 & 	 & 	\\
+	\ipa{Ta} &	face & 	\ipa{tʰa} &	\ipa{*iitE} &	316 & 	 & 	\\
+	\ipa{wɛdi} &	buffalo & 	\ipa{wɛdi} &	\ipa{*pte} &	 & 	160 & 	\\
+	\ipa{dito`} &	head & 	\ipa{to} &	\ipa{*rą•tų́} &	338 & 	 & 	\\
+	\ipa{dac'i`} &	mouth & 	\ipa{da-} &	\ipa{*ra-} &	309 & 	 & 	\\
+	\ipa{Tɛti`} &	root & 	\ipa{tʰɛtí} &	\ipa{hute} &	318 & 	 & 	\\
+	\ipa{TaPi`} &	salt & 	\ipa{tʰapʰí} &	\ipa{pha} &	318 & 	 & 	\\
+	\ipa{hɔ~dju`b'a} &	ear & 	\ipa{dʒúba} &	\ipa{*rą́•tpa} &	 & 	44 & 	\\
+
+
+\end{tabular}
+\end{table}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+\end{document}
