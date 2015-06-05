@@ -91,7 +91,7 @@
         <!-- hm : numéro d'homonyme => OK -->
         <!-- dialx : dialecte BO / PA / GO / GO(s) / GO(n) + WEM / WE => OK -->
         <!-- sn : numéro de sens => OK -->
-        <!-- et : ? => TODO -->
+        <!-- et : étymologie ??? => None -->
         <!-- va : variante -->
         <mdf_lmf marker="va" var="va, lexical_entry">lexical_entry.set_geographical_variant(va)</mdf_lmf>
         <!-- ve : dialecte(s) de la variante BO / PA / GO / GO(s) / GO(n) + WEM / WE / vx / BO [BM] / BO (Corne) / BO (Corne, BM) -->
@@ -115,27 +115,27 @@
         <mdf_lmf marker="sge" var="sge, lexical_entry">lexical_entry.set_gloss(sge, language="fra")</mdf_lmf>
         <!-- de : définition en français -->
         <mdf_lmf marker="de" var="de, lexical_entry">lexical_entry.set_definition(de, language="fra")</mdf_lmf>
-        <!-- poc : ? => None -->
+        <!-- poc : étymologie => None -->
         <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
-        <!-- gr: ? => TODO -->
+        <!-- gr : note grammaticale => TODO [Note grammaticale : ] à la suite de [Note : ] -->
         <mdf_lmf marker="gr" var="gr, lexical_entry">lexical_entry.set_gloss(gr, language="nua")</mdf_lmf>
-        <!-- gt: traduction de gr en français => TODO -->
+        <!-- gt: traduction de gr en français => TODO [Note grammaticale : 'gr' (en gras) 'gt' (non gras)] -->
         <mdf_lmf marker="gt" var="gt, lexical_entry">lexical_entry.set_gloss(gt, language="fra")</mdf_lmf>
         <!-- cf : confer => OK -->
-        <!-- ce : traduction de cf en français => TODO -->
-        <!-- cn : traduction de cf en français => TODO -->
+        <!-- ce : traduction de cf en français => TODO cf : 'cf' (en gras) 'ce' (non gras) -->
+        <!-- cn : traduction de cf en français => TODO Isabelle le supprime -->
         <!-- nt : note => OK -->
         <!-- ng : note grammaticale => OK -->
         <!-- np : note phonologique => OK -->
         <!-- na : note anthropologique => OK -->
         <!-- dt : date => OK -->
-        <!-- an : antonyme => OK -->
-        <!-- at : traduction de an en français => TODO -->
+        <!-- an : antonyme => None -->
+        <!-- at : traduction de an en français => None -->
         <mdf_lmf marker="at" var="at, lexical_entry">None</mdf_lmf>
         <!-- empr : emprunt => OK -->
         <!-- bw : emprunt => OK -->
-        <!-- 3p : ? => OK -->
-        <!-- mr : morphologie => OK -->
+        <!-- 3p : grammaire => TODO None -->
+        <!-- mr : morphologie => TODO juste après 'lx' (Morph. (en italique) : 'mr' (non gras)) [GO etc.] -->
         <!-- Output -->
         <!-- Order in which MDF markers must be written -->
         <mdf_order>
