@@ -1,0 +1,65 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\sloppy
+
+\begin{document} 
+\title{Errata of articles on Japhug grammar}
+\author{Guillaume Jacques}
+\maketitle
+
+
+\section{\citet{jacques14linking}, Clause linking}
+\begin{enumerate}
+
+
+\item \citet[284, ex. 33]{jacques14linking}; The word \ipa{ɯ-pɤl}  its palm' was wrongly translated as  handle'; in fact, it refers to the blade of this implement, the part used to break earth clots.
+
+
+\begin{exe}
+\ex \label{ex:CkrAz.tAme}
+\gll 
+   	\ipa{sɯmpʰɯ}  	\ipa{ɯ-pɤl,}  	\ipa{ɕkrɤz}  	\ipa{tɤ-me}  	\ipa{tɕe}  	\ipa{nɯnɯ}  	\ipa{xɕɤj}  	\ipa{ɲɯ-βzu-nɯ}  	\ipa{sna.}  \\
+   	tool.for.breaking.earth.clods \textsc{3sg.poss}-palm oak \textsc{pfv}-not.exist \textsc{lnk} \textsc{dem} tree.species \textsc{ipfv}-make-\textsc{pl} be.appropriate:\textsc{fact} \\
+\glt The blade of the earth clod breaker, when/if there is no oak wood, people can also make it using the \ipa{xɕɤj} wood (\ipa{xɕɤj}, 44).
+\end{exe}
+\end{enumerate}
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
