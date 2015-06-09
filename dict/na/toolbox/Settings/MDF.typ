@@ -878,6 +878,11 @@
 \CharStyle
 \-mkr
 
+\+mkr uf
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr un
 \nam Usage (n)
 \desc This field should cover, in the national language, such information as common usage, or restrictions in usage (such as taboos) that is needed so a non-native speaker can use this lexeme properly. Use capitalization and punctuation as needed.
