@@ -532,6 +532,7 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr nt_F5
@@ -635,6 +636,7 @@
 \+mkr pdf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr pdl
@@ -649,6 +651,7 @@
 \-fnt
 \mkrOverThis pd
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr pdn
@@ -657,6 +660,7 @@
 \lng national
 \mkrOverThis pdl
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr pdr
@@ -681,6 +685,7 @@
 \lng phonetic
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr pl
@@ -780,6 +785,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr se
@@ -804,6 +810,7 @@
 \+mkr sf
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr sg

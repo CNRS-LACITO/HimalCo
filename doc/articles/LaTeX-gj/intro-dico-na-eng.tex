@@ -1,0 +1,66 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API jamais en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
+\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+This dictionary documents the lexicon of the Na language (\ipa{nɑ˩-ʐwɤ˥}) as spoken in and around the plain of Yongning, located in Southwestern China, at the border between Yunnan and Sichuan, at a latitude of 27°50’ N and a latitude of 100°41’ E. This language is known locally as 'Mosuo'. 
+
+Unless otherwise stated, all the data are from one language consultant, Mrs. Latami Dashilame (\ipa{lɑ˧tʰɑ˧mi˥ ʈæ˧ʂɯ˧-lɑ˩mv˩}). She was born in 1950 in the hamlet called /\ipa{ə˧lɑ˧-ʁwɤ\#˥}/ in Na, close to the monastery of Yongning. The administrative coordinates of this village are: Yúnnán province, Lìjiāng municipality, Nínglàng Yí autonomous county, Yǒngníng district, Ālāwǎ village (\zh{云南省丽江市宁蒗彝族自治县永宁乡阿拉瓦村}). 
+
+A set of audio documents in this language is available from the Pangloss Collection (\citealt{michailovsky14pangloss}), where pointers to research publications are also provided.
+ 
+Each entry contains
+\begin{itemize}
+	\item \textit{phonological transcription:} the form of the word in phonetic alphabet; tone is indicated in terms of phonological categories. 
+	\item \textit{part of speech:} an indication of the part of speech, using a simple set of labels
+	\item \textit{tone:} the tone category of the word. This information is already present in the phonological transcription; having it repeated on its own facilitates searches.
+	\item \textit{definitions} in Chinese, English and French
+	\item \textit{examples} with translations
+	\item \textit{links} to related words, such as synonyms, or constituent parts of complex words 
+	\item \textit{classifier:} for nouns, an indication on the more commonly associated classifiers
+\end{itemize}
+
+Planned improvements include the addition of a phonetic transcription of tone as it surfaces on the item pronounced in isolation: a surface-phonological transcription of tone, in addition to the indication of the underlying tone category. 
+
+Many thanks to the Mosuo scholar Latami Dashi for supporting and encouraging my work with his mother over the years, since 2006. Many thanks to Céline Buret for computational expertise, and to Guillaume Jacques for suggestions all along the way. Many thanks to the colleagues and students who suggested corrections, in particular A Hui.
+
+This work was supported financially by the ANR project HimalCo (ANR-12-CORP-0006), and constitutes a contribution to the LabEx "Empirical Foundations of Linguistics" project ((ANR-10-LABX-0083).
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
