@@ -1,6 +1,7 @@
 \documentclass[xcolor=table]{beamer}
 \usepackage{fontspec}
 \usepackage{natbib}
+\usepackage{multicol,multirow}
 \usepackage{gb4e} 
 \usepackage[table]{xcolor}
 \usepackage{booktabs} 
@@ -56,11 +57,11 @@
  \frametitle{嘉绒语支语言最主要的类型学特征}  
  
  \begin{enumerate}%[<+->]
- \item 多式综合语（双重人称、名词并入）
- \item 复杂的动词模板 (\citealt{jacques13harmonization})
+ \item 多式综合语（双重人称、名词并入） (\citealt{jacques12incorp})
+ \item 复杂的动词模板 (\citealt{jacques13harmonization, lai13affixale})
   \item 正向/反向系统 (\citealt{jackson02rentongdengdi, jacques10inverse, gongxun14agreement, lai14person})
  \item 复杂的词干交替
- \item 丰富的语态标记（包括被动态、使动态、反被动态、应用态、反使动态、反身态等）
+ \item 丰富的语态标记（包括被动态、使动态、反被动态、应用态、反使动态、反身态等） (\citealt{lai13affixale, jacques14antipassive})
  \item 复杂的复辅音（例如茶堡话 \ipa{lɟɣaʁ} “搭在……上”)
  \item  严格的语法枢纽
  \end{enumerate}
@@ -175,7 +176,7 @@
   3'&  &&  \ipa{\rouge{ɣɯ}-sat}\\
   \bottomrule
 \end{tabular}
-          \end{frame} 
+\end{frame} 
           
           
  \begin{frame} 
@@ -192,8 +193,78 @@
   \bottomrule
 \end{tabular}
      
-          \end{frame}    
-          
+\end{frame}    
+
+    \begin{frame} 
+ \frametitle{双数和复数后缀}      
+
+\begin{exe}
+\ex 
+\gll \ipa{ɯ-pi} 	\ipa{ni} 	\ipa{kɯ} 	\ipa{pa-mto-ndʑi}  \\
+3单：属-哥哥 双 做个 完成：3$\rightarrow$3'-看-双 \\
+\glt 两个哥哥看见了（那件事） \marque{3双$\rightarrow$3}
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll \ipa{tɤ-pi} 	\ipa{ʁnaʁna} 	\ipa{ʑo} 	\ipa{pɯ́-wɣ-sat-ndʑi} 	\ipa{ɲɯ-ŋu} \\
+不定：属-哥哥 两个 强调 完成-反-杀-双 亲验-是 \\
+\glt （他们/他）把两个哥哥杀了 \marque{3$\rightarrow$3双}
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll
+\ipa{nɤ-pi} 	\ipa{ni} 	\ipa{kɯ} 	\ipa{tɤ́-wɣ-nɯmɢla-a-ndʑi} 	\ipa{ɕti} \\
+2单：属-姐姐 双 做格 完成-反-跨-1单-双 是 \\
+\glt 你的两个姐姐从我身上跨过去了 \marque{3双$\rightarrow$1单}
+\end{exe}
+
+
+\end{frame}    
+
+
+         \begin{frame} 
+ \frametitle{双数和复数后缀}      
+
+ \centering
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllll}
+&     1 & 2 & 3单  &3双 & 3复 &3'\\
+\toprule
+ 1 &\grise{} &\ipa{ta-sat} & \ipa{sat-a}&\ipa{sat-a-\bleu{ndʑi}}&\ipa{sat-a-\bleu{nɯ}}&\\  
+ 2 &\ipa{kɯ-sat-a}&\grise{}  & & \ipa{tɯ-sat}\\  
+ 3单 & \ipa{\rouge{ɣɯ}-sat-a}&  &\grise{}&\grise{}&\grise{}   &\ipa{sat} \\
+  3双 & \ipa{\rouge{ɣɯ}-sat-a-\bleu{ndʑi}}&  \ipa{tɯ́-\rouge{wɣ}-sat}&\grise{}&\grise{}&\grise{}   &\ipa{sat-\bleu{ndʑi}} \\
+   3复 & \ipa{\rouge{ɣɯ}-sat-a-\bleu{nɯ}}&   &\grise{}&\grise{}&\grise{}   &\ipa{sat-\bleu{nɯ}} \\
+  3'&  &&  \ipa{\rouge{ɣɯ}-sat}&\ipa{\rouge{ɣɯ}-sat-\bleu{ndʑi}}&\ipa{\rouge{ɣɯ}-sat-\bleu{nɯ}}&\\
+  \bottomrule
+\end{tabular}}
+\end{frame} 
+
+\begin{frame} 
+ \frametitle{绰斯甲语和道孚语}      
+ 
+\citet{jacques14rtau} 
+ 
+ \begin{table}
+\caption{\ipa{f-kʰʚ} 给}
+\centering \label{tab:give}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-4}
+ &  	1   &  	2  &  	3  \\  
+\cline{1-4}
+ 1s  &   \grise{}      &  	\multirow{2}{*}{\ipa{tə-kʰʚ}}  &  	\ipa{tə-kʰow}  \\  
+\cline{4-4}1p  &   \grise{}	    &  & \ipa{tə-kʰõ}  \\  
+\cline{2-4}2 &     \multirow{2}{*}{\ipa{tə-\rouge{f}kʰõ}}    &   \grise{ } &  	\ipa{tə-kʰe}\\  
+\cline{3-4}3 &     & \multicolumn{2}{c}{ \ipa{tə-\rouge{f}kʰʚ} } \vline \\  
+\cline{1-4}
+\end{tabular}
+\end{table}
+\end{frame} 
+
+
+
    \begin{frame} 
  \frametitle{参考目录}
  \tiny
