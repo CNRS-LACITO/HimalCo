@@ -491,6 +491,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ng
@@ -532,7 +533,6 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr nt_F5
@@ -677,6 +677,7 @@
 \lng vernacular
 \mkrOverThis pdl
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ph
@@ -785,7 +786,6 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr se
