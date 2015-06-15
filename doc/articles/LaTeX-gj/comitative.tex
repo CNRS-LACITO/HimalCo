@@ -1,0 +1,95 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{lineno}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+   
+
+\begin{document} 
+ \title{The origin of comitative adverbs in Japhug}
+ \author{Guillaume Jacques}
+ \maketitle  
+ \section{Introduction}
+\linenumbers
+
+ \section{Inalienably possessed nouns} 
+ Japhug nouns can be divided into three sub-classes: simple nouns, inalienably possessed nouns and nouns with numeral prefixes (classifiers).  
+
+The same set of possessive prefixes (see Table \ref{tab:possessive}) is used for all nouns, but inalienably possessed nouns cannot be used on their own without one of these prefixes. 
+
+When there is no definite possessor, inalienably possessed nouns require one of the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--}. This form is used as the citation form of inalienably possessed nouns (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The choice of the prefix \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). 
+
+\begin{table}[H] \centering
+\caption{Possessive prefixes }\label{tab:possessive}
+\begin{tabular}{lllllllll} 
+\toprule
+ Prefix & Person\\
+\midrule
+	\ipa{a--}  &		1\textsc{sg} \\
+	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+	\ipa{tɕi--}  &			1\textsc{du} \\
+	\ipa{ndʑi--}  &		2\textsc{du} \\	
+	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+	\ipa{i--}  &			1\textsc{pl} \\
+		\ipa{nɯ--}  &			2\textsc{pl} \\
+	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+ \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+ \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+It is possible to turn an inalienably possessed noun into an alienably possessed one by prefixing a definite possessive prefix to the indefinite one (\ipa{ɯ-tɤ-lu} `his milk (to drink)', \ipa{ɯ-tɯ-ci} `its water (of irrigated water, to a plant)'). Simple nouns cannot take indefinite possessive prefixes, but can take the generic possessor prefix.
+ 
+ \section{Comitative derivation} 
+In Japhug, adverbs meaning `having X' or `together with X' can be productively built from various types of nouns. In this section, I first describe the morphological processes involved in the noun to adverb derivation, and then provide an overview of the use of these adverbs in context.
+
+\subsection{Morphology}
+Comitative are formed by reduplicating the last syllable of the noun stem and prefixing either \ipa{kɤ́--} or \ipa{kɤɣɯ--}, as in examples such as \ipa{χɕɤlmɯɣ} `glasses' $\Rightarrow$ \ipa{kɤ́-χɕɤlmɯ\textasciitilde{}lmɯɣ} / \ipa{kɤɣɯ-χɕɤlmɯ\textasciitilde{}lmɯɣ} `together with glasses'.\footnote{Japhug \ipa{χɕɤlmɯɣ} `glasses' is a loanword from Tibetan \ipa{ɕel.mig}; note that reduplication disregards morpheme boundaries (\ipa{χɕɤl} `glass' (Tibetan \ipa{ɕel}) is also attested in Japhug). } No semantic difference between the comitative adverbs in \ipa{kɤ́--} and those in \ipa{kɤɣɯ--} has been detected; both are fully productive and can be built from the same nouns.
+
+When the base noun is an inalienably possessed noun, two possibilities are available
+
+\subsection{Syntactic uses} 
+
+
+\ipa{rɟɤlpu}  	\ipa{kɤɣɯ-ŋkhɯ\textasciitilde{}ŋkhor}  	\ipa{kɯ-kɯ-ŋɤn}  	\ipa{ʑo}  	\ipa{to-ndo}  	\ipa{tɕe,}  	\ipa{tɕendɤre}  	\ipa{kɯ-mɤku}  	\ipa{nɯ}  	\ipa{sɤtɕha}  	\ipa{kɯ-kɯ-sɤscit}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{ɲɯ-ŋu}  	\ipa{ri}  	\ipa{kɯ-maqhu}  	\ipa{tɕe,}  	\ipa{kɯ-kɯ-sɤɣmu}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{tɕe}  
+
+\section{Grammaticalization pathway} 
+
+\subsection{Denominal derivation}
+Japhug has a rich array of denominal prefixes (\citealt{jacques14antipassive}). One of these prefixes, \ipa{aɣɯ--}, derives intransitive verbs meaning `having X' from either inalienably possessed and non-inalienably possessed nouns, 
+
+\subsection{S/A participle}
+  \subsection{Synchronic differences between the S/A participle and the comitative adverb}
+\section{Conclusion} 
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
