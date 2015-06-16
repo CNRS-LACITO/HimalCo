@@ -26,7 +26,7 @@
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-   
+\newcommand{\tld}{\textasciitilde{}}
 
 \begin{document} 
  \title{The origin of comitative adverbs in Japhug}
@@ -36,11 +36,11 @@
 \linenumbers
 
  \section{Inalienably possessed nouns} 
- Japhug nouns can be divided into three sub-classes: simple nouns, inalienably possessed nouns and nouns with numeral prefixes (classifiers).  
+Japhug nouns can be divided into inalienably possessed nouns (IPN) and non-inalienably possessed nouns (NIPN). IPN differ from NIPN in that they require the presence of one of the possessive prefixes (Table \ref{tab:possessive}), while NIPN do not.
 
-The same set of possessive prefixes (see Table \ref{tab:possessive}) is used for all nouns, but inalienably possessed nouns cannot be used on their own without one of these prefixes. 
+When no definite possessor is present, IPN take one of the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--}. This form is used as their citation form (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The distribution of the prefixes \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). 
 
-When there is no definite possessor, inalienably possessed nouns require one of the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--}. This form is used as the citation form of inalienably possessed nouns (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The choice of the prefix \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). 
+Although the generic possessive prefix \ipa{tɯ--} is homophonous with one of the indefinite possessive prefixes, the two are semantically distinct (compare \ipa{tɤ-se} \textsc{indef.poss}-blood `blood' with \ipa{tɯ-se} \textsc{genr.poss}-blood `one's/people's blood').
 
 \begin{table}[H] \centering
 \caption{Possessive prefixes }\label{tab:possessive}
@@ -48,46 +48,143 @@ When there is no definite possessor, inalienably possessed nouns require one of 
 \toprule
  Prefix & Person\\
 \midrule
-	\ipa{a--}  &		1\textsc{sg} \\
-	\ipa{nɤ--}  &			2\textsc{sg}\\
-\ipa{ɯ--}  &			3\textsc{sg}\\
+\ipa{a--}  & 1\textsc{sg} \\
+\ipa{nɤ--}  & 2\textsc{sg}\\
+\ipa{ɯ--}  & 3\textsc{sg}\\
 \midrule
-	\ipa{tɕi--}  &			1\textsc{du} \\
-	\ipa{ndʑi--}  &		2\textsc{du} \\	
-	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\ipa{tɕi--}  &  1\textsc{du} \\
+\ipa{ndʑi--}  & 2\textsc{du} \\	
+\ipa{ndʑi--}  & 3\textsc{du} \\	
 \midrule
-	\ipa{i--}  &			1\textsc{pl} \\
-		\ipa{nɯ--}  &			2\textsc{pl} \\
-	\ipa{nɯ--}  &			3\textsc{pl} \\
+\ipa{i--}  & 1\textsc{pl} \\
+\ipa{nɯ--}  & 2\textsc{pl} \\
+\ipa{nɯ--}  & 3\textsc{pl} \\
 \midrule
- \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
- \ipa{tɯ--}   &  generic\\
+\ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯ--}   &  generic \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-It is possible to turn an inalienably possessed noun into an alienably possessed one by prefixing a definite possessive prefix to the indefinite one (\ipa{ɯ-tɤ-lu} `his milk (to drink)', \ipa{ɯ-tɯ-ci} `its water (of irrigated water, to a plant)'). Simple nouns cannot take indefinite possessive prefixes, but can take the generic possessor prefix.
+It is possible to turn an IPN into an NIPN by prefixing a definite possessive prefix to the indefinite one, as in \ipa{ɯ-tɤ-lu} \textsc{3sg.poss-indef.poss}-milk `his milk (to drink)', \ipa{ɯ-tɯ-ci} \textsc{3sg.poss-indef.poss}-water `its water (of irrigated water, to a plant)'. NIPN cannot take indefinite possessive prefixes. However, they are compatible with the human generic possessor prefix \ipa{tɯ--}, as in example \ref{ex:tWlaXtCha}, where the nouns \ipa{kha} `house' and \ipa{laχtɕha} `thing' are NIPN.
+
+\begin{exe}
+\ex \label{ex:tWlaXtCha}
+\gll  \ipa{wuma}  	\ipa{ʑo}  	\ipa{tɯ-kha}  	\ipa{cho}  	\ipa{tɯ-laχtɕha}  	\ipa{ra}  	\ipa{sɯ-ɴqhi}  \\
+really \textsc{emph} \textsc{genr.poss}-house and \textsc{genr.poss}-thing \textsc{pl} \textsc{caus}-be.dirty:\textsc{fact} \\
+\glt (Flies) make one's house and one's things dirty. (25 akWzgumba, 62)
+\end{exe}
+
+
  
  \section{Comitative derivation} 
 In Japhug, adverbs meaning `having X' or `together with X' can be productively built from various types of nouns. In this section, I first describe the morphological processes involved in the noun to adverb derivation, and then provide an overview of the use of these adverbs in context.
 
 \subsection{Morphology}
-Comitative are formed by reduplicating the last syllable of the noun stem and prefixing either \ipa{kɤ́--} or \ipa{kɤɣɯ--}, as in examples such as \ipa{χɕɤlmɯɣ} `glasses' $\Rightarrow$ \ipa{kɤ́-χɕɤlmɯ\textasciitilde{}lmɯɣ} / \ipa{kɤɣɯ-χɕɤlmɯ\textasciitilde{}lmɯɣ} `together with glasses'.\footnote{Japhug \ipa{χɕɤlmɯɣ} `glasses' is a loanword from Tibetan \ipa{ɕel.mig}; note that reduplication disregards morpheme boundaries (\ipa{χɕɤl} `glass' (Tibetan \ipa{ɕel}) is also attested in Japhug). } No semantic difference between the comitative adverbs in \ipa{kɤ́--} and those in \ipa{kɤɣɯ--} has been detected; both are fully productive and can be built from the same nouns.
+Comitative are formed by reduplicating the last syllable of the noun stem and prefixing either \ipa{kɤ́--} or \ipa{kɤɣɯ--}, as in examples such as \ipa{χɕɤlmɯɣ} `glasses' $\Rightarrow$ \ipa{kɤ́-χɕɤlmɯ\tld{}lmɯɣ} / \ipa{kɤɣɯ-χɕɤlmɯ\tld{}lmɯɣ} `together with glasses'.\footnote{Japhug \ipa{χɕɤlmɯɣ} `glasses' is a loanword from Tibetan \ipa{ɕel.mig}; note that reduplication disregards morpheme boundaries (\ipa{χɕɤl} `glass' (Tibetan \ipa{ɕel}) is also attested in Japhug). } No semantic difference between the comitative adverbs in \ipa{kɤ́--} and those in \ipa{kɤɣɯ--} has been detected; both are fully productive and can be built from the same nouns.
 
-When the base noun is an inalienably possessed noun, two possibilities are available
+When the base noun is an IPN, it is possible to build a comitative adverb with the indefinite possessor prefix or with the bare stem, 
 
 \subsection{Syntactic uses} 
 
+P or S:
 
-\ipa{rɟɤlpu}  	\ipa{kɤɣɯ-ŋkhɯ\textasciitilde{}ŋkhor}  	\ipa{kɯ-kɯ-ŋɤn}  	\ipa{ʑo}  	\ipa{to-ndo}  	\ipa{tɕe,}  	\ipa{tɕendɤre}  	\ipa{kɯ-mɤku}  	\ipa{nɯ}  	\ipa{sɤtɕha}  	\ipa{kɯ-kɯ-sɤscit}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{ɲɯ-ŋu}  	\ipa{ri}  	\ipa{kɯ-maqhu}  	\ipa{tɕe,}  	\ipa{kɯ-kɯ-sɤɣmu}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{tɕe}  
+\begin{exe}
+\ex
+\gll \ipa{rɟɤlpu}  	\ipa{kɤɣɯ-ŋkhɯ\tld{}ŋkhor}  	\ipa{kɯ\tld{}kɯ-ŋɤn}  	\ipa{ʑo}  	\ipa{to-ndo}  	\ipa{tɕe,}  	\ipa{tɕendɤre}  	\ipa{kɯ-mɤku}  	\ipa{nɯ}  	\ipa{sɤtɕha}  	\ipa{kɯ\tld{}kɯ-sɤ-scit}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{ɲɯ-ŋu}  	\ipa{ri}  	\ipa{kɯ-maqhu}  	\ipa{tɕe,}  	\ipa{kɯ\tld{}kɯ-sɤɣ-mu}  	\ipa{ʑo}  	\ipa{jo-tsɯm}  	\ipa{tɕe}  \\
+king \textsc{comit}-subjects \textsc{total}\tld{}\textsc{nmlz}:S/A-be.bad \textsc{emph} \textsc{ifr}-take \textsc{lnk}  \textsc{lnk} \textsc{nmlz}:S/A-be.before \textsc{dem} place \textsc{total}\tld{}\textsc{nmlz}:S/A-\textsc{deexp}-be.happy \textsc{emph} \textsc{ifr}-take.away \textsc{sens}-be \textsc{lnk} \textsc{nmlz}:S/A-be.after \textsc{lnk} \textsc{total}\tld{}\textsc{nmlz}:S/A-\textsc{deexp}-fear \textsc{emph} \textsc{ifr}-take.away \textsc{lnk} \\
+\glt She took the king and his subjects, all the evil ones, in the beginning she took them to nice places, but later she took them to fearful places. (slobdpon)
+\end{exe}
 
+\begin{exe}
+\ex 
+\gll \ipa{kɤɣɯ-tɤ-snɯ\tld{}sno}  	\ipa{ci}  	\ipa{rcanɯ,}  	\ipa{tshɯntshɯn}  	\ipa{ʑo}  	\ipa{kɯ-pa}  	\ipa{jɤ-ɣe}  	\ipa{ɲɯ-ŋu,}\\
+ \textsc{comit-indef.poss}-saddle \textsc{indef} \textsc{unexpected} \textsc{idph:stat}:complete  \textsc{emph} \textsc{nmlz}:S/A-light.verb \textsc{pfv}-come[II] \textsc{sens}-be \\
+\glt (A horse) came, together with a saddle and everything. 
+\end{exe}
+
+
+\begin{exe}
+\ex
+\gll
+\ipa{tɤ-sno}  	\ipa{kɤ́-jɯ\tld{}jaʁ}  	\ipa{nɯ}  	\ipa{lu-ta-nɯ}  \\
+\textsc{indef.poss}-saddle \textsc{comit}-hand \textsc{dem} \textsc{ipfv}-put-\textsc{pl} \\
+\glt (Then), they put the saddle with its handles.
+\end{exe}
+
+\begin{exe}
+\ex
+\gll
+\ipa{pɣɤkhɯ}  	\ipa{nɯ}  	\ipa{ɯ-ku}  	\ipa{nɯnɯ}  	\ipa{lɯlu}  	\ipa{tsa}  	\ipa{ɲɯ-fse,}  	\ipa{ɯ-mtsioʁ}  	\ipa{ɣɤʑu}  	\ipa{ma}  \ipa{kɤ́-rnɯ\tld{}rna}  	\ipa{lɯlu}  	\ipa{tu-fse}  	\ipa{ɲɯ-sɤre}  	\ipa{ʑo.}  \\
+owl \textsc{dem} \textsc{3sg.poss}-head \textsc{dem} cat a.little \textsc{sens}-be.like \textsc{3sg.poss}-beak exist:\textsc{sens} a.part.from \textsc{comit}-ear cat \textsc{ipfv}-be.like \textsc{sens}-be.extremely/be.funny \textsc{emph} \\
+\glt The owl's head looks a little like that of a cat, apart from the fact that it has a beak, it looks very much like a cat with its ears.
+\end{exe}
+
+
+\begin{exe}
+\ex
+\gll \ipa{kɤ́-thɤlwɯ\tld{}lwa}  	\ipa{ɯ-zrɤm}  	\ipa{ra}  	\ipa{kɯnɤ}  	\ipa{chɯ́-wɣ-ɣɯt}  	\ipa{pjɯ́-wɣ-ji}  	\ipa{ri}  	\ipa{maka}  	\ipa{tu-ɬoʁ}  	\ipa{mɯ́j-cha}  \\
+\textsc{comit}-earth \textsc{3sg.poss}-root \textsc{pl} also \textsc{ipfv-inv}-bring \textsc{ipfv-inv}-plant but at.all \textsc{ipfv}-come.out \textsc{neg:sens}-can \\
+\glt Even if one takes its root with earth (around it) and plant it, it cannot grow.
+\end{exe}
+
+
+Inference: that the saddle should not have been left on the horse.
+\begin{exe}
+\ex
+\gll \ipa{kɤ́-snɯ\tld{}sno}  	\ipa{ʑo}  	\ipa{kɤ-rŋgɯ}  \\
+\textsc{comit}-saddle \textsc{emph} \textsc{pfv}-lie.down \\
+\glt (The horse) slept with its saddle. 
+\end{exe}
+
+A ??
+
+lɯlu kɤ́rɟɯrɟit kɯ βʑɯ to-ndza-nɯ.???
+
+lɯlu kɯ kɤ́rɟɯrɟit βʑɯ to-ndza-nɯ.???
+
+
+Impossible to determine a noun within a comitative adverb
 \section{Grammaticalization pathway} 
 
 \subsection{Denominal derivation}
 Japhug has a rich array of denominal prefixes (\citealt{jacques14antipassive}). One of these prefixes, \ipa{aɣɯ--}, derives intransitive verbs meaning `having X' from either inalienably possessed and non-inalienably possessed nouns, 
 
 \subsection{S/A participle}
-  \subsection{Synchronic differences between the S/A participle and the comitative adverb}
+
+\subsection{Potential ambiguity}
+  
+  \begin{exe}
+\ex
+\gll   
+  \ipa{si} 	\ipa{kɯ-ɤɣɯrtɯrtaʁ} 	\ipa{ki} 	\ipa{kɯ-fse} 	\ipa{ɲɯ-ɕar-nɯ} \\
+  tree \textsc{nmlz}:S/A-have.many.branches this \textsc{nmlz}:S/A-be.this.way \textsc{ipfv}-search-\textsc{pl} \\
+\glt They search for a tree having a lot of branches (NOT: a tree with its branches)
+\end{exe}
+
+ \ipa{(tɤ)-rɟit} $\Rightarrow$ \ipa{kɤɣɯ-rɟɯ\textasciitilde{}rɟit} `with his children' or `having many children'
+\begin{exe}
+\ex
+\gll   
+\ipa{iɕqha} 	\ipa{tɕʰeme} 	\ipa{nɯ} 	\ipa{kɯ-ɤɣɯrɟɯrɟit} 	\ipa{ci} 	\ipa{pɯ-ŋu}  \\
+the.aforementioned woman \textsc{dem} \textsc{nmlz}:S/A-have.many.children \textsc{indef} \textsc{pst.ipfv}-be \\
+\glt This woman had a lot of children.
+\end{exe}
+
+\begin{exe}
+\ex
+\gll   
+\ipa{kɤɣɯ-rɟɯ\tld{}rɟit} 	\ipa{ʑo} 	\ipa{jo-nɯ-ɕe-nɯ} \\
+\textsc{comit}-children \textsc{emph} \textsc{ifr-vert}-go-\textsc{pl} \\
+\glt She/They went back with their children.
+\end{exe}
+  
+
+\subsection{Grammaticalization pathway}
+ \begin{exe}
+\ex
+ \glt  \textsc{noun} + \textsc{property denominal derivation} + participle $\rightarrow$ \textsc{comitative}
+\end{exe} 
 \section{Conclusion} 
 
 \bibliographystyle{unified}
