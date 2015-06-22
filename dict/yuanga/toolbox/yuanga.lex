@@ -161,7 +161,7 @@
 \va hai, ha, ai
 \ve PA BO
 \hm 2
-\ps conjonction
+\ps CONJ
 \ge ou bien
 \re
 \gb
@@ -175,7 +175,7 @@
 \lx a
 \hm 3
 \is grammaire_pronom
-\ps pronom sujet 2 pluriel
+\ps PRON sujet 2 pluriel
 \ge vous
 \re
 \gb
@@ -213,7 +213,7 @@
 \hm 5
 \is grammaire_conjonction
 \dialx BO
-\ps relatif (ou) démonstratif?
+\ps RELT (ou) démonstratif?
 \ge que
 \re
 \gb
@@ -249,7 +249,7 @@
 \is grammaire_préfixe 
 \dialx GO(s) PA 
 \va aa-
-\ps préfixe des noms d'agent
+\ps PREF Nom Agent
 \ge agent (préfixe des noms d')
 \re agent (préfixe d')
 \gb agent (prefix)
@@ -274,7 +274,7 @@
 \is classificateur numérique
 \dialx GO(s) PA
 \va aa-
-\ps classificateur numéerique des animées
+\ps CLF NUM des animés
 \ge classificateur des animés
 \re
 \gb
@@ -300,7 +300,7 @@
 \lx ã-
 \is grammaire_démonstratif
 \dialx GO(s) WEM WE
-\ps démonstratif
+\ps DEM
 \ge celui-ci (humain)
 \re
 \gb
@@ -338,7 +338,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \is grammaire_pronom
 \dialx GO(s) PA BO
 \ph ÌƒÌƒÉ›ÌƒÌƒ:
-\ps pronom 1° inclusif pluriel objet ou  possessif 
+\ps PRON 1° inclusif pluriel objet ou  possessif 
 \ge nous ; nos
 \re
 \gb
@@ -348,7 +348,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx a waya ?
 \is déplacement
 \dialx GO(s)
-\ps interrogatif
+\ps INTER
 \ge aller vers où ?
 \re
 \gb
@@ -385,7 +385,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \dialx GO(s)
 \va ãbaa-n
 \ve BO PA
-\ps quantificateur
+\ps QUANT
 \ge autre (un, d') ;  un bout de ; un autre
 \ge certains; quelques
 \re
@@ -523,7 +523,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \is grammaire_quantificateur
 \dialx GO(s)
 \ph ÌƒÉ›Ìƒba:É£a
-\ps quantificateur
+\ps QUANT
 \ge en complément; en plus
 \re
 \xv nu phe-mi hovwo vwo ãbaa-xa lhãã co pavwange
@@ -551,7 +551,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ãbe
 \is fonct.intell
 \dialx GO(s)
-\ps verbe
+\ps V
 \ge croire tout savoir 
 \re
 \gb
@@ -596,7 +596,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx a-bhe-du
 \is déplacement
 \dialx GO(s)
-\ps v + directionnel 
+\ps V DIR 
 \ge aller en descendant (sans destination précise)
 \re
 \gb
@@ -664,7 +664,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ã-da
 \is déplacement
 \dialx GO(s)
-\ps v-directionnel
+\ps V DIR
 \ge monter
 \ge entrer dans une maison 
 \ge aller vers l'intérieur du pays
@@ -691,7 +691,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ã-da-ò
 \is mouvement
 \dialx GO(s)
-\ps v + directionnel
+\ps V DIR
 \ge monter (en s'éloignant  du locuteur)
 \re
 \gb
@@ -705,7 +705,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ã-du
 \is déplacement
 \dialx GO(s) PA
-\ps v-directionnel
+\ps V DIR
 \ge descendre
 \ge sortir (de la maison)
 \re
@@ -730,7 +730,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx a-è
 \is déplacement
 \dialx GO(s)
-\ps v directionnel
+\ps V DIR
 \ge aller dans une direction transverse; passer
 \re
 \gb
@@ -748,7 +748,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ã-e
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom DX2 3°  pers. masc. sg
+\ps PRON DX2 3°  pers. masc. sg
 \ge lui-là
 \re
 \gb
@@ -763,7 +763,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx aeke
 \is interjection
 \dialx WE
-\ps interjection
+\ps INTJ
 \ge salut ! (se dit quand on est loin)
 \re
 \gb
@@ -809,7 +809,7 @@ maisons carrées ; Dubois)
 \dialx GO(s)
 \va a-ò
 \ve GO(s)
-\ps v + directionnel
+\ps V DIR
 \ge éloigner_(s')
 \ge partir
 \ge aller_(s'en)
@@ -829,7 +829,7 @@ maisons carrées ; Dubois)
 \dialx GO(s)
 \va a-õ
 \ve GO(s) BO
-\ps verbe statif
+\ps V STAT
 \ge nu 
 \re
 \gb
@@ -934,7 +934,7 @@ maisons carrées ; Dubois)
 \lx a-kai
 \is déplacement
 \dialx GO(s) BO
-\ps verbe
+\ps V
 \ge suivre 
 \ge accompagner (lit. aller suivre)
 \re
@@ -1064,7 +1064,7 @@ maisons carrées ; Dubois)
 \lx a-kênõge
 \is mouvement
 \dialx GO(s)
-\ps v.t
+\ps v.t.
 \ge encercler
 \ge entourer
 \re
@@ -1082,7 +1082,7 @@ maisons carrées ; Dubois)
 \dialx GO(s)
 \va a-kòn
 \ve BO PA 
-\ps numéral
+\ps NUM
 \ge trois (animés)
 \re
 \gb three
@@ -1096,7 +1096,7 @@ maisons carrées ; Dubois)
 \lx a-kò êgu 
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge soixante (lit. trois hommes)
 \re
 \gb
@@ -1106,7 +1106,7 @@ maisons carrées ; Dubois)
 \lx a-kò êgu bwa truuçi
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge soixante-dix (lit. trois hommes et 10)
 \re
 \gb
@@ -1153,7 +1153,7 @@ maisons carrées ; Dubois)
 
 \lx ala-
 \dialx GO(s) PA BO
-\ps préfixe référant à une surface extérieure
+\ps PREF référant à une surface extérieure
 \sn 1
 \is corps
 \ge face ; visage
@@ -1224,7 +1224,7 @@ maisons carrées ; Dubois)
 \lx alabo-
 \is classificateur numérique
 \dialx PA
-\ps classificateur
+\ps CLF
 \ge classificateur: un quart ou une moitié de tortue ou de bœuf
 \re
 \gb
@@ -1345,7 +1345,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dialx GO(s) WEM PA BO
 \va alapu
 \ve vx
-\ps v.stat.
+\ps V STAT
 \ge faim (avoir)
 \re
 \xv
@@ -1453,7 +1453,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx alobo
 \is action.tête
 \dialx GO(s) PA
-\ps v.i
+\ps v.i.
 \ge fixer du regard ; dévisager
 \re
 \gb
@@ -1517,7 +1517,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mã-
 \is grammaire_démonstratif
 \dialx GO(s) PA BO
-\ps démonstratif (duel ou pluriel)
+\ps DEM (duel ou pluriel)
 \ge les ; ces
 \re
 \gb
@@ -1550,7 +1550,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mala-e
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom DX2 3°  pers. masc. pluriel
+\ps PRON DX2 3°  pers. masc. pluriel
 \ge eux là
 \re
 \gb
@@ -1565,7 +1565,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mala-na
 \is grammaire_démonstratif
 \dialx GO(s) PA BO
-\ps pronom 3°  pers. masc. pluriel
+\ps PRON 3°  pers. masc. pluriel
 \ge eux là
 \re
 \gb
@@ -1580,7 +1580,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is grammaire_démonstratif
 \dialx GO(s)
  PA BO
-\ps pronom DX3 3°  pers. masc. pluriel
+\ps PRON DX3 3°  pers. masc. pluriel
 \ge eux là-bas
 \re
 \gb
@@ -1595,7 +1595,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mala-òòli
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom DX3 3°  pers. masc. pluriel
+\ps PRON DX3 3°  pers. masc. pluriel
 \ge eux là-bas
 \re
 \gb
@@ -1610,7 +1610,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mali-na
 \is grammaire_démonstratif
 \dialx GO(s) BO
-\ps pronom 3°  pers. masc. duel (DX ou anaphorique)
+\ps PRON 3°  pers. masc. duel (DX ou anaphorique)
 \ge eux-2 là ; hé ! les 2 hommes !
 \re
 \gb
@@ -1761,7 +1761,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is grammaire_vocatif
 \dialx GO(s) BO
 \ph É›ÌƒnÉ›Ìƒ
-\ps démonstratif DX 
+\ps DEM DX 
 \ge celui-là; et l'homme !
 \re
 \gb
@@ -1779,7 +1779,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is interpellation
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps interjection
+\ps INTJ
 \ge eh ! l'homme !
 \re
 \gb
@@ -1795,7 +1795,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dialx GO(s)
 \va anim êgu 
 \ve PA
-\ps numéral
+\ps NUM
 \ge cent (lit. cinq hommes)
 \re
 \gb
@@ -1807,7 +1807,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dialx GOs
 \va a-nim-a-xe
 \ve BO PA
-\ps numéral animés
+\ps NUM animés
 \ge six
 \re
 \gb
@@ -1823,7 +1823,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dialx GO(s)
 \va a-nira ?
 \dialx PA BO
-\ps interrogatif
+\ps INTER
 \ge combien? (animés)
 \re
 \gb
@@ -1871,7 +1871,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is grammaire_démonstratif
 \ph ???
 \dialx GO(s) BO
-\ps démonstratif anaphorique
+\ps DEM anaphorique
 \ge celui-là (en question)
 \re
 \gb
@@ -1885,7 +1885,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx a-ò !
 \is grammaire_injonction
 \dialx GO(s) PA
-\ps interjection
+\ps INTJ
 \ge va-t-en ! ; pars ! ; vas-y ! 
 \ge vas-y ! (utilisé lors de la couverture du toit et la ligature de la paille, lorsque la personne sur le toit pique l'alène vers le bas)
 \re
@@ -1902,7 +1902,7 @@ vers lui et qu'il la récupère ensuite)
 \lx ã-òòli
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom DX3 3°  pers.
+\ps PRON DX3 3°  pers.
 \ge lui là-bas
 \re
 \gb
@@ -1923,7 +1923,7 @@ vers lui et qu'il la récupère ensuite)
 \dialx GOs
 \va aapa
 \ve BO
-\ps numéral
+\ps NUM
 \ge quatre-vingt (lit. quatre hommes)
 \re
 \gb
@@ -1933,7 +1933,7 @@ vers lui et qu'il la récupère ensuite)
 \lx apa êgu bwa truuçi
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge quatre-vingt dix (lit. quatre hommes et 10)
 \re
 \gb
@@ -2237,14 +2237,14 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \ph aÊˆu
 \va aaru êgu 
 \ve BO
-\ps numéral
+\ps NUM
 \ge quarante (lit. deux hommes)
 \dt 09/Jun/2015
 
 \lx a-tru êgu bwa truuçi
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge cinquante (lit. deux hommes et 10)
 \re
 \gb
@@ -2319,7 +2319,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx aava
 \dialx GO(s)
 \ph 'a:va
-\ps v. statif
+\ps V STAT
 \sn 1
 \is plantes_processus
 \ge vert; pas mûr
@@ -2512,7 +2512,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx a-wãã-e
 \is déplacement
 \dialx GO(s)
-\ps v + directionnel
+\ps V DIR
 \ge aller sur le côté
 \re
 \gb
@@ -2526,7 +2526,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx a-wãã-ò
 \is déplacement
 \dialx GO(s)
-\ps v + directionnel
+\ps V DIR
 \ge aller en s'éloignant
 \re
 \gb
@@ -2558,7 +2558,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx a-wi?
 \is mouvement
 \dialx GO(s) PA
-\ps interrogatif locatif (dynamique)
+\ps INTER locatif (dynamique)
 \ge où (aller) ? ; aller où ?
 \re
 \gb where?
@@ -2641,7 +2641,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \va a-kè
 \dialx GO(s)
 \hm 1
-\ps numéral (animés)
+\ps NUM animés
 \ge un (animé : homme ou animal)
 \re
 \gb
@@ -2666,7 +2666,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \ve BO
 \va aaxe êgu
 \ve PA 
-\ps numéral
+\ps NUM
 \ge vingt (lit. un homme)
 \re
 \gb
@@ -2684,7 +2684,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx axè êguu
 \is grammaire_numéral
 \dialx GO(s) PA 
-\ps numéral
+\ps NUM
 \ge vingt personnes
 \ps
 \re
@@ -2702,14 +2702,14 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dialx GO
 \va aaxè ãgu bwa truji 
 \ve BO
-\ps numéral
+\ps NUM
 \ge trente (lit. un homme et 10)
 \dt 09/Jun/2015
 
 \lx axe poxee
 \is grammaire_conjonction
 \dialx GO(s)
-\ps conjonction
+\ps CONJ
 \ge mais en revanche
 \re
 \gb
@@ -2727,7 +2727,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx axe poxe hõ ma
 \is grammaire_conjonction
 \dialx PA
-\ps conj.
+\ps CONJ
 \ge mais seulement
 \re
 \gb
@@ -2886,7 +2886,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \is grammaire_dérivation
 \hm 2
 \dialx GO(s)  PA
-\ps préfixe instrumental, nominalisant
+\ps PREF instrumental, nominalisant
 \ge instrument à; sert à
 \re
 \gb
@@ -2918,7 +2918,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx -ba
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps démonstratif DX2
+\ps DEM DX2
 \ge celui-là (latéralement,  visible)
 \re
 \gb
@@ -2936,7 +2936,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \lx baa
 \is grammaire_collectif
 \dialx GOs PA BO
-\ps collectif
+\ps COLL
 \ge ensemble (dans les interpellations)
 \re
 \gb
@@ -2959,7 +2959,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \va baan
 \ve BO
 \va
-\ps v.stat.
+\ps V STAT
 \ge noir; noirci
 \re
 \gb
@@ -3026,7 +3026,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dialx GO(s) PA BO
 \va na-
 \ve BO vx
-\ps préfixe des ordinaux
+\ps PREF ORD
 \ge n-ième
 \re
 \gb
@@ -3073,7 +3073,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \is grammaire_numéral
 \dialx GO(s)
 \ph baaÊˆu
-\ps ordinal
+\ps ORD
 \ge deuxième 
 \re
 \gb
@@ -3149,7 +3149,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dialx GO(s) PA
 \va baadò-n
 \ve PA BO
-\ps nom inaliénable
+\ps N INAL
 \ge menton
 \re
 \gb
@@ -3342,7 +3342,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \hm 4
 \is grammaire_modalité
 \dialx GO(s)
-\ps particule modale (adversatif ; hypothétique, )
+\ps PART modale (adversatif ; hypothétique, )
 \ge adversatif ; incertain ; haut degré
 \re
 \ge révolu
@@ -3395,7 +3395,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \se bala-paang [PA]
 \sge partie du désherbage
 \sn 2
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur numérique (canne à sucre, bois)
 \se bala-xe, bala-tru, etc.
 \sge un morceau de bois, deux, trois 
@@ -3465,7 +3465,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \lx bala-n
 \is grammaire_modalité
 \dialx PA
-\ps modalité (nom)
+\ps MODAL (nom)
 \ge à la suite, dans la foulée
 \re
 \gb
@@ -3518,7 +3518,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \lx bala-xè 
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur numéral (des morceaux de bois)
+\ps CLF NUM (des morceaux de bois)
 \ge un (morceau de bois)
 \re
 \gb
@@ -3532,7 +3532,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \lx bale
 \is emprunt
 \dialx GO(s)
-\ps v; n
+\ps v, n
 \ge balayer; balai
 \re
 \bw FR balai
@@ -3644,7 +3644,7 @@ extension, les fruits qui ont le même goût)
 \lx ba-õxe
 \is grammaire_ordinal
 \dialx GOs
-\ps ordinal
+\ps ORD
 \ge première fois
 \re
 \gb
@@ -3763,7 +3763,7 @@ extension, les fruits qui ont le même goût)
 \ph ba:É½Ï‰
 \va baatro
 \ve GO(s)
-\ps verbe statif
+\ps V STAT
 \ge paresseux (humain)
 \re
 \gb
@@ -3924,7 +3924,7 @@ extension, les fruits qui ont le même goût)
 \is société
 \is cultures
 \dialx PA BO
-\ps n ; v
+\ps v, n
 \ge labourer le champ d'igname du chef
 \ge ouverture du champ d'igname du chef 
 \re
@@ -4024,7 +4024,7 @@ extension, les fruits qui ont le même goût)
 \xv ra thu(-xa) baxòòl i nu ? [BO]
 \xn ai-je le droit ? (BM)
 \sn 2
-\ps v.statif
+\ps V STAT
 \ge droit; vertical; d'aplomb 
 \re
 \gb
@@ -4146,7 +4146,7 @@ extension, les fruits qui ont le même goût)
 \dialx GO(s)
 \va been
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge mouillé; humide
 \rgb
 \xv dròò-chaamwa bee [GOs]
@@ -4236,7 +4236,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \lx beloo
 \is santé
 \dialx GO(s) PA
-\ps v. statif
+\ps V STAT
 \ge faible; fragile
 \ge mou; sans énergie
 \ge lent ; indolent
@@ -4386,7 +4386,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dialx GO(s)
 \va biny
 \ve PA BO WE
-\ps v.stat.
+\ps V STAT
 \ge maigre
 \ge dégonflé
 \ge coupé (souffle)
@@ -4423,7 +4423,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \hm 3
 \is grammaire_pronom
 \dialx GO(s)  PA
-\ps pronom 1° duel exclusif (sujet, objet ou
+\ps PRON 1° duel exclusif (sujet, objet ou
 possessif)
 \ge nous 2 (excl.) ; notre
 \re
@@ -4438,7 +4438,7 @@ possessif)
 \dialx GO(s)
 \va -bin
 \ve PA BO 
-\ps pronom 1° duel exclusif (objet ou possessif)
+\ps PRON 1° duel exclusif (objet ou possessif)
 \ge nous 2 (excl.) ; notre 
 \re
 \gb
@@ -4451,7 +4451,7 @@ possessif)
 \hm 1
 \is caract.objet
 \dialx GO(s)
-\ps v ; n 
+\ps v, n 
 \ge enfoncé; cabossé
 \ge choc ; impact
 \re
@@ -4574,7 +4574,7 @@ possessif)
 \dialx GO(s) BO
 \va bire
 \ve GO(s)
-\ps v; n
+\ps v, n
 \ge rouler (un toron de corde sur la cuisse)
 \ge enrouler
 \ge filer
@@ -4641,7 +4641,7 @@ possessif)
 \ve PA
 \va bîni
 \ve BO
-\ps v.t
+\ps v.t.
 \ge plier (linge)
 \ge enrouler (tissu, natte)
 \re
@@ -4680,7 +4680,7 @@ possessif)
 \ve GO(s) WE
 \va bitigi
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \sn 1
 \is caract.objet
 \ge collé
@@ -4707,7 +4707,7 @@ possessif)
 \ve GO(s) BO
 \va bon, bwon
 \ve BO
-\ps v ; n
+\ps v, n
 \gr v.t. bole
 \ge sentir (odeur) ; odeur ; avoir une odeur
 \xv bo-raa; bo traa (GO)
@@ -4806,7 +4806,7 @@ possessif)
 \lx bòli
 \is locatif
 \dialx GO(s)
-\ps directionnel 
+\ps DIR 
 \ge là-bas en bas
 \re
 \gb
@@ -4860,7 +4860,7 @@ possessif)
 \ve PA BO
 \va bòna
 \ve BO 
-\ps adverbe
+\ps ADV
 \ge après-demain ; à l'avenir ; le lendemain
 \re
 \gb
@@ -5051,7 +5051,7 @@ possessif)
 \is plantes_processus
 \dialx GO(s) PA BO
 \hm 1
-\ps v.statif
+\ps V STAT
 \ge vert (fruit) ; pas mûr
 \re
 \gb green fruit 
@@ -5160,7 +5160,7 @@ possessif)
 \lx bu-
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur: butte (d'igname), monticule; billon
 \re
 \gb
@@ -5246,7 +5246,7 @@ possessif)
 \lx bubu
 \is couleur
 \dialx BO PA
-\ps verbe statif
+\ps V STAT
 \ge vert, bleu
 \re
 \gb
@@ -5597,7 +5597,7 @@ Dubois ms)
 \lx burali 
 \is son
 \dialx BO (Corne)
-\ps verbe
+\ps V
 \ge détonner avec éclat ; tomber et se briser avec bruit
 \re
 \gb
@@ -5767,7 +5767,7 @@ l'esprit d'un vivant de celui d'un mort
 \poc *bwatu
 \sn 2
 \is locatif
-\ps locatif
+\ps LOC
 \ge dessus; au-dessus de; sur
 \re
 \gb
@@ -5786,7 +5786,7 @@ l'esprit d'un vivant de celui d'un mort
 \lx bwa-
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur
+\ps CLF
 \ge classificateur : bottes d'herbes (mae : Imperata cylindrica) et paquets de feuilles (pandanus, etc.)
 \re
 \gb
@@ -5839,7 +5839,7 @@ l'esprit d'un vivant de celui d'un mort
 \dialx GO(s) PA BO
 \va bwa dèèn
 \ve PA BO
-\ps locatif
+\ps LOC
 \ge au vent; vent debout
 \re
 \gb
@@ -5868,7 +5868,7 @@ l'esprit d'un vivant de celui d'un mort
 \lx bwa mè
 \is locatif
 \dialx GO(s) BO
-\ps locatif
+\ps LOC
 \ge face à; présence (en) de
 \re
 \gb
@@ -5887,7 +5887,7 @@ l'esprit d'un vivant de celui d'un mort
 \va mò
 \ve BO
 \ph mÉ”Ìƒ 
-\ps nom ; verbe statif
+\ps nom ; V STAT
 \ge gauche (à) 
 \re
 \gb
@@ -5906,7 +5906,7 @@ l'esprit d'un vivant de celui d'un mort
 \is orientation
 \dialx GO(s)
 \ph bwa mhwÉ›ÌƒÌƒ  
-\ps direction
+\ps DIR
 \ge droite (à)
 \re
 \gb
@@ -5937,7 +5937,7 @@ rendre comestible
 \lx bwabu
 \is locatif
 \dialx GO(s)  PA BO
-\ps locatif
+\ps LOC
 \ge au-dessous ; par terre; en bas
 \re
 \gb
@@ -5981,7 +5981,7 @@ rendre comestible
 \dialx GO(s)
 \va bwaayu 
 \ve WEM WE BO PA
-\ps v.stat.
+\ps V STAT
 \ge courageux ; travailleur
 \re
 \gb
@@ -6306,7 +6306,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dialx GO(s)
 \va bwa-mol
 \ve BO
-\ps locatif
+\ps LOC
 \ge à terre (lit. sec)
 \re
 \gb
@@ -6347,7 +6347,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \ve GO(s) PA WEM
 \va bwaa
 \ve PA 
-\ps interj. de pitié, d'affection
+\ps INTJ de pitié, d'affection
 \ge hélas ; pauvre !; cher !
 \re
 \re
@@ -6421,7 +6421,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \is mouvement
 \ph bwaÉ”l
 \dialx PA BO WEM
-\ps v ; n 
+\ps v, n 
 \ge rouler; tourner une roue
 \ge tourner une roue
 \ge roue
@@ -6439,7 +6439,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \lx bwarabo ???
 \is caract.objet
 \dialx BO [BM]
-\ps v. statif
+\ps V STAT
 \ge rond
 \re
 \gb
@@ -6473,7 +6473,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \is fonct.nat
 \va bware
 \ve PA BO
-\ps n; v
+\ps v, n
 \ge fatigué; fatigue (grande)
 \ge épuisé; épuisement
 \re
@@ -6721,7 +6721,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \lx bwaa-xe
 \is classificateur numérique
 \dialx PA
-\ps classificateur
+\ps CLF
 \ge un fagot ; un paquet de feuilles, de paille
 \re
 \gb
@@ -7207,7 +7207,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \lx bwi
 \is maladie
 \dialx GO(s)  PA BO
-\ps v.statif
+\ps V STAT
 \ge aveugle
 \ge conjonctivite
 \re
@@ -7483,7 +7483,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \hm 1
 \ph tja
 \dialx GO(s) BO
-\ps verbe
+\ps V
 \ge coupant; bien aiguisé
 \re
 \gb
@@ -7525,7 +7525,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dialx GO(s)
 \va ya, yaa, yai
 \ve PA
-\ps marque d'objet indirect
+\ps COI
 \ge à ; vers; jusqu'à
 \re
 \gb
@@ -7555,7 +7555,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \ve GO(s) 
 \va ce, je, ye
 \ve BO PA
-\ps thématisation
+\ps THEM
 \ge thématisation
 \re
 \gb
@@ -7610,7 +7610,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \is grammaire_interrogatif
 \ph Ê’a ea
 \dialx GO(s)
-\ps interrogatif dynamique locatif
+\ps INTER dynamique locatif
 \ge jusqu'où ?
 \re
 \gb
@@ -7705,7 +7705,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \sge neveux côté maternel
 \sn 3
 \is plantes_processus
-\ps n; v
+\ps v, n
 \ge repousse des feuilles [GOs]
 \ge reverdir [GOs]
 \re
@@ -7738,7 +7738,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \lx cabòl !
 \is déplacement
 \dialx PA BO
-\ps interjection
+\ps INTJ
 \ge sortir; sors !
 \re
 \gb
@@ -7824,7 +7824,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \is position
 \dialx GO(s) PA
 \ph cÊ°a:Ê’e 
-\ps adverbe
+\ps ADV
 \ge travers (de) ; penché sur un  côté
 \re
 \gb
@@ -7848,7 +7848,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ve GO(s)
 \va yai
 \ve PA BO
-\ps préposition (objet indirect)
+\ps PREP (objet indirect)
 \ge à (destinataire animé)
 \re
 \gb
@@ -7998,7 +7998,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \is feu
 \hm 2
 \dialx GO(s) BO
-\ps verbe
+\ps V
 \ge allumer (feu, lampe, cigarette, briquet)
 \rgb
 \de
@@ -8205,7 +8205,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \va chãnã
 \ve PA BO
 \sn 1
-\ps v ; n
+\ps v, n
 \ge respirer
 \ge souffle 
 \ge respiration
@@ -8223,7 +8223,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \is grammaire_aspect 
 \ph chÉ›ÌƒÌƒÌƒÌƒnÉ›ÌƒÌƒÌƒÌƒ
 \dialx GO(s)
-\ps aspect persistif
+\ps PERS
 \ge sans cesse; constamment ; toujours ; à répétition ;  sans arrêt; tout le temps
 \re
 \gb
@@ -8384,7 +8384,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \va cava dili 
 \ve BO
 \ve
-\ps v.stat.
+\ps V STAT
 \ge boue (lit. terre molle)
 \re
 \gb
@@ -8401,7 +8401,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \is grammaire_quantificateur
 \ph caÎ²e
 \dialx GO(s)
-\ps quantificateur
+\ps QUANT
 \ge ensemble
 \re
 \gb
@@ -8448,7 +8448,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ve PA
 \va caavu
 \ve BO (Corne)
-\ps v ; n
+\ps v, n
 \ge laver  (avec du savon) ; savon
 \bw FR savon
 \re
@@ -8473,7 +8473,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \lx câwâ ???
 \is interaction
 \dialx GO
-\ps verbe
+\ps V
 \ge nuire
 \re
 \gb
@@ -8736,7 +8736,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ve GOs
 \va ye
 \ve PA
-\ps thématisation
+\ps THEM
 \ge thématisation
 \re
 \gb
@@ -8756,7 +8756,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dialx GO(s)
 \va ca-
 \ve PA BO
-\ps n, classificateur possessif
+\ps N; CLF POSS
 \ge part de féculents
 \re
 \gb
@@ -8986,7 +8986,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \hm 1
 \ph cÊ°ele
 \dialx GO(s) PA
-\ps verbe
+\ps V
 \ge toucher
 \ge effleurer (qqch) ; frôler
 \re
@@ -9394,7 +9394,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx GO(s) PA BO
 \va cee
 \ve PA
-\ps intensificateur
+\ps INTENS
 \ge très; vraiment
 \re
 \gb
@@ -9449,7 +9449,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \hm 1
 \ph cia
 \dialx GO(s) BO PA 
-\ps v; n
+\ps v, n
 \ge danser; danse
 \re
 \gb dance
@@ -9776,7 +9776,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \is caract.
 \ph cineÎ²o
 \dialx GO(s) BO
-\ps v. statif
+\ps V STAT
 \ge important
 \re
 \gb
@@ -9796,7 +9796,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ph cÊ°inÉ”ÌƒÌƒ 
 \va cinõ
 \ve BO
-\ps n ; v
+\ps v, n
 \sn 1
 \is caract.objet
 \ge grosseur; épaisseur
@@ -9944,7 +9944,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx GO(s) 
 \va citratra
 \ve GO(s)
-\ps v. statif
+\ps V STAT
 \ge fin; mince
 \rgb
 \gb thin
@@ -10211,7 +10211,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx GO(s)
 \va cô
 \ve BO (BM]
-\ps v.i
+\ps v.i.
 \sn 1
 \is action_corps
 \ge suspendu 
@@ -10255,7 +10255,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \is jeu
 \dialx GO(s) PA BO WEM WE
 \ph cÊ°Ã´Ã£ 
-\ps v; n
+\ps v, n
 \ge jouer; s'amuser; jeu
 \re
 \gb
@@ -10349,7 +10349,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ve GO(s)
 \va cocova
 \ve BO
-\ps quantificateur
+\ps QUANT
 \ge chaque; ensemble; tout ; toutes les sortes 
 \re
 \gb
@@ -10451,7 +10451,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx GO(s)
 \va chôî
 \ve BO (Corne)
-\ps v.t
+\ps v.t.
 \ge suspendre
 \ge prendre au collet
 \re
@@ -10490,7 +10490,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \va comu
 \ve PA
 \sn 1
-\ps verbe
+\ps V
 \ge apprendre; étudier
 \ge lire [PA, BO]
 \re
@@ -10642,7 +10642,7 @@ dans le processus dont l'un est celui qui coupe)
 \dialx GO(s)
 \va coole
 \ve GO
-\ps verbe
+\ps V
 \ge enlever le tabou; transgresser
 \re
 \gb
@@ -10657,7 +10657,7 @@ dans le processus dont l'un est celui qui coupe)
 \hm 3
 \is grammaire_pronom
 \dialx GO PA
-\ps pronom sujet 2°  duel
+\ps PRON sujet 2°  duel
 \ge vous 2
 \re
 \gb
@@ -10773,7 +10773,7 @@ dans le processus dont l'un est celui qui coupe)
 \ve PA
 \va cu, -yu
 \ve PA, BO
-\ps pronom 2° singulier sujet ou objet
+\ps PRON 2° singulier sujet ou objet
 \ge tu; te
 \re
 \gb
@@ -10789,7 +10789,7 @@ dans le processus dont l'un est celui qui coupe)
 \hm 1
 \dialx BO (Corne)
 \va cuu
-\ps quantificateur
+\ps QUANT
 \ge trop
 \re
 \gb
@@ -10904,7 +10904,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx cula ???
 \dialx GO
-\ps verbe
+\ps V
 \ge haïr
 \re
 \gb
@@ -10932,7 +10932,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx cuva ègu ???
 \dialx BO [Corne]
-\ps interjection
+\ps INTJ
 \ge les hommes ! ; bonnes gens !
 \re
 \gb
@@ -10952,7 +10952,7 @@ dans le processus dont l'un est celui qui coupe)
 \ve GO(s)
 \va cugi
 \ve BO
-\ps v. statif; n
+\ps V STAT; nom
 \sn 1
 \is santé
 \ge fort ; vigoureux ; résistant
@@ -10976,7 +10976,7 @@ dans le processus dont l'un est celui qui coupe)
 \hm 1
 \ph nda  
 \dialx GO(s) PA BO
-\ps directionnel
+\ps DIR
 \ge en haut (vers le sud ; vers la terre; en amont; vers le fond de la vallée ou l'intérieur du pays ; vers le fond de la maison)
 \re
 \gb
@@ -10995,7 +10995,7 @@ dans le processus dont l'un est celui qui coupe)
 \dialx GO(s) PA BO
 \va ta?
 \ve GO(s)
-\ps interrogatif
+\ps INTER
 \ge quoi ?
 \re
 \gb
@@ -11109,7 +11109,7 @@ dans le processus dont l'un est celui qui coupe)
 \dialx GO(s)
 \va daa
 \ve BO
-\ps v ; modificateur; itensif (reflechi)
+\ps v; MODIF; INTENS (reflechi)
 \ge seul ; de soi-même
 \ge faire sans savoir ; faire sans penser au résultat
 \re
@@ -11170,7 +11170,7 @@ dans le processus dont l'un est celui qui coupe)
 \ph É–a:puÉ³e
 \is grammaire_modalité
 \dialx GO(s)
-\ps adv.
+\ps ADV
 \ge volontairement ; exprès
 \re
 \gb
@@ -11789,7 +11789,7 @@ dans le processus dont l'un est celui qui coupe)
 \hm 2
 \dialx GO(s) PA
 \ph nde
-\ps préfixe classificateur numérique des mains de banane 
+\ps PREF CLF NUM des mains de banane 
 \ge classificateur numérique: main de bananes, côtes
 \re
 \gb
@@ -12351,7 +12351,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx didi ???
 \dialx BO [Corne]
-\ps v.stat.
+\ps V STAT
 \ge profond ; vert 
 \re
 \gb
@@ -12871,7 +12871,7 @@ Se déguste de préférence sucré.
 \dialx GO(s)
 \va dòbo
 \ve BO PA
-\ps n; v
+\ps v, n
 \sn 1
 \is action
 \ge éboulement; écrouler (s')
@@ -13090,7 +13090,7 @@ Se déguste de préférence sucré.
 \lx dõni 
 \is grammaire_quantificateur
 \dialx GO(s) PA BO
-\ps locatif
+\ps LOC
 \ge parmi ; entre
 \re
 \gb
@@ -13241,7 +13241,7 @@ Se déguste de préférence sucré.
 \dialx GO(s)
 \va dròdrò
 \ve GO(s)
-\ps locatif
+\ps LOC
 \ge hier
 \re
 \gb
@@ -13377,7 +13377,7 @@ Se déguste de préférence sucré.
 \ph É–É”:É£É›
 \va dòò-
 \ve PA
-\ps classificateur numérique des feuilles
+\ps CLF NUM des feuilles
 \ge une (feuille)
 \re
 \gb
@@ -13619,7 +13619,7 @@ Se déguste de préférence sucré.
 \ph ndu
 \hm 2
 \dialx GO(s) PA
-\ps directionnel
+\ps DIR
 \ge en bas (vers le nord; vers la mer; en aval; à l'extérieur de la maison, vers la porte)
 \re
 \gb
@@ -13841,7 +13841,7 @@ Se déguste de préférence sucré.
 \is grammaire_directionnel
 \dialx GO(s)
 \ve
-\ps directionnel
+\ps DIR
 \ge approcher (s') en descendant
 \re
 \gb
@@ -13873,7 +13873,7 @@ Se déguste de préférence sucré.
 \lx e-
 \is grammaire_parenté
 \dialx BO [BM]
-\ps préfixe des couples de parenté
+\ps PREF des couples de parenté
 \ge parenté duelle
 \re
 \gb
@@ -13895,7 +13895,7 @@ Se déguste de préférence sucré.
 \hm 1
 \is grammaire_directionnel
 \dialx GO(s) PA
-\ps directionnel transverse
+\ps DIR transverse
 \ge en s'éloignant du locuteur (axe transverse) (d'une vallée à l'autre, traversant un cours d'eau)
 \re
 \gb
@@ -13910,7 +13910,7 @@ Se déguste de préférence sucré.
 \is grammaire
 \hm 2
 \dialx GO 
-\ps adverbe (marque d')
+\ps ADV (marque d')
 \ge adverbe (ou) accord en transitivité??
 \re
 \gb
@@ -13929,7 +13929,7 @@ Se déguste de préférence sucré.
 \dialx GOs
 \va ã
 \ve GOs
-\ps anaphorique
+\ps ANAPH
 \ge là ; là-bas (inanimés; absent mais connu des interlocuteurs)
 \re
 \gb
@@ -13983,7 +13983,7 @@ Se déguste de préférence sucré.
 \lx e zo !
 \is interjection
 \dialx GO(s)
-\ps interjection
+\ps INTJ
 \ge bien fait !
 \xn
 \re
@@ -14001,7 +14001,7 @@ Se déguste de préférence sucré.
 \ve GO(s)
 \va ia, ya
 \ve BO
-\ps interrogatif
+\ps INTER
 \ge où?
 \re
 \gb
@@ -14069,7 +14069,7 @@ Se déguste de préférence sucré.
 \lx êba
 \is locatif
 \dialx  GO(s) PA
-\ps locatif
+\ps LOC
 \ge là-bas latéralement
 \re
 \gb
@@ -14116,7 +14116,7 @@ Se déguste de préférence sucré.
 \lx ebe-thoomwã kòlò
 \is parenté
 \dialx GO(s)
-\ps parenté réciproque ???
+\ps PAR REC
 \ge tante paternelle (tantine) et nièce
 \re
 \gb
@@ -14154,7 +14154,7 @@ de frère de mère ; fils de la soeur du père
 \lx ebòli 
 \is locatif
 \dialx GO(s) PA BO
-\ps locatif directionnel
+\ps LOC DIR
 \ge là-bas en bas; là-bas vers la mer (visible ou non)
 \re
 \gb
@@ -14174,7 +14174,7 @@ de frère de mère ; fils de la soeur du père
 \lx êda
 \is locatif
 \dialx GO
-\ps déict.-direct.
+\ps DEICT DIR
 \ge là-bas en haut; devant
 \re
 \gb
@@ -14232,7 +14232,7 @@ de frère de mère ; fils de la soeur du père
 \lx êdu
 \is locatif
 \dialx GO
-\ps déict.-direct.
+\ps DEICT DIR
 \ge là-bas en bas; derrière
 \re
 \gb
@@ -14260,7 +14260,7 @@ de frère de mère ; fils de la soeur du père
 \lx -êê
 \is grammaire_pronom
 \dialx GO
-\ps pronom objet ou possessif 1° duel inclusif 
+\ps PRON objet ou possessif 1° duel inclusif 
 \ge nous ; nos
 \re
 \gb
@@ -14374,7 +14374,7 @@ de frère de mère ; fils de la soeur du père
 \is temps
 \dialx GO(s)
 \ph ÌƒÉ›ÌƒÅ‹gÉ”ÌƒÅ‹gÉ”
-\ps adverbe
+\ps ADV
 \va êgòl
 \ph ÌƒÉ›ÌƒÅ‹gÉ”l 
 \ve PA BO WEM WE 
@@ -14398,7 +14398,7 @@ de frère de mère ; fils de la soeur du père
 \dialx GO
 \va eku
 \ve GO
-\ps marque d'agent
+\ps AGT
 \ge agent
 \re
 \gb
@@ -14445,7 +14445,7 @@ de frère de mère ; fils de la soeur du père
 \dialx GO(s)
 \va ayò
 \ve BO PA
-\ps v.stat.
+\ps V STAT
 \ge joli; beau (personne, chose)
 \re
 \gb
@@ -14460,7 +14460,7 @@ de frère de mère ; fils de la soeur du père
 \is grammaire_démonstratif
 \dialx GO(s)
 \ph ÌƒÌƒÌƒÌƒÌƒÌƒÌƒÉ›ÌƒjÉ›ÌƒÌƒ
-\ps démonstratif
+\ps DEM
 \ge cette femme-ci; eh ! la femme 
 \re
 \gb
@@ -14475,7 +14475,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-jeni
 \is grammaire_pronom
 \dialx GOs PA BO
-\ps démonstratif
+\ps DEM
 \ge voilà (le) pas loin
 \re
 \gb
@@ -14489,7 +14489,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èla-ã
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif DX1
+\ps DEM DX1
 \ge ceux-ci
 \re
 \gb
@@ -14503,7 +14503,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èla-õli
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif DX1
+\ps DEM DX1
 \ge ceux-là-bas (DX3)
 \re
 \gb
@@ -14537,7 +14537,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èli-ã
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps démonstratif DX1
+\ps DEM DX1
 \ge ces2-ci
 \re
 \gb
@@ -14550,7 +14550,7 @@ cette femme-là en bas, cette femme-là loin en bas
 
 \lx èlò
 \dialx GO PA BO
-\ps interjection, v
+\ps INTJ, v
 \sn 1
 \is interaction
 \ge oui
@@ -14573,7 +14573,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èlò-ã
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps démonstratif DX1
+\ps DEM DX1
 \ge ces3-ci
 \re
 \gb
@@ -14606,7 +14606,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is interpellation
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps interjection
+\ps INTJ
 \ge eh ! vous  ! (triel)
 \re
 \gb
@@ -14748,7 +14748,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is locatif
 \dialx GO(s) PA BO
 \ph Ãªna
-\ps adv. locatif spatio-temporel anaphorique ??
+\ps ADV LOC spatio-temporel anaphorique ??
 \ge ici ; maintenant ????
 \de
 \gb
@@ -14765,7 +14765,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ve BO [BM]
 \va kaalu
 \ve GO(s)
-\ps v ; n 
+\ps v, n 
 \ge blessé 
 \re
 \gb
@@ -14779,7 +14779,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \hm 1
 \is locatif
 \dialx GO(s) BO
-\ps nom locatif
+\ps N LOC
 \ge endroit où
 \re
 \gb
@@ -14800,7 +14800,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s) BO
 \va enã
 \ve PA
-\ps adv.
+\ps ADV
 \ge ici
 \re
 \gb
@@ -14816,7 +14816,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \va èba
 \ve GO(s)
-\ps locatif DX2
+\ps LOC DX2
 \ge là (sur le côté, latéralement)
 \re
 \gb
@@ -14832,7 +14832,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \va ènîda
 \ve WEM
-\ps directionnel
+\ps DIR
 \ge vers le  haut; en amont; vers la montagne
 \ge vers la terre 
 \ge au sud ; à l'est
@@ -14849,7 +14849,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is topographie
 \dialx GO(s)
 \ph enÉ›Ìƒdu   
-\ps locatif directionnel
+\ps LOC DIR
 \ge bas (en); vers le bas; en aval ; vers la mer
 \ge au nord
 \re
@@ -14862,7 +14862,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ênrè-ò
 \is locatif
 \dialx GO(s)
-\ps locatif anaphorique 
+\ps LOC ANAPH 
 \ge endroit-là (connu des locuteurs); ce temps-là ???
 \re
 \gb
@@ -14879,7 +14879,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ph É›ÌƒÌƒni
 \va enim ???
 \ve PA
-\ps adv. locatif DX2
+\ps ADV LOC DX2
 \ge là 
 \re
 \gb there
@@ -14897,7 +14897,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ve WEM WE PA
 \va inira ?
 \ve BO
-\ps interrogatif
+\ps INTER
 \ge quand? (passé et futur)
 \re
 \gb
@@ -14912,7 +14912,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO
 \va inira-mwa
 \ve BO
-\ps adverbe
+\ps ADV
 \ge indéfiniment ; un jour 
 \re
 \gb
@@ -15033,7 +15033,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s) 
 \va ènõli
 \ve PA BO
-\ps locatif déictique DX3
+\ps LOC DX3
 \ge là-bas; au-delà (invisible)
 \re
 \gb there; over there; yonder
@@ -15049,7 +15049,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ènoma
 \is grammaire_pronom
 \dialx PA BO [BM]
-\ps démonstratif
+\ps DEM
 \ge les autres
 \re
 \gb
@@ -15064,7 +15064,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is locatif
 \ph 'É›ÌƒÉ³udaÌƒ
 \dialx GO(s) BO
-\ps locatif
+\ps LOC
 \ge là-haut ; en haut (sur la montagne) ; au-dessus
 \re
 \gb
@@ -15080,7 +15080,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nye
 \is grammaire_démonstratif
 \dialx GOs PA BO
-\ps démonstratif
+\ps DEM
 \ge voici (le) 
 \re
 \de
@@ -15094,7 +15094,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nye-ba
 \is grammaire_présentation
 \dialx PA GO???
-\ps démonstratif
+\ps DEM
 \ge voilà (le) là (on le montre et on regarde dans sa direction)
 \re
 \gb
@@ -15109,7 +15109,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nye-boli
 \is grammaire_présentation
 \dialx PA GO ??
-\ps démonstratif DX3
+\ps DEM DX3
 \ge voilà (le) là-bas (à un endroit plus bas que là où on est)
 \re
 \gb
@@ -15124,7 +15124,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nyoli
 \is grammaire_démonstratif
 \dialx GOs PA 
-\ps démonstratif
+\ps DEM
 \ge voilà (le) ; celui-là (visible)
 \re
 \de
@@ -15137,7 +15137,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nyu-da
 \is grammaire_présentation
 \dialx PA   GO???
-\ps loc
+\ps LOC
 \ge voilà (le) en haut
 \re
 \gb
@@ -15152,7 +15152,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx epè- ??? VOIR
 \is parenté
 \dialx GO
-\ps préfixe de relations duelles
+\ps PREF de relations duelles
 \ge couple de relation
 \re
 \gb
@@ -15253,7 +15253,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx eva?
 \is grammaire_interrogatif
 \dialx BO PA 
-\ps interrogatif locatif (statique)
+\ps INTER locatif (statique)
 \ge où ?
 \re
 \gb
@@ -15300,7 +15300,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx PA  BO
 \va eka
 \ve BO
-\ps conjonction de temps
+\ps CONJ TEMPS
 \ge quand ; lorsque (référence passée)
 \re
 \gb
@@ -15319,7 +15319,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \va ruma
 \ve PA 
-\ps marque de futur
+\ps FUT
 \ge futur
 \re
 \gb
@@ -15383,7 +15383,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s) PA BO
 \va ga
 \ve BO 
-\ps aspect duratif
+\ps DUR
 \ge encore en train de ; toujours en train de
 \re
 \gb
@@ -15467,7 +15467,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx gaa ... gòl
 \is grammaire_aspect
 \dialx PA
-\ps aspect persistif
+\ps PERS
 \ge toujours en train de
 \re
 \ge faire le premier; faire d'abord
@@ -15496,7 +15496,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx gaa ... hô
 \is grammaire_aspect
 \dialx PA
-\ps aspect
+\ps ASP
 \ge venir juste de
 \re
 \gb
@@ -15547,7 +15547,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s) 
 \va gaajòn
 \ve PA BO WEM
-\ps v.i
+\ps v.i.
 \ge surpris (être); sursauter; étonner (s'); étonné (être)
 \re
 \gb
@@ -15648,7 +15648,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GOs
 \va gavwu-
 \ve PA
-\ps classificateur
+\ps CLF
 \ge touffes de bambous ou de bananiers
 \re
 \gb
@@ -15759,7 +15759,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ge
 \hm 1
 \dialx GO(s) BO PA
-\ps v. locatif ; progressif
+\ps V LOC ; progressif
 \sn 1
 \is grammaire_locatif
 \ge trouver (se) à; être dans un endroit 
@@ -15805,7 +15805,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \hm 2
 \is grammaire_conjonction
 \dialx BO
-\ps conjonction ; thématisation
+\ps CONJ ; THEM
 \ge et alors
 \re
 \gb
@@ -15823,7 +15823,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ve BO PA 
 \va gèènk
 \ve BO vx
-\ps v.statif; n
+\ps V STAT; nom
 \sn 1
 \ge sale;  saleté 
 \ge tache ; taché
@@ -15878,7 +15878,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ge ... mhenõõ
 \is grammaire_aspect
 \dialx GOs PA
-\ps aspect
+\ps ASP
 \ge en train de 
 \re
 \gb
@@ -15912,7 +15912,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ge-le
 \is grammaire_existentiel
 \dialx GO(s) PA BO
-\ps v. locatif
+\ps V LOC
 \ge il y (en)  a 
 \re
 \gb
@@ -15968,7 +15968,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx gèny ???
 \is corps
 \dialx BO [BM] 
-\ps v. statif
+\ps V STAT
 \ge stérile
 \re
 \gb
@@ -16234,7 +16234,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \va gòl
 \ve PA
-\ps particule aspect post-verbal
+\ps ASP post-verbal
 \ge continuatif; sans interruption ; duratif
 \re
 \gb
@@ -16310,7 +16310,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \poc *qau (PNNC, Hollyman)
 \sn 2
 \is classificateur numérique
-\ps classificateur dénombrant des morceaux PA [pas à Gomen]
+\ps CLF NUM des morceaux PA [pas à Gomen]
 \ge morceau (objet long)
 \re
 \gb
@@ -16459,7 +16459,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx
 \va gò-nira ?
 \ve BO
-\ps interrogatif
+\ps INTER
 \ge combien de morceaux (bois, poisson, anguilles) ?
 \re
 \gb
@@ -16624,7 +16624,7 @@ queue, taches pourpres sur le ventre)
 \dialx GO(s)
 \va gun
 \ve BO PA
-\ps n; v
+\ps v, n
 \ge bruit sourd; faire du bruit
 \re
 \gb
@@ -16655,7 +16655,7 @@ queue, taches pourpres sur le ventre)
 \hm 4
 \is caract.
 \dialx GO(s) BO [Corne]
-\ps v.statif
+\ps V STAT
 \ge vrai; droit
 \ge autochtone, du pays ; véritable [BO]
 \re
@@ -16678,7 +16678,7 @@ queue, taches pourpres sur le ventre)
 \dialx GO(s)
 \va ku
 \ve PA
-\ps modalité injonctive
+\ps INJONC
 \ge ordre ; injonction
 \re
 \gb
@@ -16699,7 +16699,7 @@ queue, taches pourpres sur le ventre)
 \dialx GO(s)
 \va ku
 \ve PA
-\ps aspect ou restrictif
+\ps RESTR
 \ge rester à ; ne faire que
 \re
 \gb
@@ -16715,7 +16715,7 @@ queue, taches pourpres sur le ventre)
 \lx gu-
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur : filoche de poisson [GOs, PA]
 \ge classificateur : files de voitures [PA]
 \re
@@ -16784,7 +16784,7 @@ queue, taches pourpres sur le ventre)
 \lx gumãgu
 \is interaction
 \dialx GO(s) PA BO
-\ps v; n
+\ps v, n
 \ge vrai; verité
 \ge dire la vérité ; avoir raison
 \re
@@ -16957,7 +16957,7 @@ queue, taches pourpres sur le ventre)
 \lx haa
 \is grammaire_aspect
 \dialx GOs PA BO 
-\ps aspect
+\ps ASP
 \ge sans arrêt; sans cesse; tout le temps
 \re
 \gb
@@ -16976,7 +16976,7 @@ queue, taches pourpres sur le ventre)
 \lx haa-
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur numérique des tissus et étoffes végétales
+\ps CLF NUM des tissus et étoffes végétales
 \ge classificateur: tissus et étoffes végétales
 \re
 \gb
@@ -17000,7 +17000,7 @@ queue, taches pourpres sur le ventre)
 \ph heÌƒ
 \va hãny 
 \ve BO
-\ps n; v
+\ps v, n
 \ge gouvernail
 \ge pagaie
 \ge diriger; conduire
@@ -17161,7 +17161,7 @@ queue, taches pourpres sur le ventre)
 \is grammaire_quantificateur
 \dialx GO(s) PA BO
 \va (h)ada
-\ps adv. quantificateur
+\ps ADV QUANT
 \ge seul; tout seul; seulement
 \re
 \gb
@@ -17186,7 +17186,7 @@ queue, taches pourpres sur le ventre)
 \is temps
 \dialx GO(s)  BO PA
 \ph 'hÉ›ÌƒÅ‹gana
-\ps adverbe
+\ps ADV
 \ge maintenant; aujourd'hui; tout-à-l'heure
 \re
 \gb
@@ -17231,7 +17231,7 @@ queue, taches pourpres sur le ventre)
 \ve PA BO
 \va a
 \ve GO(s)
-\ps conjonction
+\ps CONJ
 \ge ou bien
 \re
 \gb
@@ -17248,7 +17248,7 @@ queue, taches pourpres sur le ventre)
 \dialx GO(s) PA BO 
 \va hayai
 \ve GO(s)
-\ps négation (en réponse à une question)
+\ps NEG (en réponse à une question)
 \ge non
 \re
 \gb
@@ -17263,7 +17263,7 @@ queue, taches pourpres sur le ventre)
 \hm 3
 \is grammaire_quantificateur
 \dialx GO(s) BO PA
-\ps quantificateur
+\ps QUANT
 \ge il y a beaucoup ; très (de : haivwo)
 \re
 \gb
@@ -17318,7 +17318,7 @@ queue, taches pourpres sur le ventre)
 \ve BO 
 \va haipo
 \ve vx
-\ps quantificateur
+\ps QUANT
 \ge beaucoup; nombreux; trop
 \re
 \gb
@@ -17424,7 +17424,7 @@ queue, taches pourpres sur le ventre)
 \lx hale 
 \is action_corps
 \dialx GO(s)
-\ps v.t
+\ps v.t.
 \ge casser (verre, assiette)
 \re
 \gb
@@ -17470,7 +17470,7 @@ queue, taches pourpres sur le ventre)
 
 \lx hane ??
 \dialx PA
-\ps négatif
+\ps NEG
 \ge sans
 \re
 \gb
@@ -17553,7 +17553,7 @@ queue, taches pourpres sur le ventre)
 \lx hããny
 \is navigation
 \dialx PA BO
-\ps v ; n
+\ps v, n
 \ge diriger (voiture)
 \ge barrer (bateau)
 \ge gouvernail ; volant
@@ -17571,7 +17571,7 @@ queue, taches pourpres sur le ventre)
 \dialx PA
 \va aom
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge léger
 \re
 \gb
@@ -17698,7 +17698,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx havan
 \is plantes_processus
 \dialx BO
-\ps v ; n
+\ps v, n
 \ge flétri; fané; mort ; feuille fanée
 \re
 \gb
@@ -17864,7 +17864,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx haxa ??
 \is grammaire_aspect
 \dialx GOs
-\ps aspect
+\ps ASP
 \ge quand; au moment où ;              ?????(ne faire que ; ne plus (avec négation))
 \re
 \gb
@@ -17884,7 +17884,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA BO
 \va hã
 \ve PA
-\ps v.statif
+\ps V STAT
 \ge grand; gros; volumineux
 \rgb
 \gb big
@@ -17902,7 +17902,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve GO(s) PA BO
 \va age
 \ve BO
-\ps conjonction
+\ps CONJ
 \sn 1
 \ge et; mais; mais (entre-temps; pendant ce temps)
 \re
@@ -17977,7 +17977,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hayu
 \is grammaire_modalité
 \dialx GO(s) BO
-\ps adv. modificateur
+\ps ADV MODIF
 \sn 1
 \ge au hasard; de ci de là
 \ge quelconque; n'importe comment; en vain
@@ -18135,7 +18135,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx he
 \is action_corps
 \dialx GO(s) PA BO
-\ps v; n 
+\ps v, n 
 \ge frotter ; procréer ;  saillir (un animal); accouplement
 \gb
 \rgb
@@ -18154,7 +18154,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hè
 \is interjection
 \dialx PA
-\ps interjection
+\ps INTJ
 \ge interpellation
 \re
 \gb
@@ -18177,7 +18177,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \va hêê-n
 \ve PA BO
 \ph hÃª:
-\ps préfixe
+\ps PREF
 \ge contenu de
 \ge don ; cadeau
 \re
@@ -18234,7 +18234,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va hêbun
 \ve PA BO
-\ps v; adverbe
+\ps V; ADV
 \sn 1
 \ge devant (être)
 \ge premier (être)
@@ -18253,7 +18253,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf mu
 \ce derrière, après
 \sn 2
-\ps preposition; adv.; conj.
+\ps PREP; ADV; CONJ
 \ge devant; avant
 \re
 \gb
@@ -18489,7 +18489,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hèlè
 \dialx GO PA BO
 \ph hÉ›lÉ›
-\ps n ; v
+\ps v, n
 \ge
 \sn 1
 \is outils
@@ -18652,7 +18652,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA
 \va -èò 
 \ve PA
-\ps démonstratif sg
+\ps DEM sg
 \ge réfère au passé (plus loin dans le temps que -ò)
 \re
 \gb
@@ -18814,7 +18814,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hi-
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur
+\ps CLF
 \ge classificateur: branches (ne s'emploie plus)
 \re
 \gb
@@ -18964,7 +18964,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s) BO
 \va hiliini
 \ve BO
-\ps verbe
+\ps V
 \ge effacer
 \re
 \gb
@@ -18978,7 +18978,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hili
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif 
+\ps DEM 
 \ge cela (audible, mais invisible)
 \re
 \gb
@@ -19006,7 +19006,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is action_corps
 \hm 1
 \dialx GO(s) BO 
-\ps v.t
+\ps v.t.
 \sn 1
 \is bois_travail
 \ge écorcer  (niaouli)
@@ -19193,7 +19193,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is fonct.intell.
 \dialx GO(s) PA
 \ph 'hiÉ³ewo
-\ps v ; n
+\ps v, n
 \ge instruit ; intelligent; connaissance ; intelligence
 \re
 \gb
@@ -19245,7 +19245,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge étoile du matin (lit. signe du jour ; tèèn : jour)
 \poc *PSO khina (Geraghty)
 \sn 2
-\ps verbe
+\ps V
 \ge montrer
 \re montrer
 \gb show
@@ -19357,7 +19357,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is fonct.nat
 \ph hiÎ²aje
 \dialx GOs
-\ps v ; n
+\ps v, n
 \ge sourire
 \re
 \gb
@@ -19377,7 +19377,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve BO 
 \va hipi 
 \ve BO vx
-\ps verbe
+\ps V
 \ge ramasser (nourriture, vêtement)
 \ge entasser
 \re
@@ -19413,7 +19413,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve GO(s) 
 \va hivine
 \ve BO
-\ps v.t
+\ps v.t.
 \ge ignorer; ne pas savoir; ignorer (s')
 \re
 \gb
@@ -19434,7 +19434,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is fonct.intell.
 \ph hiÎ²iÉ³eÎ²o
 \dialx GO(s)
-\ps v.i
+\ps v.i.
 \ge ignorant (être)
 \re
 \gb
@@ -19516,7 +19516,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA
 \va hu-
 \ve BO
-\ps classificateur possessif
+\ps CLF POSS
 \ps n
 \ge nourriture carnée
 \ge ration ; part (de poisson et viande) + sucreries + cachets (PA)
@@ -19625,7 +19625,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va hòòl 
 \ve PA BO
-\ps adverbe locatif
+\ps ADV LOC
 \ge loin ; éloigné; lointain
 \ge longtemps (d'il y a)
 \re
@@ -19697,7 +19697,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va hom
 \ve PA  BO
-\ps v.stat.
+\ps V STAT
 \ge muet
 \rgb
 \de
@@ -19764,7 +19764,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hõ-ã 
 \is locatif
 \dialx BO [BM, Corne]
-\ps adv.
+\ps ADV
 \ge par ici; de ce côté
 \re
 \gb
@@ -20102,7 +20102,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hôno 
 \is maladie
 \dialx GO(s) PA
-\ps v. statif
+\ps V STAT
 \ge malade (gravement)
 \ge allité
 \re
@@ -20153,7 +20153,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is locatif
 \dialx BO (BM, Corne)
 \ph hÉ”ÌƒÉ”ÌƒÌƒli
-\ps locatif
+\ps LOC
 \ge de l'autre côté
 \re
 \gb
@@ -20299,7 +20299,7 @@ la paille; plus petites que 'ce-mwa');
 \ve PA BO WEM
 \va hava
 \ve PA BO
-\ps v; préposition
+\ps v; PREP
 \ge arriver ; arrivé (courrier) ; jusqu'à
 \re
 \gb
@@ -20343,7 +20343,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s)
 \va havha-da
 \ve PA
-\ps conjonction
+\ps CONJ
 \ge jusqu'à ce que
 \re
 \gb
@@ -20384,7 +20384,7 @@ la paille; plus petites que 'ce-mwa');
 \ve PA BO
 \va hopo
 \ve GO vx
-\ps v ; n
+\ps v, n
 \ge manger (générique); nourriture (générique)
 \ge chiquer (tabac) [BO]
 \ge fumer (tabac) [BO]
@@ -20536,7 +20536,7 @@ la paille; plus petites que 'ce-mwa');
 \lx hoxe
 \is grammaire_aspect
 \dialx GO(s) PA
-\ps aspect itératif
+\ps ITER
 \ge encore ; à nouveau
 \re
 \gb
@@ -20554,7 +20554,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_quantificateur
 \dialx GO(s) BO
 \ph hoÉ£É›:
-\ps quantificateur
+\ps QUANT
 \ge peu; quelques; quelques
 \re
 \gb
@@ -20578,7 +20578,7 @@ la paille; plus petites que 'ce-mwa');
 \lx hô-xe
 \is classificateur numérique
 \dialx GO(s)  PA
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur: un morceau (pastèque, fruit, igname, etc.)
 \re
 \gb
@@ -20660,7 +20660,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_agent
 \dialx BO (BM)
 \hm 3
-\ps marque d'agent
+\ps AGT
 \ge agent
 \re
 \gb
@@ -20709,7 +20709,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) PA BO
 \va whuu
 \ve GO(s)
-\ps v ; n
+\ps v, n
 \sn 1
 \is nourriture
 \is action_corps
@@ -20836,7 +20836,7 @@ la paille; plus petites que 'ce-mwa');
 \lx hu-da
 \is grammaire_directionnel
 \dialx GOs
-\ps suffixe directionnel
+\ps SUFF DIR
 \ge en montant (suppose un déplacement)
 \gb
 \rgb
@@ -20867,7 +20867,7 @@ la paille; plus petites que 'ce-mwa');
 \lx hu-du
 \is grammaire_directionnel
 \dialx GOs
-\ps suffixe directionnel
+\ps SUFF DIR
 \ge en descendant
 \gb
 \rgb
@@ -20884,7 +20884,7 @@ la paille; plus petites que 'ce-mwa');
 \is caract.objet
 \dialx GO(s)
 \hm 1
-\ps v.stat.
+\ps V STAT
 \ge épais
 \re
 \gb
@@ -20956,7 +20956,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_direction
 \ph hÅ©-mi
 \dialx GO(s)
-\ps suffixe directionnel
+\ps SUFF DIR
 \ge près d'égo
 \re
 \gb
@@ -21009,7 +21009,7 @@ la paille; plus petites que 'ce-mwa');
 \lx hu-ò
 \is grammaire_directionnel
 \dialx GOs
-\ps suffixe directionnel
+\ps SUFF DIR
 \ge là-bas (en s'éloignant d'égo)
 \re
 \gb
@@ -21108,7 +21108,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_préposition
 \dialx GO(s)
 \sn 1
-\ps marque de possession indirecte
+\ps POSS IND
 \ge à; pour
 \re
 \gb
@@ -21128,7 +21128,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_pronom
 \hm 2
 \dialx PA
-\ps pronom sujet 3° singulier
+\ps PRON sujet 3° singulier
 \ge il, elle
 \re
 \gb
@@ -21142,7 +21142,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) BO
 \va wi?
 \ve GO(s) BO
-\ps interrogatif statique (humains, pronoms, noms)
+\ps INTER statique (humains, pronoms, noms)
 \ge où ?
 \re
 \gb
@@ -21166,7 +21166,7 @@ la paille; plus petites que 'ce-mwa');
 \lx -î
 \is grammaire_pronom
 \dialx GO BO
-\ps possessif 1° duel inclusif
+\ps POSS 1° duel inclusif
 \ge nos (2  incl.)
 \re
 \gb
@@ -21222,7 +21222,7 @@ la paille; plus petites que 'ce-mwa');
 \lx -îî
 \is grammaire_pronom
 \dialx GO(s) PA
-\ps pronom objet (ou) possessif 1° pers. duel inclusif 
+\ps PRON OBJ (ou) POSS 1° pers. duel inclusif 
 \ge nous 2 (incl.)
 \re
 \gb
@@ -21236,7 +21236,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) BO 
 \va hia
 \ve PA
-\ps interrogatif statique
+\ps INTER statique
 \ge où ?; quel ?
 \re
 \gb
@@ -21295,7 +21295,7 @@ la paille; plus petites que 'ce-mwa');
 \ve PA
 \va iciibii
 \ve vx
-\ps pronom indépendant 1°  pers. duel exclusif
+\ps PRON INDEP 1°  pers. duel exclusif
 \ge nous2 (excl.)
 \re
 \gb
@@ -21314,7 +21314,7 @@ la paille; plus petites que 'ce-mwa');
 \ve PA BO
 \va eyo
 \ve BO
-\ps pronom indépendant 2° personne singulier
+\ps PRON INDEP 2° personne singulier
 \ge toi
 \re
 \gb
@@ -21351,7 +21351,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ida ???
 \is grammaire_restrictif
 \dialx BO
-\ps restrictif
+\ps RESTR
 \ge seul
 \re
 \gb
@@ -21379,7 +21379,7 @@ la paille; plus petites que 'ce-mwa');
 \xn génération, lignée
 \sn 2
 \is classificateur numérique
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur : rangée (d'ignames, poteaux, etc.)
 \xv îdò-xe, îdo-tru, îdo-ko, îdo-pa îdò-kui, etc.
 \xn 1, 2, 3, 4, 5 rangée d'ignames
@@ -21393,7 +21393,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) BO PA
 \va iye
 \dialx PA
-\ps pronom indépendant 3°  pers.
+\ps PRON INDEP 3°  pers.
 \ge elle ; lui
 \re
 \gb
@@ -21412,7 +21412,7 @@ la paille; plus petites que 'ce-mwa');
 \is interpellation
 \ph ÌƒijÉ›:
 \dialx GO(s)
-\ps interjection
+\ps INTJ
 \ge eh ! la femme !
 \re
 \gb
@@ -21427,7 +21427,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_pronom
 \ph indjÉ›-É”li
 \dialx GO(s)
-\ps pronom DX3 3°  pers.
+\ps PRON DX3 3°  pers.
 \ge elle (au loin)
 \re
 \gb
@@ -21444,7 +21444,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ijò
 \is grammaire_pronom
 \dialx GO(s)
-\ps pronom indépendant 2° personne duel
+\ps PRON INDEP 2° personne duel
 \ge vous 2
 \re
 \gb
@@ -21458,7 +21458,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ilaa
 \is grammaire_pronom
 \dialx GO(s) PA
-\ps pronom indépendant 3°  pers.pluriel 
+\ps PRON INDEP 3°  pers.pluriel 
 \ge eux, elles
 \re
 \gb
@@ -21473,7 +21473,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ila-e
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom DX2 3°  pers. féminin pluriel
+\ps PRON DX2 3°  pers. féminin pluriel
 \ge elles-là
 \re
 \gb
@@ -21491,7 +21491,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ila-lhãã-ba 
 \is grammaire_démonstratif
 \dialx GO(s) PA BO
-\ps pronom DX2 3°  pers. pluriel
+\ps PRON DX2 3°  pers. pluriel
 \ge voilà (les) là-bas (où je montre)
 \re
 \gb
@@ -21509,7 +21509,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ila-lhãã-òli
 \is grammaire_pronom
 \dialx GO(s)
-\ps pronom DX3 3°  pers. féminin pluriel
+\ps PRON DX3 3°  pers. féminin pluriel
 \ge eux/elles là-bas
 \re
 \gb
@@ -21525,7 +21525,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_pronom
 \hm 1
 \dialx GO(s) PA 
-\ps pronom indépendant 3°  pers. duel
+\ps PRON INDEP 3°  pers. duel
 \ge eux2
 \re
 \gb
@@ -21588,7 +21588,7 @@ la paille; plus petites que 'ce-mwa');
 \lx ilò 
 \is grammaire_pronom
 \dialx GO(s)
-\ps pron. indépendant 3° triel (ou) paucal
+\ps PRON INDEP 3° triel (ou) paucal
 \ge eux 3 ; eux (petit groupe)
 \re
 \gb
@@ -21621,7 +21621,7 @@ la paille; plus petites que 'ce-mwa');
 
 \lx imala ???
 \dialx BO [Corne]
-\ps démonstratif
+\ps DEM
 \ge ceux-ci
 \re
 \gb
@@ -21653,7 +21653,7 @@ la paille; plus petites que 'ce-mwa');
 \ph ime 
 \va icòme 
 \ve vx
-\ps pronom indépendant 1° triel exclusif
+\ps PRON INDEP 1° triel exclusif
 \ge nous 3 excl
 \re
 \gb
@@ -21711,7 +21711,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) PA
 \va inu
 \ve PA BO
-\ps pronom indépendant 1° pers.
+\ps PRON INDEP 1° pers.
 \ge moi
 \re
 \gb
@@ -21723,7 +21723,7 @@ la paille; plus petites que 'ce-mwa');
 \lx iò
 \is temps
 \dialx GO(s) PA BO
-\ps adverbe
+\ps ADV
 \ge bientôt; tout à l'heure (à) (futur ou passé)
 \re
 \gb soon, a moment ago
@@ -21750,7 +21750,7 @@ la paille; plus petites que 'ce-mwa');
 \is grammaire_pronom
 \dialx GO(s)
 \ph iÉ”Ìƒ
-\ps pronom indépendant 1° personne triel inclusif
+\ps PRON INDEP 1° personne triel inclusif
 \ge nous 3 incl.; nous paucal
 \re
 \gb
@@ -21762,7 +21762,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s)
 \va iò-gòl 
 \ve WEM WE PA BO
-\ps adv.
+\ps ADV
 \ge tout-à-l'heure (passé)
 \re
 \gb
@@ -21824,7 +21824,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx iva
 \is grammaire_pronom
 \dialx GO(s)
-\ps pronom indépendant 1° personne exclusif pluriel
+\ps PRON INDEP 1° personne exclusif pluriel
 \ge nous (plur. excl.) (forme moderne de izava)
 \re
 \gb
@@ -21857,7 +21857,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx iwa
 \is grammaire_pronom
 \dialx GO(s) PA
-\ps pronom indépendant 2° personne pluriel
+\ps PRON INDEP 2° personne pluriel
 \ge vous (pluriel)
 \re
 \gb
@@ -21873,7 +21873,7 @@ et permettent son écoulement, évitant l'érosion)
 \dialx GO(s)
 \va icòòwe
 \ve vx
-\ps pronom indépendant 2° triel 
+\ps PRON INDEP 2° triel 
 \ge vous 3
 \re
 \gb
@@ -21887,7 +21887,7 @@ et permettent son écoulement, évitant l'érosion)
 \dialx BO PA
 \va eyo
 \ve BO
-\ps pronom indépendant 2° sg
+\ps PRON INDEP 2° sg
 \ge toi
 \re
 \gb
@@ -21903,7 +21903,7 @@ et permettent son écoulement, évitant l'érosion)
 \dialx PA
 \va iyãã
 \ve BO
-\ps pronom indépendant 1°  pers. pluriel exclusif
+\ps PRON INDEP 1°  pers. pluriel exclusif
 \ge nous (plur. excl.)
 \re
 \gb
@@ -21923,7 +21923,7 @@ et permettent son écoulement, évitant l'érosion)
 \ve GO(s)
 \va za
 \ve PA
-\ps pronom indépendant 1° exclusif pluriel
+\ps PRON INDEP 1° exclusif pluriel
 \ge nous (excl) (forme ancienne)
 \re
 \gb
@@ -21940,7 +21940,7 @@ et permettent son écoulement, évitant l'érosion)
 \is grammaire_pronom
 \dialx GO(s)
 \ph iÃ°awa
-\ps pronom indépendant 2°  pluriel
+\ps PRON INDEP 2°  pluriel
 \ge vous (forme ancienne)
 \re
 \gb
@@ -21955,7 +21955,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx izòò
 \is grammaire_pronom
 \dialx PA BO
-\ps pronom indépendant 2°  pers. pluriel 
+\ps PRON INDEP 2°  pers. pluriel 
 \ge vous (plur.)
 \re
 \gb
@@ -22154,7 +22154,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \gb
 \rgb
 \sn 2
-\ps modificateur
+\ps MODIF
 \ge ferme; dur; solide
 \re
 \gb
@@ -22256,7 +22256,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx jara
 \is grammaire_modalité
 \dialx GOs
-\ps modalité
+\ps MODAL
 \ge pas du tout
 \re
 \gb
@@ -22363,7 +22363,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \hm 2
 \is grammaire_démonstratif
 \dialx PA BO
-\ps démonstratif anaphorique
+\ps DEM anaphorique
 \ge ce-là
 \re
 \gb
@@ -22380,7 +22380,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 
 \lx -je
 \is grammaire_pronom
-\ps pronom objet 3° personne singulier
+\ps PRON objet 3° personne singulier
 \ge le, la
 \re
 \gb
@@ -22413,7 +22413,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx je-ba
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps pronom déictique Dx2 latéral
+\ps PRON déictique Dx2 latéral
 \ge celle-là (sur le côté, latéralement)
 \re
 \gb
@@ -22475,7 +22475,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dialx GO(s)
 \va jene
 \ve PA  BO
-\ps DX2 ; anaphorique ; assertif 
+\ps DX2 ; ANAPH ; ASS 
 \ge ce-là; voilà; c'est cela !
 \ge c'est cela ; exactement ; tout à fait
 \re
@@ -22494,7 +22494,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx je-ò
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps pronom déictique ou anaphorique Dx3
+\ps PRON DEICT ou ANAPH Dx3
 \ge celle-là
 \re
 \gb
@@ -22556,7 +22556,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx ji-a 
 \is grammaire_interrogatif
 \dialx GO(s) BO
-\ps pronom interrogatif
+\ps PRON INTER
 \ge le(s)quel(s) ?
 \re
 \gb
@@ -22659,7 +22659,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx ji-li
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps déictique DX3
+\ps DEICT DX3
 \ge cela (éloigné, invisible mais audible)
 \re
 \mr je-ili
@@ -22739,7 +22739,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dialx GO(s)
 \va je-nim, ji-nim
 \ve PA
-\ps démonstratif médial ou proche
+\ps DEM médial ou proche
 \ge cela
 \ge cela (péjoratif, mis à distance) [PA]
 \re
@@ -22875,7 +22875,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx jiu
 \is grammaire_quantificateur
 \dialx GO(s)
-\ps quantificateur
+\ps QUANT
 \va jiu-n 
 \ve PA BO [BM]
 \ge complètement; totalement; tout; ensemble
@@ -22902,7 +22902,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dialx GO(s) PA BO
 \va jipwa 
 \ve GO(s)
-\ps quantificateur
+\ps QUANT
 \ge tous; tout le monde; totalité ; quelques ; plusieurs
 \re
 \gb
@@ -22970,7 +22970,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dialx GO(s) BO
 \va ço
 \ve GO(s) 
-\ps connecteur
+\ps CONN
 \ge et après; puis
 \re
 \rgb
@@ -23022,7 +23022,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \lx -jò
 \is grammaire_pronom
 \dialx GO(s)
-\ps pronom objet ou possessif 2°  personne duel 
+\ps PRON objet ou possessif 2°  personne duel 
 \ge vous2 ; vos
 \re
 \gb
@@ -23154,7 +23154,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \lx ju-la
 \is fonct.intell.
 \dialx BO [BM]
-\ps verbe
+\ps V
 \ge compter ; nombre 
 \re
 \gb
@@ -23254,7 +23254,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \va ko
 \ve GO(s)
 \sn 1
-\ps coordination
+\ps COORD
 \ge et alors ; et aussi ; et en même temps
 \re
 \gb
@@ -23264,7 +23264,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \xv e trêê ka wa
 \xn il court en chantant (et aussi chante)
 \sn 2
-\ps relatif
+\ps RELT
 \ge qui, que
 \re
 \gb
@@ -23396,7 +23396,7 @@ tambour
 \dialx GOs PA
 \va ka
 \ve GOs PA
-\ps ??
+\ps
 \ge intensificateur ?
 \re
 \gb
@@ -23484,7 +23484,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kha-
 \is grammaire_distributif
 \dialx GO(s) PA BO
-\ps distributif
+\ps DISTR
 \ge chaque; chacun (+ numéral)
 \re
 \gb
@@ -23653,7 +23653,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kha-axe
 \is grammaire_quantificateur
 \dialx GO(s)
-\ps distributif
+\ps DISTR
 \ge chacun(e)
 \re
 \gb
@@ -23855,7 +23855,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx khaabu
 \is fonct.nat
 \dialx GO(s) BO 
-\ps v.statif
+\ps V STAT
 \ge froid (avoir)
 \re
 \gb cold (be)
@@ -23935,7 +23935,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GO(s)
 \va kaya
 \ve PA BO
-\ps n ; locatif
+\ps n ; LOC
 \ge derrière
 \ge arrière (qqch, inanimé)
 \ge après
@@ -24448,7 +24448,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GOs
 \va khagebwan
 \ve PA
-\ps verbe
+\ps V
 \ge laisser 
 \ge abandonner
 \ge rejeter 
@@ -24512,7 +24512,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ph kÉ›Ìƒgu
 \va kãgun
 \ve BO PA
-\ps n; v
+\ps v, n
 \ge esprit; âme
 \ge qqn à qui on est très attaché
 \ge suivre qqn comme son ombre
@@ -24590,7 +24590,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \hm 1
 \is grammaire_préposition
 \dialx GO(s) PA
-\ps associatif
+\ps ASSOC
 \ge avec (lit. derrière + animé)
 \re
 \gb with
@@ -24612,7 +24612,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \is corps
 \is locatif
 \dialx GO(s)  BO PA
-\ps nom locatif
+\ps N LOC
 \ge dos
 \ge derrière
 \ge dans le dos
@@ -24682,7 +24682,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GO(s)
 \va khaimode
 \ve BO
-\ps nom ; v. statif
+\ps nom ; V STAT
 \ge résolution; résolu; définitif (être); définitivement
 \re
 \gb
@@ -24769,7 +24769,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kake
 \is grammaire_conjonction
 \dialx GO
-\ps conjonction
+\ps CONJ
 \ge quoique
 \re
 \gb
@@ -25023,7 +25023,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kalòya 
 \is jeu
 \dialx GO(s)
-\ps n ; v
+\ps v, n
 \ge corde à sauter ; sauter à la corde
 \re
 \gb
@@ -25048,7 +25048,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xv phaa-kaalu-je [PA]
 \xn fais-le tomber !
 \sn 2
-\ps n ; v
+\ps v, n
 \ge accident ; avoir un accident
 \re
 \gb
@@ -25125,7 +25125,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kâm ???
 \dialx GO
-\ps verbe
+\ps V
 \ge éloigner
 \re
 \gb
@@ -25138,7 +25138,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kama ???
 \dialx GO
-\ps conjonction
+\ps CONJ
 \ge mais
 \re
 \gb
@@ -25157,7 +25157,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GO(s)
 \va maaxèè ???
 \dialx BO
-\ps v. statif; adverbe
+\ps V STAT; ADV
 \ge lent
 \re
 \gb
@@ -25227,7 +25227,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kamwe ?
 \is grammaire_interrogatif
 \dialx GO(s) BO
-\ps verbe interrogatif
+\ps V INTER
 \ge que faire ?
 \re
 \gb
@@ -25246,7 +25246,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ve GO(s) BO
 \va kamweli
 \ve BO
-\ps v. interrogatif
+\ps V INTER
 \ge comment faire ?; que faire (être comment?); faire ainsi
 \re
 \gb
@@ -25268,7 +25268,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \is fonct.intell.
 \ph ka:'mweÉ³i
 \dialx GO(s)
-\ps verbe
+\ps V
 \ge comprendre; sage 
 \re
 \gb
@@ -25401,7 +25401,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \sge apporter ici en courant
 \sn 2
 \is grammaire_préposition
-\ps préposition
+\ps PREP
 \ge avec; ensemble
 \re
 \gb
@@ -25412,7 +25412,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 
 \lx khapi??
 \dialx GO
-\ps verbe
+\ps V
 \ge blesser (se) (en heurtant qqch)
 \re
 \gb
@@ -25426,7 +25426,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx ka-poxe
 \is grammaire_distributif
 \dialx GO(s)
-\ps distributif
+\ps DISTR
 \ge un par un
 \re
 \gb
@@ -25536,7 +25536,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kharu-heela
 \is mouvement
 \dialx PA BO
-\ps v ; n
+\ps v, n
 \ge déraper
 \ge glisser sur une glissoire
 \ge glissoire aménagée par les enfants sur une pente mouillée
@@ -25654,7 +25654,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ve PA
 \va katia
 \ve BO
-\ps n ; v
+\ps v, n
 \ge lèpre ; lépreux ; avoir la lèpre
 \re
 \gb
@@ -25910,7 +25910,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \is mouvement
 \ph khau-da
 \dialx GO(s) PA BO
-\ps verbe
+\ps V
 \ge passer par dessus (montagne) ; passer d'une vallée à l'autre
 \ge enjamber
 \re
@@ -26007,7 +26007,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \is action.plantes
 \hm 2
 \dialx GO haudr
-\ps verbe
+\ps V
 \ge cueillir (des fleurs, des herbes magiques)
 \re
 \gb
@@ -26165,7 +26165,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ve PA
 \va kapoa
 \ve vx
-\ps négation
+\ps NEG
 \ge ne...pas
 \re
 \gb
@@ -26207,7 +26207,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kavwö ... gò
 \is grammaire_aspect
 \dialx GO(s)
-\ps aspect
+\ps ASP
 \ge pas encore
 \re
 \gb
@@ -26223,7 +26223,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kavwö ... mwa
 \is grammaire_aspect
 \dialx GO(s)
-\ps aspect révolu
+\ps ASP révolu
 \ge ne ... plus
 \re
 \gb
@@ -26241,7 +26241,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kavwö ... nre  ... gò
 \is grammaire_aspect
 \dialx GO(s)
-\ps aspect
+\ps ASP
 \ge encore jamais ; jamais
 \re
 \gb
@@ -26257,7 +26257,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kavwö ... nee ... taagin 
 \is grammaire_aspect
 \dialx PA BO [Corne]
-\ps aspect
+\ps ASP
 \ge encore jamais ; jamais
 \re
 \gb
@@ -26312,7 +26312,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx khawali
 \is caract.objet_taille
 \dialx GO(s) PA 
-\ps v. statif
+\ps V STAT
 \ge long (verticalement : arbre, personne)
 \re
 \gb
@@ -26330,7 +26330,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \lx kawaang
 \is temps
 \dialx PA BO [Corne]
-\ps adv.
+\ps ADV
 \ge tôt le matin; de bon matin
 \re
 \gb
@@ -26405,7 +26405,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 
 \lx kaxe ???
 \is
-\ps conjonction
+\ps CONJ
 \ge tandis que; pendant
 \rgb
 \de
@@ -26602,7 +26602,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ve PA BO
 \va khatia
 \ve BO ??
-\ps locatif
+\ps LOC
 \ge près (être) ; auprès ; à côté de 
 \re
 \gb
@@ -26705,7 +26705,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dialx PA
 \va kee
 \ve PA
-\ps classificateur
+\ps CLF
 \ge préfixe des paniers
 \re
 \gb
@@ -26794,7 +26794,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \is action_corps
 \hm 1
 \dialx GO(s)
-\ps verbe
+\ps V
 \ge écoper
 \ge pelleter
 \re
@@ -26921,7 +26921,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ph kÃªbwa
 \va kêbwa-n
 \ve BO
-\ps prohibitif
+\ps PROH
 \ge ne pas falloir
 \re
 \gb
@@ -27346,7 +27346,7 @@ grand que "keruau")
 \dialx GO(s) PA
 \va kêmi
 \ve PA BO
-\ps verbe
+\ps V
 \sn 1
 \is action_corps
 \ge enterrer qqch; mettre en terre
@@ -27437,7 +27437,7 @@ grand que "keruau")
 \is interaction
 \dialx GO(s)
 \ph khÃªÉ³i
-\ps verbe
+\ps V
 \va kheni
 \ve PA BO
 \ge envoyer qqn faire qqch.; ordonner
@@ -27489,7 +27489,7 @@ grand que "keruau")
 \va kênõng
 \dialx BO PA
 \ph kÉ›ÌƒnÉ”ÌƒÅ‹
-\ps verbe; n
+\ps V; n
 \sn 1
 \is action
 \ge tourner; retourner; retourner (se); poser à l'envers;
@@ -27820,7 +27820,7 @@ grand que "keruau")
 \lx kèxi
 \dialx BO [Corne]
 \is grammaire_conjonction
-\ps coordination
+\ps COORD
 \ge et ensuite; et alors
 \re
 \gb
@@ -27871,7 +27871,7 @@ grand que "keruau")
 \dialx GO(s)
 \va kil
 \ve PA
-\ps n; v
+\ps v, n
 \ge douleur;  faire mal
 \re
 \gb pain
@@ -27947,7 +27947,7 @@ grand que "keruau")
 \is grammaire_modalité
 \hm 1
 \dialx GO(s) PA BO WEM
-\ps adv. atténuatif (d'un ordre) (forme de politesse); ponctuel
+\ps ADV ATTEN (d'un ordre) (forme de politesse); ponctuel
 \ge un peu [GOs]; un coup; bref
 \re
 \gb
@@ -28050,7 +28050,7 @@ grand que "keruau")
 \va khia
 \ve BO [BM]
 \hm 1
-\ps v ; n 
+\ps v, n 
 \ge appliquer (médicament) ; traiter
 \ge médicament ; remède
 \re
@@ -28317,7 +28317,7 @@ grand que "keruau")
 \is santé
 \is corps
 \dialx GO(s) BO
-\ps v ; n
+\ps v, n
 \ge gonfler ; enfler (membre)
 \ge ganglion
 \ge bosse
@@ -28400,7 +28400,7 @@ grand que "keruau")
 \is action_corps
 \dialx BO
 \ve
-\ps verbe
+\ps V
 \ge pousser; précipiter qqch dans
 \re
 \gb
@@ -28455,7 +28455,7 @@ grand que "keruau")
 \ve PA BO
 \va khia
 \ve BO
-\ps v ; n
+\ps v, n
 \ge jaloux (être); jalouser; jalousie
 \re
 \gb
@@ -28511,7 +28511,7 @@ grand que "keruau")
 \is fonct.nat
 \hm 2
 \dialx GO(s) WEM PA BO
-\ps v; n
+\ps v, n
 \ge rire ; sourire
 \gb laugh; smile
 \rgb
@@ -28574,7 +28574,7 @@ grand que "keruau")
 
 \lx khî-kui
 \dialx GO(s) PA BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is nourriture_cuisson
 \ge griller, cuire au feu les prémices des ignames
@@ -28710,7 +28710,7 @@ grand que "keruau")
 \lx khilò
 \is eau_action
 \dialx GO(s) BO
-\ps verbe
+\ps V
 \ge couler goutte à goutte ; fuir
 \re
 \gb
@@ -28762,7 +28762,7 @@ grand que "keruau")
 \va khimòn
 \ve BO PA
 \ph kÊ°imÉ”n
-\ps v. statif
+\ps V STAT
 \ge sourd
 \re
 \gb
@@ -28860,7 +28860,7 @@ grand que "keruau")
 \dialx PA BO 
 \va khinõ
 \ve WE
-\ps v; n
+\ps v, n
 \ge transpirer; transpiration; sueur
 \re
 \gb
@@ -28894,7 +28894,7 @@ grand que "keruau")
 \hm 1
 \ph kÊ°iÉ³u
 \dialx GO(s) PA BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is maladie
 \ge malade ; maladie
@@ -29047,7 +29047,7 @@ grand que "keruau")
 
 \lx kito ???
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge sain
 \re
 \gb
@@ -29101,7 +29101,7 @@ grand que "keruau")
 \ph kiÎ²i
 \va kivhi
 \ve PA BO
-\ps verbe
+\ps V
 \ge fermer ; boucher ; couvrir (boîte, marmite)
 \ge empêcher de (parler)
 \re
@@ -29127,7 +29127,7 @@ grand que "keruau")
 \ve PA BO
 \va kiaxa; cixa
 \ve
-\ps prédicat négation
+\ps PRED NEG
 \ge il n'y a pas ; rien ; sans
 \re
 \gb nothing
@@ -29175,7 +29175,7 @@ grand que "keruau")
 \lx kixa khôôme
 \is grammaire_aspect, modalité
 \dialx GO(s)
-\ps restrictif ; aspect
+\ps RESTR ; aspect
 \ge ne faire que ; n'avoir jamais assez de 
 \re
 \gb
@@ -29206,7 +29206,7 @@ grand que "keruau")
 \is grammaire_négation_existentiel
 \dialx
 \va kiaxa ne
-\ps négation
+\ps NEG
 \ge personne (il n'y a) ; rien
 \rgb
 \de
@@ -29293,7 +29293,7 @@ grand que "keruau")
 \dialx GOs
 \va xo, ka
 \ve GO(s)
-\ps coordination
+\ps COORD
 \ge et
 \re
 \gb
@@ -29328,7 +29328,7 @@ grand que "keruau")
 \hm 4
 \dialx GO(s)
 \va kavwö 
-\ps négation
+\ps NEG
 \ge ne ... pas
 \re
 \gb
@@ -29407,7 +29407,7 @@ grand que "keruau")
 \ph kÉ”
 \va -kòn
 \ve PA BO
-\ps numéral
+\ps NUM
 \ge trois
 \re
 \gb
@@ -29419,7 +29419,7 @@ grand que "keruau")
 \is position
 \hm 1
 \dialx GO(s) PA BO
-\ps préfixe indiquant une position couchée
+\ps PREF indiquant une position couchée
 \ge couché
 \xv kô-xea [GOs, PA]
 \xn s'allonger, se reposer, faire un petit somme
@@ -29622,7 +29622,7 @@ grand que "keruau")
 \is caract.objet
 \hm 2
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge calme; paisible (temps, atmosphère, personne)
 \re
 \gb
@@ -29698,7 +29698,7 @@ grand que "keruau")
 \lx ko ia ?
 \is grammaire_interrogatif
 \dialx GO(s)
-\ps interrogatif
+\ps INTER
 \ge à quel endroit ?
 \re
 \gb
@@ -29766,7 +29766,7 @@ grand que "keruau")
 \lx kô-bazòò
 \is position
 \dialx GO(s) BO
-\ps verbe
+\ps V
 \ge en travers ; couché en travers (de l'entrée, d'un lit, etc.)
 \re
 \gb
@@ -29848,7 +29848,7 @@ grand que "keruau")
 \gb say
 \rgb
 \sn 2
-\ps conjonction (complémentation)
+\ps CONJ (complémentation)
 \ge que; quotatif; marque d'incertitude
 \re
 \xv i khobwi cai nu khobwe a kila Kavo 
@@ -30151,7 +30151,7 @@ grand que "keruau")
 \dialx GO(s) BO
 \va kòe, koi
 \ve PA
-\ps prédicat négatif (humain) 
+\ps PRED NEG (humain) 
 \ge absent; ne pas/plus être là; manquer; sans
 \re
 \gb
@@ -30421,7 +30421,7 @@ grand que "keruau")
 \dialx GO(s)
 \va kòladuun
 \ve BO
-\ps v. statif
+\ps V STAT
 \ge maigre; maigrir
 \ge déperir
 \re
@@ -30498,7 +30498,7 @@ grand que "keruau")
 \is mouvement
 \is action_mains
 \dialx GO(s) BO PA
-\ps verbe
+\ps V
 \ge toucher (avec la main)
 \ge serrer
 \re
@@ -30576,7 +30576,7 @@ grand que "keruau")
 \xv kòli we [GO]
 \xn la rive, berge
 \sn 2
-\ps locatif
+\ps LOC
 \ge près de; bord de (au) (très proche)
 \re
 \gb
@@ -30616,7 +30616,7 @@ grand que "keruau")
 \lx kòli kaze
 \is topographie
 \dialx GO(s)
-\ps n ; locatif
+\ps n ; LOC
 \ge bord de mer
 \re
 \gb
@@ -30631,7 +30631,7 @@ grand que "keruau")
 \lx kòli we-za
 \is topographie
 \dialx PA
-\ps locatif
+\ps LOC
 \ge bord de mer (au)
 \re
 \gb
@@ -30691,7 +30691,7 @@ grand que "keruau")
 \rgb
 \sn 2
 \is locatif
-\ps locatif
+\ps LOC
 \ge près de ; à ; chez ; vers; auprès de; de l'autre côté de
 \xv kòlò-m [PA], kòlò-jo [GO]
 \xn près de toi
@@ -30728,7 +30728,7 @@ grand que "keruau")
 \se kolo-ny [PA]
 \sge chez moi
 \sn 3
-\ps marque de bénéficiaire
+\ps BENEF
 \ge à, pour
 \xv hulò kòlò Peiva [PA]
 \xn mon présent coutumier à Peiva
@@ -30877,7 +30877,7 @@ grand que "keruau")
 \dialx GO(s)
 \va kõmõgin 
 \ve BO
-\ps quantificateur
+\ps QUANT
 \ge entier
 \ge entier; rond ???; en boule ??? (Dubois)
 \re
@@ -30925,7 +30925,7 @@ grand que "keruau")
 \hm 1
 \dialx GO(s)  PA BO
 \ph kho:ne
-\ps verbe
+\ps V
 \ge porter sur l'épaule ; chargé
 \re
 \gb
@@ -31007,7 +31007,7 @@ grand que "keruau")
 \dialx WEM WE 
 \va kònôôl 
 \ve BO
-\ps v. statif
+\ps V STAT
 \ge maladroit; gauche; pas débrouillard
 \re
 \gb
@@ -31063,7 +31063,7 @@ grand que "keruau")
 \ph kÉ”ÌƒnÉ”ÌƒbÉ”n
 \va kõnõ-bòn
 \ve PA BO
-\ps adverbe
+\ps ADV
 \ge hier
 \re
 \gb
@@ -31373,7 +31373,7 @@ grand que "keruau")
 \ph kÃ´É½a:
 \is grammaire_modalité
 \dialx GO(s) PA BO
-\ps v. impersonnel
+\ps V IMPERS
 \ge impossible (lit. couché mal); jamais ; difficile
 \re
 \gb
@@ -31484,7 +31484,7 @@ grand que "keruau")
 \ve GO(s)
 \va kòòlixê 
 \ve GO(s)
-\ps n ; v
+\ps v, n
 \ge colère ; se mettre en colère
 \re
 \gb
@@ -31719,7 +31719,7 @@ grand que "keruau")
 
 \lx koyabu  ???
 \dialx GO
-\ps v. statif ??
+\ps V STAT
 \ge malheureux; être en peine
 \re
 \gb
@@ -31756,7 +31756,7 @@ grand que "keruau")
 \va kôzakebi 
 \ve GO
 \sn 1
-\ps verbe
+\ps V
 \ge avoir l'habitude ; sage
 \re
 \gb
@@ -31920,7 +31920,7 @@ grand que "keruau")
 \dialx BO haudr GO
 \va ko
 \ve BO
-\ps marque d'agent
+\ps AGT
 \ge agent
 \re
 \gb
@@ -32014,7 +32014,7 @@ grand que "keruau")
 \is grammaire_aspect
 \hm 6
 \dialx GO(s)
-\ps aspect habituel
+\ps HAB
 \ge habitude
 \re
 \gb
@@ -32166,7 +32166,7 @@ dimwa ; kubwaolè ; kubweena
 \lx kûû-
 \is classificateur nourriture
 \dialx GO(s) PA BO
-\ps Classificateur possessif
+\ps CLF POSS
 \ge part de fruits ou de feuilles
 \re
 \gb
@@ -32187,7 +32187,7 @@ dimwa ; kubwaolè ; kubweena
 \dialx GO(s)
 \va kunô ???
 \ve BO
-\ps locatif ; n
+\ps LOC ; n
 \ge de ce côté-ci
 \ge place
 \re
@@ -32328,7 +32328,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx kubi
 \dialx GO(s) PA BO 
-\ps v ; n
+\ps v, n
 \sn 1
 \is action
 \ge gratter
@@ -32373,7 +32373,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dialx GOs PA BO 
 \va khûbu
 \ve BO
-\ps verbe
+\ps V
 \ge frapper; tuer
 \re
 \gb
@@ -32468,7 +32468,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \va ku-caaxò
 \ph ku-'ca:É£É”
 \ve PA BO
-\ps v.i
+\ps v.i.
 \ge cacher (se) 
 \ge réfugier (se)
 \re
@@ -32535,7 +32535,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ph kundÉ”
 \va kido
 \ve PA BO WEM WE 
-\ps verbe; nom; classificateur possessif
+\ps V; N; CLF POSS
 \ge boire; boisson
 \re
 \gb
@@ -32596,7 +32596,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dialx GO(s)
 \va kuel, kwel
 \ve BO
-\ps verbe
+\ps V
 \ge refuser; rejeter; désobéir
 \ge détester
 \re
@@ -32660,7 +32660,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \lx kuel
 \is interaction
 \dialx BO PA
-\ps v.i
+\ps v.i.
 \ge rejeter ; refuser ; aimer (ne pas)
 \re
 \gb
@@ -32691,7 +32691,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx kuene ???
 \dialx GO PA
-\ps verbe
+\ps V
 \ge désirer; pouvoir ???
 \re
 \gb
@@ -32726,7 +32726,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \va kô-go
 \ve BO
 \sn 1
-\ps v. statif
+\ps V STAT
 \ge droit; rectiligne
 \re
 \gb
@@ -32968,7 +32968,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \hm 2
 \is eau_action
 \dialx GO(s) BO
-\ps v.i
+\ps v.i.
 \ge couler ;  répandre (se) ; vider (se)
 \re
 \gb
@@ -33015,7 +33015,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s)
 \va kulaye
 \ve PA
-\ps v. statif
+\ps V STAT
 \ge raide (être) ; courbaturé 
 \ge dur (pain) 
 \re
@@ -33300,7 +33300,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx kun-êba
 \is grammaire_direction
 \dialx GO(s)
-\ps locatif 
+\ps LOC 
 \ge là sur le côté ; à cet endroit latéralement
 \re
 \gb
@@ -33315,7 +33315,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx kun-êda 
 \is grammaire_direction
 \dialx GO(s)
-\ps locatif 
+\ps LOC 
 \ge là en haut ; à cet endroit en haut
 \re
 \gb
@@ -33330,7 +33330,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx kun-êdu
 \is grammaire_direction
 \dialx GO(s)
-\ps locatif 
+\ps LOC 
 \ge là en bas ; à cet endroit en bas
 \re
 \gb
@@ -33391,7 +33391,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx kuni-m
 \is grammaire_direction
 \dialx BO [BM]
-\ps locatif 
+\ps LOC 
 \ge là de ton côté
 \re
 \gb
@@ -33561,7 +33561,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ph kuÉ½a (kuÊˆa)
 \va kura
 \ve BO PA
-\ps nom ; v
+\ps N; V
 \ge sang; saigner
 \re
 \gb
@@ -33764,7 +33764,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve PA BO
 \va kûkû
 \ve BO
-\ps verbe
+\ps V
 \ge têter; sucer
 \re
 \gb
@@ -33867,7 +33867,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la
 \is grammaire_article
 \dialx BO 
-\ps article pluriel
+\ps ART PL
 \ge les
 \re
 \gb
@@ -33884,7 +33884,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -laa 
 \is grammaire_pronom
 \dialx GO(s) PA
-\ps pronom objet ou possessif 3° pluriel
+\ps PRON objet ou possessif 3° pluriel
 \ge les ; leur(s)
 \re
 \gb
@@ -33896,7 +33896,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s) PA
 \va le 
 \ve BO
-\ps pronom 3° personne pluriel (sujet)
+\ps PRON 3° personne pluriel (sujet)
 \ge ils
 \re
 \gb
@@ -33921,7 +33921,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \is grammaire_démonstratif
 \dialx GO(s) PA BO
 \va lãã, lã
-\ps déictique pluriel DX1 ou anaphorique
+\ps DEICT PL DX1 ou anaphorique
 \ge ces ... ci 
 \re
 \gb
@@ -33939,7 +33939,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx laa-ba
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps pronom démonstratif pluriel
+\ps PRON DEM PL
 \ge ceux-là là-bas
 \re
 \gb
@@ -33954,7 +33954,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx laa-du
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps déictique pluriel 
+\ps DEICT PL 
 \ge ceux-là en bas 
 \re
 \gb
@@ -33972,7 +33972,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -laeo
 \is grammaire_démonstratif
 \dialx GO
-\ps démonstratif pl
+\ps DEM pl
 \ge -ci (proche du locuteur et loin de l'interlocuteur) Dubois
 \re
 \gb
@@ -34002,7 +34002,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-ida
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps déictique pluriel 
+\ps DEICT PL 
 \ge ceux-là en haut
 \re
 \gb
@@ -34034,7 +34034,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lã-nã
 \is grammaire_démonstratif
 \dialx PA BO
-\ps démonstratif duel DX2 et anaphorique 
+\ps DEM duel DX2 et anaphorique 
 \ge ceux-là 
 \re
 \gb
@@ -34052,7 +34052,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps démonstratif pluriel (DX3)
+\ps DEM PL (DX3)
 \ge ces ... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34090,7 +34090,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-òli
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif DX3 ou anaphorique 
+\ps DEM DX3 ou anaphorique 
 \ge là ; là-bas (visible)
 \re
 \gb
@@ -34140,7 +34140,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx -le
 \is locatif
-\ps locatif
+\ps LOC
 \ge là
 \re
 \gb
@@ -34175,7 +34175,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -li
 \is grammaire_pronom
 \dialx GO PA 
-\ps pronom objet ou possessif 3° pers. duel
+\ps PRON objet ou possessif 3° pers. duel
 \ge les ; leur
 \re
 \gb
@@ -34191,7 +34191,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lhi
 \is grammaire_pronom
 \dialx GO(s) PA
-\ps pronom duel 3° personne (sujet)
+\ps PRON duel 3° personne (sujet)
 \ge ils 
 \re
 \gb
@@ -34208,7 +34208,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-ã
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps déictique duel DX1 ou anaphorique
+\ps DEICT duel DX1 ou ANAPH
 \ge ces deux ... ci
 \re
 \gb
@@ -34231,7 +34231,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s)
 \va li-ã
 \ve BO
-\ps déterminant, démonstratif duel
+\ps DEM duel
 \ge ces deux-ci
 \re
 \gb
@@ -34247,7 +34247,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lie-ba
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps déictique duel DX3 latéralement
+\ps DEICT duel DX3 latéralement
 \ge ces deux là-bas sur le côté
 \re
 \gb
@@ -34266,7 +34266,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve GO(s)
 \va li-ne
 \ve PA
-\ps démonstratif duel DX2 et anaphorique 
+\ps DEM duel DX2 et anaphorique 
 \ge ces deux-là
 \re
 \gb
@@ -34280,7 +34280,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps démonstratif duel (DX3)
+\ps DEM duel (DX3)
 \ge ces deux... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34298,7 +34298,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-òli
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif DX3 ou anaphorique 
+\ps DEM DX3 ou anaphorique 
 \ge là ; là-bas (visible)
 \re
 \gb
@@ -34318,7 +34318,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \is grammaire_pronom
 \dialx GO
 \va mhõ
-\ps pronom 3° triel (sujet, objet, possessif)
+\ps PRON 3° triel (sujet, objet, possessif)
 \ge eux  3
 \re
 \gb
@@ -34330,7 +34330,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -lòò
 \is grammaire_pronom
 \dialx GO
-\ps pronom objet ou possessif  3° triel
+\ps PRON objet ou possessif  3° triel
 \ge eux 3 ; leurs 3
 \re
 \gb
@@ -34342,7 +34342,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s)
 \va zò
 \ve WE
-\ps pronom sujet (aspiré)
+\ps PRON sujet (aspiré)
 \ge eux3 ; eux (paucal)
 \re
 \gb
@@ -34359,7 +34359,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lòlò
 \is grammaire_adverbe
 \dialx GO(s)
-\ps adverbe
+\ps ADV
 \ge au hasard ; sans but
 \re
 \gb
@@ -34381,7 +34381,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s)
 \va lòloi
 \ve BO PA
-\ps v ; n
+\ps v, n
 \ge couper en lamelles ; préparation à base d'igname coupées en fines rondelles
 \re
 \gb
@@ -34428,7 +34428,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -m
 \is grammaire_pronom
 \dialx BO PA
-\ps suff. possessif 2° pers.
+\ps SUFF POSS 2° pers.
 \ge ton ; ta ; tes
 \re
 \gb
@@ -34463,7 +34463,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \hm 1
 \dialx GO(s) PA  BO
 \ph mÌ£Ã¦Ìƒ
-\ps n; v. statif
+\ps v, n. statif
 \sn 1
 \is étapes.vie
 \ge mort ; mourir
@@ -34512,7 +34512,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \is grammaire_conjonction
 \hm 2
 \dialx GO(s) PA BO
-\ps conj.
+\ps CONJ
 \ge avec; et; aussi
 \ge car; parce que
 \ge pour que
@@ -34662,7 +34662,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xv mhã-wa mwa
 \xn ligature pour la maison
 \sn 2
-\ps verbe
+\ps V
 \ge attacher (la paille aux chevrons)
 \re
 \gb
@@ -34712,7 +34712,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ph mÌ£Ã¦Ìƒ:
 \dialx GO(s) PA BO 
 \hm 3
-\ps intensificateur
+\ps INTENS
 \ge plus; beaucoup
 \ge très ; trop
 \re
@@ -34804,7 +34804,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx ma nye
 \is grammaire_conjonction
 \dialx GO(s)
-\ps conj.
+\ps CONJ
 \ge parce que ; du fait que
 \re
 \gb
@@ -34866,7 +34866,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx BO PA
 \va mara
 \ve PA BO
-\ps inchoatif, en cours
+\ps INCH, en cours
 \ge venir de ; commencer ; depuis
 \re
 \gb
@@ -34948,7 +34948,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s) 
 \va mãi-
 \ve PA BO
-\ps classificateur numérique des lots (fête de la nouvelle igname, contexte cérémoniel)
+\ps CLF NUM des lots (fête de la nouvelle igname, contexte cérémoniel)
 \ge lot de 3 ignames; de 4 taros ou de 4 noix de coco
 \re
 \gb
@@ -34991,7 +34991,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx mãè-nira ?
 \is grammaire_interrogatif
 \dialx BO
-\ps interrogatif
+\ps INTER
 \ge combien de paquets de 3 (ignames, etc.)
 \re
 \gb
@@ -35005,7 +35005,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx mãè-xè 
 \is classificateur numérique
 \dialx GO(s)  BO
-\ps classificateur numéral (pour compter des paquets d'ignames
+\ps CLF NUM (pour compter des paquets d'ignames
 constitués de trois ignames)
 \ge un paquet (de trois ignames)
 \re
@@ -35155,7 +35155,7 @@ constitués de trois ignames)
 
 \lx mahapa ???
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge lisse
 \re
 \gb
@@ -35173,7 +35173,7 @@ constitués de trois ignames)
 \lx mhãi-
 \is classificateur numérique
 \dialx GO(s) PA BO
-\ps n ; classificateur numérique
+\ps n ; CLF NUM
 \ge morceau (de viande, igname coupée) ; part ; fraction
 \re
 \gb
@@ -35231,7 +35231,7 @@ constitués de trois ignames)
 \ve BO [BM]
 \va mee
 \ve PA
-\ps v. statif
+\ps V STAT
 \ge cuit (mal); pas assez cuit (riz, viande)
 \re
 \gb
@@ -35407,7 +35407,7 @@ constitués de trois ignames)
 \lx mãla-
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif pluriel (post-nom)
+\ps DEM PL (post-nom)
 \ge ceux-là
 \re
 \gb
@@ -35474,7 +35474,7 @@ constitués de trois ignames)
 \hm 1
 \is grammaire_quantificateur
 \dialx BO [Corne]
-\ps pronom
+\ps PRON
 \ge les deux
 \re
 \gb
@@ -35491,7 +35491,7 @@ constitués de trois ignames)
 \hm 2
 \is grammaire_démonstratif
 \dialx GO(s) PA
-\ps démonstratif duel (post nom)
+\ps DEM duel (post nom)
 \ge les deux
 \re
 \gb
@@ -35615,7 +35615,7 @@ constitués de trois ignames)
 \dialx GO(s) BO WEM
 \va meni
 \ve PA
-\ps conjonction
+\ps CONJ
 \sn 1
 \is grammaire_préposition
 \ge avec (en compagnie)
@@ -35667,7 +35667,7 @@ constitués de trois ignames)
 \dialx GO(s) WEM BO PA
 \va mãni
 \ve PA 
-\ps v ; n
+\ps v, n
 \ge dormir ; couché (être) ; allongé (être) ; sommeil
 \ge traîner par terre ; éparpiller (PA)
 \cf
@@ -35698,7 +35698,7 @@ constitués de trois ignames)
 \is eau_action
 \hm 3
 \dialx GO
-\ps verbe
+\ps V
 \ge répandre (se) (eau)
 \re
 \gb
@@ -35869,7 +35869,7 @@ constitués de trois ignames)
 \va maûng
 \ve BO
 \ve
-\ps v.statif
+\ps V STAT
 \ge sec (linge, feuille); asséché (rivière)
 \re
 \gb
@@ -36187,7 +36187,7 @@ l'épouse) [lit. sec foyer]
 \dialx PA BO
 \va meya
 \ve PA
-\ps adv.
+\ps ADV
 \ge lent; lentement
 \re
 \gb
@@ -36249,7 +36249,7 @@ l'épouse) [lit. sec foyer]
 \dialx GO(s)
 \va mhara
 \ve PA WEM
-\ps inchoatif
+\ps INCH
 \ge commencer à ; se mettre à ; être la première fois que ; être sur le point de
 \ge venir tout juste de
 \ge en train de [BO]
@@ -36390,7 +36390,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \is grammaire_pronom
 \hm 2
 \dialx GO
-\ps pronom 1° personne triel exclusif (sujet, objet ou possessif)
+\ps PRON 1° personne triel exclusif (sujet, objet ou possessif)
 \ge nous 3 ; nos 3
 \re
 \gb
@@ -36454,7 +36454,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \is grammaire_dérivation
 \hm 2
 \dialx GO(s) BO PA
-\ps préfixe nominalisant
+\ps PREF NMZ
 \ge action de; façon de; fait de
 \re
 \gb
@@ -36547,7 +36547,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \is déplacement
 \hm 1
 \dialx GO(s) BO
-\ps verbe; n 
+\ps V; n 
 \ge promener; promenade
 \re
 \gb
@@ -36643,7 +36643,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dialx GO(s)
 \va mhedam
 \ve ??
-\ps n ; locatif
+\ps n ; LOC
 \ge vent du nord; nord
 \re
 \gb
@@ -36708,7 +36708,7 @@ case (Dubois)
 \dialx BO PA
 \va meedi
 \ve BO
-\ps verbe
+\ps V
 \ge compatir; pitié (avoir); prendre en pitié
 \re
 \gb
@@ -36754,7 +36754,7 @@ case (Dubois)
 
 \lx mein ???
 \dialx PA
-\ps quantificateur
+\ps QUANT
 \ge un peu ; une part
 \re
 \gb
@@ -36884,7 +36884,7 @@ case (Dubois)
 \ve PA BO WEM WE
 \va malòm
 \ve BO PA
-\ps v. statif
+\ps V STAT
 \ge transparent; limpide (eau); clair 
 \re
 \gb
@@ -37369,7 +37369,7 @@ un chemin
 \lx mepali ???
 \is interaction
 \dialx GO
-\ps verbe
+\ps V
 \ge annoncer
 \re
 \gb
@@ -37439,7 +37439,7 @@ un chemin
 \is insecte 
 \is classificateur sémantique
 \dialx GO(s) BO
-\ps préfixe
+\ps PREF
 \ge préfixe des noms de chenilles
 \re
 \gb
@@ -37659,7 +37659,7 @@ espèce d'arbre)
 \lx mi
 \is grammaire_pronom
 \dialx GO(s) PA BO
-\ps pronom sujet 1° personne duel inclusif 
+\ps PRON sujet 1° personne duel inclusif 
 \ge nous 2
 \re
 \gb
@@ -37673,7 +37673,7 @@ espèce d'arbre)
 \lx -mi
 \is grammaire_directionnel
 \dialx GO(s)  PA BO
-\ps directionnel ventif
+\ps DIR ventif
 \ge vers ici ; vers ego
 \re
 \gb towards here
@@ -37687,7 +37687,7 @@ espèce d'arbre)
 \lx mii
 \is couleur
 \dialx GO(s) PA BO
-\ps v. statif
+\ps V STAT
 \ge rouge ; mûr; violet
 \re
 \gb red
@@ -37720,7 +37720,7 @@ espèce d'arbre)
 \lx midalavi ???
 \is caract.personne
 \dialx BO
-\ps v. statif
+\ps V STAT
 \ge paresseux
 \re
 \gb
@@ -37832,7 +37832,7 @@ espèce d'arbre)
 \lx mio ???
 \is interaction
 \dialx GO
-\ps verbe
+\ps V
 \ge déranger
 \re
 \gb
@@ -37902,7 +37902,7 @@ espèce d'arbre)
 \hm 3
 \dialx GO(s) WEM
 \ph mÉ”Ìƒ
-\ps pronom sujet 1° personne triel inclusif
+\ps PRON sujet 1° personne triel inclusif
 \ge nous 3
 \re
 \gb
@@ -37968,7 +37968,7 @@ espèce d'arbre)
 \ph mwÊ°É”Ìƒ
 \va mhwòl
 \ve BO
-\ps n ; v
+\ps v, n
 \ge pli ; plisser; noeud 
 \re
 \gb
@@ -38054,7 +38054,7 @@ espèce d'arbre)
 
 \lx mòòdim
 \dialx PA BO
-\ps n ; v
+\ps v, n
 \is coutumes
 \ge cérémonie de deuil aux maternels
 \re
@@ -38159,7 +38159,7 @@ espèce d'arbre)
 \is noeud
 \dialx GO PA BO
 \ph mÊ°É”ÌƒÅ‹ge
-\ps v ; n
+\ps v, n
 \ge nouer; attacher avec un noeud; faire un noeud 
 \ge unir (s'), rassembler (se) (contexte coutumier)  
 \re
@@ -38197,7 +38197,7 @@ espèce d'arbre)
 \dialx GO(s) BO
 \va mwõgu
 \ve GO(s)
-\ps v; n
+\ps v, n
 \ge travailler; travail
 \ge sueur [BO]
 \re
@@ -38332,7 +38332,7 @@ central de la case (Dubois)
 \ve PA BO
 \va mòòlè
 \ve BO
-\ps v; n
+\ps v, n
 \sn 1
 \is étapes.vie
 \ge vivre; vivant ; vie
@@ -38400,7 +38400,7 @@ central de la case (Dubois)
 \va mènòòn
 \ve PA WEM WE BO
 \ph mÉ›nÉ”:n
-\ps adv.
+\ps ADV
 \ge demain ; lendemain (le) ; prochain
 \re
 \gb
@@ -38445,7 +38445,7 @@ central de la case (Dubois)
 \ve PA BO
 \va mwonu
 \ve BO
-\ps locatif
+\ps LOC
 \sn 1
 \is grammaire_préposition
 \ge proche ; près
@@ -38496,7 +38496,7 @@ central de la case (Dubois)
 \dialx GO(s)
 \va mõõdim
 \ve WEM WE PA BO
-\ps v; n
+\ps v, n
 \is sentiments
 \ge honte (avoir) 
 \is coutumes
@@ -38940,7 +38940,7 @@ central de la case (Dubois)
 \ve PA BO
 \va muuc
 \ve BO
-\ps n ; v
+\ps v, n
 \ge fleur ; fleurir 
 \re
 \gb flower ; blossom
@@ -39032,7 +39032,7 @@ central de la case (Dubois)
 \dialx GO(s) WEM
 \va muda, môda
 \ve BO [BM]
-\ps v. statif
+\ps V STAT
 \ge déchiré (être) ; cassé
 \re
 \gb
@@ -39105,7 +39105,7 @@ central de la case (Dubois)
 \dialx GO(s) BO PA
 \va muuga
 \ve BO
-\ps v ; n 
+\ps v, n 
 \ge vomir ; vomissure
 \re
 \gb
@@ -39137,7 +39137,7 @@ central de la case (Dubois)
 \lx muna-le 
 \is grammaire_conjonction
 \dialx GO(s) PA
-\ps adverbe
+\ps ADV
 \ge ensuite ; après
 \re
 \gb
@@ -39175,7 +39175,7 @@ central de la case (Dubois)
 \ve BO
 \va mun
 \ve [PA]
-\ps adverbe de temps
+\ps ADV de temps
 \ge après; derrière
 \re
 \gb
@@ -39357,7 +39357,7 @@ central de la case (Dubois)
 \is grammaire_aspect
 \hm 1
 \dialx GOs
-\ps adv. séquentiel ; continuatif
+\ps ADV séquentiel ; continuatif
 \ge alors ; continuer à
 \re
 \gb
@@ -39403,7 +39403,7 @@ central de la case (Dubois)
 \dialx GO(s)
 \va mhwã
 \ve PA
-\ps pronom sujet 1° inclusif pluriel
+\ps PRON sujet 1° inclusif pluriel
 \ge nous (incl.)
 \re
 \gb
@@ -39622,7 +39622,7 @@ central de la case (Dubois)
 \ph mwÉ›jÌƒu
 \va mwaji
 \ve BO
-\ps v; n
+\ps v, n
 \sn 1
 \ge retourner; retourner (s'en)
 \ge demi-tour_(faire); revenir sur ses pas; retourner (s'en)
@@ -39666,7 +39666,7 @@ central de la case (Dubois)
 \lx mwang 
 \is caract.
 \dialx PA BO
-\ps v. statif
+\ps V STAT
 \ge mauvais; mal
 \re
 \gb
@@ -40021,7 +40021,7 @@ central de la case (Dubois)
 \is grammaire_modalité
 \ph mwÃª:É³o
 \dialx GO(s) BO
-\ps v. impersonnel
+\ps V IMPERS
 \ge manque (il) ; rester
 \re
 \gb
@@ -40064,7 +40064,7 @@ central de la case (Dubois)
 \lx mweling
 \is nourriture_goût
 \dialx PA BO
-\ps v. statif
+\ps V STAT
 \ge acide
 \re
 \gb
@@ -40119,7 +40119,7 @@ sauvage (di) et cuit)
 \lx mhwi 
 \is caract.
 \dialx BO
-\ps v. statif
+\ps V STAT
 \ge timide ; doux
 \re
 \re
@@ -40152,7 +40152,7 @@ sauvage (di) et cuit)
 \lx mwozi
 \is fonct.nat
 \dialx GO(s)
-\ps n ; v
+\ps v, n
 \ge hoquet ; hoquet (avoir le); hoqueter (en
 pleurs)
 \re
@@ -40198,7 +40198,7 @@ pleurs)
 \is locatif
 \is mouvement
 \dialx PA BO
-\ps préposition locative
+\ps PREP locative
 \ge dans ; sur ; a
 \re
 \ge poser
@@ -40236,7 +40236,7 @@ pleurs)
 \is locatif
 \ph É³a
 \dialx GOs
-\ps locatif spatio-temporel
+\ps LOC spatio-temporel
 \ge sur; à; de (ablatif); par rapport à; parmi
 \re
 \gb
@@ -40263,11 +40263,11 @@ pleurs)
 \ve GO(s)
 \va na, ne
 \ve BO PA
-\ps conjonction
+\ps CONJ
 \ge que ; si ; quand
 \sn 1
 \is grammaire_conjonction
-\ps conjonction hypothétique
+\ps CONJ HYP
 \ge si ; quand ; que 
 \re
 \gb
@@ -40334,7 +40334,7 @@ pleurs)
 \is grammaire_démonstratif
 \ph É³a
 \dialx GO(s) PA BO
-\ps démonstratif DX2 ; anaphorique ; assertif 
+\ps DEM DX2 ; anaphorique ; assertif 
 \ge là (visible ou non)
 \re
 \gb
@@ -40394,7 +40394,7 @@ pleurs)
 \is locatif
 \ph É³a
 \dialx GO(s) BO PA
-\ps locatif
+\ps LOC
 \ge là-bas
 \re
 \gb
@@ -40409,7 +40409,7 @@ pleurs)
 \is locatif
 \ph É³a
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge de là-bas (ablatif)
 \re
 \gb
@@ -40428,7 +40428,7 @@ pleurs)
 \is locatif
 \ph É³a
 \dialx GO(s)
-\ps préposition (ablatif)
+\ps PREP (ablatif)
 \ge de ; à 
 \re
 \gb
@@ -40480,7 +40480,7 @@ pleurs)
 \is grammaire_préposition 
 \dialx GO(s) BO PA
 \ph É³a
-\ps préposition
+\ps PREP
 \ge d'où
 \re
 \gb
@@ -40544,7 +40544,7 @@ pleurs)
 \dialx GO(s)
 \va nai
 \dialx BO
-\ps locatif (comparaison)
+\ps LOC (comparaison)
 \ge de (ablatif) ; par rapport à ; envers
 \re
 \gb
@@ -40815,7 +40815,7 @@ pleurs)
 \hm 3
 \is grammaire_aspect
 \dialx GO(s) PA 
-\ps fréquentatif
+\ps FREQ
 \ge souvent (lié à nre 2 ??) ; (+ négation : jamais)
 \re
 \gb
@@ -40958,7 +40958,7 @@ pleurs)
 \lx nèm
 \is nourriture_goût
 \dialx PA
-\ps v. statif
+\ps V STAT
 \ge doux ; sucré
 \ge insipide [BO]
 \re
@@ -41062,7 +41062,7 @@ pleurs)
 \is nourriture_goût
 \ph É³e-É½a:
 \dialx GO(s) BO
-\ps v. statif
+\ps V STAT
 \ge mauvais au goût
 \ge acide [BO]
 \re
@@ -41117,7 +41117,7 @@ pleurs)
 \ph É³e
 \va nee-vwo
 \ve BO
-\ps v; n
+\ps v, n
 \ge faire qqch; actions ; actes
 \re
 \gb
@@ -41166,7 +41166,7 @@ pleurs)
 \is nourriture_goût
 \dialx GO(s)
 \ph É³É›-Ã°o
-\ps v. statif
+\ps V STAT
 \ge sucré; bon au goût; succulent
 \re
 \gb
@@ -41231,7 +41231,7 @@ pleurs)
 \is nourriture_goût
 \ph Å‹Ã£Å‹i
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge acide; amer
 \re
 \gb
@@ -41292,7 +41292,7 @@ pleurs)
 \dialx GO(s) 
 \va ni
 \ve PA BO
-\ps préposition spatio-temporelle
+\ps PREP spatio-temporelle
 \ge dans (contenant); à ; vers
 \re
 \gb
@@ -41336,7 +41336,7 @@ pleurs)
 \dialx GO(s)
 \va -nim
 \ve PA BO 
-\ps numéral
+\ps NUM
 \ge cinq
 \re
 \gb
@@ -41356,7 +41356,7 @@ pleurs)
 \dialx GOs
 \va -nim
 \ve PA
-\ps démonstratif déictique ou anaphorique (DX3)
+\ps DEM déictique ou anaphorique (DX3)
 \ge ce ... là (mis à distance, peut être péjoratif)
 \re
 \gb
@@ -41434,7 +41434,7 @@ pleurs)
 \is locatif
 \dialx GO(s)
 \ph É³iÌƒÉ³É”Ìƒ
-\ps locatif
+\ps LOC
 \ge dans ; dedans; à l'intérieur de
 \re
 \gb
@@ -41506,7 +41506,7 @@ pleurs)
 \is grammaire_numéral
 \dialx GO(s) PA BO 
 \ph É³imamba
-\ps numéral
+\ps NUM
 \ge neuf (=5 et 3)
 \re
 \gb
@@ -41519,7 +41519,7 @@ pleurs)
 \ph É³imanÉ–u
 \va -ni ma-du
 \ve BO PA
-\ps numéral
+\ps NUM
 \ge sept (=5 et 2)
 \dt 09/Jun/2015
 
@@ -41537,7 +41537,7 @@ pleurs)
 \lx ni-malu ???
 \is locatif
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge profond; invisible
 \re
 \gb
@@ -41648,7 +41648,7 @@ et le début des racines coupées en pointe. Dubois)
 \va niivha
 \ve PA BO
 \va nipa
-\ps n; v
+\ps v, n
 \ge erreur ; tromper (se)
 \ge tromper (se) ; perdre (se)
 \re
@@ -41664,7 +41664,7 @@ et le début des racines coupées en pointe. Dubois)
 \is locatif
 \ph É³iÉ£a
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge quelque part
 \re
 \gb
@@ -41707,7 +41707,7 @@ et le début des racines coupées en pointe. Dubois)
 \dialx GO(s)
 \va -nira ?
 \ve BO
-\ps interrogatif
+\ps INTER
 \ge combien?
 \re
 \gb
@@ -41746,7 +41746,7 @@ et le début des racines coupées en pointe. Dubois)
 \is grammaire_quantificateur
 \ph noÌƒ (dental)
 \dialx GO(s)
-\ps restrictif
+\ps RESTR
 \ge seul(ement) (on attend plus)
 \re
 \gb
@@ -41850,7 +41850,7 @@ et le début des racines coupées en pointe. Dubois)
 \dialx GO(s)
 \va nòi-n
 \ve BO
-\ps n ; v
+\ps v, n
 \ge rêve; rêver
 \re
 \gb
@@ -41880,7 +41880,7 @@ et le début des racines coupées en pointe. Dubois)
 \hm 1
 \ph É³É”Ìƒ
 \dialx GO(s) PA BO WEM WE
-\ps préfixe de lieu
+\ps PREF de lieu
 \ge lieu ; endroit 
 \re
 \gb
@@ -41912,7 +41912,7 @@ et le début des racines coupées en pointe. Dubois)
 \dialx GO(s)
 \va nõ
 \ve PA BO
-\ps nom locatif
+\ps N LOC
 \ge intérieur (à l') ; dans
 \re
 \gb
@@ -41942,7 +41942,7 @@ et le début des racines coupées en pointe. Dubois)
 \dialx GO(s) 
 \va nõ-
 \ve PA
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur : champs (d'ignames, etc.)
 \re
 \gb
@@ -42375,7 +42375,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \is grammaire_conjonction
 \ph É³É”me
 \dialx GO(s)
-\ps conjonction
+\ps CONJ
 \ge si ; hypothétique
 \re
 \gb
@@ -42428,7 +42428,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \ph ÌƒÌƒÉ³É”ÌƒÉ³É”Ìƒ
 \va nõnõm
 \ve BO
-\ps v ; n 
+\ps v, n 
 \ge penser; rappeler (se) ; rêvasser
 \re
 \gb
@@ -42449,7 +42449,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dialx GO(s) 
 \va nõnõmi
 \ve PA BO
-\ps v ; n
+\ps v, n
 \ge penser; souvenir de (se)
 \re
 \gb
@@ -42668,7 +42668,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dialx GOs
 \va novw-exa
 \ve PA
-\ps conjonction
+\ps CONJ
 \ge quand, lorsque (passé)
 \re
 \gb
@@ -42709,7 +42709,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \ve PA
 \va nopu 
 \ve
-\ps conjonction
+\ps CONJ
 \ge quand ; lorsque (référence au futur)
 \ge si (hypothétique)
 \re
@@ -42746,7 +42746,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \va nropo, novwu
 \ve vx
 \sn 1
-\ps morphème de thématisation (nrowö ... ca)
+\ps THEM (nrowö ... ca)
 \ge quant à ... alors ; si ... alors 
 \re
 \gb
@@ -43034,7 +43034,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \is grammaire_pronom
 \ph É³u
 \dialx GO(s)
-\ps pronom objet ou possessif 1er singulier
+\ps PRON objet ou possessif 1er singulier
 \ge me ; mon ; ma ; mes
 \rgb
 \de
@@ -43223,7 +43223,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \lx -ny
 \is grammaire_pronom
 \dialx BO PA
-\ps suff. possessif 1° personne
+\ps SUFF POSS 1° personne
 \ge mon ; ma ; mes
 \re
 \gb
@@ -43255,7 +43255,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dialx GO(s)
 \va nhyal
 \ve PA
-\ps v. statif
+\ps V STAT
 \ge écrasé ; mou (une fois écrasé)
 \re
 \gb
@@ -43305,7 +43305,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 
 \lx nhyal
 \dialx PA BO
-\ps v.statif
+\ps V STAT
 \sn 1
 \is caract.objet
 \ge mou
@@ -43342,7 +43342,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \lx nyamã
 \is mouvement
 \dialx GO(s) PA BO
-\ps v; n
+\ps v, n
 \ge travailler; travail [pas en GO(s) où  "nyama" n'a que le sens de 'bouger']
 \ge bouger; remuer
 \re
@@ -43472,7 +43472,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \va nhyaru
 \ve GO(s)
 \ph É²Ê°aÉ½u
-\ps v. statif
+\ps V STAT
 \ge
 \sn 1
 \is caract.objet
@@ -43547,7 +43547,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nhye
 \is grammaire_démonstratif
 \dialx GOs PA BO
-\ps démonstratif DX1
+\ps DEM DX1
 \ge ce...ci
 \re
 \gb
@@ -43564,7 +43564,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nhye-ba
 \is grammaire_démonstratif
 \dialx GO(s) WEM WE 
-\ps déictique
+\ps DEICT
 \ge cela (inanimé; distance moyenne, mais visible)
 \re
 \gb
@@ -43580,7 +43580,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nhye-da
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps démonstratif directionnel
+\ps DEM directionnel
 \ge cela en haut
 \re
 \gb
@@ -43625,7 +43625,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nye-nra
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps anaphorique (discours  ou passé ???)
+\ps ANAPH (discours  ou passé ???)
 \ge cela
 \re
 \gb
@@ -43674,7 +43674,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx nyiwã
 \is position
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge recroquevillé
 \re
 \gb
@@ -43689,7 +43689,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_démonstratif
 \dialx GO(s)
 \mr nye-ò
-\ps démonstratif anaphorique
+\ps DEM anaphorique
 \ge cela (en question)
 \re
 \gb
@@ -43724,7 +43724,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ph É²Ê°oÌƒ
 \va nyong, nyô
 \ve PA
-\ps v ; n
+\ps v, n
 \ge baisser (niveau d'eau); descendre (niveau d'eau)
 \ge décrue
 \re
@@ -43765,7 +43765,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_démonstratif
 \dialx GO(s) WEM WE PA BO
 \mr nye-õli
-\ps démonstratif distal DX3
+\ps DEM distal DX3
 \ge cela là-bas (loin des interlocuteurs)
 \re
 \gb
@@ -43783,7 +43783,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx nyõli mwa
 \is grammaire_démonstratif
 \dialx PA
-\ps démonstratif DX4
+\ps DEM DX4
 \ge là-bas très loin
 \re
 \gb
@@ -43836,7 +43836,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ve GO(s)
 \va -ò
 \ve PA
-\ps directionnel centrifuge
+\ps DIR centrifuge
 \ge éloigner (s') du locuteur dans une direction transverse
 \re
 \gb
@@ -43886,7 +43886,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx -ò
 \is grammaire_démonstratif
 \dialx GO(s)
-\ps anaphorique du discours
+\ps ANAPH du discours
 \ge cela (anaphorique); celui; celle
 \re
 \gb
@@ -43922,7 +43922,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_pronom
 \dialx GO
 \ph É”Ìƒ
-\ps pronom objet ou possessif 1er triel inclusif
+\ps PRON objet ou possessif 1er triel inclusif
 \ge nos (3)
 \re
 \gb
@@ -43983,7 +43983,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ph É”Ìƒ
 \va ô
 \ve BO PA
-\ps quantificateur
+\ps QUANT
 \ge tout ; tous
 \re
 \gb
@@ -44005,7 +44005,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GO(s) PA BO
 \va on
 \ve PA BO
-\ps classificateur des multiples
+\ps CLF des multiples
 \ge n-fois
 \re
 \gb
@@ -44024,7 +44024,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx õ wara-n
 \is grammaire_conjonction
 \dialx PA
-\ps conj.
+\ps CONJ
 \ge chaque fois que; souvent
 \re
 \gb
@@ -44041,7 +44041,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx -ò ... -mi
 \is grammaire_directionnel
 \dialx GO(s) BO
-\ps directionnel
+\ps DIR
 \ge de-ci de-là; en allant et venant; partout
 \re
 \gb
@@ -44115,7 +44115,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \sge fin
 \poc *qoti
 \sn 2
-\ps aspect accompli
+\ps ASP ACC
 \ge déjà
 \re
 \gb
@@ -44131,7 +44131,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf kûûni [GOs]
 \ce terminer complètement
 \sn 3
-\ps séquentiel
+\ps SEQ
 \ge puis; et puis; ensuite
 \re
 \gb
@@ -44163,7 +44163,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx PA
 \va whe
 \ve PA
-\ps adv.
+\ps ADV
 \ge côté (sur le) ; côté (à)
 \re
 \gb
@@ -44203,7 +44203,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx ole
 \is interaction
 \dialx GO(s) PA BO
-\ps v ; interjection;
+\ps v ; INTJ
 \ge remercier ; merci
 \re
 \gb
@@ -44222,7 +44222,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx oole
 \is pêche
 \dialx PA BO
-\ps v ; n
+\ps v, n
 \ge barrage à la pêche (faire un) (avec cailloux, pierres, branches)
 \ge barrer ; empêcher
 \re
@@ -44258,7 +44258,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GO(s)
 \va hòli
 \ve
-\ps déictique (DX3 visible)
+\ps DEICT (DX3 visible)
 \ge là; là-bas
 \re
 \gb
@@ -44354,7 +44354,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GO(s)
 \va õ-nira ?
 \ve BO
-\ps interrogatif
+\ps INTER
 \ge combien de fois?
 \re
 \gb
@@ -44378,7 +44378,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx -on, ô ???
 \is grammaire_quantificateur
 \dialx BO
-\ps restrictif + numéral
+\ps RESTR + numéral
 \ge seul; seulement
 \re
 \gb
@@ -44395,7 +44395,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx PA WE 
 \va haivwo
 \ve GO(s)
-\ps adverbe
+\ps ADV
 \ge plusieurs fois
 \re
 \gb
@@ -44458,7 +44458,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \va òtri
 \ph É”Êˆi
 \ve GO(s) WE
-\ps v. statif
+\ps V STAT
 \ge fou (être)
 \ge saoûl; ivre
 \re
@@ -44474,7 +44474,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_adverbe
 \hm 2
 \dialx GO(s)
-\ps adverbe
+\ps ADV
 \ge adv. péjoratif
 \re
 \gb
@@ -44500,7 +44500,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GO(s)
 \va õ-taagin
 \ve PA BO
-\ps adverbe
+\ps ADV
 \ge souvent ; toujours
 \re
 \gb
@@ -44533,7 +44533,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ve GO(s) PA BO
 \va yüe 
 \ve BO
-\ps v ; n
+\ps v, n
 \ge bercer (un enfant) ; berceuse (chant)
 \re
 \gb rock (child)
@@ -44580,7 +44580,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx õ-waran
 \is grammaire_aspect
 \dialx PA
-\ps conjonction
+\ps CONJ
 \ge chaque fois que; tout le temps
 \re
 \gb
@@ -44618,7 +44618,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GO(s) 
 \va oxa 
 \ve BO [BM]
-\ps aspect
+\ps ASP
 \ge encore; de nouveau
 \re
 \gb
@@ -44725,7 +44725,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx -pa
 \is grammaire_numéral
 \dialx GO(s) BO PA 
-\ps numéral
+\ps NUM
 \ge quatre
 \rgb
 \poc *pat
@@ -44840,7 +44840,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_causatif
 \dialx GO BO PA
 \va phaa-
-\ps préfixe causatif
+\ps PREF CAUS
 \ge faire (faire)
 \re
 \gb
@@ -44926,7 +44926,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx pha- ...-nri 
 \is grammaire_causatif
 \dialx GO(s)
-\ps préfixe causatif
+\ps PREF CAUS
 \ge faire faire qqch. ; laisser  
 \re
 \gb
@@ -45168,7 +45168,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx paciki ???
 \hm 2
 \dialx BO [Corne]
-\ps adverbe
+\ps ADV
 \ge fermement
 \re
 \gb
@@ -45504,7 +45504,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ve GO(s)
 \va pele
 \ve PA
-\ps v ; n
+\ps v, n
 \ge tresser; faire une tresse
 \ge tresse
 \ge natte_(faire une ); faire une corde à plusieurs brins
@@ -45551,7 +45551,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is classificateur possessif
 \hm 3
 \dialx GO(s) PA BO
-\ps classificateur des armes
+\ps CLF des armes
 \ge arme de jet
 \re
 \gb
@@ -45932,7 +45932,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx palu
 \is échanges
 \dialx GO(s) BO
-\ps v. statif
+\ps V STAT
 \ge avare (être) ; refuser de donner
 \re
 \gb
@@ -46477,7 +46477,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \is tressage
 \ph pas aspirÃ© 
 \dialx GO(s) PA
-\ps v ; n
+\ps v, n
 \ge tresser ; tressage ; faire de la vannerie
 \re
 \gb
@@ -46584,7 +46584,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \hm 2
 \is grammaire_quantificateur_degré
 \dialx GOs
-\ps quantificateur
+\ps QUANT
 \ge très
 \re
 \gb
@@ -46918,7 +46918,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \is action
 \ph paÎ²a
 \dialx GO(s)
-\ps v.i
+\ps v.i.
 \ge préparatifs (faire les)
 \re
 \gb
@@ -46938,7 +46938,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \is fonct.intell.
 \ph paÎ²É›ÌƒÌƒ
 \dialx GO(s)
-\ps n; v
+\ps v, n
 \ge confiance (avoir); espoir; espérer
 \re
 \gb
@@ -46956,7 +46956,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dialx GO(s)
 \va pavang, pavange
 \ve BO
-\ps v.t
+\ps v.t.
 \ge préparer (en général) ; faire des parts (vivres) ???
 \re
 \gb
@@ -47004,7 +47004,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dialx GO(s)
 \va phavwuun
 \ve PA
-\ps quantificateur
+\ps QUANT
 \ge groupe de personnes (nombreuses) ; foule
 \ge beaucoup
 \re
@@ -47028,7 +47028,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \lx phavwuun
 \is grammaire_quantificateur
 \dialx PA BO [BM]
-\ps quantificateur
+\ps QUANT
 \ge beaucoup
 \re
 \gb
@@ -47090,7 +47090,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \lx phawe
 \is coutumes
 \dialx GO(s) BO
-\ps n ; v
+\ps v, n
 \ge tas (d'ignames, de pierres)
 \ge aligner les ignames ; faire des tas d'ignames (pour les cérémonies)
 \ge borne frontière (entre 2 tribus; Dubois) ???
@@ -47140,7 +47140,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \lx paxa- 
 \is grammaire_préfixe
 \dialx GO(s)
-\ps préfixe
+\ps PREF
 \ge contenant; produit de
 \re
 \gb
@@ -47539,7 +47539,7 @@ empêcher (qqn de faire qqch)
 \dialx GO(s) PA
 \va para
 \ve BO
-\ps préfixe causatif
+\ps PREF CAUS
 \ge faire (causatif)
 \re
 \gb
@@ -47696,7 +47696,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \hm 2
 \is grammaire_réciproque
 \dialx GO(s) PA
-\ps préfixe réciproque; collectif
+\ps PREF REC; COLL
 \sn 1
 \ge mutuellement
 \re
@@ -47912,7 +47912,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-a-da
 \is déplacement
 \dialx GO
-\ps récip-v
+\ps REC
 \ge monter ensemble
 \re
 \gb
@@ -47975,7 +47975,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx peale 
 \is grammaire_distributif
 \dialx PA BO
-\ps v ; n
+\ps v, n
 \ge à chacun; à part
 \re
 \ge différent ; distinct
@@ -47993,7 +47993,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-alo
 \is grammaire_aspect
 \dialx BO
-\ps aspect
+\ps ASP
 \ge en train de regarder 
 \re
 \gb
@@ -48039,7 +48039,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \ve PA BO
 \va pepe
 \ve vx
-\ps quantificateur (réduplication de pe- ??)
+\ps QUANT (réduplication de pe- ??)
 \ge tous
 \re
 \gb
@@ -48161,7 +48161,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pecabi ???
 \is santé
 \dialx BO
-\ps v. statif
+\ps V STAT
 \ge endolori [BO, Corne, Haudricourt]
 \re
 \gb
@@ -48328,7 +48328,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dialx GO(s)
 \va penõnõ
 \ph penÉ”ÌƒnÉ”Ìƒ
-\ps locatif
+\ps LOC
 \ge milieu (au)
 \re
 \gb
@@ -48344,7 +48344,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pegaabe
 \is interaction
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge humble (se faire); petit (se faire); abaisser (s') (marque de respect dans les discours coutumiers)
 \re
 \gb
@@ -48360,7 +48360,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \is grammaire_comparaison
 \ph pe'Å‹gaiÉ£e
 \dialx GO(s) PA BO [Corne]
-\ps adverbe
+\ps ADV
 \ge parallèle; dans le même alignement; de même niveau; ex aequo
 \ge même alignement ; parallèle; ex aequo
 \ge ajuster (pour arriver sur la même ligne)
@@ -48394,7 +48394,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-gan
 \is grammaire_quantificateur
 \dialx BO
-\ps quantificateur
+\ps QUANT
 \ge beaucoup; nombreux (lit. 3 fois)
 \re
 \gb
@@ -48423,7 +48423,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pègòò
 \is étapes.vie
 \dialx GOs WE 
-\ps v. statif
+\ps V STAT
 \va pègom 
 \ve BO
 \ge dans la force de l'âge (être); bonne santé (être en) BO ???
@@ -48480,7 +48480,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \ve BO [BM]
 \va ve-ale
 \ve BO
-\ps adv.
+\ps ADV
 \ge séparément; chacun de son côté
 \ge différent l'un de l'autre
 \re
@@ -48598,7 +48598,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-iô
 \is grammaire_pronom
 \dialx GO(s)
-\ps collectif + pronom
+\ps COLL + pronom
 \ge c'est à nous 3
 \re
 \gb
@@ -48656,7 +48656,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-ka-
 \is grammaire_quantificateur
 \dialx GO(s)
-\ps quantificateur distributif 
+\ps QUANT DISTR 
 \ge plusieurs (à)
 \re
 \gb
@@ -48674,7 +48674,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \va pe-aniza ?
 \ve GO(s)
 \dialx GO(s)
-\ps distributif
+\ps DISTR
 \ge à combien dans chaque ?
 \re
 \gb
@@ -48737,7 +48737,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-ka-poniza ?
 \is grammaire_interrogatif
 \dialx GO(s)
-\ps distributif
+\ps DISTR
 \ge à combien dans chaque ?
 \re
 \gb
@@ -48755,7 +48755,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-ka-poxe
 \is grammaire_distributif
 \dialx GO(s)
-\ps distributif
+\ps DISTR
 \ge un par un (mettre) 
 \re
 \gb
@@ -49254,7 +49254,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx phènòng
 \is religion
 \dialx BO [BM, Corne]
-\ps v ; n
+\ps v, n
 \ge ensorceller
 \re
 \gb
@@ -49437,7 +49437,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 
 \lx pe-po ??
 \dialx BO 
-\ps quantificateur
+\ps QUANT
 \ge toutes les choses
 \re
 \gb
@@ -49452,7 +49452,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-po-niza ?
 \is grammaire_interrogatif
 \dialx GO(s)
-\ps interrogatif
+\ps INTER
 \ge combien en tout (avons nous en commun)?
 \re
 \gb
@@ -49500,7 +49500,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \is discours
 \ph 'pe-'pu:mo
 \dialx GO(s) WEM BO PA 
-\ps v; n
+\ps v, n
 \ge discourir; prêcher; enseigner; discours
 \re
 \gb
@@ -49705,7 +49705,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \ve GO(s)
 \va pe-thahîn 
 \ve PA BO
-\ps n; v
+\ps v, n
 \ge jouer aux devinette ; deviner ; concours de devinettes 
 \re
 \gb
@@ -49895,7 +49895,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-tòe
 \is grammaire_aspect
 \dialx BO
-\ps aspect inacccompli
+\ps ASP INAC
 \ge en train de planter
 \re
 \gb
@@ -49912,7 +49912,7 @@ sucre
 \dialx GO(s) PA 
 \va pe-ròòli
 \ve GO(s)
-\ps v; interjection ; n
+\ps v; INTJ; n
 \sn 1
 \ge rencontrer (se)
 \ge réunion ; réunir (se)
@@ -50048,7 +50048,7 @@ sucre
 \is grammaire_modalité
 \ph pe.u
 \dialx GO(s)
-\ps modalité
+\ps MODAL
 \va peul
 \ve PA BO
 \ge en vain; sans résultat; tant pis !; ce n'est rien ; ce n'est pas grave
@@ -50067,7 +50067,7 @@ sucre
 \lx peve jun
 \is grammaire_quantificateur
 \dialx PA BO
-\ps quantificateur
+\ps QUANT
 \ge tout; l'ensemble
 \re
 \gb
@@ -50180,7 +50180,7 @@ sucre
 \lx pe-whaguzai
 \is discours
 \dialx GO(s)
-\ps v; n
+\ps v, n
 \ge débattre; discuter; débat; discussion
 \re
 \gb
@@ -50282,7 +50282,7 @@ sucre
 \lx pexa
 \is grammaire_préposition
 \dialx GO(s) PA
-\ps préposition
+\ps PREP
 \ge au sujet de ; à propos de (sens maléfactif)
 \re
 \gb
@@ -50301,7 +50301,7 @@ sucre
 \lx pexu 
 \is interaction
 \dialx GO(s) PA BO
-\ps n; v
+\ps v, n
 \ge médire; médisance
 \re
 \gb
@@ -50350,7 +50350,7 @@ sucre
 \dialx GO(s) 
 \va peroli 
 \ve PA
-\ps v. statif
+\ps V STAT
 \ge rugueux
 \re
 \gb
@@ -50450,7 +50450,7 @@ sucre
 \dialx GO(s) PA BO
 \va pii-n
 \ve BO
-\ps v. statif; n
+\ps V STAT; nom
 \sn 1
 \is caract.objet
 \ge vide
@@ -51051,7 +51051,7 @@ sucre
 \lx phiing
 \is interaction
 \dialx PA
-\ps n; v
+\ps v, n
 \ge assemblée; rassembler
 \re
 \gb
@@ -51248,7 +51248,7 @@ sucre
 \lx pira
 \is locatif
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge dessous (en) ; sous (d'une surface, d'un point)
 \re
 \gb
@@ -51284,7 +51284,7 @@ sucre
 \va phili kûû
 \ve GO(s)
 \ph pÊ°ili kuÌƒ:
-\ps n; v
+\ps v, n
 \ge son d'une vibration (comme un boomerang); plaque vibrante (musique); faire du bruit
 \re
 \gb
@@ -51301,7 +51301,7 @@ sucre
 \dialx GO(s)
 \va pire
 \ve BO
-\ps v; n 
+\ps v, n 
 \ge tresser (corde); corde tressée
 \re
 \gb
@@ -51623,7 +51623,7 @@ sucre
 \ve GO(s)
 \va pu
 \ve PA BO
-\ps conjonction
+\ps CONJ
 \ge que; pour que; afin que; si
 \re
 \gb in order to
@@ -51639,7 +51639,7 @@ sucre
 \lx po-
 \is classificateur numérique
 \dialx GO(s) PA 
-\ps classificateur numérique générique et des objets ronds
+\ps CLF NUM générique et des objets ronds
 \ge classificateur générique; objets ronds (fruits, heure, etc.)
 \re
 \gb
@@ -51708,7 +51708,7 @@ sucre
 \dialx GO(s) PA BO
 \va pwò
 \ve BO
-\ps quantificateur ; atténuation
+\ps QUANT ; atténuation
 \ge peu (un); tous (?)
 \re
 \gb
@@ -51842,7 +51842,7 @@ sucre
 \hm 2
 \is grammaire_quantificateur
 \dialx GOs
-\ps quantificateur ???
+\ps QUANT ???
 \ge chacun; tous
 \re
 \gb
@@ -51861,7 +51861,7 @@ sucre
 \lx phò-
 \is classificateur numérique
 \dialx GO(s)
-\ps classificateur numérique
+\ps CLF NUM
 \ge classificateur: pour compter ce qu'on porte (dans une coutume)
 \re
 \gb
@@ -52031,7 +52031,7 @@ sucre
 \dialx PA BO
 \va pwobe
 \ve BO
-\ps v. statif
+\ps V STAT
 \sn 1
 \is caract.objet_taille
 \ge petit
@@ -52225,7 +52225,7 @@ sucre
 \lx po-da ?
 \is grammaire_interrogatif
 \dialx GO
-\ps interrogatif
+\ps INTER
 \ge pour quoi ?
 \re
 \gb
@@ -52327,7 +52327,7 @@ sucre
 \dialx GO(s) PA
 \va phõng
 \ve BO
-\ps v.t
+\ps v.t.
 \sn 1
 \is action_corps
 \ge tordre (en revenant vers l'arrière)
@@ -52388,7 +52388,7 @@ sucre
 \hm 1
 \is grammaire_modalité
 \dialx GO
-\ps injonction, optatif
+\ps INJ, OPT
 \ge que !
 \re
 \gb
@@ -52516,7 +52516,7 @@ sucre
 \lx po-kiò
 \is corps
 \dialx GO(s) PA BO
-\ps v. statif
+\ps V STAT
 \ge ventru ; corpulent
 \re
 \gb
@@ -52530,7 +52530,7 @@ sucre
 \lx pò-ko
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge trois
 \re
 \gb
@@ -52767,7 +52767,7 @@ sucre
 \dialx GO(s) PA BO
 \va pwòmò
 \ve WE PA
-\ps nom locatif (forme possessive de pwamwa)
+\ps N LOC (forme possessive de pwamwa)
 \sn 1
 \is locatif
 \ge chez
@@ -52799,7 +52799,7 @@ sucre
 \dialx GO(s)
 \va pomwa-da, poma-da
 \ve BO
-\ps directionnel
+\ps DIR
 \ge en amont; en haut
 \re
 \gb
@@ -52815,7 +52815,7 @@ sucre
 \dialx GO(s)
 \va pomwõdu, pomõ-du
 \ve BO
-\ps directionnel
+\ps DIR
 \ge en aval; en bas
 \re
 \gb
@@ -52829,7 +52829,7 @@ sucre
 \lx pomõ-li
 \is locatif
 \dialx GO(s) BO
-\ps directionnel
+\ps DIR
 \ge de l'autre côté; au-delà
 \re
 \gb
@@ -52845,7 +52845,7 @@ sucre
 \lx pomõ-mi
 \is locatif
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge par ici
 \re
 \gb
@@ -52944,7 +52944,7 @@ sucre
 \dialx GO(s) BO
 \va puxã da ?
 \ve GO(s) 
-\ps interrogatif
+\ps INTER
 \ge pourquoi faire ?; à quoi sert ?
 \re
 \gb
@@ -52960,7 +52960,7 @@ sucre
 \dialx GO
 \va pò-nri
 \ve GO(s)
-\ps numéral
+\ps NUM
 \ge cinq
 \re
 \gb
@@ -53000,7 +53000,7 @@ sucre
 \lx pò-ni-ma-ba
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge neuf
 \re
 \gb
@@ -53014,7 +53014,7 @@ sucre
 \lx pò-ni-ma-dru
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge sept
 \re
 \gb
@@ -53028,7 +53028,7 @@ sucre
 \lx pò-ni-ma-gò
 \is grammaire_numéral
 \dialx GO(s)
-\ps numéral
+\ps NUM
 \ge huit
 \re
 \gb
@@ -53091,7 +53091,7 @@ sucre
 \is grammaire_quantificateur
 \ph pÉ”nÉ”Ìƒ
 \dialx GO(s)
-\ps quantificateur
+\ps QUANT
 \ge peu ; un peu (quantité)
 \re
 \gb
@@ -53190,7 +53190,7 @@ sucre
 \dialx PA BO
 \va pònèn, pwanèn
 \ve BO
-\ps v. statif
+\ps V STAT
 \ge court ; petit
 \re
 \gb
@@ -53209,7 +53209,7 @@ sucre
 \dialx GO(s)
 \va ponyam
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge aimable; doux; gentil
 \re
 \gb
@@ -53243,7 +53243,7 @@ sucre
 \lx pò-pa
 \is grammaire_numéral
 \dialx GO
-\ps numéral 
+\ps NUM 
 \ge quatre
 \re
 \gb
@@ -53286,7 +53286,7 @@ sucre
 \is caract.objet
 \ph pope:
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge petites cuisses
 \re
 \gb
@@ -53302,7 +53302,7 @@ sucre
 \dialx PA BO
 \va pobe
 \ve WE
-\ps v. statif
+\ps V STAT
 \ge petit; court
 \ge menu
 \ge un peu 
@@ -53387,7 +53387,7 @@ sucre
 \ve GO(s)
 \va pòròm
 \ve PA BO
-\ps v ; n
+\ps v, n
 \ge oublier ; pardonner ; pardon
 \re
 \gb
@@ -53487,7 +53487,7 @@ sucre
 \ve PA
 \va pò-du, pò-ru
 \ve BO
-\ps numéral
+\ps NUM
 \ge deux (générique)
 \re
 \gb
@@ -53532,7 +53532,7 @@ sucre
 \lx pòvwònò
 \is caract.objet_taille
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge petit (épaisseur; par opposition à gros)
 \re
 \gb
@@ -53785,7 +53785,7 @@ sucre
 \ve BO
 \va pokaweo 
 \ve BO
-\ps v ; n
+\ps v, n
 \ge imiter ; imitation
 \re
 \gb
@@ -53814,7 +53814,7 @@ sucre
 \lx pò-xè
 \is grammaire_numéral
 \dialx GO PA
-\ps classificateur des objets ronds
+\ps CLF des objets ronds
 \ge un (objet rond) ; un jour
 \re
 \gb
@@ -53893,7 +53893,7 @@ sucre
 \lx pò-xè nrò
 \is grammaire_quantificateur
 \dialx GO(s)
-\ps restrictif
+\ps RESTR
 \ge un seul(ement)
 \re
 \gb
@@ -53989,7 +53989,7 @@ sucre
 \ph poÃ°o
 \va polo, pulo
 \ve PA BO
-\ps v.stat.
+\ps V STAT
 \sn 1
 \is couleur
 \ge blanc; propre; neuf
@@ -54189,7 +54189,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \is grammaire_conjonction
 \dialx PA BO [Corne]
 \va wu
-\ps conj.
+\ps CONJ
 \ge pour ; afin de
 \re
 \gb
@@ -54223,7 +54223,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \hm 1
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur
+\ps CLF
 \ge classificateur : pied d'arbre, feuilles, tubercules, racines
 \re
 \gb
@@ -54431,7 +54431,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx GO(s)
 \va phûny
 \ve WEM BO PA
-\ps v.statif
+\ps V STAT
 \ge bleu; vert
 \re
 \gb
@@ -54446,7 +54446,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx phuu
 \dialx GO(s) PA BO
-\ps v.i
+\ps v.i.
 \sn 1
 \is mouvement
 \ge monter (eau); déborder
@@ -54474,7 +54474,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \lx phu ???
 \is maladie
 \dialx BO [Corne]
-\ps n ; v
+\ps v, n
 \ge tousser ; grippe
 \re
 \gb
@@ -54616,7 +54616,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \is caract.
 \ph
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge qui a un fond
 \re
 \gb
@@ -54935,7 +54935,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx pui
 \dialx GO(s) PA BO
-\ps n ; v
+\ps v, n
 \sn 1
 \is topographie
 \ge hauteur 
@@ -55228,7 +55228,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx GO(s)
 \va puni
 \ve PA
-\ps conjonction
+\ps CONJ
 \ge car ; parce que ; à cause de 
 \re
 \gb
@@ -55250,7 +55250,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx GO(s) BO
 \va punanda?
 \ve PA
-\ps interrogatif
+\ps INTER
 \ge pourquoi ?
 \re
 \gb
@@ -55534,7 +55534,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \lx puroma ???
 \is religion
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge profane
 \re
 \gb
@@ -55667,7 +55667,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \ve GO(s)
 \va poxònu, poonu
 \ve BO
-\ps n ; v
+\ps v, n
 \ge amour ; compatir ; avoir pitié de
 \ge aimer; affectionner
 \re
@@ -55701,7 +55701,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \lx pu-xè
 \is classificateur numérique
 \dialx PA BO
-\ps classificateur des maisons
+\ps CLF des maisons
 \ge un (bâtiment, arbre, qqch qui a une souche et qui est haut)
 \re
 \gb
@@ -55905,7 +55905,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \is discours
 \dialx GO(s) PA BO
 \sn 1
-\ps n ; v
+\ps v, n
 \ge bouche
 \ge ouverture
 \ge trou 
@@ -55927,7 +55927,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \gt Forme dÃ©terminÃ©e de phwa
 \poc *papa
 \sn 2
-\ps v. statif
+\ps V STAT
 \ge percé
 \ge troué
 \re
@@ -55961,7 +55961,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \hm 1
 \is classificateur numérique
 \dialx PA
-\ps classificateur
+\ps CLF
 \ge classificateur: trous et tas de prestations cérémonielles 
 \re
 \re
@@ -55977,7 +55977,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \hm 2
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur
+\ps CLF
 \ge coup ; détonation
 \re
 \gb
@@ -56294,7 +56294,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx PA BO
 \va kole pwa
 \ve GO
-\ps v ; n
+\ps v, n
 \ge pleuvoir ; pluie
 \re
 \gb
@@ -56458,7 +56458,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \hm 2
 \is caract.objet_taille
 \dialx BO PA 
-\ps v. statif ; adverbe
+\ps V STAT ; adverbe
 \ge long; haut
 \ge grand
 \ge longtemps
@@ -56475,7 +56475,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \hm 1
 \is grammaire_interrogatif
 \dialx PA
-\ps interrogatif
+\ps INTER
 \ge quelle longueur ?
 \re
 \gb
@@ -56510,7 +56510,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx GO(s)
 \va pwaalu
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge lourd; grave
 \ge cher [PA, BO]
 \rgb
@@ -56673,7 +56673,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va poxããnru, puxãnru
 \ve GO(s)
-\ps v ; n 
+\ps v, n 
 \ge aimer ; amour
 \re
 \gb
@@ -56722,7 +56722,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx pwawa 
 \is grammaire_modalité
 \dialx WEM WE BO PA
-\ps quantificateur
+\ps QUANT
 \ge difficile ; impossible 
 \re
 \gb
@@ -56799,7 +56799,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve BO PA
 \va pwali ???
 \ve
-\ps v. statif
+\ps V STAT
 \ge long; haut
 \ge grand
 \ge longtemps 
@@ -57060,7 +57060,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \hm 1
 \is pêche
 \dialx GO(s) BO
-\ps v ; n
+\ps v, n
 \ge pêcher à la ligne; ligne (de pêche)
 \re
 \gb
@@ -57221,7 +57221,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx pwe-bun ???
 \is nourriture
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge gourmand
 \re
 \gb
@@ -57531,7 +57531,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx phwee-mwãgi
 \is manière
 \dialx GO(s)
-\ps adverbe
+\ps ADV
 \ge inutile; vainement; en vain
 \re
 \gb
@@ -57594,7 +57594,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GOs
 \va phwêneng 
 \ve PA
-\ps interj ; v
+\ps INTJ ; v
 \ge attention!; faire attention
 \re
 \gb
@@ -57748,7 +57748,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx phwevwöu
 \is locatif
 \dialx GO(s) PA BO
-\ps nom locatif
+\ps N LOC
 \ge intervalle entre deux rangées d'un champ d'ignames
 \ge entre
 \re
@@ -57940,7 +57940,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve GO(s) 
 \va phweewu
 \ve BO
-\ps v ; n 
+\ps v, n 
 \ge annoncer ; raconter
 \ge bavarder; converser ; discuter
 \ge annonce ; information ; nouvelle (souvent mauvaise)
@@ -58317,7 +58317,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve
 \va ponèn
 \ve PA
-\ps v.stat.; quantificateur
+\ps V STAT; quantificateur
 \ge petit; mince; un peu
 \re
 \gb
@@ -58360,7 +58360,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ra
 \is grammaire_assertif
 \dialx PA
-\ps particule assertive
+\ps PART assertive
 \ge assertif
 \re
 \gb
@@ -58376,7 +58376,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx PA WE
 \va za ?
 \ve GO(s)
-\ps interr.
+\ps INTER
 \ge quoi?
 \re
 \gb
@@ -58392,7 +58392,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ra-u 
 \is grammaire_assertif
 \dialx PA BO
-\ps modalité
+\ps MODAL
 \ge vraiment ; tout à fait
 \re
 \gb
@@ -58425,7 +58425,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx PA BO 
 \va to, ro
 \ve BO
-\ps marque de futur
+\ps FUT
 \ge futur
 \xv i ru pwal [PA]
 \xn il va pleuvoir
@@ -58440,7 +58440,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx PA BO
 \va toma 
 \ve BO
-\ps futur
+\ps FUT
 \ge futur
 \re
 \gb
@@ -58522,7 +58522,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ta
 \is grammaire_conjonction
 \hm 1
-\ps adv.
+\ps ADV
 \ge alors
 \re
 \gb
@@ -58557,7 +58557,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx PA
 \va ra
 \ve PA
-\ps particule assertive
+\ps PART assertive
 \ge c'est
 \re
 \gb
@@ -58793,7 +58793,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va tha, pa-tha
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge chauve
 \re
 \gb
@@ -58878,7 +58878,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve PA BO
 \va mwang
 \ve BO
-\ps v. statif; modificateur
+\ps V STAT; modificateur
 \ge mauvais ; dangereux; mal 
 \re
 \gb bad
@@ -59130,7 +59130,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is caract.objet
 \dialx GO(s)
 \ph ÊˆÊ°Ã£bo
-\ps v. statif
+\ps V STAT
 \ge épais
 \dn
 \xv
@@ -59158,7 +59158,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx taabö
 \is configuration
 \dialx GO(s)
-\ps v; n
+\ps v, n
 \ge séparer; séparation; frontière
 \re
 \gb
@@ -59448,7 +59448,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx ta-ecâna ???
 \dialx GO
-\ps adverbe
+\ps ADV
 \ge toujours (Haudricourt)
 \re
 \gb
@@ -59493,7 +59493,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx tagi
 \dialx PA BO
-\ps n ; v
+\ps v, n
 \sn 1
 \is cordes
 \ge toron de corde
@@ -60011,7 +60011,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx PA
 \va thãã
 \ve BO
-\ps interjection; appel respectueux à une personne
+\ps INTJ; appel respectueux à une personne
 \ge dites! (à des personnes)
 \re
 \gb
@@ -60041,7 +60041,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx tamwe ???
 \is caract.objet
 \dialx GO
-\ps v.statif
+\ps V STAT
 \ge raide
 \re
 \gb
@@ -60213,7 +60213,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is caract.objet
 \hm 2
 \dialx BO [Corne]
-\ps v. statif
+\ps V STAT
 \ge rugueux
 \re
 \gb
@@ -60259,7 +60259,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx tara ???
 \dialx BO [Corne]
-\ps v. statif
+\ps V STAT
 \ge rapide ???
 \re
 \gb
@@ -60306,7 +60306,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx thatra-hi
 \ph tÊ°aÊˆa-hi
 \dialx GO(s)
-\ps n ; v
+\ps v, n
 \sn 1
 \is configuration
 \ge bouquet de paille à la main
@@ -60345,7 +60345,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s) BO
 \va tha-thûã, ta-thûã
 \ve BO
-\ps n ; v
+\ps v, n
 \ge jeu de ficelle
 \re
 \gb
@@ -60364,7 +60364,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve vx (Haudricourt)
 \va ta-tuarô
 \ve BO [BM]
-\ps n ; v
+\ps v, n
 \ge toile d'araignée ; faire une toile (araignée)
 \re
 \gb
@@ -60441,7 +60441,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is grammaire_modalité
 \dialx GO(s)
 \ph ÊˆÊ°ava
-\ps v. statif ; n
+\ps V STAT ; n
 \ge mauvais ; le mal
 \re
 \gb bad
@@ -60646,7 +60646,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is temps
 \dialx BO
 \va thaa-da
-\ps conj.
+\ps CONJ
 \ge jusqu'à ce que 
 \re
 \gb
@@ -60965,7 +60965,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx tee
 \is grammaire_quantificateur
 \dialx PA
-\ps restrictif ??
+\ps RESTR ??
 \ge seulement
 \re
 \gb
@@ -61090,7 +61090,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va tee
 \ve PA
-\ps préfixe (position assise)
+\ps PREF (position assise)
 \ge assis (faire)
 \re
 \gb
@@ -61217,7 +61217,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx tee-axe
 \is grammaire_quantificateur
 \dialx PA
-\ps quantificateur
+\ps QUANT
 \ge unique ; seul
 \re
 \gb
@@ -61281,7 +61281,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is position
 \ph cÊ°a:Ê’e:
 \dialx GO(s) 
-\ps adverbe
+\ps ADV
 \ge travers (de) ; bancal; penché sur un  côté; pas à niveau
 \re
 \gb
@@ -61809,7 +61809,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va tee-nenem
 \ve PA BO
-\ps n; v
+\ps v, n
 \ge paix ; tranquille ; paisible
 \ge rester tranquille ; reposer en paix 
 \re
@@ -61824,7 +61824,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx tèng
 \is configuration
 \dialx BO [BM]
-\ps v ; n
+\ps v, n
 \ge fourche 
 \ge brancher
 \re
@@ -61889,7 +61889,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va tre-pavhã
 \ve GO(s)  BO PA
-\ps n ; v
+\ps v, n
 \ge espoir ; confiance (avoir); espérer
 \re
 \gb
@@ -61997,7 +61997,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx terè
 \is caract.objet
 \dialx PA BO
-\ps v. statif
+\ps V STAT
 \ge mince; fin
 \re
 \gb
@@ -62014,7 +62014,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ph ÊˆeÉ½a'bwau
 \va terebwau
 \ve PA BO
-\ps v. statif
+\ps V STAT
 \ge rond
 \re
 \gb
@@ -62075,7 +62075,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx tèèvòl ???
 \dialx BO [Corne]
-\ps v.stat.
+\ps V STAT
 \ge tout droit
 \re
 \gb
@@ -62238,7 +62238,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s)
 \va tèèzo
 \ve PA
-\ps v. statif; n
+\ps V STAT; nom
 \ge aplani ; plat; plaine
 \re
 \gb
@@ -62307,7 +62307,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx thi
 \hm 3
 \dialx GO(s) PA BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is action
 \ge exploser ; éclater
@@ -62478,7 +62478,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ti ?
 \is grammaire_interrogatif
 \dialx GO PA BO
-\ps interrogatif
+\ps INTER
 \ge qui ?
 \re
 \gb who ?
@@ -62775,7 +62775,7 @@ enflammées (lit. piquer le feu)
 \lx thidin 
 \is sentiments
 \dialx PA BO WEM 
-\ps v. statif
+\ps V STAT
 \ge coléreux ; en colère; irrité
 \re
 \gb
@@ -62867,7 +62867,7 @@ enflammées (lit. piquer le feu)
 \lx tigi
 \hm 2
 \dialx GOs PA BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is caract.objet
 \ge englué ; collé; emmêlé; embrouillé; enchevêtré
@@ -63106,7 +63106,7 @@ enflammées (lit. piquer le feu)
 \dialx GO(s)
 \va tilòò
 \ve PA BO
-\ps v; n
+\ps v, n
 \ge demander qqch.; demande; requête
 \re  
 \gb
@@ -63824,7 +63824,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s) BO
 \va tivwoloo
 \ve BO
-\ps n; v
+\ps v, n
 \ge chancre
 \ge pustule
 \ge boutons (sur le corps)
@@ -63839,7 +63839,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx ti-xa ?
 \is grammaire_interrogatif
 \dialx PA
-\ps interrogatif indéfini
+\ps INTER indéfini
 \ge qui donc ?
 \re
 \gb
@@ -63987,7 +63987,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx tîî-yaai ???
 \is feu
 \dialx WEM
-\ps n ; v
+\ps v, n
 \ge étincelle du feu ; crépiter (feu)
 \re
 \gb
@@ -64067,7 +64067,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx tò
 \is caract.objet
 \dialx GO
-\ps v. statif
+\ps V STAT
 \ge mou; lisse (cheveux)
 \re
 \gb
@@ -64082,7 +64082,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is fonct.nat
 \hm 1
 \dialx GO(s) PA  BO
-\ps v.statif
+\ps V STAT
 \ge chaud (avoir) ; brûler ; brûlant
 \ge rougi ; enflammé [BO]
 \re
@@ -64127,7 +64127,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \hm 1
 \ph tÊ°o
 \dialx GO(s) PA BO
-\ps v.i; n
+\ps v.i.; n
 \ge cri ; appel ; son 
 \ge appeler ; interpeller
 \ge chanter (oiseau) ; chant(oiseau)
@@ -64189,7 +64189,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx thò-
 \is classificateur numérique
 \dialx GO(s) PA BO
-\ps classificateur numérique  
+\ps CLF NUM  
 \ge classificateur: régimes de banane 
 \re
 \gb
@@ -64204,7 +64204,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va thõn
 \ve BO
-\ps v ; n 
+\ps v, n 
 \sn 1
 \is action
 \ge fermer ; étanche
@@ -64303,7 +64303,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ph Êˆo
 \va tòn, thòn
 \ve WEM PA BO
-\ps n ; v 
+\ps v, n 
 \ge nuit ; obscurité
 \ge nuit (faire)
 \re
@@ -64412,7 +64412,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx BO [Corne]
 \va ro, ru
 \ve BO
-\ps particule aspectuelle
+\ps ASPuelle
 \ge prospectif; virtuel
 \re
 \gb
@@ -64597,7 +64597,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va thidya, tidya
 \ve
-\ps v. statif
+\ps V STAT
 \ge rouillé
 \re
 \gb
@@ -64904,7 +64904,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va thòlò
 \ve PA
-\ps v ; n
+\ps v, n
 \ge couvrir (une maison) ; couverture (en général)
 \ge faitage sculpté (Dubois)
 \re
@@ -64970,7 +64970,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx thomã
 \is interaction
 \dialx GO(s) WEM PA BO
-\ps v.t (+ pronoms)
+\ps v.t. (+ pronoms)
 \ge appeler
 \re
 \gb
@@ -65337,7 +65337,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO(s)
 \va tròròwuu
 \ve GO(s)
-\ps n; v
+\ps v, n
 \ge joie ; joyeux ; réjouir (se) ; content (être)
 \re
 \gb
@@ -65362,7 +65362,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \hm 1
 \is échanges
 \dialx GO(s) PA BO
-\ps v ; n ; classificateur numérique
+\ps v, n ; CLF NUM
 \sn 1
 \ge partager ; distribuer ; partage (dans les fêtes coutumières)
 \re
@@ -65617,7 +65617,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA
 \va tuu
 \ve BO
-\ps aspect
+\ps ASP
 \ge en même temps 
 \re
 \gb
@@ -65635,7 +65635,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA
 \va thuvwu
 \ve GO(s)
-\ps réfléchi
+\ps REFL
 \ge réfléchi (du sujet, agent)
 \re
 \gb
@@ -65854,7 +65854,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA BO
 \va -lu
 \ve
-\ps numéral
+\ps NUM
 \ge deux
 \re
 \gb
@@ -66117,7 +66117,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx thu pwaalu
 \is interaction
 \dialx GOs BO [Corne]
-\ps v; n
+\ps v, n
 \ge respect ; respecter
 \re
 \gb
@@ -66146,7 +66146,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is caract.animal
 \ph thwa thua
 \dialx GO(s) PA BO
-\ps v. statif
+\ps V STAT
 \ge sauvage ; non domestiqué
 \re
 \gb
@@ -66169,7 +66169,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA
 \va tûãn
 \ve BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is interaction
 \ge mentir; mensonge
@@ -66245,7 +66245,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is caract.
 \hm
 \dialx GO(s) PA
-\ps n ; v
+\ps v, n
 \ge orgueil ; vouloir surpasser
 \ge entêter (s') ; entêté [PA, GOs]
 \re
@@ -66322,7 +66322,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA
 \va truji
 \ve BO
-\ps numéral
+\ps NUM
 \ge dix
 \re
 \gb
@@ -66372,7 +66372,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO
 \va tuuyi bwa pòru
 \ve PA
-\ps numéral
+\ps NUM
 \ge douze (10 et 2)
 \re
 \gb
@@ -66389,7 +66389,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GO
 \va tuuyi bwa pòxè
 \ve PA
-\ps numéral
+\ps NUM
 \ge onze (10 et 1)
 \re
 \gb
@@ -66476,7 +66476,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA BO
 \va tuumã
 \ve PA BO (Corne)
-\ps v.statif ; n
+\ps V STAT ; n
 \ge heureux; joyeux; content ; joie ; joyeux ; content
 \re
 \gb
@@ -66603,7 +66603,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA
 \va tuu
 \ve BO
-\ps réfléchi
+\ps REFL
 \ge réfléchi (du sujet, agent)
 \re
 \gb
@@ -66663,7 +66663,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is grammaire_aspect
 \dialx GO(s) PA 
 \hm 1
-\ps accompli
+\ps ACC
 \ge accompli
 \re
 \gb
@@ -66683,7 +66683,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is grammaire_préposition
 \hm 2
 \dialx BO [BM, Corne]
-\ps préposition instrumentale; marque d'agent ??
+\ps PREP instrumentale; marque d'agent ??
 \ge avec; par; grâce à; du fait de; à cause de 
 \re
 \gb
@@ -66724,7 +66724,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is grammaire_agent
 \dialx PA BO
 \va ku, xu, xo
-\ps marque d'agent ??
+\ps AGT ??
 \ge agent
 \re
 \gb
@@ -66795,7 +66795,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is interjection
 \dialx GO
 \va ôô
-\ps interjection
+\ps INTJ
 \ge hmm (rythme le discours de quelqu'un)
 \re
 \gb
@@ -66812,7 +66812,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is grammaire_temps
 \dialx WE PA
 \va u ru, ro
-\ps marque de futur
+\ps FUT
 \ge futur proche
 \gb
 \xv u ru tòn
@@ -67232,7 +67232,7 @@ supportant la charpente des cases rondes;  Dubois)
 \hm 2
 \is classificateur numérique
 \dialx GO(s) PA
-\ps classificateur
+\ps CLF
 \ge grappes de noix de coco
 \re
 \gb
@@ -67443,7 +67443,7 @@ supportant la charpente des cases rondes;  Dubois)
 \lx u-pwa, u-vwa
 \is déplacement
 \dialx GO
-\ps directionnel
+\ps DIR
 \ge aller vers l'extérieur
 \re
 \gb
@@ -67583,7 +67583,7 @@ supportant la charpente des cases rondes;  Dubois)
 \is interaction
 \ph uÎ²a
 \dialx GO(s)
-\ps n ; v
+\ps v, n
 \ge accepter la demande de pardon ; nom du don correspondant
 \re
 \gb
@@ -67602,7 +67602,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ve GO(s)
 \va uvi
 \ve PA BO 
-\ps v; n
+\ps v, n
 \ge acheter; payer
 \ge prix; salaire
 \re
@@ -67779,7 +67779,7 @@ supportant la charpente des cases rondes;  Dubois)
 \lx va?
 \is grammaire_interrogatif
 \dialx WEM BO
-\ps interrogatif statique
+\ps INTER statique
 \ge où?
 \re
 \gb
@@ -67799,7 +67799,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s) PA BO
 \va fhaa
 \ve GA
-\ps verbe, nom
+\ps V, nom
 \ge parler; parole ; voix
 \re
 \gb
@@ -67995,7 +67995,7 @@ supportant la charpente des cases rondes;  Dubois)
 \lx vara
 \is grammaire_distributif
 \dialx GO(s) PA
-\ps dispersif; distributif
+\ps dispersif; DISTR
 \ge séparément; chacun
 \re
 \gb
@@ -68241,7 +68241,7 @@ supportant la charpente des cases rondes;  Dubois)
 \hm 1
 \dialx BO
 \is grammaire
-\ps préposition régime indirect
+\ps PREP régime indirect
 \ge objet indirect
 \re
 \gb
@@ -68258,7 +68258,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s) PA
 \va vo
 \ve BO
-\ps marque de focus
+\ps FOC
 \ge focus
 \re
 \gb
@@ -68284,7 +68284,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s) PA BO
 \va -vò
 \ve BO
-\ps suffixe nominalisant
+\ps SUFF NMZ
 \ge nominalisateur ; saturateur de transitivité
 \re
 \gb
@@ -68315,7 +68315,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ve BO PA
 \va wi
 \ve BO
-\ps conjonction de but
+\ps CONJ de but
 \ge pour que
 \re
 \gb
@@ -68330,7 +68330,7 @@ supportant la charpente des cases rondes;  Dubois)
 \hm 2
 \is grammaire_IS
 \dialx GO(s)
-\ps thématisation
+\ps THEM
 \ge quant à 
 \re
 \gb
@@ -68399,7 +68399,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s)
 \va wal
 \ve PA BO
-\ps v ; n
+\ps v, n
 \ge chanter; chant
 \re
 \gb
@@ -68461,7 +68461,7 @@ supportant la charpente des cases rondes;  Dubois)
 \is grammaire_préposition
 \hm 2
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge vers
 \re
 \gb
@@ -68529,7 +68529,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s)
 \va whal 
 \ve PA
-\ps v ; n
+\ps v, n
 \ge manger (canne à sucre)
 \ge part de canne à sucre 
 \re
@@ -68577,7 +68577,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ph waÅ‹
 \va waak
 \ve PA
-\ps nom locatif; v
+\ps N LOC; v
 \ge matin; faire jour
 \re
 \gb
@@ -68632,7 +68632,7 @@ supportant la charpente des cases rondes;  Dubois)
 \is grammaire_conjonction
 \hm 1
 \dialx BO [Corne]
-\ps préposition, conjonction
+\ps PREP ; CONJ
 \ge à cause de; parce que
 \re
 \gb
@@ -68679,7 +68679,7 @@ supportant la charpente des cases rondes;  Dubois)
 \lx wa-bile
 \is cordes
 \dialx GO(s) BO PA
-\ps n ; v
+\ps v, n
 \ge toron (roulé sur la cuisse) ; fil de filet
 \ge faire un toron (roulé sur la cuisse)
 \re
@@ -68751,7 +68751,7 @@ départ en guerre. Dubois ms)
 \ve BO
 \va whayap
 \ve BO
-\ps n ; v
+\ps v, n
 \ge guerre; lutte ; combattre ; lutter (pour avoir qqch)
 \ge assaillir (pour obtenir qqch) [GOs] 
 \re
@@ -68841,7 +68841,7 @@ départ en guerre. Dubois ms)
 \dialx GO(s) BO
 \va waado
 \ve BO
-\ps v. statif
+\ps V STAT
 \sn 1
 \is corps
 \ge édenté; interstice laissé par des dents tombées
@@ -68893,7 +68893,7 @@ départ en guerre. Dubois ms)
 \lx whadua ???
 \is caract.objet
 \dialx BO
-\ps v. statif
+\ps V STAT
 \ge transparent
 \re
 \gb
@@ -68998,7 +68998,7 @@ départ en guerre. Dubois ms)
 \lx whaa-gò
 \is temps
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge aube ; matin de bonne heure
 \re
 \gb
@@ -69159,7 +69159,7 @@ départ en guerre. Dubois ms)
 
 \lx waal
 \dialx PA BO
-\ps n ; v
+\ps v, n
 \sn 1
 \is religion
 \ge religion
@@ -69182,7 +69182,7 @@ départ en guerre. Dubois ms)
 \lx wala
 \is caract.objet_taille
 \dialx GO(s)
-\ps v. statif
+\ps V STAT
 \ge large
 \gb wide
 \rgb
@@ -69286,7 +69286,7 @@ départ en guerre. Dubois ms)
 \dialx GO(s) PA BO
 \va hua-mã
 \ve vx
-\ps n; v
+\ps v, n
 \ge vieux (les) ; vieil homme ; parents
 \ge grandir ; vieillir (animés)
 \re
@@ -69351,7 +69351,7 @@ départ en guerre. Dubois ms)
 \ve GO(s)
 \va wamèèn
 \ve BO
-\ps nom comparatif
+\ps N CMPAR
 \ge comme ; pareil ; semblable
 \re
 \gb
@@ -69375,7 +69375,7 @@ départ en guerre. Dubois ms)
 \dialx GOs PA
 \va wa da?
 \ve PA
-\ps interrogatif
+\ps INTER
 \ge comme quoi? ; qui ressemble à quoi?
 \re
 \gb
@@ -69406,7 +69406,7 @@ départ en guerre. Dubois ms)
 \lx wame ni
 \is grammaire_direction
 \dialx GO(s)
-\ps locatif
+\ps LOC
 \ge environs (aux) de ; vers
 \re
 \gb
@@ -69424,7 +69424,7 @@ départ en guerre. Dubois ms)
 \lx wame ti?
 \is grammaire_interrogatif
 \dialx GO(s) WEM
-\ps interrogatif comparatif
+\ps INTER CMPAR
 \ge comme qui ?
 \re
 \gb
@@ -69439,7 +69439,7 @@ départ en guerre. Dubois ms)
 \lx wamèèn exa ??
 \is grammaire_comparaison
 \dialx BO [Corne]
-\ps conjonction
+\ps CONJ
 \ge comme si
 \re
 \gb
@@ -69493,7 +69493,7 @@ départ en guerre. Dubois ms)
 \hm 5
 \is classificateur numérique
 \dialx GO(s) PA BO
-\ps classificateur numérique des lots cérémoniels  
+\ps CLF NUM des lots cérémoniels  
 \ge un lot de 2 roussettes ou notous 
 \re
 \gb
@@ -69524,7 +69524,7 @@ wa-truci (20)
 \lx wa-na ?? wame na??
 \is grammaire_modalité
 \dialx PA
-\ps modalité
+\ps MODAL
 \ge peut-être; et si ?
 \re
 \ge faillir
@@ -69618,7 +69618,7 @@ wa-truci (20)
 \dialx PA BO
 \va wany
 \ve PA BO
-\ps n ; v
+\ps v, n
 \ge malédiction ; punition ; punir
 \ge esprits des vieux du clan
 \re
@@ -69799,7 +69799,7 @@ wa-truci (20)
 \is grammaire_numéral
 \ph waÊˆu
 \dialx GO(s)
-\ps numéral (pour certains types de dons coutumiers
+\ps NUM (pour certains types de dons coutumiers
 qui se comptent par deux) Bretteville
 \ge deux 
 \re
@@ -69814,7 +69814,7 @@ qui se comptent par deux) Bretteville
 \lx wa-tru ko ido
 \is grammaire_numéral
 \dialx GO
-\ps numéral numéral (pour certains types de dons coutumiers qui
+\ps NUM (pour certains types de dons coutumiers qui
 se comptent par deux)
 \ge cinq
 \re
@@ -69830,7 +69830,7 @@ se comptent par deux)
 \hm 2
 \is grammaire_numéral
 \dialx GO
-\ps numéral (pour certains types de dons coutumiers qui se comptent par deux)
+\ps NUM (pour certains types de dons coutumiers qui se comptent par deux)
 \ge vingt
 \re
 \gb
@@ -69926,7 +69926,7 @@ se comptent par deux)
 \hm 1
 \is grammaire_numéral
 \dialx GO(s)
-\ps classificateur numérique
+\ps CLF NUM
 \ge un
 \re
 \gb
@@ -69941,7 +69941,7 @@ se comptent par deux)
 \hm 2
 \is classificateur numérique
 \dialx GOs PA
-\ps numéral (pour certains types de dons coutumiers qui se comptent par deux)
+\ps NUM (pour certains types de dons coutumiers qui se comptent par deux)
 \ge une paire (roussettes, etc.)
 \re
 \gb a pair
@@ -69955,7 +69955,7 @@ se comptent par deux)
 \lx whaya ?
 \is grammaire_interrogatif
 \dialx GO(s) BO PA
-\ps interrogatif
+\ps INTER
 \ge comment (être, faire) ? (aussi pour les propriétés physiques); combien? 
 \re
 \gb
@@ -70198,7 +70198,7 @@ se comptent par deux)
 \lx we-
 \is classificateur numérique
 \dialx GO(s) PA BO
-\ps classificateur numérique des objets longs
+\ps CLF NUM des objets longs
 \ge classificateur: objets longs (voiture, bateau, arbre couché, poteau), année, mois ; chants
 \re
 \gb
@@ -70385,7 +70385,7 @@ se comptent par deux)
 \dialx BO PA
 \va wôdo
 \ve PA
-\ps n; v
+\ps v, n
 \ge actes coutumiers ; coutumes
 \ge usages ; manières; moeurs
 \re
@@ -70467,7 +70467,7 @@ se comptent par deux)
 \lx wèle
 \is guerre
 \dialx BO [BM, Corne]
-\ps v ; n
+\ps v, n
 \ge battre (se) ; bagarre
 \re
 \gb
@@ -70602,7 +70602,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \is grammaire_numéral
 \ph weÉ³i
 \dialx GO(s)
-\ps numéral ordinal
+\ps NUM ORD
 \ge cinq
 \re
 \gb
@@ -70618,7 +70618,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \lx we-ni ma du
 \is grammaire_numéral
 \dialx BO
-\ps numéral
+\ps NUM
 \ge 7 choses longues
 \re
 \gb
@@ -70648,7 +70648,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \dialx GO(s)
 \va we-nira ?
 \ve PA BO
-\ps interrogatif
+\ps INTER
 \ge combien (de choses longues, jours, an) ?
 \re
 \gb
@@ -70938,7 +70938,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \lx wè-xèè
 \is classificateur numérique
 \dialx GO(s) BO
-\ps classificateur numéral (bois, arbres, certaines racines comestibles, cordes ; objets longs  sagaies, doigts ) 
+\ps CLF NUM (bois, arbres, certaines racines comestibles, cordes ; objets longs  sagaies, doigts ) 
 \ge un (objet long)
 \re
 \gb
@@ -71093,7 +71093,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \ve BO
 \va wêê-n
 \ve BO [Corne]
-\ps n ; v. statif
+\ps v, n. statif
 \ge puissance; force; fort
 \re
 \gb
@@ -71115,7 +71115,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \hm 1
 \va we
 \ve BO
-\ps conjonction
+\ps CONJ
 \ge que ; pour
 \re
 \gb
@@ -71565,7 +71565,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \ve PA
 \va woza
 \ve WEM
-\ps n ; v
+\ps v, n
 \ge bagarre ; bagarrer (se) ; affronter (s')
 \re
 \gb
@@ -71681,7 +71681,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \lx whun
 \is fonct.intell.
 \dialx BO [Corne]
-\ps v ; n
+\ps v, n
 \ge silencieux ; silence
 \re
 \gb
@@ -71795,7 +71795,7 @@ Mwani-mi ?
 \xv ègu xa la ã-mi mògu bwa vhaa i ã [GOs]
 \xn des gens qui sont venus travailler sur notre langue
 \sn 5
-\ps marque de focus
+\ps FOC
 \ge focus
 \re
 \gb
@@ -71829,7 +71829,7 @@ Mwani-mi ?
 \dialx GO(s) PA BO
 \va ka
 \ve vx
-\ps conjonction (relatif)
+\ps CONJ (relatif)
 \ge que; qui
 \re
 \gb
@@ -71852,7 +71852,7 @@ Mwani-mi ?
 \is grammaire_aspect
 \hm 5
 \dialx GO(s)
-\ps réversif, itératif  GO(s)
+\ps REV, ITER  GO(s)
 \ge encore ; de nouveau ; re-
 \re
 \gb
@@ -71911,7 +71911,7 @@ Mwani-mi ?
 \is grammaire_numéral
 \va po-xe
 \ve GO PA BO
-\ps numéral
+\ps NUM
 \ge un
 \re
 \gb
@@ -71945,7 +71945,7 @@ Mwani-mi ?
 \ve GO(s)
 \va o, u
 \ve PA BO
-\ps marque d'agent
+\ps AGT
 \ge agent
 \re
 \gb
@@ -72002,7 +72002,7 @@ Mwani-mi ?
 \is grammaire_conjonction
 \hm 2
 \dialx GO(s) PA
-\ps conjonction
+\ps CONJ
 \ge aussi; et aussi
 \re
 \gb
@@ -72026,7 +72026,7 @@ Mwani-mi ?
 \va o
 \ve BO
 \sn 1
-\ps préposition (marque d'instrument)
+\ps PREP (marque d'instrument)
 \ge avec (instrumental)
 \re
 \gb with
@@ -72264,7 +72264,7 @@ Mwani-mi ?
 \dialx GO(s) 
 \va yagòòn
 \ve BO
-\ps n; v
+\ps v, n
 \ge tapisserie (en écorce de niaoulis ou de palmes de cocotier tressées)
 \ge couvrir (le toit de peaux de niaoulis etc.)
 \re
@@ -72467,7 +72467,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \lx yhaamwa
 \is fonct.intell
 \dialx GO(s) BO PA
-\ps v. impersonnel
+\ps V IMPERS
 \ge on ne sait pas
 \re
 \gb
@@ -72680,7 +72680,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \lx yaweeni
 \is action_corps
 \dialx GOs
-\ps verbe
+\ps V
 \ge étaler (sable)
 \re
 \gb
@@ -72779,7 +72779,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \ve PA
 \va yaala da ?
 \ve PA
-\ps locution interrogative
+\ps LOCUT INTER
 \ge quel est le sens de ? ; quel est le nom de ?
 \re
 \gb
@@ -72859,7 +72859,7 @@ mains); arroser (avec la main)
 \lx ye
 \is grammaire_IS
 \dialx PA
-\ps thématisation
+\ps THEM
 \ge thématisation
 \re
 \gb
@@ -72875,7 +72875,7 @@ mains); arroser (avec la main)
 
 \lx -ye
 \is grammaire_pronom
-\ps pronom objet ou possessif 3° singulier
+\ps PRON objet ou possessif 3° singulier
 \ge le ; la ; son ; sa ; ses
 \re
 \gb
@@ -72906,7 +72906,7 @@ mains); arroser (avec la main)
 \is temps
 \dialx GO(s)
 \va yepwan, yebwa 
-\ps ??
+\ps
 \ge moment où ; quand
 \re
 \gb
@@ -72971,7 +72971,7 @@ mains); arroser (avec la main)
 \va yu
 \ve GO
 \hm 2
-\ps pronom 2° sg sujet, objet ou possessif
+\ps PRON 2° sg sujet, objet ou possessif
 \ge toi, tu
 \re
 \gb
@@ -73229,7 +73229,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \ve GO(s)
 \va ya
 \ve BO
-\ps v. statif
+\ps V STAT
 \ge salé ; trop salé
 \re
 \gb
@@ -73247,7 +73247,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dialx GO(s)
 \va ra
 \ve WE WEM
-\ps focalisation ; restrictif (antéposé au GN) (za ... nye...)
+\ps FOC ; restrictif (antéposé au GN) (za ... nye...)
 \ge c'est vraiment ... que
 \re
 \gb
@@ -73280,7 +73280,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dialx GO(s) BO
 \va ra 
 \ve PA 
-\ps intensificateur ; assertif (devant le prédicat)
+\ps INTENS ; assertif (devant le prédicat)
 \ge vraiment; tout à fait
 \re
 \gb
@@ -73328,7 +73328,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dialx GO(s)
 \va ra?
 \ve PA BO
-\ps interr.
+\ps INTER
 \ge quoi ?; qu'est ce que ?; quelle sorte (de) ?
 \re
 \gb
@@ -73362,7 +73362,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dialx PA BO
 \va -ya
 \ve BO
-\ps pronom 1° inclusif objet ou possessif
+\ps PRON 1° inclusif objet ou possessif
 \ge nous, notre
 \re
 \gb
@@ -73469,7 +73469,7 @@ pour les replanter.
 \dialx GO(s)
 \va xa
 \ve GO(s)
-\ps itératif
+\ps ITER
 \ge re-
 \re
 \gb
@@ -73822,7 +73822,7 @@ pour les replanter.
 \va zhala
 \ve GA
 \ph Î¸ala
-\ps v; n
+\ps v, n
 \ge demander à qqn; interroger; question(ner)
 \re
 \gb
@@ -73973,7 +73973,7 @@ pour les replanter.
 \ph Ã°aÉ²i  Î¸aÉ²i
 \va zhanyi
 \ve GA
-\ps n ; v
+\ps v, n
 \ge sel
 \ge saler la nourriture ; mettre du sel
 \re
@@ -74010,7 +74010,7 @@ pour les replanter.
 \dialx GO(s)
 \va cao
 \ve GO
-\ps verbe
+\ps V
 \ge invoquer; parler aux esprits
 \re
 \gb
@@ -74078,7 +74078,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve PA
 \va yaro
 \ve BO
-\ps n ; v
+\ps v, n
 \sn 1
 \is outils
 \ge fourche (trident) [GO(s)]
@@ -74144,7 +74144,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ph Ã°ava
 \va za
 \ve PA
-\ps pronom sujet 1° exclusif pluriel
+\ps PRON sujet 1° exclusif pluriel
 \ge nous (excl)
 \re
 \gb
@@ -74160,7 +74160,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \is grammaire_pronom
 \dialx GO(s)
 \ph Ã°ava
-\ps pronom objet ou possessif 1° plur. exclusif
+\ps PRON objet ou possessif 1° plur. exclusif
 \ge nous ; nos
 \re
 \gb
@@ -74173,7 +74173,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \is grammaire_pronom
 \dialx GO(s)
 \ph Ã°awa
-\ps pronom sujet 2°  pluriel
+\ps PRON sujet 2°  pluriel
 \ge vous (pl.)
 \re
 \gb
@@ -74188,7 +74188,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \is grammaire_pronom
 \dialx GO
 \ph Ã°awa
-\ps pronom objet ; possessif 2° pluriel
+\ps PRON objet ; possessif 2° pluriel
 \ge vous ; vos
 \re
 \gb
@@ -74324,7 +74324,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \is fonct.nat
 \ph Ã°e
 \dialx GO(s) TRE 
-\ps v ; n
+\ps v, n
 \ge cracher
 \re
 \gb
@@ -74450,7 +74450,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve GO(s) vx
 \va hixò, hingõn
 \ve BO [BM]
-\ps n ; v
+\ps v, n
 \ge histoire; fable ; raconter une histoire
 \re
 \gb
@@ -74479,7 +74479,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve GO(s) 
 \va yo
 \ve BO
-\ps v.statif
+\ps V STAT
 \sn 1
 \is caract.
 \ge bien ; bon
@@ -74514,7 +74514,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dialx GO
 \va ro
 \ve WEM  WE
-\ps futur
+\ps FUT
 \ge futur
 \re
 \gb
@@ -74808,7 +74808,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \lx zoma
 \is grammaire_temps
 \dialx GO(s)
-\ps marque de futur
+\ps FUT
 \ge futur
 \re
 \gb
@@ -74827,7 +74827,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dialx PA BO
 \va yòn, yhòn
 \ve BO
-\ps v ; n
+\ps v, n
 \sn 1
 \is caract.objet
 \ge toxique ; non-comestible ; poison
@@ -74957,7 +74957,7 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \lx zoxãî
 \is caract.
 \dialx WEM WE
-\ps v. statif
+\ps V STAT
 \ge joli ; bien
 \re
 \gb
