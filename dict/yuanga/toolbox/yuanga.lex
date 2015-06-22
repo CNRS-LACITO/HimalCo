@@ -174,7 +174,7 @@
 
 \lx a
 \hm 3
-\is pronom
+\is grammaire_pronom
 \ps pronom sujet 2 pluriel
 \ge vous
 \re
@@ -184,7 +184,7 @@
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx a
 \is astre
@@ -246,7 +246,7 @@
 
 \lx a-
 \hm 1
-\is préfixe 
+\is grammaire_préfixe 
 \dialx GO(s) PA 
 \va aa-
 \ps préfixe des noms d'agent
@@ -267,11 +267,11 @@
 \cf
 \ce
 \nt Dubois: marque une action présente: nu a-puyòl 'je fais la cuisine' (lit. moi cuisinier)
-\dt 27/Jun/2007
+\dt 09/Jun/2015
 
 \lx a-
 \hm 2
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \va aa-
 \ps classificateur numéerique des animées
@@ -283,10 +283,10 @@
 \xn un, deux, trois, quatre, cinq, six chiens
 \cf po-, go-, we-, pepo-
 \ce
-\dt 20/May/2007
+\dt 13/Jun/2015
 
 \lx -a-
-\is gramm.
+\is grammaire_possession
 \va -wa
 \ps marque de possession (de certains lexèmes)
 \ge possession
@@ -295,10 +295,10 @@
 \rgb
 \xv doo-a-ny
 \xn ma marmite
-\dt 24/Jun/2007
+\dt 09/Jun/2015
 
 \lx ã-
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) WEM WE
 \ps démonstratif
 \ge celui-ci (humain)
@@ -312,7 +312,7 @@
 \ce cet homme-là (DX2), cet homme-là (DX2 sur le côté), cet homme-là-bas (DX3), cet homme-là derrière, cet homme-là-haut, 
 cet homme-là en bas, cet homme-là loin en bas
 \ce
-\dt 13/Feb/2010
+\dt 09/Jun/2015
 
 \lx -ã
 \is grammaire_démonstratif
@@ -335,7 +335,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \dt 25/Dec/2014
 
 \lx -ãã
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA BO
 \ph ÌƒÌƒÉ›ÌƒÌƒ:
 \ps pronom 1° inclusif pluriel objet ou  possessif 
@@ -343,7 +343,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \re
 \gb
 \rgb
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx a waya ?
 \is déplacement
@@ -381,7 +381,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ãbaa
 \ph Ã£'ba:
 \hm 1
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \va ãbaa-n
 \ve BO PA
@@ -415,7 +415,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \xn donne plus d'argent
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx ãbaa-
 \hm 2
@@ -572,7 +572,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \is interaction
 \ph aÎ²e
 \dialx GO(s) 
-\et a-pe-bulu
+\mr a-pe-bulu
 \ps v 
 \ge ensemble (être)
 \re
@@ -591,7 +591,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \cf a-poxe
 \ce aller ensemble (lit. aller un)
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx a-bhe-du
 \is déplacement
@@ -746,7 +746,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \dt 04/Nov/2014
 
 \lx ã-e
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom DX2 3°  pers. masc. sg
 \ge lui-là
@@ -758,7 +758,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx aeke
 \is interjection
@@ -916,7 +916,6 @@ maisons carrées ; Dubois)
 \dialx GO(s)
 \va ai xa
 \ve PA
-\et ai-xa (avoir envie d'une chose)
 \ps v
 \ge vouloir ; envie de (avoir)
 \re
@@ -930,7 +929,7 @@ maisons carrées ; Dubois)
 \gt ta volontÃ©, ton dÃ©sir
 \cf raccourci sous la forme : axa et aa < ai-xa [PA]
 \ce
-\dt 27/Jun/2007
+\dt 09/Jun/2015
 
 \lx a-kai
 \is déplacement
@@ -954,7 +953,7 @@ maisons carrées ; Dubois)
 \dt 04/Nov/2014
 
 \lx a-kha-kujaxo
-\is déplacemebt
+\is déplacement
 \dialx GO(s)
 \ps v
 \ge rendre visite à un malade
@@ -965,7 +964,7 @@ maisons carrées ; Dubois)
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx a-kããle
 \is soin
@@ -1079,7 +1078,7 @@ maisons carrées ; Dubois)
 \dt 04/Nov/2014
 
 \lx a-kò
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \va a-kòn
 \ve BO PA 
@@ -1092,20 +1091,20 @@ maisons carrées ; Dubois)
 \xn
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx a-kò êgu 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge soixante (lit. trois hommes)
 \re
 \gb
 \rgb
-\dt 20/Feb/2010
+\dt 09/Jun/2015
 
 \lx a-kò êgu bwa truuçi
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge soixante-dix (lit. trois hommes et 10)
@@ -1116,7 +1115,7 @@ maisons carrées ; Dubois)
 \xn
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx akònòbòn
 \is temps
@@ -1159,7 +1158,7 @@ maisons carrées ; Dubois)
 \is corps
 \ge face ; visage
 \sn 2
-\is topographie
+\is configuration
 \ge façade ; surface
 \sn 3
 \is caract.
@@ -1190,7 +1189,7 @@ maisons carrées ; Dubois)
 \cf
 \ce
 \poc *qadop 'face, devant'
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx alaaba
 \is feu
@@ -1223,7 +1222,7 @@ maisons carrées ; Dubois)
 \dt 22/Dec/2014
 
 \lx alabo-
-\is classificateur
+\is classificateur numérique
 \dialx PA
 \ps classificateur
 \ge classificateur: un quart ou une moitié de tortue ou de bœuf
@@ -1234,7 +1233,7 @@ maisons carrées ; Dubois)
 \xn
 \cf mai-xe [PA WEM]
 \ce morceau de viande  de tortue, etc.
-\dt 25/Jun/2007
+\dt 13/Jun/2015
 
 \lx ala-hi
 \is corps
@@ -1326,10 +1325,10 @@ maisons carrées ; Dubois)
 \dialx BO PA
 \ps n
 \sn 1
-\is coutumes
+\is coutumes_objet
 \ge corde de monnaie de coquillage (Dubois)
 \sn 2
-\is cordage
+\is cordes
 \ge fibre de jeune rejet de  'phuleng' (Charles) lavée et séchée, sert à faire des cordes pour les frondes,
 les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \re
@@ -1339,7 +1338,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx alavwu
 \is fonct.nat
@@ -1381,7 +1380,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 
 \lx alaxe
 \is locatif
-\is modalité
+\is grammaire_modalité
 \dialx GO(s) PA BO
 \ps v.
 \ge côté (sur le)
@@ -1400,7 +1399,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \nt voir si lié à -alek ?
 \an baxòòl
 \at droit
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx aleleang
 \is insecte
@@ -1516,7 +1515,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 26/Feb/2010
 
 \lx ã-mã-
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA BO
 \ps démonstratif (duel ou pluriel)
 \ge les ; ces
@@ -1531,7 +1530,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn les hommes
 \cf
 \ce
-\dt 11/Jul/2007
+\dt 09/Jun/2015
 
 \lx amaèk ???
 \is plantes
@@ -1549,7 +1548,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 25/Dec/2014
 
 \lx ã-mala-e
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom DX2 3°  pers. masc. pluriel
 \ge eux là
@@ -1561,10 +1560,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx ã-mala-na
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA BO
 \ps pronom 3°  pers. masc. pluriel
 \ge eux là
@@ -1575,10 +1574,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx ã-mala-ò
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
  PA BO
 \ps pronom DX3 3°  pers. masc. pluriel
@@ -1591,10 +1590,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx ã-mala-òòli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom DX3 3°  pers. masc. pluriel
 \ge eux là-bas
@@ -1606,10 +1605,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx ã-mali-na
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) BO
 \ps pronom 3°  pers. masc. duel (DX ou anaphorique)
 \ge eux-2 là ; hé ! les 2 hommes !
@@ -1621,7 +1620,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx ã-mani
 \is société
@@ -1759,9 +1758,9 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 21/Dec/2014
 
 \lx ãnrã
-\is vocatif
+\is grammaire_vocatif
 \dialx GO(s) BO
-\ph É›ÌƒÌƒÌƒnÉ›Ìƒ
+\ph É›ÌƒnÉ›Ìƒ
 \ps démonstratif DX 
 \ge celui-là; et l'homme !
 \re
@@ -1774,11 +1773,11 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt cf. axeena (nêl)
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx ã-nra !
 \is interpellation
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps interjection
 \ge eh ! l'homme !
@@ -1789,10 +1788,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn
 \cf ijèè !
 \ce eh ! la femme !
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx ani êgu 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \va anim êgu 
 \ve PA
@@ -1801,10 +1800,10 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \re
 \gb
 \rgb
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx a-ni-ma-xe
-\is numéral
+\is grammaire_numéral
 \dialx GOs
 \va a-nim-a-xe
 \ve BO PA
@@ -1817,7 +1816,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx a-niza ?
 \is grammaire_interrogatif
@@ -1869,7 +1868,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 19/Feb/2010
 
 \lx ã-ò 
-\is démonstratif
+\is grammaire_démonstratif
 \ph ???
 \dialx GO(s) BO
 \ps démonstratif anaphorique
@@ -1881,7 +1880,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn celui-là (en question) l'a fait
 \cf
 \ce
-\dt 06/Mar/2010
+\dt 09/Jun/2015
 
 \lx a-ò !
 \is grammaire_injonction
@@ -1901,7 +1900,7 @@ vers lui et qu'il la récupère ensuite)
 \dt 23/Dec/2014
 
 \lx ã-òòli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom DX3 3°  pers.
 \ge lui là-bas
@@ -1916,10 +1915,10 @@ vers lui et qu'il la récupère ensuite)
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx apa êgu 
-\is numéral
+\is grammaire_numéral
 \ph
 \dialx GOs
 \va aapa
@@ -1929,10 +1928,10 @@ vers lui et qu'il la récupère ensuite)
 \re
 \gb
 \rgb
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx apa êgu bwa truuçi
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge quatre-vingt dix (lit. quatre hommes et 10)
@@ -1943,7 +1942,7 @@ vers lui et qu'il la récupère ensuite)
 \xn
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx aa-palu
 \is échanges
@@ -1996,7 +1995,7 @@ vers lui et qu'il la récupère ensuite)
 \dt 19/Dec/2014
 
 \lx a-pe-paçaxai
-\is caract.animé
+\is caract.
 \dialx GO(s)
 \va a-pe-pha-caaxai
 \ve PA
@@ -2009,7 +2008,7 @@ vers lui et qu'il la récupère ensuite)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx a-phe-vhaa
 \is société
@@ -2107,7 +2106,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 19/Jul/2006
 
 \lx a-puunõ
-\is société
+\is discours
 \dialx GO(s)
 \va a-puunol
 \ve PA
@@ -2120,7 +2119,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn
 \cf
 \ce
-\dt 27/Jun/2007
+\dt 10/Jun/2015
 
 \lx ara-hogo
 \is topographie
@@ -2145,7 +2144,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dialx PA
 \va hari
 \ve PA
-\empr FR riz
+\bw FR riz
 \ps n
 \ge riz
 \re
@@ -2155,7 +2154,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx aru
 \is cultures
@@ -2218,7 +2217,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 
 \lx a-thu drogò
 \is société
-\is bois
+\is bois_travail
 \dialx GO(s)
 \ps n
 \ge sculpteur
@@ -2230,20 +2229,20 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 11/Nov/2014
+\dt 10/Jun/2015
 
 \lx a-tru êgu 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph aÊˆu
 \va aaru êgu 
 \ve BO
 \ps numéral
 \ge quarante (lit. deux hommes)
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx a-tru êgu bwa truuçi
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge cinquante (lit. deux hommes et 10)
@@ -2255,7 +2254,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx a-thu kônya
 \is société
@@ -2322,7 +2321,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \ph 'a:va
 \ps v. statif
 \sn 1
-\is plantes
+\is plantes_processus
 \ge vert; pas mûr
 \ge jeune (fruit)
 \re
@@ -2336,7 +2335,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn son corps est fragile
 \cf zeenô
 \ce mûr
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx aavhe
 \is société
@@ -2637,7 +2636,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 22/Feb/2010
 
 \lx a-xè
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) PA BO
 \va a-kè
 \dialx GO(s)
@@ -2658,10 +2657,10 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx axè êgu 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) PA 
 \va aaxe ãgu
 \ve BO
@@ -2680,10 +2679,10 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn 20 tissus
 \se
 \sge
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx axè êguu
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) PA 
 \ps numéral
 \ge vingt personnes
@@ -2696,16 +2695,16 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx axè êgu bwa truuçi 
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \va aaxè ãgu bwa truji 
 \ve BO
 \ps numéral
 \ge trente (lit. un homme et 10)
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx axe poxee
 \is grammaire_conjonction
@@ -2917,7 +2916,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 23/Dec/2014
 
 \lx -ba
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps démonstratif DX2
 \ge celui-là (latéralement,  visible)
@@ -2932,7 +2931,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \ce celui-là (homme)
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx baa
 \is grammaire_collectif
@@ -2974,7 +2973,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 23/Dec/2014
 
 \lx baa
-\is action.corps
+\is action_corps
 \hm 3
 \dialx GO(s)
 \ps v
@@ -2989,7 +2988,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf v.t. baani
 \ce frapper, tuer qqn ou qqch
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ba ???
 \is maison
@@ -3022,7 +3021,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 11/Jul/2007
 
 \lx ba- ... (le)
-\is ordinal
+\is grammaire_ordinal
 \hm 1
 \dialx GO(s) PA BO
 \va na-
@@ -3050,10 +3049,9 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \ce préfixe des ordinaux [BO, PA] (Dubois)
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx ba-alawe
-\is société
 \is coutumes
 \dialx GO(s)
 \ps n
@@ -3069,10 +3067,10 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx ba-atru
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph baaÊˆu
 \ps ordinal
@@ -3084,7 +3082,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \xn deuxième enfant
 \cf
 \ce
-\dt 14/Jul/2006
+\dt 09/Jun/2015
 
 \lx baaba
 \is corps
@@ -3193,11 +3191,16 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 23/Dec/2014
 
 \lx baa-ja
-\is société
 \dialx GO(s)
 \ps n
-\ge balance
+\ge
+\sn 1
+\is société
 \ge loi; règle
+\re
+\sn 2
+\is maison.objet
+\ge balance
 \re
 \gb
 \rgb
@@ -3206,10 +3209,10 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 13/Jun/2015
 
 \lx ba-kha-da
-\is outil
+\is outils
 \dialx PA
 \ps n
 \ge échelle
@@ -3221,7 +3224,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx ba-kheevwo phwa
 \is ustensile
@@ -3314,7 +3317,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 23/Dec/2014
 
 \lx bala
-\is topographie
+\is configuration
 \hm 3
 \dialx GO(s)
 \va bala-n
@@ -3333,11 +3336,11 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx bala
 \hm 4
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
 \ps particule modale (adversatif ; hypothétique, )
 \ge adversatif ; incertain ; haut degré
@@ -3373,10 +3376,11 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \xn elle est partie à jamais là-bas (pas souhaitable)
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx bala- 
-\is classificateur
+\is classificateur numérique
+\is classificateur sémantique
 \hm 1
 \dialx GO(s) BO PA
 \ps n
@@ -3396,7 +3400,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \se bala-xe, bala-tru, etc.
 \sge un morceau de bois, deux, trois 
 \nt
-\dt 11/Jul/2007
+\dt 09/Jun/2015
 
 \lx baalaba
 \is maison.objet
@@ -3428,7 +3432,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \dt 25/Dec/2014
 
 \lx bala-khò
-\is topographie
+\is configuration
 \dialx PA
 \ps n
 \ge limite du labour
@@ -3441,7 +3445,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx balaa-mãã
 \hm
@@ -3459,7 +3463,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \dt 24/Jun/2007
 
 \lx bala-n
-\is modalité
+\is grammaire_modalité
 \dialx PA
 \ps modalité (nom)
 \ge à la suite, dans la foulée
@@ -3479,7 +3483,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx bala-nyama
 \is action
@@ -3512,7 +3516,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \dt 23/Dec/2014
 
 \lx bala-xè 
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur numéral (des morceaux de bois)
 \ge un (morceau de bois)
@@ -3523,7 +3527,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \xn un, deux, etc.
 \cf
 \ce
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx bale
 \is emprunt
@@ -3531,13 +3535,15 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \ps v; n
 \ge balayer; balai
 \re
+\bw FR balai
+\re
 \gb
 \rgb
 \xv bale goo
 \xn un balai fait avec la nervure centrale des folioles de palmes de cocotier
 \cf
 \ce
-\dt 07/Jun/2007
+\dt 04/Jun/2015
 
 \lx balevhi
 \is topographie
@@ -3585,12 +3591,12 @@ extension, les fruits qui ont le même goût)
 \dt 25/Dec/2014
 
 \lx baanri
-\is action.corps
+\is action_corps
 \dialx GO(s)  
 \va baani 
 \ve PA BO
 \ps vt
-\ge tuer  abattre (animal)
+\ge tuer 
 \ge frapper (de haut en bas)
 \ge abattre (animal)
 \ge tuer (les moustiques en tapant)
@@ -3601,10 +3607,10 @@ extension, les fruits qui ont le même goût)
 \gr e baa-vwo (-vo = haivwo)
 \gt il en tue beaucoup
 \nt vi baa
-\dt 06/Nov/2014
+\dt 10/Jun/2015
 
 \lx ba-nrhõî
-\is cordage
+\is cordes
 \dialx GO(s) PA
 \ps nom 
 \ge lien; qui sert à attacher
@@ -3615,10 +3621,10 @@ extension, les fruits qui ont le même goût)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx ba-ogine
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) BO
 \va ba-ogin-en
 \ve PA
@@ -3633,10 +3639,10 @@ extension, les fruits qui ont le même goût)
 \xn pour terminer, pour finir
 \cf
 \ce
-\dt 24/Feb/2010
+\dt 09/Jun/2015
 
 \lx ba-õxe
-\is ordinal
+\is grammaire_ordinal
 \dialx GOs
 \ps ordinal
 \ge première fois
@@ -3650,7 +3656,7 @@ extension, les fruits qui ont le même goût)
 \cf ba-õtru, ba-õko etc.
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx ba-paaba
 \is navigation
@@ -3674,9 +3680,9 @@ extension, les fruits qui ont le même goût)
 \is emprunt
 \is instrument
 \dialx GO(s)
-\bw FR "passer"
 \ps n
 \ge tamis
+\bw FR passer
 \re
 \gb
 \rgb
@@ -3688,7 +3694,7 @@ extension, les fruits qui ont le même goût)
 \sge passoire (lit. qui sert à passer le coco)
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx ba-phe-ênõ
 \is coutumes
@@ -3933,7 +3939,7 @@ extension, les fruits qui ont le même goût)
 \dt 07/Nov/2014
 
 \lx ba-thu-pwaalu
-\is société
+\is coutumes
 \dialx GO(s)
 \ps n
 \ge geste de respect
@@ -3944,7 +3950,7 @@ extension, les fruits qui ont le même goût)
 \xn
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 10/Jun/2015
 
 \lx ba-u
 \is feu
@@ -4033,7 +4039,7 @@ extension, les fruits qui ont le même goût)
 \dt 26/Feb/2010
 
 \lx ba-zo
-\is ustensiles
+\is ustensile
 \dialx GOs
 \va ba-zòl
 \ve PA
@@ -4049,7 +4055,7 @@ extension, les fruits qui ont le même goût)
 \cf
 \ce
 \nt
-\dt 09/Nov/2014
+\dt 09/Jun/2015
 
 \lx baazò
 \is position
@@ -4087,7 +4093,7 @@ extension, les fruits qui ont le même goût)
 
 \lx be
 \hm 2
-\is insecter
+\is insecte
 \dialx GO(s) PA BO 
 \ps n
 \ge ver de terre
@@ -4099,7 +4105,7 @@ extension, les fruits qui ont le même goût)
 \cf
 \ce
 \poc *mpasa, mpaya
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx bè
 \hm 1
@@ -4154,7 +4160,7 @@ extension, les fruits qui ont le même goût)
 \dt 21/Nov/2014
 
 \lx bee
-\is plantes
+\is plantes_processus
 \dialx PA
 \ps v
 \ge vert (tubercules, fruits)
@@ -4166,7 +4172,7 @@ extension, les fruits qui ont le même goût)
 \cf te
 \ce commencer à mûrir
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx bee-
 \is parenté
@@ -4304,6 +4310,8 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \ps n
 \ge bassine; cuvette
 \re
+\bw FR bassine
+\re
 \gb
 \rgb
 \xv
@@ -4313,7 +4321,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx bèxè
 \is maladie
@@ -4395,11 +4403,13 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 
 \lx bi
 \is emprunt
-\is jeux
+\is jeu
 \hm 2
 \dialx GO(s)
 \ps n
 \ge bille (de petite taille; jeu)
+\re
+\bw FR bille
 \re
 \gb
 \rgb
@@ -4407,11 +4417,11 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx bi
 \hm 3
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)  PA
 \ps pronom 1° duel exclusif (sujet, objet ou
 possessif)
@@ -4421,10 +4431,10 @@ possessif)
 \rgb
 \xv
 \xn
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx -bi 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \va -bin
 \ve PA BO 
@@ -4435,11 +4445,11 @@ possessif)
 \rgb
 \xv
 \xn
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx bii
 \hm 1
-\is caract.obj
+\is caract.objet
 \dialx GO(s)
 \ps v ; n 
 \ge enfoncé; cabossé
@@ -4453,7 +4463,7 @@ possessif)
 \sge cabosser la voiture
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx bii
 \hm 2
@@ -4496,7 +4506,7 @@ possessif)
 \is caract.objet
 \ge dépasser
 \sn 2
-\is quantificateur_degré
+\is grammaire_quantificateur_degré
 \ge trop 
 \ge plus encore
 \re
@@ -4517,7 +4527,7 @@ possessif)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx biçô 
 \is action
@@ -4559,8 +4569,8 @@ possessif)
 \dt 09/Nov/2014
 
 \lx bile
-\is action.corps
-\is cordage
+\is action_corps
+\is cordes
 \dialx GO(s) BO
 \va bire
 \ve GO(s)
@@ -4581,10 +4591,10 @@ possessif)
 \cf
 \ce
 \poc *piri 'plait a cord, twist' (Blust) moi
-\dt 10/Nov/2014
+\dt 09/Jun/2015
 
 \lx bilòò
-\is action.corps
+\is action_corps
 \dialx GO(s) BO PA
 \ps v
 \ge tourner 
@@ -4606,10 +4616,10 @@ possessif)
 \sge dévisser
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx biluu
-\is gastéropode
+\is mollusque_gastéropode
 \dialx GO(s) PA BO
 \ps n
 \ge escargot de terre; bulime
@@ -4622,10 +4632,10 @@ possessif)
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 10/Jun/2015
 
 \lx bînri
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va biini
 \ve PA
@@ -4643,10 +4653,10 @@ possessif)
 \xn j'ai plié le linge
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx bizi
-\is action.corps
+\is action_corps
 \dialx GOs
 \va biri
 \ve BO
@@ -4662,7 +4672,7 @@ possessif)
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx bizigi
 \dialx GO(s) 
@@ -4712,7 +4722,7 @@ possessif)
 \dt 20/Feb/2015
 
 \lx bò
-\is action.corps
+\is action_corps
 \hm 1
 \dialx GO(s)
 \va bòl
@@ -4731,7 +4741,7 @@ possessif)
 \gr bòli [PA], bòzi [GOs]
 \gt v.t. frapper qqch
 \cf
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx bò
 \is topographie
@@ -4754,7 +4764,7 @@ possessif)
 \dt 23/Dec/2014
 
 \lx bò
-\is plantes
+\is plantes_processus
 \hm 3
 \dialx GO(s)
 \va bòng
@@ -4769,7 +4779,7 @@ possessif)
 \xn
 \cf menõ
 \ce faner naturellement
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bòdra
 \ph bÉ”É–a
@@ -4784,14 +4794,14 @@ possessif)
 \gb
 \rgb
 \sn 2
-\is plante
+\is plantes
 \ge Alphitonia
 \sc Alphitonia neocaledonica
 \xv
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx bòli
 \is locatif
@@ -4827,7 +4837,7 @@ possessif)
 
 \lx bòlòmaxaò
 \is emprunt
-\is animaux
+\is mammifères
 \dialx GO(s)
 \va boloxao
 \ve GO(s)
@@ -4840,8 +4850,8 @@ possessif)
 \re
 \gb
 \rgb
-\bw bull and cow
-\dt 23/Dec/2014
+\bw GB bull and cow
+\dt 10/Jun/2015
 
 \lx bò-nra
 \is temps
@@ -4870,6 +4880,8 @@ possessif)
 \ps v
 \ge saluer (se)
 \re
+\bw FR bonjour
+\re
 \gb
 \rgb
 \xv mo pe-bosu
@@ -4879,10 +4891,10 @@ possessif)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx boxola
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge herbe coupante et malodorante
@@ -4894,10 +4906,10 @@ possessif)
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx bòzi 
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va bòli 
 \ve BO PA
@@ -4911,7 +4923,7 @@ possessif)
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx bozo
 \is corps
@@ -5036,7 +5048,7 @@ possessif)
 
 \lx bu
 \is nourriture
-\is plantes
+\is plantes_processus
 \dialx GO(s) PA BO
 \hm 1
 \ps v.statif
@@ -5048,7 +5060,7 @@ possessif)
 \xn
 \cf mii
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx bu
 \is cultures
@@ -5089,7 +5101,7 @@ possessif)
 
 \lx bu
 \hm 4
-\is action.corps
+\is action_corps
 \dialx GO(s) PA
 \ps v
 \ge frapper; taper (une cible)
@@ -5108,10 +5120,10 @@ possessif)
 \sge fusil à longue portée (lit. qui tape loin) 
 \cf bule (v.t)
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx bu
-\is tortue
+\is reptile_tortue
 \hm 5
 \dialx GO(s)
 \ps n
@@ -5123,7 +5135,7 @@ possessif)
 \xn
 \cf
 \ce
-\dt 10/Feb/2006
+\dt 10/Jun/2015
 
 \lx bu
 \hm 6
@@ -5146,7 +5158,7 @@ possessif)
 \dt 20/Feb/2015
 
 \lx bu-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur numérique
 \ge classificateur: butte (d'igname), monticule; billon
@@ -5161,7 +5173,7 @@ possessif)
 \xn deux tas de sable
 \cf
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx buu
 \hm 1
@@ -5184,7 +5196,7 @@ possessif)
 
 \lx buu
 \hm 2
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge croton (protège les maisons et les êtres humains)
@@ -5196,7 +5208,7 @@ possessif)
 \xn
 \cf
 \ce
-\dt 22/Jun/2007
+\dt 09/Jun/2015
 
 \lx bua
 \is interaction
@@ -5254,7 +5266,7 @@ possessif)
 \dt 23/Dec/2014
 
 \lx buu-dili
-\is élément_terre
+\is terrain_terre
 \dialx GO(s) WEM WE
 \ps n
 \ge tas de terre; monticule de terre
@@ -5265,7 +5277,7 @@ possessif)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bue
 \is action.tête
@@ -5286,7 +5298,7 @@ possessif)
 \dt 04/Nov/2014
 
 \lx bu-êgu
-\is société
+\is étapes.vie
 \dialx PA
 \ps n
 \ge tombe
@@ -5301,7 +5313,7 @@ possessif)
 \cf
 \ce
 \nt
-\dt 11/Nov/2014
+\dt 10/Jun/2015
 
 \lx bui
 \is habillement
@@ -5366,7 +5378,7 @@ Dubois ms)
 \dt 07/Nov/2014
 
 \lx bulago
-\is plantes
+\is plantes_processus
 \dialx GO(s)
 \ps v
 \ge pourri ; effriter (s')
@@ -5378,10 +5390,10 @@ Dubois ms)
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx bulaivi
-\is casse-tête 
+\is armes
 \dialx GO(s) PA BO
 \ps n
 \ge casse-tête (générique)
@@ -5392,7 +5404,7 @@ Dubois ms)
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx bule
 \is mouvement
@@ -5412,7 +5424,7 @@ Dubois ms)
 \dt 04/Nov/2014
 
 \lx buleony
-\is cocotier
+\is arbre_cocotier
 \va buleon
 \dialx BO (Corne, BM)
 \ps n
@@ -5421,7 +5433,7 @@ Dubois ms)
 \gb
 \rgb
 \na utiliséÃ© pour envelopper la monnaie traditionnelle
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx buli
 \is société
@@ -5438,7 +5450,7 @@ Dubois ms)
 \dt 25/Dec/2014
 
 \lx bulu
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) PA BO
 \sn 1
 \ps n
@@ -5474,7 +5486,7 @@ Dubois ms)
 \cf a poxe
 \ce partir ensemble (lit. un)
 \nt
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx bumi
 \is arbre
@@ -5542,7 +5554,7 @@ Dubois ms)
 \dt 04/Nov/2014
 
 \lx bunu
-\is élément_terre
+\is terrain_terre
 \dialx GO(s)
 \ps n
 \ge terre rouge; latérite
@@ -5551,7 +5563,7 @@ Dubois ms)
 \rgb
 \xv
 \xn
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bunya
 \is nourriture
@@ -5603,8 +5615,8 @@ Dubois ms)
 \is ustensile
 \dialx GO(s)
 \ps n
-\bw bouteille
 \ge bouteille
+\bw FR bouteille
 \re
 \gb
 \rgb
@@ -5612,7 +5624,7 @@ Dubois ms)
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx burò
 \hm 1
@@ -5772,7 +5784,7 @@ l'esprit d'un vivant de celui d'un mort
 \dt 21/Nov/2014
 
 \lx bwa-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur
 \ge classificateur : bottes d'herbes (mae : Imperata cylindrica) et paquets de feuilles (pandanus, etc.)
@@ -5785,7 +5797,7 @@ l'esprit d'un vivant de celui d'un mort
 \xn une botte de pandanus, etc.
 \cf
 \ce
-\dt 19/Aug/2006
+\dt 09/Jun/2015
 
 \lx bwaa
 \is interpellation
@@ -5839,7 +5851,7 @@ l'esprit d'un vivant de celui d'un mort
 \dt 21/Nov/2014
 
 \lx bwa gu-hi  
-\is locatif
+\is orientation
 \dialx PA WE
 \ps
 \ge droite (à)
@@ -5851,7 +5863,7 @@ l'esprit d'un vivant de celui d'un mort
 \cf
 \ce
 \nt
-\dt 13/Feb/2010
+\dt 09/Jun/2015
 
 \lx bwa mè
 \is locatif
@@ -5891,7 +5903,7 @@ l'esprit d'un vivant de celui d'un mort
 \dt 09/Aug/2006
 
 \lx bwa mhwã
-\is locatif
+\is orientation
 \dialx GO(s)
 \ph bwa mhwÉ›ÌƒÌƒ  
 \ps direction
@@ -5905,7 +5917,7 @@ l'esprit d'un vivant de celui d'un mort
 \xn à droite
 \cf bwa mhõ
 \ce à gauche
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx bwabòzö
 \is cultures
@@ -6062,7 +6074,7 @@ rendre comestible
 \dt 17/Feb/2010
 
 \lx bwage
-\is liquide_eau
+\is eau_action
 \dialx GOs
 \ps v
 \ge dévier (eau)
@@ -6077,7 +6089,7 @@ rendre comestible
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bwagi ???
 \is noeud
@@ -6116,8 +6128,7 @@ rendre comestible
 \dt 29/Nov/2008
 
 \lx bwagiloo
-\is action.corps
-\is action.corps
+\is action_corps
 \dialx GO(s) PA
 \ps v
 \ge courber (se)
@@ -6131,7 +6142,7 @@ rendre comestible
 \xn
 \cf kiluu [GOs BO]
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx bwaida
 \is coquillage
@@ -6281,17 +6292,17 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \se bwalò-mae [PA]
 \sge fagot de paille
 \sn 2
-\is classificateur
+\is classificateur numérique
 \ge classificateur numérique : un tas de
 \xv bwalò-xe, bwalò-tru, bwalò-kò [GOs, PA]
 \xn un, deux, trois tas 
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx bwa-mõ
 \is navigation
-\is locatif
+\is topographie
 \dialx GO(s)
 \va bwa-mol
 \ve BO
@@ -6304,7 +6315,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn ils remontent à terre 
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx bwa-mwa
 \is maison
@@ -6426,7 +6437,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 04/Nov/2014
 
 \lx bwarabo ???
-\is forme
+\is caract.objet
 \dialx BO [BM]
 \ps v. statif
 \ge rond
@@ -6437,7 +6448,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx bwarao
 \is mouvement
@@ -6664,7 +6675,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 07/Nov/2014
 
 \lx bwawe
-\is action_noeud
+\is action_mains
 \dialx GOs
 \ps v
 \ge démêler 
@@ -6676,7 +6687,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bwaxala ???
 \is navigation
@@ -6708,7 +6719,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 07/Nov/2014
 
 \lx bwaa-xe
-\is classificateur
+\is classificateur numérique
 \dialx PA
 \ps classificateur
 \ge un fagot ; un paquet de feuilles, de paille
@@ -6721,7 +6732,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \nt
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx bwaxeni
 \is maison
@@ -6769,7 +6780,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 25/Dec/2014
 
 \lx bwe
-\is plante
+\is plantes_partie
 \dialx BO
 \hm 1
 \va bwee
@@ -6785,13 +6796,18 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn bâton, bout de bois
 \cf bwevwu
 \ce tronc; souche; bout de
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
-\lx bwe-
-\is topographie
+\lx bwe- 
 \dialx GO(s) BO PA
 \ps n (en composition)
-\ge tête de; sommet de; dessus de
+\is corps
+\ge tête de
+\re
+\gb
+\sn 2
+\is topographie
+\ge sommet de; dessus de
 \ge coiffure de
 \re
 \gb
@@ -6808,7 +6824,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \sge
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx bwèdò
 \is corps
@@ -6885,7 +6901,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 06/Jun/2007
 
 \lx bwèèdrö
-\is élément_terre
+\is terrain_terre
 \hm 1
 \dialx GO(s)
 \ph mbwÉ›:nÉ–òo
@@ -6900,7 +6916,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn par terre, au sol
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx bwe-hogo
 \is topographie
@@ -6938,7 +6954,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 
 \lx bwe-kui
 \is igname
-\is cultures
+\is cultures_bouture
 \dialx GO(s) PA
 \ps n
 \ge tête de l'igname (qui est replantée)
@@ -6950,7 +6966,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn
 \cf tho-kui
 \ce bout inférieur de l'igname
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx bwè-mwa
 \is maison
@@ -6967,7 +6983,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 26/Jun/2007
 
 \lx bweena
-\is lézard
+\is reptile_lézard
 \dialx GO(s)  PA BO
 \ps n
 \ge lézard
@@ -6976,7 +6992,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \rgb
 \xv
 \xn
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx bwe-no
 \is santé
@@ -7007,7 +7023,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 02/Mar/2010
 
 \lx bwe-pai
-\is résultat
+\is action_résultat
 \dialx GO(s) PA
 \va bwe-vai
 \ve GO(s) PA
@@ -7018,7 +7034,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \rgb
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx bwè-po 
 \is armes
@@ -7174,7 +7190,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 25/Dec/2014
 
 \lx bweeye
-\is saison
+\is temps
 \dialx PA
 \ps n
 \ge saison chaude et sèche
@@ -7186,7 +7202,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \nt
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx bwi
 \is maladie
@@ -7218,7 +7234,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 11/Jul/2007
 
 \lx bwili
-\is animaux_corps
+\is corps_animaux
 \dialx GO(s)
 \va dixo-bwa-n
 \ve PA
@@ -7234,7 +7250,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \poc *mpuji
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx bwi-nu
 \is ustensile
@@ -7252,7 +7268,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 09/Nov/2014
 
 \lx bwiri
-\is cordage
+\is cordes
 \ph bwiÉ½i
 \dialx GO(s)
 \va bwirik
@@ -7272,10 +7288,10 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn rênes
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx bwixuu
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx GO(s)
 \va bwixu
 \ve PA
@@ -7288,7 +7304,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \rgb
 \xv
 \xn
-\dt 11/Jul/2007
+\dt 09/Jun/2015
 
 \lx bwo
 \is nourriture
@@ -7309,7 +7325,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 22/Dec/2014
 
 \lx bwò
-\is chauve-souris
+\is mammifère_chauve-souris
 \hm 1
 \ph bwÉ”
 \dialx GO(s) PA BO
@@ -7326,7 +7342,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \poc *mpeka
-\dt 21/Feb/2010
+\dt 09/Jun/2015
 
 \lx bwò
 \is poisson
@@ -7373,12 +7389,13 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 
 \lx bwòò
 \is emprunt
-\is jeux
+\is jeu
 \dialx GO(s)
 \va bool
 \ve WE
 \ps n
 \ge ballon; balle
+\bw GB ball
 \re
 \gb
 \rgb
@@ -7386,7 +7403,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx bwòivhe
 \is insecte
@@ -7605,7 +7622,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 23/Dec/2014
 
 \lx cabeng 
-\is bananiers
+\is bananier
 \dialx PA BO
 \ps n
 \ge bananier (clone de); variété de banane-chef
@@ -7614,11 +7631,11 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \rgb
 \cf pòdi, puyai
 \ce
-\dt 29/May/2007
+\dt 09/Jun/2015
 
 \lx cabi
 \is mouvement
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \ps v
 \sn 1
@@ -7643,7 +7660,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \poc *tapi 'frapper avec la main'
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx cabicabi ???
 \is temps
@@ -7687,7 +7704,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \se a-yabòl [PA]
 \sge neveux côté maternel
 \sn 3
-\is plantes
+\is plantes_processus
 \ps n; v
 \ge repousse des feuilles [GOs]
 \ge reverdir [GOs]
@@ -7698,7 +7715,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn les bourgeons repoussent
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx cabo kò
 \is action
@@ -7738,7 +7755,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 04/Nov/2014
 
 \lx cabul
-\is liquide
+\is eau_action
 \dialx PA BO [BM]
 \ps v
 \ge déborder
@@ -7749,7 +7766,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf phu [GOs]
 \ce déborder
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx cabwau
 \is igname
@@ -7916,7 +7933,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 04/Nov/2014
 
 \lx caivwo
-\is animaux
+\is mammifères
 \dialx GO(s) PA BO
 \va caipo
 \ve GO vx
@@ -7929,7 +7946,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf ciibwin, zine
 \ce rat
-\dt 11/Jul/2007
+\dt 10/Jun/2015
 
 \lx ca-khã
 \is mouvement
@@ -7948,11 +7965,11 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 04/Nov/2014
 
 \lx caladaa
-\is emprunt ??
 \is société
 \dialx GO(s)
 \ps n
 \ge gendarme
+\bw FR gendarme
 \re
 \gb
 \rgb
@@ -7960,7 +7977,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx calaru
 \is insecte
@@ -8001,7 +8018,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 09/Nov/2014
 
 \lx calii
-\is plante
+\is plantes
 \dialx GO(s) PA BO 
 \ps n
 \ge magnania (petit tubercule sauvage) 
@@ -8014,7 +8031,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 18/Feb/2006
+\dt 09/Jun/2015
 
 \lx calo ???
 \is corps
@@ -8100,7 +8117,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 23/Dec/2014
 
 \lx chaamwa
-\is bananiers
+\is bananier
 \dialx GO(s) PA BO WE 
 \ph cÊ°a:mwa
 \ps n
@@ -8119,10 +8136,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 13/Feb/2010
+\dt 09/Jun/2015
 
 \lx chaamwa we-ê 
-\is bananiers
+\is bananier
 \dialx GO(s)
 \ps n
 \ge banane sucrée (petite)
@@ -8133,7 +8150,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 18/Feb/2006
+\dt 09/Jun/2015
 
 \lx ca-n
 \is classificateur nourriture 
@@ -8203,7 +8220,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 
 \lx chãnrã
 \hm 2
-\is aspect 
+\is grammaire_aspect 
 \ph chÉ›ÌƒÌƒÌƒÌƒnÉ›ÌƒÌƒÌƒÌƒ
 \dialx GO(s)
 \ps aspect persistif
@@ -8227,7 +8244,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ce PA
 \cf
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx chãnã waa
 \is fonct.nat
@@ -8272,7 +8289,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 09/Jul/2010
 
 \lx caanô
-\is plante
+\is plantes
 \dialx PA BO (Corne)
 \ps n
 \ge liane; salsepareille
@@ -8284,7 +8301,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 15/Mar/2010
+\dt 09/Jun/2015
 
 \lx caro ???
 \is danse
@@ -8361,7 +8378,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 14/Feb/2006
 
 \lx chaavwa-dili
-\is éléments_terre
+\is terrain_terre
 \ph cÊ°a:Î²a 
 \dialx GO(s)
 \va cava dili 
@@ -8378,10 +8395,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn marcher dans la boue
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx cavwe
-\is quantificateur
+\is grammaire_quantificateur
 \ph caÎ²e
 \dialx GO(s)
 \ps quantificateur
@@ -8401,7 +8418,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn ils(3) ont ensemble le même nom
 \cf
 \ce
-\dt 22/Jul/2007
+\dt 09/Jun/2015
 
 \lx chavwi
 \is nourriture
@@ -8433,6 +8450,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ve BO (Corne)
 \ps v ; n
 \ge laver  (avec du savon) ; savon
+\bw FR savon
 \re
 \gb
 \rgb
@@ -8450,7 +8468,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \gt elle lave les vêÃªtements
 \cf jaamwe
 \ce laver
-\dt 04/Nov/2014
+\dt 04/Jun/2015
 
 \lx câwâ ???
 \is interaction
@@ -8516,7 +8534,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 19/Dec/2014
 
 \lx chaxe
-\is action.corps
+\is action_corps
 \ph cÊ°aÉ£e
 \dialx PA BO [BM]
 \ps v
@@ -8528,7 +8546,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx caxòò
 \is mouvement
@@ -8644,7 +8662,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 13/Jul/2007
 
 \lx caayo!
-\is vocatif
+\is grammaire_vocatif
 \va caayu!
 \dialx BO (Corne)
 \ps vocatif
@@ -8657,7 +8675,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \cf
 \ce
 \nt
-\dt 25/Feb/2010
+\dt 09/Jun/2015
 
 \lx cazae
 \is action
@@ -8675,8 +8693,8 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 
 \lx ce
 \hm 1
-\is matière_bois
-\is plante_arbre
+\is matière
+\is arbre
 \dialx GO(s) PA BO
 \ph cÉ¨
 \va ce
@@ -8708,7 +8726,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \cf
 \ce
 \poc *kai
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx ce 
 \hm 2
@@ -8883,7 +8901,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 26/Dec/2007
 
 \lx cego ???
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \ps n
 \ge perches plantées devant les portes des cases (Dubois)
@@ -8894,10 +8912,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx ce-kabun
-\is coutumes
+\is coutumes_objet
 \dialx BO (Corne)
 \ps n
 \ge perche signalant un interdit
@@ -8908,10 +8926,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf ce-nôbu
 \ce
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx ce-ka, ce-xa
-\is plante
+\is plantes
 \dialx GO(s)
 \va ce-kam
 \ve BO (Corne)
@@ -8925,10 +8943,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx ce-kui
-\is plante
+\is plantes
 \dialx GO(s)
 \va ce-xui
 \ve GO(s)
@@ -8942,10 +8960,10 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 05/Jul/2006
+\dt 09/Jun/2015
 
 \lx ce-kura
-\is plante
+\is plantes
 \ph cÉ¨ kura
 \dialx GO(s) PA 
 \va ce-kutra
@@ -8961,7 +8979,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 15/Feb/2010
+\dt 09/Jun/2015
 
 \lx chele  
 \is action_mains
@@ -8996,7 +9014,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 25/Dec/2014
 
 \lx ce-mããni
-\is plante
+\is plantes
 \dialx GO(s)
 \ps n
 \ge sensitive (a des piquants; tige rouge; feuilles vert-gris, se ferme quand on la touche : mããni 'dormir'
@@ -9008,7 +9026,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx ce-mwa
 \is maison
@@ -9075,7 +9093,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 13/Feb/2010
 
 \lx ce-nôbu
-\is coutumes
+\is coutumes_objet
 \dialx BO (Corne)
 \ps n
 \ge perche signalant un interdit
@@ -9090,7 +9108,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \cf ce-kabun
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx ce-nuda
 \is maison
@@ -9123,7 +9141,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 07/Nov/2014
 
 \lx ce-thri
-\is coutumes
+\is coutumes_objet
 \dialx GO(s)
 \ps n
 \ge perche qui annonce le décès d'un chef
@@ -9134,7 +9152,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx cetil ???
 \is armes
@@ -9198,8 +9216,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 19/Jun/2007
 
 \lx cèvèro
-\is animaux
-\is emprunt ??
+\is mammifères
 \dialx BO PA BO
 \ps n
 \ge cerf
@@ -9208,10 +9225,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \rgb
 \xv
 \xn
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx chèèvwe
-\is bananiers
+\is bananier
 \dialx GO(s)
 \va chèèbwe
 \ph cÊ°É›:vwe
@@ -9226,7 +9243,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 05/Jun/2007
+\dt 09/Jun/2015
 
 \lx ce-xiai
 \is feu
@@ -9244,7 +9261,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 09/Nov/2014
 
 \lx cee-xòò
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \va ce-kòòl
 \ve BO (Corne)
@@ -9258,7 +9275,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx ce-xou
 \is arbre
@@ -9277,7 +9294,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 22/Jun/2007
 
 \lx cexu ???
-\is animaux
+\is mammifères
 \dialx GO
 \ps nom
 \ge boeuf
@@ -9288,7 +9305,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 28/May/2007
+\dt 10/Jun/2015
 
 \lx ceya ???
 \is maison
@@ -9353,7 +9370,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \is corps
 \ge peau 
 \sn 2
-\is plante
+\is plantes_partie
 \ge écorce
 \re
 \gb
@@ -9369,11 +9386,11 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \gr cii-n [PA, BO]
 \gt sa peau
 \poc *kuli(t)
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx cii
 \hm 2
-\is quantificateur_degré
+\is grammaire_quantificateur_degré
 \dialx GO(s) PA BO
 \va cee
 \ve PA
@@ -9394,7 +9411,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn il est vraiment costaud
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx cii êgu
 \is société
@@ -9428,7 +9445,6 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 04/Mar/2010
 
 \lx cia 
-\is société
 \is danse
 \hm 1
 \ph cia
@@ -9438,7 +9454,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \re
 \gb dance
 \rgb
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx ciia
 \hm 2
@@ -9502,7 +9518,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 25/Dec/2014
 
 \lx cibò
-\is animaux_corps
+\is corps_animaux
 \dialx GO(s)
 \ps n
 \ge queue (poisson)
@@ -9516,10 +9532,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx ciibwin
-\is animaux
+\is mammifères
 \dialx PA BO
 \va cibwi
 \ve BO
@@ -9533,7 +9549,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf zine [GOs]
 \ce rat
 \poc *ka(n)supe
-\dt 18/Feb/2010
+\dt 10/Jun/2015
 
 \lx ci-chaamwa
 \is bananier
@@ -9551,7 +9567,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 27/Feb/2010
 
 \lx cii-ce
-\is plantes
+\is plantes_partie
 \dialx GO PA
 \va ci-cee
 \ve PA
@@ -9559,10 +9575,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ge écorce
 \nt
 \poc *kupit 'bark, peelings'
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx ci-ciò
-\is outil
+\is outils
 \dialx GO(s)
 \ps n
 \ge tôle
@@ -9577,7 +9593,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf ci-
 \ce peau
 \nt
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx chiçô
 \is emprunt
@@ -9588,6 +9604,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ve PA
 \ps n
 \ge ciseaux
+\bw FR ciseaux
 \re
 \gb
 \rgb
@@ -9595,7 +9612,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx cii-du
 \is corps
@@ -9708,6 +9725,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx PA
 \ps n
 \ge chemise
+\bw FR chemise
 \re
 \gb
 \rgb
@@ -9715,10 +9733,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx cimwî
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \va khimwi
 \ve BO [BM]
@@ -9734,7 +9752,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \poc *kumi
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx cin
 \is arbre
@@ -9785,7 +9803,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ge taille; circonférence
 \ge occuper tout l'espace
 \sn 2
-\is quantificateur
+\is grammaire_quantificateur
 \ge tous 
 \gb
 \rgb
@@ -9811,7 +9829,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ce grand
 \cf pònõ
 \ce petit
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx chinõõ
 \is action_mains
@@ -9826,7 +9844,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 25/Dec/2014
 
 \lx ci-nru
-\is cocotier
+\is arbre_cocotier
 \ph ci-É³u
 \dialx GO(s)
 \ps n
@@ -9838,7 +9856,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx chiò
 \is emprunt
@@ -9847,6 +9865,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dialx GO(s) BO PA
 \ps n
 \ge seau
+\bw FR seau
 \re
 \gb
 \rgb
@@ -9854,7 +9873,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx cii-phagòò
 \is corps
@@ -9890,7 +9909,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 13/Jul/2007
 
 \lx cii-pòò
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \ps n
 \ge écorce de bourao (sert à la confection des jupes anciennes)
@@ -9901,7 +9920,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx ci-phwa
 \is corps
@@ -10098,7 +10117,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 25/Dec/2014
 
 \lx ciixo
-\is coutumes
+\is coutumes_objet
 \ph ci:É£o
 \dialx PA
 \ps n
@@ -10111,7 +10130,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx ciiza
 \is insecte
@@ -10194,7 +10213,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ve BO (BM]
 \ps v.i
 \sn 1
-\is action.corps
+\is action_corps
 \ge suspendu 
 \ge accroché
 \ge soulever (un objet léger)
@@ -10216,7 +10235,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ce suspendre, accrocher qqch.
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx cò mhwedin ???
 \is corps
@@ -10233,7 +10252,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 16/Jul/2007
 
 \lx chôã
-\is jeux
+\is jeu
 \dialx GO(s) PA BO WEM WE
 \ph cÊ°Ã´Ã£ 
 \ps v; n
@@ -10257,10 +10276,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \gt jouer avec qqch
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx chôãnri
-\is jeux
+\is jeu
 \ph cÊ°Ã´Ã£É³i
 \dialx GO(s) WEM WE
 \ps vt
@@ -10273,10 +10292,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf chôã (v.i.)
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx cobo
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge tapoter
@@ -10287,10 +10306,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx coboe
-\is action.main
+\is action_mains
 \dialx GO(s)
 \va cobwoi
 \ve BO (Corne, BM)
@@ -10304,11 +10323,11 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \poc *(Å‹)kompi
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx cò-chaamwa
-\is bananiers
-\is plantes
+\is bananier
+\is plantes_partie
 \ph cÉ”-cÊ°a:mwa
 \dialx GO(s)
 \ps n
@@ -10320,7 +10339,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx cocovwa
 \is grammaire_quantificateur
@@ -10372,10 +10391,9 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \is mouvement
 \ph cÏ‰du
 \dialx GO(s) WEM
-\va cu-du
+\va cu-du, cul-du
 \ve PA 
-\mr cul-du
-\ps v
+\ps V
 \ge plonger; sauter en bas
 \re
 \gb
@@ -10386,10 +10404,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ce entrer (dans une maison)
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx cooge
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \va coge
 \ve BO
@@ -10405,10 +10423,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \sge soulever en l'air
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx coi
-\is action.corps
+\is action_corps
 \ph cÏ‰i
 \dialx GO(s) PA BO
 \ps v
@@ -10425,10 +10443,10 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \poc *k(a/e)li
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx côî
-\is action.corps
+\is action_corps
 \ph cÃ´Ã®
 \dialx GO(s)
 \va chôî
@@ -10446,7 +10464,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx colomi ???
 \dialx GO
@@ -10537,9 +10555,24 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ce
 \dt 22/Dec/2014
 
+\lx coutumes_objetpagil ???
+\dialx BO
+\va pakil
+\ve BO
+\ps v
+\ge abstenir (s') (de telle nourriture; Dubois)
+\re
+\gb
+\rgb
+\xv
+\xn
+\cf
+\ce
+\dt 10/Jun/2015
+
 \lx chòvwa
 \is emprunt
-\is animaux
+\is mammifères
 \dialx GO(s)
 \ph cÊ°É”Î²a ; cÊ°É”va
 \va còval
@@ -10548,6 +10581,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ve PA
 \ps n
 \ge cheval
+\bw FR cheval
 \re
 \gb
 \rgb
@@ -10555,7 +10589,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \xn mon cheval
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx coxada
 \is navigation
@@ -10621,7 +10655,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx cò, yò
 \hm 3
-\is pronom
+\is grammaire_pronom
 \dialx GO PA
 \ps pronom sujet 2°  duel
 \ge vous 2
@@ -10632,7 +10666,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 05/Jul/2006
+\dt 09/Jun/2015
 
 \lx chö
 \is poisson
@@ -10733,7 +10767,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx cö, çö, yö
 \ph Ê’Ï‰
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \va co, yo
 \ve PA
@@ -10748,10 +10782,10 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 10/Feb/2010
+\dt 09/Jun/2015
 
 \lx cu ???
-\is quantificateur_degré
+\is grammaire_quantificateur_degré
 \hm 1
 \dialx BO (Corne)
 \va cuu
@@ -10764,10 +10798,10 @@ dans le processus dont l'un est celui qui coupe)
 \xn il a trop pris d'anguilles
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx cubii
-\is action.dents
+\is action.tête
 \dialx PA
 \ps v
 \ge déchirer avec les dents
@@ -10782,10 +10816,10 @@ dans le processus dont l'un est celui qui coupe)
 \cf kaobi
 \ce casser avec les dents
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx cubu
-\is liquide
+\is eau_action
 \dialx GO(s)
 \ps v
 \ge déborder
@@ -10799,7 +10833,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx chue
 \is emprunt 
@@ -10808,6 +10842,7 @@ dans le processus dont l'un est celui qui coupe)
 \ph cÊ°ue 
 \ps v
 \ge jouer (guitare, carte, jeu de balle, sport)
+\bw FR jouer
 \re
 \gb
 \rgb
@@ -10815,7 +10850,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 04/Jun/2015
 
 \lx cuk
 \is emprunt
@@ -10823,6 +10858,7 @@ dans le processus dont l'un est celui qui coupe)
 \dialx PA BO
 \ps n
 \ge sucre
+\bw FR sucre
 \re
 \gb
 \rgb
@@ -10830,7 +10866,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx cuka ???
 \dialx BO 
@@ -10847,7 +10883,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 16/Jul/2007
 
 \lx cul (a) kao
-\is liquide
+\is eau_action
 \dialx PA
 \va col a kao
 \ve BO
@@ -10864,7 +10900,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx cula ???
 \dialx GO
@@ -10881,7 +10917,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 15/Feb/2006
 
 \lx cura
-\is société
+\is habitat
 \dialx BO [BM]
 \ps v
 \ge habiter (littéraire)
@@ -10892,7 +10928,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn ils habitent à cet endroit en haut P.
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx cuva ègu ???
 \dialx BO [Corne]
@@ -10924,7 +10960,7 @@ dans le processus dont l'un est celui qui coupe)
 \gb
 \rgb
 \sn 2
-\is caract.animé
+\is caract.
 \ge courage ; courageux
 \re
 \gb
@@ -10933,10 +10969,10 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx da
-\is directionnel
+\is grammaire_directionnel
 \hm 1
 \ph nda  
 \dialx GO(s) PA BO
@@ -10950,7 +10986,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \poc *sake
-\dt 26/Dec/2007
+\dt 09/Jun/2015
 
 \lx da?
 \ph nda
@@ -11099,7 +11135,7 @@ dans le processus dont l'un est celui qui coupe)
 \lx draa
 \hm 3
 \ph É–a
-\is gramm
+\is grammaire_contraste
 \dialx GO(s) 
 \va daa
 \ve PA BO
@@ -11128,11 +11164,11 @@ dans le processus dont l'un est celui qui coupe)
 \xn il a fini par avouer, par le dire !
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 10/Jun/2015
 
 \lx draa punre
 \ph É–a:puÉ³e
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
 \ps adv.
 \ge volontairement ; exprès
@@ -11149,7 +11185,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn ils me l'ont montré exprès
 \cf kavwö li draa pu-nre [GOs]
 \ce ils ne  l'ont pas fait volontairement
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx draba
 \is mer
@@ -11182,7 +11218,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx drabu
 \ph É–abu
-\is tortue
+\is reptile_tortue
 \dialx GO(s)
 \ps n
 \ge tortue de mer "grosse tête"
@@ -11191,7 +11227,7 @@ dans le processus dont l'un est celui qui coupe)
 \rgb
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx draaçi
 \ph É–a:dÊ’i
@@ -11357,7 +11393,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 25/Dec/2014
 
 \lx drale
-\is action.corps
+\is action_corps
 \hm 1
 \ph É–ale
 \dialx GO(s) 
@@ -11375,7 +11411,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \poc *saRi (daale nÃªl)
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx drale
 \is crabe
@@ -11423,7 +11459,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 02/Mar/2010
 
 \lx daluça mã
-\is coutumes
+\is coutumes_objet
 \dialx GOs
 \va ba-oginen
 \ve PA BO
@@ -11438,10 +11474,10 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx damado ???
-\is coutumes
+\is coutumes_objet
 \dialx BO [Corne]
 \ps nom
 \ge perche de l'igname et du taro (perches près de la case indiquant la plante sacrée)
@@ -11454,7 +11490,7 @@ dans le processus dont l'un est celui qui coupe)
 \un
 \cf jaapu [Corne]
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx dame
 \is emprunt
@@ -11465,7 +11501,7 @@ dans le processus dont l'un est celui qui coupe)
 \ps v
 \ge tasser (en frappant)
 \re
-\bw damer
+\bw FR damer
 \re
 \gb
 \rgb
@@ -11475,7 +11511,7 @@ dans le processus dont l'un est celui qui coupe)
 \sge outil pour damer
 \cf kha
 \ce écraser (avec le pied), appuyer
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx draani
 \is poisson
@@ -11514,13 +11550,13 @@ dans le processus dont l'un est celui qui coupe)
 \va daòn
 \dialx PA BO
 \ph ndaÉ”n
-\ps nom
+\ps n
 \ge
 \sn 1
-\is atmosphère
+\is éléments_atmosphère
 \ge vapeur; brouillard
 \sn 2
-\is fonct.nat
+\is fonct.nat.
 \ge haleine
 \re
 \gb
@@ -11529,7 +11565,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx draa-phwalawa
 \is nourriture
@@ -11547,7 +11583,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx drapwê
 \is étapes.vie
-\is société
+\is parenté
 \dialx GO(s)
 \va damwê
 \ve ???
@@ -11560,7 +11596,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn veuf du clan P.
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx daatra ???
 \dialx
@@ -11749,7 +11785,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 22/Dec/2014
 
 \lx de-
-\is classificateur
+\is classificateur numérique
 \hm 2
 \dialx GO(s) PA
 \ph nde
@@ -11762,7 +11798,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn une, deux, trois main de bananes, etc.
 \cf thò-xe
 \ce (pour les régimes)
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx dè
 \hm 1
@@ -12010,7 +12046,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 19/Feb/2010
 
 \lx dee-chaamwa 
-\is bananiers
+\is bananier
 \dialx GO(s) BO
 \ps n
 \ge main de banane
@@ -12021,7 +12057,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx de-du ?? 
 \is maison
@@ -12247,7 +12283,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 23/Dec/2014
 
 \lx di
-\is plante
+\is plantes
 \ph ndi
 \dialx GO(s) PA BO 
 \ps n
@@ -12261,7 +12297,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \poc *nsiRi, *jiRi (Ross)
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx diia
 \is coquillage
@@ -12287,7 +12323,9 @@ dans le processus dont l'un est celui qui coupe)
 \ph ndibe:
 \dialx GO(s)
 \ps n
-\ge beurre (lit. du beurre)
+\ge beurre
+\re
+\bw FR du beurre
 \re
 \gb
 \rgb
@@ -12295,7 +12333,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx dibwala ???
 \is cultures
@@ -12363,7 +12401,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 11/Nov/2014
 
 \lx digöö
-\is plante
+\is plantes
 \dialx GO(s)
 \va digoony
 \ve BO PA
@@ -12377,7 +12415,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx dilee
 \is action_mains
@@ -12395,7 +12433,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 25/Dec/2014
 
 \lx dili
-\is élément_terre
+\is terrain_terre
 \dialx GO(s) BO PA 
 \ph ndili
 \ps n
@@ -12421,11 +12459,10 @@ dans le processus dont l'un est celui qui coupe)
 \sge terre rouge
 \cf dilee
 \ce crépir ; faire (un mur) en torchis
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dili baa
-\is cultures
-\dialx GO(s)
+\is terrain_terre
 \va dili baang
 \ve PA
 \ps n
@@ -12439,10 +12476,10 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \nt
-\dt 02/Mar/2010
+\dt 10/Jun/2015
 
 \lx driluu
-\is plante
+\is plantes
 \ph É–ilu:
 \dialx GO(s)
 \va dilu, dilo
@@ -12457,7 +12494,7 @@ dans le processus dont l'un est celui qui coupe)
 \rgb
 \cf
 \ce
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx dimòm
 \is fonct.nat
@@ -12527,7 +12564,7 @@ Se déguste de préférence sucré.
 \dt 23/Dec/2014
 
 \lx dii-nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s) BO
 \ps nom
 \ge fibre de coco
@@ -12538,7 +12575,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 21/Feb/2010
+\dt 09/Jun/2015
 
 \lx dii-peena ???
 \dialx GO
@@ -12625,7 +12662,7 @@ Se déguste de préférence sucré.
 \dt 26/Jun/2007
 
 \lx dixa-ce
-\is plantes
+\is plantes_partie
 \dialx GO(s) PA
 \ps n
 \ge résine ; sève
@@ -12637,10 +12674,10 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \poc *suRuq
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dixa-nu
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s) PA BO
 \va dika-nu
 \ve GO(s) BO
@@ -12653,7 +12690,7 @@ Se déguste de préférence sucré.
 \xn résidu de coco
 \cf
 \ce
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx diixe
 \is action
@@ -12735,7 +12772,7 @@ Se déguste de préférence sucré.
 \dt 23/Jun/2007
 
 \lx dròò
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \ph É–É”:
 \va dòò
@@ -12757,10 +12794,10 @@ Se déguste de préférence sucré.
 \se drò-kenii-je [GOs]
 \sge son pavillon d'oreille
 \poc *nÉ–au(n)
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dròò  ê
-\is plante
+\is plantes_partie
 \ph É–É”: Ãª
 \dialx GO(s)
 \va dòò  èm
@@ -12778,7 +12815,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \nt
-\dt 27/Feb/2010
+\dt 10/Jun/2015
 
 \lx do jitrua
 \is armes
@@ -12838,23 +12875,23 @@ Se déguste de préférence sucré.
 \sn 1
 \is action
 \ge éboulement; écrouler (s')
-\sn 1
-\is caract.
-\ge érosion ; ravinement; terre ravinée
-\re
-\gb
-\rgb
 \xv e drõbö mwa [GOs]
 \xn la maison s'est écroulée
 \xv e drõbö dili [GOs]
 \xn la terre s'éboule
-\xv e drõbö hogo [GOs]
-\xn la montagne se ravine, s'érode
 \xv nru drõbö-nri mwa
 \xn j'ai démoli les murs de la  maison
+\sn 2
+\is action
+\ge érosion ; ravinement; terre ravinée
+\re
+\gb
+\rgb
+\xv e drõbö hogo [GOs]
+\xn la montagne se ravine, s'érode
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx do-bubu
 \is topographie
@@ -12898,7 +12935,7 @@ Se déguste de préférence sucré.
 \dt 19/Feb/2010
 
 \lx drògò
-\is coutumes
+\is coutumes_objet
 \is maison
 \dialx GO(s) WEM 
 \ph É–É”Å‹gÉ”
@@ -12911,7 +12948,7 @@ Se déguste de préférence sucré.
 \re
 \gb
 \rgb
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx dròò-keni
 \is corps
@@ -12960,7 +12997,7 @@ Se déguste de préférence sucré.
 \dt 07/Nov/2014
 
 \lx dòòla ??
-\is plantes
+\is son
 \dialx BO [Corne]
 \ps n
 \ge bruissement 
@@ -12971,10 +13008,10 @@ Se déguste de préférence sucré.
 \xn le bruissement des feuilles
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dòlògò
-\is plante
+\is plantes
 \ph dÉ”lÉ”Å‹gÉ”
 \dialx GO(s)
 \va do-lògòm
@@ -12989,7 +13026,7 @@ Se déguste de préférence sucré.
 \xn feuille d'Aramanthus
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx dom
 \is caract.objet
@@ -13051,7 +13088,7 @@ Se déguste de préférence sucré.
 \dt 11/Mar/2010
 
 \lx dõni 
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) PA BO
 \ps locatif
 \ge parmi ; entre
@@ -13064,10 +13101,10 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx dònrò 
-\is éléments_ciel
+\is ciel
 \dialx GO(s)
 \ph dÉ”É³É” ; dÉ”É³É”Ìƒ 
 \va dòòn
@@ -13084,7 +13121,7 @@ Se déguste de préférence sucré.
 \sge ciel nuageux
 \cf phwa [PA]
 \ce ciel
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dõõgo
 \is crabe
@@ -13137,7 +13174,7 @@ Se déguste de préférence sucré.
 \dt 23/Dec/2014
 
 \lx dròò-phê
-\is plante
+\is plantes
 \ph É–É”:phÃª
 \dialx GO(s)
 \va dròò-phoã
@@ -13150,7 +13187,7 @@ Se déguste de préférence sucré.
 \rgb
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx dòò-phwa
 \is corps
@@ -13168,7 +13205,7 @@ Se déguste de préférence sucré.
 \dt 25/Feb/2010
 
 \lx dopweza
-\is coutumes
+\is coutumes_objet
 \dialx PA BO 
 \ps n
 \ge feuille de bananier qui enveloppe la monnaie 'weem' (Charles)
@@ -13181,7 +13218,7 @@ Se déguste de préférence sucré.
 \xn
 \cf pwamwanu; weem; yòò
 \ce
-\dt 29/May/2007
+\dt 10/Jun/2015
 
 \lx doori
 \is maison
@@ -13220,7 +13257,6 @@ Se déguste de préférence sucré.
 \dt 05/Mar/2010
 
 \lx dou
-\is société
 \is échanges
 \dialx GO(s)
 \ps n
@@ -13233,7 +13269,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx dou
 \dialx GOs PA
@@ -13301,7 +13337,7 @@ Se déguste de préférence sucré.
 \dt 27/Feb/2010
 
 \lx drovwe
-\is élément_terre
+\is terrain_terre
 \ph É–oÎ²e  
 \dialx GO(s) PA BO
 \va do-bhe ; do-phe 
@@ -13316,7 +13352,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx drovwiju
 \is outils
@@ -13336,7 +13372,7 @@ Se déguste de préférence sucré.
 \dt 20/Jul/2007
 
 \lx dròò-xè
-\is classificateur
+\is classificateur numérique
 \dialx GO
 \ph É–É”:É£É›
 \va dòò-
@@ -13350,7 +13386,7 @@ Se déguste de préférence sucré.
 \xn un ; deux
 \cf
 \ce
-\dt 27/Feb/2006
+\dt 09/Jun/2015
 
 \lx dròòxi
 \is religion
@@ -13485,7 +13521,7 @@ Se déguste de préférence sucré.
 \dt 07/Nov/2014
 
 \lx döölia
-\is plante
+\is plantes_partie
 \dialx GO(s) PA BO
 \ph dÏ‰:lia
 \va dolia 
@@ -13500,10 +13536,10 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \poc *suRi
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx döölia thra
-\is plantes
+\is plantes_partie
 \dialx GOs
 \ps
 \ge épines, piquants de la nervure centrale de pandanus qu'on enlève
@@ -13514,7 +13550,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 23/Feb/2010
+\dt 10/Jun/2015
 
 \lx dö-vwiã 
 \is oiseau
@@ -13579,7 +13615,7 @@ Se déguste de préférence sucré.
 \dt 21/Dec/2014
 
 \lx du 
-\is directionnel
+\is grammaire_directionnel
 \ph ndu
 \hm 2
 \dialx GO(s) PA
@@ -13593,7 +13629,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \poc *(n)sipo
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx du dròò-chaamwa
 \is bananier
@@ -13663,7 +13699,7 @@ Se déguste de préférence sucré.
 
 \lx drube
 \is emprunt
-\is animaux
+\is mammifères
 \dialx GO(s) 
 \va dube 
 \ve PA
@@ -13672,13 +13708,14 @@ Se déguste de préférence sucré.
 \ps n
 \ge cerf
 \re
+\re
 \gb
 \rgb
 \xv
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx dubila
 \is soin
@@ -13737,7 +13774,7 @@ Se déguste de préférence sucré.
 \dt 19/Feb/2010
 
 \lx du-hegi
-\is coutumes
+\is coutumes_objet
 \dialx GO(s)
 \ps n
 \ge ossature de la monnaie
@@ -13748,7 +13785,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 18/Feb/2010
+\dt 10/Jun/2015
 
 \lx du-hogo
 \is topographie
@@ -13801,7 +13838,7 @@ Se déguste de préférence sucré.
 \dt 23/Dec/2014
 
 \lx du-mi
-\is directionnel
+\is grammaire_directionnel
 \dialx GO(s)
 \ve
 \ps directionnel
@@ -13813,10 +13850,10 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx e
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
 \ps v
 \ge convenir ; être bien
@@ -13831,7 +13868,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx e-
 \is grammaire_parenté
@@ -13856,7 +13893,7 @@ Se déguste de préférence sucré.
 
 \lx -e
 \hm 1
-\is directionnel
+\is grammaire_directionnel
 \dialx GO(s) PA
 \ps directionnel transverse
 \ge en s'éloignant du locuteur (axe transverse) (d'une vallée à l'autre, traversant un cours d'eau)
@@ -13867,7 +13904,7 @@ Se déguste de préférence sucré.
 \xn elle donne à ses enfants du riz
 \cf
 \ce
-\dt 28/Jun/2007
+\dt 09/Jun/2015
 
 \lx -e
 \is grammaire
@@ -13888,7 +13925,7 @@ Se déguste de préférence sucré.
 
 \lx ê
 \hm 1
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GOs
 \va ã
 \ve GOs
@@ -13900,11 +13937,11 @@ Se déguste de préférence sucré.
 \cf ò (Dx2)
 \ce
 \cf ã, òli (Dx3)
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx ê 
 \hm 2
-\is plante
+\is plantes
 \dialx GO(s) 
 \va èm
 \ph É›Ìƒm
@@ -13922,7 +13959,7 @@ Se déguste de préférence sucré.
 \se whili èm
 \sge sucer de la canne à sucre
 \cf
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx è ???
 \hm 2
@@ -14176,7 +14213,7 @@ de frère de mère ; fils de la soeur du père
 \dt 15/Feb/2006
 
 \lx êdoa
-\is plante
+\is plantes
 \dialx GO(s)
 \ph e'ndoa
 \va êdo
@@ -14190,7 +14227,7 @@ de frère de mère ; fils de la soeur du père
 \xn
 \cf
 \ce
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx êdu
 \is locatif
@@ -14221,7 +14258,7 @@ de frère de mère ; fils de la soeur du père
 \dt 03/Mar/2010
 
 \lx -êê
-\is pronom
+\is grammaire_pronom
 \dialx GO
 \ps pronom objet ou possessif 1° duel inclusif 
 \ge nous ; nos
@@ -14236,10 +14273,10 @@ de frère de mère ; fils de la soeur du père
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx êgi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge attraper (qqch en mouvement: ballon, à la pêche, des crabes, poissons)
@@ -14255,7 +14292,7 @@ de frère de mère ; fils de la soeur du père
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx êgo 
 \is oiseau
@@ -14356,7 +14393,7 @@ de frère de mère ; fils de la soeur du père
 \dt 19/Feb/2010
 
 \lx egu
-\is grammaire
+\is grammaire_agent
 \hm 2
 \dialx GO
 \va eku
@@ -14373,7 +14410,7 @@ de frère de mère ; fils de la soeur du père
 \un
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx êgu
 \is société
@@ -14420,7 +14457,7 @@ de frère de mère ; fils de la soeur du père
 \dt 25/Dec/2014
 
 \lx èjè-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ph ÌƒÌƒÌƒÌƒÌƒÌƒÌƒÉ›ÌƒjÉ›ÌƒÌƒ
 \ps démonstratif
@@ -14433,10 +14470,10 @@ de frère de mère ; fils de la soeur du père
 \cf èjè-eni, èjè-ba, èjè-õli, èjè-du mu, èjè-èda, èjè-èdu, èjè-bòli
 \ce cette femme-là (DX2), cette femme-là (DX2 sur le côté), cette femme-là-bas (DX3), cette femme-là derrière, cette femme-là-haut, 
 cette femme-là en bas, cette femme-là loin en bas
-\dt 20/May/2007
+\dt 09/Jun/2015
 
 \lx e-jeni
-\is pronom
+\is grammaire_pronom
 \dialx GOs PA BO
 \ps démonstratif
 \ge voilà (le) pas loin
@@ -14447,10 +14484,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx èla-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif DX1
 \ge ceux-ci
@@ -14461,10 +14498,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èla-èni, èla-èba, èla-õli, èla-èdu mu, èla-èda, èla-èdu, èla-èbòli
 \ce ceux-là (DX2), ceux-là (DX2 sur le côté), ceux-là-bas (DX3), ceux-là derrière, ceux-là-haut, ceux-là en bas, ceux-là en bas loin
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx èla-õli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif DX1
 \ge ceux-là-bas (DX3)
@@ -14476,10 +14513,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx ele
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \ps v
 \ge pousser (qqch avec la main)
@@ -14495,10 +14532,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx èli-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps démonstratif DX1
 \ge ces2-ci
@@ -14509,18 +14546,17 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èli-èni, èli-èba, èli-õli, èli-èdu mu, èli-èda, èli-èdu, èli-ebòli
 \ce ces2-là (DX2), ces2-là (DX2 sur le côté), ces2-là-bas (DX3), ces2-là derrière, ces2-là-haut, ces2-là en bas, ces2-là loin en bas
-\dt 02/Mar/2006
+\dt 09/Jun/2015
 
 \lx èlò
-\is interaction
-\is fonct.intell
 \dialx GO PA BO
-\ps interjection
-\ge
+\ps interjection, v
 \sn 1
+\is interaction
 \ge oui
 \re
 \sn 2
+\is fonct.intell
 \ge accepter; dire oui
 \re
 \gb
@@ -14532,10 +14568,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \an ai
 \at non
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx èlò-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps démonstratif DX1
 \ge ces3-ci
@@ -14546,7 +14582,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èlò-èni, èlò-èba, èlò-õli, èlò-èdu mu, èlò-èda, èlò-èdu, èlò-èbòli
 \ce ces3-là (DX2), ces3-là (DX2 sur le côté), ces3-là-bas (DX3), ces3-là derrière, ces3-là-haut, ces3-là loin en bas
-\dt 02/Mar/2006
+\dt 09/Jun/2015
 
 \lx eloe
 \is nourriture
@@ -14568,7 +14604,7 @@ cette femme-là en bas, cette femme-là loin en bas
 
 \lx èlòè !
 \is interpellation
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps interjection
 \ge eh ! vous  ! (triel)
@@ -14579,11 +14615,11 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx emãli !
 \is interpellation
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps duel
 \ge eh vous deux ! voilà les deux????
@@ -14594,10 +14630,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx emãlo
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps triel
 \ge voilà les trois????
@@ -14609,7 +14645,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx è-mõõ
 \is parenté_couple
@@ -14792,7 +14828,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 25/Feb/2010
 
 \lx ênrê-da
-\is directionnel
+\is grammaire_directionnel
 \dialx GO(s)
 \va ènîda
 \ve WEM
@@ -14807,10 +14843,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx ênrê-du 
-\is locatif
+\is topographie
 \dialx GO(s)
 \ph enÉ›Ìƒdu   
 \ps locatif directionnel
@@ -14821,7 +14857,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \rgb
 \xv ênê-du mwa
 \xn très loin en aval
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx ênrè-ò
 \is locatif
@@ -14948,7 +14984,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ph É›ÌƒÉ³É”Ìƒ ni gÉ”
 \dialx GO PA
 \ps n
-\ge le puîné (enfant du milieu)
+\ge puîné (enfant du milieu)
 \re
 \gb
 \rgb
@@ -14957,7 +14993,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 04/Mar/2010
+\dt 10/Jun/2015
 
 \lx ênrõ xa pogabe
 \is étapes.vie
@@ -15011,7 +15047,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 02/Mar/2010
 
 \lx ènoma
-\is pronom
+\is grammaire_pronom
 \dialx PA BO [BM]
 \ps démonstratif
 \ge les autres
@@ -15022,7 +15058,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn les autres parlent
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx ênruda
 \is locatif
@@ -15042,7 +15078,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 03/Mar/2010
 
 \lx e-nye
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GOs PA BO
 \ps démonstratif
 \ge voici (le) 
@@ -15053,7 +15089,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx e-nye-ba
 \is grammaire_présentation
@@ -15086,7 +15122,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx e-nyoli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GOs PA 
 \ps démonstratif
 \ge voilà (le) ; celui-là (visible)
@@ -15096,7 +15132,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx e-nyu-da
 \is grammaire_présentation
@@ -15243,7 +15279,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 20/Feb/2006
 
 \lx evhe
-\is grammaire_quantification
+\is grammaire_quantificateur
 \dialx PA BO
 \va epe
 \ve
@@ -15257,7 +15293,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt epè- couple hétérogène Haudr + leenh
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx exa
 \is grammaire_conjonction
@@ -15315,6 +15351,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \ps n
 \ge farine
+\bw FR farine
 \re
 \gb
 \rgb
@@ -15322,7 +15359,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx fè
 \is emprunt
@@ -15330,6 +15367,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \ps n
 \ge fête
+\bw FR fête
 \re
 \gb
 \rgb
@@ -15337,11 +15375,11 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx gaa 
 \hm 1
-\is aspect
+\is grammaire_aspect
 \dialx GO(s) PA BO
 \va ga
 \ve BO 
@@ -15366,7 +15404,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il continue à parler
 \cf gò [GOs], gòl [PA]
 \ce encore; continuer à
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx gaa
 \is fonct.nat
@@ -15408,7 +15446,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 22/Dec/2014
 
 \lx gaa mara
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps
 \ge venir tout juste de
@@ -15424,10 +15462,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx gaa ... gòl
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps aspect persistif
 \ge toujours en train de
@@ -15453,10 +15491,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx gaa ... hô
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps aspect
 \ge venir juste de
@@ -15470,7 +15508,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx gadia ???
 \dialx GO
@@ -15490,7 +15528,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 08/Feb/2006
 
 \lx gaga
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx GO(s)
 \ps n
 \ge roussette (avec du blanc sur le cou)
@@ -15501,7 +15539,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 27/Feb/2006
+\dt 09/Jun/2015
 
 \lx gaajò
 \is fonct.intell.
@@ -15523,7 +15561,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 25/Dec/2014
 
 \lx gala-mii
-\is plantes
+\is plantes_processus
 \dialx GOs
 \ps v
 \ge mûr (fruits)
@@ -15535,7 +15573,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx galò
 \is caract.objet
@@ -15555,7 +15593,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx gana
-\is plante
+\is plantes
 \dialx GO(s) BO
 \ps n
 \ge pois d'angole ; Ambrevade
@@ -15565,14 +15603,13 @@ cette femme-là en bas, cette femme-là loin en bas
 \rgb
 \xv
 \xn
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx gaò
 \dialx GO(s) PA
 \ps v
 \sn 1
-\is fleur
-\ge éclore (fleur)
+\is plantes_processus
 \sn 2
 \is étape_vie
 \ge sortir du cocon (papillon)
@@ -15583,10 +15620,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn la fleur a éclos
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx gaaò
-\is action.corps
+\is action_corps
 \dialx PA BO WE 
 \va ha 
 \ve GO(s)
@@ -15604,10 +15641,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il a cassé l'assiette
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx gapavwu- 
-\is classificateur plantes
+\is classificateur sémantique
 \dialx GOs
 \va gavwu-
 \ve PA
@@ -15620,7 +15657,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 24/Jul/2011
+\dt 13/Jun/2015
 
 \lx garuã
 \is caract.personne
@@ -15671,7 +15708,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 25/Dec/2014
 
 \lx gaawe
-\is plantes
+\is plantes_processus
 \dialx GOs
 \ps v
 \ge fleurir
@@ -15683,7 +15720,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx gaa-we
 \is eau
@@ -15823,7 +15860,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 13/Feb/2010
 
 \lx ge ... bwa
-\is grammaire_comparatif
+\is grammaire_comparaison
 \dialx GO(s)
 \ps v
 \ge plus haut que (être)
@@ -15836,10 +15873,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il est plus haut que moi (mon supérieur hiérarchique) 
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx ge ... mhenõõ
-\is aspect
+\is grammaire_aspect
 \dialx GOs PA
 \ps aspect
 \ge en train de 
@@ -15853,7 +15890,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx gèa
 \is corps
@@ -15949,20 +15986,22 @@ cette femme-là en bas, cette femme-là loin en bas
 \ps n
 \ge graisse ; huile
 \re
+\bw FR graisse
+\re
 \gb
 \rgb
 \xv mini-gèrèè
 \xn résidu de saindoux, grasse 'gratton'
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx gè-thaa
 \is soin
 \dialx GO(s)
-\mr gè (couleur) + thaa (piquer)
 \ps v
 \ge tatouer
+\nt gè (couleur) + thaa (piquer)
 \re
 \gb
 \rgb
@@ -15970,7 +16009,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 04/Jun/2015
 
 \lx gèè-thraa, gè-raa
 \is parenté
@@ -16052,7 +16091,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 03/Nov/2014
 
 \lx gibwa
-\is action.corps
+\is action_corps
 \is pêche
 \dialx GO(s)
 \ps v
@@ -16065,7 +16104,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx giçaò 
 \is interaction
@@ -16101,7 +16140,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 07/Nov/2014
 
 \lx giner
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge "herbe à éléphant"
@@ -16112,7 +16151,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx gita
 \is emprunt
@@ -16120,6 +16159,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GO(s)
 \ps n
 \ge guitare
+\bw FR guitare
 \re
 \gb
 \rgb
@@ -16127,7 +16167,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx giul ???
 \is société
@@ -16142,7 +16182,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 07/Nov/2014
 
 \lx gii-we
-\is liquide_eau
+\is eau
 \dialx GO(s)
 \ps n
 \ge courant de l'eau
@@ -16153,7 +16193,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx gò
 \hm 1
@@ -16163,8 +16203,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is plantes
 \ge bambou
 \sn 2
-\is société
-\is outils
+\is outils_société
 \ge couteau de bambou ; couteau à subincision
 \sn 3
 \is musique
@@ -16187,11 +16226,11 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \poc *qauR
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx gò 
 \hm 2
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \va gòl
 \ve PA
@@ -16218,10 +16257,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \sge pas encore
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx goo
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \va goony
 \ve PA BO
@@ -16239,11 +16278,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx gòò
 \is corps
-\is classificateur
 \dialx GO(s) PA BO
 \sn 1
 \ps nom
@@ -16271,7 +16309,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \sge au milieu
 \poc *qau (PNNC, Hollyman)
 \sn 2
-\is classificateur
+\is classificateur numérique
 \ps classificateur dénombrant des morceaux PA [pas à Gomen]
 \ge morceau (objet long)
 \re
@@ -16283,7 +16321,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \sge un, deux, trois, dix morceaux
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx gòò-bwòn
 \is temps
@@ -16317,7 +16355,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx gò-ègu
-\is étapes_vie
+\is étapes.vie
 \dialx GO(s)
 \ps n
 \ge personne d'âge mûr
@@ -16332,7 +16370,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ce enfant
 \cf whaamã
 \ce vieillard
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx gò-hii
 \dialx PA
@@ -16341,7 +16379,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is corps
 \ge avant-bras
 \sn 2
-\is coutumes
+\is coutumes_objet
 \ge monnaie kanak (de la longueur d'un avant-bras, Charles)
 \re
 \gb
@@ -16351,7 +16389,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx gò-khai
 \is musique
@@ -16433,7 +16471,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 21/Dec/2014
 
 \lx gò-pwãu
-\is bambou
+\is arbre
 \dialx PA BO
 \ps n
 \ge bambou qui sert de percussion (lors des danses)
@@ -16445,17 +16483,17 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx gorolo
-\is plante
+\is plantes
 \dialx BO [BM, Corne]
 \va gòròlò
 \ve BO [BM] 
 \ps n
 \ge thistle
 \sc Triumpheta rhomboïdea
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx gòrui
 \is matière
@@ -16520,13 +16558,14 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx grenui
-\is animaux
+\is batracien
 \is emprunt
 \dialx GO(s)
 \va goronui
 \ve BO
 \ps n
 \ge grenouille
+\bw FR grenouille
 \re
 \gb
 \rgb
@@ -16534,7 +16573,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx gu
 \is oiseau
@@ -16634,7 +16673,7 @@ queue, taches pourpres sur le ventre)
 \dt 23/Dec/2014
 
 \lx gu 
-\is modalité
+\is grammaire_modalité
 \hm 5
 \dialx GO(s)
 \va ku
@@ -16652,11 +16691,11 @@ queue, taches pourpres sur le ventre)
 \xn fais ce que je te dis !
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx gu
 \hm 6
-\is gramm
+\is grammaire_aspect
 \dialx GO(s)
 \va ku
 \ve PA
@@ -16671,10 +16710,10 @@ queue, taches pourpres sur le ventre)
 \xn assis sans bouger 
 \cf
 \ce
-\dt 28/Jun/2007
+\dt 10/Jun/2015
 
 \lx gu-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur numérique
 \ge classificateur : filoche de poisson [GOs, PA]
@@ -16686,7 +16725,7 @@ queue, taches pourpres sur le ventre)
 \xn
 \cf
 \ce
-\dt 23/Jun/2007
+\dt 09/Jun/2015
 
 \lx gubain ???
 \is noeud
@@ -16838,7 +16877,7 @@ queue, taches pourpres sur le ventre)
 \dt 04/Nov/2014
 
 \lx gu-we
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \ps n
 \ge eau potable
@@ -16849,7 +16888,7 @@ queue, taches pourpres sur le ventre)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx guya
 \is arbre
@@ -16884,7 +16923,7 @@ queue, taches pourpres sur le ventre)
 \dt 14/Mar/2010
 
 \lx ha
-\is chauve-souris
+\is mammifère_chauve-souris
 \hm 1
 \dialx GO(s) PA
 \ps n
@@ -16896,7 +16935,7 @@ queue, taches pourpres sur le ventre)
 \xn
 \cf
 \ce
-\dt 27/Feb/2006
+\dt 09/Jun/2015
 
 \lx ha
 \is caract.objet
@@ -16916,7 +16955,7 @@ queue, taches pourpres sur le ventre)
 \dt 23/Dec/2014
 
 \lx haa
-\is aspect
+\is grammaire_aspect
 \dialx GOs PA BO 
 \ps aspect
 \ge sans arrêt; sans cesse; tout le temps
@@ -16932,10 +16971,10 @@ queue, taches pourpres sur le ventre)
 \cf
 \ce
 \nt
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx haa-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur numérique des tissus et étoffes végétales
 \ge classificateur: tissus et étoffes végétales
@@ -16952,7 +16991,7 @@ queue, taches pourpres sur le ventre)
 \xn il reste 2 pièces de tissu en plus
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx hã
 \hm 1
@@ -16975,7 +17014,7 @@ queue, taches pourpres sur le ventre)
 \dt 07/Nov/2014
 
 \lx hã
-\is caract.objet
+\is caract.objet_taille
 \hm 2
 \dialx PA BO
 \va hangai
@@ -16989,10 +17028,10 @@ queue, taches pourpres sur le ventre)
 \xn
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx hã ??
-\is pronom
+\is grammaire_pronom
 \hm 4
 \dialx BO
 \ps 2 pl.
@@ -17004,7 +17043,7 @@ queue, taches pourpres sur le ventre)
 \xn réveillez-vous !
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx ha po ???
 \is
@@ -17021,7 +17060,7 @@ queue, taches pourpres sur le ventre)
 \dt 11/Feb/2006
 
 \lx haba ??
-\is gramm
+\is grammaire
 \dialx BO
 \ps n (bénéficiaire)
 \ge pour
@@ -17032,7 +17071,7 @@ queue, taches pourpres sur le ventre)
 \xn ce bateau, nous l'avons fait pour toi
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx hãbaö
 \is grammaire_modalité
@@ -17104,7 +17143,7 @@ queue, taches pourpres sur le ventre)
 \dt 19/Dec/2014
 
 \lx habwa
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge soulever (lentement)
@@ -17116,7 +17155,7 @@ queue, taches pourpres sur le ventre)
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx hãda
 \is grammaire_quantificateur
@@ -17165,7 +17204,7 @@ queue, taches pourpres sur le ventre)
 \dt 29/Jun/2007
 
 \lx hãgu
-\is plante
+\is plantes
 \ph 'hÉ›ÌƒÅ‹gu
 \dialx GOs
 \ps
@@ -17182,7 +17221,7 @@ queue, taches pourpres sur le ventre)
 \cf
 \ce
 \nt
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx hai
 \is grammaire_conjonction
@@ -17222,7 +17261,7 @@ queue, taches pourpres sur le ventre)
 
 \lx hai 
 \hm 3
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) BO PA
 \ps quantificateur
 \ge il y a beaucoup ; très (de : haivwo)
@@ -17237,7 +17276,7 @@ queue, taches pourpres sur le ventre)
 \ce il y en a 
 \cf gele [GOs]
 \ce il y a
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx hai-kãbu
 \is température
@@ -17273,7 +17312,7 @@ queue, taches pourpres sur le ventre)
 \dt 03/Nov/2014
 
 \lx haivwö
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) BO PA
 \va hai
 \ve BO 
@@ -17298,7 +17337,7 @@ queue, taches pourpres sur le ventre)
 \xn très froid
 \an hoxèè
 \at peu
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx hajaa-wô
 \is navigation
@@ -17383,7 +17422,7 @@ queue, taches pourpres sur le ventre)
 \dt 11/Nov/2014
 
 \lx hale 
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v.t
 \ge casser (verre, assiette)
@@ -17396,7 +17435,7 @@ queue, taches pourpres sur le ventre)
 \gt être cassé
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx halelewa
 \is insecte
@@ -17449,7 +17488,7 @@ queue, taches pourpres sur le ventre)
 \lx hãnge
 \hm 1
 \is mouvement
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge lever_le_bras_en_menaçant
@@ -17462,7 +17501,7 @@ queue, taches pourpres sur le ventre)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx hãnge
 \hm 2
@@ -17497,7 +17536,7 @@ queue, taches pourpres sur le ventre)
 \dt 19/Dec/2014
 
 \lx haa-nu
-\is cocotier
+\is arbre_cocotier
 \dialx PA BO
 \ps n
 \ge gaine de l'inflorescence du cocotier (gaine sèche qui reste de l'inflorescence)
@@ -17509,7 +17548,7 @@ queue, taches pourpres sur le ventre)
 \cf haa-n 
 \ce ce qui reste
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx hããny
 \is navigation
@@ -17641,7 +17680,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 14/Jul/2006
 
 \lx hava-hi
-\is animaux-corps
+\is corps_animaux
 \dialx GO(s)
 \ph 'haÎ²a-'hi
 \va hava-hi-n
@@ -17654,10 +17693,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv hava-hi-je
 \xn son aile
 \poc *kapa(k)
-\dt 25/Dec/2007
+\dt 10/Jun/2015
 
 \lx havan
-\is plantes
+\is plantes_processus
 \dialx BO
 \ps v ; n
 \ge flétri; fané; mort ; feuille fanée
@@ -17668,7 +17707,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf mènõ [GOs]
 \ce flétri; fané
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx havaa-n
 \dialx PA BO
@@ -17730,7 +17769,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 11/Mar/2010
 
 \lx havwò
-\is action.animal
+\is fonct.nat.animaux
 \ph 'ha:Î²
 \dialx GO(s)
 \va hawòl 
@@ -17750,7 +17789,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ils aboient contre les voitures
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx haavwu
 \is cultures
@@ -17823,7 +17862,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx haxa ??
-\is aspect
+\is grammaire_aspect
 \dialx GOs
 \ps aspect
 \ge quand; au moment où ;              ?????(ne faire que ; ne plus (avec négation))
@@ -17835,10 +17874,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx hãxãî
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s) PA BO
 \ph hÉ›Ìƒ'É£Ã£i
 \va hangai, angai 
@@ -17854,7 +17893,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx haxe 
 \is grammaire_conjonction
@@ -17936,7 +17975,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 16/Jul/2007
 
 \lx hayu
-\is modalité
+\is grammaire_modalité
 \dialx GO(s) BO
 \ps adv. modificateur
 \sn 1
@@ -17967,7 +18006,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf lòlò [GOs]
 \ce sans but; au hasard
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx haza ce
 \is maison
@@ -17988,7 +18027,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 06/Jun/2007
 
 \lx haza nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \va hara-nu
 \ve PA
@@ -18003,7 +18042,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx haze
 \hm 1
@@ -18094,7 +18133,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Nov/2014
 
 \lx he
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \ps v; n 
 \ge frotter ; procréer ;  saillir (un animal); accouplement
@@ -18110,7 +18149,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ce bois frotté pour allumer le feu
 \cf yaai-he
 \ce feu obtenu par friction de morceaux de bois
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx hè
 \is interjection
@@ -18261,7 +18300,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Feb/2010
 
 \lx hêêbwi ???
-\is action.corps
+\is action_corps
 \dialx BO [Corne]
 \ps v
 \ge fermer la main
@@ -18272,7 +18311,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx hêêdo
 \is oiseau
@@ -18303,7 +18342,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx hêgi 
 \dialx GO(s) PA BO
-\is coutumes
+\is coutumes_objet
 \ph heÌƒÅ‹gi
 \ps n
 \ge monnaie traditionnelle
@@ -18318,7 +18357,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \un
 \cf mwoni [empr. GB money]
 \ce argent
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx hêgo
 \is instrument
@@ -18485,7 +18524,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx hèlè kawali
-\is outil
+\is outils
 \dialx GO(s)
 \va hèlè hã
 \ve WE
@@ -18498,7 +18537,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 28/Jun/2007
+\dt 09/Jun/2015
 
 \lx hè-m !
 \is interpellation
@@ -18534,7 +18573,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 08/Jun/2007
 
 \lx henim 
-\is action.corps
+\is action_corps
 \dialx PA BO [BM]
 \ps v ; 
 \ge taper avec un bâton (pour taper les roussettes ou grappes de coco); bâton pour lancer
@@ -18545,7 +18584,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il tape le coco avec un bâton (pour le faire tomber)
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx hênru
 \is caract.
@@ -18580,7 +18619,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx hê-nru
 \ph hÃª-É³u
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \ps n
 \ge chair de coco (lit. contenu de la noix de coco)
@@ -18591,7 +18630,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx hênruã-me
 \is habillement
@@ -18609,7 +18648,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx hèò ????
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA
 \va -èò 
 \ve PA
@@ -18628,7 +18667,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ces deux époux (référence à un passé moins lointain) 
 \cf -la-èò
 \ce pluriel
-\dt 06/Mar/2010
+\dt 09/Jun/2015
 
 \lx hê-pii-n
 \is corps
@@ -18684,7 +18723,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GOs BO
 \ps n
 \ge contenu de la barrière
-\ge les offrandes de nourriture dans les coutumes
+\ge offrandes de nourriture dans les coutumes
 \re
 \gb
 \rgb
@@ -18694,7 +18733,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx hevwe
 \is igname
@@ -18729,7 +18768,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 21/Feb/2010
 
 \lx hi
-\is plantes_bois
+\is bois_travail
 \dialx PA
 \ps v
 \ge écorcer
@@ -18741,10 +18780,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf hili v.t
 \ce écorcer
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx hi
-\is quantificateur
+\is grammaire_quantificateur
 \hm 2
 \dialx GO(s) BO
 \ps n
@@ -18752,7 +18791,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \re
 \gb
 \rgb
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx hi
 \is grammaire_préposition
@@ -18773,7 +18812,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 21/Dec/2014
 
 \lx hi-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur
 \ge classificateur: branches (ne s'emploie plus)
@@ -18782,10 +18821,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \rgb
 \xv hi-ru hi-ce
 \xn deux branches d'arbre
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx hî 
-\is grammaire_deixis
+\is grammaire_démonstratif
 \dialx PA BO [BM]
 \ps DX1
 \ge ceci
@@ -18796,7 +18835,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ce jour-ci
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx hii
 \hm 1
@@ -18848,7 +18887,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx hibil
-\is caract.animé
+\is caract.
 \dialx PA BO
 \ps v
 \ge vif; agile ; dynamique
@@ -18859,7 +18898,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf zibi GOs
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx hi-hõbwo
 \is habillement
@@ -18920,7 +18959,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 28/Nov/2008
 
 \lx hijini
-\is action.corps
+\is action_corps
 \ph hindjini
 \dialx GO(s) BO
 \va hiliini
@@ -18934,10 +18973,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx hili
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif 
 \ge cela (audible, mais invisible)
@@ -18961,15 +19000,15 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx hili
-\is action.corps
+\is action_corps
 \hm 1
 \dialx GO(s) BO 
 \ps v.t
 \sn 1
-\is plantes_bois
+\is bois_travail
 \ge écorcer  (niaouli)
 \sn 2
 \is prep.aliments
@@ -18984,7 +19023,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il enlève l'écorce du niaouli
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx hili
 \is action
@@ -19037,8 +19076,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx hiliçôô
-\is action.corps
-\is jeux
+\is action_corps
+\is jeu
 \ph hiliÊ’Ãµ:
 \dialx GO(s)
 \va yaoli
@@ -19054,10 +19093,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il se balance
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx hilò
-\is plante
+\is plantes
 \dialx GO PA
 \va hiloo
 \ps n
@@ -19070,7 +19109,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xe
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx hîmi
 \hm 1
@@ -19089,7 +19128,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx hîmi
 \hm 2
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va hòmi
 \ve PA
@@ -19105,7 +19144,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf kivi
 \ce fermer (la porte)
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx hinre
 \is fonct.intell.
@@ -19168,8 +19207,11 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hing 
 \dialx PA BO
 \ps v
+\ge
+\sn 1
 \is sentiments
 \ge haïr; détester
+\sn 2
 \is nourriture
 \ge dégoûté ; faire le difficile
 \re
@@ -19182,10 +19224,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il fait le difficile
 \cf kwe [GOs]
 \ce détester, refuser
-\dt 18/Dec/2014
+\dt 10/Jun/2015
 
 \lx hînõ
-\is action.corps
+\is action_corps
 \dialx GO(s) PA 
 \va hinõn
 \ve BO
@@ -19210,7 +19252,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \rgb show
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx hinõ-a
 \is temps
@@ -19328,7 +19370,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx hivwi
-\is action.corps
+\is action_corps
 \ph hiÎ²i
 \dialx GO(s) PA
 \va hivi
@@ -19345,7 +19387,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx hivwi 
 \ph hiÎ²i
@@ -19467,7 +19509,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx ho-
-\is classificateur possessif nourriture
+\is classificateur nourriture
 \hm 1
 \dialx GO(s) BO 
 \va hò
@@ -19495,7 +19537,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ta ration de viande
 \cf
 \ce
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx hò
 \is insecte
@@ -19514,7 +19556,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx hò
 \hm 2
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge écarter ; sortir (de son habitacle)
@@ -19527,7 +19569,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il a la langue pendante
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx hoo
 \is outils
@@ -19623,7 +19665,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv hõ mwa [GOs]
 \xn nouvelle maison
 \sn 2
-\is aspect
+\is grammaire_aspect
 \ge encore [BO]
 \ge un autre
 \xv hò kobwe õ-xe [BO]
@@ -19631,7 +19673,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv hò kole òn [BO]
 \xn mets encore du sel
 \sn 3
-\is aspect
+\is grammaire_aspect
 \ge venir de
 \xv e hõ a nye ! [GOs]
 \xn il vient juste de partir !
@@ -19647,7 +19689,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il redit " réveillez-vous !"
 \cf hõ-xe
 \ce
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx hõ
 \is santé
@@ -19915,7 +19957,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx hõgo
 \ph hÉ”ÌƒÅ‹go
-\is plante
+\is plantes
 \dialx GO(s)
 \ps n
 \ge roseau
@@ -19926,10 +19968,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx hõgõõne mhwããnu
-\is astres
+\is astre
 \dialx PA BO
 \va hõgõõn 
 \ve PA BO
@@ -19942,7 +19984,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn 1er ou 2ème quartier de lune
 \cf
 \ce
-\dt 16/Mar/2010
+\dt 09/Jun/2015
 
 \lx hòòl 
 \is discours
@@ -20094,7 +20136,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 27/Feb/2010
 
 \lx hõõ
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA
 \ps v
 \ge morceau long et plat (réfère à une surface allongée)
@@ -20105,7 +20147,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn planche
 \cf hõõge
 \ce allonger
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx hõõ-li
 \is locatif
@@ -20144,7 +20186,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx hõõ-tòl
-\is outil
+\is outils
 \ph hÉ”Ìƒ:tÉ”l
 \dialx PA
 \ps n
@@ -20155,7 +20197,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv
 \xe
 \xn
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx horayee
 \is maison
@@ -20317,7 +20359,7 @@ la paille; plus petites que 'ce-mwa');
 
 \lx hòvwi
 \is fonct.nat
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ph hÉ”Î²i
 \va hòvi 
@@ -20332,7 +20374,7 @@ la paille; plus petites que 'ce-mwa');
 \xn elle soulève des pierres (pour chercher qqch.)
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx hovwo
 \is nourriture
@@ -20419,7 +20461,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 25/Dec/2014
 
 \lx hõxa
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ph hÉ”ÌƒÌƒÌƒÉ£a
 \va hoxa
@@ -20435,10 +20477,10 @@ la paille; plus petites que 'ce-mwa');
 \xn une planche
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx hoxaba
-\is plante
+\is plantes_partie
 \dialx PA BO [Corne]
 \va hoyaba
 \ve BO [Corne]
@@ -20452,7 +20494,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 10/Jun/2015
 
 \lx hõxa-ce 
 \is bois
@@ -20475,7 +20517,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 11/Nov/2014
 
 \lx hoxaxe
-\is ustensiles
+\is ustensile
 \dialx PA
 \ps n
 \ge grattoir métallique
@@ -20489,7 +20531,7 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 09/Nov/2014
+\dt 09/Jun/2015
 
 \lx hoxe
 \is grammaire_aspect
@@ -20509,7 +20551,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 25/Dec/2014
 
 \lx hoxèè
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) BO
 \ph hoÉ£É›:
 \ps quantificateur
@@ -20531,10 +20573,10 @@ la paille; plus petites que 'ce-mwa');
 \sge peu
 \an haivwö
 \at beaucoup
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx hô-xe
-\is classificateur
+\is classificateur numérique
 \dialx GO(s)  PA
 \ps classificateur numérique
 \ge classificateur: un morceau (pastèque, fruit, igname, etc.)
@@ -20547,7 +20589,7 @@ la paille; plus petites que 'ce-mwa');
 \xn deux planches
 \cf
 \ce
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx hoze
 \dialx GO(s)
@@ -20584,7 +20626,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 23/Nov/2014
 
 \lx hòzi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge mélanger; tourner
@@ -20596,7 +20638,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx hu
 \hm 1
@@ -20615,7 +20657,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 14/Jul/2006
 
 \lx hu
-\is grammaire
+\is grammaire_agent
 \dialx BO (BM)
 \hm 3
 \ps marque d'agent
@@ -20627,7 +20669,7 @@ la paille; plus petites que 'ce-mwa');
 \xn qui fait sonner la musique?
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx hu
 \hm 4
@@ -20670,13 +20712,13 @@ la paille; plus petites que 'ce-mwa');
 \ps v ; n
 \sn 1
 \is nourriture
-\is action.tête
+\is action_corps
 \ge manger (de la viande, du coco)
 \ge mordre
 \ge ronger
 \re
 \sn 2
-\is action.corps
+\is action_corps
 \ge pincer
 \ge piquer
 \re
@@ -20703,7 +20745,7 @@ la paille; plus petites que 'ce-mwa');
 \cf hobho, hovho
 \ce manger
 \poc
-\dt 23/Nov/2014
+\dt 09/Jun/2015
 
 \lx hua
 \is interaction
@@ -20792,7 +20834,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 19/Dec/2014
 
 \lx hu-da
-\is directionnel
+\is grammaire_directionnel
 \dialx GOs
 \ps suffixe directionnel
 \ge en montant (suppose un déplacement)
@@ -20803,7 +20845,7 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx hûda
 \is plantes
@@ -20823,7 +20865,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 22/Feb/2010
 
 \lx hu-du
-\is directionnel
+\is grammaire_directionnel
 \dialx GOs
 \ps suffixe directionnel
 \ge en descendant
@@ -20836,7 +20878,7 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx hûgu
 \is caract.objet
@@ -20858,7 +20900,7 @@ la paille; plus petites que 'ce-mwa');
 \dialx GO(s) BO PA
 \ps n
 \sn 1
-\is topographie
+\is configuration
 \ge bout (d'une chose longue)  ; extrémité ; fin ; terme; bout 
 \re
 \gb
@@ -20878,7 +20920,7 @@ la paille; plus petites que 'ce-mwa');
 \cf ku- [BO, PA]
 \ce bout, extrémité d'une surface ou d'une chose étendue
 \sn 2
-\is résultat
+\is action_résultat
 \va hulò-n
 \ve BO
 \ge résultat (bon ou mauvais); conséquence [BO]
@@ -20889,7 +20931,7 @@ la paille; plus petites que 'ce-mwa');
 \xn la conséquence de ses paroles
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx hulò-mhènõ
 \is coutumes
@@ -20911,7 +20953,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 12/Mar/2010
 
 \lx hu-mi
-\is direction
+\is grammaire_direction
 \ph hÅ©-mi
 \dialx GO(s)
 \ps suffixe directionnel
@@ -20926,10 +20968,10 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx hû-mudree
-\is action.corps
+\is action_corps
 \ph 'hÅ©-'muÉ–e
 \dialx GO(s)
 \ps v
@@ -20941,7 +20983,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx hûn
 \is éléments_atmosphère
@@ -20965,7 +21007,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 23/Dec/2014
 
 \lx hu-ò
-\is directionnel
+\is grammaire_directionnel
 \dialx GOs
 \ps suffixe directionnel
 \ge là-bas (en s'éloignant d'égo)
@@ -20977,7 +21019,7 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx huraò
 \is sentiments
@@ -21063,7 +21105,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 23/Dec/2014
 
 \lx i
-\is préposition
+\is grammaire_préposition
 \dialx GO(s)
 \sn 1
 \ps marque de possession indirecte
@@ -21080,10 +21122,10 @@ la paille; plus petites que 'ce-mwa');
 \rgb
 \cf
 \ce
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx i
-\is pronom
+\is grammaire_pronom
 \hm 2
 \dialx PA
 \ps pronom sujet 3° singulier
@@ -21093,7 +21135,7 @@ la paille; plus petites que 'ce-mwa');
 \rgb
 \xv
 \xn
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx i?
 \is grammaire_interrogatif
@@ -21122,14 +21164,14 @@ la paille; plus petites que 'ce-mwa');
 \dt 21/Dec/2014
 
 \lx -î
-\is pronom
+\is grammaire_pronom
 \dialx GO BO
 \ps possessif 1° duel inclusif
 \ge nos (2  incl.)
 \re
 \gb
 \rgb
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx ii
 \is prep.aliments
@@ -21164,7 +21206,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 09/Nov/2014
 
 \lx îî
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)  PA
 \ps
 \ge pronom sujet 1° pers. duel inclusif 
@@ -21175,10 +21217,10 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx -îî
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \ps pronom objet (ou) possessif 1° pers. duel inclusif 
 \ge nous 2 (incl.)
@@ -21187,7 +21229,7 @@ la paille; plus petites que 'ce-mwa');
 \rgb
 \xv
 \xn
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx ia?
 \is grammaire_interrogatif
@@ -21222,7 +21264,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 21/Dec/2014
 
 \lx iã
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA BO
 \ph Ìƒi ÌƒÌƒÉ›ÌƒÌƒ 
 \ps 1ère personne plur. incl.
@@ -21230,10 +21272,10 @@ la paille; plus petites que 'ce-mwa');
 \re
 \gb
 \rgb
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx -iã
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)  PA BO
 \ps  possessif 1° pers. inclusif
 \ge notre (plur. incl.)
@@ -21244,10 +21286,10 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx ibî
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) 
 \va ibîn
 \ve PA
@@ -21262,10 +21304,10 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx içö
-\is pronom
+\is grammaire_pronom
 \ph iÊ’o
 \dialx GO(s)
 \va iyo
@@ -21281,7 +21323,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx içu 
 \is échanges
@@ -21307,7 +21349,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 19/Dec/2014
 
 \lx ida ???
-\is restrictif
+\is grammaire_restrictif
 \dialx BO
 \ps restrictif
 \ge seul
@@ -21319,10 +21361,9 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt Dubois
-\dt 23/Jun/2007
+\dt 09/Jun/2015
 
 \lx îdò-
-\is classificateur
 \dialx GO(s) PA BO
 \sn 1
 \ps n
@@ -21337,16 +21378,17 @@ la paille; plus petites que 'ce-mwa');
 \xv îdò-ègu
 \xn génération, lignée
 \sn 2
+\is classificateur numérique
 \ps classificateur numérique
 \ge classificateur : rangée (d'ignames, poteaux, etc.)
 \xv îdò-xe, îdo-tru, îdo-ko, îdo-pa îdò-kui, etc.
 \xn 1, 2, 3, 4, 5 rangée d'ignames
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx ije
-\is pronom
+\is grammaire_pronom
 \ph indje
 \dialx GO(s) BO PA
 \va iye
@@ -21364,7 +21406,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx ijèè !
 \is interpellation
@@ -21382,7 +21424,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 19/Dec/2014
 
 \lx ijè-òli
-\is pronom
+\is grammaire_pronom
 \ph indjÉ›-É”li
 \dialx GO(s)
 \ps pronom DX3 3°  pers.
@@ -21397,10 +21439,10 @@ la paille; plus petites que 'ce-mwa');
 \cf ã-òli
 \ce lui là-bas
 \nt
-\dt 08/Mar/2010
+\dt 09/Jun/2015
 
 \lx ijò
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps pronom indépendant 2° personne duel
 \ge vous 2
@@ -21411,10 +21453,10 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx ilaa
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \ps pronom indépendant 3°  pers.pluriel 
 \ge eux, elles
@@ -21426,10 +21468,10 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt quand employé pour une personne, valeur honorifique
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx ila-e
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom DX2 3°  pers. féminin pluriel
 \ge elles-là
@@ -21444,10 +21486,10 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx ila-lhãã-ba 
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA BO
 \ps pronom DX2 3°  pers. pluriel
 \ge voilà (les) là-bas (où je montre)
@@ -21462,10 +21504,10 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 06/Mar/2010
+\dt 09/Jun/2015
 
 \lx ila-lhãã-òli
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps pronom DX3 3°  pers. féminin pluriel
 \ge eux/elles là-bas
@@ -21477,10 +21519,10 @@ la paille; plus petites que 'ce-mwa');
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx ili
-\is pronom
+\is grammaire_pronom
 \hm 1
 \dialx GO(s) PA 
 \ps pronom indépendant 3°  pers. duel
@@ -21492,7 +21534,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx iili
 \is mouvement
@@ -21510,7 +21552,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 04/Nov/2014
 
 \lx ili-e
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps interpellation ou démonstratif
 \ge ces deux (personnes, proche) ! 
@@ -21523,7 +21565,7 @@ la paille; plus petites que 'ce-mwa');
 \xn les deux (autres) repartent
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx ilili
 \is guerre
@@ -21544,7 +21586,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 22/Dec/2014
 
 \lx ilò 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps pron. indépendant 3° triel (ou) paucal
 \ge eux 3 ; eux (petit groupe)
@@ -21556,7 +21598,7 @@ la paille; plus petites que 'ce-mwa');
 \se ilò-ba
 \sge ceux-là (loin)
 \xn
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx imã
 \is fonct.nat
@@ -21591,7 +21633,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 16/Jul/2007
 
 \lx imaze
-\is animal marin
+\is échinoderme
 \ph i'maÃ°e
 \dialx GO(s)
 \ps n
@@ -21603,10 +21645,10 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 19/Jul/2006
+\dt 10/Jun/2015
 
 \lx ime 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph ime 
 \va icòme 
@@ -21616,7 +21658,7 @@ la paille; plus petites que 'ce-mwa');
 \re
 \gb
 \rgb
-\dt 05/Jun/2007
+\dt 09/Jun/2015
 
 \lx ine
 \is oiseau
@@ -21665,7 +21707,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 03/Jun/2007
 
 \lx inru 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \va inu
 \ve PA BO
@@ -21676,7 +21718,7 @@ la paille; plus petites que 'ce-mwa');
 \rgb
 \xv inu nye 
 \xn c'est moi, me voilà, je suis là
-\dt 21/Jul/2007
+\dt 09/Jun/2015
 
 \lx iò
 \is temps
@@ -21705,7 +21747,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 05/Mar/2010
 
 \lx iô
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph iÉ”Ìƒ
 \ps pronom indépendant 1° personne triel inclusif
@@ -21713,7 +21755,7 @@ la paille; plus petites que 'ce-mwa');
 \re
 \gb
 \rgb
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx iò-gò
 \is temps
@@ -21780,7 +21822,7 @@ et permettent son écoulement, évitant l'érosion)
 \dt 11/Feb/2006
 
 \lx iva
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps pronom indépendant 1° personne exclusif pluriel
 \ge nous (plur. excl.) (forme moderne de izava)
@@ -21791,7 +21833,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx ivwö
 \ph iÎ²o
@@ -21813,7 +21855,7 @@ et permettent son écoulement, évitant l'érosion)
 \dt 11/Mar/2010
 
 \lx iwa
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \ps pronom indépendant 2° personne pluriel
 \ge vous (pluriel)
@@ -21824,10 +21866,10 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 26/Jun/2007
+\dt 09/Jun/2015
 
 \lx iwe
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \va icòòwe
 \ve vx
@@ -21838,10 +21880,10 @@ et permettent son écoulement, évitant l'érosion)
 \rgb
 \xv
 \xn
-\dt 05/Jun/2007
+\dt 09/Jun/2015
 
 \lx iyo
-\is pronom
+\is grammaire_pronom
 \dialx BO PA
 \va eyo
 \ve BO
@@ -21854,10 +21896,10 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx iza
-\is pronom
+\is grammaire_pronom
 \dialx PA
 \va iyãã
 \ve BO
@@ -21870,10 +21912,10 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 21/Jul/2007
+\dt 09/Jun/2015
 
 \lx izava
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph Ã°ava
 \va zava
@@ -21892,10 +21934,10 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx izawa
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph iÃ°awa
 \ps pronom indépendant 2°  pluriel
@@ -21908,10 +21950,10 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx izòò
-\is pronom
+\is grammaire_pronom
 \dialx PA BO
 \ps pronom indépendant 2°  pers. pluriel 
 \ge vous (plur.)
@@ -21922,7 +21964,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 23/Feb/2010
+\dt 09/Jun/2015
 
 \lx ja
 \is caract.
@@ -21979,7 +22021,7 @@ et permettent son écoulement, évitant l'érosion)
 
 \lx jaa 
 \hm 1
-\is plante
+\is plantes
 \dialx GO(s) PA BO
 \va jaac
 \ve BO (Corne)
@@ -21992,7 +22034,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \rgb
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx jaa
 \hm 2
@@ -22243,7 +22285,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 11/Nov/2014
 
 \lx jaxa
-\is modalité
+\is grammaire_modalité
 \dialx GO(s) BO
 \ps n
 \sn 1
@@ -22269,7 +22311,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn il doit être 3h
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx jaxe
 \is fonct.intell.
@@ -22319,7 +22361,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 
 \lx je 
 \hm 2
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA BO
 \ps démonstratif anaphorique
 \ge ce-là
@@ -22334,10 +22376,10 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn qui est monté ici ?
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx -je
-\is pronom
+\is grammaire_pronom
 \ps pronom objet 3° personne singulier
 \ge le, la
 \re
@@ -22348,7 +22390,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx jee
 \is religion
@@ -22369,7 +22411,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 23/Dec/2014
 
 \lx je-ba
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps pronom déictique Dx2 latéral
 \ge celle-là (sur le côté, latéralement)
@@ -22380,7 +22422,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn regarde cette fille-là 
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx jebo
 \is maison
@@ -22429,7 +22471,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 
 \lx je-nrã
 \hm 1
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \va jene
 \ve PA  BO
@@ -22447,10 +22489,10 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn tu as entendu ce bruit hier ?
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx je-ò
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps pronom déictique ou anaphorique Dx3
 \ge celle-là
@@ -22462,7 +22504,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx jeworo
 \is temps
@@ -22585,7 +22627,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 23/Dec/2014
 
 \lx jigo ???
-\is plante
+\is plantes
 \dialx BO (Corne)
 \ps n
 \ge palétuvier
@@ -22596,7 +22638,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \poc *toÅ‹o
-\dt 26/Dec/2007
+\dt 09/Jun/2015
 
 \lx jiilè
 \is mouvement
@@ -22615,7 +22657,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 04/Nov/2014
 
 \lx ji-li
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps déictique DX3
 \ge cela (éloigné, invisible mais audible)
@@ -22636,7 +22678,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn qui est-ce qui crie ?
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx jime
 \is discours
@@ -22693,7 +22735,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 24/Feb/2010
 
 \lx ji-nri
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \va je-nim, ji-nim
 \ve PA
@@ -22707,7 +22749,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn regarde cette fille-là 
 \cf
 \ce
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx jinõ-ce-bon
 \is feu
@@ -22831,7 +22873,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 07/Nov/2014
 
 \lx jiu
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps quantificateur
 \va jiu-n 
@@ -22852,10 +22894,10 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn tu n'as pas tout dit
 \cf
 \ce
-\dt 19/Mar/2010
+\dt 09/Jun/2015
 
 \lx jivwa
-\is quantificateur
+\is grammaire_quantificateur
 \ph 'jiÎ²a
 \dialx GO(s) PA BO
 \va jipwa 
@@ -22875,10 +22917,10 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn toutes sortes
 \cf
 \ce
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx jivwa meewu
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA
 \ps n
 \ge toutes sortes de
@@ -22890,7 +22932,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx jiwaa
 \is oiseau
@@ -22978,7 +23020,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \dt 15/Feb/2010
 
 \lx -jò
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ps pronom objet ou possessif 2°  personne duel 
 \ge vous2 ; vos
@@ -22992,7 +23034,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx jòjò
 \is fonct.nat
@@ -23022,7 +23064,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \dt 04/Nov/2014
 
 \lx jòme
-\is action.corps
+\is action_corps
 \ph ndjÉ”me
 \dialx GO(s)
 \ps v
@@ -23036,7 +23078,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \xn je l'ai secoué
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx jomûgò
 \is oiseau
@@ -23189,7 +23231,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \dt 27/Feb/2010
 
 \lx juyu ???
-\is plante
+\is plantes
 \dialx BO (Corne)
 \ps n
 \ge palmier ??
@@ -23201,7 +23243,7 @@ des premiers occupants, des maîtres de la terre et des soutiens de la chefferie)
 \xn
 \cf
 \ce
-\dt 11/Jul/2007
+\dt 09/Jun/2015
 
 \lx ka
 \is grammaire_conjonction
@@ -23507,7 +23549,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx khaa
 \is santé
-\is action.corps
+\is action_corps
 \hm 3
 \dialx GO(s) PA BO
 \ps v
@@ -23531,7 +23573,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \sge lampe électrique (lit. feu-appuyer)
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ka ? 
 \is grammaire_interrogatif
@@ -23609,7 +23651,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 23/Dec/2014
 
 \lx kha-axe
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps distributif
 \ge chacun(e)
@@ -23621,7 +23663,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx kaba
 \hm 1
@@ -23639,7 +23681,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 25/Dec/2014
 
 \lx kaba we
-\is action.corps
+\is action_corps
 \hm 2
 \dialx WEM WE BO
 \ps v
@@ -23657,7 +23699,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ce servir, sortir de la marmite (riz)
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx kha-bazae
 \is déplacement
@@ -23676,7 +23718,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 04/Nov/2014
 
 \lx khabe
-\is action.corps
+\is action_corps
 \is maison
 \ph kÊ°abe
 \dialx GO(s) PA BO
@@ -23695,7 +23737,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx khabe nrobu
 \is religion
@@ -23714,7 +23756,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 25/Dec/2014
 
 \lx kaabilò
-\is action.corps
+\is action_corps
 \ph 'ka:bilÉ”
 \dialx GO(s)
 \ps v
@@ -23727,10 +23769,10 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn il s'est foulé le pied
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx khaabînri
-\is action.corps
+\is action_corps
 \ph kÊ°a:bÃ®É³i
 \dialx GO(s)
 \va khaabîni
@@ -23746,7 +23788,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx khaboi
 \is action_mains
@@ -24023,7 +24065,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 15/Mar/2010
 
 \lx kacia
-\is plante
+\is plantes
 \dialx BO [BM]
 \ps n
 \ge lantana (emprunt à acacia)
@@ -24037,10 +24079,10 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx kha-cimwî
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge saisir en se déplaçant (en emportant ou amenant)
@@ -24056,7 +24098,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kaço
 \is société
@@ -24110,7 +24152,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 04/Nov/2014
 
 \lx kha-dra
-\is action.corps
+\is action_corps
 \dialx GO(s) 
 \va kadae
 \ve BO
@@ -24127,7 +24169,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kâdi
 \is interaction
@@ -24263,7 +24305,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 27/Feb/2010
 
 \lx kae wòdo
-\is société
+\is coutumes
 \dialx GOs
 \va kae wedo 
 \ve PA
@@ -24277,10 +24319,10 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx khaa-êgo
-\is action.corps_animaux
+\is fonct.nat.animaux 
 \dialx GO(s)
 \va khaa-pi
 \ve WE WEM 
@@ -24296,10 +24338,10 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx kaen
-\is mollusque
+\is mollusque_gastéropode
 \dialx PA
 \ps n
 \ge gastéropode d'eau douce
@@ -24314,7 +24356,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx kafaa
 \is emprunt
@@ -24322,6 +24364,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GO(s)
 \ps n
 \ge cafard
+\bw FR cafard
 \re
 \gb
 \rgb
@@ -24330,7 +24373,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 27/Feb/2010
+\dt 04/Jun/2015
 
 \lx kafe
 \is emprunt
@@ -24350,7 +24393,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 09/Nov/2014
 
 \lx kâgao
-\is plante
+\is plantes
 \dialx GOs BO [Corne]
 \ps n
 \ge liane sauvage
@@ -24362,7 +24405,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx kããge
 \is fonct.intell.
@@ -24589,7 +24632,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 04/Nov/2014
 
 \lx khai
-\is action.corps
+\is action_corps
 \is armes
 \dialx GO(s) PA
 \hm 1
@@ -24603,11 +24646,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx khai
 \hm 2
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO 
 \ps v
 \ge tirer
@@ -24631,7 +24674,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf tia
 \ce pousser
 \poc *PSO thaki (Geraghty)
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx khaaimudre
 \is manière
@@ -24696,7 +24739,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 20/Feb/2006
 
 \lx kaaje /khaje ??? 
-\is plante
+\is plantes_partie
 \dialx BO [Corne]
 \ps n
 \va kayè
@@ -24707,7 +24750,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \gb
 \rgb
 \dn
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kajin ???
 \is corps
@@ -24779,6 +24822,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx PA BO [Corne]
 \ps n
 \ge cancrelat; cafard
+\bw FR cancrelat
 \re
 \gb
 \rgb
@@ -24786,7 +24830,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx kha-ku
 \is action
@@ -24888,7 +24932,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 25/Dec/2014
 
 \lx kaale
-\is modalité
+\is grammaire_modalité
 \dialx GO(s) PA BO
 \ps v
 \ge laisser ; permettre
@@ -24902,7 +24946,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \gr v.t. ?? kaalexa 
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx kããle
 \ph kÉ›Ìƒ:le
@@ -24946,7 +24990,6 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kaleva
 \is caract.objet
-\is forme
 \dialx PA BO [BM]
 \va kaleba
 \dialx BO
@@ -24960,13 +25003,13 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn ce caillou est plat
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx kalò
-\is jeux
+\is jeu
 \dialx GOs
 \ps n
-\ge grosse bille 
+\ge grosse_bille 
 \re
 \gb
 \rgb
@@ -24975,7 +25018,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 01/Mar/2010
+\dt 09/Jun/2015
 
 \lx kalòya 
 \is jeu
@@ -25164,7 +25207,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 11/Nov/2014
 
 \lx kha-mudree
-\is action.corps
+\is action_corps
 \dialx GOs
 \va kha-mude
 \ve PA
@@ -25179,7 +25222,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn la barrière a déchiré sa robe
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kamwe ?
 \is grammaire_interrogatif
@@ -25273,7 +25316,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 20/May/2007
 
 \lx kaano
-\is jeux
+\is jeu
 \dialx GO(s) WEM 
 \ps n
 \ge jeu (avec deux bâtons: on tape sur une extrémité du baton avec l'autre bâton et le
@@ -25285,11 +25328,11 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx kha-nhyale
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge écraser avec le pied (en marchant)
 \re
@@ -25302,7 +25345,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kaò
 \is eau
@@ -25336,7 +25379,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 04/Nov/2014
 
 \lx kha-phe
-\is action.corps
+\is action_corps
 \hm 2
 \ph 'kÊ°a-pÊ°e
 \dialx GO(s) PA BO
@@ -25357,6 +25400,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \se trêê-kha-bhe-mi [GOs]
 \sge apporter ici en courant
 \sn 2
+\is grammaire_préposition
 \ps préposition
 \ge avec; ensemble
 \re
@@ -25364,7 +25408,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \rgb
 \xv kave-gu, kape-gu ???
 \xn habitation
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx khapi??
 \dialx GO
@@ -25394,7 +25438,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 25/Dec/2014
 
 \lx khara-a nu
-\is cocotier
+\is arbre_cocotier
 \dialx PA BO 
 \ps n
 \ge fibre prise sur la nervure centrale de la palme de cocotier (sert de lien)
@@ -25407,7 +25451,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx karava ???
 \is navigation
@@ -25426,7 +25470,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 
 \lx kari
 \is mouvement
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge cacher (se)
@@ -25442,7 +25486,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kharo
 \is mer
@@ -25524,7 +25568,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 23/Dec/2014
 
 \lx katre
-\is atmosphère
+\is éléments_atmosphère
 \ph ka:Êˆe ; ka:É½e 
 \dialx GO(s)  
 \va kaarèng
@@ -25536,10 +25580,10 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ps n
 \ge brouillard
 \rgb
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx kha-tree-çimwi
-\is action.corps
+\is action_corps
 \ph kÊ°a:Êˆe:Ê’imwi
 \dialx GO(s)
 \ps v
@@ -25553,7 +25597,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx katrepa
 \is navigation
@@ -25623,7 +25667,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 21/Jan/2009
 
 \lx khaa-tia
-\is action.corps
+\is action_corps
 \dialx GOs
 \va khaa-zia
 \ve GOs
@@ -25637,7 +25681,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf tia
 \ce pousser
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx katian ???
 \dialx BO [Corne]
@@ -25935,13 +25979,14 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ps n
 \ge banian (avec la sève duquel on fait des balles de cricket)
 \re
+\bw FR caoutchouc
 \gb
 \rgb
 \xv
 \xn
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 04/Jun/2015
 
 \lx kava
 \is poisson
@@ -26003,7 +26048,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 20/May/2007
 
 \lx kavuxavwu
-\is plante
+\is plantes
 \ph kavuÉ£aÎ²u
 \dialx GO(s)
 \va kavu-avu 
@@ -26018,7 +26063,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \rgb
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx kavwa hovwo
 \is nourriture
@@ -26062,7 +26107,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 18/Dec/2014
 
 \lx khaavwi
-\is oiseau
+\is fonct.nat.animaux
 \ph kÊ°a:Î²i
 \dialx GO(s)
 \ps v
@@ -26075,7 +26120,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kavwo
 \is fonct.nat
@@ -26146,7 +26191,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 23/Dec/2014
 
 \lx kavwö hinre
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
 \ps v
 \ge ne jamais faire qqch (= ne pas savoir)
@@ -26157,10 +26202,10 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il ne ment jamais
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx kavwö ... gò
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \ps aspect
 \ge pas encore
@@ -26173,10 +26218,10 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il n'a encore jamais fait ces choses-là
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx kavwö ... mwa
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \ps aspect révolu
 \ge ne ... plus
@@ -26191,10 +26236,10 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il ne dort plus
 \cf
 \ce
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx kavwö ... nre  ... gò
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \ps aspect
 \ge encore jamais ; jamais
@@ -26207,10 +26252,10 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il n'a encore jamais fait ces choses-là
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx kavwö ... nee ... taagin 
-\is aspect
+\is grammaire_aspect
 \dialx PA BO [Corne]
 \ps aspect
 \ge encore jamais ; jamais
@@ -26221,7 +26266,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn je ne mange jamais 
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx kaavwu
 \is société
@@ -26265,8 +26310,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 27/Feb/2010
 
 \lx khawali
-\is caract.objet
-\is mesure
+\is caract.objet_taille
 \dialx GO(s) PA 
 \ps v. statif
 \ge long (verticalement : arbre, personne)
@@ -26281,7 +26325,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il est un peu plus grand que toi
 \cf pwawali
 \ce long (horizontalement)
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx kawaang
 \is temps
@@ -26578,7 +26622,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 18/Feb/2010
 
 \lx kazu kaza
-\is jeux
+\is jeu
 \dialx GOs 
 \ps n
 \ge balancelle
@@ -26590,7 +26634,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx kazubi
 \is manière
@@ -26687,7 +26731,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 22/Feb/2010
 
 \lx kê-
-\is classificateurs
+\is classificateur sémantique
 \is cultures
 \dialx GO(s) PA
 \va kêê
@@ -26715,12 +26759,12 @@ gagnant est celui qui l'a propulsé le plus loin)
 \sge mon champ 
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx kee
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
-\ps
+\ps v
 \ge laisser ; permettre
 \re
 \gb
@@ -26731,7 +26775,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn ils m'ont laissé naviguer
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx kèè
 \is arbre
@@ -26747,7 +26791,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 06/Mar/2010
 
 \lx khee
-\is action.corps
+\is action_corps
 \hm 1
 \dialx GO(s)
 \ps verbe
@@ -26760,7 +26804,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \xn il écope
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx khee
 \is pêche
@@ -26807,7 +26851,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 09/Nov/2014
 
 \lx khee we
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge prendre de l'eau (avec un petit récipient)
@@ -26821,7 +26865,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \sge écope
 \cf töi
 \ce puiser
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kea
 \is position
@@ -26871,7 +26915,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 18/Jul/2006
 
 \lx kêbwa
-\is modalité
+\is grammaire_modalité
 \hm 1
 \dialx GO(s) PA BO
 \ph kÃªbwa
@@ -26892,7 +26936,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \ce ne...pas
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx khêbwa  ???
 \is poisson
@@ -26946,13 +26990,15 @@ grand que "keruau")
 \ps n
 \ge sac
 \re
+\nt composé : ke- (préfixe des paniers), FR sac
+\re
 \gb
 \rgb
 \xv
 \xn
 \cf
 \ce
-\dt 20/Jul/2007
+\dt 04/Jun/2015
 
 \lx ke-cee
 \is étapes.vie
@@ -27174,7 +27220,7 @@ grand que "keruau")
 \dt 15/Mar/2010
 
 \lx kègele
-\is action.corps
+\is action_corps
 \ph kÉ›'gele
 \dialx GO(s) PA
 \va kègel
@@ -27188,10 +27234,10 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kehin ??
-\is panier
+\is paniers
 \dialx BO [Corne]
 \ps n
 \ge panier (à tressage serré)
@@ -27202,7 +27248,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 16/Jul/2007
+\dt 09/Jun/2015
 
 \lx kee-hõbo
 \is maison
@@ -27302,7 +27348,7 @@ grand que "keruau")
 \ve PA BO
 \ps verbe
 \sn 1
-\is action.corps
+\is action_corps
 \ge enterrer qqch; mettre en terre
 \sn 2
 \is nourriture
@@ -27316,7 +27362,7 @@ grand que "keruau")
 \xv la khêmi chaamwa na ni draa
 \xn ils ont mis les bananes à cuire sous la cendre
 \poc *tanum
-\dt 23/Nov/2014
+\dt 09/Jun/2015
 
 \lx ke-mõã
 \is paniers
@@ -27405,7 +27451,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kênii-döö
-\is ustensiles
+\is ustensile
 \dialx PA
 \ps n
 \ge poignées de la marmite
@@ -27420,10 +27466,10 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kênim
-\is société
+\is coutumes
 \dialx PA
 \ps n
 \ge prestation de deuil aux maternels
@@ -27435,7 +27481,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 04/Mar/2010
+\dt 10/Jun/2015
 
 \lx kênrõ
 \ph kÃªÉ³É”Ìƒ
@@ -27472,7 +27518,7 @@ grand que "keruau")
 \ge tourbillon d'eau [BO]
 \xv we kênõ [GOs]
 \xn tourbillon d'eau
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx ke-paa
 \is paniers
@@ -27524,7 +27570,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx keraa
-\is panier
+\is paniers
 \is pêche
 \dialx GO(s) 
 \va keraò
@@ -27539,7 +27585,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx kerao
 \hm 2
@@ -27718,7 +27764,7 @@ grand que "keruau")
 \dt 07/Nov/2014
 
 \lx kevi
-\is prép.nourriture
+\is prép.aliments
 \dialx PA
 \ps v
 \ge évider avec une cuillère (noix de coco, papaye, avocat)
@@ -27730,7 +27776,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kevwa
 \is topographie
@@ -27802,7 +27848,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx ki
-\is plantes
+\is plantes_processus
 \hm 2
 \dialx GO(s) WEM
 \va kim 
@@ -27817,7 +27863,7 @@ grand que "keruau")
 \xn ils poussent tout seuls
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx ki
 \is santé
@@ -27863,7 +27909,7 @@ grand que "keruau")
 \dt 04/Nov/2014
 
 \lx kii
-\is action.main
+\is action_mains
 \hm 2
 \dialx GOs PA
 \ps v
@@ -27878,7 +27924,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kîî
 \is son
@@ -27898,7 +27944,7 @@ grand que "keruau")
 \dt 20/Feb/2015
 
 \lx khi
-\is modalité
+\is grammaire_modalité
 \hm 1
 \dialx GO(s) PA BO WEM
 \ps adv. atténuatif (d'un ordre) (forme de politesse); ponctuel
@@ -27918,10 +27964,10 @@ grand que "keruau")
 \xn il vole un peu (brièvement)
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx khi
-\is action.corps
+\is action_corps
 \hm 2
 \dialx GO(s) BO
 \va khibi
@@ -27938,7 +27984,7 @@ grand que "keruau")
 \cf
 \ce
 \poc *tusa(R)
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx khî
 \hm 2
@@ -28133,7 +28179,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kibi
-\is nourriture.cuisson
+\is nourriture_cuisson
 \dialx GO(s) PA BO
 \ps n
 \ge four enterré
@@ -28153,10 +28199,10 @@ grand que "keruau")
 \cf
 \ce
 \poc *qumu (?)
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kibii
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \va khibii
 \ve BO [BM]
@@ -28169,10 +28215,10 @@ grand que "keruau")
 \xn faire de la monnaie
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx khibii
-\is plantes
+\is plantes_processus
 \dialx GO(s)
 \ps v
 \ge éclore
@@ -28183,10 +28229,10 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx kibo
-\is plantes
+\is plantes_partie
 \dialx GO(s) PA BO
 \va kîbwòn
 \ve PA
@@ -28204,10 +28250,10 @@ grand que "keruau")
 \xn rejet de phuleng 
 \cf
 \ce
-\dt 07/Mar/2010
+\dt 10/Jun/2015
 
 \lx kîbö
-\is arbres
+\is arbre
 \dialx GO(s) PA BO
 \va keebo
 \ve BO
@@ -28221,7 +28267,7 @@ grand que "keruau")
 \xn palétuvier rouge
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx khi-bö
 \is feu
@@ -28351,7 +28397,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kibwa ???
-\is action.corps
+\is action_corps
 \dialx BO
 \ve
 \ps verbe
@@ -28364,10 +28410,10 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx kîbwò
-\is plante
+\is plantes_partie
 \dialx GO(s)
 \va kîbwòn
 \ve PA
@@ -28381,10 +28427,10 @@ grand que "keruau")
 \cf khoriing
 \ce rejet d'arbuste taillé
 \nt
-\dt 03/Mar/2010
+\dt 10/Jun/2015
 
 \lx kîbwoo-nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \ps n
 \ge germe du coco
@@ -28399,7 +28445,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 28/Jun/2007
+\dt 09/Jun/2015
 
 \lx kiiça
 \is sentiments
@@ -28446,7 +28492,7 @@ grand que "keruau")
 \dt 20/Feb/2010
 
 \lx khi-drale
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va khi-dale
 \ve PA
@@ -28459,7 +28505,7 @@ grand que "keruau")
 \xn il fend le coco 
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kiga
 \is fonct.nat
@@ -28536,7 +28582,7 @@ grand que "keruau")
 \gb
 \rgb
 \sn 2
-\is société
+\is fête
 \ge fête des prémices des ignames
 \re
 \gb
@@ -28548,7 +28594,7 @@ grand que "keruau")
 \cf khîni
 \ce griller
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx kiil ???
 \is paniers
@@ -28569,7 +28615,7 @@ grand que "keruau")
 \dt 09/Nov/2014
 
 \lx khila
-\is action.corps
+\is action_corps
 \dialx GO(s) BO PA
 \ps v
 \ge fouiller ; chercher ; tenter 
@@ -28585,7 +28631,7 @@ grand que "keruau")
 \at trouver
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx kilapuu
 \is interaction
@@ -28662,7 +28708,7 @@ grand que "keruau")
 \dt 27/Jun/2007
 
 \lx khilò
-\is liquide
+\is eau_action
 \dialx GO(s) BO
 \ps verbe
 \ge couler goutte à goutte ; fuir
@@ -28673,7 +28719,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kilooc
 \is emprunt
@@ -28681,6 +28727,7 @@ grand que "keruau")
 \dialx PA
 \ps n
 \ge cloche
+\bw FR cloche
 \re
 \gb
 \rgb
@@ -28688,11 +28735,11 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx kiluu
 \is mouvement 
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \va ciluu 
 \ve PA
@@ -28707,7 +28754,7 @@ grand que "keruau")
 \xn
 \cf bwagilo
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx khimò
 \is santé
@@ -28742,7 +28789,7 @@ grand que "keruau")
 
 \lx kinre
 \hm 1
-\is activité
+\is action
 \ph kiÉ³e
 \dialx GO(s) PA BO
 \va kin
@@ -28756,7 +28803,7 @@ grand que "keruau")
 \xn mettre bout à bout
 \cf kinre-ni
 \ce assembler qqch
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx kinre
 \hm 2
@@ -28931,7 +28978,7 @@ grand que "keruau")
 \dt 02/Jun/2007
 
 \lx kiri
-\is action.corps
+\is action_corps
 \dialx PA BO
 \ps v
 \ge ratisser
@@ -28946,14 +28993,15 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kiriket
 \is emprunt
-\is jeux
+\is jeu
 \dialx GO(s)
 \ps n
 \ge cricket
+\bw GB cricket
 \re
 \gb
 \rgb
@@ -28961,7 +29009,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kitrabwi
 \is interaction
@@ -29125,7 +29173,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kixa khôôme
-\is aspect, modalité
+\is grammaire_aspect, modalité
 \dialx GO(s)
 \ps restrictif ; aspect
 \ge ne faire que ; n'avoir jamais assez de 
@@ -29138,10 +29186,10 @@ grand que "keruau")
 \xn il ne fait que manger ! il est toujours en train de manger celui-là (pas rassasié)
 \cf khôôme
 \ce rassasié, comblé
-\dt 08/Jun/2007
+\dt 09/Jun/2015
 
 \lx kixa mwa
-\is grammaire_négatif_existentiel
+\is grammaire_négation_existentiel
 \dialx GO(s)
 \ps v
 \ge il n'y a plus
@@ -29152,7 +29200,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kixa na 
 \is grammaire_négation_existentiel
@@ -29257,7 +29305,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx ko
-\is grammaire
+\is grammaire_agent
 \hm 3
 \dialx PA GO
 \va xo, o, u
@@ -29273,13 +29321,13 @@ grand que "keruau")
 \xn le dieu le frappe
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx ko
 \is grammaire_négation
 \hm 4
 \dialx GO(s)
-\et kavwö 
+\va kavwö 
 \ps négation
 \ge ne ... pas
 \re
@@ -29287,9 +29335,9 @@ grand que "keruau")
 \rgb
 \xv e wã mwa xo Kaawo : "ko (= kawa, kavwö) jö nooli poi-nu ?" [GOs]
 \xn Kaawo fait/dit : "tu n'as pas vu mon enfant ?"
-\cf
+\cf forme courte de kavwö
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kò
 \hm 1
@@ -29354,7 +29402,7 @@ grand que "keruau")
 \dt 27/Feb/2010
 
 \lx -kò 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph kÉ”
 \va -kòn
@@ -29365,7 +29413,7 @@ grand que "keruau")
 \gb
 \rgb
 \poc *tolu
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx kô-
 \is position
@@ -29407,11 +29455,11 @@ grand que "keruau")
 \dt 04/Nov/2014
 
 \lx kô-
-\is classificateur  plante
+\is classificateur sémantique
 \hm 2
-\dialx GO(s)
+\dialx GOs
 \ps n
-\ge bouture de plante (liane)
+\ge préfixe des boutures de plante (lianes)
 \re
 \gb
 \rgb
@@ -29421,7 +29469,7 @@ grand que "keruau")
 \xn bouture de patate douce
 \cf
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx kòò 
 \is position
@@ -29458,7 +29506,7 @@ grand que "keruau")
 
 \lx kôô
 \hm 1
-\is cordage
+\is cordes
 \dialx GO(s)
 \va kô
 \ve BO PA
@@ -29475,7 +29523,7 @@ grand que "keruau")
 \sge corde de bateau 
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx kôô
 \hm 2
@@ -29546,7 +29594,7 @@ grand que "keruau")
 \dt 27/Feb/2010
 
 \lx khô
-\is cordage
+\is cordes
 \hm 1
 \dialx GO(s)  PA
 \va khô 
@@ -29568,7 +29616,7 @@ grand que "keruau")
 \xn bouture de patate douce 
 \cf wa-
 \ce lien
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx khô
 \is caract.objet
@@ -29600,7 +29648,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx khõ 
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)  
 \va khò, kò- 
 \ve PA
@@ -29624,7 +29672,7 @@ grand que "keruau")
 \cf kòòl
 \ce debout (être)
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kò bwa me
 \is interaction
@@ -29686,7 +29734,7 @@ grand que "keruau")
 \dt 16/Jul/2007
 
 \lx ko-a dròò-nu
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s) PA
 \ps n
 \ge nervure centrale de la palme de cocotier
@@ -29698,7 +29746,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 27/Jun/2007
+\dt 09/Jun/2015
 
 \lx kô-alaxe
 \is fonct.nat
@@ -29732,7 +29780,7 @@ grand que "keruau")
 \dt 11/Nov/2014
 
 \lx khõbo
-\is action.corps
+\is action_corps
 \dialx BO [BM]
 \ps v
 \ge taper
@@ -29743,7 +29791,7 @@ grand que "keruau")
 \xn je l'ai frappé avec un bout de bois
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kôôbua
 \hm 1
@@ -29830,7 +29878,7 @@ grand que "keruau")
 \dt 22/Dec/2014
 
 \lx khô-bwiri
-\is cordages
+\is cordes
 \dialx GO(s)
 \ps n
 \ge rênes
@@ -29845,7 +29893,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kò-çãnã
 \is interaction
@@ -29866,7 +29914,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kô-chòvwa
-\is cordage
+\is cordes
 \dialx GO(s)
 \ps n
 \ge lanière du cheval
@@ -29877,7 +29925,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kòò-dale
 \is habillement
@@ -29915,7 +29963,7 @@ grand que "keruau")
 
 \lx koe
 \hm 1
-\is plante
+\is plantes
 \dialx GOs
 \ps n
 \ge pois d'angole ; Ambrevade
@@ -29928,7 +29976,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx koe
 \is action
@@ -30029,7 +30077,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx koe-piça-ni
-\is action.corps
+\is action_corps
 \ph
 \ph kÉ”e-pidÊ’a-ni
 \dialx GO(s)
@@ -30042,7 +30090,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kôgò
 \is mouvement
@@ -30060,7 +30108,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kôgòò
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \va kôgò-n 
 \ve BO PA
@@ -30081,7 +30129,7 @@ grand que "keruau")
 \xn il reste encore de la nourriture à manger
 \cf
 \ce
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx kô-goon-a
 \is fonct.nat
@@ -30303,7 +30351,7 @@ grand que "keruau")
 \dt 09/Nov/2014
 
 \lx kô-kumala
-\is cultures
+\is cultures_bouture
 \dialx GO(s)
 \va kô-kumwãla
 \ve GO(s)
@@ -30317,7 +30365,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 28/Jun/2007
+\dt 09/Jun/2015
 
 \lx kool
 \is mer
@@ -30335,7 +30383,7 @@ grand que "keruau")
 \dt 29/Nov/2008
 
 \lx kòòl
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \ps n
 \ge monnaie kanak dont la longueur est calculée debout, de la hauteur de la tête jusqu'au sol (Charles)
@@ -30351,7 +30399,7 @@ grand que "keruau")
 \cf gò-hii, tabwa
 \ce
 \nt
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx kòòl kòlò
 \is interaction
@@ -30435,7 +30483,7 @@ grand que "keruau")
 \xn jeter un filet dans l'eau
 \re
 \sn 2
-\is action_liquide
+\is eau_action 
 \ge vider ; renverser (liquide)
 \re
 \gb
@@ -30444,7 +30492,7 @@ grand que "keruau")
 \xn arroser, verser l'eau
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx khòle
 \is mouvement
@@ -30566,7 +30614,7 @@ grand que "keruau")
 \dt 20/Feb/2015
 
 \lx kòli kaze
-\is locatif
+\is topographie
 \dialx GO(s)
 \ps n ; locatif
 \ge bord de mer
@@ -30578,10 +30626,10 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kòli we-za
-\is locatif
+\is topographie
 \dialx PA
 \ps locatif
 \ge bord de mer (au)
@@ -30593,7 +30641,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kôliat
 \is grammaire_aspect
@@ -30610,8 +30658,8 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx khòlima
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge agripper (s')
 \ge cramponner
@@ -30623,7 +30671,7 @@ grand que "keruau")
 \xn il s'agrippe
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kòlò
 \dialx GO(s) PA BO
@@ -30634,7 +30682,7 @@ grand que "keruau")
 \va khala ???
 \ve PA
 \sn 1
-\is topographie
+\is configuration
 \ps n
 \ge côté;  bord ; extrémité ; lisière
 \ge flanc
@@ -30688,7 +30736,7 @@ grand que "keruau")
 \xn mon présent coutumier pour/chez Peiva
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kòlò ije
 \is parenté
@@ -30733,7 +30781,7 @@ grand que "keruau")
 \dt 12/Feb/2006
 
 \lx kòò-manyô
-\is cultures
+\is cultures_bouture
 \dialx GOs
 \ps n
 \ge bouture de manioc
@@ -30745,7 +30793,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx kòmaze
 \is corps
@@ -30811,8 +30859,8 @@ grand que "keruau")
 \dt 22/Dec/2014
 
 \lx komwãcii
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge chatouiller
 \re
@@ -30822,10 +30870,10 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kõmwõgi
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \va kõmõgin 
 \ve BO
@@ -30839,7 +30887,7 @@ grand que "keruau")
 \xn I don't know it all (Schooling)
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kò-na-mi
 \is interaction
@@ -31087,7 +31135,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kõnõõ
-\is caract.animé
+\is caract.
 \ph kÉ”ÌƒnÉ”Ìƒ: (n dental)
 \dialx GO(s)
 \va kònôôl
@@ -31104,7 +31152,7 @@ grand que "keruau")
 \xn paresseux !
 \cf pa-kònòò-ni
 \ce apprivoiser (animal)
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx kô-nõõli tree
 \is fonct.nat
@@ -31141,7 +31189,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kõ-nhyò
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx PA
 \ps n
 \ge grappe de roussettes
@@ -31156,7 +31204,7 @@ grand que "keruau")
 \cf kõ
 \ce corde
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kõõl
 \is son
@@ -31276,7 +31324,7 @@ grand que "keruau")
 \dt 03/Nov/2014
 
 \lx kò-pò-pwaale
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \ps n
 \ge tige de maïs
@@ -31288,7 +31336,7 @@ grand que "keruau")
 \xn
 \cf pò-pwaale
 \ce épi de maïs
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx kòò-pwe
 \is pêche
@@ -31323,7 +31371,7 @@ grand que "keruau")
 
 \lx kô-raa
 \ph kÃ´É½a:
-\is modalité
+\is grammaire_modalité
 \dialx GO(s) PA BO
 \ps v. impersonnel
 \ge impossible (lit. couché mal); jamais ; difficile
@@ -31338,7 +31386,7 @@ grand que "keruau")
 \at possible, bon que
 \cf kôô-jo [BO]
 \ce possible, bon que
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx khòraa
 \is action
@@ -31358,7 +31406,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx khoriing
-\is plantes
+\is plantes_partie
 \dialx PA
 \ps n
 \ge rejet d'arbuste ou d'arbre taillé
@@ -31373,7 +31421,7 @@ grand que "keruau")
 \cf kîbwòn
 \ce rejet (qui part du pied)
 \nt
-\dt 20/Jun/2007
+\dt 10/Jun/2015
 
 \lx kòròò
 \is fonct.nat
@@ -31449,10 +31497,11 @@ grand que "keruau")
 
 \lx kotô
 \is emprunt
-\is plante
+\is plantes
 \dialx GO(s)
 \ps n
 \ge cotonnier
+\bw FR coton
 \re
 \gb
 \rgb
@@ -31460,7 +31509,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kô-töö
 \is position
@@ -31494,7 +31543,7 @@ grand que "keruau")
 
 \lx kou
 \hm 2
-\is saison
+\is temps
 \dialx PA
 \ps n
 \ge saison de disette (il n'y a rien à manger : entre décembre et avril)
@@ -31506,15 +31555,15 @@ grand que "keruau")
 \cf maxal, bweeye
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx kovanyi
 \is emprunt
 \is interaction
-\et compagnie
 \dialx GO(s)
 \ps n
 \ge compagnon ; ami
+\bw FR compagnie
 \re
 \gb
 \rgb
@@ -31524,7 +31573,7 @@ grand que "keruau")
 \xn mes amis, compagnons
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx kô-waga
 \is position
@@ -31559,7 +31608,7 @@ grand que "keruau")
 \dt 11/Nov/2014
 
 \lx kò-waayu
-\is modalité
+\is grammaire_modalité
 \dialx PA
 \ps v
 \ge persister à (sens positif)
@@ -31574,7 +31623,7 @@ grand que "keruau")
 \cf kò- < kòòl
 \ce debout
 \nt
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx kòòwe  khowe  ???
 \is sentiments
@@ -31719,7 +31768,7 @@ grand que "keruau")
 \dt 22/Dec/2014
 
 \lx kô-zo
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)  WEM
 \va kô-yo
 \ve PA BO
@@ -31736,7 +31785,7 @@ grand que "keruau")
 \at impossible que
 \cf e zo
 \ce il faut que
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx khòzole
 \is action
@@ -31757,15 +31806,15 @@ grand que "keruau")
 
 \lx köe
 \hm 2
-\dialx GO(s)
+\dialx GOs
 \va khoe
 \ve BO [BM]
 \ps v
 \sn 1
-\is action.plante
+\is action.plantes
 \ge cercler (arbre); tailler (haie)
 \sn 2
-\is action.animal
+\is action_corps_animaux
 \ge castrer (animal)
 \re
 \gb
@@ -31774,7 +31823,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx khööjo
 \is arbre
@@ -31866,7 +31915,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx ku
-\is grammaire
+\is grammaire_agent
 \hm 1
 \dialx BO haudr GO
 \va ko
@@ -31881,7 +31930,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx ku
 \is plantes
@@ -32080,8 +32129,7 @@ dimwa ; kubwaolè ; kubweena
 \dt 23/Dec/2014
 
 \lx kuu
-\is locatif
-\is direction
+\is topographie
 \dialx GO(s)
 \va kuun
 \ve BO
@@ -32095,12 +32143,12 @@ dimwa ; kubwaolè ; kubweena
 \cf
 \ce
 \poc *qulu (tÃªte, top, upper end of valley - Geraghty)
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx kûû
 \is nourriture
-\is action.corps
-\dialx GO(s) BO
+\is action_corps
+\dialx GOs BO
 \ps v
 \ge croquer
 \ge manger (des végétaux, fruits)
@@ -32113,7 +32161,7 @@ dimwa ; kubwaolè ; kubweena
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx kûû-
 \is classificateur nourriture
@@ -32216,7 +32264,7 @@ dimwa ; kubwaolè ; kubweena
 \dt 25/Dec/2014
 
 \lx kuau
-\is animaux
+\is mammifères
 \dialx GO(s) PA  BO
 \ps n
 \ge chien
@@ -32227,10 +32275,10 @@ dimwa ; kubwaolè ; kubweena
 \gt mon chien
 \nt
 \poc *gaun
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx ku-baazo
-\is direction
+\is grammaire_direction
 \dialx PA
 \va ku-baayo
 \ve BO
@@ -32247,7 +32295,7 @@ dimwa ; kubwaolè ; kubweena
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx ku-baazo al
 \is temps
@@ -32321,8 +32369,8 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 04/Nov/2014
 
 \lx kûbu
-\is action.corps
-\dialx GO(s) PA BO 
+\is action_corps
+\dialx GOs PA BO 
 \va khûbu
 \ve BO
 \ps verbe
@@ -32334,7 +32382,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn ils l'ont tué
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ku-bulu
 \is mouvement
@@ -32414,7 +32462,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx ku-çaaxò
 \is mouvement
-\is action.corps
+\is action_corps
 \ph ku-'Ê’a:É£É” 
 \dialx GO(s)
 \va ku-caaxò
@@ -32432,7 +32480,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ce
 \cf v.t. thözoe 
 \ce cacher qqn
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ku-cimwi
 \is position
@@ -32449,7 +32497,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 04/Nov/2014
 
 \lx kudi
-\is topographie
+\is configuration
 \ph 'kudi
 \dialx GO(s) PA
 \ps n
@@ -32461,7 +32509,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kudi-mwa
 \is maison
@@ -32601,13 +32649,13 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 25/Dec/2014
 
 \lx kuue 
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge tenir, retenir (un animal par une bride ou une corde)
 \rgb
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kuel
 \is interaction
@@ -32817,7 +32865,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 20/Feb/2015
 
 \lx kuu-jaaò
-\is locatif
+\is topographie
 \ph ku: ndjao
 \dialx GO(s) BO
 \ps n
@@ -32829,7 +32877,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 09/Jun/2015
 
 \lx ku-kewang
 \is topographie
@@ -32918,7 +32966,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx kula
 \hm 2
-\is liquide
+\is eau_action
 \dialx GO(s) BO
 \ps v.i
 \ge couler ;  répandre (se) ; vider (se)
@@ -32930,7 +32978,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf kule, kole
 \ce verser, répandre
 \poc *qunsa(n) 'pluie'
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx kula we ni ki
 \is maladie
@@ -32994,11 +33042,16 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Feb/2006
 
 \lx kule
-\is action.liquide
 \dialx GO(s) PA 
 \va kole, kula
 \ps v
+\ge
+\sn 1
+\is eau_action
 \ge verser ; répandre ; vider
+\re
+\sn 2
+\is pêche 
 \ge déployer ; étendre (filet)
 \re
 \gb
@@ -33009,10 +33062,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge étendre le filet
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx kulèng
-\is caract.animé
+\is caract.
 \dialx BO WE
 \ps v
 \ge fou ; imbécile
@@ -33025,7 +33078,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf a-kulèng [BO]
 \ce un fou
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx kuli
 \dialx GO(s)
@@ -33033,10 +33086,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve PA BO
 \ps v
 \sn 1
-\is plantes_mouvement
+\is plantes_processus
 \ge tomber (tout seul: fruit, feuilles)
 \sn 2
-\is plantes
+\is plantes_processus
 \ge perdre_ses_feuilles
 \re
 \gb
@@ -33052,7 +33105,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf ku [GOs], kul [PA]
 \ce tomber
 \poc *aqulu 'tombÃ©, dÃ©tachÃ©' (moi)
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx kulò
 \is prep.aliments
@@ -33083,7 +33136,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 14/Feb/2010
 
 \lx kumala
-\is plante
+\is plantes
 \dialx GO(s) BO PA
 \va kumwala
 \ve BO PA
@@ -33101,7 +33154,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge clone de patate douce
 \cf
 \ce
-\dt 18/Jul/2007
+\dt 09/Jun/2015
 
 \lx ku-manyõ
 \is igname
@@ -33118,8 +33171,6 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 14/Feb/2006
 
 \lx kumè
-\is corps
-\is plantes
 \dialx GO(s) BO PA
 \ps nom
 \sn 1
@@ -33148,7 +33199,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge le coeur de cocotier (comestible)
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx kumee
 \is arbre
@@ -33179,7 +33230,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Dec/2014
 
 \lx kumèè nu
-\is cocotier
+\is arbre_cocotier
 \dialx PA BO
 \ps n
 \ge coeur de cocotier (comestible)
@@ -33190,10 +33241,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx kûmèè tòòmwa
-\is plante
+\is plantes
 \dialx BO [Corne]
 \ps
 \ge 'langue de femme' (petit buisson aux feuilles épaisses et succulentes)
@@ -33205,7 +33256,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx kumõõ
 \is poisson
@@ -33223,7 +33274,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 01/Mar/2006
 
 \lx kun
-\is lieu
+\is locatif
 \dialx PA BO
 \va kunõng
 \ve BO
@@ -33244,10 +33295,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf kun contient le "phwe-meewu"
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx kun-êba
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps locatif 
 \ge là sur le côté ; à cet endroit latéralement
@@ -33259,10 +33310,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kun-êda 
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps locatif 
 \ge là en haut ; à cet endroit en haut
@@ -33274,10 +33325,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kun-êdu
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps locatif 
 \ge là en bas ; à cet endroit en bas
@@ -33289,7 +33340,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kûûni
 \is nourriture
@@ -33338,7 +33389,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Dec/2014
 
 \lx kuni-m
-\is direction
+\is grammaire_direction
 \dialx BO [BM]
 \ps locatif 
 \ge là de ton côté
@@ -33349,7 +33400,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kunô
 \is insecte
@@ -33370,7 +33421,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 22/Dec/2014
 
 \lx ku-nrõgo
-\is locatif
+\is topographie
 \dialx GO(s)
 \va ku-nõgò
 \ve BO PA
@@ -33383,7 +33434,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf phwe-nrõgò
 \ce source 
-\dt 21/Feb/2010
+\dt 09/Jun/2015
 
 \lx kun-òli
 \is locatif
@@ -33544,8 +33595,8 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx ku-tibu
 \is position
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge accouder (s')
 \re
@@ -33556,7 +33607,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx kutru
 \ph kuÊˆu  kuÉ½u 
@@ -33596,7 +33647,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 17/Jul/2006
 
 \lx kuvêê
-\is plantes
+\is plantes_partie
 \dialx GO(s) PA
 \va kuveen
 \ve BO
@@ -33611,10 +33662,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx kuvêê nu
-\is cocotier
+\is arbre_cocotier
 \dialx PA
 \ps n
 \ge coco germé
@@ -33626,7 +33677,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 16/Feb/2010
+\dt 09/Jun/2015
 
 \lx kuvêê-uvhia
 \is taro
@@ -33781,8 +33832,8 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 04/Nov/2014
 
 \lx kuzaò
-\is quantificateur
-\is quantificateur_degré
+\is grammaire_quantificateur
+\is grammaire_quantificateur_degré
 \dialx GO(s)
 \va kuraò
 \ve WEM WEH
@@ -33798,7 +33849,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx kwol ???
 \dialx BO
@@ -33831,17 +33882,17 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Dec/2014
 
 \lx -laa 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \ps pronom objet ou possessif 3° pluriel
 \ge les ; leur(s)
 \re
 \gb
 \rgb
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lha
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \va le 
 \ve BO
@@ -33857,17 +33908,17 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx lhaa
-\is pronom
+\is grammaire_pronom
 \dialx BO
 \3p pronom indépendant
 \ge eux
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx lã-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA BO
 \va lãã, lã
 \ps déictique pluriel DX1 ou anaphorique
@@ -33883,10 +33934,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn les voici ceux-ci
 \cf
 \ce
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx laa-ba
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps pronom démonstratif pluriel
 \ge ceux-là là-bas
@@ -33898,10 +33949,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx laa-du
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps déictique pluriel 
 \ge ceux-là en bas 
@@ -33916,10 +33967,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx -laeo
-\is grammaire_deixis 
+\is grammaire_démonstratif
 \dialx GO
 \ps démonstratif pl
 \ge -ci (proche du locuteur et loin de l'interlocuteur) Dubois
@@ -33930,7 +33981,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf -eo
 \ce démonstratif sg
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx lai
 \is nourriture
@@ -33949,7 +34000,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 09/Nov/2014
 
 \lx la-ida
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps déictique pluriel 
 \ge ceux-là en haut
@@ -33964,10 +34015,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx lalue
-\is plante
+\is plantes
 \dialx GO(s) PA
 \ps n
 \ge aloes
@@ -33978,10 +34029,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 28/Feb/2006
+\dt 09/Jun/2015
 
 \lx lã-nã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA BO
 \ps démonstratif duel DX2 et anaphorique 
 \ge ceux-là 
@@ -33996,10 +34047,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge ces choses (Dubois)
 \cf
 \ce
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx la-nim
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA
 \ps démonstratif pluriel (DX3)
 \ge ces ... là (péjoratif pour les humains, mis à distance)
@@ -34014,7 +34065,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lao
 \is action
@@ -34037,7 +34088,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 25/Dec/2014
 
 \lx la-òli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif DX3 ou anaphorique 
 \ge là ; là-bas (visible)
@@ -34051,14 +34102,13 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lapya
 \is poisson
 \is emprunt
 \dialx GO(s)
 \ps n
-\is plantes
 \ge tilapia
 \sc Oreochromis mossambica (Cichlidae)
 \re
@@ -34068,7 +34118,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx layô
 \is emprunt
@@ -34078,7 +34128,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve WE 
 \ps n
 \ge viande rouge
-\bw la viande
+\bw FR la viande
 \re
 \gb
 \rgb
@@ -34086,7 +34136,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx -le
 \is locatif
@@ -34111,6 +34161,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s)
 \ps n
 \ge lait
+\bw FR lait
 \re
 \re
 \gb
@@ -34119,10 +34170,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx -li
-\is pronom
+\is grammaire_pronom
 \dialx GO PA 
 \ps pronom objet ou possessif 3° pers. duel
 \ge les ; leur
@@ -34135,10 +34186,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx lhi
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA
 \ps pronom duel 3° personne (sujet)
 \ge ils 
@@ -34152,10 +34203,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf za ili nye lhi a-da Numia
 \ce c'est seulement eux-deux qui sont partis à Nouméa
 \nt
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx li-ã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps déictique duel DX1 ou anaphorique
 \ge ces deux ... ci
@@ -34173,10 +34224,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx liè
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \va li-ã
 \ve BO
@@ -34191,10 +34242,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn mes deux pieds
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lie-ba
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps déictique duel DX3 latéralement
 \ge ces deux là-bas sur le côté
@@ -34206,10 +34257,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lie-nã
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \va li-nã
 \ve GO(s)
@@ -34224,10 +34275,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn ce sont ces deux femmes là dont tu parles ? - oui, c'est ces deux-là
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx li-nim
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA
 \ps démonstratif duel (DX3)
 \ge ces deux... là (péjoratif pour les humains, mis à distance)
@@ -34242,10 +34293,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx li-òli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif DX3 ou anaphorique 
 \ge là ; là-bas (visible)
@@ -34261,10 +34312,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx lòò
-\is pronom
+\is grammaire_pronom
 \dialx GO
 \va mhõ
 \ps pronom 3° triel (sujet, objet, possessif)
@@ -34274,20 +34325,20 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \rgb
 \xv
 \xn
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx -lòò
-\is pronom
+\is grammaire_pronom
 \dialx GO
 \ps pronom objet ou possessif  3° triel
 \ge eux 3 ; leurs 3
 \re
 \gb
 \rgb
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx lhò
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \va zò
 \ve WE
@@ -34303,7 +34354,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf lò-na, lò-ba, lò-è
 \ce
 \nt
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx lòlò
 \is grammaire_adverbe
@@ -34364,6 +34415,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve GO(s)
 \ps n
 \ge voiture; auto
+\bw FR l'auto
 \re
 \gb
 \rgb
@@ -34371,10 +34423,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 13/Jul/2007
+\dt 04/Jun/2015
 
 \lx -m
-\is pronom
+\is grammaire_pronom
 \dialx BO PA
 \ps suff. possessif 2° pers.
 \ge ton ; ta ; tes
@@ -34389,7 +34441,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx maa-
 \is classificateur nourriture
@@ -34478,7 +34530,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 20/Feb/2015
 
 \lx mã-
-\is gramm
+\is grammaire_nombre
 \hm 3
 \ps marque de non singulier
 \ge marque de non singulier
@@ -34501,7 +34553,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge pluriel
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 10/Jun/2015
 
 \lx mãã
 \is nourriture
@@ -34560,7 +34612,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 14/Jul/2007
 
 \lx mãã
-\is mollusque
+\is mollusque_gastéropode
 \hm 4
 \dialx GO(s) BO PA
 \ps n
@@ -34572,7 +34624,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx mhã
 \is caract.objet
@@ -34656,7 +34708,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 25/Dec/2014
 
 \lx mhãã
-\is quantificateur
+\is grammaire_quantificateur
 \ph mÌ£Ã¦Ìƒ:
 \dialx GO(s) PA BO 
 \hm 3
@@ -34682,10 +34734,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn il pleure vraiment
 \cf pa, para 
 \ce animés
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx ma ???
-\is action.corps
+\is action_corps
 \hm 7
 \dialx BO [Corne]
 \ps v
@@ -34698,7 +34750,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx mãã ?? mee
 \is prep.aliments_cuisson
@@ -34876,7 +34928,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 09/Nov/2014
 
 \lx mãe
-\is plante
+\is plantes
 \dialx GO(s)
 \va mae
 \ve BO PA
@@ -34889,10 +34941,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \re
 \gb
 \rgb
-\dt 18/Jul/2007
+\dt 09/Jun/2015
 
 \lx mãè- 
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) 
 \va mãi-
 \ve PA BO
@@ -34905,10 +34957,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn 2 lots de 3 ignames
 \xv mãe-xe ; mãe-tru ; mãe-ni ma-xe, etc.
 \xn 1 paquet de 3, 2 paquets de 3 ; 6 paquets de 3 , etc.
-\dt 13/Mar/2010
+\dt 09/Jun/2015
 
 \lx mãebo
-\is plante
+\is plantes
 \dialx GO(s) PA BO
 \ps n
 \ge citronnelle
@@ -34920,10 +34972,10 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn feuilles de citronnelle
 \cf
 \ce
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx mãè-ni
-\is classificateur
+\is classificateur numérique
 \dialx GO(s)
 \ps n
 \ge 5 paquet de 3 ignames
@@ -34934,7 +34986,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mãè-nira ?
 \is grammaire_interrogatif
@@ -34951,7 +35003,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 21/Dec/2014
 
 \lx mãè-xè 
-\is classificateur
+\is classificateur numérique
 \dialx GO(s)  BO
 \ps classificateur numéral (pour compter des paquets d'ignames
 constitués de trois ignames)
@@ -34964,7 +35016,7 @@ constitués de trois ignames)
 \cf mãè-tru, mãè-kò, etc.
 \ce deux paquets (de trois ignames), deux paquets, etc; 
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mâge mhâge ???
 \is noeud
@@ -35119,7 +35171,7 @@ constitués de trois ignames)
 \dt 08/Feb/2006
 
 \lx mhãi-
-\is classificateur 
+\is classificateur numérique
 \dialx GO(s) PA BO
 \ps n ; classificateur numérique
 \ge morceau (de viande, igname coupée) ; part ; fraction
@@ -35138,11 +35190,11 @@ constitués de trois ignames)
 \xn c'était moins une que je le touche
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx maic
 \is emprunt
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge maïs
@@ -35153,10 +35205,10 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mhãi-n
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA
 \ps n
 \ge morceau
@@ -35167,7 +35219,7 @@ constitués de trois ignames)
 \xn un morceau pour qui ?
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mãiyã
 \is nourriture
@@ -35304,8 +35356,8 @@ constitués de trois ignames)
 \dt 04/Nov/2014
 
 \lx majo
-\ph mããandjo
-\is reptile
+\ph mandjo
+\is reptile_lézard
 \dialx GO(s) BO 
 \ps n
 \ge gecko; margouillat; tarente
@@ -35316,7 +35368,7 @@ constitués de trois ignames)
 \xn
 \cf toro, tròtrò
 \ce
-\dt 24/Jun/2007
+\dt 10/Jun/2015
 
 \lx makoyoo
 \is nourriture
@@ -35335,7 +35387,7 @@ constitués de trois ignames)
 \dt 22/Dec/2014
 
 \lx mala
-\is éléments_lumière
+\is lumière
 \dialx GO(s)
 \ps nom
 \ge lumière du jour; lumière
@@ -35350,10 +35402,10 @@ constitués de trois ignames)
 \xn lumière de la lune 
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mãla-
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif pluriel (post-nom)
 \ge ceux-là
@@ -35369,10 +35421,10 @@ constitués de trois ignames)
 \cf ãgu mãla-ã, mãla-na, mãla-òli, mãla-ã-du, mãla-ã-da, mãla-ò
 \ce ces gens (pluriel) 
 \nt
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx mããle
-\is plante
+\is plantes
 \dialx GO(s)
 \va maalèm
 \ve BO PA
@@ -35386,7 +35438,7 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 28/Feb/2006
+\dt 09/Jun/2015
 
 \lx malèmwi ???
 \dialx BO [Corne]
@@ -35420,7 +35472,7 @@ constitués de trois ignames)
 
 \lx mãli
 \hm 1
-\is quantificateur
+\is grammaire_quantificateur
 \dialx BO [Corne]
 \ps pronom
 \ge les deux
@@ -35433,11 +35485,11 @@ constitués de trois ignames)
 \xn vous3  autres 
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx mãli-
 \hm 2
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) PA
 \ps démonstratif duel (post nom)
 \ge les deux
@@ -35454,7 +35506,7 @@ constitués de trois ignames)
 \sge triel
 \se mãla-
 \sge pluriel
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx mhaaloo
 \is eau
@@ -35643,7 +35695,7 @@ constitués de trois ignames)
 \dt 27/Feb/2010
 
 \lx mani ???
-\is action_liquide
+\is eau_action
 \hm 3
 \dialx GO
 \ps verbe
@@ -35655,7 +35707,7 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mããni-mhã
 \is fonct.nat
@@ -35673,7 +35725,7 @@ constitués de trois ignames)
 \dt 03/Nov/2014
 
 \lx manyô
-\is plante
+\is plantes
 \dialx GO(s) PA
 \ps n
 \ge manioc
@@ -35684,7 +35736,7 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 10/Feb/2006
+\dt 09/Jun/2015
 
 \lx maara
 \is eau
@@ -35782,6 +35834,7 @@ constitués de trois ignames)
 \dialx GO(s)
 \ps n
 \ge machine
+\bw FR machine
 \re
 \gb
 \rgb
@@ -35789,7 +35842,7 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 11/Jun/2007
+\dt 04/Jun/2015
 
 \lx mãã-trele
 \is oiseau
@@ -35834,7 +35887,7 @@ constitués de trois ignames)
 \lx maû
 \hm 2
 \is habillement
-\is coutumes
+\is coutumes_objet
 \dialx GO(s) PA
 \ps n
 \ge rouleau d'étoffe
@@ -35847,7 +35900,7 @@ constitués de trois ignames)
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx maü
 \is caract.
@@ -35908,7 +35961,7 @@ l'épouse) [lit. sec foyer]
 \dt 07/Nov/2014
 
 \lx mhava
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) PA 
 \va mhava-n
 \ve PA BO
@@ -35928,7 +35981,7 @@ l'épouse) [lit. sec foyer]
 \cf
 \ce
 \nt
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx mhava mhwããnu
 \is astre
@@ -35963,7 +36016,7 @@ l'épouse) [lit. sec foyer]
 \dt 04/Nov/2014
 
 \lx mhavwa
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) 
 \ph mÊ°aÎ²a
 \va mhava
@@ -35979,7 +36032,7 @@ l'épouse) [lit. sec foyer]
 \xn un morceau d'igname
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mã-wãge
 \is maladie
@@ -36015,7 +36068,7 @@ l'épouse) [lit. sec foyer]
 \dt 23/Dec/2014
 
 \lx maxa
-\is saison
+\is phénom.atmosphérique
 \dialx GO(s)
 \va maxal
 \ve PA BO
@@ -36037,7 +36090,7 @@ l'épouse) [lit. sec foyer]
 \xn
 \cf pwebae
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx maxewa
 \is oiseau
@@ -36192,7 +36245,7 @@ l'épouse) [lit. sec foyer]
 \dt 12/Jul/2007
 
 \lx mhaza
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \va mhara
 \ve PA WEM
@@ -36231,10 +36284,9 @@ l'épouse) [lit. sec foyer]
 \xn les enfants viennent de se baigner
 \cf
 \ce
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx mazao
-\is société
 \is coutumes
 \dialx GO(s)
 \ps n
@@ -36250,10 +36302,10 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx mazii
-\is plante
+\is plantes_partie
 \is tressage
 \dialx GO(s)
 \ps n
@@ -36265,10 +36317,10 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \xn
 \cf thral, thra
 \ce pandanus
-\dt 09/Nov/2014
+\dt 10/Jun/2015
 
 \lx mazido
-\is caract/objet
+\is caract.objet
 \dialx GO(s)
 \ps v
 \ge brillant ; scintillant
@@ -36280,7 +36332,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mazilo
 \is poisson
@@ -36335,7 +36387,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dt 09/Nov/2008
 
 \lx me
-\is pronom
+\is grammaire_pronom
 \hm 2
 \dialx GO
 \ps pronom 1° personne triel exclusif (sujet, objet ou possessif)
@@ -36347,7 +36399,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \xn
 \cf
 \ce
-\dt 10/Jun/2007
+\dt 09/Jun/2015
 
 \lx me
 \is corps
@@ -36454,7 +36506,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dt 23/Dec/2014
 
 \lx mee
-\is nourriture
+\is nourriture_goût
 \dialx GO(s)
 \va mèèn
 \ve PA
@@ -36474,7 +36526,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \cf zani [GO], òn [PA]
 \ce sel
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mhe
 \is arbre
@@ -36507,7 +36559,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dt 23/Dec/2014
 
 \lx mèè ???
-\is aspect
+\is grammaire_aspect
 \dialx BO [Corne]
 \ps v
 \ge commencer
@@ -36518,7 +36570,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \xn je commence à manger
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mhè ???
 \hm 2
@@ -36603,7 +36655,8 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dt 21/Jun/2007
 
 \lx medatri
-\is arbre (emprunt)
+\is arbre 
+\is emprunt
 \ph me'daÉ½i
 \dialx GO(s)
 \ps n
@@ -36615,10 +36668,10 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \xn
 \cf
 \ce
-\dt 09/Jul/2007
+\dt 10/Jun/2015
 
 \lx meedree
-\is phénom_atmosphérique
+\is phénom.atmosphérique
 \dialx GO(s)
 \va meedèèn
 \ve PA BO
@@ -36631,7 +36684,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \xn il fait lourd
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx me-de ???
 \is maison
@@ -36776,7 +36829,7 @@ case (Dubois)
 \dt 16/Jul/2007
 
 \lx me-kônôô
-\is caract.animé
+\is caract.
 \dialx GO(s)
 \ps v
 \ge nonchalant ; mou ; doux (animal); apprivoisé
@@ -36787,10 +36840,10 @@ case (Dubois)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx meli
-\is déterminant duel
+\is grammaire_déterminant duel
 \dialx GO(s)
 \ps déterminant duel
 \ge ces deux
@@ -36803,7 +36856,7 @@ case (Dubois)
 \xn ces deux hommes-là
 \cf
 \ce
-\dt 07/Feb/2006
+\dt 09/Jun/2015
 
 \lx meeli
 \is insecte
@@ -36859,7 +36912,7 @@ case (Dubois)
 \dt 18/Mar/2010
 
 \lx memee = wamee ne
-\is mode
+\is grammaire_modalité
 \dialx PA
 \ps mode
 \ge ça doit être; ce serait bien 
@@ -36875,7 +36928,7 @@ case (Dubois)
 \cf
 \ce
 \nt
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx memexãi
 \is oiseau
@@ -37021,7 +37074,7 @@ case (Dubois)
 \dt 23/Jun/2007
 
 \lx menixe
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s) PA BO
 \ps v. comparatif
 \ge pareil (être); semblable
@@ -37033,10 +37086,10 @@ case (Dubois)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mènõ
-\is plantes
+\is plantes_processus
 \dialx GO(s)
 \va mènõng
 \ve PA BO
@@ -37052,7 +37105,7 @@ case (Dubois)
 \xn la fleur est fanée
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx mhenõ
 \is déplacement
@@ -37158,7 +37211,7 @@ case (Dubois)
 \ve BO
 \ps nom
 \sn 1
-\is location
+\is locatif
 \ge endroit ; place ; passage (col, gué, passe dans un récif)
 \sn 2
 \is grammaire_aspect
@@ -37178,11 +37231,11 @@ case (Dubois)
 \sge dépotoir
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx mhenõõ
 \hm 2
-\is déplacement_trace
+\is déplacement_traces
 \dialx GO(s) WEM
 \ps n
 \ge trace ; marque
@@ -37199,7 +37252,7 @@ case (Dubois)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx mhenõ-paxe we
 \is cultures
@@ -37220,7 +37273,7 @@ case (Dubois)
 \dt 07/Nov/2014
 
 \lx mhenõ-peki
-\is lieu
+\is configuration
 \dialx GO(s)
 \ps n
 \ge soudure (par ex. des 2 parties du crâne)
@@ -37231,7 +37284,7 @@ case (Dubois)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx mhenõ-pe-vhi de 
 \is topographie
@@ -37365,7 +37418,7 @@ un chemin
 \dt 23/Dec/2014
 
 \lx me-pwamwa
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps n
 \ge sud (lit. visage du pays)
@@ -37380,7 +37433,7 @@ un chemin
 \cf
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx mèra-
 \is insecte 
@@ -37404,7 +37457,7 @@ un chemin
 \dt 22/Feb/2010
 
 \lx mèròò
-\is plante
+\is plantes
 \dialx PA BO WEM WE
 \va mããro
 \ve BO [BM]
@@ -37417,7 +37470,7 @@ un chemin
 \xn sur l'herbe
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx mero ???
 \is armes
@@ -37450,7 +37503,7 @@ espèce d'arbre)
 \dt 21/Nov/2014
 
 \lx me-trabwa
-\is forme
+\is caract.
 \dialx GOs
 \ps nmz
 \ge forme
@@ -37462,7 +37515,7 @@ espèce d'arbre)
 \cf
 \ce
 \nt
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx mè-thi
 \is corps
@@ -37604,7 +37657,7 @@ espèce d'arbre)
 \dt 17/Mar/2010
 
 \lx mi
-\is pronom
+\is grammaire_pronom
 \dialx GO(s) PA BO
 \ps pronom sujet 1° personne duel inclusif 
 \ge nous 2
@@ -37615,10 +37668,10 @@ espèce d'arbre)
 \xn
 \cf
 \ce
-\dt 20/Jul/2007
+\dt 09/Jun/2015
 
 \lx -mi
-\is directionnel
+\is grammaire_directionnel
 \dialx GO(s)  PA BO
 \ps directionnel ventif
 \ge vers ici ; vers ego
@@ -37629,10 +37682,10 @@ espèce d'arbre)
 \xn viens ici !
 \cf dumi, dami
 \ce vers ici en bas, vers ici en haut
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx mii
-\is couleurs
+\is couleur
 \dialx GO(s) PA BO
 \ps v. statif
 \ge rouge ; mûr; violet
@@ -37646,7 +37699,7 @@ espèce d'arbre)
 \se chaamwa mii
 \sge banane mûre
 \poc *maiRa, *meRaq
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx mibwa
 \is religion
@@ -37710,7 +37763,7 @@ espèce d'arbre)
 \dt 21/Nov/2014
 
 \lx mimi 
-\is animaux
+\is mammifères
 \dialx GO(s)
 \va minòn
 \ve PA BO
@@ -37723,7 +37776,7 @@ espèce d'arbre)
 \xn
 \cf
 \ce
-\dt 14/Jul/2007
+\dt 10/Jun/2015
 
 \lx mini-
 \is nourriture
@@ -37845,7 +37898,7 @@ espèce d'arbre)
 \dt 20/Feb/2010
 
 \lx mõ
-\is pronom
+\is grammaire_pronom
 \hm 3
 \dialx GO(s) WEM
 \ph mÉ”Ìƒ
@@ -37856,7 +37909,7 @@ espèce d'arbre)
 \rgb
 \xv
 \xn
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx mõ-
 \is maison
@@ -38052,7 +38105,7 @@ espèce d'arbre)
 \dt 09/Nov/2014
 
 \lx mhõdòni
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GOs
 \ps
 \ge ce qui s'ajoute à un tas (mais qui ne peut constituer un tas complet dans des dons coutumiers)
@@ -38066,7 +38119,7 @@ espèce d'arbre)
 \cf
 \ce
 \nt
-\dt 13/Mar/2010
+\dt 09/Jun/2015
 
 \lx mõ-ènrõ
 \is corps
@@ -38326,7 +38379,7 @@ central de la case (Dubois)
 \dt 23/Dec/2014
 
 \lx mhômõwe
-\is éléments_terre
+\is terrain_terre
 \dialx GO(s)
 \ph mÊ°É”Ìƒmowe
 \ps n
@@ -38338,7 +38391,7 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mõnrõ
 \hm 1
@@ -38570,7 +38623,7 @@ central de la case (Dubois)
 \dialx BO
 \ps n
 \sn 1
-\is plante
+\is plantes
 \ge champignon
 \sn 2
 \is instrument
@@ -38582,7 +38635,7 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx mõ-phwayuu
 \is maison
@@ -38755,8 +38808,8 @@ central de la case (Dubois)
 \dt 22/Dec/2014
 
 \lx mhôwe
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge essorer; presser (fruit)
 \ge presser; tordre
@@ -38770,7 +38823,7 @@ central de la case (Dubois)
 \poc *momos 'squeeze' (Blust) moi
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx mõxõ
 \is action
@@ -38880,7 +38933,7 @@ central de la case (Dubois)
 \dt 20/Feb/2015
 
 \lx mû
-\is plantes
+\is plantes_processus
 \hm 1
 \dialx GO 
 \va muu
@@ -38896,7 +38949,7 @@ central de la case (Dubois)
 \xn fleur
 \xv e mûû mûû-cee
 \xn la fleur fleurit
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx mû
 \is fonct.nat
@@ -38991,8 +39044,8 @@ central de la case (Dubois)
 \dt 23/Dec/2014
 
 \lx mudree 
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \va mudee, môdee
 \ve BO [BM]
 \ps v
@@ -39005,7 +39058,7 @@ central de la case (Dubois)
 \sge déchirer avec les dents
 \gb
 \rgb
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx mudim ???
 \is poisson_mammifère
@@ -39061,7 +39114,7 @@ central de la case (Dubois)
 \dt 03/Nov/2014
 
 \lx mugo
-\is bananiers
+\is bananier
 \dialx GO(s) BO
 \ps n
 \va muge
@@ -39079,7 +39132,7 @@ central de la case (Dubois)
 \cf
 \ce
 \poc *munti (Grace)
-\dt 06/Mar/2010
+\dt 09/Jun/2015
 
 \lx muna-le 
 \is grammaire_conjonction
@@ -39096,7 +39149,7 @@ central de la case (Dubois)
 \dt 23/Dec/2014
 
 \lx munrõ
-\is liquide
+\is eau_action
 \dialx GO(s)
 \va muunõ
 \ve BO
@@ -39113,10 +39166,10 @@ central de la case (Dubois)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mura
-\is locatif; gramm
+\is locatif
 \dialx PA BO 
 \va murò
 \ve BO
@@ -39137,7 +39190,7 @@ central de la case (Dubois)
 \xn après lui
 \an hêbun
 \at avant, devant
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx murae
 \is parenté
@@ -39212,6 +39265,7 @@ central de la case (Dubois)
 \dialx GO(s)
 \ps n
 \ge mouchoir
+\bw FR mouchoir
 \re
 \gb
 \rgb
@@ -39219,10 +39273,10 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx muzi
-\is coutumes
+\is coutumes_objet
 \dialx GO(s)
 \va mulin
 \ve GO(s)
@@ -39236,7 +39290,7 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx mhûûzi
 \is crabe
@@ -39344,7 +39398,7 @@ central de la case (Dubois)
 \dt 23/Dec/2014
 
 \lx mwã
-\is pronom
+\is grammaire_pronom
 \hm 3
 \dialx GO(s)
 \va mhwã
@@ -39356,7 +39410,7 @@ central de la case (Dubois)
 \rgb
 \xv
 \xn
-\dt 25/Feb/2010
+\dt 09/Jun/2015
 
 \lx mwãã
 \is interaction
@@ -39698,7 +39752,7 @@ central de la case (Dubois)
 \dt 04/Nov/2014
 
 \lx mwa-paa
-\is lieu
+\is habitat
 \dialx PA
 \va mwa-vaa
 \ve PA
@@ -39711,7 +39765,7 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx mwa-pe-cinô
 \is maison
@@ -39802,7 +39856,7 @@ central de la case (Dubois)
 \ge noeud de guerre (annonce coutumière)
 \ge message de guerre (transmis de chef en chef pour chercher des alliés)
 \sn 1
-\is société
+\is discours
 \ge annonce coutumière
 \re
 \gb
@@ -39811,7 +39865,7 @@ central de la case (Dubois)
 \xn
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx mwa-vèle
 \is maison
@@ -39845,7 +39899,7 @@ central de la case (Dubois)
 
 \lx mwããxe
 \hm 2
-\is action.corps
+\is action_corps
 \dialx BO [BM]
 \ps v
 \ge tordre (du fer)
@@ -39859,7 +39913,7 @@ central de la case (Dubois)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx mwê
 \is oiseau
@@ -39946,7 +40000,7 @@ central de la case (Dubois)
 \dt 14/Jul/2007
 
 \lx mwêêje
-\is société
+\is coutumes
 \ph mwÃª:ndje 
 \dialx GO(s) PA
 \ps n
@@ -39960,11 +40014,11 @@ central de la case (Dubois)
 \xn il a un comportement agréable
 \cf
 \ce
-\dt 25/Jun/2007
+\dt 10/Jun/2015
 
 \lx mwêênro
-\is quantificateur 
-\is modalité
+\is grammaire_quantificateur 
+\is grammaire_modalité
 \ph mwÃª:É³o
 \dialx GO(s) BO
 \ps v. impersonnel
@@ -39990,7 +40044,7 @@ central de la case (Dubois)
 \sge s'en falloir de peu que
 \cf kuzaò, kuraò
 \ce être en surplus, de trop
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx mweeja 
 \is caract.personne
@@ -40024,7 +40078,7 @@ central de la case (Dubois)
 \dt 25/Dec/2014
 
 \lx mwèèn
-\is plante
+\is plantes
 \dialx BO [BM]
 \ps n
 \ge cycas ???
@@ -40036,7 +40090,7 @@ central de la case (Dubois)
 \cf
 \ce
 \poc PNV *mwele (proto-north vanuatu); mweeng nÃªl.
-\dt 28/Nov/2008
+\dt 09/Jun/2015
 
 \lx mwetre
 \is nourriture
@@ -40063,7 +40117,7 @@ sauvage (di) et cuit)
 \dt 02/Mar/2010
 
 \lx mhwi 
-\is caract.animé
+\is caract.
 \dialx BO
 \ps v. statif
 \ge timide ; doux
@@ -40075,7 +40129,7 @@ sauvage (di) et cuit)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx mwòni
 \is cultures
@@ -40125,7 +40179,7 @@ pleurs)
 \dt 25/Dec/2014
 
 \lx -n
-\is pronom
+\is grammaire_pronom
 \dialx BO PA
 \ps suff. poss. 3° pers. sing.
 \ge son ; sa ; ses
@@ -40138,7 +40192,7 @@ pleurs)
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx na
 \is locatif
@@ -40243,18 +40297,18 @@ pleurs)
 \cf nrovwö-nra [GOs]
 \ce si
 \sn 2
-\is modalité
+\is grammaire_modalité
 \ge optatif (à l'initiale de l'énoncé; exprime: ordre, conseil, souhait)
 \re
 \gb
 \rgb
 \xv na jo ! [BO]
 \xn attention à toi ! (Dubois)
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx nra
 \hm 3
-\is pronom_négatif
+\is grammaire_pronom_négatif
 \dialx GOs
 \va ne
 \ve PA
@@ -40274,10 +40328,10 @@ pleurs)
 \cf
 \ce
 \nt ne réfère qu'à des humains; senti comme différent de nree 'faire'
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx -nra
-\is démonstratif
+\is grammaire_démonstratif
 \ph É³a
 \dialx GO(s) PA BO
 \ps démonstratif DX2 ; anaphorique ; assertif 
@@ -40295,7 +40349,7 @@ pleurs)
 \sge après-demain
 \cf
 \ce
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx nraa
 \ph É³a:
@@ -40306,7 +40360,7 @@ pleurs)
 \ps v
 \is échanges
 \ge donner
-\is action.corps
+\is action_corps
 \ge mettre
 \ge poser
 \re
@@ -40334,7 +40388,7 @@ pleurs)
 \xn poser par terre
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx nra bòli
 \is locatif
@@ -40573,7 +40627,7 @@ pleurs)
 \dt 19/Dec/2014
 
 \lx nranri
-\is animaux
+\is mammifères
 \ph É³aÉ³i
 \dialx GO(s) 
 \va nani
@@ -40583,7 +40637,7 @@ pleurs)
 \re
 \gb
 \rgb
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx napoine
 \is coutumes
@@ -40632,7 +40686,7 @@ pleurs)
 \dt 19/Dec/2014
 
 \lx nrawêni 
-\is plante
+\is plantes
 \dialx GO(s)
 \va nraõnri
 \ve GO(s)
@@ -40650,10 +40704,10 @@ pleurs)
 \xn
 \cf
 \ce
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx nhaxii ???
-\is caract.objet
+\is caract.objet_taille
 \dialx
 \ps
 \ge minuscule; très petit
@@ -40664,7 +40718,7 @@ pleurs)
 \xn
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx nraxo
 \is poisson
@@ -40687,7 +40741,7 @@ pleurs)
 \dt 18/Jul/2007
 
 \lx ne 
-\is grammaire
+\is grammaire_relateur
 \hm 2
 \ps relateur
 \ge de
@@ -40702,7 +40756,7 @@ pleurs)
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx nhe
 \is feu
@@ -40724,7 +40778,7 @@ pleurs)
 
 \lx nre
 \hm 1
-\is outil
+\is outils
 \ph É³e; ne
 \dialx GO(s)
 \ps n
@@ -40736,7 +40790,7 @@ pleurs)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx nre 
 \is outils
@@ -40759,7 +40813,7 @@ pleurs)
 
 \lx nre
 \hm 3
-\is aspect
+\is grammaire_aspect
 \dialx GO(s) PA 
 \ps fréquentatif
 \ge souvent (lié à nre 2 ??) ; (+ négation : jamais)
@@ -40783,7 +40837,7 @@ pleurs)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx nre
 \hm 4
@@ -40922,7 +40976,7 @@ pleurs)
 \dt 25/Dec/2014
 
 \lx nreme
-\is nourriture
+\is nourriture_goût
 \ph É³eme
 \dialx GO(s) 
 \va nemee-n
@@ -40947,7 +41001,7 @@ pleurs)
 \cf
 \ce
 \poc *É²ami 'goÃ»ter'
-\dt 09/Nov/2014
+\dt 10/Jun/2015
 
 \lx nre-mu
 \is action
@@ -41005,7 +41059,7 @@ pleurs)
 \dt 27/Feb/2010
 
 \lx nre-raa
-\is nourriture
+\is nourriture_goût
 \ph É³e-É½a:
 \dialx GO(s) BO
 \ps v. statif
@@ -41022,7 +41076,7 @@ pleurs)
 \cf
 \ce
 \nt thraa : mauvais
-\dt 09/Nov/2014
+\dt 10/Jun/2015
 
 \lx nre-ra ???
 \dialx WEM
@@ -41041,7 +41095,7 @@ pleurs)
 \dt 06/Mar/2010
 
 \lx nreule
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \ph É³eule
 \va neule-gat
@@ -41055,7 +41109,7 @@ pleurs)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx nre-vwo
 \is action
@@ -41109,7 +41163,7 @@ pleurs)
 \dt 23/Dec/2014
 
 \lx nrè-zo
-\is caract.goût
+\is nourriture_goût
 \dialx GO(s)
 \ph É³É›-Ã°o
 \ps v. statif
@@ -41123,7 +41177,7 @@ pleurs)
 \at mauvais au goûÃ»t
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx nree-zo
 \is action
@@ -41141,7 +41195,7 @@ pleurs)
 \dt 23/Dec/2014
 
 \lx nre, nra
-\is modalité
+\is grammaire_modalité
 \dialx GOs BO
 \ge optatif (à l'initiale de l'énoncé; exprime: ordre, conseil, souhait)
 \re
@@ -41154,7 +41208,7 @@ pleurs)
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx ngamãã
 \is nourriture
@@ -41204,14 +41258,14 @@ pleurs)
 
 \lx nhi 
 \hm 2
-\is éléments_roche
+\is terrain_roche
 \dialx BO [BM]
 \ps n
-\ge roc; rocher calcaire
+\ge roc ; rocher calcaire
 \re
 \se pa-hni
 \sge rocher calcaire (Dubois)
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx nri
 \hm 1
@@ -41277,7 +41331,7 @@ pleurs)
 
 \lx -nri
 \hm 1
-\is numéral
+\is grammaire_numéral
 \ph É³i
 \dialx GO(s)
 \va -nim
@@ -41294,7 +41348,7 @@ pleurs)
 \ce
 \nt
 \poc *lima
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx -nri
 \hm 2
@@ -41328,7 +41382,7 @@ pleurs)
 
 \lx -nri
 \hm 3
-\is grammaire
+\is grammaire_suff.trans.
 \ph É³i
 \dialx GO(s) 
 \va -ni
@@ -41342,7 +41396,7 @@ pleurs)
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx nrii
 \is oiseau
@@ -41449,7 +41503,7 @@ pleurs)
 \dt 23/Dec/2014
 
 \lx -ni-ma-ba
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) PA BO 
 \ph É³imamba
 \ps numéral
@@ -41457,20 +41511,20 @@ pleurs)
 \re
 \gb
 \rgb
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx -ni-ma-dru
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph É³imanÉ–u
 \va -ni ma-du
 \ve BO PA
 \ps numéral
 \ge sept (=5 et 2)
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx -ni-ma-gò
-\is numéral
+\is grammaire_numéral
 \ph É³imaÅ‹kÉ”
 \dialx GO(s)
 \va ni-ma-kòn
@@ -41478,7 +41532,7 @@ pleurs)
 \ph nimaÅ‹kÉ”n
 \ps num.
 \ge huit (=5 et 3)
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx ni-malu ???
 \is locatif
@@ -41495,7 +41549,7 @@ pleurs)
 \dt 21/Nov/2014
 
 \lx -ni-ma-xè
-\is numéral
+\is grammaire_numéral
 \ph É³imaÉ£É›
 \dialx GO(s) PA
 \va nim-a-xe
@@ -41512,7 +41566,7 @@ pleurs)
 \xv nima-ba < -ni(m) ma-ba
 \xn neuf
 \nt
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx ningòòn ??
 \is
@@ -41689,7 +41743,7 @@ et le début des racines coupées en pointe. Dubois)
 
 \lx nõ 
 \hm 2
-\is quantificateur
+\is grammaire_quantificateur
 \ph noÌƒ (dental)
 \dialx GO(s)
 \ps restrictif
@@ -41704,7 +41758,7 @@ et le début des racines coupées en pointe. Dubois)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx nho
 \is igname
@@ -41883,7 +41937,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 25/Feb/2010
 
 \lx nrõ-
-\is classificateur
+\is classificateur numérique
 \ph É³É”Ìƒ
 \dialx GO(s) 
 \va nõ-
@@ -41899,7 +41953,7 @@ et le début des racines coupées en pointe. Dubois)
 \xn un champ d'ignames
 \cf
 \ce
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx nro kaö
 \is perception
@@ -42050,14 +42104,16 @@ et le début des racines coupées en pointe. Dubois)
 \dt 04/Nov/2014
 
 \lx nrõbu 
-\is coutumes
 \ph É³É”Ìƒbu
 \dialx GO(s)
 \va nõbu
 \ve BO PA
 \ps n
+\sn 1
+\is coutumes_objet
 \ge perche avec un paquet (signale un interdit)
 \ge signe (interdisant de toucher à qqch.)
+\sn 2
 \ge interdit
 \ge règle ; loi  
 \ge protection 
@@ -42078,7 +42134,7 @@ et le début des racines coupées en pointe. Dubois)
 \sge poser un interdit
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx nrobwò
 \is action
@@ -42213,7 +42269,7 @@ maison ronde (Dubois) ; lit. cou de la marmite
 
 \lx nrhõî
 \is cultures
-\is action.corps
+\is action_corps
 \ph É³Ê°É”ÌƒÃ®
 \dialx GO(s) PA
 \va nhõî, nhõõî
@@ -42228,7 +42284,7 @@ maison ronde (Dubois) ; lit. cou de la marmite
 \xn il a attaché les cordes l'une à l'autre
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx nò-kia ???
 \is igname
@@ -42351,7 +42407,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \lx nrõ-nra = novwö nra
 \is grammaire_conjonction
 \dialx GO, PA
-\et nrovwö nra 
+\va nrovwö nra 
 \va nrõ-nre
 \ve
 \ps conj
@@ -42363,8 +42419,8 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn quand elle arrivera
 \cf
 \ce
-\nt
-\dt 23/Dec/2014
+\nt forme courte de : novwö nra
+\dt 09/Jun/2015
 
 \lx nrõnrõ
 \is fonct.intell.
@@ -42888,7 +42944,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 04/Nov/2014
 
 \lx nhruã
-\is action.corps
+\is action_corps
 \ph É³Ê°uÃ£
 \dialx GO(s)
 \va nhuã
@@ -42911,11 +42967,10 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \sge laisser partir, relâcher
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx nru
-\is cocotier
-\is arbre
+\is arbre_cocotier
 \hm 1
 \ph É³uÌƒ
 \dialx GO(s) 
@@ -42939,10 +42994,10 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \cf
 \ce
 \poc *niuR
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx nru
-\is pronom
+\is grammaire_pronom
 \hm 2
 \ph É³u
 \dialx GO(s)
@@ -42951,7 +43006,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \ps 1sg sujet ou objet
 \ge je
 \rgb
-\dt 22/Jul/2007
+\dt 09/Jun/2015
 
 \lx nru
 \is tressage
@@ -42976,7 +43031,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 09/Nov/2014
 
 \lx -nru
-\is pronom
+\is grammaire_pronom
 \ph É³u
 \dialx GO(s)
 \ps pronom objet ou possessif 1er singulier
@@ -42988,7 +43043,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xv hii-nru
 \xn mon bras
 \nt
-\dt 22/Jul/2007
+\dt 09/Jun/2015
 
 \lx nrûû
 \is pêche
@@ -43038,7 +43093,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 25/Dec/2014
 
 \lx nru hêgi
-\is coutumes
+\is coutumes_objet
 \ph É³u hÃªÅ‹gi
 \dialx GO(s) PA
 \ps n
@@ -43051,7 +43106,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx nruãda
 \is arbre
@@ -43104,7 +43159,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 22/Dec/2014
 
 \lx nru-ki
-\is cocotier
+\is arbre_cocotier
 \ph É³uki
 \dialx GO(s)
 \va nu-kim
@@ -43118,10 +43173,10 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf
 \ce
-\dt 21/Jul/2007
+\dt 09/Jun/2015
 
 \lx nru-mãû
-\is cocotier
+\is arbre_cocotier
 \ph É³umÃ£Ã»
 \dialx GO(s)
 \ps n
@@ -43133,7 +43188,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf nu-wee
 \ce coco vert
-\dt 21/Jul/2007
+\dt 09/Jun/2015
 
 \lx nruu-phò
 \is tressage
@@ -43151,7 +43206,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 23/Dec/2014
 
 \lx nru-wee
-\is cocotier
+\is arbre_cocotier
 \ph É³uwe:
 \dialx GO(s)
 \ps n
@@ -43163,10 +43218,10 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf
 \ce
-\dt 22/Jul/2007
+\dt 09/Jun/2015
 
 \lx -ny
-\is pronom
+\is grammaire_pronom
 \dialx BO PA
 \ps suff. possessif 1° personne
 \ge mon ; ma ; mes
@@ -43177,10 +43232,10 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf
 \ce
-\dt 21/Jul/2007
+\dt 09/Jun/2015
 
 \lx nyãã
-\is élément_terre
+\is terrain_terre
 \dialx GOs BO
 \ps n
 \ge terre d'alluvion
@@ -43191,7 +43246,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx nhya
 \is caract.objet
@@ -43269,7 +43324,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 21/Nov/2014
 
 \lx nhyale
-\is action.corps
+\is action_corps
 \is cultures
 \dialx GO(s) BO PA
 \ps v
@@ -43282,7 +43337,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn émotter
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx nyamã
 \is mouvement
@@ -43320,7 +43375,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 06/Nov/2014
 
 \lx nhyang mhã
-\is société
+\is coutumes
 \ph É²Ê°aÅ‹
 \dialx PA
 \ps n
@@ -43333,10 +43388,10 @@ jusqu'à  sa mort et qui sont offerts au clan maternel (à l'oncle maternel)
 \xn
 \cf mhãu
 \ce
-\dt 16/Mar/2010
+\dt 10/Jun/2015
 
 \lx nhyang mòlò
-\is société
+\is coutumes
 \dialx PA
 \ps n
 \ge coutumes (cérémonies) (ensemble de) ou de dons coutumiers qui accompagnent le développement de l'enfant de la conception 
@@ -43349,7 +43404,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \xn
 \cf
 \ce
-\dt 15/Jul/2007
+\dt 10/Jun/2015
 
 \lx nhyanga-n
 \is coutumes
@@ -43367,8 +43422,8 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \dt 19/Dec/2014
 
 \lx nyãnume
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge signe de la main (faire un)
 \re
@@ -43379,7 +43434,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx nyaanya 
 \is mouvement
@@ -43437,7 +43492,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \dt 23/Dec/2014
 
 \lx nhyatru dili
-\is élément_terre
+\is terrain_terre
 \dialx GO(s)
 \ps n
 \ge bonne terre (molle)
@@ -43449,10 +43504,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx nhya, nhye
-\is démonstratif
+\is grammaire_démonstratif
 \hm 2
 \dialx GO(s) PA BO
 \ps article
@@ -43467,7 +43522,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx nye
 \is plantes
@@ -43490,7 +43545,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \dt 07/Nov/2014
 
 \lx nhye
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GOs PA BO
 \ps démonstratif DX1
 \ge ce...ci
@@ -43504,10 +43559,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx nhye-ba
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) WEM WE 
 \ps déictique
 \ge cela (inanimé; distance moyenne, mais visible)
@@ -43520,10 +43575,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \ce celle-là (femme; éloigné mais visible)
 \cf ã ã-ba ???
 \ce celui-là (femme; éloigné mais visible)
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx nhye-da
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps démonstratif directionnel
 \ge cela en haut
@@ -43535,10 +43590,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf nye-du
 \ce cela en bas
 \nt
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx nyejo!
-\is société
+\is parenté
 \dialx PA
 \ps vocatif
 \ge maman!
@@ -43550,10 +43605,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 25/Feb/2010
+\dt 10/Jun/2015
 
 \lx nyèn êmwen
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge gingembre mâle (car a une sorte de bourgeon qui fleurit rouge, non comestible)
@@ -43565,10 +43620,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 25/Feb/2010
+\dt 09/Jun/2015
 
 \lx nye-nra
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps anaphorique (discours  ou passé ???)
 \ge cela
@@ -43581,7 +43636,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \xn quand partez-vous ? - Nous partons maintenant !
 \cf
 \ce
-\dt 31/May/2007
+\dt 09/Jun/2015
 
 \lx nye, nyã
 \is grammaire_démonstratif
@@ -43631,7 +43686,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx nyò
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \mr nye-ò
 \ps démonstratif anaphorique
@@ -43643,10 +43698,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx nhyò
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx GO(s) PA 
 \ph É²Ê°É”
 \va nyò, nyõ
@@ -43661,10 +43716,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx nhyô
-\is liquide_eau
+\is eau
 \dialx GO(s)
 \ph É²Ê°oÌƒ
 \va nyong, nyô
@@ -43683,7 +43738,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ce niveau d'eau
 \cf nyôgo we [PA]
 \ce niveau d'eau
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx nhyôgo we
 \is caract.objet
@@ -43707,7 +43762,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 22/Dec/2014
 
 \lx nyõli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s) WEM WE PA BO
 \mr nye-õli
 \ps démonstratif distal DX3
@@ -43723,10 +43778,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn qui est-ce là-bas ?
 \cf nyõli mwa
 \ce cela loin là-bas
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx nyõli mwa
-\is démonstratif
+\is grammaire_démonstratif
 \dialx PA
 \ps démonstratif DX4
 \ge là-bas très loin
@@ -43741,7 +43796,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 26/Dec/2007
+\dt 09/Jun/2015
 
 \lx nyòlò
 \is fonct.nat
@@ -43774,7 +43829,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 23/Dec/2014
 
 \lx -ò
-\is directionnel
+\is grammaire_directionnel
 \is déplacement
 \dialx GO(s)
 \va -wò
@@ -43804,7 +43859,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn descend (en s'éloignant) ! 
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx -ò
 \dialx GOs
@@ -43829,7 +43884,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 23/Dec/2014
 
 \lx -ò
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \ps anaphorique du discours
 \ge cela (anaphorique); celui; celle
@@ -43844,7 +43899,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn et quant à leur mère à eux 3 Poymegna, celle qui a adopté Paola, elle est liée à eux
 \cf
 \ce
-\dt 14/Mar/2010
+\dt 09/Jun/2015
 
 \lx ôô 
 \is corps
@@ -43864,7 +43919,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx -ôô
-\is pronom
+\is grammaire_pronom
 \dialx GO
 \ph É”Ìƒ
 \ps pronom objet ou possessif 1er triel inclusif
@@ -43876,7 +43931,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 06/Jun/2007
+\dt 09/Jun/2015
 
 \lx õ
 \hm 1
@@ -43923,7 +43978,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 
 \lx õ 
 \hm 3
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ph É”Ìƒ
 \va ô
@@ -43941,12 +43996,12 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn tous les mois
 \cf
 \ce
-\dt 18/Feb/2010
+\dt 09/Jun/2015
 
 \lx õ-
 \hm 4
-\is quantification
-\is classificateur
+\is grammaire_quantification
+\is classificateur numérique
 \dialx GO(s) PA BO
 \va on
 \ve PA BO
@@ -43964,7 +44019,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn souvent
 \xv õ-tru, õ-ru
 \xn deux fois
-\dt 27/Feb/2010
+\dt 09/Jun/2015
 
 \lx õ wara-n
 \is grammaire_conjonction
@@ -43984,7 +44039,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 23/Dec/2014
 
 \lx -ò ... -mi
-\is directionnel
+\is grammaire_directionnel
 \dialx GO(s) BO
 \ps directionnel
 \ge de-ci de-là; en allant et venant; partout
@@ -43999,10 +44054,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn ils lancent le ballon d'un côté et de l'autre
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx ôã-muu-ce
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \va ô-muuc
 \ve PA
@@ -44016,7 +44071,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx ôdri
 \is armes
@@ -44035,7 +44090,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 14/Jul/2007
 
 \lx ògi
-\is aspect
+\is grammaire_aspect
 \ph É”Å‹gi
 \dialx GO(s)
 \va ògin
@@ -44085,7 +44140,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn il a pêché et ensuite il a cuit le poisson
 \xv e pweni nrò, ogi e thuvwu phai
 \xn il a pêché le poisson et ensuite il l'a cuit
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx ohaim
 \dialx PA
@@ -44186,7 +44241,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 14/Jul/2007
 
 \lx oole we
-\is liquide_eau
+\is eau_action
 \dialx GO(s)
 \ps v
 \ge barrer l'eau
@@ -44196,10 +44251,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx -òli
-\is démonstratif
+\is grammaire_démonstratif
 \dialx GO(s)
 \va hòli
 \ve
@@ -44216,7 +44271,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn ces personnes-là
 \cf
 \ce
-\dt 06/Jun/2007
+\dt 09/Jun/2015
 
 \lx olo
 \is feu
@@ -44280,7 +44335,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Nov/2014
 
 \lx õn na
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps n conjonctif
 \ge chaque fois que
@@ -44292,7 +44347,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx õ-niza ? 
 \is grammaire_interrogatif
@@ -44321,7 +44376,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 08/Feb/2006
 
 \lx -on, ô ???
-\is quantificateur
+\is grammaire_quantificateur
 \dialx BO
 \ps restrictif + numéral
 \ge seul; seulement
@@ -44333,10 +44388,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt Dubois
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx õ-pengan 
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA WE 
 \va haivwo
 \ve GO(s)
@@ -44349,7 +44404,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx ô-phwalawa
 \is nourriture
@@ -44396,7 +44451,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 11/Nov/2014
 
 \lx òri
-\is caract.animé
+\is caract.
 \hm 1
 \dialx GO(s) BO
 \ph É”ri
@@ -44413,10 +44468,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn il est fou
 \cf kuleng 
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx òri
-\is grammaire
+\is grammaire_adverbe
 \hm 2
 \dialx GO(s)
 \ps adverbe
@@ -44438,7 +44493,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx õ-taagi
 \is grammaire_aspect
@@ -44490,7 +44545,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 23/Dec/2014
 
 \lx ô-uvia
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \ps n
 \ge tige de taro (principale) (lit. mère du taro)
@@ -44501,7 +44556,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx ovwee
 \is action
@@ -44523,7 +44578,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx õ-waran
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps conjonction
 \ge chaque fois que; tout le temps
@@ -44539,10 +44594,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx õ-xe   
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) BO PA
 \ph ÃµÉ£e 
 \va hokè, hogè 
@@ -44556,7 +44611,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn j'ai entendu deux autres coups de fusil
 \cf
 \ce
-\dt 18/Feb/2010
+\dt 09/Jun/2015
 
 \lx õxè
 \is grammaire_aspect
@@ -44582,7 +44637,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 
 \lx õ-xe-nrò
 \dialx GO(s)
-\is numéral
+\is grammaire_numéral
 \ps n-fois
 \ge une seule fois
 \re
@@ -44592,10 +44647,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf pòxè-nrò
 \ce
-\dt 18/Jul/2006
+\dt 09/Jun/2015
 
 \lx õ-xe-on ???
-\is numéral
+\is grammaire_numéral
 \dialx BO PA
 \ps n-fois
 \ge une seule fois (Dubois)
@@ -44606,10 +44661,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 08/Feb/2006
+\dt 09/Jun/2015
 
 \lx oya
-\is plante
+\is plantes_partie
 \dialx PA
 \ps n
 \ge résine 
@@ -44623,7 +44678,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pa
 \is tressage
@@ -44647,7 +44702,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Nov/2014
 
 \lx pa-
-\is quantificateur_degré
+\is grammaire_quantificateur_degré
 \dialx GOs PA
 \ps quant
 \ge très (+ animés)
@@ -44665,16 +44720,16 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf para
 \ce très
 \nt mhaa : très pour les choses
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx -pa
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) BO PA 
 \ps numéral
 \ge quatre
 \rgb
 \poc *pat
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx paa
 \is guerre
@@ -44702,7 +44757,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 07/Nov/2014
 
 \lx paa
-\is pierre
+\is terrain_pierre
 \hm 2
 \dialx GO(s) PA BO
 \ps n
@@ -44726,7 +44781,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \sge pile pour la torche
 \ce
 \poc *patu
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pã
 \is emprunt
@@ -44734,6 +44789,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx WE
 \ps n
 \ge pain
+\bw FR pain
 \re
 \gb
 \rgb
@@ -44741,13 +44797,13 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx pha
 \is armes
-\is action.corps
+\is action_corps
 \hm 1
-\dialx GO(s) BO
+\dialx GOs BO
 \ps v
 \ge tirer (au fusil)
 \ge lancer
@@ -44762,7 +44818,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx pha
 \hm 2
@@ -44912,7 +44968,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx paa-bule
-\is action_eau
+\is eau_action
 \dialx PA
 \ps v
 \ge tremper dans l'eau
@@ -44927,7 +44983,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx phabuno
 \is insecte
@@ -44994,9 +45050,9 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 04/Nov/2014
 
 \lx pa-cabi
-\is action.corps
+\is action_corps
 \ph patjabi (pas aspirÃ©)
-\dialx GO(s)
+\dialx GOs
 \ps v
 \ge taper pour enfoncer
 \re
@@ -45007,7 +45063,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx paaçae
 \is mer
@@ -45141,8 +45197,8 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx paa-çôe
-\is action.corps
-\dialx GO(s) WEM
+\is action_corps
+\dialx GOs WEM
 \ph pa:Ê’Ãµe (pas aspirÃ©)
 \va pa-nyoî
 \ve BO
@@ -45155,7 +45211,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn j'accroche le panier
 \cf chôô
 \ce suspendu, accroché
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx pha-choomu-nri
 \ph pha-'cho:mu-É³i
@@ -45190,8 +45246,8 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx phããde 
-\is action.corps
-\dialx GO(s) BO PA
+\is action_corps
+\dialx GOs BO PA
 \ph pÊ°É›:ÌƒÌƒde
 \va phãde
 \ve GO(s) PA 
@@ -45210,7 +45266,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn ils annoncent ce qui va arriver
 \xv la phããde cii-phagò [PA]
 \xn ils ont fait acte de présence
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pade ???
 \dialx GO
@@ -45245,8 +45301,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx phããde kui
-\is cultures
-\is société
+\is fête 
 \dialx GO(s)
 \ps n
 \ge fête des prémices des ignames (lit. montrer l'igname)
@@ -45258,7 +45313,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx paa-du
 \is étapes.vie
@@ -45278,7 +45333,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 23/Nov/2014
 
 \lx paga-do ???
-\is élément_terre
+\is terrain_terre
 \dialx BO
 \va paxa-dili
 \ve BO
@@ -45291,7 +45346,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx page
 \is coutumes
@@ -45310,21 +45365,6 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \dt 07/Nov/2014
-
-\lx pagil ???
-\dialx BO
-\va pakil
-\ve BO
-\ps v
-\ge abstenir (s') (de telle nourriture; Dubois)
-\re
-\gb
-\rgb
-\xv
-\xn
-\cf
-\ce
-\dt 12/Feb/2006
 
 \lx phago
 \is couleur
@@ -45427,7 +45467,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 04/Nov/2014
 
 \lx pa-ho ???
-\is pierre
+\is terrain_pierre
 \dialx GO
 \ps n
 \ge pierres sacrées
@@ -45438,7 +45478,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pha-hovwo-nri
 \is nourriture
@@ -45457,7 +45497,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 
 \lx pai
 \is tressage
-\is cordage
+\is cordes
 \hm 1
 \dialx GO(s) BO
 \va pae
@@ -45479,7 +45519,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \poc *patu
-\dt 10/Nov/2014
+\dt 09/Jun/2015
 
 \lx pai
 \hm 2
@@ -45846,12 +45886,12 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 13/Feb/2010
 
 \lx pale
-\dialx GO(s) BO PA 
+\dialx GOs BO PA 
 \va palee
 \ve BO
 \ps v
 \sn 1
-\is action.corps
+\is action_corps
 \ge tâtonner
 \ge chercher à tâtons
 \ge palper
@@ -45874,7 +45914,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \gt Les formes définie et indéfinie se distinguent par la longueur
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx pali ???
 \dialx GO
@@ -45910,7 +45950,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 19/Dec/2014
 
 \lx paa-majing
-\is éléments_roche
+\is terrain_roche
 \dialx PA BO
 \ps n
 \ge quartz (pierre blanche & dure, utilisée pour les fours)
@@ -45921,7 +45961,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx phaamee
 \is parenté
@@ -45941,7 +45981,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 07/Mar/2010
 
 \lx pa-modee
-\is action.corps
+\is action_corps
 \ph non aspirÃ©
 \dialx GOs
 \ps v
@@ -45956,12 +45996,12 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx paa-moze
-\is liquide
-\ph pa:moze (pas de h)
-\dialx GO(s)
+\is eau_action
+\ph pa:moze
+\dialx GOs
 \va paa-moze
 \ve GO(s)
 \ps v
@@ -45973,7 +46013,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pana
 \is interaction
@@ -46004,7 +46044,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 20/Feb/2006
 
 \lx paa-neng ??
-\is société
+\is outils_société
 \dialx BO [Corne]
 \ps n
 \ge pierre ; couteau fait dans cette pierre et utilisée pour la circoncision
@@ -46015,7 +46055,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf taagò, tagò
 \ce circoncire
-\dt 11/Nov/2014
+\dt 10/Jun/2015
 
 \lx paang
 \is cultures
@@ -46036,7 +46076,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 21/Feb/2010
 
 \lx paa-nhi
-\is éléments_roche
+\is terrain_roche
 \dialx GO(s)
 \ps n
 \ge rocher 
@@ -46047,10 +46087,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx panooli verifier
-\is plante
+\is plantes
 \dialx BO [Corne]
 \ps n
 \ge hmahmulim (nemi) mitre (f. uvea) plante qui pousse au ras du sol et fait des petites fleurs bleues
@@ -46062,7 +46102,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \nt la décoction des feuilles et tiges sert de purge pour les bébés ; pour annoncer la naissance d'un enfant à son 
 oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à une écorce de niaouli (fille)
-\dt 06/Mar/2010
+\dt 09/Jun/2015
 
 \lx pha-nrònrò
 \is fonct.intell
@@ -46080,8 +46120,23 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \ce rappeler à qqn
 \dt 23/Dec/2014
 
-\lx pa-nhruã
-\is action.corps
+\lx pa-nûû
+\is lumière
+\dialx GOs
+\ps n
+\ge torche
+\re
+\gb
+\rgb
+\xv
+\xn
+\cf
+\ce
+\nt
+\dt 23/Dec/2014
+
+\lx pa-nruã
+\is action_corps
 \ph panuã ã (pas aspirÃ©)
 \dialx GOs
 \va pa-nhuã
@@ -46098,37 +46153,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \xn ils m'ont laissé sortir hier 
 \cf
 \ce
-\dt 06/Nov/2014
-
-\lx pa-nhrue
-\is interaction
-\ph non aspirÃ©
-\dialx GO(s)
-\ps v
-\ge apaiser
-\re
-\gb
-\rgb
-\xv
-\xn
-\cf
-\ce
-\dt 23/Dec/2014
-
-\lx pa-nûû
-\is lumière
-\dialx GOs
-\ps n
-\ge torche
-\re
-\gb
-\rgb
-\xv
-\xn
-\cf
-\ce
-\nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pa-nûûe
 \is action
@@ -46146,6 +46171,21 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \nt
 \dt 23/Dec/2014
 
+\lx pa-nrue
+\is interaction
+\ph non aspirÃ©
+\dialx GO(s)
+\ps v
+\ge apaiser
+\re
+\gb
+\rgb
+\xv
+\xn
+\cf
+\ce
+\dt 09/Jun/2015
+
 \lx panyôî ?? panôî ??
 \dialx BO [Corne]
 \ps v
@@ -46160,7 +46200,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 04/Nov/2014
 
 \lx pao
-\is action.corps
+\is action_corps
 \dialx GO(s)  PA BO
 \ps v
 \ge jeter en l'air; lancer; agiter
@@ -46185,11 +46225,11 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \xn le vent souffle fort
 \cf pawe
 \ce lancer à côté 
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx phaò
-\is action.corps
-\dialx GOS
+\is action_corps
+\dialx GO(s)
 \ps v
 \ge entasser
 \re
@@ -46200,7 +46240,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pao kinu
 \is navigation
@@ -46267,7 +46307,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx pao-cabi
-\is action.main
+\is action_mains
 \dialx PA
 \ps v
 \ge tambouriner
@@ -46279,10 +46319,10 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pao-dale
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge casser en jetant
@@ -46294,10 +46334,10 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pao-gaaò 
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge casser (du verre en jetant)
@@ -46309,7 +46349,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pao-kaö
 \is action_mains
@@ -46342,7 +46382,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx pao-khi-dale
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge fracasser (en jetant)
@@ -46354,7 +46394,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx paophi 
 \is pêche
@@ -46371,7 +46411,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 12/Mar/2010
 
 \lx pao-thali
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge frapper (enfant)
@@ -46386,7 +46426,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx phaöö
 \is vent
@@ -46542,7 +46582,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 
 \lx para
 \hm 2
-\is quantificateur_degré
+\is grammaire_quantificateur_degré
 \dialx GOs
 \ps quantificateur
 \ge très
@@ -46556,7 +46596,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf pa-
 \ce
 \nt ne s'utilise qu'en référence à des humains/animés; mha pour des inanimés
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx paara 
 \is fonct.intell.
@@ -46584,7 +46624,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \ge poêle à frire
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx paree
 \is interaction
@@ -46601,7 +46641,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx parèma
-\is locatif
+\is orientation
 \dialx GO(s)
 \va parèman
 \ve PA
@@ -46614,7 +46654,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \xn côte est
 \xv parèma pomwã [GOs]
 \xn côte ouest
-\dt 27/Jun/2007
+\dt 09/Jun/2015
 
 \lx parixo
 \is mouvement
@@ -46928,7 +46968,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx pavwaze
-\is société
+\is discours
 \ph paÎ²aze
 \dialx GOs
 \ps v
@@ -46941,7 +46981,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx phaavwi
 \is cultures
@@ -46959,7 +46999,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 07/Nov/2014
 
 \lx phavwu
-\is quantificateur
+\is grammaire_quantificateur
 \ph phaÎ²u
 \dialx GO(s)
 \va phavwuun
@@ -46983,10 +47023,10 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx phavwuun
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA BO [BM]
 \ps quantificateur
 \ge beaucoup
@@ -46999,7 +47039,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \xn il y a beaucoup de travail
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx paawa
 \is igname
@@ -47083,7 +47123,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 23/Dec/2014
 
 \lx paxa
-\is plante
+\is plantes
 \dialx PA
 \ps n
 \ge herbes  vertes (poussant dans les rivières ou terrains marécageux)
@@ -47095,7 +47135,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 25/Feb/2010
+\dt 09/Jun/2015
 
 \lx paxa- 
 \is grammaire_préfixe
@@ -47173,7 +47213,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 07/Nov/2014
 
 \lx paxa-ka
-\is ignames
+\is igname
 \dialx GO(s)
 \ps n
 \ge prémices (la première igname récoltée de l'année)
@@ -47184,7 +47224,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \xn
 \cf ka
 \ce an
-\dt 26/Feb/2010
+\dt 13/Jun/2015
 
 \lx paxa-kibi
 \is feu
@@ -47361,7 +47401,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 22/Dec/2014
 
 \lx paxawa
-\is plante
+\is plantes
 \dialx GO(s) PA
 \ps n
 \ge coléus (symbole de vie)
@@ -47375,7 +47415,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \ce
 \nt un bouquet de coleus accompagne la monnaie traditionnelle donnée aux oncles maternels à la 
 naissance de l'enfant
-\dt 08/Jul/2007
+\dt 09/Jun/2015
 
 \lx paxa-wa
 \is musique
@@ -47413,7 +47453,7 @@ naissance de l'enfant
 \dt 24/Feb/2010
 
 \lx paxe
-\is liquide_eau
+\is eau_action
 \dialx PA BO
 \ps v
 \ge dévier (eau)
@@ -47427,7 +47467,7 @@ naissance de l'enfant
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx phaxee 
 \is perception
@@ -47569,7 +47609,7 @@ empêcher (qqn de faire qqch)
 \dt 02/Mar/2010
 
 \lx paazò
-\is élément_terre
+\is terrain_terre
 \dialx GO(s)
 \va paarò
 \ve PA
@@ -47583,7 +47623,7 @@ empêcher (qqn de faire qqch)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pe
 \is poisson
@@ -47639,7 +47679,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 
 \lx pe-
 \hm 1
-\is aspect
+\is grammaire_aspect
 \dialx BO
 \ps
 \ge en train de (marque la durée, aussi exprimé par JO)
@@ -47650,7 +47690,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn la buse quant à elle plane avec le vent
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx pe-
 \hm 2
@@ -47712,7 +47752,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 26/Dec/2007
 
 \lx pee-
-\is anguilles
+\is anguille
 \is classificateur sémantique
 \dialx BO
 \ps n
@@ -47724,7 +47764,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn anguille (dont les yeux ressemblent à ceux d'un poisson)
 \cf peenã 
 \ce anguille
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx phe
 \is instrument
@@ -47747,7 +47787,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \ve
 \ps v
 \sn 1
-\is action.corps
+\is action_corps
 \ge prendre ; enlever
 \sn 2
 \is portage
@@ -47781,7 +47821,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \sge emporte-le (transverse)
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx phê
 \is plantes
@@ -47951,7 +47991,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Dec/2014
 
 \lx pe-alo
-\is aspect
+\is grammaire_aspect
 \dialx BO
 \ps aspect
 \ge en train de regarder 
@@ -47962,7 +48002,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn j'admire la belle vue 
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-bala
 \is société
@@ -47979,7 +48019,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Dec/2014
 
 \lx pe-balan ??
-\is comparaison
+\is grammaire_comparaison
 \dialx BO
 \ps
 \ge ressembler (se); pareil (être)
@@ -47990,10 +48030,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils se ressemblent
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pebhe
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s) 
 \va pevhe
 \ve PA BO
@@ -48021,7 +48061,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf cave [GOs]
 \ce tous ensemble
 \nt
-\dt 09/Mar/2010
+\dt 09/Jun/2015
 
 \lx pe-bhii
 \is déplacement
@@ -48133,7 +48173,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 03/Nov/2014
 
 \lx phè-caaxo
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge prendre en cachette
@@ -48144,7 +48184,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn il a pris le couteau en cachette
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx peçi
 \is coquillage
@@ -48159,7 +48199,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 04/Mar/2010
 
 \lx pe-cimwi hi
-\is action.corps 
+\is action_corps 
 \dialx GO(s) PA
 \ps v
 \ge serrer (se) la main
@@ -48176,7 +48216,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-chinõõ tro mani trèè
 \is temps
@@ -48317,7 +48357,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 21/Dec/2014
 
 \lx pe-gaixe
-\is comparaison
+\is grammaire_comparaison
 \ph pe'Å‹gaiÉ£e
 \dialx GO(s) PA BO [Corne]
 \ps adverbe
@@ -48337,10 +48377,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils arrivent en même temps
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pègalò
-\is plante
+\is plantes
 \dialx GO(s)
 \ps n
 \ge pomme cythère
@@ -48349,10 +48389,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \rgb
 \cf
 \ce
-\dt 11/Jun/2007
+\dt 09/Jun/2015
 
 \lx pe-gan
-\is quantificateur
+\is grammaire_quantificateur
 \dialx BO
 \ps quantificateur
 \ge beaucoup; nombreux (lit. 3 fois)
@@ -48364,7 +48404,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt Dubois
-\dt 03/Feb/2006
+\dt 09/Jun/2015
 
 \lx pheege ??
 \is portage
@@ -48381,7 +48421,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 04/Nov/2014
 
 \lx pègòò
-\is étapes_vie
+\is étapes.vie
 \dialx GOs WE 
 \ps v. statif
 \va pègom 
@@ -48394,7 +48434,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-gu-xe
 \is mouvement
@@ -48507,7 +48547,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Nov/2014
 
 \lx pe-hò
-\is jeux
+\is jeu
 \dialx GO(s) PA WEM 
 \ps
 \ge jouer à chat perché
@@ -48518,7 +48558,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx pe-hòze
 \is déplacement
@@ -48537,7 +48577,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 04/Nov/2014
 
 \lx pe-îdò
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s)
 \ps n
 \ge même lignée
@@ -48553,10 +48593,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-iô
-\is grammaire
+\is grammaire_pronom
 \dialx GO(s)
 \ps collectif + pronom
 \ge c'est à nous 3
@@ -48567,10 +48607,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pe-jaxa
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s)
 \ps n
 \ge même taille ; même mesure
@@ -48582,10 +48622,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-jivwaa
-\is comparaison
+\is grammaire_comparaison
 \ph ndjiwa:
 \dialx GO(s)
 \ps
@@ -48597,7 +48637,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils sont en nombre égal (les 2/ 3/plur.)
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-jölö
 \is fonct.nat
@@ -48846,7 +48886,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 07/Nov/2014
 
 \lx pe-kû
-\is aspect
+\is grammaire_aspect
 \dialx BO
 \ps v
 \ge en train de manger
@@ -48857,7 +48897,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn je suis en train de manger ce fruit
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-ku-alö
 \is position
@@ -48893,7 +48933,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 
 \lx pe-ku-çaaxo
 \ph pekuÊ’a:É£o
-\is jeux
+\is jeu
 \dialx GO(s)
 \ps v
 \ge jouer à cache-cache
@@ -48907,7 +48947,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx pe-kueli
 \is sentiments
@@ -48936,7 +48976,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 18/Dec/2014
 
 \lx phele
-\is action.corps
+\is action_corps
 \dialx PA BO
 \ps v
 \ge attacher ; ceindre (manou)
@@ -48951,7 +48991,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-mhe
 \is déplacement
@@ -48986,7 +49026,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 04/Nov/2014
 
 \lx pe-menixe 
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s) PA BO
 \ps v. comparatif
 \ge pareil (être); semblable
@@ -48997,11 +49037,11 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf pe-poxe
 \ce pareil
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx phè-mi
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge apporter
 \re
@@ -49014,7 +49054,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \un
 \cf phe-ho
 \ce emporte là-bas 
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-na
 \is interaction
@@ -49041,8 +49081,8 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Jun/2007
 
 \lx pe-na bwa
-\is action.corps
-\dialx GO(s)
+\is action_corps
+\dialx GOs
 \ps v
 \ge empiler
 \re
@@ -49056,7 +49096,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-na-bulu-nri
 \is mouvement
@@ -49150,7 +49190,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 
 \lx peeni
 \is action_mains
-\is prép.nourriture
+\is prép.aliments
 \dialx GO(s)
 \ps v
 \ge pétrir (pain)
@@ -49161,7 +49201,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn elle pétrit la farine
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx phènô
 \is échanges
@@ -49229,7 +49269,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 25/Dec/2014
 
 \lx penõõ
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \ps
 \ge pas encore
@@ -49251,7 +49291,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx penuu
 \hm 1
@@ -49363,7 +49403,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Dec/2014
 
 \lx pe-piina
-\is aspect
+\is grammaire_aspect
 \dialx GO(s) BO
 \ps
 \ge en train de se promener
@@ -49374,7 +49414,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn je me promène, je suis comme ça le fleuve
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-phoo
 \is position
@@ -49431,7 +49471,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 21/Dec/2014
 
 \lx pe-poxe
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s)
 \ps v
 \ge semblable; pareil; autant
@@ -49454,7 +49494,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils 3 sont semblables
 \cf pe-menixe
 \ce pareil
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-puumo
 \is discours
@@ -49472,7 +49512,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-pwaixe
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps
 \ge toutes les choses possédées ensemble
@@ -49483,10 +49523,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn toutes les choses que nous possédons ensemble, qui nous sont communes
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-pwali 
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s)
 \va pe-pwawali 
 \ve PA
@@ -49499,7 +49539,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils ont la même taille (hauteur)
 \cf pwali, pwawali
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-pwawè
 \is interaction
@@ -49532,7 +49572,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-pwò-tru meewu
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps
 \ge il y a deux variétés
@@ -49543,10 +49583,10 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx peera ??
-\is plantes
+\is plantes_partie
 \dialx BO [Corne]
 \ps v
 \ge bouton (en) ; non éclos
@@ -49557,7 +49597,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pe-ra-vhi
 \is soin
@@ -49574,7 +49614,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Dec/2014
 
 \lx pe-ravwi
-\is pouvement
+\is mouvement
 \dialx GO(s)
 \ps v
 \ge faire la course (de vitesse) ; poursuivre (se)
@@ -49585,7 +49625,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf thravwi
 \ce poursuivre (à la chasse); chasser; écarter (chiens, volailles)
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-rulai
 \is interaction
@@ -49602,7 +49642,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-tha
-\is jeux
+\is jeu
 \dialx GO(s) WEM
 \ps n
 \ge jeu de lancer de sagaie (lancer-ricochet)
@@ -49613,7 +49653,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-thra
 \is soin
@@ -49659,7 +49699,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-thaî
-\is jeux
+\is jeu
 \dialx GO(s)
 \va pe-tha-hînõ
 \ve GO(s)
@@ -49676,7 +49716,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf thahîn [PA, BO]
 \ce devinettes
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-thaivwi
 \is interaction
@@ -49853,7 +49893,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-tòe
-\is aspect
+\is grammaire_aspect
 \dialx BO
 \ps aspect inacccompli
 \ge en train de planter
@@ -49865,7 +49905,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 sucre
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx pe-tròòli
 \is interaction
@@ -50005,7 +50045,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx peu
-\is modalité
+\is grammaire_modalité
 \ph pe.u
 \dialx GO(s)
 \ps modalité
@@ -50022,10 +50062,10 @@ sucre
 \xn nous parlons pour rien, dans le vide
 \cf
 \ce
-\dt 17/Mar/2010
+\dt 09/Jun/2015
 
 \lx peve jun
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA BO
 \ps quantificateur
 \ge tout; l'ensemble
@@ -50036,7 +50076,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pevheano 
 \ph peÎ²eano
@@ -50152,7 +50192,7 @@ sucre
 \dt 22/Dec/2014
 
 \lx pe-wame
-\is comparaison
+\is grammaire_comparaison
 \dialx GO(s) WEM
 \ps v
 \ge ressembler (se) ; semblable (être)
@@ -50164,7 +50204,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pe-wele
 \is interaction
@@ -50366,9 +50406,9 @@ sucre
 \dt 23/Dec/2014
 
 \lx pii
-\is action.corps
+\is action_corps
 \hm 1
-\dialx GO(s) BO PA
+\dialx GOs BO PA
 \ps v
 \ge couper en deux; partager
 \ge rompre (un bout de pain, un bout d'igname cuite)
@@ -50379,7 +50419,7 @@ sucre
 \xn il a coupé le pain
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pii
 \hm 2
@@ -50447,7 +50487,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx pii
-\is tortue
+\is reptile_tortue
 \hm 4
 \dialx GO(s) PA BO
 \ps n
@@ -50459,7 +50499,7 @@ sucre
 \xn sa carapace
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx phi
 \hm 1
@@ -50563,7 +50603,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx phibhâi
-\is plante
+\is plantes
 \dialx GOs
 \ps n
 \ge pandanus sauvage (bord de creek, sert à tresser, au bord des creek, les roussettes mangent les fruits))
@@ -50578,7 +50618,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx pibhizai
 \is caract.objet
@@ -50799,7 +50839,7 @@ sucre
 \ve BO [BM]
 \ps v
 \sn 1
-\is société
+\is coutumes
 \ge rassembler de la nourriture (pour une coutume)
 \sn 1
 \is feu
@@ -50811,7 +50851,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 10/Jun/2015
 
 \lx pigi yaai
 \is feu
@@ -51042,7 +51082,7 @@ sucre
 \dt 04/Nov/2014
 
 \lx pii-nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \va pi-nru
 \ve GO(s)
@@ -51055,7 +51095,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 01/Mar/2010
+\dt 09/Jun/2015
 
 \lx piny ???
 \is échanges
@@ -51074,28 +51114,33 @@ sucre
 \dt 19/Dec/2014
 
 \lx pio
-\is coquillage
 \dialx GO(s) PA BO
 \ps n
-\ge étoile ; étoile de mer [GOs]
+\sn 1
+\is astre
+\ge étoile 
+\re
+\sn 2
+\is échinoderme
+\ge étoile de mer [GOs]
 \re
 \gb
 \rgb
 \xe
 \xn
 \poc *pituqu
-\dt 26/Dec/2007
+\dt 10/Jun/2015
 
 \lx piòò
 \is emprunt
-\is outil
+\is outils
 \dialx GO(s)
 \va piyòc
 \ve BO
 \ps n
 \ge pioche
 \re
-\bw Fr pioche
+\bw FR pioche
 \re
 \gb
 \rgb
@@ -51103,7 +51148,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pio yaai
 \is astre
@@ -51154,7 +51199,7 @@ sucre
 \dt 04/Mar/2010
 
 \lx pipini ???
-\is action.corps
+\is action_corps
 \dialx GO
 \ps v
 \ge saisir avec le bras
@@ -51167,10 +51212,10 @@ sucre
 \un
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx pii-pò
-\is tortue
+\is reptile_tortue
 \ph pi:
 \dialx GO(s)
 \va pii-pwòn
@@ -51183,10 +51228,10 @@ sucre
 \xn
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 10/Jun/2015
 
 \lx pii-pwaji
-\is crustacé
+\is crabe
 \dialx GO(s) PA
 \ps n
 \ge carapace de crabe
@@ -51198,7 +51243,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx pira
 \is locatif
@@ -51315,7 +51360,7 @@ sucre
 \dt 21/Dec/2014
 
 \lx piviige ???
-\is action.corps
+\is action_corps
 \dialx BO (Corne)
 \ps v
 \ge saisir avec le bras ; embrasser
@@ -51330,10 +51375,10 @@ sucre
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx pivivu
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx BO [Corne]
 \ps n
 \ge chauve-souris
@@ -51344,7 +51389,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx pivwia
 \is interaction
@@ -51527,7 +51572,7 @@ sucre
 \dt 21/Dec/2014
 
 \lx po
-\is pronom
+\is grammaire_pronom
 \hm 1
 \dialx GO(s) BO
 \va poo
@@ -51543,7 +51588,7 @@ sucre
 \xn il cherche qqch.
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx po
 \is action
@@ -51592,7 +51637,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx po-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA 
 \ps classificateur numérique générique et des objets ronds
 \ge classificateur générique; objets ronds (fruits, heure, etc.)
@@ -51603,7 +51648,7 @@ sucre
 \xv po-xè pò-mã
 \xn une mangue
 \nt a(a)- (animés), go- , we- , pepo- 
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx pò
 \hm 1
@@ -51613,7 +51658,7 @@ sucre
 \va pwò
 \ve BO
 \sn 1
-\is plante
+\is plantes_partie
 \ps n
 \ge fruit ; graine
 \re
@@ -51629,8 +51674,8 @@ sucre
 \sge mangue
 \poc *pua(q)
 \sn 2
-\is classificateur
-\ge classificateur numéral
+\is classificateur numérique
+\ge classificateur numérique
 \gb
 \xv po-xè pò-mãã
 \xn une mangue
@@ -51638,11 +51683,11 @@ sucre
 \xn trois
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pò
 \hm 2
-\is plante
+\is plantes
 \dialx GO(s)
 \va pòl
 \ve BO 
@@ -51655,10 +51700,10 @@ sucre
 \gb fern
 \rgb
 \ce
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx pò
-\is quantificateur
+\is grammaire_quantificateur
 \hm 3
 \dialx GO(s) PA BO
 \va pwò
@@ -51678,7 +51723,7 @@ sucre
 \xn il est un peu plus jeune que moi
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx pò
 \hm 4
@@ -51795,7 +51840,7 @@ sucre
 
 \lx phò
 \hm 2
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GOs
 \ps quantificateur ???
 \ge chacun; tous
@@ -51811,10 +51856,10 @@ sucre
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx phò-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s)
 \ps classificateur numérique
 \ge classificateur: pour compter ce qu'on porte (dans une coutume)
@@ -51827,7 +51872,7 @@ sucre
 \xn un fagot de bois à porter
 \cf
 \ce
-\dt 24/Feb/2010
+\dt 09/Jun/2015
 
 \lx phoo
 \is action
@@ -51921,7 +51966,7 @@ sucre
 
 \lx pò sitrô
 \is emprunt
-\is nourriture
+\is plantes.fruit
 \dialx GOs
 \ps n
 \ge citron
@@ -51936,7 +51981,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 13/Jun/2015
 
 \lx po za ?
 \is grammaire_interrogatif
@@ -51988,10 +52033,10 @@ sucre
 \ve BO
 \ps v. statif
 \sn 1
-\is caract.objet
+\is caract.objet_taille
 \ge petit
 \sn 2
-\is quantificateur
+\is grammaire_quantificateur
 \ge un peu
 \re
 \gb
@@ -52000,10 +52045,10 @@ sucre
 \xn coupe un peu de pain
 \cf popobe 
 \ce un petit peu
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pobil
-\is coutumes
+\is coutumes_objet
 \dialx PA BO
 \ps n
 \ge ceinture de femme (monnaie) finement tressée , faite avec les racines de  bourao et ayant plus de valeur que
@@ -52015,10 +52060,10 @@ sucre
 \xn
 \cf thabil [PA]
 \ce ceinture de femme (monnaie)
-\dt 21/Feb/2010
+\dt 10/Jun/2015
 
 \lx pobo
-\is déplacement_trace
+\is déplacement_traces
 \dialx GO(s) PA BO
 \ps n
 \ge trace (laissée à un endroit par un animal ou une personne qui y a dormi par ex.)
@@ -52029,7 +52074,7 @@ sucre
 \xn ses traces
 \cf nrobo hele [GOs]
 \ce marques, traces de couteau
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx pobo-poin ??
 \is cultures
@@ -52107,7 +52152,7 @@ sucre
 
 \lx pò-caai
 \ph pÉ” ca:i
-\is fruit
+\is plantes.fruit
 \dialx GO(s) 
 \va pò-caai
 \ph pÉ” ca:i
@@ -52124,7 +52169,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 24/Jun/2007
+\dt 10/Jun/2015
 
 \lx phò-ce
 \is feu
@@ -52143,7 +52188,7 @@ sucre
 
 \lx pò-ci
 \ph ci
-\is fruit
+\is plantes.fruit
 \dialx GO(s)
 \va po-cin
 \ve PA WE
@@ -52157,7 +52202,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 26/Feb/2010
+\dt 10/Jun/2015
 
 \lx pòòdra
 \is arbre
@@ -52210,7 +52255,7 @@ sucre
 \dt 27/Jun/2007
 
 \lx podi 
-\is bananiers
+\is bananier
 \dialx GO(s) PA BO
 \va pwodi 
 \ve BO
@@ -52224,7 +52269,7 @@ sucre
 \cf
 \ce
 \poc *punti
-\dt 25/Dec/2007
+\dt 09/Jun/2015
 
 \lx pòdòu
 \is caract.objet
@@ -52284,7 +52329,7 @@ sucre
 \ve BO
 \ps v.t
 \sn 1
-\is action.corps
+\is action_corps
 \ge tordre (en revenant vers l'arrière)
 \re
 \sn 2
@@ -52295,7 +52340,7 @@ sucre
 \rgb
 \cf phõ
 \ce tordu
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx poge kui
 \is coutumes
@@ -52326,7 +52371,7 @@ sucre
 \dt 21/May/2007
 
 \lx po-hoxè
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps
 \ge moins
@@ -52337,7 +52382,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx poi
 \hm 1
@@ -52383,7 +52428,7 @@ sucre
 
 \lx pòi ???
 \hm 3
-\is coutumes
+\is coutumes_objet
 \dialx GO(s)
 \ps n
 \ge monnaie traditionnelle (coutumes)
@@ -52394,7 +52439,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx pojai pocai ???
 \ph ???????
@@ -52408,11 +52453,11 @@ sucre
 \xe
 \xn
 \cf kotrikê, kotrixê [GOs]
-\cn colère
-\dt 25/Dec/2014
+\ce colère
+\dt 04/Jun/2015
 
 \lx poka
-\is animaux
+\is mammifères
 \dialx WE PA BO
 \ps n
 \ge cochon; porc
@@ -52422,7 +52467,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pò-kênii
 \is habillement
@@ -52483,7 +52528,7 @@ sucre
 \dt 22/Jun/2007
 
 \lx pò-ko
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge trois
@@ -52492,10 +52537,10 @@ sucre
 \rgb
 \xv
 \xn
-\dt 01/Mar/2010
+\dt 09/Jun/2015
 
 \lx pò-kô-hu-ò
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va pwo kô-wò
 \ve GOs
@@ -52509,7 +52554,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx pòko-kabu
 \is jours
@@ -52526,7 +52571,7 @@ sucre
 \dt 01/Mar/2010
 
 \lx pò-ku-hu-ò
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va pwo ku-wò
 \ve GOs
@@ -52540,7 +52585,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx phò-kui
 \is coutumes
@@ -52593,7 +52638,7 @@ sucre
 \dt 01/Mar/2010
 
 \lx phole
-\is action_eau
+\is eau_action
 \dialx GO(s)
 \ps v
 \ge tremper dans l'eau
@@ -52605,7 +52650,7 @@ sucre
 \cf
 \ce
 \poc *vuRi (pole en nÃªl)
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pole ???
 \is danse
@@ -52623,7 +52668,7 @@ sucre
 
 \lx pholo
 \is pêche
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \ps v
 \ge taper dans l'eau pour faire du bruit et effrayer le poisson et l'amener dans le filet
@@ -52634,7 +52679,7 @@ sucre
 \xn
 \cf thi-pholo
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx phòlò ja
 \is caract.objet
@@ -52655,7 +52700,7 @@ sucre
 \dt 21/Nov/2014
 
 \lx pò-maxa
-\is atmosphère
+\is éléments_atmosphère
 \dialx GO(s)
 \ps n
 \ge buée (fruit de la saison froide)
@@ -52666,7 +52711,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx pòmi-nò 
 \is corps
@@ -52684,7 +52729,7 @@ sucre
 \dt 04/Nov/2014
 
 \lx pòminõ pwamwa
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps n
 \ge nord du pays
@@ -52699,7 +52744,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 26/Feb/2010
+\dt 09/Jun/2015
 
 \lx pomitee
 \is emprunt
@@ -52719,33 +52764,38 @@ sucre
 \dt 23/Dec/2014
 
 \lx pomõ
-\is locatif
-\is habitat
-\is cultures
 \dialx GO(s) PA BO
 \va pwòmò
 \ve WE PA
 \ps nom locatif (forme possessive de pwamwa)
+\sn 1
+\is locatif
 \ge chez
+\re
+\xv nu a-da pomwõ-ny [BO]
+\xn je monte chez moi 
+\xv pomõ-n [PA]
+\xn chez lui (lit. demeure-sa)
+\sn 2
+\is cultures
 \ge champ
+\re
+\xv kê-pomõ-nu [GOs]
+\xn mon champ 
+\sn 3
+\is habitat
 \ge pays
 \re
 \gb
 \rgb
 \xv pomõ-nu [GOs]
 \xn mon pays 
-\xv nu a-da pomwõ-ny [BO]
-\xn je monte chez moi 
-\xv pomõ-n [PA]
-\xn chez lui (lit. demeure-sa)
-\xv kê-pomõ-nu [GOs]
-\xn mon champ 
 \cf pwamwa
 \ce pays
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx pomõ-da
-\is locatif
+\is topographie
 \dialx GO(s)
 \va pomwa-da, poma-da
 \ve BO
@@ -52758,10 +52808,10 @@ sucre
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx pomõ-du
-\is locatif
+\is topographie
 \dialx GO(s)
 \va pomwõdu, pomõ-du
 \ve BO
@@ -52774,7 +52824,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx pomõ-li
 \is locatif
@@ -52859,7 +52909,7 @@ sucre
 \dt 14/Jul/2007
 
 \lx põng ???
-\is cocotier
+\is arbre_cocotier
 \ph pÉ”ÌƒÅ‹
 \dialx BO [Corne]
 \ps n
@@ -52871,7 +52921,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 09/Jun/2015
 
 \lx ponga
 \is grammaire_préposition
@@ -52906,7 +52956,7 @@ sucre
 \dt 21/Dec/2014
 
 \lx pò-ni
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \va pò-nri
 \ve GO(s)
@@ -52929,7 +52979,7 @@ sucre
 \sge combien ?
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pòni-kabu
 \is jours
@@ -52948,7 +52998,7 @@ sucre
 \dt 19/Jul/2007
 
 \lx pò-ni-ma-ba
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge neuf
@@ -52959,10 +53009,10 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx pò-ni-ma-dru
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge sept
@@ -52973,10 +53023,10 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx pò-ni-ma-gò
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps numéral
 \ge huit
@@ -52987,7 +53037,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx pòni-ma-wee
 \is corps
@@ -52999,7 +53049,7 @@ sucre
 \dt 26/Feb/2010
 
 \lx pò-ni-ma-xe
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps
 \ge six
@@ -53010,7 +53060,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 20/Jun/2007
+\dt 09/Jun/2015
 
 \lx pò-niza ?
 \is grammaire_interrogatif
@@ -53038,7 +53088,7 @@ sucre
 \dt 21/Dec/2014
 
 \lx pònõ
-\is quantificateur
+\is grammaire_quantificateur
 \ph pÉ”nÉ”Ìƒ
 \dialx GO(s)
 \ps quantificateur
@@ -53056,7 +53106,7 @@ sucre
 \sge s'en falloir de peu que
 \cf pobe, popobe [PA]
 \ce un peu
-\dt 12/Mar/2010
+\dt 09/Jun/2015
 
 \lx phònrõ
 \is religion
@@ -53119,7 +53169,7 @@ sucre
 
 \lx pô-nru
 \hm
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \ph pÃ´É³u
 \va pon
@@ -53133,10 +53183,10 @@ sucre
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx pònum
-\is caract.objet
+\is caract.objet_taille
 \dialx PA BO
 \va pònèn, pwanèn
 \ve BO
@@ -53152,7 +53202,7 @@ sucre
 \cf pa-pònume hôxa ce 
 \ce raccourcir 
 \nt
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx ponyãã
 \is caract.personne
@@ -53191,7 +53241,7 @@ sucre
 \dt 09/Nov/2014
 
 \lx pò-pa
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \ps numéral 
 \ge quatre
@@ -53202,7 +53252,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pò-pa-kabu
 \is jours
@@ -53219,7 +53269,7 @@ sucre
 \dt 04/Mar/2010
 
 \lx pò-pa-kudi
-\is topographie
+\is configuration
 \dialx GO(s)
 \ps v
 \ge carré (lit. 4 coins)
@@ -53230,7 +53280,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx po-pee 
 \is caract.objet
@@ -53248,7 +53298,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx popobe
-\is caract.objet
+\is caract.objet_taille
 \dialx PA BO
 \va pobe
 \ve WE
@@ -53264,7 +53314,7 @@ sucre
 \cf
 \ce
 \nt Dubois
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx pò-pwa
 \is temps_atmosphérique
@@ -53375,7 +53425,7 @@ sucre
 
 \lx pò-tree-hu-ò
 \is mouvement
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va pwo tree-wò
 \ve GOs
@@ -53390,7 +53440,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx pò-thi
 \is corps
@@ -53430,7 +53480,7 @@ sucre
 \dt 23/Nov/2014
 
 \lx pò-tru
-\is numéral
+\is grammaire_numéral
 \dialx GO(s) 
 \ph pÉ”Êˆu
 \va pò-ru
@@ -53448,7 +53498,7 @@ sucre
 \sge deuxième
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx po-tru kabu
 \is jours
@@ -53480,7 +53530,7 @@ sucre
 \dt 19/Dec/2014
 
 \lx pòvwònò
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s)
 \ps v. statif
 \ge petit (épaisseur; par opposition à gros)
@@ -53492,10 +53542,10 @@ sucre
 \cf
 \ce
 \nt réduplication
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx povwonû
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s)
 \va poponû
 \ve GO(s)
@@ -53510,7 +53560,7 @@ sucre
 \xn je suis un tout petit peu plus petit que toi
 \an waa [GOs]
 \at grand
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx pòvwòtru
 \is fonct.intell.
@@ -53615,7 +53665,7 @@ sucre
 \dt 25/Dec/2014
 
 \lx poxa
-\is animaux
+\is mammifères
 \hm 2
 \dialx GO(s)
 \va pwaxa 
@@ -53635,7 +53685,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx poxa aazo
 \is société
@@ -53762,7 +53812,7 @@ sucre
 \dt 06/Mar/2010
 
 \lx pò-xè
-\is numéral
+\is grammaire_numéral
 \dialx GO PA
 \ps classificateur des objets ronds
 \ge un (objet rond) ; un jour
@@ -53783,7 +53833,7 @@ sucre
 \xn il n'a qu'une oreille
 \cf
 \ce
-\dt 18/Feb/2010
+\dt 09/Jun/2015
 
 \lx po-xe kabu
 \is jours
@@ -53841,7 +53891,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx pò-xè nrò
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps restrictif
 \ge un seul(ement)
@@ -53852,7 +53902,7 @@ sucre
 \xn j'ai vu un seul bateau
 \cf
 \ce
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx poxi
 \is corps
@@ -53903,7 +53953,7 @@ sucre
 \dt 25/Dec/2014
 
 \lx pò-zaalo
-\is fruit
+\is plantes.fruit
 \dialx GO(s)
 \ps n
 \ge fruit du "gommier"
@@ -53914,7 +53964,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 18/Jul/2006
+\dt 10/Jun/2015
 
 \lx pozo
 \is habillement
@@ -54010,7 +54060,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx phöge
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge entasser; faire des tas
@@ -54021,7 +54071,7 @@ sucre
 \xn faire des tas de nourriture
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx phöloo
 \is eau
@@ -54044,7 +54094,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx phöloo we
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \ps n
 \ge eau trouble
@@ -54055,7 +54105,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx pööni
 \is parenté
@@ -54121,7 +54171,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \is feu
 \ge fumée
 \sn 1
-\is élément_terre
+\is terrain_terre
 \ge poussière
 \re
 \gb
@@ -54132,7 +54182,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \sge poussière
 \gr pubu yaai [BO]
 \gt fuméÃ©e du feu
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pu
 \hm 3
@@ -54171,7 +54221,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx pu-
 \hm 1
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur
 \ge classificateur : pied d'arbre, feuilles, tubercules, racines
@@ -54184,10 +54234,10 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 25/Jun/2007
+\dt 09/Jun/2015
 
 \lx pû
-\is plante
+\is plantes
 \hm 2
 \dialx GO(s) PA BO
 \ps n
@@ -54208,7 +54258,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \sge haricot sauvage (à gousse biscornue)
 \cf
 \ce
-\dt 25/Jun/2007
+\dt 09/Jun/2015
 
 \lx puu
 \hm 1
@@ -54223,7 +54273,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \sn 1
 \ge origine ; source; cause
 \sn 2
-\is plantes
+\is plantes_partie
 \ge pied ; tronc
 \re
 \sn 3
@@ -54257,7 +54307,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \cf
 \ce
 \poc *puqu(n)
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx puu
 \hm 2
@@ -54303,7 +54353,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx phu 
 \is maison
-\is plante 
+\is plantes
 \hm 2
 \dialx GO(s) PA BO
 \ps n
@@ -54319,7 +54369,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn il met la première rangée de paille
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx phu
 \is habillement
@@ -54634,7 +54684,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 17/Jul/2006
 
 \lx pubu dili
-\is élément_terre
+\is terrain_terre
 \dialx GO(s) PA BO
 \ps n
 \ge poussière de la terre
@@ -54645,7 +54695,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pu-bwakira-me
 \is corps
@@ -54696,7 +54746,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 09/Nov/2014
 
 \lx pu-bwò
-\is chauve-souris
+\is mammifère_chauve-souris
 \dialx GO(s)
 \ps n
 \ge poils de roussette
@@ -54707,7 +54757,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx puçee 
 \is danse
@@ -54727,7 +54777,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Dec/2014
 
 \lx puu-ce
-\is plante_arbre
+\is arbre
 \dialx GO(s) PA BO
 \ps n
 \ge collet de l'arbre (sa base)
@@ -54738,10 +54788,10 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx puçiu 
-\is coutumes
+\is coutumes_objet
 \is habillement
 \ph pudÊ’iu
 \dialx GO(s)
@@ -54757,7 +54807,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx puçò
 \is nourriture
@@ -54783,7 +54833,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 22/Dec/2014
 
 \lx pudi-go 
-\is plantes
+\is plantes_partie
 \dialx GO(s)
 \va puding-go 
 \ve PA BO
@@ -54796,7 +54846,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx pu-drõgo
 \is maison
@@ -54815,7 +54865,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 21/Feb/2010
 
 \lx pu-döölia
-\is plante
+\is plantes
 \dialx GO(s)
 \ps n
 \ge épineux
@@ -54826,7 +54876,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn c'est un arbre épineux 
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pue
 \is interaction
@@ -54853,6 +54903,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dialx GO(s)
 \ps n
 \ge fouet
+\bw FR fouet
 \re
 \gb
 \rgb
@@ -54860,7 +54911,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn le bout/mèche du fouet
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 04/Jun/2015
 
 \lx phugi
 \is médecine
@@ -54962,7 +55013,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 25/Dec/2014
 
 \lx pul ???
-\is coutumes
+\is coutumes_objet
 \dialx BO PA
 \ps n
 \ge perche sacrée (protège les plantations)
@@ -54973,10 +55024,10 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx phulè
-\is plante
+\is plantes
 \va phulèng
 \dialx PA BO
 \va phulek
@@ -54993,7 +55044,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \sge fruit de Pipturus
 \cf alamwi
 \ce
-\dt 03/Mar/2010
+\dt 09/Jun/2015
 
 \lx pulòn
 \is insecte
@@ -55502,15 +55553,15 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \ph pu'É½umi 
 \ph pu'rumi
 \dialx GO(s) PA BO
-\ve
 \ps n
 \ge fourmi (petite et rouge)
+\bw FR fourmi
 \re
 \gb
 \rgb
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 04/Jun/2015
 
 \lx purunra
 \is habillement
@@ -55609,7 +55660,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 25/Dec/2014
 
 \lx puxãnru
-\is affect
+\is sentiments
 \is interaction
 \dialx GO(s)
 \va poxãnru, pwããnru
@@ -55631,7 +55682,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx puxa-teã
 \is société
@@ -55648,7 +55699,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 18/Jul/2006
 
 \lx pu-xè
-\is classificateur
+\is classificateur numérique
 \dialx PA BO
 \ps classificateur des maisons
 \ge un (bâtiment, arbre, qqch qui a une souche et qui est haut)
@@ -55662,7 +55713,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \cf
 \ce
 \nt
-\dt 14/Jul/2007
+\dt 09/Jun/2015
 
 \lx puxu-n
 \is maison
@@ -55800,7 +55851,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xv u ru pwaale cee [BO]
 \xn il va casser le bois
 \sn 2
-\is action.corps
+\is action_corps
 \ge recueillir (le miel sur les arbres, en cassant la branche sur laquelle se trouve la ruche) [PA]
 \ge presser dans la main
 \re
@@ -55810,7 +55861,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn recueillir le miel
 \cf pwaale
 \ce casser qqch
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx pwaa
 \is déplacement
@@ -55890,7 +55941,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx phwa
 \hm 2
-\is éléments_ciel
+\is ciel
 \dialx PA BO
 \va phwal
 \ve BO
@@ -55904,11 +55955,11 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \cf dòòn [PA]
 \ce cieux
 \nt
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx phwa-
 \hm 1
-\is classificateur
+\is classificateur numérique
 \dialx PA
 \ps classificateur
 \ge classificateur: trous et tas de prestations cérémonielles 
@@ -55920,11 +55971,11 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 23/Jun/2007
+\dt 09/Jun/2015
 
 \lx phwa-
 \hm 2
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur
 \ge coup ; détonation
@@ -55938,7 +55989,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \cf
 \ce
 \nt
-\dt 24/Jun/2007
+\dt 09/Jun/2015
 
 \lx phwaa
 \hm 2
@@ -56104,7 +56155,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Dec/2014
 
 \lx phwããgo
-\is bananiers
+\is bananier
 \dialx GO(s) BO
 \va pwããgo
 \ve PA BO
@@ -56118,7 +56169,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx pwai
 \is nourriture
@@ -56167,7 +56218,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 19/Jul/2007
 
 \lx pwaixe
-\is caract.objet
+\is chose 
 \dialx GO(s) PA 
 \va pwaike
 \ve GO
@@ -56185,7 +56236,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \sge autre chose
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx pwajã
 \is arbre
@@ -56292,7 +56343,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 17/Mar/2010
 
 \lx phwaala tèèn
-\is éléments_lumière
+\is lumière
 \dialx BO
 \ps n
 \ge lumière du jour; lumière
@@ -56303,7 +56354,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pwalamu ???
 \is igname
@@ -56366,7 +56417,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 09/Nov/2014
 
 \lx pwalee
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge étaler (natte) 
@@ -56384,10 +56435,10 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn elle est assise les jambes étendues
 \cf zhugi, zugi
 \ce replier
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pwaale
-\is action.corps
+\is action_corps
 \dialx GO(s) PA  BO
 \ps v
 \ge casser (bois en pliant) ; couper (en cassant)
@@ -56401,11 +56452,11 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pwali 
 \hm 2
-\is caract.objet
+\is caract.objet_taille
 \dialx BO PA 
 \ps v. statif ; adverbe
 \ge long; haut
@@ -56418,7 +56469,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \xn ton nom est long
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx pwali ?
 \hm 1
@@ -56537,7 +56588,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 19/Dec/2014
 
 \lx pwãmwãnu
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \va pobwanu
 \ve BO
@@ -56551,7 +56602,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf dopweza ; weem;  yòò ; yhalo
 \ce
-\dt 29/May/2007
+\dt 10/Jun/2015
 
 \lx phwamwã-ròòmwa
 \is maison
@@ -56669,7 +56720,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Mar/2010
 
 \lx pwawa 
-\is modalité
+\is grammaire_modalité
 \dialx WEM WE BO PA
 \ps quantificateur
 \ge difficile ; impossible 
@@ -56684,7 +56735,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn peux-tu amener tes  enfants ?
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx pwawaa
 \is corps
@@ -56742,7 +56793,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 19/Jul/2007
 
 \lx phwawali  
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s) BO PA
 \va pwapwali 
 \ve BO PA
@@ -56769,7 +56820,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \sge lentement
 \cf khawali
 \ce long; haut
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx pwawe
 \is échanges
@@ -56803,8 +56854,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Nov/2014
 
 \lx phwaxa
-\is mesure
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s) PA
 \ps n
 \ge longueur
@@ -56822,7 +56872,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx phwaxaa
 \is crabe
@@ -56857,7 +56907,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 30/Jun/2007
 
 \lx phwaxi
-\is caract.
+\is caract_taille
 \dialx GO(s) PA BO
 \va phwaxa
 \ve GO(s) PA
@@ -56874,7 +56924,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn sa taille
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pwaxilo 
 \is maison
@@ -57119,7 +57169,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx phwe-ai
 \is corps
-\is affect
+\is sentiments
 \dialx GO(s) PA BO
 \va phwe-ai-n
 \ve BO
@@ -57135,7 +57185,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn son coeur
 \cf phwe-
 \ce trou, emplacement
-\dt 19/Jul/2007
+\dt 10/Jun/2015
 
 \lx pwebae ???
 \is temps
@@ -57214,7 +57264,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 18/Mar/2010
 
 \lx pwedaou ???
-\is bananiers
+\is bananier
 \dialx BO
 \ps n
 \ge bananier (clone; Dubois)
@@ -57225,7 +57275,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 18/Feb/2006
+\dt 09/Jun/2015
 
 \lx pwede
 \is guerre
@@ -57354,7 +57404,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx pwe-hupo ???
-\is coutumes
+\is coutumes_objet
 \dialx GO
 \ps n
 \ge perche interdisant l'accès des morts
@@ -57367,7 +57417,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \un
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx phwè-keni
 \is corps
@@ -57528,7 +57578,6 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \va phwe-nò
 \ve BO
 \ps n
-\mr pwa-no
 \ge anus (grossier, Dubois)
 \re
 \gb
@@ -57538,7 +57587,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf pwa
 \ce trou (terme poli)
 \nt
-\dt 01/Mar/2010
+\dt 04/Jun/2015
 
 \lx phwêne
 \is soin
@@ -57558,7 +57607,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Dec/2014
 
 \lx pwêng
-\is plante
+\is plantes
 \dialx PA BO
 \ps n
 \ge herbe (dont la décoction des feuilles sert de 1° purge pour les bébés juste après la naissance, avant l'allaitement)
@@ -57569,7 +57618,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx phwè-nrògò
 \is eau
@@ -57619,7 +57668,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx phwè-peenã
-\is anguilles
+\is anguille
 \dialx GO(s)
 \ps n
 \ge trou d'anguille; anfractuosité dans rocher (où se cachent les anguilles)
@@ -57634,7 +57683,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx phwè-po-xaò
 \is cultures
@@ -57667,7 +57716,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 27/Jun/2007
 
 \lx pweuna
-\is caract.animé
+\is caract.
 \dialx PA BO
 \ps v
 \ge gourmand; glouton
@@ -57678,7 +57727,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx pwevwenu 
 \is eau
@@ -57856,7 +57905,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx phwe-wöö
-\is cordages
+\is cordes
 \dialx GO(s)
 \ps n
 \ge lasso (pour attraper un cheval) ; noeud coulant
@@ -57867,7 +57916,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx phweexoe
 \is interaction
@@ -58137,7 +58186,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Jul/2007
 
 \lx pwiya
-\is nourriture.cuisson
+\is nourriture_cuisson
 \dialx BO
 \ps v
 \ge déterrer (le four)
@@ -58148,11 +58197,11 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx pwò
 \hm 3
-\is tortue
+\is reptile_tortue
 \dialx GO(s)
 \va pò
 \ve GO(s)
@@ -58170,10 +58219,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \poc *poÉ²u
-\dt 09/Nov/2008
+\dt 10/Jun/2015
 
 \lx phwô
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge courber ; tordre
@@ -58187,7 +58236,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx pwòk ???
 \dialx BO [Corne]
@@ -58204,7 +58253,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx phwòli
 \is santé
-\is action.corps
+\is action_corps
 \dialx BO [BM, Corne]
 \ps v
 \ge presser ; écraser (la pulpe de coco)
@@ -58216,10 +58265,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx pwò-mhãã
-\is tortue
+\is reptile_tortue
 \dialx GO(s)
 \ps n
 \ge tortue verte
@@ -58230,7 +58279,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 05/Jul/2006
+\dt 10/Jun/2015
 
 \lx pwòmò-n
 \is cultures
@@ -58441,6 +58490,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve PA
 \ps n
 \ge chemise
+\bw FR chemise
 \re
 \gb
 \rgb
@@ -58452,7 +58502,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn il met sa chemise
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx siro
 \is emprunt
@@ -58502,7 +58552,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 20/Feb/2015
 
 \lx ta
-\is grammaire
+\is grammaire_assertif
 \hm 3
 \dialx PA
 \va ra
@@ -58518,7 +58568,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \un
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx ta
 \is maison.objet
@@ -58529,7 +58579,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve WE
 \va taavw
 \ve PA
-\et emprunt au Fr 'table'
+\bw FR table
 \ps n
 \ge table
 \re
@@ -58537,7 +58587,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \rgb
 \xv
 \xn
-\dt 07/Nov/2014
+\dt 04/Jun/2015
 
 \lx ta-
 \is interpellation
@@ -58554,7 +58604,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 19/Dec/2014
 
 \lx taa
-\is action.corps
+\is action_corps
 \is cultures
 \hm 2
 \dialx GO(s) PA BO
@@ -58576,7 +58626,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn creuser un trou, une tombe
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx tãã
 \is mouvement
@@ -58609,7 +58659,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 25/Dec/2014
 
 \lx tha
-\is action.corps
+\is action_corps
 \is prep.aliments
 \hm 2
 \dialx GO(s) BO PA
@@ -58624,7 +58674,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \sge éplucher coco
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 09/Jun/2015
 
 \lx tha
 \hm 3
@@ -58789,7 +58839,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv nu thrae pu-phwa Pwayili [GOs]
 \xn j'ai rasé la barbe de P.
 \sn 2
-\is caract.objet
+\is caract.objet_taille
 \ge court ; ras
 \re
 \gb
@@ -58798,11 +58848,11 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \gt raser qqch
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thra
 \hm 3
-\is plante
+\is plantes
 \ph ÊˆÊ°a
 \dialx GO(s)
 \va thal
@@ -58818,7 +58868,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 15/Jul/2007
+\dt 09/Jun/2015
 
 \lx thraa
 \is caract.objet
@@ -58906,7 +58956,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 06/Nov/2014
 
 \lx tha nru
-\is action.corps
+\is action_corps
 \is prep.aliments
 \dialx GO(s) PA BO
 \ps v
@@ -58918,10 +58968,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 09/Nov/2014
+\dt 09/Jun/2015
 
 \lx tha nhyôgo we
-\is action_eau
+\is eau_action
 \dialx GOs
 \ps v
 \ge sonder la profondeur de l'eau
@@ -58934,10 +58984,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx taa phwa
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va taa-vwa
 \ps v
@@ -58952,11 +59002,11 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \gr v.t. taa-vwa-nri
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thaba
 \is portage
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \ps v
 \ge porter qqch de lourd dans les bras
@@ -58968,7 +59018,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf köe
 \ce porter dans les bras
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx taba ???
 \is cultures
@@ -59018,7 +59068,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx thaa-bi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge piler; écraser
@@ -59031,10 +59081,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \sge pilon
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thabil
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \ps n
 \ge ceinture de femme tressée (monnaie), faite à partir des racines de bourao (tapées, lavées, séchées; Charles)
@@ -59046,10 +59096,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf pobil, wepòò [PA]
 \ce ceinture de femme (monnaie)
 \nt
-\dt 29/May/2007
+\dt 10/Jun/2015
 
 \lx tabila 
-\is action.corps
+\is action_corps
 \dialx BO PA WE
 \ps v
 \ge clouer
@@ -59060,7 +59110,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx thabila
 \is action
@@ -59089,7 +59139,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 21/Nov/2014
 
 \lx thabòe
-\is action.corps
+\is action_corps
 \dialx GO(s) PA
 \ps v
 \ge effeuiller (en pinçant et cassant la tige des feuilles avec le pouce et l'index)
@@ -59103,10 +59153,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx taabö
-\is topographie
+\is configuration
 \dialx GO(s)
 \ps v; n
 \ge séparer; séparation; frontière
@@ -59119,7 +59169,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \sge frontière (endroit de la séparation)
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thraabu
 \is pêche
@@ -59142,7 +59192,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Jul/2007
 
 \lx tha-bulu-nri
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge entasser; rassembler
@@ -59153,10 +59203,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn rassembles les saletés !
 \cf nra-bulu-nri
 \ce rassembler
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx taabunrõõ
-\is activité
+\is eau_action
 \ph ta:buÉ³
 \dialx GO(s)
 \ps v
@@ -59168,10 +59218,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx tabwa
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \ps n
 \ge monnaie kanak dont la longueur est calculée en position assise, de la hauteur de la tête jusqu'au sol (Charles)
@@ -59186,31 +59236,35 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf kòòl, gò-hii
 \ce monnaies
 \nt
-\dt 04/Mar/2010
+\dt 10/Jun/2015
 
 \lx trabwa
-\is position
-\is mouvement
 \ph Êˆabwa
 \dialx GO(s)
 \va tabwa
 \ve BO PA 
 \ps v
+\sn 1
+\is position
+\is mouvement
 \ge asseoir (s') ; assis 
-\ge couver (oeufs)
 \ge percher (se) ;  perché
 \ge poser (se)
 \ge atterrir ; toucher terre 
 \re
-\gb
-\rgb
 \xv mhènõ-trabwa [GOs], mhènõ-tabwa [BO]
 \xn chaise, siège
 \se we-tabwa
 \sge eau stagnante
+\sn 2
+\is fonct.nat.animaux
+\ge couver (oeufs)
+\re
+\gb
+\rgb
 \cf tre-
 \ce en composition
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx trabwa mhwããnu
 \is temps
@@ -59229,7 +59283,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx taabwa pi
-\is oiseau
+\is fonct.nat.animaux
 \dialx PA
 \ps v
 \ge couver des oeufs
@@ -59241,7 +59295,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thaabwe
 \dialx GO(s) BO 
@@ -59278,7 +59332,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thaçe
-\is action.corps
+\is action_corps
 \ph tÊ°adÊ’e
 \dialx GO(s)
 \ps v
@@ -59290,7 +59344,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx taçinrô
 \is interaction
@@ -59345,7 +59399,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Dec/2014
 
 \lx tae
-\is action.corps
+\is action_corps
 \dialx PA BO [BM]
 \ps v
 \ge allonger (le pas ou le bras pour saisir qqch); étendre (bras)
@@ -59356,10 +59410,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn elle étend ses jambes
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx thae
-\is action.corps
+\is action_corps
 \ph tÊ°ae
 \dialx GO(s) PA BO 
 \ps v
@@ -59373,7 +59427,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn elle s' attache les cheveux
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx thrae
 \is matière
@@ -59421,7 +59475,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 08/Feb/2006
 
 \lx thaeza
-\is action_instrument
+\is action_outils
 \dialx GO(s)
 \va taela
 \ve WE
@@ -59435,16 +59489,16 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx tagi
 \dialx PA BO
 \ps n ; v
 \sn 1
-\is cordage
+\is cordes
 \ge toron de corde
 \sn 2
-\is action.corps
+\is action_corps
 \ge enrouler (s') (une liane autour d'un arbre, la tige d'igname autour du tuteur)
 \ge emmêler (s')  dans une corde
 \ge prendre (se) dans un filet (en s'enroulant) 
@@ -59455,10 +59509,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 09/Jun/2015
 
 \lx thagi
-\is action.corps
+\is action_corps
 \is cultures
 \dialx GO(s) WEM WE PA BO
 \va tagi 
@@ -59474,7 +59528,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn elle plume la poule
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx taagi kui ???
 \is cultures
@@ -59508,8 +59562,8 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Jul/2007
 
 \lx taaginre
-\is aspect
-\ph ta:giõõÉ³e
+\is grammaire_aspect
+\ph ta:giÉ³e
 \dialx GOs
 \va taagin
 \ve PA BO
@@ -59541,7 +59595,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \gr v.t. tagine
 \cf ô-taagin
 \ce constamment
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx tago
 \is action
@@ -59675,7 +59729,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thaila
-\is action_instrument
+\is action_outils
 \dialx GO(s)
 \va taabila, tabila
 \ve PA
@@ -59688,7 +59742,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx tha-ivwi
 \dialx GO(s) PA
@@ -59697,7 +59751,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve PA BO
 \ps v
 \sn 1
-\is action.corps
+\is action_corps
 \ge entasser 
 \re
 \sn 2
@@ -59713,7 +59767,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn ramasse / entasse les détritus !
 \cf thaivinge
 \ce entasser qqch
-\dt 21/Dec/2014
+\dt 09/Jun/2015
 
 \lx taaja
 \is chasse
@@ -59731,7 +59785,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx thaji
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge frapper fort
@@ -59742,7 +59796,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thala
 \is action_mains
@@ -59884,7 +59938,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 03/Nov/2014
 
 \lx thraliwa
-\is étapes_vie
+\is étapes.vie
 \ph 'Êˆhaliwa
 \dialx GO(s)
 \va thaliang
@@ -59898,7 +59952,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx thralo
 \hm 1
@@ -60094,7 +60148,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 18/Mar/2010
 
 \lx thano ??
-\is plante
+\is plantes
 \dialx BO (Corne)
 \ps n
 \ge fougère lianescente 
@@ -60107,7 +60161,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx tha-nyale
 \is action_corps
@@ -60257,7 +60311,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \is configuration
 \ge bouquet de paille à la main
 \sn 2
-\is action.corps
+\is action_corps
 \ge brandir dans la main
 \re
 \gb
@@ -60266,10 +60320,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx thathibul
-\is jeux
+\is jeu
 \dialx PA
 \ps v
 \ge jeu : on provoque une explosion en emprisonnant de l'air entre les mains et en les croisant sous l'eau l'une sous l'autre
@@ -60284,10 +60338,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx tha-thrûã
-\is jeux
+\is jeu
 \dialx GO(s) BO
 \va tha-thûã, ta-thûã
 \ve BO
@@ -60300,7 +60354,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx tha-truarôô
 \is insecte
@@ -60351,7 +60405,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 19/Jul/2007
 
 \lx tha-uji ??
-\is action.corps
+\is action_corps
 \dialx BO
 \va taauji 
 \ve BO [BM]
@@ -60364,12 +60418,12 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx ta-uunri
-\is action.corps
+\is action_corps
 \ph ta-u:É³i
-\dialx GO(s)
+\dialx GOs
 \ps v
 \ge renverser ; faire tomber
 \re
@@ -60380,11 +60434,11 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thrava
 \is caract.
-\is modalité
+\is grammaire_modalité
 \dialx GO(s)
 \ph ÊˆÊ°ava
 \ps v. statif ; n
@@ -60395,7 +60449,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv
 \xn
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx thravayu 
 \is fonct.nat
@@ -60462,7 +60516,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 07/Nov/2014
 
 \lx travwa
-\is plante
+\is plantes
 \ph ÊˆaÎ²a
 \dialx GO(s)
 \va trapa
@@ -60478,7 +60532,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thraavwã 
 \is mer
@@ -60537,7 +60591,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 25/Dec/2014
 
 \lx thaavwu
-\is aspect
+\is grammaire_aspect
 \dialx GO(s)
 \va thaapu
 \ve GO(s)
@@ -60565,7 +60619,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn je commence à parler
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thrawa
 \is déplacement
@@ -60763,7 +60817,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thaaxô
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va thaxõõ
 \ve GO(s)
@@ -60787,7 +60841,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx thaaxônri
 \is action
@@ -60864,7 +60918,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thaa-zia
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va tha-tia 
 \ve BO
@@ -60877,10 +60931,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf tia
 \ce pousser (voiture)
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ta-zo
-\is caract.animé
+\is caract
 \dialx PA BO
 \ps v
 \ge agile; prompt; vif
@@ -60891,10 +60945,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn il a les jambes très agiles
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx te
-\is plante
+\is plantes_processus
 \dialx PA
 \ps v
 \ge commencer à mûrir (tubercules, fruits)
@@ -60906,10 +60960,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx tee
-\is gramm
+\is grammaire_quantificateur
 \dialx PA
 \ps restrictif ??
 \ge seulement
@@ -60927,10 +60981,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 24/Feb/2010
+\dt 09/Jun/2015
 
 \lx the
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va tioo
 \ve PA
@@ -60943,10 +60997,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx tre
-\is grammaire
+\is grammaire_contraste
 \dialx GO(s)
 \va tee, te
 \ve PA BO
@@ -60978,7 +61032,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ce faire avant, commencer avant
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx tree
 \is temps
@@ -61030,13 +61084,13 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 20/Feb/2015
 
 \lx tree
-\is classificateur
+\is classificateur sémantique
 \is position
 \hm 3
 \dialx GO(s)
 \va tee
 \ve PA
-\ps préfixe
+\ps préfixe (position assise)
 \ge assis (faire)
 \re
 \gb
@@ -61048,10 +61102,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv e tree-raa mwa ! [GOs]
 \xn la maison est mal située
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx thre
-\is plante
+\is plantes
 \dialx GO(s)
 \va the
 \ve BO
@@ -61064,7 +61118,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx thrê
 \is oiseau
@@ -61084,7 +61138,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Jul/2007
 
 \lx three
-\is action_plantes
+\is action.plantes
 \dialx GOs
 \va thee
 \ve BO [Corne]
@@ -61097,7 +61151,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx tre hêbu
 \is temps
@@ -61161,7 +61215,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 25/Feb/2010
 
 \lx tee-axe
-\is quantificateur
+\is grammaire_quantificateur
 \dialx PA
 \ps quantificateur
 \ge unique ; seul
@@ -61173,10 +61227,10 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf (h)ada
 \ce seul
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thebe
-\is action.main
+\is action_mains
 \dialx GOs
 \va tebe
 \ve BO [Corne]
@@ -61191,7 +61245,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx trebwalu
 \is topographie
@@ -61289,7 +61343,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx tree-çimwi
-\is action.corps
+\is action_corps
 \ph Êˆe:'Ê’imwi
 \dialx GO(s)
 \va tee-cimwi, tee-jimwi, tee-yimwi
@@ -61307,7 +61361,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn comment attrape-t-on les crabes ? 
 \cf cimwi
 \ce tenir, saisir
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx tre-çôô
 \is position
@@ -61465,7 +61519,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve BO PA
 \ps v
 \sn 1
-\is action.corps
+\is action_corps
 \ge couper d'un coup 
 \ge abattre (arbre)
 \ge frapper (qqn pour le tuer)
@@ -61473,7 +61527,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv i thei u/xo/vwo wamòn [PA]
 \xn il l'a abattu avec une hache
 \sn 2
-\is bois
+\is bois_travail
 \ge tailler du bois
 \ge sculpter
 \re
@@ -61483,7 +61537,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \sge sculpter le bois
 \cf dèi, thibe
 \ce
-\dt 11/Nov/2014
+\dt 10/Jun/2015
 
 \lx tre-kea
 \is position
@@ -61816,7 +61870,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx teol ??
-\is action.corps
+\is action_corps
 \dialx BO [BM]
 \ps v
 \ge déchirer (tissu)
@@ -61827,7 +61881,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn il a déchiré son manou
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx tre-pavwã
 \is fonct.intell
@@ -61955,7 +62009,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 21/Nov/2014
 
 \lx tretrabwau
-\is forme
+\is caract.objet
 \dialx GO(s) 
 \ph ÊˆeÉ½a'bwau
 \va terebwau
@@ -61969,7 +62023,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx tre-thibu
 \is mouvement
@@ -62005,8 +62059,8 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 29/Nov/2008
 
 \lx teevaò
-\is action_eau
-\dialx BO [BM, Coyaud]
+\is eau_action
+\dialx BO [BM, MC]
 \ps v
 \ge jeter (dans l'eau)
 \re
@@ -62017,7 +62071,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx tèèvòl ???
 \dialx BO [Corne]
@@ -62286,7 +62340,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 25/Dec/2014
 
 \lx thii
-\is action.corps
+\is action_corps
 \hm 1
 \dialx GO(s) PA BO WEM
 \ps
@@ -62310,7 +62364,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf thaa, thòzò
 \ce piquer
 \poc *susuRi 'coudre' (Blust)
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx thii
 \is soin
@@ -62361,7 +62415,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx thii 
 \hm 4
-\is chauve-souris_corps
+\is mammifère_chauve-souris_corps
 \ph Î¸i:
 \dialx GO PA WEM
 \ps n
@@ -62377,7 +62431,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx tri
 \is emprunt
@@ -62387,14 +62441,15 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ps n
 \ge thé
 \re
+\bw GB tea
+\re
 \gb tea
 \rgb
 \xv
 \xn
 \cf
 \ce
-\nt emprunt
-\dt 09/Nov/2014
+\dt 04/Jun/2015
 
 \lx thri
 \is coutumes
@@ -62495,7 +62550,7 @@ enflammées (lit. piquer le feu)
 \dt 09/Nov/2014
 
 \lx tia
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \va tiia
 \ve GO(s)
@@ -62508,7 +62563,7 @@ enflammées (lit. piquer le feu)
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thria
 \is coutumes
@@ -62563,7 +62618,7 @@ enflammées (lit. piquer le feu)
 \dt 10/Nov/2014
 
 \lx tibö
-\is classificateur
+\is classificateur numérique
 \dialx PA
 \va tibu
 \ve PA
@@ -62576,7 +62631,7 @@ enflammées (lit. piquer le feu)
 \xn une grappe de tomates (ne s'emploie pas au-delà de 'un')
 \cf
 \ce
-\dt 24/Jul/2011
+\dt 09/Jun/2015
 
 \lx thi-bö
 \is feu
@@ -62748,7 +62803,7 @@ enflammées (lit. piquer le feu)
 \dt 21/Dec/2014
 
 \lx thi-du
-\is action.corps
+\is action_corps
 \dialx GOs BO  [Corne]
 \ps v
 \ge plonger le bras (dans une cavité, dans l'obscurité)
@@ -62759,7 +62814,7 @@ enflammées (lit. piquer le feu)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx thige
 \is couture
@@ -63023,7 +63078,7 @@ enflammées (lit. piquer le feu)
 \dt 18/Dec/2014
 
 \lx thilò
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \ps n
 \ge paire; l'autre d'une paire
@@ -63044,7 +63099,7 @@ enflammées (lit. piquer le feu)
 \xn où est ton autre chaussure ?
 \cf thixee ala-xò [GOs]
 \ce une seule chaussure
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx trilòò
 \is fonct.intell
@@ -63126,7 +63181,7 @@ enflammées (lit. piquer le feu)
 
 \lx thrîmi
 \is soin
-\is action.corps
+\is action_corps
 \ph Êˆhimi
 \dialx GO(s) 
 \va thimi 
@@ -63146,10 +63201,10 @@ enflammées (lit. piquer le feu)
 \sge pinceau
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thringã
-\is animaux_corps
+\is corps_animaux
 \dialx GO(s)
 \ph ÊˆÊ°iÅ‹a
 \va thrixã
@@ -63162,7 +63217,7 @@ enflammées (lit. piquer le feu)
 \xv thingã-n [BO]
 \xn sa queue 
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thînri 
 \is habitat
@@ -63260,7 +63315,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 20/Jul/2007
 
 \lx tio
-\is action.corps
+\is action_corps
 \dialx PA
 \va tioo
 \ve PA
@@ -63280,7 +63335,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il s'est écorché la jambe (en marchant)
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thiò dimwa
 \is nourriture
@@ -63301,7 +63356,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Nov/2014
 
 \lx thiò nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s) PA
 \va thixò 
 \ve GO(s) PA BO
@@ -63315,7 +63370,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \poc *sisi 'dÃ©cortiquer' (ex. cophrah)
-\dt 23/Mar/2010
+\dt 09/Jun/2015
 
 \lx tioy ???
 \is
@@ -63463,7 +63518,6 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Dec/2014
 
 \lx thiram
-\is société
 \is danse
 \dialx PA
 \va thiam
@@ -63478,7 +63532,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx thiraò 
 \is déplacement
@@ -63703,7 +63757,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 11/Nov/2014
 
 \lx trivwi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ph Êˆivwi
 \va tripwi
@@ -63721,7 +63775,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx tiivwo
 \is fonct.intell.
@@ -63779,8 +63833,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\et *nanaq
-\dt 03/Nov/2014
+\poc *nanaq
+\dt 09/Jun/2015
 
 \lx ti-xa ?
 \is grammaire_interrogatif
@@ -63821,7 +63875,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thixèè
-\is quantificateur
+\is grammaire_quantificateur
 \dialx GO(s)
 \va thaxee
 \ve PA
@@ -63847,7 +63901,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf thilò [GOs]
 \ce l'autre d'une paire
 \nt
-\dt 15/Jul/2007
+\dt 09/Jun/2015
 
 \lx thixèè mee-je
 \is santé
@@ -63879,7 +63933,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thixudi
-\is topographie
+\is configuration
 \dialx PA BO
 \va thivwudi
 \ve PA BO
@@ -63895,7 +63949,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf kudi
 \ce coin
 \nt
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx ti-yaai
 \is feu
@@ -63964,7 +64018,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx thiza
-\is sagaie
+\is armes
 \dialx GO(s)
 \va chira
 \ve
@@ -63977,10 +64031,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 21/Feb/2010
+\dt 09/Jun/2015
 
 \lx thizi
-\is action.corps
+\is action_corps
 \dialx GOs
 \ps v
 \ge essuyer (s') les fesses
@@ -63992,7 +64046,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx thizii
 \is corps
@@ -64101,10 +64155,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx tho
-\is liquide
+\is eau_action
 \hm 2
 \ph tÊ°o
-\dialx GO(s) PA BO
+\dialx GOs PA BO
 \ps v
 \ge couler (eau, sang); écouler (s')
 \re
@@ -64116,7 +64170,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn courant d'eau, fuite d'eau, cascade
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thò
 \is arbre
@@ -64133,7 +64187,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 20/Feb/2015
 
 \lx thò-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA BO
 \ps classificateur numérique  
 \ge classificateur: régimes de banane 
@@ -64144,7 +64198,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn un, deux, trois, quatre, cinq régimes de banane 
 \cf
 \ce
-\dt 19/Jul/2007
+\dt 09/Jun/2015
 
 \lx thô
 \dialx GO(s)
@@ -64471,7 +64525,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx throobwa
-\is plante
+\is plantes
 \dialx GO(s)
 \va thobwang
 \ve PA
@@ -64485,7 +64539,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \rgb
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 09/Jun/2015
 
 \lx thrõbwò
 \is temps
@@ -64505,7 +64559,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thò-chaamwa
-\is classificateur
+\is classificateur numérique
 \is bananes
 \dialx GO(s)
 \ph 'tÊ°É”-'tÊƒÊ°a:mwa
@@ -64521,7 +64575,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn un régime de bananes
 \cf
 \ce
-\dt 24/Jul/2011
+\dt 09/Jun/2015
 
 \lx thoda
 \is interaction
@@ -64802,7 +64856,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx throli
-\is cocotier
+\is arbre_cocotier
 \ph ÊˆÊ°oli
 \dialx GO(s)
 \ps n
@@ -64814,7 +64868,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 09/Mar/2010
+\dt 09/Jun/2015
 
 \lx tròòli phwayuu
 \is fonct.nat
@@ -64865,8 +64919,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thròlòe 
 \hm 1
-\is action_liquide
-\is action_fumée
+\is eau_action
 \dialx BO [Corne]
 \va tholee tolee
 \ve BO [Corne]
@@ -64879,11 +64932,11 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx thròlòe
 \hm 2
-\is action.corps
+\is action_corps
 \is mouvement
 \dialx GOs
 \va thòlòe
@@ -64912,7 +64965,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx thomã
 \is interaction
@@ -65009,10 +65062,11 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve GO(s)
 \ps n
 \ge tomate
+\bw FR tomate
 \re
 \gb
 \rgb
-\dt 11/Nov/2014
+\dt 04/Jun/2015
 
 \lx throo-mwa
 \is maison
@@ -65264,7 +65318,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx toro
-\is lézard
+\is reptile_lézard
 \dialx BO
 \ps n
 \ge gecko ; margouillat
@@ -65275,7 +65329,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf majo
 \ce
-\dt 09/Jun/2007
+\dt 09/Jun/2015
 
 \lx tròròvwuu
 \is sentiments
@@ -65325,14 +65379,14 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf toe
 \ce partager qqch.
 \sn 3
-\is classificateur
+\is classificateur numérique
 \ge aliments enveloppés dans des feuilles 
 \ge tas (distribué dans des cérémonies coutumières)
 \xv tou-xe, tou-tru
 \xn un, deux tas
 \xv içö tou-xe [GOs]
 \xn un tas pour toi
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx thou
 \is fonct.nat
@@ -65385,7 +65439,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thovwa
-\is forme
+\is caract.objet
 \dialx GO(s)
 \ph tÊ°oÎ²a
 \va thòva
@@ -65399,7 +65453,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn aplatis-le (lit. fais pour que ce soit plat)
 \cf
 \ce
-\dt 21/Nov/2014
+\dt 10/Jun/2015
 
 \lx throvwa
 \is anguille
@@ -65419,7 +65473,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 08/Jul/2007
 
 \lx thô-vwaa-ni
-\is action.objet
+\is action_mains
 \dialx GO(s)
 \ps v
 \ge rapiécer (lit. fermer le trou)
@@ -65432,7 +65486,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ce pièce (pour rapiécer)
 \cf phwa
 \ce trou
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx tòòwu ?? 
 \va thòòwu??
@@ -65493,7 +65547,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA BO
 \ps v
 \sn 1
-\is action.corps
+\is action_corps
 \ge cacher; dissimuler qqch
 \sn 2
 \is interaction
@@ -65512,11 +65566,11 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ce enterrer qqch.
 \cf ku-çaaxò
 \ce se cacher
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx töö
 \hm 1
-\is action.corps
+\is action_corps
 \is tressage
 \dialx GO(s) BO
 \ps v
@@ -65530,7 +65584,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \poc *tuRi(a)
-\dt 09/Nov/2014
+\dt 09/Jun/2015
 
 \lx töö
 \is mouvement
@@ -65559,7 +65613,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thöö
 \hm 1
-\is aspect
+\is grammaire_aspect
 \dialx PA
 \va tuu
 \ve BO
@@ -65573,7 +65627,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx thöö
 \is grammaire-réfléchi
@@ -65612,7 +65666,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx tööi 
-\is eau
+\is eau_action
 \dialx GO(s)
 \va tui 
 \ve WEM WE PA BO
@@ -65631,7 +65685,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge cuiller
 \cf khee we [GOs]
 \ce écoper
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thööni
 \is interaction
@@ -65665,7 +65719,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx trörö 
-\is lézard
+\is reptile_lézard
 \ph ÊˆoÊˆo, ÊˆoÉ½o
 \dialx GO(s)
 \va toro
@@ -65679,7 +65733,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf majo
 \ce lézard
-\dt 11/Mar/2010
+\dt 09/Jun/2015
 
 \lx tröxi 
 \is outils
@@ -65690,7 +65744,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ps n
 \ge hache (petite, en fer)
 \ge tamioc; fer
-\bw [empr. polynéÃ©sien PPN *toki herminette, hache]. 
+\bw POLYN. toki 
+\nt emprunt polynésien PPN *toki herminette, hache
 \re
 \gb adze, axe
 \rgb
@@ -65703,7 +65758,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \poc PPN *toki
-\dt 07/Nov/2014
+\dt 04/Jun/2015
 
 \lx tuu
 \is habitat
@@ -65777,7 +65832,6 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thuu
 \is maladie
-\is plantes
 \dialx GO(s) BO
 \ps v
 \ge gale
@@ -65790,10 +65844,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il a des plaques sur la tête
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx -tru
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph Êˆu
 \va -ru
@@ -65806,7 +65860,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \gb
 \rgb
 \poc *É–ua
-\dt 25/Feb/2010
+\dt 09/Jun/2015
 
 \lx truu
 \is pêche
@@ -65828,7 +65882,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thu ãbaa
-\is activité
+\is action
 \dialx GO(s)
 \va tho ãbaa-n
 \ve BO
@@ -65845,10 +65899,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx thu ai-n
-\is caract.animé
+\is caract
 \dialx PA
 \ps v
 \ge dressé (cheval, animal)
@@ -65863,10 +65917,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf kiya ai-n
 \ce pas dressé
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thu bwa
-\is caract.animé
+\is caract.
 \dialx GOs
 \ps v
 \ge entêté
@@ -65878,7 +65932,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thu bwahî
 \is interaction
@@ -65895,7 +65949,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thu êgo
-\is oiseau
+\is fonct.nat.animaux
 \dialx GO(s)
 \ps v
 \ge pondre
@@ -65910,7 +65964,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf khaabhi
 \ce pondre
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thu haal
 \is action
@@ -66019,7 +66073,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thu pi
-\is oiseau
+\is fonct.nat.animaux
 \hm 3
 \dialx PA BO [Corne]
 \ps v
@@ -66030,7 +66084,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thu phu
 \is maison
@@ -66089,7 +66143,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx thua
-\is caract.
+\is caract.animal
 \ph thwa thua
 \dialx GO(s) PA BO
 \ps v. statif
@@ -66105,7 +66159,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn cordyline sauvage
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx trûã
 \hm 2
@@ -66126,7 +66180,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xv nu trûã i je [GOs]
 \xn je lui ai joué un mauvais tour
 \sn 2 
-\is grammaire_comparatif
+\is grammaire_comparaison
 \ge comparatif 
 \xv nu powonu trûã nai çö [GOs]
 \xn je suis un tout petit peu plus petit que toi
@@ -66136,12 +66190,12 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn je suis un peu plus vieux que toi
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx thrûã
 \hm 1
-\is jeux
-\ph ÊˆÊ°uÌƒÉ›ÌƒÌƒ
+\is jeu
+\ph ÊˆÊ°uÌƒÉ›Ìƒ
 \dialx GO(s) 
 \ps n
 \ge jeu de ficelle (figure du)
@@ -66153,7 +66207,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx tua pwaala ???
 \is navigation
@@ -66188,8 +66242,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thu-ada
-\is caract.animé
-\hm 1
+\is caract.
+\hm
 \dialx GO(s) PA
 \ps n ; v
 \ge orgueil ; vouloir surpasser
@@ -66201,7 +66255,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ils sont en compétition, ils font de la surenchère
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx truãrôô
 \is insecte
@@ -66260,7 +66314,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Dec/2014
 
 \lx truuçi 
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ph Êˆu:dÊ’i  Êˆu:Ê’i
 \va tuuyi
@@ -66311,10 +66365,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge dix-huit
 \se tuuyi bwa pòni-ma-ba
 \sge dix-neuf
-\dt 08/Jul/2007
+\dt 09/Jun/2015
 
 \lx truuçi bwa pò-tru  
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \va tuuyi bwa pòru
 \ve PA
@@ -66328,10 +66382,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 06/Jun/2007
+\dt 09/Jun/2015
 
 \lx truuçi bwa pòxe
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \va tuuyi bwa pòxè
 \ve PA
@@ -66340,7 +66394,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \re
 \gb
 \rgb
-\dt 02/Jun/2007
+\dt 09/Jun/2015
 
 \lx tuuçò
 \is fonct.nat
@@ -66481,7 +66535,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx tûûne
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO 
 \ps v
 \ge essuyer
@@ -66494,10 +66548,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il s'essuie
 \xv nru tûûni-nru
 \xn je m'essuie
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx tuune ???
-\is action.corps
+\is action_corps
 \dialx BO [BM]
 \ps v
 \ge prendre et partir avec
@@ -66508,7 +66562,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx thu-phwãã
 \is cultures
@@ -66643,7 +66697,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx u
 \is position
 \is mouvement
-\is action.corps
+\is action_corps
 \hm 3
 \dialx GO(s) BO
 \ps v
@@ -66663,11 +66717,11 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge entre ! (latéralement)
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx u
 \hm 4
-\is grammaire
+\is grammaire_agent
 \dialx PA BO
 \va ku, xu, xo
 \ps marque d'agent ??
@@ -66682,7 +66736,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 17/Feb/2010
+\dt 10/Jun/2015
 
 \lx u
 \is mouvement
@@ -66707,7 +66761,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx û
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s)
 \ps n
 \ge spathe de cocotier
@@ -66719,7 +66773,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn fibre du cocotier
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx uu
 \is action.plantes
@@ -66755,7 +66809,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx u ru
-\is mode
+\is grammaire_temps
 \dialx WE PA
 \va u ru, ro
 \ps marque de futur
@@ -66771,7 +66825,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn il va pleuvoir
 \cf -ru
 \ce
-\dt 01/Mar/2010
+\dt 09/Jun/2015
 
 \lx ua
 \is igname
@@ -66830,7 +66884,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx ubòl
-\is action.corps
+\is action_corps
 \dialx PA BO [Corne]
 \ps n
 \ge détacher
@@ -66843,7 +66897,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx uça
 \is déplacement
@@ -66941,7 +66995,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx udi
 \is habillement
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \ps v
 \ge enlever (en général, vêtement, etc.)
@@ -66957,7 +67011,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn il enlève son chapeau
 \cf udale
 \ce mettre (vêtement)
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ûdo
 \is arbre
@@ -67130,7 +67184,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ge pauvre; indigent
 \re
 \sn 2
-\is modalité
+\is grammaire_modalité
 \ge inutile
 \ge gaspiller [BO]
 \re
@@ -67146,10 +67200,10 @@ supportant la charpente des cases rondes;  Dubois)
 \xn une mauvaise terre, terre laissée à l'abandon
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx ula
-\is action.corps
+\is action_corps
 \hm 1
 \dialx GO(s) BO
 \ps v.t.
@@ -67172,11 +67226,11 @@ supportant la charpente des cases rondes;  Dubois)
 \ce
 \nt
 \poc *PSO ura (Geraghty)
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx ula
 \hm 2
-\is classificateur 
+\is classificateur numérique
 \dialx GO(s) PA
 \ps classificateur
 \ge grappes de noix de coco
@@ -67187,7 +67241,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn une grappe de noix de coco
 \cf
 \ce
-\dt 29/Jun/2007
+\dt 09/Jun/2015
 
 \lx ula yai
 \is feu
@@ -67372,7 +67426,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ve WEM
 \va pwai
 \ve PA
-\et u 'fumer, souffler' + FR pipe
+\mr u 'fumer, souffler' + FR pipe
 \ps v
 \ge fumer (tabac)
 \re
@@ -67384,7 +67438,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ce souffler, fumer
 \cf hovo
 \ce chiquer
-\dt 03/Nov/2014
+\dt 09/Jun/2015
 
 \lx u-pwa, u-vwa
 \is déplacement
@@ -67435,7 +67489,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx urîni
 \is soin
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge frotter
@@ -67449,7 +67503,7 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx uva
 \is taro
@@ -67482,8 +67536,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 04/Mar/2010
 
 \lx uvo-ê
-\is canne-à-sucre
-\is cultures
+\is cultures_bouture
 \dialx GO(s) PA
 \ps n
 \ge bouture de canne à sucre
@@ -67494,11 +67547,11 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 07/Nov/2014
+\dt 10/Jun/2015
 
 \lx uvo-uva
 \is taro
-\is cultures
+\is cultures_bouture
 \dialx GO(s)
 \ps n
 \ge bouture de taro (pédoncule de taro muni d'une tige); pied de taro
@@ -67510,7 +67563,7 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \poc *upe 'plante'
-\dt 07/Nov/2014
+\dt 09/Jun/2015
 
 \lx uvulo ???
 \is arbre
@@ -67590,7 +67643,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 23/Sep/2008
 
 \lx uxi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge percer; faire des trous ; ronger
@@ -67603,10 +67656,10 @@ supportant la charpente des cases rondes;  Dubois)
 \sge perceuse à bois
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx uxo
-\is plante
+\is plantes
 \dialx GO
 \ps n
 \ge Crinum sp. (arbre??)
@@ -67618,7 +67671,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 07/Mar/2010
+\dt 09/Jun/2015
 
 \lx uza
 \is interaction
@@ -67651,13 +67704,13 @@ supportant la charpente des cases rondes;  Dubois)
 \xv e uzi ce
 \xn il enlèvre les fibres en lissant la tige
 \sn 2
-\is bois
+\is bois_travail
 \ge raboter ; lisser
 \xv e uzi ce
 \xn il rabote / lisse le bout de bois
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 10/Jun/2015
 
 \lx uzi
 \is action
@@ -67677,7 +67730,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 25/Dec/2014
 
 \lx uzi cii
-\is plantes_bois
+\is action_mains 
 \dialx GO(s)
 \ps v 
 \ge écorcer une tige (en lissant avec un couteau)
@@ -67692,10 +67745,10 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx uzi dròò
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va uli doo
 \ve PA
@@ -67708,7 +67761,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx va
 \hm 1
@@ -67818,10 +67871,11 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx vaaci
 \is emprunt
-\is animaux
+\is mammifères
 \dialx PA BO WEM
 \ps n
 \ge bétail ; vache
+\bw FR vache
 \re
 \gb
 \rgb
@@ -67829,10 +67883,10 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx vajama
-\is société
+\is discours
 \ph va'ndjama
 \dialx GO(s) PA BO
 \va fhajama
@@ -67846,7 +67900,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx vala ??? vhaa la
 \dialx PA
@@ -67989,6 +68043,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx PA
 \ps n
 \ge véranda
+\bw FR véranda
 \re
 \gb
 \rgb
@@ -68000,10 +68055,10 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 04/Jun/2015
 
 \lx varû
-\is action.main
+\is action_mains
 \dialx BO [BM]
 \ps v
 \ge tripoter
@@ -68018,10 +68073,10 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx vauma
-\is pierre
+\is terrain_pierre
 \dialx GOs BO
 \ps n
 \ge pierre-ponce
@@ -68032,7 +68087,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx vaxaròò
 \is mer
@@ -68083,6 +68138,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dialx GO(s)
 \ps n
 \ge verre; vitre
+\bw FR verre
 \re
 \gb
 \rgb
@@ -68090,7 +68146,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 04/Jun/2015
 
 \lx vèlè
 \is maison
@@ -68141,11 +68197,10 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 03/Nov/2014
 
 \lx vijang
-\is coutume
 \dialx PA BO
 \ps n
 \sn 1
-\is configuration
+\is coutumes_objet
 \ge bouquet de fibres (accrochés à un piquet pour marquer un interdit ou montrer qu'une plante est réservée)
 \re
 \sn 2
@@ -68161,7 +68216,7 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx vhiliçô
 \is maladie
@@ -68275,7 +68330,6 @@ supportant la charpente des cases rondes;  Dubois)
 \hm 2
 \is grammaire_IS
 \dialx GO(s)
-\et forme courte de nrovwö ??
 \ps thématisation
 \ge quant à 
 \re
@@ -68288,8 +68342,8 @@ supportant la charpente des cases rondes;  Dubois)
 \un
 \cf
 \ce
-\nt
-\dt 20/Feb/2015
+\nt forme courte de nrovwö
+\dt 09/Jun/2015
 
 \lx wa
 \hm 1
@@ -68300,7 +68354,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ve WEM
 \ps n
 \sn 1
-\is cordage
+\is cordes
 \ge corde (général) ; ficelle; lien
 \ge liane ; lien
 \re
@@ -68336,7 +68390,7 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \poc *uRat
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx wa
 \is fonct.nat
@@ -68363,7 +68417,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 19/Dec/2014
 
 \lx -wa
-\is grammaire
+\is grammaire_relateur
 \dialx GO(s)
 \va -a
 \ve GO(s) BO PA
@@ -68385,7 +68439,7 @@ supportant la charpente des cases rondes;  Dubois)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx waa
 \is action.tête
@@ -68429,7 +68483,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 23/Dec/2014
 
 \lx wha
-\is plante
+\is plantes
 \dialx GO(s) PA BO 
 \hm 1
 \ps n
@@ -68444,7 +68498,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn l'écorce du figuier
 \cf
 \ce
-\dt 25/Jun/2007
+\dt 09/Jun/2015
 
 \lx wha 
 \hm 2
@@ -68499,7 +68553,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx whaa
 \hm 1
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s) BO
 \ps v
 \ge grand; gros ; grandir; croître; pousser (en long)
@@ -68512,7 +68566,7 @@ supportant la charpente des cases rondes;  Dubois)
 \at petit
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx whaa
 \hm 2
@@ -68623,9 +68677,9 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 25/Feb/2010
 
 \lx wa-bile
-\is cordage
+\is cordes
 \dialx GO(s) BO PA
-\ps v
+\ps n ; v
 \ge toron (roulé sur la cuisse) ; fil de filet
 \ge faire un toron (roulé sur la cuisse)
 \re
@@ -68635,7 +68689,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 09/Jun/2015
 
 \lx wabwa
 \is arbre
@@ -68655,7 +68709,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 11/Jul/2007
 
 \lx wa-bwanu
-\is coutumes
+\is coutumes_objet
 \dialx PA BO
 \ps n
 \ge ceinture d'écorce (tressée de 3 brins de paille ou de feuilles de pandanus; signe de
@@ -68667,7 +68721,7 @@ départ en guerre. Dubois ms)
 \rgb
 \cf
 \ce
-\dt 21/Feb/2010
+\dt 10/Jun/2015
 
 \lx wa-bwèèdrò
 \is habillement
@@ -68712,7 +68766,7 @@ départ en guerre. Dubois ms)
 \dt 25/Feb/2010
 
 \lx wa-cama 
-\is plante
+\is plantes
 \ph wacama
 \dialx GO(s)
 \ps n
@@ -68724,7 +68778,7 @@ départ en guerre. Dubois ms)
 \xn
 \cf
 \ce
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx waaçu
 \is interaction
@@ -69010,7 +69064,6 @@ départ en guerre. Dubois ms)
 \dt 20/Feb/2015
 
 \lx whãi
-\is société
 \is danse
 \dialx GOs
 \ps n
@@ -69022,7 +69075,7 @@ départ en guerre. Dubois ms)
 \xn danse pour le deuil du petit chef
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 10/Jun/2015
 
 \lx waajô
 \is interaction
@@ -69127,7 +69180,7 @@ départ en guerre. Dubois ms)
 \dt 19/Dec/2014
 
 \lx wala
-\is caract.objet
+\is caract.objet_taille
 \dialx GO(s)
 \ps v. statif
 \ge large
@@ -69137,7 +69190,7 @@ départ en guerre. Dubois ms)
 \xn
 \an pibhizai
 \at Ã©troit
-\dt 21/Nov/2014
+\dt 09/Jun/2015
 
 \lx whala-
 \is classificateur nourriture
@@ -69262,7 +69315,7 @@ départ en guerre. Dubois ms)
 \dt 23/Nov/2014
 
 \lx wa-mãgiça
-\is lien
+\is cordes
 \ph mÉ›ÌƒÌƒgiÊ’a
 \hm 1
 \dialx GO(s)
@@ -69275,7 +69328,7 @@ départ en guerre. Dubois ms)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx wha-maama
 \is parenté
@@ -69351,7 +69404,7 @@ départ en guerre. Dubois ms)
 \dt 25/Dec/2014
 
 \lx wame ni
-\is direction
+\is grammaire_direction
 \dialx GO(s)
 \ps locatif
 \ge environs (aux) de ; vers
@@ -69366,7 +69419,7 @@ départ en guerre. Dubois ms)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx wame ti?
 \is grammaire_interrogatif
@@ -69438,7 +69491,7 @@ départ en guerre. Dubois ms)
 
 \lx wan- 
 \hm 5
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA BO
 \ps classificateur numérique des lots cérémoniels  
 \ge un lot de 2 roussettes ou notous 
@@ -69451,7 +69504,7 @@ wa-truci (20)
 \xn
 \cf
 \ce
-\dt 20/Jul/2007
+\dt 09/Jun/2015
 
 \lx wãã-na
 \is action
@@ -69469,7 +69522,7 @@ wa-truci (20)
 \dt 25/Dec/2014
 
 \lx wa-na ?? wame na??
-\is modalité
+\is grammaire_modalité
 \dialx PA
 \ps modalité
 \ge peut-être; et si ?
@@ -69489,7 +69542,7 @@ wa-truci (20)
 \cf
 \ce
 \nt
-\dt 05/Mar/2010
+\dt 09/Jun/2015
 
 \lx waang
 \is temps
@@ -69698,7 +69751,7 @@ wa-truci (20)
 \dt 15/Jul/2007
 
 \lx waat
-\is plante
+\is plantes
 \dialx BO (Corne)
 \ps n
 \ge Triumfetta rhomboïdea
@@ -69710,7 +69763,7 @@ wa-truci (20)
 \xn
 \cf
 \ce
-\dt 11/Jul/2007
+\dt 09/Jun/2015
 
 \lx wathrã
 \is coutumes
@@ -69743,7 +69796,7 @@ wa-truci (20)
 \dt 01/Jun/2007
 
 \lx wa-tru
-\is numéral
+\is grammaire_numéral
 \ph waÊˆu
 \dialx GO(s)
 \ps numéral (pour certains types de dons coutumiers
@@ -69756,10 +69809,10 @@ qui se comptent par deux) Bretteville
 \xn
 \cf
 \ce
-\dt 05/Jul/2006
+\dt 09/Jun/2015
 
 \lx wa-tru ko ido
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \ps numéral numéral (pour certains types de dons coutumiers qui
 se comptent par deux)
@@ -69771,11 +69824,11 @@ se comptent par deux)
 \xn
 \cf
 \ce
-\dt 05/Jul/2006
+\dt 09/Jun/2015
 
 \lx wa-truuji
 \hm 2
-\is numéral
+\is grammaire_numéral
 \dialx GO
 \ps numéral (pour certains types de dons coutumiers qui se comptent par deux)
 \ge vingt
@@ -69786,7 +69839,7 @@ se comptent par deux)
 \xn
 \cf
 \ce
-\dt 19/Jun/2007
+\dt 09/Jun/2015
 
 \lx whau
 \is corps
@@ -69871,7 +69924,7 @@ se comptent par deux)
 
 \lx wa-xè
 \hm 1
-\is numéral
+\is grammaire_numéral
 \dialx GO(s)
 \ps classificateur numérique
 \ge un
@@ -69882,11 +69935,11 @@ se comptent par deux)
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx wa-xè
 \hm 2
-\is classificateur
+\is classificateur numérique
 \dialx GOs PA
 \ps numéral (pour certains types de dons coutumiers qui se comptent par deux)
 \ge une paire (roussettes, etc.)
@@ -69897,7 +69950,7 @@ se comptent par deux)
 \xn une paire de roussettes
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx whaya ?
 \is grammaire_interrogatif
@@ -69952,7 +70005,7 @@ se comptent par deux)
 \dt 20/Feb/2015
 
 \lx waza
-\is classificateur
+\is classificateur possessif
 \dialx GO(s)
 \va wala, whala
 \ve PA WE
@@ -69965,7 +70018,7 @@ se comptent par deux)
 \xn ma canne à sucre (à manger)
 \cf wa, wizi
 \ce manger de la canne à sucre
-\dt 03/Jun/2007
+\dt 09/Jun/2015
 
 \lx wazale kòò
 \is action_corps
@@ -70069,7 +70122,7 @@ se comptent par deux)
 \dt 04/Nov/2014
 
 \lx we
-\is éléments_eau
+\is eau
 \dialx GO(s) PA BO
 \hm 1
 \ps n
@@ -70118,10 +70171,10 @@ se comptent par deux)
 \cf
 \ce
 \poc *wai(R)
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we
-\is plante
+\is plantes_partie
 \hm 2
 \dialx GO(s) PA 
 \va wèè-n
@@ -70140,10 +70193,10 @@ se comptent par deux)
 \cf wal, wa
 \ce racine
 \poc *wakaR
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we-
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) PA BO
 \ps classificateur numérique des objets longs
 \ge classificateur: objets longs (voiture, bateau, arbre couché, poteau), année, mois ; chants
@@ -70156,7 +70209,7 @@ se comptent par deux)
 \xn deux jours
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx we bumî ??
 \is habillement
@@ -70247,7 +70300,7 @@ se comptent par deux)
 \dt 23/Dec/2014
 
 \lx we-bwaxixi
-\is outil
+\is outils
 \dialx GO(s)
 \va we-bwaxii
 \ve GO(s)
@@ -70262,10 +70315,10 @@ se comptent par deux)
 \ce miroir
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-cabo
-\is liquide_eau
+\is eau
 \dialx GO(s)
 \va we-cabòl
 \ve PA
@@ -70278,10 +70331,10 @@ se comptent par deux)
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-ce
-\is plante
+\is plantes_partie
 \dialx GO(s) BO PA
 \ps n
 \ge sève
@@ -70292,7 +70345,7 @@ se comptent par deux)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we-co
 \is corps
@@ -70426,7 +70479,7 @@ se comptent par deux)
 \dt 23/Dec/2014
 
 \lx weem
-\is coutumes
+\is coutumes_objet
 \dialx PA BO 
 \ps n
 \ge monnaie (de moins grande valeur que 'yòò', faite de coquillages blancs, offerte attachée à un rameau de niaoulis ou de bananier. 
@@ -70438,7 +70491,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \xn
 \cf pwamwanu; dopweza; yòò
 \ce
-\dt 29/May/2007
+\dt 10/Jun/2015
 
 \lx we-mebo, mebo
 \is nourriture
@@ -70459,7 +70512,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \dt 23/Dec/2014
 
 \lx we-mèèn
-\is éléments_eau
+\is eau
 \dialx PA
 \ps n
 \ge eau légèrement salée ; eau saumâtre
@@ -70474,7 +70527,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \cf mèèn
 \ce salé (cuisine)
 \nt
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx weenra 
 \is fonct.intell.
@@ -70500,7 +70553,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \dt 23/Nov/2014
 
 \lx we-nre
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \va we-nèm
 \ve BO PA
@@ -70513,7 +70566,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx wêne
 \is interaction
@@ -70546,7 +70599,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \dt 04/Nov/2014
 
 \lx we-nri 
-\is numéral
+\is grammaire_numéral
 \ph weÉ³i
 \dialx GO(s)
 \ps numéral ordinal
@@ -70560,10 +70613,10 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \sge sixième
 \se wenri ma dru
 \sge septième
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-ni ma du
-\is numéral
+\is grammaire_numéral
 \dialx BO
 \ps numéral
 \ge 7 choses longues
@@ -70575,7 +70628,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \cf
 \ce
 \nt
-\dt 18/Feb/2010
+\dt 09/Jun/2015
 
 \lx weni-do ???
 \dialx BO
@@ -70613,7 +70666,7 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \dt 21/Dec/2014
 
 \lx we-no
-\is étapes_vie
+\is étapes.vie
 \dialx PA
 \ps v
 \ge pendre (se)
@@ -70626,10 +70679,10 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-nru
-\is cocotier
+\is arbre_cocotier
 \dialx GO(s) BO
 \ps n
 \ge eau de coco ; coco à boire
@@ -70640,12 +70693,11 @@ Autre nom de cette monnaie 'hègi pulo'). (Dubois : 1 weem de 5 m vaut 100 fr). H
 \xn
 \cf nru-we
 \ce coco vert
-\dt 19/Feb/2010
+\dt 09/Jun/2015
 
 \lx wepòò
-\is coutumes
+\is coutumes_objet
 \dialx PA BO
-\et we-pòò 'racine de bourao'
 \ps n
 \ge ceinture de femme (Charles : en racine de bourao; sert de monnaie à bas prix, offertes roulées.  
 Dubois ms : faisait plusieurs fois le tour du bassin.)
@@ -70656,7 +70708,8 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \xn
 \cf pobil, thabil
 \ce ceinture de femme (monnaie)
-\dt 21/Feb/2010
+\nt Litt. we-pòò 'racine de bourao'
+\dt 10/Jun/2015
 
 \lx we-pò-ce
 \is nourriture
@@ -70677,7 +70730,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \dt 19/Dec/2014
 
 \lx we-phölo
-\is éléments_eau
+\is eau
 \ph 'we-'vwolo
 \dialx GO(s)
 \va we-vwölo
@@ -70691,7 +70744,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \xn
 \cf phöloo
 \ce sale, trouble
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we-phwa
 \is fonct.nat
@@ -70743,7 +70796,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \dt 22/Dec/2014
 
 \lx we-trabwa
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \va we-tabwa
 \ve BO
@@ -70756,7 +70809,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we-thi
 \is corps
@@ -70789,7 +70842,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \dt 25/Dec/2014
 
 \lx we-tho
-\is éléments_eau
+\is eau
 \dialx GO(s) BO
 \ps n
 \ge eau vive (lit. eau qui coule)
@@ -70800,7 +70853,7 @@ Dubois ms : faisait plusieurs fois le tour du bassin.)
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx we-thrôbo
 \is eau
@@ -70821,7 +70874,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 23/Dec/2014
 
 \lx we-tru
-\is éléments_eau
+\is eau
 \dialx GO(s)
 \ps n
 \ge eau monte et coule (après une forte pluie)
@@ -70832,10 +70885,10 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx wèè-uva
-\is plante_taro
+\is taro
 \dialx GO(s) BO
 \ps n
 \ge racines du taro d'eau
@@ -70848,7 +70901,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \sge racines du taro de montagne
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-vhaa
 \is discours
@@ -70883,7 +70936,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 23/Dec/2014
 
 \lx wè-xèè
-\is classificateur
+\is classificateur numérique
 \dialx GO(s) BO
 \ps classificateur numéral (bois, arbres, certaines racines comestibles, cordes ; objets longs  sagaies, doigts ) 
 \ge un (objet long)
@@ -70902,7 +70955,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn combien de bateaux as-tu vus ?  - juste un seul bateau - j'ai vu 2 bateaux
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx wè-xè hii-je
 \is corps
@@ -70920,7 +70973,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 11/Nov/2014
 
 \lx weya ??
-\is action.corps
+\is action_corps
 \dialx BO [Corne]
 \ps v
 \ge fouiller (dans les affaires des autres) ; se mêler (de ce qui ne vous regarde pas)
@@ -70931,7 +70984,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn indiscret
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx we-yaai
 \is matière
@@ -70986,7 +71039,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 25/Dec/2014
 
 \lx weze nrõ
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge étrangler (serrer le cou)
@@ -71001,7 +71054,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx we-zume
 \is fonct.nat
@@ -71120,7 +71173,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 
 \lx whili
 \is déplacement
-\is action.corps
+\is action_corps
 \hm 2
 \dialx GO(s) WEM BO PA 
 \ph whÉ¨lÉ¨
@@ -71144,7 +71197,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn il a mené ce travail
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx wili huli ??
 \is déplacement
@@ -71186,7 +71239,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 07/Nov/2014
 
 \lx wizi
-\is action.corps
+\is action_corps
 \dialx GOs
 \va wili
 \ve PA
@@ -71202,7 +71255,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \cf
 \ce
 \nt
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx whizi  
 \hm 2
@@ -71302,7 +71355,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 04/Nov/2014
 
 \lx wo-ce
-\is cultures
+\is cultures_objet
 \dialx GO(s)
 \ps n
 \ge épieu
@@ -71313,7 +71366,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn
 \cf
 \ce
-\dt 03/Jun/2007
+\dt 10/Jun/2015
 
 \lx wô-ce
 \is navigation
@@ -71418,7 +71471,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 19/Dec/2014
 
 \lx whòi
-\is action.corps
+\is action_corps
 \dialx GO(s) PA
 \ps v
 \ge fouiller (dans un sac, une poche)
@@ -71429,7 +71482,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn fouille dans le sac !
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx wônre
 \is déplacement
@@ -71543,7 +71596,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 19/Dec/2014
 
 \lx wòòzi
-\is plante
+\is plantes
 \dialx GO(s)
 \ph wÉ”:Ã°i
 \va wooli
@@ -71561,21 +71614,25 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn
 \cf
 \ce
-\dt 18/Mar/2010
+\dt 09/Jun/2015
 
 \lx wòzò
-\is cultures
-\is coutumes
 \dialx GO(s)
 \va wòlò
 \ve PA BO
 \va wojò
 \ve BO
 \ps n
+\sn 1
+\is cultures_objet
 \ge épieu de culture; bâton à fouir; "barre-à-mine"
 \re
 \gb digging stick
 \rgb
+\xv wòlò-ny wò-ce [PA]
+\xn mon épieu en bois (par opposition à la barre à mine)
+\sn 2
+\is coutumes_objet
 \ge perche sacrée du champ d'igname (destinée à favoriser la récolte et protéger les plantations)
 \re
 \gb
@@ -71586,7 +71643,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \xn mon épieu en bois (par opposition à la barre à mine)
 \cf
 \ce
-\dt 04/Nov/2014
+\dt 10/Jun/2015
 
 \lx wòzõõ
 \is maladie
@@ -71851,7 +71908,7 @@ Mwani-mi ?
 \dt 20/Feb/2010
 
 \lx -xè
-\is numéral
+\is grammaire_numéral
 \va po-xe
 \ve GO PA BO
 \ps numéral
@@ -71861,7 +71918,7 @@ Mwani-mi ?
 \rgb
 \xv
 \xn
-\dt 05/Jul/2006
+\dt 09/Jun/2015
 
 \lx xhii 
 \is oiseau
@@ -71882,7 +71939,7 @@ Mwani-mi ?
 
 \lx xo
 \hm 1
-\is grammaire
+\is grammaire_agent
 \dialx GO(s) PA
 \va ko, go
 \ve GO(s)
@@ -71939,7 +71996,7 @@ Mwani-mi ?
 \xn le couteau que Jean a acheté
 \cf
 \ce
-\dt 04/Mar/2010
+\dt 10/Jun/2015
 
 \lx xo
 \is grammaire_conjonction
@@ -71980,7 +72037,7 @@ Mwani-mi ?
 
 \lx xo
 \hm 4
-\is gramm
+\is grammaire
 \dialx GO(s)
 \va vwo
 \ve GO(s)
@@ -72009,7 +72066,7 @@ Mwani-mi ?
 \xn nous nous efforçons de chercher comment gagner de l'argent
 \cf
 \ce
-\dt 12/Feb/2010
+\dt 09/Jun/2015
 
 \lx ya
 \is discours
@@ -72028,7 +72085,7 @@ Mwani-mi ?
 \dt 23/Dec/2014
 
 \lx ya-
-\is éléments_lumière
+\is lumière
 \dialx GO(s)
 \ps n
 \ge lumière (en composition)
@@ -72049,7 +72106,7 @@ Mwani-mi ?
 \cf yaai 
 \ce feu, lumière
 \nt
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx yabo
 \is plantes
@@ -72171,7 +72228,7 @@ Mwani-mi ?
 \dt 24/Feb/2010
 
 \lx yage
-\is action.corps
+\is action_corps
 \dialx GO(s) BO
 \ps v
 \ge ramasser (sable, feuilles, etc.); enlever
@@ -72182,7 +72239,7 @@ Mwani-mi ?
 \xn j'enlève les cendres de la maison
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx yago
 \is crustacé
@@ -72246,8 +72303,9 @@ Mwani-mi ?
 \is instrument
 \dialx GO(s) PA BO
 \ps n
-\mr yai-khaa 
-\ge lampe-torche (électrique; lit. feu-appuyer)
+\ge lampe-torche (électrique)
+\re
+\nt yai (feu), khaa (appuyer)
 \re
 \gb
 \rgb
@@ -72255,10 +72313,10 @@ Mwani-mi ?
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 04/Jun/2015
 
 \lx yhal
-\is société
+\is discours
 \dialx PA
 \ps v
 \ge nommer
@@ -72273,10 +72331,10 @@ Mwani-mi ?
 \sge donner un nom
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx yala
-\is action_ustensile
+\is eau_action
 \hm 1
 \dialx GO(s) PA
 \ps v
@@ -72288,7 +72346,7 @@ Mwani-mi ?
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx yhala
 \is nourriture
@@ -72305,7 +72363,7 @@ Mwani-mi ?
 \dt 23/Dec/2014
 
 \lx yali
-\is action.corps
+\is action_corps
 \dialx PA BO [BM]
 \ps v
 \ge écoper
@@ -72318,7 +72376,7 @@ Mwani-mi ?
 \xn il vide/écope l'eau
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx yaali
 \is caract.personne
@@ -72336,7 +72394,7 @@ Mwani-mi ?
 
 \lx yhalo
 \hm 2
-\is coutumes
+\is coutumes_objet
 \dialx PA
 \ps n
 \ge monnaie kanak (de valeur moindre que yòò et weem; mais de valeur équivalente à pwãmwãnu). 
@@ -72349,7 +72407,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \xn
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 10/Jun/2015
 
 \lx yaloxa
 \is nourriture
@@ -72472,8 +72530,8 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 20/Feb/2015
 
 \lx yaoli
-\is action.corps
-\is jeux
+\is action_corps
+\is jeu
 \dialx PA WEM
 \va yauli
 \ve BO
@@ -72491,7 +72549,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 09/Jun/2015
 
 \lx yaòlò
 \is coutumes
@@ -72567,7 +72625,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 11/Nov/2014
 
 \lx yatre
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va yare, yaare
 \ve GO BO
@@ -72583,7 +72641,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \cf
 \ce
 \poc *asu 'scoop, ladle out, laddle, bailer' (Blust) moi
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx yaawa
 \is sentiments
@@ -72620,7 +72678,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 23/Nov/2014
 
 \lx yaweeni
-\is action.corps
+\is action_corps
 \dialx GOs
 \ps verbe
 \ge étaler (sable)
@@ -72632,7 +72690,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx yawi 
 \is fonct.nat
@@ -72733,7 +72791,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 21/Dec/2014
 
 \lx yaze
-\is action_eau
+\is eau_action
 \dialx GO(s)
 \ps v
 \ge asperger; projeter (eau, boue avec les
@@ -72745,7 +72803,7 @@ mains); arroser (avec la main)
 \xn
 \cf pa-tã
 \ce gicler
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx yaaze
 \is maison
@@ -72767,7 +72825,7 @@ mains); arroser (avec la main)
 \dt 14/Feb/2010
 
 \lx yazoo
-\is action.corps
+\is action_corps
 \ph yaÃ°o: 
 \hm 1
 \dialx GOs
@@ -72796,7 +72854,7 @@ mains); arroser (avec la main)
 \gt affûÃ»ter qqch
 \poc *asa; *i-asa(q) 'grater' (Blust) moi
 \poc *solo, *asa(q)
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx ye
 \is grammaire_IS
@@ -72816,7 +72874,7 @@ mains); arroser (avec la main)
 \dt 23/Dec/2014
 
 \lx -ye
-\is pronom
+\is grammaire_pronom
 \ps pronom objet ou possessif 3° singulier
 \ge le ; la ; son ; sa ; ses
 \re
@@ -72826,10 +72884,10 @@ mains); arroser (avec la main)
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx yeege
-\is action.corps
+\is action_corps
 \dialx PA
 \ps v
 \ge prendre (sable, terre)
@@ -72842,7 +72900,7 @@ mains); arroser (avec la main)
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Jun/2015
 
 \lx yevwa
 \is temps
@@ -72908,7 +72966,7 @@ mains); arroser (avec la main)
 \dt 04/Jul/2007
 
 \lx yo
-\is pronom
+\is grammaire_pronom
 \dialx PA BO
 \va yu
 \ve GO
@@ -72924,7 +72982,7 @@ mains); arroser (avec la main)
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx yòò
 \hm 1
@@ -72953,7 +73011,7 @@ sur une branche de bois de fer
 
 \lx yòò
 \hm 2
-\is coutumes
+\is coutumes_objet
 \dialx PA BO 
 \ps n
 \ge monnaie (Charles : monnaie du chef, fine et noire, de haute valeur, offerte attachée à un rameau de bois de fer, d'où le nom ; 
@@ -72965,7 +73023,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \xn
 \cf pwãmwãnu; weem; dopweza
 \ce
-\dt 11/Jul/2007
+\dt 10/Jun/2015
 
 \lx yhò
 \hm 1
@@ -72985,7 +73043,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dt 20/Jul/2007
 
 \lx yoi
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge ramasser (des objets qui traînent)
@@ -72996,7 +73054,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \xn
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx yomaeo
 \is taro
@@ -73029,7 +73087,8 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dt 23/Dec/2014
 
 \lx yöö
-\is action.corps
+\is action_corps
+\is action_corps_animaux
 \dialx GOs PA
 \ps v
 \ge ramper (serpent, lézard, lianes sur les arbres ou sur les tuteurs)
@@ -73042,7 +73101,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \cf
 \ce
 \poc *kalo
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx yölae
 \is action_mains
@@ -73162,7 +73221,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dt 09/Nov/2014
 
 \lx za
-\is nourriture
+\is nourriture_goût
 \hm 2
 \ph Ã°a
 \dialx GO(s) PA
@@ -73179,7 +73238,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \xn eau salée
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx za
 \hm 3
@@ -73216,7 +73275,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 
 \lx za
 \hm 3
-\is intensificateur
+\is grammaire_intensificateur
 \ph Ã°a
 \dialx GO(s) BO
 \va ra 
@@ -73241,7 +73300,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \cf
 \ce
 \nt Dubois
-\dt 12/Feb/2010
+\dt 09/Jun/2015
 
 \lx za
 \hm 3
@@ -73299,7 +73358,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dt 21/Dec/2014
 
 \lx -za
-\is pronom
+\is grammaire_pronom
 \dialx PA BO
 \va -ya
 \ve BO
@@ -73312,7 +73371,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx zaa
 \hm 1
@@ -73406,7 +73465,7 @@ pour les replanter.
 \dt 25/Dec/2014
 
 \lx za xa
-\is grammaire
+\is grammaire_aspect
 \dialx GO(s)
 \va xa
 \ve GO(s)
@@ -73421,7 +73480,7 @@ pour les replanter.
 \xn quand Jae est à nouveau fatigué : "canard, je suis fatigué"
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx zaba
 \is discours
@@ -73562,7 +73621,7 @@ pour les replanter.
 \dt 23/Dec/2014
 
 \lx zaae
-\is action_plantes
+\is action.plantes
 \dialx GO(s) PA
 \va zhae
 \ve GO(s) 
@@ -73576,7 +73635,7 @@ pour les replanter.
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx zagaò
 \is cultures
@@ -73801,7 +73860,7 @@ pour les replanter.
 \dt 19/Dec/2014
 
 \lx zali
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \va zhali
 \ve GA
@@ -73826,10 +73885,10 @@ pour les replanter.
 \xn il ramasse le filet
 \cf zaa phwa [PA]
 \ce préparer les champs d'igname
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx zaalo
-\is plante
+\is plantes
 \dialx GO(s) PA BO
 \va zhaalo
 \ve GO(s) 
@@ -73845,7 +73904,7 @@ pour les replanter.
 \xn
 \cf
 \ce
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx zaaloè
 \is action
@@ -73894,7 +73953,7 @@ pour les replanter.
 \dt 25/Dec/2014
 
 \lx zano
-\is coutume
+\is coutumes
 \dialx PA
 \ps n
 \ge herbe (contexte cérémoniel uniquement)
@@ -73906,7 +73965,7 @@ pour les replanter.
 \cf
 \ce
 \nt
-\dt 22/Feb/2010
+\dt 09/Jun/2015
 
 \lx zanyi
 \is nourriture
@@ -74021,10 +74080,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve BO
 \ps n ; v
 \sn 1
-\is outil
+\is outils
 \ge fourche (trident) [GO(s)]
 \sn 2
-\is outil
+\is outils
 \ge pelle à fouir les ignames (en bois ou fer) ; bêche [PA, BO]
 \sn 3
 \is cultures
@@ -74036,7 +74095,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn
 \cf
 \ce
-\dt 23/Nov/2014
+\dt 09/Jun/2015
 
 \lx zatri
 \is médecine
@@ -74080,7 +74139,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 06/Jun/2007
 
 \lx zava
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph Ã°ava
 \va za
@@ -74095,10 +74154,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \cf
 \ce izava
 \nt pronom indépendant
-\dt 25/Dec/2014
+\dt 09/Jun/2015
 
 \lx -zava 
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph Ã°ava
 \ps pronom objet ou possessif 1° plur. exclusif
@@ -74108,10 +74167,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \rgb
 \xv
 \xn
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx zawa
-\is pronom
+\is grammaire_pronom
 \dialx GO(s)
 \ph Ã°awa
 \ps pronom sujet 2°  pluriel
@@ -74123,10 +74182,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx -zawa
-\is pronom
+\is grammaire_pronom
 \dialx GO
 \ph Ã°awa
 \ps pronom objet ; possessif 2° pluriel
@@ -74134,7 +74193,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \re
 \gb
 \rgb
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx zaawanre
 \hm 1
@@ -74155,7 +74214,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx zaawanre
 \hm 2
-\is plantes
+\is plantes_processus
 \dialx GOs
 \ps v
 \ge presque mûr
@@ -74167,7 +74226,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 10/Jun/2015
 
 \lx zawe
 \is tubercule_igname
@@ -74310,7 +74369,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 05/Jul/2006
 
 \lx zeenrô
-\is plantes
+\is plantes_processus
 \dialx GO(s) PA BO
 \va zheenô
 \ve GA
@@ -74333,7 +74392,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \at pas encore mÃ»r (contraire de zeenÃ´)
 \an mii
 \at mûÃ»r (contraire de bu)
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx zii
 \is habillement
@@ -74368,7 +74427,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 04/Nov/2014
 
 \lx zinre 
-\is animaux
+\is mammifères
 \dialx GO(s)
 \ph Ã°ine
 \va zhine 
@@ -74380,7 +74439,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \re
 \cf ciibwin [BO PA]
 \ce rat
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx zixô 
 \is discours
@@ -74422,13 +74481,13 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve BO
 \ps v.statif
 \sn 1
-\is qualité
+\is caract.
 \ge bien ; bon
 \sn 2
-\is caract.objet
+\is caract.
 \ge propre
 \sn 3
-\is modalité
+\is grammaire_modalité
 \ge pouvoir; falloir ; devoir
 \gb
 \rgb
@@ -74447,7 +74506,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \gr forme transitive : Vt-zooni, Vt-yooni
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx zo
 \is temps
@@ -74486,7 +74545,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx zò
 \hm 1
-\is pronom
+\is grammaire_pronom
 \dialx PA
 \ps 2° pluriel sujet ou objet ou possessif
 \ge vous, votre (plur)
@@ -74498,7 +74557,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn
 \cf
 \ce
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx zò
 \is maladie
@@ -74542,7 +74601,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx zòò
 \hm 2
-\is action.corps
+\is action_corps
 \dialx GO(s) 
 \va zhòò
 \ve GO(s) 
@@ -74558,7 +74617,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \gb swim
 \rgb
 \poc *ka(ou), *kakaumu (Grace)
-\dt 20/Feb/2015
+\dt 09/Jun/2015
 
 \lx zòò
 \hm 3
@@ -74661,7 +74720,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 21/Feb/2010
 
 \lx zoe
-\is action.corps
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge attacher (lacet, vêtement)
@@ -74672,7 +74731,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 09/Jun/2015
 
 \lx zòi
 \dialx GO(s) PA BO
@@ -74681,10 +74740,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve GO(s) 
 \ps v.t.
 \sn 1
-\is bois
+\is bois_travail
 \ge scier
 \sn 2
-\is action.corps
+\is action_corps
 \ge couper (se)
 \ge couper (viande)
 \re
@@ -74696,7 +74755,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \sge scie (à bois), tronçonneuse
 \se ba-zo-go-tuxi
 \sge scie (à métaux)
-\dt 23/Dec/2014
+\dt 10/Jun/2015
 
 \lx zoi ???
 \is interaction
@@ -74726,10 +74785,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ge râper (coco)
 \ge gratter (l'igname cuite ou la peau de l'igname, patates, taro)
 \sn 2
-\is action_ustensile
+\is action_mains
 \ge récurer (le dos de la marmite avec de la cendre)
 \sn 3
-\is action.corps
+\is action_corps
 \ge griffer
 \ge écorcher (s') la peau
 \re
@@ -74744,10 +74803,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \cf zòl (v.i.) [PA]
 \ce
 \poc *kodi
-\dt 22/Dec/2014
+\dt 10/Jun/2015
 
 \lx zoma
-\is grammaire_futur
+\is grammaire_temps
 \dialx GO(s)
 \ps marque de futur
 \ge futur
@@ -74762,7 +74821,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \xn il part tout de suite (imminent)
 \cf e zoma
 \ce futur proche
-\dt 23/Dec/2014
+\dt 09/Jun/2015
 
 \lx zòn
 \dialx PA BO
@@ -74947,7 +75006,7 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \dt 29/Nov/2008
 
 \lx zuanga
-\is société
+\is discours
 \ph zu'anga
 \dialx GO(s) PA
 \va phwa-zua
@@ -74965,10 +75024,10 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \xn
 \cf
 \ce
-\dt 25/Dec/2014
+\dt 10/Jun/2015
 
 \lx zugi
-\is action.corps
+\is action_corps
 \dialx GO(s) PA BO
 \va zhugi
 \ve GA
@@ -74999,7 +75058,7 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \xn elle a retroussé les manches de son vêtement
 \cf
 \ce
-\dt 06/Nov/2014
+\dt 09/Jun/2015
 
 \lx zume
 \is fonct.nat

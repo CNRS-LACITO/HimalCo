@@ -648,7 +648,10 @@ ps_partOfSpeech.update({
     "pronom objet ou possessif 1° plur. exclusif"                                                                   : "XXX",
     "pronom sujet 2°  pluriel"                                                                                      : "XXX",
     "pronom objet ; possessif 2° pluriel"                                                                           : "XXX",
-    "2° pluriel sujet ou objet ou possessif"                                                                        : "XXX"
+    "2° pluriel sujet ou objet ou possessif"                                                                        : "XXX",
+    "V"                                                                                                             : "XXX",
+    "interjection, v"                                                                                               : "XXX",
+    "préfixe (position assise)"                                                                                     : "XXX"
 })
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute
