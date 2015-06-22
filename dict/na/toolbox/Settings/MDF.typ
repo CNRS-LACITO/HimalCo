@@ -246,6 +246,7 @@
 \mkrOverThis et
 \mkrFollowingThis ec
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ee
@@ -300,6 +301,7 @@
 \lng vernacular
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ev
@@ -660,7 +662,6 @@
 \lng national
 \mkrOverThis pdl
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr pdr
@@ -717,6 +718,7 @@
 \-fnt
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr py
@@ -786,6 +788,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr se
@@ -835,6 +838,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr st
