@@ -1,5 +1,11 @@
 \_sh v3.0  1065 Text
 
+\id
+\tx
+\ft
+
+\id
+
 \id counterfactual and nominalization elicitation, Aug '13
 
 \tx ʌmiski  wɵ  mujaːwɛkʰo                    ʌgɵ               muʣʰiswɛ
@@ -1151,10 +1157,10 @@ youngest stays at home
 
 \ft After that, how could the jackal spend the night in a place full of snow?  It got cold and dawn came with difficulty
 \ref KLR_JACKAL_Dhana.018
-\tx mʌnʌ noɔm &ʔoɔ̂m-nɛ     khɛptɛ            mʌnʌ dhôːp joŋʌ        thiːstɛ
-\mb mʌnʌ noɔm ʔɵpt     -nɛ   khɛp    -tɛ       mʌnʌ dhôːp jo   -ŋʌ    thin    -tɛ
-\ge and    sun   rise (sun) -_inf  start.to -_3sg._pst and    pheasant also -_intens wake.up -_3sg._pst
-\ps conj   n     vt-i       -v.suf vt       -v.suf     conj   n        adv  -n.suf   vi      -v.suf
+\tx mʌnʌ noɔm ʔoɔ̂m-nɛ  khɛptɛ            mʌnʌ dhôːp joŋʌ        thiːstɛ
+\mb mʌnʌ noɔm ʔɵpt -nɛ   khɛp    -tɛ       mʌnʌ dhôːp jo   -ŋʌ    thin    -tɛ
+\ge and    sun   rise   -_inf  start.to -_3sg._pst and    pheasant also -_intens wake.up -_3sg._pst
+\ps conj   n     vt-i   -v.suf vt       -v.suf     conj   n        adv  -n.suf   vi      -v.suf
 
 \ft Then the sun began to rise, and the pheasant also woke
 \ref KLR_JACKAL_Dhana.019
@@ -1370,11 +1376,29 @@ youngest stays at home
 \ft Of them all, Gromme was the elder, and Lasme the younger.
 
 \ref KLR_KHAKCALOP_Dhana.004
-\tx mʌnʌ mɛ ʦɵtʦɵ-hɛm-bi jo-ŋa khɵtle-kʌ ʔu-ʦhɛri khakʦalʌp
+\tx mʌnʌ mɛ  ʦɵtʦɵ-hɛm-bi                                                                                jo-ŋa khɵtle-kʌ    ʔu-ʦhɛri
+\mb mʌnʌ mɛ  ʦɵ                                                                 - *tʦ -ɵ    -hɛm  -bi           khɵtle -ka    ʔu-        ʦhɛri
+\ge and    that add a piece of bamboo to widen the opening of basket (progressively) - ***  -_imp  -_pl   -_purp        all     -_abl  3_sg._poss- younger.child
+\ps conj   dem  vt                                                                   - ***  -v.suf -n.suf -v.suf        adv     -n.suf n.pre-      n
+
+\tx khakʦalʌp
+\mb khak                 - ʦa       - lʌ    - *p
+\ge stitch, put together - some      - OK     - ***
+\ps vt                   - indef.pro - interj - ***
+
 \ft And of the children, the youngest was Khaktsalop.
 
 \ref KLR_KHAKCALOP_Dhana.005
-\tx dilindo pɛʦoksi grômmɛ lasmɛ mʌnʌ khakʦalʌp ʔʌmhɛm-po ʔūn-pʌriwar bhʌ̄ŋpɛ gō:-tɛ ʦɛnʉte mō:-tnu bʌ̄ŋte mō:-tnu bʰʌ̄ŋte mō:-tnu
+\tx dilindo pɛʦoksi grômmɛ lasmɛ mʌnʌ khakʦalʌp ʔʌmhɛmpo              ʔū n-pʌriwar  bhʌ̄ŋpɛ                         gō: -tɛ
+\mb                                                      ʔipt      -hɛm  -po    *ʔ  *n-pʌriwar bhak - *̄ -ŋ         -pɛ         *g   -*
+\ge                                                      make.sleep -_pl   -_gen  ***  ***         go   - *** -1_sg._copy -_npst._ptcp ***  -
+\ps                                                      vt         -n.suf -n.suf ***  ***         vi   - *** -v.suf      -v.suf       ***  -
+
+\tx ʦɛnʉte                    mō:       -tnu bʌ̄ŋte                mō:       -tnu bʰʌ̄ŋte                mō:       -tnu
+\mb ʦɛnu  - *t  -e             *   -m     -*   *bʌ̄ŋt -e             *   -m     -*   *bʰʌ̄ŋt -e             *   -m     -*
+\ge be.good - *** -2/3>1_sg._imp *** -_nmlz -    ***       -2/3>1_sg._imp *** -_nmlz -    ***         -2/3>1_sg._imp *** -_nmlz -
+\ps vi      - *** -v.suf         *** -v.suf -    ***       -v.suf         *** -v.suf -    ***         -v.suf         *** -v.suf -
+
 \ft Dilindo, Pechoksi, Gromme, Lasme and Khaktsalop had a beautiful family.
 
 \ref KLR_KHAKCALOP_Dhana.006
@@ -7168,10 +7192,10 @@ house.
 \ge this girl   -_pl   -_erg
 \ps dem  n      -n.suf -n.suf
 
-\tx moʔo-kho        ni        ʔik ni        &mu-ki-ki
-\mb moʔo     -kho   ni        ʔik ni        *&  -m      -u       -ki    -ki
-\ge _neg._cop -_cond indeed    1_pi indeed    *** -_nmlz  -1_sg._a -1.pi  -1.pi
-\ps v         -conj  disc.part pro  disc.part *** -v.suf  -v.suf   -v.suf -v.suf
+\tx moʔo-kho        ni        ʔik ni        mu-ki-ki
+\mb moʔo     -kho   ni        ʔik ni        mu-     ki    -ki
+\ge _neg._cop -_cond indeed    1_pi indeed    _neg-   fight -1.pi
+\ps v         -conj  disc.part pro  disc.part v.pre-  vi    -v.suf
 
 \ft If these women didn't [speak] we won't fight.
 \ref KLR_SOLME1_Dhana.020
@@ -7297,15 +7321,15 @@ house.
 \ps n      -n.suf  vt    -v.suf -v.suf
 \ft After she had no time to wash herself and wash her hair, lice spread throughout her hair on her haid, she was covered with dirt.
 \ref KLR_SOLME1_Dhana.031
-\tx serkolôm         hʌs ʦʌi     ʔʌnʌm
+\tx serkolôm         hʌs ʦʌi     ʔʌnʌm  
 \mb ser  -kolo  -m     hʌs ʦʌi     ʔʌnʌm
 \ge lice -_com  -_nmlz man  _contr    long.ago
 \ps n    -n.suf -v.suf n    disc.part temp.adv
 
 \tx bîːʔɛ              khoɔt-ther-tɛnu            ʔe
-\mb bîː           -ʔɛ  khɵtt    -ther  -tɛnu          -tɛ   -nu    -ʔe
-\ge mythical.vulture -_erg  take.away -_aux  -23_pl._pst l   -_pst  -_pl   -_hearsay
-\ps n                -n.suf vt        -v.suf -v.suf          -suf.v -suf.v -suf.v
+\mb bîː           -ʔɛ  khɵtt    -ther  -tɛnu      ʔe
+\ge mythical.vulture -_erg  take.away -_aux  -23_pl._pst _hs
+\ps n                -n.suf vt        -v.suf -v.suf      disc.part
 
 \ft A mythical eagle used to take away people with lice.
 \ref KLR_SOLME1_Dhana.032
@@ -7564,10 +7588,10 @@ house.
 \ge that child -_du   -_erg  indeed    what   ***       work do -_inf  know -3_du._pst
 \ps dem  n     -n.suf -n.suf disc.part ques   disc.part n    vt -v.suf vt   -v.suf
 
-\tx hola  nʌ
-\mb hola  *   -nʌ
-\ge maybe *** -then
-\ps nep   *** -v.suf
+\tx hola nʌ
+\mb hola *   -nʌ
+\ge maybe*** -then
+\ps nep  *** -v.suf
 
 \ft How would they know how to do the work?
 \ref KLR_SOLME2_Dhana.006
@@ -7678,10 +7702,10 @@ house.
 \ps dem  n      ideo     vt   -v.suf -v.suf
 \ft They threw the tread suddenly.
 \ref KLR_SOLME2_Dhana.017
-\tx melo         ni        mɛ  sɵleʔɛ    ni        mɛ  ghoɔlpɛ           sʌŋ ʔʌtʦhʌŋʌ mɛ̂ː  rʌ̂mtɛ
-\mb melo         ni        mɛ  sɵle  -ʔɛ ni        mɛ  ghoɔl -pɛ         sʌŋ ʔʌʦhʌŋ    mɛ̂ː  rumt -tɛ
-\ge at.that.time indeed    that thread -_erg indeed    that big    -_npst._ptcp tree  really         suddenly coil -_3sg._pst
-\ps temp.adv     disc.part dem  n      -n.sufdisc.part dem  adj    -v.suf       n     interj         ideo     vt   -v.suf
+\tx melo         ni        mɛ  sɵleʔɛ     ni        mɛ  ghoɔlpɛ           sʌŋ ʔʌtʦhʌŋʌ mɛ̂ː  rʌ̂mtɛ
+\mb melo         ni        mɛ  sɵle  -ʔɛ  ni        mɛ  ghoɔl -pɛ         sʌŋ ʔʌʦhʌŋ    mɛ̂ː  rumt -tɛ
+\ge at.that.time indeed    that thread -_erg  indeed    that big    -_npst._ptcp tree  really         suddenly coil -_3sg._pst
+\ps temp.adv     disc.part dem  n      -n.suf disc.part dem  adj    -v.suf       n     interj         ideo     vt   -v.suf
 
 \ft Then the thread suddenly really coiled around that big tree.
 \ref KLR_SOLME2_Dhana.018
@@ -7940,15 +7964,16 @@ house.
 
 \ft And Solme and Lamalit set off.
 \ref KLR_SOLME2_Dhana.040
-\tx mʌnʌ jʌkkʌ    mɛ  haŋgɛ lɛm-bɵjo         hɵ̂ipɛstîm             pʌʦhi
-\mb mʌnʌ jʌkʌ     mɛ  haŋgɛ lɛm -bɵjo        hɵ̂npɛnɛ -ti      -m    pʌʦhi
-\ge and    over.there that forked  road -_level._loc  reach        -3du_pst -_nmlzafter
-\ps conj   spat.adv   dem  adj     n    -spatial.n.sufvi           -v.suf   -v.sufnep
+\tx mʌnʌ jʌkkʌ    mɛ  haŋgɛ lɛm-bɵjo          hɵ̂ipɛstîm              pʌʦhi
+\mb mʌnʌ jʌkʌ     mɛ  haŋgɛ lɛm -bɵjo         hɵ̂npɛnɛ -ti      -m     pʌʦhi
+\ge and    over.there that forked  road -_level._loc   reach        -3du_pst -_nmlz after
+\ps conj   spat.adv   dem  adj     n    -spatial.n.suf vi           -v.suf   -v.suf nep
 
-\tx mɛ  sôlmɛʔɛ    ni      ʦɛmhɵːtɛ       rʌeʦʌ
-\mb mɛ  sôlmɛ -ʔɛ  ni      ʦɛmhɵ -tɛ       rʌeʦʌ
-\ge that Solme    -_erg  indeed  forget   -_3sg._pst it.seems
-\ps dem  pn       -n.suf disc.parvt       -v.suf     nep
+\tx mɛ  sôlmɛʔɛ    ni        ʦɛmhɵːtɛ       rʌeʦʌ
+\mb mɛ  sôlmɛ -ʔɛ  ni        ʦɛmhɵ -tɛ       rʌeʦʌ
+\ge that Solme    -_erg  indeed    forget   -_3sg._pst it.seems
+\ps dem  pn       -n.suf disc.part vt       -v.suf     nep
+
 \ft After they arrived at the forked road, Solme had forgotten [what the mother had said].
 \ref KLR_SOLME2_Dhana.041
 \tx mʌnʌ ʣitdi mʉtɛ,       sôlmɛ ʔudʉspɛ
@@ -7968,10 +7993,10 @@ house.
 \ps conj   n.pre-      n       -n.suf np     vt -v.suf
 \ft The elder child insisted.
 \ref KLR_SOLME2_Dhana.043
-\tx moʔo     ni      mɛ̂mʔɛ    ni        tɛ  phaŋphaŋ        ghekpɛ-lʌŋʌ
-\mb moʔo     ni      mɛ̂m -ʔɛ  ni        tɛ  phaŋpha -ŋʌ    ghekt -pɛ         -lʌ   -ŋʌ
-\ge _neg._cop indeed  mother -_erg  indeed    this cracked  -_intens crack -_npst._ptcp -_abl  -_intens
-\ps v         disc.parn      -n.suf disc.part dem  ideo     -n.suf   vt-i  -v.suf       -n.suf -n.suf
+\tx moʔo     ni        mɛ̂mʔɛ    ni        tɛ  phaŋphaŋ        ghekpɛ-lʌŋʌ
+\mb moʔo     ni        mɛ̂m -ʔɛ  ni        tɛ  phaŋpha -ŋʌ    ghekt -pɛ         -lʌ   -ŋʌ
+\ge _neg._cop indeed    mother -_erg  indeed    this cracked  -_intens crack -_npst._ptcp -_abl  -_intens
+\ps v         disc.part n      -n.suf disc.part dem  ideo     -n.suf   vt-i  -v.suf       -n.suf -n.suf
 
 \tx khoɔ̂nnɛ  ʔɛstɛ̂m
 \mb khɵt -nɛ   ʔɛt -tɛ       -m
@@ -8196,15 +8221,16 @@ house.
 \ge Solme    there    be.anim -_3sg._pst -_nmlz how  -when  before    -_intens
 \ps pn       spat.adv vi      -v.suf     -v.suf adv  -v.suf temp.adv  -n.suf
 
-\tx sêːtɛsu-nʌ      jo   ŋʌ
-\mb set  -tɛsu     -nʌ jo   ŋʌ
-\ge kill -3_du._pst -thenalso _int
-\ps vt   -v.suf     -v.suadv  disc.part
+\tx sêːtɛsu-nʌ        jo   ŋʌ
+\mb set  -tɛsu     -nʌ   jo   ŋʌ
+\ge kill -3_du._pst -then  also _int
+\ps vt   -v.suf     -v.suf adv  disc.part
 
-\tx ʔuhi             ni      tʉ̂ŋkhʌtɛsu
-\mb ʔu-        hi    ni      tuŋ  -khʌ  -tɛsu
-\ge 3_sg._poss- blood indeed  drink -_aux  -3_du._pst
-\ps n.pre-      n     disc.parvt    -v.suf -v.suf
+\tx ʔuhi             ni        tʉ̂ŋkhʌtɛsu
+\mb ʔu-        hi    ni        tuŋ  -khʌ  -tɛsu
+\ge 3_sg._poss- blood indeed    drink -_aux  -3_du._pst
+\ps n.pre-      n     disc.part vt    -v.suf -v.suf
+
 \ft Solme was there and they killed her a while before and they drank up her blood.
 \ref KLR_SOLME2_Dhana.062
 \tx mʌnʌ
@@ -8833,10 +8859,10 @@ house.
 
 \ft From above, a chasing sound came down, "get ready, close your eyes more, spread your thighs more" he told him.
 \ref KLR_SOLME2_Dhana.115
-\tx mɛ  lʌi-to     mesʌ,    bhroɔç-to   &mɛlmɛju
-\mb mɛ  lut  -to    mesʌ     bhrɵt -to    mɛl  mu-     *j  -ʉ
-\ge that tell -_cvb  like.that shout  -_cvb  stir  _neg-   *** -3_sg._npst._a
-\ps dem  vt   -v.suf adv       vi     -v.suf vt    v.pre-  *** -v.suf
+\tx mɛ  lʌi-to     mesʌ,    bhroɔç-to   mɛlʌ    mɛju
+\mb mɛ  lut  -to    mesʌ     bhrɵt -to    mɛlʌ    mɛju
+\ge that tell -_cvb  like.that shout  -_cvb  that.side down.there
+\ps dem  vt   -v.suf adv       vi     -v.suf spatial.n spatial.adv
 
 \tx jaːtɛ-lo
 \mb je        -tɛ       -lo
@@ -8946,10 +8972,10 @@ house.
 \ps n.pre-      n       n        -spatial.n.suf n       v.pre-  vt  - disc.part n       v.pre-  vt  - disc.part
 \ft Put a small sickle next to your pillow, and resin.
 \ref KLR_SOLME2_Dhana.125
-\tx     mʌnʌ phɵpoti                jo-ŋʌ       ʈhik   ʔi-mɛ-tɛ           ʔe
-\mb     mʌnʌ phɵ    -po    -ti      jo   -ŋʌ    thik    ʔi-    mu -tɛ       ʔe
-\ge *** and    chicken -_gen  -3du_pst also -_intens correct _inv/2- do -_3sg._pst _hs
-\ps *** conj   n       -n.suf -v.suf   adv  -n.suf   nep     v.pre-  vt -v.suf     disc.part
+\tx mʌnʌ phɵpoti                jo-ŋʌ       ʈhik   ʔi-mɛ-tɛ           ʔe
+\mb mʌnʌ phɵ    -po    -ti      jo   -ŋʌ    thik    ʔi-    mu -tɛ       ʔe
+\ge and    chicken -_gen  -3du_pst also -_intens correct _inv/2- do -_3sg._pst _hs
+\ps conj   n       -n.suf -v.suf   adv  -n.suf   nep     v.pre-  vt -v.suf     disc.part
 
 \ft Also put a chicken egg there as well.
 \ref KLR_SOLME2_Dhana.126
@@ -9439,10 +9465,10 @@ house.
 
 \id KLR_SOLME_DhanMaya
 \ref KLR_SOLME_DhanMaya.001
-\tx ʔɛ̂n  ʔuŋʌ   sôlmɛ lʌmʌlitpo     kʌtha blɛttu         sɵ
-\mb ʔɛ̂n  ʔuŋʌ   sôlmɛ lʌmʌlit -po   kʌtha blɛtt -u       sɵ
-\ge now      1_sg._erg Solme    Lamalit   -_gen story  tell   -1_sg._a _hort
-\ps temp.adv pro       pn       pn        -n.sufnep    vt     -v.suf   disc.part
+\tx ʔɛ̂n  ʔuŋʌ   sôlmɛ lʌmʌlitpo      kʌtha blɛttu         sɵ
+\mb ʔɛ̂n  ʔuŋʌ   sôlmɛ lʌmʌlit -po    kʌtha blɛtt -u       sɵ
+\ge now      1_sg._erg Solme    Lamalit   -_gen  story  tell   -1_sg._a _hort
+\ps temp.adv pro       pn       pn        -n.suf nep    vt     -v.suf   disc.part
 
 \ft I will now tell the story of Solme and Lamalit.
 \ref KLR_SOLME_DhanMaya.002
@@ -10046,10 +10072,10 @@ somewhere and she gave it to them
 
 \ft In the evening, it became time to sleep, and where would the children sleep
 \ref KLR_SOLME_DhanMaya.045
-\tx mʌnʌ pipîː           khɛbi ʔʌ̂msiŋʌ              lʉ̂ːtɛ      ʔe       sôlmɛʔɛ
-\mb mʌnʌ pip         -i     khɛbi ʔipt        -si    -ŋʌ  lut  -tɛ       ʔe       sôlmɛ -ʔɛ
-\ge and    grandmother -_voc  where  put to sleep -_refl -1_sg  tell -_3sg._pst _hs       Solme    -_erg
-\ps conj   n           -n.suf quest  vt           -v.suf -suf.v vt   -v.suf     disc.part pn       -n.suf
+\tx mʌnʌ pipîː           khɛbi ʔʌ̂msiŋʌ            lʉ̂ːtɛ      ʔe       sôlmɛʔɛ
+\mb mʌnʌ pip         -i     khɛbi ʔipt      -si    -ŋʌ  lut  -tɛ       ʔe       sôlmɛ -ʔɛ
+\ge and    grandmother -_voc  where  make.sleep -_refl -1_sg  tell -_3sg._pst _hs       Solme    -_erg
+\ps conj   n           -n.suf quest  vt         -v.suf -suf.v vt   -v.suf     disc.part pn       -n.suf
 
 \ft Hey grandmother, where should I sleep? said Solme
 \ref KLR_SOLME_DhanMaya.046
@@ -10423,12 +10449,12 @@ slurpingly with the straw and the ogres fininshed (sucking)
 
 \ft And he stretched the bow and shot suddenly between his thighs.
 \ref KLR_SOLME_DhanMaya.078
-\tx mɛbenʌ mɛ &ʔusuk dana  phlôː lɛttɛnâː              kʌm  jaːtɛ              ʔe
-\mb mɛbenʌ mɛ         dana  phlôː lɛtt    -tɛ       -nʌ   kʌm  je        -tɛ       ʔe
-\ge then     that        piece suddenly take.out -_3sg._pst -then  house come.down -_3sg._pst _hs
-\ps conj     dem         np    ideo     vt       -v.suf     -v.suf n     vi        -v.suf     disc.part
+\tx mɛbenʌ mɛ  ʔu-suk             dana  phlôː lɛttɛnâː              kʌm  jaːtɛ              ʔe
+\mb mɛbenʌ mɛ  ʔu-        sûːk dana  phlôː lɛtt    -tɛ       -nʌ   kʌm  je        -tɛ       ʔe
+\ge then     that 3_sg._poss- three   piece suddenly take.out -_3sg._pst -then  house come.down -_3sg._pst _hs
+\ps conj     dem  n.pre-      num     np    ideo     vt       -v.suf     -v.suf n     vi        -v.suf     disc.part
 
-\ft He took out (lyett) three pieces [reproductive system] suddenly and went back down home.
+\ft He took out three pieces [reproductive system] suddenly and went back down home.
 \ref KLR_SOLME_DhanMaya.079
 \tx melo         ni        ʔupipʔɛ                     ʦɛssîː       ʔiʦûː
 \mb melo         ni        ʔu-        pip         -ʔɛ  ʦɛs      -i     ʔi-        ʦûː
@@ -10563,10 +10589,10 @@ slurpingly with the straw and the ogres fininshed (sucking)
 
 \ft He pretended to go back, Lamalit was more clever (than his sister) [ma, ka discourse: ta, wa in Np]
 \ref KLR_SOLME_DhanMaya.088
-\tx mʌnʌ mɛ &tûː-de gʌ̂m-khan-tɛsi
-\mb mʌnʌ mɛ            gʉp -khʌ  -tɛ       -si
-\ge and    that           hide -_aux  -_3sg._pst -_nmlz
-\ps conj   dem            vt   -v.suf -v.suf     -v.suf
+\tx mʌnʌ mɛ tûː-de     gʌ̂m-khan-tɛsi
+\mb mʌnʌ mɛ tûː -de    gʉp -khʌ  -tɛ       -si
+\ge and    thatone    -_nmlz hide -_aux  -_3sg._pst -_refl
+\ps conj   dem num    -v.suf vt   -v.suf -v.suf     -v.suf
 
 \tx rʌeʦhʌ ʔou   mɛ  ʦʌi     mʌnʌ sêndetɛ             ʔe
 \mb rʌeʦhʌ ʔou   mɛ  ʦʌi     mʌnʌ sent -de    -tɛ       ʔe

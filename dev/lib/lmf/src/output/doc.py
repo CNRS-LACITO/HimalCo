@@ -161,13 +161,16 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             for example in vernacular_forms:
                                 p.add_run("\t")
                                 p.add_run(example).bold = True
-                            fra_forms = context.find_written_forms(language=config.xml.French)
-                            if len(vernacular_forms) != 0 and len(fra_forms) != 0:
-                                p.add_run(" ; ")
-                            for example in fra_forms:
-                                p.add_run(example)
-                            if len(fra_forms) != 0 and fra_forms[0][-1] != '!' and fra_forms[0][-1] != '?':
-                                p.add_run(".")
+                            try:
+                                fra_forms = context.find_written_forms(language=config.xml.French)
+                                if len(vernacular_forms) != 0 and len(fra_forms) != 0:
+                                    p.add_run(" ; ")
+                                for example in fra_forms:
+                                    p.add_run(example)
+                                if len(fra_forms) != 0 and fra_forms[0][-1] != '!' and fra_forms[0][-1] != '?':
+                                    p.add_run(".")
+                            except AttributeError:
+                                pass
                         # Links
                         if len(lexical_entry.get_related_forms("simple link")) != 0:
                             p = document.add_paragraph()
