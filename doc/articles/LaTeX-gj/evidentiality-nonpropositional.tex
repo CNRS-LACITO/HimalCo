@@ -17,13 +17,7 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
-%%%%%%%%%quelques options de style%%%%%%%%
-%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
-%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
-%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
-%\chapterstyle{veelo}
-%\setsecnumdepth{subsubsection}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
@@ -42,7 +36,8 @@
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
 \begin{document} 
-\linenumbers
+%\linenumbers
+\sloppy
 
 \title{Non-propositional evidentiality}
 \author{Guillaume Jacques}
@@ -51,19 +46,113 @@
 \section{Introduction}
 In most languages of the worlds where evidentiality is grammaticalized, it is expressed either by verbal morphology, sentential markers or adverbs, which have scope over the entire proposition. A minority of languages have evidential-like distinctions on markers (mainly deictic, see \citealt[130]{aikhenvald06}) whose scope is limited to a noun phrases. The present study focuses on these non-propositional evidential markers; evidential markers present in relative clauses embedded within noun phrases are not considered in this study: although some languages have restriction on the use of evidential markers in relatives,\footnote{For instance in Japhug Gyalrong, the inferential cannot be used in relative clauses with finite verb.} many languages allow evidential markers on the verb in relative clauses (\citealt[253-6]{aikhenvald06}). This exclusion concerns in particular predicative evidential markers in omnipredicative languages.\footnote{I omnipredicative languages such as Nahuatl or most Salish languages, nouns, although distinct from verbs, are predicative and must be relativized to be used in argument position (\citealt{launey94}).}
 
-Non-propositional evidentiality is rarer than nominal tense (on which see \citet{nordlinger04nominal}, \citealt[132]{francois05overview}), and only few types of systems have been documented in detail. In particular, it might be the case that some languages reported in earlier research to have a visible/invisible distinction could be described in different terms (see for instance the case of Lillooet/St'at'mcets below). Following \citet{gutierrez12determiners}, I classify evidential contrasts on determiners in terms of \textit{type of evidence} on the one hand, and of the \textit{reliability of evidence} on the second hand.
+Non-propositional evidentiality is rarer than nominal tense (on which see \citealt{nordlinger04nominal}, \citealt[132]{francois05overview}), and only few types of systems have been documented in detail. 
 
-\section{Type of evidence}
-Nearly all non-propositional evidential systems described in the literature (except St'at'imcets as described by \citet{gutierrez12determiners}) involve 
+Following \citet{gutierrez12determiners}, I classify evidential contrasts on determiners in terms of \textit{type of evidence} on the one hand, and of the \textit{reliability of evidence} on the second hand.
 
-\subsection{Visual}
-The first type of non-propositional evidential distinction to have been described  is that between visible and non-visible demonstratives independently of the proximal / distal distinction (\citealt[527-531]{boas11kwakiutl})
+\section{Locus of non-propositional evidential marking} \label{sec:loc}
+Non-propositional evidential systems as defined above include evidential distinctions on nominal determiners (either affixes, clitics or independent words), case or discourse markers, and also on demonstrative pronouns and adverbs.
+
+In some languages, noun modifiers can be derived from demonstrative adverbs by means of a nominalization morpheme. In such systems, demonstrative determiners and demonstrative adverbs are completely parallel and show the same evidential contrasts. For instance, in Khaling, the demonstrative determiner/pronoun \ipa{tikî-m} `this (audible)' is derived from the demonstrative adverb \ipa{tikí} `there (audible)' by means of the all-purpose nominalizer \ipa{--m}.
+
+However, some languages may present distinct non-propositional evidential sub-systems. For instance, Lillooet/St'at'imcets has a visible / non-visible distinction in demonstrative pronouns and adverbs (\citealt[169, 171]{eijk97lillooet}), but determiners rather mark the reliability of evidence for assuming that the referent exists or not (\citealt{matthewson98determiners, gutierrez12determiners}).
+
+Although non-propositional evidential markers are in some languages independent of any other morphosyntactic parameter (as in Khaling for instance, see section \ref{sec:auditory}), they can also be combined with  proximal / distal distinctions, case marking and topicalization.
+
+Evidential markers with proximal / distal distinctions are particularly common in the case of sensory evidentials, especially those marking visiblity, as exemplified by Tsou in Table \ref{tab:tsou} (\citealt[54]{yang00tsou.case}; see also sections \ref{sec:visible} and \ref{sec:auditory} below). 
+
+Evidential meanings can also be combined with case within a single marker. The data Tsou in Table (\ref{tab:tsou}) incidentally also illustrate this interaction between evidentiality and case. Note that the case markers in Tsou are portmanteau morphemes: it is not possible to decompose them into two morphemes (evidential marker and case marker), at least synchronically.  
+ 
+\begin{table}[H]
+ \caption{Tsou case markers, adapted from \citet[54]{yang00tsou.case}} \centering \label{tab:tsou}
+\begin{tabular}{llllllll}
+\toprule
+	 & 	 & 	\multicolumn{2}{c}{case markers } 	 \\	
+	 & 	 & 	nominative & 	oblique \\	
+\midrule
+	 & 	near & 	\ipa{'e} & 	\ipa{ta} \\ 	
+visual	 & 	middle & 	\ipa{si} & 	\ipa{ta}  \\ 	
+	 & 	far & 	\ipa{ta} & 	\ipa{ta}  \\ 	
+\multicolumn{2}{l}{non-visual sensory}  	 & 	\ipa{co} & 	\ipa{nca/ninca} \\ 	
+	 \midrule
+\multicolumn{2}{l}{hearsay}	 & 	\ipa{'o} & 	\ipa{to} \\ 	
+\multicolumn{2}{l}{belief / inference} 	 & 	\ipa{na} & 	\ipa{no} \\ 	
+\bottomrule
+\end{tabular}
+\end{table} 
+
+In other languages where case and evidential markers interact, such as Dyirbal, the morphology is more concatenative. Note however taht even in Dyirbal the case paradigms of the evidential demonstratives are not completely predictable (see \citealt{dixon14nonvisible}).
+
+Aside from proximal / distal distinction and case, a third parameter has been shown to interact with non-propositional evidentiality: topicality. For instance,  the Chadic language Maaka has three evidential markers \ipa{--mú} `eye-witnessed', \ipa{--dìyà} `joint-perception', \ipa{--kà} `assumption' occurring on noun phrases. They can be used with referents which are `hardly core participants, but rather topicalized peripheral participants that motivate an action or event' (\citealt[195-7]{storch14maaka}), as exemplified by (\ref{ex:maaka}).
+
+\begin{exe}
+\ex \label{ex:maaka}
+\gll \ipa{yáayà} \ipa{círòmà-mú} \ipa{nín-nì} \ipa{gùu=ɓálɓìyá} \ipa{tà-lòwó} \ipa{gàamôɗí} \ipa{bòɲcéttí} \\
+\textsc{name} \textsc{title-vis} mother-\textsc{3sg:poss:masc} person=\textsc{toponym} \textsc{3sg:fem}-deliver:\textsc{pfv} once \textsc{dem:ref} \\
+\glt Yaaya Ciroma [eye-witnessed]: her mother is from Balbiya town, she once gave birth there.
+\end{exe}
+
+Non-propositional evidential system display a considerable diversity in terms of morphology, and it would not be surprising if future fieldwork brings to light previously unknown types of evidential markers in noun phrases.
+
+\section{Type of evidence} \label{sec:type}
+Nearly all non-propositional evidential systems described in the literature   involve sensory evidential meanings, rather than other types of evidentials. This section first discusses the visual vs non-visual contrast, which has been described for almost all languages with non-propositional evidentials, and then addresses the issue of non-visual sensory or auditory evidentials, which are considerably rarer. Finally, I present cases of non-sensory non-propositional evidentials.
+
+\subsection{Visible vs Non-visible} \label{sec:visible}
+The first type of non-propositional evidential distinction to have been described  is that between visible and non-visible demonstratives in Kwak'wala (\citealt[527-531]{boas11kwakiutl}). Similar systems have been reported for various languages of the Pacific Northwest (see for instance \citealt{bach06deixis.wakashan}), and most languages with non-propositional evidential markers appear to include one or several visible evidential marker (see for example Tsou in section \ref{sec:loc}).  
+
+While in Kwak'wala (as well as other Wakashan and Salishan languages), the visual / non-visual contrast is independent of the proximal / distal distinction, it is not the case of some languages with non-propositional evidentials. For instance, in Dyirbal (\citealt[45]{dixon72dyirbal}, \citealt{dixon14nonvisible}) we find three series of demonstratives \ipa{ya--} `here and visible', \ipa{ba--} `there and visible' and \ipa{ŋa--} `not visible'. In this system, the proximal / distal contrast is neutralized for non-visible referents.\footnote{This is a common phenomenon, see exactly the same neutralization in the Tsou paradigm above, Table \ref{tab:tsou}.} The non-visible \ipa{ŋa--} demonstratives are used either when the referent is not perceivable, or perceivable through senses other than vision.\footnote{\citet{dixon14nonvisible} presents a detailed account of the non-vsible marker  \ipa{ŋa--}, which occurs in five distinct contexts: (1) audible but not visible; (2) previously visible but now just audible; (3) neither visible or audible (and not perceivable through other senses) (4) spirits (5) remembered.  } 
+
+It is of utmost importance, when dealing with systems where evidential distinctions are not independent from proximal / distal contrasts, not to rely exclusively on elicitation and to use data from traditional stories and conversations, as speakers can have unreliable intuitions. Khaling for instance has a three-degree proximal / distal contrast; the `further distal' markers are spontaneously described as `non-visible' by speakers (in Nepali \ipa{adṛśya} `invisible') and proximal ones as `visible', though clear examples of further distal demonstratives with visible referents, and of proximal demonstratives with invisible ones can be found in stories (\citealt[399]{jacques14auditory}). There is thus a potential for `false positives' in the description of visible demonstratives.
+
+ 
+
+\subsection{Non-visual sensory}  \label{sec:auditory}
+In languages with non-propositional evidential, referents that are perceptible through senses other than vision are treated in some languages in the same way as referent which are absent or non-perceptible, for example with the marker \ipa{ŋa--} in Dyirbal (\citealt{{dixon14nonvisible}}).
+
+Several languages, including Southern Pomo (Pomoan, \citealt[37, ft]{oswalt86evidential}), Santali (Austroasiatic, \citealt[42-44]{neukom01santali}), Tsou Austronesian, (\citealt{yang00tsou.case}, see Table \ref{tab:tsou}), Nyelayu and Yuanga (Oceanic, \citealt[42-44]{neukom01santali}), Muna  (Oceanic, \citealt{berg97deixis.muna}), have been described as having  demonstratives used to refer to participants that are invisible but perceptible through senses other than vision. Some of the descriptions cited above refer to these markers as \textit{auditory} or \textit{auditive} demonstratives. 
+
+In the case of Tsou, as shown by \citet[50-1]{yang00tsou.case}, the marker \ipa{co} is used with participants that are not visible but perceptible through audition, touch, smell or any non-visual sensation, including endopathic feelings such as hunger:
 
 
-\citet{bach06deixis.wakashan}
+\begin{exe}
+\ex 
+\gll \ipa{mi-cu} \ipa{tazvo'hi} \ipa{co} \ipa{f'UsU-'u} \\
+\textsc{aux-pfv} be.long \textsc{nom:sens:n.vis} hair-\textsc{1sg} \\
+\glt My hair has grown long. (Not visible, since it is on my head)
+\end{exe}
 
-\subsection{Non-visual sensory}
-As a modifier \ipa{tikî-m} can be used to modify   a noun with a prenominal     relative clause  in between (example \ref{ex:salpu}).
+\begin{exe}
+\ex 
+\gll \ipa{mo} \ipa{mema'congo} \ipa{co} \ipa{poepe} \\
+\textsc{aux} fly:strong \textsc{nom:sens:n.vis} wind \\
+\glt I felt the wind was strong.
+\end{exe}
+
+It cannot be excluded that some of the markers described as auditory demonstratives should in fact be analyzed as non-visual sensory; recent field data from Yuanga (\citealt{bril-yuanga}), in particular, where the non-visual marker  \ipa{--ili} is used to refer to a liquid only perceptible through its taste, suggest that the cognate marker \ipa{--ili} in the closely related Nyelayu language too might not be an auditory demonstrative \textit{stricto sensu}.
+
+The only language for which we have positive evidence of the existence of an auditory demonstrative is Khaling, (Kiranti, Nepal). XXX
+
+\begin{table}
+\caption{Non-propositional evidential systems with non-visual sensory evidentials } \label{tab:attested}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lcccl}
+\toprule
+  &	Connection  & 	Indexation of   & 	Indexation of   	&References\\
+&  with proximal / distal &visual perception &auditory perception \\
+\midrule  
+Southern Pomo  & 	unknown  & 	unclear  & 	no  & 	\citet[37, ft]{oswalt86evidential}\\
+Santali  & 	no  & 	yes  & 	no  & 	\citet[42-44]{neukom01santali} \\
+Tsou & no & yes & no & \citet{yang00tsou.case}\\ 
+Nyelayu  & 	yes  & 	yes  & 	no  & 	\citet[98]{ozanne97spatial}\\
+Muna  & 	yes  & 	yes  & 	no  & 	\citet{berg97deixis.muna}\\
+Khaling  & 	no  & 	no  & 	yes  & 	\citet{jacques14auditory}\\
+\bottomrule
+\end{tabular}}
+\end{table}	
+
+
+
+ example \ref{ex:salpu}).
 
 \begin{exe}
 \ex \label{ex:salpu}
@@ -74,8 +163,7 @@ As a modifier \ipa{tikî-m} can be used to modify   a noun with a prenominal   
 \end{exe}
  
 
- 
-  illustrate uses of the auditory demonstratives with visible referents; likewise,   \ref{ex:kogu}, uttered by a person watching a song contest on the television, makes it clear that the visibility or non-visibility of the referent is not a relevant factor in using this demonstrative.
+compatible with visible referents; likewise,   \ref{ex:kogu}, uttered by a person watching a song contest on the television, makes it clear that the visibility or non-visibility of the referent is not a relevant factor in using this demonstrative.
 
 \begin{exe}
 \ex \label{ex:kogu}
@@ -96,46 +184,13 @@ no equivalent in verb morphology, except perhaps Yuchi \citealt[37]{aikhenvald06
 
 
 
-
-\begin{table}
-\caption{Systems     including auditory demonstratives } \label{tab:attested}
-\resizebox{\columnwidth}{!}{
-\begin{tabular}{lcccl}
-\toprule
-  &	Connection  & 	Indexation of   & 	Indexation of distinctions  	&References\\
-&  with proximal / distal &visual perception &between audition and other senses\\
-\midrule  
-Santali  & 	no  & 	yes  & 	no  & 	\citet[42-44]{neukom01santali}\\
-Nyelayu  & 	yes  & 	yes  & 	no  & 	\citet[98]{ozanne97spatial}\\
-Southern Pomo  & 	unknown  & 	unclear  & 	no  & 	\citet[37, ft]{oswalt86evidential}\\
-Muna  & 	yes  & 	yes  & 	no  & 	\citet{berg97deixis.muna}\\
-Dyirbal  & 	yes   & 	yes  & 	no  & 	\citet{dixon72dyirbal}\\
-\midrule
-Khaling  & 	no  & 	no  & 	yes  & 	\\
-\bottomrule
-\end{tabular}}
-\end{table}	
-
-
+ 
 \citet{aikhenvald14knowledge}
-\citet{dixon14nonvisible}
-\citet{storch14maaka}
-\citet{yang00hearsay}
-\citet{yang00tsou.case}
+ 
  
  
 \subsection{Non-sensory} 
-  \citet[171-3]{eijk97lillooet}
  
- \citet{gutierrez11evidentiality} `encoding whether or not the speaker has the best possible grounds to believe in the existence of the individual' 
- 
- difference between Nivacle and St'at'imcets
- 
-\section{Reliability of evidence}
-\citet{gutierrez11evidentiality}
-\citet{matthewson07epistemic}
-\citet{gutierrez12determiners}
-
 \citet[282]{lowe99nambiquara} 
  
  \begin{table}
@@ -152,6 +207,36 @@ Khaling  & 	no  & 	no  & 	yes  & 	\\
 \end{tabular}
 \end{table}
 
+ \begin{exe}
+\ex
+\gll  \ipa{hĩ^1na^2su^2} \ipa{wa^3lin^3-su^3-nti^2} \ipa{ḭ̃^3-a^1-ra^2} \\
+today manioc-\textsc{cl.bone.like-observ.rec.pst.given} plant-\textsc{1sg-pfv} \\
+\glt Today I planted the manioc roots that we both saw earlier today. (\citealt[290, ex 62.]{lowe99nambiquara} ) 
+  \end{exe}
+ 
+ \citet[54]{yang00tsou.case}
+ Table \ref{tab:tsou} above 
+ 
+
+ 
+\section{Reliability of evidence} \label{sec:reliability}
+
+
+ 
+
+
+ \citet[193]{eijk97lillooet}
+ 
+\citet{gutierrez11evidentiality}
+\citet{matthewson07epistemic}
+\citet{gutierrez12determiners}
+
+ \citet{gutierrez11evidentiality} `encoding whether or not the speaker has the best possible grounds to believe in the existence of the individual' 
+ 
+ difference between Nivacle and St'at'imcets
+ Some languages distinguish two degrees of reliable evidence; for instance, in Maaka (see section \ref{sec:loc}) has a contrast between `eye-witness' and `joint perception', the second being used when both speaker and hearer see the referent in question. 
+ 
+ 
 %\begin{exe}
 %\ex
 %\gll   \ipa{wa^3lin^3-su^3-n^3ti^2} \\
@@ -159,12 +244,7 @@ Khaling  & 	no  & 	no  & 	yes  & 	\\
 %\glt ‘this manioc root that both you and I saw recently’ (\citealt[282, ex 32.]{lowe99nambiquara} )
 % \end{exe}
  
- \begin{exe}
-\ex
-\gll  \ipa{hĩ^1na^2su^2} \ipa{wa^3lin^3-su^3-nti^2} \ipa{ḭ̃^3-a^1-ra^2} \\
-today manioc-\textsc{cl.bone.like-observ.rec.pst.given} plant-\textsc{1sg-pfv} \\
-\glt Today I planted the manioc roots that we both saw earlier today. (\citealt[290, ex 62.]{lowe99nambiquara} ) 
-  \end{exe}
+ 
 % \begin{exe}
 %\ex
 %\gll   \ipa{wa^3lin^3-su^3-nũ^1tã^2} \\
@@ -172,6 +252,11 @@ today manioc-\textsc{cl.bone.like-observ.rec.pst.given} plant-\textsc{1sg-pfv} \
 %\glt ‘the manioc root that must have been at some time past, as inferred by me
 %(but not by you)’  (\citealt[282, ex 35.]{lowe99nambiquara} )
 %  \end{exe}
+
+
+
+
+ 
 
 \section{Conclusion}
 
