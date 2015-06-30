@@ -1,0 +1,54 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tld}{\textasciitilde{}}
+
+\begin{document} 
+ \title{How to encode morphological innovations?}
+ \author{Guillaume Jacques}
+ \maketitle 
+
+\section{Introduction}
+Morphological innovations are perhaps the most robust type of innovations and the ones less easily influenced by contact. They potentially contain phylogenetic informations that is more reliable than phonology or lexicon. However, use of morphological features has been limited up to now for two reasons. First, the structure of morphological systems is language particular, which makes it difficult to compare across languages and even more across language families. Second, Analyzing morphological innovations requires a considerable amount of specilized knowledge, and can only been undertaken in the case of language families whose historical phonology has been fully elucidated.
+
+
+
+\section{A case study: verb stems in Tibetan languages}
+In order to test the possibilities for an encoding system, I present a case study from Tibetan languages. Tibetan languages present diversity comparable with that of Romance languages (\citealt{tournadre05aire}), their common ancestor, Old Tibetan, is relatively well understood (\citealt{hill10synchronic}) and the historical phonology and morphology of many Tibetan languages has been elucidated in detail (\citealt{sun86ndzorge}, \citealt{jackson03zhongu}, \citealt{jacques14cone} etc).
+
+
+In the following, I only include verb included in the basic word list (excluding the complex predicates noun+auxiliary).
+
+
+
+\section{General case}
+
+\section{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
