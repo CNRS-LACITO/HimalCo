@@ -3423,14 +3423,6 @@
 \gn 金星 
 \hbf astronomie
 
-\lx _ra
-\ps vs
-\pdl dir 
-\pdv tɤ-
-\ge devoir 
-\gn 要 
-\hbf 1755
-
 \lx kɯrcat
 \ps num
 \ge huit 
@@ -4283,10 +4275,16 @@
 \xn 我听错了他讲的话
 \dt 08/May/2014
 
-\lx mɤspemɤrke kɯ-me
-\ps n
-\ge innocent
+\lx {spa}{rka}
+\ps vt
+\ge être innocent
 \gn 无辜
+\ng serie
+\un {spa}和{rka}只用于否定形式，带{mɤ-}前缀，同时必须与否定存在动词{me}“没有”连用
+\xv mɤ-spe mɤ-rke kɯ-me
+\xn 无辜的人
+\xv mkharmaŋ mɤ-spa-nɯ mɤ-rka-nɯ kɯ-me
+\xn 无辜的老百姓
 \dt 14/May/2014
 
 \lx mɤtsamɤmu
@@ -9690,7 +9688,8 @@
 \dt 07/May/2014
 
 \lx tɕhi¹
-\wav8 tChi
+\wav8 tChi_kWra
+\wav8 tChi_skAt
 \ps pro
 \ge quoi 
 \gn 什么 
@@ -9698,12 +9697,14 @@
 \et tɕʰi
 \xv kutɕu tɕhi ɯ-kɯ-pa jɤ-tɯ-ɣe?
 \xn 你来这里做什么？
-\xv tɕhi nɯ ma mɯ́j-ra
-\xn 不需要什么其他的
 \un 同{maʁ nɤ}连用时有“至少”的意思
+\xv tɕhi kɯ-ra ʑo kɤ-nɤma cha
+\xn 她什么都能做
+\xv tɕhi ɯ-skɤt ŋu, ɯ-ɲɯ́-tɯ-tso?
+\xn 你知道什么意思吗？
 \xv tɕhi maʁ nɤ
 \xn 至少
-\cf tshi⁴
+\cf tshi¹
 \dt 17/Jan/2015
 
 \lx tɕhi²
@@ -11320,6 +11321,7 @@
 \dt 29/May/2013
 
 \lx tɯ-laz²
+\wav8 nAlaz
 \ps n
 \ge karma 
 \gn 运气 
@@ -11329,6 +11331,8 @@
 \xn 我的命很苦
 \xv a-laz tu
 \xn 我运气好
+\xv nɤʑo nɤ-laz ɲɯ-sna
+\xn 你命好
 \dt 26/Jul/2014
 
 \lx tɯ-lɤn
@@ -12646,6 +12650,7 @@
 \xn 已经很晚，你来不及了
 \xv soz tɕi tu ŋgrɤl tɯrmɯ tɕi tu ŋgrɤl
 \xn 早上也有，下午也有
+\cf nɯrmɯ
 \dt 24/Jun/2011
 
 \lx tɯrmɯkha
@@ -13105,6 +13110,8 @@
 \hbf 144 
 \xv ɯ-sni ɲɯ-xtɕi 
 \xn 他很胆小
+\xv ɯ-sni ɲɤ-zdɯɣ
+\xn 他很伤心
 \dt 14/Oct/2014
 
 \lx tɯ-sŋi
@@ -14462,16 +14469,23 @@
 \wav8 Wqa_Zo_pjWnWlhoR
 \ps np
 \sn 1
-\ge racine, fond 
-\gn 根、底部
+\ge racine
+\gn 根
 \sn 2
 \ge patte
-\gn 野兽的脚
+\gn （动物）的脚
+\sn 3
+\ge fond 
+\gn 底部
+\xv tɤ-fkɯm ɣɯ ɯ-qa
+\xn 袋子的底部
+\xv mtshu ɯ-qa zɯ
+\xn 在湖底
 \xv ɯ-qa ʑo tu-nɯɬoʁ naʁzi-a
 \xn 我想寻根问底
 \xv ɯ-kɤ-thu nɯ ɯ-qa ʑo tu-nɯɬoʁ naʁzi
 \xn 他想寻根问底
-\hbf animal2
+\cf ɯ-qataʁrɯ
 
 \lx ɯ-qhɤchu
 \wav8 qhAchu
@@ -30693,6 +30707,11 @@
 \ng refl
 \ge s'enduire
 \gn 给自己涂
+\se _amar
+\ps vi
+\ng pass
+\ge être enduit
+\gn 被涂在……
 \dt 13/Jan/2015
 
 \lx _maʁ
@@ -31205,6 +31224,7 @@
 \xv kɤ-mbɣom mɤ-ra / tɯ-mbɣom mɤ-ra
 \xn 不用着急
 \cf ɕɯmbɣom
+\cf ɣɤmbɣomru
 \dt 25/Apr/2014
 
 \lx _mbi
@@ -31719,7 +31739,7 @@
 \hbf 1209 <2> 1438 
 \xv nɯmɟe
 \xn 你拿一下
-\xv nɤkɤcu tʂhaχɯ kɤ-mɟe
+\xv nɤkɤcu tɕhaχɯ kɤ-mɟe
 \xn 你把那边的茶壶拿过来
 \xv tɤ-scoz ci nɯ-mɟa-t-a (=a-jaʁ nɯ-ɣe)
 \xn 我收到了一封信
@@ -34530,6 +34550,7 @@
 \ge trouver étrange 
 \gn 觉得奇怪 、感到惊讶
 \et mtsʰar
+\sy naχaʁ
 \xv jiɕqha nɯ tɤ-aʑɯʑu-ndʑi ri, ``mɤ-cha" nɯ-sɯso-t-a ri, pɯ-cha rcanɯ nɯ-nɤmtshar-a
 \xn 在角力的时候，我以为他不行，但他居然赢了，我感到很惊讶
 \xv ``mɤ-tɯ-cha" nɯ-sɯso-t-a ri, pɯ-tɯ-cha rcanɯ, nɯ-ta-nɤmtshɤr 
@@ -34913,6 +34934,8 @@
 \lx _nɤɲchɯɲchɤm
 \wav vi-nAYchWYchAm
 \ps vi
+\pdl dir
+\pdv thɯ-
 \ge rôder
 \gn 无聊地到处流浪、到处走动
 \xv kɯ-nɤɲchɯɲchɤm jɤ-ari-a
@@ -35896,7 +35919,7 @@
 \xn 这一次，我在马尔康待了很久
 \xv japa pɯ-nɤrʑaʁ-a, ɣijpa ʑatsa ju-ɕe-a ra 
 \xn 我去年待了很长时间，今年要早点回去
-\xv fsapaʁ thɯsci mɤ-kɯ-nɤrʑaʁ tɕe, tu-ŋke ɕti
+\xv fsapaʁ thɯ-sci mɤ-kɯ-nɤrʑaʁ tɕe, tu-ŋke ɕti
 \xn 牲畜出生不久就会走路
 \cf tɤ-rʑaʁ
 \dt 29/Mar/2011
@@ -37359,7 +37382,7 @@
 \xn 我把衣服洗了，然后把水拧出来了
 \xv tɯ-ŋga kɤ-χtɕi nɯ-jɤɣ tɕe tú-wɣ-ndzri ra, tɕe ɯ-ci a-pɯ-nɯ-ɬoʁ ra
 \xn 洗完了衣服就要拧，这样水就会出来
-\xv aɕa ma-tɤ-tɯ-ndzri ma ɲɯ-mŋɤm
+\xv a-ɕa ma-tɤ-tɯ-ndzri ma ɲɯ-mŋɤm
 \xn 你不要拧我的肉，很痛！
 \xv rɟɯma kɤ-ndzri tɕe a-tɤ-ɤsɯɣ
 \xn 你拧一下螺丝就会紧
@@ -37511,8 +37534,12 @@
 \ps vs
 \pdl dir 
 \pdv tɤ-
-\ge tourner vite 
-\gn 转动的很快 
+\sn 1
+\ge rapide 
+\gn 快 
+\sn 2
+\ge courant (parole)
+\gn 流利（语言）
 \xv @piqiu ɲɯ-ndʐɯm
 \xn 皮球转动得很快
 \xv mkhɯrlu ɲɯ-ndʐɯm 
@@ -37523,6 +37550,8 @@
 \xn 他笑个不停
 \xv ɯ-ɕmi ɲɯ-ndʐɯm
 \xn 他滔滔不绝地讲
+\xv kɤ-ti a-kɤ-ndʐɯm ɲɯ-sɯsam-a
+\xn 我希望能讲得流利一点
 \dt 01/May/2014
 
 \lx _ndʑaʁ
@@ -39367,6 +39396,13 @@
 \et kʰrims
 \xv ɲɯ-nɯkhrɯm-nɯ
 \xn 他们在坐牢
+\se znɯkhrɯm
+\ps vt
+\ng caus
+\pdl dir 
+\pdv kɤ-
+\ge mettre en prison
+\gn 关进监狱、惩罚
 \dt 21/Aug/2014
 
 \lx _nɯkhɯ
@@ -40872,8 +40908,16 @@
 \xn 他把妻子亲了一下了
 \xv tɤ-pɤtso ka-nɯpoʁ
 \xn 他把孩子亲了一下
-\xv waiguoren ra kɤ-nɯpoʁ rga-nɯ
+\xv @waiguoren ra kɤ-nɯpoʁ rga-nɯ
 \xn 外国人喜欢亲嘴
+\xv kɤ́-wɣ-nɯpoʁ-a
+\xn 他亲了我一下
+\se znɯpoʁ
+\ps vt
+\pdl dir 
+\pdv kɤ-
+\ge laisser embrasser
+\gn 让……亲吻
 \dt 12/Jan/2014
 
 \lx _nɯproʁmba
@@ -42344,8 +42388,12 @@
 \ng denom
 \pdl dir 
 \pdv thɯ-
-\ge inquiet, malheureux
-\gn 担心、不高兴、伤心
+\sn 1
+\ge être inquiet
+\gn 担心
+\sn 2
+\ge être malheureux, être triste
+\gn 不高兴、伤心
 \hbf 1120 
 \et sems.sdug
 \xv thɯ-nɯsɯmɯzdɯɣ mɤ-ra
@@ -42354,8 +42402,9 @@
 \xn 你不要伤心
 \xv nɤ-rɟit ɲɯ-ngo, ma-tɯ-nɯsɯmɯzdɯɣ 
 \xn 你儿子生病了，但是不要担心
-\xv tɕhindʐa ku-tɯ-sɯmɯzdɯɣ?
+\xv tɕhindʐa ku-tɯ-nɯsɯmɯzdɯɣ?
 \xn 你为什么不高兴？
+\cf sɯmɯzdɯɣ
 \dt 25/Jan/2015
 
 \lx _nɯsɯŋgɯ
@@ -45261,10 +45310,17 @@
 
 \lx _ra
 \ps vs
+\sn 1
 \ge devoir
 \gn 应该
-\xv ɲɯ-nɤʁaʁ ma kɯ-ra maŋe
-\xn 他只顾着玩，其它什么也不管
+\sn 2
+\ge avoir besoin de 
+\gn 需要
+\xv nɤʑɯɣ tɕhi ra?
+\xn 你需要什么？
+\xv aʑɯɣ kɯ-ra me
+\xn 我什么也不需要
+\cf mɤra ma
 \dt 13/May/2014
 
 \lx _raŋ
@@ -49485,8 +49541,9 @@
 \ps vs
 \pdl dir 
 \pdv nɯ
-\ge extrême 
+\ge être extrême 
 \gn 极度的 
+\cf naχaʁ
 
 \lx _saχɕɤra
 \wav vt-saXCAra
@@ -53395,8 +53452,10 @@
 \ge assidu 
 \gn 努力 
 \hbf 1115 
+\ng serie
 \xv kɤ-rɤma to-stu
 \xn 他工作很努力
+\un 同{mbat}连用时构成连动式谓语
 \xv stu-a mbat-a
 \xn 我会努力的
 \xv tɤ-stu tɤ-mbat je
@@ -54942,14 +55001,14 @@
 \xn 我脱了衣服
 \xv ɯ-kri nɯ-tɕat-a
 \xn 我把猪油熬出来了
-\xv kɤ-ɤlɯlɤt mɤ-kɯ-ra ɲɤ-tɯ-tɕɤt
-\xn 你们令他们不要打架
 \xv tɯ-ɣli thɯ-tɕɤt-i
 \xn 我们出圈肥了
 \xv ɯʑo taʁndo mɯ-pjɤ-tso tɕe ɯ-ɣi ra kɯ pjɤ́-wɣ-tɕɤt
 \xn 他不听指挥，家人就把他赶出家了
 \xv tʂapa ɯ-ŋgɯ fsapaʁ ra chɯ́-wɣ-tɕɤt ɲɯ-ra
 \xn 要把圈里的牲畜赶出来
+\xv kɤ-ɤlɯlɤt mɤ-kɯ-ra ɲɤ-tɯ-tɕɤt
+\xn 你们令他们不要打架
 \pdl dir 
 \pdv thɯ-
 \ge élever
@@ -57126,10 +57185,10 @@
 \pdv tɤ-
 \ng refl
 \ng trop
-\ge impressionant 
-\gn 逞能，在别人面前体现自己的能力 
+\ge fanfaronner 
+\gn 逞能
 \xv jiɕqha kɯ-znɤchacha ci ɲɯ-ŋu
-\xn 他很逞能
+\xn 他是个逞能的人
 \cf znɤtʂhɯtʂhɯt
 \dt 24/Aug/2012
 
@@ -57151,6 +57210,8 @@
 \xv nɤʑo ɲɯ-tɯ-znɤɕqraʁɕqraʁ
 \xn 你自以为很聪明
 \cf ɕqraʁ
+\sy znɤchacha
+\sy rɯχparɤβ
 \dt 15/Sep/2011
 
 \lx _znɤftɕɤftɕɤl
@@ -72418,7 +72479,6 @@ l
 \pdv lɤ-
 \ge faire de la ficelle en roualnt dans les mains
 \gn 搓线（用手）
-\lx 
 \sy pɣo
 \sy rɯm
 \dv (kɤ-zgrɯl cho kɤ-rɤjɯɣ) naχtɕɯɣ ri kɤ-zgrɯl nɯnɯ ɣɯ kɯ-jpum nɯra tɕe kɤ-zgrɯl tu-kɯ-ti ŋu, kɯ-xtshɯm nɯra kɤ-rɤjɯɣ tu-kɯ-ti.
@@ -72431,3 +72491,61 @@ l
 \ge rassembler dans un coin
 \gn 把分散的物体集中在一个角落里
 \dv yiban tɕe ɯ-βzɯr tsa jú-wɣ-sɤzɣɯt ra tɕe, kɤ-sɤrtɕhoʁ tu-kɯ-ti ŋu
+
+\lx _ɣɤmbɣomru
+\wav8 kWGAmbGomru
+\ps vs
+\ge aux mouvements vifs
+\gn 动作快
+
+\lx _naχaʁ
+\wav8 YWnaXaRa
+\ps vt
+\ge être surpris par 
+\gn 对……感到惊奇
+\xv aʑo ɲɯ-naχaʁ-a ɕti
+\xn 我对这件事感到惊奇
+\sy nɤmtshɤr
+\cf saχaʁ
+
+\lx _rɯχparɤβ
+\ps vt
+\pdl dir 
+\pdv tɤ-
+\ge se vanter
+\gn 卖弄，夸耀自己
+\sy znɤchacha
+
+\lx _amar
+\cf mar
+
+\lx tɕhaχɯ
+\ps n
+\ge théière
+\gn 茶壶
+\et fn:茶壶
+
+\lx _znɯkhrɯm
+\cf nɯkhrɯm 
+
+\lx _znɯpoʁ
+\cf nɯpoʁ 
+
+\lx _laŋ
+\ps vi
+\pdl dir
+\pdv tɤ-
+\ge se soulever
+\gn 起义
+\et laŋ
+\xn mkharmaŋ to-laŋ-nɯ
+\xv 老百姓起义了
+
+\lx _nɯrmɯ 
+\ps vi
+\pdl dir
+\pdv nɯ-
+\ge se coucher tard
+\gn 晚睡 
+\cf tɯrmɯ 
+\cf nɯrmɯsoz
