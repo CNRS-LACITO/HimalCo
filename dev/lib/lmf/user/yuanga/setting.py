@@ -14,163 +14,215 @@ FRENCH = "French"
 
 ## Semantic domains
 order = [
-    ("TITLE 1", "1. le corps humain"),
+    ("TITLE 1", "1. Le corps : humains et animaux"),
     [
-        ("corps", "1.1. anatomie"),
-        ("fonct.nat", "1.2. fonctions naturelles"),
-        ("TITLE 2", "1.3. santé, maladie, médecine"),
+        ("TITLE 2", "1.1. Anatomie"),
         [
-            ("santé", "1.3.1. santé, maladie"),
-            ("médecine", "1.3.2. remèdes, médecine")
+            ("corps", "1.1.1. Corps humain"),
+            ("corps_animaux", "1.1.2. Corps animal")
         ],
-        ("TITLE 2", "1.4. vêtements, parure, soins du corps"),
+        ("TITLE 2", "1.2. Fonctions naturelles"),
         [
-            ("habillement", "1.4.1. vêtements, parure"),
-            ("soins", "1.4.2. soins du corps")
+            ("fonct.nat", "1.2.1. Fonctions naturelles humain"),
+            ("fonct.nat.animaux", "1.2.2. Fonctions naturelles animaux")
         ],
-        ("TITLE 2", "1.5. positions, déplacements, mouvements, actions"),
+        ("TITLE 2", "1.3. Santé, maladie, médecine"),
         [
-            ("position", "1.5.1. préfixes verbaux de position"),
-            ("mouvement", "1.5.2. préfixes verbaux de mouvement"),
-            ("déplacement", "1.5.3. déplacements, mouvements avec les pieds"),
-            ("portage", "1.5.4. portage"),
-            ("action tête", "1.5.5. mouvements ou actions avec la tête, les yeux, la bouche"),
-            ("action corps", "1.5.6. mouvements de bras, de mains"),
-            ("action", "1.5.7. verbes d'action (en général)"),
-            ("manière", "1.5.8. postverbes de manière")
+            ("santé", "1.3.1. Santé, maladie"),
+            ("médecine", "1.3.2. Remèdes, médecine")
+        ],
+        ("TITLE 2", "1.4. Vêtements, parure, soins du corps"),
+        [
+            ("habillement", "1.4.1. Vêtements, parure"),
+            ("soins", "1.4.2. Soins du corps")
+        ],
+        ("TITLE 2", "1.5. Positions, déplacements, mouvements, actions"),
+        [
+            ("position", "1.5.1. Préfixes verbaux de position"),
+            ("mouvement", "1.5.2. Préfixes verbaux de mouvement"),
+            ("déplacement", "1.5.3. Déplacements, mouvements avec les pieds"),
+            ("portage", "1.5.4. Portage"),
+            ("action tête", "1.5.5. Mouvements ou actions avec la tête, les yeux, la bouche"),
+            ("action corps", "1.5.6. Mouvements de bras, de mains"),
+            ("action", "1.5.7. Verbes d'action (en général)"),
+            ("action_corps_animaux", "1.5.8. Verbes d'action faite par des animaux"),
+            ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments"),
+            ("manière", "1.5.10. Postverbes de manière"),
+            ("action_outils", "1.5.11. Actions avec un instrument, un outil")
         ]
     ],
-    ("TITLE 1", "2. techniques"),
+    ("TITLE 1", "2. Caractéristiques et propriétés"),
     [
-        ("TITLE 2", "2.1. habitat"),
+        ("sons ???", "2.1. Sons, bruits"),
+        ("couleurs ???", "2.2. Couleurs"),
+        ("carac_pers ???", "2.3. Caractéristiques et propriétés des personnes"),
+        ("carac_animaux ???", "2.4. Caractéristiques et propriétés des animaux"),
+        ("TITLE 2", "2.5. Caractéristiques et propriétés des objets"),
         [
-            ("habitat", "2.1.1. habitat"),
-            ("maison", "2.1.2. types de maison, architecture de la maison")
+            ("carac.objet", "2.5.1. Description des objets, formes, consistance, taille"),
+            ("configuration", "2.5.2. Configuration des objets")
         ],
-        ("TITLE 2", "2.2. cultures plantations récoltes"),
+    ],
+    ("TITLE 1", "3. Techniques"),
+    [
+        ("TITLE 2", "3.1. Habitat"),
         [
-            ("cultures", "2.2.1. cultures"),
-            ("champs", "2.2.2. types de champs")
+            ("habitat", "3.1.1. Habitat"),
+            ("maison", "3.1.2. Types de maison, architecture de la maison"),
+            ("maison.objet", "3.1.3. Objets et meubles de la maison"),
         ],
-        ("TITLE 2", "2.3. chasse guerre"),
+        ("TITLE 2", "3.2. Cultures, plantations, récoltes, végétation"),
         [
-            ("armes", "2.3.1. armes"),
-            ("chasse", "2.3.2. chasse"),
-            ("guerre", "2.3.3. guerre")
+            ("cultures", "3.2.1. Cultures, techniques, boutures"),
+            ("culture_objets", "3.2.2. Objets, outils"),
+            ("champs", "3.2.3. Types de champs"),
+            ("végétation", "3.2.4. Végétation")
         ],
-        ("pêche", "2.4. pêche"),
-        ("navigation", "2.5. navigation"),
-        ("feu", "2.6. feu"),
-        ("TITLE 2", "2.7. cuisine alimentation"),
+        ("TITLE 2", "3.3. Chasse guerre"),
         [
-            ("ustensiles", "2.7.1. ustensiles"),
-            ("prép.aliments", "2.7.2. préparation des aliments"),
-            ("cuisson", "2.7.3. modes de cuisson"),
-            ("alimentation", "2.7.4. alimentation")
+            ("armes", "3.3.1. Armes"),
+            ("chasse", "3.3.2. Chasse"),
+            ("guerre", "3.3.3. Guerre")
         ],
-        ("TITLE 2", "2.8. tressage (nattes paniers) cordes noeuds paquets"),
+        ("pêche", "3.4. Pêche"),
+        ("navigation", "3.5. Navigation"),
+        ("feu", "3.6. Feu"),
+        ("TITLE 2", "3.7. Cuisine alimentation"),
         [
-            ("tressage", "2.8.1. tressage"),
-            ("nattes", "2.8.2. nattes"),
-            ("paniers", "2.8.3. paniers"),
-            ("cordes", "2.8.4. cordes"),
-            ("couture", "2.8.5. couture"),
-            ("paquet", "2.8.6. paquetages")
+            ("ustensiles", "3.7.1. Ustensiles"),
+            ("prép.aliments", "3.7.2. Préparation des aliments"),
+            ("cuisson", "3.7.3. Modes de cuisson"),
+            ("alimentation", "3.7.4. Alimentation"),
+            ("nourriture.goût", "3.7.5. Goût des aliments")
         ],
-        ("TITLE 2", "2.9. travail du bois forme et consistance des objets"),
+        ("TITLE 2", "3.8. Tressage (nattes paniers) cordes noeuds paquets"),
         [
-            ("outils", "2.9.1. outils, matériaux"),
-            ("travail bois", "2.9.2. travail bois"),
-            ("carac.objet", "2.9.3. description des objets, formes, consistance")
+            ("tressage", "3.8.1. Tressage"),
+            ("nattes", "3.8.2. Nattes"),
+            ("paniers", "3.8.3. Paniers"),
+            ("cordes", "3.8.4. Cordes"),
+            ("couture", "3.8.5. Couture"),
+            ("paquet", "3.8.6. Paquetages")
+        ],
+        ("TITLE 2", "3.9. Bois et travail du bois, outils"),
+        [
+            ("bois", "3.9.1. Bois"),
+            ("travail bois", "3.9.2. Travail bois")
+        ],
+        ("TITLE 2", "3.10. Outils, instruments, matériaux, chose"),
+        [
+            ("outils", "3.10.1. Outils"),
+            ("instrument", "3.10.2. Instruments")
         ]
     ],
-    ("TITLE 1", "3. individu - société"),
+    ("TITLE 1", "4. Individu - société"),
     [
-        ("étapes vie", "3.1. cours de la vie"),
-        ("TITLE 2", "3.2. fonctions intellectuelles, sentiments"),
+        ("étapes vie", "4.1. Cours de la vie"),
+        ("TITLE 2", "4.2. Fonctions intellectuelles, sentiments"),
         [
-            ("fonct.intellectuelles", "3.2.1. fonctions intellectuelles"),
-            ("sentiments", "3.2.2. sentiments")
+            ("fonct.intellectuelles", "4.2.1. fonctions intellectuelles"),
+            ("sentiments", "4.2.2. Sentiments"),
+            ("temps", "4.2.3. Découpage du temps, jours")
         ],
-        ("TITLE 2", "3.3. parenté alliance"),
+        ("TITLE 2", "4.3. Parenté alliance"),
         [
-            ("parenté", "3.3.1. parenté"),
-            ("appellation parenté", "3.3.2. appellation parenté"),
-            ("désignation parenté", "3.3.3. désignation parenté"),
-            ("alliance", "3.3.4. alliance"),
-            ("couple parenté", "3.3.5. couple parenté")
+            ("parenté", "4.3.1. Parenté"),
+            ("appellation parenté", "4.3.2. Appellation parenté"),
+            ("désignation parenté", "4.3.3. Désignation parenté"),
+            ("alliance", "4.3.4. Alliance"),
+            ("couple parenté", "4.3.5. Couple parenté")
         ],
-        ("TITLE 2", "3.4. organisation sociale richesses dons échanges"),
+        ("TITLE 2", "4.4. Organisation sociale richesses dons échanges"),
         [
-            ("société", "3.4.1. organisation sociale"),
-            ("richesse", "3.4.2. richesses, monnaies traditionnelles"),
-            ("échanges", "3.4.3. dons, échanges, achat et vente, vol")
+            ("société", "4.4.1. Organisation sociale"),
+            ("richesse", "4.4.2. Richesses, monnaies traditionnelles"),
+            ("échanges", "4.4.3. Dons, échanges, achat et vente, vol"),
+            ("coutumes_objets", "4.4.4. Objets coutumiers"),
+            ("coutumes", "4.4.5. Coutumes")
         ],
-        ("religion", "3.5. religion"),
-        ("TITLE 2", "3.6. fêtes danse chant jeux"),
+        ("religion", "4.5. Religion"),
+        ("TITLE 2", "4.6. Fêtes danse chant jeux"),
         [
-            ("fête", "3.6.1. fêtes"),
-            ("jeux", "3.6.2. jeux divers")
+            ("fête", "4.6.1. Fêtes"),
+            ("danse", "4.6.2. Danses"),
+            ("musique", "4.6.3. Musique"),
+            ("jeux", "4.6.4. Jeux divers")
         ],
-        ("TITLE 2", "3.7. traditions orales relations inter-individuelles"),
+        ("TITLE 2", "4.7. Traditions orales relations inter-individuelles"),
         [
-            ("oralité", "3.7.1. tradition orale"),
-            ("discours", "3.7.2. échanges verbaux"),
-            ("exclamations", "3.7.3. exclamations"),
-            ("interaction", "3.7.4. relations"),
+            ("oralité", "4.7.1. Tradition orale"),
+            ("discours", "4.7.2. Discours, échanges verbaux"),
+            ("interaction", "4.7.3. Relations"),
+            ("interpellation", "4.7.4. Interpellation"),
+            ("exclamation", "4.7.5. Exclamation")
         ]
     ],
-    ("TITLE 1", "4. nature"),
+    ("TITLE 1", "5. Nature"),
     [
-        ("TITLE 2", "4.1. ciel"),
+        ("TITLE 2", "5.1. Ciel"),
         [
-            ("astres", "4.1.1. astres"),
-            ("temps", "4.1.2. découpage du temps"),
-            ("vent", "4.1.3. vent"),
-            ("climat", "4.1.4. phénomènes atmosphériques"),
-            ("couleurs", "4.1.5. couleurs")
+            ("astres", "5.1.1. Astres"),
+            ("vent", "5.1.2. Vent"),
+            ("temps_atmosphérique", "5.1.3. Phénomènes atmosphériques et naturels"),
+            ("température", "5.1.4. Température")
         ],
-        ("TITLE 2", "4.2. terre"),
+        ("TITLE 2", "5.2. Terre"),
         [
-            ("terrain", "4.2.1. les terrains et leur constitution"),
-            ("topographie", "4.2.2. topographie"),
-            ("orientation", "4.2.3. orientation")
+            ("terrain", "5.2.1. Les terrains et leur constitution"),
+            ("terrain_pierre", "5.2.2. Pierre, roche"),
+            ("terrain_terre", "5.2.3. Terre"),
+            ("topographie", "5.2.4. Topographie"),
+            ("orientation", "5.2.5. Orientation"),
+            ("locatif", "5.2.6. Locatifs")
         ],
-        ("eau", "4.3. eau (eau douce mer)")
+        ("eau", "5.3. Eau (eau douce mer)"),
+        ("matière", "5.4. Matière, matériaux"),
+        ("lumière", "5.5. Lumière")
     ],
-    ("TITLE 1", "5. zoologie"),
+    ("TITLE 1", "6. Zoologie"),
     [
-        ("oiseaux", "5.1. oiseaux"),
-        ("TITLE 2", "5.2. mammifères"),
+        ("oiseaux", "6.1. Oiseaux"),
+        ("TITLE 2", "6.2. Mammifères"),
         [
-            ("mammifères", "5.2.1. mammifères"),
-            ("mammifères marins", "5.2.2. mammifères marins")
+            ("mammifères", "6.2.1. Mammifères"),
+            ("mammifères marins", "6.2.2. Mammifères marins")
         ],
-        ("TITLE 2", "5.3. reptiles"),
+        ("TITLE 2", "6.3. Reptiles"),
         [
-            ("reptiles", "5.3.1. reptiles"),
-            ("reptiles marins", "5.3.2. reptiles marins")
+            ("reptiles", "6.3.1. Reptiles"),
+            ("reptiles marins", "6.3.2. Reptiles marins")
         ],
-        ("crustacés", "5.4. crustacés"),
-        ("échinodermes", "5.5. échinodermes"),
-        ("insectes", "5.6. insectes"),
-        ("mollusques", "5.7. mollusques"),
-        ("poissons", "5.8. poissons"),
+        ("crustacés", "6.4. Crustacés, crabes"),
+        ("échinodermes", "6.5. Echinodermes"),
+        ("mollusque", "6.6. Mollusques"),
+        ("coquillage", "6.7. Coquillages"),
+        ("poisson", "6.8. Poissons"),
+        ("anguille", "6.9. Anguilles"),
+        ("insecte", "6.10. Insectes")
     ],
-    ("TITLE 1", "6. botanique"),
+    ("TITLE 1", "7. Botanique"),
     [
-        ("arbre", "6.1. arbre"),
-        ("plantes", "6.2. description des végétaux"),
-        ("cocotier", "6.3. cocotier"),
-        ("ignames", "6.4. ignames"),
-        ("taros", "6.5. taros"),
-        ("patates douces", "6.6. patates douces"),
-        ("canne à sucre", "6.7. canne à sucre"),
-        ("bananiers", "6.8. bananiers"),
-        ("manioc", "6.9. manioc")
+        ("arbre", "7.1. Arbre"),
+        ("TITLE 2", "7.2. Description des végétaux"),
+        [
+            ("plantes", "7.2.1. Nom des plantes"),
+            ("plantes_partie", "7.2.2. Parties de plantes")
+        ],
+        ("arbre_cocotier", "7.3. Cocotiers"),
+        ("igname", "7.4. Ignames"),
+        ("taro", "7.5. Taros"),
+        ("bananier", "7.6. Bananiers et bananes"),
+        ("cucurbitacée", "7.7. Cucurbitacées"),
+        ("plantes.fruit", "7.8. Fruits")
     ],
-    ("classificateur", "7. classificateur"),
-    ("quantificateur", "8. quantificateur")
+    ("TITLE 1", "8. Classificateur"),
+    [
+        ("classificateur numérique", "8.1. Classificateurs numériques"),
+        ("classificateur possessif", "8.2. Classificateurs possessifs"),
+        ("classificateur nourriture", "8.3. Classificateurs de la nourriture"),
+        ("classificateur sémantique", "8.4. Classificateurs sémantiques")
+    ],
+    ("quantificateur", "9. Quantificateur")
 ]
 
 def read_order(order, sd_order, rank, sd_list):
