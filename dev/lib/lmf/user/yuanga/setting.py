@@ -34,7 +34,7 @@ order = [
         ("TITLE 2", "1.4. Vêtements, parure, soins du corps"),
         [
             ("habillement", "1.4.1. Vêtements, parure"),
-            ("soins", "1.4.2. Soins du corps")
+            ("soin", "1.4.2. Soins du corps")
         ],
         ("TITLE 2", "1.5. Positions, déplacements, mouvements, actions"),
         [
@@ -42,24 +42,25 @@ order = [
             ("mouvement", "1.5.2. Préfixes verbaux de mouvement"),
             ("déplacement", "1.5.3. Déplacements, mouvements avec les pieds"),
             ("portage", "1.5.4. Portage"),
-            ("action tête", "1.5.5. Mouvements ou actions avec la tête, les yeux, la bouche"),
-            ("action corps", "1.5.6. Mouvements de bras, de mains"),
+            ("action.tête", "1.5.5. Mouvements ou actions avec la tête, les yeux, la bouche"),
+            ("action_corps", "1.5.6. Mouvements de bras, de mains"),
             ("action", "1.5.7. Verbes d'action (en général)"),
             ("action_corps_animaux", "1.5.8. Verbes d'action faite par des animaux"),
             ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments"),
-            ("manière", "1.5.10. Postverbes de manière"),
-            ("action_outils", "1.5.11. Actions avec un instrument, un outil")
+            ("action.plantes","1.5.10. Actions liées aux plantes"),
+            ("manière", "1.5.11. Postverbes de manière"),
+            ("action_outils", "1.5.12. Actions avec un instrument, un outil")
         ]
     ],
     ("TITLE 1", "2. Caractéristiques et propriétés"),
     [
-        ("sons ???", "2.1. Sons, bruits"),
-        ("couleurs ???", "2.2. Couleurs"),
-        ("carac_pers ???", "2.3. Caractéristiques et propriétés des personnes"),
-        ("carac_animaux ???", "2.4. Caractéristiques et propriétés des animaux"),
+        ("son", "2.1. Sons, bruits"),
+        ("couleur", "2.2. Couleurs"),
+        ("caract.personne", "2.3. Caractéristiques et propriétés des personnes"),
+        ("caract.animal", "2.4. Caractéristiques et propriétés des animaux"),
         ("TITLE 2", "2.5. Caractéristiques et propriétés des objets"),
         [
-            ("carac.objet", "2.5.1. Description des objets, formes, consistance, taille"),
+            ("caract.objet", "2.5.1. Description des objets, formes, consistance, taille"),
             ("configuration", "2.5.2. Configuration des objets")
         ],
     ],
@@ -74,7 +75,7 @@ order = [
         ("TITLE 2", "3.2. Cultures, plantations, récoltes, végétation"),
         [
             ("cultures", "3.2.1. Cultures, techniques, boutures"),
-            ("culture_objets", "3.2.2. Objets, outils"),
+            ("cultures_objet", "3.2.2. Objets, outils"),
             ("champs", "3.2.3. Types de champs"),
             ("végétation", "3.2.4. Végétation")
         ],
@@ -89,16 +90,16 @@ order = [
         ("feu", "3.6. Feu"),
         ("TITLE 2", "3.7. Cuisine alimentation"),
         [
-            ("ustensiles", "3.7.1. Ustensiles"),
+            ("ustensile", "3.7.1. Ustensiles"),
             ("prép.aliments", "3.7.2. Préparation des aliments"),
             ("cuisson", "3.7.3. Modes de cuisson"),
-            ("alimentation", "3.7.4. Alimentation"),
-            ("nourriture.goût", "3.7.5. Goût des aliments")
+            ("nourriture", "3.7.4. Alimentation"),
+            ("nourriture_goût", "3.7.5. Goût des aliments")
         ],
         ("TITLE 2", "3.8. Tressage (nattes paniers) cordes noeuds paquets"),
         [
             ("tressage", "3.8.1. Tressage"),
-            ("nattes", "3.8.2. Nattes"),
+            ("natte", "3.8.2. Nattes"),
             ("paniers", "3.8.3. Paniers"),
             ("cordes", "3.8.4. Cordes"),
             ("couture", "3.8.5. Couture"),
@@ -107,7 +108,7 @@ order = [
         ("TITLE 2", "3.9. Bois et travail du bois, outils"),
         [
             ("bois", "3.9.1. Bois"),
-            ("travail bois", "3.9.2. Travail bois")
+            ("bois_travail", "3.9.2. Travail bois")
         ],
         ("TITLE 2", "3.10. Outils, instruments, matériaux, chose"),
         [
@@ -117,10 +118,10 @@ order = [
     ],
     ("TITLE 1", "4. Individu - société"),
     [
-        ("étapes vie", "4.1. Cours de la vie"),
+        ("étapes.vie", "4.1. Cours de la vie"),
         ("TITLE 2", "4.2. Fonctions intellectuelles, sentiments"),
         [
-            ("fonct.intellectuelles", "4.2.1. fonctions intellectuelles"),
+            ("fonct.intell.", "4.2.1. fonctions intellectuelles"),
             ("sentiments", "4.2.2. Sentiments"),
             ("temps", "4.2.3. Découpage du temps, jours")
         ],
@@ -130,14 +131,14 @@ order = [
             ("appellation parenté", "4.3.2. Appellation parenté"),
             ("désignation parenté", "4.3.3. Désignation parenté"),
             ("alliance", "4.3.4. Alliance"),
-            ("couple parenté", "4.3.5. Couple parenté")
+            ("parenté_couple", "4.3.5. Couple parenté")
         ],
         ("TITLE 2", "4.4. Organisation sociale richesses dons échanges"),
         [
             ("société", "4.4.1. Organisation sociale"),
-            ("richesse", "4.4.2. Richesses, monnaies traditionnelles"),
+            ("richesses", "4.4.2. Richesses, monnaies traditionnelles"),
             ("échanges", "4.4.3. Dons, échanges, achat et vente, vol"),
-            ("coutumes_objets", "4.4.4. Objets coutumiers"),
+            ("coutumes_objet", "4.4.4. Objets coutumiers"),
             ("coutumes", "4.4.5. Coutumes")
         ],
         ("religion", "4.5. Religion"),
@@ -146,7 +147,7 @@ order = [
             ("fête", "4.6.1. Fêtes"),
             ("danse", "4.6.2. Danses"),
             ("musique", "4.6.3. Musique"),
-            ("jeux", "4.6.4. Jeux divers")
+            ("jeu", "4.6.4. Jeux divers")
         ],
         ("TITLE 2", "4.7. Traditions orales relations inter-individuelles"),
         [
@@ -161,7 +162,7 @@ order = [
     [
         ("TITLE 2", "5.1. Ciel"),
         [
-            ("astres", "5.1.1. Astres"),
+            ("astre", "5.1.1. Astres"),
             ("vent", "5.1.2. Vent"),
             ("temps_atmosphérique", "5.1.3. Phénomènes atmosphériques et naturels"),
             ("température", "5.1.4. Température")
@@ -181,7 +182,7 @@ order = [
     ],
     ("TITLE 1", "6. Zoologie"),
     [
-        ("oiseaux", "6.1. Oiseaux"),
+        ("oiseau", "6.1. Oiseaux"),
         ("TITLE 2", "6.2. Mammifères"),
         [
             ("mammifères", "6.2.1. Mammifères"),
@@ -189,11 +190,11 @@ order = [
         ],
         ("TITLE 2", "6.3. Reptiles"),
         [
-            ("reptiles", "6.3.1. Reptiles"),
+            ("reptile", "6.3.1. Reptiles"),
             ("reptiles marins", "6.3.2. Reptiles marins")
         ],
         ("crustacés", "6.4. Crustacés, crabes"),
-        ("échinodermes", "6.5. Echinodermes"),
+        ("échinoderme", "6.5. Echinodermes"),
         ("mollusque", "6.6. Mollusques"),
         ("coquillage", "6.7. Coquillages"),
         ("poisson", "6.8. Poissons"),
@@ -206,7 +207,8 @@ order = [
         ("TITLE 2", "7.2. Description des végétaux"),
         [
             ("plantes", "7.2.1. Nom des plantes"),
-            ("plantes_partie", "7.2.2. Parties de plantes")
+            ("plantes_partie", "7.2.2. Parties de plantes"),
+            ("plantes_processus", "7.2.3. Processus")
         ],
         ("arbre_cocotier", "7.3. Cocotiers"),
         ("igname", "7.4. Ignames"),

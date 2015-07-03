@@ -549,7 +549,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \dt 04/Nov/2014
 
 \lx ãbe
-\is fonct.intell
+\is fonct.intell.
 \dialx GO(s)
 \ps v
 \ge croire tout savoir 
@@ -1161,7 +1161,7 @@ maisons carrées ; Dubois)
 \is configuration
 \ge façade ; surface
 \sn 3
-\is caract.
+\is caract.personne
 \ge apparence; aspect
 \re
 \gb
@@ -1465,7 +1465,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 04/Nov/2014
 
 \lx alö
-\is perception
+\is fonct.nat
 \dialx GO(s) BO
 \va alu
 \ve PA
@@ -1746,7 +1746,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 20/Jul/2007
 
 \lx amwidra
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx GO(s)
 \va aamwida
 \ve BO
@@ -1995,7 +1995,7 @@ vers lui et qu'il la récupère ensuite)
 \dt 19/Dec/2014
 
 \lx a-pe-paçaxai
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \va a-pe-pha-caaxai
 \ve PA
@@ -2025,7 +2025,7 @@ vers lui et qu'il la récupère ensuite)
 \dt 02/Mar/2010
 
 \lx a-pii
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe en train de muer (et de jeter sa carapace)
@@ -2288,7 +2288,7 @@ pour offrir les dons coutumiers à ceux qui viennent d'ailleurs ('aavhe')
 \dt 27/Jun/2007
 
 \lx auva
-\is poisson_mammifère
+\is mammifères marins
 \dialx GO(s) BO
 \ps n
 \ge dugong; vache marine
@@ -3449,7 +3449,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 
 \lx balaa-mãã
 \hm
-\is mer
+\is eau
 \dialx GO(s)
 \ps n
 \ge marée haute à l'aurore
@@ -3561,7 +3561,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \dt 23/Dec/2014
 
 \lx balexa
-\is bananes
+\is bananier
 \dialx GO(s) BO
 \ps n
 \ge goût d'une banane (minyô) qui colle à la langue quand elle n'est pas mûre; et par
@@ -4324,7 +4324,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dt 04/Jun/2015
 
 \lx bèxè
-\is maladie
+\is santé
 \dialx GOs
 \ps n
 \ge bourbouille
@@ -4618,7 +4618,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dt 09/Jun/2015
 
 \lx biluu
-\is mollusque_gastéropode
+\is mollusque
 \dialx GO(s) PA BO
 \ps n
 \ge escargot de terre; bulime
@@ -4964,7 +4964,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 
 \lx böö
 \ph mbÏ‰
-\is maladie
+\is santé
 \dialx GO(s)
 \ps v
 \ge réaction cutanée (avoir une) à qqch; s'infecter avec la sève de l'acajou
@@ -5012,7 +5012,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 
 \lx böle
 \is fonct.nat
-\is perception
+\is fonct.nat
 \ph bÏ‰le
 \dialx GO(s) BO
 \va bööle
@@ -5122,7 +5122,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dt 09/Jun/2015
 
 \lx bu
-\is reptile_tortue
+\is reptile
 \hm 5
 \dialx GO(s)
 \ps n
@@ -5257,7 +5257,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dt 27/Feb/2006
 
 \lx buubu
-\is maladie
+\is santé
 \ps n
 \ge tache décolorée (sur peau)
 \rgb
@@ -6073,7 +6073,7 @@ rendre comestible
 \dt 17/Feb/2010
 
 \lx bwage
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GOs
 \ps v
 \ge dévier (eau)
@@ -6091,7 +6091,7 @@ rendre comestible
 \dt 10/Jun/2015
 
 \lx bwagi ???
-\is noeud
+\is tressage
 \hm 2
 \dialx
 \ps n
@@ -6674,7 +6674,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 07/Nov/2014
 
 \lx bwawe
-\is action_mains
+\is action_corps
 \dialx GOs
 \ps v
 \ge démêler 
@@ -6748,7 +6748,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 19/Feb/2010
 
 \lx bwaxixi
-\is perception
+\is fonct.nat
 \dialx GO(s)
 \va bwaxii
 \ps v
@@ -6953,7 +6953,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 
 \lx bwe-kui
 \is igname
-\is cultures_bouture
+\is cultures
 \dialx GO(s) PA
 \ps n
 \ge tête de l'igname (qui est replantée)
@@ -6982,7 +6982,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 26/Jun/2007
 
 \lx bweena
-\is reptile_lézard
+\is reptile
 \dialx GO(s)  PA BO
 \ps n
 \ge lézard
@@ -7022,7 +7022,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 02/Mar/2010
 
 \lx bwe-pai
-\is action_résultat
+\is fonct.intell.
 \dialx GO(s) PA
 \va bwe-vai
 \ve GO(s) PA
@@ -7173,7 +7173,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 23/Dec/2014
 
 \lx bwèè-xò
-\is déplacement_traces
+\is déplacement
 \dialx GO(s) PA WEM BO
 \ps n
 \ge traces; empreintes (homme ou animal)
@@ -7204,7 +7204,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 09/Jun/2015
 
 \lx bwi
-\is maladie
+\is santé
 \dialx GO(s)  PA BO
 \ps v STAT
 \ge aveugle
@@ -7290,7 +7290,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 09/Jun/2015
 
 \lx bwixuu
-\is mammifère_chauve-souris
+\is mammifères
 \dialx GO(s)
 \va bwixu
 \ve PA
@@ -7324,7 +7324,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 22/Dec/2014
 
 \lx bwò
-\is mammifère_chauve-souris
+\is mammifères
 \hm 1
 \ph bwÉ”
 \dialx GO(s) PA BO
@@ -7421,7 +7421,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 11/Jul/2007
 
 \lx bwò-kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va bò-kabun
 \dialx BO PA
@@ -7586,7 +7586,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 11/Nov/2014
 
 \lx chaa
-\is mer
+\is eau
 \ph cÊ°a:
 \dialx GO(s)
 \ps n
@@ -7754,7 +7754,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 04/Nov/2014
 
 \lx cabul
-\is eau_action
+\is action eau, liquide, fumée
 \dialx PA BO [BM]
 \ps v
 \ge déborder
@@ -8484,7 +8484,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 19/Dec/2014
 
 \lx cawane
-\is navigation_bateau
+\is navigation
 \dialx GO(s)
 \va cawan
 \ve BO (Corne)
@@ -8500,7 +8500,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 23/Dec/2014
 
 \lx chawe
-\is prep.aliments
+\is prép.aliments
 \ph cÊ°awe
 \dialx GOs
 \ps v
@@ -8981,7 +8981,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dt 09/Jun/2015
 
 \lx chele  
-\is action_mains
+\is action_corps
 \hm 1
 \ph cÊ°ele
 \dialx GO(s) PA
@@ -9348,7 +9348,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 09/Jun/2007
 
 \lx cî
-\is crabe
+\is crustacés
 \dialx GO(s) PA BO
 \ps n
 \ge crabe de palétuvier (plus petit que "ji, jim", noir, creuse la terre)
@@ -9457,7 +9457,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 
 \lx ciia
 \hm 2
-\is mollusque_Céphalopodes
+\is mollusque
 \ph ci:a
 \dialx GO(s) BO PA
 \va ciiya
@@ -9472,7 +9472,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 
 \lx ciia ??
 \hm 3
-\is maladie
+\is santé
 \dialx GO Dubois
 \ps n
 \ge ulcère
@@ -9772,7 +9772,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 11/Mar/2010
 
 \lx cinevwö
-\is caract.
+\is caract.personne
 \ph cineÎ²o
 \dialx GO(s) BO
 \ps v STAT
@@ -9831,7 +9831,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 09/Jun/2015
 
 \lx chinõõ
-\is action_mains
+\is action_corps
 \dialx GO(s) PA
 \ph cÊ°inÉ”ÌƒÌƒ:
 \ps v
@@ -10031,7 +10031,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 04/Nov/2014
 
 \lx civwi
-\is perception
+\is fonct.nat
 \ph ciÎ²i
 \dialx GO(s)
 \ps v
@@ -10308,7 +10308,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 09/Jun/2015
 
 \lx coboe
-\is action_mains
+\is action_corps
 \dialx GO(s)
 \va cobwoi
 \ve BO (Corne, BM)
@@ -10517,7 +10517,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \dt 23/Nov/2014
 
 \lx côôni
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge toucher à qqch 
@@ -10543,7 +10543,7 @@ couvrant la maison; plus petit que ce-mwa; Dubois)
 \ge immangeable (taro et manioc, quand c'est mal cuit) 
 \re
 \sn 2
-\is fonct.intell
+\is fonct.intell.
 \ge zozoter (sens figuré)
 \re
 \gb
@@ -10818,7 +10818,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 10/Jun/2015
 
 \lx cubu
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \ps v
 \ge déborder
@@ -10882,7 +10882,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 16/Jul/2007
 
 \lx cul (a) kao
-\is eau_action
+\is action eau, liquide, fumée
 \dialx PA
 \va col a kao
 \ve BO
@@ -10959,7 +10959,7 @@ dans le processus dont l'un est celui qui coupe)
 \gb
 \rgb
 \sn 2
-\is caract.
+\is caract.personne
 \ge courage ; courageux
 \re
 \gb
@@ -11187,7 +11187,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 09/Jun/2015
 
 \lx draba
-\is mer
+\is eau
 \ph É–aba
 \dialx GO(s)
 \ps n
@@ -11217,7 +11217,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx drabu
 \ph É–abu
-\is reptile_tortue
+\is reptile
 \dialx GO(s)
 \ps n
 \ge tortue de mer "grosse tête"
@@ -11413,7 +11413,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 09/Jun/2015
 
 \lx drale
-\is crabe
+\is crustacés
 \hm 3
 \ph É–ale 
 \dialx GO(s)
@@ -11552,10 +11552,10 @@ dans le processus dont l'un est celui qui coupe)
 \ps n
 \ge
 \sn 1
-\is éléments_atmosphère
+\is temps_atmosphérique
 \ge vapeur; brouillard
 \sn 2
-\is fonct.nat.
+\is fonct.nat
 \ge haleine
 \re
 \gb
@@ -11599,7 +11599,7 @@ dans le processus dont l'un est celui qui coupe)
 
 \lx daatra ???
 \dialx
-\is mer
+\is eau
 \va daara
 \ve BO [Corne]
 \ps n
@@ -11614,7 +11614,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 22/Dec/2014
 
 \lx drau
-\is mer
+\is eau
 \hm 1
 \ph nÉ–au
 \dialx GO(s) 
@@ -11650,7 +11650,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 23/Dec/2014
 
 \lx drava-dröö
-\is nourriture_cuisson
+\is cuisson
 \dialx GO(s)
 \ps n
 \ge vapeur de la marmite
@@ -12075,7 +12075,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 17/Mar/2010
 
 \lx degam???
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx BO [BM, Corne]
 \ph ndeÅ‹gam
 \ps n
@@ -12090,7 +12090,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 21/Dec/2014
 
 \lx dei 
-\is action_mains
+\is action_corps
 \dialx PA BO [Corne]
 \va deei
 \ps v
@@ -12127,7 +12127,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 11/Nov/2014
 
 \lx dèl ???
-\is mer
+\is eau
 \dialx BO [Corne]
 \ps n
 \ge caillasse; corail concassé (pour les routes)
@@ -12417,7 +12417,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 09/Jun/2015
 
 \lx dilee
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge crépir ; faire un mur en torchis
@@ -12547,7 +12547,7 @@ Se déguste de préférence sucré.
 \dt 13/Jul/2007
 
 \lx dimwãã ko 
-\is oiseau_corps
+\is corps_animaux
 \dialx GO(s)
 \va dimwãã diwe-ko ??
 \ve BO PA
@@ -12616,7 +12616,7 @@ Se déguste de préférence sucré.
 \dt 16/Jul/2007
 
 \lx diva ???
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx GO
 \va diia
 \ve GO
@@ -12852,7 +12852,7 @@ Se déguste de préférence sucré.
 \dt 23/Dec/2014
 
 \lx doau
-\is crabe
+\is crustacés
 \dialx PA
 \ps n
 \ge crabe (de creek et de forêt, tout petit, quelques cms)
@@ -13103,7 +13103,7 @@ Se déguste de préférence sucré.
 \dt 09/Jun/2015
 
 \lx dònrò 
-\is ciel
+\is astre
 \dialx GO(s)
 \ph dÉ”É³É” ; dÉ”É³É”Ìƒ 
 \va dòòn
@@ -13123,7 +13123,7 @@ Se déguste de préférence sucré.
 \dt 10/Jun/2015
 
 \lx dõõgo
-\is crabe
+\is crustacés
 \ph dÉ”Ìƒ:go
 \dialx GO(s)
 \ps n
@@ -14440,7 +14440,7 @@ de frère de mère ; fils de la soeur du père
 \dt 19/Dec/2014
 
 \lx êgu-zo
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \va ayò
 \ve BO PA
@@ -14555,7 +14555,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ge oui
 \re
 \sn 2
-\is fonct.intell
+\is fonct.intell.
 \ge accepter; dire oui
 \re
 \gb
@@ -15527,7 +15527,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 08/Feb/2006
 
 \lx gaga
-\is mammifère_chauve-souris
+\is mammifères
 \dialx GO(s)
 \ps n
 \ge roussette (avec du blanc sur le cou)
@@ -15610,7 +15610,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \sn 1
 \is plantes_processus
 \sn 2
-\is étape_vie
+\is étapes.vie
 \ge sortir du cocon (papillon)
 \re
 \gb
@@ -16202,7 +16202,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is plantes
 \ge bambou
 \sn 2
-\is outils_société
+\is outils
 \ge couteau de bambou ; couteau à subincision
 \sn 3
 \is musique
@@ -16541,7 +16541,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx gò-wô
-\is navigation_bateau
+\is navigation
 \dialx GO(s)
 \va go-wòny 
 \ve BO
@@ -16557,7 +16557,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx grenui
-\is batracien
+\is reptile
 \is emprunt
 \dialx GO(s)
 \va goronui
@@ -16652,7 +16652,7 @@ queue, taches pourpres sur le ventre)
 
 \lx gu
 \hm 4
-\is caract.
+\is caract.personne
 \dialx GO(s) BO [Corne]
 \ps v STAT
 \ge vrai; droit
@@ -16727,7 +16727,7 @@ queue, taches pourpres sur le ventre)
 \dt 09/Jun/2015
 
 \lx gubain ???
-\is noeud
+\is tressage
 \dialx BO [Corne]
 \ps n
 \ge noeud de filet
@@ -16832,7 +16832,7 @@ queue, taches pourpres sur le ventre)
 \dt 25/Dec/2014
 
 \lx guni
-\is maladie
+\is santé
 \dialx GO(s)
 \va gunim
 \ve BO PA
@@ -16922,7 +16922,7 @@ queue, taches pourpres sur le ventre)
 \dt 14/Mar/2010
 
 \lx ha
-\is mammifère_chauve-souris
+\is mammifères
 \hm 1
 \dialx GO(s) PA
 \ps n
@@ -17013,7 +17013,7 @@ queue, taches pourpres sur le ventre)
 \dt 07/Nov/2014
 
 \lx hã
-\is caract.objet_taille
+\is caract.objet
 \hm 2
 \dialx PA BO
 \va hangai
@@ -17521,7 +17521,7 @@ queue, taches pourpres sur le ventre)
 
 \lx hããni
 \is société
-\is perception
+\is fonct.nat
 \dialx BO [BM]
 \ps v
 \ge voir (terme de respect pour le Grand Chef)
@@ -17876,7 +17876,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Jun/2015
 
 \lx hãxãî
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s) PA BO
 \ph hÉ›Ìƒ'É£Ã£i
 \va hangai, angai 
@@ -18586,7 +18586,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Jun/2015
 
 \lx hênru
-\is caract.
+\is caract.personne
 \ph hÃªÉ³u
 \dialx GO(s)
 \va hînu
@@ -18886,7 +18886,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx hibil
-\is caract.
+\is caract.personne
 \dialx PA BO
 \ps v
 \ge vif; agile ; dynamique
@@ -19010,7 +19010,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is bois_travail
 \ge écorcer  (niaouli)
 \sn 2
-\is prep.aliments
+\is prép.aliments
 \ge écorcher (animal)
 \ge dépecer
 \re
@@ -19309,7 +19309,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Dec/2014
 
 \lx hi-pwaji
-\is crabe
+\is crustacés
 \ph 'hi-'pwaji
 \dialx GO(s)
 \ps n
@@ -19324,7 +19324,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx hituvaè ???
-\is crustacé
+\is crustacés 
 \dialx BO [Corne]
 \va hiluvai
 \ve GO
@@ -19339,7 +19339,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Nov/2014
 
 \lx hiva
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx GO(s)
 \ps n
 \ge moule; coque (sert de grattoir à banane)
@@ -20004,7 +20004,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA BO
 \ps v
 \sn 1
-\is action_mains
+\is action_corps
 \ge mélanger ; tourner (dans la marmite) 
 \sn 2
 \is action
@@ -20099,7 +20099,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 21/Dec/2014
 
 \lx hôno 
-\is maladie
+\is santé
 \dialx GO(s) PA
 \ps v STAT
 \ge malade (gravement)
@@ -20444,7 +20444,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 03/Nov/2014
 
 \lx hôô-wony
-\is navigation_bateau
+\is navigation
 \ph hoÌƒ-
 \dialx PA
 \ps n
@@ -20767,7 +20767,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 19/Dec/2014
 
 \lx hu-ãgu
-\is maladie
+\is santé
 \dialx GO(s)
 \ps n
 \ge champignon (sur la peau; lit.  qui mange les gens)
@@ -20919,7 +20919,7 @@ la paille; plus petites que 'ce-mwa');
 \cf ku- [BO, PA]
 \ce bout, extrémité d'une surface ou d'une chose étendue
 \sn 2
-\is action_résultat
+\is fonct.intell.
 \va hulò-n
 \ve BO
 \ge résultat (bon ou mauvais); conséquence [BO]
@@ -20985,7 +20985,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 09/Jun/2015
 
 \lx hûn
-\is éléments_atmosphère
+\is temps_atmosphérique
 \dialx PA BO GO(s)
 \ps v
 \ge tonner ; gronder
@@ -21066,7 +21066,7 @@ la paille; plus petites que 'ce-mwa');
 \gb
 \rgb
 \sn 2
-\is action.tête ou corps
+\is action.tête
 \ge mordre
 \ge démanger
 \ge pincer
@@ -21173,7 +21173,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 09/Jun/2015
 
 \lx ii
-\is prep.aliments
+\is prép.aliments
 \hm 1
 \dialx GO(s) PA BO
 \ps v
@@ -21966,7 +21966,7 @@ et permettent son écoulement, évitant l'érosion)
 \dt 09/Jun/2015
 
 \lx ja
-\is caract.
+\is caract.personne
 \dialx GO(s) BO 
 \hm 1
 \ph ndja
@@ -22537,7 +22537,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dt 18/Mar/2010
 
 \lx ji
-\is crabe
+\is crustacés
 \dialx GO(s)
 \va jim
 \ve PA BO
@@ -23329,7 +23329,7 @@ tambour
 \dt 19/Dec/2014
 
 \lx kaa
-\is mer
+\is eau
 \hm 2
 \dialx GO(s) WE
 \ps n
@@ -23790,7 +23790,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 09/Jun/2015
 
 \lx khaboi
-\is action_mains
+\is action_corps
 \dialx BO [Corne]
 \ps v
 \ge étendre la main horizontalement (comme pour tapoter)
@@ -23888,7 +23888,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 19/Dec/2014
 
 \lx khabwa 
-\is mer
+\is eau
 \dialx GO(s)
 \ps n
 \ge marée descendante
@@ -23988,7 +23988,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 07/Nov/2014
 
 \lx kaça-kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va wa-kabun
 \ve PA BO
@@ -24340,7 +24340,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 10/Jun/2015
 
 \lx kaen
-\is mollusque_gastéropode
+\is mollusque
 \dialx PA
 \ps n
 \ge gastéropode d'eau douce
@@ -24524,7 +24524,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 19/Dec/2014
 
 \lx kãgu-hênû
-\is image
+\is maison.objet
 \dialx GO(s)
 \ps n
 \ge négatif d'une photo
@@ -24974,7 +24974,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 23/Nov/2014
 
 \lx kale kou ??
-\is mer
+\is eau
 \dialx BO [Corne]
 \ps n
 \ge marée d'équinoxe
@@ -25151,7 +25151,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 08/Feb/2006
 
 \lx kha-maaçee
-\is caract.
+\is caract.personne
 \ph kha ma:dÊ’e:
 \dialx GO(s)
 \va maaxèè ???
@@ -25488,7 +25488,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 09/Jun/2015
 
 \lx kharo
-\is mer
+\is eau
 \dialx BO [BM]
 \ps n
 \ge corail ; chaux 
@@ -25567,7 +25567,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 23/Dec/2014
 
 \lx katre
-\is éléments_atmosphère
+\is temps_atmosphérique
 \ph ka:Êˆe ; ka:É½e 
 \dialx GO(s)  
 \va kaarèng
@@ -25644,7 +25644,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 03/Nov/2014
 
 \lx katria
-\is maladie
+\is santé
 \ph 'kaÉ½ia
 \dialx GO(s)
 \va karia
@@ -26309,7 +26309,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \dt 27/Feb/2010
 
 \lx khawali
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s) PA 
 \ps v STAT
 \ge long (verticalement : arbre, personne)
@@ -26539,7 +26539,7 @@ gagnant est celui qui l'a propulsé le plus loin)
 \va kale
 \ve BO PA
 \sn 1
-\is mer
+\is eau
 \ps n
 \ge marée montante (être) ; marée haute
 \ge remplir (se) (mer) [BO]
@@ -27032,7 +27032,7 @@ grand que "keruau")
 \dt 25/Dec/2007
 
 \lx kêdi
-\is action_mains
+\is action_corps
 \dialx GOs
 \ps v
 \ge ouvrir une enveloppe (bougna)
@@ -27510,7 +27510,7 @@ grand que "keruau")
 \is mouvement
 \ge faire des moulinets du bras ; moulinet du bras (Ltd 1008)
 \sn 3
-\is caract.
+\is caract.personne
 \ge saoûl (être) (lit. la tête tourne)
 \sn 4
 \is eau
@@ -27832,7 +27832,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx ki
-\is nourriture_cuisson
+\is cuisson
 \hm 1
 \dialx GO(s) PA BO
 \ps v
@@ -27908,7 +27908,7 @@ grand que "keruau")
 \dt 04/Nov/2014
 
 \lx kii
-\is action_mains
+\is action_corps
 \hm 2
 \dialx GOs PA
 \ps v
@@ -27987,7 +27987,7 @@ grand que "keruau")
 
 \lx khî
 \hm 2
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx GO(s)
 \ps n
 \ge huître de palétuvier
@@ -28178,7 +28178,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kibi
-\is nourriture_cuisson
+\is cuisson
 \dialx GO(s) PA BO
 \ps n
 \ge four enterré
@@ -28575,7 +28575,7 @@ grand que "keruau")
 \dialx GO(s) PA BO
 \ps v ; n
 \sn 1
-\is nourriture_cuisson
+\is cuisson
 \ge griller, cuire au feu les prémices des ignames
 \re
 \gb
@@ -28707,7 +28707,7 @@ grand que "keruau")
 \dt 27/Jun/2007
 
 \lx khilò
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s) BO
 \ps v
 \ge couler goutte à goutte ; fuir
@@ -28839,7 +28839,7 @@ grand que "keruau")
 \rgb
 \poc *tunu
 \sn 2
-\is prep.aliments_cuisson
+\is prép.aliments
 \ge cuire / griller sur le feu (sur les braises ou dans les cendres)
 \re
 \gb
@@ -28895,7 +28895,7 @@ grand que "keruau")
 \dialx GO(s) PA BO
 \ps v ; n
 \sn 1
-\is maladie
+\is santé
 \ge malade ; maladie
 \ge faire mal ; être douloureux
 \sn 2
@@ -29026,7 +29026,7 @@ grand que "keruau")
 \dt 22/Dec/2014
 
 \lx khi-trilòò
-\is fonct.intell
+\is fonct.intell.
 \ph kÊ°i-'ÊˆilÉ”:
 \dialx GO(s)
 \va ki-tilò
@@ -29222,7 +29222,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kixa zòò
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ps v
 \ge facile
@@ -29257,7 +29257,7 @@ grand que "keruau")
 \dt 03/Nov/2014
 
 \lx kiya ai-n
-\is caract.
+\is caract.personne
 \dialx PA
 \ps v
 \ge pas dressé
@@ -30279,7 +30279,7 @@ grand que "keruau")
 \dt 03/Jun/2007
 
 \lx khô-kaze
-\is mer
+\is eau
 \dialx GOs
 \ps n
 \ge marée étale (calme)
@@ -30350,7 +30350,7 @@ grand que "keruau")
 \dt 09/Nov/2014
 
 \lx kô-kumala
-\is cultures_bouture
+\is cultures
 \dialx GO(s)
 \va kô-kumwãla
 \ve GO(s)
@@ -30367,7 +30367,7 @@ grand que "keruau")
 \dt 09/Jun/2015
 
 \lx kool
-\is mer
+\is eau
 \dialx PA BO
 \ps n
 \ge vague
@@ -30482,7 +30482,7 @@ grand que "keruau")
 \xn jeter un filet dans l'eau
 \re
 \sn 2
-\is eau_action 
+\is action eau, liquide, fumée 
 \ge vider ; renverser (liquide)
 \re
 \gb
@@ -30495,7 +30495,7 @@ grand que "keruau")
 
 \lx khòle
 \is mouvement
-\is action_mains
+\is action_corps
 \dialx GO(s) BO PA
 \ps v
 \ge toucher (avec la main)
@@ -30780,7 +30780,7 @@ grand que "keruau")
 \dt 12/Feb/2006
 
 \lx kòò-manyô
-\is cultures_bouture
+\is cultures
 \dialx GOs
 \ps n
 \ge bouture de manioc
@@ -30956,7 +30956,7 @@ grand que "keruau")
 
 \lx kooni 
 \is nourriture
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s) WEM
 \ps v
 \ge cuire au four enterré ; mettre au four enterré 
@@ -31120,7 +31120,7 @@ grand que "keruau")
 \dt 04/Nov/2014
 
 \lx kô-nòòl
-\is fonct.nat.
+\is fonct.nat
 \dialx PA BO
 \ps v
 \ge rester_éveillé
@@ -31134,7 +31134,7 @@ grand que "keruau")
 \dt 25/Dec/2014
 
 \lx kõnõõ
-\is caract.
+\is caract.personne
 \ph kÉ”ÌƒnÉ”Ìƒ: (n dental)
 \dialx GO(s)
 \va kònôôl
@@ -31172,7 +31172,7 @@ grand que "keruau")
 \dt 03/Nov/2014
 
 \lx kônya
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \va kônyal 
 \ve WEM WE PA
@@ -31188,7 +31188,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kõ-nhyò
-\is mammifère_chauve-souris
+\is mammifères
 \dialx PA
 \ps n
 \ge grappe de roussettes
@@ -31256,7 +31256,7 @@ grand que "keruau")
 \dt 04/Nov/2014
 
 \lx kò-phaxeen
-\is perception
+\is fonct.nat
 \dialx PA
 \ps v
 \ge écouter un instant, un peu
@@ -31663,7 +31663,7 @@ grand que "keruau")
 \dt 16/Feb/2010
 
 \lx kô-wô
-\is navigation_bateau
+\is navigation
 \dialx GO(s)
 \va kô-wony 
 \ve BO PA
@@ -31679,7 +31679,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kò-wony 
-\is navigation_bateau
+\is navigation
 \dialx BO
 \ps n
 \ge mât du bateau
@@ -31846,7 +31846,7 @@ grand que "keruau")
 \dt 16/Jul/2007
 
 \lx köönri
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \ps v
 \ge cuire à l'étouffée
@@ -32199,7 +32199,7 @@ dimwa ; kubwaolè ; kubweena
 \dt 11/Mar/2010
 
 \lx kuãgòòn ???
-\is mollusque_Pélécypodes
+\is mollusque
 \dialx BO [Corne]
 \va kwãgòn
 \ve BO
@@ -32332,10 +32332,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \is action
 \ge gratter
 \sn 2
-\is prep.aliments
+\is prép.aliments
 \ge écailler le poisson ; écaille (de poisson)
 \sn 3
-\is maladie
+\is santé
 \ge croûtes sur la tête des bébés
 \re
 \gb
@@ -32560,7 +32560,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 09/Nov/2014
 
 \lx kûdo
-\is mer
+\is eau
 \hm 1
 \dialx GO(s)
 \ps n
@@ -32942,7 +32942,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GO(s) PA BO
 \ps n
 \sn 1
-\is crustacé
+\is crustacés 
 \ge crevette 
 \sn 2
 \is jeu
@@ -32965,7 +32965,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx kula
 \hm 2
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s) BO
 \ps vi
 \ge couler ;  répandre (se) ; vider (se)
@@ -32980,7 +32980,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 10/Jun/2015
 
 \lx kula we ni ki
-\is maladie
+\is santé
 \dialx GO(s)
 \ps v
 \ge dysenterie (avoir la); diarhée (avoir la)
@@ -32994,7 +32994,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 22/Dec/2014
 
 \lx kula-be
-\is crustacé
+\is crustacés 
 \dialx GO(s) BO
 \ps n
 \ge crevette (grosse et noire)
@@ -33027,7 +33027,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 21/Nov/2014
 
 \lx kula-kaze
-\is crustacé
+\is crustacés 
 \dialx GO(s)
 \ps n
 \ge langouste
@@ -33046,7 +33046,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ps v
 \ge
 \sn 1
-\is eau_action
+\is action eau, liquide, fumée
 \ge verser ; répandre ; vider
 \re
 \sn 2
@@ -33064,7 +33064,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 10/Jun/2015
 
 \lx kulèng
-\is caract.
+\is caract.personne
 \dialx BO WE
 \ps v
 \ge fou ; imbécile
@@ -33107,7 +33107,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 10/Jun/2015
 
 \lx kulò
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s) BO
 \ps n
 \ge couverture du four (en peaux de niaoulis)
@@ -33610,7 +33610,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx kutru
 \ph kuÊˆu  kuÉ½u 
-\is tubercule_taro
+\is plantes_partie
 \dialx GO(s)
 \va kuru
 \ph kuÉ½u 
@@ -33721,7 +33721,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 14/Feb/2006
 
 \lx ku-wee
-\is tubercule_igname
+\is plantes_partie
 \dialx GOs
 \ps n
 \ge igname (au goût sucré)
@@ -34467,7 +34467,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \is étapes.vie
 \ge mort ; mourir
 \sn 2
-\is maladie
+\is santé
 \ge paralysé ; engourdi
 \re
 \gb
@@ -34484,7 +34484,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge la mort 
 \poc *mate
 \sn 3
-\is maladie
+\is santé
 \ge maladie; malade
 \re
 \gb
@@ -34611,7 +34611,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 14/Jul/2007
 
 \lx mãã
-\is mollusque_gastéropode
+\is mollusque
 \hm 4
 \dialx GO(s) BO PA
 \ps n
@@ -34752,7 +34752,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 09/Jun/2015
 
 \lx mãã ?? mee
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx PA
 \ps v
 \ge cuit (pas)
@@ -35017,7 +35017,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 09/Jun/2015
 
 \lx mâge mhâge ???
-\is noeud
+\is tressage
 \dialx BO
 \ps v
 \ge nouer; noeud (du filet) ; maille ; faire un filet
@@ -35067,7 +35067,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 26/Feb/2010
 
 \lx magira
-\is prep.aliments_cuisson
+\is prép.aliments
 \ph magiÉ½a
 \dialx GOs
 \ps v
@@ -35221,7 +35221,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx mãiyã
 \is nourriture
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \va mãiã
 \ve GO(s)
@@ -35355,7 +35355,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 
 \lx majo
 \ph mandjo
-\is reptile_lézard
+\is reptile
 \dialx GO(s) BO 
 \ps n
 \ge gecko; margouillat; tarente
@@ -35581,7 +35581,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Dec/2014
 
 \lx mane ??
-\is prep.aliments
+\is prép.aliments
 \dialx PA
 \ps v
 \ge fumer le poisson
@@ -35693,7 +35693,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 27/Feb/2010
 
 \lx mani ???
-\is eau_action
+\is action eau, liquide, fumée
 \hm 3
 \dialx GO
 \ps v
@@ -35901,7 +35901,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 10/Jun/2015
 
 \lx maü
-\is caract.
+\is caract.personne
 \dialx BO [Corne]
 \ps v
 \ge démanger ; piquant (piment)
@@ -36033,7 +36033,7 @@ l'épouse) [lit. sec foyer]
 \dt 09/Jun/2015
 
 \lx mã-wãge
-\is maladie
+\is santé
 \dialx GO(s)
 \ps n
 \ge tuberculose ; tuberculeux
@@ -36066,7 +36066,7 @@ l'épouse) [lit. sec foyer]
 \dt 23/Dec/2014
 
 \lx maxa
-\is phénom.atmosphérique
+\is temps_atmosphérique
 \dialx GO(s)
 \va maxal
 \ve PA BO
@@ -36669,7 +36669,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \dt 10/Jun/2015
 
 \lx meedree
-\is phénom.atmosphérique
+\is temps_atmosphérique
 \dialx GO(s)
 \va meedèèn
 \ve PA BO
@@ -36813,7 +36813,7 @@ case (Dubois)
 \dt 26/Feb/2010
 
 \lx me-kaze
-\is mer
+\is eau
 \dialx GO(s)
 \va me-kale
 \ve BO
@@ -36827,7 +36827,7 @@ case (Dubois)
 \dt 16/Jul/2007
 
 \lx me-kônôô
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ps v
 \ge nonchalant ; mou ; doux (animal); apprivoisé
@@ -36894,7 +36894,7 @@ case (Dubois)
 \dt 23/Dec/2014
 
 \lx memee
-\is mer
+\is eau
 \dialx GO(s)
 \va mêmê
 \ve BO
@@ -37041,7 +37041,7 @@ case (Dubois)
 \dt 10/Nov/2008
 
 \lx mèèni
-\is maladie
+\is santé
 \dialx GO(s)
 \ps n
 \ge muguet (boutons sur la langues des bébés)
@@ -37186,7 +37186,7 @@ case (Dubois)
 \dt 25/Dec/2014
 
 \lx mhenõ-mhõ
-\is noeud
+\is tressage
 \dialx GO(s) 
 \va mhenõ-mhõng
 \ve PA BO
@@ -37233,7 +37233,7 @@ case (Dubois)
 
 \lx mhenõõ
 \hm 2
-\is déplacement_traces
+\is déplacement
 \dialx GO(s) WEM
 \ps n
 \ge trace ; marque
@@ -37400,7 +37400,7 @@ un chemin
 \dt 20/Jun/2007
 
 \lx mee-phwa
-\is oiseau_corps
+\is corps_animaux
 \dialx GO(s)
 \va dò-phwa-n 
 \ve PA
@@ -37501,7 +37501,7 @@ espèce d'arbre)
 \dt 21/Nov/2014
 
 \lx me-trabwa
-\is caract.
+\is caract.personne
 \dialx GOs
 \ps NOMR
 \ge forme
@@ -37587,7 +37587,7 @@ espèce d'arbre)
 \dt 13/Feb/2010
 
 \lx mè-wô
-\is navigation_bateau
+\is navigation
 \dialx GO(s)
 \va mee-wony
 \ve PA BO
@@ -37625,7 +37625,7 @@ espèce d'arbre)
 \dt 23/Dec/2014
 
 \lx mexò
-\is maladie
+\is santé
 \dialx GO(s)
 \ps n
 \ge varicelle
@@ -37794,7 +37794,7 @@ espèce d'arbre)
 \dt 09/Nov/2014
 
 \lx minõ
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \va minòng
 \dialx PA BO
@@ -37961,7 +37961,7 @@ espèce d'arbre)
 
 \lx mhõ 
 \hm 2
-\is noeud
+\is tressage
 \dialx GO(s)
 \ph mwÊ°É”Ìƒ
 \va mhwòl
@@ -38154,7 +38154,7 @@ espèce d'arbre)
 \dt 10/Nov/2014
 
 \lx mhõge 
-\is noeud
+\is tressage
 \dialx GO PA BO
 \ph mÊ°É”ÌƒÅ‹ge
 \ps v ; n
@@ -38171,7 +38171,7 @@ espèce d'arbre)
 \dt 10/Nov/2014
 
 \lx môgo
-\is maladie
+\is santé
 \dialx GO(s)
 \va mogòn
 \ve BO PA
@@ -38728,7 +38728,7 @@ central de la case (Dubois)
 \dt 09/Nov/2014
 
 \lx motrò
-\is mer
+\is eau
 \dialx GO(s)
 \ps n
 \ge marée basse du soir
@@ -38886,7 +38886,7 @@ central de la case (Dubois)
 \dt 03/Nov/2014
 
 \lx mhõ-zixe
-\is noeud
+\is tressage
 \dialx GO(s)
 \ps n
 \ge noeud coulant
@@ -39059,7 +39059,7 @@ central de la case (Dubois)
 \dt 09/Jun/2015
 
 \lx mudim ???
-\is poisson_mammifère
+\is mammifères marins
 \dialx BO [Corne]
 \ps n
 \ge dugong
@@ -39147,7 +39147,7 @@ central de la case (Dubois)
 \dt 23/Dec/2014
 
 \lx munrõ
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \va muunõ
 \ve BO
@@ -39227,7 +39227,7 @@ central de la case (Dubois)
 \dt 22/Dec/2014
 
 \lx mura-wô
-\is navigation_bateau
+\is navigation
 \dialx GO(s)
 \ps n
 \ge poupe
@@ -39291,7 +39291,7 @@ central de la case (Dubois)
 \dt 10/Jun/2015
 
 \lx mhûûzi
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe de palétuvier (plus gros que "ji")
@@ -39442,7 +39442,7 @@ central de la case (Dubois)
 \dt 18/Jul/2007
 
 \lx mwa-çii
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO
 \ps
 \ge cuire avec la peau (phai)
@@ -39662,7 +39662,7 @@ central de la case (Dubois)
 \dt 19/Dec/2014
 
 \lx mwang 
-\is caract.
+\is caract.personne
 \dialx PA BO
 \ps v STAT
 \ge mauvais; mal
@@ -39842,7 +39842,7 @@ central de la case (Dubois)
 \dt 18/Jul/2007
 
 \lx mwathra
-\is noeud
+\is tressage
 \dialx GO(s)
 \va mwara
 \ve GO(s)
@@ -40115,7 +40115,7 @@ sauvage (di) et cuit)
 \dt 02/Mar/2010
 
 \lx mhwi 
-\is caract.
+\is caract.personne
 \dialx BO
 \ps v STAT
 \ge timide ; doux
@@ -40705,7 +40705,7 @@ pleurs)
 \dt 09/Jun/2015
 
 \lx nhaxii ???
-\is caract.objet_taille
+\is caract.objet
 \dialx
 \ps
 \ge minuscule; très petit
@@ -41256,7 +41256,7 @@ pleurs)
 
 \lx nhi 
 \hm 2
-\is terrain_roche
+\is terrain_pierre
 \dialx BO [BM]
 \ps n
 \ge roc ; rocher calcaire
@@ -41482,7 +41482,7 @@ pleurs)
 \dt 21/Jul/2007
 
 \lx nriilöö
-\is mer
+\is eau
 \is eau
 \ph É³i:lÏ‰:
 \dialx GO(s) 
@@ -41596,7 +41596,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 27/May/2007
 
 \lx nriô 
-\is éléments_atmosphère
+\is temps_atmosphérique
 \dialx GO(s) BO
 \ph É³ioÌƒ
 \va nhyô
@@ -41795,7 +41795,7 @@ et le début des racines coupées en pointe. Dubois)
 
 \lx nro
 \is fonct.nat
-\is perception
+\is fonct.nat
 \ph É³o
 \dialx GO(s)
 \va nòòl
@@ -41954,7 +41954,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 09/Jun/2015
 
 \lx nro kaö
-\is perception
+\is fonct.nat
 \ph É³o
 \dialx GO(s)
 \ps v
@@ -41972,7 +41972,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 04/Nov/2014
 
 \lx nro phènô
-\is perception
+\is fonct.nat
 \ph É³o
 \dialx GO(s)
 \ps v
@@ -42025,7 +42025,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 23/Dec/2014
 
 \lx nrôô-ba
-\is perception
+\is fonct.nat
 \ph É³Ã´:ba
 \dialx PA
 \ps v
@@ -42074,7 +42074,7 @@ et le début des racines coupées en pointe. Dubois)
 
 \lx nrõbo 
 \is corps
-\is maladie
+\is santé
 \ph É³É”Ìƒbo
 \dialx GO(s)
 \va nõbo, nõbwo
@@ -42317,7 +42317,7 @@ maison ronde (Dubois) ; lit. cou de la marmite
 \dt 23/Dec/2014
 
 \lx nro-maari
-\is perception
+\is fonct.nat
 \ph É³o-ma:ri
 \dialx GOs
 \ps v
@@ -42490,7 +42490,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 14/Jul/2007
 
 \lx nrõõ
-\is perception
+\is fonct.nat
 \hm 2
 \ph ÌƒÌƒÉ³É”Ìƒ:
 \dialx GO(s)
@@ -42570,7 +42570,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 19/Dec/2014
 
 \lx nrõõli 
-\is perception
+\is fonct.nat
 \ph ÌƒÌƒÉ³É”Ìƒ:li
 \dialx GO(s)
 \va nõõli 
@@ -42588,7 +42588,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 11/Nov/2014
 
 \lx nhõõxi
-\is prep.aliments
+\is prép.aliments
 \ph ÌƒÌƒnÊ°É”Ìƒ:É£i
 \dialx GO(s) PA BO
 \va nhrõõxi
@@ -42761,7 +42761,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 
 \lx nõ-wame
 \is fonct.nat
-\is perception
+\is fonct.nat
 \dialx BO [Corne]
 \ps v
 \ge voir mal 
@@ -42819,7 +42819,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \dt 21/Jul/2007
 
 \lx nhre
-\is navigation_bateau
+\is navigation
 \ph É³Ê°e
 \dialx GO(s)
 \va nhe
@@ -43476,7 +43476,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \is caract.objet
 \ge mou; trop mûr
 \sn 2
-\is maladie
+\is santé
 \ge couvert de bobos, d'ulcères; couvert de gale
 \re
 \gb
@@ -43699,7 +43699,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Jun/2015
 
 \lx nhyò
-\is mammifère_chauve-souris
+\is mammifères
 \dialx GO(s) PA 
 \ph É²Ê°É”
 \va nyò, nyõ
@@ -43814,7 +43814,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx nhyônri
-\is éléments_atmosphère
+\is temps_atmosphérique
 \dialx GO(s)
 \ph É²Ê°oÌƒÉ³i
 \va nyõnim
@@ -43958,7 +43958,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 18/Feb/2010
 
 \lx õ
-\is mer
+\is eau
 \hm 2
 \dialx GO(s)
 \ph òòÉ”Ìƒ
@@ -44185,7 +44185,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 07/Nov/2014
 
 \lx òòl
-\is caract.
+\is caract.personne
 \dialx PA BO [Corne]
 \ps v
 \ge ramollir; étirer (s') (comme de la gomme)
@@ -44239,7 +44239,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 14/Jul/2007
 
 \lx oole we
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \ps v
 \ge barrer l'eau
@@ -44449,7 +44449,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 11/Nov/2014
 
 \lx òri
-\is caract.
+\is caract.personne
 \hm 1
 \dialx GO(s) BO
 \ph É”ri
@@ -44874,7 +44874,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ge poumon
 \re
 \sn 2
-\is navigation_bateau
+\is navigation
 \ge radeau ; flotteur
 \re
 \gb lung
@@ -44966,7 +44966,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx paa-bule
-\is eau_action
+\is action eau, liquide, fumée
 \dialx PA
 \ps v
 \ge tremper dans l'eau
@@ -45064,7 +45064,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Jun/2015
 
 \lx paaçae
-\is mer
+\is eau
 \ph pa:Ê’ae
 \dialx GO(s)
 \ps n
@@ -45527,7 +45527,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ps n
 \ge
 \sn 1
-\is tubercule
+\is plantes_partie
 \ge tubercule comestible
 \sn 2
 \is discours
@@ -45576,7 +45576,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx phai
 \hm 1
 \is nourriture
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s)
 \va phaai
 \dialx BO PA
@@ -45598,7 +45598,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 22/Dec/2014
 
 \lx phai cii
-\is nourriture_cuisson
+\is cuisson
 \dialx GO(s)
 \ps v
 \ge bouillir, cuire (les ignames) avec la peau
@@ -45615,7 +45615,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 25/Dec/2014
 
 \lx phai mwa-çii
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \ps v
 \ge cuire avec la peau (bananes)
@@ -45645,7 +45645,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Nov/2014
 
 \lx phaja 
-\is fonct.intell
+\is fonct.intell.
 \dialx WEM WE PA BO
 \ps v
 \ge demander à qqn; interroger qqn
@@ -45853,7 +45853,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 07/Nov/2014
 
 \lx palawu
-\is mer
+\is eau
 \dialx BO [BM]
 \ps n
 \ge récif de corail
@@ -45948,7 +45948,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 19/Dec/2014
 
 \lx paa-majing
-\is terrain_roche
+\is terrain_pierre
 \dialx PA BO
 \ps n
 \ge quartz (pierre blanche & dure, utilisée pour les fours)
@@ -45997,7 +45997,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 09/Jun/2015
 
 \lx paa-moze
-\is eau_action
+\is action eau, liquide, fumée
 \ph pa:moze
 \dialx GOs
 \va paa-moze
@@ -46042,7 +46042,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 20/Feb/2006
 
 \lx paa-neng ??
-\is outils_société
+\is outils
 \dialx BO [Corne]
 \ps n
 \ge pierre ; couteau fait dans cette pierre et utilisée pour la circoncision
@@ -46074,7 +46074,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 21/Feb/2010
 
 \lx paa-nhi
-\is terrain_roche
+\is terrain_pierre
 \dialx GO(s)
 \ps n
 \ge rocher 
@@ -46103,7 +46103,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 09/Jun/2015
 
 \lx pha-nrònrò
-\is fonct.intell
+\is fonct.intell.
 \dialx GO(s)
 \ps v
 \ge faire se souvenir; rappeler qqch à qqn
@@ -46305,7 +46305,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx pao-cabi
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge tambouriner
@@ -46350,7 +46350,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 09/Jun/2015
 
 \lx pao-kaö
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge jeter par dessus; lancer par dessus
@@ -46443,7 +46443,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 12/Mar/2010
 
 \lx pa-pii-nri
-\is prep.aliments
+\is prép.aliments
 \ph pas aspirÃ©
 \dialx GO(s)
 \ps v
@@ -46611,7 +46611,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx parang
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx BO 
 \ps v
 \ge rôtir
@@ -46784,7 +46784,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 09/Nov/2014
 
 \lx pa-tòè
-\is nourriture_cuisson
+\is cuisson
 \ph pa:tÉ”
 \dialx GO(s)
 \ps v
@@ -47071,7 +47071,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 07/Nov/2014
 
 \lx pawe
-\is action_mains
+\is action_corps
 \hm 1
 \dialx GO(s) BO
 \va paawe
@@ -47162,7 +47162,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 25/Dec/2014
 
 \lx paxaa
-\is maladie
+\is santé
 \dialx GO(s) PA
 \ps n
 \ge maladie contagieuse (grippe, etc.)
@@ -47245,7 +47245,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 09/Nov/2014
 
 \lx paxa-kui
-\is tubercule_igname
+\is plantes_partie
 \dialx GO(s) BO PA
 \ps n
 \ge tubercule d'igname
@@ -47259,7 +47259,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 23/Dec/2014
 
 \lx paxa-kumwala
-\is tubercule
+\is plantes_partie
 \dialx GOs PA
 \ps n
 \ge tubercule de patate douce
@@ -47370,7 +47370,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 19/Jul/2007
 
 \lx paxa-uva
-\is tubercule_taro
+\is plantes_partie
 \dialx GO(s) BO PA
 \ps n
 \ge tubercule du taro d'eau
@@ -47451,7 +47451,7 @@ naissance de l'enfant
 \dt 24/Feb/2010
 
 \lx paxe
-\is eau_action
+\is action eau, liquide, fumée
 \dialx PA BO
 \ps v
 \ge dévier (eau)
@@ -47468,7 +47468,7 @@ naissance de l'enfant
 \dt 10/Jun/2015
 
 \lx phaxee 
-\is perception
+\is fonct.nat
 \ph phaÉ£e:
 \dialx GO(s)
 \va phaxeen, phakeen
@@ -48452,7 +48452,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 04/Nov/2014
 
 \lx pe-hatra
-\is action_mains
+\is action_corps
 \dialx GO(s)
 \va pe-hara
 \ve GO(s) PA WEM 
@@ -48690,7 +48690,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 21/Dec/2014
 
 \lx pe-khabeçö
-\is mer
+\is eau
 \dialx GO(s)
 \ps v
 \ge plonger (pour s'amuser, se dit d'enfants)
@@ -49187,7 +49187,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx peeni
-\is action_mains
+\is action_corps
 \is prép.aliments
 \dialx GO(s)
 \ps v
@@ -49222,7 +49222,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-nò-du
-\is perception
+\is fonct.nat
 \dialx GO(s) BO
 \ps
 \ge regarder en bas (sans but)
@@ -49372,7 +49372,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Dec/2014
 
 \lx pe-paree
-\is fonct.intell
+\is fonct.intell.
 \dialx PA BO [BM]
 \ps v
 \ge distrait (être); ne pas faire attention
@@ -49733,7 +49733,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 19/Dec/2014
 
 \lx pe-thauvweni
-\is fonct.intell
+\is fonct.intell.
 \is interaction
 \ph pe-tÊ°auÎ²eni
 \dialx GO(s)
@@ -50468,7 +50468,7 @@ sucre
 \se paa-pii-ni [GOs]
 \sge vider qqch
 \sn 2
-\is crustacé
+\is crustacés 
 \is coquillage
 \ge coquille vide (de coquillage); carapace vide
 \re
@@ -50485,7 +50485,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx pii
-\is reptile_tortue
+\is reptile
 \hm 4
 \dialx GO(s) PA BO
 \ps n
@@ -50520,7 +50520,7 @@ sucre
 
 \lx phi
 \hm 2
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GOs
 \va phiiing ??
 \ve PA ???
@@ -51213,7 +51213,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pii-pò
-\is reptile_tortue
+\is reptile
 \ph pi:
 \dialx GO(s)
 \va pii-pwòn
@@ -51229,7 +51229,7 @@ sucre
 \dt 10/Jun/2015
 
 \lx pii-pwaji
-\is crabe
+\is crustacés
 \dialx GO(s) PA
 \ps n
 \ge carapace de crabe
@@ -51312,7 +51312,7 @@ sucre
 \dt 09/Nov/2014
 
 \lx pitrêê
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe plein ('double peau', lorsque sa carapace dure se détache)
@@ -51376,7 +51376,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pivivu
-\is mammifère_chauve-souris
+\is mammifères
 \dialx BO [Corne]
 \ps n
 \ge chauve-souris
@@ -52031,7 +52031,7 @@ sucre
 \ve BO
 \ps v STAT
 \sn 1
-\is caract.objet_taille
+\is caract.objet
 \ge petit
 \sn 2
 \is grammaire_quantificateur
@@ -52061,7 +52061,7 @@ sucre
 \dt 10/Jun/2015
 
 \lx pobo
-\is déplacement_traces
+\is déplacement
 \dialx GO(s) PA BO
 \ps n
 \ge trace (laissée à un endroit par un animal ou une personne qui y a dormi par ex.)
@@ -52555,7 +52555,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pòko-kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va pòko-xabu
 \ve GO(s)
@@ -52636,7 +52636,7 @@ sucre
 \dt 01/Mar/2010
 
 \lx phole
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \ps v
 \ge tremper dans l'eau
@@ -52698,7 +52698,7 @@ sucre
 \dt 21/Nov/2014
 
 \lx pò-maxa
-\is éléments_atmosphère
+\is temps_atmosphérique
 \dialx GO(s)
 \ps n
 \ge buée (fruit de la saison froide)
@@ -52980,7 +52980,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pòni-kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va pòni-kabun
 \ve PA BO
@@ -53148,7 +53148,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx pònru
-\is caract.
+\is caract.personne
 \dialx GO(s) BO
 \ph pÉ”É³u
 \va pwònu
@@ -53184,7 +53184,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pònum
-\is caract.objet_taille
+\is caract.objet
 \dialx PA BO
 \va pònèn, pwanèn
 \ve BO
@@ -53222,7 +53222,7 @@ sucre
 
 \lx phõõme
 \is nourriture
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s)
 \va phõõm
 \ve BO
@@ -53253,7 +53253,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx pò-pa-kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va pò-pa-xabu
 \ve GO(s)
@@ -53296,7 +53296,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx popobe
-\is caract.objet_taille
+\is caract.objet
 \dialx PA BO
 \va pobe
 \ve WE
@@ -53408,7 +53408,7 @@ sucre
 \dt 23/Nov/2014
 
 \lx pò-thala
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ps
 \ge entrouvert
@@ -53499,7 +53499,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx po-tru kabu
-\is jours
+\is temps
 \dialx GO(s)
 \ph pÉ”Êˆu
 \va po-ru-kabun
@@ -53528,7 +53528,7 @@ sucre
 \dt 19/Dec/2014
 
 \lx pòvwònò
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s)
 \ps v STAT
 \ge petit (épaisseur; par opposition à gros)
@@ -53543,7 +53543,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx povwonû
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s)
 \va poponû
 \ve GO(s)
@@ -53635,7 +53635,7 @@ sucre
 \dt 25/Dec/2014
 
 \lx poxa
-\is caract.
+\is caract.personne
 \hm 1
 \dialx GO(s) PA GO
 \va poga
@@ -53834,7 +53834,7 @@ sucre
 \dt 09/Jun/2015
 
 \lx po-xe kabu
-\is jours
+\is temps
 \dialx GO(s)
 \va po-xe kabun
 \ve BO
@@ -54328,7 +54328,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \lx phu
 \hm 1
 \is nourriture
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \va phul
 \ve PA BO 
@@ -54470,7 +54470,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Nov/2014
 
 \lx phu ???
-\is maladie
+\is santé
 \dialx BO [Corne]
 \ps v ; n
 \ge tousser ; grippe
@@ -54512,7 +54512,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Dec/2014
 
 \lx phu ko
-\is maladie
+\is santé
 \ps n
 \ge elephantiasis (lit. jambe qui enfle)
 \re
@@ -54611,7 +54611,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Dec/2014
 
 \lx pu punõ
-\is caract.
+\is caract.personne
 \ph
 \dialx GO(s)
 \ps v STAT
@@ -54636,7 +54636,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 23/Dec/2014
 
 \lx pu zòò 
-\is caract.
+\is caract.personne
 \dialx [GOs]
 \ps
 \ge difficile
@@ -54726,7 +54726,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 25/Jun/2007
 
 \lx phubwe
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s) BO
 \va phöbwe
 \ve GO(s)
@@ -54744,7 +54744,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 09/Nov/2014
 
 \lx pu-bwò
-\is mammifère_chauve-souris
+\is mammifères
 \dialx GO(s)
 \ps n
 \ge poils de roussette
@@ -54809,7 +54809,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx puçò
 \is nourriture
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \ph puÊ’É”
 \va puyòl, puçòl
@@ -55375,7 +55375,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 04/Mar/2010
 
 \lx phunrõgo
-\is maladie
+\is santé
 \dialx GO(s) 
 \ph phu'É³É”Ìƒgo
 \va punõgo
@@ -55439,7 +55439,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 03/Mar/2010
 
 \lx pu-pii
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe doube peau (carapace est décollée mais n'est pas encore tombée)
@@ -55734,7 +55734,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 07/Nov/2014
 
 \lx puya
-\is prep.aliments
+\is prép.aliments
 \dialx BO [Corne]
 \ps v
 \ge vider le four enterré
@@ -55765,7 +55765,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 02/Jun/2007
 
 \lx phuzi 
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ph pÊ°uÃ°i
 \ps
@@ -55791,7 +55791,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 21/May/2007
 
 \lx pwa 
-\is éléments_atmosphère
+\is temps_atmosphérique
 \hm 2
 \dialx GO(s)
 \va pwal
@@ -55939,7 +55939,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx phwa
 \hm 2
-\is ciel
+\is astre
 \dialx PA BO
 \va phwal
 \ve BO
@@ -56216,7 +56216,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \dt 19/Jul/2007
 
 \lx pwaixe
-\is chose 
+\is fonct.intell.
 \dialx GO(s) PA 
 \va pwaike
 \ve GO
@@ -56254,7 +56254,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx pwaji
 \hm 1
-\is crabe
+\is crustacés
 \ph pwandjÉ¨
 \dialx GO(s) PA BO 
 \va pwaaje
@@ -56380,7 +56380,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 \is temps
 \ge longtemps (mettre) 
 \sn 2
-\is caract.
+\is caract.personne
 \ge long (être) à faire qqch
 \ge lent
 \re
@@ -56454,7 +56454,7 @@ enfant de fille de frère ou soeur du père (= petits cousins); enfant de fille de
 
 \lx pwali 
 \hm 2
-\is caract.objet_taille
+\is caract.objet
 \dialx BO PA 
 \ps v STAT ; ADV
 \ge long; haut
@@ -56791,7 +56791,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 19/Jul/2007
 
 \lx phwawali  
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s) BO PA
 \va pwapwali 
 \ve BO PA
@@ -56836,7 +56836,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx phwaawe
 \is nourriture
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s) PA WEM BO 
 \ps v
 \ge fumer (poisson)
@@ -56852,7 +56852,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Nov/2014
 
 \lx phwaxa
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s) PA
 \ps n
 \ge longueur
@@ -56873,7 +56873,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx phwaxaa
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe de sable (sert d'amorce)
@@ -56905,7 +56905,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 30/Jun/2007
 
 \lx phwaxi
-\is caract_taille
+\is caract.personne
 \dialx GO(s) PA BO
 \va phwaxa
 \ve GO(s) PA
@@ -56954,7 +56954,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 14/Jul/2007
 
 \lx phwa-xudo
-\is mer
+\is eau
 \dialx GOs
 \ps n
 \ge chenal 
@@ -57026,7 +57026,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Dec/2014
 
 \lx pwazi
-\is prep.aliments 
+\is prép.aliments 
 \dialx GO(s)
 \ps v
 \ge écorcher (s')
@@ -57290,7 +57290,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 07/Nov/2014
 
 \lx pwedee
-\is déplacement_traces
+\is déplacement
 \dialx GO(s)
 \ps n
 \ge traces de bois trainés
@@ -57714,7 +57714,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 27/Jun/2007
 
 \lx pweuna
-\is caract.
+\is caract.personne
 \dialx PA BO
 \ps v
 \ge gourmand; glouton
@@ -57798,7 +57798,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx phwè-wado
 \is corps
-\is maladie
+\is santé
 \dialx BO
 \ps n
 \ge carie dentaire
@@ -57841,7 +57841,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dialx GO(s) BO
 \ps n
 \sn 1
-\is mer
+\is eau
 \ge passe (dans la mer)
 \re
 \sn 2
@@ -58184,7 +58184,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 15/Jul/2007
 
 \lx pwiya
-\is nourriture_cuisson
+\is cuisson
 \dialx BO
 \ps v
 \ge déterrer (le four)
@@ -58199,7 +58199,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx pwò
 \hm 3
-\is reptile_tortue
+\is reptile
 \dialx GO(s)
 \va pò
 \ve GO(s)
@@ -58266,7 +58266,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx pwò-mhãã
-\is reptile_tortue
+\is reptile
 \dialx GO(s)
 \ps n
 \ge tortue verte
@@ -58658,7 +58658,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx tha
 \is action_corps
-\is prep.aliments
+\is prép.aliments
 \hm 2
 \dialx GO(s) BO PA
 \ps v
@@ -58691,7 +58691,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 21/May/2007
 
 \lx tha
-\is navigation_bateau
+\is navigation
 \hm 4
 \dialx GO(s)
 \ph tÊ°a
@@ -58837,7 +58837,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv nu thrae pu-phwa Pwayili [GOs]
 \xn j'ai rasé la barbe de P.
 \sn 2
-\is caract.objet_taille
+\is caract.objet
 \ge court ; ras
 \re
 \gb
@@ -58955,7 +58955,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx tha nru
 \is action_corps
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s) PA BO
 \ps v
 \ge écorcer le coco (sur un épieu)
@@ -58969,7 +58969,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx tha nhyôgo we
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GOs
 \ps v
 \ge sonder la profondeur de l'eau
@@ -59050,7 +59050,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thaabhan
-\is mer
+\is eau
 \dialx PA BO
 \va thaavan
 \ps n
@@ -59204,7 +59204,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx taabunrõõ
-\is eau_action
+\is action eau, liquide, fumée
 \ph ta:buÉ³
 \dialx GO(s)
 \ps v
@@ -59797,7 +59797,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx thala
-\is action_mains
+\is action_corps
 \ph tÊ°ala
 \dialx GO(s) BO PA
 \va
@@ -60086,7 +60086,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 07/Nov/2014
 
 \lx thane ??
-\is nourriture_cuisson
+\is cuisson
 \dialx BO [BM]
 \ps v
 \ge chauffer
@@ -60176,7 +60176,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx thaò
-\is action_mains
+\is action_corps
 \dialx GO(s) BO
 \va thawa
 \ve GO(s)
@@ -60435,7 +60435,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx thrava
-\is caract.
+\is caract.personne
 \is grammaire_modalité
 \dialx GO(s)
 \ph ÊˆÊ°ava
@@ -60533,7 +60533,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx thraavwã 
-\is mer
+\is eau
 \dialx GO(s)
 \ph ÊˆÊ°a:Î²Ã£
 \va thraapã
@@ -60932,7 +60932,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx ta-zo
-\is caract
+\is caract.personne
 \dialx PA BO
 \ps v
 \ge agile; prompt; vif
@@ -61228,7 +61228,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx thebe
-\is action_mains
+\is action_corps
 \dialx GOs
 \va tebe
 \ve BO [Corne]
@@ -61326,7 +61326,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 03/Nov/2014
 
 \lx tre-çaaxo
-\is caract
+\is caract.personne
 \ph Êˆe-'Ê’a:É£o
 \dialx GO(s)
 \ps v
@@ -61882,7 +61882,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 09/Jun/2015
 
 \lx tre-pavwã
-\is fonct.intell
+\is fonct.intell.
 \ph ÊˆepaÎ²a
 \dialx GO(s)
 \va tre-pavhã
@@ -62057,7 +62057,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 29/Nov/2008
 
 \lx teevaò
-\is eau_action
+\is action eau, liquide, fumée
 \dialx BO [BM, MC]
 \ps v
 \ge jeter (dans l'eau)
@@ -62127,7 +62127,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 01/Mar/2010
 
 \lx texe ?? thòxe
-\is caract.
+\is caract.personne
 \dialx PA
 \va thòxe, thòòge
 \ve BO [BM]
@@ -62198,7 +62198,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx trezô
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ps v
 \ge fermé (tout seul: porte, fenêtre, etc.)
@@ -62288,7 +62288,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Nov/2014
 
 \lx thi
-\is maladie
+\is santé
 \hm 2
 \dialx GO(s)
 \ps n
@@ -62413,7 +62413,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 
 \lx thii 
 \hm 4
-\is mammifère_chauve-souris_corps
+\is corps_animaux
 \ph Î¸i:
 \dialx GO PA WEM
 \ps n
@@ -62586,7 +62586,7 @@ enflammées (lit. piquer le feu)
 \dt 22/Feb/2010
 
 \lx thibe
-\is prep.aliments
+\is prép.aliments
 \ph tÊ°ibe
 \dialx GO(s) PA BO
 \va thebe
@@ -62723,7 +62723,7 @@ enflammées (lit. piquer le feu)
 \lx thiçe
 \ph thiÊ’e
 \is feu
-\is prep.aliments_cuisson
+\is prép.aliments
 \dialx GO(s)
 \ps v
 \ge remuer les braises
@@ -62956,7 +62956,7 @@ enflammées (lit. piquer le feu)
 \dt 04/Nov/2014
 
 \lx tikudi 
-\is mer
+\is eau
 \dialx GO(s)
 \ps n
 \ge havre
@@ -63100,7 +63100,7 @@ enflammées (lit. piquer le feu)
 \dt 09/Jun/2015
 
 \lx trilòò
-\is fonct.intell
+\is fonct.intell.
 \dialx GO(s)
 \va tilòò
 \ve PA BO
@@ -63337,7 +63337,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thiò dimwa
 \is nourriture
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s) PA BO
 \va thixò, thiò
 \ve PA BO
@@ -63682,7 +63682,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 04/Nov/2014
 
 \lx thi-ula
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge décrocher en piquant avec un bâton (qqch qui se trouve en hauteur)
@@ -63817,7 +63817,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx thivwöloo
-\is maladie
+\is santé
 \ph 'thivwÏ‰lo:
 \dialx GO(s) BO
 \va tivwoloo
@@ -64153,7 +64153,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx tho
-\is eau_action
+\is action eau, liquide, fumée
 \hm 2
 \ph tÊ°o
 \dialx GOs PA BO
@@ -64316,7 +64316,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx trò
-\is perception
+\is fonct.nat
 \hm 2
 \ph ÊˆÉ”
 \dialx GO(s)
@@ -64558,7 +64558,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thò-chaamwa
 \is classificateur numérique
-\is bananes
+\is bananier
 \dialx GO(s)
 \ph 'tÊ°É”-'tÊƒÊ°a:mwa
 \va thò-chaamwa
@@ -64677,7 +64677,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thogaavwi
-\is phénom.naturel
+\is temps_atmosphérique
 \ph tÊ°ogaÎ²i
 \dialx GO(s) PA BO
 \va tho'gapi
@@ -64917,7 +64917,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx thròlòe 
 \hm 1
-\is eau_action
+\is action eau, liquide, fumée
 \dialx BO [Corne]
 \va tholee tolee
 \ve BO [Corne]
@@ -65098,7 +65098,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 13/Feb/2010
 
 \lx trõnre 
-\is perception
+\is fonct.nat
 \dialx GO(s) 
 \ph ÊˆÉ”ÌƒÉ³e
 \va tõne 
@@ -65124,7 +65124,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx trõnre bö
 \is fonct.nat
-\is perception
+\is fonct.nat
 \dialx GO(s) 
 \va tone bo-n
 \ve PA BO [Corne]
@@ -65157,7 +65157,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Nov/2014
 
 \lx thonga
-\is maladie
+\is santé
 \ph thoÅ‹a
 \dialx GO(s)
 \ps n
@@ -65298,7 +65298,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Dec/2014
 
 \lx tòòri
-\is nourriture_cuisson
+\is cuisson
 \dialx GO(s)
 \va toorim
 \ve PA
@@ -65316,7 +65316,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx toro
-\is reptile_lézard
+\is reptile
 \dialx BO
 \ps n
 \ge gecko ; margouillat
@@ -65471,7 +65471,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 08/Jul/2007
 
 \lx thô-vwaa-ni
-\is action_mains
+\is action_corps
 \dialx GO(s)
 \ps v
 \ge rapiécer (lit. fermer le trou)
@@ -65664,7 +65664,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx tööi 
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \va tui 
 \ve WEM WE PA BO
@@ -65703,7 +65703,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx töö-pho
-\is action_mains
+\is action_corps
 \dialx GO(s)
 \ps n
 \ge faire des lamelles de feuilles de pandanus
@@ -65717,7 +65717,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 25/Dec/2014
 
 \lx trörö 
-\is reptile_lézard
+\is reptile
 \ph ÊˆoÊˆo, ÊˆoÉ½o
 \dialx GO(s)
 \va toro
@@ -65829,7 +65829,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thuu
-\is maladie
+\is santé
 \dialx GO(s) BO
 \ps v
 \ge gale
@@ -65900,7 +65900,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 10/Jun/2015
 
 \lx thu ai-n
-\is caract
+\is caract.personne
 \dialx PA
 \ps v
 \ge dressé (cheval, animal)
@@ -65918,7 +65918,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 10/Jun/2015
 
 \lx thu bwa
-\is caract.
+\is caract.personne
 \dialx GOs
 \ps v
 \ge entêté
@@ -66127,7 +66127,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 19/Dec/2014
 
 \lx tua
-\is action_mains
+\is action_corps
 \dialx GO(s) BO PA
 \ps v
 \ge dénouer; défaire (noeud); détacher 
@@ -66240,7 +66240,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx thu-ada
-\is caract.
+\is caract.personne
 \hm
 \dialx GO(s) PA
 \ps v ; n
@@ -66291,7 +66291,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Dec/2014
 
 \lx truçaabèlè
-\is phénom.naturel
+\is temps_atmosphérique
 \dialx GO(s)
 \ph Êˆu'dÊ’a:bÉ›lÉ› Êˆu'Ê’a:bÉ›lÉ›
 \va thruucaabèlè
@@ -67300,7 +67300,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx ulo ???
 \is feu
-\is nourriture_cuisson
+\is cuisson
 \dialx BO
 \ps v
 \ge brûler; flamber
@@ -67373,7 +67373,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 20/Jul/2007
 
 \lx ûne
-\is prep.aliments
+\is prép.aliments
 \dialx GO(s)
 \ps v
 \ge passer sur la flamme pour assouplir (feuille de bananier)
@@ -67534,7 +67534,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 04/Mar/2010
 
 \lx uvo-ê
-\is cultures_bouture
+\is cultures
 \dialx GO(s) PA
 \ps n
 \ge bouture de canne à sucre
@@ -67549,7 +67549,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx uvo-uva
 \is taro
-\is cultures_bouture
+\is cultures
 \dialx GO(s)
 \ps n
 \ge bouture de taro (pédoncule de taro muni d'une tige); pied de taro
@@ -67728,7 +67728,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 25/Dec/2014
 
 \lx uzi cii
-\is action_mains 
+\is action_corps 
 \dialx GO(s)
 \ps v 
 \ge écorcer une tige (en lissant avec un couteau)
@@ -68056,7 +68056,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 04/Jun/2015
 
 \lx varû
-\is action_mains
+\is action_corps
 \dialx BO [BM]
 \ps v
 \ge tripoter
@@ -68088,7 +68088,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 10/Jun/2015
 
 \lx vaxaròò
-\is mer
+\is eau
 \dialx GO(s) PA BO
 \ps n
 \ge patate de corail (blanc)
@@ -68202,7 +68202,7 @@ supportant la charpente des cases rondes;  Dubois)
 \ge bouquet de fibres (accrochés à un piquet pour marquer un interdit ou montrer qu'une plante est réservée)
 \re
 \sn 2
-\is noeud
+\is tressage
 \ge noeud (fait sur une herbe, signale un interdit, protège des magies)
 \re
 \gb slip knot
@@ -68217,7 +68217,7 @@ supportant la charpente des cases rondes;  Dubois)
 \dt 10/Jun/2015
 
 \lx vhiliçô
-\is maladie
+\is santé
 \ph vilidÊ’Ãµ
 \dialx GO(s)
 \ps n
@@ -68551,7 +68551,7 @@ supportant la charpente des cases rondes;  Dubois)
 
 \lx whaa
 \hm 1
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s) BO
 \ps v
 \ge grand; gros ; grandir; croître; pousser (en long)
@@ -68874,7 +68874,7 @@ départ en guerre. Dubois ms)
 \dt 10/Nov/2014
 
 \lx wadolò
-\is crabe
+\is crustacés
 \dialx GO(s)
 \ps n
 \ge crabe qui vient d'avoir une nouvelle carapace
@@ -69090,7 +69090,7 @@ départ en guerre. Dubois ms)
 \dt 25/Dec/2014
 
 \lx wa-kabun
-\is jours
+\is temps
 \dialx GO(s)
 \va kaça-kabu
 \ve GO(s)
@@ -69120,7 +69120,7 @@ départ en guerre. Dubois ms)
 \dt 23/Dec/2014
 
 \lx wa-kaze
-\is mer
+\is eau
 \hm 1
 \dialx GO(s)
 \va wa-kale
@@ -69178,7 +69178,7 @@ départ en guerre. Dubois ms)
 \dt 19/Dec/2014
 
 \lx wala
-\is caract.objet_taille
+\is caract.objet
 \dialx GO(s)
 \ps v STAT
 \ge large
@@ -69643,7 +69643,7 @@ wa-truci (20)
 \dt 22/Jun/2007
 
 \lx waara 
-\is fonct.nat.
+\is fonct.nat
 \dialx GO(s) PA BO 
 \va waatra
 \ve GO(s) 
@@ -70998,7 +70998,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 25/Dec/2014
 
 \lx we-za
-\is mer
+\is eau
 \dialx GO(s) BO
 \va we-ya
 \ve BO
@@ -71015,7 +71015,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 23/Dec/2014
 
 \lx weze
-\is action_mains
+\is action_corps
 \dialx GO(s)
 \va wei
 \ve BO
@@ -71083,7 +71083,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 23/Dec/2014
 
 \lx wîî
-\is caract.
+\is caract.personne
 \dialx GO(s) PA BO
 \va wîî-n
 \ve BO
@@ -71140,7 +71140,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 19/Dec/2014
 
 \lx wîî-kale ??
-\is mer
+\is eau
 \dialx BO [Corne]
 \ps n
 \ge marée étale
@@ -71642,7 +71642,7 @@ passer l'eau de l'étage supérieur à l'étage inférieur). Dubois
 \dt 10/Jun/2015
 
 \lx wòzõõ
-\is maladie
+\is santé
 \dialx GO(s)
 \va wolõ
 \ve PA
@@ -72238,7 +72238,7 @@ Mwani-mi ?
 \dt 09/Jun/2015
 
 \lx yago
-\is crustacé
+\is crustacés 
 \dialx GO(s)
 \ps n
 \ge araignée de mer
@@ -72330,7 +72330,7 @@ Mwani-mi ?
 \dt 10/Jun/2015
 
 \lx yala
-\is eau_action
+\is action eau, liquide, fumée
 \hm 1
 \dialx GO(s) PA
 \ps v
@@ -72461,7 +72461,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 02/Mar/2010
 
 \lx yhaamwa
-\is fonct.intell
+\is fonct.intell.
 \dialx GO(s) BO PA
 \ps v IMPERS
 \ge on ne sait pas
@@ -72496,7 +72496,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 
 \lx yaò
 \hm 1
-\is mer
+\is eau
 \dialx GO(s)
 \ps n
 \ge corail
@@ -72787,7 +72787,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \dt 21/Dec/2014
 
 \lx yaze
-\is eau_action
+\is action eau, liquide, fumée
 \dialx GO(s)
 \ps v
 \ge asperger; projeter (eau, boue avec les
@@ -73100,7 +73100,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \dt 10/Jun/2015
 
 \lx yölae
-\is action_mains
+\is action_corps
 \dialx PA
 \ps v
 \ge enlever les branches latérales d'un tronc (avec un couteau, tamioc)
@@ -73728,7 +73728,7 @@ pour les replanter.
 \dt 23/Feb/2010
 
 \lx zagia ciia
-\is mollusque_Céphalopodes
+\is mollusque
 \dialx GO(s)
 \ps n
 \ge encre de poulpe
@@ -73813,7 +73813,7 @@ pour les replanter.
 
 \lx zala
 \hm 2
-\is fonct.intell
+\is fonct.intell.
 \dialx GO(s) PA
 \va zhala
 \ve GA
@@ -73934,7 +73934,7 @@ pour les replanter.
 \dt 23/Dec/2014
 
 \lx zamee
-\is action_mains
+\is action_corps
 \dialx GOs
 \ps v
 \ge épointer (un bous de bois)
@@ -74225,7 +74225,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 10/Jun/2015
 
 \lx zawe
-\is tubercule_igname
+\is plantes_partie
 \dialx GOs
 \ps n
 \ge igname (violet)
@@ -74406,7 +74406,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 04/Nov/2014
 
 \lx zido
-\is perception
+\is fonct.nat
 \dialx GO(s)
 \va zhido
 \ve GA
@@ -74477,10 +74477,10 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve BO
 \ps v STAT
 \sn 1
-\is caract.
+\is caract.personne
 \ge bien ; bon
 \sn 2
-\is caract.
+\is caract.personne
 \ge propre
 \sn 3
 \is grammaire_modalité
@@ -74556,7 +74556,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \dt 09/Jun/2015
 
 \lx zò
-\is maladie
+\is santé
 \hm 2
 \dialx GO(s)
 \va zhò
@@ -74579,7 +74579,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx zòò
 \hm 1
-\is caract.
+\is caract.personne
 \dialx GO(s)
 \ps
 \ge difficulté ; embûche
@@ -74777,11 +74777,11 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ve BO
 \ps vt
 \sn 1
-\is prep.aliments
+\is prép.aliments
 \ge râper (coco)
 \ge gratter (l'igname cuite ou la peau de l'igname, patates, taro)
 \sn 2
-\is action_mains
+\is action_corps
 \ge récurer (le dos de la marmite avec de la cendre)
 \sn 3
 \is action_corps
@@ -74829,7 +74829,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ge toxique ; non-comestible ; poison
 \re
 \sn 2
-\is maladie
+\is santé
 \ge intoxiqué 
 \re
 \gb
@@ -74951,7 +74951,7 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \dt 23/Dec/2014
 
 \lx zoxãî
-\is caract.
+\is caract.personne
 \dialx WEM WE
 \ps v STAT
 \ge joli ; bien
@@ -75083,7 +75083,7 @@ Lors des décès, les feuilles et branches enveloppent la monnaie blanche qui auto
 \dt 03/Nov/2014
 
 \lx zuzuu
-\is crabe
+\is crustacés
 \dialx GO(s)
 \va zhuzuu
 \ve GO(s)
