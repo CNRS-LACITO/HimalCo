@@ -89,7 +89,7 @@ sub infinitive2 {
     }
     
     if ($radical =~ m/(a|ɛ|i|o|u|ɵ|ʉ|A)$/) {
-        $variable =~ tr/ou/ɵʉ/;
+        $variable =~ tr/ouA/ɵʉɵ/;
         $variable = $variable."̂n";
     }
     
