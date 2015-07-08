@@ -148,9 +148,15 @@
 
 \lx βdiwa
 \ps n
+\sn 1
 \ge calme 
 \gn 平安 
+\sn 2
+\ge bonne action 
+\gn 善事 
 \et bde.ba
+\xv βdiwa ɲɤ-fkot 
+\xn 他做了善事
 
 \lx βdɯnba
 \ps n
@@ -3733,7 +3739,7 @@
 
 \lx laχthɤβ
 \ps n
-\ge médecin traditionelqui répare les fractures
+\ge médecin traditionnel qui répare les fractures
 \gn 专门治疗骨折、脱臼的手的土医生
 \dt 26/Apr/2014
 
@@ -7948,12 +7954,14 @@
 \ps n
 \sn 1
 \ge diadème en argent 
-\gn 头上的银制装饰品 、戒指
+\gn 头上的银制装饰品
 \sn 2
 \ge anneau 
 \gn 戒指 
 \xv srɯnloʁ lɤ-nɯrʁe-t-a
 \xn 我戴了戒指
+\xv srɯnloʁ-pɯ
+\xn 小戒指
 \dt 12/Mar/2014
 
 \lx srɯnmɯ
@@ -12209,7 +12217,7 @@
 \ge année 
 \gn 一岁（年龄） 
 \hbf 914
-\xv nɤʑo thɤstɯ-pɤrme thɯ-tɯ-ɤzɣɯt?
+\xv nɤʑo thɤstɯ-pɤrme thɯ-tɯ-azɣɯt?
 \xn 你多大了？
 \xv aʑo fsusqafsum-pɤrme thɯ-azɣɯt-a
 \xn 我三十三岁
@@ -15012,6 +15020,7 @@
 \gn 权利
 \xv rɟɤlpu ɣɯ ɯ-thoβ nɯ tɤru ɣɯ sɤznɤ kɯ-wxti ŋu
 \xn 国王的权利比头人的大
+\et tʰob
 \dt 15/May/2014
 
 \lx ɯ-thɯɣli
@@ -19387,7 +19396,7 @@
 \pdv tɤ-
 \ge être rempli
 \gn 被堆满、被装满
-\xv ɯ-tɯ-dɤn kɯ tɤ-kɤmɯrmbɯ-ci zjaŋzjaŋ
+\xv ɯ-tɯ-dɤn kɯ tɤ-k-ɤmɯrmbɯ-ci zjaŋzjaŋ
 \xn 装满了
 \se zmɯrmbɯ
 \ps vt
@@ -21511,29 +21520,45 @@
 
 \lx _aʁjɤr
 \wav vi-aRjAr
-\wav vt-saRjAr
 \ps vi
 \pdl dir 
 \pdv nɯ-
-\ge retarder 
-\gn 耽误 
+\ge être en retard 
+\gn 耽误时间、迟到 
 \hbf 1255
 \xv toʁde nɯ-aʁjar-a
 \xn 我耽误了一下
 \xv tɯrju ɲɯ-ti tɕe, nɯ-aʁjar-a
 \xn 他说话，我就耽误了时间
 \se saʁjɤr
+\wav vt-saRjAr
+\wav vt-saRjAr2
+\wav8 saRjara
 \ps vt
 \pdl dir 
 \pdv pɯ-
-\ge retarder
-\gn 耽误别人
+\sn 1 
+\ge retarder, déranger
+\gn 耽误、打扰
+\sn 2
+\ge déranger
+\gn 打扰
+\hbf 1255 
 \xv ma-pɯ-kɯ-saʁjar-a
 \xn 你不要耽误我的时间
-\xv pɯ-ta-saʁjɤr
-\xn 我耽误你了
-\xv tɯmɯ ɲɯ-lɤt tɕe ji-ma pɯ́-wɣ-saʁjɤr-i
+\xv pɯ-kɯ-saʁjar-a
+\xn 你耽误了我的时间
+\xv ɲɯ-ta-saʁjɤr
+\xn 我在耽误你的时间
+\xv ɯ-zgra kɤ-ʑmbri mɤ-pe ma tɯrme saʁjar-a
+\xn 我不能发出声音，不然会打扰别人
+\xv tɯmɯ ɲɯ-lɤt tɕe, ji-ma pɯ́-wɣ-saʁjɤr-i
 \xn 下雨就耽误了我们的工作
+\xv @kaihui ɲɯ-ra tɕe, kɤ-ɣi mɯ-pɯ-ŋgrɯ, pɯ-ta-saʁjɤr
+\xn 因为需要开会没能来到，耽误了你的时间
+\se sɤsaʁjɤr
+\ps vi
+\ng apass
 \se ʑɣɤsaʁjɤr 
 \ps vi
 \ng refl
@@ -24793,13 +24818,14 @@
 \et bkod
 \xv pɯ-fkot-a
 \xn 我创建了
-
 \xv ɯʑo kɯ ta-fkot
 \xn 他创建了
 \xv nɤʑo tɤ-tɯ-fkot
 \xn 你创建了
 \xv ɕoŋβzu kɯ kha kɤ-βzu pjɤ-fkot
 \xn 木匠设计了房子
+\xv βdiwa ɲɤ-fkot 
+\xn 他做了善事
 \dt 12/Jun/2012
 
 \lx _fkra
@@ -28741,7 +28767,8 @@
 \pdv pɯ-
 \pdl dir 
 \pdv tɤ-
-\ge frotter 
+\sn 1
+\ge pétrir, frotter
 \gn 揉 
 \hbf 1225 
 \xv pɯ-ɣle-t-a
@@ -28752,6 +28779,10 @@
 \xn 他揉了
 \xv tɤjlu wuma ʑo pa-ɣle tɕe ɲɯ-mɯm
 \xn 他揉了面，面就好吃了
+\se nɤɣlɯɣle
+\ps vt
+\ge frotter dans tous les sens
+\gn 揉来揉去
 \dt 06/Jun/2011
 
 \lx _ɣlɯtɕɤt
@@ -36865,7 +36896,7 @@
 \dt 25/Feb/2014
 
 \lx _nɤʑɤmŋɤn
-\a nɯʑɤmŋɤm
+\a nɯʑɤmŋɤn
 \wav vt-nWZAmNAn
 \wav8 YWnAZAmNAn
 \ps vt
@@ -45531,7 +45562,7 @@
 \pdl dir 
 \pdv tɤ-
 \ge rugir 
-\gn 猫、豹子吼叫 
+\gn （猫、豹子）吼叫 
 \hbf 1435
 \xv lɯlu ɲɯ-rɤβʁa
 \xn 猫在吼叫
@@ -49403,29 +49434,6 @@
 \dt 21/Oct/2011
 
 \lx _saʁjɤr
-\wav vt-saRjAr2
-\wav8 saRjara
-\ps vt
-\pdl dir 
-\pdv pɯ-
-\ge retarder, déranger
-\gn 耽误、打扰
-\hbf 1255 
-\xv ma-pɯ-kɯ-saʁjar-a
-\xn 你不要耽误我的时间
-\xv pɯ-kɯ-saʁjar-a
-\xn 你耽误了我的时间
-\xv ɲɯ-ta-saʁjɤr
-\xn 我在耽误你的时间
-\xv ɯ-zgra kɤ-ʑmbri mɤ-pe ma tɯrme saʁjar-a
-\xn 我不能发出声音，不然会打扰别人
-\xv tɯmɯ ɲɯ-lɤt tɕe, ji-ma pɯ́-wɣ-saʁjɤr-i
-\xn 下雨，耽误了我们的时间
-\xv kaihui ɲɯ-ra tɕe, kɤ-ɣi mɯ-pɯ-ŋgrɯ, pɯ-ta-saʁjɤr
-\xn 因为需要开会没能来到，耽误了你的时间
-\se sɤsaʁjɤr
-\ps vi
-\ng apass
 \cf aʁjɤr
 \dt 28/Sep/2013
 
@@ -52766,11 +52774,11 @@
 \xn 茶很浓
 \dt 19/May/2014
 
-\lx _snɯɲaʁ
+\lx ^snɯɲaʁ
 \wav8 snWYaR
 \ps n
 \ge fait de causer du tort
-\gn 狠心
+\gn 害人（的阴谋）
 \xv snɯɲaʁ ma-tɤ-tɯ-βze
 \xn 你不要害人
 \cf tɯ-sni
@@ -55374,6 +55382,8 @@
 \xn 这件事情全靠你了
 \xv ki kɤ-nɤma ki ɯʑo ɯ-taʁ ɲɯ-ti-a ntshi
 \xn 这件事情只好靠他了
+\xv nɤ-kɤ-nɯ-ti ci ɣɤʑu
+\xn 你还好意思说
 \un 参看{ʑɣɤta}或{ʑɣɤχtɤt}“靠在”
 \se sɯti
 \pdl past stem
@@ -58511,13 +58521,17 @@
 \hbf 1015 
 \xv ɯ-fkur ɲɯ-ʑo
 \xn 他的负担很轻
+\an rʑi
 \se ʑɣɤɣɤʑo
 \ps vi
+\pdl dir 
+\pdv tɤ-
 \ng refl
 \ng caus
 \ge se rendre léger
 \gn 令自己变轻
-\an rʑi
+\xv tɤ-muj jamar ʑo to-ʑɣɤɣɤʑo 
+\xn 他令自己变得像羽毛一样轻 
 \dt 18/Mar/2015
 
 \lx _ʑru
@@ -60826,12 +60840,19 @@
 \hbf animal
 \dt 29/Nov/2010
 
-\lx ^kɤkɯnɯχtɕɤn
-\ps n
-\ge sorte de maladie mentale 
-\gn 精神病的一种 
-\hbf maladie
-\dt 24/Oct/2011
+\lx _nɯχtɕɤn
+\ps vs
+\pdl dir
+\pdv kɤ-
+\ge terrible 
+\gn 恐怖、凶猛
+\un 仅用于传统故事中，形容施了魔法的物体（水、巨石、森林等）
+\xv ndzaʁlaŋ tɯrme jo-ɣi tɕe, tɯ-ci kɤ-kɯ-nɯχtɕɤn ɯ-ŋgɯ ɕ-pjɯ́-wɣ-βde ɲɯ-ra
+\xn （妖界）来了凡人，我们要把他扔进恐怖的水里！
+\xv tɯ-ci kɤ-kɯ-nɯχtɕɤn nɯnɯ tɕe tɕe tu-ola ʑo kɯ-fse pjɤ-ɕti tɕe,
+nɯ pjɯ-tɯ-βde nɯ tɯrme pjɯ-kɯ-si pjɤ-ŋgrɤl
+\xn “恐怖的水”在沸腾一样，（妖）把人一扔进去就必死无疑
+
 
 \lx ^kɤndʑɯβzaŋsa
 \wav n-kAndZWBzaNsa
@@ -62198,6 +62219,8 @@
 \hbf 549 
 \xv mbrɯtɕɯ ɯ-ɕɣa 
 \xn 刀刃
+\xv mbrɯtɕɯ ɯ-pɯ
+\xn 小刀
 \dt 01/Jan/2012
 
 \lx ^mbɯmχtɤr
@@ -62216,6 +62239,7 @@
 \gn 刨 
 \hbf 611 
 \et ɴbur.len
+\cf nɯmbɯrlɤn
 \dt 11/Jan/2015
 
 \lx ^mciphɯt
@@ -68509,7 +68533,7 @@ l
 \ge glace 
 \gn 冰 
 \hbf 17 <2> 1440 
-\xv tɤjpɣom lɤ-kɤβzu-ci
+\xv tɤjpɣom lɤ-k-ɤβzu-ci
 \xn 结了冰
 \cf jpɣom
 \dt 15/May/2012
@@ -68868,14 +68892,16 @@ l
 \cf nɤmtshɤr
 \dt 29/Nov/2011
 
-\lx ^tɤmtshɤzkɤkɯndo
+\lx tɤmtshɤz{ndo}
 \wav n-tAntshAzkAkWndo
-\ps n
-\ge hyperostose
-\gn 骨折增生病 
+\ps vt
+\pdl dir
+\pdv kɤ-
+\ge avoir une hyperostose
+\gn 骨质增生 
 \hbf maladie 
-\xv ɕɤrɯ pɯ-mɲɤt tɕe ɯ-rɯru-z kɤ-ɣɤmna mɯ-pɯ-kɯ-khɯ tɕe, nɯ ɯ-stu nɯ ɯ-zbɤβ ku-ndzoʁ ɲɯ-ŋgrɤl tɕe, ɯ-nɯnɯ tɤ-rʑaʁ tɤ-rɲɟi tɕe, kɤ-nɤma nɤɴqa kɯ-fse, tɯmɯ tɤ-ɲɟɯr kɯ-fse tɕe wuma ʑo ɲɯ-mŋɤm. nɯnɯ tɤntshɤz kɤ-kɯ-ndo rmi. 
-\xn 骨折当时没能治好，在骨折的地方会长出胞来，时间一长，劳累了，天气变化了都会很痛。这种病叫骨折增生病。
+\xv ɕɤrɯ pɯ-mɲɤt tɕe ɯ-rɯru-z kɤ-ɣɤmna mɯ-pɯ-kɯ-khɯ tɕe, nɯ ɯ-stu nɯ ɯ-zbɤβ ku-ndzoʁ ɲɯ-ŋgrɤl tɕe, ɯ-nɯnɯ tɤ-rʑaʁ tɤ-rɲɟi tɕe, kɤ-nɤma nɤɴqa kɯ-fse, tɯmɯ tɤ-ɲɟɯr kɯ-fse tɕe wuma ʑo ɲɯ-mŋɤm. nɯnɯ tɤmtshɤz kɤ-kɯ-ndo rmi. 
+\xn 骨折当时没能治好，在骨折的地方会长出胞来，时间一长，劳累了，天气变化了都会很痛。这种病叫骨质增生病。
 \dt 12/May/2012
 
 \lx ^tɤ-mtsɯ
@@ -68916,6 +68942,7 @@ l
 \ge plumes 
 \gn 羽毛 
 \hbf oiseau2
+\cf pɣɤmuj
 \dt 12/May/2012
 
 \lx ^tɤmɯmɯm
@@ -69415,7 +69442,7 @@ l
 
 \lx ^tɤ-rkuz
 \wav n-tArkuz
-\ps n
+\ps np
 \ge cadeau 
 \gn 礼物 （临走之前给的）
 \xv aʑo tɤ-rɤŋga-t-a, tɕe a-me kɯ a-rkuz rŋɯl ta-rku (ta-βzu)
@@ -70869,6 +70896,7 @@ l
 \ps n
 \ge bord du chemin du côté de la montagne, du côté le plus haut 
 \gn 靠山的路边
+\an tʂɤndo
 \cf tʂu
 \dt 15/May/2012
 
@@ -72549,3 +72577,28 @@ l
 \gn 晚睡 
 \cf tɯrmɯ 
 \cf nɯrmɯsoz
+
+\lx _nɤɣlɯɣle
+\cf ɣle
+
+\lx ɯ-thɤβ
+\ps np
+\ge au milieu 
+\gn 中间 
+\cf ɯ-pɤrthɤβ 
+
+\lx ɯ-pɤrthɤβ
+\ps np
+\ge au milieu 
+\gn 中间 
+\et bar
+\cf ɯ-thɤβ 
+
+\lx pɣɤmuj
+\ps n
+\ge plumes d'oiseau
+\gn 羽毛
+\cf tɤ-muj
+\cf pɣa
+
+
