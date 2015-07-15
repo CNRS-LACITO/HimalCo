@@ -148,6 +148,7 @@
 \lng English
 \mkrOverThis se
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr ce
@@ -164,6 +165,7 @@
 \lng vernacular
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr cl
@@ -510,6 +512,7 @@
 \lng English
 \mkrOverThis sn
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr nq
@@ -535,48 +538,56 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
+\Hide
 \-mkr
 
 \+mkr nt_F5
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_M23
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_phon
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_sem
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_verifs
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_verifs_F5
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr nt_verifs_M23
 \nam *
 \lng English
 \mkrOverThis lx
+\Hide
 \-mkr
 
 \+mkr oe
