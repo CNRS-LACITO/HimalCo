@@ -559,41 +559,41 @@ sub generation_reflexive_paradigms_eng {
         $vowel2 = "";
         $vowel3 = "";
     }
-    #$result = $result.transcr($theme_A."ŋʌ"."   ".$theme_B."i"." ". $theme_C."ki"." ".$theme_D." ".$theme_E."ni ".$theme_F.$vowel1."ti  ".$theme_H."tɛ")." \n";
+    #$result = $result.$theme_A."ŋʌ"."   ".$theme_B."i"." ". $theme_C."ki"." ".$theme_D." ".$theme_E."ni ".$theme_F.$vowel1."ti  ".$theme_H."tɛ \n";
     $result = $result."\n\n";
 
     if ($variable1 =~ /[ptkmnŋrl].r$/) {
         $result = $result.begin_table();
         $result = $result.caption_eng($rime.".vr", $theme_P."sinɛ", $variable2);
         $result = $result.begin_tabular();
-        $result = $result."\\mytextsc{1s} &".transcr($theme_P."siŋʌ"." &".$theme_P."tʌsu")." \\\\ \n";
-        $result = $result."\\mytextsc{1di} &".transcr($theme_G."siji"." &".$theme_G."sîjti")."   \\\\\n";
-        $result = $result."\\mytextsc{1de} &".transcr($theme_G."siju"." &".$theme_G."sîjtu")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pi} &".transcr($theme_C2."siki"." &".$theme_C2."siktiki")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pe} &".transcr($theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ")."   \\\\ \n";
-        $result = $result."\\mytextsc{2s} &".transcr(" ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije")."  \\\\ \n";
-        $result = $result."\\mytextsc{2d} &".transcr(" ʔi".$theme_G."siji"." & ʔi".$theme_G."sîjti &".$theme_G."sîjje")."    \\\\\n";
-        $result = $result."\\mytextsc{2p} &".transcr(" ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje")."  \\\\ \n";
-        $result = $result."\\mytextsc{3s} & ".transcr($theme_P."si & ".$theme_P."tɛsi")."   \\\\ \n";
-        $result = $result."\\mytextsc{3d} & ".transcr($theme_G."siji"." & ".$theme_G."sîjti")."   \\\\ \n";
-        $result = $result."\\mytextsc{3p} & ".transcr($theme_P."sinu  & ".$theme_P."tɛnnu")." \\\\ \n";
+        $result = $result."\\mytextsc{1s} &".$theme_P."siŋʌ"." &".$theme_P."tʌsu \\\\ \n";
+        $result = $result."\\mytextsc{1di} &".$theme_G."siji"." &".$theme_G."sîjti   \\\\\n";
+        $result = $result."\\mytextsc{1de} &".$theme_G."siju"." &".$theme_G."sîjtu   \\\\ \n";
+        $result = $result."\\mytextsc{1pi} &".$theme_C2."siki"." &".$theme_C2."siktiki   \\\\ \n";
+        $result = $result."\\mytextsc{1pe} &".$theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ   \\\\ \n";
+        $result = $result."\\mytextsc{2s} & ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije  \\\\ \n";
+        $result = $result."\\mytextsc{2d} & ʔi".$theme_G."siji"." & ʔi".$theme_G."sîjti &".$theme_G."sîjje    \\\\\n";
+        $result = $result."\\mytextsc{2p} & ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje  \\\\ \n";
+        $result = $result."\\mytextsc{3s} & ".$theme_P."si & ".$theme_P."tɛsi   \\\\ \n";
+        $result = $result."\\mytextsc{3d} & ".$theme_G."siji"." & ".$theme_G."sîjti   \\\\ \n";
+        $result = $result."\\mytextsc{3p} & ".$theme_P."sinu  & ".$theme_P."tɛnnu \\\\ \n";
         $result = $result.end();
     }
     elsif ($variable1 =~ /[aɛeiou]_r$/) {
         $result = $result.begin_table();
-        $result = $result."\\caption{\\label{".$rime.".vr.eng} ".transcr($theme_2A."̂nsinɛ  ``").$variable2."\"  }\n";
+        $result = $result."\\caption{\\label{".$rime.".vr.eng} ".$theme_2A."̂nsinɛ  ``".$variable2."\"  }\n";
         $result = $result.begin_tabular();
-        $result = $result."\\mytextsc{1s} &".transcr($theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu")." \\\\ \n";
-        $result = $result."\\mytextsc{1di} &".transcr($theme_2A."ssiji"." &".$theme_2A."ssîjti")."   \\\\\n";
-        $result = $result."\\mytextsc{1de} &".transcr($theme_2A."ssiju"." &".$theme_2A."ssîjtu")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pi} &".transcr($theme_2A."ssiki"." &".$theme_2A."ssiktiki")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pe} &".transcr($theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ")."   \\\\ \n";
-        $result = $result."\\mytextsc{2s} &".transcr(" ʔi".$theme_2A."̂nsi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije")."  \\\\ \n";
-        $result = $result."\\mytextsc{2d} &".transcr(" ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîjti &".$theme_2A."ssîjje")."    \\\\\n";
-        $result = $result."\\mytextsc{2p} &".transcr(" ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje")."  \\\\ \n";
-        $result = $result."\\mytextsc{3s} & ".transcr($theme_2A."̂nsi & ".$theme_2A."̂ntɛsi")."   \\\\ \n";
-        $result = $result."\\mytextsc{3d} & ".transcr($theme_2A."ssiji"." & ".$theme_2A."ssîjti")."   \\\\ \n";
-        $result = $result."\\mytextsc{3p} & ".transcr($theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu")." \\\\ \n";
+        $result = $result."\\mytextsc{1s} &".$theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu \\\\ \n";
+        $result = $result."\\mytextsc{1di} &".$theme_2A."ssiji"." &".$theme_2A."ssîjti   \\\\\n";
+        $result = $result."\\mytextsc{1de} &".$theme_2A."ssiju"." &".$theme_2A."ssîjtu   \\\\ \n";
+        $result = $result."\\mytextsc{1pi} &".$theme_2A."ssiki"." &".$theme_2A."ssiktiki   \\\\ \n";
+        $result = $result."\\mytextsc{1pe} &".$theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ   \\\\ \n";
+        $result = $result."\\mytextsc{2s} & ʔi".$theme_2A."̂nsi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije  \\\\ \n";
+        $result = $result."\\mytextsc{2d} & ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîjti &".$theme_2A."ssîjje    \\\\\n";
+        $result = $result."\\mytextsc{2p} & ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje  \\\\ \n";
+        $result = $result."\\mytextsc{3s} & ".$theme_2A."̂nsi & ".$theme_2A."̂ntɛsi   \\\\ \n";
+        $result = $result."\\mytextsc{3d} & ".$theme_2A."ssiji"." & ".$theme_2A."ssîjti   \\\\ \n";
+        $result = $result."\\mytextsc{3p} & ".$theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu \\\\ \n";
         $result = $result.end();
     }
 
@@ -605,7 +605,7 @@ sub begin_table {
 }
 
 sub caption_eng{
-    return "\\caption{\\label{".$_[0].".eng} ".transcr($_[1])."  \"".$_[2]."\"  }\n";
+    return "\\caption{\\label{".$_[0].".eng} ".$_[1]."  \"".$_[2]."\"  }\n";
 }
 
 sub begin_tabular {
