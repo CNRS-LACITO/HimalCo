@@ -1,0 +1,184 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{tangutex2} 
+\usepackage{tangutex4}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\usepackage{lineno}
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
+\newcommand{\tgf}[1]{\mo{#1}}
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\begin{document} 
+\title{Tangut, Gyalrongic and the antiquity of person indexation in Sino-Tibetan/Trans-Himalayan}
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+
+\section{Introduction}
+
+
+
+\citealt{jacques12internal}
+
+\citet{hill14derivational}
+
+\citealt{zeisler15eat}
+
+\citet{zeisler04}
+
+
+Proto-Trans-Himalayan Person Indexation System Hypothesis (henceforth $PI$ hypothesis) and those who argue that indexation systems are later innovations (the $\overline{PI}$ hypothesis)
+
+
+\citet{delancey89agreement}
+\citet{lapolla92}
+
+
+\section{The `Umbrella' fallacy}
+Although analogical reasoning may prove useful for pedagogical purposes, in most cases it is a tool that may induce more confusion that clarity.
+
+In the beginning of her article, B. Zeisler presents the following `umbrella' analogy to ridicule the views of proponents of the $PI$ hypothesis, shown here with added references to the $PI$ vs $\overline{PI}$ debate.
+
+\begin{itemize}
+\item Premiss 1: Some members of my family have umbrellas, some don’t. = \textit{Some ST languages have person indexation, some don't.}
+\item Premiss 2: It is well-known that people who have umbrellas loose [sic] (or get rid of) them easily. = \textit{it is well known that languages easily lose person indexation.}
+\item Conclusion 1: Ergo, those members of my family who have no umbrellas must have lost (or got rid of) them. = \textit{ergo, the ST languages without person indexation must have lost it.}
+\item Conclusion 2: Ergo, all members of my family must have had umbrellas in the first place. \textit{ergo, all ST languages must have had person indexation in the first place.}
+\end{itemize}
+
+No proponent of the $PI$ hypothesis would subscribe to the views here caricatured by Zeisler's metaphor, and in any cases there are several reasons why this analogy is inappropriate. 
+
+First, umbrellas, in human societies, are \textit{alienable possessions} that one can own or dispose of at will, and that are not normally transmitted to one's descendants.
+
+On the contrary, person indexation is a fundamental morphological feature which can be lost or innovated, but which is generally inherited from the ancestral language. A better human analogy for person indexation would be an \textit{inalienable possession}.
+
+Second, the $PI$ hypothesis, as any serious hypothesis in historical linguistics, is not simply based on the presence vs absence of a particular feature, but on systemic commonalities, especially synchronically unexplainable common irregularities, a fact completely neglected by Zeisler.
+
+Third, Zeisler's suggestion that the genetic relationship of Tibetan to the rest of the Sino-Tibetan is \textit{non sequitur}, and hardly deserves a detailed discussion.
+
+
+\section{The `Pronominalizing languages' fallacy}
+The term `pronominalizing languages' that Zeisler keeps on using in her paper is a remnant of Hodgson's antiquated view of person indexation as resulting from the accretion of pronouns to the verb stem, a view which was perfectly legitimate in the mid-nineteenth century and that Bopp entertained also for Indo-European, although it has been long discredited. 
+
+Using the the term `pronominalized' to refer to ST languages with person indexation is inadequate for four reasons.
+
+First, whatever the actual antiquity of the person indexation systems in ST, it is clear that an important part of person markers on verbs have been grammaticalized from sources that have nothing to do with pronouns, in particular nominalized forms (see for instance \citealt{jacques15generic} on the origin of the portmanteau 2$\rightarrow$1 and 1$\rightarrow$2 prefixes in Gyalrong languages).
+
+Second, although in some ST such as Kuki-Chin productive person markers are identical (and probably derive from) possessive prefixes or pronouns, it is not the case everywhere, in particular in Kiranti and Gyalrong languages (where, in particular, the second person prefix cannot be shown to derive from a pronoun, see \citealt{jacques12agreement}, \citealt{delancey11prefixes} and \citealt{delancey14second}).
+
+Third, in some languages, pronouns are derived from possessive prefixes rather than the other way round as in Japhug, where as can be seen in Table \ref{tab:pronoun} below, pronouns are built by combining possessive prefixes with the root \ipa{--ʑo} `oneself'.\footnote{This absence of `real' ancient pronouns is reminiscent of Algonquian, where pronouns are also the forms of a possessed `dummy' nominal stem, as in Ojibwe \ipa{n-iin} `I', \ipa{g-iin} `you' and \ipa{w-iin} `he', see \citet{valentine01grammar}. }
+
+ \begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes in Japhug}\label{tab:pronoun}
+\begin{tabular}{lllllllll} 
+\toprule
+ Free pronoun & Prefix & Person\\
+\midrule
+ \ipa{a-ʑo}  &	\ipa{a--}  &		1\textsc{sg} \\
+\ipa{nɤ-ʑo}  &	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯ-ʑo}  &	\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+\ipa{tɕi-ʑo}  &	\ipa{tɕi--}  &			1\textsc{du} \\
+\ipa{ndʑi-ʑo}  &	\ipa{ndʑi--}  &		2\textsc{du} \\	
+\ipa{ʑɤ-ni}  &	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+\ipa{i-ʑo}    &	\ipa{i--}  &			1\textsc{pl} \\
+\ipa{nɯ-ʑo}   &	\ipa{nɯ--}  &			2\textsc{pl} \\
+\ipa{ʑa-ra}  &	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+&  \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯ-ʑo} & \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Fourth, the term `pronominalizing' in this debate cannot be a neutral term, simply using it suggests allegiance to the  $\overline{PI}$ hypothesis, and to the Boppian pre-Neogrammarian approach to historical linguistics.
+
+ 
+
+\section{How optional is person indexation in Tangut?}
+Given \citet{kepping94conjugation}'s lucid response to \citet{lapolla92} published more than twenty years ago, it is surprising that Zeisler still quotes the conclusions of the latter article concerning Tangut.
+
+\citet{lapolla92}, without any reference to actual Tangut texts, claims that there is a one-to-one relationship between the pronouns and the suffixes.
+
+\begin{tabular}{lllllllllll}
+	\tgf{4028}&	\tgf{3986}&	\tgf{4893}&	\tgf{1139}&	\tgf{1526}&	\tgf{5880}&	\tgf{0524}&	\tgf{2590}&	\tgf{5591}&	\tgf{4601}&\tgf{3916}\\
+\tinynb{4028}&	\tinynb{3986}&	\tinynb{4893}&	\tinynb{1139}&	\tinynb{1526}&	\tinynb{5880}&	\tinynb{0524}&	\tinynb{2590}&	\tinynb{5591}&	\tinynb{4601}&\tinynb{3916}\\
+\end{tabular}
+\begin{exe}
+\ex \label{ex:tg:toi}  \vspace{-8pt}
+\gll   \ipa{nji²}	\ipa{njɨ¹.wjɨ¹}	\ipa{.jij¹}	\ipa{tshji²}	\ipa{ŋwu²}	\ipa{dzju¹}	\ipa{.wjɨ²-lhjị²-nja²-sji²} \\
+\textsc{2sg:hon} mother.in.law  \textsc{antierg} serve \textsc{instr} order \textsc{pfv}-receive[B]-\textsc{2sg-pfv} \\
+\glt `It is you who served (our) mother-in-law and received her instructions.' (Cixiaozhuan, 33.4, \citealt{jacques07textes})
+\end{exe}
+
+
+\begin{table}[H]
+\caption{Pronouns and person suffixes in Tangut (\citealt{kepping75agreement})}\label{tab:pronoms.suffixes} \centering
+\begin{tabular}{llllll} 
+\toprule
+\multicolumn{3}{c}{Pronoun} &\multicolumn{3}{c}{Suffix} \\
+\midrule
+\mo{2098} & \ipa{ŋa²}  & 1\textsc{sg} & \mo{2098} & \ipa{ŋa²}  &1\textsc{sg} \\
+\mo{3926} & \ipa{nja²} & 2\textsc{sg} & \mo{4601} & \ipa{nja²} &2\textsc{sg} \\
+\mo{4028} &  \ipa{nji²} & 2\textsc{sg}  honorific or 2\textsc{pl} & \mo{4884} & \ipa{nji²} & 1\textsc{pl} and 2\textsc{pl} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+LaPolla is forgivable for the claims in his article, as at that time Tangut texts were not easily accessible for self-study, and stem alternation had not yet been fully described.
+
+Although \citet{nishida75} first pointed out 
+
+it was not until \citet{gong01huying}'s work that
+\citet{jacques09tangutverb}
+\citet{jacques14esquisse}
+\citet{jacques09tangutverb}
+
+
+\section{Syntactic pivots in Gyalrong and Kiranti}
+
+\section{Conclusion}
+
+We lack at the present moment the data to settle the $PI$ vs $\overline{PI}$ debate. Until Kiranti and Gyalrongic languages have been fully documented, the proto-languages of these groups reconstructed and the mass of data fully digested by the community of ST linguists, it is too early for a rigorous discussion based on an exhaustive account of the data. 
+
+Some researchers participating in the debate choose data from second of third hand sources in piece-meal fashion, rather than investigating all languages on the basis of text corpora, as is done in Indo-European studies, and as should be done for any language family. What we most need at the present moment are good-quality descriptions of the languages most relevant to the debate, large corpora, and Neogrammarian-based historical linguistics.
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+\end{document}
