@@ -28,6 +28,9 @@ def build_sub_elements(object, element):
         # For each defined public attribute, create an XML sub-element
         if not attr_name.startswith('_'):
             if attr_value is not None:
+                # Handle boolean values
+                if type(attr_value) is bool:
+                    attr_value = unicode(attr_value)
                 # Check if the attribute is itself a class instance
                 if type(attr_value) is list:
                     # We suppose that a list always contains objects

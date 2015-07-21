@@ -517,6 +517,7 @@ mdf_semanticRelation = dict({
     "se" : "subentry",
     "mn" : "main entry",
     "cf" : "simple link",
+    "cp" : "complex predicate",
     "lf" : None,
     "ev" : None,
     "ee" : None,

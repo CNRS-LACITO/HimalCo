@@ -164,6 +164,7 @@ semanticRelation_range = set([
     "subentry",
     "main entry",
     "simple link",
+    "complex predicate",
     "derived form",
     "root",
     "stem",

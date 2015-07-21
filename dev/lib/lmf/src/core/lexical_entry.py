@@ -10,6 +10,7 @@ from common.range import partOfSpeech_range
 from config.mdf import ps_partOfSpeech
 from utils.attr import check_attr_type, check_attr_range
 from core.sense import Sense
+from morphology.list_of_components import ListOfComponents
 
 class LexicalEntry():
     """! "Lexical Entry is a class representing a lexeme in a given language and is a container for managing the Form and Sense classes. A Lexical Entry instance can contain one to many different forms and can have from zero to many different senses." (LMF)
@@ -1097,6 +1098,25 @@ class LexicalEntry():
         for related_form in self.get_related_forms():
             if related_form.get_semanticRelation() == "main entry":
                 return related_form.get_lexical_entry()
+
+    def create_and_add_component(self, position, lexeme):
+        """! @brief Create and add a component to the lexical entry.
+        @param position The position of the component in the multiword expression.
+        @param lexeme Related lexeme.
+        @return LexicalEntry instance.
+        """
+        if self.list_of_components is None:
+            self.list_of_components = ListOfComponents()
+        self.list_of_components.create_and_add_component(position, lexeme)
+        return self
+
+    def get_components(self):
+        """! @brief If this lexical entry is a multiword expression, get its components.
+        @return A list of components if any, an empty list otherwise.
+        """
+        if self.list_of_components is None:
+            return []
+        return self.list_of_components.get_components()
 
     def get_speaker(self):
         """! @brief Get speaker.

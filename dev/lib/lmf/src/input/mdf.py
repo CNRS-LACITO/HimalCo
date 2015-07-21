@@ -55,11 +55,19 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
             # Do not consider empty fields
             if value == "":
                 continue
+            # Check if the current entry is a multiword expression
+            is_mwe = False
+            if marker == "lf":
+                lf = value.split(" = ")
+                if lf[0].startswith("Component"):
+                    component_nb = lf[0].lstrip("Component")
+                    value = lf[1]
+                    is_mwe = True
             # 'lx' and 'se' markers indicate a new entry
-            if marker == "lx" or marker == "se":
+            if marker == "lx" or marker == "se" or is_mwe:
                 # Compute a unique identifier
                 uid = uni2sampa(value)
-                if marker == "se":
+                if marker == "se" or is_mwe:
                     # Create a subentry
                     sub_entry = LexicalEntry(uid)
                     # An MDF subentry corresponds to an LMF lexical entry
@@ -75,7 +83,12 @@ def mdf_read(filename=None, mdf2lmf=mdf_lmf, lexicon=None, id=None, encoding=ENC
                     homonym_nb = current_entry.get_homonymNumber()
                     if homonym_nb is None:
                         homonym_nb = ""
-                    sub_entry.create_and_add_related_form(current_entry.get_lexeme() + homonym_nb, "main entry")
+                    if marker == "se":
+                        sub_entry.create_and_add_related_form(current_entry.get_lexeme() + homonym_nb, "main entry")
+                    elif is_mwe:
+                        current_entry.create_and_add_component(component_nb, value)
+                        sub_entry.create_and_add_related_form(current_entry.get_lexeme() + homonym_nb, "complex predicate")
+                        sub_entry.set_independentWord(False)
                 else:
                     # Create a new entry
                     current_entry = LexicalEntry(uid)
