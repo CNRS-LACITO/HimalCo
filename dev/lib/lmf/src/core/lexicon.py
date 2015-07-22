@@ -329,10 +329,13 @@ class Lexicon():
                     related_form.set_lexical_entry(found_entry[0])
             for component in lexical_entry.get_components():
                 # From Component targets attribute, retrieve the pointed LexicalEntry instance
-                found_entry = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == component.get_lexeme())
-                if len(found_entry) != 0:
-                    # Save the found lexical entry
-                    component.set_lexical_entry(found_entry[0])
+                found_entries = self.find_lexical_entries(lambda lexical_entry: lexical_entry.get_lexeme() == component.get_lexeme())
+                for found_entry in found_entries:
+                    # Check that the found entry is a component
+                    if found_entry.is_component():
+                        # Save the found lexical entry
+                        component.set_lexical_entry(found_entry)
+                        break
         return self
 
     def reset_check(self):

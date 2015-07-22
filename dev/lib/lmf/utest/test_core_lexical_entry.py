@@ -1221,6 +1221,23 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         # Release ListOfComponents and Component instances
         del self.lexical_entry.list_of_components.component[1], self.lexical_entry.list_of_components.component[0], self.lexical_entry.list_of_components
 
+    def test_is_component(self):
+        # Add components to the lexical entry
+        lexeme = "main"
+        lexeme1 = "first"
+        lexeme2 = "second"
+        self.lexical_entry.set_lexeme(lexeme)
+        component1 = LexicalEntry().set_lexeme(lexeme1)
+        component2 = LexicalEntry().set_lexeme(lexeme2)
+        component1.create_and_add_related_form(self.lexical_entry.get_lexeme(), "complex predicate")
+        component2.create_and_add_related_form(self.lexical_entry.get_lexeme(), "complex predicate")
+        # Test "complexe predicate" relation
+        self.assertTrue(component1.is_component())
+        self.assertTrue(component2.is_component())
+        self.assertFalse(self.lexical_entry.is_component())
+        # Release Component instances
+        del component1, component2
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite

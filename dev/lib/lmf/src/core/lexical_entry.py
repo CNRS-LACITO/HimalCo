@@ -1118,6 +1118,16 @@ class LexicalEntry():
             return []
         return self.list_of_components.get_components()
 
+    def is_component(self):
+        """! @brief Check if this lexical entry is a component.
+        @return 'True' if it is a component, 'False' otherwise.
+        """
+        for related_form in self.get_related_forms():
+            # If one of the related form is a complex predicate, it means that the current lexical entry is a component
+            if related_form.get_semanticRelation() == "complex predicate":
+                return True
+        return False
+
     def get_speaker(self):
         """! @brief Get speaker.
         @return LexicalEntry private attribute '__speaker'.
