@@ -99,8 +99,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
             current_character = ''
             # Lexicon is already ordered
             for lexical_entry in lexicon.get_lexical_entries():
-                # Consider only main entries (subentries will be written as parts of the main entry)
-                if lexical_entry.find_related_forms("main entry") == []:
+                # Consider only main entries (subentries and components will be written as parts of the main entry)
+                if lexical_entry.find_related_forms("main entry") == [] and lexical_entry.get_independentWord() is not False:
                     # Check if current element is a lexeme starting with a different character than previous lexeme
                     try:
                         current_character = items(lexical_entry)[0]

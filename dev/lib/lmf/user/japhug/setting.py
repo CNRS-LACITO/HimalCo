@@ -42,7 +42,16 @@ lmf_mdf.update({
 
 def format_lexeme(lexical_entry, font):
     result = ""
-    lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
+    if len(lexical_entry.get_components()) != 0:
+        lexeme = ""
+        for component in lexical_entry.get_components():
+            lexeme += component.get_lexeme() + ","
+        # Remove last punctuation
+        lexeme = lexeme.rstrip(",")
+        # Apply font
+        lexeme = font[VERNACULAR](lexeme)
+    else:
+        lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
     if lexical_entry.is_subentry():
         result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
     else:
@@ -63,6 +72,16 @@ def format_lexeme(lexical_entry, font):
     result += "} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
         result += "\markboth{" + lexeme + "}{}" + EOL
+    if len(lexical_entry.get_components()) != 0:
+        # Add components part of speech
+        result += "pc("
+        for component in lexical_entry.get_components():
+            if component.get_lexical_entry() is not None:
+                result += tex.format_part_of_speech(component.get_lexical_entry(), font)
+                result = result.rstrip(". ") + ", "
+        # Handle last punctuation
+        result = result.rstrip(", ")
+        result += ("). ")
     return result
 
 def format_notes(lexical_entry, font):
