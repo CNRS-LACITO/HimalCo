@@ -4648,12 +4648,16 @@
 \dt 13/Aug/2012
 
 \lx _{mŋɤm}ɯ-rɕa
-\ps n
 \ge chérir
 \gn 疼爱
 \xv a-ɣe a-rɕa mŋɤm
 \xn 我疼爱我的孙子
 \cf nɤrɕɤmŋɤm
+\xn 无辜的老百姓
+\lf Component1 = mŋɤm
+\ps vs
+\lf Component2 = ɯ-rɕa
+\ps np
 \dt 30/May/2013
 
 \lx mŋurɯm
@@ -6095,11 +6099,18 @@
 \dt 16/Apr/2012
 
 \lx _{ta}prɤdɤja
-\ps n
-\ge griffer partout, mettre en désordre (oiseau)
-\gn 到处乱抓、乱撒东西（鸟）
+\sn 1
+\ge griffer partout
+\gn 到处乱抓
+\sn 2
+\ge mettre en désordre (oiseau)
+\gn 乱撒东西（鸟）
 \xv kumpɣa kɯ ɯ-thoʁ ra chɯ-rɤβraʁ tɕe, prɤdɤja ʑo pjɯ-te ŋu
 \xn 鸡把地面抓得到处都是抓过的痕迹
+\lf Component1 = ta
+\ps vt
+\lf Component2 = prɤdɤja
+\ps n
 \dt 22/Jul/2014
 
 \lx prɤɲi
@@ -8721,11 +8732,14 @@
 \gn 奶锅
 
 \lx _{lɤt}tɤlɟɣo
-\ps n
 \pdl dir 
 \pdv kɤ-
-\ge attraper au colet (cheval, bovidé) 
+\ge attraper au collet (cheval, bovidé) 
 \gn 套（动物） 
+\lf Component1 = lɤt
+\ps vt
+\lf Component2 = tɤlɟɣo
+\ps n
 \dt 05/Aug/2014
 
 \lx tɤ-loʁ¹
@@ -8916,11 +8930,14 @@
 \dt 14/May/2012
 
 \lx _{lɤt}tɤqɤt
-\ps vt
 \pdl dir 
 \pdv lɤ-
 \ge séparer une chambre en deux 
 \gn 把大房间隔成两个小房间 
+\lf Component1 = lɤt
+\ps vt
+\lf Component2 = tɤqɤt
+\ps n
 \dt 09/Jun/2013
 
 \lx tɤqiaβjmɤɣ
@@ -13921,10 +13938,6 @@
 \xn 四是二的两倍
 \dt 05/May/2014
 
-\lx tɯ-ʑi
-\cf loʁ²
-\dt 20/Dec/2012
-
 \lx tɯ-ʑŋgrɯm
 \ps n
 \ge cartilage 
@@ -14377,10 +14390,9 @@
 \dt 10/Sep/2014
 
 \lx _{maʁ}ɯ-ndzɯɣ
-\ps vs
 \pdl dir 
 \pdv pɯ-
-\ge terrible 
+\ge être terrible 
 \gn 厉害 
 \xv a-mu kɯ ``a-ku ɯ-tɯ-mŋɤm kɯ ɯ-ndzɯɣ ʑo ɲɯ-maʁ" 
 \xn 妈妈说“我头疼得很厉害”
@@ -14388,6 +14400,10 @@
 \xn 今天街上人特别多 
 \xv khɤcɤl ɯ-ndzɯɣ to-ɣɤmaʁ-ndʑi ɕti 
 \xn 他们谈了很久
+\lf Component1 = maʁ
+\ps vs
+\lf Component2 = ɯ-ndzɯɣ
+\ps np
 \dt 22/Jul/2014
 
 \lx ɯ-ndzɯndzoʁ
@@ -14623,11 +14639,14 @@
 \dt 26/Aug/2014
 
 \lx _{ŋɤn}ɯ-rka
-\ps n
-\ge ingrat, mauvais 
+\ge être ingrat
 \gn 脾气很坏，做亏心事 
 \xv nɤ-rka ɯ-tɯ-ŋɤn 
 \xn 你很坏
+\lf Component1 = ŋɤn
+\ps vs
+\lf Component2 = ɯ-rka
+\ps np
 \dt 20/May/2013
 
 \lx ɯrkoz
@@ -30465,24 +30484,6 @@
 \gn 木板受潮而变形 
 \xv tɤrɤɕkho ɲo-loʁ
 \xn 地板变形了
-\dt 24/Mar/2013
-
-\lx _loʁ²
-\wav vi-loR-tWZi
-\ps vi
-\pdl dir 
-\pdv nɯ-
-\ge avoir la nausée 
-\gn 想吐、觉得恶心
-\un 这个动词和名词|fv{tɯ-ʑi}构成词组，不能单独使用
-\xv ɯʑo ɯ-ʑi ɲɯ-loʁ
-\xn 他觉得恶心
-\xv a-ʑi ɲɯ-loʁ
-\xn 我觉得恶心
-\se sɯɣloʁ
-\se sɤsɯɣloʁ
-\cf nɤʑɯloʁ
-\cf tɯ-ʑi
 \dt 24/Mar/2013
 
 \lx _ltɤβ
@@ -46455,13 +46456,16 @@
 
 \lx _{rɤrɕɯβ}tɯ-qe
 \wav vt-rArCWB
-\ps vt
 \pdl dir 
 \pdv thɯ-
 \ge péter sans faire de bruit 
 \gn 悄悄地放屁 
 \xv ɯ-qe tha-rɤrɕɯβ
 \xn 他放了屁
+\lf Component1 = rɤrɕɯβ
+\ps vt
+\lf Component2 = tɯ-qe
+\ps np
 \dt 09/Jun/2013
 
 \lx _rɤrɟit
@@ -55189,7 +55193,6 @@
 \lx _{tɕhot}thaʁ
 \wav8 thaRpWtChota
 \wav8 thaRnWtChottCi
-\ps vt
 \pdl dir 
 \pdv nɯ-
 \pdl dir 
@@ -55203,6 +55206,10 @@
 \xn 我们商议好了就做了决定
 \xv aʑo nɤ-ɕki ju-ɣi-a ŋu thaʁ nɯ-tɕhot-a
 \xn 我决定了会去你那边
+\lf Component1 = tɕhot
+\ps vt
+\lf Component2 = thaʁ
+\ps n
 \dt 02/Jun/2013
 
 \lx _tɕhɯ
@@ -58702,19 +58709,21 @@
 \dt 01/Nov/2011
 
 \lx _{cɯ}ɯ-lu
-\ps vi
 \pdl dir 
 \pdv pɯ-
 \ge s'arrêter de respirer 
-\gn 突然停止呼吸，休克 
+\gn 突然窒息，休克 
 \xv aʑo pɯ-xtɕi-a, khɤxtɤndo pɯ-atar-a tɕe, a-lu pjɤ-cɯ khi 
 \xn 我小的时候，从楼梯上摔下来，就休克了
+\lf Component1 = cɯ
+\ps vt
+\lf Component2 = ɯ-lu
+\ps np
 \dt 07/Oct/2014
 
 \lx _{mbi}tɯ-ʁo
 \wav8 aRomAmbi
 \wav n-tWRo
-\ps vt
 \pdl dir 
 \pdv nɯ-
 \ng acaus
@@ -58726,11 +58735,14 @@
 \xv a-ʁo ɲɯ-mbi ɕti
 \xn 我很失望
 \cf nɤʁombi
+\lf Component1 = mbi
+\ps vi
+\lf Component2 = tɯ-ʁo
+\ps np
 \dt 22/Jul/2014
 
 \lx _{phi}tɯ-ʁo
 \wav8 aRoYWphi
-\ps vt
 \ge décevoir
 \gn 令……失望
 \xv ɯʑo kɯ a-ʁo ɲɯ-phi
@@ -58739,11 +58751,14 @@
 \xn 我对你很失望
 \xv a-ʁo ɲɯ-nɯ-phi-a
 \xn 我对我自己很失望
+\lf Component1 = phi
+\ps vt
+\lf Component2 = tɯ-ʁo
+\ps np
 \cf {mbi}tɯ-ʁo
 \dt 01/Sep/2014
 
 \lx _{rgi}khɤli
-\ps vi
 \pdl dir 
 \pdv tɤ-
 \ge avoir une bonne renommée
@@ -58751,6 +58766,10 @@
 \un 古语
 \xv ɯ-khɤli ɲɯ-rgi
 \xn 他名声很好
+\lf Component1 = rgi
+\ps vs
+\lf Component2 = khɤli
+\ps np
 
 \dt 22/Jul/2014
 
@@ -58764,7 +58783,6 @@
 
 \lx _{thon}ɯ-ŋgu
 \wav vi-WNgu_thon
-\ps vi
 \pdl dir 
 \pdv thɯ-
 \ge avoir une bonne situation familliale 
@@ -58777,6 +58795,10 @@
 \xn 他很有钱，很富有
 \xv iʑo ɕoŋtaʁ tɯ-ŋgu mɤ-kɯ-thon me
 \xn 没有比我们穷的人了
+\lf Component1 = thon
+\ps vs
+\lf Component2 = ɯ-ŋgu
+\ps np
 \dt 22/Jul/2014
 
 \lx _{thɯɣ}tho
@@ -58784,7 +58806,6 @@
 \wav vi-thWG-b
 \wav vi-thWG-b2
 \wav8 thoYWthWG
-\ps vs
 \pdl dir 
 \pdv tɤ-
 \ge concordant
@@ -58793,6 +58814,10 @@
 \xn 是相符的
 \xv ɯʑo kɯ ta-tɯt cho nɤj tu-tɯ-ti nɯ tho ɲɯ-thɯɣ
 \xn 他说的和你说的完全相符
+\lf Component1 = thɯɣ
+\ps vs
+\lf Component2 = tho
+\ps n
 \dt 22/Jul/2014
 
 \lx $aɕi
@@ -68995,7 +69020,6 @@ l
 
 \lx tɤmtshɤz{ndo}
 \wav n-tAntshAzkAkWndo
-\ps vt
 \pdl dir
 \pdv kɤ-
 \ge avoir une hyperostose
@@ -69003,6 +69027,10 @@ l
 \hbf maladie 
 \xv ɕɤrɯ pɯ-mɲɤt tɕe ɯ-rɯru-z kɤ-ɣɤmna mɯ-pɯ-kɯ-khɯ tɕe, nɯ ɯ-stu nɯ ɯ-zbɤβ ku-ndzoʁ ɲɯ-ŋgrɤl tɕe, ɯ-nɯnɯ tɤ-rʑaʁ tɤ-rɲɟi tɕe, kɤ-nɤma nɤɴqa kɯ-fse, tɯmɯ tɤ-ɲɟɯr kɯ-fse tɕe wuma ʑo ɲɯ-mŋɤm. nɯnɯ tɤmtshɤz kɤ-kɯ-ndo rmi. 
 \xn 骨折当时没能治好，在骨折的地方会长出胞来，时间一长，劳累了，天气变化了都会很痛。这种病叫骨质增生病。
+\lf Component1 = ndo
+\ps vt
+\lf Component2 = tɤmtshɤz
+\ps n
 \dt 12/May/2012
 
 \lx ^tɤ-mtsɯ
@@ -71497,13 +71525,19 @@ l
 
 \lx _{loʁ}tɯ-ʑi
 \wav vi-loR-tWZi
-\ps n
 \ge avoir la nausée 
 \gn 觉得恶心
-\un 这个名词和动词|fv{loʁ}构成词组，不能单独使用
 \xv ɯʑo ɯ-ʑi ɲɯ-loʁ
 \xn 他觉得恶心
+\xv a-ʑi ɲɯ-loʁ
+\xn 我觉得恶心
+\se sɯɣloʁ
+\se sɤsɯɣloʁ
 \cf nɤʑɯloʁ
+\lf Component1 = loʁ
+\ps vs
+\lf Component2 = tɯ-ʑi
+\ps np
 \dt 22/Jul/2014
 
 \lx ^ɯjo
@@ -71874,13 +71908,16 @@ l
 \dt 13/Dec/2011
 
 \lx _{χɕu}{rnaʁ}
-\ps vs
 \ge merci beaucoup 
 \gn 万分感谢 
 \xv pɯ-tɯ-χɕu pɯ-tɯ-rnaʁ 
 \xn 感谢你了
 \xv pɯ-χɕu pɯ-rnaʁ 
 \xn 万分感谢他
+\lf Component1 = χɕu
+\ps vs
+\lf Component2 = rnaʁ
+\ps vs
 \dt 22/Jul/2014
 
 \lx ^χsjɯβ
