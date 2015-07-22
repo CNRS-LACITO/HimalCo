@@ -50,7 +50,7 @@ def insert_references(lexical_entry):
             text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
     return text
 
-def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[]):
+def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[]):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
@@ -69,6 +69,23 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(file_read(preamble))
+    # Insert LaTeX commands to create a document
+    tex_file.write(EOL + "\\begin{document}" + EOL)
+    tex_file.write("\\maketitle" + EOL)
+    tex_file.write("\\newpage" + EOL)
+    # Add introduction if any
+    if introduction is not None:
+        tex_file.write("\\markboth{INTRODUCTION}{}" + EOL * 2)
+    tex_file.write(file_read(introduction))
+    # Add command for small caps
+    tex_file.write(EOL + "\\def\\mytextsc{\\bgroup\\obeyspaces\\mytextscaux}" + EOL)
+    tex_file.write("\\def\\mytextscaux#1{\\mytextscauxii #1\\relax\\relax\\egroup}" + EOL)
+    tex_file.write("\\def\\mytextscauxii#1{%" + EOL)
+    tex_file.write("\\ifx\\relax#1\\else \\ifcat#1\\@sptoken{} \\expandafter\\expandafter\\expandafter\\mytextscauxii\\else" + EOL)
+    tex_file.write("\\ifnum`#1=\\uccode`#1 {\\normalsize #1}\\else {\\footnotesize \\uppercase{#1}}\\fi \\expandafter\\expandafter\\expandafter\\mytextscauxii\\expandafter\\fi\\fi}" + EOL * 2)
+    # Configure space indent
+    tex_file.write("\\setlength\\parindent{0cm}" + EOL)
+    tex_file.write("\\setlength{\\parskip}{-0.5cm}" + EOL)
     # Insert data path configuration
     # Unix-style paths
     audio_path = config.xml.audio_path
@@ -80,10 +97,8 @@ def tex_write(object, filename, preamble=None, lmf2tex=lmf_to_tex, font=None, it
     tex_file.write(EOL + "\\addmediapath{" + audio_path.rstrip("/") + "}" + EOL)
     tex_file.write("\\addmediapath{" + audio_path + "mp3}" + EOL)
     tex_file.write("\\addmediapath{" + audio_path + "wav}" + EOL)
-    tex_file.write("\\graphicspath{{" + graphic_path + "/src/output/img/}}" + EOL)
-    # Insert LaTeX commands to create a document
-    tex_file.write(EOL + "\\begin{document}" + EOL)
-    tex_file.write("\\maketitle" + EOL)
+    tex_file.write("\\graphicspath{{" + graphic_path + "/src/output/img/}}" + EOL * 2)
+    # Configure 2 columns
     tex_file.write("\\newpage" + EOL)
     tex_file.write("\\begin{multicols}{2}" + EOL * 2)
     if sort_order is None:

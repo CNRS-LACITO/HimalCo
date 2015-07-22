@@ -35,7 +35,7 @@ xml_order = lmf.read_sort_order(user_path + "japhug/sort_order.xml")
 lexical_resource.get_lexicon("japhug").sort_lexical_entries(items=items, sort_order=xml_order)
 
 # Write LaTeX file
-lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/japhug.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
+lmf.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/preamble.tex", introduction=user_path + "japhug/introduction.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
 
 # Release created objects
 del lexical_resource
