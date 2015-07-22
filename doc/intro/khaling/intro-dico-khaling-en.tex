@@ -1,0 +1,117 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{booktabs}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{memhfixc}
+\usepackage{amssymb}
+\usepackage{multicol}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{1.5cm}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\english[]{CharisSIL}
+\newcommand{\eng}[1]{{\english #1}}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{CharisSIL}
+\newcommand{\ipa}[1]{{\phon #1}} % API en italique
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mx[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{ArialUnicodeMS} % pour les questions
+\newcommand{\nq}[1]{{\mx #1}}
+%\newfontfamily\sktfont[Script=Devanagari]{Sanskrit 2003}
+\newfontfamily\sktfont{Sanskrit 2003}
+\newcommand{\skt}[1]{{\sktfont #1}}
+\newfontfamily\mangalfont{Mangal}
+\newcommand{\mgl}[1]{{\mangalfont#1}}
+\XeTeXlinebreaklocale "zh" % 使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyheadoffset{3.4em}
+\usepackage[dvipdfmx,xetex,bigfiles,final,activate=onclick,deactivate=onclick,transparent,passcontext]{media9}
+\usepackage{graphicx}
+\usepackage[bookmarks=true,colorlinks,linkcolor=blue]{hyperref}
+\usepackage{gb4e}
+\usepackage{vmargin}
+% {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
+\setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{1cm}{0.5cm}{1cm}
+
+\def\mytextsc{\bgroup\obeyspaces\mytextscaux}
+\def\mytextscaux#1{\mytextscauxii #1\relax\relax\egroup}
+\def\mytextscauxii#1{%
+\ifx\relax#1\else \ifcat#1\@sptoken{} \expandafter\expandafter\expandafter\mytextscauxii\else
+\ifnum`#1=\uccode`#1 {\normalsize #1}\else {\footnotesize \uppercase{#1}}\fi \expandafter\expandafter\expandafter\mytextscauxii\expandafter\fi\fi}
+
+\addmediapath{C:/Users/crlao/Documents/GitHub/HimalCo/dict/khaling/data/audio}
+\addmediapath{C:/Users/crlao/Documents/GitHub/HimalCo/dict/khaling/data/audio/mp3}
+\addmediapath{C:/Users/crlao/Documents/GitHub/HimalCo/dict/khaling/data/audio/wav}
+\graphicspath{{C:/Users/crlao/Documents/GitHub/HimalCo/dev/lib/lmf/src/output/img/}}
+
+
+\begin{document} 
+
+\section{Why a verb dictionary?}
+
+While it might seem unusual to have a dictionary made up entirely of verbs, we feel that this is the most impactful contribution we can make to Khaling lexical studies.
+
+Traditionally, dictionaries list verbs according to their infinitive form -- in Khaling, the infinitive is the form that ends in -न्य \ipa{-nɛ}.  The complexity of Khaling verbs is such that the infinitive of a verb does not provide sufficient information  to be able to accurately conjugate the verb.
+
+Take for example the verb कर्न्य \ipa{kʌ̄rnɛ}: it has two meanings, `carry' and `bring for someone'.Their infinitives are the same, yet when conjugated, for example with a 1st person singular subject in the non-past, the forms are different:
+
+\begin{itemize}
+\item उङ कुरु  \ipa{ʔuŋʌ kuru}, `I carry'
+\item उङ कर्दु \ipa{ʔuŋʌ kʌ̄rdu}, `I bring for someone'
+\end{itemize}
+
+The reason for this is that the verb roots are different -- one is \ipa{kur}, the other is \ipa{kurt} -- even though their infinitives are pronounced exactly the same way.
+
+This verb dictionary's mission is to provide complete information about all verbs, allowing them to be conjugated correctly. Each verb is thus listed by its root form, alongside the more familiar infinitive, and we also provide verb conjugation tables for each type of verb, so that any verb can be conjugated in any of its forms.
+ 
+\section{How to use this dictionary and its conjugation tables}
+Verbs are listed by infinitive form followed by a form in parentheses, which is the verb root.
+
+The link at the bottom of the entry refers to the correct conjugation table.
+
+You will need to determine what the nature of the subject (also called agent, if it carries out the action) and of the object (also called patient), if present.  You will also need to determine whether you want a non-past (=present or future), past, or imperative (=command) form of the verb.
+
+\begin{table}[H]
+\caption{Personal pronouns in Khaling} \label{tab:pro} \centering
+\begin{tabular}{llllllllllllllllllll}
+\toprule
+1S  & 	\ipa{ʔûŋ}  & उ:ङ्& 	or  & 	\ipa{ʔuŋʌ}  &  उङ \\
+1DI  & 	\ipa{ʔīːtsi}  & ईचि& 	or  & 	\ipa{ʔīːtsiʔɛ}  &ईचिअ्य \\
+1DE  & 	\ipa{ʔōːtsu}  &ओऽचु & 	or  & 	\ipa{ʔōːtsuʔɛ}  &ओऽचुअ्य \\
+1PI  & 	\ipa{ʔik}  &इक् & 	or  & 	\ipa{ʔikʔɛ}  &इक्अ्य  \\
+1PE  & 	\ipa{ʔok}  & ओक् & 	or  & 	\ipa{ʔokʔɛ}  &ओक्अ्य  \\
+2S  & 	\ipa{ʔin}  & इन्& 	or  & 	\ipa{ʔinɛ}  &इन्यअ्य \\
+2D  & 	\ipa{ʔēːtsi}  & एचि & 	or  & 	\ipa{ʔēːtsiʔɛ}  &एचिअ्य \\
+2P  & 	\ipa{ʔên}  &ए:न् & 	or  & 	\ipa{ʔênʔɛ}  & ए:न्अ्य \\
+3S  & 	\ipa{ʔʌ̄m}  &अम् & 	or  & 	\ipa{ʔʌ̄mʔɛ}  &अम्अ्य \\
+3D  & 	\ipa{ʔʌ̄msu}  & अम्‌सु& 	or  & 	\ipa{ʔʌ̄msuʔɛ}  & अम्‌सुअ्य\\
+3P  & 	\ipa{ʔʌ̄mɦɛm}  & अम्‌ह्‌याम् & 	or  & 	\ipa{ʔʌ̄mɦɛmʔɛ}  &म्‌ह्‌याम्अ्य \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+X>Y	: X is the subject/ agent, Y is the object/patient.
+
+Once you determine the correct combination of subject and object, and whether you need a non-past, past or imperative form, you will need to look at the example verb which is in the corresponding slot of the verb conjugation table.
+
+The example verb will have the same ending but probably not the same beginning as the verb you wish to conjugate. You will need to substitute the correct beginning consonant(s) so they match the verb you are conjugating.
+
+For instance, you want to conjugate कर्न्य \ipa{kʌ̄rnɛ}, 'carry', with a \textsc{1sg} agent (उङ \ipa{ʔuŋʌ}) and a  \textsc{3sg}  patient (अम् \ipa{ʔʌ̄m}, or any singular noun), in the non-past.
+
+The verb dictionary will give you the verb root \ipa{kur} as corresponding to 'carry'. This is a transitive verb, and its root ends in the VC combination \ipa{-ur}, which corresponds to Tables \ref{ur.vt.eng} (in English and IPA) and \ref{ur.vt} (in Nepali).
+
+The \textsc{1s$\rightarrow$3s} non-past cell of the conjugation table gives you: सुरु \ipa{suru} (because the example verb is सर्न्य \ipa{sʌ̄rnɛ}, `wash'.
+
+You must change the first letter from स \ipa{s} to क \ipa{k} (सर्न्य \ipa{sʌ̄rnɛ} > कर्न्य \ipa{kʌ̄rnɛ}) to obtain the correct form: सुरु \ipa{suru} > कुरु \ipa{kuru}.
+
+
+\setlength\parindent{0cm}
+\setlength{\parskip}{-0.5cm}
+
+
+\end{document}
