@@ -1193,6 +1193,34 @@ class TestLexicalEntryFunctions(unittest.TestCase):
         del self.lexical_entry.related_form[1], self.lexical_entry.related_form[0]
         del subentry1, subentry2
 
+    def test_create_and_add_component(self):
+        # Test create and add components to the lexical entry
+        lexeme = "lexeme1"
+        position = 1
+        self.assertIs(self.lexical_entry.create_and_add_component(position, lexeme), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.get_components()), 1)
+        self.assertEqual(self.lexical_entry.list_of_components.component[0].targets, lexeme)
+        lexeme = "lexeme2"
+        position = 2
+        self.assertIs(self.lexical_entry.create_and_add_component(position, lexeme), self.lexical_entry)
+        self.assertEqual(len(self.lexical_entry.get_components()), 2)
+        self.assertEqual(self.lexical_entry.list_of_components.component[1].targets, lexeme)
+        # Release ListOfComponents and Component instances
+        del self.lexical_entry.list_of_components.component[1], self.lexical_entry.list_of_components.component[0], self.lexical_entry.list_of_components
+
+    def test_get_components(self):
+        # Add components to the lexical entry
+        lexeme1 = "first"
+        position1 = 1
+        lexeme2 = "second"
+        position2 = 2
+        self.lexical_entry.create_and_add_component(position1, lexeme1)
+        self.lexical_entry.create_and_add_component(position2, lexeme2)
+        # Test get components
+        self.assertEqual(self.lexical_entry.get_components(), [self.lexical_entry.list_of_components.component[0], self.lexical_entry.list_of_components.component[1]])
+        # Release ListOfComponents and Component instances
+        del self.lexical_entry.list_of_components.component[1], self.lexical_entry.list_of_components.component[0], self.lexical_entry.list_of_components
+
 suite = unittest.TestLoader().loadTestsFromTestCase(TestLexicalEntryFunctions)
 
 ## Run test suite
