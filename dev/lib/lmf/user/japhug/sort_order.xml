@@ -4,7 +4,7 @@
 	<rules level="1">
 		<rule str="" rank="0"/>
 		<rule str="a" rank="1"/> <!--rule str="æ" rank="1.1"/-->
-		<!--rule str="ɤ" rank="2"/-->
+		<rule str="ɤ" rank="2"/>
 		<rule str="b" rank="3"/> <rule str="β" rank="3.1"/>
 		<rule str="C" rank="4"/> <rule str="c" rank="4"/>
 		<rule str="ɕ" rank="5"/>
@@ -15,7 +15,7 @@
 		<rule str="ɣ" rank="10"/>
 		<!--rule str="ɢ" rank="11"/-->
 		<!--rule str="H" rank="12"/--> <!--rule str="h" rank="12"/--> <rule str="ɦ" rank="12.1"/>
-		<!--rule str="i" rank="13"/-->
+		<rule str="i" rank="13"/>
 		<rule str="j" rank="14"/>
 		<rule str="ɟ" rank="15"/>
 		<rule str="K" rank="16"/> <rule str="k" rank="16"/>
