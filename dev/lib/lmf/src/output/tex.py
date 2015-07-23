@@ -85,7 +85,6 @@ def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to
     tex_file.write("\\ifnum`#1=\\uccode`#1 {\\normalsize #1}\\else {\\footnotesize \\uppercase{#1}}\\fi \\expandafter\\expandafter\\expandafter\\mytextscauxii\\expandafter\\fi\\fi}" + EOL * 2)
     # Configure space indent
     tex_file.write("\\setlength\\parindent{0cm}" + EOL)
-    tex_file.write("\\setlength{\\parskip}{-0.5cm}" + EOL)
     # Insert data path configuration
     # Unix-style paths
     audio_path = config.xml.audio_path

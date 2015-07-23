@@ -178,6 +178,9 @@ def handle_reserved(text):
 def lmf2tex(lexical_entry, font):
     import output.tex as tex
     tex_entry = ""
+    if lmf2tex.is_first_entry:
+        tex_entry += "\\setlength{\\parskip}{-0.5cm}" + EOL
+        lmf2tex.is_first_entry = False
     # lexeme and id
     tex_entry += format_lexeme(lexical_entry, config.xml.font)
     # TODO: phonetic variants ? or variant form ?
@@ -232,3 +235,4 @@ def lmf2tex(lexical_entry, font):
     tex_entry = tex.handle_pinyin(tex_entry)
     tex_entry = tex.handle_caps(tex_entry)
     return tex_entry + EOL
+lmf2tex.is_first_entry = True

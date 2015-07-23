@@ -194,6 +194,9 @@ def format_paradigms(lexical_entry, font):
 ## Function giving order in which information must be written in LaTeX and mapping between LMF representation and LaTeX (output)
 def lmf2tex(lexical_entry, font):
     tex_entry = ""
+    if lmf2tex.is_first_entry:
+        tex_entry += "\\setlength{\\parskip}{-0.5cm}" + EOL
+        lmf2tex.is_first_entry = False
     # lexeme, id and phonetic variants
     tex_entry += format_lexeme(lexical_entry, font)
     # sound
@@ -245,3 +248,4 @@ def lmf2tex(lexical_entry, font):
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)
     return tex_entry + EOL
+lmf2tex.is_first_entry = True
