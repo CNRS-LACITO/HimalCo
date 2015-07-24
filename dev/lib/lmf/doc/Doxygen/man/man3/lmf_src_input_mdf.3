@@ -1,4 +1,4 @@
-.TH "lmf.src.input.mdf" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.input.mdf" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -16,7 +16,7 @@ lmf.src.input.mdf \-
 .in -1c
 .SH "Function Documentation"
 .PP 
-.SS "def lmf\&.src\&.input\&.mdf\&.mdf_read (filename, mdf2lmf = \fCmdf_lmf\fP, id = \fCNone\fP)"
+.SS "def lmf\&.src\&.input\&.mdf\&.mdf_read (filename = \fCNone\fP, mdf2lmf = \fCmdf_lmf\fP, lexicon = \fCNone\fP, id = \fCNone\fP, encoding = \fCENCODING\fP)"
 
 .PP
 Read an MDF file\&. 
@@ -27,7 +27,11 @@ Read an MDF file\&.
 .br
 \fImdf2lmf\fP A Python dictionary describing the mapping between MDF markers and LMF representation\&. Default value is 'mdf_lmf' dictionary defined in '\fBsrc/config/mdf\&.py\fP'\&. Please refer to it as an example\&. 
 .br
-\fIid\fP A Python string identifying the created lexicon\&. 
+\fIlexicon\fP An existing Lexicon to fill with lexical entries to read\&. 
+.br
+\fIid\fP A Python string identifying the lexicon to create\&. 
+.br
+\fIencoding\fP Use 'utf-8' encoding by default\&. Otherwise, user has to precise the native encoding of its document\&. 
 .RE
 .PP
 \fBReturns:\fP
@@ -37,7 +41,7 @@ A Lexicon instance containing all lexical entries\&.
 .PP
 
 .PP
-Definition at line 12 of file mdf\&.py\&.
+Definition at line 13 of file mdf\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for LMF library from the source code\&.

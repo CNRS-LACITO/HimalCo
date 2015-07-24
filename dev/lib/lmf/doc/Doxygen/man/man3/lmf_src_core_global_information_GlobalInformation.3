@@ -1,4 +1,4 @@
-.TH "lmf.src.core.global_information.GlobalInformation" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.global_information.GlobalInformation" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -21,9 +21,53 @@ lmf.src.core.global_information.GlobalInformation \-
 .br
 .RI "\fIDestructor\&. \fP"
 .ti -1c
-.RI "def \fBcheck_date_format\fP"
+.RI "def \fBset_languageCode\fP"
 .br
-.RI "\fIVerify that date format is composed as follows: YYYY-MM-DD\&. \fP"
+.RI "\fISet global information language code\&. \fP"
+.ti -1c
+.RI "def \fBget_languageCode\fP"
+.br
+.RI "\fIGet global information language code\&. \fP"
+.ti -1c
+.RI "def \fBset_version\fP"
+.br
+.RI "\fISet global information version\&. \fP"
+.ti -1c
+.RI "def \fBget_version\fP"
+.br
+.RI "\fIGet global information version\&. \fP"
+.ti -1c
+.RI "def \fBset_license\fP"
+.br
+.RI "\fISet global information license\&. \fP"
+.ti -1c
+.RI "def \fBget_license\fP"
+.br
+.RI "\fIGet global information license\&. \fP"
+.ti -1c
+.RI "def \fBset_characterEncoding\fP"
+.br
+.RI "\fISet global information character encoding\&. \fP"
+.ti -1c
+.RI "def \fBget_characterEncoding\fP"
+.br
+.RI "\fIGet global information character encoding\&. \fP"
+.ti -1c
+.RI "def \fBset_dateCoding\fP"
+.br
+.RI "\fISet global information date coding\&. \fP"
+.ti -1c
+.RI "def \fBget_dateCoding\fP"
+.br
+.RI "\fIGet global information date coding\&. \fP"
+.ti -1c
+.RI "def \fBset_projectName\fP"
+.br
+.RI "\fISet global information project name\&. \fP"
+.ti -1c
+.RI "def \fBget_projectName\fP"
+.br
+.RI "\fIGet global information project name\&. \fP"
 .ti -1c
 .RI "def \fBset_creationDate\fP"
 .br
@@ -130,25 +174,12 @@ Destructor\&.
 Definition at line 28 of file global_information\&.py\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.check_date_format (self, date)"
-
-.PP
-Verify that date format is composed as follows: YYYY-MM-DD\&. If not, raise an Error\&. 
-.PP
-\fBParameters:\fP
-.RS 4
-\fIdate\fP Date to check\&. 
-.RE
-.PP
-
-.PP
-Definition at line 33 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.compute_bibliographicCitation (self)"
 
 .PP
 Compute bibliographic citation from date and author\&. Set \fBGlobalInformation\fP attribute 'bibliographicCitation'\&. 
 .PP
-Definition at line 100 of file global_information\&.py\&.
+Definition at line 175 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_author (self)"
 
 .PP
@@ -161,7 +192,7 @@ Get global information author\&.
 .PP
 
 .PP
-Definition at line 80 of file global_information\&.py\&.
+Definition at line 155 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_bibliographicCitation (self)"
 
 .PP
@@ -174,7 +205,20 @@ Get global information bibliographic citation\&.
 .PP
 
 .PP
-Definition at line 110 of file global_information\&.py\&.
+Definition at line 185 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_characterEncoding (self)"
+
+.PP
+Get global information character encoding\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'characterEncoding'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_creationDate (self)"
 
 .PP
@@ -187,7 +231,20 @@ Get global information creation date\&.
 .PP
 
 .PP
-Definition at line 51 of file global_information\&.py\&.
+Definition at line 126 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_dateCoding (self)"
+
+.PP
+Get global information date coding\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'dateCoding'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 97 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_description (self)"
 
 .PP
@@ -200,7 +257,20 @@ Get global information description\&.
 .PP
 
 .PP
-Definition at line 94 of file global_information\&.py\&.
+Definition at line 169 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_languageCode (self)"
+
+.PP
+Get global information language code\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'languageCode'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_lastUpdate (self)"
 
 .PP
@@ -213,7 +283,46 @@ Get global information last update\&.
 .PP
 
 .PP
-Definition at line 66 of file global_information\&.py\&.
+Definition at line 141 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_license (self)"
+
+.PP
+Get global information license\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'license'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 69 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_projectName (self)"
+
+.PP
+Get global information project name\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'projectName'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 111 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.get_version (self)"
+
+.PP
+Get global information version\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP attribute 'version'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 55 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_author (self, author)"
 
 .PP
@@ -231,7 +340,25 @@ Set global information author\&.
 .PP
 
 .PP
-Definition at line 72 of file global_information\&.py\&.
+Definition at line 147 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_characterEncoding (self, character_encoding)"
+
+.PP
+Set global information character encoding\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcharacter_encoding\fP The character encoding to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_creationDate (self, date)"
 
 .PP
@@ -249,7 +376,25 @@ Set global information creation date\&.
 .PP
 
 .PP
-Definition at line 42 of file global_information\&.py\&.
+Definition at line 117 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_dateCoding (self, date_coding)"
+
+.PP
+Set global information date coding\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdate_coding\fP The date coding to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_description (self, description)"
 
 .PP
@@ -267,7 +412,25 @@ Set global information description\&.
 .PP
 
 .PP
-Definition at line 86 of file global_information\&.py\&.
+Definition at line 161 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_languageCode (self, language_code)"
+
+.PP
+Set global information language code\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage_code\fP The language code to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 33 of file global_information\&.py\&.
 .SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_lastUpdate (self, date)"
 
 .PP
@@ -285,7 +448,61 @@ Set global information last update\&.
 .PP
 
 .PP
-Definition at line 57 of file global_information\&.py\&.
+Definition at line 132 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_license (self, license)"
+
+.PP
+Set global information license\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlicense\fP The license to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_projectName (self, project_name)"
+
+.PP
+Set global information project name\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproject_name\fP The project name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file global_information\&.py\&.
+.SS "def lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.set_version (self, version)"
+
+.PP
+Set global information version\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIversion\fP The version to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBGlobalInformation\fP version\&. 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file global_information\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.global_information\&.GlobalInformation\&.author"

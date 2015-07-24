@@ -8,8 +8,12 @@ def \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component_ae5d54b8
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component_aa9c51c8d6a9f03f3e36f8b417a8f2f1e}{\+\_\+\+\_\+del\+\_\+\+\_\+}
 \begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a4ab10116f9391089519fea00d6abdb6b}{set\+\_\+lexical\+\_\+entry}
+\begin{DoxyCompactList}\small\item\em Set pointer to the component lexical entry instance. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component_adbe6d9c8fc9cdbf9dd0a6b5c07a3afd7}{get\+\_\+lexical\+\_\+entry}
-\begin{DoxyCompactList}\small\item\em Get pointed lexical entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get pointed lexical entry. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a78402da2b76d5031e94e90943c1cd68e}{get\+\_\+lexeme}
+\begin{DoxyCompactList}\small\item\em Get component Lexical\+Entry lexeme. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,14 +35,23 @@ Definition at line 6 of file component.\+py.
 \index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}}
 \subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+component.\+Component.\+\_\+\+\_\+init\+\_\+\+\_\+ (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{position = {\ttfamily None}, }
+\item[{}]{lexeme = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1morphology_1_1component_1_1_component_ae5d54b8fa8350b799ebbf914ef528dd7}
 
 
 Constructor. 
 
-\hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component}{Component} instances are owned by List\+Of\+Components. \begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component}{Component} instances are owned by List\+Of\+Components. 
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the component in the multiword expression. \\
+\hline
+{\em targets} & Related lexeme. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 A \hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component}{Component} instance. 
 \end{DoxyReturn}
 
@@ -58,11 +71,29 @@ Destructor.
 
 
 
-Definition at line 19 of file component.\+py.
+Definition at line 21 of file component.\+py.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a78402da2b76d5031e94e90943c1cd68e}{\index{lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}!get\+\_\+lexeme@{get\+\_\+lexeme}}
+\index{get\+\_\+lexeme@{get\+\_\+lexeme}!lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}}
+\subsubsection[{get\+\_\+lexeme}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+component.\+Component.\+get\+\_\+lexeme (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a78402da2b76d5031e94e90943c1cd68e}
+
+
+Get component Lexical\+Entry lexeme. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component}{Component} attribute 'targets'. 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file component.\+py.
+
 \hypertarget{classlmf_1_1src_1_1morphology_1_1component_1_1_component_adbe6d9c8fc9cdbf9dd0a6b5c07a3afd7}{\index{lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}!get\+\_\+lexical\+\_\+entry@{get\+\_\+lexical\+\_\+entry}}
 \index{get\+\_\+lexical\+\_\+entry@{get\+\_\+lexical\+\_\+entry}!lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}}
 \subsubsection[{get\+\_\+lexical\+\_\+entry}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+component.\+Component.\+get\+\_\+lexical\+\_\+entry (
@@ -79,7 +110,31 @@ Get pointed lexical entry.
 \end{DoxyReturn}
 
 
-Definition at line 25 of file component.\+py.
+Definition at line 35 of file component.\+py.
+
+\hypertarget{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a4ab10116f9391089519fea00d6abdb6b}{\index{lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}!set\+\_\+lexical\+\_\+entry@{set\+\_\+lexical\+\_\+entry}}
+\index{set\+\_\+lexical\+\_\+entry@{set\+\_\+lexical\+\_\+entry}!lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}}
+\subsubsection[{set\+\_\+lexical\+\_\+entry}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+component.\+Component.\+set\+\_\+lexical\+\_\+entry (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lexical\+\_\+entry}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a4ab10116f9391089519fea00d6abdb6b}
+
+
+Set pointer to the component lexical entry instance. 
+
+This function can only be called once the full dictionary has been parsed. 
+\begin{DoxyParams}{Parameters}
+{\em lexical\+\_\+entry} & The component Lexical\+Entry. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1component_1_1_component}{Component} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file component.\+py.
 
 
 
@@ -89,14 +144,14 @@ Definition at line 25 of file component.\+py.
 \subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+morphology.\+component.\+Component.\+position}}\label{classlmf_1_1src_1_1morphology_1_1component_1_1_component_ad4f8453c7d8bd58fe8d364b363067b2a}
 
 
-Definition at line 12 of file component.\+py.
+Definition at line 14 of file component.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a90de1db1e2438bbbcd08cccbe07ad1ea}{\index{lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}!targets@{targets}}
 \index{targets@{targets}!lmf\+::src\+::morphology\+::component\+::\+Component@{lmf\+::src\+::morphology\+::component\+::\+Component}}
 \subsubsection[{targets}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+morphology.\+component.\+Component.\+targets}}\label{classlmf_1_1src_1_1morphology_1_1component_1_1_component_a90de1db1e2438bbbcd08cccbe07ad1ea}
 
 
-Definition at line 14 of file component.\+py.
+Definition at line 16 of file component.\+py.
 
 
 

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lmf_5fto_5ftex',['lmf_to_tex',['../namespacelmf_1_1src_1_1config_1_1tex.html#ac85ca206e865c9cc1d77b77c72a429d2',1,'lmf::src::config::tex']]],
-  ['log',['log',['../namespacelmf_1_1src_1_1utils_1_1log.html#abf590a9f2e1b55b9eaf8ed9c30e1ee54',1,'lmf::src::utils::log']]]
+  ['insert_5freferences',['insert_references',['../namespacelmf_1_1src_1_1output_1_1tex.html#ab81efa044d47f387368ae4f11af1bde3',1,'lmf::src::output::tex']]],
+  ['is_5fcomponent',['is_component',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a8c0e7904dbb8c7b25560db7601b3ad71',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
+  ['is_5fsubentry',['is_subentry',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#ac7d5e6cc18edad83387ae547e408035e',1,'lmf::src::core::lexical_entry::LexicalEntry']]]
 ];

@@ -1,0 +1,46 @@
+.TH "/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBeol\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBeol\&.parser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBeol\&.options\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBeol\&.in_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBeol\&.out_file\fP = open(options\&.output, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBeol\&.EOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "list \fBeol\&.lines\fP = []"
+.br
+.ti -1c
+.RI "tuple \fBeol\&.previous_line\fP = lines\&.pop()"
+.br
+.ti -1c
+.RI "tuple \fBeol\&.line\fP = previous_line\&.replace(EOL, ' ')"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

@@ -1,4 +1,4 @@
-.TH "lmf.src.core.definition.Definition" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.definition.Definition" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -144,6 +144,14 @@ lmf.src.core.definition.Definition \-
 .RI "def \fBget_etymology_source\fP"
 .br
 .RI "\fIGet etymology source\&. \fP"
+.ti -1c
+.RI "def \fBset_scientific_name\fP"
+.br
+.RI "\fISet scientific name\&. \fP"
+.ti -1c
+.RI "def \fBget_scientific_name\fP"
+.br
+.RI "\fIGet scientific name\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -432,6 +440,19 @@ Get language used for definition and gloss\&.
 
 .PP
 Definition at line 50 of file definition\&.py\&.
+.SS "def lmf\&.src\&.core\&.definition\&.Definition\&.get_scientific_name (self)"
+
+.PP
+Get scientific name\&. This attribute is owned by the first Statement\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Statement attribute 'scientificName'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 477 of file definition\&.py\&.
 .SS "def lmf\&.src\&.core\&.definition\&.Definition\&.get_statements (self)"
 
 .PP
@@ -683,6 +704,24 @@ Set restriction and language\&. These attributes are owned by Statement\&.
 
 .PP
 Definition at line 253 of file definition\&.py\&.
+.SS "def lmf\&.src\&.core\&.definition\&.Definition\&.set_scientific_name (self, scientific_name)"
+
+.PP
+Set scientific name\&. Attribute 'scientficName' is owned by the first Statement\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscientific_name\fP Scientific name\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBDefinition\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 462 of file definition\&.py\&.
 .SS "def lmf\&.src\&.core\&.definition\&.Definition\&.set_usage_note (self, usage_note, language = \fCNone\fP)"
 
 .PP

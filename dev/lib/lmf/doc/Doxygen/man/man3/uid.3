@@ -1,0 +1,101 @@
+.TH "uid" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+uid \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBparser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBoptions\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBin_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBout_file\fP = open(options\&.output, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBEOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "string \fBpattern\fP = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+.br
+.ti -1c
+.RI "string \fBlx\fP = ''"
+.br
+.ti -1c
+.RI "string \fBmkr\fP = 'lx'"
+.br
+.ti -1c
+.RI "list \fBsf\fP = []"
+.br
+.ti -1c
+.RI "string \fBhm\fP = ''"
+.br
+.ti -1c
+.RI "tuple \fBresult\fP = re\&.search(\fBpattern\fP, line)"
+.br
+.ti -1c
+.RI "tuple \fBuid\fP = uni2sampa(\fBlx\fP)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "string uid\&.EOL = '\\n'"
+
+.PP
+Definition at line 23 of file uid\&.py\&.
+.SS "string uid\&.hm = ''"
+
+.PP
+Definition at line 38 of file uid\&.py\&.
+.SS "tuple uid\&.in_file = open(options\&.input, 'r', encoding='utf-8')"
+
+.PP
+Definition at line 13 of file uid\&.py\&.
+.SS "string uid\&.lx = ''"
+
+.PP
+Definition at line 35 of file uid\&.py\&.
+.SS "string uid\&.mkr = 'lx'"
+
+.PP
+Definition at line 36 of file uid\&.py\&.
+.SS "tuple uid\&.options = parser\&.parse_args()"
+
+.PP
+Definition at line 9 of file uid\&.py\&.
+.SS "tuple uid\&.out_file = open(options\&.output, 'w', encoding='utf-8')"
+
+.PP
+Definition at line 14 of file uid\&.py\&.
+.SS "tuple uid\&.parser = OptionParser()"
+
+.PP
+Definition at line 6 of file uid\&.py\&.
+.SS "string uid\&.pattern = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+
+.PP
+Definition at line 34 of file uid\&.py\&.
+.SS "tuple uid\&.result = re\&.search(\fBpattern\fP, line)"
+
+.PP
+Definition at line 40 of file uid\&.py\&.
+.SS "list uid\&.sf = []"
+
+.PP
+Definition at line 37 of file uid\&.py\&.
+.SS "tuple uid\&.uid = uni2sampa(\fBlx\fP)"
+
+.PP
+Definition at line 52 of file uid\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

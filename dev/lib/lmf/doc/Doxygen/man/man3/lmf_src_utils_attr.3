@@ -1,4 +1,4 @@
-.TH "lmf.src.utils.attr" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.utils.attr" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,6 +17,18 @@ lmf.src.utils.attr \-
 .RI "def \fBcheck_attr_range\fP"
 .br
 .RI "\fICheck that attribute value is in specified range\&. \fP"
+.ti -1c
+.RI "def \fBcheck_date_format\fP"
+.br
+.RI "\fIVerify that date format is composed as follows: YYYY-MM-DD (ISO 8601)\&. \fP"
+.ti -1c
+.RI "def \fBcheck_time_format\fP"
+.br
+.RI "\fIVerify that time format is composed as follows: THH:MM:SS,MSMS (ISO 8601: 'T' for Time)\&. \fP"
+.ti -1c
+.RI "def \fBcheck_duration_format\fP"
+.br
+.RI "\fIVerify that duration format is composed as follows: PTxxHxxMxxS (ISO 8601: 'P' for Period)\&. \fP"
 .in -1c
 .SH "Function Documentation"
 .PP 
@@ -43,7 +55,7 @@ The value to set, or None if out-of-range\&.
 .PP
 
 .PP
-Definition at line 19 of file attr\&.py\&.
+Definition at line 20 of file attr\&.py\&.
 .SS "def lmf\&.src\&.utils\&.attr\&.check_attr_type (val, typ, msg)"
 
 .PP
@@ -60,7 +72,46 @@ Check that attribute value is of specified type\&.
 .PP
 
 .PP
-Definition at line 5 of file attr\&.py\&.
+Definition at line 6 of file attr\&.py\&.
+.SS "def lmf\&.src\&.utils\&.attr\&.check_date_format (date)"
+
+.PP
+Verify that date format is composed as follows: YYYY-MM-DD (ISO 8601)\&. If not, display a Warning message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdate\fP Date to check\&. 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file attr\&.py\&.
+.SS "def lmf\&.src\&.utils\&.attr\&.check_duration_format (duration)"
+
+.PP
+Verify that duration format is composed as follows: PTxxHxxMxxS (ISO 8601: 'P' for Period)\&. If not, display a Warning message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIduration\fP Duration to check\&. 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file attr\&.py\&.
+.SS "def lmf\&.src\&.utils\&.attr\&.check_time_format (time)"
+
+.PP
+Verify that time format is composed as follows: THH:MM:SS,MSMS (ISO 8601: 'T' for Time)\&. If not, display a Warning message\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItime\fP Time to check\&. 
+.RE
+.PP
+
+.PP
+Definition at line 54 of file attr\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for LMF library from the source code\&.

@@ -132,6 +132,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ec2b944809b0503bc1bb07b034eef5b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html#a1ec2b944809b0503bc1bb07b034eef5b">get_language</a></td></tr>
 <tr class="memdesc:a1ec2b944809b0503bc1bb07b034eef5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get language used for written form.  <a href="#a1ec2b944809b0503bc1bb07b034eef5b">More...</a><br /></td></tr>
 <tr class="separator:a1ec2b944809b0503bc1bb07b034eef5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d072249f81b508e86b086fd80f27a7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html#ae7d072249f81b508e86b086fd80f27a7">set_scriptName</a></td></tr>
+<tr class="memdesc:ae7d072249f81b508e86b086fd80f27a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set script name.  <a href="#ae7d072249f81b508e86b086fd80f27a7">More...</a><br /></td></tr>
+<tr class="separator:ae7d072249f81b508e86b086fd80f27a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba63d43929e12252bc2ac535b6d3f563"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html#aba63d43929e12252bc2ac535b6d3f563">get_scriptName</a></td></tr>
+<tr class="memdesc:aba63d43929e12252bc2ac535b6d3f563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get script name.  <a href="#aba63d43929e12252bc2ac535b6d3f563">More...</a><br /></td></tr>
+<tr class="separator:aba63d43929e12252bc2ac535b6d3f563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -143,6 +149,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a029a488706154d5fe42ecbea00974780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba23f79743bc4aa642f344aec09a3807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html#aba23f79743bc4aa642f344aec09a3807">language</a></td></tr>
 <tr class="separator:aba23f79743bc4aa642f344aec09a3807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aeda3c7310f02affa313c8797bfaf65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html#a1aeda3c7310f02affa313c8797bfaf65">scriptName</a></td></tr>
+<tr class="separator:a1aeda3c7310f02affa313c8797bfaf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>"Text Representation is a class representing the textual content of definition or statement. When there is more than one variant orthography, the Text Representation instance contains a Unicode string representing the textual content as well as unique attribute-value pairs that describe the specific language, script and orthography." (LMF) </p>
@@ -230,6 +238,27 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Representation attribute 'language'. </dd></dl>
 
 <p>Definition at line <a class="el" href="text__representation_8py_source.html#l00073">73</a> of file <a class="el" href="text__representation_8py_source.html">text_representation.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba63d43929e12252bc2ac535b6d3f563"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.core.text_representation.TextRepresentation.get_scriptName </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get script name. </p>
+<dl class="section return"><dt>Returns</dt><dd>Representation attribute 'scriptName'. </dd></dl>
+
+<p>Definition at line <a class="el" href="text__representation_8py_source.html#l00089">89</a> of file <a class="el" href="text__representation_8py_source.html">text_representation.py</a>.</p>
 
 </div>
 </div>
@@ -344,6 +373,43 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae7d072249f81b508e86b086fd80f27a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.core.text_representation.TextRepresentation.set_scriptName </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>script_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set script name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">script_name</td><td>The script name to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation.html" title="&quot;Text Representation is a class representing the textual content of definition or statement...">TextRepresentation</a> instance. </dd></dl>
+
+<p>Definition at line <a class="el" href="text__representation_8py_source.html#l00079">79</a> of file <a class="el" href="text__representation_8py_source.html">text_representation.py</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6ecc8173f69656c0135368ded971ceea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -431,6 +497,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1aeda3c7310f02affa313c8797bfaf65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lmf.src.core.text_representation.TextRepresentation.scriptName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="text__representation_8py_source.html#l00086">86</a> of file <a class="el" href="text__representation_8py_source.html">text_representation.py</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a029a488706154d5fe42ecbea00974780"></a>
 <div class="memitem">
 <div class="memproto">
@@ -451,7 +531,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 12:25:32 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -11,22 +11,16 @@ def \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a5af3cc74d2bb8b03d7657c0e7fb
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-string \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_ae964bee79f865adc071d72a678dde128}{V\+E\+R\+N\+A\+C\+U\+L\+A\+R} = \char`\"{}ver\char`\"{}
-\begin{DoxyCompactList}\small\item\em Define languages. \end{DoxyCompactList}\item 
-string \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_ab4d5456356fada2592d7fb5d7e8ee780}{E\+N\+G\+L\+I\+S\+H} = \char`\"{}eng\char`\"{}
-\item 
-string \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_ae420b51631e5e37ccde4de5d72d05fae}{N\+A\+T\+I\+O\+N\+A\+L} = \char`\"{}nat\char`\"{}
-\item 
-string \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_ab52ee069b7cd6fa8b52afa15ea6f221e}{R\+E\+G\+I\+O\+N\+A\+L} = \char`\"{}reg\char`\"{}
-\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a888cd9df8b9511d408e646dc404b5232}{mdf\+\_\+lmf}
 \begin{DoxyCompactList}\small\item\em Mapping between M\+D\+F markers and L\+M\+F representation (input) \end{DoxyCompactList}\item 
 list \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_afe5efb72442beb65b5083335b744845c}{mdf\+\_\+order}
 \begin{DoxyCompactList}\small\item\em Order in which M\+D\+F markers must be written (output) This is the standard order defined in Appendix B of \char`\"{}\+Making Dictionaries. A guide to lexicography and the Multi-\/\+Dictionary Formatter\char`\"{}, Software version 1.\+0, David F. \end{DoxyCompactList}\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a78d8f1444783c1b86cbbd91f49a0cd4f}{lmf\+\_\+mdf}
 \begin{DoxyCompactList}\small\item\em Mapping between L\+M\+F representation and M\+D\+F markers (output) \end{DoxyCompactList}\item 
+tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a59bb4fce205d8159bc72c946e3855c4a}{ps\+\_\+range}
+\begin{DoxyCompactList}\small\item\em Possible values allowed for 'ps' M\+D\+F marker. \end{DoxyCompactList}\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}{ps\+\_\+part\+Of\+Speech}
-\begin{DoxyCompactList}\small\item\em Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) Source\+: \href{http://www.isocat.org/rest/dcs/119}{\tt http\+://www.\+isocat.\+org/rest/dcs/119}. \end{DoxyCompactList}\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a20455cbc7aa64cc6eb4ad1749a381738}{mdf\+\_\+semantic\+Relation}
 \begin{DoxyCompactList}\small\item\em Mapping between M\+D\+F markers and L\+M\+F semantic relation Related\+Form attribute value (input) \end{DoxyCompactList}\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_ab58fb9b58bc32ac36efe9b26e4ea3ca2}{pd\+\_\+person}
@@ -42,9 +36,7 @@ tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a8e61adc475ca415a33c85ef16
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a69afee1e13ba980f4da1e6d7fb0c488a}{sd\+\_\+range}
 \begin{DoxyCompactList}\small\item\em Possible values allowed for 'sd' M\+D\+F marker. \end{DoxyCompactList}\item 
 tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a61a24538d210d4eca3f57f183733fa5a}{lf\+\_\+range}
-\begin{DoxyCompactList}\small\item\em Possible values allowed for 'lf' M\+D\+F marker. \end{DoxyCompactList}\item 
-tuple \hyperlink{namespacelmf_1_1src_1_1config_1_1mdf_a59bb4fce205d8159bc72c946e3855c4a}{ps\+\_\+range}
-\begin{DoxyCompactList}\small\item\em Possible values allowed for 'ps' M\+D\+F marker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Possible values allowed for 'lf' M\+D\+F marker. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
@@ -61,7 +53,7 @@ Functions to process some M\+D\+F fields (output)
 
 
 
-Definition at line 248 of file mdf.\+py.
+Definition at line 245 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ab9d98a9297210440ed93a3ca490ee7b4}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!set\+\_\+bw@{set\+\_\+bw}}
 \index{set\+\_\+bw@{set\+\_\+bw}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -77,18 +69,11 @@ Functions to process some M\+D\+F fields (input)
 
 
 
-Definition at line 10 of file mdf.\+py.
+Definition at line 7 of file mdf.\+py.
 
 
 
 \subsection{Variable Documentation}
-\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ab4d5456356fada2592d7fb5d7e8ee780}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!E\+N\+G\+L\+I\+S\+H@{E\+N\+G\+L\+I\+S\+H}}
-\index{E\+N\+G\+L\+I\+S\+H@{E\+N\+G\+L\+I\+S\+H}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
-\subsubsection[{E\+N\+G\+L\+I\+S\+H}]{\setlength{\rightskip}{0pt plus 5cm}string lmf.\+src.\+config.\+mdf.\+E\+N\+G\+L\+I\+S\+H = \char`\"{}eng\char`\"{}}}\label{namespacelmf_1_1src_1_1config_1_1mdf_ab4d5456356fada2592d7fb5d7e8ee780}
-
-
-Definition at line 5 of file mdf.\+py.
-
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a61a24538d210d4eca3f57f183733fa5a}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!lf\+\_\+range@{lf\+\_\+range}}
 \index{lf\+\_\+range@{lf\+\_\+range}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
 \subsubsection[{lf\+\_\+range}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+lf\+\_\+range}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a61a24538d210d4eca3f57f183733fa5a}
@@ -98,7 +83,7 @@ Possible values allowed for 'lf' M\+D\+F marker.
 
 
 
-Definition at line 513 of file mdf.\+py.
+Definition at line 632 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a78d8f1444783c1b86cbbd91f49a0cd4f}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!lmf\+\_\+mdf@{lmf\+\_\+mdf}}
 \index{lmf\+\_\+mdf@{lmf\+\_\+mdf}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -109,7 +94,7 @@ Mapping between L\+M\+F representation and M\+D\+F markers (output)
 
 
 
-Definition at line 255 of file mdf.\+py.
+Definition at line 252 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a888cd9df8b9511d408e646dc404b5232}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+lmf@{mdf\+\_\+lmf}}
 \index{mdf\+\_\+lmf@{mdf\+\_\+lmf}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -120,7 +105,7 @@ Mapping between M\+D\+F markers and L\+M\+F representation (input)
 
 
 
-Definition at line 22 of file mdf.\+py.
+Definition at line 19 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_afe5efb72442beb65b5083335b744845c}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+order@{mdf\+\_\+order}}
 \index{mdf\+\_\+order@{mdf\+\_\+order}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -131,7 +116,7 @@ Order in which M\+D\+F markers must be written (output) This is the standard ord
 
 Coward, Charles E. Grimes, S\+I\+L International, Waxhaw, North Carolina, 2000 
 
-Definition at line 131 of file mdf.\+py.
+Definition at line 128 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a20455cbc7aa64cc6eb4ad1749a381738}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!mdf\+\_\+semantic\+Relation@{mdf\+\_\+semantic\+Relation}}
 \index{mdf\+\_\+semantic\+Relation@{mdf\+\_\+semantic\+Relation}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -141,21 +126,22 @@ Definition at line 131 of file mdf.\+py.
 1 = dict(\{
 2     \textcolor{stringliteral}{"sy"} : \textcolor{stringliteral}{"synonym"},
 3     \textcolor{stringliteral}{"an"} : \textcolor{stringliteral}{"antonym"},
-4     \textcolor{stringliteral}{"cf <hm>"} : \textcolor{stringliteral}{"homonym"},
-5     \textcolor{stringliteral}{"cf <et>"} : \textcolor{stringliteral}{"etymology"},
+4     \textcolor{stringliteral}{"hm"} : \textcolor{stringliteral}{"homonym"},
+5     \textcolor{stringliteral}{"et"} : \textcolor{stringliteral}{"etymology"},
 6     \textcolor{stringliteral}{"se"} : \textcolor{stringliteral}{"subentry"},
 7     \textcolor{stringliteral}{"mn"} : \textcolor{stringliteral}{"main entry"},
 8     \textcolor{stringliteral}{"cf"} : \textcolor{stringliteral}{"simple link"},
-9     \textcolor{stringliteral}{"lf"} : \textcolor{keywordtype}{None},
-10     \textcolor{stringliteral}{"ev"} : \textcolor{keywordtype}{None},
-11     \textcolor{stringliteral}{"ee"} : \textcolor{keywordtype}{None},
-12     \textcolor{stringliteral}{"en"} : \textcolor{keywordtype}{None},
-13     \textcolor{stringliteral}{"er"} : \textcolor{keywordtype}{None}
-14     \textcolor{comment}{# "derived form",}
-15     \textcolor{comment}{# "root",}
-16     \textcolor{comment}{# "stem",}
-17     \textcolor{comment}{# "collocation"}
-18 \})
+9     \textcolor{stringliteral}{"cp"} : \textcolor{stringliteral}{"complex predicate"},
+10     \textcolor{stringliteral}{"lf"} : \textcolor{keywordtype}{None},
+11     \textcolor{stringliteral}{"ev"} : \textcolor{keywordtype}{None},
+12     \textcolor{stringliteral}{"ee"} : \textcolor{keywordtype}{None},
+13     \textcolor{stringliteral}{"en"} : \textcolor{keywordtype}{None},
+14     \textcolor{stringliteral}{"er"} : \textcolor{keywordtype}{None}
+15     \textcolor{comment}{# "derived form",}
+16     \textcolor{comment}{# "root",}
+17     \textcolor{comment}{# "stem",}
+18     \textcolor{comment}{# "collocation"}
+19 \})
 \end{DoxyCode}
 
 
@@ -163,14 +149,7 @@ Mapping between M\+D\+F markers and L\+M\+F semantic relation Related\+Form attr
 
 
 
-Definition at line 394 of file mdf.\+py.
-
-\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ae420b51631e5e37ccde4de5d72d05fae}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!N\+A\+T\+I\+O\+N\+A\+L@{N\+A\+T\+I\+O\+N\+A\+L}}
-\index{N\+A\+T\+I\+O\+N\+A\+L@{N\+A\+T\+I\+O\+N\+A\+L}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
-\subsubsection[{N\+A\+T\+I\+O\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}string lmf.\+src.\+config.\+mdf.\+N\+A\+T\+I\+O\+N\+A\+L = \char`\"{}nat\char`\"{}}}\label{namespacelmf_1_1src_1_1config_1_1mdf_ae420b51631e5e37ccde4de5d72d05fae}
-
-
-Definition at line 6 of file mdf.\+py.
+Definition at line 512 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a011f241f41e3620deefe53cbb42286b9}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pd\+\_\+anymacy@{pd\+\_\+anymacy}}
 \index{pd\+\_\+anymacy@{pd\+\_\+anymacy}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -187,7 +166,7 @@ Mapping between 'pd' M\+D\+F markers and L\+M\+F anymacy Word\+Form attribute va
 
 
 
-Definition at line 421 of file mdf.\+py.
+Definition at line 540 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ac57ebe92cdf841d8d1bfe1e1b94b96bb}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pd\+\_\+clusivity@{pd\+\_\+clusivity}}
 \index{pd\+\_\+clusivity@{pd\+\_\+clusivity}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -205,7 +184,7 @@ Mapping between 'pd' M\+D\+F markers and L\+M\+F clusivity Word\+Form attribute 
 
 
 
-Definition at line 435 of file mdf.\+py.
+Definition at line 554 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a64be26974728c369cd72ef80bd297154}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pd\+\_\+grammatical\+Number@{pd\+\_\+grammatical\+Number}}
 \index{pd\+\_\+grammatical\+Number@{pd\+\_\+grammatical\+Number}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -226,7 +205,7 @@ Mapping between 'pd' M\+D\+F markers and L\+M\+F grammatical number Word\+Form a
 
 
 
-Definition at line 426 of file mdf.\+py.
+Definition at line 545 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ab58fb9b58bc32ac36efe9b26e4ea3ca2}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pd\+\_\+person@{pd\+\_\+person}}
 \index{pd\+\_\+person@{pd\+\_\+person}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -245,7 +224,7 @@ Mapping between 'pd' M\+D\+F markers and L\+M\+F person Word\+Form attribute val
 
 
 
-Definition at line 414 of file mdf.\+py.
+Definition at line 533 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a8e61adc475ca415a33c85ef16c96d03d}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!pdl\+\_\+paradigm\+Label@{pdl\+\_\+paradigm\+Label}}
 \index{pdl\+\_\+paradigm\+Label@{pdl\+\_\+paradigm\+Label}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -255,12 +234,13 @@ Definition at line 414 of file mdf.\+py.
 1 = dict(\{
 2     \textcolor{stringliteral}{"la"}        : \textcolor{stringliteral}{"lexicalized affix"},
 3     \textcolor{stringliteral}{"cc"}        : \textcolor{stringliteral}{"conjugation class"},
-4     \textcolor{stringliteral}{"past"}      : \textcolor{stringliteral}{"theme of the past"},
+4     \textcolor{stringliteral}{"past"}      : \textcolor{stringliteral}{"past stem"},
 5     \textcolor{stringliteral}{"comit"}     : \textcolor{stringliteral}{"comitative"},
 6     \textcolor{stringliteral}{"constr"}    : \textcolor{stringliteral}{"construction"},
 7     \textcolor{stringliteral}{"dir"}       : \textcolor{stringliteral}{"directional"},
-8     \textcolor{stringliteral}{"ir"}        : \textcolor{stringliteral}{"irregularity"}
-9 \})
+8     \textcolor{stringliteral}{"ir"}        : \textcolor{stringliteral}{"irregularity"},
+9     \textcolor{stringliteral}{"cl"}        : \textcolor{stringliteral}{"classifier"}
+10 \})
 \end{DoxyCode}
 
 
@@ -268,47 +248,18 @@ Mapping between 'pdl' M\+D\+F marker value and L\+M\+F paradigm label Paradigm a
 
 
 
-Definition at line 441 of file mdf.\+py.
+Definition at line 560 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!ps\+\_\+part\+Of\+Speech@{ps\+\_\+part\+Of\+Speech}}
 \index{ps\+\_\+part\+Of\+Speech@{ps\+\_\+part\+Of\+Speech}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
 \subsubsection[{ps\+\_\+part\+Of\+Speech}]{\setlength{\rightskip}{0pt plus 5cm}tuple lmf.\+src.\+config.\+mdf.\+ps\+\_\+part\+Of\+Speech}}\label{namespacelmf_1_1src_1_1config_1_1mdf_a1e76a452fc77f05851e4369134f5980b}
-{\bfseries Initial value\+:}
-\begin{DoxyCode}
-1 = dict(\{
-2     \textcolor{stringliteral}{"adj"}           : \textcolor{stringliteral}{"adjective"},                  \textcolor{comment}{# adjective}
-3     \textcolor{stringliteral}{"adv"}           : \textcolor{stringliteral}{"adverb"},                     \textcolor{comment}{# adverb(ial)}
-4     \textcolor{stringliteral}{"class"}         : \textcolor{stringliteral}{"classifier"},                 \textcolor{comment}{# classifier (MDF)}
-5     \textcolor{stringliteral}{"clf"}           : \textcolor{stringliteral}{"classifier"},                 \textcolor{comment}{# classifier (Leipzig)}
-6     \textcolor{stringliteral}{"cnj"}           : \textcolor{stringliteral}{"conjunction"},                \textcolor{comment}{# conjunction}
-7     \textcolor{stringliteral}{"disc.PTCL"}     : \textcolor{stringliteral}{"particle"},                   \textcolor{comment}{# discourse particle}
-8     \textcolor{stringliteral}{"ideo"}          : \textcolor{stringliteral}{"ideophone"},                  \textcolor{comment}{# ideophones}
-9     \textcolor{stringliteral}{"intj"}          : \textcolor{stringliteral}{"interjection"},               \textcolor{comment}{# interjection}
-10     \textcolor{stringliteral}{"interj"}        : \textcolor{stringliteral}{"interjection"},               \textcolor{comment}{# interjection}
-11     \textcolor{stringliteral}{"lnk"}           : \textcolor{stringliteral}{"linker"},                     \textcolor{comment}{# linker}
-12     \textcolor{stringliteral}{"n"}             : \textcolor{stringliteral}{"noun"},                       \textcolor{comment}{# noun}
-13     \textcolor{stringliteral}{"N"}             : \textcolor{stringliteral}{"noun"},                       \textcolor{comment}{# noun}
-14     \textcolor{stringliteral}{"Np"}            : \textcolor{stringliteral}{"possessive pronouns"},        \textcolor{comment}{# possessed nouns}
-15     \textcolor{stringliteral}{"\_poss.\_pref"}   : \textcolor{stringliteral}{"possessive pronouns"},        \textcolor{comment}{# possessed nouns}
-16     \textcolor{stringliteral}{"neg"}           : \textcolor{stringliteral}{"negation"},                   \textcolor{comment}{# negative}
-17     \textcolor{stringliteral}{"num"}           : \textcolor{stringliteral}{"numeral"},                    \textcolor{comment}{# number}
-18     \textcolor{stringliteral}{"prep"}          : \textcolor{stringliteral}{"preposition"},                \textcolor{comment}{# preposition}
-19     \textcolor{stringliteral}{"pro"}           : \textcolor{stringliteral}{"pronoun"},                    \textcolor{comment}{# pronoun/pronominal}
-20     \textcolor{stringliteral}{"v"}             : \textcolor{stringliteral}{"verb"},                       \textcolor{comment}{# verb}
-21     \textcolor{stringliteral}{"vi"}            : \textcolor{stringliteral}{"intransitive verb"},          \textcolor{comment}{# intransitive verb}
-22     \textcolor{stringliteral}{"vi.s"}          : \textcolor{stringliteral}{"stative intransitive verb"},  \textcolor{comment}{# stative intransitive verb}
-23     \textcolor{stringliteral}{"vr"}            : \textcolor{stringliteral}{"reflexive verb"},             \textcolor{comment}{# reflexive/quasi-reflexive/intradirective verb}
-24     \textcolor{stringliteral}{"vt"}            : \textcolor{stringliteral}{"transitive verb"},            \textcolor{comment}{# transitive verb}
-25     \textcolor{stringliteral}{"vt/i"}          : \textcolor{stringliteral}{"bitransistive verb"}          \textcolor{comment}{# ambitransitive verb}
-26 \})
-\end{DoxyCode}
 
 
-Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) 
+Mapping between 'ps' M\+D\+F marker value and L\+M\+F part of speech Lexical\+Entry attribute value (input) Source\+: \href{http://www.isocat.org/rest/dcs/119}{\tt http\+://www.\+isocat.\+org/rest/dcs/119}. 
 
 
 
-Definition at line 366 of file mdf.\+py.
+Definition at line 438 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a59bb4fce205d8159bc72c946e3855c4a}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!ps\+\_\+range@{ps\+\_\+range}}
 \index{ps\+\_\+range@{ps\+\_\+range}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -319,14 +270,7 @@ Possible values allowed for 'ps' M\+D\+F marker.
 
 
 
-Definition at line 558 of file mdf.\+py.
-
-\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ab52ee069b7cd6fa8b52afa15ea6f221e}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!R\+E\+G\+I\+O\+N\+A\+L@{R\+E\+G\+I\+O\+N\+A\+L}}
-\index{R\+E\+G\+I\+O\+N\+A\+L@{R\+E\+G\+I\+O\+N\+A\+L}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
-\subsubsection[{R\+E\+G\+I\+O\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}string lmf.\+src.\+config.\+mdf.\+R\+E\+G\+I\+O\+N\+A\+L = \char`\"{}reg\char`\"{}}}\label{namespacelmf_1_1src_1_1config_1_1mdf_ab52ee069b7cd6fa8b52afa15ea6f221e}
-
-
-Definition at line 7 of file mdf.\+py.
+Definition at line 363 of file mdf.\+py.
 
 \hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_a69afee1e13ba980f4da1e6d7fb0c488a}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!sd\+\_\+range@{sd\+\_\+range}}
 \index{sd\+\_\+range@{sd\+\_\+range}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
@@ -337,16 +281,5 @@ Possible values allowed for 'sd' M\+D\+F marker.
 
 
 
-Definition at line 453 of file mdf.\+py.
-
-\hypertarget{namespacelmf_1_1src_1_1config_1_1mdf_ae964bee79f865adc071d72a678dde128}{\index{lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}!V\+E\+R\+N\+A\+C\+U\+L\+A\+R@{V\+E\+R\+N\+A\+C\+U\+L\+A\+R}}
-\index{V\+E\+R\+N\+A\+C\+U\+L\+A\+R@{V\+E\+R\+N\+A\+C\+U\+L\+A\+R}!lmf\+::src\+::config\+::mdf@{lmf\+::src\+::config\+::mdf}}
-\subsubsection[{V\+E\+R\+N\+A\+C\+U\+L\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}string lmf.\+src.\+config.\+mdf.\+V\+E\+R\+N\+A\+C\+U\+L\+A\+R = \char`\"{}ver\char`\"{}}}\label{namespacelmf_1_1src_1_1config_1_1mdf_ae964bee79f865adc071d72a678dde128}
-
-
-Define languages. 
-
-
-
-Definition at line 4 of file mdf.\+py.
+Definition at line 572 of file mdf.\+py.
 

@@ -41,6 +41,10 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_af8b24fc50070179d1
 \item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ab9647a29884f0d53a93842d4627cf64d}{get\+\_\+vowel\+Harmony}
 \item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a5adcd94ffcb7e44b1a005f2a00f3e440}{set\+\_\+local\+Path}
+\begin{DoxyCompactList}\small\item\em Set lexicon local path. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ac5b716ace69f5433935bf6f00b18f8c7}{get\+\_\+local\+Path}
+\begin{DoxyCompactList}\small\item\em Get lexicon local path. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a148e94a7d0a744b510ee81e53c51e0b0}{get\+\_\+lexical\+\_\+entries}
 \begin{DoxyCompactList}\small\item\em Get all lexical entries maintained by the lexicon. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_aaa470820fbda4be04d6fe9139e761773}{add\+\_\+lexical\+\_\+entry}
@@ -49,12 +53,16 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a36f348d30a1193d21
 \begin{DoxyCompactList}\small\item\em Remove a lexical entry from the lexicon. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0e5b3626dcbdbf4ccfda39be46b9e09f}{count\+\_\+lexical\+\_\+entries}
 \begin{DoxyCompactList}\small\item\em Count number of lexical entries of the lexicon. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a3dd2fc39d4bbbac0941c957acb4d663c}{sort\+\_\+homonym\+\_\+numbers}
+\begin{DoxyCompactList}\small\item\em Sort similar given items of lexical entries contained in the lexicon according to their homonym number. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a934a9edcae2b33eb5e7b9ce61cd0234a}{sort\+\_\+lexical\+\_\+entries}
 \begin{DoxyCompactList}\small\item\em Sort given items of lexical entries contained in the lexicon according to a certain order. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8bb0aef3699fd6cbe10a06e7f2e07975}{find\+\_\+lexical\+\_\+entries}
 \begin{DoxyCompactList}\small\item\em Find all lexical entries which characteristics meet the given condition. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a6dd757b26a4579e8ca167ba2fbd55150}{check\+\_\+cross\+\_\+references}
 \begin{DoxyCompactList}\small\item\em Check all cross-\/references in the lexicon. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a128a65421c5b995d669bbcebca7e0ceb}{reset\+\_\+check}
+\begin{DoxyCompactList}\small\item\em Reset boolean to be able to check all cross-\/references in the lexicon again. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ad47f7c9a54bea805ede556c488ab2a1d}{convert\+\_\+to\+\_\+latex}
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
@@ -72,6 +80,8 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ad47f7c9a54bea805e
 \item 
 \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0c55ecd82285a7d3dc5d5ebcb1445c25}{vowel\+Harmony}
 \item 
+\hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a972bee199d27a70fa75321bffd70a6b1}{local\+Path}
+\item 
 \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a548b2adbf028d9058dd4676cc00d2ee1}{lexical\+\_\+entry}
 \begin{DoxyCompactList}\small\item\em All Lexical\+Entry instances are maintained by \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon} There is one or more Lexical\+Entry instances per \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon}. \end{DoxyCompactList}\item 
 \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8d47ac22571af27a1e989c2c7b14e80b}{id}
@@ -81,7 +91,7 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ad47f7c9a54bea805e
 \subsection{Detailed Description}
 \char`\"{}\+Lexicon is a class containing all the lexical entries of a given language within the entire resource.\char`\"{} (L\+M\+F) 
 
-Definition at line 8 of file lexicon.\+py.
+Definition at line 9 of file lexicon.\+py.
 
 
 
@@ -103,7 +113,7 @@ A \hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon} instance.
 \end{DoxyReturn}
 
 
-Definition at line 11 of file lexicon.\+py.
+Definition at line 12 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a50ac4bdb09d0854845ebbb0817fd66b3}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -118,7 +128,7 @@ Destructor.
 
 Release Lexical\+Entry instances. 
 
-Definition at line 27 of file lexicon.\+py.
+Definition at line 31 of file lexicon.\+py.
 
 
 
@@ -145,7 +155,7 @@ Add a lexical entry to the lexicon.
 \end{DoxyReturn}
 
 
-Definition at line 132 of file lexicon.\+py.
+Definition at line 149 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a6dd757b26a4579e8ca167ba2fbd55150}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!check\+\_\+cross\+\_\+references@{check\+\_\+cross\+\_\+references}}
 \index{check\+\_\+cross\+\_\+references@{check\+\_\+cross\+\_\+references}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -163,7 +173,7 @@ Fill the private attribute '\+\_\+\+\_\+lexical\+Entry' of each Related\+Form in
 \end{DoxyReturn}
 
 
-Definition at line 183 of file lexicon.\+py.
+Definition at line 283 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ad47f7c9a54bea805ede556c488ab2a1d}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!convert\+\_\+to\+\_\+latex@{convert\+\_\+to\+\_\+latex}}
 \index{convert\+\_\+to\+\_\+latex@{convert\+\_\+to\+\_\+latex}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -176,7 +186,7 @@ Definition at line 183 of file lexicon.\+py.
 \end{DoxyVerb}
  
 
-Definition at line 219 of file lexicon.\+py.
+Definition at line 349 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0e5b3626dcbdbf4ccfda39be46b9e09f}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!count\+\_\+lexical\+\_\+entries@{count\+\_\+lexical\+\_\+entries}}
 \index{count\+\_\+lexical\+\_\+entries@{count\+\_\+lexical\+\_\+entries}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -194,7 +204,7 @@ The number of lexical entries without duplicates maintained by the lexicon.
 \end{DoxyReturn}
 
 
-Definition at line 148 of file lexicon.\+py.
+Definition at line 165 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8bb0aef3699fd6cbe10a06e7f2e07975}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!find\+\_\+lexical\+\_\+entries@{find\+\_\+lexical\+\_\+entries}}
 \index{find\+\_\+lexical\+\_\+entries@{find\+\_\+lexical\+\_\+entries}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -218,7 +228,7 @@ A Python list of Lexical\+Entry instances.
 \end{DoxyReturn}
 
 
-Definition at line 172 of file lexicon.\+py.
+Definition at line 272 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_aae478dac54b901f7ee7726090488c27d}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+entry\+Source@{get\+\_\+entry\+Source}}
 \index{get\+\_\+entry\+Source@{get\+\_\+entry\+Source}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -236,7 +246,7 @@ Get entry source.
 \end{DoxyReturn}
 
 
-Definition at line 57 of file lexicon.\+py.
+Definition at line 61 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a9594fe365aa2f688e72865a09c254132}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+id@{get\+\_\+id}}
 \index{get\+\_\+id@{get\+\_\+id}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -254,7 +264,7 @@ Get identifier.
 \end{DoxyReturn}
 
 
-Definition at line 43 of file lexicon.\+py.
+Definition at line 47 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_aa91f2f54a4325e43bf78158e771ef77b}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+label@{get\+\_\+label}}
 \index{get\+\_\+label@{get\+\_\+label}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -272,7 +282,7 @@ Get label.
 \end{DoxyReturn}
 
 
-Definition at line 99 of file lexicon.\+py.
+Definition at line 103 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_aaf09bad461dfbece7e9a969e3a2e6930}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+language@{get\+\_\+language}}
 \index{get\+\_\+language@{get\+\_\+language}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -290,7 +300,7 @@ Get language.
 \end{DoxyReturn}
 
 
-Definition at line 71 of file lexicon.\+py.
+Definition at line 75 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a92f3732b1a50f779310b88ac37dfdb13}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+language\+Script@{get\+\_\+language\+Script}}
 \index{get\+\_\+language\+Script@{get\+\_\+language\+Script}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -308,7 +318,7 @@ Get language script.
 \end{DoxyReturn}
 
 
-Definition at line 85 of file lexicon.\+py.
+Definition at line 89 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a148e94a7d0a744b510ee81e53c51e0b0}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+lexical\+\_\+entries@{get\+\_\+lexical\+\_\+entries}}
 \index{get\+\_\+lexical\+\_\+entries@{get\+\_\+lexical\+\_\+entries}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -326,7 +336,7 @@ A Python set of lexical entries.
 \end{DoxyReturn}
 
 
-Definition at line 125 of file lexicon.\+py.
+Definition at line 143 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a86af37677fcdccbe00c1dc1ba19e0dbb}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+lexicon\+Type@{get\+\_\+lexicon\+Type}}
 \index{get\+\_\+lexicon\+Type@{get\+\_\+lexicon\+Type}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -344,7 +354,25 @@ Get lexicon type.
 \end{DoxyReturn}
 
 
-Definition at line 113 of file lexicon.\+py.
+Definition at line 117 of file lexicon.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ac5b716ace69f5433935bf6f00b18f8c7}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+local\+Path@{get\+\_\+local\+Path}}
+\index{get\+\_\+local\+Path@{get\+\_\+local\+Path}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
+\subsubsection[{get\+\_\+local\+Path}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexicon.\+Lexicon.\+get\+\_\+local\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ac5b716ace69f5433935bf6f00b18f8c7}
+
+
+Get lexicon local path. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon} attribute 'local\+Path'. 
+\end{DoxyReturn}
+
+
+Definition at line 137 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ab9647a29884f0d53a93842d4627cf64d}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!get\+\_\+vowel\+Harmony@{get\+\_\+vowel\+Harmony}}
 \index{get\+\_\+vowel\+Harmony@{get\+\_\+vowel\+Harmony}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -355,7 +383,7 @@ Definition at line 113 of file lexicon.\+py.
 )}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ab9647a29884f0d53a93842d4627cf64d}
 
 
-Definition at line 122 of file lexicon.\+py.
+Definition at line 126 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a36f348d30a1193d216ac7dacd5f085be}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!remove\+\_\+lexical\+\_\+entry@{remove\+\_\+lexical\+\_\+entry}}
 \index{remove\+\_\+lexical\+\_\+entry@{remove\+\_\+lexical\+\_\+entry}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -379,7 +407,25 @@ Remove a lexical entry from the lexicon.
 \end{DoxyReturn}
 
 
-Definition at line 140 of file lexicon.\+py.
+Definition at line 157 of file lexicon.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a128a65421c5b995d669bbcebca7e0ceb}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!reset\+\_\+check@{reset\+\_\+check}}
+\index{reset\+\_\+check@{reset\+\_\+check}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
+\subsubsection[{reset\+\_\+check}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexicon.\+Lexicon.\+reset\+\_\+check (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a128a65421c5b995d669bbcebca7e0ceb}
+
+
+Reset boolean to be able to check all cross-\/references in the lexicon again. 
+
+Reset the private attribute '\+\_\+\+\_\+checked'. \begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 341 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a886cb3031f11cd63a6cf27103a963ae1}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+entry\+Source@{set\+\_\+entry\+Source}}
 \index{set\+\_\+entry\+Source@{set\+\_\+entry\+Source}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -403,7 +449,7 @@ Set lexicon entry source.
 \end{DoxyReturn}
 
 
-Definition at line 49 of file lexicon.\+py.
+Definition at line 53 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0872c7337c620b3b634cbe90f86a0166}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+id@{set\+\_\+id}}
 \index{set\+\_\+id@{set\+\_\+id}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -427,7 +473,7 @@ Set lexicon identifier.
 \end{DoxyReturn}
 
 
-Definition at line 35 of file lexicon.\+py.
+Definition at line 39 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a917f604c598a5bc7c286b5044b2ce1ff}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+label@{set\+\_\+label}}
 \index{set\+\_\+label@{set\+\_\+label}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -451,7 +497,7 @@ Set lexicon label.
 \end{DoxyReturn}
 
 
-Definition at line 91 of file lexicon.\+py.
+Definition at line 95 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a5d7bcec0eb2b092781b4cc5a457fdb44}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+language@{set\+\_\+language}}
 \index{set\+\_\+language@{set\+\_\+language}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -475,7 +521,7 @@ Set lexicon language.
 \end{DoxyReturn}
 
 
-Definition at line 63 of file lexicon.\+py.
+Definition at line 67 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_ad23ed7152a59fe7a661e01e04a24c9ce}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+language\+Script@{set\+\_\+language\+Script}}
 \index{set\+\_\+language\+Script@{set\+\_\+language\+Script}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -499,7 +545,7 @@ Set lexicon language script.
 \end{DoxyReturn}
 
 
-Definition at line 77 of file lexicon.\+py.
+Definition at line 81 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8720140f0bca0724676930be5adcb65d}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+lexicon\+Type@{set\+\_\+lexicon\+Type}}
 \index{set\+\_\+lexicon\+Type@{set\+\_\+lexicon\+Type}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -523,7 +569,31 @@ Set lexicon type.
 \end{DoxyReturn}
 
 
-Definition at line 105 of file lexicon.\+py.
+Definition at line 109 of file lexicon.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a5adcd94ffcb7e44b1a005f2a00f3e440}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+local\+Path@{set\+\_\+local\+Path}}
+\index{set\+\_\+local\+Path@{set\+\_\+local\+Path}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
+\subsubsection[{set\+\_\+local\+Path}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexicon.\+Lexicon.\+set\+\_\+local\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{local\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a5adcd94ffcb7e44b1a005f2a00f3e440}
+
+
+Set lexicon local path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+path} & The absolute path to audio files to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon}{Lexicon} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_af8b24fc50070179d1abf29f03559ddcc}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!set\+\_\+vowel\+Harmony@{set\+\_\+vowel\+Harmony}}
 \index{set\+\_\+vowel\+Harmony@{set\+\_\+vowel\+Harmony}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -535,7 +605,34 @@ Definition at line 105 of file lexicon.\+py.
 )}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_af8b24fc50070179d1abf29f03559ddcc}
 
 
-Definition at line 119 of file lexicon.\+py.
+Definition at line 123 of file lexicon.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a3dd2fc39d4bbbac0941c957acb4d663c}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!sort\+\_\+homonym\+\_\+numbers@{sort\+\_\+homonym\+\_\+numbers}}
+\index{sort\+\_\+homonym\+\_\+numbers@{sort\+\_\+homonym\+\_\+numbers}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
+\subsubsection[{sort\+\_\+homonym\+\_\+numbers}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+lexicon.\+Lexicon.\+sort\+\_\+homonym\+\_\+numbers (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{items = {\ttfamily lambda~lexical\+\_\+entry\+:~lexical\+\_\+entry.get\+\_\+lexeme()}, }
+\item[{}]{condition = {\ttfamily lambda~lexical\+\_\+entry\+:~True}}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a3dd2fc39d4bbbac0941c957acb4d663c}
+
+
+Sort similar given items of lexical entries contained in the lexicon according to their homonym number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & Lambda function giving the item to sort. Default value is 'lambda \hyperlink{namespacelmf_1_1src_1_1core_1_1lexical__entry}{lexical\+\_\+entry}\+: lexical\+\_\+entry.\+get\+\_\+lexeme()', which means that the items to sort are lexemes. \\
+\hline
+{\em condition} & Lambda function giving a condition to apply classification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sorted Python list of lexical entries. 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a934a9edcae2b33eb5e7b9ce61cd0234a}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!sort\+\_\+lexical\+\_\+entries@{sort\+\_\+lexical\+\_\+entries}}
 \index{sort\+\_\+lexical\+\_\+entries@{sort\+\_\+lexical\+\_\+entries}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -543,7 +640,8 @@ Definition at line 119 of file lexicon.\+py.
 \begin{DoxyParamCaption}
 \item[{}]{self, }
 \item[{}]{items = {\ttfamily lambda~lexical\+\_\+entry\+:~lexical\+\_\+entry.get\+\_\+lexeme()}, }
-\item[{}]{order = {\ttfamily None}}
+\item[{}]{sort\+\_\+order = {\ttfamily None}, }
+\item[{}]{comparison = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a934a9edcae2b33eb5e7b9ce61cd0234a}
 
@@ -554,7 +652,9 @@ Sort given items of lexical entries contained in the lexicon according to a cert
 \begin{DoxyParams}{Parameters}
 {\em items} & Lambda function giving the item to sort. Default value is 'lambda \hyperlink{namespacelmf_1_1src_1_1core_1_1lexical__entry}{lexical\+\_\+entry}\+: lexical\+\_\+entry.\+get\+\_\+lexeme()', which means that the items to sort are lexemes. \\
 \hline
-{\em order} & Default value is 'None', which means that the lexicographical ordering uses the A\+S\+C\+I\+I ordering. \\
+{\em sort\+\_\+order} & Default value is 'None', which means that the lexicographical ordering uses the A\+S\+C\+I\+I ordering. \\
+\hline
+{\em comparison} & Function to compare items. If 'None', a default function to compare character by character is provided. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -562,7 +662,7 @@ The sorted Python list of lexical entries.
 \end{DoxyReturn}
 
 
-Definition at line 154 of file lexicon.\+py.
+Definition at line 201 of file lexicon.\+py.
 
 
 
@@ -572,35 +672,35 @@ Definition at line 154 of file lexicon.\+py.
 \subsubsection[{entry\+Source}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+entry\+Source}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a2c62e9663fe3771e684fb4ef94fe1d52}
 
 
-Definition at line 21 of file lexicon.\+py.
+Definition at line 22 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8d47ac22571af27a1e989c2c7b14e80b}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!id@{id}}
 \index{id@{id}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+id}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a8d47ac22571af27a1e989c2c7b14e80b}
 
 
-Definition at line 40 of file lexicon.\+py.
+Definition at line 44 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a728727809066956b10125e62a954c9c5}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!label@{label}}
 \index{label@{label}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+label}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a728727809066956b10125e62a954c9c5}
 
 
-Definition at line 19 of file lexicon.\+py.
+Definition at line 20 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a17a5f90d6242843af84f145aea4dfe76}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!language@{language}}
 \index{language@{language}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{language}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+language}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a17a5f90d6242843af84f145aea4dfe76}
 
 
-Definition at line 17 of file lexicon.\+py.
+Definition at line 18 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a33c93912a6bedb0eb095cf85245d6051}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!language\+Script@{language\+Script}}
 \index{language\+Script@{language\+Script}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{language\+Script}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+language\+Script}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a33c93912a6bedb0eb095cf85245d6051}
 
 
-Definition at line 18 of file lexicon.\+py.
+Definition at line 19 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a548b2adbf028d9058dd4676cc00d2ee1}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!lexical\+\_\+entry@{lexical\+\_\+entry}}
 \index{lexical\+\_\+entry@{lexical\+\_\+entry}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
@@ -611,21 +711,28 @@ All Lexical\+Entry instances are maintained by \hyperlink{classlmf_1_1src_1_1cor
 
 
 
-Definition at line 25 of file lexicon.\+py.
+Definition at line 27 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_af434e15172d6aa59954db2a72c9f15f0}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!lexicon\+Type@{lexicon\+Type}}
 \index{lexicon\+Type@{lexicon\+Type}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{lexicon\+Type}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+lexicon\+Type}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_af434e15172d6aa59954db2a72c9f15f0}
 
 
-Definition at line 20 of file lexicon.\+py.
+Definition at line 21 of file lexicon.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a972bee199d27a70fa75321bffd70a6b1}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!local\+Path@{local\+Path}}
+\index{local\+Path@{local\+Path}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
+\subsubsection[{local\+Path}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+local\+Path}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a972bee199d27a70fa75321bffd70a6b1}
+
+
+Definition at line 24 of file lexicon.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0c55ecd82285a7d3dc5d5ebcb1445c25}{\index{lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}!vowel\+Harmony@{vowel\+Harmony}}
 \index{vowel\+Harmony@{vowel\+Harmony}!lmf\+::src\+::core\+::lexicon\+::\+Lexicon@{lmf\+::src\+::core\+::lexicon\+::\+Lexicon}}
 \subsubsection[{vowel\+Harmony}]{\setlength{\rightskip}{0pt plus 5cm}lmf.\+src.\+core.\+lexicon.\+Lexicon.\+vowel\+Harmony}}\label{classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon_a0c55ecd82285a7d3dc5d5ebcb1445c25}
 
 
-Definition at line 22 of file lexicon.\+py.
+Definition at line 23 of file lexicon.\+py.
 
 
 

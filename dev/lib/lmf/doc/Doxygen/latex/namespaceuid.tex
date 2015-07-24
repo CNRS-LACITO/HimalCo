@@ -1,0 +1,117 @@
+\hypertarget{namespaceuid}{\section{uid Namespace Reference}
+\label{namespaceuid}\index{uid@{uid}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceuid_a4039208c718ac9ab3d1a34f9c46376e5}{parser} = Option\+Parser()
+\item 
+tuple \hyperlink{namespaceuid_a72496a499a950e7763f54daad4112644}{options} = parser.\+parse\+\_\+args()
+\item 
+tuple \hyperlink{namespaceuid_ad8ae4f6e71a89183bdd76ea3bb1d4b77}{in\+\_\+file} = open(options.\+input, \char`\"{}r\char`\"{}, encoding='utf-\/8')
+\item 
+tuple \hyperlink{namespaceuid_abafbdda8c90e0befa2cee03e11a2ee22}{out\+\_\+file} = open(options.\+output, \char`\"{}w\char`\"{}, encoding='utf-\/8')
+\item 
+string \hyperlink{namespaceuid_af23356e75a458bc84f8a06c4c25666d7}{E\+O\+L} = '\textbackslash{}n'
+\item 
+string \hyperlink{namespaceuid_a37cd778413aaba0d0e0610ffc35646a2}{pattern} = r\char`\"{}$^\wedge$\textbackslash{}\textbackslash{}(\textbackslash{}w\{2,3\}) ?(.$\ast$)\$\char`\"{}
+\item 
+string \hyperlink{namespaceuid_aa8bd0ffc225dc8124099330d1014bf66}{lx} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespaceuid_a542decb494fb3ac0da8886ab033622ad}{mkr} = \char`\"{}lx\char`\"{}
+\item 
+list \hyperlink{namespaceuid_ae6f932fe5ea3081fc75207a773dc3c0f}{sf} = \mbox{[}$\,$\mbox{]}
+\item 
+string \hyperlink{namespaceuid_ade7b1be6934c8984615916e73a81d131}{hm} = \char`\"{}\char`\"{}
+\item 
+tuple \hyperlink{namespaceuid_a1baa2d4ae8ea6e7427b911466184d548}{result} = re.\+search(\hyperlink{namespaceuid_a37cd778413aaba0d0e0610ffc35646a2}{pattern}, line)
+\item 
+tuple \hyperlink{namespaceuid_a41f0a6fb6938bc67f4ab035ac008504c}{uid} = uni2sampa(\hyperlink{namespaceuid_aa8bd0ffc225dc8124099330d1014bf66}{lx})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceuid_af23356e75a458bc84f8a06c4c25666d7}{\index{uid@{uid}!E\+O\+L@{E\+O\+L}}
+\index{E\+O\+L@{E\+O\+L}!uid@{uid}}
+\subsubsection[{E\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}string uid.\+E\+O\+L = '\textbackslash{}n'}}\label{namespaceuid_af23356e75a458bc84f8a06c4c25666d7}
+
+
+Definition at line 23 of file uid.\+py.
+
+\hypertarget{namespaceuid_ade7b1be6934c8984615916e73a81d131}{\index{uid@{uid}!hm@{hm}}
+\index{hm@{hm}!uid@{uid}}
+\subsubsection[{hm}]{\setlength{\rightskip}{0pt plus 5cm}string uid.\+hm = \char`\"{}\char`\"{}}}\label{namespaceuid_ade7b1be6934c8984615916e73a81d131}
+
+
+Definition at line 38 of file uid.\+py.
+
+\hypertarget{namespaceuid_ad8ae4f6e71a89183bdd76ea3bb1d4b77}{\index{uid@{uid}!in\+\_\+file@{in\+\_\+file}}
+\index{in\+\_\+file@{in\+\_\+file}!uid@{uid}}
+\subsubsection[{in\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+in\+\_\+file = open(options.\+input, \char`\"{}r\char`\"{}, encoding='utf-\/8')}}\label{namespaceuid_ad8ae4f6e71a89183bdd76ea3bb1d4b77}
+
+
+Definition at line 13 of file uid.\+py.
+
+\hypertarget{namespaceuid_aa8bd0ffc225dc8124099330d1014bf66}{\index{uid@{uid}!lx@{lx}}
+\index{lx@{lx}!uid@{uid}}
+\subsubsection[{lx}]{\setlength{\rightskip}{0pt plus 5cm}string uid.\+lx = \char`\"{}\char`\"{}}}\label{namespaceuid_aa8bd0ffc225dc8124099330d1014bf66}
+
+
+Definition at line 35 of file uid.\+py.
+
+\hypertarget{namespaceuid_a542decb494fb3ac0da8886ab033622ad}{\index{uid@{uid}!mkr@{mkr}}
+\index{mkr@{mkr}!uid@{uid}}
+\subsubsection[{mkr}]{\setlength{\rightskip}{0pt plus 5cm}string uid.\+mkr = \char`\"{}lx\char`\"{}}}\label{namespaceuid_a542decb494fb3ac0da8886ab033622ad}
+
+
+Definition at line 36 of file uid.\+py.
+
+\hypertarget{namespaceuid_a72496a499a950e7763f54daad4112644}{\index{uid@{uid}!options@{options}}
+\index{options@{options}!uid@{uid}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+options = parser.\+parse\+\_\+args()}}\label{namespaceuid_a72496a499a950e7763f54daad4112644}
+
+
+Definition at line 9 of file uid.\+py.
+
+\hypertarget{namespaceuid_abafbdda8c90e0befa2cee03e11a2ee22}{\index{uid@{uid}!out\+\_\+file@{out\+\_\+file}}
+\index{out\+\_\+file@{out\+\_\+file}!uid@{uid}}
+\subsubsection[{out\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+out\+\_\+file = open(options.\+output, \char`\"{}w\char`\"{}, encoding='utf-\/8')}}\label{namespaceuid_abafbdda8c90e0befa2cee03e11a2ee22}
+
+
+Definition at line 14 of file uid.\+py.
+
+\hypertarget{namespaceuid_a4039208c718ac9ab3d1a34f9c46376e5}{\index{uid@{uid}!parser@{parser}}
+\index{parser@{parser}!uid@{uid}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+parser = Option\+Parser()}}\label{namespaceuid_a4039208c718ac9ab3d1a34f9c46376e5}
+
+
+Definition at line 6 of file uid.\+py.
+
+\hypertarget{namespaceuid_a37cd778413aaba0d0e0610ffc35646a2}{\index{uid@{uid}!pattern@{pattern}}
+\index{pattern@{pattern}!uid@{uid}}
+\subsubsection[{pattern}]{\setlength{\rightskip}{0pt plus 5cm}string uid.\+pattern = r\char`\"{}$^\wedge$\textbackslash{}\textbackslash{}(\textbackslash{}w\{2,3\}) ?(.$\ast$)\$\char`\"{}}}\label{namespaceuid_a37cd778413aaba0d0e0610ffc35646a2}
+
+
+Definition at line 34 of file uid.\+py.
+
+\hypertarget{namespaceuid_a1baa2d4ae8ea6e7427b911466184d548}{\index{uid@{uid}!result@{result}}
+\index{result@{result}!uid@{uid}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+result = re.\+search({\bf pattern}, line)}}\label{namespaceuid_a1baa2d4ae8ea6e7427b911466184d548}
+
+
+Definition at line 40 of file uid.\+py.
+
+\hypertarget{namespaceuid_ae6f932fe5ea3081fc75207a773dc3c0f}{\index{uid@{uid}!sf@{sf}}
+\index{sf@{sf}!uid@{uid}}
+\subsubsection[{sf}]{\setlength{\rightskip}{0pt plus 5cm}list uid.\+sf = \mbox{[}$\,$\mbox{]}}}\label{namespaceuid_ae6f932fe5ea3081fc75207a773dc3c0f}
+
+
+Definition at line 37 of file uid.\+py.
+
+\hypertarget{namespaceuid_a41f0a6fb6938bc67f4ab035ac008504c}{\index{uid@{uid}!uid@{uid}}
+\index{uid@{uid}!uid@{uid}}
+\subsubsection[{uid}]{\setlength{\rightskip}{0pt plus 5cm}tuple uid.\+uid = uni2sampa({\bf lx})}}\label{namespaceuid_a41f0a6fb6938bc67f4ab035ac008504c}
+
+
+Definition at line 52 of file uid.\+py.
+

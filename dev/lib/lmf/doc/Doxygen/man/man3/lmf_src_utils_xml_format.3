@@ -1,4 +1,4 @@
-.TH "lmf.src.utils.xml_format" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.utils.xml_format" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -41,8 +41,8 @@ The root XML element\&.
 .PP
 
 .PP
-Definition at line 31 of file xml_format\&.py\&.
-.SS "def lmf\&.src\&.utils\&.xml_format\&.prettify (element)"
+Definition at line 32 of file xml_format\&.py\&.
+.SS "def lmf\&.src\&.utils\&.xml_format\&.prettify (element, encoding = \fCENCODING\fP)"
 
 .PP
 Return a pretty-printed XML string for the given XML element\&. 
@@ -50,6 +50,8 @@ Return a pretty-printed XML string for the given XML element\&.
 \fBParameters:\fP
 .RS 4
 \fIelement\fP An XML element\&. 
+.br
+\fIencoding\fP Encoding mode\&. Default value is 'utf-8'\&. 
 .RE
 .PP
 \fBReturns:\fP
@@ -60,7 +62,7 @@ A Python string containing the printed version of the XML element\&.
 
 .PP
 Definition at line 10 of file xml_format\&.py\&.
-.SS "def lmf\&.src\&.utils\&.xml_format\&.write_result (element, filename, encoding = \fCNone\fP)"
+.SS "def lmf\&.src\&.utils\&.xml_format\&.write_result (element, filename, encoding = \fCENCODING\fP)"
 
 .PP
 Write an XML element into a pretty XML output file\&. 
@@ -71,12 +73,12 @@ Write an XML element into a pretty XML output file\&.
 .br
 \fIfilename\fP The name of the XML file to write with full path, for instance 'user/output\&.xml'\&. 
 .br
-\fIencoding\fP Encoding mode\&. Default value is None\&. 
+\fIencoding\fP Encoding mode\&. Default value is 'utf-8'\&. 
 .RE
 .PP
 
 .PP
-Definition at line 20 of file xml_format\&.py\&.
+Definition at line 21 of file xml_format\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for LMF library from the source code\&.

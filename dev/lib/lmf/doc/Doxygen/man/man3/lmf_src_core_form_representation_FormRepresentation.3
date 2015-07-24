@@ -1,4 +1,4 @@
-.TH "lmf.src.core.form_representation.FormRepresentation" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.form_representation.FormRepresentation" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -26,6 +26,14 @@ Inherits Representation\&.
 .RI "def \fBget_speakers\fP"
 .br
 .RI "\fIGet speakers\&. \fP"
+.ti -1c
+.RI "def \fBset_writtenForm\fP"
+.br
+.RI "\fISet written form and script\&. \fP"
+.ti -1c
+.RI "def \fBget_writtenForm\fP"
+.br
+.RI "\fIGet written form\&. \fP"
 .ti -1c
 .RI "def \fBset_variantForm\fP"
 .br
@@ -130,6 +138,18 @@ Inherits Representation\&.
 .RI "def \fBget_scriptName\fP"
 .br
 .RI "\fIGet script name\&. \fP"
+.ti -1c
+.RI "def \fBcreate_audio\fP"
+.br
+.RI "\fICreate an Audio instance\&. \fP"
+.ti -1c
+.RI "def \fBget_audio\fP"
+.br
+.RI "\fIGet the audio resource maintained by the form representation\&. \fP"
+.ti -1c
+.RI "def \fBset_audio\fP"
+.br
+.RI "\fISet audio resource\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -165,20 +185,23 @@ Inherits Representation\&.
 .RI "\fBdialect\fP"
 .br
 .ti -1c
-.RI "\fBscriptName\fP"
-.br
-.ti -1c
 .RI "\fBaudio\fP"
 .br
-.RI "\fIAudio instances are owned by \fBFormRepresentation\fP There is zero to many Audio instances per \fBFormRepresentation\fP\&. \fP"
+.RI "\fIAudio instance is owned by \fBFormRepresentation\fP There is zero or one Audio instance per \fBFormRepresentation\fP\&. \fP"
 .ti -1c
 .RI "\fBtargets\fP"
+.br
+.ti -1c
+.RI "\fBwrittenForm\fP"
 .br
 .ti -1c
 .RI "\fBcomment\fP"
 .br
 .ti -1c
 .RI "\fBlanguage\fP"
+.br
+.ti -1c
+.RI "\fBscriptName\fP"
 .br
 .in -1c
 .SH "Detailed Description"
@@ -206,9 +229,35 @@ Definition at line 14 of file form_representation\&.py\&.
 .PP
 Destructor\&. Release Audio instances\&. 
 .PP
-Definition at line 41 of file form_representation\&.py\&.
+Definition at line 40 of file form_representation\&.py\&.
 .SH "Member Function Documentation"
 .PP 
+.SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.create_audio (self)"
+
+.PP
+Create an Audio instance\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Audio instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 297 of file form_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_audio (self)"
+
+.PP
+Get the audio resource maintained by the form representation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Audio instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 303 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_citationForm (self)"
 
 .PP
@@ -221,7 +270,7 @@ Get citation form\&.
 .PP
 
 .PP
-Definition at line 224 of file form_representation\&.py\&.
+Definition at line 243 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_comment (self, language = \fCNone\fP)"
 
 .PP
@@ -239,7 +288,7 @@ The filtered Representation attribute 'comment'\&.
 .PP
 
 .PP
-Definition at line 107 of file form_representation\&.py\&.
+Definition at line 126 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_contextualVariation (self)"
 
 .PP
@@ -252,7 +301,7 @@ Get contextual variation\&.
 .PP
 
 .PP
-Definition at line 192 of file form_representation\&.py\&.
+Definition at line 211 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_dialect (self)"
 
 .PP
@@ -265,7 +314,7 @@ Get dialect\&.
 .PP
 
 .PP
-Definition at line 240 of file form_representation\&.py\&.
+Definition at line 259 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_geographicalVariant (self)"
 
 .PP
@@ -278,7 +327,7 @@ Get geographical variant\&.
 .PP
 
 .PP
-Definition at line 160 of file form_representation\&.py\&.
+Definition at line 179 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_language (self)"
 
 .PP
@@ -291,7 +340,7 @@ Representation attribute 'language'\&.
 .PP
 
 .PP
-Definition at line 128 of file form_representation\&.py\&.
+Definition at line 147 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_phoneticForm (self)"
 
 .PP
@@ -304,7 +353,7 @@ Get phonetic form\&.
 .PP
 
 .PP
-Definition at line 176 of file form_representation\&.py\&.
+Definition at line 195 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_scriptName (self)"
 
 .PP
@@ -312,12 +361,12 @@ Get script name\&.
 .PP
 \fBReturns:\fP
 .RS 4
-\fBFormRepresentation\fP attribute 'scriptName'\&. 
+Representation attribute 'scriptName'\&. 
 .RE
 .PP
 
 .PP
-Definition at line 272 of file form_representation\&.py\&.
+Definition at line 291 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_speakers (self)"
 
 .PP
@@ -330,7 +379,7 @@ Get speakers\&.
 .PP
 
 .PP
-Definition at line 51 of file form_representation\&.py\&.
+Definition at line 49 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_spellingVariant (self)"
 
 .PP
@@ -343,7 +392,7 @@ Get spelling variant\&.
 .PP
 
 .PP
-Definition at line 208 of file form_representation\&.py\&.
+Definition at line 227 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_tone (self)"
 
 .PP
@@ -356,7 +405,7 @@ Get tone\&.
 .PP
 
 .PP
-Definition at line 144 of file form_representation\&.py\&.
+Definition at line 163 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_transliteration (self)"
 
 .PP
@@ -369,7 +418,7 @@ Get transliteration\&.
 .PP
 
 .PP
-Definition at line 256 of file form_representation\&.py\&.
+Definition at line 275 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_type (self)"
 
 .PP
@@ -382,7 +431,7 @@ Get variant type\&.
 .PP
 
 .PP
-Definition at line 87 of file form_representation\&.py\&.
+Definition at line 106 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_variantForm (self)"
 
 .PP
@@ -395,7 +444,57 @@ Get variant form\&.
 .PP
 
 .PP
-Definition at line 67 of file form_representation\&.py\&.
+Definition at line 86 of file form_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.get_writtenForm (self, script_name = \fCNone\fP)"
+
+.PP
+Get written form\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript_name\fP If this argument is given, get written form only if written using this script\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The filtered Representation attribute 'writtenForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file form_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_audio (self, media_type, file_name, author, quality, start_position, duration, external_reference, audio_file_format)"
+
+.PP
+Set audio resource\&. Attributes 'mediaType', 'fileName', 'author', 'quality', 'startPosition', 'durationOfEffectiveSpeech', 'externalReference', 'audioFileFormat' are owned by Material/Audio\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImedia_type\fP The media type to set\&. 
+.br
+\fIfile_name\fP Name of the audio file\&. 
+.br
+\fIauthor\fP Author of the recording\&. 
+.br
+\fIquality\fP Quality of the recording, in range 'quality_range' defined in '\fBcommon/range\&.py\fP'\&. 
+.br
+\fIstart_position\fP Start position of the form in the recording, in format 'Thh:mm:ss,msms', e\&.g\&. 'T00:05:00'\&. 
+.br
+\fIduration\fP Duration of the effcetive speech, in format 'PThhHmmMssS', e\&.g\&. 'PT00:05:00'\&. 
+.br
+\fIexternal_reference\fP Reference of the audio file, if not directly provided\&. 
+.br
+\fIaudio_file_format\fP Format of the audio file, e\&.g\&. 'wav'\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBFormRepresentation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 309 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_citationForm (self, citation_form)"
 
 .PP
@@ -413,7 +512,7 @@ Set citation form\&.
 .PP
 
 .PP
-Definition at line 214 of file form_representation\&.py\&.
+Definition at line 233 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_comment (self, comment, language = \fCNone\fP)"
 
 .PP
@@ -433,7 +532,7 @@ Set variant form comment\&.
 .PP
 
 .PP
-Definition at line 93 of file form_representation\&.py\&.
+Definition at line 112 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_contextualVariation (self, contextual_variation)"
 
 .PP
@@ -451,7 +550,7 @@ Set contextual variation\&.
 .PP
 
 .PP
-Definition at line 182 of file form_representation\&.py\&.
+Definition at line 201 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_dialect (self, dialect)"
 
 .PP
@@ -469,7 +568,7 @@ Set dialect\&.
 .PP
 
 .PP
-Definition at line 230 of file form_representation\&.py\&.
+Definition at line 249 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_geographicalVariant (self, geographical_variant)"
 
 .PP
@@ -487,7 +586,7 @@ Set geographical variant\&.
 .PP
 
 .PP
-Definition at line 150 of file form_representation\&.py\&.
+Definition at line 169 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_language (self, language)"
 
 .PP
@@ -505,7 +604,7 @@ Set language used for comment\&.
 .PP
 
 .PP
-Definition at line 117 of file form_representation\&.py\&.
+Definition at line 136 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_phoneticForm (self, phonetic_form)"
 
 .PP
@@ -523,7 +622,7 @@ Set phonetic form\&.
 .PP
 
 .PP
-Definition at line 166 of file form_representation\&.py\&.
+Definition at line 185 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_scriptName (self, script_name)"
 
 .PP
@@ -541,7 +640,7 @@ Set script name\&.
 .PP
 
 .PP
-Definition at line 262 of file form_representation\&.py\&.
+Definition at line 281 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_spellingVariant (self, spelling_variant)"
 
 .PP
@@ -559,7 +658,7 @@ Set spelling variant\&.
 .PP
 
 .PP
-Definition at line 198 of file form_representation\&.py\&.
+Definition at line 217 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_tone (self, tone)"
 
 .PP
@@ -577,7 +676,7 @@ Set tone\&.
 .PP
 
 .PP
-Definition at line 134 of file form_representation\&.py\&.
+Definition at line 153 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_transliteration (self, transliteration)"
 
 .PP
@@ -595,7 +694,7 @@ Set transliteration\&.
 .PP
 
 .PP
-Definition at line 246 of file form_representation\&.py\&.
+Definition at line 265 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_type (self, type)"
 
 .PP
@@ -613,7 +712,7 @@ Set variant type\&.
 .PP
 
 .PP
-Definition at line 73 of file form_representation\&.py\&.
+Definition at line 92 of file form_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_variantForm (self, variant_form)"
 
 .PP
@@ -631,15 +730,35 @@ Set variant form\&.
 .PP
 
 .PP
-Definition at line 57 of file form_representation\&.py\&.
+Definition at line 76 of file form_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.set_writtenForm (self, written_form, script_name = \fCNone\fP)"
+
+.PP
+Set written form and script\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP The written form to set\&. 
+.br
+\fIscript_name\fP Script used for the written form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBFormRepresentation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 55 of file form_representation\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.audio"
 
 .PP
-Audio instances are owned by \fBFormRepresentation\fP There is zero to many Audio instances per \fBFormRepresentation\fP\&. 
+Audio instance is owned by \fBFormRepresentation\fP There is zero or one Audio instance per \fBFormRepresentation\fP\&. 
 .PP
-Definition at line 34 of file form_representation\&.py\&.
+Definition at line 33 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.citationForm"
 
 .PP
@@ -647,7 +766,7 @@ Definition at line 29 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.comment"
 
 .PP
-Definition at line 102 of file form_representation\&.py\&.
+Definition at line 121 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.contextualVariation"
 
 .PP
@@ -663,7 +782,7 @@ Definition at line 25 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.language"
 
 .PP
-Definition at line 125 of file form_representation\&.py\&.
+Definition at line 144 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.phoneticForm"
 
 .PP
@@ -671,7 +790,7 @@ Definition at line 26 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.scriptName"
 
 .PP
-Definition at line 31 of file form_representation\&.py\&.
+Definition at line 288 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.spellingVariant"
 
 .PP
@@ -679,7 +798,7 @@ Definition at line 28 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.targets"
 
 .PP
-Definition at line 36 of file form_representation\&.py\&.
+Definition at line 35 of file form_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.tone"
 
 .PP
@@ -696,6 +815,10 @@ Definition at line 22 of file form_representation\&.py\&.
 
 .PP
 Definition at line 21 of file form_representation\&.py\&.
+.SS "lmf\&.src\&.core\&.form_representation\&.FormRepresentation\&.writtenForm"
+
+.PP
+Definition at line 63 of file form_representation\&.py\&.
 
 .SH "Author"
 .PP 

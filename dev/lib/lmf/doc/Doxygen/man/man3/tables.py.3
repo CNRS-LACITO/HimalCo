@@ -1,0 +1,70 @@
+.TH "/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/tables/tables.py" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/tables/tables.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBtables\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBtables\&.parser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBtables\&.options\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBtables\&.in_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBtables\&.out_eng\fP = open(options\&.output_eng, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBtables\&.out_fra\fP = open(options\&.output_fra, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBtables\&.EOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "string \fBtables\&.title_eng\fP = '''Words for which no close equivalent could be found'''"
+.br
+.ti -1c
+.RI "string \fBtables\&.introduction_eng\fP = '''The list that follows groups words for which no close equivalents could be found\&. These negative pieces of information contain hints about the consultants' Na vocabulary and its 'soft shoulders'\&.'''"
+.br
+.ti -1c
+.RI "string \fBtables\&.title_fra\fP = '''Mots dont aucun équivalent n'a été trouvé'''"
+.br
+.ti -1c
+.RI "string \fBtables\&.introduction_fra\fP = '''Cette liste regroupe les mots dont aucun équivalent n'a été trouvé\&. Même s'il ne s'agit que d'informations négatives, elles éclairent les limites du vocabulaire na des consultants\&.'''"
+.br
+.ti -1c
+.RI "string \fBtables\&.pattern\fP = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+.br
+.ti -1c
+.RI "string \fBtables\&.lx\fP = ''"
+.br
+.ti -1c
+.RI "string \fBtables\&.ge\fP = ''"
+.br
+.ti -1c
+.RI "string \fBtables\&.gn\fP = ''"
+.br
+.ti -1c
+.RI "string \fBtables\&.gf\fP = ''"
+.br
+.ti -1c
+.RI "tuple \fBtables\&.result\fP = re\&.search(pattern, line)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

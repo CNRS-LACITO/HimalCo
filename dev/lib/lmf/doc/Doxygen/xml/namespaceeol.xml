@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespaceeol" kind="namespace">
+    <compoundname>eol</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceeol_1a8a05add7959e24b3aeae7e605d8a1828" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>= OptionParser()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1aa15858a183d9b65efbca9cf401bd0227" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol.options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1af8d4f31a15a99500f2927c5c7c6f0206" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol::in_file</definition>
+        <argsstring></argsstring>
+        <name>in_file</name>
+        <initializer>= open(options.input, &quot;r&quot;, encoding=&apos;utf-8&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1a44bd6aa643636fce9c0f8aa2214eb4af" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol::out_file</definition>
+        <argsstring></argsstring>
+        <name>out_file</name>
+        <initializer>= open(options.output, &quot;w&quot;, encoding=&apos;utf-8&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1a8c0e818f50403d0d8776ea7e1b592133" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string eol::EOL</definition>
+        <argsstring></argsstring>
+        <name>EOL</name>
+        <initializer>= &apos;\n&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1abeaa70f48fe541fa9a735489ca6e95ff" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list eol.lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1a76b2223d0522fbcbbe9d3ed8c8af2375" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol.previous_line</definition>
+        <argsstring></argsstring>
+        <name>previous_line</name>
+        <initializer>= lines.pop()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="32" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceeol_1a12767f8ab35a2de0036b1fdd5af23567" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple eol.line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <initializer>= previous_line.replace(<ref refid="namespaceeol_1a8c0e818f50403d0d8776ea7e1b592133" kindref="member">EOL</ref>, &quot; &quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/eol/eol.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

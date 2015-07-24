@@ -17,6 +17,20 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="9" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1utils_1_1io_1a04261d03963ca07db5192ce643168e6c" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lmf::src::utils::io.ENCODING</definition>
+        <argsstring></argsstring>
+        <name>ENCODING</name>
+        <initializer>= &apos;utf-8&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacelmf_1_1src_1_1utils_1_1io_1a3cfd9f0e0184883c64f87bab4686befc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -46,14 +60,14 @@
 <parametername>encoding</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Encoding mode. Default value is &apos;utf8&apos;. </para></parameterdescription>
+<para>Encoding mode. Default value is &apos;utf-8&apos;. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>File handler. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="14" bodyend="29"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="17" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="namespacelmf_1_1src_1_1utils_1_1io_1a2659ffc6cd260a7a4e43f0546d518dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -82,7 +96,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="30" bodyend="40"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="33" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="namespacelmf_1_1src_1_1utils_1_1io_1a943b893b8992a6e46d91400538709b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -111,7 +125,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="41" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="41" bodyend="51"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" line="44" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/io.py" bodystart="44" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

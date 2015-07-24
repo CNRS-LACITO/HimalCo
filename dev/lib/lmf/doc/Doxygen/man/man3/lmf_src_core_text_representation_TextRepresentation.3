@@ -1,4 +1,4 @@
-.TH "lmf.src.core.text_representation.TextRepresentation" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.text_representation.TextRepresentation" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -46,6 +46,14 @@ Inherits Representation\&.
 .RI "def \fBget_language\fP"
 .br
 .RI "\fIGet language used for written form\&. \fP"
+.ti -1c
+.RI "def \fBset_scriptName\fP"
+.br
+.RI "\fISet script name\&. \fP"
+.ti -1c
+.RI "def \fBget_scriptName\fP"
+.br
+.RI "\fIGet script name\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -61,6 +69,9 @@ Inherits Representation\&.
 .br
 .ti -1c
 .RI "\fBlanguage\fP"
+.br
+.ti -1c
+.RI "\fBscriptName\fP"
 .br
 .in -1c
 .SH "Detailed Description"
@@ -117,6 +128,19 @@ Representation attribute 'language'\&.
 
 .PP
 Definition at line 73 of file text_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.get_scriptName (self)"
+
+.PP
+Get script name\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Representation attribute 'scriptName'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file text_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.get_writtenForm (self, language = \fCNone\fP)"
 
 .PP
@@ -171,6 +195,24 @@ Set language used for written form\&.
 
 .PP
 Definition at line 63 of file text_representation\&.py\&.
+.SS "def lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.set_scriptName (self, script_name)"
+
+.PP
+Set script name\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript_name\fP The script name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBTextRepresentation\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 79 of file text_representation\&.py\&.
 .SS "def lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.set_writtenForm (self, written_form, language = \fCNone\fP)"
 
 .PP
@@ -205,6 +247,10 @@ Definition at line 19 of file text_representation\&.py\&.
 
 .PP
 Definition at line 70 of file text_representation\&.py\&.
+.SS "lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.scriptName"
+
+.PP
+Definition at line 86 of file text_representation\&.py\&.
 .SS "lmf\&.src\&.core\&.text_representation\&.TextRepresentation\&.writtenForm"
 
 .PP

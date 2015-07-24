@@ -1,0 +1,71 @@
+.TH "lmf.src.utils.ipa2sampa.ipa2sampa" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lmf.src.utils.ipa2sampa.ipa2sampa \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBuni2sampa\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBdata\fP = codecs\&.open('\&./src/utils/ipa2sampa/sampa\&.csv', 'r', 'utf-8')"
+.br
+.ti -1c
+.RI "list \fBsota\fP = []"
+.br
+.ti -1c
+.RI "tuple \fBta\fP = eval('''''+ta+''''')"
+.br
+.ti -1c
+.RI "tuple \fBseq\fP = line\&.strip()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.utils\&.ipa2sampa\&.ipa2sampa\&.uni2sampa (sequence)"
+
+.PP
+.nf
+Convert sequence in unicode-ipa to ascii-sampa.
+
+Notes
+-----
+Forked from LingPy's version for ipa2sampa, which is based on code
+taken from Peter Kleiweg
+(http://www.let.rug.nl/~kleiweg/L04/devel/python/xsampa.html).
+
+.fi
+.PP
+ 
+.PP
+Definition at line 30 of file ipa2sampa\&.py\&.
+.SH "Variable Documentation"
+.PP 
+.SS "tuple lmf\&.src\&.utils\&.ipa2sampa\&.ipa2sampa\&.data = codecs\&.open('\&./src/utils/ipa2sampa/sampa\&.csv', 'r', 'utf-8')"
+
+.PP
+Definition at line 13 of file ipa2sampa\&.py\&.
+.SS "tuple lmf\&.src\&.utils\&.ipa2sampa\&.ipa2sampa\&.seq = line\&.strip()"
+
+.PP
+Definition at line 59 of file ipa2sampa\&.py\&.
+.SS "tuple lmf\&.src\&.utils\&.ipa2sampa\&.ipa2sampa\&.sota = []"
+
+.PP
+Definition at line 16 of file ipa2sampa\&.py\&.
+.SS "tuple lmf\&.src\&.utils\&.ipa2sampa\&.ipa2sampa\&.ta = eval('''''+ta+''''')"
+
+.PP
+Definition at line 24 of file ipa2sampa\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

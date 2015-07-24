@@ -42,6 +42,19 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="24" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1a84dbae01d3e39cd1d4ac8d420372dce4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.representation.Representation::scriptName</definition>
+        <argsstring></argsstring>
+        <name>scriptName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1acd1be9562ebfd01660301f22ee57a50c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -81,20 +94,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="19" bodyend="25"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="19" bodyend="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Representation class is an abstract class representing a Unicode string as well as, if needed, the unique attribute-value pairs that describe the specific language, script and orthography.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="6" bodyend="25"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/representation.py" bodystart="6" bodyend="26"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1aac0e09b6c37690ed70a51981cd5b251d" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1acd1be9562ebfd01660301f22ee57a50c" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>__init__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1ac592206f4f5af84f6a03af40f36ebffa" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>__new__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1a3442469787d13456fbaf6e5ee79037d5" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>comment</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1afc9334b238179d0a79d3ce1e13d4d304" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1a84dbae01d3e39cd1d4ac8d420372dce4" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>scriptName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1representation_1_1_representation_1a3966cc4e61369fde0e86dda8a656a0e1" prot="public" virt="non-virtual"><scope>lmf::src::core::representation::Representation</scope><name>writtenForm</name></member>
     </listofallmembers>
   </compounddef>

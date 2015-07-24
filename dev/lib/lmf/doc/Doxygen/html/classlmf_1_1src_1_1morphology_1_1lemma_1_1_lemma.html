@@ -138,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16942d5bd7973fc19eee27a68789dcf5"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#a16942d5bd7973fc19eee27a68789dcf5">set_variant_form</a></td></tr>
 <tr class="memdesc:a16942d5bd7973fc19eee27a68789dcf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set variant form and type.  <a href="#a16942d5bd7973fc19eee27a68789dcf5">More...</a><br /></td></tr>
 <tr class="separator:a16942d5bd7973fc19eee27a68789dcf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c88624eac96d5660adfda8bf9368164"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#a6c88624eac96d5660adfda8bf9368164">get_variant_forms</a></td></tr>
+<tr class="memdesc:a6c88624eac96d5660adfda8bf9368164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all variant forms of specified type.  <a href="#a6c88624eac96d5660adfda8bf9368164">More...</a><br /></td></tr>
+<tr class="separator:a6c88624eac96d5660adfda8bf9368164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d090ef91e9c98ef77d429b3d7296022"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#a8d090ef91e9c98ef77d429b3d7296022">set_variant_comment</a></td></tr>
 <tr class="memdesc:a8d090ef91e9c98ef77d429b3d7296022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set variant comment and language.  <a href="#a8d090ef91e9c98ef77d429b3d7296022">More...</a><br /></td></tr>
 <tr class="separator:a8d090ef91e9c98ef77d429b3d7296022"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +189,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae4244411f218ebc08fc659b1388d7a0"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#aae4244411f218ebc08fc659b1388d7a0">set_script_name</a></td></tr>
 <tr class="memdesc:aae4244411f218ebc08fc659b1388d7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set script name.  <a href="#aae4244411f218ebc08fc659b1388d7a0">More...</a><br /></td></tr>
 <tr class="separator:aae4244411f218ebc08fc659b1388d7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd01bcafb2648b945f049b7852837d67"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#abd01bcafb2648b945f049b7852837d67">set_audio</a></td></tr>
+<tr class="memdesc:abd01bcafb2648b945f049b7852837d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set audio resource.  <a href="#abd01bcafb2648b945f049b7852837d67">More...</a><br /></td></tr>
+<tr class="separator:abd01bcafb2648b945f049b7852837d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -344,16 +350,32 @@ Public Attributes</h2></td></tr>
           <td class="memname">def lmf.src.morphology.lemma.Lemma.get_citation_forms </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>script_name</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get all citation forms. </p>
-<p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'citationForm'. </dd></dl>
+<p>This attribute is owned by FormRepresentation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">script_name</td><td>If provided, get only citation forms that are written using this script. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'citationForm'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00281">281</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00299">299</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -374,7 +396,7 @@ Public Attributes</h2></td></tr>
 <p>Get all contextual variations. </p>
 <p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'contextualVariation'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00221">221</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00236">236</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -465,16 +487,32 @@ Public Attributes</h2></td></tr>
           <td class="memname">def lmf.src.morphology.lemma.Lemma.get_phonetic_forms </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>script_name</em> = <code>None</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Get all phonetic forms. </p>
-<p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'phoneticForm'. </dd></dl>
+<p>This attribute is owned by FormRepresentation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">script_name</td><td>If provided, get only phonetic forms that are written using this script. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'phoneticForm'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00191">191</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00205">205</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -495,7 +533,7 @@ Public Attributes</h2></td></tr>
 <p>Get all spelling variants. </p>
 <p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'spellingVariant'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00251">251</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00266">266</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -516,7 +554,7 @@ Public Attributes</h2></td></tr>
 <p>Get all tones. </p>
 <p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'tone'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00142">142</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00153">153</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -537,7 +575,124 @@ Public Attributes</h2></td></tr>
 <p>Get all transliterations. </p>
 <p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'transliteration'. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00330">330</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00349">349</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c88624eac96d5660adfda8bf9368164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.morphology.lemma.Lemma.get_variant_forms </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>type</em> = <code>&quot;unspecified&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all variant forms of specified type. </p>
+<p>This attribute is owned by FormRepresentation. </p><dl class="section return"><dt>Returns</dt><dd>A Python list of FormRepresentation attributes 'variantForm' if type matches. </dd></dl>
+
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00103">103</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd01bcafb2648b945f049b7852837d67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.morphology.lemma.Lemma.set_audio </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>media_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>author</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>quality</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>start_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>external_reference</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>audio_file_format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set audio resource. </p>
+<p>Attributes 'mediaType', 'fileName', 'author', 'quality', 'startPosition', 'durationOfEffectiveSpeech', 'externalReference', 'audioFileFormat' are owned by Material/Audio, which is owned by FormRepresentation. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">media_type</td><td>The media type to set. </td></tr>
+    <tr><td class="paramname">file_name</td><td>Name of the audio file. </td></tr>
+    <tr><td class="paramname">author</td><td>Author of the recording. </td></tr>
+    <tr><td class="paramname">quality</td><td>Quality of the recording, in range 'quality_range' defined in '<a class="el" href="range_8py.html">common/range.py</a>'. </td></tr>
+    <tr><td class="paramname">start_position</td><td>Start position of the form in the recording, in format 'Thh:mm:ss,msms', e.g. "T00:05:00". </td></tr>
+    <tr><td class="paramname">duration</td><td>Duration of the effcetive speech, in format 'PThhHmmMssS', e.g. "PT00:05:00". </td></tr>
+    <tr><td class="paramname">external_reference</td><td>Reference of the audio file, if not directly provided. </td></tr>
+    <tr><td class="paramname">audio_file_format</td><td>Format of the audio file, e.g. "wav". </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
+
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00379">379</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -555,7 +710,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>citation_form</em>&#160;</td>
+          <td class="paramname"><em>citation_form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>script_name</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -569,12 +730,13 @@ Public Attributes</h2></td></tr>
 <p>This attribute is owned by FormRepresentation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">citation_form</td><td>The citation form to set. </td></tr>
+    <tr><td class="paramname">script_name</td><td>The name of the script used to write the citation form, e.g. devanagari. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00262">262</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00277">277</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -611,7 +773,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00202">202</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00217">217</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -648,7 +810,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00292">292</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00311">311</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -685,7 +847,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00153">153</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00164">164</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -740,7 +902,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>phonetic_form</em>&#160;</td>
+          <td class="paramname"><em>phonetic_form</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>script_name</em> = <code>None</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -754,12 +922,13 @@ Public Attributes</h2></td></tr>
 <p>This attribute is owned by FormRepresentation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">phonetic_form</td><td>The phonetic form to set. </td></tr>
+    <tr><td class="paramname">script_name</td><td>The name of the script used to write the phonetic form, e.g. pinyin. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00172">172</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00183">183</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -796,7 +965,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00341">341</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00360">360</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -833,7 +1002,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00232">232</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00247">247</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -870,7 +1039,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00123">123</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00134">134</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -907,7 +1076,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00311">311</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00330">330</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -951,7 +1120,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html" title="&quot;Lemma is a Form subclass representing a form chosen by convention to designate the Lexical Entry...">Lemma</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="lemma_8py_source.html#l00103">103</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
+<p>Definition at line <a class="el" href="lemma_8py_source.html#l00114">114</a> of file <a class="el" href="lemma_8py_source.html">lemma.py</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1203,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 12:25:32 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

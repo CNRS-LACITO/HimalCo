@@ -1,0 +1,58 @@
+.TH "/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBuid\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBuid\&.parser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBuid\&.options\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBuid\&.in_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBuid\&.out_file\fP = open(options\&.output, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBuid\&.EOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "string \fBuid\&.pattern\fP = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+.br
+.ti -1c
+.RI "string \fBuid\&.lx\fP = ''"
+.br
+.ti -1c
+.RI "string \fBuid\&.mkr\fP = 'lx'"
+.br
+.ti -1c
+.RI "list \fBuid\&.sf\fP = []"
+.br
+.ti -1c
+.RI "string \fBuid\&.hm\fP = ''"
+.br
+.ti -1c
+.RI "tuple \fBuid\&.result\fP = re\&.search(pattern, line)"
+.br
+.ti -1c
+.RI "tuple \fBuid\&.uid\fP = uni2sampa(lx)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

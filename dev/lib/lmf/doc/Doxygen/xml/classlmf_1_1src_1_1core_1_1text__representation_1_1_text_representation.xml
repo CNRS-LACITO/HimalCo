@@ -56,6 +56,19 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="70" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="70" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a1aeda3c7310f02affa313c8797bfaf65" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf.src.core.text_representation.TextRepresentation::scriptName</definition>
+        <argsstring></argsstring>
+        <name>scriptName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="86" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -208,6 +221,42 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="73" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="73" bodyend="78"/>
       </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1ae7d072249f81b508e86b086fd80f27a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.text_representation.TextRepresentation.set_scriptName</definition>
+        <argsstring></argsstring>
+        <name>set_scriptName</name>
+        <briefdescription>
+<para>Set script name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The script name to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation" kindref="compound">TextRepresentation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="79" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="79" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aba63d43929e12252bc2ac535b6d3f563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.text_representation.TextRepresentation.get_scriptName</definition>
+        <argsstring></argsstring>
+        <name>get_scriptName</name>
+        <briefdescription>
+<para>Get script name. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Representation attribute &apos;scriptName&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="89" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="89" bodyend="94"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Text Representation is a class representing the textual content of definition or statement. When there is more than one variant orthography, the Text Representation instance contains a Unicode string representing the textual content as well as unique attribute-value pairs that describe the specific language, script and orthography.&quot; (LMF) </para>    </briefdescription>
@@ -235,7 +284,7 @@
         <label>Representation</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="9" bodyend="78"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/text_representation.py" bodystart="9" bodyend="94"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aca36ddfaa299552d8248fd6ce08202a1" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a44896bbde1027d1156df6f3c6396a117" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>__init__</name></member>
@@ -243,10 +292,13 @@
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a78df11b119c24be8b18e6f121e0bb802" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>font</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a3211a3da3b34f68aa4d6542aafe940ee" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>get_comment</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a1ec2b944809b0503bc1bb07b034eef5b" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>get_language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aba63d43929e12252bc2ac535b6d3f563" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>get_scriptName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a85adf686ca1d5df10588f312260390e9" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>get_writtenForm</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1aba23f79743bc4aa642f344aec09a3807" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a1aeda3c7310f02affa313c8797bfaf65" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>scriptName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a84a6b65581f2e327a47989912c33838a" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>set_comment</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a00be4c8e0a058f9df2605abb27ac8853" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>set_language</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1ae7d072249f81b508e86b086fd80f27a7" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>set_scriptName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a6ecc8173f69656c0135368ded971ceea" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>set_writtenForm</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1text__representation_1_1_text_representation_1a029a488706154d5fe42ecbea00974780" prot="public" virt="non-virtual"><scope>lmf::src::core::text_representation::TextRepresentation</scope><name>writtenForm</name></member>
     </listofallmembers>

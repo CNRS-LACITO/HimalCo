@@ -1,4 +1,4 @@
-.TH "lmf.src.resources.audio.Audio" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.resources.audio.Audio" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,6 +22,86 @@ Inherits Material\&.
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBset_mediaType\fP"
+.br
+.RI "\fISet media type\&. \fP"
+.ti -1c
+.RI "def \fBget_mediaType\fP"
+.br
+.RI "\fIGet media type\&. \fP"
+.ti -1c
+.RI "def \fBset_fileName\fP"
+.br
+.RI "\fISet file name\&. \fP"
+.ti -1c
+.RI "def \fBget_fileName\fP"
+.br
+.RI "\fIGet file name\&. \fP"
+.ti -1c
+.RI "def \fBset_author\fP"
+.br
+.RI "\fISet author of the material resource\&. \fP"
+.ti -1c
+.RI "def \fBget_author\fP"
+.br
+.RI "\fIGet author of the material resource\&. \fP"
+.ti -1c
+.RI "def \fBset_quality\fP"
+.br
+.RI "\fISet audio recording quality\&. \fP"
+.ti -1c
+.RI "def \fBget_quality\fP"
+.br
+.RI "\fIGet audio recording quality\&. \fP"
+.ti -1c
+.RI "def \fBset_sound\fP"
+.br
+.RI "\fISet sound\&. \fP"
+.ti -1c
+.RI "def \fBget_sound\fP"
+.br
+.RI "\fIGet sound\&. \fP"
+.ti -1c
+.RI "def \fBset_transcription\fP"
+.br
+.RI "\fISet transcription of the audio recording\&. \fP"
+.ti -1c
+.RI "def \fBget_transcription\fP"
+.br
+.RI "\fIGet transcription of the audio recording\&. \fP"
+.ti -1c
+.RI "def \fBset_startPosition\fP"
+.br
+.RI "\fISet start position\&. \fP"
+.ti -1c
+.RI "def \fBget_startPosition\fP"
+.br
+.RI "\fIGet start position\&. \fP"
+.ti -1c
+.RI "def \fBset_durationOfEffectiveSpeech\fP"
+.br
+.RI "\fISet duration of effective speech\&. \fP"
+.ti -1c
+.RI "def \fBget_durationOfEffectiveSpeech\fP"
+.br
+.RI "\fIGet duration of effective speech\&. \fP"
+.ti -1c
+.RI "def \fBset_externalReference\fP"
+.br
+.RI "\fISet external reference\&. \fP"
+.ti -1c
+.RI "def \fBget_externalReference\fP"
+.br
+.RI "\fIGet external reference\&. \fP"
+.ti -1c
+.RI "def \fBset_audioFileFormat\fP"
+.br
+.RI "\fISet audio file format\&. \fP"
+.ti -1c
+.RI "def \fBget_audioFileFormat\fP"
+.br
+.RI "\fIGet audio file formay\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -47,12 +127,21 @@ Inherits Material\&.
 .ti -1c
 .RI "\fBtranscription\fP"
 .br
+.ti -1c
+.RI "\fBmediaType\fP"
+.br
+.ti -1c
+.RI "\fBfileName\fP"
+.br
+.ti -1c
+.RI "\fBauthor\fP"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
 \fBAudio\fP is a Material subclass representing an audio recording\&. 
 .PP
-Definition at line 8 of file audio\&.py\&.
+Definition at line 11 of file audio\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.__init__ (self)"
@@ -67,43 +156,367 @@ An \fBAudio\fP instance\&.
 .PP
 
 .PP
-Definition at line 11 of file audio\&.py\&.
+Definition at line 14 of file audio\&.py\&.
 .SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.__del__ (self)"
 
 .PP
 Destructor\&. 
 .PP
-Definition at line 26 of file audio\&.py\&.
+Definition at line 29 of file audio\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_audioFileFormat (self)"
+
+.PP
+Get audio file formay\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'audioFileFormat'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 199 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_author (self)"
+
+.PP
+Get author of the material resource\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'author'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 76 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_durationOfEffectiveSpeech (self)"
+
+.PP
+Get duration of effective speech\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'durationOfEffectiveSpeech'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 167 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_externalReference (self)"
+
+.PP
+Get external reference\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'externalReference'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 183 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_fileName (self)"
+
+.PP
+Get file name\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'fileName'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_mediaType (self)"
+
+.PP
+Get media type\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'mediaType'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 44 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_quality (self)"
+
+.PP
+Get audio recording quality\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'quality'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_sound (self)"
+
+.PP
+Get sound\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'sound'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_startPosition (self)"
+
+.PP
+Get start position\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'startPosition'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 144 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.get_transcription (self)"
+
+.PP
+Get transcription of the audio recording\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP attribute 'transcription'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 124 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_audioFileFormat (self, audio_file_format)"
+
+.PP
+Set audio file format\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaudio_file_format\fP \fBAudio\fP file format to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 189 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_author (self, author)"
+
+.PP
+Set author of the material resource\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIauthor\fP Author to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_durationOfEffectiveSpeech (self, duration)"
+
+.PP
+Set duration of effective speech\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIduration\fP Duration of effective speech to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_externalReference (self, external_reference)"
+
+.PP
+Set external reference\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexternal_reference\fP External reference to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 173 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_fileName (self, file_name)"
+
+.PP
+Set file name\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIfile_name\fP Name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 50 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_mediaType (self, media_type)"
+
+.PP
+Set media type\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImedia_type\fP Type to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_quality (self, quality)"
+
+.PP
+Set audio recording quality\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIquality\fP Quality to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_sound (self, sound)"
+
+.PP
+Set sound\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsound\fP Sound to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 98 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_startPosition (self, start_position)"
+
+.PP
+Set start position\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstart_position\fP Start position to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 130 of file audio\&.py\&.
+.SS "def lmf\&.src\&.resources\&.audio\&.Audio\&.set_transcription (self, transcription)"
+
+.PP
+Set transcription of the audio recording\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fITranscription\fP to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBAudio\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 114 of file audio\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.audioFileFormat"
 
 .PP
-Definition at line 23 of file audio\&.py\&.
+Definition at line 26 of file audio\&.py\&.
+.SS "lmf\&.src\&.resources\&.audio\&.Audio\&.author"
+
+.PP
+Definition at line 73 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.durationOfEffectiveSpeech"
 
 .PP
-Definition at line 21 of file audio\&.py\&.
+Definition at line 24 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.externalReference"
 
 .PP
-Definition at line 22 of file audio\&.py\&.
+Definition at line 25 of file audio\&.py\&.
+.SS "lmf\&.src\&.resources\&.audio\&.Audio\&.fileName"
+
+.PP
+Definition at line 57 of file audio\&.py\&.
+.SS "lmf\&.src\&.resources\&.audio\&.Audio\&.mediaType"
+
+.PP
+Definition at line 41 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.quality"
 
 .PP
-Definition at line 18 of file audio\&.py\&.
+Definition at line 21 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.sound"
 
 .PP
-Definition at line 19 of file audio\&.py\&.
+Definition at line 22 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.startPosition"
 
 .PP
-Definition at line 20 of file audio\&.py\&.
+Definition at line 23 of file audio\&.py\&.
 .SS "lmf\&.src\&.resources\&.audio\&.Audio\&.transcription"
 
 .PP
-Definition at line 24 of file audio\&.py\&.
+Definition at line 27 of file audio\&.py\&.
 
 .SH "Author"
 .PP 

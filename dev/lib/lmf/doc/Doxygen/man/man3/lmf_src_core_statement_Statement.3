@@ -1,4 +1,4 @@
-.TH "lmf.src.core.statement.Statement" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.statement.Statement" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -109,6 +109,12 @@ lmf.src.core.statement.Statement \-
 .br
 .ti -1c
 .RI "def \fBget_etymologySource\fP"
+.br
+.ti -1c
+.RI "def \fBset_scientificName\fP"
+.br
+.ti -1c
+.RI "def \fBget_scientificName\fP"
 .br
 .in -1c
 .SS "Public Attributes"
@@ -341,6 +347,18 @@ The filtered \fBStatement\fP attribute 'restriction'\&.
 
 .PP
 Definition at line 159 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_scientificName (self)"
+
+.PP
+.nf
+Get scientific name.
+@return Statement attribute 'scientificName'.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 296 of file statement\&.py\&.
 .SS "def lmf\&.src\&.core\&.statement\&.Statement\&.get_termSourceLanguage (self)"
 
 .PP
@@ -547,6 +565,19 @@ Set restriction\&.
 
 .PP
 Definition at line 148 of file statement\&.py\&.
+.SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_scientificName (self, scientific_name)"
+
+.PP
+.nf
+Set scientific name.
+@param scientific_name The scientific name to set.
+@return Statement instance.
+
+.fi
+.PP
+ 
+.PP
+Definition at line 286 of file statement\&.py\&.
 .SS "def lmf\&.src\&.core\&.statement\&.Statement\&.set_termSourceLanguage (self, term_source_language)"
 
 .PP

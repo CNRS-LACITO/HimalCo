@@ -77,6 +77,10 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ad869f9c4fcfca1775a74f
 \begin{DoxyCompactList}\small\item\em Set etymology source. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a58b3a4780ebc7fec50bd5088fef02d87}{get\+\_\+etymology\+\_\+source}
 \begin{DoxyCompactList}\small\item\em Get etymology source. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a98dae38e1997fb9e04cf2ad8ee47591a}{set\+\_\+scientific\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Set scientific name. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_adeaf450f92e0f7726c1152f4d8b1944d}{get\+\_\+scientific\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Get scientific name. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ac61f3aadccb06f636aad9891b3bba53e}{create\+\_\+paradigm}
 \begin{DoxyCompactList}\small\item\em Create a paradigm. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae67664c5b120e407e5d0543ad5bdfb3d}{add\+\_\+paradigm}
@@ -98,9 +102,11 @@ def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a50f6e0ba88d00c3315b91
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_af9c1b79eed28bd28279719bdf578d218}{get\+\_\+last\+\_\+context}
 \begin{DoxyCompactList}\small\item\em Get the previously registered Context instance. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a61c046aabce91368de9129dd83c2bb20}{create\+\_\+example}
-\begin{DoxyCompactList}\small\item\em Create a Context instance and set its written form and language. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Create a Context instance and set its reference. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ac901c4bce7721237a2e2c58bf7a11f2b}{create\+\_\+and\+\_\+add\+\_\+example}
+\begin{DoxyCompactList}\small\item\em Set written form, language and script of a new Context instance. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab84c8d7a1cdcce014f99e0c1a1b0aedd}{add\+\_\+example}
-\begin{DoxyCompactList}\small\item\em Set written form and language of an existing Context instance. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Set written form, language and script of an existing Context instance. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9b8d8ea7fe946dd19e2538fe7801754a}{set\+\_\+example\+\_\+comment}
 \begin{DoxyCompactList}\small\item\em Set comment of an existing Context instance. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a07d199aca70cf878cb2a71af7a96fa4c}{create\+\_\+and\+\_\+add\+\_\+subject\+\_\+field}
@@ -210,7 +216,7 @@ Add a definition to the sense.
 \end{DoxyReturn}
 
 
-Definition at line 92 of file sense.\+py.
+Definition at line 97 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab84c8d7a1cdcce014f99e0c1a1b0aedd}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!add\+\_\+example@{add\+\_\+example}}
 \index{add\+\_\+example@{add\+\_\+example}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -218,18 +224,21 @@ Definition at line 92 of file sense.\+py.
 \begin{DoxyParamCaption}
 \item[{}]{self, }
 \item[{}]{written\+\_\+form, }
-\item[{}]{language = {\ttfamily None}}
+\item[{}]{language = {\ttfamily None}, }
+\item[{}]{script\+\_\+name = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab84c8d7a1cdcce014f99e0c1a1b0aedd}
 
 
-Set written form and language of an existing Context instance. 
+Set written form, language and script of an existing Context instance. 
 
-Attributes 'written\+Form' and 'language' are owned by Text\+Representation, which is owned by Context. 
+Attributes 'written\+Form', 'language' and 'script\+Name' are owned by Text\+Representation, which is owned by Context. 
 \begin{DoxyParams}{Parameters}
 {\em written\+\_\+form} & The written form to set. \\
 \hline
 {\em language} & Language used for the written form. \\
+\hline
+{\em script\+\_\+name} & The name of the script used to write the example, e.\+g. devanagari. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -237,7 +246,7 @@ Attributes 'written\+Form' and 'language' are owned by Text\+Representation, whi
 \end{DoxyReturn}
 
 
-Definition at line 587 of file sense.\+py.
+Definition at line 630 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae67664c5b120e407e5d0543ad5bdfb3d}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!add\+\_\+paradigm@{add\+\_\+paradigm}}
 \index{add\+\_\+paradigm@{add\+\_\+paradigm}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -261,25 +270,31 @@ Add a paradigm to the sense.
 \end{DoxyReturn}
 
 
-Definition at line 477 of file sense.\+py.
+Definition at line 504 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a14ced3b1dd8115d72283d6708d3ce0b5}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+and\+\_\+add\+\_\+context@{create\+\_\+and\+\_\+add\+\_\+context}}
 \index{create\+\_\+and\+\_\+add\+\_\+context@{create\+\_\+and\+\_\+add\+\_\+context}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
 \subsubsection[{create\+\_\+and\+\_\+add\+\_\+context}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+create\+\_\+and\+\_\+add\+\_\+context (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{reference = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a14ced3b1dd8115d72283d6708d3ce0b5}
 
 
 Create a context and add it to the list. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em reference} & The context reference to set. If not provided, default value is None. \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Context instance. 
 \end{DoxyReturn}
 
 
-Definition at line 556 of file sense.\+py.
+Definition at line 583 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a6004e31b078cad1d029283c4e3fedfc2}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+and\+\_\+add\+\_\+equivalent@{create\+\_\+and\+\_\+add\+\_\+equivalent}}
 \index{create\+\_\+and\+\_\+add\+\_\+equivalent@{create\+\_\+and\+\_\+add\+\_\+equivalent}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -297,7 +312,37 @@ Equivalent instance.
 \end{DoxyReturn}
 
 
-Definition at line 640 of file sense.\+py.
+Definition at line 684 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ac901c4bce7721237a2e2c58bf7a11f2b}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+and\+\_\+add\+\_\+example@{create\+\_\+and\+\_\+add\+\_\+example}}
+\index{create\+\_\+and\+\_\+add\+\_\+example@{create\+\_\+and\+\_\+add\+\_\+example}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{create\+\_\+and\+\_\+add\+\_\+example}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+create\+\_\+and\+\_\+add\+\_\+example (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{written\+\_\+form, }
+\item[{}]{language = {\ttfamily None}, }
+\item[{}]{script\+\_\+name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ac901c4bce7721237a2e2c58bf7a11f2b}
+
+
+Set written form, language and script of a new Context instance. 
+
+Attributes 'written\+Form', 'language' and 'script\+Name' are owned by Text\+Representation, which is owned by Context. 
+\begin{DoxyParams}{Parameters}
+{\em written\+\_\+form} & The written form to set. \\
+\hline
+{\em language} & Language used for the written form. \\
+\hline
+{\em script\+\_\+name} & The name of the script used to write the example, e.\+g. devanagari. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 614 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a07d199aca70cf878cb2a71af7a96fa4c}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+and\+\_\+add\+\_\+subject\+\_\+field@{create\+\_\+and\+\_\+add\+\_\+subject\+\_\+field}}
 \index{create\+\_\+and\+\_\+add\+\_\+subject\+\_\+field@{create\+\_\+and\+\_\+add\+\_\+subject\+\_\+field}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -315,7 +360,7 @@ Subject\+Field instance.
 \end{DoxyReturn}
 
 
-Definition at line 616 of file sense.\+py.
+Definition at line 660 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a5923d173a0ad52642ccdc50d4611fdc9}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+definition@{create\+\_\+definition}}
 \index{create\+\_\+definition@{create\+\_\+definition}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -333,26 +378,23 @@ Definition instance.
 \end{DoxyReturn}
 
 
-Definition at line 86 of file sense.\+py.
+Definition at line 91 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a61c046aabce91368de9129dd83c2bb20}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+example@{create\+\_\+example}}
 \index{create\+\_\+example@{create\+\_\+example}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
 \subsubsection[{create\+\_\+example}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+create\+\_\+example (
 \begin{DoxyParamCaption}
 \item[{}]{self, }
-\item[{}]{written\+\_\+form, }
-\item[{}]{language = {\ttfamily None}}
+\item[{}]{reference = {\ttfamily None}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a61c046aabce91368de9129dd83c2bb20}
 
 
-Create a Context instance and set its written form and language. 
+Create a Context instance and set its reference. 
 
-Attributes 'written\+Form' and 'language' are owned by Text\+Representation, which is owned by Context. 
+Attribute 'targets' is owned by Context. 
 \begin{DoxyParams}{Parameters}
-{\em written\+\_\+form} & The written form to set. \\
-\hline
-{\em language} & Language used for the written form. \\
+{\em reference} & The example reference to set. If not provided, default value is None. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -360,7 +402,7 @@ Attributes 'written\+Form' and 'language' are owned by Text\+Representation, whi
 \end{DoxyReturn}
 
 
-Definition at line 577 of file sense.\+py.
+Definition at line 605 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ac61f3aadccb06f636aad9891b3bba53e}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!create\+\_\+paradigm@{create\+\_\+paradigm}}
 \index{create\+\_\+paradigm@{create\+\_\+paradigm}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -378,7 +420,7 @@ Paradigm instance.
 \end{DoxyReturn}
 
 
-Definition at line 471 of file sense.\+py.
+Definition at line 498 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_aef07a87a7893b5daea9b6a5a84220cab}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+definitions@{find\+\_\+definitions}}
 \index{find\+\_\+definitions@{find\+\_\+definitions}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -402,7 +444,7 @@ A Python list of found Definition attributes 'definition'.
 \end{DoxyReturn}
 
 
-Definition at line 113 of file sense.\+py.
+Definition at line 118 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a7f3f74ce33b047118343b29c4a5196ce}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+encyclopedic\+\_\+informations@{find\+\_\+encyclopedic\+\_\+informations}}
 \index{find\+\_\+encyclopedic\+\_\+informations@{find\+\_\+encyclopedic\+\_\+informations}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -426,7 +468,7 @@ A Python list of found Statement attributes 'encyclopedic\+Information'.
 \end{DoxyReturn}
 
 
-Definition at line 264 of file sense.\+py.
+Definition at line 269 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a784fe796429c439fadd5e070954d70b3}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+glosses@{find\+\_\+glosses}}
 \index{find\+\_\+glosses@{find\+\_\+glosses}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -450,7 +492,7 @@ A Python list of found Definition attributes 'gloss'.
 \end{DoxyReturn}
 
 
-Definition at line 153 of file sense.\+py.
+Definition at line 158 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_acc1067bd6d9a28ac2719d8d442a8d7bb}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+notes@{find\+\_\+notes}}
 \index{find\+\_\+notes@{find\+\_\+notes}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -474,7 +516,7 @@ A Python list of found Statement attributes 'notes'.
 \end{DoxyReturn}
 
 
-Definition at line 210 of file sense.\+py.
+Definition at line 215 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ad2997077bd0e68f4af1542ade3e64417}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+restrictions@{find\+\_\+restrictions}}
 \index{find\+\_\+restrictions@{find\+\_\+restrictions}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -498,7 +540,7 @@ A Python list of found Statement attributes 'restriction'.
 \end{DoxyReturn}
 
 
-Definition at line 291 of file sense.\+py.
+Definition at line 296 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_af4a689fe644baaf594abb4d9a1b0ca55}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!find\+\_\+usage\+\_\+notes@{find\+\_\+usage\+\_\+notes}}
 \index{find\+\_\+usage\+\_\+notes@{find\+\_\+usage\+\_\+notes}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -522,7 +564,7 @@ A Python list of found Statement attributes 'usage\+Note'.
 \end{DoxyReturn}
 
 
-Definition at line 237 of file sense.\+py.
+Definition at line 242 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a228d6a83808888d3805c06657c8f9153}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+borrowed\+\_\+word@{get\+\_\+borrowed\+\_\+word}}
 \index{get\+\_\+borrowed\+\_\+word@{get\+\_\+borrowed\+\_\+word}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -540,7 +582,7 @@ Statement attribute 'borrowed\+Word'.
 \end{DoxyReturn}
 
 
-Definition at line 317 of file sense.\+py.
+Definition at line 322 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a50f6e0ba88d00c3315b91d3787aa9085}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+contexts@{get\+\_\+contexts}}
 \index{get\+\_\+contexts@{get\+\_\+contexts}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -558,7 +600,7 @@ A Python list of contexts.
 \end{DoxyReturn}
 
 
-Definition at line 564 of file sense.\+py.
+Definition at line 592 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a8bc5ca5fd053360b3150a13fa7787528}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+definitions@{get\+\_\+definitions}}
 \index{get\+\_\+definitions@{get\+\_\+definitions}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -576,7 +618,7 @@ A Python list of definitions.
 \end{DoxyReturn}
 
 
-Definition at line 100 of file sense.\+py.
+Definition at line 105 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ad01163c4440025fe86e4c00734aa8894}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+equivalents@{get\+\_\+equivalents}}
 \index{get\+\_\+equivalents@{get\+\_\+equivalents}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -594,7 +636,7 @@ A Python list of equivalents.
 \end{DoxyReturn}
 
 
-Definition at line 648 of file sense.\+py.
+Definition at line 692 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ae41863c9c5fdf94f3f29c13d6b1fe1cf}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+etymology@{get\+\_\+etymology}}
 \index{get\+\_\+etymology@{get\+\_\+etymology}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -608,11 +650,11 @@ Definition at line 648 of file sense.\+py.
 Get etymology. 
 
 This attribute is owned by Statement, which is owned by Definition. \begin{DoxyReturn}{Returns}
-Statement attribute 'etymology'. 
+The first found Statement attribute 'etymology'. 
 \end{DoxyReturn}
 
 
-Definition at line 369 of file sense.\+py.
+Definition at line 374 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a60c30c7573483fd9d987c8c439688213}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+etymology\+\_\+comment@{get\+\_\+etymology\+\_\+comment}}
 \index{get\+\_\+etymology\+\_\+comment@{get\+\_\+etymology\+\_\+comment}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -632,11 +674,11 @@ This attribute is owned by Statement, which is owned by Definition.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Statement attribute 'etymology\+Comment'. 
+The first found Statement attribute 'etymology\+Comment'. 
 \end{DoxyReturn}
 
 
-Definition at line 396 of file sense.\+py.
+Definition at line 399 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_adb7c6fd2e19771361a94025df3343a58}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+etymology\+\_\+gloss@{get\+\_\+etymology\+\_\+gloss}}
 \index{get\+\_\+etymology\+\_\+gloss@{get\+\_\+etymology\+\_\+gloss}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -654,7 +696,7 @@ Statement attribute 'etymology\+Gloss'.
 \end{DoxyReturn}
 
 
-Definition at line 434 of file sense.\+py.
+Definition at line 435 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a58b3a4780ebc7fec50bd5088fef02d87}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+etymology\+\_\+source@{get\+\_\+etymology\+\_\+source}}
 \index{get\+\_\+etymology\+\_\+source@{get\+\_\+etymology\+\_\+source}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -672,7 +714,7 @@ Statement attribute 'etymology\+Source'.
 \end{DoxyReturn}
 
 
-Definition at line 460 of file sense.\+py.
+Definition at line 461 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_aca94be206f4da6635798c1423aa5db15}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+id@{get\+\_\+id}}
 \index{get\+\_\+id@{get\+\_\+id}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -708,7 +750,7 @@ The last element of \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense
 \end{DoxyReturn}
 
 
-Definition at line 570 of file sense.\+py.
+Definition at line 598 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9b51914a3abc0ebfd57501a665a69eb2}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+last\+\_\+definition@{get\+\_\+last\+\_\+definition}}
 \index{get\+\_\+last\+\_\+definition@{get\+\_\+last\+\_\+definition}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -726,7 +768,7 @@ The last element of \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense
 \end{DoxyReturn}
 
 
-Definition at line 106 of file sense.\+py.
+Definition at line 111 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_abdb32f5050397be1f2147b769fc97f6d}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+last\+\_\+paradigm@{get\+\_\+last\+\_\+paradigm}}
 \index{get\+\_\+last\+\_\+paradigm@{get\+\_\+last\+\_\+paradigm}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -744,7 +786,7 @@ The last element of \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense
 \end{DoxyReturn}
 
 
-Definition at line 491 of file sense.\+py.
+Definition at line 518 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a41112d70652f5412eb71eacad72a135a}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+paradigms@{get\+\_\+paradigms}}
 \index{get\+\_\+paradigms@{get\+\_\+paradigms}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -762,20 +804,39 @@ A Python list of paradigms.
 \end{DoxyReturn}
 
 
-Definition at line 485 of file sense.\+py.
+Definition at line 512 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_adeaf450f92e0f7726c1152f4d8b1944d}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+scientific\+\_\+name@{get\+\_\+scientific\+\_\+name}}
+\index{get\+\_\+scientific\+\_\+name@{get\+\_\+scientific\+\_\+name}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{get\+\_\+scientific\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+get\+\_\+scientific\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_adeaf450f92e0f7726c1152f4d8b1944d}
+
+
+Get scientific name. 
+
+This attribute is owned by Statement, which is owned by Definition. \begin{DoxyReturn}{Returns}
+Statement attribute 'scientific\+Name'. 
+\end{DoxyReturn}
+
+
+Definition at line 487 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a0c1c636cbbcb1fd1e98e9f5058464d73}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+sense\+Number@{get\+\_\+sense\+Number}}
 \index{get\+\_\+sense\+Number@{get\+\_\+sense\+Number}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
 \subsubsection[{get\+\_\+sense\+Number}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+get\+\_\+sense\+Number (
 \begin{DoxyParamCaption}
-\item[{}]{self}
+\item[{}]{self, }
+\item[{}]{integer = {\ttfamily False}}
 \end{DoxyParamCaption}
 )}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a0c1c636cbbcb1fd1e98e9f5058464d73}
 
 
 Get sense number. 
 
-\begin{DoxyReturn}{Returns}
+If True, return a numerical value. \begin{DoxyReturn}{Returns}
 \hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} attribute 'sense\+Number'. 
 \end{DoxyReturn}
 
@@ -798,7 +859,7 @@ A Python list of subject fields.
 \end{DoxyReturn}
 
 
-Definition at line 624 of file sense.\+py.
+Definition at line 668 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab6f704b6dd461728169ffb3c74e43896}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+term\+\_\+source\+\_\+language@{get\+\_\+term\+\_\+source\+\_\+language}}
 \index{get\+\_\+term\+\_\+source\+\_\+language@{get\+\_\+term\+\_\+source\+\_\+language}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -816,7 +877,7 @@ Statement attribute 'term\+Source\+Language'.
 \end{DoxyReturn}
 
 
-Definition at line 408 of file sense.\+py.
+Definition at line 409 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_abeaa946d4c063f6784b84e443a102c2c}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+translations@{get\+\_\+translations}}
 \index{get\+\_\+translations@{get\+\_\+translations}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -840,7 +901,7 @@ A Python list of filtered Equivalent attributes 'translation'.
 \end{DoxyReturn}
 
 
-Definition at line 664 of file sense.\+py.
+Definition at line 708 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a06bf005156e07ed1262d53193bb75dc3}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!get\+\_\+written\+\_\+form@{get\+\_\+written\+\_\+form}}
 \index{get\+\_\+written\+\_\+form@{get\+\_\+written\+\_\+form}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -858,7 +919,7 @@ Statement attribute 'written\+Form'.
 \end{DoxyReturn}
 
 
-Definition at line 343 of file sense.\+py.
+Definition at line 348 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a1174533bdabb24b077835ad384fb564c}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+borrowed\+\_\+word@{set\+\_\+borrowed\+\_\+word}}
 \index{set\+\_\+borrowed\+\_\+word@{set\+\_\+borrowed\+\_\+word}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -882,7 +943,7 @@ Attribute 'borrowed\+Word' is owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 302 of file sense.\+py.
+Definition at line 307 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a5a033c526c8b56d4ddf8f2f55ba45dec}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+definition@{set\+\_\+definition}}
 \index{set\+\_\+definition@{set\+\_\+definition}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -909,7 +970,7 @@ These attributes are owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 125 of file sense.\+py.
+Definition at line 130 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a99c9a5071df517bc60f33121d46c0db1}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+encyclopedic\+\_\+information@{set\+\_\+encyclopedic\+\_\+information}}
 \index{set\+\_\+encyclopedic\+\_\+information@{set\+\_\+encyclopedic\+\_\+information}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -936,7 +997,7 @@ These attributes are owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 248 of file sense.\+py.
+Definition at line 253 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a53537f8c8c41b7ad740fef272c9f8658}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+etymology@{set\+\_\+etymology}}
 \index{set\+\_\+etymology@{set\+\_\+etymology}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -960,7 +1021,7 @@ Attribute 'etymology' is owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 354 of file sense.\+py.
+Definition at line 359 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a621686bc8d18f6abd0f9a284f9c4b938}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+etymology\+\_\+comment@{set\+\_\+etymology\+\_\+comment}}
 \index{set\+\_\+etymology\+\_\+comment@{set\+\_\+etymology\+\_\+comment}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -987,7 +1048,7 @@ Attributes 'etymology\+Comment' and 'term\+Source\+Language' are owned by Statem
 \end{DoxyReturn}
 
 
-Definition at line 380 of file sense.\+py.
+Definition at line 383 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a2008e37c341cb4bb59bae4ed74bddef2}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+etymology\+\_\+gloss@{set\+\_\+etymology\+\_\+gloss}}
 \index{set\+\_\+etymology\+\_\+gloss@{set\+\_\+etymology\+\_\+gloss}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1011,7 +1072,7 @@ Attribute 'etymology\+Gloss' is owned by Statement, which is owned by Definition
 \end{DoxyReturn}
 
 
-Definition at line 419 of file sense.\+py.
+Definition at line 420 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ad869f9c4fcfca1775a74f6e1370c3476}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+etymology\+\_\+source@{set\+\_\+etymology\+\_\+source}}
 \index{set\+\_\+etymology\+\_\+source@{set\+\_\+etymology\+\_\+source}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1035,7 +1096,7 @@ Attribute 'etymology\+Source' is owned by Statement, which is owned by Definitio
 \end{DoxyReturn}
 
 
-Definition at line 445 of file sense.\+py.
+Definition at line 446 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9b8d8ea7fe946dd19e2538fe7801754a}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+example\+\_\+comment@{set\+\_\+example\+\_\+comment}}
 \index{set\+\_\+example\+\_\+comment@{set\+\_\+example\+\_\+comment}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1059,7 +1120,7 @@ Attribute 'comment' is owned by Text\+Representation, which is owned by Context.
 \end{DoxyReturn}
 
 
-Definition at line 602 of file sense.\+py.
+Definition at line 646 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a2a344e07bebb6d87f711b93ebf711fae}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+gloss@{set\+\_\+gloss}}
 \index{set\+\_\+gloss@{set\+\_\+gloss}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1086,7 +1147,7 @@ These attributes are owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 165 of file sense.\+py.
+Definition at line 170 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a4b47011de018711098677f188e973fca}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+morphology@{set\+\_\+morphology}}
 \index{set\+\_\+morphology@{set\+\_\+morphology}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1110,7 +1171,7 @@ Attribute 'morphology' is owned by Paradigm.
 \end{DoxyReturn}
 
 
-Definition at line 537 of file sense.\+py.
+Definition at line 564 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a0eadc746a37849a966279d1c35f687fe}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+note@{set\+\_\+note}}
 \index{set\+\_\+note@{set\+\_\+note}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1140,7 +1201,7 @@ These attributes are owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 193 of file sense.\+py.
+Definition at line 198 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_abe2105eb98e2fc6349fa82965ad58261}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+paradigm\+\_\+form@{set\+\_\+paradigm\+\_\+form}}
 \index{set\+\_\+paradigm\+\_\+form@{set\+\_\+paradigm\+\_\+form}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1167,7 +1228,7 @@ Attributes 'paradigm' and 'language' are owned by Paradigm.
 \end{DoxyReturn}
 
 
-Definition at line 508 of file sense.\+py.
+Definition at line 535 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ab30230d0322d864c2222ba5471f1a305}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+paradigm\+\_\+label@{set\+\_\+paradigm\+\_\+label}}
 \index{set\+\_\+paradigm\+\_\+label@{set\+\_\+paradigm\+\_\+label}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1191,7 +1252,7 @@ Attribute 'paradigm\+Label' is owned by Paradigm.
 \end{DoxyReturn}
 
 
-Definition at line 498 of file sense.\+py.
+Definition at line 525 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a0ed9917e40d5be2e90d628b55f962ee8}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+restriction@{set\+\_\+restriction}}
 \index{set\+\_\+restriction@{set\+\_\+restriction}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1218,7 +1279,31 @@ These attributes are owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 275 of file sense.\+py.
+Definition at line 280 of file sense.\+py.
+
+\hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a98dae38e1997fb9e04cf2ad8ee47591a}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+scientific\+\_\+name@{set\+\_\+scientific\+\_\+name}}
+\index{set\+\_\+scientific\+\_\+name@{set\+\_\+scientific\+\_\+name}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
+\subsubsection[{set\+\_\+scientific\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+core.\+sense.\+Sense.\+set\+\_\+scientific\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{scientific\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a98dae38e1997fb9e04cf2ad8ee47591a}
+
+
+Set scientific name. 
+
+Attribute 'scientific\+Name' is owned by Statement, which is owned by Definition. 
+\begin{DoxyParams}{Parameters}
+{\em scientific\+\_\+name} & Scientific name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1core_1_1sense_1_1_sense}{Sense} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 472 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_ad46f7e623293409ca06494b5fdeebe52}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+semantic\+\_\+domain@{set\+\_\+semantic\+\_\+domain}}
 \index{set\+\_\+semantic\+\_\+domain@{set\+\_\+semantic\+\_\+domain}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1245,7 +1330,7 @@ Attributes 'semantic\+Domain' and 'language' are owned by Subject\+Field.
 \end{DoxyReturn}
 
 
-Definition at line 630 of file sense.\+py.
+Definition at line 674 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a144abbf38354979624e6b6902bd86cb7}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+sense\+Number@{set\+\_\+sense\+Number}}
 \index{set\+\_\+sense\+Number@{set\+\_\+sense\+Number}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1296,7 +1381,7 @@ Attributes 'translation' and 'language' are owned by Equivalent.
 \end{DoxyReturn}
 
 
-Definition at line 654 of file sense.\+py.
+Definition at line 698 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_a9062f1b17bbc52c353edaf26330dcbeb}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+usage\+\_\+note@{set\+\_\+usage\+\_\+note}}
 \index{set\+\_\+usage\+\_\+note@{set\+\_\+usage\+\_\+note}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1323,7 +1408,7 @@ These attributes are owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 221 of file sense.\+py.
+Definition at line 226 of file sense.\+py.
 
 \hypertarget{classlmf_1_1src_1_1core_1_1sense_1_1_sense_adce959778963de3b295d05f81fa83390}{\index{lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}!set\+\_\+written\+\_\+form@{set\+\_\+written\+\_\+form}}
 \index{set\+\_\+written\+\_\+form@{set\+\_\+written\+\_\+form}!lmf\+::src\+::core\+::sense\+::\+Sense@{lmf\+::src\+::core\+::sense\+::\+Sense}}
@@ -1347,7 +1432,7 @@ Attribute 'written\+Form' is owned by Statement, which is owned by Definition.
 \end{DoxyReturn}
 
 
-Definition at line 328 of file sense.\+py.
+Definition at line 333 of file sense.\+py.
 
 
 

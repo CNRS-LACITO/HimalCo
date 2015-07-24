@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['paradigm_2epy',['paradigm.py',['../paradigm_8py.html',1,'']]],
-  ['picture_2epy',['picture.py',['../picture_8py.html',1,'']]]
+  ['odt_2epy',['odt.py',['../odt_8py.html',1,'']]]
 ];

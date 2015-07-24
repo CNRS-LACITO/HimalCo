@@ -1,4 +1,4 @@
-.TH "lmf.src.morphology.word_form.WordForm" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.morphology.word_form.WordForm" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -34,6 +34,14 @@ Inherits Form\&.
 .RI "def \fBget_form_representations\fP"
 .br
 .RI "\fIGet all form representations maintained by the word form\&. \fP"
+.ti -1c
+.RI "def \fBset_written_form\fP"
+.br
+.RI "\fISet written form\&. \fP"
+.ti -1c
+.RI "def \fBget_written_forms\fP"
+.br
+.RI "\fIGet all written forms\&. \fP"
 .ti -1c
 .RI "def \fBset_variant_form\fP"
 .br
@@ -180,7 +188,7 @@ Get anymacy\&.
 .PP
 
 .PP
-Definition at line 116 of file word_form\&.py\&.
+Definition at line 148 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_clusivity (self)"
 
 .PP
@@ -193,7 +201,7 @@ Get grammatical clusivity\&.
 .PP
 
 .PP
-Definition at line 150 of file word_form\&.py\&.
+Definition at line 182 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_form_representations (self)"
 
 .PP
@@ -219,7 +227,7 @@ Get grammatical number\&.
 .PP
 
 .PP
-Definition at line 133 of file word_form\&.py\&.
+Definition at line 165 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_person (self)"
 
 .PP
@@ -232,7 +240,7 @@ Get grammatical person\&.
 .PP
 
 .PP
-Definition at line 99 of file word_form\&.py\&.
+Definition at line 131 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_variant_forms (self)"
 
 .PP
@@ -245,7 +253,25 @@ A Python list of FormRepresentation attributes 'variantForm'\&.
 .PP
 
 .PP
-Definition at line 77 of file word_form\&.py\&.
+Definition at line 109 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.get_written_forms (self, script_name = \fCNone\fP)"
+
+.PP
+Get all written forms\&. This attribute is owned by Representation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIscript_name\fP If this argument is given, get written form only if written using this script\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Python list of FormRepresentation attributes 'writtenForm'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_anymacy (self, anymacy)"
 
 .PP
@@ -263,7 +289,7 @@ Set grammatical anymacy\&.
 .PP
 
 .PP
-Definition at line 105 of file word_form\&.py\&.
+Definition at line 137 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_clusivity (self, clusivity)"
 
 .PP
@@ -281,7 +307,7 @@ Set grammatical clusivity\&.
 .PP
 
 .PP
-Definition at line 139 of file word_form\&.py\&.
+Definition at line 171 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_grammaticalNumber (self, grammatical_number)"
 
 .PP
@@ -299,7 +325,7 @@ Set grammatical number\&.
 .PP
 
 .PP
-Definition at line 122 of file word_form\&.py\&.
+Definition at line 154 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_person (self, person)"
 
 .PP
@@ -317,7 +343,7 @@ Set grammatical person\&.
 .PP
 
 .PP
-Definition at line 88 of file word_form\&.py\&.
+Definition at line 120 of file word_form\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_variant_form (self, variant_form)"
 
 .PP
@@ -326,6 +352,26 @@ Set variant form\&. This attribute is owned by FormRepresentation\&.
 \fBParameters:\fP
 .RS 4
 \fIvariant_form\fP Variant form\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBWordForm\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 90 of file word_form\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.word_form\&.WordForm\&.set_written_form (self, written_form, script_name = \fCNone\fP)"
+
+.PP
+Set written form\&. This attribute is owned by Representation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwritten_form\fP Written form\&. 
+.br
+\fIscript_name\fP Script used for the written form\&. 
 .RE
 .PP
 \fBReturns:\fP

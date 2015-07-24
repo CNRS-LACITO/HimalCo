@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data',['data',['../namespacelmf_1_1src_1_1utils_1_1ipa2sampa_1_1ipa2sampa.html#a8a95155398fd80089637dc91bec08dd4',1,'lmf::src::utils::ipa2sampa::ipa2sampa']]],
   ['date',['date',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#ac6d96435547dea66e1433966098249b8',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
   ['datecoding',['dateCoding',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#a53110d17cbf0bfdcb72fb089e648aa70',1,'lmf::src::core::global_information::GlobalInformation']]],
   ['definition',['definition',['../classlmf_1_1src_1_1core_1_1definition_1_1_definition.html#a11eb38a77e7ad1f45616f1bbdc1f94b2',1,'lmf.src.core.definition.Definition.definition()'],['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a9adfd8936ecd6626cba82193e068e09e',1,'lmf.src.core.sense.Sense.definition()']]],

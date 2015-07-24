@@ -213,6 +213,57 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="52" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="52" bodyend="57"/>
       </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a7bc4d5336de970c8adf7a8cdfc5c74ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.word_form.WordForm.set_written_form</definition>
+        <argsstring></argsstring>
+        <name>set_written_form</name>
+        <briefdescription>
+<para>Set written form. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by Representation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>written_form</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Written form. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Script used for the written form. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form" kindref="compound">WordForm</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="58" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="58" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a2b3298d15f912796519e19465610fad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.word_form.WordForm.get_written_forms</definition>
+        <argsstring></argsstring>
+        <name>get_written_forms</name>
+        <briefdescription>
+<para>Get all written forms. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by Representation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If this argument is given, get written form only if written using this script. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Python list of FormRepresentation attributes &apos;writtenForm&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="78" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="78" bodyend="89"/>
+      </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa4010d675af6deb25bf95e7aa54c3f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
         <definition>def lmf.src.morphology.word_form.WordForm.set_variant_form</definition>
@@ -233,7 +284,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="58" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="58" bodyend="76"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="90" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="90" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a983151c5529388c7a3002b3239a98b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -247,7 +298,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="77" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="77" bodyend="87"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="109" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="109" bodyend="119"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aae046a3403c0fe9ae8f35289878cba67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -269,7 +320,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="88" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="88" bodyend="98"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="120" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="120" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a480a6988b8ca2febc53b5d738ae12fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -283,7 +334,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="99" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="99" bodyend="104"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="131" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="131" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a77770e33a70efbf55aa2279c2dbb1112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -305,7 +356,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="105" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="105" bodyend="115"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="137" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="137" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a15a5458e866a9bc063766393f1724618" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -319,7 +370,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="116" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="116" bodyend="121"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="148" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="148" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afba8a8bff098989e06c9fce30e4c8163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -341,7 +392,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="122" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="122" bodyend="132"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="154" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="154" bodyend="164"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ae1d604cd7edc889a347d9ce41df150c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -355,7 +406,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="133" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="133" bodyend="138"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="165" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="165" bodyend="170"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a711b4b9fb46e15d8d64c831dd3c73f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -377,7 +428,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="139" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="139" bodyend="149"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="171" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="171" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1af7009607358c6be4f37b7708193eb2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -391,7 +442,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="150" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="150" bodyend="155"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="182" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="182" bodyend="187"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -420,7 +471,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="12" bodyend="155"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/word_form.py" bodystart="12" bodyend="187"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa7b79f6c8c3bd98e57b7d2bc60a9b88c" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afcc4ec0d271e48a7f35920a1e91aa9b9" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>__init__</name></member>
@@ -436,6 +487,7 @@
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ae1d604cd7edc889a347d9ce41df150c6" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>get_grammaticalNumber</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a480a6988b8ca2febc53b5d738ae12fac" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>get_person</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a983151c5529388c7a3002b3239a98b98" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>get_variant_forms</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a2b3298d15f912796519e19465610fad0" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>get_written_forms</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ab6f9abda4baef6ac9e61ef377c532279" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>grammaticalGender</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afa022505f197952b8cf9229e065089c2" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>grammaticalNumber</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a982fc33af45a08aa5a039dc4701c3689" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>person</name></member>
@@ -444,6 +496,7 @@
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1afba8a8bff098989e06c9fce30e4c8163" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>set_grammaticalNumber</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aae046a3403c0fe9ae8f35289878cba67" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>set_person</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aa4010d675af6deb25bf95e7aa54c3f15" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>set_variant_form</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a7bc4d5336de970c8adf7a8cdfc5c74ba" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>set_written_form</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1aaf6dd6658e2e9014ea0490d0edb6cec8" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>tense</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1a47aea97a4bbd8cca9624b0143f639716" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>verbFormMood</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_1ac08b72f6837815d9d11d3cb0a36ed932" prot="public" virt="non-virtual"><scope>lmf::src::morphology::word_form::WordForm</scope><name>voice</name></member>

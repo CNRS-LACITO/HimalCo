@@ -1,4 +1,4 @@
-.TH "lmf.src.mrd.context.Context" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.mrd.context.Context" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -55,11 +55,15 @@ lmf.src.mrd.context.Context \-
 .ti -1c
 .RI "def \fBset_written_form\fP"
 .br
-.RI "\fISet text representation written form and language\&. \fP"
+.RI "\fISet text representation written form, language and script\&. \fP"
 .ti -1c
 .RI "def \fBset_comment\fP"
 .br
 .RI "\fISet text representation comment\&. \fP"
+.ti -1c
+.RI "def \fBget_speakerID\fP"
+.br
+.RI "\fIGet related speaker identifier\&. \fP"
 .ti -1c
 .RI "def \fBget_speaker\fP"
 .br
@@ -89,10 +93,15 @@ lmf.src.mrd.context.Context \-
 Definition at line 10 of file context\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.__init__ (self)"
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.__init__ (self, speakerID = \fCNone\fP)"
 
 .PP
 Constructor\&. \fBContext\fP instances are owned by Sense\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIspeakerID\fP Related speaker identifier\&. If not provided, default value is None\&. 
+.RE
 .PP
 \fBReturns:\fP
 .RS 4
@@ -107,7 +116,7 @@ Definition at line 13 of file context\&.py\&.
 .PP
 Destructor\&. Release TextRepresentation instances\&. 
 .PP
-Definition at line 29 of file context\&.py\&.
+Definition at line 30 of file context\&.py\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.add_text_representation (self, text_representation)"
@@ -127,7 +136,7 @@ Add a text representation to the context\&.
 .PP
 
 .PP
-Definition at line 64 of file context\&.py\&.
+Definition at line 65 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.create_text_representation (self)"
 
 .PP
@@ -140,8 +149,8 @@ TextRepresentation instance\&.
 .PP
 
 .PP
-Definition at line 58 of file context\&.py\&.
-.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.find_written_forms (self, language = \fCNone\fP)"
+Definition at line 59 of file context\&.py\&.
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.find_written_forms (self, language = \fCNone\fP, script_name = \fCNone\fP)"
 
 .PP
 Find written forms\&. This attribute is owned by TextRepresentation\&. 
@@ -149,6 +158,8 @@ Find written forms\&. This attribute is owned by TextRepresentation\&.
 \fBParameters:\fP
 .RS 4
 \fIlanguage\fP If given, the language to consider to retrieve the written form\&. 
+.br
+\fIscript_name\fP If given, the script to consider to retrieve the written form\&. 
 .RE
 .PP
 \fBReturns:\fP
@@ -158,7 +169,7 @@ A Python list of found TextRepresentation attributes 'writtenForm'\&.
 .PP
 
 .PP
-Definition at line 85 of file context\&.py\&.
+Definition at line 86 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_comments (self)"
 
 .PP
@@ -171,7 +182,7 @@ A Python list of found TextRepresentation attributes 'comment'\&.
 .PP
 
 .PP
-Definition at line 97 of file context\&.py\&.
+Definition at line 100 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_last_text_representation (self)"
 
 .PP
@@ -184,7 +195,7 @@ The last element of \fBContext\fP attribute 'text_representation'\&.
 .PP
 
 .PP
-Definition at line 78 of file context\&.py\&.
+Definition at line 79 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_speaker (self)"
 
 .PP
@@ -197,7 +208,20 @@ Get speaker\&.
 .PP
 
 .PP
-Definition at line 138 of file context\&.py\&.
+Definition at line 150 of file context\&.py\&.
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_speakerID (self)"
+
+.PP
+Get related speaker identifier\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBContext\fP attribute 'targets'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 144 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_text_representations (self)"
 
 .PP
@@ -210,7 +234,7 @@ A Python list of text representations\&.
 .PP
 
 .PP
-Definition at line 72 of file context\&.py\&.
+Definition at line 73 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.get_type (self)"
 
 .PP
@@ -223,7 +247,7 @@ Get context type\&.
 .PP
 
 .PP
-Definition at line 52 of file context\&.py\&.
+Definition at line 53 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.set_comment (self, comment)"
 
 .PP
@@ -241,7 +265,7 @@ Set text representation comment\&. Attribute 'comment' is owned by TextRepresent
 .PP
 
 .PP
-Definition at line 122 of file context\&.py\&.
+Definition at line 128 of file context\&.py\&.
 .SS "def lmf\&.src\&.mrd\&.context\&.Context\&.set_type (self, type)"
 
 .PP
@@ -259,17 +283,19 @@ Set context type\&.
 .PP
 
 .PP
-Definition at line 39 of file context\&.py\&.
-.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.set_written_form (self, written_form, language = \fCNone\fP)"
+Definition at line 40 of file context\&.py\&.
+.SS "def lmf\&.src\&.mrd\&.context\&.Context\&.set_written_form (self, written_form, language = \fCNone\fP, script_name = \fCNone\fP)"
 
 .PP
-Set text representation written form and language\&. Attributes 'writtenForm' and 'language' are owned by TextRepresentation\&. 
+Set text representation written form, language and script\&. Attributes 'writtenForm', 'language' and 'scriptName' are owned by TextRepresentation\&. 
 .PP
 \fBParameters:\fP
 .RS 4
 \fIwritten_form\fP The written form to set\&. 
 .br
 \fIlanguage\fP Language of the written form\&. 
+.br
+\fIscript_name\fP The name of the script used to write the form, e\&.g\&. devanagari\&. 
 .RE
 .PP
 \fBReturns:\fP
@@ -279,27 +305,27 @@ Set text representation written form and language\&. Attributes 'writtenForm' an
 .PP
 
 .PP
-Definition at line 108 of file context\&.py\&.
+Definition at line 111 of file context\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.mrd\&.context\&.Context\&.language"
 
 .PP
-Definition at line 18 of file context\&.py\&.
+Definition at line 19 of file context\&.py\&.
 .SS "lmf\&.src\&.mrd\&.context\&.Context\&.targets"
 
 .PP
-Definition at line 24 of file context\&.py\&.
+Definition at line 25 of file context\&.py\&.
 .SS "lmf\&.src\&.mrd\&.context\&.Context\&.text_representation"
 
 .PP
 TextRepresentation instances are owned by \fBContext\fP There is zero to many TextRepresentation instances per \fBContext\fP\&. 
 .PP
-Definition at line 22 of file context\&.py\&.
+Definition at line 23 of file context\&.py\&.
 .SS "lmf\&.src\&.mrd\&.context\&.Context\&.type"
 
 .PP
-Definition at line 19 of file context\&.py\&.
+Definition at line 20 of file context\&.py\&.
 
 .SH "Author"
 .PP 

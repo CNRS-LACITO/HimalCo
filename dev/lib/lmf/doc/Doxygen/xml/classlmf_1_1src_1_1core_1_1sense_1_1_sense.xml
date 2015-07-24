@@ -188,11 +188,11 @@
         <briefdescription>
 <para>Get sense number. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> attribute &apos;senseNumber&apos;. </para></simplesect>
+<para>If True, return a numerical value. <simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> attribute &apos;senseNumber&apos;. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="80" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="80" bodyend="85"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="80" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="80" bodyend="90"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a5923d173a0ad52642ccdc50d4611fdc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -206,7 +206,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="86" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="86" bodyend="91"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="91" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="91" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a28ac5eef8b1d952ee565792e56a1b748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -228,7 +228,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="92" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="92" bodyend="99"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="97" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="97" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a8bc5ca5fd053360b3150a13fa7787528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -242,7 +242,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="100" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="100" bodyend="105"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="105" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="105" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9b51914a3abc0ebfd57501a665a69eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -256,7 +256,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="106" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="106" bodyend="112"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="111" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="111" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1aef07a87a7893b5daea9b6a5a84220cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -278,7 +278,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="113" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="113" bodyend="124"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="118" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="118" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a5a033c526c8b56d4ddf8f2f55ba45dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -307,7 +307,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="125" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="125" bodyend="152"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="130" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="130" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a784fe796429c439fadd5e070954d70b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -329,7 +329,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="153" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="153" bodyend="164"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="158" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="158" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a2a344e07bebb6d87f711b93ebf711fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -358,7 +358,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="165" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="165" bodyend="192"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="170" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="170" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0eadc746a37849a966279d1c35f687fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -394,7 +394,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="193" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="193" bodyend="209"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="198" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="198" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1acc1067bd6d9a28ac2719d8d442a8d7bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -416,7 +416,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="210" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="210" bodyend="220"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="215" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="215" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9062f1b17bbc52c353edaf26330dcbeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -445,7 +445,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="221" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="221" bodyend="236"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="226" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="226" bodyend="241"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af4a689fe644baaf594abb4d9a1b0ca55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -467,7 +467,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="237" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="237" bodyend="247"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="242" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="242" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a99c9a5071df517bc60f33121d46c0db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -496,7 +496,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="248" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="248" bodyend="263"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="253" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="253" bodyend="268"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a7f3f74ce33b047118343b29c4a5196ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -518,7 +518,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="264" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="264" bodyend="274"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="269" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="269" bodyend="279"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0ed9917e40d5be2e90d628b55f962ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -547,7 +547,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="275" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="275" bodyend="290"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="280" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="280" bodyend="295"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad2997077bd0e68f4af1542ade3e64417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -569,7 +569,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="291" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="291" bodyend="301"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="296" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="296" bodyend="306"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a1174533bdabb24b077835ad384fb564c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -591,7 +591,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="302" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="302" bodyend="316"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="307" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="307" bodyend="321"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a228d6a83808888d3805c06657c8f9153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -605,7 +605,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="317" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="317" bodyend="327"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="322" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="322" bodyend="332"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adce959778963de3b295d05f81fa83390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -627,7 +627,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="328" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="328" bodyend="342"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="333" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="333" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a06bf005156e07ed1262d53193bb75dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -641,7 +641,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="343" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="343" bodyend="353"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="348" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="348" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a53537f8c8c41b7ad740fef272c9f8658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -663,7 +663,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="354" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="354" bodyend="368"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="359" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="359" bodyend="373"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae41863c9c5fdf94f3f29c13d6b1fe1cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -673,11 +673,11 @@
         <briefdescription>
 <para>Get etymology. </para>        </briefdescription>
         <detaileddescription>
-<para>This attribute is owned by Statement, which is owned by Definition. <simplesect kind="return"><para>Statement attribute &apos;etymology&apos;. </para></simplesect>
+<para>This attribute is owned by Statement, which is owned by Definition. <simplesect kind="return"><para>The first found Statement attribute &apos;etymology&apos;. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="369" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="369" bodyend="379"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="374" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="374" bodyend="382"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a621686bc8d18f6abd0f9a284f9c4b938" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -706,7 +706,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="380" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="380" bodyend="395"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="383" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="383" bodyend="398"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a60c30c7573483fd9d987c8c439688213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -724,11 +724,11 @@
 <para>The language of the etymology comment to retrieve. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Statement attribute &apos;etymologyComment&apos;. </para></simplesect>
+<simplesect kind="return"><para>The first found Statement attribute &apos;etymologyComment&apos;. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="396" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="396" bodyend="407"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="399" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="399" bodyend="408"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab6f704b6dd461728169ffb3c74e43896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -742,7 +742,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="408" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="408" bodyend="418"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="409" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="409" bodyend="419"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a2008e37c341cb4bb59bae4ed74bddef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -764,7 +764,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="419" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="419" bodyend="433"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="420" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="420" bodyend="434"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adb7c6fd2e19771361a94025df3343a58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -778,7 +778,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="434" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="434" bodyend="444"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="435" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="435" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad869f9c4fcfca1775a74f6e1370c3476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -800,7 +800,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="445" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="445" bodyend="459"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="446" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="446" bodyend="460"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a58b3a4780ebc7fec50bd5088fef02d87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -814,7 +814,43 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="460" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="460" bodyend="470"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="461" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="461" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a98dae38e1997fb9e04cf2ad8ee47591a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.sense.Sense.set_scientific_name</definition>
+        <argsstring></argsstring>
+        <name>set_scientific_name</name>
+        <briefdescription>
+<para>Set scientific name. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attribute &apos;scientificName&apos; is owned by Statement, which is owned by Definition. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scientific_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scientific name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="472" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="472" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adeaf450f92e0f7726c1152f4d8b1944d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.sense.Sense.get_scientific_name</definition>
+        <argsstring></argsstring>
+        <name>get_scientific_name</name>
+        <briefdescription>
+<para>Get scientific name. </para>        </briefdescription>
+        <detaileddescription>
+<para>This attribute is owned by Statement, which is owned by Definition. <simplesect kind="return"><para>Statement attribute &apos;scientificName&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="487" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="487" bodyend="497"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ac61f3aadccb06f636aad9891b3bba53e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -828,7 +864,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="471" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="471" bodyend="476"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="498" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="498" bodyend="503"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae67664c5b120e407e5d0543ad5bdfb3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -850,7 +886,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="477" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="477" bodyend="484"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="504" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="504" bodyend="511"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a41112d70652f5412eb71eacad72a135a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -864,7 +900,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="485" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="485" bodyend="490"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="512" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="512" bodyend="517"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abdb32f5050397be1f2147b769fc97f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -878,7 +914,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="491" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="491" bodyend="497"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="518" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="518" bodyend="524"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab30230d0322d864c2222ba5471f1a305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -900,7 +936,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="498" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="498" bodyend="507"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="525" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="525" bodyend="534"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abe2105eb98e2fc6349fa82965ad58261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -929,7 +965,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="508" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="508" bodyend="536"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="535" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="535" bodyend="563"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a4b47011de018711098677f188e973fca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -951,7 +987,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="537" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="537" bodyend="555"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="564" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="564" bodyend="582"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a14ced3b1dd8115d72283d6708d3ce0b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -961,11 +997,19 @@
         <briefdescription>
 <para>Create a context and add it to the list. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Context instance. </para></simplesect>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context reference to set. If not provided, default value is None. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Context instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="556" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="556" bodyend="563"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="583" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="583" bodyend="591"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a50f6e0ba88d00c3315b91d3787aa9085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -979,7 +1023,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="564" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="564" bodyend="569"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="592" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="592" bodyend="597"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af9c1b79eed28bd28279719bdf578d218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -993,7 +1037,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="570" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="570" bodyend="576"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="598" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="598" bodyend="604"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a61c046aabce91368de9129dd83c2bb20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1001,9 +1045,31 @@
         <argsstring></argsstring>
         <name>create_example</name>
         <briefdescription>
-<para>Create a Context instance and set its written form and language. </para>        </briefdescription>
+<para>Create a Context instance and set its reference. </para>        </briefdescription>
         <detaileddescription>
-<para>Attributes &apos;writtenForm&apos; and &apos;language&apos; are owned by TextRepresentation, which is owned by Context. <parameterlist kind="param"><parameteritem>
+<para>Attribute &apos;targets&apos; is owned by Context. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reference</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The example reference to set. If not provided, default value is None. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="605" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="605" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ac901c4bce7721237a2e2c58bf7a11f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.sense.Sense.create_and_add_example</definition>
+        <argsstring></argsstring>
+        <name>create_and_add_example</name>
+        <briefdescription>
+<para>Set written form, language and script of a new Context instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>Attributes &apos;writtenForm&apos;, &apos;language&apos; and &apos;scriptName&apos; are owned by TextRepresentation, which is owned by Context. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>written_form</parametername>
 </parameternamelist>
@@ -1017,12 +1083,19 @@
 <parameterdescription>
 <para>Language used for the written form. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the script used to write the example, e.g. devanagari. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="577" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="577" bodyend="586"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="614" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="614" bodyend="629"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab84c8d7a1cdcce014f99e0c1a1b0aedd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1030,9 +1103,9 @@
         <argsstring></argsstring>
         <name>add_example</name>
         <briefdescription>
-<para>Set written form and language of an existing Context instance. </para>        </briefdescription>
+<para>Set written form, language and script of an existing Context instance. </para>        </briefdescription>
         <detaileddescription>
-<para>Attributes &apos;writtenForm&apos; and &apos;language&apos; are owned by TextRepresentation, which is owned by Context. <parameterlist kind="param"><parameteritem>
+<para>Attributes &apos;writtenForm&apos;, &apos;language&apos; and &apos;scriptName&apos; are owned by TextRepresentation, which is owned by Context. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>written_form</parametername>
 </parameternamelist>
@@ -1046,12 +1119,19 @@
 <parameterdescription>
 <para>Language used for the written form. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the script used to write the example, e.g. devanagari. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense" kindref="compound">Sense</ref> instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="587" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="587" bodyend="601"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="630" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="630" bodyend="645"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9b8d8ea7fe946dd19e2538fe7801754a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1073,7 +1153,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="602" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="602" bodyend="615"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="646" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="646" bodyend="659"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a07d199aca70cf878cb2a71af7a96fa4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1087,7 +1167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="616" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="616" bodyend="623"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="660" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="660" bodyend="667"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a907267d97926d04d20aaeefe475753d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1101,7 +1181,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="624" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="624" bodyend="629"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="668" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="668" bodyend="673"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad46f7e623293409ca06494b5fdeebe52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1130,7 +1210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="630" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="630" bodyend="639"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="674" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="674" bodyend="683"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a6004e31b078cad1d029283c4e3fedfc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1144,7 +1224,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="640" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="640" bodyend="647"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="684" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="684" bodyend="691"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad01163c4440025fe86e4c00734aa8894" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1158,7 +1238,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="648" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="648" bodyend="653"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="692" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="692" bodyend="697"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a97469fcc2116bb7b0dbf4826161512bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1187,7 +1267,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="654" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="654" bodyend="663"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="698" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="698" bodyend="707"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abeaa946d4c063f6784b84e443a102c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -1209,14 +1289,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="664" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="664" bodyend="675"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="708" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="708" bodyend="719"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Sense is a class representing one meaning of a lexical entry. The Sense class allows for hierarchical senses in that a sense may be more specific than another sense of the same lexical entry.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="12" bodyend="675"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" line="12" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/sense.py" bodystart="12" bodyend="719"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a3cc439d56624626aaec6588dbcad5b58" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1af0279b132d98c7b49141350ce34ea53b" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>__init__</name></member>
@@ -1226,6 +1306,7 @@
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ae2b3da0233748116d4415cc107b6e4c2" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>context</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a14ced3b1dd8115d72283d6708d3ce0b5" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_and_add_context</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a6004e31b078cad1d029283c4e3fedfc2" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_and_add_equivalent</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ac901c4bce7721237a2e2c58bf7a11f2b" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_and_add_example</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a07d199aca70cf878cb2a71af7a96fa4c" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_and_add_subject_field</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a5923d173a0ad52642ccdc50d4611fdc9" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_definition</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a61c046aabce91368de9129dd83c2bb20" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>create_example</name></member>
@@ -1251,6 +1332,7 @@
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a9b51914a3abc0ebfd57501a665a69eb2" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_last_definition</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abdb32f5050397be1f2147b769fc97f6d" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_last_paradigm</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a41112d70652f5412eb71eacad72a135a" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_paradigms</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1adeaf450f92e0f7726c1152f4d8b1944d" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_scientific_name</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0c1c636cbbcb1fd1e98e9f5058464d73" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_senseNumber</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a907267d97926d04d20aaeefe475753d8" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_subject_fields</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab6f704b6dd461728169ffb3c74e43896" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>get_term_source_language</name></member>
@@ -1274,6 +1356,7 @@
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1abe2105eb98e2fc6349fa82965ad58261" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_paradigm_form</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ab30230d0322d864c2222ba5471f1a305" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_paradigm_label</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a0ed9917e40d5be2e90d628b55f962ee8" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_restriction</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a98dae38e1997fb9e04cf2ad8ee47591a" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_scientific_name</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1ad46f7e623293409ca06494b5fdeebe52" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_semantic_domain</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a144abbf38354979624e6b6902bd86cb7" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_senseNumber</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1sense_1_1_sense_1a97469fcc2116bb7b0dbf4826161512bd" prot="public" virt="non-virtual"><scope>lmf::src::core::sense::Sense</scope><name>set_translation</name></member>

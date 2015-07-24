@@ -1,4 +1,4 @@
-.TH "lmf.src.wrapper" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.wrapper" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,7 +10,7 @@ lmf.src.wrapper \-
 
 .in +1c
 .ti -1c
-.RI "def \fBwrapper\fP"
+.RI "def \fBwrapper_rw\fP"
 .br
 .RI "\fIWrapper function that calls another function, restoring normal behavior on error\&. \fP"
 .ti -1c
@@ -18,6 +18,12 @@ lmf.src.wrapper \-
 .br
 .ti -1c
 .RI "def \fBread_xml_lmf\fP"
+.br
+.ti -1c
+.RI "def \fBread_sort_order\fP"
+.br
+.ti -1c
+.RI "def \fBread_config\fP"
 .br
 .ti -1c
 .RI "def \fBwrite_mdf\fP"
@@ -32,17 +38,33 @@ lmf.src.wrapper \-
 .RI "def \fBwrite_doc\fP"
 .br
 .in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBlexical_resource\fP = None"
+.br
+.RI "\fIModule variable\&. \fP"
+.in -1c
 .SH "Function Documentation"
 .PP 
+.SS "def lmf\&.src\&.wrapper\&.read_config (args, kwds)"
+
+.PP
+Definition at line 113 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.read_mdf (args, kwds)"
 
 .PP
-Definition at line 62 of file wrapper\&.py\&.
+Definition at line 69 of file wrapper\&.py\&.
+.SS "def lmf\&.src\&.wrapper\&.read_sort_order (args, kwds)"
+
+.PP
+Definition at line 108 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.read_xml_lmf (args, kwds)"
 
 .PP
-Definition at line 68 of file wrapper\&.py\&.
-.SS "def lmf\&.src\&.wrapper\&.wrapper (func, args, kwds)"
+Definition at line 92 of file wrapper\&.py\&.
+.SS "def lmf\&.src\&.wrapper\&.wrapper_rw (func, args, kwds)"
 
 .PP
 Wrapper function that calls another function, restoring normal behavior on error\&. 
@@ -58,23 +80,31 @@ Wrapper function that calls another function, restoring normal behavior on error
 .PP
 
 .PP
-Definition at line 23 of file wrapper\&.py\&.
+Definition at line 27 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.write_doc (args, kwds)"
 
 .PP
-Definition at line 102 of file wrapper\&.py\&.
+Definition at line 142 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.write_mdf (args, kwds)"
 
 .PP
-Definition at line 78 of file wrapper\&.py\&.
+Definition at line 118 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.write_tex (args, kwds)"
 
 .PP
-Definition at line 93 of file wrapper\&.py\&.
+Definition at line 133 of file wrapper\&.py\&.
 .SS "def lmf\&.src\&.wrapper\&.write_xml_lmf (args, kwds)"
 
 .PP
-Definition at line 84 of file wrapper\&.py\&.
+Definition at line 124 of file wrapper\&.py\&.
+.SH "Variable Documentation"
+.PP 
+.SS "lmf\&.src\&.wrapper\&.lexical_resource = None"
+
+.PP
+Module variable\&. 
+.PP
+Definition at line 25 of file wrapper\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for LMF library from the source code\&.

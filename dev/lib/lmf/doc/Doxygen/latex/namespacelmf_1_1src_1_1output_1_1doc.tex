@@ -14,7 +14,11 @@ def \hyperlink{namespacelmf_1_1src_1_1output_1_1doc_a38e0eb27e45ce05d6957ed8ce59
 \subsubsection[{doc\+\_\+write}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+output.\+doc.\+doc\+\_\+write (
 \begin{DoxyParamCaption}
 \item[{}]{object, }
-\item[{}]{filename}
+\item[{}]{filename, }
+\item[{}]{items = {\ttfamily lambda~lexical\+\_\+entry\+:~lexical\+\_\+entry.get\+\_\+lexeme()}, }
+\item[{}]{sort\+\_\+order = {\ttfamily None}, }
+\item[{}]{paradigms = {\ttfamily False}, }
+\item[{}]{reverse = {\ttfamily False}}
 \end{DoxyParamCaption}
 )}}\label{namespacelmf_1_1src_1_1output_1_1doc_a38e0eb27e45ce05d6957ed8ce597cadf}
 
@@ -27,8 +31,12 @@ Write a document file.
 \hline
 {\em filename} & The name of the document file to write with full path, for instance 'user/output.\+doc'. \\
 \hline
+{\em items} & Lambda function giving the item to sort. Default value is 'lambda lexical\+\_\+entry\+: lexical\+\_\+entry.\+get\+\_\+lexeme()', which means that the items to sort are lexemes. \\
+\hline
+{\em sort\+\_\+order} & Python list. Default value is 'None', which means that the document output is alphabetically ordered. \\
+\hline
 \end{DoxyParams}
 
 
-Definition at line 9 of file doc.\+py.
+Definition at line 14 of file doc.\+py.
 

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespaceuid" kind="namespace">
+    <compoundname>uid</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceuid_1a4039208c718ac9ab3d1a34f9c46376e5" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>= OptionParser()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1a72496a499a950e7763f54daad4112644" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid.options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <initializer>= parser.parse_args()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1ad8ae4f6e71a89183bdd76ea3bb1d4b77" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid::in_file</definition>
+        <argsstring></argsstring>
+        <name>in_file</name>
+        <initializer>= open(options.input, &quot;r&quot;, encoding=&apos;utf-8&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1abafbdda8c90e0befa2cee03e11a2ee22" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid::out_file</definition>
+        <argsstring></argsstring>
+        <name>out_file</name>
+        <initializer>= open(options.output, &quot;w&quot;, encoding=&apos;utf-8&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1af23356e75a458bc84f8a06c4c25666d7" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string uid::EOL</definition>
+        <argsstring></argsstring>
+        <name>EOL</name>
+        <initializer>= &apos;\n&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1a37cd778413aaba0d0e0610ffc35646a2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string uid.pattern</definition>
+        <argsstring></argsstring>
+        <name>pattern</name>
+        <initializer>= r&quot;^\\(\w{2,3}) ?(.*)$&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="34" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1aa8bd0ffc225dc8124099330d1014bf66" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string uid::lx</definition>
+        <argsstring></argsstring>
+        <name>lx</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="35" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1a542decb494fb3ac0da8886ab033622ad" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string uid::mkr</definition>
+        <argsstring></argsstring>
+        <name>mkr</name>
+        <initializer>= &quot;lx&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="36" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1ae6f932fe5ea3081fc75207a773dc3c0f" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list uid::sf</definition>
+        <argsstring></argsstring>
+        <name>sf</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="37" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1ade7b1be6934c8984615916e73a81d131" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string uid::hm</definition>
+        <argsstring></argsstring>
+        <name>hm</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="38" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1a1baa2d4ae8ea6e7427b911466184d548" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid.result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <initializer>= re.search(<ref refid="namespaceuid_1a37cd778413aaba0d0e0610ffc35646a2" kindref="member">pattern</ref>, line)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="40" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceuid_1a41f0a6fb6938bc67f4ab035ac008504c" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple uid.uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <initializer>= uni2sampa(<ref refid="namespaceuid_1aa8bd0ffc225dc8124099330d1014bf66" kindref="member">lx</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="52" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/utils/uid/uid.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

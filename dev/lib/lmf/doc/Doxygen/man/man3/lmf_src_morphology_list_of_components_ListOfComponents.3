@@ -1,4 +1,4 @@
-.TH "lmf.src.morphology.list_of_components.ListOfComponents" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.morphology.list_of_components.ListOfComponents" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,6 +17,14 @@ lmf.src.morphology.list_of_components.ListOfComponents \-
 .RI "def \fB__del__\fP"
 .br
 .RI "\fIDestructor\&. \fP"
+.ti -1c
+.RI "def \fBcreate_and_add_component\fP"
+.br
+.RI "\fICreate and add a component to the list\&. \fP"
+.ti -1c
+.RI "def \fBget_components\fP"
+.br
+.RI "\fIGet the list of components\&. \fP"
 .in -1c
 .SS "Public Attributes"
 
@@ -37,7 +45,7 @@ lmf.src.morphology.list_of_components.ListOfComponents \-
 .PP
  
 .PP
-Definition at line 6 of file list_of_components\&.py\&.
+Definition at line 8 of file list_of_components\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.morphology\&.list_of_components\&.ListOfComponents\&.__init__ (self)"
@@ -52,13 +60,48 @@ A \fBListOfComponents\fP instance\&.
 .PP
 
 .PP
-Definition at line 9 of file list_of_components\&.py\&.
+Definition at line 11 of file list_of_components\&.py\&.
 .SS "def lmf\&.src\&.morphology\&.list_of_components\&.ListOfComponents\&.__del__ (self)"
 
 .PP
 Destructor\&. Release Component instances\&. 
 .PP
-Definition at line 18 of file list_of_components\&.py\&.
+Definition at line 20 of file list_of_components\&.py\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "def lmf\&.src\&.morphology\&.list_of_components\&.ListOfComponents\&.create_and_add_component (self, position, lexeme)"
+
+.PP
+Create and add a component to the list\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP The position of the component in the multiword expression\&. 
+.br
+\fIlexeme\fP Related lexeme\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBListOfComponents\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file list_of_components\&.py\&.
+.SS "def lmf\&.src\&.morphology\&.list_of_components\&.ListOfComponents\&.get_components (self)"
+
+.PP
+Get the list of components\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBListOfComponents\fP attribute 'component'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file list_of_components\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.morphology\&.list_of_components\&.ListOfComponents\&.component"
@@ -66,7 +109,7 @@ Definition at line 18 of file list_of_components\&.py\&.
 .PP
 Component instances are owned by \fBListOfComponents\fP There are two or more Component instances per \fBListOfComponents\fP\&. 
 .PP
-Definition at line 16 of file list_of_components\&.py\&.
+Definition at line 18 of file list_of_components\&.py\&.
 
 .SH "Author"
 .PP 

@@ -1,4 +1,4 @@
-.TH "lmf.src.common.range" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.common.range" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -93,7 +93,7 @@ lmf.src.common.range \-
 .PP
 Possible values allowed for LMF anymacy WordForm attribute\&. 
 .PP
-Definition at line 92 of file range\&.py\&.
+Definition at line 110 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.clusivity_range"
 \fBInitial value:\fP
 .PP
@@ -106,7 +106,7 @@ Definition at line 92 of file range\&.py\&.
 .PP
 Possible values allowed for LMF clusivity WordForm attribute\&. 
 .PP
-Definition at line 99 of file range\&.py\&.
+Definition at line 117 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.degree_range"
 \fBInitial value:\fP
 .PP
@@ -120,7 +120,7 @@ Definition at line 99 of file range\&.py\&.
 .PP
 Possible values allowed for LMF degree WordForm attribute\&. 
 .PP
-Definition at line 134 of file range\&.py\&.
+Definition at line 152 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.grammaticalGender_range"
 \fBInitial value:\fP
 .PP
@@ -135,7 +135,7 @@ Definition at line 134 of file range\&.py\&.
 .PP
 Possible values allowed for LMF grammatical gender WordForm attribute\&. 
 .PP
-Definition at line 77 of file range\&.py\&.
+Definition at line 95 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.grammaticalNumber_range"
 \fBInitial value:\fP
 .PP
@@ -153,7 +153,7 @@ Definition at line 77 of file range\&.py\&.
 .PP
 Possible values allowed for LMF grammatical number WordForm attribute\&. 
 .PP
-Definition at line 66 of file range\&.py\&.
+Definition at line 84 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.mediaType_range"
 \fBInitial value:\fP
 .PP
@@ -172,7 +172,7 @@ Definition at line 66 of file range\&.py\&.
 .PP
 Possible values allowed for media type Material attribute\&. 
 .PP
-Definition at line 176 of file range\&.py\&.
+Definition at line 195 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.noteType_range"
 \fBInitial value:\fP
 .PP
@@ -202,7 +202,7 @@ Definition at line 176 of file range\&.py\&.
 .PP
 Possible values allowed for LMF note type Statement attribute\&. 
 .PP
-Definition at line 43 of file range\&.py\&.
+Definition at line 61 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.paradigmLabel_range"
 \fBInitial value:\fP
 .PP
@@ -210,8 +210,8 @@ Definition at line 43 of file range\&.py\&.
 1 = set([
 2     "lexicalized affix",
 3     "conjugation class",
-4     "theme of the past",
-5     "comitative",
+4     "past stem",
+5     "comitative", "COM", # comitative (Leipzig)
 6     "construction",
 7     "directional",
 8     "irregularity",
@@ -221,41 +221,9 @@ Definition at line 43 of file range\&.py\&.
 .PP
 Possible values allowed for paradigm label Paradigm attribute\&. 
 .PP
-Definition at line 156 of file range\&.py\&.
+Definition at line 175 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.partOfSpeech_range"
-\fBInitial value:\fP
-.PP
-.nf
-1 = set([
-2     "adjective",
-3     "adposition",
-4     "adverb",
-5     "conjunction",
-6     "determiner",
-7     "interjection",
-8     "noun",
-9     "numeral",
-10     "particle",
-11     "pronoun",
-12     "verb",
-13     "ideophone",
-14     "transitive verb",
-15     "intransitive verb",
-16     "reflexive verb",
-17     "negation",
-18     "impersonal verb",
-19     "classifier",
-20     "preposition",
-21     "bitransistive verb",
-22     "affix",
-23     "possessive pronouns",
-24     "particle",
-25     "onomatope",
-26     "function word",
-27     "stative intransitive verb",
-28     "linker"
-29 ])
-.fi
+
 .PP
 Possible values allowed for LMF part of speech LexicalEntry attribute\&. 
 .PP
@@ -273,7 +241,7 @@ Definition at line 4 of file range\&.py\&.
 .PP
 Possible values allowed for LMF grammatical person WordForm attribute\&. 
 .PP
-Definition at line 85 of file range\&.py\&.
+Definition at line 103 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.quality_range"
 \fBInitial value:\fP
 .PP
@@ -289,7 +257,7 @@ Definition at line 85 of file range\&.py\&.
 .PP
 Possible values allowed for quality Audio attribute\&. 
 .PP
-Definition at line 188 of file range\&.py\&.
+Definition at line 207 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.semanticRelation_range"
 \fBInitial value:\fP
 .PP
@@ -302,16 +270,17 @@ Definition at line 188 of file range\&.py\&.
 6     "subentry",
 7     "main entry",
 8     "simple link",
-9     "derived form",
-10     "root",
-11     "stem",
-12     "collocation"
-13 ])
+9     "complex predicate",
+10     "derived form",
+11     "root",
+12     "stem",
+13     "collocation"
+14 ])
 .fi
 .PP
 Possible values allowed for semantic relation RelatedForm attribute\&. 
 .PP
-Definition at line 141 of file range\&.py\&.
+Definition at line 159 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.tense_range"
 \fBInitial value:\fP
 .PP
@@ -326,7 +295,7 @@ Definition at line 141 of file range\&.py\&.
 .PP
 Possible values allowed for LMF grammatical tense WordForm attribute\&. 
 .PP
-Definition at line 105 of file range\&.py\&.
+Definition at line 123 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.type_example_range"
 \fBInitial value:\fP
 .PP
@@ -341,7 +310,7 @@ Definition at line 105 of file range\&.py\&.
 .PP
 Possible values allowed for example type Context attribute\&. 
 .PP
-Definition at line 168 of file range\&.py\&.
+Definition at line 187 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.type_variant_range"
 \fBInitial value:\fP
 .PP
@@ -356,7 +325,7 @@ Definition at line 168 of file range\&.py\&.
 .PP
 Possible values allowed for LMF variant type FormRepresentation attribute\&. 
 .PP
-Definition at line 35 of file range\&.py\&.
+Definition at line 53 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.verbFormMood_range"
 \fBInitial value:\fP
 .PP
@@ -377,7 +346,7 @@ Definition at line 35 of file range\&.py\&.
 .PP
 Possible values allowed for LMF verb form mood WordForm attribute\&. 
 .PP
-Definition at line 120 of file range\&.py\&.
+Definition at line 138 of file range\&.py\&.
 .SS "tuple lmf\&.src\&.common\&.range\&.voice_range"
 \fBInitial value:\fP
 .PP
@@ -391,7 +360,7 @@ Definition at line 120 of file range\&.py\&.
 .PP
 Possible values allowed for LMF voice WordForm attribute\&. 
 .PP
-Definition at line 113 of file range\&.py\&.
+Definition at line 131 of file range\&.py\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for LMF library from the source code\&.

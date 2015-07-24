@@ -1,9 +1,10 @@
 var searchData=
 [
+  ['encoding',['ENCODING',['../namespacelmf_1_1src_1_1utils_1_1io.html#a04261d03963ca07db5192ce643168e6c',1,'lmf::src::utils::io']]],
   ['encyclopedicinformation',['encyclopedicInformation',['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#a3f6a8d066930ce775d6f6655ea5f3dfa',1,'lmf::src::core::statement::Statement']]],
-  ['english',['ENGLISH',['../namespacelmf_1_1src_1_1config_1_1mdf.html#ab4d5456356fada2592d7fb5d7e8ee780',1,'lmf::src::config::mdf']]],
+  ['english',['ENGLISH',['../namespacelmf_1_1src_1_1common_1_1defs.html#a6655901eaac846797cd374f332d349c4',1,'lmf::src::common::defs']]],
   ['entrysource',['entrySource',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a2c62e9663fe3771e684fb4ef94fe1d52',1,'lmf::src::core::lexicon::Lexicon']]],
-  ['eol',['EOL',['../namespacelmf_1_1src_1_1utils_1_1io.html#aba483c0f0c8e8321ce08e15fe8b8092a',1,'lmf::src::utils::io']]],
+  ['eol',['EOL',['../namespaceeol.html#a8c0e818f50403d0d8776ea7e1b592133',1,'eol.EOL()'],['../namespacelmf_1_1src_1_1utils_1_1io.html#aba483c0f0c8e8321ce08e15fe8b8092a',1,'lmf.src.utils.io.EOL()'],['../namespacetables.html#a6821e34021c9b7b076d5e9df10a2b64a',1,'tables.EOL()'],['../namespaceuid.html#af23356e75a458bc84f8a06c4c25666d7',1,'uid.EOL()']]],
   ['equivalent',['equivalent',['../classlmf_1_1src_1_1core_1_1sense_1_1_sense.html#a94d3b05f734fbe8898902ae948d30ce5',1,'lmf::src::core::sense::Sense']]],
   ['etymology',['etymology',['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#a1232c0098a52fa5f72d6a80c8661152a',1,'lmf::src::core::statement::Statement']]],
   ['etymologycomment',['etymologyComment',['../classlmf_1_1src_1_1core_1_1statement_1_1_statement.html#a25f9127cf2fe1017c53a3ccb57570352',1,'lmf::src::core::statement::Statement']]],

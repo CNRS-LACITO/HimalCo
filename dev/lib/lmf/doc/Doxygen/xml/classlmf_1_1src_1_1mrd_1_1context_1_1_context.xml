@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="18" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a785d657d9be0addc379745e7efa4996b" prot="public" static="no" mutable="no">
         <type></type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="19" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a471cd19ef138a424df53621024979ba7" prot="public" static="no" mutable="no">
         <type></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="22" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="23" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a29412f9361cee534cfa7148320e0826f" prot="public" static="no" mutable="no">
         <type></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="24" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="24" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="25" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="27" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="27" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -80,11 +80,19 @@
         <briefdescription>
 <para>Constructor. </para>        </briefdescription>
         <detaileddescription>
-<para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instances are owned by Sense. <simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instance. </para></simplesect>
+<para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instances are owned by Sense. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speakerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Related speaker identifier. If not provided, default value is None. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="13" bodyend="28"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="13" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="13" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a490b0011c22dc5843ba7c6b176f3b72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -97,7 +105,7 @@
 <para>Release TextRepresentation instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="29" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="29" bodyend="38"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="30" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="30" bodyend="39"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4726cc609fc5d8edd15eca4f83a0712b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -119,7 +127,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="39" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="39" bodyend="51"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="40" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="40" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a23bbf04da050eb93c8f0abb8a5eaf4aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -133,7 +141,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="52" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="52" bodyend="57"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="53" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="53" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1ac7bd2a0ecf508291587d52cbae380e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -147,7 +155,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="58" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="58" bodyend="63"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="59" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="59" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a6e1527f4d3685b66da96af85a1db8d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -169,7 +177,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="64" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="64" bodyend="71"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="65" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="65" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a6dc9ce353b5e7e987615fec2d8a835d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -183,7 +191,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="72" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="72" bodyend="77"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="73" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="73" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a89ae6b79b719e165e5773b2035eb2ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -197,7 +205,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="78" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="78" bodyend="84"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="79" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="79" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4969405d9d78799039adce3919656fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -214,12 +222,19 @@
 <parameterdescription>
 <para>If given, the language to consider to retrieve the written form. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If given, the script to consider to retrieve the written form. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>A Python list of found TextRepresentation attributes &apos;writtenForm&apos;. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="85" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="85" bodyend="96"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="86" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="86" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a822729925a426c3ea85d6d4206c059c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -233,7 +248,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="97" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="97" bodyend="107"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="100" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="100" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a5c25980cacb6a7268fc6144ee464ff51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -241,9 +256,9 @@
         <argsstring></argsstring>
         <name>set_written_form</name>
         <briefdescription>
-<para>Set text representation written form and language. </para>        </briefdescription>
+<para>Set text representation written form, language and script. </para>        </briefdescription>
         <detaileddescription>
-<para>Attributes &apos;writtenForm&apos; and &apos;language&apos; are owned by TextRepresentation. <parameterlist kind="param"><parameteritem>
+<para>Attributes &apos;writtenForm&apos;, &apos;language&apos; and &apos;scriptName&apos; are owned by TextRepresentation. <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>written_form</parametername>
 </parameternamelist>
@@ -257,12 +272,19 @@
 <parameterdescription>
 <para>Language of the written form. </para></parameterdescription>
 </parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>script_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the script used to write the form, e.g. devanagari. </para></parameterdescription>
+</parameteritem>
 </parameterlist>
 <simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="108" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="108" bodyend="121"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="111" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="111" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1aea5b1870d2e818c89ba00055e7318395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -284,7 +306,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="122" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="122" bodyend="137"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="128" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="128" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1aa17fe1cc0e3bc873967f85499fed2740" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.mrd.context.Context.get_speakerID</definition>
+        <argsstring></argsstring>
+        <name>get_speakerID</name>
+        <briefdescription>
+<para>Get related speaker identifier. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context" kindref="compound">Context</ref> attribute &apos;targets&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="144" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="144" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a411ba47fe4581d2e3416b44fbd9ab1d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -298,14 +334,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="138" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="138" bodyend="143"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="150" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="150" bodyend="155"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Context is a class representing a text string that provides authentic context for the use of the word form managed by the Lemma. This class is to be distinguished from Sense Example.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="10" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="10" bodyend="143"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" line="10" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/mrd/context.py" bodystart="10" bodyend="155"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a490b0011c22dc5843ba7c6b176f3b72b" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1acc18b0fe7b0db9c6e64e934ee67fc6a9" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>__init__</name></member>
@@ -316,6 +352,7 @@
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a822729925a426c3ea85d6d4206c059c7" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_comments</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a89ae6b79b719e165e5773b2035eb2ded" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_last_text_representation</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a411ba47fe4581d2e3416b44fbd9ab1d9" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_speaker</name></member>
+      <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1aa17fe1cc0e3bc873967f85499fed2740" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_speakerID</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a6dc9ce353b5e7e987615fec2d8a835d7" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_text_representations</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a23bbf04da050eb93c8f0abb8a5eaf4aa" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>get_type</name></member>
       <member refid="classlmf_1_1src_1_1mrd_1_1context_1_1_context_1a4bbfb55e0df3e37ee91abbfc59fa4111" prot="public" virt="non-virtual"><scope>lmf::src::mrd::context::Context</scope><name>language</name></member>

@@ -1,4 +1,4 @@
-.TH "lmf.src.core.lexical_resource.LexicalResource" 3 "Thu Nov 27 2014" "LMF library" \" -*- nroff -*-
+.TH "lmf.src.core.lexical_resource.LexicalResource" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -36,19 +36,75 @@ lmf.src.core.lexical_resource.LexicalResource \-
 .RI "def \fBget_lexicon\fP"
 .br
 .ti -1c
-.RI "def \fBset_creationDate\fP"
+.RI "def \fBset_dtdVersion\fP"
+.br
+.RI "\fISet DTD version\&. \fP"
+.ti -1c
+.RI "def \fBget_dtdVersion\fP"
+.br
+.RI "\fIGet DTD version\&. \fP"
+.ti -1c
+.RI "def \fBset_language_code\fP"
+.br
+.RI "\fISet language code\&. \fP"
+.ti -1c
+.RI "def \fBget_language_code\fP"
+.br
+.RI "\fIGet language code\&. \fP"
+.ti -1c
+.RI "def \fBset_version\fP"
+.br
+.RI "\fISet version\&. \fP"
+.ti -1c
+.RI "def \fBget_version\fP"
+.br
+.RI "\fIGet version\&. \fP"
+.ti -1c
+.RI "def \fBset_license\fP"
+.br
+.RI "\fISet license\&. \fP"
+.ti -1c
+.RI "def \fBget_license\fP"
+.br
+.RI "\fIGet license\&. \fP"
+.ti -1c
+.RI "def \fBset_character_encoding\fP"
+.br
+.RI "\fISet character encoding\&. \fP"
+.ti -1c
+.RI "def \fBget_character_encoding\fP"
+.br
+.RI "\fIGet character encoding\&. \fP"
+.ti -1c
+.RI "def \fBset_date_coding\fP"
+.br
+.RI "\fISet date coding\&. \fP"
+.ti -1c
+.RI "def \fBget_date_coding\fP"
+.br
+.RI "\fIGet date coding\&. \fP"
+.ti -1c
+.RI "def \fBset_project_name\fP"
+.br
+.RI "\fISet project name\&. \fP"
+.ti -1c
+.RI "def \fBget_project_name\fP"
+.br
+.RI "\fIGet project name\&. \fP"
+.ti -1c
+.RI "def \fBset_creation_date\fP"
 .br
 .RI "\fISet creation date\&. \fP"
 .ti -1c
-.RI "def \fBget_creationDate\fP"
+.RI "def \fBget_creation_date\fP"
 .br
 .RI "\fIGet creation date\&. \fP"
 .ti -1c
-.RI "def \fBset_lastUpdate\fP"
+.RI "def \fBset_last_update\fP"
 .br
 .RI "\fISet last update\&. \fP"
 .ti -1c
-.RI "def \fBget_lastUpdate\fP"
+.RI "def \fBget_last_update\fP"
 .br
 .RI "\fIGet last update\&. \fP"
 .ti -1c
@@ -68,7 +124,7 @@ lmf.src.core.lexical_resource.LexicalResource \-
 .br
 .RI "\fIGet description\&. \fP"
 .ti -1c
-.RI "def \fBget_bibliographicCitation\fP"
+.RI "def \fBget_bibliographic_citation\fP"
 .br
 .RI "\fIGet bibliographic citation\&. \fP"
 .in -1c
@@ -95,7 +151,7 @@ lmf.src.core.lexical_resource.LexicalResource \-
 .PP 
 'Lexical Resource is a class representing the entire resource and is a container for one or more lexicons\&. There is only one Lexical Resource instance\&.' (LMF) 
 .PP
-Definition at line 9 of file lexical_resource\&.py\&.
+Definition at line 8 of file lexical_resource\&.py\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.__init__ (self, dtd_version = \fC16\fP)"
@@ -110,13 +166,13 @@ A \fBLexicalResource\fP instance\&.
 .PP
 
 .PP
-Definition at line 12 of file lexical_resource\&.py\&.
+Definition at line 11 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.__del__ (self)"
 
 .PP
 Destructor\&. Release GlobalInformation, Lexicon, Speaker instances\&. 
 .PP
-Definition at line 27 of file lexical_resource\&.py\&.
+Definition at line 26 of file lexical_resource\&.py\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.add_lexicon (self, lexicon)"
@@ -136,7 +192,7 @@ Lexical Resource instance\&.
 .PP
 
 .PP
-Definition at line 46 of file lexical_resource\&.py\&.
+Definition at line 45 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_author (self)"
 
 .PP
@@ -149,8 +205,8 @@ GlobalInformation attribute 'author'\&.
 .PP
 
 .PP
-Definition at line 115 of file lexical_resource\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_bibliographicCitation (self)"
+Definition at line 221 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_bibliographic_citation (self)"
 
 .PP
 Get bibliographic citation\&. Attribute 'bibliographicCitation' is owned by GlobalInformation\&. 
@@ -162,8 +218,21 @@ GlobalInformation attribute 'bibliographicCitation'\&.
 .PP
 
 .PP
-Definition at line 137 of file lexical_resource\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_creationDate (self)"
+Definition at line 244 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_character_encoding (self)"
+
+.PP
+Get character encoding\&. Attribute 'characterEncoding' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'characterEncoding'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 141 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_creation_date (self)"
 
 .PP
 Get creation date\&. Attribute 'creationDate' is owned by GlobalInformation\&. 
@@ -175,7 +244,20 @@ GlobalInformation attribute 'creationdDate'\&.
 .PP
 
 .PP
-Definition at line 82 of file lexical_resource\&.py\&.
+Definition at line 189 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_date_coding (self)"
+
+.PP
+Get date coding\&. Attribute 'dateCoding' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'dateCoding'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 157 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_description (self)"
 
 .PP
@@ -188,8 +270,34 @@ GlobalInformation attribute 'description'\&.
 .PP
 
 .PP
-Definition at line 130 of file lexical_resource\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_lastUpdate (self)"
+Definition at line 237 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_dtdVersion (self)"
+
+.PP
+Get DTD version\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP attribute 'dtdVersion'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_language_code (self)"
+
+.PP
+Get language code\&. Attribute 'languageCode' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'languageCode'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_last_update (self)"
 
 .PP
 Get last update\&. Attribute 'lastUpdate' is owned by GlobalInformation\&. 
@@ -201,7 +309,7 @@ GlobalInformation attribute 'lastUpdate'\&.
 .PP
 
 .PP
-Definition at line 100 of file lexical_resource\&.py\&.
+Definition at line 205 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_lexicon (self, id)"
 
 .PP
@@ -214,7 +322,7 @@ Retrieve a lexicon from its identifier.
 .PP
  
 .PP
-Definition at line 62 of file lexical_resource\&.py\&.
+Definition at line 61 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_lexicons (self)"
 
 .PP
@@ -227,7 +335,46 @@ A Python list of lexicons\&.
 .PP
 
 .PP
-Definition at line 40 of file lexical_resource\&.py\&.
+Definition at line 39 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_license (self)"
+
+.PP
+Get license\&. Attribute 'license' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'license'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 125 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_project_name (self)"
+
+.PP
+Get project name\&. Attribute 'projectName' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'projectName'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 173 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.get_version (self)"
+
+.PP
+Get version\&. Attribute 'version' is owned by GlobalInformation\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+GlobalInformation attribute 'version'\&. 
+.RE
+.PP
+
+.PP
+Definition at line 109 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.remove_lexicon (self, lexicon)"
 
 .PP
@@ -245,7 +392,7 @@ Lexical Resource instance\&.
 .PP
 
 .PP
-Definition at line 54 of file lexical_resource\&.py\&.
+Definition at line 53 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_author (self, author)"
 
 .PP
@@ -256,10 +403,33 @@ Set author\&. Attribute 'author' is owned by GlobalInformation\&.
 \fIauthor\fP The author's name to set\&. 
 .RE
 .PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
 
 .PP
-Definition at line 107 of file lexical_resource\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_creationDate (self, date)"
+Definition at line 212 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_character_encoding (self, character_encoding)"
+
+.PP
+Set character encoding\&. Attribute 'characterEncoding' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcharacter_encoding\fP The character encoding to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 132 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_creation_date (self, date)"
 
 .PP
 Set creation date\&. Attribute 'creationDate' is owned by GlobalInformation\&. 
@@ -269,9 +439,32 @@ Set creation date\&. Attribute 'creationDate' is owned by GlobalInformation\&.
 \fIdate\fP The date to set, in format YYYY-MM-DD\&. 
 .RE
 .PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
 
 .PP
-Definition at line 71 of file lexical_resource\&.py\&.
+Definition at line 180 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_date_coding (self, date_coding)"
+
+.PP
+Set date coding\&. Attribute 'dateCoding' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdate_coding\fP The date coding to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 148 of file lexical_resource\&.py\&.
 .SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_description (self, description)"
 
 .PP
@@ -282,10 +475,51 @@ Set description\&. Attribute 'description' is owned by GlobalInformation\&.
 \fIdescription\fP The description to set\&. 
 .RE
 .PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
 
 .PP
-Definition at line 122 of file lexical_resource\&.py\&.
-.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_lastUpdate (self, date)"
+Definition at line 228 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_dtdVersion (self, dtd_version)"
+
+.PP
+Set DTD version\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdtd_version\fP The DTD version to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 70 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_language_code (self, language_code)"
+
+.PP
+Set language code\&. Attribute 'languageCode' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlanguage_code\fP The language code to use\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_last_update (self, date)"
 
 .PP
 Set last update\&. Attribute 'lastUpdate' is owned by GlobalInformation\&. 
@@ -295,33 +529,92 @@ Set last update\&. Attribute 'lastUpdate' is owned by GlobalInformation\&.
 \fIdate\fP The date to set, in format YYYY-MM-DD\&. 
 .RE
 .PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
 
 .PP
-Definition at line 89 of file lexical_resource\&.py\&.
+Definition at line 196 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_license (self, license)"
+
+.PP
+Set license\&. Attribute 'license' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlicense\fP The license to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_project_name (self, project_name)"
+
+.PP
+Set project name\&. Attribute 'projectName' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIproject_name\fP The project's name to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 164 of file lexical_resource\&.py\&.
+.SS "def lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.set_version (self, version)"
+
+.PP
+Set version\&. Attribute 'version' is owned by GlobalInformation\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIversion\fP The version to set\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBLexicalResource\fP instance\&. 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file lexical_resource\&.py\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.dtdVersion"
 
 .PP
-Definition at line 16 of file lexical_resource\&.py\&.
+Definition at line 15 of file lexical_resource\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.global_information"
 
 .PP
 GlobalInformation instance is owned by \fBLexicalResource\fP There is one GlobalInformation for one \fBLexicalResource\fP\&. 
 .PP
-Definition at line 19 of file lexical_resource\&.py\&.
+Definition at line 18 of file lexical_resource\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.lexicon"
 
 .PP
 Lexicon instances are owned by \fBLexicalResource\fP There is one or more Lexicon instances for one unique \fBLexicalResource\fP\&. 
 .PP
-Definition at line 22 of file lexical_resource\&.py\&.
+Definition at line 21 of file lexical_resource\&.py\&.
 .SS "lmf\&.src\&.core\&.lexical_resource\&.LexicalResource\&.speaker"
 
 .PP
 Speaker instances are owned by \fBLexicalResource\fP There is zero to many Speaker instances for one unique \fBLexicalResource\fP\&. 
 .PP
-Definition at line 25 of file lexical_resource\&.py\&.
+Definition at line 24 of file lexical_resource\&.py\&.
 
 .SH "Author"
 .PP 

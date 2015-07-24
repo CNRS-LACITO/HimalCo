@@ -25,6 +25,10 @@ def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a9074b1
 \begin{DoxyCompactList}\small\item\em Add a form representation to the word form. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_af5ca5e6fdf8232fb5354b2d5e520f372}{get\+\_\+form\+\_\+representations}
 \begin{DoxyCompactList}\small\item\em Get all form representations maintained by the word form. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a7bc4d5336de970c8adf7a8cdfc5c74ba}{set\+\_\+written\+\_\+form}
+\begin{DoxyCompactList}\small\item\em Set written form. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a2b3298d15f912796519e19465610fad0}{get\+\_\+written\+\_\+forms}
+\begin{DoxyCompactList}\small\item\em Get all written forms. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_aa4010d675af6deb25bf95e7aa54c3f15}{set\+\_\+variant\+\_\+form}
 \begin{DoxyCompactList}\small\item\em Set variant form. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a983151c5529388c7a3002b3239a98b98}{get\+\_\+variant\+\_\+forms}
@@ -172,7 +176,7 @@ Get anymacy.
 \end{DoxyReturn}
 
 
-Definition at line 116 of file word\+\_\+form.\+py.
+Definition at line 148 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_af7009607358c6be4f37b7708193eb2e7}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!get\+\_\+clusivity@{get\+\_\+clusivity}}
 \index{get\+\_\+clusivity@{get\+\_\+clusivity}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -190,7 +194,7 @@ Get grammatical clusivity.
 \end{DoxyReturn}
 
 
-Definition at line 150 of file word\+\_\+form.\+py.
+Definition at line 182 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_af5ca5e6fdf8232fb5354b2d5e520f372}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!get\+\_\+form\+\_\+representations@{get\+\_\+form\+\_\+representations}}
 \index{get\+\_\+form\+\_\+representations@{get\+\_\+form\+\_\+representations}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -226,7 +230,7 @@ Get grammatical number.
 \end{DoxyReturn}
 
 
-Definition at line 133 of file word\+\_\+form.\+py.
+Definition at line 165 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a480a6988b8ca2febc53b5d738ae12fac}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!get\+\_\+person@{get\+\_\+person}}
 \index{get\+\_\+person@{get\+\_\+person}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -244,7 +248,7 @@ Get grammatical person.
 \end{DoxyReturn}
 
 
-Definition at line 99 of file word\+\_\+form.\+py.
+Definition at line 131 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a983151c5529388c7a3002b3239a98b98}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!get\+\_\+variant\+\_\+forms@{get\+\_\+variant\+\_\+forms}}
 \index{get\+\_\+variant\+\_\+forms@{get\+\_\+variant\+\_\+forms}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -262,7 +266,31 @@ A Python list of Form\+Representation attributes 'variant\+Form'.
 \end{DoxyReturn}
 
 
-Definition at line 77 of file word\+\_\+form.\+py.
+Definition at line 109 of file word\+\_\+form.\+py.
+
+\hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a2b3298d15f912796519e19465610fad0}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!get\+\_\+written\+\_\+forms@{get\+\_\+written\+\_\+forms}}
+\index{get\+\_\+written\+\_\+forms@{get\+\_\+written\+\_\+forms}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
+\subsubsection[{get\+\_\+written\+\_\+forms}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+word\+\_\+form.\+Word\+Form.\+get\+\_\+written\+\_\+forms (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{script\+\_\+name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a2b3298d15f912796519e19465610fad0}
+
+
+Get all written forms. 
+
+This attribute is owned by Representation. 
+\begin{DoxyParams}{Parameters}
+{\em script\+\_\+name} & If this argument is given, get written form only if written using this script. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Python list of Form\+Representation attributes 'written\+Form'. 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a77770e33a70efbf55aa2279c2dbb1112}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+anymacy@{set\+\_\+anymacy}}
 \index{set\+\_\+anymacy@{set\+\_\+anymacy}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -286,7 +314,7 @@ Set grammatical anymacy.
 \end{DoxyReturn}
 
 
-Definition at line 105 of file word\+\_\+form.\+py.
+Definition at line 137 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a711b4b9fb46e15d8d64c831dd3c73f15}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+clusivity@{set\+\_\+clusivity}}
 \index{set\+\_\+clusivity@{set\+\_\+clusivity}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -310,7 +338,7 @@ Set grammatical clusivity.
 \end{DoxyReturn}
 
 
-Definition at line 139 of file word\+\_\+form.\+py.
+Definition at line 171 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_afba8a8bff098989e06c9fce30e4c8163}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+grammatical\+Number@{set\+\_\+grammatical\+Number}}
 \index{set\+\_\+grammatical\+Number@{set\+\_\+grammatical\+Number}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -334,7 +362,7 @@ Set grammatical number.
 \end{DoxyReturn}
 
 
-Definition at line 122 of file word\+\_\+form.\+py.
+Definition at line 154 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_aae046a3403c0fe9ae8f35289878cba67}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+person@{set\+\_\+person}}
 \index{set\+\_\+person@{set\+\_\+person}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -358,7 +386,7 @@ Set grammatical person.
 \end{DoxyReturn}
 
 
-Definition at line 88 of file word\+\_\+form.\+py.
+Definition at line 120 of file word\+\_\+form.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_aa4010d675af6deb25bf95e7aa54c3f15}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+variant\+\_\+form@{set\+\_\+variant\+\_\+form}}
 \index{set\+\_\+variant\+\_\+form@{set\+\_\+variant\+\_\+form}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
@@ -375,6 +403,33 @@ Set variant form.
 This attribute is owned by Form\+Representation. 
 \begin{DoxyParams}{Parameters}
 {\em variant\+\_\+form} & Variant form. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form}{Word\+Form} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file word\+\_\+form.\+py.
+
+\hypertarget{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a7bc4d5336de970c8adf7a8cdfc5c74ba}{\index{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}!set\+\_\+written\+\_\+form@{set\+\_\+written\+\_\+form}}
+\index{set\+\_\+written\+\_\+form@{set\+\_\+written\+\_\+form}!lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form@{lmf\+::src\+::morphology\+::word\+\_\+form\+::\+Word\+Form}}
+\subsubsection[{set\+\_\+written\+\_\+form}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+word\+\_\+form.\+Word\+Form.\+set\+\_\+written\+\_\+form (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{written\+\_\+form, }
+\item[{}]{script\+\_\+name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1word__form_1_1_word_form_a7bc4d5336de970c8adf7a8cdfc5c74ba}
+
+
+Set written form. 
+
+This attribute is owned by Representation. 
+\begin{DoxyParams}{Parameters}
+{\em written\+\_\+form} & Written form. \\
+\hline
+{\em script\+\_\+name} & Script used for the written form. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

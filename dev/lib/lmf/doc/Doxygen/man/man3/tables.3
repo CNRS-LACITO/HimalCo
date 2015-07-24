@@ -1,0 +1,129 @@
+.TH "tables" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+tables \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBparser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBoptions\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBin_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBout_eng\fP = open(options\&.output_eng, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBout_fra\fP = open(options\&.output_fra, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBEOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "string \fBtitle_eng\fP = '''Words for which no close equivalent could be found'''"
+.br
+.ti -1c
+.RI "string \fBintroduction_eng\fP = '''The list that follows groups words for which no close equivalents could be found\&. These negative pieces of information contain hints about the consultants' Na vocabulary and its 'soft shoulders'\&.'''"
+.br
+.ti -1c
+.RI "string \fBtitle_fra\fP = '''Mots dont aucun équivalent n'a été trouvé'''"
+.br
+.ti -1c
+.RI "string \fBintroduction_fra\fP = '''Cette liste regroupe les mots dont aucun équivalent n'a été trouvé\&. Même s'il ne s'agit que d'informations négatives, elles éclairent les limites du vocabulaire na des consultants\&.'''"
+.br
+.ti -1c
+.RI "string \fBpattern\fP = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+.br
+.ti -1c
+.RI "string \fBlx\fP = ''"
+.br
+.ti -1c
+.RI "string \fBge\fP = ''"
+.br
+.ti -1c
+.RI "string \fBgn\fP = ''"
+.br
+.ti -1c
+.RI "string \fBgf\fP = ''"
+.br
+.ti -1c
+.RI "tuple \fBresult\fP = re\&.search(\fBpattern\fP, line)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "string tables\&.EOL = '\\n'"
+
+.PP
+Definition at line 26 of file tables\&.py\&.
+.SS "string tables\&.ge = ''"
+
+.PP
+Definition at line 52 of file tables\&.py\&.
+.SS "string tables\&.gf = ''"
+
+.PP
+Definition at line 54 of file tables\&.py\&.
+.SS "string tables\&.gn = ''"
+
+.PP
+Definition at line 53 of file tables\&.py\&.
+.SS "tuple tables\&.in_file = open(options\&.input, 'r', encoding='utf-8')"
+
+.PP
+Definition at line 14 of file tables\&.py\&.
+.SS "string tables\&.introduction_eng = '''The list that follows groups words for which no close equivalents could be found\&. These negative pieces of information contain hints about the consultants' Na vocabulary and its 'soft shoulders'\&.'''"
+
+.PP
+Definition at line 32 of file tables\&.py\&.
+.SS "string tables\&.introduction_fra = '''Cette liste regroupe les mots dont aucun équivalent n'a été trouvé\&. Même s'il ne s'agit que d'informations négatives, elles éclairent les limites du vocabulaire na des consultants\&.'''"
+
+.PP
+Definition at line 34 of file tables\&.py\&.
+.SS "string tables\&.lx = ''"
+
+.PP
+Definition at line 51 of file tables\&.py\&.
+.SS "tuple tables\&.options = parser\&.parse_args()"
+
+.PP
+Definition at line 10 of file tables\&.py\&.
+.SS "tuple tables\&.out_eng = open(options\&.output_eng, 'w', encoding='utf-8')"
+
+.PP
+Definition at line 15 of file tables\&.py\&.
+.SS "tuple tables\&.out_fra = open(options\&.output_fra, 'w', encoding='utf-8')"
+
+.PP
+Definition at line 16 of file tables\&.py\&.
+.SS "tuple tables\&.parser = OptionParser()"
+
+.PP
+Definition at line 6 of file tables\&.py\&.
+.SS "string tables\&.pattern = r'^\\\\(\\w{2,3}) ?(\&.*)$'"
+
+.PP
+Definition at line 50 of file tables\&.py\&.
+.SS "tuple tables\&.result = re\&.search(\fBpattern\fP, line)"
+
+.PP
+Definition at line 56 of file tables\&.py\&.
+.SS "string tables\&.title_eng = '''Words for which no close equivalent could be found'''"
+
+.PP
+Definition at line 31 of file tables\&.py\&.
+.SS "string tables\&.title_fra = '''Mots dont aucun équivalent n'a été trouvé'''"
+
+.PP
+Definition at line 33 of file tables\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.

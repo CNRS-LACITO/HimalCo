@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacelmf_1_1src_1_1output_1_1odt" kind="namespace">
+    <compoundname>lmf::src::output::odt</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1acfe673df400456dbafa6cf3b26a788bd" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.textdoc</definition>
+        <argsstring></argsstring>
+        <name>textdoc</name>
+        <initializer>= OpenDocumentText()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1a5de2fbc8864cd6875671cf45d669877a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lmf::src::output::odt.s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <initializer>= textdoc.styles</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1a42dc5d526d0fc00bb6d63fa261a316d3" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.h1style</definition>
+        <argsstring></argsstring>
+        <name>h1style</name>
+        <initializer>= Style(name=&quot;Heading 1&quot;, family=&quot;paragraph&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="10" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1ae89ed401433d97b22c3a45cd267c6b75" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.boldstyle</definition>
+        <argsstring></argsstring>
+        <name>boldstyle</name>
+        <initializer>= Style(name=&quot;Bold&quot;, family=&quot;text&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="14" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1a883b09afc4579bcc6f02a3c630ac1aa6" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.boldprop</definition>
+        <argsstring></argsstring>
+        <name>boldprop</name>
+        <initializer>= TextProperties(fontweight=&quot;bold&quot;, fontname=&quot;Arial&quot;, fontsize=&quot;8pt&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="15" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1a1a55a65013697849c387fde9a56b25ca" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <initializer>= H(outlinelevel=1, stylename=<ref refid="namespacelmf_1_1src_1_1output_1_1odt_1a42dc5d526d0fc00bb6d63fa261a316d3" kindref="member">h1style</ref>, text=&quot;My first text&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1afa1b5866aef132001690773cb7a63798" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <initializer>= P(text=&quot;Hello world. &quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="21" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelmf_1_1src_1_1output_1_1odt_1a191027189751a24a5105e7593a1b7d49" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lmf::src::output::odt.boldpart</definition>
+        <argsstring></argsstring>
+        <name>boldpart</name>
+        <initializer>= Span(stylename=<ref refid="namespacelmf_1_1src_1_1output_1_1odt_1ae89ed401433d97b22c3a45cd267c6b75" kindref="member">boldstyle</ref>, text=&quot;This part is bold. &quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="22" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/odt.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

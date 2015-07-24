@@ -8,11 +8,16 @@ var searchData=
   ['lemma',['lemma',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a25e285f1f40cf8c4a17d021c2d2b878f',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
   ['lexeme',['lexeme',['../classlmf_1_1src_1_1morphology_1_1lemma_1_1_lemma.html#ab68007ef04c51304b92e3eefcf2f40c9',1,'lmf::src::morphology::lemma::Lemma']]],
   ['lexical_5fentry',['lexical_entry',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a548b2adbf028d9058dd4676cc00d2ee1',1,'lmf::src::core::lexicon::Lexicon']]],
+  ['lexical_5fresource',['lexical_resource',['../namespacelmf_1_1src_1_1wrapper.html#a0fd5d22005d5ad60acf8eb22acc51f8b',1,'lmf::src::wrapper']]],
   ['lexicon',['lexicon',['../classlmf_1_1src_1_1core_1_1lexical__resource_1_1_lexical_resource.html#af4146645965f04411b37e8e52e7a04e0',1,'lmf::src::core::lexical_resource::LexicalResource']]],
   ['lexicontype',['lexiconType',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#af434e15172d6aa59954db2a72c9f15f0',1,'lmf::src::core::lexicon::Lexicon']]],
   ['lf_5frange',['lf_range',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a61a24538d210d4eca3f57f183733fa5a',1,'lmf::src::config::mdf']]],
   ['license',['license',['../classlmf_1_1src_1_1core_1_1global__information_1_1_global_information.html#a1f086ce6c56515e2c6fd853c7007d015',1,'lmf::src::core::global_information::GlobalInformation']]],
+  ['line',['line',['../namespaceeol.html#a12767f8ab35a2de0036b1fdd5af23567',1,'eol']]],
+  ['lines',['lines',['../namespaceeol.html#abeaa70f48fe541fa9a735489ca6e95ff',1,'eol']]],
   ['list_5fof_5fcomponents',['list_of_components',['../classlmf_1_1src_1_1core_1_1lexical__entry_1_1_lexical_entry.html#a852239d30b350d7ec590c7a6a01b76b8',1,'lmf::src::core::lexical_entry::LexicalEntry']]],
   ['literally',['literally',['../classlmf_1_1src_1_1core_1_1definition_1_1_definition.html#a03094eec5215fece01b3412c14e357f2',1,'lmf::src::core::definition::Definition']]],
-  ['lmf_5fmdf',['lmf_mdf',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a78d8f1444783c1b86cbbd91f49a0cd4f',1,'lmf::src::config::mdf']]]
+  ['lmf_5fmdf',['lmf_mdf',['../namespacelmf_1_1src_1_1config_1_1mdf.html#a78d8f1444783c1b86cbbd91f49a0cd4f',1,'lmf::src::config::mdf']]],
+  ['localpath',['localPath',['../classlmf_1_1src_1_1core_1_1lexicon_1_1_lexicon.html#a972bee199d27a70fa75321bffd70a6b1',1,'lmf::src::core::lexicon::Lexicon']]],
+  ['lx',['lx',['../namespacetables.html#a73769ae2602de53f31750beff002ea18',1,'tables.lx()'],['../namespaceuid.html#aa8bd0ffc225dc8124099330d1014bf66',1,'uid.lx()']]]
 ];

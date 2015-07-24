@@ -106,7 +106,7 @@ Functions</h2></td></tr>
           <td class="memname">def lmf.src.input.mdf.mdf_read </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
+          <td class="paramname"><em>filename</em> = <code>None</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -118,7 +118,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>id</em> = <code>None</code>&#160;</td>
+          <td class="paramname"><em>lexicon</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>id</em> = <code>None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>encoding</em> = <code>ENCODING</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -133,20 +145,22 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The name of the MDF file to read with full path, for instance 'user/input.txt'. </td></tr>
     <tr><td class="paramname">mdf2lmf</td><td>A Python dictionary describing the mapping between MDF markers and LMF representation. Default value is 'mdf_lmf' dictionary defined in '<a class="el" href="config_2mdf_8py.html">src/config/mdf.py</a>'. Please refer to it as an example. </td></tr>
-    <tr><td class="paramname">id</td><td>A Python string identifying the created lexicon. </td></tr>
+    <tr><td class="paramname">lexicon</td><td>An existing Lexicon to fill with lexical entries to read. </td></tr>
+    <tr><td class="paramname">id</td><td>A Python string identifying the lexicon to create. </td></tr>
+    <tr><td class="paramname">encoding</td><td>Use 'utf-8' encoding by default. Otherwise, user has to precise the native encoding of its document. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A Lexicon instance containing all lexical entries. </dd></dl>
 
-<p>Definition at line <a class="el" href="input_2mdf_8py_source.html#l00012">12</a> of file <a class="el" href="input_2mdf_8py_source.html">mdf.py</a>.</p>
+<p>Definition at line <a class="el" href="input_2mdf_8py_source.html#l00013">13</a> of file <a class="el" href="input_2mdf_8py_source.html">mdf.py</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 12:25:32 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

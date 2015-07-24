@@ -103,6 +103,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1d3b99bc83eed991bffd96b3bbddfbc"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html#af1d3b99bc83eed991bffd96b3bbddfbc">__del__</a></td></tr>
 <tr class="memdesc:af1d3b99bc83eed991bffd96b3bbddfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af1d3b99bc83eed991bffd96b3bbddfbc">More...</a><br /></td></tr>
 <tr class="separator:af1d3b99bc83eed991bffd96b3bbddfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4004918a4618fdd29fc8008f63b47495"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html#a4004918a4618fdd29fc8008f63b47495">create_and_add_component</a></td></tr>
+<tr class="memdesc:a4004918a4618fdd29fc8008f63b47495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and add a component to the list.  <a href="#a4004918a4618fdd29fc8008f63b47495">More...</a><br /></td></tr>
+<tr class="separator:a4004918a4618fdd29fc8008f63b47495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb7d8774e6029c3177898d005a67049"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html#a5cb7d8774e6029c3177898d005a67049">get_components</a></td></tr>
+<tr class="memdesc:a5cb7d8774e6029c3177898d005a67049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of components.  <a href="#a5cb7d8774e6029c3177898d005a67049">More...</a><br /></td></tr>
+<tr class="separator:a5cb7d8774e6029c3177898d005a67049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -113,7 +119,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><pre class="fragment">"List of Components is a class representing the aggregative aspect of a multiword expression (MWE). The mechanism can also be applied recursively, so that an MWE way be comprised of components that are themselves MWEs. This class is used in the morphological pattern and MWE pattern packages." (LMF)
 </pre> 
-<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00006">6</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00008">8</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2f5197e9468d65a9bda951b7cee8b922"></a>
 <div class="memitem">
@@ -132,7 +138,7 @@ Public Attributes</h2></td></tr>
 <p>Constructor. </p>
 <p><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a> instance is owned by LexicalEntry. </p><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a> instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00009">9</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00011">11</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
 
 </div>
 </div>
@@ -153,7 +159,73 @@ Public Attributes</h2></td></tr>
 <p>Destructor. </p>
 <p>Release Component instances. </p>
 
-<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00018">18</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00020">20</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4004918a4618fdd29fc8008f63b47495"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.morphology.list_of_components.ListOfComponents.create_and_add_component </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lexeme</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create and add a component to the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The position of the component in the multiword expression. </td></tr>
+    <tr><td class="paramname">lexeme</td><td>Related lexeme. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a> instance. </dd></dl>
+
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00028">28</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5cb7d8774e6029c3177898d005a67049"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def lmf.src.morphology.list_of_components.ListOfComponents.get_components </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the list of components. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a> attribute 'component'. </dd></dl>
+
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00037">37</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
 
 </div>
 </div>
@@ -170,7 +242,7 @@ Public Attributes</h2></td></tr>
 
 <p>Component instances are owned by <a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a> There are two or more Component instances per <a class="el" href="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components.html">ListOfComponents</a>. </p>
 
-<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00016">16</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
+<p>Definition at line <a class="el" href="list__of__components_8py_source.html#l00018">18</a> of file <a class="el" href="list__of__components_8py_source.html">list_of_components.py</a>.</p>
 
 </div>
 </div>
@@ -180,7 +252,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 12:25:32 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

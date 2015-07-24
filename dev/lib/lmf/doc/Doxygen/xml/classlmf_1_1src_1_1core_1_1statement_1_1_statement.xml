@@ -775,12 +775,43 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="280" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="280" bodyend="285"/>
       </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a24eacb4f5629fb9339f80c9529eb4a8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.statement.Statement.set_scientificName</definition>
+        <argsstring></argsstring>
+        <name>set_scientificName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set scientific name.
+@param scientific_name The scientific name to set.
+@return Statement instance.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="286" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="286" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1acce9c29f9d9f11c5464d5f6a3caf3463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.statement.Statement.get_scientificName</definition>
+        <argsstring></argsstring>
+        <name>get_scientificName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get scientific name.
+@return Statement attribute &apos;scientificName&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="296" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="296" bodyend="301"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Statement is a class representating a narrative description that refines or complements Definition.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="9" bodyend="285"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/statement.py" bodystart="9" bodyend="301"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a49d77869667dfde6c6abc794201f9fc3" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ace7d3a3325c7f7b255a3dd72b20c74b1" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>__init__</name></member>
@@ -801,6 +832,7 @@
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2fb4b0e5e1a60fc1c64a568f23836365" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_note</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a3d7c298b233b33d30ede48fb9c447a4c" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_noteType</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ab85c880e48d2123caaed25d78bd32c76" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_restriction</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1acce9c29f9d9f11c5464d5f6a3caf3463" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_scientificName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ab63acc79afef490f7e9c748c57452d9c" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_termSourceLanguage</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1afd49544da7d45364b4c74100ea1dfbe8" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_usageNote</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ad76ee83090f177477973b3318f14e4e3" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>get_writtenForm</name></member>
@@ -820,6 +852,7 @@
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1ac5f19645e137199d8a35ed7ddbf4b280" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_note</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a496622deaffb5533321e305c99ef4689" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_noteType</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a66ff1951ce0a2b839f2ab4c1f5447426" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_restriction</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a24eacb4f5629fb9339f80c9529eb4a8c" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_scientificName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a2559e6c441e8b9c1276ea7f7ae765f1d" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_termSourceLanguage</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a457b19a604578033bd13ab3d4007ba2e" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_usageNote</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1statement_1_1_statement_1a0a666409b4347a2e1fc306c776403644" prot="public" virt="non-virtual"><scope>lmf::src::core::statement::Statement</scope><name>set_writtenForm</name></member>

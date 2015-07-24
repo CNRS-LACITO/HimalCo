@@ -165,29 +165,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> sub_element.tag == <span class="stringliteral">&quot;feat&quot;</span>:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment"># &quot;feat&quot; elements have 2 XML attributes: one for LMF attribute name (&quot;att&quot;), a second for LMF attribute value (&quot;val&quot;)</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            setattr(instance, sub_element.attrib[<span class="stringliteral">&quot;att&quot;</span>], sub_element.attrib[<span class="stringliteral">&quot;val&quot;</span>])</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="comment"># Create LMF instances corresponding to XML sub-elements</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            sub_instance = <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#ad5950c4bfa3184c81159c4f1be1f4e43">factory</a>(sub_element.tag, sub_element.attrib)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment"># Root LMF object must own the child objects</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            attr_name = <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a1f88f5cb321107e2e3fc973a0f4bb0c7">compute_name</a>(sub_element.tag)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            attr_value = getattr(instance, attr_name)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> type(attr_value) <span class="keywordflow">is</span> list:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="comment"># If this attribute is a list, append the new value to the list</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                attr_value.append(sub_instance)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">else</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="comment"># Simply set the value</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                setattr(instance, attr_name, sub_instance)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment"># Repeat the same operation recursively</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a69c23caee6c3bfe7ba54804aad65f879">get_sub_elements</a>(sub_instance, sub_element)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">elif</span> sub_element.tag == <span class="stringliteral">&quot;a&quot;</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="comment"># &quot;a&quot; elements are HTML links =&gt; do not consider them</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">pass</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment"># Create LMF instances corresponding to XML sub-elements</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            sub_instance = <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#ad5950c4bfa3184c81159c4f1be1f4e43">factory</a>(sub_element.tag, sub_element.attrib)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment"># Root LMF object must own the child objects</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            attr_name = <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a1f88f5cb321107e2e3fc973a0f4bb0c7">compute_name</a>(sub_element.tag)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            attr_value = getattr(instance, attr_name)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">if</span> type(attr_value) <span class="keywordflow">is</span> list:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="comment"># If this attribute is a list, append the new value to the list</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                attr_value.append(sub_instance)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="comment"># Simply set the value</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                setattr(instance, attr_name, sub_instance)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment"># Repeat the same operation recursively</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a69c23caee6c3bfe7ba54804aad65f879">get_sub_elements</a>(sub_instance, sub_element)</div>
 <div class="ttc" id="namespacelmf_1_1src_1_1input_1_1xml__lmf_html_a1f88f5cb321107e2e3fc973a0f4bb0c7"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a1f88f5cb321107e2e3fc973a0f4bb0c7">lmf.src.input.xml_lmf.compute_name</a></div><div class="ttdeci">def compute_name</div><div class="ttdoc">Compute attribute/module name from object name as follows: &#39;ObjectName&#39; attribute/module name is &#39;obj...</div><div class="ttdef"><b>Definition:</b> <a href="input_2xml__lmf_8py_source.html#l00006">xml_lmf.py:6</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1input_1_1xml__lmf_html_ab05e23f6bb643a98979becb219b050da"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#ab05e23f6bb643a98979becb219b050da">lmf.src.input.xml_lmf.xml_lmf_read</a></div><div class="ttdeci">def xml_lmf_read</div><div class="ttdoc">Read an XML LMF file. </div><div class="ttdef"><b>Definition:</b> <a href="input_2xml__lmf_8py_source.html#l00057">xml_lmf.py:57</a></div></div>
-<div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1xml__format_html_a7545cf89e2abcbc425a998ad8b1dea94"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1xml__format.html#a7545cf89e2abcbc425a998ad8b1dea94">lmf.src.utils.xml_format.parse_xml</a></div><div class="ttdeci">def parse_xml</div><div class="ttdoc">Parse an XML file. </div><div class="ttdef"><b>Definition:</b> <a href="xml__format_8py_source.html#l00031">xml_format.py:31</a></div></div>
+<div class="ttc" id="namespacelmf_1_1src_1_1utils_1_1xml__format_html_a7545cf89e2abcbc425a998ad8b1dea94"><div class="ttname"><a href="namespacelmf_1_1src_1_1utils_1_1xml__format.html#a7545cf89e2abcbc425a998ad8b1dea94">lmf.src.utils.xml_format.parse_xml</a></div><div class="ttdeci">def parse_xml</div><div class="ttdoc">Parse an XML file. </div><div class="ttdef"><b>Definition:</b> <a href="xml__format_8py_source.html#l00032">xml_format.py:32</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1input_1_1xml__lmf_html_a69c23caee6c3bfe7ba54804aad65f879"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#a69c23caee6c3bfe7ba54804aad65f879">lmf.src.input.xml_lmf.get_sub_elements</a></div><div class="ttdeci">def get_sub_elements</div><div class="ttdoc">This function recursively parses the given XML element and creates corresponding LMF instances with t...</div><div class="ttdef"><b>Definition:</b> <a href="input_2xml__lmf_8py_source.html#l00069">xml_lmf.py:69</a></div></div>
 <div class="ttc" id="namespacelmf_1_1src_1_1input_1_1xml__lmf_html_ad5950c4bfa3184c81159c4f1be1f4e43"><div class="ttname"><a href="namespacelmf_1_1src_1_1input_1_1xml__lmf.html#ad5950c4bfa3184c81159c4f1be1f4e43">lmf.src.input.xml_lmf.factory</a></div><div class="ttdeci">def factory</div><div class="ttdoc">This function is an object factory. </div><div class="ttdef"><b>Definition:</b> <a href="input_2xml__lmf_8py_source.html#l00021">xml_lmf.py:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 27 2014 11:05:12 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 12:25:32 for LMF library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

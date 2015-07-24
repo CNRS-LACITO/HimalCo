@@ -175,26 +175,221 @@
         </inbodydescription>
         <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="28" bodyend="32"/>
       </memberdef>
-      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77421fe11e22e249528fb247a7f2c585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a3977a05f9b005533e993289ccf3f75e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
-        <definition>def lmf.src.core.global_information.GlobalInformation.check_date_format</definition>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_languageCode</definition>
         <argsstring></argsstring>
-        <name>check_date_format</name>
+        <name>set_languageCode</name>
         <briefdescription>
-<para>Verify that date format is composed as follows: YYYY-MM-DD. </para>        </briefdescription>
+<para>Set global information language code. </para>        </briefdescription>
         <detaileddescription>
-<para>If not, raise an Error. <parameterlist kind="param"><parameteritem>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>date</parametername>
+<parametername>language_code</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Date to check. </para></parameterdescription>
+<para>The language code to use. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> instance. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="33" bodyend="41"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="33" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ae5a42841bcbd4362e6921b0e7e35aa6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_languageCode</definition>
+        <argsstring></argsstring>
+        <name>get_languageCode</name>
+        <briefdescription>
+<para>Get global information language code. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;languageCode&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="41" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ab2d8710b5935482e14d2df75acfc1004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_version</definition>
+        <argsstring></argsstring>
+        <name>set_version</name>
+        <briefdescription>
+<para>Set global information version. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The version to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> version. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="47" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a931368ccd7306bde82ad496b2f99827b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_version</definition>
+        <argsstring></argsstring>
+        <name>get_version</name>
+        <briefdescription>
+<para>Get global information version. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;version&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="55" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="55" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a09e363eee8adb3b945422385e7d3b576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_license</definition>
+        <argsstring></argsstring>
+        <name>set_license</name>
+        <briefdescription>
+<para>Set global information license. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>license</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The license to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="61" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="61" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ae06bdf952c76c68d3f2820c43692fec9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_license</definition>
+        <argsstring></argsstring>
+        <name>get_license</name>
+        <briefdescription>
+<para>Get global information license. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;license&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="69" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a3eb128060394dfdb3988d387a3539c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_characterEncoding</definition>
+        <argsstring></argsstring>
+        <name>set_characterEncoding</name>
+        <briefdescription>
+<para>Set global information character encoding. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>character_encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character encoding to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="75" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="75" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1acdf3442cd2182471f8281d67ee3877a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_characterEncoding</definition>
+        <argsstring></argsstring>
+        <name>get_characterEncoding</name>
+        <briefdescription>
+<para>Get global information character encoding. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;characterEncoding&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="83" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="83" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1aed122e9af0b0499c9e3291133d6c21c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_dateCoding</definition>
+        <argsstring></argsstring>
+        <name>set_dateCoding</name>
+        <briefdescription>
+<para>Set global information date coding. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>date_coding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The date coding to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="89" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="89" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a0002ebf6a0642e23a871eaf067f9da33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_dateCoding</definition>
+        <argsstring></argsstring>
+        <name>get_dateCoding</name>
+        <briefdescription>
+<para>Get global information date coding. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;dateCoding&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="97" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a6180bd3138489d3e35e2386da8c26b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.set_projectName</definition>
+        <argsstring></argsstring>
+        <name>set_projectName</name>
+        <briefdescription>
+<para>Set global information project name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>project_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The project name to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="103" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="103" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a41442e2bfc498fb048acd183ab18bcb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.core.global_information.GlobalInformation.get_projectName</definition>
+        <argsstring></argsstring>
+        <name>get_projectName</name>
+        <briefdescription>
+<para>Get global information project name. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;projectName&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="111" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="111" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a34f23d2fecf02af3cdea7d9e88e9fd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -216,7 +411,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="42" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="42" bodyend="50"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="117" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="117" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a611e859a8104863c3396843c4a58df93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -230,7 +425,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="51" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="51" bodyend="56"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="126" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="126" bodyend="131"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a90d3b3a8bef7e3c4d30f5e1cbd44bdef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -252,7 +447,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="57" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="57" bodyend="65"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="132" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="132" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1afd398454c5b5671dc8c832f2bc04736b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -266,7 +461,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="66" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="66" bodyend="71"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="141" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="141" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a50e23e50d3ad0e6254c94446a829027a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -288,7 +483,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="72" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="72" bodyend="79"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="147" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="147" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac689cff94234bacdc6c936cd7bcc2973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -302,7 +497,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="80" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="80" bodyend="85"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="155" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="155" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a9e6b98762af2465bf4babfa87bbd5ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -324,7 +519,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="86" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="86" bodyend="93"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="161" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="161" bodyend="168"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1af9c9b2b792546ea670838383492438f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -338,7 +533,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="94" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="94" bodyend="99"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="169" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="169" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac7395a0960ac17fb5a5d79b8dba66191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -351,7 +546,7 @@
 <para>Set <ref refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information" kindref="compound">GlobalInformation</ref> attribute &apos;bibliographicCitation&apos;. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="100" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="100" bodyend="109"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="175" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="175" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77753be672eef5626bd6c8deaa157a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -365,38 +560,49 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="110" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="110" bodyend="116"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="185" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="185" bodyend="191"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>&quot;Global Information is a class for administrative information and other general attributes, such as /language coding/ or /script coding/, which are valid for the entire lexical resource.&quot; (LMF) </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="8" bodyend="116"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/core/global_information.py" bodystart="8" bodyend="191"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a9ef2d1611e39e6d3802651da2b46ef1c" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a8815a24e93798f1e253ba79ec38cb30f" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>__init__</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a96ffe5559235b6b6c681b45a61d697af" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>author</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a02d9de85d8225dc1411986b763df19ab" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>bibliographicCitation</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a7fd2e0b92537d9a5d055ef6726617d1e" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>characterEncoding</name></member>
-      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77421fe11e22e249528fb247a7f2c585" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>check_date_format</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac7395a0960ac17fb5a5d79b8dba66191" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>compute_bibliographicCitation</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a45c08bbe888ab19297d903a952085c0c" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>creationDate</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a53110d17cbf0bfdcb72fb089e648aa70" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>dateCoding</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1aa37acb480d22d4b7c79ece3f04a6e1a2" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>description</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac689cff94234bacdc6c936cd7bcc2973" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_author</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a77753be672eef5626bd6c8deaa157a16" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_bibliographicCitation</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1acdf3442cd2182471f8281d67ee3877a9" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_characterEncoding</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a611e859a8104863c3396843c4a58df93" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_creationDate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a0002ebf6a0642e23a871eaf067f9da33" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_dateCoding</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1af9c9b2b792546ea670838383492438f5" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_description</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ae5a42841bcbd4362e6921b0e7e35aa6d" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_languageCode</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1afd398454c5b5671dc8c832f2bc04736b" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_lastUpdate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ae06bdf952c76c68d3f2820c43692fec9" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_license</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a41442e2bfc498fb048acd183ab18bcb4" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_projectName</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a931368ccd7306bde82ad496b2f99827b" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>get_version</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a13b6750b6876cade278c3cde1f0625a2" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>languageCode</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a11e84dd6e15ae319bc1427388614eb31" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>lastUpdate</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a1f086ce6c56515e2c6fd853c7007d015" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>license</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ac22ab44249ba844254fcdc84e7f330fc" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>projectName</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a50e23e50d3ad0e6254c94446a829027a" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_author</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a3eb128060394dfdb3988d387a3539c5e" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_characterEncoding</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a34f23d2fecf02af3cdea7d9e88e9fd09" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_creationDate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1aed122e9af0b0499c9e3291133d6c21c3" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_dateCoding</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a9e6b98762af2465bf4babfa87bbd5ee8" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_description</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a3977a05f9b005533e993289ccf3f75e5" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_languageCode</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a90d3b3a8bef7e3c4d30f5e1cbd44bdef" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_lastUpdate</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a09e363eee8adb3b945422385e7d3b576" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_license</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a6180bd3138489d3e35e2386da8c26b0d" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_projectName</name></member>
+      <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1ab2d8710b5935482e14d2df75acfc1004" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>set_version</name></member>
       <member refid="classlmf_1_1src_1_1core_1_1global__information_1_1_global_information_1a6a0bbf60025ea9503bb541a0ffbd514a" prot="public" virt="non-virtual"><scope>lmf::src::core::global_information::GlobalInformation</scope><name>version</name></member>
     </listofallmembers>
   </compounddef>

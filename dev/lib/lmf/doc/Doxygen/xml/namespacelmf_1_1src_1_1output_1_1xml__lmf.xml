@@ -29,7 +29,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="5" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="5" bodyend="16"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="7" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="7" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a4dcbf9737531170cd9a76a0e65b6c770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -57,7 +57,120 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="17" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="17" bodyend="45"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="19" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="19" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a1dd2fcec1708971025b470b0902ab2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.add_link</definition>
+        <argsstring></argsstring>
+        <name>add_link</name>
+        <briefdescription>
+<para>Functions to process XML/XHTML layout. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Insert an hyperlink &lt;a href=xxx&gt;xxx&lt;a/&gt; in XML.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="66" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="66" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1ae2728b11203c864e813f456021aa2e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_reserved</definition>
+        <argsstring></argsstring>
+        <name>handle_reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle reserved characters.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="87" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a7c74a6c430a895901e2118c612ed9681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_fv</definition>
+        <argsstring></argsstring>
+        <name>handle_fv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace &apos;fv:xxx&apos; and &apos;|fv{xxx}&apos; by &apos;&lt;span class=&quot;vernacular&quot;&gt;xxx&lt;/span&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="92" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="92" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a34fe7d3a9091155a703b80cc0254dc5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_fn</definition>
+        <argsstring></argsstring>
+        <name>handle_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace &apos;fn:xxx&apos; and &apos;|fn{xxx}&apos; by &apos;&lt;span class=&quot;national&quot;&gt;xxx&lt;/span&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="131" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="131" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1aa50a22183b0503fd5c81aeae688c4de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_font</definition>
+        <argsstring></argsstring>
+        <name>handle_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace &apos;{xxx}&apos; by &apos;&lt;span class=&quot;ipa&quot;&gt;xxx&lt;/span&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="168" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="168" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a3d22d49b1f368ffcf27c9d67a4859756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_pinyin</definition>
+        <argsstring></argsstring>
+        <name>handle_pinyin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace &apos;@xxx&apos; by &apos;&lt;span class=&quot;pinyin&quot;&gt;xxx&lt;/span&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="202" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="202" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a33382465b3524c3b49269cb00fae62ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_caps</definition>
+        <argsstring></argsstring>
+        <name>handle_caps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle small caps.
+Replace &apos;°xxx&apos; by &apos;&lt;span class=&quot;sc&quot;&gt;xxx&lt;/span&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="236" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="236" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelmf_1_1src_1_1output_1_1xml__lmf_1a12f7fc79f5144d4b80dd9bba74de53f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.output.xml_lmf.handle_tones</definition>
+        <argsstring></argsstring>
+        <name>handle_tones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Replace tones subscripts by &apos;&lt;sub&gt;xxx&lt;/sub&gt;&apos;.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" line="271" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/output/xml_lmf.py" bodystart="271" bodyend="361"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

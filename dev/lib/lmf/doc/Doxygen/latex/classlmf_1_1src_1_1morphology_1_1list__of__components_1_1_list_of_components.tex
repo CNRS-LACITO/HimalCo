@@ -7,7 +7,11 @@
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a2f5197e9468d65a9bda951b7cee8b922}{\+\_\+\+\_\+init\+\_\+\+\_\+}
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 def \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_af1d3b99bc83eed991bffd96b3bbddfbc}{\+\_\+\+\_\+del\+\_\+\+\_\+}
-\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a4004918a4618fdd29fc8008f63b47495}{create\+\_\+and\+\_\+add\+\_\+component}
+\begin{DoxyCompactList}\small\item\em Create and add a component to the list. \end{DoxyCompactList}\item 
+def \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a5cb7d8774e6029c3177898d005a67049}{get\+\_\+components}
+\begin{DoxyCompactList}\small\item\em Get the list of components. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -20,7 +24,7 @@ def \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of
 \end{DoxyVerb}
  
 
-Definition at line 6 of file list\+\_\+of\+\_\+components.\+py.
+Definition at line 8 of file list\+\_\+of\+\_\+components.\+py.
 
 
 
@@ -41,7 +45,7 @@ A \hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_c
 \end{DoxyReturn}
 
 
-Definition at line 9 of file list\+\_\+of\+\_\+components.\+py.
+Definition at line 11 of file list\+\_\+of\+\_\+components.\+py.
 
 \hypertarget{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_af1d3b99bc83eed991bffd96b3bbddfbc}{\index{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
 \index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}}
@@ -56,7 +60,55 @@ Destructor.
 
 Release Component instances. 
 
-Definition at line 18 of file list\+\_\+of\+\_\+components.\+py.
+Definition at line 20 of file list\+\_\+of\+\_\+components.\+py.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a4004918a4618fdd29fc8008f63b47495}{\index{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}!create\+\_\+and\+\_\+add\+\_\+component@{create\+\_\+and\+\_\+add\+\_\+component}}
+\index{create\+\_\+and\+\_\+add\+\_\+component@{create\+\_\+and\+\_\+add\+\_\+component}!lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}}
+\subsubsection[{create\+\_\+and\+\_\+add\+\_\+component}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+list\+\_\+of\+\_\+components.\+List\+Of\+Components.\+create\+\_\+and\+\_\+add\+\_\+component (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{position, }
+\item[{}]{lexeme}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a4004918a4618fdd29fc8008f63b47495}
+
+
+Create and add a component to the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the component in the multiword expression. \\
+\hline
+{\em lexeme} & Related lexeme. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components}{List\+Of\+Components} instance. 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file list\+\_\+of\+\_\+components.\+py.
+
+\hypertarget{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a5cb7d8774e6029c3177898d005a67049}{\index{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}!get\+\_\+components@{get\+\_\+components}}
+\index{get\+\_\+components@{get\+\_\+components}!lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components@{lmf\+::src\+::morphology\+::list\+\_\+of\+\_\+components\+::\+List\+Of\+Components}}
+\subsubsection[{get\+\_\+components}]{\setlength{\rightskip}{0pt plus 5cm}def lmf.\+src.\+morphology.\+list\+\_\+of\+\_\+components.\+List\+Of\+Components.\+get\+\_\+components (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_a5cb7d8774e6029c3177898d005a67049}
+
+
+Get the list of components. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components}{List\+Of\+Components} attribute 'component'. 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file list\+\_\+of\+\_\+components.\+py.
 
 
 
@@ -70,7 +122,7 @@ Component instances are owned by \hyperlink{classlmf_1_1src_1_1morphology_1_1lis
 
 
 
-Definition at line 16 of file list\+\_\+of\+\_\+components.\+py.
+Definition at line 18 of file list\+\_\+of\+\_\+components.\+py.
 
 
 

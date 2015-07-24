@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="16" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="16" bodyend="-1"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="18" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,7 +30,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="9" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="9" bodyend="17"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="11" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="11" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
@@ -43,7 +43,50 @@
 <para>Release Component instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="18" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="18" bodyend="25"/>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="20" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="20" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a4004918a4618fdd29fc8008f63b47495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.list_of_components.ListOfComponents.create_and_add_component</definition>
+        <argsstring></argsstring>
+        <name>create_and_add_component</name>
+        <briefdescription>
+<para>Create and add a component to the list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position of the component in the multiword expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lexeme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Related lexeme. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref> instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="28" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="28" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a5cb7d8774e6029c3177898d005a67049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lmf.src.morphology.list_of_components.ListOfComponents.get_components</definition>
+        <argsstring></argsstring>
+        <name>get_components</name>
+        <briefdescription>
+<para>Get the list of components. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components" kindref="compound">ListOfComponents</ref> attribute &apos;component&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="37" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="37" bodyend="42"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -51,11 +94,13 @@
     <detaileddescription>
 <para><verbatim>&quot;List of Components is a class representing the aggregative aspect of a multiword expression (MWE). The mechanism can also be applied recursively, so that an MWE way be comprised of components that are themselves MWEs. This class is used in the morphological pattern and MWE pattern packages.&quot; (LMF)
 </verbatim> </para>    </detaileddescription>
-    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="6" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="6" bodyend="25"/>
+    <location file="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" line="8" column="1" bodyfile="/Users/celine/Work/CNRS/workspace/HimalCo/dev/lib/lmf/src/morphology/list_of_components.py" bodystart="8" bodyend="42"/>
     <listofallmembers>
       <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1af1d3b99bc83eed991bffd96b3bbddfbc" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>__del__</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a2f5197e9468d65a9bda951b7cee8b922" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>__init__</name></member>
       <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1aa78e1a406920652b7cdc1318a03c168d" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>component</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a4004918a4618fdd29fc8008f63b47495" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>create_and_add_component</name></member>
+      <member refid="classlmf_1_1src_1_1morphology_1_1list__of__components_1_1_list_of_components_1a5cb7d8774e6029c3177898d005a67049" prot="public" virt="non-virtual"><scope>lmf::src::morphology::list_of_components::ListOfComponents</scope><name>get_components</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

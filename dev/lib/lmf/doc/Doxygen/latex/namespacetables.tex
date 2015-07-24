@@ -1,0 +1,153 @@
+\hypertarget{namespacetables}{\section{tables Namespace Reference}
+\label{namespacetables}\index{tables@{tables}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacetables_aab6cde738d50479c3c5e30496abe9b1f}{parser} = Option\+Parser()
+\item 
+tuple \hyperlink{namespacetables_a2afda4842d5e225c323bccb8a6acd91e}{options} = parser.\+parse\+\_\+args()
+\item 
+tuple \hyperlink{namespacetables_a1975763f19d6c9aef3a5b7becaf1084f}{in\+\_\+file} = open(options.\+input, \char`\"{}r\char`\"{}, encoding='utf-\/8')
+\item 
+tuple \hyperlink{namespacetables_afe00514807dd9e76c7ff40483db626f6}{out\+\_\+eng} = open(options.\+output\+\_\+eng, \char`\"{}w\char`\"{}, encoding='utf-\/8')
+\item 
+tuple \hyperlink{namespacetables_ad2465fc8e1cdec591a177bed2fdde2d7}{out\+\_\+fra} = open(options.\+output\+\_\+fra, \char`\"{}w\char`\"{}, encoding='utf-\/8')
+\item 
+string \hyperlink{namespacetables_a6821e34021c9b7b076d5e9df10a2b64a}{E\+O\+L} = '\textbackslash{}n'
+\item 
+string \hyperlink{namespacetables_ad441c656fe4d99ca32f027870b0eb314}{title\+\_\+eng} = \char`\"{}\char`\"{}\char`\"{}Words for which no close equivalent could be found\char`\"{}\char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_afb2322668f3f126cd578ae1d25c07957}{introduction\+\_\+eng} = \char`\"{}\char`\"{}\char`\"{}The list that follows groups words for which no close equivalents could be found. These negative pieces of information contain hints about the consultants' Na vocabulary and its 'soft shoulders'.\char`\"{}\char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_a0aadda1a5ce9f5d273022f631a8a28da}{title\+\_\+fra} = \char`\"{}\char`\"{}\char`\"{}Mots dont aucun équivalent n'a été trouvé\char`\"{}\char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_a26cd4412ae8563a5ee426d893f55bfd5}{introduction\+\_\+fra} = \char`\"{}\char`\"{}\char`\"{}Cette liste regroupe les mots dont aucun équivalent n'a été trouvé. Même s'il ne s'agit que d'informations négatives, elles éclairent les limites du vocabulaire na des consultants.\char`\"{}\char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_a8bbd43050092a96f2ed859cd38010ac9}{pattern} = r\char`\"{}$^\wedge$\textbackslash{}\textbackslash{}(\textbackslash{}w\{2,3\}) ?(.$\ast$)\$\char`\"{}
+\item 
+string \hyperlink{namespacetables_a73769ae2602de53f31750beff002ea18}{lx} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_ad032d6e991aa7a99d280c0b933e6e3f3}{ge} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_a5707a1dd645c7d5ca668e14f4cc8bcb3}{gn} = \char`\"{}\char`\"{}
+\item 
+string \hyperlink{namespacetables_aa23af5c229aa39625a1c29112f4b1b17}{gf} = \char`\"{}\char`\"{}
+\item 
+tuple \hyperlink{namespacetables_a275d1c279456ee271849bbe69bf7cc33}{result} = re.\+search(\hyperlink{namespacetables_a8bbd43050092a96f2ed859cd38010ac9}{pattern}, line)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetables_a6821e34021c9b7b076d5e9df10a2b64a}{\index{tables@{tables}!E\+O\+L@{E\+O\+L}}
+\index{E\+O\+L@{E\+O\+L}!tables@{tables}}
+\subsubsection[{E\+O\+L}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+E\+O\+L = '\textbackslash{}n'}}\label{namespacetables_a6821e34021c9b7b076d5e9df10a2b64a}
+
+
+Definition at line 26 of file tables.\+py.
+
+\hypertarget{namespacetables_ad032d6e991aa7a99d280c0b933e6e3f3}{\index{tables@{tables}!ge@{ge}}
+\index{ge@{ge}!tables@{tables}}
+\subsubsection[{ge}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+ge = \char`\"{}\char`\"{}}}\label{namespacetables_ad032d6e991aa7a99d280c0b933e6e3f3}
+
+
+Definition at line 52 of file tables.\+py.
+
+\hypertarget{namespacetables_aa23af5c229aa39625a1c29112f4b1b17}{\index{tables@{tables}!gf@{gf}}
+\index{gf@{gf}!tables@{tables}}
+\subsubsection[{gf}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+gf = \char`\"{}\char`\"{}}}\label{namespacetables_aa23af5c229aa39625a1c29112f4b1b17}
+
+
+Definition at line 54 of file tables.\+py.
+
+\hypertarget{namespacetables_a5707a1dd645c7d5ca668e14f4cc8bcb3}{\index{tables@{tables}!gn@{gn}}
+\index{gn@{gn}!tables@{tables}}
+\subsubsection[{gn}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+gn = \char`\"{}\char`\"{}}}\label{namespacetables_a5707a1dd645c7d5ca668e14f4cc8bcb3}
+
+
+Definition at line 53 of file tables.\+py.
+
+\hypertarget{namespacetables_a1975763f19d6c9aef3a5b7becaf1084f}{\index{tables@{tables}!in\+\_\+file@{in\+\_\+file}}
+\index{in\+\_\+file@{in\+\_\+file}!tables@{tables}}
+\subsubsection[{in\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+in\+\_\+file = open(options.\+input, \char`\"{}r\char`\"{}, encoding='utf-\/8')}}\label{namespacetables_a1975763f19d6c9aef3a5b7becaf1084f}
+
+
+Definition at line 14 of file tables.\+py.
+
+\hypertarget{namespacetables_afb2322668f3f126cd578ae1d25c07957}{\index{tables@{tables}!introduction\+\_\+eng@{introduction\+\_\+eng}}
+\index{introduction\+\_\+eng@{introduction\+\_\+eng}!tables@{tables}}
+\subsubsection[{introduction\+\_\+eng}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+introduction\+\_\+eng = \char`\"{}\char`\"{}\char`\"{}The list that follows groups words for which no close equivalents could be found. These negative pieces of information contain hints about the consultants' Na vocabulary and its 'soft shoulders'.\char`\"{}\char`\"{}\char`\"{}}}\label{namespacetables_afb2322668f3f126cd578ae1d25c07957}
+
+
+Definition at line 32 of file tables.\+py.
+
+\hypertarget{namespacetables_a26cd4412ae8563a5ee426d893f55bfd5}{\index{tables@{tables}!introduction\+\_\+fra@{introduction\+\_\+fra}}
+\index{introduction\+\_\+fra@{introduction\+\_\+fra}!tables@{tables}}
+\subsubsection[{introduction\+\_\+fra}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+introduction\+\_\+fra = \char`\"{}\char`\"{}\char`\"{}Cette liste regroupe les mots dont aucun équivalent n'a été trouvé. Même s'il ne s'agit que d'informations négatives, elles éclairent les limites du vocabulaire na des consultants.\char`\"{}\char`\"{}\char`\"{}}}\label{namespacetables_a26cd4412ae8563a5ee426d893f55bfd5}
+
+
+Definition at line 34 of file tables.\+py.
+
+\hypertarget{namespacetables_a73769ae2602de53f31750beff002ea18}{\index{tables@{tables}!lx@{lx}}
+\index{lx@{lx}!tables@{tables}}
+\subsubsection[{lx}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+lx = \char`\"{}\char`\"{}}}\label{namespacetables_a73769ae2602de53f31750beff002ea18}
+
+
+Definition at line 51 of file tables.\+py.
+
+\hypertarget{namespacetables_a2afda4842d5e225c323bccb8a6acd91e}{\index{tables@{tables}!options@{options}}
+\index{options@{options}!tables@{tables}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+options = parser.\+parse\+\_\+args()}}\label{namespacetables_a2afda4842d5e225c323bccb8a6acd91e}
+
+
+Definition at line 10 of file tables.\+py.
+
+\hypertarget{namespacetables_afe00514807dd9e76c7ff40483db626f6}{\index{tables@{tables}!out\+\_\+eng@{out\+\_\+eng}}
+\index{out\+\_\+eng@{out\+\_\+eng}!tables@{tables}}
+\subsubsection[{out\+\_\+eng}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+out\+\_\+eng = open(options.\+output\+\_\+eng, \char`\"{}w\char`\"{}, encoding='utf-\/8')}}\label{namespacetables_afe00514807dd9e76c7ff40483db626f6}
+
+
+Definition at line 15 of file tables.\+py.
+
+\hypertarget{namespacetables_ad2465fc8e1cdec591a177bed2fdde2d7}{\index{tables@{tables}!out\+\_\+fra@{out\+\_\+fra}}
+\index{out\+\_\+fra@{out\+\_\+fra}!tables@{tables}}
+\subsubsection[{out\+\_\+fra}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+out\+\_\+fra = open(options.\+output\+\_\+fra, \char`\"{}w\char`\"{}, encoding='utf-\/8')}}\label{namespacetables_ad2465fc8e1cdec591a177bed2fdde2d7}
+
+
+Definition at line 16 of file tables.\+py.
+
+\hypertarget{namespacetables_aab6cde738d50479c3c5e30496abe9b1f}{\index{tables@{tables}!parser@{parser}}
+\index{parser@{parser}!tables@{tables}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+parser = Option\+Parser()}}\label{namespacetables_aab6cde738d50479c3c5e30496abe9b1f}
+
+
+Definition at line 6 of file tables.\+py.
+
+\hypertarget{namespacetables_a8bbd43050092a96f2ed859cd38010ac9}{\index{tables@{tables}!pattern@{pattern}}
+\index{pattern@{pattern}!tables@{tables}}
+\subsubsection[{pattern}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+pattern = r\char`\"{}$^\wedge$\textbackslash{}\textbackslash{}(\textbackslash{}w\{2,3\}) ?(.$\ast$)\$\char`\"{}}}\label{namespacetables_a8bbd43050092a96f2ed859cd38010ac9}
+
+
+Definition at line 50 of file tables.\+py.
+
+\hypertarget{namespacetables_a275d1c279456ee271849bbe69bf7cc33}{\index{tables@{tables}!result@{result}}
+\index{result@{result}!tables@{tables}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}tuple tables.\+result = re.\+search({\bf pattern}, line)}}\label{namespacetables_a275d1c279456ee271849bbe69bf7cc33}
+
+
+Definition at line 56 of file tables.\+py.
+
+\hypertarget{namespacetables_ad441c656fe4d99ca32f027870b0eb314}{\index{tables@{tables}!title\+\_\+eng@{title\+\_\+eng}}
+\index{title\+\_\+eng@{title\+\_\+eng}!tables@{tables}}
+\subsubsection[{title\+\_\+eng}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+title\+\_\+eng = \char`\"{}\char`\"{}\char`\"{}Words for which no close equivalent could be found\char`\"{}\char`\"{}\char`\"{}}}\label{namespacetables_ad441c656fe4d99ca32f027870b0eb314}
+
+
+Definition at line 31 of file tables.\+py.
+
+\hypertarget{namespacetables_a0aadda1a5ce9f5d273022f631a8a28da}{\index{tables@{tables}!title\+\_\+fra@{title\+\_\+fra}}
+\index{title\+\_\+fra@{title\+\_\+fra}!tables@{tables}}
+\subsubsection[{title\+\_\+fra}]{\setlength{\rightskip}{0pt plus 5cm}string tables.\+title\+\_\+fra = \char`\"{}\char`\"{}\char`\"{}Mots dont aucun équivalent n'a été trouvé\char`\"{}\char`\"{}\char`\"{}}}\label{namespacetables_a0aadda1a5ce9f5d273022f631a8a28da}
+
+
+Definition at line 33 of file tables.\+py.
+

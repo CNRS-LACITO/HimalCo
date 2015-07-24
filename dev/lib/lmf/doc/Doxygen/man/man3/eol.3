@@ -1,0 +1,73 @@
+.TH "eol" 3 "Fri Jul 24 2015" "LMF library" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+eol \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "tuple \fBparser\fP = OptionParser()"
+.br
+.ti -1c
+.RI "tuple \fBoptions\fP = parser\&.parse_args()"
+.br
+.ti -1c
+.RI "tuple \fBin_file\fP = open(options\&.input, 'r', encoding='utf-8')"
+.br
+.ti -1c
+.RI "tuple \fBout_file\fP = open(options\&.output, 'w', encoding='utf-8')"
+.br
+.ti -1c
+.RI "string \fBEOL\fP = '\\n'"
+.br
+.ti -1c
+.RI "list \fBlines\fP = []"
+.br
+.ti -1c
+.RI "tuple \fBprevious_line\fP = lines\&.pop()"
+.br
+.ti -1c
+.RI "tuple \fBline\fP = previous_line\&.replace(\fBEOL\fP, ' ')"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "string eol\&.EOL = '\\n'"
+
+.PP
+Definition at line 22 of file eol\&.py\&.
+.SS "tuple eol\&.in_file = open(options\&.input, 'r', encoding='utf-8')"
+
+.PP
+Definition at line 12 of file eol\&.py\&.
+.SS "tuple eol\&.line = previous_line\&.replace(\fBEOL\fP, ' ')"
+
+.PP
+Definition at line 33 of file eol\&.py\&.
+.SS "list eol\&.lines = []"
+
+.PP
+Definition at line 28 of file eol\&.py\&.
+.SS "tuple eol\&.options = parser\&.parse_args()"
+
+.PP
+Definition at line 8 of file eol\&.py\&.
+.SS "tuple eol\&.out_file = open(options\&.output, 'w', encoding='utf-8')"
+
+.PP
+Definition at line 13 of file eol\&.py\&.
+.SS "tuple eol\&.parser = OptionParser()"
+
+.PP
+Definition at line 5 of file eol\&.py\&.
+.SS "tuple eol\&.previous_line = lines\&.pop()"
+
+.PP
+Definition at line 32 of file eol\&.py\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LMF library from the source code\&.
