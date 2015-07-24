@@ -21,7 +21,8 @@
 
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\charis[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
 
@@ -31,13 +32,15 @@
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\factual}[1]{\textsc{:fact}}
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
 
 \XeTeXlinebreaklocale 'zh' %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
  \newcommand{\bleu}[1]{{\color{blue}#1}}
 \newcommand{\rouge}[1]{{\color{red}#1}} 
-\newcommand{\tgf}[1]{\mo{#1}}
+\newcommand{\tgf}[1]{\begin{tabular}{l}\mo{#1}\\{\tiny #1}\end{tabular}}
 \newcommand{\tinynb}[1]{\tiny#1}
 
 \begin{document} 
@@ -59,34 +62,34 @@
 \citet{zeisler04}
 
 
-Proto-Trans-Himalayan Person Indexation System Hypothesis (henceforth $PI$ hypothesis) and those who argue that indexation systems are later innovations (the $\overline{PI}$ hypothesis)
 
 
 \citet{delancey89agreement}
+\citet{driem93agreement}
 \citet{lapolla92}
 
 
-\section{The `Umbrella' fallacy}
-Although analogical reasoning may prove useful for pedagogical purposes, in most cases it is a tool that may induce more confusion that clarity.
-
-In the beginning of her article, B. Zeisler presents the following `umbrella' analogy to ridicule the views of proponents of the $PI$ hypothesis, shown here with added references to the $PI$ vs $\overline{PI}$ debate.
-
-\begin{itemize}
-\item Premiss 1: Some members of my family have umbrellas, some don’t. = \textit{Some ST languages have person indexation, some don't.}
-\item Premiss 2: It is well-known that people who have umbrellas loose [sic] (or get rid of) them easily. = \textit{it is well known that languages easily lose person indexation.}
-\item Conclusion 1: Ergo, those members of my family who have no umbrellas must have lost (or got rid of) them. = \textit{ergo, the ST languages without person indexation must have lost it.}
-\item Conclusion 2: Ergo, all members of my family must have had umbrellas in the first place. \textit{ergo, all ST languages must have had person indexation in the first place.}
-\end{itemize}
-
-No proponent of the $PI$ hypothesis would subscribe to the views here caricatured by Zeisler's metaphor, and in any cases there are several reasons why this analogy is inappropriate. 
-
-First, umbrellas, in human societies, are \textit{alienable possessions} that one can own or dispose of at will, and that are not normally transmitted to one's descendants.
-
-On the contrary, person indexation is a fundamental morphological feature which can be lost or innovated, but which is generally inherited from the ancestral language. A better human analogy for person indexation would be an \textit{inalienable possession}.
-
-Second, the $PI$ hypothesis, as any serious hypothesis in historical linguistics, is not simply based on the presence vs absence of a particular feature, but on systemic commonalities, especially synchronically unexplainable common irregularities, a fact completely neglected by Zeisler.
-
-Third, Zeisler's doubts concerning the genetic relationship of Tibetan to the rest of the Sino-Tibetan is \textit{non sequitur}, and hardly deserves a detailed discussion.
+%\section{The `Umbrella' fallacy}
+%Although analogical reasoning may prove useful for pedagogical purposes, in most cases it is a tool that may induce more confusion that clarity.
+%
+%In the beginning of her article, B. Zeisler presents the following `umbrella' analogy to ridicule the views of proponents of the $PI$ hypothesis, shown here with added references to the $PI$ vs $\overline{PI}$ debate.
+%
+%\begin{itemize}
+%\item Premiss 1: Some members of my family have umbrellas, some don’t. = \textit{Some ST languages have person indexation, some don't.}
+%\item Premiss 2: It is well-known that people who have umbrellas loose [sic] (or get rid of) them easily. = \textit{it is well known that languages easily lose person indexation.}
+%\item Conclusion 1: Ergo, those members of my family who have no umbrellas must have lost (or got rid of) them. = \textit{ergo, the ST languages without person indexation must have lost it.}
+%\item Conclusion 2: Ergo, all members of my family must have had umbrellas in the first place. \textit{ergo, all ST languages must have had person indexation in the first place.}
+%\end{itemize}
+%
+%No proponent of the $PI$ hypothesis would subscribe to the views here caricatured by Zeisler's analogy, and in any cases there are several reasons why it is inappropriate. 
+%
+%First, umbrellas, in human societies, are \textit{alienable possessions} that one can own or dispose of at will, and that are not normally transmitted to one's descendants.
+%
+%On the contrary, person indexation is a fundamental morphological feature which can be lost or innovated, but which is generally inherited from the ancestral language. A better human analogy for person indexation would be an \textit{inalienable possession}.
+%
+%Second, the $PI$ hypothesis, as any serious hypothesis in historical linguistics, is not simply based on the presence vs absence of a particular feature, but on systemic commonalities, especially synchronically unexplainable common irregularities, a fact completely neglected by Zeisler.
+%
+%Third, Zeisler's doubts concerning the genetic relationship of Tibetan to the rest of the Sino-Tibetan is \textit{non sequitur}, and hardly deserves a detailed discussion.
 
 
 \section{The `Pronominalizing languages' fallacy}
@@ -123,7 +126,7 @@ Third, the hypothesis that, whenever pronouns, possessive markers and person ind
 
 Cases of pronouns derived from personal affixes are also found, especially in polysynthetic languages. For instance, in Ainu, the \textsc{1sg} pronoun \ipa{kuani} is in fact etymologically the nominalization of the \textsc{1sg} form of the existential copula (\ipa{ku-an-i} \textsc{1sg}-exist-\textsc{nmlz}, \citealt[31]{shibatani90japan}). Likewise, in Lakota the pronouns \textsc{1sg} \ipa{miyé}, \textsc{2sg} \ipa{niyé} and \textsc{3sg} \ipa{iyé} are in fact conjugated verb forms meaning `it is him, it is you, it is him' (\citealt[707;754]{ullrich08}).
 
-Grammaticalization pathways exist between person indexation markers and pronouns, but these pathways are by no means as linear and unidirectional as the use of a term such as `pronominalizing languages' does suggest. 
+Grammaticalization pathways exist between person indexation markers and pronouns, but these pathways are by no means as linear and unidirectional as the use of a term such as `pronominalizing languages' does suggest. The full history of person indexation in the ST family is a complex one, and a sweeping generalizations are harmful to the field.
 
 \section{Person indexation in Tangut}
 Given \citet{kepping94conjugation}'s lucid response to \citet{lapolla92} published more than twenty years ago, it is surprising that Zeisler still quotes the conclusions of the latter article concerning Tangut.
@@ -144,14 +147,14 @@ As pointed out by \citet{kepping94conjugation}, while agreement suffixes in Tang
 \toprule
 \multicolumn{3}{c}{Pronoun} &\multicolumn{3}{c}{Suffix} \\
 \midrule
-\mo{2098} & \ipa{ŋa²}  & 1\textsc{sg} & \mo{2098} & \ipa{ŋa²}  &1\textsc{sg} \\
-\mo{3926} & \ipa{nja²} & 2\textsc{sg} & \mo{4601} & \ipa{nja²} &2\textsc{sg} \\
-\mo{4028} &  \ipa{nji²} & 2\textsc{sg}  honorific or 2\textsc{pl} & \mo{4884} & \ipa{nji²} & 1\textsc{pl} and 2\textsc{pl} \\
+\tgf{2098} & \ipa{ŋa²}  & 1\textsc{sg} & \tgf{2098} & \ipa{ŋa²}  &1\textsc{sg} \\
+\tgf{3926} & \ipa{nja²} & 2\textsc{sg} & \tgf{4601} & \ipa{nja²} &2\textsc{sg} \\
+\tgf{4028} &  \ipa{nji²} & 2\textsc{sg}  honorific or 2\textsc{pl} & \tgf{4884} & \ipa{nji²} & 1\textsc{pl} and 2\textsc{pl} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-First, for the first person singular, while the pronoun \mo{2098} \ipa{ŋa²} is given the same reading as the \textsc{1sg} suffix, a second pronoun  the pronoun \tgf{0261} \ipa{mjo²} is also very common. In the chapters 1-6 of Leilin, there are 31 occurrences of the pronoun \mo{2098} \ipa{ŋa²}, 60 occurrences of \mo{2098} \ipa{ŋa²} as a \textsc{1sg} suffix, and 20 occurrences of  \tgf{0261} \ipa{mjo²}. This latter pronoun always trigger agreement with  the \mo{2098} \ipa{ŋa²} suffix when occurring as a core argument, as in example \ref{ex:tg:mjo}. Thus, despite the homophony and homography of the \textsc{1sg} pronoun and the \textsc{1sg} suffix,\footnote{On this topic, it should be noted that it is common in Tangut to write unrelated but homophonous (or perhaps, near homophonous) morphemes with the same character, see several examples in \citet{jacques11tangut.verb}.} it is a fact of the synchronic grammar of Tangut that the two are distinct -- otherwise, we would not expect agreement between \tgf{0261} \ipa{mjo²} and \mo{2098} \ipa{ŋa²}.
+First, for the first person singular, while the pronoun \mo{2098} \ipa{ŋa²} is given the same reading as the \textsc{1sg} suffix, a second pronoun  the pronoun \mo{0261} \ipa{mjo²} is also very common. In the \textit{juan} 3-6 of Leilin, there are 31 occurrences of the pronoun \mo{2098} \ipa{ŋa²}, 60 occurrences of \mo{2098} \ipa{ŋa²} as a \textsc{1sg} suffix, and 20 occurrences of  \mo{0261} \ipa{mjo²}. This latter pronoun always trigger agreement with  the \mo{2098} \ipa{ŋa²} suffix when occurring as a core argument, as in example \ref{ex:tg:mjo}. Thus, despite the homophony and homography of the \textsc{1sg} pronoun and the \textsc{1sg} suffix,\footnote{On this topic, it should be noted that it is common in Tangut to write unrelated but homophonous (or perhaps, near homophonous) morphemes with the same character, see several examples in \citet{jacques11tangut.verb}.} it is a fact of the synchronic grammar of Tangut that the two are distinct -- otherwise, we would not expect agreement between \mo{0261} \ipa{mjo²} and \mo{2098} \ipa{ŋa²}.
 
 \begin{exe}
 \ex \label{ex:tg:mjo}  
@@ -162,17 +165,17 @@ First, for the first person singular, while the pronoun \mo{2098} \ipa{ŋa²} is
 \glt I can make people see ghosts (Leilin 05.21B.4)
 \end{exe}.
 
-It is however with the honorific pronoun \tgf{4028} \ipa{nji²} and the SAP plural suffix \mo{4884} \ipa{nji²} that the difference is most telling. \tgf{4028} \ipa{nji²} is singular, and when serving as core argument, the verb takes the \textsc{2sg} \tgf{4601} \ipa{--nja²} suffix, as in \ref{ex:tg:toi}. No example of  \tgf{4028} \ipa{nji²} used with \mo{4884} \ipa{nji²} has been found in the corpus under study.
+It is however with the honorific pronoun \mo{4028} \ipa{nji²} and the SAP plural suffix \mo{4884} \ipa{nji²} that the difference is most telling. \mo{4028} \ipa{nji²} is singular, and when serving as core argument, the verb takes the \textsc{2sg} \mo{4601} \ipa{--nja²} suffix, as in \ref{ex:tg:toi}. No example of  \mo{4028} \ipa{nji²} used with \mo{4884} \ipa{nji²} has been found in the corpus under study.
  
 \begin{exe}
 \ex \label{ex:tg:toi}  
 \glll   \tgf{4028} 	\tgf{3986}\tgf{4893} 	\tgf{1139} 	\tgf{1526} 	\tgf{5880} 	\tgf{0524} \tgf{2590}\tgf{5591}\tgf{4601}\tgf{3916} \\
 \ipa{nji²}	\ipa{njɨ¹.wjɨ¹}	\ipa{.jij¹}	\ipa{tshji²}	\ipa{ŋwu²}	\ipa{dzju¹}	\ipa{.wjɨ²-lhjị²-nja²-sji²} \\
-\textsc{2sg:hon} mother.in.law  \textsc{antierg} serve \textsc{instr} order \textsc{pfv}-receive[B]-\textsc{2sg-pfv} \\
+\textsc{2sg:hon} mother.in.law  \textsc{antierg} serve \textsc{instr} order \textsc{pfv}-receive[B]-\textsc{2sg-ifr} \\
 \glt `It is you_{sg} who served (our) mother-in-law and received her instructions.' (Cixiaozhuan, 33.4, \citealt{jacques07textes})
 \end{exe}
 
-The suffix \tgf{4884} \ipa{nji²}, on the other hand, appears with first or second person plural, as in \ref{ex:tg:1pi}.
+The suffix \mo{4884} \ipa{nji²}, on the other hand, appears with first or second person plural, as in \ref{ex:tg:1pi}.
 
 \begin{exe}
 \ex \label{ex:tg:1pi}  
@@ -183,35 +186,47 @@ The suffix \tgf{4884} \ipa{nji²}, on the other hand, appears with first or seco
 \glt We are the descendants of Taibo. (Leilin 04.33A.4)
 \end{exe}
 
-Despite the fact that  \tgf{4028} \ipa{nji²} and \tgf{4884} \ipa{nji²} have identical readings, it is not obvious that the latter is derived from the former; 
+The hypothesis that the suffix \mo{4884} \ipa{nji²} is historically derived from the pronoun \mo{4028} \ipa{nji²} is possible. It implies that the singular honorific \textsc{2sg} originates from a \textsc{2pl} (a reasonable assumption), and that in verbal indexation the first vs second person plural distinction became neutralized to the expense of the first person, a rarer phenomenon, but not altogether unthinkable. The exact mechanism for this neutralization in itself is an interesting question, and may first have occurred for the first plural inclusive before affecting the first plural exclusive.
 
-XXX tbl with japhug, stau etc
+%\begin{table}[H]
+%\caption{SAP suffixes in Macro-Gyalrongic languages } \centering \label{tab:macrorgy}
+%\begin{tabular}{lllllll}
+%\toprule
+%Language &\textsc{1sg} & \textsc{2sg} &\textsc{1pl} & \textsc{2pl} & Source\\
+%\midrule
+%Japhug & \ipa{-a} & zero & \ipa{-j} & \ipa{-nɯ} & \citet{jacques10inverse} \\
+%Zbu & \ipa{-ŋ} & zero& \ipa{-jə} & \ipa{-ɲə} & \citet{gongxun14agreement} \\
+%Situ & \ipa{-ŋ} & \ipa{-n}& \ipa{-j} & \ipa{-ɲ} & \citet{linxr93jiarong} \\
+%Khroskyabs & \ipa{-ŋ} & \ipa{-n}& \ipa{-j} & \ipa{-n} & \citet{lai14person} \\
+%Stau & \ipa{-u} & zero & \ipa{-ã} & \ipa{-j} & \citet{jacques14rtau} \\
+%Muya & *\ipa{-ø} & *\ipa{-ɛ} & *\ipa{-e} & *\ipa{-e} & \citet{gao15menya} \\
+%\bottomrule
+%\end{tabular}
+%\end{table}
+
 
 \subsection{Stem Alternations}
-The most compelling proof that person indexation in Tangut is not recent, however, does not come from the pronouns. As I have argued in \citet{jacques09tangutverb} and \citet{jacques14tangoute}, Stem Alternations xxx
+The most compelling proof that person indexation in Tangut is not recent, however, does not come from the pronouns. As I have argued in \citet{jacques09tangutverb} and \citet{jacques14esquisse}, Stem Alternations xxx
 
-%\begin{tabular}{llllllll}
-%	\tgf{1542}&	\tgf{3508}&	\tgf{0100}&	\tgf{2798}&	\tgf{2987}&	\tgf{5481}&	\tgf{4547}&	\tgf{2098}\\
-%	\tinynb{1542}&	\tinynb{3508}&	\tinynb{0100}&	\tinynb{2798}&	\tinynb{2987}&	\tinynb{5481}&	\tinynb{4547}&	\tinynb{2098}\\
-%\end{tabular}
-%\begin{exe}
-%\ex \label{ex:tg:manger.b.1sg.3}  \vspace{-8pt}
-%\gll   \ipa{ku¹}	\ipa{bji²}	\ipa{lew¹}	\ipa{.jir²}	\ipa{lhjɨ̣¹}	\ipa{bo²}	\ipa{dzjo¹-ŋa²} \\
-%	alors sujet un cent coup bâton manger[B]-1sg{} \\
-%\glt Alors, moi, votre sujet, je recevrai cent coups de bâtons (Leilin 06.13A.5)
-%\end{exe}
+\begin{exe}
+\ex 
+\glll
+\tgf{1542}	\tgf{3508}	\tgf{0100}	\tgf{2798}	\tgf{2987}	\tgf{5481}	\tgf{4547}	\tgf{2098}\\
+   \ipa{ku¹}	\ipa{bji²}	\ipa{lew¹}	\ipa{.jir²}	\ipa{lhjɨ̣¹}	\ipa{bo²}	\ipa{dzjo¹-ŋa²} \\
+kkk \\
+\glt Alors, moi, votre sujet, je recevrai cent coups de bâtons (Leilin 06.13A.5)
+\end{exe}
 
 
-%\begin{tabular}{llllll}
-%	\tgf{2447}&	\tgf{1519}&	\tgf{5165}&	\tgf{2590}&	\tgf{4517}&	\tgf{2098}\\
-%	\tinynb{2447}&	\tinynb{1519}&	\tinynb{5165}&	\tinynb{2590}&	\tinynb{4517}&	\tinynb{2098}\\
-%\end{tabular}
-%\begin{exe}
-%\ex \label{ex:tg:manger.a.2.1sg}  \vspace{-8pt}
-%\gll   \ipa{ljo²}	\ipa{ɣu¹twụ¹}	\ipa{wjɨ²-dzji¹-ŋa²} \\
-%		frère.aîné à.la.place \dir{}-manger[A]-1\sg{} \\
-%\glt Mangez-moi à la place de mon frère! (Cixiaozhuan 17.7, \citealt[55-6]{jacques07textes})
-%\end{exe}
+\begin{exe}
+\ex \label{ex:2>1} 
+\glll	\tgf{2447}	\tgf{1519}\tgf{5165}	\tgf{2590}\tgf{4517}\tgf{2098}\\
+\ipa{ljo²}	\ipa{ɣu¹twụ¹}	\ipa{wjɨ²-dzji¹-ŋa²} \\
+brother instead \textsc{imp}-eat[A]-\textsc{1sg} \\
+\glt Eat me instead of my brother! (Cixiaozhuan 17.7, \citealt[55-6]{jacques07textes})
+\end{exe}
+
+
 %\begin{tabular}{llllllllll}
 %	\tgf{4689}&	\tgf{1531}&	\tgf{0866}&	\tgf{1139}&	\tgf{2393}&	\tgf{3456}&	\tgf{0705}&	\tgf{2219}&	\tgf{0046}&	\tgf{2098}\\
 %	\tinynb{4689}&	\tinynb{1531}&	\tinynb{0866}&	\tinynb{1139}&	\tinynb{2393}&	\tinynb{3456}&	\tinynb{0705}&	\tinynb{2219}&	\tinynb{0046}&	\tinynb{2098}\\
@@ -235,19 +250,192 @@ The most compelling proof that person indexation in Tangut is not recent, howeve
 %\glt  Aujourd'hui je vois l'armée partir, mais je ne verrai pas son retour. (Leilin 3.16B.6-7)
 %\end{exe}
 
+\begin{table}
+\caption{Attested forms of the ditransitive paradigm in Tangut}\centering \label{tab:paradigm}
+\begin{tabular}{lllll}
+\toprule
+	&	1\sg{}	&	2\sg{}	&	1/2\pl{}	&	3	\\
+	\midrule
+1\sg{}	&	?	&	A-\ipa{nja²}	&	?	&	 B-\ipa{ŋa²}	\\
+2\sg{}	&	A-\ipa{ŋa²}	&	B-\ipa{nja²}	&	A-\ipa{nji²}	&	 B-\ipa{nja²}	\\
+1/2\pl{}	&	 A-\ipa{ŋa²}	& ?	&	?	&	A-\ipa{nji²}	\\
+3	&	A-\ipa{ŋa²}	&	A-\ipa{nja²}	&	?	&	A 	\\
+\bottomrule
+\end{tabular}
+\end{table}
 
-At that time when LaPolla wrote his article, Tangut texts were not easily accessible for independent study, and stem alternations had not yet been fully described. Although \citet{nishida75} first suggested the their existence, this discovery was not taken into account by other scholars (even Kepping), and it was not until \citet{gong01huying} that it became widely known. 
+
+
+At that time when LaPolla wrote his article, Tangut texts were not easily accessible for independent study, and stem alternations had not yet been fully described. Although \citet{nishida75} first suggested the their existence, this discovery was not taken into account by other scholars (even \citealt{kepping85} and \citealt{driem91tangut}), and it was not until \citet{gong01huying} that it became widely known. 
  
 
+\subsection{Is person marking in Tangut optional?}
+To support his claim that Tangut person indexation is recent, 
+\citet{lapolla92} argues that person indexation in Tangut is optional, a sign in his view of it not being fully grammaticalized. He cites the unpublished paper \citet{ahrens90tangut} (whose corpus was based on Leilin like the present study) according to which:
 
-\section{Syntactic pivots in Gyalrong and Kiranti}
+\begin{itemize}
+\item `Verb agreement only occurs in quoted speech.'
+\item `Agreement is usually with the A and S argument, not with the P argument.'
+\item `When there are two SAPs involved in a clause, agreement is not necessarily with the P argument.'
+\end{itemize}
+
+In the following, the three claims are examined on the basis of data from the same corpus, enriched by knowledge of the modern Gyalrongic languages.
+
+The first claim is quite puzzling. Third person is zero marked in Tangut, so that a verb whose core arguments are all third person cannot receive person marking. The whole Leilin text is a series a short stories translated from Chinese from a third-person point of view. In the absence of a first-person narrator or first-person comments on the text, it is natural that first or second person will only occur in reported speech; this would be true in any language. What Ahrens here has `discovered' is not a property of tangut grammar, but a trivial consequence of how the nature of the text. A translation of this text in any language where third persons are unmarked for person would give the same result.
+
+Claim n°2 is false. Cases of indexation of P argument abound in Leilin (see above XXX)
+
+
+Claim n°3 is not so much false as incomplete. There are indeed a few cases where person indexation suffixes refer to core arguments, but to possessors or beneficiaries. Contrary to what Ahrens says, this occurs also with only one SAP argument, as in \ref{ex:tg:non.actant.indicie.tuer}.
+
+
+\begin{exe}
+\ex \label{ex:tg:non.actant.indicie.tuer}
+\glll
+\tgf{5354}	\tgf{3583}	\tgf{1326}\tgf{2833}	\tgf{2635}\tgf{5218}	\tgf{5604}\tgf{5113}	\tgf{4028}	\tgf{1139} \tgf{2455}\tgf{2129}	\tgf{4342}\tgf{4225}\tgf{5113}\tgf{4601}\tgf{3916}\\
+  \ipa{thjɨ²}	\ipa{tja¹}	\ipa{kjɨ¹djɨj²}	\ipa{xjow²tɕhjwo¹}	\ipa{dʑjɨ.wji¹}	\ipa{nji²}	\ipa{.jij¹}	\ipa{gji²bjij²}	\ipa{dja²-sja¹-.wji¹-nja²-sji²} \\
+  \textsc{dem} \textsc{top} certainly Feng.Chang \textsc{erg} \textsc{2sg:hon} \textsc{gen} wife \textsc{pfv}-kill-cause[A]-\textsc{2sg-ifr} \\
+\glt Given all of this, it is certainly Feng Chang (\zh{馮昌}) who had your wife killed. (Leilin 06.17A.6)
+\end{exe}
+
+The phenomenon, already described in \citet{kepping85}, is in no way indicative that Tangut person indexation is recent. Among Gyalrongic languages, some languages like Japhug completely exclude indexation of non-arguments (see section \ref{sec:rgyalrong}), while other languages like Khroskyabs allow it in very specific circumstances (see \citealt{lai14person}). It is unclear which of Khroskyabs or Japhug is more conservative here: pathways in both directions are conceivable, and likewise this property of Tangut person indexation might be an innovation (a type of extreme possessor raising) rather than a sign of recent grammaticalization.
+
+
+Actually, Tangut texts do show cases where verbs with a clear SAP core argument fail to show both indexation suffixes and stem alternation. Although the proponents of the hypothesis that Tangut person indexation is optional have never used such examples and appear to be unaware of their existence, it is a Tangutulogist's duty at this point to mention their existence and explain them.
+
+Example \ref{ex:hongnong} is atypical example of absence of person indexation of some verbs in Tangut. Although the S/A of all verbs in this paragraph is \textsc{2sg}, the verbs \mo{5113} \ipa{.wji¹},  \mo{749} \ipa{phji¹} and \mo{4039}(pronunciation unknown) have neither the suffix \mo{4601} \ipa{nja²} nor stem B as would be expected (there are indicated in red below). Only the last verbal form  \mo{4342}\mo{2511}\mo{4601}\mo{3916} \ipa{dja²}-\ipa{rjɨr²}-\ipa{nja²}-\ipa{sji²} has person marking (in blue).
+
+\begin{exe}
+\ex \label{ex:hongnong}
+\glll
+\tgf{4028} 	\tgf{2104} 	\tgf{2780}\tgf{5267}\tgf{3831} 	\tgf{5113} 	\tgf{4861} 	\tgf{2302}-\tgf{5880} 	\tgf{4408} 	\tgf{4663}\tgf{749} 	\tgf{2503} 	\tgf{1402}\tgf{3567} 	\tgf{289}\tgf{3266} 	\tgf{795}\tgf{5113} 	\tgf{1477} 	\tgf{4039} 	\tgf{5880} 	\tgf{4342}\tgf{2511}\tgf{4601}\tgf{3916} 	\tgf{3583} 	\tgf{5688} 	\tgf{290} \\
+\ipa{nji²} 	\ipa{ɕji¹} 	\ipa{kiow²ljɨj¹}\ipa{ljij²} 	\ipa{.wji¹} 	\ipa{zjọ²} 	\ipa{ljɨ¹}-\ipa{ŋwu²} 	\ipa{məə¹} 	\ipa{lha¹}-\ipa{phji¹} 	\ipa{kụ¹} 	\ipa{xũ¹}\ipa{luu²} 	\ipa{.we²}-\ipa{dzju²} 	\ipa{rjɨr²}-\ipa{.wji¹} 	\ipa{le²} 	\ipa{0} 	\ipa{ŋwu²} 	\ipa{dja²}-\ipa{rjɨr²}-\ipa{nja²}-\ipa{sji²} 	\ipa{tja¹} 	\ipa{.wa²} 	\ipa{sju²}  \\
+\textsc{2sg} first Jiangling.Ling \rouge{make[A]} time wind-\textsc{instr} fire extinguish-\rouge{cause[A]} after Hongnong city-lord \textsc{pfv}-\rouge{make[A]} tiger \rouge{ride} \textsc{instr} \bleu{\textsc{pfv}-go-\textsc{2sg-ifr}} \textsc{top} what be.like \\
+\glt First, when you were Jiangling Ling, you extinguished the fire with the wind, later, when you became Taishou of Hongnong, you went away riding a tiger. How did (you do that)? (Leilin, 04.13B.4)
+\end{exe}
+
+While such example might appear to deal a damaging blow to the hypothesis that Tangut person indexation was \textit{not} optional, it is important to read and understand Tangut texts in the context of its better understood modern relatives, in particular the Gyalrongic languages.
+
+
+All Gyalrongic languages described up to now have converbial forms that can bear some TAM markers, but no person indexation and evidential markers. In Japhug, these forms are   marked by the nominalization prefixes \ipa{kɤ--} or \ipa{sɤ--}, as in example \ref{ex:mAkApa.kW} (see \citealt{jacques14linking}).
+
+\begin{exe}
+\ex \label{ex:mAkApa.kW}
+\gll
+\ipa{tɕe}   	\ipa{ɯ-ŋgɯ}   	\ipa{nɯ} \ipa{tɕu}   	\ipa{paʁndza}   	\ipa{ɲɤ-raʁ}   	\ipa{tɕe,}   	\ipa{tɕendɤre}   	[<dian>   	<guan>   	\ipa{mɤ-kɤ-βzu}] 	\ipa{\textbf{kɯ}}   	\ipa{mɤ-kɤ-pa}   	\ipa{\textbf{kɯ}}   	\ipa{ɯ-jaʁ}   	\ipa{lo-tsɯm}   \\
+\textsc{lnk} \textsc{3sg}-inside \textsc{dem} \textsc{loc} pig.fodder \textsc{evd}-be.stuck \textsc{lnk}
+\textsc{lnk} electricity turn.off \textsc{neg-inf}-make \textsc{erg}  \textsc{neg-inf}-close \textsc{erg}  \textsc{3sg.poss}-hand \textsc{evd:upstream}-take.away \\
+\glt Some pig fodder got stuck inside (the machine) he reached his hand into it without turning it off, (Relatives, 372-3)
+\end{exe} 
+
+In Stau, where nominalization prefixes have disappeared (only  fossilized traces of them remain), the converbial forms are marked with suffixes such as \ipa{-dʑə} as in example \ref{tEphjidZE}. Note that the verb form \ipa{tə-pʰji-dʑə} \textsc{pfv}-run.away-\textsc{conv}(1) does not take the first person marker (otherwise \ipa{tə-pʰjã} would be expected, see \citealt{jacques14rtau}) (2) keeps the perfective directional prefix \ipa{tə-}, though cases without directional prefixes are also attested in converbial forms.
+
+\begin{exe}
+\ex \label{tEphjidZE}
+\gll \ipa{ŋa} 	\ipa{tə-pʰji-dʑə} 	\ipa{arədadu} 	\ipa{ɔrɔ} 	\ipa{la} 	\ipa{ʁə} 	\ipa{rə-ɕã} \\
+ \textsc{1sg} \textsc{pfv}-run.away-\textsc{conv} up up pass head \textsc{pfv:up}-go:\textsc{1pl} \\
+\glt I ran away and went up toward the mountain pass up there. (The hybrid yak, 86) 
+\end{exe}
+
+Returning back to example \ref{ex:hongnong}, we see that of the four verb forms without person marking, one takes a directional prefix, one is followed by the instrumental suffix \mo{5880} \ipa{ŋwu²} (actually, a probable cognate of the ergative \ipa{-w} in Stau), and one followed by the relator noun \mo{4861} \ipa{zjọ²} `time; when'. 
+
+What we have here is a \textit{converbial chain}, with four non-finite verbs lacking person markers but taking various TAM and subordination markers (although zero marked converbs are also possible) and the last verb, which has all the person and TAME markers, is the only finite one in the sentence.
+
+My claim is that Tangut person indexation (by which I mean suffixes AND stem alternation) is \textit{not} optional. This claim can be falsified if one finds counterexamples with the following characteristics:
+
+\begin{itemize}
+\item The sentence is complete (not from a fragment missing characters, or a sentence at the end of an isolated page).
+\item The sentence has a SAP core argument marked by an overt pronoun.
+\item The sentence is at the end of a quotation, and cannot be interpreted as a converb.
+\end{itemize}
+
+\section{Person indexation in Gyalrong and Kiranti} \label{sec:rgyalrong}
+\citet[53]{zeisler15eat} argues, quoting \citet[308]{lapolla92}, that `It should also be noted that several pronominalising Tibeto-Burman languages do not mark syntactic relations or semantic roles but simply person or, more precisely, speech act participant (1P and/ or 2P) involvement: Tangut, Gyarong, Nocte, Muya, Dulong, Kiranti, Hayu.'
+
+This statement is demonstrably false at least as far as two languages I have investigated, Japhug (Gyalrong) and Khaling (Kiranti), are concerned. In this paper, I solely focus on Japhug, on which my data are more plentiful.
+
+It is a fact that some person affixes in Japhug have the same form whether they refer to S, A or P. For instance, the same \textsc{1sg} \ipa{-a} suffix appears to mark S (\ref{ex:jaria}), A (\ref{ex:pWmtota}) or P (\ref{ex:pWwGmtoa}).
+
+\begin{exe}
+\ex \label{ex:jaria}
+\gll \ipa{jɤ-ari-a} \\
+\textsc{pfv}-go[II]-\textsc{1sg} \\
+\glt `I went (there)'.
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:pWmtota}
+\gll \ipa{pɯ-mto-t-a} \\
+\textsc{pfv}-see-\textsc{pst:tr}-\textsc{1sg} \\
+\glt `I saw him'.
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:pWwGmtoa}
+\gll \ipa{pɯ́-wɣ-mto-a} \\
+\textsc{pfv}-\textsc{inv}-see-\textsc{1sg} \\
+\glt `He saw me'.
+\end{exe}
+
+However, concluding from such data that the system of person indexation as a whole does not mark syntactic relations is simplistic.
+
+First, there are several affixes or morphological processes in Japhug that precisely occur only in specific configuration of A and P. Here is a list of the most important ones:
+
+\begin{enumerate}
+\item The past transitive \ipa{--t} suffix only occurs with a \textsc{1sg} or \textsc{2sg} A and a third person P in the perfective form. It is a portmanteau morpheme indicating both the person of the A and the P as well as TAM.
+\item The portmanteau \ipa{kɯ--} and \ipa{ta--} prefixes mark 2$\rightarrow$1 and 1$\rightarrow$2 respectively; if the indexation system only marked `SAP involvement' these two form would not be distinguished.
+\item In the perfective, when A and P are both third person, directional prefixes take a special form.
+\item Stem III is used in forms with a singular agent and a third person patient in non-past TAM categories.
+\end{enumerate}
+
+Second, in the case of ditransitive verbs, the indexation of the T vs R is not dependent on person hierarchy, but on the configuration of each verb individually. Some ditransitive verbs, like \ipa{mbi}, treat the R like the P of a monotransitive verb, and it is indexed on the verb.
+
+\begin{exe}
+\ex \label{ex:YWtambi}
+\gll \ipa{a-me} 	\ipa{nɯ} 	\ipa{nɤ-rʑaβ} 	\ipa{ɲɯ-ta-mbi} 	\ipa{ŋu} \\
+\textsc{1sg.poss}-daughter \textsc{dem} \textsc{2sg.poss}-wife \textsc{ipfv}-1$\rightarrow$2-give be:\textsc{fact} \\
+\glt I will give you my daughter in marriage.
+\end{exe}
+
+Other ditransitive verbs, which follow indirective alignment, treat the T like the P, while the R cannot be indexed on the verb and receives oblique case, as in \ref{ex:YWkhama}. Using the 1$\rightarrow$2 form \ipa{ɲɯ-ta-kho} \textsc{ipfv}-1$\rightarrow$2-give would mean `I will give you (to him)'.
+
+\begin{exe}
+\ex \label{ex:YWkhama}
+\gll \ipa{nɤʑɯɣ} 	\ipa{ɲɯ-kham-a} \ipa{ŋu} \\
+\textsc{2sg:gen} \textsc{ipfv}-give[III]-\textsc{1sg} be:\textsc{fact} \\
+\glt I will give it to you.
+\end{exe}
+
+The same is true of most ditransitive verbs; another example is \ipa{thu} `ask', as in \ref{ex:tuthea}; the form treating the \textsc{2sg} as the P, \ipa{tu-ta-thu} \textsc{ipfv}-1$\rightarrow$2-give can only mean `I asked you (in marriage, to your father)'.
+
+\begin{exe}
+\ex \label{ex:tuthea}
+\gll \ipa{nɤ-ɕki} 	\ipa{tu-the-a} \\
+\textsc{2sg-dat} \textsc{ipfv}-ask[III]-\textsc{1sg} \\
+\glt I ask you.
+\end{exe}
+
+In examples such as \ref{ex:YWkhama} and \ref{ex:tuthea}, we have a third person T and a second person R. If syntactic relations had no effect on person indexation in Japhug, and only the SAP > 3 hierarchy determined the use of a particular form, we would expect the \textsc{2sg} to be indexed on the verb regardless whether it is T or R.
+
+Third, verbs in Japhug only agree with core arguments, not with possessor of arguments. Thus, in \ref{ex:YWmNAm}, the verb \ipa{mŋɤm} cannot take the \textsc{1sg} suffix \ipa{--a} (such a form would be nonsensical).
+
+\begin{exe}
+\ex \label{ex:YWmNAm}
+\gll \ipa{a-xtu} 	\ipa{ɲɯ-mŋɤm} \\
+\textsc{1sg.poss}-belly \textsc{sens}-hurt \\
+\glt My belly hurts.
+\end{exe}
+
+Other Gyalrongic languages present similar, but slightly different systems (\citealt{lai14person}), and I would not be surprised to find languages differing from Japhug by all three properties described above. Lumping all languages with person indexation into one category on the exclusive basis of a superficial examination of partial paradigms, without actually reading text corpora in each  language, is unhelpful and detrimental to a proper understanding of the tremendous morphosyntactic diversity of the ST family.
 
 \section{Conclusion}
 
-We lack at the present moment the data to settle the $PI$ vs $\overline{PI}$ debate. Until Kiranti and Gyalrongic languages have been fully documented, the proto-languages of these groups reconstructed and the mass of data fully digested by the community of ST linguists, it is too early for a rigorous discussion based on an exhaustive account of the data. 
+We lack at the present moment the data to settle the debate on the antiquity of person indexation in ST. Until Kiranti and Gyalrongic languages have been fully documented, the proto-languages of these groups reconstructed and the mass of data fully digested by the community of ST linguists, it is too early for a rigorous discussion based on an exhaustive account of the data. 
 
 Some researchers participating in the debate choose data from second of third hand sources in piece-meal fashion, rather than investigating all languages on the basis of text corpora, as is done in Indo-European studies, and as should be done for any language family. What we most need at the present moment are good-quality descriptions of the languages most relevant to the debate, large corpora, and Neogrammarian-based historical linguistics.
 
+\charis
 \bibliographystyle{unified}
 \bibliography{bibliogj}
 
