@@ -1,5 +1,4 @@
 \_sh v3.0  583  MDF 4.0
-\_DateStampHasFourDigitYear
 
 \lx aɕi
 \wav adv-aCi
@@ -13346,6 +13345,16 @@
 \sy tɕhaʁla
 \dt 02/Jul/2014
 
+\lx rɟaspa
+\wav adv-rJAspa
+\ps adv
+\ge à peu près, plutôt
+\gn 差不多、比较
+\xv nɤ-tɕhomba rɟaspa to-mna tɕe ɲɯ-pe
+\xn 你的感冒差不多好了
+\sy nɤkɤro
+\dt 19/May/2014
+
 \lx rɟawu
 \wav n-rJawu
 \ps n
@@ -13470,16 +13479,6 @@
 \gn 簸箕 
 \hbf 630
 \dt 21/Apr/2012
-
-\lx rɟaspa
-\wav adv-rJAspa
-\ps adv
-\ge à peu près, plutôt
-\gn 差不多、比较
-\xv nɤ-tɕhomba rɟaspa to-mna tɕe ɲɯ-pe
-\xn 你的感冒差不多好了
-\sy nɤkɤro
-\dt 19/May/2014
 
 \lx rɟɤthaʁ
 \ps n
@@ -22453,6 +22452,15 @@ l
 \gn 一种鬼，矮人 
 \et tʰeɦu.raŋ
 \dt 09/May/2012
+
+\lx thɯrdu 
+\ps n 
+\ge poids (d'une balance)
+\gn 砝码
+\et tʰur.rdo
+
+\lx ʑɣɤsɯndo 
+\cf ndo
 
 \lx thɯrnaʁ
 \wav n-thWrnaR
@@ -50954,6 +50962,9 @@ l
 \un 可以跟|fv{ɯ-mdoʁ}“颜色”连用，表示“带着……颜色”
 \xv paʁ ɣɯ ɯ-pɯ to-ndo
 \xn 她怀了胎
+\cf nɤndɯndo
+\cf ando
+\cf nɤsnɯndo
 \se sɯndo
 \wav vt-sWndo
 \ps vt
@@ -50982,9 +50993,14 @@ l
 \gn 钉在一起、粘在一起
 \xv qraʁ ɯ-kɯ-spoʁ ci tu tɕe, ɕɤmtshoʁ pjɯ́-wɣ-no tɕe mbɣo cho qraʁ ni ɲɯ́-wɣ-sɤndɯndo ra
 \xn 铧头中间有个洞，在那里钉个钉子，把铧头钉在犁头上
-\cf nɤndɯndo
-\cf ando
-\cf nɤsnɯndo
+\se ʑɣɤsɯndo 
+\ps vi
+\pdl dir 
+\pdv kɤ-
+\ng caus 
+\ng refl
+\ge se faire attraper 
+\gn 被人抓
 \dt 30/Mar/2015
 
 \lx _ndom
@@ -58185,34 +58201,36 @@ l
 \wav vt-pa
 \wav vt-pa2
 \ps vt
-\pdl dir 
-\pdv kɤ-
-\pdl dir 
-\pdv tɤ-
 \sn 1
-\ge fermer 
-\gn 关
-\sn 2
 \ge faire
 \gn 办
-\hbf 1356 
-\xv kɯm kɤ-pe
-\xn 关门吧！
-\xv diandeng kɤ-pe
-\xn 关电灯吧！
-\xv khɯɣɲɟɯ kɤ-pe
-\xn 关窗户吧！
-\un |fv{ɯ-pɯ -pa}是“保管”的意思
-\xv laχtɕha ɯ-pɯ tɤ-pe
-\xn 你把东西保管好！
-\xv tɤ-lu tɤ-rʑaʁ kɯ-rɲɟi ɯ-pɯ kɤ-pa mɯ́j-khɯ tu-rpjɯ ɲɯ-ɕti
-\xn 牛奶不能长时间保存，不然就会腥(变质)
+\pdl dir 
+\pdv tɤ-
 \xv tɕhi tu-pe-a?
 \xn 我怎么办？
 \xv aʑo akɯ ɕe-a, nɤʑo tɕhi tɯ-pe
 \xn 我往东边去，你呢？
 \xv tɕhi tú-wɣ-pa ?
 \xn 怎么办？
+\xv kutɕu tɕhi ɯ-kɯ-pa jɤ-tɯ-ɣe?
+\xn 你来这里做什么？
+\sn 2
+\pdl dir 
+\pdv kɤ-
+\ge fermer 
+\gn 关
+\xv kɯm kɤ-pe
+\xn 关门吧！
+\xv @diandeng kɤ-pe
+\xn 关电灯吧！
+\xv khɯɣɲɟɯ kɤ-pe
+\xn 关窗户吧！
+\hbf 1356 
+\un |fv{ɯ-pɯ -pa}是“保管”的意思
+\xv laχtɕha ɯ-pɯ tɤ-pe
+\xn 你把东西保管好！
+\xv tɤ-lu tɤ-rʑaʁ kɯ-rɲɟi ɯ-pɯ kɤ-pa mɯ́j-khɯ tu-rpjɯ ɲɯ-ɕti
+\xn 牛奶不能长时间保存，不然就会腥(变质)
 \se nɯpa
 \ng autoben
 \xv ɣufsu (βzaŋsa) tɤ-nɯ-pa-tɕi
@@ -58226,8 +58244,8 @@ l
 \ps vs
 \pdl dir 
 \pdv tɤ-
-\ge être d'une certaine manière (s'emploie avec les adjectifs nus) 
-\gn 位于（和无前缀的形容词） 
+\ge auxiliaire employé avec les idéophones
+\gn 助动词（和状貌词连用） 
 \xv ko-nɯ-rŋgɯ tɕe, ɯ-sɤ-rŋgɯ-ŋga loŋloŋ ʑo ɲɯ-pa 
 \xn 他睡着了以后，床上是拱起来的
 \dt 09/Jun/2013
@@ -72935,9 +72953,3 @@ l
 \lf Component2 = rnaʁ
 \ps vs
 \dt 23/Jul/2015
-
-\lx thɯrdu 
-\ps n 
-\ge poids (d'une balance)
-\gn 砝码
-\et tʰur.rdo
