@@ -1284,5 +1284,4 @@
 \-expset
 \PreventNumbering
 \DisableNumbering
-\HideFields
 \-DatabaseType
