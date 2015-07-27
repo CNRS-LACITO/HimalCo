@@ -425,17 +425,20 @@ def format_etymology(lexical_entry, font, language):
         #result += u"\u2018" + lexical_entry.get_etymology_comment(term_source_language=language) + u"\u2019" + ". "
     return result
 
-def format_borrowed_word(lexical_entry, font, language):
+def format_borrowed_word(sense, font, language):
     result = ""
-    if lexical_entry.get_borrowed_word() is not None:
+    lang = sense.get_borrowed_word()
+    if lang is not None:
         if language == config.xml.French:
-            result += " \\textit{De~:} "
+            result += " Emprunt~: "
+            # Translate languages names for French version
+            lang = lang.replace(u"Chinese", u"chinois").replace(u"Tibetan", u"tibétain").lower()
         elif language == config.xml.English:
-            result += " \\textit{From:} "
-        result += lexical_entry.get_borrowed_word()
-        if lexical_entry.get_written_form() is not None:
-            result += " " + lexical_entry.get_written_form()
-        result += ". "
+            result += " Borrowing: "
+        result += lang
+        if sense.get_written_form() is not None:
+            result += " " + sense.get_written_form()
+        result += EOL
     return result
 
 def format_paradigm(lexical_entry, font, language):
@@ -526,6 +529,7 @@ def format_senses(lexical_entry, font, language):
         result += format_definition(sense, language_font, language=language) + EOL
         result += format_definition(sense, font[NATIONAL], language=config.xml.national)
         result += format_gloss(sense, font, language=language) + EOL
+        result += EOL + format_borrowed_word(sense, font, language=language) + EOL
         result += format_examples(sense, font, languages=[config.xml.vernacular, language, config.xml.national])
     return result
 
@@ -552,14 +556,13 @@ def tex_fra(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s%s%s\hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s%s%s\hspace{4pt} Ton~: %s.""" + EOL + "%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         format_uid(lexical_entry, font),\
         format_part_of_speech(lexical_entry, config.xml.French),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.French),\
-        format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_senses(lexical_entry, font, language=config.xml.French),
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.French),\
         format_related_forms(lexical_entry, font, language=config.xml.French))
@@ -586,14 +589,13 @@ def tex_eng(lexical_entry, font):
     # Do not display lexical entry if lexeme is '???' or '*'
     if lexical_entry.get_lexeme() == "???" or lexical_entry.get_lexeme() == "*":
         return tex_entry
-    tex_entry = (r"""%s%s%s%s\hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s%s" + EOL) % \
+    tex_entry = (r"""%s%s%s%s\hspace{4pt} Tone: %s.""" + EOL + "%s%s%s%s" + EOL) % \
         (format_lexeme(lexical_entry, config.xml.font),\
         tex.format_audio(lexical_entry, font).replace('$', "\\dollar"),\
         format_uid(lexical_entry, font),\
         format_part_of_speech(lexical_entry, config.xml.English),\
         format_tone(lexical_entry, config.xml.font),\
         format_etymology(lexical_entry, font=config.xml.font, language=config.xml.English),\
-        format_borrowed_word(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_senses(lexical_entry, font, language=config.xml.English),\
         format_paradigm(lexical_entry, font=config.xml.font, language=config.xml.English),\
         format_related_forms(lexical_entry, font, language=config.xml.English))

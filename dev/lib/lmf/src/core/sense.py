@@ -324,11 +324,10 @@ class Sense():
         This attribute is owned by Statement, which is owned by Definition.
         @return Statement attribute 'borrowedWord'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get borrowed word
-        if definition is not None:
-            return definition.get_borrowed_word()
+        for definition in self.get_definitions():
+            if definition.get_borrowed_word() is not None:
+                # Get borrowed word if any
+                return definition.get_borrowed_word()
 
     def set_written_form(self, written_form):
         """! @brief Set loan word.
@@ -350,11 +349,10 @@ class Sense():
         This attribute is owned by Statement, which is owned by Definition.
         @return Statement attribute 'writtenForm'.
         """
-        # Get the last Definition instance if any
-        definition = self.get_last_definition()
-        # If there is a Definition instance, get loan word
-        if definition is not None:
-            return definition.get_written_form()
+        for definition in self.get_definitions():
+            if definition.get_written_form() is not None:
+                # Get loan word if any
+                return definition.get_written_form()
 
     def set_etymology(self, etymology):
         """! @brief Set etymology.
