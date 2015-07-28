@@ -279,6 +279,7 @@ def handle_tones(text):
         result += found.group(1) + found.group(2)
         if len(found.group(3)) != 0:
             result += "\\textsubscript{" + found.group(3) + "}"
+        return result
     # Disyllabic: add a constraint on other syllables which must have at least 1 character (maximum 5)
     syllable = "([^" + tones + "#$]{1,5})(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
     # Handle words composed of 2, 3, 4, 5 syllables
@@ -293,6 +294,7 @@ def handle_tones(text):
                     result += found.group(i*3+3)
                 elif len(found.group(i*3+3)) != 0:
                     result += "\\textsubscript{" + found.group(i*3+3) + "}"
+            return result
     return result
 
 def handle_tilde(text):
