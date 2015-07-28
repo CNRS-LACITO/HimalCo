@@ -524,7 +524,9 @@ def format_senses(lexical_entry, font, language):
     senses.sort(key=lambda sense: sense.get_senseNumber(integer=True))
     for sense in senses:
         if sense.get_senseNumber() is not None:
-            result += sense.get_senseNumber() + ") "
+            # In LaTeX, "\ding{202}" represents '➊' character, "\ding{203}" '➋' character, etc.
+            code = 201 + int(sense.get_senseNumber())
+            result += "\ding{" + str(code) + "} "
         result += format_usage_notes(sense, font, language_font, language=language) + EOL
         result += format_definition(sense, language_font, language=language) + EOL
         result += format_definition(sense, font[NATIONAL], language=config.xml.national)
