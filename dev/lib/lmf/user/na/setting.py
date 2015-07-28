@@ -272,7 +272,7 @@ def handle_tones(text):
     result = ""
     tones = "˩˧˥".decode(encoding=ENCODING)
     # Monosyllabic
-    current_pattern = "([^" + tones + "#$]+)(#?[" + tones + "]{1,2}[$#]?)([abcd123]?)"
+    current_pattern = "([^" + tones + "#$]+)(#?[" + tones + "]{0,2}[$#]?)([abcd123]?)"
     pattern = "^" + current_pattern + "$"
     if re.search(pattern, text):
         found = re.match(pattern, text)
