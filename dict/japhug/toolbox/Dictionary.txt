@@ -48,8 +48,12 @@
 \gn 理所当然
 \xv alala, ʑatsa ɣi-a ɕti
 \xn 当然，我可以早点来
+\se ʁo alala ri
+\ps cnj
+\ge non seulement ... mais
+\gn 不光是……而且
 \xv nɤʑo nɤ-ŋga ʁo alala ri kɯmaʁ kɯ-tu nɯra kɯnɤ tɤ-ndɤm
-\xn 不光是你的衣服，有有其他所有的衣服都要带上
+\xn 不光是你的衣服，其他所有的衣服都要带上
 \dt 20/Jan/2015
 
 \lx alo
@@ -3690,15 +3694,14 @@
 \ps n
 \ge miel 
 \gn 蜂蜜 
+\se ɣʑɤzga ɯ-rqhu
+\ps n
+\ge alvéole 
+\gn 蜂房
 \hbf animal
 \xv ɣʑɤzga pɯ-phɯt-a / kɤ-tɕat-a
 \xn 我找了蜂蜜
 \dt 21/Aug/2012
-
-\lx ɣʑɤzga ɯ-rqhu
-\ps n
-\ge alvéole 
-\gn 蜂房
 
 \lx ɣʑo
 \wav n-GZo
@@ -7755,13 +7758,6 @@
 \ge Mangi (village de Gdongbrgyad)
 \gn 蒙岩村
 
-\lx mɤra ma
-\ps cnj
-\ge non seulement
-\gn 不但
-\xv jisŋi tɤ-rɯndzɤtshi-a tɕe tɯmgo nɯ mɤra ma tɤjko kɯnɤ tɤ-ndza-t-a
-\xn 我今天不但吃了饭，还吃了酸菜
-
 \lx mɤrdom
 \wav n-mArdom
 \ps n
@@ -9417,11 +9413,6 @@
 \ge pour cette raison
 \gn 因此
 \dt 20/May/2013
-
-\lx nɯ maʁ nɤ 
-\ps cnj 
-\ge sinon 
-\gn 不然
 
 \lx nɯdrɯβ
 \wav8 nWdrWB
@@ -20203,6 +20194,8 @@ l
 \ps np
 \ge sûtra 
 \gn （诵）经 
+\xv tɤ-rpi wuma ʑo kɯ-wxti ɲɤ-sɯ-βzu-nɯ pjɤ-ra
+\xn 只好请（喇嘛）诵经
 \dt 13/May/2012
 
 \lx tɤ-rpɯ
@@ -20225,8 +20218,12 @@ l
 \lx tɤ-rqhu
 \wav8 tArqhu
 \ps np
-\ge peau, écorce 
+\sn 1
+\ge enveloppe, coquille, carapace
 \gn 壳 
+\sn 2
+\ge écorce 
+\gn 树皮
 \dt 07/Aug/2012
 
 \lx tɤrʁaʁ
@@ -20252,21 +20249,14 @@ l
 \cf artaʁ
 \dt 13/May/2012
 
-\lx tɤ-rtɕhi
-\wav n-tArtChi
+\lx tɤ-rtɕi
+\wav n-tArtCi
 \ps np
 \ge complément alimentaire
 \gn 补品
-\xv a-rtɕhi kɤ-βzu ɲɯ-ra ma a-qhoχpa mɯ́j-sna
+\xv a-rtɕi kɤ-βzu ɲɯ-ra ma a-qhoχpa mɯ́j-sna
 \xn 要补养身体，因为内脏不好
 \dt 12/Aug/2012
-
-\lx tɤrtɕi
-\wav n-tArtCi
-\ps n
-\ge complément alimentaire 
-\gn 补品 
-\dt 13/May/2012
 
 \lx tɤ-rte
 \wav n-tArte
@@ -20285,7 +20275,7 @@ l
 \lx tɤrtoʁlu
 \wav n-tArtoRlu
 \ps n
-\ge première traite d'une vache après qu'elle ait fait un veau, devient dur et jaunâtre lorsqu'on le fait cuire 
+\ge colostrum
 \gn 初乳，母牛下了崽子之后第一次挤的奶，熬了以后变硬 
 \xv nɯŋa ɲo-ɬoʁ tɕe ɯ-tɤrtoʁlu pɯ-arɕo pɯ-tsu 
 \xn 奶牛生了仔，但是初乳的阶段已经过了
@@ -20297,6 +20287,8 @@ l
 \ge vague 
 \gn 波浪、波纹 
 \hbf 48
+\xv tɤrtsa to-βzu
+\xn 起了波浪
 \dt 26/Apr/2014
 
 \lx tɤ-rtsɤɣ
@@ -20345,15 +20337,17 @@ l
 \gn 数数
 \xv ɯ-rtsɯz ko-ndo (=ɯ-χsɤr ko-ndo)
 \xn 他记下了数字
+\et rtsis
+\cf rtsi
 \dt 25/Nov/2014
 
-\lx tɤru
+\lx tɤru¹
 \ps n
 \ge chef de village 
 \gn 寨首 
 \hbf 182
 
-\lx tɤru
+\lx tɤru²
 \wav n-tAru
 \ps n
 \ge espèce d'arbre 
@@ -20571,9 +20565,7 @@ l
 \ge selle 
 \gn 马鞍 
 \hbf 588
-\dt 13/May/2012
-
-\lx tɤ-sno ɯ-jaʁ
+\se tɤ-sno ɯ-jaʁ
 \wav8 tAsno_WjaR
 \wav8 tAsno_WjaR2
 \ps n
@@ -20583,7 +20575,7 @@ l
 \dn 鞍鞯就是接触马背的部份，保护马的身子，是用厚的毡子做出来的，直接贴在鞍子的下面
 \dv ma tɤ-sno ɯ-si nɯnɯ ɯ-βri ɯ-taʁ nɯtɕu a-mɤ-kɤ-ɤtɯɣ ra ma tɕe tɤ́-wɣ-ntɕhoz tɤ-ŋke tɕendɤre ɯ-βri nɯ pjɯ-phɯt tu-ti-nɯ tɕe, ɯ-βri nɯ pjɯ-qraʁ ŋu loβ
 \dn 因为马鞍的木头部份不要接触到马的身子，不然使用的时候，马走动的时候，会伤害到它的身子
-\dt 20/Dec/2012
+\dt 13/May/2012
 
 \lx tɤ-snom
 \wav n-tAsnom
@@ -21597,8 +21589,10 @@ l
 \xn 她什么都能做
 \xv tɕhi ɯ-skɤt ŋu, ɯ-ɲɯ́-tɯ-tso?
 \xn 你知道什么意思吗？
-\xv tɕhi maʁ nɤ
-\xn 至少
+\se tɕhi maʁ nɤ
+\ps cnj
+\ge au moins  
+\gn 至少
 \cf tshi⁴
 \dt 17/Jan/2015
 
@@ -21608,11 +21602,6 @@ l
 \gn 用树干刻成的楼梯 
 \hbf 520
 \dt 25/Dec/2012
-
-\lx tɕhi maʁ nɤ 
-\ps cnj 
-\ge au moins  
-\gn 至少
 
 \lx tɕhiɕɤl
 \wav n-tChiCAl
@@ -44423,6 +44412,7 @@ l
 \xn 我的菜刀滑了一下，切到了我的手
 \xv khɯna nɯ-lɯɣ
 \xn 狗脱链了
+\cf ɕlɯɣ
 \se sɯɣlɯɣ
 \wav vt-sWGlWG
 \ps vt
@@ -44445,7 +44435,6 @@ l
 \xn 狗脱链了
 \xv tɯrme kú-wɣ-ja ri ɲɤ-ʑɣɤsɯɣlɯɣ
 \xn 他被关（进监狱），但是逃脱了
-\cf ɕlɯɣ
 \dt 20/May/2013
 
 \lx _lɯz
@@ -44635,17 +44624,19 @@ l
 \ps vs
 \ge ne pas être
 \gn 不是
-\se nɯ maʁ nɤ
-\ge ou bien, sinon
-\gn 不然、要么……要么
-\se tɕhi maʁ nɤ
-\ge au moins
-\gn 至少
 \an ŋu
 \cf rɯkɯmaʁ
 \cf nɯkɯmaʁ
 \cf nɤɣmaʁ
 \cf kɯmaʁ
+\se nɯ maʁ nɤ
+\ps cnj
+\ge ou bien, sinon
+\gn 不然、要么……要么
+\se tɕhi maʁ nɤ
+\ps cnj
+\ge au moins
+\gn 至少
 \dt 30/Mar/2015
 
 \lx _mɤɕi
@@ -45909,7 +45900,6 @@ l
 \pdv tɤ-
 \ge préparer 
 \gn 准备 
-\un 不能带名物化动词
 \hbf 1812 
 \xv laχtɕha tɤ-mɲɤm 
 \xn 你准备东西吧
@@ -45917,12 +45907,13 @@ l
 \xn 你准备木料吧
 \xv kɤ-ndza tɤ-mɲɤm 
 \xn 你准备食物吧
-\xv nɤ-ŋga tɤ-mɲota
+\xv nɤ-ŋga tɤ-mɲo-t-a
 \xn 我给你准备了衣服
-\xv nɤ-tʂha tɤ-mɲota
+\xv nɤ-tʂha tɤ-mɲo-t-a
 \xn 我给你准备早饭
-\xv nɤ-kɤnɤma tɤ-mɲota
+\xv nɤ-kɤ-nɤma tɤ-mɲo-t-a
 \xn 我准备了你的工作
+\sy nɯftɕaka
 \se rɤmɲo
 \ps vi
 \ng apass
@@ -45948,7 +45939,6 @@ l
 \xn 在损失发生之前我做好准备了 
 \xv mɤ-mbɯt ɯ-jtsi, mɤ-ɲɟo ɯ-mɲoz
 \xn 倒塌之前顶柱子，损失到来以前要预防
-\sy nɯftɕaka
 \dt 05/Oct/2014
 
 \lx _mŋɤm
@@ -59356,7 +59346,12 @@ l
 \xn 你需要什么？
 \xv aʑɯɣ kɯ-ra me
 \xn 我什么也不需要
-\cf mɤra ma
+\se mɤ-ra ma 
+\ps cnj
+\ge non seulement
+\gn 不但
+\xv jisŋi tɤ-rɯndzɤtshi-a tɕe tɯmgo nɯ mɤra ma tɤjko kɯnɤ tɤ-ndza-t-a
+\xn 我今天不但吃了饭，还吃了酸菜
 \dt 13/May/2014
 
 \lx _raŋ
