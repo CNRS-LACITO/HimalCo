@@ -559,41 +559,41 @@ sub generation_reflexive_paradigms_eng {
         $vowel2 = "";
         $vowel3 = "";
     }
-    #$result = $result.transcr($theme_A."ŋʌ"."   ".$theme_B."i"." ". $theme_C."ki"." ".$theme_D." ".$theme_E."ni ".$theme_F.$vowel1."ti  ".$theme_H."tɛ")." \n";
+    #$result = $result.ipa($theme_A."ŋʌ"."   ".$theme_B."i"." ". $theme_C."ki"." ".$theme_D." ".$theme_E."ni ".$theme_F.$vowel1."ti  ".$theme_H."tɛ")." \n";
     $result = $result."\n\n";
 
     if ($variable1 =~ /[ptkmnŋrl].r$/) {
         $result = $result.begin_table();
         $result = $result.caption_eng($rime.".vr", $theme_P."sinɛ", $variable2);
         $result = $result.begin_tabular();
-        $result = $result."\\mytextsc{1s} &".transcr($theme_P."siŋʌ"." &".$theme_P."tʌsu")." \\\\ \n";
-        $result = $result."\\mytextsc{1di} &".transcr($theme_G."siji"." &".$theme_G."sîjti")."   \\\\\n";
-        $result = $result."\\mytextsc{1de} &".transcr($theme_G."siju"." &".$theme_G."sîjtu")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pi} &".transcr($theme_C2."siki"." &".$theme_C2."siktiki")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pe} &".transcr($theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ")."   \\\\ \n";
-        $result = $result."\\mytextsc{2s} &".transcr(" ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije")."  \\\\ \n";
-        $result = $result."\\mytextsc{2d} &".transcr(" ʔi".$theme_G."siji"." & ʔi".$theme_G."sîjti &".$theme_G."sîjje")."    \\\\\n";
-        $result = $result."\\mytextsc{2p} &".transcr(" ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje")."  \\\\ \n";
-        $result = $result."\\mytextsc{3s} & ".transcr($theme_P."si & ".$theme_P."tɛsi")."   \\\\ \n";
-        $result = $result."\\mytextsc{3d} & ".transcr($theme_G."siji"." & ".$theme_G."sîjti")."   \\\\ \n";
-        $result = $result."\\mytextsc{3p} & ".transcr($theme_P."sinu  & ".$theme_P."tɛnnu")." \\\\ \n";
+        $result = $result."\\mytextsc{1s} &".ipa($theme_P."siŋʌ"." &".$theme_P."tʌsu")." \\\\ \n";
+        $result = $result."\\mytextsc{1di} &".ipa($theme_G."siji"." &".$theme_G."sîjti")."   \\\\\n";
+        $result = $result."\\mytextsc{1de} &".ipa($theme_G."siju"." &".$theme_G."sîjtu")."   \\\\ \n";
+        $result = $result."\\mytextsc{1pi} &".ipa($theme_C2."siki"." &".$theme_C2."siktiki")."   \\\\ \n";
+        $result = $result."\\mytextsc{1pe} &".ipa($theme_C2."sikʌ"." &".$theme_C2."siktʌkʌ")."   \\\\ \n";
+        $result = $result."\\mytextsc{2s} &".ipa(" ʔi".$theme_P."si & ʔi".$theme_P."tɛsi &".$theme_P."sije")."  \\\\ \n";
+        $result = $result."\\mytextsc{2d} &".ipa(" ʔi".$theme_G."siji"." & ʔi".$theme_G."sîjti &".$theme_G."sîjje")."    \\\\\n";
+        $result = $result."\\mytextsc{2p} &".ipa(" ʔi".$theme_P."sini  & ʔi".$theme_P."tɛnnu &".$theme_P."nuje")."  \\\\ \n";
+        $result = $result."\\mytextsc{3s} & ".ipa($theme_P."si & ".$theme_P."tɛsi")."   \\\\ \n";
+        $result = $result."\\mytextsc{3d} & ".ipa($theme_G."siji"." & ".$theme_G."sîjti")."   \\\\ \n";
+        $result = $result."\\mytextsc{3p} & ".ipa($theme_P."sinu  & ".$theme_P."tɛnnu")." \\\\ \n";
         $result = $result.end();
     }
     elsif ($variable1 =~ /[aɛeiou]_r$/) {
         $result = $result.begin_table();
-        $result = $result."\\caption{\\label{".$rime.".vr.eng} ".transcr($theme_2A."̂nsinɛ  ``").$variable2."\"  }\n";
+        $result = $result."\\caption{\\label{".$rime.".vr.eng} ".ipa($theme_2A."̂nsinɛ  ``").$variable2."\"  }\n";
         $result = $result.begin_tabular();
-        $result = $result."\\mytextsc{1s} &".transcr($theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu")." \\\\ \n";
-        $result = $result."\\mytextsc{1di} &".transcr($theme_2A."ssiji"." &".$theme_2A."ssîjti")."   \\\\\n";
-        $result = $result."\\mytextsc{1de} &".transcr($theme_2A."ssiju"." &".$theme_2A."ssîjtu")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pi} &".transcr($theme_2A."ssiki"." &".$theme_2A."ssiktiki")."   \\\\ \n";
-        $result = $result."\\mytextsc{1pe} &".transcr($theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ")."   \\\\ \n";
-        $result = $result."\\mytextsc{2s} &".transcr(" ʔi".$theme_2A."̂nsi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije")."  \\\\ \n";
-        $result = $result."\\mytextsc{2d} &".transcr(" ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîjti &".$theme_2A."ssîjje")."    \\\\\n";
-        $result = $result."\\mytextsc{2p} &".transcr(" ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje")."  \\\\ \n";
-        $result = $result."\\mytextsc{3s} & ".transcr($theme_2A."̂nsi & ".$theme_2A."̂ntɛsi")."   \\\\ \n";
-        $result = $result."\\mytextsc{3d} & ".transcr($theme_2A."ssiji"." & ".$theme_2A."ssîjti")."   \\\\ \n";
-        $result = $result."\\mytextsc{3p} & ".transcr($theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu")." \\\\ \n";
+        $result = $result."\\mytextsc{1s} &".ipa($theme_2A."̂nsiŋʌ"." &".$theme_2A."̂ntʌsu")." \\\\ \n";
+        $result = $result."\\mytextsc{1di} &".ipa($theme_2A."ssiji"." &".$theme_2A."ssîjti")."   \\\\\n";
+        $result = $result."\\mytextsc{1de} &".ipa($theme_2A."ssiju"." &".$theme_2A."ssîjtu")."   \\\\ \n";
+        $result = $result."\\mytextsc{1pi} &".ipa($theme_2A."ssiki"." &".$theme_2A."ssiktiki")."   \\\\ \n";
+        $result = $result."\\mytextsc{1pe} &".ipa($theme_2A."ssikʌ"." &".$theme_2A."siktʌkʌ")."   \\\\ \n";
+        $result = $result."\\mytextsc{2s} &".ipa(" ʔi".$theme_2A."̂nsi & ʔi".$theme_2A."̂ntɛsi &".$theme_2A."̂nsije")."  \\\\ \n";
+        $result = $result."\\mytextsc{2d} &".ipa(" ʔi".$theme_2A."ssiji"." & ʔi".$theme_2A."ssîjti &".$theme_2A."ssîjje")."    \\\\\n";
+        $result = $result."\\mytextsc{2p} &".ipa(" ʔi".$theme_2A."̂nsini  & ʔi".$theme_2A."̂ntɛnnu &".$theme_2A."̂nnuje")."  \\\\ \n";
+        $result = $result."\\mytextsc{3s} & ".ipa($theme_2A."̂nsi & ".$theme_2A."̂ntɛsi")."   \\\\ \n";
+        $result = $result."\\mytextsc{3d} & ".ipa($theme_2A."ssiji"." & ".$theme_2A."ssîjti")."   \\\\ \n";
+        $result = $result."\\mytextsc{3p} & ".ipa($theme_2A."̂nsinu  & ".$theme_2A."̂ntɛnnu")." \\\\ \n";
         $result = $result.end();
     }
 
@@ -605,7 +605,7 @@ sub begin_table {
 }
 
 sub caption_eng{
-    return "\\caption{\\label{".$_[0].".eng} ".transcr($_[1])."  \"".$_[2]."\"  }\n";
+    return "\\caption{\\label{".$_[0].".eng} ".ipa($_[1])."  \"".$_[2]."\"  }\n";
 }
 
 sub begin_tabular {
@@ -614,6 +614,21 @@ sub begin_tabular {
 
 sub end {
     return "\\bottomrule\n\\end{tabular}\n\\end{table}\n";
+}
+
+sub ipa {
+    my $string = "";
+    my @words = split('&', $_[0]);
+    foreach my $word (@words) {
+        # Delete spaces at the beginning of the word if any
+        $word =~ s/^\s+//;
+        # Delete spaces at the end of the word if any
+        $word =~ s/\s+$//;
+        $string = $string."\\ipa{".$word."} & ";
+    }
+    # Remove last " & " characters
+    $string = substr($string, 0, length($string) - 3);
+    return $string;
 }
 
 sub generate_reflexive_paradigms_eng {
