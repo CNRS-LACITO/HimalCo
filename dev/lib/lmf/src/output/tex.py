@@ -50,17 +50,21 @@ def insert_references(lexical_entry):
             text += "\\ref{" + spelling_variant + ".vr.eng}" + EOL
     return text
 
-def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[]):
+def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to_tex, font=None, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, paradigms=[], tables=[], title=None, tex_language=None):
     """! @brief Write a LaTeX file.
     Note that the lexicon must already be ordered at this point. Here, parameters 'items' and 'sort_order' are only used to define chapters.
     @param object The LMF instance to convert into LaTeX output format.
     @param filename The name of the LaTeX file to write with full path, for instance 'user/output.tex'.
-    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'. Deafult value is None.
+    @param preamble The name of the LaTeX file with full path containing the LaTeX header of the document, for instance 'user/config/japhug.tex'. Default value is None.
+    @param introduction The name of the LaTeX file with full path containing the LaTeX introduction of the document, for instance 'user/config/introduction.tex'. Default value is None.
     @param lmf2tex A function giving the mapping from LMF representation information that must be written to LaTeX commands, in a defined order. Default value is 'lmf_to_tex' function defined in 'src/config/tex.py'. Please refer to it as an example.
     @param font A Python dictionary giving the vernacular, national, regional fonts to apply to a text in LaTeX format.
     @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
     @param sort_order Default value is 'None', which means that the LaTeX output is alphabetically ordered.
     @param paradigms A Python list of LaTeX filenames with full path containing the paradigms in LaTeX format. Default value is an empty list.
+    @param tables The name of the LaTeX file with full path containing some notes to add at the end of the LaTeX document, for instance 'user/config/conclusion.tex'. Default value is None.
+    @param title A Python string containing the title of the LaTeX document. Default value is None.
+    @param tex_language A Python string giving the default language to set in LaTeX.
     """
     import string, os
     # Define font
@@ -69,6 +73,11 @@ def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to
     tex_file = open_write(filename)
     # Add file header if any
     tex_file.write(file_read(preamble))
+    # Continue the header if needed
+    if title is not None:
+        tex_file.write("\\title{" + title + "}" + EOL)
+    if tex_language is not None:
+        tex_file.write("\setdefaultlanguage{" + tex_language + "}" + EOL)
     # Insert LaTeX commands to create a document
     tex_file.write(EOL + "\\begin{document}" + EOL)
     tex_file.write("\\maketitle" + EOL)
