@@ -90,21 +90,31 @@ class TestTexFunctions(unittest.TestCase):
         tex_write(lexical_resource, tex_filename)
         tex_file = open(tex_filename, "r")
         begin_lines = [EOL,
+            "\\begin{document}" + EOL,
+            "\\maketitle" + EOL,
+            "\\newpage" + EOL,
+            EOL,
+            "\\def\\mytextsc{\\bgroup\\obeyspaces\\mytextscaux}" + EOL,
+            "\\def\\mytextscaux#1{\\mytextscauxii #1\\relax\\relax\\egroup}" + EOL,
+            "\\def\\mytextscauxii#1{%" + EOL,
+            "\\ifx\\relax#1\\else \\ifcat#1\\@sptoken{} \\expandafter\\expandafter\\expandafter\\mytextscauxii\\else" + EOL,
+            "\\ifnum`#1=\\uccode`#1 {\\normalsize #1}\\else {\\footnotesize \\uppercase{#1}}\\fi \\expandafter\\expandafter\\expandafter\\mytextscauxii\\expandafter\\fi\\fi}" + EOL,
+            EOL,
+            "\\setlength\\parindent{0cm}" + EOL,
+            EOL,
             "\\addmediapath{.}" + EOL,
             "\\addmediapath{./mp3}" + EOL,
             "\\addmediapath{./wav}" + EOL,
             "\\graphicspath{{" + os.path.abspath('.') + "/src/output/img/}}" + EOL,
             EOL,
-            "\\begin{document}" + EOL,
-            "\\maketitle" + EOL,
             "\\newpage" + EOL,
             "\\begin{multicols}{2}" + EOL,
             EOL
-            ]
+        ]
         end_lines = [
             "\end{multicols}" + EOL,
             "\end{document}" + EOL
-            ]
+        ]
         expected_lines = [
             "\\newpage" + EOL,
             "\\section*{\\centering- \\textbf{\ipa{H}} \\textbf{\ipa{h}} -}" + EOL,
@@ -115,7 +125,7 @@ class TestTexFunctions(unittest.TestCase):
             "\lhead{\\firstmark}" + EOL,
             "\\rhead{\\botmark}" + EOL,
             EOL
-            ]
+        ]
         self.assertListEqual(begin_lines + expected_lines + end_lines, tex_file.readlines())
         tex_file.close()
         # Customize mapping
@@ -132,7 +142,7 @@ class TestTexFunctions(unittest.TestCase):
                 result += my_lmf_tex[attribute](entry)
             return result
         # Write LaTeX file and test result
-        tex_write(lexical_resource, tex_filename, None, lmf2tex, font)
+        tex_write(lexical_resource, tex_filename, None, None, lmf2tex, font)
         tex_file = open(tex_filename, "r")
         expected_lines = [
             "\\newpage" + EOL,
