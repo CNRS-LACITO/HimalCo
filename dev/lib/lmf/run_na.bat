@@ -18,7 +18,10 @@ python user/na/alexis/run_na.py -a > log.txt
 ::python user/na/alexis/run_na.py -a -c
 
 :: Generate PDF: add xelatex binary location to your PATH environment variable or set following variable
-set target="C:/Program Files (x86)/MiKTeX 2.9/miktex/bin/xelatex.exe"
+:: Earlier path:
+:: set target="C:/Program Files (x86)/MiKTeX 2.9/miktex/bin/xelatex.exe"
+:: Path on Alexis's computer:
+set target="C:/Programmes/MiKTeX 2.9/miktex/bin/x64/xelatex.exe"
 %target% -output-directory=user/na/result/ user/na/result/dictionary_eng.tex --halt-on-error=N
 %target% -output-directory=user/na/result/ user/na/result/dictionary_eng.tex --halt-on-error=N
 %target% -output-directory=user/na/result/ user/na/result/dictionary_fra.tex --halt-on-error=N
