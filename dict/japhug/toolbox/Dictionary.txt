@@ -7583,6 +7583,15 @@
 \xn 猪没有死，它肚子还在动（表示它在呼吸）
 \dt 28/Aug/2012
 
+\lx ma
+\a mɯma
+\ps postp 
+\ge à part
+\gn 除了
+\xv nɯ ma kɯ-tu me
+\xn 没有其它的了
+\dt 06/Mar/2011
+
 \lx macatsɯt
 \ps n
 \ge chaise en bambou 
@@ -18667,8 +18676,8 @@ l
 \gn 游戏 
 \xv tɤ-pɤtso nɯ tɤɣro kɤ-βzu rga
 \xn 小孩子喜欢游戏
-\pdl emphatic
-\pdv tɤɣro tɤle
+\se tɤɣro tɤle
+\ng emph
 \xv tɤɣro tɤle kɯ ku-rɤʑi
 \xn 他一直都在玩
 \dt 01/Sep/2014
@@ -24843,19 +24852,23 @@ l
 \xn 他被吓得魂飞魄散
 \dt 15/May/2012
 
-\lx tɯmɯ
-\ps n
+\lx tɯ-mɯ
+\ps np
 \ge temps, pluie 
 \gn 天气、雨 
 \hbf 6 <2> 10
-\xv tɯmɯ ɲɯ-ɤsɯ-lɤt
-\xn 下雨
-\xv tɯmɯ ci ci ku-lɤt, ci ci mɯ́j-lɤt
+\xv tɯ-mɯ kɯ-ɤrŋi
+\xn 青天
+\xv tɯ-mɯ ɲɯ-ɤsɯ-lɤt
+\xn 在下雨
+\xv tɯ-mɯ ci ci ku-lɤt, ci ci mɯ́j-lɤt
 \xn 有时候下雨，有时候不下雨
-\xv tɯmɯ lɤt ɲɯ-ŋu rca
+\xv tɯ-mɯ lɤt ɲɯ-ŋu rca
 \xn 快要下雨了
-\xv tɯmɯ chɯ tu-ru
+\xv tɯ-mɯ chɯ tu-ru
 \xn 他仰着（睡）
+\xv ɯ-ndzɯ mɤ-kɯ-sɤŋo ɯ-mɯ mbɯt 
+\xn 不听劝告的人没有好下场（他的天要垮下来）
 \dt 26/Jan/2015
 
 \lx tɯmɯɕoʁ
@@ -24865,6 +24878,7 @@ l
 \hbf plante
 
 \lx tɯmɯkɤmpɕi
+\a tɯmɯ kɯmɤɕi
 \ps n
 \ge paradis 
 \gn 天堂
@@ -24997,10 +25011,10 @@ l
 \lx tɯ-ntɕhɯr
 \ps clf
 \ge morceau, débris 
-\gn 粹片 
+\gn 碎片 
 \hbf 859 
 \xv rdɤstaʁ tɯ-ntɕhɯr 
-\xn
+\xn 一个石头碎片
 
 \lx tɯ-nthoʁ
 \ps clf
@@ -25023,7 +25037,6 @@ l
 \ge sein 
 \gn 乳房 
 \hbf 94 
-\et nu.ma
 
 \lx tɯ-ɲɤm
 \ps n
@@ -25067,6 +25080,7 @@ l
 \ge habit 
 \gn 衣服 
 \hbf 467
+\cf ŋga
 \cf stɤnga
 \cf kɯrɯŋga
 \cf kupaŋga
@@ -25131,11 +25145,17 @@ l
 
 \lx tɯ-ŋka
 \ps clf
-\ge parole, bruit, nourriture mâchée que l'on recrache 
-\gn 一声、咬过的东西 
+\sn 1
+\ge une parole, un bruit
+\gn 一声、一句
 \hbf 862 
 \xv tɯ-ŋka tɯ-ŋka tu-ti-a ŋu nɤ 
 \xn 我一句一句地说
+\sn 2
+\ge nourriture mâchée que l'on recrache 
+\gn 咬过的东西 
+\cf nɤŋka
+
 
 \lx tɯ-ɴɢar
 \ps np
@@ -26895,7 +26915,8 @@ l
 \ge ventre 
 \gn 肚子 
 \hbf 96 
-\et lto
+\cf ɯ-xtɤfka
+
 
 \lx tɯ-χpɣi
 \ps np
@@ -28427,6 +28448,13 @@ l
 \xv a-rʑaβ maʁ, ɯ-xso a-βzaŋsa ɕti
 \xn 不是我的妻子，是个普通朋友
 \dt 02/Jul/2012
+
+\lx ɯ-xtɤfka
+\ps np
+\ge le ventre rempli
+\gn 肚子饱
+\cf tɯ-xtu
+\cf fka
 
 \lx ɯ-χaʁ
 \ps np
@@ -38584,6 +38612,7 @@ l
 \xn 让他饱吧！
 \xv tɤfkɯm ɲo-fka
 \xn 口袋鼓起来了
+\cf ɯ-xtɤfka
 \se _ɕɯfka
 \wav vt-CWfka
 \ps vt
@@ -38592,7 +38621,6 @@ l
 \pdv tɤ-
 \ge permettre à qqn de manger à sa faim 
 \gn 喂饱
-
 \xv tɤ-ɕɯfka-t-a
 \xn 我把他喂饱了
 \xv tɤ-tɯ-ɕɯfka-t
@@ -44572,15 +44600,6 @@ l
 \xv nɯŋa ɲo-ɬoʁ (=chɤ-rɤpɯ)
 \xn 奶牛生了崽子
 \dt 07/Dec/2010
-
-\lx ma
-\a mɯma
-\ps postp 
-\ge à part
-\gn 除了
-\xv nɯ ma kɯ-tu me
-\xn 没有其它的了
-\dt 06/Mar/2011
 
 \lx _maŋ
 \ps vi
@@ -53500,6 +53519,7 @@ l
 \hbf 1358 
 \xv thamtham aʑo @linyegongzuo ku-oz-nɯkon-a
 \xn 我现在管理林业工作
+\et fn:管
 \dt 17/Jan/2011
 
 \lx _nɯkoŋ
@@ -62962,7 +62982,7 @@ l
 \pdl dir 
 \pdv thɯ-
 \sn 1
-\ge penser
+\ge réfléchir
 \gn 想 
 \sn 2
 \ge se souvenir 
@@ -68541,24 +68561,8 @@ l
 \dt 14/May/2012
 
 \lx _sɯtɕɤt
-\wav8 sWtCAt
-\ps vt
-\pdl dir 
-\pdv tɤ-
-\un 同|fv{ɯ-βlu}“办法”连用
-\ge trouver un moyen
-\gn 想办法
-\xv a-βlu mɯ́j-sɯtɕat-a
-\xn 我想不出办法来，我犹豫不决
-\xv ki kɤ-nɤma tɕhi tu-ste-a ra ma a-βlu mɯ́j-sɯtɕat-a
-\xn 我想不出怎么做这个工作 
-\xv a-βlu tɤ-sɯtɕa-t-a
-\xn 我想出了办法
-\xv a-βlu ɲɯsɯtɕa-t-a
-\xn 我想得出办法
-\xv nɤ-βlu ɯ-ɲɯ-tɯ-sɯtɕɤt
-\xn 你想得出办法吗？
-\dt 02/Aug/2011
+\cf tɕɤt
+
 
 \lx _sɯti
 \cf ti
@@ -69174,6 +69178,7 @@ l
 \wav8 tWGli_tCAt
 \wav8 mAkWra
 \ps vt
+\sn 1
 \pdl dir 
 \pdv _
 \ge prendre 
@@ -69203,12 +69208,31 @@ l
 \xn 要把圈里的牲畜赶出来
 \xv kɤ-ɤlɯlɤt mɤ-kɯ-ra ɲɤ-tɯ-tɕɤt
 \xn 你们令他们不要打架
+\xv nɤ-βlu ci tɤ-tɕɤt
+\xn 你想一下办法
+\sn 2
 \pdl dir 
 \pdv thɯ-
 \ge élever
 \gn 抚养（孩子）
 \xv a-mu a-wa cho a-pi ra kɯ thɯ́-wɣ-tɕat-a-nɯ ŋu
 \xn 我父母和姐姐把我抚养成人
+\se sɯtɕɤt
+\ng habil
+\wav8 sWtCAt
+\ps vt
+\pdl dir 
+\pdv tɤ-
+\xv a-βlu mɯ́j-sɯtɕat-a
+\xn 我想不出办法来，我犹豫不决
+\xv ki kɤ-nɤma tɕhi tu-ste-a ra ma a-βlu mɯ́j-sɯtɕat-a
+\xn 我想不出怎么做这个工作 
+\xv a-βlu tɤ-sɯtɕa-t-a
+\xn 我想出了办法
+\xv a-βlu ɲɯ-sɯtɕa-t-a
+\xn 我想得出办法
+\xv nɤ-βlu ɯ-ɲɯ-tɯ-sɯtɕɤt
+\xn 你想得出办法吗？
 \dt 14/Aug/2012
 
 \lx _tɕɣaʁ
@@ -73027,4 +73051,3 @@ l
 \lf Component2 = rnaʁ
 \ps vs
 \dt 23/Jul/2015
-
