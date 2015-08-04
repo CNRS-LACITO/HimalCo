@@ -50,5 +50,5 @@
 \def\mytextscauxii#1{%
 \ifx\relax#1\else \ifcat#1\@sptoken{} \expandafter\expandafter\expandafter\mytextscauxii\else
 \ifnum`#1=\uccode`#1 {\normalsize #1}\else {\footnotesize \uppercase{#1}}\fi \expandafter\expandafter\expandafter\mytextscauxii\expandafter\fi\fi}
-
+% Ne pas afficher la numérotation des sections, sous-sections etc
 \setcounter{secnumdepth}{0}
