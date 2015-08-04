@@ -42,7 +42,7 @@ os.system("python " + user_path + "../src/utils/tables/tables.py -i " + user_pat
 
 # Write LaTeX files
 lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_eng.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_eng.tex"], title="Online Na-English-Chinese-French Dictionary (version 1.0)")
-lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_fra.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"], title=u"Dictionnaire Japhug-chinois-français en ligne (version 1.0)", tex_language="french")
+lmf.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_fra.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"], title=u"Dictionnaire na-chinois-français en ligne (version 1.0)", tex_language="french")
 
 # Release created objects
 del lexical_resource
