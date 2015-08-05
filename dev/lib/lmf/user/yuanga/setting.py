@@ -224,7 +224,64 @@ order = [
         ("classificateur nourriture", "8.3. Classificateurs de la nourriture"),
         ("classificateur sémantique", "8.4. Classificateurs sémantiques")
     ],
-    ("quantificateur", "9. Quantificateur")
+    ("quantificateur", "9. Quantificateur"),
+    ("TITLE 1", "10. Eléments grammaticaux"),
+    [
+        ("grammaire_adverbe", "10.1. Adverbe"),
+        ("grammaire_agent", "10.2. Agent"),
+        ("grammaire_article", "10.3. Article"),
+        ("grammaire_article_indéfini", "10.4. Article indéfini"),
+        ("grammaire_aspect", "10.5. Aspect"),
+        ("grammaire_aspect_modalité", "10.6. Aspect, modalité"),
+        ("grammaire_assertif", "10.7. Assertif"),
+        ("grammaire_but", "10.8. But"),
+        ("grammaire_causatif", "10.9. Causatif"),
+        ("grammaire_collectif", "10.10. Collectif"),
+        ("grammaire_comparaison", "10.11. Comparaison"),
+        ("grammaire_conjonction", "10.12. Conjonction"),
+        ("grammaire_contraste", "10.13. Contraste"),
+        ("grammaire_démonstratif", "10.14. Démonstratif"),
+        ("grammaire_dérivation", "10.15. Dérivation"),
+        ("grammaire_déterminant_duel", "10.16. Déterminant duel"),
+        ("grammaire_direction", "10.17. Direction"),
+        ("grammaire_directionnel", "10.18. Directionnel"),
+        ("discours_interjection", "10.19. Discours interjection"),
+        ("grammaire_distributif", "10.20. Distributif"),
+        ("grammaire_existentiel", "10.21. Existentiel"),
+        ("grammaire_injonction", "10.22. Injonction"),
+        ("grammaire_intensificateur", "10.23. Intensificateur"),
+        ("grammaire_interjection", "10.24. Interjection"),
+        ("grammaire_interpellation", "10.25. Interpellation"),
+        ("grammaire_interrogatif", "10.26. Interrogatif"),
+        ("grammaire_IS", "10.27. IS"),
+        ("grammaire_locatif", "10.28. Locatif"),
+        ("grammaire_marque_sujet", "10.29. Marque sujet"),
+        ("grammaire_marque_transitive", "10.30. Marque transitive"),
+        ("grammaire_modalité", "10.31. Modalité"),
+        ("grammaire_négation", "10.32. Négation"),
+        ("grammaire_négation_existentiel", "10.33. Négation existentiel"),
+        ("grammaire_nombre", "10.34. Nombre"),
+        ("grammaire_numéral", "10.35. Numéral"),
+        ("grammaire_ordinal", "10.36. Ordinal"),
+        ("grammaire_parenté", "10.37. Parenté"),
+        ("grammaire_possession", "10.38. Possession"),
+        ("grammaire_préfixe", "10.39. Préfixe"),
+        ("grammaire_préposition", "10.40. Préposition"),
+        ("grammaire_présentatif", "10.41. Présentatif"),
+        ("grammaire_pronom", "10.42. Pronom"),
+        ("grammaire_pronom_négatif", "10.43. Pronom négatif"),
+        ("grammaire_propriété", "10.44. Propriété"),
+        ("grammaire_quantificateur", "10.45. Quantificateur"),
+        ("grammaire_quantificateur_degré", "10.46. Quantificateur degré"),
+        ("grammaire_quantification", "10.47. Quantification"),
+        ("grammaire_réciproque", "10.48. Réciproque"),
+        ("grammaire_réfléchi", "10.49. Réfléchi"),
+        ("grammaire_relateur", "10.50. Relateur"),
+        ("grammaire_restrictif", "10.51. Restrictif"),
+        ("grammaire_suff.trans.", "10.52. Suff. trans."),
+        ("grammaire_temps", "10.53. Temps"),
+        ("grammaire_vocatif", "10.54. Vocatif")
+    ]
 ]
 
 def read_order(order, sd_order, rank, sd_list):
@@ -494,6 +551,7 @@ ps_partOfSpeech.update({
 
     "n-fois"                                                                                        : "XXX",
 
+    "n"                                                                                             : "nom",
     "n (inaliénable)"                                                                               : "XXX",
     "n ; CLF POSS"                                                                                  : "XXX",
     "n ; PAR REC"                                                                                   : "XXX",
@@ -724,9 +782,7 @@ ps_partOfSpeech.update({
 })
 
 ## Possible values allowed for LMF part of speech LexicalEntry attribute
-partOfSpeech_range.update([
-    "XXX"
-])
+partOfSpeech_range.update(ps_partOfSpeech.values())
 
 ## Functions to process some MDF fields (input)
 

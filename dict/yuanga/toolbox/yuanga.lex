@@ -17059,7 +17059,7 @@ queue, taches pourpres sur le ventre)
 \dt 11/Feb/2006
 
 \lx haba ??
-\is grammaire_preposition
+\is grammaire_préposition
 \dialx BO
 \ps n BENEF
 \ge pour
@@ -29172,7 +29172,7 @@ grand que "keruau")
 \dt 23/Dec/2014
 
 \lx kixa khôôme
-\is grammaire_aspect, modalité
+\is grammaire_aspect_modalité
 \dialx GO(s)
 \ps RESTR ; ASP
 \ge ne faire que ; n'avoir jamais assez de 
@@ -36841,7 +36841,7 @@ case (Dubois)
 \dt 10/Jun/2015
 
 \lx meli
-\is grammaire_déterminant duel
+\is grammaire_déterminant_duel
 \dialx GO(s)
 \ps déterminant duel
 \ge ces deux
