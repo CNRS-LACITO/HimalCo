@@ -761,7 +761,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \dt 09/Jun/2015
 
 \lx aeke
-\is interjection
+\is discours_interjection
 \dialx WE
 \ps INTJ
 \ge salut ! (se dit quand on est loin)
@@ -773,7 +773,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx aguko
 \is maison
@@ -1353,7 +1353,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 03/Nov/2014
 
 \lx alawe
-\is interjection
+\is discours_interjection
 \dialx GO(s) PA
 \va olawe, olaè, olaa
 \ve BO 
@@ -1376,7 +1376,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn au revoir à toi ???
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 11/Jul/2015
 
 \lx alaxe
 \is locatif
@@ -1776,7 +1776,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \dt 09/Jun/2015
 
 \lx ã-nra !
-\is interpellation
+\is grammaire_interpellation
 \is grammaire_démonstratif
 \dialx GO(s)
 \ps INTJ
@@ -1788,7 +1788,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn
 \cf ijèè !
 \ce eh ! la femme !
-\dt 09/Jun/2015
+\dt 11/Jul/2015
 
 \lx ani êgu 
 \is grammaire_numéral
@@ -5799,7 +5799,7 @@ l'esprit d'un vivant de celui d'un mort
 \dt 09/Jun/2015
 
 \lx bwaa
-\is interpellation
+\is grammaire_interpellation
 \hm 1
 \dialx GO(s) PA BO
 \va bwaamwa
@@ -5814,7 +5814,7 @@ l'esprit d'un vivant de celui d'un mort
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx bwaa
 \is reptile
@@ -6340,7 +6340,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 05/Jun/2007
 
 \lx bwanramwa
-\is interjection
+\is discours_interjection
 \dialx GO(s)
 \va bwaamwa
 \ve GO(s) PA WEM
@@ -6357,7 +6357,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \nt gaanramwa (jugé moins correct)
-\dt 24/Feb/2010
+\dt 11/Jul/2015
 
 \lx bwane 
 \is maison.objet
@@ -13905,23 +13905,6 @@ Se déguste de préférence sucré.
 \ce
 \dt 09/Jun/2015
 
-\lx -e
-\is grammaire
-\hm 2
-\dialx GO 
-\ps ADV
-\ge adverbe (ou) accord en transitivité??
-\re
-\gb
-\rgb
-\xv pwal-e
-\xn clairement (Dubois)
-\xv baxol-e
-\xn directement (Dubois)
-\cf
-\ce
-\dt 22/Dec/2014
-
 \lx ê
 \hm 1
 \is grammaire_démonstratif
@@ -13960,6 +13943,23 @@ Se déguste de préférence sucré.
 \cf
 \dt 09/Jun/2015
 
+\lx -e ???
+\is grammaire_adverbe
+\hm 2
+\dialx GO 
+\ps ADV
+\ge adverbe (ou) accord en transitivité??
+\re
+\gb
+\rgb
+\xv pwal-e
+\xn clairement (Dubois)
+\xv baxol-e
+\xn directement (Dubois)
+\cf
+\ce
+\dt 11/Jul/2015
+
 \lx è ???
 \hm 2
 \is grammaire_démonstratif
@@ -13980,7 +13980,7 @@ Se déguste de préférence sucré.
 \dt 25/Dec/2014
 
 \lx e zo !
-\is interjection
+\is discours_interjection
 \dialx GO(s)
 \ps INTJ
 \ge bien fait !
@@ -13991,7 +13991,7 @@ Se déguste de préférence sucré.
 \xn
 \cf i no-n !
 \ce bien fait pour lui ! (= ta crotte) [PA]
-\dt 11/Mar/2010
+\dt 11/Jul/2015
 
 \lx èa?
 \is grammaire_interrogatif
@@ -14602,7 +14602,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 06/Nov/2014
 
 \lx èlòè !
-\is interpellation
+\is grammaire_interpellation
 \is grammaire_démonstratif
 \dialx GO(s)
 \ps INTJ
@@ -14614,10 +14614,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 11/Jul/2015
 
 \lx emãli !
-\is interpellation
+\is grammaire_interpellation
 \is grammaire_démonstratif
 \dialx GO(s)
 \ps duel
@@ -14629,7 +14629,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 11/Jul/2015
 
 \lx emãlo
 \is grammaire_démonstratif
@@ -15091,7 +15091,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 09/Jun/2015
 
 \lx e-nye-ba
-\is grammaire_présentation
+\is grammaire_présentatif
 \dialx PA GO???
 \ps DEM
 \ge voilà (le) là (on le montre et on regarde dans sa direction)
@@ -15103,10 +15103,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx e-nye-boli
-\is grammaire_présentation
+\is grammaire_présentatif
 \dialx PA GO ??
 \ps DEM DX3
 \ge voilà (le) là-bas (à un endroit plus bas que là où on est)
@@ -15118,7 +15118,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx e-nyoli
 \is grammaire_démonstratif
@@ -15134,7 +15134,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 09/Jun/2015
 
 \lx e-nyu-da
-\is grammaire_présentation
+\is grammaire_présentatif
 \dialx PA   GO???
 \ps LOC
 \ge voilà (le) en haut
@@ -15146,7 +15146,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf e-nyu-du
 \ce voilà (le) en bas
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx epè- ??? VOIR
 \is parenté
@@ -15429,7 +15429,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 19/Dec/2014
 
 \lx gaa kòò gò
-\is interjection
+\is discours_interjection
 \dialx GO(s)
 \va gaa kòòl 
 \ve PA BO
@@ -15442,7 +15442,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 11/Jul/2015
 
 \lx gaa mara
 \is grammaire_aspect
@@ -15675,7 +15675,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dt 23/Dec/2014
 
 \lx gase ?
-\is interjection
+\is discours_interjection
 \dialx GO(s)
 \ps LOCUT
 \ge on y va ? (2 personnes ou plus)
@@ -15688,7 +15688,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 25/Dec/2014
+\dt 11/Jul/2015
 
 \lx gaa-vhaa
 \is son
@@ -17059,7 +17059,7 @@ queue, taches pourpres sur le ventre)
 \dt 11/Feb/2006
 
 \lx haba ??
-\is grammaire
+\is grammaire_preposition
 \dialx BO
 \ps n BENEF
 \ge pour
@@ -17070,7 +17070,7 @@ queue, taches pourpres sur le ventre)
 \xn ce bateau, nous l'avons fait pour toi
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 11/Jul/2015
 
 \lx hãbaö
 \is grammaire_modalité
@@ -17242,7 +17242,7 @@ queue, taches pourpres sur le ventre)
 \dt 23/Dec/2014
 
 \lx hai
-\is interjection
+\is grammaire_interjection
 \hm 2
 \dialx GO(s) PA BO 
 \va hayai
@@ -17256,7 +17256,7 @@ queue, taches pourpres sur le ventre)
 \xn
 \an èlò
 \at oui
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx hai 
 \hm 3
@@ -18151,7 +18151,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Jun/2015
 
 \lx hè
-\is interjection
+\is discours_interjection
 \dialx PA
 \ps INTJ
 \ge interpellation
@@ -18167,7 +18167,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx hê-
 \is échanges
@@ -18539,7 +18539,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Jun/2015
 
 \lx hè-m !
-\is interpellation
+\is grammaire_interpellation
 \dialx PA BO
 \ps interpellation
 \ge eh toi !
@@ -18551,7 +18551,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx hê-me
 \is corps
@@ -19588,7 +19588,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 11/Nov/2014
 
 \lx hoo
-\is interjection
+\is discours_interjection
 \dialx PA
 \ps v
 \ge signaler sa présence par un appel
@@ -19600,7 +19600,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx hoo
 \is pêche
@@ -21408,7 +21408,7 @@ la paille; plus petites que 'ce-mwa');
 \dt 09/Jun/2015
 
 \lx ijèè !
-\is interpellation
+\is grammaire_interpellation
 \ph ÌƒijÉ›:
 \dialx GO(s)
 \ps INTJ
@@ -21420,7 +21420,7 @@ la paille; plus petites que 'ce-mwa');
 \xn
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx ijè-òli
 \is grammaire_pronom
@@ -22949,7 +22949,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 
 \lx jo
 \hm 1
-\is grammaire
+\is grammaire_adverbe
 \dialx GO(s)
 \ps
 \ge soudain ??
@@ -22961,7 +22961,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 20/Feb/2015
+\dt 11/Jul/2015
 
 \lx jo
 \hm 2
@@ -49965,7 +49965,7 @@ sucre
 \dt 23/Dec/2014
 
 \lx pe-trooli ni tree
-\is interjection
+\is discours_interjection
 \dialx GO(s)
 \ps n
 \ge à un de ces jours !
@@ -49976,7 +49976,7 @@ sucre
 \xn à un de ces jours !
 \cf
 \ce
-\dt 22/Dec/2014
+\dt 11/Jul/2015
 
 \lx pe-tou
 \is coutumes
@@ -58588,7 +58588,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 04/Jun/2015
 
 \lx ta-
-\is interpellation
+\is grammaire_interpellation
 \dialx BO
 \ps n INTJ
 \ge eh !
@@ -58599,7 +58599,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn eh toi !
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx taa
 \is action_corps
@@ -60005,7 +60005,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Dec/2014
 
 \lx thaam !
-\is interjection
+\is discours_interjection
 \dialx PA
 \va thãã
 \ve BO
@@ -60019,7 +60019,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt meem en Nêlêmwa
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx tamo ???
 \dialx GO
@@ -65628,7 +65628,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 09/Jun/2015
 
 \lx thöö
-\is grammaire-réfléchi
+\is grammaire_réfléchi
 \hm 2
 \dialx PA
 \va thuvwu
@@ -65647,7 +65647,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 11/Jul/2015
 
 \lx trö
 \is caract.objet
@@ -66790,7 +66790,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 22/Dec/2014
 
 \lx ûû
-\is interjection
+\is discours_interjection
 \dialx GO
 \va ôô
 \ps INTJ
@@ -66804,7 +66804,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \un
 \cf
 \ce
-\dt 19/Dec/2014
+\dt 11/Jul/2015
 
 \lx u ru
 \is grammaire_temps
@@ -68238,7 +68238,7 @@ supportant la charpente des cases rondes;  Dubois)
 \lx vo ??
 \hm 1
 \dialx BO
-\is grammaire
+\is grammaire_préposition
 \ps PREP (régime indirect)
 \ge objet indirect
 \re
@@ -68248,7 +68248,7 @@ supportant la charpente des cases rondes;  Dubois)
 \xn il pense à Bondé
 \cf
 \ce
-\dt 02/Mar/2010
+\dt 11/Jul/2015
 
 \lx vwo
 \hm 2
@@ -71935,7 +71935,7 @@ Mwani-mi ?
 
 \lx xo
 \hm 1
-\is grammaire_agent
+\is grammaire_marque_sujet
 \dialx GO(s) PA
 \va ko, go
 \ve GO(s)
@@ -71948,6 +71948,10 @@ Mwani-mi ?
 \rgb
 \xv e gi xo khiny ???
 \xn l'hirondelle pleure
+\xv e trabwa xo thoomwa xo puyol
+\xn la femme est assise en train de faire la cuisine
+\xv burom mwa xo je
+\xn elle se baigne encore, elle est en train de se baigner
 \xv e gi meni
 \xn l'oiseau pleure (Doriane)
 \xv e mani xo pwala-mwaji-je ênõ ã
@@ -71992,7 +71996,7 @@ Mwani-mi ?
 \xn le couteau que Jean a acheté
 \cf
 \ce
-\dt 10/Jun/2015
+\dt 11/Jul/2015
 
 \lx xo
 \is grammaire_conjonction
@@ -72033,21 +72037,17 @@ Mwani-mi ?
 
 \lx xo
 \hm 4
-\is grammaire
+\is grammaire_marque_transitive
 \dialx GO(s)
 \va vwo
 \ve GO(s)
 \ps saturateur transitif ???
-\ge saturateur ???; aspect en train de
+\ge saturateur transitif
 \re
 \gb
 \rgb
-\xv burom mwa xo je
-\xn elle se baigne encore, elle est en train de se baigner
 \xv Xa jò (vous2) kamweli me nree-xo
 \xn Et comment avez-vous2 fait pour le faire ?
-\xv e trabwa xo thoomwa xo puyol
-\xn la femme est assise en train de faire la cuisine
 \xv e nre-xo wãã-na dròrò
 \xn il l'a fait comme cela / ainsi hier
 \xv e nre wãã-na le
@@ -72056,13 +72056,13 @@ Mwani-mi ?
 \xn fais-le comme cela / ainsi
 \xv nre wãã-na le !
 \xn fais-le comme cela / ainsi
-\xv nre xo egu-zo ! (ou) nre-vwo egu-zo ! 
+\xv nre-xo egu-zo ! (ou) nre-vwo egu-zo ! 
 \xn fais-le joli !
 \xv me waaju vwo me khila-xa whaya me tròòli xo mwani [GOs]
 \xn nous nous efforçons de chercher comment gagner de l'argent
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 11/Jul/2015
 
 \lx ya
 \is discours
