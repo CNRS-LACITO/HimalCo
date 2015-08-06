@@ -19,7 +19,7 @@ order = [
         ("TITLE 2", "1.1. Anatomie"),
         [
             ("corps", "1.1.1. Corps humain"),
-            ("corps_animaux", "1.1.2. Corps animal")
+            ("corps_animaux", "1.1.2. Partie du corps")
         ],
         ("TITLE 2", "1.2. Fonctions naturelles"),
         [
@@ -348,7 +348,7 @@ def retrieve_dialect_name(text):
     return text
 
 mdf_lmf.update({
-    "dialx" : lambda dialx, lexical_entry: lexical_entry.set_usage_note(retrieve_dialect_name(dialx), language="nua"),
+    "dialx" : lambda dialx, lexical_entry: lexical_entry.set_usage_note(dialx.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE"), language="nua"),
     "empr"  : lambda empr, lexical_entry: set_bw(empr, lexical_entry)
 })
 

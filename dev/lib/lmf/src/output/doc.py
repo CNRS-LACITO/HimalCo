@@ -107,7 +107,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                     dialect = ""
                     for sense in lexical_entry.get_senses():
                         for usage_note in sense.find_usage_notes(language=config.xml.vernacular):
-                            dialect += " (" + usage_note + ")"
+                            dialect += " [" + usage_note + "]"
                     p = document.add_paragraph()
                     p.add_run(lexeme).bold = True
                     p.add_run(dialect)
@@ -122,7 +122,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                                 p.add_run(" ; ")
                             p.add_run(repr.get_geographicalVariant()).bold = True
                             if repr.get_dialect() is not None:
-                                p.add_run(" (" + repr.get_dialect() + ")")
+                                p.add_run(" [" + repr.get_dialect() + "]")
                     # Italic
                     if lexical_entry.get_partOfSpeech() is not None:
                         p.add_run(". ")
