@@ -116,7 +116,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                     for repr in lexical_entry.get_form_representations():
                         if repr.get_geographicalVariant() is not None:
                             if write_title:
-                                p.add_run(" Variante(s) : ")
+                                p.add_run(" Var : ")
                                 write_title = False
                             else:
                                 p.add_run(" ; ")
@@ -164,7 +164,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             try:
                                 fra_forms = context.find_written_forms(language=config.xml.French)
                                 if len(vernacular_forms) != 0 and len(fra_forms) != 0:
-                                    p.add_run(" ; ")
+                                    p.add_run(" : ")
                                 for example in fra_forms:
                                     p.add_run(example)
                                 if len(fra_forms) != 0 and fra_forms[0][-1] != '!' and fra_forms[0][-1] != '?':
