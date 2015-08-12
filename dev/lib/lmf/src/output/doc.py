@@ -6,7 +6,7 @@ from common.defs import VERNACULAR, ENGLISH, NATIONAL, REGIONAL
 from utils.io import ENCODING, EOL
 
 from docx import Document
-from docx.shared import Inches
+from docx.shared import Cm
 
 ## To define languages and fonts
 import config
@@ -26,6 +26,12 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
         sort_order.update(up)
         sort_order.update({'':0, ' ':0})
     document = Document()
+    # Adjust margins to 1 cm
+    section = document.sections[0]
+    section.top_margin = Cm(1)
+    section.bottom_margin = Cm(1)
+    section.left_margin = Cm(1)
+    section.right_margin = Cm(1)
     # Parse LMF values
     if object.__class__.__name__ == "LexicalResource":
         for lexicon in object.get_lexicons():
