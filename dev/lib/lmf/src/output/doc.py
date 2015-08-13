@@ -139,7 +139,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         glosses = ""
                         if sense.get_senseNumber() is not None:
                             p = document.add_paragraph()
-                            p.add_run("\t" + sense.get_senseNumber() + ")")
+                            p.add_run("  " + sense.get_senseNumber() + ")")
                         for gloss in sense.find_glosses(language=config.xml.vernacular):
                             glosses += " " + gloss + " ;"
                         glosses = glosses.rstrip(" ;")
@@ -165,7 +165,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             examples = ""
                             vernacular_forms = context.find_written_forms(language=config.xml.vernacular)
                             for example in vernacular_forms:
-                                p.add_run("\t")
+                                p.add_run("  ")
                                 p.add_run(example).bold = True
                             try:
                                 fra_forms = context.find_written_forms(language=config.xml.French)
@@ -180,7 +180,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         # Links
                         if len(lexical_entry.get_related_forms("simple link")) != 0:
                             p = document.add_paragraph()
-                            p.add_run("\tVoir :").italic = True
+                            p.add_run("  Voir :").italic = True
                             for related_form in lexical_entry.get_related_forms("simple link"):
                                 if related_form.get_lexical_entry() is not None:
                                     # TODO : hyperlink
@@ -194,7 +194,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         if len(lexical_entry.find_notes(type="general")) != 0:
                             if len(lexical_entry.get_related_forms("simple link")) == 0:
                                 p = document.add_paragraph()
-                                p.add_run("\t")
+                                p.add_run("  ")
                             p.add_run("[Note :").italic = True
                             for note in lexical_entry.find_notes(type="general"):
                                 p.add_run(" ")
