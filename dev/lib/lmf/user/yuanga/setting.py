@@ -337,6 +337,11 @@ def get_gf(lexical_entry):
 reverse_items=lambda lexical_entry: get_gf(lexical_entry)
 
 ## Functions to process some MDF fields (input)
+def set_ce(ce, lexical_entry):
+    related_form = lexical_entry.get_last_related_form()
+    if related_form is not None:
+        related_form.create_and_add_form_representation(written_form=ce, language=config.xml.French)
+
 def retrieve_dialect_name(text):
     text = text.replace("BO", u"Bondé")
     text = text.replace("PA", "Paimboa")
@@ -347,9 +352,42 @@ def retrieve_dialect_name(text):
     text = text.replace("WE", "WE")
     return text
 
+def force_caps(text):
+    """Force first letter to be in upper case.
+    """
+    return text[0].upper() + text[1:]
+
 mdf_lmf.update({
+    # dialx : dialecte BO / PA / GO / GO(s) / GO(n) + WEM / WE => OK
     "dialx" : lambda dialx, lexical_entry: lexical_entry.set_usage_note(dialx.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE"), language="nua"),
-    "empr"  : lambda empr, lexical_entry: set_bw(empr, lexical_entry)
+    # empr : emprunt => OK
+    "empr"  : lambda empr, lexical_entry: set_bw(empr, lexical_entry),
+    # sc : nom scientifique => OK
+    "sc" : lambda sc, lexical_entry: lexical_entry.set_scientific_name(force_caps(sc)),
+    # ge : French gloss
+    "ge"    : lambda ge, lexical_entry: lexical_entry.set_gloss(force_caps(ge), language=config.xml.French),
+    # xn : French example
+    "xn"     : lambda xn, lexical_entry: lexical_entry.add_example(force_caps(xn), language=config.xml.French),
+    # xe : English example
+    "xe"    : lambda xe, lexical_entry: lexical_entry.add_example(force_caps(xe), language=config.xml.English),
+    # sge : French gloss of the subentry
+    "sge"    : lambda sge, lexical_entry: lexical_entry.set_gloss(force_caps(sge), language=config.xml.French),
+    # de : French definition
+    "de"     : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=config.xml.French),
+    # gr : note grammaticale => [Note grammaticale : ] à la suite de [Note : ]
+    "gr"     : lambda gr, lexical_entry: lexical_entry.set_note(gr, type="grammar", language=config.xml.regional),
+    # gt: traduction de gr en français => [Note grammaticale : 'gr' (en gras) 'gt' (non gras)]
+    "gt"     : lambda gt, lexical_entry: lexical_entry.set_note(force_caps(gt), type="grammar", language=config.xml.French),
+    # ce : French translation of cf => cf : 'cf' (en gras) 'ce' (non gras)
+    "ce"    : lambda ce, lexical_entry: set_ce(force_caps(ce), lexical_entry),
+    # nt : note => OK
+    "nt"    : lambda nt, lexical_entry: lexical_entry.set_note(nt, type="general"),
+    # ng : note grammaticale => OK
+    "ng"    : lambda ng, lexical_entry: lexical_entry.set_note(ng, type="grammar", language=config.xml.vernacular),
+    # np : note phonologique => OK
+    "np"    : lambda np, lexical_entry: lexical_entry.set_note(np, type="phonology"),
+    # na : note anthropologique => OK
+    "na"    : lambda na, lexical_entry: lexical_entry.set_note(na, type="anthropology")
 })
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)
@@ -361,8 +399,12 @@ ps = [
     "AGT",
     "AGT ???",
 
+    "ART",
     "ART PL",
 
+    "ADJ",
+
+    "ADV",
     "ADV LOC (spatio-temporel) ANAPH ???",
     "ADV LOC DX2",
     "ADV LOC",
@@ -379,6 +421,7 @@ ps = [
 
     "ASSOC",
 
+    "ASP",
     "ASP DUR",
     "ASP ou RESTR",
     "ASP PERS",
@@ -415,6 +458,7 @@ ps = [
 
     "CLF POSS",
 
+    "CNJ",
     "CNJ ; THEM",
     "CNJ TIME",
     "CNJ (complémentation)",
@@ -436,6 +480,7 @@ ps = [
 
     "couple PAR",
 
+    "DEIC",
     "DEIC DIR",
     "DEIC DX3",
     "DEIC PL DX1 ou ANAPH",
@@ -444,6 +489,7 @@ ps = [
     "DEIC DX3 duel (latéralement)",
     "DEIC DX3 (visible)",
 
+    "DEM",
     "DEM duel",
     "DEM duel ou PL",
     "DEM DX",
@@ -470,6 +516,7 @@ ps = [
     "déterminant duel",
     "déterminant ; PRO DEIC DX1",
 
+    "DIR",
     "DIR (transverse)",
     "DIR (ventif)",
     "DIR (centrifuge)",
@@ -490,6 +537,7 @@ ps = [
     "DX1 ; ANAPH",
     "DX2 ; ANAPH ; ASS",
 
+    "FOC",
     "FOC ; RESTR (antéposé au GN) (za ... nye ...)",
 
     "forme déterminée de mwa ; PREF (désignant un contenant)",
@@ -507,6 +555,7 @@ ps = [
 
     "INJONC",
 
+    "INT",
     "INT LOC (dynamique)",
     "INT LOC (statique)",
     "INT (statique : humains, PRO, n)",
@@ -522,12 +571,14 @@ ps = [
     "interpellation",
     "interpellation ou DEM",
 
+    "INTJ",
     "INTJ (pitié, affection)",
     "INTJ ; v",
     "INTJ ; appel respectueux à une pers.",
 
     "ITER",
 
+    "LOC",
     "LOC DIR",
     "LOC DX2",
     "LOC DX3",
@@ -542,6 +593,7 @@ ps = [
     "LOCUT ADV",
     "LOCUT INT",
 
+    "MDL",
     "MDL n",
     "MDL INTJ",
 
@@ -574,8 +626,12 @@ ps = [
     "n (terme d'appellation ou référence)",
     "n INTJ",
 
+    "NEG",
     "NEG (en réponse à une question)",
 
+    "NOMR",
+
+    "NUM",
     "NUM (animés)",
     "NUM ORD",
     "NUM (pour certains types de dons coutumiers)",
@@ -614,6 +670,7 @@ ps = [
     "PREF REC ; COLL",
     "PREF (position assise)",
 
+    "PREP",
     "PREP (objet indirect)",
     "PREP ; ADV ; CNJ",
     "PREP LOC",
@@ -625,6 +682,7 @@ ps = [
     "PREP ; CNJ",
     "PREP (instrument)",
 
+    "PRO",
     "PRO 1° pers. incl. (OBJ ou POSS)",
     "PRO 1° pers. excl. PL (sujet)",
     "PRO 1° pers. excl. PL (OBJ ou POSS)",
@@ -701,11 +759,15 @@ ps = [
     "PTCL (assertive)",
     "PTCL ASP",
 
+    "QNT",
     "QNT (réduplication de pe- ???)",
     "QNT DISTR",
     "QNT ; atténuation",
     "QNT ???",
 
+    "REC",
+
+    "REL",
     "REL ou DEM ???",
 
     "RESTR",
@@ -718,6 +780,8 @@ ps = [
     "REV ; ITER GO(s)",
 
     "révolu (u ... mwã)",
+
+    "RFLX",
 
     "saturateur transitif ???",
 
@@ -740,6 +804,9 @@ ps = [
 
     "triel",
 
+    "v",
+    "vt",
+    "vi",
     "v ; MODIF ; INTENS RFLX",
     "v LOC ; progressif",
     "v STAT ; n",

@@ -3,6 +3,7 @@
 from startup import *
 from morphology.related_form import RelatedForm
 from core.lexical_entry import LexicalEntry
+from core.form_representation import FormRepresentation
 
 ## Test RelatedForm class
 
@@ -56,6 +57,39 @@ class TestRelatedFormFunctions(unittest.TestCase):
         self.assertEqual(self.related_form.get_lexical_entry().lexeme, "toto")
         # Release lexical entry
         del entry
+
+    def test_create_and_add_form_representations(self):
+        # Test create and add form representations to the related form
+        form = "form1"
+        language = "lang1"
+        self.assertIs(self.related_form.create_and_add_form_representation(form, language), self.related_form)
+        self.assertEqual(len(self.related_form.form_representation), 1)
+        self.assertEqual(self.related_form.form_representation[0].writtenForm, form)
+        self.assertEqual(self.related_form.form_representation[0].language, language)
+        form = "form2"
+        language = "lang2"
+        self.assertIs(self.related_form.create_and_add_form_representation(form, language), self.related_form)
+        self.assertEqual(len(self.related_form.form_representation), 2)
+        self.assertEqual(self.related_form.form_representation[1].writtenForm, form)
+        self.assertEqual(self.related_form.form_representation[1].language, language)
+        # Release FormRepresentation instances
+        del self.related_form.form_representation[1], self.related_form.form_representation[0]
+
+    def test_find_written_forms(self):
+        # Create several form representations with different languages
+        form1 = FormRepresentation().set_language("langA")
+        form2 = FormRepresentation().set_language("langB")
+        form3 = FormRepresentation().set_language("langA")
+        form4 = FormRepresentation().set_language("langC")
+        # Add form representations to the related form
+        self.related_form.form_representation = [form1, form2, form3, form4]
+        # Test find form representations
+        self.assertListEqual(self.related_form.find_written_forms("langB"), [form2.writtenForm])
+        # List is randomly ordered => create a set to avoid random results
+        self.assertEqual(set(self.related_form.find_written_forms("langA")), set([form1.writtenForm, form3.writtenForm]))
+        # Release FormRepresentation instances
+        del self.related_form.form_representation[:]
+        del form1, form2, form3, form4
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestRelatedFormFunctions)
 

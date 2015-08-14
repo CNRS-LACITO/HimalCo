@@ -170,15 +170,30 @@ class TestLexicalEntryFunctions(unittest.TestCase):
 
     def test_get_related_forms(self):
         # List of RelatedForm instances is empty
-        self.assertEqual(self.lexical_entry.get_related_forms(), set([]))
+        self.assertEqual(self.lexical_entry.get_related_forms(), [])
         # Create RelatedForm instances and add them to the list
         form1 = RelatedForm()
         form2 = RelatedForm()
         self.lexical_entry.related_form = [form1, form2]
         # Test get related forms
-        self.assertEqual(self.lexical_entry.get_related_forms(), set([form1, form2]))
+        self.assertEqual(self.lexical_entry.get_related_forms(), [form1, form2])
         self.lexical_entry.related_form.append(form1)
-        self.assertEqual(self.lexical_entry.get_related_forms(), set([form1, form2]))
+        self.assertEqual(self.lexical_entry.get_related_forms(), [form1, form2, form1])
+        # Delete RelatedForm instances
+        del self.lexical_entry.related_form[:]
+        del form1, form2
+
+    def test_get_last_related_form(self):
+        # List of RelatedForm instances is empty
+        self.assertIsNone(self.lexical_entry.get_last_related_form())
+        # Create RelatedForm instances and add them to the list
+        form1 = RelatedForm()
+        form2 = RelatedForm()
+        self.lexical_entry.related_form = [form1, form2]
+        # Test get last related form
+        self.assertEqual(self.lexical_entry.get_last_related_form(), form2)
+        self.lexical_entry.related_form.append(form1)
+        self.assertEqual(self.lexical_entry.get_last_related_form(), form1)
         # Delete RelatedForm instances
         del self.lexical_entry.related_form[:]
         del form1, form2

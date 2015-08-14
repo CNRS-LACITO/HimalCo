@@ -212,15 +212,16 @@ class Sense():
         definition.set_note(note, type, language)
         return self
 
-    def find_notes(self, type):
+    def find_notes(self, type, language=None):
         """! @brief Find notes.
         This attribute is owned by Statement, which owned by Definition.
         @param type Type of the note to consider to retrieve the note.
+        @param language If this argument is given, find note only if written in this language.
         @return A Python list of found Statement attributes 'notes'.
         """
         found_notes = []
         for definition in self.get_definitions():
-            found_notes += definition.find_notes(type)
+            found_notes += definition.find_notes(type, language)
         return found_notes
 
     def set_usage_note(self, usage_note, language=None):

@@ -4,6 +4,7 @@
 """
 
 from core.form import Form
+from core.form_representation import FormRepresentation
 from common.range import semanticRelation_range
 from utils.attr import check_attr_type, check_attr_range
 
@@ -69,3 +70,24 @@ class RelatedForm(Form):
         @return RelatedForm private attribute '__lexical_entry'.
         """
         return self.__lexical_entry
+
+    def create_and_add_form_representation(self, written_form=None, language=None):
+        """! @brief Create and add a form representation to the related form.
+        @param written_form The written form to set.
+        @param language Language used for the written form.
+        @return RelatedForm instance.
+        """
+        self.form_representation.append(FormRepresentation().set_writtenForm(written_form).set_language(language))
+        return self
+
+    def find_written_forms(self, language):
+        """! @brief Find written forms.
+        This attribite is owned by FormRepresentation.
+        @param language The language to consider to retrieve the written forms.
+        @return A Python list of found FormRepresentation attributes 'writtenForm'.
+        """
+        found_written_forms = []
+        for form_representation in self.form_representation:
+            if form_representation.get_language() == language:
+                found_written_forms.append(form_representation.get_writtenForm())
+        return found_written_forms

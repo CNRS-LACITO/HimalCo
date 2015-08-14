@@ -245,13 +245,20 @@ class LexicalEntry():
         @return A Python set of related forms.
         """
         if semantic_relation is None:
-            # Create a set without duplicates
-            return set(self.related_form)
+            return self.related_form
         found_forms = []
         for related_form in self.related_form:
             if related_form.get_semanticRelation() == semantic_relation:
                 found_forms.append(related_form)
-        return set(found_forms)
+        return found_forms
+
+    def get_last_related_form(self, semantic_relation=None):
+        """! @brief Get the previously registered related form.
+        @param semantic_relation The semantic relation to consider to retrieve the last related form.
+        @return The last element of LexicalEntry attribute 'related_form' that matches with semantic relation if provided.
+        """
+        if len(self.get_related_forms(semantic_relation)) >= 1:
+            return self.get_related_forms()[-1]
 
     def get_form_representations(self):
         """! @brief Get all form representations maintained by the lemma.
@@ -541,15 +548,16 @@ class LexicalEntry():
         sense.set_note(note, type, language)
         return self
 
-    def find_notes(self, type):
+    def find_notes(self, type, language=None):
         """! @brief Find notes.
         This attribute is owned by Statement, which owned by Definition, itself owned by Sense.
         @param type Type of the note to consider to retrieve the note.
+        @param language If this argument is given, find note only if written in this language.
         @return A Python list of found Statement attributes 'notes'.
         """
         found_notes = []
         for sense in self.get_senses():
-            found_notes += sense.find_notes(type)
+            found_notes += sense.find_notes(type, language)
         return found_notes
 
     def set_usage_note(self, usage_note, language=None):
