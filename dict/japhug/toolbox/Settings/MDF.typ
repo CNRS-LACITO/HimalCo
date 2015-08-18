@@ -5,6 +5,11 @@
 \lngDefault English
 \mkrRecord lx
 
+\+mkr 1
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr 1d
 \nam First dual
 \desc Used to give the vernacular for this particular paradigm form. (It is better to use the \pdl field set for this.)
@@ -45,6 +50,11 @@
 \CharStyle
 \-mkr
 
+\+mkr 2
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr 2d
 \nam Second dual
 \desc Used to give the vernacular for this particular paradigm form. (It is better to use the \pdl field set for this.)
@@ -67,6 +77,11 @@
 \lng vernacular
 \mkrOverThis ps
 \CharStyle
+\-mkr
+
+\+mkr 3
+\lng English
+\mkrOverThis lx
 \-mkr
 
 \+mkr 3d
@@ -462,6 +477,7 @@
 
 \+mkr n
 \lng English
+\mkrOverThis lx
 \-mkr
 
 \+mkr na
