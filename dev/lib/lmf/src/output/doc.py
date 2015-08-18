@@ -340,22 +340,28 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                                 p.add_run(glosses)
                     p.add_run(EOL)
                 else: # reverse
-                    # Paragraph
-                    p = document.add_paragraph()
                     # French gloss
+                    is_gloss = False
                     for sense in lexical_entry.get_senses():
                         for gloss in sense.find_glosses(language=config.xml.French):
+                            # Paragraph
+                            p = document.add_paragraph()
                             p.add_run(gloss).bold = True
+                            if gloss[-1] != '?' and gloss[-1] != '!' and gloss[-1] != '.':
+                                p.add_run(".")
+                            p.add_run(" ")
+                            is_gloss = True
                             break
-                    # Scientific name
-                    if lexical_entry.get_scientific_name() is not None:
-                        p.add_run(" ")
-                        p.add_run(lexical_entry.get_scientific_name())
-                    p.add_run(". ")
-                    # Lexeme
-                    p.add_run(lexical_entry.get_lexeme())
-                    if lexical_entry.get_lexeme()[-1] != '?' and lexical_entry.get_lexeme()[-1] != '!' and lexical_entry.get_lexeme()[-1] != '.':
-                        p.add_run(".")
+                        break
+                    if is_gloss:
+                        # Scientific name
+                        if lexical_entry.get_scientific_name() is not None:
+                            p.add_run(lexical_entry.get_scientific_name()).italic = True
+                            p.add_run(". ")
+                        # Lexeme
+                        p.add_run(lexical_entry.get_lexeme())
+                        if lexical_entry.get_lexeme()[-1] != '?' and lexical_entry.get_lexeme()[-1] != '!' and lexical_entry.get_lexeme()[-1] != '.':
+                            p.add_run(".")
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     document.save(filename)
