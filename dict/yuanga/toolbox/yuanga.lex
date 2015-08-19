@@ -17083,7 +17083,7 @@ queue, taches pourpres sur le ventre)
 \dt 11/Feb/2006
 
 \lx haba ??
-\is grammaire_preposition
+\is grammaire_préposition
 \dialx BO
 \ps n BENEF
 \ge pour
@@ -36882,7 +36882,7 @@ case (Dubois)
 \dt 10/Jun/2015
 
 \lx meli
-\is grammaire_déterminant duel
+\is grammaire_déterminant_duel
 \dialx GO(s)
 \ps déterminant duel
 \ge ces deux
@@ -50867,7 +50867,7 @@ sucre
 \is feu
 \dialx GOs
 \ps v
-\ge pousser le feu (sous la marmite, ou dans la maison, moins fort que ‘carûni’)
+\ge pousser le feu (sous la marmite, ou dans la maison, moins fort que 'carûni')
 \re
 \gb
 \rgb

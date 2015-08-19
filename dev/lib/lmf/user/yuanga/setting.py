@@ -46,7 +46,7 @@ order = [
             ("action_corps", "1.5.6. Mouvements de bras, de mains"),
             ("action", "1.5.7. Verbes d'action (en général)"),
             ("action_corps_animaux", "1.5.8. Verbes d'action faite par des animaux"),
-            ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments"),
+            ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments (liquide, fumée)"),
             ("action.plantes","1.5.10. Actions liées aux plantes"),
             ("manière", "1.5.11. Postverbes de manière"),
             ("action_outils", "1.5.12. Actions avec un instrument, un outil")
@@ -128,9 +128,9 @@ order = [
         ("TITLE 2", "4.3. Parenté alliance"),
         [
             ("parenté", "4.3.1. Parenté"),
-            ("appellation parenté", "4.3.2. Appellation parenté"),
-            ("désignation parenté", "4.3.3. Désignation parenté"),
-            ("alliance", "4.3.4. Alliance"),
+            ("parenté_appellation", "4.3.2. Appellation parenté"),
+            ("parenté_désignation", "4.3.3. Désignation parenté"),
+            ("parenté_alliance", "4.3.4. Alliance"),
             ("parenté_couple", "4.3.5. Couple parenté")
         ],
         ("TITLE 2", "4.4. Organisation sociale richesses dons échanges"),
@@ -154,7 +154,7 @@ order = [
             ("oralité", "4.7.1. Tradition orale"),
             ("discours", "4.7.2. Discours, échanges verbaux"),
             ("interaction", "4.7.3. Relations"),
-            ("interpellation", "4.7.4. Interpellation"),
+            ("discours_interjection", "4.7.4. Interjection, interpellation, exclamation"),
             ("exclamation", "4.7.5. Exclamation")
         ]
     ],
@@ -167,16 +167,22 @@ order = [
             ("temps_atmosphérique", "5.1.3. Phénomènes atmosphériques et naturels"),
             ("température", "5.1.4. Température")
         ],
-        ("TITLE 2", "5.2. Terre"),
+        ("TITLE 2", "5.2. Terre; les terrains et leur constitution"),
         [
-            ("terrain", "5.2.1. Les terrains et leur constitution"),
-            ("terrain_pierre", "5.2.2. Pierre, roche"),
-            ("terrain_terre", "5.2.3. Terre"),
-            ("topographie", "5.2.4. Topographie"),
-            ("orientation", "5.2.5. Orientation"),
-            ("locatif", "5.2.6. Locatifs")
+            ("terrain_pierre", "5.2.1. Pierre, roche"),
+            ("terrain_terre", "5.2.2. Terre"),
+            ("topographie", "5.2.3. Topographie"),
+            ("orientation", "5.2.4. Orientation"),
+            ("locatif", "5.2.5. Locatifs")
+            # ("locatif_orientation", "5.2.4. Orientation, locatifs")
         ],
-        ("eau", "5.3. Eau (eau douce mer)"),
+        ("TITLE 2", "5.3. Eau (eau douce, mer)"),
+        [
+            ("eau", "5.3.1. Eau"),
+            ("eau_marée", "5.3.2. Eau (marée)"),
+            ("eau_mer", "5.3.3. Eau (mer)"),
+            ("eau_topographie", "5.3.4. Eau (topographie)")
+        ],
         ("matière", "5.4. Matière, matériaux"),
         ("lumière", "5.5. Lumière")
     ],
@@ -191,7 +197,7 @@ order = [
         ("TITLE 2", "6.3. Reptiles"),
         [
             ("reptile", "6.3.1. Reptiles"),
-            ("reptiles marins", "6.3.2. Reptiles marins")
+            ("reptile_marin", "6.3.2. Reptiles marins")
         ],
         ("crustacés", "6.4. Crustacés, crabes"),
         ("échinoderme", "6.5. Echinodermes"),
@@ -208,7 +214,7 @@ order = [
         [
             ("plantes", "7.2.1. Nom des plantes"),
             ("plantes_partie", "7.2.2. Parties de plantes"),
-            ("plantes_processus", "7.2.3. Processus")
+            ("plantes_processus", "7.2.3. Processus liés aux plantes")
         ],
         ("arbre_cocotier", "7.3. Cocotiers"),
         ("igname", "7.4. Ignames"),
@@ -219,12 +225,12 @@ order = [
     ],
     ("TITLE 1", "8. Classificateur"),
     [
-        ("classificateur numérique", "8.1. Classificateurs numériques"),
-        ("classificateur possessif", "8.2. Classificateurs possessifs"),
-        ("classificateur nourriture", "8.3. Classificateurs de la nourriture"),
-        ("classificateur sémantique", "8.4. Classificateurs sémantiques")
+        ("classificateur numérique", "8.1. Préfixes classificateurs numériques"),
+        ("classificateur possessif", "8.2. Préfixes classificateurs possessifs"),
+        ("classificateur nourriture", "8.3. Préfixes classificateurs de la nourriture"),
+        ("classificateur sémantique", "8.4. Préfixes classificateurs sémantiques")
     ],
-    ("quantificateur", "9. Quantificateur"),
+    ("grammaire_quantificateur", "9. Quantificateurs"),
     ("TITLE 1", "10. Eléments grammaticaux"),
     [
         ("grammaire_adverbe", "10.1. Adverbe"),
@@ -245,42 +251,40 @@ order = [
         ("grammaire_déterminant_duel", "10.16. Déterminant duel"),
         ("grammaire_direction", "10.17. Direction"),
         ("grammaire_directionnel", "10.18. Directionnel"),
-        ("discours_interjection", "10.19. Discours interjection"),
-        ("grammaire_distributif", "10.20. Distributif"),
-        ("grammaire_existentiel", "10.21. Existentiel"),
-        ("grammaire_injonction", "10.22. Injonction"),
-        ("grammaire_intensificateur", "10.23. Intensificateur"),
-        ("grammaire_interjection", "10.24. Interjection"),
-        ("grammaire_interpellation", "10.25. Interpellation"),
-        ("grammaire_interrogatif", "10.26. Interrogatif"),
-        ("grammaire_IS", "10.27. IS"),
-        ("grammaire_locatif", "10.28. Locatif"),
-        ("grammaire_marque_sujet", "10.29. Marque sujet"),
-        ("grammaire_marque_transitive", "10.30. Marque transitive"),
-        ("grammaire_modalité", "10.31. Modalité"),
-        ("grammaire_négation", "10.32. Négation"),
-        ("grammaire_négation_existentiel", "10.33. Négation existentiel"),
-        ("grammaire_nombre", "10.34. Nombre"),
-        ("grammaire_numéral", "10.35. Numéral"),
-        ("grammaire_ordinal", "10.36. Ordinal"),
-        ("grammaire_parenté", "10.37. Parenté"),
-        ("grammaire_possession", "10.38. Possession"),
-        ("grammaire_préfixe", "10.39. Préfixe"),
-        ("grammaire_préposition", "10.40. Préposition"),
-        ("grammaire_présentatif", "10.41. Présentatif"),
-        ("grammaire_pronom", "10.42. Pronom"),
-        ("grammaire_pronom_négatif", "10.43. Pronom négatif"),
-        ("grammaire_propriété", "10.44. Propriété"),
-        ("grammaire_quantificateur", "10.45. Quantificateur"),
-        ("grammaire_quantificateur_degré", "10.46. Quantificateur degré"),
-        ("grammaire_quantification", "10.47. Quantification"),
-        ("grammaire_réciproque", "10.48. Réciproque"),
-        ("grammaire_réfléchi", "10.49. Réfléchi"),
-        ("grammaire_relateur", "10.50. Relateur"),
-        ("grammaire_restrictif", "10.51. Restrictif"),
-        ("grammaire_suff.trans.", "10.52. Suff. trans."),
-        ("grammaire_temps", "10.53. Temps"),
-        ("grammaire_vocatif", "10.54. Vocatif")
+        ("grammaire_distributif", "10.19. Distributif"),
+        ("grammaire_existentiel", "10.20. Existentiel"),
+        ("grammaire_injonction", "10.21. Injonction"),
+        ("grammaire_intensificateur", "10.22. Intensificateur"),
+        ("grammaire_interjection", "10.23. Interjection"),
+        ("grammaire_interpellation", "10.24. Interpellation"),
+        ("grammaire_interrogatif", "10.25. Interrogatif"),
+        ("grammaire_IS", "10.26. IS"),
+        ("grammaire_locatif", "10.27. Locatif"),
+        ("grammaire_marque_sujet", "10.28. Marque sujet"),
+        ("grammaire_marque_transitive", "10.29. Marque transitive"),
+        ("grammaire_modalité", "10.30. Modalité"),
+        ("grammaire_négation", "10.31. Négation"),
+        ("grammaire_négation_existentiel", "10.32. Négation existentiel"),
+        ("grammaire_nombre", "10.33. Nombre"),
+        ("grammaire_numéral", "10.34. Numéral"),
+        ("grammaire_ordinal", "10.35. Ordinal"),
+        ("grammaire_parenté", "10.36. Parenté"),
+        ("grammaire_possession", "10.37. Possession"),
+        ("grammaire_préfixe", "10.38. Préfixe"),
+        ("grammaire_préposition", "10.39. Préposition"),
+        ("grammaire_présentatif", "10.40. Présentatif"),
+        ("grammaire_pronom", "10.41. Pronom"),
+        ("grammaire_pronom_négatif", "10.42. Pronom négatif"),
+        ("grammaire_propriété", "10.43. Propriété"),
+        ("grammaire_quantificateur_degré", "10.44. Quantificateur degré"),
+        ("grammaire_quantification", "10.45. Quantification"),
+        ("grammaire_réciproque", "10.46. Réciproque"),
+        ("grammaire_réfléchi", "10.47. Réfléchi"),
+        ("grammaire_relateur", "10.48. Relateur"),
+        ("grammaire_restrictif", "10.49. Restrictif"),
+        ("grammaire_suff.transitif", "10.50. Suff. trans."),
+        ("grammaire_temps", "10.51. Temps"),
+        ("grammaire_vocatif", "10.52. Vocatif")
     ]
 ]
 

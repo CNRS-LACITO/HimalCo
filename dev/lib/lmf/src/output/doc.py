@@ -365,15 +365,14 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                     is_gloss = False
                     for sense in lexical_entry.get_senses():
                         for gloss in sense.find_glosses(language=config.xml.French):
-                            # Paragraph
-                            p = document.add_paragraph()
-                            p.add_run(gloss).bold = True
-                            if gloss[-1] != '?' and gloss[-1] != '!' and gloss[-1] != '.':
-                                p.add_run(".")
-                            p.add_run(" ")
-                            is_gloss = True
-                            break
-                        break
+                            if not is_gloss:
+                                # Paragraph
+                                p = document.add_paragraph()
+                                p.add_run(gloss).bold = True
+                                if gloss[-1] != '?' and gloss[-1] != '!' and gloss[-1] != '.':
+                                    p.add_run(".")
+                                p.add_run(" ")
+                                is_gloss = True
                     if is_gloss:
                         # Scientific name
                         if lexical_entry.get_scientific_name() is not None:
