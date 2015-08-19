@@ -19,7 +19,7 @@ order = [
         ("TITLE 2", "1.1. Anatomie"),
         [
             ("corps", "1.1.1. Corps humain"),
-            ("corps_animaux", "1.1.2. Partie du corps")
+            ("corps_animaux", "1.1.2. Corps animal")
         ],
         ("TITLE 2", "1.2. Fonctions naturelles"),
         [
@@ -363,21 +363,21 @@ mdf_lmf.update({
     # empr : emprunt => OK
     "empr"  : lambda empr, lexical_entry: set_bw(empr, lexical_entry),
     # sc : nom scientifique => OK
-    "sc" : lambda sc, lexical_entry: lexical_entry.set_scientific_name(force_caps(sc)),
+    "sc"    : lambda sc, lexical_entry: lexical_entry.set_scientific_name(force_caps(sc)),
     # ge : French gloss
-    "ge"    : lambda ge, lexical_entry: lexical_entry.set_gloss(force_caps(ge), language=config.xml.French),
+    "ge"    : lambda ge, lexical_entry: lexical_entry.set_gloss(force_caps(ge.replace('_', ' ').replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE")), language=config.xml.French),
     # xn : French example
-    "xn"     : lambda xn, lexical_entry: lexical_entry.add_example(force_caps(xn), language=config.xml.French),
+    "xn"    : lambda xn, lexical_entry: lexical_entry.add_example(force_caps(xn), language=config.xml.French),
     # xe : English example
     "xe"    : lambda xe, lexical_entry: lexical_entry.add_example(force_caps(xe), language=config.xml.English),
     # sge : French gloss of the subentry
-    "sge"    : lambda sge, lexical_entry: lexical_entry.set_gloss(force_caps(sge), language=config.xml.French),
+    "sge"   : lambda sge, lexical_entry: lexical_entry.set_gloss(force_caps(sge), language=config.xml.French),
     # de : French definition
-    "de"     : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=config.xml.French),
+    "de"    : lambda de, lexical_entry: lexical_entry.set_definition(force_caps(de), language=config.xml.French),
     # gr : note grammaticale => [Note grammaticale : ] à la suite de [Note : ]
-    "gr"     : lambda gr, lexical_entry: lexical_entry.set_note(gr, type="grammar", language=config.xml.regional),
+    "gr"    : lambda gr, lexical_entry: lexical_entry.set_note(gr, type="grammar", language=config.xml.regional),
     # gt: traduction de gr en français => [Note grammaticale : 'gr' (en gras) 'gt' (non gras)]
-    "gt"     : lambda gt, lexical_entry: lexical_entry.set_note(force_caps(gt), type="grammar", language=config.xml.French),
+    "gt"    : lambda gt, lexical_entry: lexical_entry.set_note(force_caps(gt), type="grammar", language=config.xml.French),
     # ce : French translation of cf => cf : 'cf' (en gras) 'ce' (non gras)
     "ce"    : lambda ce, lexical_entry: set_ce(force_caps(ce), lexical_entry),
     # nt : note => OK
@@ -387,7 +387,13 @@ mdf_lmf.update({
     # np : note phonologique => OK
     "np"    : lambda np, lexical_entry: lexical_entry.set_note(np, type="phonology"),
     # na : note anthropologique => OK
-    "na"    : lambda na, lexical_entry: lexical_entry.set_note(na, type="anthropology")
+    "na"    : lambda na, lexical_entry: lexical_entry.set_note(na, type="anthropology"),
+    # ve : dialect(s) of variant BO / PA / GO / GO(s) / GO(n) + WEM / WE / vx / BO [BM] / BO (Corne) / BO (Corne, BM)
+    "ve"    : lambda ve, lexical_entry: lexical_entry.set_dialect(ve.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE")),
+    # xv : vernacular example => OK
+    "xv"    : lambda xv, lexical_entry: lexical_entry.create_and_add_example(xv.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE"), language=config.xml.vernacular),
+    # cf : confer => OK
+    "cf"    : lambda cf, lexical_entry: lexical_entry.create_and_add_related_form(cf.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE"), "simple link")
 })
 
 ## Mapping between 'ps' MDF marker value and LMF part of speech LexicalEntry attribute value (input)

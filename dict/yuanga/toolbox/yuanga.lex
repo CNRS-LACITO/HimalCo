@@ -738,8 +738,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \is maison
 \dialx BO PA
 \ps n
-\ge solive verticale (pièce de bois réunissant la poutre maîtresse à la poutre de faîtage des
-maisons carrées ; Dubois) 
+\ge solive verticale (pièce de bois réunissant la poutre maîtresse à la poutre de faîtage des maisons carrées ; Dubois) 
 \re
 \gb
 \rgb
@@ -1143,7 +1142,7 @@ maisons carrées ; Dubois)
 \sge plante du pied ; chaussure
 \se bwa ala-mè-ny [BO]
 \sge devant moi
-\se bwa ala-mwa (ou) bwa ala-mè mwa
+\se bwa ala-mwa ; bwa ala-mè mwa
 \sge devant la maison
 \cf
 \ce
@@ -4347,7 +4346,7 @@ l'épouse: fils de frère de père, fils de soeur de mère et les cousins croisés de
 \dt 17/Mar/2010
 
 \lx bèèxu ???
-\is fonct.nat
+\is fonct.nat.animaux
 \dialx BO (Corne)
 \ps
 \ge en rut
@@ -8045,7 +8044,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 
 \lx calo ???
 \is corps
-\dialx haudr
+\dialx Haudr
 \ps
 \ge fontanelle
 \re
@@ -9125,8 +9124,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \is maison
 \dialx PA BO
 \ps n
-\ge solives (supportent les gaulettes qui retiennent les peaux de niaoulis et la paille
-couvrant la maison; plus petit que ce-mwa; Dubois)
+\ge solives (supportent les gaulettes qui retiennent les peaux de niaoulis et la paille couvrant la maison; plus petit que ce-mwa; Dubois)
 \re
 \gb
 \rgb
@@ -25349,8 +25347,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \is jeu
 \dialx GO(s) WEM 
 \ps n
-\ge jeu (avec deux bâtons: on tape sur une extrémité du baton avec l'autre bâton et le
-gagnant est celui qui l'a propulsé le plus loin)
+\ge jeu (avec deux bâtons: on tape sur une extrémité du baton avec l'autre bâton et le gagnant est celui qui l'a propulsé le plus loin)
 \re
 \gb
 \rgb
@@ -33787,7 +33784,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \va ku-xia
 \ve GO(s)
 \ps v
-\ge adosser_(s'); adossé 
+\ge adosser_(s'); adossé
 \re
 \gb
 \rgb
@@ -36977,7 +36974,7 @@ case (Dubois)
 \dialx GO(s)
 \ps n
 \ge Rossignol à ventre jaune
-\sc Eopsaltria flaviventris (EopsaltriidÃ©s)
+\sc Eopsaltria flaviventris (Eopsaltriids)
 \re
 \gb Yellow-bellied Robin
 \rgb
@@ -39101,7 +39098,7 @@ central de la case (Dubois)
 \re
 \gb
 \gr mudra
-\gt déÃ©chiréÃ© (statif)
+\gt déchiré (statif)
 \se hû-mudree
 \sge déchirer avec les dents
 \gb
@@ -42321,9 +42318,7 @@ et le début des racines coupées en pointe. Dubois)
 \ph dental
 \dialx WEM BO PA 
 \ps n
-\ge gaulettes servant d'appui aux solives (sorte de sablière tenant les gaulettes verticales
-"me-de" et les chevrons "ce-mwa" du sommet du poteau central "nigol" de la
-maison ronde (Dubois) ; lit. cou de la marmite 
+\ge gaulettes servant d'appui aux solives (sorte de sablière tenant les gaulettes verticales "me-de" et les chevrons "ce-mwa" du sommet du poteau central "nigol" de la maison ronde (Dubois) ; lit. cou de la marmite 
 \re
 \gb
 \rgb
@@ -50631,7 +50626,7 @@ sucre
 \is corps
 \dialx GO(s) BO
 \ps n
-\ge omoplate (la carapace du coeur)
+\ge omoplate (lit. la carapace du coeur)
 \re
 \gb
 \rgb
@@ -50872,7 +50867,7 @@ sucre
 \is feu
 \dialx GOs
 \ps v
-\ge pousser le feu (sous la marmite, ou dans la maison, moins fort que carûni)
+\ge pousser le feu (sous la marmite, ou dans la maison, moins fort que ‘carûni’)
 \re
 \gb
 \rgb
@@ -63982,7 +63977,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is santé
 \dialx GO(s)
 \ps v
-\ge borgne (il a un seul oeil)
+\ge borgne (lit. il a un seul oeil)
 \re
 \gb
 \rgb
@@ -67018,8 +67013,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is maison
 \dialx BO
 \ps n
-\ge poutre sablière (poutre circulaire
-supportant la charpente des cases rondes;  Dubois)
+\ge poutre sablière (poutre circulaire supportant la charpente des cases rondes;  Dubois)
 \re
 \gb
 \rgb
