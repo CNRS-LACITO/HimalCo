@@ -93,8 +93,6 @@
         <!-- et : étymologie ??? => None -->
         <!-- va : variante -->
         <mdf_lmf marker="va" var="va, lexical_entry">lexical_entry.set_geographical_variant(va)</mdf_lmf>
-        <!-- ve : dialecte(s) de la variante BO / PA / GO / GO(s) / GO(n) + WEM / WE / vx / BO [BM] / BO (Corne) / BO (Corne, BM) -->
-        <mdf_lmf marker="ve" var="ve, lexical_entry">lexical_entry.set_dialect(ve)</mdf_lmf>
         <!-- ps : partie du discours => OK -->
         <!-- re : lexique inversé en français -->
         <mdf_lmf marker="re" var="re, lexical_entry">lexical_entry.set_translation(re, language="fra")</mdf_lmf>
@@ -102,11 +100,8 @@
         <mdf_lmf marker="gb" var="gb, lexical_entry">lexical_entry.set_gloss(gb, language="eng")</mdf_lmf>
         <!-- rgb : lexique inversé en anglais => None -->
         <mdf_lmf marker="rgb" var="rgb, lexical_entry">lexical_entry.set_translation(rgb, language="eng")</mdf_lmf>
-        <!-- xv : exemple vernaculaire => OK -->
-        <!-- se : sous-entrée => OK -->
-        <!-- poc : étymologie => None -->
+        <!-- poc : étymologie, proto-océanien => None -->
         <mdf_lmf marker="poc" var="poc, lexical_entry">None</mdf_lmf>
-        <!-- cf : confer => OK -->
         <!-- cn : traduction de cf en français => TODO Isabelle le supprime -->
         <!-- dt : date => OK -->
         <!-- an : antonyme => None -->

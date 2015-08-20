@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from config.mdf import mdf_semanticRelation, pd_grammaticalNumber, pd_person, pd_anymacy, pd_clusivity
 from utils.error_handling import OutputError
@@ -39,6 +40,22 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
             document.add_heading(lexicon.get_id(), 0)
             # Plain paragraph
             document.add_paragraph(lexicon.get_label())
+            # Page break
+            document.add_page_break()
+            # Introduction
+            document.add_paragraph(u"Remerciements :")
+            document.add_paragraph(u"Province nord de la Nouvelle-Calédonie pour le financement des terrains d’enquête, LACITO-CNRS, et enfin le LABEX EFL (aide à la mise en forme du dictionnaire)")
+            document.add_paragraph(u"Merci à la population, au maire de Gomen (son nom) pour son accueil et son aide logistique.")
+            document.add_paragraph(u"Merci à tous ceux qui ont participé à ce dictionnaire : citer tous les noms")
+            document.add_paragraph(u"Gomen, Tregon, Paita, Paimboa")
+            document.add_paragraph(u"Famille Pebou-Polae (Charles, Salomé, fils)")
+            document.add_paragraph(u"Grande chefferie")
+            # Pictures in a table
+            table = document.add_table(rows=1, cols=4)
+            table.cell(0, 0).paragraphs[0].add_run().add_picture('user/yuanga/img1.png')
+            table.cell(0, 1).paragraphs[0].add_run().add_picture('user/yuanga/img2.png')
+            table.cell(0, 2).paragraphs[0].add_run().add_picture('user/yuanga/img3.png')
+            table.cell(0, 3).paragraphs[0].add_run().add_picture('user/yuanga/img4.png')
             # Page break
             document.add_page_break()
             # Lexicon is already ordered
@@ -123,7 +140,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                     if morph != "":
                         p.add_run(" Morph. :").italic = True
                     p.add_run(morph)
-                    p.add_run(dialect).bold = True
+                    p.add_run(dialect)
                     # Dialectal variants
                     write_title = True
                     for repr in lexical_entry.get_form_representations():
@@ -135,12 +152,27 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                                 p.add_run(" ; ")
                             p.add_run(repr.get_geographicalVariant()).bold = True
                             if repr.get_dialect() is not None:
-                                p.add_run(" [" + repr.get_dialect() + "]").bold = True
+                                p.add_run(" [" + repr.get_dialect() + "]")
                     # Part of speech in italic
                     if lexical_entry.get_partOfSpeech() is not None:
                         p.add_run(". ")
                         p.add_run(lexical_entry.get_partOfSpeech()).italic = True
                     p.add_run(".")
+                    # Note grammaticale
+                    if len(lexical_entry.find_notes(type="grammar")) != 0:
+                        p = document.add_paragraph()
+                        p.add_run("  ")
+                        p.add_run("[Note grammaticale :")
+                        for note in lexical_entry.find_notes(type="grammar", language=config.xml.regional):
+                            p.add_run(" ")
+                            p.add_run(note).bold = True
+                        for note in lexical_entry.find_notes(type="grammar", language=config.xml.French):
+                            p.add_run(" ")
+                            p.add_run(note)
+                        for note in lexical_entry.find_notes(type="grammar", language=config.xml.vernacular):
+                            p.add_run(" ")
+                            p.add_run(note)
+                        p.add_run("].")
                     for sense in lexical_entry.get_senses():
                         # Glosses
                         glosses = ""
@@ -173,7 +205,9 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             vernacular_forms = context.find_written_forms(language=config.xml.vernacular)
                             for example in vernacular_forms:
                                 p.add_run("  ")
-                                p.add_run(example).bold = True
+                                p.add_run(example.split('[')[0]).bold = True
+                                for element in example.split('[')[1:]:
+                                    p.add_run('[' + element)
                             try:
                                 fra_forms = context.find_written_forms(language=config.xml.French)
                                 if len(vernacular_forms) != 0 and len(fra_forms) != 0:
@@ -193,7 +227,9 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                                     # TODO : hyperlink
                                     pass
                                 p.add_run(" ")
-                                p.add_run(related_form.get_lexeme()).bold = True
+                                p.add_run(related_form.get_lexeme().split('[')[0]).bold = True
+                                for element in related_form.get_lexeme().split('[')[1:]:
+                                    p.add_run('[' + element)
                                 for written_form in related_form.find_written_forms(language=config.xml.French):
                                     p.add_run(" " + written_form)
                             p.add_run(".")
@@ -203,21 +239,6 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             p.add_run("  ")
                             p.add_run("[Note :")
                             for note in lexical_entry.find_notes(type="general"):
-                                p.add_run(" ")
-                                p.add_run(note)
-                            p.add_run("].")
-                        # Note grammaticale
-                        if len(lexical_entry.find_notes(type="grammar")) != 0:
-                            p = document.add_paragraph()
-                            p.add_run("  ")
-                            p.add_run("[Note grammaticale :")
-                            for note in lexical_entry.find_notes(type="grammar", language=config.xml.regional):
-                                p.add_run(" ")
-                                p.add_run(note).bold = True
-                            for note in lexical_entry.find_notes(type="grammar", language=config.xml.French):
-                                p.add_run(" ")
-                                p.add_run(note)
-                            for note in lexical_entry.find_notes(type="grammar", language=config.xml.vernacular):
                                 p.add_run(" ")
                                 p.add_run(note)
                             p.add_run("].")
@@ -315,14 +336,14 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                         p = document.add_paragraph()
                         # Italic
                         p.add_run(lexical_entry.find_notes(type=None)).italic = True
-                        # Picture
-                        #document.add_picture('name.png', width=Inches(1.25))
                     # Handle subentries
                     for related_form in lexical_entry.get_related_forms("subentry"):
                         if related_form.get_lexical_entry() is not None:
                             p = document.add_paragraph()
                             p.add_run("  ")
-                            p.add_run(related_form.get_lexeme()).bold = True
+                            p.add_run(related_form.get_lexeme().split('[')[0]).bold = True
+                            for element in related_form.get_lexeme().split('[')[1:]:
+                                p.add_run('[' + element.replace("GO(s)", "GOs").replace("GO(n)", "GOn").replace("WEM", "WE"))
                             for sense in related_form.get_lexical_entry().get_senses():
                                 glosses = ""
                                 for gloss in sense.find_glosses(language=config.xml.vernacular):
@@ -340,22 +361,27 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                                 p.add_run(glosses)
                     p.add_run(EOL)
                 else: # reverse
-                    # Paragraph
-                    p = document.add_paragraph()
                     # French gloss
+                    is_gloss = False
                     for sense in lexical_entry.get_senses():
                         for gloss in sense.find_glosses(language=config.xml.French):
-                            p.add_run(gloss).bold = True
-                            break
-                    # Scientific name
-                    if lexical_entry.get_scientific_name() is not None:
-                        p.add_run(" ")
-                        p.add_run(lexical_entry.get_scientific_name())
-                    p.add_run(". ")
-                    # Lexeme
-                    p.add_run(lexical_entry.get_lexeme())
-                    if lexical_entry.get_lexeme()[-1] != '?' and lexical_entry.get_lexeme()[-1] != '!' and lexical_entry.get_lexeme()[-1] != '.':
-                        p.add_run(".")
+                            if not is_gloss:
+                                # Paragraph
+                                p = document.add_paragraph()
+                                p.add_run(gloss).bold = True
+                                if gloss[-1] != '?' and gloss[-1] != '!' and gloss[-1] != '.':
+                                    p.add_run(".")
+                                p.add_run(" ")
+                                is_gloss = True
+                    if is_gloss:
+                        # Scientific name
+                        if lexical_entry.get_scientific_name() is not None:
+                            p.add_run(lexical_entry.get_scientific_name()).italic = True
+                            p.add_run(". ")
+                        # Lexeme
+                        p.add_run(lexical_entry.get_lexeme())
+                        if lexical_entry.get_lexeme()[-1] != '?' and lexical_entry.get_lexeme()[-1] != '!' and lexical_entry.get_lexeme()[-1] != '.':
+                            p.add_run(".")
     else:
         raise OutputError(object, "Object to write must be a Lexical Resource.")
     document.save(filename)
