@@ -3,7 +3,6 @@
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
-\usepackage{longtable}
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -26,7 +25,7 @@
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
 \newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\topic}{\textsc{dem}}
 \newcommand{\tete}{\textsuperscript{\textsc{head}}}
@@ -40,7 +39,7 @@
 
 
 \begin{document} 
-\title{Subjects, objects  and relativization in Japhug\footnote{
+\title{Subjects, objects  and relativization in Japhug\endnote{
 The glosses follow the Leipzig glossing rules; on S, A, P, T and R, see \citet{haspelmath11SAPTR}. Other abbreviations used here are: \textsc{appl} applicative, \textsc{antipass} antipassive,\textsc{dem} demonstrative, \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, SAP speech act participant (first or second person), \textsc{rc} relative clause, \textsc{sens} sensory. Words borrowed from Chinese are indicated between chevrons <> and are transcribed in pinyin. %\textsc{trop} tropative, 
 I would like to thank Hilary Chappell, Aimée Lahaussois, Anton Antonov, Wu Tong and the anonymous reviewers for useful comments on previous versions of this paper.  The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). 
 } }
@@ -62,15 +61,15 @@ I would like to thank Hilary Chappell, Aimée Lahaussois, Anton Antonov, Wu Tong
 \section{Introduction}
 The present paper deals with relative clauses in Japhug, and how these constructions provide evidence for the existence of syntactic pivots in this language. While previous publications have discussed relative clauses in Rgyalrong languages (in particular \citealt{jackson06guanxiju}, \citealt{jacksonlin07}, \citealt{jacques08zh}, \citealt{prins11kyomkyo}), this is the first systematic description of relative clauses in Japhug.\footnote{Correlatives, non-restrictive relatives and other non-canonical relatives are not described in this work.} This paper is divided in five sections.
 
-First, we provide background information on flagging and person indexation on the verb in Japhug.\footnote{Japhug is Sino-Tibetan language spoken by around 10000 speakers in Mbarkham county, Sichuan, China. Like the three other Rgyalrong languages (Situ, Zbu and Tshobdun), it is a polysynthetic language with complex morphology (see \citealt{jacques14antipassive}). }  Transitivity is morphologically marked in Japhug in an unambiguous way. In addition to plain intransitive  and transitive verbs, we find  semi-transitive verbs which share their morphological properties with intransitive verbs and some of their syntactic properties with transitive verbs. In addition,  both secundative and indirective ditransitive verbs are found.
+First, I provide background information on flagging and person indexation on the verb in Japhug.\footnote{Japhug is Sino-Tibetan language spoken by around 10000 speakers in Mbarkham county, Sichuan, China. Like the three other Rgyalrong languages (Situ, Zbu and Tshobdun), it is a polysynthetic language with complex morphology (see \citealt{jacques14antipassive}). }  Transitivity is morphologically marked in Japhug in an unambiguous way. In addition to plain intransitive  and transitive verbs, we find  semi-transitive verbs which share their morphological properties with intransitive verbs and some of their syntactic properties with transitive verbs. In addition,  both secundative and indirective ditransitive verbs are found.
 
-Second, we present general information on relative clauses in Japhug, and in particular show the existence of both head-internal and prenominal relatives.
+Second, I present general information on relative clauses in Japhug, and in particular show the existence of both head-internal and prenominal relatives.
 
-Third, we describe   non-finite relative clauses, whose main verb is in a participial form. Most relatives belong to this type, and three participles in \ipa{kɯ--}, \ipa{kɤ--} and \ipa{sɤ--} are used depending on the syntactic function of the relativized element.
+Third, I describe   non-finite relative clauses, whose main verb is in a participial form. Most relatives belong to this type, and three participles in \ipa{kɯ-}, \ipa{kɤ-} and \ipa{sɤ-} are used depending on the syntactic function of the relativized element.
 
-Fourth, we study finite relative clauses,  whose main verb is not nominalized. The use of this type of relative is highly restricted.
+Fourth, I study finite relative clauses,  whose main verb is not nominalized. The use of this type of relative is highly restricted.
 
-Fifth, we summarize the data presented in the previous sections and show how it allows us to strictly define syntactic pivots that can be labelled as `subjects' and `objects' in Japhug. In addition, we discuss how this study is relevant for the typology of alignment in Sino-Tibetan languages and beyond.
+Fifth, I summarize the data presented in the previous sections and show how it allows us to strictly define syntactic pivots that can be labeled as `subjects' and `objects' in Japhug. In addition, I discuss how this study is relevant for the typology of alignment in Sino-Tibetan languages and beyond.
 
 
 
@@ -98,7 +97,7 @@ Japhug has ergative alignment on all non-SAP arguments:  S and P are unmarked (e
 \end{exe}
 
 
-Japhug is a strictly postpositional language, and postpositional phrases can be headed by either postpositions (such as comitative \ipa{cʰo} or locative \ipa{zɯ}) or relators (which must take a possessive prefix, as dative \ipa{ɯ-ɕki}, temporal and locative  \ipa{ɯ-qʰu} `after' etc). Indirective ditransitive verbs such as \ipa{kʰo} `to pass over', \ipa{tʰu} `to ask', \ipa{rŋo} `to lend' or \ipa{ti} `say' mark their recipient with the dative \ipa{--ɕki} or \ipa{--pʰe},\footnote{The preference for one or the other dative marker depends on the speaker.} as in example \refb{ex:tathu}. 
+Japhug is a strictly postpositional language, and postpositional phrases can be headed by either postpositions (such as comitative \ipa{cʰo} or locative \ipa{zɯ}) or relators (which must take a possessive prefix, as dative \ipa{ɯ-ɕki}, temporal and locative  \ipa{ɯ-qʰu} `after' etc). Indirective ditransitive verbs such as \ipa{kʰo} `to pass over', \ipa{tʰu} `to ask', \ipa{rŋo} `to lend' or \ipa{ti} `say' mark their recipient with the dative \ipa{-ɕki} or \ipa{-pʰe},\footnote{The preference for one or the other dative marker depends on the speaker.} as in example \refb{ex:tathu}. 
 
  \begin{exe}
    \ex   \label{ex:tathu}
@@ -112,7 +111,7 @@ Secundative  ditransitive verbs (such as \ipa{mbi} `give') mark both the theme a
 
 \subsection{Indexation of arguments}
 
-Japhug verbs have two conjugations, transitive and intransitive. The intransitive conjugation indexes the person and number (singular, dual, plural) of the S, while the transitive conjugation indexes the person and number of both A and P. The indexation of arguments on transitive verb follows a quasi-canonical direct-inverse system (see \citealt{jacques10inverse}, \citealt{jacques14inverse}). The person marking prefixes and suffixes of the intransitive conjugation can be combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ--} $2\rightarrow1$ and \ipa{ta--} $1\rightarrow2$).
+Japhug verbs have two conjugations, transitive and intransitive. The intransitive conjugation indexes the person and number (singular, dual, plural) of the S, while the transitive conjugation indexes the person and number of both A and P. The indexation of arguments on transitive verb follows a quasi-canonical direct-inverse system (see \citealt{jacques10inverse}, \citealt{jacques14inverse}). The person marking prefixes and suffixes of the intransitive conjugation can be combined with either direct marking (via stem alternation), inverse marking (the \ipa{wɣ-} prefix) or portmanteau prefixes (the local scenario markers \ipa{kɯ-} $2\rightarrow1$ and \ipa{ta-} $1\rightarrow2$).
 
 
 In the case of ditransitive verbs as well, only two arguments can be indexed: either the theme (in the case of indirective verbs, such as \ipa{tʰu} `ask') or the recipient (in the case of secundative verbs, such as \ipa{mbi} `give') is treated as the P, while the the third argument receives no indexation on the verb. If a  speech act participant (first or second person, henceforth SAP) occurs as the P of an indirective verb, it cannot be interpreted as the recipient. Thus, sentence \refb{ex:tAGwthua} cannot be translated as `he asked me'.
@@ -134,7 +133,7 @@ In the case of ditransitive verbs as well, only two arguments can be indexed: ei
    \ex   \label{ex:aroa1}
  \gll 
 \ipa{aʑo}  	\ipa{tɤ-rɟit}  	\ipa{χsɯm}  	\ipa{aro-a}   \\
-I \textsc{indef.poss}-child three have:\textsc{fact}--\textsc{1sg} \\
+I \textsc{indef.poss}-child three have:\textsc{fact}-\textsc{1sg} \\
  \glt   I have three children. (elicited)
    \end{exe} 
 
@@ -142,7 +141,7 @@ I \textsc{indef.poss}-child three have:\textsc{fact}--\textsc{1sg} \\
 In example \refb{ex:aroa1}, agreement with the plural possessed would lead one to expect a form *\ipa{aro-a-nɯ} if the verb were morphologically transitive.
   
 
-  These  \textit{semi-transitive} verbs   include the possessive verb \ipa{aro} `to possess',  experiencer verbs \ipa{rga} `to like', \ipa{sɤŋo} `to listen' and \ipa{ru} `to look at' and verbs such as \ipa{rmi} `to be called ...', \ipa{rʑaʁ} `to spend ... nights'. The possessor or the experiencer is indexed on the verb, while the possessee/stimulus is not. The verb \ipa{ru} `to look' is a special case, as the stimulus can be optionally marked with the dative \ipa{--ɕki}. 
+  These  \textit{semi-transitive} verbs   include the possessive verb \ipa{aro} `to possess',  experiencer verbs \ipa{rga} `to like', \ipa{sɤŋo} `to listen' and \ipa{ru} `to look at' and verbs such as \ipa{rmi} `to be called ...', \ipa{rʑaʁ} `to spend ... nights'. The possessor or the experiencer is indexed on the verb, while the possessee/stimulus is not. The verb \ipa{ru} `to look' is a special case, as the stimulus can be optionally marked with the dative \ipa{-ɕki}. 
 
 This semi-transitive construction, which involves two unmarked arguments, only one of which is indexed on the verb, is superficially similar to the `bi-absolutive' construction found in Nakh-Daghestanian (\citealt{forker12biabsolutive}). However, the Japhug semi-transitive verbs differ from bi-absolutive verbs in Daghestanian languages in that this construction is not restricted to a specific TAM category. A better typological parallel is provided by the  \textsc{vaio} (intransitive animate verbs with object) found in Algonquian languages (cf  \citealt[242]{valentine01grammar}): although Algonquian languages do not have ergative flagging, \textsc{vaio} verbs behave like Japhug semi-transitive verbs in that they are conjugated intransitively and the person/number of one of the arguments is indexed on the verb, while the other is not.
 
@@ -177,7 +176,7 @@ In linguistic theories that  allow for the existence of empty elements, construc
 \glt I have already seen ones that had been killed (of owls). (Owls, 20)
   \end{exe}
 
-Whatever the merits and demerits of such an approach from a theoretical point of view, there is a practical advantage of treating such constructions as relatives in the particular case of Japhug: all canonical relatives in Japhug (except  finite relatives with relativized time or place adjunct, see section \refb{sec:finite-adjunct}) can be turned into headless relatives by removing the head noun. Headless relative clauses are well-attested in many other languages of the Sino-Tibetan family (\citealt[128-9]{genetti08nmlz}), and appear to be relatively common in text corpora in these languages.
+Whatever the merits and demerits of such an approach from a theoretical point of view, there is a practical advantage of treating such constructions as relatives in the particular case of Japhug: all canonical relatives in Japhug (except  finite relatives with relativized time or place adjunct, see section \ref{sec:finite-adjunct}) can be turned into headless relatives by removing the head noun. Headless relative clauses are well-attested in many other languages of the Sino-Tibetan family (\citealt[128-9]{genetti08nmlz}), and appear to be relatively common in text corpora in these languages.
 
 \citet[227]{coupe07mongsen} points out that head-internal relatives can be distinguished from other uses of nominalized clause by the fact that the deleted head can always be recovered. For instance, in example \refb{ex:pWkAsat2}, restoring the deleted head noun \ipa{pɣɤkʰɯ} `owl' is possible in either one of the two slots indicated by $\emptyset$.
 
@@ -214,7 +213,7 @@ Japhug verbs have a rich array of nominalized forms. Three nominalized forms are
 
 Participles differ from finite verbs in three regards. First, they cannot serve as the predicate of a main clause. Second, they cannot take the personal prefixes and suffixes of intransitive and transitive conjugation (including direct/inverse marking); rather, in some cases they take a possessive prefix coreferent with one the arguments of the participle. It is not possible to index more than one argument on a participial form. Third, there are restrictions on the TAM marking on these verbs.
 
-There are three participles in Japhug, the S/A participle in \ipa{kɯ--}, the P participle in \ipa{kɤ--} and the oblique participle in \ipa{sɤ--}. Examples \refb{ex:die} to \refb{ex:come} illustrate their basic uses. Their uses in building relative clauses are studied in the following sections. Their other functions (in clause linking or complementation) are not discussed in the present paper (see \citealt{jacques14linking}).
+There are three participles in Japhug, the S/A participle in \ipa{kɯ-}, the P participle in \ipa{kɤ-} and the oblique participle in \ipa{sɤ-}. Examples \refb{ex:die} to \refb{ex:come} illustrate their basic uses. Their uses in building relative clauses are studied in the following sections. Their other functions (in clause linking or complementation) are not discussed in the present paper (see \citealt{jacques14linking}).
 
 The S/A participle refers to the S (in the case of an intransitive verb, example \ref{ex:die}) or the A (in transitive verbs, \ref{ex:kill}). In the case of transitive verbs, a possessive prefix coreferent with the P is obligatory when no overt NP corresponding to the P is present, and when no other prefix is added to the participle.
 
@@ -250,7 +249,7 @@ It can appear with an optional possessive prefix coreferent to the agent as in \
  \glt  `The one that I kill.'
  \end{exe}
 
-The \ipa{sɤ}--prefix (and its allomorphs \ipa{sɤz}-- and \ipa{z}--) is used for non-core argument nominalization, in particular   recipient of indirective verbs, instruments, place and time. It takes a possessive prefix  which can be coreferent with S, A or P.
+The \ipa{sɤ}-prefix (and its allomorphs \ipa{sɤz}- and \ipa{z}-) is used for non-core argument nominalization, in particular   recipient of indirective verbs, instruments, place and time. It takes a possessive prefix  which can be coreferent with S, A or P.
 
    \begin{exe}
 \ex \label{ex:come}
@@ -285,7 +284,7 @@ prefix & prefix &motion prefix  &directional&&stem\\
 
 
 \subsection{S and A Relativization}
-The only way to relativize either S or A arguments in Japhug is by a non-finite relative with a verb in its \ipa{kɯ--} participle form. 
+The only way to relativize either S or A arguments in Japhug is by a non-finite relative with a verb in its \ipa{kɯ-} participle form. 
 
 Relativization of the S is most often expressed by a head-internal relative. Since Japhug has strict verb final word order,  the participial verb follows the head noun as in \refb{ex:tchi}.
 
@@ -326,7 +325,7 @@ When the relativized element is the A, prenominal relatives such as \refb{ex:wkw
 \end{exe}
 
 
-Head-internal relatives in this case are relatively rare in our corpus. As shown by example  \refb{ex:WkWnWmbrApW}, the relativized A keeps ergative marking \ipa{kɯ--} in head-internal relatives.
+Head-internal relatives in this case are relatively rare in our corpus. As shown by example  \refb{ex:WkWnWmbrApW}, the relativized A keeps ergative marking \ipa{kɯ-} in head-internal relatives.
 
 \begin{exe}
    \ex  \label{ex:WkWnWmbrApW}
@@ -336,12 +335,12 @@ boy \textsc{indef} \textsc{erg} bicycle \textsc{3sg-nmlz:A}-ride \textsc{indef} 
 \end{exe}
 
 
-As pointed out by \citet{jackson03caodeng} and \citet{jackson06guanxiju} concerning Tshobdun, a close relative of Japhug, the fact that both S and A arguments are relativized by the same constructions -- prenominal or head-internal participial relatives in \ipa{kɯ--} --suggests  the existence of a `subject' pivot. This question is discussed in more detail in section \ref{sec:subject.object}.
+As pointed out by \citet{jackson03caodeng} and \citet{jackson06guanxiju} concerning Tshobdun, a close relative of Japhug, the fact that both S and A arguments are relativized by the same constructions - prenominal or head-internal participial relatives in \ipa{kɯ-} -suggests  the existence of a `subject' pivot. This question is discussed in more detail in section \ref{sec:subject.object}.
 
 
 \subsection{Possessor Relativization}
 
-When possessors are relativized, the possessed noun remains \textit{in situ} and the verb are nominalized with the prefix \ipa{kɯ}-- like S and A arguments. A resumptive possessive prefix on the possessed noun is obligatory whether the possessor is overt (as in \ref{ex:WRrWkWtu}) or not (\ref{ex:lrWba}).
+When possessors are relativized, the possessed noun remains \textit{in situ} and the verb are nominalized with the prefix \ipa{kɯ}- like S and A arguments. A resumptive possessive prefix on the possessed noun is obligatory whether the possessor is overt (as in \ref{ex:WRrWkWtu}) or not (\ref{ex:lrWba}).
 
       \begin{exe}
    \ex \label{ex:WRrWkWtu}
@@ -374,16 +373,16 @@ However, unlike S and A arguments, possessors cannot be relativized by prenomina
 \subsection{P Relativization}
 Unlike S, A and possessors, P arguments can be relativized with either finite or non-finite relatives. The first type is discussed in section \ref{sec:finite.P}. The present section describes non-finite relativization of P arguments.
 
-When the relativized participant is the P, both head-internal (\ref{ex:nandzwt}), prenominal (\ref{ex:tajmag}) or headless relatives are possible. In the case of non-finite relativization, the verb is in the P-participle form with a \ipa{kɤ--} prefix.
+When the relativized participant is the P, both head-internal (\ref{ex:nandzwt}), prenominal (\ref{ex:tajmag}) or headless relatives are possible. In the case of non-finite relativization, the verb is in the P-participle form with a \ipa{kɤ-} prefix.
 
-     \begin{exe}
+\begin{exe}
    \ex \label{ex:nandzwt}
 \gll   [\ipa{tɯrme}\tete{}  	\ipa{mɤ-kɤ-nɯfse}]\rc{}  	\ipa{jɤ-ɣe}  	\ipa{tɕe}  	\ipa{tu-nɯ-ɤndzɯt}\\
 person \textsc{neg-nmzl:P}-know \textsc{pfv}-come[II] \textsc{lnk} \textsc{ipfv-appl}-bark\\
   \glt  When an unknown person  comes, it barks at him.  (05 khWna, 9)
    \end{exe}  
    
-        \begin{exe}
+\begin{exe}
    \ex \label{ex:tajmag}
    \gll
 [\ipa{aʑo}  	\ipa{a-mɤ-kɤ-sɯz}]\rc{}  	\ipa{tɤjmɤɣ}\tete{}  	\ipa{nɯ}  	\ipa{kɤ-ndza}  	\ipa{mɤ-naz-a}  \\
@@ -405,7 +404,7 @@ Unlike in Tshobdun (\citealt[10]{jacksonlin07}), in Japhug non-finite relatives 
 \subsection{T Relativization}
 As mentioned in section \ref{sec:flagging.indexation}, both indirective and secundative verbs are found in Japhug. By definition, the theme of indirective verbs is treated as the P, and need not be discussed in this section.
 
-The theme of secundative verbs like \ipa{mbi} `give' does not receive any flagging; it differs from the P-argument of monotransitive verbs in that there is no indexing on the verb of its person/number. However, the theme can be relativized by a non-finite relative (either prenominal or head-internal) with a P-participle in \ipa{kɤ}--  (example \ref{ex:nWkAmbi}) exactly like the P argument of a monotransitive verb. 
+The theme of secundative verbs like \ipa{mbi} `give' does not receive any flagging; it differs from the P-argument of monotransitive verbs in that there is no indexing on the verb of its person/number. However, the theme can be relativized by a non-finite relative (either prenominal or head-internal) with a P-participle in \ipa{kɤ}-  (example \ref{ex:nWkAmbi}) exactly like the P argument of a monotransitive verb. 
 
 \begin{exe}
 \ex \label{ex:nWkAmbi}
@@ -417,7 +416,7 @@ The theme of secundative verbs like \ipa{mbi} `give' does not receive any flaggi
 For secundative verbs, non-finite relatives with a P-participle are thus ambiguous: from the form of the verb, it is impossible to determine whether the relativized participant is the theme or the recipient. The form \ipa{nɯ-kɤ-mbi} \textsc{pfv-nmlz}:P-give can thus mean either `(the thing) X has given him' or `(the person) whom X has given it to'.
 
 \subsection{Semi-transitive verbs}
-In the case of semi-transitive verbs, the absolutive argument that is indexed on the verb is relativized like a normal S with a non-finite relative with a \ipa{kɯ--} participle as in example \refb{ex:kWrga}, with the verb \ipa{rga} `like', whose experiencer is treated as the S, and the stimulus is the semi-object.
+In the case of semi-transitive verbs, the absolutive argument that is indexed on the verb is relativized like a normal S with a non-finite relative with a \ipa{kɯ-} participle as in example \refb{ex:kWrga}, with the verb \ipa{rga} `like', whose experiencer is treated as the S, and the stimulus is the semi-object.
 
  \begin{exe}
    \ex   \label{ex:kWrga}
@@ -426,9 +425,9 @@ person \textsc{nmlz:S}-like very \textsc{emph} \textsc{inf}-eat  \textsc{nmlz:S}
  \glt  There are persons who like it, who like to eat it. (22  BlamajmAG, 62)
    \end{exe} 
    
-   On the other hand, the semi-object can be relativized by a non-finite (prenominal or head-internal) relative with a verb in \ipa{kɤ--} prefixed P-participle form, as in example \refb{ex:nWkArga} (a pseudo-cleft construction). The (optional) possessive prefix is coreferent here with the S.
-   
-    \begin{exe}
+   On the other hand, the semi-object can be relativized by a non-finite (prenominal or head-internal) relative with a verb in \ipa{kɤ-} prefixed P-participle form, as in example \refb{ex:nWkArga} (a pseudo-cleft construction). The (optional) possessive prefix is coreferent here with the S.
+
+\begin{exe}
    \ex   \label{ex:nWkArga}  
 \gll [\ipa{pɣa}  	\ipa{ra}  	\ipa{nɯ-kɤ-rga}]  	\ipa{nɯ}  	\ipa{qɤj}  	\ipa{ntsɯ}  	\ipa{ŋu}  \\
 bird \textsc{pl} \textsc{3pl-nmlz:P}-like \topic{} wheat always be:\textsc{fact} \\
@@ -438,9 +437,9 @@ bird \textsc{pl} \textsc{3pl-nmlz:P}-like \topic{} wheat always be:\textsc{fact}
 Thus, while semi-transitive verbs are  treated as intransitive verbs from the point of view of indexation and flagging, their semi-object can be relativized with the same construction as the P of a transitive verb.
 
 \subsection{Oblique Relativization}
-Other arguments and adjuncts, when they can be relativized in a non-finite relative clause,\footnote{Not all participants can be relativized in Japhug. In particular, the standard of comparison, which lies at the lower end of \citet{keenan77accessibility}'s accessibility hierarchy, cannot be relativized in this language.} require the use of a non-finite relative with a verb in the oblique participle in \ipa{sɤ--}.
+Other arguments and adjuncts, when they can be relativized in a non-finite relative clause,\footnote{Not all participants can be relativized in Japhug. In particular, the standard of comparison, which lies at the lower end of \citet{keenan77accessibility}'s accessibility hierarchy, cannot be relativized in this language.} require the use of a non-finite relative with a verb in the oblique participle in \ipa{sɤ-}.
 
-This includes the recipient of indirective verbs (but not secundative verbs) as in \refb{ex:WsAfCAt}, comitative arguments in \ipa{cʰo} `with' (\ref{ex:WsAmWmi}), time adjuncts (\ref{ex:WsAji}), place adjuncts ({ex:asAGi}) and instruments (\ref{ex:sAxtCAr}). Note that goals of motion / manipulation verbs can alternatively be relativized with the finite verb construction, see section \ref{sec:finite-adjunct}.
+This includes the recipient of indirective verbs (but not secundative verbs) as in \refb{ex:WsAfCAt}, comitative arguments in \ipa{cʰo} `with' (\ref{ex:WsAmWmi}), time adjuncts (\ref{ex:WsAji}), place adjuncts (\ref{ex:asAGi}) and instruments (\ref{ex:sAxtCAr}). Note that goals of motion / manipulation verbs can alternatively be relativized with the finite verb construction, see section \ref{sec:finite-adjunct}.
 
 \begin{exe}
 \ex \label{ex:WsAfCAt}
@@ -501,7 +500,7 @@ Like non-finite relatives, finite relatives can be either prenominal, head-inter
 Although non-finite relatives are generally identical to the corresponding independent clause, they do present some subtle differences that are described in this section.
 
 \subsection{Simple finite relative} \label{sec:finite.P}
-Simple finite relatives are those head-internal, headless or prenominal finite relatives that cannot take a  relator noun.\footnote{Relator nouns differ from normal head nouns in that they have an obligatory third person singular possessive prefix \ipa{ɯ--}. They only occur in prenominal relatives.}  
+Simple finite relatives are those head-internal, headless or prenominal finite relatives that cannot take a  relator noun.\footnote{Relator nouns differ from normal head nouns in that they have an obligatory third person singular possessive prefix \ipa{ɯ-}. They only occur in prenominal relatives.}  
 
 P arguments can be relativized with simple finite relatives as in \refb{ex:tutianw}.\footnote{The P of \ipa{ti} `to say' is never the addressee, it always refers to the words that are said.} 
 
@@ -512,7 +511,7 @@ P arguments can be relativized with simple finite relatives as in \refb{ex:tutia
 \glt The black worm that I was talking about grows like that. (28 kWpAz, 30)
 \end{exe}
 
-Since there is a restriction against combining a TAM prefix with a possessive prefix coreferent with the A in \ipa{kɤ--} P-participles (a form such as **\ipa{a-tu-kɤ-ti} \textsc{1sg-ipfv-nmlz:P}-say is not possible), the only way to specify both the A and the TAM on the verb when relativizing the P is to use a finite relative instead of a non-finite one.
+Since there is a restriction against combining a TAM prefix with a possessive prefix coreferent with the A in \ipa{kɤ-} P-participles (a form such as **\ipa{a-tu-kɤ-ti} \textsc{1sg-ipfv-nmlz:P}-say is not possible), the only way to specify both the A and the TAM on the verb when relativizing the P is to use a finite relative instead of a non-finite one.
 
 
 In addition, both the R and the T of secundative ditransitive verbs are treated as the P of monotransitive verbs, and can be relativized with a finite relative as in \refb{ex:nWGmbia}.
@@ -547,7 +546,7 @@ Finite relative clauses are attested with inverse marking in Japhug as in exampl
 
 In \refb{ex:nWwGmbi}, the relativized element is the theme of the verb `give' \ipa{mbi}. We saw in the previous sections that although \ipa{mbi} is a secundative verb, whose R  is treated as the P of a monotransitive verb in the verbal morphology, both  T  and R can be relativized using the same constructions.
 
-The presence of direct vs inverse morphology on the verb of the relative has no influence on the syntactic pivot of the construction: whether the verb takes the prefix \ipa{--wɣ--} or not, only the theme or the recipient can be relativized in such construction, never the A. In this regard, Japhug radically differs from languages such as Movima (\citealt[526-7]{haude09hierarchical}) which display a strict syntactic pivot: direct is used when the relativized participant is the P, while inverse appears when it is the A.
+The presence of direct vs inverse morphology on the verb of the relative has no influence on the syntactic pivot of the construction: whether the verb takes the prefix \ipa{-wɣ-} or not, only the theme or the recipient can be relativized in such construction, never the A. In this regard, Japhug radically differs from languages such as Movima (\citealt[526-7]{haude09hierarchical}) which display a strict syntactic pivot: direct is used when the relativized participant is the P, while inverse appears when it is the A.
 
 
 \subsection{Other finite relatives} \label{sec:finite-adjunct}
@@ -579,7 +578,7 @@ In addition, time and place adjuncts can be relativized with prenominal finite r
  \textsc{2sg.poss}-tooth be.small:\textsc{fact} \textsc{3sg.poss}-time \textsc{loc} \topic{} 2-\textsc{inv}-accompany be.with:\textsc{fact} but \\
 \glt While you are young, she will be with you. (Slobdpon2, 60)
 \end{exe}
-
+\newpage
 \begin{exe}
    \ex \label{ex:Wsta2}
  \gll
@@ -588,7 +587,7 @@ the.aforementioned \textsc{pst.ipfv}-walk.around \textsc{3sg.poss}-place \topic{
 \glt The places where it has been look like spilled snot. (26 qro, 138)
 \end{exe}
 
-This construction differs from simple finite relatives in two ways. First, only prenominal relativization is possible. Second, the  head noun has an obligatory third person possessive prefix \ipa{ɯ--}, which is impossible in the case of a prenominal simple finite relative.
+This construction differs from simple finite relatives in two ways. First, only prenominal relativization is possible. Second, the  head noun has an obligatory third person possessive prefix \ipa{ɯ-}, which is impossible in the case of a prenominal simple finite relative.
 
 \subsection{Nominalized status of finite relatives}
 All relative clauses in Japhug, apart from correlatives, are instances of clausal nominalization, a situation extremely common across Sino-Tibetan languages (see in particular \citealt{genetti08nmlz} and \citealt{bickel99nmlz}).
@@ -599,9 +598,10 @@ While non-finite relative clauses superficially appear to be entirely similar to
 
 First, the use of possessive prefixes on nouns in relative clauses is distinct from main clauses.
 
-In Japhug, the possessive prefixes of inalienably possessed nouns have coreference constraints: for instance, with the noun \ipa{--pɤro} `present', the possessive prefix always refers to the person giving the present, never to the recipient as in \refb{ex:YWtambi}. 
-	
-			\begin{exe}
+In Japhug, the possessive prefixes of inalienably possessed nouns have coreference constraints: for instance, with the noun \ipa{-pɤro} `present', the possessive prefix always refers to the person giving the present, never to the recipient as in \refb{ex:YWtambi}. 
+
+\newpage	
+\begin{exe}
 \ex \label{ex:YWtambi}
 \gll
 	\ipa{a-pɤro}  	\ipa{ɲɯ-ta-mbi}  	\ipa{ŋu}  \\
@@ -609,7 +609,7 @@ In Japhug, the possessive prefixes of inalienably possessed nouns have coreferen
 	\glt I give it to you as a present. (Elicited)
  	  \end{exe} 
 	 
-In relative clauses, including nominalized and non-nominalized ones, it is possible with nouns of this type to use either the possessive prefix corresponding to the giver (as in example \ref{ex:apAro}) or to neutralize the giver and use the indefinite possessor prefix \ipa{tɯ}--/\ipa{tɤ}-- (\ref{ex:tApAro}).
+In relative clauses, including nominalized and non-nominalized ones, it is possible with nouns of this type to use either the possessive prefix corresponding to the giver (as in example \ref{ex:apAro}) or to neutralize the giver and use the indefinite possessor prefix \ipa{tɯ}-/\ipa{tɤ}- (\ref{ex:tApAro}).
 	 
 
  		\begin{exe}
@@ -634,7 +634,7 @@ Second, the main verbs of finite relatives can undergo totalitative reduplicatio
 \begin{exe}
    \ex  \label{ex:kakwnandza}
 \gll [<quanxian>  	\ipa{tɕe}  	\ipa{kɯ\textasciitilde{}kɤ-kɯ-nɤndza}]\rc{}  	\ipa{nɯ}  	\ipa{ɲɤ-ɣɤme.}      	\\
-the.whole.county \textsc{lnk}  \textsc{total\textasciitilde{}pfv-nmlz:S}-have.leprosy \topic{} \textsc{ifr}-destroy \\
+the.whole.county \textsc{lnk}  \textsc{total\textasciitilde{}pfv-nmlz:S}-have.leprosy \topic{} \textsc{ifr}-suppress \\
  \glt  (This doctor) cured (suppressed) all lepers in the whole county. (25 khArWm, 72)
    \end{exe} 
 
@@ -685,7 +685,7 @@ However, data from relativization provide evidence of \textit{restrictive neutra
 \begin{tabular}{l|ccc|ccc}
 \toprule
 &\multicolumn{3}{c}{Participial Relative Clause} & \multicolumn{2}{c}{Finite Relative Clause} \\
-Function & \ipa{kɯ--}  & \ipa{kɤ--}  & \ipa{sɤ--}  & Simple  & Relator noun \\
+Function & \ipa{kɯ-}  & \ipa{kɤ-}  & \ipa{sɤ-}  & Simple  & Relator noun \\
 \midrule
 S	& HI, PN \bleute{}& &&&& \\
 A & HI, PN \bleute{}& &&&& \\
@@ -710,11 +710,11 @@ place adjunct  &&&HI, PN&&PN\\
 \end{table}
 
 
-The first neutralization is that of S and A (\textbf{subjects}), first noticed by \citet{jackson03caodeng}  in the case of the related language Tshobdun. Both S and A, and these two types of participants exclusively, can be relativized by headless, prenominal and head-internal relatives with a verb in the \ipa{kɯ--} participial form. Possessors can also be relativized with non-finite relatives and \ipa{kɯ--} participles, but only with head-internal relatives, not prenominal or head-internal ones. 
+The first neutralization is that of S and A (\textbf{subjects}), first noticed by \citet{jackson03caodeng}  in the case of the related language Tshobdun. Both S and A, and these two types of participants exclusively, can be relativized by headless, prenominal and head-internal relatives with a verb in the \ipa{kɯ-} participial form. Possessors can also be relativized with non-finite relatives and \ipa{kɯ-} participles, but only with head-internal relatives, not prenominal or head-internal ones. 
 
-%There are two other areas of Japhug grammar where this neutralization is observed: the prefix on \ipa{kɤ--} participles and some types of control verbs.
+%There are two other areas of Japhug grammar where this neutralization is observed: the prefix on \ipa{kɤ-} participles and some types of control verbs.
 
-There is another area  of Japhug grammar where this neutralization is observed: the optional possessive prefix on \ipa{kɤ--} participles also follows an accusative alignment.   For transitive and ditransitive verbs  the prefix always refers to the A (example \ref{ex:kill3} above), while in the case of semi-transitive verbs, it refers to the S, as in \refb{ex:nWkArga2}, thus displaying S/A restrictive neutralization.\footnote{The \ipa{kɤ--} participle does not exist for plain intransitive verbs, so that semi-transitive verbs are the only ones where one can test the behaviour of S with an object participle.}
+There is another area  of Japhug grammar where this neutralization is observed: the optional possessive prefix on \ipa{kɤ-} participles also follows an accusative alignment.   For transitive and ditransitive verbs  the prefix always refers to the A (example \ref{ex:kill3} above), while in the case of semi-transitive verbs, it refers to the S, as in \refb{ex:nWkArga2}, thus displaying S/A restrictive neutralization.\footnote{The \ipa{kɤ-} participle does not exist for plain intransitive verbs, so that semi-transitive verbs are the only ones where one can test the behaviour of S with an object participle.}
 
  \begin{exe}
    \ex   \label{ex:nWkArga2} 
@@ -724,9 +724,9 @@ bird \textsc{pl} \textsc{3pl-nmlz:P}-like \topic{} wheat always be:\textsc{fact}
    \end{exe} 
 
 
-The second neutralization is that of P, T and R of secundative ditransitive verbs, T of indirective verbs and the semi-object of semi-transitive verbs (\textbf{objects}), the four of which can be relativized in both non-finite relatives with a \ipa{kɤ--} participle and simple finite relatives (see Table \ref{tab:summary}). The goal of motion / manipulation verbs can be relativized in a finite relative, but require the oblique participle \ipa{sɤ--} when grammaticalized with a participial relative, showing that its should be kept distinct.
+The second neutralization is that of P, T and R of secundative ditransitive verbs, T of indirective verbs and the semi-object of semi-transitive verbs (\textbf{objects}), the four of which can be relativized in both non-finite relatives with a \ipa{kɤ-} participle and simple finite relatives (see Table \ref{tab:summary}). The goal of motion / manipulation verbs can be relativized in a finite relative, but require the oblique participle \ipa{sɤ-} when grammaticalized with a participial relative, showing that its should be kept distinct.
 
-The accusative alignment shown by the existence of subject and objects in Japhug contrasts with the presence of ergative and neutral alignment  in other areas of the grammar. Ergative alignment is found in generic person marking (see \citealt{jacques12demotion}),\footnote{Generic S/P is marked by \ipa{kɯ--}, while generic A is marked with the inverse prefix \ipa{--wɣ--}.} while neutral alignment is extremely common especially in clause linking constructions (\citealt{jacques14linking}), and also in control constructions. For instance, the S of the verb \ipa{rga}  `like' can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival or finite  complement verbs (the complement verb in \ref{ex:kAnWrAGo.rganW} is intransitive, while it is transitive in \ref{ex:kAnArtoXpjAt.pWrgaa} and \ref{ex:YWrganW}). This is still a syntactic pivot, since  coereference is only possible with core arguments, not with oblique arguments (including recipients of indirective verbs) or adjuncts.
+The accusative alignment shown by the existence of subject and objects in Japhug contrasts with the presence of ergative and neutral alignment  in other areas of the grammar. Ergative alignment is found in generic person marking (see \citealt{jacques12demotion}),\footnote{Generic S/P is marked by \ipa{kɯ-}, while generic A is marked with the inverse prefix \ipa{-wɣ-}.} while neutral alignment is extremely common especially in clause linking constructions (\citealt{jacques14linking}), and also in control constructions. For instance, the S of the verb \ipa{rga}  `like' can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival or finite  complement verbs (the complement verb in \ref{ex:kAnWrAGo.rganW} is intransitive, while it is transitive in \ref{ex:kAnArtoXpjAt.pWrgaa} and \ref{ex:YWrganW}). This is still a syntactic pivot, since  coreference is only possible with core arguments, not with oblique arguments (including recipients of indirective verbs) or adjuncts.
     \begin{exe}
    \ex   \label{ex:kAnWrAGo.rganW} 
 \gll
@@ -762,11 +762,11 @@ Table \ref{tab:japhug.pivot} summarizes the syntactic pivots  attested in Japhug
 \toprule
 Pivot & Construction \\
 \midrule
-\{S, A\}  & prenominal relativization with \ipa{kɯ--} participle  \\
- (subject)&(possessive prefix) on \ipa{kɤ--} participles in relatives \\
+\{S, A\}  & prenominal relativization with \ipa{kɯ-} participle  \\
+ (subject)&(possessive prefix) on \ipa{kɤ-} participles in relatives \\
  \midrule
 \{P, P', R_1, T\}  & relatives with a finite main verb (without relator noun)\\
-(object)  &relativization with \ipa{kɤ--} participle \\
+(object)  &relativization with \ipa{kɤ-} participle \\
 \midrule
  \{S, P, R_1, T_2\} & generic person marking\\
  (absolutive argument)\\
@@ -785,7 +785,7 @@ In the Sino-Tibetan family, while many languages such as Standard Mandarin (\cit
 \toprule
 Pivot & Construction \\
 \midrule
-\{S, A\} & embedded non-finite \ipa{--si} and \ipa{--sa} clauses\\
+\{S, A\} & embedded non-finite \ipa{-si} and \ipa{-sa} clauses\\
 & root nominalization\\
 \{S, P, R, T\} & internally headed relativisation \\
 \{S, P, R\} & control by \ipa{khes} `must', \ipa{nus-} `say'\\
