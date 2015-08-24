@@ -146,7 +146,7 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                     for repr in lexical_entry.get_form_representations():
                         if repr.get_geographicalVariant() is not None:
                             if write_title:
-                                p.add_run(" Var : ")
+                                p.add_run(" Var. : ")
                                 write_title = False
                             else:
                                 p.add_run(" ; ")
