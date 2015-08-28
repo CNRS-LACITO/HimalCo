@@ -19,7 +19,7 @@
 \dt 27/Jun/2007
 
 \lx ????
-\is coquillage
+\is céphalopode
 \dialx
 \ps
 \ge nautile
@@ -36,7 +36,7 @@
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 25/Aug/2015
 
 \lx ?????
 \is habitat
@@ -75,7 +75,7 @@
 \dt 27/Jun/2007
 
 \lx ?????
-\is coquillage
+\is Echinoderme 
 \dialx
 \ps
 \ge oursin ("feuille de Casuarina")
@@ -90,13 +90,13 @@
 \cf
 \ce
 \nt
-\dt 27/Jun/2007
+\dt 25/Aug/2015
 
 \lx ?????
-\is coquillage
+\is mollusque
 \dialx
 \ps
-\ge porcelaine, Cypraea sp.
+\ge porcelaine, Cypraea sp. (gastéropode)
 \re
 \gb
 \rgb
@@ -108,7 +108,7 @@
 \cf
 \ce
 \nt
-\dt 27/Jun/2007
+\dt 25/Aug/2015
 
 \lx ?????
 \is nourriture
@@ -3909,7 +3909,7 @@ extension, les fruits qui ont le même goût)
 \va baaro
 \ve GO(s)
 \ps n
-\ge lochon (petit)
+\ge lochon (petit ; poisson d'eau douce)
 \sc Eleotris fusca (Eleotridés)
 \re
 \gb
@@ -3919,7 +3919,7 @@ extension, les fruits qui ont le même goût)
 \cf traanõ
 \ce lochon (grande taille)
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx ba-too-cee ??
 \is outils
@@ -6169,7 +6169,7 @@ rendre comestible
 \dt 22/Aug/2015
 
 \lx bwagiloo
-\is action_corps_général
+\is action_corps
 \dialx GOs PA
 \ps v
 \ge courber (se)
@@ -6183,10 +6183,10 @@ rendre comestible
 \xn
 \cf kiluu [GOs BO]
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx bwaida
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge palourde
@@ -6197,7 +6197,7 @@ rendre comestible
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx bwa-kaça
 \is nom_locatif
@@ -6651,12 +6651,12 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dt 22/Aug/2015
 
 \lx bwavwa
-\is coquillage
+\is mollusque
 \dialx GOs BO
 \va bwapa
 \ve GO(s)
 \ps n
-\ge bénitier géant (coquille)
+\ge bénitier géant (coquille) (gastéropode)
 \re
 \gb
 \rgb
@@ -6664,7 +6664,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx bwavwaida
 \is oiseau
@@ -7686,7 +7686,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \dialx GOs PA BO
 \ps v
 \sn 1
-\is action_corps_général
+\is action_corps
 \ge frapper
 \ge heurter
 \re
@@ -7714,7 +7714,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \poc *tapi 'frapper avec la main'
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx cabicabi ???
 \is temps_saison
@@ -9392,6 +9392,8 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \ps n
 \ge papayer
 \re
+\sc Carica papaya L.
+\re
 \gb
 \rgb
 \xv po-cin [BO]
@@ -9404,7 +9406,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx cî
 \is crustacés
@@ -12230,7 +12232,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 23/Aug/2015
 
 \lx demô ??
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge couteau (coquillage)
@@ -12245,7 +12247,7 @@ dans le processus dont l'un est celui qui coupe)
 \cf
 \ce
 \nt
-\dt 27/Feb/2010
+\dt 25/Aug/2015
 
 \lx dèn kha-jöe
 \is déplacement
@@ -12367,7 +12369,7 @@ dans le processus dont l'un est celui qui coupe)
 \dt 23/Aug/2015
 
 \lx diia
-\is coquillage
+\is mollusque
 \is outils
 \dialx PA BO
 \va diva
@@ -12382,7 +12384,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn
 \cf
 \ce
-\dt 11/Nov/2014
+\dt 25/Aug/2015
 
 \lx dibee
 \is emprunt
@@ -12690,7 +12692,7 @@ Se déguste de préférence sucré.
 \va diia
 \ve GO
 \ps n
-\ge Pinctada
+\ge Pinctada (Pélécypodes)
 \sc Pinctada
 \re
 \gb
@@ -12699,7 +12701,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 21/Dec/2014
+\dt 25/Aug/2015
 
 \lx dive
 \is corps
@@ -13755,7 +13757,7 @@ Se déguste de préférence sucré.
 \dt 22/Aug/2015
 
 \lx druali
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge coquillage long qui s'enfonce dans le sable
@@ -13766,7 +13768,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx drube
 \is emprunt
@@ -13829,7 +13831,7 @@ Se déguste de préférence sucré.
 \dt 22/Aug/2015
 
 \lx drudruu
-\is coquillage
+\is mollusque
 \ph É–uÉ–u:
 \dialx GOs
 \ps n
@@ -13842,7 +13844,7 @@ Se déguste de préférence sucré.
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx du-hegi
 \is coutumes_objet
@@ -14258,7 +14260,7 @@ de frère de mère  ; fils de la soeur du père
 \dt 23/Aug/2015
 
 \lx êdime
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge bigorneau
@@ -14270,7 +14272,7 @@ de frère de mère  ; fils de la soeur du père
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx êdi-me
 \is corps
@@ -17505,7 +17507,7 @@ queue, taches pourpres sur le ventre)
 \dt 22/Aug/2015
 
 \lx hale 
-\is action_corps_général
+\is action
 \dialx GOs
 \ps v.t.
 \ge casser (verre, assiette)
@@ -17518,7 +17520,7 @@ queue, taches pourpres sur le ventre)
 \gt être cassé
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx halelewa
 \is insecte
@@ -18960,7 +18962,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \se hi-ce [BO]
 \sge branche
 \poc *kuku
-\dt 24/Aug/2015
+\dt 25/Aug/2015
 
 \lx hia
 \is danse
@@ -19147,7 +19149,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx hiili
-\is action_corps_général
+\is action_corps
 \hm 3
 \va iili
 \dialx PA BO
@@ -19163,7 +19165,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf hiliini
 \ce effacer
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx hiliçôô
 \is action_corps
@@ -19783,7 +19785,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx hõ
-\is santé
+\is caract.personne
 \hm 1
 \dialx GOs
 \va hom
@@ -19799,7 +19801,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf hû
 \ce silencieux
 \poc *kumu, *PSO xxumu (Geraghty)
-\dt 22/Aug/2015
+\dt 27/Aug/2015
 
 \lx hõõ
 \is grammaire_quantificateur
@@ -23080,7 +23082,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 
 \lx jò
 \hm 1
-\is action_corps_général
+\is action_corps
 \dialx GOs
 \va jòn
 \ve BO
@@ -23094,7 +23096,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx jò
 \is arbre
@@ -23647,8 +23649,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 24/Aug/2015
 
 \lx khaa
-\is santé
-\is action_corps_général
+\is action_corps
 \hm 3
 \dialx GOs PA BO
 \ps v
@@ -23672,7 +23673,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \sge lampe électrique (lit. feu-appuyer)
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx ka ? 
 \is grammaire_interrogatif
@@ -23871,7 +23872,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 22/Aug/2015
 
 \lx khaabîni
-\is action_corps_général
+\is action_corps
 \ph kÊ°a:bÃ®É³i
 \dialx GOs
 \va khaabîni
@@ -23887,7 +23888,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx khaboi
 \is action_corps
@@ -24251,7 +24252,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 24/Aug/2015
 
 \lx kha-dra
-\is action_corps_général
+\is action_corps
 \dialx GOs 
 \va kadae
 \ve BO
@@ -24268,7 +24269,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx kâdi
 \is interaction
@@ -25440,7 +25441,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 22/Aug/2015
 
 \lx kha-nhyale
-\is action_corps_général
+\is action_corps
 \is prefixe_action_avec_le_pied
 \dialx GOs
 \ps v
@@ -25455,7 +25456,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx kaò
 \is eau
@@ -25582,7 +25583,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx PA
 \ps v
 \sn 1
-\is action_corps_général
+\is action_corps
 \ge cacher (se)
 \ge rester à l'écart
 \re
@@ -25600,7 +25601,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx kharo
 \is eau_mer_plante
@@ -25782,7 +25783,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 23/Aug/2015
 
 \lx khaa-tia
-\is action_corps_général
+\is action_corps
 \dialx GOs
 \va khaa-zia
 \ve GOs
@@ -25796,7 +25797,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf tia
 \ce pousser
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx katian ???
 \dialx BO [Corne]
@@ -27244,7 +27245,7 @@ grand que "keruau")
 \dt 22/Aug/2015
 
 \lx kêê-mu-ce
-\is cultures
+\is cultures_champ
 \dialx GOs
 \ps n
 \ge jardin de fleurs
@@ -27256,7 +27257,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx kêê-mwa
 \is maison
@@ -27510,7 +27511,7 @@ grand que "keruau")
 \dt 22/Aug/2015
 
 \lx kê-muuc
-\is cultures
+\is cultures_champ
 \dialx PA
 \ps n
 \ge massif de fleurs
@@ -27522,7 +27523,7 @@ grand que "keruau")
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx kêni
 \is corps
@@ -28139,27 +28140,6 @@ grand que "keruau")
 \nt
 \dt 20/Feb/2015
 
-\lx ki kha
-\is feu
-\is cultures
-\dialx GOs
-\va ki khan
-\ve PA
-\ps v
-\ge brûler le champ d'ignames
-\re
-\gb
-\rgb
-\xv
-\xe
-\xn
-\ue
-\un
-\cf
-\ce
-\nt
-\dt 09/Nov/2014
-
 \lx kia 
 \is médecine
 \is religion
@@ -28658,9 +28638,14 @@ grand que "keruau")
 
 \lx khi-kha
 \is cultures
+\is feu
 \dialx GOs
 \va khi-ga
+\ve GOs
+\va ki kha
 \ve GO(s)
+\va ki khan
+\ve PA
 \ps v
 \ge brûler (les champs)  ; pratiquer le brûlis
 \re
@@ -28674,7 +28659,7 @@ grand que "keruau")
 \cf khîni
 \ce brûler 
 \nt
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx khi-kò
 \is feu
@@ -28858,7 +28843,7 @@ grand que "keruau")
 \dt 04/Jun/2015
 
 \lx kiluu
-\is action_corps_général
+\is action_corps
 \dialx GOs BO
 \va ciluu 
 \ve PA
@@ -28873,10 +28858,10 @@ grand que "keruau")
 \xn
 \cf bwagilo
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx khimò
-\is santé
+\is caract.personne
 \dialx GOs
 \va khimòn
 \ve BO PA
@@ -28890,7 +28875,7 @@ grand que "keruau")
 \xn il est sourd
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 27/Aug/2015
 
 \lx kimwado
 \is insecte
@@ -30113,20 +30098,25 @@ grand que "keruau")
 \dt 23/Aug/2015
 
 \lx kòlaao
-\is mollusque
 \dialx GOs BO
 \va kòlaao
 \ve PA
 \va kòlao; kòlaho
 \ve BO
 \ps n
-\ge conque (de la flèche faîtière)
+\sn 1
+\is mollusque
+\ge conque (gastéropode)
 \sc Tritonis sp.
+\sn 2
+\is maison
+\ge conque (de la flèche faîtière)
+\re
 \re
 \gb
 \rgb
 \poc *tavuRi (see kawolok nÃªl)
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx kole
 \hm 1
@@ -30585,7 +30575,7 @@ grand que "keruau")
 \xn mets la tortue au four
 \cf kîbi
 \ce four enterré
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx khòòni
 \is cultures
@@ -32597,7 +32587,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 
 \lx ku-çaaxò
 \is mouvement
-\is action_corps_général
+\is action_corps
 \ph ku-'Ê’a:É£É” 
 \dialx GOs
 \va ku-caaxò
@@ -32615,7 +32605,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ce
 \cf v.t. thözoe 
 \ce cacher qqn
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx ku-cimwi
 \is position
@@ -34162,13 +34152,15 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ps n
 \ge aloes
 \re
+\sc Cordyline fruticosa (L.) Agavacées
+\re
 \gb
 \rgb
 \xv
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx lã-nã
 \is grammaire_démonstratif
@@ -34927,7 +34919,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 23/Aug/2015
 
 \lx mha minõ
-\is nourriture
+\is prép.aliments 
 \dialx GOs
 \ps v.stat.
 \ge trop cuit
@@ -34942,7 +34934,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx ma nye
 \is grammaire_conjonction
@@ -35080,11 +35072,11 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ps n
 \ge herbe ; paille ; chaume
 \ge Vétiver [BO] (utilisée pour retenir le talus ; les racines séchées peuvent être utilisées pour parfumer)
-\sc Imperata arundinacea ou Imperata cylindrica
+\sc Imperata arundinacea ou Imperata cylindrica (graminées)
 \re
 \gb
 \rgb
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx mãè- 
 \is classificateur numérique
@@ -35107,7 +35099,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GOs PA BO
 \ps n
 \ge citronnelle
-\sc Cymbopogon citratus (L.) Stapf
+\sc Cymbopogon citratus (L.) Stapf (graminées)
 \re
 \gb
 \rgb
@@ -35115,7 +35107,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn feuilles de citronnelle
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx mãè-ni
 \is classificateur numérique
@@ -35163,7 +35155,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx mâge
 \dialx BO
 \va mhâge 
-\ps v
+\ps n ; v
 \sn 1
 \is noeud
 \ge nouer ; noeud (du filet) 
@@ -35178,7 +35170,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 25/Aug/2015
 
 \lx mãgi
 \is coutumes
@@ -37817,7 +37809,6 @@ espèce d'arbre)
 \dt 22/Aug/2015
 
 \lx meyaam
-\is cultures
 \is cultures_champ
 \dialx PA
 \ps n
@@ -37831,7 +37822,7 @@ espèce d'arbre)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx mi
 \is grammaire_pronom
@@ -38051,7 +38042,7 @@ espèce d'arbre)
 \dt 23/Aug/2015
 
 \lx mõ 
-\is grammaire_location
+\is grammaire_locatif
 \hm 2
 \dialx GOs WE BO
 \va bwa mhõ
@@ -38072,7 +38063,7 @@ espèce d'arbre)
 \cf
 \ce
 \poc *mauRi
-\dt 23/Aug/2015
+\dt 27/Aug/2015
 
 \lx mõ
 \is grammaire_pronom
@@ -42894,7 +42885,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \ge broussailles ; maquis  ; brousse
 \re
 \sn 2
-\is cultures
+\is cultures_champ
 \ge jachère
 \re
 \gb
@@ -42907,7 +42898,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn enfant illégitime
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 25/Aug/2015
 
 \lx novwo na kõbwe
 \is grammaire_conjonction
@@ -43523,7 +43514,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \ge gâté (fruit) 
 \re
 \sn 2
-\is caract.objet
+\is santé
 \ge purulent (bobo)
 \re
 \gb
@@ -43532,7 +43523,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf nhyale
 \ce ramollir
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx nhyale
 \is action_corps
@@ -44180,7 +44171,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 
 \lx õ-
 \hm 4
-\is grammaire_quantification
+\is grammaire_quantificateur
 \is classificateur numérique
 \dialx GOs PA BO
 \va on
@@ -44199,7 +44190,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn souvent
 \xv õ-tru, õ-ru
 \xn deux fois
-\dt 22/Aug/2015
+\dt 27/Aug/2015
 
 \lx õ wara-n
 \is grammaire_conjonction
@@ -44436,10 +44427,10 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dt 22/Aug/2015
 
 \lx õmwã
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
-\ge bernard-l'ermite (petit)
+\ge bernard-l'ermite (gastéropode)
 \re
 \gb
 \rgb
@@ -44449,7 +44440,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \poc *qumaÅ‹
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx õn
 \is nourriture
@@ -45794,7 +45785,6 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 
 \lx phai
 \hm 1
-\is nourriture
 \is prép.aliments
 \dialx GOs
 \va phaai
@@ -45814,7 +45804,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \gt faire cuire qqch.
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx phai cii
 \is prép.aliments
@@ -46546,7 +46536,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \dt 09/Jun/2015
 
 \lx pao-dale
-\is action_corps_général
+\is action_corps
 \dialx PA
 \ps v
 \ge casser en jetant
@@ -46558,10 +46548,10 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx pao-gaaò 
-\is action_corps_général
+\is action_corps
 \dialx PA
 \ps v
 \ge casser (du verre en jetant)
@@ -46573,7 +46563,7 @@ oncle maternel on offre une tige de cette plante liée à une sagaie (garçon) ou à
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx pao-kaö
 \is action_corps
@@ -48362,7 +48352,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 22/Aug/2015
 
 \lx peçi
-\is coquillage
+\is mollusque
 \dialx GOs
 \va peyi
 \ve PA
@@ -48371,7 +48361,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \re
 \gb
 \rgb
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pe-cimwi hi
 \is action_corps 
@@ -49490,7 +49480,6 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx peenu
 \hm 2
 \is cultures_champ
-\is cultures
 \dialx PA BO
 \ps n
 \ge tarodière 
@@ -49502,7 +49491,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf bwala ; aru
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pe-phããde kui
 \is coutumes
@@ -49598,7 +49587,6 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 
 \lx pe-phoo
 \is position
-\is étapes.vie
 \dialx GOs
 \ps v 
 \ge être sur le ventre (étape pour un bébé)
@@ -49613,7 +49601,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 25/Aug/2015
 
 \lx pe-po ??
 \dialx BO 
@@ -50711,8 +50699,9 @@ sucre
 \sge vider qqch
 \sn 2
 \is crustacés 
-\is coquillage
-\ge coquille vide (de coquillage) ; carapace vide
+\ge carapace vide
+\is mollusque
+\ge coquille vide (de coquillage) 
 \re
 \gb
 \rgb
@@ -50724,7 +50713,7 @@ sucre
 \xn coquille vide de bénitier
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx pii
 \is reptile
@@ -51077,7 +51066,7 @@ sucre
 \dialx GOs PA BO
 \ps n
 \sn 1
-\is coquillage
+\is mollusque
 \ge valve de coquillage (pour gratter le coco, banane, etc.)
 \sn 2
 \is instrument
@@ -51089,7 +51078,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pi-hi
 \is corps
@@ -51468,7 +51457,7 @@ sucre
 \dt 23/Aug/2015
 
 \lx pii-ragooni
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge coquille de coquille saint-jacques (sert de grattoir à coco et à papaye)
@@ -51479,7 +51468,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx phiri kûû
 \is son
@@ -52931,7 +52920,6 @@ sucre
 \dt 22/Aug/2015
 
 \lx phõõme
-\is nourriture
 \is prép.aliments
 \dialx GOs
 \va phõõm
@@ -52946,7 +52934,7 @@ sucre
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pòmi-nò 
 \is corps
@@ -53496,7 +53484,7 @@ sucre
 \ge petit  ; court
 \ge menu
 \sn 2
-\is quantificateur
+\is grammaire_quantificateur
 \ge un peu 
 \re
 \gb
@@ -53505,7 +53493,7 @@ sucre
 \xn coupe un peu de pain
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx pò-pwa
 \is temps_atmosphérique
@@ -54594,24 +54582,24 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dt 22/Aug/2015
 
 \lx phu 
-\is maison
-\is plantes
 \hm 2
 \dialx GOs PA BO
 \ps n
 \sn 1
+\is plantes
 \ge herbe à paille à tige longue (pousse en touffe, utilisée pour le torchis)
-\sc Themeda triandra
+\sc Themeda triandra (graminées)
 \re
 \gb
 \rgb
 \sn 2
+\is maison
 \ge premier rang de paille au bord du toit  ; rebord du toit de chaume
 \xv e thu phu
 \xn il met la première rangée de paille
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx phu
 \is habillement
@@ -54911,7 +54899,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dt 23/Dec/2014
 
 \lx puãgo
-\is coquillage
+\is mollusque
 \dialx GOs
 \va pwãgo 
 \ve GO(s)
@@ -54924,7 +54912,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pubu dili
 \is terrain_terre
@@ -55053,7 +55041,6 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dt 22/Aug/2015
 
 \lx puçò
-\is nourriture
 \is prép.aliments
 \dialx GOs
 \ph puÊ’É”
@@ -55073,7 +55060,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \sge cuisinier
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx pudi-go 
 \is plantes_partie
@@ -56135,7 +56122,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 
 \lx pwaa
 \hm 3
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge grisette
@@ -56146,7 +56133,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx phwa
 \hm 1
@@ -56422,7 +56409,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dt 22/Aug/2015
 
 \lx pwai
-\is nourriture
+\is nourriture_tabac
 \dialx GOs
 \ps n
 \ge cigarette
@@ -56434,10 +56421,10 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pwai-ce
-\is instrument
+\is nourriture_tabac
 \ph pwai-cÉ¨
 \dialx GOs
 \ps n
@@ -56449,7 +56436,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx pwaiòng
 \is igname
@@ -57094,7 +57081,6 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Aug/2015
 
 \lx phwaawe
-\is nourriture
 \is prép.aliments
 \dialx GOs PA WEM BO 
 \ps v
@@ -57108,7 +57094,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn fumoir
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx phwaxa
 \is caract.objet
@@ -58526,7 +58512,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Aug/2015
 
 \lx pwòmò-n
-\is cultures
+\is cultures_champ
 \dialx WE PA
 \va pòmò-n
 \ve BO PA
@@ -58539,7 +58525,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 25/Aug/2015
 
 \lx phwòòn
 \is poisson
@@ -59799,12 +59785,12 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Aug/2015
 
 \lx tagiliã
-\is coquillage
+\is mollusque
 \dialx GOs PA BO
 \va tãgilijã
 \ve GO(s)
 \ps n
-\ge bénitier (mollusque)
+\ge bénitier (gastéropode)
 \sc Tridacna elongata
 \re
 \gb
@@ -59813,7 +59799,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx taagine
 \is grammaire_aspect
@@ -59884,7 +59870,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Aug/2015
 
 \lx tagooni
-\is coquillage
+\is mollusque
 \dialx GOs
 \ps n
 \ge coquille saint-jacques
@@ -59898,7 +59884,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx thahîn
 \is discours_tradition_orale
@@ -60168,14 +60154,14 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ge gauler (fruit)
 \re
 \sn 3
-\is action_corps_général
+\is action_corps
 \ge taper 
 \re
 \gb
 \rgb
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx thaliang
 \is fonct.nat
@@ -63264,12 +63250,12 @@ enflammées (lit. piquer le feu)
 \dt 22/Aug/2015
 
 \lx thila
-\is armes
 \dialx GOs PA BO [BM, Corne]
 \va thira
 \ve BO [Corne]
 \ps n
 \sn 1
+\is armes
 \ge plumet de fronde
 \ge mèche (du fouet)
 \xv thila weda [PA]
@@ -63282,12 +63268,11 @@ enflammées (lit. piquer le feu)
 \ce plumet de fronde
 \sn 2
 \is danse
-\is configuration
 \ge bouquet de paille pour la danse
 \rgb
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx thile
 \is chasse
@@ -64981,7 +64966,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx thooli
-\is coquillage
+\is mollusque
 \dialx GOs PA
 \ps n
 \ge "coquilon"  (à coquille longue)
@@ -64994,7 +64979,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 25/Aug/2015
 
 \lx tròòli
 \is action
@@ -65632,7 +65617,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA BO
 \ps v
 \sn 1
-\is action_corps_général
+\is action_corps
 \ge cacher ; dissimuler qqch
 \sn 2
 \is interaction
@@ -65651,7 +65636,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ce enterrer qqch.
 \cf ku-çaaxò
 \ce se cacher
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx töö
 \hm 1
@@ -66989,7 +66974,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 
 \lx u
 \is mouvement
-\is action_corps_général
+\is action_corps
 \hm 3
 \dialx GOs BO
 \ps v
@@ -67009,7 +66994,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge entre ! (latéralement)
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx u
 \hm 4
@@ -69141,17 +69126,17 @@ départ en guerre. Dubois ms)
 \sn 1
 \is corps
 \ge édenté ; interstice laissé par des dents tombées
-\sn 1
+\xv wado-paro-n [BO]
+\xn l'interstice laissé par ses dents manquantes (Dubois)
+\sn 2
 \is outils
 \ge ébréché (pour une lame de couteau)
 \re
 \gb
 \rgb
-\xv wado-paro-n [BO]
-\xn l'interstice laissé par ses dents manquantes (Dubois)
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 27/Aug/2015
 
 \lx wa-do
 \is armes
@@ -70317,7 +70302,7 @@ wa-truci (20)
 \dt 22/Aug/2015
 
 \lx wazale kòò
-\is action_corps_général
+\is action_corps
 \dialx GOs
 \va wè-rali kòò ??
 \ve BO [Corne]
@@ -70330,7 +70315,7 @@ wa-truci (20)
 \xn il lui a fait un croc-en-jambes
 \cf thali
 \ce
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx wazaò
 \is temps
@@ -73405,7 +73390,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \ge ramper (serpent, lézard, lianes sur les arbres ou sur les tuteurs)
 \re
 \sn 2
-\is action_corps_général
+\is action_corps
 \ge faufiler_(se)
 \re
 \gb
@@ -73415,7 +73400,7 @@ Dubois : 1 yòò de 5O cm vaut 100 fr). Hiérarchie  des valeurs : yòò > weem > yha
 \cf
 \ce
 \poc *kalo
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx yölae
 \is action_corps
@@ -74924,7 +74909,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes ;
 
 \lx zòò
 \hm 2
-\is action_corps_général
+\is action_corps
 \dialx GOs 
 \va zhòò
 \ve GO(s) 
@@ -74940,7 +74925,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes ;
 \gb swim
 \rgb
 \poc *ka(ou), *kakaumu (Grace)
-\dt 24/Aug/2015
+\dt 27/Aug/2015
 
 \lx zòò
 \hm 3
