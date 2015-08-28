@@ -38,17 +38,17 @@ order = [
         ],
         ("TITLE 2", "1.5. Positions, déplacements, mouvements, actions"),
         [
-            ("position", "1.5.1. Préfixes verbaux de position"),
-            ("TITLE 3", "1.5.2. Verbes de déplacement et mouvement"),
+            ("position", "1.5.1. Préfixes Verbes de position"),
+            ("TITLE 3", "1.5.2. Verbes de déplacement et de mouvement"),
             [
                 ("déplacement", "1.5.2.1. Verbes de déplacement"),
                 ("mouvement", "1.5.2.2. Verbes de mouvement")
             ],
-            ("portage", "1.5.3. Portage"),
-            ("action.tête", "1.5.4. Mouvements ou actions avec la tête, les yeux, la bouche"),
-            ("action_corps", "1.5.5. Mouvements de bras, de mains"),
-            ("action", "1.5.6. Mouvements ou actions faits avec le corps, les bras, les mains"),
-            ("action_corps_animaux", "1.5.7. Verbes d'action faite par des animaux"),
+            ("action", "1.5.3. Verbes d'action (en général)"),
+            ("portage", "1.5.4. Portage"),
+            ("action_corps", "1.5.5. Mouvements ou actions faits avec le corps, les bras, les mains, les pieds"),
+            ("action.tête", "1.5.6. Mouvements ou actions avec la tête, les yeux, la bouche"),
+            ("action_corps_animaux", "1.5.7. Verbes d'action faite à ou par des animaux"),
             ("action eau, liquide, fumée", "1.5.8. Actions liées aux éléments (liquide, fumée)"),
             ("action.plantes","1.5.9. Actions liées aux plantes"),
             ("grammaire_manière", "1.5.10. Manière de faire l’action"),
@@ -129,48 +129,49 @@ order = [
         ("TITLE 2", "4.2. Fonctions intellectuelles, sentiments"),
         [
             ("fonct.intell.", "4.2.1. Fonctions intellectuelles"),
-            ("sentiments", "4.2.2. Sentiments"),
-            ("TITLE 3", "4.2.3. Découpage du temps, jours, saisons"),
-            [
-                ("temps_découpage", "4.2.3.1. Découpage du temps"),
-                ("temps", "4.2.3.2. Temps"),
-                ("temps_deixis", "4.2.3.3. Deixis"),
-                ("temps_jours", "4.2.3.4. Jours"),
-                ("temps_saison", "4.2.3.5. Saisons")
-            ]
+            ("sentiments", "4.2.2. Sentiments")
         ],
-        ("TITLE 2", "4.3. Parenté"),
+        ("TITLE 2", "4.3. Découpage du temps, jours, saisons"),
         [
-            ("parenté", "4.3.1. Parenté"),
-            ("parenté_appellation", "4.3.2. Appellation parenté"),
-            ("parenté_alliance", "4.3.3. Alliance"),
-            ("parenté_couple", "4.3.4. Couples de parenté")
+            ("temps", "4.3.1. Temps"),
+            ("temps_deixis", "4.3.2. Deixis"),
+            ("temps_découpage", "4.3.3. Découpage du temps"),
+            ("temps_jours", "4.3.4. Jours"),
+            ("temps_saison", "4.3.5. Saisons")
         ],
-        ("TITLE 2", "4.4. Organisation sociale richesses dons échanges"),
+        ("TITLE 2", "4.4. Parenté"),
         [
-            ("TITLE 3", "4.4.1. Société et organisation sociale"),
+            ("parenté", "4.4.1. Parenté"),
+            ("parenté_appellation", "4.4.2. Appellation parenté"),
+            ("parenté_alliance", "4.4.3. Alliance"),
+            ("parenté_couple", "4.4.4. Couples de parenté")
+        ],
+        ("TITLE 2", "4.5. Organisation sociale richesses dons échanges"),
+        [
+            ("TITLE 3", "4.5.1. Société et organisation sociale"),
             [
-                ("société", "4.4.1.1. Société"),
-                ("société_organisation", "4.4.1.2. Organisation sociale")
+                ("société", "4.5.1.1. Société"),
+                ("société_organisation", "4.5.1.2. Organisation sociale")
             ],
-            ("richesses", "4.4.2. Richesses, monnaies traditionnelles"),
-            ("échanges", "4.4.3. Dons, échanges, achat et vente, vol"),
-            ("coutumes_objet", "4.4.4. Objets coutumiers"),
-            ("coutumes", "4.4.5. Coutumes, dons coutumiers")
+            ("interaction", "4.5.2. Relations et interaction sociales"),
+            ("richesses", "4.5.3. Richesses, monnaies traditionnelles"),
+            ("échanges", "4.5.4. Dons, échanges, achat et vente, vol"),
+            ("coutumes_objet", "4.5.5. Objets coutumiers"),
+            ("coutumes", "4.5.6. Coutumes, dons coutumiers")
         ],
-        ("religion", "4.5. Religion, représentations religieuses"),
-        ("TITLE 2", "4.6. Fêtes, danse, chant, jeux"),
+        ("religion", "4.6. Religion, représentations religieuses"),
+        ("TITLE 2", "4.7. Fêtes, danse, chant, jeux"),
         [
-            ("danse", "4.6.1. Danses"),
-            ("musique", "4.6.2. Musique, instruments de musique"),
-            ("jeu", "4.6.3. Jeux divers")
+            ("danse", "4.7.1. Danses"),
+            ("musique", "4.7.2. Musique, instruments de musique"),
+            ("jeu", "4.7.3. Jeux divers")
         ],
-        ("TITLE 2", "4.7. Traditions orales, relations inter-individuelles"),
+        ("TITLE 2", "4.8. Traditions orales, relations inter-individuelles"),
         [
-            ("discours_tradition_orale", "4.7.1. Tradition orale"),
-            ("discours", "4.7.2. Discours, échanges verbaux"),
-            ("interaction", "4.7.3. Relations (avec relations sociales)"),
-            ("discours_interjection", "4.7.4. Interjection, interpellation, exclamation")
+            ("discours_tradition_orale", "4.8.1. Tradition orale"),
+            ("discours", "4.8.2. Discours, échanges verbaux"),
+            ("interaction", "4.8.3. Relations (avec relations sociales)"),
+            ("discours_interjection", "4.8.4. Interjection, interpellation, exclamation")
         ]
     ],
     ("TITLE 1", "5. Nature"),
@@ -178,7 +179,7 @@ order = [
         ("TITLE 2", "5.1. Ciel"),
         [
             ("astre", "5.1.1. Astres"),
-            ("vent", "5.1.2. Vent"),
+            ("vent", "5.1.2. Vents"),
             ("temps_atmosphérique", "5.1.3. Phénomènes atmosphériques et naturels"),
             ("température", "5.1.4. Température")
         ],
@@ -196,7 +197,7 @@ order = [
         ("TITLE 2", "5.3. Eau (eau douce, mer)"),
         [
             ("eau", "5.3.1. Eau"),
-            ("eau_marée", "5.3.2. Marée"),
+            ("eau_marée", "5.3.2. Marées"),
             ("eau_mer", "5.3.3. Mer et coraux"),
             ("eau_topographie", "5.3.4. Mer : topographie")
         ],
@@ -229,7 +230,7 @@ order = [
         ("arbre", "7.1. Arbre"),
         ("TITLE 2", "7.2. Description des végétaux"),
         [
-            ("plantes", "7.2.1. Nom des plantes"),
+            ("plantes", "7.2.1. Noms des plantes"),
             ("plantes_partie", "7.2.2. Parties de plantes"),
             ("plantes_processus", "7.2.3. Processus liés aux plantes")
         ],
@@ -240,18 +241,23 @@ order = [
         ("cucurbitacée", "7.7. Cucurbitacées"),
         ("plantes.fruit", "7.8. Fruits")
     ],
-    ("TITLE 1", "8. Classificateur"),
+    ("TITLE 1", "8. Classificateurs"),
     [
         ("classificateur numérique", "8.1. Préfixes classificateurs numériques"),
         ("classificateur possessif", "8.2. Préfixes classificateurs possessifs"),
         ("classificateur nourriture", "8.3. Préfixes classificateurs de la nourriture"),
         ("classificateur sémantique", "8.4. Préfixes classificateurs sémantiques")
     ],
+    ("TITLE 1", "9. Quantificateurs et marques de degré"),
+    [
+        ("grammaire_quantificateur", "9.1. Quantificateurs"),
+        ("grammaire_quantificateur_degré", "9.2. Marques de degré")
+    ],
     ("TITLE 1", "10. Eléments grammaticaux"),
     [
         ("grammaire_adverbe", "10.1. Adverbe"),
         ("grammaire_agent", "10.2. Agent"),
-        ("grammaire_article", "10.3. Article"),
+        ("grammaire_article", "10.3. Articles"),
         ("grammaire_article_indéfini", "10.4. Article indéfini"),
         ("grammaire_aspect", "10.5. Aspect"),
         ("grammaire_temps", "10.6. Temps"),
@@ -261,7 +267,7 @@ order = [
         ("grammaire_comparaison", "10.10. Comparaison"),
         ("grammaire_conjonction", "10.11. Conjonction"),
         ("grammaire_contraste", "10.12. Contraste"),
-        ("grammaire_démonstratif", "10.13. Démonstratif"),
+        ("grammaire_démonstratif", "10.13. Démonstratifs"),
         ("grammaire_dérivation", "10.14. Dérivation"),
         ("TITLE 2", "10.15. Direction et directionnels"),
         [
@@ -277,34 +283,39 @@ order = [
             ("grammaire_interpellation", "10.19.2. Interpellation")
         ],
         ("grammaire_interrogatif", "10.20. Interrogatifs"),
-        ("grammaire_IS", "10.21. Information structure"),
-        ("grammaire_locatif", "10.22. Locatifs"),
-        ("grammaire_modalité", "10.23. Modalité"),
-        ("grammaire_négation", "10.24. Négation"),
-        ("grammaire_négation_existentiel", "10.25. Négation existentielle"),
-        ("grammaire_nombre", "10.26. Marque de nombre"),
-        ("grammaire_numéral", "10.27. Numéraux cardinaux"),
-        ("grammaire_ordinal", "10.28. Numéraux ordinaux"),
-        ("grammaire_relateur_possessif", "10.29. Relateurs et relateurs possessifs"),
-        ("grammaire_préfixe", "10.30. Préfixes dérivationnels"),
-        ("grammaire_préfixe_sémantique", "10.31. Préfixes compositionnels sémantiques"),
-        ("grammaire_préposition", "10.32. Prépositions"),
-        ("grammaire_présentatif", "10.33. Présentatifs"),
-        ("grammaire_pronom", "10.34. Pronoms"),
-        ("grammaire_pronom_négatif", "10.35. Pronom négatif"),
-        ("TITLE 2", "10.36. Quantificateurs et marques de degré"),
+        ("grammaire_locatif", "10.21. Locatifs"),
         [
-            ("grammaire_quantificateur", "10.36.1. Quantificateurs"),
-            ("grammaire_quantificateur_degré", "10.36.2. Marques de degré")
+            ("locatif", "10.21.1. Locatifs"),
+            ("nom_locatif", "10.21.2. Noms locatifs"),
+            ("verbe_locatif", "10.21.3. Verbes locatifs")
         ],
-        ("grammaire_réciproque", "10.37. Réciproque"),
-        ("grammaire_réfléchi", "10.38. Réfléchi, intensificateur"),
+        ("grammaire_modalité", "10.22. Modalité"),
+        ("grammaire_négation", "10.23. Négation"),
+        ("grammaire_négation_existentiel", "10.24. Négation existentielle"),
+        ("grammaire_nombre", "10.25. Marque de nombre"),
+        ("grammaire_numéral", "10.26. Numéraux cardinaux"),
+        ("grammaire_ordinal", "10.27. Numéraux ordinaux"),
+        ("grammaire_relateur_possessif", "10.28. Relateurs et relateurs possessifs"),
+        ("grammaire_préfixe", "10.29. Préfixes dérivationnels"),
+        ("grammaire_préfixe_sémantique", "10.30. Préfixes compositionnels sémantiques"),
+        ("grammaire_préposition", "10.31. Prépositions"),
+        ("grammaire_présentatif", "10.32. Présentatifs"),
+        ("grammaire_pronom", "10.33. Pronoms"),
+        ("grammaire_pronom_négatif", "10.34. Pronom négatif"),
+        ("TITLE 2", "10.35. Quantificateurs et marques de degré"),
         [
-            ("grammaire_réfléchi", "10.38.1. Réfléchi"),
-            ("grammaire_réfléchi_intensificateur", "10.38.2. Intensificateur")
+            ("grammaire_quantificateur", "10.35.1. Quantificateurs"),
+            ("grammaire_quantificateur_degré", "10.35.2. Marques de degré")
         ],
-        ("grammaire_restrictif", "10.39. Marques restrictives"),
-        ("grammaire_suff.transitif", "10.40. Suffixes transitifs"),
+        ("grammaire_réciproque", "10.36. Réciproque"),
+        ("grammaire_réfléchi", "10.37. Réfléchi, intensificateur"),
+        [
+            ("grammaire_réfléchi", "10.37.1. Réfléchi"),
+            ("grammaire_réfléchi_intensificateur", "10.37.2. Intensificateur")
+        ],
+        ("grammaire_restrictif", "10.38. Marques restrictives"),
+        ("grammaire_suff.transitif", "10.39. Suffixes transitifs"),
+        ("grammaire_IS", "10.40. Structure informationnelle"),
         ("grammaire_vocatif", "10.41. Vocatifs")
     ]
 ]
