@@ -14225,7 +14225,7 @@ de frère de mère  ; fils de la soeur du père
 \dt 23/Aug/2015
 
 \lx ebòli 
-\is grammaire_orientation
+\is grammaire_directionnel
 \dialx GOs PA BO
 \ps LOC.DIR
 \ge là-bas en bas ; là-bas vers la mer (visible ou non)
@@ -14242,10 +14242,10 @@ de frère de mère  ; fils de la soeur du père
 \xn elle est partie en France
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx êda
-\is grammaire_orientation
+\is grammaire_directionnel
 \dialx GO
 \ps DEIC DIR
 \ge là-bas en haut ; devant
@@ -14257,7 +14257,7 @@ de frère de mère  ; fils de la soeur du père
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx êdime
 \is mollusque
@@ -14303,7 +14303,7 @@ de frère de mère  ; fils de la soeur du père
 \dt 23/Aug/2015
 
 \lx êdu
-\is grammaire_orientation
+\is grammaire_direction
 \dialx GO
 \ps DEIC DIR
 \ge là-bas en bas ; derrière
@@ -14314,7 +14314,7 @@ de frère de mère  ; fils de la soeur du père
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx êê-
 \is cultures
@@ -15845,6 +15845,10 @@ cette femme-là en bas, cette femme-là loin en bas
 \sn 1
 \is verbe_locatif
 \ge trouver (se) à ; être dans un endroit 
+\ge près de (être)
+\re
+\gb
+\rgb
 \sn 2
 \is grammaire_aspect
 \ge être en train de 
@@ -15875,13 +15879,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \sge il est ici 
 \se ge nòli [BO PA]
 \sge il est là-bas
-\sn 3
-\is grammaire_locatif
-\ge près de (être)
-\re
-\gb
-\rgb
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx ge
 \hm 2
@@ -18343,6 +18341,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf mu
 \ce derrière, après
 \sn 2
+\ge
+\is grammaire_conjonction
 \ps PREP ; ADV ; CNJ
 \ge devant ; avant
 \re
@@ -18356,7 +18356,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn avant de manger
 \xv hêbu na nu hovwo
 \xn avant que je mange
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx hê-cò
 \is corps
@@ -19869,7 +19869,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx hõ-ã 
-\is grammaire_orientation
+\is grammaire_directionnel
 \dialx BO [BM, Corne]
 \ps ADV
 \ge par ici  ; de ce côté
@@ -19880,7 +19880,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn quant à lui il se rit ainsi
 \cf hõõ-li
 \ce de ce côté-là, de l'autre côté
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx hõbwò
 \is habillement
@@ -20058,7 +20058,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx hõõ-li
-\is grammaire_orientation
+\is grammaire_locatif
 \dialx BO [BM, Corne]
 \ph hÉ”ÌƒÉ”Ìƒli
 \ps LOC
@@ -20072,7 +20072,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \un
 \cf hõ-ã
 \ce de ce côté-ci 
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx homi
 \is action_corps
@@ -33548,7 +33548,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dt 22/Aug/2015
 
 \lx kun-òli
-\is grammaire_orientation
+\is grammaire_locatif
 \ph kuÉ³É”li (post alveol)
 \dialx GOs 
 \va kun-òli
@@ -33563,7 +33563,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx kunô
 \is insecte
@@ -40577,7 +40577,7 @@ sauvage (di) et cuit)
 \dt 23/Aug/2015
 
 \lx na bòli
-\is grammaire_orientation
+\is grammaire_direction
 \ph É³a
 \dialx GOs BO PA
 \ps LOC
@@ -40589,7 +40589,7 @@ sauvage (di) et cuit)
 \xn comment s'appelle cet arbre là-bas ?
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx na ènòli
 \is grammaire_locatif
@@ -41677,7 +41677,7 @@ sauvage (di) et cuit)
 \dt 22/Aug/2015
 
 \lx ni gò
-\is grammaire_locatif
+\is nom_locatif
 \ph É³iÌƒ gÉ”
 \dialx GOs
 \ps n LOC
@@ -41692,7 +41692,7 @@ sauvage (di) et cuit)
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx ni nõ
 \is grammaire_locatif
@@ -42153,7 +42153,7 @@ et le début des racines coupées en pointe. Dubois)
 \dt 22/Aug/2015
 
 \lx nõ
-\is grammaire_locatif
+\is nom_locatif
 \hm 2
 \ph É³É”Ìƒ
 \dialx GOs
@@ -42181,7 +42181,7 @@ et le début des racines coupées en pointe. Dubois)
 \cf ni
 \ce vers
 \poc *lalo
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx nõ-
 \is classificateur numérique
@@ -48488,7 +48488,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \dt 23/Aug/2015
 
 \lx pedõnõ
-\is grammaire_locatif
+\is nom_locatif
 \ph pedÉ”ÌƒnÉ”Ìƒ
 \dialx GOs
 \va penõnõ
@@ -48504,7 +48504,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn au milieu des arbres
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx pegaabe
 \is interaction
@@ -52992,7 +52992,7 @@ sucre
 \ve WE PA
 \ps n.loc. (forme POSS de pwamwa)
 \sn 1
-\is grammaire_locatif
+\is nom_locatif
 \ge chez
 \re
 \xv nu a-da pomwõ-ny [BO]
@@ -53015,7 +53015,7 @@ sucre
 \xn mon pays 
 \cf pwamwa
 \ce pays
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx pomõ-da
 \is topographie
@@ -53050,7 +53050,7 @@ sucre
 \dt 23/Aug/2015
 
 \lx pomõ-li
-\is grammaire_locatif
+\is nom_locatif
 \dialx GOs BO
 \ps DIR
 \ge de l'autre côté  ; au-delà
@@ -53063,10 +53063,10 @@ sucre
 \xn va de l'autre côté 
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx pomõ-mi
-\is grammaire_orientation
+\is grammaire_directionnel
 \dialx GOs
 \ps LOC
 \ge par ici
@@ -53079,7 +53079,7 @@ sucre
 \xn approche-toi de moi
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx pomõnim
 \is eau
@@ -54884,7 +54884,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dt 23/Aug/2015
 
 \lx pua
-\is interaction
+\is plantes_processus
 \dialx PA
 \ps v
 \ge donner (des fruits, tubercules)
@@ -54896,7 +54896,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 28/Aug/2015
 
 \lx puãgo
 \is mollusque
@@ -57991,7 +57991,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 22/Aug/2015
 
 \lx phwevwöu
-\is grammaire_locatif
+\is nom_locatif
 \dialx GOs PA BO
 \ps n.loc
 \ge intervalle entre deux rangées d'un champ d'ignames
@@ -58009,7 +58009,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 28/Aug/2015
 
 \lx phwè-whaa 
 \is corps
