@@ -1,0 +1,124 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\usepackage{lineno}
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+\newcommand{\rdp}{\textasciitilde{}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
+\newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
+
+\begin{document} 
+\title{How many *-s suffixes in Old Chinese? }
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+
+
+\section{Introduction}
+\citet{haudricourt54chinois}
+\citet{downer59}
+
+
+
++Kennedy
+
++Zhou Fagao
+
+contra \citet[262]{downer59}
+`The present writer holds the opinion that with our present knowledge of Classical Chinese, it is better to regard chiuhsheng derivation not as a remnant of a former inflectional system of the Indo-European type, but simply as a system of derivation and nothing more. When new words were needed, they were created by pronouncing the basic word in the chiuhsheng. The grammatical regularity found in many cases would then be in a way fortuitous, being the result not of grammatical inflection, but of the need to create new words.'
+
+the vast array of function of the *-s is due to the merger of many independent dental suffixes in Chinese
+
+
+\begin{enumerate}
+\item verb $\rightarrow$ noun 
+
+
+\ch{高}{kaw}{be high} $\rightarrow$ \ch{高}{kaw^H}{height} 
+
+\ch{處}{tɕʰjo^x}{be at} $\rightarrow$ \ch{處}{tɕʰjo^h}{place} 
+
+\item noun $\rightarrow$ verb 
+
+\ch{家}{kæ}{family} $\rightarrow$ \ch{嫁}{kæ^H}{marry} 
+\ch{枕}{tɕim^x}{pillow} $\rightarrow$ \ch{枕}{tɕim^H}{use as a pillow} 
+
+\item causative
+\ch{飲}{ʔim^x}{buy} $\rightarrow$ \ch{飲}{ʔim^H}{sell} 
+\ch{買}{mɛ^x}{buy} $\rightarrow$ \ch{賣}{mɛ^H}{sell} 
+
+
++ tropative (\ch{好}{xaw^x}{be good}
+\item applicative (downer's "effective"
+
+\ch{渴}{kʰat}{be thirsty} $\rightarrow$ \ch{愒}{kʰaj^H}{long for} 
+
+\item `restricted meaning'
+\ch{少}{ɕjew^x}{be few} $\rightarrow$ \ch{少}{ɕjew^H}{be young} 
+
+\item Passive
+\ch{散}{san^x}{scatter} $\rightarrow$ \ch{散}{san^H}{be loose} 
++ antipassive \ch{射}{ʑjek}{shoot at} $\rightarrow$ \ch{射}{ʑjæ^H}{practise archery} 
+
+\item Adverb
+\ch{三}{sam}{three} $\rightarrow$ \ch{三}{sam^H}{thrice} 
+
+\item Form in compounds
+\end{enumerate}
+
+\section{Nominalization}
+
+
+\citet{jacques03s.houzhui}
+
+\section{Denominal}
+
+????
+
+\section{Causative/applicative}
+
+Kiranti \ipa{-t}
+\citet{michailovsky85dental}
+
+\section{Passive/Antipassive}
+
+Kiranti \ipa{-si}
+
+\section{Adverb}
+
+Situ \ipa{-s}, Japhug \ipa{-zɯ}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+\end{document}
