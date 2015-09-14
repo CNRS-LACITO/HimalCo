@@ -75,7 +75,7 @@
 \dt 27/Jun/2007
 
 \lx ?????
-\is Echinoderme 
+\is échinoderme 
 \dialx
 \ps
 \ge oursin ("feuille de Casuarina")
@@ -90,7 +90,7 @@
 \cf
 \ce
 \nt
-\dt 25/Aug/2015
+\dt 09/Sep/2015
 
 \lx ?????
 \is mollusque
@@ -319,7 +319,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx -ã
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DX1 ; ANAPH 
+\ps DEIC.1; ANAPH 
 \ge ceci
 \re
 \gb this here
@@ -334,7 +334,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \ce là (déict); là (anaph)
 \cf -ò 
 \ce là-bas (anaph)
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx -ãã
 \is grammaire_pronom
@@ -709,7 +709,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx ã-e
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DX2 3° pers. masc. SG
+\ps PRO.DEIC.2 (3° pers. masc. SG)
 \ge lui-là
 \re
 \gb
@@ -719,7 +719,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx aeke
 \is discours_interjection
@@ -1113,6 +1113,7 @@ cet homme-là en bas, cet homme-là loin en bas
 
 \lx ala-
 \dialx GOs PA BO
+\is grammaire_prefixe_sémantique
 \ps PREF (référant à une surface extérieure)
 \sn 1
 \is corps
@@ -1149,7 +1150,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \cf
 \ce
 \poc *qadop 'face, devant'
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx alaaba
 \is feu
@@ -1184,7 +1185,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx alabo-
 \is classificateur numérique
 \dialx PA
-\ps CLF
+\ps CLF.NUM
 \ge classificateur: un quart ou une moitié de tortue ou de bœuf
 \re
 \gb
@@ -1193,7 +1194,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \xn
 \cf mai-xe [PA WEM]
 \ce morceau de viande  de tortue, etc.
-\dt 13/Jun/2015
+\dt 09/Sep/2015
 
 \lx ala-hi
 \dialx GOs BO PA
@@ -1513,7 +1514,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \lx ã-mala-e
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DX2 3° pers. masc. PL
+\ps PRO.DEIC.2 (3° pers. masc. PL)
 \ge eux là
 \re
 \gb
@@ -1523,7 +1524,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ã-mala-na
 \is grammaire_démonstratif
@@ -1541,9 +1542,8 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 
 \lx ã-mala-ò
 \is grammaire_démonstratif
-\dialx GOs
- PA BO
-\ps PRO DX3 3° pers. masc. PL
+\dialx GOs PA BO
+\ps PRO.DEIC.3 (3° pers. masc. PL)
 \ge eux là-bas
 \re
 \gb
@@ -1553,12 +1553,12 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ã-mala-òòli
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DX3 3° pers. masc. PL
+\ps PRO.DEIC.3 (3° pers. masc. PL)
 \ge eux là-bas
 \re
 \gb
@@ -1568,7 +1568,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ã-mali-na
 \is grammaire_démonstratif
@@ -1724,7 +1724,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is grammaire_vocatif
 \dialx GOs BO
 \ph É›ÌƒÉ³É›Ìƒ
-\ps DEM DX 
+\ps DEM.DEIC
 \ge celui-là ; et l'homme !
 \re
 \gb
@@ -1736,7 +1736,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \cf
 \ce
 \nt cf. axeena (nêl)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ã-na !
 \ph É›ÌƒÉ³a
@@ -1835,7 +1835,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \is grammaire_démonstratif
 \ph ???
 \dialx GOs BO
-\ps DEM ANAPH
+\ps DEM.ANAPH
 \ge celui-là (en question)
 \re
 \gb
@@ -1844,7 +1844,7 @@ les doigtier de sagaie ou les ceintures de guerre 'wa-bwanu'
 \xn celui-là (en question) l'a fait
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx a-ò !
 \is grammaire_injonction
@@ -1866,7 +1866,7 @@ vers lui et qu'il la récupère ensuite)
 \lx ã-òòli
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DX3 3° pers.
+\ps PRO.DEIC.3 (3° pers.)
 \ge lui là-bas
 \re
 \gb
@@ -1879,7 +1879,7 @@ vers lui et qu'il la récupère ensuite)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx apa êgu 
 \is grammaire_numéral
@@ -2632,7 +2632,7 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \dt 22/Aug/2015
 
 \lx a-wône-vwo
-\is ginteraction
+\is interaction
 \dialx GOs
 \ps n
 \ge remplaçant
@@ -2644,7 +2644,7 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx a-xalu
 \is parenté_alliance
@@ -2913,7 +2913,7 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \is grammaire_dérivation
 \hm 2
 \dialx GOs  PA
-\ps PREF NMLZ (instrumental)
+\ps PREF.NMLZ (instrumental)
 \ge instrument à ; sert à
 \re
 \gb
@@ -2940,12 +2940,12 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \sge pourquoi faire ? (Dubois, ms)
 \se ba-ul
 \sge éventail
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx -ba
 \is grammaire_démonstratif
 \dialx GOs
-\ps DEM DX2
+\ps DEM.DEIC.2
 \ge celui-là (latéralement,  visible)
 \re
 \gb
@@ -2958,7 +2958,7 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \ce celui-là (homme)
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx baa
 \is grammaire_quantificateur
@@ -3371,7 +3371,7 @@ qui viennent d'ailleurs ('aavhe')  lors des dons dans les cérémonies (de deuil p
 \hm 4
 \is grammaire_modalité
 \dialx GOs
-\ps PTCL Modal. (adversatif, hypothétique)
+\ps PTCL.MODAL (adversatif, hypothétique)
 \ge adversatif  ; incertain  ; haut degré
 \re
 \ge révolu
@@ -3405,7 +3405,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \xn elle est partie à jamais là-bas (pas souhaitable)
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx bala- 
 \is classificateur numérique
@@ -3493,7 +3493,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \lx bala-n
 \is grammaire_modalité
 \dialx PA
-\ps Modal.
+\ps MODAL
 \ge à la suite, dans la foulée
 \re
 \gb
@@ -3511,7 +3511,7 @@ ne pas avoir voulu le faire. La personne elle-même ou qqn d'autre peut le dire)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx bala-nyama
 \is action
@@ -5825,7 +5825,7 @@ l'esprit d'un vivant de celui d'un mort
 \lx bwa-
 \is classificateur numérique
 \dialx GOs PA
-\ps CLF
+\ps CLF.NUM
 \ge classificateur : bottes d'herbes (mae : Imperata cylindrica) et paquets de feuilles (pandanus, etc.)
 \re
 \gb
@@ -5836,7 +5836,7 @@ l'esprit d'un vivant de celui d'un mort
 \xn une botte de pandanus, etc.
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx bwaa
 \is grammaire_interpellation
@@ -6769,7 +6769,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \lx bwaa-xe
 \is classificateur numérique
 \dialx PA
-\ps CLF
+\ps CLF.NUM
 \ge un fagot  ; un paquet de feuilles, de paille
 \re
 \gb
@@ -6780,7 +6780,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx bwaxeni
 \is maison
@@ -8814,7 +8814,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \dialx GOs
 \va ca-
 \ve PA BO
-\ps n ; CLF POSS
+\ps n ; CLF.POSS
 \ge part de féculents
 \re
 \gb
@@ -8830,7 +8830,7 @@ vers lui (cabòl!), ensuite on crie (a-ò! : pars) pour qu'il la récupère ensuite.
 \cf kû-
 \ce
 \poc *ka
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ce ba-thi halelewa
 \is jeu
@@ -11174,7 +11174,7 @@ dans le processus dont l'un est celui qui coupe)
 \dialx GOs
 \va daa
 \ve BO
-\ps v ; Modif. ; Intens. RFLX
+\ps v ; MODIF ; INTENS ; RFLX
 \ge seul  ; de soi-même
 \ge faire sans savoir  ; faire sans penser au résultat
 \re
@@ -11195,7 +11195,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn il a dit cela sans savoir, il a inventé
 \cf draa pune
 \ce volontairement
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx draa
 \hm 3
@@ -11854,7 +11854,7 @@ dans le processus dont l'un est celui qui coupe)
 \hm 2
 \dialx GOs PA
 \ph nde
-\ps PREF CLF.NUM (mains de banane)
+\ps CLF.NUM (mains de banane)
 \ge classificateur numérique: main de bananes, côtes
 \re
 \gb
@@ -11863,7 +11863,7 @@ dans le processus dont l'un est celui qui coupe)
 \xn une, deux, trois main de bananes, etc.
 \cf thò-xe
 \ce (pour les régimes)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx dè
 \hm 1
@@ -13962,7 +13962,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx -e
 \hm 1
@@ -14038,7 +14038,7 @@ Se déguste de préférence sucré.
 \hm 2
 \is grammaire_démonstratif
 \dialx GOs
-\ps DX1
+\ps DEIC.1
 \ge ce-ci
 \re
 \gb
@@ -14051,7 +14051,7 @@ Se déguste de préférence sucré.
 \xn cette semaine
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx e zo !
 \is discours_interjection
@@ -14247,7 +14247,7 @@ de frère de mère  ; fils de la soeur du père
 \lx êda
 \is grammaire_directionnel
 \dialx GO
-\ps DEIC DIR
+\ps DEIC.DIR
 \ge là-bas en haut ; devant
 \re
 \gb
@@ -14257,7 +14257,7 @@ de frère de mère  ; fils de la soeur du père
 \cf
 \ce
 \nt
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx êdime
 \is mollusque
@@ -14305,7 +14305,7 @@ de frère de mère  ; fils de la soeur du père
 \lx êdu
 \is grammaire_direction
 \dialx GO
-\ps DEIC DIR
+\ps DEIC.DIR
 \ge là-bas en bas ; derrière
 \re
 \gb
@@ -14314,7 +14314,7 @@ de frère de mère  ; fils de la soeur du père
 \xn
 \cf
 \ce
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx êê-
 \is cultures
@@ -14562,7 +14562,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èla-ã
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEM DX1
+\ps DEM.DEIC.1
 \ge ceux-ci
 \re
 \gb
@@ -14571,12 +14571,12 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èla-èni, èla-èba, èla-õli, èla-èdu mu, èla-èda, èla-èdu, èla-èbòli
 \ce ceux-là (DX2), ceux-là (DX2 sur le côté), ceux-là-bas (DX3), ceux-là derrière, ceux-là-haut, ceux-là en bas, ceux-là en bas loin
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx èla-õli
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEM DX1
+\ps DEM.DEIC.1
 \ge ceux-là-bas (DX3)
 \re
 \gb
@@ -14586,7 +14586,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ele
 \is action_corps
@@ -14610,7 +14610,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èli-ã
 \is grammaire_démonstratif
 \dialx GOs
-\ps DEM DX1
+\ps DEM.DEIC.1
 \ge ces2-ci
 \re
 \gb
@@ -14619,7 +14619,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èli-èni, èli-èba, èli-õli, èli-èdu mu, èli-èda, èli-èdu, èli-ebòli
 \ce ces2-là (DX2), ces2-là (DX2 sur le côté), ces2-là-bas (DX3), ces2-là derrière, ces2-là-haut, ces2-là en bas, ces2-là loin en bas
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx èlò
 \dialx GO PA BO
@@ -14646,7 +14646,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx èlò-ã
 \is grammaire_démonstratif
 \dialx GOs
-\ps DEM DX1
+\ps DEM.DEIC.1
 \ge ces3-ci
 \re
 \gb
@@ -14655,7 +14655,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf èlò-èni, èlò-èba, èlò-õli, èlò-èdu mu, èlò-èda, èlò-èdu, èlò-èbòli
 \ce ces3-là (DX2), ces3-là (DX2 sur le côté), ces3-là-bas (DX3), ces3-là derrière, ces3-là-haut, ces3-là loin en bas
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx eloe
 \is prép.aliments
@@ -14854,7 +14854,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \hm 1
 \is grammaire_locatif
 \dialx GOs BO
-\ps n.loc.
+\ps n.LOC
 \ge endroit où
 \re
 \gb
@@ -14867,7 +14867,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn j'ai oublié où il habite
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ênè
 \ph ÃªÉ³É›
@@ -14893,7 +14893,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GOs
 \va èba
 \ve GO(s)
-\ps LOC DX2
+\ps LOC.DEIC.2
 \ge là (sur le côté, latéralement)
 \re
 \gb
@@ -14902,7 +14902,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ênê-da
 \ph ÃªÉ³Ãªda
@@ -14927,7 +14927,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is grammaire_directionnel
 \dialx GOs
 \ph ÃªÉ³Ãªdu   
-\ps LOC DIR
+\ps LOC.DIR
 \ge bas (en) ; vers le bas ; en aval  ; vers la mer
 \ge au nord
 \re
@@ -14935,13 +14935,13 @@ cette femme-là en bas, cette femme-là loin en bas
 \rgb
 \xv ênê-du mwa
 \xn très loin en aval
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ênè-ò
 \is grammaire_locatif 
 \ph ÃªÉ³É›É”
 \dialx GOs
-\ps Loc.ANAPH 
+\ps LOC.ANAPH 
 \ge endroit-là (connu des locuteurs) ; ce temps-là ???
 \re
 \gb
@@ -14950,7 +14950,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx èni
 \is grammaire_locatif 
@@ -14958,7 +14958,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \ph É›ÌƒÉ³i
 \va enim ???
 \ve PA
-\ps ADV LOC DX2
+\ps ADV.LOC.DEIC.2
 \ge là 
 \re
 \gb there
@@ -14967,7 +14967,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn
 \cf ènè
 \ce ici
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx èniza ?
 \ph É›Å„iÃ°a (dental)
@@ -15117,7 +15117,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GOs 
 \va ènõli
 \ve PA BO
-\ps LOC DX3
+\ps LOC.3
 \ge là-bas  ; au-delà (invisible)
 \re
 \gb there; over there; yonder
@@ -15128,7 +15128,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il est loin là-bas 
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ènoma
 \is grammaire_pronom
@@ -15194,7 +15194,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx e-nye-boli
 \is grammaire_présentatif
 \dialx PA GO ??
-\ps DEM DX3
+\ps DEM.DEIC.3
 \ge voilà (le) là-bas (à un endroit plus bas que là où on est)
 \re
 \gb
@@ -15204,7 +15204,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 11/Jul/2015
+\dt 09/Sep/2015
 
 \lx e-nyoli
 \is grammaire_démonstratif
@@ -15238,7 +15238,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx epè- ??? VOIR
 \is parenté_couple
 \dialx GO
-\ps PREF. (relations duelles)
+\ps PREF (relations duelles)
 \ge couple de relation
 \re
 \xv e pè-be-yaza
@@ -15251,7 +15251,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn belle-mère et gendre
 \xv li epè-eponi
 \xn oncle utérin et neveu
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx e-peebu
 \is parenté_couple
@@ -15460,7 +15460,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \dialx GOs PA BO
 \va ga
 \ve BO 
-\ps ASPR duratif
+\ps ASP duratif
 \ge encore en train de  ; toujours en train de
 \re
 \gb
@@ -15481,7 +15481,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il continue à parler
 \cf gò [GOs], gòl [PA]
 \ce encore; continuer à
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx gaa
 \is fonct.nat
@@ -15841,7 +15841,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ge
 \hm 1
 \dialx GOs BO PA
-\ps v LOC ; progressif
+\ps v.LOC ; progressif
 \sn 1
 \is verbe_locatif
 \ge trouver (se) à ; être dans un endroit 
@@ -15879,7 +15879,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \sge il est ici 
 \se ge nòli [BO PA]
 \sge il est là-bas
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx ge
 \hm 2
@@ -15992,7 +15992,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx ge-le
 \is grammaire_existentiel
 \dialx GOs PA BO
-\ps v LOC
+\ps v.LOC
 \ge il y (en)  a 
 \re
 \gb
@@ -16003,7 +16003,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn il y a des trous
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ge-le-xa
 \is grammaire_existentiel
@@ -17159,7 +17159,7 @@ queue, taches pourpres sur le ventre)
 \lx hãbaö
 \is grammaire_modalité
 \dialx GOs BO
-\ps v Modal.
+\ps v.MODAL
 \ge utile  ; nécessaire  ; falloir 
 \re
 \gb
@@ -17172,7 +17172,7 @@ queue, taches pourpres sur le ventre)
 \xn apporte du bois pour le feu
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx hãbe
 \is corps
@@ -17795,7 +17795,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA BO
 \va hapa
 \ve
-\ps n.loc.
+\ps n.LOC
 \sn 1
 \is topographie
 \ge bord
@@ -17813,7 +17813,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx haveveno
 \is insecte
@@ -18060,7 +18060,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hayu
 \is grammaire_modalité
 \dialx GOs BO
-\ps ADV Modif.
+\ps ADV ; MODIF
 \sn 1
 \ge au hasard ; de ci de là
 \ge quelconque ; n'importe comment ; en vain
@@ -18089,7 +18089,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf lòlò [GOs]
 \ce sans but; au hasard
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx haza ce
 \is maison
@@ -18905,19 +18905,19 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx hi-
 \is classificateur numérique
 \dialx GOs PA
-\ps CLF
+\ps CLF.NUM
 \ge classificateur: branches (ne s'emploie plus)
 \re
 \gb
 \rgb
 \xv hi-ru hi-ce
 \xn deux branches d'arbre
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx hî 
 \is grammaire_démonstratif
 \dialx PA BO [BM]
-\ps DX1
+\ps DEIC.1
 \ge ceci
 \re
 \gb
@@ -18926,7 +18926,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ce jour-ci
 \cf
 \ce
-\dt 10/Jun/2015
+\dt 09/Sep/2015
 
 \lx hii
 \hm 1
@@ -19610,7 +19610,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve PA
 \va hu-
 \ve BO
-\ps CLF POSS
+\ps CLF.POSS
 \ps n
 \ge nourriture carnée
 \ge ration  ; part (de poisson et viande) + sucreries + cachets (PA)
@@ -19631,7 +19631,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ta ration de viande
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx hò
 \is insecte
@@ -21203,7 +21203,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \is grammaire_préposition
 \dialx GOs
 \sn 1
-\ps POSS IND
+\ps POSS.INDIR
 \ge à ; pour
 \re
 \gb
@@ -21211,13 +21211,14 @@ la paille ; plus petites que 'ce-mwa') ;
 \xv nu na loto i Abel
 \xn je donne la voiture à/d' Abel
 \sn 2
+\ps OBJ.INDIR
 \ge marque d'objet indirect
 \re
 \gb
 \rgb
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx i
 \is grammaire_pronom
@@ -21390,7 +21391,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \ve PA
 \va iciibii
 \ve vx
-\ps PRO INDEP 1° pers. duel excl.
+\ps PRO.INDEP 1° pers. duel excl.
 \ge nous2 (excl.)
 \re
 \gb
@@ -21399,7 +21400,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx içö
 \is grammaire_pronom
@@ -21409,7 +21410,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \ve PA BO
 \va eyo
 \ve BO
-\ps PRO INDEP 2° pers. SG
+\ps PRO.INDEP 2° pers. SG
 \ge toi
 \re
 \gb
@@ -21418,7 +21419,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx içu 
 \is échanges
@@ -21488,7 +21489,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \dialx GOs BO PA
 \va iye
 \dialx PA
-\ps PRO INDEP 3° pers.
+\ps PRO.INDEP 3° pers.
 \ge elle  ; lui
 \re
 \gb
@@ -21501,7 +21502,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ijèè !
 \is grammaire_interpellation
@@ -21522,7 +21523,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \is grammaire_pronom
 \ph indjÉ›-É”li
 \dialx GOs
-\ps PRO DX3 3° pers.
+\ps PRO.DEIC.3 (3° pers.)
 \ge elle (au loin)
 \re
 \gb
@@ -21534,12 +21535,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \cf ã-òli
 \ce lui là-bas
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ijò
 \is grammaire_pronom
 \dialx GOs
-\ps PRO INDEP 2° pers. duel
+\ps PRO.INDEP  2° pers. duel
 \ge vous 2
 \re
 \gb
@@ -21548,12 +21549,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ilaa
 \is grammaire_pronom
 \dialx GOs PA
-\ps PRO INDEP 3° pers. PL 
+\ps PRO.INDEP 3° pers. PL 
 \ge eux, elles
 \re
 \gb
@@ -21563,12 +21564,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \cf
 \ce
 \nt quand employé pour une personne, valeur honorifique
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ila-e
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DX2 3° pers. fém. PL
+\ps PRO.DEIC 3° pers. fém. PL
 \ge elles-là
 \re
 \gb
@@ -21581,12 +21582,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ila-lhãã-ba 
 \is grammaire_démonstratif
 \dialx GOs PA BO
-\ps PRO DX2 3° pers. PL
+\ps PRO.DEIC.2 (3° pers. PL)
 \ge voilà (les) là-bas (où je montre)
 \re
 \gb
@@ -21599,12 +21600,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ila-lhãã-òli
 \is grammaire_pronom
 \dialx GOs
-\ps PRO DX3 3° pers. fém. PL
+\ps PRO.DEIC.3 (3° pers. fém. PL)
 \ge eux/elles là-bas
 \re
 \gb
@@ -21614,13 +21615,13 @@ la paille ; plus petites que 'ce-mwa') ;
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ili
 \is grammaire_pronom
 \hm 1
 \dialx GOs PA 
-\ps PRO INDEP 3° pers. duel
+\ps PRO.INDEP 3° pers. duel
 \ge eux2
 \re
 \gb
@@ -21629,7 +21630,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx iili
 \is mouvement
@@ -21683,7 +21684,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \lx ilò 
 \is grammaire_pronom
 \dialx GOs
-\ps PRO INDEP 3° pers. triel ou paucal
+\ps PRO.INDEP 3° pers. triel ou paucal
 \ge eux 3  ; eux (petit groupe)
 \re
 \gb
@@ -21693,7 +21694,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \se ilò-ba
 \sge ceux-là (loin)
 \xn
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx imã
 \is fonct.nat
@@ -21748,12 +21749,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \ph ime 
 \va icòme 
 \ve vx
-\ps PRO INDEP 1° pers. triel excl.
+\ps PRO.INDEP  1° pers. triel excl.
 \ge nous 3 excl
 \re
 \gb
 \rgb
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ine
 \is oiseau
@@ -21807,14 +21808,14 @@ la paille ; plus petites que 'ce-mwa') ;
 \dialx GOs PA
 \va inu
 \ve PA BO
-\ps PRO INDEP 1° pers.
+\ps PRO.INDEP 1° pers.
 \ge moi
 \re
 \gb
 \rgb
 \xv inu nye 
 \xn c'est moi, me voilà, je suis là
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx iò
 \is temps_deixis
@@ -21862,12 +21863,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \is grammaire_pronom
 \dialx GOs
 \ph iÉ”Ìƒ
-\ps PRO INDEP 1° pers. triel incl.
+\ps PRO.INDEP  1° pers. triel incl.
 \ge nous 3 incl. ; nous paucal
 \re
 \gb
 \rgb
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ira ???
 \is cultures_champ
@@ -21920,7 +21921,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx iva
 \is grammaire_pronom
 \dialx GOs
-\ps PRO INDEP 1° pers. excl. PL
+\ps PRO.INDEP  1° pers. excl. PL
 \ge nous (plur. excl.) (forme moderne de izava)
 \re
 \gb
@@ -21929,7 +21930,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ivwö
 \ph iÎ²o
@@ -21953,7 +21954,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx iwa
 \is grammaire_pronom
 \dialx GOs PA
-\ps PRO INDEP 2° pers. PL
+\ps PRO.INDEP 2° pers. PL
 \ge vous (pluriel)
 \re
 \gb
@@ -21962,28 +21963,28 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx iwe
 \is grammaire_pronom
 \dialx GOs
 \va icòòwe
 \ve vx
-\ps PRO INDEP 2° pers. triel 
+\ps PRO.INDEP 2° pers. triel 
 \ge vous 3
 \re
 \gb
 \rgb
 \xv
 \xn
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx iyo
 \is grammaire_pronom
 \dialx BO PA
 \va eyo
 \ve BO
-\ps PRO INDEP 2° pers. SG
+\ps PRO.INDEP  2° pers. SG
 \ge toi
 \re
 \gb
@@ -21992,14 +21993,14 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx iza
 \is grammaire_pronom
 \dialx PA
 \va iyãã
 \ve BO
-\ps PRO INDEP 1° pers. excl. PL
+\ps PRO.INDEP  1° pers. excl. PL
 \ge nous (plur. excl.)
 \re
 \gb
@@ -22008,7 +22009,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx izava
 \is grammaire_pronom
@@ -22019,7 +22020,7 @@ et permettent son écoulement, évitant l'érosion)
 \ve GO(s)
 \va za
 \ve PA
-\ps PRO INDEP 1° pers. excl. PL
+\ps PRO.INDEP  1° pers. excl. PL
 \ge nous (excl) (forme ancienne)
 \re
 \gb
@@ -22030,13 +22031,13 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx izawa
 \is grammaire_pronom
 \dialx GOs
 \ph iÃ°awa
-\ps PRO INDEP 2° pers. PL
+\ps PRO.INDEP  2° pers. PL
 \ge vous (forme ancienne)
 \re
 \gb
@@ -22046,12 +22047,12 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx izòò
 \is grammaire_pronom
 \dialx PA BO
-\ps PRO INDEP 2° pers. PL
+\ps PRO.INDEP  2° pers. PL
 \ge vous (plur.)
 \re
 \gb
@@ -22060,7 +22061,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx ja
 \is caract.objet
@@ -22353,7 +22354,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx jara
 \is grammaire_modalité
 \dialx GOs
-\ps Modal.
+\ps MODAL
 \ge pas du tout
 \re
 \gb
@@ -22365,7 +22366,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx jara-ce ???
 \is bois
@@ -22460,7 +22461,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \hm 2
 \is grammaire_démonstratif
 \dialx PA BO
-\ps DEM ANAPH
+\ps DEM.ANAPH
 \ge ce-là
 \re
 \gb
@@ -22473,7 +22474,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn qui est monté ici ?
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx -je
 \is grammaire_pronom
@@ -22510,7 +22511,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx je-ba
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps PRO DX2 (latéral)
+\ps PRO.DEIC.2 (latéral)
 \ge celle-là (sur le côté, latéralement)
 \re
 \gb
@@ -22519,7 +22520,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn regarde cette fille-là 
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx jebo
 \is maison
@@ -22573,7 +22574,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \dialx GOs
 \va jene
 \ve PA  BO
-\ps DX2 ; ANAPH ; ASS
+\ps DEIC.2 ; ANAPH ; ASS
 \ge ce-là ; voilà ; c'est cela !
 \ge c'est cela  ; exactement  ; tout à fait
 \re
@@ -22587,12 +22588,12 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn tu as entendu ce bruit hier ?
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx je-ò
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps PRO DEIC ou ANAPH DX3
+\ps PRO.DEIC ou ANAPH DX3
 \ge celle-là
 \re
 \gb
@@ -22602,7 +22603,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx jeworo
 \is temps_découpage
@@ -22654,7 +22655,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx ji-a 
 \is grammaire_interrogatif
 \dialx GOs BO
-\ps PRO INT
+\ps PRO.INT
 \ge le(s)quel(s) ?
 \re
 \gb
@@ -22669,7 +22670,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn lequel est ton enfant ?
 \cf ia ?
 \ce quel, où ? (+ nom)
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx jibaale
 \is insecte
@@ -22758,7 +22759,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \lx ji-li
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEIC DX3
+\ps DEIC.3
 \ge cela (éloigné, invisible mais audible)
 \re
 \mr je-ili
@@ -22777,7 +22778,7 @@ des berceaux pour les nourrissons et l'armature des épuisettes à crevette)
 \xn qui est-ce qui crie ?
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx jime
 \is discours
@@ -23497,7 +23498,7 @@ tambour
 \dialx GOs PA
 \va ka
 \ve GOs PA
-\ps PREF.
+\ps PREF
 \ge attribue une propriété
 \re
 \gb
@@ -23513,7 +23514,7 @@ tambour
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha
 \is cultures_champ
@@ -23534,14 +23535,15 @@ tambour
 \dt 23/Aug/2015
 
 \lx kha
-\is grammaire_préfixe_sémantique
+\is grammaire_préfixe_sémantique_action
 \hm 3
 \dialx GOs BO
 \va khaa
 \ve PA
-\ps PREF (action avec le pied)
-\ge faire qqch en mouvement ; en même temps
-\ge en train de ??
+\ps PREF 
+\ge action faite en appuyant avec le pied  ou la main 
+\ge faire qqch en se déplaçant à pied ; mouvement ; en même temps
+\ge en même temps ; en train de ??
 \re
 \gb
 \rgb
@@ -23563,7 +23565,7 @@ tambour
 perception, indique une perception indirecte, perçue comme ça sur la route, non par expérience directe
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha
 \is caract.objet
@@ -23673,7 +23675,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \sge lampe électrique (lit. feu-appuyer)
 \cf
 \ce
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx ka ? 
 \is grammaire_interrogatif
@@ -23717,7 +23719,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 22/Aug/2015
 
 \lx kha-alawe
-\is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs
 \va kha-olae
 \ve PA
@@ -23733,7 +23735,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ka-avè ???
 \is société
@@ -23802,7 +23804,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 24/Aug/2015
 
 \lx kha-bazae
-\is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kha-'baÃ°ae
 \dialx GOs
 \ps v
@@ -23815,7 +23817,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx khabe
 \is action_corps
@@ -23871,8 +23873,9 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ce
 \dt 22/Aug/2015
 
-\lx khaabîni
+\lx khaa-bîni
 \is action_corps
+\is grammaire_préfixe_sémantique_action
 \ph kÊ°a:bÃ®É³i
 \dialx GOs
 \va khaabîni
@@ -23888,7 +23891,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx khaboi
 \is action_corps
@@ -24015,6 +24018,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-bwaroe
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx PA
 \ps v
 \ge déplacer (se) en portant dans les bras
@@ -24026,7 +24030,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 04/Nov/2014
+\dt 09/Sep/2015
 
 \lx kaça 
 \is grammaire_locatif
@@ -24035,7 +24039,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dialx GOs
 \va kaya
 \ve PA BO
-\ps n. loc.
+\ps n.LOC
 \ge derrière
 \ge arrière (qqch, inanimé)
 \ge après
@@ -24056,7 +24060,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \sge après-demain
 \cf me-mwa [GOs]
 \ce le devant de la maison ; le sud
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaaça
 \is caract.objet
@@ -24077,7 +24081,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kaça mwa
 \is maison
 \dialx GOs
-\ps n.loc.
+\ps n.LOC
 \ge arrière de la maison  ; le nord 
 \re
 \gb
@@ -24086,7 +24090,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaça-kabu
 \is temps_jours
@@ -24130,12 +24134,13 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-çaaxo
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°a-'Ê’a:É£o kÊ°a-'dÊ’a:É£o
 \dialx GOs
 \va kacaaò
 \ve BO
 \ps v
-\ge marcher sans bruit  ; déplacer (se) doucement ; sans bruit
+\ge marcher sans bruit  ; déplacer (se) doucement
 \re
 \gb
 \rgb
@@ -24147,7 +24152,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn ouvre la porte doucement !
 \cf ku-caaxo
 \ce en se cachant
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaci 
 \is oiseau
@@ -24183,6 +24188,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-cimwî
 \is action_corps
+\is grammaire_préfixe_sémantique_déplacement
 \dialx PA
 \ps v
 \ge saisir en se déplaçant (en emportant ou amenant)
@@ -24198,7 +24204,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx kaço
 \is habitat
@@ -24219,6 +24225,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-çöe 
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs 
 \ph kÊ°a-'Ê’Ï‰e
 \va khaa-jöe 
@@ -24233,10 +24240,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf khaa + cöe
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-da
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs PA
 \ps v
 \ge monter à pied
@@ -24249,10 +24257,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-dra
 \is action_corps
+\is grammaire_préfixe_sémantique_action
 \dialx GOs 
 \va kadae
 \ve BO
@@ -24269,7 +24278,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx kâdi
 \is interaction
@@ -24658,6 +24667,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-hêgo
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs PA
 \ps v
 \ge marcher_avec_une_canne
@@ -24671,10 +24681,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-hoze
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°a-'hoze
 \dialx GOs
 \va a-hoze 
@@ -24688,7 +24699,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn il longe le bord de la mer
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kai
 \hm 1
@@ -24714,7 +24725,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \lx kai
 \hm 2
 \dialx GOs  BO PA
-\ps n.loc.
+\ps n.LOC
 \sn 1
 \is corps
 \ge dos
@@ -24736,7 +24747,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \poc *taku
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx khai
 \is action_corps
@@ -24892,8 +24903,8 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 23/Dec/2014
 
 \lx kha-kibwaa
-\is prefixe_déplacement
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs
 \ps v
 \ge prendre un raccourci
@@ -24907,11 +24918,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-khoone
-\is prefixe_déplacement
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°a-'kÊ°o:ne
 \dialx GOs
 \ps v
@@ -24923,7 +24934,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kakorola
 \is emprunt
@@ -24942,8 +24953,8 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \dt 23/Aug/2015
 
 \lx kha-ku
-\is action
-\is prefixe_déplacement
+\is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \dialx GOs
 \va kha-kule
 \ve PA
@@ -24961,7 +24972,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kakulinãgu
 \is oiseau
@@ -25319,6 +25330,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-mudree
 \is action_corps
+\is grammaire_préfixe_sémantique_action
 \dialx GOs
 \va kha-mude
 \ve PA
@@ -25333,12 +25345,12 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn la barrière a déchiré sa robe
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx kamwe ?
 \is grammaire_interrogatif
 \dialx GOs BO
-\ps v INT
+\ps v.INT
 \ge que faire ?
 \re
 \gb
@@ -25347,7 +25359,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn qu'est-ce que vous lui avez fait ?
 \cf è ka?
 \ce comment ça va ?, qu'est-ce qui se passe ?
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaamwene ?
 \is grammaire_interrogatif
@@ -25357,7 +25369,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ve GO(s) BO
 \va kamweli
 \ve BO
-\ps v INT
+\ps v.INT
 \ge comment faire ? ; que faire (être comment?) ; faire ainsi
 \re
 \gb
@@ -25373,7 +25385,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaamweni
 \is fonct.intell.
@@ -25442,7 +25454,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-nhyale
 \is action_corps
-\is prefixe_action_avec_le_pied
+\is grammaire_préfixe_sémantique_action
 \dialx GOs
 \ps v
 \ge écraser avec le pied (en marchant)
@@ -25456,7 +25468,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaò
 \is eau
@@ -25491,6 +25503,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-phe
 \is action_corps
+\is grammaire_préfixe_sémantique_action
 \hm 2
 \ph 'kÊ°a-pÊ°e
 \dialx GOs PA BO
@@ -25519,7 +25532,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \rgb
 \xv kave-gu, kape-gu ???
 \xn habitation
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx khapi??
 \dialx GO
@@ -25699,7 +25712,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-tree-çimwi
 \is action_corps
-\is prefixe_déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°a:Êˆe:Ê’imwi
 \dialx GOs
 \ps v
@@ -25713,7 +25726,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx katrepa
 \is navigation
@@ -25746,6 +25759,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-thi
 \is santé
+\is grammaire_préfixe_sémantique_action
 \ph kÊ°atÊ°i
 \dialx GOs
 \ps v
@@ -25758,7 +25772,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx katria
 \is santé
@@ -25784,6 +25798,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx khaa-tia
 \is action_corps
+\is grammaire_préfixe_sémantique_action
 \dialx GOs
 \va khaa-zia
 \ve GOs
@@ -25797,7 +25812,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf tia
 \ce pousser
 \nt
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx katian ???
 \dialx BO [Corne]
@@ -25852,6 +25867,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \ps v
 \sn 1
 \is déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ge marcher sur la pointe des pieds [GOs]
 \re
 \sn 2
@@ -25864,11 +25880,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn il marche en boîtant
 \cf kha-thixò
 \ce appuyer piquer pied
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-tho
 \is interaction
-\is prefixe_déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°atÊ°o
 \dialx GOs
 \ps v
@@ -25883,11 +25899,11 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kha-thrõbo
 \is déplacement
-\is prefixe_déplacement
+\is grammaire_préfixe_sémantique_déplacement
 \ph kÊ°a-'ÊˆhÉ”Ìƒbo
 \dialx GOs
 \ps v
@@ -25897,7 +25913,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \rgb
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx katòli
 \is religion
@@ -25918,6 +25934,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-tròòli
 \is interaction
+\is grammaire_préfixe_sémantique_action
 \ph kÊ°a:ÊˆÉ”:li
 \dialx GOs
 \ps v
@@ -25929,7 +25946,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx katuuc ??
 \is armes
@@ -26503,6 +26520,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 
 \lx kha-whili
 \is action
+\is grammaire_préfixe_sémantique_action
 \ph kha-'whili
 \dialx GOs BO
 \ps v
@@ -26514,7 +26532,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kaxe ???
 \is
@@ -28065,7 +28083,7 @@ grand que "keruau")
 \is grammaire_modalité
 \hm 1
 \dialx GOs PA BO WEM
-\ps QNT atténuatif (ordre) (forme de politesse) ; ponctuel
+\ps QNT ; atténuatif (ordre) (forme de politesse) ; ponctuel
 \ge un peu [GOs] ; un coup ; bref
 \re
 \gb
@@ -28082,7 +28100,7 @@ grand que "keruau")
 \xn il vole un peu (brièvement)
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx khi
 \is action_corps
@@ -29232,7 +29250,7 @@ grand que "keruau")
 \ve PA BO
 \va kiaxa; cixa
 \ve
-\ps PRED NEG
+\ps PRED.NEG
 \ge il n'y a pas  ; rien  ; sans
 \re
 \gb nothing
@@ -29261,7 +29279,7 @@ grand que "keruau")
 \at il y a
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kixa hê
 \is caract.objet
@@ -29629,7 +29647,7 @@ grand que "keruau")
 \cf kòòl
 \ce debout (être)
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kò bwa me
 \is interaction
@@ -29728,7 +29746,7 @@ grand que "keruau")
 \rgb
 \sn 2
 \is grammaire_conjonction
-\ps CNJ (complémentation)
+\ps CNJ ; COMP 
 \ge que ; quotatif ; marque d'incertitude
 \re
 \xv i khobwi cai nu khobwe a kila Kavo 
@@ -29739,7 +29757,7 @@ grand que "keruau")
 \xn
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 09/Sep/2015
 
 \lx khõbwe-raa
 \is interaction
@@ -29930,7 +29948,7 @@ grand que "keruau")
 \dialx GOs BO
 \va kòe, koi
 \ve PA
-\ps PRED NEG (humain) 
+\ps PRED.NEG (humain) 
 \ge absent ; ne pas/plus être là ; manquer ; sans
 \re
 \gb
@@ -29959,7 +29977,7 @@ grand que "keruau")
 \xn il est absent
 \cf kòyò 
 \ce disparaître; perdu (non-humain)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kòi
 \hm 2
@@ -30233,7 +30251,7 @@ grand que "keruau")
 \ve
 \sn 1
 \is nom_locatif
-\ps n.loc.
+\ps n.LOC
 \ge bord  ; côté  ; près de  ; au bord de
 \re
 \gb
@@ -30246,7 +30264,7 @@ grand que "keruau")
 \xn la rive, berge
 \sn 2
 \is grammaire_locatif
-\ps Loc.
+\ps LOC
 \ge près de  ; bord de (au) (très proche)
 \re
 \gb
@@ -30261,7 +30279,7 @@ grand que "keruau")
 \xn au bord de mer
 \cf kòlo
 \ce à côté (plus loin)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kòòli
 \hm
@@ -31073,7 +31091,7 @@ grand que "keruau")
 
 \lx kô-
 \is position
-\is grammaire_préfixe_sémantique
+\is grammaire_préfixe_sémantique_position
 \hm 1
 \dialx GOs PA BO
 \ps PREF (indiquant une position couchée)
@@ -31109,7 +31127,7 @@ grand que "keruau")
 \xv kô-phaa-ce-bon (WEM)
 \xn dormir auprès du feu (la nuit)
 \poc *qenop
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kô-
 \is classificateur sémantique
@@ -31860,7 +31878,7 @@ grand que "keruau")
 \ph kÃ´É½a:
 \is grammaire_modalité
 \dialx GOs PA BO
-\ps v IMPERS
+\ps v.IMPERS
 \ge impossible (lit. couché mal) ; jamais  ; difficile
 \re
 \gb
@@ -31873,7 +31891,7 @@ grand que "keruau")
 \at possible, bon que
 \cf kôô-jo [BO]
 \ce possible, bon que
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kô-töö
 \is position
@@ -32136,7 +32154,7 @@ grand que "keruau")
 \is grammaire_aspect
 \hm 6
 \dialx GOs
-\ps ASP HAB
+\ps ASP.HAB
 \ge habitude
 \re
 \gb
@@ -32149,7 +32167,7 @@ grand que "keruau")
 \xn j'irai voir ma mère (régulièrement) quand je rentrerai chez moi
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ku
 \is grammaire_injonction
@@ -32191,7 +32209,7 @@ dimwa ; kubwaolè ; kubweena
 
 \lx ku-
 \hm 2
-\is grammaire_préfixe_sémantique
+\is grammaire_préfixe_sémantique_position
 \dialx BO
 \ps v
 \ps PREF (indiquant la position debout)
@@ -32207,7 +32225,7 @@ dimwa ; kubwaolè ; kubweena
 \ce
 \nt
 \poc *tuqud
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kû
 \hm 1
@@ -32289,7 +32307,7 @@ dimwa ; kubwaolè ; kubweena
 \lx kûû-
 \is classificateur nourriture
 \dialx GOs PA BO
-\ps CLF POSS
+\ps CLF.POSS
 \ge part de fruits ou de feuilles
 \re
 \gb
@@ -32303,7 +32321,7 @@ dimwa ; kubwaolè ; kubweena
 \xn ma mangue
 \cf caa- ; ce- [GOs] ; ho-
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ku-ã
 \is grammaire_locatif
@@ -32660,7 +32678,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ph kundÉ”
 \va kido
 \ve PA BO WEM WE 
-\ps v ; n ; CLF POSS
+\ps v ; n ; CLF.POSS
 \ge boire ; boisson
 \re
 \gb
@@ -32683,7 +32701,7 @@ celles à racines longues du centre du billon et donnent les premières récoltes; 
 \ce faire boire qqn
 \cf ku kafe ? 
 \ce tu bois/veux du café ?
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx kûdo
 \is eau_topographie
@@ -33996,7 +34014,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la
 \is grammaire_article
 \dialx BO 
-\ps ART PL
+\ps ART.PL
 \ge les
 \re
 \gb
@@ -34008,7 +34026,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Dec/2014
+\dt 09/Sep/2015
 
 \lx -laa 
 \is grammaire_pronom
@@ -34050,7 +34068,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \is grammaire_démonstratif
 \dialx GOs PA BO
 \va lãã, lã
-\ps DEIC PL DX1 ou ANAPH
+\ps DEIC.PL.1 ou ANAPH
 \ge ces ... ci 
 \re
 \gb
@@ -34063,12 +34081,12 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn les voici ceux-ci
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx laa-ba
 \is grammaire_démonstratif
 \dialx GOs
-\ps PRO DEIC PL
+\ps PRO.DEIC PL
 \ge ceux-là là-bas
 \re
 \gb
@@ -34078,12 +34096,12 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx laa-du
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEIC PL 
+\ps DEIC.PL 
 \ge ceux-là en bas 
 \re
 \gb
@@ -34096,7 +34114,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx -laeo
 \is grammaire_démonstratif
@@ -34131,7 +34149,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-ida
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEIC PL 
+\ps DEIC.PL 
 \ge ceux-là en haut
 \re
 \gb
@@ -34144,7 +34162,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx lalue
 \is plantes
@@ -34165,7 +34183,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lã-nã
 \is grammaire_démonstratif
 \dialx PA BO
-\ps DEM DX2 duel et ANAPH 
+\ps DEM.DEIC.2 duel et ANAPH 
 \ge ceux-là 
 \re
 \gb
@@ -34178,12 +34196,12 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge ces choses (Dubois)
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx la-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps DEM DX3 PL
+\ps DEM.DEIC.3  PL
 \ge ces ... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34196,7 +34214,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx lao
 \is action
@@ -34221,7 +34239,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-òli
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEM DX3 ou ANAPH 
+\ps DEM.DEIC.3 ou ANAPH 
 \ge là  ; là-bas (visible)
 \re
 \gb
@@ -34233,7 +34251,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx lapya
 \is poisson
@@ -34339,7 +34357,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-ã
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEIC DX1 duel ou ANAPH
+\ps DEIC.1 duel ou ANAPH
 \ge ces deux ... ci
 \re
 \gb
@@ -34355,7 +34373,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx liè
 \is grammaire_démonstratif
@@ -34378,7 +34396,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx lie-ba
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEIC DX3 duel (latéralement)
+\ps DEIC.3 duel (latéralement)
 \ge ces deux là-bas sur le côté
 \re
 \gb
@@ -34388,7 +34406,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx lie-nã
 \is grammaire_démonstratif
@@ -34397,7 +34415,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \ve GO(s)
 \va li-ne
 \ve PA
-\ps DEM DX2 duel et ANAPH 
+\ps DEM.DEIC.2 duel et ANAPH 
 \ge ces deux-là
 \re
 \gb
@@ -34406,12 +34424,12 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn ce sont ces deux femmes là dont tu parles ? - oui, c'est ces deux-là
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx li-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps DEM DX3 duel
+\ps DEM.DEIC.3  duel
 \ge ces deux... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34424,12 +34442,12 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx li-òli
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEM DX3 ou ANAPH 
+\ps DEM.DEIC.3  ou ANAPH 
 \ge là  ; là-bas (visible)
 \re
 \gb
@@ -34443,7 +34461,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx lòò
 \is grammaire_pronom
@@ -34473,7 +34491,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \dialx GOs
 \va zò
 \ve WE
-\ps PRO (sujet) (aspiré)
+\ps PRO (sujet) 
 \ge eux3  ; eux (paucal)
 \re
 \gb
@@ -34484,8 +34502,8 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn mes amis et moi avons vu des cerfs hier
 \cf lò-na, lò-ba, lò-è
 \ce
-\nt
-\dt 23/Aug/2015
+\nt aspiré
+\dt 09/Sep/2015
 
 \lx lòlò
 \is grammaire_manière
@@ -34562,7 +34580,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx -m
 \is grammaire_pronom
 \dialx BO PA
-\ps SUFF POSS 2° pers.
+\ps SUFF.POSS 2° pers.
 \ge ton  ; ta  ; tes
 \re
 \gb
@@ -34575,7 +34593,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx maa-
 \is classificateur nourriture
@@ -34597,7 +34615,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \hm 1
 \dialx GOs PA  BO
 \ph mÌ£Ã¦Ìƒ
-\ps v ; n STAT
+\ps v.stat ; n 
 \sn 1
 \is étapes.vie
 \ge mort  ; mourir
@@ -34640,7 +34658,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge médicament
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx mã
 \is grammaire_conjonction
@@ -36187,7 +36205,7 @@ l'épouse) [lit. sec foyer]
 \ph mÊ°aÎ²a
 \va mhava
 \ve PA BO
-\ps n QNT
+\ps n.QNT
 \ge morceau
 \re
 \gb piece
@@ -36198,7 +36216,7 @@ l'épouse) [lit. sec foyer]
 \xn un morceau d'igname
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx mã-wãge
 \is santé
@@ -36615,7 +36633,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \is grammaire_dérivation
 \hm 2
 \dialx GOs BO PA
-\ps PREF NMLZ
+\ps PREF.NMLZ
 \ge action de ; façon de ; fait de
 \re
 \gb
@@ -36664,7 +36682,7 @@ chefferie portait deux robes l'une sur l'autre, elles en enlevaient une qu'elles
 \sge attitude
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx mee
 \is nourriture_goût
@@ -37079,7 +37097,7 @@ case (Dubois)
 \dialx PA
 \va wamee ne
 \ve GO
-\ps Modal.
+\ps MODAL
 \ge ça doit être ; ce serait bien 
 \re
 \gb
@@ -37093,7 +37111,7 @@ case (Dubois)
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx memexãi
 \is oiseau
@@ -37113,7 +37131,7 @@ case (Dubois)
 \dialx GOs
 \va mee-mwa
 \ve PA BO
-\ps n.loc.
+\ps n.LOC
 \ge devant (le) de la maison
 \ge sud (le)
 \re
@@ -37123,7 +37141,7 @@ case (Dubois)
 \xn
 \cf kaya mwa
 \ce arrière ; nord
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx men-a-me
 \is grammaire_comparaison
@@ -39558,7 +39576,7 @@ central de la case (Dubois)
 \hm 2
 \dialx PA
 \sn 1
-\ps transition, répétition, réversif
+\ps ASP transition, répétition, réversif
 \ge re- ; à nouveau 
 \re
 \gb
@@ -39577,7 +39595,7 @@ central de la case (Dubois)
 \xn il est mort 
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx mwã
 \is grammaire_pronom
@@ -40207,7 +40225,7 @@ central de la case (Dubois)
 \is grammaire_modalité
 \ph mwÃª:É³o
 \dialx GOs BO
-\ps v IMPERS
+\ps v.IMPERS
 \ge manque (il)  ; rester
 \re
 \gb
@@ -40230,7 +40248,7 @@ central de la case (Dubois)
 \sge s'en falloir de peu que
 \cf kuzaò, kuraò
 \ce être en surplus, de trop
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx mweeja 
 \is caract.personne
@@ -40366,7 +40384,7 @@ sauvage (di) et cuit)
 \lx -n
 \is grammaire_pronom
 \dialx BO PA
-\ps SUFF POSS 3° pers. SG
+\ps SUFF.POSS 3° pers. SG
 \ge son  ; sa  ; ses
 \re
 \gb
@@ -40377,7 +40395,7 @@ sauvage (di) et cuit)
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx na
 \is grammaire_locatif
@@ -40432,7 +40450,7 @@ sauvage (di) et cuit)
 \ge que  ; si  ; quand
 \sn 1
 \is grammaire_conjonction
-\ps CNJ HYP
+\ps CNJ.HYP
 \ge si  ; quand  ; que 
 \re
 \gb
@@ -40469,7 +40487,7 @@ sauvage (di) et cuit)
 \rgb
 \xv na jo ! [BO]
 \xn attention à toi ! (Dubois)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx na
 \hm 3
@@ -40478,7 +40496,7 @@ sauvage (di) et cuit)
 \dialx GOs
 \va ne
 \ve PA
-\ps PRO NEG
+\ps PRO.NEG
 \ge personne (avec un négatif) (peut-être futur)
 \re
 \gb
@@ -40494,13 +40512,13 @@ sauvage (di) et cuit)
 \cf
 \ce
 \nt ne réfère qu'à des humains; senti comme différent de nee 'faire'
-\dt 17/Aug/2015
+\dt 09/Sep/2015
 
 \lx -na
 \is grammaire_démonstratif
 \ph É³a
 \dialx GOs PA BO
-\ps DEM DX2 ; ANAPH ; assertif 
+\ps DEM.DEIC.2 ; ANAPH ; assertif 
 \ge là (visible ou non)
 \re
 \gb
@@ -40515,7 +40533,7 @@ sauvage (di) et cuit)
 \sge après-demain
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx naa
 \ph É³a:
@@ -40651,7 +40669,7 @@ sauvage (di) et cuit)
 \ph É³a É³i (post-alvÃ©olaire)
 \ph
 \dialx GOs
-\ps PREP LOC
+\ps PREP.LOC
 \ge pendant  ; dans  ; sur
 \re
 \gb
@@ -40660,7 +40678,7 @@ sauvage (di) et cuit)
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx na va
 \is grammaire_préposition 
@@ -41549,7 +41567,7 @@ sauvage (di) et cuit)
 \dialx GOs
 \va -nim
 \ve PA
-\ps DEM DX3 DEIC ou ANAPH
+\ps DEM.DEIC.3 ou ANAPH
 \ge ce ... là (mis à distance, peut être péjoratif)
 \re
 \gb
@@ -41571,7 +41589,7 @@ sauvage (di) et cuit)
 \cf
 \ce
 \nt
-\dt 12/Jul/2015
+\dt 09/Sep/2015
 
 \lx -ni
 \hm 3
@@ -41680,7 +41698,7 @@ sauvage (di) et cuit)
 \is nom_locatif
 \ph É³iÌƒ gÉ”
 \dialx GOs
-\ps n LOC
+\ps n.LOC
 \ge au milieu
 \re
 \gb
@@ -41692,7 +41710,7 @@ sauvage (di) et cuit)
 \cf
 \ce
 \nt
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx ni nõ
 \is grammaire_locatif
@@ -42108,7 +42126,7 @@ et le début des racines coupées en pointe. Dubois)
 \hm 1
 \ph É³É”Ìƒ
 \dialx GOs PA BO WEM WE
-\ps PREF (lieu)
+\ps PREF.LOC
 \ge lieu  ; endroit 
 \re
 \gb
@@ -42131,7 +42149,7 @@ et le début des racines coupées en pointe. Dubois)
 \xn monter au champ d'igname
 \cf kêê-mu-ce
 \ce un jardin de fleurs
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx nõ 
 \hm 2
@@ -42159,7 +42177,7 @@ et le début des racines coupées en pointe. Dubois)
 \dialx GOs
 \va nõ
 \ve PA BO
-\ps n.loc.
+\ps n.LOC
 \ge intérieur (à l')  ; dans
 \re
 \gb
@@ -42181,7 +42199,7 @@ et le début des racines coupées en pointe. Dubois)
 \cf ni
 \ce vers
 \poc *lalo
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx nõ-
 \is classificateur numérique
@@ -43425,7 +43443,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \lx -ny
 \is grammaire_pronom
 \dialx BO PA
-\ps SUFF POSS 1° pers.
+\ps SUFF.POSS 1° pers.
 \ge mon  ; ma  ; mes
 \re
 \gb
@@ -43434,7 +43452,7 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx nyãã
 \is terrain_terre
@@ -43530,16 +43548,16 @@ avec ses lianes (se fait quand l'igname est encore verte)
 \is cultures
 \dialx GOs BO PA
 \ps v
-\ge écraser (dans la main)
+\ge écraser (dans la main) ; ramollir
 \ge émotter
 \re
 \gb
 \rgb
 \xv nhyale dili
 \xn émotter
-\cf
-\ce
-\dt 22/Aug/2015
+\cf nhyal
+\ce mou
+\dt 09/Sep/2015
 
 \lx nyamã
 \is mouvement
@@ -43748,7 +43766,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nhye
 \is grammaire_démonstratif
 \dialx GOs PA BO
-\ps DEM DX1
+\ps DEM.DEIC.1
 \ge ce...ci
 \re
 \gb
@@ -43760,7 +43778,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx nhye-ba
 \is grammaire_démonstratif
@@ -43781,7 +43799,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \lx nhye-da
 \is grammaire_démonstratif
 \dialx GOs
-\ps DEM DIR
+\ps DEM.DIR
 \ge cela en haut
 \re
 \gb
@@ -43791,10 +43809,10 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf nye-du
 \ce cela en bas
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx nyejo!
-\is parenté_vocatif
+\is parenté_appellation
 \is grammaire_vocatif
 \dialx PA
 \ps vocatif
@@ -43807,7 +43825,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx nyèn êmwen
 \is plantes
@@ -43846,7 +43864,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \dialx GOs PA
 \va nyã ; nye-ã 
 \ve GO(s) PA
-\ps DET; PRO DEIC DX1
+\ps DET; PRO.DEIC.1
 \ge ce ... -ci  ; cela
 \re
 \gb
@@ -43872,7 +43890,7 @@ jusqu'au moment où il porte le manou et qui sont offerts au clan maternel (à l'o
 \cf nye-ni, nye-ba, nye-õli, nye-du mu, nye-du, nye-bòli, nye-da
 \ce cette chose-là (DX2), cette chose-là sur le côté (DX2), cette chose-là-bas (DX3), cette chose derrière, 
 cette chose en bas, cette chose loin en bas, cette chose en haut
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx nyiwã
 \is position
@@ -43892,7 +43910,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_démonstratif
 \dialx GOs
 \mr nye-ò
-\ps DEM ANAPH
+\ps DEM.ANAPH
 \ge cela (en question)
 \re
 \gb
@@ -43901,7 +43919,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx nhyò
 \is mammifères
@@ -43925,7 +43943,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_démonstratif
 \dialx GOs WEM WE PA BO
 \mr nye-õli
-\ps DEM DX3 (distal)
+\ps DEM.DEIC.3 (distal)
 \ge cela là-bas (loin des interlocuteurs)
 \re
 \gb
@@ -43938,12 +43956,12 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn qui est-ce là-bas ?
 \cf nyõli mwa
 \ce cela loin là-bas
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx nyõli mwa
 \is grammaire_démonstratif
 \dialx PA
-\ps DEM DX4
+\ps DEM.DEIC.4
 \ge là-bas très loin
 \re
 \gb
@@ -43956,7 +43974,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx nyòlò
 \is action.tête
@@ -44176,7 +44194,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GOs PA BO
 \va on
 \ve PA BO
-\ps CLF (multiples)
+\ps CLF.NUM (multiples)
 \ge n-fois
 \re
 \gb
@@ -44190,7 +44208,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn souvent
 \xv õ-tru, õ-ru
 \xn deux fois
-\dt 27/Aug/2015
+\dt 09/Sep/2015
 
 \lx õ wara-n
 \is grammaire_conjonction
@@ -44253,7 +44271,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \sge fin
 \poc *qoti
 \sn 2
-\ps ASP ACC
+\ps ASP.ACC
 \ge déjà
 \re
 \gb
@@ -44278,7 +44296,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn il a pêché et ensuite il a cuit le poisson
 \xv e pweni nò, ogi e thuvwu phai
 \xn il a pêché le poisson et ensuite il l'a cuit
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ohaim
 \dialx PA
@@ -44382,7 +44400,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \dialx GOs
 \va hòli
 \ve
-\ps DEIC DX3 (v.i.sible)
+\ps DEIC.3 (visible)
 \ge là ; là-bas
 \re
 \gb
@@ -44395,7 +44413,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn ces personnes-là
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx olo
 \is feu
@@ -44461,7 +44479,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \lx õn na
 \is grammaire_aspect
 \dialx PA
-\ps n CNJ
+\ps n.CNJ
 \ge chaque fois que
 \re
 \gb
@@ -44471,7 +44489,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx õ-niza ? 
 \is grammaire_interrogatif
@@ -45047,7 +45065,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is grammaire_causatif
 \dialx GO BO PA
 \va phaa-
-\ps PREF CAUS
+\ps PREF.CAUS
 \ge faire (faire)
 \re
 \gb
@@ -45072,7 +45090,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \sge dresser
 \cf semble y aovir une variante pa-
 \ce
-\dt 23/Dec/2014
+\dt 09/Sep/2015
 
 \lx phaa
 \hm 2
@@ -45134,7 +45152,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \ph pha-...-É³i
 \is grammaire_causatif
 \dialx GOs
-\ps PREF CAUS
+\ps PREF.CAUS
 \ge faire faire qqch.  ; laisser  
 \re
 \gb
@@ -45143,7 +45161,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn il l'a fait tomber
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx paaba
 \is navigation
@@ -45409,7 +45427,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is interaction
 \ph paÊ’Ãµ
 \dialx GOs
-\ps ADV ???
+\ps MODIF
 \ge gâter (enfant)  ; vanter (se)
 \re
 \gb
@@ -45418,7 +45436,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \xn il se vante, il est vaniteux
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx paa-çôe
 \is action_corps
@@ -45759,7 +45777,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \is classificateur possessif
 \hm 3
 \dialx GOs PA BO
-\ps CLF (armes)
+\ps CLF.POSS (armes)
 \ge arme de jet
 \re
 \gb
@@ -45781,7 +45799,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf pha
 \ce tirer, lancer
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx phai
 \hm 1
@@ -47755,7 +47773,7 @@ empêcher (qqn de faire qqch)
 \dialx GOs PA
 \va para
 \ve BO
-\ps PREF CAUS
+\ps PREF.CAUS
 \ge faire (causatif)
 \re
 \gb
@@ -47764,7 +47782,7 @@ empêcher (qqn de faire qqch)
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx phaza-hããxe
 \is interaction
@@ -48701,7 +48719,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-hine
 \is fonct.intell.
 \dialx GOs
-\ps v REC
+\ps v.REC
 \ge connaître (se)
 \re
 \gb
@@ -48710,7 +48728,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn nous nous connaissons mutuellement 
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx pe-hò
 \is jeu
@@ -48822,7 +48840,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-ka-
 \is grammaire_quantificateur
 \dialx GOs
-\ps QNT DISTR 
+\ps QNT.DISTR 
 \ge plusieurs (à)
 \re
 \gb
@@ -48833,7 +48851,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn ils étaient à cinq dans la (même) voiture
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx pe-ka-aniza ?
 \is grammaire_interrogatif
@@ -50064,7 +50082,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-tòe
 \is grammaire_aspect
 \dialx BO
-\ps ASP INACC
+\ps ASP.INACC
 \ge en train de planter
 \re
 \gb
@@ -50074,7 +50092,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 sucre
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx pe-tròòli
 \is interaction
@@ -50217,7 +50235,7 @@ sucre
 \is grammaire_modalité
 \ph pe.u
 \dialx GOs
-\ps Modal.
+\ps MODAL
 \va peul
 \ve PA BO
 \ge en vain ; sans résultat ; tant pis ! ; ce n'est rien  ; ce n'est pas grave
@@ -50231,7 +50249,7 @@ sucre
 \xn nous parlons pour rien, dans le vide
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx peve jun
 \is grammaire_quantificateur
@@ -51441,7 +51459,7 @@ sucre
 \lx pira
 \is grammaire_locatif
 \dialx GOs
-\ps Loc.
+\ps LOC
 \ge dessous (en)  ; sous (d'une surface, d'un point)
 \re
 \gb
@@ -51454,7 +51472,7 @@ sucre
 \xn elle le met sous sa jupe
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx pii-ragooni
 \is mollusque
@@ -52990,7 +53008,7 @@ sucre
 \dialx GOs PA BO
 \va pwòmò
 \ve WE PA
-\ps n.loc. (forme POSS de pwamwa)
+\ps n.LOC (forme POSS de pwamwa)
 \sn 1
 \is nom_locatif
 \ge chez
@@ -53015,7 +53033,7 @@ sucre
 \xn mon pays 
 \cf pwamwa
 \ce pays
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx pomõ-da
 \is topographie
@@ -53985,7 +54003,7 @@ sucre
 \lx pò-xè
 \is grammaire_numéral
 \dialx GO PA
-\ps CLF (objets ronds)
+\ps CLF.NUM (objets ronds)
 \ge un (objet rond)  ; un jour
 \re
 \gb
@@ -54004,7 +54022,7 @@ sucre
 \xn il n'a qu'une oreille
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx po-xe kabu
 \is temps_jours
@@ -54041,7 +54059,7 @@ sucre
 \dialx GOs PA
 \va poxè
 \ve PA BO
-\ps Modal.
+\ps MODAL
 \ge peut-être que
 \re
 \gb
@@ -54060,7 +54078,7 @@ sucre
 \xn il n'a peut-être pas entendu
 \cf poxè na 
 \ce peut-être que
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx pò-xè nò
 \is grammaire_quantificateur
@@ -54454,7 +54472,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \hm 1
 \is classificateur numérique
 \dialx GOs PA
-\ps CLF
+\ps CLF.NUM
 \ge classificateur : pied d'arbre, feuilles, tubercules, racines
 \re
 \gb
@@ -54465,7 +54483,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx pû
 \is plantes
@@ -55937,7 +55955,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \lx pu-xè
 \is classificateur numérique
 \dialx PA BO
-\ps CLF (maisons)
+\ps CLF.NUM (maisons)
 \ge un (bâtiment, arbre, qqch qui a une souche et qui est haut)
 \re
 \gb
@@ -55949,7 +55967,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \cf
 \ce
 \nt
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx puxu-n
 \is maison
@@ -56055,7 +56073,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \dialx GOs PA BO
 \va pwau
 \ve BO
-\ps Loc.
+\ps LOC
 \ge dehors  ; extérieur
 \re
 \gb
@@ -56068,7 +56086,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn il est sorti dehors (de la maison)
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx pwaa
 \hm 1
@@ -56197,7 +56215,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \hm 1
 \is classificateur numérique
 \dialx PA
-\ps CLF
+\ps CLF.NUM
 \ge classificateur: trous et tas de prestations cérémonielles 
 \re
 \re
@@ -56207,13 +56225,13 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx phwa-
 \hm 2
 \is classificateur numérique
 \dialx GOs PA
-\ps CLF
+\ps CLF.NUM
 \ge coup  ; détonation
 \re
 \gb
@@ -56225,7 +56243,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx phwaa
 \hm 2
@@ -57993,7 +58011,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx phwevwöu
 \is nom_locatif
 \dialx GOs PA BO
-\ps n.loc
+\ps n.LOC
 \ge intervalle entre deux rangées d'un champ d'ignames
 \ge entre
 \re
@@ -58009,7 +58027,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 28/Aug/2015
+\dt 09/Sep/2015
 
 \lx phwè-whaa 
 \is corps
@@ -58639,7 +58657,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ra-u 
 \is grammaire_assertif
 \dialx PA BO
-\ps Modal.
+\ps MODAL
 \ge vraiment  ; tout à fait
 \re
 \gb
@@ -58650,12 +58668,12 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn c'est tout à fait défendu
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx ri ?
 \is grammaire_interrogatif
 \dialx PA WE
-\ps SUFF POSS INT
+\ps SUFF.POSS.INT
 \ge qui (de) ?
 \re
 \gb
@@ -58665,7 +58683,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf ti ?
 \ce qui ?
 \nt la forme "ri" n'existe pas en GO(s)
-\dt 21/Dec/2014
+\dt 09/Sep/2015
 
 \lx ru
 \is grammaire_temps
@@ -58839,7 +58857,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx ta-
 \is grammaire_interpellation
 \dialx BO
-\ps n INTJ
+\ps n.INTJ
 \ge eh !
 \re
 \gb
@@ -58848,7 +58866,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn eh toi !
 \cf
 \ce
-\dt 11/Jul/2015
+\dt 09/Sep/2015
 
 \lx taa
 \hm 2
@@ -59131,7 +59149,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \ve PA BO
 \va mwang
 \ve BO
-\ps v.stat. ; Modif.
+\ps v.stat. ; MODIF
 \ge mauvais  ; dangereux ; mal 
 \re
 \gb bad
@@ -59161,12 +59179,12 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \gr forme transitive : -raa-ini
 \ce
 \poc *(n)saqa(t)
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx tha ???
 \hm
 \dialx GO
-\ps v ASP
+\ps ASP
 \ge continuer
 \re
 \gb
@@ -59175,7 +59193,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 21/May/2007
+\dt 09/Sep/2015
 
 \lx tha ê
 \is cultures
@@ -61353,7 +61371,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 23/Aug/2015
 
 \lx tree
-\is grammaire_préfixe_sémantique
+\is grammaire_préfixe_sémantique_position
 \is position
 \hm 3
 \dialx GOs
@@ -61371,7 +61389,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xv e tree-raa mwa ! [GOs]
 \xn la maison est mal située
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx thre
 \is plantes
@@ -64597,7 +64615,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GOs WEM
 \va tòò
 \ve BO
-\ps v.t. (+ PRO pers.)
+\ps v.t.
 \ge trouver ; trouver (se) dans un état  ; rencontrer
 \re
 \gb
@@ -64608,9 +64626,10 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn ils les trouvent
 \xv jò ta tròò-nu
 \xn vous êtes venu me voir
+\nt ce verbe a un objet pronominal uniquement
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx throo
 \is corps
@@ -65125,7 +65144,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \lx thomã
 \is interaction
 \dialx GOs WEM PA BO
-\ps v.t. (+ PRO)
+\ps v.t.
 \ge appeler
 \re
 \gb
@@ -65140,9 +65159,8 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn Milène l'appelle
 \se tho-mi 
 \sge appeler vers soi
-\cf
-\ce
-\dt 23/Aug/2015
+\nt ce verbe a un objet pronominal uniquement
+\dt 09/Sep/2015
 
 \lx tomalan ??
 \is lumière
@@ -66941,7 +66959,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \is grammaire_aspect
 \dialx GOs PA 
 \hm 1
-\ps ASP ACC
+\ps ASP.ACC
 \ge accompli
 \re
 \gb
@@ -66955,7 +66973,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx u
 \is grammaire_préposition
@@ -67508,7 +67526,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \hm 2
 \is classificateur numérique
 \dialx GOs PA
-\ps CLF
+\ps CLF.NUM
 \ge grappes de noix de coco
 \re
 \gb
@@ -67517,7 +67535,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn une grappe de noix de coco
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx ula yai
 \is feu
@@ -68565,7 +68583,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GOs PA BO
 \va -vò
 \ve BO
-\ps SUFF NMLZ
+\ps SUFF.NMLZ
 \ge nominalisateur  ; saturateur de transitivité
 \re
 \gb
@@ -68586,7 +68604,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge ils font des dons, ils font la coutume
 \cf po
 \ce choses
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx vwö
 \hm 1
@@ -68596,7 +68614,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ve BO PA
 \va wi
 \ve BO
-\ps CNJ (but)
+\ps CNJ 
 \ge pour que
 \re
 \gb
@@ -68605,7 +68623,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx vwö
 \hm 2
@@ -68858,7 +68876,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ph waÅ‹
 \va waak
 \ve PA
-\ps n LOC ; v
+\ps n.LOC ; v
 \ge matin ; faire jour
 \re
 \gb
@@ -68873,7 +68891,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge très tôt le matin
 \cf goona, kaja-huvo, trôbwo
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx whã
 \is grammaire_comparaison
@@ -68884,7 +68902,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \va wame
 \ve GO(s) 
 \ve
-\ps v CMPAR
+\ps v.COMPAR
 \ge comme (être) ; faire comme  ; faire ainsi (= dire ainsi)
 \re
 \gb
@@ -68907,7 +68925,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \sge il (est resté) comme cela (Dubois)
 \cf waya ?
 \ce être comment ?
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx wa ??
 \is grammaire_conjonction
@@ -69670,7 +69688,7 @@ départ en guerre. Dubois ms)
 \dt 23/Aug/2015
 
 \lx wame ne
-\is grammaire_conjonction_but
+\is grammaire_conjonction
 \ph wame É³e
 \dialx GOs
 \ps v
@@ -69683,7 +69701,7 @@ départ en guerre. Dubois ms)
 \cf
 \ce
 \nt
-\dt 17/Aug/2015
+\dt 09/Sep/2015
 
 \lx wame ni
 \is grammaire_direction
@@ -69806,7 +69824,7 @@ wa-truci (20)
 \lx wa-na ?? wame na??
 \is grammaire_modalité
 \dialx PA
-\ps Modal.
+\ps MODAL
 \ge peut-être ; et si ?
 \re
 \ge faillir
@@ -69824,7 +69842,7 @@ wa-truci (20)
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx waang
 \is temps_découpage
@@ -70081,8 +70099,8 @@ wa-truci (20)
 \is grammaire_numéral
 \ph waÊˆu
 \dialx GOs
-\ps NUM (pour certains types de dons coutumiers qui se comptent par deux) Brettev.i.lle
-\ge deux 
+\ps NUM
+\ge deux  ((pour certains types de dons coutumiers qui se comptent par deux, Bretteville)
 \re
 \gb
 \rgb
@@ -70090,13 +70108,13 @@ wa-truci (20)
 \xn
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx wa-tru ko ido
 \is grammaire_numéral
 \dialx GO
-\ps NUM (pour certains types de dons coutumiers qui se comptent par deux)
-\ge cinq
+\ps NUM
+\ge cinq (pour certains types de dons coutumiers qui se comptent par deux)
 \re
 \gb
 \rgb
@@ -70104,14 +70122,14 @@ wa-truci (20)
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx wa-truuji
 \hm 2
 \is grammaire_numéral
 \dialx GO
-\ps NUM (pour certains types de dons coutumiers qui se comptent par deux)
-\ge vingt
+\ps NUM 
+\ge vingt (pour certains types de dons coutumiers qui se comptent par deux)
 \re
 \gb
 \rgb
@@ -70119,7 +70137,7 @@ wa-truci (20)
 \xn
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx whau
 \is corps
@@ -70141,7 +70159,7 @@ wa-truci (20)
 \lx wa-vwo
 \is grammaire_modalité
 \dialx GOs
-\ps Modal.
+\ps MODAL
 \ge peut-être que oui (réponse)
 \re
 \gb
@@ -70151,7 +70169,7 @@ wa-truci (20)
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 09/Sep/2015
 
 \lx wãwã
 \is oiseau
@@ -70222,8 +70240,8 @@ wa-truci (20)
 \hm 2
 \is classificateur numérique
 \dialx GOs PA
-\ps NUM (pour certains types de dons coutumiers qui se comptent par deux)
-\ge une paire (roussettes, etc.)
+\ps NUM
+\ge une paire (roussettes, etc.) (pour certains types de dons coutumiers qui se comptent par deux)
 \re
 \gb a pair
 \rgb
@@ -70231,7 +70249,7 @@ wa-truci (20)
 \xn une paire de roussettes
 \cf
 \ce
-\dt 09/Jun/2015
+\dt 09/Sep/2015
 
 \lx whaya ?
 \is grammaire_interrogatif
@@ -72103,7 +72121,7 @@ Mwani-mi ?
 \is grammaire_conjonction
 \hm 3 
 \dialx GOs
-\ps CNJ (passé)
+\ps CNJ
 \ge quand (passé)
 \re
 \gb when (past) 
@@ -72114,7 +72132,7 @@ Mwani-mi ?
 \xn elle est arrivée il y a 2 ans 
 \cf mõnõ na waa [GOs]
 \ce demain matin
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx xa
 \is grammaire_conjonction
@@ -72122,7 +72140,7 @@ Mwani-mi ?
 \dialx GOs PA BO
 \va ka
 \ve vx
-\ps CNJ REL
+\ps CNJ.REL
 \ge que ; qui
 \re
 \gb
@@ -72139,7 +72157,7 @@ Mwani-mi ?
 \xn un crabe comment? - un crabe noir
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 09/Sep/2015
 
 \lx xa
 \is grammaire_aspect
