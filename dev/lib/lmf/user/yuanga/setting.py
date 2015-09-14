@@ -24,7 +24,7 @@ order = [
         ("TITLE 2", "1.2. Fonctions naturelles"),
         [
             ("fonct.nat", "1.2.1. Fonctions naturelles humaines"),
-            ("fonct.nat.animaux", "1.2.2. Fonctions naturelles animaux")
+            ("fonct.nat.animaux", "1.2.2. Fonctions naturelles des animaux")
         ],
         ("TITLE 2", "1.3. Santé, maladie, médecine"),
         [
