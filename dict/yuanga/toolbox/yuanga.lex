@@ -7659,7 +7659,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \is grammaire_interrogatif
 \ph Ê’a ea
 \dialx GOs
-\ps INT.LOC(dynamique)
+\ps INT.LOC (dynamique)
 \ge jusqu'où ?
 \re
 \gb
@@ -7668,7 +7668,7 @@ la tarodière sèche  'penu' ; la tarodière 'bwala' est de taille supérieure à la 
 \xn jusqu'où va cette voiture ?
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx cabeng 
 \is bananier
@@ -14821,7 +14821,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \is grammaire_locatif
 \dialx GOs PA BO
 \ph Ãªna (dental)
-\ps ADV LOC (spatio-temporel) ANAPH ???
+\ps ADV.LOC (spatio-temporel) ANAPH ???
 \ge ici  ; maintenant ????
 \de
 \gb
@@ -14829,7 +14829,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn à cet endroit-là 
 \xv jo yu êna ? [GOs]
 \xn tu habites à cet endroit-là ?
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx ênã
 \ph Ãªna
@@ -15238,7 +15238,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx epè- ??? VOIR
 \is parenté_couple
 \dialx GO
-\ps PREF (relations duelles)
+\ps PREF (couple PAR)
 \ge couple de relation
 \re
 \xv e pè-be-yaza
@@ -15251,7 +15251,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn belle-mère et gendre
 \xv li epè-eponi
 \xn oncle utérin et neveu
-\dt 09/Sep/2015
+\dt 14/Sep/2015
 
 \lx e-peebu
 \is parenté_couple
@@ -15330,7 +15330,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx eva?
 \is grammaire_interrogatif
 \dialx BO PA 
-\ps INT.LOC(statique)
+\ps INT.LOC (statique)
 \ge où ?
 \re
 \gb
@@ -15341,7 +15341,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \xn où a-t-elle ramassé les saletés ?
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx evadan
 \is igname
@@ -17244,7 +17244,7 @@ queue, taches pourpres sur le ventre)
 \is grammaire_restrictif
 \dialx GOs PA BO
 \va (h)ada
-\ps ADV QNT
+\ps ADV ; QNT
 \ge seul ; tout seul ; seulement
 \re
 \gb
@@ -17263,7 +17263,7 @@ queue, taches pourpres sur le ventre)
 \xn il n'a qu'un enfant
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx hãgana
 \is temps_deixis
@@ -19719,7 +19719,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx GOs
 \va hòòl 
 \ve PA BO
-\ps ADV. LOC
+\ps ADV ; LOC
 \ge loin  ; éloigné  ; lointain
 \ge longtemps (d'il y a)
 \re
@@ -19738,7 +19738,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf
 \ce
 \poc *saud, *sauq (Grace)
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx hõ
 \dialx GOs 
@@ -20375,7 +20375,13 @@ la paille ; plus petites que 'ce-mwa') ;
 \va hopo
 \ve GO vx
 \ps v ; n
+\ge
+\sn 1
+\is nourriture
 \ge manger (générique) ; nourriture (générique)
+\re
+\sn 2
+\is nourriture_tabac
 \ge chiquer (tabac) [BO]
 \ge fumer (tabac) [BO]
 \re
@@ -20399,7 +20405,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \ce manger (canne à sucre)
 \cf kûûni
 \ce manger (fruits)
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx hovwo thrôbo
 \is nourriture
@@ -25602,7 +25608,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \re
 \gb
 \sn 3
-\is caract.animaux
+\is caract.animal
 \ge craintif (animaux surtout)
 \re
 \gb
@@ -25614,7 +25620,7 @@ perception, indique une perception indirecte, perçue comme ça sur la route, non 
 \cf
 \ce
 \nt
-\dt 27/Aug/2015
+\dt 14/Sep/2015
 
 \lx kharo
 \is eau_mer_plante
@@ -29382,7 +29388,7 @@ grand que "keruau")
 \dt 22/Aug/2015
 
 \lx kiya ai-n
-\is caract.animaux
+\is caract.animal
 \dialx PA
 \ps v
 \ge pas dressé
@@ -29394,7 +29400,7 @@ grand que "keruau")
 \cf thu ai-n
 \ce dressé
 \nt
-\dt 24/Aug/2015
+\dt 14/Sep/2015
 
 \lx ko
 \is oiseau
@@ -39375,7 +39381,7 @@ central de la case (Dubois)
 \ve BO
 \va mun
 \ve [PA]
-\ps ADV TIME
+\ps ADV.TEMPS
 \ge après ; derrière
 \re
 \gb
@@ -39390,7 +39396,7 @@ central de la case (Dubois)
 \xn après lui
 \an hêbun
 \at avant, devant
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx murae
 \is parenté
@@ -39557,7 +39563,7 @@ central de la case (Dubois)
 \is grammaire_aspect
 \hm 1
 \dialx GOs
-\ps ADV SEQ (continuatif)
+\ps ADV.SEQ (continuatif)
 \ge alors  ; continuer à
 \re
 \gb
@@ -39569,7 +39575,7 @@ central de la case (Dubois)
 \xv i mwã hangai [BO]
 \xn il grossit
 \nt
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx mwã
 \is grammaire_aspect
@@ -45778,7 +45784,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \hm 3
 \dialx GOs PA BO
 \ps CLF.POSS (armes)
-\ge arme de jet
+\ge arme (de jet ou assimilé)
 \re
 \gb
 \rgb
@@ -45799,7 +45805,7 @@ cette chose en bas, cette chose loin en bas, cette chose en haut
 \cf pha
 \ce tirer, lancer
 \nt
-\dt 09/Sep/2015
+\dt 14/Sep/2015
 
 \lx phai
 \hm 1
@@ -53403,7 +53409,7 @@ sucre
 \xv e pònu xo we
 \xn c'est plein d'eau
 \sn 2
-\is caract.animaux
+\is caract.animal
 \ge plein (crabe)
 \re
 \gb
@@ -53411,7 +53417,7 @@ sucre
 \cf
 \ce
 \poc *ponuq
-\dt 24/Aug/2015
+\dt 14/Sep/2015
 
 \lx pònum
 \is caract.objet
@@ -60786,7 +60792,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \dt 07/Nov/2014
 
 \lx travwa
-\is plantes
+\is nourriture_tabac
 \ph ÊˆaÎ²a
 \dialx GOs
 \va trapa
@@ -60802,7 +60808,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 14/Sep/2015
 
 \lx thraavwã 
 \is eau_marée
@@ -66195,7 +66201,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA
 \ps v
 \sn 1
-\is caract.animaux
+\is caract.animal
 \ge dressé (cheval, animal)
 \re
 \sn 2
@@ -66211,7 +66217,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \cf kiya ai-n
 \ce pas dressé
 \nt
-\dt 24/Aug/2015
+\dt 14/Sep/2015
 
 \lx thu bwa
 \is caract.personne
@@ -66437,7 +66443,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx thua
-\is caract.animaux
+\is caract.animal
 \ph thwa thua
 \dialx GOs PA BO
 \ps v.stat.
@@ -66453,7 +66459,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn cordyline sauvage
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 14/Sep/2015
 
 \lx trûã
 \hm 2
@@ -67715,7 +67721,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dt 23/Aug/2015
 
 \lx u-pwai
-\is fonct.nat
+\is nourriture_tabac
 \dialx GOs  
 \va u-pwaim
 \ve WEM
@@ -67733,7 +67739,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \ce souffler, fumer
 \cf hovo
 \ce chiquer
-\dt 22/Aug/2015
+\dt 14/Sep/2015
 
 \lx u-pwa, u-vwa
 \is déplacement
