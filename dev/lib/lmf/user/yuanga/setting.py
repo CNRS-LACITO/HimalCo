@@ -19,6 +19,9 @@ order = [
         ("TITLE 2", "1.1. Anatomie"),
         [
             ("corps", "1.1.1. Corps humain"),
+            [
+                ("corps_doigt", "1.1.1.1. Parties du corps humain")
+            ],
             ("corps_animaux", "1.1.2. Corps animal")
         ],
         ("TITLE 2", "1.2. Fonctions naturelles"),
@@ -54,7 +57,7 @@ order = [
             ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments (liquide, fumée)"),
             ("action.plantes","1.5.10. Actions liées aux plantes"),
             ("grammaire_manière", "1.5.11. Manière de faire l’action : verbes et adverbes de manière"),
-            ("action_outils", "1.5.12. Actions avec un instrument, un outil")
+            ("action.outils", "1.5.12. Actions avec un instrument, un outil")
         ]
     ],
     ("TITLE 1", "2. Caractéristiques et propriétés"),
@@ -100,7 +103,7 @@ order = [
             ("cuisson", "3.7.3. Modes de cuisson"),
             ("nourriture", "3.7.4. Aliments, alimentation"),
             ("nourriture_goût", "3.7.5. Goût des aliments"),
-            ("nourriture_tabac", "3.7.5. Tabac, actions liées au tabac")
+            ("nourriture_tabac", "3.7.6. Tabac, actions liées au tabac")
         ],
         ("TITLE 2", "3.8. Tressage (nattes, paniers), cordes, noeuds, paquets"),
         [
