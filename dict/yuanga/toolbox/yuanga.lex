@@ -339,13 +339,13 @@ cet homme-là en bas, cet homme-là loin en bas
 \lx -ãã
 \is grammaire_pronom
 \dialx GOs PA BO
-\ph ÌƒÌƒÉ›ÌƒÌƒ:
+\ph ÌƒÌƒÉ›Ìƒ:
 \ps PRO 1° pers. incl. PL (OBJ ou POSS)
 \ge nous  ; nos
 \re
 \gb
 \rgb
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx a waya ?
 \is déplacement
@@ -1113,7 +1113,7 @@ cet homme-là en bas, cet homme-là loin en bas
 
 \lx ala-
 \dialx GOs PA BO
-\is grammaire_prefixe_sémantique
+\is grammaire_préfixe_sémantique
 \ps PREF (référant à une surface extérieure)
 \sn 1
 \is corps
@@ -1150,7 +1150,7 @@ cet homme-là en bas, cet homme-là loin en bas
 \cf
 \ce
 \poc *qadop 'face, devant'
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx alaaba
 \is feu
@@ -13946,7 +13946,7 @@ Se déguste de préférence sucré.
 \lx e-
 \is parenté_couple
 \dialx BO [BM]
-\ps PREF (couples PAR)
+\ps PREF (couple PAR)
 \ge parenté duelle
 \re
 \gb
@@ -13962,7 +13962,7 @@ Se déguste de préférence sucré.
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx -e
 \hm 1
@@ -15760,7 +15760,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \lx gase ?
 \is discours_interjection
 \dialx GOs
-\ps Locution
+\ps LOCUT
 \ge on y va ? (2 personnes ou plus)
 \re
 \gb
@@ -15771,7 +15771,7 @@ cette femme-là en bas, cette femme-là loin en bas
 \cf
 \ce
 \nt
-\dt 22/Aug/2015
+\dt 15/Sep/2015
 
 \lx gaa-vhaa
 \is son
@@ -21310,7 +21310,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \lx îî
 \is grammaire_pronom
 \dialx GOs  PA
-\ps PRO 1° pers. duel inclusif sujet
+\ps PRO 1° pers. duel incl. (sujet)
 \ge pronom sujet 1° pers. duel inclusif 
 \re
 \gb
@@ -21319,7 +21319,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx -îî
 \is grammaire_pronom
@@ -21368,13 +21368,13 @@ la paille ; plus petites que 'ce-mwa') ;
 \lx iã
 \is grammaire_pronom
 \dialx GOs PA BO
-\ph Ìƒi ÌƒÌƒÉ›ÌƒÌƒ 
+\ph Ìƒi ÌƒÉ›Ìƒ
 \ps PRO 1° pers. incl. PL
 \ge nous (plur. incl.)
 \re
 \gb
 \rgb
-\dt 22/Aug/2015
+\dt 15/Sep/2015
 
 \lx -iã
 \is grammaire_pronom
@@ -21406,7 +21406,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx içö
 \is grammaire_pronom
@@ -21546,7 +21546,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \lx ijò
 \is grammaire_pronom
 \dialx GOs
-\ps PRO.INDEP  2° pers. duel
+\ps PRO.INDEP 2° pers. duel
 \ge vous 2
 \re
 \gb
@@ -21555,7 +21555,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx ilaa
 \is grammaire_pronom
@@ -21700,7 +21700,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \se ilò-ba
 \sge ceux-là (loin)
 \xn
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx imã
 \is fonct.nat
@@ -21755,12 +21755,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \ph ime 
 \va icòme 
 \ve vx
-\ps PRO.INDEP  1° pers. triel excl.
+\ps PRO.INDEP 1° pers. triel excl.
 \ge nous 3 excl
 \re
 \gb
 \rgb
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx ine
 \is oiseau
@@ -21821,7 +21821,7 @@ la paille ; plus petites que 'ce-mwa') ;
 \rgb
 \xv inu nye 
 \xn c'est moi, me voilà, je suis là
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx iò
 \is temps_deixis
@@ -21869,12 +21869,12 @@ la paille ; plus petites que 'ce-mwa') ;
 \is grammaire_pronom
 \dialx GOs
 \ph iÉ”Ìƒ
-\ps PRO.INDEP  1° pers. triel incl.
+\ps PRO.INDEP 1° pers. triel incl.
 \ge nous 3 incl. ; nous paucal
 \re
 \gb
 \rgb
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx ira ???
 \is cultures_champ
@@ -21927,7 +21927,7 @@ et permettent son écoulement, évitant l'érosion)
 \lx iva
 \is grammaire_pronom
 \dialx GOs
-\ps PRO.INDEP  1° pers. excl. PL
+\ps PRO.INDEP 1° pers. excl. PL
 \ge nous (plur. excl.) (forme moderne de izava)
 \re
 \gb
@@ -21936,7 +21936,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx ivwö
 \ph iÎ²o
@@ -21990,7 +21990,7 @@ et permettent son écoulement, évitant l'érosion)
 \dialx BO PA
 \va eyo
 \ve BO
-\ps PRO.INDEP  2° pers. SG
+\ps PRO.INDEP 2° pers. SG
 \ge toi
 \re
 \gb
@@ -21999,14 +21999,14 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx iza
 \is grammaire_pronom
 \dialx PA
 \va iyãã
 \ve BO
-\ps PRO.INDEP  1° pers. excl. PL
+\ps PRO.INDEP 1° pers. excl. PL
 \ge nous (plur. excl.)
 \re
 \gb
@@ -22015,7 +22015,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx izava
 \is grammaire_pronom
@@ -22026,7 +22026,7 @@ et permettent son écoulement, évitant l'érosion)
 \ve GO(s)
 \va za
 \ve PA
-\ps PRO.INDEP  1° pers. excl. PL
+\ps PRO.INDEP 1° pers. excl. PL
 \ge nous (excl) (forme ancienne)
 \re
 \gb
@@ -22037,13 +22037,13 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx izawa
 \is grammaire_pronom
 \dialx GOs
 \ph iÃ°awa
-\ps PRO.INDEP  2° pers. PL
+\ps PRO.INDEP 2° pers. PL
 \ge vous (forme ancienne)
 \re
 \gb
@@ -22053,12 +22053,12 @@ et permettent son écoulement, évitant l'érosion)
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx izòò
 \is grammaire_pronom
 \dialx PA BO
-\ps PRO.INDEP  2° pers. PL
+\ps PRO.INDEP 2° pers. PL
 \ge vous (plur.)
 \re
 \gb
@@ -22067,7 +22067,7 @@ et permettent son écoulement, évitant l'érosion)
 \xn
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx ja
 \is caract.objet
@@ -23499,7 +23499,7 @@ tambour
 \dt 23/Aug/2015
 
 \lx kha
-\is grammaire_prefixe_sémantique
+\is grammaire_préfixe_sémantique
 \hm 1
 \dialx GOs PA
 \va ka
@@ -23520,7 +23520,7 @@ tambour
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx kha
 \is cultures_champ
@@ -29290,7 +29290,7 @@ grand que "keruau")
 \lx kixa hê
 \is caract.objet
 \dialx GOs
-\ps Locution
+\ps LOCUT
 \ge vide (lit. pas de contenu)
 \re
 \gb
@@ -29299,7 +29299,7 @@ grand que "keruau")
 \xn mon panier est vide 
 \cf
 \ce
-\dt 22/Aug/2015
+\dt 15/Sep/2015
 
 \lx kixa khôôme
 \is grammaire_aspect
@@ -34207,7 +34207,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx la-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps DEM.DEIC.3  PL
+\ps DEM.DEIC.3 PL
 \ge ces ... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34220,7 +34220,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx lao
 \is action
@@ -34435,7 +34435,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-nim
 \is grammaire_démonstratif
 \dialx PA
-\ps DEM.DEIC.3  duel
+\ps DEM.DEIC.3 duel
 \ge ces deux... là (péjoratif pour les humains, mis à distance)
 \re
 \gb
@@ -34448,7 +34448,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx li-òli
 \is grammaire_démonstratif
@@ -34621,7 +34621,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \hm 1
 \dialx GOs PA  BO
 \ph mÌ£Ã¦Ìƒ
-\ps v.stat ; n 
+\ps v.stat. ; n 
 \sn 1
 \is étapes.vie
 \ge mort  ; mourir
@@ -34664,7 +34664,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \sge médicament
 \cf
 \ce
-\dt 09/Sep/2015
+\dt 15/Sep/2015
 
 \lx mã
 \is grammaire_conjonction
@@ -35455,7 +35455,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx maaja
 \is grammaire_manière
 \dialx GOs
-\ps MODIF.
+\ps MODIF
 \ge ralentir  ; calmer (se)
 \re
 \ge calmement ; lentement
@@ -35468,7 +35468,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \xn va plus lentement ! ralentis !
 \cf kô
 \ce calme (mer, vent)
-\dt 24/Aug/2015
+\dt 15/Sep/2015
 
 \lx maja-ce
 \is bois
@@ -41842,7 +41842,7 @@ sauvage (di) et cuit)
 \lx ni-malu ???
 \is caract.objet
 \dialx GO
-\ps v.stat
+\ps v.stat.
 \ge profond ; invisible
 \re
 \gb
@@ -41851,7 +41851,7 @@ sauvage (di) et cuit)
 \xn
 \cf
 \ce
-\dt 24/Aug/2015
+\dt 15/Sep/2015
 
 \lx -ni-ma-xè
 \is grammaire_numéral
@@ -50042,7 +50042,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \lx pe-tizi mabu
 \is jeu
 \dialx GOs
-\ps Locution
+\ps LOCUT
 \ge jeu consistant à faire rire l'autre (le 1er qui rit a perdu)
 \re
 \gb
@@ -50051,7 +50051,7 @@ et interceptaient les roussettes avec des branches pour les faire tomber au sol.
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx pe-trò
 \is interaction
@@ -50130,7 +50130,7 @@ sucre
 \lx pe-trooli èò
 \is grammaire_temps
 \dialx GOs
-\ps Locution
+\ps LOCUT
 \ge à tout à l'heure ; à tout de suite
 \re
 \gb
@@ -50139,7 +50139,7 @@ sucre
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx pe-trooli mònò
 \is interaction
@@ -56751,7 +56751,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \lx pwali mwajin
 \is grammaire_temps
 \dialx PA
-\ps Locution
+\ps LOCUT
 \ge il y a longtemps
 \re
 \gb
@@ -56764,7 +56764,7 @@ enfant de fille de frère ou soeur du père (= petits cousins) ; enfant de fille d
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx pwalu
 \is caract.objet
@@ -57158,7 +57158,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx pwaxa tree 
 \is temps_découpage
 \dialx GOs
-\ps Locution
+\ps LOCUT
 \ge toute la journée
 \re
 \gb
@@ -57171,7 +57171,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx phwaxi
 \is caract.personne
@@ -62042,7 +62042,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \lx tèèn hãgana
 \is temps_deixis
 \dialx PA
-\ps Locution
+\ps LOCUT
 \ge aujourd'hui
 \re
 \gb
@@ -62055,12 +62055,12 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \cf
 \ce
 \nt
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx tèèn ne hêbuun
 \is temps_deixis
 \dialx PA
-\ps Locution
+\ps LOCUT
 \ge il y a 3 jours
 \re
 \gb
@@ -62069,7 +62069,7 @@ Dubois : 1 pobwanu de 5 m vaut 10 fr). Hiérarchie  des valeurs : yòò > weem > yh
 \xn
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx tèè-na
 \is échanges
@@ -63812,7 +63812,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \dialx PA
 \va thiiphuu thahulò 
 \ve BO
-\ps Locution
+\ps LOCUT
 \ge formule de fin de conte
 \re
 \gb
@@ -63821,7 +63821,7 @@ l'enclos et emportent alors les dons ; ne se pratique que pour les personnes de 
 \xn à ton tour d'en ajouter un autre (conte)
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx thiram
 \is danse
@@ -73099,7 +73099,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \ve PA
 \va yaala da ?
 \ve PA
-\ps Locution 
+\ps LOCUT
 \ge quel est le sens de ?  ; quel est le nom de ?
 \re
 \gb
@@ -73108,7 +73108,7 @@ Hiérarchie  des valeurs : yòò > weem > yhalo.
 \xn que signifie 'chö' ?
 \cf
 \ce
-\dt 23/Aug/2015
+\dt 15/Sep/2015
 
 \lx yaze
 \is action eau, liquide, fumée
