@@ -34453,7 +34453,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \lx li-òli
 \is grammaire_démonstratif
 \dialx GOs PA
-\ps DEM.DEIC.3  ou ANAPH 
+\ps DEM.DEIC.3 ou ANAPH 
 \ge là  ; là-bas (visible)
 \re
 \gb
@@ -34467,7 +34467,7 @@ kajaa; kora; kera; kubwau; djinodji; bea; mwacoa; zara; thiabwau; ua; papua; hou
 \cf
 \ce
 \nt
-\dt 09/Sep/2015
+\dt 17/Sep/2015
 
 \lx lòò
 \is grammaire_pronom
@@ -37865,7 +37865,7 @@ espèce d'arbre)
 \lx -mi
 \is grammaire_directionnel
 \dialx GOs  PA BO
-\ps DIR (ventif)
+\ps DIR (centripète)
 \ge vers ici  ; vers ego
 \re
 \gb towards here
@@ -37874,7 +37874,7 @@ espèce d'arbre)
 \xn viens ici !
 \cf dumi, dami
 \ce vers ici en bas, vers ici en haut
-\dt 23/Aug/2015
+\dt 17/Sep/2015
 
 \lx mii
 \is couleur
