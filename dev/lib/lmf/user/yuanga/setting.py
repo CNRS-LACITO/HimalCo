@@ -587,7 +587,7 @@ ps = [
 
     "DIR",
     "DIR (transverse)",
-    "DIR (ventif)",
+    "DIR (centripète)",
     "DIR (centrifuge)",
 
     "dire du mal de qqn",
