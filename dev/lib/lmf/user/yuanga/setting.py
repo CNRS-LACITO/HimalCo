@@ -20,7 +20,7 @@ order = [
         [
             ("corps", "1.1.1. Corps humain"),
             [
-                ("corps_doigt", "1.1.1.1. Parties du corps humain")
+                ("corps_doigt", "1.1.1.1. Parties du corps humain : doigts, orteil")
             ],
             ("corps_animaux", "1.1.2. Corps animal")
         ],
@@ -44,15 +44,15 @@ order = [
             ("position", "1.5.1. Préfixes et verbes de position"),
             ("TITLE 3", "1.5.2. Verbes de déplacement et de mouvement"),
             [
-                ("déplacement", "1.5.2.1. Verbes de déplacement"),
+                ("déplacement", "1.5.2.1. Verbes de déplacement et moyens de déplacement"),
                 ("mouvement", "1.5.2.2. Verbes de mouvement"),
-                ("déplacement_moyen", "1.5.2.3. Moyens de locomotion")
+                ("déplacement_moyen", "1.5.2.3. Moyens de locomotion et chemins")
             ],
             ("action", "1.5.3. Verbes d'action (en général)"),
             ("portage", "1.5.4. Portage"),
             ("action_corps", "1.5.5. Mouvements ou actions faits avec le corps, les bras, les mains, les pieds"),
             ("action.tête", "1.5.6. Mouvements ou actions avec la tête, les yeux, la bouche"),
-            ("action_corps_animaux", "1.5.7. Verbes d'action faite à ou par des animaux"),
+            ("action_corps_animaux", "1.5.7. Verbes d'action faite par des animaux"),
             ("interaction_animaux", "1.5.8. Interaction avec les animaux"),
             ("action eau, liquide, fumée", "1.5.9. Actions liées aux éléments (liquide, fumée)"),
             ("action.plantes","1.5.10. Actions liées aux plantes"),
@@ -99,11 +99,10 @@ order = [
         ("TITLE 2", "3.7. Cuisine, alimentation"),
         [
             ("ustensile", "3.7.1. Ustensiles"),
-            ("prép.aliments", "3.7.2. Préparation des aliments; modes de préparation"),
-            ("cuisson", "3.7.3. Modes de cuisson"),
-            ("nourriture", "3.7.4. Aliments, alimentation"),
-            ("nourriture_goût", "3.7.5. Goût des aliments"),
-            ("nourriture_tabac", "3.7.6. Tabac, actions liées au tabac")
+            ("prép.aliments", "3.7.2. Préparation des aliments; modes de préparation et de cuisson"),
+            ("nourriture", "3.7.3. Aliments, alimentation"),
+            ("nourriture_goût", "3.7.4. Goût des aliments"),
+            ("nourriture_tabac", "3.7.5. Tabac, actions liées au tabac")
         ],
         ("TITLE 2", "3.8. Tressage (nattes, paniers), cordes, noeuds, paquets"),
         [
@@ -167,13 +166,12 @@ order = [
         ("TITLE 2", "4.7. Traditions orales, relations inter-individuelles"),
         [
             ("discours_tradition_orale", "4.7.1. Tradition orale"),
-            ("discours", "4.7.2. Discours, échanges verbaux"),
-            ("discours_interjection", "4.7.3. Interjection, interpellation, exclamation")
+            ("discours", "4.7.2. Discours, échanges verbaux")
         ],
         ("TITLE 2", "4.8. Découpage du temps, jours, saisons"),
         [
             ("temps", "4.8.1. Temps"),
-            ("temps_deixis", "4.8.2. Deixis"),
+            ("temps_deixis", "4.8.2. Adverbes déictiques de temps"),
             ("temps_découpage", "4.8.3. Découpage du temps"),
             ("temps_jours", "4.8.4. Jours"),
             ("temps_saison", "4.8.5. Saisons")
@@ -184,9 +182,8 @@ order = [
             ("grammaire_directionnel", "4.9.2. Directionnels"),
             ("grammaire_locatif", "4.9.3. Localisation"),
             [
-                ("locatif", "4.9.3.1. Morphèmes locatifs"),
-                ("nom_locatif", "4.9.3.2. Noms locatifs"),
-                ("verbe_locatif", "4.9.3.3. Verbes locatifs")
+                ("nom_locatif", "4.9.3.1. Noms locatifs"),
+                ("verbe_locatif", "4.9.3.2. Verbes locatifs")
             ]
         ]
     ],
@@ -236,10 +233,9 @@ order = [
             ("céphalopode", "6.5.2. Céphalopodes")
         ],
         ("mollusque", "6.6. Mollusques"),
-        ("coquillage", "6.7. Coquillages"),
-        ("poisson", "6.8. Poissons"),
-        ("anguille", "6.9. Anguilles"),
-        ("insecte", "6.10. Insectes")
+        ("poisson", "6.7. Poissons"),
+        ("anguille", "6.8. Anguilles"),
+        ("insecte", "6.9. Insectes")
     ],
     ("TITLE 1", "7. Botanique"),
     [
@@ -316,7 +312,7 @@ order = [
         ("grammaire_pronom", "11.27. Pronoms"),
         ("grammaire_pronom_négatif", "11.28. Pronom négatif"),
         ("grammaire_réciproque", "11.29. Réciproque"),
-        ("grammaire_réfléchi", "11.30. Réfléchi, intensificateur"),
+        ("TITLE 2", "11.30. Réfléchi, intensificateur"),
         [
             ("grammaire_réfléchi", "11.30.1. Réfléchi"),
             ("grammaire_réfléchi_intensificateur", "11.30.2. Intensificateur")
