@@ -49,6 +49,9 @@ os.system("xsltproc -o " + user_path + "yuanga/result/yuanga.html " + user_path 
 lexical_resource.get_lexicon("yuanga").sort_lexical_entries(items=reverse_items, sort_order=xml_order)
 lexical_resource.get_lexicon("yuanga").sort_lexical_entries(items=items, sort_order=sd_order, comparison=compare_sd)
 
+# Write XML LMF file
+lmf.write_xml_lmf(lexical_resource, user_path + "yuanga/result/reverse_yuanga.xml")
+
 # Write document file
 lmf.write_doc(lexical_resource, user_path + "yuanga/result/reverse_yuanga.docx", items=items, sort_order=sd_list, reverse=True)
 
