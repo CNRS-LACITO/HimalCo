@@ -372,7 +372,7 @@ items=lambda lexical_entry: get_is(lexical_entry)
 def get_gf(lexical_entry):
     for sense in lexical_entry.get_senses():
         for gloss in sense.find_glosses(language=config.xml.French):
-            return gloss
+            return gloss[0].lower() + gloss[1:]
     return "-"
 reverse_items=lambda lexical_entry: get_gf(lexical_entry)
 
