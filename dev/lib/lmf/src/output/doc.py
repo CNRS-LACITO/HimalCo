@@ -368,22 +368,28 @@ def doc_write(object, filename, items=lambda lexical_entry: lexical_entry.get_le
                             if not is_gloss:
                                 # Paragraph
                                 p = document.add_paragraph()
-                                # Write gloss in bold, except characters that are between brackets (gloss can have 2 brackets)
-                                start = gloss.find('(')
-                                end = gloss.find(')')
-                                rstart = gloss.rfind('(')
-                                rend = gloss.rfind(')')
-                                if start != -1 and end != -1:
-                                    p.add_run(gloss[:start]).bold = True
-                                    p.add_run(gloss[start:end + 1]).bold = False
-                                    if rstart != start:
-                                        p.add_run(gloss[end + 1:rstart]).bold = True
-                                        p.add_run(gloss[rstart:rend + 1]).bold = False
-                                        p.add_run(gloss[rend + 1:]).bold = True
+                                # Write gloss in bold, except characters that are between brackets or square brackets
+                                brackets = 0
+                                bold = True
+                                for c in gloss:
+                                    if c == '(' or c == '[':
+                                        # Write following characters in non-bold
+                                        brackets += 1
+                                        if brackets > 0:
+                                            bold = False
+                                        else:
+                                            bold = True
+                                        p.add_run(c).bold = bold
+                                    elif c == ')' or c == ']':
+                                        # Write following characters in bold
+                                        p.add_run(c).bold = bold
+                                        brackets -= 1
+                                        if brackets > 0:
+                                            bold = False
+                                        else:
+                                            bold = True
                                     else:
-                                        p.add_run(gloss[end + 1:]).bold = True
-                                else:
-                                    p.add_run(gloss).bold = True
+                                        p.add_run(c).bold = bold
                                 if gloss[-1] != '?' and gloss[-1] != '!' and gloss[-1] != '.':
                                     p.add_run(".")
                                 p.add_run(" ")
