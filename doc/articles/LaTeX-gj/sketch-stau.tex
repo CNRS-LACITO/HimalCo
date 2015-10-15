@@ -1,0 +1,863 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{lineno}
+\usepackage{polyglossia}
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol,multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{slashbox} 
+\usepackage{rotating}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipapl}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ \newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+
+\newcommand{\conv}{\textsc{conv}}
+\newcommand{\dat}{\textsc{dat}}
+\newcommand{\dem}{\textsc{dem}}
+\newcommand{\evid}{\textsc{ifr}}
+\newcommand{\erg}{\textsc{erg}}
+\newcommand{\inv}{\textsc{inv}}
+\newcommand{\pfv}{\textsc{pfv}} 
+\newcommand{\prf}{\textsc{pfv}}
+\newcommand{\refl}{\textsc{refl}}
+\newcommand{\sg}{\textsc{sg}} 
+\newcommand{\sens}{\textsc{sens}}
+ 
+\begin{document} 
+
+
+\title{Stau (Ergong, Horpa)\footnote{Glosses follow the Leipzig glossing rules. Other abbreviations used here include:   \textsc{fact} factual/assumptive, \textsc{ifr} inferential evidential, \textsc{inv} inverse, \textsc{sens} sensory  evidential. We would like to thank Randy LaPolla, Graham Thurgood and Nicolas Tournadre for useful comments on previous versions of this work.}}
+\author{Guillaume Jacques, Lai Yunfan, Anton Antonov and Lobsang Nima}
+
+\maketitle
+%\linenumbers
+ 
+
+\section{Introduction}
+The cluster of languages variously referred to as Stau, Ergong or Horpa in the literature are spoken over a large area from Ndzamthang county (in Chinese Rangtang  \zh{壤塘县})  in Rngaba  prefecture (Aba \zh{阿坝州}) to Rtau county (Daofu \zh{道孚}) in Dkarmdzes prefecture (Ganzi \zh{甘孜州}), in Sichuan province, China. At the moment of writing, it is still unclear how many unintelligible varieties belong to this group, but at least three must be distinguished: the language of Rtau county (referred as `Stau' in this paper), the Dgebshes language (Geshizha \zh{格什扎话})  spoken in Rongbrag county (Danba \zh{丹巴}), and the Stodsde language (Shangzhai \zh{上寨}) in Ndzamthang. The people speaking these languages are all classified as Tibetans by the administration.  
+
+Research on these languages is still limited. No dictionaries or text corpora have yet been published. Stodsde is only known through a few articles (\citealt{jackson00sidaba} and   \citealt{jackson07shangzhai}), Dgebshes by a grammatical sketch (\citealt{duoerji98geshizha}). The dialects spoken in Rtau county have been investigated by several teams of scholars (\citealt{huangbf91daofu}, \citealt{sun13gexi} and \citealt{jacques14rtau}), but no detailed description of this language is available.
+
+There is no consensus as to how these languages should be named. The present paper adopts the Tibetan names of these languages rather than the Chinese-based ones, since the Chinese names are transcriptions of the Tibetan ones. 
+
+  The native speaker among the authors (Lobsang Nima) favours the name \ipa{rəsɲəske} for his language, but this name is not used by all speakers and we prefer the geographically-based name  `Stau'. The spelling with \textit{St--} rather than \textit{Rt--}, aside from being more pronounceable for the average Western reader, reflects better the local pronunciation of the county name \ipa{stɞwu}. This spelling has already been used in English (see \citealt{wang70stau}).   Most of the data in this paper come from the Khang.gsar \ipa{qʰərŋe} dialect of Stau (in Chinese \zh{孔色} Kongse)., except for some Khroskyabs and G.yurong Horpa examples from Lai Yunfan's fieldwork.
+  
+For the group comprising all three languages (Stau, Dgebshes and Stodsde),  we could adopt either 
+\citet{jackson00sidaba}'s term `Horpa', which has indeed been used for this area in the past, or the more specific `Tre-Hor' (an unusual Tibetan name with the rare tr- initial cluster).  The Chinese term Ergong \zh{尔龚} used by scholars such as Sun Hongkai \citeyear{sun83liujiang}, on the other hand, appears to lack any basis in the local languages.
+ 
+As shown in section \ref{sec:classification}, there is evidence from verbal morphology and lexicon that Horpa languages form a subgroup within Rgyalrongic with Khroskyabs (previously known as `Lavrung'), as these two branches present common innovations which are unlikely to represent parallel developments, and which are not shared with the core Rgyalrong languages (Japhug, Tshobdun, Zbu and Situ).
+ 
+\section{Phonology}
+Unlike Khroskyabs and Rgyalrong languages, tonal contrasts have not be reported in any variety of Horpa, including Stau. 
+ 
+  \subsection{Onsets}
+  Table \ref{tab:consonants} presents the consonantal inventory posited for Stau. Unlike in Japhug or Tshobdun, there is no evidence for treating the prenasalized voiced stops as single phonemes in Stau.
+  
+ \begin{table}
+ \caption{Consonantal phonemes in Stau} \label{tab:consonants}  \centering
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllllll}
+\toprule
+& &Bilabial& Labiodental &Dental/Alveolar & Retroflex &Alveolo-palatal&Palatal & Velar&Uvular\\
+\midrule
+Stop & 	voiceless  & 	\ipa{p} & 	 & 	\ipa{t} & 	 & 	 & 	\ipa{c} & 	\ipa{k} & 	\ipa{q} & 	\\
+ & 	aspirated  & 	\ipa{pʰ} & 	 & 	\ipa{tʰ} & 	 & 	 & 	\ipa{cʰ} & 	\ipa{kʰ} & 	\ipa{qʰ} & 	\\
+ & 	voiced  & 	\ipa{b} & 	 & 	\ipa{d} & 	 & 	 & 	\ipa{ɟ} & 	\ipa{g} & 	 & 	\\
+Affricate & 	voiceless  & 	 & 	 & 	\ipa{ts} & 	\ipa{tʂ} & 	\ipa{tɕ} & 	 & 	 & 	 & 	\\
+ & 	aspirated  & 	 & 	 & 	\ipa{tsʰ} & 	\ipa{tʂʰ} & 	\ipa{tɕʰ} & 	 & 	 & 	 & 	\\
+ & 	voiced  & 	 & 	 & 	\ipa{dz} & 	\ipa{dʐ} & 	\ipa{dʑ} & 	 & 	 & 	 & 	\\
+Nasal  & 	 & 	\ipa{m} & 	 & 	\ipa{n} & 	 & 	 & 	\ipa{ɲ} & 	\ipa{ŋ} & 	 & 	\\
+Fricative  & 	voiceless & 	 & 	\ipa{f} & 	\ipa{s} & 	\ipa{ʂ} & 	\ipa{ɕ} & 	 & 	\ipa{x} & 	\ipa{χ} & 	\\
+ & 	voiced & 	 & 	\ipa{v} & 	\ipa{z} & 	 & 	\ipa{ʑ} & 	 & 	\ipa{ɣ} & 	\ipa{ʁ} & 	\\
+Approximant  & 	 & 	\ipa{w} & 	 & 	 & 	 & 	 & 	\ipa{j} & 	 & 	 & 	\\
+Rhotic  & 	 & 	 & 	 & 	 & 	\ipa{r} & 	 & 	 & 	 & 	 & 	\\
+Lateral  & 	sonorant  & 	 & 	 & 	\ipa{l} & 	 & 	 & 	 & 	 & 	 & 	\\
+ & 	 voiceless fricative  & 	 & 	 & 	\ipa{ɬ} & 	 & 	 & 	 & 	 & 	 & 	\\
+ & 	 voiced fricative  & 	 & 	 & 	\ipa{ɮ [ɮd]} & 	 & 	 & 	 & 	 & 	 & 	\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Some dialects of Stau have contrastive aspirated fricatives (see \citealt{jackson00puxi},  \citealt{jacques11lingua}). In the Khang.gsar dialect, the voiceless fricative phonemes are realized as aspirated in syllable-initial position without a cluster, and as unaspirated when they are part of a cluster. Thus, \ipa{nə-sow} `I killed him' is realized as [\ipapl{nəsʰow}], while no such aspiration is observed in \ipa{nə-fse} `he killed him' due to being in a cluster.
+
+Voiced stops are almost absent word-initially in the Khang.gsar dialect of Stau. In the case of verbs, the voiced stop or affricate resurfaces when a prefix is added, as in the examples in Table \ref{tab:voiced} (the bare stem appears in non-finite and in factual forms).
+
+ \begin{table}[H]
+ \caption{Neutralization of voiced stops in word-initial position} \label{tab:voiced} \centering 
+\begin{tabular}{lllll}
+\toprule
+Bare stem & Meaning & Prefixed verb & Meaning \\
+\midrule
+\ipa{pərje} & burn (it) &\ipa{tə-bərje-sə} & it burnt \\
+\ipa{te} & do &\ipa{nə-dej} & do it !\\
+\ipa{tɕə} & meet &\ipa{kə-dʑõ} & I met (him)\\
+\ipa{kə} &wear &\ipa{rə-gu} & I wore it \\
+\bottomrule
+\end{tabular}
+\end{table}
+Voiceless stop and affricate initials do not show any alternation, as for instance \ipa{tɕi} `wear (hat)' $\rightarrow$ \ipa{rə-tɕu} `I wore it'.
+
+Nouns do not have any productive prefixes, and therefore apart from \ipa{bəlɞ} `cheek', the only native word whose voicing is preserved word-initially, we have no way of ascertaining which nouns have underlyingly voiced initials.
+
+ 
+The status of the voiceless labiodental fricative \ipa{f} is unclear. This sound is never found as a simple onset in native words (only in borrowings from Chinese). However, some clusters such as  \ipa{ʂf} [\ipa{r̥ɸʷ}] (contrasting with \ipa{rv}), where \ipa{f} is the element closest to the vowel, are difficult to account for without positing an voiceless labial fricative phoneme.
+ 
+ In clusters with a nasal as a first element, only stops and affricates are attested, except for the cluster \ipa{nɬ}, which is in free variation with \ipa{ntʰ}.
+ 
+% \ipa{ɦwa} `hug'
+  \subsection{Rhymes}
+ 
+There are ten vowels in the Khang.gsar dialect of Stau, six plain vowels (--\ipa{i}, --\ipa{e}, --\ipa{a}, --\ipa{ə}, --\ipa{ɞ},  --\ipa{u}), two velarized vowels (--\ipa{oˠ}, --\ipa{aˠ}) and two nasal vowels (--\ipa{õ}   --\ipa{ã}).
+
+The velarized vowels are almost exclusively attested in Tibetan loanwords (--\ipa{oˠ} and --\ipa{aˠ} correspond to Tibetan \ipa{--og} and \ipa{--ag}/\ipa{--eg}, respectively).
+
+Only three codas are possible in Stau: \ipa{--v},  \ipa{--r} and  \ipa{--m} (the latter attested only in Tibetan loanwords). In native words, the coda \ipa{--r} sometimes appears to correspond  to \ipa{--r} in other Rgyalrongic languages (as in \ipa{χtɕʰər} `sour', Japhug \ipa{tɕur}), but in other cases, such as \ipa{spar} `be thirsty' (Japhug \ipa{ɕpaʁ}) or \ipa{zdɞr}  `cloud, be cloud' (Japhug \ipa{zdɯm} `cloud'), there is no \ipa{--r} coda anywhere else in the family. A possible explanation is that the sensory evidential suffix \ipa{--rə}, whose vowel tends to be elided, has been reanalyzed as part of the stem in third person forms.
+
+ \subsection{Vowel fusion}
+ In order to account for vowel alternations observed in the verbal and nominal systems, \citet{jacques14rtau} postulate a series of vowel fusion rules, summarized in \ref{tab:alternation} (the symbol C stands for either final \ipa{--r} or final \ipa{--v}).
+\begin{table}[H]
+\caption{Vowel fusion in Stau} \label{tab:alternation} \centering
+\begin{tabular}{llllllll}
+\toprule
+
+ \backslashbox{Stem}{Suffix} &  	--\ipa{w} &  --\ipa{ã} &  --\ipa{j} \\
+\hline
+\ipa{i}&\ipa{u}&\ipa{ã}&\ipa{i}\\
+\ipa{e}&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{a}&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{ə}&\ipa{u}&\ipa{õ}&\ipa{i}\\
+\ipa{ɞ}&\ipa{ow}&\ipa{õ}&\ipa{ej}\\
+\midrule
+\ipa{əv}&\ipa{u}&\ipa{õ}&\ipa{iv}\\
+\ipa{ər}&\ipa{u}&\ipa{õ}&\ipa{i}\\
+\ipa{a}C&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{e}C&\ipa{ow}&\ipa{ã}&\ipa{ej}\\
+\ipa{ɞ}C &\ipa{ow}&\ipa{õ}&\ipa{ej}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Vowel fusion cannot occur with the vowels -\ipa{u}, --\ipa{oˠ}, --\ipa{aˠ}, --\ipa{õ} and --\ipa{ã} and the rhymes ending in \ipa{--m}.
+ 
+\section{Verbal morphology}
+
+
+\subsection{Intransitive conjugation}
+In the intransitive conjugation, the second and third person singular forms are in the bare stem, while first person (singular and plural) forms have a suffix \ipa{--ã}.
+
+Following the rules of  vowel fusion in Table \ref{tab:alternation}, vowel fusion between the first person suffix \ipa{--ã} and the verb stem has different results depending on the vowel (and coda) of the verb stem. 
+ 
+Six classes of alternations are found in verbs with open syllables; class 6 includes verbs without alternation, whose rhyme can be any of --\ipa{u}, --\ipa{oˠ}, --\ipa{aˠ}, --\ipa{õ} and --\ipa{ã}:
+\begin{table}[H]
+\caption{Vowel alternations in open-syllable intransitive verbs in Rtau} \label{tab:open.intr} \centering
+\begin{tabular}{llll|ll|l}
+\toprule
+%Verb class&1&2&3&4&5&6 \\
+Meaning &	look at   &  	move   &  	like&  	be full     &  	 	be ill      &  	be hot       \\  
+\midrule
+1&	\ipa{scəqã} & 	\ipa{mbəɕã} & \ipa{rgã} &	\ipa{fkõ} & 	  	\ipa{ŋõ} & 	   	\ipa{cʰu}   \\ 
+1 (underlying)&	\ipa{scəqi-ã} & 	\ipa{mbəɕe-ã} & \ipa{rga-ã} &	\ipa{fkə-ã} & 	  	\ipa{ŋɞ-ã} & 	   	\ipa{cʰu-ã}   \\ 
+2/3&	\ipa{scəqi} & 	\ipa{mbəɕe} & \ipa{rga} & 	\ipa{fkə} & 	  	\ipa{ŋɞ} & 	 	\ipa{cʰu}  \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+There are two irregular verbs with intransitive morphology  which have \ipa{--ã} in the first person instead of expected \ipa{--õ} (cf table \ref{tab:irr.intr}). 
+
+\begin{table}[H]
+\caption{Irregular intransitive verbs in Stau} \label{tab:irr.intr} \centering
+\begin{tabular}{llllll}
+\toprule
+meaning &	go     & say &\\  
+\midrule
+1&	\ipa{ɕã}  	 &\ipa{jã} &\\ 
+2/3&	\ipa{ɕə} & 	\ipa{jə} &\\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+ \subsection{Transitive conjugation}
+The basic structure of transitive conjugations  in Khang.gsar Stau can be illustrated by Table \ref{tab:kill} (the columns represent the P and the rows the A). In addition to the first person suffix \ipa{--ã} , we find two additional suffixes (\textsc{1sg}$\rightarrow$3  \ipa{--w} and 2$\rightarrow$3 \ipa{--j}) and the inverse prefix \ipa{f--/v--} (the allomorphs are conditioned by the voicing of the onset). The only unmarked form in the paradigm is the 1$\rightarrow$2 slot, a curious fact which however can be accounted for historically (see \citealt{jacques14rtau}).
+
+
+
+\begin{table}[h]
+\caption{The transitive conjugation in Stau}
+\centering \label{tab:kill}
+\begin{tabular}{|c|cc|c|c|}  
+ \cline{1-5}
+\backslashbox{A}{P} &\textsc{1sg}  &  \textsc{1pl}  &  2  &  	3  \\  
+\cline{1-5}
+ \textsc{1sg}  &  	 \multicolumn{2}{c}{\cellcolor{lightgray}}   \vline    &  	\multirow{2}{*}{\ro{}}  &  	\ro{}\ipa{-w}  \\  
+\cline{5-5}\textsc{1pl}  &  \multicolumn{2}{c}{\cellcolor{lightgray}} 	 \vline   &   &  	\ipa{\ro{}-ã}  \\  
+\cline{2-5}
+2 &    \multicolumn{2}{c}{\multirow{2}{*}{\ipa{v-\ro{}-ã}}}    \vline  &   \grise{ }	  &  	\ipa{\ro{}-j}  \\  
+\cline{4-5}3 &  \multicolumn{2}{c}{ } \vline &  	\multicolumn{2}{c}{ \ipa{v-\ro{}}}   	 \vline  \\  
+\cline{1-5}
+\end{tabular}
+\end{table}
+
+The vowel fusion rules in Table \ref{tab:alternation} apply to all suffixed forms, as in the intransitive paradigms. No example of irregular vowel fusion has yet been discovered with transitive verbs.
+
+The \ipa{f}-- / \ipa{v}-- prefix appears in 2/3$\rightarrow$1, 3$\rightarrow$2 and 3$\rightarrow$3 forms. Its presence  in 2$\rightarrow$1 precludes an analysis as a third person agent marker, and it is best to treat it as an inverse marker (see section \ref{sec:classification}). The inverse prefix does not occur with verb stems containing an initial cluster, or with monosyllabic verbs with the coda \ipa{--v} such as \ipa{kʰev} `scoop (water)' or \ipa{ɕev} `take out (of a pile)'. 
+
+ \subsection{Other dialects}
+Some dialects of Stau have person marking systems that are remarkably different from the one described above. In the G.yurong (\ipa{ʁjɯrõ}) variety of Stau, for instance, we find the paradigms indicated in Table \ref{tab:gyurong}.
+ 
+\begin{table}[h]
+\caption{Person indexation in the Gyu.rong dialect}
+\centering \label{tab:gyurong}
+\begin{tabular}{|c|c|c|c|c|}  
+ \cline{1-5}
+\backslashbox{A}{P} &\textsc{1sg}  &  \textsc{1pl}  &  2  &  	3  \\  
+\cline{1-5}
+ \textsc{1sg}  &  	 \multicolumn{2}{c}{\cellcolor{lightgray}}   \vline    &  	\multirow{2}{*}{\ro{}\ipa{-n}}  &  	\ro{}\ipa{-ŋ}  \\  
+\cline{5-5}\textsc{1pl}  &  \multicolumn{2}{c}{\cellcolor{lightgray}} 	 \vline   &   &  	\ipa{\ro{}-j}  \\  
+\cline{2-5}2 &    	\multirow{2}{*}{\ipa{v-\ro{}-ŋ}}   	&	\multirow{2}{*}{\ipa{v-\ro{}-j}}   	 &   \grise{ }	  &  	\ipa{\ro{}-n}  \\  
+\cline{4-5}3 &     	&    	 &  	  \ipa{v-\ro{}-n}   	& \ipa{v-\ro{}}   \\  
+\cline{1-5}
+\textsc{intr} & \ro{}\ipa{-ŋ} & \ro{}\ipa{-j} &\ro{}\ipa{-n}  &\ro{} \\
+\cline{1-5}
+\end{tabular}
+\end{table}
+In comparison with Khang.gsar, the Gyu.rong dialect presents both innovative and conservative  features. Khang.gsar is more conservative in having a special marker \ipa{-w} for \textsc{1sg}$\rightarrow$3, distinct from 3$\rightarrow$\textsc{1sg}, whereas Gyu.rong, like Khroskyabs and Rgyalrong languages, has the suffix in \textsc{1sg} intransitive, \textsc{1sg}$\rightarrow$3 and 2/3$\rightarrow$\textsc{1sg} forms. Gyu.rong on the other hand preserves a distinction between first singular (\ipa{--ŋ}) and plural (\ipa{--j}) in all forms.
+
+\subsection{Orientation and negative prefixes}
+In Stau, orientation prefixes come in two series (Table \ref{tab:dir.pref}),  the  \ipa{-ə} series for imperative and perfective/evidential, and the \ipa{--í--} series for interrogative and irrealis forms. A few verbs such as  \ipa{vdɞ} `see' \ipa{ste} `finish' or \ipa{si} `know' never appear with any orientation prefix even in the perfective.
+
+\begin{table}[h]
+\caption{Orientation prefixes in Stau} 
+\label{tab:dir.pref} \centering
+\begin{tabular}{lcccc}
+\toprule
+Direction & Perfective / Imperative & Interrogative / Irrealis \\
+\midrule
+ Up & \ipa{rə--} & \ipa{rí--} \\
+Down & \ipa{nə--} & \ipa{ní--} \\
+North  & \ipa{kə--} & \ipa{kí--} \\
+South & \ipa{ɣə--} & \ipa{ɣí--} \\
+No direction & \ipa{tə--} & \ipa{tí--} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+There are three negative prefixes in Stau: the past negative \ipa{ma--}, non-past \ipa{mí--}, and the prohibitive \ipa{di--}. The prohibitive is used with an orientation prefix, as in \ipa{nə-di-f-se-ã}  (\ipa{nədifsã}) \textsc{pfv-prohib-inv}-kill-1 `don't kill me'. The past negative can be used with the orientation prefix (see \ref{ex:nEmavu}) or without it. In both cases, the negative appears after the orientation prefix, the reverse order of the one found in Rgyalrong languages.
+
+
+\begin{exe}
+\ex \label{ex:nEmavu} 
+\gll
+\ipa{e-cʰe} 	\ipa{nə-ma-və-w}  \\
+one-\textsc{cl} \textsc{pfv-neg}-do-\textsc{1sg}$\rightarrow$3 \\
+\glt I did not do anything.
+\end{exe}
+
+
+ \subsection{Derivational morphology}
+ 
+The only denominal prefix in Stau is \ipa{s--/z--}, cognate to Japhug \ipa{sɯ--/sɤ--/ɕɯ--} (on which see \citealt[14-17]{jacques14antipassive}). It derives transitive verbs, illustrated by the examples in Table \ref{tab:denominal}. While the original semantics of this prefix was likely `use X' and `cause sb. to have X' as in Japhug, in Stau the semantics of the denominal verbs is largely unpredictable, and results from semantic shifts (`use a staff' $\rightarrow$ `hit with a staff' $\rightarrow$  `hit'). 
+
+The only denominal verb shared by Stau, Khroskyabs and Japhug is \ipa{smi} `give a name' (in Japhug \ipa{sɤrmi}). When the stem of the base noun has an initial cluster, addition of the \ipa{s--/z--} denominal prefixes causes dropping of the preinitial consonant to make the word conform to the phonotactics of the language (thus \ipa{rmi} $\rightarrow$ \ipa{smi}, not *\ipa{srmi}, an impossible cluster in Stau). 
+
+In at least one case(\ipa{smi} `hurt'), in addition to the \ipa{s--} causative, we observe unexplained vowel alternation. 
+ 
+ \begin{table}[H]
+ \caption{Denominal verbs in Stau} \label{tab:denominal} \centering 
+\begin{tabular}{lllll}
+\toprule
+Base noun & Meaning & Denominal verb & Meaning \\
+\midrule
+\ipa{pəcʰa} & staff&\ipa{zbəcʰa} & hit \\
+\ipa{rmi} &name &\ipa{smi} &give a name \\
+\ipa{ɣme} &wound &\ipa{smi} & hurt \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ 
+ Stau has a few examples of anticausative verbs with voiced onsets (Table \ref{tab:anticausative}). The anticausative verbs derive from the transitive ones (not the opposite direction of derivation, see \citealt{jacques12demotion}). There are two irregular forms in this table. The first one concerns the pair \ipa{ftɕə} vs \ipa{dʑə} `melt (tr/it)', as the \ipa{f--} element of the transitive verb has no equivalent in the anticausative one. Interestingly, the same irregularity is found in the cognate pair in Japhug (\ipa{ftʂi} vs \ipa{ndʐi}). As for the second one, \ipa{ftʂə} vs \ipa{brə} (instead of *\ipa{(v)dʐə}) `wake (tr)/wake up (intr)', it appears to be unique to Stau.
+ 
+Unlike Rgyalrong languages, anticausative derivation in Stau is attested in verbs with fricative initial consonants (as in \ipa{zəla}  `fall').
+ 
+  \begin{table}[H]
+ \caption{Anticausative verbs in Stau} \label{tab:anticausative} \centering 
+\begin{tabular}{lllll}
+\toprule
+Base verb & Meaning & Anticausative verb & Meaning \\
+\midrule
+ \ipa{səla} &cause to fall & \ipa{zəla}  & fall \\
+\ipa{pʰre}   &break (tr) &\ipa{bre}   & break (it) \\
+  \ipa{fkʰe} & cut down & \ipa{vge} & break away, off \\
+\ipa{ftʂə}& wake (tr) & \ipa{brə}& wake up\\
+\ipa{ftɕə} &melt (tr) &\ipa{dʑə} &melt (it)\\
+ \bottomrule
+\end{tabular}
+\end{table}
+ 
+There is a causative \ipa{s--/z--} prefix in Stau attested in a few verbs, but unlike in Rgyalrong languages, it is not productive. Table \ref{tab:causative} provides a representative list of verb pairs. The phonological alternations attested with the \ipa{s--/z--} prefix are much less complex than those attested in Stodsde (\citealt{jackson07shangzhai}) or in Khroskyabs (\citealt{lai14caus}). However, the causative forms are not always predictable from the underlying base form: for instance, the causative form of voiced initial verbs can be either voiced (\ipa{zgə} `put clothes on') or voiceless (\ipa{spərje} `burn (tr)').
+ 
+ 
+   \begin{table}[H]
+ \caption{Causative verbs in Stau} \label{tab:causative} \centering 
+\begin{tabular}{lllll}
+\toprule
+Base verb & Meaning & Causative verb & Meaning \\
+\midrule
+ \ipa{lə}  &boil& \ipa{zɮdə}& boil (tr)\\
+  \ipa{cʰu}  & hot &  \ipa{scʰu}& cook \\
+    \ipa{rŋi}  & borrow &  \ipa{sŋi}& lend \\
+    \ipa{qə}  & go out (fire) &  \ipa{sqʰə}& extinguish\\
+    \ipa{tʰi}  & drink &  \ipa{stʰi} & give to drink\\
+    \ipa{kə} / \ipa{-gə} & wear &  \ipa{zgə} & put clothes on \\
+     \ipa{nə}  & burn (it) &  \ipa{snə}& burn (tr)\\
+     \ipa{pərje} / \ipa{-bərje} & burn &  \ipa{spərje} & burn (tr)\\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+Some Tibetan loan verbs, borrowed in pairs, should be distinguished from the native causative pairs (\ipa{mbjer} `be pasted on' vs \ipa{zɟwer}  `paste' from Tibetan \ipa{ɴbʲar} and \ipa{sbʲar}).
+ 
+ 
+ In addition to the prefix \ipa{s-/z-}, there is one example of a causative \ipa{ɣ} prefix in the pair   \ipa{ndʑi} `learn'    $\rightarrow$  \ipa{ɣʑi} `teach'. This may be a fossilized allomorph of the causative prefix (in Khroskyabs the corresponding pair is \ipa{ndzé} `learn', \ipa{ldzê}  teach' with \ipa{l--} allomorph of the causative prefix).
+     
+The \ipa{s--/z--} has semantic effects that are sometimes better described with terms other than `causative'. There is one example of applicative \ipa{s--} prefix: \ipa{qʰe}  `laugh' $\rightarrow$ \ipa{sqʰe} `laugh at. In addition, we find \ipa{nənɞ}  `smell (intr)' $\rightarrow$ \ipa{snəsnɞ} `smell (tr)' (not `cause to have a smell'; notice how the causative prefix takes part in the reduplication of the base form), whose semantics can be described as `tropative' (X $\rightarrow$ `find, consider to be X' see \citealt{jacques13tropative}).
+% zja?
+ 
+ 
+ There is little evidence of incorporation in Stau, unlike in Japhug (\citealt{jacques12incorp}) or Khroskyabs (\citealt{lai13affixale}, \citealt{lai14person}). Only two examples have been found: \ipa{rvatɕa} `carry on shoulders' (which incorporates the noun \ipa{rva} `shoulders and upper back') and \ipa{mbarji} `stride over' (with \ipa{pa}  `a step').
+
+\subsection{Existential verbs}
+
+
+\ipa{sthə}
+%08	ŋi xtse əʑi stʰə?" tə-jə-sə ŋə-rə.
+%\b	"Où est ma soupe?"
+
+\ipa{xi}
+
+%08	akəstɔmbej zgɔrɟu qʰi nə-xi-sə ŋərə
+%\b	Le grand noyer de son voisin se trouvait près de la fenêtre d'Akustomba.
+
+\ipa{tə/də}
+%ɲi tə-pʰa stɔrmə le ndɔ ə́-də As-tu envie de te marier avec lui?
+
+%22	kʰakʰa kʰarma rdʑi ɕatsa tə-rə ʑəgu, 
+%\b	Même s'il y avait beaucoup de traces de bétail,
+%23	ŋaɲɟi xi rdʑi de, rdʑi de, ŋaɲɟi aʑow taˠtaˠ χa kɔ-rə
+%\b	les traces de notre mdzo, il les reconnaissait.
+
+ 
+\ipa{ci/ɟi}
+ \section{Noun phrase}
+
+\subsection{Structure of the noun phrase}
+Noun phrases in Stau follow the template given in (\ref{ex:noun.templ}), as illustrated by example (\ref{ex:mbrogkhyi}). 
+
+\begin{exe}
+\ex \label{ex:noun.templ}
+\glt \textsc{noun-adj-num+cl-dem}
+\end{exe}
+
+Stau has a set of classifiers with numeral prefixes, which present morphophonological alternations and differ from free numeral. For instance, the numeral `one' is \ipa{ru}, but the prefix `one' on classifiers is \ipa{a--}, \ipa{e--}, or \ipa{ə--} (the distribution of the three allomorphs in not completely predictable synchronically).
+
+\begin{exe}
+\ex \label{ex:mbrogkhyi}
+\gll \ipa{mbroˠcʰə} \ipa{ke} \ipa{cʰe} \ipa{ə-lɞ} \ipa{ci-rə} \\
+nomad.dog very big one-\textsc{cl} exist:\textsc{anim}-\textsc{sens}\\
+\glt There was a huge nomad dog. (The hybrid yak, 70)
+\end{exe}
+
+
+
+\subsection{Case} 
+There are five case postpositions in Stau: the ergative \ipa{--w}, the genitive \ipa{--j}, the instrumental \ipa{--kʰa}, the dative \ipa{--gi} and two locatives \ipa{--tɕʰa} and \ipa{--ʁa}.
+
+
+The ergative and the genitive merge with the last word of the preceding noun phrase, and the regular vowel fusion rules seen in Table \ref{tab:alternation} apply. Table \ref{tab:alternation.noun} presents examples of ergative and genitive forms of some common nouns.
+
+\begin{table}[H]
+\caption{Vowel fusion in Rtau nouns} \label{tab:alternation.noun} \centering
+\begin{tabular}{l|lllllll}
+\toprule
+base form & meaning & ergative & genitive \\
+\cline{1-4}
+\ipa{kəta} & dog & \ipa{kəta-w} $\rightarrow$ \ipa{kətow} & \ipa{kəta-j} $\rightarrow$ \ipa{kətej} & \\
+\ipa{vdzi} & man & \ipa{vdzi-w} $\rightarrow$  \ipa{vdzu} & \ipa{vdzi-j} $\rightarrow$ \ipa{vdzi} & \\
+\ipa{xə} & hybrid of yak and cow &\ipa{xə-w}  $\rightarrow$\ipa{xu} & \ipa{xə-j} $\rightarrow$ \ipa{xi} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The first and second person pronouns (\ipa{ŋa} \textsc{1sg}, \ipa{ɲə} \textsc{2sg}) do not have ergative forms (except in hybrid indirect speech, see below), as illustrated by example (\ref{ex:qow}), where the noun \ipa{waqi-w}  `the rabbit' takes the ergative while the pronoun \ipa{ŋa} remains invariable in exactly the same context.
+ \begin{exe}
+\ex \label{ex:qow}
+\gll
+\ipa{ŋa} 	\ipa{zəŋɞ} 	\ipa{qe-w} \ipa{tə-jə-sə} 	\ipa{ŋə-rə.} \\
+\textsc{1sg} first shoot-\textsc{1sg$\rightarrow$3} \textsc{pfv}-say-\textsc{ifr} be-\textsc{sens}\\
+\gll \ipa{tɕʰəge,} 	\ipa{waqi-w} 	\ipa{zəŋɞ} 	\ipa{tə-f-qe-sə} 	\ipa{ŋə-rə.} 	\\
+then rabbit-\textsc{erg} first \textsc{pfv-inv}-shoot-\textsc{ifr} be-\textsc{sens}\\
+\glt He said `I will shoot first'. Then, the rabbit shot him first. (the rabbit and the tiger, 21-22)
+\end{exe}
+
+Some morphologically intransitive verbs, such as \ipa{rga} `like' take an ergative argument, as in \ref{ex:rga}, where the experiencer is in the ergative, and the stimulus in the dative case, but the verb only agrees with the argument marked in the ergative. Thus, in example (\ref{ex:rga}), the verb is zero-marked, because the ergatively marked argument \ipa{tə-w} is third person (see Table \ref{tab:open.intr}).
+
+ Morphological and syntactic transitivity in Stau should thus be treated separately as they do not necessarily match for all verbs.
+
+ \begin{exe}
+\ex \label{ex:rga}
+\gll \ipa{tə-w}  	\ipa{ŋa-ɡi}  	\ipa{rɡa-rə}  
+ \\
+he-\textsc{erg} I-\textsc{dat} like-\textsc{sens} \\
+\glt `(S)he likes me.'
+\end{exe}
+
+All postpositions above can occur in the argumental structure of some verbs, including the instrumental \ipa{--kʰa}, which is selected by the verb \ipa{mkʰɞ} `need, want', as in \ref{ex:mimkhoN}.
+
+ \begin{exe}
+\ex \label{ex:mimkhoN}
+\gll
+\ipa{ŋa} 	\ipa{rji-kʰa} 	\ipa{mí-mkhɞ-ã} \\
+\textsc{1sg} horse-\textsc{instr} \textsc{neg:n.pst}-want-1 \\
+\glt I don't want a horse.
+\end{exe}
+
+%	ti ɮdow ŋa-ʁa tə-ɲcʰə (pas exprès)
+%	tu ɮda-kʰa ŋa-ʁa tə-ɲcʰə.
+%	
+
+%	ŋa rji tɕəma : je n'ai pas besoin d'un cheval
+
+ 
+
+
+%xə le kʰaχcə nə-ɟi-sə ŋə-rə.
+%045	rkəmə le təɲə nə-ŋɞ-sə ŋərə
+%
+%		tə ge vdzi ke ʁje gə ŋərə (ge: positif)
+%		tə le vdzi ke mtsʰer gə ŋərə (le: négatif)
+%
+%
+%contrastif
+%ŋa sə rdʑi-ʁa tɕʰu χa mi-gõ-rə 
+%
+%vɞ sə ɮdə ja, ɣrə de ə́-ɮdə mí-ɮdə χa mi-gõ
+%
+%
+%ŋa zəŋɞ qe-ŋkʰə ŋõ ŋõ va ŋõ
+%C'est moi qui tire en premier
+
+%zəŋɞ fqe-ŋkʰə staˠ ŋə-rə
+%staˠ zəŋɞ qe-ŋkʰə ŋɞŋɞ va ŋə-rə
+%
+%akəstɞmbow ləla fcʰə fcʰə va ŋə-rə
+
+
+\section{Nominalization} \label{sec:nmlz}
+All productive nominalization markers in Stau are suffixes. They are commonly used to build relative and complement clauses.
+
+We find the agentive nominalizer \ipa{--ŋkʰə}, that can be used with intransitive (\ipa{ɕə}  `go' $\rightarrow$ \ipa{ɕə-ŋkʰə} `the one who goes') as well as transitive verbs (\ipa{rə} `buy' $\rightarrow$ \ipa{rə-ŋkʰə} `buyer'). The verb loses all person morphology (including the inverse prefix \ipa{v--} -- note that the finite third person form of \ipa{rə} `buy' is \ipa{v-rə} `he buys') and only the negative prefixes can be added.
+ 
+The nominalizer \ipa{--lə} can be used with transitive verbs to designate the patient of the action, as in \ipa{fɕe} `tell' $\rightarrow$ \ipa{fɕe-lə} `things that have been told' or \ipa{ŋgə} `eat' $\rightarrow$ \ipa{ŋgə-lə} `food'. Alternatively, it can build action nominals with either transitive or intransitive verbs, as  in example (\ref{ex:tEmphjEsE}).
+
+\begin{exe}
+\ex \label{ex:tEmphjEsE} 
+\gll
+\ipa{ɲə-ɲə} 	\ipa{nə-vi-lə} 	\ipa{de} 	\ipa{tə-mpʰjə-sə} 	\ipa{ŋə-rə} \\
+2-\textsc{pl} \textsc{down}-go-\textsc{nmlz:P/action} \textsc{dem} \textsc{pfv}-be.late-\textsc{ifr} be-\textsc{sens}\\
+\glt You arrived there too late (=your arrival there was late; Akhu stonba and the Walnut tree, 34).
+\end{exe}
+
+The suffix \ipa{--re} is used for locative nominalization, as in \ipa{rkʰə} `put in' $\rightarrow$ \ipa{pʰjodzə} \ipa{rkʰə-re} (money put.in-\textsc{nmlz:loc}) `wallet, place one puts money in'. It also appears with stative existential verbs such as \ipa{tə} `be there, exist' $\rightarrow$ \ipa{tə-re} (be.there-\textsc{nmlz:loc}) `the place where (it) is'. 
+
+Finally, \ipa{--sce} is the marker of instrumental nominalization, as in \ipa{ra} `write' $\rightarrow$\ipa{ra-sce} `pen, the thing one uses to write'.
+
+Relatives in Stau are always built using one of these four suffixes. The S/A  argument is relativized with \ipa{-ŋkʰə}, the P argument with \ipa{-lə}, and oblique arguments or adjuncts with the other two suffixes. 
+%tə lɔrɟə de sɔŋɔ qʰana ɲə gi rgə-tɕʰa fɕe-lə ŋə-rə
+
+In relative clauses with relativized P, the agent of the relative can be marked either with the ergative or the genitive. In example (\ref{ex:bden}), it is possible to say  \ipa{akəstɞmba-w} with the ergative \ipa{-w} instead.
+
+\begin{exe}
+\ex \label{ex:bden}
+\gll 
+ [\ipa{akəstɞmba-j} 	\ipa{fɕe-lə}] 	\ipa{de} 	\ipa{vdẽ-ndʐə?} \\
+ Akhustonba-\textsc{gen} tell-\textsc{nmlz:P/action} \textsc{dem} be.true-\textsc{sens} \\
+\glt Does Akhustonba tell the truth?  (`It is true what Akhustonba says', Akhu stonba and the Walnut tree, 25)
+\end{exe}
+
+ 
+ 
+
+\section{Complementation}  
+Most complement clauses have a non-finite verb, suffixed with the \ipa{-lə} or \ipa{--re} nominalizer.
+
+The modal verb \ipa{rə} `be able' is an example of the first type. As shown by example (\ref{ex:marusE}), where the verb of the complement clause \ipa{scəqi-lə}  is in non-finite form, suffixed with \ipa{--lə}, while \ipa{rə} takes person and TAM marking.
+
+\begin{exe}
+\ex\label{ex:marusE}
+\gll
+\ipa{tɕʰəge} 	\ipa{ŋa} 	\ipa{le} 	\ipa{rõsa} 	\ipa{scəqi-lə} 	\ipa{ma-rə-w-sə} \\
+then \textsc{1sg} \textsc{top} immediately look.at-\textsc{nmlz:P/action} \textsc{neg:pfv}-be.able-\textsc{1sg}$\rightarrow$3-\textsc{ifr} \\
+\glt I was not able to notice it immediately. (The hybrid yak, 52)
+\end{exe}
+
+This type of complement is also found with the phasal complex predicate \ipa{ŋgɞ} \ipa{ftsu} `start', borrowed from Tibetan \ipa{ɴgo btsugs} `start' (see example \ref{ex:btsugs}).
+
+\begin{exe}
+\ex \label{ex:btsugs}
+\gll 
+\ipa{ŋa} 	\ipa{zɮdə-lə} 	\ipa{ŋgɞ} 	\ipa{kə-ftsu-w} \\
+\textsc{1sg} boil-\textsc{nmlz:P/action} start \textsc{pfv}-start-\textsc{1sg}$\rightarrow$3 \\
+\glt I started boiling it.
+\end{exe}
+
+The locative nominalizer \ipa{--re} appears for instance in combination with \ipa{ɮdi} `come' to express the meaning `be ready to, have almost ...', as in \ref{ex:stere}.
+
+\begin{exe}
+\ex \label{ex:stere}
+\gll 
+ \ipa{ste-re} 	\ipa{ɮdi-ã} \\
+finish-\textsc{nmlz:loc} come-1 \\
+\glt I have almost finished.
+\end{exe}
+
+% 		ɮde-re ɮdi-rə : on était presque arrivé 
+%		ste-re ɮdã: j'ai presque fini
+%		ŋgə-re ɮdã: je suis prêt pour manger
+
+
+Other types of non-finite complement clauses are also attested. The verb \ipa{ʁɞ} `help' takes a complement clause  whose main verb is marked with the suffix \ipa{--ʁɞ} (homophonous with the bare stem of the verb, and probably derived from it), as in \ref{ex:kERoN}. No other verb can occur with this type of complement clause.
+
+\begin{exe}
+\ex \label{ex:kERoN}
+\gll 
+\ipa{tə-w} 	\ipa{ŋa-gi} 	\ipa{tɕədə} 	\ipa{de} 	\ipa{zɮda-ʁɞ} 	\ipa{kə--ʁɞ-ã} \\
+\textsc{3-erg} \textsc{1sg-dat} book \textsc{dem} read-\textsc{conv} \textsc{pfv-inv:}help-1 \\
+\glt He helped me reading this book.
+\end{exe}
+
+
+In the synthetic causative construction, the verb \ipa{xtʂʰə} `let' takes a complement verb in bare stem form, without any person or TAM marker, and no nominalization or converbial suffix. Example (\ref{ex:tExtsxhoN}) illustrates this construction (in this example, the inverse \ipa{-f-/-v-} cannot surface due to the initial cluster). If the verb in the complement clause is intransitive, its S is coreferent with the P of \ipa{xtʂʰə} `let'; ifit is transitive, its A is coreferent with the P.
+
+\begin{exe}
+\ex \label{ex:tExtsxhoN}
+\gll 
+[\ipa{e-ʑe} 	\ipa{nə}] 	\ipa{tə-xtʂʰə-ã} \\
+one-moment rest \textsc{imp-inv:caus}-1 \\
+\glt Let me rest a moment. (The hybrid yak, 48)
+\end{exe}
+
+
+%
+%tɕədə de χte-ba tə-kʰã:
+% ŋa ɕə-ba kʰã
+% je dois y aller
+% 
+% 		ɮde-re ɮdi-rə : on était presque arrivé 
+%		ste-re ɮdã: j'ai presque fini
+%		ŋgə-re ɮdã: je suis prêt pour manger
+%		
+%
+%
+%		sə ma-ɮdi ga tə-ntsʰu: je pense à ceux qui étaient venus.
+%		sə ɮdi-ga ŋa mi-dʐẽ-rə: Je ne me souviens plus de qui était venu.
+%		
+%		tɕʰəge ŋa le rõsa scəqi-lə ma-ru-sə 
+%		
+%		ŋa zɮdə-lə ŋgɞ kə-ftsu
+
+Finite complement clauses are  found with both phasal auxiliary verbs such as \ipa{ste}  `finish' (as in \ref{ex:xtse}; note that in this case, only the verb in the complement clause receives person indexation), and in reported speech.
+\begin{exe}
+\ex \label{ex:xtse}
+\gll
+[\ipa{ɲəqʰej} 	\ipa{xtse} 	\ipa{ŋa} 	\ipa{tə-tʰi-w}]	\ipa{ste-sə} \\
+\textsc{2sg:gen} soup \textsc{1sg} \textsc{pfv}-drink-\textsc{1sg$\rightarrow$3} finish-\textsc{ifr} \\
+\glt I drank up your soup. (The louse and the flea, 9)
+\end{exe}
+
+%055	rkə tə-və-si skarva (fɕaχpa) de ti ɣɔrɔ kʰɔ-ba tə-kʰi-sə ŋərə.
+%\b	Il dut lui donner cela en dédommagement de son vol. (ti = rkəmi, təgi =rõba-gi)
+
+Stau presents an extreme case of hybrid indirect(or semi-direct)  speech  (\citealt{aikhenvald08semidirect}, \citealt{tournadre08conjunct}). 
+
+When the original speaker is different from the current speaker, the reported utterance will only be identical to the original utterance if the current and original speaker and addressee are not referred to in it. Thus, in example (\ref{ex:1b}), the reported utterance is identical to the original one (example \ref{ex:33}).
+
+
+\begin{exe}
+\ex \label{ex:1b}
+\gll
+	\ipa{tʂaɕi-w}$_i$ \ipa{ŋa-gi}	\ipa{jə-rə} \ipa{ge} [\ipapl{tə-w}$_j$	\ipapl{dʐɞma} 	\ipapl{de} \ipapl{nə-f-se-sə}] \ipa{jə-rə}  \\
+	{Bkrashis-\erg} {1\sg-\dat} {say-\sens} \textsc{lnk} {3\sg-\erg} Sgrolma {\dem} {\prf-\inv-kill-\evid}  say-\sens\\ 
+	\glt Bkrashis$_i$ told me (that) he$_j$ ($\ne$ Bkrashis) had killed Sgrolma.
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:33}
+\gll
+	\ipa{tə-w} \ipapl{dʐɞma} \ipapl{de} \ipapl{nə-f-se(-sə)} \\
+	{3\sg-\erg} Sgrolma {\dem} {\prf-\inv-kill(-\evid)}\\ 
+	\glt He killed Sgrolma.
+\end{exe}
+
+A different situation is observed when the original speaker refers to himself (in the first person) in the original utterance, as illustrated by (\ref{ex:1c}) and (\ref{ex:EdEgi}).  The reported utterance keeps the verb form of the original utterance (example \ref{ex:13}), but the first person pronoun is replaced by the logophoric pronoun \ipa{ədə}. Like the first person pronoun \ipa{ŋa}, the logophoric \ipa{ədə} does not take the ergative marker.
+
+\begin{exe}
+\ex \label{ex:1c}
+\gll
+	\ipa{tʂaɕi-w}$_i$ \ipa{ŋa-gi}	\ipa{jə-rə} \ipa{ge} [\ipapl{ədə}$_i$	\ipapl{dʐɞma} 	\ipapl{de} 	\ipapl{nə-se-w}] \ipa{jə-rə}  \\
+	{Bkrashis-\erg} {1\sg-\dat} {say-\sens} \textsc{lnk} \textsc{logophoric} Sgrolma {\dem} {\prf-kill-1\sg$\rightarrow$3} say-\sens\\ 
+	\glt Bkrashis$_i$ told me that he$_i$ had killed Sgrolma.
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:13}
+\gll
+	\ipa{ŋa}	\ipapl{dʐɞma} 	\ipapl{de} 	\ipapl{nə-se-w} \\
+	{1\sg} Sgrolma {\dem} {\prf-kill-1\sg$\rightarrow$3}\\ 
+	\glt I killed Sgrolma.
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:EdEgi}
+\gll
+		[\ipa{ədə-gi} 	\ipa{mbjoˠmbjoˠ} 	\ipa{tɕa} 	\ipa{gə} 	\ipa{tə-f-kʰɞ-ã,} 	\ipa{tɕa} 	\ipa{gə} 	\ipa{tə-f-kʰɞ-ã,}] 	\ipa{jə-rə} 	\\
+\textsc{logophoric-dat} quickly tea \textsc{indef} \textsc{imp-inv}-give-1 tea \textsc{indef} \textsc{imp-inv}-give-1 say-\textsc{sens} \\
+\glt He said `Give me some tea, give me some tea.' (The hybrid yak, 39)
+\end{exe}
+
+
+When the current speaker was referred to as a third person in the original utterance, a different type of mismatch occurs, illustrated by example (\ref{ex:1d}). The verb  preserves the form of the original utterance (example \ref{ex:33}), but the third person pronoun is replaced by the first person \ipa{ŋa}. In addition, in this case the pronoun takes the ergative flagging \ipa{--w} of the original utterance, although SAP pronouns normally do not take ergative suffixes.
+
+
+\begin{exe}
+\ex \label{ex:1d}
+\gll
+	\ipa{tʂaɕi-w}	\ipa{jə-rə} \ipa{ge} [\ipa{ŋa-w} \ipa{dʐɞma} \ipa{de} \ipa{nə-f-se-sə}] \ipa{jə-rə}  \\
+	{Bkrashis-\textsc{erg}} {say-\textsc{sens}} \textsc{lnk} {\textsc{1sg}-\textsc{erg}} Sgrolma {\textsc{dem}} {\textsc{pfv-inv}-kill-\textsc{ifr}} say-\textsc{sens} \\
+	\glt Bkrashis said that I had killed Sgrolma.
+\end{exe}
+
+We see that in Stau hybrid indirect speech verb forms and case marking represent the point of view of the original speaker, but everything else, including pronouns, represent that of the current speaker.
+
+
+%	>	ɲəqʰɞ rə-ɮde ŋge, χa kɞ ŋərə
+%	>	viens par toi même et tu verras.
+	
+
+	
+%ɲi ŋa-gi kə-ma-ʁɞ ve, ŋa liska kʰərma gə və mí-vzu-rə
+%Si tu ne m'aides pas, je ne pourrai pas faire ce travail tout seul
+%
+%ɲi ŋa-gi kə-ʁɞ demdi (sə), ŋa liska de və ma-vzu.
+
+
+
+%	ɲi ŋa ʁa nə-ŋɞ ve, sɞ cʰe-rə
+%	ɲi ke cʰe-me ŋɞ-rə
+%	You are  bigger 
+%	
+%	liska ɕə-ʁa nəŋɞve, ɲchara təɕã ve sɞ scə
+%	Ce serait plus sympa que j'aille me promener plutôt que d'aller travailler
+%	
+%jitʰa ndzɞ-ʁa nə-ŋɞ-ve, smẽba qʰi tə-ɕə ve, sɞ xtɕʰi ŋə-rə	
+%	
+%	ŋa ɲi nəŋɞve, liska ɕã
+%SI j'étais toi, j'irai travailler	
+\section{Evidentiality}
+
+Like most languages of the Tibetan cultural area, the Stau verbal system has evidential markers, in particular the sensory evidential \ipa{-rə} and the past inferential \ipa{-sə}.
+
+The sensory  \ipa{-rə} is generally used to express a non-past state or an action that the speaker is directly witnessing, be it by vision or by other senses. Thus, sentence (\ref{ex:NErE}) can be uttered by someone who sees (or feels, in a car) the state of the road.
+
+ \begin{exe}
+\ex \label{ex:NErE}
+\gll
+\ipa{tɕe} 	\ipa{ke} 	\ipa{rcɞ} 	\ipa{gə} 	\ipa{ŋə-rə}  \\
+road very bad \textsc{indef} be-\textsc{sens} \\
+\glt It is a bad road.
+ \end{exe}
+ 
+The sensory \ipa{-rə} is not used in objective (i.e., based upon external observation) statements about the speaker himself: in \ref{ex:YJEraNkhE},  the verb \ipa{ŋə-ã} cannot take  the suffix \ipa{-rə}. It is also not used with third person referents when the speaker  considers the statement  to belong to generally accepted `encyclopaedic' knowledge. 
+
+  \begin{exe}
+\ex \label{ex:YJEraNkhE}
+\gll
+  \ipa{ŋa} 	\ipa{ke} \ipa{mbjoˠ} 	\ipa{ɲɟəra-ŋkʰə} 	\ipa{gə} 	\ipa{ŋə-ã} \\
+\textsc{1sg} very be.fast run-\textsc{nmlz}:S/A \textsc{indef} be-1 \\
+\glt I am a fast runner.
+  \end{exe}
+  
+ 
+  
+On the other hand, as with the Tibetan sensory \ipa{ɴdug} (see \citealt{tournadre14evidentiality}), \ipa{--rə}  can be used to express endopathic sensations, knowledge (\ref{ex:XamigoN}) or desire (\ref{ex:prerE}) with the first person.
+
+\begin{exe}
+\ex \label{ex:XamigoN}
+\gll
+\ipa{ŋa} 	\ipa{sə} 	\ipa{rdʑi-ʁa} 	\ipa{tɕʰu} 	\ipa{χa} 	\ipa{mi-gɞ-ã-rə} 	\\
+\textsc{1sg} \textsc{top} trace-\textsc{loc} anything understand(1) \textsc{neg}-understand(2)-1-\textsc{sens} \\
+\glt Me, on the other hand, I do not understand anything about tracking (animals) (The hybrid yak, 17)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:prerE}
+\gll
+\ipa{ŋa} 	\ipa{tɕa} 	\ipa{tʰi-sɲə} 	\ipa{pre-rə} \\
+\textsc{1sg} tea drink-want want-\textsc{sens} \\
+\glt I want to drink tea.
+\end{exe}
+
+The inferentiall \ipa{-sə} indicates that the speaker learnt of the facts in question second-hand (hearsay) or guessed them from indirect evidence, as in sentence (\ref{ex:nEfse2}).
+
+\begin{exe}
+\ex \label{ex:nEfse2}
+\gll \ipa{tʂaɕi-w} 	\ipa{dʐɞma} 	\ipa{de} 	\ipa{nə-f-se-sə}  \\
+Bkrashis-\textsc{erg} Sgrolma \textsc{dem} \textsc{pfv-inv}-kill-\textsc{ifr} \\
+\glt Bkrashis killed Sgrolma.
+\end{exe}
+
+A perfective sentence without the suffix  \ipa{-sə} is used if the speaker has first-hand authoritative knowledge of the events described. For instance, \ref{ex:nEfse} can only be said by someone who witnessed the crime.
+
+
+\begin{exe}
+\ex \label{ex:nEfse}
+\gll \ipa{tʂaɕi-w} 	\ipa{dʐɞma} 	\ipa{de} 	\ipa{nə-f-se}  \\
+Bkrashis-\textsc{erg} Sgrolma \textsc{dem} \textsc{pfv-inv}-kill \\
+\glt Bkrashis killed Sgrolma.
+\end{exe}
+
+ 
+
+A verb in the inferential can be combined with the sensory form of the verb \ipa{ŋə} `be' to form the narrative compound tense (see \ref{ex:nEfse3}), which is specifically used to tell stories. It is the most common verb form in narratives and other traditional stories.
+
+\begin{exe}
+\ex \label{ex:nEfse3}
+\gll \ipa{tʂaɕi-w} 	\ipa{dʐɞma} 	\ipa{de} 	\ipa{nə-f-se-sə}  \ipa{ŋə-rə} \\
+Bkrashis-\textsc{erg} Sgrolma \textsc{dem} \textsc{pfv-inv}-kill-\textsc{ifr} be-\textsc{sens} \\
+\glt Bkrashis killed Sgrolma.
+\end{exe}
+ 
+
+ 
+ 
+ 
+\section{Classification} \label{sec:classification}
+ There is clear evidence from morphology and lexicon that Stau and Khroskyabs languages constitute a subgroup within Rgyalrongic (evidence for the Rgyalrongic subgroup itself is presented in \citealt{jackson00puxi}).
+ 
+ First, both Stau and Khroskyabs languages have generalized the inverse forms in the non-local scenario and completely lost the direct 3$\rightarrow$3' forms (\citealt{lai13affixale}, \citealt{jacques14inverse},   \citealt{lai14person}), a puzzling feature that is unlikely to be an independent innovation, as there is no comparable example in any other language family.
+ 
+ Second, Stau and Khroskyabs lost the nominalization prefixes found in Rgyalrong languages. Only indirect traces of the prefixes remain.
+ 
+ An example of such a trace is the noun \ipa{ɣɟi}  `hole, orifice' in Khanggsar Stau,  \ipa{ʁɟô} in Wobzi Khroskyabs, both   cognate to Japhug \ipa{--ɣɲɟɯ}  `(its) hole, opening', which  derives from \ipa{ɲɟɯ} `open (intr)', the anticausative of \ipa{cɯ} `open (a door)'. 
+ 
+ In Japhug, \ipa{ɣ--} is an irregular allomorph of the nominalization prefix \ipa{kɯ--}, found in a handful of examples (\citealt[4-6]{jacques14antipassive}). Although the \ipa{ɣ--} element in Stau and \ipa{ʁ--} in Khroskyabs are not analyzable anymore (the forms \ipa{ɣɟi}  and   \ipa{ʁɟô} are synchronically unmotivated), this example and others (see \citealt[1228-9]{jacques12incorp}) suggest  that nominalization prefixes used to exist in Stau and Khroskyabs, and were later replaced by innovative suffixes.  
+ 
+ These suffixes, probably originally generic relator nouns, are partially shared between Stau and Khroskyabs (see Table \ref{tab:nmlz}), in particular the S/A nominalizer \ipa{-ŋkʰə} and the oblique nominalizer \ipa{-re}. Although contact cannot be excluded as a factor in the development of these suffixal systems, no discussion of Rgyalrongic subgrouping can neglect these data. 
+ 
+ The suffix \ipa{-ŋkʰə}  in Stau and Khroskyabs is reminiscent of Tibetan \ipa{--mkʰan}, which has the same use in some modern languages, but this is likely to be a coincidence (word with the rhyme \ipa{--an} in Classical Tibetan never corresponds to words \ipa{-ə} in Tibetan loanwords in Stau).
+ 
+ 
+ 
+ 
+  \begin{table}[h]
+  \caption{Nominalization suffixes in Stau and Khroskyabs} \label{tab:nmlz} \centering
+ \begin{tabular}{llllll}
+ \toprule
+ &	Stau &	Khroskyabs &	\\	
+ \midrule
+S/A &	\ipa{-ŋkʰə} &	\ipa{-pa, -ŋkʰə} &	\\
+P, action &	\ipa{-lə} &	\ipa{-spi} &	\\
+locative &	\ipa{-re} &	\ipa{-ri} &	\\
+instrument &	\ipa{-sce} &	\ipa{-ri} &	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Third, both Stau and Khroskyabs present a type of verbal reduplication unattested elsewhere, whereby the replicated syllable appears after the base, and its rhyme is replaced by \ipa{--ɑ} (\citealt{lai13fuyin}). This process is productive is Stau and Khroskyabs (for instance \ipa{ŋgə} `eat' $\rightarrow$ \ipa{ŋgəŋga} `eat all kinds of things').
+ 
+ 
+ Fourth, Stau and Khroskyabs languages share several lexical isoglosses which distinguish them from Rgyalrong languages, as illustrated by the data in Table \ref{tab:lexicon}. In all these examples Khroskyabs and Stau differ from Japhug (and other Sino-Tibetan languages) and are clearly innovating. In the case of nouns like \ipa{mkʰə}  smoke', the innovation is the replacement of the simple root by a compound comprising the original root and another element (fire+smoke $\rightarrow$ smoke, a well-attested unidirectional semantic change, see \citealt{urban11semantic}).
+
+  \begin{table}[h]
+  \caption{Potential lexical innovations} \label{tab:lexicon} \centering
+ \begin{tabular}{llllll}
+ \toprule
+ &	Stau &	Khroskyabs &	Japhug &	\\	
+  \midrule
+heart &	\ipa{zjar}  &	\ipa{sjɑ̂r} &	\ipa{tɯ-sni} &	\\	
+smoke  &	\ipa{mkʰə} &	\ipa{mkʰə́} &	\ipa{tɤ-kʰɯ} &	\\	
+be big  &	\ipa{cʰe} &	\ipa{cʰæ̂} &	\ipa{wxti} &	\\	
+bread  &	\ipa{ləkʰi} &	\ipa{lækʰí} &	\ipa{qajɣi} &	\\	
+writing  &	\ipa{tɕədə} &	\ipa{dʑədə́} &	\ipa{tɤscoz} &	\\	
+wind  &	\ipa{χpərju} &	\ipa{χpə̂rju    } &	\ipa{qale} &	\\	
+experience  &	\ipa{zdar} &	\ipa{zdɑ̂r} &	\ipa{rɲo} &	\\	
+skin  &	\ipa{tɕədʑa} &	\ipa{dʑədʑɑ̂} &	\ipa{tɯ-ndʐi} &	\\	
+water  &	\ipa{ɣrə} &	\ipa{jdə̂} &	\ipa{tɯ-ci} &	\\
+general classifier  &	\ipa{ə-lɞ} &	\ipa{ə̂-lo} &	\ipa{tɯ-rdoʁ} &	\\	
+human classifier  &	\ipa{a-ʁi} &	\ipa{ə̂-ʁæi} &	\ipa{tɯ-rdoʁ} &	\\	
+\bottomrule
+\end{tabular}
+\end{table}
+
+Stau and Khroskyabs are also characterized by a series of retentions not shared by Rgyalrong languages. Although these do not provide evidence for the Stau-Khroskyabs branch, they are nevertheless worth mentioning.
+
+First, Stau and Khroskyabs have two distinct roots for `year', one with the numeral prefixes (\ipa{--fku}) and the other in year ordinals (\ipa{--və}). Wobzi Khroskyabs \ipa{--dju} corresponds to Thugsrjechenbo \ipa{--dɣu} and is related to Stau \ipa{--fku} (the velar stop underwent lenition in Khroskyabs languages). Japhug and other Rgyalrong languages, on the other hand, have the root \ipa{--xpa} / \ipa{--pa} everywhere. 
+
+A root suppletion in the noun `year' cognate with the one in Khroskyabs and Stau is found in Lolo-Burmese and Naish (see \citealt{jacques.michaud11naish}), showing that Rgyalrong languages are innovative here.
+
+  \begin{table}[h]
+  \caption{Year ordinals in Rgyalrongic languages} \label{tab:year} \centering
+ \begin{tabular}{llllll}
+ \toprule
+ & 	Stau & 	Khroskyabs & 	Japhug & 	\\	
+ \midrule
+one year & 	\ipa{e-fku} & 	\ipa{ə̂-dju } & 	\ipa{tɯ-xpa} & 	\\	
+two years & 	\ipa{ɣnə-fku} & 	\ipa{jnæ̂-dju } & 	\ipa{ʁnɯ-xpa} & 	\\	
+three years & 	\ipa{xsɞ-fku} & 	\ipa{çsô-dju } & 	\ipa{χsɯ-xpa} & 	\\	
+ \midrule
+last year & 	\ipa{javə} & 	\ipa{aχpî} & 	\ipa{japa} & 	\\	
+this year & 	\ipa{pəvə} & 	\ipa{pîvi} & 	\ipa{ɣɯjpa} & 	\\	
+%next year & 	\ipa{sevə} & 	\ipa{fsǽpi} & 	\ipa{fsaqhe} & 	\\	
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Second, Khroskyabs and Stau preserve the prohibitive dental prefix (\ipa{tə--} in Wobzi \citealt[130-1]{lai13affixale}, \ipa{di--} in Stau) that does not exist in Rgyalrong languages (which instead have a prohibitive form \ipa{ma--}).
+
+Third, orientation prefixes are placed \textit{before} the negation in Stau and Khroskyabs, while they appear after it in Rgyalrong languages. Since the order negation-orientation is also found in related languages such as Tangut and Pumi (\citealt{jacques11tangut.verb}), Rgyalrong languages are most probably innovative here.
+
+\bibliographystyle{linquiry2}
+\bibliography{bibliogj}
+\end{document}
