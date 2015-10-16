@@ -99,13 +99,15 @@
 \newcommand{\stat}{\textsc{stat}}
 \newcommand{\topic}{\textsc{top}}
 \newcommand{\volit}{\textsc{vol}}
-
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
 \newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
 \newcommand{\tinynb}[1]{\tiny#1}
+\usepackage{multicol}
 \begin{document}
 
-\title{Exercices (marquage et alignement)}
+\title{Marquage et alignement)}
 \author{Guillaume Jacques\\Anton Antonov}
 \maketitle
 
@@ -157,6 +159,45 @@ fille \textsc{dem} ??? pain \textsc{pfv-nmls}:S/A-être.brûlé \textsc{dem} \te
 \glt La fille donna les (morceaux de) pain brûlés au pâtre.
 \end{exe}
 
+\begin{landscape}
+
+\begin{table}[H]
+\caption{Japhug transitive and intransitive paradigms}\label{tab:japhug.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{\sigc{}-a}   & 	 \ipa{\sigc{}-a-ndʑi} & 	 \ipa{\sigc{}-a-nɯ} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{ta-\siga{}} & 	\ipa{ta-\siga{}-ndʑi} & 	\ipa{ta-\siga{}-nɯ} & 	\multicolumn{3}{c|}{ \ipa{\siga{}-tɕi}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\siga{}-ji}}  & 	\grise{} \\	
+\cline{1-10}
+\textsc{2sg} & 	\ipa{kɯ-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\sigc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & 	\ipa{kɯ-\siga{}-a-ndʑi} & 	\ipa{kɯ-\siga{}-tɕi} & 	\ipa{kɯ-\siga{}-ji} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-ndʑi}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} & 	\ipa{kɯ-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-nɯ}} & 	\grise{} \\	
+\hline
+\textsc{3sg} &  	\ipa{wɣɯ́-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\sigc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  	\ipa{wɣɯ́-\siga{}-a-ndʑi} & 	 \ipa{wɣɯ́-\siga{}-tɕi} & 		\ipa{wɣɯ́-\siga{}-ji} & 	\ipa{tɯ́-wɣ-\siga{}} & 	\ipa{tɯ́-wɣ-\siga{}-ndʑi} & 	\ipa{tɯ́-wɣ-\siga{}-nɯ} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-ndʑi} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  	\ipa{wɣɯ́-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-nɯ} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &	\ipa{wɣɯ́-\siga{}} & 	\ipa{wɣɯ́-\siga{}-ndʑi} & 	\ipa{wɣɯ́-\siga{}-nɯ} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\siga{}-a}&\ipa{\siga{}-tɕi}&\ipa{\siga{}-ji}&\ipa{tɯ-\siga{}}&\ipa{tɯ-\siga{}-ndʑi}&\ipa{tɯ-\siga{}-nɯ}&\ipa{\siga{}}&\ipa{\siga{}-ndʑi} &\ipa{\siga{}-nɯ}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+
+\begin{multicols}{2}
 
 \section{Sahaptien}
 
@@ -217,6 +258,9 @@ et=\textsc{1sg} \textsc{1sg}:??? \textsc{obv}-voir-\textsc{passé} femme-??? \\
 et=\textsc{1sg} \textsc{1sg}:???  \textsc{3sg}:S/A-voir-\textsc{passé} femme-??? \\
 \glt et la femme m'a vu.
 \end{exe}
+
+\end{multicols}
+\end{landscape}
 
 \end{document}
 
