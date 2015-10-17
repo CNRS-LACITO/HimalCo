@@ -18,7 +18,7 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
-
+\usepackage{tangutex2}
 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
@@ -367,23 +367,35 @@ The verb \ipa{stʰə} is used to refer to movable things, that have been put at 
 \glt Where is my soup? (The louse and the flea, 08)
 \end{exe}
  
-The verb \ipa{xi} is used with objects that are fixed in placed or plants that have grown on the ground, as in 
+The verb \ipa{xi} is used with objects that are fixed in place or plants that have grown on the ground.
 
-\ipa{akəstɞmbej} 	\ipa{zgɞrɟu} 	\ipa{qʰi} 	\ipa{nə-xi-sə} 	\ipa{ŋərə} 	\ipa{ŋə-rə} 
+\begin{exe}
+\ex \label{ex:zgorJu}
+\gll
+\ipa{akəstɞmba-j} 	\ipa{zgɞrɟu} 	\ipa{qʰi} 	\ipa{nə-xi-sə} 	\ipa{ŋə-rə} \\
+Akhu.stonba-\textsc{gen} windows near \textsc{pfv}-exist-\textsc{ifr} be-\textsc{sens} \\
+\glt(The big watnut tree) was near Akhustonba's window. (Akhustonba and the walnut tree, 08)
+\end{exe}
 
-%\b	Le grand noyer de son voisin se trouvait près de la fenêtre d'Akustomba. 08
 
+ For animates (humans and animals),  \ipa{ci/ɟi} is employed. It is the only existential verb to be compatible with person marking, in particular in the progressive construction, which combines a non-finite verb form with the existential \ipa{ci/ɟi}, as in (\ref{ex:tea}).
  
-\ipa{ci/ɟi}
+\begin{exe}
+\ex \label{ex:tea}
+\gll \ipa{ŋa} 	\ipa{təqʰi} 	\ipa{tɕa} 	\ipa{zɮdə-sə} 	\ipa{ci-ã} \\
+\textsc{1sg} here tea boil-\textsc{nmlz} exist-\textsc{1sg} \\
+\glt I am boiling some tea here. (Akhu stinba and the horseman, 19)
+\end{exe}
 
-\ipa{tə/də}
-%ɲi tə-pʰa stɔrmə le ndɔ ə́-də As-tu envie de te marier avec lui?
+The verb \ipa{tə/də} is used for all other cases, in particular concepts, but also appears with concrete object which cannot be put into any of the preceding categories.
 
-\ipa{kʰakʰa} 	\ipa{kʰarma} 	\ipa{rdʑi} 	\ipa{ɕatsa} 	\ipa{tə-rə} 	\ipa{ʑəgu} \ipa{ŋaɲɟi} 	\ipa{xi} 	\ipa{rdʑi} 	\ipa{de,} 	\ipa{rdʑi} 	\ipa{de,} 	\ipa{ŋaɲɟi} 	\ipa{aʑow} 	\ipa{taˠtaˠ} 	\ipa{χa} 	\ipa{kɔ-rə} 
-
-
-%\b	Même s'il y avait beaucoup de traces de bétail,
-%\b	les traces de notre mdzo, il les reconnaissait. 22-23
+\begin{exe}
+\ex \label{ex:kharma}
+\gll
+\ipa{kʰakʰa} 	\ipa{kʰarma} 	\ipa{rdʑi} 	\ipa{ɕatsa} 	\ipa{tə-rə} 	\ipa{ʑəgu} \ipa{ŋaɲɟi} 	\ipa{xə-j} 	\ipa{rdʑi} 	\ipa{de,} 	\ipa{ŋaɲɟi} 	\ipa{aʑɔ-w} 	\ipa{taˠtaˠ} 	\ipa{χa} 	\ipa{kɔ-rə} \\
+other animals footprints many exist-\textsc{sens} however \textsc{1pl:gen} hybrid.tak-\textsc{gen} footprints \textsc{dem} \textsc{1pl:gen} mother's.brother-\textsc{erg} clearly understand understand-\textsc{sens} \\
+\glt Although there were footprints of many other animals, our uncle could distinguish the footprints of our hybrid yak. (The hybrid yak, 22-23)
+\end{exe}
 
  
  \section{Noun phrase}
@@ -408,7 +420,7 @@ nomad.dog very big one-\textsc{cl} exist:\textsc{anim}-\textsc{sens}\\
 
 
 \subsection{Case} 
-There are five case postpositions in Stau: the ergative \ipa{--w}, the genitive \ipa{--j}, the instrumental \ipa{--kʰa}, the dative \ipa{--gi} and two locatives \ipa{--tɕʰa} and \ipa{--ʁa}.
+There are five case postpositions in Stau: the ergative \ipa{--w}, the genitive \ipa{--j}, the instrumental \ipa{--kʰa}, the dative \ipa{--gi}, the locative/superessive \ipa{--tɕʰa} and the allative \ipa{--ʁa}.
 
 
 The ergative and the genitive merge with the last word of the preceding noun phrase, and the regular vowel fusion rules seen in Table \ref{tab:alternation} apply. Table \ref{tab:alternation.noun} presents examples of ergative and genitive forms of some common nouns.
@@ -434,7 +446,7 @@ The first and second person pronouns (\ipa{ŋa} \textsc{1sg}, \ipa{ɲə} \textsc
 \textsc{1sg} first shoot-\textsc{1sg$\rightarrow$3} \textsc{pfv}-say-\textsc{ifr} be-\textsc{sens}\\
 \gll \ipa{tɕʰəge,} 	\ipa{waqi-w} 	\ipa{zəŋɞ} 	\ipa{tə-f-qe-sə} 	\ipa{ŋə-rə.} 	\\
 then rabbit-\textsc{erg} first \textsc{pfv-inv}-shoot-\textsc{ifr} be-\textsc{sens}\\
-\glt He said `I will shoot first'. Then, the rabbit shot him first. (the rabbit and the tiger, 21-22)
+\glt He said `I will (you) shoot'. Then, the rabbit shot him first. (the rabbit and the tiger, 21-22)
 \end{exe}
 
 Some morphologically intransitive verbs, such as \ipa{rga} `like' take an ergative argument, as in \ref{ex:rga}, where the experiencer is in the ergative, and the stimulus in the dative case, but the verb only agrees with the argument marked in the ergative. Thus, in example (\ref{ex:rga}), the verb is zero-marked, because the ergatively marked argument \ipa{tə-w} is third person (see Table \ref{tab:open.intr}).
@@ -849,7 +861,7 @@ First, Stau and Khroskyabs have two distinct roots for `year', one with the nume
 
 A root suppletion in the noun `year' cognate with the one in Khroskyabs and Stau is found in Lolo-Burmese and Naish (see \citealt{jacques.michaud11naish}), showing that Rgyalrong languages are innovative here.
 
-  \begin{table}[h]
+  \begin{table}[H]
   \caption{Year ordinals in Rgyalrongic languages} \label{tab:year} \centering
  \begin{tabular}{llllll}
  \toprule
@@ -871,6 +883,25 @@ Second, Khroskyabs and Stau preserve the prohibitive dental prefix (\ipa{tə--} 
 
 Third, orientation prefixes are placed \textit{before} the negation in Stau and Khroskyabs, while they appear after it in Rgyalrong languages. Since the order negation-orientation is also found in related languages such as Tangut and Pumi (\citealt{jacques11tangut.verb}), Rgyalrong languages are most probably innovative here.
 
-\bibliographystyle{linquiry2}
+Although Stau clearly belongs to the Rgyalrongic branch of Sino-Tibetan, it presents interesting commonalities with Tangut, in particular the case marking system, as shown in Table \ref{tab:tangut}.
+
+\begin{table}[H]
+\caption{Case markers in Stau, Khroskyabs and Tangut}\label{tab:tangut} \centering
+\begin{tabular}{lllllll}
+\toprule
+Stau && Khroskyabs && Tangut & \\
+\midrule
+\ipa{--w} & ergative && \mo{5880} \ipa{ŋwu²} & instrumental\\
+\ipa{--j} & genitive &\ipa{--ji} &genitive \mo{1139} \ipa{.jij¹} & genitive, antiergative\\
+\ipa{--ʁa} & allative & \ipa{--ʁɑ} & locative & \mo{5856} \ipa{ɣa²} & locative\\
+\ipa{--tɕʰa} & locative & \mo{0089} \ipa{tɕʰjaa¹}  &locative\\
+\ipa{--kʰa} & instrumental & \mo{5993} \ipa{kʰa¹}  &in the middle of \\
+\toprule
+\end{tabular}
+\end{table}
+
+Among these marker, the only potential cognate in Core Rgyalrong languages is the locative \ipa{--i} found in Situ (which appears in the predicative possessive construction, see \citealt[328]{linxr93jiarongen}). This is one area where Stau is more conservative than Core Rgyalronglanguages, which have borrowed their ergative and genitive markers from Tibetan (see \citealt{jacques15comparative}). 
+
+\bibliographystyle{unified}
 \bibliography{bibliogj}
 \end{document}
