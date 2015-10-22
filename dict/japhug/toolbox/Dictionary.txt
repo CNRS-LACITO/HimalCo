@@ -41570,10 +41570,12 @@ l
 \wav vt-fse
 \wav vt-fse2
 \ps vt
+\sn 1
 \pdl dir 
 \pdv thɯ-
 \ge aiguiser 
 \gn 磨刀 
+\sn 2
 \pdl dir 
 \pdv tɤ-
 \ge frotter
@@ -41588,7 +41590,7 @@ l
 \xn 我搓了一下手
 \xv ldɯɣɯ tha-fse
 \xn 他磨了弯刀
-\xv tɯrpa thaf-se
+\xv tɯrpa tha-fse
 \xn 他磨了斧头
 \se rɤfse
 \ps vi
@@ -47223,6 +47225,8 @@ l
 \xv ɯ-mci to-lɤt
 \xn 他吐了口水
 \sn 2
+\pdl dir
+\pdv tɤ-
 \ge tirer
 \gn 射
 \xv ɕɤmuɣdɯ to-lɤt 
@@ -47230,6 +47234,8 @@ l
 \xv tɯdi to-lɤt 
 \xn 他射了箭
 \sn 3
+\pdl dir
+\pdv tɤ-
 \ge frapper
 \gn 打
 \xv ɯ-ku zɯ tɤŋkhɯt to-lɤt
@@ -47239,6 +47245,10 @@ l
 \xv tɯ-qartsɯ ta-lɤt
 \xn （马）踢了一脚
 \sn 4
+\pdl dir
+\pdv pɯ-
+\pdl dir
+\pdv kɤ-
 \ge mettre, ajouter
 \gn 放（进），加
 \xv tsha pjɤ-lɤt, ko-lɤt
@@ -47248,6 +47258,8 @@ l
 \xv tɯ-ci ko-lɤt
 \xn （在菜汤里）加了水
 \sn 5
+\pdl dir
+\pdv tɤ-
 \ge appliquer
 \gn 涂
 \xv tɤ-mthɯm ɯ-taʁ tsha to-lɤt (=to-mar)
@@ -47279,6 +47291,8 @@ l
 \xv sɤcɯ pjɤ-lɤt-ndʑi
 \xn 他们俩锁了门
 \sn 7
+\pdl dir
+\pdv kɤ-
 \ge tomber (pluie, neige etc)
 \gn 下（雨、雪等）
 \xv tɯmɯ ko-lɤt 
@@ -47290,6 +47304,8 @@ l
 \xv sɤrwa cho-lɤt, tha-lɤt
 \xn 下了冰雹
 \sn 8
+\pdl dir
+\pdv thɯ-
 \ge mettre bas
 \gn 生崽、开（花）
 \xv paχtsa chɤ-lɤt 
@@ -47312,7 +47328,7 @@ l
 \ge ramener
 \gn 送回
 \xv kha mɤɕtʂa ɣɯ-jɤ́-wɣ-lat-a
-\xn 他把我送回加了
+\xn 他把我送回家了
 \cf nɤscɤlɤt
 \sn 11
 \ge verbe léger
@@ -62545,6 +62561,8 @@ l
 \cf sɤpa
 \hbf 1356
 \se ɯ-pɯ,pa
+\pdl dir 
+\pdv tɤ-
 \ge conserver
 \gn 保管
 \xv laχtɕha ɯ-pɯ tɤ-pe
@@ -62553,6 +62571,10 @@ l
 \xn 牛奶不能长时间保存，不然就会腥(变质)
 \xv nɤ-jaʁ ɯ-pɯ ma-tɤ-tɯ-nɯ-pe
 \xn 你不要不管，要帮一下忙
+\lf Component1 = ɯ-pɯ
+\ps np
+\lf Component2 = pa
+\ps vt
 \se nɯpa
 \ps vt
 \pdl dir
@@ -72585,11 +72607,18 @@ l
 \ng serie
 \xv kɤ-rɤma to-stu
 \xn 他工作很努力
+\se stu,mbat
+\pdl dir 
+\pdv tɤ-
 \un 同|fv{mbat}连用时构成连动式谓语
 \xv stu-a mbat-a
 \xn 我会努力的
 \xv tɤ-stu tɤ-mbat je
 \xn 你努力吧
+\lf Component1 = stu
+\ps vs
+\lf Component2 = mbat
+\ps vs
 \dt 26/Aug/2015
 
 \lx _stu²
