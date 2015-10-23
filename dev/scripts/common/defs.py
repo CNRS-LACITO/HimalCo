@@ -71,3 +71,40 @@ GRAMMAR_NA = r"""
     rfGroup: {<rf><xvGroup>+}
     seGroup: {<se><sf>*<hm><ph><bw><etGroup><psGroup>}
     """
+GRAMMAR_DOC = r"""
+    lexfunc: {<lf>(<lv><ln|le>*)*}
+    example: {<rf|xv><xn|xe>*}
+    sense:   {<sn><ps><pn|gv|dv|gn|gp|dn|rn|ge|de|re>*<example>*<lexfunc>*}
+    record:  {<lx><hm><sense>+<dt>}
+    """
+GRAMMAR_STD = r"""
+    headword: {<lx><hm><lc><se><ph><ps><sn>}
+    definitions: {<dv|gv|de|ge|dn|gn|dr|gr>*}
+    identity: {<sc>}
+    example: {<rf|xv><xe|xn|xr>*}
+    usage: {<uv|ue|un|ur>*}
+    network: {<sy><an><mr><cf><ce|cn|cr>*<va>}
+    origins: {<bw><et>}
+    paradigms: {<pd><pdl><pdv|pde|pdr>}
+    categories: {<sd>}
+    references: {<pc>}
+    notes: {<nt|np|ng|nq>}
+    misc: {<st|dt>}
+    record: {<headword><definitions>*<identity>*<example>*<usage>*<network>*<origins>*<paradigms>*<categories>*<references>*<notes>*<misc>*}
+    """
+GRAMMAR_CUSTOM = r"""
+    headword: {<lx>+<wav>*<a>*<ps>}
+    subentry: {<se>+<wav>*<ps>*}
+    definitions: {<dv|gv|de|ge|dn|gn|dr|gr>*}
+    identity: {<sc>}
+    example: {<rf|xv><xe|xn|xr>*}
+    usage: {<uv|ue|un|ur>*}
+    network: {<sy>*<an>*<mr>*<cf>*<ce|cn|cr>*<va>*}
+    origins: {<bw>*<et>*}
+    paradigms: {<pd>*<pdl>*<pdv|pde|pdr>*<_1s|_1p|_2s|_2p|_3s|_3p|_1d|_1e|_4s|_3d>*}
+    categories: {<sd>}
+    references: {<pc>}
+    notes: {<nt|np|ng|nq>}
+    misc: {<st|dt>}
+    record: {<headword>+<subentry>*<definitions>*<paradigms>*<identity>*<example>*<usage>*<network>*<origins>*<categories>*<references>*<notes>*<misc>*}
+    """
