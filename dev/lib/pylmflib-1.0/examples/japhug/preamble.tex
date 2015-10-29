@@ -1,5 +1,5 @@
 \documentclass[twoside,11pt]{article}
-\title{Dictionnaire Japhug-chinois-français\\\zh{嘉-汉-法词典}}
+\title{Dictionnaire Japhug-chinois-français\\\zh{嘉绒-汉-法词典\\ Version 1.0}}
 \author{Guillaume Jacques\\\zh{向柏霖}}
 
 \usepackage{pifont}
@@ -24,7 +24,7 @@
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} % API toujours en italique
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU} % (ou SimSun) pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun} % (ou SimSun) pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newfontfamily\mx[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{ArialUnicodeMS} % pour les questions
 \newcommand{\nq}[1]{{\mx #1}}
@@ -34,14 +34,44 @@
 \newcommand{\topic}{\textsc{dem}}
 \newcommand{\tete}{\textsuperscript{\textsc{head}}}
 \newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\newcommand{\ital}[1]{{\normalfont\textit{#1}}}
+\newcommand{\caps}[1]{{\normalfont\textsc{#1}}}
 \XeTeXlinebreaklocale 'zh' % 使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt % CIRCG
- \usepackage{fancyhdr}
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyheadoffset{3.4em}
+\fancyhead[LE,LO]{\rightmark}
+\fancyhead[RE,RO]{\leftmark}
 \usepackage[dvipdfmx,xetex,bigfiles,final,activate=onclick,deactivate=onclick,transparent,passcontext]{media9}
 \usepackage{graphicx}
 \usepackage{gb4e}
 \usepackage{vmargin}
 % {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
-\setmarginsrb{2cm}{1cm}{1.5cm}{1cm}{0.5cm}{1cm}{0.5cm}{1cm}
+\setmarginsrb{2.5cm}{2cm}{2.5cm}{2cm}{1cm}{2cm}{1cm}{2cm}
+
+% \usepackage[x11names]{xcolor}
+% \colorlet{headcolor}{blue}% couleur des têtes d'entrée
+\usepackage{hanging}
+\newcommand{\lx}[1]{{\Large\bfseries#1}}
+%%%%% Environnememt pour chaque entrée %%%%%
+\usepackage{totcount}
+\newcounter{entrycounter}\setcounter{entrycounter}{0}\regtotcounter{entrycounter}%Compteur du nombre d'entrées
+\usepackage{hanging}
+\newenvironment{entry}[1]{% l'environnement à 1 argument, la tête d'entrée
+\stepcounter{entrycounter}% on incrémente le compteur
+\hangpara{1em}{1}% après la ligne 1, chaque ligne est indentée d'1em, ce que fait que la première ligne apparaît avec un retrait
+\markboth{#1}{#1}% on marque les entrées pour pouvoir les insérer dans les en-têtes de page
+\addcontentsline{toc}{subsection}{#1}% chaque entrée est ajoutée aux signets pdf comme étant une sous-section
+\lx{#1}\hspace{.5em}% on imprime la tête d'entrée avec la mise en forme lx et on ajoute de l'espace à sa gauche
+}{\par\smallskip}% on change de paragraphe et on laisse un peu d'espace avant l'entrée suivante
+
+\newenvironment{subentry}[1]{% l'environnement à 1 argument, la tête d'entrée
+%\stepcounter{entrycounter}% on incrémente le compteur
+\hangpara{1em}{1}% après la ligne 1, chaque ligne est indentée d'1em, ce que fait que la première ligne apparaît avec un retrait
+%\markboth{#1}{#1}% on marque les entrées pour pouvoir les insérer dans les en-têtes de page
+\addcontentsline{toc}{subsection}{#1}% chaque entrée est ajoutée aux signets pdf comme étant une sous-section
+\hspace{.5em}$\blacksquare$#1\hspace{.5em}% on imprime la tête d'entrée avec la mise en forme lx et on ajoute de l'espace à sa gauche
+}{\par\smallskip}% on change de paragraphe et on laisse un peu d'espace avant l'entrée suivante
+
+\usepackage{changepage}

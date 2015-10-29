@@ -158,8 +158,8 @@ def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to
                         tex_file.write(lmf2tex(lexical_entry, font))
                         if len(paradigms) != 0:
                             tex_file.write(insert_references(lexical_entry))
-                        tex_file.write("\\lhead{\\firstmark}" + EOL)
-                        tex_file.write("\\rhead{\\botmark}" + EOL)
+                         # tex_file.write("\\lhead{\\firstmark}" + EOL)
+                         # tex_file.write("\\rhead{\\botmark}" + EOL)
                         # Separate lexical entries from each others with a blank line
                         tex_file.write(EOL)
                         # Handle subentries

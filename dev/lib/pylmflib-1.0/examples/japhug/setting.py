@@ -49,13 +49,23 @@ def format_lexeme(lexical_entry, font):
         # Remove last punctuation
         lexeme = lexeme.rstrip(",")
         # Apply font
-        lexeme = font[VERNACULAR](lexeme)
+        # lexeme = font[VERNACULAR](lexeme)
     else:
-        lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
+        if lexical_entry.is_subentry():
+            lexeme = font[VERNACULAR](lexical_entry.get_lexeme())
+        else:
+            lexeme = ""
     if lexical_entry.is_subentry():
-        result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+        # result += "\\subparagraph{\\dollar\\blacksquare\\dollar "
+		# result += "\\begin{adjustwidth}{1em}{} "
+		result += "\\begin{subentry}{"
+        # print "totototototototototototototo"
     else:
-        result += "\\vspace{0.5cm} \\paragraph{\\hspace{-0.5cm} "
+        if len(lexical_entry.get_components()) != 0:
+	        result += "\\begin{entry}{"
+        else:
+            result += "\\begin{entry}{" + lexical_entry.get_lexeme() # + "}"
+        # result += "\\vspace{0.5cm} \\paragraph{\\hspace{-0.5cm} "
     if lexical_entry.get_homonymNumber() is not None:
         # Add homonym number to lexeme
         lexeme += " \\textsubscript{" + str(lexical_entry.get_homonymNumber()) + "}"
@@ -71,7 +81,8 @@ def format_lexeme(lexical_entry, font):
         result += " / " + font[VERNACULAR](form)
     result += "} \\hypertarget{" + tex.format_uid(lexical_entry, font) + "}{}" + EOL
     if not lexical_entry.is_subentry():
-        result += "\markboth{" + lexeme + "}{}" + EOL
+        # result += "\markboth{" + lexeme + "}{}" + EOL
+		pass
     if len(lexical_entry.get_components()) != 0:
         # Add components part of speech
         result += "pc("
@@ -195,7 +206,7 @@ def format_paradigms(sense, font):
 def lmf2tex(lexical_entry, font):
     tex_entry = ""
     if lmf2tex.is_first_entry:
-        tex_entry += "\\setlength{\\parskip}{-0.5cm}" + EOL
+        # tex_entry += "\\setlength{\\parskip}{-0.5cm}" + EOL
         lmf2tex.is_first_entry = False
     # lexeme, id and phonetic variants
     tex_entry += format_lexeme(lexical_entry, font)
@@ -249,5 +260,9 @@ def lmf2tex(lexical_entry, font):
     tex_entry = tex.handle_reserved(tex_entry)
     tex_entry = tex.handle_fv(tex_entry, font)
     tex_entry = tex.handle_fn(tex_entry, font)
+    if not lexical_entry.is_subentry():
+	    tex_entry += "\\end{entry}"
+    else:
+        tex_entry += "\\end{subentry}"
     return tex_entry + EOL
 lmf2tex.is_first_entry = True

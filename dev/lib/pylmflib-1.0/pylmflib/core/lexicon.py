@@ -253,6 +253,8 @@ class Lexicon():
             return 0
         # Create a list of tuples associating items and their lexical entries: [(item1, entry1), (item2, entry2), ...]
         items_and_entries = [(items(lexical_entry), lexical_entry) for lexical_entry in self.lexical_entry]
+        amontrer = "taille du lexique = " + str(len(items_and_entries))
+        print amontrer
         if sort_order is None:
             # Sort given items in alphabetical order
             items_and_entries.sort()
@@ -264,6 +266,10 @@ class Lexicon():
             items_and_entries.sort(cmp=comparison, key=lambda l: l[0])
         # Retrieve lexical entries to create a sorted list
         sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
+        amontrer = "taille du lexique trie = " + str(len(sorted_entries))
+        print amontrer
+        # for se in sorted_entries:
+            # print se
         # Delete the old list of lexical entries and set the new one
         del self.lexical_entry[:]
         self.lexical_entry = sorted_entries

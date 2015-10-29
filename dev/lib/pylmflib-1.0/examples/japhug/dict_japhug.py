@@ -32,7 +32,8 @@ lexical_resource.get_lexicon("japhug").sort_lexical_entries(items=items, sort_or
 pylmflib.write_xml_lmf(lexical_resource, user_path + "japhug/result/dictionary.xml")
 
 # Write LaTeX file
-pylmflib.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/preamble.tex", introduction=user_path + "japhug/introduction.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
+# pylmflib.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/preamble.tex", introduction=user_path + "japhug/introduction.tex", lmf2tex=lmf2tex, items=items, sort_order=xml_order)
+pylmflib.write_tex(lexical_resource, user_path + "japhug/result/dictionary.tex", preamble=user_path + "japhug/preamble.tex", introduction=user_path + "japhug/introduction.tex", lmf2tex=lmf2tex, items=items)
 
 # Write MDF file
 pylmflib.write_mdf(lexical_resource, user_path + "japhug/result/dictionary.txt")
