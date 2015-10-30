@@ -1,4 +1,4 @@
-\documentclass[twoside,11pt]{article}
+\documentclass[twoside,11pt]{book}
 \title{Dictionnaire Japhug-chinois-français\\\zh{嘉绒-汉-法词典\\ Version 1.0}}
 \author{Guillaume Jacques\\\zh{向柏霖}}
 
@@ -48,7 +48,7 @@
 \usepackage{gb4e}
 \usepackage{vmargin}
 % {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
-\setmarginsrb{2.5cm}{2cm}{2.5cm}{2cm}{1cm}{2cm}{1cm}{2cm}
+\setmarginsrb{3cm}{2cm}{2cm}{2cm}{1cm}{2cm}{1cm}{2cm}
 
 % \usepackage[x11names]{xcolor}
 % \colorlet{headcolor}{blue}% couleur des têtes d'entrée
@@ -70,8 +70,7 @@
 %\stepcounter{entrycounter}% on incrémente le compteur
 \hangpara{1em}{1}% après la ligne 1, chaque ligne est indentée d'1em, ce que fait que la première ligne apparaît avec un retrait
 %\markboth{#1}{#1}% on marque les entrées pour pouvoir les insérer dans les en-têtes de page
-\addcontentsline{toc}{subsection}{#1}% chaque entrée est ajoutée aux signets pdf comme étant une sous-section
+\addcontentsline{toc}{subsubsection}{#1}% chaque entrée est ajoutée aux signets pdf comme étant une sous-section
 \hspace{.5em}$\blacksquare$#1\hspace{.5em}% on imprime la tête d'entrée avec la mise en forme lx et on ajoute de l'espace à sa gauche
 }{\par\smallskip}% on change de paragraphe et on laisse un peu d'espace avant l'entrée suivante
 
-\usepackage{changepage}
