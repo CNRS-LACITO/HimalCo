@@ -171,6 +171,12 @@
 \CharStyle
 \-mkr
 
+\+mkr cd
+\nam *
+\lng English
+\mkrOverThis lx
+\-mkr
+
 \+mkr ce
 \nam Cross-ref. gloss (E)
 \desc Gives the English gloss(es) for the vernacular lexeme referenced by the preceding \cf field.
