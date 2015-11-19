@@ -27,6 +27,7 @@ print lexical_resource.get_bibliographic_citation()
 # Classify lexicon
 xml_order = pylmflib.read_sort_order(user_path + "japhug/sort_order.xml")
 lexical_resource.get_lexicon("japhug").sort_lexical_entries(items=items, sort_order=xml_order)
+lexical_resource.get_lexicon("japhug").sort_homonym_numbers(items=items)
 
 # Write XML LMF file
 pylmflib.write_xml_lmf(lexical_resource, user_path + "japhug/result/dictionary.xml")
