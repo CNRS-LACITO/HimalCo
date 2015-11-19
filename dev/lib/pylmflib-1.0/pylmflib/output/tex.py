@@ -533,17 +533,13 @@ def format_usage_notes(sense, font):
     """
     result = ""
     for usage in sense.find_usage_notes(language=config.xml.vernacular):
-        result += "\\usage{} " + usage + " "
-        #result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
+        result += "\\textit{VerUsage:} " + font[VERNACULAR](usage) + " "
     for usage in sense.find_usage_notes(language=config.xml.English):
-        result += "\\usage{} " + usage + " "
-        #result += "\\textit{Usage:} " + usage + " "
+        result += "\\textit{Usage:} " + usage + " "
     for usage in sense.find_usage_notes(language=config.xml.national):
-        result += "\\usage{} " + font[NATIONAL](handle_font(usage)) + " "
-        #result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
+        result += "\\textit{" + font[NATIONAL](handle_font(usage)) + "} "
     for usage in sense.find_usage_notes(language=config.xml.regional):
-        result += "\\usage{} " + usage + " "
-        #result += "\\textit{[" + font[REGIONAL](usage) + "]} "
+        result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
 def format_encyclopedic_informations(sense, font):
@@ -602,14 +598,14 @@ def format_related_forms(lexical_entry, font, language=None):
     """
     result = ""
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
-        result += "\\synonym{} "
+        result += "\\textit{Syn:} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:
             result += font[VERNACULAR](related_form.get_lexeme())
         result += ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
-        result += "\\antonym{} "
+        result += "\\textit{Ant:} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:
@@ -619,9 +615,9 @@ def format_related_forms(lexical_entry, font, language=None):
         result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
         if language == config.xml.English:
-            result += "\\refentry{} "
+            result += "\\textit{See:} "
         else:
-            result += "\\refentry{} "
+            result += "\\textit{Voir :} "
         if related_form.get_lexical_entry() is not None:
             result += format_link(related_form.get_lexical_entry(), font)
         else:
@@ -673,7 +669,7 @@ def format_etymology(lexical_entry, font):
     """
     result = ""
     if lexical_entry.get_etymology() is not None:
-        result += "\\etymology{} \\textbf{" + lexical_entry.get_etymology() + "} "
+        result += "\\textit{Etym:} \\textbf{" + lexical_entry.get_etymology() + "} "
     if lexical_entry.get_etymology_gloss() is not None:
         result += u"\u2018" + lexical_entry.get_etymology_gloss() + u"\u2019" + ". "
     return result
