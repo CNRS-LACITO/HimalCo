@@ -1,4 +1,5 @@
 \_sh v3.0  583  MDF 4.0
+\_DateStampHasFourDigitYear
 
 \lx aɕi
 \wav adv-aCi
@@ -4333,15 +4334,6 @@
 \xn 他很痛，不停地呻吟
 \dt 30/Aug/2015
 
-\lx jɯnbalazɯ
-\ps cnj
-\ge non seulement... mais... 
-\gn 既……又…… 
-\et jin.pa.la
-\xv jisŋi ɲɯ-jɯm jɯnbalazɯ, qale ɣɤʑu 
-\xn 今天既是晴天又刮风
-\dt 10/Dec/2014
-
 \lx jinde
 \ps n
 \ge maintenant 
@@ -4563,6 +4555,15 @@
 \ge épouse de sprulsku 
 \gn 活佛的妻子 
 \et jum
+
+\lx jɯnbalazɯ
+\ps cnj
+\ge non seulement... mais... 
+\gn 既……又…… 
+\et jin.pa.la
+\xv jisŋi ɲɯ-jɯm jɯnbalazɯ, qale ɣɤʑu 
+\xn 今天既是晴天又刮风
+\dt 10/Dec/2014
 
 \lx jɯxɕo
 \wav adv-jWfCo
@@ -8039,7 +8040,6 @@
 \xv lɯznɤlɯz ʑo ɲɯ-rɤma
 \xn 他不慌不忙地做事
 \dt 30/Aug/2015
- 
 
 \lx lwɤrlwɤr
 \ps idph.2
@@ -10169,6 +10169,11 @@
 \xv japa kɯnɤ nɤ-ɴɢar ɯ-ŋgɯ tɤ-se pɯ-tu nétɕi
 \xn 去年你的痰也有痰对吧
 \dt 30/Jan/2015
+
+\lx ni
+\ps det 
+\ge duel
+\gn 双数
 
 \lx noŋstɤn
 \ps n
@@ -13534,6 +13539,12 @@
 \cf ɴɢɯɴɢli
 \dt 13/May/2014
 
+\lx ra
+\hm 2
+\ps det 
+\ge pluriel
+\gn 复数
+
 \lx raka
 \ps n
 \ge façon dont poussent les cornes (animaux)
@@ -15334,8 +15345,8 @@
 \ps adv
 \ge directement 
 \gn 干脆 
-\xv kɤ-nɤjʁo ntsɯ mɤ-kɯ-ra, rtɤmkɯχsɤl tɤ-ʁndi 
-\xn 你不用总是骂他，干脆打一下
+\xv kɤ-ɕe mɯ́j-tɯ-sɯsɤm ɕti qhe rtɤmkɯχsɤl kɤ-nɯ-rɤʑi
+\xn 你既然不想去，就干脆留在这里
 
 \lx rtɕhɯɣrtɕhɯɣ
 \wav ideo-rtCWG-b
@@ -17136,7 +17147,7 @@
 \ps n
 \ge arbre 
 \gn 树 
-\hbf plante 
+\hbf plante
 
 \lx sijmɤɣ
 \wav n-sijmAG
@@ -18119,7 +18130,6 @@
 \hbf 815 
 \dt 05/May/2014
 
-
 \lx sqhɤthɤlɤɣi
 \wav n-sqhAthAlAGi
 \ps n
@@ -18995,6 +19005,9 @@ l
 \hbf plante2 
 \et ɕiŋ
 \dt 05/May/2012
+
+\lx sɯrɤt
+\cf rɤt
 
 \lx sɯrkɤz
 \wav n-sWrkAz
@@ -22925,8 +22938,8 @@ l
 
 \lx tɕhaʁla
 \ps n
-\ge cour (monastère)
-\gn 院子 （寺庙）
+\ge cour 
+\gn 院子 
 \sy rɟara
 \dt 02/Jul/2014
 
@@ -23276,7 +23289,6 @@ l
 \xv tɕhɯɕɤl-mprɯwa 
 \xn 水晶的念珠
 \dt 06/May/2012
-
 
 \lx tɕhɯɕrɤm
 \ps n
@@ -24663,7 +24675,7 @@ l
 \wav n-tsxAm
 \ps n
 \ge cloison 
-\gn 隔板 
+\gn 板壁
 \hbf 512
 \dt 16/May/2012
 
@@ -26462,6 +26474,7 @@ l
 \xn 喝了酒的人的嘴，瞌睡的人的屁（酒话是心理话）
 \xv nɤ-mtɕhi mɤ-mpɕɤr
 \xn 你讲话很不客气（没有甜言蜜语）
+\cf tɯ-mtɕhi,ɣɤχo
 \dt 24/Aug/2015
 
 \lx tɯ-mtɕhirme
@@ -26469,6 +26482,19 @@ l
 \ge moustaches 
 \gn 胡子，胡须 
 \hbf 86
+
+\lx tɯ-mtɕhi,ɣɤχo
+\pdl dir
+\pdv tɤ-
+\ge fanfaronner
+\gn 说大话
+\xv a-mtɕhi ku-ɣɤχam-a
+\xn 我正在说大话
+\lf Component1 = tɯ-mtɕhi
+\ps np
+\lf Component2 = ɣɤχo
+\ps vt
+\cf tɯ-mtɕhi
 
 \lx tɯmtɕhɯ
 \ps n
@@ -27121,12 +27147,14 @@ l
 \ge une gerbe d'herbe 
 \gn 一捆青草
 
-\lx tɯ-pri
-\ps np
+\lx tɯpri
+\ps n
 \ge message 
 \gn 口信 
 \hbf 680
 \cf znɯxpri
+\xv a-tɯpri jo-lɤt
+\xn 他给我带了口信
 
 \lx tɯpu
 \ps n
@@ -29405,10 +29433,6 @@ l
 \gn 外层 
 \dt 30/May/2013
 
-\lx _sɯxcɯ
-\cf ɯ-lu,cɯ
-\dt 18/Aug/2015
-
 \lx ɯ-lɯtshɤt
 \ps np
 \ge du même âge
@@ -29752,9 +29776,10 @@ l
 
 \lx ɯ-phɯ
 \ps np
-\ge prix à payer 
+\ge prix 
 \gn 价钱 
 \hbf 574
+\cf rɤphɯ
 
 \lx ɯ-phɯl
 \ps np
@@ -30155,7 +30180,10 @@ l
 \xn 他有好名声
 \xv ɯ-ʁle ko-ru tɕe to-nɯŋgumtha
 \xn 他为了得到好名声就照顾他了
+\xv nɤʑo ɯ-ʁle ma-kɤ-tɯ-ru kɯ koŋla tú-wɣ-sɤpe ra
+\xn 不要只顾名声，要干实际的事情
 \cf raʁle
+\cf qale
 \dt 01/Sep/2015
 
 \lx ɯ-ʁlu
@@ -30177,10 +30205,10 @@ l
 \lx ɯ-ʁre
 \wav n-WRre
 \ps np
-\ge respect
-\gn 尊重
-\xv ɯ-ʁre ɣɤʑu (=ɲɯ-ɣɤʁre)
-\xn 他受别人尊重
+\ge respect, prestige, authorité
+\gn 威望
+\xv ɯ-ʁre ɣɤʑu (=ɲɯ-ɣɤʁre), ɯʑo ɯ-ʁre kɯ-tu ci ɲɯ-ŋu
+\xn 他是有威望的人
 \cf saʁre
 \cf naʁre
 \dt 05/Nov/2011
@@ -30660,7 +30688,8 @@ l
 \ge milieu 
 \gn 中间 
 \hbf 708
-\xv ɯ-χcɤl ka-tsɯm
+\xv kɯ-sɤmtshi nɯ kɯ kɯ-rɟaʁ ra tɕhaʁla ɯ-χcɤl ʑo ka-tsɯm
+\xn 领舞者把舞蹈队伍带到了坝子中间
 \et dkʲil
 \dt 17/Sep/2011
 
@@ -30670,7 +30699,7 @@ l
 \ge chapeau (champignon)
 \gn 菌盖
 \xv zdɯmqe nɯnɯra, ɯ-χpoʁ cho ɯ-jɯ nɯra ɯ-grɤl me
-\xn 黑银耳那些没有菌盖也没有干
+\xn 黑银耳那些，看不清楚哪里是盖盖，那里是茎
 \sy tɤ-fkaβ
 \dt 16/May/2013
 
@@ -31119,7 +31148,7 @@ l
 \ge type de sac
 \gn 口袋的一种
 \hbf objet traditionel 
-\xv xsɯxsɯ (khorca) nɯ laχtɕha fkɯm tu-kɤ-fkur ci ŋu, rgali pɯ ɯ-ndʐi nɯ kɯ-mdoʁmdi pjɯ́-wɣ-qaʁ tɕe tɤ-rom tɕe ta-mar ɲɯ́-wɣ-mar pjɯ́-wɣ-χtsɤβ tɕe, nɯ mpɯ ʑo tɕe, ɯ-rme nɯ ɯ-pɕi ɲɯ́-wɣ-ɕthɯz tɕe, ɯ-mɤlɤjaʁ kɯβde ɣɯ ɯ-ndʐi nɯ tɕu ɯ-sɤ-fkur ɯ-ri kú-wɣ-tshoʁ, thaʁthi maʁ nɤ tɯ-ndʐi qase thɯ-kɤ-tɕɤt kú-wɣ-tshoʁ tɕe, nɯ ɯ-sɤ-fkur ŋu. ɯ-mke stu nɯ pjɯ́-wɣ-pri tɕe, nɯ tɤ-fkɯm ɣɯ ɯ-mŋu ɲɯ́-wɣ-βzu ŋu, tɕe nɯtɕu qase ci kú-wɣ-βraʁ tɕe tɤ-fkɯm ɯ-ŋgɯ laχtɕha thɯ́-wɣ-rku tɕe, qase nɯ kɯ ɯ-mŋu nɯ kú-wɣ-sɯ-xtɕɤr ŋu, ɯ-mŋu nɯ ɯ-taʁ pɕoʁ tú-wɣ-ɕthɯz tɕe tú-wɣ-fkur ŋu. 
+\xv xsɯxsɯ (khorca) nɯ laχtɕha fkɯm tu-kɤ-fkur ci ŋu, rgali pɯ ɯ-ndʐi nɯ kɯ-mdoʁmdi pjɯ́-wɣ-qaʁ tɕe tɤ-rom tɕe ta-mar ɲɯ́-wɣ-mar pjɯ́-wɣ-χtsɤβ tɕe, nɯ mpɯ ʑo tɕe, ɯ-rme nɯ ɯ-pɕi ɲɯ́-wɣ-ɕthɯz tɕe, ɯ-mɤlɤjaʁ kɯβde ɣɯ ɯ-ndʐi nɯ tɕu ɯ-sɤ-fkur ɯ-ri kú-wɣ-tshoʁ, thaχthi maʁ nɤ tɯ-ndʐi qase thɯ-kɤ-tɕɤt kú-wɣ-tshoʁ tɕe, nɯ ɯ-sɤ-fkur ŋu. ɯ-mke stu nɯ pjɯ́-wɣ-pri tɕe, nɯ tɤ-fkɯm ɣɯ ɯ-mŋu ɲɯ́-wɣ-βzu ŋu, tɕe nɯtɕu qase ci kú-wɣ-βraʁ tɕe tɤ-fkɯm ɯ-ŋgɯ laχtɕha thɯ́-wɣ-rku tɕe, qase nɯ kɯ ɯ-mŋu nɯ kú-wɣ-sɯ-xtɕɤr ŋu, ɯ-mŋu nɯ ɯ-taʁ pɕoʁ tú-wɣ-ɕthɯz tɕe tú-wɣ-fkur ŋu. 
 \xn |fv{xsɯxsɯ}是装东西的口袋，可以背。把小牛的皮整块剥下来，干了以后，就擦上酥油，搓揉，等到揉得软了，毛向外翻，在四条腿的皮子上系上背带，或者用线制作的背带，或者用剖成的皮绳作背带。在脖颈部位破一条口子，作为口袋的开口，在那里扎一根皮绳，把东西装好后，就用皮绳捆住口子。背的时候，口袋的口子向上。
 
 \lx xʂɤxʂɤt
@@ -31885,6 +31914,15 @@ l
 \xn 已经是第三次了
 \dt 21/May/2014
 
+\lx χsɯskɤl
+\wav cl-XsWskAl
+\ps n
+\ge trois repas
+\gn 三顿
+\xv zama χsɯskɤl nɯ koŋla tu-kɯ-rɯndzɤtshi ra
+\xn 一天三餐要吃好一点
+\dt 04/Aug/2012
+
 \lx χʂɤχʂɤt
 \wav ideo-XsxAt2
 \wav id-XsxAXsxAt
@@ -32096,7 +32134,7 @@ l
 \lx zɤmpo
 \ps n
 \ge nourriture pour les morts 
-\gn 供奉死人的食物 
+\gn 供奉死人的食物
 
 \lx zɤsna
 \wav n-zAsna
@@ -32138,11 +32176,6 @@ l
 \hbf 568
 \cf bɯwa
 
-\lx zdi
-\ps n
-\ge flèche 
-\gn 箭
-
 \lx zdoŋbu
 \ps n
 \ge bois 
@@ -32159,16 +32192,6 @@ l
 \xn 麻雀小巧玲珑
 \cf ɣɤzdoʁloʁ
 \dt 28/Oct/2013
-
-\lx zdɯxthɯɣ
-\ps n
-\ge à la limite de l'acceptable
-\gn 勉强可以，不理想 
-\et sdug.tʰug
-\xv a-kɤ-nɤma zdɯxthɯɣ ʑo nɯ-sthɯt-a 
-\xn 我工作完成得差强人意
-\et sdug.tʰug
-\dt 23/Mar/2014
 
 \lx zdɯɬa
 \ps n
@@ -32214,6 +32237,16 @@ l
 \xv zdɯmqe nɯ ɕɤr tɯ-mɯ kɤ-lɤt tɕe, soz tɕe stɤmku xɕaj ɣɯ ɯ-rchɤβ kɯ-ɤʁɟa nɯ ra ku-ndzoʁ ŋu. kɯ-ɤlɤɣɯ ŋu ma tɯ-rdoʁ tɯ-rdoʁ maʁ, tɤjmɤɣ fse ri tɯ-mɯ tɤ-jɯm tɕe ɲɯ-me ɕti 
 \xn |fv{zdɯmqe}生长在草地、草丛之间的空地上。一般晚上下雨，早上有雾和雾刚散的时候才会长出。它不是单独生长的，也没有规则形状，像菌子，但是天一晴就会消失。 
 \dt 18/May/2014
+
+\lx zdɯxthɯɣ
+\ps n
+\ge à la limite de l'acceptable
+\gn 勉强可以，不理想 
+\et sdug.tʰug
+\xv a-kɤ-nɤma zdɯxthɯɣ ʑo nɯ-sthɯt-a 
+\xn 我工作完成得差强人意
+\et sdug.tʰug
+\dt 23/Mar/2014
 
 \lx zdɯzdu
 \wav8 zdWzdu
@@ -32323,7 +32356,6 @@ l
 \xv qartshaz ɯ-ndʐi zgrawa 
 \xn 鹿皮制成的口袋
 \dt 19/Feb/2014
-
 
 \lx zgri
 \ps n
@@ -33043,7 +33075,7 @@ l
 \ge compact, solide
 \gn 形容物体紧凑或牢固
 \xv nɤki tʂɤm ɲɯ-ɤrku tɕe, ʑdɯɣʑdɯɣ ʑo ɲɯ-ɤstu
-\xn 板子装得很紧凑
+\xn 板壁装得很紧凑
 \xv ɯ-ɕɣa ɯ-tɯ-pe kɯ ʑdɯɣʑdɯɣ ʑo ɲɯ-pa
 \xn 他的牙齿很牢固
 \dt 11/Feb/2014
@@ -41719,7 +41751,9 @@ l
 \xv kha pjɤ-fɕɯɣ-nɯ
 \xn 他们把房子拆了
 \xv ɕoŋβzu kɯ tʂɤm ɲɤ-fɕɯɣ
-\xv kɯfɕi kɯ laχtɕha pjɤ-fɕɯɣ
+\xn 木匠把板壁拆下来了
+\xv kɯfɕi kɯ laχtɕha chɤ-fɕɯɣ
+\xn 铁匠把东西拆下来了
 \sy qia
 \dt 09/May/2013
 
@@ -42444,7 +42478,6 @@ l
 \xv smɤn ɲɯ-sna tɕe mɯ́j-sɯftɕɯm-a
 \xn 药量过多，我吸收不了
 \dt 29/Dec/2010
-
 
 \lx _ftsɤn
 \wav vi-ftsAn
@@ -53288,7 +53321,6 @@ l
 \gn 抚养、照顾（孩子）
 \xv tɤ-pɤtso tɤ-nɤpɤβdaʁ-a
 \xn 我抚养了孩子
- 
 
 \lx _nɤpɤmbat
 \wav vi-nApAmbat
@@ -58389,7 +58421,6 @@ l
 \xv pɯ́-wɣ-znɯkɯlu-a
 \xn 他令我迷路了
 \dt 12/Feb/2014
-
 
 \lx _nɯkɯmaʁ
 \wav vi-nWkWmaR
@@ -65715,6 +65746,15 @@ l
 \xn 我准备做馍馍，就和了面
 \dt 20/Aug/2012
 
+\lx _rɤphɯ
+\ps vt
+\ge donner un prix
+\gn 定价格
+\xv ki laχtɕha ki kɤ-rɤphɯ-t-a
+\xn 我定了这个东西的价格
+\cf ʑɣɤrɤphɯ
+\cf ɯ-phɯ
+
 \lx _rɤpjɤt
 \cf pjɤt
 \dt 20/Aug/2012
@@ -68726,6 +68766,8 @@ l
 \gn 诉苦
 \xv ɯʑo a-phe ɲɯ-rɯzdɯzdɯɣ
 \xn 他向我诉苦
+\xv ɯʑo pjɤ-nɤɴqa tɕe pɯ-rɯzdɯzdɯɣ ntsɯ
+\xn 因为觉得辛苦，他不停地诉苦
 \dt 01/Sep/2014
 
 \lx _rwɤt
@@ -71405,7 +71447,6 @@ cf fstɯn
 \xv nɯ-sɤrlɤɣrlɤɣ-a
 \xn 我摇头了
 \dt 27/Jun/2011
- 
 
 \lx _sɤrlɯrla
 \cf arlɯrla
@@ -71972,7 +72013,7 @@ cf fstɯn
 \gn 继续、直接过去（可以停的地方没有停），顺便做另外一件事 
 \xv tha-sɤtɕitʂi, la-sɤtɕitʂi
 \xn 他顺便带了
-\xv tɯ-pri kɤ-ti tɤ-sɤtɕɯtʂi-t-a
+\xv tɯpri kɤ-ti tɤ-sɤtɕɯtʂi-t-a
 \xn 我顺便转告了口信
 \xv ma-tɤ-tɯ-znɯne kɯ pɯ-sɤtɕitʂi 
 \xn 你不要停下來，一定要做下去
@@ -72095,7 +72136,7 @@ cf fstɯn
 \ge installer, mettre ensemble les pièces d'une machine, d'un habit de manière adéquate 
 \gn 把零件组装、令零件相吻合 
 \xv tʂɤm ta-sɤthoʁmphrɤt
-\xn 他把隔板组装了
+\xn 他把板壁组装了
 \xv mkhɯrlu ta-sɤthoʁmphrɤt
 \xn 他把机器组装了
 \cf athoʁmphrɤt
@@ -74640,6 +74681,10 @@ cf fstɯn
 \xn 这个倒是没有很难，你能行吧 
 \cf cha1
 \dt 30/Aug/2011
+
+\lx _sɯxcɯ
+\cf ɯ-lu,cɯ
+\dt 18/Aug/2015
 
 \lx _sɯxɕɤt
 \wav8 sWxCAt
@@ -77397,15 +77442,6 @@ cf fstɯn
 \sy ngu
 \dt 24/Aug/2012
 
-\lx χsɯskɤl
-\wav cl-XsWskAl
-\ps n
-\ge trois repas
-\gn 三顿
-\xv zama χsɯskɤl nɯ koŋla tu-kɯ-rɯndzɤtshi ra
-\xn 一天三餐要吃好一点
-\dt 04/Aug/2012
-
 \lx _χtɤr
 \wav vt-XtAr
 \wav8 XtAr
@@ -78600,7 +78636,7 @@ cf fstɯn
 \xn 他有个借口
 \xv ɯ-znɯxpri ɲɤ-ɕar 
 \xn 他找了个借口
-\cf tɯ-pri
+\cf tɯpri
 \dt 02/Sep/2015
 
 \lx _znɯχamba
@@ -78721,6 +78757,9 @@ cf fstɯn
 \lx _zrɤmpɕɤr
 \cf rɤmpɕɤr
 \dt 30/Aug/2015
+
+\lx _zrɤrɤt
+\cf rɤt
 
 \lx _zrɤrmbɣo
 \cf rɤrmbɣo
@@ -79171,10 +79210,14 @@ cf fstɯn
 \ps vi
 \pdl dir 
 \pdv pɯ-
+\pdl dir 
+\pdv kɯ-
 \ge mesurer ses forces
-\gn 衡量自己的能力
+\gn 量力而行
 \xv tɯʑo pjɯ-kɯ-ʑɣɤrɤphɯ ra
-\xn 要衡量自己的能力
+\xn 要量力而行
+\xv nɤ-mtɕhi ma-tɯ-ɣɤχɤm kɯ koŋla kɤ-ʑɣɤrɤphɯ
+\xn 不要说大话，要量力而行
 \dt 19/Feb/2014
 
 \lx _ʑɣɤrku
@@ -79720,21 +79763,3 @@ cf fstɯn
 \xv ki tɯ-ŋga tɤ-ŋga-t-a tɕe, ɲɯ-mpja tɕe pɯ-ʑɯm
 \xn 我穿了这件衣服，很暖很舒服
 \dt 01/Nov/2011
-
-\lx ra
-\hm 2
-\ps det 
-\ge pluriel
-\gn 复数
-
-\lx ni
-\ps det 
-\ge duel
-\gn 双数
-
-\lx _zrɤrɤt
-\cf rɤt
-
-\lx sɯrɤt
-\cf rɤt
-
