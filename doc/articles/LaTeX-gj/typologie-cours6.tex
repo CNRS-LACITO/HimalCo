@@ -1,0 +1,164 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=15mm,
+ }
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{{\large\mo{#1}}}
+
+
+
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\begin{document}
+
+\begin{exe}
+\ex 
+\gll tɤ-rʑaβ nɯ kɯ  tɯ-ŋga pjɤ-ɕphɤt \\ 
+\textsc{indef.poss}-épouse \textsc{dem} \textsc{erg} \textsc{indef.poss}-habit \textsc{ifr}-rapiécer \\
+\glt La femme a rapiécé l'habit.
+\end{exe} 
+
+\begin{exe}
+\ex 
+\gll tɤ-pɤtso nɯ kɯ tɤscoz pjɤ-rɤt \\ 
+\textsc{indef.poss}-enfant \textsc{dem} \textsc{erg} lettre \textsc{ifr}-écrit \\
+\glt L'enfant a écrit une lettre.
+\end{exe} 
+
+\begin{exe}
+\ex 
+\gll tɤscoz a-rɤt \\ 
+lettre ?-écrire:\textsc{fact} \\
+\glt La lettre est écrite.
+\end{exe}
+
+ \begin{exe}
+\ex 
+\gll tɤ-rʑaβ  nɯ pjɤ-rɤ-ɕphɤt \\
+\textsc{indef.poss}-épouse \textsc{dem} \textsc{ifr}-?-rapiécer \\
+\glt La femme a rapiécé/rapiécait (des vêtements).
+\end{exe} 
+
+\begin{exe}
+\ex 
+\gll tɤ-pɤtso nɯ  pjɤ-rɤ-rɤt \\ 
+\textsc{indef.poss}-enfant \textsc{dem}  \textsc{ifr}-?-écrit \\
+\glt L'enfant écrivait.
+\end{exe} 
+
+% \begin{exe}
+%\ex 
+%\gll tɯ-ŋga  a-ɕphɤt \\
+%\textsc{indef.poss}-habit ?-rapiécer:\textsc{fact} \\
+%\glt Le vêtement est rapiécé.
+%\end{exe} 
+
+\begin{exe}
+\ex 
+\gll tɤ-rʑaβ nɯ kɯ taqaβ to-ndo tɕe tɯ-ŋga ko-(sɯ)-ɕphɤt \\
+\textsc{indef.poss}-épouse \textsc{dem} \textsc{erg} aiguille \textsc{ifr}-prendre \textsc{conj} \textsc{indef.poss}-habit \textsc{ifr}-?-rapiécer \\
+\glt La femme a rapiécé l'habit avec une aiguille.
+\end{exe} 
+
+\begin{exe}
+\ex 
+\gll ɯʑo kɯ ɯ-rʑaβ (kɯ) tɯ-ŋga pjɤ-sɯ-ɕphɤt \\
+\textsc{3sg} \textsc{erg} \textsc{3sg.poss}-épouse  \textsc{erg} \textsc{indef.poss}-habit \textsc{ifr}-?-rapiécer \\
+\glt Il a fait rapiécer l'habit par sa femme.
+\end{exe} 
+
+\begin{exe}
+\ex sloχpɯn kɯ slama (kɯ) tɤscoz pjɤ-sɯ-rɤt \\
+enseignant \textsc{erg} étudiant \textsc{erg} lettre \textsc{ifr}-?-écrire \\
+\glt L'enseignant a demandé à l'élève décrire une lettre.
+\end{exe}
+
+\begin{exe}
+\ex
+\gll 
+tɕaχpa nɯni kɯ alibaba ɣɯ ɯ-kɯm nɯ tɕu fenbi kɯ kɯ-ɤrtɯm ci to-sɯ-rɤt-ndʑi \\
+brigand \textsc{dem:duel} \textsc{erg} (nom.propre) \textsc{gen} \textsc{3sg.poss}-porte \textsc{dem} \textsc{loc} craie \textsc{erg} \textsc{nmls}:S/A-être;rond un \textsc{ifr}-?-écrire-\textsc{du} \\
+\glt Les deux brigands dessinèrent un rond sur la porte de (la maison) d'Ali Baba avec une craie.
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll Dai.Song ɣɯ ɯ-ɕaχpu nɯ kɯ pjɤ́-wɣ-z-rɤ-rɤt \\
+(nom.propre) \textsc{gen} \textsc{3sg.poss}-ami \textsc{dem} \textsc{erg}  \textsc{ifr}-\textsc{inv}-?-?-écrire \\
+\glt Un ami de Dai Song lui demanda de dessiner quelquechose.
+\end{exe} 
+
+\begin{exe}
+\ex 
+\gll ɯʑo ɲɯ-mu \\
+\textsc{3sg} \textsc{sens}-avoir.peur \\
+\glt Il a peur.
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll ɯʑo kɯ sɯŋgi ɲɯ-nɯɣ-me \\
+\textsc{3sg} \textsc{erg} lion  \textsc{sens}-?-avoir.peur(thème.III) \\
+\glt Il a peur du lion.
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll sɯŋgi nɯ ɲɯ-sɤɣ-mu. \\
+lion \textsc{dem} sens-?-avoir.peur \\
+\glt Le lion est terrifiant.
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll  sɯŋgi kɯ tɤ-pɤtso ra ɲɯ-ɕɯɣ-me ŋgrɤl \\
+lion \textsc{erg} \textsc{indef.poss}-enfant \textsc{pl} \textsc{sens}-?-avoir.peur(thème.III) être.le.cas.habituellement \\
+\glt Le lion fait peur aux enfants.
+\end{exe}
+
+
+\end{document}
+
