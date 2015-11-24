@@ -19809,8 +19809,8 @@ bbaeq
 \ec <lang="fra"> 
 \ps n
 \sn
-\cf
-\sy dzi˩si˩
+\cf 
+\sy dʑɯ˩si˩
 \sd <lang="fra"> plante
 \sd <lang="eng"> plant
 \nt <lang="pumi" type="comp" print="n"> 
@@ -25142,7 +25142,7 @@ bbaeq
 \ec <lang="fra"> 
 \ps n
 \sn
-\cf
+\cf 
 \sy dzi˧dzi˧
 \sd <lang="fra"> plante
 \sd <lang="eng"> plant
@@ -33655,8 +33655,8 @@ bbaeq
 \dn 火炉旁边的祭坛（上面摆礼物等）
 \gn 火炉旁边的祭坛
 \gr
-\df autel dans le buffet, en contrehaut du foyer, où on dépose les présents qu'apportent les invités/les membres de la famille, les offrant ainsi aux ancêtres
-\gf autel_dans_le_buffet
+\df autel en contrehaut du foyer, où on dépose les présents qu'apportent les invités/les membres de la famille, les offrant ainsi aux ancêtres
+\gf autel_proche_du_foyer
 \xv
 \xe
 \xn
@@ -37475,7 +37475,7 @@ bbaeq
 \dn 椽子
 \gn 椽子
 \gr
-\df pièce de charpente: poutrelles de toiture: poutrelles courtes, installées en inclinaison, dans le sens de la largeur du bâtiment, sur les poutres horizontales, ʐv˩ɭɯ˧˩. Les tuiles (autrefois: les planches) reposent sur ces poutrelles.
+\df pièce de charpente: poutrelles de toiture: poutrelles courtes, installées en inclinaison, dans le sens de la largeur du bâtiment, sur les poutres horizontales, ʐv˩ɭɯ˥. Les tuiles (autrefois: les planches) reposent sur ces poutrelles.
 \gf poutrelles_de_toiture
 \xv
 \xe
@@ -57145,12 +57145,12 @@ bbaeq
 \pdl
 \pdv
 \pdf
-\de prairie mushroom: a sort of edible mushroom (not yet identified)
-\ge prairie_mushroom
-\dn 可以吃的一种菌子
-\gn 一种菌子
+\de meadow mushroom: a sort of edible mushroom that grows on meadows (not yet identified; perhaps |fi{Agaricus campestris})
+\ge meadow_mushroom
+\dn 可以吃的一种菌子：可能是四孢蘑菇。直译：“草坪菌”
+\gn 一种菌子（四孢蘑菇？）
 \gr
-\df champignon des prés: une sorte de champignon comestible (pas encore identifiée)
+\df champignon des prés: une sorte de champignon comestible (pas encore identifiée): agaric champêtre ou rosé des prés, |fi{Agaricus campestris}?
 \gf champignon_des_prés
 \xv
 \xe
@@ -98990,7 +98990,7 @@ bbaeq
 \ps n
 \sn
 \cf
-\cf <type="hm"> 
+\cf <type="hm"> qwæ˧˥3
 \sd <lang="fra"> maison
 \sd <lang="eng"> house
 \nt <lang="pumi" type="comp" print="n"> 
@@ -99030,6 +99030,58 @@ bbaeq
 \xf
 \xc
 \dt 01/Oct/2015
+
+\lx  qwæ˧˥
+\sf <nb="B"> 
+\sf <nb="2011"> 
+\hm 3
+\ph ghuae
+\bw
+\et
+\ec <lang="fra"> 
+\ps n
+\sn
+\cf
+\cf <type="hm"> qwæ˧ʁo#˥
+\sd <lang="fra"> maison
+\sd <lang="eng"> house
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np
+\np <type="tone"> #H
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5">
+\vf <type="tone"> 
+\va <speaker="M18">
+\va <speaker="M21">
+\va <speaker="M23">
+\pdl classifier
+\pdv ɭɯ˧
+\pdf
+\de the bench of the main room, close to the hearth, where guests are seated
+\ge bench_of_main_room
+\dn 主屋里面的长凳：客人和老人坐的地方
+\gn 主屋长凳
+\gr
+\df banc de la pièce principale, proche du foyer, où s'asseyent les hôtes
+\gf banc_des_hôtes
+\xv
+\xe
+\xn
+\xf
+\rf
+\xv
+\xf
+\rf
+\xv
+\xf
+\xc
+\dt 01/Nov/2015
 
 \lx qwæ˧ʂe˧lɑ˧bv˥
 \sf <nb="B"> 
@@ -122912,6 +122964,10 @@ bbaeq
 \xe water in which one has diluted some yak cheese; it has medicinal properties
 \xn 一种饮料：将牦牛奶酪溶化在水里
 \xf eau dans laquelle on a dilué du fromage de yak; elle a des propriétés médicinales
+\xv tɕi˧sɯ˧pɤ˧ ʈʰɯ˩
+\xe to drink water in which one has diluted some yak cheese; literally: 'to drink yak cheese'
+\xn 喝溶化在水里的牦牛奶酪（直译：喝牦牛奶酪）
+\xf boire de l'eau dans laquelle on a dilué du fromage de yak; littéralement: 'boire du fromage de yak'
 \dt 09/Oct/2015
 
 \lx tɕi˧tɕi˧ | læ˩sæ˧-dzi˩
@@ -123288,14 +123344,16 @@ bbaeq
 \xn 煮猪食
 \xf faire bouillir la pâtée des cochons
 \rf
+\xv ho˧ tɕɤ˩
+\xe to cook stew
+\xn 煮粥
+\xf faire du ragoût
+\xc
+\rf
 \xv dʑɯ˩ʁo˩˥, | mo˧-no˥, | mo˧ tɕɤ˥-hĩ˩ lɑ˩-ɲi˩-mæ˩! |
 \xe Up on the mountain, to cook mushrooms, (we) simply cook them in a pot! (This does not refer to boiling in the sense of 'cooking in hot water': the mushrooms are put in a pot; one adds grease and salt, and the mushrooms cook in their own juice.)
 \xn 在山上，菌子，就是简单煮一下而已！（放在锅里，加油、加盐。用菌子自身的水分）
 \xf (Quand on se trouve sur) la montagne, les champignons, on les fait simplement cuire dans une casserole! (Littéralement: "on se contente de les faire bouillir".) (On mettait simplement les champignons dans une casserole, sans eau, avec du sel et de la graisse; les champignons cuisaient alors dans leur propre eau.)
-\rf
-\xv
-\xf
-\xc
 \dt 08/Oct/2015
 
 \lx tɕɤ˥
@@ -123616,15 +123674,17 @@ bbaeq
 \dn 陪伴、一起去、跟着
 \gn 陪伴
 \gr
-\df accompagner, suivre (quelqu'un lors d'un voyage, par exemple)
+\df accompagner, suivre (quelqu'un lors d'un voyage, par exemple); aller avec
 \gf accompagner
 \xv hĩ˧ tɕʰo˥
 \xe to accompany someone
 \xn 陪伴某人
 \xf suivre quelqu'un
 \rf
-\xv
-\xf
+\xv ɖɯ˧-tɕʰo˩ tʰi˩-tɕʰo˩ |
+\xe to make up a set, to go with each other/one another: for instance, in the main room, the thangka above the hearth and the paintings on the cupboard that hosts the altar to the ancestors make up a set, they go with each other
+\xn 陪伴某人
+\xf aller ensemble, former un ensemble: par exemple, dans la pièce principale de la maison, le thangka au-dessus du foyer et les peintures sur le buffet-autel des ancêtres forment un tout, elles vont ensemble
 \rf
 \xv
 \xf
@@ -135499,9 +135559,6 @@ bbaeq
 \rf
 \xv
 \xf
-\rf
-\xv
-\xf
 \xc
 \sn 2
 \de measles
@@ -135511,6 +135568,12 @@ bbaeq
 \gr
 \df rougeole
 \gf rougeole
+\rf
+\xv gv˧-kʰv˩ mɤ˩-gv˩, | tsʰe˧ mɤ˧-tʰv˧, | hĩ˧ ʈʂɤ˧-mɤ˧-kv˩!
+\xe If one does not catch the measles before age nine, one cannot become an adult (literally 'a person')!
+\xn 九岁前不得麻疹，不能成人！ / 得麻疹，就是小孩生长过程中必须要的一件事情！
+\xf Si, avant l'âge de neuf ans, on ne contracte pas la rougeole, on ne peut pas devenir adulte! / Attraper la rougeole, ça fait partie du processus de croissance vers l'âge adulte!
+\xc PROVERBE
 \xv
 \xe
 \xn
@@ -138426,6 +138489,65 @@ bbaeq
 \rf
 \xv
 \xf
+\rf
+\xv
+\xf
+\xc
+\dt 07/Oct/2015
+
+\lx tsʰo˥
+\sf <nb="B"> 
+\sf <nb="B"> 
+\sf <nb="2011"> 
+\hm
+\ph co
+\bw
+\et
+\ec <lang="fra"> 
+\ps adj
+\sn
+\cf
+\cf <type="hm"> 
+\sd <lang="fra"> adjectif
+\sd <lang="eng"> adjective
+\nt <lang="pumi" type="comp" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> 
+\nt <type="sem"> 
+\np
+\np <type="tone"> H
+\nd
+\so <print="n"> F4
+\va <speaker="F4">
+\vf <type="tone"> 
+\va <speaker="F5"> 
+\vf <type="tone"> 
+\va <speaker="M18">
+\va <speaker="M21"> 
+\va <speaker="M23"> 
+\pdl
+\pdv
+\pdf
+\de complete, all in readiness
+\ge complete
+\dn 齐全
+\gn 齐全
+\gr
+\df complet, au grand complet
+\gf complet
+\xv ə˧tso˧-mɤ˧-ɲi˩, | tʰi˧-tsʰo˥-ze˩!
+\xe All is in readiness! Everything is now ready! (Context: preparation for a feast, a meal...)
+\xn 什么都准备得很齐全！
+\xf Tout y est! Tout est prêt! (Au sujet de préparatifs pour une fête, un repas...)
+\xv mɤ˧-tsʰo˧-sɯ˥! | wɤ˩˥ | ɲi˧-bæ˧ hwæ˧-zo˧-ho˩!
+\xe [Decoration] is not complete yet! [I] still need to purchase a few items! (Context: visitors admire a newly furbished apartment in town; the landlord answers their compliments by saying 'The work is not finished yet!')
+\xn 还不算齐全！ / 还没有装饰齐全！（情景：朋友们表扬新装修的丽江房子，主人谦虚回答：‘还不算齐全！’）
+\xf On n'y est pas encore tout à fait / ce n'est pas encore tout à fait prêt! Il reste deux ou trois trucs à acheter! (Contexte: on achève la décoration d'un appartement à la ville; aux compliments des visiteurs, l'heureux propriétaire répond: 'Ce n'est pas encore terminé!')
+\rf
+\xv tʰi˧-tsʰo˥-kʰɯ˩
+\xe °dur _ °caus: to complete, to bring to complete readiness
+\xn °dur _ °caus：完成、弄齐全
+\xf °dur _ °caus: porter à son point d'achèvement, porter au grand complet
 \rf
 \xv
 \xf
@@ -157039,10 +157161,10 @@ bbaeq
 \pdl classifier
 \pdv ɭɯ˧
 \pdf
-\de small beam
-\ge small_beam
-\dn 支撑顶板的小梁
-\gn 小梁
+\de beam
+\ge beam
+\dn 支撑顶板的梁
+\gn 梁
 \gr
 \df poutre soutenant la toiture, posée horizontalement, dans le sens de la longueur du bâtiment. Sur elle reposent les poutrelles courtes posées inclinées dans le sens de la largeur du bâtiment, /hæ̃˧kʰɤ˧˥/
 \gf poutre_soutenant_la_toiture
@@ -163163,3 +163285,4 @@ bbaeq
 \xf
 \xc
 \dt 06/Oct/2015
+
