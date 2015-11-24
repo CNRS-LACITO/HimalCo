@@ -3,4 +3,4 @@ crdo-<code SIL Ethnologue de la langue>_<code locuteur>_<titre court, en majuscu
 exemple : 
 crdo-NRU_F4_SEEDS.xml
 
-Ainsi, le nom du locuteur est indiqué dans le titre du document. Pour les documents plus anciens, en revanche, les conventions n'étaient pas encore choisies; et les titres ne sont plus modifiables, depuis l'archivage pérenne 
+Ainsi, le nom du locuteur est indiqué dans le titre du document. Pour les documents plus anciens, en revanche, les conventions n'étaient pas encore choisies; et les titres ne sont plus modifiables, depuis l'archivage pérenne.
