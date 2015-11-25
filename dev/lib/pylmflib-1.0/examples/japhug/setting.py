@@ -107,6 +107,36 @@ def format_notes(lexical_entry, font):
         result += "\mytextsc{" + note + "} "
     return result
 
+def format_related_forms(lexical_entry, font, language=None):
+     result = ""
+     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["sy"]):
+         result += "\\synonym{} "
+         if related_form.get_lexical_entry() is not None:
+             result += tex.format_link(related_form.get_lexical_entry(), font)
+         else:
+             result += font[VERNACULAR](related_form.get_lexeme())
+         result += ". "
+     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["an"]):
+         result += "\\antonym{} "
+         if related_form.get_lexical_entry() is not None:
+             result += tex.format_link(related_form.get_lexical_entry(), font)
+         else:
+             result += font[VERNACULAR](related_form.get_lexeme())
+         result += ". "
+     for morphology in lexical_entry.get_morphologies():
+         result += "\\textit{Morph:} " + font[VERNACULAR](morphology) + ". "
+     for related_form in lexical_entry.get_related_forms(mdf_semanticRelation["cf"]):
+         if language == config.xml.English:
+           result += "\\refentry{} "
+         else:
+             result += "\\refentry{} "
+         if related_form.get_lexical_entry() is not None:
+             result += tex.format_link(related_form.get_lexical_entry(), font)
+         else:
+             result += font[VERNACULAR](related_form.get_lexeme())
+         result += " "
+     return result
+	
 def format_definitions(sense, font, languages):
     result = ""
     for language in languages:
@@ -157,17 +187,26 @@ def format_examples(sense, font):
             pass #result += "\\textit{[" + font[REGIONAL](example) + "]}" + EOL
     return result
 
+def format_etymology(lexical_entry, font):
+     result = ""
+     if lexical_entry.get_etymology() is not None:
+         result += "\\etymology{} \\textbf{" + lexical_entry.get_etymology() + "} "
+     if lexical_entry.get_etymology_gloss() is not None:
+         result += u"\u2018" + lexical_entry.get_etymology_gloss() + u"\u2019" + ". "
+     return result
+	
 def format_usage_notes(sense, font):
     result = ""
     for usage in sense.find_usage_notes(language=config.xml.vernacular):
-        result += "\\textit{UsageVer:} " + font[VERNACULAR](usage) + " "
+        result += "\\usage{} " + font[VERNACULAR](usage) + " "
     for usage in sense.find_usage_notes(language=config.xml.English):
-        result += "\\textit{Usage:} " + usage + " "
+        result += "\\usage{} " + usage + " "
     for usage in sense.find_usage_notes(language=config.xml.national):
-        result += "\\textit{UsageNat:} " + font[NATIONAL](tex.handle_font(usage)) + " "
+        result += "\\usage{} " + font[NATIONAL](tex.handle_font(usage)) + " "
     for usage in sense.find_usage_notes(language=config.xml.regional):
         result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
+
 
 def format_encyclopedic_informations(sense, font):
     result = ""
@@ -237,11 +276,11 @@ def lmf2tex(lexical_entry, font):
         # restriction
         tex_entry += tex.format_restrictions(sense, font)
     # synonym, antonym, morphology, related form
-    tex_entry += tex.format_related_forms(lexical_entry, font, language=config.xml.French)
+    tex_entry += format_related_forms(lexical_entry, font, language=config.xml.French)
     # borrowed word
     tex_entry += tex.format_borrowed_word(lexical_entry, font)
     # etymology
-    tex_entry += tex.format_etymology(lexical_entry, font)
+    tex_entry += format_etymology(lexical_entry, font)
     # paradigms
     tex_entry += tex.format_paradigms(lexical_entry, font)
     # semantic domain
