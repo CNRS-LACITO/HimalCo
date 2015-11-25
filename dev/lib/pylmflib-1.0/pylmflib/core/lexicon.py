@@ -174,6 +174,7 @@ class Lexicon():
         @param condition Lambda function giving a condition to apply classification.
         @return The sorted Python list of lexical entries.
         """
+        print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
         def compare(x, y):
             """Compare 2 elements between each other.
             """
@@ -192,7 +193,7 @@ class Lexicon():
                 elif nb_x > nb_y:
                     return 1
                 else:
-                    print Warning("Several lexical entries '%s' exist. Please solve this issue by precising the homonym number." % items(x).encode(ENCODING))
+                    print Warning("Several lexical entries '%s' exist. Please solve this issue by specifying the homonym number." % items(x).encode(ENCODING))
             # Do nothing
             return 0
         self.lexical_entry.sort(cmp=compare)
@@ -205,6 +206,7 @@ class Lexicon():
         @param comparison Function to compare items. If 'None', a default function to compare character by character is provided.
         @return The sorted Python list of lexical entries.
         """
+        print '****************************************************************************************************'
         # To access options
         from pylmflib import options
         global options
@@ -326,7 +328,7 @@ class Lexicon():
                             if related_entry.get_homonymNumber() == related_homonym_number:
                                 related_homonym.append(related_entry)
                     if len(related_homonym) != 1:
-                        print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by precising the homonym number." % related_lexeme.encode(ENCODING))
+                        print Warning("Several lexical entries '%s' exist. Please solve this issue by renaming lexical entries correctly or by specifying the homonym number." % related_lexeme.encode(ENCODING))
                     else:
                         # Save the found lexical entry
                         related_form.set_lexical_entry(related_homonym[0])
