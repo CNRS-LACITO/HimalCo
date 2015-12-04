@@ -1,0 +1,169 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+ \usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={210mm,297mm},
+% left=10mm,
+% right=10mm,
+% top=15mm,
+% bottom=15mm,
+% }
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{{\large\mo{#1}}}
+\newcommand{\rc}{}
+\newcommand{\tete}{}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\begin{document}
+
+ \begin{exe}
+\ex \label{ex:die}
+\gll \ipa{kɯ-si}    \\
+  \textsc{nmlz}:S/A-die \\
+ \glt  `The dead one'
+\end{exe}
+
+ \begin{exe} 
+\ex \label{ex:kill}
+\gll \ipa{ɯ-kɯ-sat}    \\
+  \textsc{3sg}-\textsc{nmlz}:S/A-kill \\
+ \glt  `The one who kills him.'
+\end{exe}
+
+ \begin{exe} 
+\ex \label{ex:kill2}
+\gll \ipa{kɤ-sat}    \\
+   \textsc{nmlz}:P-kill \\
+ \glt  `The one that is killed.'
+ \end{exe}
+ 
+   \begin{exe}
+\ex \label{ex:kill3}
+\gll \ipa{a-kɤ-sat}    \\
+   \textsc{1sg-nmlz}:P-kill \\
+ \glt  `The one that I kill.'
+ \end{exe}
+ 
+    \begin{exe}
+\ex \label{ex:come}
+\gll \ipa{ɯ-sɤ-ɣi}    \\
+   \textsc{3sg-nmlz}:S-come \\
+ \glt  `The place/moment where/when it comes.'
+ \end{exe}
+ 
+ 
+\begin{exe}
+\ex \label{ex:WsAfCAt}
+\gll
+[\ipa{ɯ-sɤ-fɕɤt}]\rc{} 
+\ipa{pjɤ-me} 	\ipa{qʰe} 	\ipa{tɕe} 	\ipa{tɤ-pɤtso} 	\ipa{ɯ-ɕki} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{nɯra} 	\ipa{tɕʰi} 	\ipa{pɯ-kɯ-fse} 	\ipa{nɯra} 	\ipa{pjɤ-fɕɤt.} \\
+\textsc{3sg-nmlz:oblique}-tell \textsc{ipfv.ifr}-not.exist \textsc{lnk} \textsc{lnk} \textsc{indef.poss}-child \textsc{3sg-dat} \textsc{dem} \textsc{loc} \textsc{dem:pl} what \textsc{pst-nmlz:S}-be.like  \textsc{dem:pl} \textsc{ifr}-tell \\
+\glt She had no one (else) to tell it to, so she told the boy everything that had happened. (140515 congming de wusui xiaohai, 77)
+\end{exe} 
+
+\begin{exe}
+   \ex \label{ex:WsAmWmi}
+ \gll 
+\ipa{tɕe}   	[\ipa{ɯʑo}   	\ipa{ɯ-sɤ-ɤmɯmi}]\rc{}   	\ipa{nɯ}   	\ipa{dɤn}   	\ipa{ma}   	\ipa{ca}   	\ipa{kɯ-fse}   	\ipa{qaʑo}   	\ipa{kɯ-fse,}   	\ipa{tsʰɤt}   	\ipa{kɯ-fse,}   	 \ipa{ɯʑo}   	\ipa{cʰo}   	\ipa{kɯ-naχtɕɯɣ}   	\ipa{sɯjno,}   	\ipa{xɕaj}   	\ipa{ma}   	\ipa{mɤ-kɯ-ndza}   	\ipa{nɯ} \ipa{ra}   	\ipa{cʰo}   	\ipa{nɯ}   	\ipa{amɯmi-nɯ}   	\ipa{tɕe,}   \\
+\textsc{lnk} it \textsc{3sg-nmlz:oblique}-be.in.good.terms \topic{} be.many:\textsc{fact} because musk.deer \textsc{nmlz:S}-be.like sheep \textsc{nmlz:S}-be.like goat  \textsc{nmlz:S}-be.like it with  \textsc{nmlz:S}-be.identical herbs grass apart.from \textsc{neg-nmlz:A}-eat \textsc{dem} \textsc{pl} with \textsc{dem} be.in.good.term:\textsc{fact}-\textsc{pl} \textsc{lnk} \\
+\glt The (animals) that are in good terms with the rabbit are many, it is in good terms with those that only eat grass, like musk deer, sheep or goats. (04 qala1, 33-4)
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:WsAji}
+   \gll
+   \ipa{tɕe} 	\ipa{nɯnɯ} 	\ipa{ʑaka} 	[\ipa{ɯ-sɤ-ji}]\rc{} 	\ipa{ɲɯ-ŋu} 	\ipa{tɕe}\\
+   \textsc{lnk} \textsc{dem} each \textsc{3sg-nmlz:oblique}-plant \textsc{sens}-be \textsc{lnk}\\
+\glt These are the (periods) when people plant each of these (crops). (15 tChWma, 19)
+\end{exe}
+
+\begin{exe}
+   \ex \label{ex:asAGi}
+ \gll
+\ipa{kɯki}   	\ipa{tɯ-ci}   	\ipa{ki}   	\ipa{ɯ-tɯ-rnaʁ}   	\ipa{mɯ́j-rtaʁ}   	\ipa{tɕe,}   	\ipa{aʑo}   	[\ipa{a-sɤ-ɣi}]\rc{}   	\ipa{mɯ́j-kʰɯ}   \\
+this \textsc{indef.poss}-water this \textsc{3sg-nmlz:degree}-deep \textsc{neg:sens}-deep \textsc{lnk} I \textsc{1sg-nmlz:oblique}-come \textsc{neg:sens}-be.able \\
+\glt The water is not deep enough, there is not (enough) place for me to come. (Go by yourself,4)
+\end{exe}
+
+
+ \begin{exe}
+  \ex  \label{ex:sAxtCAr}  
+  \gll [\ipa{ɯʑo} 	\ipa{ɣɯ} 	\ipa{ɯ-xtsa} 	\ipa{ɯ-sɤ-xtɕɤr}]\rc{} 	\ipa{nɯnɯ} 	\ipa{ɲɤ-χɕoʁ} 	\ipa{tɕendɤre} 	\ipa{ɯ-ʁi} 	\ipa{ɯ-mke} 	\ipa{ko-βraʁ.}  \\
+\textsc{3sg} \textsc{gen} \textsc{3sg.poss}-shoe \textsc{3sg-nmlz:oblique}-tie \textsc{dem} \textsc{ifr}-draw.out \textsc{lnk} \textsc{3sg.poss}-younger.sibling \textsc{3sg.poss}-neck \textsc{ifr}-attach \\
+\glt She took off her shoelace (the thing used to tie her shoes) and attached it on her brother's neck. (hist140429 jiedi, 78)
+   \end{exe} 
+
+
+     \begin{exe}
+   \ex \label{ex:tutianw}
+ \gll [\ipa{nɯ}  	\ipa{qajɯ}\tete{}  	\ipa{kɯ-ɲaʁ}  	\ipa{tu-ti-a}]\rc{}  	\ipa{nɯ}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{ɲɯ-βze}  	\ipa{ɲɯ-ŋu}  \\
+\textsc{dem} worm \textsc{nmlz:S}-black \textsc{ipfv}-say-\textsc{1sg} \topic{} \textsc{dem} \textsc{nmlz:S}-be.like \textsc{ipfv}-grow \textsc{sens}-be \\
+\glt The black worm that I was talking about grows like that. (28 kWpAz, 30)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:nWwGmbi}
+\gll
+[\ipa{tɤ-wɯ} 	\ipa{kɯ} 	\ipa{ʑmbrɯ}\tete{} 	\ipa{nɯ́-wɣ-mbi}]\rc{} 	\ipa{nɯ} 	 	\ipa{cʰɤ-lɤt} \\
+\textsc{indef.poss}-grandfather \textsc{erg} boat \textsc{pfv-inv}-give \textsc{dem} \textsc{ifr}-throw \\
+\glt He took the boat that the old man had given him. (140430 jin e, 245)
+\end{exe}
+
+    \begin{exe}
+   \ex \label{ex:jowGtsWmnW}
+ \gll
+[\ipa{\textbf{kʰa}}\tete{}  	\ipa{jɤ́-wɣ-tsɯm-nɯ}]_{\textsc{rc}}  	\ipa{nɯnɯ,}  	\ipa{lonba}  	[\ipa{ɕom}  	\ipa{kɯ}  	\ipa{nɯ-kɤ-sɯ-βzu}]_{\textsc{rc}}  	\ipa{\textbf{kʰa}}  	\ipa{pjɤ-ŋu}  \\
+house \textsc{pfv-inv}-take.away-\textsc{pl} \textsc{dem} all iron \textsc{erg} \textsc{pfv-nmlz:P-caus}-make house \textsc{ipfv.ifr}-be \\
+\glt The house to which he had taken them, it was a house made of iron.(140505 liuhaohan zoubian tianxia, 148)
+\end{exe}
+
+
+     \begin{exe}
+   \ex \label{ex:jaria.nW}
+ \gll
+[\ipa{aʑo}  	\ipa{sɤtɕha}\tete{}  	\ipa{jɤ-ari-a}]_{\textsc{rc}}  	\ipa{nɯ}  	\ipa{nɯnɯ}  	\ipa{kɯ-ɤrqhi}  	\ipa{ci}  	\ipa{ŋu.}  \\
+\textsc{1sg} place \textsc{pfv}-go[II]-\textsc{1sg} \textsc{dem} \textsc{dem} \textsc{nmlz}:S/A-be.far \textsc{indef} be:\textsc{fact} \\
+\glt The place where I have gone is far away. (elicited)
+\end{exe}
+
+ 
+\end{document}
+
