@@ -207,7 +207,7 @@ def format_usage_notes(sense, font):
         result += "\\textit{[" + font[REGIONAL](usage) + "]} "
     return result
 
-
+		
 def format_encyclopedic_informations(sense, font):
     result = ""
     for information in sense.find_encyclopedic_informations(language=config.xml.vernacular):

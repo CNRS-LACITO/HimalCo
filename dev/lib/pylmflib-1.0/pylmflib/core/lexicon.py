@@ -174,7 +174,7 @@ class Lexicon():
         @param condition Lambda function giving a condition to apply classification.
         @return The sorted Python list of lexical entries.
         """
-        print '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!'
+        
         def compare(x, y):
             """Compare 2 elements between each other.
             """
@@ -206,7 +206,7 @@ class Lexicon():
         @param comparison Function to compare items. If 'None', a default function to compare character by character is provided.
         @return The sorted Python list of lexical entries.
         """
-        print '****************************************************************************************************'
+        
         # To access options
         from pylmflib import options
         global options
@@ -216,6 +216,7 @@ class Lexicon():
             # Before comparing, remove acute accents from strings if any
             x = x.replace(u"\u0301", '').replace(u"\u0302", '')
             y = y.replace(u"\u0301", '').replace(u"\u0302", '')
+          
             for i in range(min(len(x), len(y))):
                 try:
                     if type(sort_order) is not type(dict()):
@@ -277,6 +278,86 @@ class Lexicon():
         self.lexical_entry = sorted_entries
         return self.lexical_entry
 
+    def sort_lexical_entries_japhug(self, items=lambda lexical_entry: lexical_entry.get_lexeme(), sort_order=None, comparison=None):
+        """! @brief Sort given items of lexical entries contained in the lexicon according to a certain order for japhug dictionary.
+        @param items Lambda function giving the item to sort. Default value is 'lambda lexical_entry: lexical_entry.get_lexeme()', which means that the items to sort are lexemes.
+        @param sort_order Default value is 'None', which means that the lexicographical ordering uses the ASCII ordering.
+        @param comparison Function to compare items. If 'None', a default function to compare character by character is provided.
+        @return The sorted Python list of lexical entries.
+        """
+        
+        # To access options
+        from pylmflib import options
+        global options
+        def compare(x, y):
+            """Compare 2 elements between each other.
+            """
+            # Before comparing, remove acute accents from strings if any
+            x = x.replace(u"\u0301", '').replace(u"\u0302", '')
+            y = y.replace(u"\u0301", '').replace(u"\u0302", '')
+            x = x.replace('-', '')
+            y = y.replace('-', '')
+            for i in range(min(len(x), len(y))):
+                try:
+                    if type(sort_order) is not type(dict()):
+                        if sort_order(x[i]) == sort_order(y[i]):
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order(x[i]) < sort_order(y[i]):
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order(x[i]) > sort_order(y[i]):
+                            return 1
+                    else:
+                        if sort_order[x[i]] == sort_order[y[i]]:
+                            continue
+                        # If the 1st one is lower than the 2nd one, its rank is decremented
+                        if sort_order[x[i]] < sort_order[y[i]]:
+                            return -1
+                        # If the 1st one is greater than the 2nd one, its rank is incremented
+                        elif sort_order[x[i]] > sort_order[y[i]]:
+                            return 1
+                # Handle other characters
+                except KeyError:
+                    if options.verbose:
+                        print Warning("Cannot compare " + x[i].encode(ENCODING) + " and " + y[i].encode(ENCODING))
+                    if x[i] == y[i]:
+                        continue
+                    if x[i] < y[i]:
+                        return -1
+                    elif x[i] > y[i]:
+                        return 1
+            # If both strings do not have the same length, they do not equal => the smallest string is the shortest one
+            if len(x) < len(y):
+                return -1
+            elif len(x) > len(y):
+                return 1
+            # If all characters match, both equal => do nothing
+            return 0
+        # Create a list of tuples associating items and their lexical entries: [(item1, entry1), (item2, entry2), ...]
+        items_and_entries = [(items(lexical_entry), lexical_entry) for lexical_entry in self.lexical_entry]
+        amontrer = "taille du lexique = " + str(len(items_and_entries))
+        print amontrer
+        if sort_order is None:
+            # Sort given items in alphabetical order
+            items_and_entries.sort()
+        else:
+            # sorted(iterable, cmp, key, reverse)
+            # list.sort(cmp, key, reverse)
+            if comparison is None:
+                comparison = compare
+            items_and_entries.sort(cmp=comparison, key=lambda l: l[0])
+        # Retrieve lexical entries to create a sorted list
+        sorted_entries = [item_and_entry[1] for item_and_entry in items_and_entries]
+        amontrer = "taille du lexique trie = " + str(len(sorted_entries))
+        print amontrer
+        # for se in sorted_entries:
+            # print se
+        # Delete the old list of lexical entries and set the new one
+        del self.lexical_entry[:]
+        self.lexical_entry = sorted_entries
+        return self.lexical_entry
+		
     def find_lexical_entries(self, filter):
         """! @brief Find all lexical entries which characteristics meet the given condition.
         @param filter Function or lambda function taking a lexical entry as argument, and returning True or False; for instance 'lambda lexical_entry: lexical_entry.get_lexeme() == "Hello"'.
@@ -358,3 +439,4 @@ class Lexicon():
         """This method converts the lexicon into LaTeX format.
         """
         pass
+	
