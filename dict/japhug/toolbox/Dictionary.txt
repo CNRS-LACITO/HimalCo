@@ -3423,12 +3423,18 @@
 \ge méthode
 \gn 办法
 \et btɕa.ka
-\xv tɤ-rɤku kɤ-mɯrkɯ ftɕaka wuma ʑo βze
-\xn 它想尽办法偷吃庄稼
 \cf aftɕaka
 \cf rɯftɕaka
 \cf sɤftɕaka
-\dt 11/Oct/2014
+\se ftɕaka,βzu
+\ge essayer par tous les moyens de
+\gn 想办法……
+\xv tɤ-rɤku kɤ-mɯrkɯ ftɕaka wuma ʑo βze
+\xn 它想尽办法偷吃庄稼
+\lf Component1 = ftɕaka
+\ps n
+\lf Component2 = βzu
+\ps vt
 
 \lx ftɕar
 \wav n-ftCar
@@ -21937,7 +21943,7 @@ l
 \xn 不要浪费时间，因为可惜
 \xv tɤ-rʑaʁ nɯ pɤrmɤloŋ ɲɯ-ɕe mɤ-pe
 \xn 浪费时间是不好的
-\xv nɤ-rʑaʁ nɯ fse ʑo a-mɤ-nɯ-tɯ-nɯɕe
+\xv nɤ-rʑaʁ nɯfse ʑo a-mɤ-nɯ-tɯ-nɯɕe
 \xn 你不要白白浪费时间
 \xv tɤ-rʑaʁ ɯ-taʁ nɯ tɕu ju-kɯ-zɣɯt ra
 \xn 要在规定的时间到达
@@ -27274,6 +27280,8 @@ l
 \xn 我拉了屎 
 \xv a-qe thɯ-lat-a 
 \xn 我放了屁
+\cf khrambaqe
+\cf zdɯmqe
 
 \lx tɯ-qejdi
 \ps np
@@ -30402,11 +30410,12 @@ l
 \dt 21/Aug/2014
 
 \lx ɯ-sti
+\wav8 aZosti
 \ps np
 \ge seul
 \gn 孤单
-\xv aʑo-sti 
-\xn 我独自一个人
+\xv aʑo-sti ma me-a
+\xn 只有我一个人
 \cf mɯsti
 
 \lx ɯ-stu
@@ -30501,12 +30510,13 @@ l
 \lx ɯ-tɕhɤl
 \wav n-tChAl
 \ps np
-\ge amende
+\ge amende, punition
 \gn 罚款
 \et tɕʰad
 \xv a-tɕhɤl nɯ-kho-t-a
 \xn 我交了罚款
 \cf nɯtɕhɤl
+\cf tɕhɤtpa
 \dt 13/Feb/2014
 
 \lx ɯ-tɕhɯβ
@@ -38388,7 +38398,7 @@ l
 \xv ko-k-ɤʁmbɯm-ci
 \xn 凹进去了
 \xv ɯ-laz ko-nɯrpu tɕe ko-oʁmbɯm
-\xn 他不小心撞了额头，就凹进去了
+\xn 他不小心撞了额头，额头就凹进去了
 \xv ma-kɤ-tɯ-sɯrpe ma tha aʁmbɯm 
 \xn 你不要撞他，不然就会凹进去
 \dt 18/May/2014
@@ -42138,7 +42148,8 @@ l
 \gn 觉得很像
 \cf sɤfse
 \cf amɯfse
-\cf nɯfse
+\cf nɯfse1
+\cf nɯfse2
 \dt 09/Sep/2015
 
 \lx _fse
@@ -45622,10 +45633,16 @@ l
 \xv nɤʑo kha jɤ-ɣi jɤɣ ma nɤ-kɤndza cho nɤ-kɯ-ra pjɯ-ɣɤtɕat-a jɤɣ
 \xn 你可以到我家来，我可以给你提供食物和你所需要的东西
 \se ʑɣɤɣɤtɕɤt
+\wav8 tAZGAGAtCata
 \ps vi
 \ng refl
-\ge se choisir soi-même
-\gn 自己选拔自己
+\pdl dir
+\pdv tɤ-
+\ge se porter volontaire pour
+\gn 自告奋勇
+\xv kɯ-rɤma kɤ-ɕe ɲɯ-ra tɕe, aʑo tɤ-ʑɣɤɣɤtɕat-a
+\xn 需要人，我自告奋勇去做了
+
 \dt 20/Aug/2015
 
 \lx _ɣɤtɕɣɤrtɕɣɤr
@@ -57369,6 +57386,7 @@ l
 \dt 06/Sep/2015
 
 \lx _nɯfse
+\hm 1
 \wav vt-nWfse
 \ps vt
 \pdl dir 
@@ -60599,6 +60617,7 @@ l
 \xn 他逗弄我了
 \xv kɤ-ta-nɯrtɕa
 \xn 我逗弄你了
+\sy nɤjndɤt
 \se sɤnɯrtɕa
 \wav vi-sAnWrtCA
 \ps vi
@@ -61721,11 +61740,12 @@ l
 \pdl dir 
 \pdv pɯ-
 \ge punir
-\gn 惩罚别人
+\gn 惩罚
 \xv pɯ́-wɣ-znɯtɕhal-a tɕe nɯ-kho-t-a
 \xn 我被罚就交了罚款
 \xv ɯʑo ɕ-to-mɯrkɯ tɕe, pɯ-znɯtɕhal-a
 \xn 他偷了东西我就惩罚了他
+\sy znɯtɕhɤtpa
 \cf ɯ-tɕhɤl
 \dt 17/May/2014
 
@@ -70199,6 +70219,13 @@ cf fstɯn
 \xn 女孩子很可爱
 \xv tɯrme ɲɯ-sɤjndɤt
 \xn 人很可爱
+\cf nɤjndɤt
+\se nɤsɤjndɤt
+\ps vt
+\ng trop
+\ge trouver mignon
+\gn 觉得可爱
+\sy nɤjndɤt
 \dt 21/Oct/2011
 
 \lx _sɤjoʁjoʁ
@@ -76380,21 +76407,35 @@ cf fstɯn
 
 \lx _tsu
 \wav vi-tsu
+\wav8 nWtanWzdWG_Zo_pWtsu
 \ps vi
-\pdl dir 
-\pdv tɤ-
-\ge se passer un certain temps, avoir le temps 
-\gn 过一段时间 
+\sn 1
+\ge avoir le temps 
+\gn 来得及
 \xv mɯ́j-tsu-a
 \xn 我来不及
 \xv pɤjkhu tɤ-rʑaʁ ɣɤʑu, ɲɯ-tsu
 \xn 还有时间，还来得及
+\sn 2
+\pdl dir 
+\pdv tɤ-
+\ge se passer ... (temps)
+\gn 到（时间）
 \xv kɯmŋu-xpa pɯ-tsu 
 \xn 已经过了五年 
 \xv kɯmŋu-xpa to-tsu
 \xn 到了五年
 \xv kɯtʂɤ-sŋi ma mɯ-jɤ-tsu-a
 \xn 我只来了六天了
+\sn 3
+\pdl dir 
+\pdv pɯ-
+\ge en arriver au point de ...
+\gn 到了……的地步
+\xv ɲɤ-nɯzdɯɣ ʑo pjɤ-tsu
+\xn 已经到了非常担心的地步了
+\xv nɤʑo ʑaʑa ʑo mɯ-jɤ-tɯ-ɤzɣɯt tɕe, nɯ-ta-nɯzdɯɣ ʑo pɯ-tsu
+\xn 你很久都不到，我已经到了很担心你的地步了
 \cf atsɯtsu
 \cf sɤtsu
 \cf sɯxtsu1
@@ -76938,6 +76979,14 @@ cf fstɯn
 \ps np
 \lf Component2 = ŋɤn
 \ps vs
+\se ɯ-rka,ɣɤŋɤn
+\xv nɤ-rka ma-tɯ-ɣɤŋɤn
+\xn 不要起坏心
+\wav8 matWGANan
+\lf Component1 = ɯ-rka
+\ps np
+\lf Component2 = ɣɤŋɤn
+\ps vt
 \dt 20/May/2013
 
 \lx _wɣrum
@@ -77779,12 +77828,18 @@ cf fstɯn
 \xv tɤ-mthɯm ɕ-tɤ-χtɯ-t-a.
 \xn 我去买肉了（已经买回来了）
 \se raχtɯ
+\wav8 pWraXtWa
+\wav8 tAraXtWa
 \ps vi
 \ng apass
 \pdl dir 
 \pdv tɤ-
 \ge acheter des choses
 \gn 买东西 
+\xv @dianhua jɤ-tɯ-lɤt ri, aʑo pɯ-raχtɯ-a
+\xn 你打电话的时候我正在买东西
+\xv nɤʑo jɤ-tɯ-ɤzɣɯt ri, aʑo tɤ-raχtɯ-a
+\xn 你到来的时候，我已经买好东西了
 \se sɯχtɯ
 \ps vt 
 \pdl dir 
@@ -79907,3 +79962,60 @@ cf fstɯn
 
 \lx _nɯtsɯm
 \cf tsɯm
+
+\lx tɕhɤtpa
+\wav8 nAtChAtpa
+\ps n
+\ge punition
+\gn 惩罚
+\et tɕʰad.pa
+\xn nɤ-tɕhɤtpa βze (=tɯ́-wɣ-znɯtɕhɤl)
+\xv 他会惩罚你的
+\cf znɯtɕhɤtpa
+\sy ɯ-tɕhɤl
+
+\lx _znɯtɕhɤtpa
+\ps vt
+\ge punir
+\gn 惩罚
+\cf tɕhɤtpa
+\sy znɯtɕhɤl
+
+\lx khrambaqe
+\wav8 def-khrambaqe
+\ps n
+\ge menteur, personne malhonnête
+\gn 骗子
+\ev tshɯrɟɯn kɯ-rɯkhramba nɯ tɕe khrambaqe tu-kɯ-ti ŋu
+\en 经常说谎的人叫做“|fv{khrambaqe}”
+\cf tɯ-qe
+
+\lx nɯfse 
+\wav8 nWfse_Zo
+\wav8 def-nWfse
+\hm 2
+\ps adv
+\sn 1
+\sn 2
+\ge malgré tout
+\gn 无论怎么样都……，不顾一切
+\xv ɲɯ-mɯtɕaʁ ri, nɯfse ʑo pɯ-rɤʑit-a pɯ-ta-nɤjo.
+\xn 虽然很冷，我还是在那里等了你
+\cf fse1
+\ev pɯ-nnɯ-sɤɣdɯɣ pɯ-nnɯsɤscit, mɤ-kɤ-nɯkon kɯ-fse nɯ tɕe nɯfse ʑo
+
+\lx _nɤjndɤt
+\ps vt
+\sn 1
+\ge trouver mignon, trouver adorable
+\gn 觉得可爱
+\sn 2
+\pdl dire
+\pdv kɤ-
+\ge taquiner
+\gn 逗着玩
+\cf sɤjndɤt
+\sy nɤsɤjndɤt
+
+\lx nɤsɤjloʁ
+\cf sɤjloʁ
