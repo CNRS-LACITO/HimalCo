@@ -38,7 +38,7 @@
 
 
 \begin{document} 
-\title{Evidentiality in Japhug: Egophoricity and Polypersonal Indexation\footnote{ The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{auto}  autobenefactive-spontaneous, \textsc{anticaus} anticausative, \textsc{antipass} antipassive, \textsc{appl} applicative, \textsc{dem} demonstrative,  \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, \textsc{pres} egophoric present, \textsc{prog} progressive, \textsc{sens} sensory. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). Acknowledgements   will be added after editorial decision. %Marc Bavant, Lauren Gawne, Simeon Floyd, Nathan W. Hill, Theo Lap, Holger Markgraf, Alexis Michaud,
+\title{Evidentiality in Japhug: Egophoricity and Polypersonal Indexation\footnote{ The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{auto}  autobenefactive-spontaneous, \textsc{anticaus} anticausative, \textsc{antipass} antipassive, \textsc{appl} applicative, \textsc{dem} demonstrative,  \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, \textsc{pres} egophoric present, \textsc{prog} progressive, \textsc{sens} sensory. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). Acknowledgements   will be added after editorial decision. %Marc Bavant, Lauren Gawne, Simeon Floyd, Nathan W. Hill, Theo Lap, Holger Markgraf, Alexis Michaud, Nicolas Tournadre
 } }
 %\author{Guillaume Jacques}
 \maketitle
@@ -85,7 +85,7 @@ no direction &\ipa{jɤ--}   &  	\ipa{ju--}   &  	\ipa{ja--}   &  	\ipa{jo--}   \
 \end{tabular}}
 \end{table}
 
-Most verbs have one intrinsic direction which is lexically determined. For instance, the verb \ipa{sat} `kill' selects the direction `down' for all its forms: \textbf{perfective} \textsc{1sg$\rightarrow$3sg} \ipa{pɯ-sat-a}, \textbf{imperfective} \ipa{pjɯ-sat}, \textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{pa-sat} and \textbf{evidential} \ipa{pjɤ-sat}. 
+Most verbs have one intrinsic direction which is lexically determined. For instance, the verb \ipa{sat} `kill' selects the direction `down' for all its forms: \textbf{Past Perfective} \textsc{1sg$\rightarrow$3sg} \ipa{pɯ-sat-a}, \textbf{Imperfective} \ipa{pjɯ-sat}, \textbf{Past Perfective} \textsc{3sg$\rightarrow$3'} \ipa{pa-sat} and \textbf{Past Inferential Perfective} \ipa{pjɤ-sat}. 
 
 Some verbs may allow several directions with slightly different semantics. Thus, \ipa{ndza} `eat'   normally   selects the  `up' direction (\textbf{perfective} \textsc{3sg$\rightarrow$3'} \ipa{ta-ndza} `he ate it'), but when applied to carnivorous animals we also find the `downstream' direction. This can lead to further aspectual distinctions. For instance, the direction `downstream', when used with stative verbs, indicates a progressive development. 
 
@@ -130,27 +130,42 @@ Stem 1 & Stem 3 \\
 Following the Leipzig glossing rules, we indicate stem 2 as [II] and stem 3 as [III] in the glosses in this paper.
 
 \subsection{Simple TAME categories} \label{sec:finite.TAM}
-There are ten basic finite TAME categories in Japhug, as represented in Table \refb{tab:finite.forms}. All finite forms except the Factual require one and only one directional prefix. All forms can be generated  by combining the appropriate derivational prefixes and stems.\footnote{For the TAM categories requiring stem 3, it is restricted to  \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' forms; all other forms take the base stem.  The person affixes  are not discussed here; for  more information on this topic, see \citet{jacques10inverse}.}
+There are ten basic finite TAME categories in Japhug, as represented in Tables \refb{tab:finite.forms} and \refb{tab:finite.forms.modal}. All finite forms except the Non-Past Factual require one and only one directional prefix. All forms can be generated  by combining the appropriate derivational prefixes and stems.\footnote{For the TAM categories requiring stem 3, it is restricted to  \textsc{1sg}$\rightarrow$3, \textsc{2sg}$\rightarrow$3 and \textsc{3sg}$\rightarrow$3' forms; all other forms take the base stem.  The person affixes  are not discussed here; for  more information on this topic, see \citet{jacques10inverse}.} 
+
+The symbol -- indicates that a tense, aspectual or evidential contrast is neutralized for a particular category. For instance, the Non-Past Factual can be for both perfective and imperfective present and future events. The Past Perfective and Imperfective are neutral for evidentiality in subordinate clauses (see section \ref{sec:pfv}), but express sensory or egophoric evidentiality in main clauses, by contrast with the corresponding Past Inferential categories.
 
 \begin{table}[H]
-\caption{Finite verb categories in Japhug Rgyalrong} \label{tab:finite.forms} \centering
+\caption{Finite non-modal verb categories in Japhug Rgyalrong} \label{tab:finite.forms} \centering
 \begin{tabular}{lllllll}
 \toprule
-&	&	stem&	prefixes\\
+Tense &   Evidentiality& Aspect &	Gloss&	stem&	prefixes\\
 \midrule
-Factual&	\textsc{fact} &	1 or 3&	no prefix\\
-Imperfective&	\textsc{ipfv} &	1 or 3&	B\\
-Perfective&	\textsc{pfv} &	2&	A or C\\
-Past Imperfective&	\textsc{pst.ipfv} &	2&	\ipa{pɯ--}\\
-Inferential&	\textsc{ifr} &	1&	D\\
-Inferential Imperfective&	\textsc{ifr.ipfv} &	1&	\ipa{pjɤ--}\\
-Sensory&	\textsc{sensory} &	1 or 3&	\ipa{ɲɯ--}\\
-Egophoric present&	\textsc{egoph} &	1 or 3&	\ipa{ku--}\\
+Non-Past & Factual & -- &	\textsc{fact} &	1 or 3&	no prefix\\
+-- & -- &Imperfective&	\textsc{ipfv} &	1 or 3&	B\\
+Past & -- & Perfective  &	\textsc{pfv} &	2&	A or C\\
+Past & -- & Imperfective &	\textsc{pst.ipfv} &	2&	\ipa{pɯ--}\\
+Past & Inferential & Perfective&	\textsc{ifr} &	1&	D\\
+Past & Inferential &Imperfective&	\textsc{ifr.ipfv} &	1&	\ipa{pjɤ--}\\
+--&Sensory & Imperfective&	\textsc{sens} &	1 or 3&	\ipa{ɲɯ--}\\
+Present & Egophoric & Imperfective&	\textsc{egoph} &	1 or 3&	\ipa{ku--}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Finite modal verb categories in Japhug Rgyalrong} \label{tab:finite.forms.modal} \centering
+\begin{tabular}{lllllll}
+\toprule
+  &	Gloss&	stem&	prefixes\\
+\midrule
 Irrealis&	\textsc{irr} &	1 or 3&	\ipa{a--} + A\\
 Imperative&	\textsc{imp} &	1 or 3&	A\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+%Irrealis&	\textsc{irr} &	1 or 3&	\ipa{a--} + A\\
+%Imperative&	\textsc{imp} &	1 or 3&	A\\
 
 A verb can only take one directional prefix in Japhug. In the case of the Past Imperfective, the Inferential Imperfective, the Sensory and the Egophoric, the intrinsic direction is neutralized. When a verb has `down', `east' or `west' as its intrinsic direction, the Past Imperfective, Sensory and Egophoric will be homophonous with the Perfective and the Imperfective respectively (examples of such ambiguous forms are given in sections \ref{sec:sens} and \ref{sec:egoph}).
 
