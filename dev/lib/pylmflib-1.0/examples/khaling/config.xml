@@ -28,13 +28,13 @@
                 <feat att="dateCoding" val="ISO-8601"/>
                 <feat att="creationDate" val="2015-01-16"/>
                 <feat att="projectName" val="ANR HimalCo"/>
-                <feat att="description" val="This is the khaling lexicon of the HimalCo project."/>
+                <!--<feat att="description" val="This is the khaling lexicon of the HimalCo project."/>-->
             </GlobalInformation>
             <Lexicon id="khaling">
                 <feat att="language" val="klr"/>
                 <feat att="languageScript" val=""/>
                 <feat att="label" val="Khaling online dictionary"/>
-                <feat att="lexiconType" val="bilingual dictionary klr-fra"/>
+                <feat att="lexiconType" val="trilingual dictionary"/>
                 <feat att="entrySource" val="./examples/khaling/result/dictionary-dev.txt"/>
                 <!-- Relative path to audio files -->
                 <feat att="localPath" val="./examples/khaling/mp3/"/>
