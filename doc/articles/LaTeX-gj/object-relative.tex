@@ -20,9 +20,14 @@
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
  
+
+
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
-\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
+%\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
+%\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
+\newcommand{\bleute}{}
+\newcommand{\rouge}{}
+
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\topic}{\textsc{dem}}
@@ -255,7 +260,7 @@ The \ipa{sɤ}-prefix (and its allomorphs \ipa{sɤz}- and \ipa{z}-) is used for n
    \begin{exe}
 \ex \label{ex:come}
 \gll \ipa{ɯ-sɤ-ɣi}    \\
-   \textsc{3sg-nmlz}:S-come \\
+   \textsc{3sg-nmlz:oblique}-come \\
  \glt  `The place/moment where/when it comes.'
  \end{exe}
  
@@ -688,15 +693,15 @@ However, data from relativization provide evidence of \textit{restrictive neutra
 &\multicolumn{3}{c}{Participial Relative Clause} & \multicolumn{2}{c}{Finite Relative Clause} \\
 Function & \ipa{kɯ-}  & \ipa{kɤ-}  & \ipa{sɤ-}  & Simple  & Relator noun \\
 \midrule
-S	& HI, PN \bleute{}& &&&& \\
-A & HI, PN \bleute{}& &&&& \\
+S	& HI, PN\bleute{}& &&&& \\
+A & HI, PN\bleute{}& &&&& \\
 \hline
 possessor & PN&&&&& \\
 \hline
-P & & HI, PN \rouge{}&& HI, PN \rouge{} &\\
-semi-object & & HI, PN \rouge{}&& HI, PN \rouge{} &\\
-T & & HI, PN \rouge{} && HI, PN \rouge{}&\\
-R (secundative) & & HI, PN \rouge{} && HI, PN \rouge{}&\\
+P & & HI, PN\rouge{}&& HI, PN\rouge{} &\\
+semi-object & & HI, PN\rouge{}&& HI, PN\rouge{} &\\
+T & & HI, PN\rouge{} && HI, PN\rouge{}&\\
+R (secundative) & & HI, PN\rouge{} && HI, PN\rouge{}&\\
 \hline 
 goal & & &HI, PN  & HI, PN  &\\
 \hline
