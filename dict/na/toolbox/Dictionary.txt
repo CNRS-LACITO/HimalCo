@@ -761,7 +761,7 @@
 \pdf
 \de Cry of defiance or provocation. It can also express triumph and exultation
 \ge °intj_défiance
-\dn 嘘！（蔑视、挑衅或欢呼的叫声）
+\dn 啊嘿嘿！（蔑视、挑衅或欢呼的叫声）
 \gn 表示蔑视的叫声
 \gr
 \df Cri qui exprime défiance ou provocation, mais également triomphe ou exultation
@@ -795,7 +795,7 @@
 \sd <lang="eng"> abstract
 \nt <lang="pumi" type="comp" print="n"> 
 \nt <type="hist" print="n"> nasalité: vérifié en août 2014
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> prior to 2015: translated as: 'amusement, enjoyment, recreation, mirth; may originally be an onomatopoeia: outburst of joy'
 \nt <type="sem"> extrait de l'expression /æ˧ʝi˩ kʰɯ˩/ 's'amuser, se distraire: parler à haute voix, chanter, crier…'
 \np
 \np <type="tone"> L#
@@ -811,17 +811,17 @@
 \pdl
 \pdv
 \pdf
-\de amusement, enjoyment, recreation, mirth; may originally be an onomatopoeia: outburst of joy
-\ge enjoyment
-\dn 娱乐
-\gn 娱乐
+\de cry
+\ge cry
+\dn 叫声
+\gn 叫声
 \gr
-\df amusement, joie; peut-être mot d'origine onomatopéique: cri de joie
-\gf amusement
+\df cri
+\gf cri
 \xv æ˧ʝi˩ kʰɯ˩
-\xe to have fun, to crack jokes, to enjoy oneself
-\xn 玩耍、开玩笑：大声聊天、唱唱歌、讲笑话……
-\xf s'amuser, se distraire: parler à haute voix, chanter, crier…
+\xe to shout
+\xn 叫
+\xf crier
 \rf
 \xv
 \xf
@@ -1400,7 +1400,7 @@
 \xf aller dehors; aller faire ses besoins
 \xv ɑ˩pʰo˩ bi˩-ze˥!
 \xe Let's go out! / I must answer the call of nature!
-\xn 出去了！ / 我去解手一下！
+\xn 出去了！ / 出去解手！
 \xf On sort! / [Je] vais faire mes besoins!
 \xv ɑ˩pʰo˩ bi˩-ʂv˥ɖv˩!
 \xe [She] wants to go out! (Context: on a sunny day, a family member senses that a toddler wants to go and play outside.)
@@ -1455,7 +1455,7 @@
 \pdf
 \de outsiders; strangers; other people
 \ge other_people
-\dn 外人，别人
+\dn 外人，别人。农村人称呼所有城里人为外面的人。
 \gn 外人
 \gr
 \df quelqu'un d'autre; une personne extérieure à la famille
@@ -2183,17 +2183,17 @@
 \pdl classifier
 \pdv kʰwɤ˥
 \pdf
-\de folk tale, tradition
-\ge folk_tale/legend
-\dn 传统故事、传说
-\gn
+\de proverb, saying, adage
+\ge proverb
+\dn 谚语、习语
+\gn 习语
 \gr
-\df conte, récit du temps jadis
-\gf légende/conte
+\df proverbe, dicton
+\gf dicton
 \xv æ˧ʂæ˧-tɑ˩mv˩ tʰv˩-kʰwɤ˩
-\xe that legend
-\xn 那个传统故事
-\xf cette légende
+\xe that proverb
+\xn 那个习语
+\xf ce dicton
 \xc PHONO
 \rf
 \xv
@@ -67201,7 +67201,7 @@ bbaeq
 \xc
 \dt 04/Sep/2015
 
-\lx mæ
+\lx mæ˧
 \sf <nb="B"> 
 \sf <nb="2011"> 
 \hm
@@ -67216,11 +67216,11 @@ bbaeq
 \sd <lang="fra"> morphosyntaxe
 \sd <lang="eng"> morphosyntax
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
+\nt <type="hist" print="n"> Lors des premières enquêtes, le ton de cette particule n'a pu être déterminé, du fait qu'elle n'apparaît qu'après /tsɯ˧˥/, de sorte que son ton est toujours imposé par le contexte. Son ton n'a pu être déterminé que grâce à l'exemple suivant : /ho˧mi˧-ʈʂʰæ˧ɣɯ˧ ʈʰɯ˧˥ ǀ le˧-qʰwɤ˧-ze˧-mæ˧ ǀ/ (Healing.66): contexte qui permet à n'importe lequel des tons L, M, H, et MH de s'exprimer, ce qui permet de conclure que le ton de la particule est M.
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
-\np Le ton de cette particule n'a pu être déterminé, du fait qu'elle n'apparaît qu'après /tsɯ˧˥/, de sorte que son ton est toujours imposé par le contexte.
-\np <type="tone"> ?
+\np 
+\np <type="tone"> M
 \nd
 \so <print="n"> F4
 \va <speaker="F4">
@@ -67240,10 +67240,11 @@ bbaeq
 \gr
 \df particule finale exprimant l'évidence
 \gf particule_exprimant_l_évidence
+\rf Healing.66
 \xv ho˧mi˧-ʈʂʰæ˧ɣɯ˧ | le˧-ʈʰɯ˩, | le˧-qʰwɤ˧-ze˧-mæ˧! |
-\xe [Nowadays] one simply takes medicines for the stomach, and one is healed! [unlike in the old times, when there were no hospitals] (from the narrative "Healing")
+\xe [Nowadays] one simply takes medicines for the stomach, and one is healed! [unlike in the old times, when there were no hospitals]
 \xn 吃了胃药，就好了呗！
-\xf On prend des médicaments pour l'estomac, et ça guérit! (extrait du récit "Healing")
+\xf On prend des médicaments pour l'estomac, et ça guérit!
 \rf
 \xv
 \xf
@@ -85334,9 +85335,9 @@ bbaeq
 \df pièce d'argent de l'époque impériale
 \gf pièce_d_argent
 \xv ə˧mi˧! | pæ˧kʰwɤ˧ so˧-ɭɯ˥ ki˩-mæ˩!
-\xe Wow! [(S)he] is giving you three silver coins!! (According to the main consultant's memories, this is the type of comment that uncles and aunts would make when a child who turned 13 received significant amounts of money on the occasion of their coming of age. The equivalent today would be about half a month's salary. To give only one coin would not be right, because gifts have to come in pairs. To give two coins is appropriate and sufficient. To give three coins is an impressive gift, beyond expectations.)
+\xe Wow! [(S)he] is giving you three silver coins!! (According to the main consultant's memories, this is the type of comment that uncles and aunts would make when a child who turned 13 received significant amounts of money on the occasion of their coming of age. The equivalent today would be about half a month's salary. To give only one coin would not be right, because gifts have to come in pairs. To give two coins is fully sufficient: a beautiful gift. To give three coins is an impressive gift, beyond expectations.)
 \xn 哇！（他）给三块银币！（在一个孩子成年时，亲戚会给银币。给一块，不合适，因为礼物不能只给一个，要给两个。给两块银币，是合适的，也是够的。给三块银币，超出期望，是大礼物了。按现在的标准/说法，三个银币等于半个月的工资左右。）
-\xf Waouuu! [Il/elle] te donne trois pièces d'argent! (D'après le souvenir qu'en a la consultante principale, c'est le type de commentaire que faisaient autrefois les tantes ou oncles d'un enfant à qui on offrait une forte somme d'argent à l'occasion de son passage à l'âge adulte, à treize ans. Cela correspondrait aujourd'hui à la moitié d'un mois de salaire. Donner une seule pièce, c'est symboliquement inapproprié: on offre par paires. Donner deux pièces, c'est approprié et suffisant. Donner trois pièces, c'est un cadeau considérable, qui dépasse les attentes.)
+\xf Waouuu! [Il/elle] te donne trois pièces d'argent! (D'après le souvenir qu'en a la consultante principale, c'est le type de commentaire que faisaient autrefois les tantes ou oncles d'un enfant à qui on offrait une forte somme d'argent à l'occasion de son passage à l'âge adulte, à treize ans. Cela correspondrait aujourd'hui à la moitié d'un mois de salaire. Donner une seule pièce, c'est symboliquement inapproprié: on offre par paires. Donner deux pièces, c'est un beau cadeau, approprié et suffisant. Donner trois pièces, c'est un cadeau considérable, qui dépasse les attentes.)
 \xv pæ˧kʰwɤ˧ ɖɯ˧-ɭɯ˥# ; pæ˧kʰwɤ˧ ɲi˧-ɭɯ˥# ; pæ˧kʰwɤ˧ so˧-ɭɯ˥#
 \xe one silver coin, two silver coins, three silver coins
 \xn 一块银币，两块银币，三块银币
@@ -161871,53 +161872,6 @@ bbaeq
 \xc
 \dt 06/Oct/2015
 
-\lx ‑qo
-\sf <nb="B"> 26
-\sf <nb="2011"> 35
-\hm
-\ph gho
-\bw
-\et
-\ec <lang="fra"> 
-\ps postp
-\sn
-\cf
-\cf <type="hm"> 
-\sd <lang="fra"> morphosyntaxe
-\sd <lang="eng"> morphosyntax
-\nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="hist" print="n"> 
-\nt <type="sem"> 
-\np ton non clarifié; n'apparaît que dans: "ici", /ʈʂʰɯ˧-qo˧/ (voc. 901), qui a un ton d1: ʈʂʰɯ˧-qo˧ ɲi˩. Ne correspond pas aux schémas réguliers qd un mot au ton m4a s'associe à un autre mot ayant un ton, ce qui offre un argument pour son analyse comme postposition plutôt que comme nom.
-\np <type="tone"> 0
-\nd
-\so <print="n"> F4
-\va <speaker="F4">
-\vf <type="tone"> 
-\va <speaker="F5">
-\vf <type="tone"> 
-\va <speaker="M18">
-\va <speaker="M21">
-\va <speaker="M23">
-\pdl
-\pdv
-\pdf
-\de in
-\ge in
-\dn 里、里面
-\gn 里
-\gr
-\df dans
-\gf dans
-\xv
-\xf
-\rf
-\xv
-\xf
-\xc
-\dt 06/Oct/2015
-
 \lx ‑ɻ˩
 \sf <nb="B"> 
 \sf <nb="2011"> 
@@ -163051,7 +163005,7 @@ bbaeq
 \xc
 \dt 06/Oct/2015
 
-\lx ‑ze˩
+\lx ‑ze˧
 \sf <nb="B"> 
 \sf <nb="2011"> 3354
 \hm
@@ -163066,11 +163020,11 @@ bbaeq
 \sd <lang="fra"> morphosyntaxe
 \sd <lang="eng"> morphosyntax
 \nt <lang="pumi" type="comp" print="n"> 
-\nt <type="hist" print="n"> ton analysé comme L à partir de 2014 (auparavant: notation prudente/timorée: sans ton), à la vue de séquences comme /hĩ˧ tɕʰi˧ tʰɑ˧-mɤ˧-ʝi˧-ze˩/: au vu du comportement de ce qui précède, il ne semble pas que la particule reçoive son ton L des morphème précédents, ce qui amène à lui reconnaître un ton lexical L.
+\nt <type="hist" print="n"> ton analysé comme L à partir de 2014 (auparavant: notation prudente/timorée: sans ton), à la vue de séquences comme /hĩ˧ tɕʰi˧ tʰɑ˧-mɤ˧-ʝi˧-ze˩/: au vu du comportement de ce qui précède, il ne semble pas que la particule reçoive son ton L des morphème précédents, ce qui amène à lui reconnaître un ton lexical L. Mais l'expression qui précède peut contenir un ton H qui, quoique non exprimé, a pour effet d'abaisser ce qui suit. En décembre 2015, au vu des analyses exposées dans l'ouvrage, j'en reviens à une analyse comme ayant un ton M (ou ton non spécifié).
 \nt <type="hist" print="n"> 
 \nt <type="sem"> 
 \np
-\np <type="tone"> L
+\np <type="tone"> M
 \nd
 \so <print="n"> F4
 \va <speaker="F4">
