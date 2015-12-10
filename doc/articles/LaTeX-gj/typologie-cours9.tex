@@ -1,0 +1,145 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=15mm,
+ }
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{{\large\mo{#1}}}
+\newcommand{\rc}{}
+\newcommand{\tete}{}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\begin{document}
+Exemples de katoukina tirés de Queixalós (2011, 2012)
+
+ \begin{exe}
+\ex  
+\gll  (piya) daan \\
+homme partir \\
+ \glt   L'homme est parti.
+\end{exe}
+ 
+ \begin{exe}
+\ex  
+\gll  daan (ityaro-na=tyo)  \\
+ partir femme-??= fille \\
+ \glt   La fille de la femme est partie.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll  daan (yo-tyo)  \\
+ partir \textsc{1sg.poss}-fille \\
+ \glt   Ma fille est partie.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll  pi:da-na= ti (paiko)   \\
+jaguar-??= tuer grand.père \\
+ \glt   Le jaguar a tué le grand-père.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll yo-pu tu (barahai) \\
+\textsc{1sg.poss}-manger \textsc{neg} gibier \\
+ \glt   Je n'ai pas mangé le gibier.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll wa-pu tu adu \\
+???-manger \textsc{neg} \textsc{1sg} \\
+ \glt   Je n'ai pas mangé.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll  (piya) wa-pu (barahai) \\
+homme ???-manger gibier \\
+ \glt   L'homme a mangé le gibier.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll  yo-wahak (barahai)  \\
+\textsc{1sg.poss}-cuire gibier \\
+ \glt   J'ai cuit le gibier.
+\end{exe}
+
+ \begin{exe}
+\ex  
+\gll  bak tu yo-wahak nyan  \\
+bon \textsc{neg} \textsc{1sg.poss}-cuire \textsc{dem} \\
+ \glt   Ce que j'ai cuit n'est pas bon.
+\end{exe}
+ \begin{exe}
+\ex  
+\gll  
+yo-hik nyan waokdyi-nin anyan piya \\
+\textsc{1sg.poss}-avoir \textsc{dem}   arriver-\textsc{dépendent} cet homme \\
+\glt Je connais l'homme qui est arrivé.
+ \end{exe}
+ \begin{exe}
+\ex  
+\gll  
+yo-hik nyan Nodia-na= dahudyi-nin tukuna\\
+\textsc{1sg.poss}-avoir \textsc{dem} n.p.-??= amener-\textsc{dépendent} homme \\
+\glt Je connais l'homme que Nodia a amené.
+ \end{exe}
+ 
+  \begin{exe}
+\ex  
+\gll  
+yo-hik nyan piya wa-dahudyi-nin Hiowai \\
+\textsc{1sg.poss}-avoir \textsc{dem} homme ???-amener-\textsc{dépendent} n.p. \\
+\glt Je connais l'homme qui a amené Hiowai.
+ \end{exe}
+ 
+ 
+\end{document}
+
