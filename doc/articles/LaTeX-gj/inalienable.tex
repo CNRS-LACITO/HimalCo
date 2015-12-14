@@ -1,0 +1,172 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+ 
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+%\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
+%\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
+\newcommand{\bleute}{}
+\newcommand{\rouge}{}
+
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+\usepackage{endnotes}
+\let\footnote=\endnote 
+
+
+\begin{document} 
+ \title{How did natural phenomena become inalienable nouns in Gyalrong languages?}
+ \author{Guillaume Jacques}
+ \maketitle
+ 
+ 
+ \section{Introduction}
+
+\section{Possessive prefix and inalienably possessed nouns}
+
+
+The same set of possessive prefixes (see Table \ref{tab:pronoun}) is used for all nouns, but inalienably possessed nouns cannot be used on their own without one of these prefixes. When there is no definite possessor, the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--} are used. It is the citation form of inalienably possessed nouns (\ipa{tɤ-muj} `feather', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle'). The choice of the prefix \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  
+
+When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-muj} `its feather', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle'). 
+
+
+
+\begin{table}[H] \centering
+\caption{Pronouns and possessive prefixes }\label{tab:pronoun}
+\begin{tabular}{lllllllll} 
+\toprule
+ Free pronoun & Prefix & Person\\
+\midrule
+ \ipa{aʑo},    \ipa{aj} &	\ipa{a--}  &		1\textsc{sg} \\
+\ipa{nɤʑo},  \ipa{nɤj} &	\ipa{nɤ--}  &			2\textsc{sg}\\
+\ipa{ɯʑo}  &	\ipa{ɯ--}  &			3\textsc{sg}\\
+\midrule
+\ipa{tɕiʑo}  &	\ipa{tɕi--}  &			1\textsc{du} \\
+\ipa{ndʑiʑo}  &	\ipa{ndʑi--}  &		2\textsc{du} \\	
+\ipa{ʑɤni}  &	\ipa{ndʑi--}  &		3\textsc{du} \\	
+\midrule
+\ipa{iʑo}, \ipa{iʑora},   \ipa{iʑɤra}   &	\ipa{i--}  &			1\textsc{pl} \\
+\ipa{nɯʑo}, \ipa{nɯʑora},   \ipa{nɯʑɤra}  &	\ipa{nɯ--}  &			2\textsc{pl} \\
+\ipa{ʑara}  &	\ipa{nɯ--}  &			3\textsc{pl} \\
+\midrule
+&  \ipa{tɯ--},  \ipa{tɤ--} & indefinite \\
+\ipa{tɯʑo} & \ipa{tɯ--}   &  generic\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+It is possible to turn an inalienably possessed noun into an alienably possessed one by prefixing a definite possessive prefix to the indefinite one; compare the forms \ipa{tɤ-muj} `feather' `its feather' (growing on its own body as in \ref{ex:Wmuj}, or from its own body as in \ref{ex:nWmuj}) vs \ipa{ɯ-tɤ-muj} `his/its feather' (not from his/its own body, taken from a bird, as in examples \ref{ex:atAmuj} and \ref{ex:WtAmuj1}).
+
+
+\begin{exe}
+\ex \label{ex:Wmuj}
+\gll 
+\ipa{nɯ} 	\ipa{ɯ-jme} 	\ipa{ɣɯ} 	\ipa{ɯ-muj} 	\ipa{nɯ} 	\ipa{ɲɯ-zri} \\
+\textsc{dem} \textsc{3sg.poss}-tail \textsc{gen} \textsc{3sg.poss}-feather \textsc{dem}  \textsc{sens}-be.long \\
+\glt `The feathers on its tail are very long.' (22 kumpGa, 50)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:nWmuj}
+\gll 
+\ipa{qajdo} 	\ipa{ɯ-taʁ} 	\ipa{ʑara} 	\ipa{ɣɯ} 	\ipa{nɯ-muj} 	\ipa{kɤ-kɤ-nɯ-sɤtsa} 	\ipa{nɯra} 	\ipa{ɲɤ-nɯ-phɯt-nɯ} \\
+crow \textsc{3sg}-on \textsc{3pl} \textsc{gen} \textsc{2/3pl.poss}-feather \textsc{pfv-nmlz:P-auto}-plant \textsc{dem:pl} \textsc{ifr-auto}-take.off-\textsc{pl} \\
+\glt `They plucked off the crow their feathers that he had planted on himself.' (tulao de wuya, 38)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:atAmuj}
+\gll 
+\ipa{a-tɤ-muj} 	\ipa{nɯ} 	\ipa{ɯ-thoʁ} 	\ipa{pɯ-azɣɯt} 	\ipa{ɕti} \\
+\textsc{1sg.poss-indef.poss}-feather \textsc{dem}  \textsc{3sg.poss}-ground \textsc{pfv:down}-arrive be.\textsc{affirmative:fact} \\
+\glt The boy said:) `My feather fell on the ground.' (140510, sanpian sheye, 40)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:WtAmuj1}
+\gll \ipa{qajdo}  	\ipa{ɯ-βri}  	\ipa{nɯ} \ipa{tɕu}  	\ipa{kɤ-kɯ-mpɕɤr}  	\ipa{ɣɯ}  	\ipa{ɯ-tɤ-muj}  	\ipa{nɯ}  	 	\ipa{lonba}  	\ipa{ɲɤ-me-nɯ}  \\
+crow \textsc{3sg.poss}-body \textsc{dem} \textsc{loc} \textsc{pfv-nmlz}:S/A-be.beautiful \textsc{gen} \textsc{3sg.poss-indef.poss}-feather  \textsc{dem} all \textsc{ifr}-not.exist-pl \\
+\glt `The feathers (that he used to make himself beautiful) on the crow's body were all gone.' (tulao de wuya, 41)
+\end{exe}
+
+ 
+The indefinite possessive prefixes should not be confused with the generic possessive prefix \ipa{tɯ--}, which can be added to any noun, and which is coreferent with the argument marked with generic marking on the verb, as in example \refb{ex:tWrpW}. Note also that inalienably possessed nouns that select the indefinite possessive prefix \ipa{tɤ--} have \ipa{tɯ--} instead when the possessor is generic (\ipa{tɤ-rpɯ} `an uncle' vs \ipa{tɯ-rpɯ} `one's uncle').
+
+\begin{exe}
+\ex \label{ex:tWrpW}
+\gll
+ \ipa{tɯ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{tɕe} 	``\ipa{a-rpɯ} \ipa{a-ɬaʁ}" 	\ipa{tu-kɯ-ti} 	\ipa{ŋu.} \\
+\textsc{genr.poss}-uncle \textsc{3sg.poss}-offspring \textsc{3sg-dat} \textsc{lnk} \textsc{lnk} \textsc{1sg.poss}-uncle \textsc{1sg.poss}-aunt \textsc{ipfv-genr}-say  be:\textsc{fact} \\
+\glt One has to say ``my maternal uncle, my maternal aunt" to one's maternal uncle's sons and daughters. (140425 kWmdza01, 69)
+\end{exe}
+
+ 
+\section{Deinalienabilization}
+
+\ipa{tɯ-mɯ} `sky, rain', examples shown
+
+\begin{exe}
+\ex 
+\gll
+\ipa{jɯfɕɯr} 	\ipa{ji-mɯ} 	\ipa{pɯ-pe} \\
+yesterday \textsc{1pl.poss}-sky \textsc{pst.ipfv}-be.good \\
+\glt We had nice weather yesterday.
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll
+\ipa{ɯ-ndzɯ} 	\ipa{mɤ-kɯ-sɤŋo} 	\ipa{ɯ-mɯ} 	\ipa{mbɯt} \\
+\textsc{3sg.poss}-instruction \textsc{neg-nmlz}:S/A-listen.to \textsc{3sg.poss}-sky collapse:\textsc{fact} \\
+\glt Those who don't heed other people's advice don't end well.
+\end{exe}
+
+
+No dental stop presyllable in conservative languages like Dulong \ipa{mŭʔ⁵⁵ } `sky' (\citealt[207]{sunhk82dulong})
+
+
+unlike:
+
+ \ipa{tɯ³¹ wɑ̆n⁵³ } = \ipa{tɤjpa} `snow'
+ 
+ \ipa{tɯ³¹ mɑ̆ɹ⁵⁵  } `oil' = \ipa{ta-mar} `butter' 
+ 
+Tibetan \ipa{dmu} inconclusive
+
+\ipa{tɯ-ci} `water'
+
+%\ipa{ɯ-thoʁ} `ground'
+ 
+ 
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
