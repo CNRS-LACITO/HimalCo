@@ -232,15 +232,6 @@
 \xn 两个人在说话，很吵
 \dt 27/Aug/2015
 
-\lx βdaχpu
-\ps n
-\ge hôte, maître de maison 
-\gn 主人 
-\hbf 212 
-\et bdag.po
-\cf nɯβdaχpu
-\dt 28/Aug/2012
-
 \lx βdaʁ,βzu
 \wav n-BdaR
 \ge s'occuper de ses tâches 
@@ -254,6 +245,15 @@
 \cf nɯβdaʁ
 \cf βzu1
 \dt 04/Aug/2012
+
+\lx βdaχpu
+\ps n
+\ge hôte, maître de maison 
+\gn 主人 
+\hbf 212 
+\et bdag.po
+\cf nɯβdaχpu
+\dt 28/Aug/2012
 
 \lx βdaχtɕɤl
 \ps n
@@ -1107,6 +1107,12 @@
 \xn 偶尔下雨，偶尔不下
 \dt 19/Apr/2013
 
+\lx cischiz
+\ps pro
+\ge n'importe où, à un certain endroit
+\gn 在某个地方，随便在哪个地方 
+\dt 07/Aug/2014
+
 \lx ciz tɕe
 \ps adv
 \ge à un moment futur
@@ -1380,12 +1386,6 @@
 \gn 煤 
 \hbf 58
 \dt 29/Dec/2011
-
-\lx cischiz
-\ps pro
-\ge n'importe où, à un certain endroit
-\gn 在某个地方，随便在哪个地方 
-\dt 07/Aug/2014
 
 \lx cɯχɕiz
 \ps n
@@ -5457,7 +5457,7 @@
 \cf ɯ-kɤcu
 \hbf maison
 
-\lx khɤku raŋri
+\lx khɤku roŋri
 \ps n
 \ge chaque maison
 \gn 每一户
@@ -5853,6 +5853,15 @@
 \ge pommette
 \gn 酒窝 
 \dt 24/Apr/2013
+
+\lx khrambaqe
+\wav8 def-khrambaqe
+\ps n
+\ge menteur, personne malhonnête
+\gn 骗子
+\ev tshɯrɟɯn kɯ-rɯkhramba nɯ tɕe khrambaqe tu-kɯ-ti ŋu
+\en 经常说谎的人叫做“|fv{khrambaqe}”
+\cf tɯ-qe
 
 \lx khrɤlmu
 \ps n
@@ -9833,6 +9842,9 @@
 \cf ʁarphɤβ
 \dt 19/Aug/2015
 
+\lx nɤsɤjloʁ
+\cf sɤjloʁ
+
 \lx nɤsnɯndo
 \wav8 kAnAsnWndota
 \ps vt
@@ -10264,17 +10276,6 @@
 \gn 那个 
 \hbf 942
 
-\lx _nɯβlɯz
-\ps vt
-\pdl dir
-\pdv pɯ-
-\ge réciter par cœur, faire sans modèle
-\gn 背诵；不用模型地做
-\xv kɤ-rɤt pɯ-nɯβlɯz-a ɕti
-\xn 我没有样板也画出来了
-\cf tɯ-βlɯz
-\dt 18/Aug/2015
-
 \lx nɯdrɯβ
 \wav8 nWdrWB
 \ps vt
@@ -10284,6 +10285,24 @@
 \xn 水牛把妖精一次又一次地顶了
 \cf drɯβ
 \dt 15/May/2012
+
+\lx nɯfse 
+\wav8 nWfse_Zo
+\wav8 def-nWfse
+\hm 2
+\ps adv
+\sn 1
+\ge comme cela, sans but
+\gn 就这样；笼统地；没有目标地
+\xv nɯfse ɕ-tu-nɤŋkɯŋke-a ŋu
+\xn 我就这样（没有目标地）逛街
+\sn 2
+\ge malgré tout
+\gn 无论怎么样都……，不顾一切
+\xv ɲɯ-mɯtɕaʁ ri, nɯfse ʑo pɯ-rɤʑit-a pɯ-ta-nɤjo.
+\xn 虽然很冷，我还是在那里等了你
+\cf fse1
+\ev pɯ-nnɯ-sɤɣdɯɣ pɯ-nnɯsɤscit, mɤ-kɤ-nɯkon kɯ-fse nɯ tɕe nɯfse ʑo
 
 \lx nɯɣe
 \ps part
@@ -12091,11 +12110,6 @@
 \gn 岩洞 
 \dt 16/Apr/2012
 
-\lx praχpa
-\ps n
-\ge caverne sous la falaise
-\gn 岩洞
-
 \lx praʁsrɯm
 \a praʁʂɯm
 \ps n
@@ -12120,6 +12134,11 @@
 \ge grotte
 \gn 山洞
 \dt 16/Apr/2012
+
+\lx praχpa
+\ps n
+\ge caverne sous la falaise
+\gn 岩洞
 
 \lx prɤftsa
 \wav n-prAftsa
@@ -15110,7 +15129,7 @@
 \xn 他20年前学了四土话
 \dt 28/Apr/2012
 
-\lx raŋri
+\lx roŋri
 \wav n-roNri
 \wav8 roNri
 \ps adv
@@ -15668,7 +15687,7 @@
 \dt 04/May/2014
 
 \lx rɯri
-\cf raŋri
+\cf roŋri
 \dt 21/Aug/2015
 
 \lx rɯrtsi
@@ -16761,15 +16780,6 @@
 \et gral
 \dt 02/May/2012
 
-\lx sɤxphɤn
-\wav n-sAGphAn
-\ps n
-\ge avantage 
-\gn 好处 
-\xv tɕhi pjɯ́-wɣ-nɤβzjɯβzjoz ʑo ɯ-sɤxphɤn tu ɕti wo 
-\xn 学什么都有用
-\dt 02/May/2012
-
 \lx sɤjku
 \wav n-sAjku
 \ps n
@@ -16969,6 +16979,15 @@
 \gn 地方 
 \hbf 22 
 \et sa.tɕʰa
+\dt 02/May/2012
+
+\lx sɤxphɤn
+\wav n-sAGphAn
+\ps n
+\ge avantage 
+\gn 好处 
+\xv tɕhi pjɯ́-wɣ-nɤβzjɯβzjoz ʑo ɯ-sɤxphɤn tu ɕti wo 
+\xn 学什么都有用
 \dt 02/May/2012
 
 \lx sɤxtɕɯɣ
@@ -17959,12 +17978,6 @@
 \hbf plante2 
 \et sog.ma
 
-\lx soχpu
-\ps n
-\ge mongol 
-\gn 蒙古人 
-\et sog.po
-
 \lx soskɯsku
 \a soskuku
 \wav adv-soskWsku
@@ -17973,6 +17986,12 @@
 \gn 每天早上 
 \hbf 925
 \dt 02/May/2012
+
+\lx soχpu
+\ps n
+\ge mongol 
+\gn 蒙古人 
+\et sog.po
 
 \lx soz
 \ps adv
@@ -18334,11 +18353,12 @@
 \cf sɤz
 \dt 16/Oct/2014
 
-\lx staχpɯqajɯ
+\lx staʁrɟɤnma
 \ps n
-\ge espèce de chenille
-\gn 毛虫的一种
-\dt 25/Aug/2012
+\ge bol 
+\gn 瓷碗，画着佛像的图案 
+\hbf objet traditionel 
+\et stag rgʲan.ma
 
 \lx staχpɯ
 \wav n-staRpW
@@ -18357,6 +18377,12 @@
 \hbf plante
 \dt 05/May/2012
 
+\lx staχpɯqajɯ
+\ps n
+\ge espèce de chenille
+\gn 毛虫的一种
+\dt 25/Aug/2012
+
 \lx staχpɯrɟɤskhi
 \wav n-staRpWrJAskhi
 \ps n
@@ -18366,13 +18392,6 @@
 \xv staχpɯrɟɤskhi nɯ sɯjno kɯ-ʁjɤr ɯ-ŋgɯ tu-ɬoʁ ŋu, ɯ-jwaʁ kɯ-ɤrtɯ-rtɯm kɯ-xtɕɯ-xtɕi ŋu, ɯ-rme kɯ-fse tu, jaʁ tsa. ɯ-ru kɯ-xtɯ-xtɯt ma me, ɯ-mɯntoʁ staχpɯ mɯntoʁ fse tɕe kɯ-ɣɯrni ɲɯ-lɤt ŋu. ɯ-mat nɯ ɯ-cɤβ chɯ-βze ŋu. fsapaʁ ra kɯ tu-ndza-nɯ sna, tɯrme kɤ-ndza mɤ-sna. 
 \xn |fv{staχpɯ rɟɤskhi} 生长茂盛的草丛里，叶子圆圆的、小小的，上面有毛。叶子有点厚。只有短短的茎，花像豌豆的一样，是红色的，结的是荚果。牲畜可以吃，人不能吃。
 \dt 05/May/2012
-
-\lx staʁrɟɤnma
-\ps n
-\ge bol 
-\gn 瓷碗，画着佛像的图案 
-\hbf objet traditionel 
-\et stag rgʲan.ma
 
 \lx stɤβtshɤt
 \ps n
@@ -21784,17 +21803,17 @@ l
 \cf ɣɤrʁaʁ
 \cf nɤrʁaʁ
 
+\lx tɤrʁaʁɕa
+\ps n
+\ge viande issue de la chasse 
+\gn 猎物的肉 
+\dt 06/May/2014
+
 \lx tɤrʁaʁkɕi
 \wav n-tarRaRkCi
 \ps n
 \ge chien de chasse
 \gn 猎狗
-\dt 06/May/2014
-
-\lx tɤrʁaʁɕa
-\ps n
-\ge viande issue de la chasse 
-\gn 猎物的肉 
 \dt 06/May/2014
 
 \lx tɤ-rtaʁ
@@ -22994,13 +23013,6 @@ l
 \sy rɟara
 \dt 02/Jul/2014
 
-\lx tɕhaχpu
-\ps n
-\ge handicapé
-\gn 残疾人
-\cf ɯ-tɕhaʁ2
-\dt 31/Aug/2015
-
 \lx tɕhaʁra
 \wav n-tChaRra
 \wav n-tChaRradi
@@ -23014,6 +23026,13 @@ l
 \ps n
 \ge attelle
 \gn （骨折）夹板
+\dt 31/Aug/2015
+
+\lx tɕhaχpu
+\ps n
+\ge handicapé
+\gn 残疾人
+\cf ɯ-tɕhaʁ2
 \dt 31/Aug/2015
 
 \lx tɕhaχɯ
@@ -23132,6 +23151,17 @@ l
 \gn 约会
 \xv tɕhɤt nɯ-βzu-tɕi
 \xn 我们俩约了时间
+
+\lx tɕhɤtpa
+\wav8 nAtChAtpa
+\ps n
+\ge punition
+\gn 惩罚
+\et tɕʰad.pa
+\xn nɤ-tɕhɤtpa βze (=tɯ́-wɣ-znɯtɕhɤl)
+\xv 他会惩罚你的
+\cf znɯtɕhɤtpa
+\sy ɯ-tɕhɤl
 
 \lx tɕhɤz
 \ps vs
@@ -23728,6 +23758,12 @@ l
 \an tɕʁɯβnɤtɕʁɯβ
 \dt 06/May/2014
 
+\lx tɕɯlɤβ
+\ps n
+\ge pipe
+\gn 烟斗
+\dt 05/May/2014
+
 \lx tɕɯxpa
 \ps n
 \ge conclue, réglée (affaire) 
@@ -23735,12 +23771,6 @@ l
 \xv tɕɯxpa pɯ-nɯ-rku-tɕi 
 \xn 我们把事情定好了
 \dt 14/Jul/2014
-
-\lx tɕɯlɤβ
-\ps n
-\ge pipe
-\gn 烟斗
-\dt 05/May/2014
 
 \lx tɕɯχtsi
 \ps n
@@ -23965,6 +23995,15 @@ l
 \xn 榔头是石匠的工具，是用来修理石头的，头是铁作成，把子是一节木棒。
 \dt 06/May/2012
 
+\lx thɤwum
+\ps n
+\ge une espèce d'arbre 
+\gn 乔木的一种【马鹿柴】 
+\hbf plante 
+\xv thɤwum nɯ si kɯ-mbro kɯ-jpum tsa ci ŋu, aʁɤndɯndɤt ʑo tu-ɬoʁ cha. wuma ʑo ɲɯ-ɤɣɯrtɯrtaʁ cha. ɯ-jwaʁ artɯm tɕe ɯ-ku lu-omtɕoʁ ŋu. si ɯ-ru cho ɯ-rtaʁ nɯ kɯ-ɣɯrni ŋu. ɯ-si mɤ-ngɯt, ndoʁ, sna me, kɤ-nɯβlɯ kɯnɤ khro mɤ-pe, ɯ-mɯntoʁ kɯ-wɣrum ɲɯ-lɤt ŋu. ɯ-mɯntoʁ ɯ-jɯ nɯ zri tsa ɯ-mat thɯ-tɯt tɕe kɯ-ɣɯrni ʂɣɤlʂɣɤl ʑo kɯ-pa ŋu, laŋlaŋ ɯ-mat cho naχtɕɯɣ, tɕeri kɤ-ndza mɤ-sna ma wuma ʑo qiaβ. 
+\xn 马鹿柴是长得又高又粗的树种，到处都可以生长，长很多枝条。叶子是圆形的，一头尖。树干和树枝都是紫红色的。木质不结实，很脆，不能做什么材料，连烧火都不好。开白色的花。花梗有点长。果实成熟时是红而透明的，像|fv{laŋlaŋ}的果实，但是不能吃，因为很苦。
+\dt 05/May/2014
+
 \lx thɣe
 \wav n-thGe
 \ps n
@@ -24022,15 +24061,6 @@ l
 \gn 铁块（陨石）
 \ev thoʁltɕi nɯ tɯ-mɯ kɤrŋi kɯ thoʁ pɯ-kɤ-lɤt ŋu tu-kɯ-ti ɲɯ-ŋu
 \dt 13/May/2014
-
-\lx thɤwum
-\ps n
-\ge une espèce d'arbre 
-\gn 乔木的一种【马鹿柴】 
-\hbf plante 
-\xv thɤwum nɯ si kɯ-mbro kɯ-jpum tsa ci ŋu, aʁɤndɯndɤt ʑo tu-ɬoʁ cha. wuma ʑo ɲɯ-ɤɣɯrtɯrtaʁ cha. ɯ-jwaʁ artɯm tɕe ɯ-ku lu-omtɕoʁ ŋu. si ɯ-ru cho ɯ-rtaʁ nɯ kɯ-ɣɯrni ŋu. ɯ-si mɤ-ngɯt, ndoʁ, sna me, kɤ-nɯβlɯ kɯnɤ khro mɤ-pe, ɯ-mɯntoʁ kɯ-wɣrum ɲɯ-lɤt ŋu. ɯ-mɯntoʁ ɯ-jɯ nɯ zri tsa ɯ-mat thɯ-tɯt tɕe kɯ-ɣɯrni ʂɣɤlʂɣɤl ʑo kɯ-pa ŋu, laŋlaŋ ɯ-mat cho naχtɕɯɣ, tɕeri kɤ-ndza mɤ-sna ma wuma ʑo qiaβ. 
-\xn 马鹿柴是长得又高又粗的树种，到处都可以生长，长很多枝条。叶子是圆形的，一头尖。树干和树枝都是紫红色的。木质不结实，很脆，不能做什么材料，连烧火都不好。开白色的花。花梗有点长。果实成熟时是红而透明的，像|fv{laŋlaŋ}的果实，但是不能吃，因为很苦。
-\dt 05/May/2014
 
 \lx thoχtɤm
 \wav n-thoXtAm
@@ -33395,19 +33425,6 @@ l
 \cf ɟɯɣɟɯɣ
 \dt 04/Mar/2014
 
-\lx ʑɯxsa
-\ps n
-\ge siège, place où l'on s'assoit (honorifique) 
-\gn 座位（敬语） 
-\et bʑugs.sa
-
-\lx ʑɯxsɯr
-\ps n
-\ge fruit de la bardane 
-\gn 牛蒡子 
-\hbf plante
-\cf tɤtɕɯβraʁ
-
 \lx ʑɯmkhɤm
 \a ʑɯŋkhɤm
 \ps n
@@ -33448,6 +33465,19 @@ l
 \xn 他们俩逐渐变得越来越富裕
 \cf ɯ-ʑɤrʑɯr
 \dt 10/Apr/2014
+
+\lx ʑɯxsa
+\ps n
+\ge siège, place où l'on s'assoit (honorifique) 
+\gn 座位（敬语） 
+\et bʑugs.sa
+
+\lx ʑɯxsɯr
+\ps n
+\ge fruit de la bardane 
+\gn 牛蒡子 
+\hbf plante
+\cf tɤtɕɯβraʁ
 
 \lx _aβdɤβde
 \ps vi
@@ -36596,6 +36626,9 @@ l
 \an βʁum
 \dt 07/May/2014
 
+\lx _anɯɕqhɯɕqhu
+\cf nɯɕqhu
+
 \lx _anɯɣbɯɣbɯɣ
 \cf nɯɣbɯɣ
 \dt 29/Nov/2011
@@ -37959,10 +37992,6 @@ l
 \ge se ramasser, se blottir
 \gn 缩成一团
 
-\lx _ʑɣɤsɤrʁɯrʁu
-\cf arʁɯrʁu
-
-
 \lx _artaʁ
 \ps vi
 \pdl dir 
@@ -38793,20 +38822,6 @@ l
 \xn 烧黑椒的时候会让人打喷嚏
 \dt 20/Aug/2012
 
-\lx _atɕɯtʂi
-\wav vi-atCitsxi
-\ps vi
-\pdl dir 
-\pdv _
-\ge se produire en même temps 
-\gn 几件事同时进行；状况没有改变
-\xv nɤ-kɯ-mŋɤm kɯ-mna ɯ-ɲɯ-ɤtɕɯtʂi
-\xn 你的病继续好转吗？
-\xv ɲɯ-ɤtɕɯtʂi ɕti
-\xn 没有变化
-\cf sɤtɕɯtʂi
-\dt 17/May/2014
-
 \lx _atɕɯmthɯt
 \ps vi
 \pdl dir 
@@ -38848,6 +38863,20 @@ l
 \xv laχtɕha koŋla tɤ-rɤwum ma tɯ-sɤtɕɯtɕit
 \xn 你要把东西带全，不要带漏
 \dt 04/Sep/2015
+
+\lx _atɕɯtʂi
+\wav vi-atCitsxi
+\ps vi
+\pdl dir 
+\pdv _
+\ge se produire en même temps 
+\gn 几件事同时进行；状况没有改变
+\xv nɤ-kɯ-mŋɤm kɯ-mna ɯ-ɲɯ-ɤtɕɯtʂi
+\xn 你的病继续好转吗？
+\xv ɲɯ-ɤtɕɯtʂi ɕti
+\xn 没有变化
+\cf sɤtɕɯtʂi
+\dt 17/May/2014
 
 \lx _atɕɯxtaʁ
 \cf taʁ2
@@ -42215,6 +42244,11 @@ l
 \pdv thɯ-
 \ge aiguiser les couteaux
 \gn 磨刀
+\se sɤfsɯfse
+\ge frotter ... l'un contre l'autre
+\gn 把……互相摩擦
+\xv ɯ-jaʁ to-sɤfsɯfse
+\xn 他搓了搓手
 \dt 25/Dec/2012
 
 \lx _fskɤr
@@ -45627,6 +45661,7 @@ l
 \xv pɯ-ɣɤtɕa-a tɤ-ti 
 \xn 你要承认自己做错了
 \an ɣɤŋgi
+\cf nɯɣɤtɕa
 \se zɣɤtɕa
 \ps vt
 \pdl dir 
@@ -49591,6 +49626,19 @@ l
 \xn 他活到80岁
 \dt 06/Dec/2010
 
+\lx _mdzar
+\wav8 pWmdzara-def
+\ps vt
+\pdl dir
+\pdv pɯ-
+\ng caus
+\ge égoutter, essorer
+\gn 滗干
+\ng caus
+\ev ``pɯ-mdzara" nɯnɯ, a-pɯ-ŋu tɕe, mbrɤz kɯ-fse lo, @cai kɯ-fse nɯnɯra tɕe, ɯ-ŋgɯ tɯ-ci kɯ-tu nɯra pjɯ́-wɣ-sɤrɕo tɕe, nɯnɯ ``pɯ-mdzara" tu-kɯ-ti ŋu.
+\cf ndzar
+\sy sɯɣndzar
+
 \lx _mdzɤz
 \wav vi-mdzAz
 \wav8 znAmdzAz
@@ -50063,6 +50111,11 @@ l
 \xv nɤ-kɤ-nɤma tɤ-mɲo-t-a
 \xn 我准备了你的工作
 \sy nɯftɕaka
+\se sɯmɲo
+\ps vt
+\ng caus 
+\ge faire préparer
+\gn 让……准备好
 \se rɤmɲo
 \ps vi
 \ng apass
@@ -52018,6 +52071,19 @@ l
 \xn 他把我从梦中叫醒了
 \cf tɤjmŋozdɯɣ
 \dt 27/Aug/2015
+
+\lx _nɤjndɤt
+\ps vt
+\sn 1
+\ge trouver mignon, trouver adorable
+\gn 觉得可爱
+\sn 2
+\pdl dire
+\pdv kɤ-
+\ge taquiner
+\gn 逗着玩
+\cf sɤjndɤt
+\sy nɤsɤjndɤt
 
 \lx _nɤjno
 \ps vi
@@ -55918,6 +55984,8 @@ l
 \xn 洗了菜以后要放在簸箕里，不然就不能变干
 \xv nɤ-ŋga nɯ-tɯ-χtɕi tɕe a-tɤ-tɯ-ɕɯɴqoʁ tɕe, tɕe kɤ-ndzar cha 
 \xn 洗了衣服以后一定要把它挂起来才能变干
+\cf kɯndzarmɯ
+\cf mdzar
 \se sɯɣndzar
 \ps vt
 \ng caus
@@ -55925,9 +55993,7 @@ l
 \gn 把……滤干
 \xv mbrɤz tɤ́-wɣ-χtɕi tɕe, kɤ-sɯɣndzar ra
 \xn 淘了米就要把它滤干
-\cf kɯndzarmɯ
-\cf ndzar
-\dt 26/Aug/2012$
+\dt 26/Aug/2012
 
 \lx _ndzɤβ
 \wav vi-ndzaB-b
@@ -56969,6 +57035,17 @@ l
 \cf ɯ-βlu
 \dt 24/Aug/2015
 
+\lx _nɯβlɯz
+\ps vt
+\pdl dir
+\pdv pɯ-
+\ge réciter par cœur, faire sans modèle
+\gn 背诵；不用模型地做
+\xv kɤ-rɤt pɯ-nɯβlɯz-a ɕti
+\xn 我没有样板也画出来了
+\cf tɯ-βlɯz
+\dt 18/Aug/2015
+
 \lx _nɯβra
 \ps vt
 \pdl dir
@@ -57285,22 +57362,33 @@ l
 \dt 30/Mar/2015
 
 \lx _nɯɕqhu
-\wav vt-nWCqhu
+\wav8 tukWnWCqhua 
 \ps vt
+\sn 1
 \pdl dir 
 \pdv _
-\sn 1
 \ge tourner le dos à
 \gn 转身背向别人
 \xv khɯɣɲɟɯ ku-nɯɕqhe-a ŋu
 \xn 我背向窗子
 \sn 2
-\ge trahir
-\gn 背叛
-\xv tɯkrɤz kɯ-pɯ-pe ʑo tɤ-nɯ-βzu-tɕi pɯ-ɕti ri, tɤ-mda tɕe nɤʑo kɯ tu-kɯ-nɯɕqhu-a ɲɯ-ŋu
-\xn 我们商量得好好的，到了时候你就背叛我了
+\pdl dir 
+\pdv tɤ-
+\ge trahir, revenir sur sa parole
+\gn 背叛；违背约定；违反约定
+\xv nɤʑo tu-kɯ-nɯɕqhu-a ɲɯ-ŋu
+\xn 你背叛我
+\sy nɯɣɤtɕa
 \an nɯʁɤri
 \cf znɯɕqhɯɕqhu
+\se anɯɕqhɯɕqhu
+\wav8 maNWCqhWCqhutCi
+\ps vi
+\ng recip
+\ge revenir chacun sur sa parole
+\gn 互相违背（约定的事情）
+\xv tɯkrɤz tɤ-βzu-tɕi ŋu tɕe, mɤ-anɯɕqhɯɕqhu-tɕi ra nɤ!
+\xn 我们商量好了，不要违背约定
 \dt 03/Aug/2012
 
 \lx _nɯɕtar
@@ -57514,6 +57602,18 @@ l
 \xn 你不要跟你父母顶嘴
 \sy nɯkhɤja
 \dt 20/Jan/2015
+
+\lx _nɯɣɤtɕa
+\wav8 pjAkWnWGAtCaa
+\ps vt
+\pdl dir
+\pdv pɯ-
+\ge revenir sur sa parole
+\gn 违反约定
+\xv jɯfɕɯr tɯkrɤz kɯ-βdɯ-βdi tɤ-nɯ-βzu-tɕi ɕti ri, nɤʑo pjɤ-kɯ-nɯɣɤtɕa-a.
+\xn 我们昨天商量得好好的，但是你违反了约定
+\sy nɯɕqhu
+\cf ɣɤtɕa
 
 \lx _nɯɣbɯɣ
 \wav vt-nWGbWG
@@ -61977,6 +62077,9 @@ l
 \cf tshɤtʂot
 \dt 05/Aug/2014
 
+\lx _nɯtsɯm
+\cf tsɯm
+
 \lx _nɯtsɯʁot
 \ps vi
 \pdl dir 
@@ -62351,6 +62454,17 @@ l
 \xn 我让他担心了
 \dt 05/Oct/2014
 
+\lx _nɯzdɯsŋɤl
+\ps vi
+\pdl dir
+\pdv pɯ-
+\ge supporter toutes sortes de difficultés
+\gn 受尽苦难
+\xv kɯ-rtaʁ ʑo pɯ-nɯzdɯsŋal-a
+\xn 我受够了苦难
+\cf tɤzdɯɣ
+\dt 26/Aug/2015
+
 \lx _nɯzdɯxpa
 \a znɯzdɯxpa
 \wav vt-nWzdWGpa
@@ -62366,17 +62480,6 @@ l
 \xn 他很穷，我觉得很可怜
 \cf sɤzdɯxpa
 \dt 13/Jul/2014
-
-\lx _nɯzdɯsŋɤl
-\ps vi
-\pdl dir
-\pdv pɯ-
-\ge supporter toutes sortes de difficultés
-\gn 受尽苦难
-\xv kɯ-rtaʁ ʑo pɯ-nɯzdɯsŋal-a
-\xn 我受够了苦难
-\cf tɤzdɯɣ
-\dt 26/Aug/2015
 
 \lx _nɯzgomdʑo
 \wav vi-nWzgomdZo
@@ -67856,6 +67959,7 @@ l
 \dt 27/Aug/2015
 
 \lx _rɯcɤβŋgɤβ
+\wav8 kArWcANgAB
 \ps vs
 \pdl dir
 \pdv tɤ-
@@ -67866,6 +67970,8 @@ l
 \xn 你不要骄傲
 \xv tɤ-rɯcɤβŋgaβ-a
 \xn 我在他面前骄傲了一下
+\xv ɯʑo kɤ-rɯcɤŋgɤβ mɤ-spe
+\xn 他不会骄傲自大
 \dt 03/Sep/2015
 
 \lx _rɯcɯnmu
@@ -70056,6 +70162,9 @@ cf fstɯn
 \sy sɤfsu
 \dt 24/Aug/2012
 
+\lx _sɤfsɯfse
+\cf fse2
+
 \lx _sɤftɕaka
 \wav vt-sAftCAka
 \ps vt
@@ -70296,6 +70405,15 @@ cf fstɯn
 \lx _sɤjwɤrlɤr
 \cf ɣɤjwɤrlɤr
 \dt 09/Oct/2015
+
+\lx _sɤɟɯɣlɯɣ
+\ps vt
+\pdl dir
+\pdv tɤ-
+\ge hausser (les épaules)
+\gn 耸（肩）
+\xv ɯ-rpaʁ ra to-sɤɟɯɣlɯɣ
+\xn 他耸了一下肩
 
 \lx _sɤɟɯɟrɯɣ
 \cf ɣɤɟɯɟrɯɣ
@@ -72180,26 +72298,6 @@ cf fstɯn
 \cf atɕhɯz
 \dt 02/Sep/2011
 
-\lx _sɤtɕɯtʂi
-\wav vt-sAtCitsxi
-\wav8 sAtCitsxi
-\ps vt
-\pdl dir 
-\pdv _
-\ge continuer, aller directement sans s'arrêter, en profiter pour faire quelque chose d'autre 
-\gn 继续；直接过去（可以停的地方没有停），顺便做另外一件事 
-\xv tha-sɤtɕɯtʂi, la-sɤtɕɯtʂi
-\xn 他顺便带了
-\xv tɯpri kɤ-ti tɤ-sɤtɕɯtʂi-t-a
-\xn 我顺便转告了口信
-\xv ma-tɤ-tɯ-znɯne kɯ pɯ-sɤtɕɯtʂi 
-\xn 你不要停下來，一定要做下去
-\xv tɤ-nɯsɤtɕɯtʂi-nɯ jɤɣ ma aʑɯɣ mɤ-ʁdɯɣ
-\xn 你们继续（吃），不用管我
-\xv kɤ-nɤma tɤ-sɤtɕɯtʂi jɤɣ
-\xn 你继续工作吧
-\dt 17/May/2014
-
 \lx _sɤtɕɯɣtaʁ
 \cf taʁ2
 \dt 23/Oct/2011
@@ -72260,6 +72358,26 @@ cf fstɯn
 \lx _sɤtɕɯtɕit
 \cf atɕɯtɕit
 \dt 03/Sep/2011
+
+\lx _sɤtɕɯtʂi
+\wav vt-sAtCitsxi
+\wav8 sAtCitsxi
+\ps vt
+\pdl dir 
+\pdv _
+\ge continuer, aller directement sans s'arrêter, en profiter pour faire quelque chose d'autre 
+\gn 继续；直接过去（可以停的地方没有停），顺便做另外一件事 
+\xv tha-sɤtɕɯtʂi, la-sɤtɕɯtʂi
+\xn 他顺便带了
+\xv tɯpri kɤ-ti tɤ-sɤtɕɯtʂi-t-a
+\xn 我顺便转告了口信
+\xv ma-tɤ-tɯ-znɯne kɯ pɯ-sɤtɕɯtʂi 
+\xn 你不要停下來，一定要做下去
+\xv tɤ-nɯsɤtɕɯtʂi-nɯ jɤɣ ma aʑɯɣ mɤ-ʁdɯɣ
+\xn 你们继续（吃），不用管我
+\xv kɤ-nɤma tɤ-sɤtɕɯtʂi jɤɣ
+\xn 你继续工作吧
+\dt 17/May/2014
 
 \lx _sɤtɕɯxtʂot
 \cf atɕɯxtʂot
@@ -73156,6 +73274,7 @@ cf fstɯn
 \wav vt-spa
 \wav8 tuti_Wspe
 \wav8 spa
+\wav8 kArWcANgAB
 \ps vt
 \pdl dir 
 \pdv kɤ-
@@ -73183,6 +73302,8 @@ cf fstɯn
 \xn 我要学会（用藏语）讲话
 \xv nɤʑo tɤ-rʑaʁ thɤstɯɣ jamar kɤ-βzjoz kɤ-tɯ-spa-t?
 \xn 你学了多久才学会了？
+\xv ɯʑo kɤ-rɯcɤβŋgɤβ mɤ-spe
+\xn 他不会骄傲自大（没有那个性格）
 \se sɯspa
 \wav vt-sWspa
 \ps vt
@@ -73303,7 +73424,13 @@ cf fstɯn
 \xv tɯ-ci kɯ kɤ́-wɣ-sphjaʁ-a
 \xn 我被淋湿了
 \se sɯsphjaʁ
+\wav8 kusWsphjaR
 \ps vt
+\ng habil
+\ge traverser
+\gn 穿透
+\xv tɤtʂu ɯ-tɯ-fsoʁ kɯ tɯ-ŋga ra ku-sɯsphjaʁ ɲɯ-ɕti
+\xn 灯光穿透衣服
 \xv tɯ-rju kɤ-sɯsphjaʁ mɯ-pɯ-cha-a
 \xn 我说了一句，但他们没有理睬我
 \dt 12/Feb/2014
@@ -74339,6 +74466,9 @@ cf fstɯn
 \xv to-sɯmdʑɯtɕoʁ
 \xn 她跪下了
 \dt 25/Aug/2011
+
+\lx _sɯmɲo
+\cf mɲo
 
 \lx _sɯmɲo
 \wav vt-sWmYo
@@ -77548,6 +77678,16 @@ cf fstɯn
 \gn 互相观察（行为）
 \xv ma-tɯ-ɤχpɯ-χpjɤt-nɯ
 \xn 你们不要互相学
+\se ʑɣɤχpjɤt
+\wav8 kAnWZGAXpjAt
+\ps vi
+\pdl dir 
+\pdv kɤ-
+\ng refl
+\ge s'observer
+\gn 观察自己
+\xv nɤʑo kɤ-nɯ-ʑɣɤχpjɤt tɕe, tɤ-wa ɯ-ɲɯ-tɯ-fse kɯ?
+\xn 你观察一下自己，是不是像一个父亲的样子
 \dt 27/Aug/2015
 
 \lx _χsɤl
@@ -78852,6 +78992,13 @@ cf fstɯn
 \cf nɯtɕhɤl
 \dt 19/Mar/2011
 
+\lx _znɯtɕhɤtpa
+\ps vt
+\ge punir
+\gn 惩罚
+\cf tɕhɤtpa
+\sy znɯtɕhɤl
+
 \lx _znɯtɯfɕɤl
 \cf nɯtɯfɕɤl
 \dt 09/May/2013
@@ -79523,6 +79670,10 @@ cf fstɯn
 \cf arqhi
 \dt 24/Aug/2015
 
+\lx _ʑɣɤsɤrʁɯrʁu
+\cf arʁɯrʁu
+
+
 \lx _ʑɣɤsɤstɤko
 \cf sɤstɤko
 
@@ -79705,6 +79856,9 @@ cf fstɯn
 \lx _ʑɣɤxthom
 \cf xthom
 \dt 22/Mar/2014
+
+\lx _ʑɣɤχpjɤt
+\cf χpjɤt
 
 \lx _ʑɣɤχtɕi
 \cf χtɕi
@@ -79998,63 +80152,3 @@ cf fstɯn
 \xv ki tɯ-ŋga tɤ-ŋga-t-a tɕe, ɲɯ-mpja tɕe pɯ-ʑɯm
 \xn 我穿了这件衣服，很暖很舒服
 \dt 01/Nov/2011
-
-\lx _nɯtsɯm
-\cf tsɯm
-
-\lx tɕhɤtpa
-\wav8 nAtChAtpa
-\ps n
-\ge punition
-\gn 惩罚
-\et tɕʰad.pa
-\xn nɤ-tɕhɤtpa βze (=tɯ́-wɣ-znɯtɕhɤl)
-\xv 他会惩罚你的
-\cf znɯtɕhɤtpa
-\sy ɯ-tɕhɤl
-
-\lx _znɯtɕhɤtpa
-\ps vt
-\ge punir
-\gn 惩罚
-\cf tɕhɤtpa
-\sy znɯtɕhɤl
-
-\lx khrambaqe
-\wav8 def-khrambaqe
-\ps n
-\ge menteur, personne malhonnête
-\gn 骗子
-\ev tshɯrɟɯn kɯ-rɯkhramba nɯ tɕe khrambaqe tu-kɯ-ti ŋu
-\en 经常说谎的人叫做“|fv{khrambaqe}”
-\cf tɯ-qe
-
-\lx nɯfse 
-\wav8 nWfse_Zo
-\wav8 def-nWfse
-\hm 2
-\ps adv
-\sn 1
-\sn 2
-\ge malgré tout
-\gn 无论怎么样都……，不顾一切
-\xv ɲɯ-mɯtɕaʁ ri, nɯfse ʑo pɯ-rɤʑit-a pɯ-ta-nɤjo.
-\xn 虽然很冷，我还是在那里等了你
-\cf fse1
-\ev pɯ-nnɯ-sɤɣdɯɣ pɯ-nnɯsɤscit, mɤ-kɤ-nɯkon kɯ-fse nɯ tɕe nɯfse ʑo
-
-\lx _nɤjndɤt
-\ps vt
-\sn 1
-\ge trouver mignon, trouver adorable
-\gn 觉得可爱
-\sn 2
-\pdl dire
-\pdv kɤ-
-\ge taquiner
-\gn 逗着玩
-\cf sɤjndɤt
-\sy nɤsɤjndɤt
-
-\lx nɤsɤjloʁ
-\cf sɤjloʁ
