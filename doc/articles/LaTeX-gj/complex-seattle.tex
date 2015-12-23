@@ -1,0 +1,79 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+ \newcommand{\ipab}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+ 
+
+ \begin{document} 
+\title{The life cycle of doubly conjugated verbs in Sino-Tibetan}
+%\author{Guillaume Jacques}
+\maketitle
+
+
+Kiranti languages are well-known for having a class of complex predicates combining a lexical verb with an auxiliary, which share some of their person indexation and TAM markers. Example (\ref{ex:ityodzyoyi}) from Khaling shows the verb root |tA| `put'\footnote{See \citealt{jacques12khaling} for an account of stem alternations in Khaling.} combined with the auxiliary |-dzA| `keep on' grammaticalized from the verb |dzA| `eat'. The verb and the auxiliary share the second person prefix \ipa{ʔi-}, but the suffixes remain distinct: the auxiliary receives the full form of the suffix \ipa{-ji}, while the lexical verb has a reduced form \ipa{-j-}. This kind of verb form will henceforth be referred to as a \textit{doubly conjugated verb}.
+
+\begin{exe}
+\ex \label{ex:ityodzyoyi}
+\gll \ipa{ʔi-tɵ-j-dzɵ-ji}\\
+2/\textsc{inv}-put-\textsc{du.incl}-keep.on-\textsc{du.incl} \\
+\glt You_{du} keep on putting it.
+\end{exe}
+
+Doubly conjugated verbs may have been an intermediate stage between a serial verb construction and full bleaching of the auxiliary, for instance in the case of the associated motion verb construction in Rgyalrong languages (\citealt{jacques13harmonization}). However, we also find in Rgyalrong a nascent complex predicate construction that offers a model of how doubly conjugated verbs may come into being.
+
+There are in Japhug a few complex predicates with two verbs roots which must appear together in a fixed order, and between which no conjuction can be inserted, as `be innocent', which combines the morphologically transitive roots \ipa{spa} and \ipa{rka} in the negative form with the auxiliary \ipa{me} `not exist', as in \ref{ex:mAspea}.\footnote{The stem \ipa{spa} independently exists as a transitive verb meaning `be able', but \ipa{rka} is not attested outside of this complex predicate.}
+
+\begin{exe}
+\ex \label{ex:mAspea}
+\gll \ipa{mɤ-spe-a} \ipa{mɤ-rke-a} \ipa{me} \\
+\textsc{neg}-be.innocent(1)[III]:\textsc{fact}-\textsc{1sg} \textsc{neg}-be.innocent(2)[III]:\textsc{fact}-\textsc{1sg} not.exist:\textsc{fact} \\
+\glt I am innocent.
+\end{exe} 
+
+In the second person form however, we find two possible realizations, either (\ref{ex:mAtWspe1}) or (\ref{ex:mAtWspe2}). 
+
+\begin{exe}
+\ex \label{ex:mAtWspe1}
+\gll \ipa{mɤ-tɯ-spe} \ipa{mɤ-tɯ-rke} \ipa{me} \\
+\textsc{neg}-2-be.innocent(1)[III]:\textsc{fact} \textsc{neg}-2-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+\glt You_{sg} are innocent.
+\end{exe} 
+
+\begin{exe}
+\ex \label{ex:mAtWspe2}
+\gll \ipa{mɤ-tɯ-spe-rke} \ipa{me} \\
+\textsc{neg}-2-be.innocent(1)[III]-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+\glt You_{sg} are innocent.
+\end{exe} 
+
+Examples such as (\ref{ex:mAtWspe2}) show that the verb-verb complex predicates in Japhug are in the process of becoming doubly conjugated verbs like those observed in Kiranti; the two verb roots share all their prefixes, and each still keeps its own stem alternation, as observed in Kiranti languages.
+
+The study of this marginal and little investigated phenomenon (the only references discussing such complex predicates in Rgyalrong languages are \citealt{sun12complementation} and  \citealt{jacques13harmonization}) can shed light on the genesis of doubly conjugated verbs in Kiranti and beyond (examples from Siouan will be discussed). 
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+ \end{document}
+ 
