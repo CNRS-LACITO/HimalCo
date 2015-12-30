@@ -13350,8 +13350,12 @@
 \lx qhoχpa
 \wav n-qhoXpa
 \ps n
-\ge organes, état d'esprit 
-\gn 心脏，性情 
+\sn 1
+\ge organes
+\gn 内脏
+\sn 2
+\ge état d'esprit 
+\gn 性情 
 \hbf corps
 \dt 20/Apr/2012
 
@@ -13643,6 +13647,25 @@
 \xv kɯki laχtɕha ki aʑo raŋ ɣɯ pɯ-kɯ-nɯ-tɯ-tu ɕti
 \xn 这个东西是我自己曾经有过的
 \dt 01/May/2012
+
+\lx raŋri
+\wav n-roNri
+\wav8 roNri
+\ps adv
+\ge chacun 
+\gn 每个 
+\hbf 926 
+\et raŋ.re
+\xv kɤndza thɯ́-wɣ-kro tɕe, tɯrme raŋri ɣɯ ɲɯ́-wɣ-kho ra
+\xn 分食物的时候，要分给每一个人
+\xv tɯrme raŋri ɣɯ nɯ-mɲaʁ tu ɕti
+\xn 每个人有眼睛
+\se rɯri
+\ps adv
+\ge chacun 
+\gn 每个
+\et re.re 
+\dt 21/Aug/2015
 
 \lx raŋɯŋi
 \wav ideo-raN-g
@@ -15128,25 +15151,6 @@
 \xv ɣnɤsqi-xpa ɕɯŋgɯ zɯ roŋba-skɤt pjɤ-βzjoz
 \xn 他20年前学了四土话
 \dt 28/Apr/2012
-
-\lx raŋri
-\wav n-roNri
-\wav8 roNri
-\ps adv
-\ge chacun 
-\gn 每个 
-\hbf 926 
-\et raŋ.re
-\xv kɤndza thɯ́-wɣ-kro tɕe, tɯrme raŋri ɣɯ ɲɯ́-wɣ-kho ra
-\xn 分食物的时候，要分给每一个人
-\xv tɯrme raŋri ɣɯ nɯ-mɲaʁ tu ɕti
-\xn 每个人有眼睛
-\se rɯri
-\ps adv
-\ge chacun 
-\gn 每个
-\et re.re 
-\dt 21/Aug/2015
 
 \lx roŋwa
 \wav n-roNwa
@@ -17274,6 +17278,15 @@
 \sy chɤmda
 \sy chɤci
 \dt 01/Sep/2012
+
+\lx skɤnɲɟɯr
+\wav8 skAnYJWr
+\ps n
+\ge mélodie 
+\gn 曲调
+\xv nɯ rɤɣo nɯ ɣɯ ɯ-skɤnɲɟɯr ɲɯ-mpɕɤr
+\xn 那首歌的曲子很好听
+\et skad.ⁿgʲur
 
 \lx skɤrlɤm
 \ps n
@@ -26559,7 +26572,7 @@ l
 \xn 喝了酒的人的嘴，瞌睡的人的屁（酒话是心理话）
 \xv nɤ-mtɕhi mɤ-mpɕɤr
 \xn 你讲话很不客气（没有甜言蜜语）
-\cf tɯ-mtɕhi,ɣɤχo
+\cf tɯ-mtɕhi,χo
 \dt 24/Aug/2015
 
 \lx tɯ-mtɕhirme
@@ -26568,11 +26581,23 @@ l
 \gn 胡子，胡须 
 \hbf 86
 
-\lx tɯ-mtɕhi,ɣɤχo
+\lx tɯ-mtɕhi,χo
+\wav8 WmtChi_YWXo
 \pdl dir
 \pdv tɤ-
 \ge fanfaronner
 \gn 说大话
+\xv ɯ-mtɕhi ɲɯ-χo
+\xn 他爱说大话
+\lf Component1 = tɯ-mtɕhi
+\ps np
+\lf Component2 = χo
+\ps vs
+\se tɯ-mtɕhi,ɣɤχo
+\ge fanfaronner
+\gn 说大话
+\xv ɯ-mtɕhi ɲɯ-ɣɤχɤm
+\xn 他在说大话
 \xv a-mtɕhi ku-ɣɤχam-a
 \xn 我正在说大话
 \lf Component1 = tɯ-mtɕhi
@@ -28916,6 +28941,8 @@ l
 \cf japa
 \cf ɣɯjpa
 \hbf 913
+\xv kɯmŋu-xpa to-tsu (=kɯmŋu-xpa ɲɤ-ɕe)
+\xn 过了五年
 
 \lx tɯxpalɤskɤr
 \ps adv
@@ -37389,6 +37416,17 @@ l
 \xn 挂面成了碎片
 \xv a-@chabei pjɤ-ɴɢrɯ tɕe ɲɤ-k-ɤrɤɲɟiɲɟi-ci
 \xn 我的茶杯破了，成了碎片
+\se zrɤɲɟiɲɟi
+\wav8 pWzrAYJiYJita
+\ps vt
+\pdl dir 
+\pdv pɯ-
+\pdl dir 
+\pdv nɯ-
+\ge briser en mille morceaux
+\gn 打得粉碎
+\xv χɕɤl nɯra pɯ-zrɤɲɟiɲɟi-t-a ʑo
+\xn 我打碎了玻璃
 \dt 20/Apr/2013
 
 \lx _arɤɲɯɣ
@@ -40664,6 +40702,13 @@ l
 \gn 排过去
 \xv tɤrɲɟo nɯ jɯɣi ʁɟa ʑo ku-ɕe ɲɯ-ŋu
 \xn 架子上排过去的全都是书
+\sn 6
+\pdl dir 
+\pdv nɯ-
+\ge se passer (temps)
+\gn 过（时间）
+\xv kɯmŋu-xpa ɲɤ-ɕe
+\xn 过了五年
 \cf ari
 \cf sɯxɕe
 \cf tɯ-sɯm,ɕe
@@ -42351,6 +42396,8 @@ l
 \wav vt-fsroN
 \ps vt
 \pdl dir 
+\pdv tɤ-
+\sn 1
 \ge sauver
 \gn 救……一命
 \hbf 1147 
@@ -42365,8 +42412,17 @@ l
 \xn 在我生病的时候，他救了我的命
 \xv a-sroʁ pɯ-sɤɣʑɯr ri tɤ́-wɣ-fsroŋ-a ŋu
 \xn 在我生命垂危的时候，他救了我
+\sn 2
+\ge protéger
+\gn 保护
 \sy tɯ-sroʁ,ri
-\dt 20/Aug/2015
+\se ʑɣɤfsraŋ
+\ps vi
+\ng refl
+\pdl dir 
+\pdv tɤ-
+\ge se protéger
+\gn 保护自己
 
 \lx _fstɤt
 \wav vt-fstAt
@@ -79380,6 +79436,10 @@ l
 \lx _ʑɣɤfɕɤt
 \cf fɕɤt1
 \dt 26/Aug/2015
+
+\lx _ʑɣɤfsraŋ
+\cf fsraŋ
+
 
 \lx _ʑɣɤfstɯn
 \cf fstɯn
