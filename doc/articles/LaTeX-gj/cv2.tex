@@ -1,0 +1,127 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+%\setmainlanguage{french}
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=15mm,
+ }
+\usepackage{bibentry}
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%%%%%%%%%quelques options de style%%%%%%%%
+%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
+%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
+%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
+%\chapterstyle{veelo}
+%\setsecnumdepth{subsubsection}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ \newcommand{\ipapl}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
+
+
+ 
+\begin{document}
+ \sloppy
+\section*{{\LARGE Curriculum Vitae}}
+Guillaume Jacques, Directeur de recherche 2, CNRS (CRLAO, UMR 8563).  Né le 16 septembre 1979 à Paris, marié, un fils.
+\sloppy
+\section*{Compétences et centres d’intérêt}
+Documentation de langues en danger (japhug, khaling, stau), linguistique historique (sino-tibétain, indo-européen, sémitique, algonquien, sioux), typologie morphosyntaxique (incorporation, voix et valence, systèmes d'indexation complexes, pivots syntaxiques), linguistique panchronique (principes généraux des changements phonétiques, de la grammaticalisation et des changements analogiques), morphologie computationnelle.
+
+
+\section*{Parcours professionnel}
+\begin{itemize}
+\item 2009-2015 Chargé de recherche au CNRS (CR1), Centre de recherches linguistiques sur l'Asie Orientale (UMR 8563)
+\item 2005-2009 Maître de conférences, Université Paris Descartes, département de sciences du langage.
+\end{itemize}
+ 
+\section*{Activités éditoriales}
+\begin{itemize}
+\item Rédacteur en chef de la revue \textit{Cahiers de Linguistique -- Asie orientale} (Brill, depuis 2013) et futur responsable de la linguistique historique à partir de 2015 pour la revue \textit{Linguistic Vanguard} (Mouton de Gruyter)
+\item membre du comité éditorial de \textit{Diachronica} (Benjamins, depuis 2008) et de \textit{Linguistics of the Tibeto-Burman Area}  (Benjamins, depuis 2014).
+\item Relecteur pour les revues suivantes (en plus des précédentes): \textit{Lingua}, \textit{Linguistic Typology}, \textit{Studies in Language}, \textit{Folia Linguistica}, \textit{Journal of the International Phonetic Alphabet},  \textit{Language and Linguistics}, \textit{Transactions of the Philological Society}, \textit{Journal of Chinese Linguistics}, \textit{SKY journal of linguistics}, \textit{Langages}, \textit{Yuyanxue luncong} \zh{语言学论丛}
+\end{itemize}
+
+\section*{Thèses soutenues}
+\begin{itemize}
+\item 2015. Gao Yang, EHESS, \textit{Description de la langue muya} (Sino-tibétain, birmo-qianguique, en co-direction avec Laurent Sagart). Mention \textit{très honorable avec félicitation du jury}.
+\end{itemize}
+
+\section*{Thèses en cours}
+\begin{itemize}
+\item 2013-présent. Gong Xun, Normale supérieure-INALCO, \textit{Etude descriptive et historique de la langue zbu} (Sino-tibétain, birmo-qianguique)
+\item 2013-présent. Lai Yunfan, Paris 3, \textit{Grammaire du Kroskyabs} (Sino-tibétain, birmo-qianguique,en co-direction avec Pollet Samvelian)
+\end{itemize}
+\section*{Projets de recherche}
+\begin{itemize}
+\item 2008-2012: Projet ANR \textbf{PASQi} (avec Katia Chirkova (porteur) et Alexis Michaud) 
+\item  2013-2015: Projet ANR Corpus \textbf{HimalCo} (porteur du projet; avec Alexis Michaud, Aimée Lahaussois et Séverine Guillaume) (\url{http://himalco.hypotheses.org/})
+\item 2010-présent: Responsable de l'opération PPC2-\textit{Evolutionary approaches to phonology} et de l'opération LR4.11-\textit{Automatic paradigm generation and language description} dans le cadre du Labex \textit{Empirical Foundations of Linguistics}.(\url{http://www.labex-efl.org/?q=fr/recherche/axe6})
+\end{itemize}
+ 
+     
+\section*{Invitations à l'étranger}
+\begin{itemize}
+\item   2010 (janvier-juin) Visiting scholar, Research Centre for Linguistic Typology, LaTrobe University, Melbourne, Australie.
+ \item   \textbf{séminaires invités}:  Université de Genève (2003),  Université d'Oxford (2009), School of Oriental and African Studies, Londres (2011), Université de Berne (2012),  Université de Zürich (2013).
+ \item \textbf{conférences invitées}: Université Fudan, Shanghai (2005), Academia Sinica, Taiwan (2008, 2009 et 2010), Musée d'Ethnologie, Osaka (2009), School of Oriental and African Studies, Londres (2013), Université de Washington à Seattle (2013),  Université de Cambridge (2014).
+  \end{itemize}
+    \bibliographystyle{unified}
+  \nobibliography{bibliogj.bib}
+\section*{Publications}
+
+    \begin{enumerate}
+    \item Monographies: Brill (1), Minzu chubanshe (1) ; Participations à des volumes collectifs: Mouton de Gruyter (1), Brill (3)
+\item Revues A : \textit{Linguistic Inquiry} (1), \textit{Lingua} (3), \textit{Studies in Language} (1), \textit{Linguistic Typology} (1), \textit{Diachronica} (2), \textit{Anthropological Linguistics} (1), \textit{Bulletin of the School of Oriental and African Studies} (3),  \textit{Cahiers de linguistique d’Asie Orientale} (3), \textit{Etudes mongoles et sibériennes, centrasiatiques et tibétaines} (1), \textit{Journal of Chinese Linguistics} (3)
+\item Revues B : \textit{Folia Linguistica Historica} (2), \textit{Transactions of the Philological Society} (1), \textit{Journal of the American Oriental Society} (1), \textit{Linguistics of the Tibeto-Burman Area} (4), \textit{Minzu yuwen} (3), \textit{Amerindia} (1), \textit{Faits de langues} (1), \textit{La linguistique} (1), \textit{Central Asiatic Journal} (1)
+\item Revues C : \textit{Language and Linguistics Compass} (1) 
+\item Autre revues :   \textit{Language and Linguistics} (5; Q2 dans Scimago),   \textit{Studia Etymologica Cracoviensia} (1), \textit{Revue d'études tibétaines} (2)
+\end{enumerate}
+
+    \subsection*{5 publications principales}
+
+      \begin{enumerate}
+\item {\bibentry{jacques14antipassive}}
+\item  \bibentry{jacques14esquisse}
+\item {\bibentry{jacques14auditory}}
+\item {\bibentry{antonov14need}}
+\item {\bibentry{jacques13harmonization}}
+  \end{enumerate}
+  
+     \subsection*{5 publications les plus récentes}
+           \begin{enumerate}
+ \item {\bibentry{jacques15khaling}}
+\item  \bibentry{jacques15japhug}
+\item {\bibentry{jacques15causative}}
+\item {\bibentry{jacques15spontaneous}}
+\item {\bibentry{jacques15sr}}
+  \end{enumerate}
+  
+\end{document}
