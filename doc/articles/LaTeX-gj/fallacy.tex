@@ -23,7 +23,7 @@
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\charis[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
 
 
@@ -45,11 +45,10 @@
 
 
 \begin{document} 
-\title{Tangut, Gyalrongic and the nature of person indexation in Sino-Tibetan/Trans-Himalayan}
-%\author{Guillaume Jacques}
+\title{Tangut, Gyalrongic and the nature of person indexation in Sino-Tibetan/Trans-Himalayan\footnote{I would like to thank Scott DeLancey, Nathan Hill, Boyd Michailovsky and two anonymous reviewers for useful comments on previous versions of this paper. I am responsible for any misunderstanding and error that remain in this work. This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). Glosses follow the Leipzig glosses rules, to which the following are added: \textsc{antierg} antiergative, \textsc{dir} direct, \textsc{hon} honorific, \textsc{inv} inverse, \textsc{pot} potentialis, sens \textsc{sensory}}}
+\author{Guillaume Jacques}
 \maketitle
 \linenumbers 
-%Scott DeLancey, Nathan Hill, Boyd Michailovsky
 
 \textbf{Abstract}: The aim of this paper is to dispel a certain number of common misconceptions concerning the person indexation systems of Trans-Himalayan languages. First, it argues that the oft-repeated view that personal affixes are derived from pronouns, rather than the other way round, is not be as obvious as it seems at first glance. Second, it shows that person indexation in Tangut, the oldest Trans-Himalayan language with person indexation, is not optional, despite repeated claims to the contrary. Third, it demonstrates that person indexation in Gyalrongic and Kiranti is sensitive to grammatical relations, and that can in no way be analyzed as `speech act participant involvement' marking.
 
@@ -60,9 +59,9 @@ Trans-Himalayan / Sino-Tibetan is probably one of the typologically most diverse
 
 There is not yet any consensus regarding how to interpret this diversity. Some scholars (\citealt{bauman75}, \citealt{delancey89agreement}, \citealt{driem93agreement}, \citealt{delancey10agreement}, \citealt{delancey11prefixes}, \citealt{jacques12agreement}) believe that the complex verbal morphology of Gyalrongic and Kiranti can be reconstructed back (at least in part) to proto-Trans-Himalayan. Another group of scholars (\citealt{lapolla92},  \citealt{lapolla03}, \citealt{lapolla12comments}, \citealt{zeisler15eat}) propose that little verbal morphology can be reconstructed back to proto-Trans-Himalayan, and that the complex person indexation systems of Gyalrongic and Kiranti were relatively grammaticalized from the accretion of pronouns, a view that takes its origin in Hodgson's pioneering research on these languages in the mid-nineteenth century, for which he coined the term `pronominalizing languages' (see for instance  \citealt{hodgson57sifan})
 
-While the debate is far from settled, this paper aims at correcting some recurrent imprecisions and errors in the literature concerning Tangut (the oldest attested Trans-Himalayan language with person indexation) and Gyalrongic. 
+While the debate is far from settled, this paper aims at correcting some recurrent imprecisions and errors in the literature concerning Tangut (the oldest attested Trans-Himalayan language with person indexation) and Gyalrongic.
 
-First, I address the issue of the term `Pronominalizing language', which I suggest should be avoided, as it promotes an overly simplistic and linear view of grammaticalization. Second, I discuss the person indexation system of Tangut, and show that it is neither optional nor transparent, as has been repeatedly claimed in several publications. Third,  using first-hand data from Japhug Gyalrong, I falsify the idea that person indexation in Trans-Himalayan languages is based on `person involvement' rather than syntactic relations.
+First, I address the issue of the term `Pronominalizing language', which I suggest should be avoided, as it promotes an overly simplistic and linear view of grammaticalization. Second, I discuss the person indexation system of Tangut, and show that it is neither optional nor transparent, as has been repeatedly claimed in several publications. Third, using first-hand data from Japhug Gyalrong, I falsify the idea that person indexation in Trans-Himalayan languages is based on `person involvement' rather than syntactic relations.
 
 \section{General considerations}
 Although still in current use in some circles (for instance by \citealt{zeisler15eat}), the term `pronominalized'  is inadequate to refer to refer to Trans-Himalayan languages with person indexation for three reasons.
@@ -71,13 +70,12 @@ First, whatever the actual antiquity of the person indexation systems in Trans-H
 
 Second, although in some Trans-Himalayan languages such as Kuki-Chin productive person markers are identical (and probably derive from) possessive prefixes or pronouns, it is not the case everywhere, in particular in Kiranti and Gyalrong languages where, in particular, the second person prefixes cannot be shown to derive from pronouns (\citealt{jacques12agreement}, \citealt{delancey11prefixes} and \citealt{delancey14second}).
 
-Third, the hypothesis that, whenever pronouns, possessive markers and person indexation markers present resemblances, the latter must be derived from the former is not necessarily true: the opposite direction of grammaticalization is also attested. 
+Third, the hypothesis that, whenever pronouns, possessive markers and person indexation markers present resemblances, the latter must be derived from the former is not necessarily true.  While cases of degrammaticalization of person markers into pronouns are admittedly very rare (though not unattested, see \citealt{norde09degrammaticalization, hyman11macrosudan}), in some languages pronouns are build by a conjugated verbal stem, or a possessed nominal stem. 
  
-It well known that affixes can in some rare case become \textit{degrammaticalized} into clitics and eventually free elements (see in particular \citealt{norde09degrammaticalization, hyman11macrosudan}). 
 
-Cases of pronouns derived from personal affixes are also found, especially in polysynthetic languages. For instance, in Ainu, the \textsc{1sg} pronoun \ipa{kuani} is in fact etymologically the nominalization of the \textsc{1sg} form of the existential copula (\ipa{ku-an-i} \textsc{1sg}-exist-\textsc{nmlz}, \citealt[31]{shibatani90japan}). Likewise, in Lakota the pronouns \textsc{1sg} \ipa{miyé}, \textsc{2sg} \ipa{niyé} and \textsc{3sg} \ipa{iyé} are in fact conjugated verb forms meaning `it is him, it is you, it is him' (\citealt[707;754]{ullrich08}). In Algonquian,   pronouns are the forms of a possessed `dummy' nominal stem, as in Ojibwe \ipa{n-iin} `I', \ipa{g-iin} `you' and \ipa{w-iin} `he', see \citet{valentine01grammar}. 
+For instance, in Ainu, the \textsc{1sg} pronoun \ipa{kuani} is in fact etymologically the nominalization of the \textsc{1sg} form of the existential copula (\ipa{ku-an-i} \textsc{1sg}-exist-\textsc{nmlz}, \citealt[31]{shibatani90japan}). Likewise, in Lakota the pronouns \textsc{1sg} \ipa{miyé}, \textsc{2sg} \ipa{niyé} and \textsc{3sg} \ipa{iyé} are in fact conjugated verb forms meaning `it is him, it is you, it is him' (\citealt[707;754]{ullrich08}). 
 
-Similar examples are also found in Trans-Himalayan. In Japhug, as in Algonquian, pronouns are derived from possessive prefixes rather than the other way round. As can be seen in Table \ref{tab:pronoun} below, pronouns are built by combining possessive prefixes with the root \ipa{-ʑo} `oneself'. 
+Pronouns derived from possessed nouns are found in Algonquian (as in Ojibwe \ipa{n-iin} `I', \ipa{g-iin} `you' and \ipa{w-iin} `he', see \citealt{valentine01grammar}), and in the Trans-Himalayan family Japhug provides such an example. As can be seen in Table \ref{tab:pronoun} below, pronouns are built by combining possessive prefixes with the root \ipa{-ʑo} `oneself'. 
 
  \begin{table}[H] \centering
 \caption{Pronouns and possessive prefixes in Japhug}\label{tab:pronoun}
@@ -108,7 +106,7 @@ The role of Tangut data in the debate of the antiquity of person indexation syst
 
 %Given Kepping \citeyear{kepping94conjugation} lucid response to \citet{lapolla92} published more than twenty years ago, it is surprising that \citet{zeisler15eat} still quotes the conclusions of the latter article concerning Tangut.
 
-\citet{lapolla92}, without any reference to actual Tangut texts, claims that (1) there is a one-to-one relationship between the pronouns and the suffixes, (2) person agreement in Tangut is optional and that for these reasons (3) person indexation suffixes have been recently grammaticalized from pronouns and show no sign of age. These views have been quoted and repeated by some scholars (for instance \citealt{zeisler15eat}), again without any reference to primary data.
+\citet{lapolla92} claims that (1) there is a one-to-one relationship between the pronouns and the suffixes, (2) person agreement in Tangut is optional and that for these reasons (3) person indexation suffixes have been recently grammaticalized from pronouns and show no sign of age. These views have been quoted and repeated by some scholars (for instance \citealt{zeisler15eat}) without any reference to primary data.
 
 LaPolla's three claims are evaluated here on the basis of a corpus comprising the most important narrative texts (see \citealt[8-9]{jacques14esquisse}), in particular the collection of short stories called  `The Grove of Categories', from which most examples in this section are taken.
 
@@ -118,7 +116,7 @@ LaPolla's three claims are evaluated here on the basis of a corpus comprising th
 %\end{tabular}
 
 \subsection{Person indexation suffixes}
-As pointed out by \citet{kepping94conjugation}, while agreement suffixes in Tangut do present  resemblances with pronouns, as shown in Table \ref{tab:pronoms.suffixes}, pronouns and agreement markers cannot be equated. 
+As pointed out by \citet{kepping94conjugation}, while agreement suffixes in Tangut do present  resemblances with pronouns, as shown in Table \ref{tab:pronoms.suffixes}, pronouns and agreement markers cannot be equated at a synchronic level.
 
 \begin{table}[H]
 \caption{Pronouns and person suffixes in Tangut (\citealt{kepping75agreement, kepping85})}\label{tab:pronoms.suffixes} \centering
@@ -134,7 +132,7 @@ As pointed out by \citet{kepping94conjugation}, while agreement suffixes in Tang
 \end{table}
 
 First, for the first person singular, while the pronoun \mo{2098} \ipa{ŋa²} is given the same reading as the \textsc{1sg} suffix,\footnote{It should be emphasized here that both the \textsc{1sg} pronoun and the suffix are not directly cognate with forms such as Tibetan \ipa{ŋa}, as pre-Tangut *\ipa{-(j)a} regularly becomes \ipa{-e} or \ipa{-ji}, see \citet{jacques14esquisse}.
-} a second pronoun  the pronoun \mo{0261} \ipa{mjo²} is also very common. In  books 3 to 6 ofthe  \textit{Grove of Categories}, there are 31 occurrences of the pronoun \mo{2098} \ipa{ŋa²}, 60 occurrences of \mo{2098} \ipa{ŋa²} as a \textsc{1sg} suffix, and 20 occurrences of  \mo{0261} \ipa{mjo²}. This latter pronoun always trigger agreement with  the \mo{2098} \ipa{ŋa²} suffix when occurring as a core argument, as in example \ref{ex:tg:mjo}. Thus, despite the homophony and homography of the \textsc{1sg} pronoun and the \textsc{1sg} suffix,\footnote{On this topic, it should be noted that it is common in Tangut to write unrelated but homophonous (or perhaps, near homophonous) morphemes with the same character, see several examples in \citet{jacques11tangut.verb}.} it is a fact of the synchronic grammar of Tangut that the two are distinct - otherwise, we would not expect agreement between \mo{0261} \ipa{mjo²} and \mo{2098} \ipa{ŋa²}.
+} another \textsc{1sg} pronoun \mo{0261} \ipa{mjo²} is also very common. In  books 3 to 6 of the  \textit{Grove of Categories}, there are 31 occurrences of the pronoun \mo{2098} \ipa{ŋa²}, 60 occurrences of \mo{2098} \ipa{ŋa²} as a \textsc{1sg} suffix, and 20 occurrences of  \mo{0261} \ipa{mjo²}. This latter pronoun always triggers agreement with  the \mo{2098} \ipa{ŋa²} suffix when occurring as a core argument, as in example \ref{ex:tg:mjo}. Thus, despite the homophony and homography of the \textsc{1sg} pronoun and the \textsc{1sg} suffix,\footnote{On this topic, it should be noted that it is common in Tangut to write unrelated but homophonous (or perhaps, near homophonous) morphemes with the same character, see several examples in \citet{jacques11tangut.verb}.} it is a fact of the synchronic grammar of Tangut that the two are distinct - otherwise, we would not expect agreement between \mo{0261} \ipa{mjo²} and \mo{2098} \ipa{ŋa²}.
 
 \begin{exe}
 \ex \label{ex:tg:mjo}  
@@ -166,9 +164,17 @@ The suffix \mo{4884} \ipa{nji²}, on the other hand, appears with first or secon
 \glt We are the descendants of Taibo. (The Grove of Categories, 04.33A.4)
 \end{exe}
 
-The hypothesis that the suffix \mo{4884} \ipa{nji²} is historically derived from the pronoun \mo{4028} \ipa{nji²} is possible. It implies that the singular honorific \textsc{2sg} originates from a \textsc{2pl} (a reasonable assumption), and that in verbal indexation the first vs second person plural distinction became neutralized to the expense of the first person, a rarer phenomenon, but not altogether unthinkable. The exact mechanism for this neutralization in itself is an interesting question, and may first have occurred for the first plural inclusive before affecting the first plural exclusive.
+The idea that the suffix \mo{4884} \ipa{nji²} is historically derived from the ancestor of the pronoun \mo{4028} \ipa{nji²} implies that the singular honorific \textsc{2sg} originates from a \textsc{2pl} (a reasonable assumption), and that in verbal indexation the first vs second person plural distinction became neutralized to the expense of the first person, a rare phenomenon, but not altogether unthinkable. The exact mechanism for this neutralization in itself is an interesting question, and may first have occurred for the first plural inclusive before affecting the first plural exclusive.
 
-%\begin{table}[H]
+The resemblance between person indexation suffixes and some of the pronouns in Tangut (Table \ref{tab:pronoms.suffixes}) calls for an explanation, and the most likely one is that these suffixes were ultimately  grammaticalized from pronouns, or at least remade after the pronouns. Given however the functional difference between pronouns and the corresponding suffixes, this grammaticalization cannot have occurred immediately before the time when Tangut was put to writing.
+
+%Yet, this hypothesis has many implications that have never been dealt within a systematic way. 
+%
+%Table \ref{tab:macrorgy} presents correspondences between person indexation suffixes in various Macro-Gyalrongic languages, including Tangut. While most of these markers do present similarities, it is striking that the correspondences between these forms are \textit{unique}: within Gyalrongic; the first person suffix is the only case of \ipa{a} to \ipa{ŋ} correspondence, and the second plural the only case of \ipa{n} to \ipa{ɲ} between Japhug and Zbu. Moreover, final \ipa{-ŋ} has been lost in the inherited vocabulary of Japhug, Zbu and Situ, and its preservation of
+%
+%It is not possible to reconstruct the forms of these suffixes in a linear way. However, in some Gyalrongic languages, the person indexation suffixes have some degree of allomorphy. For instance, in Zbu the \textsc{1sg} can be realized as \ipa{-ɑŋ}, \ipa{-ŋ} or nasalization of the final stop + \ipa{ɑŋ} (\citet[46]{gongxun14agreement}).  This allomorphy offers an explanation for the irregular correspondences: in proto
+%
+% \begin{table}[H]
 %\caption{SAP suffixes in Macro-Gyalrongic languages } \centering \label{tab:macrorgy}
 %\begin{tabular}{lllllll}
 %\toprule
@@ -178,15 +184,16 @@ The hypothesis that the suffix \mo{4884} \ipa{nji²} is historically derived fro
 %Zbu & \ipa{-ŋ} & zero& \ipa{-jə} & \ipa{-ɲə} & \citet{gongxun14agreement} \\
 %Situ & \ipa{-ŋ} & \ipa{-n}& \ipa{-j} & \ipa{-ɲ} & \citet{linxr93jiarong} \\
 %Khroskyabs & \ipa{-ŋ} & \ipa{-n}& \ipa{-j} & \ipa{-n} & \citet{lai15person} \\
-%Stau & \ipa{-u} & zero & \ipa{-ã} & \ipa{-j} & \citet{jacques14rtau} \\
+%Stau & \ipa{-u} /  \ipa{-ã} & \ipa{-j}  & \ipa{-ã} & \ipa{-j} & \citet{jacques14rtau} \\
 %Muya & *\ipa{-ø} & *\ipa{-ɛ} & *\ipa{-e} & *\ipa{-e} & \citet{gao15menya} \\
+%Tangut & \ipa{-ŋa²} &\ipa{-nja²}& \ipa{-nji²}& \ipa{-nji²}& \\
 %\bottomrule
 %\end{tabular}
 %\end{table}
 
 
 \subsection{Stem Alternations}
-The most compelling proof that person indexation in Tangut is not recent, however, does not come from the pronouns. \citet{gong01huying}, \citet{jacques09tangutverb} and \citet{jacques14esquisse} have shown the existence of a closed class of irregular verbs with two stems, called A and B. Stem B is restricted to \textsc{2sg}$\rightarrow$3, \textsc{1sg}$\rightarrow$3 forms (as well as the reflexive \textsc{1sg} and \textsc{2sg} forms), as shown by examples \ref{ex:1>3} and \ref{ex:see:1>3}.\footnote{The presence of stem A, and the absence of \textsc{1sg} indexation suffix in example \ref{ex:see:1>3} is explained in section \ref{sec:optional}.}
+The most compelling piece of evidence that person indexation in Tangut is not recent, however, does not come from the pronouns. \citet{gong01huying}, \citet{jacques09tangutverb} and \citet{jacques14esquisse} have shown the existence of a closed class of irregular verbs with two stems, called A and B. Stem B is restricted to \textsc{2sg}$\rightarrow$3, \textsc{1sg}$\rightarrow$3 forms (as well as the reflexive \textsc{1sg} and \textsc{2sg} forms), as shown by examples \ref{ex:1>3} and \ref{ex:see:1>3}.\footnote{The presence of stem A, and the absence of \textsc{1sg} indexation suffix in example \ref{ex:see:1>3} is explained in section \ref{sec:optional}.}
 
 \begin{exe}
 \ex \label{ex:1>3}
@@ -194,7 +201,7 @@ The most compelling proof that person indexation in Tangut is not recent, howeve
 \tgf{1542}	\tgf{3508}	\tgf{0100}	\tgf{2798}	\tgf{2987}	\tgf{5481}	\tgf{4547}\tgf{2098}\\
    \ipa{ku¹}	\ipa{bji²}	\ipa{lew¹}	\ipa{.jir²}	\ipa{lhjɨ̣¹}	\ipa{bo²}	\ipa{dzjo¹-ŋa²} \\
 therefore subject one hundred strike staff \bleu{eat[B]-\textsc{1sg}} \\
-\glt Then I, you subject, will receive (eat) a hundred blows.  (The Grove of Categories 06.13A.5)
+\glt Then I, your subject, will take (eat) a hundred blows.  (The Grove of Categories 06.13A.5)
 \end{exe}
 
 \begin{exe}
@@ -227,8 +234,7 @@ Yue army Wu \textsc{antierg} destroy come time \rouge{\textsc{irr}-see[A]-\texts
 
 Table \ref{tab:paradigm} summarizes the distribution of stems and suffixes in the forms of the transitive paradigm attested in the corpus. Unattested forms are indicated by a question mark. Regardless of the historical interpretation of these alternations (on which see \citealt{jacques09tangutverb} and \citealt{jacques14esquisse}), they are synchronically non-productive, securely attested for less than a fifty common verbs, and stem A is not predictable from stem B and vice-versa. Given the complexity of the Tangut script, it is possible, though unprovable, that stem alternation was more developed, but that stem A and stem B characters were created only for the most common verbs, and that other verbs used the same character with distinct readings. 
 
-Even if the suffixes were `recently' grammaticalized (i.e. only a few centuries before the Tangut script was created), it is unclear how irregular stem alternations could come into existence in such a short time span, and also requires and explanation as to their historical origin.
-
+Even if the suffixes were recently grammaticalized (i.e. only a few centuries before the Tangut script was created), it is unclear how irregular stem alternations could come into existence in such a short time span, and also requires an explanation as to their historical origin.
 
 \begin{table}[H]
 \caption{Attested forms of the ditransitive paradigm in Tangut}\centering  \label{tab:paradigm}
@@ -244,9 +250,9 @@ Even if the suffixes were `recently' grammaticalized (i.e. only a few centuries 
 \end{tabular}
 \end{table}
 
+At that time when LaPolla wrote his article, Tangut texts were not easily accessible for independent study, and stem alternations had not yet been fully described. Although \citet{nishida75} first suggested the their existence, this discovery was not taken into account by other scholars (even \citealt{kepping85} and \citealt{driem91tangut}), and it was not until \citet{gong01huying} that it became widely known.
 
-
-At that time when LaPolla wrote his article, Tangut texts were not easily accessible for independent study, and stem alternations had not yet been fully described. Although \citet{nishida75} first suggested the their existence, this discovery was not taken into account by other scholars (even \citealt{kepping85} and \citealt{driem91tangut}), and it was not until \citet{gong01huying} that it became widely known. However, the situation is quite different now, and any scholar who wants to address this debate must take into account stem alternations. What we need most at the present moment would be an investigation of stem alternations in the whole Tangut corpus, based on an exhaustive database including all verbal forms, allowing scholars, regardless of their position in the debate, to decide for themselves of the validity of the analysis provided here and in my previous publications. In particular, it seems that in addition to the A/B stem alternation described above, Tangut also had other types of stem alternation whose morphosyntactic function is still unclear (see \citealt{jacques14esquisse}).
+ However, the situation is quite different now, and any scholar who wants to address this debate must take into account stem alternations. What we need most at the present moment would be an investigation of stem alternations in the whole Tangut corpus, based on an exhaustive database including all verbal forms, allowing scholars, regardless of their position in the debate, to decide for themselves of the validity of the analysis provided here and in my previous publications. In particular, it seems that in addition to the A/B stem alternation described above, Tangut also had other types of stem alternation whose morphosyntactic function is still unclear (see \citealt{jacques14esquisse}).
 
 \subsection{Is person marking in Tangut optional?} \label{sec:optional}
 To support his claim that Tangut person indexation is recent, 
@@ -260,7 +266,7 @@ To support his claim that Tangut person indexation is recent,
 
 In the following, the three claims are examined on the basis of data from the same corpus, enriched by knowledge of the modern Gyalrongic languages.
 
-The first claim is quite puzzling. Third person is zero marked in Tangut, so that a verb whose core arguments are all third person cannot receive person marking. The whole text of the \textit{Grove of Categories} is a series a short stories translated from Chinese from a third-person point of view. In the absence of a first-person narrator or first-person comments on the text, it is natural that first or second person will only occur in reported speech; this would be true in any language. What Ahrens here has `discovered' is not a property of Tangut grammar, but a trivial consequence of the nature of the text. A translation of this text in any language where third persons are unmarked for person would give the same result.
+The first claim is quite puzzling. Third person is zero marked in Tangut, so that a verb whose core arguments are all third person cannot receive person marking. The whole text of the \textit{Grove of Categories} is a series a short stories translated from Chinese from a third-person point of view, and clauses other than those in quoted speech only have third person arguments. In the absence of a first-person narrator or first-person comments on the text, it is natural that first or second person will only occur in reported speech; this would be true in any language.  A translation of this text in any language where third persons are unmarked for person would give the same result.
 
 Claim n°2 is false. Cases of indexation of P argument abound in the \textit{Grove of Categories} (see for instance examples \ref{ex:2>1} and \ref{ex:3>1} above, and Table \ref{tab:paradigm}). When both argument are SAP, it is always the P argument which is marked by the person  indexation suffix, a property shared with all Gyalrongic languages.
 
@@ -278,7 +284,6 @@ Claim n°3 is not so much false as incomplete. There are indeed a few cases wher
 
 The phenomenon, already described in \citet{kepping85}, is in no way indicative that Tangut person indexation is recent. Among Gyalrongic languages, some languages like Japhug completely exclude indexation of non-arguments (see section \ref{sec:rgyalrong}), while other languages like Khroskyabs allow it in very specific circumstances (see \citealt{lai15person}). It is unclear which of Khroskyabs or Japhug is more conservative here: pathways in both directions are conceivable, and likewise this property of Tangut person indexation might be an innovation (a type of extreme possessor raising) rather than a sign of recent grammaticalization.
 
-
 Actually, Tangut texts do show cases where verbs with a clear SAP core argument fail to show both indexation suffixes and stem alternation. Although the proponents of the hypothesis that Tangut person indexation is optional have never used such examples and appear to be unaware of their existence, it is a Tangutulogist's duty at this point to mention their existence and explain them.
 
 Example \ref{ex:hongnong} is a typical example of absence of person indexation of some verbs in Tangut. Although the S/A of all verbs in this paragraph is \textsc{2sg}, the verbs \mo{5113} \ipa{.wji¹},  \mo{749} \ipa{phji¹} and \mo{4039}(pronunciation unknown) have neither the suffix \mo{4601} \ipa{nja²} nor stem B as would be expected (there are indicated in red below). Only the last verbal form  \mo{4342}\mo{2511}\mo{4601}\mo{3916} \ipa{dja²}-\ipa{rjɨr²}-\ipa{nja²}-\ipa{sji²} has person marking (in blue).
@@ -292,8 +297,7 @@ Example \ref{ex:hongnong} is a typical example of absence of person indexation o
 \glt First, when you were Jiangling Ling, you extinguished the fire with the wind, later, when you became Taishou of Hongnong, you went away riding a tiger. How did (you do that)? (The Grove of Categories, 04.13B.4)
 \end{exe}
 
-While such example might appear to strike a damaging blow to the hypothesis that Tangut person indexation was \textit{not} optional, it is important to read and understand Tangut texts in the context of its better understood modern relatives, in particular the Gyalrongic languages.
-
+While such example might appear to strike a damaging blow to the hypothesis that Tangut person indexation was \textit{not} optional, it is important to read and understand Tangut texts in the context of its better understood modern relatives, in particular the Gyalrongic languages.\footnote{The Gyalrongic group includes three branches, Core Gyalrong (comprising Japhug, Tshobdun, Zbu and Situ), Khroskyabs and Stau. There are ample evidence of lexical common innovations linking this group with Tangut and other languages of area (\citealt{jacques14esquisse}). }
 
 All Gyalrongic languages described up to now have converbial forms that can bear some TAM markers, but no person indexation and evidential markers. In Japhug, these forms are   marked by the nominalization prefixes \ipa{kɤ-} or \ipa{sɤ-}, as in example \ref{ex:mAkApa.kW} (see \citealt{jacques14linking}).
 
@@ -303,7 +307,7 @@ All Gyalrongic languages described up to now have converbial forms that can bear
 \ipa{tɕe}   	\ipa{ɯ-ŋgɯ}   	\ipa{nɯ} \ipa{tɕu}   	\ipa{paʁndza}   	\ipa{ɲɤ-raʁ}   	\ipa{tɕe,}   	\ipa{tɕendɤre}   	[<dian>   	<guan>   	\ipa{mɤ-kɤ-βzu}] 	\ipa{\textbf{kɯ}}   	\ipa{mɤ-kɤ-pa}   	\ipa{\textbf{kɯ}}   	\ipa{ɯ-jaʁ}   	\ipa{lo-tsɯm}   \\
 \textsc{lnk} \textsc{3sg}-inside \textsc{dem} \textsc{loc} pig.fodder \textsc{evd}-be.stuck \textsc{lnk}
 \textsc{lnk} electricity turn.off \textsc{neg-inf}-make \textsc{erg}  \textsc{neg-inf}-close \textsc{erg}  \textsc{3sg.poss}-hand \textsc{evd:upstream}-take.away \\
-\glt Some pig fodder got stuck inside (the machine) she reached his hand into it without turning it off, (Relatives, 372-3)
+\glt Some pig fodder got stuck inside (the machine) she reached her hand into it without turning it off, (Relatives, 372-3)
 \end{exe} 
 
 In Stau, where nominalization prefixes have disappeared (only  fossilized traces of them remain), the converbial forms are marked with suffixes such as \ipa{-dʑə} as in example \ref{tEphjidZE}. Note that the verb form \ipa{tə-pʰji-dʑə} \textsc{pfv}-run.away-\textsc{conv}(1) does not take the first person marker (otherwise \ipa{tə-pʰjã} would be expected, see \citealt{jacques14rtau}) (2) keeps the perfective directional prefix \ipa{tə-}, though cases without directional prefixes are also attested in converbial forms.
@@ -328,17 +332,19 @@ My claim is that Tangut person indexation (by which I mean suffixes AND stem alt
 \end{itemize}
 
 \section{Person indexation in Gyalrong and Kiranti} \label{sec:rgyalrong}
-\citet[53]{zeisler15eat} argues, quoting \citet[308]{lapolla92}, that `It should also be noted that several pronominalising Tibeto-Burman languages do not mark syntactic relations or semantic roles but simply person or, more precisely, speech act participant (1P and/ or 2P) involvement: Tangut, Gyarong, Nocte, Muya, Dulong, Kiranti, Hayu.'
+\citet[53]{zeisler15eat} argues  that `It should also be noted that several pronominalising Tibeto-Burman languages do not mark syntactic relations or semantic roles but simply person or, more precisely, speech act participant (1P and/ or 2P) involvement: Tangut, Gyarong, Nocte, Muya, Dulong, Kiranti, Hayu.' 
 
-This statement is demonstrably false at least as far Gyalrongic and Kiranti languages are concerned.  
+The term `SAP involvement' is left undefined in Zeisler's paper, but  appears to refer to LaPolla's (\citeyear[308]{lapolla92}) assertion that `agreement in Gyarong is with 1st person any time a 1st person is involved, regardless of its semantic or syntactic function'. In other words, according to this point of view, a SAP referent, regardless of its syntactic function (argument, adjunct or possessor of an argument), would trigger agreement. 
 
-It is a fact that some person affixes in Gyalrongic and Kiranti languages have the same form whether they refer to S, A or P. For instance, in Japhug the same \textsc{1sg} \ipa{-a} suffix appears to mark S (\ref{ex:jaria}), A (\ref{ex:pWmtota}) or P (\ref{ex:pWwGmtoa}).
+In this section, I will show that this idea is an oversimplification, at least as far as Gyalrongic and Kiranti languages are concerned.
+
+It is a fact that \textit{some} person affixes in Gyalrongic and Kiranti languages have the same form whether they refer to S, A or P. For instance, in Japhug the same \textsc{1sg} \ipa{-a} suffix appears to mark S (\ref{ex:pWnWZWBa}), A (\ref{ex:pWmtota}) or P (\ref{ex:pWwGmtoa}).
 
 \begin{exe}
-\ex \label{ex:jaria}
-\gll \ipa{jɤ-ari-a} \\
-\textsc{pfv}-go[II]-\textsc{1sg} \\
-\glt `I went (there)'.
+\ex \label{ex:pWnWZWBa}
+\gll \ipa{pɯ-nɯʑɯβ-a} \\
+\textsc{pfv}-sleep-\textsc{1sg} \\
+\glt `I slept'.
 \end{exe}
 
 \begin{exe}
@@ -348,7 +354,6 @@ It is a fact that some person affixes in Gyalrongic and Kiranti languages have t
 \glt `I saw him'.
 \end{exe}
 
-
 \begin{exe}
 \ex \label{ex:pWwGmtoa}
 \gll \ipa{pɯ́-wɣ-mto-a} \\
@@ -356,14 +361,37 @@ It is a fact that some person affixes in Gyalrongic and Kiranti languages have t
 \glt `He saw me'.
 \end{exe}
 
-However, concluding from such data that the system of person indexation as a whole does not mark syntactic relations is simplistic - if this were a valid argument, none of the languages with direct-inverse systems (including Algonquian, Mapuche, Movima etc) would mark syntactic relations, a claim that no scholar is probably willing to make. 
+However, concluding from such data that the system of person indexation as a whole does not mark syntactic relations is simplistic. If this were a valid argument, none of the languages with direct-inverse systems  (including Algonquian, Mapuche, Movima etc) would mark syntactic relations. In Ojibwe, in the independent order, for instance, the same prefix \ipa{ni-} occurs in exactly the same contexts as the suffix \ipa{-a} in Japhug in examples (\ref{ex:ninibaa}) to (\ref{ex:niwaabamig}). 
+
+\begin{exe}
+\ex  \label{ex:ninibaa}
+\gll \textit{ni-nibaa} \\
+1-sleep  \\
+\glt `I sleep.'
+\end{exe} 
+
+\begin{exe}
+\ex  \label{ex:niwaabamaa}
+\gll \textit{ni-waabam-aa} \\
+1-see-\textsc{dir} \\
+\glt `I see him.'
+\end{exe} 
+
+\begin{exe}
+\ex   \label{ex:niwaabamig}
+\gll \textit{ni-waabam-ig} \\
+1-see-\textsc{inv} \\
+\glt `He sees me.'
+\end{exe} 
+ 
+However, there is clear evidence that Ojibwe morphosyntax is very sensitive to grammatical relations. First, in the conjunct order, the \textsc{1sg} is marked by entirely distinct suffixes (-\textit{yaan}, -\textit{ag} and -\textit{id} repectively for \textsc{1sg.intr}, \textsc{1sg}$\rightarrow$3 and  3$\rightarrow$\textsc{1sg}, see \citealt[295]{valentine01grammar}). Second, strict accusative and ergative syntatic pivots are attested in Ojibwe (\citealt{rhodes94valency}, \citealt[119-126]{zuniga06}). No author has ever concluded from examples such as (\ref{ex:ninibaa}) to (\ref{ex:niwaabamig}) that agreement with \textsc{1sg} occurs in Ojibwe  regardless of syntactic function.
 
 When analyzing complex polypersonal systems, it is important not to focus on individual affixes, whose distribution may in some cases not even be describable in functional terms, but rather to study the whole set of affixes and stem alternations as a complete system. 
 
-In the following, I present evidence irrefutably showing that person indexation systems in Rgyalrongic and Kiranti do mark grammatical relations, and not simply `SAP involvement' . First, indexation systems in these languages present numerous affixes which are restricted to S, A or P, or portmanteau markers used in specific configurations. Second, even in the case of most ditransitive verbs in Japhug, the recipient (even if SAP) is not indexed on the verb, and instead the theme (rarely human) is indexed. Third, agreement of the verb with possessors is not attested at least in Japhug and Khaling.
+In the following, I present evidence showing that person indexation systems in Rgyalrongic and Kiranti, as in Ojibwe, do mark grammatical relations, and not simply `SAP involvement'. First, indexation systems in these languages present numerous affixes which are restricted to S, A or P, or portmanteau markers used in specific configurations. Second, even in the case of most ditransitive verbs in Japhug, the recipient (even if SAP) is not indexed on the verb, and instead the theme (rarely human) is indexed. Third, agreement of the verb with possessors is not attested at least in Japhug and Khaling.
 
 \subsection{Unambiguous marking of S, A and P}
-Several affixes or morphological processes in Gyalrongic and Kiranti only occur  in specific configurations of A and P. Here is a list of the most important ones in Japhug:
+Several affixes or morphological processes in Gyalrongic and Kiranti only occur  in specific configurations of A and P. Here is a list of the most important ones in Japhug (and the same are true of Zbu and Tshobdun, see \citealt{jackson00sidaba, jackson02rentongdengdi} and \citealt{gongxun14agreement}).
 
 \begin{enumerate}
 \item The past transitive \ipa{-t} suffix only occurs with a \textsc{1sg} or \textsc{2sg} A and a third person P in the perfective form. It is a portmanteau morpheme indicating both the person of the A and the P as well as TAM.
@@ -372,9 +400,7 @@ Several affixes or morphological processes in Gyalrongic and Kiranti only occur 
 \item Stem III is used in forms with a singular agent and a third person patient in non-past TAM categories.
 \end{enumerate}
 
-
-In Kiranti languages in general, recent work by Balthasar Bickel has amply demonstrated the existence of strict ergative \textit{and} accusative alignment in the person indexation systems of various languages. Most spectacularly, \citealt{bickel08scope} (see Table \ref{tab:silverstein}, including only singular forms) shows that \textsc{1sg} has ergative alignement, \textsc{2sg} neutral alignement, and \textsc{3sg} accusative alignement, the exact opposite of what  Silverstein's Hierarchy (\citealt{silverstein76}) predicts.
-
+In Kiranti languages in general, recent work by Balthasar Bickel has amply demonstrated the existence of strict ergative \textit{and} accusative alignment in the person indexation systems of various languages. Most spectacularly, \citet{bickel08scope} (see Table \ref{tab:silverstein}, including only singular forms) shows that in Puma (a Southern Kiranti language) \textsc{1sg} has ergative alignment, \textsc{2sg} neutral alignment, and \textsc{3sg} accusative alignment, the exact opposite of what  Silverstein's Hierarchy (\citealt{silverstein76}) predicts.
 
 \begin{table}[H]
 \caption{Counterexample to the Silverstein Hierarchy in Puma} \label{tab:silverstein} \centering
@@ -395,7 +421,8 @@ In Kiranti languages in general, recent work by Balthasar Bickel has amply demon
   \bottomrule
 \end{tabular}
 \end{table}
-Other Kiranti languages like Khaling for instance abounds with affixes and stem alternations that mark not only the presence of an SAP argument, but also unambiguously indicate syntactic relations:
+
+Other Kiranti languages like Khaling for instance abound with affixes and stem alternations that mark not only the presence of an SAP argument, but also unambiguously indicate syntactic relations:
 
 \begin{enumerate}
 \item The portmanteau \textsc{1sg$\rightarrow$2} non past \ipa{-nɛ} and past \ipa{-tɛni} suffixes are not found in 2$\rightarrow$1 forms.
@@ -405,7 +432,7 @@ Other Kiranti languages like Khaling for instance abounds with affixes and stem 
 
 
 \subsection{Ditransitive verbs}
-In the case of ditransitive verbs, in Japhug the indexation of the T vs R is not dependent on person hierarchy, but on the configuration of each verb individually. Some ditransitive verbs, like \ipa{mbi}, treat the R like the P of a monotransitive verb, and it is indexed on the verb.
+In the case of ditransitive verbs, in Japhug the indexation of the T vs R is not dependent on person hierarchy, but on the configuration of each verb individually. Some ditransitive verbs, like \ipa{mbi}, treat the R like the P of a monotransitive verb, and it is indexed on the verb.\footnote{The noun phrase \ipa{nɤ-rʑaβ} `(as) your wife' is a functive phrase, syntactically an adjunct (see \citealt{creissels14functive}).}
 
 \begin{exe}
 \ex \label{ex:YWtambi}
@@ -460,7 +487,7 @@ Other Kiranti and Gyalrongic languages present similar, but slightly different s
 We lack at the present moment the data to settle the debate on the antiquity of person indexation in Trans-Himalayan. Until Kiranti and Gyalrongic languages have been fully documented, the proto-languages of these groups reconstructed and the mass of data fully digested by the community of Trans-Himalayan linguists, it is too early for a rigorous discussion based on an exhaustive account of the data. 
 
 
-However,  for the debate to operate on solid ground, cherry-picking of data from second of third hand sources should be avoided, and research should be built on the basis of \textit{text corpora}, as is done in Indo-European studies, and as should be done for any language family. What we most need at the present moment are corpus-based descriptions of the languages that are most relevant to the debate (in particular, Gyalrongic, Kiranti and Tangut) and Neogrammarian-based historical linguistics.
+However,  for the debate to operate on solid ground, cherry-picking of data from second of third hand sources should be avoided, and research should be built on the basis of \textit{text corpora}, as is done in Indo-European studies, and as should be done for any language family. 
 
 \charis
 \bibliographystyle{unified}
