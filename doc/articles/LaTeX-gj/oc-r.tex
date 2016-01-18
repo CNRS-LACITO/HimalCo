@@ -1,0 +1,157 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+\newcommand{\rdp}{\textasciitilde{}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
+\newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
+
+\begin{document} 
+\title{On the reconstruction of medial *-r- in Old Chinese}
+\author{Guillaume Jacques}
+\maketitle
+ 
+
+\section{Introduction}
+
+
+\citet{handel02r}
+
+\section{Excess of *-r- in Old Chinese reconstructions}
+
+\section{final *r}
+*CrVr
+
+> final *\ipa{l}
+
+\section{Medial or preinitial *r?}
+
+
+\subsection{Grave stops}
+
+
+
+\ipa{tɤjpɣom} $\leftarrow$ *\ipa{lpaˠm}`ice' \ch{冰}{piŋ}{ice} *\ipa{rpəm}
+
+\ipa{ɯ-rqʰu} `shell, crust' \ch{殼}{khæwk}{shell, crust}
+
+
+
+medial r:
+
+\ipa{pri} `bear' \ch{羆}{bje}{bear} *braj
+
+\ipa{qhrɯt} `scrape' \ch{刮}{kwæt}{scrape} *krot
+
+Evidence of *r?
+
+\ipa{mɯrkɯ}`steal', \ipa{rku} \ch{寇}{khuwH}{rob} 
+
+
+
+
+no *r:
+
+\ipa{tɯ-rpaʁ}`shoulder', \ipa{phrag} (metathesis) \ch{膊}{phak}{arm}
+
+\ipa{tɯ-rpa}`axe', \ch{斧}{pjuX}{arm}
+
+\ipa{tɯ-rna}`ear', \ipa{rna}, \ch{耳}{ɲiX}{arm}
+
+\ipa{tɯ-rtsɤɣ}`articulation, joint', \ipa{tshigs}, \ch{節}{tset}{joint}
+
+\subsection{Dental stops and affricates}
+\ipa{tɯ-zgrɯ} / \ipa{tɯ-ɣru} `elbow' (contamination with \ipa{azgrɯ})  \ch{肘}{ʈjuwX}{elbow}
+
+
+\ipa{rdzas} `thing' \ch{事}{dʐiH}{affair}
+
+
+\ipa{tɯ-ndzrɯ} `nail, claws' \ch{爪}{tʂæwX}{affair}
+\subsection{Nasals}
+Expected *\ipa{mr} $\rightarrow$ \ipa{br-} nowhere attested
+
+
+no *r:
+
+\ipa{tɤ-jme} `tail' \ch{尾}{mjɨjX}{tail}
+
+\ipa{tɤ-rmi} `name', \ipa{miŋ} \ch{名}{mjieŋ}{cry} 
+
+\ipa{rŋo}`parch', \ipa{rŋo}, \ch{熬}{ŋaw}{fry, roast}
+
+\ipa{tɯ-rnoʁ}`brain', \ch{腦}{nawX}{brain}
+
+Nr:
+
+\ipa{mbri} `call, cry' \ch{鳴}{mjæŋ}{cry}
+
+
+rN:
+
+\ipa{tɤ-rme} `hair' \ch{眉}{mij}{eyebrows}
+
+\ipa{tɯ-rŋa} `face' \ch{颜}{ŋæn}{face} *\ipa{rŋan} not *\ipa{ŋran}
+
+\ipa{rŋam.pa} `awe-inspiring' \ch{嚴}{ŋjæm}{majestic} *\ipa{rŋam} \citet{coblin86handlist}
+
+
+Borrowings and Wanderwörter:
+
+\ipa{mbro} `horse' \ch{馬}{mæX}{horse}
+
+\ipa{qambrɯ} `male yak' \ch{犛}{li, mæw}{horse} < *\ipa{rə, mrˁə}
+
+
+\section{Laterals}
+
+*lr
+
+\citet[217-225]{starostin89}, \citet[36-40]{sagart99roc}
+\citet[78]{baroni14invariant}
+
+\citet{nikitina12logophoric}
+
+\section{The *r infix}
+
+ \citet{sagart99roc}
+
+\section{Counterevidence: Viet-Muong}
+
+\section{Conclusion}
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+\end{document}
