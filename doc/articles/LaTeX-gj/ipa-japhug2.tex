@@ -19,9 +19,10 @@
 \usepackage{lscape}
  
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{\mbox{/#1/}} %API tjs en italique
-\newcommand{\ipab}[1]{#1} %API tjs en italique
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon/#1/}} %API tjs en italique
+\newcommand{\ipab}[1]{{\phon#1}} %API tjs en italique
 \newcommand{\deux}[1]{/#1/}
 \newcommand{\trois}[1]{/#1/}
  
@@ -43,7 +44,7 @@
 
 \title{Japhug Rgyalrong\footnote{Acknowledgments will be given after editorial decision. Glosses follow the Leipzig glossing rules, except for the following: \textsc{auto} autobenefactive / spontaneous, \textsc{emph} emphatic, \textsc{genr} generic, \textsc{inv} inverse, \textsc{lnk} linker, \textsc{testim} testimonial. }}
 %Acknowledgments: Alexis Michaud, his research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony)
-%\author{Guillaume Jacques}
+\author{Guillaume Jacques}
 \maketitle
 \linenumbers
 \sloppy
@@ -139,7 +140,7 @@ As in many languages of the Tibetan area, the /r/ in a trilled retroflex voiced 
 
 
   \subsection{Consonants clusters} \label{sec:clusters}
-  Japhug boasts 411 clusters in syllable onset position:  313 clusters with two consonants and 98 with three consonants. Clusters that are only possible at syllable boundaries are not included in this count. 
+  Japhug boasts 413 clusters in syllable onset position:  314 clusters with two consonants and 99 with three consonants. Clusters that are only possible at syllable boundaries are not included in this count. 
   
   Since Japhug is a heavily prefixing language (on which see \citealt{jacques13harmonization}), most noun or verb stems are prefixed, and thus a considerable part of onset clusters are not attested word-initially. For instance, the cluster \ipa{zmb} never appears word-initially, and it is only found in the word \ipa{tɤzmbɯr}  `silt' which contains a nominal prefix \ipa{tɤ--} (see Table \ref{prein.w.s}). 
   
@@ -472,7 +473,7 @@ Finally, we find a few clusters comprising a stop followed by the fricative \ipa
   
   
  \begin{table}
- \caption{List of consonant clusters ending in \ipa{j} or \ipa{w} (29+18)} \label{med.w.j}  \centering
+ \caption{List of consonant clusters ending in \ipa{j} or \ipa{w} (30+18)} \label{med.w.j}  \centering
  \resizebox{0.5\textheight}{!}{
 \begin{tabular}{l|lll|lll|lll|l}
 \toprule
@@ -526,6 +527,7 @@ Finally, we find a few clusters comprising a stop followed by the fricative \ipa
 \ipa{χ} 	&\deux{χw} \tib{}	&\ipa{χwɤr} 	&Hor (name)	& 	& 	&\\	
 \ipa{ʁ} 	& 	& 	&	&\deux{ʁj} 	&\ipa{ʁjit} 	&he thinks about 	
 him\\
+\ipa{χ} 	&\deux{hw} \idph{}	&\ipa{hwɤrhwɤr} 	&opened towards the outside	& 	& 	&\\	
 \midrule
  		& 		&		&		&\trois{wsj} 		&\ipa{tɤ-wsjit} 		&whistle\\
  		& 		&		&		&\trois{wzj}  \tib{}		&\ipa{wzjoz}  		&he learns it\\
@@ -557,7 +559,7 @@ him\\
   Table  \ref{med.l.r} provides a  list of all clusters whose final consonant is a liquid  \ipa{r} or \ipa{l}. Clusters ending in \ipa{r} cannot contain another \ipa{r} or \ipa{l} segment, or any retroflex consonant. Clusters ending \ipa{l} never contain another \ipa{l}, but allow the presence of \ipa{r} (\ipa{rl}, \ipa{rɴɢl}). The sonorants \ipa{r} and \ipa{l} are medials before all stops and affricates, as well as before the voiced fricatives \ipa{z} and \ipa{ʑ}. In all other contexts, they are not medials.
   
    \begin{table}
- \caption{List of consonant clusters ending in \ipa{l} or \ipa{r} (44+51)} \label{med.l.r} \centering
+ \caption{List of consonant clusters ending in \ipa{l} or \ipa{r} (44+52)} \label{med.l.r} \centering
  \resizebox{0.45\textheight}{!}{
 \begin{tabular}{l|lll|lll|lll|l}
 \toprule
@@ -634,10 +636,11 @@ him\\
 	&	&	&	&\trois{ʑgr}  	& \ipa{ʑgrɯ}  	&certainly \\	
 	&\trois{ɕql}  \idph{}	& \ipa{ɕqlɯwnɤɕqlɯw}  	&  walking in the water (sound)	&\trois{ʑŋgr}  	& \ipa{ʑŋgri}  	&star \\	
 	&\trois{ɕqʰl}  	& \ipa{ɕqʰlɤt}  	&it disappears 	&\trois{ɕqr}  	& \ipa{ɕqraʁ}  	& he is intelligent \\	
+	& \trois{ʑɴɢr}  	& \ipa{ʑɴɢro}  	&Jew's harp 	&	&	&\\	
 \midrule							
 	&	&	&	&\trois{jkr}  	& \ipa{jkrɯt}  	& it will solidify \\	
 	&	&	&	&\trois{jtsr}  	& \ipa{jtsraw}  	&he delays his departure \\	
-\midrule							
+\midrule			
 	& \trois{rɴɢl}  	& \ipa{arɴɢlɯm}  	&it is concave 	&	&	&\\	
 	&	&	&	& \trois{xpr}  	& \ipa{ta-ɣɤxpra}  	&he sent him \\	
 \midrule							
@@ -762,11 +765,11 @@ nC  & 	38  & 	1  & 	39  & 	\\
 \midrule
 Cɕ  & 	2  & 	  & 	  2& 	\\	
 \midrule
-Cj; Cw  & 	29  & 	18  & 	47  & 	\\	
-Cl; Cr  & 	44  & 	51  & 	95  & 	\\	
+Cj; Cw  & 	30  & 	18  & 	48  & 	\\	
+Cl; Cr  & 	44  & 	52  & 	96  & 	\\	
 Cɣ; Cʁ  & 	32  & 	18  & 	50  & 	\\	
 \midrule
-total  & 	313  & 	98  & 	411  & 	\\	
+total  & 	314  & 	99  & 	413  & 	\\	
 \bottomrule
 \end{tabular}
 \end{table}
