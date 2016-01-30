@@ -608,6 +608,7 @@ sub generation {
 
     if ($variable1 =~ /[ptkmnŋrl]t_t$/) {
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
@@ -646,6 +647,7 @@ sub generation {
     elsif ($variable1 =~ /[ptkmnŋrl]_t$/) {
         #$result = $result.transcr($theme_H."u ".$theme_I."ʉ  ". $theme_J."nu ".$theme_K.$vowel3."ta ".$theme_L."tɛ " .$theme_M."su ")."\n";
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_E. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
@@ -683,6 +685,7 @@ sub generation {
     }
     elsif ($variable1 =~ /[aeiou]_t$/) {
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption($rime.".vt", "सकर्मक क्रिया  ".$theme_2C. "nɛ", $variable2);
         $result = $result.begin_tabular();
         $result = $result.transcr("&अभूत & भूत & आज्ञार्थक")." \\\\ \n";
@@ -818,6 +821,10 @@ sub generation {
 
 sub begin_table {
     return "\\begin{table}[H]\n\\centering\n";
+}
+
+sub smallsize {
+    return "\\footnotesize";
 }
 
 sub caption{

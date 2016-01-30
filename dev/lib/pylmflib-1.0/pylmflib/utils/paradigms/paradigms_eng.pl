@@ -594,6 +594,7 @@ sub generation_eng {
 
     if ($variable1 =~ /[ptkmnŋrl]t_t$/) {
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption_eng($rime.".vt", "Transitive verb", $radical, $variable2);
         $result = $result.begin_tabular();
         $result = $result."& non-past & past & imperative"." \\\\ \n";
@@ -632,6 +633,7 @@ sub generation_eng {
     elsif ($variable1 =~ /[ptkmnŋrl]_t$/) {
         #$result = $result.ipa($theme_H."u ".$theme_I."ʉ  ". $theme_J."nu ".$theme_K.$vowel3."ta ".$theme_L."tɛ " .$theme_M."su")." \n";
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption_eng($rime.".vt", "Transitive verb", $radical, $variable2);
         $result = $result.begin_tabular();
         $result = $result."& non-past & past & imperative"." \\\\ \n";
@@ -669,6 +671,7 @@ sub generation_eng {
     }
     elsif ($variable1 =~ /[aeiou]_t$/) {
         $result = $result.begin_table();
+        $result = $result.smallsize();
         $result = $result.caption_eng($rime.".vt", "Transitive verb", $radical, $variable2);
         $result = $result.begin_tabular();
         $result = $result."& non-past & past & imperative"." \\\\ \n";
@@ -804,6 +807,11 @@ sub generation_eng {
 
 sub begin_table {
     return "\\begin{table}[H]\n\\centering\n";
+}
+
+
+sub smallsize {
+    return "\\footnotesize";
 }
 
 sub caption_eng{
