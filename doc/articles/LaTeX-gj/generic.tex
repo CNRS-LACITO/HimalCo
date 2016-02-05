@@ -1,12 +1,3 @@
-%  \begin{exe}
-%\ex \label{ex:nWkWGe}
-%\glll
-%[\ipa{ɯ-jaʁ}  	\ipa{tɕʰi}  	\ipa{nɯ-kɯ-ɣe}]  	\ipa{ʑo}  	\ipa{tu-ndze}  \\
-% \textsc{3sg.poss}-hand what \textsc{pfv}-\textsc{genr}:S/P-come[II]  \textsc{emph} \textsc{ipfv}-eat[III] \\
-% { } { } \textsc{pfv}-\textsc{nmlz}:S/A-come[II]  \\
-% \glt (The dhole)_i eats whatever it can get its_i hands on. (dhole 12)
-% \end{exe}
-
 \documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
@@ -48,34 +39,43 @@
 
 
 \begin{document} 
-\linenumbers
-\title{Generic person marking in Japhug and other Rgyalrong languages }
+%\linenumbers
+\title{Generic person marking in Japhug and other Gyalrong languages\footnote{I wish to express my gratitude to Scott DeLancey, Spike Gildea, Joana Jansen as well as two anonymous reviewers, who really took pains at reading a previous version of this paper, and considerably helped to make it more rigorous and readable. The Japhug examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}).  This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI).  The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{auto}  autobenefactive-spontaneous, \textsc{anticaus} anticausative, \textsc{antipass} antipassive, \textsc{appl} applicative, \textsc{dem} demonstrative,  \textsc{dist} distal, \textsc{emph} emphatic, \textsc{fact} factual, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, \textsc{pres} egophoric present, \textsc{prog} progressive, \textsc{sens} sensory.}}
 \author{Guillaume Jacques}
 \maketitle
 
-\textbf{Abstract}: This paper discusses the use of the inverse prefix in generic person marking systems in several Rgyalrong languages. While closely related,  Japhug and Tshobdun differ considerably: the inverse prefix marks generic A in Japhug, while it appears  in the generic P form in Tshobdun. We propose  a historical scenario to explain how such radically different systems came into being, and show that our reconstruction can also explain the origin of the local scenario portmanteau  1$\rightarrow$2 and  2$\rightarrow$1 prefixes. These reconstructions allow us to establish the existence of several previously unattested grammaticalization pathways.
+\textbf{Abstract}: This paper discusses the history of generic person marking systems in several Gyalrong languages. While closely related,  Japhug and Tshobdun differ considerably: the inverse prefix marks generic A in Japhug, while it appears  in the generic P form in Tshobdun. We propose  a historical scenario to explain how such radically different systems came into being, proposing in particular that one of the generic human markers was grammaticalized from a nominalizer, and show that our reconstruction can also explain the origin of the local scenario portmanteau 1$\rightarrow$2 and  2$\rightarrow$1 prefixes. These reconstructions allow us to establish the existence of several previously unattested grammaticalization pathways.
 
-\textbf{Keywords}: Rgyalrong, Japhug, Tshobdun, Situ, inverse, generic, passive, grammaticalization, hierarchical agreement, nominalization
-
- %acknowledgments: Scott DeLancey
+\textbf{Keywords}: Gyalrong, Japhug, Tshobdun, Situ, inverse, generic, passive, grammaticalization, hierarchical agreement, nominalization
+ 
  
 \section{Introduction}
-Rgyalrong languages\footnote{Rgyalrong languages are spoken in some areas of the Rngaba Tibetan autonomous district, Sichuan, China. There are at least four distinct languages: Situ, Japhug, Tshobdun and Zbu, each of which comprises many distinct dialects.} have a quasi-canonical direct / inverse system (\citealt{delancey81direction}, \citealt{jackson02rentongdengdi}, \citealt{jacques10inverse}, \citealt{gongxun14agreement}, \citealt{jacques14inverse}). Although the inverse prefixes found in the Rgyalrong languages have  clear cognates  in other branches of the Sino-Tibetan family (\citealt{delancey10agreement}), the systems attested outside of Rgyalrongic are very different and this paper will only focus on Rgyalrong-internal evidence.
+Gyalrong languages\footnote{Gyalrong languages are spoken in some areas of the Rngaba Tibetan autonomous district, Sichuan, China. There are at least four distinct languages: Situ, Japhug, Tshobdun and Zbu, each of which comprises many distinct dialects.} have a quasi-canonical direct / inverse system (\citealt{delancey81direction}, \citealt{jackson02rentongdengdi}, \citealt{jacques10inverse}, \citealt{gongxun14agreement}, \citealt{jacques14inverse}). Although the inverse prefixes found in the Gyalrong languages have  clear cognates  in other branches of the Sino-Tibetan family (\citealt{delancey10agreement}), the systems attested outside of Gyalrongic are very different and this paper will only focus on Gyalrong-internal evidence.
 
-In Rgyalrong languages, the inverse is obligatory in 3$\rightarrow$SAP and prohibited in SAP$\rightarrow$3 scenarios (cf. Table \ref{tab:japhug.tr} in section \ref{sec:japhug}). It is also found in  2$\rightarrow$1 forms in all Rgyalrong languages except Japhug and is optional in 3$\rightarrow$3 forms, depending on various parameters discussed  in section \ref{sec:obv.jpg}.\footnote{Closely related languages such as Khroskyabs have a prefix cognate to the Rgyalrong inverse, but it has been generalized in all transitive non-local 3$\rightarrow$3 forms (\citealt{lai13affixale}).}
+In Gyalrong languages, the inverse is obligatory in 3$\rightarrow$SAP and prohibited in SAP$\rightarrow$3 scenarios (cf. Table \ref{tab:japhug.tr} in section \ref{sec:japhug}). It is also found in  2$\rightarrow$1 forms in all Gyalrong languages except Japhug and is optional in 3$\rightarrow$3 forms, depending on various parameters discussed  in section \ref{sec:obv.jpg}.\footnote{Closely related languages such as Khroskyabs have a prefix cognate to the Gyalrong inverse, but it has been generalized in all transitive non-local 3$\rightarrow$3 forms (\citealt{lai15person}). This is also the case in some varieties of Situ (\citealt{jackson15sastod})}
 
 In addition, the inverse prefix is also used to mark generic person in Japhug and Tshobdun  (\citealt{jacques12demotion}, \citealt{sun14generic}). However, these two languages differ as to which syntactic function is targeted by the inverse: in Japhug the inverse is used to mark generic A, while in Tshobdun it marks generic P. 
 
-  This paper is divided in three sections. First, I present an account of the use of the inverse prefix in Japhug and describe the system of generic person marking in this language. Second, I  discuss data from other Rgyalrong languages, especially Situ and Tshobdun. Third, I compare the available data on Rgyalrong languages and propose   a historical scenario to explain how the distribution of the inverse marker came be to be the way it is in Japhug and Tshobdun.
- 
- 
+  This paper is divided in three sections. In section 2, I present an account of the use of the inverse prefix in Japhug and describe the system of generic person marking in this language. In section 3, I provide additional data on nominalization in Japhug, which is necessary to introduce the historical discussion later in the paper. In section 4, I discuss data from other Gyalrong languages, especially Situ and Tshobdun. Finally, in section 5, I compare the available data on Gyalrong languages and propose historical scenarios explaining the use of the inverse as a generic human marker in Japhug and Tshobdun, the origin of the portmanteau 2$\rightarrow$1 and 1$\rightarrow$2 prefixes and the homophony between one of the generic human prefixes and the S/A participle prefix.
+  
 \section{Inverse and generic marking in Japhug} \label{sec:japhug}
+\subsection{The verbal paradigms}
 Table \ref{tab:japhug.tr} (from  \citealt{jacques10inverse}) presents the Japhug non-past transitive and intransitive paradigms. The symbol \ro{} represents the verb stem. In Japhug, intransitive verbs do not have stem alternations in the non-past, while some transitive verbs have two stems (called here stem I and stem III following \citealt{jackson00sidaba}'s terminology; stem II is the perfective stem and will not be discussed here, as it is irrelevant to the question of person marking). Stem III is restricted to finite \textsc{sg}$\rightarrow$3 forms (excluding the inverse 3'$\rightarrow$3 form); all other direct forms are identical to the corresponding forms of the intransitive paradigm.
 
+As shown by example (\ref{ex:tuwGnWCpWz}), in 3'$\rightarrow$3 forms, it is always the number of the P that is indexed on the verb, never that of the A; in 3$\rightarrow$3' forms, the number of the A is indexed.
 
+\begin{exe}
+\ex \label{ex:tuwGnWCpWz}
+\gll 
+\ipa{ɣzɯ} 	\ipa{ra} 	\ipa{kɯ} 	\ipa{li} 	\ipa{ʑɤni} 	\ipa{tú-wɣ-nɯɕpɯz-ndʑi} ... \ipa{pjɤ-ŋu} \\
+monkey \textsc{pl} \textsc{erg} again \textsc{3du} \textsc{ipfv-inv}-imitate-\textsc{du} ... \ipa{ifr.ipfv}-be \\
+ \glt The monkeys were imitating them.  (hist140511 xinbada, 262)
+\end{exe}
+
+\begin{landscape}
 \begin{table}[H]
 \caption{Japhug transitive and intransitive paradigms}\label{tab:japhug.tr}
-\resizebox{\columnwidth}{!}{
+%\resizebox{\columnwidth}{!}{
 \begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
 \textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
 \hline
@@ -105,9 +105,9 @@ Table \ref{tab:japhug.tr} (from  \citealt{jacques10inverse}) presents the Japhug
 	\hline	\hline
 \textsc{intr}&\ipa{\ra{}-a}&\ipa{\ra{}-tɕi}&\ipa{\ra{}-ji}&\ipa{tɯ-\ra{}}&\ipa{tɯ-\ra{}-ndʑi}&\ipa{tɯ-\ra{}-nɯ}&\ipa{\ra{}}&\ipa{\ra{}-ndʑi} &\ipa{\ra{}-nɯ}& 	\grise{} \\	
 	\hline
-\end{tabular}}
+\end{tabular}
 \end{table}
-
+\end{landscape}
 
 The distribution of the inverse prefix in local and mixed scenarios has been discussed in previous publications (\citealt{jacques10inverse} and \citealt{jacques14inverse}) and is not treated in the present paper. In the following sections, I focus exclusively on the use of the inverse in non-local scenarios, including its function as generic person marker for the A.
 
@@ -123,7 +123,7 @@ The only case where the inverse is required in non-local scenarios is in sentenc
 \textit{<yancong>}	\ipa{ɯ-ŋgɯ} 	\ipa{ɲɯ-ɲaʁ} 	\ipa{rcanɯ,} 	\ipa{tɕe} 	\ipa{kumpɣɤtɕɯ} 	\ipa{ra} 	\ipa{ɲɤ́-wɣ-sɯɣ-ɲaʁ-nɯ} 	\ipa{ʑo,} 	\ipa{nɯ-kɯ-ɤkhra} 	\ipa{ra} 	\ipa{mɯ-ɲɤ-χsɤl} 	\ipa{ʑo} 	\ipa{tɕendɤre} 	\ipa{ʑɯrɯʑɤri} 	\ipa{qale} 	\ipa{tu-βze,} 	\ipa{tɯmɯ} 	\ipa{kɯ} 	\ipa{pjɯ́-wɣ-χtɕi-nɯ} 	\ipa{tɕe} 	\ipa{ɲɯ-me} 	\ipa{ɲɯ-ŋu} \\
 chimney \textsc{3sg}-inside \textsc{ipfv}-be.black \textsc{top} \textsc{lnk} sparrow \textsc{pl} \textsc{evd-inv-caus}-be.black-\textsc{pl} \textsc{emph} \textsc{3pl.poss-nmlz}:S-be.colourful \textsc{pl} \textsc{neg-evd}-be.clear \textsc{emph} \textsc{lnk} progressively wind \textsc{ipfv}-make[III] rain \textsc{erg} \textsc{ipfv-inv}-wash-\textsc{pl} \textsc{lnk} \textsc{ipfv}-not.exist \textsc{testim}-be \\
 \glt As it is black inside the chimney, the sparrows were completely blackened by it, the patterns and colours (on their feathers) were not visible any more, but progressively, the wind and the rain washed them and (the soot on their feathers) disappeared.
- (Sparrows, 74-76)
+ (22 kumpGatCW, 74-76)
 \end{exe}
 
  \begin{exe}
@@ -136,14 +136,14 @@ up \textsc{lnk} up up \textsc{lnk} up \textsc{evd:up-inv-}take.away \\
 
 Conversely, the inverse cannot be used in a sentence where a non-generic animate agent acts upon an inanimate.
 
-When both agent and patient are animate, both inverse or direct forms can be used. Even in the case of a non-human agent acting upon a human patient, the inverse is not required, as is shown by example \ref{ex:thaCkWt}.
+When both agent and patient are animate, both inverse or direct forms can be used. Even in the case of a non-human agent acting upon a human patient, the inverse is not required, as is shown by example (\ref{ex:thaCkWt}).
 
  
 \begin{exe}
 \ex \label{ex:thaCkWt}
 \gll  	\ipa{ndʑi-sɤtɕha} 	\ipa{nɯnɯ} 	\ipa{ɣɯ} 	\ipa{jil} 	\ipa{nɯnɯ} 	\ipa{rcanɯ} 	\ipa{khu} 	\ipa{kɯ} 	\ipa{lonba} 	\ipa{ʑo} 	\ipa{tha-ɕkɯt} 	\ipa{ɲɯ-ŋu}  \\
 \textsc{3du.poss}-place \textsc{top} \textsc{gen} villager \textsc{top} \textsc{top:unexp} tiger \textsc{erg} all \textsc{emph} \textsc{pfv:dir:3}$\rightarrow$3-eat \textsc{testim}-be \\
- \glt All the villagers in their land had been eaten by a tiger.  (The tiger, 5)
+ \glt All the villagers in their land had been eaten by a tiger.  (the tiger, 5)
 \end{exe}
 
 
@@ -154,7 +154,7 @@ When both arguments are inanimates, the direct form is generally used, but I fou
 \gll
  \ipa{ɯ-rkɯ} 	\ipa{nɯ} 	\ipa{tɕu,} 	\ipa{si} 	\ipa{kɯ-wxti} 	\ipa{a-pɯ-tu} 	\ipa{tɕe} 	\ipa{ɲɯ́-wɣ-z-maqhu} 	\ipa{qhe} 	\ipa{ɯʑo} 	\ipa{tu-mbro} 	\ipa{mɯ́j-cha.} 	\\
 \textsc{3du.poss}-side \textsc{top} \textsc{loc} tree \textsc{nmlz}:S-be.big \textsc{irr-ipfv}-exist \textsc{lnk} \textsc{ipfv-inv-caus}-be.after \textsc{lnk} \textsc{3sg} \textsc{ipfv}-be.big \textsc{neg:testim}-can \\
-\glt If there is a big tree_j next to it_i, it_j delays its_i growth and it_i cannot grow very big. (laŋlaŋ, 242)
+\glt If there is a big tree_j next to it_i, it_j delays its_i growth and it_i cannot grow very big. (14: sWNgWJu, 242)
 \end{exe}
 
 
@@ -181,6 +181,17 @@ The inverse prefix \ipa{-wɣ-} is not a switch reference marker: it is common to
 
 In comparison with Algonquian and Kutenai (\citealt{dryer94inverse}), the inverse is relatively rare in Japhug narratives (see the text counts in \citealt{jacques10inverse}).
 
+In addition to these uses, the inverse also appears to express generic human A, as in example (\ref{ex:tuwGzwAr}). Such examples differ from previous uses of the inverse in two ways: first, it can be used when the P is inanimate and the A human, and second, no cases of number indexation (of the P) have been found in such examples (though it is too early to claim that this is a grammatical rule). 
+
+\begin{exe}
+\ex  \label{ex:tuwGzwAr}
+\gll \ipa{ɣɟɯ} 	\ipa{nɯ} 	\ipa{kɯngɯ-rtsɤɣ} 	\ipa{mbro} 	\ipa{ri,} 	\ipa{kɤ-sɤtʂu} 	\ipa{khɯ} 	\ipa{tɕe} 	\ipa{tɤtʂu} 	\ipa{tú-wɣ-zwɤr} 	\ipa{tɕe} 	\ipa{sɤmto.}  \\
+tower \textsc{dem} nine-stairs be.high:\textsc{fact} \textsc{lnk} \textsc{inf}-illuminate be.possible:\textsc{fact} \textsc{lnk} lamp \textsc{ipfv-inv}-light.up \textsc{lnk} be.visible:\textsc{fact} \\
+\glt Even if the watchtower is nine stairs high, it can be illuminated with a lamp, that is, when people light up a lamp, it is visible (inside). (hist140522 GJW, 35)
+\end{exe}
+
+Such forms are discussed in more detail below, but some additional information on generic person marking in Japhug is necessary first.
+
 \subsection{Generic marking}  \label{sec:genr.jpg}
 
 In Japhug, non-overt arguments are generally interpreted as definite. In order to express indefinite referents, four strategies are available. 
@@ -198,7 +209,7 @@ In regular verbs, the generic marker \ipa{kɯ-} is used to designate generic hum
 \gll
 \ipa{tɕe}  	[\ipa{tɯ-sɯm}  	\textbf{\ipa{pɯ-a<nɯ>ri}}]  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe,}  	[\textbf{\ipa{mɯ-pɯ-a<nɯ>ri}}]  	\ipa{nɤ}  	\ipa{ju-kɯ-ɕe}  	\ipa{pɯ-ra}  \\
 \textsc{lnk} \textsc{indef.poss}-mind  \textsc{pfv-<auto>}go[II] \textsc{lnk} \textsc{ipfv-genr}:S/P-go \textsc{neg-pfv-<auto>}go[II] \textsc{lnk} \textsc{ipfv-genr}:S/P-go \textsc{pst.ipfv}-have.to \\
-\glt Whether one liked it or not, one had to go. (Relatives, 212)
+\glt Whether one liked it or not, one had to go. (14: tApitaRi, 212)
 \end{exe}
 
 
@@ -214,8 +225,8 @@ The generic marker \ipa{kɯ-} is used with all intransitive verbs, whether dynam
 \begin{exe}
 \ex \label{ex:pWkWNu}
 \gll
-\ipa{tɕeri} 	\ipa{tɤpɤtso} 	\ipa{pɯ-kɯ-ŋu} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-ndza} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pɯ-kɯ-rga.} \\
-but child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc{dem} \textsc{inf}-eat really \textsc{emph} \textsc{pst.ipfv-genr}:S/P-like \\
+\ipa{tɕeri} 	\ipa{tɤ-pɤtso} 	\ipa{pɯ-kɯ-ŋu} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-ndza} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pɯ-kɯ-rga.} \\
+but \textsc{indef.poss}-child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc{dem} \textsc{inf}-eat really \textsc{emph} \textsc{pst.ipfv-genr}:S/P-like \\
 \glt When (we) were children, (we) liked it a lot. (12: ndZiNgri, 135)
 \end{exe}
 
@@ -226,7 +237,7 @@ In sentences with verbs in the generic form, the generic  human referent is eith
 \gll
 \ipa{tɕe}  	\ipa{li}  	\ipa{nɯ}  	\ipa{tɯrme}  	\ipa{kɯnɤ}  	\ipa{ku-kɯ-nɯfse}  	\ipa{ɲɯ-ŋu,}\\
 \textsc{lnk} again \textsc{dem} people also \textsc{ipfv-genr:S/P}-recognize \textsc{testim}-be\\
-\glt  (The monkey) recognizes people. (monkey, 17)
+\glt  (The monkey) recognizes people. (19: GzW2, 17)
 \end{exe}
 
 \begin{exe}
@@ -247,7 +258,7 @@ Generic arguments are not only indexed by verbal morphology; there is also a gen
 \gll
 \ipa{nɯ} 	\ipa{tɯʑo} 	\ipa{kɯ} 	\ipa{tɯ-χti} 	\ipa{ɲɯ́-wɣ-nɯ-ɕar} 	\ipa{kɯ-maʁ} 	\ipa{kɯ,} 	\ipa{tɯ-phama} 	\ipa{ra} 	\ipa{kɯ} 	\ipa{tɯ-χti} 	\ipa{ɲɯ-ɕar-nɯ} 	\\
 \textsc{dem} \textsc{genr} \textsc{erg} \textsc{genr:poss}-spouse \textsc{ipfv-inv-autoben}-search \textsc{inf:stat}-not.be \textsc{erg} \textsc{genr:poss}-parent \textsc{pl} \textsc{erg} \textsc{genr:poss}-spouse \textsc{ipfv}-search-\textsc{pl} \\
-\glt One would not search for one's spouse, one's parents would search for one's spouse. (Relatives, 210)
+\glt One would not search for one's spouse, one's parents would search for one's spouse. (14: tApi taRi, 210)
 \end{exe}
 
 
@@ -256,7 +267,7 @@ Generic arguments are not only indexed by verbal morphology; there is also a gen
 \gll
 \ipa{tɯʑo-sti}  	\ipa{a-mɤ-nɯ-kɯ-ɤtɯɣ}  	\ipa{ɲɯ-ra}  	\ipa{ma}  	\ipa{ɲɯ-sɤɣ-mu.}  \\
 \textsc{genr}-alone \textsc{irr-neg-auto-genr:S/P}-meet \textsc{testim}-have.to because \textsc{testim-deexp}-be.afraid \\
-\glt One should not meet (a bear) alone, it is frightening. (Bear, 98)
+\glt One should not meet (a bear) alone, it is frightening. (21: pri, 98)
 \end{exe}
 
 Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic human possessor, as in example \ref{ex:tWlaXtCha}. As shown by example \ref{ex:tWse}, it can in some cases be used to refer to humans together with domestic animals.
@@ -264,9 +275,9 @@ Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic h
 \begin{exe}
 \ex \label{ex:tWlaXtCha}
 \gll 
-\ipa{tɕe}  	\ipa{aʁɤndɯndɤt}  	\ipa{ʑo}  	\ipa{ku-zo}  	\ipa{qhe}  	\ipa{ɯ-qe}  	\ipa{ku-lɤt}  	\ipa{qhe}	\ipa{wuma}  	\ipa{ʑo}  	\ipa{tɯ-kha}  	\ipa{cho}  	\ipa{tɯ-laχtɕha}  	\ipa{ra}  	\ipa{sɯ-ɴqhi.}  \\
+\ipa{tɕe}  	\ipa{aʁɤndɯndɤt}  	\ipa{ʑo}  	\ipa{ku-zo}  	\ipa{qhe}  	\ipa{ɯ-qe}  	\ipa{ku-lɤt}  	\ipa{qʰe}	\ipa{wuma}  	\ipa{ʑo}  	\ipa{tɯ-kʰa}  	\ipa{cho}  	\ipa{tɯ-laχtɕʰa}  	\ipa{ra}  	\ipa{sɯ-ɴqʰi.}  \\
 \textsc{lnk} everywhere \textsc{emph} \textsc{ipfv}-land \textsc{lnk} \textsc{3sg.poss}-feces \textsc{ipfv}-throw \textsc{lnk} really \textsc{emph} \textsc{indef.poss}-house \textsc{comit} \textsc{indef.poss}-thing \textsc{pl} \textsc{fact:caus}-be.dirty \\
-\glt (Flies) land everywhere, shit on it and make one's houses and things dirty. (Flies, 59)
+\glt (Flies) land everywhere, shit on it and make one's houses and things dirty. (25 akWzgumba, 59)
 \end{exe}
 
 \begin{exe}
@@ -274,7 +285,7 @@ Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic h
 \gll
 \ipa{nɯ} 	\ipa{kɯ-fse} 	\ipa{tɕe} 	\ipa{tɯʑo} 	\ipa{tɯ-rɟit} 	\ipa{kɯnɤ} 	\ipa{ʑa} 	\ipa{mɤ-sci} 	\ipa{tu-ti-nɯ} \\
 \textsc{dem} \textsc{nmlz}:S-be.like \textsc{lnk} \textsc{indef} \textsc{indef.poss}-child also early \textsc{neg-fact}:be.born \textsc{ipfv}-say-\textsc{pl} \\
-\glt People say that in this way, one's child will be born late. (Deer, 111)
+\glt People say that in this way, one's child will be born late. (27 qartshaz, 111)
 \end{exe}
 
 
@@ -288,7 +299,7 @@ While the indefinite possessive \ipa{tɯ-} and the generic possessive \ipa{tɯ-}
 \gll
  \ipa{tɯ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{tɕe} 	``\ipa{a-rpɯ} \ipa{a-ɬaʁ}" 	\ipa{tu-kɯ-ti} 	\ipa{ŋu.} \\
 \textsc{genr.poss}-uncle \textsc{3sg.poss}-offspring \textsc{3sg-dat} \textsc{lnk} \textsc{lnk} \textsc{1sg.poss}-uncle \textsc{1sg.poss}-aunt \textsc{ipfv-genr}-say be:\textsc{fact} \\
-\glt One has to say ``my maternal uncle, my maternal aunt" to one's maternal uncle's sons and daughters. (Kinship, 69)
+\glt One has to say ``my maternal uncle, my maternal aunt" to one's maternal uncle's sons and daughters. (hist140425 kWmdza, 69)
 \end{exe}
 
 Example \ref{ex:tArpW}, although it also refers to a generic state of affairs (it explains the Omaha-type skewing of the Japhug kinship system), has both verbs in non-generic forms, and here we find the indefinite possessor \ipa{tɤ-} rather than the generic \ipa{tɯ-} possessive prefix. In this sentence, it is possible to replace the indefinite generic \ipa{tɤ-} by the definite possessive prefix \ipa{a-} ``my".
@@ -298,7 +309,7 @@ Example \ref{ex:tArpW}, although it also refers to a generic state of affairs (i
 \gll
 \ipa{nɤʑo} 	\ipa{tɤ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{a-pɯ-tɯ-ŋu,} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{aʑo} 	\ipa{kɯ} 	\ipa{a-rpɯ} 	\ipa{tu-ti-a} 	\ipa{kɯ-ra.}  \\
 \textsc{2sg} \textsc{indef.poss}-uncle \textsc{3sg.poss}-offspring \textsc{irr-pst.ipfv}-2-be \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{erg}  \textsc{1sg.poss}-uncle \textsc{ipfv}-say-\textsc{1sg} \textsc{nmlz:S}-have.to  \\
-\glt If you are the maternal uncle's son, (and I am the nephew,) I have to say ``my uncle" (to you).  (Kinship, 114)
+\glt If you are the maternal uncle's son, (and I am the nephew,) I have to say ``my uncle" (to you).  (hist140425 kWmdza, 114)
 \end{exe}
 
 Examples \ref{ex:tWse} and \ref{ex:tAse} illustrate the same contrast with the possessed noun \ipa{-se} ``blood".\footnote{This example also illustrates that the generic person marking is not restricted to humans, but can be used to refer to humans and domestic animals together.  }
@@ -306,9 +317,9 @@ Examples \ref{ex:tWse} and \ref{ex:tAse} illustrate the same contrast with the p
 \begin{exe}
 \ex  \label{ex:tWse}
 \gll
-\ipa{tɯrme} 	\ipa{me,} 	\ipa{fsapaʁ} 	\ipa{me,} 	\ipa{tɯ-se} 	\ipa{nɯ} 	\ipa{ku-tshi} 	\ipa{nɤ} 	\ipa{ku-tshi} \\
+\ipa{tɯrme} 	\ipa{me,} 	\ipa{fsapaʁ} 	\ipa{me,} 	\ipa{tɯ-se} 	\ipa{nɯ} 	\ipa{ku-tsʰi} 	\ipa{nɤ} 	\ipa{ku-tsʰi} \\
 people whether.or animal whether.or \textsc{genr.poss}-blood \textsc{top} \textsc{ipfv}-drink \textsc{lnk} \textsc{ipfv}-drink \\
-\glt Whether people or (domestic) animals, (the tick) drinks one's blood. (Tick, 40)
+\glt Whether people or (domestic) animals, (the tick) drinks one's blood. (25 xCelwi, 40)
 \end{exe}
 
 \begin{exe}
@@ -316,7 +327,7 @@ people whether.or animal whether.or \textsc{genr.poss}-blood \textsc{top} \texts
 \gll
 \ipa{tɤ-se} 	\ipa{ɣɤʑu} 	\ipa{kɯ?} \\
 \textsc{indef.poss}-blood \textsc{exist:sensory} \textsc{interrogative} \\
-\glt Is there blood? (Monkey, 76)
+\glt Is there blood? (19: GzW, 76)
 \end{exe}
 
 The generic possessive prefix can also be used with oblique case markers, which are etymologically semantically bleached possessed nouns, as in example \ref{ex:tWCki}.
@@ -326,7 +337,7 @@ The generic possessive prefix can also be used with oblique case markers, which 
 \gll
 \ipa{tɯ-ɕki} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{ʑɣɤ-sɯ-ɤrmbat} 	\ipa{tɕe} 	\ipa{núndʐa} 	\ipa{khe} 	\ipa{tu-ti-nɯ} 	\ipa{ɲɯ-ŋu.} \\
 \textsc{genr-dat} really \textsc{emph} \textsc{fact:refl-caus}-be.near \textsc{lnk} for.this.reason be.stupid:\textsc{fact} \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \\
-\glt It comes close to oneself, and for this reason people say that it is stupid. (tɤkhepɣɤtɕɯ, 60)
+\glt It comes close to oneself, and for this reason people say that it is stupid. (23: scuz, 60)
 \end{exe}
 
 The noun \ipa{tɯrme} ``people" is sometimes used as an alternative to the generic pronoun \ipa{tɯʑo} and can be equated with the referent marked with generic morphology on the verb or on possessive prefixes in the sentence. For instance, in \ref{ex:genr.tWrme2}, \ipa{tɯrme} ``people" is the A marked with the ergative, while the verb has inverse (generic A) marking.
@@ -345,9 +356,9 @@ Yet, there is a slight difference of usage between \ipa{tɯrme} and \ipa{tɯʑo}
 \begin{exe}
 \ex  \label{ex:genr.tWrme3}
 \gll
-\ipa{tɯrme} 	\ipa{tɯ-fsu} 	\ipa{ɕaŋtaʁ} 	\ipa{tu-mbro} 	\ipa{mɤ-cha.} \\
+\ipa{tɯrme} 	\ipa{tɯ-fsu} 	\ipa{ɕaŋtaʁ} 	\ipa{tu-mbro} 	\ipa{mɤ-cʰa.} \\
 people \textsc{genr}-equal.to until \textsc{ipfv}-be.big \textsc{neg-fact}:can \\ 
-\glt It cannot grow as big as a person (as oneself). (phuɲi, 24)
+\glt It cannot grow as big as a person (as oneself). (11: qarGW, 24)
 \end{exe}
 
 \begin{exe}
@@ -355,7 +366,7 @@ people \textsc{genr}-equal.to until \textsc{ipfv}-be.big \textsc{neg-fact}:can \
 \gll
 \ipa{ɯ-tɯ-mbro} 	\ipa{nɯnɯ} 	\ipa{tɯʑo} 	\ipa{tɯ-fsu} 	\ipa{jamar} 	\ipa{tu-zɣɯt} 	\ipa{cha.}  \\
 \textsc{3sg-nmlz:degree}-be.high \textsc{top} \textsc{genr} \textsc{genr}-equal.to about \textsc{ipfv:up}-reach can:\textsc{fact} \\
-\glt As for its size, it can reach one's (a person's) size. (ɕɯrɴɢo, 18)
+\glt As for its size, it can reach one's (a person's) size. (16: CWrNgo, 18)
 \end{exe}
 
 However, \ipa{tɯrme} as a generic noun can alternatively be used with a possessee or a case marker with the third person singular \ipa{ɯ-} prefix, as in \ref{ex:tWrme.Wfsu}, while this option does not exist for \ipa{tɯʑo}.
@@ -372,12 +383,12 @@ people \textsc{3sg}-equal.to about \textsc{ipfv}-do[III] can:\textsc{fact} \\
  
 
  \section{Nominalization in Japhug} \label{sec:nmlz}
-Japhug has an S/A nominalization \ipa{kɯ-} prefix formally identical to the generic S/P \ipa{kɯ-}, which is obviously relevant to any discussion concerning the origin of the generic construction in Japhug. In this section, we present general information about nominalization in Japhug, before discussing other Rgyalrong languages and proposing a grammaticalization pathway linking generic and nominalization. 
+ \subsection{Overview of participle prefixes in Japhug}
+Japhug has an S/A participle \ipa{kɯ-} prefix formally identical to the generic S/P \ipa{kɯ-}, which is obviously relevant to any discussion concerning the origin of the generic construction in Japhug. In this section, we present general information about nominalization in Japhug, before discussing other Gyalrong languages and proposing a grammaticalization pathway linking generic and nominalization. 
 
-Japhug has four productive\footnote{See \citet[4-6]{jacques14antipassive} concerning non-productive nominalization prefixes.} nominalization prefixes: S/A nominalization \ipa{kɯ-},   P nominalization \ipa{kɤ-},   oblique nominalization \ipa{sɤ-}  and   action nominalization \ipa{tɯ-}.\footnote{The latter will not be discussed here, as it is not relevant to the discussion; see \citet[6-9]{jacques14antipassive}  for more information.}   All of these prefixes appear to present potential cognates elsewhere in the Sino-Tibetan family; in particular, nominalizing velar prefixes (for core argument nominalization) are particularly widespread (see \citealt{konnerth09nmlz}). 
+Japhug has four productive\footnote{See \citet[4-6]{jacques14antipassive} concerning non-productive nominalization prefixes.} nominalization prefixes: S/A participle \ipa{kɯ-},   P participle \ipa{kɤ-},   oblique participle \ipa{sɤ-}  and   action nominalization \ipa{tɯ-}.\footnote{The latter will not be discussed here, as it is not relevant to the discussion; see \citet[6-9]{jacques14antipassive}  for more information.}   All of these prefixes appear to present potential cognates elsewhere in the Sino-Tibetan family; in particular, nominalizing velar prefixes (for core argument nominalization) are particularly widespread (see \citealt{konnerth09nmlz}). 
 
- 
-The nominalized forms derived with the three first prefixes \ipa{kɯ-}, \ipa{kɤ}- and \ipa{sɤ}- are fully productive and can be combined with TAM and negation prefixes.  The \ipa{kɯ-} S/A nominalization prefix appears with both intransitive and transitive verbs, but in the latter case a possessive prefix  coreferent with the patient is added (see \ref{ex:kill}). This nominalized form can be used as one of the tests to determine whether a particular verb is transitive or intransitive. Like Tshobdun (\citealt{jackson03caodeng}),  Japhug exhibits accusative alignment $S=A\neq P$ in its nominalization pattern, unlike the ergative alignment found in generic forms. 
+ The nominalized forms derived with the three first prefixes \ipa{kɯ-}, \ipa{kɤ}- and \ipa{sɤ}- are fully productive and can be combined with TAM and negation prefixes; they are commonly used in particular to build relative clauses (\citealt{jacques16relatives}).  The \ipa{kɯ-} S/A participle prefix appears with both intransitive and transitive verbs, but in the latter case a possessive prefix  coreferent with the patient is added (see \ref{ex:kill}). This nominalized form can be used as one of the tests to determine whether a particular verb is transitive or intransitive. Like Tshobdun (\citealt{jackson03caodeng}),  Japhug exhibits accusative alignment $S=A\neq P$ in its nominalization pattern, unlike the ergative alignment found in generic forms. 
 
  \begin{exe}
 \ex \label{ex:die}
@@ -397,7 +408,8 @@ The nominalized forms derived with the three first prefixes \ipa{kɯ-}, \ipa{kɤ
  \glt  `The one that is killed.'
  \end{exe}
  
-  The patient nominalizer \ipa{kɤ-} can appear with an optional possessive prefix coreferent to the agent as in \ref{ex:kill3}.
+  The P participle \ipa{kɤ-} can appear with an optional possessive prefix coreferent to the A as in \ref{ex:kill3}.
+  
   \begin{exe}
 \ex \label{ex:kill3}
 \gll \ipa{a-kɤ-sat}    \\
@@ -405,7 +417,7 @@ The nominalized forms derived with the three first prefixes \ipa{kɯ-}, \ipa{kɤ
  \glt  `The one that I kill.'
  \end{exe} 
  
-The infinitive prefixes  \ipa{kɤ-} (for dynamic verbs) and \ipa{kɯ-} (for stative verbs or intransitive verbs that cannot take an animate argument) are also historically related to the nominalization prefixes, though slightly distinct, since for instance dynamic intransitive verbs cannot take P nominalization but can have a   \ipa{kɤ-} infinitive. Infinitives are used as citation forms (though not the preferred choice for all speakers), complementation and also as converbs (\citealt{jacques14linking}).
+The infinitive prefixes  \ipa{kɤ-} (for dynamic verbs) and \ipa{kɯ-} (for stative verbs or intransitive verbs that cannot take an animate argument) are also historically related to the nominalization prefixes, though slightly distinct, since for instance dynamic intransitive verbs build a P participle but can have a \ipa{kɤ-} infinitive. Infinitives are used as citation forms (though not the preferred choice for all speakers), complementation and also as converbs (\citealt{jacques14linking}).
  
  The \ipa{sɤ}-prefix (and its allomorphs \ipa{sɤz}- and \ipa{z}-) is used to relativize adjuncts (in particular recipients of indirective verbs, instruments, place and time).  It receives a possessive prefix  which can be coreferent with S, A or P.
 
@@ -416,113 +428,26 @@ The infinitive prefixes  \ipa{kɤ-} (for dynamic verbs) and \ipa{kɯ-} (for stat
  \glt  `The place/moment where/when it comes.'
  \end{exe}
 
-Nominalized forms (including infinitives) cannot receive finite person marking (person is only marked by possessive prefixes), inverse \ipa{wɣ}-, direct \ipa{a}-, irrealis \ipa{a}- or evidential directional prefixes.
-
-They are only compatible with associated motion prefixes \ipa{ɣɯ}- and \ipa{ɕɯ}-, negative prefixes and perfective and imperfective directional prefixes.\footnote{The template of finite verb forms is presented in \citet{jacques13harmonization}.} When a nominalized form has a negative, TAM or associated motion prefix, the possessive prefix of A-nominalization and oblique nominalization is optional (examples \ref{ex:makWndza} to \ref{ex:thongthar}).
-
-    \begin{exe}
-\ex \label{ex:makWndza}
-\gll
-[\ipa{ɯ-zda}  	\ipa{ra}  	\ipa{chɯ-kɯ-ndza}]  	\ipa{ci,}  	\ipa{ɕa}  	\ipa{ma}  	\ipa{mɤ-kɯ-ndza}  	\ipa{ɲɯ-ŋu.}  	 \\
-\textsc{3sg.poss}-companion  \textsc{pl} \textsc{ipfv-nmlz}:S/A-eat \textsc{indef} meat apart.from \textsc{neg-nmlz}:S/A-eat \textsc{const}-be \\
-\glt (The dhole) is (an animal) that eats other animals, that only eats meat. (Dhole, 2-3)
- \end{exe}
-     \begin{exe}
-\ex \label{ex:kill4}
-\gll
-\ipa{qajtʂha}  	\ipa{nɯ}  	[\ipa{pɯ-kɤ-sat}]  	\ipa{kɯnɤ}  	\ipa{kɤ-mto}  	\ipa{mɯ-pɯ-rɲo-t-a.}  \\
-vulture \textsc{top} \textsc{pfv-nmlz:P}-kill  also \textsc{inf}-see \textsc{neg-pfv}-experience-\textsc{pst:tr-1sg} \\
-\glt I have never seen a vulture, even a dead (killed) one. (Vulture 54)
- \end{exe}
-  
-  
- \begin{exe}
-\ex \label{ex:thongthar}
-\gll [\ipa{qandʑi}   	\ipa{chɯ-sɤ-ɣnda}]   	\ipa{nɯ}   	\ipa{thoŋthɤr}   	  	\ipa{ɲɯ-rmi}    \\
-bullet \textsc{ipf}-\textsc{nmlz:oblique}-ram   \textsc{dem} ramrod \textsc{const}-call \\
- \glt What is used to ram a bullet (into the muzzle of the gun) is called a ramrod. (Arquebus)
- \end{exe}
-
-It is possible to combine several prefixes before the nominalization prefix; the limit is three prefixes, as in example \ref{ex:WGWjAkWqru}.
- \begin{exe}
-\ex \label{ex:WGWjAkWqru}
-\gll
-  	\ipa{ɯ-ɣɯ-jɤ-kɯ-qru}  	\ipa{tɤ-tɕɯ}  	   \\
-  \textsc{3sg-cisloc-pfv-nmlz:}S/A-meet \textsc{indef.poss}-boy   \\
-\glt The boy  who had come to look for her (The three sisters 231)
- \end{exe}
+Nominalized forms (including infinitives) cannot receive finite person marking (person is only marked by possessive prefixes), inverse \ipa{wɣ}-, direct \ipa{a}-, irrealis \ipa{a}- or evidential directional prefixes and the non-past verb stem (Stem III).
  
-The ordering of the inflexional prefixes in  Japhug is shown in Table \ref{tab:template.nmlz}; derivational prefixes are not represented here - they are all conflated within   ``enlarged stem".
-
-
-
-\begin{table}[H]
-\caption{The template of nominalized verbal forms in Japhug} \centering \label{tab:template.nmlz}
-\resizebox{\columnwidth}{!}{
-\begin{tabular}{lllllll}
-\toprule
--5 & -4&-3 &-2&-1\\
-possessive & negative&associated   & TAM & nominalization &enlarged  \\
-prefix & prefix &motion prefix  &directional&&stem\\
-\bottomrule
-\end{tabular}}
-\end{table}
-
-The non-past verb stem (Stem III) never appears in nominalized forms. On the other hand, the perfective stem (Stem II) is obligatory in perfective nominalized verbs as in \ref{ex:jAkWGe} (compare with the imperfective nominalization in example \ref{ex:jukWGi}).
-
- \begin{exe}
-\ex \label{ex:jAkWGe}
-\gll
-  	\ipa{jɤ-kɯ-ɣe}	   \\
-  \textsc{pfv-nmlz:}S/A-come[II]   \\
-\glt The one who came.
-\ex \label{ex:jukWGi}
-\gll
-  	\ipa{ju-kɯ-ɣi}	   \\
-  \textsc{ipfv-nmlz:}S/A-come   \\
-\glt The one who is coming.
- \end{exe}
  
-The oblique nominalizer is only compatible with imperfective TAM prefixes, not with perfective ones. 
- 
-% \subsection{Use as converbs} \label{sec:converb.kA}
-% 
-% The main syntactic functions of nominalized verb forms and infinitives in Japhug are relativization and complementation.   In addition, the infinitives prefixed  in \ipa{kɤ-} (for dynamic verbs) and \ipa{kɯ-} (for stative verbs or intransitive verbs that cannot take animate argument) can be used as manner converbs, as illustrated by the following examples.
-% 
-% 
-%
-%\begin{exe}
-%\ex \label{ex:mAkWmbrAt}
-%\gll
-%\ipa{maka} 	\ipa{mɤ-kɯ-mbrɤt} 	\ipa{ʑo} 	\ipa{ɲɯ-rɤma} 	\ipa{ɲɯ-ɕti}  \\
-%\textsc{at.all} \textsc{neg-inf:n.inam}-break \textsc{emph} \textsc{testim}-work \textsc{testim}-be:\textsc{affirmative} \\
-%\glt (The bee) works without stop. (Bees, 62)
-% \end{exe}
-% 
-% \begin{exe}
-%\ex \label{ex:nWmAkAsWz}
-%\gll
-%\ipa{ɯ-ɣi}   	\ipa{ra}   	\ipa{nɯ-mɤ-kɤ-sɯz}   	\ipa{nɯ}   	\ipa{rŋɯl}   	\ipa{nɯ}   	\ipa{ɲɤ-mbi.}   \\
-%\textsc{3sg.poss}-relative \textsc{pl} \textsc{3pl-neg-inf}-know \textsc{dem} silver \textsc{top} \textsc{evd}-give \\
-%\glt  She gave him silver without her relatives knowing. (The Raven4, 161)
-%\end{exe}
-
 
  \subsection{Nominalization and generic}  
-Although the generic S/P \ipa{kɯ-} prefix and the S/A nominalization \ipa{kɯ-} prefix are homophonous, occur in the same slot of the verbal template and are obviously historically related, they are nevertheless completely distinct synchronically in Japhug. 
+The generic S/P \ipa{kɯ-} prefix and the S/A nominalization \ipa{kɯ-} prefix are homophonous, occur in the same slot of the verbal template, and are very probably historically related (a hypothesis explored in section \ref{sec:nmlz2genr}). Nevertheless, they are nevertheless completely distinct synchronically. 
 
 Generic forms, although they cannot bear person markers other than the generic  person \ipa{kɯ-} or the inverse \ipa{wɣ-}, are fully finite and there is no restriction on the TAM morphology. In particular, unlike nominalized forms, generic verb forms are commonly used in the irrealis (see for instance example \ref{ex:YWwGnWCar}), whereas the irrealis (as well as the progressive, the evidential, the conative) is incompatible with  nominalized forms.
 
 Unlike nominalized forms,  verbs with generic \ipa{kɯ-} or   inverse \ipa{wɣ-} cannot take possessive prefixes, and cannot be used in the same way in relativization and complementation.\footnote{The use of finite vs nominalized verb forms in relativization and complementation, however, cannot be discussed in detail within the scope of the present paper.} Moreover, while the  two sensory existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist'  are defective and lack nominalized forms, they do have generic person forms, where the marker \ipa{kɯ-}   appears  as an infix: \ipa{ɣɤ
 <kɤ>ʑu} and \ipa{ma<ka>ŋe}.\footnote{Note that the second person prefix \ipa{tɯ-} displays the same behaviour with sensory copulas; the second person forms of these verbs is \ipa{ɣɤ<tɤ>ʑu} and \ipa{ma<ta>ŋe}. } 
 
-\section{Historical perspectives}
-In this section, we first present comparative data from Tshobdun and Situ, and then provide a historical scenario accounting for the differences between the three languages.
+ \section{Tshobdun and Situ}
+
+This section provides complementary data on generic person marking in nominalization in Tshobdun and Situ in comparative perspective.
 
 \subsection{Generic person marking and nominalization in Tshobdun} \label{tshobdun.genr}
 The system of generic person marking in Tshobdun is complementely different from the Japhug one, although all prefixes involved have direct Japhug cognates.
 
-\citet{sun14generic} describes a generic person marking system involving four prefixes \ipa{kə-}, \ipa{kɐ-}, \ipa{sɐ-} and \ipa{o-}, respectively related to Japhug generic  \ipa{kɯ-}, P nominalization and infinitive \ipa{kɤ-}, oblique nominalization \ipa{sɤ-} and inverse \ipa{wɣ-}. 
+\citet{sun14generic} describes a generic person marking system involving four prefixes \ipa{kə-}, \ipa{kɐ-}, \ipa{sɐ-} and \ipa{o-}, respectively related to Japhug generic  \ipa{kɯ-}, P participle and infinitive \ipa{kɤ-}, oblique participle \ipa{sɤ-} and inverse \ipa{wɣ-}. 
 
 In Tshobdun, \ipa{kə-} and \ipa{kɐ-} are used to indicate generic S or A. The contrast between \ipa{kə-} and \ipa{kɐ-}, without equivalent in Japhug, is between 	 \textit{non-volitional} and  \textit{volitional} human S/A, as illustrated by the   example \ref{ex:tshobdun.kA} taken from \citet[238]{sun14generic}.
  \begin{exe}
@@ -535,7 +460,7 @@ In Tshobdun, \ipa{kə-} and \ipa{kɐ-} are used to indicate generic S or A. The 
  
  The prefix \ipa{sɐ-}, on the other hand, marks generic human person on copulas. In Japhug, copulas do not have distinct generic marking and the S/P generic person prefix \ipa{kɯ-} is used, as with all intransitive verbs.
  
-To mark generic P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulting from the  fusion  of  the generic prefix \ipa{kə-} and the inverse prefix \ipa{o-} is used, as illustrated by \ref{ex:tshobdun.inv} (\citealt[240]{sun14generic}).
+To mark generic human P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulting from the  fusion  of  the generic prefix \ipa{kə-} and the inverse prefix \ipa{o-} is used, as illustrated by \ref{ex:tshobdun.inv} (\citealt[240]{sun14generic}).
 
  \begin{exe}
 \ex \label{ex:tshobdun.inv}
@@ -546,7 +471,7 @@ To mark generic P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulting fro
  \end{exe}
  
  
-\subsection{Nominalization and generic person in Situ} \label{situ.nmlz}
+\subsection{Generic person marking and nominalisation in Situ} \label{situ.nmlz}
 
    Situ has a nominalization prefix \ipa{kə-} which is an obvious cognate of the  nominalization prefixes \ipa{kɯ-} in Japhug and \ipa{kə-} in Tshobdun. Yet, Situ differs from the other languages in its generic person marking system and in its nominalization patterns. Three major differences are observed.
 
@@ -557,79 +482,83 @@ First, there is no generic person  marker \ipa{kə-} homophonous with the nomina
 \gll
 \ipa{nə-ŋá-ʃi-s=ti}  	\ipa{lɐmɐ̄-kə}  	\ipa{rgəwɐ̂}  	\ipa{ka-sə-pā}  	\ipa{rā}  \\
 \textsc{pfv-genr}-die-\textsc{pst=subordinator} lama-\textsc{erg} sutra \textsc{nmlz:genr-caus}-do be.necessary \\
-\glt When one dies, it is necessary to send for lamas to chant sutras.
+\glt `When one dies, it is necessary to send for lamas to chant sutras.'
   \end{exe}
  
-Second, unlike in Japhug and Tshobdun, nominalized forms in \ipa{kə-} are compatible with person affixes in particular conditions (see \citealt[11-12]{jacksonlin07}), as in \ref{ex:situ.tokEpEntS}, where the verb `come' bears the dual suffix \ipa{-ntʃ}. It is impossible to nominalize a verb in this way in the other Rgyalrong languages.
+Second, unlike in Japhug and Tshobdun, nominalized forms in \ipa{kə-} are compatible with person affixes in particular conditions (see \citealt[11-12]{jacksonlin07}), as in \ref{ex:situ.tokEpEntS}, where the verb `come' bears the dual suffix \ipa{-ntʃ}. It is impossible to nominalize a verb in this way in the other Gyalrong languages.
 
  \begin{exe}
 \ex \label{ex:situ.tokEpEntS}
 \gll
 \ipa{tərmî}  	\ipa{to-kə́-pə-ntʃ=tə}  	\ipa{tʂaʃī}  	\ipa{nɐrə}  	\ipa{ɬamō}  	\ipa{na-ŋôs-ntʃ}  	\\
 person \textsc{pfv-nmlz}-come:\textsc{pst}-\textsc{du=det} Trashi and Lhamo \textsc{pst.ipfv}-be:\textsc{pst}-\textsc{du} \\
-\glt The people who came were Trashi and Lhamo.
+\glt `The people who came were Trashi and Lhamo.'
   \end{exe}
 
-Third, Situ has a   \ipa{kə-} prefix homophonous to the nominalizer \ipa{kə-} which is used, according to \citealt[218]{linxr93jiarong} and \citet[163]{lin09phd}, to mark the plural (and dual) of intransitive verbs. Although native speakers indeed do translate intransitive verbs prefixed in \ipa{kə-} as plural, this analysis raises the question of the functional difference between the plural \ipa{kə-} prefix and the dual \ipa{-ntʃ}  and plural \ipa{-ɲ} suffixes, which are also used on intransitive verbs. \citet[101-102]{jacques12agreement} proposes that the former is used for non-topical (obviative) referrents, though only an extensive corpus study can solve this issue. This issue cannot be solved on the basis of elicitation: my consultant for the Brag.dbar dialect of Situ claims that there are no differences between the two forms. 
+Third, Situ has a   \ipa{kə-} prefix homophonous to the nominalizer \ipa{kə-} which is used, according to \citealt[218]{linxr93jiarong} and \citet[163]{lin09phd}, to mark the plural (and dual) of intransitive verbs. Although native speakers indeed do translate intransitive verbs prefixed in \ipa{kə-} as plural, this analysis raises the question of the functional difference between the plural \ipa{kə-} prefix and the dual \ipa{-ntʃ}  and plural \ipa{-ɲ} suffixes, which are also used on intransitive verbs. \citet[101-102]{jacques12agreement} proposes that the former is used for non-topical (obviative) referrents, though only an extensive corpus study can solve this issue -- elicitation is useless for this purpose.
 
 %additional suggestion that this may have been the case in japhug ɯ-mɤ-kɯ-ŋu-ci ma, ɲɤ-kɯ-ɤtɯɣ-ndʑi-ci
-
+\section{Historical perspectives}
 \subsection{From nominalization to generic marking} \label{sec:nmlz2genr}
-As shown in Table \ref{tab:genr:jpg:tshobdun}, although Japhug and Tshobdun are closely related languages and although the prefixes used in generic marking forms are cognate, the structures of their systems are radically different. While Japhug presents clear ergative alignment in its generic marking pattern, with the inverse used to mark the generic A, Tshobdun exhibits accusative alignment as in nominalized forms.
+As shown in Table \ref{tab:genr:jpg:tshobdun}, although Japhug and Tshobdun are closely related languages and although the prefixes used in generic human marking forms are cognate, the structures of their systems are radically different. While Japhug presents clear ergative alignment in its generic marking pattern, with the inverse used to mark the generic A, Tshobdun exhibits accusative alignment as in nominalized forms.
 
 
 \begin{table}
-\caption{Comparison of the generic person marking systems in Japhug and Tshobdun} \label{tab:genr:jpg:tshobdun} \centering
+\caption{Comparison of the generic person marking systems in Japhug, Tshobdun and Situ} \label{tab:genr:jpg:tshobdun} \centering
+\resizebox{\columnwidth}{!}{
 \begin{tabular}{lllll}
 \toprule
-& Japhug & Tshobdun \\
+Proto-Gyalrong& Japhug & Tshobdun& Situ \\
 \midrule
-S & \ipa{kɯ-}& \ipa{kə-} / \ipa{kɐ-} \\
-S (copula) & \ipa{kɯ-} & \ipa{sɐ-} \\
-A & \ipa{wɣ-} & \ipa{kə-} / \ipa{kɐ-} \\
-P & \ipa{kɯ-} & \ipa{ko-} (\ipa{kə-o-}) \\
+\ipa{*kə-}  & \ipa{kɯ-} \textsc{nmlz}.S/A & \ipa{kə-}  \textsc{nmlz}.S/A & \ipa{kə-} \textsc{nmlz} \\
+ & \ipa{kɯ-} \textsc{genr}.S/P & \ipa{kə/kɐ-} \textsc{genr} (generic S/A) & \ipa{ka-} \textsc{nmlz:genr} \\
+  &&&\ipa{kə-} \textsc{3'.n.sg.intr} \\
+\ipa{*wə-}  & \ipa{wɣɯ-} \textsc{inv} &   \ipa{o-} \textsc{inv}& \ipa{wə-} \textsc{inv} \\
+& \ipa{wɣɯ-} \textsc{genr}.A &   \ipa{k-o-} \textsc{genr-inv} (generic P)&   \\
+\ipa{*sɐ-} &\ipa{sɤ-} \textsc{nmlz:oblique} & \ipa{sɐ-} \textsc{nmlz:oblique} & \ipa{sɐ-} \textsc{nmlz:oblique}\\
+&&\ipa{sɐ-} \textsc{genr.S} (copula) \\
+%S & \ipa{kɯ-}& \ipa{kə-} / \ipa{kɐ-} \\
+%S (copula) & \ipa{kɯ-} & \ipa{sɐ-} \\
+%A & \ipa{wɣ-} & \ipa{kə-} / \ipa{kɐ-} \\
+%P & \ipa{kɯ-} & \ipa{ko-} (\ipa{kə-o-}) \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 The irregular generic  forms \ipa{mɤ-xsi} `` one does not know" and \ipa{kɯ-ti} ``one says'  in Japhug, however, show that the system observed in Japhug is innovative. Their existence  implies that the prefix \ipa{kɯ-} could, at a former stage, be used to mark generic A, as in Tshobdun. The use of inverse \ipa{wɣ-} for generic A in Japhug is therefore innovative; although a change from inverse to generic A is not apparently attested in any other language, it is semantically straightforward: generic A is necessarily non-topical, and marking non-topicality is one of the functions of the inverse in non-local forms.
 
-Therefore, in the common ancestor of Japhug and Tshobdun, the prefix *\ipa{kə-} (ancestral to Japhug \ipa{kɯ} and Tshobdun \ipa{kə-}) was used to mark generic person regardless of its syntactic role. 
+Therefore, in the common ancestor of Japhug and Tshobdun, the prefix *\ipa{kə-} (ancestral to Japhug \ipa{kɯ} and Tshobdun \ipa{kə-}) was used to mark generic person regardless of its syntactic role.  
 
-While the cognate prefix \ipa{kə-} in Situ is not used for generic marking, the evolution from nominalization to generic (regardless of the syntactic role of the generic person) is amply attested in various language families (see \citealt{sanso14nmlz} for a recent overview of related phenomena), for instance the passive \ipa{-ta} in Ute (\citealt[264-7]{givon11ute}). %XXXXcitation, voir creissels %givon, P264-267
-
-
-The presence of inverse \ipa{o-} in Tshobdun in combination with \ipa{kə-} with generic P does not contradict the hypothesis that generic person \ipa{kə-} originates from a nominalized form: although we know that in Japhug and Tshobdun nominalized forms are incompatible with finite person markers (including the inverse), we have seen that no such constraint exists in Situ. It is thus straightforward to imagine how the richer nominalization morphology found in Situ could have become simplified in the other languages. Moreover, there are other fossilized traces of the nominalizing *\ipa{kə-} prefix in combination with finite person markers in Japhug, such as the evidential circumfix \ipa{kɯ-}...\ipa{-ci} that appears in combination with the progressive \ipa{asɯ-} prefix or with verb whose stem begins in \ipa{a-} (including those with the passive \ipa{a-} or the reciprocal \ipa{a-} / \ipa{amɯ-}), as in \ref{ex:tokAmWrpundZici}. 
+ The presence of inverse \ipa{o-} in Tshobdun in combination with \ipa{kə-} with generic P does not contradict the hypothesis that generic person \ipa{kə-} originates from a nominalized form: although we know that in Japhug and Tshobdun nominalized forms are incompatible with finite person markers (including the inverse), we have seen that no such constraint exists in Situ. It is thus straightforward to imagine how the richer nominalization morphology found in Situ could have become simplified in the other languages. Moreover, there are other fossilized traces of the nominalizing *\ipa{kə-} prefix in combination with finite person markers in Japhug, such as the evidential circumfix \ipa{kɯ-}...\ipa{-ci} that appears in combination with the progressive \ipa{asɯ-} prefix or with verb whose stem begins in \ipa{a-} (including those with the passive \ipa{a-} or the reciprocal \ipa{a-} / \ipa{amɯ-}), as in \ref{ex:tokAmWrpundZici}. 
 
 
 \begin{exe}
 \ex \label{ex:tokAmWrpundZici}
 \gll \ipa{rŋgɯ}  	\ipa{nɯ}  	\ipa{to-kɯ-ɤmɯ-rpu-ndʑi-ci}  \\
 boulder \textsc{dem} \textsc{ifr}-\textsc{evd}-\textsc{recip}-bump.into-\textsc{du}-\textsc{evd} \\
-\glt The two boulders knocked together. (Smanmi2011, 87)
+\glt `The two boulders knocked together.' (Smanmi2011, 87)
 \end{exe}
 
 
-The inverse  \ipa{o-} in Tshobdun can be explained by  the fact that in sentences with generic human P, the A is necessarily non-human, and can be inanimate. We have seen in section \ref{sec:obv.jpg} that in cases where the A is inanimate and the P animate in Japhug (and other Rgyalrong languages), inverse marking is obligatory. 
+The inverse  \ipa{o-} in Tshobdun can be explained by  the fact that in sentences with generic human P, the A is necessarily non-human, and can be inanimate. We have seen in section \ref{sec:obv.jpg} that in cases where the A is inanimate and the P animate in Japhug (and other Gyalrong languages), inverse marking is obligatory. 
 
 
 If we reconstruct for the ancestor of Japhug and Tshobdun a stage where verbs nominalized in *\ipa{kə-} in third person singular forms could be used to indicate generic person, there were two generic forms: direct (marked with zero) and inverse (with the *\ipa{wə-} prefix ancestral to Japhug \ipa{wɣɯ-} and Tshobdun \ipa{o-}), the second one obligatorily occurring with inanimates acting upon the generic human person. This form was completely lost in Japhug and generalized in Tshobdun to all generic P verbs.
 
-The generic human person morpheme \ipa{ŋa-} found in Situ should be reconstructed to proto-Rgyalrong, since as argued by  \citet[244]{sun14generic}, it is indirectly reflected in Tshobdun with the generic human morpheme \ipa{kɐ-} $\leftarrow$ *\ipa{kə-ŋa-}. Its historical relationship with the  agentless passive prefix attested in Japhug  (\ipa{a-} $\leftarrow$ *\ipa{ŋa}) and Tshobdun (\ipa{a-} $\leftarrow$ *\ipa{ŋa} in both languages, see \citealt{jacques12demotion}) is unclear. As shown by \citet[49-50]{haspelmath90passive}, passive morphology can originate from generic person markers (`generalized subject' in his terminology), while the opposite pathway appears to be unattested. On the other hand, the presence of a cognate passive prefix \ipa{ʁa-} in the neighbouring Khroskyabs language (\citealt[152-154]{lai13affixale}) militates against a recent grammaticalization from the generic person. Due to the lack of data on the use of \ipa{ŋa-} in Situ, it is necessary at this stage to postpone discussion of this issue until additional data become available.
+The generic human person morpheme \ipa{ŋa-} found in Situ should be reconstructed to proto-Gyalrong, since as argued by  \citet[244]{sun14generic}, it is indirectly reflected in Tshobdun with the generic human morpheme \ipa{kɐ-} $\leftarrow$ *\ipa{kə-ŋa-}. Its historical relationship with the  agentless passive prefix attested in Japhug  (\ipa{a-} $\leftarrow$ *\ipa{ŋa}) and Tshobdun (\ipa{a-} $\leftarrow$ *\ipa{ŋa} in both languages, see \citealt{jacques12demotion}) is unclear. As shown by \citet[49-50]{haspelmath90passive}, passive morphology can originate from generic person markers (`generalized subject' in his terminology), while the opposite pathway appears to be unattested. On the other hand, the presence of a cognate passive prefix \ipa{ʁa-} in the neighbouring Khroskyabs language (\citealt[152-154]{lai13affixale}) militates against a recent grammaticalization from the generic person. Due to the lack of data on the use of \ipa{ŋa-} in Situ, it is necessary at this stage to postpone discussion of this issue until additional data become available.
 
 
-The grammaticalization of the generic person marking system from the nominalizer *\ipa{kə-} could be one of the many common morphological innovations between Tshobdun and Japhug (and probably Zbu, though the data is not yet available) not shared by Situ, and suggest that a \textsc{Northern Rgyalrong} clade comprising Tshobdun, Japhug and Zbu should be established within the Rgyalrong group. However, although Situ does not use \ipa{kə-} to mark generic person,  the presence of a non-singular \ipa{kə-} in intransitive verbs in Situ could be interpreted as the last trace of the use of \ipa{kə-} as generic person marker, lost everywhere else in the language. If the hypothesis that the Situ plural originates from a generic person marker is valid, then the grammaticalization  of \ipa{kə-} as a generic marker would have to be reconstructed back to common Rgyalrong, and would not be usable as a a common innovation for defining the Northern Rgyalrong subgroup. However, to evaluate  this hypothesis, more data from Situ is needed, in particular concerning the nature of the semantic contrast between \ipa{kə-} on the one hand and the suffixes \ipa{-ntʃ} for dual and \ipa{-ɲ} for plural on the other hand in intransitive verbs.
+The grammaticalization of the generic person marking system from the nominalizer *\ipa{kə-} could be one of the many common morphological innovations between Tshobdun and Japhug (and probably Zbu, though the data is not yet available) not shared by Situ, and suggest that a \textsc{Northern Gyalrong} clade comprising Tshobdun, Japhug and Zbu should be established within the Gyalrong group. However, although Situ does not use \ipa{kə-} to mark generic person,  the presence of a non-singular \ipa{kə-} in intransitive verbs in Situ could be interpreted as the last trace of the use of \ipa{kə-} as generic person marker, lost everywhere else in the language. If the hypothesis that the Situ plural originates from a generic person marker is valid, then the grammaticalization  of \ipa{kə-} as a generic marker would have to be reconstructed back to common Gyalrong, and would not be usable as a a common innovation for defining the Northern Gyalrong subgroup. However, to evaluate  this hypothesis, more data from Situ is needed, in particular concerning the nature of the semantic contrast between \ipa{kə-} on the one hand and the suffixes \ipa{-ntʃ} for dual and \ipa{-ɲ} for plural on the other hand in intransitive verbs.
 
-
-% \citet[244]{sun14generic} argues that proto-Rgyalrong generic marking should be reconstructed like the Situ system.
-
+In any case, since the evolution from nominalization to generic (regardless of the syntactic role of the generic person) is amply attested in various language families (see \citealt{sanso14nmlz} for a recent overview of related phenomena), for instance the passive \ipa{-ta} in Ute (\citealt[264-7]{givon11ute}), the simplest explanation to explain the homophony between generic person \ipa{kə-} and nominalization \ipa{kə-} prefixes in Gyalrong languages is that the latter was grammaticalized from the former, though probably already in proto-Gyalrong.
+% \citet[244]{sun14generic} argues that proto-Gyalrong generic marking should be reconstructed like the Situ system.
 
 \subsection{The origin of the local scenario portmanteau prefixes}
 
-Rgyalrong languages share portmanteau prefixes for local scenarios 1$\rightarrow$2 and 2$\rightarrow$1, as presented in Table \ref{tab:local.rgy} (data from \citealt[218]{linxr93jiarong}, \citealt{jackson02rentongdengdi}, \citealt{jacques12agreement}, \citealt{gongxun14agreement}).
+Gyalrong languages share portmanteau prefixes for local scenarios 1$\rightarrow$2 and 2$\rightarrow$1, as presented in Table \ref{tab:local.rgy} (data from \citealt[218]{linxr93jiarong}, \citealt{jackson02rentongdengdi}, \citealt{jacques12agreement}, \citealt{gongxun14agreement}). These prefixes appear to be isolated in the Sino-Tibetan family: in Kiranti for instance, there are no specific portmanteau prefixes for 2$\rightarrow$1, (in Puma, a language with prefixes in the verb indexation system, the second person prefix \ipa{tʌ-} is used in 2$\rightarrow$1 form, see \citealt{bickel07puma}), and the 1$\rightarrow$2 is a suffix (Khaling \ipa{-nɛ} from *-na).
 
 \begin{table}
-\caption{Local scenario prefixes in Rgyalrong languages} \centering \label{tab:local.rgy} 
+\caption{Local scenario prefixes in Gyalrong languages} \centering \label{tab:local.rgy} 
 \begin{tabular}{lllll}
 \toprule
 & $1\rightarrow2$ & $2\rightarrow1$ \\
@@ -642,19 +571,19 @@ Situ &  \ipa{ta-} & \ipa{kə-w-} \\
 \end{tabular}
 \end{table}
 
-Rgyalrong languages only differ in two regards: Japhug does not have the inverse \ipa{wɣ-} prefix in the  2$\rightarrow$1 form, and Zbu and Tshobdun allow an alternative form with the second person prefix \ipa{tə-} and the inverse prefix. In all four languages, the verb receives suffixes coreferent with the patient (second person in 1$\rightarrow$2 and first person in  2$\rightarrow$1).\footnote{All languages apart from Situ allow double suffixation in 2$\rightarrow$\textsc{1sg}, with the dual or plural suffixes stacked after the first person, as in Japhug \ipa{ɲɯ-kɯ-mbi-a-nɯ} \textsc{ipfv}-2$\rightarrow$1-give-\textsc{1sg-pl} `you^{\textsc{pl}} (will have to) give (her) to me.'}
+Gyalrong languages only differ in two regards: Japhug does not have the inverse \ipa{wɣ-} prefix in the  2$\rightarrow$1 form, and Zbu and Tshobdun allow an alternative form with the second person prefix \ipa{tə-} and the inverse prefix. In all four languages, the verb receives suffixes coreferent with the patient (second person in 1$\rightarrow$2 and first person in  2$\rightarrow$1).\footnote{All languages apart from Situ allow double suffixation in 2$\rightarrow$\textsc{1sg}, with the dual or plural suffixes stacked after the first person, as in Japhug \ipa{ɲɯ-kɯ-mbi-a-nɯ} \textsc{ipfv}-2$\rightarrow$1-give-\textsc{1sg-pl} `you^{\textsc{pl}} (will have to) give (her) to me.'}
 
-A possible explanation for the 1$\rightarrow$2  prefix is a combination between the second person prefix \ipa{tɯ-} and the agentless passive \ipa{a-}, which yields the expected form in all four languages. In this view, a form such as \ipa{ta-no-n} 1$\rightarrow$2-chase-\textsc{2sg} `I will chase you^{\textsc{sg}}' (\citealt[219]{linxr93jiarong}) would have developed through the following stages:\footnote{Proto-Rgyalrong follows the preliminary sound laws presented in \citet{jacques04these}.}
+A possible explanation for the 1$\rightarrow$2  prefix is a combination between the second person prefix \ipa{tɯ-} and the agentless passive \ipa{a-}, which yields the expected form in all four languages. In this view, a form such as \ipa{ta-no-n} 1$\rightarrow$2-chase-\textsc{2sg} `I will chase you^{\textsc{sg}}' (\citealt[219]{linxr93jiarong}) would have developed through the following stages:\footnote{Proto-Gyalrong follows the preliminary sound laws presented in \citet{jacques04these}.}
 
 \begin{itemize}
 \item *\ipa{tə-ŋa-naŋ-nə}  2-\textsc{pass}-chase-\textsc{2sg} `you will be chased' (Passive form)
-\item *\ipa{ta-naŋ-nə}  2:\textsc{pass}-chase-\textsc{2sg} (Regular phonological fusion between the person marker and the passive prefix, attested in all four Rgyalrong languages)  
+\item *\ipa{ta-naŋ-nə}  2:\textsc{pass}-chase-\textsc{2sg} (Regular phonological fusion between the person marker and the passive prefix, attested in all four Gyalrong languages)  
 \item  *\ipa{ta-naŋ-nə}  1$\rightarrow$2-chase-\textsc{2sg} `I will chase you' (reanalysis of the fused form as a portmanteau prefix; the unspecified agent of the passive construction is construed as being first person)
 \item  \ipa{ta-no-n} 1$\rightarrow$2-chase-\textsc{2sg} `I will chase you^{\textsc{sg}}' (regular sound changes)
 \end{itemize}
 
 
-In the case of 2$\rightarrow$1, the phonetic identity of this prefix with the nominalizer / generic in all four languages is striking. If, as suggested above, the grammaticalization of the nominalizer \ipa{kə-} as a generic person marker goes back to the common ancestor of all four Rgyalrong languages and not simply that of Japhug and Tshobdun, we may interpret the origin of a form such as \ipa{kə-w-no-ŋ} `you will chase me' in the following way:
+In the case of 2$\rightarrow$1, the phonetic identity of this prefix with the nominalizer / generic in all four languages is striking. If, as suggested above, the grammaticalization of the nominalizer \ipa{kə-} as a generic person marker goes back to the common ancestor of all four Gyalrong languages and not simply that of Japhug and Tshobdun, we may interpret the origin of a form such as \ipa{kə-w-no-ŋ} `you will chase me' in the following way:
 
 
 \begin{itemize}
@@ -682,6 +611,6 @@ In this paper, we have described the morphosyntax of generic person marking in J
 
 While \ref{ex:path1} is very common crosslinguistically and \ref{ex:path4} has already been described in other language families, the other ones have not previously been proposed. Pathway \ref{ex:path2} is attested in Tshobdun, where the combination of generic and inverse has been generalized to all cases where the generic person is P, while pathway \ref{ex:kill3} is found in Japhug, resulting in diametrically opposed generic person marking systems, with accusative (in Tshobdun) vs ergative alignment (in Japhug).
 
-\bibliographystyle{linquiry2}
+\bibliographystyle{unified}
 \bibliography{bibliogj}
 \end{document}
