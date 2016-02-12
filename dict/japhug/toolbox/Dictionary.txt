@@ -1,4 +1,5 @@
 \_sh v3.0  583  MDF 4.0
+\_DateStampHasFourDigitYear
 
 \lx aɕi
 \wav adv-aCi
@@ -11171,15 +11172,6 @@
 \ge feu (moine) 
 \gn 已故（指和尚） 
 \hbf famille
-
-\lx papa
-\wav8 papa
-\ps intj
-\ge c'est bien comme ça 
-\gn 恭喜你了
-\xv ɲɯ-tɯ-mna tɕe papa
-\xn 你痊愈了，恭喜你了
-\dt 10/Dec/2014
 
 \lx paqe
 \ps n
@@ -29253,6 +29245,14 @@ l
 \cf rɯβluβra
 \dt 27/Aug/2015
 
+\lx ɯ-βraʁ
+\wav8 WBraR_Nu
+\ps np
+\ge symbole, signe
+\gn 象征；预兆
+\xv ɣɯjpa qartsɯ ʁmɯrcɯ ɲɯ-dɤn tɕe, nɯ tɤɕi kɯ-pe ɯ-βraʁ ŋu
+\xn 今年夏天画眉很多，表示今年青稞的产量很高
+
 \lx ɯ-βzɯr
 \ps np
 \ge angle
@@ -36949,6 +36949,7 @@ l
 \dt 26/Aug/2012
 
 \lx _apa
+\wav8 papa
 \ps vi
 \pdl dir 
 \pdv nɯ-
@@ -36961,10 +36962,17 @@ l
 \xv kɯm ɲɯ-ɤpa
 \xn 门是关着的
 \sn 3
+\ge félicitation pour... 
+\gn 恭喜……
+\xv ɲɯ-tɯ-mna tɕe pɯ-apa
+\xn 你痊愈了，恭喜你了
+\sn 4
 \ge être en tort (au négatif)
 \gn 有错（否定式）
-\xv tɯʑo mɯ-pɯ-kɯ-apa tɕe tɯ-zda ɯ-ɕki kɤ-ti mɤ-mbat
+\xv tɯʑo mɯ-pɯ-kɯ-ɤpa tɕe tɯ-zda ɯ-ɕki kɤ-ti mɤ-mbat
 \xn 自己有错的时候不好说别人
+\xv nɯ mɯ-pɯ-apa-a ko!
+\xn 很对不起！（我没有对）
 \cf pa
 \cf sɤpa
 \dt 01/Sep/2015
@@ -39866,6 +39874,7 @@ l
 \xv tɯmbri kɤ-βraʁ-a 
 \xn 我拴了绳子（在某个地方打了个结）
 \cf zbraʁ
+\cf ɯ-βraʁ
 \se aβraʁ
 \ps vi
 \ge attaché
@@ -43727,6 +43736,13 @@ l
 \xn 他们在把路修宽一点，所以很吵
 \cf jom
 \dt 24/Aug/2012
+
+\lx _ɣɤjoŋri
+\ps vi
+\pdl dir
+\pdv pɯ-
+\ge faire semblant de...
+\gn 装出一副……的样子
 
 \lx _ɣɤjpum
 \cf jpum
@@ -51801,6 +51817,17 @@ l
 \cf ɕe
 \dt 13/Nov/2013
 
+\lx _nɤɕɯɕi
+\wav8 thWnACWCita
+\ps vt
+\pdl dir
+\pdv _
+\ge traîner par terre
+\gn 在地上拖
+\xv ɕoŋtɕa kɤ-fkur mɯ́j-sɤcha tɕe thɯ-nɤɕɯɕi-t-a ɕti
+\xn 木料背不动，所以我拖了
+\sy nɤkhɯkhrɯt
+
 \lx _nɤdɤn
 \cf dɤn
 \dt 13/Jul/2014
@@ -52528,6 +52555,7 @@ l
 \xn 他拖了东西
 \xv nɤki nɯ kɤ-fkɯr mɯ-mɤ-ɲɯ-tɯ-cha nɤ, nɯ-nɤkhɯkhrɯt
 \xn 如果你不能背，你就拖吧
+\sy nɤɕɯɕi
 \dt 08/Dec/2011
 
 \lx _nɤla
