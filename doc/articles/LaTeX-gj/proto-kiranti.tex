@@ -20,7 +20,7 @@
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon\mbox{#1}}} %API tjs en italique
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -60,15 +60,17 @@ While excellent lexical sources exist on many other languages, in particular  Ya
 
 The present paper contains four sections. First, I explain in detail why this reconstruction is based on verb roots rather than on the whole vocabulary of the target languages. Second, I provide a cursory account of the morphological alternations attested in Kiranti languages and how they affect the sound correspondences. Third, I describe the correspondences of initial consonants and clusters. Fourth, I present a reconstruction of the rhymes of verb roots in Proto-Kiranti.
 
+In this work, verb roots, as opposed to conjugated forms, are indicated between bars: \dhatu{root}{meaning}. These roots are abstract forms, derived from the stem alternations. Rules to derive roots from conjugation classes are specific to each language.
+
 \section{Why verbs?} \label{sec:why}
 
 There are four reasons why this reconstruction is based on verb roots, excluding nouns except to confirm an already established correspondence.
 
-First,  many rhyme distinctions are neutralized in nouns, unlike verb roots, due to the lack of alternation. For instance, proto-Kiranti final *\ipa{-l} is preserved in Khaling and Wambule, but merges with *\ipa{-n} as \ipa{-n} in Bantawa and Limbu, as shown by the cognate set `village' *\ipa{dɛl}: Khaling \ipa{del}, Wambule \ipa{dyal}, Bantawa \ipa{ten}, Limbu \ipa{tɛn} `place'. However, in verb roots, final *\ipa{-l} is clearly distinct from *\ipa{-n} in both Limbu and Bantawa, as is demonstrated in section \ref{sec:codas}.
+First,  many rhyme distinctions are neutralized in nouns, unlike verb roots, due to the lack of alternation. For instance, proto-Kiranti final *\ipa{-l} is preserved in Khaling and Wambule, but merges with *\ipa{-n} as \ipa{-n} in Bantawa and Limbu, as shown by the cognate set *\ipa{dɛl} `village' (Khaling \ipa{del}, Wambule \ipa{dyal}, Bantawa \ipa{ten}, Limbu \ipa{tɛn} `place'). However, in verb roots, final *\ipa{-l} is clearly distinct from *\ipa{-n} in both Limbu and Bantawa, as is demonstrated in section \ref{sec:codas}.
 
 Second, the cross-linguistic tendency for verbs to be less borrowable than nouns (\citealt{wohlgemuth09verbal}) is confirmed in Kiranti languages, where verb roots are only very rarely borrowed. In Khaling, only two clear borrowings have been brought to light: \dhatu{jal}{strike} from Thulung \ipa{jalmu}  (id) and \dhatu{ɦel}{divert water} from Nepali \ipa{helnu} (id).\footnote{The only other possibility is  \dhatu{pil}{squeeze}, which could conceivably be borrowed from Nepali \ipa{pelnu} `press'; since the word appears however to be reconstructible to Proto-Kiranti, and presents some irregular alternations, the borrowing hypothesis is difficult to accept.} 
 
-Third, there is some evidence that some sound change may be specific to verb roots in Kiranti, so that verbs and other parts of speech need to be separately handled. In particular, the lenition of the final \ipa{-t} and \ipa{-n} of verb roots to \ipa{r} when followed by a vowel-initial suffix in Limbu (as in \ipa{sɛr-uŋ}  `I kill' from \dhatu{sɛt}{kill}) does not appear to have taken place in words other than verbs. While there is strong evidence that alleged grammatically conditioned sound changes result from incorrect analyses (\citealt{hill14conditioned}), and while the absence of evidence for this lenition in nouns and pronouns in Limbu may have a purely phonological explanation, it is wise to postpone investigation of the phonology of polysyllabic nouns until that of verb roots is fully understood.
+Third, there is some evidence that some sound changes may be specific to verb roots in Kiranti, so that verbs and other parts of speech need to be separately handled. In particular, the lenition of the final \ipa{-t} and \ipa{-n} of verb roots to \ipa{r} when followed by a vowel-initial suffix in Limbu (as in \ipa{sɛr-uŋ}  `I kill' from \dhatu{sɛt}{kill}) does not appear to have taken place in words other than verbs. While there is strong evidence that alleged grammatically conditioned sound changes result from incorrect analyses (\citealt{hill14conditioned}), and while the absence of evidence for this lenition in nouns and pronouns in Limbu may have a purely phonological explanation, it is wise to postpone investigation of the phonology of polysyllabic nouns until that of verb roots is fully understood.
 
 Fourth, the great majority of nouns in Kiranti languages are polysyllabic and their internal morphological structure is still poorly understood. This situation is reminiscent of Indo-European, where primary verbs are more easily reconstructible than nouns (see for instance \citealt{garnier10vocalisme}).
 
@@ -124,7 +126,7 @@ The reflexive / middle derivation in Kiranti is very productive in some language
 
 Table \ref{tab:ip.vr} presents the paradigm of a common reflexive verb \dhatu{ʔip-si}{sleep}, derive from \dhatu{ʔipt}{put to sleep}. In the reflexive derivation, the complex finals Ct are always simplified, and one cannot distinguish the reflexive forms of transitive \ipa{-p} stems and \ipa{-pt} stems.
 
-\begin{table}[H]
+\begin{table}[h]
 \label{tab:ip.vr} \centering 
 \caption{Paradigm of \ipa{ʔʌ̂msinɛ}  ``to sleep" in Khaling }
 \begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l|l} 
@@ -196,7 +198,7 @@ Previous work on proto-Kiranti (in particular \citealt{starostin94kiranti}, \cit
 Unlike \citet{starostin94kiranti} and \citet{opgenort05jero}, I do not reconstruct a series of preglottalized unvoiced stops *\ipa{`p},  *\ipa{`t},  *\ipa{`ts},  *\ipa{`k} opposed to the plain unvoiced stops (see section \ref{sec:fourth}). 
 
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Proto-Kiranti stops and their reflexes} \centering \label{tab:stops}
 \begin{tabular}{llllll}
 \toprule
@@ -265,7 +267,7 @@ I found three examples of Khaling \ipa{k} corresponding to Bantawa and/or Limbu 
 
 Moreover, other types of correspondences not accounted for by Table \ref{tab:stops} are also found in Kiranti, including Khaling  unaspirated to Bantawa aspirated, Khaling unaspirated to Bantawa aspirated, and Khaling voiced to Bantawa voiced. Reconstructing distinct series of stops to account for each of these correspondences is not useful, especially given the limited number of examples.\footnote{Since Limbu merged the two unvoiced series, type 2 and 3 irregularities are not possible to detect. Only one type 2 irregularity is found between Khaling and Wambule, \dhatu{pit}{bring (horizontal plane)} to Wambule |\ipa{pʰit}| \textit{id}.}
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Irregular correspondences} \centering \label{tab:kkk}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{llllll}
@@ -346,7 +348,7 @@ PK & Wambule & Khaling & Bantawa & Limbu \\
 \end{tabular}}
 \end{table}
 
-Clusters are well-preserved in Wambule and Khaling, and completely lost in Bantawa and Limbu. Wambule and Khaling generally agree the clusters in all roots in the corpus, except in two cases. First, the root represented by Khaling \dhatu{pʰekt}{flick away} is interesting in having two corresponding forms in Wambule: |\ipa{pʰjak}| without cluster and \dhatu{pʰrjak}{flick away}, suggesting the possibility of an \ipa{-r-} infix.\footnote{On the reconstruction of an *\ipa{-r-} infix in Sino-Tibetan, see \citet[111-120]{sagart99roc}.} Second, Khaling \dhatu{kat}{bite} corresponds to Wambule  \dhatu{krat}{bite with molar, gnaw}, here without alternating form.
+Clusters are well-preserved in Wambule and Khaling, and completely lost in Bantawa and Limbu. Wambule and Khaling  agree on the clusters in all roots in the corpus, except in two cases. First, the root represented by Khaling \dhatu{pʰekt}{flick away} is interesting in having two corresponding forms in Wambule: |\ipa{pʰjak}| without cluster and \dhatu{pʰrjak}{flick away}, suggesting the possibility of an \ipa{-r-} infix.\footnote{On the reconstruction of an *\ipa{-r-} infix in Sino-Tibetan, see \citet[111-120]{sagart99roc}.} Second, Khaling \dhatu{kat}{bite} corresponds to Wambule  \dhatu{krat}{bite with molar, gnaw}, here without alternating form.
 
 There is one case where the initial clusters appears to have undergone metathesis to a coda, namely Khaling \dhatu{pʰlo}{help} corresponding to Limbu \dhatu{pʰaˀr}{help}; as shown in section (\ref{sec:codas}), Limbu \ipa{-ˀr} is the regular reflex of proto-Kiranti *\ipa{-l}. Given Bantawa \dhatu{pʰas}{help}, this root can be reconstructed as *\ipa{pʰlɑs} `help' in proto-Kiranti (see section \ref{sec:rhymes} for more details on vowels and codas); Bantawa did not undergo metathesis like Limbu.
  
@@ -355,7 +357,7 @@ As shown by  \citet{driem90r}, proto-Kiranti *\ipa{r} changes to \ipa{j} in Limb
 
 Khaling has both \ipa{r} and \ipa{j} initials, which both correspond to \ipa{j} (zero before \ipa{i} and \ipa{e}) in Limbu, as shown by Khaling \dhatu{ret}{laugh} and  \dhatu{jil}{make soft by squeezing} to Limbu \dhatu{et}{laugh} and \dhatu{iˀr}{rub} respectively.
 
-In Bantawa, Khaling \ipa{r} mostly corresponds to \ipa{r}, except in the verbs \dhatu{i}{laugh} and \dhatu{ep}{stand}. Since all other examples have \ipa{r} before non-front vowels, I propose that proto-Kiranti *\ipa{r} corresponds to \ipa{r} in Bantawa before back vowels and zero before front vowels.
+In Bantawa, Khaling \ipa{r} mostly corresponds to \ipa{r}, except in the verbs \dhatu{i}{laugh} and \dhatu{ep}{stand}. Since nearly all other examples have \ipa{r} before non-front vowels, I propose that proto-Kiranti *\ipa{r} corresponds to \ipa{r} in Bantawa before back vowels and zero before front vowels. Exceptions such as \dhatu{ript}{twist} (same form and meaning in Khaling and Bantawa) may be borrowings.
 
 In Wambule, Khaling \ipa{r} corresponds to \ipa{r} except in case of the root ``to stand" (Khaling |\ipa{rep}|, Wambule  |\ipa{jam}|); also causative \dhatu{japs}{erect, make stand upright}). It is interesting to note that the applicative form of the same root presents a correspondence of \ipa{r} to \ipa{r}, namely Khaling \dhatu{rept}{respect (so's words)} to Wambule \dhatu{rjapt}{obey so, heed so's words}.\footnote{We see the same unpredictable semantic change in Khaling and Wambule ``stand for, by'' $\rightarrow$ ``respect''.} One of the correspondences (most likely \ipa{r} to \ipa{j} before front vowel) reflects the inherited layer, while the other is borrowed.  
 
@@ -377,10 +379,14 @@ Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \ipa{*ŋ} & \ipa{ŋ} & \ipa{ŋ} & \ipa{n} / \ipa{ŋ} & \ipa{n}  \\
 \ipa{*ʔŋ} &  \ipa{ɓ}  & \ipa{ŋ} & x &x  \\
 \ipa{*l} & \ipa{l} & \ipa{l} & \ipa{l} & \ipa{l} / \ipa{r} \\
+\ipa{*w} & \ipa{w} & \ipa{w} & \ipa{w} & \ipa{w} \\
+\ipa{*j} & \ipa{j} & \ipa{j} & \ipa{j} & \ipa{j} \\
 \ipa{*s} & \ipa{s} & \ipa{s} & \ipa{s} & \ipa{s}  \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+In Wambule, Bantawa and Limbu, the semi-vowels \ipa{w} and \ipa{j} are not distinct from the zero initial before back rounded and front vowels (except \ipa{ɛ} in Limbu) respectively. In Bantawa, *\ipa{wa-} in word-initial position merges to \ipa{o}, as in *\ipa{wap} > \dhatu{op}{to scoop, to get water out} (Khaling \dhatu{wɛp}{scoop}).
 
 There are only two irregularities in the data at hand related to these initial consonants.
 
@@ -396,7 +402,7 @@ Second, Khaling \dhatu{sik}{string beads} and Wambule \dhatu{sikt}{thread a need
  
  For Bantawa, some more discussion is needed on how the roots were extracted from Doornenbal's work. Based on the correspondences given in \citet[129; 132]{doornenbal09}, the following final consonants are reconstructed (alternating forms separated by slashes are in complementary distribution):
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Bantawa root codas} \centering \label{tab:bantawa.root}
 \begin{tabular}{cccc}
 \toprule
@@ -405,10 +411,10 @@ Stem-C & Stem-V & Reconstructed Coda \\
 \ipa{-k} & \ipa{-ʔ-} & \ipa{-k} \\
 \ipa{-t} & \ipa{-t-} & \ipa{-t} \\
 \ipa{-p} & \ipa{-ʔ-} /  \ipa{-w-} & \ipa{-p} \\
-$\varnothing$ & $\varnothing$ / \ipa{-w-} / \ipa{-y-} & $\varnothing$ \\
+$\varnothing$ & $\varnothing$ / \ipa{-w-} / \ipa{-j-} & $\varnothing$ \\
 \ipa{-ŋ} & \ipa{-ŋ-} & \ipa{-ŋ} \\
 \ipa{-n} & \ipa{-l-} & \ipa{-l} \\
-\ipa{-n} & \ipa{-y-} / \ipa{-n-}& \ipa{-j} \\
+\ipa{-n} & \ipa{-j-} / \ipa{-n-}& \ipa{-j} \\
 \ipa{-n} & \ipa{-r-} & \ipa{-r} \\
 \ipa{-m} & \ipa{-m-} & \ipa{-m} \\
 $\varnothing$ & \ipa{-s-} & \ipa{-s} \\
@@ -444,7 +450,7 @@ and \dhatu{ʣar}{drip, drizzle}	corresponding to Khaling 	\dhatu{kʰor}{parch, f
 
 The \ipa{u} of other languages can correspond to either Limbu \ipa{o} or \ipa{u}, with a comparable number of examples before the codas \ipa{-s} and \ipa{-k}, as illustrated by Table \ref{tab:U}. To account for this, I tentatively postulate a proto-phoneme *\ipa{ʊ}, which yields \ipa{o} in Limbu and \ipa{u} elsewhere.\footnote{A contrast between \ipa{i} and \ipa{u} on the one hand, and \ipa{ɪ} and \ipa{ʊ} on the other hand, is found in Hayu, see \citet{michailovsky88}; it remains to be seen whether the contrast reconstructed here matches that of Hayu. } No clear evidence exists for a comparable *\ipa{ɪ} among front vowels.
 
- \begin{table}[H]
+ \begin{table}[h]
  \caption{A fifth degree of height?} \centering \label{tab:U}
  \resizebox{\columnwidth}{!}{
  \begin{tabular}{lllll}
@@ -469,7 +475,7 @@ The \ipa{u} of other languages can correspond to either Limbu \ipa{o} or \ipa{u}
   
 Table \ref{tab:vowels} presents an account of the basic vowel correspondences between the four languages discussed in the present work.
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Proto-Kiranti vowels} \centering \label{tab:vowels}
 \begin{tabular}{llllll}
 \toprule
@@ -545,7 +551,9 @@ For the verb `be sweet', note that in Limbu we find a vowel alternation between 
 \midrule
  \dhatu{pʰit}{bring}	&\dhatu{pi}{come}	&			&	\dhatu{pʰɛn}{come}	\\	
 &\dhatu{pʰi}{be spoiled (of rice)}	&			&	\dhatu{pʰɛn}{be spoiled}	\\	
+&\dhatu{pi}{fart}	&		\dhatu{bʰes}{fart}	&	\dhatu{pʰes}{fart}	\\	
 &\dhatu{ki}{fight, argue}	&			\dhatu{kʰi}{quarrel}	&	\dhatu{kʰe}{to quarrel}	\\	
+&\dhatu{kik}{tie}	&	 	&	\dhatu{kheks}{attach to}	\\	
 &\dhatu{nekt}{cover}	&		\dhatu{nɨkt}{to cover, be buried}	&		\\	 
 \dhatu{kjap}{stick}	&\dhatu{kept}{paste, stick}		&  &		\dhatu{kʰipt}{adhere, stick}\\	
 \dhatu{lem}{be sweet}	& \dhatu{lem}{be sweet}		&  \dhatu{lem}{be sweet}	&		\dhatu{limt}{be sweet}		 \\	
@@ -662,7 +670,6 @@ One correspondence that deserves discussion is that between proto-Kiranti \ipa{-
 \item  Khaling \dhatu{kɛl}{cluster together, wear one's hair in a bun}, Limbu \dhatu{kʰaˀr}{to be matted (of hair)}  			 
 \item  Khaling \dhatu{jil}{make soft by squeezing}, Limbu \dhatu{iˀr}{to rub, to scrub}  		 
 \item   Khaling \dhatu{ʦʰelt}{be bright}, Limbu \dhatu{sɛˀr}{to turn white (of hair), to clear (of the milk of a cow that has just given birth)}  
-\item  Khaling \dhatu{pʰɛl}{damage}, Limbu \dhatu{pʰɛˀr}{break (vi)}  (note the anticausative form \dhatu{pɛˀr}{break (vi)}  from *\ipa{bal}, without equivalent in other languages).
 \item Khaling \dhatu{kʰol}{transport}, Bantawa	  \dhatu{kʰol}{transport}	 and	 Limbu \dhatu{kʰuˀr}{deliver to a place}	  (the vowel correspondence is irregular).
 \end{itemize}
 
@@ -740,7 +747,7 @@ Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \end{tabular}
 \end{table}
 
-Evidence that some \ipa{-nt} stems in Limbu come from \ipa{*-rt} or \ipa{*-lt} si provided in Table \ref{tab:Ct.coda.irr}, where verbs in \ipa{-nt} corresponds to verbs or noun in \ipa{-r} or \ipa{-l} in other languages. Since  Limbu  lacks final clusters such as $\dagger$\ipa{-rt} or $\dagger$\ipa{-lt}, the hypothesis that all three final groups merge as \ipa{-nt} explains both the gap in the system of these languages and the examples in Table \ref{tab:Ct.coda.rt}.
+Evidence that some \ipa{-nt} stems in Limbu come from \ipa{*-rt} or \ipa{*-lt} si provided in Table \ref{tab:Ct.coda.irr}, where verbs in \ipa{-nt} corresponds to verbs or noun in \ipa{-r} or \ipa{-l} in other languages. Since  Limbu  lacks final clusters such as $\dagger$\ipa{-rt} or $\dagger$\ipa{-lt}, the hypothesis that all three final groups merge as \ipa{-nt} explains both the gap in the system of these languages and the examples in Table \ref{tab:Ct.coda.rt}. 
 
 In Bantawa it appears that at least *\ipa{-lt} merges with *\ipa{-tt} into \ipa{-tt}, as shown by \dhatu{bitt}{milk} (note the non-applicative form of the same root \dhatu{bil}{squeeze (for juice)}).\footnote{This verb cannot be denominal from the noun *\ipa{bit} `cow'  (Khaling \ipa{bʌ̂j}, Bantawa \ipa{pit}), otherwise $\dagger$\ipa{pitt} would have been expected.}
 
@@ -781,17 +788,24 @@ PK & Wambule & Khaling & Bantawa & Limbu \\
 \end{tabular}}
 \end{table} 
  
+Finally, in Khaling the verb \dhatu{ʔutt}{spoil (of grains, seeds)} has \ipa{-tt} where Limbu has \dhatu{unt}{to spoil (of seed), to be moist}. This isolated correspondence cannot be explained.
+
 
  \section{Conclusion}
 The model of reconstruction proposed in the present paper can be expanded in several ways. 
 
 The first priority is to compile a dictionary of verb roots taking into account all available data on Kiranti languages (included derived nouns), on the model of the \textit{Lexikon der Indogermanischen Verben} (\citealt{liv}).
 
-Second, research on the etymology of nouns in each individual language must be undertaken; some inherited material can be brought to light by such research, though the  language specific patterns of noun formation have to be elucidated.
+Second, this research should be combined with the reconstruction of the person indexation paradigms, a task made difficult by the extensive analogical levelling that took plac ein each language (\citealt{jacques16tonogenesis}). Given the conservative character of Kiranti languages, especially as far as suffixal morphology is concerned (\citealt{driem93agreement, delancey10agreement, jacques12agreement}), a reliable Proto-Kiranti reconstruction can  have a far-reaching impact in Sino-Tibetan comparative linguistics.
 
-Third, given the conservative character of Kiranti languages, especially as far as suffixal morphology is concerned (\citealt{driem93agreement, delancey10agreement, jacques12agreement}), a reliable Proto-Kiranti reconstruction can  have a far-reaching impact in Sino-Tibetan comparative linguistics.
+Third, research on the etymology of nouns in each individual language must be undertaken; some inherited material can be brought to light by such research, though the  language specific patterns of noun formation have to be elucidated.
+
 
 Fourth, the patterns of analogical levelling attested in Kiranti verb roots may be relevant to research on the general principles of analogical levelling (\citealt{hill07ausgleich, hill14conditioned,jacques16ebde}).
+
+
+\section{Appendix}
+The attached .ods file provides 255 reconstructed proto-Kiranti verb roots. In reconstructions, [a|b|c] indicates that either \textit{a}, \textit{b} or \textit{c} are possible reconstructions. The chevron > indicates a derivation process, either anticausative (voicing of the initial), applicative (\ipa{-t} suffix), causative (\ipa{-s} suffix) or reflexive (\ipa{-si} suffix). The double chevron {>}{>} indicates an analogical change of inflectional class.
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
