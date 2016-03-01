@@ -139,7 +139,8 @@
 \ps adv
 \ge partout 
 \gn 到处 
-\dt 19/Apr/2013
+\cf ŋotɕuŋondɤt
+\cf nɤndɯndɤt
 
 \lx athi
 \ps adv
@@ -8118,9 +8119,12 @@
 \dt 30/Aug/2015
 
 \lx lwɤrlwɤr
+\wav8 kuxti_lwArlwAr
 \ps idph.2
-\ge maladroit
-\gn 笨手笨脚
+\ge énorme
+\gn 大块
+\xv a-mthɯm kɯ-wxti lwɤrlwɤr ʑo na-βzu
+\xn 肉给我切了一大块（他很款待我）
 
 \lx lwɯlwɯɣ
 \ps idph.2
@@ -10948,6 +10952,7 @@
 \sy aʁɤndɯndɤt
 \cf ŋotɕu
 \cf ɕɯmɤɕɯ
+\cf nɤndɯndɤt
 \dt 09/May/2013
 
 \lx ɴɢarmɯ
@@ -14056,11 +14061,14 @@
 \dt 10/May/2013
 
 \lx rda
+\wav8 Wrda_tulAtnW
 \ps n
 \ge signe 
 \gn 信号；兆头 
 \xv rda to-lɤt (to-ʑmbri) 
 \xn 他敲钟了
+\xv ʁmaʁmi ra kɤ-rɤru tɤ-mda tɕe ɯ-rda tu-lɤt-nɯ ŋgrɤl
+\xn 军人起床的时间到了就吹起床号
 \et brda
 \dt 21/May/2014
 
@@ -16682,6 +16690,22 @@
 \xn 马勃长在草地上，全白色，呈球形，没有杆，很软，干了以后踩上去就会扬起灰尘（孢子粉）来。 
 \sy ɬɤndʐithamaka
 \dt 29/Apr/2012
+
+\lx sala,zrɯ
+\wav8 sala_YWtWzri
+wav8 sala_kWzrW
+\pdl dir 
+\pdv kɤ-
+\ge prendre de la place, gêner
+\gn 占（不该占的）地方
+\lf Component1 = sala
+\ps n
+\lf Component2 = zrɯ
+\ps vt
+\xv nɯtɕu tɤ-rɤru ma sala ɲɯ-tɯ-zri ɲɯ-ŋu
+\xn 起来，你在那里很碍事
+\xv sala kɯ-zrɯ ma-tɯ-βze
+\xn 别占地方
 
 \lx sali
 \wav n-sali
@@ -36289,6 +36313,9 @@ l
 \cf zwɤr1
 \dt 20/Aug/2015
 
+\lx _anaχtɯχto
+\cf naχto
+
 \lx _anɤjɯjo
 \cf nɤjo
 \dt 27/Aug/2015
@@ -36296,6 +36323,9 @@ l
 \lx _anɤkhɤzŋgɯzŋga
 \cf nɤkhɤzŋga
 \dt 21/Aug/2011
+
+\lx _anɤmtsɯmtsioʁ
+\cf nɤmtsioʁ
 
 \lx _anɤntshɯntshi
 \cf nɤntshi
@@ -38270,6 +38300,9 @@ l
 \xv nɯ ma ma-kɯ-sɤrtɯrtaβ-a ma ɲɯ-sɤɣdɯɣ 
 \xn 你不要再缠着我了，很烦
 \dt 17/Jan/2015
+
+\lx _artɯrtoʁ
+\cf rtoʁ
 
 \lx _arɯcɤrna
 \ps vs
@@ -44557,7 +44590,14 @@ l
 \xn 我令他放心了
 \cf ɕɯntaβ
 \cf ntaβ
-\dt 11/Feb/2014
+\se ʑɣɤɣɤntaβ
+\wav8 manWtWZGAGAntaB
+\ps vi
+\ng refl
+\ge rester sans bouger
+\gn 坐稳，动都不动
+\xv tɤ-ndzur, nɯtɕu ma-nɯ-tɯ-ʑɣɤɣɤntaβ ʑo kɯ
+\xn 你站起来，不要在那里动都不动
 
 \lx _ɣɤnɯndzɯlŋɯz
 \cf nɯndzɯlŋɯz
@@ -51646,7 +51686,11 @@ l
 \gn 盯
 \xv kɤ-naχto-t-a
 \xn 我盯着他看了
-\dt 22/Aug/2015
+\se anaχtɯχto
+\ps vi
+\ng recip
+\ge se regarder fixement les uns uns les autres
+\gn 互相盯着
 
 \lx _naχtso
 \cf χtso
@@ -53152,7 +53196,6 @@ l
 
 \lx _nɤmtsioʁ
 \wav vt-nAmtsioR
-\wav vi-sAnAmtsioR
 \ps vt
 \ng denom
 \pdl dir 
@@ -53166,6 +53209,7 @@ l
 \xv ta-nɤmtsioʁ
 \xn 鸡啄了一口
 \se sɤnɤmtsioʁ
+\wav vi-sAnAmtsioR
 \ps vi
 \ng apass
 \pdl dir 
@@ -53175,7 +53219,16 @@ l
 \xv kumpɣa ɲɯ-sɤnɤmtsioʁ
 \xn 鸡老爱啄人
 \cf ɯ-mtsioʁ
-\dt 15/Jan/2015
+\se anɤmtsɯmtsioʁ
+\wav8 tokAnAmtsWmtsioRnWci
+\ps vi
+\ng recip
+\pdl dir 
+\pdv tɤ-
+\ge se donner des coups de bec les uns aux autres
+\ng 互相啄
+\xv to-k-ɤnɤmtsɯmtsioʁ-nɯ-ci
+\xn （公鸡）互相啄了起来
 
 \lx _nɤmuj
 \ps vt
@@ -53300,6 +53353,23 @@ l
 \xv kutɕu tɤŋkhɯt tɤ-lat-a tɕe, @luyinji tɤ-znɤndar-a
 \xn 我在这里拍了一拳，把录音机震动了一下
 \dt 08/Oct/2014
+
+\lx _nɤndɯndɤt
+\wav8 maCWtWnAndWndAt
+\ps vi
+\pdl dir 
+\pdv _
+\ge aller n'importe où
+\gn 到处走
+\xv ma-ɕɯ-tɯ-nɤndɯndɤt
+\xn 你不要到处乱走
+\cf ŋotɕuŋondɤt
+\cf aʁɤndɯndɤt
+\se znɤndɯndɤt
+\ps vt
+\ng caus
+\ge laisser aller n'importe oæ
+\xn 让……到处乱走
 
 \lx _nɤndɯndo
 \wav vt-nAndWndo
@@ -67959,7 +68029,11 @@ l
 \ps vt
 \ge regarder dans tous les sens
 \gn 看来看去
-\dt 24/Aug/2015
+\se artɯrtoʁ
+\ps vi
+\ng recip
+\ge se regarder les uns les autres
+\gn 互相看
 
 \lx _rtsa
 \wav vt-rtsa
@@ -78263,6 +78337,20 @@ l
 \cf raχtɯtsɣe
 \dt 27/Aug/2013
 
+\lx _χtɯɣ
+\wav8 CtukAXtWG
+\wav8 GWtuXtWGa
+\ps vt
+\pdl dir 
+\pdv tɤ-
+\ge demander une arbitration (auprès de son supérieur)
+\gn （向上级）请求裁决；请上级评理
+\et gtug
+\xv tɕiʑo kɤ-nɯkrɤz mɯ́j-cha-tɕi tɕe (tɕi-tɯkrɤz mɯ́j-ɣi tɕe), taʁ ɕ-tu-kɤ-χtɯɣ ɲɯ-ɬoʁ
+\xn 我们俩既然说不通，只好请上级评理
+\xv nɤ-ɕki ɣɯ-tu-χtɯɣ-a ɲɯ-ɬoʁ
+\xn 只好来请您给我做主
+
 \lx _χuχu
 \ps idph.2
 \ge qui a une petite ouverture
@@ -78847,6 +78935,9 @@ l
 \lx _znɤndɤr
 \cf nɤndɤr
 \dt 15/Sep/2011
+
+\lx _znɤndɯndɤt
+\cf nɤndɯndɤt
 
 \lx _znɤndʐɤrqɯ
 \cf nɤndʐɤrqɯ
@@ -79651,6 +79742,9 @@ l
 
 \lx _ʑɣɤɣɤme
 \cf ɣɤme
+
+\lx _ʑɣɤɣɤntaβ
+\cf ɣɤntaβ
 
 \lx _ʑɣɤɣɤŋgi
 \cf ɣɤŋgi
