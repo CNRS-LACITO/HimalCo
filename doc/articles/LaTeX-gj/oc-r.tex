@@ -17,7 +17,7 @@
 
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
@@ -35,7 +35,7 @@
  \newcommand{\bleu}[1]{{\color{blue}#1}}
 \newcommand{\rouge}[1]{{\color{red}#1}} 
 \newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
-
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
 \begin{document} 
 \title{On the reconstruction of medial *-r- in Old Chinese}
 \author{Guillaume Jacques}
@@ -43,106 +43,57 @@
  
 
 \section{Introduction}
+All systems of Old Chinese reconstructions used  presently, from that of \citealt{li71oc} to \citet{schuessler09minimal} and \citet{bs14oc} all follow \citet{yakhontov61sochetaniya} in reconstructing [consonant+liquid] clusters in words whose Middle Chinese rhymes belong to second division or chongniu third division (as well as all other third division words after Middle Chinese retroflex initials). Yakhontov originally proposed to reconstruct a medial *\ipa{-l-} in these words, but later scholars have agreed that this medial consonant was more probably *\ipa{-r-}.
 
+This reconstruction has attracted little controversy in recent years. One of the rare attempts at challenging the received model,  \citet{handel02r}, proposed that rhotic metathesis \change{rC-}{*Cr-}  took place at some stage of Old Chinese, on the basis of comparative evidence with Tibetan, but this work has until now receive little follow-up.
 
-\citet{handel02r}
+In the present paper, I argue that, while medial *\ipa{-r-} do certainly constitute one of the origins of  second division or chongniu third division, it is not necessarily the only origin of these Middle Chinese categories, and that mechanically projecting *\ipa{-r-} for all syllables of this type result in a highly unrealistic reconstruction.
 
-\section{Excess of *-r- in Old Chinese reconstructions}
+In the first section, I present a series of arguments, based on typology and Sino-Tibetan comparison, against generalized reconstruction of *\ipa{-r-}.
 
-\section{final *r}
-*CrVr
+Then, I show that reconstructing *\ipa{r-} preinitials, and possibly clusters not containing rhotic, can account for the development of rhymes and initials in Middle Chinese without supposing metathesis.
 
-> final *\ipa{l}
+\section{What is wrong with medial *\ipa{-r-}?} \label{sec:medial}
+Despite its widespread acceptance, the hypothesis that all word with second division or chongniu third division rhymes and/or retroflex initials in Middle Chinese (henceforth R-type words) had a medial *\ipa{-r-} presents serious problems from the point of view of both Sino-Tibetan comparison and linguistic typology. The main problems involved with this reconstruction is the large excess of reconstructed *\ipa{-r-} in Old Chinese in comparison with more conservative languages of the Sino-Tibetan that preserve the clusters, the presence of a *\ipa{lr-} cluster and of dental + *\ipa{r}, and the rather poor correspondences with \ipa{-r-} clusters in other languages.
 
-\section{Medial or preinitial *r?}
+\subsection{Excess of *-r- in Old Chinese reconstructions}
+The proportion of R-type syllables in Middle Chinese can be estimated from Table \ref{tab:gy}, obtained from the electronic version of the Guangyun. Listed as R-type syllables are second division, chongniu 3, as well as all syllables with the initial consonants \zh{知} \ipa{ʈ}, \zh{徹} \ipa{ʈʰ},  \zh{澄} \ipa{ɖ},  \zh{娘} \ipa{ɳ},  \zh{莊} \ipa{tʂ},  \zh{初} \ipa{tʂʰ},  \zh{崇} \ipa{dʐ} and \zh{生} \ipa{ʂ} that are neither second division or chongniu 3. This total number does not exhaust all syllables with potential medial *\ipa{-r-} in Old Chinese. Indeed, according to  \citet[501]{baxter92}, *\ipa{-r-} medial is undetectable in words with rhymes such as \zh{侯} \ipa{-uw}. 
 
+\begin{table}
+\caption{Proportion of R-type syllables in the Guangyun} \label{tab:gy} \centering
+\begin{tabular}{lllll}
+\toprule
+Type& Nb of characters & Nb of distinct syllables \\
+\midrule
+Second division	& 3126	 & 619 \\
+Chongniu 3	& 1997	& 420 \\
+Retroflex initials & 930	& 187 \\
+\midrule
+total&	6053	&1226\\
+out of &	25300	&3883 \\
+	&24\%	&31.5\% \\
+	\bottomrule
+\end{tabular}
+\end{table}
 
-\subsection{Grave stops}
+%知	136	30
+%徹	150	33
+%澄	190	31
+%娘	64	13
+%莊	101	18
+%初	77	20
+%崇	51	20
+%生	161	22
 
+Counting the number of reconstructed medial *\ipa{-r-} in actual reconstruction systems of Old Chinese for which searchable 
 
+1070 / 4974 = 21.5 \%.
 
-\ipa{tɤjpɣom} $\leftarrow$ *\ipa{lpaˠm}`ice' \ch{冰}{piŋ}{ice} *\ipa{rpəm}
-
-\ipa{ɯ-rqʰu} `shell, crust' \ch{殼}{khæwk}{shell, crust}
-
-\ipa{rka} `\zh{水渠、灌溉渠}' \ch{渠}{gju}{canal} *rga (borrowing)
-
-
-medial r:
-
-\ipa{pri} `bear' \ch{羆}{bje}{bear} *braj
-
-\ipa{qhrɯt} `scrape' \ch{刮}{kwæt}{scrape} *krot
-
-
-\ipa{ɴkʰruŋ} `be born' \ch{降}{kæwŋ^h}{descend} *kˁruŋs
-Evidence of *r?
-
-\ipa{mɯrkɯ}`steal', \ipa{rku} \ch{寇}{khuwH}{rob} 
-
-rmug \ch{霧}{mjuH}{fog}
-
-
-no *r:
-
-\ipa{tɯ-rpaʁ}`shoulder', \ipa{phrag} (metathesis) \ch{膊}{phak}{arm}
-
-\ipa{tɯ-rpa}`axe', \ch{斧}{pjuX}{arm}
-
-\ipa{tɯ-rna}`ear', \ipa{rna}, \ch{耳}{ɲiX}{arm}
-
-\ipa{tɯ-rtsɤɣ}`articulation, joint', \ipa{tshigs}, \ch{節}{tset}{joint}
-
-\ipa{tɤjmɤɣ} `mushroom' \ch{帽}{mawH}{hat}
-
-\ipa{tɯ-jmŋo} `dream' \ch{夢}{mjuwŋH}{dream}
-
-\subsection{Dental stops and affricates}
-\ipa{tɯ-zgrɯ} / \ipa{tɯ-ɣru} `elbow' (contamination with \ipa{azgrɯ})  \ch{肘}{ʈjuwX}{elbow}
-
-rdul
-rduŋ
-
-\ipa{rdzas} `thing' \ch{事}{dʐiH}{affair} (borrowing)
-
-
-\ipa{tɯ-ndzrɯ} `nail, claws' \ch{爪}{tʂæwX}{claw}
-\subsection{Nasals}
-Expected *\ipa{mr} $\rightarrow$ \ipa{br-} nowhere attested
-
-
-no *r:
-
-\ipa{tɤ-jme} `tail' \ch{尾}{mjɨjX}{tail}
-
-\ipa{tɤ-rmi} `name', \ipa{miŋ} \ch{名}{mjieŋ}{cry} 
-
-\ipa{rŋo}`parch', \ipa{rŋo}, \ch{熬}{ŋaw}{fry, roast}
-
-\ipa{tɯ-rnoʁ}`brain', \ch{腦}{nawX}{brain}
-
-Nr:
-
-\ipa{mbri} `call, cry' \ch{鳴}{mjæŋ}{cry}
-
-
-rN:
-
-\ipa{tɤ-rme} `hair' \ch{眉}{mij}{eyebrows}
-
-\ipa{tɯ-rŋa} `face' \ch{颜}{ŋæn}{face} *\ipa{rŋan} not *\ipa{ŋran}
-
-\ipa{rŋam.pa} `awe-inspiring' \ch{嚴}{ŋjæm}{majestic} *\ipa{rŋam} \citet{coblin86handlist}
-
-
-Borrowings and Wanderwörter:
-
-\ipa{mbro} `horse' \ch{馬}{mæX}{horse}
-
-\ipa{qambrɯ} `male yak' \ch{犛}{li, mæw}{horse} < *\ipa{rə, mrˁə}
-
-
-\section{Laterals}
+In Japhug
+Cr 472 words out of 6829 7\%
+r(CC)CVC 645 words out of 6829 9\%
+1117 16\%
+\subsection{Laterals}
 
 *lr
 
@@ -151,11 +102,119 @@ Borrowings and Wanderwörter:
 
 \citet{nikitina12logophoric}
 
-\section{The *r infix}
+\subsection{Dental + r}
+
+%\subsection{Final *r}
+%*CrVr
+%
+%> final *\ipa{l}
+
+\subsection{Comparative evidence}
+
+\section{Medial or preinitial *r?}
+
+\subsection{The Tangut-Rmaic model}
+ 
+ Mawo Rma \ipa{rmu} `corpse', Yonghe \ipa{muʳ} (\citealt[41]{sims14yonghe})
+
+\ipa{βuʳ} `drum'
+hair (on body) \ipa{hwə̃ʳ}
+\subsection{Presyllables in Viet-Muong}
+
+\subsection{The *r infix}
 
  \citet{sagart99roc}
 
-\section{Counterevidence: Viet-Muong}
+%\subsection{Grave stops}
+%
+%
+%
+%\ipa{tɤjpɣom} $\leftarrow$ *\ipa{lpaˠm}`ice' \ch{冰}{piŋ}{ice} *\ipa{rpəm}
+%
+%\ipa{ɯ-rqʰu} `shell, crust' \ch{殼}{khæwk}{shell, crust}
+%
+%\ipa{rka} `\zh{水渠、灌溉渠}' \ch{渠}{gju}{canal} *rga (borrowing)
+%
+%
+%medial r:
+%
+%\ipa{pri} `bear' \ch{羆}{bje}{bear} *braj
+%
+%\ipa{qhrɯt} `scrape' \ch{刮}{kwæt}{scrape} *krot
+%
+%
+%\ipa{ɴkʰruŋ} `be born' \ch{降}{kæwŋ^h}{descend} *kˁruŋs
+%Evidence of *r?
+%
+%\ipa{mɯrkɯ} `steal', \ipa{rku} \ch{寇}{khuwH}{rob} 
+%
+%rmug \ch{霧}{mjuH}{fog}
+%
+%
+%no *r:
+%
+%\ipa{tɯ-rpaʁ} `shoulder', \ipa{phrag} (metathesis) \ch{膊}{phak}{arm}
+%
+%\ipa{tɯ-rpa} `axe', \ch{斧}{pjuX}{axe}
+%
+%\ipa{tɯ-rna} `ear', \ipa{rna}, \ch{耳}{ɲiX}{ear}
+%
+%\ipa{tɯ-rtsɤɣ} `articulation, joint', \ipa{tshigs}, \ch{節}{tset}{joint}
+%
+%\ipa{tɤjmɤɣ} `mushroom' \ch{帽}{mawH}{hat}
+%
+%\ipa{tɯ-jmŋo} `dream' \ch{夢}{mjuwŋH}{dream}
+%
+%\subsection{Dental stops and affricates}
+%\ipa{tɯ-zgrɯ} / \ipa{tɯ-ɣru} `elbow' (contamination with \ipa{azgrɯ})  \ch{肘}{ʈjuwX}{elbow}
+%
+%rdul
+%rduŋ
+%
+%\ipa{rdzas} `thing' \ch{事}{dʐiH}{affair} (borrowing)
+%
+%
+%\ipa{tɯ-ndzrɯ} `nail, claws' \ch{爪}{tʂæwX}{claw}
+%\subsection{Nasals}
+%Expected *\ipa{mr} $\rightarrow$ \ipa{br-} nowhere attested
+%
+%
+%no *r:
+%
+%\ipa{tɤ-jme} `tail' \ch{尾}{mjɨjX}{tail}
+%
+%\ipa{tɤ-rmi} `name', \ipa{miŋ} \ch{名}{mjieŋ}{cry} 
+%
+%\ipa{rŋo}`parch', \ipa{rŋo}, \ch{熬}{ŋaw}{fry, roast}
+%
+%\ipa{tɯ-rnoʁ}`brain', \ch{腦}{nawX}{brain}
+%
+%Nr:
+%
+%\ipa{mbri} `call, cry' \ch{鳴}{mjæŋ}{cry}
+%
+%
+%rN:
+%
+%\ipa{tɤ-rme} `hair' \ch{眉}{mij}{eyebrows}
+%
+%\ipa{tɯ-rŋa} `face' \ch{颜}{ŋæn}{face} *\ipa{rŋan} not *\ipa{ŋran}
+%
+%\ipa{rŋam.pa} `awe-inspiring' \ch{嚴}{ŋjæm}{majestic} *\ipa{rŋam} \citet{coblin86handlist}
+%
+%
+%Borrowings and Wanderwörter:
+%
+%\ipa{mbro} `horse' \ch{馬}{mæX}{horse}
+%
+%\ipa{qambrɯ} `male yak' \ch{犛}{li, mæw}{horse} < *\ipa{rə, mrˁə}
+
+
+ 
+
+ 
+
+ 
 
 \section{Conclusion}
 
