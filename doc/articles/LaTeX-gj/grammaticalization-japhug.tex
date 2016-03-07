@@ -20,8 +20,8 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{\mbox{\phon #1}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\mbox{\phon\textbf{#1}}} %API tjs en italique
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
@@ -755,7 +755,7 @@ It is possible that sentences such as (\ref{ex:asWndo}) with zero-marked 3$\righ
 A sentence such as (\ref{ex:asWndo}), where the first referent is not overt (and thus the presence or absence of ergative not explicitely manifested), and the second referent is third person (zero-marked),  could be reinterpreted as a syntactically transitive one by analogy with other transitive constructions, keeping the surface form but modifying the underlying analysis.
 
 \section{Complex constructions} 
-The present section focuses on a selected series of complex constructions involving linking elements for which a straightforward etymology can be proposed.  Very few constructions are discussed in this section; those borrowed from Tibetan (such as conditional in \ipa{nɤ} etc), subordinate clauses with finite main verb and no overt subordinator   (most complement clauses, some relative clauses, see \citealt{jacques16relatives}) and subordinate clauses with a main verb in participial form are not treated here.
+The present section focuses on a selection of complex constructions involving linking elements for which a straightforward etymology can be proposed.  Very few constructions are discussed in this section; those borrowed from Tibetan (such as conditional in \ipa{nɤ} `if'), subordinate clauses with finite main verb and no overt subordinator   (most complement clauses, some relative clauses, see \citealt{jacques16relatives}) and subordinate clauses with a main verb in participial form are not treated here.
 
 \subsection{Alternative}
  Japhug has a conjunction \ipa{me}  `whether ... or' repeated after each noun or phrase in the alternative correlative construction, as in example \ref{ex:saCW}.
@@ -788,7 +788,7 @@ This conjunction is obviously grammaticalized from the negative existential copu
 
 
 \subsection{Adversative}
-There are four different  adversative constructions in Japhug whose meaning can all be translated as English  `not only/ not just ... but also', and appear to be semantically very closely and interchangeable. All four constructions are recently grammaticalized and etymologically transparent.
+There are four different  adversative constructions in Japhug whose meaning can all be translated as English  `not only/ not just ... but also', and appear to be semantically very close and interchangeable. All four constructions are recently grammaticalized and etymologically transparent.
 
 First, \ipa{mɤra ma} `not just, ...'  occurs after either noun phrases (example  \ref{ex:marama}) or clauses. It is grammaticalized from the negative form of the verb \ipa{ra} `need, have to' followed by the linker \ipa{ma}, a construction that still exists in the language, as in example (\ref{ex:marama2}).
 
@@ -808,20 +808,98 @@ First, \ipa{mɤra ma} `not just, ...'  occurs after either noun phrases (example
 \end{exe}
  
 
-\ipa{mɤ-kɯ-jɤɣ kɯ}
+Second, the linker \ipa{ɯtɤjɯ} `not only ...', mainly used after finite verbs, as in (\ref{ex:WtAjW}), is originally a relator noun meaning `something added', `some more ...', as in (\ref{ex:WtAjW2}). It can be compared to constructions such as English `in addition to being X, it is also Y'.
 
-\ipa{ɯ-tɤjɯ}
+\begin{exe}
+\ex \label{ex:WtAjW}
+\gll \ipa{ɕɯ-mŋɤm} 	\ipa{ɯtɤjɯ} 	\ipa{ɲɯ-sɤzoŋzoŋ} 	\ipa{ʑo} 	\ipa{ŋu}  \\
+\textsc{caus}-avoir.mal:\textsc{fact} not.only \textsc{sens}-tingle \textsc{emph} be:\textsc{fact} \\
+\glt Not only does it (nettle) hurt, it also causes a tingling sensation. (hist140428 mtshalu, 6)
+\end{exe}
 
-\ipa{ʁo alala ri}
+\begin{exe}
+\ex \label{ex:WtAjW2}
+\gll \ipa{ki} 	\ipa{nɤ-ŋga} 	\ipa{ɯ-tɤjɯ} 	\ipa{a-pɯ-ŋu} 	\ipa{ma} 	\ipa{tɯ-nɤndʐo} \\
+this \textsc{2sg.poss}-clothes \textsc{3sg.poss}-added \textsc{irr-ipfv}-be \textsc{lnk} 2-feel.cold:\textsc{fact} \\
+\glt Have some more clothes, otherwise you will be cold. (\citealt{jacques15japhug})
+\end{exe}
 
-   \subsection{Purposive clauses}
-   
-   \ipa{ɯ-spa} `matter' > purposive \citet[212]{heine-kuteva02}
-   
+Third, the form \ipa{mɤkɯjɤɣ kɯ} `not only' used after finite verbs (example \ref{ex:mAkWjAG}) is the negative form S/A participle of the verb \ipa{jɤɣ} `be possible, be allowed' followed by the ergative \ipa{kɯ}. Example (\ref{ex:mAkWjAG2}) illustrate the same verb form in its non-grammaticalized use.
+
+ \begin{exe}
+\ex \label{ex:mAkWjAG}
+\gll  \ipa{tɤ-mthɯm} 	\ipa{nɯra} 	\ipa{tu-ndze} 	\ipa{mɤkɯjɤɣ kɯ,} 	\ipa{ɯ-di} 	\ipa{ɲɯ-ɕɯmnɤm}  \\
+\textsc{indef.poss}-meat \textsc{dem:pl} \textsc{ipfv}:eat[III] not.only \textsc{3sg.poss}-smell \textsc{sens}-cause.to.have.a.smell \\
+\glt  (The mouse) does not only eat meat, it also makes it stinky. (27-spjaNkW, 198)
+\end{exe}
+
+
+ \begin{exe}
+\ex \label{ex:mAkWjAG2}
+\gll
+<baohu> 	\ipa{kɯ-ra} 	\ipa{tɕe} 	\ipa{pjɯ́-wɣ-sat} 	\ipa{mɤ-kɯ-jɤɣ} \ipa{ŋu} \\
+protect \textsc{nmlz}:S/A-have.to \textsc{lnk} \textsc{ipfv-inv}-kill \textsc{neg-nmlz}:S/A-be.allowed be:fact \\ 
+\glt It has to be protected and is not to be killed. (27-kikakCi, 88)
+\end{exe}
+
+Fourth, the linker \ipa{ʁo alala ri} `not only', used after noun phrases as in \ref{ex:alala}, is the combination of the adversative marker \ipa{ʁo} (\zh{倒}  \textit{dào}), the adverb \ipa{alala} `of course' and the locative \ipa{ri}.
+
+ \begin{exe}
+\ex \label{ex:alala}
+\gll  \ipa{tɕe} 	\ipa{nɯnɯra} 	\ipa{ʁo alala ri} 	\ipa{ɯʑo} 	\ipa{sɤz} 	\ipa{kɯ-xtɕi} 	\ipa{pɣa} 	\ipa{nɯra} 	\ipa{kɯnɤ} 	\ipa{ku-ndɤm} 	\ipa{qhe} 	\ipa{tu-ndze} \\
+\textsc{lnk} \textsc{dem:pl} not.only \textsc{3sg} \textsc{comp} \textsc{nmlz}:S/A-be.small bird \textsc{dem:pl} also \textsc{ipfv}-catch[III] \textsc{lnk} \textsc{ipfv}-eat[III] \\
+\glt In addition to these, it also eats bird that are smaller than itself. (19-qandZGi, 58)
+\end{exe}
+
+ \subsection{Purposive clauses}
+There are three purposive constructions in Japhug.
+
+   First, purposive clauses can be build with a verb in participial form followed by the linker \ipa{ɯ-spa} as in ({ex:Wspa}).  The form \ipa{ɯ-spa} is etymologically a noun meaning `matter' (at an earlier stage the irregular oblique participle of the verb \ipa{pa} `do'). This construction is one more example of the well-attested pathway \textsc{matter} $\rightarrow$ \textsc{purposive} (\citealt[212]{heine-kuteva02}).
+
+
+\begin{exe}
+\ex \label{ex:Wspa}
+\gll \ipa{paʁ} 	\ipa{nɯra} 	\ipa{ʁo} 	\ipa{lɯski,} 	\ipa{ɕa} 	\ipa{kɤ-ndza} 	\ipa{ɯ-spa} 	\ipa{ku-χsu-nɯ} 	\ipa{pjɤ-ŋu}  \\
+pig \textsc{dem:pl} \textsc{adv} of.course meat \textsc{nmlz}:P-eat \textsc{3sg.poss}-purposive \textsc{ipfv}-raise-\textsc{pl} \textsc{ifr.ipfv}-be \\
+\glt 
+\end{exe}
+ 
+Second, the verb \ipa{nɯmga} `do (on purpose), (to have)', either in a finite or infinitive form (as \ipa{kɤ-nɯmga}  in example \ref{ex:kAnWmga}) can mark a purposive clause.
+
+\begin{exe}
+\ex \label{ex:kAnWmga}
+\gll 
+\ipa{tɕe} 	\ipa{kɯpɤz} 	\ipa{nɯ} 	\ipa{mɯ-ɲɯ-kɤ-βzu} 	\ipa{kɤ-nɯmga,} 	\ipa{iʑɤra,} \ipa{ji-mthɯm} 	\ipa{nɯra} 	<binggui> 	\ipa{tu-χtɯ-j} \ipa{nɯ} 	\ipa{ɯ-ŋgɯ} 	\ipa{ri} 	\ipa{pjɯ-nɯ-rku-j} 	\ipa{ɕti} 	\ipa{ma} \ipa{maka} 	\ipa{ɯ-pɕi} 	\ipa{tú-wɣ-ɕɯɴqoʁ} 	\ipa{qhe,} \ipa{ŋotɕu} 	\ipa{nɯ́-wɣ-tɯ\textasciitilde{}ta} 	\ipa{ʑo} 	\ipa{kɯpɤz} 	\ipa{ɲɯ-βze} 	\ipa{ɲɯ-ɕti}\\
+\textsc{lnk} type.of.bug \textsc{dem} \textsc{neg-ipfv-inf}-grow \textsc{inf}-do.on.purpose \textsc{1sg} \textsc{1sg.poss}-meat \textsc{dem:pl} fridge \textsc{ipfv}-buy-\textsc{1pl} \textsc{dem} \textsc{3sg.poss}-inside \textsc{loc} \textsc{ipfv-auto}-put.in-\textsc{1pl} be.\textsc{assert:fact} \textsc{lnk} at.all \textsc{3sg.poss}-outside \textsc{ipfv-inv}-hang \textsc{lnk} where \textsc{ipfv-inv}-\textsc{indefinite}\textasciitilde{}put \textsc{emph} \textsc{emph} \textsc{ipfv}-grow \textsc{sens}-be.\textsc{assert}\\
+\glt In order not to have \ipa{kɯpɤz} bugs, our meat, we bought a fridge and put it in there, as if one hangs it outside, bugs will grow wherever you put it. (28-kWpAz)
+\end{exe}
+ 
+
+Third, Core Gyalrong languages, including Japhug (\citealt{jacques14linking}) and Tshobdun (\citealt{sun12complementation}) have purposive converbs in \ipa{sɤ-}, mainly used in the negative form as in (\ref{ex:WmAYWsAjmWjmWt}), which appear to be derived from the oblique participle \ipa{sɤ-} (on which see \citealt{jacques16relatives}).
+ 
+\begin{exe}
+\ex \label{ex:WmAYWsAjmWjmWt}
+\gll
+[\ipa{kɯ-lɤɣ}   	\ipa{acɤβ}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{\textbf{ɯ-mɤ-sɤ-jmɯ\textasciitilde{}jmɯt}},]   	\ipa{ɯ-pʰɯŋgɯ}   	\ipa{nɯ}   	\ipa{tɕu}   	\ipa{rdɤstaʁ-pɯpɯ}   	\ipa{tɕʰɯrdu}   	\ipa{ci}  \ipa{ɲɤ-rku,}\\
+ \textsc{nmlz}:S/A-herd Askyabs \textsc{dem} \textsc{erg}  \textsc{3sg-neg-purp:conv}-forget \textsc{3sg.poss}-inside.clothes \textsc{dem} \textsc{loc} stone-little pebble \textsc{indef}
+ \textsc{evd}-put.in\\
+\glt The cowboy Askyabs put a little pebble inside his clothes so that he would not forget it. (The frog, 166)
+\end{exe}
    \subsection{Causal clauses}
-   \ipa{núndʐa}
+Among the causal clauses in Japhug (\citealt{jacques14linking}), one presents a clear grammaticalization pathway:  clausal clauses in \ipa{núndʐa} `for this reason' as in (\ref{ex:qapGAmtWmtW}). This linker is the fusion of the demontrative \ipa{nɯ} `that' with the possessed noun \ipa{ɯ-ndʐa} `reason', a word borrowed from Tibetan \ipa{ɴdra}.
    
-ergative \ipa{kɯ}   
+   
+\begin{exe}
+\ex \label{ex:qapGAmtWmtW}
+\gll
+[\ipa{tɕe}  	\ipa{ɯ-mtɯ}  	\ipa{ɣɤʑu}]  	\ipa{tɕe,}  	\ipa{tɕe}  	\textbf{\ipa{núndʐa}}  	\ipa{qapɣɤmtɯmtɯ}  	\ipa{tu-ti-nɯ}  	\ipa{ɲɯ-ŋu}   \\
+\textsc{lnk} \textsc{3sg.poss}-crest \textsc{sensory}:exist \textsc{lnk} \textsc{lnk} for.this.reason hoopoe \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \\
+\glt It has a crest, and this is the reason why it is called `hoopoe'. (Hoopoe, 20)
+\end{exe}
+
+%Second, it is possible to use the ergative \ipa{kɯ} as a clausal 
+%
+%\citet{jacques16comparative}
    
 \subsection{Other constructions}
 The verb \ipa{me} `not exist' is used in addition in a construction expressing that an action is futile -- that the result will be the same whether or not it takes place. As shown by example (\ref{ex:mAndza}), in this construction the verb \ipa{me} `not exist' follows two bare infinitives of the same verb, in affirmative and in negative forms, and \ipa{me} agrees with the P if the verb is transitive.\footnote{This construction is very rare and is not attested with intransitive verbs; according to some consultants, in the case of intransitive complement verbs there is not agreement on \ipa{me}.}
