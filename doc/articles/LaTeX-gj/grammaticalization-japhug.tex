@@ -27,10 +27,11 @@
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\tld}{\textasciitilde{}}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
 %   \linenumbers
 
 \begin{document} 
- \title{Grammaticalization in Japhug and Gyalrongic languages}
+ \title{Grammaticalization in Japhug and Gyalrongic languages\footnote{XXXX The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI)}}
  \author{Guillaume Jacques}
  \maketitle  
  \section{Introduction}
@@ -219,7 +220,24 @@ This unusual pathway \textsc{ergative} $\Rightarrow$ \textsc{comparee} rather th
 The marker \ipa{sɤz} contains the locative suffix \ipa{-z} (which also appears as a tautosyllabic clitic \ipa{zɯ}), but the etymology of the first element \ipa{sɤ-} is unknown. 
 
  \subsection{Location}   \label{sec:loc}
-In Japhug, there are four distinct (non mutually exclusive) ways of marking locative adjuncts. First, locative and temporal adjunct are commonly left unmarked. Second, they can  take the locative case markers \ipa{zɯ} or \ipa{tɕu}. Third, relator (possessed) nouns such as \ipa{ɯ-ŋgɯ} `inside', \ipa{ɯ-taʁ} `on' etc can be used for more specific locations. 
+In Japhug, there are four distinct (non mutually exclusive) ways of marking locative adjuncts. First, locative and temporal adjunct are commonly left unmarked. Second, they can  take the locative postpositions \ipa{zɯ} or \ipa{tɕu}.  Third, relator (possessed) nouns such as \ipa{ɯ-ŋgɯ} `inside', \ipa{ɯ-taʁ} `on', \ipa{ɯ-pa} `under', \ipa{ɯ-rkɯ} `side' can be used for more specific locations. They are can be followed by the locative \ipa{zɯ} or \ipa{tɕu} as in (\ref{ex:WrkW.zW}).
+
+\begin{exe}
+\ex \label{ex:WrkW.zW}
+\gll \ipa{kha} 	\ipa{ɯ-rkɯ} 	\ipa{zɯ} 	\ipa{nɯnɯ} 	\ipa{qajɯ} 	\ipa{pɯ-nnɯ-ŋu,} 	\ipa{tɯrdoʁ} 	\ipa{kɯ-fse,} 	\ipa{tɤ-rɤku} 	\ipa{pɯ-kɯ-ʁndɤr} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ɣɯ-tu-ndze} 	\ipa{ɲɯ-ŋu} \\
+house \textsc{3sg.poss}-side \textsc{loc} \textsc{dem} worm \textsc{pst.ipfv-auto}-be grain \textsc{nmlz}:S/A-be.like \textsc{indef.poss}-cereals \textsc{pfv-nmlz}:S/A-be.spilled \textsc{nmlz}:S/A-be.like \textsc{cisloc-ipfv}-eat[III] \textsc{sens}-be \\
+\glt (During winter,) it comes near the house to eat worms or grains that have been spilled (on the ground). (23-pGAYaR, 94)
+\end{exe}
+
+These postpositions are however optional, as shown by the following example from the same story as (\ref{ex:WrkW.zW}).
+
+\begin{exe}
+\ex \label{ex:kha.WrkW}
+\gll
+\ipa{kha} 	\ipa{ɯ-rkɯ} 	\ipa{kɤ-ɣi} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{rga} \\
+house \textsc{3sg.poss}-side  \textsc{inf}-come really \textsc{emph} \textsc{like}:fact \\
+\glt It likes to come near the house. (23-pGAYaR, 95)
+\end{exe}
 
 Fourth, the plural clitic \ipa{ra} can indicate approximate location, as in \ref{ex:khara}. This use of \ipa{ra} is reminiscent of plural markers in Kirghiz and Old Japanese, which combine collective, hypocoristic and approximate locative meanings see \citealt[195]{antonov07ra}).
 
@@ -487,7 +505,7 @@ Japhug has a simple associated motion system, with one translocative / andative 
 
 Grammaticalization of motion verbs as prefixes is unexpected in a strict verb-final language like Japhug, especially since purposive complements of motion verbs are always preverbal. These prefixes therefore originate from a construction where the motion verbs appeared before the main verb, either in a serial verb construction or simple parataxis (\citealt{jacques13harmonization}).
 
-\subsection{Voice}
+\subsection{Voice} \label{sec:voice}
 The main sources for voice markers in Japhug are denominal prefixes. Five of the voice derivation prefixes, namely the Antipassive, the Applicative, the Causative, the Passive and the Deexperiencer, are homophonous with denominal derivations with similar meanings, as shown in Table \ref{tab:denom}.
 
 \begin{table}[H] \caption{Voice markers and corresponding denominal derivations} \label{tab:denom} \centering
@@ -589,7 +607,7 @@ The reflexive \ipa{ʑɣɤ-} (and its cognates in other Gyalrong languages) diffe
 
 These two hypotheses agree in any case that this prefix is partly derived from the bound pronominal root *\ipa{-jaŋ}) `oneself', and that its shape in proto-Gyalrong was *\ipa{wəjaŋ}, disagreement between the two hypotheses concerns the interpretation of the nature of the element *\ipa{wə-} in this form, since both the inverse marker and the third person singular possessive prefix have the same shape.
 
-\subsection{Incorporation}
+\subsection{Incorporation} \label{sec:incorp}
 Japhug has an incorporation-like construction in which noun-verb nominal compounds are turned into verbs by means of a denominal prefix (\citealt{jacques12incorp}). For instance, from the noun \ipa{cɯ} `stone' and the verb \ipa{pʰɯt} `pluck, take out' one can derive an action nominal   \ipa{cɯpʰɯt} `clearing the stones (from a field, before ploughing)', which can in turn be made into an incorporating verb by denominal derivation  \ipa{ɣɯ-cɯpʰɯt } `take out stones (out of the field)'. 
 
 \begin{exe}   
@@ -913,28 +931,46 @@ eat:\textsc{bare.inf} \textsc{neg}-eat:\textsc{bare.inf} not.exist-\textsc{1sg} 
 \end{exe}
  
  \section{Degrammaticalization}
+ This overview of grammaticalziation would not be compelete without an account of attested cases of degrammaticalization in Japhug, which include a suffix  becoming an independent word, and a relator noun of location (equivalent to a a postposition) becoming a common noun.
  
- suffix, clitic $\rightarrow$ independent word
-\ipa{kɯ}, \ipa{zɯ}
-
-relator noun $\rightarrow$ noun 
-
-
-
-\begin{itemize}
-\item \ipa{tʰog(tu)} `on', borrowed as \ipa{ɯ-tʰoʁ} *`on', in competition with native \ipa{ɯ-taʁ} `on'
-\item becomes restricted to the collocation *\ipa{sɤtɕha ɯ-thoʁ zɯ} `on the ground' (not attested), with native locative \ipa{zɯ}
-\item *\ipa{sɤtɕha ɯ-thoʁ zɯ} `on the ground' becomes reduced as \ipa{ɯ-thoʁ zɯ} `on the ground' (attested)
-\item  \ipa{ɯ-thoʁ} `ground', backformation from \ipa{ɯ-thoʁ zɯ} `on the ground'.
-\end{itemize}
  
+ \subsection{Suffix to clitic}
+The locative postposition  \ipa{zɯ} in Japhug is related to the allative suffix \ipa{-s} found in Situ (\citealt[330]{linxr93jiarong}).  
+
+Yet, the phonetic correspondence of Japhug \ipa{z} to Situ \ipa{s} is anomalous: in word-initial position without cluster, Situ \ipa{s-} always corresponds to Japhug \ipa{s-}  (\citealt[317-8]{jacques04these}).
+
+However, a sound change common to Japhug, Tshobdun and Zbu is the voicing of final \change{-s}{-z}.\footnote{Final \ipa{-z} is realized as voiced in these three languages except utterance-finally and when preceding a word beginning with an unvoiced obstruent, as was first recognized by  \citet{jackson05yingao} about Tshobdun.} 
+
+The Japhug form \ipa{zɯ} can be accounted for in the following way. After the regular sound change \change{-s}{-z}, the locative suffix \ipa{-z} was degrammaticalized as a an enclitic, and a postthetic vowel \ipa{ɯ} was added to it as in all case marking clitics (Ergative \ipa{kɯ}, Genitive \ipa{ɣɯ}). 
+
+ The opposite possibility, namely that the allative marker was an independent word or clitic in proto-Gyalrong and that it became phonologically fused with the preceding noun in Situ, cannot account for the presence of voicing in the Japhug form \ipa{zɯ}. Moreover, there is evidence that the proto-Gyalrong allative suffix reconstructed here as *\ipa{-s} is cognate to the \ipa{-s} element found in several case markers in Tibetan (on which see \citealt{hill12bas}).
+  
+
+ \subsection{Relator noun of location to common noun}
+
+The Japhug noun \ipa{ɯ-thoʁ} `the ground' is highly anomalous in having an obligatory third person singular possessive suffix \ipa{ɯ-}. In addition, this word has no known cognates in other Gyalrongic languages, while it is a perfect match for a being a borrowing from a TIbetan word with the shape \ipa{tʰog} (compare the other borrowed noun \ipa{thoʁ} `thunder' from Tibetan \ipa{tʰog}). To account for the etymology of this word, I propose the following scenario in four stages.
+
+First, Japhug borrowed the Tibetan relator noun  \ipa{tʰog(tu)} `on' as \ipa{ɯ-tʰoʁ} *`on' (not attested), adding a third person possessive prefix like all relator nouns (see section \ref{sec:loc}). This relator noun was in competition with the existing native equivalent \ipa{ɯ-taʁ} `on'.\footnote{It is not surprising in Japhug to have several competing relator noun for the same functional slot. The dative \ipa{ɯ-ɕki} discussed in section \ref{sec:dat} is itself in competition with another form \ipa{ɯ-phe}, probably borrowed from another Gyalrong variety.  }
+  
+  Second, it  became restricted to the collocation *\ipa{sɤtɕha ɯ-thoʁ zɯ} `on the ground' (not attested), with the native locative \ipa{zɯ} and the  noun of Tibetan origin \ipa{sɤtɕha} `earth, ground, place'.
+  
+    Third, the collocation *\ipa{sɤtɕha ɯ-thoʁ zɯ} `on the ground' became reduced as \ipa{ɯ-thoʁ zɯ} `on the ground' (attested).
+ 
+ Fourth, the noun \ipa{ɯ-thoʁ} `ground' was created by backformation from the locative phrase \ipa{ɯ-thoʁ zɯ} `on the ground'. The fact that the locative postposition \ipa{zɯ} is always optional (section \ref{sec:loc}) undoubtedly made this step easier.
+ 
+ Thus, Japhug attests an example of degrammaticalization from a relator noun meaning `on' (with or without motion) to a common, noun meaning `ground'.
  
     \section{Comparative outlook} 
-%5.	Other (prominent) patterns of grammaticalization and reanalysis 
 
-Denominal derivations, comparable to grammaticalization pathways based on light verbs, cf antipassive \citealt{creissels12antip}
+XXXX
+\subsection{Denominal derivations}
+Denominal verbalizing derivations are involved in the pathways of grammaticalization of many nominal and verbal affixes in Japhug, in particular valency-changing prefixes (antipassive, causative etc, see section \ref{sec:voice}), incorporation (section \ref{sec:incorp}) and also comitative adverbs (section \ref{sec:comit}).
 
-the only difference: in Japhug, there is no evidence that denominal prefixes originate from verbs.
+Gramamticalization pathways based on denominal derivation are in many ways comparable to pathways  based on light verbs (as in the case of the Antipassive, cf \citealt{creissels12antip}). The only real  difference is in fact that the historical origin of denominal verbalizing prefixes in Japhug is unknown. It is conceivable that they originate from verbs too, but the grammaticalization took place in a past so remote that it may not be recoverable. It they indeed originate from verbs, it is interesting that they are prefixes and not suffixes, in a language with strict verb-final word order (on which see \citealt{jacques13harmonization}).
+
+
+XXXX
+
 
 %6.	Comparative outlook (comparison with related languages to determine to what extent grammaticalizations paths are representative of a family )
 %7.	Discussion /conclusion (summary of grammaticalization paths, comments on the processes and mechanism operating in individual languages and, maybe most importantly, remarks on typologically unusual aspects of grammaticalization in individual languages ). 
