@@ -18,7 +18,7 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
@@ -32,6 +32,7 @@
 \newcommand{\ra}{$\Sigma_1$} 
 \newcommand{\rc}{$\Sigma_3$}  
 \newcommand{\dhatu}[2]{|\ipa{#1}| ``#2''}
+\newcommand{\dhat}[1]{|\ipa{#1}|}
 \newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
 
 
@@ -136,13 +137,17 @@ Present Stem & Past Stem & Root form \\
 In Bantawa, the nasalized allomorph has always been generalized, so that \ipa{-s} causative verbs only occurs with nasal codas. For instance, Bantawa \dhatu{ep}{stand} forms its causative as \dhatu{ems}{make stand, establish} (compare Limbu \dhatu{jɛp}{stand (vi)}  and \dhatu{jɛps}{stand sth up (vt)}).
 
 The applicative appears to cause denasalization of nasal codas in some verbs in Limbu and Bantawa. A good example of this phenomenon is provided by the transitive verb \dhatu{makt}{see in a dream}	in Bantawa (same form in Limbu), which corresponds to the intransitive \dhatu{maŋ}{to dream} (cognate to Khaling \dhatu{moŋ}{dream}). There is evidence that the nasal coda is more ancient in this verb: in Limbu, although the simple intransitive verb is not attested, we find the noun \ipa{sɛpmaŋ} `dream' with a nasal, and cognates outside of Kiranti all have a nasal (Japhug \ipa{tɯ-jmŋo} < \ipa{lmaˠŋ}, Chinese \zh{夢} \ipa{C.məŋ-s} `dream'). The nasalization in applicative verb forms is not systematic; it may have been a regular morphological alternation at an early stage, which ceased to be operation later, so that \ipa{-ŋt} stem verbs were created afterwards in Limbu and Bantawa. It is thus only preserved in a few archaic applicative verbs.
-XXXXXXXXXXXXXXXX
-%haŋ/hakt "send" ɦoŋ
-%\dhatu{juŋ}{sit}, \dhatu{jukt}{to sit on, to ride (e.g. a horse)} = Bantawa \dhatu{juŋ}{sit}, \dhatu{juŋs}{to put; to cause to sit}, +other lgs
-%thaŋ, thakt "bring (from below"
-%tʰomma (tʰoma) vi to dance. 
-%tʰomma (tʰomsu) vt to make dance, to make someone else dance.
-%tʰopma (tʰoptu) vt to dance for some one.
+
+
+Other examples of denasalization in applicative verbs include the following:
+
+\begin{itemize}
+\item Limbu \dhatu{juŋ}{sit} $\rightarrow $ \dhatu{jukt}{to sit on, to ride (e.g. a horse)} (cf Bantawa \dhatu{juŋ}{sit}, \dhatu{juŋs}{to put; to cause to sit})
+\item Limbu \dhatu{haŋ}{send (sth)} $\rightarrow $ \dhatu{hakt}{send (sth) to} (cf Khaling \dhatu{ɦoŋ}{send})
+\item Limbu \dhatu{thaŋ}{come from below} $\rightarrow $ \dhatu{thakt}{bring from below}
+\item Bantawa \dhatu{tʰom}{dance} $\rightarrow $ \dhatu{tʰopt}{dance for someone}
+\end{itemize}
+ 
 \subsection{Deponent} \label{sec:deponent}
 Not all verbs in \ipa{-t} are syntactically transitive. In both Limbu and Khaling, many impersonal verbs or verbs expressing a feeling (\citealt{michailovsky97deponent}) are only used in third singular, on in inverse forms.  
 
@@ -216,7 +221,7 @@ Unlike Gyalrongic languages (\citealt{jacques14antipassive}), there are surprisi
 \item Khaling \dhatu{ti}{lay an egg} (it) is derived from \ipa{ti} `egg' without overt derivational marker, but follows the vowel alternation paradigm of intransitive \ipa{-i} stem verbs. Bantawa \dhatu{dint}{lay eggs} and \dhatu{thiːnt}{lay an egg} derive from the corresponding nouns  \ipa{din} and \ipa{thiːn} `egg' respectively,\footnote{The \ipa{-n} coda in Bantawa and Limbu is probably suffixal.} but with a \ipa{-t} denominal suffix. Khaling o n the one hand, and Bantawa and Limbu on the other hand, have thus separately built their verbs for ``lay an egg'' from the same noun, but with a different morphological structure.
 \item Wambule \dhatu{sja}{bear a fruit}, Bantawa  \dhatu{si}{bear fruit} and Khaling \dhatu{sit}{bear fruits} derive from the noun `fruit' (Khaling \ipa{si},  Bantawa \ipa{si}, Limbu \ipa{se}). Here Khaling differs from the other languages in having a denominal \ipa{-t}.
  \item The Limbu transitive verb \dhatu{khaːnt}{wound} derives with a denominal \ipa{-t} suffix from a noun not attested in Limbu, but found in Wambule \ipa{ɓari} `wound (n)' and Khaling \ipa{koɔ̄r} `wound (n)'
- \item Limbu \dhatu{sokt}{to aim, to point}, Khaling \dhatu{tsukt}{point (with a finger)}, Limbu \ipa{cok} `toe, finger'. xxxxx voicing
+ \item Limbu \dhatu{sokt}{to aim, to point}, Khaling \dhatu{tsukt}{point (with a finger)}, Limbu \ipa{cok} `toe, finger' (which however comes from a proto-form *\ipa{dzʊk}, whereas the verb has an unvoiced initial).
  \item The Khaling \dhatu{kakt}{hoe} corresponds to the Japhug noun \ipa{qaʁ} `hoe' outside of Kiranti (perhaps also to Limbu \ipa{kaːŋ} `hoe', though the correspondence is difficult to explain): it is thus a fossilized \ipa{-t} denominal verb.
 \end{itemize}  
 
@@ -224,7 +229,10 @@ Unlike Gyalrongic languages (\citealt{jacques14antipassive}), there are surprisi
 
 \subsection{Stops and affricates} \label{sec:stops}
 
-Previous work on proto-Kiranti (in particular \citealt{starostin94kiranti}, \citealt{michailovsky94stops} and \citealt{opgenort05jero}) have already sorted out the correspondences of stops and affricates. Table (\ref{tab:stops}) presents the regular correspondences between the four languages under study. The reconstructions here follow \citet{michailovsky94stops} in reconstructing three series of stops.  All proto-phonemes in Table (\ref{tab:stops}) except *\ipa{kw} and *\ipa{ʦʰ} are attested by a least five etymologies.
+Previous work on proto-Kiranti (in particular \citealt{starostin94kiranti}, \citealt{michailovsky94stops} and \citealt{opgenort05jero}) have already sorted out the correspondences of stops and affricates. Table (\ref{tab:stops}) presents the regular correspondences between the four languages under study, and Table \ref{tab:stops.ex} presents examples for each of the proto-phonemes.\footnote{The conventions for symbols such as double chevron in the reconstructions are explained in the appendix (\ref{sec:appendix}).}
+
+
+The reconstructions here follow \citet{michailovsky94stops} in reconstructing three series of stops.  All proto-phonemes in Table (\ref{tab:stops}) except *\ipa{kw} and *\ipa{ʦʰ} are attested by a least five etymologies.
 
 Unlike \citet{starostin94kiranti} and \citet{opgenort05jero}, I do not reconstruct a series of preglottalized unvoiced stops *\ipa{`p},  *\ipa{`t},  *\ipa{`ts},  *\ipa{`k} opposed to the plain unvoiced stops (see section \ref{sec:fourth}). 
 
@@ -244,7 +252,7 @@ Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \midrule
 \ipa{*pʰ} & \ipa{pʰ} & \ipa{pʰ} & \ipa{b} / \ipa{bʰ}  & \ipa{pʰ}  \\
 \ipa{*tʰ} & \ipa{tʰ} & \ipa{tʰ} & \ipa{d} / \ipa{dʰ} & \ipa{tʰ}  \\
-\ipa{*ʦʰ} & ? & \ipa{ʦʰ} & ? & \ipa{s}  \\
+\ipa{*ʦʰ} & ? & \ipa{ʦʰ} & \ipa{cʰ}  & \ipa{s}  \\
 \ipa{*kʰ} & \ipa{kʰ} & \ipa{kʰ} & \ipa{kʰ} & \ipa{kʰ}  \\
 \midrule
 \ipa{*b} & \ipa{b} &\ipa{b} / \ipa{bʰ}  & \ipa{p} & \ipa{pʰ}  \\
@@ -255,6 +263,64 @@ Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \end{tabular}
 \end{table}
 These correspondences account for the great majority of comparanda between the four languages; exceptions are treated by assuming  morphological alternations of the type described in section (\ref{sec:alternations}).
+
+\begin{table}[H]
+\caption{Proto-Kiranti stops and affricates: representative examples} \centering \label{tab:stops.ex}
+\begin{tabular}{lllllll}
+\toprule
+Proto-Kiranti & Meaning & Wambule & Khaling & Bantawa & Limbu\\
+\midrule
+\ipa{*pil > pil-t} &	milk &	&	\dhat{pil} &	\dhat{bʰil} &	\dhat{phiːnt} &	\\
+\ipa{*pɔ >{}> pa} &	weave &	\dhat{pa} &	\dhat{pa} &	\dhat{ba} &	\dhat{phɔ} &	\\
+\ipa{*pot > pot-t} &	tie up &	\dhat{pwat} &	\dhat{pott} &	&	&	\\
+\midrule			
+\ipa{*tuŋ} &	drink &	\dhat{tu:(s)} &	\dhat{tuŋ} &	\dhat{duŋ} &	\dhat{thuŋ} &	\\
+\ipa{*tup > tup-t} &	beat &	\dhat{tupt} &	\dhat{tup} &	\ipa{-dʰup-} (n)&	&	\\
+\ipa{*tan > tan-t} &	drop &	&	\dhat{tɛnt} &	\dhat{dant} &	\dhat{(mut) thaːnt} &	\\
+\midrule				
+\ipa{*tsor} &	pay &	&	\dhat{ʦor} &	\dhat{cʰor} &	&	\\
+\ipa{*tsikt} &	know &	\dhat{cikt} &	\dhat{ʦikt} &	&	&	\\
+\ipa{*tsek} &	pinch &	 &	\dhat{ʦek} &	\dhat{cʰɨk} &	\dhat{sekt} &	\\
+\ipa{*tsept > tsep-s} &	taste &	&	\dhat{ʦept} &	\dhat{cʰems} &	&	\\
+\midrule
+\ipa{*kɔkt} &	chop &	\dhat{kwakt} &	\dhat{kokt} &	\dhat{kʰokt} &	\dhat{khɔkt} &	\\
+\ipa{*k[e|i]} &	fight &	&	\dhat{ki} &	\dhat{kʰi} &	\dhat{khe} &	\\
+\ipa{*k[e|i]p > kep-t } &	stick &	\dhat{kjap} &	\dhat{kept} &	\dhat{kʰept} &	\dhat{khipt} &	\\
+\midrule				
+\ipa{*pʰrok > pʰrok-si} &	untie &	\dhat{phrwaŋ} &	\dhat{phrok} &	&	\dhat{phaːks} &	\\
+\ipa{*pʰek > pʰek-t} &	flick away &	\dhat{phjak} &	\dhat{phekt} &	&	 &	\\
+\ipa{*pʰlɑs} &	help &	&	\dhat{phlo} &	\dhat{pʰas} &	\dhat{phaˀr} &	\\
+\midrule				
+\ipa{*tʰin > tʰin-t} &	wake &	&	\dhat{thint} &	\dhat{tʰint} &	&	\\
+\ipa{*tʰar > tʰar-t} &	make stand &	\dhat{thar} &	&	\dhat{tʰant} &	&	\\
+\ipa{*tʰʊk} &	spit at &	\dhat{thuk} &	&	\dhat{tʰukt} &	\dhat{thokt} &	\\
+\midrule		
+\ipa{*tsʰu[ŋ|k]-si} &	cough &	&	&	\dhat{cʰuŋs} &	\dhat{suks} &	\\
+\ipa{*tsʰus} &	be late &	&	\dhat{ʦhu} &	&	\dhat{sus} &	\\
+\ipa{*tsʰem > tsʰem-t} &	lure &	&	\dhat{ʦhem} &	\dhat{cʰemt} &	&	\\
+\midrule
+\ipa{*kʰ[u|o]l} &	transport &	&	\dhat{khol} &	\dhat{kʰol} &	\dhat{khuˀr} &	\\
+\ipa{*kʰ[u|o]tt} &	comb &	&	\dhat{khutt} &	\dhat{kʰɨtt} &	\dhat{khott} &	\\
+\ipa{*kʰa} &	be bitter &	\dhat{kha} &	\dhat{khɛ} &	&	&	\\
+\midrule
+\ipa{*bor} &	grow &	\dhat{bwar} &	\dhat{bhor} &	\dhat{por} &	\dhat{por} &	\\
+\ipa{*b[ɛː|i]r} &	fly &	&	\dhat{bher} &	\dhat{pir} &	\dhat{pɛːr} &	\\
+\ipa{*bi} &	give &	&	\dhat{bi} &	\dhat{pɨ} &	\dhat{pi} &	\\
+\midrule
+\ipa{*dɔ >{}>  da} &	dig &	\dhat{dwa} &	\dhat{dhA} &	\dhat{tu} &	\dhat{tɔ} &	\\
+\ipa{*dɔŋ} &	be friends &	&	\dhat{dhoŋ} &	\dhat{toŋ} &	\dhat{tɔŋ} &	\\
+\ipa{*duk > dukt} &	hurt &	&	&	\dhat{tuk} &	\dhat{tuk} &	\\
+\midrule				
+\ipa{*dza} &	eat &	\dhat{dza} &	\dhat{dzA} &	\dhat{ca} &	\dhat{ca} &	\\
+\ipa{*dzɑ:k} &	swim across &	\ipa{dzwak } (n) &	&	\dhat{cak} &	\dhat{caːk} &	\\
+\ipa{*dzit} &	be wet &	\dhat{dzit}   &	\dhat{ʣhit} &	&	&	\\
+\midrule		
+\ipa{*gɑŋ} &	warm &	&	\dhat{ghoŋ} &	\dhat{kaŋt} &	\dhat{kaŋ} &	\\
+\ipa{*gam} &	fit together &	&	\dhat{ghɛm} &	\dhat{kams} &	\dhat{kam} &	\\
+\ipa{*glumt} &	sleep with &	\dhat{glwam} &	\dhat{glumt} &	\dhat{kupt} &	\dhat{kupt} &	\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 The shift from *\ipa{ʦʰ} to \ipa{s} in Limbu probably postdates contact with Tibetan, as we find the likely loanword Limbu \dhatu{sɔŋs}{sell} from \ipa{ɴtsʰoŋ, btsoŋs} `sell'.
 
@@ -391,11 +457,11 @@ The only noteworthy sound change is the merger of *\ipa{ŋ} and \ipa{n} to *\ipa
 Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \midrule
 \ipa{*m} & \ipa{m} & \ipa{m} & \ipa{m} & \ipa{m}  \\
-\ipa{*ʔm} & \ipa{m} & \ipa{m} & \ipa{ɓ} & \ipa{m}  \\
+\ipa{*ʔm} & \ipa{ɓ} & \ipa{m} & \ipa{m} & \ipa{m}  \\
 \ipa{*n} & \ipa{n} & \ipa{n} & \ipa{n} & \ipa{n}  \\
-\ipa{*ʔn} & \ipa{n} & \ipa{n} & \ipa{ɗ} & \ipa{n}  \\
+\ipa{*ʔn} & \ipa{ɗ} & \ipa{n} & \ipa{n} & \ipa{n}  \\
 \ipa{*ŋ} & \ipa{ŋ} & \ipa{ŋ} & \ipa{n} / \ipa{ŋ} & \ipa{n}  \\
-\ipa{*ʔŋ} &  \ipa{ɓ}  & \ipa{ŋ} & x &x  \\
+\ipa{*ʔŋ} &  \ipa{ɓ}  & \ipa{ŋ} & ? &?  \\
 \ipa{*l} & \ipa{l} & \ipa{l} & \ipa{l} & \ipa{l} / \ipa{r} \\
 \ipa{*w} & \ipa{w} & \ipa{w} & \ipa{w} & \ipa{w} \\
 \ipa{*j} & \ipa{j} & \ipa{j} & \ipa{j} & \ipa{j} \\
@@ -432,7 +498,7 @@ Stem-C & Stem-V & Reconstructed Coda \\
 $\varnothing$ & $\varnothing$ / \ipa{-w-} / \ipa{-j-} & $\varnothing$ \\
 \ipa{-ŋ} & \ipa{-ŋ-} & \ipa{-ŋ} \\
 \ipa{-n} & \ipa{-l-} & \ipa{-l} \\
-\ipa{-n} & \ipa{-j-} / \ipa{-r-}& \ipa{-r} \\
+\ipa{-n} & \ipa{-j-} / \ipa{-r-} / $\varnothing$ & \ipa{-r} \\
 \ipa{-m} & \ipa{-m-} & \ipa{-m} \\
 $\varnothing$ & \ipa{-s-} & \ipa{-s} \\
 \midrule
@@ -450,7 +516,11 @@ $\varnothing$ & \ipa{-s-} & \ipa{-s} \\
 \end{tabular}
 \end{table}
 
-The correspondences are relatively straightforward; simple stops undergo lenition when the verb root is followed by a vowel-initial suffix, and final dental sonorants merge to \ipa{-n} when followed by a consonant-initial suffix. We notice important gaps in the distribution of complex codas: unlike in Khaling, there are no groups such as \ipa{-rt} and \ipa{-lt}. It will be shown in section \ref{sec:Ct} that these groups have merged with other compelx codas in Bantawa.
+The correspondences are relatively straightforward; simple stops undergo lenition when the verb root is followed by a vowel-initial suffix, and final dental sonorants merge to \ipa{-n} when followed by a consonant-initial suffix. 
+
+Note roots of intransitive verbs with \ipa{n} / \ipa{j} alternation are reconstructed with final *\ipa{-r}, although this coda does not appear in the paradigm, as in \ipa{pon-ma, poj-a} `grow' (root |\ipa{por}|) or \ipa{pin-ma, pi-a} `fly' (root |\ipa{pir}|).
+
+We notice important gaps in the distribution of complex codas: unlike in Khaling, there are no groups such as \ipa{-rt} and \ipa{-lt}. It will be shown in section \ref{sec:Ct} that these groups have merged with other compelx codas in Bantawa.
 
 For complex coda with \ipa{-s} as second element, only nasals are found as first element, an observation that can be historically explained The Cs-stems of Bantawa originate from the merger of transitive Cs stems (build in most cases by addition of the causative \ipa{-s} suffix, \citealt{michailovsky85dental}) and of reflexive C-si stems. 
 
@@ -462,7 +532,7 @@ As for intransitive Cs-stems, as shown in section \ref{sec:refl}, in the reflexi
 
 While some Kiranti languages, in particular Khaling, present very complex vowel systems and bewildering vowel alternations, internal reconstruction allows to reduce this number to 5 (as in Khaling).\footnote{While a contrast between \ipa{ɛ} and \ipa{a} is kept in the representation of Khaling verb roots, it is clear that these two were originally in complementary distribution, which was only broken when \dhatu{jal}{strike} was borrowed from Thulung (\citealt[1110]{jacques12khaling}).} The only exception is Limbu, which present a contrast between long and short vowels, as well as a contrast between mid-low and mid-high vowels (\ipa{e} and \ipa{o} vs \ipa{ɛ} and \ipa{ɔ}).  
 
-Khaling and Wambule have in several verbs \ipa{o} and \ipa{wa} corresponding to \ipa{a}in Bantawa and Limbu instead of \ipa{o}.\footnote{Except before \ipa{-r} and perhaps other coronal finals where Wambule has \ipa{a} and Khaling \ipa{a}, as shown by Wambule \dhatu{kʰart}{parch}	 	
+Khaling and Wambule have in several verbs \ipa{o} and \ipa{wa} corresponding to \ipa{a} in Bantawa and Limbu instead of \ipa{o}.\footnote{Except before \ipa{-r} and perhaps other coronal finals where Wambule has \ipa{a} and Khaling \ipa{a}, as shown by Wambule \dhatu{kʰart}{parch}	 	
 and \dhatu{ʣar}{drip, drizzle}	corresponding to Khaling 	\dhatu{kʰor}{parch, fry} and \dhatu{ʣʰor}{leak}. The same restriction is found in the noun `wound' Khaling \ipa{koɔ̄r}, Wambule \ipa{ɓari} < *\ipa{kwɑr} (with an additional suffix in Wambule, as in the noun `louse' discussed in section \ref{sec:why}.} This correspondence is also found in nouns,\footnote{For instance *\ipa{ʔnɑm} `sun'  Khaling \ipa{noɔ̄m}, Wambule \ipa{ɗwam}, as opposed to *\ipa{lam} `path, trail' , Khaling \ipa{lɛ̄m}, Wambule \ipa{lam}.}and is reconstructed as proto-Kiranti *\ipa{ɑ}.
 
 The \ipa{u} of other languages can correspond to either Limbu \ipa{o} or \ipa{u}, with a comparable number of examples before the codas \ipa{-s} and \ipa{-k}, as illustrated by Table \ref{tab:U}. To account for this, I tentatively postulate a proto-phoneme *\ipa{ʊ}, which yields \ipa{o} in Limbu and \ipa{u} elsewhere.\footnote{A contrast between \ipa{i} and \ipa{u} on the one hand, and \ipa{ɪ} and \ipa{ʊ} on the other hand, is found in Hayu, see \citet{michailovsky88}; it remains to be seen whether the contrast reconstructed here matches that of Hayu. } No clear evidence exists for a comparable *\ipa{ɪ} among front vowels.
@@ -693,7 +763,7 @@ One correspondence that deserves discussion is that between proto-Kiranti \ipa{-
 
 Nevertheless, there is no counterexample where Khaling \ipa{-l} would correspond to a single final\footnote{As is shown in section \ref{sec:Ct}, Khaling \ipa{-l} also corresponds to \ipa{-nt} in Limbu, in verbs where a \ipa{-t} suffix has been added.} other than \ipa{-ˀr} in Limbu. This shows that although Limbu has neutralized the contrast between final *\ipa{-l} and  *\ipa{-n} in nouns, this contrast is faithfully preserved in the verbal system.
 
-Final $\varnothing$ to \ipa{-r} in Limbu (good, turn) XXXX
+%Final $\varnothing$ to \ipa{-r} in Limbu (good, turn) XXXX
 
 The correspondences of Table \ref{tab:codas} are robust; most exceptions involve correspondences between simple codas and complex codas, and are treated in section \ref{sec:Ct}. 
 
@@ -721,7 +791,7 @@ PK & Wambule & Khaling & Bantawa & Limbu \\
 \end{tabular}}
 \end{table}
  
-I reconstruct final clusters only in examples such as  those of Table \ref{tab:Ct.coda.ex}, where all languages are in agreement. For many examples, however, we find a non-suffixed verb in one language corresponding to a verb in \ipa{-t} or \ipa{-s} in another language, with sometimes nasalization of the final obstruents (on which see sections \ref{sec:alternations} and {sec:refl} above). Table \ref{tab:Ct.coda.irr} presents examples of such correspondences. As shown by these data, we find sometimes a nasal codas corresponding to stop codas in complex clusters in other languages . XXXX denasalization, reconstruct here 
+I reconstruct final clusters only in examples such as  those of Table \ref{tab:Ct.coda.ex}, where all languages are in agreement. For many examples, however, we find a non-suffixed verb in one language corresponding to a verb in \ipa{-t} or \ipa{-s} in another language, with sometimes nasalization of the final obstruents (on which see sections \ref{sec:alternations} and {sec:refl} above). Table \ref{tab:Ct.coda.irr} presents examples of such correspondences. As shown by these data, we find sometimes a nasal codas corresponding to stop codas in complex clusters in Bantawa and Limbu. Since there is clear evidence that some verb undergo coda denasalization in applicative forms (see \ref{sec:appl}), a nasal coda is reconstructed for proto-Kiranti in these cases.
 
 \begin{table}[H]
 \caption{Ct codas and simple final codas} \centering \label{tab:Ct.coda.irr}
@@ -829,7 +899,7 @@ Third, research on the etymology of nouns in each individual language must be un
 Fourth, the patterns of analogical levelling attested in Kiranti verb roots may be relevant to research on the general principles of analogical levelling (\citealt{hill07ausgleich, hill14conditioned,jacques16ebde}).
 
 
-\section{Appendix}
+\section{Appendix} \label{sec:appendix}
 The attached .ods file provides 255 reconstructed proto-Kiranti verb roots. In reconstructions, [a|b|c] indicates that either \textit{a}, \textit{b} or \textit{c} are possible reconstructions. The chevron > indicates a derivation process, either anticausative (voicing of the initial), applicative (\ipa{-t} suffix), causative (\ipa{-s} suffix) or reflexive (\ipa{-si} suffix). The double chevron {>}{>} indicates an analogical change of inflectional class.
 
 The list does not include verbs only attested in one of the languages that have cognates outside of Kiranti (and thus should be reconstructed to Proto-Kiranti too). These verbs are given here:
