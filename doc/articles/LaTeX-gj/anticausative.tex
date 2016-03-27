@@ -1,0 +1,99 @@
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\dhat}[1]{|\ipa{#1}|}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document}
+
+\title{Anticausative and causative derivations in Trans-Himalayan}
+\author{Guillaume Jacques}
+\maketitle
+\sloppy
+
+\section{Introduction}
+
+
+\section{Reconstructing prefixes and suffixes in Trans-Himalayan}
+
+\citet{jacques12agreement}
+\section{The causative vs anticausative controversy}
+
+\subsection{Directionality of derivation}
+
+\citet{jacques15spontaneous}
+\citet{jacques15causative}
+\citet{hill14voicing}
+
+\subsection{Neutralization of aspiration}
+\citet{jacques15causative}
+\citet{jacques15derivational.khaling}
+\subsection{Attestations of anticausative and \#s- causative}
+Gyalrong, Jingpo, Tibetan, 
+\citet{dai90yufa}
+
+\citet{jacques15causative}
+
+\subsection{Causative \#s- and denominal \#s-}
+
+\subsection{The case of Old Chinese}
+\citet{sagart03prenasalized}
+\citet{mei12caus}
+\citet{sagart12sprefix}
+
+\section{Other causative affixes}
+\subsection{\#p-}
+Karbi, Gyalrong, Tangut, Bodo-Garo
+
+\citet{jacques15causative}
+\citet{konnerth15cisloc}
+\citet{delancey15adjectival}
+\citet{jackson14morpho}
+\citet{jackson06paisheng}
+
+\subsection{\#-s}
+Kiranti, Old Chinese
+\citet{michailovsky85dental}
+\citet{jacques15derivational.khaling}
+\section{Conclusion}
+ 
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
+
