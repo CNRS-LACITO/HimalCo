@@ -5,6 +5,8 @@
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -15,12 +17,13 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 \usepackage{amssymb}
+ 
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
-\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
@@ -34,7 +37,7 @@
 \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
 \newcommand{\dhat}[1]{|\ipa{#1}|}
 \newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
-
+ 
 
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
@@ -194,7 +197,7 @@ As argued in \citealt{jacques15derivational.khaling} this derivation originates 
 
 It is possible to combine (intransitive) anticausative forms with the applicative \ipa{-t}, resulting in a double derivation whose outcome is transitive like the base verb. There is one example of such double derivation in Japhug, \dhatu{kɛnt}{make a hole} $\rightarrow$  \dhatu{gʰɛn}{get a hole} $\rightarrow$  \dhatu{gʰɛnt}{make a hole}. No clear synchronic semantic difference could be established between \dhatu{kɛnt}{make a hole} and \dhatu{gʰɛnt}{make a hole}. This type of derivation is common in Kiranti, and has obscured some of the correspondences between onsets across different languages (see section \ref{sec:fourth}).
 
-\subsection{Other}
+\subsection{An isolated derivation} \label{sec:isolated}
 Khaling has another isolated derivation between \dhatu{pil}{squeeze} and  \dhatu{pʰil}{squeeze out}, both transitive. The first verb must be the base form, as cognates are found elsewhere in Kiranti (for instance Bantawa \dhatu{bil}{squeeze (for juice)}) while the second has no known cognates. 
 
 In the absence of other example, the origin and even the exact function of this alternation remains mysterious. It could be worthwhile however to look for comparable alternations in other Kiranti languages.
@@ -208,6 +211,56 @@ Unlike Gyalrongic languages (\citealt{jacques14antipassive}), there are surprisi
  \item Limbu \dhatu{sokt}{to aim, to point}, Khaling \dhatu{tsukt}{point (with a finger)}, Limbu \ipa{cok} `toe, finger' (which however comes from a proto-form *\ipa{dzʊk}, whereas the verb has an unvoiced initial).
  \item The Khaling \dhatu{kakt}{hoe} corresponds to the Japhug noun \ipa{qaʁ} `hoe' outside of Kiranti (perhaps also to Limbu \ipa{kaːŋ} `hoe', though the correspondence is difficult to explain): it is thus a fossilized \ipa{-t} denominal verb.
 \end{itemize}  
+
+\subsection{Summary of verb derivations in Kiranti}
+The main derivations found in Kiranti languages discussed in the section can be summarized as follows:
+
+\begin{itemize}
+\item  Bi (base form, intransitive)
+\item  Bt (base form, transitive)
+\item  A (applicative form, t-transitive)
+\item  C (causative form, s-transitive)
+\item M (reflexive/middle form in -si/-s)
+\item V (anticausative form with voicing of the onset)
+\end{itemize}
+
+Some derivations can be combined: A (and perhaps C) derivations can be applied to V forms (V+A), M derivations can be applied to A forms (A+M. The case of Khaling \dhatu{gʰɛnt}{make a hole} discussed in section \ref{sec:anticaus} is a clear examples of V+A, and it is likely that other examples of the same type exist in other Kiranti languages (see section \ref{sec:fourth}). 
+
+Figure \ref{fig:kiranti.derivations} represents the tree of possible derivations; potential derivation pathways for which no clear example has been discovered yet are indicated by a dashed arrow.
+   \begin{figure}[H]
+   \caption{Verb derivations in Kiranti languages} \label{fig:kiranti.derivations}  
+  \begin{tikzpicture}
+  \node (Bi) at (-2,1) {Bi *\ipa{kʰraːp} (vi)};
+  \node (Bt) at (4,1) {Bt *\ipa{kik} (vt)};
+  \node (V) at (1,-1) {V *\ipa{gik} (vi)};
+ \node (Ai) at (-1.5,-1) {A *\ipa{kʰraːp-t} (vt)};
+   \node (AiM) at (-4,-4) {A+M *\ipa{kʰraːp(t)-si} (vi)};
+  \node (Ci) at (-4.5,-1) {C *\ipa{kʰraːp-s} (vt)};
+ \node (At) at (3,-2) {A *\ipa{kik-t} (vt)};
+  \node (Ct) at (6,-2) {C *\ipa{kik-s} (vt)};
+  \node (M) at (6,-1) {M *\ipa{kik-si} (vi)};
+  \node (AtM) at (6,-4) {A+M *\ipa{kik(t)-si} (vi)};
+  \node (VA) at (2,-4) {V+A *\ipa{gik-t} (vt)};
+  \node (VC) at (0,-5) {V+C *\ipa{gik-s} (vt)};
+  \node (VAM) at (4,-6) {V+A+M *\ipa{gik(t)-si} (vi)};
+    
+\tikzstyle{peutetre}=[->,dotted,very thick,>=latex]
+\tikzstyle{sur}=[->,very thick,>=latex]
+\draw[sur] (Bt)--(V);
+\draw[sur] (Bi)--(Ai);
+\draw[sur] (Bi)--(Ci);
+\draw[sur] (Bt)--(At);
+\draw[sur] (Bt)--(M);
+\draw[sur] (Bt) to[bend right] (Ct);
+\draw[sur] (Ai) to[bend left] (AiM);
+\draw[sur] (At) to[bend right] (AtM);
+\draw[sur] (V)--(VA);
+\draw[peutetre] (VA)--(VAM);
+\draw[peutetre] (At)--(V);
+\draw[peutetre] (V) to[bend right] (VC);
+
+\end{tikzpicture}
+\end{figure}
 
 \section{Semantics}
 Cognate verbs between Kiranti languages not only have slightly different morphological structure, they may also present slightly divergent semantics. In many cases, the divergence is due to the way individual fieldworkers gloss verb for which no simple equivalent exist in English.
