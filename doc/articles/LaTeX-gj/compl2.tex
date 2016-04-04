@@ -1,0 +1,96 @@
+%aʑo me, nɤʑo me.
+
+\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+\usepackage{polyglossia} 
+%\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+
+\title{Complementation in Japhug Rgyalrong\footnote{
+ 
+} }
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+ 
+ \citet[9]{dixon06complementation}
+ \citet{sun12complementation}
+ \citet{jacques08}
+
+  \section{Case marking mismatch} 
+ 
+  \section{Multiple complements}
+ \ipa{ɯ-zda} 	\ipa{nɯ} 	\ipa{ra} 	\ipa{pɣɤtɕɯ} 	\ipa{kɯ-ɣɤwu,} 	\ipa{khɯna} 	\ipa{kɯ-ɤndzɯt,} 	\ipa{lɯlu} 	\ipa{kɯ-ɣɤwu} 	\ipa{qachɣa} 	\ipa{kɯ-mbri} 	\ipa{kɯ-fse,} 	\ipa{nɯra} 	\ipa{tu-nɯɕpɯz} 	\ipa{ɲɯ-spe.} 	
+
+\section{Infinitive} 
+
+\citet{jacques16relatives}
+
+The S of the verb \ipa{rga}  `like' can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival or finite  complement verbs (the complement verb in \ref{ex:kAnWrAGo.rganW} is intransitive, while it is transitive in \ref{ex:kAnArtoXpjAt.pWrgaa} and \ref{ex:YWrganW}). 
+
+
+ \begin{exe}
+   \ex   \label{ex:kAnWrAGo.rganW} 
+\gll
+\ipa{tsuku}  	\ipa{tɕe}  	\ipa{kɤ-nɯrɤɣo}  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{rga-nɯ}  	\ipa{tɕe}  \\
+some \textsc{lnk} \textsc{inf}-sing really \textsc{emph} like:\textsc{fact-pl}  \textsc{lnk} \\
+  \glt Some people like to sing. (26 kWrNukWGndZWr, 104)
+     \end{exe}  
+ 
+   \begin{exe}
+   \ex   \label{ex:kAnArtoXpjAt.pWrgaa} 
+\gll
+  	\ipa{aʑo}  	\ipa{qajɯ}  	\ipa{nɯ} \ipa{ra}  	\ipa{kɤ-nɤrtoχpjɤt}  	\ipa{pɯ-rga-a}  	\ipa{tɕe}  	\\
+  	\textsc{1sg} bugs \textsc{dem} \textsc{pl} \textsc{inf}-observe \textsc{pst.ipfv}-like-\textsc{1sg} \textsc{lnk}  \\
+ \glt I liked to observe bugs. (26 quspunmbro, 15)
+     \end{exe}  
+ 
+  \begin{exe}
+   \ex   \label{ex:YWrganW} 
+\gll
+\ipa{maka}  	\ipa{tu-kɤ-nɤjoʁjoʁ,}  	\ipa{tu-kɤ-fstɤt}  	\ipa{nɯ}  	\ipa{ɲɯ-rga-nɯ}  \\
+at.all \textsc{ipfv-inf}-flatter \textsc{ipfv-inf}-praise \textsc{dem} \textsc{ipfv}-like-\textsc{pl} \\
+\glt They like to be flattered or praised. (140427 yuanhou, 53)
+    \end{exe}  
+    
+\section{Complements of stative verbs}
+
+enough to
+\ipa{koŋla} 	\ipa{pjɯ-nɤrte} 	\ipa{ʑo} 	\ipa{kɯ-rtaʁ} 	\ipa{ʑo} 	\ipa{kɯ-wxti} 	\ipa{ɲɯ-βze} 	\ipa{ŋgrɤl} 
+
+ 
+ 
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
