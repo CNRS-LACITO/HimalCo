@@ -20,12 +20,12 @@
  
 
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
- 
+\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+ \newcommand{\jpg}[2]{\ipa{#1} `#2'} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-
+\newcommand{\tld}{\textasciitilde{}}
 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
@@ -40,18 +40,21 @@
 \maketitle
 \linenumbers
  
+ 
+\section{Introduction}
  \citet[9]{dixon06complementation}
  \citet{sun12complementation}
  \citet{jacques08}
 
- 
- 
+\section{Background information}
+
 \section{Complement types}
 \subsection{Infinitive} 
 
-\citet{jacques16relatives}
+The coreference restrictions of the arguments in the complement and in the matrix clause differ from verb to verb. Some infinitival complements present an ergative pivot: the S or A of the matrix clause is necessarily coreferent with the A or S of the complement clause.
+XXX
 
-The S of the verb \ipa{rga}  `like' can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival or finite  complement verbs (the complement verb in \ref{ex:kAnWrAGo.rganW} is intransitive, while it is transitive in \ref{ex:kAnArtoXpjAt.pWrgaa} and \ref{ex:YWrganW}). 
+Other verbs allow coreference with the P of the complement clause. This is for instance the case of the semi-transitive verb \jpg{rga}{like}, whose S can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival complement clause (\citealt{jacques16relatives}).
 
 
  \begin{exe}
@@ -80,7 +83,56 @@ at.all \textsc{ipfv-inf}-flatter \textsc{ipfv-inf}-praise \textsc{dem} \textsc{i
 
  \subsection{Participles} 
 
- \subsection{Bare infinitive} 
+ \subsection{Bare infinitive and \ipa{tɯ-} infinitives} 
+A handful of verbs, namely \jpg{ʑa}{begin}, \jpg{sɤʑa}{begin} and \jpg{rɲo}{experience, have already} are compatible with bare infinitive complements, alongside \ipa{kɤ-} infinitives and finite complement clauses. 
+
+Bare infinitives occur only with transitive verbs, and are formed by combining the stem 1 of the verb with a possessive prefix coreferent with the P of the complement clause, as in examples (\ref{ex:Wmto}).
+
+\begin{exe}
+\ex \label{ex:Wmto}
+\gll \ipa{nɤʑo} 	\ipa{kɯ-fse} 	\ipa{a-ŋkʰor} 	\ipa{nɯ} 	\ipa{ɯ-mto} 	\ipa{mɯ-pɯ-rɲo-t-a} \\
+you \textsc{nmlz:stative}-be.like \textsc{1sg.poss}-subject \textsc{top} \textsc{3sg}-\textsc{bare.inf:}see \textsc{neg-pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt  `I never saw anyone like you among my subjects.' (Smanmi metog koshana1.157)
+\end{exe} 
+
+Bare infinitives are in complementary distribution with \ipa{tɯ-} infinitives,  which occur when the verb of the complement is morphologically intransitive, and thus lacks a P. They are only compatible with polarity prefixes (as in example \ref{ex:mAtWrga} below), and cannot take TAM or possessive prefixes.
+
+XXX
+
+
+Semi-transitive verbs are treated like intransitive verbs: they cannot form a bare infinitive, and use \ipa{tɯ-} infinitives instead (example \ref{ex:mAtWrga}), although their semi-object does present some object-like syntactic properties (see \citealt{jacques16relatives}).  
+
+\begin{exe}
+\ex  \label{ex:mAtWrga}
+\gll \ipa{qaɟy} 	\ipa{ɯ-me} 	\ipa{nɯnɯ,} 	\ipa{tɕendɤre} 	\ipa{kʰro} 	\ipa{mɤ-tɯ-rga} 	\ipa{to-ʑa} \\
+fish \textsc{3sg.poss}-daughter \textsc{dem} \textsc{lnk} a.lot \textsc{neg-inf}-like \textsc{ifr}-start \\
+\glt `He started not liking the mermaid that much.' (hist150819 haidenver, 154)
+\end{exe}
+ 
+The only exception to this distribution are some transitive verbs used in complex predicates referring to weather phenomena, in particular \ipa{lɤt} `throw' and \ipa{βzu} `make, do', as in (\ref{ex:tWmlAt}). Note that in this construction, although the verbs remain morphologically transitive, they cannot take an overt A marked with the ergative.
+ 
+\begin{exe}
+\ex  \label{ex:tWmlAt}
+\gll
+\ipa{tɯ-mɯ} 	\ipa{kɯ-wxtɯ\tld{}wxti} 	\ipa{ʑo} 	\ipa{tɯ-lɤt} 	\ipa{pjɤ-ʑa} \\
+\textsc{indef.poss}-sky \textsc{nmlz:S/A-emph}\tld{}be.big \textsc{emph} \textsc{inf}-throw \textsc{ifr}-start \\
+\glt `A big rain started.' (hist150819 haidenver, 104)
+\end{exe}
+
+
+%\ipa{hanɯni} 	\ipa{ɯ-rŋa} 	\ipa{ra} 	\ipa{tɯ-ɣɯrni} 	\ipa{tɯ-βzu} 	\ipa{ɲɤ-ʑa} 
+%hist150820 meili de meiguihua
+
+Etymology: action nominalization or indefinite possessor?
+
+Bare infinitive as an action nominal (\citealt{jacques14antipassive}):
+
+\begin{exe}
+\ex \label{ex:bare.inf.noun}
+\gll \ipa{ndʑi-mi}   	\ipa{ɯ-tsʰoʁ}   	\ipa{ɯ-tsʰɯɣa}   	\ipa{nɯra}   	\ipa{wuma}   	\ipa{ʑo}   	\ipa{naχtɕɯɣ-ndʑi.}   \\
+\textsc{3du.poss}-foot \textsc{3sg}-\textsc{bare.inf:}attach.to \textsc{3sg.poss}-form \textsc{dem:pl} very \textsc{emph}  \textsc{npst}:similar-\textsc{du}  \\
+\glt `The way their feet (of fleas and crickets) touch the ground is very similar.' (26-mYaRmtsaR, 17)
+\end{exe}
  
  \subsection{Complementation strategies}  
  
@@ -89,17 +141,22 @@ at.all \textsc{ipfv-inf}-flatter \textsc{ipfv-inf}-praise \textsc{dem} \textsc{i
   \section{Morphosyntactic properties of complement clauses} 
 
   \subsection{Case marking mismatch} 
- 
+  
+  \subsection{Semi-finiteness} 
+like relative clauses, \citealt{jacques16relatives}
+
   \subsection{Multiple complements}
- \ipa{ɯ-zda} 	\ipa{nɯ} 	\ipa{ra} 	\ipa{pɣɤtɕɯ} 	\ipa{kɯ-ɣɤwu,} 	\ipa{khɯna} 	\ipa{kɯ-ɤndzɯt,} 	\ipa{lɯlu} 	\ipa{kɯ-ɣɤwu} 	\ipa{qachɣa} 	\ipa{kɯ-mbri} 	\ipa{kɯ-fse,} 	\ipa{nɯra} 	\ipa{tu-nɯɕpɯz} 	\ipa{ɲɯ-spe.} 	
+ \ipa{ɯ-zda} 	\ipa{nɯ} 	\ipa{ra} 	\ipa{pɣɤtɕɯ} 	\ipa{kɯ-ɣɤwu,} 	\ipa{kʰɯna} 	\ipa{kɯ-ɤndzɯt,} 	\ipa{lɯlu} 	\ipa{kɯ-ɣɤwu} 	\ipa{qachɣa} 	\ipa{kɯ-mbri} 	\ipa{kɯ-fse,} 	\ipa{nɯra} 	\ipa{tu-nɯɕpɯz} 	\ipa{ɲɯ-spe.} 	
  
   \section{Complement-taking verbs} 
+  
+\subsection{Causative verbs}
 \subsection{Complements of stative verbs}
 
 enough to
 \ipa{koŋla} 	\ipa{pjɯ-nɤrte} 	\ipa{ʑo} 	\ipa{kɯ-rtaʁ} 	\ipa{ʑo} 	\ipa{kɯ-wxti} 	\ipa{ɲɯ-βze} 	\ipa{ŋgrɤl} 
 
- 
+ \section{Conclusion}
  
 \bibliographystyle{unified}
 \bibliography{bibliogj}
