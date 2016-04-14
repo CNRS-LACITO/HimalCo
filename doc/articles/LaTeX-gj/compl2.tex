@@ -18,8 +18,9 @@
 \usepackage{lscape}
  
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{\phon#1}} %API tjs en italique
  \newcommand{\jpg}[2]{\ipa{#1} `#2'} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
@@ -48,7 +49,22 @@
 \section{Background information}
 
 \subsection{Transitivity in Japhug} \label{sec:transitivity}
-Semi-transitive verbs
+
+
+\subsubsection{Semi-transitive verbs}
+
+\subsubsection{Unmarked adjuncts}
+
+goal
+
+
+Essive / functive (\citealt{creissels14functive}))
+\begin{exe}
+\ex \label{ex:YWtambi}
+\gll \ipa{a-me} 	\ipa{nɯ} 	\ipa{nɤ-rʑaβ} 	\ipa{ɲɯ-ta-mbi} 	\ipa{ŋu} \\
+\textsc{1sg.poss}-daughter \textsc{dem} \textsc{2sg.poss}-wife \textsc{ipfv}-1$\rightarrow$2-give be:\textsc{fact} \\
+\glt `I will give you my daughter in marriage.'
+\end{exe}
 
 \subsection{Participles vs infinitives} \label{sec:part.inf}
 All Gyalrong languages, including Situ (\citealt{youjing03zhuokeji}), Tshobdun (\citealt{sun12complementation}) and Japhug, have a distinction between infinitives and participles. The distinction is quite subtle, as there are both infinitives and participles in \ipa{kɯ-} and \ipa{kɤ-} (or \ipa{kə-} and \ipa{kɐ-} depending on the transcription system). Since both categories are formally similar and can occur in similar contexts, it is crucial to clearly explain the distinction between the two, especially since Japhug slightly differs from the other Gyalrong languages in this regard.
@@ -76,7 +92,7 @@ The prefix \ipa{kɤ-} on the other hand serves to build the P-participle, and ca
 \subsubsection{Infinitives}
 There are four types of infinitives in Japhug: \ipa{kɯ-}, \ipa{kɤ-}, \ipa{tɯ-} and bare infinitives. The latter two are restricted to very specific constructions (see \ref{sec:bareinf}), and only the former two types are discussed in this section. 
 
-Infinitives in \ipa{kɤ-} are by far the most common form in Japhug. The \ipa{kɯ-} form is restricted to stative verbs (including adjectives, copulas and existential verbs), impersonal auxiliaries and some dynamic intransitive verbs when they do not have a human S, and even with these verbs, \ipa{kɤ-} infinitives are used in several contexts. 
+Infinitives in \ipa{kɤ-} are by far the most common form in Japhug. The \ipa{kɯ-} form is restricted to stative verbs (including adjectives, copulas and existential verbs) and impersonal auxiliaries, but even with these verbs, \ipa{kɤ-} infinitives are used in several contexts. 
 
 Infinitives are used in three types of constructions, a brief overview of which is provided below.
 
@@ -92,7 +108,7 @@ First, infinitives occur as the citation forms of verbs and in metalinguistic di
 \begin{exe}
 \ex \label{ex:kAnARarphAB}
  \gll \ipa{pjɯ-sɯ-ʁndi} 	\ipa{tɕe} 	\ipa{pjɯ-sɯ-sat.} \ipa{tɕe} 	\ipa{nɯ} 	\ipa{koʁmɯz} 	\ipa{nɤ} 	\ipa{cʰɯ-nɯtsɯm} 	\ipa{ɲɯ-ra.} \ipa{tɕe} 	\ipa{nɯnɯ} 	\ipa{kɤ-nɤʁarphɤβ} 	\ipa{tu-kɯ-ti} 	\ipa{ŋu} \\
- \textsc{ipfv-caus}-hit[III]  \textsc{lnk} \textsc{ipfv-caus}-kill \textsc{lnk} \textsc{dem} only.then \textsc{lnk} \textsc{ipfv:downstream}-take.away \textsc{sens}-have.to \textsc{lnk}  \textsc{inf}-strike.with.wings \textsc{ipfv-genr}:A-say be:\textsc{fact}  \\
+ \textsc{ipfv-caus}-hit[III]  \textsc{lnk} \textsc{ipfv-caus}-kill \textsc{lnk} \textsc{dem} only.then \textsc{lnk} \textsc{ipfv:downstream}-take.away \textsc{sens}-have.to \textsc{lnk} \textsc{dem} \textsc{inf}-strike.with.wings \textsc{ipfv-genr}:A-say be:\textsc{fact}  \\
  \glt `It strikes it and kills it (with its wings) and only then takes it away. This is called \ipa{kɤ-nɤʁarphɤβ} `strike with one's wings'.' (hist150819 RarphAB, 11)
 \end{exe}
 
@@ -106,7 +122,8 @@ In the topical position, the infinitive is neutralized to the \ipa{kɤ-} form ev
  \glt `As for being heavy, (the old man) was heavy.'  (140511 xinbada, 138)
 \end{exe}
 
-Second, the infinitive is used as a converb to indicate in which the action of the main clause occurs, or XXX (\citealt{jacques14linking})
+Second, infinitives are used as converbs to indicate the manner which the action of the main clause occurs (example \ref{ex:kANke.jari}), or a background event (\citealt{jacques14linking}). The \ipa{kɯ-} infinitive form occurs with stative verbs (as \jpg{sɤscit}{nice (of an environment)} in example \ref{ex:kWsAscWscit}) but it is also attested with a handful of dynamic verbs in lexicalized form such as \ipa{mɤ-kɯ-mbrɤt} `without stop' in (\ref{ex:mAkWmbrAt}).\footnote{The implied S of the verb \jpg{mbrɤt}{break, stop suddenly} (the anticausative of  \jpg{prɤt}{break}) in this sentence is the work of the subject.  } This latter use is the last trace of the contrast between human \ipa{kɐ-} and non-human \ipa{kə-}   action nominals reported by \citet[476]{sun12complementation}, which otherwise appears to have been lost in the variety of Japhug under study.
+
 \begin{exe}
 \ex \label{ex:kANke.jari}
 \gll
@@ -115,26 +132,63 @@ Second, the infinitive is used as a converb to indicate in which the action of t
 \glt He had to go on foot. (elicited)
 \end{exe}
 
-\ipa{nɯ} 	\ipa{maka} 	\ipa{mɤ-kɯ-mbrɤt} 	\ipa{ʑo} 	\ipa{ɲɯ-rɤma} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe} 
-%hist-26-GZo.txt 67
+\begin{exe}
+\ex \label{ex:kWsAscWscit}
+\gll
+\ipa{ɕɤr} 	\ipa{tɕe} 	\ipa{nɯtɕu} 	\ipa{kɯ-sɤ-scɯ\tld{}scit} 	\ipa{ʑo} 	\ipa{ɕ-ku-nɯ-rŋgɯ} 	\ipa{ŋu} \\
+night \textsc{lnk} \textsc{dem:loc} \textsc{inf:stat-deexp-emph}\tld{}be.happy \textsc{emph} \textsc{transloc-ipfv-auto}-lie.down be:\textsc{fact} \\
+\glt `In the night, he goes in there to sleep cosily.' (26-NalitCaRmbWm, 35)
+\end{exe}
 
-They formally differ from participles in several ways. First, they cannot take possessive prefixes.
+\begin{exe}
+\ex \label{ex:mAkWmbrAt}
+\gll
+ \ipa{nɯ} 	\ipa{maka} 	\ipa{mɤ-kɯ-mbrɤt} 	\ipa{ʑo} 	\ipa{ɲɯ-rɤma} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe} \\
+ \textsc{dem} at.all \textsc{neg-inf-anticaus:}break \textsc{emph} \textsc{ipfv}-work \textsc{sens}-be:\textsc{affirm} \textsc{lnk} \\
+\glt `It works without stop.' (hist-26-GZo.txt 67)
+\end{exe}
 
- 
+Third, infinitives are one way to build complement clauses in Japhug. Complement clauses nearly always have the \ipa{kɤ-} infinitive, even stative verbs, as in (\ref{ex:rYo}), where the verb of the complement clause \jpg{tu}{exist}, whose citation form is \ipa{kɯ-tu} (with a \ipa{kɯ-} infinitive), is used with the \ipa{kɤ-} infinitive.
+
+\begin{exe}
+\ex \label{ex:rYo}
+\gll \ipa{a-rŋɯl} 	\ipa{kɤ-tu} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{1sg.poss}-money \textsc{inf}-exist \textsc{pst:ipfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `I used to have money'. (elicited)
+\end{exe}
+
+Complement clauses with verb prefixed with \ipa{kɯ-} can be analyzed as S/A participles (\ref{sec:SApart}) in nearly all cases.\footnote{In particular, when transitive verbs appear as complement, they take a possessive prefix coreference with the P.}  The only case of complement clauses with \ipa{kɯ-} infinitives occur when  impersonal modal verbs such as \jpg{ra}{have to, need} occurs in a complement clause, as in example (\ref{ex:kAndza.kWra}).
+
+\begin{exe}
+\ex \label{ex:kAndza.kWra}
+\gll 
+\ipa{smɤn} 	\ipa{kɤ-ndza} 	\ipa{kɯ-ra} 	\ipa{pɯ-rɲo-t-a} \\ 
+medecine \textsc{inf}-eat \textsc{inf}-have.to  \textsc{pst:ipfv}-experience-\textsc{pst:tr-1sg} \\
+\glt  `I used to have to take medecine.' 
+\end{exe}
+
+\subsubsection{Infinitives vs participles}
+Infinitives formally differ from participles in several ways. First, they cannot take possessive prefixes. XXXX only really ambiguous cases: stative verbs, semi-transitive verbs
+
 \subsection{Complement clauses vs complementation strategies} \label{sec:strategies}
 
-\section{Complement types}
-\subsection{Infinitive} 
+\citet[15]{dixon06complementation} defines \textit{complement clauses} as subordinate clauses which function as one of the the core argument of a main clause. 
 
+He introduces the term `complementation strategy' to refer to constructions corresponding with a meaning expressed by complement clauses in some languages, which either are not core arguments or the verb of the main clause or are not clauses with a complete argument structure \citealt[34-40]{dixon06complementation}). Complement strategies include nominalizations (when the verb sheds its argument structure as it becomes a noun), relative clauses (which are formally modifier of a core argument, not core arguments themselves), serial verb constructions and clause linking.
+
+In Japhug, due to the existence of semi-objects, which are demonstrably core arguments despite nor being indexed on the verb (see \citet{jacques16relatives}), and due to the presence of unmarked adjuncts with various syntactic properties (see \ref{sec:transitivity}), the status of a particular clause as a core argument or non-core-argument is not always trivial to determine. In this paper, I keep Dixon's sensible distinction between complement clauses and complementation strategies, but given the gradient nature of the opposition between core and oblique arguments in Japhug, I use the term `complement clauses' to refer to all clauses which are part of the verb's argument structure. In particular, in consider the purposive clauses of motion verb to be complement clauses, for reasons that are exposed in more detail in section (\ref{sec:SAparticiple.coref}).
  
- 
+
+\section{Complement types}
+
+
+\subsection{Infinitive} 
 
 \subsubsection{Coreference between matrix and complement clause}
 The coreference restrictions of the arguments in the complement and in the matrix clause differ from verb to verb. Some infinitival complements present an ergative pivot: the S or A of the matrix clause is necessarily coreferent with the A or S of the complement clause (this is the case with the verb \ipa{spa} `be able', see section \ref{sec:spa}).
 
 
 Other verbs also allow coreference with the P of the complement clause. This is for instance the case of the semi-transitive verb \jpg{rga}{like}, whose S can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival complement clause (\citealt{jacques16relatives}).
-
 
  \begin{exe}
    \ex   \label{ex:kAnWrAGo.rganW} 
@@ -185,7 +239,7 @@ This verb can nevertheless be  used as complement of verbs such as \jpg{rɲo}{ex
 \glt `When I was very small, I had dysentery, (my belly) ached.'  (24-pGArtsAG, 121)
 \end{exe}
 
- \subsection{S/A participles} 
+ \subsection{S/A participles} \label{sec:SApart}
 This type of complements\footnote{Following Dixon, \citet{sun12complementation} treats complements of this type with motion verbs  in Tshobdun as a relativization strategy rather than as proper complements, since their are not core arguments of the verb. However, for the reasons explained in section (\ref{sec:strategies}), I do not consider them to be complementation strategies, as they are syntactically non-core argument of the verb.} are rarer than infinitival complements, and only attested with some motion verbs (\jpg{ɕe}{go}, \jpg{ɣi}{come}), verbs of pretence (\jpg{nɯɕpɯz}{pretend}, \jpg{ʑɣɤpa}{pretend}) and one aspectual verb  (\jpg{rɤŋgat}{be about to}).
 
 XXXX
@@ -251,10 +305,18 @@ Bare infinitive as an action nominal (\citealt{jacques14antipassive}):
 \glt `The way their feet (of fleas and crickets) touch the ground is very similar.' (26-mYaRmtsaR, 17)
 \end{exe}
  
+ 
+ 
+ \subsection{Finite complements} 
+
+ 
+
  \subsection{Complementation strategies}  
  
- \subsection{Finite} 
-
+  \subsubsection{Relatives}  
+  \subsubsection{Degree nominal}  
+  
+ \ipa{ɯ-tɯ-wxti} \ipa{ɲɯ-tɕʰom} %ɯ-tɯ-ɤla nɯ-rtaʁ 
   \section{Morphosyntactic properties of complement clauses} 
 
  \subsection{Alignment} 
@@ -350,7 +412,9 @@ Adjectives in Japhug can be formally defined as the subclass of stative verbs al
 \glt `We are very good at weaving.' (140521, huangdi de xinzhuang, 20)
 \end{exe}
 
-Another adjective that allows finite or infinitival complement clauses is \jpg{rtaʁ}{be enough}, as in example (\ref{ex:pjWnArte}).
+Adjectives of degree, like \jpg{rtaʁ}{be enough} and \jpg{tɕʰom}{be too much}, generally use the degree nominal complementation strategy rather than a complement clause
+
+as in example (\ref{ex:pjWnArte}).
 
 \begin{exe}
 \ex \label{ex:pjWnArte}
@@ -359,6 +423,9 @@ completely \textsc{ipfv}-wear.as.a.hat \textsc{emph} \textsc{nmlz}:S/A-enough \t
 \glt `(Leaves of the burdock) can grow big enough to be worn as hats.' (13-tCamu, 38)
 \end{exe}
  
+ 
+\ipa{tɤŋe} 	\ipa{kɯ-fse} 	\ipa{kɯ-fsoʁ} 	\ipa{kɯ-tɕhom} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ju-kɯ-ru} 	\ipa{rcanɯ} 
+
  
 As elsewhere, infinitival complements must be distinguished from objects with a lexicalized participle. For instance, the adjective \jpg{pʰɤn}{be efficient} commonly takes a semi-object designating the disease, as in (\ref{ex:XtCoN}).
 
@@ -386,7 +453,7 @@ On the other hand, \jpg{pʰɤn}{be efficient} does take purposive participial co
 \ex \label{ex:kWGAmna}
 \gll \ipa{smɤn} 	\ipa{tu-βzu-nɯ} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{ʁo} 	\ipa{kɯ-ɣɤmna} 	\ipa{ɲɯ-pʰɤn} \\
 medicine \textsc{ipfv}-make-\textsc{pl} \textsc{lnk} \textsc{lnk} \textsc{adversative}  \textsc{nmlz:S/A}-\textsc{abil}-heal \textsc{sens}-be.efficient \\
-\glt `When they use medicine, on the other hand, it can make (this disease) heal faster.' (27-kharwut, 103)
+\glt `When they use medicine, on the other hand, it is efficient to (make this disease) heal faster.' (27-kharwut, 103)
 \end{exe}
  
 Although (\ref{ex:tWmtshi}) and (\ref{ex:kWGAmna}) have similar surface structures, the function of the \ipa{kɯ-} participle is however different in these two clauses.
