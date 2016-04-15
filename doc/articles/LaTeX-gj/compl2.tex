@@ -23,7 +23,7 @@
 \newcommand{\ipa}[1]{\textbf{\phon#1}} %API tjs en italique
  \newcommand{\jpg}[2]{\ipa{#1} `#2'} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\tld}{\textasciitilde{}}
 
@@ -157,7 +157,7 @@ Third, infinitives are one way to build complement clauses in Japhug. Complement
 \glt `I used to have money'. (elicited)
 \end{exe}
 
-Complement clauses with verb prefixed with \ipa{kɯ-} can be analyzed as S/A participles (\ref{sec:SApart}) in nearly all cases.\footnote{In particular, when transitive verbs appear as complement, they take a possessive prefix coreference with the P.}  The only case of complement clauses with \ipa{kɯ-} infinitives occur when  impersonal modal verbs such as \jpg{ra}{have to, need} occurs in a complement clause, as in example (\ref{ex:kAndza.kWra}).
+Complement clauses with verb prefixed with \ipa{kɯ-} can be analyzed as S/A participles (\ref{sec:SApart}) in nearly all cases.\footnote{In particular, when transitive verbs appear as complement, they take a possessive prefix coreference with the P.}  Complement clauses with \ipa{kɯ-} infinitives are found when  impersonal modal verbs such as \jpg{ra}{have to, need} occurs in a complement clause, as in example (\ref{ex:kAndza.kWra}), or with complement clauses of stative verbs (see example \ref{ex:kWfsoR.kWtChom} in section \ref{sec:adj}).
 
 \begin{exe}
 \ex \label{ex:kAndza.kWra}
@@ -166,9 +166,6 @@ Complement clauses with verb prefixed with \ipa{kɯ-} can be analyzed as S/A par
 medecine \textsc{inf}-eat \textsc{inf}-have.to  \textsc{pst:ipfv}-experience-\textsc{pst:tr-1sg} \\
 \glt  `I used to have to take medecine.' 
 \end{exe}
-
-\subsubsection{Infinitives vs participles}
-Infinitives formally differ from participles in several ways. First, they cannot take possessive prefixes. XXXX only really ambiguous cases: stative verbs, semi-transitive verbs
 
 \subsection{Complement clauses vs complementation strategies} \label{sec:strategies}
 
@@ -394,8 +391,10 @@ motion verbs and associated motion   \citet{jacques13harmonization}
 
  %mɯ-tu-kɤ-nɤtɯti kɯ-ra tɤ́-wɣ-sɯ-βzu-a-nɯ ndʐa ɕti ma
 
-\subsection{Complements of adjectives}
-Adjectives in Japhug can be formally defined as the subclass of stative verbs allowing the tropative derivation (\citealt{jacques13tropative}).\footnote{This definition excludes some noun-like property words.} A few adjectives are semi-transitive (see section \ref{sec:transitivity}), like \jpg{mkʰɤz}{be expert, be knowledgeable} and optionally take either a noun (\ref{ex:CoNBzu.mkhAz}) or an complement clause (\ref{ex:mkhAztCi}) addition to their S.  The complement clause can be either infinitival or finite, with a verb in the imperfective XXXX
+\subsection{Complements of adjectives} \label{sec:adj}
+Adjectives in Japhug can be formally defined as the subclass of stative verbs allowing the tropative derivation (\citealt{jacques13tropative}).\footnote{This definition excludes some noun-like property words.} We can distinguish three classes of adjectives depending on the complements they can take.
+
+First, a few adjectives are semi-transitive (see section \ref{sec:transitivity}), like \jpg{mkʰɤz}{be expert, be knowledgeable} and optionally take either a noun (\ref{ex:CoNBzu.mkhAz}) or an complement clause (\ref{ex:mkhAztCi}) addition to their S. The complement clause can be either infinitival or finite, with a verb in the imperfective XXXX
 
 \begin{exe}
 \ex \label{ex:CoNBzu.mkhAz}
@@ -412,9 +411,18 @@ Adjectives in Japhug can be formally defined as the subclass of stative verbs al
 \glt `We are very good at weaving.' (140521, huangdi de xinzhuang, 20)
 \end{exe}
 
-Adjectives of degree, like \jpg{rtaʁ}{be enough} and \jpg{tɕʰom}{be too much}, generally use the degree nominal complementation strategy rather than a complement clause
+Adjectives such as \jpg{ɴqa}{be difficult}, \jpg{mbat}{be easy}, which unlike \jpg{mkʰɤz}{be expert} do not have a semi-object, can also take infinitival or finite complements (as in \ref{ex:YWmbat}).
 
-as in example (\ref{ex:pjWnArte}).
+\begin{exe}
+\ex \label{ex:YWmbat}
+\gll
+<gang> 	\ipa{stʰɯci} 	\ipa{mɯ́j-rko} 	\ipa{qʰe,} 	\ipa{ɲɯ-mpɯ} 	\ipa{qʰe} 	[\ipa{tu-ŋgɤɣ,} 	\ipa{ɲɯ-ɤjʁu} 	\ipa{nɯra} 	\ipa{ɲɯ-mbat} \\
+steel as.much \textsc{neg:sens}-be.hard \textsc{lnk} \textsc{sens}-be.soft \textsc{lnk} \textsc{ipfv-anticaus}:bend \textsc{ipfv}-be.curved  \textsc{dem:pl}] \textsc{sens}-be.easy \\
+\glt `(Iron) is not as hard as steel, it is soft and bends easily.' (30-Com, 42)
+\end{exe}
+
+
+Second, adjectives of degree, like \jpg{rtaʁ}{be enough} or \jpg{tɕʰom}{be too much} are compatible with three distinct constructions: finite complement clauses (with a verb in the imperfective, as in example \ref{ex:pjWnArte}), infinitival complement clauses (as in \ref{ex:kWfsoR.kWtChom}) or, most commonly, the degree nominal complementation strategy (\ref{ex:kotChom}).
 
 \begin{exe}
 \ex \label{ex:pjWnArte}
@@ -423,31 +431,22 @@ completely \textsc{ipfv}-wear.as.a.hat \textsc{emph} \textsc{nmlz}:S/A-enough \t
 \glt `(Leaves of the burdock) can grow big enough to be worn as hats.' (13-tCamu, 38)
 \end{exe}
  
- 
-\ipa{tɤŋe} 	\ipa{kɯ-fse} 	\ipa{kɯ-fsoʁ} 	\ipa{kɯ-tɕhom} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ju-kɯ-ru} 	\ipa{rcanɯ} 
+\begin{exe}
+\ex \label{ex:kWfsoR.kWtChom}
+\gll [\ipa{tɤŋe} 	\ipa{kɯ-fse} 	\ipa{kɯ-fsoʁ}] 	\ipa{kɯ-tɕhom} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ju-kɯ-ru} 	\ipa{rcanɯ} \\
+sun \textsc{inf:stat}-be.like \textsc{inf:stat}-be.bright \textsc{inf:stat}-be.too.much \textsc{inf:stat}-be.like \textsc{dem:pl} \textsc{ipfv-genr}:S/P-look \textsc{unexpected} \\
+\glt `(When one gets this eye disease), one looks (with the eyes half-closed) as (ones does when one's eyes are dazzled) when the sun is too bright.' (27-tApGi, 7)
+\end{exe}
 
- 
-As elsewhere, infinitival complements must be distinguished from objects with a lexicalized participle. For instance, the adjective \jpg{pʰɤn}{be efficient} commonly takes a semi-object designating the disease, as in (\ref{ex:XtCoN}).
-
-  \begin{exe}
-\ex \label{ex:XtCoN}
+\begin{exe}
+\ex \label{ex:kotChom}
 \gll
- \ipa{χtɕoŋ} 	\ipa{nɯ} 	\ipa{ɲɯ-pʰɤn} 	\ipa{ɲɯ-ti-nɯ} 	\ipa{ri}  \\
- rheumatism \textsc{dem} \textsc{sens}-be.efficient \textsc{sens}-say-\textsc{pl} but \\
- \glt `People say it is good against rheumatism, but...' (20-sWrna, 146)
-\end{exe}
- 
-Example (\ref{ex:tWmtshi}) is not an example of complement clause, as the S-participle of \jpg{mŋɤm}{hurt} is lexicalized in the sense of `disease'.
-
-  \begin{exe}
-\ex \label{ex:tWmtshi}
-\gll 
-[\ipa{tɯ-mtsʰi} 	\ipa{kɯ-mŋɤm}] 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pʰɤn} 	\ipa{tu-ti-nɯ} 	\ipa{ŋgrɤl}  \\
- \textsc{indef.poss-liver}  \textsc{nmlz}:S/A-hurt really \textsc{emph} be.efficient:\textsc{fact} \textsc{ipfv}-say-\textsc{pl} be.usually.the.case:\textsc{fact} \\
- \glt (05-qaZo 38)
+\ipa{ma} 	\ipa{ɯ-tɯ-smi} 	\ipa{ko-tɕʰom} 	\ipa{qʰe} \\
+because \textsc{3sg.poss-nmlz:degree}-be.cooked \textsc{ifr}-be.too.much \textsc{lnk} \\
+\glt `Because if it cooks too much (it is not as tasty).' (Conversation 14.05.10)
 \end{exe}
 
-On the other hand, \jpg{pʰɤn}{be efficient} does take purposive participial complement clauses, as in example (\ref{ex:kWGAmna}) where \ipa{kɯ-ɣɤmna} is the S-participle of the stative verb \ipa{ɣɤmna} `easy to heal, heal fast' (with the abilitative \ipa{ɣɤ-} prefix) used here as a purposive complement. 
+Third, the semi-transitive adjective \jpg{pʰɤn}{be efficient} can take purposive participial complement clauses, as in example (\ref{ex:kWGAmna}) where \ipa{kɯ-ɣɤmna} is the S-participle of the stative verb \ipa{ɣɤmna} `easy to heal, heal fast' (with the abilitative \ipa{ɣɤ-} prefix). 
  
  \begin{exe}
 \ex \label{ex:kWGAmna}
@@ -455,11 +454,29 @@ On the other hand, \jpg{pʰɤn}{be efficient} does take purposive participial co
 medicine \textsc{ipfv}-make-\textsc{pl} \textsc{lnk} \textsc{lnk} \textsc{adversative}  \textsc{nmlz:S/A}-\textsc{abil}-heal \textsc{sens}-be.efficient \\
 \glt `When they use medicine, on the other hand, it is efficient to (make this disease) heal faster.' (27-kharwut, 103)
 \end{exe}
+
+
+%  \begin{exe}
+%\ex \label{ex:XtCoN}
+%\gll
+% \ipa{χtɕoŋ} 	\ipa{nɯ} 	\ipa{ɲɯ-pʰɤn} 	\ipa{ɲɯ-ti-nɯ} 	\ipa{ri}  \\
+% rheumatism \textsc{dem} \textsc{sens}-be.efficient \textsc{sens}-say-\textsc{pl} but \\
+% \glt `People say it is good against rheumatism, but...' (20-sWrna, 146)
+%\end{exe}
+% 
+%Example (\ref{ex:tWmtshi}) is not an example of complement clause, as the S-participle of \jpg{mŋɤm}{hurt} is lexicalized in the sense of `disease'.
+%
+%  \begin{exe}
+%\ex \label{ex:tWmtshi}
+%\gll 
+%[\ipa{tɯ-mtsʰi} 	\ipa{kɯ-mŋɤm}] 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pʰɤn} 	\ipa{tu-ti-nɯ} 	\ipa{ŋgrɤl}  \\
+% \textsc{indef.poss-liver}  \textsc{nmlz}:S/A-hurt really \textsc{emph} be.efficient:\textsc{fact} \textsc{ipfv}-say-\textsc{pl} be.usually.the.case:\textsc{fact} \\
+% \glt (05-qaZo 38)
+%\end{exe}
  
-Although (\ref{ex:tWmtshi}) and (\ref{ex:kWGAmna}) have similar surface structures, the function of the \ipa{kɯ-} participle is however different in these two clauses.
+
  
- 
- Other verbs: XXX \jpg{ɴqa}{be difficult}, easy etc...
+
 \subsection{Complements of nouns and noun-verb collocations}
 \ipa{mɯ-tu-kɤ-mbro} 	\ipa{ftɕaka} 	\ipa{tu-βze-a} 	\ipa{ŋu} 
 
