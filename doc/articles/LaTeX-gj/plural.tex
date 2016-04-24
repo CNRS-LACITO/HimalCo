@@ -1,0 +1,62 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+%\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lineno}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+ 
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{\phon#1}} %API tjs en italique
+ \newcommand{\jpg}[2]{\ipa{#1} `#2'} %API tjs en italique
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tld}{\textasciitilde{}}
+
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document} 
+
+\title{Number marking in Japhug} 
+\author{Guillaume Jacques}
+\maketitle
+\linenumbers
+ 
+\section{Introduction} 
+
+Mithun
+\section{Number marking mismatch} 
+
+While person marking is always strictly indexed, dual and plural marking on both noun phrases and verbs is optional in Japhug.
+
+\section{Generic and plural}
+\citet{sun14generic}, \citet{jacques15generic}
+Siewierka
+
+When plural is used to refer to a generic activity instead of generic, the speaker implies that he does not include himself among those whose perform the activity.
+
+\ipa{ɕɤmɯɣdɯɣ} 	\ipa{ɯ-kɯ-ndo} 	\ipa{ra} 	\ipa{kɯ} 	\ipa{tu-lɤt-nɯ.} 	\ipa{tɕe} 	\ipa{pjɯ-sat-nɯ} 	\ipa{tɕe} 	\ipa{tɕendɤre,} 	\ipa{nɯnɯ} 	\ipa{pa-sat-nɯ} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{ju-nɯɣɯt-nɯ} 	\ipa{tɕe} 	\ipa{ɲɯ-ntɕha-nɯ} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{ɲɯ-nɤʁaʁ-nɯ} 	\ipa{tɕe} 	\ipa{tu-nɯ-ndza-nɯ} 	\ipa{ŋu.} 
+kAGWcAno
+ 
+ \section{Conclusion} 
+ 
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
