@@ -1,0 +1,112 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\mbox{\textbf{#1}}}}
+\newcommand{\phonet}[1]{[{\phon\mbox{\textbf{#1}}}]}
+\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+\newcommand{\rdp}{\textasciitilde{}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
+\newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+\newcommand{\deux}[1]{/#1/}
+\newcommand{\trois}[1]{/#1/}
+
+\newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
+
+
+
+\begin{document} 
+\title{From prenasalization to preaspiration in Algonquian}
+\author{Guillaume Jacques}
+\maketitle
+ 
+ \section{Introduction}
+ 
+
+Contribute to better explaining the diachronic origin of preaspirated stops, which given their rarity (\citealt{silverman03preaspirated})
+
+Panchronic Phonology (\citealt{michaud-jacques12nasalite})
+\citet[154-5]{bloomfield25central}
+ \citet{bloomfield46proto}, merge with corresponding hC clusters in M and C
+ \citet{goddard98arapaho}
+ 
+Table \ref{tab:nC.PA} 
+ 
+ \begin{table}
+\caption{Correspondences of cluster with nasal as first element in Proto-Algonquian and their correspondences in Ojibwe, Cree and Menominee} \label{tab:nC.PA} \centering
+\begin{tabular}{llllll}
+\toprule
+PA & Ojibwe & Cree & Menominee \\
+\midrule
+\ipa{*-mp-} & \ipa{-mb-} & \ipa{-hp-} & \ipa{-hp-} \\
+\ipa{*-nt-} & \ipa{-nd-} & \ipa{-ht-} & \ipa{-ht-} \\
+\ipa{*-nč-} & \ipa{-nj-} & \ipa{-hc-} & \ipa{-hč-} \\
+\ipa{*-nk-} & \ipa{-ng-} & \ipa{-hk-} & \ipa{-hk-} \\
+\ipa{*-ns-} & \ipa{-nz-} & \ipa{-hs-} & \ipa{-hs-} \\
+\ipa{*-nš-} & \ipa{-nzh-} & \ipa{-hs-} & \ipa{-hš-} \\
+\ipa{*-nr-} & \ipa{-n-} & \ipa{-hn-} & \ipa{-hy-} \\
+\ipa{*-nθ-} & \ipa{-n-} & \ipa{-hn-} & \ipa{-ht-} \\
+\bottomrule
+\end{tabular}
+\end{table}
+ Cree and Menominee
+\citealt[60]{hockett81menominee}  `as first element of a cluster *n $\rightarrow$ *h'
+
+`In Menominee and Cree, on the other hand, it seems as though the voicessless of the stop or spirant spread backwards through the nasal; at least, a change from a sequence like \phonet{nt} to \phonet{ht} seems easiest to understand if we think of \phonet{n̥t}.'
+
+ 
+ 
+  \section{Nasal+stop clusters}
+*\ipa{-nk-} $\rightarrow$ \ipa{-kk-} $\rightarrow$ \ipa{-hk-} 
+nC to geminate (\citealt{jouon06})
+geminate to preaspiration: 
+  \citealt[172]{kuemmel07wandel}
+  \citealt{silverman03preaspirated}
+  
+  Khaling (\citealt[44]{jacques16tonogenesis})
+  
+ \section{*-nr-}
+*\ipa{-nr-} $\rightarrow$ *\ipa{-nr̥-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ \ipa{-hr-} 
+
+Welsh (\citealt[145]{kuemmel07wandel} r > rh word-initially and after nasal)
+\citet[471-480]{jackson56early} \citet{schrijver95}
+
+*\ipa{-nr-} $\rightarrow$ *\ipa{-rr-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ \ipa{-hr-} 
+Latin in > ir /\_r
+\citet{blevins16voiceless.sonorants}
+
+\section{Conclusion}
+Independent sound changes in C and M
+While there is little doubt that Plain Algonquian languages present complex and unusual sound changes (\citealt{goddard74arapaho,goddard88cheyenne.y,proulx89bf}),  other Algonquian languages are also of great interest to Panchronic phonology. 
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+\end{document}
