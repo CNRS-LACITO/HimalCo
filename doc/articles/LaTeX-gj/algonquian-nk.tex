@@ -25,22 +25,11 @@
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
-\newcommand{\factual}[1]{\textsc{:fact}}
-\newcommand{\rdp}{\textasciitilde{}}
 
-\XeTeXlinebreaklocale 'zh' %使用中文换行
-\XeTeXlinebreakskip = 0pt plus 1pt %
- %CIRCG
- \newcommand{\bleu}[1]{{\color{blue}#1}}
-\newcommand{\rouge}[1]{{\color{red}#1}} 
-\newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
+%\XeTeXlinebreaklocale 'zh' %使用中文换行
+%\XeTeXlinebreakskip = 0pt plus 1pt %
+ 
 \newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
-\newcommand{\deux}[1]{/#1/}
-\newcommand{\trois}[1]{/#1/}
-
-\newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
-
 
 
 \begin{document} 
@@ -49,22 +38,16 @@
 \maketitle
  
  \section{Introduction}
- 
+Several Algonquian languages, including Cree and Menominee, present an unusual merger of proto-Algonquian *\ipa{-nC-} and *\ipa{-hC-} clusters as \ipa{-hC-}, implying a sound change from prenasalization to preaspiration, which is unusual and unparalleled in other languages families (see Silverman's \citeyear{silverman03preaspirated} survey of the diachronic origins of preaspirated stops).
 
-Contribute to better explaining the diachronic origin of preaspirated stops, which given their rarity (\citealt{silverman03preaspirated})
 
-Panchronic Phonology (\citealt{michaud-jacques12nasalite})
-\citet[154-5]{bloomfield25central}
- \citet{bloomfield46proto}, merge with corresponding hC clusters in M and C
- \citet{goddard98arapaho}
- 
-Table \ref{tab:nC.PA} 
+Table \ref{tab:nC.PA}, based on Bloomfield's (\citeyear[154-5]{bloomfield25central} / \citeyear{bloomfield46proto}) reconstruction of Proto-Algonquian,\footnote{I adopt Goddard's \citealt{goddard98arapaho} notation of Proto-Algonquian, with *\ipa{r}, *\ipa{rk}, *\ipa{sC} instead of Bloomfield's *\ipa{l}, *\ipa{çk} and *\ipa{xC}. } illustrates the reflexes of proto-Algonquian *\ipa{-nC-} clusters in Ojibwe (where the nasal is preserved), Plains Cree and Menominee. The reflexes of *\ipa{-nC-} in the latter two languages are identical to corresponding *\ipa{-hC-} clusters.
  
  \begin{table}
-\caption{Correspondences of cluster with nasal as first element in Proto-Algonquian and their correspondences in Ojibwe, Cree and Menominee} \label{tab:nC.PA} \centering
+\caption{Clusters with nasal as first element in Proto-Algonquian and their correspondences in Ojibwe, Cree and Menominee} \label{tab:nC.PA} \centering
 \begin{tabular}{llllll}
 \toprule
-PA & Ojibwe & Cree & Menominee \\
+PA & Ojibwe & Menominee & Plains Cree \\
 \midrule
 \ipa{*-mp-} & \ipa{-mb-} & \ipa{-hp-} & \ipa{-hp-} \\
 \ipa{*-nt-} & \ipa{-nd-} & \ipa{-ht-} & \ipa{-ht-} \\
@@ -72,41 +55,84 @@ PA & Ojibwe & Cree & Menominee \\
 \ipa{*-nk-} & \ipa{-ng-} & \ipa{-hk-} & \ipa{-hk-} \\
 \ipa{*-ns-} & \ipa{-nz-} & \ipa{-hs-} & \ipa{-hs-} \\
 \ipa{*-nš-} & \ipa{-nzh-} & \ipa{-hs-} & \ipa{-hš-} \\
-\ipa{*-nr-} & \ipa{-n-} & \ipa{-hn-} & \ipa{-hy-} \\
+\ipa{*-nr-} & \ipa{-n-} & \ipa{-hn-} & \ipa{-hy-} / \ipa{-h-} \\
 \ipa{*-nθ-} & \ipa{-n-} & \ipa{-hn-} & \ipa{-ht-} \\
 \bottomrule
 \end{tabular}
 \end{table}
- Cree and Menominee
-\citealt[60]{hockett81menominee}  `as first element of a cluster *n $\rightarrow$ *h'
 
-`In Menominee and Cree, on the other hand, it seems as though the voicessless of the stop or spirant spread backwards through the nasal; at least, a change from a sequence like \phonet{nt} to \phonet{ht} seems easiest to understand if we think of \phonet{n̥t}.'
+These correspondences are massively attested and the proto-Algonquian reconstruction is not controversial. The clusters *\ipa{-nr-} and *\ipa{-nθ-} are rare and Table \ref{tab:merger} presents some etymologies illustrating them from Bloomfield and \citet{goddard73nl}.\footnote{Morphological alternations involving these clusters discussed by \citet{goddard73nl} will not be discussed in the present paper, as they predate the sound changes discussed here.}
 
- 
- 
-  \section{Nasal+stop clusters}
-*\ipa{-nk-} $\rightarrow$ \ipa{-kk-} $\rightarrow$ \ipa{-hk-} 
-nC to geminate (\citealt{jouon06})
-geminate to preaspiration: 
-  \citealt[172]{kuemmel07wandel}
-  \citealt{silverman03preaspirated}
+\begin{table}
+\caption{*\ipa{-nr-} and *\ipa{-nθ-} clusters in Cree and Menominee} \centering \label{tab:merger}
+ \resizebox{\columnwidth}{!}{
+\begin{tabular}{llllll}
+\toprule
+PA & Meaning &Menominee & Plains Cree \\
+\midrule
+\ipa{*nōnr-} &suckle & \ipa{nōhn-æw} `suckle (vta)'&\ipa{nôh-êw} `suckle (vta)' \\
+\ipa{*wīnr-} &name & \ipa{wēhn-æw} `name (vta)'&\ipa{wîh-êw} `name (vta)' \\
+%\midrule
+%\ipa{*rēhr-} &breathe' &\ipa{yêhy-êw} `breathe' & \ipa{nǣhn-æw} `breathe' \\
+\midrule
+\ipa{*-ahanθ-} & track & \ipa{natu-ahahn-æw} `seek s.o's tracks' &\ipa{wan-ahâht-êw} `lose s.o.'s tracks' \\
+\ipa{*panθ-} & singe &\ipa{pahn-æw} `roast (vta)'&\ipa{paht-êw} `singe (vta)'\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Despite the rarity of such sound changes, the only explicit attempt at providing an explanation  for them is from \citet[60]{hockett81menominee}, according to whom: `In Menominee and Cree, [...] it seems as though the voicessless of the stop or spirant spread backwards through the nasal; at least, a change from a sequence like \phonet{nt} to \phonet{ht} seems easiest to understand if we think of \phonet{n̥t}.'
+
+This explanation is however very questionable. While there is little doubt that an aspirated nasal \ipa{n̥} can lose its nasality (or transfer it to the following vowel) and merge with \ipa{h} (\citealt{michaud-jacques12nasalite}), all indisputable examples of this change known to us occur in onset position in languages with a phonological contrast between \ipa{n} and \ipa{n̥}, which cannot have been the case in the ancestors of Cree and Menominee.\footnote{Cree and Menominee have undergone these sound changes independently. Menominee, like all Algonquian languages except Plains Algonquian and Cree, merge *\ipa{θ} and *\ipa{r} in all positions,\footnote{Traces of the contrast only remain in palatalized forms of *\ipa{θ}.} a merger that constitutes a common innovation of all these languages (\citealt{goddard94cline}). Thus, any innovative feature exclusively shared by Cree and Menominee can only be either due to contact or parallel innovation.} 
+
+% `as first element of a cluster *n $\rightarrow$ *h'
+In this paper, I propose to explain the correspondences in Table \ref{tab:nC.PA} by postulating several pathways of phonetic change, each step of which have parallels in other language families. I account in a different way for the nasal+obstruent clusters on the one hand, and *\ipa{-nr-} on the other hand, for which two competing explanations are proposed.
+
+
+\section{Nasal+obstruent clusters}
+In the case of clusters comprising a homorganic nasal followed by an obstruent (stop/affricate *\ipa{p}, *\ipa{t}, *\ipa{č}, *\ipa{k} or fricative *\ipa{s}, *\ipa{š}) the three stages pathway in (\ref{ex:nC}) can be proposed:
+
+\begin{exe}
+\ex \label{ex:nC}
+\glt *\ipa{-nC-} $\rightarrow$ \ipa{-CC-} $\rightarrow$ \ipa{-ʰCC-} $\rightarrow$ \ipa{-hC-} 
+\end{exe}
+
+First, the cluster *\ipa{-nC-} changes to a geminate consonant, a sound change cross-linguistically well-attested (for instance in Hebrew, see \citealt[71-75]{jouon06}).
+
+Second, the geminated consonants develop phonetic preaspiration, a phenomenon attested for instance in the Kiranti language   Khaling, where geminated stops and double stop clusters preceded by short vowels are automatically preaspirated (\citealt[44]{jacques16tonogenesis}).
+
+Third, the preaspiration, originally a secondary cue of gemination, becomes the main phonetic cue of the contrast (\citealt[172]{kuemmel07wandel}, \citealt{silverman03preaspirated}), and geminated consonants merge with the corresponding preaspirated ones.
   
-  Khaling (\citealt[44]{jacques16tonogenesis})
   
  \section{*-nr-}
-*\ipa{-nr-} $\rightarrow$ *\ipa{-nr̥-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ \ipa{-hr-} 
+The hypothesis proposed for n+obstruents cannot account for the merger of Proto-Algonquian *\ipa{-nr-} and *\ipa{-hr-} clusters as *\ipa{-hr-} in pre-Cree and pre-Menominee and their subsequent evolution to \ipa{-hy-} and \ipa{-hn-} respectively. That these sound changes are independent is confirmed by the fact that the Eastern Algonquian languages Unami and Munsee languages have undergone *\ipa{-nr-} / *\ipa{-nθ-} $\rightarrow$ \ipa{-hl-} but have preserved the nasal before stops (\citealt[25]{goddard82munsee}).\footnote{In addition, in Unami and Munsee *\ipa{hr} becomes \ipa{x} and does not merge with the reflex of *\ipa{nr}.}
 
-Welsh (\citealt[145]{kuemmel07wandel} r > rh word-initially and after nasal)
-\citet[471-480]{jackson56early} \citet{schrijver95}
+I propose here two alternative hypotheses to account for the change of prenasalization to preaspiration in these clusters in Cree, Menominee and Munsee. Both involve an intermediate stage with an unvoiced *\ipa{r̥} merging into pre-aspirated *\ipa{hr}.
 
-*\ipa{-nr-} $\rightarrow$ *\ipa{-rr-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ \ipa{-hr-} 
-Latin in > ir /\_r
-\citet{blevins16voiceless.sonorants}
+\subsection{The Welsh model}
+In Welsh, proto-Celtic *\ipa{r} becomes aspirated \ipa{rh} in fortis position, ie. word-initially  and word-internally after nasal (\citealt[145]{kuemmel07wandel}, \citealt[471-480]{jackson56early}), as illustrated by XXX
 
-\section{Conclusion}
-Independent sound changes in C and M
-While there is little doubt that Plain Algonquian languages present complex and unusual sound changes (\citealt{goddard74arapaho,goddard88cheyenne.y,proulx89bf}),  other Algonquian languages are also of great interest to Panchronic phonology. 
+I propose a similar sound change as a possibility to account for the merger of *\ipa{-hr-} and *\ipa{-nr-} in Cree, Menominee and Munsee.
+
+First, as indicated in \ref{ex:nr1}, *\ipa{r} (including, in the case of Menominee and Unami/Munsee, *\ipa{r} from *\ipa{-θ-}) developed an unvoiced allophone *\ipa{r̥} word-initially and after nasal.
+
+\begin{exe}
+\ex \label{ex:nr1}
+\glt *\ipa{-nr-} $\rightarrow$ *\ipa{-nr̥-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ *\ipa{-hr-} 
+\end{exe}
+
+Second, nasality was lost before *\ipa{-r̥-}, which merged with the cluster *\ipa{-hr-} in intervocalic position. In word-initial position, allophony was lost and *\ipa{-r-} became revoiced, a common phenomenon with voiceless sonorants (see \citealt{blevins16voiceless.sonorants}).
+
+\subsection{The Gemination model}
+While in Hebrew, the sound law *-nC- $\rightarrow$ -CC- does not apply to \ipa{r}, this sound change is attested in many languages, including Latin (\citet[213]{leumann77lateinische}, in examples such as \ipa{irrigāre} `irrigate' < *\ipa{in-rigāre}). Another possible pathway to explain the development of preaspiration from prenasalization is presented in (\ref{ex:nr2}):
+
+\begin{exe}
+\ex \label{ex:nr2}
+\glt *\ipa{-nr-} $\rightarrow$ *\ipa{-rr-} $\rightarrow$ *\ipa{-r̥-} $\rightarrow$ \ipa{-hr-} 
+\end{exe}
+
+In this hypothesis, *\ipa{r} undergoes the sound change *-nC- $\rightarrow$ *-CC- like obstruents. Geminated *\ipa{-rr-} then becomes unvoiced *\ipa{-r̥-} and eventually merges with *\ipa{-hr-}.
+
 \bibliographystyle{unified}
 \bibliography{bibliogj}
-
 \end{document}
