@@ -33,6 +33,7 @@
 
 \newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
+\newcommand{\tld}{\textasciitilde{}}
 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
@@ -49,18 +50,18 @@
 \begin{document} 
 \newcounter{2clusters}
 \newcounter{3clusters}
-\title{Japhug Rgyalrong\footnote{I wish to thank Alexis Michaud and two anonymous reviewers for comments on previous version of this work; I am responsible for any remaining error. This research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony). Glosses follow the Leipzig glossing rules, except for the following: \textsc{auto} autobenefactive / spontaneous, \textsc{emph} emphatic, \textsc{genr} generic, \textsc{inv} inverse, \textsc{lnk} linker, \textsc{testim} testimonial. }}
+\title{Japhug Rgyalrong\footnote{I wish to thank Alexis Michaud and two anonymous reviewers for comments on previous version of this work; I am responsible for any remaining error. This research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony). Glosses follow the Leipzig glossing rules, except for the following: \textsc{auto} autobenefactive / spontaneous, \textsc{emph} emphatic, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{inv} inverse, \textsc{lnk} linker, \textsc{testim} testimonial. }}
 
-\author{Guillaume Jacques}
+\author{Guillaume Jacques, rgyalrongskad@gmail.com}
 \maketitle
 \sloppy
  \section{Introduction}
  This paper focuses on the Japhug language (local name \ipa{kɯrɯ skɤt}) of Kamnyu village (\ipa{kɤmɲɯ}, Chinese \textit{Ganmuniao} \zh{干木鸟}) in Gdong-brgyad area (\ipa{ʁdɯrɟɤt}, Chinese  \textit{Longerjia} \zh{龙尔甲}), Mbarkhams county (Chinese \textit{Maerkang} \zh{马尔康}), Rngaba prefecture, Sichuan province, China.
  
- Japhug belongs to the Sino-Tibetan family, and is one of the four Rgyalrong languages, alongside Tshobdun, Zbu and Situ.\footnote{See  \citet{jackson00sidaba} for an overview of the Rgyalrong group. A text collection of Japhug with sound files is included in the Pangloss archive (\citealt{michailovsky14pangloss}). A grammar of Japhug is available (\citealt{jacques08}) as well as a series of articles on morphosyntax (see for instance  \citealt{jacques13harmonization} and
- \citealt{jacques14antipassive}) but little has been published specifically on its phonology. } 
+ Japhug belongs to the Sino-Tibetan family, and is one of the four Rgyalrong languages, alongside Tshobdun, Zbu and Situ.\footnote{See  \citet{jackson00sidaba} for an overview of the Rgyalrong group, whose closest relatives include Khroskyabs (\citealt{lai15person}) and Horpa (\citealt{jackson07shangzhai}). A text collection of Japhug with sound files is included in the Pangloss archive (\citealt{michailovsky14pangloss}). A short grammar (\citealt{jacques08}), a series of articles on morphosyntax (see for instance  \citealt{jacques13harmonization} and
+ \citealt{jacques14antipassive}) and a dictionary (\citealt{jacques15japhug}) are available but little has been published specifically on its phonology. } 
  
-The description is based on the author’s fieldwork, and the word list and the short story in the appendix have been provided by Tshendzin (Chenzhen \zh{陈珍}, female, born 1950), a retired schoolteacher (a native speaker of Japhug, bilingual in Sichuan Mandarin since early childhood).
+The description is based on the author’s fieldwork, and the word list and the short story in the appendix have been provided by Tshendzin (Chenzhen \zh{陈珍}, female, born 1950), a retired schoolteacher (a native speaker of Japhug, bilingual in Sichuan Mandarin since childhood).
 
  Japhug has a highly  developed system of ideophones (\citealt{japhug14ideophones}), which present unusual phonological features, in particular rare clusters. In the following discussion, phonemes or clusters found exclusively on  ideophones will be treated separately. In addition, about a quarter of the Japhug vocabulary is borrowed from Tibetan, and these loanwords, like the ideophones, fill some gaps in the phonotactic distribution of vowels and consonants (on gap-filling by loanwords see \citealt[63-64]{martinet05economie}).
  
@@ -82,7 +83,7 @@ Since monosyllabic words are few,  most of the example words provided here invol
 \toprule
 & &Bilabial& Dental/Alveolar & Retroflex &Alveolo-palatal&Palatal & Velar&Uvular&Glottal\\
 \midrule
-Stop&unvoiced & \ipa{p} & \ipa{t} & & & \ipa{c} & \ipa{k} & \ipa{q} \\
+Plosive&unvoiced & \ipa{p} & \ipa{t} & & & \ipa{c} & \ipa{k} & \ipa{q} \\
 &aspirated & \ipa{pʰ} & \ipa{tʰ} & & & \ipa{cʰ} & \ipa{kʰ} & \ipa{qʰ}\\
 &voiced & \ipa{b} & \ipa{d} & & & \ipa{ɟ} & \ipa{g} &  \\
 &prenasalized& \ipa{mb} & \ipa{nd} & & & \ipa{ɲɟ} & \ipa{ŋg} & \ipa{ɴɢ} \\
@@ -148,7 +149,7 @@ As in many languages of the Tibetan area, the \ipa{r} in a trilled retroflex voi
   \subsection{Consonants clusters} \label{sec:clusters}
   Japhug boasts 416 clusters in syllable onset position:  316 clusters with two consonants and 100 with three consonants. Clusters that are only possible at syllable boundaries are not included in this count. 
   
-  Since Japhug is a heavily prefixing language (on which see \citealt{jacques13harmonization}), most noun or verb stems are prefixed, and thus a considerable part of onset clusters are not attested word-initially. For instance, the cluster \ipa{zmb} never appears word-initially, and it is only found in the word \ipa{tɤzmbɯr}  `silt' which contains a nominal prefix \ipa{tɤ-} (see Table \ref{prein.w.s}). 
+  Since Japhug is a heavily prefixing language (on which see \citealt{jacques13harmonization}), most noun or verb stems are prefixed, and thus a considerable part of onset clusters are not attested word-initially. For instance, the cluster \ipa{zmb} is only found in the word \ipa{tɤzmbɯr}  `silt' which contains a nominal prefix \ipa{tɤ-} (see Table \ref{prein.w.s}). 
   
   Yet, speakers are able to parse words into syllables; in the case of \ipa{tɤzmbɯr}  `silt', the only possible syllabification in \ipa{tɤ|zmbɯr}, not *\ipa{tɤz|mbɯr}, and thus we can ascertain that \ipa{zmb} can be counted as a possible onset in Japhug. On the other hand, in examples like \ipa{pjɤnɯndzɯlŋɯz} `he dozed off', both syllabifications \ipa{pjɤ|nɯ|\textbf{ndzɯl}|ŋɯz} and \ipa{pjɤ|nɯ|ndzɯ|\textbf{lŋɯz}} are possible, so that \ipa{lŋ} is not counted among syllable onset clusters in Japhug.
   
@@ -156,17 +157,17 @@ As in many languages of the Tibetan area, the \ipa{r} in a trilled retroflex voi
   \subsubsection{Decisive evidence from partial reduplication} \label{sec:redp}
  A useful test to analyse and classify clusters is partial reduplication, a very productive process which can be applied to both verb and noun stems and has a variety of morphosyntactic functions (see \citealt{jacques07redupl}). When partial reduplication is applied to a syllable, the rhyme of the replicated syllable is changed to \ipa{ɯ} in the replicant.
  
-Some clusters are affected by the partial reduplication:   when the last consonant  of a cluster is one of the non-nasal sonorants (\ipa{r}, \ipa{l}, \ipa{j}, \ipa{w}, \ipa{ɣ} or \ipa{ʁ}), and the preceding consonant in neither a sonorant nor a sibilant fricative, the sonorant is deleted, as in the derivation \ipa{ɲɤ-prɤt} `he cut it' $\rightarrow$ \ipa{ɲɤ-nɤ-pɯ\textasciitilde{}prɤt} `he cut it in all directions'.\footnote{The morphological process illustrated here is the non-directed motion derivation, combining a derivational \ipa{nɤ-} prefix with partial reduplication of the verb stem.}
+Some clusters are affected by the partial reduplication:   when the last consonant  of a cluster is one of the non-nasal sonorants (\ipa{r}, \ipa{l}, \ipa{j}, \ipa{w}, \ipa{ɣ} or \ipa{ʁ}), and the preceding consonant in neither a sonorant nor a sibilant fricative, the sonorant is deleted, as in the derivation \ipa{ɲɤ-prɤt} `he cut it' $\rightarrow$ \ipa{ɲɤ-nɤ-pɯ\tld{}prɤt} `he cut it in all directions'.\footnote{The morphological process illustrated here is the non-directed motion derivation, combining a derivational \ipa{nɤ-} prefix with partial reduplication of the verb stem.}
  
  
 
-When the penultimate consonant of the cluster is a sonorant   and the last consonant is a non-nasal sonorant which is not a glide (\ipa{r}, \ipa{l}, \ipa{ɣ} or \ipa{ʁ}), this last consonant  is not deleted, as in  \ipa{ko-wraʁ} `he attached it' $\rightarrow$ \ipa{ko-nɤ-wrɯ\textasciitilde{}wraʁ} `he attached it in all directions'.
+When the penultimate consonant of the cluster is a sonorant   and the last consonant is a non-nasal sonorant which is not a glide (\ipa{r}, \ipa{l}, \ipa{ɣ} or \ipa{ʁ}), this last consonant  is not deleted, as in  \ipa{ko-wraʁ} `he attached it' $\rightarrow$ \ipa{ko-nɤ-wrɯ\tld{}wraʁ} `he attached it in all directions'.
   
 When the prenultimate consonant is a sibilant fricative   (\ipa{s}, \ipa{z}, \ipa{ɕ}, \ipa{ʑ}) and the last consonant is a non-nasal sonorant which is not a glide (\ipa{r}, \ipa{l}, \ipa{ɣ} or \ipa{ʁ}), there are various possibilities, which are detailed in section \ref{sec:medial}.
 
-This morphophonological rule is thus crucial in analysis and classifying consonant clusters. Sonorants that undergo deletion when partial reduplication is applied are henceforth designated as \textit{medial} consonants, and it is postulated that they do not belong to the same constituent as the rest of the onset.
+This morphophonological rule is thus crucial in analyzing and classifying consonant clusters. Sonorants that undergo deletion when partial reduplication is applied are henceforth designated as \textit{medial} consonants, and it is postulated that they do not belong to the same constituent as the rest of the onset.
 
-In the following, we present a complete list of consonant clusters in Japhug Rgyalrong. Groups only attested in Tibetan loanwords or ideophones (or deideophonic verbs), and not in the native vocabulary, are indicated in lightgray and gray respectively in the tables. We only count clusters in syllable onsets, not cluster only occurring between syllable boundaries, some of which will be treated in section \ref{sec:coda}.
+In the following, we present a complete list of consonant clusters in Japhug Rgyalrong. Groups only attested in Tibetan loanwords or ideophones (or deideophonic verbs), and not in the native vocabulary, are indicated in lightgray and gray respectively in the tables. We only count clusters in syllable onsets, not cluster sonly occurring between syllable boundaries, some of which will be treated in section \ref{sec:coda}.
   
   
   \subsubsection{Clusters not ending in a (non-nasal) sonorant}  
@@ -174,10 +175,11 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 
  Clusters beginning in \ipa{w} or in a alveolar fricative \ipa{s} \ipa{z} are listed in Table \ref{prein.w.s}. 
  
-\ipa{w} is realized as \phonet{f} or \phonet{ɸ} before unvoiced obstruents and as \phonet{v} or \phonet{β} before voiced ones. \ipa{w} does not appear before nasal or prenasalized segments, and is not compatible with a labial or a uvular segment. Some clusters with \ipa{w} + voiced obstruents (\ipa{wz} and \ipa{wg}) are only attested in Tibetan loanwords. Clusters with three consonant whose first element is \ipa{w} and the last one is not a sonorant are all restricted to Tibetan borrowings except \ipa{wxt}, which is realized as \phonet{xʷt} with a labiovelarized fricative. Not all speakers maintain the contrast between \ipa{wxt} and \ipa{xt}, and the former cluster is only attested in a single word \ipa{wxti} `big'.
+\ipa{w} is realized as \phonet{f} or \phonet{ɸ} before unvoiced obstruents and as \phonet{v} or \phonet{β} before voiced ones. \ipa{w} does not appear before nasal or prenasalized segments, and is not compatible with a labial or a uvular segment. Some clusters with \ipa{w} + voiced obstruents (\ipa{wz} and \ipa{wg}) are only attested in Tibetan loanwords. Clusters with three consonant whose first element is \ipa{w} and the last one is not a sonorant are all restricted to Tibetan borrowings except \ipa{wxt}, which is realized as \phonet{xʷt} with a labiovelarized fricative (and labializes preceding \ipa{ɯ} and \ipa{ɤ} to \phonet{u} and \phonet{o} respectively). Not all speakers maintain the contrast between \ipa{wxt} and \ipa{xt}, and the former cluster is only attested in a single word \ipa{wxti} `big'.
  
  \ipa{s} and \ipa{z} as first element of a cluster are only contrastive before a sonorant. With obstruents, the fricative has the same voicing value as the following consonant. All clusters of this type are attested in the native vocabulary.
- 
+ \begin{landscape}
+
  \begin{table}
  \caption{List of consonant clusters with \ipa{w}, \ipa{s} or \ipa{z} as a first element (38+8)}  \centering \label{prein.w.s}
 \resizebox{\columnwidth}{!}{
@@ -216,6 +218,13 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{ɟ}  &	\deux{wɟ}  &	\ipa{wɟi}  &he runs after it	&	  &	  &	&	\deux{zɟ}  &	\ipa{kɯ-nɯzɟɯ}  &	  suffering losses&	\\
 \ipa{ɲɟ}  &	  &	  &	&	  &	  &	&	\deux{zɲɟ}  &	\ipa{zɲɟa}  &	plant sp.&	\\
 \ipa{ɲ}  &	  &	  &	&	\deux{sɲ}  &	\ipa{sɲaŋne}  &fasting	&	   &	 &	&	\\
+\midrule							
+\end{tabular}}
+\end{table}
+ \begin{table}
+% \resizebox{\textwidth}{!}{
+\begin{tabular}{l|lll|lll|lll|l}
+\toprule
 \ipa{k}  &	\deux{wk}  &	\ipa{wka}  &	order&	\deux{sk}  &	\ipa{skɤm}  &	ox&	  &	  &	&	\\
 \ipa{kʰ}  &	  &	  &	&	\deux{skʰ}  &	\ipa{rɟɤskhi}  &pan	&	  &	  &	&	\\
 \ipa{g}  &	\deux{wg}  \tib{}&	\ipa{wgoz}  &	he prepares it&	  &	  &	& 	\deux{zg}  &	\ipa{zga}  &	sauce&	\\
@@ -236,14 +245,16 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 &	\trois{wzɟ}  \tib{} &	\ipa{wzɟɯr}  & he transforms it	\\
 &	\trois{wrɟ}  \tib{} &	\ipa{wrɟaŋ}  &he stretches it (skin)	\\
 \bottomrule
-\end{tabular}} 
+\end{tabular}%} 
 \end{table}
+ \end{landscape}
 \resetcounters{2wszC}{3wszC} %deux groupes:\arabic{2wszC}  trois groupes:\arabic{3wszC}
  Clusters with \ipa{l}, \ipa{r}  and \ipa{ʂ} as first element are listed in Table \ref{prein.l.r}. \ipa{r} and \ipa{ʂ} are almost in complementary distribution as first element of a cluster, the former appearing before voiced consonants and the latter after unvoiced ones (except before \ipa{ɣ}, see section \ref{sec:medial}), except before nasals, where \ipa{ʂ} is attested in some ideophones.
  
  There are some phonotactic constraints on the distribution of these consonants: \ipa{l} is not compatible with coronal fricatives, \ipa{r} and \ipa{ʂ} never appear before retroflex fricatives and affricates.  
  
- 
+ \begin{landscape}
+
   \begin{table}
  \caption{List of consonant clusters with \ipa{l}, \ipa{r} or \ipa{ʂ}  as a first element (52+1)} \label{prein.l.r}  \centering
    \resizebox{\columnwidth}{!}{
@@ -282,6 +293,13 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{ɟ}  & 	  & 	  & 	  & 	 \deux{rɟ}  & 	 \ipa{rɟaʁ}  & 	he dances  & 	 & 	 & 	 & 	\\	
 \ipa{ɲɟ}  & 	  & 	  & 	  & 	 \deux{rɲɟ}  & 	 \ipa{rɲɟaʁlo}  & 	 bolt & 	 & 	 & 	 & 	\\	
 \ipa{ɲ}  & 	  & 	  & 	  & 	 \deux{rɲ}  & 	 \ipa{rɲaŋ}  & 	 its is ancient & 	 \deux{ʂɲ} \idph{}  & 	\ipa{ʂɲoʁʂɲoʁ} & 	long and thin & 	\\	
+\midrule							
+\end{tabular}}
+\end{table}
+ \begin{table}
+% \resizebox{\textwidth}{!}{
+\begin{tabular}{l|lll|lll|lll|l}
+\toprule
 \ipa{k}  & 	  & 	  & 	  & 	 & 	 & 	 & 	 \deux{ʂk}  & 	 \ipa{ʂko}  & 	 it is hard & 	\\	
 \ipa{kʰ}  & 	  & 	  & 	  & 	 & 	 & 	 & 	 \deux{ʂkʰ}  & 	 \ipa{tɤ-ʂkʰom}  & 	 feather rachis & 	\\	
 \ipa{g}  & 	  & 	  & 	  & 	 \deux{rg}  & 	 \ipa{rga}  & 	 he likes it & 	 & 	 & 	 & 	\\	
@@ -293,10 +311,11 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
 \ipa{ɴɢ}  & 	  & 	  & 	  & 	 \deux{rɴɢ}  & 	 \ipa{ɕɯrɴɢo}  & 	Anisodus tanguticus  & 	 & 	 & 	 & 	\\	
 \ipa{χ}  & 	  & 	  & 	  & 	 & 	 & 	 & 	 \deux{ʂχ}  & 	 \ipa{ʂχɯʂχi}  & 	with big nostrils  & 	\\	
 \midrule
-\trois{lpɕ}	&\ipa{qalpɕa} & it opens (fern leaf) \\
+&\trois{lpɕ}	&\ipa{qalpɕa} & it opens (fern leaf) \\
 \bottomrule
-\end{tabular}}
+\end{tabular}%}
 \end{table}
+\end{landscape}
  \resetcounters{2lrC}{3lrC} %deux groupes:\arabic{2lrC}  trois groupes:\arabic{3lrC}
   The glide \ipa{j}  and the alveolo-palatal fricatives \ipa{ɕ} and \ipa{ʑ} (Table \ref{prein.j.Z}) only occur before labial, dental, velar and uvular stops; they are marginally attested with retroflex affricates. The \ipa{j} glide, unlike other consonants, neither devoices nor fricativizes when occurring as first element of a cluster whose second element is an obstruent.
 
@@ -415,6 +434,7 @@ Clusters whose last consonant is not a non-nasal sonorant have a limited number 
  \resetcounters{2xgC}{3xgC} %deux groupes:\arabic{2xgC}  trois groupes:\arabic{3xgC}
 Clusters with nasal segments as first element (not counting voiced prenasalized stops and affricates) are listed in Table \ref{prein.nasal}. We find homorganic nasal clusters, compatible with all places of articulation, and non-homorganic ones, which can be either clusters in \ipa{n}+labial or velar or \ipa{m}+non-labial. There are no clusters with a nasal directly followed by a fricative or any non-nasal sonorant. After \ipa{n} and \ipa{m}, the contrast between voiced preinitial and vocied consonants is neutralized; the existence of the cluster \ipa{mɢ} while only the prenasalized phoneme \ipa{ɴɢ}, not simple voiced \ipa{ɢ} exists, shows that it should be analyzed as \ipa{mɴɢ} phonologically.
 
+\begin{landscape}
  \begin{table}
  \caption{List of consonant clusters with a nasal as   first element (38+1)} \label{prein.nasal}  \centering
    \resizebox{\columnwidth}{!}{
@@ -441,6 +461,13 @@ Clusters with nasal segments as first element (not counting voiced prenasalized 
 \ipa{tɕʰ} 	& \deux{ntɕʰ} 	& \ipa{ntɕʰoz} 	&he uses it 	& 	& 	& 	& \deux{mtɕʰ} 	& \ipa{tɤ-mtɕʰo} 	& wedge \\
 \ipa{dʑ} 	& 	& 	& 	& 	& 	& 	& 	& 	&  \\
 \ipa{ndʑ} 	& 	& 	& 	& 	& 	& 	& \deux{mdʑ} 	& \ipa{tɯ-mdʑu} 	& tongue \\
+\midrule		
+\end{tabular}}
+\end{table}
+ \begin{table}
+% \resizebox{\textwidth}{!}{
+\begin{tabular}{l|lll|lll|lll|l}
+\toprule
 \ipa{ɕ} 	& 	& 	& 	& 	& 	& 	& 	& 	&  \\
 \ipa{ʑ} 	& 	& 	& 	& 	& 	& 	& 	& 	&  \\
 \ipa{tʂ} 	& \deux{ntʂ} 	& \ipa{ntʂu-nɯ} 	& they weed 	& 	& 	& 	& \deux{mtʂ} 	& \ipa{kɯ-ɤrɤmtʂɯmtʂaj} 	& sticky \\
@@ -464,10 +491,11 @@ Clusters with nasal segments as first element (not counting voiced prenasalized 
 \ipa{ɴɢ}  	& 	&	&	& 	& 	& 	& \deux{mɢ} 	& \ipa{tɤ-mɢom} 	&clamp  \\
 \midrule
 &\trois{mpɕ} &\ipa{mpɕɤr} & it is beautiful\\
-\end{tabular}}
+\end{tabular}%}
 \end{table}
+\end{landscape}
  \resetcounters{2nC}{3nC} %deux groupes:\arabic{2nC}  trois groupes:\arabic{3nC}
-Finally, we find a few clusters comprising a stop followed by the fricative \ipa{ɕ} :  \deux{pɕ}  (as in \ipa{ɯ-pɕi}  `outside'),  \deux{kɕ}  (as in \ipa{kɯjkɤkɕi}  `marten'), \ipa{lpɕ} and \ipa{mpɕ} (see Tables \ref{prein.l.r} and  \ref{prein.nasal}). These clusters historically originate from aspirated stops followed by \ipa{j} (\ipa{pʰj}, \ipa{kʰj}), but their pattern in reduplication indicates that this is not true any more synchronically. For instance, \ipa{mpɕɤr} `it is beautiful' is reduplicated as \ipa{mpɕɯ-mpɕɤr}).
+Finally, we find a few clusters comprising a stop followed by the fricative \ipa{ɕ} :  \deux{pɕ}  (as in \ipa{ɯ-pɕi}  `outside'),  \deux{kɕ}  (as in \ipa{kɯjkɤkɕi}  `marten'), \ipa{lpɕ} and \ipa{mpɕ} (see Tables \ref{prein.l.r} and  \ref{prein.nasal}). These clusters historically originate from aspirated stops followed by \ipa{j} (\ipa{pʰj}, \ipa{kʰj}), but their pattern in reduplication indicates that this is not true any more synchronically. For instance, \ipa{mpɕɤr} `it is beautiful' is reduplicated as \ipa{mpɕɯ\tld{}mpɕɤr}) not $\dagger$\ipa{mpʰɯ\tld{}mpʰʲɤr}) 
 
  \subsubsection{Clusters ending in a (non-nasal) sonorant}   \label{sec:medial}
   The non-nasal sonorants (\ipa{r}, \ipa{l}, \ipa{j}, \ipa{w}, \ipa{ɣ} or \ipa{ʁ}) can occur after any consonant except nasals. In this section, clusters are listed by the penultimate consonant  (the one immediately preceding the non-nasal sonorant).  
@@ -531,7 +559,7 @@ Finally, we find a few clusters comprising a stop followed by the fricative \ipa
 \ipa{χ} 	&\deux{χw} \tib{}	&\ipa{χwɤr} 	&Hor (name)	& 	& 	&\\	
 \ipa{ʁ} 	& 	& 	&	&\deux{ʁj} 	&\ipa{ʁjit} 	&he thinks about 	
 him\\
-\ipa{χ} 	&\deux{hw} \idph{}	&\ipa{hwɤrhwɤr} 	&wide-mouthed	& 	& 	&\\	
+\ipa{h} 	&\deux{hw} \idph{}	&\ipa{hwɤrhwɤr} 	&wide-mouthed	& 	& 	&\\	
 \midrule
  		& 		&		&		&\trois{wsj} 		&\ipa{tɤ-wsjit} 		&whistle\\
  		& 		&		&		&\trois{wzj}  \tib{}		&\ipa{wzjoz}  		&he learns it\\
@@ -560,7 +588,7 @@ him\\
 \end{table}
   \resetcounters{2Cjw}{3Cjw} %deux groupes:\arabic{2Cjw}  trois groupes:\arabic{3Cjw}
   
-  Table  \ref{med.l.r} provides a  list of all clusters whose final consonant is a liquid  \ipa{r} or \ipa{l}. Clusters ending in \ipa{r} cannot contain another \ipa{r} or \ipa{l} segment, or any retroflex consonant. Clusters ending \ipa{l} never contain another \ipa{l}, but allow the presence of \ipa{r} (\ipa{rl}, \ipa{rɴɢl}). The sonorants \ipa{r} and \ipa{l} are medials before all stops and affricates, as well as before the voiced fricatives \ipa{z} and \ipa{ʑ}. In all other contexts, they are not medials.
+  Table  \ref{med.l.r} provides a  list of all clusters whose final consonant is a liquid  \ipa{r} or \ipa{l}. Clusters ending in \ipa{r} cannot contain another \ipa{r} or \ipa{l} segment, or any retroflex consonant (on the crosslinguistic rarity of the cluster \ipa{lr}, see \citealt[78]{baroni14invariant}). Clusters ending \ipa{l} never contain another \ipa{l}, but allow the presence of \ipa{r} (\ipa{rl}, \ipa{rɴɢl}). The sonorants \ipa{r} and \ipa{l} are medials before all stops and affricates, as well as before the voiced fricatives \ipa{z} and \ipa{ʑ}. In all other contexts, they are not medials.
   
    \begin{table}
  \caption{List of consonant clusters ending in \ipa{l} or \ipa{r} (44+52)} \label{med.l.r} \centering
@@ -622,6 +650,7 @@ him\\
  \begin{table}
  \resizebox{\textwidth}{!}{
 \begin{tabular}{l|lll|lll|lll|l}
+\toprule
 	&	&	&	&\trois{wkr}  \tib{}	& \ipa{wkrɯz}  	&he is greedy \\	
 	&	&	&	&\trois{wɣr}  	&\ipa{wɣrum}  	&it is white\\	
 	&	&	&  	&\trois{wsr}  	&\ipa{wsroŋ}  	&he protects it\\	
@@ -643,7 +672,7 @@ him\\
 	&	&	&	&\trois{ʑdr}  \idph{}	& \ipa{ʑdraŋʑdraŋ}  	&  long and soft\\	
 	&\trois{ɕkl}	&\ipa{ɕkliɕkli}	&round and stiff	&\trois{ɕkr}  	& \ipa{ɕkrɤz}  	&oak \\	
 	&	&	&	&\trois{ʑgr}  	& \ipa{ʑgrɯɣ}  	&certainly \\	
-	&\trois{ɕql}  \idph{}	& \ipa{ɕqlɯwnɤɕqlɯw}  	&  walking in the water (sound)	&\trois{ʑŋgr}  	& \ipa{ʑŋgri}  	&star \\	
+	&\trois{ɕql}  \idph{}	& \ipa{ɕqlɯwnɤɕqlɯw}  	&  walking in the water &\trois{ʑŋgr}  	& \ipa{ʑŋgri}  	&star \\	
 	&\trois{ɕqʰl}  	& \ipa{ɕqʰlɤt}  	&it disappears 	&\trois{ɕqr}  	& \ipa{ɕqraʁ}  	& he is intelligent \\	
 	&	&	&	& \trois{ʑɴɢr}  	& \ipa{ʑɴɢro}  	&Jew's harp 	\\	
 \midrule							
@@ -688,7 +717,7 @@ him\\
 \ipa{b}  	&    	&    	&  	&	&	& \\	
 \ipa{mb}  	&  \deux{mbɣ}  	&  \ipa{mbɣaʁ}  	&it turns over  	&	&	& \\	
 \ipa{m}  	&    	&    	&  	&	&	& \\	
-\ipa{w}  	&  \deux{wɣ}  	&  \ipa{wɣa}  	&mill	& \deux{wʁ}  	&  \ipa{wʁa} 	&it is victorious \\	
+\ipa{w}  	&  \deux{wɣ}  	&  \ipa{wɣa}  	&mill	& \deux{wʁ}  	&  \ipa{wʁa} 	&he is victorious \\	
 \ipa{t}  	&  \deux{tɣ}  	&  \ipa{tɯ-tɣa}  	& one span 	&	&	& \\	
 \ipa{tʰ}  	&  \deux{tʰɣ}  	&  \ipa{tʰɣe}  	&  acorn	&	&	& \\	
 \ipa{d}  	&  \deux{dɣ}  \idph{}	&  \ipa{dɣɤrdɣɤr}  	& dumb 	&	&	& \\	
@@ -830,7 +859,7 @@ Second, the uvular voiced prenasalized \ipa{ɴɢ} has no simple voiced counterpa
 
 
 
-The palatal stops \ipa{c}, \ipa{cʰ}, \ipa{ɟ} and \ipa{ɲɟ} is Japhug cannot be analyzed as /velar+\ipa{j}/ clusters, as a clear contrast exists between the palatal series and a velar followed by \ipa{j}, in minimal pairs such as   \ipa{pɯ-ɲɟo} `he had damages' and \ipa{pɯ-ŋgjo} `he slipped'. The differing syllabic structure of the onsets \ipa{ɲɟ} and \ipa{ŋgj} is confirmed by their reduplication patterns: while in the former the palatalization is present on the replicant \ipa{pɯ-nɤ-ɲɟɯ\textasciitilde{}ɲɟo} `he had damages everywhere', in the latter the \ipa{j} is not replicated as  \ipa{pɯ-nɤ-ŋgɯ\textasciitilde{}ŋgjo} `he slipped everywhere'.
+The palatal stops \ipa{c}, \ipa{cʰ}, \ipa{ɟ} and \ipa{ɲɟ} is Japhug cannot be analyzed as /velar+\ipa{j}/ clusters, as a clear contrast exists between the palatal series and a velar followed by \ipa{j}, in minimal pairs such as   \ipa{pɯ-ɲɟo} `he had damages' and \ipa{pɯ-ŋgjo} `he slipped'. The differing syllabic structure of the onsets \ipa{ɲɟ} and \ipa{ŋgj} is confirmed by their reduplication patterns: while in the former the palatalization is present on the replicant \ipa{pɯ-nɤ-ɲɟɯ\tld{}ɲɟo} `he had damages everywhere', in the latter the \ipa{j} is not replicated as  \ipa{pɯ-nɤ-ŋgɯ\tld{}ŋgjo} `he slipped everywhere'.
 
 Japhug   presents an impressively high number of palatalization contrasts (see \ref{tab:coronal.dorsal}, where all contrasts are illustrated with the vowel \ipa{o}) among coronal and dorsal onsets. 
 
@@ -864,7 +893,7 @@ The unvoiced lateral  \ipa{ɬ} is a marginal phoneme in Japhug, which does not a
     
 In word-final position, codas are voiced when followed by a word beginning with a voiced consonant or a vowel, but are devoiced in phrase-final position, before a pause or before a voiceless segment.
 
-In isolation, word-final \ipa{-z}, \ipa{-r}, \ipa{-j}, \ipa{-ɣ} and \ipa{-ʁ} in particular are realized as \phonet{s}, [r̥], [j̥], \phonet{x} and \phonet{χ} respectively as in the examples in Table \ref{tab:codas}. The coda \ipa{-ʁ} can also be realized alternatively as pharyngealization of the preceding vowel.
+In isolation, word-final \ipa{-z}, \ipa{-r}, \ipa{-j}, \ipa{-ɣ} and \ipa{-ʁ} in particular are realized as \phonet{s}, \phonet{r̥}, \phonet{j̥}, \phonet{x} and \phonet{χ} respectively as in the examples in Table \ref{tab:codas}. The coda \ipa{-ʁ} can also be realized alternatively as pharyngealization of the preceding vowel.
 
 \begin{table}
  \caption{Realization of non-nasal  codas in Japhug} \label{tab:codas}  \centering
@@ -878,7 +907,7 @@ Coda & Example & Realization &Meaning\\
 \ipa{l} & \ipa{dal} &\phonet{dal} &later\\
 \ipa{r} & \ipa{tatar} &\phonet{tatar̥} &staff\\
 \ipa{ɣ} & \ipa{tɤndɤɣ} &\phonet{tɤndɤx} &poison\\
-\ipa{ʁ} & \ipa{paʁ} & [paχ] or \phonet{paˁ} &pig\\
+\ipa{ʁ} & \ipa{paʁ} & \phonet{paχ} or \phonet{paˁ} &pig\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -952,16 +981,16 @@ Vowel & Rhyme & Example & Meaning\\
 \end{tabular}
 \end{table}
 
-In closed syllable with an alveolo-palatal or a palatal consonant preceding the vowel, the vowel \ipa{ɯ} tends to be fronted. However, the contrast with \ipa{i} is clearly maintained. For instance, we find the minimal pair \ipa{tɤ-tɯ-cɯ-t} `you opened it' (\textsc{pfv}-2-open-\textsc{pst}) and \ipa{lɤ-tɯ-cit} `you moved' (\textsc{pfv}-2-move).
+In closed syllables with an alveolo-palatal or a palatal consonant preceding the vowel, the vowel \ipa{ɯ} is fronted and its contrast with \ipa{i} is neutralized in nearly all positions. It is only maintained before \ipa{-t} in forms with the past \ipa{-t} transitive suffix. For instance, we find the minimal pair \ipa{tɤ-tɯ-cɯ-t} `you opened it' (\textsc{pfv}-2-open-\textsc{pst}) and \ipa{lɤ-tɯ-cit} `you moved' (\textsc{pfv}-2-move).
     
      \section{Suprasegmentals}
 Unlike other Rgyalrong languages (\citealt{jackson05yingao}, \citealt{linyj12tone}), Japhug has no tonal contrasts. However, there is morphologically determined stress. Phonological words only have one stress, which is located by default on the final syllable of the word (regardless of its part of speech).
 
-The personal agreement suffixes and the evidential suffix \ipa{-ci} never receive stress, and their vowels are devoiced. For instance, \ipa{tɤ-ndza-t-a} `I ate it' (\textsc{pfv}-eat-\textsc{pst-1sg}) is realized \phonet{tɤndzátḁ}. In verbal forms with these prefixes, stress is penultimate, or even antepenultimate in the case of verb forms with two suffixes as in \ipa{to-k-ɤmɯ-rpú-ndʑɯ-ci} `they bumped into each other' (\textsc{ifr}-\textsc{evd}-\textsc{recip}-talk-\textsc{du-evd}).
+The personal agreement suffixes and the evidential suffix \ipa{-ci} never receive stress, and their vowels are optionally devoiced. For instance, \ipa{tɤ-ndza-t-a} `I ate it' (\textsc{pfv}-eat-\textsc{pst-1sg}) is realized \phonet{tɤndzátḁ} or \phonet{tɤndzáta}. In verbal forms with these prefixes, stress is penultimate, or even antepenultimate in the case of verb forms with two suffixes as in \ipa{to-k-ɤmɯ-rpú-ndʑɯ-ci} `they bumped into each other' (\textsc{ifr}-\textsc{evd}-\textsc{recip}-bump-\textsc{du-evd}).
 
 Only two verbal prefixes, the inverse \ipa{-wɣ-} and the negative testimonial \ipa{mɯ́j-}, attract stress, as in \ipa{pɯ-tɯ́-wɣ-mto} `he saw you' and \ipa{mɯ́j-ndze} `he does not eat it'.
     
-The only other morphological process in the language that influences stress is the  associative adverbs formation. The adverbs (meaning `together with X') are made by combining the stress-bearing \ipa{kɤ́-}  prefix with a reduplicated noun stem, as in the examples in Table \ref{tab:assoc.adv}.
+The only other morphological process in the language that influences stress is the comitative adverbs formation. Theses adverbs meaning `together with X' are built by combining the stress-bearing \ipa{kɤ́-}  prefix with a reduplicated noun stem, as in the examples in Table \ref{tab:assoc.adv}.
 
 \begin{table}
  \caption{Examples of associative adverbs in Japhug} \label{tab:assoc.adv}  \centering
@@ -969,8 +998,8 @@ The only other morphological process in the language that influences stress is t
 \toprule
 Base noun & Meaning & Associative & Meaning \\
 \midrule
-\ipa{tɤ-jwaʁ} & leaf & \ipa{kɤ́-jwɯ\textasciitilde{}jwaʁ} & with its leaves\\
-\ipa{χɕɤlmɯɣ} & glasses & \ipa{kɤ́-χɕɤlmɯ\textasciitilde{}lmɯɣ} & with his glasses\\
+\ipa{tɤ-jwaʁ} & leaf & \ipa{kɤ́-jwɯ\tld{}jwaʁ} & with its leaves\\
+\ipa{χɕɤlmɯɣ} & glasses & \ipa{kɤ́-χɕɤlmɯ\tld{}lmɯɣ} & with his glasses\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -991,7 +1020,7 @@ Base noun & Meaning & Associative & Meaning \\
 
 \begin{exe} 
  \ex 
-\gll  \ipab{ɲɤ-sɤfɕɤra-ndʑɯ} \ipab{tɕe,} \ipab{``tɕiʑo} \ipab{ɕu} \ipab{kɯ-fse} \ipab{kɯ-χɕu} \ipab{me-tɕɯ?"} \ipab{to-ti-ndʑɯ,} \\ 
+\gll  \ipab{ɲɤ-sɤfɕɤra-ndʑɯ} \ipab{tɕe,} \ipab{``tɕɯʑo} \ipab{ɕɯ} \ipab{kɯ-fse} \ipab{kɯ-χɕu} \ipab{me-tɕɯ?"} \ipab{to-ti-ndʑɯ,} \\ 
  \textsc{ifr}-argue-\textsc{du}    \textsc{lnk}  1\textsc{du}     who \textsc{nmlz}:S/A-be.like \textsc{nmlz}:S/A-be.strong not.exist-1\textsc{du}  \textsc{ifr}-say-\textsc{du}\\ 
  \glt  They argued, they said ``Who is the strongest of us?''
 \end{exe} 
@@ -1007,7 +1036,7 @@ Base noun & Meaning & Associative & Meaning \\
 
 \begin{exe} 
  \ex 
-\gll  \ipab{``ɕu} \ipab{kɯ} \ipab{tɯrme,} \ipab{nɯ} \ipab{kɯ-nɤŋkɯŋke} \ipab{tɯrme} \ipab{ra} \ipab{nɯ-ŋga} \ipab{ɲɯ-kɤ-sɯ-tɕɤt}  \ipab{kɯ-cʰa} \ipab{nɯnɯ,} \ipab{ɕu} \ipab{pɯ-kɯ-wʁa} \ipab{a-pɯ-ŋu"} \ipab{to-nɯ-pa-ndʑɯ.} \\ 
+\gll  \ipab{``ɕɯ} \ipab{kɯ} \ipab{tɯrme,} \ipab{nɯ} \ipab{kɯ-nɤŋkɯŋke} \ipab{tɯrme} \ipab{ra} \ipab{nɯ-ŋga} \ipab{ɲɯ-kɤ-sɯ-tɕɤt}  \ipab{kɯ-cʰa} \ipab{nɯnɯ,} \ipab{ɕɯ} \ipab{pɯ-kɯ-wʁa} \ipab{a-pɯ-ŋu"} \ipab{to-nɯ-pa-ndʑɯ.} \\ 
  who  \textsc{erg} man     \textsc{dem} \textsc{nmlz}:S/A-walk.around  man    \textsc{pl}  3\textsc{pl}.\textsc{poss}-clothes \textsc{ipfv}-\textsc{inf}-\textsc{caus}-take.off  \textsc{nmlz}:S/A-can  \textsc{dem}    who \textsc{pfv}-\textsc{nmlz}:S/A-prevail \textsc{irr}-\textsc{pst}.\textsc{ipfv}-be   \textsc{ifr}-\textsc{auto}-do-\textsc{du}\\ 
  \glt  ``Whoever can cause the people walking around to take off their clothes will be the victor'', they agreed.
 \end{exe} 
@@ -1048,7 +1077,7 @@ Base noun & Meaning & Associative & Meaning \\
 \begin{exe} 
  \ex 
 \gll   \ipab{toʁde} \ipab{tɕe} \ipab{tɕendɤre} \ipab{to-wzu} \ipab{nɤ} \ipab{to-wzu} \ipab{ri} \ipab{qale}  \ipab{ɲɤ-ɲat.} \ipab{ɲɤ-ɲat} \ipab{tɕe} \ipab{tɕendɤre,} \ipab{``wo,} \ipab{aʑo} \ipab{nɯ} \ipab{ma} \ipab{mɯ́j-cʰa-a",} \ipab{tɤŋe} \ipab{ɯ-ɕki,} \ipab{``nɤʑo} \ipab{wra} \ipab{tɤ-tsʰɤt"} \ipab{to-ti.} \\
-  an.instant \textsc{lnk} \textsc{lnk}  \textsc{ifr}-make \textsc{lnk} \textsc{ifr}-make \textsc{loc} wind  \textsc{evd}-be.tired \textsc{ifr}-be.tired \textsc{lnk} \textsc{lnk}   oh     1\textsc{sg} \textsc{dem} apart.from \textsc{neg}.\textsc{testim}-can-1\textsc{sg} sun  3\textsc{sg}.\textsc{poss}-\textsc{dat} 2\textsc{sg}    turn \textsc{imp}-try     \textsc{ifr}-say\\
+  an.instant \textsc{lnk} \textsc{lnk}  \textsc{ifr}-make \textsc{lnk} \textsc{ifr}-make \textsc{loc} wind  \textsc{ifr}-be.tired \textsc{ifr}-be.tired \textsc{lnk} \textsc{lnk}   oh     1\textsc{sg} \textsc{dem} apart.from \textsc{neg}.\textsc{testim}-can-1\textsc{sg} sun  3\textsc{sg}.\textsc{poss}-\textsc{dat} 2\textsc{sg}    turn \textsc{imp}-try     \textsc{ifr}-say\\
  \glt  After a moment, the wind became tired as he blew without pause. He told the sun: ``I can't do it any more, it is your turn, try it!''
 \end{exe} 
 
@@ -1056,8 +1085,8 @@ Base noun & Meaning & Associative & Meaning \\
 
 \begin{exe} 
  \ex 
-\gll   \ipab{tɕe} \ipab{tɤŋe} \ipab{nɯ} \ipab{kɯ} \ipab{kɯ-mɤku} \ipab{tɕendɤre,} \ipab{kɯ-sɤɕkɯɕke} \ipab{mɯ-jo-tɕɤt} \ipab{kɯ,} \ipab{kɯ-mɤku} \ipab{tɕendɤre} \ipab{ɯ-ɣot} \ipab{nɯ} \ipab{kɯ-ndʑɯndʑɤm} \ipab{ʑo} \ipab{jo-ɕtʰɯz,} \ipab{tɕe} \ipab{tɯrme} \ipab{ra} \ipab{nɯ-ɕki} \ipab{jo-ɕtʰɯz.} \\ 
-  \textsc{lnk} sun    \textsc{dem} \textsc{erg} \textsc{nmlz}:S/A-be.after  \textsc{lnk}   \textsc{nmlz}:S/A-\textsc{emph}:be.hot \textsc{neg}-\textsc{ifr}-take.off \textsc{erg} \textsc{nmlz}:S/A-be.after \textsc{lnk}  3\textsc{sg}.\textsc{poss}-sunray  \textsc{dem} \textsc{nmlz}:S/A-\textsc{emph}:be.warm \textsc{emph} \textsc{ifr}-turn.towards \textsc{lnk} man    \textsc{pl}  3\textsc{pl}.\textsc{poss}-\textsc{dat} \textsc{ifr}-turn.towards\\ 
+\gll   \ipab{tɕe} \ipab{tɤŋe} \ipab{nɯ} \ipab{kɯ} \ipab{kɯ-mɤku} \ipab{tɕendɤre,} \ipab{kɯ-sɤɕkɯ\tld{}ɕke} \ipab{mɯ-jo-tɕɤt} \ipab{kɯ,} \ipab{kɯ-mɤku} \ipab{tɕendɤre} \ipab{ɯ-ɣot} \ipab{nɯ} \ipab{kɯ-ndʑɯ\tld{}ndʑɤm} \ipab{ʑo} \ipab{jo-ɕtʰɯz,} \ipab{tɕe} \ipab{tɯrme} \ipab{ra} \ipab{nɯ-ɕki} \ipab{jo-ɕtʰɯz.} \\ 
+  \textsc{lnk} sun    \textsc{dem} \textsc{erg} \textsc{nmlz}:S/A-be.after  \textsc{lnk}   \textsc{nmlz}:S/A-\textsc{emph}\tld{}be.hot \textsc{neg}-\textsc{ifr}-take.off \textsc{erg} \textsc{nmlz}:S/A-be.after \textsc{lnk}  3\textsc{sg}.\textsc{poss}-sunray  \textsc{dem} \textsc{nmlz}:S/A-\textsc{emph}\tld{}be.warm \textsc{emph} \textsc{ifr}-turn.towards \textsc{lnk} man    \textsc{pl}  3\textsc{pl}.\textsc{poss}-\textsc{dat} \textsc{ifr}-turn.towards\\ 
  \glt  In the beginning, the sun did not send hot (sunrays), he sent warm sun rays on the people,
 \end{exe} 
 
