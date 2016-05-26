@@ -1,9 +1,8 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
-\usepackage{longtable}
 \usepackage{polyglossia} 
 %\usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -11,46 +10,73 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{lineno}
-\usepackage{textcomp}
 \usepackage{hyperref} 
-\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
-\usepackage{lscape}
  
 
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{\phon#1}} %API tjs en italique
  \newcommand{\jpg}[2]{\ipa{#1} `#2'} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\tld}{\textasciitilde{}}
 
 \XeTeXlinebreaklocale "zh" %使用中文换行
 \XeTeXlinebreakskip = 0pt plus 1pt %
- %CIRCG
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\factual}[1]{\textsc{:fact}}
+\newcommand{\rdp}{\textasciitilde{}}
  
 
 
 \begin{document} 
 
-\title{Complementation in Japhug Rgyalrong}%\footnote{} 
+\title{Complementation in Japhug Rgyalrong\footnote{The glosses follow the Leipzig glossing rules. Other abbreviations used here are: \textsc{auto}  autobenefactive-spontaneous, \textsc{anticaus} anticausative, \textsc{antipass} antipassive, \textsc{appl} applicative, \textsc{dem} demonstrative,  \textsc{emph} emphatic, \textsc{fact} factual, \textsc{genr} generic, \textsc{ifr} inferential, \textsc{indef} indefinite, \textsc{inv} inverse,  \textsc{lnk} linker, \textsc{pfv} perfective, \textsc{poss} possessor, \textsc{pres} egophoric present, \textsc{prog} progressive, \textsc{sens} sensory. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). Acknowledgements   will be added after editorial decision.}} 
 \author{Guillaume Jacques}
 \maketitle
 \linenumbers
- 
- 
+
 \section{Introduction}
- \citet[9]{dixon06complementation}
+systematic survey of the distribution of complement clauses among complement-taking verbs
  \citet{sun12complementation}
  \citet{jacques08}
-
+ \citet[9]{dixon06complementation}
 \section{Background information}
+This section first discusses the issue of unmarked adjuncts, which has incidence on the analysis of grammaticalization processes in Japhug, and then presents an account of participles and infinitives, which are historically related but synchronically distinct and easy to confuse, as both appear in complement clauses and need to be properly distinguished to provide a reliable description of the system.
 
-\subsection{Participles vs infinitives} 
+ \subsection{Unmarked arguments and adjuncts} \label{sec:adjuncts}
+Like all Gyalrong languages, Japhug is very strongly head-marking and lacks an elaborate system of case marking. Core arguments without case marking include intransitive subjects, objects and semi objects.\footnote{For the notion of semi-object and semi-transitive verbs in Japhug, see \citealt[4-5]{jacques16relatives}.} In addition, locative adjuncts and goals of motion verbs can either taken locative markers or be left unmarked.
+
+Another type of unmarked adjunct not previously described in the literature on Gyalrongic languages but crucial for understanding complement clauses and complementation strategies in Japhug is that of essive adjunct. Essive noun phrases are not arguments of the sentence, but are used to indicate `the property of fulfilling the role of an N' (\citealt[606]{creissels14functive}); in English for instance, they are marked by \textit{as} in a sentence such as `I am saying this \textit{as your friend}'.
+
+In Japhug, bare noun phrases, without any case marker, can be interpreted as essive adjuncts, as \ipa{nɤ-rʑaβ} `your wife' in (\ref{ex:YWtambi}), which is neither the object (recipient) or the theme of the verb \jpg{mbi}{give}
+
+\begin{exe}
+\ex \label{ex:YWtambi}
+\gll \ipa{a-me} 	\ipa{nɯ} 	\ipa{nɤ-rʑaβ} 	\ipa{ɲɯ-ta-mbi} 	\ipa{ŋu} \\
+\textsc{1sg.poss}-daughter \textsc{dem} \textsc{2sg.poss}-wife \textsc{ipfv}-1$\rightarrow$2-give be:\textsc{fact} \\
+\glt `I will give you my daughter in marriage. (=I will give her to you as your wife)'
+\end{exe}
+
+Noun phrases headed by the possessed noun \jpg{ɯ-spa}{material} are often used as an essive adjuncts as in (\ref{ex:zGAmbu.Wspa}), a construction that is in the process of grammaticalizing into a purposive phrase, and serves as a grammaticalization strategy with verbs of manipulation (see section \ref{sec:essive}).
+
+\begin{exe}
+\ex \label{ex:zGAmbu.Wspa}
+\gll \ipa{zɣɤmbu} 	\ipa{ɯ-spa} 	\ipa{ɲɯ-nɯ-pʰɯt-nɯ} 	\ipa{ŋgrɤl} \\
+broom \textsc{3sg.poss}-material \textsc{ipfv-auto}-cut-\textsc{pl} be.usually.the.case:\textsc{fact} \\
+\glt `They cut it to make brooms. (=as a material for brooms.)' (140505 sWjno, 22)
+\end{exe}
+
+\subsection{Participles vs infinitives} \label{sec:part.inf}
 All Gyalrong languages, including Situ (\citealt{youjing03zhuokeji}), Tshobdun (\citealt{sun12complementation}) and Japhug, have a distinction between infinitives and participles. The distinction is quite subtle, as there are both infinitives and participles in \ipa{kɯ-} and \ipa{kɤ-} (or \ipa{kə-} and \ipa{kɐ-} depending on the transcription system). Since both categories are formally similar and can occur in similar contexts, it is crucial to clearly explain the distinction between the two, especially since Japhug slightly differs from the other Gyalrong languages in this regard.
 
+\subsubsection{Participles}
 The system of core argument participles in Japhug is relatively straightforward (\citealt{jacques16relatives}). The prefix \ipa{kɯ-} is used to build the S-participle of intransitive verbs, and the A-participle of transitive verbs. A-participles differ from S-participles in having in addition a possessive prefix coreferent with the P, as in (\ref{ex:akWfstWn}).
 
 \begin{exe}
@@ -70,43 +96,140 @@ The prefix \ipa{kɤ-} on the other hand serves to build the P-participle, and ca
 \glt `I do not dare to eat the mushrooms that I do not know.' (23 mbrAZim,103)
 \end{exe}
 
+\subsubsection{Infinitives} \label{sec:infinitives}
 There are four types of infinitives in Japhug: \ipa{kɯ-}, \ipa{kɤ-}, \ipa{tɯ-} and bare infinitives. The latter two are restricted to very specific constructions (see \ref{sec:bareinf}), and only the former two types are discussed in this section. 
 
-Infinitives in \ipa{kɯ-} and \ipa{kɤ-} are used in three types of constructions: citation form, manner converb (\citealt{jacques14linking}) and infinitival complement. Infinitives in \ipa{kɤ-} are by far the most common form in Japhug. The \ipa{kɯ-} form is restricted to stative verbs (including adjectives, copulas and existential verbs), impersonal auxiliaries and some dynamic intransitive verbs when they do not have a human S, and even with these verbs, \ipa{kɤ-} infinitives are used in several contexts.
+Infinitives in \ipa{kɤ-} are by far the most common form in Japhug. The \ipa{kɯ-} form is restricted to stative verbs (including adjectives, copulas and existential verbs) and impersonal auxiliaries, but even with these verbs, \ipa{kɤ-} infinitives are used in several contexts. 
 
-The infinitives in \ipa{kɯ-} and \ipa{kɤ-} are used as the citation form; 
+Aside from complement clauses (for which see section \ref{sec:infinitives.compl}), infinitives are used in two types of constructions, a brief overview of which is provided below.
 
-They formally differ from participles in several ways. First, they cannot take possessive prefixes.
+First, infinitives occur as the citation forms of verbs and in metalinguistic discussion in Japhug, as in examples (\ref{ex:mAkWBdi}) and (\ref{ex:kAnARarphAB}) for stative vs non-stative infinitives.\footnote{This not the only available construction to express this -- the imperfective with generic person marking is also used (\citealt{jacques15generic}).}
 
-\subsection{Complement clauses vs complementation strategies} \label{sec:strategies}
+\begin{exe}
+\ex  \label{ex:mAkWBdi}
+ \gll \ipa{ɯnɯnɯ} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{ɯ-tɯ-tʂɯβ} 	\ipa{mɤ-kɯ-βdi} 	\ipa{tu-kɯ-ti} 	\ipa{ŋu} \\ 
+ \textsc{dem} \textsc{lnk} \textsc{lnk} \textsc{3sg.poss-nmlz:action}-sew \textsc{neg-inf:stat}-be.good  \textsc{ipfv-genr}:A-say be:\textsc{fact}  \\
+\glt  `People call this `badly sewn'.'  (12-kAtsxWb, 12)
+\end{exe}
 
-\section{Complement types}
-\subsection{Infinitive} 
+\begin{exe}
+\ex \label{ex:kAnARarphAB}
+ \gll \ipa{pjɯ-sɯ-ʁndi} 	\ipa{tɕe} 	\ipa{pjɯ-sɯ-sat.} \ipa{tɕe} 	\ipa{nɯ} 	\ipa{koʁmɯz} 	\ipa{nɤ} 	\ipa{cʰɯ-nɯtsɯm} 	\ipa{ɲɯ-ra.} \ipa{tɕe} 	\ipa{nɯnɯ} 	\ipa{kɤ-nɤʁarphɤβ} 	\ipa{tu-kɯ-ti} 	\ipa{ŋu} \\
+ \textsc{ipfv-caus}-hit[III]  \textsc{lnk} \textsc{ipfv-caus}-kill \textsc{lnk} \textsc{dem} only.then \textsc{lnk} \textsc{ipfv:downstream}-take.away \textsc{sens}-have.to \textsc{lnk} \textsc{dem} \textsc{inf}-strike.with.wings \textsc{ipfv-genr}:A-say be:\textsc{fact}  \\
+ \glt `It strikes it and kills it (with its wings) and only then takes it away. This is called \ipa{kɤ-nɤʁarphɤβ} `strike with one's wings'.' (hist150819 RarphAB, 11)
+\end{exe}
+
+In the topical position, the infinitive is neutralized to the \ipa{kɤ-} form even for stative verbs, as in (\ref{ex:kArZi}).
+
+\begin{exe}
+\ex \label{ex:kArZi}
+ \gll
+ \ipa{kɤ-rʑi} 	\ipa{ri} 	\ipa{pjɤ-rʑi,} 	  \\
+ \textsc{inf}-be.heavy also \textsc{ifr.ipfv}-be.heavy \\
+ \glt `As for being heavy, (the old man) was heavy.'  (140511 xinbada, 138)
+\end{exe}
+
+Second, infinitives are used as converbs to indicate the manner which the action of the main clause occurs (example \ref{ex:kANke.jari}), or a background event (\citealt{jacques14linking}). The \ipa{kɯ-} infinitive form occurs with stative verbs (as \jpg{sɤscit}{nice (of an environment)} in example \ref{ex:kWsAscWscit}) but it is also attested with a handful of dynamic verbs in lexicalized form such as \ipa{mɤ-kɯ-mbrɤt} `without stop' in (\ref{ex:mAkWmbrAt}).\footnote{The implied S of the verb \jpg{mbrɤt}{break, stop suddenly} (the anticausative of  \jpg{prɤt}{break}) in this sentence is the work of the subject.  } This latter use is the last trace of the contrast between human \ipa{kɐ-} and non-human \ipa{kə-} action nominals reported by \citet[476]{sun12complementation} and \citealt{jackson14morpho}, which otherwise appears to have been lost in the variety of Japhug under study.
+
+\begin{exe}
+\ex \label{ex:kANke.jari}
+\gll
+\ipa{kɤ-ŋke} 	\ipa{jɤ-ari} 	\ipa{pɯ-ra} \\
+\textsc{inf}-walk \textsc{pfv}-go[II] \textsc{pst.ipfv}-have.to \\
+\glt He had to go on foot. (elicited)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kWsAscWscit}
+\gll
+\ipa{ɕɤr} 	\ipa{tɕe} 	\ipa{nɯtɕu} 	\ipa{kɯ-sɤ-scɯ\tld{}scit} 	\ipa{ʑo} 	\ipa{ɕ-ku-nɯ-rŋgɯ} 	\ipa{ŋu} \\
+night \textsc{lnk} \textsc{dem:loc} \textsc{inf:stat-deexp-emph}\tld{}be.happy \textsc{emph} \textsc{transloc-ipfv-auto}-lie.down be:\textsc{fact} \\
+\glt `In the night, he goes in there to sleep cosily.' (26-NalitCaRmbWm, 35)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:mAkWmbrAt}
+\gll
+ \ipa{nɯ} 	\ipa{maka} 	\ipa{mɤ-kɯ-mbrɤt} 	\ipa{ʑo} 	\ipa{ɲɯ-rɤma} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe} \\
+ \textsc{dem} at.all \textsc{neg-inf-anticaus:}break \textsc{emph} \textsc{ipfv}-work \textsc{sens}-be:\textsc{affirm} \textsc{lnk} \\
+\glt `It works without stop.' (hist-26-GZo.txt 67)
+\end{exe}
+ 
+\subsubsection{Japhug vs Tshobdun} \label{sec:tshobdun.k}
+The inventory of participial and infinitive forms presented above for Japhug differs from other previous descriptions of Gyalrong languages. In Tshobdun, \citet[476]{sun12complementation} describes five types of verbs forms with \ipa{kə-} or \ipa{kɐ-} prefixes (Table \ref{tab:tshobdun.nmlz}), corresponding to Japhug \ipa{kɯ-} and \ipa{kɤ-} respectively.
+
+\begin{table}[H]
+\caption{Nominalization types in Tshobdun (\citealt[476]{sun12complementation}) } \label{tab:tshobdun.nmlz} \centering
+\begin{tabular}{lllllll}
+\toprule
+Type & Scope & Finiteness & Argument & Prefix \\
+&&&coding \\
+\midrule
+purposive & clausal & non-finite& possessor & \ipa{kə-} \\
+participant & clausal & non-finite& possessor & \ipa{kə-} (subject) \\
+&&&& \ipa{kɐ-} (object)\\
+infinitive & clausal & non-finite& normal &  \ipa{kɐ-}  \\
+action / state & clausal & non-finite& normal &  \ipa{kɐ-} [+human] \\
+&&&&\ipa{kə-}  [-human] \\
+finite  & clausal & finite& normal &  \ipa{kə-} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+While Japhug and Tshobdun have very close systems, the present analysis conflates some of Sun's categories. The correspondences between the two terminologies are as follows.
+
+First, the categories `purposive' and `participant' in Tshobdun in Table (\ref{tab:tshobdun.nmlz}) correspond to the Japhug participles. The difference here is partially terminological, but always has to do with the fact that in Japhug not just the subject participle, but also the object participle \ipa{kɤ-}, can appear as purposive complement of motion verbs (see section \ref{sec:SApart}) and there is little reason to distinguish between the two.
+
+Second, the categories `infinitive' and `action / state' in Table (\ref{tab:tshobdun.nmlz}) correspond to the Japhug infinitive. Tshobdun and Japhug differ by the fact that the humanity contrast on these non-finite forms, quite prominent in Tshobdun, has become marginal in the variety of Japhug under study, marking it unnecessary to differentiate between action/state nominalization and infinitive.
+
+Third, the category `finite', which refers to verbs forms prefixed in \ipa{kə-} with reduced inflection (no person / number marking), appear not to exist under exactly the same form in Japhug. \citet[481]{sun12complementation} mention the occurrence of these clauses with verb of pretence like \jpg{nəʃpəz}{pretend}. In Japhug, verbs of this type (like \jpg{nɯɕpɯz}{pretend}, cognate of the Tshobdun verb) do take clauses whose verb is prefixed in \ipa{kɯ-}, but there are reasons to analyze these as head-internal complement clause with a verb in participial form (see section \ref{sec:relative.q}) rather than postulating a distinct morphological category.
+
 
  
- 
+\section{Complement types} \label{sec:complement.types}
+This section illustrates the different categories of complements attested in Japhug. Five main types are distinguished: \ipa{kɤ-/kɯ-} infinitival complements, participial complements, bare infinitival complements, finite complements, reported speech and several complementation strategies.
 
-\subsubsection{Coreference between matrix and complement clause}
-The coreference restrictions of the arguments in the complement and in the matrix clause differ from verb to verb. Some infinitival complements present an ergative pivot: the S or A of the matrix clause is necessarily coreferent with the A or S of the complement clause (this is the case with the verb \ipa{spa} `be able', see section \ref{sec:spa}).
+\subsection{Infinitive} \label{sec:infinitives.compl}
+The most common type of complement clauses in Japhug are \ipa{kɤ-} and \ipa{kɯ-} infinitival complements. As seen in section \ref{sec:infinitives}, there are \ipa{kɤ-} and \ipa{kɯ-} infinitives in Japhug, the latter found in the citation form of stative verbs and modal impersonal auxiliary verbs. In complement clauses, stative verbs take the \ipa{kɤ-} infinitive like dynamic verbs in many cases.
+
+\subsubsection{Case marking} \label{sec:case.infinitive}
+While infinitives bear no person indexation markers, noun phrases receive the same case markers in infinitive clauses as in main clauses, showing that infinitives have the same argument structures as finite verb forms.
+
+When an argument is shared between the complement and the matrix clause, it often has a different syntactic function in the two clauses, as in \ref{ex:kAstu}, where \ipa{tɤɕime} `princess' is A in the complement clause (\jpg{stu}{do like this} is transitive) and S in the matrix clause (\jpg{cʰa}{can} is intransitive). 
+
+\begin{exe}
+\ex \label{ex:kAstu}
+\gll [\ipa{tɤɕime} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{nɯra} 	\ipa{kɤ-stu}] 	\ipa{pjɤ-cʰa} \\
+princess \textsc{dem} \textsc{erg} \textsc{dem:pl} \textsc{inf}-do.like.this \textsc{ifr}-can \\
+\glt `The princess succeeded in doing it.' (140511 alading, 252)
+\end{exe}
+
+In this sentence, the noun takes the ergative marker \ipa{kɯ} following the verb of the complement clause, showing that it belongs to the complement clause rather than to the matrix clause directly. This is the most commonly observed pattern in Japhug texts: in infinitival clauses, the shared arguments more often take the case marking selected by the verb of the complement clause than that of the matrix clause.
+
+\subsubsection{Coreference between matrix and complement clause} \label{sec:inf.coref}
+Coreference restrictions between complements in \ipa{kɤ-} finitives and the matrix clauses vary from verb to verbs, and three cases can be distinguished.
 
 
-Other verbs also allow coreference with the P of the complement clause. This is for instance the case of the semi-transitive verb \jpg{rga}{like}, whose S can be coreferent with either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW}) of its infinitival complement clause (\citealt{jacques16relatives}).
+First, in the case of impersonal verbs such as \jpg{ra}{have to, need} (see section \ref{sec:ra}), the complement clause is the S and there is no argument coereference between the matrix clause and the complement clause.
 
+Second, with a few transitive complement-taking verbs such as \ipa{spa} `be able' (see section \ref{sec:spa}), the subjects of both clauses must be coreferent.
+
+Third, for most verbs taking infinitives (like the semi-transitive \jpg{rga}{like} or the transitive \jpg{rɲo}{experience}), the subject of the matrix clauses can be coreferent to either the S  (\ref{ex:kAnWrAGo.rganW}), the A (\ref{ex:kAnArtoXpjAt.pWrgaa}) and even the P (\ref{ex:YWrganW} and \ref{ex:kAmtsWG.P})  of its infinitival complement clause (\citealt{jacques16relatives}).
 
  \begin{exe}
    \ex   \label{ex:kAnWrAGo.rganW} 
 \gll
 \ipa{tsuku}  	\ipa{tɕe}  	\ipa{kɤ-nɯrɤɣo}  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{rga-nɯ}  	\ipa{tɕe}  \\
 some \textsc{lnk} \textsc{inf}-sing really \textsc{emph} like:\textsc{fact-pl}  \textsc{lnk} \\
-  \glt Some people like to sing. (26 kWrNukWGndZWr, 104)
-     \end{exe}  
+\glt Some people like to sing. (26 kWrNukWGndZWr, 104)  (S=S)
+\end{exe}  
  
    \begin{exe}
    \ex   \label{ex:kAnArtoXpjAt.pWrgaa} 
 \gll
   	\ipa{aʑo}  	\ipa{qajɯ}  	\ipa{nɯ} \ipa{ra}  	\ipa{kɤ-nɤrtoχpjɤt}  	\ipa{pɯ-rga-a}  	\ipa{tɕe}  	\\
   	\textsc{1sg} bugs \textsc{dem} \textsc{pl} \textsc{inf}-observe \textsc{pst.ipfv}-like-\textsc{1sg} \textsc{lnk}  \\
- \glt I liked to observe bugs. (26 quspunmbro, 15)
+ \glt I liked to observe bugs. (26 quspunmbro, 15) (A=S)
      \end{exe}  
  
   \begin{exe}
@@ -114,53 +237,203 @@ some \textsc{lnk} \textsc{inf}-sing really \textsc{emph} like:\textsc{fact-pl}  
 \gll
 \ipa{maka}  	\ipa{tu-kɤ-nɤjoʁjoʁ,}  	\ipa{tu-kɤ-fstɤt}  	\ipa{nɯ}  	\ipa{ɲɯ-rga-nɯ}  \\
 at.all \textsc{ipfv-inf}-flatter \textsc{ipfv-inf}-praise \textsc{dem} \textsc{ipfv}-like-\textsc{pl} \\
-\glt They like to be flattered or praised. (140427 yuanhou, 53)
+\glt They like to be flattered or praised. (140427 yuanhou, 53) (P=S)
+    \end{exe}  
+      \begin{exe}
+   \ex   \label{ex:kAmtsWG.P} 
+\gll 
+\ipa{aʑo} 	\ipa{kɤ-mtsɯɣ} 	\ipa{mɯ-pɯ-rɲo-t-a} 	\ipa{ri,} 	\ipa{χpɤltɕɯn} 	\ipa{kɯ} 	\ipa{pjɤ-rɲo} 	
+ \\
+\textsc{1sg} \textsc{inf}-bite \textsc{neg-pfv}-experience-\textsc{pst:tr-1sg} but Dpalcan \textsc{erg} \textsc{ifr}-experience \\
+\glt I have never been stung (by a wasp), but Dpalcan has. (26-ndzWrnaR, 19) (P=A)
     \end{exe}  
 
-%S, A, P of ɣɤkhɯ
-Some verbs selecting S/A participle complement clauses use infinitive complement when there is coreference between the S of the matrix clause and the P of the complement clause (see section \ref{sec:SAparticiple.coref}).
-
-Absence of core argument coreference between matrix clause and infinitival complement clause occurs in two cases. 
-
-First, with intransitive impersonal modal verbs (such as \jpg{ra}{have to}, section \ref{sec:ra}), the whole complement clause is treated as the S of the matrix verb. 
-
-Second, there are examples of coreference between the S/A of the matrix clause and the possessor of the S rather than the S in the case of infinitival clause with experiencer verbs. This is for instance the case of the verb \ipa{mŋɤm} `hurt', which can only take a body part as its S -- the experiencer is indicated by a possessive prefix on the body part, as in (\ref{ex:YWmNAm}).
+The subject of the matrix clause can even be coreferent with the possessor of the S, as in example (\ref{ex:kAmNAm}). The that the the verb \ipa{mŋɤm} `hurt' in this infinitive clause can only take a body part as its S -- the experiencer is indicated by a possessive prefix on the body part, as in (\ref{ex:YWmNAm}).
  
+ \begin{exe}
+\ex \label{ex:kAmNAm}
+\gll \ipa{aʑo} 	\ipa{pɯ-xtɕɯ\tld{}xtɕi-a} 	\ipa{ʑo} 	\ipa{ri} 	\ipa{tɯxtɤŋɤm} 	\ipa{nɯ-atɯɣ-a} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-mŋɤm} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{1sg} \textsc{pst:ipfv-emph}\tld{}be.small-\textsc{1sg} \textsc{emph} \textsc{loc} dysentery \textsc{pfv}-meet-\textsc{1sg} \textsc{lnk} \textsc{dem} \textsc{inf}-hurt \textsc{pfv}-experience-\textsc{1sg} \\
+\glt `When I was very small, I had dysentery, (my belly) ached.'  (24-pGArtsAG, 121)
+\end{exe}
+
  \begin{exe}
 \ex \label{ex:YWmNAm}
 \gll \ipa{a-xtu} 	\ipa{ɲɯ-mŋɤm} \\
 \textsc{1sg.poss}-belly \textsc{sens}-hurt \\
 \glt `My belly hurts.' 
 \end{exe}
+
+
  
-This verb can nevertheless be  used as complement of verbs such as \jpg{rɲo}{experience} when the experiencer is coreferent with the A, as in example (\ref{ex:kAmNAm}).
- 
- \begin{exe}
-\ex \label{ex:kAmNAm}
-\gll \ipa{aʑo} 	\ipa{pɯ-xtɕɯ\tld{}xtɕi-a} 	\ipa{ʑo} 	\ipa{ri} 	\ipa{tɯxtɤŋɤm} 	\ipa{nɯ-atɯɣ-a} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-mŋɤm} 	\ipa{pɯ-rɲo-t-a} \\
-\textsc{1sg} \textsc{pst:ipfv-emph}\tld{}be.small-\textsc{1sg} \textsc{emph} \textsc{loc} dysentery \textsc{pfv}-meet-\textsc{1sg} \textsc{lnk} \textsc{inf}-hurt \textsc{pfv}-experience-\textsc{1sg} \\
-\glt `When I was very small, I had dysentery, (my belly) ached.'  (24-pGArtsAG, 121)
+ \subsubsection{Stative infinitive} \label{sec:stative.inf}
+Stative verbs, when occurring in a complement clause, generally take the \ipa{kɤ-} infinitive, as in example  (\ref{ex:rYo}) and (\ref{ex:kAscit}). The main verb of the complement clauses in these examples have the \ipa{kɤ-} infinitive, even though both \jpg{tu}{exist} and \jpg{scit}{be happy} are stative verbs and have a citation form with the \ipa{kɯ-} prefix.
+
+\begin{exe}
+\ex \label{ex:rYo}
+\gll \ipa{a-rŋɯl} 	\ipa{kɤ-tu} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{1sg.poss}-money \textsc{inf}-exist \textsc{pst:ipfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `I used to have money'. (elicited)
 \end{exe}
 
- \subsection{S/A participles} 
-This type of complements\footnote{Following Dixon, \citet{sun12complementation} treats complements of this type with motion verbs  in Tshobdun as a relativization strategy rather than as proper complements, since their are not core arguments of the verb. However, for the reasons explained in section (\ref{sec:strategies}), I do not consider them to be complementation strategies, as they are syntactically non-core argument of the verb.} are rarer than infinitival complements, and only attested with some motion verbs (\jpg{ɕe}{go}, \jpg{ɣi}{come}), verbs of pretence (\jpg{nɯɕpɯz}{pretend}, \jpg{ʑɣɤpa}{pretend}) and one aspectual verb  (\jpg{rɤŋgat}{be about to}).
+\begin{exe}
+\ex \label{ex:kAscit}
+ \gll \ipa{kɤ-scit} 	\ipa{pjɤ-ŋgrɯ} 	\ipa{ɲɯ-ŋu}  \\
+ inf-be.happy ifr-succeed sens-be \\
+ \glt `She succeeded in being happy.' (150818 muzhi guniang, 6)
+ \end{exe} 
+ 
+In complement clauses, \ipa{kɯ-} infinitives are uncommon, and only occur in three cases.
+ 
+ First, the conversion to \ipa{kɤ-} infinitive only applies to stative verbs, not to  impersonal modal verbs such as \jpg{ra}{have to, need}. When the latter occur in a complement clause, as in example (\ref{ex:kAndza.kWra}), they always have the \ipa{kɯ-} prefix.
 
-XXXX
-\subsubsection{Coreference between matrix and complement clause} \label{sec:SAparticiple.coref}
-Unlike motion verbs, verb of pretence such \jpg{nɯɕpɯz}{pretend} cannot be used with infinitival complement to express coreference of the S/A of the matrix clause with the P of the verb of the complement clause. The only way to express this meaning is by reflexivizing the verb of the complement clause with the prefix \ipa{ʑɣɤ-}, as in example (\ref{ex:pWkWZGAnWBlu} ).
+\begin{exe}
+\ex \label{ex:kAndza.kWra}
+\gll 
+\ipa{smɤn} 	\ipa{kɤ-ndza} 	\ipa{kɯ-ra} 	\ipa{pɯ-rɲo-t-a} \\ 
+medecine \textsc{inf}-eat \textsc{inf}-have.to  \textsc{pst:ipfv}-experience-\textsc{pst:tr-1sg} \\
+\glt  `I used to have to take medecine.' 
+\end{exe}
+ 
+ Second, complements of verb of perception or thought like \jpg{sɯpa}{consider as} or \jpg{sɯχsɤl}{recognize, realize} can take complement clauses with stative infinitives as objects, as in (\ref{ex:kWNu.nW}).
+\begin{exe}
+\ex \label{ex:kWNu.nW}
+\gll \ipa{ɯʑo} 	\ipa{srɯnmɯ} 	\ipa{kɯ-ŋu} 	\ipa{nɯ} 	\ipa{tɤ-wa} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{mɯ-pjɤ-sɯχsɤl,} 	\ipa{ɯ-nmaʁ} 	\ipa{nɯ} 	\ipa{kɯ} \\
+\textsc{3sg} râkshasî \textsc{stat.inf}-be \textsc{dem} \textsc{indef.poss}-father \textsc{dem} \textsc{erg} \textsc{neg-ifr}-recognize \textsc{3sg.poss}-husband \textsc{dem} \textsc{erg} \\
+\glt  `That she was a râkshasî, the father did not realize it, her husband.' (28-smAnmi, 62)
+\end{exe}
 
-  \begin{exe}
-   \ex   \label{ex:pWkWZGAnWBlu} 
-\gll \ipa{pɯ-kɯ-ʑɣɤ-nɯβlu} \ipa{to-nɯɕpɯz} \\
-\textsc{pfv-nmlz:S/A-refl}-cheat \textsc{ifr}-pretend \\
-\glt  `He pretended having been duped (=let himself be cheated).' (Elicitation)
-    \end{exe}  
+Third, some adjectives like \jpg{pʰɤn}{be efficient} can take stative infinitives (section \ref{sec:adj.infinitive})
+
+ \subsection{S/A participles} \label{sec:SApart}
+In Japhug, a handful of verbs select clauses with S/A-participles rather than infinitival clauses, including  some motion verbs (\jpg{ɕe}{go}, \jpg{ɣi}{come}, but not \jpg{rɟɯɣ}{run}) and one aspectual verb  (\jpg{rɤŋgat}{be about to}). These verbs are all morphologically intransitive.
+
+Example (\ref{ex:WkWnAjo}) illustrates this construction, with the A-participle \ipa{ɯ-kɯ-n-nɤjo} `waiting for him'. Note that the common argument shared between the participial clause (whose verb is transitive) and the matrix clause (whose verb is intransitive) takes the ergative, showing that it belongs to the participial clause, a pattern already observed with infinitival complement (see section \ref{sec:case.infinitive}).
+
+\begin{exe}
+\ex \label{ex:WkWnAjo}
+\gll [\ipa{ɯ-wa} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{kʰapa} 	\ipa{tɕe} 	\ipa{ɯ-kɯ-n-nɤjo}] 	\ipa{pjɤ-ɣi} \\
+\textsc{3sg.poss}-father \textsc{dem} \textsc{erg} downstairs \textsc{lnk} \textsc{3sg-nmlz:S/A-auto}-wait \textsc{ifr:down}-come \\
+\glt `His father had come downstairs to wait for him.' (140506 loBzi, 5)
+\end{exe}
+
+
+A similar construction is also found in Tshobdun, where \citet{sun12complementation} (Following Dixon) treats these clauses as a relativization strategy rather than as proper complements, since these clauses are not core arguments of the verb. However, this construction is highly grammaticalized and specific to a class of verbs which do not form a natural semantic class, which suggests that the participial clauses are selected by these verbs' argument structure. Though not core arguments, the participial clauses can be treated as an unmarked oblique arguments of the verb, and therefore be analyzed as genuine complement clauses.
+
+\subsubsection{S/A- vs P-participles} \label{sec:SAparticiple.coref}
+In examples such as (\ref{ex:WkWnAjo}), the S or A of the participial clause is obligatorily coreferent with the S of the matrix clause.
+
+Coreference between the P of the participial clause and the S of the matrix clause is possible but requires using the P-participle. Several examples of this construction are found in the corpus with the verb \jpg{nɤkʰu}{invite to one's home as a guest}, as in (\ref{ex:kAnAkhu}).
+
+\begin{exe}
+\ex \label{ex:kAnAkhu}
+\gll <xingqi> 	\ipa{raŋri} 	\ipa{ʑo} 	\ipa{tɕe} 	\ipa{nɯnɯ} \ipa{sɤβʑɯ} 	\ipa{ɣɯ} 	\ipa{ɯ-kʰa} 	\ipa{nɯtɕu} 	\ipa{kɤ-nɤkʰu}] 	\ipa{ju-ɣi} 	\ipa{pjɤ-ŋu} \\
+week each \textsc{emph} \textsc{lnk} \textsc{dem} mouse \textsc{gen} \textsc{3sg.poss}-house \textsc{dem:loc} \textsc{nmlz:P}-invite \textsc{ipfv}-come \textsc{ipfv.ifr}-be \\
+\glt `He would come as a guest to the mouse's house as a guest.' (150818 muzhi guniang, 299).
+\end{exe}
+
+We know that this form is the P-participle rather than the infinitive because it is possible to optionally add a possessive prefix coreferent with the A, as in (\ref{ex:akAnAkhu}).
+
+\begin{exe}
+\ex \label{ex:akAnAkhu}
+\gll 
+\ipa{a-kɤ-nɤkʰu} 	\ipa{jo-ɣi}  \\
+ \textsc{1sg.poss-nmlz:P}-invite \textsc{ifr}-come \\
+\glt `He came to my house as a guest.' (elicited)
+\end{exe}
+
+Coreference between the P of the complement clause and the S of the matrix clause is possible only if the P has control over the action, something that is possible for only verb few transitive verbs and explains the rarity of this construction. 
     
-    
+\subsubsection{Complements of participles}
+When a complement-bearing verb is itself in the S/A-participle form, it is possible for the complement either to be in the expected form (infinitive or finite), or to be in S/A-participle form itself by contagion, as in example (\ref{ndZikWsAndu}).
+
+\begin{exe}
+\ex \label{ndZikWsAndu}
+\gll [\ipa{rŋɯl} 	\ipa{kɯ} 	\ipa{ndʑi-kɯ-sɤndu}] 	\ipa{kɯ-cha} 	\ipa{kɯ-fse} 	\ipa{pɯ\tld{}pɯ-tu} 	\ipa{nɤ} \\
+silver \textsc{erg} \textsc{3du-nmlz}:S/A-exchange \textsc{nmlz}:S/A-can \textsc{nmlz}:S/A-be.like 
+\textsc{cond}\tld{}\textsc{pst.ipfv}-exist if \\
+\glt `If there was someone who could exchange (the life of two brothers) with money, ...' (140507 jinniao, 339)
+\end{exe}
+
+Such examples are rare, but not considered to be mistakes by consultants when listening again to the recordings.
+
+\subsubsection{Complement or relative clause?} \label{sec:relative.q}
+The transitive verb \jpg{nɯɕpɯz}{pretend, imitate} and the semi-transitive \jpg{ʑɣɤpa}{pretend} superficially appear to allow participial complements like motion verbs, as could be deduced from examples such as (\ref{ex:YWkWrABraR}). 
+
+\begin{exe}
+\ex \label{ex:YWkWrABraR}
+\gll \ipa{tɤ-mu} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{ɯ-ku} 	\ipa{ci} 	\ipa{ɲɯ-kɯ-rɤβraʁ} 	\ipa{to-nɯɕpɯz} \\
+\textsc{indef.poss}-mother \textsc{dem} \textsc{erg} \textsc{3sg.poss}-head \textsc{indef} \textsc{ipfv-nmlz}:S/A-scratch \textsc{ifr}-pretend \\
+\glt `The (rakshasi)-mother pretended to scratch her head.' (Slob.dpon1, 
+\end{exe}
+
+However, unlike verbs such as \jpg{ɕe}{go} or \jpg{rɤŋgat}{be about to},  coreference between the subject of pretence verbs and the subject of the verb in participial form is not required, as in example (\ref{ex:pGatCW.kWGAwu}).
+
+\begin{exe}
+\ex \label{ex:pGatCW.kWGAwu}
+\gll  \ipa{ɯ-zda} 	\ipa{nɯra,} 	\ipa{pɣɤtɕɯ} 	\ipa{kɯ-ɣɤwu,} 	\ipa{kʰɯna} 	\ipa{kɯ-ɤndzɯt,} 	\ipa{lɯlu} 	\ipa{kɯ-ɣɤwu} 	\ipa{qacʰɣa} 	\ipa{kɯ-mbri} 	\ipa{kɯ-fse,} 	\ipa{nɯra} 	\ipa{tu-nɯɕpɯz} 	\ipa{ɲɯ-spe.} \\
+\textsc{3sg.poss}-companion \textsc{dem:pl} bird \textsc{nmlz}:S/A-cry dog \textsc{nmlz}:S/A-bark cat \textsc{nmlz}:S/A-cry fox \textsc{nmlz}:S/A-cry \textsc{inf:stat}-be.like \textsc{dem:pl} \textsc{ipfv}-imitate \textsc{sens}-be.able[III] \\
+\glt `It is able to imitate other animals, cry like a bird, bark like a dog, mew like a cat or call like a fox.' (27-kikakCi, 141)
+\end{exe}
+
+Since the verb \jpg{nɯɕpɯz}{pretend, imitate} is transitive and can take as its P the person imitated by the A, as in (\ref{ex:tuWGnWCpWzndZi}), a different analysis of (\ref{ex:YWkWrABraR}) and (\ref{ex:pGatCW.kWGAwu}) offers itself: the phrases containing the S/A-participles there are not complement clauses, but in fact head-internal relatives.
+
+\begin{exe}
+\ex \label{ex:tuWGnWCpWzndZi}
+\gll \ipa{ɣzɯ} 	\ipa{ra} 	\ipa{kɯ} 	\ipa{li} 	\ipa{ʑɤni} 	\ipa{tú-wɣ-nɯɕpɯz-ndʑi} \\
+monkey \textsc{pl} \textsc{erg} again \textsc{3du} \textsc{ipfv-inv}-imitate-\textsc{du} \\
+\glt `The monkeys imitated the two of them (and repeatedly threw back the coconuts at them).' (140511 xinbada, 262)
+\end{exe} 
+
+Examples (\ref{ex:YWkWrABraR}) and (\ref{ex:pGatCW.kWGAwu}) could be literally translated as `The mother pretended to be someone who is scratching her head' and `It is able to imitate a crying bird' respectively. 
+
+In Tshobdun, \citet[481-2]{sun12complementation} posits a distinct category of \textit{finite nominalized predicates} in \ipa{kə-} to refer to the verb forms of clauses occurring with verbs of pretence, a few other complement-taking verbs and nominalized clause in core argument position. In Japhug, this analysis is not necessary for three reasons. 
+
+First, transitive verbs occurring with \jpg{nɯɕpɯz}{pretend} or \jpg{ʑɣɤpa}{pretend} take a possessive prefix coreferent with the object, optional if TAM or polarity prefixes are present (\ref{ex:WtukWrACi}) and obligatory if no other prefix is found.
+
+\begin{exe}
+\ex \label{ex:WtukWrACi}
+\gll \ipa{ɯ-ŋga} 	\ipa{ɯ-qʰu} 	\ipa{nɯ} 	\ipa{ɯ-tu-kɯ-rɤɕi} 	\ipa{ra} 	\ipa{to-ʑɣɤpa-nɯ}  \\
+\textsc{3sg.poss}-clothes \textsc{3sg.poss}-behind \textsc{dem} \textsc{3sg.poss-ipfv-nmlz}:S/A-pull \textsc{pl} \textsc{ifr}-pretend-\textsc{pl} \\
+\glt  `They pretended to pull the train of his gown.' (140521 huangdi de xinzhuang, 176)
+\end{exe}
+
+Second, verbs of pretence are compatible with object participles in \ipa{kɤ-}, with coreference of the subject of the main clause and the object of the participial clause (\ref{ex:CWkAnAkhu}).
+
+\begin{exe}
+\ex \label{ex:CWkAnAkhu}
+\gll   	\ipa{ɕɯ-kɤ-nɤkʰu} 	 \ipa{to-nɯɕpɯz}  \\
+ \textsc{transloc-nmlz:P}-invite \textsc{ifr}-pretend  \\
+\glt  `He pretended to go there as a guest.' (not: `He pretended to invite him.')
+\end{exe}
+
+Third, the prefix \ipa{kɯ-} in Japhug cannot be used to express action nominalization as the prefix \ipa{kə-} in Tshobdun (\citealt[482]{sun12complementation}). 
+
+For these reasons, despite the surface similarity of the constructions in Japhug and Tshobdun, there is no need to establish a morphological category distinct from participles in Japhug.
+
+From a historical perspective, it is possible that the use of participles as complements with motion verbs and with \jpg{rɤŋgat}{be about to} was grammaticalized from a construction with such a head-internal relative clause in essive function (cf section \ref{sec:adjuncts}) instead of P function, as in (\ref{ex:WkWnAjo2}). Reanalysis was complete when coreference between the subjects of the matrix and of the participle became obligatory.
+
+\begin{exe}
+\ex \label{ex:WkWnAjo2}
+\gll 	\ipa{ɯ-kɯ-nɤjo} 	\ipa{pjɤ-ɣi} \\
+ \textsc{3sg-nmlz:S/A}-wait \textsc{ifr:down}-come \\
+\glt *`He came as someone waiting for him' $\Rightarrow$ `He came to wait for him'. (from example \ref{ex:WkWnAjo})
+\end{exe}
+
+In order to test this hypothesis however, data from other Gyalrong languages, in particular Situ, need to be taken into account, and this topic has to be deferred to future work on comparative Gyalrong morphosyntax.
+%\begin{exe}
+%\ex   \label{ex:pWkWZGAnWBlu} 
+%\gll \ipa{pɯ-kɯ-ʑɣɤ-nɯβlu} \ipa{to-nɯɕpɯz} \\
+%\textsc{pfv-nmlz:S/A-refl}-cheat \textsc{ifr}-pretend \\
+%\glt  `He pretended having been duped (=He pretended to be someone who has let himself be cheated).' (Elicitation)
+%\end{exe}  
+
  \subsection{Bare infinitive and \ipa{tɯ-} infinitives} \label{sec:bareinf}
-A handful of verbs, namely \jpg{ʑa}{begin}, \jpg{sɤʑa}{begin} and \jpg{rɲo}{experience, have already} are compatible with bare infinitive complements. These verbs also allow \ipa{kɤ-} infinitives and/or finite complement clauses, though in the case of \jpg{ʑa}{begin} these are extremely rare.
+Several phasal verbs, such as \jpg{ʑa}{begin}, \jpg{sɤʑa}{begin}, \jpg{stʰɯt}{finish}, \jpg{jɤɣ}{finish}, causative verbs derived from adjectives such as \jpg{ɣɤtɕʰom}{overdo, do too much} or \jpg{ɣɤβdi}{do well} and the aspectual verb \jpg{rɲo}{experience, have already} are compatible with bare infinitival and \ipa{tɯ-} infinitival complements. The verbs \jpg{sɤʑa}{begin} and \jpg{rɲo}{experience} are more commonly used with \ipa{kɤ-} infinitives. With the exception of \jpg{jɤɣ}{finish}, these verbs are all transitive.
 
-Bare infinitives occur only with transitive verbs, and are formed by combining the stem 1 of the verb with a possessive prefix coreferent with the P of the complement clause, as in examples (\ref{ex:Wmto}).
+
+\subsubsection{Bare infinitives and transitivity}
+Bare infinitives, and are formed by combining the stem 1 of the verb with a possessive prefix coreferent with the object of the complement clause, as in examples (\ref{ex:Wmto}). Intransitive verbs have no bare infinitives.
 
 \begin{exe}
 \ex \label{ex:Wmto}
@@ -169,12 +442,27 @@ you \textsc{nmlz:stative}-be.like \textsc{1sg.poss}-subject \textsc{top} \textsc
 \glt  `I never saw anyone like you among my subjects.' (Smanmi metog koshana1.157)
 \end{exe} 
 
-Bare infinitives are in complementary distribution with \ipa{tɯ-} infinitives,  which occur when the verb of the complement is morphologically intransitive, and thus lacks a P. They are only compatible with polarity prefixes (as in example \ref{ex:mAtWrga} below), and cannot take TAM or possessive prefixes.
+Bare infinitives are in complementary distribution with \ipa{tɯ-} infinitives,  which occur when the verb of the complement is morphologically intransitive, and thus lacks an object. In this case, there is obligatory coreference between the A of the matrix verb and the S of the \ipa{tɯ-} infinitival complement. If overt, the noun phrase corresponding to the shared argument is generally in the absolutive form as in example \ref{ex:tWNke}, following the verb of the complement clause, though a few examples such as (\ref{ex:tWnWrAGo}) in the ergative are also attested.
 
-XXX
+\begin{exe}
+\ex \label{ex:tWNke}
+\gll
+<xinbada> 	\ipa{nɯ} 	\ipa{tɕe} 	\ipa{li} 	\ipa{tɯ-ŋke} 	\ipa{to-ʑa} \\
+Sinbad \textsc{dem} \textsc{lnk} again  \textsc{inf}-walk \textsc{ifr}-begin \\
+\glt `Sinbad started to walk again.' (140511 xinbada, 217)
+\end{exe}
 
 
-Semi-transitive verbs are treated like intransitive verbs: they cannot form a bare infinitive, and use \ipa{tɯ-} infinitives instead (example \ref{ex:mAtWrga}), although their semi-object does present some object-like syntactic properties (see \citealt{jacques16relatives}).  
+\begin{exe}
+\ex \label{ex:tWnWrAGo}
+\gll \ipa{pɣɤtɕɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{nɯɕɯmɯma} 	\ipa{ʑo} 	\ipa{tɯ-nɯrɤɣo} 	\ipa{cʰɤ-ʑa} \\
+bird \textsc{dem} \textsc{erg} immediately \textsc{emph} \textsc{inf}-sing \textsc{ifr}-begin \\
+\glt `The bird immediately started to sing.' (140514 huishuohua de niao, 221)
+\end{exe}
+
+These infinitives are only compatible with polarity prefixes (as in example \ref{ex:mAtWrga} below), and cannot take TAM or possessive prefixes.
+
+Crucially, semi-transitive verbs are treated like intransitive verbs: they cannot form a bare infinitive, and use \ipa{tɯ-} infinitives instead (example \ref{ex:mAtWrga}), although their semi-object does present some object-like syntactic properties (see \citealt{jacques16relatives}).  
 
 \begin{exe}
 \ex  \label{ex:mAtWrga}
@@ -197,9 +485,46 @@ The only exception to this distribution are some transitive verbs used in comple
 %\ipa{hanɯni} 	\ipa{ɯ-rŋa} 	\ipa{ra} 	\ipa{tɯ-ɣɯrni} 	\ipa{tɯ-βzu} 	\ipa{ɲɤ-ʑa} 
 %hist150820 meili de meiguihua
 
-Etymology: action nominalization or indefinite possessor?
+\subsubsection{Coreference restrictions} \label{sec:inf.rYo}
+Bare infinitives and \ipa{kɤ-} infinitives strongly differ as to their coreference restrictions. With \ipa{kɤ-} infinitives, the subject of the matrix clause can be coreferent with either the subject, the object or even the possessor of the intransitive subject of the complement clause (see example \ref{ex:kAmNAm} above). This ambiguity is particularly clear with the verb \ipa{nɤkʰu} `invite to one's home as a guest' (see examples \ref{ex:kAnAkhu1} and \ref{ex:kAnAkhu2}), as with this verb both arguments are equal in term of volition and control.
 
-Bare infinitive as an action nominal (\citealt{jacques14antipassive}):
+\begin{exe}
+\ex  \label{ex:kAnAkhu1}
+\gll
+\ipa{ɯʑo} 	\ipa{kɯ} 	\ipa{kɤ-nɤkʰu} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{3sg} \textsc{erg} \textsc{inf}-invite \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `I have been to his house as guest.'  (= `He has invited me to come to his house as a guest') (P=A)
+\ex  \label{ex:kAnAkhu2}
+\gll
+\ipa{ɯʑo} 	\ipa{kɤ-nɤkʰu} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{3sg}  \textsc{inf}-invite \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `He has been to my house as guest.' (= `I have invited him to come to my house as a guest.') (A=A)
+\end{exe}
+
+In the case of bare infinitives, on the other hand, the subjects of the matrix and complement clause must be identical, as shown by examples (\ref{ex:nAkhu1}) and (\ref{ex:nAkhu2}). The object of the matrix clause can however be neutralized to third person, as in (\ref{ex:nAkhu1}).
+
+\begin{exe}
+\ex  \label{ex:nAkhu1}
+\gll \ipa{a-nɤkʰu} 	\ipa{pa-rɲo} \\
+\textsc{1sg.poss-bare.inf:}invite \textsc{pfv:3$\rightarrow$3'}-experience \\
+\glt `I have been to his house as guest.' 
+\ex  \label{ex:nAkhu2}
+\gll \ipa{ɯʑo} 	\ipa{ɯ-nɤkʰu} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{3sg}  \textsc{3sg.poss-bare.inf:}invite \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `He has been to my house as guest.'
+\end{exe}
+
+This generalization is observed for all transitive verbs taking bare infinitive complement clauses. The intransitive impersonal verb \jpg{jɤɣ}{finish} takes the bare infinitive clause in S function, and remains in third person singular regardless of the subject and object of the complement clause, as in (\ref{ex:Wti.tojAG}), where although the subject of the complement clause is third person plural, no plural marker can appear on \ipa{jɤɣ}.
+
+\begin{exe}
+\ex \label{ex:Wti.tojAG}
+\gll \ipa{nɯra} 	\ipa{ɯ-ti} 	\ipa{to-jɤɣ} \ipa{tɕe} \\
+\textsc{dem:pl} \textsc{3sg.poss-bare.inf}:say \textsc{ifr}-finish \textsc{lnk}\\
+\glt `After having finished saying that, (they went to the park)' (140515 congming de wusui xiaohai, 15)
+\end{exe}
+
+\subsubsection{Historical origin}
+Bare infinitives probably derive from action nominals. There are marginal examples in Japhug of bare infinitives used in this way, as in example \ref{ex:bare.inf.noun})  (\citealt{jacques14antipassive}.
 
 \begin{exe}
 \ex \label{ex:bare.inf.noun}
@@ -207,25 +532,815 @@ Bare infinitive as an action nominal (\citealt{jacques14antipassive}):
 \textsc{3du.poss}-foot \textsc{3sg}-\textsc{bare.inf:}attach.to \textsc{3sg.poss}-form \textsc{dem:pl} very \textsc{emph}  \textsc{npst}:similar-\textsc{du}  \\
 \glt `The way their feet (of fleas and crickets) touch the ground is very similar.' (26-mYaRmtsaR, 17)
 \end{exe}
+
+The complementary distribution between the bare infinitive and the \ipa{tɯ-} infinitive is puzzling. There are at least two possible ways of analyzing the origin of  \ipa{tɯ-} infinitives. 
+
+
+First, they could be related to the \ipa{tɯ-} action nominals (\citealt{jacques14antipassive}), found in light verb constructions such as (\ref{ex:tWrJaR}) or (\ref{ex:tWtWtsxaB})\footnote{When the \ipa{tɯ-} nominalization prefix is reduplicated as in (\ref{ex:tWtWtsxaB}), it conveys the meaning of several persons/objects being subjected to the same action together. } and used to build abstract nouns (\ipa{si} `die' $\rightarrow$ \ipa{tɯ-si} `death'). This solution is attractive due to the fact that \ipa{tɯ-} action nominals are relatively common, but it does not account well for the complementary distribution of bare infinitives and \ipa{tɯ-} infinitives, since both intransitive and transitive verbs can build \ipa{tɯ-} action nominals.
+
+\begin{exe}
+\ex \label{ex:tWrJaR}
+\gll \ipa{tɯ-rɟaʁ} \ipa{pɯ-βzu-t-a} \\
+\textsc{nmlz:action}-dance \textsc{pfv}-do-\textsc{pst:tr-1sg} \\
+\glt `I danced.'
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tWtWtsxaB}
+\gll
+\ipa{kuxtɕo} 	\ipa{cʰondɤre}  	\ipa{kɯrtsɤɣ} 	\ipa{nɯra} 	\ipa{ɯ-pa} 	\ipa{nɯtɕu} 	\ipa{tɯ\tld{}tɯ-tʂaβ} 	\ipa{ʑo} 	\ipa{pjɤ-βzu} \\
+basket \textsc{comit} leopard \textsc{dem:pl} \textsc{3sg}-down \textsc{dem:loc} \textsc{together}\tld{}\textsc{nmlz:action}-cause.to.roll \textsc{emph} \textsc{ifr:down}-make \\
+\glt `(The rabbit) caused the leopard and the basket to roll down together.' (The rabbit 2002, 72)
+\end{exe}
+
+Second, one could interpret the \ipa{tɯ-} here as the indefinite possessor prefix \ipa{tɯ-}, which is added to inalienably possessed nouns when no definite possessor is present (\citealt{jacques15generic}). In this hypothesis, the bare infinitive takes a possessive prefix coreferent with its P with transitive verbs, but in the case of intransitive verbs, given the absence of P argument, the indefinite possessor is used instead.
+
+ \subsection{Finite complements} 
+Finite subordinate clauses are common in Japhug and other Gyalrong languages. For instance, some specific types of relative clauses (\citealt{jackson06guanxiju, jacques16relatives} or temporal subordinate clauses (\citealt{jacques14linking}) take a verb in finite form, in some case without subordinator.\footnote{Finite relatives, however, have some properties that distinguish them from corresponding independent clauses (\citealt[18-21]{jacques16relatives}).} Likewise, finite complement clauses are common in Japhug and other Gyalrong languages.\footnote{\citet[475-7]{sun12complementation} uses the term `S-like' (sentence-like) clause instead of `finite', which in his terminology refers to a different type of clause (see section \ref{sec:tshobdun.k}). I chose `finite' rather than `S-like' to avoid confusion with `S' as  `instransitive subject'. }
+
+
+\subsubsection{TAM forms} \label{sec:TAM.finite}
+Like finite relatives, there are constraints on the TAM forms that the main verb of a finite complement can take. three cases can be distinguished.
+
+The most common type of finite complement have their verb in the imperfective, regardless of the TAM category of the complement-taking verb, whether in sensory or imperfective form as in (\ref{ex:tundzxi}), in irrealis form as in (\ref{ex:tukWtɕata}) or even in inferential or perfective forms as in (\ref{ex:chWtinW}) adn (\ref{ex:tAtWsWsot}).
+
+\begin{exe}
+\ex \label{ex:tundzxi}
+\gll 
+\ipa{tɤjpa} 	\ipa{kɯ-xtɕɯ\tld{}xtɕi} 	\ipa{ka-lɤt} 	\ipa{ri,} 	\ipa{mɯ́j-ʁdɯɣ,} 	\ipa{pɤjkʰu} 	\ipa{tu-ndʐi} 	\ipa{ɲɯ-cʰa} \\
+snow \textsc{inf:stat-emph}\tld{}be.small \textsc{pfv}:3$\rightarrow$3'-throw but \textsc{neg:sens}-be.serious still \textsc{ipfv}-melt \textsc{sens}-can \\
+\glt `There was a little snow, but it doesn't matter, it can still melt.' (conversation, 2015/12/17)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tukWtɕata}
+\gll 
+\ipa{nɤʑo} 	\ipa{koŋla} 	\ipa{ʑo} 	\ipa{tu-kɯ-tɕat-a} 	\ipa{a-pɯ-tɯ-cʰa} 	\ipa{a-pɯ-ŋu} 	\\
+\textsc{2sg} really \textsc{emph} \textsc{ipfv}-2$\rightarrow$1-take.out-\textsc{1sg} \textsc{irr-ipfv}-2-can \textsc{irr-ipfv}-be \\
+\glt `If you can take me out of here...' (140516 huli de baofu, 82)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:chWtinW}
+\gll 
+\ipa{ko-spa-nɯ} 	\ipa{qʰendɤre,} 	\ipa{nɯnɯ} 	\ipa{rɤɣo} 	\ipa{cʰɯ-tɯ-ʑa} 	\ipa{qʰe,} 	\ipa{tɤrcɯrca} 	\ipa{ʑo} 	\ipa{cʰɯ-ti-nɯ} 	\ipa{to-cʰa-nɯ.} \\
+\textsc{ifr}-be.able-\textsc{pl} \textsc{lnk} \textsc{dem} song \textsc{ipfv-imm}-start \textsc{lnk} together \textsc{emph} \textsc{ipfv}-say-\textsc{pl} \textsc{ifr}-can-\textsc{pl} \\
+\glt `They had learned (its songs) and as soon as it would start his song, they had become able to sing together with it.' (140519 yeying, 156)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tAtWsWsot}
+\gll \ipa{a-rɤɣo} 	\ipa{ɲɯ-tɯ-sɤŋo} 	\ipa{tɤ-tɯ-sɯso-t} 	\ipa{tɕe,} 	\ipa{a-ɣɯ-jɤ-kɯ-sɯ-ɣe-a} 	\ipa{qʰe} 	\ipa{nɯ} 	\ipa{ɕti} \\
+\textsc{1sg.poss}-song \textsc{ipfv}-2-listen \textsc{pfv}-2-think-\textsc{tr:pst} \textsc{lnk} \textsc{irr-cisloc-pfv-2$\rightarrow$1-caus-come}-1sg \textsc{lnk} \textsc{dem} be.\textsc{affirm:fact} \\
+\glt `When you want to listen to my song, just come and ask me.' (140519 yeying, 238)
+\end{exe}
+
+Second, some complement-taking verbs, including impersonal modal verbs such as \jpg{ntsʰi}{have better}, \jpg{ɬoʁ}{have to} or \jpg{ra}{have to, need} or transitive verbs such as \jpg{sɯso}{think} allow complements in the irrealis form, as (\ref{ex:amApWwGnWClWG}).\footnote{The same is also found in Tshobdun, see \citet[483]{sun12complementation}.}
+
+\begin{exe}
+\ex \label{ex:amApWwGnWClWG}
+\gll 
+\ipa{ndɤre} 	\ipa{kɯ-xtɕɯ\tld{}xtɕi} 	\ipa{a-mɤ-pɯ́-wɣ-nɯ-ɕlɯɣ} 	\ipa{ɲɯ-ra} 	\ipa{ma} 	\ipa{rca} 	\ipa{nɯ} 	\ipa{ɲɯ-ndoʁ} 	\ipa{qʰe} 	\ipa{ɕlaʁ} 	\ipa{ʑo} 	\ipa{pjɯ-ɴɢrɯ} 	\ipa{ɲɯ-ɕti} \\
+\textsc{lnk} \textsc{inf:stat-emph}\tld{}be.small \textsc{irr-neg-pfv:down-inv-auto}-drop \textsc{sens}-need because \textsc{unexpectedly} \textsc{dem} \textsc{sens}-be.brittle \textsc{lnk} at.once \textsc{emph} \textsc{ipfv-acaus}:break \textsc{sens}-be:\textsc{affirm} \\
+\glt `However, one should not let it drop even a little, otherwise, as it is very brittle, it would break.' (30-Com, 27)
+\end{exe}
+
+
+Third, some transitive or semi-transitive verb-taking complements, such as \jpg{cʰa}{can}, may occur in a construction in which both the verb of the matrix clause and that of the complement clause share the same subject and the same TAM category, in particular in the case of inferential or perfective forms (as in \ref{ex:lomWrkW} and \ref{ex:nanACqa}), which are otherwise not found in complement clauses of matrix verbs other than verbs of speech or thought.\footnote{Note the difference of meaning of \jpg{cʰa}{can} with an imperfective finite complement (as in example \ref{ex:chWtinW}) and when the complement clause takes the inferential -- `become able to X' in the former case, and `succeed in Xing' in the second.}
+\begin{exe}
+\ex \label{ex:lomWrkW}
+\gll 
+\ipa{tarmgɯnku} 	\ipa{ɯ-ʑɯβdaʁ} 	\ipa{nɯnɯ} 	\ipa{kɯ-mɯrkɯ} 	\ipa{cʰɤ-ɕe.} 	\ipa{tɕe} 	\ipa{tɯ-ci,} 	\ipa{nɤki} 	\ipa{tɯ-tsʰɤʁrɯ} 	\ipa{nɯ,} 	\ipa{ɯnɯnɯ} 	\ipa{lo-mɯrkɯ} 	\ipa{pjɤ-cʰa.} \\
+Dar.mgon \textsc{3sg.poss}-tutelary.spirit \textsc{dem} \textsc{nmlz}:S/A-steal \textsc{ifr:downstream}-go \textsc{lnk} \textsc{indef.poss}-water \textsc{dem} one-goat.horn \textsc{dem} \textsc{dem} \textsc{ifr}-steal \textsc{ifr}-can \\
+\glt The tutelary spirit of Darmgon went to steal it, and the goat horn full of water, he succeeded in stealing it. (02-montagnes-kamnyu-cz)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:nanACqa}
+\gll \ipa{tɤ-ari-ndʑi} 	\ipa{ndɤre,} 	\ipa{ʑŋgri} 	\ipa{cʰo} 	\ipa{ra} 	\ipa{nɯ-pʰe} 	\ipa{lonba,} 	\ipa{tɤŋe} 	\ipa{cʰo} 	\ipa{slɤŋe} 	\ipa{ra} 	\ipa{nɯ-pʰe} 	\ipa{ra} 	\ipa{lonba} 	\ipa{na-nɤɕqa} 	\ipa{pɯ-cʰa} 	\ipa{ɲɯ-ŋu.} \\ 
+\textsc{pfv}-go[II]-\textsc{du} \textsc{lnk} star \textsc{comit} \textsc{pl} \textsc{3pl-dat} all sun \textsc{comit} moon \textsc{pl} \textsc{3pl-dat} \textsc{pl} all \textsc{pfv}:3$\rightarrow$3'-resist \textsc{pfv}-can \textsc{sens}-be \\
+\glt `When they went up(the sky), he succeeded in resisting (the cold) near the stars, the sun and the moon. (the demon 2003, 108-109)
+\end{exe}
+
+Constructions like (\ref{ex:lomWrkW})or (\ref{ex:nanACqa}), where the verbs of both the matrix and the complement clause share the same TAM form and the same subject superficially resemble serial verb constructions (section \ref{sec:serial}). They can be distinguished however by the fact in serial verb constructions, both verbs must share not only the same TAM marking and subject, but also the same transitivity and (if applicable) the same object.
+
+Fourth, complements in direct or hybrid indirect speech (in the case of verbs of speech and thought) do not have restrictions on TAM or person marking as other types of finite complements (see section \ref{sec:reported}).
+
+\subsubsection{Coreference restrictions} \label{sec:finitie.coref}
+Verbs taking finite complements can be divided into three groups depending on the coreference restrictions between complement and matrix clause.
+
+First, verbs such as \jpg{cʰa}{can} require subject coreference between the clauses. For instance, in (\ref{ex:matWcha}) and (\ref{ex:machaa}), the semi-transitive main verb \jpg{cʰa}{can} respectively takes second and first singular person indexation, like the subject of the transitive complement verbs. Absence of person indexation on the verb of the matrix clause or indexing the object of the complement clause is impossible.
+
+\begin{exe}
+\ex \label{ex:matWcha}
+\gll \ipa{aʑo} 	\ipa{ɲɯ-kɯ-ɕɯɣ-mu-a} 	\ipa{mɤ-tɯ-cʰa} \\
+\textsc{1sg} \textsc{ipfv-2$\rightarrow$1-caus}-be.afraid \textsc{neg}-2-can:\textsc{fact} \\
+\glt `You cannot scare me.' (140516 guowang halifa, 54)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:machaa}
+\gll
+\ipa{cʰɯ-ta-ɕɯ-fka} 	\ipa{mɤ-cʰa-a} \\
+\textsc{ipfv-1$\rightarrow$2-caus}-be.satiated \textsc{neg}-can:\textsc{fact-1sg} \\
+\glt `(If you eat me, as I am lean,) I will not be able to satiate your hunger.' (140516 guowang halifa, 92)
+\end{exe}
+
+Second, other verbs such as \jpg{rga}{like} allow coreference of the subject of the main clause with either the subject or the object of the complement clause (as in \ref{ex:tukWnAjoRjoRa}).
+
+\begin{exe}
+\ex \label{ex:tukWnAjoRjoRa}
+\gll \ipa{nɤʑo} \ipa{kɯ} \ipa{tu-kɯ-nɤjoʁjoʁ-a} \ipa{nɯra}	\ipa{rga-a} \\
+\textsc{2sg} \textsc{erg} ipfv-2$\rightarrow$1-flatter-\textsc{1sg} \textsc{dem:pl} like:\textsc{fact-1sg} \\
+\glt `I like when you flatter me.' (elicited)
+\end{exe}
+
+Unlike infinitival complements (as in example (\ref{ex:kAmNAm}), coreference with a possessor is not possible. While it is possible to say (\ref{kAmNAm2}), it is not grammatical to use a finite complement here, and one cannot replace the infinitive \ipa{kɤ-mŋɤm} (\textsc{inf}-hurt) with a finite form such as \ipa{ɲɯ-mŋɤm} (\textsc{sens}-hurt) for instance.
+
+\begin{exe}
+\ex \label{kAmNAm2}
+\gll \ipa{a-xtu} \ipa{kɤ-mŋɤm} \ipa{mɤ-rga-a} \\
+\textsc{1sg.poss}-belly \textsc{inf}-hurt \textsc{neg}-like:\textsc{fact-1sg} \\
+\glt `I don't like to have belly ache.' (elicited)
+\end{exe}
+
+Third, in the case of complement clauses in S function, the verb of the matrix remains in third person singular form regardless of the person of the subject and object in the complement clause, as in (\ref{ex:zYWCara}).
+
+\begin{exe}
+\ex \label{ex:zYWCara}
+\gll \ipa{ki} 	\ipa{maka} 	\ipa{qala} 	\ipa{kɯ} 	\ipa{pjɤ́-wɣ-nɯβlu-a} 	\ipa{tɕe} 	\ipa{z-ɲɯ-ɕar-a} 	\ipa{ɲɯ-ntsʰi}\\ 
+\textsc{dem} at.all rabbit \textsc{erg} \textsc{ifr-inv}-cheat-\textsc{1sg} \textsc{lnk} \textsc{transloc-ipfv}-search-\textsc{1sg} \textsc{sens}-have.better \\
+\glt `That rabbit has cheated me, I have to go to look for him.' (31-qala, 39)
+\end{exe}
+
+\subsection{Complement-taking nouns} \label{sec:comp.noun}
+ Not all all subordinate clauses modifying a noun should be analyzed as relative clauses: only subordinate clauses whose head noun (overt or covert) has a syntactic role in the clause (whether argument, adjunct or noun modifier) can be considered to be relative clause (\citealt{jackson06guanxiju, jacques16relatives})
+
+ In examples \refb{ex:kAnWrAGo} and \refb{ex:jWm}, the head nouns \jpg{ɯ-skɤt}{his voice} and \jpg{ftɕaka}{method, manner} are neither a core argument nor an adjunct. It is not possible to transform the subordinate clause into an independent clause that would include these nouns. Such sentences are thus complement clauses, rather than relatives, despite having a noun rather than a verb as their head.
+
+\begin{exe}
+   \ex  \label{ex:kAnWrAGo}
+\gll   
+[\ipa{kɤ-nɯrɤɣo}]  \textbf{\ipa{ɯ-skɤt}} 	\ipa{ɲɯ-sna}  \\
+\textsc{inf}-sing \textsc{3sg.poss}-voice \textsc{testim}-nice \\
+\glt He has a beautiful voice (when he sings) (elicited)
+   \end{exe}
+   
+   \begin{exe}
+   \ex  \label{ex:jWm}
+\gll
+[[\ipa{jɯm}  	\ipa{kɤ-ɕar}]  	  \textbf{\ipa{ftɕaka}}]   \ipa{ɣɯ}	 	\ipa{tɯ-rɟaʁ}    	\ipa{sɯ-βzu-j}  \\
+wife:\textsc{hon} \textsc{inf}-search   method   \textsc{gen} \textsc{nmlz:action}-dance \textsc{caus}-do:\textsc{fact}-\textsc{1sg} \\ 
+\glt Let us make dances to look for a wife (for the prince). (The Prince, 8)
+   \end{exe}
+
+ Example \ref{ex:biaozhun} illustrates a similar example with a subordinative clause including a stative verb.
  
+\begin{exe}
+   \ex  \label{ex:biaozhun}
+\gll   
+ 	[\ipa{tɕʰeme}  	\ipa{kɯ-pe}  	\ipa{mɤ-kɯ-pe}]  	\ipa{nɯ}  	\ipa{ɣɯ}  	\ipa{koŋla}  	\ipa{ʑo}  	\ipa{ɯ}-<biaozhun>  	\ipa{ɲɯ-ŋu,}  \\
+woman \textsc{inf:stative}-good \textsc{neg-inf:stative}-good \textsc{top} \textsc{gen} really \textsc{emph} \textsc{3sg.poss}-criterion \textsc{sens}-be \\
+\glt It is a criterion (by which one judges whether) a woman is good or bad. (Coloured belts, 100)
+   \end{exe}
+
+There are also examples of finite subordinate clauses of this type, with nouns relating to  speech and information, such as the possessed nouns \ipa{-fɕɤt} `story' or \ipa{-tɕʰa} `information', as in examples  \ref{ex:WfCAt} and \ref{ex:WtCha}.
+
+\begin{exe}
+   \ex  \label{ex:WfCAt}
+\gll   \ipa{tɕeri}  	[\ipa{zlawiɕɤrɤβ}  	\ipa{kɯ}  	\ipa{tɕʰoz}  	\ipa{pɯ-asɯ-zgrɯβ}]  	\ipa{ɯ-fɕɤt}  	\ipa{tu}  	\ipa{ma}  	[\ipa{jɯm}  	\ipa{pɯ-asɯ-ɕar}]  	\ipa{ɯ-fɕɤt}  	\ipa{me}  \\
+but Zlaba.shesrab \textsc{erg} religion \textsc{pst.ipfv-prog}-accomplish \textsc{3sg.poss}-story
+exist:\textsc{fact} but wife:\textsc{hon} \textsc{pst.ipfv-prog}-search \textsc{3sg.poss}-story not.exist:\textsc{fact} \\
+\glt People say that Zlaba shesrab was studying religion, not that he was looking for a wife.  (The prince, 79-80)
+\end{exe}
+
+\begin{exe}
+   \ex  \label{ex:WtCha}
+\gll   
+[<donggua>  	\ipa{cʰo}  	<qiezi>  	\ipa{ni}  	\ipa{tɕʰi}  	\ipa{ʑo}  	\ipa{mɯ́j-natɕɯɣ}]  	\ipa{ɣɯ}  	\ipa{ɯ-tɕʰa}  	\ipa{a-jɤ-tɯ-ɣɯt}  	\ipa{ra}  \\
+gourd and eggplant \textsc{du} what \textsc{emph} \textsc{neg:testim}-similar \textsc{gen} \textsc{3sg.poss}-information \textsc{irr-pfv}-2-bring need:\textsc{fact} \\
+\glt You have to come to tell me in what way gourd and eggplant are different. (yici bi yici you jinbu 7)
+\end{exe}
+
+ Complement-taking nouns can be used in noun-verb collocations such as \ipa{ɯ-tsa+βzu} `fit well' (example \ref{ex:Wtsa.Zo}).
+
+ \begin{exe}
+\ex \label{ex:Wtsa.Zo}
+\gll
+\ipa{qraʁ} 	\ipa{ɯ-ŋgɯ} 	\ipa{pjɯ́-wɣ-rku} 	\ipa{ɯ-tsa} 	\ipa{ʑo} 	\ipa{ku-βze} 	\ipa{nɯ} 	\ipa{ɲɯ-βzu-nɯ.} \\
+ploughshare \textsc{3sg.poss}-inside \textsc{ipfv-inv}-put.in \textsc{3sg.poss}-fit.well \textsc{emph} \textsc{ipfv}-make[III] \textsc{ipfv}-make-\textsc{pl} \\
+ \glt `People shape it (the hole to insert the ploughshare) in such a way that the ploughshare fits right in.' (24-mbGo, 30)
+\end{exe}
+
+
+Another common collocation of this type is \ipa{ftɕaka+βzu} do ... (from  \jpg{ftɕaka}{method, manner} and  \jpg{βzu}{do, make}), which can either mean  `do by any means possible' as in \refb{ex:kongzhi} or `prepare to X' (as in \ref{ex:kAtAB}; in this meaning, this collocation is homonymous with the denominal verb \jpg{nɯftɕaka}{prepare to}).
+
+ \begin{exe}
+\ex \label{ex:kongzhi}
+\gll \ipa{a}-<xuetang> 	\ipa{ɯ-tɯ-mbro} 	<kongzhi>	\ipa{tu-βze-a} 	\ipa{ŋu,}  \ipa{mɯ-tu-kɤ-mbro} 	\ipa{ftɕaka} 	\ipa{tu-βze-a} 	\ipa{ŋu} \\
+\textsc{1sg.poss}-blood.sugar \textsc{3sg.poss-nmlz:action}-be.high control \textsc{ipfv}-do[III]-\textsc{1sg} be:\textsc{fact} \textsc{neg-ipfv-inf}-be.high \textsc{ipfv}-do[III]-\textsc{1sg} be:\textsc{fact} \\
+\glt `I do whatever I can to prevent my blood sugar to be too high'. (conversation, 15/12/05)
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:kAtAB}
+\gll
+ \ipa{qartsɤβ} 	\ipa{kɤ-kɤ-βzu} 	\ipa{ra} 	\ipa{kɤ-tɤβ} 	\ipa{ftɕaka} 	\ipa{ɣɯ-βzu} 	\ipa{ra} \\
+ harvest \textsc{pfv-nmlz:P}-make \textsc{pl} \textsc{inf}-thresh manner \textsc{inv}-make have.to:\textsc{fact} \\
+ \glt `Then one has to prepare to thresh the (cereals) that have been harvested.' (2010.10-tArAku, 71)
+\end{exe}
+
+
+
+\subsection{Reported speech} \label{sec:reported}
+Verbs of speech and cognition can take reported speech complements, in which the speaker either (exactly or partially) reproduces a sentence uttered by the person he is quoting, or verbalizes the words he assumes a person is thinking. These clauses have finite verb forms, and are thus a sub-category of finite complement clauses, but present some properties distinguishing them from the complements studied in the previous section.
+
+While Japhug allows direct speech quotation, the corpus reveals examples of mismatches between the viewpoint of the original speaker (the person whose speech or thoughts are quoted) and the current speaker (the person quoting the words of the original speaker), which following \citet{tournadre08conjunct} I will refer to as Hybrid Indirect Speech (also called Semi-Indirect Speech, \citet{aikhenvald08semidirect}). In Hybrid Indirect Speech, the verb morphology (in particular person indexation) invariably presents the viewpoint of the original speaker, while pronouns and adverbs follow that of the current speaker.
+
+Since grammatical relations are mainly marked by verb morphology, and overt pronouns 
+are not common in texts in Japhug and other Gyalrongic languages (a typological feature shared with Kiranti languages, see \citealt{bickel01deictic}), distinguishing between Direct Speech and Hybrid Indirect Speech is only possible in a minority of cases. Mismatch between pronouns and person indexation only occurs when a pronoun or possessive prefix is overt and when at least one argument in the sentence is referred to by a different person form by the original speaker and the current speaker. 
+
+Example \refb{ex:nWGi.kAsWso} provides an example of this phenomenon. The verb \ipa{nɯɣi} `he comes/will come back (home)' in the complement clause of the verb \ipa{kɤ-sɯso} `think' is in the Factual third person singular form. In the same clause, we however find the second person singular pronoun \ipa{nɤʑo} `you_s'; there is no pause between the pronoun and the verb, and no indication from the prosody that \ipa{nɤʑo} is left-dislocated. 
+
+This type of mismatch between pronouns and indexation on the verb is anomalous and never found in independent sentences. Here the verb form corresponds to the point of view of the original speaker (indicated in blue in all following examples), whose original sentence would have been \ipa{ɯʑo nɯɣi} \textsc{2sg} {come.back:\textsc{fact}} `he is coming back'. The pronoun reflects the point of view of the current speaker (in red), for whom the equivalent sentence would be converted to \ipa{nɤʑo tɯ-nɯɣi} \textsc{2sg} {2-come.back:\textsc{fact}} `you are coming back', since the addressee of the current situation corresponds to the subject of the original situation.
+
+Three distinct translations are proposed here: a direct speech translation, reproducing the words pronounced by the original speaker, an indirect speech translation, and an attempt at representing Japhug Hybrid Indirect Speech in English.
+
+\begin{exe}
+\ex \label{ex:nWGi.kAsWso}
+\gll 
+\ipa{ma} \ipa{nɤ-wa}  	\ipa{kɯ}  	[\rouge{\ipa{nɤʑo}} 	\bleu{\ipa{nɯɣi}}]  	\ipa{kɤ-sɯso}  	\ipa{kɯ}  	\ipa{kʰa}  	\ipa{ɯ-rkɯ} \ipa{tɕe} 	\ipa{ʁmaʁ}  	\ipa{χsɯ-tɤxɯr}  	\ipa{pa-sɯ-lɤt}  	\ipa{ɕti}  	\ipa{tɕe}  \\
+\textsc{lnk} \textsc{2sg.poss}-father \textsc{erg} \textsc{2sg} {come.back:\textsc{fact}}  \textsc{inf}-think \textsc{erg} house \textsc{3sg.poss}-side \textsc{lnk} soldier three-circle \textsc{pfv:3$\rightarrow$3'-caus}-throw be.\textsc{affirm}:\textsc{fact} \textsc{lnk}\\
+\glt \textbf{Direct}: Your father, thinking `\bleu{He is coming back}',   put three circles of soldiers around the house. 
+\glt  \textbf{Indirect}: Your father, thinking that \rouge{you are coming back},
+\glt  \textbf{Hybrid indirect}: Your father, thinking that `\rouge{you}' \bleu{is coming back}, (qachGa 2003, 154)
+\end{exe}
+   
+Examples \refb{ex:tunAmea} and \refb{ex:juGWta} illustrate the case of possessive prefixes on nouns, which undergo the same shift towards the point of the view of the current speaker, while the verb remains in the same form that was either thought or uttered by the original speaker.
+
+\begin{exe}
+\ex \label{ex:tunAmea}
+\gll  \ipa{tɕendɤre}  	\ipa{ta-ʁi}  	\ipa{nɯ}  	\ipa{kɯ}  	[\rouge{\ipa{ɯ-pi}}  	\ipa{ɣɯ}  	\ipa{ɯ-sci}  	\bleu{\ipa{tu-nɤme-a}}  	\ipa{ra}] 	\ipa{ɲɤ-sɯso}  	\ipa{tɕe,}  	\\
+\textsc{lnk}  \textsc{indef.poss}-younger.sibling \textsc{dem} \textsc{erg}  {\textsc{3sg.poss}-elder.sibling}  \textsc{gen} \textsc{3sg.poss}-revenge {\textsc{ipfv}-make[III]-\textsc{1sg}} have.to:\textsc{fact} \textsc{ifr}-think \textsc{lnk} \\
+\glt  \textbf{Direct}: The (younger) sister thought ``\bleu{I have to get revenge} on {my brother}".
+\glt  \textbf{Indirect}:  The (younger) sister$_i$ \rouge{wanted to get revenge on her$_i$ brother}.
+\glt  \textbf{Hybrid indirect}:  The (younger) sister$_i$ thought \bleu{I_i have to get revenge} on \rouge{her$_i$ brother}". (xiong he mei, 17)
+  \end{exe}
+  
+The original sentence corresponding to the complement clause in \refb{ex:tunAmea} is presented in \refb{ex:tunAmea2}: the possessive pronoun was first person (coreferent with the A of the main verb) and undergoes a shift to third person in \refb{ex:tunAmea} (representing the point of view of the person telling the tale).
+
+  \begin{exe}
+\ex \label{ex:tunAmea2}
+\gll \bleu{\ipa{a-pi}}  	\ipa{ɣɯ}  	\ipa{ɯ-sci}  	\bleu{\ipa{tu-nɤme-a}}  	\ipa{ra}	\\
+ {\textsc{1sg.poss}-elder.sibling}  \textsc{gen} \textsc{3sg.poss}-revenge {\textsc{ipfv}-make[III]-\textsc{1sg}} have.to:\textsc{fact}  \\
+\glt ` I have to get revenge on my brother.' (elicitation based on \ref{ex:tunAmea})
+  \end{exe}
+  
+  Example \refb{ex:juGWta} illustrates the same phenomenon as \refb{ex:tunAmea}, but with the verb of speech \ipa{ti} `say' instead of \ipa{sɯso} `think'.
+ 
+\begin{exe}
+\ex \label{ex:juGWta}
+\gll   \ipa{tɤɕime}  	\ipa{nɯ}  	\ipa{kɯ}  	\ipa{pjɯ-tɯ-mtshɤm}  	\ipa{tɕe,}  	[\ipa{nɯnɯ}  \rouge{\ipa{ɯ-kɯmtɕhɯ}}  	\ipa{nɯ}  	\bleu{\ipa{ju-ɣɯt-a}}  	\ipa{ŋu}]  		\ipa{ɯ-kɯ-ti}  	\ipa{pjɤ-tu}  	\ipa{ndɤre,}  \\
+girl \textsc{dem} \textsc{erg} \textsc{ipfv-conv:imm}-hear \textsc{lnk} \textsc{dem} {\textsc{3sg.poss}-toy} \textsc{dem} {\textsc{ipfv}-bring-\textsc{1sg}}  be:\textsc{fact} \textsc{3sg-nmlz}:S/A-say \textsc{ifr.ipfv}-exist \textsc{lnk} \\
+\glt   \textbf{Direct}: As soon as the girl heard that there was someone saying ``\bleu{I will bring your toy}".
+\glt   \textbf{Indirect}:  As soon as the girl heard that there was someone saying that \rouge{he would bring her toy}.
+\glt   \textbf{Hybrid indirect}: As soon as the girl$_i$ heard that there was someone saying ``\bleu{I will bring} \rouge{her$_i$ toy}". (140429 qingwa wangzi, 49)
+  \end{exe}
+
+
+In example \refb{ex:mWpWrAZia}, the pronoun \jpg{ɯʑo}{he} has no case marking, while the matrix verb \jpg{sɯso}{think} is transitive and requires its subject to be marked with the ergative, indicating that \jpg{ɯʑo}{he} belongs to the complement clause whose verb \jpg{rɤʑi}{remain, stay} is intransitive. The verb form \ipa{mɯ-pɯ-rɤʑi-a} with first singular marking reflects the viewpoint of the original speaker, while the pronoun \jpg{ɯʑo}{he} corresponds to that of the current speaker. 
+  
+\begin{exe}
+\ex \label{ex:mWpWrAZia}
+\gll  ``\bleu{\ipa{ɯʑo}}  	\ipa{χsɯ-sŋi}  	\ipa{χsɤ-rʑaʁ}  	\ipa{ma}  	\rouge{\ipa{mɯ-pɯ-rɤʑi-a}}"  	\ipa{ɲɯ-nɯ-sɯsɤm}  	\ipa{pjɤ-ŋu}  \\
+{\textsc{3sg}} three-day  three-night apart.from {\textsc{neg-pst.ipfv}-stay-\textsc{1sg}} \textsc{ipfv-auto}-think[III] \textsc{ifr.ipfv}-be \\
+\glt    \textbf{Direct}: He was thinking ``\bleu{I {have} only {stayed} for three days and three nights.}"
+\glt    \textbf{Indirect}: He was thinking that \rouge{he had only stayed for three days and three nights}.
+\glt  \textbf{Hybrid Indirect}: He was thinking that \rouge{he} \bleu{have} only {stayed} for three days and three nights. 
+\end{exe}
+  
+
+A potentially even more confusing case occurs when the original speaker is the current speakers' addressee, and when both the original and the current speakers are referred to in the original utterance. This is the situation observed in example \refb{ex:YWnWfsWGa}, a sentence pronounced by a fox who helped a prince to succeed in various task. Here,  the first singular possessive prefix \ipa{a-} on the possessed noun \jpg{-tʂɯnlɤn}{favour} and the first person singular suffix \ipa{-a} on the verb \ipa{ɲɯ-nɯ-fsɯɣ-a} do not correspond to the same referent. The verb form \ipa{ɲɯ-nɯ-fsɯɣ-a} `I will pay back' is the sentence that the fox attributes to his addressee (the prince), so that the first person here corresponds to the prince, while the possessive prefix on \jpg{-tʂɯnlɤn}{favour} reflects the point of view of the fox and thus refers to himself.
+
+ \begin{exe}
+ \ex \label{ex:YWnWfsWGa}
+ \gll   \rouge{\ipa{a-tʂɯnlɤn}}  	\bleu{\ipa{ɲɯ-nɯ-fsɯɣ-a}}  	\ipa{ɯ-ɲɯ-tɯ-sɯsɤm}  	\ipa{nɤ,}  	\ipa{nɯ}  	\ipa{tɤ-ste}  	\ipa{ti}  \ipa{ɲɯ-ŋu} \\
+  {\textsc{1sg.poss}-favour} {\textsc{ipfv-auto}-pay.back-\textsc{1sg}} \textsc{q-ipfv}-2-think[III] \textsc{lnk} \textsc{dem} \textsc{imp}-do.this.way[III] say:\textsc{fact} \textsc{sens}-be \\
+  \glt    \textbf{Direct}: If you think ``\bleu{I will requite the favour (which I received from you)}", do like that.
+ \glt    \textbf{Indirect}: If you want to \rouge{requite the favour (which you received from me}), do like that.
+ \glt   \textbf{Hybrid Indirect}: If you think ``\bleu{I} will requite the \rouge{favour (which you received from me}), do like that.
+   \end{exe}
+In such a situation, the referents corresponding to first and second person are exactly reversed between the point of view of the current and the original speaker, and therefore between pronouns and possessive prefixes on the one hand and verbal indexation on the other hand.
+   
+The corresponding sentence in Direct speech would be \refb{ex:YWnWfsWGa2}, with a second person singular possessive prefix on the noun  \jpg{-tʂɯnlɤn}{favour} instead.
+
+\begin{exe}
+\ex \label{ex:YWnWfsWGa2}
+ \gll  \ipa{nɤ-tʂɯnlɤn}  	\ipa{ɲɯ-nɯ-fsɯɣ-a} \\
+  {\textsc{2sg.poss}-favour} {\textsc{ipfv-auto}-pay.back-\textsc{1sg}} \\ 
+ \glt `I will requite the favour (which I received from you).'
+\end{exe}
+
+
+Surprisingly, despite this complex shift of perspective between the original speaker and the current speaker, there is no logophoric pronoun in Japhug (\citealt{hagege74logophoriques, nikitina12logophoric}). A logophoric pronoun is however attested in the closely related Stau language, which appears to have a similar system of Hybrid Indirect Speech (\citealt{jacques16stau}).
+
  \subsection{Complementation strategies}  
+  \label{sec:strategies}
+
+\citet[15]{dixon06complementation} defines \textit{complement clauses} as subordinate clauses which function as one of the the core argument of a main clause. 
+
+He introduces the term `complementation strategy' to refer to constructions corresponding with a meaning expressed by complement clauses in some languages, which either are not core arguments or the verb of the main clause or are not clauses with a complete argument structure \citealt[34-40]{dixon06complementation}). Complement strategies include nominalizations (when the verb sheds its argument structure as it becomes a noun), relative clauses (which are formally modifier of a core argument, not core arguments themselves), serial verb constructions and clause linking.
+
+In Japhug, due to the existence of semi-objects, which are demonstrably core arguments despite not being indexed on the verb (see \citet{jacques16relatives}), and due to the presence of unmarked adjuncts with various syntactic properties (see \ref{sec:adjuncts}), the status of a particular clause as a core argument or non-core-argument is not always trivial to determine. In this paper, I keep Dixon's sensible distinction between complement clauses and complementation strategies, but given the gradient nature of the opposition between core and oblique arguments in Japhug, I use the term `complement clauses' to refer to all clauses which are part of the verb's argument structure. In particular, in consider the purposive clauses of motion verb to be complement clauses, for reasons that are exposed in more detail in section (\ref{sec:SApart}).
  
- \subsection{Finite} 
 
-  \section{Morphosyntactic properties of complement clauses} 
+  \subsubsection{Headless relative clauses in core argument function}   \label{sec:relative}
+Not all clauses occurring in subject, object or adjunct function are complement clauses. 
 
- \subsection{Alignment} 
+Most relative clauses in Japhug are headless  (\citealt{jacques16relatives}). When headless relative clauses occur in subject or object function, they may be superficially similar to complement clauses.
 
-  \subsection{Raising of TAM and person/number marking} 
-  
-  \subsection{Case marking mismatch} 
-  
-  \subsection{Semi-finiteness} 
-like relative clauses, \citealt{jacques16relatives}
+In example (\ref{ex:pjACWnNo}), the main verb \jpg{cʰa}{can} takes a finite complement clause (with TAM form agreement between the matrix and the complement clause, see section \ref{sec:TAM.finite}). Note that the subject of the matrix clause and that of the complement clause are coreferent.
 
- \subsection{Dislocated complement} 
+\begin{exe}
+\ex \label{ex:pjACWnNo}
+\gll [\ipa{sɯŋgi} 	\ipa{nɯ} 	\ipa{pjɤ-ɕɯ-nŋo}] 	\ipa{pjɤ-cʰa} \\
+lion \textsc{dem} \textsc{ifr-caus}-lose \textsc{ifr}-can \\
+\glt `(The mosquito) succeeded in defeating the lion.' (140426 wenzi he shizi, 27)
+\end{exe}
 
-Discontinuous clauses are rare in Japhug, but examples of elements from the matrix clause inserted in the complement clause can be found in the corpus. In example (\ref{ex:lWlu.kW.aZo}), the \textsc{1sg} pronoun \ipa{aʑo} (A of the matrix clause) appears between the A \ipa{lɯlu} 	\ipa{kɯ} `the cat' and the P \ipa{ʁnɯz} `two' of the complement clause. This sentence was judged to be correct by our consultant.
+In example (\ref{ex:tWtatWt}), despite the fact that we have the same form \ipa{pjɤ-cʰa} in the matrix clause as in (\ref{ex:pjACWnNo}), the subordinate clause \ipa{tɯ\tld{}ta-tɯt} `all that he had said' is here a headless relative clause. Evidence for this analysis is as follows.
+
+ First, the subject of both clauses are not coreferent (this example cannot be interpreted as meaning `the boy succeeded in saying all these things'). If the subordinate clause in (\ref{ex:tWtatWt}) were a complement clause, subject coreference would be expected with the verb 
+\jpg{cʰa}{can} (see section \ref{sec:finitie.coref}). Second, the verb of the relative has totalitative reduplication, which is attested in relatives and some temporal subordinate clauses (\citealt[295]{jacques14linking}), but not in complement clauses. Third, the verb of the relative clause is in the perfective form while that of the the main clause is in the inferential; in finite complement clauses, the verb should be either in imperfective form or in the same form as the verb \jpg{cʰa}{can} in the main clause (see section \ref{sec:TAM.finite}). Fourth, although demonstrative and plural markers can follow a complement clause (see section \ref{sec:demonstratives}), only relative clauses can take both preclausal and postclausal demonstratives as in (\ref{ex:tWtatWt}), like any noun phrase. Fifth, it is possible to make a sentence with an overt head noun in (\ref{ex:tWtatWt}), while this option does not exist with (\ref{ex:pjACWnNo}). 
+
+\begin{exe}
+\ex \label{ex:tWtatWt}
+\gll 
+\ipa{tɤ-pɤtso} 	\ipa{nɯ} \ipa{kɯ}	\ipa{nɯra} 	[\ipa{tɯ\tld{}ta-tɯt}] 	\ipa{nɯra} 	\ipa{pjɤ-cʰa} \\
+\textsc{indef.poss}-child \textsc{dem} \textsc{erg} \textsc{dem:pl} \textsc{total\tld{}pfv}:3$\rightarrow$3'-say[II] \textsc{dem:pl} \textsc{ifr}-can \\
+\glt `The child had succeeded in doing everything that (the old king) had said.' (140428 yonggan de xiaocaifeng, 256)
+\end{exe}
+
+The contrast between finite headless relative and complement clauses in object function is not always as clear as that between (\ref{ex:tWtatWt}) and (\ref{ex:pjACWnNo}), but one of the criteria presented above, or a combination thereof, can be used to discriminate between the two.
+
+Formal near-ambiguity between headless relative and complement clause can also exist in the case of non-finite subordinate clauses. In (\ref{ex:amApWNgrW}), the intransitive verb \jpg{ŋgrɯ}{succeed} takes an infinitive complement in \ipa{kɤ-} as its subject, while in (\ref{ex:nAkAnWsmWlAm}), its subject is a headless relative clause with an object participle, as is shown by the fact that it can take a possessive prefix coreferent with its A. Note also the semantic difference between a relative (`may what you wish for come true') and a complement clause (??`may you succeed to wish it.').
+
+\begin{exe}
+\ex \label{ex:amApWNgrW}
+\gll 
+\ipa{kɤ-nɯsmɤn} 	\ipa{a-mɤ-pɯ-ŋgrɯ} 	\ipa{cʰo} 	\ipa{ɯ-nɯsmɤn} 	\ipa{a-mɤ-tɤ-βdi} 	\ipa{tɕe} 	\ipa{pjɯ-kɯ-sat} 	\ipa{ɲɯ-ŋgrɤl} \\
+\textsc{inf}-treat \textsc{irr-neg-ipfv}-succeed \textsc{comit} \textsc{3sg.poss-bare.inf}:treat  \textsc{irr-neg-ipfv}-be.good \textsc{lnk} \textsc{ipfv-genr:S/P}-kill \textsc{sens}-be.usually.the.case \\
+\glt `If one cannot treat it (rabbies), if one does treat it well, it is fatal.' (29-chWsYu, 29)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:nAkAnWsmWlAm}
+\gll   \ipa{nɤ-kɤ-nɯsmɯlɤm} 	\ipa{nɯ} 	\ipa{a-pɯ-ngrɯβ} \\
+\textsc{2sg.poss-nmlz:P}-wish \textsc{dem} \textsc{irr-pfv}-succeed \\
+\glt `May your wishes (=the things that you wish for) succeed.' (elicited)
+\end{exe}  
+
+A more delicate ambiguous case of relative vs complement clause is discussed in section (\ref{sec:relative.q}) in the case of pretence verbs.
+
+Besides plain finite relatives and participial relatives, correlatives (with an interrogative pronoun) can also appear in subject or object function, as in (\ref{ex:tAstuta}). 
+
+\begin{exe}
+\ex \label{ex:tAstuta}
+\gll 
+[\ipa{ɯ-wa} 	\ipa{tɕʰi} 	\ipa{tɤ-stu-t-a}] 	\ipa{nɯ} 	\ipa{tu-ste-a} 	\ipa{ɲɯ-ɬoʁ} \\
+\textsc{3sg.poss-}father what \textsc{pfv}-do.like-\textsc{pst:tr}-\textsc{1sg} \textsc{ipfv}-do.like[III]-\textsc{1sg} \textsc{sens}-have.to \\
+\glt `I have to deal with him in the same way as I dealt with his father. (=How I treated his father, I have to treat him like that)' (Slob.dpon2, 159)
+\end{exe}
+
+There are however cases where a surface form can be analyzed either as a complement clause or as a relative, in particular with verbs of perception. In example (\ref{ex:WftaR.tAkAta}), the verb form \ipa{tɤ-kɤ-ta} can either be analyzed as the object participle, or the infinitive of \jpg{ta}{put}, resulting in two slightly different but semantically nearly identical translations.
+
+\begin{exe}
+\ex  \label{ex:WftaR.tAkAta}
+\gll 
+\ipa{nɯɕɯmɯma} 	\ipa{ʑo} 	\ipa{iɕqha} 	\ipa{kɯm} 	\ipa{nɯtɕu} 	\ipa{ɯ-ftaʁ} 	\ipa{tɤ-kɤ-ta} 	\ipa{nɯ} 	\ipa{pjɤ-mto} \\
+immediately \textsc{emph} the.aforementioned door \textsc{dem:loc} \textsc{3sg.poss}-mark \textsc{pfv-inf/nmlz:P}-put \textsc{dem} \textsc{ifr}-see \\
+\glt `She immediately saw the mark that had been put on the door / that someone had put a mark on the door.' (140512 alibaba, 183)
+\end{exe}
+
+Similar ambiguities can also occur with finite relatives. Example (\ref{ex:tatWt.nWra}) can be either parsed as having a finite complement clause \ipa{nɯra} 	\ipa{ta-tɯt} `He said these words',\footnote{With verbs of cognition, speech or perception, there are no coreference or TAM restrictions between the complement and the matrix clause, see (\ref{sec:cognition}).} or a relative \ipa{ta-tɯt} `what he said' (with preclausal and postclausal demonstratives \ipa{nɯra} `these'), with little semantic difference.
+
+\begin{exe}
+\ex \label{ex:tatWt.nWra}
+\gll \ipa{ɯ-ʁjoʁ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{nɯra} 	\ipa{ta-tɯt} 	\ipa{nɯra} 	\ipa{pjɤ-mtsʰɤm} \\
+\textsc{3sg.poss}-servant \textsc{dem} \textsc{erg} \textsc{dem:pl} \textsc{pfv}:3$\rightarrow$3'-say[II] \textsc{dem:pl}  \textsc{ifr}-hear \\
+\glt `His servant heard what (the king) had said / that he had said these (words).' (140428 yonggan de xiaocaifeng, 265)
+\end{exe}
+
+In the case of example (\ref{ex:pWwGnWmtChu}), the speaker started by saying the relative clause [\ipa{spjaŋkɯ} \ipa{kɯ} \ipa{sɯŋgi} \ipa{ɯ-ɕki} \ipa{tɤ-kɤ-tɯt}] `what the wolf had said to the lion' and then corrected herself and said the verb form \ipa{pɯ́-wɣ-nɯmtɕʰu}, which can either be interpreted as a relative (`The slandering words that the wolf said')\footnote{The verb \jpg{nɯmtɕʰu}{slander} takes the person slandered as its object, but it can be construed as a secundative ditransitive verb whose third argument (the slandering words) can also be relativized with finite relative clause, like the theme of the verb \jpg{mbi}{give} (see (\citealt[16-17]{jacques16relatives}).} or alternatively as a complement clause (`that the wolf had slandered him'), showing the close proximity of these two possible analyses.
+
+\begin{exe}
+\ex \label{ex:pWwGnWmtChu}
+\gll 
+\ipa{spjaŋkɯ} 	\ipa{kɯ} 	\ipa{sɯŋgi} 	\ipa{ɯ-ɕki} 	\ipa{tɤ-kɤ-tɯt,...} 	\ipa{pɯ́-wɣ-nɯmtɕʰu} 	\ipa{nɯnɯra} 	\ipa{pjɤ-mtsʰɤm.} \\
+wolf \textsc{erg} lion \textsc{3sg-dat} \textsc{pfv-nmlz:P}-say[II] \textsc{pfv-inv}-slander \textsc{dem:pl} ifr-hear \\
+\glt `(The fox) heard what the wolf had said to the lion... (that the wolf) had slandered him.' (140425 shizi lang huli, 16)
+\end{exe}
+
+\subsubsection{Relative clause in essive function} \label{sec:essive}
+While motion verbs use participial complements (section \ref{sec:SAparticiple.coref}), manipulation verbs such \jpg{tsɯm}{take away} or \jpg{ɣɯt}{bring} cannot. Examples such as (\ref{ex:kAntsGe.jotsWm}), with \ipa{kɤ-} prefixed verb forms appearing before a manipulation verb, could appear to be an example of an infinitival complement.
+
+\begin{exe}
+\ex \label{ex:kAntsGe.jotsWm}
+\gll \ipa{ɯ-mbro} 	\ipa{ɯ-ndʐi} 	\ipa{nɯra} 	\ipa{kɤ-ntsɣe} 	\ipa{jo-tsɯm} \\
+\textsc{3sg.poss}-horse \textsc{3sg.poss}-skin \textsc{dem:pl} ???-sell \textsc{ifr}-take.away \\
+\glt `He took the horses' skin to (the market) to sell them.' (150814 kelaosi, 85)
+\end{exe}
+
+However, in all examples such as (\ref{ex:kAntsGe.jotsWm}), the noun \jpg{ɯ-spa}{material} can be added after the verb prefixed in \ipa{kɤ-} without changing the meaning (\ipa{kɤ-ntsɣe} \ipa{ɯ-spa} \ipa{jo-tsɯm}). This indicates that the syntactic function of \ipa{kɤ-ntsɣe} here is in fact that of an essive adjunct (see section \ref{sec:adjuncts}), meaning literally `He took the horses' skin (there) as something to sell', and that it should be analyzed not as an infinitive form, but as an object participle meaning `which is to be sold'.
+
+While such construction could eventually be reanalyzed as a complement clause, it does not belong to the argument structure of the main verb and should thus be classified as a complementation strategy.
+
+
+  \subsubsection{Degree nominal}  \label{sec:degree}
+Adjectives of degree like \jpg{rtaʁ}{be enough}, \jpg{tɕʰom}{be too much}, \jpg{naχtɕɯɣ}{be identical} or \jpg{saχaʁ}{be extremely} can be used with infinitival and finite complements (section \ref{sec:degree.complement}), but the most common construction involves degree nominals, build by prefixing \ipa{tɯ-} and a possessive prefix to the stem of the verb, as in (\ref{ex:nWrtaR}) or (\ref{ex:YWtChom}). Although most degree nominals in the corpus derive from adjectives, there are also a few examples of dynamic verbs, as (\ref{ex:nWrtaR}).
+
+
+\begin{exe}
+\ex \label{ex:nWrtaR}
+\gll \ipa{ɯ-tɯ-ɤla} 	\ipa{nɯ-rtaʁ} 	\ipa{ʑo} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{chɯ́-wɣ-tɕɤt} 	\ipa{tɕe} 	\ipa{ɲɯ́-wɣ-χtɕi} \\
+\textsc{3sg.poss-nmlz:degree}-boil \textsc{pfv}-be.enough \textsc{emph} \textsc{lnk} \textsc{lnk} \textsc{ipfv-inv}-take.out  \textsc{lnk} \textsc{ipfv-inv}-wash \\
+\glt `When it has boiled enough, one takes it out and washes it.' (30-tasa, 4)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:YWtChom}
+\gll
+\ipa{kɯki} 	\ipa{kʰa} 	\ipa{ki} 	\ipa{ɯ-tɯ-xtɕi} 	\ipa{ɲɯ-tɕʰom} \\
+\textsc{dem} house \textsc{dem} \textsc{3sg.poss-nmlz:degree}-be.small \textsc{sens}-be.too.much \\
+\glt `This house is too small.' (140430 yufu he tade qizi, 83)
+\end{exe}
+
+In this construction, the degree nominal is the S of the adjective of degree. The possessive prefix refers to the S of the nominalized verb. Thus, example (\ref{ex:YWtChom}) for instance can be literally translated as `The smallness of this house is excessive'. 
+
+This construction does not fulfil all conditions for being a proper complement clause in Dixon's definition. Degree nominals, unlike participles, can only take one argument and is not compatible with TAM marking.
+
+  \subsubsection{Action nouns}  \label{sec:nouns}
+ The verb \jpg{kʰɤt}{do repeatedly, do a long time} and its causative  \jpg{sɯkʰɤt}{cause to do repeatedly, cause to do a long time} can take infinitival complements, but they more commonly occur in a construction with instrumental-like noun phrases marked with the ergative / instrumental \ipa{kɯ} indicating the action which is performed repeatedly or do over a long time. These noun phrases can include either an action nominal derived from a verb with the prefix \ipa{tɯ-} as in \refb{ex:tWqioR}, or a action noun from which verbs are derived by denominal prefixes, as \refb{ex:takhAt}.\footnote{The noun \jpg{ta-ma}{work} in \refb{ex:takhAt} is the base from which several common verbs such \jpg{rɤma}{work, do work (vi)} and \jpg{nɤma}{work on (vt)} are derived.  }
+ 
+  \begin{exe}
+\ex \label{ex:tWqioR}
+\gll \ipa{tɯ-qioʁ}	\ipa{kɯ}	\ipa{tó-wɣ-sɯ-kʰɤt}	\ipa{ʑo}	\ipa{tɕe,}	\ipa{tɕe}	\ipa{nóʁmɯz}	\ipa{nɤ}	\ipa{tɯɣ}	\ipa{nɯnɯ}	\ipa{ló-wɣ-sɯ-tɕɤt} \\
+\textsc{nmlz:action}-vomit \textsc{erg} \textsc{ifr-inv-caus}-do.a.long.time \textsc{emph} \textsc{lnk} \textsc{lnk} only.then \textsc{lnk} poison \textsc{dem} \textsc{ifr-inv-caus}-take.out \\
+\glt `(The medicine) caused (Gesar) to vomit a long time until he expelled the poison.' (Gesar, 266)
+\end{exe}
+
+  \begin{exe}
+\ex \label{ex:takhAt}
+\gll 
+\ipa{ta-ma}	\ipa{kɯ}	\ipa{ta-kʰɤt}	\ipa{ʑo} \\
+\textsc{indef.poss}-work \textsc{erg} \textsc{pfv}:3$\rightarrow$3'-do.a.long.time \textsc{emph} \\
+\glt  `He did a lot of work.'
+\end{exe}
+
+Since the action nominals in \ipa{tɯ-}, like the degree nominals, have a neutralized valency, this construction cannot be considered to be a type of complement clause.
+ 
+
+ 
+\subsubsection{Compound action nouns} \label{sec:compound}
+Beside action nouns derived from verbs by means of a nominalization prefix, Japhug is also rich in compound action nouns (either noun-verb or verb-verb, see \citealt{jacques12incorp}). Used in combination with light verbs, some compound nouns form complex predicates with a very specific meanings.
+
+The most frequent construction of this type involves compounds comprising the noun \jpg{kʰramba}{lie, cheating} as first element and a verb root as second element. The combination of these compounds with the light verb \jpg{βzu}{do, make}, has the meaning `pretend to do X' as shown by example \refb{ex:khrambatshi} (see sections \ref{sec:relative.q} and \ref{sec:pretence} for other constructions with a similar meaning).
+
+\begin{exe}
+\ex \label{ex:khrambatshi}
+ \gll 
+\ipa{ʑara} 	\ipa{kɯ} 	\ipa{cʰa} 	\ipa{nɯ} 	\ipa{kʰramba-tsʰi} 	\ipa{ka-βzu-nɯ,} 	\ipa{tɕʰeme} 	\ipa{nɯra} 	\ipa{ntsɯ} 	\ipa{ka-znɤrko-nɯ} 	\ipa{ɲɯ-ŋu}  \\
+\textsc{3pl} \textsc{erg} alcohol \textsc{dem} lie-drink \textsc{pfv}:3$\rightarrow$3'-drink-\textsc{pl} girl \textsc{dem:pl} always \textsc{pfv}:3$\rightarrow$3'-force-\textsc{pl}  \textsc{sens}-be \\
+\glt  `They pretended to drink alcohol, and forced the women (to drink).' (Slobdpon05, 100)
+\end{exe}
+
+In this construction, the light verb \jpg{βzu}{do, make} takes the orientation prefix selected by the verb included in the compound (similar phenomena are observed with complement clauses, see section \ref{sec:raising}). In example \refb{ex:khrambatshi} for instance, the lexeme \jpg{tsʰi}{drink} selects prefixes with the `toward east' orientation in finite forms and some participial forms (Perfective/Irrealis \ipa{kɤ-}, Perfective 3$\rightarrow$3' \ipa{ka-}, Imperfective \ipa{ku-} etc). The compound  \ipa{kʰramba-tsʰi} cannot take any orientation prefix (or any verb morphology, for that matter), but the verb form \ipa{ka-βzu-nɯ} inherits the orientation selected by \jpg{tsʰi}{drink} and thus appears with the Perfective 3$\rightarrow$3' \ipa{ka-} corresponding to the orientation `toward east'.\footnote{The verb \jpg{βzu}{do, make} when used as a full verb most commonly takes the orientation `up', never `toward east'.}
+
+Another similar construction involves compounds noun with the adverb \jpg{kɯzɣa}{for a long time} as first element:\footnote{It takes the \textit{status constructus} form \ipa{kɯzɣɤ-} in these compounds.} compare examples \refb{ex:kWzGa} and \refb{ex:kWzGa2} (with raising of the Inferential `toward west' orientation prefix \ipa{ɲɤ-} on the light verb).
+
+\begin{exe}
+\ex \label{ex:kWzGa}
+\gll 
+\ipa{kɯzɣa} 	\ipa{ʑo} 	\ipa{ɲɤ-ɕar} \\
+long.time \textsc{emph} \textsc{ifr}-search \\
+\glt `He looked for him for a long time.' (elicited)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kWzGa2}
+\gll 
+\ipa{kɯzɣɤ-ɕar} 	\ipa{ʑo} 	\ipa{ɲɤ-βzu} \\
+long.time-search \textsc{emph} \textsc{ifr}-do \\
+\glt `He looked for him for a long time.' (elicited)
+\end{exe}
+
+\subsubsection{Serial verb constructions} \label{sec:serial}
+In Japhug, as in Tshobdun (\citealt[490-1]{sun12complementation}), we find a serial verb construction comprising two verbs sharing TAM category, core argument(s) (both subject and object in the case of transitive verbs) and transitivity. One of the verbs expresses the main action, and the other describes the manner in which the action is performed. Unlike Tshobdun, there is no constraint in Japhug against inserting a linker such as \ipa{tɕe} between the two verbs in the serial construction.
+
+This construction is most common with deideophonic verbs, \footnote{On deideophonic verbs and their morphosyntactic properties, see \citet{jackson04zhuangmaoci} and \citet{japhug14ideophones}.} as exemplified by (\ref{ex:totChW}), where \jpg{nɯdrɯβ}{gore again and again} can only be used in this construction together with \jpg{tɕʰɯ}{gore}. The ideophonic verb can either follow (\ref{ex:totChW}) or precede  the main verb (\ref{ex:totChW2}), the latter construction being by far more common.
+
+\begin{exe}
+\ex \label{ex:totChW}
+\gll \ipa{iɕqʰa} 	\ipa{srɯnmɯ} 	\ipa{nɯ} 	\ipa{to-tɕʰɯ} 	\ipa{to-nɯdrɯβ}  \ipa{tɕe} 	\ipa{pjɤ-sat} \\
+the.aforementioned râkshasî \textsc{dem} \textsc{ifr}-gore \textsc{ifr}-repeatedly.gore \textsc{emph} \textsc{lnk} \textsc{ifr}-kill \\
+\glt `(The rhinoceros) gored the râkhsasî repeatedly and killed her.' (28-smAnmi, 403)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:totChW2}
+\gll 	\ipa{srɯnmɯ} 	\ipa{nɯ} 	\ipa{to-nɯdrɯβ} 	\ipa{ʑo} 	 	\ipa{to-tɕʰɯ} \\
+ râkshasî \textsc{dem}  \textsc{ifr}-repeatedly.gore  \textsc{emph}  \textsc{ifr}-gore \\
+ \glt `(The rhinoceros) gored the râkhsasî repeatedly and killed her.' (elicited on the basis of \ref{ex:totChW})
+\end{exe}	
+
+The second most common type of serial verb construction in Japhug involves the manner deixis verbs \jpg{stu}{do like this} (transitive) and \jpg{fse}{be like this} (intransitive). 
+
+Examples like (\ref{ex:tuWGstu}) could seem to indicate that \jpg{stu}{do like this} and the lexical verb do not share the same object, as  \jpg{ki}{this}, which obligatorily occurs before the manner deixis verbs, appears to be its object. 
+
+\begin{exe}
+\ex \label{ex:tuWGstu}
+\gll 	
+\ipa{ɯ-ru} 	\ipa{nɯ} 	\ipa{ki} 	\ipa{tú-wɣ-stu} 	\ipa{pjɯ́-wɣ-qlɯt} \\
+\textsc{3sg.poss}-stalk \textsc{dem} \textsc{dem:prox} \textsc{ipfv-inv}-do.like \textsc{ipfv-inv}-break \\
+\glt `One breaks its stalk like this.' (14-tasa, 81)
+\end{exe}	
+
+However, when the lexical verbs takes a non-third person object, the manner deixis verb indexes it as its object too, as in (\ref{ex:kuWGstuanW}): \jpg{stu}{do like this} is in fact a secondative ditransitive verb, and the demonstrative is an unmarked T argument.
+
+\begin{exe}
+\ex \label{ex:kuWGstuanW}
+\gll 	
+ \ipa{aʑo} 	\ipa{kɯki} 	\ipa{ntsɯ} 	\ipa{kú-wɣ-stu-a-nɯ} 	\ipa{tɕe,} 	\ipa{kú-wɣ-znɯkʰrɯm-a-nɯ} \\
+ \textsc{1sg} \textsc{dem:prox} always \textsc{ipfv-inv}-do.like-\textsc{1sg-pl} \textsc{lnk} \textsc{ipfv-inv}-punish-\textsc{1sg-pl} \\
+ \glt `They punished me like this.' (Gesar, 278)
+\end{exe}	
+
+The verb \jpg{stu}{do like this} cannot be used with intransitive verbs in a serial construction. Instead, its intransitive counterpart \jpg{fse}{be like this} occurs with a demonstrative such as \ipa{ki} as in (\ref{ex:ki.fsea}).
+
+\begin{exe}
+\ex \label{ex:ki.fsea}
+\gll \ipa{aʑo} 	\ipa{nɯ} 	\ipa{sŋiɕɤr} 	\ipa{ʑo} 	\ipa{kutɕu} 	\ipa{ki} 	\ipa{fse-a} 	\ipa{ndzur-a} 	\ipa{ntsɯ} 	\ipa{ɲɯ-ra} 	\ipa{tɕe,} \\
+\textsc{1sg} \textsc{dem} night.and.day \textsc{emph} here \textsc{dem:prox} be.like:\textsc{fact-1sg} stand:\textsc{fact-1sg} always \textsc{sens}-have.to like \\
+\glt `I have to stand like this night and day.' (The divination, 2002, 44)
+\end{exe}
+
+
+%\begin{exe}
+%\ex 
+%\gll \ipa{tɤɕime} 	\ipa{kɯ} 	[\ipa{tɕʰi} 	\ipa{a-tɤ-fse-a} 	\ipa{tɕe}] 	\ipa{mɤ́-wɣ-mto-a}  \\
+%princess \textsc{erg} what \textsc{irr-pfv}-be.like-\textsc{1sg} \textsc{lnk} \textsc{neg-inv}-see:\textsc{fact-1sg} \\
+%\glt `What should I do not to be seen by the princess?' (140505 xiaohaitu)
+%\end{exe}
+
+
+Both Tshobdun and Japhug have a few cognate manner verbs (other than deideophonic and manner deixis verbs) which can appear in serial verb constructions, such as Tshobdun \jpg{nɐʃeʃet}{exert oneself} and Japhug  \jpg{nɤxɕɤt}{do with force}  (denominal verbs derived from the Tibetan loanword \jpg{ɯ-xɕɤt}{force, strength}).
+
+However, the inventory of verbs compatible with serial constructions is not the same in Japhug and Tshobdun. For instance, while Tshobdun \jpg{wɐtʃʰɐm}{overdo} requires a serial construction, while its Japhug cognate \jpg{ɣɤtɕʰom}{overdo, do too much}  only occurs with infinival complements (\ipa{kɤ-} or bare infinitives).
+
+Some verbs which usually take complements are also compatible with serial verb constructions. 
+ For instance, the phasal verb \jpg{ʑa}{begin}, though most commonly used with bare infinitive or \ipa{tɯ-} infinitive complements, can also appear in a serial verb construction expressing the specific meaning `start doing X from ... until...', as in (\ref{ex:chWwGmphWr}).
+
+   \begin{exe}
+\ex \label{ex:chWwGmphWr}
+ \gll  \ipa{tɕe} 	\ipa{βzɯr} 	\ipa{ri} 	\ipa{tɕe} 	\ipa{cʰɯ́-wɣ-mpʰɯr} 	\ipa{cʰɯ́-wɣ-ʑa} 	\ipa{tɕe} 	\ipa{mɤpɕoʁ} 	\ipa{cʰu} 	\ipa{βzɯr} 	\ipa{nɯ-ɕki} 	\ipa{mɤɕtʂa} 	\ipa{cʰɯ́-wɣ-mpʰɯr}  \\
+ \textsc{lnk} corner \textsc{loc} \textsc{lnk} \textsc{ipfv-inv-}wrap \textsc{ipfv-inv-}begin \textsc{lnk}  opposite.side \textsc{loc} corner \textsc{3pl-dat} until \textsc{ipfv-inv-}wrap  \\
+ \glt  One starts to wrap it up from one corner until the opposite corner.' (30-mboR, 20)
+\end{exe}
+ 
+Serial verb constructions may superficially resemble finite complements when the TAM category of the complement verb agrees with that of the matrix verb (as in \ref{ex:nanACqa} in section \ref{sec:TAM.finite}). They can be distinguished by the fact that serial verb constructions require both verbs to share the same transitivity, subject and object, while in the case of finite complements, only subject coreference is required.
+
+\subsubsection{Coordination} \label{sec:coordination}
+In Japhug, some attitudinal verbs such as \jpg{ʁnɯ}{suspect}, \jpg{nɯsɯmɲiz}{hesitate}, \jpg{nɯʁlɯmbɯɣ}{guess, estimate} or \jpg{nɯʁjɯβtsʰɤt}{guess, estimate} do not take complement clauses. Rather, they occur in a coordinating construction strikingly similar to that described in Tshobdun  by \citet[487-8]{sun12complementation}: the attitudinal verb is followed by the affirmative copula \jpg{ɕti}{be} and an adversative linker such as \jpg{ri}{but} , as in (\ref{ex:tunWRlWmbWGa}).
+
+\begin{exe}
+\ex \label{ex:tunWRlWmbWGa}
+\gll \ipa{nɯ} 	\ipa{tu-nɯʁlɯmbɯɣ-a} 	\ipa{ɕti} 	\ipa{ri,} 	\ipa{ɯʑo} 	\ipa{kɯ} 	\ipa{kɤ-nɤma} 	\ipa{nɯ} 	\ipa{sɤpe} \\
+\textsc{dem} \textsc{ipfv}-guess-\textsc{1sg} be.\textsc{affirm:fact} \textsc{lnk} \textsc{3sg} \textsc{erg} \textsc{nmlz:P}-work \textsc{dem} do.well:\textsc{fact} \\
+\glt `I guess that he will perform this task well.'
+\end{exe}
+
+There are apparent cases of reported speech complements with these verbs, as example (\ref{ex:kunWsWmRYiza}), but such sentences result from the ellipsis of a cognition verb such as \jpg{sɯso}{think} -- it is possible (and slightly better) to insert here \ipa{ɲɯ-sɯsam-a} 	\ipa{tɕe} (\textsc{sens}-think[III]-\textsc{1sg} \textsc{lnk}) `I think' before the verb \ipa{ku-nɯsɯmʁɲiz-a}  `I hesitate'.
+
+\begin{exe}
+\ex \label{ex:kunWsWmRYiza}
+\gll 
+\ipa{ku-ɕe-a} 	\ipa{ɕi} 	\ipa{ma-kɤ-ɕe-a} 	\ipa{kɯ} (\ipa{ɲɯ-sɯsam-a} 	\ipa{tɕe}) \ipa{ku-nɯsɯmʁɲiz-a} \\
+\textsc{ipfv:east}-go-\textsc{1sg} \textsc{qu} \textsc{neg-imp}-go-\textsc{1sg} \textsc{qu} \textsc{sens}-think[III]-\textsc{1sg} \textsc{lnk} \textsc{ego.prs}-hesitate-\textsc{1sg} \\
+\glt `I hesitate whether to go or not.' (elicited)
+\end{exe}
+
+\section{Morphosyntactic properties of complement clauses} 
+This section discusses various topics related to the syntax of complement clauses in Japhug, including syntactic pivots (coreference restrictions and restrictive neutralization), demonstratives as possible complementizers, case marking mismatch, the existence of discontinuous complements and restrictive marking with scope on the complement clause.
+
+ \subsection{Syntactic pivots} 
+Table (\ref{tab:coref}) presents a summary of coereference restrictions between matrix and complement clause in Japhug, based on the data in section (\ref{sec:complement.types}).
+
+Some verb classes are named by a representative example (for instance \jpg{rga}{like}) because at this stage of research, it is not yet clear to what extent the class of all verbs with the same behavior can be given a simple functional label.
+
+\begin{table}[H]
+\caption{Coreference restrictions in complement clauses in Japhug} \label{tab:coref} \centering
+\begin{tabular}{llcc}
+\toprule
+Verb class & 	Complement type & 	Coference & 	\\
+&& complement = main clause \\
+\midrule
+motion verb & 	\ipa{kɤ-} participle & 	\{P\}=\{S\} & 	\\
+\midrule
+motion verb & 	\ipa{kɯ-} participle & 	\{S,A\}=\{S\} & 	\\
+transitive verb & 	bare infinitive & 	\{S,A\}=\{S,A\} & 	\\
+\ipa{spa} & 	infinitive, finite & 	\{S,A\}=\{A\} & 	\\
+\ipa{cʰa} & 	infinitive, finite & 	\{S,A\}=\{S\} & 	\\
+\ipa{sɯxcʰa} & 	infinitive & 	\{S,A\}=P & 	\\
+\midrule
+\ipa{rga} & 	infinitive & 	\{S,A,P,P'\}=\{S\} & 	\\
+\ipa{rga} & 	finite & 	\{S,A,P\}=\{S\} & 	\\
+\midrule
+cognition, & finite & no constraint \\
+perception \\
+impersonal & 	bare infinitive & 	zero & 	\\
+impersonal & 	finite, infinitive & 	zero & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This table confirms the observation that although Gyalrong languages have ergative case marking, syntactic pivots mainly follow an accusative alignment, with restrictive neutralization of S and A (\citealt{jackson03caodeng, jacques16relatives}). Note that the construction with motion verbs and \ipa{kɤ-} participial complements, despite showing obligatory coreference between the intransitive subject of the main clause and the object of the complement, cannot be considered to be ergative, since the same construction cannot express coreference between the intransitive subject of the main clause and that of the complement clause.
+
+Some verbs such as \jpg{rga}{like} present looser coreference restrictions, with differing rules depending on the construction. It is possible that additional subtypes will be revealed by finer examination of the behaviour of individual complement-taking verbs.
+
+ \subsection{Plural and demonstrative markers} \label{sec:demonstratives}
+Finite, infinitival or participial complements in Japhug can be optionally followed by the distal demonstrative \jpg{nɯ}{that} (\ref{ex:tWmbro.nW}), the plural \ipa{ra} (\ref{ex:kANke.ra}) or a combination of the two \jpg{nɯra}{those}. In example (\ref{ex:tWmbro.nW}), \jpg{nɯ}{that}  has a topicalizing function (`as for growing high, it can grow high, but on the other hand it cannot grow thick').
+
+ \begin{exe}
+\ex \label{ex:tWmbro.nW}
+\gll 
+\ipa{tu-mbro} 	\ipa{nɯ} 	\ipa{ɲɯ-cʰa} 	\ipa{ri} 	\ipa{tu-mbro} 	\ipa{tɕe} 	\ipa{ʁnɯ-rtsɤɣ,} 	\ipa{χsɤ-rtsɤɣ} 	\ipa{jamar} 	\ipa{tu-mbro} 	\ipa{ɲɯ-cʰa} 	\ipa{ri}  \\
+\textsc{ipfv}-be.high \textsc{dem} \textsc{sens}-can \textsc{lnk} \textsc{ipfv}-be.high \textsc{lnk} two-stair three-stair about \textsc{ipfv}-be.high  \textsc{sens}-can \textsc{lnk} \\
+\glt `Although it can grow high, although it can grow two or three stairs high,...' (16-CWrNgo, 151)
+\end{exe}
+ 
+The marker \ipa{ra} is an associative plural; in example such as (\ref{ex:kANke.ra}), the use of \ipa{ra} implies an open list of activities (`crawl, walk etc'). 
+ 
+ \begin{exe}
+\ex \label{ex:kANke.ra}
+\gll   \ipa{kɤ-nɯrtsɯ} 	\ipa{kɤ-ŋke} 	\ipa{ra} 	\ipa{tɤ-cʰa} 	\ipa{tɕe}   \\
+  \textsc{inf}-crawl   \textsc{inf}-walk \textsc{pl} \textsc{pfv}-can \textsc{lnk} \\
+\glt `When (the baby) becomes able to crawl or to walk, ...'  (140426 tApAtso kAnWBdaR, 65)
+\end{exe}
+
+In Tshobdun, \citet[481]{sun12complementation} analyzes these demonstratives as complementizers, an analysis which would imply a grammaticalization pathway identical to that of English `that'. It will not attempt  at solving this complex question in the present paper. An argument for a special status of demonstratives with complement clauses is that they can only be post-clausal, whereas in the case of relatives (or any noun phrase) demonstratives can be pre-clausal or circum-clausal (see section \ref{sec:relative}).
+
+\subsection{Orientation prefixes} \label{sec:raising}
+In Japhug, all finite verb forms except the Factual take an orientation prefix.\footnote{See for instance \citealt[265-9]{jacques14linking} for a  brief description of the system. In Japhug as in all Gyalrong languages, six orientations are possible:  up',  down', `upstream', `downstream', `east' and `west', to which can be added the `unspecified orientation' prefix used with motion verbs. Only three verbs have defective conjugations and lacks orientation prefixes.} For some categories (egophoric present, sensory, past imperfective), all verbs take the same orientation prefix (respectively the directions for `east', `west' and `down'). In the rest of the conjugations, each verb selects one or more orientation, and consistently uses it to build all TAM forms. Table \ref{tab:orientation} illustrates some examples of lexically selected orientation prefixes. The forms indicated are third person singular (intransitive verbs) and 3$\rightarrow$3' (transitive verbs).
+
+\begin{table}[H]
+\caption{Examples of lexically selected orientation prefixes in Japhug}  \label{tab:orientation}
+\begin{tabular}{llllll}
+\toprule
+Base form & Orientation & Perfective  & Inferential & Imperfective \\
+\midrule
+\jpg{ndza}{eat} (tr)&Up & \ipa{ta-ndza}& \ipa{to-ndza}&  \ipa{tu-ndze} \\
+\jpg{fɕɤt}{tell}(tr)&Down & \ipa{pa-fɕɤt}& \ipa{pjɤ-fɕɤt}&  \ipa{pjɯ-fɕɤt} \\
+\jpg{fsoʁ}{be day} (intr)&Upstream & \ipa{lɤ-fsoʁ}& \ipa{lo-fsoʁ}&  \ipa{lu-fsoʁ} \\
+\jpg{nɯrɤɣo}{sing} (intr)&Downstream & \ipa{thɯ-nɯrɤɣo}& \ipa{cʰɤ-nɯrɤɣo}&  \ipa{cʰɯ-nɯrɤɣo} \\
+\jpg{tsʰi}{drink} (tr)&Toward east & \ipa{ka-tsʰi}& \ipa{ko-tsʰi}&  \ipa{ku-tsʰi} \\
+\jpg{ɕar}{search} (tr)&Toward west & \ipa{na-ɕar}& \ipa{ɲɤ-ɕar}&  \ipa{ɲɯ-ɕar} \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+In non-finite complement clauses, verbs rarely take orientation prefixes (they are even impossible in the case of bare infinitives and participial complements).
+
+Most complement-taking verbs select one or two orientation prefixes and use them regardless of the verb in the complement. This is the case of \jpg{nɤz}{dare} and  \jpg{rɲo}{experience}, which both take the `down' series of prefixes (Inferential \ipa{pjɤ-} and Perfective \ipa{pɯ-}) irrespective of the verb complement, whether its verb select the `toward east' orientation (as \jpg{tsʰi}{drink} in examples \ref{ex:mWpjAnAz} and \ref{ex:Wse}) or the `up' orientation (as \jpg{ndza}{eat} in example \ref{ex:mWpjAnAz2}).
+
+\begin{exe}
+\ex \label{ex:mWpjAnAz}
+\gll \ipa{nɯ} 	\ipa{jɤ-kɤ-ɣɯt} 	\ipa{nɯ} 	\ipa{kɤ-tsʰi} 	\ipa{mɯ-pjɤ-nɤz} \\
+\textsc{dem} \textsc{pfv-nmlz}:P-bring \textsc{dem} \textsc{inf}-drink \textsc{neg-ifr}-dare \\
+\glt `He did not dare to drink (the medecine) that he had brought.' (140426 buxiejiang gaizuo yisheng, 30)
+\end{exe}
+\begin{exe}
+\ex \label{ex:mWpjAnAz2}
+\gll
+\ipa{nɯnɯ} 	\ipa{kɤ-ndza} 	\ipa{mɯ-pjɤ-nɤz} \\
+\textsc{dem} \textsc{inf}-eat \textsc{neg-ifr}-dare \\
+\glt `He did not dare to eat it.' (140426 yelv he jialv, 18)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:Wse}
+\gll
+\ipa{ɯ-se} 	\ipa{kɤ-tsʰi} 	\ipa{pɯ-rɲo-t-a} \\
+\textsc{3sg.poss}-blood \textsc{inf}-drink \textsc{pfv}-experience-\textsc{pst:tr-1sg} \\
+\glt `I have drunk its blood.' (27-qartshAz, 106)
+\end{exe}
+
+A minority of complement-taking verbs, including phasal verbs and causative verbs, systematically inherit the lexical orientation of the verb of the complement clause. 
+
+The following examples show how the verb \jpg{ʑa}{start} takes the orientation of its complements verbs, respectively `up' (example \ref{ex:toZa}), `down' \refb{ex:pjAZa}, `upstream' \refb{ex:loZa}, `downstream' \refb{ex:chAZa} and `towards west' \refb{ex:YAZa}. The Inferential forms of these verbs are provided in Table \ref{tab:orientation} above.
+
+\begin{exe}
+\ex \label{ex:toZa}
+\gll \ipa{ɯ-ndza} 	\ipa{pɯ-kɤ-ta} 	\ipa{nɯra} 	\ipa{ɯ-ndza} 	\ipa{to-ʑa} \\
+\textsc{3sg.poss}-food \textsc{pfv:down-nmlz:P}-put \textsc{dem:pl} \textsc{3sg.poss-bare.inf}-eat \textsc{ifr}-start \\
+\glt `(The horse) started eating the food that had been put (there for him).' (140507 jinniao, 384)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:pjAZa}
+\gll
+\ipa{tɤtɕɯpɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{li} \ipa{ɯ-χpi} 	\ipa{ɯ-fɕɤt} 	\ipa{pjɤ-ʑa} \\
+boy \textsc{dem} \textsc{erg} again \textsc{3sg.poss}-story \textsc{3sg.poss-bare.inf}:tell \textsc{ifr}-tell \\
+\glt `The boy told her again a story.' (140517 buaishuohua, 69)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:loZa}
+\gll
+\ipa{tɯ-fsoʁ} 	\ipa{lo-ʑa} 	\ipa{tɕe,} \\
+\textsc{inf}-be.clear \textsc{ifr}-start \textsc{lnk} \\
+\glt `The light of day started to appear.' (140511 1001 yinzi, 39à
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:chAZa}
+\gll \ipa{pɣɤtɕɯ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{nɯɕɯmɯma} 	\ipa{ʑo} 	\ipa{tɯ-nɯrɤɣo} 	\ipa{cʰɤ-ʑa} \\
+bird \textsc{dem} \textsc{erg} immediately \textsc{emph} \textsc{inf}-sing \textsc{ifr}-start \\
+\glt `The bird immediately started singing.' (140514 huishuohua de niao, 221)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:YAZa}
+\gll
+\ipa{nɯnɯ} 	\ipa{ɯ-ɕar} 	\ipa{ɲɤ-ʑa-nɯ} \\
+\textsc{dem} \textsc{3sg.poss-bare.inf}-search \textsc{ifr}-start \\
+\glt `They started searching for it.' (140518 jinyin chengbao, 59)
+\end{exe}
+
+The raising of the orientation prefix of the verb in the infinitival clause is observed with verbs such as \jpg{ɣɤβdi}{do well} or \jpg{ɣɤtɕʰom}{do too much} (derived from the adjectives \jpg{βdi}{be good} and \jpg{tɕʰom}{be too much} respectively; see \citealt[184]{jacques15causative}).
+
+\begin{exe}
+\ex 
+\gll \ipa{cʰa} 	\ipa{kɤ-tsʰi} 	\ipa{ko-ɣɤ-tɕʰom} \\
+alcohol \textsc{inf}-drink \textsc{ifr-caus}-be.too.much \\
+\glt `He drunk too much alcohol.' (elicited)
+\end{exe}
+
+A related phenomenon occurs in light verb constructions with verbs such as \jpg{βzu}{do, make}, \jpg{lɤt}{throw} or \jpg{ti}{say}. When these verbs form complex predicates with their objects, they take the same orientation as the corresponding verb derived by denominal derivation (\citealt[1220]{jacques12incorp}). For instance, just like the denominal verb \jpg{nɯrɤɣo}{sing} derived from \jpg{rɤɣo}{song} selects the `downstream' orientation, the complex predicates including \jpg{rɤɣo}{song} also select the same direction (Inferential \ipa{cʰɤ-}, Imperfective \ipa{cʰɯ-} etc), as shown by examples \refb{ex:rAGo.chABzu}, \refb{ex:rAGo.chWlata}, \refb{ex:rAGo.chAti}.
+
+\begin{exe}
+\ex \label{ex:rAGo.chABzu}
+\gll \ipa{nɯnɯ} 	\ipa{tɕʰeme} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{li} 	\ipa{rɤɣo} 	\ipa{cʰɤ-βzu} 	\ipa{tɕe,} \\
+\textsc{dem} girl \textsc{dem} \textsc{erg} again song \textsc{ifr}-make \\
+\glt `The girl sung again.' (140428 mu e guniang, 167)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:rAGo.chWlata}
+\gll 
+\ipa{nɯ-rɤɣo} 	\ipa{cʰɯ-lat-a} 	\ipa{tɕe,} 	\ipa{nɯʑora} 	\ipa{pɯ-rɟaʁ-nɯ} \\
+\textsc{3pl.poss}-song \textsc{ipfv}-throw-\textsc{1sg} \textsc{lnk} \textsc{2pl} \textsc{imp}-dance-\textsc{pl} \\
+\glt `I will play a song for you, dance!.' (140513 mutong de disheng, 100)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:rAGo.chAti}
+\gll 
+\ipa{rɤɣo} 	\ipa{kɯ-mpɕɯ\tld{}mpɕɤr} 	\ipa{ʑo} 	\ipa{cʰɤ-ti.} \\
+song \textsc{nmlz:S/A-emph}\tld{}be.beautiful \textsc{emph} \textsc{ifr}-say \\
+\glt `It sung a beautiful song.' (140519 yeying, 78)
+\end{exe}
+
+An extension of this phenomenon occurs in the compound action noun complementation strategy (section \ref{sec:compound}).
+
+\subsection{Case marking}
+When the verb of the matrix and the complement clauses sharing the same subject have distinct transitivity values, the subject noun phrase can either take absolutive or ergative marking. 
+
+Examples (\ref{ex:erg.rga}) and (\ref{ex:no.erg.rga}) provide a minimal pair illustrating this optional treatment. In both examples, the matrix verb \jpg{rga}{like} is semi-transitive (and its subject cannot take ergative marking), while \jpg{ndza}{eat} is transitive (and requires a subject with the ergative).
+
+In example (\ref{ex:erg.rga}), the common subject \ipa{paʁ} \ipa{ra}  `pigs' takes the ergative \ipa{kɯ} selected by the verb  \jpg{ndza}{eat} in the complement clause, suggesting that it should be analyzed as belonging to the complement clause.
+
+\begin{exe}
+\ex \label{ex:erg.rga}
+\gll
+[\ipa{paʁ}  	\ipa{ra}  	\ipa{kɯ}  	\ipa{kɤ-ndza}]  	\ipa{wuma}  	\ipa{ʑo}  	\ipa{rga-nɯ}  \\
+pig \textsc{pl} \textsc{erg} \textsc{inf}-eat very \textsc{emph}  like:\textsc{fact}-\textsc{pl} \\
+ \glt Pigs like to eat it. (12 ndZiNgri, 149)
+\end{exe}
+
+In (\ref{ex:no.erg.rga}), the subject \ipa{fsapaʁ} 	\ipa{ra} `domestic animals' has no ergative marking, a difference which can be accounted for by assuming that the  complement clause in this example is restricted to the sole infinitive verb form \ipa{kɤ-ndza}   to eat'.
+
+\begin{exe}
+\ex \label{ex:no.erg.rga}
+\gll \ipa{fsapaʁ} 	\ipa{ra} 	[\ipa{kɤ-ndza}] 	\ipa{wuma} 	\ipa{rga-nɯ}  \\
+animals \textsc{pl}  \textsc{inf}-eat very \textsc{emph}  like:\textsc{fact}-\textsc{pl} \\
+\glt `Domestic animals like to eat it.' (hist-19-qachGa mWntoR, 116)
+\end{exe}
+ 
+
+\subsection{Discontinuous complement} 
+
+Discontinuous clauses are rare in Japhug. The only clear example in our corpus is (\ref{ex:lWlu.kW.aZo}). In this example, the \textsc{1sg} pronoun \ipa{aʑo} (the subject of the matrix clause, which has no syntactic role in the complement clause) appears between the A \ipa{lɯlu} 	\ipa{kɯ} `the cat' and the P \ipa{ʁnɯz} `two' of the complement clause. Despite the rarity of this construction, this sentence was not considered to be unusual by our consultant when listening again to the recording.
  
  \begin{exe}
 \ex \label{ex:lWlu.kW.aZo}
@@ -233,12 +1348,9 @@ Discontinuous clauses are rare in Japhug, but examples of elements from the matr
 \textsc{lnk} cat \textsc{erg} \textsc{1sg} two \textsc{emph} \textsc{pfv}:3$\rightarrow$3'-take \textsc{pfv}-see-\textsc{pst:tr-1sg} \\
 \glt `I saw a cat catching two of them.' (22-kumpGatCW, 61)
 \end{exe}
-
-  \subsection{Multiple complements}
- \ipa{ɯ-zda} 	\ipa{nɯ} 	\ipa{ra} 	\ipa{pɣɤtɕɯ} 	\ipa{kɯ-ɣɤwu,} 	\ipa{kʰɯna} 	\ipa{kɯ-ɤndzɯt,} 	\ipa{lɯlu} 	\ipa{kɯ-ɣɤwu} 	\ipa{qachɣa} 	\ipa{kɯ-mbri} 	\ipa{kɯ-fse,} 	\ipa{nɯra} 	\ipa{tu-nɯɕpɯz} 	\ipa{ɲɯ-spe.} 	
  
-\subsection{Complements followed by a postposition} 
-It is possible for a complement to be followed by the postposition \ipa{ma} `apart from' to express a restriction, as in example (\ref{ex:manWma.compl}).
+\subsection{Restrictive} 
+To express a restriction (`only') having scope over a complement clause, the postposition \ipa{ma} `apart from' is used after the complement, sometimes with the postposition repeated two times [X \ipa{ma} \ipa{nɯ} \ipa{ma}] `apart from X, apart from it' as in example (\ref{ex:manWma.compl})
 
 \begin{exe}
 \ex \label{ex:manWma.compl}
@@ -248,12 +1360,50 @@ It is possible for a complement to be followed by the postposition \ipa{ma} `apa
 \end{exe}
  
   \section{A classification of complement-taking verbs} 
-  \subsection{Modal verb}
-  
-    \subsubsection{\jpg{spa}{be able to}} \label{sec:spa}
-The verb \jpg{spa}{be able to} is the only transitive modal verb.\footnote{The causative verb \jpg{sɯxcʰa}{(cause to) have the ability to} is also formally transitive, but is only used in inverse forms, see section XXX)} It originates from the abilitative form of the verb \ipa{pa} `do' (\citealt{jacques15causative}) and has a cognate in Tangut  (\citealt{jacques14esquisse}), showing that its lexicalization occurred even earlier than proto-Gyalrongic.
+  \subsection{Modal verbs}
+This section includes complement-taking verbs expressing deontic and epistemic modality, to the exclusion of verbs of volition (want, wish etc) and attitudinal verbs, which are classified among verbs of cognition and speech.
 
-The verb \jpg{spa}{be able to} takes both infinitival (examples \ref{ex:rYo:inf:A} and \ref{ex:rYo:inf:S}) or finite complements, and its A is coreferent with the S or the A of the complement clause.
+Table \ref{tab:modal.verbs} presents the list of all the auxiliary verbs in this category. They can take both finite and infinitival complement clauses. The impersonal verbs are not compatible with person or number marking, and take the complement clause as their subject. 
+
+A detailed study of the fine semantic differences between these verbs goes beyond the topic of the present paper. More detailed data is provided for three of them, \jpg{spa}{be able, know how to} (section \ref{sec:spa}), \jpg{sɯxcʰa}{be able} (\ref{sec:sWxcha}) and \jpg{ra}{have to} (\ref{sec:ra}).
+
+\begin{table}[H]
+\caption{Inventory of modal verbs in Japhug} \centering \label{tab:modal.verbs}
+\begin{tabular}{lllllll}
+\toprule
+ & 	Meaning & 	Transitivity & 	Coreference & 	\\
+ \midrule
+\ipa{cʰa} & 	can & 	semi-tr & 	S/A=S & 	\\
+\ipa{spa} & 	know how to & 	tr & 	S/A=A & 	\\
+\ipa{sɯxcʰa} & 	(cause to) be able & 	inverse & 	S/A=P & 	\\
+\ipa{sna} & 	be worthy of, be usable to & 	stative & 	S/A/P=S & 	\\
+\ipa{kʰɯ} & 	be possible & 	stative & 	S/A/P=S, zero & 	\\
+\midrule
+\ipa{ɬoʁ} & 	have to & 	imp. & 	zero & 	\\
+\ipa{ra} & 	have to & 	imp. & 	zero & 	\\
+\ipa{ʁzi} & 	need & 	imp. & 	zero & 	\\
+\ipa{ntshi} & 	be preferable & 	imp. & 	zero & 	\\
+\ipa{mna} & 	be preferable & 	imp. & 	zero & 	\\
+\ipa{ŋgrɯ} & 	succeed & 	imp. & 	zero & 	\\
+\ipa{zgɤt} & 	should & 	imp. & 	zero & 	\\
+\ipa{jɤɣ} & 	be possible, be authorized & 	imp. & 	zero & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{\jpg{spa}{be able to} and \jpg{cʰa}{can}} \label{sec:spa}
+The verb \jpg{spa}{be able to, know how to} originates from the abilitative form of the verb \ipa{pa} `do' (\citealt{jacques15causative}) and has a cognate in Tangut  (\citealt{jacques14esquisse}), showing that its lexicalization occurred even earlier than proto-Gyalrongic.
+
+The verb \jpg{spa}{be able to} can have a noun phrase as its object, as  in \refb{ex:kospa}.
+
+\begin{exe}
+\ex \label{ex:kospa}
+\gll \ipa{ɕoŋβzu}	\ipa{ko-spa} \\
+carpentry \textsc{ifr}-be.able \\
+\glt `He learned carpentry'. (elicited)
+\end{exe}
+
+As a complement-taking verb, \jpg{spa}{be able to} takes both infinitival (examples \ref{ex:rYo:inf:A} and \ref{ex:rYo:inf:S}) or finite (\ref{ex:mWjspe}) complements, and its A is coreferent with the S or the A of the complement clause. The subject coreference is required, and no example of coreference with objects, adjuncts or other elements of the complement clause have been observed with this verb.
 
 \begin{exe}
 \ex  \label{ex:rYo:inf:A}
@@ -270,35 +1420,451 @@ The verb \jpg{spa}{be able to} takes both infinitival (examples \ref{ex:rYo:inf:
  \textsc{inf}-laugh \textsc{q-pfv}:3$\rightarrow$3'-be.able.to\\
  \glt `Is he now able to laugh?' (conversation, 2014, of a three month old infant)
 \end{exe}
-    
-  \subsubsection{\jpg{ra}{have to}} \label{sec:ra}
-  \ipa{tɤ-pɤtso} 	\ipa{nɯ,} 	\ipa{tɯ-pɤrme} 	\ipa{roro} 	\ipa{jamar} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{tɯ-nɯ} 	\ipa{kɤ-sɯβde} 	\ipa{pjɤ-ra} 
-  
-  \subsection{Phasal verbs and other aspectual auxiliaries}
-\subsubsection{\jpg{rɲo}{experience}}   \label{sec:rɲo}
 
+
+\begin{exe}
+\ex \label{ex:mWjspe}
+\gll \ipa{ɯ-tʰoʁ}	\ipa{nɯ}	\ipa{kɯ-fse,}	\ipa{sɤtɕʰa}	\ipa{nɯ}	\ipa{ju-rɤtɣe}	\ipa{kɯ-fse}	\ipa{qʰe,}	\ipa{tu-ŋke}	\ipa{ma}	\ipa{nɯ}	\ipa{ma}	\ipa{ɲɯ-nɯqambɯmbjom}	\ipa{ra}	\ipa{mɯ́j-spe} \\
+\textsc{3sg.poss}-ground \textsc{dem} \textsc{inf:stat}-be.like ground \textsc{dem}  \textsc{ipfv}-measure.handspan.by.handspan \textsc{inf:stat}-be.like  \textsc{lnk} \textsc{ipfv}-walk apart.from \textsc{dem} apart.from \textsc{ipfv-auto}-fly \textsc{pl} \textsc{neg:sens}-be.able[III] \\
+\glt  `It is only able to move on the ground as if measuring it handspan by handspan, it cannot fly.' (26-qambalWla, 79)
+\end{exe}
  
+The verb \jpg{cʰa}{can} occurs in the same construction as \jpg{spa}{be able to}, except that it is a semi-transitive verb, whose subject is not marked with th ergative and whose semi-object is not indexed by verb morphology.
+
+
+  \subsubsection{\jpg{sɯxcʰa}{(cause to) be able}} \label{sec:sWxcha}
+The verb \jpg{sɯxcʰa}{(cause to) be able}  is the causative derivation of \jpg{cʰa}{can}.  It can take both an object and an infinitival complement.This verb most often occurs in inverse form with a non-overt causer (subject), and has the specific meaning of  `(cause to) be physically able to X', `(cause to) be strong enough to X', as in examples (\ref{ex:mWjtWwGsWxcha}) and (\ref{ex:mWYWwGsWxcha}). The subject is not expressed, but implicitly as the heavy object in \refb{ex:mWjtWwGsWxcha} and the animal taken by the eagle in \refb{ex:mWYWwGsWxcha}.
+
+\begin{exe}
+\ex \label{ex:mWjtWwGsWxcha}
+\gll \ipa{ɲɯ-rʑi} 	\ipa{tɕe} 	\ipa{kɤ-fkur}  	\ipa{mɯ́j-tɯ-wɣ-sɯx-cʰa.} \\
+\textsc{sens}-be.heavy \textsc{lnk}  \textsc{inf}-carry.on.the.back \textsc{neg:sens-2-inv-caus}-can \\
+\glt `It is heavy, you won't be able to carry it on your back.' (elicitation)
+\end{exe}	
+
+  
+\begin{exe}
+\ex \label{ex:mWYWwGsWxcha}
+\gll \ipa{tʰɯ-wxti-nɯ} 	\ipa{tsa} 	\ipa{tɕe} 	\ipa{tɕe,} 	\ipa{ta-tsɯm} 	\ipa{tɕe} 	\ipa{tu-ɣɤrʁɤβjɤβ} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe} 	\ipa{ɯʑo} 	\ipa{kɤ-tsɯm} 	\ipa{mɯ-ɲɯ́-wɣ-sɯx-cʰa.} \\
+\textsc{pfv}-be.big-\textsc{pl} a.little \textsc{lnk}  \textsc{lnk} \textsc{pfv}:3$\rightarrow$3'-take.away \textsc{lnk} \textsc{ipfv}-struggle \textsc{sens}-be.\textsc{affirm}   \textsc{lnk} \textsc{3sg} \textsc{inf}-take.away \textsc{neg-sens-inv-caus}-can \\
+\glt `When (piglets, lamb) have grown up, when (the eagle tries to) take away (one of them), it struggles and (the eagle) is not strong enough to take it away. (150819 RarphAB, 6)
+\end{exe}	
+
+The object (causee) of \jpg{sɯxcʰa}{(cause to) be able}  is coreferent with the subject of the complement clause.\footnote{In these examples the subject of \jpg{sɯxcʰa}{(cause to) be able} is coreferent with the object of the clause, but this is not a requirement.} Such a coreference restriction is extremely rare in Japhug, but it is the logical consequence of the fact that the base verb \jpg{cʰa}{can} has subject coreference restriction, and that the causative derivation demotes the subject of the base verb (causee) to object status.
+
+This verb attested in found direct forms, as in \refb{ex:mWYWsWxche}, but only in its use as plain transitive verb `cause to be able to bear', and does not take infinitival complements.
+
+\begin{exe}
+\ex \label{ex:mWYWsWxche}
+\gll 
+\ipa{kumpɣa} 	\ipa{pʰu} 	\ipa{nɯ} 	\ipa{ɲɯ-βʁa} 	\ipa{tɕe,} 	\ipa{mu} 	\ipa{nɯra} 	\ipa{mɯ-ɲɯ-sɯx-cʰe} \\
+fowl male \textsc{dem} \textsc{sens}-win \textsc{lnk} female \textsc{dem:pl} \textsc{neg-sens-caus}-can \\
+\glt `(Otherwise) the roosters are too strong, and and the hens cannot bear it. (150819 kumpGa, 9)
+\end{exe} 
+
+  \subsubsection{\jpg{ra}{have to}} \label{sec:ra}
+  The modal verb \jpg{ra}{have to, need} cannot take any person or number marker. Its subject is either a noun phrase or a complement clause. If the intransitive subject of \jpg{ra}{have to, need} is a noun phrase, the experiencer, is marked with the genitive case, as in (\ref{ex:aZWG.ra}). In complement clauses however, the experiencer does not received special marking, as in \refb{ex:kAfstWni}.
+    
+  \begin{exe}
+\ex \label{ex:aZWG.ra}
+\gll \ipa{aʑɯɣ} 	\ipa{ɯ-ɕa} 	\ipa{ra} 	\ipa{ma} 	\ipa{nɯ} 	\ipa{ma} 	\ipa{kɯ-ra} 	\ipa{me} \\
+\textsc{1sg:gen} \textsc{3sg.poss}-meat have.to:\textsc{fact} apart.from \textsc{dem} apart.from \textsc{nmlz:S/A}-have.to not.exist:\textsc{fact} \\
+\glt `I need its meat, I don't need anything else.' (02-deluge2012, 14)
+\end{exe}
  
+ The verb \jpg{ra}{have to, need}  is compatible with either finite (see \ref{ex:amApWwGnWClWG} or \ref{ex:tunAmea} above) or infinitive (example \ref{ex:ra.inf}) complements. Other types of complements or complementation strategies are not attested.
+ 
+ \begin{exe}
+\ex \label{ex:ra.inf}
+\gll   \ipa{tɤ-pɤtso} 	\ipa{nɯ,} 	\ipa{tɯ-pɤrme} 	\ipa{roro} 	\ipa{jamar} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{tɯ-nɯ} 	\ipa{kɤ-sɯ-βde} 	\ipa{pjɤ-ra}  \\
+\textsc{indef.poss}-child \textsc{dem} one-year.old over about \textsc{lnk} \textsc{lnk} \textsc{indef.poss}-breast \textsc{inf-caus}-abandon \textsc{ipfv.ifr}-have.to \\
+\glt  `Children had to be weaned at about one year old.' (140426 tApAtso kAnWBdaR, 83)
+\end{exe}  
+
+The verb in the complement clause is almost always either in imperfective or irrealis form. It can be in the Perfective if \jpg{ra}{have to} takes the past \ipa{pɯ-} prefix, as in (\ref{ex:ra.inf}).
+
+ \begin{exe}
+\ex \label{ex:kAfstWni}
+\gll 
+\ipa{tɕe} 	\ipa{iʑo} 	\ipa{ji-kʰa} 	\ipa{kɯnɤ} 	\ipa{kɤ-fstɯn-i} 	\ipa{pɯ-ra} \\
+\textsc{lnk} \textsc{1pl} \textsc{1pl.poss}-house also \textsc{pfv}-take.care.of-\textsc{1pl} \textsc{pst.ipfv}-have.to \\
+\glt `We also had to take care of him at our home.' (14-tApitaRi, 358)
+\end{exe}  
+
+The modal \jpg{ra}{have to}  is one of the few verbs that can take one or several complement clauses in the imperative, as in \refb{ex:tAGi.ra}. In this construction, \jpg{ra}{have to} appears in the factual form.
+
+\begin{exe}
+\ex \label{ex:tAGi.ra}
+\gll \ipa{a-mke} 	\ipa{kɤ-rqoʁ} 	\ipa{qʰe} 	\ipa{a-rca} 	\ipa{tɤ-ɣi} 	\ipa{ra}  \\
+\textsc{1sg.poss}-neck \textsc{imp}-hug \textsc{lnk} \textsc{1sg.poss}-following \textsc{imp:up}-come have.to:\textsc{fact} \\
+\glt `Hug my neck and come with me (in heavens).' (31-deluge, 109)
+\end{exe}
+
+  \subsection{Phasal verbs and other aspectual auxiliaries}
+Aspectual and phasal complement-taking verbs present a  much greater variety of constructions that modal verbs. Table \ref{tab:phasal} summarizes the constructions attested with each verbs, not all of which are equally common.\footnote{The abbreviation are as follows: 	I. (\ipa{kɤ-} Infinitive), P.  (Participle), 	BI (bare infinitive and \ipa{tɯ-} infinitive), 	F. (finite complement), tr. (transitive), imp. (intransitive impersonal), Y. (attested), N. (non-attested).  }  
+
+As shown in section \ref{sec:inf.rYo}, verbs in this group have different coreference restrictions depending on the complement type. With  \jpg{rɲo}{experience} for instance, when used with a bare infinitive / \ipa{tɯ-} infinitival complement, subject coreference is obligatory, while when it takes a \ipa{kɤ-} infinitival complement coreference with the the object or with a possessor of the subject is also possible.
+
+\begin{table}[H]
+\caption{Inventory of phasal and aspectual auxiliaries in Japhug} \label{tab:phasal} 
+\begin{tabular}{lllllllllllllllllll}
+\toprule
+Verb & 	Meaning & 	 & 	I. & 	P.& 	BI & 	F. & 	Strategy & 	\\
+\midrule
+\ipa{rɲo} & 	experience & 	tr. & 	Y & 	N & 	Y & 	N & 	N & 	\\
+\ipa{sɤtɕɯtʂi} & 	continue & 	tr. & 	Y & 	N & 	Y & 	Y & 	serial & 	\\
+\ipa{sɤʑa} & 	begin, start & 	tr. & 	Y & 	N & 	Y & 	N & 	N & 	\\
+\ipa{ʑa} & 	begin, start & 	tr. & 	Y & 	N & 	Y & 	N & 	serial & 	\\
+\ipa{stʰɯt} & 	finish & 	tr. & 	Y & 	N & 	Y & 	Y & 	N & 	\\
+\ipa{sɯɣjɤɣ} & 	finish & 	tr. & 	Y & 	N & 	N & 	N & 	N & 	\\
+\ipa{kʰɤt} & 	do repeatedly & 	tr. & 	Y & 	N & 	N & 	N & 	\refb{sec:nouns}& 	\\
+\ipa{nɯftɕaka} & prepare to & 	tr. & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\midrule
+\ipa{jɤɣ} & 	be finished & 	imp. & 	Y & 	N & 	Y & 	N & 	N & 	\\
+\ipa{ŋgrɤl} & 	be usually the case & 	imp. & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{rɤŋgat} & 	be about to & 	imp. & 	N & 	Y & 	Y & 	N & 	N & 	\\
+\ipa{mda} & 	be time to & 	imp. & 	Y & 	N & N & 	Y & 	N & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In addition to \jpg{rɲo}{experience} which has been treated in previous sections, data are provided for \jpg{stʰɯt}{finish} (the verb in this group with the greatest diversity of complement types) and \jpg{ŋgrɤl}{be usually the case} (as a representative of impersonal aspectual verbs).
+
+\subsubsection{\jpg{stʰɯt}{finish}}
+Of all the complement-taking verbs in Japhug, \jpg{stʰɯt}{finish} is one of those which are compatible with the greatest diversity of complement types.
+
+It appears with \ipa{kɤ-} infinitives (\ref{ex:nasthWt}), bare infinitives (\ref{ex:tasthWt}) or finite complements (\ref{ex:pasthWt}), with respectively 16, 8 and 3 examples in the corpus. 
+
+\begin{exe}
+\ex \label{ex:nasthWt}
+\gll \ipa{tɯ-nɯ} 	\ipa{kɤ-jtsʰi} 	\ipa{na-stʰɯt} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{tɤ-pɤtso} 	\ipa{nɯ} 	\ipa{li} 	\ipa{ɯ-sta} 	\ipa{nɯtɕu} 	\ipa{ko-ɕɯ-rŋgɯ} 	\\
+\textsc{indef.poss}-breast \textsc{inf}-give.to.drink \textsc{pfv}:3$\rightarrow$3'-finish \textsc{lnk} \textsc{lnk} \textsc{indef.poss}-child \textsc{dem} again \textsc{3sg.poss}-bed \textsc{dem:loc} \textsc{ifr-caus}-lay \\
+\glt `After she had finished breastfeeding, she put back the child on his bed.' (140429 jiedi, 270)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tasthWt}
+\gll
+\ipa{nɯ} 	\ipa{ɯ-ti} 	\ipa{ta-stʰɯt} \\
+\textsc{dem} \textsc{3sg.poss-bare.inf}:say \textsc{pfv}:3$\rightarrow$3'-finish \\
+\glt `When she finished saying that,'(150818 muzhi guniang, 125)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:pasthWt}
+\gll 	\ipa{nɯra} 	\ipa{pa-βzjoz}	\ipa{pa-sthɯt} \ipa{tɕe} \ipa{ɯ-sloχpɯn} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{taqaβ} 	\ipa{tɯ-ldʑa} 	\ipa{ɲɤ́-wɣ-mbi} 
+\\
+ \textsc{dem:pl} \textsc{pfv}:3$\rightarrow$3'-learn \textsc{pfv}:3$\rightarrow$3'-finish \textsc{lnk} \textsc{3sg.poss}-teacher \textsc{dem} \textsc{erg} needle one-\textsc{cl} \textsc{ifr-inv}-give  \\
+\glt `When he finished learning this (craft), his teacher gave him a needle.' (140508 benling gaoqiang de si xiongdi, 97)
+\end{exe} 
+
+Like \jpg{ʑa}{start} (see section \ref{sec:raising}), \jpg{stʰɯt}{finish} inherits the orientation of the verb in the complement clause. In the examples (\ref{ex:nasthWt}),  (\ref{ex:tasthWt}) and (\ref{ex:pasthWt}) above, \jpg{stʰɯt}{finish} respectively takes the `towards west' (Perfective \ipa{na-}), `up' (Perfective \ipa{ta-}) and `down' (Perfective \ipa{pa-}) orientations, which are the orientations lexically selected by \jpg{jtsʰi}{give to drink},\footnote{This verb is the causative of \jpg{tsʰi}{drink} which take the `towards east' orientation: despite being etymologically related, these two verbs select distinct orientations.}  \jpg{ti}{say} and \jpg{βzjoz}{learn} respectively.
+
+
+\subsubsection{\jpg{ŋgrɤl}{be usually the case}}
+The verb \jpg{ŋgrɤl}{be usually the case}, although very common, occurs in a very restricted construction. It cannot take person/number marking, and is only used with finite complements. The verb in the complement clause is nearly always in the imperfective, as in \refb{ex:pWNgrAl}, except for existential verbs such as \jpg{tu}{exist}, which appear in the factual (\ref{ex:tu.NgrAl}).
+
+\begin{exe}
+\ex \label{ex:pWNgrAl}
+ \gll \ipa{aʑo} 	\ipa{kumpɣa} 	\ipa{cʰɯ-nɯ-χse-a} 	\ipa{pɯ-ŋgrɤl}  \\
+\textsc{1sg}  chicken \textsc{ipfv-auto}-feed[III]-\textsc{1sg} \textsc{pst.ipfv}-be.usually.the.case \\
+\glt  `I used to raise chicken /(for my own sake).' (150819 kumpGa, 69)
+\end{exe}
+\begin{exe}
+\ex \label{ex:tu.NgrAl}
+ \gll
+\ipa{ɕɤr} 	\ipa{tɕe} 	\ipa{tu} 	\ipa{ŋgrɤl,} 	\ipa{tu-mbri} 	\ipa{ŋgrɤl}  \\
+night \textsc{lnk} exist:\textsc{fact} be.usually.the.case:\textsc{fact} \textsc{ipfv}-call be.usually.the.case:\textsc{fact} \\
+\glt `(Owls) appear, howl during the night.' (22-pGAkhW, 19)
+\end{exe}
+
+\subsection{Verbs of cognition and speech} \label{sec:cognition}
+Verbs and complex predicates expressing cognition, perception and speech can be divided into three categories depending on the type of complements they can take.
+
+First, some verbs accept both infinitival and finite (including reported speech, see \ref{sec:reported}) complements; this category mainly includes modal verbs of volition, verbs of thought and attitudinal verbs (`fear', `hate').
+
+Second, some verbs of perception and cognition accept finite complements, but cannot take infinitival complements.  
+
+Third, some attitudinal verbs and intentional perception verbs (`look at', `listen to') cannot take complement clauses, and can only use the coordination complementation strategy (section  \ref{sec:coordination}).
+ 
+ Each of these three categories is illustrated by one verb, respectively \ipa{ɯ-ʁjiz ɣi}, \jpg{sɯχsɤl}{realize} and \jpg{ru}{look at}.
+ 
+\begin{table}[H]
+\caption{Inventory of verbs of cognition, perception and speech in Japhug} \label{tab:cognition} 
+\begin{tabular}{lllllllllllllllllll}
+\toprule
+Verb & 	Meaning & 	 & 	I. & 	P.& 	BI & 	F. & 	Strategy & 	\\
+\midrule
+\ipa{sɯso} & 	think, want & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{jmɯt} & 	forget & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{rga} & 	like & 	semi-tr & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{nɯɣmu} & 	fear & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{qʰa} & 	hate & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{ʁmɯɣ} & 	intend to & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{nɯmga} & 	want to obtain & 	tr  & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{ɯ-sɯm ɕe} & 	want & 	colloc & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\ipa{ɯ-ʁjiz ɣi} & 	wish & 	colloc & 	Y & 	N & 	N & 	Y & 	N & 	\\
+\midrule
+\ipa{sɯχsɤl} & 	realize that & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{mto} & 	see & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{mtsʰɤm} & 	hear & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{ɕɯftaʁ} & 	remember & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{tso} & 	know, understand & 	semi-tr & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{sɯz} & 	know & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{nɯmgro} & 	hope & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\ipa{ti} & 	say & 	tr  & 	N & 	N & 	N & 	Y & 	N & 	\\
+\midrule
+\ipa{ru} & 	look at & 	it & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\ipa{sɤŋo} & 	listen to & 	lab & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\ipa{nɯsɯmʁɲiz} & 	hesitate & 	it & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\ipa{nɯsɯmŋɤn} & 	suspect & 	it & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\ipa{ʁnɯ} & 	suspect & 	it & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\ipa{nɯʁlɯmbɯɣ} & 	estimate & 	it & 	N & 	N & 	N & 	N & 	coordination & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{\ipa{ɯ-ʁjiz ɣi}}
+The collocation \jpg{ɯ-ʁjiz ɣi}{wish}, comprising the possessed noun \jpg{ɯ-ʁjiz}{wish} and the verb \jpg{ɣi}{come}, takes both infinitival and finite complements. The noun \jpg{ɯ-ʁjiz}{wish} is syntactically the intransitive subject of \jpg{ɣi}{come}, which can only appear in third person singular form in this construction. The experiencer is marked by the possessive prefix on the noun.
+
+Example \refb{ex:mWpjAGi} illustrates both types of complements (the finite complement is in direct speech).
+\begin{exe}
+\ex \label{ex:mWpjAGi}
+\gll 
+\ipa{qaɕpa} 	\ipa{ɣɯ} 	\ipa{ɯ-kʰa} 	\ipa{nɯtɕu} 	\ipa{ju-kɤ-ɕe} 	\ipa{ɯ-ʁjiz} 	\ipa{mɯ-pjɤ-ɣi,} 	\ipa{qaɕpa} 	\ipa{ɯ-tɕɯ} 	\ipa{ɯ-rʑaβ} 	\ipa{kɯnɤ} 	\ipa{ku-βze-a} 	\ipa{ɯ-ʁjiz} 	\ipa{mɯ-pjɤ-ɣi} 	\ipa{ɲɯ-ŋu}  \\
+frog \textsc{gen} \textsc{3sg.poss}-house \textsc{dem:loc} \textsc{ipfv-inf}-go \textsc{3sg.poss}-wish \textsc{neg-ifr}-come frog \textsc{3sg.poss}-son \textsc{3sg.poss}-wife also \textsc{ipfv}-make[III]-\textsc{1sg} 
+\textsc{3sg.poss}-wish \textsc{neg-ifr}-come \textsc{sens}-be \\
+\glt  She did not want to go to the frog's house, she did not want to become the frog's son's wife.' (150818 muzhi guniang, 128-9)
+\end{exe}
+%\begin{exe}
+%\ex 
+%\gll \ipa{a-mgɯr} 	\ipa{tɤŋkʰɯt} 	\ipa{kɤ-lɤt} 	\ipa{mɯ-ɲɤ-tɯ-nɯ-jmɯt} 	\ipa{ɯ́-ŋu} \\
+%\textsc{1sg.poss}-back fist \textsc{inf}-throw \textsc{neg-ifr-2-auto}-forget \textsc{qu}-be:\textsc{fact} \\
+%\glt `Didn't you forget to massage my back with your fist?' (TaRrdo, 37)
+%\end{exe}
+
+\subsubsection{\jpg{sɯχsɤl}{realize}}
+The verb \jpg{sɯχsɤl}{realize} , like most verbs of perception, is only compatible with finite complements, as in \refb{ex:chAtWnWrArJit}. 
+
+\begin{exe}
+\ex \label{ex:chAtWnWrArJit}
+\gll \ipa{a-ʑi} 	\ipa{ra} 	\ipa{cʰɤ-tɯ-nɯ-rɤrɟit} 	\ipa{mɯ́j-tɯ-nɯ-sɯχsɤl}\\
+\textsc{1sg.poss}-lady \textsc{pl} \textsc{ifr-2-auto}-give.birth \textsc{neg:sens-2-auto}-realize\\
+\glt `My lady, don't you see that you have given birth ?' (Kunbzang 2003, 118)
+\end{exe}
+
+Examples such as \refb{ex:srWnmW.kWNu} could superficially appear to be infinitival clauses, since \jpg{ŋu}{be}̌, being a stative verb, makes its infinitive in \ipa{kɯ-ŋu}.
+
+\begin{exe}
+\ex \label{ex:srWnmW.kWNu}
+ \gll \ipa{ɯʑo} 	\ipa{srɯnmɯ} 	\ipa{kɯ-ŋu} 	\ipa{nɯ} 	\ipa{tɤ-wa} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{mɯ-pjɤ-sɯχsɤl} 	\\
+ \textsc{3sg} râkhsasî \textsc{nmlz}:S/A-be \textsc{dem} \textsc{indef.poss}-father \textsc{dem} \textsc{erg} \textsc{neg-ifr}-realize \\
+ \glt `The father did not realize that she (his new wife) was a râkshasî.' (28-smAnmi, 68)
+\end{exe}
+
+However, the form  \ipa{kɯ-ŋu} here should rather be analyzed as the homophonous subject participle form, and the clause a head-internal relative clause (`the râkshâsî that she was'). 
+
+\subsubsection{\jpg{ru}{look at}}
+The intentional perception verb \jpg{ru}{look at} is morphologically intransitive, but can take an oblique argument with the dative or the absolutive. It is not compatible with any complement clause (not unlike its English equivalent), but commonly occurs with coordinated clauses expressing the perceive event, as in \refb{ex:luru}.
+
+\begin{exe}
+\ex \label{ex:luru}
+ \gll \ipa{tɕe} 	\ipa{lu-ru} 	\ipa{tɕe} 	\ipa{ɯ-ŋgɯ} 	\ipa{nɯtɕu} 	\ipa{ɯʑo} 	\ipa{lu-ntɕʰɤr} 	\ipa{ɲɯ-ŋu} \\
+ \textsc{lnk} \textsc{ipfv:upstream}-look.at  \textsc{lnk}  \textsc{3sg.poss}-inside \textsc{dem:loc} himself \textsc{ipfv:upstream}-be.reflected \textsc{sens}-be \\
+ \glt `(The rooster) looked at (a window) and (saw) its own reflection in it.' (150819 kumpGa, 63)
+\end{exe}
   
   \subsection{Motion verbs}
-  
-motion verbs and associated motion   \citet{jacques13harmonization}
-  
-\subsection{Causative verbs}
-
-
- %mɯ-tu-kɤ-nɤtɯti kɯ-ra tɤ́-wɣ-sɯ-βzu-a-nɯ ndʐa ɕti ma
-
-\subsection{Complements of stative verbs}
-
-enough to
-\ipa{koŋla} 	\ipa{pjɯ-nɤrte} 	\ipa{ʑo} 	\ipa{kɯ-rtaʁ} 	\ipa{ʑo} 	\ipa{kɯ-wxti} 	\ipa{ɲɯ-βze} 	\ipa{ŋgrɤl} 
-
-\subsection{Complements of nouns and noun-verb collocations}
-\ipa{mɯ-tu-kɤ-mbro} 	\ipa{ftɕaka} 	\ipa{tu-βze-a} 	\ipa{ŋu} 
-
- \section{Conclusion}
+Two motion verb \jpg{ɕe}{go} and \jpg{ɣi}{come} take participial complements (see section \ref{sec:SApart}, example \ref{ex:motion.verb} below). Other motion verbs (such as \jpg{ŋke}{walk}, \jpg{rɟɯɣ}{run}, \jpg{nɯqambɯmbjom}{fly})  and verbs of manipulation (\jpg{ɣɯt}{bring} and \jpg{tsɯm}{take away}) cannot take purposive complements, though the latter use relative clauses in essive function as a complementation strategy (section \ref{sec:essive}).
  
+Japhug has both motion verbs with purposive complements and associated motion  prefixes (venitive \ipa{ɣɯ-}  and andative \ipa{ɕɯ-} grammaticalized from \jpg{ɣi}{come} and  \jpg{ɕe}{go} respectively). As shown in \citet[203]{jacques13harmonization}, these two constructions present an obvious semantic contrast when used in the perfective. In the purposive complement construction, when the motion verb is in the perfective, only the motion is implied to have taken place, nothing is said about the action described by the  complement. For instance, example \ref{ex:motion.verb} makes sense only if the action of the purposive complement has not taken place yet.
+
+\begin{exe}
+\ex \label{ex:motion.verb}
+\gll
+\ipa{tɕʰi} 	\ipa{ɯ-kɯ-nɤma} 	\ipa{jɤ-tɯ-ɣe?} \\
+what \textsc{3sg-nmlz:}S/A-do \textsc{pfv-2}-come[II] \\
+\glt What have you come to do?
+\end{exe} 
+
+By contrast, the associated motion construction implies that both motion and the action following it have been completed, as in example \refb{ex:associated}.
+
+\begin{exe}
+\ex \label{ex:associated}
+\gll
+\ipa{ɕɯ} 	\ipa{ra} 	\ipa{nɯ-kʰa} 	\ipa{tɕe} 	\ipa{ɕ-pɯ-tɯ-rɤ-tʂɯβ} \ipa{tɤ-ti} \ipa{ra}\\
+who \textsc{pl} \textsc{3pl.poss}-house \textsc{lnk} \textsc{transloc-pfv-2-apass}-sow \textsc{imp}-say  have.to:\textsc{fact} \\
+\glt `Tell us in whose house you have been to do sewing.' (140512 alibaba, 162)
+ \end{exe} 
+
+\subsection{Attempt} \label{sec:attempt}
+The verbs \jpg{tsʰɤt}{try} and \jpg{rɤtsʰɤt}{try} (no discernible semantic difference between the two could be ascertained) are not attested with complement clauses in the corpus. They can occur with a coordinated reported speech (section \ref{sec:coordination}), as in example \refb{ex:WYAthoRmphrAt}.
+ 
+\begin{exe}
+\ex \label{ex:WYAthoRmphrAt}
+\gll \ipa{tɕe} 	\ipa{ɲɯ-βʑoʁ-nɯ} 	\ipa{ɯkʰɯkʰa} 	\ipa{qraʁ} 	\ipa{nɯnɯ} 	\ipa{tu-tsʰɤt-nɯ} 	\ipa{tɕe} 	\ipa{ɯ-ɲɯ-ɤ́tʰoʁmpʰrɤt} 	\ipa{kɯ} 	\ipa{nɯnɯ} 	\ipa{tu-tsʰɤt-nɯ} 	\ipa{ntsɯ} 	\ipa{ra}   	 \\
+\textsc{lnk} \textsc{ipfv}-carve-\textsc{pl} while ploughshare \textsc{dem} \textsc{ipfv}-try-\textsc{pl} \textsc{lnk} \textsc{qu-sens}-fit \textsc{qu} \textsc{dem} \textsc{ipfv}-try-\textsc{pl} always have.to:\textsc{fact} \\
+ \glt `While they shape (the hole to insert the ploughshare), they try the ploughshare, they try it to determine whether or not it fits in.' (24-mbGo, 31)
+\end{exe}
+
+The verbs \jpg{nɤz}{dare} and \jpg{pʰot}{dare} (the second is barely used in the Kamnyu dialect) can be used with both infinitival and finite complements.
+
+%  \ref{sec:comp.noun}
+
+\subsection{Pretence} \label{sec:pretence}
+The verbs of pretence \jpg{nɯɕpɯz}{pretend, imitate} and \jpg{ʑɣɤpa}{pretend} do not accept complement clauses, they only take participial relatives as their objects or semi-object, as described in section \ref{sec:relative.q}. An alternative construction for expressing pretence involves complex predicates with the auxiliary verb \jpg{βzu}{do} and an compound noun with \jpg{kʰramba}{lie, cheating} as first element (see \ref{sec:compound}).
+
+  \subsection{Deixis} \label{sec:deixis}
+ There are two manner deixis verbs in Japhug, the transitive verb \jpg{stu}{do like this} (transitive) and intransitive one \jpg{fse}{be like this, look like}. Both can take an essive noun phrase not indexed in the verb morphology (often restricted to a demonstrative). They can be combined with other verbs in a serial verb construction to express the meaning `do X like Y' (\ref{sec:serial}).
+ 
+ \begin{exe}
+\ex \label{ex:chWtsunW}
+\gll \ipa{ɯ-xɕɤt} 	\ipa{cʰɯ-lɤt-nɯ} 	\ipa{ki} 	\ipa{cʰɯ-stu-nɯ} 	\ipa{tɕe} \\
+\textsc{3sg.poss}-power \textsc{ipfv}-throw-\textsc{pl} this  \textsc{ipfv}-do.like.this-\textsc{pl} \textsc{lnk} \\
+\glt `People insert (bullets in the trunk of the gun) forcefully like this.' (28-CAmWGdW, 61)
+\end{exe}
+
+ Alternatively, the same meaning can be expressed with an infinitive complement clauses, as in \refb{ex:tutsunW}.
+ 
+ \begin{exe}
+\ex \label{ex:tutsunW}
+\gll \ipa{tɕe} 	\ipa{ɕɤmɯɣdɯ} 	\ipa{kɤ-lɤt} 	\ipa{nɯ} 	\ipa{tu-stu-nɯ} 	\ipa{ɲɯ-ŋu}  \\
+\textsc{lnk} gun \textsc{inf}-throw \textsc{dem} \textsc{ipfv}-do.like.this \textsc{sens}-be \\
+\glt `They shoot it like that.' (28-CAmWGdW, 96)
+\end{exe}
+
+  
+\subsection{Analytic causative constructions}
+While Japhug has two productive causative prefixes, \ipa{ɣɤ-} restricted to (some) stative verbs and the general causative(\ipa{sɯ-/sɯɣ-/z-} (see \citealt{jacques15causative} and \citealt{jackson14morpho, lai14caus} for a comparative perspective on Tshobdun and Khroskyabs), it also presents no less than four distinct analytic causative constructions, involving both complement clauses and complementation strategies.
+XXXX
+%ɯʑo ɯ-sɯm z-ɣɤβdi tu-nɯ-βze tɕe nɤkinɯ, 
+ %mɯ-tu-kɤ-nɤtɯti kɯ-ra tɤ́-wɣ-sɯ-βzu-a-nɯ ndʐa ɕti ma
+%ɣɤkhɯ
+%tɕetha ndɤre nɤʑo kɤ-sɯso mɤ-kɯ-ŋgrɯ ɲɯ-tɕat-a ŋu
+
+%smi kɤ-nɯt mɯ-tɤ-ɣɤkhɯ-t-a 
+ %wuma ʑo tɤ-sɯxɕat-a tɕe ɯ-rŋɯl kɤ-tu tɤ-ɣɤkhɯ-t-a.
+  %chɯ-ndɯl-nɯ tɕe kɯ-ndɯ-ndɯβ ʑo chɯ-βzu-nɯ tɕe
+\subsection{Complements of adjectives} \label{sec:adj}
+Adjectives in Japhug can be formally defined as the subclass of stative verbs allowing the tropative derivation (\citealt{jacques13tropative}).\footnote{This definition excludes some noun-like property words.} We can distinguish two classes of adjectives depending on the complements they can take.
+
+
+\subsubsection{Infinitival and finite complements} \label{sec:adj.infinitive}
+A few adjectives are semi-transitive (see section \ref{sec:transitivity}), like \jpg{mkʰɤz}{be expert, be knowledgeable} and optionally take either a noun (\ref{ex:CoNBzu.mkhAz}) or an complement clause (\ref{ex:mkhAztCi}) addition to their S. The complement clause can be either infinitival or finite, with a verb in the imperfective.
+
+\begin{exe}
+\ex \label{ex:CoNBzu.mkhAz}
+\gll 
+\ipa{ɯ-nmaʁ} 	\ipa{jɤ-kɯ-ɣe} 	\ipa{nɯ} 	\ipa{ɕoŋβzu} 	\ipa{mkʰɤz} 	\ipa{tɕe} \\
+\textsc{3sg.poss}-husband \textsc{pfv-nmlz}:S/A-come[II] \textsc{dem} carpentry be.expert:\textsc{fact} \textsc{lnk} \\
+\glt `Her husband (who came to live in her family) is very good at carpentry.' (14-tApitaRi, 273)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:mkhAztCi}
+\gll \ipa{tɕiʑo} 	\ipa{rcanɯ,} 	\ipa{kɤ-taʁ} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{mkʰɤz-tɕi} 	 \\
+\textsc{1du}  \textsc{unexpected} \textsc{inf}-weave really \textsc{emph} be.expert:\textsc{fact}-\textsc{1du} \\
+\glt `We are very good at weaving.' (140521, huangdi de xinzhuang, 20)
+\end{exe}
+
+Adjectives such as \jpg{ɴqa}{be difficult}, \jpg{mbat}{be easy}, which unlike \jpg{mkʰɤz}{be expert} do not have a semi-object, can also take infinitival or finite complement clauses as their S (as in \ref{ex:YWmbat}).
+
+\begin{exe}
+\ex \label{ex:YWmbat}
+\gll
+<gang> 	\ipa{stʰɯci} 	\ipa{mɯ́j-rko} 	\ipa{qʰe,} 	\ipa{ɲɯ-mpɯ} 	\ipa{qʰe} 	[\ipa{tu-ŋgɤɣ,} 	\ipa{ɲɯ-ɤjʁu} 	\ipa{nɯra} 	\ipa{ɲɯ-mbat} \\
+steel as.much \textsc{neg:sens}-be.hard \textsc{lnk} \textsc{sens}-be.soft \textsc{lnk} \textsc{ipfv-anticaus}:bend \textsc{ipfv}-be.curved  \textsc{dem:pl}] \textsc{sens}-be.easy \\
+\glt `(Iron) is not as hard as steel, it is soft and bends easily.' (30-Com, 42)
+\end{exe}
+
+In nearly all cases, the infinitival complements of stative verbs is in the \ipa{kɤ-} infinitive form. The only exception found in the corpus is the verb  \jpg{pʰɤn}{be efficient}, as in example (\ref{ex:kWGAmna}) where \ipa{kɯ-ɣɤmna} is the stative infinitive of the verb \ipa{ɣɤmna} `easy to heal, heal fast' (with the abilitative \ipa{ɣɤ-} prefix). The form \ipa{kɤ-ɣɤmna} with the \ipa{kɤ-} infinitive would also be possible, but this would be the infinitive of the homophonous transitive verb \ipa{ɣɤmna} `heal' (with the causative \ipa{ɣɤ-} prefix) and the meaning would be `it is efficient to heal (this disease)'.
+ 
+ 
+ \begin{exe}
+\ex \label{ex:kWGAmna}
+\gll \ipa{smɤn} 	\ipa{tu-βzu-nɯ} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{ʁo} 	\ipa{kɯ-ɣɤmna} 	\ipa{ɲɯ-pʰɤn} \\
+medicine \textsc{ipfv}-make-\textsc{pl} \textsc{lnk} \textsc{lnk} \textsc{adversative}  \textsc{nmlz:S/A}-\textsc{abil}-heal \textsc{sens}-be.efficient \\
+\glt `When they use medicine, on the other hand, it is efficient to (make this disease) heal faster.' (27-kharwut, 103)
+\end{exe}
+
+Not all infinitival clauses occurring with adjectives are complement clauses. In (\ref{ex:turACi}), the clause whose main verb is the negative infinitive \ipa{mɤ-kɤ-cʰa} is neither a core argument, an adjunct or a purposive clause selected by the predicate of its matrix clause \jpg{rʑi}{be heavy}. Instead, it is an infinitival manner clause (see section \ref{sec:infinitives} and \citealt{jacques14linking}).
+
+\begin{exe}
+\ex \label{ex:turACi}
+\gll [\ipa{maka} 	\ipa{tu-rɤɕi} 	\ipa{mɤ-kɤ-cʰa}] 	\ipa{ʑo} 	\ipa{kɯ-rʑi} 	\ipa{pjɤ-ɕti} \\
+at.all \textsc{ipfv}-pull \textsc{neg-inf}-can \textsc{emph} \textsc{nmlz}:S/A-be.heavy \textsc{ipfv.ifr}-be:\textsc{affirm} \\
+\glt `It was so heavy that (the fisherman) could not pull it out (of the water).' (140512 yufu yu mogui, 35)
+\end{exe}
+
+\subsubsection{Adjectives of degree} \label{sec:degree.complement}
+Adjectives of degree, like \jpg{rtaʁ}{be enough} or \jpg{tɕʰom}{be too much} are compatible with three distinct constructions: finite complement clauses (with a verb in the imperfective, as in example \ref{ex:pjWnArte}), infinitival complement clauses (as in \ref{ex:kWfsoR.kWtChom}) or, most commonly, the degree nominal complementation strategy (example \ref{ex:kotChom}, see also section \ref{sec:degree}).
+
+\begin{exe}
+\ex \label{ex:pjWnArte}
+\gll \ipa{koŋla} 	\ipa{pjɯ-nɤrte} 	\ipa{ʑo} 	\ipa{kɯ-rtaʁ} 	\ipa{ʑo} 	\ipa{kɯ-wxti} 	\ipa{ɲɯ-βze} 	\ipa{ŋgrɤl}  \\
+completely \textsc{ipfv}-wear.as.a.hat \textsc{emph} \textsc{nmlz}:S/A-enough \textsc{emph} \textsc{nmlz}:S/A-be.big \textsc{ipfv}-grow be.usually.the.case:\textsc{fact} \\
+\glt `(Leaves of the burdock) can grow big enough to be worn as hats.' (13-tCamu, 38)
+\end{exe}
+ 
+\begin{exe}
+\ex \label{ex:kWfsoR.kWtChom}
+\gll [\ipa{tɤŋe} 	\ipa{kɯ-fse} 	\ipa{kɯ-fsoʁ}] 	\ipa{kɯ-tɕʰom} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ju-kɯ-ru} 	\ipa{rcanɯ} \\
+sun \textsc{inf:stat}-be.like \textsc{inf:stat}-be.bright \textsc{inf:stat}-be.too.much \textsc{inf:stat}-be.like \textsc{dem:pl} \textsc{ipfv-genr}:S/P-look \textsc{unexpected} \\
+\glt `(When one gets this eye disease), one looks (with the eyes half-closed) as (ones does when one's eyes are dazzled) when the sun is too bright.' (27-tApGi, 7)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kotChom}
+\gll
+\ipa{ma} 	\ipa{ɯ-tɯ-smi} 	\ipa{ko-tɕʰom} 	\ipa{qʰe} \\
+because \textsc{3sg.poss-nmlz:degree}-be.cooked \textsc{ifr}-be.too.much \textsc{lnk} \\
+\glt `Because if it cooks too much (it is not as tasty).' (Conversation 14.05.10)
+\end{exe}
+
+ 
+%  \begin{exe}
+%\ex \label{ex:XtCoN}
+%\gll
+% \ipa{χtɕoŋ} 	\ipa{nɯ} 	\ipa{ɲɯ-pʰɤn} 	\ipa{ɲɯ-ti-nɯ} 	\ipa{ri}  \\
+% rheumatism \textsc{dem} \textsc{sens}-be.efficient \textsc{sens}-say-\textsc{pl} but \\
+% \glt `People say it is good against rheumatism, but...' (20-sWrna, 146)
+%\end{exe}
+% 
+%Example (\ref{ex:tWmtshi}) is not an example of complement clause, as the S-participle of \jpg{mŋɤm}{hurt} is lexicalized in the sense of `disease'.
+%
+%  \begin{exe}
+%\ex \label{ex:tWmtshi}
+%\gll 
+%[\ipa{tɯ-mtsʰi} 	\ipa{kɯ-mŋɤm}] 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pʰɤn} 	\ipa{tu-ti-nɯ} 	\ipa{ŋgrɤl}  \\
+% \textsc{indef.poss-liver}  \textsc{nmlz}:S/A-hurt really \textsc{emph} be.efficient:\textsc{fact} \textsc{ipfv}-say-\textsc{pl} be.usually.the.case:\textsc{fact} \\
+% \glt (05-qaZo 38)
+%\end{exe}
+
+\subsubsection{Causative forms of adjectives}
+The causative forms of adjectives, in addition to their base causative meaning `cause to become X', can also be used with complement clauses to express manner (\citealt[184]{jacques15causative}). In this construction, both  \ipa{kɤ-} infinitives and bare infinitives are possible. For instance, the verb \ipa{ɣɤ-βdi} derived from \jpg{βdi}{be good, be well} can either mean `repair, treat', as in \refb{ex:tuGABdi} or `do well, do properly' with a complement clause as in \refb{ex:akAtWGABdi}.
+
+\begin{exe}
+\ex \label{ex:tuGABdi}
+ \gll \ipa{a-ʁi} 	\ipa{kɯ} 	\ipa{nɯ} 	\ipa{ma} 	\ipa{spe} 	\ipa{me} 	\ipa{ri,} 	<tuolaji> 	\ipa{kɯ-fse,} 	\ipa{mkʰɯrlu} 	\ipa{nɯra} 	\ipa{tu-ɣɤβdi} 	\ipa{spe} \\
+ \textsc{1sg.poss}-younger.sibling \textsc{erg} \textsc{dem} apart.from be.able[III]:\textsc{fact} not.exist:\textsc{fact} but tractor \textsc{nmlz}:S/A-be.like.this machine \textsc{dem:pl} \textsc{ipfv-caus}-be.well be.able[III]:\textsc{fact} \\
+ \glt `My brother is only ablt to do one thing, repair tractors and cars.' (14-tApitaRi, 166)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:akAtWGABdi}
+\gll \ipa{kʰa} 	\ipa{ɯ-ʁɤri} 	\ipa{nɯtɕu} 	\ipa{ɯ-fkrɤm} 	\ipa{a-kɤ-tɯ-ɣɤ-βdi} 	\ipa{tɕe,} 	\ipa{ɕ-pɯ-sɤtse} \\
+house \textsc{3sg.poss}-front.of \textsc{dem:loc} \textsc{3sg.poss-bare.inf}:place \textsc{irr-pfv-2-caus}-be.good \textsc{lnk} \textsc{transloc-imp}-stick.into[III] \\
+\glt `Place these in front of your house in orderly fashion and stick them (into the ground).' (Smanmi 2003, 129)
+\end{exe}
+
+The complement-taking causative verbs inherits the orientation prefix and person marking of the complement verb (see \ref{sec:raising}). 
+
+ 
+  
+ \section{Conclusion}
+no ergative pivots, confirms \citet{jacques16relatives}, \citet{jackson03caodeng}
+
 \bibliographystyle{unified}
 \bibliography{bibliogj}
 \end{document}
