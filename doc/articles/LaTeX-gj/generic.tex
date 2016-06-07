@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -18,8 +18,8 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{\phon\mbox{#1}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -32,7 +32,7 @@
 \newcommand{\ra}{$\Sigma_1$} 
 \newcommand{\rc}{$\Sigma_3$}  
 
-
+\newcommand{\refb}[1]{(\ref{#1})}
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
  
@@ -62,7 +62,7 @@ In addition, the inverse prefix is also used to mark generic person in Japhug an
 \subsection{The verbal paradigms}
 Table \ref{tab:japhug.tr} (from  \citealt{jacques10inverse}) presents the Japhug non-past transitive and intransitive paradigms. The symbol \ro{} represents the verb stem. In Japhug, intransitive verbs do not have stem alternations in the non-past, while some transitive verbs have two stems (called here stem I and stem III following \citealt{jackson00sidaba}'s terminology; stem II is the perfective stem and will not be discussed here, as it is irrelevant to the question of person marking). Stem III is restricted to finite \textsc{sg}$\rightarrow$3 forms (excluding the inverse 3'$\rightarrow$3 form); all other direct forms are identical to the corresponding forms of the intransitive paradigm.
 
-As shown by example (\ref{ex:tuwGnWCpWz}), in 3'$\rightarrow$3 forms, it is always the number of the P that is indexed on the verb, never that of the A; in 3$\rightarrow$3' forms, the number of the A is indexed.
+As shown by example \refb{ex:tuwGnWCpWz}, in 3'$\rightarrow$3 forms, it is always the number of the P that is indexed on the verb, never that of the A; in 3$\rightarrow$3' forms, the number of the A is indexed.
 
 \begin{exe}
 \ex \label{ex:tuwGnWCpWz}
@@ -136,7 +136,7 @@ up \textsc{lnk} up up \textsc{lnk} up \textsc{evd:up-inv-}take.away \\
 
 Conversely, the inverse cannot be used in a sentence where a non-generic animate agent acts upon an inanimate.
 
-When both agent and patient are animate, both inverse or direct forms can be used. Even in the case of a non-human agent acting upon a human patient, the inverse is not required, as is shown by example (\ref{ex:thaCkWt}).
+When both agent and patient are animate, both inverse or direct forms can be used. Even in the case of a non-human agent acting upon a human patient, the inverse is not required, as is shown by example \refb{ex:thaCkWt}.
 
  
 \begin{exe}
@@ -158,7 +158,7 @@ When both arguments are inanimates, the direct form is generally used, but I fou
 \end{exe}
 
 
- Algonquian languages (as well as Mayan, see \citealt{aissen97obviation}) are known to have a constraint whereby the inverse configuration is required when the possessee acts upon the possessor. No such phenomenon is found in Japhug, as shown by   example \ref{ex:YAznWqatWkWr}.
+ Algonquian languages (as well as Mayan, see \citealt{aissen97obviation}) are known to have a constraint whereby the inverse configuration is required when the possessee acts upon the possessor. No such phenomenon is found in Japhug, as shown by   example \refb{ex:YAznWqatWkWr}.
 \begin{exe}
 \ex \label{ex:YAznWqatWkWr}
 \gll   \ipa{ji-βdaʁmu} 	\ipa{kɯki,} 	\ipa{ɯ-pi} 	\ipa{kɯ} 	\ipa{ɣɯ-ja-sɯɣe} 	\ipa{tɕe,} 	\ipa{ɲɤ-znɯqatɯkɯr} 	\ipa{ma} \\
@@ -167,7 +167,7 @@ When both arguments are inanimates, the direct form is generally used, but I fou
 \end{exe}
 
  
-When both arguments are non-generic animate, the use of the inverse is determined by the relative discourse topicality of the agent and the patient in the narrative in question. For instance, in \ref{ex:towgtsWm}, two referents are found: the main character (a boy, the last survivor of the flood) and a secondary character (a girl coming from heaven). When the boy is agent and the girl patient, we find the direct form (\ipa{ko-rqoʁ}  `he hug her' without inverse), but in the reversed situation the inverse is required (\ipa{tɤ́-wɣ-tsɯm} `she took him away').\footnote{The absence of inverse in the other verbs in the example is straightforward: the first verb 	\ipa{to-nɯ-ŋga}  `she wore it' has an inanimate patient and the last one \ipa{to-nɯqambɯmbjom}  `she flew up' is intransitive. }
+When both arguments are non-generic animate, the use of the inverse is determined by the relative discourse topicality of the agent and the patient in the narrative in question. For instance, in \refb{ex:towgtsWm}, two referents are found: the main character (a boy, the last survivor of the flood) and a secondary character (a girl coming from heaven). When the boy is agent and the girl patient, we find the direct form (\ipa{ko-rqoʁ}  `he hug her' without inverse), but in the reversed situation the inverse is required (\ipa{tɤ́-wɣ-tsɯm} `she took him away').\footnote{The absence of inverse in the other verbs in the example is straightforward: the first verb 	\ipa{to-nɯ-ŋga}  `she wore it' has an inanimate patient and the last one \ipa{to-nɯqambɯmbjom}  `she flew up' is intransitive. }
 
  \begin{exe}
 \ex \label{ex:towgtsWm} 
@@ -181,7 +181,7 @@ The inverse prefix \ipa{-wɣ-} is not a switch reference marker: it is common to
 
 In comparison with Algonquian and Kutenai (\citealt{dryer94inverse}), the inverse is relatively rare in Japhug narratives (see the text counts in \citealt{jacques10inverse}).
 
-In addition to these uses, the inverse also appears to express generic human A, as in example (\ref{ex:tuwGzwAr}). Such examples differ from previous uses of the inverse in two ways: first, it can be used when the P is inanimate and the A human, and second, no cases of number indexation (of the P) have been found in such examples (though it is too early to claim that this is a grammatical rule). 
+In addition to these uses, the inverse also appears to express generic human A, as in example \refb{ex:tuwGzwAr}. Such examples differ from previous uses of the inverse in two ways: first, it can be used when the P is inanimate and the A human, and second, no cases of number indexation (of the P) have been found in such examples (though it is too early to claim that this is a grammatical rule). 
 
 \begin{exe}
 \ex  \label{ex:tuwGzwAr}
@@ -194,14 +194,11 @@ Such forms are discussed in more detail below, but some additional information o
 
 \subsection{Generic marking}  \label{sec:genr.jpg}
 
-In Japhug, non-overt arguments are generally interpreted as definite. In order to express indefinite referents, four strategies are available. 
+In Japhug, non-overt arguments are generally interpreted as definite. In order to express indefinite referents, five strategies are available. 
 
-First, arguments can be demoted by means of argument demoting voice derivations (passive, anticausative,  antipassive and incorporation, see \citealt{jacques12incorp, jacques14antipassive}). Second, a few dozens of transitive verbs feature agent-preserving lability, and the semantic patient is interpreted as indefinite whenever verbs in this class are conjugated intransitively (\citealt{jacques12demotion}).  Third, indefinite pronouns such as \ipa{tʰɯci} `something' or nouns like \ipa{tɯrme} `person, people' (with plural marking on the verb) can be used to indicate indefinite referents. Fourth,  specific generic markers \ipa{kɯ-} and \ipa{wɣ-} express generic human arguments, and are the focus of the present section. 
+First, arguments can be demoted by means of voice derivations (passive, anticausative,  antipassive and incorporation, see \citealt{jacques12incorp, jacques14antipassive}). Second, a few dozens of transitive verbs feature agent-preserving lability, and the semantic patient is interpreted as indefinite whenever verbs in this class are conjugated intransitively (\citealt{jacques12demotion}).  Third, indefinite pronouns such as \ipa{tʰɯci} `something'  can be used to indicate indefinite referents. Fourth, human indefinite referents can be marked by plural suffixes on the verb (see section \ref{sec:exclusive}). Fifth, specific generic markers \ipa{kɯ-} and \ipa{wɣ-} express generic human arguments, and are the focus of the present section. 
 
-%The generic human verb forms are especially common in procedural texts.
-
-
-In regular verbs, the generic marker \ipa{kɯ-} is used to designate generic human S or P, as shown by examples \ref{ex:pannWri} and \ref{ex:tukWCWngo} respectively. Verb forms marked with the prefix \ipa{kɯ-} are  finite: unlike nominalized verb forms, they are compatible with all TAM categories. Yet, transitive verb forms with the prefix \ipa{kɯ-} cannot bear any person or number marker referring to the A, which is always third person and definite. Only one verbal argument can be marked as generic: a transitive verb cannot have both the A or the P marked as generic.
+In regular verbs, the generic marker \ipa{kɯ-} is used to designate generic human S or P, as shown by examples \refb{ex:pannWri} and \refb{ex:tukWCWngo} respectively. Verb forms marked with the prefix \ipa{kɯ-} are  finite: unlike nominalized verb forms, they are compatible with all TAM categories. Yet, transitive verb forms with the prefix \ipa{kɯ-} cannot bear any person or number marker referring to the A, which is always third person and definite. Only one verbal argument can be marked as generic: a transitive verb cannot have both the A or the P marked as generic.
 
 
 \begin{exe}
@@ -220,7 +217,7 @@ In regular verbs, the generic marker \ipa{kɯ-} is used to designate generic hum
 \glt Rust should not go into one's organs, otherwise it would cause one to get sick. (30: Com, 86)
 \end{exe}
 
-The generic marker \ipa{kɯ-} is used with all intransitive verbs, whether dynamic or stative, including the copulas, as in example \ref{ex:pWkWNu}.\footnote{The defective existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist', although they can bear person markers, do not have generic person forms. }
+The generic marker \ipa{kɯ-} is used with all intransitive verbs, whether dynamic or stative, including the copulas, as in example \refb{ex:pWkWNu}.\footnote{The defective existential copulas \ipa{ɣɤʑu} `exist' and \ipa{maŋe} `not exist', although they can bear person markers, do not have generic person forms. }
 
 \begin{exe}
 \ex \label{ex:pWkWNu}
@@ -230,7 +227,7 @@ but \textsc{indef.poss}-child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc
 \glt When (we) were children, (we) liked it a lot. (12: ndZiNgri, 135)
 \end{exe}
 
-In sentences with verbs in the generic form, the generic  human referent is either non-overt or expressed by the noun \ipa{tɯrme} `people, man'. Examples \ref{ex:kukWnWfse} and \ref{ex:genr.tWrme} respectively illustrate this noun used to  refer to P and A generic human respectively; in the second case, it   compulsorily receives  ergative flagging \ipa{kɯ} like any   noun phrase.
+In sentences with verbs in the generic form, the generic human referent is either non-overt or expressed by a generic noun such as \ipa{tɯrme} `people, man'. Examples \refb{ex:kukWnWfse} and \refb{ex:genr.tWrme} respectively illustrate this noun used to  refer to P and A generic human respectively; in the second case, it   compulsorily receives  ergative flagging \ipa{kɯ} like any noun phrase.
 
 \begin{exe}
 \ex \label{ex:kukWnWfse}
@@ -247,7 +244,6 @@ In sentences with verbs in the generic form, the generic  human referent is eith
 people \textsc{erg} \textsc{ipfv-inv}-eat \textsc{neg-fact}:be.good \\
 \glt It is not edible. (11: paRzwamWntoR, 39)
 \end{exe}
-
 
 Two transitive verbs have irregular generic forms. First, the verb \ipa{ti} `say' has generic A form \ipa{kɯ-ti} instead of expected *\ipa{ɣɯ-ti}. Second, the verb \ipa{sɯz} `know' has a negative generic A \ipa{mɤ-xsi} `one does not know' with a reduced allomorph \ipa{x-} of the \ipa{kɯ-} prefix (on this type of phonological reduction see \citealt{jacques14antipassive}).
 
@@ -270,7 +266,7 @@ Generic arguments are not only indexed by verbal morphology; there is also a gen
 \glt One should not meet (a bear) alone, it is frightening. (21: pri, 98)
 \end{exe}
 
-Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic human possessor, as in example \ref{ex:tWlaXtCha}. As shown by example \ref{ex:tWse}, it can in some cases be used to refer to humans together with domestic animals.
+Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic human possessor, as in example \refb{ex:tWlaXtCha}. As shown by example \refb{ex:tWse}, it can in some cases be used to refer to humans together with domestic animals.
 
 \begin{exe}
 \ex \label{ex:tWlaXtCha}
@@ -288,31 +284,29 @@ Non-possessed nouns can receive the prefix \ipa{tɯ-} when they have a generic h
 \glt People say that in this way, one's child will be born late. (27 qartshaz, 111)
 \end{exe}
 
-
-
 Possessed nouns differ from non-possessed nouns in that they obligatorily take either a indefinite  (\ipa{tɯ-} or \ipa{tɤ-})  or a definite possessive prefix (\ipa{a-} `my', \ipa{nɤ-} `your' etc; see \citealt{jacques14antipassive}). In Japhug, there is only one series of definite possessive prefixes; the distribution of the two indefinite possessive prefixes \ipa{tɯ-} and \ipa{tɤ-} is lexically determined (for instance, \ipa{-jaʁ} `hand' has the indefinite form \ipa{tɯ-jaʁ} `a hand' while \ipa{-tɕɯ} `son' has the form \ipa{tɤ-tɕɯ} `a boy'). Some possessed nouns only allow definite possessive prefixes.
 
-While the indefinite possessive \ipa{tɯ-} and the generic possessive \ipa{tɯ-} are phonetically identical and functionally very close, they are nevertheless distinct. The contrast between the two is only visible in the case of possessed nouns with an indefinite possessive form in \ipa{tɤ-}, as both forms are possible, compare for instance \ipa{a-rpɯ} `my uncle (mother's brother)', \ipa{tɤ-rpɯ} `an uncle' with \ipa{tɯ-rpɯ} `one's uncle'. In sentence \ref{ex:tWrpW}, the verb has a generic form (the irregular generic A form of \ipa{ti} ``say" with the prefix \ipa{kɯ-} instead of expected \ipa{wɣ-}), and the A of the verb ``say" is coreferent with the possessor of the noun   \ipa{-rpɯ}  ``uncle", hence the generic possessor \ipa{tɯ-} prefix.
+While the indefinite possessive \ipa{tɯ-} and the generic possessive \ipa{tɯ-} are phonetically identical and functionally very close, they are nevertheless distinct. The contrast between the two is only visible in the case of possessed nouns with an indefinite possessive form in \ipa{tɤ-}, as both forms are possible, compare for instance \ipa{a-rpɯ} `my uncle (mother's brother)', \ipa{tɤ-rpɯ} `an uncle' with \ipa{tɯ-rpɯ} `one's uncle'. In sentence \refb{ex:tWrpW}, the verb has a generic form (the irregular generic A form of \ipa{ti} `say' with the prefix \ipa{kɯ-} instead of expected \ipa{wɣ-}), and the A of the verb `say' is coreferent with the possessor of the noun   \ipa{-rpɯ}  `uncle', hence the generic possessor \ipa{tɯ-} prefix.
 
 \begin{exe}
 \ex \label{ex:tWrpW}
 \gll
- \ipa{tɯ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{tɕe} 	``\ipa{a-rpɯ} \ipa{a-ɬaʁ}" 	\ipa{tu-kɯ-ti} 	\ipa{ŋu.} \\
+ \ipa{tɯ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{ɯ-ɕki} 	\ipa{tɕe} 	\ipa{tɕe} 	`\ipa{a-rpɯ} \ipa{a-ɬaʁ}' 	\ipa{tu-kɯ-ti} 	\ipa{ŋu.} \\
 \textsc{genr.poss}-uncle \textsc{3sg.poss}-offspring \textsc{3sg-dat} \textsc{lnk} \textsc{lnk} \textsc{1sg.poss}-uncle \textsc{1sg.poss}-aunt \textsc{ipfv-genr}-say be:\textsc{fact} \\
-\glt One has to say ``my maternal uncle, my maternal aunt" to one's maternal uncle's sons and daughters. (hist140425 kWmdza, 69)
+\glt One has to say `my maternal uncle, my maternal aunt' to one's maternal uncle's sons and daughters. (hist140425 kWmdza, 69)
 \end{exe}
 
-Example \ref{ex:tArpW}, although it also refers to a generic state of affairs (it explains the Omaha-type skewing of the Japhug kinship system), has both verbs in non-generic forms, and here we find the indefinite possessor \ipa{tɤ-} rather than the generic \ipa{tɯ-} possessive prefix. In this sentence, it is possible to replace the indefinite generic \ipa{tɤ-} by the definite possessive prefix \ipa{a-} ``my".
+Example \refb{ex:tArpW}, although it also refers to a generic state of affairs (it explains the Omaha-type skewing of the Japhug kinship system), has both verbs in non-generic forms, and here we find the indefinite possessor \ipa{tɤ-} rather than the generic \ipa{tɯ-} possessive prefix. In this sentence, it is possible to replace the indefinite generic \ipa{tɤ-} by the definite possessive prefix \ipa{a-} `my'.
 
 \begin{exe}
 \ex  \label{ex:tArpW}
 \gll
 \ipa{nɤʑo} 	\ipa{tɤ-rpɯ} 	\ipa{ɯ-rɟit} 	\ipa{a-pɯ-tɯ-ŋu,} 	\ipa{tɕe} 	\ipa{tɕe} 	\ipa{aʑo} 	\ipa{kɯ} 	\ipa{a-rpɯ} 	\ipa{tu-ti-a} 	\ipa{kɯ-ra.}  \\
 \textsc{2sg} \textsc{indef.poss}-uncle \textsc{3sg.poss}-offspring \textsc{irr-pst.ipfv}-2-be \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{erg}  \textsc{1sg.poss}-uncle \textsc{ipfv}-say-\textsc{1sg} \textsc{nmlz:S}-have.to  \\
-\glt If you are the maternal uncle's son, (and I am the nephew,) I have to say ``my uncle" (to you).  (hist140425 kWmdza, 114)
+\glt If you are the maternal uncle's son, (and I am the nephew,) I have to say `my uncle' (to you).  (hist140425 kWmdza, 114)
 \end{exe}
 
-Examples \ref{ex:tWse} and \ref{ex:tAse} illustrate the same contrast with the possessed noun \ipa{-se} ``blood".\footnote{This example also illustrates that the generic person marking is not restricted to humans, but can be used to refer to humans and domestic animals together.  }
+Examples \refb{ex:tWse} and \refb{ex:tAse} illustrate the same contrast with the possessed noun \ipa{-se} `blood'.\footnote{This example also illustrates that the generic person marking is not restricted to humans, but can be used to refer to humans and domestic animals together.  }
 
 \begin{exe}
 \ex  \label{ex:tWse}
@@ -330,7 +324,7 @@ people whether.or animal whether.or \textsc{genr.poss}-blood \textsc{top} \texts
 \glt Is there blood? (19: GzW, 76)
 \end{exe}
 
-The generic possessive prefix can also be used with oblique case markers, which are etymologically semantically bleached possessed nouns, as in example \ref{ex:tWCki}.
+The generic possessive prefix can also be used with oblique case markers, which are etymologically semantically bleached possessed nouns, as in example \refb{ex:tWCki}.
 
 \begin{exe}
 \ex  \label{ex:tWCki}
@@ -340,7 +334,7 @@ The generic possessive prefix can also be used with oblique case markers, which 
 \glt It comes close to oneself, and for this reason people say that it is stupid. (23: scuz, 60)
 \end{exe}
 
-The noun \ipa{tɯrme} ``people" is sometimes used as an alternative to the generic pronoun \ipa{tɯʑo} and can be equated with the referent marked with generic morphology on the verb or on possessive prefixes in the sentence. For instance, in \ref{ex:genr.tWrme2}, \ipa{tɯrme} ``people" is the A marked with the ergative, while the verb has inverse (generic A) marking.
+Nouns such as \ipa{tɯrme} `people' are sometimes used as an alternative to the generic pronoun \ipa{tɯʑo} and can be equated with the referent marked with generic morphology on the verb or on possessive prefixes in the sentence. For instance, in \refb{ex:genr.tWrme2}, \ipa{tɯrme} `people' is the A marked with the ergative, while the verb has inverse (generic A) marking.
 
 
 \begin{exe}
@@ -351,7 +345,7 @@ people \textsc{erg} \textsc{ipfv-inv}-eat \textsc{neg-fact}:be.good \\
 \glt It is not edible. (11: paRzwamWntoR, 39)
 \end{exe}
 
-Yet, there is a slight difference of usage between \ipa{tɯrme} and \ipa{tɯʑo} in sentences with a generic argument. Both can be followed by a noun or a case marker taking the generic possessive prefix, as in \ref{ex:genr.tWrme3} and \ref{ex:tWZo.tWfsu}. 
+Yet, there is a slight difference of usage between \ipa{tɯrme} and \ipa{tɯʑo} in sentences with a generic argument. Both can be followed by a noun or a case marker taking the generic possessive prefix, as in \refb{ex:genr.tWrme3} and \refb{ex:tWZo.tWfsu}. 
 
 \begin{exe}
 \ex  \label{ex:genr.tWrme3}
@@ -369,7 +363,7 @@ people \textsc{genr}-equal.to until \textsc{ipfv}-be.big \textsc{neg-fact}:can \
 \glt As for its size, it can reach one's (a person's) size. (16: CWrNgo, 18)
 \end{exe}
 
-However, \ipa{tɯrme} as a generic noun can alternatively be used with a possessee or a case marker with the third person singular \ipa{ɯ-} prefix, as in \ref{ex:tWrme.Wfsu}, while this option does not exist for \ipa{tɯʑo}.
+However, \ipa{tɯrme} as a generic noun can alternatively be used with a possessee or a case marker with the third person singular \ipa{ɯ-} prefix, as in \refb{ex:tWrme.Wfsu}, while this option does not exist for \ipa{tɯʑo}.
 
 \begin{exe}
 \ex  \label{ex:tWrme.Wfsu}
@@ -379,8 +373,21 @@ people \textsc{3sg}-equal.to about \textsc{ipfv}-do[III] can:\textsc{fact} \\
 \glt It can grow about as big as a person. (12: ndZiNgri, 4)
 \end{exe}
 % tɯrme ɣɯ tɯ-ɕa ɯ-mdoʁ tsa asɯ-ndo kɯ-fse
+
+
+\subsection{Inclusive vs exclusive generic marking} \label{sec:exclusive}
+Using the generic human prefixes \ipa{-kɯ- / -wɣ-} described in the previous section imply that the speaker includes himself/herself among the potential referents -- they are \textit{inclusive} generic markers. Plural marking, instead of inverse or \ipa{kɯ-} prefixation, appears instead when the speaker excludes himself from the generic referents. 
+
+Example \refb{ex:chWlAtnW} illustrates the contrast between inclusive (the inverse prefix \ipa{-wɣ-}) and exclusive generic marking (the plural \ipa{-nɯ}). The consultant who uttered this sentence, a woman, includes herself among the potential Jews' harp player and thus uses inverse (generic A) marking on the first verb,\footnote{The transitive verb \ipa{lɤt}, whose basic meaning is `throw' or `release', is one of the most common light verb used in noun-verb collocations.} and conversely excludes herself from potential flute players and thus employs plural marking on the second verb. 
+
+\begin{exe}
+\ex \label{ex:chWlAtnW}
+ \gll  \ipa{kɯɕɯŋgɯ} 	\ipa{tɕe,} 	\ipa{iʑora} 	\ipa{tɕʰeme} 	\ipa{kɯ} 	\ipa{ʑɴɢro} 	\ipa{ɲɯ́-wɣ-lɤt,} 	\ipa{tɤ-tɕɯ} 	\ipa{ra} 	\ipa{kɯ} 	\ipa{ɟuli} 	\ipa{cʰɯ-lɤt-nɯ.} \\
+ long.ago \textsc{lnk} \textsc{1pl} girl  \textsc{erg} Jews'.harp \textsc{ipfv-inv}-throw \textsc{indef.poss}-boy \textsc{pl} \textsc{erg} flute \textsc{ipfv}-throw-\textsc{pl}  \\
+ \glt `Long ago, among us women used to play the Jews' harp, while men used to play the flute.' (hist150907 ZNGro, 10)
+\end{exe}
  
- 
+The opposition between inclusive and exclusive generic marking in Japhug is verified throughout the Japhug corpus, and especially clear when procedural texts collected from men and women are compared: men (respectively women) use  \ipa{-kɯ- / -wɣ-} to refer to activities typically performed by men (resp. women), and plural for women's (resp. men's) duties.
 
  \section{Nominalization in Japhug} \label{sec:nmlz}
  \subsection{Overview of participle prefixes in Japhug}
@@ -408,7 +415,7 @@ Japhug has four productive\footnote{See \citet[4-6]{jacques14antipassive} concer
  \glt  `The one that is killed.'
  \end{exe}
  
-  The P participle \ipa{kɤ-} can appear with an optional possessive prefix coreferent to the A as in \ref{ex:kill3}.
+  The P participle \ipa{kɤ-} can appear with an optional possessive prefix coreferent to the A as in \refb{ex:kill3}.
   
   \begin{exe}
 \ex \label{ex:kill3}
@@ -449,7 +456,7 @@ The system of generic person marking in Tshobdun is complementely different from
 
 \citet{sun14generic} describes a generic person marking system involving four prefixes \ipa{kə-}, \ipa{kɐ-}, \ipa{sɐ-} and \ipa{o-}, respectively related to Japhug generic  \ipa{kɯ-}, P participle and infinitive \ipa{kɤ-}, oblique participle \ipa{sɤ-} and inverse \ipa{wɣ-}. 
 
-In Tshobdun, \ipa{kə-} and \ipa{kɐ-} are used to indicate generic S or A. The contrast between \ipa{kə-} and \ipa{kɐ-}, without equivalent in Japhug, is between 	 \textit{non-volitional} and  \textit{volitional} human S/A, as illustrated by the   example \ref{ex:tshobdun.kA} taken from \citet[238]{sun14generic}.
+In Tshobdun, \ipa{kə-} and \ipa{kɐ-} are used to indicate generic S or A. The contrast between \ipa{kə-} and \ipa{kɐ-}, without equivalent in Japhug, is between 	 \textit{non-volitional} and  \textit{volitional} human S/A, as illustrated by the example \refb{ex:tshobdun.kA} taken from \citet[238]{sun14generic}.
  \begin{exe}
 \ex \label{ex:tshobdun.kA}
 \gll
@@ -460,7 +467,7 @@ In Tshobdun, \ipa{kə-} and \ipa{kɐ-} are used to indicate generic S or A. The 
  
  The prefix \ipa{sɐ-}, on the other hand, marks generic human person on copulas. In Japhug, copulas do not have distinct generic marking and the S/P generic person prefix \ipa{kɯ-} is used, as with all intransitive verbs.
  
-To mark generic human P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulting from the  fusion  of  the generic prefix \ipa{kə-} and the inverse prefix \ipa{o-} is used, as illustrated by \ref{ex:tshobdun.inv} (\citealt[240]{sun14generic}).
+To mark generic human P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulting from the  fusion  of  the generic prefix \ipa{kə-} and the inverse prefix \ipa{o-} is used, as illustrated by \refb{ex:tshobdun.inv} (\citealt[240]{sun14generic}).
 
  \begin{exe}
 \ex \label{ex:tshobdun.inv}
@@ -475,7 +482,7 @@ To mark generic human P in Tshobdun, the prefix \ipa{ko-} (\ipa{kə-o-}) resulti
 
    Situ has a nominalization prefix \ipa{kə-} which is an obvious cognate of the  nominalization prefixes \ipa{kɯ-} in Japhug and \ipa{kə-} in Tshobdun. Yet, Situ differs from the other languages in its generic person marking system and in its nominalization patterns. Three major differences are observed.
 
-First, there is no generic person  marker \ipa{kə-} homophonous with the nominalization prefix in Situ.  On the basis of data from \citet[47-9]{wei01ka}, \citet[243-4]{sun14generic} identifies a generic person \ipa{ŋa-} prefix which can coalesce as \ipa{ka-} with the nominalizer \ipa{kə-}, as in example \ref{ex:situ.nENaSis}, but \ipa{kə-} by itself does not mark generic person. 
+First, there is no generic person  marker \ipa{kə-} homophonous with the nominalization prefix in Situ.  On the basis of data from \citet[47-9]{wei01ka}, \citet[243-4]{sun14generic} identifies a generic person \ipa{ŋa-} prefix which can coalesce as \ipa{ka-} with the nominalizer \ipa{kə-}, as in example \refb{ex:situ.nENaSis}, but \ipa{kə-} by itself does not mark generic person. 
 
  \begin{exe}
 \ex \label{ex:situ.nENaSis}
@@ -485,7 +492,7 @@ First, there is no generic person  marker \ipa{kə-} homophonous with the nomina
 \glt `When one dies, it is necessary to send for lamas to chant sutras.'
   \end{exe}
  
-Second, unlike in Japhug and Tshobdun, nominalized forms in \ipa{kə-} are compatible with person affixes in particular conditions (see \citealt[11-12]{jacksonlin07}), as in \ref{ex:situ.tokEpEntS}, where the verb `come' bears the dual suffix \ipa{-ntʃ}. It is impossible to nominalize a verb in this way in the other Gyalrong languages.
+Second, unlike in Japhug and Tshobdun, nominalized forms in \ipa{kə-} are compatible with person affixes in particular conditions (see \citealt[11-12]{jacksonlin07}), as in \refb{ex:situ.tokEpEntS}, where the verb `come' bears the dual suffix \ipa{-ntʃ}. It is impossible to nominalize a verb in this way in the other Gyalrong languages.
 
  \begin{exe}
 \ex \label{ex:situ.tokEpEntS}
@@ -525,11 +532,11 @@ Proto-Gyalrong& Japhug & Tshobdun& Situ \\
 \end{tabular}}
 \end{table}
 
-The irregular generic  forms \ipa{mɤ-xsi} `` one does not know" and \ipa{kɯ-ti} ``one says'  in Japhug, however, show that the system observed in Japhug is innovative. Their existence  implies that the prefix \ipa{kɯ-} could, at a former stage, be used to mark generic A, as in Tshobdun. The use of inverse \ipa{wɣ-} for generic A in Japhug is therefore innovative; although a change from inverse to generic A is not apparently attested in any other language, it is semantically straightforward: generic A is necessarily non-topical, and marking non-topicality is one of the functions of the inverse in non-local forms.
+The irregular generic  forms \ipa{mɤ-xsi} `one does not know' and \ipa{kɯ-ti} `one says'  in Japhug, however, show that the system observed in Japhug is innovative. Their existence  implies that the prefix \ipa{kɯ-} could, at a former stage, be used to mark generic A, as in Tshobdun. The use of inverse \ipa{wɣ-} for generic A in Japhug is therefore innovative; although a change from inverse to generic A is not apparently attested in any other language, it is semantically straightforward: generic A is necessarily non-topical, and marking non-topicality is one of the functions of the inverse in non-local forms.
 
 Therefore, in the common ancestor of Japhug and Tshobdun, the prefix *\ipa{kə-} (ancestral to Japhug \ipa{kɯ} and Tshobdun \ipa{kə-}) was used to mark generic person regardless of its syntactic role.  
 
- The presence of inverse \ipa{o-} in Tshobdun in combination with \ipa{kə-} with generic P does not contradict the hypothesis that generic person \ipa{kə-} originates from a nominalized form: although we know that in Japhug and Tshobdun nominalized forms are incompatible with finite person markers (including the inverse), we have seen that no such constraint exists in Situ. It is thus straightforward to imagine how the richer nominalization morphology found in Situ could have become simplified in the other languages. Moreover, there are other fossilized traces of the nominalizing *\ipa{kə-} prefix in combination with finite person markers in Japhug, such as the evidential circumfix \ipa{kɯ-}...\ipa{-ci} that appears in combination with the progressive \ipa{asɯ-} prefix or with verb whose stem begins in \ipa{a-} (including those with the passive \ipa{a-} or the reciprocal \ipa{a-} / \ipa{amɯ-}), as in \ref{ex:tokAmWrpundZici}. 
+ The presence of inverse \ipa{o-} in Tshobdun in combination with \ipa{kə-} with generic P does not contradict the hypothesis that generic person \ipa{kə-} originates from a nominalized form: although we know that in Japhug and Tshobdun nominalized forms are incompatible with finite person markers (including the inverse), we have seen that no such constraint exists in Situ. It is thus straightforward to imagine how the richer nominalization morphology found in Situ could have become simplified in the other languages. Moreover, there are other fossilized traces of the nominalizing *\ipa{kə-} prefix in combination with finite person markers in Japhug, such as the evidential circumfix \ipa{kɯ-}...\ipa{-ci} that appears in combination with the progressive \ipa{asɯ-} prefix or with verb whose stem begins in \ipa{a-} (including those with the passive \ipa{a-} or the reciprocal \ipa{a-} / \ipa{amɯ-}), as in \refb{ex:tokAmWrpundZici}. 
 
 
 \begin{exe}
@@ -595,7 +602,7 @@ In the case of 2$\rightarrow$1, the phonetic identity of this prefix with the no
 In this view, the absence of the inverse marker in the  2$\rightarrow$1 form in Japhug is an innovation, which can be explained by the fact that the inverse is redundant in this form. This redundancy is solved in a different way in Zbu and Tshobdun, where speakers at least accept forms replacing the portmanteau \ipa{kə-} by the second person \ipa{tə-} (see \citealt{jackson02rentongdengdi} and \citealt{gongxun14agreement}).
  
 \section{Conclusion}
-In this paper, we have described the morphosyntax of generic person marking in Japhug and discussed four paths of grammaticalization (\ref{ex:path1} to \ref{ex:path4}).
+In this paper, we have described the morphosyntax of generic person marking in Japhug and discussed four paths of grammaticalization (\ref{ex:path1} to \refb{ex:path4}).
 
 
 \begin{exe}
@@ -609,7 +616,7 @@ In this paper, we have described the morphosyntax of generic person marking in J
 \glt  \textsc{generic person} (neutral) + SAP person marker  $\rightarrow$ portmanteau local scenario affix
 \end{exe}
 
-While \ref{ex:path1} is very common crosslinguistically and \ref{ex:path4} has already been described in other language families, the other ones have not previously been proposed. Pathway \ref{ex:path2} is attested in Tshobdun, where the combination of generic and inverse has been generalized to all cases where the generic person is P, while pathway \ref{ex:kill3} is found in Japhug, resulting in diametrically opposed generic person marking systems, with accusative (in Tshobdun) vs ergative alignment (in Japhug).
+While \refb{ex:path1} is very common crosslinguistically and \refb{ex:path4} has already been described in other language families, the other ones have not previously been proposed. Pathway \refb{ex:path2} is attested in Tshobdun, where the combination of generic and inverse has been generalized to all cases where the generic person is P, while pathway \refb{ex:kill3} is found in Japhug, resulting in diametrically opposed generic person marking systems, with accusative (in Tshobdun) vs ergative alignment (in Japhug).
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
