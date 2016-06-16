@@ -6,10 +6,10 @@
 :: Results are available under examples/japhug/result/ folder.
 
 :: LaTeX file is generated with sound records and with cross references
-::python examples/japhug/run_japhug.py
+python examples/japhug/run_japhug.py
 
 :: LaTeX file is generated without sound records and with cross references
-python examples/japhug/run_japhug.py -a
+::python examples/japhug/run_japhug.py -a
 
 :: LaTeX file is generated with sound records and without cross references
 ::python examples/japhug/run_japhug.py -c
