@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -9,6 +9,8 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{tangutex2} 
+\usepackage{tangutex4}
 \usepackage{hyperref} 
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
@@ -23,7 +25,7 @@
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
-\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\zh}[1]{{\cn{#1}}}
 
 \newcommand{\sg}{\textsc{sg}}
 \newcommand{\pl}{\textsc{pl}}
@@ -33,7 +35,7 @@
 \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
 \newcommand{\dhat}[1]{|\ipa{#1}|}
 \newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
-
+\newcommand{\tgf}[1]{\mo{#1}}
 
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
@@ -42,7 +44,7 @@
 
 \begin{document}
 
-\title{The labial causative in Japhug}
+\title{The labial causative in Trans-Himalayan}
 \author{Guillaume Jacques}
 \maketitle
 \sloppy
@@ -50,10 +52,10 @@
 \section{Introduction}
 
 
-\subsection{The sibilant causative}
+\section{The sibilant causative}
 \citet{jacques15causative}
 
-\subsection{North-East India}
+\section{North-East India}
 The presence of a labial stop causative prefix in various Trans-Himalayan languages of North-Eastern India (Bodo \ipa{pʰV-}, Karbi \ipa{pa-} see \citealt{delancey15adjectival}, \citealt{konnerth15cisloc}) has been previously noticed by several authors, but either interpreted as  grammaticalized from the root of the verb `to give'\footnote{The verb in question is attested throughout the family, cf Japhug \ipa{mbi} `give', Tibetan \ipa{sbʲin} `give' etc.}
 (\citealt[132]{matisoff03}) or as borrowing from some Austroasiatic language (\citealt{konnerth15cisloc, delancey15adjectival}). Both hypotheses are problematic. 
 
@@ -63,14 +65,45 @@ Second, borrowing of derivational morphology is attested, but only occurs in cas
 
 Both hypotheses depart from the common assumption that the labial stop causative prefix is an innovation. Yet, labial causative prefixes are found in languages outside of North-Eastern India. 
 
-\subsection{Rgyalrongic}
+\section{Macro-Rgyalrongic}
 
-Tangut has a non-productive causative \ipa{-w-} infix (\citealt{gong88alternations}) which goes back to a *\ipa{p-} prefix (\citealt[253-4]{jacques14esquisse}).
+
+\subsection{Core Rgyalrong}
+
 
 \citet{jacques15causative}
 \citet{jackson14morpho}
 \citet{jackson06paisheng}
 \citet{lai13affixale}
+
+
+\begin{exe}
+\ex
+\gll 
+\ipa{nɯnɯ} 	\ipa{ɕquwa} 	\ipa{nɯra} 	\ipa{nɯ-mɲaʁ} 	\ipa{ɯ-taʁ} 	\ipa{nɯtɕu,} 	\ipa{si} 	\ipa{kɯ-xtɕi} 	\ipa{ɣɯ} 	\ipa{ɯ-jwaʁ} 	\ipa{nɯnɯ} 	\ipa{a-pɯ-tu} 	\ipa{tɕe,} 	\ipa{nɯnɯ} 	\ipa{kɯ} 	\ipa{maka} 	\ipa{nɯ-mɲaʁ} 	\ipa{tu-ɣɤmtɤm} 	\ipa{cʰa} 	\ipa{ri} \\
+\\
+\glt (hist140517 mogui de jing, 82-4)
+\end{exe}
+
+
+\subsection{Tangut}
+Tangut has a non-productive causative \ipa{-w-} infix (\citealt{gong88alternations}) which goes back to a *\ipa{p-} prefix (\citealt[45-6]{gong88alternations}, \citealt[253-4]{jacques14esquisse}).
+
+
+\begin{table}[H]
+\caption{Exemples du préfixe *p--}\label{tab:prefixep} 
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllllll} 
+\toprule
+\multicolumn{4}{c}{verbe intransitif} &\multicolumn{4}{c}{verbe transitif} & \\
+\midrule
+\tgf{3259} &\ipa{dzji} & 1.11 & être calme & \tgf{3411} &\ipa{dzjwi} & 1.11 & calmer\\
+\tgf{1829} &\ipa{tshja } & 1.20 & être chaud & \tgf{1825} &\ipa{tshjwa} & 1.20 & chauffer \\
+\tgf{4033} &\ipa{dʑjij} & 2.32 & être froid & \tgf{0735} &\ipa{dʑjwij} & 1.35 & refroidir \\
+\tgf{4186} &\ipa{khej} & 1.33 & être abondant & \tgf{1231} &\ipa{khwej} & 1.33 & prospérer, défricher \\
+ \bottomrule
+\end{tabular}}
+\end{table}
 
 
 
