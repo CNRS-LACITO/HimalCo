@@ -4236,6 +4236,13 @@
 \xn 我吹了几下取暖
 \dt 19/Sep/2014
 
+\lx hwɤl
+\ps idph.3
+\ge qui est découvert d'un seul coup
+\gn 形容一下子被掀开的样子
+\xv qale ɲɯ-ɤsɯ-βzu tɕe, a-tʂɯmpa hwɤl ʑo ta-pɣaʁ
+\xn 风把我的围腰帕一下子吹开了
+
 \lx hwɤrhwɤr
 \ps idph.2
 \ge évasé
@@ -5478,8 +5485,9 @@
 \lx khamu
 \wav n-khamu
 \ps n
-\ge repas 
-\gn 菜 
+\ge cuisine
+\gn 炊事
+\cf nɯkhama
 \dt 24/Aug/2012
 
 \lx khaŋfkot
@@ -17808,6 +17816,13 @@ wav8 sala_kWzrW
 \gn 形容灰中带白的颜色
 \dt 05/May/2014
 
+\lx sjɯŋsjɯŋ
+\ps idph.2
+\ge blanc et haut
+\gn 形容又高又白的样子
+\xv mtɕhortɯn ci sjɯŋsjɯŋ ʑo ɣɤʑu
+\xn 有一座白塔
+
 \lx sjɯrnɤsjɯr
 \ps idph.3
 \ge qui émet de la fumée par intervalles réguliers
@@ -22484,6 +22499,16 @@ l
 \cf artaʁ
 \dt 13/May/2012
 
+\lx tɤ-rtɕhɣaʁ,tɕɤt
+\ge mettre des bâtons dans les roues, entraver
+\gn 作梗
+\xv ɯ-rtɕhɣaʁ ɲɤ-tɕɤt
+\xn （工作本来很顺利），是他从中作梗
+\lf Component1 = tɤ-rtɕhɣaʁ
+\ps np
+\lf Component2 = tɕɤt
+\ps vt
+
 \lx tɤ-rtɕi
 \wav n-tArtCi
 \ps np
@@ -25625,11 +25650,16 @@ l
 \xn 开路了
 \xv nɤ-tʂu!
 \xn 请进！（主人对客人的客套话）
+\xv ɯ-tʂu tɤ-cɯ-t-a
+\xn 我给他让了路
+\xv a-tʂu nɯ-βze (=tɤ-ci)
+\xn 给我让路
 \cf tʂɯtʂu
 \cf ftɕɤru
 \cf nɯtʂu1
 \cf nɯtʂu2
 \cf ntʂu
+\cf nɤtʂɤtshi 
 \dt 12/Aug/2012
 
 \lx tʂɯɣlaʁ
@@ -25648,7 +25678,7 @@ l
 \wav n-tsxWmpa
 \ps n
 \ge tablier 
-\gn 围裙 
+\gn 围腰帕 
 \hbf objet traditionel
 \dt 16/May/2012
 
@@ -26671,11 +26701,15 @@ l
 \ge tête 
 \gn 头 
 \hbf 74 
-\xv sɯjno ɣɯ ɯ-ku
-\xn 草的叶子和茎
+\xv a-ku nɯ-βze
+\xn 给我编头发吧
+\xv ndʑi-ku a-nɯ-tɯ-ɤnɯβzɯβzu-ndʑi je
+\xn 你们互相编头发吧
 \sn 2
 \ge haut
 \gn 上面
+\xv sɯjno ɣɯ ɯ-ku
+\xn 草的叶子和茎
 \et mgo
 \se ɯ-kuɕɯku
 \ps np
@@ -26686,7 +26720,7 @@ l
 \cf nɤkɤtɕhɯ
 \cf kɤlu
 \cf ɯ-kɤlɤjme
-\dt 01/Jul/2016
+\dt 10/Jul/2016
 
 \lx tɯ-kuŋa
 \ps n
@@ -27641,6 +27675,11 @@ l
 \hbf 871 
 \xv tɯ-xtsa tɯ-ntsi 
 \xn 一只鞋子
+\se ɯ-ntsi,βzu
+\ge répondre
+\gn 答复
+\sy ɯ-lɤn,βzu
+\sy ɯ-sci,βzu
 
 \lx tɯ-nɯ
 \ps np
@@ -31290,8 +31329,26 @@ l
 \xn 我替你去
 \xv aʑo a-ʁa maŋe tɕe, nɤʑo a-sci tu-tɯ-βze ɯ-tɯ-cha?
 \xn 我没有空，你可以代替我做吗？
-\xv ɯ-sci to-βzu (=ɯ-tshɤt to-βzu; ɯ-rtsot to-βzu)
-\xn 他报仇；他代替了他
+\se ɯ-sci,βzu
+\lf Component1 = ɯ-sci
+\ps np
+\lf Component2 = βzu
+\ps vt
+\sn 1
+\ge se venger de 
+\gn 报仇
+\sy ɯ-rtsot,βzu
+\sn 2
+\ge remplacer
+\gn 代替
+\sy ɯ-tshɤt,βzu
+\sn 3
+\ge répondre
+\gn 答复
+\sy ɯ-lɤn,βzu
+\sy ɯ-ntsi,βzu
+\xv ɯ-sci to-βzu (=ɯ-tshɤt to-βzu; ɯ-rtsot to-βzu; ɯ-lɤn to-βzu)
+\xn 他报仇；他代替了他；他答复了他
 \dt 22/May/2014
 
 \lx ɯ-sku
@@ -34454,6 +34511,12 @@ l
 \xn 很多人在那里站着
 \xv fsapaʁ ra zgoku zɯ ʑɯβʑɯβ ʑo ɲɯ-rɤʑi-nɯ
 \xn 山上牲畜很多，密密麻麻
+\se ʑɯβnɤlɯβ
+\ps idph.4
+\ge beaucoup de gens allant dans tous les sens s'occupant chacun de leur tâche
+\gn 形容很多人来回走动，各自做自己的事情的场面
+\xv tɯrme ra ʑɯβnɤlɯβ ʑo ɲɯ-rɤma-nɯ
+\xn 很多人来回走动，各自做自己的事情
 \cf jɯβjɯβ
 \cf ɟɯɣɟɯɣ
 \dt 04/Mar/2014
@@ -39204,8 +39267,8 @@ l
 \dt 02/Sep/2015
 
 \lx _artsɯɣdu
+\a _artsɯrdu
 \wav vi-artsWGdu
-\wav vt-sArtsWGdu
 \ps vi
 \pdl dir 
 \pdv pɯ-
@@ -39213,21 +39276,11 @@ l
 \gn 事务繁忙 
 \hbf 1082 
 \xv a-ma pɯ-artsɯɣdu
-\xn 我工作变忙了
+\xn 我工作变得很紧张
 \xv stonka pɯ-ɣe tɕe ɯ-kɤtɣa cho kɤ-nɤma ra artsɯɣdu 
 \xn 秋天来了，收割等农活非常忙碌
-\se sɤrtsɯɣdu
-\ps vt
-\ng caus
-\pdl dir 
-\pdv pɯ-
-\pdl dir 
-\pdv thɯ-
-\ge se presser
-\gn 抓紧时间
-\xv a-ma thɯ-sɤrtsɯɣdu-t-a tɕe, ʑa nɯ-sthɯ-t-a
-\xn 我抓紧时间，早点把工作做完了
-\dt 27/Jun/2011
+\xv ɯ-ŋgɯ jɤznɤ tu-kɯ-znɤʁɤmɟa tɕe, ɯ-ndo tɕe kɤ-nɤma mɤ-kɤ-ɤrtsɯɣdu phɤn 
+\xn 一开始把时间抓紧的话，到最后就不会那么紧张
 
 \lx _artɯm
 \wav vi-artWm2
@@ -41014,7 +41067,6 @@ l
 
 \lx _βraʁ
 \wav vt-BraR
-\wav vt-BraR2
 \wav vi-aBraR
 \ps vt
 \pdl dir 
@@ -41332,7 +41384,6 @@ l
 
 \lx _βzɟɯr
 \wav vt-BzJWr
-\wav vt-BzJWr2
 \wav8 BzJWr
 \ps vt
 \pdl dir 
@@ -41350,8 +41401,6 @@ l
 \xn 我说错了的话，请帮我纠正一下
 \xv ʑara kɯ kɯm nɯ na-βzɟɯr-nɯ
 \xn 他们换了门（工人修房子）
-\xv kɤ-nɯɣi ɲɤ-βzɟɯr
-\xn 他更改了回来的计划
 \sn 2
 \ge corriger
 \gn 纠正
@@ -41428,6 +41477,7 @@ l
 \cf βdaʁ,βzu
 \cf tɯ-skɤt,βzu
 \cf ɯ-qhu,βzu
+\cf ɯ-sci,βzu
 \cf aβzu
 \se nɯβzu
 \ps vt
@@ -43007,7 +43057,6 @@ l
 \xv a-xtu nɯ-fɕɤl, a-xtu pɯ-fɕɤl
 \xn 我拉了肚子
 \se sɯfɕɤl
-\wav vt-sWfCAl
 \ps vt
 \pdl dir 
 \pdv nɯ-
@@ -43015,8 +43064,6 @@ l
 \gn 令人拉肚子
 \xv qaɕti tɤ-ndza-t-a tɕe a-xtu na-sɯfɕɤl
 \xn 我吃了桃子，令我拉了肚子
-\xv tɤ-mthɯm kɯ-ɣɤdi tɤ-ndza-t-a tɕe ɲɤ́-wɣ-sɯfɕal-a
-\xn 我吃了不新鲜的肉就拉了肚子
 \cf nɯtɯfɕɤl
 \dt 08/Jul/2016
 
@@ -44330,33 +44377,37 @@ l
 \dt 26/Sep/2011
 
 \lx _ɣɤchrɤβchrɤβ
-\wav vi-GAchrABchrAB
 \wav vi-GAchrABchrAB2
-\wav vi-GAchrABlAB
 \wav8 GAchrABchrAB
 \ps vi
-\ge avoir la voix enrouée 
-\gn 嗓子哑了，发出嘶哑声
+\sn 1
+\ge avoir la gorge enrouée
+\gn 嗓子哑了
 \xv ɲɯ-nɯtɕhomba tɕe, ɯ-rqo ɲɯ-ɣɤchrɤβchrɤβ 
 \xn 他感冒了，嗓子哑了
+\sn 2
+\ge émettre du bruit en roulant (petites pierres)
+\gn 小石头滚下来发出声音
 \xv praʁ ɲɯ-mbɯt ɲɯ-ɣɤchrɤβchrɤβ
-\xn 悬崖塌下来了，声音很响
+\xn 悬崖塌下来了，小石头滚下来发出声音
 \se ɣɤchrɤβlɤβ
-\xv ɲɯ-tɯ-ɤɕqhe tɕe tɯ-ɣɤchrɤβlɤβ
+\ge émettre un bruit de mucus dans la gorge
+\gn （喉咙里）有痰的声音
+\xv ɲɯ-tɯ-ɤɕqhe tɕe nɤ-rqo ɲɯ-ɣɤchrɤβlɤβ
 \xn 你咳嗽，嗓子发出嘶哑声
-\xv ma-tɯ-ɤɕqhe ma tɯ-ɣɤchrɤβlɤβ
-\xn 你不要咳嗽，不然你嗓子会发出嘶哑声
-\se sɤchrɤβchrɤβ
-\wav vt-sAchrABchrAB
-\ps vt
-\xv nɤ-rqo ma-tɯ-sɤchrɤβchrɤβ
-\xn 你嗓子不要发出嘶哑声
-\xv ɯ-rqo ɲɯ-sɤchrɤβchrɤβ
-\xn 他发出嘶哑声
 \se sɤschrɤβlɤβ
 \wav vt-sAschrABlAB
 \ps vt
+\sn 1
+\ge émettre un bruit de mucus dans la gorge
+\gn 放出喉咙里有痰的声音
+\xv nɤ-rqo ma-tɯ-sɤchrɤβlɤβ
+\xn 你嗓子不要发出嘶哑声
+\sn 2
+\ge émettre du bruit en faisant s'entrechoquer des petits objets
+\gn 令小东西互相碰撞，发出声音
 \xv laχtɕha ɲɯ-sɤschrɤβlɤβ
+\xn 他把很多小东西装在一起，拿起来的时候发出互相碰撞的声音
 \cf chrɤβchrɤβ
 \dt 13/Feb/2014
 
@@ -46679,6 +46730,16 @@ l
 \xv stoʁ nɯ-phɯt-a tɕe tɤ-ɣɤrtaʁ-a
 \xn 我拿了胡豆，这样就够了
 \dt 09/Oct/2011
+
+\lx _ɣɤrtɕhɣaʁ
+\ps vi
+\pdl dir 
+\pdv nɯ-
+\ge chicaner
+\gn 计较；找毛病
+\sy ɣɤtɕɯqaʁ
+\cf sɤrtɕhɣaʁ
+\cf tɤ-rtɕhɣaʁ,tɕɤt
 
 \lx _ɣɤrthɯɣlɯɣ
 \ps vi
@@ -50427,7 +50488,7 @@ l
 \xv pɯ-zmɤrtsaβ-a
 \xn 我把辣椒加多了
 \xv a-jaʁ na-qhrɯt tɕe na-zmɤrtsaβ
-\xn 我刮到手了，很痛
+\xn 我被刮到手了，感觉辣乎乎的
 \xv a-jaʁ mtshalu kɯ ka-mtsɯɣ tɕe na-zmɤrtsaβ
 \xn 我的手碰到荨麻就很痛
 \se nɤmɤrtsaβ
@@ -51431,12 +51492,12 @@ l
 \sn 1
 \ge faire que quelqu'un s'étrangle, avale de travers
 \gn 呛到
+\xv @cai ɯ-ŋgɯ tɕɣom ɣɤʑu tɕe pɯ́-wɣ-sɯmkɯt-a
+\xn 菜里面有花椒，把我呛到了
 \sn 2
 \ge faire en sorte que quelqu'un n'arrive pas à répondre
 \gn 使人答不上来（开玩笑的时候）
-\xv @cai ɯ-ŋgɯ tɕɣom ɣɤʑu tɕe pɯ́-wɣ-sɯmkɯt-a
-\xn 菜里面有花椒，把我呛到了
-\xv jiɕqha nɯ kɯ khɤβdɤr ɲɯ-ɤsɯ-βzu tɕe, ɯ-sci tɤ-βzu-t-a tɕe, pɯ-sɯmkɯ-t-a
+\xv jiɕqha nɯ kɯ khɤβdɤr ɲɯ-ɤsɯ-βzu tɕe, ɯ-sci tɤ-βzu-t-a (=ɯ-ntsi tɤ-βzu-t-a) tɕe, pɯ-sɯmkɯ-t-a
 \xn 这个人在讲笑话，我也说了一句，让他答不上来了
 \dt 28/Dec/2010
 
@@ -56707,6 +56768,18 @@ l
 \cf tʂaŋ
 \dt 24/Oct/2011
 
+\lx _nɤtʂɤtshi 
+\ps vt
+\pdl dir
+\pdv _
+\ng incorp
+\ge bloquer le chemin 
+\gn 挡路
+\xv ɯʑo kɯ tɤ́-wɣ-nɤtʂɤtshi-a
+\xn 他挡了我的路
+\cf tshi3
+\cf tʂu
+
 \lx _nɤtɯɣ
 \cf atɯɣ
 \dt 29/Nov/2011
@@ -57678,7 +57751,6 @@ l
 
 \lx _ndziaʁ
 \wav8 chAndziaR
-\wav8 thWGAndziaR
 \ps vs
 \sn 1
 \pdl dir 
@@ -57688,18 +57760,17 @@ l
 \xv kɯki tɤ-mtɯ chɤ-ndziaʁ tɕe kɤ-rla ɲɯ-ɴqa
 \gn 这个结打得很紧，很难解开
 \sn 2
-\pdl dir 
-\pdv kɤ-
-\ge bien (mémoriser)
-\gn 牢固（记得）
-\xv kɤ-ɕɯftaʁ ko-ndziaʁ
-\xn 记得很牢固
-\sn 3
 \ge foncé
 \gn 深（颜色）
 \xv ɯ-mdoʁ ɲɯ-ndziaʁ
 \xn 颜色很深
+\sn 3 
+\ge complet (temps)
+\gn 满、到期（时间）
+\xv tɯ-xpa ɲɤ-ndziaʁ
+\xn 满了一周年
 \se ɣɤndziaʁ
+\wav8 thWGAndziaR
 \ps vt
 \pdl dir 
 \pdv thɯ-
@@ -67482,6 +67553,7 @@ l
 \xv tɯmbri tɤ-rɤlkɯɣ-a
 \xn 我把绳子做成一圈一圈
 \cf tɯ-tɤlkɯɣ
+\sy rɤstɯm
 \dt 02/Jun/2013
 
 \lx _rɤloʁ
@@ -68230,6 +68302,7 @@ l
 \gn 把凌乱的绳子收拢整齐
 \xv tɯmbri tɤ-rɤstɯm-a
 \xn 我把绳子收拢整齐
+\sy rɤlkɯɣ
 \cf stɯm
 \dt 09/May/2013
 
@@ -71648,12 +71721,12 @@ l
 \ps vt
 \pdl dir 
 \pdv tɤ-
-\ge puiser 
-\gn 舀水 
-\xv tɯ-ci ta-saχthɯm
-\xn 他舀了水
+\ge puiser avec 
+\gn 用……舀（水、颗粒） 
 \xv khɯtsa ta-saχthɯm
 \xn 他用碗舀了
+\xv scoʁ ta-saχthɯm
+\xn 他用瓢子舀了
 \dt 30/Mar/2014
 
 \lx _saχti
@@ -73753,6 +73826,18 @@ l
 \cf rʁɯβrʁɯβ
 \dt 27/Jun/2011
 
+\lx _sɤrtɕhɣaʁ
+\ps vt 
+\pdl dir 
+\pdv nɯ-
+\ge chicaner (à propos de quelquechose)
+\gn 计较；找毛病（针对一件事）
+\xv tɯtɯrca ɕ-tu-rɯndzɤtshi-j pɯ-ŋu ri, ɯʑo kɯ na-sɤrtɕhɣaʁ 
+\xn 我们本来要一起去吃饭，但是他在那里计较（没有跟我们一起）
+\cf ɣɤrtɕhɣaʁ
+\sy sɤtɕɯqaʁ
+\cf tɤ-rtɕhɣaʁ,tɕɤt
+
 \lx _sɤrtɕhoʁ
 \cf artɕhoʁ
 \dt 19/Aug/2015
@@ -73763,10 +73848,6 @@ l
 
 \lx _sɤrtsi
 \cf rtsi
-
-\lx _sɤrtsɯɣdu
-\cf artsɯɣdu
-\dt 14/May/2011
 
 \lx _sɤrtsɯrtso
 \wav vt-sArtsWrtso
@@ -74215,7 +74296,7 @@ l
 \xv ɕomskrɯt kɤ-sɤtɕɯmthɯt-a
 \xn 我把铁丝拼在一起了
 \xv tɯ-ŋga kɤ-sɤtɕɯmthɯt
-\xn 把衣服拼在一起
+\xn 把（零碎的布片）拼在一起，做成一件衣服
 \xv tɤ-ri kɤ-sɤtɕɯmthɯt
 \xn 把线拼在一起
 \sy sɤlɤɣɯ
@@ -74223,19 +74304,16 @@ l
 \dt 31/Jul/2011
 
 \lx _sɤtɕɯqaʁ
-\wav vt-sAtCiqaR
 \wav8 sAtCiqaR
 \ps vt
 \pdl dir 
 \pdv nɯ-
 \ge chicaner, s'opposer à 
-\gn 计较；反驳 
+\gn 计较；反驳；找毛病
 \xv nɯ-sɤtɕɯqaʁ-a
 \xn 我跟他计较了
 \xv mbro jla ɲɯ-sɤtɕɯqaʁ
 \xn 他计较马和犏牛的事情
-\xv to-sɤtɕhɯ tɕe ɲɯ-sɤtɕɯqaʁ
-\xn （犏牛）顶了（人、猪等），所以他计较
 \xv ɯ-rɟɯ ɲɯ-sɤtɕɯqaʁ
 \xn 他计较他的财产
 \xv nɤki tɯrme ɯ-kɤ-sɤtɕɯqaʁ dɤn
@@ -74244,6 +74322,7 @@ l
 \xn 你要按照他说的去做，不要反驳
 \xv nɤ-kɤ-sɤtɕɯqaʁ ʁɟa ʑo ɲɯ-ɕti
 \xn 你所说的话全部都是跟人家计较的
+\sy sɤrtɕhɣaʁ
 \se ɣɤtɕɯqaʁ
 \ps vi
 \pdl dir 
@@ -74323,7 +74402,6 @@ l
 \dt 17/Dec/2011
 
 \lx _sɤthoʁmphrɤt
-\wav vt-sAthoRmphrAt
 \ps vt
 \pdl dir 
 \pdv tɤ-
@@ -74336,10 +74414,6 @@ l
 \cf athoʁmphrɤt
 \dt 09/Dec/2013
 
-\lx _sɤthu
-\cf thu1
-\dt 11/May/2011
-
 \lx _sɤtsa
 \wav vt-sAtsa
 \wav vt-sAtsa2
@@ -74350,9 +74424,9 @@ l
 \ge insérer, planter 
 \gn 插；戳；刺痛 
 \hbf 1171 <2> 1172 <3> 1656 
-\xv tɤtshoʁ pɯ-sɤtsa-t-a
+\xv tɤtshoʁ pɯ-sɤtsa-t-a (=pɯ-no-t-a)
 \xn 我钉了钉子
-\xv ɕɤmtshoʁ kɤ-sɤtsa-t-a
+\xv ɕɤmtshoʁ kɤ-sɤtsa-t-a (=kɤ-lat-a, kɤ-no-t-a)
 \xn 我钉了铁钉
 \xv kɯm pɯ-sɤtsa-ta 
 \xn 我锁了门
@@ -75692,18 +75766,24 @@ l
 \wav vt-sthaB
 \wav8 sthaB
 \ps vt
+\sn 1
 \pdl dir 
 \pdv _
 \ge toucher 
 \gn 靠；碰
 \xv ɯ-taʁ ka-sthaβ
 \xn 他碰了一下（上面）
-\xv tɯ-ci la-sthaβ
-\xn 他把水放在火上做热了
 \xv kɤ-sthaβ-a 
 \xn 我碰了一下
 \xv ɯ-rŋa ɯ-taʁ a-jaʁ kɤ-sthaβ-a
 \xn 我用手碰了一下他的脸
+\sn 2
+\pdl dir 
+\pdv lɤ-
+\ge mettre à chauffer sur le four
+\gn 放在炉子上烤
+\xv tɯ-ci la-sthaβ
+\xn 他把水放在火上做热了
 \dt 30/Aug/2011
 
 \lx _sthoʁ
@@ -75741,6 +75821,8 @@ l
 \gn 完 
 \xv kɤ-nɤma ta-sthɯt
 \xn 他把工作做完了
+\xn kɤ-nɤma nɯ-sthɯt-a
+\xn 我把工作做完了
 \xv kɤ-βzjoz pa-sthɯt
 \xn 他学完了
 \xv tɤ-scoz kɤ-rɤt pjɤ-sthɯt
@@ -76146,7 +76228,7 @@ l
 \ge rendre noir 
 \gn 使其变黑 
 \xv tɯthɯ ta-sɯɣɲaʁ
-\xn 他把锅子烧黑了
+\xn 火把锅子烧黑了
 \xv ʁmɯrtsɯ ɯ-mat kɯ a-ɕɣa ɲɤ-sɯɣɲaʁ 
 \xn 果子把我的牙齿弄黑
 \xv tɯ-ŋga nɯ-sɯɣɲaʁ-a
@@ -76431,20 +76513,16 @@ l
 \dt 06/Sep/2015
 
 \lx _sɯmtɕɯr
-\wav vt-sWmtCWr
 \ps vt
 \pdl dir 
 \pdv _
 \ge faire tourner 
 \gn 使转动 
 \hbf 1809 
-\xv mkhɯrlu kɤ-sɯmtɕɯr
-\xn 把轮子转动
-\xv nɯ-sɯmtɕɯr-a
-\xn 我令（某物）转动了
-\xv pa-sɯmtɕɯr
-\xn 他把它转动了
-\xv tɯ-kɤrnoʁ kɤ-sɯmtɕɯr ra 
+\ng caus
+\xv laʁŋkhɤr thɯ-sɯmtɕɯr-a 
+\xn 我把转经筒转动了
+\xv tɯ-ku tú-wɣ-sɯmtɕɯr tsa ra 
 \xn 要动脑筋
 \cf mtɕɯr
 \dt 25/Aug/2011
@@ -77014,10 +77092,10 @@ l
 \ge envoyer qqn 
 \gn 派人 
 \hbf 1542
-\xv kɯ-nɤphɯphu jɤ-sɤɣri-t-a
+\xv kɯ-nɤphɯphu jɤ-sɤɣri-t-a (jɤ-no-t-a)
 \xn 我把乞丐赶走了
 \xv ki kɯ-fse tɤ-rʑaʁ ɲɯ-sɯxɕe-a ɬoʁ
-\xn 我就有这样打发时间
+\xn 我只有这样打发时间
 \cf ɕe
 \dt 31/Aug/2015
 
@@ -78027,7 +78105,6 @@ l
 
 \lx _thu
 \hm 1
-\wav vt-thu
 \ps vt
 \pdl dir 
 \pdv tɤ-
@@ -78046,25 +78123,17 @@ l
 \xn 他问了我
 \xv kɯmaʁ ci tu-the-a ŋu
 \xn 我再问一个问题
+\xn tʂu tɤ-thu-t-a 
+\xn 我问了路
 \se rɤthu
 \ps vi
 \ng apass
 \ge demander à quelqu'un
 \gn 问某人；向某人请教
-\xv tʂu tɤ-rɤthu-a
-\xn 我问了路
-\xv ki tɕhi tú-wɣ-stu ɲɯ-ŋu tɤ-rɤthu-a
-\xn 我问了这个是什么东西
 \xv ɯʑo ɯ-ɕki ɕɯ-rɤthu-a 
 \xn 我去向他请教
 \xv a-ɕki tɤ-tɯ-rɤthu
 \xn 你问了我
-\se sɤthu
-\ps vi
-\ge demander en mariage
-\gn 提亲
-\xv aʑo kɯ-sɤthu ɕe-a
-\xn 我要去提亲
 \cf rɤthuthe
 \dt 02/Sep/2015
 
@@ -78319,13 +78388,12 @@ l
 \xv ɯ-mke ɲɤ-tshi
 \xn 他把他的脖子勒住了（横着）
 \xv ɯ-mke to-tshi
-\xn 他上吊自尽了
-\xv nɯ-tshi-t-a
-\xn 我勒住了
+\xn 他把他吊死了
 \cf ʑɣɤtshi
 \dt 05/Dec/2011
 
 \lx _tshi
+\wav vt-tshi-b
 \hm 3
 \ps vt
 \pdl dir 
@@ -78333,10 +78401,11 @@ l
 \ge bloquer 
 \gn 挡住，拦住 
 \hbf 1256 
-\xv tʂu nɯ-tshi-t-a
-\xn 我挡了路
 \xv ɕkom nɯ jɤ-tshi
-\xn 你把麂子拦住！
+\xn 你把麂子拦住吧！
+\xv fsapaʁ nɯ-tshi
+\xn 你把牲畜拦住吧！
+\cf nɤtʂɤtshi
 \dt 18/Aug/2015
 
 \lx _tshoʁ
@@ -80345,7 +80414,8 @@ l
 \pdv pɯ-
 \ge faire en continu, à de nombreuses reprises
 \gn 接二连三地做
-\xv tɯ-fkur tɕɤku a-pɯ-ɤta, nɯ z-ɲɯ́-wɣ-zɣɯmphrɯmphru
+\xv tɯ-fkur tɕɤkɯ a-pɯ-ɤta, nɯ z-ɲɯ́-wɣ-zɣɯmphrɯmphru jɤɣ
+\xn 那一背（东西）放在那边，可以接着把它背过来
 \xv sɯfkur ɕ-pɯ-zɣɯmprɯmphru-t-a
 \xn 我接二连三地去背了柴
 \xv pɤjkhu kutɕu ɯ-skɤt kɤ-zɣɯmphɯmphru ʑo kɤ-ti mɯ́j-cha
@@ -81111,7 +81181,7 @@ l
 \gn 打中 
 \hbf 1612
 \xv tɤ-fsɯr ɯ-taʁ tɤ-znɯχcal-a ʑo tɤ-lat-a
-\xn 我射中了靶子
+\xn 我对着靶子中心射了枪
 \xv ɕɤmɯɣdɯ tɤ-znɯχcal-a pɯ-cha-a
 \xn 我射枪成功地射中了
 \cf ɯ-χcɤl
