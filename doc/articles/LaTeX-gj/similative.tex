@@ -9,7 +9,7 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{textcomp}
+\usepackage{lineno}
 \usepackage{hyperref} 
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 %\usepackage[all]{hypcap}
@@ -19,7 +19,7 @@
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} %API tjs en italique
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
@@ -35,58 +35,185 @@
 \newcommand{\sigc}{$\Sigma_3$}   
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\factual}[1]{\textsc{:fact}}
-
-\renewcommand\thetable{31.\arabic{table}}
-
+\newcommand{\forme}[2]{\ipa{#1} `#2'}  
+\newcommand{\rdp}{\textasciitilde{}}
 \begin{document} 
 
 \title{Similative constructions in Japhug}
 \author{Guillaume Jacques}
 \maketitle
-\section{Introduction}
-\section{Comparative and superlative}
-\citet{jacques16comparative}
+\linenumbers
+
+\section*{Introduction}
+
+\section{Related constructions}
+\subsection{Degree construction}
+The degree of an adjectival predicate can be expressed in two ways, either with a degree adverb, or using the nominalized degree construction.
+
+\subsubsection{Degree adverb}
+The degree adverb construction is very familiar; it involves the adverb \forme{wuma}{really, very}, which can appear either close to the verb (as in \ref{ex:tCur}) or separated from the verb by a noun phrase as in (\ref{ex:pWdAn}).
+
+\begin{exe}
+\ex \label{ex:tCur}
+\gll \ipa{tɕe} 	\ipa{nɯnɯ} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{tɕur} 	\ipa{ri} \\
+\textsc{lnk} \textsc{dem} really  \textsc{emph} be.sour:\textsc{fact} but \\
+\glt `It is very sour.' (09 mi, 67)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:pWdAn}
+\gll
+\ipa{nɤʑo} 	\ipa{nɯ} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{nɤ-ma} 	\ipa{pɯ-dɤn} 	\ipa{ɯ́-ŋu?}  \\
+\textsc{2sg} \textsc{dem} really \textsc{emph} \textsc{2sg.poss}-work \textsc{pst.ipfv}-be.many \textsc{qu}-be \\
+\glt `You had a lot of work, didn't you?' (conversation, 2015)
+\end{exe}
+
+Although \forme{wuma}{really, very} is borrowed from Tibetan \ipa{ŋo.ma}, this word is not used in this way in Tibetan languages as far as I know, and despite the deep typological and lexical influence of Tibetan on Japhug, the expression of degree in Tibetan uses unrelated constructions (\citealt{simon15evaluative}).
+
+\subsubsection{Nominalized degree construction} \label{sec:NDC}
+A more elaborated construction to express degree in Japhug involves nominalizing the adjectives by means of the action nominal prefix \ipa{tɯ-} and adding a possessive prefix before it coreferent with the subject, as in the form \forme{ɯ-tɯ-tɕur}{its sourness} in example (\ref{ex:WtWCur}), followed by a predicate expressing the degree such as  \forme{saχaʁ}{be extremely} in this example. Other possible predicates include \forme{tɕʰom}{be too much} or \forme{naχtɕɯɣ}{be identical}; in the latter case it becomes a similative construction (see section \ref{sec:NDC.similative}).  As shown in (\ref{ex:YWsWxtCur}), the degree nominal can be followed by the ergative \ipa{kɯ} and a full clause describing the degree of the property described by the adjective (`so X that Y').
+
+\begin{exe}
+\ex \label{ex:WtWCur}
+\gll 
+\ipa{mtɕʰi}  	\ipa{ɯ-mat}  	\ipa{rca}  	\ipa{ɯ-tɯ-tɕur}  	\ipa{saχaʁ.}  	   \\
+sea.buckthorn \textsc{3sg.poss}-fruit \textsc{unexpected} \textsc{3sg-nmlz:degree}-be.sour be.extremely:\textsc{fact}   \\
+\glt `The fruit of the sea-buckthorn is very sour,' (09 mi, 65)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:YWsWxtCur}
+\gll 
+ 	[\ipa{ɯ-tɯ-tɕur}]  	\ipa{\textbf{kɯ}}  	[\ipa{tɯ-kɯr}  	\ipa{ɯ-ŋgɯ}  	\ipa{lú-wɣ-rku}  	\ipa{qʰe}  	\ipa{maka}  	\ipa{ɲɯ-sɯ-ɤmɯzɣɯt}  	\ipa{qʰe,}  	\ipa{tɯ-pʰoŋbu}  	\ipa{ra}  	\ipa{kɯnɤ}  	\ipa{ɲɯ-sɯx-tɕur}  	\ipa{kɯ-fse}  	\ipa{ɕti}]  \\
+  \textsc{3sg-nmlz:degree}-be.sour \textsc{erg} \textsc{indef:poss}-mouth \textsc{3sg}-inside \textsc{ipfv:upstream-inv}-put.in \textsc{lnk} at.all \textsc{ipfv-caus}-be.evenly.distributed \textsc{lnk} \textsc{indef:poss}-body \textsc{pl} also \textsc{ipfv-caus}-be.sour \textsc{nmlz:S/A}-be.like be:\textsc{affirm}:\textsc{fact} \\
+\glt `(The fruit of the sea-buckthorn) is so sour that when one puts it in one's mouth, it makes it completely (sour), and it is as if one's (whole) body became sour.' (09 mi, 66)
+\end{exe}
+
+This construction is common in Japhug (\citealt[8]{jacques16comparative}) and attested in other Rgyalrong languages such as Tshobdun (\citealt[911]{jackson06guanxiju}).
+
+\subsection{Comparative}
+The comparative construction in Japhug can be illustrated by example (\ref{ex:comp1}): the  standard is marked by the postposition \ipa{sɤz} `than' specifically used in this construction, and the comparee is marked by the ergative  \ipa{kɯ}. In comparative constructions, it is common for ergative or instrumental markers to be used with the standard, but this use on the comparee is unexpected (\citealt{jacques16comparative}).
 
 \begin{exe}
 \ex \label{ex:comp1}
 \gll  \ipa{ɯ-ʁi}   	\ipa{sɤz}   	[\ipa{ɯ-pi}   	\ipa{nɯ}]   	\ipa{\textbf{kɯ}}   	\ipa{mpɕɤr}     \\
-\textsc{3sg.poss}-younger.sibling \textsc{comparative} \textsc{3sg.poss}-elder.sibling \textsc{dem} ?{ }  be.beautiful:\textsc{fact} \\
+\textsc{3sg.poss}-younger.sibling \textsc{comparative} \textsc{3sg.poss}-elder.sibling \textsc{dem} \textsc{erg}  be.beautiful:\textsc{fact} \\
 \glt `The elder one is more beautiful than the young one.' (elicited)
 \end{exe}
 
 \subsection{Superlative}
+There are no less than three constructions expressing superlative meaning in Japhug: a degree adverb meaning `most', a possessed subject participle (`Y is the X one of ...') and a relative clause with a negative existential verb (`There is no X one like Y').
 
- \subsubsection{Adverb}
-\ipa{stu} \ipa{ʑo}
+ \subsubsection{Degree adverb}
+ The degree adverb superlative is a familiar construction, illustrated by example (\ref{ex:stu1}) with an adjective in finite small (factual non-past).
+ 
+\begin{exe}
+\ex \label{ex:stu1}
+\gll 
+\ipa{nɯ} 	\ipa{pɣɤtɕɯ} 	\ipa{nɯ-ŋgɯz} 	\ipa{stu} 	\ipa{xtɕi} 	\ipa{lo} \\
+\textsc{dem} bird \textsc{3pl.poss-}among most be.small:\textsc{fact} \textsc{sfp} \\
+\glt `It is the smallest of all birds.' (hist-24-ZmbrWpGa, 126)
+\end{exe}
 
+Most examples of this construction appear however with adjectives in subject participle form,\footnote{For an account of participial forms and a definition of subject and objects  in Rgyalrong languages, see \citet{jackson03caodeng, jackson14morpho, jacques16relatives}.} prefixed with \ipa{kɯ-} as in (\ref{ex:stu2}).
+
+\begin{exe}
+\ex \label{ex:stu2}
+\gll \ipa{kɯɕɯŋgɯ} 	\ipa{tɕe} 	<aizheng> 	\ipa{kɤ-ti} 	\ipa{pɯ-me} 	\ipa{tɕe,} 	\ipa{kɤ-kɯ-nɤndza} 	\ipa{nɯ} 	\ipa{stu} 	\ipa{ʑo} 	\ipa{kɯ-ŋɤn} 	\ipa{kɤ-pa} 	\ipa{pɯ-ŋu} \\
+long.ago \textsc{lnk} cancer \textsc{nmlz}:P-say \textsc{pst.ipfv}-not.exist \textsc{lnk} \textsc{pfv}-\textsc{nmlz}:S/A-have.leprosy \textsc{dem} most \textsc{emph} \textsc{nmlz}:S/A-be.evil \textsc{nmlz}:P-do \textsc{pst.ipfv}-be \\
+\glt `In former times, nobody talked about cancer, and leprosy was considered to be the most terrible (of all diseases).' (hist-25-khArWm, 35)
+\end{exe}
+
+It is also possible to find this construction with oblique participles, as in (\ref{ex:stu3}), though this is much rarer.
+
+\begin{exe}
+\ex \label{ex:stu3}
+\gll 
+\ipa{stu} 	\ipa{ɯ-sɤ-dɤn} 	\ipa{nɯ} 	\ipa{stɤmku} 	\ipa{nɯra} 	\ipa{ŋu-nɯ} \\
+most \textsc{3sg.poss-nmlz:oblique}-be.many \textsc{dem} prairie \textsc{dem:pl} be:\textsc{fact-pl} \\
+\glt `The places where most of them are are the prairies.' (hist-19-qachGa mWntoR, 24)
+\end{exe}
  \subsubsection{Possessed participle}
-\ipa{tɕe} 	\ipa{pɣa} 	\ipa{tʰamtɕɤt} 	\ipa{ɣɯ} 	\ipa{nɯ-kɯ-mpɕɤr} 	\ipa{nɯ} 	\ipa{rmɤβja} 	\ipa{ɲɯ-ŋu} 
+Another possibility to express superlative is with an adjective in participial form  with a third plural possessive marker, as in (\ref{ex:super2}).
+ 
+ \begin{exe}
+\ex \label{ex:super2}
+\gll 
+\ipa{tɕe} 	\ipa{pɣa} 	\ipa{tʰamtɕɤt} 	\ipa{ɣɯ} 	\ipa{nɯ-kɯ-mpɕɤr} 	\ipa{nɯ} 	\ipa{rmɤβja} 	\ipa{ɲɯ-ŋu} \\
+\textsc{lnk} bird all \textsc{gen} \textsc{3pl.poss-nmlz}:S/A-be.beautiful \textsc{dem} peacock \textsc{sens}-be \\
+\glt  `The peacock is the most beautiful of all birds.' (24-ZmbrWpGa, 84)
+\end{exe}
 
-24-ZmbrWpGa, 84
+This construction is less flexible, and mainly occurs with the adjectives \forme{mpɕɤr}{be beautiful} and \forme{mna}{be well}.
 
  \subsubsection{Relative}
-\ipa{ama} 	\ipa{a-pi} 	\ipa{kʰu} 	\ipa{nɯ} 	\ipa{tɕʰindʐa} 	\ipa{ku-tɯ-nɤpʰɯpʰɣo} 	\ipa{tɕe} 	\ipa{nɤʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-sɤɣmu} 	\ipa{me} 	
-2005khu, 25
+ A more idiomatic way of expressing superlative meaning in Japhug is by means of negative existential verb combined with a relative and a adjunct with the participial form of \forme{fse}{be in this way, be like}, as in (\ref{ex:kWfse.me}).
+ 
+ \begin{exe}
+\ex \label{ex:kWfse.me}
+\gll \ipa{ama} 	\ipa{a-pi} 	\ipa{kʰu} 	\ipa{nɯ} 	\ipa{tɕʰindʐa} 	\ipa{ku-tɯ-nɤpʰɯpʰɣo} 	\ipa{tɕe}  \ipa{nɤʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-sɤɣmu} 	\ipa{me} 	\\
+\textsc{surprise} \textsc{1sg.poss}-elder.sibling tiger \textsc{dem} why \textsc{prs.ego}-2-flee.here.and.there \textsc{lnk} \textsc{2sg}  \textsc{nmlz}:S/A-be.like   \textsc{nmlz}:S/A-be.dreadful  not.exist:\textsc{fact} \\
+\glt `Brother tiger, why are you running away like that, you are the most dreadful (animal).' (literally `There is no one dreadful like you') (2005khu, 25)
+\end{exe}
 
-\section{Similative}
+This construction is potentially ambiguous, and when the relative has a finite main verb (when the relativized element is the object, see \citealt{jacques16relatives}), it is possible in some cases, to use orientation prefixes to disambiguate. In example (\ref{ex:tusWza}), the verb \forme{sɯz}{know} in the superlative construction takes the `up' prefix instead of the expected `down' prefix that it normally selects to build most tenses. With the  `down' prefix, scope of the negation is different, a smenatic difference that may have to do with syntactic boundaries; in (\ref{ex:tusWza}), the relative is limited to a single word \ipa{tu-sɯz-a} `(that) I know' and the negation applies exclusively to it, whereas in (\ref{ex:pjWsWza}) the negation applies to the whole constituent indicated between square brackets.
+ 
 
-\subsection{Participle of `be like'}
+\begin{exe}
+\ex \label{ex:tusWza}
+\gll \ipa{aʑo} 	\ipa{nɯ} 	\ipa{kɯ-fse} 	[\ipa{tu-sɯz-a}] 	\ipa{me} \\
+\textsc{1sg} \textsc{dem} \textsc{nmlz}:S/A-be.like \textsc{ipfv:up}-know-\textsc{1sg} not.exist:\textsc{fact} \\
+\glt `There is nothing I know better than that.'
+\end{exe}
 
-\ipa{aʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-chɯ-cha} 	\ipa{ʑo} 	\ipa{ʁʑɯnɯ} 	\ipa{ɣurʑa} 	\ipa{kɯrcat} 	\ipa{ra} 
-x1-sloXpWn, 17
-\subsection{Degree nominal}
+\begin{exe}
+\ex \label{ex:pjWsWza}
+\gll [\ipa{aʑo} 	\ipa{nɯ} 	\ipa{kɯ-fse} 	\ipa{pjɯ-sɯz-a}]	\ipa{me} \\
+\textsc{1sg} \textsc{dem} \textsc{nmlz}:S/A-be.like \textsc{ipfv}-know-\textsc{1sg} not.exist:\textsc{fact} \\
+\glt `I know of no such thing.'
+\end{exe}
 
+This contrast cannot however be generalized to all verbs and it is unclear for now to what extent this is a widespread phenomenon in Japhug grammar.
+
+\section{Argument similative} \label{sec:arg.similative}
+This section discusses the argument similative construction, that constructions expressing that two entities have a property in equal degree (X is as Y as Z). It differs from predicate similative, treated in section \ref{sec:pred.similative}, expressing that the same entity has two properties in equal degree (X is a Y as he is Z).
+
+There are no less than four distinct constructions expressing argument similative meaning in Japhug.
+
+\subsection{\forme{fse}{be like}}
+The verb \forme{fse}{be like} can be used to build several similative constructions. 
+
+\begin{exe}
+\ex \label{ex:pjWsWza}
+\gll \ipa{aʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-cʰɯ\rdp{}cʰa} 	\ipa{ʑo} 	\ipa{ʁʑɯnɯ} 	\ipa{ɣurʑa} 	\ipa{kɯrcat} 	\ipa{ra}  \\
+\textsc{1sg} \textsc{nmlz}:S/A-be.like \textsc{nmlz}:S/A-\textsc{emph}\rdp{}can \textsc{emph} young.man hundred eight have.to:\textsc{fact} \\
+\glt `I need a hundred and eight young men as able as I am.' (x1-sloXpWn, 17)
+\end{exe}
+
+
+\ipa{nɯ-rŋa} 	\ipa{nɯ} 	\ipa{iɕqʰa} 	\ipa{tɕʰemɤpɯ} 	\ipa{nɯ} 	\ipa{ɣɯ} 	\ipa{nɯ} 	\ipa{kɯ-kɯ-fse} 	\ipa{pjɤ-wɣrum,} 
+(hist150819 haidenver, 458)
+
+\ipa{nɯ} 	\ipa{li} 	\ipa{ɯ-wa} 	\ipa{fsɯ-fse} 	\ipa{ʑo} 	\ipa{pjɤ-fse} 	\ipa{pjɤ-sɤjloʁ} 
+(hist150818 muzhi guniang, 100)
+
+\subsection{Nominalized degree construction} \label{sec:NDC.similative}
+This construction is a particular case of the Nominalized Degree Construction presented in section \ref{sec:NDC}.
+ 
 \ipa{qaliaʁ} 	\ipa{nɯ} 	\ipa{ɯ-tɯ-wxti} 	\ipa{nɯ} 	\ipa{qandʑɣi} 	\ipa{cho} 	\ipa{naχtɕɯɣ} 	\ipa{tsa} 	\ipa{tɕeri} 	\ipa{ndʑi-mdoʁ} 	\ipa{ra} 	\ipa{kɯnɤ,} 	\ipa{qaliaʁ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{ɲɯ-ɲaʁ} 	
 19-qandZGi, 36
+
+\ipa{tɕe} 	\ipa{ɯ-tɯ-mɯɕtaʁ} 	\ipa{ɲɯ-naχtɕɯɣ-tɕi} 	\ipa{tɕe,} 	\ipa{qʰe} 	\ipa{nɯ-tɤjpa} 	\ipa{ɲɯ-rkɯn} 	\ipa{ma} 
+(conversation, 2014/11)
 
 \subsection{Possessed noun}
 \ipa{tu-mbro} 	\ipa{tɕe,} 	\ipa{tɯrme} 	\ipa{ɯ-fsu} 	\ipa{jamar} 	\ipa{tu-βze} 	\ipa{cha} 
 12-ndZiNgri, 4
-\subsection{Nominal}
-
-\ipa{jaʁmba} \ipa{naχtɕɯɣ}????
-\ipa{xtɯrɲɟi}
-\ipa{xtɕɯxte}
+%\subsection{Nominal}
+%
+%\ipa{jaʁmba} \ipa{naχtɕɯɣ}????
+%\ipa{xtɯrɲɟi}
+%\ipa{xtɕɯxte}
 
 \subsection{Denominal verb}
 
@@ -95,7 +222,14 @@ x1-sloXpWn, 17
 \ex 
 \gll \ipa{ɯ-tɯ-ɤrɯmɯntoʁ} 	\ipa{nɯ!}  \\
 \textsc{3sg.poss-nmlz:degree}-be.like.a.flower \textsc{sfp} \\
-\glt `It is as worthless as a flower!'
+\glt `It is as (worthless) as a flower!'
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll \ipa{ɯ-tɯ-ɤrɯsɯjno} 	\ipa{nɯ!}  \\
+\textsc{3sg.poss-nmlz:degree}-be.like.grass \textsc{sfp} \\
+\glt `(She cuts their head as easily) as if it were grass.'
 \end{exe}
 
 \ipa{kɤ-pʰɯt} 	\ipa{ɯ-tɯ-mbat} 	\ipa{kɯ} 	\ipa{ɲɯ-ɤrɯsɯjno} 	\ipa{ʑo} 
@@ -103,11 +237,13 @@ x1-sloXpWn, 17
 \subsubsection{Of the same size}
 \ipa{afsujɯja} `be of same size'
 
+\section{Predicate similative} \label{sec:pred.similative}
+as X as he is Y
 
 \section{Tropative}
 \citet{jacques13tropative}
 
-\section{Conclusion}
+\section*{Conclusion}
 
 
 \bibliographystyle{unified}
