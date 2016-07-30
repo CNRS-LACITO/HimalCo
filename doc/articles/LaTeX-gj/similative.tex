@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -22,7 +22,7 @@
 \newcommand{\ipa}[1]{{\phon\textbf{#1}}} %API tjs en italique
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn#1}}
 \newcommand{\topic}{\textsc{dem}}
 \newcommand{\tete}{\textsuperscript{\textsc{head}}}
@@ -124,7 +124,7 @@ long.ago \textsc{lnk} cancer \textsc{nmlz}:P-say \textsc{pst.ipfv}-not.exist \te
 \glt `In former times, nobody talked about cancer, and leprosy was considered to be the most terrible (of all diseases).' (hist-25-khArWm, 35)
 \end{exe}
 
-It is also possible to find this construction with oblique participles, as in (\ref{ex:stu3}), though this is much rarer.
+It is also possible to find this construction with oblique participles, as in (\ref{ex:stu3}), the only such example in the corpus.
 
 \begin{exe}
 \ex \label{ex:stu3}
@@ -133,6 +133,7 @@ It is also possible to find this construction with oblique participles, as in (\
 most \textsc{3sg.poss-nmlz:oblique}-be.many \textsc{dem} prairie \textsc{dem:pl} be:\textsc{fact-pl} \\
 \glt `The places where most of them are are the prairies.' (hist-19-qachGa mWntoR, 24)
 \end{exe}
+
  \subsubsection{Possessed participle}
 Another possibility to express superlative is with an adjective in participial form  with a third plural possessive marker, as in (\ref{ex:super2}).
  
@@ -146,7 +147,7 @@ Another possibility to express superlative is with an adjective in participial f
 
 This construction is less flexible, and mainly occurs with the adjectives \forme{mpɕɤr}{be beautiful} and \forme{mna}{be well}.
 
- \subsubsection{Relative}
+ \subsubsection{Relative} \label{sec:relative.superlative}
  A more idiomatic way of expressing superlative meaning in Japhug is by means of negative existential verb combined with a relative and a adjunct with the participial form of \forme{fse}{be in this way, be like}, as in (\ref{ex:kWfse.me}).
  
  \begin{exe}
@@ -176,44 +177,92 @@ This construction is potentially ambiguous, and when the relative has a finite m
 This contrast cannot however be generalized to all verbs and it is unclear for now to what extent this is a widespread phenomenon in Japhug grammar.
 
 \section{Argument similative} \label{sec:arg.similative}
-This section discusses the argument similative construction, that constructions expressing that two entities have a property in equal degree (X is as Y as Z). It differs from predicate similative, treated in section \ref{sec:pred.similative}, expressing that the same entity has two properties in equal degree (X is a Y as he is Z).
-
-There are no less than four distinct constructions expressing argument similative meaning in Japhug.
-
-\subsection{\forme{fse}{be like}}
-The verb \forme{fse}{be like} can be used to build several similative constructions. 
+This section discusses the argument similative construction, that constructions expressing that two entities have a property in equal degree (X is as Y as Z). It differs from predicate similative, treated in section \ref{sec:pred.similative}, expressing that the same entity has two properties in equal degree (X is a Y as he is Z). In the following, I adopt the generally accepted terminology used in the description of comparative construction (\citealt{dixon08comparative}), as illustrated by the English example (\ref{ex:similative.eng}). Similative construction can be considered to be a special case of comparatives. The main difference with other comparative construction is that since the comparee and the standard are identical as regards to the parameter, they can be considered to be interchangeable, and will be referred to instead as \textsc{comparee} 1 and 2 in the following discussion.
 
 \begin{exe}
-\ex \label{ex:pjWsWza}
+\ex \label{ex:similative.eng}
+\gll  John is as intelligent as Paul \\
+\textsc{comparee 1} { } \textsc{index} \textsc{parameter} \textsc{mark} \textsc{standard/comparee 2}  \\
+\end{exe}
+
+There are no less than four distinct constructions expressing argument similative meaning in Japhug. 
+
+\subsection{\forme{fse}{be like}}
+One similative construction is built with the verb \forme{fse}{be like} as the \textsc{mark} on the comparee 2.
+
+It is most commonly in participial form (\ipa{kɯ-fse}) as in  example (\ref{ex:kWfse.kWchWcha}). The main verb (the \textsc{parameter}) is also nearly always in participial form, and the construction is mainly used in relative clauses with one of the comparees as the relativized element.
+
+\begin{exe}
+\ex \label{ex:kWfse.kWchWcha}
 \gll \ipa{aʑo} 	\ipa{kɯ-fse} 	\ipa{kɯ-cʰɯ\rdp{}cʰa} 	\ipa{ʑo} 	\ipa{ʁʑɯnɯ} 	\ipa{ɣurʑa} 	\ipa{kɯrcat} 	\ipa{ra}  \\
 \textsc{1sg} \textsc{nmlz}:S/A-be.like \textsc{nmlz}:S/A-\textsc{emph}\rdp{}can \textsc{emph} young.man hundred eight have.to:\textsc{fact} \\
 \glt `I need a hundred and eight young men as able as I am.' (x1-sloXpWn, 17)
 \end{exe}
 
+Alternatively, it is also possible to use a finite form for both the \textsc{mark} \forme{fse}{be like} and the \textsc{parameter} as in (\ref{ex:fsWfse}), though such examples are rare in the corpus.
 
-\ipa{nɯ-rŋa} 	\ipa{nɯ} 	\ipa{iɕqʰa} 	\ipa{tɕʰemɤpɯ} 	\ipa{nɯ} 	\ipa{ɣɯ} 	\ipa{nɯ} 	\ipa{kɯ-kɯ-fse} 	\ipa{pjɤ-wɣrum,} 
-(hist150819 haidenver, 458)
+\begin{exe}
+\ex \label{ex:fsWfse}
+\gll
+\ipa{nɯ} 	\ipa{li} 	\ipa{ɯ-wa} 	\ipa{fsɯfse} 	\ipa{ʑo} 	\ipa{pjɤ-fse} 	\ipa{pjɤ-sɤjloʁ} \\
+\textsc{dem} again \textsc{3sg.poss}-father completely.like \textsc{emph} \textsc{ifr.ipfv}-be.like \textsc{ifr.ipfv}-be.ugly \\
+\glt `(The frog son) was as ugly as his father. ' (hist150818 muzhi guniang, 100)
+\end{exe}
 
-\ipa{nɯ} 	\ipa{li} 	\ipa{ɯ-wa} 	\ipa{fsɯ-fse} 	\ipa{ʑo} 	\ipa{pjɤ-fse} 	\ipa{pjɤ-sɤjloʁ} 
-(hist150818 muzhi guniang, 100)
+These constructions do not require an \textsc{index}, though adverbs \forme{fsɯfse}{completely identical} can serve as redundant indexes, as in (\ref{ex:fsWfse}).
+
+A similar similative construction in attested in the Kyomkyo dialect of Situ Rgyalrong (\citealt[238]{prins11kyomkyo}), though with the \textsc{mark} expressed by the participial form of the Tibetan loanword \forme{ndʐa}{be like} instead of the native root corresponding to Japhug \forme{fse}{be like}.
 
 \subsection{Nominalized degree construction} \label{sec:NDC.similative}
-This construction is a particular case of the Nominalized Degree Construction presented in section \ref{sec:NDC}.
- 
-\ipa{qaliaʁ} 	\ipa{nɯ} 	\ipa{ɯ-tɯ-wxti} 	\ipa{nɯ} 	\ipa{qandʑɣi} 	\ipa{cho} 	\ipa{naχtɕɯɣ} 	\ipa{tsa} 	\ipa{tɕeri} 	\ipa{ndʑi-mdoʁ} 	\ipa{ra} 	\ipa{kɯnɤ,} 	\ipa{qaliaʁ} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{ɲɯ-ɲaʁ} 	
-19-qandZGi, 36
+This construction is a particular case of the Nominalized Degree Construction presented in section \ref{sec:NDC}. It has three slightly different variants.
 
-\ipa{tɕe} 	\ipa{ɯ-tɯ-mɯɕtaʁ} 	\ipa{ɲɯ-naχtɕɯɣ-tɕi} 	\ipa{tɕe,} 	\ipa{qʰe} 	\ipa{nɯ-tɤjpa} 	\ipa{ɲɯ-rkɯn} 	\ipa{ma} 
-(conversation, 2014/11)
+In the first construction, the two \textsc{comparees} are included in a noun phrase, with the comitative marker \ipa{cʰo} (and its longer variant \ipa{cʰondɤre}) serving as the \textsc{mark} after one of them. This noun phrase is followed by an adjective (the \textsc{parameter}) in degree nominal form (prefixed with \ipa{tɯ-} and a possessive prefix (in dual or plural) coreferent with the preceding noun phrase. This nominalized verb and the preceding noun phrase form a noun phrase that is the subject of the adjective \forme{naχtɕɯɣ}{be identical} (the \textsc{index})\footnote{The adjective \forme{naχtɕɯɣ}{be identical} is a denominal verb derived from the a non-attested form *\ipa{χtɕɯɣ} borrowed from the Tibetan numeral \forme{gtɕig}{one}. } in finite form, as in examples (\ref{ex:ndZitWwxti}) and (\ref{ex:ndZitWmbro}).
+
+\begin{exe}
+\ex \label{ex:ndZitWwxti}
+\glll
+\ipa{qalekɯtsʰi} 	\ipa{nɯnɯ} 	\ipa{cʰondɤre} 	\ipa{βʑar} 	\ipa{nɯ} 	\ipa{ndʑi-tɯ-wxti} 	\ipa{naχtɕɯɣ} \\
+bird.sp \textsc{dem} \textsc{comit} bird.sp \textsc{dem} \textsc{3du.poss-nmlz:degree}-be.big be.identical:\textsc{fact} \\
+{\textsc{comparee} 1} { } \textsc{mark} {\textsc{comparee} 2} { } \textsc{parameter} \textsc{index} \\
+\glt The \ipa{qalekɯtsʰi} bird is as big as the \ipa{βʑar} bird. (hist-23-RmWrcWftsa, 34)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:ndZitWmbro}
+\gll 
+\ipa{mɤ-mbro} 	\ipa{tɤru} 	\ipa{cʰo} 	\ipa{ndʑi-tɯ-mbro} 	\ipa{naχtɕɯɣ} \\
+\textsc{neg}-be.high:\textsc{fact} tree.sp \textsc{comit} \textsc{3du.poss-nmlz:degree}-be.high be.identical:\textsc{fact} \\
+\glt `It is not high, it (grows) as high as the \ipa{tɤru} tree.' (hist-17-xCAj, 56)
+\end{exe}
+
+In the second construction, the nominalized \textsc{parameter} takes a possessive prefix only coreferent with the \textsc{comparee} 1, and the \textsc{comparee} 2 together with the comitative (the \textsc{mark}) follows the parameter, as in (\ref{ex:WtWwxti}).
+
+\begin{exe}
+\ex \label{ex:WtWwxti}
+\glll
+\ipa{qaliaʁ} 	\ipa{nɯ} 	\ipa{ɯ-tɯ-wxti} 	\ipa{nɯ} 	\ipa{qandʑɣi} 	\ipa{cʰo} 	\ipa{naχtɕɯɣ} 	\ipa{tsa} 	\\
+eagle \textsc{dem} \textsc{3sg.poss-nmlz:degree}-be.big \textsc{dem} hawk \textsc{comit} be.identical:\textsc{fact} a.little  \\
+{\textsc{comparee} 1} { } \textsc{parameter} { } {\textsc{comparee} 2} \textsc{mark} \textsc{index}  \textsc{index} \\
+\glt `The eagle is about as big as the hawk.' (19-qandZGi, 36)
+\end{exe}
+
+In the third construction, the parameter takes a third person singular possessive prefix, and the two comparees are indicated by person indexation on the verb. In (\ref{ex:WtWmWCtaR}), the speaker and the addressee are XXXX
+
+\begin{exe}
+\ex \label{ex:WtWmWCtaR}
+\glll
+\ipa{tɕe} 	\ipa{ɯ-tɯ-mɯɕtaʁ} 	\ipa{ɲɯ-naχtɕɯɣ-tɕi} 	\ipa{tɕe,} 	\ipa{qʰe} 	\ipa{nɯ-tɤjpa} 	\ipa{ɲɯ-rkɯn} 	\ipa{ma} \\
+\textsc{lnk} \textsc{3sg.poss-nmlz:degree}-be.cold \textsc{sens}-be.identical-\textsc{1du} \textsc{lnk} \textsc{2pl.poss}-snow \textsc{sens}-be.few \textsc{sfr} \\
+{ } \textsc{parameter} \textsc{index-comparee} \\
+\glt `It is as cold here as it is in your place, you don't have a lot of snow.' (`You and I are identical as to coldness'; conversation, 2014/11)
+\end{exe}
 
 \subsection{Possessed noun}
 \ipa{tu-mbro} 	\ipa{tɕe,} 	\ipa{tɯrme} 	\ipa{ɯ-fsu} 	\ipa{jamar} 	\ipa{tu-βze} 	\ipa{cha} 
 12-ndZiNgri, 4
-%\subsection{Nominal}
-%
-%\ipa{jaʁmba} \ipa{naχtɕɯɣ}????
-%\ipa{xtɯrɲɟi}
-%\ipa{xtɕɯxte}
+
+
+\citet[377]{linxr93jiarong}
 
 \subsection{Denominal verb}
 
@@ -240,8 +289,6 @@ This construction is a particular case of the Nominalized Degree Construction pr
 \section{Predicate similative} \label{sec:pred.similative}
 as X as he is Y
 
-\section{Tropative}
-\citet{jacques13tropative}
 
 \section*{Conclusion}
 

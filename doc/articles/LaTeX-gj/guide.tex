@@ -19,12 +19,12 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{\mbox{#1}}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 
@@ -43,7 +43,7 @@
 \author{Guillaume Jacques}
 \maketitle
 
-I am working on a reference grammar of Japhug, but until it is complete, the following list presents the grammatical topics discussed in various articles and papers, either published or formally accepted for publication. Forthcoming articles (not included here) discuss relativization (and syntactic pivots), complementation, the progressive prefix, evidentiality and indirect speech.
+I am working on a reference grammar of Japhug, but until it is complete, the following list presents the grammatical topics discussed in various articles and papers, either published or formally accepted for publication. Forthcoming articles (not included here) discuss complementation, similative constructions, the progressive prefix, evidentiality and indirect speech.
 
 \begin{itemize}
 \item Abilitative: \citet{jacques15causative}
@@ -63,7 +63,7 @@ I am working on a reference grammar of Japhug, but until it is complete, the fol
 \item Calling/Chasing sounds:   \citet[283-4]{japhug14ideophones}
 \item Causal linking:  \citet[303-6]{jacques14linking}
 \item Causative: \citet{jacques15causative}
-\item Comparative: \citet{jacques15comparative}
+\item Comparative: \citet{jacques16comparative}
 \item Complementation: \citet{jacques08}, , \citet{jacques16sketch}
 \begin{itemize}
 \item  Raising: \citet{jacques15causative}
@@ -76,14 +76,14 @@ I am working on a reference grammar of Japhug, but until it is complete, the fol
 \item Converb:  \citet[269-272;307-8;321-2]{jacques14linking}
 \item Counterfactuals:  \citet[301-2]{jacques14linking}
 \item Deexperiencer: \citet[216-7]{jacques12demotion}, \citet{jacques14antipassive}
-\item Degree: \citet{jacques15comparative}
+\item Degree: \citet{jacques16comparative}
 \item Deideophonic verbs: \citet[278-282]{japhug14ideophones}
 \item Denominal verbs:  \citet{jacques12incorp}, \citet{jacques14antipassive}
 \item Direct/Inverse marking: \citet{jacques10inverse}
 \item Directional prefixes:  \citet[267-8]{jacques14linking}
 \item Disjunction:  \citet[318-9]{jacques14linking}
-\item Distributive: \citet{jacques15comparative}
-\item Ergative:   \citet{jacques15comparative}
+\item Distributive: \citet{jacques16comparative}
+\item Ergative:   \citet{jacques16comparative}
 \begin{itemize}
 \item Basic marking: \citet[131-2]{jacques10inverse}
 \item long distance: \citet[278]{jacques14linking}
@@ -92,6 +92,7 @@ I am working on a reference grammar of Japhug, but until it is complete, the fol
 \item Evidentiality: \citet[380-390]{jacques04these}, \citet{jacques08}
 \item Estimative: \citet{jacques13tropative}
 \item Generic person:   \citet[204-8]{jacques12demotion}
+\item Grammatical relations: \citet{jacques16relatives}
 \item Ideophones: \citet{japhug14ideophones}
 \begin{itemize}
 \item in relatives: \citet[275]{japhug14ideophones}
@@ -99,7 +100,7 @@ I am working on a reference grammar of Japhug, but until it is complete, the fol
 \item Incorporation: \citet{jacques12incorp}
 \item Indefinite possessor: \citet[1212]{jacques12incorp}, \citet[4]{jacques14antipassive}
 \item Indexation: \citet{jacques10inverse}, \citet[85]{jacques12agreement}
-\item Instrumental: \citet{jacques15comparative}
+\item Instrumental: \citet{jacques16comparative}
 \item Interjections: \citet[283]{japhug14ideophones}
 \item Irregular verbs: \citet[91]{jacques12agreement}, \citet[1215]{jacques12incorp}
 \item Iterative coincidence: \citet[296]{jacques14linking}
@@ -128,14 +129,15 @@ I am working on a reference grammar of Japhug, but until it is complete, the fol
 \item Reduplication: \citet{jacques04these}, \citet{jacques07redupl}
 \item Reflexive: \citet{jacques10refl}, \citet[85]{jacques12agreement}
 \item Relator nouns:  \citet[274-6]{jacques14linking}
-\item Relativization: \citet{jacques08}, \citet{jacques16sketch}
+\item Relativization: \citet{jacques08}, \citet{jacques16relatives},\citet{jacques16sketch}
 \begin{itemize}
-\item Instrument: \citet{jacques15comparative}
+\item Instrument: \citet{jacques16comparative}
 \item Comitative: \citet[272-4]{jacques14linking}
 \end{itemize}
 \item Scalar concessive conditionals: \citet[300]{jacques14linking}
 \item Spontaneous-autobenefactive: \citet{jacques15spontaneous}
 \item Stem alternation:  \citet[267]{jacques14linking}
+\item Syntactic pivots: \citet{jacques16relatives}
 \item Synthetic compounds: \citet[1220-3]{jacques12incorp}
 \item Template (verbal): \citet[196-199]{jacques13harmonization}
 \item Tense-Aspect-Modality:  \citet[265-9]{jacques14linking}

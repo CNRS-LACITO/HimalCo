@@ -18,12 +18,12 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{\mbox{#1}}}} 
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 
@@ -76,13 +76,23 @@ Shidanlua   $\Rightarrow$ Shidanluo
 \begin{exe}
 \ex \label{ex:CkrAz.tAme}
 \gll 
-   	\ipa{sɯmpʰɯ}  	\ipa{ɯ-pɤl,}  	\ipa{ɕkrɤz}  	\ipa{tɤ-me}  	\ipa{tɕe}  	\ipa{nɯnɯ}  	\ipa{xɕɤj}  	\ipa{ɲɯ-βzu-nɯ}  	\ipa{sna.}  \\
+   	\ipa{sɯmpʰɯ}  	\ipa{ɯ-pɤl,}  	\ipa{ɕkrɤz}  	\ipa{tɤ-me}  	\ipa{tɕe}  	\ipa{nɯnɯ}  	\ipa{xɕaj}  	\ipa{ɲɯ-βzu-nɯ}  	\ipa{sna.}  \\
    	tool.for.breaking.earth.clods \textsc{3sg.poss}-palm oak \textsc{pfv}-not.exist \textsc{lnk} \textsc{dem} tree.species \textsc{ipfv}-make-\textsc{pl} be.appropriate:\textsc{fact} \\
-\glt The blade of the earth clod breaker, when/if there is no oak wood, people can also make it using the \ipa{xɕɤj} wood (\ipa{xɕɤj}, 44).
+\glt The blade of the earth clod breaker, when/if there is no oak wood, people can also make it using the \ipa{xɕaj} wood (xCaj 44).
 \end{exe}
 \end{enumerate}
 
-
+\section{\citet{jacques15causative}, Causative}
+  \begin{exe}
+\ex \label{ex:assoc.motion1}
+\gll
+\ipa{wortɕʰi} 	\ipa{ʑo,} 	\ipa{kɯki} 	\ipa{jɤ-tsɯm} 	\ipa{tɕe,} 	\ipa{tʰɯci} 	\ipa{ftɕaka} 	\ipa{kɯ-ra} 	\ipa{tsuku} 	\ipa{ɕ-tɤ-sɯ-χti} \\
+please \textsc{emph} this \textsc{imp}-take.away \textsc{lnk} something thing \textsc{nmlz}:S/A-have.to some \textsc{transloc-imp-caus}-buy[III] \\
+\glt Please, take this and go to buy the things (we) need with it. (The raven4 72)
+  \end{exe} 
+On p.182, the word \ipa{kɯra} was mistakenly glossed as the plural proximal demonstrative; it is instead the participle of the verb \ipa{ra} `need, have to', a homophonous form.
+  
+  
 \bibliographystyle{unified}
 \bibliography{bibliogj}
 \end{document}

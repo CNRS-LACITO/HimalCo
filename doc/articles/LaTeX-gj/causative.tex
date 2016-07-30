@@ -13,15 +13,15 @@
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}%\usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%\bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{\mbox{#1}}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
 \newcommand{\sg}{\textsc{sg}}
@@ -732,9 +732,9 @@ A scope ambiguity is also observed with the associated motion prefixes \ipa{ɕɯ
   \begin{exe}
 \ex \label{ex:assoc.motion1}
 \gll
-\ipa{wortɕʰi} 	\ipa{ʑo,} 	\ipa{kɯki} 	\ipa{jɤ-tsɯm} 	\ipa{tɕe,} 	\ipa{tʰɯci} 	\ipa{ftɕaka} 	\ipa{kɯra} 	\ipa{tsuku} 	\ipa{ɕ-tɤ-sɯ-χti} \\
-please \textsc{emph} this \textsc{imp}-take.away \textsc{lnk} something thing these some \textsc{transloc-imp-caus}-buy[III] \\
-\glt Please, take this and go to buy something with it. (The raven4 72)
+\ipa{wortɕʰi} 	\ipa{ʑo,} 	\ipa{kɯki} 	\ipa{jɤ-tsɯm} 	\ipa{tɕe,} 	\ipa{tʰɯci} 	\ipa{ftɕaka} 	\ipa{kɯ-ra} 	\ipa{tsuku} 	\ipa{ɕ-tɤ-sɯ-χti} \\
+please \textsc{emph} this \textsc{imp}-take.away \textsc{lnk} something thing \textsc{nmlz}:S/A-have.to some \textsc{transloc-imp-caus}-buy[III] \\
+\glt Please, take this and go to buy the things (we) need with it. (The raven4 72)
   \end{exe} 
 
 
