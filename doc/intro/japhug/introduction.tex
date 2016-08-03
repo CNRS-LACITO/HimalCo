@@ -1,54 +1,21 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
-\usepackage{fontspec}
-\usepackage{natbib}
-\usepackage{booktabs}
-\usepackage{xltxtra} 
-\usepackage{longtable}
-\usepackage{polyglossia}
-\setmainlanguage{french} 
-\usepackage[table]{xcolor}
-\usepackage{gb4e} 
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{textcomp}
-\usepackage{hyperref} 
-\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
-\usepackage[all]{hypcap}
-\usepackage{memhfixc}
-\usepackage{lscape}
- 
+\pagenumbering{roman}
+\begin{flushright}
+\textit{Pour Archimède}
+\end{flushright}
+\begin{bottompar}
+Jacques, Guillaume 2015-2016. \textit{Dictionnaire Japhug-Chinois-Français, version 1.1} \zh{嘉绒-汉-法词典}, Paris: Projet HimalCo. \url{http://himalco.huma-num.fr/}
+\end{bottompar}
 
-%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
- 
-\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newcommand{\bleute}[1]{\cellcolor{green}\textbf{#1}}
-\newcommand{\rouge}[1]{\cellcolor{red}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
-\newcommand{\zh}[1]{{\cn #1}}
-\newcommand{\topic}{\textsc{dem}}
-\newcommand{\tete}{\textsuperscript{\textsc{head}}}
-\newcommand{\rc}{\textsubscript{\textsc{rc}}}
-\newcommand{\ital}[1]{{\normalfont\textit{#1}}}
-\newcommand{\caps}[1]{{\normalfont\textsc{#1}}}
-\XeTeXlinebreaklocale 'zh' %使用中文换行
-\XeTeXlinebreakskip = 0pt plus 1pt %
- %CIRCG
- 
-
-
-\begin{document} 
+\newpage
 \cn
 \section*{\zh{前言}}
 
-这部《嘉绒-汉-法词典》是茶堡嘉绒语的首部词典，收录约6800个词条。茶堡话分布在马尔康县龙尔甲、沙尔宗、大藏三个乡。虽然按照本地人“茶堡”（\ipa{tɕɤpʰɯ}）这一地名不包括龙尔甲乡，但是由于龙尔甲乡的方言与沙尔宗乡和大藏乡区别不大，通话没有任何障碍，所以仍然用“茶堡话”作为三个乡的共同语言的统称。
+这部《嘉绒-汉-法词典》是茶堡嘉绒语的首部词典，收录\total{entrycounter}个词条。茶堡话分布在马尔康县龙尔甲、沙尔宗、大藏三个乡。虽然按照当地人“茶堡”（\ipa{tɕɤpʰɯ}）这一地名不包括龙尔甲乡，但是由于龙尔甲乡的方言与沙尔宗乡和大藏乡区别不大，交流对话没有任何障碍，所以仍然用“茶堡话”作为三个乡的共同语言的统称。
 
-本部词典的编辑工作是语言描写的一部分之一，除此之外笔者还对茶堡话的语法进行了深入的研究（参考向柏霖 \citeyear{jacques08}以及\citealt{jacques12incorp, jacques13tropative, jacques14antipassive,  jacques15spontaneous}, \citeyear{jacques15causative, jacques16relatives}等）并收集了接近80个小时的长篇故事，这些故事的国际音标转写以及语音文件已经在PANGLOSS语料库的网站上发表（\citealt{michailovsky14pangloss}）。笔者在语法研究中借鉴了前辈学者林向荣（\citeyear{linxr93jiarong}）、孙天心（\citeyear{jackson00sidaba, jackson04zhuangmaoci, jackson06paisheng, jackson14morpho}等）、林幼菁和罗尔武（\citeyear{linluo03}）等的研究成果，并从他们的著作和论文中得到了很多启发。
+本部词典的编辑工作是笔者的语言描写计划的其中一个项目，此外笔者还对茶堡话的语法进行了深入的研究（参考向柏霖 \citeyear{jacques08}以及\citealt{jacques12incorp, jacques13tropative, jacques14antipassive,  jacques15spontaneous}, \citeyear{jacques15causative, jacques16relatives}等）并收集了近80个小时的长篇故事，这些故事的国际音标转写以及语音文件已经发表在PANGLOSS语料库的网站上（\citealt{michailovsky14pangloss}）。笔者在语法研究中借鉴了前辈学者林向荣（\citeyear{linxr93jiarong}）、孙天心（\citeyear{jackson00sidaba, jackson04zhuangmaoci, jackson06paisheng, jackson14morpho}等）、林幼菁和罗尔武（\citeyear{linluo03}）等的研究成果，并从他们的著作和论文中得到了很多启发。
 
 
-本词典以龙尔甲乡干木鸟村（\ipa{kɤmɲɯ}）的口音为标准，是作者与陈珍和柏尔青两位老师自2002年长期合作的共同研究成果。
+本词典以龙尔甲乡干木鸟村（\ipa{kɤmɲɯ}）的口音为标准，是笔者与陈珍和柏尔青两位老师自2002年以来至今长期合作的共同研究成果。
 
 词条的一大部分（特别是动词和状貌词的词条）都包含有代表性的例句，很多这些例句是从对话和传统故事中选出来的，并附有语音文件。
 
@@ -99,14 +66,14 @@
 \item \caps{vert} 回归
 \end{itemize}
 
-本词典得到了许多同事的修改意见和建议，作者特别感谢龚勋、彭国珍和张舒娅对初稿的仔细审阅。
-
+本词典得到了许多同行业者的修改意见和建议，笔者特别感谢龚勋、韩哲夫、彭国珍、马振国、米可、沙加尔、帅彦辰和章舒娅对初稿的仔细审阅。
+\newpage
 \normalfont
 \section*{Introduction}
 
 Ce  dictionnaire décrit le lexique de la langue japhug (\ipa{kɯrɯ skɤt}), parlée dans la région de Japhug (\zh{茶堡}, \ipa{tɕɤpʰɯ}) au district de Mbarkhams (\zh{马尔康县}), préfecture de Rngaba (\zh{阿坝州}) au Sichuan en Chine, dans les cantons de Gdongbrgyad (\zh{龙尔甲乡}, \ipa{ʁdɯrɟɤt}), Gsarrdzong (\zh{沙尔宗乡},   \ipa{sarndzu}) de Datshang (\zh{大藏乡}, \ipa{tatshi}).  
 
-Seul le dialecte de Kamnyu (\zh{干木鸟村}, \ipa{kɤmɲɯ}) est représenté dans ce dictionnaire. Cette langue a déjà fait l'objet d'une courte description grammaticale (\citealt{jacques08}) ainsi que d'un recueil d'histoires traditionnelles (\citealt{jacques10gesar}). Un corpus de texte plus important est en cours de publication sur l'archive Pangloss (\citealt{michailovsky14pangloss}). Ces recherches ont bénéficié des travaux précédents sur d'autres langues gyalrong, en particulier la grammaire de \citet{linxr93jiarong}) et les articles de (\citealt{jackson00sidaba, jackson04zhuangmaoci, jackson06paisheng, jackson14morpho} etc), ainsi que du travail de Lin Youjing et Norbu sur le dialecte de Datshang (\citealt{linluo03}).
+Seul le dialecte de Kamnyu (\zh{干木鸟村}, \ipa{kɤmɲɯ}) est représenté dans ce dictionnaire. Cette langue a déjà fait l'objet d'une courte description grammaticale (\citealt{jacques08}) ainsi que d'un recueil d'histoires traditionnelles (\citealt{jacques10gesar}). Un corpus de texte plus important est en cours de publication sur l'archive Pangloss (\citealt{michailovsky14pangloss}). Ces recherches ont bénéficié des travaux précédents sur d'autres langues gyalrong, en particulier la grammaire de \citet{linxr93jiarong} et les articles de Jackson Sun et de Shidanluo (\citealt{jackson00sidaba, jackson04zhuangmaoci, jackson06paisheng, jackson14morpho} etc), ainsi que du travail de Lin Youjing et Norbu sur le dialecte de Datshang (\citealt{linluo03}).
 
 Ce dictionnaire est basé sur les matériaux recueillis à Mbarkhams par l'auteur auprès de Tshendzin (Chenzhen \zh{陈珍}) et Dpalcan (Baierqing \zh{柏尔青}) depuis juillet 2002. Une grande partie des mots, en particulier les verbes et les idéophones, sont illustrés par des exemples enregistrés représentatifs, dont certains proviennent de conversations ou d'histoires traditionnelles.
 
@@ -133,7 +100,7 @@ Les parties du discours des premiers et deuxièmes éléments des prédicats com
 
 Le numéro qui suit \textit{idph} correspond au patron idéophonique (selon la classification décrite dans \citealt{japhug14ideophones}).
 
-Les verbes contiennent après \textit{dir} le ou les préfixes directionnels utilisés pour former les tiroirs verbaux (décrits dans \citealt[267-9]{jacques14linking}). Le symbole \_  est utilisé pour les verbes de mouvement, de manipulation ou d'action concrète compatibles avec les sept séries de préfixes. Pour les verbes irréguliers (tels que \ipa{ɕe} `aller' ou \ipa{ɣɤʑu}  `exister'), les formes non-prévisibles (thème du passé, seconde personne ou générique). 
+Les verbes contiennent après \textit{dir} le ou les préfixes directionnels utilisés pour former les tiroirs verbaux (décrits dans \citealt[267-9]{jacques14linking}). Le symbole \_  est utilisé pour les verbes de mouvement, de manipulation ou d'action concrète compatibles avec les sept séries de préfixes. Pour les verbes irréguliers (tels que \ipa{ɕe} `aller' ou \ipa{ɣɤʑu}  `exister'), les formes non-prévisibles (thème du passé, seconde personne ou générique) sont toutes indiquées. 
 
 Les dérivations verbales sont indiquées par les abréviations suivantes (voir \citealt{jacques12incorp, jacques13tropative, jacques14antipassive,  jacques15spontaneous}, \citeyear{jacques15causative, jacques16relatives}):
 
@@ -157,17 +124,19 @@ Les dérivations verbales sont indiquées par les abréviations suivantes (voir 
 \item \textsc{vert} vertitif
 \end{itemize}
 
-Ce dictionnaire a bénéficié des corrections de nombreux collègues et étudiants, en particulier Gong Xun, Peng Guozhen, Zhang Shuya.
+Ce dictionnaire a bénéficié des corrections de nombreux collègues et étudiants, en particulier Giorgio Arcodia, Gong Xun, Peng Guozhen, Zev Handel, Alexis Michaud, Laurent Sagart, Shuai Yanchen et Zhang Shuya. Je remercie également Rémy Bonnet, Céline Buret, Séverine Guillaume et Thomas Pellard pour leur aide avec les scripts de conversions du format MDF vers \LaTeX.
 
 Ce travail a été financé par le projet ANR HimalCo  (ANR-12-CORP-0006) et est en relation avec le projet de recherche LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ du Labex EFL (fondé par l'ANR/CGI).
 
-
+\newpage
+ \section*{Ordre alphabétique \zh{字母顺序}}
  
- 
+		
+ \ipa{a}  \ipa{b}  \ipa{β}  \ipa{c}  \ipa{ɕ}  \ipa{d}  \ipa{e}  \ipa{ɤ}  \ipa{f}  \ipa{g}  \ipa{ɣ}  \ipa{ɢ}  \ipa{h}  \ipa{i}  \ipa{j}  \ipa{ɟ}  \ipa{k}  \ipa{l}  \ipa{ɬ}  \ipa{m}  \ipa{n}  \ipa{ɲ}  \ipa{ŋ}  \ipa{ɴ}  \ipa{o}  \ipa{p}  \ipa{q}  \ipa{r}  \ipa{ʁ}  \ipa{s}  \ipa{ʂ}  \ipa{t}  \ipa{u}  \ipa{ɯ}  \ipa{w}  \ipa{x}  \ipa{χ}  \ipa{y}  \ipa{z}  \ipa{ʐ}  \ipa{ʑ} 		
 
 %\bibliographystyle{unified}
 %\bibliography{bibliogj}
-
+%\newpage
 \begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
@@ -214,11 +183,11 @@ Jacques, Guillaume. to appear{(\natexlab{a})}.
 \newblock {S}ubjects, objects and relativization in {J}aphug.
 \newblock \emph{Journal of Chinese Linguistics} .
 
-\bibitem[{Jacques(to appear{(\natexlab{b})})}]{jacques15causative}
-Jacques, Guillaume. to appear{(\natexlab{b})}.
+\bibitem[{Jacques(2015{\natexlab{b}})}]{jacques15causative}
+Jacques, Guillaume. 2015{\natexlab{b}}.
 \newblock {T}he origin of the causative prefix in {R}gyalrong languages and its
   implication for proto-{S}ino-{T}ibetan reconstruction.
-\newblock \emph{Folia Linguistica Historica} .
+\newblock {\em Folia Linguistica Historica\/} 36:165–198.
 
 \bibitem[{Jacques(to appear{(\natexlab{c})})}]{jacques15spontaneous}
 Jacques, Guillaume. to appear{(\natexlab{c})}.
@@ -281,5 +250,6 @@ Sun, Jackson T.-S. \& Shidanluo. 2004.
 
 \end{thebibliography}
 
-
-\end{document}
+\cleardoublepage
+\pagenumbering{arabic}
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
