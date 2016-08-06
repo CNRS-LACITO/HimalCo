@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -19,7 +19,7 @@
  \newcommand{\ipab}[1]{{\phon \mbox{#1}}} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
-\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\zh}[1]{{\cn#1}}
 
  
 \begin{document} 
@@ -39,7 +39,7 @@ This paper deals with the system of AM in the Manchu language, and focuses on th
 This paper comprises three sections. First, we present an overview of previous studies of AM, MVC and valency-increasing morphemes in the literature. Second, we provide a detailed description of AM in Manchu on the basis of a philological investigation of authentic early Manchu texts from the XVII-XVIII centuries (excluding translated documents). Third, we investigate how the commonalities and differences in the use of AM in Manchu and other languages such as Japhug can be account for by differences in grammaticalization pathways.
 
 \section{Associated motion}
-In this section, we present three typological questions that deserve to be treated when describing any AM system: the parameters of the AM system, the semantic difference between AM markers and their MVC equivalent, and the interaction between AM and derivational morphemes such as the cuasative.
+In this section, we present three typological questions that deserve to be treated when describing any AM system: the parameters of the AM system, the semantic difference between AM markers and their MVC equivalent, and the interaction between AM and derivational morphemes such as the causative.
 
 \subsection{Parameters}
 In languages with complex AM systems such as Tacanan and Pama-Nyungan, \citet[8]{guillaume16am} identifies three main parameters parameters: \textsc{path} (cislocative, translocative, circumambulative etc),  \textsc{temporal relation} (prior, concurrent, subsequent motion) and moving argument (S/A vs O). 
@@ -145,7 +145,7 @@ Textual analysis\footnote{Our corpus includes three narrative texts, two of them
 As we saw in section \ref{sec:japhug.am.mvc}, an easily detectable difference between AM and MVC is observed in languages such as Japhug. In past perfective forms of the MVC ‘X went to do’, the motional event (‘go’) is understood as completed, but the completion of the main event (‘do’) is left unspecified. The corresponding form with AM markers however, implies that both motional and main events are completed (‘X went and did’). 
 
 
-There is some evidence that this semantic difference is also found in Manchu. While elicitation is not possible since Classical Manchu is an extinct language,\footnote{The only surviving descendant of seventeenth century Manchu, Sibe, also has AM, but this would require a separate paper. } its extensive text corpus makes it possible to some extent to ascertain fine semantic differences between common constructions.
+There is some evidence that this semantic difference is also found in Manchu. While elicitation is not possible since Classical Manchu is an extinct language,\footnote{The only surviving descendant of seventeenth century Manchu, Sibe, also has AM, but this would require a separate paper. Moreover, \citet[178]{zikmundova13sibe} argues that, in reference to -\ipa{na-}, \ipa{-nji-} and several other derivational suffixes, they `[...] are fixed in particular verbal forms and are not recognized by native speakers with the exception of those educated in Manchu grammar' suggesting that it may be difficult to elicit minimal pairs as in languages such as Japhug, where AM prefixes are not lexicalized. } its extensive text corpus makes it possible to some extent to ascertain fine semantic differences between common constructions.
 
 In the following, we present a series of examples of verbs with AM in past forms (with either the past \ipa{-ha/-he} or the perfective converb \ipa{-fi}) showing that both the motion event and the action of the main verb have taken place. In (\ref{ex:maktanaha}) the motion event is backgrounded and that the translator did not include it in their renditions of the passage.
 
@@ -172,8 +172,8 @@ By contrast, the MVC in perfective form as in (\ref{ex:efuleme}) is used when on
 \begin{exe}
 \ex \label{ex:efuleme}
 \gll
- \ipa{boo} 	\ipa{be} 	\ipa{efule-me} 	\ipa{gene-fi} 	\ipa{.} 	\ipa{hoton-i} 	\ipa{hûlha} 	\ipa{de} 	\ipa{ilan} 	\ipa{tanggû} 	\ipa{fungeme} 	\ipa{meite-bu-he} \\
- house \textsc{acc} destroy-\textsc{ipfv.conv} go-\textsc{pfv.conv} { } city-\textsc{gen} rebel \textsc{dat} three hundred XX cut.off-\textsc{pass-pst} \\
+ \ipa{boo} 	\ipa{be} 	\ipa{efule-me} 	\ipa{gene-fi} 	\ipa{.} 	\ipa{hoton-i} 	\ipa{hûlha} 	\ipa{de} 	\ipa{ilan} 	\ipa{tanggû} 	\ipa{funce-me} 	\ipa{meite-bu-he} \\
+ house \textsc{acc} destroy-\textsc{ipfv.conv} go-\textsc{pfv.conv} { } city-\textsc{gen} rebel \textsc{dat} three hundred be.over-\textsc{ipfv.conv} cut.off-\textsc{pass-pst} \\
  \glt ‘When they went to pull down the houses [to get the timber], over 300 of them were cut off [and captured] by the rebels inside the city’ (\citealt[69/97]{cosmo06dzengseo})
 \end{exe}
 
@@ -292,7 +292,7 @@ first six \textsc{loc} Ganduhai lower official-\textsc{pl} horse-\textsc{gen} nu
 \glt `On the sixth Ganduhai and his lower officers thoroughly checked the number of the horses. The Department Magistrate of the Binzhou district reported repeatedly that Ma Chengyin had rebelled.' (\citealt[88/47]{cosmo06dzengseo})
 \end{exe}
 
-Sibe went further than Classical Manchu in this regard. As pointed out by \citet[156]{zikmundova13sibe}, en MVC are partially grammaticalized in some contexts and have lost motional semantics, as show by example \ref{sex:sibe}, where the verb \ipa{ji-} `come' has become an aspectual marker.
+Sibe went further than Classical Manchu in this regard. As pointed out by \citet[156]{zikmundova13sibe}, MVC are partially grammaticalized in some contexts and have lost motional semantics, as show by example \ref{sec:sibe}, where the verb \ipa{ji-} `come' has become an aspectual marker.
 
 \begin{exe}
 \ex \label{sec:sibe}
@@ -317,9 +317,12 @@ get down’& to descend (from a deity)’\\
  \ipa{wasi-} ‘to go down’ & \ipa{wasi-nji-} ‘to come down; to descend’\\
  \ipa{hafu-} ‘to communicate’ & \ipa{hafu-nji-} ‘to come (straight) through’ \\
  & \ipa{hafu-na-} ‘to connect with’\\
+ \ipa{aca-} `meet' &  \ipa{aca-na-} `go to meet; suit, fit' \\
  \bottomrule
 \end{tabular}
 \end{table}
+
+
 
 \begin{exe}
 \ex 
@@ -329,21 +332,21 @@ get down’& to descend (from a deity)’\\
 \end{exe}
 
 
-\begin{exe}
-\ex 
-\gll
-\ipa{se-he} 	\ipa{manggi} 	\ipa{enduri} 	\ipa{sargan} 	\ipa{jui} 	\ipa{wasinji-fi} 	\ipa{imcan} 	\ipa{be} 	\ipa{bira-de} 	\ipa{sinda-fi} 	\ipa{nisan} 	//	\ipa{saman} 	\ipa{be} 	\ipa{doo-bu-ha.} \\
-say-\textsc{pst} after spirit female son descend-\textsc{pfv.conv} shaman.drum \textsc{acc} river-\textsc{loc} put-\textsc{pfv.conv} Nisan { } shaman \textsc{acc} cross-\textsc{caus-pst} \\
-\glt `After having said (this), the spirit of the girl descended, put the shaman-drum in the river and help Nisan shaman to cross it.' (\citealt[80,15a-15b/111]{jaxontov93nisan})
-\end{exe}
+%\begin{exe}
+%\ex 
+%\gll
+%\ipa{se-he} 	\ipa{manggi} 	\ipa{enduri} 	\ipa{sargan} 	\ipa{jui} 	\ipa{wasinji-fi} 	\ipa{imcan} 	\ipa{be} 	\ipa{bira-de} 	\ipa{sinda-fi} 	\ipa{nisan} 	//	\ipa{saman} 	\ipa{be} 	\ipa{doo-bu-ha.} \\
+%say-\textsc{pst} after spirit female son descend-\textsc{pfv.conv} shaman.drum \textsc{acc} river-\textsc{loc} put-\textsc{pfv.conv} Nisan { } shaman \textsc{acc} cross-\textsc{caus-pst} \\
+%\glt `After having said (this), the spirit of the girl descended, put the shaman-drum in the river and help Nisan shaman to cross it.' (\citealt[80,15a-15b/111]{jaxontov93nisan})
+%\end{exe}
 
-\begin{exe}
-\ex 
-\gll
-{\ipa{giyoo} 	\ipa{sui} 	\ipa{jeo}} 	\ipa{.} 	{\ipa{yûn} 	\ipa{nan}} 	\ipa{.} 	{\ipa{gui} 	\ipa{jeo}} 	\ipa{.} 	\ipa{sycuwan-i} 	\ipa{jugûn} 	\ipa{hafu-nji-ha} 	\ipa{oyonggo} 	\ipa{hoton} 	\ipa{seme} 	\ipa{dobori} 	\ipa{meni} 	\ipa{uju} 	\ipa{meyen-i} 	\ipa{cooha} 	\ipa{be} 	\ipa{unggi-he} 	\\
-Jiaoshui { } Yunnan { } Guizhou { } Sichuan road communicate-\textsc{pst} important city.wall because night \textsc{1sg}:\textsc{gen} head section-\textsc{gen} soldier \textsc{acc} dispatch-\textsc{pst} \\
-\glt `Because Jiaoshui is an important city on the routes to (lit. ‘that communicates straight with’) Yunnan, Guizhou, and Sichuan, [the Field Marshal] ordered my first squadron’s soldiers to go there at night.' (\citealt[95/65]{cosmo06dzengseo})
-\end{exe}
+%\begin{exe}
+%\ex 
+%\gll
+%{\ipa{giyoo} 	\ipa{sui} 	\ipa{jeo}} 	\ipa{.} 	{\ipa{yûn} 	\ipa{nan}} 	\ipa{.} 	{\ipa{gui} 	\ipa{jeo}} 	\ipa{.} 	\ipa{sycuwan-i} 	\ipa{jugûn} 	\ipa{hafu-nji-ha} 	\ipa{oyonggo} 	\ipa{hoton} 	\ipa{seme} 	\ipa{dobori} 	\ipa{meni} 	\ipa{uju} 	\ipa{meyen-i} 	\ipa{cooha} 	\ipa{be} 	\ipa{unggi-he} 	\\
+%Jiaoshui { } Yunnan { } Guizhou { } Sichuan road communicate-\textsc{pst} important city.wall because night \textsc{1sg}:\textsc{gen} head section-\textsc{gen} soldier \textsc{acc} dispatch-\textsc{pst} \\
+%\glt `Because Jiaoshui is an important city on the routes to (lit. ‘that communicates straight with’) Yunnan, Guizhou, and Sichuan, [the Field Marshal] ordered my first squadron’s soldiers to go there at night.' (\citealt[95/65]{cosmo06dzengseo})
+%\end{exe}
 
 \begin{exe}
 \ex 
@@ -353,6 +356,17 @@ two three place-\textsc{abl} spring flow-\textsc{ipfv.conv} go.out-\textsc{pfv.c
 ‘from two or three places springs flowed and a small pond was formed.’ (\citealt[68;14b]{shunjuu64tulishen})
 \end{exe}
 
+Some verbs with an AM marker such as \ipa{acana-} `suit' (example \ref{ex:acanarakuu}) have lost any trace of motional meaning.
+
+\begin{exe}
+\ex \label{ex:acanarakuu}
+\gll
+\ipa{niyalma} 	\ipa{takûra-fi} 	\ipa{bene-bu-fi,} 	\ipa{meni} 	\ipa{gurun} 	\ipa{i} 	\ipa{doro} 	\ipa{de } 	\ipa{acana-rakû} \\
+man delegate-\textsc{pfv.conv} send-\textsc{caus}-\textsc{pfv.conv} \textsc{1pl:gen} country \textsc{gen} rite \textsc{dat} suit-\textsc{neg} \\
+\glt  'One person was sent in delegation, (but) he does not comply with our laws and customs' (\citealt[XXX]{shunjuu64tulishen})
+\end{exe} 
+
+
 These examples show that Manchu AM is a derivation, unlike AM in languages such as Japhug, where it is clearly inflectional morphology, with no cases of lexicalized AM markers.\footnote{The only potential case of lexicalization AM marker in Japhug is the verb `fetch', which is peculiar in requiring the presence of a AM prefix (\citealt[210]{jacques13harmonization}). However, we do not find any example of an AM prefix modifying the verb's meaning in an unpredictable way.}
 
 
@@ -361,17 +375,68 @@ These examples show that Manchu AM is a derivation, unlike AM in languages such 
 
 
 
-\section{The grammaticalization of AM} \label{sec:grammaticalization}
+\section{The grammaticalization of AM in Manchu and Tungusic} \label{sec:grammaticalization}
 %serial verb construction vs purposive complement
 %inflectional vs derivational morphology
 %which is the most grammaticalized?
-Since AM is mainly attested in languages families whose history is poorly attested, the crosslinguistic study of the origins of AM is still a domain in infancy.
+Since AM is mainly attested in languages families whose history is poorly attested, the study of the diachronic origins of AM is still a domain in infancy.
 
-\citet{heine-kuteva02}
+A crosslinguistically common source of AM markers are motion verbs such as `come' and `go' (\citealt[70;155]{heine-kuteva02}). \citet{jacques14inverse} also suggest that AM is an intermediate stage in the grammaticalization pathway from a motion verb `come' to inverse marker, as attested in several languages:
+
+\begin{exe}
+\ex\label{ex:cisloc}
+\glt  \textsc{come} $\rightarrow$   \textsc{cislocative}_{\textit{associated motion}} $\rightarrow$  \textsc{cislocative} _{\textit{directional}} $\rightarrow$  \textsc{inverse} (1/2 person patient)
+\end{exe}
+
+\citet{konnerth15cisloc} argues that a grammaticalization pathway occurred in the opposite direction in Karbi, namely that the second person pronoun became an AM marker. This hypothesis, which contradicts the unidirectionality of the pathway in (\ref{ex:cisloc}), needs to be confirmed by further study on the comparative phonology and morphology of the Karbi languages and its neighbors. If confirmed, it would provide a possible origin of AM markers distinct from motion verbs.
+
+The grammaticalization from motion verb to AM marker results from the coalescence of the motion  verb and the action verb in a construction where both occur. In some languages such as Japhug, it can be shown that the ancestor of the AM construction was not a MVC (in which the action verb is in a purposive complement), but rather a serial verb construction in which both verbs were in finite form and shared the same TAM and person markers (see \citealt{jacques13harmonization}). In other languages, including Manchu (and some cited by \citealt[70;155]{heine-kuteva02}), AM derives from the corresponding MVC.
+
+In Manchu, the grammaticalization of \ipa{-nji} and \ipa{-na/-ne} must be discussed separately.
+
+\subsection{The cislocative \ipa{-nji} }
+The cislocative \ipa{-nji} suffix is a Manchu innovation, found in Classical Manchu and modern varieties, including Sibe, but absent from other Tungusic languages and even Jurchen, though in the latter this may be due to the scarcity of documents left in that language.
+
+All references works on Manchu (XXX) agree that \ipa{X-nji} results from the coalescence of the imperfective converb \ipa{X-me} with the verb \ipa{ji-} `give'. Apocope of the vowel \ipa{-e-} is attested in Manchu in XXX, and the assimilation of the *\ipa{m} to the following \ipa{j} is also found (CORRECT IF WRONG; ADD DATA IF APPROPRIATE)
+
+There are however fossilized AM verbs in Manchu combining \ipa{ji-} `come' with another verb root without any nasal element between them, as for instance \ipa{gaji-} `bring' from a verb root *\ipa{ga-} not attested on its own but found in the corresponding translocative form \ipa{gana-} `fetch, to go to get' and in the verbs \ipa{gama-} `take' and  \ipa{gai-} `take away'. XXX
 
 
-\citet{konnerth15cisloc} argues that grammaticalization occurred the other way round in Karbi, namely that the second person pronoun became an AM marker. This hypothesis, which strongly contradicts the unidirectionality of the pathway in XXX, needs to be confirmed by further study on the comparative phonology and morphology of the Karbi languages and its neighbours.
+\subsection{The translocative \ipa{-na/-ne} }
+Unlike \ipa{-nji}, the Manchu translocative \ipa{-na/-ne} is a suffix of proto-Tungusic pedigree, attested in all other Tungusic languages, where it however has both cislocative and translocative functions, as shown by the following examples from Udihe:
 
+\begin{exe}
+\ex 
+\gll \ipa{weisi-ne-je-fie} \\
+rescue-\textsc{dir-subj-1pl.in} \\
+\glt ‘Let us go to rescue (him).’ (\citealt[47]{nikolaeva01udihe})
+\end{exe}
+
+\begin{exe}
+\ex 
+\gll \ipa{jekpu-ne-y} \ipa{jeu}. \\
+eat-\textsc{dir-imp.2sg} food \\
+\glt ‘Come to eat some food!’ (\citealt[122]{nikolaeva01udihe})
+\end{exe}
+
+There is no comparable MVC in this language with a verb in imperfective converbial form (CORRECT IF WRONG); rather, coordinated finite verb forms are used, as in (\ref{ngenejefi}).
+
+\begin{exe}
+\ex \label{ngenejefi}
+\gll 
+\ipa{Wee-tigi} 	\ipa{ŋene-je-fi} 	\ipa{seutigi} 	\ipa{diga-na-ja-fi} \\
+forest-\textsc{lat} go-\textsc{subj-1pl.in} nut eat--\textsc{dir-subj-1pl.in} \\
+\glt ‘Let us go to the forest and eat some nuts.’ (\citealt[121]{nikolaeva01udihe})
+\end{exe}
+
+While the MVC construction combining the action verb in imperfective converbial form with the motion verb only exists in Manchu, there is evidence that the construction *\ipa{X-ma ŋänä-} from which Manchu \ipa{X-me gene-} `go to X' did exist in proto-Tungusic, and is indirectly reflected outside of Manchu as a future suffix *\ipa{-ŋaa} (\citealt[64++]{fuente11tungusic}).
+
+
+Supposing a pathway such as \ipa{-na/-ne} $\leftarrow$ \ipa{-me gene-} would thus be anachronistic. Besides, since *\ipa{-ma ŋänä-} yields \ipa{-ŋaa} in languages other than Manchu, it is not possible to suppose that the AM suffix *\ipa{-nä-} was grammaticalized from *\ipa{-ma ŋänä-} in proto-Tungusic.
+
+From the data at hand, two hypotheses are possible. First, proto-Tungusic *\ipa{-nä-} could be grammaticalized from the verb *\ipa{ŋänä-} `go', possibly through a coordinated construction rather than a MVC with purposive complement. (CORRECT IF WRONG)
+
+Second, the verb *\ipa{ŋänä-} `go' could be a frozen translocative from a root *\ipa{ŋä-}. In this case, the origin of AM suffix *\ipa{-nä-} might not be recoverable by either the comparative method or internal reconstruction.
 
 \section{Conclusion}
 
