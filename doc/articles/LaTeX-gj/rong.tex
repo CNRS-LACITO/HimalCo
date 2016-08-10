@@ -8,6 +8,7 @@
 \usepackage{tangutex4} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
+\usepackage{newicktree}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -17,27 +18,18 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
-\usepackage{newicktree}
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
-%%%%%%%%%quelques options de style%%%%%%%%
-%\setsecheadstyle{\SingleSpacing\LARGE\scshape\raggedright\MakeLowercase}
-%\setsubsecheadstyle{\SingleSpacing\Large\itshape\raggedright}
-%\setsubsubsecheadstyle{\SingleSpacing\itshape\raggedright}
-%\chapterstyle{veelo}
-%\setsecnumdepth{subsubsection}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
-\renewcommand \thesection {\arabic{section}.}
-\renewcommand \thesubsection {\arabic{section}.\arabic{subsection}.}
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
-\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
-\newcommand{\wav}[1]{#1.wav}
+\newcommand{\forme}[2]{\ipa{#1} `#2'}
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
 \newcommand{\tgz}[1]{\mo{#1} \tg{#1}}
 \newcommand{\ra}{$\Sigma$} 
 \XeTeXlinebreaklocale "zh" %使用中文换行
@@ -64,9 +56,9 @@ The question of the antiquity of agreement morphology in Sino-Tibetan is not ind
  \begin{tabular}{l|l|l|l|}
   &1O&2O&3O\\
  \hline
-1A & 	\grise{} & 	\ra{}-na & 	\ra{}-uŋ \\ 
-2A & 	tɨ-\ra{}-ŋa & 	\grise{}	 & 	tɨ-\ra{}-u \\ 
-3A & 	ɨ-\ra{}-ŋa & 	tɨ-\ra{} & 	\ra{}-u \\ 
+1A & 	\grise{} & 	\ipa{\ra{}-na} & 	\ipa{\ra{}-uŋ} \\ 
+2A & 	\ipa{tɨ-\ra{}-ŋa} & 	\grise{}	 & 	\ipa{tɨ-\ra{}-u} \\ 
+3A & 	\ipa{ɨ-\ra{}-ŋa} & 	\ipa{tɨ-\ra{}} & 	\ipa{\ra{}-u} \\ 
  \hline
 \end{tabular}
 \end{table}
@@ -76,9 +68,9 @@ The question of the antiquity of agreement morphology in Sino-Tibetan is not ind
  \begin{tabular}{l|l|l|l|}
   &1O&2O&3O\\
  \hline
-1A & 	\grise{} & 	ta-\ra{}-n & 	\ra{}-ŋ \\ 
-2A & 	kə-w-\ra{}-ŋ & 	\grise{}	 & 	tə-\ra{}-w \\ 
-3A & 	wə-\ra{}-ŋ & 	tə-w-\ra{} & 	\ra{}-w / wə-\ra{}\\ 
+1A & 	\grise{} & 	\ipa{ta-\ra{}-n} & 	\ipa{\ra{}-ŋ} \\ 
+2A & 	\ipa{kə-w-\ra{}-ŋ} & 	\grise{}	 & 	\ipa{tə-\ra{}-w} \\ 
+3A & 	\ipa{wə-\ra{}-ŋ} & 	\ipa{tə-w-\ra{}} & 	\ipa{\ra{}-w} / \ipa{wə-\ra{}} \\ 
  \hline
 \end{tabular}
 \end{table}
@@ -91,9 +83,10 @@ The  disagreement lies elsewhere: while van Driem and DeLancey propose that Rgya
   \small
   \setunitlength{20cm} \righttree \nobranchlengths \nodelabelformat{}
   \drawtree{((Dulong/Rawang:0.07,Kiranti:0.07,Kham:0.07):0.05,Rgyalrong:0.12):0.3[Rung],Qiangic:0.42;}
-  \par %\scalebar[0.1]
+  \par \scalebar[0.1]
 \end{newicktree}
 \end{figure}
+XXXX
 
 Unlike many works on language classification in the Sino-Tibetan family, LaPolla's tree is specifically based on   common innovations. The Rung branch is defined as containing the languages that have the set of suffixes indicated in Table (\ref{tab:rung1}).\footnote{While the proto-Kiranti forms in this table appear to be based on  work such as \citet{driem93agreement}, it is unclear how the ``proto-Rgyalrong" forms  were arrived at; the verbal agreement suffix in Rgyalrong languages present highly irregular correspondences (see \citealt{gongxun14agreement}) and their reconstruction is by no means trivial. } According to LaPolla, the Rgyalrong group diverged from the rest as it did not develop the reflexive/middle suffix found in Dulong, Kiranti and West Himalayish.
 
@@ -119,7 +112,7 @@ The purpose of this paper is to evaluate LaPolla's claim, using first-hand data 
 
 \section{Internal logic of the arguments}
 
-If only verbal affixes are taken into account,  both \citet{lapolla03}'s Rung hypothesis and the proto-Sino-Tibetan Agreement System hypothesis (henceforth PSTAS) appear equally probable (or improbable). 
+If only verbal affixes are taken into account,  both LaPolla's (\citeyear{lapolla03}) Rung hypothesis and the proto-Sino-Tibetan Agreement System hypothesis (henceforth PSTAS) appear equally probable (or improbable). 
 
 The main weakness of the PSTAS hypothesis is that it necessarily assumes that all languages without agreement or with an agreement system obviously unrelated to that of Rgyalrong and Kiranti must have lost it without trace. While total loss of morphology is a well-attested phenomenon especially in the case of intense language contact (see  \citealt{delancey10replacement} for instance and the references therein), the assumption that such a feature disappeared in most languages of the family can appear to be highly unparsimonious.
 
@@ -146,22 +139,22 @@ The PSTAS on the other hand is not committed to any particular classification sc
 
 In this paper, we will focus mainly on two languages classified under Rung (Japhug Rgyalrong and the Kiranti language Khaling), and compare these to Tibetan and Chinese. The Rung hypothesis predicts that we should find common innovations between Rgyalrong and Kiranti without cognates elsewhere, while the PSTAS hypothesis predicts that no such common innovation exist.
 
-In all his articles in defense of the Rung hypothesis, \citet{lapolla14subgrouping} only cites one possible lexical innovation: the verb ``to sit, to live", in Dulong \ipa{rùŋ}, Belhare \ipa{yuŋ}. However, this particular item has no cognate in Rgyalrong, so it is not relevant to the present discussion.
+In all his articles in defense of the Rung hypothesis, \citet{lapolla13subgrouping} only cites one possible lexical innovation: the verb ``to sit, to live", in Dulong \ipa{rùŋ}, Belhare \ipa{yuŋ}. However, this particular item has no cognate in Rgyalrong, so it is not relevant to the present discussion.
 
-This work is based on the forthcoming Khaling verb dictionary, which contains 648 basic verb roots, from which reflexive and bipartite verbs can be built (the total number of verbs is about the double of that figure). We focused exclusively on verbs, because these are known to be more resistant to borrowing that nouns, and because the intricate verbal inflexions allow to undertake internal reconstruction and arrive at a root closer to the proto-Kiranti form that the surface forms (see \citealt{jacques12khaling}). Since nominal morphology in Khaling presents few alternations, such internal reconstruction is not possible for nouns, and also most nouns are opaque compounds which are quite tricky to etymologize.
+This work is based on \citet{jacques15khaling}, which contains 648 basic verb roots, from which reflexive and bipartite verbs can be built (the total number of verbs is about the double of that figure). We focused exclusively on verbs, because these are known to be more resistant to borrowing that nouns, and because the intricate verbal inflections allow to undertake internal reconstruction and arrive at a root closer to the proto-Kiranti form that the surface forms (see \citealt{jacques12khaling}). Since nominal morphology in Khaling presents few alternations, such internal reconstruction is not possible for nouns, and also most nouns are opaque compounds which are quite tricky to etymologize.
 
-Of the 648 verb roots, only 44 have cognates in either Japhug, Tibetan or Chinese; these data are presented in Table \ref{tab:cognates}. Verbs with cognates in other branches or in other Kiranti languages have not been included, as they would not be relevant to testing the Rung hypothesis. The Japhug data come from the author's unpublished Japhug dictionary which comprises more than 2000 verbs.
+Of the 648 verb roots, only 44 have cognates in either Japhug, Tibetan or Chinese; these data are presented in Table \ref{tab:cognates}. Verbs with cognates in other branches or in other Kiranti languages have not been included, as they would not be relevant to testing the Rung hypothesis. The Japhug data come from \citet{jacques16japhug} which comprises more than 2000 verbs.
 
-Chinese is quoted in Middle Chinese, using a modified version of \citet{baxter92}'s Middle Chinese transcription. 
+Chinese is quoted in Middle Chinese, using a modified version of Baxter's (\citeyear{baxter92}) Middle Chinese transcription. 
 The reference number in either Proto-Lolo-Burmese (\citealt{bradley79}) other non-Rung branches of Sino-Tibetan (citing reference numbers from the STEDT) is indicated when appropriate. Tibetan loanwords in Japhug Rgyalrong are indicated between brackets.
 
 A few doubtful comparisons have been included, these are marked with a question mark in column 6. These include the following:
 
 \begin{itemize}
-\item Khaling |noŋt| ``accuse" and Tibetan \ipa{noŋs} ``be in error" (see \citealt{hill08moriendi} on the uses of the latter verb) differ in meaning, but in the Khaling form the additional \ipa{--t} is most probably the applicative, so that it is legitimate to posit at an earlier stage a intransitive verb *|noŋ| ``be wrong" derived through the applicative as ``consider to be wrong" (tropative value of the applicative), hence ``accuse".
-\item Khaling |pu| ``to dry on smoke" can correspond to the intransitive stative verb \ipa{spɯ} ``be dry" in Japhug and its Naish cognate *Spu (\citealt{jacques.michaud11naish}), but in this case it must be a causative derivation. 
-%Alternatively, it could be compared to Japhug \ipa{pu} $\leftarrow$ *\ipa{po}  `cook in ashes, burn'.
-\item It is unclear whether Khaling |tʰo| ``to see" corresponds to Tibetan \ipa{lta} ``look" or \ipa{tʰos} ``hear" (which would fit better the phonology), or to neither.
+\item Khaling \dhatu{noŋt}{accuse} and Tibetan \forme{noŋs}{be in error} (see \citealt{hill08moriendi} on the uses of the latter verb) differ in meaning, but in the Khaling form the additional \ipa{--t} is most probably the applicative, so that it is legitimate to posit at an earlier stage a intransitive verb *|noŋ| ``be wrong" derived through the applicative as ``consider to be wrong" (tropative value of the applicative), hence ``accuse".
+\item Khaling \dhatu{pu}{to dry on smoke} can correspond to the intransitive stative verb \forme{spɯ}{be dry} in Japhug and its Naish cognate *\ipa{Spu} (\citealt{jacques.michaud11naish}), but in this case it must be a causative derivation. 
+Alternatively, it could be compared to Japhug \ipa{pu} $\leftarrow$ *\ipa{po}  `cook in ashes, burn'.
+\item It is unclear whether Khaling \dhatu{tʰo}{to see} corresponds to Tibetan \forme{lta}{look} or \forme{tʰos}{hear} (which would fit better the phonology), or to neither.
 \end{itemize}
 
 
@@ -172,7 +165,7 @@ A few doubtful comparisons have been included, these are marked with a question 
 \toprule
 Khaling&&meaning&LB&STEDT&& Tibetan&Japhug&&Chinese\\
 \midrule
-\ipa{bher}   &  	vi   &  	fly   &  	\tiny 399   &  	\tiny 2189, 2580   &  	    &  	\ipa{ɴpʰur}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
+\ipa{bʰer}   &  	vi   &  	fly   &  	\tiny 399   &  	\tiny 2189, 2580   &  	    &  	\ipa{ɴpʰur}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
 \ipa{bi}   &  	vt   &  	give   &  	\tiny 191   &  	\tiny 2556   &  	   &  	\ipa{sbʲin}   &  	\ipa{mbi}   &  	\zh{畀}   &  	\ipa{pjijH}   \\  		
 \ipa{dʰum}   &  	vi   &  	be in good terms   &  	\tiny    &  	\tiny    &  	   &  	\ipa{ɴdum}   &  	\ipa{}   &  	\zh{}   &  	\ipa{}   \\  		
 \ipa{dzA}   &  	vt   &  	eat   &  	\tiny 440   &  	\tiny 36   &  	   &  	\ipa{za}   &  	\ipa{ndza}   &  	\zh{}   &  	\ipa{}   \\  		
@@ -219,8 +212,7 @@ Khaling&&meaning&LB&STEDT&& Tibetan&Japhug&&Chinese\\
 \end{tabular}}
 \end{table}
 
-From this table, we observe that only one verb is exclusively shared between Rgyalrong and Kiranti: Khaling |pʰer| ``to flap wings" and Japhug \ipa{sɤpʰɤr} ``to brush off, to flap wings". However, the value of this comparison is somehow lowered by the 
-onomatopoeic character of this verb root; it is unclear whether this root should actually be reconstructed.  
+From this table, we observe that only one verb is exclusively shared between Rgyalrong and Kiranti: Khaling \dhatu{pʰer}{to flap wings} and Japhug \forme{sɤpʰɤr}{to brush off, to flap wings}. However, the value of this comparison is somehow lowered by the onomatopoeic character of this verb root; it is unclear whether this root should actually be reconstructed.  
  
 
 Isolated examples of exclusively shared vocabulary are useless for subgrouping; there is no way to know whether these are innovations or rather retention from the proto-language. However, there is no exclusively shared vocabulary between Rgyalrong and Kiranti that could even potentially be regarded as common innovations, and the lexicon thus offers no positive evidence for the Rung hypothesis.
@@ -234,9 +226,7 @@ Isolated examples of exclusively shared vocabulary are useless for subgrouping; 
 
 
 
- 
 
-
-\bibliographystyle{linquiry2}
+\bibliographystyle{unified}
 \bibliography{bibliogj}
 \end{document}
