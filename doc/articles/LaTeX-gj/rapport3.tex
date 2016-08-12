@@ -10,6 +10,7 @@
 \setdefaultlanguage{french} 
 \usepackage[table]{xcolor}
 \usepackage{multirow}
+\usepackage{newicktree}
 \usepackage{gb4e} 
 \usepackage{graphicx}
 \usepackage{float}
@@ -19,7 +20,7 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{makecell}
-\usepackage{newicktree}
+
 
 \bibpunct[~: ]{(}{)}{,}{a}{}{,}
 %%%%%%%%%quelques options de style%%%%%%%%
@@ -34,12 +35,12 @@
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} %ici on définit la police par défaut du texte
 
 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
 \newcommand{\ipac}[1]{{\tiny #1}}
-\newcommand{\ipapl}[1]{{\phondroit #1}} 
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\ipapl}[1]{{\phondroit\textbf{#1}}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
 \newcommand{\grec}[1]{{\mleccha #1}}
@@ -1039,7 +1040,7 @@ Pour cette raison, les données internes au kiranti permettent de supposer un an
 Bien que la phonologie de ces langues soit imparfaitement comprise et qu’une étude rigoureuse complète des lois phonologiques soit encore hors de notre portée, ces travaux ont montré que la morphologie reconstructible en proto-sino-tibétain est sans doute plus riche qu’on ne l’admet habituellement, et que d’autres paradigmes irréguliers attendent d’être mis en évidence. Ce travail est également le premier dans lequel l’argument des irrégularités partagées est utilisé pour justifier une reconstruction dans la famille sino-tibétaine. Jusqu’ici, tous les chercheurs dans ce domaine ont proposé des reconstructions basées sur la morphologie régulière dans chacune des langues étudiées. Or, cette manière de procéder présente un retard important sur la linguistique historique telle que la pratiquent les indo-européanistes. En effet, ceux-ci, conformément au principe élaboré par Meillet, se refusent à proposer des reconstructions lorsque les formes comparées sont productives et transparentes dans toutes les langues étudiées. 
 
 
-	Dans tous mes travaux sur ce sujet, j’ai cherché à appliquer au sino-tibétain la méthode comparative avec le même degré de rigueur qu’elle l’est dans les travaux sur les langues indo-européennes. Du fait du manque de langues anciennes à la littérature accessible, l’étude comparée du sino-tibétain est une entreprise plus complexe que celle de l’indoeuropéen, mais grâce à l’afflux de nouvelles descriptions fiables de langues sino-tibétaines anciennes et modernes, c’est un domaine qui va connaître des avancées importantes dans les années à venir. Mon point de vue sur les possibilités futures de développement du sino-tibétain est exposé dans \citet{jacques2012genetic}. Je pense que ce sont avant tout les langues modernes, surtout les langues rgyalrong et kiranties, qui vont permettre de reconstruire le système de la proto-langue. 
+	Dans tous mes travaux sur ce sujet, j’ai cherché à appliquer au sino-tibétain la méthode comparative avec le même degré de rigueur qu’elle l’est dans les travaux sur les langues indo-européennes. Du fait du manque de langues anciennes à la littérature accessible, l’étude comparée du sino-tibétain est une entreprise plus complexe que celle de l’indoeuropéen, mais grâce à l’afflux de nouvelles descriptions fiables de langues sino-tibétaines anciennes et modernes, c’est un domaine qui va connaître des avancées importantes dans les années à venir. Mon point de vue sur les possibilités futures de développement du sino-tibétain est exposé dans \citet{jacques2015genetic}. Je pense que ce sont avant tout les langues modernes, surtout les langues rgyalrong et kiranties, qui vont permettre de reconstruire le système de la proto-langue. 
 
 	\section{Classification}
 	La classification des langues sino-tibétaines, et la méthodologie de la classification sont d'une importance capitale pour reconstruire la proto-langue. Si une phylogénie arborescente est possible, celle-ci pourra contribuer à résoudre des débats tels que celui de la reconstructibilité du marquage personnel sur le verbe abordé plus haut.
@@ -1048,7 +1049,7 @@ Bien que la phonologie de ces langues soit imparfaitement comprise et qu’une �
 	
 	Dans le cas du sino-tibétain, la méconnaissance des lois phonétiques est un obstacle à la résolution de la phylogénie, mais il est contre-productif de s'interdire d'étudier la phylogénie tant que la phonologie comparée ne sera pas complètement comprise, car ce moment n'arrivera peut-être jamais.
 	
-L'applicabilité du modèle de l'arbre aux données linguistiques a été récemment critiquée par \citet{francois14tree}, travail  basé sur une quantité de données de première main considérable sur un groupe de langues austronésiennes de Vanuatu dont la phonologie historique est parfaitement comprise. Cette étude ouvre un débat important, et auquel je compte répondre de façon détaillée. 
+L'applicabilité du modèle de l'arbre aux données linguistiques a été récemment critiquée par \citet{francois15tree}, travail  basé sur une quantité de données de première main considérable sur un groupe de langues austronésiennes de Vanuatu dont la phonologie historique est parfaitement comprise. Cette étude ouvre un débat important, et auquel je compte répondre de façon détaillée. 
 
 Je pense que le problème fondammental de cette approche est qu'elle ne distingue pas les cognats réels des emprunts indétectables (parce qu'il ne présentent pas de segments ayant subi les changements phonétiques diagnostiques) ou les emprunts nativisés (à ce propos voir \citealt{aikio06nativization}), et   inclut parmi les innovations communes des étymons ayant de fortes chances d'être empruntés (`hibiscus'): tous les mots respectant les lois phonétiques des mots hérités sont considérés comme appartenant à la même couche. 
 
@@ -1094,7 +1095,7 @@ Depuis 2005, Romain Garnier m'a aidé à apprendre le sanskrit et à me plonger 
 
 Inspiré par ses travaux  sur le verbe latin, j'ai écrit un article (\citealt{jacques13vama}) portant sur l'étymologie du sanskrit \ipa{vāma-} ``gauche'', où je montre que cet adjectif doit être reconstruit *u̯oh_2-mó- (de la racine *u̯eh_2 ``courber'') et non *u̯n̻H-mó- (de *u̯enH ``aimer'') comme on l'admet habituellement. Cette étymologie permet de montrer que la racine *u̯eh_2, rare en dehors de l'anatolien, a laissé des traces en indo-iranien. Je présente en même temps une analyse de l'étymologie des mots liés à la droite et à la gauche en indo-iranien. 
 
-J'ai aussi écrit \citet{jacques14cochon}, un article accepté par \textit{Historische Sprachforschung}, où je propose une nouvelle étymologie pour le celtique commun *sukko- ``cochon" (breton \textit{houc'h}). Je montre que l'étymologie traditionnelle de ce mot (latin \textit{sus}) n'est pas tenable et qu'il faut le dériver de la racine *sewḱ- ``sucer", ce nom signifiant à l'origine ``le têteur" (le cochon de lait). Ce travail a une importance en particulier pour la loi de Dybo, car la comparaison avec le latin constituait l'un des exemples de cette loi.
+J'ai aussi écrit \citet{jacques15cochon}, un article accepté par \textit{Historische Sprachforschung}, où je propose une nouvelle étymologie pour le celtique commun *sukko- ``cochon" (breton \textit{houc'h}). Je montre que l'étymologie traditionnelle de ce mot (latin \textit{sus}) n'est pas tenable et qu'il faut le dériver de la racine *sewḱ- ``sucer", ce nom signifiant à l'origine ``le têteur" (le cochon de lait). Ce travail a une importance en particulier pour la loi de Dybo, car la comparaison avec le latin constituait l'un des exemples de cette loi.
 
 Enfin, j'ai écrit un article sur l'étymologie du mot miel en chinois \zh{蜜} mjit, que l'on pense depuis \citealt{polivanov16mit} être un emprunt au tocharien B \ipa{mit} de même sens (qui vient du proto-indoeuropéen *medhu). Or, la forme lakkia \ipa{--mlet} `abeille', emprunt évident au chinois, suggère que la lecture du chinois moyen \ipa{mjit} (qui effectivement remonterait au chinois archaïque *mit) doit être en fait \ipa{mit} (type chongniu 3), qui remonterait à *mrit. C'est confirmé par la lecture vietnamienne \ipa{mật} (on attendrait *dật si la lecture du  chinois moyen était bien \ipa{mjit}). Le chongniu est la seule information pour laquelle le système des fanqie ne donne pas d'indication et pour laquelle on doit recourir aux tables de rimes; or, étant donné leur caractère tardif et la nature de ces données, dans les cas où les données de langues attestées contredisent les données philologiques, ce sont les données phonétique qui doivent être préférées. Si l'on accepte cette révision de la reconstruction du chinois, il devient nécessaire de supposer une étymologie alternative. Je propose qu'il s'agit de l'autre racine indoeuropéenne *melit- `miel', préservée dans une forme ancienne du tocharien (mais non attestée à date historique) qui serait à l'origine du mot chinois. Ce travail sera publié dans le premier numéro de *wékʷeses, une nouvelle revue d'indo-européen fondée par Romain Garnier en 2014.
 
@@ -1890,7 +1891,7 @@ Du point de vue de la théorie, je suis partisan d'un éclectisme éclairé: s'a
 
 Mon objectif  premier est de documenter les langues que j'ai choisies sans commettre d'erreur, de façon la plus exhaustive possible et de présenter mes descriptions d'une façon accessible et facilement consultable. J'espère que ces travaux pourront servir au plus grand nombre possible d'utilisateurs, qu'ils soient locuteurs des langues concernées, linguistiques théoriciens, linguistes diachroniciens, historiens ou ethnologues.
 
-\bibliographystyle{linquiry2}
+\bibliographystyle{unified}
 \bibliography{bibliogj}
 \pagebreak
 	\tableofcontents
