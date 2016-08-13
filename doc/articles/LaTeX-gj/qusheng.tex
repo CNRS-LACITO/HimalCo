@@ -1,4 +1,4 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -18,13 +18,13 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{\mbox{#1}}}} 
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
-\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}
+\newcommand{\zh}[1]{{\cn#1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\factual}[1]{\textsc{:fact}}
 \newcommand{\rdp}{\textasciitilde{}}
@@ -119,7 +119,7 @@ A few languages of the Trans-Himalayan family, most notably Kiranti and West Him
 
 In Old Chinese, no *-Ct final clusters have ever been proposed. Yet, the final *-s as reconstructed in all modern systems is much too common in comparison with languages of the family which allow final clusters. In Tibetan for instance, there are 7398 words ending in -s in  \citet{bodrgya} out of 53922 (14\%; this figure includes many -s originating from *\ipa{-t} after grave codas). By contrast, in Baxter and Sagart's (\citeyear{bs14oc}) online list of reconstructions, we find 1160 words with final -s out of 4968 (23\%). This raises the possibility that final *-s is not the only origin of the qusheng.
 
-To account for the absence of *-Ct clusters and for the excess of final *-s in present reconstruction models, I propose the following sound law (C stands for a particular subset of codas, perhaps restricted to labial and velar consonants):
+To account for the absence of *-Ct clusters and for the excess of final *-s in present reconstruction models, I propose the following sound law (C stands for a particular subset of codas, perhaps restricted to labial and velar consonants):\footnote{A similar idea was suggested by \citet[42]{schuessler07}.}
 
 \begin{exe}
 \ex \label{ex:ts}
@@ -152,7 +152,7 @@ The similarity with Old Chinese, where qusheng derivation is used exactly with t
 
 Moreover, some nouns derived from verbs are cognate between Chinese and Tibetan, eg \ipa{ɴtʰag, btags} ``weave" $\rightarrow$ \ipa{tʰags} ``textile", \ch{織}{tɕik}{weave} $\rightarrow$ \ch{織}{tɕi^H}{cloth}.
 
-Nominalization by \ipa{-s} suffixation was already only very marginally productive in Old Tibetan. The only clear case of a neologism formed in historical times using the \ipa{-s} suffix is \ipa{gzuŋs} `dhâraṇî' (a type of Buddhist magical formula). This word is derived from the root \ipa{|zuŋ|} of \ipa{bzuŋ} `seize', by calque of `dhâraṇî-', which derives from the root dhṛ- `seize, hold' in Sanskrit. It actually uses a circumfix \ipa{g-...-s}, the prefixal element of which has cognates in Gyalrongic languages and beyond (\citealt{konnerth09nmlz, jacques14snom}).
+Nominalization by \ipa{-s} suffixation was already only very marginally productive in Old Tibetan. The only clear case of a neologism formed in historical times using the \ipa{-s} suffix is \ipa{gzuŋs} `dhâraṇî' (a type of Buddhist magical formula). This word is derived from the root \ipa{|zuŋ|} of \ipa{bzuŋ} `seize', by calque of `dhâraṇî-', which derives from the root dhṛ- `seize, hold' in Sanskrit. It actually uses a circumfix \ipa{g-...-s}, the prefixal element of which has cognates in Gyalrongic languages and beyond (\citealt{konnerth16gV, jacques14snom}).
 
 Outside of Tibetan and West-Himalayish, we find vestigial traces of *\ipa{-s} nominalization in Gyalrongic languages (\citealt{jacques03s.houzhui, jackson14morpho}.
 
@@ -310,7 +310,7 @@ Thus, in this hypothesis, a verb form such as \ipa{kʰegs} ‘be hindered, be pr
 
  
 \subsection{Denominal verbalization}
-While the use of the qusheng to build verbs out of nouns in Chinese is quite common, there are barely any potential cognates in the rest of the family. In Gyalrongic languages, denominal morphology is exclusively prefixal (\citealt{jacques14antipassive}), and Tibetan adopts zero-derivation (adding the TAM markers N- in the present and \textit{b-...-s} in the past, \citealt[29]{jacques14tangoute}). 
+While the use of the qusheng to build verbs out of nouns in Chinese is quite common, there are barely any potential cognates in the rest of the family. In Gyalrongic languages, denominal morphology is exclusively prefixal (\citealt{jacques14antipassive}), and Tibetan adopts zero-derivation (adding the TAM markers N- in the present and \textit{b-...-s} in the past, \citealt[29]{jacques14esquisse}). 
 
 
 Denominal \ipa{-t} derivation is most clearly attested in West-Himalayish. In Bunan, \citet[426]{widmer14bunan} describes the following examples of verbalizing -t suffix: 
