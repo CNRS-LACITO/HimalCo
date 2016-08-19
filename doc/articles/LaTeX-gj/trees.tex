@@ -5,6 +5,7 @@
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
+\usepackage{multicol} 
 \usepackage{gb4e} 
 %\usepackage{multicol}
 \usepackage{hyperref} 
@@ -27,18 +28,48 @@
 \section{Saving the Trees from the Critics}
 \subsection{Not all Trees are Easy to Spot}
 \subsection{Diffusability of Features}
-Not all innovations are equally informative; certain types of innovations are easily diffused even across unrelated languages, or are likely to occur several times independently.
+%Not all innovations are equally informative; certain types of innovations are easily diffused even across unrelated languages, or are likely to occur several times independently.
+%
+%Yet, attempting to weigh innovations is a difficult enterprise, and would involve subjective judgments, which is why \citet[177]{francois15tree} decided to give an equal status to all of his 474 innovations.
 
-Yet, attempting to weigh innovations is a difficult enterprise, and would involve subjective judgments, which is why \citet[177]{francois15tree} decided to give an equal status to all of his 474 innovations.
 
-\subsubsection{Sound change}
-\subsubsection{Lexicon}
-François refuses the concept of basic vocabulary, and 
-
-\subsubsection{Morphology}
 %Affix borrowing \citet{seifart15borrowing}, directionality (\citealt{norde09degrammaticalization})
 %
 %Borrowing of irregular morphology: English take, give
+
+\subsection{Variation in the proto-language}
+Languages are never completely uniform, and fieldwork linguists working on unwritten languages commonly notice that even siblings may present significant differences (for instance \citealt[29-30]{genetti07grammar}). 
+
+While some innovations can spread quickly to the entire community (or at least to all members of a specific age-group), in other cases it is possible for two competing forms (innovative vs archaic) to remain used in the same  speech community for a considerable period of time. This is observed in particular with sporadic changes, such as irregular metatheses / dissimilation / assimilation, or item-specific analogy.
+
+When language differentiation occurs while forms are still competing, daughter languages can inherit the competing forms; then the innovative form may eventually prevail or disappear in a non-predictable way in each daughter language. If such situation occurs, the distribution of the innovation will not be relatable to the phylogenetic tree.
+
+The distribution of r-metathesis in the word `frost' in Germanic languages is a case in point. As shown in Table \ref{tab:frost} (data from \citealt[157]{kroonen13dict}, \citealt{richthofen1840woerterbuch, bosworth1898dictionary, stratmann1891dictionary}), the form with metathesis \ipa{forst} was in competition with the regular form \ipa{frost} in Old and Middle English and in Old Frisian, but only the latter is found in modern English and Frisian languages. Only Dutch consistently has the form with metathesis from the earliest texts (13^{th} century, \citealt[112]{vaan15dutch}) to modern dialects.
+
+\begin{table}[h]
+\caption{The distribution of r-metathesis in reflexes of the etymon `frost' in Germanic languages } \centering \label{tab:frost}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{llllllll}
+\toprule
+\multicolumn{6}{c}{Proto-Germanic \ipa{*frusta-} m./n.}  \\
+\midrule
+Old Norse & \ipa{frost} n. & &&Swedish & \ipa{frost} n. & \\
+Old Saxon & \ipa{frost} m. & \\
+Old English & \ipa{frost}, \ipa{forst} m.\grise{} &Middle E. &\ipa{frost}, \ipa{forst} \grise{} & Modern E.& \ipa{frost} \\
+&&Old F. & \ipa{frost}, \ipa{forst} m.\grise{} & West Frisian &\ipa{froast}\\
+&&&\grise{}&East Frisian & \ipa{fröst} \\
+&&Middle D. & \ipa{vorst} m.\grise{}&Modern Dutch & \ipa{vorst} c.\grise{}& \\
+&&&&German & \ipa{Frost} m.& \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+Whether r-metathesis in this word is an innovation of the common ancestor of Dutch, English and Frisian, or was diffused through contact after these languages became unintelligible, these data show that competition between \ipa{forst} and \ipa{frost} took centuries in English, and that the archaic form ultimately prevailed, removing any trace that the form with r-metathesis ever existed.
+
+Thus, the distribution of a particular innovation in languages without written records can be misleading: one needs to distinguish between the onset of the innovation, its maximal spread (which would include here Dutch and some English and Frisian speakers) and its eventual fate (restricted to Dutch in this case). 
+
+Thus, while \citet[178]{francois15tree} puts much value on \textit{lexically-specific sound changes}, arguing that they are ``strongly indicative of genealogy, because they are unlikely to diffuse across separate languages'', the example of the etymon `frost' in Germanic shows that the observable distribution of a sporadic innovation in the present may not be identical to its spread in the past. Failure to distinguish between the two will naturally introduce non-tree-like patterns in the data.
+
 
 \subsection{Limitations of Sound Correspondences to Identify Lexical Innovations}
 In order to identify inherited lexical innovations and distinguish them from recent borrowings, \citet[176-8]{francois15tree} uses a fairly uncontroversial criterion: etyma whose reflexes follow regular sound correspondences are considered to be inherited. Thus, whenever a common proto-form can be postulated for a particular set of words across several languages (which can thus be derived from this proto-form by the mechanical application of regular sound changes), it is considered in this model to be part of the inherited vocabulary, and can be used, if applicable, as a common innovation.
@@ -129,11 +160,6 @@ A recurrent correspondence between Spanish and Basque is word-final \ipa{-ón} t
 This common correspondence have however been recently applied to recent borrowings from Spanish such as \ipa{kamioi} `truck' and \ipa{abioi} `plane' (from \ipa{camión} and \ipa{avión}). This adaptation has no phonetical motivation, since word-final \ipa{-on} is attested in Basque, and can only be accounted for as overapplication of the \ipa{-oi} : \ipa{-ón} correspondence.
 
 %analyzable compounds?
-\subsubsection{Lexically-specific sound changes}
-Out of 474 innovations, François includes 116 \textit{lexically-specific sound changes}, which according to him are ``strongly indicative of genealogy, because they are unlikely to diffuse across separate languages: these arbitrary alterations of word forms normally diffuse only across individuals who self-identify as speakers of the same language at the time of the change.'' (\citealt[178]{francois15tree}). 
-
-I do not dispute the potential value of irregular sound changes (in particular metatheses, changes due to analogical leveling etc), but sporadic sound correspondences are more often explainable are intra-dialectal borrowing. 
-
 
 
 \subsubsection{Implications for the interpretation of François' data}
