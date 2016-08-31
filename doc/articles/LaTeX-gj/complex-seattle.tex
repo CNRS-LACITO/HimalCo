@@ -24,15 +24,27 @@
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\Y}{\Checkmark} 
 \newcommand{\N}{} 
- 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+ \newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
 
  \begin{document} 
-\title{The life cycle of doubly conjugated verbs in Sino-Tibetan}
-\author{Guillaume Jacques}
+\title{The life cycle of multiple indexation and bipartite verbs in Sino-Tibetan}
+\author{Guillaume Jacques, CNRS-CRLAO-INALCO}
 \maketitle
 
-\section{Kiranti}
-Kiranti languages are well-known for having a class of complex predicates combining a lexical verb with an auxiliary, which share some of their person indexation and TAM markers. Example (\ref{ex:ityodzyoyi}) from Khaling shows the verb root |tA| `put'\footnote{See \citealt{jacques12khaling} for an account of stem alternations in Khaling.} combined with the auxiliary |-dzA| `keep on' grammaticalized from the verb |dzA| `eat'. The verb and the auxiliary share the second person prefix \ipa{ʔi-}, but the suffixes remain distinct: the auxiliary receives the full form of the suffix \ipa{-ji}, while the lexical verb has a reduced form \ipa{-j-}. This kind of verb form will henceforth be referred to as a \textit{doubly conjugated verb}.
+Fourth Workshop on Sino-Tibetan Languages of Southwest China, 
+
+University of Washington, Seattle
+
+ \section*{Introduction}
+Bipartite verbs, though common in some areas of the world (\citealt{delancey96bipartite}), are relatively rare in Eurasia. In the Trans-Himalayan/Sino-Tibetan family, bipartite verbs are found in Kiranti and Gyalrongic, and present another uncommon typological characteristic, 
+multiple argument indexation (\citealt{denk15multiple}).
+
+This paper presents the first description of bipartite verbs in Gyalrongic, and show how the genesis of this relatively recent construction sheds light on how bipartite verbs were independently grammaticalized in Kiranti.
+
+\section{Bipartite verbs in Kiranti}
+Kiranti languages are well-known for having a class of complex predicates combining a lexical verb with an auxiliary, which share some of their person indexation and TAM markers. Example (\ref{ex:ityodzyoyi}) from Khaling shows the verb root \dhatu{tA}{put}\footnote{See \citet{jacques12khaling} for an account of stem alternations in Khaling.} combined with the auxiliary \dhatu{-dzA}{keep on} grammaticalized from the verb \dhatu{dzA}{eat}. The verb and the auxiliary share the second person prefix \ipa{ʔi-}, but the suffixes remain distinct: the auxiliary receives the full form of the suffix \ipa{-ji}, while the lexical verb has a reduced form \ipa{-j-}: dual number is thus redundantly indexed two times in this form.
 
 \begin{exe}
 \ex \label{ex:ityodzyoyi}
@@ -41,10 +53,7 @@ Kiranti languages are well-known for having a class of complex predicates combin
 \glt You_{du} keep on putting it.
 \end{exe}
 
-
-Prefix permutability:
-
-\citet{bickel07chintang}, \citet[170-172]{doornenbal09}
+While affixes in Khaling follow a rigid order, other languages such as Chintang (\citealt{bickel07chintang}) and Bantawa present variability in affix ordering in complex verb forms, as shown by the following examples (\citealt[170-172]{doornenbal09}):
 
 \begin{exe}
 \ex 
@@ -59,10 +68,89 @@ Prefix permutability:
 \gll 
 \ipa{man-kʰat-tɨ-da} \\
 \textsc{neg}-go-2-\textsc{pst} \\
-\glt `you did not go'
+\glt `You did not go.'
 \end{exe}
 
-\section{Serial verb constructions in Rgyalrongic}
+As in Khaling, some suffixes are obligatorily redundantly replicated in bipartite verb forms, such as the 1/2 plural \ipa{-in}, while other ones such as the exclusive \ipa{-ka} are not, as illustrated by \refb{ex:kharin}.
+
+ \begin{exe}
+\ex  \label{ex:kharin}
+\gll \ipa{kʰar-in} \ipa{lont-in-ka} \\
+go-\textsc{1/2pl} come.out-\textsc{1/2pl -excl} \\
+\glt `We shall rise again.' (\citealt[254]{doornenbal09})
+\end{exe}
+
+
+
+\section{Bipartite verbs in Japhug}
+
+Bipartite verbs in Japhug and other Gyalrong languages are a small class (only ten such verbs have been discovered up to now). 
+The most common bipartite verb, \jpg{stu=mbat}{try hard, do one's best} can be conjugated in four distinct ways. Table \ref{tab:four} illustrates these four options with the imperative second dual form `try hard (the two of you)'.
+
+
+\begin{table}[h]
+\caption{Four degrees of integration} \centering \label{tab:four}
+\begin{tabular}{lllllll}
+\toprule
+Type & Example & V_1 suffix & V_2 prefix \\
+\midrule
+A& \ipa{tɤ-stu-ndʑi} \ipa{tɤ-mbat-ndʑi} &\Y &\Y \\
+ &\textsc{imp}-V_1-\textsc{du}  \textsc{imp}-V_2-\textsc{du} \\
+B& \ipa{tɤ-stu=tɤ-mbat-ndʑi} &\N  &\Y \\
+ &\textsc{imp}-V_1-\textsc{imp}-V_2-\textsc{du} \\
+C& \ipa{tɤ-stu-ndʑi=mbat-ndʑi} &\Y  &\N \\
+ &\textsc{imp}-V_1-\textsc{du}-V_2-\textsc{du} \\
+B& \ipa{tɤ-stu-mbat-ndʑi} &\N  &\N \\
+ &\textsc{imp}-V_1-V_2-\textsc{du} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In type A forms, the two verb stems are not phonologically integrated, and each of them takes both prefixes and suffixes. This form is a type of lexicalized serial verb construction (cf section \ref{sec:serial}).
+
+In type B and C forms, the two conjugated verb forms merge phonologically, and either the suffixe(s  of the first verb or the prefixe(s) of the second one are removed. Prefixal or suffixal chains are either preserved or completely removed; it is not possible to have intermediate forms. For instance, the type B form in example \refb{ex:atAtWstu} cannot be changed to something like $\dagger$\ipa{a-tɤ-tɯ-stu=tɯ-mbat-ndʑi} with only the second person \ipa{tɯ-} prefix without the irrealis prefixes.
+
+\begin{exe}
+\ex \label{ex:atAtWstu}
+\gll \ipa{a-tɤ-tɯ-stu=a-tɤ-tɯ-mbat-ndʑi} \\
+\textsc{irr-pfv-2}-try.hard(1)=\textsc{irr-pfv-2}-try.hard(2)-\textsc{du} \\
+\glt `(while I am gone),  may the two of you do your best.' (Smanmi0, 56)
+\end{exe}
+
+In type D forms, the two verb come to share the same prefixal and suffixal chain, with no intervening affix between the two verb stems.
+
+%\subsection{A triple complex predicate: `be innocent'}
+%
+%`be innocent', which combines the morphologically transitive roots \ipa{spa} and \ipa{rka} in the negative form with the auxiliary \ipa{me} `not exist', as in \ref{ex:mAspea}.\footnote{The stem \ipa{spa} independently exists as a transitive verb meaning `be able', but \ipa{rka} is not attested outside of this complex predicate.}
+%
+%\begin{exe}
+%\ex \label{ex:mAspea}
+%\gll \ipa{mɤ-spe-a} \ipa{mɤ-rke-a} \ipa{me} \\
+%\textsc{neg}-be.innocent(1)[III]:\textsc{fact}-\textsc{1sg} \textsc{neg}-be.innocent(2)[III]:\textsc{fact}-\textsc{1sg} not.exist:\textsc{fact} \\
+%\glt I am innocent.
+%\end{exe} 
+%
+%In the second person form however, we find two possible realizations, either (\ref{ex:mAtWspe1}) or (\ref{ex:mAtWspe2}). 
+%
+%\begin{exe}
+%\ex \label{ex:mAtWspe1}
+%\gll \ipa{mɤ-tɯ-spe} \ipa{mɤ-tɯ-rke} \ipa{me} \\
+%\textsc{neg}-2-be.innocent(1)[III]:\textsc{fact} \textsc{neg}-2-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+%\glt You_{sg} are innocent.
+%\end{exe} 
+%
+%\begin{exe}
+%\ex \label{ex:mAtWspe2}
+%\gll \ipa{mɤ-tɯ-spe-rke} \ipa{me} \\
+%\textsc{neg}-2-be.innocent(1)[III]-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
+%\glt You_{sg} are innocent.
+%\end{exe} 
+
+\section{Denominal compound verbs} \label{sec:}
+
+
+\jpg{ŋgɤjtshi}{feed}
+\section{Serial verb constructions} \label{sec:serial}
 
 Deideophonic and action deixis verbs (\citealt{sun12complementation}).
 
@@ -72,7 +160,7 @@ Share arguments, TAM and person marking.
 \ex \label{ex:totChW2}
 \gll 	\ipa{srɯnmɯ} 	\ipa{nɯ} 	\ipa{to-nɯdrɯβ} 	\ipa{ʑo} 	 	\ipa{to-tɕʰɯ} \\
  râkshasî \textsc{dem}  \textsc{ifr}-repeatedly.gore  \textsc{emph}  \textsc{ifr}-gore \\
- \glt `(The rhinoceros) gored the râkhsasî repeatedly and killed her.' 
+ \glt `(The rhinoceros) gored the râkshasî repeatedly and killed her.' 
 \end{exe}	
 
 \begin{exe}
@@ -90,59 +178,10 @@ Share arguments, TAM and person marking.
 \glt `I have to stand like this night and day.' (The divination, 2002, 44)
 \end{exe}
 
-\section{Doubly conjugated verbs}
-
-There are in Japhug a few complex predicates comprising two verbs roots which must appear together in a fixed order. The most common such complex predicate, \ipa{-stu -mbat} `try hard, do one's best'
-
-
-\begin{table}[h]
-\caption{Four degrees of integration} \centering \label{tab:four}
-\begin{tabular}{lllllll}
-\toprule
-Type & Example & V_1 suffix & V_2 prefix \\
-\midrule
-A& \ipa{tɤ-stu-ndʑi} \ipa{tɤ-mbat-ndʑi} &\Y &\Y \\
- &\textsc{imp}-V_1-\textsc{du}  \textsc{imp}-V_2-\textsc{du} \\
-B& \ipa{tɤ-stu-tɤ-mbat-ndʑi} &\N  &\Y \\
- &\textsc{imp}-V_1-\textsc{imp}-V_2-\textsc{du} \\
-C& \ipa{tɤ-stu-ndʑi-mbat-ndʑi} &\Y  &\N \\
- &\textsc{imp}-V_1-\textsc{du}-V_2-\textsc{du} \\
-B& \ipa{tɤ-stu-mbat-ndʑi} &\N  &\N \\
- &\textsc{imp}-V_1-V_2-\textsc{du} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-
-\subsection{A triple complex predicate: `be innocent'}
-
-`be innocent', which combines the morphologically transitive roots \ipa{spa} and \ipa{rka} in the negative form with the auxiliary \ipa{me} `not exist', as in \ref{ex:mAspea}.\footnote{The stem \ipa{spa} independently exists as a transitive verb meaning `be able', but \ipa{rka} is not attested outside of this complex predicate.}
-
-\begin{exe}
-\ex \label{ex:mAspea}
-\gll \ipa{mɤ-spe-a} \ipa{mɤ-rke-a} \ipa{me} \\
-\textsc{neg}-be.innocent(1)[III]:\textsc{fact}-\textsc{1sg} \textsc{neg}-be.innocent(2)[III]:\textsc{fact}-\textsc{1sg} not.exist:\textsc{fact} \\
-\glt I am innocent.
-\end{exe} 
-
-In the second person form however, we find two possible realizations, either (\ref{ex:mAtWspe1}) or (\ref{ex:mAtWspe2}). 
-
-\begin{exe}
-\ex \label{ex:mAtWspe1}
-\gll \ipa{mɤ-tɯ-spe} \ipa{mɤ-tɯ-rke} \ipa{me} \\
-\textsc{neg}-2-be.innocent(1)[III]:\textsc{fact} \textsc{neg}-2-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
-\glt You_{sg} are innocent.
-\end{exe} 
-
-\begin{exe}
-\ex \label{ex:mAtWspe2}
-\gll \ipa{mɤ-tɯ-spe-rke} \ipa{me} \\
-\textsc{neg}-2-be.innocent(1)[III]-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
-\glt You_{sg} are innocent.
-\end{exe} 
-
 \section{Conclusion}
-Doubly conjugated verbs may have been an intermediate stage between a serial verb construction and full bleaching of the auxiliary, for instance in the case of the associated motion verb construction in Rgyalrong languages (\citealt{jacques13harmonization}). 
+%Doubly conjugated verbs may have been an intermediate stage between a serial verb construction and full bleaching of the auxiliary, for instance in the case of the associated motion verb construction in Rgyalrong languages (\citealt{jacques13harmonization}). 
+
+ 
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
