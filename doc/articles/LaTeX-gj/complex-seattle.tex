@@ -1,10 +1,12 @@
-\documentclass[oldfontcommands,oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
 \usepackage{gb4e} 
 \usepackage{multicol}
 \usepackage{graphicx}
@@ -14,7 +16,7 @@
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{lscape}
- \usepackage{bbding}
+\usepackage{bbding}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
@@ -25,11 +27,12 @@
 \newcommand{\Y}{\Checkmark} 
 \newcommand{\N}{} 
 \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
- \newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
 \newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
 
  \begin{document} 
-\title{The life cycle of multiple indexation and bipartite verbs in Sino-Tibetan}
+\title{The life cycle of multiple indexation and bipartite verbs in Trans-Himalayan}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
 \maketitle
 
@@ -38,77 +41,48 @@ Fourth Workshop on Sino-Tibetan Languages of Southwest China,
 University of Washington, Seattle
 
  \section*{Introduction}
-Bipartite verbs, though common in some areas of the world (\citealt{delancey96bipartite}), are relatively rare in Eurasia. In the Trans-Himalayan/Sino-Tibetan family, bipartite verbs are found in Kiranti and Gyalrongic, and present another uncommon typological characteristic, 
+Bipartite verbs, though common in some areas of the world (\citealt{delancey96bipartite}), are relatively rare in Eurasia. In the Trans-Himalayan family, bipartite verbs are found in Kiranti and Gyalrongic, and present another uncommon typological characteristic, 
 multiple argument indexation (\citealt{denk15multiple}).
 
 This paper presents the first description of bipartite verbs in Gyalrongic, and show how the genesis of this relatively recent construction sheds light on how bipartite verbs were independently grammaticalized in Kiranti.
-
-\section{Bipartite verbs in Kiranti}
-Kiranti languages are well-known for having a class of complex predicates combining a lexical verb with an auxiliary, which share some of their person indexation and TAM markers. Example (\ref{ex:ityodzyoyi}) from Khaling shows the verb root \dhatu{tA}{put}\footnote{See \citet{jacques12khaling} for an account of stem alternations in Khaling.} combined with the auxiliary \dhatu{-dzA}{keep on} grammaticalized from the verb \dhatu{dzA}{eat}. The verb and the auxiliary share the second person prefix \ipa{ʔi-}, but the suffixes remain distinct: the auxiliary receives the full form of the suffix \ipa{-ji}, while the lexical verb has a reduced form \ipa{-j-}: dual number is thus redundantly indexed two times in this form.
-
-\begin{exe}
-\ex \label{ex:ityodzyoyi}
-\gll \ipa{ʔi-tɵ-j-dzɵ-ji}\\
-2/\textsc{inv}-put-\textsc{du.incl}-keep.on-\textsc{du.incl} \\
-\glt You_{du} keep on putting it.
-\end{exe}
-
-While affixes in Khaling follow a rigid order, other languages such as Chintang (\citealt{bickel07chintang}) and Bantawa present variability in affix ordering in complex verb forms, as shown by the following examples (\citealt[170-172]{doornenbal09}):
-
-\begin{exe}
-\ex 
-\gll 
-\ipa{tɨ-man-kʰat-da} \\
-2-\textsc{neg}-go-\textsc{pst} \\
-\ex
-\gll 
-\ipa{man-tɨ-kʰat-da} \\
-\textsc{neg}-2-go-\textsc{pst} \\
-\ex 
-\gll 
-\ipa{man-kʰat-tɨ-da} \\
-\textsc{neg}-go-2-\textsc{pst} \\
-\glt `You did not go.'
-\end{exe}
-
-As in Khaling, some suffixes are obligatorily redundantly replicated in bipartite verb forms, such as the 1/2 plural \ipa{-in}, while other ones such as the exclusive \ipa{-ka} are not, as illustrated by \refb{ex:kharin}.
-
- \begin{exe}
-\ex  \label{ex:kharin}
-\gll \ipa{kʰar-in} \ipa{lont-in-ka} \\
-go-\textsc{1/2pl} come.out-\textsc{1/2pl-excl} \\
-\glt `We shall rise again.' (\citealt[254]{doornenbal09})
-\end{exe}
 
 
 
 \section{Bipartite verbs in Japhug} \label{sec:japhug.bipart}
 
 Bipartite verbs in Japhug and other Gyalrong languages are a small class (only ten such verbs have been discovered up to now). 
-The most common bipartite verb, \jpg{stu=mbat}{try hard, do one's best} can be conjugated in four distinct ways. Table \ref{tab:four} illustrates these four options with the imperative second dual form `try hard (the two of you)'.
+The most common bipartite verb, \jpg{stu=mbat}{try hard, do one's best (\zh{努力})} can be conjugated in four distinct ways. Table \ref{tab:four} illustrates these four options with the imperative second dual form `try hard (the two of you)'.
 
 
-\begin{table}[h]
+\begin{table}[H]
 \caption{Four degrees of integration} \centering \label{tab:four}
 \begin{tabular}{lllllll}
 \toprule
 Type & Example & V_1 suffix & V_2 prefix \\
 \midrule
-A& \ipa{tɤ-stu-ndʑi} \ipa{tɤ-mbat-ndʑi} &\Y &\Y \\
+A (quasi-SVC) & \ipa{tɤ-stu-ndʑi} \ipa{tɤ-mbat-ndʑi} &\Y &\Y \\
  &\textsc{imp}-V_1-\textsc{du}  \textsc{imp}-V_2-\textsc{du} \\
-B& \ipa{tɤ-stu=tɤ-mbat-ndʑi} &\N  &\Y \\
+B (right-dominant) & \ipa{tɤ-stu=tɤ-mbat-ndʑi} &\N  &\Y \\
  &\textsc{imp}-V_1-\textsc{imp}-V_2-\textsc{du} \\
-C& \ipa{tɤ-stu-ndʑi=mbat-ndʑi} &\Y  &\N \\
+C (left-dominant) & \ipa{tɤ-stu-ndʑi=mbat-ndʑi} &\Y  &\N \\
  &\textsc{imp}-V_1-\textsc{du}-V_2-\textsc{du} \\
-B& \ipa{tɤ-stu-mbat-ndʑi} &\N  &\N \\
+D (quasi-compound)& \ipa{tɤ-stu-mbat-ndʑi} &\N  &\N \\
  &\textsc{imp}-V_1-V_2-\textsc{du} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-In type A forms, the two verb stems are not phonologically integrated, and each of them takes both prefixes and suffixes. This form is a type of lexicalized serial verb construction (cf section \ref{sec:serial}).
+In type A forms, the two verb stems are not phonologically integrated, and each of them takes both prefixes and suffixes. This form is a type of lexicalized serial verb construction (cf section \ref{sec:serial}). Note that as unlike normal serial verb constructions, insertion of linkers between the two verbs is not attested in the corpus. However, with \jpg{fse=raŋ}{happen so many things}, it is possible to repeat the subject, as in example \refb{ex:fse.rang}.
 
-In type B and C forms, the two conjugated verb forms merge phonologically, and either the suffixe(s  of the first verb or the prefixe(s) of the second one are removed. Prefixal or suffixal chains are either preserved or completely removed; it is not possible to have intermediate forms. For instance, the type B form in example \refb{ex:atAtWstu} cannot be changed to something like $\dagger$\ipa{a-tɤ-tɯ-stu=tɯ-mbat-ndʑi} with only the second person \ipa{tɯ-} prefix without the irrealis prefixes.
+\begin{exe}
+\ex \label{ex:fse.rang}
+\gll 
+\ipa{nɯra} \ipa{pɯ-fse}, \ipa{nɯra} \ipa{pɯ-raŋ} \\
+\textsc{dem:pl} \textsc{pst.ipfv}-be.like \textsc{dem:pl} \textsc{pst.ipfv}-last.a.long.time \\ 
+\glt `All these things happened.' (many attestations of this sentence, occurs in traditional stories typically to avoid repeating sentences when a characters tells another character what has happened previously)
+\end{exe}
+
+In type B and C forms, the two conjugated verb forms merge phonologically, and either the suffixe(s) of the first verb (in the case of the right-dominant B type, where the V_1 has a reduced form and the V_2 the full form) or the prefixe(s) of the second one (left-dominant) are removed. Prefixal or suffixal chains are either preserved or completely removed; it is not possible to have intermediate forms. For instance, the type B form in example \refb{ex:atAtWstu} cannot be changed to something like $\dagger$\ipa{a-tɤ-tɯ-stu=tɯ-mbat-ndʑi} with only the second person \ipa{tɯ-} prefix without the irrealis prefixes.
 
 \begin{exe}
 \ex \label{ex:atAtWstu}
@@ -117,13 +91,13 @@ In type B and C forms, the two conjugated verb forms merge phonologically, and e
 \glt `(while I am gone),  may the two of you do your best.' (Smanmi0, 56)
 \end{exe}
 
-In type D forms, the two verb come to share the same prefixal and suffixal chain, with no intervening affix between the two verb stems.
+In type D forms, the two verbs come to share the same prefixal and suffixal chain, with no intervening affix between the two verb stems.
 
 Table \ref{tab:bipartite} summarizes all bipartite verbs discovered up to now in Japhug. Note the important proportion of Tibetan loanwords (\ipa{=raŋ}, \ipa{zdɯɣ=sŋɤl}, \ipa{ntsʰɤβ=}, \ipa{rga=}, respectively from \ipa{riŋ}, \ipa{sdug.bsŋal}, \ipa{ⁿtsʰab}, \ipa{dga}).
 
-The stative bipartite verbs \ipa{zdɯɣ=sŋɤl} , \ipa{rga=le}  and \ipa{rga=χi}  are attested in A form only in non-finite form.
+The stative bipartite verbs \ipa{zdɯɣ=sŋɤl}, \ipa{rga=le} and \ipa{rga=χi} are attested in A form only in non-finite form. 
 
-XXX tropative verb forms
+It is difficult to apply the rich array of voice derivations available in Japhug to bipartite verbs. The only unproblematic derivation I could elicit is the tropative\footnote{Tropative is a voice deriving a transitive verb meaning `find, consider X to be Y' from a stative verb Y, see \citet{jacques13tropative}.} verb \jpg{nɤ-stu-mbat}{consider that X tries hard}, which is derived from the type D form.
 
 \begin{table}[h]
 \caption{Bipartite verbs in Japhug} \label{tab:bipartite} \centering
@@ -146,13 +120,13 @@ Compound verb& Meaning	 & 	A & 	B & 	C & 	D & \\
 \end{tabular}
 \end{table}
 
-There is only one bipartite transitive verb, \ipa{spa=rka}, which is actually even tripartite, since its always occur with an existential verb -- it means `be guilty' when used with the positive existential verb \jpg{tu}{exist} and  `be innocent' with the negative one \jpg{me}{not exist}. Although morphologically transitive (see for instance the presence of stem III \ipa{a} $\rightarrow$ \ipa{e} alternation in \textsc{sg}$\rightarrow$3 non-past forms, in examples \ref{ex:mAspea} to \ref{ex:mAtWspe2}), this verb has an expletive object which cannot be overt. Examples \refb{ex:mAspea} and \refb{ex:mAspea} illustrate the A form, and \refb{ex:mAtWsparkandZi} and \refb{ex:mAtWspe2} the D form. Note than even though the suffixes of the V_1 cannot be realized in D-form, stem III alternation still appears.
+There is only one bipartite transitive verb, \ipa{spa=rka}, which is actually even tripartite, since its always occur with an existential verb -- it means `be guilty' when used with the positive existential verb \jpg{tu}{exist} and  `be innocent' with the negative one \jpg{me}{not exist} (which cannot take person/number indexation in this construction). Although morphologically transitive (see for instance the presence of stem III \ipa{a} $\rightarrow$ \ipa{e} alternation in \textsc{sg}$\rightarrow$3 non-past forms, in examples \ref{ex:mAspea} to \ref{ex:mAtWspe2}), this verb has an expletive object which cannot be overt. Examples \refb{ex:mAspea} and \refb{ex:mAspea} illustrate the A form, and \refb{ex:mAtWsparkandZi} and \refb{ex:mAtWspe2} the D form. Note than even though the suffixes of the V_1 cannot be realized in D-form, stem III alternation (marking singular A) still appears.
 
 \begin{exe}
 \ex \label{ex:mAspea}
 \gll \ipa{mɤ-spe-a} \ipa{mɤ-rke-a} \ipa{me} \\
 \textsc{neg}-be.innocent(1)[III]:\textsc{fact}-\textsc{1sg} \textsc{neg}-be.innocent(2)[III]:\textsc{fact}-\textsc{1sg} not.exist:\textsc{fact} \\
-\glt I am innocent.
+\glt `I am innocent.'
 \end{exe} 
 
 
@@ -160,7 +134,7 @@ There is only one bipartite transitive verb, \ipa{spa=rka}, which is actually ev
 \ex \label{ex:mAtWspe1}
 \gll \ipa{mɤ-tɯ-spe} \ipa{mɤ-tɯ-rke} \ipa{me} \\
 \textsc{neg}-2-be.innocent(1)[III]:\textsc{fact} \textsc{neg}-2-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
-\glt You_{sg} are innocent.
+\glt `You_{sg} are innocent.'
 \end{exe} 
 
 
@@ -168,7 +142,7 @@ There is only one bipartite transitive verb, \ipa{spa=rka}, which is actually ev
 \ex \label{ex:mAtWsparkandZi}
 \gll \ipa{mɤ-tɯ-spa=rka-ndʑi} \ipa{me} \\
 \textsc{neg}-2-be.innocent(1)-be.innocent(2):\textsc{fact}-\textsc{du} not.exist:\textsc{fact} \\
-\glt You_{du} are innocent.
+\glt `You_{du} are innocent.'
 \end{exe} 
 
 
@@ -176,10 +150,10 @@ There is only one bipartite transitive verb, \ipa{spa=rka}, which is actually ev
 \ex \label{ex:mAtWspe2}
 \gll \ipa{mɤ-tɯ-spe=rke} \ipa{me} \\
 \textsc{neg}-2-be.innocent(1)[III]-be.innocent(2)[III]:\textsc{fact} not.exist:\textsc{fact} \\
-\glt You_{sg} are innocent.
+\glt `You_{sg} are innocent.'
 \end{exe} 
 
-\section{Compound verbs} \label{sec:}
+\section{Compound verbs in Japhug} \label{sec:compounds}
 Apart from bipartite verbs, we find in Japhug another class of verbs combining two verb roots into one lexeme: compound verbs.
 
 Unlike bipartite verbs,  compound verbs do not allow multiple indexation (such as inflectional morphemes intervening between the two roots) and the first member of the compound undergoes \textit{status constructus} vowel change (see  \citealt[1215]{jacques12incorp}, \ipa{a/u} $\rightarrow$ \ipa{ɤ} in examples 1 and 4 below). In addition, an additional derivational prefix is often present (\ipa{a-} and \ipa{rɤ-/a-} in examples 1, 2 and 3 below).
@@ -202,9 +176,9 @@ The first three examples are actually historically denominal verbs, derived from
 
 The other action nominal *\ipa{pɤ-mbat} `action that is easy to do' and ?\ipa{χtɯ-tsɣe} `commerce' have not been recorded, but it is unproblematic to assume that they used to exist and that the corresponding verbs derive from them.
 
-Note the antipassive-like value of the derivation in examples 2 and 3, where the compound verb derived from two transitive verb is intransitive. Note that the denominal prefix \ipa{rɤ-} is the same from which the antipassive derivation was grammaticalized (see  \citealt{jacques14antipassive}).
+Note the antipassive-like value of the derivation in examples 2 and 3, where the compound verb derived from two transitive verbs is intransitive. Note that the denominal prefix \ipa{rɤ-} is the same from which the antipassive derivation was grammaticalized (see  \citealt{jacques14antipassive}).
 
-Example 4 \jpg{ngɤ-jtsʰi}{feed} differs from the preceding one by having no denominal prefix. Such compound verbs are a minority (only four are attested, see Table \ref{tab:compound.verbs}), but all start in a cluster whose first element is a nasal. It is thus possible that a reduced form of the denominal prefix (as in \jpg{ngo}{be sick} from denominal \ipa{n(ɯ)}+\jpg{--ŋgo}{disease}) has been absorbed by the verb stem.\footnote{For examples of such a development in Khroskyabs, see \citet{jacques12incorp, lai13affixale}. }
+Example 4 \jpg{ngɤ-jtsʰi}{feed} differs from the preceding one by having no denominal prefix. Such compound verbs are a minority (only four are attested, see Table \ref{tab:compound.verbs}), but all start in a cluster whose first element is a nasal. It is thus possible that a reduced form of the denominal prefix (as in \jpg{ngo}{be sick} from denominal \ipa{n(ɯ)}+\jpg{--ŋgo}{disease}) has been absorbed by the verb stem.\footnote{For examples of such a development in Khroskyabs, see \citet{jacques12incorp, lai13affixale}. } Nevertheless, since some of these compound verbs do not have visible \textit{status constructus} alternation (since for instance \ipa{ɯ} does not alternate), some of them are not synchronically distinguishable from type D bipartite verbs.
 
 \begin{table}[h]
 \caption{Compound verbs in Japhug} \label{tab:compound.verbs} 
@@ -230,17 +204,17 @@ Compound verb &&$V_1$ & & $V_2$ \\
 \midrule
 \ipa{mpɯmnu} &	soft and smooth &	\ipa{mpɯ} &	soft &	\ipa{mnu} &	smooth &	\\	
 \ipa{ngɤjtsʰi} &	feed &	\ipa{ngu} &	feed &	\ipa{jtsʰi} &	give to drink &	\\	
-\ipa{mbɯjtsʰi} &	go to eat and drink &	\ipa{mbi} &	give &	\ipa{jtsʰi} &	give to drink &	\\	
+\ipa{mbijtsʰi} &	go to eat and drink &	\ipa{mbi} &	give &	\ipa{jtsʰi} &	give to drink &	\\	
 \ipa{mtsɯrɕpaʁ} &	be hungry and thursty &	\ipa{mtsɯr} &	be hungry &	\ipa{ɕpaʁ} &	be thursty &	\\	
 \bottomrule
 \end{tabular}}
 \end{table}
 
-Most compound verbs in Japhug are \textit{dvandva}-like (`do $V_1$ and $V_2$')  but in a few examples, like \jpg{a-pɤ-mbat}{easy to do} or \jpg{nɯndzɤmbɣom}{be in a hurry to eat}, the semantic relationship between $V_1$  and $V_2$ is the same as that of a main verb and its complement (`$V_2$ to $V_1$').
+Most compound verbs in Japhug are \textit{dvandva}-like (`do $V_1$ and $V_2$')  but in a few examples, like \jpg{a-pɤ-mbat}{easy to do} or \jpg{nɯ-ndzɤ-mbɣom}{be in a hurry to eat}, the semantic relationship between $V_1$  and $V_2$ is the same as that of a main verb and its complement (`$V_2$ to $V_1$').
 
 The verb \jpg{a-rgɤ-le}{be extremely happy} is related to the bipartite verb \ipa{rga=le} mentioned in Table \ref{tab:bipartite}, showing that bipartite verbs too can be converted into compound verb verbs by means of denominal derivation.
 
-\section{Serial verb constructions} \label{sec:serial}
+\section{Serial verb constructions in Japhug} \label{sec:serial}
 The A form of bipartite verbs is formally similar to serial verb constructions (\citealt{sun12complementation, jacques13harmonization}). In these constructions, both verbs share the same arguments, transitivity, TAM, polarity and associated motion markers. Unlike serial constructions in other languages, various linkers and emphatic markers are possible between the two verbs (examples \ref{ex:totChW2} and \ref{ex:kuWGstuanW}).
 
 Serial verb constructions mainly occur with deideophonic verbs (example \ref{ex:totChW2}) and action deixis verbs (transitive \ref{ex:kuWGstuanW} or intransitive \ref{ex:ki.fsea}).
@@ -267,7 +241,7 @@ Serial verb constructions mainly occur with deideophonic verbs (example \ref{ex:
 \glt `I have to stand like this night and day.' (The divination, 2002, 44)
 \end{exe}
 
-It is very likely that bipartite verbs originate from serial verb constructions,\footnote{Note that for instance associated motion prefixes are likely to have originated in a serial verb construction too (see \citealt{jacques13harmonization}).} especially since in the case of \jpg{mu=cɯɣ}{be  terrified}, \jpg{ntsʰɤβ=rlu}{in a hurry}, \jpg{kʰrɯ=jɤβ}{be extremely dry}, \jpg{rga=le}{be extremely happy} and \jpg{rga=χi}{be extremely happy} , the V_2 is clearly ideophonic-like. 
+It is very likely that bipartite verbs originate from serial verb constructions,\footnote{Note that for instance associated motion prefixes are likely to have originated in a serial verb construction too (see \citealt{jacques13harmonization}).} especially since in the case of \jpg{mu=cɯɣ}{be  terrified}, \jpg{ntsʰɤβ=rlu}{in a hurry}, \jpg{kʰrɯ=jɤβ}{be extremely dry}, \jpg{rga=le}{be extremely happy} and \jpg{rga=χi}{be extremely happy}, the V_2 is clearly ideophonic-like. 
 
 The only other possible construction from which bipartite verb could have originated are finite complements, as in example \ref{ex:tundzxi}.
 
@@ -281,43 +255,124 @@ snow \textsc{inf:stat-emph}\tld{}be.small \textsc{pfv}:3$\rightarrow$3'-throw bu
 
 However, none of V_2 of bipartite verbs in Japhug are complement taking verbs, so that such hypothesis is highly unlikely. 
 
-\section{A model for proto-Kiranti}
-Bipartite verbs in Japhug are a marginal class, still barely grammaticalized from a serial verb construction.  
+\section{The genesis of bipartite verbs}
+Bipartite verbs in Japhug are a marginal class, still barely grammaticalized from a serial verb construction, and may thus provide a useful model to understand how bipartite verbs in other languages came into being. 
 
-While some Kiranti language do allow some remnant of variable affix ordering, none present the variability of tbipartite verbs in Japhug as described in section \ref{sec:japhug.bipart}. Thus, The comparatively more recent and less grammaticalized construction found in Japhug may provide a useful model to understand how bipartite verbs in Kiranti came into being.
+Figure \ref{fig:bipartite.pathways} presents a summary of all pathways suggested in this paper to account for the origin of bipartite verbs.
 
-\citealt[168]{doornenbal09} 
+Most bipartite verbs originate from lexicalized serial verb constructions. The origin of these serial constructions is an issue in itself which is not discussed in the present paper, but either parataxis or finite complements (see example \ref{ex:tundzxi} above) are conceivable sources.
+
+
+   \begin{figure}[H]
+   \caption{Possible pathways leading to the creation of bipartite verbs} \label{fig:bipartite.pathways}  
+  \begin{tikzpicture}
+  \node (X1) at (-6,6) {Parataxis};
+  \node (X2) at (4,6) {Finite complement+Matrix verb};
+  \node (Y) at (-5,4) {\textbf{Serial verb construction}};
+  \node (A) at (-4,2) {\textbf{Bipartite verb (type A)}};
+  \node (A2) at (4,4) {Action noun compound (V+V)};
+  \node (B) at (-5,-0.5) {\textbf{Bipartite verb (type B)}};
+  \node (C) at (0,-0.5) {Bipartite verb (type C)};    
+  \node (D) at (-1,-4) {\textbf{Bipartite verb (type D)}};    
+  \node (E) at (4,-0.5) {\textbf{Compound verb}};        
+\tikzstyle{peutetre}=[->,dotted,very thick,>=latex]
+\tikzstyle{sur}=[->,very thick,>=latex]
+\draw[sur] (Y)--(A);
+\draw[sur] (A) to node[left] {\textit{\footnotesize Loss of V_1 suffixes}} (B);
+\draw[sur] (A) to node[right] {\textit{\footnotesize Loss of V_2 prefixes}} (C);
+\draw[sur] (B) to node[left] {\textit{\footnotesize Loss of V_2 prefixes}} (D);
+\draw[sur] (C) to node[right] {\textit{\footnotesize Loss of V_1 suffixes}} (D);
+\draw[sur] (A2) to node[right] {\textit{\footnotesize Denominal derivation}} (E);
+\draw[peutetre] (X1)--(Y);
+\draw[peutetre] (X2)--(Y);
+\draw[peutetre] (X1)--(A2);
+\draw[peutetre] (X2) to (A2);
+\draw[peutetre] (E) to[bend left] node[right] {\textit{\footnotesize Absorption of denominal prefix}} (D) ;
+\end{tikzpicture}
+\end{figure}
+
+In type A bipartite verbs, the two verbs, though still phonologically two distinct words, are more closely attached to one another than in common serial verb constructions: insertion of linkers is difficult, and the relative order of the two verbs cannot be changed.
+
+Type B and C are intermediate stages from the quasi-serial verb construction (type A) to the quasi-verb compounds (type D). Rather than directly fusing into a phonological word, the two verbs first share either their suffixes or their prefixes; note that the first option is by far the most common. Type C is only attested with the verb \jpg{stu=mbat}{try hard, do one's best}.
+
+Type D verbs are almost identical to compound verbs; the only differences are (a)  absence of \textit{status constructus} vowel alternation on the V_1 (b) presence of stem alternation on the V_1 (c) absence of denominal derivation prefix. Since (a) and (c) are also found on some compound verbs, and since (b) only applies to transitive verbs, some verbs can actually be synchronically analyzed as either bipartite or compound verb.
+
+Thus, in a language whose bipartite verbs are more ancient, and whose grammaticalization process is less transparent than in Japhug, several competing pathways should be postulated and taken as possibilities.
+
+\section{Bipartite verbs in Kiranti} \label{sec:kiranti.bipart}
+Kiranti languages are well-known for having a class of complex predicates combining a lexical verb with an auxiliary, which share some of their person indexation and TAM markers. Example (\ref{ex:ityodzyoyi}) from Khaling shows the verb root \dhatu{tA}{put}\footnote{See \citet{jacques12khaling} for an account of stem alternations in Khaling.} combined with the auxiliary \dhatu{-dzA}{keep on} grammaticalized from the verb \dhatu{dzA}{eat}. The verb and the auxiliary share the second person prefix \ipa{ʔi-}, but the suffixes remain distinct: the auxiliary receives the full form of the suffix \ipa{-ji}, while the lexical verb has a reduced form \ipa{-j-}: dual number is thus redundantly indexed two times in this form.
+
 \begin{exe}
-\ex
+\ex \label{ex:ityodzyoyi}
+\gll \ipa{ʔi-tɵ-j-dzɵ-ji}\\
+2/\textsc{inv}-put-\textsc{du.incl}-keep.on-\textsc{du.incl} \\
+\glt You_{du} keep on putting it.
+\end{exe}
+
+This form is intermediate between types C and D: both verb stems share the same prefixal slot, but the first verb has a phonologically reduced suffixal slot, which cannot be a distinct syllable.
+
+In other Kiranti languages such as Bantawa, bipartite verbs are phonologically less closely integrated. As in Khaling, prefixes only appear once in the bipartite verb; some suffixes are obligatorily redundantly replicated in bipartite verb forms, such as the 1/2 plural \ipa{-in}, while other ones such as the exclusive \ipa{-ka} are not, as illustrated by \refb{ex:kharin}. 
+
+\begin{exe}
+\ex \label{ex:timannin}
 \gll
 \ipa{tɨ-man-nin} \ipa{kʰan-nin} \\
 2-lose-\textsc{1ns$\leftrightarrow$2} send.away-\textsc{1ns$\leftrightarrow$2} \\
-\glt ‘you_s have forgotten us_{pe}’
+\glt ‘You_s have forgotten us_{pe}’ (\citealt[168]{doornenbal09})
 \end{exe}
 
+ \begin{exe}
+\ex  \label{ex:kharin}
+\gll \ipa{kʰar-in} \ipa{lont-in-ka} \\
+go-\textsc{1/2pl} come.out-\textsc{1/2pl-excl} \\
+\glt `We shall rise again.' (\citealt[254]{doornenbal09})
+\end{exe}
+
+We see that bipartite verbs in Bantawa differs from Japhug type C in that only \textit{part} of the suffixal chain is replicated. Interestingly, while we find several type-C-like bipartite verbs in Kiranti, I have not yet been able to find an example of type B bipartite verb in the modern languages.
+
+The Japhug model may also help to historically interpret the origin of \textit{variable prefix ordering}  in Kiranti languages such as Chintang (\citealt{bickel07chintang}) and Bantawa (\citealt[170-172]{doornenbal09}), as illustrated by the following examples :
 
 \begin{exe}
-\ex \label{ex:timankhatda2}
-\gll 
-\ipa{tɨ-man-kʰat-da} \\
-2-\textsc{neg}-go-\textsc{pst} \\
-\ex
-\gll 
-\ipa{man-tɨ-kʰat-da} \\
-\textsc{neg}-2-go-\textsc{pst} \\
-\ex 
-\gll 
-\ipa{man-kʰat-tɨ-da} \\
-\textsc{neg}-go-2-\textsc{pst} \\
-\glt `You did not go.'
+\ex \label{ex:ukosagonde}
+\gll \ipa{u-kos-a-gond-e} \\
+\textsc{3ns.S/A}-walk-\textsc{pst-amb-pst} \\
+\ex \label{ex:kosaugonde}
+\gll \ipa{kos-a-u-gond-e} \\
+walk-\textsc{pst-3ns.S/A-amb-pst} \\
+\glt ‘They walked around.’ (\citealt[51]{bickel07chintang})
 \end{exe}
 
-% \begin{exe}
-%\ex \label{ex:ityodzyoyi2}
-%\gll \ipa{ʔi-tɵ-j-dzɵ-ji}\\
-%2/\textsc{inv}-put-\textsc{du.incl}-keep.on-\textsc{du.incl} \\
-%\glt You_{du} keep on putting it.
+%\begin{exe}
+%\ex \label{ex:timankhatda}
+%\gll 
+%\ipa{tɨ-man-kʰat-da} \\
+%2-\textsc{neg}-go-\textsc{pst} \\
+%\ex
+%\gll 
+%\ipa{man-tɨ-kʰat-da} \\
+%\textsc{neg}-2-go-\textsc{pst} \\
+%\ex 
+%\gll 
+%\ipa{man-kʰat-tɨ-da} \\
+%\textsc{neg}-go-2-\textsc{pst} \\
+%\glt `You did not go.'
 %\end{exe}
+
+Such affix variability has no equivalent in Japhug (and is not found everywhere even in Kiranti; for instance Khaling has a fixed verbal template). To explain the variable placement of the \ipa{u-} person prefix, I propose that Chintang has undergone  fusion from a serial verb construction such as \refb{ex:pchintang};\footnote{This is a schematic representation of the structure of the proto-form; a real reconstruction is not yet possible at this stage of our knowledge of Kiranti historical morphology; in particular, I make no attempt to explain the origin of the \ipa{a/e} alternation of the \textsc{pst} suffix. } at that stage, what became later the ambulative suffix was still a motion verb, inflected like a normal intransitive verb.
+
+\begin{exe}
+\ex \label{ex:pchintang}
+\gll *\ipa{u-kos-e} \ipa{u-gond-e} \\
+\textsc{3ns.S/A}-walk-\textsc{pst} \textsc{3ns.S/A}-walk.around-\textsc{pst} \\
+\end{exe}
+
+
+The integration of the two verb forms into a bipartite verb, following the general pattern in Kiranti, results in only one of the prefixes being kept in the fused form. In example \ref{ex:ukosagonde}, it is the prefix of the V_2 that is lost, as in the type C conjugation found in Japhug. However, Chintang (and Bantawa), unlike Japhug, had the option of preserving the prefix of the V_2 (trapped between the two verb stems) rather than that of the V_1, resulting in form \ref{ex:kosaugonde}.
+
+Given the intricate complexity of variable prefix ordering in Chintang and Bantawa, this hypothesis needs to be tested against the whole corpus of verb forms in these languages, but this research goes beyond the topic of the present paper.
+
+\section*{Conclusion}
+This paper documents the small by puzzling class of bipartite verbs in Japhug, as well as the superficially similar compound verbs. It shows how bipartite verbs have been grammaticalized from a SVC, and how this hypothesis can be used to account for the verbal templates and the variable prefix ordering observed in Kiranti.
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
