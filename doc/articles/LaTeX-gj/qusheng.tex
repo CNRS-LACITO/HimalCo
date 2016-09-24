@@ -15,7 +15,7 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%\bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
@@ -35,9 +35,11 @@
  \newcommand{\bleu}[1]{{\color{blue}#1}}
 \newcommand{\rouge}[1]{{\color{red}#1}} 
 \newcommand{\ch}[3]{\zh{#1} \ipa{#2} `#3'} 
-\newcommand{\dhatu}[2]{|\ipa{#1}| ``#2''}
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\tib}[2]{\ipa{#1} `#2'}
+
 \begin{document} 
-\title{How many *-s suffixes in Old Chinese?\footnote{Acknowledgments will be added after editorial decision. This paper is the revised version of a talk presented at the conference `Recent Advances in Old Chinese Historical Phonology'. I gratefully acknowledge the grant `Beyond Boundaries: Religion, Region, Language and the State' by the ERC. The Japhug examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}).} } %Nathan W. Hill, Laurent Sagart, Scott DeLancey
+\title{How many *-s suffixes in Old Chinese?\footnote{Acknowledgments will be added after editorial decision. This paper is the revised version of a talk presented at the conference `Recent Advances in Old Chinese Historical Phonology'. I gratefully acknowledge the grant `Beyond Boundaries: Religion, Region, Language and the State' by the ERC. The Japhug examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}).} } %Nathan W. Hill, Laurent Sagart, Scott DeLancey, Bettina Zeisler
 \author{Guillaume Jacques}
 \maketitle
  
@@ -168,7 +170,7 @@ Limbu stands out among Kiranti languages with clearly distinct \ipa{-s} causativ
 
 No clear example of causative or applicative \ipa{-d} or \ipa{-s} are found in Tibetan (\citealt[630]{hill14derivational}). In Gyalrongic, only isolated examples are found, mainly with motion verbs. For instance Japhug has \ipa{ɣi} < *\ipa{wi} `come' $\rightarrow$ \ipa{ɣɯt} <  *\ipa{wit} `bring'; note however that despite  the dearth of examples, this pair actually has cognates in Kiranti (Khaling \ipa{|pi|} `come' $\rightarrow$ \ipa{|pit|} `bring'), a fact which strongly supports the idea that this is an archaic feature, reconstructible to the common ancestor of these languages.
 
-In Chinese, \citet{sagart04directions} discovered one direct trace of the applicative *\ipa{-t}  in the following example:\footnote{I reconstruct *\ipa{-l} where \citealt{bs14oc} have *\ipa{-r} in Old Chinese, as (1) this is a way to avoid syllables with medial *\ipa{-r-} and final *\ipa{-r}, a structure disallowed in monomorphemic words in both Tibetic and Gyalrongic languages (\citealt{jacques04these}) and (2) this coda corresponds to \ipa{-l}  in Tibetan in many examples, while correspondences with \ipa{-r} are few and less convincing. (\citealt[101-2]{hill14jrn}).  } 
+In Chinese, \citet{sagart04directions} discovered one direct trace of the applicative *\ipa{-t}  in the following example:\footnote{I reconstruct *\ipa{-l} where \citet{bs14oc} have *\ipa{-r} in Old Chinese, as (1) this is a way to avoid syllables with medial *\ipa{-r-} and final *\ipa{-r}, a structure disallowed in monomorphemic words in both Tibetic and Gyalrongic languages (\citealt{jacques04these}) and (2) this coda corresponds to \ipa{-l}  in Tibetan in many examples, while correspondences with \ipa{-r} are few and less convincing. (\citealt[101-2]{hill14jrn}).  } 
 
  
 
@@ -251,51 +253,52 @@ Finally, some of the pairs which Downer classified as examples of the `restricte
 
 If the comparison between Old Chinese *\ipa{-s} and Khaling \ipa{-si} is indeed valid, it suggests that syllabic suffixes may have lost their vowel in Chinese, leaving only the consonant as a coda. This raises the question whether other examples of the same type can be proposed, but we defer this question to future investigations.
 
-Another language with a possible trace of the \ipa{-si} derivation is Tibetan. As pointed out by \citet{hill14voicing}, we find in Tibetan several triplets of verbs (A, B and C). A-type verbs are intransitive and have voiced initial stops or affricates. B-types verbs are transitive and present a voicing alternation (voiced initial in the Present and Future forms, unvoiced initial in Past and Imperative). In the present form some B-type verbs have a \ipa{-d} suffix that causes fronting of \ipa{a} to \ipa{o}, while other verbs have \ipa{a} to \ipa{o} Umlaut). C-type verbs are intransitive, have unvoiced initials, and \ipa{-s} suffix (when the phonolotactic constraints of the language allows it to surface) and \ipa{a} to \ipa{e} vowel alternation. The following list includes the most representative examples:
+Another language with a possible trace of the \ipa{-si} derivation is Tibetan. As pointed out by \citet{hill14voicing} (see also \citealt{uray53morphology}, \citealt[864]{zeisler04}), we find in Tibetan several triplets of verbs (A, B and C). A-type verbs are intransitive and have voiced initial stops or affricates. B-types verbs are transitive and present a voicing alternation (voiced initial in the Present and Future forms, unvoiced initial in Past and Imperative). In the present form some B-type verbs have a \ipa{-d} suffix that causes fronting of \ipa{a} to \ipa{o}, while other verbs have \ipa{a} to \ipa{o} Umlaut). C-type verbs are intransitive, have unvoiced initials, and \ipa{-s} suffix (when the phonolotactic constraints of the language allows it to surface) and \ipa{a} to \ipa{e} vowel alternation. The following list includes the most representative examples:
 
 \begin{enumerate}
 \item 
-A: ɴgag ‘be stopped, break off’
+A: \tib{ɴgag}{be stopped, break off}
 
-B: ɴgegs, bkag ‘hinder, prohibit’
+B: \tib{ɴgegs, bkag}{hinder, prohibit}
 
-C: kʰegs ‘be hindered, be prohibited’
-
-\item 
-A: gaŋ ‘fill intr.’
-
-B: ɴgeŋs, bkaŋ ‘fill tr.’
-
-C: kʰeŋs ‘be full’
+C: \tib{kʰegs}{be hindered, be prohibited}
 
 \item 
-A: gab ‘hide intr.’
+A: \tib{gaŋ}{fill intr.}
 
-B: ɴgebs, bkab ‘cover tr.’
+B: \tib{ɴgeŋs, bkaŋ}{fill tr.}
 
-C: kʰebs ‘be covered over’
-
-\item 
-A: grol ‘be free’
-
-B: ɴgrol  bkrol ‘liberate’
-
-C: kʰrol ‘unravel’
+C: \tib{kʰeŋs}{be full}
 
 \item 
-A: dul ‘be tame’
+A: \tib{gab}{hide intr.}
 
-B: ɴdul, btul ‘tame, subdue’
+B: \tib{ɴgebs, bkab}{cover tr.}
 
-C: tʰul ‘be tame’
+C: \tib{kʰebs}{be covered over}
 
 \item 
-A: zug ‘pierce, penetrate’
+A: \tib{grol}{be free}
 
-B: ɴdzugs, btsugs ‘plant, establish, insert’
+B: \tib{ɴgrol  bkrol}{liberate}
 
-C: tsʰugs ‘go into, begin’
+C: \tib{kʰrol}{unravel}
+
+\item 
+A: \tib{dul}{be tame}
+
+B: \tib{ɴdul, btul}{tame, subdue}
+
+C: \tib{tʰul}{be tame}
+
+\item 
+A: \tib{zug}{pierce, penetrate}
+
+B: \tib{ɴdzugs, btsugs}{plant, establish, insert}
+
+C: \tib{tsʰugs}{go into, begin}
 \end{enumerate}
+
 \citet{jacques12internal} argues that verbs of type B are the base forms, and that the voicing in the Present and Future stems are due to the a nasal prefix, while type A verbs are derived by anticausative derivation (on which see \citealt{jacques15spontaneous, jacques15causative}). No explanation for type C verbs, however, has ever been proposed.  
 
 Yet, if we accept Jacques's (\citeyear{jacques12internal}) idea that the verb roots in these triplets have unvoiced initials, and that voicing in type A and in Present and Future stem is due to morphological alternations, a solution offers itself: type C verb could be remnants of *\ipa{-si} suffixed middle verbs. This hypothesis explains the three morphological features of type C verbs:
@@ -334,7 +337,7 @@ A few examples of denominal \ipa{-t} are also found in various Kiranti languages
 \subsection{Adverbialization}
 The use of the qusheng  to derive adverbs from verbs or nouns may originate from a locative suffix *\ipa{-s} that is well attested in Tibetan and Gyalrongic languages.
 
-In Tibetan, this suffix is not attested as such, but exists as the \ipa{-s} element in several case markers, including the ergative \ipa{-s}/\ipa{-kʲis}, the comparative \ipa{-bas}, the ablative \ipa{-las} and the elative \ipa{-nas}, the last two of which are compound cases combining the \ipa{-s} element with the allative \ipa{-la} and the locative \ipa{-na} (\citealt{hill12bas}), which are all used to build various types of subordinate clauses (\citealt{tournadre10cases}). It is also found in some adverbs, such as \ipa{jas} `from above'. 
+In Tibetan, this suffix is not attested as such, but exists as the \ipa{-s} element in several case markers, including the ergative \ipa{-s}/\ipa{-kʲis}, the comparative \ipa{-bas}, the ablative \ipa{-las} and the elative \ipa{-nas}, the last two of which are compound cases combining the \ipa{-s} element with the allative \ipa{-la} and the locative \ipa{-na} (\citet{konow09intro},  \citealt{delancey82ergative}, \citealt[282]{zeisler11kenhat}, \citealt{hill12bas}), which are all used to build various types of subordinate clauses (\citealt{tournadre10cases}). It is also found in some adverbs, such as \ipa{jas} `from above'.\footnote{There is some evidence that this \ipa{-s} element had an alternative form \ipa{-se} in Old Tibetan and some modern Tibetan languages (\citealt[280-284]{zeisler11kenhat}), but I defer this question to further research.}
 
 In Gyalrongic, we find a locative \ipa{-s} in Situ (\citealt{linxr93jiarong}) and Tshobdun (\citealt[129]{jackson98morphology}), and a locative clitic \ipa{zɯ} Japhug, which was degrammaticalized from the locative suffix (\citealt[167-9]{jacques08}). In Japhug, this clitic \ipa{zɯ}, in addition to is function as a general locative marker, is commonly used to build subordinate clauses with various semantics (\citealt[275;293]{jacques14linking}), and can directly appear after verbs, sometimes with only a very mild subordinating meaning as in (\ref{ex:anWtWCar}).
 
