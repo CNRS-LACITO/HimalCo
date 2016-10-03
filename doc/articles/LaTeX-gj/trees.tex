@@ -6,13 +6,14 @@
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{multicol} 
-\usepackage{gb4e} 
+
 \usepackage{hyperref} 
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
-
- 
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e}  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} 
@@ -42,31 +43,72 @@ While some innovations can spread quickly to the entire community (or at least t
 
 When language differentiation occurs while forms are still competing, daughter languages can inherit the competing forms; then the innovative form may eventually prevail or disappear in a non-predictable way in each daughter language. If such situation occurs, the distribution of the innovation will not be relatable to the phylogenetic tree.
 
-The distribution of r-metathesis in the word `frost' in Germanic languages is a case in point. As shown in Table \ref{tab:frost} (data from \citealt[157]{kroonen13dict}, \citealt{richthofen1840woerterbuch, bosworth1898dictionary, stratmann1891dictionary}), the form with metathesis \ipa{forst} was in competition with the regular form \ipa{frost} in Old and Middle English and in Old Frisian, but only the latter is found in modern English and Frisian languages. Only Dutch consistently has the form with metathesis from the earliest texts (13^{th} century, \citealt[112]{vaan15dutch}) to modern dialects.
+This phenomenon is most clearly illustrated with analogical levelling in paradigms, though the same 
 
-\begin{table}[h]
-\caption{The distribution of r-metathesis in reflexes of the etymon `frost' in Germanic languages } \centering \label{tab:frost}
-\resizebox{\columnwidth}{!}{
-\begin{tabular}{llllllll}
-\toprule
-\multicolumn{6}{c}{Proto-Germanic \ipa{*frusta-} m./n.}  \\
-\midrule
-Old Norse & \ipa{frost} n. & &&Swedish & \ipa{frost} n. & \\
-Old Saxon & \ipa{frost} m. & \\
-Old English & \ipa{frost}, \ipa{forst} m.\grise{} &Middle E. &\ipa{frost}, \ipa{forst} \grise{} & Modern E.& \ipa{frost} \\
-&&Old F. & \ipa{frost}, \ipa{forst} m.\grise{} & West Frisian &\ipa{froast}\\
-&&&\grise{}&East Frisian & \ipa{fröst} \\
-&&Middle D. & \ipa{vorst} m.\grise{}&Modern Dutch & \ipa{vorst} c.\grise{}& \\
-&&&&German & \ipa{Frost} m.& \\
-\bottomrule
-\end{tabular}}
-\end{table}
+\citet[294]{kroonen13dict}, \citet[71,128]{kroonen11nstems}
 
-Whether r-metathesis in this word is an innovation of the common ancestor of Dutch, English and Frisian, or was diffused through contact after these languages became unintelligible, these data show that competition between \ipa{forst} and \ipa{frost} took centuries in English, and that the archaic form ultimately prevailed, removing any trace that the form with r-metathesis ever existed.
+   \begin{figure}[h]
+   \caption{Several layers of variation: the etymon *\ipa{knabō, knappaz} `boy' in Germanic} \label{fig:knabe}   \centering
+  \begin{tikzpicture}
+  \node (A) at (0,5) {\ipa{*gʰnob-ōn, gʰnob-nós}};
+   \node (B) at (0,3) {\ipa{*knabō, knappaz}};
+   \node (C) at (-3,1) {\ipa{*knabō, knabbaz}};
+   \node (D) at (3,1) {\ipa{*knapō, knappaz}};
+   \node (E) at (-5,-1) {\ipa{*knaban-}};
+   \node (F) at (-2.5,-1) {\ipa{*knabban-}};
+   \node (G) at (2,-1) {\ipa{*knapan-}};
+   \node (H) at (5,-1) {\ipa{*knappan-}};
+   \node (I) at (-6,-3) {OE \ipa{cnafa-}, OHG \ipa{cnafa-}};
+   \node (J) at (-2.5,-3) {OHG \ipa{knappo}};
+   \node (K) at (2,-3) {OE \ipa{cnapa-}, OS \ipa{knapo-}, OD \ipa{knapo-}};
+   \node (L) at (5.5,-4) {OFri. \ipa{knappa}};
+   \node (M) at (-6,-5) {E \ipa{knave}, G \ipa{Knabe}};
+   \node (N) at (-2.5,-5) {G \ipa{Knappe}};
+   \node (O) at (2,-5) {D \ipa{Knaap}};
+\tikzstyle{peutetre}=[->,dotted,very thick,>=latex]
+\tikzstyle{sur}=[->,very thick,>=latex]
+\draw[sur] (A)--(B);
+\draw[peutetre] (B)--(C);
+\draw[peutetre] (B)--(D);
+\draw[peutetre] (C)--(E);
+\draw[peutetre] (C)--(F);
+\draw[peutetre] (D)--(G);
+\draw[peutetre] (D)--(H);
+\draw[sur] (E)--(I);
+\draw[sur] (F)--(J);
+\draw[sur] (G)--(K);
+\draw[sur] (H)--(L);
+\draw[sur] (I)--(M);
+\draw[sur] (J)--(N);
+\draw[sur] (K)--(O);
+\end{tikzpicture}
+\end{figure}
 
-Thus, the distribution of a particular innovation in languages without written records can be misleading: one needs to distinguish between the onset of the innovation, its maximal spread (which would include here Dutch and some English and Frisian speakers) and its eventual fate (restricted to Dutch in this case). 
+%The distribution of r-metathesis in the word `frost' in Germanic languages is a case in point. As shown in Table \ref{tab:frost} (data from \citealt[157]{kroonen13dict}, \citealt{richthofen1840woerterbuch, bosworth1898dictionary, stratmann1891dictionary}), the form with metathesis \ipa{forst} was in competition with the regular form \ipa{frost} in Old and Middle English and in Old Frisian, but only the latter is found in modern English and Frisian languages. Only Dutch consistently has the form with metathesis from the earliest texts (13^{th} century, \citealt[112]{vaan15dutch}) to modern dialects.
+%
+%\begin{table}[h]
+%\caption{The distribution of r-metathesis in reflexes of the etymon `frost' in Germanic languages } \centering \label{tab:frost}
+%\resizebox{\columnwidth}{!}{
+%\begin{tabular}{llllllll}
+%\toprule
+%\multicolumn{6}{c}{Proto-Germanic \ipa{*frusta-} m./n.}  \\
+%\midrule
+%Old Norse & \ipa{frost} n. & &&Swedish & \ipa{frost} n. & \\
+%Old Saxon & \ipa{frost} m. & \\
+%Old English & \ipa{frost}, \ipa{forst} m.\grise{} &Middle E. &\ipa{frost}, \ipa{forst} \grise{} & Modern E.& \ipa{frost} \\
+%&&Old F. & \ipa{frost}, \ipa{forst} m.\grise{} & West Frisian &\ipa{froast}\\
+%&&&\grise{}&East Frisian & \ipa{fröst} \\
+%&&Middle D. & \ipa{vorst} m.\grise{}&Modern Dutch & \ipa{vorst} c.\grise{}& \\
+%&&&&German & \ipa{Frost} m.& \\
+%\bottomrule
+%\end{tabular}}
+%\end{table}
+%
+%Whether r-metathesis in this word is an innovation of the common ancestor of Dutch, English and Frisian, or was diffused through contact after these languages became unintelligible, these data show that competition between \ipa{forst} and \ipa{frost} took centuries in English, and that the archaic form ultimately prevailed, removing any trace that the form with r-metathesis ever existed.
+%
+%Thus, the distribution of a particular innovation in languages without written records can be misleading: one needs to distinguish between the onset of the innovation, its maximal spread (which would include here Dutch and some English and Frisian speakers) and its eventual fate (restricted to Dutch in this case). 
 
-Thus, while \citet[178]{francois15tree} puts much value on \textit{lexically-specific sound changes}, arguing that they are ``strongly indicative of genealogy, because they are unlikely to diffuse across separate languages'', the example of the etymon `frost' in Germanic shows that the observable distribution of a sporadic innovation in the present may not be identical to its spread in the past. Failure to distinguish between the two will naturally introduce non-tree-like patterns in the data.
+Thus, while \citet[178]{francois15tree} puts much value on \textit{lexically-specific sound changes}, arguing that they are ``strongly indicative of genealogy, because they are unlikely to diffuse across separate languages'', 
 
 
 \subsection{Limitations of Sound Correspondences to Identify Lexical Innovations}
