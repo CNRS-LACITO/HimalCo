@@ -1,0 +1,88 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{tangutex2} 
+\usepackage{tangutex4}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+%\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+ 
+
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn#1}}
+\newcommand{\topic}{\textsc{dem}}
+\newcommand{\tete}{\textsuperscript{\textsc{head}}}
+\newcommand{\rc}{\textsubscript{\textsc{rc}}}
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG 
+\newcommand{\refb}[1]{(\ref{#1})} 
+ 
+\newcommand{\tgf}[1]{\begin{tabular}{l}\mo{#1}\\{\tiny #1}\end{tabular}}
+\begin{document} 
+
+\title{Report on Alan T. Downes's PhD Thesis `How does the Tangut script work'}
+\author{Guillaume Jacques}
+\maketitle
+
+\section*{Introduction}
+Commended for using \LaTeX
+
+
+\section{`How does the Tangut script work phonetically'}
+The first chapter of this dissertation presents an analysis of the Tangut script itself, using a cleverly designed alphacode representing the structure of characters with Latin letters. This system, used throughout the dissertation, is an undeniably useful innovation. However, it should be mentioned a similar alphacode has been devised before by David Boxenhorn and used by Marc Miyake, and would deserve mention in this dissertation.
+
+The author should be commended for introducing computational techniques to the study of the Tangut script, but chapter 1 critically lacks any mention of the phonetic reconstruction of Tangut. This absence is all the less forgiveable that a complete list of Gong Hwangcherng's reconstructions  is available online (on Andrew West's website) so that it should be trivial to add it automatically throughout the whole dissertation (I will comment on this issue in more detail below).
+
+In addition, this chapter completely lacks a comparison of the phonological reconstruction and of the structure of the characters, so that the title of the chapter is a misnomer. I suggest to flesh out this short chapter by including a thorough comparison between, which should be feasible in a relatively trivial way if the author is a competent programmer.
+
+In addition, this chapter completely neglects previous work on the analysis of the script, in particular \citet{gong84}. 
+
+I wish to stress the fact that the present reconstruction system of Tangut is not controversial anymore; no serious Tangutologist subscribes to Kwanten's fantasies about the script representing an `Altaic' language distinct from the readings obtained from the Zhangzhongzhu, the fanqie of the Wenhai and the homophones.
+
+That the current system of reconstruction faithfully represents at least the phonological system of Tangut (the phonetic value of the phonological categories, of course, is a different matter) is shown by the fact that the phonetic values reconstructed from this system matches Tibetan transcriptions (\citealt{nie86qianjiazi, tai08duiyin}), and the modern Gyalrongic languages not only phonologically, but also in fine details of morphology (\citealt{jacques14esquisse}, \citealt{gong16stems}).
+
+
+\section{`How does the Tangut script work grammatically'}
+This chapter presents a brief (42 pages) account of Tangut morphosyntax, mainly based on \citet{kepping85}. 
+
+This chapter does contain valuable information about Tangut grammar, but presented in an unordered list, without any attempt at linguistic analysis. Given the recent progress in Tangut synchronic and historical linguistics, this chapter is in some way a step backwards to the era when Tangut was still a mere philological curiosity, rather than a language that can be studied in its own right.
+
+As in the first chapter, the absence of phonetic reconstruction is a major problem, as it makes any comparison between Tangut and its better understood modern relatives impossible. This problematic for three main reasons.
+
+First, this work neglects the crucial difference between affix on the one hand and clitic/function word on the other hand. While this difference is not overtly marked in the Tangut script, comparison with modern languages reveals that many character represent prefixes or suffixes rather than particles (see \citealt{jacques11tangut.verb} for an account of the Tangut verbal template).
+
+Second, the brief account of person indexation p.66 does not do justice to this highly important (and controverted) topic. It is crucial in particular to highlight the fact that in Tangut person is not only marked by suffixes, but also by stem alternation (on which see \citealt{gong01huying}, \citealt{jacques09tangutverb} and \citealt{gong16stems}; on the controversy regarding the nature of person indexation in Tangut, see \citealt{jacques16th}).
+ 
+ Third, postpositions in Tangut (discussed p. 53) are remarkably similar to those of Stau (see \citealt{jacques17stau}), and a comparison between the two languages could help in ascertaining the precise function of some of these markers.
+
+While a more detailed grammatical description of Tangut is a \textit{desideratum}, it is in itself a topic too large for a PhD dissertation, and even more for a thesis chapter. In addition, an enterprise of this type should be grounded in linguistic typology, using the cumulative knowledge on linguistic structure in the world's languages that has come to be referred to as  basic linguistic theory' (\citealt{dixon10basic2}). In its present form, the chapter amounts to little more than list of characters and examples of their uses in texts, without any commentary or explanation. It appears to have been hastily put together and does not meet the expectation of a PhD dissertation.
+
+\section{`How does the Tangut script work in the wild'}
+This last section is the most important contribution of this dissertation. The author should be commended for the painstaking work of transcribing such a huge quantity of data and for providing a translation which, though based on Kychanov's Russian rendering of the text, is an original piece of work and a genuine contribution to Tangut studies.
+
+The choice of the law code is judicious, as this text is of great importance for the study of Tangut history and has never been edited in a way that allows automatic search.
+
+It should be noted that the translation of the title of this book is misleading; `Prosperous Kingdom of Heaven' (adapted from Kychanov's translation) refers to the era name \tgf{0510}\tgf{0496} \ipa{ŋwər¹ljịj¹} (Chinese \zh{天盛}, 1149-1169) and it is better in my view to keep these names untranslated.
+
+\section*{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
