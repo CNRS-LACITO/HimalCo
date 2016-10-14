@@ -1,0 +1,155 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{lineno}
+\usepackage{polyglossia}
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol,multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{slashbox} 
+\usepackage{rotating}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+\usepackage{tangutex2}
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon#1}} %API tjs en italique
+\newcommand{\ipapl}[1]{{\phon#1}} %API tjs en italique
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn#1}}
+
+\newcommand{\jg}[1]{\ipa{#1}\index{Japhug #1}}
+\newcommand{\wav}[1]{#1.wav}
+\newcommand{\tgf}[1]{\begin{tabular}{l}\mo{#1}\\{\tiny #1}\end{tabular}}
+
+\XeTeXlinebreaklocale 'zh' %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ \newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+
+
+ \sloppy
+\begin{document} 
+
+
+\title{Tangut morphology in comparative perspective}
+\author{Guillaume Jacques}
+\maketitle
+
+\section*{Introduction}
+ \citet{jacques14esquisse}
+
+\section{Case markers and postpositions}
+Tangut has a large number of postpositions, of which  a considerable number have cognates in modern West Gyalrongic languages, as shown in Table \ref{tab:postpositions} (\citealt{jacques17stau}). Kepping's (\citeyear[144-164]{kepping85}) description of the uses of these postpositions is still unsurpassed, but our improved knowledge of Gyalrongic languages allows new insights on the history of the system. 
+
+\begin{table}[H]
+\caption{Case markers and postpositions in Stau, Khroskyabs and Tangut}\label{tab:postpositions} \centering
+\begin{tabular}{ll|ll|llllll}
+\toprule
+Stau && Khroskyabs && Tangut & \\
+\hline
+\ipa{-w} & \textsc{erg} &&& \mo{5880} \ipa{ŋwu²} & instrumental \\
+\ipa{-j} & \textsc{gen} &\ipa{-ji} &\textsc{gen} &\mo{1139} \ipa{.jij¹} & accusative, genitive, dative\\
+\ipa{-ʁa} & \textsc{all} & \ipa{-ʁɑ} & \textsc{loc} & \mo{5856} \ipa{ɣa²} & locative \\
+\ipa{-tɕʰa} & \textsc{loc} &&& \mo{0089} \ipa{tɕʰjaa¹}  & on \\
+\ipa{-kʰa} & \textsc{instr} &&& \mo{5993} \ipa{kʰa¹}  &in the middle of \\
+\toprule
+\end{tabular}
+\end{table}
+
+Two postpositions are used for core arguments: the agentive \mo{5604}\mo{5113} \ipa{dʑjɨ.wji¹} and the highly polyfunctional marker \mo{1139} \ipa{.jij¹}.
+
+The agentive in Tangut is obviously grammaticalized from a phrase meaning `doing the action' (\citealt[145]{kepping85}, \citealt{jacques14ergative}). Examples such as \refb{ex:tg:pilier} are very rare in texts. It has no cognates in the modern languages; Gyalrongic languages either have an ergative marker borrowed from Tibetan (on which see \citealt{jacques16comparative}), or a suffix cognate with the instrumental \mo{5880} \ipa{ŋwu²} discussed below.
+
+ 
+\begin{exe}
+\ex \label{ex:tg:pilier}   
+\glt \tgf{2736} 	\tgf{3628} \tgf{5604} 	\tgf{5113} 	\tgf{4880} 	\tgf{4399} 	\tgf{2590} 	\tgf{5755} 	\tgf{0749} \\
+\gll   \ipa{biaa²ɣjwã¹}	\ipa{dʑjɨ.wji¹}	\ipa{rər²}	\ipa{dzjị²}	\ipa{.wjɨ²-.jar¹-phji¹} \\
+		Ma.Yuan	\textsc{agentive}		bronze	pillar	\textsc{pfv}-stand.up-\textsc{caus}[A] \\
+\glt `Ma Yuan had bronze pillars erected.' (Leilin 04.34B.7)
+\end{exe}
+
+The postposition  \mo{1139} \ipa{.jij¹} has no less than three main functions (\citealt[145-7]{kepping85}).
+
+Genitive Object Recipient
+
+\citet[147]{kepping85} also notices a pair of examples such as \ref{ex:jij.subj} where 
+\mo{1139} \ipa{.jij¹} appears on a pronoun or a noun phrase referring to the subject of an intransitive verb.
+
+ \begin{exe}
+\ex \label{ex:jij.subj}
+\glt \tgf{4028} 	\tgf{1139} 	\tgf{4274} 	\tgf{4250} 	\tgf{0151} 	\tgf{5399} 	\tgf{3099} 	\tgf{4508} 	\tgf{5981} 	\tgf{4670} 	\tgf{2590} 	\tgf{4658} 	\tgf{0749} 	\tgf{2098} 	
+\gll\ipa{nji²} 	\ipa{.jij¹} 	\ipa{sow¹-sji¹} 	\ipa{ɕjuu¹} 	\ipa{khju¹} 	\ipa{dʑjiij¹} 	\ipa{tjị} 	\ipa{.a-tsjwu¹} 	\ipa{.wjɨ²-thji¹-phji¹-ŋa²} 	\\
+\textsc{2sg:hon} \textsc{gen} mulberry-tree shady.place under remain food one-\textsc{cl} \textsc{imp}-ingest-\textsc{caus-1sg} \\
+\glt `You, who are sitting in the shade of this mulberry, give me some food to eat.' (Leilin 06.01B.4)
+\end{exe}
+ 
+ \begin{exe}
+\ex 
+\glt  \tgf{3951} 	\tgf{2946} 	\tgf{5037} 	\tgf{5880} 	\tgf{0764} 	\tgf{3990} 	\tgf{4342} 	\tgf{0390} 	\tgf{5113} 
+\gll \ipa{thu¹ko¹} 	\ipa{bjɨr¹-ŋwu²} 	\ipa{rjijr¹} 	\ipa{khjɨ¹} 	\ipa{dja²-khjwɨ¹-.wji¹}  \\
+Tugang sword-\textsc{instr} horse foot \textsc{pfv}-cut-do[A] \\
+\glt `Tugang chopped the horse's foot with his sword.' (Leilin 03.24A.6)
+\end{exe}
+
+
+ \section{Orientation prefixes}
+ 
+ 
+
+ \section{Person indexation}
+
+\subsection{Person suffixes}
+
+\citet{jacques16th}
+\subsection{Stem alternation}
+
+\citet{gong01huying}
+\citet{jacques09tangutverb}
+\citet{gong16stems}
+
+
+ 
+
+\begin{exe}
+\ex 
+\glt \tgf{2975}	\tgf{3819}	\tgf{4342}	\tgf{1105}	\tgf{3621}	\tgf{0481}	\tgf{4517}	\tgf{2104}	\tgf{1473}	\tgf{5981}	\tgf{3506}	\tgf{3621}
+\gll \ipa{tsjiir¹.lu²}	\ipa{dja²-khjow¹-.wjo²}	\ipa{.jir¹}	\ipa{dzji¹}	\ipa{ɕji¹}	\ipa{su¹}	\ipa{.a-bjịj¹-.wjo¹} \\
+rank \textsc{imp}-give-do[B] emolument eat before \textsc{comp} \textsc{imp}-raise-do[B] \\
+\glt `Give (Mengchangjun) back his rang, and raise his emolument higher than before!" (\citealt[40;189]{solonin95})
+\end{exe}
+
+ \section{Modality and evidentiality}
+ 
+ \citet{jacques09tangutverb}
+ \ipa{ə-tɕə-jə-rə-mɔ}
+ 
+
+ \section{Traces of derivational morphology}
+
+\subsection{Anticausative}
+
+\subsection{Sibilant causative}
+
+\subsection{Labial causative}
+
+\subsection{Abilitative}
+
+\subsection{Nominalization}
+
+\phon
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
