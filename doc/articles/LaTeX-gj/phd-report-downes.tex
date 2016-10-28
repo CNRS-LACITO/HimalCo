@@ -1,5 +1,6 @@
 \documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
+\usepackage[CJK, overlap]{ruby}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
@@ -34,7 +35,9 @@
  %CIRCG 
 \newcommand{\refb}[1]{(\ref{#1})} 
  
-\newcommand{\tgf}[1]{\begin{tabular}{l}\mo{#1}\\{\tiny #1}\end{tabular}}
+\newcommand{\tgf}[1]{\ruby{{\mo{#1}}}{#1}}
+\renewcommand{\rubysep}{0.1ex}
+ \sloppy
 \begin{document} 
 
 \title{Report on Alan T. Downes's PhD Thesis `How does the Tangut script work'}
@@ -42,11 +45,13 @@
 \maketitle
 
 \section*{Introduction}
-Commended for using \LaTeX
+This dissertation is a very promising piece of work, which demonstrates that the candidate has mastered both the Tangut script and programming skills (including Python and \LaTeX). 
+
+While this work does contain genuine contributions to the field, it is at the present moment in a format that makes it difficult to use for potentially interested readers. Here is a series of suggestions on how the author could improve his work.
 
 
 \section{`How does the Tangut script work phonetically'}
-The first chapter of this dissertation presents an analysis of the Tangut script itself, using a cleverly designed alphacode representing the structure of characters with Latin letters. This system, used throughout the dissertation, is an undeniably useful innovation. However, it should be mentioned a similar alphacode has been devised before by David Boxenhorn and used by Marc Miyake, and would deserve mention in this dissertation.
+The first chapter of this dissertation presents an analysis of the Tangut script itself, using a cleverly designed alphacode representing the structure of characters with Latin letters. This system, used throughout the dissertation, is an undeniably useful innovation, explained in more detail in the author's MA; a more detailed presentation of this alphacode should have been included in this chapter, even if redundant with the author's MA. In addition, it should be mentioned a similar alphacode has been devised before by David Boxenhorn and used by Marc Miyake, and would deserve mention in this dissertation.
 
 The author should be commended for introducing computational techniques to the study of the Tangut script, but chapter 1 critically lacks any mention of the phonetic reconstruction of Tangut. This absence is all the less forgiveable that a complete list of Gong Hwangcherng's reconstructions  is available online (on Andrew West's website) so that it should be trivial to add it automatically throughout the whole dissertation (I will comment on this issue in more detail below).
 
@@ -74,14 +79,22 @@ Second, the brief account of person indexation p.66 does not do justice to this 
 
 While a more detailed grammatical description of Tangut is a \textit{desideratum}, it is in itself a topic too large for a PhD dissertation, and even more for a thesis chapter. In addition, an enterprise of this type should be grounded in linguistic typology, using the cumulative knowledge on linguistic structure in the world's languages that has come to be referred to as  basic linguistic theory' (\citealt{dixon10basic2}). In its present form, the chapter amounts to little more than list of characters and examples of their uses in texts, without any commentary or explanation. It appears to have been hastily put together and does not meet the expectation of a PhD dissertation.
 
+My suggestion would be to focus on a selected number of grammatical morphemes and study them in more detail using available searchable texts, such as the one studied in chapter 3, Leilin (provided as a supplementary file to \citealt{jacques16th}) and the Cixiaozhuan (\citealt{jacques07textes}).
+
 \section{`How does the Tangut script work in the wild'}
 This last section is the most important contribution of this dissertation. The author should be commended for the painstaking work of transcribing such a huge quantity of data and for providing a translation which, though based on Kychanov's Russian rendering of the text, is an original piece of work and a genuine contribution to Tangut studies.
 
+It should be noted that the translation of the title of this book is misleading; `Prosperous Kingdom of Heaven' (adapted from Kychanov's translation) refers to the era name \tgf{0510}\tgf{0496} \ipa{ ŋwər¹ljịj¹} (Chinese \zh{天盛}, 1149-1169) and it is better in my view to keep these names untranslated.
+
 The choice of the law code is judicious, as this text is of great importance for the study of Tangut history and has never been edited in a way that allows automatic search.
 
-It should be noted that the translation of the title of this book is misleading; `Prosperous Kingdom of Heaven' (adapted from Kychanov's translation) refers to the era name \tgf{0510}\tgf{0496} \ipa{ŋwər¹ljịj¹} (Chinese \zh{天盛}, 1149-1169) and it is better in my view to keep these names untranslated.
+As such, it is actually a shame that the data in chapter  3 is never referred to in chapter 2; one of the interests of making databases of Tangut texts is precisely to be able make automatic search and concordances, allowing a more systematic study of grammatical morphemes. There surely are examples sentences in chapter 3 that could be re-used to flesh out chapter 2.
+
+\section{Software}
+The dissertation should of course be evaluated together with the software developed by the author. Unfortunately, appendix A does not give the precise URL for the code and the executable file, and despite research on google I was unable to find it. I suggest, for the corrected version of the dissertation, to submit all relevant files together with the paper version.
 
 \section*{Conclusion}
+This dissertation, in its present form is a very promising, but still unfinished piece of work. It is in the candidate's best interest to write a dissertation that is usable and citable by the largest possible readership, including traditional linguists (typologists and historical linguists), philologists and computational linguists, and I believe it would be a disservice to him to finalize the dissertation in its current shape.
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
