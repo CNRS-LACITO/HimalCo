@@ -20,8 +20,8 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon #1}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} %API tjs en italique
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
@@ -29,23 +29,24 @@
 \newcommand{\tld}{\textasciitilde{}}
 
 \begin{document} 
- \title{The origin of comitative adverbs in Japhug}
- \author{Guillaume Jacques}
+ \title{The origin of comitative adverbs in Japhug\footnote{I would like to thank Andrej Malchukov and an anonymous reviewer for useful comments. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). }}
+ \author{Guillaume Jacques }
  \maketitle 
  
- %Acknow: Andrej Malchukov
  \linenumbers 
 
-\section{Introduction}
-This paper discusses the origin of comitative adverbs in Japhug and other Gyalrong languages. These adverbs, only attested in the core Gyalrong languages, are a relatively recent innovations in these languages, and provide an interesting case study to investigate the origin of comitative constructions in the world's languages.
+\section*{Introduction}
+This paper discusses the origin of comitative adverbs in Japhug and other Gyalrong languages. These adverbs, only attested in the core Gyalrong languages, are a relatively recent innovation in these languages, and provide an interesting case study to investigate the origin of comitative constructions in the world's languages.
 
 
-The paper contains three sections.  First, I provide background information on the morphological expression of possession in Japhug nouns, which must be taken into consideration in all types of denominal derivations, including that of comitative adverbs. Second, I describe the syntactic morphological and syntactic properties of comitative adverbs. Third, I propose a grammaticalization hypothesis to account for their origin, involving comparison with the closely related Tshobdun language, and show that the pathway in question has not been previously proposed for comitative markers.
+The paper contains four sections.  First, I provide background information on Japhug and the other Gyalrongic languages. Second, I describe the morphological expression of possession in Japhug nouns, which must be taken into consideration in all types of denominal derivations, including that of comitative adverbs. Third, I discuss the syntactic morphological and syntactic properties of comitative adverbs. Fourth, I propose a grammaticalization hypothesis to account for their origin, involving comparison with the closely related Tshobdun language, and show that the pathway in question has not been previously proposed for comitative markers.
+
+ \section{Japhug and Gyalrongic languages} 
 
  \section{Inalienably possessed nouns} 
-Japhug nouns can be divided into inalienably possessed nouns (IPN) and non-inalienably possessed nouns (NIPN). IPN differ from NIPN in that they require the presence of one of the possessive prefixes (Table \ref{tab:possessive}), while NIPN can appear as their bare stem without any possessive prefix. The IPN / NIPN distinction is not completely predictable: although all body parts and kinship terms are IPN, we also find some (but not all) clothes, implements and abstract notions (like thought, debt, sleep etc).
+Japhug nouns can be divided into inalienably possessed nouns (IPN) and non-inalienably possessed nouns (NIPN). IPN differ from NIPN in that they require the presence of one of the possessive prefixes (Table \ref{tab:possessive}), while NIPN can appear as their bare stem without any possessive prefix. The IPN / NIPN distinction is not completely predictable: although all body parts and kinship terms are IPN, we also find nouns referring to (but not all) clothes (\ipa{tɯ-ŋga} `clothes', \ipa{tɯ-xtsa} `shoes' etc), some implements (\ipa{tɤ-mkɯm} `pillow'), and abstract concepts (\ipa{tɯ-sɯm} `thought', \ipa{tɯ-ʑɯβ} `sleep', \ipa{tɯ-pʰɯ} `price', \ipa{-nŋa} `debt', \ipa{tɯ-kʰɯr} `official position' etc). Note that IPN can refer to entities or properties that are not necessarily permanently and definitively associated with the possessor, as is the case with clothes and concepts like `debt' or `official position', but that are not freely removable during at least a specified time (the time of wake in the case of `clothes', the time of sleep in the case of `pillow', the period between contracting the debt and repaying it in the case of `debt' etc).
 
-When no definite possessor is present, IPN take one of the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--}. This form is used as their citation form (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The distribution of the prefixes \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). 
+When no definite possessor is present, IPN take one of the indefinite possessive prefixes \ipa{tɤ--} or \ipa{tɯ--}. The citation form of IPN is built by combining one of the indefinite prefixes with the noun stem (\ipa{tɤ-lu} `milk', \ipa{tɯ-ŋga} `clothes', \ipa{tɤ-rpɯ} `uncle', \ipa{tɯ-ci} `water'). The distribution of the prefixes \ipa{tɤ--} vs \ipa{tɯ--} is lexically determined.  When a specific possessor is present, the indefinite prefix is replaced by the appropriate possessive prefix (\ipa{ɯ-lu} `her/its milk (from her nipple)', \ipa{a-ŋga} `my clothes', \ipa{nɤ-rpɯ} `your uncle', \ipa{ɯ-ci} `its juice'). 
 
 Although the generic possessive prefix \ipa{tɯ--} is homophonous with one of the indefinite possessive prefixes, the two are semantically distinct (compare \ipa{tɤ-se} \textsc{indef.poss}-blood `blood' with \ipa{tɯ-se} \textsc{genr.poss}-blood `one's/people's blood').
 
@@ -73,7 +74,7 @@ Although the generic possessive prefix \ipa{tɯ--} is homophonous with one of th
 \end{tabular}
 \end{table}
 
-It is possible to turn an IPN into an NIPN by prefixing a definite possessive prefix to the indefinite one, as in \ipa{ɯ-tɤ-lu} \textsc{3sg.poss-indef.poss}-milk `his milk (to drink)', \ipa{ɯ-tɯ-ci} \textsc{3sg.poss-indef.poss}-water `its water (of irrigated water, to a plant)'. NIPN cannot take indefinite possessive prefixes. However, they are compatible with the human generic possessor prefix \ipa{tɯ--}, as in example \ref{ex:tWlaXtCha}, where the nouns \ipa{kha} `house' and \ipa{laχtɕha} `thing' are NIPN.
+It is possible to turn an IPN into an NIPN by prefixing a definite possessive prefix to the indefinite one, as in \ipa{ɯ-tɤ-lu} \textsc{3sg.poss-indef.poss}-milk `his milk (to drink)', \ipa{ɯ-tɯ-ci} \textsc{3sg.poss-indef.poss}-water `its water (of irrigated water, to a plant)'.\footnote{A similar phenomenon is reported in Tshobdun (\citealt[140]{jackson98morphology})} NIPN cannot take indefinite possessive prefixes. However, they are compatible with the human generic possessor prefix \ipa{tɯ--}, as in example \ref{ex:tWlaXtCha}, where the nouns \ipa{kha} `house' and \ipa{laχtɕha} `thing' are NIPN.
 
 \begin{exe}
 \ex \label{ex:tWlaXtCha}
@@ -158,7 +159,7 @@ cat \textsc{comit}-offspring \textsc{pl}  \textsc{erg} \textsc{emph} mouse \text
 \glt The cat and its young ate the mouse. (elicited)
 \end{exe}
 
-Nouns incorporated into comitative adverbs lose their nominal status and cannot be determined by relative clauses (including attributive adjectives), numerals or demonstratives. In a sentence such as \ref{ex:kAGWNkhWNkhor} for instance, the attributive participial relative [\ipa{kɯ\tld{}kɯ-ŋɤn}] `all the ones who are evil' does not determine \ipa{kɤɣɯ-ŋkhɯ\tld{}ŋkhor} `with his subjects', a syntactic structure which would entail the translation `with all his evil subjects'. Rather, it determines the head noun together with the comitative adverb  \ipa{rɟɤlpu} \ipa{kɤɣɯ-ŋkhɯ\tld{}ŋkhor} `the king with his subjects', which implies the translation given below.
+Nouns incorporated into comitative adverbs lose their nominal status and cannot be determined by relative clauses (including attributive adjectives), numerals or demonstratives. In a sentence such as \ref{ex:kAGWNkhWNkhor} for instance, the attributive participial relative [\ipa{kɯ\tld{}kɯ-ŋɤn}] `all the ones who are evil' does not determine \ipa{kɤɣɯ-ŋkhɯ\tld{}ŋkhor} `with his subjects', a syntactic structure which would correc the translation `with all his evil subjects'. Rather, it determines the head noun together with the comitative adverb  \ipa{rɟɤlpu} \ipa{kɤɣɯ-ŋkhɯ\tld{}ŋkhor} `the king with his subjects', which implies the translation given below.
 
 \begin{exe}
 \ex \label{ex:kAGWNkhWNkhor}
@@ -254,7 +255,7 @@ the.aforementioned woman \textsc{dem} \textsc{nmlz}:S/A-have.many.children \text
 
 
 
-\subsection{Grammaticalization pathway}
+\subsection{Reanalysis}
 The formal ambiguity between the comitative adverbs on the one hand, and the participles and infinitives of \ipa{aɣɯ--} denominal verbs on the other hand, together with the semantic proximity of the two forms, raise the question of their potential historical relatedness.
 
 An obvious possibility is that comitative adverb originate from the reanalysis of infinitival forms of reduplicated \ipa{aɣɯ--} denominal verbs. Ambiguous sentences like \ref{ex:kAGWrtWrtaR} actually constitute the pivot constructions which allow reanalysis in contexts where both proprietive (`having X') and a comitative (`with X') interpretations were possible.
@@ -285,16 +286,16 @@ The pathway presented above accounts well for the \ipa{kɤɣɯ--} type comitativ
 
 Comitative adverbs in \ipa{kɤ́--} are anomalous in Japhug in being among the very few prefixes attracting stress, a feature that could indicate fusion of two syllables (for instance the negative sensory marker \ipa{mɯ́j-} probably historically results from the fusion of the negative \ipa{mɯ--} and the sensory prefix \ipa{ɲɯ--}).
 
-If the sound laws of Japhug (\citealt{jacques04these}) are applied backwards, the prefix \ipa{kɤɣɯ--} would go back to pre-Japhug *\ipa{kɐwə--}. We know that in Tshobdun, *\ipa{wə} changes to \ipa{o}. It is in particular the case of the inverse prefix \ipa{o--} (\citealt{jackson02rentongdengdi}) which originates from proto-Gyalrong *\ipa{wə}). Through vowel fusion (which also occurs with the inverse prefix), \ipa{ko--}, the actual form of the comitative prefix (\citealt[107]{jackson98morphology}), is the expected outcome of *\ipa{kɐwə--}. We can therefore safely conclude that (1) the comitative prefixes \ipa{kɤɣɯ--} in Japhug and \ipa{ko--} in Tshobdun are cognate and (2) that the grammaticalization in \ref{kAGW-pathway} took place before the split of Japhug and Tshobdun, and show be reconstructed back at least to their common ancestor.
+If the sound laws of Japhug (\citealt{jacques04these}) are applied backwards, the prefix \ipa{kɤɣɯ--} would go back to pre-Japhug *\ipa{kɐwə--}. We know that in Tshobdun, *\ipa{wə} regularly corresponds to \ipa{o}. It is in particular the case of the inverse prefix \ipa{o--} (\citealt{jackson02rentongdengdi}) which originates from proto-Gyalrong *\ipa{wə}). Through vowel fusion (which also occurs with the inverse prefix), \ipa{ko--}, the actual form of the comitative prefix (\citealt[107]{jackson98morphology}), is the expected outcome of *\ipa{kɐwə--}. We can therefore safely conclude that (1) the comitative prefixes \ipa{kɤɣɯ--} in Japhug and \ipa{ko--} in Tshobdun are cognate and (2) that the grammaticalization in \ref{kAGW-pathway} took place before the split of Japhug and Tshobdun, and show be reconstructed back at least to their common ancestor.
 
-The comitative prefix \ipa{kɤ́--} in Japhug, on the other hand, makes no sense from a Japhug-internal perspective. A possible way to explain it however, it to suppose \textit{borrowing} from Tshobdun \ipa{ko--}. Japhug, and especially the Kamnyu variety described in the present paper, has borrowed a few nouns from Tshobdun, as shown by forms such as \ipa{qro} `ant', \ipa{qaliaʁ} `eagle' and \ipa{tɯɟo} `demon' instead of expected *\ipa{qroʁ}, *\ipa{qarɟaʁ} (attested in some dialects of Japhug) and *\ipa{tɯʑu}, following the sound laws set out in \citet{jacques04these}.
+The comitative prefix \ipa{kɤ́--} in Japhug, on the other hand, makes no sense from a Japhug-internal perspective. A possible way to explain it however, is to suppose \textit{borrowing} from Tshobdun \ipa{ko--}. Japhug, and especially the Kamnyu variety described in the present paper, has borrowed a few nouns from Tshobdun, as shown by forms such as \ipa{qro} `ant', \ipa{qaliaʁ} `eagle' and \ipa{tɯɟo} `demon' instead of expected *\ipa{qroʁ}, *\ipa{qarɟaʁ} (attested in some dialects of Japhug) and *\ipa{tɯʑu}, following the sound laws set out in \citet{jacques04these}.
 
 Borrowing of Tshobdun \ipa{ko--} as Japhug \ipa{kɤ́--} is not surprising phonologically. The stress on the prefix in Japhug is probably a trace of the stress on that prefix in pre-Tshobdun, lost due to the strong tendency of Gyalrong languages to stress the final or penultimate syllable (\citealt{jackson05yingao}). The vowel \ipa{ɤ} rather than \ipa{o} is a consequence of the fact that derivational prefixes in Japhug have strong phonolotactic constrainst: the only possible vowels are either \ipa{ɤ} or \ipa{ɯ} (and \ipa{a}, but only in the case of stem-initial \ipa{a--}).
 
 The borrowing hypothesis also accounts for the complete homonymy of the two comitative prefixes in Japhug.
 
-\section{Conclusion} 
-The contribution of this paper is threefold. First, it provides the first detailed description of comitative adverbs in any Gyalrong language. Second, it shows that language contact between Gyalrong languages is not restricted to the lexicon, but actually also involves clear cases of borrowing of grammatical morphemes. Third, provides a example of evolution with clear directionality from \textsc{proprietive} to \textsc{comitative}.
+\section*{Conclusion} 
+The contribution of this paper is threefold. First, it provides the first detailed description of comitative adverbs in any Gyalrong language. Second, it shows that language contact between Gyalrong languages is not restricted to the lexicon, but actually also involves clear cases of borrowing of grammatical morphemes. Third, it provides a example of evolution with clear directionality from \textsc{proprietive} to \textsc{comitative}.
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
