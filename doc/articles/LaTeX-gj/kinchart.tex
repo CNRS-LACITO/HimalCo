@@ -62,6 +62,10 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \node(mbss2) [anchor=mid]  at (4.5,-4.4) {\ipa{tɤ-rpɯ}};
 \node(mbsd) [circle, fill, draw] at (5.5,-4) {};
 \node(mbsd2) [anchor=mid]  at (5.5,-4.4) {\ipa{tɤ-ɬaʁ}};
+\node(mbsss) [triangle, fill, draw] at (4.5,-6) {};
+\node(mbsss2) [anchor=mid]  at (4.5,-6.4) {\ipa{tɤ-rpɯ}};
+\node(mbssd) [circle, fill, draw] at (5.5,-6) {};
+\node(mbssd2) [anchor=mid]  at (5.5,-6.4) {\ipa{tɤ-ɬaʁ}};
 
 \node(s) [triangle, draw] at (-1.5,-4) {};
 \node(s2) [anchor=mid]  at (-1.5,-4.4) {\ipa{tɤ-tɕɯ}};
@@ -77,20 +81,40 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \node(fzss) [carre, draw, fill=green!50] at (-6.5,-4) {};
 \node(fzss2) [anchor=mid]  at (-6.5,-4.4) {\ipa{tɤ-ɣe}};
 
+\node(ss) [carre, draw] at (-1.5,-6) {};
+\node(ss2) [anchor=mid]  at (-1.5,-6.4) {\ipa{tɤ-ɣe}};
+\node(ds) [carre, draw] at (-0.5,-6) {};
+\node(ds2) [anchor=mid]  at (-0.5,-6.4) {\ipa{tɤ-ɣe}};
+\node(zss) [carre, draw] at (-3.5,-6) {};
+\node(zss2) [anchor=mid]  at (-3.5,-6.4) {\ipa{tɤ-ɣe}};
+\node(bss) [carre, draw] at (1.5,-6) {};
+\node(bss2) [anchor=mid]  at (1.5,-6.4) {\ipa{tɤ-ɣe}};
+\node(fzsss) [carre, draw] at (-6.5,-6) {};
+\node(fzsss2) [anchor=mid]  at (-6.5,-6.4) {\ipa{tɤ-ɣe}};
+
 \draw (m.north) |- (4.5,0.5) |- (mb.north);
 \draw (f.north) |- (-6,0.5) |- (fz.north);
 \draw (fm.south) |-  (-1.5,-1.5) |- (ego.north) |- (1,-1.5) |- (b.north)  |- (-3,-1.5) |- (z.north)  ;
 \draw (mbu.south) |- (4.5,-1.5) |-  (mbs.north) |-  (5.5,-1.5) |-  (mbd.north);
 \draw (wu.south) |- (-1.5,-3.5) |-  (s.north) |-  (-0.5,-3.5) |-  (d.north);
+\draw (s2.south) |- (ss.north) ;
+\draw (d2.south) |- (ds.north) ;
 \draw (mbs2.south) |- (mbss.north) ;
 \draw (mbs2.south) |- (5.5,-3.5) |-  (mbsd.north) ;
+\draw (mbss2.south) |- (mbsss.north) ;
+\draw (mbss2.south) |- (5.5,-5.5) |-  (mbssd.north) ;
 \draw (bu.south) |- (bs.north) ;
+\draw (bs2.south) |- (bss.north) ;
 \draw (zu.south) |- (zs.north) ;
+\draw (zs2.south) |- (zss.north) ;
 \draw (fzu.south) |- (fzs.north);
 \draw (fzs2.south) |- (fzss.north) ;
+\draw (fzss2.south) |- (fzsss.north) ;
 \draw[->]  (zs2.west) -> (fzs2.east); 
+\draw[->]  (zss2.west) -> (fzss2.east); 
 \draw[->]  (mb2.west) to[bend right] (mbs2.west) ;
 \draw[->]  (mb2.west) to[bend right] (mbss2.west) ;
+\draw[->]  (mb2.west) to[bend right] (mbsss2.west) ;
 \end{tikzpicture}
 
 \end{document}
