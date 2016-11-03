@@ -1,0 +1,96 @@
+ 
+\documentclass[tikz,14pt,border=10pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon{#1}}} 
+
+\begin{document}
+
+	
+\begin{tikzpicture}
+%\foreach \i in {3,...,8}
+%\node[regular polygon, regular polygon sides=\i, draw] at (\i,0) {\i};
+%\end{tikzpicture}
+[
+triangle/.style = {regular polygon, regular polygon sides=3, inner sep=0.7mm},
+carre/.style = {regular polygon, regular polygon sides=4}
+] 
+
+\node(f) [triangle, draw] at (-1.5,0) {};
+\node(f2) [anchor=mid]  at (-1.5,-0.4) {\ipa{tɤ-wa}};
+\node(fm) [anchor=mid]  at (-1,0) {=};
+\node(m) [circle, draw] at (-0.5,0) {};
+\node(m2) [anchor=mid]  at (-0.5,-0.4) {\ipa{tɤ-mu}};
+\node(mb) [triangle, draw] at (4.5,0) {};
+\node(mb2) [anchor=mid] at (4.4,-0.4) {\ipa{tɤ-rpɯ}}; %modif manuelle
+\node(mbu) at (5,0) {=};
+\node(mbw) [circle, draw] at (5.5,0) {};
+\node(mbw2) [anchor=mid] at (5.5,-0.4) {\ipa{tɤ-ɬaʁ}};  
+\node(fz) [circle, draw] at (-6,0) {};
+\node(fz2) [anchor=mid]  at (-6,-0.4) {\ipa{tɤ-ɲi}};
+\node(fzu) at (-6.5,0) {=};
+\node(fzh) [triangle, draw] at (-7,0) {};
+\node(fzh2) [anchor=mid]  at (-7,-0.4) {\ipa{tɤ-βɣo}};
+
+
+\node(ego) [triangle, draw] at (-1.5,-2) {};
+\node(ego2) [anchor=mid]  at (-1.5,-2.4) {\textsc{ego}};
+\node(b) [triangle, draw] at (1,-2) {};
+\node(b2) [anchor=mid]  at (0.9,-2.4) {\ipa{tɤ-xtɤɣ}}; %modif manuelle
+\node(bu) [anchor=mid]  at (1.5,-2) {=};
+\node(bw) [circle, draw] at (2,-2) {};
+\node(bw2) [anchor=mid]  at (2.5,-2.4) {\ipa{tɤ-pi$^+$ta-ʁi$^-$}}; %modif manuelle
+\node(z) [circle, draw] at (-3,-2) {};
+\node(z2) [anchor=mid]  at (-2.8,-2.4) {\ipa{tɤ-snom}};
+\node(zh) [triangle, draw] at (-4,-2) {};
+\node(zh2) [anchor=mid]  at (-4.5,-2.4) {\ipa{tɤ-pi$^+$ta-ʁi$^-$}}; 
+\node(zu) at (-3.5,-2) {=};
+
+\node(w) [circle, draw] at (-0.5,-2) {};
+\node(w2) [anchor=mid]  at (-0.2,-2.4) {\ipa{tɤ-rʑaβ}}; %modif manuelle
+\node(wu) [anchor=mid]  at (-1,-2) {=};
+\node(mbs) [triangle, fill, draw] at (4.5,-2) {};
+\node(mbs2) [anchor=mid]  at (4.5,-2.4) {\ipa{tɤ-rpɯ}};
+\node(mbd) [circle, draw, fill] at (5.5,-2) {};
+\node(mbd2) [anchor=mid]  at (5.5,-2.4) {\ipa{tɤ-ɬaʁ}}; %modif manuelle
+\node(mbss) [triangle, fill, draw] at (4.5,-4) {};
+\node(mbss2) [anchor=mid]  at (4.5,-4.4) {\ipa{tɤ-rpɯ}};
+\node(mbsd) [circle, fill, draw] at (5.5,-4) {};
+\node(mbsd2) [anchor=mid]  at (5.5,-4.4) {\ipa{tɤ-ɬaʁ}};
+
+\node(s) [triangle, draw] at (-1.5,-4) {};
+\node(s2) [anchor=mid]  at (-1.5,-4.4) {\ipa{tɤ-tɕɯ}};
+\node(d) [circle, draw] at (-0.5,-4) {};
+\node(d2) [anchor=mid]  at (-0.5,-4.4) {\ipa{tɯ-me}};
+\node(bs) [carre, draw] at (1.5,-4) {};
+\node(bs2) [anchor=mid]  at (1.5,-4.4) {\ipa{tɤ-mdɯ}};
+\node(zs) [carre, draw] at (-3.5,-4) {};
+\node(zs2) [anchor=mid]  at (-3.5,-4.4) {\ipa{tɤ-ftsa}};
+
+\node(fzs) [carre, draw, fill=green!50] at (-6.5,-2) {};
+\node(fzs2) [anchor=mid]  at (-6.5,-2.4) {\ipa{tɤ-ftsa}};
+\node(fzss) [carre, draw, fill=green!50] at (-6.5,-4) {};
+\node(fzss2) [anchor=mid]  at (-6.5,-4.4) {\ipa{tɤ-ɣe}};
+
+\draw (m.north) |- (4.5,0.5) |- (mb.north);
+\draw (f.north) |- (-6,0.5) |- (fz.north);
+\draw (fm.south) |-  (-1.5,-1.5) |- (ego.north) |- (1,-1.5) |- (b.north)  |- (-3,-1.5) |- (z.north)  ;
+\draw (mbu.south) |- (4.5,-1.5) |-  (mbs.north) |-  (5.5,-1.5) |-  (mbd.north);
+\draw (wu.south) |- (-1.5,-3.5) |-  (s.north) |-  (-0.5,-3.5) |-  (d.north);
+\draw (mbs2.south) |- (mbss.north) ;
+\draw (mbs2.south) |- (5.5,-3.5) |-  (mbsd.north) ;
+\draw (bu.south) |- (bs.north) ;
+\draw (zu.south) |- (zs.north) ;
+\draw (fzu.south) |- (fzs.north);
+\draw (fzs2.south) |- (fzss.north) ;
+\draw[->]  (zs2.west) -> (fzs2.east); 
+\draw[->]  (mb2.west) to[bend right] (mbs2.west) ;
+\draw[->]  (mb2.west) to[bend right] (mbss2.west) ;
+\end{tikzpicture}
+
+\end{document}
