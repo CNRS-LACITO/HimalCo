@@ -1,0 +1,57 @@
+ 
+\documentclass[tikz,14pt,border=10pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon{#1}}} 
+
+\begin{document}
+
+	
+\begin{tikzpicture}
+%\foreach \i in {3,...,8}
+%\node[regular polygon, regular polygon sides=\i, draw] at (\i,0) {\i};
+%\end{tikzpicture}
+[
+triangle/.style = {regular polygon, regular polygon sides=3, inner sep=0.7mm},
+carre/.style = {regular polygon, regular polygon sides=4}
+] 
+
+
+\node(ego) [triangle, draw] at (-1.5,-2) {};
+\node(ego2) [anchor=mid]  at (-1.65,-2.4) {\ipa{tɤ-nmaʁ}};
+\node(b) [triangle, draw] at (1,-2) {};
+\node(b2) [anchor=mid]  at (0.7,-2.4) {\ipa{tɤ-wɤmɯ}}; %modif manuelle
+\node(bu) [anchor=mid]  at (1.5,-2) {=};
+\node(bw) [circle, draw] at (2,-2) {};
+\node(bw2) [anchor=mid]  at (2.5,-2.4) {\ipa{tɤ-pi$^+$ta-ʁi$^-$}}; %modif manuelle
+\node(z) [circle, draw] at (-3.2,-2) {};
+\node(z2) [anchor=mid]  at (-3,-2.4) {\ipa{tɤ-sqhaj}};
+\node(zh) [triangle, draw] at (-4.2,-2) {};
+\node(zh2) [anchor=mid]  at (-4.7,-2.4) {\ipa{tɤ-pi$^+$ta-ʁi$^-$}}; 
+\node(zu) at (-3.7,-2) {=};
+
+\node(w) [circle, draw] at (-0.5,-2) {};
+\node(w2) [anchor=mid]  at (-0.5,-2.4) {\textsc{ego}}; 
+\node(wu) [anchor=mid]  at (-1,-2) {=};
+
+\node(s) [triangle, draw] at (-1.5,-4) {};
+\node(s2) [anchor=mid]  at (-1.5,-4.4) {\ipa{tɤ-tɕɯ}};
+\node(d) [circle, draw] at (-0.5,-4) {};
+\node(d2) [anchor=mid]  at (-0.5,-4.4) {\ipa{tɯ-me}};
+\node(bs) [carre, draw] at (1.5,-4) {};
+\node(bs2) [anchor=mid]  at (1.5,-4.4) {\ipa{tɤ-mdɯ}};
+\node(zs) [carre, draw] at (-3.7,-4) {};
+\node(zs2) [anchor=mid]  at (-3.7,-4.4) {\ipa{tɤ-ftsa}};
+
+\draw (-1.5,-1.5) |- (ego.north) |- (1,-1.5) |- (b.north)  |- (-3.2,-1.5) |- (z.north)  ;
+\draw (wu.south) |- (-1.5,-3.5) |-  (s.north) |-  (-0.5,-3.5) |-  (d.north);
+\draw (bu.south) |- (bs.north) ;
+\draw (zu.south) |- (zs.north) ;
+\end{tikzpicture}
+
+\end{document}

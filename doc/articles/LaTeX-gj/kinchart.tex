@@ -26,10 +26,10 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \node(fm) [anchor=mid]  at (-1,0) {=};
 \node(m) [circle, draw] at (-0.5,0) {};
 \node(m2) [anchor=mid]  at (-0.5,-0.4) {\ipa{tɤ-mu}};
-\node(mb) [triangle, draw] at (4.5,0) {};
+\node(mb) [triangle, fill=blue!50, draw] at (4.5,0) {};
 \node(mb2) [anchor=mid] at (4.4,-0.4) {\ipa{tɤ-rpɯ}}; %modif manuelle
 \node(mbu) at (5,0) {=};
-\node(mbw) [circle, draw] at (5.5,0) {};
+\node(mbw) [circle, fill=red!50, draw] at (5.5,0) {};
 \node(mbw2) [anchor=mid] at (5.5,-0.4) {\ipa{tɤ-ɬaʁ}};  
 \node(fz) [circle, draw] at (-6,0) {};
 \node(fz2) [anchor=mid]  at (-6,-0.4) {\ipa{tɤ-ɲi}};
@@ -54,17 +54,17 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \node(w) [circle, draw] at (-0.5,-2) {};
 \node(w2) [anchor=mid]  at (-0.2,-2.4) {\ipa{tɤ-rʑaβ}}; %modif manuelle
 \node(wu) [anchor=mid]  at (-1,-2) {=};
-\node(mbs) [triangle, fill, draw] at (4.5,-2) {};
+\node(mbs) [triangle, fill=blue!50, draw] at (4.5,-2) {};
 \node(mbs2) [anchor=mid]  at (4.5,-2.4) {\ipa{tɤ-rpɯ}};
-\node(mbd) [circle, draw, fill] at (5.5,-2) {};
+\node(mbd) [circle, draw, fill=red!50] at (5.5,-2) {};
 \node(mbd2) [anchor=mid]  at (5.5,-2.4) {\ipa{tɤ-ɬaʁ}}; %modif manuelle
-\node(mbss) [triangle, fill, draw] at (4.5,-4) {};
+\node(mbss) [triangle, fill=blue!50, draw] at (4.5,-4) {};
 \node(mbss2) [anchor=mid]  at (4.5,-4.4) {\ipa{tɤ-rpɯ}};
-\node(mbsd) [circle, fill, draw] at (5.5,-4) {};
+\node(mbsd) [circle, fill=red!50, draw] at (5.5,-4) {};
 \node(mbsd2) [anchor=mid]  at (5.5,-4.4) {\ipa{tɤ-ɬaʁ}};
-\node(mbsss) [triangle, fill, draw] at (4.5,-6) {};
+\node(mbsss) [triangle, fill=blue!50, draw] at (4.5,-6) {};
 \node(mbsss2) [anchor=mid]  at (4.5,-6.4) {\ipa{tɤ-rpɯ}};
-\node(mbssd) [circle, fill, draw] at (5.5,-6) {};
+\node(mbssd) [circle, fill=red!50, draw] at (5.5,-6) {};
 \node(mbssd2) [anchor=mid]  at (5.5,-6.4) {\ipa{tɤ-ɬaʁ}};
 
 \node(s) [triangle, draw] at (-1.5,-4) {};
@@ -73,23 +73,23 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \node(d2) [anchor=mid]  at (-0.5,-4.4) {\ipa{tɯ-me}};
 \node(bs) [carre, draw] at (1.5,-4) {};
 \node(bs2) [anchor=mid]  at (1.5,-4.4) {\ipa{tɤ-mdɯ}};
-\node(zs) [carre, draw] at (-3.5,-4) {};
+\node(zs) [carre, draw, fill=green!50] at (-3.5,-4) {};
 \node(zs2) [anchor=mid]  at (-3.5,-4.4) {\ipa{tɤ-ftsa}};
 
 \node(fzs) [carre, draw, fill=green!50] at (-6.5,-2) {};
 \node(fzs2) [anchor=mid]  at (-6.5,-2.4) {\ipa{tɤ-ftsa}};
-\node(fzss) [carre, draw, fill=green!50] at (-6.5,-4) {};
+\node(fzss) [carre, draw, fill=purple!50] at (-6.5,-4) {};
 \node(fzss2) [anchor=mid]  at (-6.5,-4.4) {\ipa{tɤ-ɣe}};
 
-\node(ss) [carre, draw] at (-1.5,-6) {};
+\node(ss) [carre, draw, fill=purple!50] at (-1.5,-6) {};
 \node(ss2) [anchor=mid]  at (-1.5,-6.4) {\ipa{tɤ-ɣe}};
-\node(ds) [carre, draw] at (-0.5,-6) {};
+\node(ds) [carre, draw, fill=purple!50] at (-0.5,-6) {};
 \node(ds2) [anchor=mid]  at (-0.5,-6.4) {\ipa{tɤ-ɣe}};
-\node(zss) [carre, draw] at (-3.5,-6) {};
+\node(zss) [carre, draw, fill=purple!50] at (-3.5,-6) {};
 \node(zss2) [anchor=mid]  at (-3.5,-6.4) {\ipa{tɤ-ɣe}};
-\node(bss) [carre, draw] at (1.5,-6) {};
+\node(bss) [carre, draw, fill=purple!50] at (1.5,-6) {};
 \node(bss2) [anchor=mid]  at (1.5,-6.4) {\ipa{tɤ-ɣe}};
-\node(fzsss) [carre, draw] at (-6.5,-6) {};
+\node(fzsss) [carre, draw, fill=purple!50] at (-6.5,-6) {};
 \node(fzsss2) [anchor=mid]  at (-6.5,-6.4) {\ipa{tɤ-ɣe}};
 
 \draw (m.north) |- (4.5,0.5) |- (mb.north);
@@ -113,8 +113,8 @@ carre/.style = {regular polygon, regular polygon sides=4}
 \draw[->]  (zs2.west) -> (fzs2.east); 
 \draw[->]  (zss2.west) -> (fzss2.east); 
 \draw[->]  (mb2.west) to[bend right] (mbs2.west) ;
-\draw[->]  (mb2.west) to[bend right] (mbss2.west) ;
-\draw[->]  (mb2.west) to[bend right] (mbsss2.west) ;
+\draw[->]  (mbs2.west) to[bend right] (mbss2.west) ;
+\draw[->]  (mbss2.west) to[bend right] (mbsss2.west) ;
 \end{tikzpicture}
 
 \end{document}
