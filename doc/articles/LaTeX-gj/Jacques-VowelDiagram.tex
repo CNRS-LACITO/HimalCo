@@ -1,0 +1,43 @@
+\documentclass{standalone} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{textcomp}
+\usepackage{memhfixc}
+\usepackage{lscape} 
+
+\usepackage{vowel}
+ 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\mbox{\phon/#1/}}  
+\newcommand{\phonet}[1]{\mbox{\phon[#1]}}  
+\newcommand{\ipab}[1]{{\phon#1}}  
+  
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+ 
+ 
+
+
+\begin{document} 
+ 
+  \begin{vowel}
+   %    \putcvowel[l]{i}{1}
+      \putvowel[l]{i}{0pt}{0pt}
+      \putcvowel[r]{y}{1}
+      \putcvowel[l]{e}{2}
+      \putcvowel[l]{a}{4}
+      \putcvowel[l]{\ipab{ɤ}}{7}
+      \putcvowel[r]{o}{7}
+      \putcvowel[l]{\ipab{ɯ}}{8}
+      \putcvowel[r]{u}{8}
+  \end{vowel}
+     
+\end{document}
