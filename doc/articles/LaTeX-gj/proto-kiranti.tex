@@ -26,7 +26,7 @@
 %\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
 \newcommand{\sg}{\textsc{sg}}
@@ -46,8 +46,8 @@
 
 \begin{document}
 
-\title{A reconstruction of Proto-Kiranti verb roots\footnote{Acknowledgements will be added after editorial decision.}} %Juho Pystynen, Lukas Denk, Amos Teo, Boyd Michailovsky, Alexis Michaud, Mikhail Zhivlov, Marc Miyake, Martine Mazaudon
-%\author{Guillaume Jacques}
+\title{A reconstruction of Proto-Kiranti verb roots\footnote{I would like to thank Balthasar Bickel, Lukas Denk, Juho Pystynen, Marc Miyake, Martine Mazaudon, Boyd Michailovsky, Alexis Michaud, Amos Teo, Mikhail Zhivlov as well as two anonymous reviewers for useful comments on previous versions of this work. I am responsible for any remaining error. This research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony)}} 
+\author{Guillaume Jacques}
 \maketitle
 \sloppy
 
@@ -346,8 +346,8 @@ Proto-Kiranti & Wambule & Khaling & Bantawa & Limbu \\
 \ipa{*ʦʰ} & ? & \ipa{ʦʰ} & \ipa{cʰ}  & \ipa{s}  \\
 \ipa{*kʰ} & \ipa{kʰ} & \ipa{kʰ} & \ipa{kʰ} & \ipa{kʰ}  \\
 \midrule
-\ipa{*b} & \ipa{b} &\ipa{b} / \ipa{bʰ}  & \ipa{p} & \ipa{pʰ}  \\
-\ipa{*d} & \ipa{d} & \ipa{d} / \ipa{dʰ}  & \ipa{t} & \ipa{tʰ}  \\
+\ipa{*b} & \ipa{b} &\ipa{b} / \ipa{bʰ}  & \ipa{p} & \ipa{p}  \\
+\ipa{*d} & \ipa{d} & \ipa{d} / \ipa{dʰ}  & \ipa{t} & \ipa{t}  \\
 \ipa{*ʣ} & \ipa{ʣ} & \ipa{ʣʰ} & \ipa{c} & \ipa{c}  \\
 \ipa{*g} & \ipa{g} & \ipa{g} / \ipa{gʰ}  & \ipa{k} & \ipa{k}  \\
 \bottomrule
@@ -433,10 +433,10 @@ Khaling & Wambule \\
 \end{tabular}
 \end{table}
 
-\subsubsection{Voicing polarity in Bantawa} \label{sec:fourth}
+\subsubsection{Voicing polarity in Bantawa} \label{sec:polarity}
 The polar correspondence between (labial and dental) voiced and unvoiced stops between Wambule and Khaling on the one hand, and Bantawa on the other hand, suggests the existence of a complex chain shift. All PK voiced stops and affricates become unvoiced in Bantawa, but PK unvoiced unaspirated obstruents  present divergent correspondences: *\ipa{p} and *\ipa{t} remain distinct and become voiced, while *\ipa{k} and *\ipa{ts} merge with *\ipa{kʰ} and *\ipa{tsʰ} and become aspirated.
 
-The absence of merger between PK *\ipa{b} and *\ipa{d} on the one hand, and *\ipa{p} and *\ipa{t} on the other hand, implies that the unvoiced stops went through an intermediate stage distinct from both voiced and unvoiced stops during this sound shift. A possible solution (suggested to me by XXX, p.c.), involves the shift of voiced unaspirated stops to implosives, then to voiced stops, as indicated in Table \ref{tab:bantawa}.
+The absence of merger between PK *\ipa{b} and *\ipa{d} on the one hand, and *\ipa{p} and *\ipa{t} on the other hand, implies that the unvoiced stops went through an intermediate stage distinct from both voiced and unvoiced stops during this sound shift. A possible solution (suggested to me by Marc Miyake, p.c.), involves the shift of voiced unaspirated stops to implosives, then to voiced stops, as indicated in Table \ref{tab:bantawa}.
 
 The change of labial and dental stops to implosives is well attested in South-East Asia, in particular in Vietnamese (\citealt{ferlus82spirantisation}), and would account for the differential treatment of affricates and velars (which would not undergo implosivisation). 
 
@@ -445,19 +445,20 @@ The change of labial and dental stops to implosives is well attested in South-Ea
 \begin{table}[H]
 \caption{Stop shift in Bantawa} \centering \label{tab:bantawa}
 \begin{tabular}{lllll}
+\toprule
 Proto-Kiranti &  Pre-Bantawa &   Bantawa \\
-*\ipa{p} & *\ipa{ɓ} & \ipa{b} \\
-*\ipa{t} & *\ipa{ɗ} & \ipa{d} \\
-*\ipa{pʰ} & *\ipa{pʰ} &  \ipa{pʰ} \\
-*\ipa{tʰ} & *\ipa{tʰ} & \ipa{tʰ} \\
-*\ipa{b} & *\ipa{b} &  \ipa{p} \\
-*\ipa{d} & *\ipa{d} & \ipa{t} \\
+\midrule
+\ipa{*p} & *\ipa{ɓ} & \ipa{b} \\
+\ipa{*t} & *\ipa{ɗ} & \ipa{d} \\
+\ipa{*pʰ} & *\ipa{pʰ} &  \ipa{pʰ} \\
+\ipa{*tʰ} & *\ipa{tʰ} & \ipa{tʰ} \\
+\ipa{*b} & *\ipa{b} &  \ipa{p} \\
+\ipa{*d} & *\ipa{d} & \ipa{t} \\
+\bottomrule
 \end{tabular}
 \end{table}
  
- Split voicing is attested in various families without an implosive stage (\citealt[49-51]{kuemmel07wandel}), so that 
-
- 
+ Split voicing is however attested in various families without an implosive stage (\citealt[49-51]{kuemmel07wandel}), so that alternative possibilities exist to account for this polarity.
  
 
 \subsubsection{A fourth series?} \label{sec:fourth}
@@ -517,7 +518,7 @@ The following irregularities cannot be accounted for by any of the the scenarios
  \end{enumerate}
 
 \subsubsection{\ipa{ʔw}}
-The correspondence reconstructed here as *\ipa{ʔw} following \citet{michailovsky94stops} (alternatively reconstructed as *\ipa{kw} by \citet{opgenort04implosives}) is only attested in two verbs *\ipa{ʔwa} `eat (hard food)', attested in Khaling \dhatu{ka}{eat (hard food)} and Wambule \dhatu{ɓa}{eat by biting, bite} and  *\ipa{ʔwɑp} `cover', attested by  Khaling \dhatu{kopt}{cover}, Wambule \dhatu{ɓwap}{cover, snare}, Bantawa \dhatu{kʰapt}{to thatch a roof} and Limbu  \dhatu{kʰaps}{to put on (a cover or blanket)}. 
+The correspondence reconstructed here as *\ipa{ʔw} following \citet{michailovsky94stops} (alternatively reconstructed as *\ipa{kw} by \citealt{opgenort04implosives}) is only attested in two verbs *\ipa{ʔwa} `eat (hard food)', attested in Khaling \dhatu{ka}{eat (hard food)} and Wambule \dhatu{ɓa}{eat by biting, bite} and  *\ipa{ʔwɑp} `cover', attested by  Khaling \dhatu{kopt}{cover}, Wambule \dhatu{ɓwap}{cover, snare}, Bantawa \dhatu{kʰapt}{to thatch a roof} and Limbu  \dhatu{kʰaps}{to put on (a cover or blanket)}. 
  
  This correspondence is otherwise well attested in monosyllabic nouns, in particular *\ipa{ʔwi} `yam, potato' (Khaling \ipa{ki}, Limbu \ipa{kʰe}).\footnote{The verb `cover' show that the Bantawa reflex of *\ipa{ʔw} is \ipa{kʰ}; thus, nouns such as \ipa{saki} `potato, yam' and \ipa{ogi} `sweet potato' must be borrowings.}
 
