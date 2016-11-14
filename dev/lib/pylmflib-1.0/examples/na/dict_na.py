@@ -34,10 +34,12 @@ classify_lexicon(lexical_resource.get_lexicon("na"), xml_order, xml_type)
 # Write XML LMF file
 pylmflib.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")
 
+# On génère les tableaux
 # Generate tables
 os.system("python " + user_path + "../pylmflib/utils/tables/tables.py -i " + user_path + "na/Dictionary.txt -e " + user_path + "na/result/table_eng.tex -f " + user_path + "na/result/table_fra.tex")
 
-# Write LaTeX files
+# fra: On crée les fichiers LaTeX
+# eng: Write LaTeX files
 pylmflib.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_eng.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_eng.tex"], title="Online Na-English-Chinese Dictionary (version 1.0)")
 pylmflib.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_fra.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"], title=u"Dictionnaire na-chinois-français en ligne (version 1.0)", tex_language="french")
 
