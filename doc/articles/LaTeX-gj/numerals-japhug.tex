@@ -27,14 +27,14 @@
  
 
 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
 \newfontfamily\greek[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
-\newcommand{\ipa}[1]{{\phon#1}} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
 %\newcommand{\ipab}[1]{{\phon #1}}
 \newcommand{\ipapl}[1]{{\phondroit #1}} 
 \newcommand{\captionft}[1]{{\captionfont #1}} 
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 
 \newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
