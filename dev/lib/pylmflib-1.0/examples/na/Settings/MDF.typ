@@ -1277,9 +1277,10 @@
 \-expRTF
 
 \+expSF Standard Format
+\exportedFile C:\Users\alexis\Desktop\Na
 \-expSF
 
-\expDefault Rich Text Format
+\expDefault Standard Format
 \AutoOpen
 \-expset
 \PreventNumbering
