@@ -57,7 +57,6 @@
 %%%%% Environnememt pour chaque entrée %%%%%
 \usepackage{totcount}
 \newcounter{entrycounter}\setcounter{entrycounter}{0}\regtotcounter{entrycounter}%Compteur du nombre d'entrées
-\usepackage{hanging}
 \newenvironment{entry}[1]{% l'environnement à 1 argument, la tête d'entrée
 \stepcounter{entrycounter}% on incrémente le compteur
 \hangpara{1em}{1}% après la ligne 1, chaque ligne est indentée d'1em, ce que fait que la première ligne apparaît avec un retrait
