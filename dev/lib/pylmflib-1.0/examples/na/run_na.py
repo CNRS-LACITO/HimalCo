@@ -43,7 +43,7 @@ os.system("python " + user_path + "../pylmflib/utils/tables/tables.py -i " + use
 # Write LaTeX files: 
 # anglais et français
 pylmflib.write_tex(lexical_resource, user_path + "na/result/dictionary_eng.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_eng.tex", lmf2tex=tex_eng, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_eng.tex"], title="Online Na-English-Chinese-French Dictionary (version 1.0)")
-pylmflib.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_fra.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"], title="Dictionnaire na-chinois-francais en ligne (version 1.0)", tex_language="french")
+pylmflib.write_tex(lexical_resource, user_path + "na/result/dictionary_fra.tex", preamble=user_path + "na/preamble.tex", introduction=user_path + "na/introduction_fra.tex", lmf2tex=tex_fra, items=items, sort_order=xml_order, tables=[user_path + "na/result/table_fra.tex"], title="Dictionnaire na-chinois-français en ligne (version 1.0)", tex_language="french")
 
 # Write XML LMF file
 pylmflib.write_xml_lmf(lexical_resource, user_path + "na/result/dictionary.xml")

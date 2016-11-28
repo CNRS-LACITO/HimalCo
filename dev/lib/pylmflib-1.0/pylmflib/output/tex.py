@@ -78,7 +78,7 @@ def tex_write(object, filename, preamble=None, introduction=None, lmf2tex=lmf_to
     tex_file.write(file_read(preamble))
     # Continue the header if needed
     if title is not None:
-        tex_file.write("\\title{" + title + "}" + EOL)
+        tex_file.write("\\title{" + unicode(title, "utf-8") + "}" + EOL)
     if tex_language is not None:
         tex_file.write("\setdefaultlanguage{" + tex_language + "}" + EOL)
     # Insert LaTeX commands to create a document
