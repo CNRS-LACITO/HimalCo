@@ -405,7 +405,7 @@ def format_examples(sense, font, languages=None):
                 if language == config.xml.vernacular:
                     tmp += "\\sn " + font[VERNACULAR](handle_tilde(ref + example)) + EOL
                 elif language == config.xml.national:
-                    tmp += "\\trans \\textit{" + font[NATIONAL](tex.handle_font(example)) + "}" + EOL
+                    tmp += "\\trans " + font[NATIONAL](tex.handle_font(example))  + EOL
                 elif language == config.xml.regional:
                     tmp += "\\trans \\textit{[" + font[REGIONAL](example) + "]}" + EOL
                 else: # language == config.xml.English
