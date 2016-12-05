@@ -1,0 +1,75 @@
+ 
+\documentclass[tikz,14pt,border=10pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon{#1}}} 
+
+\begin{document}
+
+	
+\begin{tikzpicture}
+%\foreach \i in {3,...,8}
+%\node[regular polygon, regular polygon sides=\i, draw] at (\i,0) {\i};
+%\end{tikzpicture}
+[
+triangle/.style = {regular polygon, regular polygon sides=3, inner sep=0.7mm},
+carre/.style = {regular polygon, regular polygon sides=4}
+] 
+
+%\node(mmmmmb) [triangle, draw] at (-2,0) {};
+%\node(mmmmmb2) [anchor=mid]  at (-2,-0.4) {MMMMB};
+%%\node(fm) [anchor=mid]  at (-1,0) {=};
+%\node(mmmmm) [circle, draw] at (0,0) {};
+%\node(mmmmm2) [anchor=mid]  at (0,-0.4) {MMMM};
+
+\node(mmmmb) [triangle, draw] at (-2,-1.5) {};
+\node(mmmmb2) [anchor=mid]  at (-2,-1.9) {MMMMB};
+\node(mmmm) [circle, draw] at (-0,-1.5) {};
+\node(mmmm2) [anchor=mid]  at (0,-1.9) {MMMM}; 
+ 
+\node(mmmmbs) [triangle, draw] at (-2,-3) {};
+\node(mmmmbs2) [anchor=mid]  at (-2,-3.4) {MMMMBS};
+\node(mmm) [circle, draw] at (0,-3) {};
+\node(mmm2) [anchor=mid]  at (0,-3.4) {MMM};
+
+\node(mmmmbss) [triangle, draw] at (-2,-4.5) {};
+\node(mmmmbss2) [anchor=mid]  at (-2,-4.9) {MMMMBSS};
+\node(mm) [circle, draw] at (0,-4.5) {};
+\node(mm2) [anchor=mid]  at (0,-4.9) {MM};
+
+\node(mmmmbsss) [triangle, draw] at (-2,-6) {};
+\node(mmmmbsss2) [anchor=mid]  at (-2,-6.5) {MMMMBSSS};
+\node(m) [circle, draw] at (0,-6) {};
+\node(m2) [anchor=mid]  at (0,-6.5) {M};
+
+\node(mmmmbssss) [triangle, draw] at (-2,-7.5) {};
+\node(mmmmbssss2) [anchor=mid]  at (-2,-7.9) {MMMMBSSSS};
+\node(ego) [triangle, draw] at (0,-7.5) {};
+\node(ego2) [anchor=mid]  at (0,-7.9) {EGO};
+
+\node(mmmmbsssss) [triangle, draw] at (-2,-9) {};
+\node(mmmmbsssss2) [anchor=mid]  at (-2,-9.5) {MMMMBSSSSS};
+
+\node(mmmmbssssss) [triangle, draw] at (-2,-10.5) {};
+\node(mmmmbssssss2) [anchor=mid]  at (-2,-10.9) {MMMMBSSSSSS};
+
+\draw (mmmmb.north) |- (0,-0.5) |- (mmmm.north);
+\draw (mmmm2.south) |- (mmm.north) ;
+\draw (mmm2.south) |- (mm.north) ;
+\draw (mm2.south) |- (m.north) ;
+\draw (m2.south) |- (ego.north) ;
+\draw (mmmmb2.south) |- (mmmmbs.north) ;
+\draw (mmmmbs2.south) |- (mmmmbss.north) ;
+\draw (mmmmbss2.south) |- (mmmmbsss.north) ;
+\draw (mmmmbss2.south) |- (mmmmbsss.north) ;
+\draw (mmmmbsss2.south) |- (mmmmbssss.north) ;
+\draw (mmmmbssss2.south) |- (mmmmbsssss.north) ;
+\draw (mmmmbsssss2.south) |- (mmmmbssssss.north) ;
+\end{tikzpicture}
+
+\end{document}
