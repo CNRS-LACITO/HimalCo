@@ -1,7 +1,6 @@
-\documentclass[twoside,11pt]{book}
+\documentclass[twoside]{article}
 \title{Dictionnaire Japhug-chinois-français\\\zh{嘉绒-汉-法词典\\ Version 1.12}}
 \author{Guillaume Jacques\\\zh{向柏霖}}
-
 \usepackage{pifont}
 \usepackage{fontspec}
 \usepackage{natbib}
@@ -15,9 +14,9 @@
 \setlength{\columnsep}{1.5cm}
 \usepackage{float}
 \usepackage{textcomp}
-\usepackage[bookmarks=true,colorlinks,linkcolor=blue]{hyperref}
-\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
-\usepackage[all]{hypcap}
+\usepackage[bookmarks=true,colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+%\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+%\usepackage[all]{hypcap}
 \usepackage{memhfixc}
 \usepackage{amssymb}
 
@@ -40,14 +39,18 @@
 \XeTeXlinebreakskip = 0pt plus 1pt % CIRCG
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyheadoffset{3.4em}
-\fancyhead[LE,LO]{\rightmark}
-\fancyhead[RE,RO]{\leftmark}
-\usepackage[dvipdfmx,xetex,bigfiles,final,activate=onclick,deactivate=onclick,transparent,passcontext]{media9}
+%\fancyheadoffset{3.4em}
+\fancyhead[le,lo]{\rightmark}
+\fancyhead[re,ro]{\leftmark}
+%\usepackage[dvipdfmx,xetex,bigfiles,final,activate=onclick,deactivate=onclick,transparent,passcontext]{media9}
 \usepackage{graphicx}
-\usepackage{vmargin}
+\usepackage[left=0.5in,right=0.5in,footskip=.25in,paperwidth=6in, paperheight=9in]{geometry}
+%\usepackage[paper=a5paper]{geometry}
+\pdfpagewidth=\paperwidth
+ \pdfpageheight=\paperheight
+%\usepackage{vmargin}
 % {marge gauche}{marge en haut}{marge droite}{marge en bas}{hauteur de l'entête}{distance entre l'entête et le texte}{hauteur du pied de page}{distance entre le texte et le pied de page}
-\setmarginsrb{3cm}{2cm}{2cm}{2cm}{1cm}{2cm}{1cm}{2cm}
+%\setmarginsrb{3cm}{2cm}{2cm}{2cm}{1cm}{2cm}{1cm}{2cm}
 
 % \usepackage[x11names]{xcolor}
 % \colorlet{headcolor}{blue}% couleur des têtes d'entrée
@@ -78,3 +81,14 @@
 \newcommand{\usage}{\zh{【用法】}} 
 \newenvironment{bottompar}{\par\vspace*{\fill}}{\clearpage}
  
+\begin{document}
+\maketitle
+\newpage
+\pagenumbering{roman}
+\begin{flushright}
+\textit{Pour Archimède}
+\end{flushright}
+\begin{bottompar}
+Jacques, Guillaume 2015-2016. \textit{Dictionnaire Japhug-Chinois-Français, version 1.12} \zh{嘉绒-汉-法词典}, Paris: Projet HimalCo. \url{http://himalco.huma-num.fr/}
+\end{bottompar}
+\markboth{INTRODUCTION}{}
