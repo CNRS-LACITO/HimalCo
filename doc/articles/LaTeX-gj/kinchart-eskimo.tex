@@ -1,0 +1,58 @@
+\documentclass[tikz,14pt,border=10pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon{#1}}} 
+
+\begin{document}
+
+	
+\begin{tikzpicture}
+%\foreach \i in {3,...,8}
+%\node[regular polygon, regular polygon sides=\i, draw] at (\i,0) {\i};
+%\end{tikzpicture}
+[
+triangle/.style = {regular polygon, regular polygon sides=3, inner sep=0.7mm},
+carre/.style = {regular polygon, regular polygon sides=4}
+] 
+
+\node(f) [triangle, draw, fill=blue] at (-1.5,0) {};
+\node(f2) [anchor=mid]  at (-1.5,-0.4) {F};
+\node(fm) [anchor=mid]  at (-1,0) {=};
+\node(m) [circle, draw, fill=red] at (-0.5,0) {};
+\node(m2) [anchor=mid]  at (-0.5,-0.4) {M};
+\node(mz) [circle, draw, fill=yellow] at (2.5,0) {};
+\node(mz2) [anchor=mid]  at (2.5,-0.4) {MZ};
+\node(mbu) at (2,0) {=};
+\node(mzh) [triangle, draw] at (1.5,0) {};
+\node(mzh2) [anchor=mid]  at (1.5,-0.4) {MZH};
+\node(mb) [triangle, fill=green, draw] at (4.5,0) {};
+\node(mb2) [anchor=mid] at (4.4,-0.4) {MB}; %modif manuelle
+\node(mbu) at (5,0) {=};
+\node(mbw) [circle, draw] at (5.5,0) {};
+\node(mbw2) [anchor=mid] at (5.5,-0.4) {MBW};  
+\node(fz) [circle, draw, fill=yellow] at (-6,0) {};
+\node(fz2) [anchor=mid]  at (-6,-0.4) {FZ};
+\node(fzu) at (-6.5,0) {=};
+\node(fzh) [triangle, draw] at (-7,0) {};
+\node(fzh2) [anchor=mid]  at (-7,-0.4) {FZH};
+\node(fbw) [circle, draw] at (-3,0) {};
+\node(fbw2) [anchor=mid]  at (-3,-0.4) {FBW};
+\node(fbu) at (-3.5,0) {=};
+\node(fb) [triangle, draw, fill=green] at (-4,0) {};
+\node(fb2) [anchor=mid]  at (-4,-0.4) {FB};
+
+%\node(ego) [triangle, draw] at (-1.5,-2) {};
+%\node(ego2) [anchor=mid]  at (-1.5,-2.4) {\textsc{ego}};
+
+
+\draw (m.north) |- (2.5,0.5) |- (mz.north) |- (4.5,0.5)  |- (mb.north) ;
+\draw (f.north) |- (-4,0.5) |- (fb.north) |- (-6,0.5) |- (fz.north);
+%\draw (fm.south) |-  (-1.5,-1.5) |- (ego.north)  ;
+\end{tikzpicture}
+
+\end{document}
