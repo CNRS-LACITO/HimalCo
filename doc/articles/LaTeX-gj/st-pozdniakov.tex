@@ -20,12 +20,12 @@
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon \mbox{#1}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{\mbox{#1}}}} %API tjs en italique
 \newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
-\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
 \newcommand{\refb}[1]{(\ref{#1})}
 
@@ -45,6 +45,8 @@ Les abréviations utilisées sont les suivantes: \textsc{auto} autobénéfactif,
 \author{Guillaume Jacques}
 \maketitle
 %\linenumbers
+
+Référence: Jacques, Guillaume 2016. Le sino-tibétain: polysynthétique ou isolant?, K. Pozdniakov (ed.) \textit{Comparatisme et reconstruction : tendances actuelles}, \textit{Faits de langue} 47:61-74.
 
 \section{Introduction}
 Un des problèmes les plus fondamentaux et des plus difficiles de la linguistique historique du sino-tibétain est la question de reconstruction de la morphologie. En effet, la famille sino-tibétaine est peut-être celle présentant la plus grande diversité typologique de toutes les langues du monde. A côté de langues presque prototypiquement isolantes, telles que le chinois, le karen ou le lolo-birman, on trouve des langues polysynthétiques comme le rgyalronguique ou le kiranti. On trouve aussi des langues d'un degré de complexité morphologique intermédiaire, comme le tibétain ancien, qui bien que dépourvu d'indexation personnelle, a une morphologie très irrégulière et synchroniquement opaque\footnote{Voir \citet{hill05vbri, jacques10ndr, jacques12internal, hill14dempsey, hill14voicing, hill15lan} concernant la reconstruction interne du verbe tibétain.}
@@ -350,7 +352,7 @@ Il est instructif de comparer le système d'indexation du japhug (rgyalrong) ave
 \end{tabular}
 \end{table}
 
-Des deux paradigmes, s'ils présentent d'indéniables différences, notamment en ce qui concerne les formes locales 1$\rightarrow$2 et 2$\rightarrow$1 (on peut montrer que celles-ci sont refaites en japhug, voir \citealt{jacques15generic}), ont également des ressemblances non triviales ne pouvant s'expliquer ni comme dues au contact (puisque ces langues sont séparées par des milliers de kilomètres et entourées de langues sans systèmes d'indexation), ni par un développement parallèle à partir de pronoms indépendants.
+Les deux paradigmes, s'ils présentent d'indéniables différences, notamment en ce qui concerne les formes locales 1$\rightarrow$2 et 2$\rightarrow$1 (on peut montrer que celles-ci sont refaites en japhug, voir \citealt{jacques15generic}), ont également des ressemblances non triviales ne pouvant s'expliquer ni comme dues au contact (puisque ces langues sont séparées par des milliers de kilomètres et entourées de langues sans systèmes d'indexation), ni par un développement parallèle à partir de pronoms indépendants.
 
 Le préfixe de seconde personne de forme \ipa{tV-} tout d'abord se distingue dans ces deux langues aussi bien des pronoms indépendants que des préfixes possessifs, et ne peut provenir d'une grammaticalisation récente. La forme \textsc{3sg$\rightarrow$2sg} \ipa{nɨ-}\ro{} du Bantawa est due à la fusion entre deux préfixes \ipa{nɨ-} (originellement \textsc{3pl} agent)  et \ipa{tɨ-} (seconde personne) qui sont maintenus distincts en puma, la langue la plus proche du bantawa, où l'on a \textsc{3sg$\rightarrow$2sg} \ipa{tʌ-}\ro{} vs \textsc{3pl$\rightarrow$2sg} \ipa{ni-tʌ-}\ro{}. (\citealt{bickel07puma}), deux formes devenues identiques en bantawa.
 
