@@ -9,7 +9,6 @@
 \usepackage{multicol}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{lineno}
 \usepackage{hyperref} 
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 %\usepackage[all]{hypcap}
@@ -19,7 +18,7 @@
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon\textbf{#1}}} %API tjs en italique
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}}  
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
@@ -38,21 +37,19 @@
 \newcommand{\forme}[2]{\ipa{#1} `#2'}  
 \newcommand{\rdp}{\textasciitilde{}}
 \begin{document} 
-%Graham Thurgood, Yvonne Treis
-\title{Equative constructions in Japhug\footnote{Acknowledgments to be added after editorial decision. Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{cisloc} cislocative,  \textsc{fact} factual/assumptive, \textsc{genr} generic, \textsc{ifr} inferential evidential,  \textsc{inv} inverse, \textsc{lnk} linker,  \textsc{sens} sensory  evidential, \textsc{sfr} sentence final particle, \textsc{transloc} translocative, \textsc{trop} tropative.  Chinese borrowings in Japhug are indicated in pinyin between chevrons. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI) }}
+
+\title{Similative and Equative constructions in Japhug\footnote{ I would like to thank Graham Thurgood, Yvonne Treis, Brigitte Pakendorf and one anonymous reviewer for useful comments on this paper. Glosses follow the Leipzig glossing rules. Other abbreviations used here include: \textsc{auto} spontaneous-autobenefactive, \textsc{cisloc} cislocative,  \textsc{fact} factual/assumptive, \textsc{genr} generic, \textsc{ifr} inferential evidential,  \textsc{inv} inverse, \textsc{lnk} linker,  \textsc{sens} sensory  evidential, \textsc{sfr} sentence final particle, \textsc{transloc} translocative, \textsc{trop} tropative.  Chinese borrowings in Japhug are indicated in pinyin between chevrons. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}, 
+ \url{http://lacito.vjf.cnrs.fr/pangloss/corpus/list\textunderscore rsc.php?lg=Japhug}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI).}}
 \author{Guillaume Jacques}
 \maketitle
-\linenumbers
 
-\textbf{Abstract}: This paper documents equative, similative, comparative and superlative constructions on the basis of a corpus of narratives. It reveals a previously unsuspected wealth of constructions: no less than three main types of superlatives, and four types of equative are attested, some including additional subtypes.
-
-Most of the constructions described in this paper belong to categories previously identified by typologists, but some constructions, such as the denominal equative adjectives, appear to be crosslinguistically rarer.
-
+\textbf{Abstract}: This paper documents equative, similative, comparative and superlative constructions on the basis of a corpus of narratives. It reveals a previously unsuspected wealth of constructions: no less than three main types of superlatives, and four types of equatives are attested, some including additional subtypes.
+ 
 \textbf{Keywords}: Japhug, equative, similative, superlative, comparative, denominal derivation, relativization
 \section*{Introduction}
 This paper deals with equative and similative constructions in Japhug. It comprises five sections.
 
- First, I present general information on the Japhug language and its morphosyntax. Second, I provide an account of degree, comparative and superlative constructions, which have similarities, and even overlap with, equative constructions. Third, I describe the four types of equative constructions in Japhug. Fourth, I show some data on parameter equative constructions, which are not normally used in Japhug but have been collected using a novel method of elicitation.  Fifth, I discuss similative constructions and how they relate to the equative construction presented in section 3.
+ First, I present general information on the Japhug language and its morphosyntax. Second, I provide an account of degree, comparative and superlative constructions, which have similarities, and even overlap with, equative constructions. Third, I discuss similative constructions and how they relate to the equative constructions presented in section 4. Fourth, I describe the four types of equative constructions in Japhug. Fifth, I show some data on property equative constructions, which are not normally used in Japhug but have been collected using a novel method of elicitation.    
 
 \section{Background information} \label{sec:background}
 Japhug is a Gyalrong language (Trans-Himalayan, Gyalrongic; see \citealt{jackson00sidaba} and \citealt{jacques.michaud11naish} for more information on the classification of this language) spoken in Mbarkham county, Rngaba prefecture, Sichuan province (China), by less than 10000 speakers.\footnote{Previous work on this language includes a grammar (\citealt{jacques08}), a dictionary (\citealt{jacques15japhug}), and a series of articles on specific grammatical topics (see for instance \citealt{jacques13harmonization, jacques14linking, jacques16relatives}). } 
@@ -79,10 +76,10 @@ This derivation cannot be applied to copulas or existential verbs.\footnote{The 
 
 A conjugated verb form without overt arguments is the minimal complete sentence in Japhug, and grammatical relations are mainly expressed by person indexation, which includes up to two arguments following a direct/inverse system (on which see \citealt{jackson02rentongdengdi, jacques10inverse, gongxun14agreement}).
 
-Overt noun phrases take case markers such as the ergative/instrument \ipa{kɯ}, the genitive \ipa{ɣɯ} and the dative \ipa{ɯ-ɕki}. There one no prepositions, but comitative adverbs are build by means of a prefix and are in the process of being grammaticalized as a quasi-case marker (\citealt{jacques16comitative}).
+Overt noun phrases take case markers such as the ergative/instrument \ipa{kɯ}, the genitive \ipa{ɣɯ} and the dative \ipa{ɯ-ɕki}. There are no prepositions. Comitative adverbs are built by means of a prefix and are in the process of being grammaticalized as a quasi-case marker (\citealt{jacques16comitative}).
 
 \subsection{Orientation prefixes} \label{sec:orientation}
-All finite verb forms, except the factual non-past, require an orientation prefix (Table \ref{tab:orientation}). Motion verbs and concrete action verb are compatible with all prefixes, but most verbs can only take one or two orientation prefixes. For those verbs, the possible orientations are lexically specified; for instance \ipa{ndza} `eat' and \ipa{tsʰi} `drink' take the `up' and `towards east' orientations respectively; `eat' can also appear with the `downstream' orientation in the case of meat-eating animals.
+All finite verb forms, except the factual non-past, require an orientation prefix (Table \ref{tab:orientation}). Motion verbs and concrete action verbs are compatible with all prefixes, but most verbs can only take one or two orientation prefixes. For those verbs, the possible orientations are lexically specified; for instance \ipa{ndza} `eat' and \ipa{tsʰi} `drink' take the `up' and `towards east' orientations respectively; `eat' can also appear with the `downstream' orientation in the case of meat-eating animals.
 
 \begin{table}[H]
 \caption{Orientation prefixes in Japhug Rgyalrong} \label{tab:orientation}
@@ -168,7 +165,7 @@ A more elaborated construction to express degree in Japhug involves nominalizing
 \begin{exe}
 \ex \label{ex:WtWCur}
 \gll 
-\ipa{mtɕʰi}  	\ipa{ɯ-mat}  	\ipa{rca}  	\ipa{ɯ-tɯ-tɕur}  	\ipa{saχaʁ.}  	   \\
+\ipa{mtɕʰi}  	\ipa{ɯ-mat}  	\ipa{rca}  	\ipa{ɯ-tɯ-tɕur}  	\ipa{saχaʁ}  	   \\
 sea.buckthorn \textsc{3sg.poss}-fruit \textsc{unexpected} \textsc{3sg-nmlz:degree}-be.sour be.extremely:\textsc{fact}   \\
 \glt `The fruit of the sea-buckthorn is very sour,' (`The degree of sourness of the fruit of the sea-buckthorn is extreme', 09 mi, 65)
 \end{exe}
@@ -197,7 +194,7 @@ The comparative construction in Japhug can be illustrated by example (\ref{ex:co
 There are no less than three constructions expressing superlative meaning in Japhug: a degree adverb meaning `most', a possessed subject participle (`Y is the X one of ...') and a relative clause with a negative existential verb (`There is no X one like Y').
 
  \subsubsection{Degree adverb}
- The degree adverb superlative is a familiar construction, illustrated by example (\ref{ex:stu1}) with an adjective in finite form (factual non-past).  
+ The degree adverb superlative with \ipa{stu}  most' is a familiar construction, illustrated by example (\ref{ex:stu1}) with an adjective in finite form (factual non-past).  
  
 \begin{exe}
 \ex \label{ex:stu1}
@@ -207,9 +204,9 @@ There are no less than three constructions expressing superlative meaning in Jap
 \glt `It is the smallest of all birds.' (hist-24-ZmbrWpGa, 126)
 \end{exe}
 
-The form \ipa{-ŋgɯz} is the irregular fusion of the relator noun \ipa{-ŋgɯ} `inside' and the locative \ipa{zɯ} (it is thus a particular case of locative superlative construction, also found in many languages, eg Kambaata in this volume, \citealt{treis17comparison}). 
+The form \ipa{-ŋgɯz} is the irregular fusion of the relator noun \ipa{-ŋgɯ} `inside' and the locative \ipa{zɯ} (it is thus a particular case of locative superlative construction, also found in many languages, e.g. Kambaata in this volume, \citealt{treis17comparison}). 
 
-Most examples of this construction appear however with adjectives in subject participle form,\footnote{For an account of participial forms and a definition of subject and objects  in Rgyalrong languages, see \citet{jackson03caodeng, jackson14morpho, jacques16relatives}.} prefixed with \ipa{kɯ-} as in (\ref{ex:stu2}).
+Most examples of this construction appear however with adjectives in subject participle form,\footnote{For an account of participial forms and a definition of subjects and objects  in Rgyalrong languages, see \citet{jackson03caodeng, jackson14morpho, jacques16relatives}.} prefixed with \ipa{kɯ-} as in (\ref{ex:stu2}).
 
 \begin{exe}
 \ex \label{ex:stu2}
@@ -229,7 +226,7 @@ most \textsc{3sg.poss-nmlz:oblique}-be.many \textsc{dem} prairie \textsc{dem:pl}
 \end{exe}
 
  \subsubsection{Possessed participle}
-Another possibility to express superlative is with an adjective in participial form  with a third plural possessive marker, as in (\ref{ex:super2}). 
+Another possibility to express superlative meaning is with an adjective in participial form  with a third plural possessive marker, as in (\ref{ex:super2}). 
  
  \begin{exe}
 \ex \label{ex:super2}
@@ -242,7 +239,7 @@ Another possibility to express superlative is with an adjective in participial f
 This construction is less common, and mainly occurs with the adjectives \forme{mpɕɤr}{be beautiful} and \forme{mna}{be well}.
 
  \subsubsection{Relative clause} \label{sec:relative.superlative}
- A more idiomatic way of expressing superlative meaning in Japhug is by means of negative existential verb combined with a relative clause (indicated between squared brackets in the following examples) and a adjunct with the participial form of \forme{fse}{be in this way, be like}, as in (\ref{ex:kWfse.me}). This construction is a particular use of the equative construction described in section \ref{sec:fse}.\footnote{No construction exactly identical to the Japhug one is found in Gorshenin's (\citeyear{gorshenin12superlative}) survey of superlatives, though it is close to the type described in his section 3.2.5.}
+ A more idiomatic way of expressing superlative meaning in Japhug is by means of a negative existential verb combined with a relative clause (indicated between square brackets in the following examples) and an adjunct with the participial form of \forme{fse}{be in this way, be like (this)}, as in (\ref{ex:kWfse.me}). This construction is a particular use of the equative construction described in section \ref{sec:fse}.\footnote{No construction exactly identical to the Japhug one is found in Gorshenin's (\citeyear{gorshenin12superlative}) survey of superlatives, though it is close to the type described in his section 3.2.5.}
  
  \begin{exe}
 \ex \label{ex:kWfse.me}
@@ -267,14 +264,50 @@ With the lexically selected `down' prefix \ipa{pjɯ-} on \forme{sɯz}{know} as i
 \begin{exe}
 \ex \label{ex:pjWsWza}
 \gll [\ipa{aʑo} 	\ipa{nɯ} 	\ipa{kɯ-fse} 	\ipa{pjɯ-sɯz-a}]	\ipa{me} \\
-\textsc{1sg} \textsc{dem} \textsc{nmlz}:S/A-be.like \textsc{ipfv}-know-\textsc{1sg} not.exist:\textsc{fact} \\
+\textsc{1sg} \textsc{dem} \textsc{nmlz}:S/A-be.like \textsc{ipfv:down}-know-\textsc{1sg} not.exist:\textsc{fact} \\
 \glt `I know of no such thing.'
 \end{exe}
 
 This contrast cannot however be generalized to all verbs; more research is necessary to ascertain the extent, and the functional explanation for this puzzling phenomenon.
 
+\section{Similative} \label{sec:similative}
+%While equative constructions express equal degree with respect to a parameter, similative constructions express similarity in the manner in which an action is performed (\citealt{haspelmath08equative}).
+In Japhug, the main similative construction involves the verbs \forme{fse}{be like (this)} (intransitive stative) and \forme{stu}{do (this) way, do like (this)} (transitive).
+
+These verbs can occur in a serial verb construction, having the same core arguments and TAM values as the main verb, as illustrated by  (\ref{ex:kuWGstuanW}) (TAM: imperfective; Person: \textsc{3pl$\rightarrow$1sg}) and (\ref{ex:ki.fsea}) (TAM: factual non-past; Person:\textsc{1sg}).  It is possible to insert a linker between the two verbs of the serial construction, as in example (\ref{ex:kuWGstuanW}). 
+
+\begin{exe}
+\ex \label{ex:kuWGstuanW}
+\gll 	
+ \ipa{aʑo} 	\ipa{kɯki} 	\ipa{ntsɯ} 	\ipa{kú-wɣ-stu-a-nɯ} 	\ipa{tɕe,} 	\ipa{kú-wɣ-znɯkʰrɯm-a-nɯ} \\
+ \textsc{1sg} \textsc{dem:prox} always \textsc{ipfv-inv}-do.like-\textsc{1sg-pl} \textsc{lnk} \textsc{ipfv-inv}-punish-\textsc{1sg-pl} \\
+ \glt `They punished me like this.' (Gesar, 278)
+\end{exe}	
+
+
+\begin{exe}
+\ex \label{ex:ki.fsea}
+\gll \ipa{aʑo} 	\ipa{nɯ} 	\ipa{sŋiɕɤr} 	\ipa{ʑo} 	\ipa{kutɕu} 	\ipa{ki} 	\ipa{fse-a} 	\ipa{ndzur-a} 	\ipa{ntsɯ} 	\ipa{ɲɯ-ra} 	\ipa{tɕe,} \\
+\textsc{1sg} \textsc{dem} night.and.day \textsc{emph} here \textsc{dem:prox} be.like:\textsc{fact-1sg} stand:\textsc{fact-1sg} always \textsc{sens}-have.to like \\
+\glt `I have to stand like this night and day.' (The divination, 2002, 44)
+\end{exe}
+
+The standard (the demonstrative pronouns \ipa{kɯki} in (\ref{ex:kuWGstuanW}), and \ipa{ki} in (\ref{ex:ki.fsea})) cannot be indexed on the verb. The verb \forme{stu}{do (this) way, do like (this)} is thus secundative ditransitive, taking the standard as its theme. 
+
+The equative construction in \ipa{fse} `be like (this)' (section \ref{sec:fse}) is a particular case of this serial verb construction, when the main verb is an adjective.
+
+With dynamic verbs, the standard is almost always a demonstrative as in (\ref{ex:kuWGstuanW}) and (\ref{ex:ki.fsea}) above. Exceptions include \ref{ex:tWrme.YWfse}, where the standard is the noun \forme{tɯrme}{man}. In this example, the verb \forme{fse}{be like (this)} takes the sensory form (wiuth the \ipa{ɲɯ-} prefix), while the main verb is in a periphrastic sensory form, combining  the verb in the imperfective (\ipa{tu-ndze} `it eats') with an auxiliary in the sensory form.
+
+\begin{exe}
+\ex \label{ex:tWrme.YWfse}
+\gll
+\ipa{pri} 	\ipa{nɯ} 	\ipa{kɯ,} \ipa{tɯrme} 	\ipa{ɲɯ-fse} 	\ipa{tɕe,} 	\ipa{tɤ-rɤku} 	\ipa{tɕi} 	\ipa{tu-ndze,} 	\ipa{ɕa} 	\ipa{tɕi} 	\ipa{tu-ndze,} ... \ipa{ɲɯ-ŋgrɤl} \\
+bear \textsc{dem} \textsc{erg} man \textsc{sens}-be.like \textsc{lnk} \textsc{indef.poss}-grain also \textsc{ipfv}-eat meat also \textsc{ipfv}-eat { } \textsc{sens}-be.usually.the.case \\
+\glt `The bear, like a man, eats grains and meat.' (21-pri, 17)
+\end{exe}
+
 \section{Entity equative} \label{sec:arg.equative}
-This section discusses the entity equative construction, that constructions expressing that two entities have a property in equal degree (X is as Y as Z). It differs from parameter equative, treated in section \ref{sec:pred.equative}, expressing that the same entity has two properties in equal degree (X is a Y as he is Z). In the following, I adopt the terminology proposed by \citet{haspelmath08equative}, as illustrated by the English example (\ref{ex:equative.eng}). 
+This section discusses the entity equative construction, i.e. constructions expressing that two entities have a property in equal degree (`X is as Y as Z'). It differs from the parameter equative, treated in section \ref{sec:pred.equative}, expressing that the same entity has two properties in equal degree (`X is a Y as he is Z'). In the following, I adopt the terminology proposed by \citet{haspelmath08equative}, as illustrated by the English example (\ref{ex:equative.eng}). 
 
 \begin{exe}
 \ex \label{ex:equative.eng}
@@ -285,9 +318,9 @@ This section discusses the entity equative construction, that constructions expr
 There are no less than four distinct constructions expressing argument equative meaning in Japhug. 
 
 \subsection{\forme{fse}{be like}} \label{sec:fse}
-One equative construction is built with the deixis verb \forme{fse}{be like (this)} (or more rarely \forme{naχtɕɯɣ}{be identical} \forme{afsuja}{be of the same size}) as the \textsc{standard marker}.
+One equative construction is built with the verb \forme{fse}{be like (this)} (or more rarely \forme{naχtɕɯɣ}{be identical} and \forme{afsuja}{be of the same size}). The verb \forme{fse}{be like (this)} is stative, but takes two arguments (respectively the \textsc{comparee} and the \textsc{standard}). Since it is syntactically linked to the \textsc{standard}, it is analyzed here as the \textsc{standard marker} rather than as the \textsc{parameter marker}.
 
-Both  the \textsc{standard marker} \forme{fse}{be like} and the \textsc{parameter} can appear in finite form, sharing TAM and person marking as in (\ref{ex:fsWfse}). This is in fact a particular case of the serial verb construction used to express similative (see section \ref{sec:similative}). Such examples with finite verb forms are rare in the corpus.
+Both  the \textsc{standard marker} \forme{fse}{be like (this)} and the \textsc{parameter} can appear in finite form, sharing TAM and person marking as in (\ref{ex:fsWfse}). This is in fact a particular case of the serial verb construction used to express similative (see section \ref{sec:similative}). Such examples with finite verb forms are rare in the corpus.
 
 \begin{exe}
 \ex \label{ex:fsWfse}
@@ -309,7 +342,7 @@ Paris \textsc{dem} {here \textsc{1pl}} \textsc{comit} be.identical:\textsc{fact}
 \glt `You said that it was as cold in Paris as here by us.' (conversation, 11/08/2016)
 \end{exe}
 
-The equative in \forme{fse}{be like (this)} is more commonly used in attributive equative clauses. Both \forme{fse}{be like} and the adjective(the \textsc{parameter}) are in participial form in  example (\ref{ex:kWfse.kWchWcha}), forming a relative clause with the comparee as the relativized element. The superlative construction studied in section \ref{sec:relative.superlative} is essentially a particular use of such relativized equative sentences.
+The equative construction in \forme{fse}{be like (this)} is more commonly used in attributive equative clauses. Both \forme{fse}{be like (this)} and the adjective (the \textsc{parameter}) are in participial form in (\ref{ex:kWfse.kWchWcha}), forming a relative clause with the comparee as the relativized element. The superlative construction studied in section \ref{sec:relative.superlative} is essentially a particular use of such relativized equative sentences.
 
 \begin{exe}
 \ex \label{ex:kWfse.kWchWcha}
@@ -319,27 +352,26 @@ The equative in \forme{fse}{be like (this)} is more commonly used in attributive
 \glt `I need a hundred and eight young men as able as I am.' (x1-sloXpWn, 17)
 \end{exe}
 
-These constructions do not require an \textsc{parameter marker}, though adverbs \forme{fsɯfse}{completely identical} can serve as redundant parameter marker, as in (\ref{ex:fsWfse}).
+These constructions do not require a \textsc{parameter marker}, though adverbs \forme{fsɯfse}{completely identical} can serve as an emphatic \textsc{parameter marker}, as in (\ref{ex:fsWfse}).
 
-A similar equative construction in attested in the Kyomkyo dialect of Situ Rgyalrong (\citealt[238]{prins11kyomkyo}), though with the \textsc{mark} expressed by the participial form of the Tibetan loanword \forme{ndʐa}{be like} instead of the native root corresponding to Japhug \forme{fse}{be like}.
+A similar equative construction is attested in the Kyomkyo dialect of Situ Rgyalrong (\citealt[238]{prins11kyomkyo}), though with the \textsc{standard marker} expressed by the participial form of the Tibetan loanword \forme{ndʐa}{be like} instead of the native root corresponding to Japhug \forme{fse}{be like (this)}.
 
 This equative construction corresponds to Haspelmath's (\citeyear{haspelmath17equative}) type 1 (Only equative standard-marker)
 
 \subsection{Nominalized degree construction} \label{sec:NDC.equative}
 This construction is a particular case of the Nominalized Degree Construction presented in section \ref{sec:NDC}. It is by far the most common way of expressing equative meaning in Japhug. It has three slightly different variants. 
 
-In the first construction (corresponding to Haspelmath's (\citeyear{haspelmath17equative}) type 5 -- Primary reach equative unified), the \textsc{comparee}and the \textsc{standard} are included in a noun phrase, with the comitative marker \ipa{cʰo} (and its longer variant \ipa{cʰondɤre}) serving as the \textsc{mark} after one of them. This noun phrase is followed by an adjective (the \textsc{parameter}) in degree nominal form (prefixed with \ipa{tɯ-} and a possessive prefix (in dual or plural) coreferent with the preceding noun phrase. This nominalized verb and the preceding noun phrase form a larger noun phrase that is the subject of the adjective \forme{naχtɕɯɣ}{be identical} (the \textsc{parameter marker})\footnote{The adjective \forme{naχtɕɯɣ}{be identical} is a denominal verb derived from the a non-attested form *\ipa{χtɕɯɣ} borrowed from the Tibetan numeral \forme{gtɕig}{one}. } in finite form, as in examples (\ref{ex:ndZitWwxti}) and (\ref{ex:ndZitWmbro}).
+In the first construction (corresponding to Haspelmath's (\citeyear{haspelmath17equative}) type 5 -- Primary reach equative unified), the \textsc{comparee} and the \textsc{standard} are included in a noun phrase, with the comitative marker \ipa{cʰo} (and its longer variant \ipa{cʰondɤre}) serving as the \textsc{standard marker} after one of them.\footnote{In this construction, since the comparee and the standard are included in the same constituent, only the context allows to distinguish between the two. In this example, we know that the \ipa{βʑar} bird is the \textsc{standard} since this sentence is taken from a text describing the \ipa{qalekɯtsʰi} bird. This illustrates the fact that in equative constructions, since \textsc{standard} and \textsc{comparee} are identical with respect to a particular parameter, exchanging their order has no impact on the truth value of the sentence, unlike in the case of other comparative constructions.} This noun phrase is followed by an adjective (the \textsc{parameter}) in degree nominal form (prefixed with \ipa{tɯ-}) and a possessive prefix (in dual or plural) coreferent with the preceding noun phrase. This nominalized verb and the preceding noun phrase form a larger noun phrase that is the subject of the adjective \forme{naχtɕɯɣ}{be identical} (the \textsc{parameter marker})\footnote{The adjective \forme{naχtɕɯɣ}{be identical} is a denominal verb derived from the a non-attested form *\ipa{χtɕɯɣ} borrowed from the Tibetan numeral \forme{gtɕig}{one}. } in finite form, as in (\ref{ex:ndZitWwxti}) and (\ref{ex:ndZitWmbro}).
 
 \begin{exe}
 \ex \label{ex:ndZitWwxti}
 \glll
 \ipa{qalekɯtsʰi} 	\ipa{nɯnɯ} 	\ipa{cʰondɤre} 	\ipa{βʑar} 	\ipa{nɯ} 	\ipa{ndʑi-tɯ-wxti} 	\ipa{naχtɕɯɣ} \\
 bird.sp \textsc{dem} \textsc{comit} bird.sp \textsc{dem} \textsc{3du.poss-nmlz:degree}-be.big be.identical:\textsc{fact} \\
-{\textsc{standard}} { } \textsc{standard.marker} {\textsc{comparee}} { } \textsc{parameter} \textsc{parameter.marker} \\
-\glt The \ipa{qalekɯtsʰi} bird is as big as the \ipa{βʑar} bird. (hist-23-RmWrcWftsa, 34)
+{\textsc{comparee}} { } \textsc{standard.marker} {\textsc{standard}} { } \textsc{parameter} \textsc{parameter.marker} \\
+\glt `The \ipa{qalekɯtsʰi} bird is as big as the \ipa{βʑar} bird.' (`The \ipa{qalekɯtsʰi} bird and the \ipa{βʑar} bird are identical in their degree of bigness')  (hist-23-RmWrcWftsa, 34)
 \end{exe}
-
-In example (\ref{ex:ndZitWwxti}) note that although the bird \ipa{qalekɯtsʰi}, since it is followed by the comitative postposition, is syntactically the \textsc{standard}, it is obvious from the context that the other bird (\ipa{βʑar}) is the semantic standard since this sentence is taken from a text describing the \ipa{qalekɯtsʰi} bird. This illustrates the fact that in equative constructions, since standard and comparee are identical as regards to a particular parameter, exchanging their order has not impact on the truth value of the sentence, unlike in the case of other comparative constructions.
+ 
 
 \begin{exe}
 \ex \label{ex:ndZitWmbro}
@@ -349,7 +381,7 @@ In example (\ref{ex:ndZitWwxti}) note that although the bird \ipa{qalekɯtsʰi},
 \glt `It is not high, it (grows) as high as the \ipa{tɤru} tree.' (hist-17-xCAj, 56)
 \end{exe}
 
-In the second construction, the nominalized \textsc{parameter} takes a possessive prefix only coreferent with the \textsc{comparee}, and the \textsc{standard}  together with the comitative (the \textsc{standard marker}) follows the \textsc{parameter}, as in (\ref{ex:WtWwxti}).
+In the second construction,\footnote{This construction is very rare, only two examples are found in the corpus.} the nominalized \textsc{parameter} takes a possessive prefix only coreferent with the \textsc{comparee}, and the \textsc{standard}  together with the comitative (the \textsc{standard marker}) follows the \textsc{parameter}, as in (\ref{ex:WtWwxti}).
 
 \begin{exe}
 \ex \label{ex:WtWwxti}
@@ -374,7 +406,7 @@ In the third construction, the parameter takes a third person singular possessiv
 
 
 \subsection{Possessed noun} \label{sec:Wfsu}
-The possessed noun\footnote{In Japhug, possessed nouns obligatorily take a possessive prefix (see Table \ref{tab:pronoun}, section \ref{sec:possessive}), here the third singular \ipa{ɯ-}. } \forme{ɯ-fsu}{of the same size as} can be used as the \textsc{standard marker} in a construction of \citet{haspelmath17equative}'s type 1 like the one discussed in section \ref{sec:fse}.\footnote{Incidentally, note that \forme{fse}{be like}, the verb which serves as the \textsc{mark} in the construction described in section \ref{sec:fse}, is etymologically related to \forme{ɯ-fsu}{of the same size as}.}
+The possessed noun\footnote{In Japhug, possessed nouns obligatorily take a possessive prefix (see Table \ref{tab:pronoun}, section \ref{sec:possessive}), here the third singular \ipa{ɯ-}. } \forme{ɯ-fsu}{of the same size as} can be used as the \textsc{standard marker} in a construction of Haspelmath's (\citeyear{haspelmath17equative}) type 1 like the one discussed in section \ref{sec:fse}.\footnote{Incidentally, note that \forme{fse}{be like (this)}, the verb which serves as the \textsc{standard marker} in the construction described in section \ref{sec:fse}, is etymologically related to \forme{ɯ-fsu}{of the same size as}.} The parameter cannot be expressed in this construction.
 
 \begin{exe}
 \ex \label{ex:Wfsu}
@@ -386,7 +418,7 @@ The possessed noun\footnote{In Japhug, possessed nouns obligatorily take a posse
 This construction is relatively marginal in Japhug. In the Cogtse dialect of Situ Rgyalrong, a similar construction is reported (\citealt[377]{linxr93jiarong}).
 
 \subsection{Denominal adjectives} \label{sec:denominal}
-Japhug has a denominal prefix \ipa{arɯ-} deriving adjectives meaning `like X' out of nouns. I have no examples from narratives, but it spontaneously occurs in conversation, as for instance (\ref{ex:arWsWjno}), which I heard as I was correcting the transcription of a story with my main informant. The more elaborated sentence (\ref{ex:YArWsWjno}) was given as an explanation for (\ref{ex:arWsWjno}).
+Japhug has a denominal prefix \ipa{arɯ-} deriving adjectives meaning `like X' out of nouns. I have no examples from narratives, but it spontaneously occurs in conversation  in examples such as (\ref{ex:arWsWjno}) (which I heard as I was correcting the transcription of a story with my main informant), in a construction combining the degree nominal (\ref{sec:NDC}) with the sentence final particle \ipa{nɯ} used to express surprise. Example (\ref{ex:WtWmpCAr}) illustrates the same form with a non-denominal adjective.
 
 \begin{exe}
 \ex \label{ex:arWsWjno}
@@ -396,12 +428,13 @@ Japhug has a denominal prefix \ipa{arɯ-} deriving adjectives meaning `like X' o
 \end{exe}
 
 \begin{exe}
-\ex \label{ex:arWmWntoR}
-\gll \ipa{ɯ-tɯ-ɤrɯmɯntoʁ} 	\ipa{nɯ!}  \\
-\textsc{3sg.poss-nmlz:degree}-be.like.a.flower \textsc{sfp} \\
-\glt `It is as (worthless) as a flower!'
+\ex \label{ex:WtWmpCAr}
+\gll \ipa{ɯ-tɯ-mpɕɤr} 	\ipa{nɯ!}  \\
+\textsc{3sg.poss-nmlz:degree}-be.beautiful \textsc{sfp} \\
+\glt `It/s/he is so beautiful!'
 \end{exe}
 
+The more elaborated sentence (\ref{ex:YArWsWjno}) was given as an explanation for (\ref{ex:arWsWjno}).
 
 \begin{exe}
 \ex \label{ex:YArWsWjno}
@@ -411,20 +444,20 @@ Japhug has a denominal prefix \ipa{arɯ-} deriving adjectives meaning `like X' o
 \glt `It is as easy to cut as if it were grass.' 
 \end{exe}
 
-This unusual equative construction is productive, since it can be applied to nouns from Tibetan (\ref{ex:arWmWntoR}) or Chinese. I does not fit in any of Haspelmath's (\citeyear{haspelmath17equative}) six types of equative construction, and appear to be crosslinguistically rare. It resembles the `similative adjective' derivation in \ipa{-lágan} in Saami (\citealt[5.1]{ylikovski17similarity}). There are three main differences between the Japhug construction and its Saami equivalent.
+This unusual equative construction is productive, since it can be applied to nouns from Tibetan or Chinese. I does not fit in any of Haspelmath's (\citeyear{haspelmath17equative}) six types of equative constructions, but resembles the ``similative adjective'' derivation in \ipa{-lágan} in Saami (\citealt[5.1]{ylikovski17similarity}). There are three main differences between the Japhug construction and its Saami equivalent.
 
 \begin{enumerate}
 \item The denominal adjectives in Japhug are a sub-class of stative verbs, rather than being noun-like as in Saami.
 \item The suffix \ipa{-lágan} in Saami, like the corresponding equative postposition \ipa{láhkai} are historically related to the noun \ipa{láhki} ‘mood, manner’, whereas the prefix \ipa{arɯ-} appears to be a combination of the passive \ipa{a-} with the denominal \ipa{rɯ-} prefix.
-\item The Saami suffix is mainly used in attributive equative constructions, while the Japhug prefix occurs mainly in the degree nominal form illustrated by example (\ref{ex:arWsWjno}).
+\item The Saami suffix is mainly used in attributive equative constructions, while the Japhug prefix occurs mainly in the degree nominal form illustrated by (\ref{ex:arWsWjno}).
 \end{enumerate}
 
 
 
-\section{Parameter equative} \label{sec:pred.equative}
-Parameter equative constructions (`X is as Y as he is Z') do not occur in the Japhug corpus. This meaning can however be expressed in this language. In order to limit the effect of elicitation, the following procedure was undertaken. I first wrote in Japhug a translation of Perrault's story `Riquet à la Houppe' which contains many examples of Predicate equative sentences. The translation was then corrected with my main informant sentence by sentence. Then, she was asked to retell the story (in six episodes of 3 to 5 minutes) using her own words.
+\section{Property equative} \label{sec:pred.equative}
+Property equative constructions (`X is as Y as he is Z') do not occur in the Japhug corpus. This meaning can however be expressed in this language. In order to limit the effect of elicitation, the following procedure was undertaken. I first wrote a Japhug translation of Perrault's story \textbf{Riquet à la Houppe} which contains many examples of property equative sentences. The translation was then corrected with my main informant sentence by sentence. Then, she was asked to retell the story (in six episodes of 3 to 5 minutes) using her own words.
 
-Parameter equatives, for instance `X is as stupid as s/he is beautiful' (a sentence occurring several times in the story) can be expressed in Japhug in three distinct ways.
+Property equatives, e.g. `X is as stupid as s/he is beautiful' (a sentence occurring several times in the story), can be expressed in Japhug in three distinct ways.
 
 First, the possessed noun \forme{ɯ-fsu}{of the same size as} (used in the argument equative construction, section \ref{sec:Wfsu}), follows a degree nominal derived from the first adjective; the second adjective takes a finite form.
 
@@ -446,7 +479,7 @@ Second, two adjectives in degree nominal form, the first followed by the comitat
 \glt `His/Her beauty and his/her stupidity are equal.'
 \end{exe}
 
-Third, it is possible to express the same meaning with a correlative construction, as in \ref{ex:correlative}. This construction however may be a calque from Chinese, and is of lesser interest to the study of Japhug grammar.
+Third, it is possible to express the same meaning with a correlative construction, as in (\ref{ex:correlative}). This construction however may be a calque from Chinese, and is of lesser interest to the study of Japhug grammar.
 
 \begin{exe}
 \ex \label{ex:correlative}
@@ -456,37 +489,10 @@ what about \textsc{nmlz}:S/A-be.beautiful \textsc{dem} \textsc{dem} about \texts
 \glt `A much as s/he is beautiful, s/she is stupid.'
 \end{exe}
 
-\section{Similative} \label{sec:similative}
-While equative constructions express equal degree as regards to a parameter, similative constructions express similarity in the manner in which an action is performed (\citealt{haspelmath08equative}).
 
-In Japhug, the main similative construction involves the action deixis verbs \ipa{fse} `be like (this)' (intransitive stative) and \ipa{stu} `do (this) way, do like (this)' (transitive).
-
-These verbs occur in a serial verb construction, having the same core arguments and TAM values as the main verb, as illustrated by examples (\ref{ex:kuWGstuanW}) (TAM: imperfective; Person:\textsc{3pl$\rightarrow$1sg}) and (\ref{ex:ki.fsea}) (TAM: factual non-past; Person:\textsc{1sg}). \ipa{stu} `do (this) way, do like (this)' is used respectively when the main verb is transitive, while \ipa{fse} `be like (this)' is used when the main verb is intransitive.
-
-It is possible to insert a linker between the two verbs of the serial construction, as in example (\ref{ex:kuWGstuanW}). 
-
-\begin{exe}
-\ex \label{ex:kuWGstuanW}
-\gll 	
- \ipa{aʑo} 	\ipa{kɯki} 	\ipa{ntsɯ} 	\ipa{kú-wɣ-stu-a-nɯ} 	\ipa{tɕe,} 	\ipa{kú-wɣ-znɯkʰrɯm-a-nɯ} \\
- \textsc{1sg} \textsc{dem:prox} always \textsc{ipfv-inv}-do.like-\textsc{1sg-pl} \textsc{lnk} \textsc{ipfv-inv}-punish-\textsc{1sg-pl} \\
- \glt `They punished me like this.' (Gesar, 278)
-\end{exe}	
-
-
-\begin{exe}
-\ex \label{ex:ki.fsea}
-\gll \ipa{aʑo} 	\ipa{nɯ} 	\ipa{sŋiɕɤr} 	\ipa{ʑo} 	\ipa{kutɕu} 	\ipa{ki} 	\ipa{fse-a} 	\ipa{ndzur-a} 	\ipa{ntsɯ} 	\ipa{ɲɯ-ra} 	\ipa{tɕe,} \\
-\textsc{1sg} \textsc{dem} night.and.day \textsc{emph} here \textsc{dem:prox} be.like:\textsc{fact-1sg} stand:\textsc{fact-1sg} always \textsc{sens}-have.to like \\
-\glt `I have to stand like this night and day.' (The divination, 2002, 44)
-\end{exe}
-
-The standard (the demonstrative pronouns \ipa{kɯki} in \ref{ex:kuWGstuanW}, and \ipa{ki} in \ref{ex:ki.fsea})  cannot be indexed on the verb. The verb \ipa{stu} `do (this) way, do like (this)' is thus secundative ditransitive, taking the standard as its theme.
-
-The equative construction in \ipa{fse} `be like (this)' (section \ref{sec:fse}) is a particular case of this serial verb construction, when the main verb is an adjective.
 
 \section*{Conclusion}
-This paper documents various constructions in Japhug, some of which had never been described previously. Japhug presents a rich array of equative constructions, some of the garden variety type, but others, like the relative clause superlative (in particular the use of the `up' orientation prefix, see section \ref{sec:relative.superlative}) and the denominal equative (section \ref{sec:denominal}), appear quite unusual and isolated at least areally.
+This paper documents various constructions in Japhug, some of which have never been described previously. Japhug presents a rich array of equative constructions, some of the garden variety type, but others, like the relative clause superlative (in particular the use of the `up' orientation prefix, see section \ref{sec:relative.superlative}) and the denominal equative (section \ref{sec:denominal}), appear quite unusual and isolated at least areally.
 
 Despite the lexical influence of Tibetan languages on Japhug, and the fact that some of the constructions described in this paper involve Tibetan borrowings (see sections \ref{sec:wuma} and \ref{sec:NDC.equative}), none of them appear to be calqued from their Tibetan equivalents.
 
