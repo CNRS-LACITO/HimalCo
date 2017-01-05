@@ -1,0 +1,222 @@
+\documentclass[oldfontcommands,twoside,a4paper,12pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+ \usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={210mm,297mm},
+% left=10mm,
+% right=10mm,
+% top=15mm,
+% bottom=15mm,
+% }
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage[footnotesize,bf]{caption}
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setsansfont[Mapping=tex-text,Ligatures=Common,Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Lucida Sans Unicode} 
+ 
+
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newfontfamily\phondroit[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Doulos SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\tgf}[1]{{\large\mo{#1}}}
+\newcommand{\rc}{}
+\newcommand{\tete}{}
+\newcommand{\topic}{\textsc{top}}
+\newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\tinynb}[1]{\tiny#1}
+
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+\begin{document}
+\title{Examen de typologie, 6 décembre 2017}
+\maketitle
+\section*{Exercice 1 (budugh)}
+
+ \begin{enumerate}
+  \item Déterminez, à partir de ces phrases en budugh, l'alignement (du marquage) de cette langue.
+  \item Pourquoi \ipa{rij(ir)} à l'exemple (2) admet aussi bien la forme \ipa{rij} que \ipa{rijir} ?
+  \item A quoi pourraient être dues les variations du vocalisme des formes verbales ?
+  \item Quelle est l'information précieuse que nous apporte l'exemple (4) ?
+  \item Glosez (en segmentant au maximum) les exemples.
+  \item Traduisez : ``C’est le garçon qui a fait sécher la robe. La fille s’est endormie.''
+
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\begin{exe}
+\ex
+\gll \ipa{Gada’r} \ipa{rijovon} \ipa{``Buluşa} \ipa{ sö’ür!''} \ipa{yıpaci.}\\
+%{2\sg-\erg} {1\sg(\abs)} {catch.\masc.\perf-\pret=2\sg}
+\\
+\glt Le garçon a dit à la fille « Fais sécher la robe ! ».
+\end{exe}
+
+\begin{exe}
+\ex
+\gll \ipa{Rij(ir)} \ipa{gadoxun} \ipa{ösül} \ipa{gadovon} \ipa{``Buluşa} \ipa{so’oci.} \ipa{Buluşa} \ipa{ ösül!''} \ipa{yıpaci.}\\
+%{2\sg-\erg} {1\sg(\abs)} {catch.\masc.\perf-\pret=2\sg}
+\\
+\glt La fille s’est tournée vers le garçon (et) a dit au garçon « La robe est sèche. Tourne la robe. »
+\end{exe}
+
+\begin{exe}
+\ex
+\gll \ipa{Xhın} \ipa{sa’aci.} \ipa{Gada} \ipa{exirci.}\\
+%{2\sg-\erg} {1\sg(\abs)} {catch.\masc.\perf-\pret=2\sg}
+\\
+\glt L’herbe a séché. Le garçon s’est endormi.
+\end{exe}
+
+\begin{exe}
+\ex
+\gll \ipa{Xhın} \ipa{rijir}/\ipa{gada'r} \ipa{se’ir} \ipa{esilci.}\\
+%{2\sg-\erg} {1\sg(\abs)} {catch.\masc.\perf-\pret=2\sg}
+\\
+\glt C’est la fille/le garçon qui a fait sécher (et) retourné l’herbe.
+\end{exe} 
+
+
+%\newpage
+\section*{Exercice 2 (garifuna)}
+%3ms.st
+
+\begin{enumerate}
+\item Décrivez le système d'indexation dans cette langue en précisant son alignement.
+\item Traduisez les phrases suivantes: 
+\begin{enumerate}
+\item `Je vais la tuer.'
+\item `Tu seras gentil.'
+\item `Je vais t'épouser.'
+\end{enumerate}
+\end{enumerate}
+
+\begin{multicols}{2}
+ \begin{exe}
+\ex 
+\glt \ipa{bwídubei}  \ipa{ównli}
+ \glt  `Le chien (m) va être gentil.'
+\end{exe}
+
+%3fs.st
+ \begin{exe}
+\ex 
+\glt \ipa{bímebon}  \ipa{fáluma}
+ \glt  `La noix de coco (f) va être sucrée.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{nídiba}  
+ \glt  `J'irai.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{tídiba}  
+ \glt  `Elle ira.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{narísiduba}  
+ \glt  `Je m'enrichirai.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{barísiduba}  
+ \glt  `Tu t'enrichiras.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{larísiduba}  
+ \glt  `Il s'enrichira.'
+\end{exe}
+
+ \begin{exe}
+\ex 
+\glt \ipa{lónweba}  
+ \glt  `Il mourra.'
+\end{exe}
+
+%%2p.act
+% \begin{exe}
+%\ex 
+%\glt \ipa{harúmuguba}  
+% \glt  `Vous allez dormir.'
+%\end{exe}
+ 
+%3ms>3ms 
+  \begin{exe}
+\ex 
+\glt \ipa{láfarubei}    
+ \glt  `Il va le tuer'.
+\end{exe}
+
+  \begin{exe}
+\ex 
+\glt \ipa{lamáriedubana}    
+ \glt  `Il va m'épouser.'
+\end{exe}
+
+  \begin{exe}
+\ex 
+\glt \ipa{lamáriedubabu}    
+ \glt  `Il va t'épouser.'
+\end{exe}
+
+  \begin{exe}
+\ex 
+\glt \ipa{tamáriedubei}    
+ \glt  `Elle va l'épouser.'
+\end{exe}
+
+  \begin{exe}
+\ex 
+\glt \ipa{naníbirubei}    
+ \glt  `Je le bénirai.'
+\end{exe}
+
+%1s>3fs
+ \begin{exe}
+\ex 
+\glt \ipa{nátubon}    
+ \glt  `Je vais la boire (la bière, f).'
+\end{exe}
+
+%1p>3fs
+% \begin{exe}
+%\ex 
+%\glt \ipa{waséfurubon} \ipa{gurúyara}    
+% \glt  `Nous allons sauver le canoé (f).'
+%\end{exe}
+\end{multicols}
+\end{document}
+
