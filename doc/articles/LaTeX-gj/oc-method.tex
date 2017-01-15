@@ -1,0 +1,78 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\dhat}[1]{|\ipa{#1}|}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+
+
+\begin{document}
+
+\title{How to reconstruct Old Chinese morphology?}
+
+\section*{Introduction}
+While neither Old Chinese nor modern Sinitic languages can be considered to be completely lacking morphology, it is clear that productive morphology in modern Sinitic languages is of recent origin (\citealt{arcodia15typology}), and that morphological processes which remains reconstructible in Old Chinese (\citealt{sagart99roc}) are limited in quantity and imperfectly understood.
+
+Yet, there is no controversy that Chinese is genetically related to languages such as Rgyalrongic and Kiranti, which present rich and complex derivational and inflectional morphology (\citealt{jacques13harmonization}). It is also well accepted that some of the morphology reconstructible in Old Chinese is to some extent relatable to that of other languages of the family (see for instance \citealt{sagart12sprefix} and references cited therein). 
+ 
+
+\section{How to reconstruct fossil morphology?} 
+
+
+\ipa{sittan} `sit' < *\ipa{setjan} < *\ipa{sed-je/o-} (Greek \grec{ἕζομαι})
+\citet[434]{kroonen13dict}, \citet[514, n.7]{liv}
+
+\ipa{settan} `set, put' < *\ipa{satjan} < *\ipa{sod-éje/o-} (Sanskrit \ipa{sādayati}), \citet[427]{kroonen13dict}
+
+
+
+\section{Why Rgyalrongic?}
+
+\section{Philology vs comparative linguistics}
+
+
+\section*{Conclusion}
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
