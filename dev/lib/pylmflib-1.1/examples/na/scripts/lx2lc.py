@@ -86,8 +86,6 @@ def générer_un_lc(lexème, information_tonale, classe_grammaticale):
                         for lettre_ton in ["a", "b", "c", "d"]:
                             ton_de_morphème = ton_de_morphème.replace(lettre_ton, '')
                         # print('décomposition :', train_de_syllabes, train_de_tons, ton_de_morphème)
-                        # print('train_de_tons :', train_de_tons)
-
                         # On applique le ton phonologique en utlisant les règles d'association des différents tons lexicaux. La condition est qu'il n'y ait ni ton H flottant, ni ton H associé à une précédente syllabe à l'intérieur du groupe tonal, faute de quoi ce ton H conditionne toute la suite.
                         if not ton_haut and not ton_flottant:
                             if ton_de_morphème == "˧":  # cas du ton M
@@ -132,15 +130,13 @@ def générer_un_lc(lexème, information_tonale, classe_grammaticale):
                                 résultat.extend([syllabe + "˩" for syllabe in train_de_syllabes[0:-1]])
                                 résultat.append(train_de_syllabes[-1] + "˥")
                             elif ton_de_morphème == "˩˥":  # Cas du ton LH. Pour les monosyllabes, on met les 2 niveaux tonals L et H sur la première syllabe (et seule) du train. Sinon : L sur premières syll., H sur dernière.
-                                print("***", ton_de_morphème)
                                 if len(train_de_syllabes) == 1:
-                                    print("cas 1")
                                     résultat.append(train_de_syllabes[0] + "˩˥")
                                 else:
-                                    print("cas 2")
                                     résultat.extend([syllabe + "˩" for syllabe in train_de_syllabes[0:-1]])  # ajouté par Alexis le soir du 10 janvier. Attention les dégâts :-) Idée : L sur toutes les syllabes, sauf la dernière qui reçoit un H.
                                     résultat.append(train_de_syllabes[-1] + "˥")
                             elif ton_de_morphème == "˥":  # Ton H : n'existe (tel quel) que pour les monosyllabes. On neutralise en ton moyen sur la première syllabe.
+                                print("**", ton_de_morphème)
                                 résultat.append(train_de_syllabes[0] + "˧")
                             # S'il n'y a pas de ton indiqué : on assigne M par défaut.
                             elif not ton_de_morphème:
@@ -158,6 +154,7 @@ def générer_un_lc(lexème, information_tonale, classe_grammaticale):
                     if all([ton not in résultat[-1] for ton in ["˧", "˥"]]):
                         résultat[-1] += "˥"
                     # Aussi : neutralisation finale des M et H en H, si précédé uniquement de M. Une fonction spécifique a été réalisée pour cet ajustement.
+                    print("x++++>", résultat)
                     résultat[-1] = neutralisation_finale(résultat[-1])
                 else:
                     return "xxxx non-correspondance entre le nombre de morphèmes et le nombre de tons de morphèmes"
@@ -189,8 +186,9 @@ def neutralisation_finale(groupe_tonal):
     résultat = groupe_tonal
     tons = [caractère for caractère in groupe_tonal if caractère in ["˩", "˧", "˥"]]
     # print('****', tons)
-    if tons[-1] == "˧" and all([ton not in tons[0:-1] for ton in ["˧", "˥"]]):
+    if tons[-1] == "˧" and all([ton not in tons[0:-1] for ton in ["˧", "˥"]]) and "˩" in tons[0:-1]:
         résultat = groupe_tonal[0:-1] + "˥"
+    print("*******************************************", groupe_tonal, tons, résultat, [ton not in tons[0:-1] for ton in ["˧", "˥"]])
     return résultat
 
 # Exécution du script s'il n'est pas appelé comme un module.
