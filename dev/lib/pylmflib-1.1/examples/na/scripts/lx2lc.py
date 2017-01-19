@@ -20,7 +20,7 @@ exemple = ' ta˧ta˧-ta˧', ' LM-M ', 'v'
 
 
 def créer_le_dictionnaire_avec_les_lc(chemin_entrée, chemin_sortie):
-    with open(chemin_entrée, 'r') as entrée, open(chemin_sortie, 'w') as sortie:
+    with open(chemin_entrée, 'r', encoding="utf-8") as entrée, open(chemin_sortie, 'w', encoding="utf-8") as sortie:
         expression = regex.compile(r"\\np <type=\"tone\"> ([\w̃|#$+-]+)")
         lexème = None
         information_tonale = None
