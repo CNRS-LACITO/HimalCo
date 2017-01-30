@@ -1,0 +1,265 @@
+\documentclass{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+  \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=1in,
+ right=1in,
+ top=20mm,
+ bottom=20mm,
+ }
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\bleu}[1]{\cellcolor{blue!30}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\siga}{$\Sigma_1$} 
+\newcommand{\sigc}{$\Sigma_3$}   
+
+ \begin{document} 
+\title{The status of the 1sg in Rgyalrongic and Kiranti
+languages}
+\author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
+\maketitle
+
+\sloppy
+\section*{Introduction}
+In the verbal paradigms of Kiranti and Gyalrongic languages, the \textsc{1sg} (and to a lesser extent the \textsc{2sg}) has a status that sets it apart from other persons, including \textsc{1du} and \textsc{1pl} (inclusive or exclusive).
+
+Two independent pieces of evidence suggest this special status: (i) the presence of synchronically unanalyzable portmanteaux in configuration involving the \textsc{1sg}, and (ii) the unique ability of \textsc{1sg} to be compatible with additional number indexes.
+
+\section{Syncretic forms}
+
+\subsection{Khaling}
+ 
+As shown in Tables \ref{tab:nonloc} and \ref{tab:loc} (data from \citealt[1102]{jacques12khaling}), in Khaling \textsc{1/2n.sg}$\rightarrow$2/3 and 3$\rightarrow$1/2  forms are identical to their intransitive counterparts (except for the presence of inverse/2 \ipa{ʔi-} prefix in \textsc{3sg}$\rightarrow$1 forms), while \textsc{1/2sg/3}$\rightarrow$2/3 direct forms have a specific stem and suffix. The \textsc{1sg$\rightarrow$3} has a portmanteau \ipa{-u} suffix (homophonous with the \textsc{1de}) and a unique stem form \ipa{lob-} with short, vowel, voicing of the final consonant, and backing effect (\ipa{o} instead of \ipa{ɵ}) not found elsewhere in the paradigm, and the \textsc{1sg$\rightarrow$2sg} has a portmanteau \ipa{-nɛ} suffix.
+
+\begin{table}[H]
+\caption{Intransitive non-past forms in Khaling compared to transitive direct and inverse configurations} \label{tab:nonloc} \centering
+\begin{tabular}{llllllllllllll}
+ \toprule
+ &	X$\rightarrow$\textsc{3sg} &	\textsc{2/3sg}$\rightarrow$X &	\textsc{intr} &	\\	
+ \midrule
+\textsc{1s} &	\ipa{lob-u} \bleu{}&	\ipa{ʔi-loɔ̂m-ŋʌ} &	\ipa{soɔ̂m-ŋʌ} &	\\	
+\textsc{1di} &	\ipa{lɵp-i} &	\ipa{ʔi-lɵp-i} &	\ipa{sɵp-i} &	\\	
+\textsc{1de} &	\ipa{lɵp-u} &	\ipa{ʔi-lɵp-u} &	\ipa{sɵp-u} &	\\	
+\textsc{1pi} &	\ipa{loɔp-ki} &	\ipa{ʔi-loɔp-ki} &	\ipa{soɔp-ki} &	\\	
+\textsc{1pe} &	\ipa{loɔp-kʌ} &	\ipa{ʔi-loɔp-kʌ} &	\ipa{soɔp-kʌ} &	\\	
+\textsc{2s} &	\ipa{ʔi-lɵ̄ːb-ʉ} \bleu{}&	\ipa{ʔi-loɔp} &	\ipa{ʔi-soɔp} &	\\	
+\textsc{2d} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-sɵp-i} &	\\	
+\textsc{2p} &	\ipa{ʔi-loɔ̂m-ni} &	\ipa{ʔi-loɔ̂m-ni} &	\ipa{ʔi-soɔ̂m-ni} &	\\	
+\textsc{3s} &	\ipa{lɵ̄ːb-ʉ} \bleu{}&	 \grise{} &	\ipa{soɔp} &	\\	
+\textsc{3d} &	\ipa{lɵ̂ːb-su} \bleu{}&	\grise{} &	\ipa{sɵp-i} &	\\	
+\textsc{3p} &	\ipa{lɵ̂ːb-nu} \bleu{}&	\grise{} &	\ipa{soɔ̂m-nu} &	\\	
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{1$\rightarrow$2 configuration} \label{tab:loc} \centering
+\begin{tabular}{llllllllllllll}
+ \toprule
+  &	\textsc{2sg} &	\textsc{2du} &	\textsc{2pl} &	\\
+   \midrule
+\textsc{1sg} &	\ipa{loɔ̂m-nɛ} \bleu{}&	\ipa{loɔ̂m-su} \bleu{}&	\ipa{loɔ̂m-nu} \bleu{}&	\\
+\textsc{1du/pl.excl }&	\ipa{ʔi-loɔp} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-loɔ̂m-ni} &	\\
+\textsc{intr} &	\ipa{ʔi-soɔp} &	\ipa{ʔi-sɵp-i} &	\ipa{ʔi-soɔ̂m-ni} &	\\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+Comparative Kiranti comparison shows that these portmanteau forms are inherited, as shown in Table \ref{tab:kiranti} (data from \citealt{driem87}, \citealt{doornenbal09},  \citealt{bickel07puma},\citealt{schackow15yakkha}). 
+
+
+\begin{table}[H]
+\caption{Khaling portmanteau suffixes in comparative light} \label{tab:kiranti} \centering
+\begin{tabular}{lllllll}
+\toprule
+Configuration &  Khaling & Bantawa/Puma & Yakkha& Limbu \\
+\midrule
+\textsc{1sg$\rightarrow$3} & \ipa{-u} $\leftarrow$ \ipa{*-uŋ} & \ipa{-uŋ} & \ipa{-uŋ} &\ipa{-uŋ} \\
+\textsc{1sg$\rightarrow$2sg} &  \ipa{-nɛ} $\leftarrow$ \ipa{*-na} &  \ipa{-na} &  \ipa{-nen} & \ipa{-nɛ} & \\
+ \bottomrule
+\end{tabular}
+\end{table}
+
+The suffix \ipa{-u} comes from \ipa{*-uŋ} due to a sound change,\footnote{Proto-Kiranti \ipa{*-uŋ} remains \ipa{-uŋ} in word-final stressed syllables (as in \ipa{lūŋ} `stone' and the \textsc{2sg} and \textsc{3sg} of intransitive verbs with stem in \ipa{-uŋ}), but changes to \ipa{ūː} with compensatory lengthening in stressed syllables when followed by a consonant and to \ipa{-u} in unstressed word-final syllables. } a complex suffix which can be analyzed as comprising third person P \ipa{*-u} and 1sg A \ipa{*-ŋ}. The suffix \ipa{-nɛ} comes from \ipa{*-na}, a form identical to that found in West and South Kiranti languages (including Puma and Bantawa).
+
+
+\subsection{Plains Cree} \label{sec:cree}
+The Plains Cree conjunct order paradigm presents  a pattern reminiscent of Khaling: 1/\textsc{2sg$\leftrightarrow$3} configurations have syncretic forms, while 1/\textsc{2pl$\leftrightarrow$3} ones are built by combining the direct \ipa{-â-} or the inverse \ipa{-iko-} suffixes with the same suffixes as the intransitive paradigm.
+
+\begin{table}[H]
+\caption{Plains Cree Conjunct Order indicative paradigms.  (\citealt{wolfart96sketch})}
+\label{tab:cree.conj} \centering
+\begin{tabular}{llllllllll}
+  \bottomrule
+  &	X$\rightarrow$\textsc{3sg} &	\textsc{3sg}$\rightarrow$X &	\textsc{intr} &	\\	
+  \midrule
+  1s &	\ipa{-ak} \bleu{} &	\ipa{-it} \bleu{}&	\ipa{-yân} &	\\
+1pi &	\ipa{-â-yahk} &	\ipa{-iko-yahk} &	\ipa{-yahk} &	\\
+1pe &	\ipa{-â-yâhk} &	\ipa{-iko-yâhk} &	\ipa{-yâhk} &	\\
+2s &	\ipa{-at} \bleu{}&	\ipa{-isk} \bleu{}&	\ipa{-yan} &	\\
+2p &	\ipa{-â-yêk} &	\ipa{-iko-yêk} &	\ipa{-yêk} &	\\
+3s &	\ipa{-(im)-â-t} &	\ipa{-iko-t} &	\ipa{-t} &	\\
+3p &	\ipa{-(im)-â-cik} &	\ipa{-iko-cik} &	\ipa{-cik} &	\\
+    \bottomrule
+\end{tabular}
+\end{table}
+
+However, that  the pattern found in Table   \ref{tab:cree.conj} is recent. In documents from the 19\textsuperscript{th} century, the corresponding forms were nearly all syncretic (see table \ref{tab:creedia.conj}).
+
+\begin{table}[H]
+\caption{19\textsuperscript{th} century Plains Cree Conjunct Order indicative paradigms (based on \citealt{dahlstrom89change})}
+\label{tab:creedia.conj} \centering
+\begin{tabular}{llllllllll}
+  \bottomrule
+  &	X$\rightarrow$\textsc{3sg} &	\textsc{3sg}$\rightarrow$X &	\textsc{intr} &	\\	
+  \midrule
+\textsc{1s} &	\ipa{-ak} &	\ipa{-it} &	\ipa{-yân} &	\\
+\textsc{1pi} &	\ipa{-ahk} &	\ipa{-itahk} &	\ipa{-yahk} &	\\
+\textsc{1pe} &	\ipa{-akiht} &	\ipa{-iyamiht} &	\ipa{-yâhk} &	\\
+\textsc{2s} &	\ipa{-at} &	\ipa{-isk} &	\ipa{-yan} &	\\
+\textsc{2p} &	\ipa{-êk} &	\ipa{-itêk} &	\ipa{-yêk} &	\\
+\textsc{3s} &	\ipa{-(im)-â-t} &	\ipa{-iko-t} &	\ipa{-t} &	\\
+\textsc{3p} &	\ipa{-(im)-â-cik} &	\ipa{-iko-cik} &	\ipa{-cik} &	\\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+The modern Conjunct Order paradigm results from analogical levelling: the portmanteau \textsc{1/2pl}$\rightarrow$3 forms have been replaced by a combination of the direct \ipa{-â-} suffix with the suffixes \ipa{-yahk}, \ipa{-yâhk}  and \ipa{-yêhk} of the intransitive animate paradigm, and the 3$\rightarrow$\textsc{1/2pl} forms by the combination of the inverse  \ipa{-iko-} suffix with the same intransitive endings. Only the \textsc{1sg} and \textsc{2sg} forms have been untouched by analogy.
+
+Similar developments,  independent from the Plains Cree case, occurred in other Algonquian languages (Ojibwe, Micmac, and more prominently, Arapaho). 
+\subsection{Analogy: the Algonquian model} \label{sec:analogy}
+\citet{jacques17directionality} propose the following four generalizations regarding the directionality of analogy in direct/inverse systems based on Algonquian data which include the Plain Cree example given above:
+
+\begin{enumerate}
+\item Analogy operates from 3'$\rightarrow$3 to 3$\rightarrow$SAP forms and from 3$\rightarrow$3' to all SAP$\rightarrow$3 forms. This is a particular case of   Watkins's law (\citealt{watkins62celtic}): Analogy starts out from the third person and extends to the other forms through a reanalysis of the third person ending as part of the verb stem.
+\item Analogy can apply from SAP$\rightarrow$3 forms to 3$\rightarrow$SAP and  local ones (as shown by the reshaping of 3$\rightarrow$1\textsc{pe} and 3$\rightarrow$2\textsc{pl} in Nishnaabemwin).
+\item Analogy first applies to plural SAP forms before influencing singular SAP forms, both in the case of 3$\rightarrow$SAP and SAP$\rightarrow$3 paradigms. There is no evidence of a hierarchy between third singular and third plural, as we saw that the \textsc{3pl$\rightarrow$1sg} resisted analogy in Arapaho while its singular counterpart \textsc{3sg$\rightarrow$1sg} was remade.
+\item Analogy first applies  to 3$\rightarrow$SAP forms before affecting SAP$\rightarrow$3 forms. There appears  to be no hierarchy between 3$\rightarrow$SA and local forms as to their sensitivity to analogy.
+\end{enumerate}
+
+According to these generations, the  direct singular configurations \textsc{1sg$\rightarrow$3} and \textsc{2sg$\rightarrow$3} are precisely the ones where analogy is expected to take place last, and thus to better preserve syncretic forms. These generalisations are assumed to be explainable to the relative frequency of the forms in discourse: the less frequent forms are more easily replaced by analogy that the most frequent ones.
+
+The pattern found in Khaling \ref{tab:nonloc} can thus be accounted for by assuming that the \textsc{1sg$\rightarrow$3} and \textsc{2sg$\rightarrow$3} forms are syncretic not because of a special cognitive status of the \textsc{1sg} and the \textsc{2sg}, but simply because these two forms escape analogy by virtue of being more common. 
+
+The presence of syncrtism thus, while highly interesting for historical linguistics, is a poor criterion to argue for a special status of the \textsc{1sg}, or any other person.
+
+\section{Second argument number indexation}
+Another striking particularity of \textsc{1sg} forms in the transitive paradigms of Gyalrong and Kiranti languagesn is the fact that nearly all configurations including the \textsc{1sg}  allow a second suffix coreferent with the number of the other argument of the verb, while forms other than the \textsc{1sg} 
+almost never allow to specify the number of more than one argument.
+
+Tables \ref{tab:japhug.tr} and \ref{tab:khaling2} respectively present the non-past transitive paradigms  in Japhug (Gyalrongic, \citealt{jacques10inverse}) and Khaling (Kiranti, \citealt[1102]{jacques12khaling}). Other Gyalrong languages have paradigms that are nearly identical to that of Japhug (see \citealt{gongxun14agreement}, \citealt{zhang16bragdbar}); Kiranti languages have greater diversity in person indexation, but Dumi is very close to Khaling.
+
+In Japhug, t
+
+\begin{landscape}
+\begin{table}[H]
+\caption{Japhug transitive and intransitive paradigms}\label{tab:japhug.tr}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|}
+\textsc{} & 	\textsc{1sg} & 	  \textsc{1du} & 	\textsc{1pl} & 	\textsc{2sg} & 	\textsc{2du} & 	\textsc{2pl} & 	\textsc{3sg} & 	\textsc{3du} & 	\textsc{3pl} & 	\textsc{3'} \\ 	
+\hline
+\textsc{1sg} & \multicolumn{3}{c|}{\grise{}} &	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{\sigc{}-a}   & 	 \ipa{\sigc{}-a-ndʑi} & 	 \ipa{\sigc{}-a-nɯ} & 	\grise{} \\	
+\cline{8-10}
+\textsc{1du} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{ta-\siga{}} & 	\ipa{ta-\siga{}-ndʑi} & 	\ipa{ta-\siga{}-nɯ} & 	\multicolumn{3}{c|}{ \ipa{\siga{}-tɕi}}  & 	\grise{} \\	
+\cline{8-10}
+\textsc{1pl} & 	\multicolumn{3}{c|}{\grise{}} & 	  & 	&  & 	\multicolumn{3}{c|}{ \ipa{\siga{}-ji}}  & 	\grise{} \\	
+\hline
+\textsc{2sg} & 	\ipa{kɯ-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\sigc{}}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2du} & 	\ipa{kɯ-\siga{}-a-ndʑi} & 	\ipa{kɯ-\siga{}-tɕi} & 	\ipa{kɯ-\siga{}-ji} & 	\multicolumn{3}{c|}{\grise{}} &	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-ndʑi}} & 	\grise{} \\	
+\cline{2-2}
+\cline{8-10}
+\textsc{2pl} & 	\ipa{kɯ-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\multicolumn{3}{c|}{\grise{}}&	\multicolumn{3}{c|}{\ipa{tɯ-\siga{}-nɯ}} & 	\grise{} \\	
+\hline
+\textsc{3sg} &  	\ipa{wɣɯ́-\siga{}-a} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\sigc{}} \\ 	
+\cline{2-2}
+\cline{11-11}
+\textsc{3du} &  	\ipa{wɣɯ́-\siga{}-a-ndʑi} & 	 \ipa{wɣɯ́-\siga{}-tɕi} & 		\ipa{wɣɯ́-\siga{}-ji} & 	\ipa{tɯ́-wɣ-\siga{}} & 	\ipa{tɯ́-wɣ-\siga{}-ndʑi} & 	\ipa{tɯ́-wɣ-\siga{}-nɯ} & 	\multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-ndʑi} \\ 
+\cline{2-2}	
+\cline{11-11}
+\textsc{3pl} &  	\ipa{wɣɯ́-\siga{}-a-nɯ} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & 	\ipa{} & \multicolumn{3}{c|}{\grise{}} &	\ipa{\siga{}-nɯ} \\ 	
+\hline
+\textsc{3'} & 	\multicolumn{6}{c|}{\grise{}} &	\ipa{wɣɯ́-\siga{}} & 	\ipa{wɣɯ́-\siga{}-ndʑi} & 	\ipa{wɣɯ́-\siga{}-nɯ} & 	\grise{} \\	
+	\hline	\hline
+\textsc{intr}&\ipa{\siga{}-a}&\ipa{\siga{}-tɕi}&\ipa{\siga{}-ji}&\ipa{tɯ-\siga{}}&\ipa{tɯ-\siga{}-ndʑi}&\ipa{tɯ-\siga{}-nɯ}&\ipa{\siga{}}&\ipa{\siga{}-ndʑi} &\ipa{\siga{}-nɯ}& 	\grise{} \\	
+	\hline
+\end{tabular}}
+\end{table}
+
+\begin{table}[H]
+\caption{Khaling transitive paradigm} \label{tab:khaling2}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|l|l|l|}
+	\hline
+ &	\textsc{1s} &	\textsc{1di} &	\textsc{1de} &	\textsc{1pi} &	\textsc{1pe} &	\textsc{2s} &	\textsc{2d} &	\textsc{2p} &	\textsc{3s} &	\textsc{3d} &	\textsc{3p} 	\\
+	\hline 
+\textsc{1s} & \multicolumn{5}{c|}{\grise{}} &	\ipa{loɔ̂m-nɛ} &	\ipa{loɔ̂m-su} &	\ipa{loɔ̂m-nu} &	\ipa{lob-u} &	\ipa{lob-u-su}  &	\ipa{lob-u-nu}  	\\
+\cline{7-12}
+\textsc{1di} &	 \multicolumn{8}{c|}{\grise{}}  &	\multicolumn{3}{c|}{\ipa{lɵp-i}}   	\\
+\cline{7-12}
+\textsc{1de} &	 \multicolumn{5}{c|}{\grise{}} 	 &	\ipa{ʔi-loɔp} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-loɔ̂m-ni} &	\multicolumn{3}{c|}{\ipa{lɵp-u}}  	\\
+\cline{7-12}
+\textsc{1pi} &	 \multicolumn{8}{c|}{\grise{}}   &	\multicolumn{3}{c|}{\ipa{loɔp-ki}}  	\\
+\cline{7-12}
+\textsc{1pe} &	\multicolumn{5}{c|}{\grise{}} 	 &	\ipa{ʔi-loɔp} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-loɔ̂m-ni} &	\multicolumn{3}{c|}{\ipa{loɔp-kʌ}}  	\\
+\cline{2-2}
+\cline{4-4}
+\cline{6-12}
+\textsc{2s} &	\ipa{ʔi-loɔ̂m-ŋʌ} &	 \grise{}&	 &	\grise{}& & \multicolumn{3}{c|}{\grise{}}  &	\ipa{ʔi-lɵ̄ːb-ʉ} &	\ipa{ʔi-lɵ̂ːp-su} &	\ipa{ʔi-lɵ̂ːp-nu} 	\\
+\cline{2-2}
+\cline{10-12}
+\textsc{2d} &	\ipa{ʔi-loɔ̂m-ŋʌ-su}  &	\grise{}&	 &	\grise{}& &\multicolumn{3}{c|}{\grise{}}  &	\multicolumn{3}{c|}{\ipa{ʔi-lɵp-i}}   	\\
+\cline{2-2}
+\cline{10-12}
+\textsc{2p} &	\ipa{ʔi-loɔ̂m-ŋʌ-nu}  &	\grise{}& & \grise{}& &	\multicolumn{3}{c|}{\grise{}}  &	\multicolumn{3}{c|}{\ipa{ʔi-loɔ̂m-ni}}  	\\
+\cline{2-3}
+\cline{5-5}
+\cline{7-12}
+\textsc{3s} &	\ipa{ʔi-loɔ̂m-ŋʌ} &	\ipa{} &	\ipa{ʔi-lɵp-u} &	\ipa{} &	\ipa{ʔi-loɔp-kʌ} &	 & & &	\ipa{lɵ̄ːb-ʉ} &\multirow{2}{*}{\ipa{lɵ̂ːp-su}} &	\multirow{3}{*}{\ipa{lɵ̂ːb-nu} } 	\\
+\cline{2-2}
+\cline{10-10}
+3d &	\ipa{ʔi-loɔ̂m-ŋʌ-su} &	\ipa{ʔi-lɵp-i} &	\ipa{} &	\ipa{ʔi-loɔp-ki} &	\ipa{} &	\ipa{ʔi-loɔp} &	\ipa{ʔi-lɵp-i} &	\ipa{ʔi-loɔ̂m-ni}  &	\multicolumn{1}{c}{}	 &	 & 	\\
+\cline{2-2}
+\cline{10-11}
+\textsc{3p} &	\ipa{ʔi-loɔ̂m-ŋʌ-nu} &	\ipa{} &	\ipa{} &	\ipa{} &	\ipa{} &	\ipa{} &	\ipa{} &	\ipa{} &	\multicolumn{2}{c}{} 	& 	\\
+	\hline
+\end{tabular}}
+\end{table}
+
+\end{landscape}
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+ \end{document}
+ 
