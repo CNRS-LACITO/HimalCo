@@ -1,0 +1,75 @@
+\documentclass{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\bleu}[1]{\cellcolor{blue!20}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+ \begin{document} 
+\title{Sanskrit \ipa{hṛd-} `coeur'}
+\author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
+\maketitle
+
+\paragraph{§1}
+Le nom du `coeur' a un indo-iranien un reflet phonétiquement irrégulier. Le sanskrit \ipa{hṛd-} n. et l'avestique \ipa{zərəd-} n. remontent en effet à un proto-indo-iranien \ipa{*ɟʰṛd-} au lieu du $\dagger$\ipa{cṛd-} que l'on attendrait étant donné que l'initiale de cet étymon provient de \ipa{*ḱ} dans toutes les autres langues de la famille (voir le dossier complet dans \citealt[417-423]{wodtko08NIL}). On attendrait en sanskrit $\dagger$\ipa{śṛd-}, une forme qui d'ailleurs est indirectement attestée par le nom \ipa{śraddhā-} f. `fidélité' < \ipa{*ḱred-dʰh_1eh_2} avec un degré différent.
+
+La seule explication claire proposée dans la littérature, d'après \citet[420]{wodtko08NIL}, est celle de \citet{szemerenyi70heart} qui propose une contamination avec la racine nominale \ipa{*ĝʰerH} qui se retrouve dans le grec \grec{χορδή} `entrailles' et le sanskrit \ipa{hirā́-} f. `veine'. Si cette hypothèse est raisonable, il me semble utile d'explorer les possibilités alternatives qui s'offrent pour rendre compte de l'initiale irrégulière indo-iranienne. 
+
+Je propose, plutôt qu'une contamination entre mots appartenant à la même famille sémantique, une contamination syntagmatique due à une collocation entre le nom `cœur' et une racine verbale comprenant la séquence \ipa{*ǵʰr}. Il y a trois racines potentielles, celles des verbes sanskrits \ipa{háryati} `se réjouir de', \ipa{hṛṣyati} `se réjouir, frissonner, se hérisser' et \ipa{hṛṇīte} `être fâché', qui méritent d'être discutées.
+
+\paragraph{§2}
+
+Le sanskrit \ipa{háryati} `se réjouir de' est habituellement reconstruit comme \ipa{ĝʰér-ye-}, d'une racine \ipa{*ĝʰer-} `Gefallen finden, begehren' (\citealt[176]{liv}). Il n'existe pas de collocation combinant ce verbe et sa famille avec le nom \ipa{hṛd-}, mais l'exemple (\ref{ex:haryato}) illustre un vers avec double allitération \ipa{i ṣ / h r / h ṛ / i ṣ} faisant intervenir ces deux racines.\footnote{Remarquons au passage que l'interprétation de ce vers fort obscur doit tenir en compte de l'ambiguïté du verbe \ipa{íyakṣati}, désidératif à la fois de \ipa{yaj-} `sacrifier' et de \ipa{naś-} `obtenir' (\ipa{íyakṣati} < \ipa{*h_2i-h_2ṇḱ-se/o-} et de celle de la racine \ipa{iṣ-}, qui résulte de la confusion de \ipa{*h_2eys-} `suchen' avec \ipa{*h_1eysh_2-} `antreiben'. }
+
+\begin{exe}
+\ex \label{ex:haryato}
+\glt \ipa{údīraya pitárā jārá ā́ bhágamíyakṣati haryató hṛttá iṣyati}
+\gll \ipa{úd.īraya}	\ipa{pitárā}	\ipa{jārás}	\ipa{ā́}	\ipa{bhágam}	\ipa{íyakṣati}	\ipa{haryatás}	\ipa{hṛttás}	\ipa{iṣyati} \\
+stimuler:\textsc{imp:sg} père:\textsc{acc:du} amant:\textsc{nom:sg} \textsc{prep} fortune:\textsc{acc:sg:n} vouloir.obtenir:\textsc{present:ind:3sg}  désiré:\textsc{nom:sg} coeur:\textsc{abl:sg} aspirer:\textsc{present:ind:3sg} \\
+\glt Promeus tes deux parents (Ciel et Terre), comme l'amant (promeut) le bonheur! (Agni, ce dieu) désirable, cherche à obtenir (un bien pour l'Homme), il suscite (l'inspiration) du fond du cœur. (RV X,11.06; Traduction Renou, EVP XIV, 1965, p. 8)
+\end{exe}
+
+Il semblerait possible de proposer l'existence d'une collocation proto-indo-iranienne du type \ipa{*ćṛd-í j́ʰáryati} `il se réjouit dans son cœur', d'où la contamination de la consonne initiale \ipa{*j́ʰṛd-í j́ʰáryati} dans nom `cœur' qui aurait été généralisée ensuite partout.
+
+Toutefois, \citet[104]{cheung07dictionary}, sur la base de formes chorasmiennes, reconstruit une vélaire en proto-iranien (\ipa{*gar} `rejoice'), qui devrait être projetée en indo-européen, et amener à réviser la reconstruction comme \ipa{*gʰer-}. Les formes iraniennes en \ipa{z} citées pour démontrer la palatale dans cette racine sont en effet douteuses; le nom avestique \ipa{zara-} est de sens incertain, et l'ossète \ipa{uzæld-} < \ipa{*awa-zarya} `to nurse, tend, to coax' est rapproché par  \citet[470]{cheung07dictionary} de racine \ipa{*zarH} `to bewail the deceased' (de \ipa{*ĝar-} `tönen, rufen', \citealt[161]{liv}). La reconstruction de Cheung invalide donc l'hypothèse proposée ci-dessus.
+
+\paragraph{§3}
+\ipa{hṛṣyati} `se réjouir, frissonner, se hérisser' est rapproché de la racine \ipa{*ĝʰers-} `sich sträuben, erstarren' (\citealt[178]{liv}) à palatale. Toutefois,  le sens de `se réjouir' (le seul qui pourrait donner lieu à une collocation avec `cœur') ne se trouve qu'en sanskrit, et est dû à une confusion avec \ipa{*g(ʷ)ʰers-} `sich erfreuen' (\citealt[198]{liv}) dans cette langue; aucune collocation de date indo-iranienne basée sur cette racine n'aurait donc pu causer la contamination observée dans le nom `cœur'.
+
+
+\paragraph{§4}
+La racine du sanskrit \ipa{hṛṇīte} `être fâché' (\citealt[178]{liv}), si elle manque de cognat externes, avait en proto-indo-iranien une palatale assurée par les formes iraniennes (\citealt[469]{cheung07dictionary} \ipa{*zarH} ‘to hurt, wound, anger’).
+
+Je propose donc une collocation proto-indo-iranienne \ipa{*j́ʰṛd-í j́ʰr<n>H-tai} `il est fâché dans son cœur'. Elle proviendrait d'un plus ancien \ipa{*ćṛd-í j́ʰr<n>H-tai} par contamination de la séquence \ipa{*j́ʰr} de la racine verbale à un stade proto-indo-iranien, et aurait affecté tous les dérivés de la racine \ipa{*ćṛd} `cœur' excepté l'étymon `fidélité' mentionné ci-dessus, dont la parenté étymologique n'était plus ressentie à ce stade.
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
+ 
