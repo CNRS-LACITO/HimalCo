@@ -15,12 +15,11 @@
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
-\usepackage{lscape}
-\usepackage{bbding}
- 
+\usepackage{lscape} 
+ \usepackage{multicol}
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
@@ -29,6 +28,26 @@
 \newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\tld}{\textasciitilde{}}
+\newcounter{exonb}
+\newcommand{\exo}[2]{\noindent%
+\begin{center}
+\begin{minipage}[t]{.8\textwidth}
+\vskip 10pt 
+\rule{\linewidth}{1pt}  
+\vskip 10pt 
+\stepcounter{exonb} 
+\textbf{\centerline{Exercise \Roman{exonb}}}
+\vskip 10pt 
+\rule{\linewidth}{1pt}  
+\indent
+#1:
+\vskip 10pt
+#2
+\rule{\linewidth}{1pt}  
+\end{minipage} 
+\end{center}
+ }
+\newcommand{\translit}[1]{$\langle$#1$\rangle$}
 
  \begin{document} 
 \title{Middle Chinese}
@@ -37,7 +56,8 @@
 
 \section{Introduction}
 
-\subsection{Consonants}
+\subsection{Transcribing vs reconstructing MC}
+\subsubsection{Consonants}
 \begin{table}[H]
 \caption{Early Middle Chinese initial consonants} \label{tab:mc.onset}
 \begin{tabular}{llllllllllllllll}
@@ -49,7 +69,7 @@
   	\zhc{精}{ts} & 	\zhc{清}{tsʰ} & 	\zhc{從}{dz} & 	 & 	\zhc{心}{s} & 	\zhc{邪}{z} & 	 & 	\\
   	\zh{照}_2/\zhc{莊}{tʂ} & 	\zh{穿}_2/\zhc{初}{tʂʰ} & 	\zh{牀}_2/\zhc{崇}{dʐ} & 	 & 	  	\zh{審}_2/\zhc{生}{ʂ} & 	 \zh{禪}_2\ipa{ʐ} & 	 & 	\\
  	  	\zh{照}_3/\zhc{章}{tɕ} & 	\zh{穿}_3/\zhc{昌}{tɕʰ} & 	\zh{禪}_3/\zhc{禪}{dʑ} & 	\zhc{日}{ɲ} & 	\zh{審}_3/\zhc{書}{ɕ} & 	\zh{牀}_3/\zhc{船}{ʑ} & 	\zh{喻}_4/\zhc{以}{j} & 	\\
- 	\zhc{見}{k} & 	\zhc{溪}{kʰ} & 	\zhc{群}{ɡ} & 	\zhc{疑}{ŋ} & 	 & 	 & 	 & 	\\
+ 	\zhc{見}{k} & 	\zhc{溪}{kʰ} & 	\zhc{群}{ɡ(j)} & 	\zhc{疑}{ŋ} & 	 & 	 & 	 & 	\\
  	\zhc{影}{ʔ} & 	 & 	 & 	 & 	\zhc{曉}{x} & 	\zhc{匣}{ɣ} & 	 & 	\\
 \bottomrule
 \end{tabular}
@@ -59,10 +79,10 @@ Final consonants: \ipa{-p},  \ipa{-t},  \ipa{-k},  \ipa{-m},  \ipa{-m},  \ipa{-�
 
 Baxter's (\citeyear{baxter92}) typeable transcription: 
 \begin{enumerate}
-\item Retroflex consonants: \ipa{ʈ} = <tr>, \ipa{tʂʰ}  = <tsrh>
-\item Alveolo-Palatal consonants: \ipa{tɕ} = <tsy>
-\item Velars: \ipa{ŋ} = <ng>, \ipa{ɣ} = <h>
-\item Glides: \ipa{j} = \ipa{y-}, \ipa{w} = \ipa{hjw-} (contrast between \zhc{越}{hjwot}  and \zhc{悦}{jwet}).
+\item Retroflex consonants: \ipa{ʈ} = \translit{tr}, \ipa{tʂʰ}  =  \translit{tsrh} 
+\item Alveolo-Palatal consonants: \ipa{tɕ} = \translit{tsy}
+\item Velars: \ipa{ŋ} = \translit{ng}, \ipa{ɣ} = \translit{h}
+\item Glides: \ipa{j} = \translit{y-}, \ipa{w} = \translit{hjw-} (contrast between \zhc{越}{hjwot}  and \zhc{悦}{jwet}).
 \end{enumerate}
 
 Marginal initials:
@@ -72,27 +92,158 @@ Marginal initials:
 \item The \ipa{ʐ} initial only attested in two characters (including \zhc{俟}{ʐiX}).
 \end{itemize}
 
-\subsection{Rhymes}
+\subsubsection{Rhymes}
 
 The four divisions in Baxter's transcription:
 \begin{enumerate}
 \item \ipa{-a}, \ipa{-o}, \ipa{-u}
 \item \ipa{-ɛ}, \ipa{-æ}
-\item \ipa{-jV}, \ipa{-i} (V $\in$\{\ipa{a}, \ipa{æ}, \ipa{o}, \ipa{u},  \ipa{i}, \ipa{e}, \ipa{ɨ}\})
+\item palatal+V, \ipa{-jV}, \ipa{-i} (V $\in$\{\ipa{a}, \ipa{æ}, \ipa{o}, \ipa{u},  \ipa{i}, \ipa{e}, \ipa{ɨ}\})
 \item \ipa{-e}
 \end{enumerate}
 
-\zhc{重紐}{chóngniǔ} 3/4: \zhc{岷}{min} vs \zhc{民}{mjin}
+Medial glides:
+\begin{itemize}
+\item \ipa{-w} (in \zhc{合口}{hékǒu} syllables, if the main vowel is not \ipa{u} or \ipa{o+w})
+\item \zhc{重紐}{chóngniǔ} 3/4: \zhc{岷}{min} vs \zhc{民}{mjin} [\ipa{mʑin}]
+\end{itemize}
 
-\subsection{Tones}
+\subsubsection{Tones}
 
+\begin{tabular}{lll} 
+\zhc{平}{bjæŋ} & \zhc{端}{twan} \\
+\zhc{上}{dʑaŋX} & \zhc{短}{twanX} \\
+\zhc{去}{kʰjoH} & \zhc{段}{twanH} \\
+\zhc{入}{ɲip} & \zhc{掇}{twat} \\
+\end{tabular}
+
+ \exo{Indicate the initial consonant, the division, the rhyme and the tone of the following words}{
+\begin{multicols}{2}
+\zhc{睹}{tuX}
+
+\zhc{塵}{ɖin} %ɖ, 3, -in, ping
+
+\zhc{炒}{tʂʰæwX} %tʂʰ, 2, -æw, shang
+
+\zhc{朝}{ɖjew} %ɖ, 3, -jew, ping
+
+\zhc{吹}{tɕʰwe} %tɕʰ, 3, -w-, -je, ping
+
+\zhc{畜}{ʈʰjuwk} 
+
+\zhc{鄧}{doŋH} 
+
+\zhc{妃}{pʰjɨj} 
+
+\zhc{範}{bjomX} 
+
+\zhc{彪}{pjiw} 
+
+\zhc{餅}{pjieŋX} 
+
+\zhc{兒}{ɲe} 
+
+\zhc{競}{gjæŋH}
+
+\zhc{脈}{mɛk} 
+ 
+ \zhc{汪}{ʔwaŋ} 
+ 
+\zhc{驗}{ŋjemH} 
+  
+  \zhc{王}{hjwaŋ} 
+  
+   \zhc{緣}{jwen}
+
+\end{multicols}}
 \subsection{Complementary distributions}
 
-\zhc{地}{dijH}, \zhc{打}{tæŋX}, \zhc{冷}{læŋX}
+ \begin{table}[H]
+ \caption{Complementary distribution between initial consonants and divisions, rhymes with \ipa{-ŋ} coda} \centering
+\begin{tabular}{l|llllll}
+\toprule
+&\zhc{搨}{-aŋ}& \zhc{庚}{-æŋ} & \zhc{陽}{-jaŋ} &\zhc{青}{-eŋ} \\
+\midrule
+\zhc{端}{t} 	&	\zhc{當}{taŋ} 	& \grise{}	& \grise{}	&	\zhc{丁}{teŋ}  \\
+\zhc{知}{ʈ} 	&	\grise{}&\zhc{趟}{ʈæŋ} 	&	\zhc{張}{ʈjaŋ} 	&	\grise{}	&		\\
+\zhc{精}{ts} 	&	\zhc{臧}{tsaŋ} &\grise{}	&	\zhc{將}{tsjaŋ} 	&	\zhc{菁}{tseŋ} 	&		\\
+\zhc{莊}{tʂ} 	&	\grise{}&\zhc{鎗}{tʂʰæŋ} 	& \zhc{莊}{tʂjaŋ} 	&		\grise{}&		\\
+\zhc{章}{tɕ} 	&		\grise{}&		\grise{}&	\zhc{章}{tɕaŋ} 	&		\grise{} 		\\
+\zhc{幫}{p} 	&	\zhc{幫}{paŋ} 	&	\zhc{彭}{bæŋ} 	&	\zhc{方}{pjaŋ} 	&	\zhc{瓶}{beŋ}\\
+\zhc{見}{k} 	&	\zhc{剛}{kaŋ} 	&	\zhc{庚}{kæŋ} 	&	\zhc{薑}{kjaŋ} 	&	\zhc{經}{keŋ} 	\\
+\bottomrule
+\end{tabular}
+\end{table}
 
+
+ \begin{table}[H]
+ \caption{Complementary distribution between initial consonants and divisions, rhymes with \ipa{-w} coda} \centering
+\begin{tabular}{l|llllll}
+\toprule
+&\zhc{豪}{-aw}& \zhc{爻}{-æw} & \zhc{宵}{-jew} &\zhc{萧}{-ew} \\
+\midrule
+\zhc{端}{t} 	&	\zhc{刀}{taw} 	& \grise{}	& \grise{}	&	\zhc{雕}{tew}  \\
+\zhc{知}{ʈ} 	&	\grise{}&\zhc{啁}{ʈæw} 	&	\zhc{朝}{ʈjew} 	&	\grise{}	&		\\
+\zhc{精}{ts} 	&	\zhc{遭}{tsaw} &\grise{}	&	\zhc{焦}{tsjew} 	&	\zhc{湫}{tsewX} 	&		\\
+\zhc{莊}{tʂ} 	&	\grise{}&\zhc{抓}{tʂæw} 	& X	&		\grise{}&		\\
+\zhc{章}{tɕ} 	&		\grise{}&		\grise{}&	\zhc{昭}{tɕew} 	&		\grise{} 		\\
+\zhc{幫}{p} 	&	\zhc{褒}{paw} 	&	\zhc{包}{pæw} 	&	\zhc{膘}{pjew} 	&	X	\\
+\zhc{見}{k} 	&	\zhc{高}{kaw} 	&	\zhc{交}{kæw} 	&	\zhc{驕}{kjew} 	&	\zhc{澆}{kew} 	\\
+%\zhc{來}{l} 	&	\zhc{牢}{law} 	&	\grise{}	&	\zhc{療}{ljewH} 	&	\zhc{寥}{lew} 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Other particularities:
+
+\begin{itemize}
+\item Some rhymes only occur with labial or dorsal initials (\ipa{-jæŋ} for instance)
+\item \zhc{來}{l}: nearly no examples in division II.
+\end{itemize}
+\textbf{Some important exceptions}: \zhc{地}{dijH}, \zhc{打}{tæŋX}, \zhc{冷}{læŋX}
+
+
+ \exo{Indicate which of the following syllables are impossible in Middle Chinese and why}{ 
+\begin{multicols}{3}
+\ipa{tʰɛw}
+
+\ipa{tɕæŋ}
+
+\ipa{tʰjij}
+
+\ipa{ɖaŋ}
+
+\ipa{ju}
+
+\ipa{tɕaw}
+
+\ipa{tʂi}
+
+\ipa{ʂu}
+
+\ipa{dʐew}
+
+\ipa{dʐaŋ}
+
+\ipa{bjew}
+
+\ipa{zæw}
+
+\ipa{tɕʰu}
+
+\ipa{ʈu}
+
+\ipa{ʈju}
+
+\end{multicols}}
 \section{From MC to Mandarin}
 
 \subsection{Manner of articulation and tone}
+
+
+ 
+
+\subsection{How much of MC can we predict from Mandarin?}
 
 \section{Rhyme table philology} 
 
@@ -100,14 +251,49 @@ The four divisions in Baxter's transcription:
 
 \zhc{陳澧}{Chén lǐ}'s \zhc{繫聯法}{xìliánfǎ}
 
-\subsubsection{\zhc{同用}{tóngyòng} (Reflexivity)}
-
+\subsubsection{\zhc{同用}{tóngyòng}}
 \begin{itemize}
-\item \zhc{布}{buH} = \zhc{博}{pak}+\zhc{故}{kuH}
+\item \zhc{布}{puH} = \zhc{博}{pak}+\zhc{故}{kuH}
+\item \zhc{北}{pok} = \zhc{博}{pak}+\zhc{墨}{mok}
+\item \zhc{補}{puX} = \zhc{博}{pak}+\zhc{古}{kuX}
 \end{itemize}
-
+$\Rightarrow$ \zhc{布}{puH} $\equiv$ \zhc{北}{pok} $\equiv$ \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
 \subsubsection{\zhc{互用}{hùyòng} (Symmetry)}
+\begin{itemize}
+\item \zhc{補}{puX} = \zhc{博}{pak}+\zhc{古}{kuX}
+\item \zhc{博}{pak} =  \zhc{補}{puX}+\zhc{各}{kak}
+\end{itemize}
+$\Rightarrow$  \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
 \subsubsection{\zhc{遞用}{dìyòng} (Transitivity)}
+\begin{itemize}
+\item \zhc{邊}{pen} = \zhc{博}{pak}+\zhc{古}{kuX}
+\item \zhc{博}{pak} =  \zhc{補}{puX}+\zhc{各}{kak}
+\end{itemize}
+$\Rightarrow$  \zhc{邊}{pen} $\equiv$ \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
+
+NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè shàngzì}.
+ \exo{Establish the \zhc{聲類}{shēnglèi} from the following \zhc{反切}{fǎnqiè}}{
+{\cn  
+\begin{multicols}{3}
+\noindent
+來洛哀切
+盧洛乎切
+洛盧各切
+魯郎古切
+郎魯當切
+浪來宕切
+磊落猥切
+落盧各切
+掠離灼切
+林力尋切
+離呂支切
+呂力舉切
+良呂張切
+力林直切
+槤里典切
+林力尋切
+里良止切
+\end{multicols}}}
 
 
 \subsection{Rhyme tables} \label{sec:yuntu}
