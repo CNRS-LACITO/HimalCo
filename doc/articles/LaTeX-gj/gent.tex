@@ -1,0 +1,122 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{bbding}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+
+ \begin{document} 
+\title{Middle Chinese}
+\author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
+\maketitle
+
+\section{Introduction}
+
+\subsection{Consonants}
+\begin{table}[H]
+\caption{Early Middle Chinese initial consonants} \label{tab:mc.onset}
+\begin{tabular}{llllllllllllllll}
+\toprule
+ 	\zhc{幫}{p} & 	\zhc{滂}{pʰ} & 	\zhc{並}{b} & 	\zhc{明}{m} & 	 & 	 & (\zh{喻}_3/\zhc{云}{w})	 & 	\\
+  	\zhc{端}{t} & 	\zhc{透}{tʰ} & 	\zhc{定}{d} & 	\zhc{泥}{n} & 	 & 	 & 	 & 	\\
+ 	\zhc{知}{ʈ} & 	\zhc{徹}{ʈʰ} & 	\zhc{澄}{ɖ} & 	\zhc{娘}{ɳ} & 	 & 	 & 	 & 	\\
+  	 & 	 & 	 & 	 & 	 & 	 & 	\zhc{來}{l} & 	\\
+  	\zhc{精}{ts} & 	\zhc{清}{tsʰ} & 	\zhc{從}{dz} & 	 & 	\zhc{心}{s} & 	\zhc{邪}{z} & 	 & 	\\
+  	\zh{照}_2/\zhc{莊}{tʂ} & 	\zh{穿}_2/\zhc{初}{tʂʰ} & 	\zh{牀}_2/\zhc{崇}{dʐ} & 	 & 	  	\zh{審}_2/\zhc{生}{ʂ} & 	 \zh{禪}_2\ipa{ʐ} & 	 & 	\\
+ 	  	\zh{照}_3/\zhc{章}{tɕ} & 	\zh{穿}_3/\zhc{昌}{tɕʰ} & 	\zh{禪}_3/\zhc{禪}{dʑ} & 	\zhc{日}{ɲ} & 	\zh{審}_3/\zhc{書}{ɕ} & 	\zh{牀}_3/\zhc{船}{ʑ} & 	\zh{喻}_4/\zhc{以}{j} & 	\\
+ 	\zhc{見}{k} & 	\zhc{溪}{kʰ} & 	\zhc{群}{ɡ} & 	\zhc{疑}{ŋ} & 	 & 	 & 	 & 	\\
+ 	\zhc{影}{ʔ} & 	 & 	 & 	 & 	\zhc{曉}{x} & 	\zhc{匣}{ɣ} & 	 & 	\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Final consonants: \ipa{-p},  \ipa{-t},  \ipa{-k},  \ipa{-m},  \ipa{-m},  \ipa{-ŋ}, \ipa{-j}, \ipa{-w}.
+
+Baxter's (\citeyear{baxter92}) typeable transcription: 
+\begin{enumerate}
+\item Retroflex consonants: \ipa{ʈ} = <tr>, \ipa{tʂʰ}  = <tsrh>
+\item Alveolo-Palatal consonants: \ipa{tɕ} = <tsy>
+\item Velars: \ipa{ŋ} = <ng>, \ipa{ɣ} = <h>
+\item Glides: \ipa{j} = \ipa{y-}, \ipa{w} = \ipa{hjw-} (contrast between \zhc{越}{hjwot}  and \zhc{悦}{jwet}).
+\end{enumerate}
+
+Marginal initials:
+\begin{itemize}
+\item 
+(\zh{喻}_3/\zh{云} initial only appears with \zhc{合口}{hékǒu} syllables, except for \zhc{焉}{hjen} and \zhc{矣}{hi}).
+\item The \ipa{ʐ} initial only attested in two characters (including \zhc{俟}{ʐiX}).
+\end{itemize}
+
+\subsection{Rhymes}
+
+The four divisions in Baxter's transcription:
+\begin{enumerate}
+\item \ipa{-a}, \ipa{-o}, \ipa{-u}
+\item \ipa{-ɛ}, \ipa{-æ}
+\item \ipa{-jV}, \ipa{-i} (V $\in$\{\ipa{a}, \ipa{æ}, \ipa{o}, \ipa{u},  \ipa{i}, \ipa{e}, \ipa{ɨ}\})
+\item \ipa{-e}
+\end{enumerate}
+
+\zhc{重紐}{chóngniǔ} 3/4: \zhc{岷}{min} vs \zhc{民}{mjin}
+
+\subsection{Tones}
+
+\subsection{Complementary distributions}
+
+\zhc{地}{dijH}, \zhc{打}{tæŋX}, \zhc{冷}{læŋX}
+
+\section{From MC to Mandarin}
+
+\subsection{Manner of articulation and tone}
+
+\section{Rhyme table philology} 
+
+\subsection{\zhc{反切}{fǎnqiè}} \label{sec:fanqie}
+
+\zhc{陳澧}{Chén lǐ}'s \zhc{繫聯法}{xìliánfǎ}
+
+\subsubsection{\zhc{同用}{tóngyòng} (Reflexivity)}
+
+\begin{itemize}
+\item \zhc{布}{buH} = \zhc{博}{pak}+\zhc{故}{kuH}
+\end{itemize}
+
+\subsubsection{\zhc{互用}{hùyòng} (Symmetry)}
+\subsubsection{\zhc{遞用}{dìyòng} (Transitivity)}
+
+
+\subsection{Rhyme tables} \label{sec:yuntu}
+
+\subsection{Rhyming and \zhc{平仄}{píngzè}} \label{sec:pingze}
+
+\section{Chinese Transcriptions of Sanskrit}
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+ \end{document}
+ 
