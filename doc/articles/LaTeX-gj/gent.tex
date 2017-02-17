@@ -17,6 +17,7 @@
 \usepackage{memhfixc}
 \usepackage{lscape} 
  \usepackage{multicol}
+ \usepackage{amssymb}
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon\textit{#1}}} 
@@ -42,12 +43,20 @@
 \indent
 #1:
 \vskip 10pt
+\begin{multicols}{3}
 #2
+\end{multicols}
 \rule{\linewidth}{1pt}  
 \end{minipage} 
 \end{center}
  }
 \newcommand{\translit}[1]{$\langle$#1$\rangle$}
+\newcommand{\zhd}[2]{\begin{tabular}{l}
+\zh{#1}\\
+\ipa{#2}\\
+\end{tabular}}
+ \newcommand{\bleu}[1]{{\color{blue}#1}}
+\newcommand{\rouge}[1]{{\color{red}#1}} 
 
  \begin{document} 
 \title{Middle Chinese}
@@ -118,7 +127,6 @@ Medial glides:
 \end{tabular}
 
  \exo{Indicate the initial consonant, the division, the rhyme and the tone of the following words}{
-\begin{multicols}{2}
 \zhc{睹}{tuX}
 
 \zhc{塵}{ɖin} %ɖ, 3, -in, ping
@@ -154,8 +162,7 @@ Medial glides:
   \zhc{王}{hjwaŋ} 
   
    \zhc{緣}{jwen}
-
-\end{multicols}}
+}
 \subsection{Complementary distributions}
 
  \begin{table}[H]
@@ -194,6 +201,8 @@ Medial glides:
 \end{tabular}
 \end{table}
 
+The orthographic rules of the Baxter transcription take some of these complementary diustributions into account; for instance, since fourth division rhymes (\ipa{-eC}) do not appear after palatals, third division rhymes in \ipa{-jeC} are written without the \ipa{-j-} when occurring after those rhymes without risk of confusion (thus \ipa{tɕen} indicates initial \zhc{章}{tɕ-}, rhyme \zhc{仙}{-jen}).
+
 Other particularities:
 
 \begin{itemize}
@@ -204,7 +213,6 @@ Other particularities:
 
 
  \exo{Indicate which of the following syllables are impossible in Middle Chinese and why}{ 
-\begin{multicols}{3}
 \ipa{tʰɛw}
 
 \ipa{tɕæŋ}
@@ -235,9 +243,12 @@ Other particularities:
 
 \ipa{ʈju}
 
-\end{multicols}}
+\ipa{ten}
+}
 \section{From MC to Mandarin}
 
+\subsection{Late Middle Chinese}
+\ref{sec:amoghavajra}
 \subsection{Manner of articulation and tone}
 
 
@@ -274,7 +285,6 @@ $\Rightarrow$  \zhc{邊}{pen} $\equiv$ \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
 NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè shàngzì}.
  \exo{Establish the \zhc{聲類}{shēnglèi} from the following \zhc{反切}{fǎnqiè}}{
 {\cn  
-\begin{multicols}{3}
 \noindent
 來洛哀切
 盧洛乎切
@@ -293,7 +303,7 @@ NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè sh
 槤里典切
 林力尋切
 里良止切
-\end{multicols}}}
+}}
 
 
 \subsection{Rhyme tables} \label{sec:yuntu}
@@ -301,6 +311,135 @@ NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè sh
 \subsection{Rhyming and \zhc{平仄}{píngzè}} \label{sec:pingze}
 
 \section{Chinese Transcriptions of Sanskrit}
+
+\subsection{\zhc{玄奘}{Xuánzàng}}
+\subsubsection{XXX}
+\XeTeXlinebreaklocale "zh" %使用中文换行 
+\XeTeXlinebreakskip = 0pt plus 1pt % 
+
+\zh{\bleu{尼波羅}國周四千餘里，在雪山中。國大都城周二十餘里。山川連屬，宜穀稼，多花菓，出赤銅、犛牛、命命鳥。貨用赤銅錢。氣序寒烈，風俗險詖，人性剛獷，信義輕薄。無學藝，有工巧。形貌醜弊，邪正兼信。\bleu{伽藍}、天祠接堵連隅。僧徒二千余人，大小二乘，兼功綜習。外道異學，其數不詳。}
+
+%一、光胄王制聲明論
+\zh{王，\bleu{剎帝}\bleu{利栗呫婆}種也。志學清高，純信佛法。近代有王，號\bleu{鴦輸伐摩}，(唐言光胄。)碩學聰睿，自制《聲明論》，重學敬德，遐邇著聞。}
+
+\zh{都城東南有小水池，以人火投之，水即焰起。更投餘物，亦變為火。}
+
+\zh{從此復還\bleu{吠舍釐}河，南渡\bleu{殑伽}河，至\bleu{摩揭陁}國。(舊曰\bleu{摩伽陁}，又曰\bleu{摩竭提}，皆訛也。中印度境。)}
+
+
+\begin{itemize}
+\item \zhc{尼波羅}{nepāla-}
+
+\zhd{尼}{ɳij}\zhd{波}{pa}\zhd{羅}{la}
+\item \zhc{伽藍}{saṃghārāma-} (abbreviation of \zh{僧伽藍摩})
+
+\zhd{僧}{soŋ}\zhd{伽}{gja}\zhd{藍}{lam}\zhd{摩}{ma}
+\item \zhc{剎帝利}{kṣatriya-}
+
+\zhd{剎}{tʂʰæt}\zhd{帝}{tejH}\zhd{利}{lijH}
+\item \zhc{栗呫婆}{licchava-}
+\item \zhc{鴦輸伐摩}{aṃśuvarman-}
+\item \zhc{吠舍釐}{vaiśālī-}
+\item \zhc{殑伽}{gaṅgā-}
+\item \zhc{摩揭陁}{māgadha-}
+\end{itemize}
+\subsubsection{Simple consonants}
+Table \ref{tab:xz.initials}, from \citet{shixd83xuanzang}
+%右上角有“*”号的字，见于圆明字轮和密咒的对音
+\begin{table}[h]
+\caption{Sanskrit consonants and MC initials (data from \citealt{shixd83xuanzang})} \label{tab:xz.initials}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllll}
+\midrule
+\ipa{k} &	\zh{见} &	\zh{迦*宫恭枳*翅拘俱矩*句瞿稽雞蓟繫*计紧*} &	\zh{𩒣诘朅佉（溪纽）} \\
+&&\zh{军捃建憍薑矜袈鸠金剑鞠吉*屈*讫羯*却劫} &\zh{健竭（群纽）}\\
+\ipa{kh} &	\zh{溪} &	\zh{佉*企弃朅契} &	\zh{货汉（晓纽）} \\
+\ipa{g} &	\zh{群} &	\zh{伽*祇窶瞿耆具惧*郡健乾揵乔殑毱局姞掘} &	\zh{拘（见纽）恒（匣纽）} \\
+&&\zh{崛揭*笈} \\
+\ipa{gh} &	\zh{群} &	\zh{键*祇窶瞿具勤犍伽*揭*} &	\zh{祛（溪纽）} \\
+\ipa{n̄ (ng)} &	\zh{疑} &	\zh{御} &	\zh{} \\
+\midrule
+\ipa{c} &	\zh{照三} &	\zh{者*支脂旨至芝止*志珠主*注铸制真准準旃} &	\zh{} \\
+&&\zh{栴战招遮*瞻占质折*酌*斫*} \\
+\ipa{ch} &	\zh{穿三} &	\zh{绰*掣阐车*苫呫䶩} &	\zh{村（清纽）} \\
+\ipa{j} &	\zh{禅三} &	\zh{闍*氏视豉时恃市*殊树逝誓慎鄯膳缮禅社赡} &	\zh{} \\
+&&\zh{折*勺什*} \\
+\ipa{ñ(jñ)} &	\zh{日} &	\zh{若攘尔} &	\zh{} \\
+\midrule
+\ipa{ṭ} &	\zh{知} &	\zh{吒*知胝置*竹哳*磔搩} &	\zh{侘搋（彻纽）荼雉（澄纽）} \\
+&&&\zh{澍（照三）} \\
+\ipa{ṭh} &	\zh{彻} &	\zh{搋*絺耻*祉𢯯侘诧* } &	\zh{吒（知纽）} \\
+\ipa{ḍ} &	\zh{澄} &	\zh{荼*穉稚持陈阵茶择宅哒} &	\zh{铎度（定纽）} \\
+\ipa{ḍh} &	\zh{澄} &	\zh{择*荼茶宅} &	\zh{搋（彻纽）} \\
+\ipa{ṇ} &	\zh{娘,泥} &	\zh{拏*尼腻拿挐忸*痆匿*（娘纽） 儞笯怒弩泥揉} &	\zh{若攘（日纽）} \\
+&&\zh{那诺（泥纽）} \\
+\midrule
+\ipa{t} &	\zh{端} &	\zh{䫂*都覩*堵妬蠹底*鞮低*帝*谛*旦颠刀多*埵*} &	\zh{知镇吒咤（知 纽）} \\
+&&&\zh{茶（澄纽）} \\
+&&\zh{蹬耽*点*咄呾*怛*德答*} \\
+\ipa{th} &	\zh{透} &	\zh{他*土兔菟傥闼*铁託} &	\zh{陁陀（定纽）} \\
+\ipa{d} &	\zh{定} &	\zh{柁*地*图弹度提*第檀坛陀*驮*陁惰堕墯头豆} &	\zh{茶仗阵陈（澄纽）} \\
+&&\zh{昙达* 迭姪*絰*铎特踏叠} \\
+\ipa{dh} &	\zh{定} &	\zh{达*地*杜*度提弹田陀驮*絰*沓柁} &	\zh{} \\
+\ipa{n} &	\zh{泥,娘} &	\zh{娜*你*儞奴*笯埿泥耐㮈奈柰难那*橠南耨捺*} &	\zh{如任若（日纽）} \\
+&&\zh{扌柰 诺纳*（泥纽）尼*腻昵*拏赁（娘纽）} \\
+\midrule
+\ipa{p} &	\zh{帮} &	\zh{跛*补谱*布闭*薜奔般半报波*播*簸卜毕荜㮿茇} &	\zh{毘掊跋薄(並 纽)芬(敷纽)} \\
+&&\zh{钵*博弗卑鞞臂比蔽宾褒} \\
+\ipa{ph} &	\zh{滂} &	\zh{颇*庀坡比蔽} & \\
+\ipa{b} &	\zh{並} &	\zh{婆*菩*部*蒲*餔步*槃般畔渤*勃跋*频毗*} &	\zh{佛*梵（奉纽）} \\
+\ipa{bh} &	\zh{並} &	\zh{薄*媲菩部*步陛槃畔叛婆*仆苾勃跋*毗鼻*鞞} &	\zh{浮（奉纽）} \\
+\ipa{m} &	\zh{明} &	\zh{磨*弥弭*姥慕*迷谜*梅门闷*曼漫缦摩*魔茫*瞢*} &	\zh{物文(微纽)} \\
+&&\zh{牟某母*茂贸穆木目藐蜜没秣末*沫*篾蔑莫*民} \\
+\midrule
+\ipa{y} &	\zh{喻四} &	\zh{也*夷已踰瑜渝逾*庾裕曳*延衍耶*夜*阎*盐琰剡} & \\
+&&\zh{燄焰逸*洩药抴} \\
+\ipa{l,r} &	\zh{来} &	\zh{洛*砢*离璃缡梨履*利*唎*釐理里缕*卢*嚧*鲁*} & \\
+&&\zh{嚕虏路*露𡀔*黎戾丽*荔隸俪赖邻蔺兰烂连练劳} \\
+&&\zh{罗*囉*逻*螺浪狼𩜁陵凌楞娄楼瑠岚览囕缆蓝滥} \\
+&&\zh{禄栗律𢫫辣*剌*喇*络落勒拉*腊} \\
+\ipa{v} &	\zh{奉, 並} &	\zh{缚*吠軬饭嚩*房防梵*凡*佛伐*罚*筏*栰（奉纽）} &\zh{波博弗（帮纽）} \\
+&&\zh{避阰毗*鼻*频鞞槃婆*瓶跋薄（並纽）} \\
+\midrule
+\ipa{ś} &	\zh{审三} &	\zh{捨*施翅尸始*试输*戍世势扇*奢赊舍商赏饷蠰首} &	\zh{删沙（审二纽） } \\
+&&\zh{兽室*设铄释式湿*葉摄} & \zh{珊（心纽）} \\
+\ipa{ṣ} &	\zh{审二} &	\zh{沙*师使史愉崽鎩裟洒霜衫*瑟*杀*穑色歰*澀} & \\
+\ipa{s} &	\zh{心} &	\zh{娑*斯徙玺私死*絮须苏*素*西犀信孙珊*骚些莎* } & \\
+&&\zh{僧*薮三*叁参悉*窣*萨*塞*霫飒䬃} \\
+\ipa{h} &	\zh{晓,匣} &	\zh{呬*希呼*虎醯汉诃*呵*兴亘喝*吸*噏(晓纽)} &	\zh{伽（群纽）} \\
+&&\zh{嗑*纥*曷*睺护怙（匣纽）}\\
+\midrule
+\ipa{kṣ} &	\zh{穿二} &	\zh{羼*厕*刍*蒭叉*差创忏刹策} &	\zh{崎泣（溪纽）} \\
+\ipa{ts} &	\zh{清} &	\zh{蹉*雌蹭} & \\
+$\varnothing$ &	\zh{影} &	\zh{蓊*伊医乌隖邬坞瑿黳毉*翳哀蔼因印安案阿*𧙃* } & \\
+&&\zh{鸯泱㹧*优沤菴庵罯*闇*郁壹鬰鬱嗢殟閼頞*遏恶垩} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsubsection{Clusters}
+
+\begin{itemize}
+\item \ipa{śr-}
+\begin{itemize}
+\item \zhc{沙门}{śramaṇa-} (old transcription)
+\item \zhc{室罗摩拏洛迦}{śramaṇerikā-}
+
+\zhd{室}{ɕit}\zhd{罗}{la}\zhd{摩}{ma}\zhd{拏}{næ}\zhd{洛}{lak}\zhd{迦}{kæ}
+\end{itemize}
+\item \ipa{sph-} \zhc{飒颇胝迦}{sphaṭika-}
+
+\zhd{飒}{sop}\zhd{颇}{pʰa}\zhd{胝}{ʈij}\zhd{迦}{kæ}
+\item \ipa{st-} \zhc{窣堵波}{stūpa-}
+\item \ipa{st-} \zhc{塞建陀}{skandha-}
+\end{itemize}
+\subsection{\zh{不空} Amoghavajra} \label{sec:amoghavajra}
+
+\citet{maspero1920changan}
+\subsection{\zh{支婁迦讖} Lokakṣema }
+
+\citet{karashima10lokakshema}
+ 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
 
