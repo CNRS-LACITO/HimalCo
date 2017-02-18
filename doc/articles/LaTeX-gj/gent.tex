@@ -30,6 +30,22 @@
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\tld}{\textasciitilde{}}
 \newcounter{exonb}
+\newcommand{\exercice}[1]{\noindent%
+\begin{center}
+\begin{minipage}[t]{.8\textwidth}
+\vskip 10pt 
+\rule{\linewidth}{1pt}  
+\vskip 10pt 
+\stepcounter{exonb} 
+\textbf{\centerline{Exercise \Roman{exonb}}}
+\vskip 10pt 
+\rule{\linewidth}{1pt}  
+\indent
+#1
+\rule{\linewidth}{1pt}  
+\end{minipage} 
+\end{center}
+ }
 \newcommand{\exo}[2]{\noindent%
 \begin{center}
 \begin{minipage}[t]{.8\textwidth}
@@ -63,7 +79,7 @@
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
 \maketitle
 
-\section{Early Middle Chinese}
+\section{Early Middle Chinese} \label{sec:emc}
 
 \subsection{Transcribing vs reconstructing MC}
 \subsubsection{Consonants}
@@ -101,7 +117,7 @@ Marginal initials:
 \item The \ipa{ʐ} initial only attested in two characters (including \zhc{俟}{ʐiX}).
 \end{itemize}
 
-\subsubsection{Rhymes}
+\subsubsection{Rhymes} \label{sec:rhymes}
 
 The four divisions in Baxter's transcription:
 \begin{enumerate}
@@ -121,44 +137,6 @@ Medial \ipa{-w} in \zhc{合口}{hékǒu} syllables, except (i) if the main vow
 \zhc{去}{kʰjoH} & \zhc{段}{twanH} \\
 \zhc{入}{ɲip} & \zhc{掇}{twat} \\
 \end{tabular}
-
- \exo{Indicate the initial consonant, the division, the rhyme and the tone of the following words}{
-\zhc{睹}{tuX}
-
-\zhc{塵}{ɖin} %ɖ, 3, -in, ping
-
-\zhc{炒}{tʂʰæwX} %tʂʰ, 2, -æw, shang
-
-\zhc{朝}{ɖjew} %ɖ, 3, -jew, ping
-
-\zhc{吹}{tɕʰwe} %tɕʰ, 3, -w-, -je, ping
-
-\zhc{畜}{ʈʰjuwk} 
-
-\zhc{鄧}{doŋH} 
-
-\zhc{妃}{pʰjɨj} 
-
-\zhc{範}{bjomX} 
-
-\zhc{彪}{pjiw} 
-
-\zhc{餅}{pjieŋX} 
-
-\zhc{兒}{ɲe} 
-
-\zhc{競}{gjæŋH}
-
-\zhc{脈}{mɛk} 
- 
- \zhc{汪}{ʔwaŋ} 
- 
-\zhc{驗}{ŋjemH} 
-  
-  \zhc{王}{hjwaŋ} 
-  
-   \zhc{緣}{jwen}
-}
 
 \subsubsection{Subclasses of third division} \label{sec:third}
 
@@ -180,7 +158,7 @@ Rhyme & Division & & Transcription \\
 \zh{戈} &	I &	&	\ipa{-wa} &	\\
 \zh{戈} &	III &	\zh{丑} &	\ipa{-j(w)a} &	\\
 \midrule
-\zh{麻} &	II &	&	\ipa{-æ} &	\\
+\zh{麻} &	II &	&	\ipa{-(w)æ} &	\\
 \zh{麻} &	III &	\zh{丑} &	\ipa{-jæ} &	\\
 \midrule
 \zh{模} &	I &	&	\ipa{-u} &	\\
@@ -235,7 +213,7 @@ Rhyme & Division & & Transcription \\
 
 
 \begin{table}[H]
-\caption{\zhc{咸}{xián} and \zhc{深}{shēn} (\ipa{-m} coda)} \centering \label{tab:xiao}
+\caption{\zhc{咸}{xián} and \zhc{深}{shēn} (\ipa{-m} coda)} \centering \label{tab:xian}
 \begin{tabular}{llllll}
 \toprule
 Rhyme & Division & & Transcription \\
@@ -255,7 +233,7 @@ Rhyme & Division & & Transcription \\
 \end{table}
 
 \begin{table}[H]
-\caption{\zhc{山}{shān} and \zhc{臻}{zhēn} (\ipa{-n} coda)} \centering \label{tab:xiao}
+\caption{\zhc{山}{shān} and \zhc{臻}{zhēn} (\ipa{-n} coda)} \centering \label{tab:shan}
 \begin{tabular}{llllll}
 \toprule
 Rhyme & Division & & Transcription \\
@@ -298,6 +276,7 @@ Rhyme & Division & & Transcription \\
 \zh{庚} & 	III & 	\zh{丑}=\zh{重紐3} & 	\ipa{-j(w)æŋ} & 	\\
 \zh{清} & 	III & 	\zh{寅} & 	\ipa{-j(w)(i)eŋ} & 	\\
 \zh{青} & 	IV & 	& 	\ipa{-(w)eŋ} & 	\\
+\midrule
 \zh{東} & 	I & 	& 	\ipa{-uwŋ} & 	\\
 \zh{冬} & 	I & 	& 	\ipa{-owŋ} & 	\\
 \zh{東} & 	III & 	\zh{丑} & 	\ipa{-juwŋ} & 	\\
@@ -305,6 +284,45 @@ Rhyme & Division & & Transcription \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+
+ \exo{Indicate the initial consonant, the division, the rhyme and the tone of the following words}{
+\zhc{睹}{tuX}
+
+\zhc{塵}{ɖin} %ɖ, 3, -in, ping
+
+\zhc{炒}{tʂʰæwX} %tʂʰ, 2, -æw, shang
+
+\zhc{朝}{ɖjew} %ɖ, 3, -jew, ping
+
+\zhc{吹}{tɕʰwe} %tɕʰ, 3, -w-, -je, ping
+
+\zhc{畜}{ʈʰjuwk} 
+
+\zhc{鄧}{doŋH} 
+
+\zhc{妃}{pʰjɨj} 
+
+\zhc{範}{bjomX} 
+
+\zhc{彪}{pjiw} 
+
+\zhc{餅}{pjieŋX} 
+
+\zhc{兒}{ɲe} 
+
+\zhc{競}{gjæŋH}
+
+\zhc{脈}{mɛk} 
+ 
+ \zhc{汪}{ʔwaŋ} 
+ 
+\zhc{驗}{ŋjemH} 
+  
+  \zhc{王}{hjwaŋ} 
+  
+   \zhc{緣}{jwen}
+}
 
 \subsection{Complementary distributions}
 
@@ -404,29 +422,28 @@ Other particularities:
 \zhc{知}{ʈ} & 	\zhc{徹}{ʈʰ} & 	\zhc{澄}{ɖɦ} & 	\zhc{娘}{ɳ} & 	 & 	 & 	 & 	\\
  & 	 & 	 & 	 & 	 & 	 & 	\zhc{來}{l} & 	\\
 \zhc{精}{ts} & 	\zhc{清}{tsʰ} & 	\zhc{從}{dzɦ} & 	 & 	\zhc{心}{s} & 	\zhc{邪}{zɦ} & 	 & 	\\
-\zhc{照}{ʈʂ} & 	\zhc{穿}{ʈʂʰ} & 	\zhc{牀}{dʐɦ} & 	\zhc{日}{ʐ} & 	\zhc{審}{ʂ} & 	\zhc{禪}{ʐɦ} & 	 & 	\\
+\zhc{照}{tʂ} & 	\zhc{穿}{tʂʰ} & 	\zhc{牀}{dʐɦ} & 	\zhc{日}{ɳʐ} & 	\zhc{審}{ʂ} & 	\zhc{禪}{ʐɦ} & 	 & 	\\
 \zhc{見}{k} & 	\zhc{溪}{kʰ} & 	\zhc{群}{gɦ} & 	\zhc{疑}{ŋ} & 	 & 	 & 	 & 	\\
 \zhc{影}{ʔ} & 	 & 	 & 	 & 	\zhc{曉}{x} & 	\zhc{匣}{ɣɦ} & 	\zhc{喻}{j} & 	\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsubsection{Labiodentals}
+Main consonantal changes between EMC and LMC (evidence is presented in section \ref{sec:amoghavajra}).
+\begin{itemize}
+\item Breathy voicing
+\item Labiodentalization (resulting in a contrast between \ipa{*f} and \ipa{*fʰ}, without a corresponding one between \ipa{*s} and \ipa{*s}, a system unattested elsewhere in the languages of the world with aspirated fricatives, see \citealt{jacques11lingua}).
+\item Merger of alveolo-palatals and retroflex affricates and fricatives
+\item Fricativization of \ipa{ɲ}
+\end{itemize}
 
-\subsubsection{Voicing}
-
-\ref{sec:amoghavajra}
-
-\subsubsection{Merger of affricates series}
 
 
-
-\subsection{Manner of articulation and tone }
+\subsection{Nanchang dialect}
 
 \citet{sagart93gan}
  
 
-\subsection{How much of MC can we predict from Mandarin?}
 
 \section{Rhyme table philology} 
 
@@ -480,12 +497,46 @@ NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè sh
 
 \subsection{Rhyme tables} \label{sec:yuntu}
 
-\subsection{Rhyming and \zhc{平仄}{píngzè}} \label{sec:pingze}
+ \exercice{Indicate the MC transcription for all characters in this page of the Yunjing; explain the correspondence between rows and divisions as defined in section \ref{sec:emc}.}
 
+ \exercice{Explain the distribution of the rhymes \zh{臻} and 
+\zh{眞}. }
+
+
+\subsection{\zhc{平仄}{píngzè}} \label{sec:pingze}
+
+Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, black: both possible.
+
+\zhc{七言律詩}{qīyán lǜshī}, \zhc{杜甫}{Dù Fǔ}
+\begin{itemize}
+\item \zh{丞相祠堂何處尋，錦官城外柏森森。}
+
+\ipa{dʑiŋ \bleu{sjaŋH} \rouge{zi} \rouge{daŋ} {ɣa} \bleu{tɕʰoH} \rouge{zim}}
+
+\ipa{kimX \rouge{kwan} {dʑeŋ} \bleu{ŋwajH} \bleu{pæk} \rouge{ʂim} \rouge{ʂim}}
+
+\item \zh{映階碧草自春色，隔葉黃鸝空好音。}
+
+\ipa{ʔjæŋH \rouge{kɛj} \bleu{pjæk} \bleu{tsʰawX} \bleu{dzijH} \rouge{tɕʰwin} \bleu{ʂik}}
+
+\ipa{kɛk \bleu{jep} \rouge{ɣwaŋ} \rouge{lje} \rouge{kʰuwŋ} \bleu{xawX} \rouge{ʔim}}
+
+\item \zh{三顧頻煩天下計，兩朝開濟老臣心。}
+
+\ipa{sam \bleu{kuH} \rouge{bjin} \rouge{bjin} \rouge{tʰen} \bleu{ɣaX} \bleu{kejH}}
+
+\ipa{ljaŋX \rouge{ɖjew} {kʰoj} \bleu{tsejX} \bleu{lawX} \rouge{dʑin} \rouge{sim}}
+
+\item  \zh{出師未捷身先死，長使英雄淚滿襟。}
+
+\ipa{tɕʰwit \rouge{ʂij} \bleu{mjɨjH} \bleu{dzjep} \rouge{ɕin} \rouge{sen} \bleu{sijX}}
+
+\ipa{ɖjaŋ \bleu{ʂijX} \rouge{ʔjæŋ} \rouge{hjuwŋ} \bleu{lwijH} \bleu{manX} \rouge{kim}}
+\end{itemize}
 \section{Chinese Transcriptions of Sanskrit}
 
 \subsection{\zhc{玄奘}{Xuánzàng}}
-\subsubsection{XXX}
+\subsubsection{Example from the \zhc{西域記}{Xīyùjì}}
 \XeTeXlinebreaklocale "zh" %使用中文换行 
 \XeTeXlinebreakskip = 0pt plus 1pt % 
 
