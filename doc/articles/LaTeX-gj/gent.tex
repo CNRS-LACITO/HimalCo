@@ -57,7 +57,7 @@
 \vskip 10pt 
 \rule{\linewidth}{1pt}  
 \indent
-#1:
+#1
 \vskip 10pt
 \begin{multicols}{3}
 #2
@@ -73,7 +73,7 @@
 \end{tabular}}
  \newcommand{\bleu}[1]{{\color{blue}#1}}
 \newcommand{\rouge}[1]{{\color{red}#1}} 
-
+\newcommand{\verte}[1]{{\textbf{#1}}}
  \begin{document} 
 \title{Middle Chinese}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
@@ -82,6 +82,7 @@
 \section{Early Middle Chinese} \label{sec:emc}
 
 \subsection{Transcribing vs reconstructing MC}
+
 \subsubsection{Consonants}
 \begin{table}[H]
 \caption{Early Middle Chinese initial consonants} \label{tab:mc.onset}
@@ -140,12 +141,12 @@ Medial \ipa{-w} in \zhc{合口}{hékǒu} syllables, except (i) if the main vow
 
 \subsubsection{Subclasses of third division} \label{sec:third}
 
-According to \zhc{李荣}{Lǐ Róng}, third division rhymes are classified into three groups:
+According to \citet{lirong56qy}, third division rhymes are classified into three groups:
 
 \begin{itemize}
 \item \zhc{子}{zǐ}: Only found with grave initials (labial, velar or guttural)
-\item \zhc{丑}{chǒu}: Compatible with all places of articulation except dental stops, no \zhc{重紐}{chóngniǔ}.
-\item \zhc{寅}{yín}: Compatible with all places of articulation except dental stops, with no \zhc{重紐}{chóngniǔ}. 
+\item \zhc{丑}{chǒu}: Compatible with all places of articulation except dental stops, no \zhc{重紐}{chóngniǔ} distinction.
+\item \zhc{寅}{yín}: Compatible with all places of articulation except dental stops, division between \zhc{重紐}{chóngniǔ} 3 and 4 (this terminology is explained in section \ref{sec:yuntu}). \zhc{重紐}{chóngniǔ} 4 rhymes are transcribed by Baxter with an additional \ipa{-i-} (if the main vowel is not \ipa{i}) or an additional \ipa{-j-}(if the main vowel is \ipa{i}).
 \end{itemize} 
 
 \begin{table}[H]
@@ -273,7 +274,7 @@ Rhyme & Division & & Transcription \\
 \midrule
 \zh{庚} & 	II & 	& 	\ipa{-(w)æŋ} & 	\\
 \zh{耕} & 	II & 	& 	\ipa{-(w)ɛŋ} & 	\\
-\zh{庚} & 	III & 	\zh{丑}=\zh{重紐3} & 	\ipa{-j(w)æŋ} & 	\\
+\zh{庚} & 	III & 	\zh{子}=\zh{重紐3} & 	\ipa{-j(w)æŋ} & 	\\
 \zh{清} & 	III & 	\zh{寅} & 	\ipa{-j(w)(i)eŋ} & 	\\
 \zh{青} & 	IV & 	& 	\ipa{-(w)eŋ} & 	\\
 \midrule
@@ -315,13 +316,13 @@ Rhyme & Division & & Transcription \\
 
 \zhc{脈}{mɛk} 
  
- \zhc{汪}{ʔwaŋ} 
+\zhc{汪}{ʔwaŋ} 
  
 \zhc{驗}{ŋjemH} 
   
-  \zhc{王}{hjwaŋ} 
+\zhc{王}{hjwaŋ} 
   
-   \zhc{緣}{jwen}
+\zhc{緣}{jwen}
 }
 
 \subsection{Complementary distributions}
@@ -362,13 +363,14 @@ Rhyme & Division & & Transcription \\
 \end{tabular}
 \end{table}
 
-The orthographic rules of the Baxter transcription integrate some of these complementary distributionst; for instance, since fourth division rhymes (\ipa{-eC}) do not appear after palatals, third division rhymes in \ipa{-jeC} are written without the \ipa{-j-} when occurring after those rhymes without risk of confusion (thus \ipa{tɕen} indicates initial \zhc{章}{tɕ-}, rhyme \zhc{仙}{-jen}).
+The orthographic rules of the Baxter transcription integrate some of these complementary distributions; for instance, since fourth division rhymes (\ipa{-eC}) do not appear after palatals, third division rhymes in \ipa{-jeC} are written without the \ipa{-j-} when occurring after those rhymes without risk of confusion (thus \ipa{tɕen} indicates initial \zhc{章}{tɕ-}, rhyme \zhc{仙}{-jen}).
 
 Other particularities:
 
 \begin{itemize}
 \item \zhc{來}{l}: nearly no examples in division II.
 \item \zhc{子}{zǐ}-class rhymes only compatible with velars, labials and pharyngeals (cf section \ref{sec:third}).
+\item \zhc{群}{g-} only in third division.
 \end{itemize}
 
 
@@ -376,6 +378,8 @@ Other particularities:
 
 
  \exo{Indicate which of the following syllables are impossible in Middle Chinese and why}{ 
+\ipa{gen} 
+ 
 \ipa{tʰɛw}
 
 \ipa{tɕæŋ}
@@ -407,6 +411,14 @@ Other particularities:
 \ipa{ʈju}
 
 \ipa{ten}
+
+\ipa{gæ}
+
+\ipa{ʈjon}
+
+\ipa{tɕæŋ}
+
+\ipa{piw}
 }
 \section{From MC to modern Sinitic languages}
 
@@ -432,7 +444,7 @@ Other particularities:
 Main consonantal changes between EMC and LMC (evidence is presented in section \ref{sec:amoghavajra}).
 \begin{itemize}
 \item Breathy voicing
-\item Labiodentalization (resulting in a contrast between \ipa{*f} and \ipa{*fʰ}, without a corresponding one between \ipa{*s} and \ipa{*s}, a system unattested elsewhere in the languages of the world with aspirated fricatives, see \citealt{jacques11lingua}).
+\item Labiodentalization (resulting in a contrast between \ipa{*f} and \ipa{*fʰ}, without a corresponding one between \ipa{*s} and \ipa{*sʰ}, a system unattested elsewhere in the languages of the world with aspirated fricatives, see \citealt{jacques11lingua}).
 \item Merger of alveolo-palatals and retroflex affricates and fricatives
 \item Fricativization of \ipa{ɲ}
 \end{itemize}
@@ -440,10 +452,69 @@ Main consonantal changes between EMC and LMC (evidence is presented in section \
 
 
 \subsection{Nanchang dialect}
+\zhc{南昌}{Nánchāng}, a \zhc{贛}{Gàn} dialect (\citealt{sagart93gan}).
 
-\citet{sagart93gan}
+\begin{table}[H]
+\caption{Correspondences between Middle Chinese and Nanchang} \centering \label{tab:nanchang1}
+\begin{tabular}{ll|llll}
+\toprule
+MC& Nanchang &MC& Nanchang &\\
+\midrule
+\zhc{東}{tuwŋ}		&	\ipa{tuŋ}^{42}	&	\zhc{鹿}{luwk}		&	\ipa{luk}^{5}	\\
+\zhc{懂}{tuwŋX}		&	\ipa{tuŋ}^{213}	&	\zhc{端}{twan}		&	\ipa{tɔn}^{42}	\\
+\zhc{棟}{tuwŋH}		&	\ipa{tuŋ}^{55}	&	\zhc{短}{twanX}		&	\ipa{tɔn}^{213}	\\
+\zhc{通}{tʰuwŋ}		&	\ipa{tʰuŋ}^{42}	&	\zhc{掇}{twat}		&	\ipa{tɔt}^{5}	\\
+\zhc{桶}{tʰuwŋX}		&	\ipa{tʰuŋ}^{213}	&	\zhc{脫}{thwat}		&	\ipa{tʰɔt}^{5}	\\
+\zhc{痛}{tʰuwŋH}		&	\ipa{tʰuŋ}^{213}	&	\zhc{團}{dwan}		&	\ipa{tʰɔn}^{24}	\\
+\zhc{銅}{duwŋ}		&	\ipa{tʰuŋ}^{24}	&	\zhc{斷}{dwanX}		&	\ipa{tʰɔn}^{31}	\\
+\zhc{洞}{duwŋH}		&	\ipa{tʰuŋ}^{31}	&	\zhc{暖}{nwanX}		&	\ipa{lɔn}^{213}	\\
+\zhc{讀}{duwk}		&	\ipa{tʰuk}^{5}	&	\zhc{亂}{lwanH}		&	\ipa{lɔn}^{31}	\\
+\zhc{聾}{luwŋ}		&	\ipa{luŋ}^{55}	&	\zhc{弄}{luwŋH}		&	\ipa{luŋ}^{31}	\\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ \exo{Using the data in Table \ref{tab:nanchang1}, fill the following table and describe the correspondences between MC and Nanchang. Compare with standard Mandarin.}{
+ 
  
 
+ \begin{tabular}{|l|l|l|l|l|}
+ \hline
+& \zh{平} & \zh{上} & \zh{去} & \zh{入} \\
+ \hline
+\zh{端} & &&&\\
+ \hline
+\zh{透} & &&&\\
+ \hline
+\zh{定} & &&&\\
+ \hline
+\zh{泥/來} & &&&\\ 
+ \hline
+ \end{tabular}
+}
+
+ \exo{Using the previous exercise, predict the Nanchang reading of the following characters from their MC (\ipa{-aŋ} $\rightarrow$ \ipa{-ɔŋ} and \ipa{-em} $\rightarrow$ \ipa{-iɛn}):}{
+ 
+ \zhc{躺}{tʰaŋX}
+ 
+ \zhc{燙}{tʰaŋH}
+ 
+ \zhc{糖}{daŋ}
+
+ \zhc{郎}{laŋ}
+
+ \zhc{添}{tʰem}
+
+ \zhc{舔}{tʰemX}
+
+ \zhc{貼}{tʰep}
+
+ \zhc{甜}{dem}
+
+ \zhc{簟}{demX}
+
+ \zhc{疊}{dep} 
+ }
 
 \section{Rhyme table philology} 
 
@@ -471,8 +542,8 @@ $\Rightarrow$  \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
 \end{itemize}
 $\Rightarrow$  \zhc{邊}{pen} $\equiv$ \zhc{補}{puX} $\equiv$  \zhc{博}{pak}
 
-NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè shàngzì}.
- \exo{Establish the \zhc{聲類}{shēnglèi} from the following \zhc{反切}{fǎnqiè}}{
+NB: A \zhc{反切上字}{fǎnqiè shàngzì} character is never used as its own \zhc{反切上字}{fǎnqiè shàngzì}.
+ \exo{Establish the \zhc{聲類}{shēnglèi} from the following \zhc{反切}{fǎnqiè} (NB: MC readings are not needed)}{
 {\cn  
 \noindent
 來洛哀切
@@ -505,33 +576,33 @@ NB: A fanqie character is never used as its own \zhc{反切上字}{fǎnqiè sh
 
 \subsection{\zhc{平仄}{píngzè}} \label{sec:pingze}
 
-Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, black: both possible.
+Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, bold: \verte{both possible}.
 
 \zhc{七言律詩}{qīyán lǜshī}, \zhc{杜甫}{Dù Fǔ}
 \begin{itemize}
 \item \zh{丞相祠堂何處尋，錦官城外柏森森。}
 
-\ipa{dʑiŋ \bleu{sjaŋH} \rouge{zi} \rouge{daŋ} {ɣa} \bleu{tɕʰoH} \rouge{zim}}
+\ipa{\verte{dʑiŋ} \bleu{sjaŋH} \rouge{zi} \rouge{daŋ} \verte{ɣa} \bleu{tɕʰoH} \rouge{zim}}
 
-\ipa{kimX \rouge{kwan} {dʑeŋ} \bleu{ŋwajH} \bleu{pæk} \rouge{ʂim} \rouge{ʂim}}
+\ipa{\verte{kimX} \rouge{kwan} \verte{dʑeŋ} \bleu{ŋwajH} \bleu{pæk} \rouge{ʂim} \rouge{ʂim}}
 
 \item \zh{映階碧草自春色，隔葉黃鸝空好音。}
 
-\ipa{ʔjæŋH \rouge{kɛj} \bleu{pjæk} \bleu{tsʰawX} \bleu{dzijH} \rouge{tɕʰwin} \bleu{ʂik}}
+\ipa{\verte{ʔjæŋH} \rouge{kɛj} \bleu{pjæk} \bleu{tsʰawX} \bleu{dzijH} \rouge{tɕʰwin} \bleu{ʂik}}
 
-\ipa{kɛk \bleu{jep} \rouge{ɣwaŋ} \rouge{lje} \rouge{kʰuwŋ} \bleu{xawX} \rouge{ʔim}}
+\ipa{\verte{kɛk} \bleu{jep} \rouge{ɣwaŋ} \rouge{lje} \rouge{kʰuwŋ} \bleu{xawX} \rouge{ʔim}}
 
 \item \zh{三顧頻煩天下計，兩朝開濟老臣心。}
 
-\ipa{sam \bleu{kuH} \rouge{bjin} \rouge{bjin} \rouge{tʰen} \bleu{ɣaX} \bleu{kejH}}
+\ipa{\verte{sam} \bleu{kuH} \rouge{bjin} \rouge{bjon} \rouge{tʰen} \bleu{ɣaX} \bleu{kejH}}
 
-\ipa{ljaŋX \rouge{ɖjew} {kʰoj} \bleu{tsejX} \bleu{lawX} \rouge{dʑin} \rouge{sim}}
+\ipa{\verte{ljaŋX} \rouge{ɖjew} \verte{kʰoj} \bleu{tsejX} \bleu{lawX} \rouge{dʑin} \rouge{sim}}
 
 \item  \zh{出師未捷身先死，長使英雄淚滿襟。}
 
-\ipa{tɕʰwit \rouge{ʂij} \bleu{mjɨjH} \bleu{dzjep} \rouge{ɕin} \rouge{sen} \bleu{sijX}}
+\ipa{\verte{tɕʰwit} \rouge{ʂij} \bleu{mjɨjH} \bleu{dzjep} \rouge{ɕin} \rouge{sen} \bleu{sijX}}
 
-\ipa{ɖjaŋ \bleu{ʂijX} \rouge{ʔjæŋ} \rouge{hjuwŋ} \bleu{lwijH} \bleu{manX} \rouge{kim}}
+\ipa{\verte{ɖjaŋ} \bleu{ʂijX} \rouge{ʔjæŋ} \rouge{hjuwŋ} \bleu{lwijH} \bleu{manX} \rouge{kim}}
 \end{itemize}
 \section{Chinese Transcriptions of Sanskrit}
 
@@ -540,10 +611,10 @@ Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, black
 \XeTeXlinebreaklocale "zh" %使用中文换行 
 \XeTeXlinebreakskip = 0pt plus 1pt % 
 
-\zh{\bleu{尼波羅}國周四千餘里，在雪山中。國大都城周二十餘里。山川連屬，宜穀稼，多花菓，出赤銅、犛牛、命命鳥。貨用赤銅錢。氣序寒烈，風俗險詖，人性剛獷，信義輕薄。無學藝，有工巧。形貌醜弊，邪正兼信。\bleu{伽藍}、天祠接堵連隅。僧徒二千余人，大小二乘，兼功綜習。外道異學，其數不詳。}
+\zh{\bleu{尼波羅}國周四千餘里，在雪山中。國大都城周二十餘里。山川連屬，宜穀稼，多花菓，出赤銅、犛牛、\rouge{命命鳥}。貨用赤銅錢。氣序寒烈，風俗險詖，人性剛獷，信義輕薄。無學藝，有工巧。形貌醜弊，邪正兼信。\bleu{伽藍}、天祠接堵連隅。僧徒二千余人，大小二乘，兼功綜習。外道異學，其數不詳。}
 
 %一、光胄王制聲明論
-\zh{王，\bleu{剎帝}\bleu{利栗呫婆}種也。志學清高，純信佛法。近代有王，號\bleu{鴦輸伐摩}，(唐言光胄。)碩學聰睿，自制《聲明論》，重學敬德，遐邇著聞。}
+\zh{王，\bleu{剎帝}\bleu{利栗呫婆}種也。志學清高，純信佛法。近代有王，號\bleu{鴦輸伐摩}，(唐言\rouge{光胄}。)碩學聰睿，自制《\rouge{聲明論}》，重學敬德，遐邇著聞。}
 
 \zh{都城東南有小水池，以人火投之，水即焰起。更投餘物，亦變為火。}
 
@@ -551,9 +622,12 @@ Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, black
 
 
 \begin{itemize}
+
 \item \zhc{尼波羅}{nepāla-}
 
 \zhd{尼}{ɳij}\zhd{波}{pa}\zhd{羅}{la}
+
+\item \zhc{命命}{jīvajīva-}
 \item \zhc{伽藍}{saṃghārāma-} (abbreviation of \zh{僧伽藍摩})
 
 \zhd{僧}{soŋ}\zhd{伽}{gja}\zhd{藍}{lam}\zhd{摩}{ma}
@@ -564,6 +638,7 @@ Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, black
 
 \zhd{栗}{lit}\zhd{呫}{tɕʰep}\zhd{婆}{ba}
 \item \zhc{鴦輸伐摩}{aṃśuvarman-}
+\item \zhc{聲明論}{śabdavidyāśāstra-}
 \item \zhc{吠舍釐}{vaiśālī-}
 \item \zhc{殑伽}{gaṅgā-}
 \item \zhc{摩揭陁}{māgadha-}
