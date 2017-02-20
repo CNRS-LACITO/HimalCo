@@ -74,6 +74,9 @@
  \newcommand{\bleu}[1]{{\color{blue}#1}}
 \newcommand{\rouge}[1]{{\color{red}#1}} 
 \newcommand{\verte}[1]{{\textbf{#1}}}
+\XeTeXlinebreaklocale "zh" %使用中文换行 
+\XeTeXlinebreakskip = 0pt plus 1pt % 
+
  \begin{document} 
 \title{Middle Chinese}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
@@ -251,7 +254,7 @@ Rhyme & Division & & Transcription \\
 \zh{魂} & 	I & 	& 	\ipa{-won} & 	\\
 \zh{臻} & 	III & 	\zh{丑} & 	\ipa{-in} & 	\\
 \zh{眞} & 	III & 	\zh{寅} & 	\ipa{-(j)(w)in} & 	\\
-\zh{殷} & 	III & 	\zh{子} & 	\ipa{-jɨn} & 	\\
+\zh{欣} & 	III & 	\zh{子} & 	\ipa{-jɨn} & 	\\
 \zh{文} & 	III & 	\zh{子} & 	\ipa{-jun} & 	\\
 \bottomrule
 \end{tabular}
@@ -565,14 +568,93 @@ NB: A \zhc{反切上字}{fǎnqiè shàngzì} character is never used as its 
 里良止切
 }}
 
+ \exercice{Using the Guangyun, explain the distribution of the rhymes \zh{臻} and \zh{眞}. }
+ 
+\subsubsection{\zhc{重紐}{chóngniǔ} }
 
-\subsection{Rhyme tables} \label{sec:yuntu}
+\begin{itemize}
+\item \ipa{min} \zh{武巾}: \zh{珉(玟瑉碈)岷罠閩緡䪸笢旻旼𤸅闅汶㨉忞盿䁕鍲𪃯鈱}
+\item \ipa{mjin} \zh{彌鄰}: \zh{民闅䁕泯怋}
+\item \ipa{bin} \zh{符巾}:	\zh{貧}
+\item \ipa{bjin} \zh{符眞}:	\zh{頻蘋薲嬪㰋玭蠙獱顰𧭹嚬𩴱𦇖𡤉}
+\item \ipa{kin} \zh{居銀}: \zh{巾}
+\item \ipa{ŋin} \zh{語巾}: \zh{銀㹞狺䖜檭鄞圁誾訔嚚䓄珢䴦垠𪛊泿}
+\end{itemize} 
 
- \exercice{Indicate the MC transcription for all characters in this page of the Yunjing; explain the correspondence between rows and divisions as defined in section \ref{sec:emc}.}
 
- \exercice{Explain the distribution of the rhymes \zh{臻} and 
-\zh{眞}. }
+\subsection{\zhc{韻鏡}{Yùnjìng}} \label{sec:yuntu}
 
+{\cn
+歸釋音字，一如檢禮部韻，且如得「芳弓」反，先就十陽韻求「芳」字，知屬脣音次清第三位（\ref{fig:ang}），卻歸一東韻（\ref{fig:uwng}）尋下「弓」字，便就脣音次清第三位取之，乃知為「豐」字，蓋「芳」字是同音之定位；「弓」字是同韻之對映，歸字之訣大概如是。又如「息中反」嵩，「息」字係仄側聲在職字韻，齒音第二清第四位（\ref{fig:ing}），亦隨「中」字歸一東韻，齒音第二清第四位取之。餘並準之。
+\begin{figure}[H]
+\centering
+\label{fig:ang}
+\caption{\zhc{陽}{-jaŋ}}
+\includegraphics[width=.9\textwidth]{yunjing-ang.jpg}
+\end{figure}
+\begin{figure}[H]
+\centering
+\label{fig:uwng}
+\caption{\zhc{東}{-uwŋ}}
+\includegraphics[width=.9\textwidth]{yunjing-uwng.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\label{fig:ing}
+\caption{\zhc{蒸}{-iŋ}}
+\includegraphics[width=\textwidth]{yunjing-ing.jpg}
+\end{figure}
+
+「祖紅反」（\ref{fig:u}）歸成「騣」字，雖韻鏡中有洪無紅（\ref{fig:uwng}），檢反切之例，上下二字或取同音，不必正體。
+
+（葼=騣，子紅切）
+\begin{figure}[H]
+\centering
+\label{fig:u}
+\caption{\zhc{模}{-u}}
+\includegraphics[width=.9\textwidth]{yunjing-u.jpg}
+\end{figure}
+
+「慈陵」反「繒」，慈字屬齒音第一濁第四位（\ref{fig:i}），就「蒸」韻歸成「繒」字（\ref{fig:ing}），而「陵」字又不相映，蓋逐韻屬單行字母者，上下聯續二位只同一音，此第四圍亦「陵」字音也。餘準此。
+
+\begin{figure}[H]
+\centering
+\label{fig:i}
+\caption{\zhc{之}{-i}}
+\includegraphics[width=.9\textwidth]{yunjing-i.jpg}
+\end{figure}
+
+「先侯」反，「先」字屬第四（\ref{fig:en}）歸成「涑」字，又在第一（\ref{fig:uw}），蓋逐韻齒音中間二位屬照穿牀審禪字母，上下二位屬精清從心邪字母，侯字韻列第一行，故隨本韻定音也，餘準之。
+
+\begin{figure}[H]
+\centering
+\label{fig:en}
+\caption{\zhc{先}{-en}}
+\includegraphics[width=.9\textwidth]{yunjing-an.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\label{fig:uw}
+\caption{\zhc{侯}{-uw}}
+\includegraphics[width=.9\textwidth]{yunjing-uw.jpg}
+\end{figure}
+
+「諸氏」反、「莫蟹」反、「奴罪」反、「弭盡」反之類，聲雖去音，字歸上韻，並當從禮部韻就上聲歸字。
+
+凡歸難字，橫音即所屬音四聲內任意取一字，橫轉便得之矣。今如「千竹」反「鼀」也（\ref{fig:uwng}），若取「嵩」字橫呼，則知平聲次清是為「樅」字，又以「樅」字呼下入聲則知「鼀」為「促」音（\ref{fig:owng}）。但以二「冬」韻同音處觀之可見也。
+
+\begin{figure}[H]
+\centering
+\label{fig:owng}
+\caption{\zhc{冬}{-owŋ}}
+\includegraphics[width=\textwidth]{yunjing-owng.jpg}
+\end{figure}
+}
+ \exercice{Indicate the MC transcription for all characters in pages of the Yunjing in Figures \ref{fig:uw} and \ref{fig:en}.}
+
+ 
 
 \subsection{\zhc{平仄}{píngzè}} \label{sec:pingze}
 
@@ -608,8 +690,7 @@ Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, bold:
 
 \subsection{\zhc{玄奘}{Xuánzàng}}
 \subsubsection{Example from the \zhc{西域記}{Xīyùjì}}
-\XeTeXlinebreaklocale "zh" %使用中文换行 
-\XeTeXlinebreakskip = 0pt plus 1pt % 
+
 
 \zh{\bleu{尼波羅}國周四千餘里，在雪山中。國大都城周二十餘里。山川連屬，宜穀稼，多花菓，出赤銅、犛牛、\rouge{命命鳥}。貨用赤銅錢。氣序寒烈，風俗險詖，人性剛獷，信義輕薄。無學藝，有工巧。形貌醜弊，邪正兼信。\bleu{伽藍}、天祠接堵連隅。僧徒二千余人，大小二乘，兼功綜習。外道異學，其數不詳。}
 
@@ -638,11 +719,18 @@ Colour code: red: \zhc{\rouge{平}}{píng}, blue: \zhc{\bleu{仄}}{zè}, bold:
 
 \zhd{栗}{lit}\zhd{呫}{tɕʰep}\zhd{婆}{ba}
 \item \zhc{鴦輸伐摩}{aṃśuvarman-}
+
+\zhd{鴦}{ʔjaŋ}\zhd{輸}{ɕu}\zhd{伐}{bjot}\zhd{摩}{ma}
 \item \zhc{聲明論}{śabdavidyāśāstra-}
 \item \zhc{吠舍釐}{vaiśālī-}
+
+\zhd{吠}{bjojH}\zhd{舍}{ɕæH}\zhd{釐}{li}
 \item \zhc{殑伽}{gaṅgā-}
+
+\zhd{殑}{giŋ}\zhd{伽}{gja}
 \item \zhc{摩揭陁}{māgadha-}
 
+\zhd{摩}{ma}\zhd{揭}{gjot}\zhd{陁}{da}; \zhd{摩}{ma}\zhd{伽}{gja}\zhd{陁}{da}; \zhd{摩}{ma}\zhd{竭}{gjot}\zhd{提}{dej}
 \item \zhc{犛}{li ; mæw} `yak', Himalayan Wanderwort (OC *\ipa{rə}, *\ipa{mrə}, Tibetan \ipa{ɴbri} `female yak', Japhug \ipa{qambrɯ} `male yak', Skt \ipa{camara-, camarī-} `yak', cf \citealt{jacques16camara})
 \end{itemize}
 \subsubsection{Simple consonants}
@@ -733,7 +821,11 @@ $\varnothing$ &	\zh{影} &	\zh{蓊*伊医乌隖邬坞瑿黳毉*翳哀蔼因印�
 
 \zhd{飒}{sop}\zhd{颇}{pʰa}\zhd{胝}{ʈij}\zhd{迦}{kæ}
 \item \ipa{st-} \zhc{窣堵波}{stūpa-}
+
+\zhd{窣}{swot}\zhd{堵}{tuX}\zhd{波}{pa} 
 \item \ipa{st-} \zhc{塞建陀}{skandha-}
+
+\zhd{塞}{sok}\zhd{建}{kjonH}\zhd{陀}{da} 
 \end{itemize}
 \subsection{\zh{不空} Amoghavajra} \label{sec:amoghavajra}
 
