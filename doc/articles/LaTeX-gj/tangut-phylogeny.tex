@@ -1,0 +1,69 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\usepackage{tangutex2}
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textbf{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+
+ \begin{document} 
+ 
+ \title{Tangut as a Horpa language}
+  \author{Guillaume Jacques, Lai Yunfan and Gong Xun}
+ \maketitle 
+\section*{Introduction}
+
+\section{Lexicon} 
+
+\section{Case marking} 
+\citet{jacques17stau}
+
+\begin{table}[H]
+\caption{Case markers in Stau, Khroskyabs and Tangut}\label{tab:tangut} \centering
+\begin{tabular}{ll|ll|llllll}
+\toprule
+Stau && Khroskyabs && Tangut & \\
+\midrule
+\ipa{-w} & \textsc{erg} &&& \mo{5880} \ipa{ŋwu²} & \textsc{instr} \\
+\ipa{-j} & \textsc{gen} &\ipa{-ji} &\textsc{gen} &\mo{1139} \ipa{.jij¹} & \textsc{gen}, antiergative\\
+\ipa{-ʁa} & \textsc{all} & \ipa{-ʁɑ} & \textsc{loc} & \mo{5856} \ipa{ɣa²} & \textsc{loc} \\
+\ipa{-tɕʰa} & \textsc{loc} &&& \mo{0089} \ipa{tɕʰjaa¹}  &\textsc{loc} \\
+\ipa{-kʰa} & \textsc{instr} &&& \mo{5993} \ipa{kʰa¹}  &in the middle of \\
+\toprule
+\end{tabular}
+\end{table}
+
+\section{Verbal morphology} 
+
+\section*{Conclusion}
+ 
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+ \end{document}
+ 
