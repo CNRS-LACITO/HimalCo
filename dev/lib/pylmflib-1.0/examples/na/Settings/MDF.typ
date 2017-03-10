@@ -441,30 +441,6 @@
 \lng vernacular
 \-mkr
 
-\+mkr lx_F5
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
-\+mkr lx_M18
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
-\+mkr lx_M21
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
-\+mkr lx_M23
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
 \+mkr mn
 \nam Main entry cross-ref.
 \desc Used to reference a minimal entry back to its main entry.
@@ -1040,18 +1016,6 @@
 \CharStyle
 \-mkr
 
-\+mkr xv_F5
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
-\+mkr xv_M23
-\nam *
-\lng English
-\mkrOverThis lx
-\-mkr
-
 \-mkrset
 
 \iInterlinCharWd 10
@@ -1141,127 +1105,8 @@
 \-expMDF
 
 \+expRTF Rich Text Format
-\exportedFile E:\24_naxi\Yongning\ToolboxYongning\test_sortieDictionnaire.rtf
-\+mkrsubsetIncluded 
-\mkr 1d
-\mkr 1e
-\mkr 1i
-\mkr 1p
-\mkr 1s
-\mkr 2d
-\mkr 2p
-\mkr 2s
-\mkr 3d
-\mkr 3p
-\mkr 3s
-\mkr 4d
-\mkr 4p
-\mkr 4s
-\mkr a
-\mkr an
-\mkr bb
-\mkr bw
-\mkr ce
-\mkr cf
-\mkr cl
-\mkr cle
-\mkr cn
-\mkr cr
-\mkr de
-\mkr dn
-\mkr dr
-\mkr dt
-\mkr dv
-\mkr ec
-\mkr ee
-\mkr eg
-\mkr en
-\mkr enrt
-\mkr er
-\mkr es
-\mkr et
-\mkr ev
-\mkr gang
-\mkr ge
-\mkr gn
-\mkr gr
-\mkr gv
-\mkr hm
-\mkr is
-\mkr lc
-\mkr le
-\mkr lf
-\mkr ln
-\mkr lr
-\mkr lt
-\mkr lv
-\mkr lx
-\mkr lx_F5
-\mkr lx_M18
-\mkr lx_M21
-\mkr lx_M23
-\mkr mn
-\mkr mr
-\mkr na
-\mkr nd
-\mkr ng
-\mkr np
-\mkr nq
-\mkr ns
-\mkr nt
-\mkr nt_phon
-\mkr nt_sem
-\mkr oe
-\mkr on
-\mkr or
-\mkr ov
-\mkr pc
-\mkr pd
-\mkr pde
-\mkr pdl
-\mkr pdn
-\mkr pdr
-\mkr pdv
-\mkr ph
-\mkr pl
-\mkr pn
-\mkr ps
-\mkr py
-\mkr rd
-\mkr re
-\mkr rf
-\mkr rn
-\mkr rr
-\mkr sc
-\mkr sd
-\mkr se
-\mkr sem
-\mkr sg
-\mkr sn
-\mkr so
-\mkr st
-\mkr sy
-\mkr tb
-\mkr th
-\mkr u
-\mkr ue
-\mkr un
-\mkr ur
-\mkr uv
-\mkr va
-\mkr ve
-\mkr vn
-\mkr vr
-\mkr we
-\mkr wn
-\mkr wr
-\mkr xe
-\mkr xn
-\mkr xr
-\mkr xv
-\mkr xv_F5
-\mkr xv_M23
-\-mkrsubsetIncluded
+\exportedFile C:\Dropbox\na_W\FieldWorks\versions_PDF_dictionnaire.rtf
+\MarkerFont
 \+rtfPageSetup 
 \paperSize letter
 \topMargin 1
@@ -1280,7 +1125,7 @@
 \exportedFile C:\Users\alexis\Desktop\Na
 \-expSF
 
-\expDefault Standard Format
+\expDefault Rich Text Format
 \AutoOpen
 \-expset
 \PreventNumbering
