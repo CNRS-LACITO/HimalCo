@@ -1,0 +1,113 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\dhat}[1]{|\ipa{#1}|}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+\newcommand{\mien}[5]{\ipa{#1}^{#2} `#3' (\zh{#4}, p.#5)} 
+
+\begin{document}
+
+\title{The Hmong-Mien contribution to Old Chinese reconstruction}
+\author{Guillaume Jacques}
+\maketitle
+
+\section*{Introduction}
+\citet{sagart03prenasalized}
+\citet{maozw92mien}
+\citet{ratliff10protohm}
+\citet{wang95protomy}
+%江底
+\section{Anticausative prenasalization}
+\citet[14-16]{downer73loanwords}
+
+\citet{wanglz12jieci}
+%http://max.book118.com/html/2014/0421/7812829.shtm
+ 
+\mien{khoːi}{1}{open (tr)}{打开}{131} 
+
+\mien{goːi}{1}{open (it)}{开}{131}  pour 开, et
+\zh{多作补语祸自然开裂、开放}
+
+\mien{tshɛʔ}{7}{pull down (house)}{拆}{120}
+ 
+\mien{dzɛʔ}{7}{be cracked (of earth, of skin)}{拆开；皴}{151}
+
+\mien{pɛːŋ}{1}{to stretch tight, to pull tight}{绷；拉紧；拔}{120}
+\mien{bɛːŋ}{1}{to crack}{裂开}{150-1}
+ 
+\ipa{dei^6} \ipa{ɲwo^4} \ipa{ɲei^1} \ipa{top^8} \ipa{jet^8} \ipa{khai^5} \ipa{phuːi^1} \ipa{bɛːŋ^1} \ipa{ɲa^6}
+ 
+ \zh{地理的豆子全部晒裂了}
+
+\mien{tshɛːŋ}{1}{ssss}{撑、支}{153} 
+
+\mien{dzip}{7}{continue}{接、继续}{121}
+\mien{tsip}{7}{receive}{接、承受、接受、迎接}{121}
+
+
+Autres:
+\mien{beu}{1}{toss}{抛}{124} 
+\mien{dzɛːŋ}{1}{fight over}{争、争夺}{127} 
+\mien{dzaːt}{7}{smear}{擦、抹、涂}{121} 
+
+Anticausative:
+\mien{dap}{7}{ssss}{坍、塌}{151} 
+\mien{dzaːn}{5}{be scattered}{散}{sss}
+\mien{baːŋ}{7}{xxxxx}{崩}{151} 
+\mien{duːi}{1}{pile up}{堆、堆放}{153} 
+\mien{bjoːt}{8}{boil}{沸腾}{146} 
+\subsection{Anticausative prenasalization}
+\citet[193-4]{jacques15causative}
+\citet[285-288]{jacques15spontaneous}
+\citet{jacques15derivational.khaling}
+
+\section{How Old is prenasalization in Mien?}
+
+\section*{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
