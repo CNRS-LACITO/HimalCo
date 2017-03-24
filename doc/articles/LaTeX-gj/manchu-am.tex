@@ -6,27 +6,28 @@
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
-%\usepackage{multicol}
+\usepackage{multicol}
 \usepackage{hyperref} 
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
-
+\usepackage{lscape}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+\newcommand{\ipa}[1]{\textit{{\phon\mbox{#1}}}} %API tjs en italique
  \newcommand{\ipab}[1]{{\phon \mbox{#1}}} %API tjs en italique
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn#1}}
-
+\newcommand{\ofwh}{}%{\footnotesize{of which:}}
+ \newcommand{\plus}[1]{#1}
  
 \begin{document} 
-\title{Associated motion in Manchu in typological perspective\footnote{Acknowledgements to be added after editorial decision. The glosses follow the Leipzig glossing rules, with the addition of the following: \textsc{aor} aorist, \textsc{auto}, autobenefactive, \textsc{cisloc} cislocative/venitive, \textsc{cond} conditional, \textsc{conv} converb, \textsc{lat} lative,  \textsc{pre} present, \textsc{subj} subjunctive, \textsc{transloc} translocative/andative } }
-%\author{José Andrés Alonso de la Fuente\\Guillaume Jacques}
+\title{Associated motion in Manchu in typological perspective\footnote{We would like to thank John Cowan, Antoine Guillaume, Sven Osterkamp, Brigitte Pakendorff, Daniel Ross, Alexander Vovin, Mikhail Zhivlov and Claire Moïse-Fauré, as well as two anonymous reviewers for useful comments and corrections on this work. The glosses follow the Leipzig glossing rules, with the addition of the following: \textsc{aor} aorist, \textsc{auto}, autobenefactive, \textsc{cisloc} cislocative/venitive, \textsc{cond} conditional, \textsc{conv} converb, \textsc{lat} lative,  \textsc{pre} present, \textsc{subj} subjunctive, \textsc{transloc} translocative/andative } }
+\author{José Andrés Alonso de la Fuente\\Guillaume Jacques}
 \maketitle 
-%acknowledgements: John Cowan, Antoine Guillaume, Sven Osterkamp, Brigitte Pakendorff, Daniel Ross, Alexander Vovin, Mikhail Zhivlov, Moïse-Fauré, Claire
+
 %chen13conditional
 \textbf{Abstract}: The present paper presents a detailed description of the Associated Motion system of Classical Manchu, on the basis of original texts from the 17-18th centuries. It shows that despite superficial similarities, Classical Manchu differs in many ways from previously described AM systems only comprising translocative vs cislocative makers, such as that of Japhug. This paper provides a basic framework for further research on the typology of simple AM systems.
 
@@ -41,7 +42,7 @@ Most languages with AM can also express the association of translational motion 
 
 This paper deals with the system of AM in the Manchu language, and focuses on the precise semantic value of the AM suffixes, in particular their differences with the corresponding MVC and their interaction with the causative. 
 
-This paper comprises three sections. First, we present an overview of previous studies of AM, MVC and valency-increasing morphemes in the literature. Second, we provide a detailed description of AM in Manchu on the basis of a philological investigation of authentic early Manchu texts from the 17-18th centuries (excluding translated documents). Third, we investigate how the commonalities and differences in the use of AM in Manchu and other languages such as Japhug can be account for by differences in grammaticalization pathways.
+This paper comprises three sections. First, we present an overview of previous studies of AM, MVC and valency-increasing morphemes in the literature. Second, we provide a detailed description of AM in Manchu on the basis of a philological investigation of authentic early Manchu texts from the 17-18th centuries (excluding translated documents). Third, we investigate how the commonalities and differences in the use of AM in Manchu and other languages such as Japhug can be accounted for by differences in grammaticalization pathways.
 
 \section{Associated motion}
 In this section, we present three typological questions that we believe deserve to be treated when describing any AM system: the parameters of the AM system, the semantic difference between AM markers and their MVC equivalent, and the interaction between AM and derivational morphemes such as the causative.
@@ -52,9 +53,10 @@ In languages with complex AM systems such as Tacanan and Arandic, \citet[8]{guil
 In languages with simpler AM systems comprising only two morphemes as in Manchu, there is little variety regarding these parameters: only cislocative vs translocative AM markers of prior motion of the (S/A) subject are attested.
 
 \subsection{Associated motion vs motion verb construction} \label{sec:japhug.am.mvc}
-As mentioned above, few previous publications have addressed the issue of the contrast between AM and MVC. Previous literature (\citealt{wilkins91associated.motion, guillaume16am}) has focused on specificities of AM, in particular the fact that a motion event expressed by an AM marker is generally (i) backgrounded, (ii) may not rendered in translation, and (iii) may be referred to several times by a motion verb and several AM markers in a row (the so-called `echo phenomenon', see for instance \citet[11]{guillaume16am}). While these features of AM are indeed also observed in Manchu and other Tungusic languages,  (see for instance \ref{ex:maktanaha} concerning backgrounding and absence in translation, and \ref{ex:ngenejefi} for the echo form), another crucial difference is the relationship between the motion and the goal events. 
+As mentioned above, few previous publications have addressed the issue of the contrast between AM and MVC. Previous literature (\citealt{wilkins91associated.motion, guillaume16am}) has focused on specificities of AM, in particular the fact that a motion event expressed by an AM marker is generally (i) backgrounded, (ii) may not rendered in translation, and (iii) may be referred to several times by a motion verb and several AM markers in a row (the so-called `echo phenomenon', see for instance \citet[11]{guillaume16am}). These features of AM are indeed also observed in Manchu and other Tungusic languages,  (see for instance \ref{ex:maktanaha} concerning backgrounding and absence in translation, and \ref{ex:ngenejefi} for the echo form).
 
-One of the few languages where this question has been studied is Japhug (Rgyalrongic, Trans-Himalayan). In Japhug, the semantic difference between AM and MVC is most obvious in the aorist (\citealt[203]{jacques13harmonization}). In the MVC, a motion verb in the aorist implies that the motion has been completed, but does not specify whether the goal action (the action referred to in the purposive complement clause) has taken place or not. This can be shown by the fact that the goal action can be negated, as in examples (\ref{ex:mvc.jpg}) and  (\ref{ex:mvc.jpg2}).
+
+Yet, another crucial difference AM and MVC, at least in some languages, is the relationship between the motion and the goal events. One of the few languages where this question has been studied is Japhug (Rgyalrongic, Trans-Himalayan). In Japhug, the semantic difference between AM and MVC is most obvious in the aorist (\citealt[203]{jacques13harmonization}). In the MVC, a motion verb in the aorist implies that the motion has been completed, but does not specify whether the goal action (the action referred to in the purposive complement clause) has taken place or not. This can be shown by the fact that the goal action can be negated, as in examples (\ref{ex:mvc.jpg}) and  (\ref{ex:mvc.jpg2}).
 
  \begin{exe}
 \ex \label{ex:mvc.jpg}
@@ -73,11 +75,11 @@ On the other hand, AM prefixes imply that \textbf{both} the motion and the goal 
 \ex \label{ex:am.jpg}
 \gll  *\ipa{laχtɕʰa} \ipa{ɕ-tɤ-χtɯ-t-a}  \ipa{ri} \ipa{tɤ-χtɯ-t-a} \ipa{maka} \ipa{me} \\
 thing \textsc{transloc}-\textsc{aor}-buy-\textsc{pst-1sg} but \textsc{aor}-buy-\textsc{pst-1sg}  at.all \textsc{n.pst}:not.have\\
-\glt  (intended meaning: sentence (\ref{ex:mvc.jpg}) 
+\glt  (intended meaning: sentence (\ref{ex:mvc.jpg}))
 \ex \label{ex:am.jpg2}
 \gll  *\ipa{ɕ-pɯ-nɯ-rŋgɯ-a}  	\ipa{ri}  	\ipa{kɤ-nɯ-rŋgɯ}  	\ipa{mɯ-pɯ-ŋgrɯ}  \\
 \textsc{transloc-aor-auto}-lie.down-\textsc{1sg} but	\textsc{inf-auto}-lie.down 	\textsc{neg-pst.ipfv}-succeed \\
-\glt  (intended meaning: sentence (\ref{ex:mvc.jpg2}) 
+\glt  (intended meaning: sentence (\ref{ex:mvc.jpg2}))
 \end{exe}  
 
 This finding, tested on the basis of elicited examples, is consistent with natural data from narratives and conversations (see \citealt{jacques13harmonization} for a detailed account of both constructions).
@@ -112,7 +114,7 @@ divination \textsc{transloc-imp-caus}-look[III] \textsc{lnk} \textsc{transloc-im
 \section{AM in Classical Manchu} \label{sec:manchu}
 %UG=  \citealt{nikolaeva01udihe}
 
-Associated motion in Manchu is expressed by two suffixes: \ipa{-nji-} (cislocative or venitive) and \ipa{-na-/-ne-/-no} (translocative or andative). These suffixes are generally considered to be grammaticalized from the corresponding motion verb constructions \ipa{-me gene-} and \ipa{-me ji-} with the verb of the purposive complement marked with the imperfective converb suffix \ipa{-me} (a more detailed account of the origin of these suffixes is provided in section \ref{sec:grammaticalization}). Examples (\ref{ex:go.to}) and (\ref{ex:come.to}) illustrate both associate motion and their corresponding motion verb construction.
+Associated motion in Manchu is expressed by two suffixes: \ipa{-nji-} (cislocative or venitive) and \ipa{-na-/-ne-/-no} (translocative or andative). These suffixes are generally considered to be grammaticalized from the corresponding motion verb constructions \ipa{X-me ji-} `come to X' and \ipa{X-me gene-}  `go to X' with the verb of the purposive complement marked with the imperfective converb suffix \ipa{-me} (a more detailed account of the origin of these suffixes is provided in section \ref{sec:grammaticalization}). Examples (\ref{ex:go.to}) and (\ref{ex:come.to}) illustrate both associate motion and their corresponding motion verb construction.
 
 \begin{exe}
 \ex \label{ex:go.to}
@@ -145,7 +147,9 @@ The use of \ipa{-ji-} instead of \ipa{-nji-} by some of the earlier grammarians 
 
 Curiously enough, \citet{orlov1873manchu} described \ipa{-na-} and \ipa{-nji-} without making any mention to the corresponding analytic constructions with \ipa{-V-me gene-} and \ipa{-V-me ji-}, and (2) expanding on the range of their usage to include the expression, not only of actions of the type 'going to V' or 'coming to V', but also of the inchoative 'to begin V-ing' and the completive 'having (almost) V-ed'. Zaxarov does not seem to be aware of the (2), perhaps because all the time he had in mind the etymological background of these suffixes (the verbs of motion  \ipa{gene-} and \ipa{-ji-}).\footnote{It is worth noting that Orlov wrote his grammar without knowing that Zaxarov was working on the same topic. Orlov profited from bilingual Mongolian-Manchu documents, mostly translations from Manchu, available to him in the Orthodox Seminar at Irkutsk (\citealt[V]{orlov1873manchu}). Incidentally, the specific nature of his source material, as well as his proficiency in Mongolian, rather than in Manchu, would partially explain why there is no trace of the missive suffix \ipa{-nggi} (from \ipa{unggi-} ‘to send, delegate’, see discussion in section \ref{sec:nggi}), which has no parallels in Mongolian, in Orlov’s grammar.}
 
-Textual analysis\footnote{Our corpus includes three narrative texts, two of them from the 17th century or earlier (\textit{Manju-i yargiyan kooli}, \citealt{shunjuu92yargiyan} and \textit{Beye-i cooha bade yabuha babe ejehe bithe}, \citealt{cosmo06dzengseo}), the other text is of oral origin and later date, though it is believed that it continues a long tradition (\ipa{Nišan samani bithe}, \citealt{nowak77nisan} and \citealt{jaxontov93nisan}). We also include one text from the beginning of the 18th century (\ipa{Lakcaha jecen de takûraha babe ejehe bithe}, \citealt{shunjuu64tulishen}) and another from the end of the 18th century  (\ipa{Emu tanggû orin sakda-i gisun sarkiyan}, \citealt{stary83sakda}). These texts are not translations, but original native Manchu literary compositions. Modern editions allow us to confront the \textit{communis opinio} regarding the translation of associated motion formations with the idea suggested in the present contribution. For \citet{shunjuu92yargiyan} we provide page of the Manchu text in brackets and lines, for the remaining texts “page with Manchu text [Manchu manuscript page] / English, Japanese or Russian translation”. For \citet{stary83sakda}, page with Manchu text and in brackets Manchu manuscript page.} shows that, generally speaking, motion verb constructions occur less frequently than associated motion formations. For instance, in \citet{cosmo06dzengseo} motion verb constructions appear 20 times (\ipa{-me gene-} 5x, \ipa{-me ji-} 15x), whereas associated motion suffixes appear 56 times (\ipa{-na-/-ne-/-no} 27x, \ipa{-nji-} 29x), a proportion comparable to what has been observed in Japhug narratives (\citealt[209]{jacques13harmonization}).\footnote{In other texts, such as \citealt{jaxontov93nisan} however, we find a almost equal number occurrence of the two constructions:  motion verb constructions appear 52 times (\ipa{-me gene-} 33x, \ipa{-me ji-} 29x) and associated motion suffixes 50 times (\ipa{-na-/-ne-/-no} 26x, \ipa{-nji-} 24x).}
+Textual analysis\footnote{Our corpus includes a total of six narrative texts. Two of them come from the 17th century or earlier (the first volume of the \textit{Tongki fuka sindaha hergen i dangse}, or The Old Manchu Chronicles, \citet{kanda55tongki}, and the \textit{Beye-i cooha bade yabuha babe ejehe bithe}, \citealt{cosmo06dzengseo}). Another text  (\ipa{Nišan samani bithe}, \citealt{nowak77nisan} and \citealt{jaxontov93nisan}) is of oral origin and later date, though it is believed that it continues a long tradition. We analysed of only the first volume of The Old Manchu Chronicles because is the most extensive one. The assumption is made that the remaining six volumes in Kanda’s Japanese edition reflect the same state of affairs. We also include one text from the beginning of the 18th century (\ipa{Lakcaha jecen de takûraha babe ejehe bithe}, \citealt{shunjuu64tulishen}) and two texts from the end of the 18th century  (\textit{Manju-i yargiyan kooli}, \citealt{shunjuu92yargiyan} and \ipa{Emu tanggû orin sakda-i gisun sarkiyan}, \citealt{stary83sakda}). Although \textit{Manju-i yargiyan kooli }is said to have been composed sometime in the 17th century, all copies available to us derive from late 18th century, and this dating is supported by the linguistic features of the text (see the discussion in section \ref{sec:diachrony}).
+
+These texts are not translations, but original native Manchu literary compositions. Modern editions allow us to confront the \textit{communis opinio} regarding the translation of associated motion formations with the idea suggested in the present contribution. For \citet{shunjuu92yargiyan} we provide page of the Manchu text in brackets and lines, for the remaining texts “page with Manchu text [Manchu manuscript page] / English, Japanese or Russian translation”. For \citet{stary83sakda}, page with Manchu text and in brackets Manchu manuscript page.} shows that, generally speaking, motion verb constructions occur less frequently than associated motion formations. For instance, in \citet{cosmo06dzengseo} motion verb constructions appear 20 times (\ipa{-me gene-} 5x, \ipa{-me ji-} 15x), whereas associated motion suffixes appear 56 times (\ipa{-na-/-ne-/-no} 27x, \ipa{-nji-} 29x), a proportion comparable to what has been observed in Japhug narratives (\citealt[209]{jacques13harmonization}).\footnote{In other texts, such as \citealt{jaxontov93nisan} however, we find a almost equal number occurrence of the two constructions:  motion verb constructions appear 52 times (\ipa{-me gene-} 33x, \ipa{-me ji-} 29x) and associated motion suffixes 50 times (\ipa{-na-/-ne-/-no} 26x, \ipa{-nji-} 24x).}
 
 \subsection{Difference between AM and MCV} \label{sec:mvc.manchu}
 As we saw in section \ref{sec:japhug.am.mvc}, an easily detectable difference between AM and MVC is observed in languages such as Japhug. In past perfective forms of the MVC ‘X went to do’, the motional event (‘go’) is understood as completed, but the completion of the main event (‘do’) is left unspecified. The corresponding form with AM markers however, implies that both motional and main events are completed (‘X went and did’). 
@@ -162,7 +166,7 @@ say-\textsc{pst} after in.an.instant one big eagle descend-\textsc{cisloc}-\text
 \glt `After having said (this), one big eagle descended, seized in his claws the husband of Nishan shaman and \textbf{threw} (him): “You will not be able to reincarnate in a human body for the next good 10000 years!”. (\citealt[85,20b/119]{jaxontov93nisan})
 \end{exe}
 
-In examples with associated motion such such as (\ref{ex:necinjihe}), and (\ref{ex:tuwanafi}), the context makes it clear that both motion event and main action have been completed, even if the translation does not make it explicit.
+In examples with associated motion such as (\ref{ex:necinjihe}), and (\ref{ex:tuwanafi}), the context makes it clear that both motion event and main action have been completed, even if the translation does not make it explicit.
 \begin{exe}
 \ex \label{ex:necinjihe}
 \gll
@@ -170,6 +174,7 @@ In examples with associated motion such such as (\ref{ex:necinjihe}), and (\ref{
 you.\textsc{pl} distant-\textsc{abl} our border \textsc{loc} raid-\textsc{cisloc-pst} \\
 \glt ‘You (came and) attacked us from far away.' (\citealt[503;870]{stary83sakda})
 \end{exe}
+
 \begin{exe}
 \ex \label{ex:tuwanafi}
 \gll
@@ -178,6 +183,14 @@ twenty two \textsc{dat} Qi county \textsc{acc} pass-\textsc{ipfv.conv} { } eight
 \glt `On the twenty-second we passed Qi county, covering 85 li, then went to see the tomb of Chengxiang Bigan of the kingdom of Zhou, knelt in front of the earthen statue of the temple, and set up our camp.' (\citealt[83/103]{cosmo06dzengseo})
 \end{exe}
 
+Negation on a verb with associated motion as in (\ref{ex:alanjihakv}) necessarily has scope over the main action.
+
+\begin{exe}
+\ex \label{ex:alanjihakv}
+\gll \ipa{nikan-i} 	\ipa{amba} 	\ipa{dain} 	\ipa{jidere-be,} 	\ipa{nenehe} 	\ipa{inenggi} 	\ipa{gûwa} 	\ipa{karun-i} 	\ipa{niyalma} 	\ipa{sabu-ci,} 	\ipa{tombasi} 	\ipa{gebungge} 	\ipa{niyalma-i} 	\ipa{karun} 	\ipa{sabu-hakûbi,} 	\ipa{jai} 	\ipa{inenggi} 	\ipa{nikan-i} 	\ipa{dain-be} 	\ipa{sabu-fi,} 	\ipa{muse-i} 	\ipa{cooha-de} 	\ipa{aca-me} 	\ipa{ala-nji-hakû,} 	\ipa{nikan-i} 	\ipa{cooha-i} 	\ipa{amala} 	\ipa{ili-fi} 	\ipa{bi-he,} \\
+Chinese-\textsc{gen} large troop come:\textsc{ipfv.part}-\textsc{acc} previous day another border.guard-\textsc{gen} man see-\textsc{cond} Tombasi named man-\textsc{gen} border.guard see-\textsc{pst.neg} following day Chinese-\textsc{gen} troop-\textsc{acc} see-\textsc{pfv.conv} \textsc{1pi-gen} army-\textsc{dat} meet-\textsc{ipfv.conv} report-\textsc{cisloc-pst.neg} Chinese-\textsc{gen} army-\textsc{gen} behind stand-\textsc{pfv.conv} be-\textsc{pst} \\
+\glt ‘[But] the incoming big Chinese army which the previous day another border guard had seen, the border guard called Tombasi did not see. The next day he noticed the Chinese regiment, [but] he did not come to report that they have met our army. They were staying put behind the Chinese army.’ (\citealt[141, lines 5-8]{kanda55tongki})
+\end{exe}
 By contrast, the MVC in past form as in (\ref{ex:aitubume}) or in the perfective converb as in (\ref{ex:efuleme}) is used when only the motion event has been completed (in the case of \ref{ex:efuleme}, it is obvious from the context in this example that the soldiers were not successful).
 
 \begin{exe}
@@ -216,7 +229,7 @@ place great evil { } attack-\textsc{cond} \textsc{aux-neg} become-\textsc{pfv.co
 \glt `That place was a really wicked one, and could not be attacked. Therefore [the general] withdrew the army. Departmental Director Walda and others, who \textbf{had come from the capital to build} relay stations, arrived with an imperial dispatch, in which the emperor inquired about the well-being of officers and soldiers.' (\citealt[94/62]{cosmo06dzengseo})
 \end{exe}
 
-Table \ref{tab:counts.dzengsheo} presents text counts of AM and MVC in perfective form (with either the past \ipa{-ha/-he/-ho} or the perfective converb \ipa{-fi}) in \citet{cosmo06dzengseo}, indicating whether only the motion event is completed, or whether both motion event and action of the main verb are completed (the data is provided in the supplementary files). This table shows that the semantic contrast observed between (\ref{ex:ilibunjiha}) and (\ref{ex:ilibume}) is not anecdotal: MVC, rather than AM,  is consistently used in perfective forms when only the motion event event is completed, while AM is more commonly used when both events are completed.
+Table \ref{tab:counts.dzengsheo} presents text counts of AM and MVC in perfective form (with either the past \ipa{-ha/-he/-ho} or the perfective converb \ipa{-fi}) in \citet{cosmo06dzengseo}, indicating whether only the motion event is completed, or whether both motion event and action of the main verb are completed (the data is provided in the supplementary files). This table shows that the semantic contrast observed between (\ref{ex:ilibunjiha}) and (\ref{ex:ilibume}) is not anecdotal: MVC, rather than AM,  is consistently used in perfective forms when only the motion event is completed, while AM is more commonly used when both events are completed.
 
 
 \begin{table}[h]
@@ -324,7 +337,7 @@ say-\textsc{pst} after Bahaljin horse { } ride-\textsc{pfv.conv} 10 man acc take
 
 In addition, we find some rare examples where  \ipa{-na/-ne/-no} and \ipa{-nji} are used in contexts where no motion event took place, and where the cislocative/ translocative orientation is more abstract. 
 
-For instance, in (\ref{ex:boolanjiha}), context implies that the Department Magistrate wrote reports (and had them sent), not that he came to write reports or even came with the reports that he himself wrote. The cislocative \ipa{-nji} is rather used here to indicate transmission of information towards the deixis center, ie the group to which the author of the text belongs (for other examples of the use of cislocative markers to mark first person recipients,  see \citealt{jacques14inverse}).
+For instance, in (\ref{ex:boolanjiha}), context implies that the Department Magistrate wrote reports (and had them sent), not that he came to write reports or even came with the reports that he himself wrote. The cislocative \ipa{-nji} is rather used here to indicate transmission of information towards the deixis center, i.e. the group to which the author of the text belongs (for other examples of the use of cislocative markers to mark first person recipients,  see \citealt{jacques14inverse}).
 
 \begin{exe}
 \ex \label{ex:boolanjiha}
@@ -431,7 +444,7 @@ fifty third year four month-\textsc{gen} new five \textsc{loc} Turgût nation \t
 they waited on us (lit. `he sent them to meet us halfway’) in Saratov, [a city] of the Russian nation.’ (\citealt[175;88b-89a]{shunjuu64tulishen})
 \end{exe}
 
-On the other hand, when the causative is closer to the verb stem, causation only applies to the action of the verb stem, as in the verb \ipa{ili-bu-nji-} `come to erect (=cause to cause to stand)' cited in example (\ref{ex:ilibunjiha}) above.
+On the other hand, when the causative is closer to the verb stem, causation only applies to the action of the verb stem, as in the verb \ipa{ili-bu-nji-} `come to erect (=come to cause to stand)' cited in example (\ref{ex:ilibunjiha}) above.
 
 \subsection{Missive} \label{sec:nggi}
 Unparalleled in other Tungusic languages (and, for that matter, in Mongolian), the analytic construction \ipa{V-me unggi-} might have been  created in recent times mirroring the well known structures \ipa{gene-} and \ipa{ji-}. The resulting synthetic suffix \ipa{-nggi} has followed the same historical path as the other two constructions (\citealt[163]{zaxarov10manchu}). The construction  \ipa{V-me unggi-} seems to be reserved for official, bureaucratic, administrative contexts, where  \ipa{unggi-} ‘to send’ rather means ‘to delegate, send in a mission, etc.’. It comes as no surprise to see the form  \ipa{ala-nggi-} explained as  \ipa{niyalma takûra-fi ala-na-ra}, lit. ‘(I) delegate a man to go to report’ in a Manchu glossary (\citealt[157]{enxbat16leksika}).  In any case, the \ipa{-nggi} suffix is really rare. Neither our corpus, nor the online Manc.hu corpus\footnote{ \url{https://manc.hu/en/tools/corpus}, accessed 30-01-2017.} contain a single instance.
@@ -459,14 +472,48 @@ p.n. hear-\textsc{pfv.conv} man send-\textsc{pfv.conv} p.n \textsc{dat} tell-\te
 
 Given the limited evidence available, it is too early to speculate about the potential difference of the suffix \ipa{-nggi} with the combination of \ipa{-na-/-ne-/-no-} and the causative \ipa{-bu-} in forms such as \ipa{ala-na-bu-} which also means `send X to tell'.
  
+\subsection{Diachronic change in the use of AM in Manchu} \label{sec:diachrony}
+There is a noticeable difference in the use of AM vs MVC between the 17th century and the 18th century. As shown in Table \ref{tab:evolution}, while the number of attestations of MVC and MVC is nearly equivalent in 17th century texts, texts firmly dated from the 18th century have two times as many examples of AM than MVC. 
 
+Note that the \textit{Manju-i yargiyan kooli}, a text of disputed date, sides in this regard with 17th century texts. Manuscript copies that have come down to us date at the earliest from 1779-1781, and some specialists argue that this is the actual date of redaction. There is a second school of thought, however, according to which the original text was composed in 1635. Seen from the perspective of the AM vs. MVC issue, our interpretation of the data would seem to favour the second scenario, that is, original composition of the text sometime in the 17th century.
  
+ \begin{landscape}
+ \begin{table}[h]
+\caption{Number of attestations of AM and MVC in perfective form in
+\citet{kanda55tongki}, \citet{shunjuu64tulishen}, \citet{shunjuu92yargiyan}, \citet{stary83sakda}, \citet{nowak77nisan} = A, \citet{jaxontov93nisan} = B} \centering \label{tab:evolution}
+ \begin{tabular}{lllllllllllll}
+ \toprule
+Dating &	 &	 &	\ipa{-me gene-} &	\ipa{-me ji-} &	Total MVC&	\ipa{-na/ne/no-} &	\ipa{-nji-} &	Total AM&	\\	
+\midrule
+early 17th (?) &\footnotesize 	Nišan samani  \plus{bithe}&	A &	24 &	11 &	35&	21 \ofwh &	16 \ofwh  &	37&	\\
+%&bithe &&&&&\textit{isinafi} 14&\textit{isinjifi} 12&& \\
+ &	  &	B &	17 &	20 &	37&	23 \ofwh  &	18 \ofwh  &	41&	\\	
+% & &&&&&\textit{isinafi} 20&\textit{wasinjifi} 8&& \\
+early 17th &	\multicolumn{2}{l}{\footnotesize Tongki fuka sindaha \plus{hergen i dangse}}	 &	59 &	71 \ofwh   &130	&	64 \ofwh  &	68 \ofwh  &	132&	\\	
+% & \multicolumn{2}{l}{hergen i dangse}&&\textit{ukame jihe} 35&&\textit{isinafi} 15&\textit{isinjiha} 35&& \\
+%  & \multicolumn{2}{l}{}&&&&\textit{isinaha} 11&\textit{alanjiha} 15&& \\
+%  &    \multicolumn{2}{l}{}&&&&\textit{ganafi} 7& \textit{isinjifi} 8&& \\
+\midrule
+early 18th &	 \multicolumn{2}{l}{\footnotesize Lakcaha jecen de \plus{takûraha babe ejehe bithe}}  &	 	29 \ofwh &	36 \ofwh  &	65&	75 \ofwh &	33 \ofwh &	108&	\\	
+%  &    \multicolumn{2}{l}{takûraha babe}&\textit{eyeme jifi} 27&\textit{eyeme genefi} 9&&\textit{isinaha} 55& \textit{isinjiha} 13&& \\
+%    &    \multicolumn{2}{l}{ejehe bithe}&&&&\textit{isinafi} 15& \textit{isinjifi} 9&& \\
+late 18th &	\multicolumn{2}{l}{\footnotesize Emu tanggû orin sakda-i \plus{gisun sarkiyan}}	 &	9 &	7 &16	&	61 \ofwh &	33 \ofwh &	94&	\\	
+%  & \multicolumn{2}{l}{gisun sarkiyan}&&&&\textit{isinaha} 13& \textit{isinjiha} 7&& \\
+%    & \multicolumn{2}{l}{}&&&&\textit{isinafi} 15&\textit{isinjifi} 9 && \\
+\midrule
+late 18th (?) &	\multicolumn{2}{l}{\footnotesize  Manju-i yargiyan kooli} 	 &	91 &	127 &218	&	101 \ofwh &	99 \ofwh &200	&	\\	
+%  & \multicolumn{2}{l}{}&&&&\textit{isinaha} 19& \textit{isinjiha} 35&& \\
+%    & \multicolumn{2}{l}{}&&&&\textit{isinafi} 38&\textit{isinjifi} 26 && \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}  
 
 \section{The grammaticalization of AM in Manchu and Tungusic} \label{sec:grammaticalization}
 %serial verb construction vs purposive complement
 %inflectional vs derivational morphology
 %which is the most grammaticalized?
-Since AM is mainly attested in languages families whose history is poorly attested, the study of the diachronic origins of AM is still a domain in infancy.
+Since AM is mainly attested in languages families whose history is poorly attested, the study of the diachronic origins of AM is still a domain in its infancy.
 
 A crosslinguistically common source of AM markers are motion verbs such as `come' and `go' (\citealt[70;155]{heine-kuteva02}). \citet{jacques14inverse} also suggest that AM is an intermediate stage in the grammaticalization pathway from a motion verb `come' to inverse marker, as attested in several languages:
 
@@ -477,13 +524,13 @@ A crosslinguistically common source of AM markers are motion verbs such as `come
 
 \citet{konnerth15cisloc} argues that a grammaticalization pathway occurred in the opposite direction in Karbi, namely that the second person pronoun became an AM marker. This hypothesis, which contradicts the unidirectionality of the pathway in (\ref{ex:cisloc}), needs to be confirmed by further study on the comparative phonology and morphology of the Karbi languages and its neighbors. If confirmed, it would provide a possible origin of AM markers distinct from motion verbs.
 
-The grammaticalization from motion verb to AM marker results from the coalescence of the motion  verb and the action verb in a construction where both occur. In some languages such as Japhug, it can be shown that the ancestor of the AM construction was not a MVC (in which the action verb is in a purposive complement), but rather a serial verb construction in which both verbs were in finite form and shared the same TAM and person markers (see \citealt{jacques13harmonization}). In other languages, including Manchu (and some cited by \citealt[70;155]{heine-kuteva02}), AM derives from the corresponding MVC.\footnote{
-The earliest, most unambiguous remark regarding the etymological connection of the verbs \ipa{gene-}, \ipa{ji-}, and \ipa{unggi-} with their suffixal counterparts \ipa{-na-}, \ipa{-nji-} and \ipa{-nggi}, respectively, is due to \citet[209-211]{kotwicz62altaj}. Put differently, whereas Zaxarov correctly identified the etymological identity of these elements, it was Kotwicz the one that highlighted that the latter are the natural evolution of the former.}
+The grammaticalization from motion verb to AM marker results from the coalescence of the motion  verb and the action verb in a construction where both occur. In some languages such as Japhug, it can be shown that the ancestor of the AM construction was not a MVC (in which the action verb is in a purposive complement), but rather a serial verb construction in which both verbs were in finite form and shared the same TAM (tense-aspect-modality) category and person markers (see \citealt{jacques13harmonization}). In other languages, including Manchu (and some cited by \citealt[70;155]{heine-kuteva02}), AM derives from the corresponding MVC.\footnote{
+The earliest, most unambiguous remark regarding the etymological connection of the verbs \ipa{gene-}, \ipa{ji-}, and \ipa{unggi-} with their suffixal counterparts \ipa{-na-}, \ipa{-nji-} and \ipa{-nggi}, respectively, is due to \citet[209-211]{kotwicz62altaj}. Put differently, whereas Zaxarov correctly identified the etymological identity of these elements, Kotwicz was the one that highlighted that the latter are the natural evolution of the former.}
 
 In Manchu, the grammaticalization of \ipa{-nji} and \ipa{-na/-ne/-no} must be discussed separately.
 
 \subsection{The cislocative \ipa{-nji} }
-The cislocative \ipa{-nji} suffix is a Manchu innovation, found in Classical Manchu and modern varieties, including Sibe, but absent from other Tungusic languages and even Jurchen, though in the latter this may be due to the scarcity of documents left in that language.
+The cislocative \ipa{-nji} suffix is a Manchu innovation, found in Classical Manchu and modern varieties, including Sibe, but absent from other Tungusic languages and even Jurchen, though in the latter case this may be due to the scarcity of documents left in that language.
 
 All references works on Manchu agree that \ipa{X-nji} results from the coalescence of the imperfective converb \ipa{X-me} with the verb \ipa{ji-} `come'. Apocope of the vowel \ipa{-e-} widely attested in Manchu in (\citealt[18-19]{hattori56manchu}, \citet[43-44]{gorelova02manchu}, and assimilation of the *\ipa{m} to the following \ipa{j} is found for instance in \ipa{ganji} `all, completely' (compare Oroch \ipa{gaamji} `all').\footnote{The internal cluster \ipa{-mj-} does occur in Manchu, but results from loss of unstressed vowels that occurred after the sound change *\ipa{-mj-} $\rightarrow$ \ipa{-nj-}. }
 
@@ -530,7 +577,7 @@ Since \citet[209-211]{kotwicz62altaj}, all tungusologists have assumed that the 
 
 While this idea is not impossible, it is not unproblematic since clusters such as \ipa{*-ŋn-} are preserved in Northern Tungusic (\citealt[241-4]{cincius49fonetika}). 
 
-Another possibility, though arguably equally speculative, is to analyze the verb \ipa{*ŋənə-} `go' as a frozen translocative form containing the suffix \ipa{*-nə} attached to an (otherwise unattested) root \ipa{*ŋə-} `to move', an idea which may better account for the fact that \ipa{*-nə} is not specifically translocative, as whould be expected if this suffix were indeed grammaticalized from the verb `to go'. 
+Another possibility, though arguably equally speculative, is to analyze the verb \ipa{*ŋənə-} `go' as a frozen translocative form containing the suffix \ipa{*-nə} attached to an (otherwise unattested) root \ipa{*ŋə-} `to move', an idea which may better account for the fact that \ipa{*-nə} is not specifically translocative, as would be expected if this suffix were indeed grammaticalized from the verb `to go'. 
 
 The origin of Nanay \ipa{-nda-} (see section \ref{sec:mvc.manchu}) and other variants, like for example Uilta or Gorin Nanay \ipa{-ŋda-}, is obscure. The traditional account that directly derives it from \ipa{*ŋǝnǝ-} ‘to go’ (echoed most recently in \citealt[93-94]{stojnova16nda}, with bibliography) can be rejected on phonological grounds: the first nasal segment, be that either /\ipa{n}/ or /\ipa{ŋ}/, can most certainly come from \ipa{*ŋǝnǝ-}, but \ipa{-da-} remains to be explained. An alternative scenario accounting for the latter involves the purposive converb \ipa{*-daa-} ‘in order to V’, preserved in, but not limited to, the Second (or Distant Future) Imperative of Northern Tungusic languages (for the history of this ending and the second imperative, see \citealt[135-136,§141]{benzing56tungusischen} and \citealt[54-70]{xasanova86povelitelnoe}). We cannot establish on certain terms whether Nanay \ipa{-nda-} and related forms are the result of simplifying the sequence \ipa{*-nǝ-daa-} (associated motion suffix + purposive converb) or \ipa{*ŋǝnǝ-daa-} (the verb `to go' + purposive converb).
 
@@ -546,7 +593,7 @@ Third, in Manchu AM suffixes are derivational morphemes, and   verbs derived wit
 Fourth, in Japhug the two prefixes have been grammaticalized recently at the same time (in proto-Gyalrong) from a serial verb construction; in Manchu, the cislocative was grammaticalized from a motion verb construction in recent times (it is not found in any other Tungusic language), while the translocative goes back to proto-Tungusic and its ultimate origin cannot be determined.
 
 
-This study thus contributes not only to Manchu synchronic grammar and Tungusic historical morphology, but also to the typology of AM systems. It shows in particular that much work is needed even in the study of `simple' AM systems comprising only two members. Despite their apparent similarities, these systems are widely different in the details, and further research on this topic would require testing the same parameters on other languages. It remains to be determine to what extent the type represented by Manchu, or that represented by Japhug, is the commonest cross-linguistically, and how the synchronic properties of these systems are relatable to their lexical source (serial verb construction, purposive motion verb construction or other).
+This study thus contributes not only to Manchu synchronic grammar and Tungusic historical morphology, but also to the typology of AM systems. It shows in particular that much work is needed even in the study of `simple' AM systems comprising only two members. Despite their apparent similarities, these systems are widely different in the details, and further research on this topic would require testing the same parameters on other languages. It remains to be determined to what extent the type represented by Manchu, or that represented by Japhug, is the commonest cross-linguistically, and how the synchronic properties of these systems are relatable to their lexical source (serial verb construction, purposive motion verb construction or other).
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}

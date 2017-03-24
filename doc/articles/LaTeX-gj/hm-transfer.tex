@@ -1,0 +1,100 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+\newcommand{\mien}[5]{\ipa{#1}^{#2} `#3' (\zh{#4}, p.#5)} 
+\newcommand{\phm}[3]{\ipa{#1} `#2' (#3)} 
+\begin{document}
+
+\title{Transfer of nasality from onset to rhyme in Hmongic}
+\author{Guillaume Jacques}
+\maketitle
+
+\section*{Introduction} 
+A gap is observable in the reconstructed proto-Hmong phonological system (\citealt{wang94hmong}, \citealt{wang95protomy}, \citealt{ratliff10protohm}): reconstructed etyma with aspirated nasal initial and non-nasal vowels are extremely few, and the contrast between oral and nasal vowels, clearly present in Mien, is almost completely neutralized. 
+
+While some authors have hypothesized in some cases secondary prenasalization in Hmongic (\citealt[57]{ratliff10protohm}), no work until now has attempted to account for this gap in terms of a sound law. 
+
+%\citet{maozw92mien}
+ 
+\citet{michaud-jacques12nasalite}
+
+\section{Sound law} 
+\ipa{*hmV} $\rightarrow$ \ipa{*hmṼ} , a proto-Hmongic sound law (does not apply if final stop)
+
+
+\citealt[57]{ratliff10protohm}
+
+proto-Hmong \phm{*hnuŋ^B}{forget}{2.8/27} = proto-Mien \phm{*hɲou^B}{forget}{4.8/13}
+
+proto-Hmong \phm{*hnɛŋ^A}{sun/day}{2.8/22} = proto-Mien \phm{*hnʷɔi^A}{sun/day}{2.8/11}, Situ \ipa{tə-sɲî} `day'
+
+proto-Hmong  \phm{*hnæn^B}{crossbow}{2.8/19} = proto-Mien \phm{*hnək}{crossbow}{2.8/7} 
+Common Thai \ipa{*ʰna^B}, \zh{弩} \ipa{nuX} < \ipa{*nˁaʔ}
+ 
+From KD:
+\phm{*hmaŋ^C}{wild dog}{1.8/24}
+\citet{ferlus96kamsui}
+Lakkia \ipa{kʰwõ¹} < \ipa{*kʰma^A}, Common Thai \ipa{*ʰma^A}
+
+  
+
+\section{Exceptions}
+\subsection{Stop codas}
+\phm{*hnɔp}{cough}{2.8/29} - nasality in 3, 4, not in 5
+
+\subsection{Alternative reconstruction}
+\phm{*hmeiH}{taste}{1.8/29}, p40-1, only 1 \ipa{mhu^5}, Mien 10 \ipa{hmi^5}
+
+Compatible with a different analysis, \ipa{mhu^5} from proto-Hmongic \ipa{*hmʷəŋH} (29h, same rhyme as \phm{*hɲʷəŋH}{year}{2.8/29}, Mien \ipa{hɲaŋ^5}, from \ipa{*-iŋ})
+\ipa{*-iŋ} > \ipa{*-jaŋ} (cf Amdo Tibetan, \citet{gong16amdo})
+
+Proto-HM \ipa{-iŋ} otherwise only in \phm{*ljiŋ}{field}{2.42.1/18}, borrowed from Chinese \zh{田} \ipa{den} < \ipa{*lˁiŋ} `field'
+
+\phm{*ŋiuŋ}{water buffalo/cow}{5.9/23}, \citet(21){downer73loanwords}
+\citet[88]{ratliff10protohm}
+\section{Dissimilation} 
+\citet[172]{ratliff10protohm}
+
+
+\section{On the origins of aspirated nasals in Hmong-Mien}
+1.54 \ipa{*S-mruɔŋH}, to be reconstructed \ipa{*rmɔŋ}, > \ipa{hm-} in Mien, metathesis in Hmong.
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
