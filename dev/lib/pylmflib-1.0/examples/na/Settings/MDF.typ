@@ -614,6 +614,11 @@
 \CharStyle
 \-mkr
 
+\+mkr pdc
+\nam Paradigm form comment
+\lng regional
+\-mkr
+
 \+mkr pde
 \nam Paradigm form gloss (E)
 \desc Used for glossing the vernacular paradigm form in English.
