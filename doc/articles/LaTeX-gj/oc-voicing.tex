@@ -1,0 +1,120 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}   
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\newcommand{\forme}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+\newcommand{\oc}[3]{\zhc{#1}{#2} `#3'} 
+\newcommand{\fanqie}[1]{(\zh{（#1切）})}
+\newcommand{\mc}[1]{\zh{（#1）}}
+\begin{document}
+
+\title{The Sino-Tibetan origins of the Middle Chinese voicing alternation}
+\author{Guillaume Jacques}
+\maketitle
+
+ \section*{Introduction}
+ \section{Passive and anticausative}
+ \citet[86]{zhou62goucibian}
+\begin{table}[H]
+\begin{tabular}{llllllllll}
+\toprule
+Unvoiced form &Meaning & Voiced form & Meaning\\
+\midrule
+\zhc{别}{pjet} \mc{幫}	&separate & \zhc{别}{bjet} \mc{並} & take leave \\
+\zhc{敗}{pæjH} \mc{幫}	&defeat & \zhc{敗}{bæjH} \mc{並} & be defeated \\
+\midrule
+\zhc{斷}{twanH} \mc{端}	&cut & \zhc{斷}{dwanH} \mc{並} & be cut, stop \\
+\midrule
+\zhc{折}{tɕet} \mc{章}	&break (tr) & \zhc{折}{dʑet} \mc{常} &break (it), be broken, die young \\
+\midrule
+\zhc{見}{kenH} \mc{見}	&see (tr) & \zhc{現}{ɣenH} \mc{匣} & appear \\
+\zhc{繫}{kejH} \mc{見}	&tie & \zhc{繫}{ɣejH} \mc{匣} & be tied \\
+\zhc{解}{kɛɨX} \mc{見}	&untie & \zhc{解}{ɣɛɨX} \mc{匣} & be loosened \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Hmong-Mien} 
+\citet{downer73loanwords, sagart03prenasalized}
+
+\subsection{Sino-Tibetan comparison} 
+Anticausative prenasalization:
+
+\citet{jacques15spontaneous, jacques15causative}
+
+Passive:
+
+ \citet{jacques07passif, jacques12demotion}
+ 
+ Not s-causative:
+
+\citet{mei12caus}
+\citet{sagart12sprefix}
+\citet{jacques15causative}
+
+ \section{Causative}
+ 
+ 
+ \citet[282-4]{wangyt14jingdian}
+ 
+ 
+ \begin{exe}
+\ex 
+\glt \zh{止子路宿，殺雞為黍而食之，見其二子焉}
+\glll \zh{止} \zh{子路} \zh{宿} \zh{殺} \zh{雞} \zh{為} \zh{黍} \zh{而} \zh{食} \zh{之} \zh{見} \zh{其} \zh{二} \zh{子} \zh{焉} \\
+\ipa{tɕiX} \ipa{tsiX.luH} \ipa{sjuwk} \ipa{ʂɛt} \ipa{kej} \ipa{hjwe} \ipa{ɕoX} \ipa{ɲi} \ipa{siH}  \ipa{tɕi}  \ipa{ɣenH}  \ipa{gi}  \ipa{ɲijH}  \ipa{tsiX}   \ipa{hjen} \\
+stop Zilu stay.overnight kill chicken make rice \textsc{caus}:eat \textsc{3sg} ?\textsc{caus}:see his two son to.him \\
+\glt (The old man) invited Zilu to stay overnight, killed a chicken and made dinner to feed him, and had his two sons come out (to greet Zilu).
+ \end{exe}
+ 
+\textsc{causative} $\Rightarrow$  \textsc{passive} attested in Manchu (\forme{bu-}{give} $\rightarrow$ \forme{-bu-}{causative}  $\rightarrow$ \forme{-bu-}{passive})
+
+but the reverse not attested?
+ 
+  \section{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
