@@ -1,4 +1,4 @@
-\documentclass[oneside,a4paper,11pt]{article} 
+\documentclass[11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
@@ -16,7 +16,7 @@
 \usepackage{tikz}
 \usetikzlibrary{trees}
 \usepackage{gb4e} 
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%\bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
@@ -30,8 +30,10 @@
 
 
 \begin{document} 
- \title{Grammaticalization in Japhug\footnote{Acknowledgements to be added after editorial decision. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI). }}
- %Alec Coupe, Linda Konnerth, Nat Krause, Alexis Michaud, Mark W. Post, Amos Teo.
+ \title{Grammaticalization in Japhug\footnote{I would like to thank Alec Coupe, Linda Konnerth, Nat Krause, Alexis Michaud, Mark W. Post, Amos Teo and an anonymous reviewer for comments of earlier versions of this work. The examples are taken from a corpus that is progressively being made available on the Pangloss archive (\citealt{michailovsky14pangloss}, 
+ \url{http://lacito.vjf.cnrs.fr/pangloss/corpus/list\textunderscore rsc.php?lg=Japhug}).  
+This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI).  }}
+  
  \author{Guillaume Jacques}
  \maketitle  
  \section{Introduction}
@@ -55,7 +57,7 @@ Japhug has two number markers, dual \ipa{ni} and plural \ipa{ra}. These clitics 
 \ex \label{ex:ra1}
 \gll \ipa{ɯ-kʰa} 	\ipa{ra} 	\ipa{nɯ-mɤ-kɤ-sɯz} 	\ipa{nɤ} 	\ipa{ɯʑo} 	\ipa{kɯ} 	\ipa{qɤjɣi} 	\ipa{χsɯm} 	\ipa{lo-βzu} \\
 \textsc{3sg.poss}-house \textsc{pl} \textsc{3pl.poss-neg-inf}-know \textsc{lnk} \textsc{3sg} \textsc{erg} bread three \textsc{ifr}-make \\
-\glt She made three pieces of bread without her relatives knowing. (the raven, 108)
+\glt `She made three pieces of bread without her relatives knowing.' (the raven, 108)
 \end{exe}
 
 \begin{exe}
@@ -63,7 +65,7 @@ Japhug has two number markers, dual \ipa{ni} and plural \ipa{ra}. These clitics 
 \gll 
  \ipa{rɟɤlpu} 	\ipa{nɯ} 	\ipa{kɯ} 	\ipa{kɯki} 	\ipa{tɯrme} 	\ipa{kɯtʂɤɣ} 	\ipa{ra} 	\ipa{nɯ-ɕki}  	\ipa{to-ti} \\
  king \textsc{dem} \textsc{erg} this people six \textsc{pl} \textsc{3pl-dat} \textsc{ifr}-say  \\
- \glt The king told these six men. (Liuhaohan zoubian tianxia, 200)
+ \glt `The king told these six men.' (Liuhaohan zoubian tianxia, 200)
 \end{exe}
 
 In addition, the marker \ipa{ra} can indicate approximative time or location  (see section  \ref{sec:loc}).
@@ -110,7 +112,7 @@ The genitive \ipa{ɣɯ} (borrowed from Amdo Tibetan), in addition to marking the
 \gll
 \ipa{ki} 	\ipa{kɯra} 	\ipa{ɲɯ-kʰam-a} 	\ipa{tɕe} 	\ipa{ki} 	\ipa{nɤki} 	\ipa{nɯ} 	\ipa{aʑɯɣ} 	\ipa{nɯ-kʰɤm.} \\
 this \textsc{dem:pl} \textsc{ipfv}-give[III]-\textsc{1sg} \textsc{lnk} this \textsc{dem} \textsc{dem} \textsc{1sg:gen} \textsc{imp}-give[III] \\
-\glt I will give you this, and you will give me that. (slobdpon, 130)
+\glt `I will give you this, and you will give me that.' (slobdpon, 130)
 \end{exe}
 
 Alternatively, when the predicate is a transitive verb with an overt object, the beneficiary can be marked as a possessive prefix on the object, as 	\ipa{a-tɯ-ci} \textsc{1sg-indef.poss}-water `water for me' in \ref{ex:atWci} (a case of NP-internal  beneficiary, see \citealt[80]{lehmann04partizipation} and \citealt[15]{malchukov10ditransitive}).
@@ -119,7 +121,7 @@ Alternatively, when the predicate is a transitive verb with an overt object, the
 \ex \label{ex:atWci}
 \gll \ipa{χsɤr}  	\ipa{khɯtsa}  	\ipa{ɯ-ŋgɯ}  	\ipa{nɯ}  	\ipa{tɕu}  	\ipa{a-tɯ-ci}  	\ipa{ci}  	\ipa{tɤ-rke}  	\ipa{ma}  	\ipa{wuma}  	\ipa{ɲɯ-ɕpaʁ-a}  \\
 gold bowl \textsc{3sg}-inside \textsc{dem} \textsc{loc} \textsc{1sg-indef.poss}-water \textsc{indef} \textsc{imp}-put.in[III] because really \textsc{sens}-be.thirsty-\textsc{1sg} \\
-\glt Pour some water for me in the golden bowl, I am very thirsty.
+\glt `Pour some water for me in the golden bowl, I am very thirsty.'
 \end{exe}
  
 
@@ -130,14 +132,14 @@ The dative \ipa{ɯ-ɕki}, used to mark the recipient of indirective ditransitive
    \ex   \label{ex:tathu}
  \gll \ipa{tɤ-pɤtso}  	\ipa{ra}  	\ipa{kɯ}  	\ipa{nɯ-sloχpɯn}  	\ipa{ɯ-ɕki}  	\ipa{to-tʰu-nɯ}  \\
 \textsc{indef.poss}-child \textsc{pl} \textsc{erg} \textsc{3pl.poss}-teacher \textsc{3sg-dat} \textsc{ifr}-ask-\textsc{pl} \\
-\glt The children asked their teacher. (Looking at the snow, 11)
+\glt `The children asked their teacher.' (Looking at the snow, 11)
    \end{exe}  
 
 \begin{exe}
 \ex \label{ex:WCki.loc}
 \gll \ipa{ɯ-rte} 	\ipa{nɯ} 	\ipa{ɯ-rna} 	\ipa{ɯ-ɕki} 	\ipa{pɯ-kɯ-ɴqoʁ} 	\ipa{nɯnɯ} 	\ipa{pjɤ-mɟa} 	\ipa{tɕe} 	\ipa{ɯ-ku} 	\ipa{ɯ-taʁ} 	\ipa{to-ta} \\
 \textsc{3sg.poss}-hat \textsc{dem} \textsc{3sg.poss}-ear \textsc{3sg}-\textsc{dat} \textsc{pfv:down-nmlz}:S/A-hang \textsc{dem} \textsc{ifr:down}-take \textsc{lnk} \textsc{3sg.poss}-head \textsc{3sg}-on \textsc{ifr}-put \\
-\glt He took the hard that was hanging on his ear and put it on his head. (140505 liuhaohan zoubian tianxia, 164)
+\glt `He took the hard that was hanging on his ear and put it on his head.' (140505 liuhaohan zoubian tianxia, 164)
 \end{exe}
 
 
@@ -150,7 +152,7 @@ Japhug and other Gyalrong languages have a productive derivation whereby a comit
 \ex \label{ex:kAGWrtWrte}
 \gll \ipa{kɤɣɯ-rtɯ\tld{}rte} 	\ipa{ʑo} 	\ipa{kha} 	\ipa{ɯ-ŋgɯ} 	\ipa{lɤ-tɯ-ɣe} 	\\
 \textsc{comit}-hat \textsc{emph} house \textsc{3sg}-inside \textsc{pfv}-2-come[II] \\
-\glt You came inside the house with your hat. (You were expected to take it off before coming in)
+\glt `You came inside the house with your hat.' (You were expected to take it off before coming in)
 \end{exe}
 
 As shown in \citet{jacques17comitative}, these adverbs originate from the combination of the S/A-participle \ipa{kɯ-} with the denominal derivation prefix \ipa{aɣɯ-}, which derives proprietive stative verbs from nouns, as shown in Table (\ref{tab:aGW}).
@@ -178,7 +180,7 @@ Comitative adverbs are actually homophonous with the S/A-participle of such verb
 \gll   
 \ipa{iɕqha} 	\ipa{tɕʰeme} 	\ipa{nɯ} 	\ipa{kɯ-ɤɣɯrɟɯrɟit} 	\ipa{ci} 	\ipa{pɯ-ŋu}  \\
 the.aforementioned woman \textsc{dem} \textsc{nmlz}:S/A-have.many.children \textsc{indef} \textsc{pst.ipfv}-be \\
-\glt This woman had a lot of children.
+\glt `This woman had a lot of children.'
 \end{exe}
 
 \begin{exe}
@@ -186,7 +188,7 @@ the.aforementioned woman \textsc{dem} \textsc{nmlz}:S/A-have.many.children \text
 \gll   
 \ipa{kɤɣɯ-rɟɯ\tld{}rɟit} 	\ipa{ʑo} 	\ipa{jo-nɯ-ɕe-nɯ} \\
 \textsc{comit}-children \textsc{emph} \textsc{ifr-vert}-go-\textsc{pl} \\
-\glt She/They went back with their children.
+\glt `She/They went back with their children.'
 \end{exe}
 
 Ambiguous sentences like \ref{ex:kAGWrtWrtaR2} actually constitute the pivot constructions which allow reanalysis in contexts where both proprietive (`having X') and a comitative (`with X') interpretations were possible.
@@ -225,7 +227,7 @@ In Japhug, there are four distinct (non mutually exclusive) ways of marking loca
 \ex \label{ex:WrkW.zW}
 \gll \ipa{kha} 	\ipa{ɯ-rkɯ} 	\ipa{zɯ} 	\ipa{nɯnɯ} 	\ipa{qajɯ} 	\ipa{pɯ-nnɯ-ŋu,} 	\ipa{tɯrdoʁ} 	\ipa{kɯ-fse,} 	\ipa{tɤ-rɤku} 	\ipa{pɯ-kɯ-ʁndɤr} 	\ipa{kɯ-fse} 	\ipa{nɯra} 	\ipa{ɣɯ-tu-ndze} 	\ipa{ɲɯ-ŋu} \\
 house \textsc{3sg.poss}-side \textsc{loc} \textsc{dem} worm \textsc{pst.ipfv-auto}-be grain \textsc{nmlz}:S/A-be.like \textsc{indef.poss}-cereals \textsc{pfv-nmlz}:S/A-be.spilled \textsc{nmlz}:S/A-be.like \textsc{cisloc-ipfv}-eat[III] \textsc{sens}-be \\
-\glt (During winter,) it comes near the house to eat worms or grains that have been spilled (on the ground). (23-pGAYaR, 94)
+\glt `(During winter,) it comes near the house to eat worms or grains that have been spilled (on the ground).' (23-pGAYaR, 94)
 \end{exe}
 
 These postpositions are however optional, as shown by the following example from the same story as (\ref{ex:WrkW.zW}).
@@ -235,7 +237,7 @@ These postpositions are however optional, as shown by the following example from
 \gll
 \ipa{kha} 	\ipa{ɯ-rkɯ} 	\ipa{kɤ-ɣi} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{rga} \\
 house \textsc{3sg.poss}-side  \textsc{inf}-come really \textsc{emph} \textsc{like}:fact \\
-\glt It likes to come near the house. (23-pGAYaR, 95)
+\glt `It likes to come near the house.' (23-pGAYaR, 95)
 \end{exe}
 
 Fourth, the plural marker \ipa{ra} can indicate approximate location, as in \ref{ex:khara}. This use of \ipa{ra} is reminiscent of plural markers in Kirghiz and Old Japanese, which combine collective, hypocoristic and approximate locative meanings see \citealt[195]{antonov07ra}).
@@ -245,7 +247,7 @@ Fourth, the plural marker \ipa{ra} can indicate approximate location, as in \ref
 \gll
 \ipa{tɯ-zda} 	\ipa{nɯ} 	\ipa{ma} 	\ipa{kɯmaʁ} 	\ipa{tɯrme} 	\ipa{a-pɯ-me} 	\ipa{tɕe,} 	\ipa{kha} 	\ipa{ra} 	\ipa{aʁɤndɯndɤt} \ipa{ɲɯ-ɤnɯɣro} 	\ipa{ɲɯ-ŋu} 	\ipa{ɲɯ-ti.} \\
 \textsc{indef.poss}-companion \textsc{dem} apart.from other people \textsc{irr-ipfv}-not.exist \textsc{lnk} house \textsc{pl} everywhere \textsc{sens}-play \textsc{sens}-be \textsc{sens}-say \\
-\glt He says that (the young monkey) would play everywhere in the house whenever there are no other people (apart from members of the family). (19 GZW2, 10)
+\glt `He says that (the young monkey) would play everywhere in the house whenever there are no other people (apart from members of the family).' (19 GZW2, 10)
 \end{exe}
 
 
@@ -259,7 +261,7 @@ The delimitative topic marker \ipa{pɯpɯŋunɤ} `as for ...' is transparently d
 \ex \label{ex:pWpWNunA1}
 \gll \ipa{pɯ\tld{}pɯ-ŋu} \ipa{nɤ} \\
 \textsc{cond}\tld{}-\textsc{pst.ipfv}-be if \\
-\glt If it is ...
+\glt `If it is ...
 \end{exe}
 
 However, the grammaticalized status of this marker is obvious when the element marked with \ipa{pɯpɯŋunɤ} `as for ...' is a first or second person pronoun, as in example (\ref{ex:pWpWNunA}).
@@ -268,7 +270,7 @@ However, the grammaticalized status of this marker is obvious when the element m
 \ex \label{ex:pWpWNunA}
 \gll \ipa{nɤʑo}	\ipa{pɯpɯŋunɤ,}	\ipa{ɬɤndʐi}	\ipa{ra}	\ipa{ɣɯ}	\ipa{nɯ-kɯ-βʁa,}	\ipa{nɯ-rɟɤlpu}	\ipa{tɯ-ŋu} \\
 \textsc{2sg} as.for demon \textsc{pl} \textsc{gen} \textsc{3pl.poss}-\textsc{nmlz}:S/A-be.victorious \textsc{3pl.poss}-king 2-be:\textsc{fact} \\
-\glt You, you are the king of the demons. (hist140512 fushang he yaomo, 61)
+\glt `You, you are the king of the demons.' (hist140512 fushang he yaomo, 61)
 \end{exe}
 Here, the form of the topic markers remains \ipa{pɯpɯŋunɤ}, without agreement: if this still were a conjugated verb, the second person singular form shown in (\ref{ex:pWpWtWNunA1}) would have been expected instead.
 
@@ -276,7 +278,7 @@ Here, the form of the topic markers remains \ipa{pɯpɯŋunɤ}, without agreemen
 \ex \label{ex:pWpWtWNunA1}
 \gll \ipa{a-slama} \ipa{pɯ\tld{}pɯ-tɯ-ŋu} \ipa{nɤ} \\
 \textsc{1sg.poss}-student \textsc{cond}\tld{}-\textsc{pst.ipfv}-2-be if \\
-\glt If you were my student...
+\glt `If you were my student...
 \end{exe}
 
 This shows that \ipa{pɯpɯŋunɤ} is not a proper verb form anymore, and has been fully grammaticalized.
@@ -288,7 +290,7 @@ The temporal adverb \ipa{jiɕqha} `just before' has become grammaticalized as a 
 \ex \label{ex:jiCqha}
  \gll \ipa{tɯmɯ} 	\ipa{ci} 	\ipa{tɕhɤrnaʁ} 	\ipa{ci} 	\ipa{tɕhɯmtɕhɯm} 	\ipa{ko-lɤt.} 	\ipa{tɕendɤre} 	\ipa{jiɕqha} 	\ipa{tɤ-jwaʁ} 	\ipa{nɯ} 	\ipa{pjɤ-nɯndzom} 	\ipa{tɕe,} 	\ipa{ɯ-ʁi} 	\ipa{ɯ-kɯr} 	\ipa{ɯ-ŋgɯ} 	\ipa{nɯ} 	\ipa{tɕu} 	\ipa{tɯ-ci} 	\ipa{χsɯ-ntɕhaʁ} 	\ipa{jamar} 	\ipa{pjɤ-ɕe.} \\
  rain \textsc{indef}  rain \textsc{indef} \textsc{idph}.II:little.rain \textsc{ifr}-throw \textsc{lnk} the.aforementioned \textsc{indef.poss}-leaf \textsc{dem} \textsc{ifr:down}-flow.along \textsc{lnk} \textsc{3sg.poss}-younger.sibling  \textsc{3sg.poss}-mouth \textsc{3sg}-inside \textsc{dem} \textsc{loc} \textsc{indef.poss}-water three-drop about \textsc{ifr:down}-go \\
- \glt There was a little rain, and (the water) flowed along the leaf (that the elder brother had placed) and three drops of water flowed into his younger brother's mouth. (Smanmi 11, 61)
+ \glt `There was a little rain, and (the water) flowed along the leaf (that the elder brother had placed) and three drops of water flowed into his younger brother's mouth.' (Smanmi 11, 61)
 \end{exe}
 
  \subsubsection{Unexpectedness}
@@ -299,7 +301,7 @@ The marker \ipa{rcanɯ} topicalizes the preceding noun phrase and emphasizes the
 %\gll 	\ipa{tɤmdzɤrgi} 	\ipa{nɯ} 	\ipa{ɣɯ} 	\ipa{ɯ-di} 	\ipa{ci} 	\ipa{tu} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{ɯ-di} 	\ipa{nɯnɯ} 	\ipa{rcanɯ} 	\ipa{tɯ-ku} 	\ipa{ʑo} 	\ipa{ɕɯ-mŋɤm.}  \\
 %thistle \textsc{dem} \textsc{gen} \textsc{3sg.poss}-smell \textsc{indef} exist:\textsc{fact} \textsc{lnk} \textsc{dem} 
 %\textsc{3sg.poss}-smell \textsc{dem}  \textsc{unexpected} \textsc{genr:poss}-head \textsc{emph}  \textsc{caus}-hurt:\textsc{fact} \\
-%\glt The thistle has a smell, and this smell makes one's head hurt. (15 babW, 82)
+%\glt `The thistle has a smell, and this smell makes one's head hurt.' (15 babW, 82)
 %\end{exe}
 
 \begin{exe}
@@ -307,7 +309,7 @@ The marker \ipa{rcanɯ} topicalizes the preceding noun phrase and emphasizes the
 \gll 
 \ipa{tɕendɤre} 	\ipa{thɯ-kɤ-βlɯ} 	\ipa{nɯ} 	\ipa{ɲɯ-ɕti} 	\ipa{tɕe,} 	<yancong>	 \ipa{ɯ-ŋgɯ} 	\ipa{ɲɯ-ɲaʁ} 	\ipa{rcanɯ} 	\ipa{kumpɣɤtɕɯ} 	\ipa{ra} 	\ipa{ɲɤ́-wɣ-sɯɣ-ɲaʁ-nɯ} 	\ipa{ʑo} 	\\
 \textsc{lnk} \textsc{pfv-nmlz}:P-burn \textsc{dem} \textsc{sens}-be:\textsc{assert} \textsc{lnk} chimney \textsc{3sg}-inside \textsc{sens}-be.black \textsc{unexpected} sparrow \textsc{pl} \textsc{ifr-inv-caus}-be.black-\textsc{pl} \textsc{emph} \\
-\glt Because there has been burning going on, the inside of the chimney is black, and it made the sparrows (who had build a nest inside it) become (completely) black! (22 kWmpGAtCW, 72)
+\glt `Because there has been burning going on, the inside of the chimney is black, and it made the sparrows (who had build a nest inside it) become (completely) black!' (22 kWmpGAtCW, 72)
 \end{exe}
 When it occurs before an adjectival verb, whether in finite or non-finite form as \ipa{kɯ-dɯ\textasciitilde{}dɤn} `numerous' in \ref{ex:kWdWdAn}, or before an ideophone (\ref{ex:RYJliRYJli}), \ipa{rcanɯ} indicates high degree. Adjectival verbs in this case often have emphatic reduplication.
 
@@ -315,7 +317,7 @@ When it occurs before an adjectival verb, whether in finite or non-finite form a
 \ex \label{ex:kWdWdAn}
 \gll \ipa{tɕe} 	\ipa{nɯ} 	\ipa{ɕoŋtɕa} 	\ipa{rcanɯ} 	\ipa{kɯ-dɯ\textasciitilde{}dɤn} 	\ipa{ʑo} 	\ipa{pjɤ-sɯ-phɯt-nɯ.} \\
 \textsc{lnk} \textsc{dem} wood \textsc{unexpected} \textsc{nmlz}:S/A-\textsc{emph}\textasciitilde{}-be.a.lot \textsc{emph} \textsc{ifr-caus}-chop-\textsc{pl}\\
-\glt And they had (people) chop quite lot of wood (for them) (28 qAjdo,  103)
+\glt `And they had (people) chop quite lot of wood (for them).' (28 qAjdo,  103)
 \end{exe}
 
 \begin{exe}
@@ -323,7 +325,7 @@ When it occurs before an adjectival verb, whether in finite or non-finite form a
 \gll
 \ipa{ɯ-phoŋbu} 	\ipa{nɯ} 	\ipa{rcanɯ} 	\ipa{ʁɲɟliʁɲɟli} 	\ipa{ʑo} 	\ipa{ɲɯ-pa} \\
 \textsc{3sg.poss}-body \textsc{dem}  \textsc{unexpected} \textsc{idph}:II:huge;massive \textsc{emph} \textsc{sens}-\textsc{aux} \\
-\glt Its body is huge. (20 sWNgi,  16)
+\glt `Its body is huge.' (20 sWNgi,  16)
 \end{exe}
 
 This marker is derived from the possessed noun  \ipa{ɯ-rca} `following, together with' (see example \ref{ex:arca}) together with the distal demonstrative \ipa{nɯ} `that'.
@@ -333,7 +335,7 @@ This marker is derived from the possessed noun  \ipa{ɯ-rca} `following, togethe
 \gll
 \ipa{aʑo} 	\ipa{a-rca} 	\ipa{kɤ-ɣi} 	\ipa{mɤ-tɯ-cha} \\
 \textsc{1sg} \textsc{1sg}-following \textsc{inf}-come \textsc{neg}-2-can:\textsc{fact} \\
-\glt You cannot come with me.
+\glt `You cannot come with me.'
 \end{exe}
  
 The evolution from `following, together with' to `unexpectedness' is not completely straightforward. The pathway \textsc{together with} $\Rightarrow$ \textsc{also} (non-scalar additive) $\Rightarrow$ \textsc{even} (scalar additive) $\Rightarrow$ \textsc{unexpectedness} can be proposed.\footnote{This pathway was suggested by Nat Krause and Linda Konnerth.} It involves intermediate stages that are all attested: in particular, many languages have the same morpheme for scalar and non-scalar additives (for instance Karbi, see \citealt{konnerth14additive}), and the directionality is clearly from non-scalar to scalar additives.
@@ -359,7 +361,7 @@ Japhug has a system of generic person marking with ergative alignment (\citealt{
 \gll
 \ipa{tɕeri} 	\ipa{tɤ-pɤtso} 	\ipa{pɯ-kɯ-ŋu} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{kɤ-ndza} 	\ipa{wuma} 	\ipa{ʑo} 	\ipa{pɯ-kɯ-rga.} \\
 but \textsc{indef.poss}-child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc{dem} \textsc{inf}-eat really \textsc{emph} \textsc{pst.ipfv-genr}:S/P-like \\
-\glt When (we) were children, (we) liked it a lot. (12: ndZiNgri, 135)
+\glt `When (we) were children, (we) liked it a lot.' (12: ndZiNgri, 135)
 \end{exe}
 
 
@@ -367,7 +369,7 @@ but \textsc{indef.poss}-child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc
 \ex \label{ex:tukWCWngo}
 \gll  \ipa{tɕe} 	\ipa{ʁja} 	\ipa{nɯnɯ} 	\ipa{tɯ-qʰoχpa} 	\ipa{a-mɤ-tʰɯ-ɕe} 	\ipa{ra} 	\ipa{ma} 	\ipa{tu-kɯ-ɕɯ-ngo} 	\ipa{ɲɯ-ɕti} \\
 \textsc{lnk} rust \textsc{top} \textsc{genr.poss}-inner.organ \textsc{irr-neg-pfv:downstream}-go have.to:\textsc{fact} \textsc{lnk} \textsc{ipfv-genr:S/P-caus}-be.sick  \textsc{testim}-be:\textsc{assert} \\
-\glt Rust should not go into one's organs, otherwise it would cause one to get sick. (30: Com, 86)
+\glt `Rust should not go into one's organs, otherwise it would cause one to get sick.' (30: Com, 86)
 \end{exe}
 
 \begin{exe}
@@ -375,7 +377,7 @@ but \textsc{indef.poss}-child \textsc{pst.ipfv-genr}:S/P-be \textsc{lnk} \textsc
 \gll
 \ipa{tɯrme} 	\ipa{kɯ} 	\ipa{tú-wɣ-ndza} 	\ipa{mɤ-sna.} \\
 people \textsc{erg} \textsc{ipfv-inv}-eat \textsc{neg}-be.good:\textsc{fact} \\
-\glt It is not edible. (11: paRzwamWntoR, 39)
+\glt `It is not edible.' (11: paRzwamWntoR, 39)
 \end{exe}
 
 The generic human S/P prefix \ipa{kɯ-} is homophonous with the S/A participle prefix, illustrated by examples (\ref{ex:part.S}) and (\ref{ex:part.A}).
@@ -384,14 +386,14 @@ The generic human S/P prefix \ipa{kɯ-} is homophonous with the S/A participle p
 \ex \label{ex:part.S}
 \gll \ipa{spjaŋkɯ}	\ipa{kɤ-kɯ-nɯʑɯβ}	\\
 wolf \textsc{pfv-nmlz}:S/A-sleep \\
-\glt The wolf which had fallen asleep.
+\glt `The wolf which had fallen asleep.'
 \end{exe}
 
 \begin{exe}
 \ex \label{ex:part.A}
 \gll \ipa{ɯ-kɯ-ndza} \\
 \textsc{3sg-nmlz}:S/A-eat \\
-\glt The one who eats it.
+\glt `The one who eats it.'
 \end{exe}
 
 The generic human \ipa{kɯ-} arose most probably due to the reanalysis of participles as finite verbs. The exact scenario for this grammatical change is too complex to be presented here in detail (see \citealt{jacques17generic} for a complete account), but the general lines are as follows.
@@ -422,14 +424,14 @@ The Japhug transitive conjugation includes two portmanteau prefixes for local sc
 \ex \label{ex:2.1sg}
 \gll \ipa{pɯ-kɯ-nɤjo-a} \\
 \textsc{imp}-2$\rightarrow$1-wait-\textsc{1sg} \\
-\glt Wait for me (heard in context).
+\glt `Wait for me!' (heard in context).
 \end{exe}
 
 \begin{exe}
 \ex \label{ex:1.2du}
 \gll  \ipa{maka} 	\ipa{ʑo} 	\ipa{mɤ-ta-βde-ndʑi} \\
 at.all \textsc{emph} \textsc{neg}-1$\rightarrow$2-leave-\textsc{du} \\
-\glt I will never abandon you two. (140507 tangguowu, 166)
+\glt `I will never abandon you two.' (140507 tangguowu, 166)
 \end{exe}
 
 The portmanteau prefixes for 1$\rightarrow$2 and 2$\rightarrow$1 are nearly identical in Situ, Tshobdun and Zbu, as presented in Table \ref{tab:local.rgy} (data from \citealt[218]{linxr93jiarong}, \citealt{jackson02rentongdengdi}, \citealt{jacques12agreement}, \citealt{gongxun14agreement}).
@@ -477,7 +479,7 @@ Note that in the Situ Gyalrong language, unlike Japhug and Tshobdun, nominalized
 \gll
 \ipa{tərmî}  	\ipa{to-kə́-pə-ntʃ=tə}  	\ipa{tʂaʃī}  	\ipa{nɐrə}  	\ipa{ɬamō}  	\ipa{na-ŋôs-ntʃ}  	\\
 person \textsc{pfv-nmlz}-come:\textsc{pst}-\textsc{du=det} Trashi and Lhamo \textsc{pst.ipfv}-be:\textsc{pst}-\textsc{du} \\
-\glt The people who came were Trashi and Lhamo.
+\glt `The people who came were Trashi and Lhamo.'
   \end{exe}
 
 In this view, the absence of inverse marker in the  2$\rightarrow$1 form in Japhug is an innovation, which can be explained by the fact that the inverse is redundant in this form. This redundancy is solved in a different way in Zbu and Tshobdun, where at least speaker accept forms replacing the portmanteau \ipa{kə-} by the second person \ipa{tə-} (see \citealt{jackson02rentongdengdi} and \citealt{gongxun14agreement}).
@@ -502,7 +504,7 @@ Japhug has a simple associated motion system, with one translocative / andative 
 \ex \label{maCthWtWZGABde}
 \gll \ipa{ma-ɕ-tʰɯ-tɯ-ʑɣɤ-βde} 	\ipa{ma} 	\ipa{nɤ-wa} 	\ipa{ɲɯ-ɤkʰu}   \\
 \textsc{neg-transloc-imp-2-refl}-throw because \textsc{2sg.poss}-father \textsc{sens}-call \\
-\glt `Don't throw yourself (in the river), your father is calling you' 
+\glt `Don't throw yourself (in the river), your father is calling you.' 
 \end{exe}
 
 In Situ, \citet{youjing03zhuokeji} notices that the cislocative has been further grammaticalized as marking prospective aspect.
@@ -627,7 +629,7 @@ Japhug has an incorporation-like construction in which noun-verb nominal compoun
 \gll     \ipa{nɯ-ɣɯ-cɯ-pʰɯt-a}  \\
   \textsc{pfv-denominal}-stone-take.out-\textsc{1sg} \\
   \end{xlist}
-  \glt   I cleared the stones (from the field). 
+  \glt `I cleared the stones.' (from the field)
 \end{exe}   
 
 The construction (iii) has further become a full incorporating construction in the closely related Khroskyabs language, where the denominal prefix has in some cases disappeared due to phonological attrition (\citealt{lai13affixale}).
@@ -706,7 +708,7 @@ There is some evidence that the same is true in Japhug too; for instance, in exa
 \ex \label{ex:YWqAt}
 \gll \ipa{ji-kɯ-nɯqambɯmbjom} 	\ipa{tɤ-kɯ-rɤŋgat} 	\ipa{nɯ} 	\ipa{kɯ-fse,} 	\ipa{ɯ-ʁar} 	\ipa{nɯ} 	\ipa{ɲɯ-qɤt} 	\ipa{nɤ} 	\ipa{ku-wum}, 	\ipa{ɲɯ-qɤt} 	\ipa{nɤ} 	\ipa{ku-wum} \ipa{ŋu} \\
 \textsc{conat-nmlz:S/A}-fly \textsc{pfv-nmlz:S/A}-prepare \textsc{dem} \textsc{inf:stat}-be.like \textsc{3sg.poss}-wing \textsc{dem}  \textsc{ipfv:west}-separate \textsc{lnk} \textsc{ipfv:east}-put.together \textsc{ipfv:west}-separate \textsc{lnk} \textsc{ipfv:east}-put.together be:\textsc{fact} \\
-\glt (When it tweets), it does as if it were about to fly, it spreads its wings and then folds them, spreads its wings and then folds them. (24-ZmbrWpGa, 121)
+\glt `(When it tweets), it does as if it were about to fly, it spreads its wings and then folds them, spreads its wings and then folds them.' (24-ZmbrWpGa, 121)
 \end{exe}
 
 It makes more sense that centripetal orientation, rather than `towards east' direction, would be grammaticalized as an egophoric marker. In Japhug, the egophoric indicates that the speaker has an  intimate knowledge of a state of affair due to his direct participation in the event, as in example (\ref{ex:kutaRa}). It is mainly restricted to first person forms in assertive sentences, though it it also compatible with third persons in the case of third person referents possessed by the first person (`my son', `my work' etc). 
@@ -754,7 +756,7 @@ The progressive \ipa{asɯ-} / \ipa{ɤsɯ-} / \ipa{az-} / \ipa{ɤz-} differs from
 \gll
 \ipa{tɕe} 	\ipa{pjɤ-ɣi} 	\ipa{tɕe} 	\ipa{qala} 	\ipa{kɯ} 	\ipa{pjɤ-k-ɤ́<wɣ>z-nɤjo-ci} 	\ipa{tɕe,} \\
 \textsc{lnk} \textsc{ifr:down}-come \textsc{lnk} rabbit \textsc{erg} \textsc{ifr.ipfv-evd<inv>}-wait-\textsc{evd} \textsc{lnk} \\
-\glt (The leopard) came down, and the rabbit was waiting for him there. (The smart rabbit.2014, 60)
+\glt `(The leopard) came down, and the rabbit was waiting for him there.' (The smart rabbit.2014, 60)
 \end{exe}
 
 It can only be used with transitive verbs, and removes all markers of morphological transitivity (stem three alternation, past 1/3$\rightarrow$3 \ipa{-t} suffix) on the verb forms, as in (\ref{ex:asWndo}), where in the factual stem 3 \ipa{ndɤm} instead of stem 1 \ipa{ndo} would be expected. The verb remains however syntactically transitive, and the A still takes the ergative marker (as in example \ref{ex:pjAkAwGznAjoci}).
@@ -765,7 +767,7 @@ It can only be used with transitive verbs, and removes all markers of morphologi
 \gll
 \ipa{sɯjno} 	\ipa{ɯ-mdoʁ} 	\ipa{ʑo} 	\ipa{asɯ-ndo.} \\
 grass \textsc{3sg.poss}-colour \textsc{emph} \textsc{prog}-hold:\textsc{fact} \\
-\glt It has the colour of grass. (25 rtchWRjW, 69)
+\glt `It has the colour of grass.' (25 rtchWRjW, 69)
 \end{exe}
 
 \citet{jacques16prog} proposes to account for these two features by assuming that \ipa{asɯ-} originates from the combination of the agentless passive \ipa{a-} (on which see section \ref{sec:passive}) with the causative \ipa{sɯ-} (section \ref{sec:causative}). First, the causative derivation was applied (the \ipa{sɯ-} element is closer to the verb stem). The causative turned the transitive base verb into a ditransitive one. Then, the passive turned it back to two-argument valency, suppressing the causer, and removing all morphological transitivity marking. In addition, as mentioned in section \ref{sec:passive}, the passive in Japhug  has a stative overtone, which, applied to a dynamic transitive verb, became a progressive reading. The combination of passive and causative became common enough to change from a combination of derivations into an inflexional marker.
@@ -786,7 +788,7 @@ The present section focuses on a selection of complex constructions involving li
 \ex \label{ex:saCW}
 \gll  \ipa{saɕɯ} 	\ipa{nɯnɯ} 	\ipa{ɯ-qa} 	\ipa{me,} 	\ipa{ɯ-ru} 	\ipa{me,} 	\ipa{ɯ-jwaʁ} 	\ipa{me} 	\ipa{nɯra} 	\ipa{tɯrgi} 	\ipa{cho} 	\ipa{naχtɕɯɣ} \\
  larch \textsc{dem} \textsc{3sg.poss}-root whether \textsc{3sg.poss}-trunk whether \textsc{3sg.poss}-leave whether \textsc{dem:pl} fir  \textsc{comit} be.similar:\textsc{fact} \\
-\glt Whether its root, its trunk or its leaves, the larch is identical to the fir. (08 saCW, 5)
+\glt `Whether its root, its trunk or its leaves, the larch is identical to the fir.' (08 saCW, 5)
 \end{exe} 
 
 This conjunction is obviously grammaticalized from the negative existential copula \ipa{me} `not exist' through an alternative  concessive conditional `whether ... exists or' involving originally the affirmative and negative existential verbs \ipa{tu} vs \ipa{me} as in \ref{ex:pWnWme}
@@ -795,7 +797,7 @@ This conjunction is obviously grammaticalized from the negative existential copu
 \ex \label{ex:pWnWme}
 \gll \ipa{tɤ-ʁa} 	\ipa{me} 	\ipa{tɕe,} 	\ipa{nɯ} 	\ipa{pɯ-nɯ-tu} 	\ipa{pɯ-nɯ-me} 	\ipa{kɯ-khɯ} 	\ipa{nɯ} 	\ipa{kɯ-rga} 	\ipa{me.} \\
 \textsc{indef.poss}-free.time not.exist:\textsc{fact} \textsc{lnk} \textsc{dem} \textsc{pst.ipfv-auto}-not.exist \textsc{pst.ipfv-auto}-exist \textsc{nmlz}:S/A-be.possible \textsc{dem} \textsc{nmlz}:S/A-like not.exist:\textsc{fact} \\
-\glt (Nobody gathers wild strawberries), because (we) don't have time, it is fine whether or not (we) have it, nobody likes it. (11 paRzwamWntoR, 92)
+\glt `(Nobody gathers wild strawberries), because (we) don't have time, it does not matter whether there are (strawberries) or not, nobody likes it.' (11 paRzwamWntoR, 92)
 \end{exe}
  
  In its grammaticalized form, \ipa{me} has lost all person and TAME marking.  In \ref{ex:aZo.me}, we see that the conjunction \ipa{me} does not take first or second person singular indexation when used with a pronoun, as would be expected if it still were a verb and the construction an alternative  concessive conditional.
@@ -805,7 +807,7 @@ This conjunction is obviously grammaticalized from the negative existential copu
 \gll 
  \ipa{aʑo} 	\ipa{me,} 	\ipa{nɤʑo} 	\ipa{me,} 	\ipa{ɯʑo} 	\ipa{me,} 	\ipa{kɤsɯfse} 	\ipa{ɕe-j} 	\ipa{ra} \\
 \textsc{1sg} whether \textsc{2sg} whether \textsc{3sg} whether all go:\textsc{fact}-\textsc{1pl} have.to:\textsc{fact} \\
-\glt Whether I, you or he, we all have to go. (elicited)
+\glt `Whether I, you or he, we all have to go.' (elicited)
 \end{exe}
 
 
@@ -836,14 +838,14 @@ Second, the linker \ipa{ɯtɤjɯ} `not only ...', mainly used after finite verbs
 \ex \label{ex:WtAjW}
 \gll \ipa{ɕɯ-mŋɤm} 	\ipa{ɯtɤjɯ} 	\ipa{ɲɯ-sɤzoŋzoŋ} 	\ipa{ʑo} 	\ipa{ŋu}  \\
 \textsc{caus}-avoir.mal:\textsc{fact} not.only \textsc{sens}-tingle \textsc{emph} be:\textsc{fact} \\
-\glt Not only does it (nettle) hurt, it also causes a tingling sensation. (hist140428 mtshalu, 6)
+\glt `Not only does it (nettle) hurt, it also causes a tingling sensation.' (hist140428 mtshalu, 6)
 \end{exe}
 
 \begin{exe}
 \ex \label{ex:WtAjW2}
 \gll \ipa{ki} 	\ipa{nɤ-ŋga} 	\ipa{ɯ-tɤjɯ} 	\ipa{a-pɯ-ŋu} 	\ipa{ma} 	\ipa{tɯ-nɤndʐo} \\
 this \textsc{2sg.poss}-clothes \textsc{3sg.poss}-added \textsc{irr-ipfv}-be \textsc{lnk} 2-feel.cold:\textsc{fact} \\
-\glt Have some more clothes, otherwise you will be cold. (\citealt{jacques15japhug})
+\glt `Have some more clothes, otherwise you will be cold.' (\citealt{jacques15japhug})
 \end{exe}
 
 Third, the form \ipa{mɤkɯjɤɣ kɯ} `not only' used after finite verbs (example \ref{ex:mAkWjAG}) is the negative form S/A participle of the verb \ipa{jɤɣ} `be possible, be allowed' followed by the ergative \ipa{kɯ}. Example (\ref{ex:mAkWjAG2}) illustrate the same verb form in its non-grammaticalized use.
@@ -852,7 +854,7 @@ Third, the form \ipa{mɤkɯjɤɣ kɯ} `not only' used after finite verbs (exampl
 \ex \label{ex:mAkWjAG}
 \gll  \ipa{tɤ-mthɯm} 	\ipa{nɯra} 	\ipa{tu-ndze} 	\ipa{mɤkɯjɤɣ kɯ,} 	\ipa{ɯ-di} 	\ipa{ɲɯ-ɕɯmnɤm}  \\
 \textsc{indef.poss}-meat \textsc{dem:pl} \textsc{ipfv}:eat[III] not.only \textsc{3sg.poss}-smell \textsc{sens}-cause.to.have.a.smell \\
-\glt  (The mouse) does not only eat meat, it also makes it stinky. (27-spjaNkW, 198)
+\glt  `(The mouse) does not only eat meat, it also makes it stinky.' (27-spjaNkW, 198)
 \end{exe}
 
 
@@ -861,7 +863,7 @@ Third, the form \ipa{mɤkɯjɤɣ kɯ} `not only' used after finite verbs (exampl
 \gll
 <baohu> 	\ipa{kɯ-ra} 	\ipa{tɕe} 	\ipa{pjɯ́-wɣ-sat} 	\ipa{mɤ-kɯ-jɤɣ} \ipa{ŋu} \\
 protect \textsc{nmlz}:S/A-have.to \textsc{lnk} \textsc{ipfv-inv}-kill \textsc{neg-nmlz}:S/A-be.allowed be:fact \\ 
-\glt It has to be protected and is not to be killed. (27-kikakCi, 88)
+\glt `It has to be protected and is not to be killed.' (27-kikakCi, 88)
 \end{exe}
 
 Fourth, the linker \ipa{ʁo alala ri} `not only', used after noun phrases as in \ref{ex:alala}, is the combination of the adversative marker \ipa{ʁo} (\zh{倒}  \textit{dào}), the adverb \ipa{alala} `of course' and the locative \ipa{ri}.
@@ -870,7 +872,7 @@ Fourth, the linker \ipa{ʁo alala ri} `not only', used after noun phrases as in 
 \ex \label{ex:alala}
 \gll  \ipa{tɕe} 	\ipa{nɯnɯra} 	\ipa{ʁo alala ri} 	\ipa{ɯʑo} 	\ipa{sɤz} 	\ipa{kɯ-xtɕi} 	\ipa{pɣa} 	\ipa{nɯra} 	\ipa{kɯnɤ} 	\ipa{ku-ndɤm} 	\ipa{qhe} 	\ipa{tu-ndze} \\
 \textsc{lnk} \textsc{dem:pl} not.only \textsc{3sg} \textsc{comp} \textsc{nmlz}:S/A-be.small bird \textsc{dem:pl} also \textsc{ipfv}-catch[III] \textsc{lnk} \textsc{ipfv}-eat[III] \\
-\glt In addition to these, it also eats birds that are smaller than itself. (19-qandZGi, 58)
+\glt `In addition to these, it also eats birds that are smaller than itself.' (19-qandZGi, 58)
 \end{exe}
 
  \subsection{Purposive clauses}
@@ -893,7 +895,7 @@ Second, the verb \ipa{nɯmga} `do (on purpose), (to have)', either in a finite o
 \gll 
 \ipa{tɕe} 	\ipa{kɯpɤz} 	\ipa{nɯ} 	\ipa{mɯ-ɲɯ-kɤ-βzu} 	\ipa{kɤ-nɯmga,} 	\ipa{iʑɤra,} \ipa{ji-mthɯm} 	\ipa{nɯra} 	<binggui> 	\ipa{tu-χtɯ-j} \ipa{nɯ} 	\ipa{ɯ-ŋgɯ} 	\ipa{ri} 	\ipa{pjɯ-nɯ-rku-j} 	\ipa{ɕti} 	\ipa{ma} \ipa{maka} 	\ipa{ɯ-pɕi} 	\ipa{tú-wɣ-ɕɯɴqoʁ} 	\ipa{qhe,} \ipa{ŋotɕu} 	\ipa{nɯ́-wɣ-tɯ\textasciitilde{}ta} 	\ipa{ʑo} 	\ipa{kɯpɤz} 	\ipa{ɲɯ-βze} 	\ipa{ɲɯ-ɕti}\\
 \textsc{lnk} type.of.bug \textsc{dem} \textsc{neg-ipfv-inf}-grow \textsc{inf}-do.on.purpose \textsc{1sg} \textsc{1sg.poss}-meat \textsc{dem:pl} fridge \textsc{ipfv}-buy-\textsc{1pl} \textsc{dem} \textsc{3sg.poss}-inside \textsc{loc} \textsc{ipfv-auto}-put.in-\textsc{1pl} be.\textsc{assert:fact} \textsc{lnk} at.all \textsc{3sg.poss}-outside \textsc{ipfv-inv}-hang \textsc{lnk} where \textsc{ipfv-inv}-\textsc{indefinite}\textasciitilde{}put \textsc{emph} \textsc{emph} \textsc{ipfv}-grow \textsc{sens}-be.\textsc{assert}\\
-\glt In order not to have \ipa{kɯpɤz} bugs, our meat, we bought a fridge and put it in there, as if one hangs it outside, bugs will grow wherever you put it. (28-kWpAz)
+\glt `In order not to have \ipa{kɯpɤz} bugs, our meat, we bought a fridge and put it in there, as if one hangs it outside, bugs will grow wherever you put it.' (28-kWpAz)
 \end{exe}
  
 
@@ -905,7 +907,7 @@ Third, Core Gyalrong languages, including Japhug (\citealt{jacques14linking}) an
 [\ipa{kɯ-lɤɣ}   	\ipa{acɤβ}   	\ipa{nɯ}   	\ipa{kɯ}   	\ipa{\textbf{ɯ-mɤ-sɤ-jmɯ\textasciitilde{}jmɯt}},]   	\ipa{ɯ-pʰɯŋgɯ}   	\ipa{nɯ}   	\ipa{tɕu}   	\ipa{rdɤstaʁ-pɯpɯ}   	\ipa{tɕʰɯrdu}   	\ipa{ci}  \ipa{ɲɤ-rku,}\\
  \textsc{nmlz}:S/A-herd Askyabs \textsc{dem} \textsc{erg}  \textsc{3sg-neg-purp:conv}-forget \textsc{3sg.poss}-inside.clothes \textsc{dem} \textsc{loc} stone-little pebble \textsc{indef}
  \textsc{evd}-put.in\\
-\glt The cowboy Askyabs put a little pebble inside his clothes so that he would not forget it. (The frog, 166)
+\glt `The cowboy Askyabs put a little pebble inside his clothes so that he would not forget it.' (The frog, 166)
 \end{exe}
    \subsection{Causal clauses}
 Among the causal clauses in Japhug (\citealt{jacques14linking}), one presents a clear grammaticalization pathway:  clausal clauses in \ipa{núndʐa} `for this reason' as in (\ref{ex:qapGAmtWmtW}). This linker is the fusion of the demontrative \ipa{nɯ} `that' with the possessed noun \ipa{ɯ-ndʐa} `reason', a word borrowed from Tibetan \ipa{ɴdra}.
@@ -916,7 +918,7 @@ Among the causal clauses in Japhug (\citealt{jacques14linking}), one presents a 
 \gll
 [\ipa{tɕe}  	\ipa{ɯ-mtɯ}  	\ipa{ɣɤʑu}]  	\ipa{tɕe,}  	\ipa{tɕe}  	\textbf{\ipa{núndʐa}}  	\ipa{qapɣɤmtɯmtɯ}  	\ipa{tu-ti-nɯ}  	\ipa{ɲɯ-ŋu}   \\
 \textsc{lnk} \textsc{3sg.poss}-crest \textsc{sensory}:exist \textsc{lnk} \textsc{lnk} for.this.reason hoopoe \textsc{ipfv}-say-\textsc{pl} \textsc{testim}-be \\
-\glt It has a crest, and this is the reason why it is called `hoopoe'. (Hoopoe, 20)
+\glt `It has a crest, and this is the reason why it is called `hoopoe'.'  (Hoopoe, 20)
 \end{exe}
 
 %Second, it is possible to use the ergative \ipa{kɯ} as a clausal 
@@ -931,11 +933,11 @@ The verb \ipa{me} `not exist' is used in addition in a construction expressing t
 \ex \label{ex:mAndza}
 \gll \ipa{ndza} \ipa{mɤ-ndza} \ipa{me-a} \\
 eat:\textsc{bare.inf} \textsc{neg}-eat:\textsc{bare.inf} not.exist-\textsc{1sg} \\
-\glt (I am so lean that) whether you eat me or not, the result will be the same.
+\glt `(I am so lean that) whether you eat me or not, the result will be the same.' 
 \end{exe}
  
  \section{Degrammaticalization}
- This overview of grammaticalziation would not be compelete without an account of attested cases of degrammaticalization in Japhug, which include a suffix  becoming an independent word, and a relator noun of location (equivalent to a a postposition) becoming a common noun.
+ This overview of grammaticalization  in Japhug would not be complete without an account of attested cases of degrammaticalization, which include a suffix  becoming an independent word, and a relator noun of location (equivalent to a a postposition) becoming a common noun.
  
  
  \subsection{Suffix to clitic}
@@ -945,7 +947,7 @@ Yet, the phonetic correspondence of Japhug \ipa{z} to Situ \ipa{s} is anomalous:
 
 However, a sound change common to Japhug, Tshobdun and Zbu is the voicing of final \change{-s}{-z}.\footnote{Final \ipa{-z} is realized as voiced in these three languages except utterance-finally and when preceding a word beginning with an unvoiced obstruent, as was first recognized by  \citet{jackson05yingao} about Tshobdun.} 
 
-The Japhug form \ipa{zɯ} can be accounted for in the following way. After the regular sound change \change{-s}{-z}, the locative suffix \ipa{-z} was degrammaticalized as a an enclitic, and a postthetic vowel \ipa{ɯ} was added to it as in all case marking clitics (Ergative \ipa{kɯ}, Genitive \ipa{ɣɯ}). 
+The Japhug form \ipa{zɯ} can be accounted for in the following way. After the regular sound change \change{-s}{-z}, the locative suffix \ipa{-z} was degrammaticalized as a an enclitic (a case of deinflectionalization, see \citealt[152]{norde09degrammaticalization}), and an epenthetic vowel \ipa{ɯ} was added to it as in all case marking clitics (Ergative \ipa{kɯ}, Genitive \ipa{ɣɯ}). 
 
  The opposite possibility, namely that the allative marker was an independent word or clitic in proto-Gyalrong and that it became phonologically fused with the preceding noun in Situ, cannot account for the presence of voicing in the Japhug form \ipa{zɯ}. Moreover, there is evidence that the proto-Gyalrong allative suffix reconstructed here as *\ipa{-s} is cognate to the \ipa{-s} element found in several case markers in Tibetan (on which see \citealt{hill12bas}).
   
@@ -962,11 +964,9 @@ First, Japhug borrowed the Tibetan relator noun  \ipa{tʰog(tu)} `on' as \ipa{ɯ
  
  Fourth, the noun \ipa{ɯ-thoʁ} `ground' was created by backformation from the locative phrase \ipa{ɯ-thoʁ zɯ} `on the ground'. The fact that the locative postposition \ipa{zɯ} is always optional (section \ref{sec:loc}) undoubtedly made this step easier.
  
- Thus, Japhug attests an example of degrammaticalization from a relator noun meaning `on' (with or without motion) to a common noun meaning `ground'.
+ Thus, Japhug attests an example of degrammation (see \citealt[135]{norde09degrammaticalization}) from a relator noun meaning `on' (with or without motion) to a common noun meaning `ground'.
  
     \section{Discussion} 
-
-
 
 \subsection{The verbal template} \label{sec:template}
  Japhug and other Gyalrong languages have elaborate verbal templates, with more than ten prefixal slots (\citealt{jacques13harmonization}). It is possible to find complex verb forms with eight prefixes and an incorporated noun, such as \ref{ex:amaCtAtWwGznWsnWYaR}.
@@ -976,7 +976,7 @@ First, Japhug borrowed the Tibetan relator noun  \ipa{tʰog(tu)} `on' as \ipa{ɯ
 \gll
 	\ipa{a-mɤ-ɕ-tɤ-tɯ́-wɣ-z-nɯ-snɯ-ɲaʁ}  	\ipa{ra}  \\
   \textsc{irr-neg-transloc-pfv-2-inv-caus-denom}-heart-black have.to:\textsc{fact} \\
-\glt Don't let them go to harm you!
+\glt `Don't let them go to harm you!'
 \end{exe} 
 
 Some of these prefixes are of proto-Sino-Tibetan provenance (see \citealt{delancey11prefixes, delancey14second, jacques12agreement}), but others are Gyalrong innovations, grammaticalized from either denominal prefixes (see section \ref{sec:denom}), nouns, pronouns, adverbs or verbs that can still be identified.
