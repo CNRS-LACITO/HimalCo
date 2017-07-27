@@ -1,0 +1,89 @@
+\documentclass[11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+%\usepackage{tikz}
+%\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+
+
+ \begin{document} 
+\title{Étymologies germaniques: *wambô-, XXX}
+\author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
+\maketitle
+
+\section{*wambō-}
+
+Le nom féminin proto-germanique *\ipa{wambō-}  `ventre, entrailles' reconstructible sur la base du gothique \ipa{wamba} f. `\grec{κοιλία}', du vieux norrois \ipa{vǫmb} f. et du vieil anglais \ipa{wamb}, n'a pas d'étymologie acceptée (\citealt[W28,393]{lehmann86gothic}).
+
+\citet[572]{kroonen13dict} considère comme possible le rapprochement avec le védique \ipa{gabhá-} m. `vagin', un mot qui apparaît dans un passage très cité du rituel de l'Aśvamedha (\ref{ex:gabhe}), proposant une proto-forme \ipa{*gʷʰṃbʰ-ó-} au degré zéro (avec loi de Grassmann) impliquant donc pour le germanique un degré *\ipa{o} \ipa{*gʷʰómbʰ-eh_2-}.
+
+
+\begin{exe}
+\ex \label{ex:gabhe}
+\glt \ipa{iyáṃ yakā́ śakuntikā́hálam íti sárpati}
+\glt \ipa{ā́hataṃ gabhé páso ní jalgulīti dhā́ṇikā}
+\glt This little bird which creeps around saying `âhalam'
+knocks the penis into the slit; the vulva devours it. (TS 7.4.19.3m, \citealt[275]{watkins95})
+\end{exe}
+
+
+Toutefois, cette comparaison souffre de plusieurs problèmes.
+
+Premièrement, comme le note Kroonen lui-même, il est plus plausible de rapprocher \ipa{gabhá-} de la famille de \ipa{gámbha-} n. `profondeur', \ipa{gabhīrá-} `profond' suivant \citet[324]{mayrhofer56kurz}, une comparaison incompatible avec le germanique du simple point de vue sémantique.
+
+%(KSAśv 5.4.8:165.7 et VS 23.22cd)
+
+% (que le \citealt[206]{liv} rapproche de la racine *\ipa{gʷeh_2bʰ}).
+
+Deuxièmement, le nom *\ipa{wambō-} ne désigne pas nécessairement le ventre en tant qu'organe reproducteur (comme c'est le cas avec son réflexe en anglais moderne \ipa{womb}); en gothique il peut faire référence au ventre en tant que partie du système digestif, comme l'illustre (\ref{ex:guth}), et son usage dans le nom d'un roi Visigoth d'Espagne, Wamba (\textit{regnauit} 672−680, voir \citealt{bronisch06wamba}), qui doit être un sobriquet signifiant `le ventru'.
+
+\begin{exe}
+\ex \label{ex:guth}
+\glt \ipa{þize guþ wamba ist jah wulþus in skandai ize}
+\glt \grec{ὧν ὁ θεὸς ἡ κοιλία καὶ ἡ δόξα ἐν τῇ αἰσχύνῃ αὐτῶν}
+\glt `Dont le dieu est leur ventre, et dont la gloire est dans la honte.' (Philippiens 3:19)
+\end{exe}
+
+Il n'est donc pas illégitime de rechercher une solution étymologique alternative.
+
+Je propose de partir de la racine \ipa{*webʰ} `tisser' (\citealt[653]{liv}), bien attestée en germanique (\citealt[540-2]{seebold70starken}) par un verbe fort \ipa{*weban-} (vieux norrois \ipa{vefa} `tisser', vieil anglais \ipa{wefan} `id') et une multitude de noms dérivés.
+
+Parmi ceux-ci se trouve le vieux norrois \ipa{vaf} n. $\leftarrow$ \ipa{*waba-} $\leftarrow$ \ipa{*wobʰo-}, dont le sens précis selon \citet[653]{cleasby1874icelandic} est `a wrapping, winding round' et en islandais `the piece of skin wound round a quill for infants to suck is called \ipa{vaf}'. On peut partir d'un étymon ayant un sens proche de celui de \ipa{*waba-}, tel que `pièce de tissu enroulée' ou `bobine', d'où `protubérance' et par désignation familière, le terme de partie du corps `ventre'.
+
+Pour dériver la forme \ipa{*wambō} de la racine \ipa{*webʰ}, supposer un dérivé à infixe \ipa{*-n-} du type \ipa{*wemba-} n'est pas absolument impossible étant donné l'existence de formes de présent de la classe IX en sanskrit et en grec pour cette racine (voir \citealt[653]{liv}), mais l'absence totale d'autre attestation de nasale dans les nombreux dérivés de cette racine en germanique milite plutôt contre une telle hypothèse.
+
+Pour expliquer la présence de la nasale dans \ipa{*wambō}, il faut prendre en compte l'existence d'une autre désignation du `ventre' en germanique, \ipa{*amban-} m. attesté par le vieux saxon \ipa{ambon} `ventre' et le vieil haut allemand \ipa{amban} `id', que \citet[24]{kroonen13dict} reconstruit \ipa{*h_3émbʰ-on-}, et analyse comme un dérivé de la racine du nom du `nombril' \ipa{*h_3nóbʰ-s}.
+
+Je propose une contamination entre un mot \ipa{*wabō} `pièce de tissu enroulée, protubérance, ventre' et \ipa{*amban-} donnant la forme \ipa{*wambō} `ventre'; la nasale serait donc non-étymologique.
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+
+ \end{document}
+ 
