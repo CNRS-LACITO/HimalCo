@@ -331,6 +331,7 @@
 \+mkr gf
 \lng English
 \mkrOverThis lx
+\mkrFollowingThis xv
 \-mkr
 
 \+mkr gn
@@ -514,7 +515,6 @@
 \mkrOverThis sn
 \mkrFollowingThis nt
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr nt_F5
@@ -617,6 +617,7 @@
 \+mkr pdc
 \nam Paradigm form comment
 \lng regional
+\mkrOverThis lx
 \-mkr
 
 \+mkr pde
@@ -709,8 +710,8 @@
 \rgbColor 0,0,0
 \-fnt
 \mkrOverThis se
+\mkrFollowingThis ton
 \CharStyle
-\Hide
 \-mkr
 
 \+mkr py
@@ -865,6 +866,12 @@
 \CharStyle
 \-mkr
 
+\+mkr ton
+\lng English
+\mkrOverThis lx
+\mkrFollowingThis lc
+\-mkr
+
 \+mkr u
 \nam Underlying for parse
 \desc Underlying form for use in parsing interlinear text. Not for publication.
@@ -1004,6 +1011,14 @@
 \CharStyle
 \-mkr
 
+\+mkr xo
+\nam Example in orthography
+\lng English
+\mkrOverThis lx
+\mkrFollowingThis xe
+\CharStyle
+\-mkr
+
 \+mkr xr
 \nam Example free trans. (r)
 \desc Regional language translation of the example sentence given in the \xv field. Use capitalization and punctuation as needed.
@@ -1017,7 +1032,7 @@
 \desc Used to give an example or illustrative sentence in the vernacular to exemplify each separate sense and demonstrate legitimacy of translation equivalents. Should be short and natural. Use capitalization and punctuation as needed.
 \lng vernacular
 \mkrOverThis rf
-\mkrFollowingThis xe
+\mkrFollowingThis xo
 \CharStyle
 \-mkr
 
