@@ -18,11 +18,11 @@
 \usepackage{lscape}
 \usepackage{amssymb}
  
-\bibpunct[: ]{(}{)}{,}{a}{}{,}
+%\bibpunct[: ]{(}{)}{,}{a}{}{,}
 
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
-\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{\textit{{\phon\mbox{#1}}}} %API tjs en italique
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase,FakeSlant=0.3]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\mbox{#1}}} %API tjs en italique
 %\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -38,18 +38,26 @@
 \newcommand{\dhat}[1]{|\ipa{#1}|}
 \newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
  
+ \usepackage[symbol]{footmisc}
 
 \XeTeXlinebreakskip = 0pt plus 1pt %
  %CIRCG
  
 
-
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
 \begin{document}
 
-\title{A reconstruction of Proto-Kiranti verb roots\footnote{I would like to thank Balthasar Bickel, Lukas Denk, Juho Pystynen, Marc Miyake, Martine Mazaudon, Boyd Michailovsky, Alexis Michaud, Amos Teo, Mikhail Zhivlov as well as two anonymous reviewers for useful comments on previous versions of this work. I am responsible for any remaining error. This research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony)}} 
-\author{Guillaume Jacques}
-\maketitle
+\begin{Large}
+\noindent
+Guillaume Jacques\footnote{Guillaume Jacques, CNRS-CRLAO-INALCO-EHESS, Paris, France, E-mail: rgyalrongskad@gmail.com} \\
+A reconstruction of Proto-Kiranti verb roots
+\end{Large}
+%\author{Guillaume Jacques}
+%\maketitle
 \sloppy
+
+\setcounter{footnote}{0}
+\renewcommand*{\thefootnote}{\arabic{footnote}}
 
 \textbf{Abstract}: In Kiranti languages, rich alternations in verbal paradigms make internal reconstruction possible, and allow a better understanding of the vowels and codas of the proto-language than is possible for other parts of speech. This paper, using data from four representative languages (Wambule, Khaling, Bantawa, Limbu), proposes a new approach to Proto-Kiranti historical linguistics combining the comparative method and internal reconstruction, and taking morphological alternations and analogy into account. It presents a comprehensive account of the sound correspondences between the four target languages and reconstructs more than 280 proto-Kiranti verb roots.
 
@@ -82,7 +90,7 @@ First,  many rhyme distinctions are neutralized in nouns, unlike verb roots, due
 
 Second, the cross-linguistic tendency for verbs to be less borrowable than nouns (\citealt{wohlgemuth09verbal}) is confirmed in Kiranti languages, where verb roots are only very rarely borrowed. In Khaling, only two clear borrowings have been brought to light: \dhatu{jal}{strike} from Thulung \ipa{jalmu}  (id) and \dhatu{ɦel}{divert water} from Nepali \ipa{helnu} (id).\footnote{The only other possibility is  \dhatu{pil}{squeeze}, which could conceivably be borrowed from Nepali \ipa{pelnu} `press'; since the word appears however to be reconstructible to Proto-Kiranti, and presents some irregular alternations, the borrowing hypothesis is difficult to accept.} 
 
-Third, there is some evidence that some sound changes may be specific to verb roots in Kiranti, so that verbs and other parts of speech need to be separately handled.\footnote{In languages of the ST family with complex tone alternation, such as Yongning Na (\citealt{michaud08na}), verbs also present unique alternations and tend to have a much richer morphology than the rest of the lexicon.} In particular, the lenition of the final \ipa{-t} and \ipa{-n} of verb roots to \ipa{r} when followed by a vowel-initial suffix in Limbu (as in \ipa{sɛr-uŋ}  `I kill' from \dhatu{sɛt}{kill}) does not appear to have taken place in words other than verbs. While there is strong evidence that alleged grammatically conditioned sound changes result from incorrect analyses (\citealt{hill14conditioned}), and while the absence of evidence for this lenition in nouns and pronouns in Limbu may have a purely phonological explanation, it is wise to postpone investigation of the phonology of polysyllabic nouns until that of verb roots is fully understood.
+Third, there is some evidence that some sound changes may be specific to verb roots in Kiranti, so that verbs and other parts of speech need to be separately handled.\footnote{In languages of the ST family with complex tone alternation, such as Yongning Na (\citealt{michaud08na, michaud17yongning}), verbs also present unique alternations and tend to have a much richer morphology than the rest of the lexicon.} In particular, the lenition of the final \ipa{-t} and \ipa{-n} of verb roots to \ipa{r} when followed by a vowel-initial suffix in Limbu (as in \ipa{sɛr-uŋ}  `I kill' from \dhatu{sɛt}{kill}) does not appear to have taken place in words other than verbs. While there is strong evidence that alleged grammatically conditioned sound changes result from incorrect analyses (\citealt{hill14conditioned}), and while the absence of evidence for this lenition in nouns and pronouns in Limbu may have a purely phonological explanation, it is wise to postpone investigation of the phonology of polysyllabic nouns until that of verb roots is fully understood.
 
 Fourth, the great majority of nouns in Kiranti languages are polysyllabic and their internal morphological structure is still poorly understood. This situation is reminiscent of Indo-European, where primary verbs are more easily reconstructible than nouns (see for instance \citealt{garnier10vocalisme}).
 
@@ -279,7 +287,6 @@ Note that in addition transitive roots can become intransitive by the effect of 
 \draw[peutetre] (VA)--(VAM);
 \draw[peutetre] (At)--(V);
 \draw[peutetre] (V) to[bend right] (VC);
-
 \end{tikzpicture}
    \caption{Verb derivations in Kiranti languages (hypothetical examples)} \label{fig:kiranti.derivations}  
 \end{figure}
@@ -1092,7 +1099,7 @@ Finally, in Khaling the verb \dhatu{ʔutt}{spoil (of grains, seeds)} has \ipa{-t
 
  
 
- \section{Conclusion}
+ \section*{Conclusion}
 The model of reconstruction proposed in the present paper can be expanded in several ways. 
 
 The first priority is to compile a dictionary of verb roots taking into account all available data on Kiranti languages (included derived nouns), on the model of the \textit{Lexikon der Indogermanischen Verben} (\citealt{liv}).
@@ -1105,10 +1112,10 @@ Third, research on the etymology of nouns in each individual language should be 
 Fourth, the patterns of analogical levelling attested in Kiranti verb roots may be relevant to research on the general principles of analogical levelling (\citealt{hill07ausgleich, hill14conditioned,jacques16ebde}).
 
 
-\section{Appendix} \label{sec:appendix}
+\section*{Appendix} \label{sec:appendix}
 The supplementary file provides 291 reconstructed proto-Kiranti verb roots. In reconstructions, [a|b|c] indicates that either \textit{a}, \textit{b} or \textit{c} are possible reconstructions. The chevron > indicates a derivation process, either anticausative (voicing of the initial), applicative (\ipa{-t} suffix), causative (\ipa{-s} suffix) or reflexive (\ipa{-si} suffix). The double chevron {>}{>} indicates an analogical change of inflectional class.
 
-The list does not include verbs only attested in one of the languages that have cognates outside of Kiranti (and thus should be reconstructed to Proto-Kiranti too) or in Kiranti languages other than the four target languages. These verbs are given here:\footnote{Japhug is from \citet{jacques15japhug} and Old Chinese is based on \citealt{bs14oc} with slight modifications. }
+The list does not include verbs only attested in one of the languages that have cognates outside of Kiranti (and thus should be reconstructed to Proto-Kiranti too) or in Kiranti languages other than the four target languages. These verbs are given here:\footnote{Japhug is from \citet{jacques16japhug} and Old Chinese is based on \citealt{bs14oc} with slight modifications. }
 
 \begin{itemize}
 \item Wambule \dhatu{li}{be heavy}: Japhug \ipa{rʑi}, Tibetan \ipa{ldʑid.po} `heavy'
@@ -1133,9 +1140,408 @@ The list does not include verbs only attested in one of the languages that have 
 \item Limbu \dhatu{lɛkt}{change}: Chinese \zh{易} *\ipa{lek} `change'.
 \item Limbu \dhatu{wa}{be, exist}: Chinese \zh{有} *\ipa{ɢwəʔ} `exist'. This root perhaps corresponds to the irrealis suffix -\ipa{w}- in Khaling, also found in past negative form (\citealt[1101-2]{jacques12khaling}). Note that in Limbu \dhatu{wa}{be, exist} is used in past perfect contexts (\citealt[87]{michailovsky02dico}); for another possible example of a former copula being grammaticalized as a negation suffix in Kiranti, see \citet{auwera17copula}.
 \end{itemize}
- 
-\bibliographystyle{unified}
-\bibliography{bibliogj}
+
+
+\section*{Acknowledgements}
+ I would like to thank Balthasar Bickel, Lukas Denk, Juho Pystynen, Marc Miyake, Martine Mazaudon, Boyd Michailovsky, Alexis Michaud, Amos Teo, Mikhail Zhivlov as well as two anonymous reviewers for useful comments on previous versions of this work. I am responsible for any remaining error. This research was funded by the HimalCo project(ANR-12-CORP-0006) and is related to the Labex EFL (PPC2 Evolutionary approaches to phonology: New goals and new methods (in diachrony and panchrony).
+
+\begin{thebibliography}{65}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{van~der Auwera \& Vossen(2017)}]{auwera17copula}
+van~der Auwera, Johan \& Frens Vossen. 2017.
+\newblock {K}iranti double negation: a copula conjecture.
+\newblock \emph{Linguistics of the Tibeto Burman Area} 40(1).
+
+\bibitem[{Baxter \& Sagart(2014)}]{bs14oc}
+Baxter, William~H. \& Laurent Sagart. 2014.
+\newblock \emph{{O}ld {C}hinese: a new reconstruction}.
+\newblock Oxford: Oxford University Press.
+
+\bibitem[{Bickel et~al.(2007{\natexlab{a}})Bickel, Banjade, Gaenszle, Lieven,
+  Paudyal, Rai, Rai, Rai \& Stoll}]{bickel07chintang}
+Bickel, Balthasar, Goma Banjade, Martin Gaenszle, Elena Lieven, Netra Paudyal,
+  Ichchha~Purna Rai, Manoj Rai, Novel~Kishore Rai \& Sabine Stoll.
+  2007{\natexlab{a}}.
+\newblock {F}ree prefix ordering in {C}hintang.
+\newblock \emph{Language} 83(1). 1--31.
+
+\bibitem[{Bickel \& Gaenszle(2015)}]{bickel15antipassive}
+Bickel, Balthasar \& Martin Gaenszle. 2015.
+\newblock {F}irst person objects, antipassives, and the political history of
+  the {S}outhern {K}irant.
+\newblock \emph{Journal of South Asian Languages and Linguistics} 2(1). 63--86.
+
+\bibitem[{Bickel et~al.(2007{\natexlab{b}})Bickel, Gaenzle, Rai, Rai, Rai, Rai
+  \& Sharma}]{bickel07puma}
+Bickel, Balthasar, Martin Gaenzle, Arjun Rai, Prem~Shoj Rai, Shree~Kumar Rai,
+  Vishnu Rai \& Narayan~P. Sharma. 2007{\natexlab{b}}.
+\newblock {T}wo {W}ays of {S}uspending {O}bject {A}greement in {P}uma:
+  {B}etween {I}ncorporation, {A}ntipassivization, and {O}ptional {A}greement.
+\newblock \emph{Himalayan Linguistics Journal} 7. 1--19.
+
+\bibitem[{Bloomfield(1925)}]{bloomfield25central}
+Bloomfield, Leonard. 1925.
+\newblock {O}n the sound-system of {C}entral {A}lgonquian.
+\newblock \emph{Language} 1(4). 130–156.
+
+\bibitem[{DeLancey(2010)}]{delancey10agreement}
+DeLancey, Scott. 2010.
+\newblock {T}owards a history of verb agreement in {T}ibeto-{B}urman.
+\newblock \emph{Himalayan Linguistics} 9(1). 1--39.
+
+\bibitem[{DeLancey(2014)}]{delancey14second}
+DeLancey, Scott. 2014.
+\newblock {S}econd person verb forms in {T}ibeto-{B}urman.
+\newblock \emph{Linguistics of the Tibeto-Burman Area} 37(1). 3 – 33.
+
+\bibitem[{DeLancey(2015)}]{delancey15complexity}
+DeLancey, Scott. 2015.
+\newblock {T}he {H}istorical {D}ynamics of {M}orphological {C}omplexity in
+  {T}rans-{H}imalayan.
+\newblock \emph{Linguistic Discovery} 13(2). 37--56.
+
+\bibitem[{Dempwolff(1934)}]{dempwolff34induktiver}
+Dempwolff, Otto. 1934.
+\newblock \emph{{V}ergleichende {L}autlehre des austronesischen {W}ortschatzes,
+  {B}and 1: {I}nduktiver {A}ufbau einer indonesischen {U}rsprache} Beihefte zur
+  Zeitschrift für Eingeborenen-Sprachen 15.
+\newblock Berlin: Dietrich Reimer.
+
+\bibitem[{Doornenbal(2009)}]{doornenbal09}
+Doornenbal, Marius. 2009.
+\newblock \emph{{A} {G}rammar of {B}antawa: {G}rammar, paradigm tables,
+  glossary and texts of a {R}ai language of {E}astern {N}epal}.
+\newblock Leiden: Leiden University dissertation.
+
+\bibitem[{van Driem(1987)}]{driem87}
+van Driem, George. 1987.
+\newblock \emph{{A} {G}rammar of {L}imbu}.
+\newblock Berlin and New York: Mouton De Gruyter.
+
+\bibitem[{van Driem(1990)}]{driem90r}
+van Driem, George. 1990.
+\newblock {T}he {F}all and {R}ise of the {P}honeme r in {H}imalayan
+  {L}anguages.
+\newblock \emph{Bulletin of the School of Oriental and African Studies} 53(1).
+  83--86.
+
+\bibitem[{van Driem(1993{\natexlab{a}})}]{driem93dumi}
+van Driem, George. 1993{\natexlab{a}}.
+\newblock \emph{{A} {G}rammar of {D}umi}.
+\newblock Berlin and New York: Mouton De Gruyter.
+
+\bibitem[{van Driem(1993{\natexlab{b}})}]{driem93agreement}
+van Driem, George. 1993{\natexlab{b}}.
+\newblock {T}he {P}roto-{T}ibeto-{B}urman verbal agreement system.
+\newblock \emph{Bulletin of the School of Oriental and African Studies} 61(2).
+  292--334.
+
+\bibitem[{Ferlus(1982)}]{ferlus82spirantisation}
+Ferlus, Michel. 1982.
+\newblock {S}pirantisation des obstruantes médiales et formation du système
+  consonantique du vietnamien.
+\newblock \emph{Cahiers de Linguistique - Asie Orientale} 11(1). 83--106.
+
+\bibitem[{Garnier(2010)}]{garnier10vocalisme}
+Garnier, Romain. 2010.
+\newblock \emph{{S}ur le vocalisme du verbe latin: étude synchronique et
+  diachronique}.
+\newblock Innsbruck: Institut für Sprachen und Literaturen der Universität
+  Innsbruck.
+
+\bibitem[{Hill(2007)}]{hill07ausgleich}
+Hill, Eugen. 2007.
+\newblock {P}roportionale {A}nalogie, paradigmatischer {A}usgleich und
+  {F}ormerweiterung: ein {B}eitrag zur {T}ypologie des morphologischen
+  {W}andels.
+\newblock \emph{Diachronica} 24(1). 81–118.
+
+\bibitem[{Hill(2010)}]{hill10synchronic}
+Hill, Nathan~W. 2010.
+\newblock {A}n overview of {O}ld {T}ibetan synchronic phonology.
+\newblock \emph{Transactions of the Philological Society} 108(2). 110--125.
+
+\bibitem[{Hill(2014{\natexlab{a}})}]{hill14voicing}
+Hill, Nathan~W. 2014{\natexlab{a}}.
+\newblock {A} note on voicing alternation in the {T}ibetan verbal system.
+\newblock \emph{Transactions of the Philological Society} 112(1). 1--4.
+
+\bibitem[{Hill(2014{\natexlab{b}})}]{hill14conditioned}
+Hill, Nathan~W. 2014{\natexlab{b}}.
+\newblock {G}rammatically conditioned sound change.
+\newblock \emph{Language and Linguistics Compass} 8(6). 211--229.
+
+\bibitem[{Hill(2014{\natexlab{c}})}]{hill14derivational}
+Hill, Nathan~W. 2014{\natexlab{c}}.
+\newblock {T}ibetan.
+\newblock In Rochelle Lieber \& Pavol Štekauer (eds.), \emph{{T}he {O}xford
+  {H}andbook of {D}erivational {M}orphology}, 620–630. Oxford: Oxford
+  University Press.
+
+\bibitem[{Huysmans(2011)}]{huysmans2011sampang}
+Huysmans, René. 2011.
+\newblock {T}he {S}ampang verbal agreement system.
+\newblock In Mark Turin \& Bettina Zeisler (eds.), \emph{{H}imalayan languages
+  and linguistics. {S}tudies in phonology, semantics, morphology and syntax},
+  vol. 5:12, 183--218. Leiden: Brill.
+
+\bibitem[{Jacques(2004)}]{jacques04these}
+Jacques, Guillaume. 2004.
+\newblock \emph{{P}honologie et morphologie du japhug ({R}gyalrong)}:
+  Université Paris VII - Denis Diderot dissertation.
+
+\bibitem[{Jacques(2012{\natexlab{a}})}]{jacques12agreement}
+Jacques, Guillaume. 2012{\natexlab{a}}.
+\newblock {A}greement morphology: the case of {R}gyalrongic and {K}iranti.
+\newblock \emph{Language and Linguistics} 13(1). 83--116.
+
+\bibitem[{Jacques(2012{\natexlab{b}})}]{jacques12internal}
+Jacques, Guillaume. 2012{\natexlab{b}}.
+\newblock {A}n {I}nternal {R}econstruction of {T}ibetan {S}tem {A}lternations.
+\newblock \emph{Transactions of the Philological Society} 110(2). 212–224.
+
+\bibitem[{Jacques(2013)}]{jacques13tropative}
+Jacques, Guillaume. 2013.
+\newblock {A}pplicative and tropative derivations in {J}aphug {R}gyalrong.
+\newblock \emph{Linguistics of the Tibeto-Burman Area} 36(2). 1--13.
+
+\bibitem[{Jacques(2014{\natexlab{a}})}]{jacques14antipassive}
+Jacques, Guillaume. 2014{\natexlab{a}}.
+\newblock {D}enominal affixes as sources of antipassive markers in {J}aphug
+  {R}gyalrong.
+\newblock \emph{Lingua} 138. 1--22.
+
+\bibitem[{Jacques(2014{\natexlab{b}})}]{jacques14snom}
+Jacques, Guillaume. 2014{\natexlab{b}}.
+\newblock {O}n {C}oblin's law.
+\newblock In Richard {VanNess Simmons} \& Newell~Ann {Van Auken} (eds.),
+  \emph{{S}tudies in {C}hinese and {S}ino-{T}ibetan {L}inguistics}, 155--166.
+  Taipei: Institute of Linguistics, Academia Sinica.
+
+\bibitem[{Jacques(2015{\natexlab{a}})}]{jacques15derivational.khaling}
+Jacques, Guillaume. 2015{\natexlab{a}}.
+\newblock {D}erivational morphology in {K}haling.
+\newblock \emph{Bulletin of Chinese Linguistics} 8(1). 78--85.
+
+\bibitem[{Jacques(2015{\natexlab{b}})}]{jacques15causative}
+Jacques, Guillaume. 2015{\natexlab{b}}.
+\newblock {T}he origin of the causative prefix in {R}gyalrong languages and its
+  implication for proto-{S}ino-{T}ibetan reconstruction.
+\newblock \emph{Folia Linguistica Historica} 36(1). 165–198.
+
+\bibitem[{Jacques(2015{\natexlab{c}})}]{jacques15spontaneous}
+Jacques, Guillaume. 2015{\natexlab{c}}.
+\newblock {T}he spontaneous-autobenefactive prefix in {J}aphug {R}gyalrong.
+\newblock \emph{Linguistics of the Tibeto Burman Area} 38(2). 271–291.
+
+\bibitem[{Jacques(2015-2016)}]{jacques16japhug}
+Jacques, Guillaume. 2015-2016.
+\newblock \emph{{D}ictionnaire {J}aphug-{C}hinois-{F}rançais, version 1.1}.
+\newblock Paris: Projet HimalCo.
+\newblock \urlprefix\url{http://himalco.huma-num.fr/}. Accessed 07-08-2017.
+
+\bibitem[{Jacques(2016{\natexlab{a}})}]{jacques16ebde}
+Jacques, Guillaume. 2016{\natexlab{a}}.
+\newblock {O}n the directionality of analogy in a {D}hegiha paradigm.
+\newblock \emph{International Journal of American Linguistics} 8(2). 239--248.
+
+\bibitem[{Jacques(2016{\natexlab{b}})}]{jacques16tonogenesis}
+Jacques, Guillaume. 2016{\natexlab{b}}.
+\newblock {T}onogenesis and tonal alternations in {K}haling.
+\newblock In Enrique~L. Palancar \& Jean~Léo Léonard (eds.), \emph{{T}one and
+  {I}nflection}, 41--66. Berlin: Mouton De Gruyter.
+
+\bibitem[{Jacques et~al.(2012)Jacques, Lahaussois, Michailovsky \&
+  Rai}]{jacques12khaling}
+Jacques, Guillaume, Aimée Lahaussois, Boyd Michailovsky \& Dhan~Bahadur Rai.
+  2012.
+\newblock {A}n overview of {K}haling verbal morphology.
+\newblock \emph{Language and Linguistics} 13(6). 1095--1170.
+
+\bibitem[{Jacques et~al.(2016)Jacques, Lahaussois \& Rai}]{jacques16si}
+Jacques, Guillaume, Aimée Lahaussois \& Dhan~Bahadur Rai. 2016.
+\newblock {R}eflexive paradigms in {K}haling.
+\newblock \emph{Linguistics of the Tibeto-Burman Area} 39(1). 33--48.
+
+\bibitem[{Jacques et~al.(2015)Jacques, Lahaussois, Rai \&
+  Kumar}]{jacques15khaling}
+Jacques, Guillaume, Aimée Lahaussois, Dhan~Bahadur Rai \& Yadav Kumar. 2015.
+\newblock \emph{{K}haling-{N}epali-{E}nglish {D}ictionary, version 1.0}.
+\newblock Paris: Projet HimalCo.
+\newblock \urlprefix\url{http://himalco.huma-num.fr/}. Accessed 07-08-2017.
+
+\bibitem[{Kongren(2007)}]{kongren07yakkha}
+Kongren, Ramjee. 2007.
+\newblock \emph{{Y}akkha-{N}epali-{E}nglish dictionary}.
+\newblock Kathmandu: Indigenous People Yakkha Organisation.
+
+\bibitem[{Kümmel(2007)}]{kuemmel07wandel}
+Kümmel, Martin~J. 2007.
+\newblock \emph{{K}onsonantenwandel: {B}austeine zu einer {T}ypologie des
+  {L}autwandels und ihre {K}onsequenzen fur die vergleichende
+  {R}ekonstruktion}.
+\newblock Wiesbaden: Dr. Ludwig Reichert Verlag.
+
+\bibitem[{Lahaussois(2009)}]{lahaussois09}
+Lahaussois, Aimée. 2009.
+\newblock {K}oyi {R}ai: {A}n initial grammatical sketch.
+\newblock \emph{Himalayan Linguistics Archive} 4. 1--33.
+
+\bibitem[{Lahaussois(2011)}]{lahaussois11thulung}
+Lahaussois, Aimée. 2011.
+\newblock {T}he {T}hulung {R}ai verbal system: an account of verb stem
+  alternation.
+\newblock \emph{Cahiers de Linguistique Asie Orientale} 40(2). 189--224.
+
+\bibitem[{Michailovsky(1985)}]{michailovsky85dental}
+Michailovsky, Boyd. 1985.
+\newblock {T}ibeto-burman dental suffixes: {E}vidence from {L}imbu ({N}epal).
+\newblock In Graham Thurgood, James~A. Matisoff \& David Bradley (eds.),
+  \emph{{L}inguistics of the {S}ino-{T}ibetan {A}rea, the state of the art},
+  363--375. Canberra : Pacific Linguistics.
+
+\bibitem[{Michailovsky(1988)}]{michailovsky88}
+Michailovsky, Boyd. 1988.
+\newblock \emph{{L}a langue hayu}.
+\newblock Paris: Editions du CNRS.
+
+\bibitem[{Michailovsky(1994)}]{michailovsky94stops}
+Michailovsky, Boyd. 1994.
+\newblock {M}anner vs place of articulation in the {K}iranti initial stops.
+\newblock In Hajime Kitamura, Tatsuo Nishida \& Nagano Yasuhiko (eds.),
+  \emph{{C}urrent {I}ssues in {S}ino-{T}ibetan {L}inguistics}, Osaka: National
+  Museum of Ethnology.
+
+\bibitem[{Michailovsky(1997)}]{michailovsky97deponent}
+Michailovsky, Boyd. 1997.
+\newblock {C}atégories verbales et intransitivité duale en limbu.
+\newblock \emph{Studi italiani di linguistica teorica e applicata} 26(2).
+  307--325.
+
+\bibitem[{Michailovsky(2002)}]{michailovsky02dico}
+Michailovsky, Boyd. 2002.
+\newblock \emph{{L}imbu-{E}nglish {D}ictionary}.
+\newblock Kathmandu: Mandala Book Point.
+
+\bibitem[{Michailovsky(2010)}]{michailovsky10kiranti}
+Michailovsky, Boyd. 2010.
+\newblock {P}reliminaries to the comparative study of the {K}iranti subgroup of
+  {T}ibeto-{B}urman.
+\newblock In \emph{{S}ino-{T}ibetan {C}omparative {S}tudies in the 21st
+  {C}entury {I}nternational {S}ymposium}, 145--170. Taipei.
+
+\bibitem[{Michailovsky(2012)}]{michailovsky12dumi}
+Michailovsky, Boyd. 2012.
+\newblock {I}nternal reconstruction of the {D}umi verb : {L}exical bases and
+  stem formation.
+\newblock \emph{Linguistics of the Tibeto-Burman Area} 35(2). 49--87.
+
+\bibitem[{Michaud(2008)}]{michaud08na}
+Michaud, Alexis. 2008.
+\newblock {P}honemic and tonal analysis of {Y}ongning {N}a.
+\newblock \emph{Cahiers de Linguistique - Asie Orientale} 37(2). 159--196.
+
+\bibitem[{Michaud(2017)}]{michaud17yongning}
+Michaud, Alexis. 2017.
+\newblock \emph{{T}one in {Y}ongning {N}a}.
+\newblock Berlin: Language Science Press.
+\newblock \urlprefix\url{http://langsci-press.org/catalog/book/109}. Accessed 07-08-2017.
+
+\bibitem[{Opgenort(2004{\natexlab{a}})}]{opgenort04wambule}
+Opgenort, Jean-Robert. 2004{\natexlab{a}}.
+\newblock \emph{{A} {G}rammar of {W}ambule}.
+\newblock Leiden: Brill.
+
+\bibitem[{Opgenort(2004{\natexlab{b}})}]{opgenort04implosives}
+Opgenort, Jean-Robert. 2004{\natexlab{b}}.
+\newblock {I}mplosive and preglottalized stops in {K}iranti.
+\newblock \emph{Linguistics of the Tibeto–Burman Area} 27(1). 1–27.
+
+\bibitem[{Opgenort(2005)}]{opgenort05jero}
+Opgenort, Jean-Robert. 2005.
+\newblock \emph{{A} grammar of {J}ero, with a historical comparative study of
+  the {K}iranti languages}.
+\newblock Leiden: Brill.
+
+\bibitem[{Rai(2011)}]{rai11dumi}
+Rai, Netramani. 2011.
+\newblock \emph{{D}umi-{N}epali-{E}nglish dictionary}.
+\newblock Baksila: Dumi Kirat Rai Phansikim.
+
+\bibitem[{Rai et~al.(2011)Rai, Rai, Paudyal, Schikowski, Bickel, Stoll,
+  Gaenszle, Banjade, Rai, Bhatta, Sauppe, Rai, Rai, Rai, Rai, Rai, Rai, Rai,
+  Rai, Rai, Rai, Rai, Pettigrew \& Dirksmeyer}]{rai11chintang}
+Rai, Novel~Kishore, Manoj Rai, Netra~Prasad Paudyal, Robert Schikowski,
+  Balthasar Bickel, Sabine Stoll, Martin Gaenszle, Goma Banjade, Ichchha~Purna
+  Rai, Toya~Nath Bhatta, Sebastian Sauppe, Rikhi~Maya Rai, Janak~Kumari Rai,
+  Las~Kumari Rai, Durga~Bahadur Rai, Ganesh Rai, Dayaram Rai, Durga~Kumari Rai,
+  Anita Rai, Chandra~Kumari Rai, Shanti~Maya Rai, Ravindra~Kumar Rai, Judy
+  Pettigrew \& Tycho Dirksmeyer. 2011.
+\newblock \emph{{C}hintang {D}ictionary and {G}rammar}.
+\newblock Kathmandu: Chintang Language Research Program.
+
+\bibitem[{Rix et~al.(2001)Rix, Kümmel, Zehnder, Lipp \& Schirmer}]{liv}
+Rix, Helmut, Martin Kümmel, Thomas Zehnder, Reiner Lipp \& Brigitte Schirmer.
+  2001.
+\newblock \emph{{L}exikon der indogermanischen {V}erben}.
+\newblock Wiesbaden: Dr. Ludwig Reichert Verlag.
+
+\bibitem[{Rutgers(1998)}]{rutgers98yamphu}
+Rutgers, Roland. 1998.
+\newblock \emph{{Y}amphu, {G}rammar, {T}exts and {L}exicon}.
+\newblock Leiden: Research School CNWS.
+
+\bibitem[{Sagart(1999)}]{sagart99roc}
+Sagart, Laurent. 1999.
+\newblock \emph{{T}he roots of {O}ld {C}hinese}.
+\newblock Amsterdam and Philadelphia: Benjamins.
+
+\bibitem[{Schackow(2008)}]{schackow08puma}
+Schackow, Diana. 2008.
+\newblock \emph{{C}lause linkage in {P}uma ({K}iranti)}.
+\newblock Leipzig: Universität Leipzig MA thesis.
+
+\bibitem[{Schackow(2015)}]{schackow15yakkha}
+Schackow, Diana. 2015.
+\newblock \emph{{A} grammar of {Y}akkha} Studies in Diversity Linguistics 7.
+\newblock Berlin: Language Science Press.
+\newblock \urlprefix\url{http://langsci-press.org/catalog/book/66}. Accessed 07-08-2017.
+
+\bibitem[{Starostin(1994-2000)}]{starostin94kiranti}
+Starostin, Sergei~A. 1994-2000.
+\newblock {P}roto-{K}iranti reconstruction (online database).
+\newblock \urlprefix\url{http://starling.rinet.ru/}. Accessed 07-08-2017.
+
+\bibitem[{Tolsma(2006)}]{tolsma06kulung}
+Tolsma, Gerard~Jacobus. 2006.
+\newblock \emph{{A} {G}rammar of {K}ulung}.
+\newblock Leiden: Brill.
+
+\bibitem[{Widmer(2014)}]{widmer14bunan}
+Widmer, Manuel. 2014.
+\newblock \emph{{A} descriptive grammar of {B}unan}.
+\newblock Bern: University of Bern dissertation.
+
+\bibitem[{Winter \& Rai(2003)}]{winter03bantawa}
+Winter, Werner \& Novel~Kishore Rai. 2003.
+\newblock \emph{{A} {B}antawa {D}ictionary}.
+\newblock Berlin and New York: Mouton De Gruyter.
+
+\bibitem[{Wohlgemuth(2009)}]{wohlgemuth09verbal}
+Wohlgemuth, Jan. 2009.
+\newblock \emph{{A} {T}ypology of {V}erbal {B}orrowings}.
+\newblock Berlin and New York: Mouton de Gruyter.
+
+\end{thebibliography}
+
+
 \end{document}
 
 %renma (rentu) vt to tell off, to rebuke, reŋt keep away from oneself, actively dislike
