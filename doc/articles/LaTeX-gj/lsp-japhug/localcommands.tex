@@ -1,0 +1,49 @@
+%add all your local new commands to this file
+
+\newcommand{\smiley}{:)}
+
+\renewbibmacro*{index:name}[5]{%
+  \usebibmacro{index:entry}{#1}
+    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
+% \newcommand{\noop}[1]{}
+
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+\newcommand{\appref}[1]{Appendix \ref{#1}}
+\newcommand{\fnref}[1]{Appendix \ref{#1}}
+\newcommand{\regel}[1]{#1}
+\newcommand{\vernacular}[1]{\emph{#1}}
+\newcommand{\gloss}[1]{#1}
+
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\mbox{\phon/#1/}}  
+\newcommand{\phonet}[1]{\mbox{\phon[#1]}}  
+\newcommand{\ipab}[1]{{\phon#1}}  
+\newcommand{\japhug}[2]{\textit{\phon#1} `#2'}  
+\newcommand{\deux}[1]{\ipa{#1}\addtocounter{2clusters}{1}}
+\newcommand{\trois}[1]{\ipa{#1}\addtocounter{3clusters}{1}}
+ 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+
+\newcommand{\tib}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newcommand{\idph}[1]{\cellcolor{gray}\textbf{#1}}
+\newcommand{\tld}{\textasciitilde{}}
+
+\XeTeXlinebreaklocale "zh" %使用中文换行
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ \newcommand{\resetcounters}[2]{
+\newcounter{#1}
+\newcounter{#2}
+\setcounter{#1}{\value{2clusters}}
+\setcounter{#2}{\value{3clusters}}
+ \setcounter{2clusters}{0}
+  \setcounter{3clusters}{0}
+}
+ \newcommand{\addition}[2]{\ADD{\value{#1}}{\value{#2}}{\solution}\solution}
