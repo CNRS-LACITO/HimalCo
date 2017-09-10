@@ -1,16 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<!--LIEN ENTRE LE FICHIER XML ET LA FEUILLE DE STYLE-->
-<?xml-stylesheet type="text/xsl" href="view_text.xsl"?>
-
 <WORDLIST id="crdo-NRU_F4_DEM_CL3" xml:lang="nru">
 <HEADER>
-
- <!--EMPLACEMENT DU FICHIER AUDIO (à mettre dans le répertoire "audio")-->
-<SOUNDFILE href="../audio/crdo-NRU_F4_DEM_CL3.wav"></SOUNDFILE>
-<TITLE xml:lang="eng">Demonstrative-plus-classifier phrases, III</TITLE>
-<TITLE xml:lang="cmn">指示代词与量词, III</TITLE>
-<TITLE xml:lang="fra">Démonstratif et classificateurs, III</TITLE>
+	<SOUNDFILE href="../audio/crdo-NRU_F4_DEM_CL3.wav"></SOUNDFILE>
+	<TITLE xml:lang="eng">Demonstrative-plus-classifier phrases, III</TITLE>
+	<TITLE xml:lang="cmn">指示代词与量词, III</TITLE>
+	<TITLE xml:lang="fra">Démonstratif et classificateurs, III</TITLE>
 </HEADER>
 <W id="F4_DEM_CL3_001">
 	<FORM>ʈʂʰɯ˧-dv̩˧˥</FORM>
@@ -276,7 +269,7 @@
 	<FORM>ʈʂʰɯ˧-pɤ˥</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the demonstrative, and tone of the classifier (separated by a space): H L2"/>
 	<NOTE xml:lang="en" message="Output tone: H$ / H#"/>
-	<NOTE xml:lang="en" message = "This combination allows two variants: H# and H$. From the surface tones, there is no way to tell which one is illustrated by this token, since both H# and H$ yield a surface-phonological M.H string. *MH# is not an acceptable variant."/>
+	<NOTE xml:lang="en" message = "This combination allows two variants: H# and H$. From the surface tones, there is no way to tell which one is illustrated by this token, since both H# and H$ yield a surface-phonological M.H string. ‡MH# is not an acceptable variant."/>
 	<TRANSL xml:lang="fr">ce+classificateur des éléments de menuiserie/charpente</TRANSL>
 	<TRANSL xml:lang="zh">这个（门，梯子）</TRANSL>
 	<TRANSL xml:lang="en">this+classifier for ladders, doors, etc.</TRANSL>
@@ -286,7 +279,7 @@
 	<FORM>ʈʂʰɯ˧-ʁo˥</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the demonstrative, and tone of the classifier (separated by a space): H L2"/>
 	<NOTE xml:lang="en" message="Output tone: H$ / H#"/>
-	<NOTE xml:lang="en" message = "This combination allows two variants: H# and H$. From the surface tones, there is no way to tell which one is illustrated by this token, since both H# and H$ yield a surface-phonological M.H string. *MH# is not an acceptable variant."/>
+	<NOTE xml:lang="en" message = "This combination allows two variants: H# and H$. From the surface tones, there is no way to tell which one is illustrated by this token, since both H# and H$ yield a surface-phonological M.H string. ‡MH# is not an acceptable variant."/>
 	<TRANSL xml:lang="fr">ce+classificateur des variétés</TRANSL>
 	<TRANSL xml:lang="zh">这种</TRANSL>
 	<TRANSL xml:lang="en">this+classifier for types</TRANSL>
@@ -365,27 +358,30 @@
 <AUDIO start="376.517" end="377.255"/>
 </W>
 <W id="F4_DEM_CL3_039">
-	<FORM>ʈʂʰɯ˧-ʈv̩˥</FORM>
+	<FORM>&lt;ʈʂʰv̩˧-ʈv̩˥&gt;[ʈʂʰɯ˧-ʈv̩˥]</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the demonstrative, and tone of the classifier (separated by a space): H L2"/>
 	<NOTE xml:lang="en" message="Output tone: H#"/>
+	<NOTE xml:lang="en" message="The demonstrative's rhyme is mispronounced as [v̩˧]: this is a form of interference with the second syllable, which is in focus and hence the object of more attention on the part of the speaker."/>
 	<TRANSL xml:lang="fr">ce+classificateur des quartiers</TRANSL>
 	<TRANSL xml:lang="zh">这大块</TRANSL>
 	<TRANSL xml:lang="en">this+classifier for large chunks</TRANSL>
 <AUDIO start="382.839" end="383.53"/>
 </W>
 <W id="F4_DEM_CL3_040">
-	<FORM>ʈʂʰɯ˧-ʈv̩˥</FORM>
+	<FORM>&lt;ʈʂʰv̩˧-ʈv̩˥&gt;[ʈʂʰɯ˧-ʈv̩˥]</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the demonstrative, and tone of the classifier (separated by a space): H L2"/>
 	<NOTE xml:lang="en" message="Output tone: H#"/>
+	<NOTE xml:lang="en" message="The demonstrative's rhyme is mispronounced as [v̩˧]: this is a form of interference with the second syllable, which is in focus and hence the object of more attention on the part of the speaker."/>
 	<TRANSL xml:lang="fr">ce+classificateur des quartiers</TRANSL>
 	<TRANSL xml:lang="zh">这大块</TRANSL>
 	<TRANSL xml:lang="en">this+classifier for large chunks</TRANSL>
 <AUDIO start="387.942" end="388.592"/>
 </W>
 <W id="F4_DEM_CL3_041">
-	<FORM>ʈʂʰɯ˧-ʈv̩˥ ɲi˩</FORM>
+	<FORM>&lt;ʈʰv̩˧-ʈv̩˥ ɲi˩&gt;[tʰv̩˧-ʈv̩˥ ɲi˩]</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the demonstrative, and tone of the classifier (separated by a space): H L2"/>
 	<NOTE xml:lang="en" message="Output tone: H#"/>
+	<NOTE xml:lang="en" message="The demonstrative's initial is mispronounced as [ʈ] instead of [t]: this is a form of interference with the second syllable, which is in focus and hence the object of more attention on the part of the speaker."/>
 	<TRANSL xml:lang="fr">ce+classificateur des quartiers+cop.</TRANSL>
 	<TRANSL xml:lang="zh">是这大块</TRANSL>
 	<TRANSL xml:lang="en">this+classifier for large chunks+cop.</TRANSL>
@@ -740,7 +736,7 @@
 <AUDIO start="23.243" end="24.387"/>
 </W>
 <W id="F4_DEM_CL3_078">
-	<FORM>æ˩ tʰv̩˧-mi˥</FORM>
+	<FORM>æ̃˩ tʰv̩˧-mi˥</FORM>
 	<NOTE xml:lang="en" message="Input tones: tone of the noun, the demonstrative, and the classifier (separated by spaces): LM H L2"/>
 	<NOTE xml:lang="en" message="Output tone: L.M.H (LM+H#)"/>
 	<NOTE xml:lang="en" message = "The output tone for the entire group is: LM+H#, hence /æ˩ tʰv̩˧-mi˥ ɲi˩/ when in association with the copula."/>
