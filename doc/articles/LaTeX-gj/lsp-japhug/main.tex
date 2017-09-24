@@ -5,8 +5,6 @@
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-% Everything following a % is ignored
-% Some lines start w--ith %. Remove the % to include them
 
 \documentclass[output=book,
   nonflat,
@@ -21,9 +19,6 @@ showindex
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% put all additional commands you need in the 
-% following files. {I}f you do not know what this might 
-% mean, you can safely ignore this section
 
 \input{localmetadata.tex}
 \input{localpackages.tex}
@@ -35,14 +30,11 @@ showindex
 %%%             Frontmatter                      %%%
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%\usepackage{lipsum}
 \begin{document}     
 \input{localcommands.tex} 
  
-
-\maketitle                
-\frontmatter
-% %% uncomment if you have preface and/or acknowledgements
+%\maketitle                
+%\frontmatter
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 \tableofcontents
@@ -50,7 +42,7 @@ showindex
 % \include{chapters/acknowledgments}
 % \include{chapters/abbreviations} 
 \mainmatter         
-  
+\linenumbers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                              %%%
@@ -59,17 +51,19 @@ showindex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\include{chapters/1-01}  %The Japhug language
 %\include{chapters/1-02} %The Japhug Corpus
-\include{chapters/2} %Phonology
-%\include{chapters/3-01} %Nominal morphology
+%\include{chapters/2-01} %Phonological inventory 
+\include{chapters/2-02} %Consonant clusters and partial reduplication
+%\include{chapters/2-03} %Syllable structure and sandhi
+\include{chapters/3-01} %Nominal morphology
 \include{chapters/3-02} %Pronouns, Demonstratives and Indefinites
 %\include{chapters/3-03} %Numerals and classifiers
 %\include{chapters/3-04} %The noun phrase
 %\include{chapters/3-05} %Ideophones
 %\include{chapters/4-01} %The verbal template
 %\include{chapters/4-02} %Person indexation
-%\include{chapters/4-03} %Orientation and associated motion
+\include{chapters/4-03} %Orientation and associated motion
 %\include{chapters/4-04} %Non-finite verbal morphology
-%\include{chapters/4-05} %Voice derivations
+\include{chapters/4-05} %Voice derivations
 %\include{chapters/4-06} %Denominal derivations
 %\include{chapters/4-07} %TAME
 %\include{chapters/4-08} %Other verbal categories
@@ -81,7 +75,6 @@ showindex
 %\include{chapters/5-07} %Sentence final particules
 %\include{chapters/6} %Japhug in Sino-Tibetan perspective
 
-% % copy the lines above and adapt as necessary
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                              %%%
@@ -94,9 +87,4 @@ showindex
 \input{backmatter.tex} 
 \end{document} 
 
-% you can create your book by running
-% xelatex main.tex
-%
-% you can also try a simple 
-% make
-% on the commandline
+
