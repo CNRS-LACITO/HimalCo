@@ -2529,7 +2529,7 @@
 \xe There seems to be a flood / landslide out on the mountain!
 \xn 山上的水爆发了的样子！（激流流得很冲，好像山肚子爆炸了一样）/山上好像有了泥石流！
 \xf On dirait qu'il y a une coulée de boue / un glissement de terrain sur la montagne!
-\dt 13/May/2017
+\dt 02/Jun/2017
 
 \lx bi˧ɕi˧kv̩˥
 \sf <nb="2011"> 197
@@ -3048,7 +3048,7 @@
 \pdl classifier
 \pdv ɭɯ˧
 \pdc <langue="fra"> objets ronds
-\de Small slope at the edge of a field; one can walk on it, sit on it, put objects down here... In the old times, when land was abundant, peasants would leave these small areas uncultivated. Today, peasants tend to plane them down to enlarge cultivated fields.
+\de Small slope at the edge of a field; one can walk on it, sit on it, put objects down here… In the old times, when land was abundant, peasants would leave these small areas uncultivated. Today, peasants tend to plane them down to enlarge cultivated fields.
 \ge small_slope
 \dn 过去，自然形成的小坡，便于农民坐着休息、放东西。现在用拖拉机拉平，成田地。
 \gn 小坡（不种庄稼）
@@ -5951,7 +5951,7 @@
 \ton L
 \lc ɕjɤ˩ɕjɤ˧˥
 \so <print="n"> F4
-\nt <type="hist" print="n"> xxxxama: premier exemple: ss doute: ...mɤ˩-zo˩˥  'Il ne faut pas me maltraiter' auparavant: 你对我不好！
+\nt <type="hist" print="n"> xxxxama: premier exemple: ss doute: …mɤ˩-zo˩˥  'Il ne faut pas me maltraiter' auparavant: 你对我不好！
 \va <speaker="F5"> ID.
 \va <speaker="M21"> ID.
 \va <speaker="M23"> ID.
@@ -10955,9 +10955,9 @@
 \xn 好几天
 \xf beaucoup de jours, longtemps
 \xv dʑɤ˩-so˥ ɭɯ˩
-\xe many...
+\xe many…
 \xn 好几……
-\xf beaucoup de...
+\xf beaucoup de…
 \dt 24/Apr/2017
 
 \lx dʑɤ˩tsʰi˧-ɖɯ˩mɑ˩
@@ -18354,7 +18354,7 @@
 \xn 扬东西
 \xf vanner des choses
 \xc PHONO
-\xc <langue="fra"> expression élicitée à contrecoeur, pour distinguer la catégorie tonale. Cette expression n'est pas usuelle, mais elle est bien formée, tandis qu'il est tout à fait exclu de dire |fv{/*tso˧tso˧ hæ̃˧/}.
+\xc <langue="fra"> expression élicitée à contrecoeur, pour distinguer la catégorie tonale. Cette expression n'est pas usuelle, mais elle est bien formée, tandis qu'il est tout à fait exclu de dire |fv{/*tso˧~tso˧ hæ̃˧/}.
 \dt 02/Sep/2015
 
 \lx hæ˩α
@@ -20613,7 +20613,7 @@
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
 \nt <type="hist" print="n"> (en 2006, noté hwæ˧, pensé que c'était confirmé)(confirmé en 2012: est un ton L)
-\np tso˧tso˧ hwæ˥: s'oppose par le ton à: tso˧tso˧ hwæ˩ “acheter des choses"
+\np tso˧~tso˧ hwæ˥: s'oppose par le ton à: tso˧~tso˧ hwæ˩ “acheter des choses"
 \ton Lα
 \so <print="n"> F4
 \va <speaker="F5"> ID.
@@ -21310,7 +21310,7 @@
 \lc hwɤ˩˥
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
-\nt <type="hist" print="n"> (d'abord noté /hĩ˥ki˥ tso˧tso˧ hwɤ˥/) (ton vérifié en 09, n'est pas un ton 4)(confirmé en 2012: est un ton L)
+\nt <type="hist" print="n"> (d'abord noté /hĩ˥ki˥ tso˧~tso˧ hwɤ˥/) (ton vérifié en 09, n'est pas un ton 4)(confirmé en 2012: est un ton L)
 \ton Lα
 \so <print="n"> F4
 \va <speaker="M23"> ID.
@@ -22636,7 +22636,7 @@
 \ps v
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
-\nt <type="hist" print="n"> (tons vérifiés en 09); notes anciennes: hi˩mi˩˧ tsu˧tsu˧jɤ˧˥ “la langue lèche quelque chose", hi˩mi˩ku˧ɳɯ˩ tso˧tso˧ jɤ˧˥
+\nt <type="hist" print="n"> (tons vérifiés en 09); notes anciennes: hi˩mi˩˧ tsu˧tsu˧jɤ˧˥ “la langue lèche quelque chose", hi˩mi˩ku˧ɳɯ˩ tso˧~tso˧ jɤ˧˥
 \ton MH
 \lc jɤ˧˥
 \so <print="n"> F4
@@ -22658,7 +22658,7 @@
 \xn 舔食品
 \xf lécher de la nourriture
 \rf F5
-\xv tso˧tso˧ ɖɯ˧-kʰwɤ˥ jɤ˩-ze˩
+\xv tso˧~tso˧ ɖɯ˧-kʰwɤ˥ jɤ˩-ze˩
 \xe (S)he has licked something.
 \xn 他舔了一个东西。
 \xf (elle/il) a léché quelque chose
@@ -24422,7 +24422,7 @@
 \lc kɤ˧kɤ˩
 \so <print="n"> F4
 \va <speaker="F5"> ID.
-\vf a) tso˧tso˧gwɤ˩˥ tʰi˩ tsɯ˥
+\vf a) tso˧~tso˧ gwɤ˩˥ tʰi˩ tsɯ˥
 \vf +ze˩
 \vf b) kɤ˥kɤ˧ tʰi˩ tsɯ˥, kɤ˥kɤ˧ tʰi˩ tsɯ˥ ze˩
 \va <speaker="M21"> ID.
@@ -26235,7 +26235,7 @@
 \lc kʰv̩˧
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
-\nt <type="hist" print="n"> (d'abord noté ˥) (tv en 09; notation ancienne: /hĩ˥ bv̩˥ tso˧tso˧ kʰv̩˥ / tso˧tso˧ kʰv̩˥) (avant janvier 2011, noté comme un ton M; corrigé en vérifiant dans les divers cadres)
+\nt <type="hist" print="n"> (d'abord noté ˥) (tv en 09; notation ancienne: /hĩ˥ bv̩˥ tso˧~tso˧ kʰv̩˥ / tso˧~tso˧ kʰv̩˥) (avant janvier 2011, noté comme un ton M; corrigé en vérifiant dans les divers cadres)
 \ton H
 \so <print="n"> F4
 \va <speaker="F5"> ID.
@@ -36972,7 +36972,7 @@
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
 \nt <type="hist" print="n"> /ɖɯ˧ ɲi˧ ɻ̍˥/
-\nt <type="hist" print="n"> hĩ˥ njɤ˥ ki˥ tso˧tso˧ ɲi˧ tsʰɯ˥
+\nt <type="hist" print="n"> hĩ˥ njɤ˥ ki˥ tso˧~tso˧ ɲi˧ tsʰɯ˥
 \np sens plus large que 1354b: est “demander", d'où l'emploi dans le sens de “emprunter"
 \ton H
 \lc ɲi˧
@@ -46899,7 +46899,7 @@
 \xf association avec des numéraux, de 1 à 10
 \dt 30/Apr/2017
 
-\lx qʰv̩˧tʰv#˥
+\lx qʰv̩˧tʰv̩#˥
 \ph kheutu
 \ps n
 \cf qʰv̩˧tʰv̩#˥
@@ -46986,7 +46986,7 @@
 \ps v
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
-\nt <type="hist" print="n"> (tv; avant 09, noté: kʰʶv̩˩kʰʶv̩˩˥ puis ˩ ˩˧), tso˧tso˧qʰv̩˥qʰv̩˩ (+ze˩), lə˧qʰv̩˩qʰv̩˩ (premières notes: “læ˧kʰʶv̩˧kʰʶv̩˩", par erreur) le˥kʰʶv̩˩kʰʶv̩˩ (corrigé en 2007; notation 2006: le˧ kʰʶv̩˧kʰʶv̩˩)
+\nt <type="hist" print="n"> (tv; avant 09, noté: kʰʶv̩˩kʰʶv̩˩˥ puis ˩ ˩˧), tso˧~tso˧qʰv̩˥qʰv̩˩ (+ze˩), lə˧qʰv̩˩qʰv̩˩ (premières notes: “læ˧kʰʶv̩˧kʰʶv̩˩", par erreur) le˥kʰʶv̩˩kʰʶv̩˩ (corrigé en 2007; notation 2006: le˧ kʰʶv̩˧kʰʶv̩˩)
 \nt <type="hist" print="n"> kʰʶv̩˩kʰʶv̩˩˥, læ˥kʰʶv̩˩kʰʶv̩˩ +ze˩ (corrigé en 2007; notation 2006: le˧ kʰʶv̩˧kʰʶv̩˩)
 \ton MH
 \lc qʰv̩˩qʰv̩˧˥
@@ -54847,7 +54847,7 @@
 \xf étudier un peu
 \xc
 \xv le˧-so˩-ɳɯ˩, | kv̩˧ ɲi˥-mæ˩!
-\xe By learning, one becomes able (to do things)! (About the necessity of schooling and learning: those who do not learn computers, foreign languages... are unable to find a good job.)
+\xe By learning, one becomes able (to do things)! (About the necessity of schooling and learning: those who do not learn computers, foreign languages… are unable to find a good job.)
 \xn 通过学习，就会了！
 \xf En apprenant, on devient capable (de réaliser toutes sortes de choses!) (Contexte: discussion au sujet de la nécessité de l'éducation et des apprentissages, sans lesquels on ne peut trouver une bonne situation dans la société.)
 \sn 2
@@ -55156,7 +55156,7 @@
 \xn 削洋芋皮
 \xf peler des patates
 \rf F5
-\xv tso˧tso˧ ɣɯ˥ʂɯ˩
+\xv tso˧~tso˧ ɣɯ˥ʂɯ˩
 \xe to peel things
 \xn 削东西
 \xf éplucher des choses
@@ -67067,7 +67067,7 @@
 \gf doué
 \dt 07/Oct/2015
 
-\lx tso˧tso#˥
+\lx tso˧~tso#˥
 \sf <nb="B"> 483
 \sf <nb="B"> (aussi
 \sf <nb="B"> ancien
@@ -67260,7 +67260,7 @@
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
 \nt <type="hist" print="n"> (verbe d'abord noté dzo˩˥, par erreur)(confirmé en 2012: est un ton L)
-\nt <type="hist" print="n"> Roselle: “tso˩a ‘ to build a wall, a bridge…' This is a homophone of ‘to create'. I am not certain if they are the same item or not. I suspect so, but can't be certain." 2017: paraît bien être un mot particulier pour 'construire un escalier, un pont, un chemin'... c'est-à-dire une voie de communication: un ouvrage d'art qui permet de franchir un obstacle, traverser un espace...
+\nt <type="hist" print="n"> Roselle: “tso˩a ‘ to build a wall, a bridge…' This is a homophone of ‘to create'. I am not certain if they are the same item or not. I suspect so, but can't be certain." 2017: paraît bien être un mot particulier pour 'construire un escalier, un pont, un chemin'… c'est-à-dire une voie de communication: un ouvrage d'art qui permet de franchir un obstacle, traverser un espace…
 \ton Lα
 \lc tso˩˥
 \so <print="n"> F4
@@ -69919,7 +69919,7 @@
 \ton H.L
 \sd <langue="fra"> verbe
 \sd <langue="eng"> verb
-\nt <type="hist" print="n"> Question 2017 : le ton ne serait-il pas H.L? Essayer de le faire précéder de l'accompli /le.../. Attendu: M.H.L. Réponse: OUI, est H.L: mɤ˧-ʈʂwɤ˥ʈʂwɤ˩.
+\nt <type="hist" print="n"> Question 2017 : le ton ne serait-il pas H.L? Essayer de le faire précéder de l'accompli /le…/. Attendu: M.H.L. Réponse: OUI, est H.L: mɤ˧-ʈʂwɤ˥ʈʂwɤ˩.
 \so <print="n"> F4
 \de To touch.
 \ge to_touch
@@ -77079,11 +77079,11 @@
 \ton ?
 \lc qɑ˧˥
 \so <print="n"> F4
-\de topic marker: as for... This morpheme is systematically accompanied by intonational focalization of the preceding word.
+\de topic marker: as for… This morpheme is systematically accompanied by intonational focalization of the preceding word.
 \ge as_for
 \dn 关于……
 \gn 关于……
-\df marqueur de topicalisation: en ce qui concerne... Ce marqueur est systématiquement accompagné d'une focalisation intonative du mot qui précède.
+\df marqueur de topicalisation: en ce qui concerne… Ce marqueur est systématiquement accompagné d'une focalisation intonative du mot qui précède.
 \gf |fg{top}
 \rf BuriedAlive2.39
 \xv le˧-nv̩˥ F -qɑ˩
@@ -77091,19 +77091,19 @@
 \xn 因为他好像知道（那件事）的！
 \xf En fait, il était au courant de tout!
 \xv le˧-ʈʂæ˧˥ F -qɑ˩
-\xe As for the installation / concerning the process of installing...
+\xe As for the installation / concerning the process of installing…
 \xn 关于安装，那件事……
-\xf pour ce qui est de l'installation...
+\xf pour ce qui est de l'installation…
 \xc PHONO
 \xv le˧-bi˧ F -qɑ˧˥
-\xe as for going...
+\xe as for going…
 \xn 关于去……
-\xf pour ce qui est d'aller...
+\xf pour ce qui est d'aller…
 \xc PHONO
-\xv le˧-dzi˩ F -qɑ˩...
-\xe as for sitting...
+\xv le˧-dzi˩ F -qɑ˩…
+\xe as for sitting…
 \xn 关于坐……
-\xf pour ce qui est de s'asseoir...
+\xf pour ce qui est de s'asseoir…
 \xc PHONO
 \dt 09/May/2017
 
@@ -77680,7 +77680,7 @@
 \lc --
 \sd <langue="fra"> morphosyntaxe
 \sd <langue="eng"> morphosyntax
-\nt <type="sem"> serait le même morphème/élément que dans fv:/tso˧tso˧/ «truc, bidule», selon F4
+\nt <type="sem"> serait le même morphème/élément que dans fv:/tso˧~tso˧/ «truc, bidule», selon F4
 \so <print="n"> F4
 \de Nominalizer.
 \ge |fg{nmlz}
