@@ -1,0 +1,89 @@
+
+\documentclass{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newcommand{\Y}{\Checkmark} 
+\newcommand{\N}{} 
+\newcommand{\jpg}[2]{\ipa{#1} `#2'}  
+\newcommand{\refb}[1]{(\ref{#1})}
+\newcommand{\tld}{\textasciitilde{}}
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+
+ \begin{document} 
+\title{Clefts and pseudo-clefts in Japhug}
+\author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
+\maketitle
+
+\begin{exe}
+\ex \label{ex:aZo.pWnWmtota}
+\gll
+\ipa{kɯki}	\ipa{tɕʰeme}	\ipa{ki}	\ipa{ndɤre}	\ipa{aʑɯɣ}	\ipa{a-pɯ-ŋu}	\ipa{tʂaŋ}	\ipa{ma}	\ipa{tɕe}	\ipa{aʑo}	\ipa{pɯ-nɯmto-t-a}	\ipa{ɕti}	\ipa{tɕe}	\\
+\textsc{dem}.\textsc{prox} girl \textsc{dem}.\textsc{prox} \textsc{lnk}  \textsc{1sg}:\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{1sg} \textsc{pfv}-find-\textsc{tr}:\textsc{pst}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
+\glt `It is I who found the girl, it is fair that she should be mine.' (140517 buaishuohua, 101)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:mAkWnaXtCWG}
+\gll \ipa{tɕeri}	[\ipa{mɤ-kɯ-naχtɕɯɣ}]	\ipa{tɕe,}	\ipa{ɯ-ndzrɯ}	\ipa{ɣɤʑu} \\
+but \textsc{neg}-\textsc{nmlz}:S/A-be.similar \textsc{lnk} \textsc{3sg}.\textsc{poss}-claw exist:\textsc{sens} \\
+\glt `What is different is that it has claws.' (21-pri, 37)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:kAnWmga.nW}
+\gll [\ipa{tɕe}	\ipa{paʁ}	\ipa{ndɤre}	\ipa{stu}	\ipa{kɤ-nɯmga}]	\ipa{nɯ}	\ipa{ɯ-ɕa}	\ipa{ŋu}	\ipa{qʰe} \\
+\textsc{lnk} pig \textsc{lnk} most \textsc{nmlz}:S/A-want.for \textsc{dem} \textsc{3sg}.\textsc{poss}-meat be:\textsc{fact} \textsc{lnk} \\
+\glt `Pigs are (raised) for their meat.' (05-paR, 100)
+\end{exe}
+
+
+\begin{exe}
+\ex \label{ex:jAkWGe.nW}
+\gll [\ipa{stu}	\ipa{kɯ-mɤku}	\ipa{jɤ-kɯ-ɣe}]	\ipa{nɯ}	\ipa{rɟɤlpu}	\ipa{pjɤ-ŋu.}	  \\
+most \textsc{nmlz}:S/A-be.before \textsc{pfv}-\textsc{nmlz}:S/A-come[II] \textsc{dem} king \textsc{ifr}.\textsc{ipfv}-be \\
+\glt `The one who came first was the king.' (140514 xizajiang he lifashi, 66)
+\end{exe}
+
+\begin{exe}
+   \ex   \label{ex:nWkArga}  
+\gll [\ipa{pɣa}  	\ipa{ra}  	\ipa{nɯ-kɤ-rga}]  	\ipa{nɯ}  	\ipa{qaj}  	\ipa{ntsɯ}  	\ipa{ŋu}  \\
+bird \textsc{pl} \textsc{3pl-nmlz:P}-like \textsc{dem} wheat always be:\textsc{fact} \\
+\glt `(The food) that birds like is always wheat (not barley).' (23 pGAYaR, 29)
+\end{exe} 
+   
+   %iɕqha <yazi> tɤ-mu kɯ ku-ɕɯm nɯnɯ, <tiane> ɣɯ ɯ-ŋgɯm pjɤ-ɕti rca wo matɕi.
+
+\begin{exe}
+\ex   \label{ex:WkWsWmphWl}  
+\gll \ipa{tɕeri}	[\ipa{nɯnɯ}	\ipa{ɯ-kɯ-sɯ-mpʰɯl}]	\ipa{nɯ}	\ipa{li}	\ipa{ɯ-zrɤm}	\ipa{ɲɯ-ɕti}	\ipa{ma}	\ipa{ɯ-rɣi}	\ipa{ɲɯ-maʁ}  \\
+but \textsc{dem} \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:S/A-\textsc{caus}-reproduce \textsc{dem} again  \textsc{3sg}.\textsc{poss}-root \textsc{sens}-be.\textsc{affirm} \textsc{lnk} \textsc{3sg}.\textsc{poss}-seeds \textsc{sens}-not.be \\
+\glt `The thing that it reproduces with is its root, not its seeds.' (11-paRzwamWntoR, 113)
+\end{exe} 
+
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+ \end{document}
+ 
