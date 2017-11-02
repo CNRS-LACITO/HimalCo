@@ -1,0 +1,109 @@
+\documentclass{article} 
+\usepackage{polyglossia}
+%\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{longtable}
+ \usepackage{geometry}
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage{amssymb} 
+\usepackage{memhfixc}
+\usepackage{lscape}
+%\usepackage[footnotesize,bf]{caption}
+\usepackage{lineno}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+ \newcommand{\ipa}[1]{{\phon#1}} 
+\newcommand{\ipab}[1]{{\phon #1}}
+\newcommand{\ipapl}[1]{{\phondroit #1}} 
+\newcommand{\captionft}[1]{{\captionfont #1}} 
+\newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{MingLiU}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+
+ 
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rbb}{$\Sigma_2$} 
+\newcommand{\rc}{$\Sigma_3$} 
+\newcommand{\ro}{$\Sigma$} 
+%\let\eachwordone=\textbf
+
+\begin{document}
+
+
+
+\title{Associated motion in Khaling } 
+\author{Guillaume Jacques\\Aimée Lahaussois}
+\maketitle
+\linenumbers
+\section{Introduction}
+\section{Bipartite verb paradigms in Khaling}
+Associated motion is expressed in Khaling by the second verbal stem (henceforth V_2) of bipartite verb constructions. These constructions are well attested in all Kiranti languages (see in particular \citealt[118-132]{driem87}, \citealt[199-214]{driem93dumi},  \citealt[137-194]{rutgers98yamphu}, \citealt{bickel07chintang}, \citealt[170-172]{doornenbal09} and \citealt[283-328]{schackow15yakkha}). The description of bipartite verb paradigms is thus a prerequisite to any discussion of AM in Khaling, and Kiranti languages in general.
+
+Previous work on Khaling verbal morphology (\citealt{jacques12khaling, jacques16si}) has focused on simple verbs, and though Khaling bipartite verbs have been discussed in a comparative context (\citealt{jacques18bipartite}), the complete paradigms have never been presented. The focus of the present paper being AM, the intricacies of verbal stem alternations cannot be dealt here in a systematic way, and only the minimal necessary information will be presented.
+
+Table \ref{tab:kurledu} illustrates the paradigm of the circumambulative V_2 \ipa{-le-} (see \ref{sec:v2.le}) with two verbs in closed syllable roots,\footnote{The abstract roots are indicated between bars |, following the conventions in \citet{jacques12khaling}.} the intransitive verb \dhatu{ŋok}{cry} (`go around crying') and the transitive \dhatu{kur}{carry on the back} (`carry around'). Only part of the paradigm are given: the dual and plural exclusive, the second and third person dual,  and for transitive verbs the inverse configurations (3$\rightarrow$1/2) and the local forms (1$\rightarrow$2, 2$\rightarrow$1) are not given here, as their stem forms are derivable from those presented in this table (see \citealt{jacques12khaling} for a complete account).
+
+%ts ɵ ː
+
+\begin{table}[H]
+\caption{Paradigm of type I bipartite verbs} \label{tab:kurledu}  \centering
+\begin{tabular}{lllllll}
+\toprule
+&\multicolumn{2}{c}{\textsc{n.pst}} &  \multicolumn{2}{c}{\textsc{pst}} \\
+&Simple verb &  Bipartite verb &  Simple verb&  Bipartite verb \\
+\midrule
+\textsc{1s} &  \ipa{ŋôŋ-ŋʌ} & \ipa{ŋôŋ-\textbf{le}-ŋʌ} & \ipa{ŋɵk-ʌtʌ} & \ipa{ŋɵk-\textbf{les}-tʌ} \\
+\textsc{1di} &  \ipa{ŋɵk-i} & \ipa{ŋɵk-\textbf{lets}-i} & \ipa{ŋɵk-iti} & \ipa{ŋɵk-\textbf{les}-ti} \\
+\textsc{1pi} &  \ipa{ŋok-ki} & \ipa{ŋok-\textbf{le}-ki} & \ipa{ŋok-tiki} & \ipa{ŋok-\textbf{le}-ktiki} \\
+\textsc{2s} &  \ipa{ʔi-ŋôː} & \ipa{ʔi-ŋôː-\textbf{le}} & \ipa{ʔi-ŋɵk-tɛ} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛ} \\
+\textsc{2p} &  \ipa{ʔi-ŋôː-ni} & \ipa{ʔi-ŋô-n-\textbf{le}-ni} & \ipa{ʔi-ŋɵk-tɛnu} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛnu}  \\
+\textsc{3s} &  \ipa{ŋôː} & \ipa{ŋôː-\textbf{le}} & \ipa{ŋɵk-tɛ} & \ipa{ŋɵk-\textbf{les}-tɛ} \\
+\textsc{3p} &  \ipa{ŋôː-nu} & \ipa{ŋô-n-\textbf{le}-nu} & \ipa{ŋɵk-tɛnu} & \ipa{ŋɵk-\textbf{les}-tɛnu} \\
+\midrule
+\textsc{1s$\rightarrow$3} &  \ipa{kur-u} & \ipa{kûr-\textbf{led}-u} & \ipa{kur-utʌ} & \ipa{kûr-\textbf{le}-tʌ} \\
+\textsc{1di$\rightarrow$3} &  \ipa{kʉr-i} & \ipa{kʉ̂r-\textbf{lets}-i} & \ipa{kʉr-iti} & \ipa{kʉ̂r-\textbf{les}-ti} \\
+\textsc{1pi$\rightarrow$3} &  \ipa{kʌ̄r-ki} & \ipa{kʌ̄r-\textbf{le}-ki} & \ipa{kʌ̄r-tiki} & \ipa{kʌ̄r-\textbf{le}-ktiki} \\
+\textsc{2s$\rightarrow$3} &  \ipa{ʔi-kʉ̄ːr-ʉ} & \ipa{ʔi-kʉ̂r-\textbf{led}-ʉ} & \ipa{ʔi-kʉ̂r-tɛ} & \ipa{ʔi-kʉ̂r-\textbf{le}-tɛ} \\
+\textsc{2p$\rightarrow$3} &  \ipa{ʔi-kʌ̄r-ni} & \ipa{ʔi-kʌ̄r-\textbf{le}-ni} & \ipa{ʔi-kʉr-tɛnu} & \ipa{ʔi-kʉr-\textbf{les}-tɛnu} \\
+\textsc{3s$\rightarrow$3} &  \ipa{kʉ̄ːr-ʉ} & \ipa{kʉ̂r-\textbf{led}-ʉ} & \ipa{kʉ̂r-tɛ} & \ipa{kʉ̂r-\textbf{le}-tɛ} \\
+\textsc{3p$\rightarrow$3} &  \ipa{kʉ̂r-nu} & \ipa{kʉ̂r-\textbf{let}-nu} & \ipa{kʉ̂r-tɛnu} & \ipa{kʉ̂r-\textbf{le}-tɛnu} \\
+\bottomrule
+\end{tabular}
+\end{table}
+  
+  
+The form of the V_1 can be predicted from the corresponding simple verb by the four following rules:
+
+\begin{enumerate}
+\item If the verb stem contains a final consonant, and is followed by a suffix beginning with a  consonant (as in \ipa{kʌ̄r-ki} `we bring it'), the V_1 stem is identical to that of the simple verb (\ipa{kʌ̄r-\textbf{le}-ki} `we bring it around').
+\item If the verb stem contains a final consonant, and is followed by a suffix beginning with a  vowel, the coda is resyllabified with that suffix. For instance, the form \ipa{kur-u} `I bring it' is syllabified as \ipa{ku/ru}. In such cases, if the final consonant is an obstruent (as in \ipa{ŋɵk-i} `you and I cry'), the V_1 stem is identical to that of the simple verb (\ipa{ŋɵk-\textbf{lets}-i} `you and I go around crying'), but if it is a sonorant, a final tone results (as in \ipa{kur-u} $\rightarrow$   \ipa{kûr-\textbf{led}-u}).\footnote{Since the stress is rather on the V_2, the tonal contrast on the V_1 is difficult to perceive.} This reduction is presumably due to a sound law that applies elsewhere in Khaling, and constitutes one of the origins of the tonal contrast in this language (see \citealt{jacques16tonogenesis}).
+\item If the verb stem ends in a vowel (\ipa{ʔi-ŋôː} `you cry'), the stem of the V_1 is identical to that of the simple verb if there are no indexation suffixes (\ipa{ʔi-ŋôː-\textbf{le}} `you go around crying'), but if an indexation suffix is present, its vowel is dropped, and the consonant of the suffix becomes the coda of the V_1 stem, with falling tone (\ipa{ʔi-ŋôː-ni}   $\rightarrow$ \ipa{ʔi-ŋô-n-\textbf{le}-ni}).
+\item In the case of Ct stem verbs (not in Table \ref{tab:kurledu}), the \ipa{-t} is always removed. For instance, in the paradigm of the bipartite verb comprising \dhatu{gʰurt}{run with, drive} and the V_2 \ipa{-kʰoŋt-} `bring up' (see \ref{sec:v2.khoN}), the stem of \ipa{gʰʌ̄rd-u} `I run with it, I drive it' becomes \ipa{gʰʌ̄r-} in \ipa{gʰʌ̄r-kʰoŋd-u} `I bring it up running' (a form like $\dagger$\ipa{gʰʌ̄rtkʰoŋdu} would violate the phonotactic structure of the Khaling language).
+\end{enumerate}
+
+The above rules predict all the V_1 forms of bipartite verbs with all V_2, except the benefactive V_2 \ipa{-sʌ-}.\footnote{With this V_2, the strong stem (only found in the \textsc{1pi} in the paradigms in Table \ref{tab:kurledu}) is found in all forms other that the dual and \textsc{2p.pst$\rightarrow$3}. For instance, the bipartite verb combining \dhatu{kur}{carry} and the benefactive has the \textsc{1s$\rightarrow$3.n.pst} form \ipa{kʌ̄r-sʌt-u} `I carry it for him', with the strong stem \ipa{kʌ̄r-}, unlike the corresponding simplex verb  \ipa{kur-u}  I carry it'. This exception can be explained historically. Khaling has a \ipa{-t-} causative/applicative suffix, one of whose function is benefactive, but this suffix is not productive anymore (see \citealt{jacques15derivational.khaling}). Transitive verbs with this suffix follow a distinct conjugation (described in \citealt[1119-1122]{jacques12khaling}), with the strong stem  in all slots of the paradigms except dual and \textsc{2pl$\rightarrow$3.pst}. The verb \dhatu{kur}{carry} is among the few verbs possessing a benefactive \ipa{-t-} suffix form \dhatu{kurt}{carry for someone}. The V_1 stem form \ipa{kʌ̄r-} in \ipa{kʌ̄r-sʌt-u} `I carry it for him' is better analyzable as deriving from \ipa{kʌ̄rd-u} `I bring it for him' (the \textsc{1sg$\righarrow$3} of \dhatu{kurt}{carry for someone}), with application of the rule 4 (loss of \ipa{-t/d-} in \ipa{-Ct-} stem verbs). This explanation is however only historical, as the same stem distribution is observed even for verbs that do not synchronically have a benefactive \ipa{-t-} suffix form.}
+  
+
+\section{Associated motion V2}
+
+\subsection{Circumambulative \ipa{-le-}} \label{sec:v2.le}
+\subsection{\ipa{-kʰoŋ-} `come up'} \label{sec:v2.khoN}
+\section{Morphosyntactic parameters of AM in Khaling}
+\section{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
