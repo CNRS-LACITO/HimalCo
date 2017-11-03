@@ -1,4 +1,4 @@
-\documentclass{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{polyglossia}
 %\usepackage{fontspec}
 \usepackage{natbib}
@@ -30,15 +30,11 @@
 \newcommand{\captionft}[1]{{\captionfont #1}} 
 \newfontfamily\cn[Mapping=tex-text,Scale=MatchUppercase]{MingLiU}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
-
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
-\newcommand{\ra}{$\Sigma_1$} 
-\newcommand{\rbb}{$\Sigma_2$} 
-\newcommand{\rc}{$\Sigma_3$} 
-\newcommand{\ro}{$\Sigma$} 
-%\let\eachwordone=\textbf
+ \newcommand{\tld}{\textasciitilde}
 
 \begin{document}
 
@@ -54,19 +50,21 @@ Associated motion is expressed in Khaling by the second verbal stem (henceforth 
 
 Previous work on Khaling verbal morphology (\citealt{jacques12khaling, jacques16si}) has focused on simple verbs, and though Khaling bipartite verbs have been discussed in a comparative context (\citealt{jacques18bipartite}), the complete paradigms have never been presented. The focus of the present paper being AM, the intricacies of verbal stem alternations cannot be dealt here in a systematic way, and only the minimal necessary information will be presented.
 
+\subsection{V1 stem alternations}
+
 Table \ref{tab:kurledu} illustrates the paradigm of the circumambulative V_2 \ipa{-le-} (see \ref{sec:v2.le}) with two verbs in closed syllable roots,\footnote{The abstract roots are indicated between bars |, following the conventions in \citet{jacques12khaling}.} the intransitive verb \dhatu{ŋok}{cry} (`go around crying') and the transitive \dhatu{kur}{carry on the back} (`carry around'). Only part of the paradigm are given: the dual and plural exclusive, the second and third person dual,  and for transitive verbs the inverse configurations (3$\rightarrow$1/2) and the local forms (1$\rightarrow$2, 2$\rightarrow$1) are not given here, as their stem forms are derivable from those presented in this table (see \citealt{jacques12khaling} for a complete account).
 
-%ts ɵ ː
+%ʦ ʣ ɵ ː
 
 \begin{table}[H]
-\caption{Paradigm of type I bipartite verbs} \label{tab:kurledu}  \centering
+\caption{Paradigm of bipartite verbs (with the circumambulative \ipa{-le-} as V2)} \label{tab:kurledu}  \centering
 \begin{tabular}{lllllll}
 \toprule
 &\multicolumn{2}{c}{\textsc{n.pst}} &  \multicolumn{2}{c}{\textsc{pst}} \\
 &Simple verb &  Bipartite verb &  Simple verb&  Bipartite verb \\
 \midrule
 \textsc{1s} &  \ipa{ŋôŋ-ŋʌ} & \ipa{ŋôŋ-\textbf{le}-ŋʌ} & \ipa{ŋɵk-ʌtʌ} & \ipa{ŋɵk-\textbf{les}-tʌ} \\
-\textsc{1di} &  \ipa{ŋɵk-i} & \ipa{ŋɵk-\textbf{lets}-i} & \ipa{ŋɵk-iti} & \ipa{ŋɵk-\textbf{les}-ti} \\
+\textsc{1di} &  \ipa{ŋɵk-i} & \ipa{ŋɵk-\textbf{leʦ}-i} & \ipa{ŋɵk-iti} & \ipa{ŋɵk-\textbf{les}-ti} \\
 \textsc{1pi} &  \ipa{ŋok-ki} & \ipa{ŋok-\textbf{le}-ki} & \ipa{ŋok-tiki} & \ipa{ŋok-\textbf{le}-ktiki} \\
 \textsc{2s} &  \ipa{ʔi-ŋôː} & \ipa{ʔi-ŋôː-\textbf{le}} & \ipa{ʔi-ŋɵk-tɛ} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛ} \\
 \textsc{2p} &  \ipa{ʔi-ŋôː-ni} & \ipa{ʔi-ŋô-n-\textbf{le}-ni} & \ipa{ʔi-ŋɵk-tɛnu} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛnu}  \\
@@ -74,7 +72,7 @@ Table \ref{tab:kurledu} illustrates the paradigm of the circumambulative V_2 \ip
 \textsc{3p} &  \ipa{ŋôː-nu} & \ipa{ŋô-n-\textbf{le}-nu} & \ipa{ŋɵk-tɛnu} & \ipa{ŋɵk-\textbf{les}-tɛnu} \\
 \midrule
 \textsc{1s$\rightarrow$3} &  \ipa{kur-u} & \ipa{kûr-\textbf{led}-u} & \ipa{kur-utʌ} & \ipa{kûr-\textbf{le}-tʌ} \\
-\textsc{1di$\rightarrow$3} &  \ipa{kʉr-i} & \ipa{kʉ̂r-\textbf{lets}-i} & \ipa{kʉr-iti} & \ipa{kʉ̂r-\textbf{les}-ti} \\
+\textsc{1di$\rightarrow$3} &  \ipa{kʉr-i} & \ipa{kʉ̂r-\textbf{leʦ}-i} & \ipa{kʉr-iti} & \ipa{kʉ̂r-\textbf{les}-ti} \\
 \textsc{1pi$\rightarrow$3} &  \ipa{kʌ̄r-ki} & \ipa{kʌ̄r-\textbf{le}-ki} & \ipa{kʌ̄r-tiki} & \ipa{kʌ̄r-\textbf{le}-ktiki} \\
 \textsc{2s$\rightarrow$3} &  \ipa{ʔi-kʉ̄ːr-ʉ} & \ipa{ʔi-kʉ̂r-\textbf{led}-ʉ} & \ipa{ʔi-kʉ̂r-tɛ} & \ipa{ʔi-kʉ̂r-\textbf{le}-tɛ} \\
 \textsc{2p$\rightarrow$3} &  \ipa{ʔi-kʌ̄r-ni} & \ipa{ʔi-kʌ̄r-\textbf{le}-ni} & \ipa{ʔi-kʉr-tɛnu} & \ipa{ʔi-kʉr-\textbf{les}-tɛnu} \\
@@ -94,14 +92,70 @@ The form of the V_1 can be predicted from the corresponding simple verb by the f
 \item In the case of Ct stem verbs (not in Table \ref{tab:kurledu}), the \ipa{-t} is always removed. For instance, in the paradigm of the bipartite verb comprising \dhatu{gʰurt}{run with, drive} and the V_2 \ipa{-kʰoŋt-} `bring up' (see \ref{sec:v2.khoN}), the stem of \ipa{gʰʌ̄rd-u} `I run with it, I drive it' becomes \ipa{gʰʌ̄r-} in \ipa{gʰʌ̄r-kʰoŋd-u} `I bring it up running' (a form like $\dagger$\ipa{gʰʌ̄rtkʰoŋdu} would violate the phonotactic structure of the Khaling language).
 \end{enumerate}
 
-The above rules predict all the V_1 forms of bipartite verbs with all V_2, except the benefactive V_2 \ipa{-sʌ-}.\footnote{With this V_2, the strong stem (only found in the \textsc{1pi} in the paradigms in Table \ref{tab:kurledu}) is found in all forms other that the dual and \textsc{2p.pst$\rightarrow$3}. For instance, the bipartite verb combining \dhatu{kur}{carry} and the benefactive has the \textsc{1s$\rightarrow$3.n.pst} form \ipa{kʌ̄r-sʌt-u} `I carry it for him', with the strong stem \ipa{kʌ̄r-}, unlike the corresponding simplex verb  \ipa{kur-u}  I carry it'. This exception can be explained historically. Khaling has a \ipa{-t-} causative/applicative suffix, one of whose function is benefactive, but this suffix is not productive anymore (see \citealt{jacques15derivational.khaling}). Transitive verbs with this suffix follow a distinct conjugation (described in \citealt[1119-1122]{jacques12khaling}), with the strong stem  in all slots of the paradigms except dual and \textsc{2pl$\rightarrow$3.pst}. The verb \dhatu{kur}{carry} is among the few verbs possessing a benefactive \ipa{-t-} suffix form \dhatu{kurt}{carry for someone}. The V_1 stem form \ipa{kʌ̄r-} in \ipa{kʌ̄r-sʌt-u} `I carry it for him' is better analyzable as deriving from \ipa{kʌ̄rd-u} `I bring it for him' (the \textsc{1sg$\righarrow$3} of \dhatu{kurt}{carry for someone}), with application of the rule 4 (loss of \ipa{-t/d-} in \ipa{-Ct-} stem verbs). This explanation is however only historical, as the same stem distribution is observed even for verbs that do not synchronically have a benefactive \ipa{-t-} suffix form.}
-  
+The above rules predict all the V_1 forms of bipartite verbs with all V_2, except the benefactive V_2 \ipa{-sʌ-}.\footnote{With this V_2, the strong stem (only found in the \textsc{1pi} in the paradigms in Table \ref{tab:kurledu}) is found in all forms other that the dual and \textsc{2p.pst$\rightarrow$3}. For instance, the bipartite verb combining \dhatu{kur}{carry} and the benefactive has the \textsc{1s$\rightarrow$3.n.pst} form \ipa{kʌ̄r-sʌt-u} `I carry it for him', with the strong stem \ipa{kʌ̄r-}, unlike the corresponding simplex verb  \ipa{kur-u}  I carry it'. This exception can be explained historically. Khaling has a \ipa{-t-} causative/applicative suffix, one of whose function is benefactive, but this suffix is not productive anymore (see \citealt{jacques15derivational.khaling}). Transitive verbs with this suffix follow a distinct conjugation (described in \citealt[1119-1122]{jacques12khaling}), with the strong stem  in all slots of the paradigms except dual and \textsc{2pl$\rightarrow$3.pst}. The verb \dhatu{kur}{carry} is among the few verbs possessing a benefactive \ipa{-t-} suffix form \dhatu{kurt}{carry for someone}. The V_1 stem form \ipa{kʌ̄r-} in \ipa{kʌ̄r-sʌt-u} `I carry it for him' is better analyzable as deriving from \ipa{kʌ̄rd-u} `I bring it for him' (the \textsc{1sg$\rightarrow$3} of \dhatu{kurt}{carry for someone}), with application of the rule 4 (loss of \ipa{-t/d-} in \ipa{-Ct-} stem verbs). This explanation is however only historical, as the same stem distribution is observed even for verbs that do not synchronically have a benefactive \ipa{-t-} suffix form.}
+
+\subsection{V2 stem alternations}
+Table \ref{tab:kurledu} illustrates the stem alternations of the circumambulative V_2 \ipa{-le-}, which presents three distinct stems \ipa{-le-}, \ipa{-leʦ-} and \ipa{-les-} in the intransitive paradigm, and two additional ones \ipa{-let-} and \ipa{-led-} in the transitive one.
+
+No simple verb shows exactly the same alternation pattern; rather,  \ipa{-le-} combines stems from the paradigm of open syllable \ipa{-e-} verbs and close syllable \ipa{-et-} verbs, as shown in Table \ref{tab:le.dze.ret}. Forms with long vowels in the transitive verb paradigms occur with short vowel in the V_2 paradigm.
+
+\begin{table}[H] 
+\caption{Comparison of the stem alternations of the V2 \ipa{|-le-|}  with that of several simple verbs} \label{tab:le.dze.ret} \centering 
+\begin{tabular}{lllll} 
+\toprule 
+&& \multicolumn{2}{c}{\textsc{intr}} & \multicolumn{1}{c}{\textsc{tr}} \\ 
+&\ipa{|-le-|}&\dhatu{ʣe}{speak} & \dhatu{ret}{laugh} & \dhatu{set}{kill}\\ 
+\midrule
+\textsc{1s.n.pst} &  \ipa{X-{le}-ŋʌ} & \ipa{ʣe-ŋʌ} & \ipa{rêj-ŋʌ} \grise{}&\grise{} \\ 
+\textsc{1di.n.pst} &  \ipa{X-{leʦ}-i} & \ipa{ʣe-ji} \grise{}& \ipa{reʦ-i} &\grise{} \\ 
+\textsc{1s.pst} & \ipa{X-{les}-tʌ} & \ipa{ʣe-ŋʌtʌ} \grise{}&  \ipa{res-tʌ} &\grise{} \\ 
+\hline 
+\textsc{1s$\rightarrow$3n.pst} &  \ipa{X-{led}-u} &\grise{} & \grise{} & \ipa{sed-u} \\ 
+\textsc{3s$\rightarrow$3n.pst} &    \ipa{X-{led}-ʉ} &\grise{} & \grise{} & \ipa{sēːd-u} \\ 
+\textsc{3p$\rightarrow$3n.pst} &    \ipa{X-{let}-nu} &\grise{} & \grise{} & \ipa{sêːt-nu} \\ 
+\bottomrule 
+\end{tabular}
+\end{table}
+
+Not all V_2 follow the same alternations as \ipa{-le-}; three patterns are attested, as shown in Table (\ref{tab:le.khAt.pi}) with the V_2 \ipa{-kʰʌ- / -kʰɵʦ- / kʰʌt} `do X and go; do X completely' (§ \ref{sec:v2.khot}) and \ipa{-pi- / -pid-} `do X and come'  (§ \ref{sec:v2.pi}).
+
+In classes I and II, the basic stem alternation is between open syllable stem (\ipa{-le-}, \ipa{-kʰʌ-}) and closed syllable stems (with a final dental obstruent).  The open syllable stems occur in all non past intransitive forms (except dual), past intransitive first plural, non-past transitive first and second plural, and all past transitive (except first and second dual and second plural). Classes I and II differ in that in 123\textsc{sg}$\rightarrow$3 forms, the stem final dental is \ipa{-d-} in class I (\ipa{X-led-u}) and \ipa{-t-} in class II (\ipa{X-kʰʌt-u}). In addition, some class II  V_2 have vowel alternation (on which § XXX).
+
+Class III 
+
+\begin{table}[H] 
+\caption{V2 stem alternation patterns} \label{tab:le.khAt.pi} \centering 
+\begin{tabular}{lllll} 
+\toprule 
+&   I  &   II & III  \\
+\midrule
+\textsc{1s.n.pst} &  \ipa{X-le-ŋʌ} & \ipa{X-kʰʌ-ŋʌ} &  \ipa{X-pi-ŋʌ} \\
+\textsc{1di.n.pst} &  \ipa{X-leʦ-i} & \ipa{X-kʰɵʦ-i} & \ipa{X-pi-ji} & \\
+\textsc{1s.pst} & \ipa{X-les-tʌ} & \ipa{X-kʰɵs-tʌ} & \ipa{X-pi-ŋʌtʌ} & \\
+\hline 
+\textsc{1s$\rightarrow$3n.pst} &  \ipa{X-led-u} &  \ipa{X-kʰʌt-u} &  \ipa{X-pid-u}  \\
+\textsc{3p$\rightarrow$3n.pst} &    \ipa{X-let-nu} &    \ipa{X-kʰat-nu} & \ipa{X-pit-nu} & \\
+\bottomrule 
+\end{tabular}
+\end{table}
+\subsection{List of V2}
 
 \section{Associated motion V2}
-
-\subsection{Circumambulative \ipa{-le-}} \label{sec:v2.le}
-\subsection{\ipa{-kʰoŋ-} `come up'} \label{sec:v2.khoN}
+\subsection{Circumambulative \dhatu{-le(t)-}{X around}} \label{sec:v2.le}
+\subsection{Subsequent translocative \dhatu{-kʰo(t)-}{go}} \label{sec:v2.khot}
+\subsection{Prior translocative \dhatu{-pɛ-}{go}} \label{sec:v2.pE}
+\subsection{Cislocative \dhatu{-pi-}{come (same level)}} \label{sec:v2.pi}
+\subsection{Subsequent cislocative \dhatu{-ɦo-}{come}} \label{sec:v2.ho}
+\subsection{Subsequent cislocative \dhatu{-kʰoŋ-}{come up}} \label{sec:v2.khoN}
+\subsection{Subsequent cislocative \dhatu{-je-}{come down}} \label{sec:v2.je}
 \section{Morphosyntactic parameters of AM in Khaling}
+\subsection{Non-AM meanings}
+\subsection{Temporal relation}
+\subsection{Deixis}
+\subsection{Directionality}
+\subsection{Argument of motion}
+\subsection{Mono- vs pluriactionality}
+
 \section{Conclusion}
 
 \bibliographystyle{unified}
