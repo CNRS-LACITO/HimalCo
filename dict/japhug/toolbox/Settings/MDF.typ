@@ -437,6 +437,10 @@
 \CharStyle
 \-mkr
 
+\+mkr ls
+\lng English
+\-mkr
+
 \+mkr lt
 \nam Literally
 \desc Used to elucidate the distinct meanings of the parts of an idiom or complex phrase in a lexical entry (\lx) or subentry (\se).
