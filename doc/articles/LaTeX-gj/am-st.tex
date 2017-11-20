@@ -1,17 +1,17 @@
-\documentclass[oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,11pt]{article}  
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
- \usepackage{geometry}
- \geometry{
- a4paper,
- total={210mm,297mm},
- left=20mm,
- right=20mm,
- top=20mm,
- bottom=20mm,
- }
+% \usepackage{geometry}
+% \geometry{
+% a4paper,
+% total={210mm,297mm},
+% left=20mm,
+% right=20mm,
+% top=30mm,
+% bottom=30mm,
+% }
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -41,7 +41,10 @@
 \newcommand{\forme}[1]{\textit{\phon#1}}  
 \newcommand{\japhug}[2]{\textit{\phon#1} `#2'}  
  \newcommand{\redp}{\textasciitilde}
+   \newcommand{\sens}[1]{‘#1’}
  \newcommand{\fl}{$\rightarrow$}
+ \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+ 
  \begin{document} 
 \title{Associated motion in Sino-Tibetan/Trans-Himalayan}
 \author{Guillaume Jacques\\ Aimée Lahaussois \\ Zhang Shuya}
@@ -56,24 +59,209 @@
 
 \section{Introduction}
 
-\section{Rgyalrongic}
-Associated motion prefixes are reported in Japhug (\citealt{jacques13harmonization}), Zbu (Gong Xun, p.c.), Tshobdun (\citealt{jackson14morpho}) and Situ (\citealt[497-500]{prins16kyomkyo}), but not found in other Gyalrongic languages (for example in Khroskyabs, cf \citealt{lai17khroskyabs}).
+Following the above description and the existing literature on Associated motion (in particular \citealt{koch84associated.motion}, \citealt{wilkins91associated.motion} and \citealt{guillaume16am}), the following six parameters have to be considered when describing AM systems. 
 
-All four Gyalrong language have two associated motion prefixes (the Japhug forms are presented in Table \ref{tab:am-japhug}) grammaticalized from the motion verbs `go' and `come'. They refer to a motion event occurring before the action of the main verb
+\begin{enumerate}
+\item Temporal relation (prior, concurrent, subsequent)
+\item Deixis (cis- vs translocative)
+\item Path (in the case of Kiranti, the vertical dimension)
+\item Argument of motion (S/A vs P)
+\item Non-AM meanings (orientation, aspect)
+\item Mono- vs pluriactionality
+\end{enumerate}
 
-\begin{table}[H]
-\caption{Associated motion prefixes in Japhug} \centering \label{tab:am-japhug}
-\begin{tabular}{lllll}
+\section{Kiranti} 
+The most complex AM systems of the Sino-Tibetan family are found in Kiranti. Systems with up to seven distinct markers have been described (Khaling, Yamphu from \citealt[137-194]{rutgers98yamphu}, and Yakkha from \citealt[283-328]{schackow15yakkha}).
+
+Existing grammars are not always explicitly enough to determine whether a particular marker has AM values, rather than being an orientation marker (without additional motion). In the present survey, all unclear cases have been discarded from the data.  
+
+\subsection{Morphological status}
+
+In Kiranti, AM markers are ancient auxiliaries (often labelled `aspectualizers' in grammar of Kiranti languages), though in many cases the source verb does not exist any more.  Example (\ref{ex:ingyoklestyanu}) illustrates a typical AM marker in Khaling, the circumambulative \textbf{-le-} `go around doing'. Note that the \textsc{2pl:n.pst} suffix \ipa{-ni} occurs in reduced form \ipa{-n-} between the stem of the verb \ipa{-ŋô-} and  the AM marker \ipa{-le-}, suggesting that at an earlier stage both the main verb and the AM marker had the full array of person indexation and TAM marker.
+
+\begin{exe}
+\ex \label{ex:ingyoklestyanu}
+\gll \ipa{ʔi-ŋô-n-\textbf{le}-ni} \\
+2/\textsc{inv}-cry-\textsc{2pl:n.pst}-\textsc{go.around.doing}-\textsc{2pl:n.pst} \\
+\glt `You_{pl} went around crying.' 
+\end{exe}
+
+There is evidence that such complex verb forms originate from serial verb constructions, in which a motion verb (as well as other auxiliary) occupied the second position, but became progressively integrated into a single word (though with differences across Kiranti, see \citealt{bickel07chintang}, \citealt{schiering10prosodic}). 
+
+In the following discussion, complex verbs such as (\ref{ex:ingyoklestyanu}) are referred to as bipartite verbs, the lexical verb as the V_1 and the AM marker as the V_2.
+
+Table \ref{tab:kurledu} provides partial paradigms for the circumambulative forms of the intransitive verb \dhatu{ŋok}{cry} (`go around crying') and of the transitive \dhatu{kur}{carry on the back} (`carry around'). Note that the stem alternation of the circumambulative V_2 \ipa{-le-}, while presenting commonalities with several conjugation classes, are unlike those of any independent verb.
+
+\begin{table}%[H]
+\caption{Paradigm of bipartite verbs (with the circumambulative \ipa{-le-} as V2)} \label{tab:kurledu}  \centering
+\begin{tabular}{lllllll}
 \toprule
-AM & Verb &\\
+&\multicolumn{2}{c}{\textsc{n.pst}} &  \multicolumn{2}{c}{\textsc{pst}} \\
+&Simple verb &  Bipartite verb &  Simple verb&  Bipartite verb \\
 \midrule
-\forme{ɕɯ-, ɕ-, ʑ-, s-, z-} & \japhug{ɕe}{go} \\
-\forme{ɣɯ-} & \japhug{ɣi}{come} \\
+\textsc{1s} &  \ipa{ŋôŋ-ŋʌ} & \ipa{ŋô-ŋ-\textbf{le}-ŋʌ} & \ipa{ŋɵk-ʌtʌ} & \ipa{ŋɵk-\textbf{les}-tʌ} \\
+\textsc{1di} &  \ipa{ŋɵk-i} & \ipa{ŋɵk-\textbf{leʦ}-i} & \ipa{ŋɵk-iti} & \ipa{ŋɵk-\textbf{les}-ti} \\
+\textsc{1pi} &  \ipa{ŋok-ki} & \ipa{ŋok-\textbf{le}-ki} & \ipa{ŋok-tiki} & \ipa{ŋok-\textbf{le}-ktiki} \\
+\textsc{2s} &  \ipa{ʔi-ŋôː} & \ipa{ʔi-ŋôː-\textbf{le}} & \ipa{ʔi-ŋɵk-tɛ} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛ} \\
+\textsc{2p} &  \ipa{ʔi-ŋôː-ni} & \ipa{ʔi-ŋô-n-\textbf{le}-ni} & \ipa{ʔi-ŋɵk-tɛnu} & \ipa{ʔi-ŋɵk-\textbf{les}-tɛnu}  \\
+\textsc{3s} &  \ipa{ŋôː} & \ipa{ŋôː-\textbf{le}} & \ipa{ŋɵk-tɛ} & \ipa{ŋɵk-\textbf{les}-tɛ} \\
+\textsc{3p} &  \ipa{ŋôː-nu} & \ipa{ŋô-n-\textbf{le}-nu} & \ipa{ŋɵk-tɛnu} & \ipa{ŋɵk-\textbf{les}-tɛnu} \\
+\midrule
+\textsc{1s$\rightarrow$3} &  \ipa{kur-u} & \ipa{kûr-\textbf{led}-u} & \ipa{kur-utʌ} & \ipa{kûr-\textbf{le}-tʌ} \\
+\textsc{1di$\rightarrow$3} &  \ipa{kʉr-i} & \ipa{kʉ̂r-\textbf{leʦ}-i} & \ipa{kʉr-iti} & \ipa{kʉ̂r-\textbf{les}-ti} \\
+\textsc{1pi$\rightarrow$3} &  \ipa{kʌ̄r-ki} & \ipa{kʌ̄r-\textbf{le}-ki} & \ipa{kʌ̄r-tiki} & \ipa{kʌ̄r-\textbf{le}-ktiki} \\
+\textsc{2s$\rightarrow$3} &  \ipa{ʔi-kʉ̄ːr-ʉ} & \ipa{ʔi-kʉ̂r-\textbf{led}-ʉ} & \ipa{ʔi-kʉ̂r-tɛ} & \ipa{ʔi-kʉ̂r-\textbf{le}-tɛ} \\
+\textsc{2p$\rightarrow$3} &  \ipa{ʔi-kʌ̄r-ni} & \ipa{ʔi-kʌ̄r-\textbf{le}-ni} & \ipa{ʔi-kʉr-tɛnu} & \ipa{ʔi-kʉr-\textbf{les}-tɛnu} \\
+\textsc{3s$\rightarrow$3} &  \ipa{kʉ̄ːr-ʉ} & \ipa{kʉ̂r-\textbf{led}-ʉ} & \ipa{kʉ̂r-tɛ} & \ipa{kʉ̂r-\textbf{le}-tɛ} \\
+\textsc{3p$\rightarrow$3} &  \ipa{kʉ̂r-nu} & \ipa{kʉ̂r-\textbf{let}-nu} & \ipa{kʉ̂r-tɛnu} & \ipa{kʉ̂r-\textbf{le}-tɛnu} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\subsection{Pluri- vs monoactionality in Japhug}
+\subsection{Morphosyntactic parameters of AM in Kiranti}
+The Khaling AM system, among the most complex in the Kiranti branch, can be used to illustrate the general typological characteristics of AM systems in this branch. Table \ref{tab:system} summarizes the data concerning four parameters (temporal relation, deixis, oath and argument of motion) relating to V_2.
+\begin{landscape}
+\begin{table}%[H]
+\caption{The Khaling AM system} \label{tab:system} \centering
+\begin{tabular}{lllllll}
+\toprule
+Source &V_2 & Temp.& Deixis & Verticality & Argument \\
+\midrule
+?& \dhatu{-le(t)-}{go around doing X} &C& $\varnothing$ & $\varnothing$ & S/A \\
+\dhatu{kʰot}{go} &\dhatu{-kʰo(t)-}{do X and go} &S& \textsc{trans} & $\varnothing$ & S/A \\
+?&\dhatu{-pɛ(t)-}{go and do X} &P& \textsc{trans} & $\varnothing$ & S/A \\
+\dhatu{ɦo}{come} &\dhatu{-ɦo(t)-}{do X and come} &S& \textsc{cis} & $\varnothing$ & S/A \\
+\dhatu{kʰoŋ}{come up}&\dhatu{-kʰoŋ-}{do X and come up} &S& \textsc{cis} &up & S/A \\
+ \dhatu{pi}{come (same level)}&\dhatu{-pi(t)-}{come (same level)} &S& \textsc{cis} &same level & S/A+P \\
+\dhatu{tɛn}{fall} & \dhatu{-tɛ(nt)-}{do X and come/bring down} &$\varnothing$ & cis &down & S/A+P or A \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
+ \subsubsection{Temporal relation} \label{sec:temporal.khaling}
+As shown by Table \ref{tab:system}, prior, concurrent and subsequent AM markers (abbreviated as P, C and S respectively) are found in Khaling. The marker  \dhatu{-tɛ(nt)-}{do X and come/bring down} generally implies subsequent motion (as in \ref{ex:ryaptyandyu1}), but it can also express prior motion if pragmatics forces the interpretation: for instance, in (\ref{ex:ryaptyandyu2}), the rice field being lower in altitude than the household, only a prior motion interpretation makes sense, while in (\ref{ex:ryaptyandyu1}), the buckwheat field being at a higher altitude, there is no obstacle to adopt the default subsequent motion interpretation.
+
+ \begin{exe}
+\ex \label{ex:ryaptyandyu1}
+  \gll   \ipa{siriseʔ-ɛ} \ipa{bʰrɛ̂m}  \ipa{rɛp-tɛnd-ʉ} \\
+   p.n.-\textsc{erg} buckwheat beat-\textsc{come.down}-\textsc{3sg$\rightarrow$3.n.pst} \\
+\glt `Sirise beats the buckwheat and comes down.'
+ \end{exe}
+ 
+ 
+ \begin{exe}
+\ex \label{ex:ryaptyandyu2}
+ \gll   \ipa{dzirise-ʔɛ} \ipa{rɵ̂:} \ipa{rɛp-tɛnd-ʉ} \\
+ p.n.-\textsc{erg} rice beat-\textsc{come.down}-\textsc{3sg$\rightarrow$3.n.pst} \\
+\glt `Jirise comes down, beats the rice (and returns).'
+ \end{exe}
+
+ 
+
+ \subsubsection{Verticality and deixis} \label{sec:verticality.khaling}
+ The verticality dimension (cislocative motion up, down, and on same level) in the Khaling AM system directly reflects a feature of the motion verbs that is common to all Kiranti languages: the fact that not less than four distinct verbs exist to express cislocative motion, \dhatu{ɦo}{come} that is neutral as the the verticality dimension, and \dhatu{pi}{come (same level)}, \dhatu{kʰoŋ}{come up}, and \dhatu{je}{come down}. 
+ 
+ Since the AM markers are transparently grammaticalized from these motion verbs (and their applicative/causative counterparts), it is hardly surprising that this contrast is also found in the AM system.
+ 
+ AM markers expressing translocative motion have no verticality contrast, as the corresponding motion verbs.
+ 
+  \subsubsection{Argument of motion} \label{sec:argument.khaling}
+With most AM marker sin Khaling, the argument undergoing the motion event is the subject (S/A), but in the case of  \dhatu{-pi(t)-}{come (same level)} and   \dhatu{-tɛ(nt)-}{do X and come/bring down} a manipulative meaning `do X and bring' is observed when the V_1 is transitive. 
+
+A possible way of analysing this phenomenon is to consider that for these two verbs not only the transitive subject, but also the object undergoes the motion event (hence the notation A+P in Table \ref{tab:system}).
+
+
+ \subsubsection{Non-AM meanings} \label{sec:khaling.non.am}
+Five of the seven AM markers in Khaling exclusively mark AM when used with non-motion V_1: \dhatu{-le(t)-}{go around doing X}, \dhatu{-pɛ(t)-}{go and do X},  \dhatu{-kʰoŋ-}{do X and come up}, \dhatu{-pi(t)-}{come (same level)} and \dhatu{-tɛ(nt)-}{do X and come/bring down}.
+
+ The V_2   \dhatu{-kʰo(t)-}{do X and go} most commonly occurs in non-AM use to mark aspect (completed action), and is also attested in a considerable number of lexicalized bipartite verbs. The V_2  \dhatu{-ɦo(t)-}{do X and come} only has lexicalized non-AM uses. 
+  
+\subsubsection{Mono- vs pluriactionality} \label{sec:khaling.pluriactionality}
+
+Unlike other languages with AM such as Japhug (see § \ref{sec:am.japhug}), in Khaling negation does not necessarily have scope over both the motion event and the action of the V_1. In example (\ref{ex:mahunkhonya}) (compare with \ref{ex:hungkhondu}), only the action of the V_1 is negated, not the motion event.  
+
+\begin{exe}
+\ex \label{ex:mahunkhonya}
+ \gll
+\ipa{ʔuŋʌ} \ipa{ʔʌ̄m} \ipa{mʌ-ɦû-n-kʰōː-nɛ-ʔɛ} \ipa{ʔu-nûː} \ipa{ŋes-tɛ} \\
+\textsc{1sg}.\textsc{erg} \textsc{3sg} \textsc{neg}-wait-\textsc{inf}-\textsc{do\&come.up} \textsc{3sg}.\textsc{poss}-mind hurt-2/3:\textsc{pst} \\
+\glt `I did not wait for him before going up and he was sad. (I was already gone up by the time he arrived at the waiting place)'
+\end{exe}
+
+\begin{exe}  
+\ex \label{ex:hungkhondu}
+ \gll  \ipa{ʔīn} \ipa{kʰɵs-tʰer-e} \ipa{uŋʌ} \ipa{ʔʌ-dʌrʌm} \ipa{ɦûŋ-kʰond-u} \\
+ 2sg go-\textsc{habit}-\textsc{imp}:\textsc{2sg} \textsc{1sg}.\textsc{erg} \textsc{1sg}.\textsc{poss}-friend wait-\textsc{do\&come.up}-\textsc{1sg.A.n.pst} \\
+\glt `You keep going, I will wait for my friends and come up then.'
+\end{exe}
+
+\subsection{Survey of AM systems in Kiranti}
+All available grammars of Kiranti languages have been consulted for the present survey. 
+
+Some Kiranti languages seem not to have any clear examples of AM markers (for instance Bantawa in \citealt{doornenbal09} and Belhare in \citealt{bickel97spatial} or Athpare).
+
+The simplest AM system is that of Thulung (\citealt{lahaussois02thulung} and additional fieldwork) with only one AM marker, the circumambulative \ipa{-bal}.
+
+\begin{table}
+\caption{The Thulung AM system} \label{tab:thulung.am} \centering
+\begin{tabular}{llllllllll}
+\toprule
+Source &V_2 & Temp.& Deix. & Vert.& Arg. \\
+\midrule
+\dhatu{bal}{wind around} &	\ipa{-bal-} `go around doing' &	C &		$\varnothing$ &$\varnothing$&	S/A & \\
+\bottomrule
+\end{tabular}
+\end{table}						
+
+\begin{table}
+\caption{The Dumi AM system (\citealt[199-214]{driem93dumi})} \label{tab:dumi.am} \centering
+\begin{tabular}{llllllllll}
+\toprule
+V_2 & Gloss& Temp.& Deix. & Vert.& Arg. \\
+\midrule
+\ipa{-pad-} `to go off to do something' &	Allative&P &		\textsc{trans} &$\varnothing$&	S/A & \\
+\ipa{-li(lɨt)-} `to be up and about while doing' &	Frolicsome&C &		$\varnothing$ &$\varnothing$&	S/A & \\
+\ipa{-hu:d-} `do and bring back here' &	fetch&S &		\textsc{cis} &$\varnothing$&	S/A+P & \\
+\ipa{-pid-} `do and bring it over here' &	bring&S &		\textsc{cis} &$\varnothing$&	S/A+P & \\
+\bottomrule
+\end{tabular}
+\end{table}				
+
+\section{Rgyalrongic}
+
+\subsection{General overview}
+Associated motion prefixes are reported in Japhug (\citealt{jacques13harmonization}), Zbu (Gong Xun, p.c.), Tshobdun (\citealt{jackson14morpho}) and Situ (\citealt[200-204]{zhang16bragdbar}, \citealt[497-500]{prins16kyomkyo}), but not found in other Gyalrongic languages (for example in Khroskyabs, cf \citealt{lai17khroskyabs}).
+
+All four Gyalrong languages have two associated motion prefixes (see Table \ref{tab:am-gyalrong} from \citealt[200]{zhang16bragdbar}) grammaticalized from the motion verbs `go' and `come'. The fact that motion verbs were grammaticalized as prefixes rather than suffixes in strict verb-final languages like Japhug and Situ can be accounted for by assuming that they comes from the first member of a former serial verb construction (\citealt{jacques13harmonization}). Unlike in Kiranti languages, AM markers in Gyalrong do not have redundant person and TAM markers.
+
+\begin{table}[H]
+\caption{Associated motion prefixes in Gyalrong languages} \centering \label{tab:am-gyalrong}
+\begin{tabular}{lllll}
+\toprule
+come & \textsc{cisloc} & go & \textsc{transloc} \\
+\midrule
+Japhug &  \ipa{ɣi} &\ipa{ɣɯ-} &\ipa{ɕe} &\ipa{ɕɯ-, ɕ-, ʑ-,z- } \\
+Kyom-kyo (Situ) &\ipa{vi} &\ipa{və-} &\ipa{tʃʰi} &\ipa{ʃi-} \\
+Brag-dbar (Situ) &\ipa{βʑē, və} &\ipa{ɟɐ-} &\ipa{tɕʰê} &\ipa{ɕɐ-} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+AM prefixes in Japhug and other Gyalrong languages refer to a motion event occurring before the action of the main verb. The argument undergoing the motion event is always the subject (S/A), except in the case of causative constructions, when it can be either causer or causee (as in \ref{ex:GWchWsWXtWnW}).
+
+\begin{exe}
+\ex \label{ex:GWchWsWXtWnW}
+\gll
+\ipa{tɕe} 	\ipa{kupa} 	\ipa{chu} 	\ipa{nɯra} 	\ipa{atʰi} 	\ipa{pɕoʁ} 	\ipa{nɯra,} 	\ipa{ɯ-pɕi} 	\ipa{nɯra} 	\ipa{kɯ} 	\ipa{kɯreri} 	\ipa{ɣɯ-cʰɯ-sɯ-χtɯ-nɯ} 	\ipa{ŋu.}  \\
+\textsc{lnk} Chinese \textsc{loc} \textsc{dem:pl} downstream direction \textsc{dem:pl} \textsc{3sg}-outside  \textsc{dem:pl}  \textsc{erg} here \textsc{cisloc-ipfv:downstream-caus}-buy-\textsc{pl} be:\textsc{fact} \\cd \
+\glt \sens{People from the Chinese areas, people from outside send people to come here to buy (matsutake and sell them in the areas downstream).} (20 grWBgrWB 58)
+  \end{exe} 
+
+In Situ the cislocative can be used with a prospective aspectual  value (\citealt{linyj03tense}, \citealt[204]{zhang16bragdbar}), but in all other Gyalrong languages, including Japhug, only marks associated motion.
+
+While the AM systems found in Gyalrong languages are much simpler and less diverse than those found in Kiranti, a topic of interest in Gyalrong is the issue of the separability of the motion event and the verbal action. Unlike other languages with AM such as Kiranti or Tungusic (\citealt{stojnova16nda, fuente18am}), in Japhug the scope of negation, interrogation, conditionals and complement-taking verbs applies to both the motion event and the verbal action, as shown in § \ref{sec:am.japhug}. A purposive construction with a motion verb must be used to express cases when the verbal action is outside of their scope. This is however not a characteristic common to all Gyalrong languages. In the closely related Situ language, the semantic distinction between AM and the corresponding purposive construction is less clear (§ \ref{sec:am.situ}).
+
+ \subsection{Pluri- vs monoactionality in Japhug} \label{sec:am.japhug}
 To express the meaning of motion prior to an action, associated motion prefixes are nearly two times as common as corresponding motion verb constructions (henceforth MVC) in the Japhug corpus. There is however a clear semantic difference between the two constructions, which was briefly described in \citet{jacques13harmonization}, but is presented here in more detail.
 
 AM and MVC differ from each other in that in the former, the completion of both motion event and verbal action is presupposed (AM is monoactional), whereas in the case of the latter, the two can be separated. This mono- vs. pluractionality contrast is most conspicuous in past perfective forms, and can be observed in four types of constructions: concessives (with negation of the verbal action), interrogatives, conditionals and complement clauses.
@@ -99,8 +287,6 @@ With the corresponding AM verb form \japhug{ɣɯ-jɤ-ta-rtoʁ}{I came to see you
 
 Additional minimal pairs of the same type are presented in \citet[202-203]{jacques13harmonization}.
 
-
- 
 
 \subsubsection{Interrogative} \label{sec:am.interrogative}
 In interrogative clauses, MVCs are required to express meanings such as `What/who have you come/gone to X', as in example (\ref{ex:tChi.WkWpa}), an example which occurs nine times in the corpus.
@@ -189,15 +375,56 @@ By contrast, in  (\ref{ex:kWrAma.kACe}), in the case of the infinitival compleme
  \glt  `In former times, there was no clock, and people used to watch when (these stars) came out or disappeared (to know) whether it was time to get up or go to work.' (29-LAntshAm, 66)
   \end{exe}
   
+\subsection{Pluri- vs monoactionality in Situ} \label{sec:am.situ}
+Minimal pairs similar to those presented above in Japhug have been elicited in Situ. However, it appears that in this language, the use of verbs in perfective form with AM markers does not presuppose that both the verbal action and the motion event have been accomplished. 
 
-\section{Kiranti}
+
+In (\ref{ex:nEJAtanaston}), the action of the verb \ipa{nə-ɟɐ-ta-natsô-n}  `I came to see you' with the AM prefix \ipa{ɟɐ-} is negated by the following clauses, while the motion event clearly took place; the corresponding )Japhug example in § \ref{sec:am.concessive} is considered to be not only agrammatical, but also non-sensical. Example (\ref{ex:nEJAtanaston}) has little discernible semantic difference with the corresponding MVC in (\ref{ex:nEkEnatso}).
+ 
+
+\begin{exe}
+\ex \label{ex:nEJAtanaston}
+\gll \ipa{nə-ɟɐ-ta-natsô-n} \ipa{rɐ}, \ipa{nəɟə̂} \ipa{nə-ˈtə-mɐ-n}, \ipa{majnə} \ipa{ma-na-ta-mətɐ̂-n}.\\
+\textsc{pfv}:downwards-\textsc{cisloc}-2→1-look\textsubscript{II}-2 \textsc{conj} \textsc{2sg} \textsc{sens}-2-do.not.exist\textsubscript{I}-\textsc{2sg} \textsc{conj} \textsc{neg}-\textsc{pfv}-2→1-see\textsubscript{II}-\textsc{2sg}\\
+\glt  \sens{I came to see you, but you were not here, so I didn't see you.}
+\end{exe}
+
+\begin{exe}
+\ex  \label{ex:nEkEnatso}
+\gll \ipa{nə-kə-natsō} \ipa{nə-və̄-ŋ} \ipa{rɐnə}, \ipa{nəɟə̂} \ipa{nə-ˈtə-mɐ-n}, \ipa{majnə} \ipa{ma-na-ta-mətɐ̂-n}.\\
+\textsc{poss.2sg}-\textsc{nmlz}-see \textsc{pfv}:downwards-come\textsubscript{II}-\textsc{1sg} \textsc{conj} \textsc{2sg} \textsc{sens}-2-do.not.exist\textsubscript{I}-\textsc{2sg} \textsc{conj} \textsc{neg}-\textsc{pfv}-2→1-see\textsubscript{II}-\textsc{2sg}\\
+\glt  \sens{I came to see you, but you were not here, so I didn't see you.}
+\end{exe}
+
+Similarly, in (\ref{ex:nEJAtəVan}), the verb form  \ipa{nə-ɟɐ-ˈtə-va-n}  \sens{What did you come to do?} with the AM prefix \ipa{ɟɐ-} does not imply that the action of the verb has already taken place, unlike its corresponding Japhug in § \ref{sec:am.interrogative}.
+
+ 
+
+\begin{exe}
+\ex \label{ex:nEJAtəVan}
+\gll
+\ipa{nəɟə̂} \ipa{tɕɐ̄} \ipa{thə̂} \ipa{nə-ɟɐ-ˈtə-va-n}? \\
+\textsc{2sg} here what  \textsc{pfv}:downwards-\textsc{cisloc}-2-do\textsubscript{II}-\textsc{2sg} \\
+\glt  \sens{What did you come to do?}
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:nEtEvEn}
+\gll
+\ipa{nəɟə̂} \ipa{tɕɐ̄} \ipa{thə̂} \ipa{kə-viɛ̂} \ipa{nə-ˈtə-və-n} \ipa{kɐ}? \\
+\textsc{2sg} here what \textsc{inf}-do \textsc{pfv}:downwards-2-come\textsubscript{II}-\textsc{2sg} \textsc{part} \\
+\glt  \sens{What did you come to do?}
+\end{exe}
+
+This difference between Japhug and Situ, two otherwise relatively closely related languages, suggests that features such as monoactionality of motion event and verbal action may not be diachronically stable.
+
 
 \section{Sinitic}
 
 \section{Other languages}
 
 \section{Typological comparison}
-
+\begin{landscape}
 P, C, S : prior, concurrent, subsequent
 \begin{table}[H]
 \caption{Associated motion markers in Sino-Tibetan} \label{tab:am.st} \centering
@@ -207,24 +434,24 @@ Subgroup&Language  &Number &Temp. & Deixis & Path & Other & Mono- &Arg.\\
 &&&relation &&&functions& actional & \\
 \midrule
 Gyalrong&Japhug & 2&P & Cis/Trans & $\varnothing$ &  $\varnothing$ & \Y &S/A \\
-&Situ &2&P & Cis/Trans & $\varnothing$ & Aspect& &S/A \\
+&Situ &2&P & Cis/Trans & $\varnothing$ & Aspect&\N &S/A \\
 \midrule
 Kiranti &Khaling & 7&P, C, S &Cis/Trans & Verticality & Aspect,  &  \N  &S/A, S/A+P \\
 &&&&&&Orientation&&\\
-  &Dumi & 4 &P, C, S &Cis/Trans &  $\varnothing$ & Aspect,  &  ?&S/A, S/A+P \\
+&Dumi & 4 &P, C, S &Cis/Trans &  $\varnothing$ & Aspect,  &  ?&S/A, S/A+P \\
   &&&&&&Orientation&&\\
-    &Thulung & 1 & C  &Circum &  $\varnothing$ & $\varnothing$ &?  &S/A  \\
-   &Wambule & 5 & P  &Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
+&Thulung & 1 & C  &Circum &  $\varnothing$ & $\varnothing$ &?  &S/A  \\
+&Wambule & 5 & P  &Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
      &&&&&&Orientation&&\\
-    &Jero & 5 & C, P?  & Trans? &  Verticality & ?  &?  &S/A  \\
-    &Yamphu & 7 & P, C, S  & Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
+%    &Jero & 5 & C, P?  & Trans? &  Verticality & ?  &?  &S/A  \\
+&Yamphu & 7 & P, C, S  & Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
         &&&&&&Orientation&&\\
-     &Yakkha & 7 & P, C, S  & Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
+&Yakkha & 7 & P, C, S  & Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
         &&&&&&Orientation&&\\
 \bottomrule
 \end{tabular}
 \end{table}
-
+\end{landscape}
 \section{Conclusion}
 
 \bibliographystyle{unified}
