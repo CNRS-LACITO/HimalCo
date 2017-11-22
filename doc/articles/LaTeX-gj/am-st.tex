@@ -44,7 +44,7 @@
    \newcommand{\sens}[1]{‘#1’}
  \newcommand{\fl}{$\rightarrow$}
  \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
- 
+ \newcommand{\gray}[1]{\cellcolor{lightgray!30}{#1}}
  \begin{document} 
 \title{Associated motion in Sino-Tibetan/Trans-Himalayan}
 \author{Guillaume Jacques\\ Aimée Lahaussois \\ Zhang Shuya}
@@ -122,6 +122,7 @@ Table \ref{tab:kurledu} provides partial paradigms for the circumambulative form
 
 \subsection{Morphosyntactic parameters of AM in Kiranti}
 The Khaling AM system, among the most complex in the Kiranti branch, can be used to illustrate the general typological characteristics of AM systems in this branch. Table \ref{tab:system} summarizes the data concerning four parameters (temporal relation, deixis, oath and argument of motion) relating to V_2.
+
 \begin{landscape}
 \begin{table}%[H]
 \caption{The Khaling AM system} \label{tab:system} \centering
@@ -140,6 +141,7 @@ Source &V_2 & Temp.& Deixis & Verticality & Argument \\
 \end{tabular}
 \end{table}
 \end{landscape}
+
  \subsubsection{Temporal relation} \label{sec:temporal.khaling}
 As shown by Table \ref{tab:system}, prior, concurrent and subsequent AM markers (abbreviated as P, C and S respectively) are found in Khaling. The marker  \dhatu{-tɛ(nt)-}{do X and come/bring down} generally implies subsequent motion (as in \ref{ex:ryaptyandyu1}), but it can also express prior motion if pragmatics forces the interpretation: for instance, in (\ref{ex:ryaptyandyu2}), the rice field being lower in altitude than the household, only a prior motion interpretation makes sense, while in (\ref{ex:ryaptyandyu1}), the buckwheat field being at a higher altitude, there is no obstacle to adopt the default subsequent motion interpretation.
 
@@ -158,7 +160,6 @@ As shown by Table \ref{tab:system}, prior, concurrent and subsequent AM markers 
 \glt `Jirise comes down, beats the rice (and returns).'
  \end{exe}
 
- 
 
  \subsubsection{Verticality and deixis} \label{sec:verticality.khaling}
  The verticality dimension (cislocative motion up, down, and on same level) in the Khaling AM system directly reflects a feature of the motion verbs that is common to all Kiranti languages: the fact that not less than four distinct verbs exist to express cislocative motion, \dhatu{ɦo}{come} that is neutral as the the verticality dimension, and \dhatu{pi}{come (same level)}, \dhatu{kʰoŋ}{come up}, and \dhatu{je}{come down}. 
@@ -241,11 +242,23 @@ The V_2 \ipa{-las-} `go, do and come back' implies two motion events, and may be
 The AM systems in Kiranti languages stand out by the following characteristics:
 
 \begin{itemize}
-\item All systems have a circumambulative `go around doing', though its form is cognate only in very closely related languages, such as Khaling and Dumi. The circumambulative marker is not necessarily always interpreted as AM in all languages; for instance in Belhare, \citet[164]{bickel96aspect} shows that the `ambulative' marker has non-AM uses (compare XXX and XXX).
+\item All systems have a circumambulative `go around doing', though its form is cognate only in very closely related languages, such as Khaling and Dumi. The circumambulative marker is not necessarily always interpreted as AM in all languages; for instance in Belhare, \citet[164]{bickel96aspect} shows that the marker which he glosses as `spatially distributed temporary' \textsc{sdt}  has both AM and non-AM uses (compare \ref{ex:chapkonu} and \ref{ex:chigon}).
+ \begin{exe}
+\ex \label{ex:chapkonu}
+\gll \ipa{rot-de} \ipa{i-baŋ-ŋa} \ipa{chap-kon-u}  \\
+road-\textsc{loc} one-\textsc{hum}-\textsc{obl} write-\textsc{sdt}-\textsc{3u} \\
+\glt \sens{Somebody is walking around taking notes on the road.}
+\end{exe}
+
+ \begin{exe}
+\ex \label{ex:chigon}
+\gll \ipa{thali} \ipa{khore} \ipa{wat} \ipa{chi-gon}    \\
+plat cup clean clean-\textsc{sdt} \\
+\glt \sens{He is cleaning plates and cups.}
+\end{exe}
 \item Most systems allow manipulative interpretation of AM markers, with motion of both A and P.
 \item In the same way as the cislocative motion verbs ( `come') have a verticality dimension in Kiranti (come up, come down and come at the same level), AM markers also have the same distinction, even if the verbs from which the AM markers are grammaticalized are not always attested.
 \end{itemize}
-
 \begin{landscape}	
 \begin{table}
 \caption{The Dumi AM system (\citealt[199-214]{driem93dumi})} \label{tab:dumi.am} \centering
@@ -509,8 +522,125 @@ This difference between Japhug and Situ, two otherwise relatively closely relate
 
 
 \section{Sinitic}
+The phenomenon of associated motion (henceforth AM) has been rarely addressed in the linguistic studies of the Sinitic languages. It has not been described until in \cite{lamarre17motion.cum} and \cite{lamarre17deictic} where the sequences [VP+\zh{去/来}] \sens{go/come to do} in Northern Sinitic languages are analyzed as \textsc{am} encoding. In (\ref{distribution2}) and (\ref{distribution1}), the andative enclitic \zh{去} and the ventive enclitic \zh{来} respectively encode an translocative and a cislocative motion to the action denoted by the VP.
+
+
+\begin{exe}
+\ex Standard Mandarin \citep{lamarre17deictic} \label{distribution2}
+\glll
+\zh{喝} \zh{点儿} \zh{水}=\zh{去} \\
+\ipa{Hē} \ipa{diǎnr} \ipa{shuǐ}=\ipa{qu} \\
+drink  some water=\textsc{go}$\&$ \\
+\glt \sens{Go and drink some water!}.
+\end{exe}
+
+\begin{exe}
+\ex Standard Mandarin \citep{lamarre17motion.cum} \label{distribution1}
+\glll
+\zh{你} \zh{干} \zh{嘛}=\zh{来} \zh{了} \\
+\ipa{Nǐ} \ipa{gàn} \ipa{má}=\ipa{lai} \ipa{le} \\
+\textsc{2sg} do what=\textsc{come}$\&$ \textsc{part} \\
+\glt \sens{What are you coming for?}
+\end{exe}
+
+[VP+\zh{去/来}] was previously described as a type \sens{purpose construction} \citetext{\citealp{lu1985vpqu}; \citealp{yang2012mudi}}, the final \zh{去/来} as particles of purpose \citep[479]{chao68chinese}, and is considered to be interchangeable to some degree with the serial verb construction (henceforth SVC) [\zh{去/来}+VP]. We can compare (\ref{distribution2}) and (\ref{distribution1}) with (\ref{inventory2}) and (\ref{inventory1}) below. Noted that as \textsc{am} markers (in \ref{distribution2} and \ref{distribution1}), the post-verbal \zh{去/来} lose their verbality to some degree and show tendancy to become bound morphemes, such as phonetic weakening comparing to their source verbs (in \ref{inventory2} and \ref{inventory1}). \citealp[479]{chao68chinese}; \citealp{lu1985vpqu}; \cite{lamarre17motion.cum} ; \cite{lamarre17deictic}).
+
+\begin{exe}
+\ex Standard Mandarin \citep{lamarre17deictic} \label{inventory2}
+\glll
+\zh{去} \zh{喝} \zh{点儿} \zh{水} \\
+\ipa{Qù} \ipa{hē} \ipa{dianr} \ipa{shuǐ} \\
+go drink some water \\
+\glt \sens{Go and drink some water!}
+\end{exe}
+
+
+\begin{exe}
+\ex Standard Mandarin \label{inventory1}
+\glll
+\zh{你} \zh{来} \zh{干} \zh{什么}  \\
+\ipa{Nǐ} \ipa{lái} \ipa{gàn} \ipa{shénme}  \\
+\textsc{2sg} come do what \\
+ \glt \sens{What are you coming for?}
+\end{exe}
+Based on \cite{chappell15areas} about the typo-geographic division of the Sinitic languages in China and our preliminary survey on the acceptance of [VP+\zh{去/来}] in representative varieties of each of these langues, Table (\ref{inventorytable1}) shows the general distribution of \textsc{am} marking in the Sinitic Languages in China. The gray parts correspond to the places where the marking of the associated movement is found. The lighter the cells, the more likely the \textsc{am} marking is absent. As there is not much work on these places regarding this aspect, a detailed job would be worthy doing. 
+
+No Sinitic language has a dedicated AM markers. Depending on the variety, AM enclitics can also mark orientation (in particular when used with motion verbs), aspect and imperative.
+
+The \textsc{am} enclitics in Sinitic languages in some cases can imply pluriactionality.  Sentences such as (\ref{mono1}) can have two interpretations. In most cases, it implies a monoactionality reading, the motion and the action are both realized. However, the plurilactionality interpretation is also possible. Imagine that the speaker is making a phone call to a friend who has gone to another place to do something, and asks him \sens{What did you go to do?}. In this case, the motion has been realized, while the action has not. 
+
+\begin{exe}
+\ex \label{mono1}
+\glll
+\zh{你} \zh{干} \zh{嘛}=\zh{去} \zh{了} \\
+\ipa{Nǐ} \ipa{gàn} \ipa{má}=\ipa{qu} \ipa{le} \\
+\textsc{2sg} do what=\textsc{go}$\&$ \textsc{part} \\
+\glt \sens{What did you go to do?}
+\end{exe}
+
+ 
+
+
+\begin{table} [H] \label{inventorytable1}
+\caption{Geographic distribution of \textsc{am} markers of the Sinitic languages of China}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{lllllllll}
+\toprule
+& Language branch & Dialect & \textsc{am} markers  \\
+\midrule
+\grise{I}. & \grise{Mandarin \zh{官话}} & \grise{}&  \grise{} \\
+\grise{} & \small \grise{Standard Mandarin} & \grise{} &  \grise{\zh{去} \zh{来} } \\
+ \grise{}& \small \grise{Beijing \zh{北京}}  &  \grise{Beijing \zh{北京}} & \grise{\zh{去} \zh{来} }  \\
+ \grise{}& \small \grise{Northwestern (Lanyin \zh{兰银})} & \grise{Yinchuan \zh{银川}} &\grise{\zh{去} \zh{来} \zh{走}} \\
+  \grise{}& \small \grise{} & \grise{Dachuan \zh{达川}} & \grise{\zh{去} \zh{来}} \\
+ \grise{}& \small \grise{Jilu \zh{冀鲁}}  & \grise{Jizhou \zh{冀州}} &   \\
+ \grise{} & \small \grise{Jiaoliao \zh{胶辽}}&   \grise{Qingdao \zh{青岛}}   & \\
+ \grise{} & \small  \grise{Dongbei \zh{东北}}  &  \grise{Changchun \zh{长春}}  &  \\
+ \grise{} & \small \grise{Central plains (Zhongyuan \zh{中原})} & \grise{Xi'an \zh{西安} }  &  \grise{\zh{去} \zh{来} }  \\
+  \grise{} & \small \grise{Southwestern \zh{西南}}  & \grise{Chengdu \zh{成都}} & \grise{\zh{去} \zh{来} }  \\
+   \grise{} & \small \grise{}  & \grise{Wuhan \zh{武汉}} &  \grise{\zh{去} \zh{来} } \\
+ \grise{} & \small \grise{Jianghuai \zh{江淮} (Southern)}  & \grise{Nanjing \zh{南京}}&  \\
+  \grise{} & \small \grise{}  & \grise{Anqing \zh{安庆}}& \grise{\zh{去} \zh{来} }  \\
+\grise{II.} & \grise{Jin  \zh{晋}} & \grise{Shenmu \zh{神木}} &  \grise{\zh{去} \zh{来} }  \\
+\grise{} & \grise{} & \grise{Datong \zh{大同}} &  \grise{\zh{去} \zh{来} }  \\
+\grise{III.} &\grise {Xiang \zh{湘}} & \grise{Changsha \zh{长沙}} &   \grise{\zh{去} \zh{来} }  \\
+\grise{} &\grise {} & \grise{Changde \zh{常德}} & \grise{\zh{去} \zh{来}? }    \\
+\gray{IV.} & \gray{Wu \zh{吴}} &  \gray{Shanghai \zh{上海}} & \gray{\zh{去} \zh{来}} \\
+\gray{} & \gray{} &  \gray{Hangzhou \zh{杭州}} &  \gray{\zh{去}}  \\
+\gray{} & \gray{} &  \gray{Suzhou \zh{苏州}} & \gray{None} \\
+\gray{V.} & \gray{Hui \zh{徽}} &  \gray{Huizhou \zh{徽州}} & \gray{\zh{去}}   \\
+\lightgray{VI.} & \lightgray{Gan \zh{赣}} & \lightgray{Northeastern Gan} & \lightgray{\zh{去} \zh{来}} \\
+ & &  Fuzhou \zh{抚州} & None  \\
+VII. & Min  \zh{闽} & Yilan \zh{宜兰}  & None  \\
+VIII. & Kejia \zh{客家} (Hakka) & &  None  \\
+IX. & Yue \zh{粤} (Cantonese) & & None   \\
+X. & Pinghua \zh{平话} and Tuhua \zh{土话}   & Rucheng \zh{汝城} & None \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+
+\begin{table} [H]
+\caption{\textsc{am} markers in Sinitic} \centering
+\begin{tabular}{llllllllll}
+\toprule
+Source &Enclitic & Temp.& Deix. & Vert.& Arg. \\
+\midrule
+\zh{去} \ipa{qù} &	\ipa{=qu} `go and X' &	P &		$\varnothing$ &$\varnothing$&	S/A & \\
+ \zh{来}  \ipa{lái} &	\ipa{=lai} `come and X' &	P &		$\varnothing$ &$\varnothing$&	S/A & \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+ 
 
 \section{Other languages}
+
+\citet{konnerth14karbi, konnerth15cisloc}
+
+\citet{boro17hakhun}
+
+\citet{Jenny16grammar}
 
 \section{Typological comparison}
 \begin{landscape}
@@ -537,9 +667,13 @@ Kiranti &Khaling & 7&P, C, S &Cis/Trans & Verticality & Aspect,  &  \N  &S/A, S/
         &&&&&&Orientation&&\\
 &Yakkha & 7 & P, C, S  & Cis/Trans &  Verticality & Aspect,  &?  &S/A, S/A+P \\
         &&&&&&Orientation&&\\
+\midrule
+Sinitic & Mandarin &2& P & Cis/Trans & $\varnothing$ &Aspect,  Modality&\N   &S/A  \\
+        &&&&&&Orientation&&\\
 \bottomrule
 \end{tabular}
 \end{table}
+
 \end{landscape}
 \section{Conclusion}
 
