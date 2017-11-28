@@ -12,11 +12,17 @@
 \let\sfdefault\rmdefault
 \newcommand{\racine}[1]{\begin{math}\sqrt{#1}\end{math}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}} 
+\newcommand{\gray}[1]{\cellcolor{lightgray!30}{#1}}
+\newcommand{\lightgray}[1]{\cellcolor{lightgray!10}{#1}}
   \usepackage{amssymb}
   \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon\textit{#1}}} 
  \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
- 
+ \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+    \newenvironment{ssize}{\footnotesize}{}{}
+   \newcommand{\sens}[1]{‘#1’}
+
  \begin{document}
 
  \title{Associated motion in Sino-Tibetan/Trans-Himalayan}
@@ -105,18 +111,49 @@ stairs \textsc{3sg}.\textsc{poss}-on \textsc{ifr}:\textsc{up}-\rouge{go} \textsc
  Motion verb construction (\ref{ex:tChi.WkWndza}) vs AM (\ref{ex:tChi.GWtAtWndzat}):
 \begin{exe}
 \ex \label{ex:tChi.WkWndza}
-\gll tɕʰi ɯ-kɯ-pa jɤ-tɯ-ɣe? \\
-what \textsc{3sg.poss}-do \textsc{pfv}-2-come[II] \\
-\glt `What have you come to do?' (Japhug)
+\gll tɕʰi ɯ-kɯ-pa jɤ-tɯ-\bleu{ɣe}? \\
+what \textsc{3sg.poss}-do \textsc{pfv}-2-\bleu{come[II]} \\
+\glt `What have you \bleu{come} to do?' (Japhug)
 \end{exe}
 
 \begin{exe}
 \ex \label{ex:tChi.GWtAtWndzat}
 \gll tɕʰi \rouge{ɣɯ}-tɤ-tɯ-pa-t \\
 what \rouge{\textsc{come\&do}}-\textsc{pfv}-2-do-\textsc{pst:tr}    \\
-\glt `What did you do, after you \rouge{came} here?' (Japhug)
+\glt `What did you do upon \rouge{coming} here?' (Japhug)
 \end{exe} 
   \end{frame}  
+
+  \begin{frame} 
+\frametitle{Gyalrongic}
+ \framesubtitle{Mono-actionality (complement clauses)}
+\begin{exe}
+\ex \label{ex:CWkAmtChot}
+\gll tɯrsa \rouge{ɕɯ}-kɤ-mtɕʰot to-mda ɲɯ-ŋu \\
+grave \rouge{\textsc{transloc}}-\textsc{inf}-make.offerings \textsc{ifr}-be.time.to \textsc{sens}-be \\
+\glt `It was the time to (\rouge{go} and) make offerings for the graves.' (160630 abao-zh, 70)
+ \end{exe} 
+
+ \begin{exe}
+\ex \label{ex:kWrAma.kACe}
+\gll   kɯ-rɤma kɤ-\bleu{ɕe} mda mɤ-mda nɯtɕu ɕ-tu-kɯ-ru pɯ-ŋgrɤl. \\
+ \textsc{nmlz}:S/A-work \textsc{inf}-\bleu{go} be.time:\textsc{fact} \textsc{neg}-be.time:\textsc{fact} \textsc{dem}:\textsc{loc} \textsc{transloc}-\textsc{ipfv}:up-\textsc{genr}:S/P-look \textsc{pst}.\textsc{ipfv}-be.usually \\
+ \glt  `(people used to watch when (these stars) came out or disappeared to know) whether it was time to \bleu{go} to work.' (29-LAntshAm, 66)
+  \end{exe}
+    \end{frame}  
+    \begin{frame} 
+\frametitle{Gyalrongic}
+ \framesubtitle{Volitionality}
+MVC implies a volitional verbal action, while AM can be used with non-volitional verbs, such as `see, find' as in \ref{ex:CpjAmto}.
+
+  \begin{exe}
+\ex  \label{ex:CpjAmto}
+\gll  nɯɕɯmɯma ʑo tɯ-ci ɯ-ŋgɯ pjɤ-ɕe qʰe iɕqʰa tɤɕime kɯ ɯ-sɤcɯ pɯ-kɤ-nɯ-ɕlɯɣ nɯ \rouge{ɕ}-pjɤ-mto. \\
+immediately \textsc{emph} \textsc{indef}.\textsc{poss}-water \textsc{3sg}.\textsc{poss}-inside \textsc{ifr}:\textsc{down}-go \textsc{lnk} the.aforementioned lady \textsc{erg} \textsc{3sg}.\textsc{poss}-key \textsc{pfv}:\textsc{down}-\textsc{nmlz}:P-\textsc{auto}-drop \textsc{dem} \rouge{\textsc{transloc}}-\textsc{ifr}-see \\
+\glt `He went immediately into the water and found there the key that the lady had dropped by mistake.' (140510 fengwang, 118)
+\end{exe}
+  \end{frame}  
+  
   
 \begin{frame} 
 \frametitle{Kiranti}
@@ -174,9 +211,136 @@ Source &V_2 & Temp.& Deixis & Verticality & Argument \\
 
  \begin{frame} 
 \frametitle{Sinitic}
+\begin{itemize}
+\item An AM approach for the post-VP \zh{去 \ipa{tɕʰy}}/\zh{来 \ipa{lai}} in the purposive constructions [VP+ \zh{去/来}] 
+\begin{itemize}
+\item Phonetic weakening
+\item Loss of verbality, showing evidence of grammaticalization
+\item Implication with \textsc{motion} and \textsc{purpose}
+\end{itemize}
+\item Chinese translation: \zh{关联位移} \ipa{guānlián wèiyí}
+\end{itemize}
+
+\begin{exe}
+\ex AM, Standard Mandarin \citep{lu1985vpqu},  \citep{lamarre17deictic} \label{distribution2}
+\glll
+\zh{喝} \zh{点儿} \zh{水}=\rouge{\zh{去}} \\
+\ipa{Hē} \ipa{diǎnr} \ipa{shuǐ}=\rouge{\ipa{qu}} \\
+drink  a.little water=\textsc{go}$\&$ \\
+\glt \sens{Go and drink some water}.
+\end{exe}
+
+\begin{exe}
+\ex AM, Standard Mandarin \citep[479]{chao68chinese} 
+\glll
+\zh{换} \zh{了} \zh{衣裳}  \zh{打球}=\rouge{\zh{来}} \\
+\ipa{Huàn} \ipa{le} \ipa{yīshang} \ipa{dǎqi\'{u}}=\rouge{\ipa{lai}}  \\
+change \textsc{asp} clothes play.ball=\textsc{come}$\&$ \\
+\glt \sens{Change one's clothes to play ball.}
+\end{exe}
+
+\end{frame}
+
+\begin{frame}{Sinitic}
 
 
- \end{frame}  
+\begin{exe}
+\ex MVC, Standard Mandarin \citep{lu1985vpqu} \label{inventory2}
+\glll
+\bleu{\zh{去}} \zh{喝} \zh{点儿} \zh{水} \\
+\bleu{\ipa{Qù}} \ipa{hē} \ipa{diǎnr} \ipa{shuǐ} \\
+go drink a.little water \\
+\glt \sens{Go to drink some water.}
+\end{exe}
+
+\begin{exe}
+\ex MVC, Standard Mandarin \citep[479]{chao68chinese} 
+\glll
+ \bleu{\zh{来}} \zh{打球}  \\
+\bleu{\ipa{Lái}} \ipa{dǎqi\'{u}}   \\
+come play.ball \\
+ \glt \sens{come to play ball}
+\end{exe}
+
+\end{frame}
+
+\begin{frame}{Sinitic}
+\begin{table} [H]
+\caption{\textsc{am} marker in Standard Mandarin} \centering
+\begin{tabular}{llllllllll}
+\hline
+& \zh{去} & \zh{来}  \\
+\hline
+Source verb & \zh{去} \ipa{qù} (\ipa{tɕʰy\textsuperscript{51}}) &  \zh{来} \ipa{lái} (\ipa{lai\textsuperscript{35}}) \\
+\textsc{am} marker form & \zh{去} \ipa{qu} (\ipa{tɕʰy}) &  \zh{来} \ipa{lai} (\ipa{lai}) \\
+Meaning & to go  & to come  \\
+Glose & \textsc{go}$\&$ & \textsc{come}$\&$ \\
+Temporality  &  Prior to action & Prior to action \\
+Deixis & Translocative & Cislocative  \\
+Vertical dimension & None & None \\
+Actionality & ? & ?  \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item Presence \textsc{vs.} absence
+\item Unbalanced distribution of \zh{去} and \zh{来}
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}{Sinitic}
+
+\resizebox*{!}{\dimexpr\textheight-2\baselineskip\relax}{%
+\begin{tabular}{lllllllll}
+\hline
+& Language branch & Dialect & \textsc{am} markers   \\
+\hline
+\grise{I}. & \grise{Mandarin \zh{官话}} & \grise{}&  \grise{}  \\
+ \grise{}& \grise{Beijing \zh{北京}}  &  \grise{Beijing \zh{北京}} & \grise{\zh{去} \zh{来} } \\
+ \grise{}& \grise{Northwestern (Lanyin \zh{兰银})} & \grise{Yinchuan \zh{银川}} &\grise{\zh{去} \zh{来}} \\
+  \grise{}& \grise{} & \grise{Dachuan \zh{达川}} & \grise{\zh{去} \zh{来}}\\
+ \grise{} &  \grise{Central plains (Zhongyuan \zh{中原})} & \grise{Xi'an \zh{西安} }  &  \grise{\zh{去} \zh{来} } \\
+  \gray{} &  \gray{Southwestern \zh{西南}}  & \gray{Chengdu \zh{成都}} & \gray{\zh{去?} \zh{来?} } \\
+   \gray{} &  \gray{}  & \gray{Wuhan \zh{武汉}} &  \gray{\zh{去?} \zh{来?} }  \\
+    \gray{} & \gray{}  & \gray{Yuxi \zh{玉溪}} &  \gray{\zh{去?} }\\
+  \gray{} & \gray{Jianghuai \zh{江淮} (Southern)}  & \gray{Anqing \zh{安庆}}& \gray{\zh{去?} \zh{来?} }  \\
+\grise{II.} & \grise{Jin \zh{晋}} & \grise{Shenmu \zh{神木}} &  \grise{\zh{去} \zh{来} } \\
+\grise{} & \grise{} & \grise{Datong \zh{大同}} &  \grise{\zh{去} \zh{来} }  \\
+\grise{} & \grise{} & \grise{Linfen \zh{临汾}} & \grise{\zh{去} \zh{来}} \\
+\gray{III.} &\gray{Xiang \zh{湘}} & \gray{Changsha \zh{长沙}} &   \gray{\zh{去?} \zh{来?}}\\
+\gray{} &\gray{} & \gray{Changde \zh{常德}} & \gray{\zh{去?} \zh{来}?}   \\
+\gray{IV.} & \gray{Wu \zh{吴}} &  \gray{Shanghai \zh{上海}} & \gray{\zh{去?} \zh{来?}} \\
+\gray{} & \gray{} &  \gray{Hangzhou \zh{杭州}} &  \gray{\zh{去?}}   \\
+\gray{} & \gray{} &  \gray{Ningbo \zh{宁波}} &  \gray{\zh{去?}} \\
+\gray{} & \gray{} &  \gray{Suzhou \zh{苏州}} & \gray{None} \\
+\gray{V.} & \gray{Hui \zh{徽}} &  \gray{Huizhou \zh{徽州}} & \gray{\zh{去?}}   \\
+\lightgray{VI.} & \lightgray{Gan \zh{赣}} & \gray{Ji'an \zh{吉安}} & \gray{\zh{去} \zh{来}}  \\
+ & &  Fuzhou \zh{抚州} & None \\
+VII. & Min  \zh{闽} & Chaozhou \zh{潮州}  & None  \\
+VIII. & Kejia \zh{客家} (Hakka)  & Rucheng \zh{汝城} & None \\
+IX. & Yue \zh{粤} (Cantonese) & Guangzhou \zh{广州} & None   \\
+\hline
+\end{tabular}}
+
+\end{frame}
+
+\begin{frame}{Sinitic}
+ \begin{minipage}[c]{.46\linewidth}
+\includegraphics[scale=0.3]{../Desktop/map.pdf}  
+   \end{minipage} \hfill
+   \begin{minipage}[c]{.46\linewidth}
+   
+   \begin{itemize}
+\item Northern China: \textsc{am} encoding tends to be present.
+\item Central China: in question.
+\item Southern China: \textsc{am} encoding tends to be absent.
+\end{itemize}
+\end{minipage}
+\end{frame}
 
 
 \begin{frame} 
