@@ -18,15 +18,19 @@
   \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon\textit{#1}}} 
  \newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
- \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+ \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{STHeiti}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
     \newenvironment{ssize}{\footnotesize}{}{}
-   \newcommand{\sens}[1]{‘#1’}
+     \newcommand{\quo}[1]{“#1”}
+     \newcommand{\sens}[1]{‘#1’}
+
+
+
 
  \begin{document}
 
  \title{Associated motion in Sino-Tibetan/Trans-Himalayan}
- \author{Guillaume Jacques\\ Aimée Lahaussois \\ Zhang Shuya}
+ \author{Guillaume Jacques (\textsc{Cnrs-Crlao})\\ Aimée Lahaussois (\textsc{Htl-Cnrs}) \\ Zhang Shuya (\textsc{Inalco-Crlao})}
  \date{}
  \maketitle
   
@@ -98,10 +102,10 @@ stairs \textsc{3sg}.\textsc{poss}-on \textsc{ifr}:\textsc{up}-\rouge{go} \textsc
  \framesubtitle{Mono-actionality}
  Tests used:
 \begin{enumerate}
-\item<1-> Concessives and negation (\citealt{jacques13harmonization})
-\item<2-> Interrogatives
-\item<3-> Protasis of conditionals
-\item<3-> Scope of complement-taking verbs
+\item Concessives and negation (\citealt{jacques13harmonization})
+\item Interrogatives
+\item Protasis of conditionals
+\item Scope of complement-taking verbs
  \end{enumerate}
  \end{frame}  
  
@@ -142,15 +146,17 @@ grave \rouge{\textsc{transloc}}-\textsc{inf}-make.offerings \textsc{ifr}-be.time
   \end{exe}
     \end{frame}  
     \begin{frame} 
+    
+    
 \frametitle{Gyalrongic}
  \framesubtitle{Volitionality}
-MVC implies a volitional verbal action, while AM can be used with non-volitional verbs, such as `see, find' as in \ref{ex:CpjAmto}.
+MVC implies only a volitional verbal action, while AM can be also used with non-volitional verbs, such as \quo{See \textsc{vs.} Happen upon; come across}  as in \ref{ex:CpjAmto}.
 
   \begin{exe}
 \ex  \label{ex:CpjAmto}
-\gll  nɯɕɯmɯma ʑo tɯ-ci ɯ-ŋgɯ pjɤ-ɕe qʰe iɕqʰa tɤɕime kɯ ɯ-sɤcɯ pɯ-kɤ-nɯ-ɕlɯɣ nɯ \rouge{ɕ}-pjɤ-mto. \\
+\gll  nɯɕɯmɯma ʑo tɯ-ci ɯ-ŋgɯ pjɤ-\bleu{ɕe} qʰe iɕqʰa tɤɕime kɯ ɯ-sɤcɯ pɯ-kɤ-nɯ-ɕlɯɣ nɯ \rouge{ɕ}-pjɤ-mto. \\
 immediately \textsc{emph} \textsc{indef}.\textsc{poss}-water \textsc{3sg}.\textsc{poss}-inside \textsc{ifr}:\textsc{down}-go \textsc{lnk} the.aforementioned lady \textsc{erg} \textsc{3sg}.\textsc{poss}-key \textsc{pfv}:\textsc{down}-\textsc{nmlz}:P-\textsc{auto}-drop \textsc{dem} \rouge{\textsc{transloc}}-\textsc{ifr}-see \\
-\glt `He went immediately into the water and found there the key that the lady had dropped by mistake.' (140510 fengwang, 118)
+\glt `He \bleu{went} immediately into the water and \rouge{found there} the key that the lady had dropped by mistake.' (140510 fengwang, 118)
 \end{exe}
   \end{frame}  
   
@@ -159,16 +165,16 @@ immediately \textsc{emph} \textsc{indef}.\textsc{poss}-water \textsc{3sg}.\texts
 \frametitle{Kiranti}
  \framesubtitle{Main characteristics of AM}
 \begin{enumerate}
-\item<1-> All Kiranti languages have compound verbs (V_1+V_2), and some V_2s come from motion verbs. The motion V_2s are often grammaticalized as aspect markers (eg \citealt{bickel96aspect}), but retain in some languages the ability to express a motion event.
-\item<2-> Vertical dimension in AM markers (eg \ref{ex:khiptyanta})
-\item<3-> Argument of motion: can be the subject (S/A) or both subject and object (S/A+P) with a labile AM marker (\rouge{\textsc{do\&bring}} (\ref{ex:khiptyanta}), \rouge{\textsc{do\&take}} etc)
+\item All Kiranti languages have compound verbs (V\textsubscript{1}+V\textsubscript{2}), and some V\textsubscript{2}s come from motion verbs. The motion V\textsubscript{2}s are often grammaticalized as aspect markers (eg \citealt{bickel96aspect}), but retain in some languages the ability to express a motion event.
+\item Vertical dimension in AM markers (eg \ref{ex:khiptyanta})
+\item Argument of motion: can be the subject (S/A) or both subject and object (S/A+P) with a labile AM marker (\rouge{\textsc{do\&bring}} (\ref{ex:khiptyanta}), \rouge{\textsc{do\&take}} etc)
 \begin{exe}
 \ex \label{ex:khiptyanta}
  \gll \ipa{tukkâ-m}	\ipa{ʦulo-tʉ}	\ipa{kʰir}	\ipa{kʰip-\rouge{tɛn}-tʌ} \\
   up.there.\textsc{distal}-\textsc{rel} hearth-\textsc{loc}:\textsc{up} porridge cook-\rouge{\textsc{do\&bring.down}}-\textsc{1sg}.\textsc{pst} \\
   \glt `I cooked porridge on the stove up there (on the roof) and \rouge{brought it down}.' (Khaling)
  \end{exe}
- \item<4-> Pluri-actionality
+ \item Pluri-actionality
 \end{enumerate}
 \end{frame}  
 
@@ -198,7 +204,7 @@ immediately \textsc{emph} \textsc{indef}.\textsc{poss}-water \textsc{3sg}.\texts
  
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{lllllll}
-Source &V_2 & Temp.& Deixis & Verticality & Argument \\
+Source & AM (V\textsubscript{2}) & Temp.& Deixis & Verticality & Argument \\
 ?& \dhatu{-le(t)-}{go around doing X} &C& \textsc{circum} & $\varnothing$ & S/A \\
 \dhatu{kʰot}{go} &\dhatu{-kʰo(t)-}{do X and go} &S& \textsc{trans} & $\varnothing$ &  S/A(+P) \\
 ?&\dhatu{-pɛ(t)-}{go and do X} &P& \textsc{trans} & $\varnothing$ & S/A \\
@@ -216,13 +222,13 @@ Source &V_2 & Temp.& Deixis & Verticality & Argument \\
 \begin{itemize}
 \item Phonetic weakening
 \item Loss of verbality, showing evidence of grammaticalization
-\item Implication with \textsc{motion} and \textsc{purpose}
+\item Described with \textsc{motion} and \textsc{purpose}
 \end{itemize}
 \item Chinese translation: \zh{关联位移} \ipa{guānlián wèiyí}
 \end{itemize}
 
 \begin{exe}
-\ex AM, Standard Mandarin \citep{lu1985vpqu},  \citep{lamarre17deictic} \label{distribution2}
+\ex AM, Standard Mandarin \citetext{\citealp[]{lu1985vpqu}; \citealp[]{lamarre17deictic}} \label{distribution2}
 \glll
 \zh{喝} \zh{点儿} \zh{水}=\rouge{\zh{去}} \\
 \ipa{Hē} \ipa{diǎnr} \ipa{shuǐ}=\rouge{\ipa{qu}} \\
@@ -274,7 +280,7 @@ come play.ball \\
 Source verb & \zh{去} \ipa{qù} (\ipa{tɕʰy\textsuperscript{51}}) &  \zh{来} \ipa{lái} (\ipa{lai\textsuperscript{35}}) \\
 \textsc{am} marker form & \zh{去} \ipa{qu} (\ipa{tɕʰy}) &  \zh{来} \ipa{lai} (\ipa{lai}) \\
 Meaning & to go  & to come  \\
-Glose & \textsc{go}$\&$ & \textsc{come}$\&$ \\
+Gloss & \textsc{go}$\&$ & \textsc{come}$\&$ \\
 Temporality  &  Prior to action & Prior to action \\
 Deixis & Translocative & Cislocative  \\
 Vertical dimension & None & None \\
@@ -330,14 +336,14 @@ IX. & Yue \zh{粤} (Cantonese) & Guangzhou \zh{广州} & None   \\
 
 \begin{frame}{Sinitic}
  \begin{minipage}[c]{.46\linewidth}
-\includegraphics[scale=0.3]{../Desktop/map.pdf}  
+\includegraphics[scale=0.3]{../map.pdf} 
    \end{minipage} \hfill
    \begin{minipage}[c]{.46\linewidth}
    
    \begin{itemize}
 \item Northern China: \textsc{am} encoding tends to be present.
-\item Central China: in question.
 \item Southern China: \textsc{am} encoding tends to be absent.
+\item Central China: data unclear
 \end{itemize}
 \end{minipage}
 \end{frame}
@@ -360,7 +366,13 @@ IX. & Yue \zh{粤} (Cantonese) & Guangzhou \zh{广州} & None   \\
 there drink \rouge{go} \textsc{imp}-\textsc{2sg} \\
 \glt ‘\rouge{Go} and drink (tea) there.’
 \end{exe}
-  \item<3->   \citet{Jenny16grammar}
+  \item<3->   \citet[388]{Jenny16grammar}
+ \begin{exe}
+\ex 
+\gll   θu-dó tʰəmìn sà-\rouge{la}-dɛ \\
+3-\textsc{pl} cooked.rice eat-\rouge{come}-\textsc{nfut}  \\
+\glt ‘They have eaten (\rouge{before coming here}).'
+\end{exe}
    \end{enumerate}
 \end{frame}  
 
@@ -392,6 +404,8 @@ Sinitic & Mandarin &2& P & Cis/Trans & $\varnothing$ &Aspect,  Modality& N   &S/
         &&&&&&Orientation&&\\
 Karbi&&1&S&Cis&  $\varnothing$ &Person, Orientation&?  &S/A+P \\
 Sal&Tangsa&1&P&Trans&  $\varnothing$ & ?&?  &S/A+P  \\
+LB&Burmese&6&P, C, S&Cis/Trans&  $\varnothing$ &Aspect, &?  &S/A+P  \\
+        &&&&&&Orientation&&\\
  \end{tabular}}
  
 \end{frame}  
@@ -419,7 +433,7 @@ Sal&Tangsa&1&P&Trans&  $\varnothing$ & ?&?  &S/A+P  \\
 \begin{frame} 
 \frametitle{References} 
 \tiny
-\bibliographystyle{unified}
+\bibliographystyle{linquiry2}
 \bibliography{bibliogj}
 \end{frame}  
 
