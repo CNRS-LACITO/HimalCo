@@ -5,6 +5,15 @@
 \usepackage{booktabs}
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
+ \usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=25mm,
+ right=25mm,
+ top=20mm,
+ bottom=20mm,
+ }
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{multicol}
@@ -31,33 +40,18 @@
 \newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
 
  \begin{document} 
-\title{Clefts and pseudo-clefts in Japhug}
+\title{Pseudo-cleft constructions in Japhug}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
 \maketitle
 
-\begin{exe}
-\ex \label{ex:aZo.pWnWmtota}
-\gll
-\ipa{kɯki}	\ipa{tɕʰeme}	\ipa{ki}	\ipa{ndɤre}	\ipa{aʑɯɣ}	\ipa{a-pɯ-ŋu}	\ipa{tʂaŋ}	\ipa{ma}	\ipa{tɕe}	\ipa{aʑo}	\ipa{pɯ-nɯmto-t-a}	\ipa{ɕti}	\ipa{tɕe}	\\
-\textsc{dem}.\textsc{prox} girl \textsc{dem}.\textsc{prox} \textsc{lnk}  \textsc{1sg}:\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{1sg} \textsc{pfv}-find-\textsc{tr}:\textsc{pst}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
-\glt `It is I who found the girl, it is fair that she should be mine.' (140517 buaishuohua, 101)
-\end{exe}
-
+Like many strictly verb-final languages, Japhug does not allow true cleft sentences. What is closest to a cleft sentence in Japhug is the \textbf{pseudo-cleft construction}, combining a headless participial relative clause in S function (generally with the determiner \ipa{nɯ}) with a nominal predicate followed by a positive (\ipa{ŋu} `be') or negative (\ipa{maʁ} `not be') copula. The basic structure of this construction is summarized in (\ref{ex:pseudo.cleft}).
 
 \begin{exe}
-\ex \label{ex:mAkWnaXtCWG}
-\gll \ipa{tɕeri}	[\ipa{mɤ-kɯ-naχtɕɯɣ}]	\ipa{tɕe,}	\ipa{ɯ-ndzrɯ}	\ipa{ɣɤʑu} \\
-but \textsc{neg}-\textsc{nmlz}:S/A-be.similar \textsc{lnk} \textsc{3sg}.\textsc{poss}-claw exist:\textsc{sens} \\
-\glt `What is different is that it has claws.' (21-pri, 37)
+\ex \label{ex:pseudo.cleft}
+\glt [\textsc{nmlz}-verb] \textsc{dem} noun \textsc{copula}
 \end{exe}
 
-\begin{exe}
-\ex \label{ex:kAnWmga.nW}
-\gll [\ipa{tɕe}	\ipa{paʁ}	\ipa{ndɤre}	\ipa{stu}	\ipa{kɤ-nɯmga}]	\ipa{nɯ}	\ipa{ɯ-ɕa}	\ipa{ŋu}	\ipa{qʰe} \\
-\textsc{lnk} pig \textsc{lnk} most \textsc{nmlz}:S/A-want.for \textsc{dem} \textsc{3sg}.\textsc{poss}-meat be:\textsc{fact} \textsc{lnk} \\
-\glt `Pigs are (raised) for their meat.' (05-paR, 100)
-\end{exe}
-
+Pseudo-clefts in Japhug do occur in S (\ref{ex:jAkWGe.nW}), O (\ref{ex:nWkArga})  and A (\ref{ex:WkWsWmphWl}) functions, but are on the whole very rare in the corpus.\footnote{The Japhug text corpus is available on the Pangloss archive (\citealt{michailovsky14pangloss}), at the address: \url{http://lacito.vjf.cnrs.fr/pangloss/corpus/list\textunderscore rsc.php?lg=Japhug} }
 
 \begin{exe}
 \ex \label{ex:jAkWGe.nW}
@@ -72,8 +66,7 @@ most \textsc{nmlz}:S/A-be.before \textsc{pfv}-\textsc{nmlz}:S/A-come[II] \textsc
 bird \textsc{pl} \textsc{3pl-nmlz:P}-like \textsc{dem} wheat always be:\textsc{fact} \\
 \glt `(The food) that birds like is always wheat (not barley).' (23 pGAYaR, 29)
 \end{exe} 
-   
-   %iɕqha <yazi> tɤ-mu kɯ ku-ɕɯm nɯnɯ, <tiane> ɣɯ ɯ-ŋgɯm pjɤ-ɕti rca wo matɕi.
+
 
 \begin{exe}
 \ex   \label{ex:WkWsWmphWl}  
@@ -82,11 +75,38 @@ but \textsc{dem} \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:S/A-\textsc{caus}-repr
 \glt `The thing that it reproduces with is its root, not its seeds.' (11-paRzwamWntoR, 113)
 \end{exe} 
 
-kɯ-mɤku lu-kɯ-ɣi nɯ zdɯm nɯ kɯ-wɣrum ŋu,
-tɕe nɯnɯ aʑo ŋu-a
-ɯ-qhu nɯ tɕu zdɯm kɯ-ɲaʁ ci lu-ɣi ŋu tɕe,
-nɯnɯ tɕe tɕethi tɤmujku nɯ lu-ɣi ŋu tɕe
+The present paper comprises three parts. First, it presents a short introduction to relativisation in Japhug (based in part on \citealt{jacques16relatives}). Second, it attempts to collect and classify all instances of pseudo-cleft constructions attested in the corpus. Third, it discusses the discourse function of pseudo-clefts and the alternative means of expressing contrastive and corrective focalisation in Japhug.
 
+   %iɕqha <yazi> tɤ-mu kɯ ku-ɕɯm nɯnɯ, <tiane> ɣɯ ɯ-ŋgɯm pjɤ-ɕti rca wo matɕi.
+
+%kɯ-mɤku lu-kɯ-ɣi nɯ zdɯm nɯ kɯ-wɣrum ŋu,
+%tɕe nɯnɯ aʑo ŋu-a
+%ɯ-qhu nɯ tɕu zdɯm kɯ-ɲaʁ ci lu-ɣi ŋu tɕe,
+%nɯnɯ tɕe tɕethi tɤmujku nɯ lu-ɣi ŋu tɕe
+
+%\begin{exe}
+%\ex \label{ex:mAkWnaXtCWG}
+%\gll \ipa{tɕeri}	[\ipa{mɤ-kɯ-naχtɕɯɣ}]	\ipa{tɕe,}	\ipa{ɯ-ndzrɯ}	\ipa{ɣɤʑu} \\
+%but \textsc{neg}-\textsc{nmlz}:S/A-be.similar \textsc{lnk} \textsc{3sg}.\textsc{poss}-claw exist:\textsc{sens} \\
+%\glt `What is different is that it has claws.' (21-pri, 37)
+%\end{exe}
+
+
+%\begin{exe}
+%\ex \label{ex:kAnWmga.nW}
+%\gll [\ipa{tɕe}	\ipa{paʁ}	\ipa{ndɤre}	\ipa{stu}	\ipa{kɤ-nɯmga}]	\ipa{nɯ}	\ipa{ɯ-ɕa}	\ipa{ŋu}	\ipa{qʰe} \\
+%\textsc{lnk} pig \textsc{lnk} most \textsc{nmlz}:S/A-want.for \textsc{dem} \textsc{3sg}.\textsc{poss}-meat be:\textsc{fact} \textsc{lnk} \\
+%\glt `Pigs are (raised) for their meat.' (05-paR, 100)
+%\end{exe}
+
+
+%\begin{exe}
+%\ex \label{ex:aZo.pWnWmtota}
+%\gll
+%\ipa{kɯki}	\ipa{tɕʰeme}	\ipa{ki}	\ipa{ndɤre}	\ipa{aʑɯɣ}	\ipa{a-pɯ-ŋu}	\ipa{tʂaŋ}	\ipa{ma}	\ipa{tɕe}	\ipa{aʑo}	\ipa{pɯ-nɯmto-t-a}	\ipa{ɕti}	\ipa{tɕe}	\\
+%\textsc{dem}.\textsc{prox} girl \textsc{dem}.\textsc{prox} \textsc{lnk}  \textsc{1sg}:\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{1sg} \textsc{pfv}-find-\textsc{tr}:\textsc{pst}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
+%\glt `It is I who found the girl, it is fair that she should be mine.' (140517 buaishuohua, 101)
+%\end{exe}
 
 \bibliographystyle{unified}
 \bibliography{bibliogj}
