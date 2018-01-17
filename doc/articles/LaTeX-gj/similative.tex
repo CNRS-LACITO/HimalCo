@@ -1,8 +1,9 @@
-\documentclass[oneside,a4paper,11pt]{article} 
+\documentclass[oneside,a4paper,12pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
+\usepackage[pass]{geometry}
 \usepackage{polyglossia} 
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
@@ -15,9 +16,9 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
  
-
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
 %\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Times New Roman} 
-\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase,FakeSlant=0.2]{Doulos SIL} 
 \newcommand{\ipa}[1]{{\phon\textit{#1}}}  
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -42,7 +43,7 @@
  \url{http://lacito.vjf.cnrs.fr/pangloss/corpus/list\textunderscore rsc.php?lg=Japhug}). This research was funded by the HimalCo project (ANR-12-CORP-0006) and is related to the research strand LR-4.11 ‘‘Automatic Paradigm Generation and Language Description’’ of the Labex EFL (funded by the ANR/CGI).}}
 \author{Guillaume Jacques}
 \maketitle
-
+ \linespread{1.5}
 \textbf{Abstract}: This paper documents equative, similative, comparative and superlative constructions on the basis of a corpus of narratives. It reveals a previously unsuspected wealth of constructions: no less than three main types of superlatives, and four types of equatives are attested, some including additional subtypes.
  
 \textbf{Keywords}: Japhug, equative, similative, superlative, comparative, denominal derivation, relativization
@@ -78,7 +79,7 @@ This derivation cannot be applied to copulas or existential verbs.\footnote{The 
 
 A conjugated verb form without overt arguments is the minimal complete sentence in Japhug, and grammatical relations are mainly expressed by person indexation, which includes up to two arguments following a direct/inverse system (on which see \citealt{jackson02rentongdengdi, jacques10inverse, gongxun14agreement}).
 
-Overt noun phrases take case markers such as the ergative/instrument \ipa{kɯ}, the genitive \ipa{ɣɯ} and the dative \ipa{ɯ-ɕki}. There are no prepositions. Comitative adverbs are built by means of a prefix and are in the process of being grammaticalized as a quasi-case marker (\citealt{jacques16comitative}).
+Overt noun phrases take case markers such as the ergative/instrument \ipa{kɯ}, the genitive \ipa{ɣɯ} and the dative \ipa{ɯ-ɕki}. There are no prepositions. Comitative adverbs are built by means of a prefix and are in the process of being grammaticalized as a quasi-case marker (\citealt{jacques17comitative}).
 
 \subsection{Orientation prefixes} \label{sec:orientation}
 All finite verb forms, except the factual non-past, require an orientation prefix (Table \ref{tab:orientation}). Motion verbs and concrete action verbs are compatible with all prefixes, but most verbs can only take one or two orientation prefixes. For those verbs, the possible orientations are lexically specified; for instance \ipa{ndza} `eat' and \ipa{tsʰi} `drink' take the `up' and `towards east' orientations respectively; `eat' can also appear with the `downstream' orientation in the case of meat-eating animals.
