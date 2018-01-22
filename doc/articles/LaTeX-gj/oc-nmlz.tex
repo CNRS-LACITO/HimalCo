@@ -1,0 +1,103 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+\newfontfamily\tibetain{Microsoft Himalaya} 
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\tibet}[3]{{\tibetain#1} \textit{\phon#2} `#3'}  
+\newcommand{\dhat}[1]{|\ipa{#1}|}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+
+
+\begin{document}
+
+\title{Fossil nominalization prefixes in Tibetan and Chinese}
+\author{Guillaume Jacques}
+\maketitle
+
+\section{Introduction}
+
+\citet{gong17xingtaixue}
+\citet{konnerth16gV}
+\citet{jacques14snom}
+
+\section{Rgyalrongic}
+\citet{jacques16relatives}
+\citet{jacques14linking}
+\citet{jackson14morpho}
+
+\section{Tibetan}
+\citet{lifk33, coblin76, hill11laws, hill14derivational}
+
+
+Instruments:
+\begin{itemize}
+\item \tibet{ནོད་}{nod, mnos}{receive} $\rightarrow$	\tibet{སྣོད་}{snod}{vessel} 	(\ipa{bhâjana-})
+\item \tibet{འབུད་}{ⁿbud, bus}{blow} $\rightarrow$	\tibet{སྦུད་པ་}{sbud.pa}{bellows} 
+\item \tibet{འགེལ་}{ⁿgel, bkal}{load on} $\rightarrow$	\tibet{སྒལ་}{sgal}{load, back} 
+\item \tibet{ཉན་}{ɲan}{hear} $\rightarrow$	\tibet{སྙན་}{sɲan}{ear(honorific)} 
+\end{itemize}
+%ⁿdiŋ, btiŋ	étendre	/tiŋ/	sdiŋs  	cavité	endroit
+%dgar, bkar 	monter une tente	/kar/	sgar 	tente	endroit
+%ⁿkʰor 	tourner	/kor/	skor	région 
+%(< encercler)	endroit
+%kʰag(-po)	difficile, dur	/kag/	skag 	calamit¨¦ (lo.skag = ann¨¦e de malheur)	temps
+%bkʲon 	reprocher	/kʲon/	skʲon 	faute	raison
+
+\section{Old Chinese}
+\citet[73]{sagart99roc}, \citet{sagart12sprefix}
+
+\begin{itemize}
+\item \zhc{蒸}{tɕiŋ} `to steam' (\ipa{^b*tɨŋ}) $\rightarrow$ \zhc{甑}{tsiŋH} `earthenware pot for steaming rice' (\ipa{^b*s-tɨŋ-s})
+\item \zhc{抴}{jet, jejH} `to pull' (\ipa{^b*lat(-s)}) $\rightarrow$ \zhc{靾}{sjet} `leading string' (\ipa{^b*s-lat})
+\item \zhc{囓}{ŋet} `to bite, gnaw' (\ipa{^a*ŋet}) $\rightarrow$ \zhc{楔}{set} `wedge' (\ipa{^a*s-ŋet})
+\item \zhc{射}{ʑek, ʑæH} `to shoot' (\ipa{^b*m-lak}) $\rightarrow$ \zhc{榭}{zjæH} `open hall for archery exercises' (\ipa{^b*s-lak-s}) (\citealt{jacques18antipass})
+\item \zhc{侍}{dʑiH} `to accompany, wait upon' (\ipa{^b*dɨ(ʔ)-s}) $\rightarrow$ \zhc{寺}{ziH} `servant, eunuch' (\ipa{^b*s-dɨ(ʔ)-s})
+\item \zhc{食}{ʑik} `to eat' (\ipa{^b*m-lɨk}) $\rightarrow$ \zhc{食}{ziH} `food' (\ipa{^b*s-lɨk-s})
+\end{itemize}
+
+\section{Conclusion}
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
