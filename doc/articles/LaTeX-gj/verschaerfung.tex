@@ -1,0 +1,70 @@
+\documentclass[oneside,a4paper,11pt]{article} 
+\usepackage{fontspec}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{xltxtra} 
+\usepackage{polyglossia} 
+\setmainlanguage{french}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{gb4e} 
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref} 
+\hypersetup{bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,colorlinks=true,linkcolor=blue,citecolor=blue}
+\usepackage[all]{hypcap}
+\usepackage{memhfixc}
+\usepackage{lscape}
+\usepackage{amssymb}
+ 
+\bibpunct[: ]{(}{)}{,}{a}{}{,}
+
+%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\newfontfamily\phon[Mapping=tex-text,Scale=MatchLowercase]{Charis SIL} 
+\newcommand{\ipa}[1]{\textbf{{\phon\mbox{#1}}}} %API tjs en italique
+%\newcommand{\ipab}[1]{{\scriptsize \phon#1}} 
+
+\newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
+\newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
+\newcommand{\zh}[1]{{\cn #1}}
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
+\newfontfamily\tibetain{Microsoft Himalaya} 
+
+\newcommand{\sg}{\textsc{sg}}
+\newcommand{\pl}{\textsc{pl}}
+\newcommand{\ro}{$\Sigma$}
+\newcommand{\ra}{$\Sigma_1$} 
+\newcommand{\rc}{$\Sigma_3$}  
+\newcommand{\dhatu}[2]{|\ipa{#1}| `#2'}
+\newcommand{\tibet}[3]{{\tibetain#1} \textit{\phon#2} `#3'}  
+\newcommand{\tibetan}[1]{{\tibetain#1}}
+\newcommand{\dhat}[1]{|\ipa{#1}|}
+\newcommand{\change}[2]{*\ipa{#1} $\rightarrow$ \ipa{#2}}
+ 
+
+\XeTeXlinebreakskip = 0pt plus 1pt %
+ %CIRCG
+ 
+\newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
+
+
+\begin{document}
+
+\title{La Verschärfung du yod en tibétain à la lumière des emprunts à l'indo-aryen}
+\author{Guillaume Jacques}
+\maketitle
+
+La Verschärfung du yod en tibétain après \ipa{r-}, une loi phonétique découverte par \citet{lifk59globa} sur la base de données comparatives, est attestée dans quelques emprunts au sanskrit (\citealt{hill11laws}), une observation d'interprétation difficile.
+
+Dans ce travail, nous discuterons tout d'abord des preuves comparatives de la Verschärfung, en particulier à partir des données des langues rgyalronguiques et kuki-chin (\citealt{jacques13yod}), mais aussi dialectales (\citealt{wangsc12anduo, gong16amdo}), accompagnées de réflexions sur la typologie des changements phonétiques (\citealt{gong16ld}).
+
+Dans une seconde partie, nous présenterons une typologie des emprunts indo-aryens en tibétain (\citealt{laufer16loanwords, bielmeier07wortschatz}), qui manifestent pour certain d'entre eux des caractéristiques inhabituelles (par exemple la troncation de syllabes pour les forcer dans un moule dissyllabique, comme dans le nom de la constellation \tibet{ནབས་སོ་}{nabs.so}{punarvasu-},  \citealt{jacques07naksatram}).
+
+Enfin, nous discuterons des cas connus de mots sanskrit ou prakrit ayant subi la Verschärfung (comme \tibet{བེ་དུ་རྒྱ་}{be.du.rgya}{vaiḍūrya-}, cf \citealt[36-37]{snellgrove67gzibrjid}) et du problème plus général de l'utilisation des emprunts pour la datation des changements phonétiques.
+
+\bibliographystyle{unified}
+\bibliography{bibliogj}
+\end{document}
