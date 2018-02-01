@@ -14,7 +14,8 @@
 \hypersetup{bookmarks=false,bookmarksnumbered,bookmarksopenlevel=5,bookmarksdepth=5,xetex,colorlinks=true,linkcolor=blue,citecolor=blue}
 \usepackage[all]{hypcap}
 \usepackage{memhfixc}
-
+\newfontfamily\mleccha[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Galatia SIL}%pour le grec
+\newcommand{\grec}[1]{{\mleccha #1}}
 \bibpunct[: ]{(}{)}{,}{a}{}{,}
  
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL}  
@@ -84,7 +85,7 @@ En outre, j'ai effectué des recherches philologique sur le tangoute, langue anc
 \subsubsection{Japhug} \label{sec:japhug}
 La description du japhug comprend l'essentiel de mon temps de recherche. Les résultats principaux de ma recherche dans ce domaine se trouvent dans les dix articles suivants, parus en partie dans des revues aréales (LTBA) mais également dans des revues de linguistique plus généralistes (en particulier \textit{Lingua}, \textit{Linguistic Typology}, \textit{Diachronica}). Chacune de ces publications a deux objectifs. D'une part, elles apportent de nouvelles données originales et pourront, en rajoutant des données complémentaires, être réutilisées pour la rédaction de ma grammaire du japhug en cours (\citet{jacques14linking} notamment est très riche en données et fait plus de 60 pages). D'autre part, elles constituent chacune une contribution distincte à la typologie morphosyntaxique (voir section \ref{sec:typologie}).
 
-L'essentiel de la grammaire du japhug est presque entièrement couverte par ces articles; en plus des articles ci-dessous, un article sur l'évidentialité (\citealt{jacques19egophoric}), un autre sur le verb bipartites (\citealt{jacques18bipartite}) et une illustration of the IPA (\citealt{jacques18ipa}) sont en cours de parution.
+L'essentiel de la grammaire du japhug est presque entièrement couverte par ces articles; en plus des articles ci-dessous, un article sur l'évidentialité (\citealt{jacques19egophoric}), un autre sur les verbes bipartites (\citealt{jacques18bipartite}) et une illustration of the IPA (\citealt{jacques18ipa}) sont en cours de parution.
 
 \begin{enumerate}
 \item {\bibentry{jacques17comitative}}
@@ -243,9 +244,9 @@ Je me suis également intéressé aux marques d'ergatif dans une perspective dia
 Dans l'article `Verbal valency and Japhug / Tibetan language contact', à paraître en 2019 au \textit{Journal of language contact}, j'étudie les correspondances entre les structures argumentales des verbes tibétains et ceux de leurs équivalents empruntés en japhug. Il s'agit d'un cas intéressant où la langue donneuse est essentiellement à marquage sur les dépendants tandis que la langue emprunteuse est à marquage sur la tête. Cette étude révèle qu'il est possible dans la majorité des cas de prédire la structure argumentale d'un verbe japhug emprunté au tibétain à partir de celle du verbe originel.
 
 \subsubsection{Analogie}
-Avec la régularité des changements phonétique, l'analogie est un des concepts fondamentaux de la méthode comparative. Occulté par la tradition de phonologie générative, il ne reste pas moins indispensable pour expliquer l'évolution des paradigmes grammaticaux. Néanmoins, les principes généraux des phénomènes analogiques sont mal connus, et les études classiques sur lesujet (Kurylowicz, Manczak) sont peu utile d'un point de vue pratique pour évaluer une hypothèse historique par rapport à un autre. 
+Avec la régularité des changements phonétique, l'analogie est un des concepts fondamentaux de la méthode comparative. Occulté par la tradition de phonologie générative, il ne reste pas moins indispensable pour expliquer l'évolution des paradigmes grammaticaux. Néanmoins, les principes généraux des phénomènes analogiques sont mal connus, et les études classiques sur le sujet (Kurylowicz, Manczak) sont peu utiles d'un point de vue pratique pour évaluer une hypothèse historique par rapport à une autre. 
 
-Dans une série de travaux en cours de publication, dont \citet{jacques18directionality} et \citet{jacques16ebde}, je propose les règles suivantes:
+Dans une série de travaux, dont \citet{jacques18directionality} et \citet{jacques16ebde}, je propose les règles suivantes:
 
 \begin{enumerate}
 \item L'analogie s'applique toujours suivant la hiérarchie 3>1>2 (les formes de troisième personne peuvent être la base de l'analogie pour celles de première et de deuxième personne, et les formes de première pour celles de deuxième), sauf dans descas où, pour certains verbes, la forme de 1er personne est plus courante (de face démontrable par une étude de corpus).
@@ -258,7 +259,7 @@ Dans une série de travaux en cours de publication, dont \citet{jacques18directi
  \item {\bibentry{jacques16ebde}}
 \end{enumerate}
 
-Je compte poursuivre des travaux sur ce sujet, et essayer d'étudier les contre-exemples apparent aux principe n°1 ci-dessus (j'ai détecté des cas potentiels en yuto-aztèque et en indo-iranien), et à étudier la directionalité de l'analogie entre les catégories de TAM.
+Je compte poursuivre des travaux sur ce sujet, et essayer d'étudier les contre-exemples apparents aux principe n°1 ci-dessus (j'ai détecté des cas potentiels en yuto-aztèque et en indo-iranien), ainsi qu'aborder la directionalité de l'analogie entre les catégories de TAM (par exemple, les cas où l'impératif sert de forme pivot, comme dans le verbe \grec{ἐσθίω} en grec).
 
 \subsection{Liste des publications principales}
 Dans cette section, j'inclus les publications parues durant les cinq derniers semestres (soient celles de 2013 à 2017), excluant les publications acceptées, qui sont cependant incluses dans la liste complète ci-jointe et mentionnées ci-dessus.
@@ -273,6 +274,7 @@ Dans cette section, j'inclus les publications parues durant les cinq derniers se
 \end{enumerate}
   \subsubsection{Articles dans des revues à comité de lecture}
 \begin{enumerate}
+\item {\bibentry{jacques17volitional}}
 \item {\bibentry{jacques17buyang}}
 \item {\bibentry{jacques17pkiranti}}
 \item {\bibentry{jacques16comparative}}
@@ -304,6 +306,15 @@ Dans cette section, j'inclus les publications parues durant les cinq derniers se
 % \item  {\bibentry{jacques12khaling}}
  \end{enumerate}
  
+   \subsubsection{Articles dans d'autres revues}
+   \begin{enumerate}
+\item \bibentry{jacques17hrd}  
+\item   \bibentry{jacques16polysynthetique}
+\item \bibentry{jacques16camara}  
+\item \bibentry{jacques14honey}  
+\item \bibentry{jacques15cochon}   
+\item \bibentry{jacques13vama}  
+\end{enumerate}
    \subsubsection{Chapitres}
 \begin{enumerate}
 \item   \bibentry{jacques17genetic}  
@@ -312,6 +323,7 @@ Dans cette section, j'inclus les publications parues durant les cinq derniers se
 \item   \bibentry{jacques17sketch}  
 \item   \bibentry{jacques17comitative}   
 \item   \bibentry{jacques17num}   
+\item   \bibentry{jacques16phono.arapaho}   
 \item   \bibentry{jacques16tonogenesis}   
 \item   \bibentry{jacques14cone}   
 \item   \bibentry{jacques14snom}   
@@ -369,7 +381,7 @@ Deux de mes doctorants ont soutenu leurs thèses:
 
 \begin{itemize}
 \item 2013-présent, doctorat de Gong Xun, Normale supérieure-INALCO, \textit{Etude descriptive et historique de la langue zbu} (Sino-tibétain, birmo-qianguique, en co-direction avec Laurent Sagart)
-\item 2016-présent, thèse de Zhang Shufa sur le dialecte situ de Bragdbar., Inalco (en codirection avec Christine Lamarre)
+\item 2016-présent, thèse de Zhang Shufa sur le dialecte situ de Bragdbar, Inalco (en codirection avec Christine Lamarre)
 \item 2016-présent, thèse de Julie Marsault sur l'omaha, Paris 3 (en co-direction avec Pollet Samvelian)
 \item 2016-présent, thèse de Jesse Gates sur le Stau, EHESS (en co-direction avec Alexander Vovin)
 \end{itemize}
@@ -408,14 +420,14 @@ Mon interaction avec les étudiants ne s'est pas limité à une aide au choix du
 
 \section{Objectifs / Projet de recherche}
 
-\subsection{Court terme (2018/-2019)}
+\subsection{Court terme (2018-2019)}
 
 \subsubsection{Grammaire du japhug}
 L'activité principale qui m'occupe depuis septembre 2017, et à laquelle je consacrerai l'essentiel de mon temps de recherche jusqu'à mi-2019, est la rédaction d'une grammaire du japhug sur la base du corpus de textes recueillis progressivement depuis 2002 (déjà disponible en partie sur \url{http://lacito.vjf.cnrs.fr/pangloss/corpus/list\_rsc.php?lg=Japhug}), synthétisant les articles précédemment parus sur des points précis de la grammaire (voir \ref{sec:japhug}). Je conçois cette grammaire comme une grammaire de ce corpus précis plutôt que comme une grammaire `complète' : plutôt que de prétendre apporter le dernier mot sur la description de cette langue, il s'agira d'un outil permettant d'utiliser et de naviguer dans le corpus, avec une présentation claire des limites de nos connaissances et des incertitudes dans la description, et une invitation pour les lecteurs à approfondir ces questions 
 
-J'ai choisi de le proposer à la collection  `Studies in diversity Linguistics' de la maison d'édition Language Science press, qui a l'avantage de produire des livres librement accessible en PDF, mais aussi disponibles au format papier. Le directeur de la collection Martin Haspelmath, auquel j'ai présenté les cent premières pages, m'a fait part de son intérêt pour ce projet.
+J'ai choisi de le proposer à la collection  `Studies in diversity Linguistics' de la maison d'édition Language Science press, qui a l'avantage de produire des livres librement accessibles en PDF, mais aussi disponibles au format papier. Le directeur de la collection Martin Haspelmath, auquel j'ai présenté les cent premières pages, m'a fait part de son intérêt pour ce projet.
 
-Au début 2018 j'ai déjà environ 220 pages de rédigées, et je compte maintenir un rythme de 40 à 50 pages par mois (sauf ceux de terrain), à raison de deux pages par jour.
+Au début 2018 j'ai déjà environ 250 pages de rédigées, et je compte maintenir un rythme de 40 à 50 pages par mois (sauf ceux de terrain), à raison de deux pages par jour.
 
 Le plan prévu est le suivant, avec les chapitres déjà finis en gras et une indication du nombre de pages. Il est difficile de prévoir la taille finale de l'ouvrage, mais il pourrait atteindre 800-1000 pages.
 
@@ -428,7 +440,7 @@ Le plan prévu est le suivant, avec les chapitres déjà finis en gras et une in
 \item \textbf{Nominal morphology} (70 pp)
 \item \textbf{Pronouns and demonstratives}  (39pp)
 \item \textbf{Numerals and counted nouns} (67 pp)
-\item The noun phrase (40 pp+)
+\item The noun phrase (50 pp+)
 \item Ideophones
 \item Adverbs and sentence final particles
 \item The verbal template
@@ -453,16 +465,16 @@ Le plan prévu est le suivant, avec les chapitres déjà finis en gras et une in
 Un séjour de terrain est prévu en avril-mai 2018 pour travailler sur le japhug.
 
 \subsubsection{Phylogénie du sino-tibétain} \label{sec:phylogenie.st}
-Avec Laurent Sagart, Johann-Mattis List et Robin Ryder, je travaille à un article sur la phylogénie du sino-tibétain. la base de donnée a déjà été collectée et vérifiée, et nous en sommes au stade d'analyse des résultats et de rédaction. Une soumission est prévue en février. Cet article pourra s'accompagner d'autres articles dérivés sur des points plus spécifiques.
+Avec Laurent Sagart, Johann-Mattis List et Robin Ryder, je travaille à un article sur la phylogénie du sino-tibétain. la base de donnée a déjà été collectée et vérifiée, et nous en sommes au stade d'analyse des résultats et de rédaction. Une soumission est prévue en mars. Cet article pourra s'accompagner d'autres articles dérivés sur des points plus spécifiques.
 
 
 \subsubsection{Contributions mineures à la linguistique historique}
-J'ai été invité à une conférences sur le chinois archaïque en 2018, et je compte écrire une contribution sur l'alternance de voisement et l'anticausatif, avec une perspective comparatistes prenant notamment en compte les langues rgyalronguiques et kiranties.
+J'ai été invité à deux conférences sur le chinois archaïque en 2018 (à Jena et à Taipei). L'une de mes contributions, dont une première version a déjà été rédigée (17 pages), porte sur la reconstruction du préfixe de nominalisation sgimatique en chinois et en tibétain, à la lumière des données des langues rgyalronguiques. L'autre, que je suis en train d'écrire, concerne l'alternance de voisement en chinois archaïque et en tibétain, dont je montre les multiples origines, en particulier anticausatif, passif, ainsi qu'une contruction nominalisante.
 
 
 Je compte écrire également un article sur la conjugaison irrégulière du verbe \ipa{gą́ða}  `vouloir' en Omaha (1sg \ipa{kką́bðe}) (peut-être pour IJAL).
 
-Un article sur les emprunts des langues indo-iraniennes en tibétain est également prévu pour une conférence en juin.
+Un article sur la fortition du yod en tibétain (*\ipa{rj-} $\rightarrow$ \ipa{rgʲ-}) et l'interprétation de sa présence dans les emprunts aux langues indo-aryennes (comme \ipa{be.du.rgʲa} venant de \ipa{vaiḍūrya-} `béryl') dans la chronologie de ce changement est prévu pour une conférence en juin.
 
 \subsubsection{Mouvement associé}
 Un article co-écrit avec José Alonso de la Fuente (\citealt{fuente18am}) a été accepté par la revue \textit{Language and Linguistics} et devrait paraître en 2018:
@@ -472,16 +484,16 @@ Un article co-écrit avec José Alonso de la Fuente (\citealt{fuente18am}) a ét
 \end{enumerate}
 
 Un article sur le mouvement associé en sino-tibétain, co-écrit avec Aimée Lahaussois et Zhang Shuya, est prévu d'être complété pour mi-2018 pour un volume dirigé par Antoine Guillaume (Lyon, DDL).
-
+ 
 \subsection{Moyen terme (2020-2023)}
-Lorsque la grammaire du japhug sera finie, il est difficile de prévoir avec certitude des sujets de recherches sur lesquels je travaillerai en priorité. Les thèmes présentés dans cette section sont des options que j'envisage, mais un choix devra être opéré sur la priorité à donner à ces différents projets.
+Lorsque la grammaire du japhug sera finie, il est difficile de prévoir avec certitude des sujets de recherches sur lesquels je me concentrerai. Les thèmes présentés dans cette section sont des options que j'envisage, mais un choix devra être opéré sur la priorité à donner à ces différents projets.
 
 \subsubsection{Reconstruction du proto-kiranti}
 Dans \citet{jacques17pkiranti}, je propose une reconstruction des racines verbales sur la base de quatre langues; ce travail doit être étendu dans deux directions, d'une part en intégrant davantage de langues, et de l'autre en effectuant des recherches sur l'étymologie des noms et des autres parties du discours. J'ai déjà préparé une base de données sur la langue Kulung, et prévoit d'abord de travailler sur le yakkha.
 
 \subsubsection{Reconstruction du proto-rgyalronguique}
 
-Avec la thèse de \citet{lai17khroskyabs} sur le khroskyabs, et celle de Gong Xun sur le zbu qui est prévue pour 2018, les données nécessaires à une reconstruction rigoureuse du proto-rgyalronguique deviennent progressivement disponibles. Nous (Gong Xun, Lai Yunfan et moi-même) avons le projet commun de compiler  tout d'abord un dictionnaire des racines verbales sur le modèle du \textit{Lexikon der indogermanischen Verben}, et en même temps une série d'articles sur la morphologie.
+Avec la thèse de \citet{lai17khroskyabs} sur le khroskyabs, et celle de Gong Xun sur le zbu qui est prévue pour mi-2018, les données nécessaires à une reconstruction rigoureuse du proto-rgyalronguique deviennent progressivement disponibles. Nous (Gong Xun, Lai Yunfan et moi-même) avons le projet commun de compiler  tout d'abord un dictionnaire des racines verbales sur le modèle du \textit{Lexikon der indogermanischen Verben}, et en même temps une série d'articles sur la morphologie.
 
 Ce projet devra s'accompagner de séjours de terrain additionnels sur les langues concernées (aussi bien pour approfondir des points spécifiques de description, et d'élargir les données dialectologiques).
 
@@ -496,7 +508,7 @@ Je compte effectuer des recherches sur la phylogénie des langues (pas exclusive
 \subsubsection{Principes généraux de l'analogie et la modélisation de la reconstruction morphologique}
 Suite à \citet{jacques16ebde}, je compte travailler sur la directionnalité de l'analogie dans le système verbal, en me servant en particulier des données déjà disponibles sur les langues indo-européennes, mais en prenant en compte également des données tirées de mes terrains et des autres familles de langues sur lesquelles j'ai travaillé. En particulier, je prévois un article expliquant comment l'analogie a rapproché les systèmes de pronoms et des indices de personnes sur le verbe dans les langues rgyalronguiques (en utilisant un parallèle tiré de l'hébreu).
 
-Un autre aspect de ce projet est celui de la modélisation et de l'encodage de la morphologie dérivationnelle. Dans \citet{jacques17pkiranti}, j'ai proposé pour le verbe kiranti un arbre des dérivations possibles. Avec Johann-Mattis List, j'envisage de proposer une méthologie pour encoder ces dérivations, et en faire usage pour l'étude des innovations utilisables pour la phylogénie (§ \ref{sec:phylogenie}).
+Un autre aspect de ce projet est celui de la modélisation et de l'encodage de la morphologie dérivationnelle. Dans \citet{jacques17pkiranti}, j'ai proposé pour le verbe kiranti un arbre des dérivations possibles. Avec Johann-Mattis List, j'envisage de concevoir une méthologie pour encoder ces dérivations, et en faire usage pour l'étude des innovations utilisables pour la phylogénie (§ \ref{sec:phylogenie}).
 
 \subsubsection{Chinois archaïque} 
 
