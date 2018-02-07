@@ -1,19 +1,18 @@
-
-\documentclass{article} 
+\documentclass[oneside,a4paper,11pt]{article} 
 \usepackage{fontspec}
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{xltxtra} 
 \usepackage{polyglossia} 
  \usepackage{geometry}
- \geometry{
- a4paper,
- total={210mm,297mm},
- left=25mm,
- right=25mm,
- top=20mm,
- bottom=20mm,
- }
+% \geometry{
+% a4paper,
+% total={210mm,297mm},
+% left=25mm,
+% right=25mm,
+% top=20mm,
+% bottom=20mm,
+% }
 \usepackage[table]{xcolor}
 \usepackage{gb4e} 
 \usepackage{multicol}
@@ -25,8 +24,9 @@
 \usepackage{memhfixc}
 \usepackage{lscape}
 \usepackage{amssymb}
+\usepackage{lineno}
  
-%\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
+\setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newcommand{\ipa}[1]{{\phon\textit{#1}}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
@@ -43,8 +43,20 @@
 \title{Pseudo-cleft constructions in Japhug}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
 \maketitle
+\linenumbers
 
-Like many strictly verb-final languages, Japhug does not allow true cleft sentences. What is closest to a cleft sentence in Japhug is the \textbf{pseudo-cleft construction}, combining a headless participial relative clause in S function (generally with the determiner \ipa{nɯ}) with a nominal predicate followed by a positive (\ipa{ŋu} `be') or negative (\ipa{maʁ} `not be') copula. The basic structure of this construction is summarized in (\ref{ex:pseudo.cleft}).
+\section*{Introduction}
+Among the possible means of focalizing nouns phrases, most if not all languages use an equative construction with a headless relative clause (or a relative clause with a overt head noun, if this head noun is distinct from the focalized noun phrase) in the topicalized position and the focalized noun phrase as the nominal predicate, as in English `[What matters] are \textbf{his ideas}' or `[The thing that matters] is \textbf{meaning}'.
+Such constructions are generally referred to as \textbf{pseudo-clefts}, by opposition with \textbf{cleft} sentences, a type of construction (such as English `It is \textbf{his ideas} [that matter]') where the focalized noun is the head of the clause defining it, that clause being built like a relative, but sometimes presenting language-specific differences with relative clauses of the same type
+(see for instance \citealt[123-4]{creissels06sgit2} on cleft sentences in French with focalisation on dative phrases). 
+
+ 
+
+\section{Relativization in Japhug}
+ \citealt{jacques16relatives}
+ 
+\section{Pseudo-clefts in Japhug}
+Pseudo-cleft contruction are built by  combining a headless participial relative clause in S function (generally with the determiner \ipa{nɯ}) with a nominal predicate followed by a positive (\ipa{ŋu} `be') or negative (\ipa{maʁ} `not be') copula. The basic structure of this construction is summarized in (\ref{ex:pseudo.cleft}).
 
 \begin{exe}
 \ex \label{ex:pseudo.cleft}
@@ -67,6 +79,7 @@ bird \textsc{pl} \textsc{3pl-nmlz:P}-like \textsc{dem} wheat always be:\textsc{f
 \glt `(The food) that birds like is always wheat (not barley).' (23 pGAYaR, 29)
 \end{exe} 
 
+Pseudo-clefts can be used to mark contrastive focus, as in (\ref{ex:WkWsWmphWl}) (unlike for instance Mandarin, according to \citealt[125]{paris79nmlz}).
 
 \begin{exe}
 \ex   \label{ex:WkWsWmphWl}  
@@ -74,8 +87,7 @@ bird \textsc{pl} \textsc{3pl-nmlz:P}-like \textsc{dem} wheat always be:\textsc{f
 but \textsc{dem} \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:S/A-\textsc{caus}-reproduce \textsc{dem} again  \textsc{3sg}.\textsc{poss}-root \textsc{sens}-be.\textsc{affirm} \textsc{lnk} \textsc{3sg}.\textsc{poss}-seeds \textsc{sens}-not.be \\
 \glt `The thing that it reproduces with is its root, not its seeds.' (11-paRzwamWntoR, 113)
 \end{exe} 
-
-The present paper comprises three parts. First, it presents a short introduction to relativisation in Japhug (based in part on \citealt{jacques16relatives}). Second, it attempts to collect and classify all instances of pseudo-cleft constructions attested in the corpus. Third, it discusses the discourse function of pseudo-clefts and the alternative means of expressing contrastive and corrective focalisation in Japhug.
+ 
 
    %iɕqha <yazi> tɤ-mu kɯ ku-ɕɯm nɯnɯ, <tiane> ɣɯ ɯ-ŋgɯm pjɤ-ɕti rca wo matɕi.
 
@@ -142,11 +154,53 @@ bullet \textsc{ipf}-\textsc{nmlz:oblique}-ram   \textsc{dem} ramrod \textsc{test
  
 \begin{exe}
 \ex \label{ex:WsAdAn}
-\gll \ipa{stu} 	\ipa{ɯ-sɤ-dɤn} 	\ipa{nɯ} 	\ipa{stɤmku} 	\ipa{nɯra} 	\ipa{ŋu-nɯ}  \\
+\gll [\ipa{stu} 	\ipa{ɯ-sɤ-dɤn}] 	\ipa{nɯ} 	\ipa{stɤmku} 	\ipa{nɯra} 	\ipa{ŋu-nɯ}  \\
 most \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:\textsc{oblique}-be.many \textsc{dem} grassland \textsc{dem}:\textsc{pl} be:\textsc{fact}-\textsc{pl} \\
 \glt `The (places) where they are the most numerous are the grasslands.' (19-qachGa mWntoR, 24)
 \end{exe}
 
+\begin{exe}
+\ex \label{ex:stu.Zo.WkAnWzdWG}
+\gll ɲɤ-ɣɤwu matɕi tɕendɤre nɯ [stu ʑo ɯ-kɤ-nɯzdɯɣ] nɯ pjɤ-ɕti tɕe  \\
+\textsc{ifr}-cry because \textsc{lnk} \textsc{dem} most \textsc{emph} \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:P-worry \textsc{dem} \textsc{ifr}.\textsc{ipfv}-be.\textsc{affirm} \textsc{lnk} \\
+\glt `He cried because it was what he was most worried about.' (140506 shizi he huichang de bailingniao, 65-66)
+\end{exe}
+
+\section{Other focalization construction}
+
+\begin{exe}
+\ex \label{ex:nW.mAnWXtCWG}
+\gll mtʰɯmɤr ɣɯ ɯ-zbroŋ nɯnɯ, tu-nɯ-ɬoʁ ɲɯ-ŋu.  tu-mɤmbɯr kɯ-fse ɲɯ-ŋu tɕe nɯ mɤ-naχtɕɯɣ. \\
+seal \textsc{gen} \textsc{3sg}.\textsc{poss}-pattern \textsc{dem} \textsc{ipfv}:\textsc{up}-\textsc{auto}-come.out \textsc{sens}-be \textsc{ipfv}-be.protuberant \textsc{nmlz}:S/A-be.like \textsc{sens}-be \textsc{lnk} \textsc{dem} \textsc{neg}-be.the.same:\textsc{fact} \\
+\glt `The patterns on the seals (called \ipa{mtʰɯmɤr}) are coming out, protuberant, that is how they differ from (the other types of seals).' (160706 thotsi, 67)
+\end{exe}
+
+Overt pronoun+copula at the end. NOT relative
+
+\begin{exe}
+\ex \label{ex:aZo.pWnWmtota}
+\gll  kɯki tɕʰeme ki ndɤre aʑɯɣ a-pɯ-ŋu tʂaŋ ma tɕe aʑo pɯ-nɯ-mto-t-a ɕti tɕe \\
+\textsc{dem}.\textsc{prox} girl  \textsc{dem}.\textsc{prox} \textsc{lnk} \textsc{1sg}.\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{pfv}-\textsc{auto}-see-\textsc{pst}:\textsc{tr}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
+\glt `This girl, it would be fair if she were mine, as it was I who found her.' (140517 buaishuohua)
+\end{exe}
+\begin{exe}
+\ex \label{ex:Wpi.mWpjArAzi}
+\gll 
+tɕeri, ɯ-pi mɯ-pjɤ-rɤʑi qʰendɤre,  ɯ-ɬaʁ nɯ pjɤ-rɤʑi ɕti qʰe  \\
+\\
+\glt  `But his elder brother was not there, it was his brother's wife who was there.' (140512 alibaba, 62)
+\end{exe}
+
+%\begin{exe}
+%\ex 
+%\gll ɯ-pɯ ra ɲɤ-me-nɯ tɕe tɕe, [kɯki qaliaʁ kɯ ta-nɤma] ŋu nɯnɯ ko-tso ɲɯ-ŋu. \\
+%\textsc{3sg}.\textsc{poss}-young \textsc{pl} \textsc{ifr}-not.exist-\textsc{pl} \textsc{lnk} \textsc{lnk} \textsc{dem}.\textsc{prox} eagle \textsc{erg} \textsc{pfv}:3\fl{}3'-do \textsc{dem} \textsc{ifr}-understood \textsc{sens}-be \\
+%\glt `His youngs had disappeared, and he knew that this what something that the eagle had done' (huli yu shanying, 31)
+%\end{exe}
+%
+%\zh{知道这事是山鹰所做}
+
+\section*{Conclusion}
 \bibliographystyle{unified}
 \bibliography{bibliogj}
  \end{document}
