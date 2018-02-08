@@ -28,7 +28,7 @@
  
 \setmainfont[Mapping=tex-text,Numbers=OldStyle,Ligatures=Common]{Charis SIL} 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
-\newcommand{\ipa}[1]{{\phon\textit{#1}}} 
+\newcommand{\ipa}[1]{{\phon{#1}}} 
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
 \newcommand{\zh}[1]{{\cn #1}}
@@ -38,7 +38,7 @@
 \newcommand{\refb}[1]{(\ref{#1})}
 \newcommand{\tld}{\textasciitilde{}}
 \newcommand{\zhc}[2]{\zh{#1} \ipa{#2}} 
-
+\newcommand{\fl}{$\rightarrow$} 
  \begin{document} 
 \title{Pseudo-cleft constructions in Japhug}
 \author{Guillaume Jacques\\ CNRS-CRLAO-INALCO}
@@ -52,10 +52,17 @@ Such constructions are generally referred to as \textbf{pseudo-clefts}, by oppos
 
  
 
-\section{Relativization in Japhug}
+\section{Relativization in Japhug} \label{sec:relatives}
  \citealt{jacques16relatives}
  
-\section{Pseudo-clefts in Japhug}
+\begin{exe}
+   \ex \label{ex:tutianW}
+ \gll \ipa{nɯ}  	[\ipa{qajɯ}   	\ipa{kɯ-ɲaʁ}  	\ipa{tu-ti-a}] 	\ipa{nɯ}  	\ipa{nɯ}  	\ipa{kɯ-fse}  	\ipa{ɲɯ-βze}  	\ipa{ɲɯ-ŋu}  \\
+\textsc{dem} worm \textsc{nmlz:S}-black \textsc{ipfv}-say-\textsc{1sg} \textsc{dem} \textsc{dem} \textsc{nmlz:S}-be.like \textsc{ipfv}-grow \textsc{sens}-be \\
+\glt `The black worm that I was talking about grows like that.' (28 kWpAz, 30)
+\end{exe}
+ 
+\section{Pseudo-clefts in Japhug} \label{sec:pseudo-clefts}
 Pseudo-cleft contruction are built by  combining a headless participial relative clause in S function (generally with the determiner \ipa{nɯ}) with a nominal predicate followed by a positive (\ipa{ŋu} `be') or negative (\ipa{maʁ} `not be') copula. The basic structure of this construction is summarized in (\ref{ex:pseudo.cleft}).
 
 \begin{exe}
@@ -143,7 +150,7 @@ but \textsc{dem} \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:S/A-\textsc{caus}-repr
 
 %kɯ-mɤmu nɯnɯ tɯrme ra ɕti.
 
-Oblique:
+The also occur with oblique nominalization, as in (\ref{ex:thongthar}) and (\ref{ex:WsAdAn})
 
  \begin{exe}
 \ex \label{ex:thongthar}
@@ -159,6 +166,9 @@ most \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:\textsc{oblique}-be.many \textsc{d
 \glt `The (places) where they are the most numerous are the grasslands.' (19-qachGa mWntoR, 24)
 \end{exe}
 
+
+A rare type of pseudo-cleft involves a headless relative used in nominal predicate position, as in (\ref{ex:stu.Zo.WkAnWzdWG}).
+
 \begin{exe}
 \ex \label{ex:stu.Zo.WkAnWzdWG}
 \gll ɲɤ-ɣɤwu matɕi tɕendɤre nɯ [stu ʑo ɯ-kɤ-nɯzdɯɣ] nɯ pjɤ-ɕti tɕe  \\
@@ -166,31 +176,84 @@ most \textsc{3sg}.\textsc{poss}-\textsc{nmlz}:\textsc{oblique}-be.many \textsc{d
 \glt `He cried because it was what he was most worried about.' (140506 shizi he huichang de bailingniao, 65-66)
 \end{exe}
 
-\section{Other focalization construction}
+ 
+
+\section{Other focalization constructions}
+A focalized NP can be formally undistinguishable from non-focalized ones even by intonation, as the demonstrative \ipa{nɯ} in the last clause of example (\ref{ex:nW.mAnWXtCWG}).
 
 \begin{exe}
 \ex \label{ex:nW.mAnWXtCWG}
-\gll mtʰɯmɤr ɣɯ ɯ-zbroŋ nɯnɯ, tu-nɯ-ɬoʁ ɲɯ-ŋu.  tu-mɤmbɯr kɯ-fse ɲɯ-ŋu tɕe nɯ mɤ-naχtɕɯɣ. \\
+\gll mtʰɯmɤr ɣɯ ɯ-zbroŋ nɯnɯ, tu-nɯ-ɬoʁ ɲɯ-ŋu.  tu-mɤmbɯr kɯ-fse ɲɯ-ŋu tɕe \textbf{nɯ} mɤ-naχtɕɯɣ. \\
 seal \textsc{gen} \textsc{3sg}.\textsc{poss}-pattern \textsc{dem} \textsc{ipfv}:\textsc{up}-\textsc{auto}-come.out \textsc{sens}-be \textsc{ipfv}-be.protuberant \textsc{nmlz}:S/A-be.like \textsc{sens}-be \textsc{lnk} \textsc{dem} \textsc{neg}-be.the.same:\textsc{fact} \\
-\glt `The patterns on the seals (called \ipa{mtʰɯmɤr}) are coming out, protuberant, that is how they differ from (the other types of seals).' (160706 thotsi, 67)
+\glt `The patterns on the seals (called \ipa{mtʰɯmɤr}) are coming out, protuberant, that is how they differ (from the other types of seals).' (160706 thotsi, 67)
 \end{exe}
 
-Overt pronoun+copula at the end. NOT relative
+When the focalized element is the first or second person, an overt pronoun is always found, as in (\ref{ex:aZo.asni.mWjYaR}).
 
 \begin{exe}
-\ex \label{ex:aZo.pWnWmtota}
-\gll  kɯki tɕʰeme ki ndɤre aʑɯɣ a-pɯ-ŋu tʂaŋ ma tɕe aʑo pɯ-nɯ-mto-t-a ɕti tɕe \\
-\textsc{dem}.\textsc{prox} girl  \textsc{dem}.\textsc{prox} \textsc{lnk} \textsc{1sg}.\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{pfv}-\textsc{auto}-see-\textsc{pst}:\textsc{tr}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
-\glt `This girl, it would be fair if she were mine, as it was I who found her.' (140517 buaishuohua)
+\ex \label{ex:aZo.asni.mWjYaR}
+\gll \textbf{nɤʑo} nɤ-sni ɲɯ-ɲaʁ ma \textbf{aʑo} a-sni mɯ́j-ɲaʁ tɕe, ɬɤndʐi wuma nɯ \textbf{nɤʑo} ɲɯ-tɯ-ŋu ma \textbf{aʑo} ɬɤndʐi ɲɯ-maʁ-a \\
+\textsc{2sg} \textsc{2sg}.\textsc{poss}-heart \textsc{sens}-be.black \textsc{lnk} 1sg \textsc{1sg}.\textsc{poss}-heart  \textsc{neg}:\textsc{sens}-be.black \textsc{lnk} demon real \textsc{dem} \textsc{2sg} \textsc{sens}-2-be \textsc{lnk} \textsc{1sg} demon \textsc{sens}-not.be-\textsc{1sg} \\
+\glt `You are evil, not me, you are the real demon, not me.' (2002lhandzi, 12)
 \end{exe}
+
+The most common construction for focalization is combining an overt NP (or pronoun) with a postverbal copula, as in (\ref{ex:CkAnWru})\footnote{These sentences are from a story where a child at school is bullied by another pupil, who forces him to bring water for him; the teacher (who guess that the first child was being bullied) asks (\ref{ex:CtAtWnWrut}) to have him tell the one who forced him to do it, but the bullied child replies (\ref{ex:CtAtWnWrut}), as he fears reprisals.   } and (\ref{ex:nW.YWnArea}), the equivalent of (\ref{ex:nW.mAnWXtCWG}) with an additional copula. Given the fact that many periphrastic tenses use copulas, there are many cases where this focalizing function of the copula is not completely transparent 
+
+\begin{exe}
+\ex  \label{ex:CkAnWru}
+\begin{xlist}
+\ex \label{ex:CtAtWnWrut}
+\gll \textbf{nɤʑo} nɤ-tɯ-ci ɕ-tɤ-tɯ-nɯ-ru-t ɯ́-ŋu? \\
+\textsc{2sg} \textsc{2sg.poss}-\textsc{indef.poss}-water \textsc{transloc}-\textsc{pfv}-\textsc{auto}-bring-\textsc{pst}:\textsc{tr}  \textsc{qu}-be:\textsc{fact} \\
+\glt `Was it for yourself that you brought the water?'
+\ex \label{ex:CtAtWnWrut}
+\gll \textbf{aʑo} ɕ-tɤ-nɯ-ru-t-a ŋu \\
+\textsc{1sg} \textsc{transloc}-\textsc{pfv}-\textsc{auto}-bring-\textsc{pst}:\textsc{tr}-\textsc{1sg} be:\textsc{fact} \\
+\glt `I brought it for myself.'
+\end{xlist}
+\end{exe}
+ 
+ \begin{exe}
+\ex \label{ex:nW.YWnArea}
+\gll  kʰɯɣɲɟɯ ri pɣɤtɕɯ ni ɲɯ-ɤnɯɣro-ndʑi tɕe, \textbf{nɯ} ɲɯ-nɤre-a ɕti wo  \\
+window \textsc{loc} bird \textsc{du} \textsc{sens}-play-\textsc{du} \textsc{lnk} \textsc{dem} \textsc{dem} \textsc{ipfv}--\textsc{1sg}  be.\textsc{affirm}:\textsc{fact} \textsc{sfp} \\
+\glt `On the window two birds were playing, this is what I was laughing about.' (2014-kWlAG, 396)
+\end{exe}
+
+
+The overt NP + postverbal copula construction is found to express focus on intransitive subject (\ref{ex:Wpi.mWpjArAzi}), transitive subject (without \ref{ex:aZo.pWnWmtota} or with \ref{ex:aZo.kW.tAndzata.Cti} optional ergative on the overt pronoun), object (\ref{ex:tutia.ɕti}) but also core argument cum beneficiary (as in \ref{ex:CtAtWnWrut}).
+
 \begin{exe}
 \ex \label{ex:Wpi.mWpjArAzi}
-\gll 
-tɕeri, ɯ-pi mɯ-pjɤ-rɤʑi qʰendɤre,  ɯ-ɬaʁ nɯ pjɤ-rɤʑi ɕti qʰe  \\
-\\
+\gll tɕeri, ɯ-pi mɯ-pjɤ-rɤʑi qʰendɤre,  \textbf{ɯ-ɬaʁ nɯ} pjɤ-rɤʑi ɕti qʰe  \\
+\textsc{lnk} \textsc{3sg}.\textsc{poss}-elder.sibling \textsc{neg}-\textsc{ifr}.\textsc{ipfv}-stay \textsc{lnk} \textsc{3sg}.\textsc{poss}-aunt \textsc{dem} \textsc{neg}-\textsc{ifr}.\textsc{ipfv}-stay be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
 \glt  `But his elder brother was not there, it was his brother's wife who was there.' (140512 alibaba, 62)
 \end{exe}
 
+\begin{exe}
+\ex \label{ex:aZo.pWnWmtota}
+\gll  kɯki tɕʰeme ki ndɤre aʑɯɣ a-pɯ-ŋu tʂaŋ ma tɕe \textbf{aʑo} pɯ-nɯ-mto-t-a ɕti tɕe \\
+\textsc{dem}.\textsc{prox} girl  \textsc{dem}.\textsc{prox} \textsc{lnk} \textsc{1sg}.\textsc{gen} \textsc{irr}-\textsc{ipfv}-be be.fair:\textsc{fact} \textsc{lnk} \textsc{lnk} \textsc{1sg} \textsc{pfv}-\textsc{auto}-see-\textsc{pst}:\textsc{tr}-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \\
+\glt `This girl, it would be fair if she were mine, as it was I who found her.' (140517 buaishuohua)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:aZo.kW.tAndzata.Cti}
+\gll ɯʑo kɯ aʑo kɤ-ndza maʁ kɯ,  \textbf{aʑo} kɯ ɯʑo tɤ-ndza-t-a ɕti \\
+\textsc{3sg} \textsc{erg} \textsc{1sg} \textsc{inf}-eat not.be:\textsc{fact} \textsc{erg} \textsc{1sg} \textsc{erg} \textsc{3sg} \textsc{pfv}-eat-\textsc{pst}:\textsc{tr}-\textsc{1sg}  be.\textsc{affirm}:\textsc{fact} \\
+\glt   `Rather than me being eaten by him, it is I who ate him.' (2003twxtsa, 186)
+\end{exe}
+
+\begin{exe}
+\ex \label{ex:tutia.ɕti}
+\gll aʑo \textbf{pɤnmawombɤr} tu-ti-a ɕti ma, nɤj ɲɯ-ta-nɯ-ɤkʰɤzŋga maʁ  \\
+\textsc{1sg} p.n. \textsc{ipfv}-say-\textsc{1sg} be.\textsc{affirm}:\textsc{fact} \textsc{lnk} \textsc{2sg} \textsc{ipfv}-1\fl{}2-\textsc{appl}-call not.be:\textsc{fact} \\
+\glt `What I said was ``Padma 'Od 'bar", I did not call you.' (Norbzang2012, 163)
+\end{exe}
+
+Could this copula construction be analyzed as a cleft construction, with a relative clause followed by the copula? In such an analysis, in example (\ref{ex:aZo.kW.tAndzata.Cti}) for instance  [\textit{aʑo kɯ ɯʑo tɤ-ndza-t-a}] would be a finite head-internal relative clause meaning `I who ate him', with ergatively marked \textit{aʑo kɯ} as its head. The absence of \textsc{1sg} indexation on the copula \textit{ɕti} here would be in this analysis no more surprising than the expletive pronoun and the third person copula in the English cleft construction `It is me who X'. However, more problematic here is that as shown in § \ref{sec:relatives}, finite relatives are not possible with subject (S and A) relativization, only for object and goal. The clause \textit{aʑo kɯ ɯʑo tɤ-ndza-t-a} thus cannot be interpreted as A-relativization (at best, it could mean `He whom I ate'). Note also that if in (\ref{ex:tutia.ɕti}) \textit{pɤnmawombɤr tu-ti-a} is analyzed as a head-internal relative `Padma Od'bar that I am talking about' (not an impossibility in itself, see \ref{ex:tutianW}) we would have a head-internal relative headed by a personal name.
+
+ 
 %\begin{exe}
 %\ex 
 %\gll ɯ-pɯ ra ɲɤ-me-nɯ tɕe tɕe, [kɯki qaliaʁ kɯ ta-nɤma] ŋu nɯnɯ ko-tso ɲɯ-ŋu. \\
@@ -200,7 +263,7 @@ tɕeri, ɯ-pi mɯ-pjɤ-rɤʑi qʰendɤre,  ɯ-ɬaʁ nɯ pjɤ-rɤʑi ɕti qʰe  \
 %
 %\zh{知道这事是山鹰所做}
 
-\section*{Conclusion}
+%\section*{Conclusion}
 \bibliographystyle{unified}
 \bibliography{bibliogj}
  \end{document}
