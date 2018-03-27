@@ -20,6 +20,7 @@
 
 \newfontfamily\phon[Mapping=tex-text,Ligatures=Common,Scale=MatchLowercase]{Charis SIL} 
 \newfontfamily\tibetain{Microsoft Himalaya} 
+\newfontfamily\tangoute{Tangut Yinchuan} 
 \newcommand{\ipa}[1]{\mbox{\phon/#1/}}  
 \newcommand{\phonet}[1]{\mbox{\phon[#1]}}  
 \newcommand{\ipab}[1]{{\phon#1}}  
@@ -30,6 +31,7 @@
 \newcommand{\deux}[1]{\ipa{#1}\addtocounter{2clusters}{1}}
 \newcommand{\trois}[1]{\ipa{#1}\addtocounter{3clusters}{1}}
  \newcommand{\redp}{\textasciitilde}
+\newcommand{\tangut}[4]{{\tangoute#1}$^{#2}$ \forme{#3}$^{#4}$}
  
 \newcommand{\grise}[1]{\cellcolor{lightgray}\textbf{#1}}
 \newfontfamily\cn[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]{SimSun}%pour le chinois
@@ -53,3 +55,6 @@
   \setcounter{3clusters}{0}
 }
  \newcommand{\addition}[2]{\ADD{\value{#1}}{\value{#2}}{\solution}\solution}
+\newcommand{\ro}{Σ} %{$\sum$}
+\newcommand{\siga}{\ro$_1$} 
+\newcommand{\sigc}{\ro$_3$}   
