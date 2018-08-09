@@ -12,7 +12,7 @@
 \xn 算了，不要走了，留在这里吧
 \xv aɕi, a-mɤ-tɤ-tɯ-qhe je
 \xn （我收回刚才说的话），你不要放在心上
-\dt 09/Jul/2018
+\dt 09/Aug/2018
 
 \lx aj 
 \ps pro 
@@ -23609,17 +23609,17 @@ l
 \sn 1
 \ge en trop
 \gn 多余的
-\sn 2
-\ge reste 
-\gn 剩下的部分 
 \xv kɯki tɤ-ro tɕe, nɯ ma mɯ́j-ra
 \xn 太多了，不需要了
 \xv tɯ-tɣa ro ro kɯ-rɲɟi
 \xn 一拃多一点
+\sn 2
+\ge reste 
+\gn 剩下的部分 
 \xv ki aʑo a-ro ŋu tɕe, ɯ-tɯ-ndze
 \xn 这是我吃剩的，你吃不吃？
 \cf ɯ-rozre
-\dt 15/Jun/2012
+\dt 09/Aug/2018
 
 \lx tɤrpat
 \wav n-tArpat
@@ -42655,12 +42655,12 @@ l
 \sn 1
 \ge rencontrer 
 \gn 遇见 
+\xv nɯ-atɯɣ-ndʑi
+\xn 他们俩遇到了（他）
 \sn 2
 \ge toucher
 \gn 触碰
 \hbf 1769 
-\xv nɯ-atɯɣ-ndʑi
-\xn 他们俩遇到了（他）
 \xv tɕhomba ɲɤ-k-ɤtɯɣ-a-ci
 \xn 我感冒了
 \se nɤtɯɣ
@@ -43352,7 +43352,14 @@ l
 \gn 令……得到
 \xv tɤ-ndze ma tha mɤ-ta-sɯβɟɤt
 \xn 你吃，不然我会吃完，令你吃不到
-\dt 11/Jul/2016
+\se sɤβɟɤt
+\ps vs
+\ng deexp
+\ge que l'on peut obtenir
+\gn 抢到
+\xv mɯ́j-sɤβɟɤt
+\xn 抢不到
+\dt 08/Aug/2018
 
 \lx _βɟi
 \hm 1
@@ -43403,7 +43410,6 @@ l
 \pdv lɤ-
 \ge planter 
 \gn 栽 
-
 \xv pɯ-βli-t-a, pa-βli
 \xn 我栽种了，他栽种了
 \xv ɕaŋβli pɯ-βli-t-a 
@@ -50699,7 +50705,13 @@ l
 \cf ɯ-χsoŋχsɤz,ɣi
 \cf tɯ-ʁjiz,ɣi
 \cf tɯ-lɯz,ɣi
-\dt 06/Sep/2015
+\se nɯsɤɣi
+\ps vi
+\ge rentrer chez soi 
+\gn 平安到家
+\xv kɤtsa ra a-nɯ-tɯ-nɯsɤɣi-nɯ!
+\xn 祝你们一家平安到家
+\dt 09/Aug/2018
 
 \lx _ɣɟaβ
 \wav vt-GJaB
@@ -76042,6 +76054,10 @@ l
 \cf aβdɤβde
 \dt 06/Jun/2011
 
+\lx _sɤβɟɤt
+\cf βɟɤt
+\dt 08/Aug/2018
+
 \lx _sɤβlo
 \wav vt-sABlo
 \ps vt
@@ -83241,15 +83257,14 @@ l
 \dt 04/Feb/2014
 
 \lx _tso
-\wav8 akAtso
-\wav8 sAtso
-\wav8 mAtsonW
 \ps vi-t
+\sn 1
 \pdl dir 
 \pdv kɤ-
-\ge comprendre, se rendre compte, savoir
-\gn 懂；发觉；知道
-\hbf 1282 
+\wav8 akAtso
+\wav8 mAtsonW
+\ge comprendre
+\gn 懂、明白
 \xv hanɯni ci, mɤʑɯ kɯ-taʁ tsa a-kɤ-tso-a ɲɯ-ra
 \xn 我还需要弄清楚一点（你再讲一次）
 \xv lonba kɤ-tso-a 
@@ -83258,8 +83273,21 @@ l
 \xn 如果说这句话，人家听不懂
 \xv nɤj tɤ-tɯ-tɯt nɯ aj mɯ́j-tso-a
 \xn 我不明白你刚说的话
+\sn 2
+\pdl dir 
+\pdv kɤ-
+\ge savoir
+\gn 知道
 \xv ɕɯ kɯ tso ma
 \xn 谁会知道
+\sn 3
+\pdl dir 
+\pdv pɯ-
+\ge se rendre compte
+\gn 发觉
+\xv tɤ-rʑaʁ nɯ-ari mɯ-pjɤ-tso.
+\xn 他没有发觉时间过得（这么快）
+\hbf 1282 
 \se tso me
 \sn 1
 \ge perdre conscience
@@ -83292,6 +83320,7 @@ l
 \xv tɤ-kɤ-tɯt nɯra kɤ-ʑɣɤsɯxtso ma tha nɤ-ɕɯ-kɤ-rɤfɕɤt me
 \xn 你要弄清他所讲的话，不然的话你转述不出来
 \se sɤtso
+\wav8 sAtso
 \wav8 masAtso
 \ps vs
 \ng deexp 
@@ -83301,7 +83330,7 @@ l
 \xn 听不懂他在讲什么吗？ 
 \xv ɲɯ-sɤtso
 \xn 很清楚
-\dt 27/Apr/2018
+\dt 09/Aug/2018
 
 \lx _tsrɤt
 \wav vt-tsrAt
@@ -84697,6 +84726,7 @@ l
 \xn 他跟我讨价还价了
 \xv tɯtsɣe ɣɯ-βzu tɕe, kɤ-χtɤm pjɯ-kɯ-cha ra
 \xn 做生意的时候，必须要会讨价还价
+\et gtam
 \dt 02/May/2018
 
 \lx _χtɤr
